@@ -5,7 +5,6 @@ import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.videoRecorderMod.VideoRecorderOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Misc/index", "VideoRecorder")
@@ -23,14 +22,16 @@ class VideoRecorder protected ()
 /* static members */
 object VideoRecorder {
   
+  @JSImport("babylonjs/Misc/index", "VideoRecorder")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Returns whether or not the VideoRecorder is available in your browser.
     * @param engine Defines the Babylon Engine.
     * @returns true if supported otherwise false.
     */
-  @JSImport("babylonjs/Misc/index", "VideoRecorder.IsSupported")
-  @js.native
-  def IsSupported(engine: Engine): Boolean = js.native
+  inline def IsSupported(engine: Engine): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsSupported")(engine.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("babylonjs/Misc/index", "VideoRecorder._defaultOptions")
   @js.native

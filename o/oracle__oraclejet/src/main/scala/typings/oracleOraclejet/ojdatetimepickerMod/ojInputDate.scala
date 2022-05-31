@@ -42,18 +42,19 @@ import typings.std.CustomEvent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ojInputDate[SP /* <: ojInputDateSettableProperties */] extends inputBase[String, SP, String, String] {
+trait ojInputDate[SP /* <: ojInputDateSettableProperties */]
+  extends StObject
+     with inputBase[String, SP, String, String] {
   
   def addEventListener(
     `type`: dayFormatterChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[js.Function1[/* param */ DayFormatterInput, Null | all | DayFormatterOutput]], 
-      _
+      js.Any
     ]
   ): Unit = js.native
   def addEventListener(
@@ -61,26 +62,26 @@ trait ojInputDate[SP /* <: ojInputDateSettableProperties */] extends inputBase[S
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[js.Function1[/* param */ DayFormatterInput, Null | all | DayFormatterOutput]], 
-      _
+      js.Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: keyboardEditChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[enabled | disabled], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[enabled | disabled], js.Any]
   ): Unit = js.native
   def addEventListener(
     `type`: keyboardEditChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[enabled | disabled], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[enabled | disabled], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: renderModeChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[jet | native], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[jet | native], js.Any]
   ): Unit = js.native
   def addEventListener(
     `type`: renderModeChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[jet | native], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[jet | native], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -89,7 +90,7 @@ trait ojInputDate[SP /* <: ojInputDateSettableProperties */] extends inputBase[S
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[Converter[String] | RegisteredConverter], 
-      _
+      js.Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -98,19 +99,19 @@ trait ojInputDate[SP /* <: ojInputDateSettableProperties */] extends inputBase[S
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[Converter[String] | RegisteredConverter], 
-      _
+      js.Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_datePickerChanged(
     `type`: datePickerChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ChangeMonth], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ChangeMonth], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_datePickerChanged(
     `type`: datePickerChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ChangeMonth], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ChangeMonth], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -119,7 +120,7 @@ trait ojInputDate[SP /* <: ojInputDateSettableProperties */] extends inputBase[S
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[StringDictionary[StringDictionary[StringDictionary[Disabled]]]], 
-      _
+      js.Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -128,41 +129,41 @@ trait ojInputDate[SP /* <: ojInputDateSettableProperties */] extends inputBase[S
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[StringDictionary[StringDictionary[StringDictionary[Disabled]]]], 
-      _
+      js.Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_maxChanged(
     `type`: maxChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_maxChanged(
     `type`: maxChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_minChanged(
     `type`: minChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_minChanged(
     `type`: minChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_pickerAttributesChanged(
     `type`: pickerAttributesChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Class], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Class], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_pickerAttributesChanged(
     `type`: pickerAttributesChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Class], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Class], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   
@@ -199,35 +200,35 @@ trait ojInputDate[SP /* <: ojInputDateSettableProperties */] extends inputBase[S
   
   var min: String | Null = js.native
   
-  var onConverterChanged: (js.Function1[/* event */ JetElementCustomEvent[Converter[String] | RegisteredConverter], _]) | Null = js.native
+  var onConverterChanged: (js.Function1[/* event */ JetElementCustomEvent[Converter[String] | RegisteredConverter], js.Any]) | Null = js.native
   
-  var onDatePickerChanged: (js.Function1[/* event */ JetElementCustomEvent[ChangeMonth], _]) | Null = js.native
+  var onDatePickerChanged: (js.Function1[/* event */ JetElementCustomEvent[ChangeMonth], js.Any]) | Null = js.native
   
   var onDayFormatterChanged: (js.Function1[
     /* event */ JetElementCustomEvent[js.Function1[/* param */ DayFormatterInput, Null | all | DayFormatterOutput]], 
-    _
+    js.Any
   ]) | Null = js.native
   
   var onDayMetaDataChanged: (js.Function1[
     /* event */ JetElementCustomEvent[StringDictionary[StringDictionary[StringDictionary[Disabled]]]], 
-    _
+    js.Any
   ]) | Null = js.native
   
-  var onKeyboardEditChanged: (js.Function1[/* event */ JetElementCustomEvent[enabled | disabled], _]) | Null = js.native
+  var onKeyboardEditChanged: (js.Function1[/* event */ JetElementCustomEvent[enabled | disabled], js.Any]) | Null = js.native
   
-  var onMaxChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
+  var onMaxChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], js.Any]) | Null = js.native
   
-  var onMinChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
+  var onMinChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], js.Any]) | Null = js.native
   
   @JSName("onOjAnimateEnd")
-  var onOjAnimateEnd_ojInputDate: (js.Function1[/* event */ ojAnimateEnd, _]) | Null = js.native
+  var onOjAnimateEnd_ojInputDate: (js.Function1[/* event */ ojAnimateEnd, js.Any]) | Null = js.native
   
   @JSName("onOjAnimateStart")
-  var onOjAnimateStart_ojInputDate: (js.Function1[/* event */ ojAnimateStart, _]) | Null = js.native
+  var onOjAnimateStart_ojInputDate: (js.Function1[/* event */ ojAnimateStart, js.Any]) | Null = js.native
   
-  var onPickerAttributesChanged: (js.Function1[/* event */ JetElementCustomEvent[Class], _]) | Null = js.native
+  var onPickerAttributesChanged: (js.Function1[/* event */ JetElementCustomEvent[Class], js.Any]) | Null = js.native
   
-  var onRenderModeChanged: (js.Function1[/* event */ JetElementCustomEvent[jet | native], _]) | Null = js.native
+  var onRenderModeChanged: (js.Function1[/* event */ JetElementCustomEvent[jet | native], js.Any]) | Null = js.native
   
   var pickerAttributes: Class = js.native
   
@@ -268,75 +269,60 @@ trait ojInputDate[SP /* <: ojInputDateSettableProperties */] extends inputBase[S
 object ojInputDate {
   
   // tslint:disable-next-line interface-over-type-literal
-  @js.native
   trait DayFormatterInput extends StObject {
     
-    var date: Double = js.native
+    var date: Double
     
-    var fullYear: Double = js.native
+    var fullYear: Double
     
-    var month: Double = js.native
+    var month: Double
   }
   object DayFormatterInput {
     
-    @scala.inline
-    def apply(date: Double, fullYear: Double, month: Double): DayFormatterInput = {
+    inline def apply(date: Double, fullYear: Double, month: Double): DayFormatterInput = {
       val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], fullYear = fullYear.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any])
       __obj.asInstanceOf[DayFormatterInput]
     }
     
-    @scala.inline
-    implicit class DayFormatterInputMutableBuilder[Self <: DayFormatterInput] (val x: Self) extends AnyVal {
+    extension [Self <: DayFormatterInput](x: Self) {
       
-      @scala.inline
-      def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullYear(value: Double): Self = StObject.set(x, "fullYear", value.asInstanceOf[js.Any])
+      inline def setFullYear(value: Double): Self = StObject.set(x, "fullYear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     }
   }
   
   // tslint:disable-next-line interface-over-type-literal
-  @js.native
   trait DayFormatterOutput extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var tooltip: js.UndefOr[String] = js.native
+    var tooltip: js.UndefOr[String] = js.undefined
   }
   object DayFormatterOutput {
     
-    @scala.inline
-    def apply(): DayFormatterOutput = {
+    inline def apply(): DayFormatterOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DayFormatterOutput]
     }
     
-    @scala.inline
-    implicit class DayFormatterOutputMutableBuilder[Self <: DayFormatterOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DayFormatterOutput](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+      inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+      inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     }
   }
   

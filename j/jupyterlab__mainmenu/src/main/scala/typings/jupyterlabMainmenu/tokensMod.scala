@@ -14,7 +14,6 @@ import typings.luminoCoreutils.mod.Token
 import typings.luminoWidgets.mod.Menu
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tokensMod {
@@ -77,30 +76,25 @@ object tokensMod {
     /**
       * The options used to add a menu to the main menu.
       */
-    @js.native
     trait IAddOptions extends StObject {
       
       /**
         * The rank order of the menu among its siblings.
         */
-      var rank: js.UndefOr[Double] = js.native
+      var rank: js.UndefOr[Double] = js.undefined
     }
     object IAddOptions {
       
-      @scala.inline
-      def apply(): IAddOptions = {
+      inline def apply(): IAddOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IAddOptions]
       }
       
-      @scala.inline
-      implicit class IAddOptionsMutableBuilder[Self <: IAddOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IAddOptions](x: Self) {
         
-        @scala.inline
-        def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+        inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
+        inline def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
       }
     }
     

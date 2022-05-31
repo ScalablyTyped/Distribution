@@ -2,53 +2,52 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WebXRInput extends IDisposable {
+trait WebXRInput
+  extends StObject
+     with IDisposable {
   
-  var _addAndRemoveControllers: js.Any = js.native
+  /* private */ var _addAndRemoveControllers: js.Any
   
-  var _frameObserver: js.Any = js.native
+  /* private */ var _frameObserver: js.Any
   
-  var _onInputSourcesChange: js.Any = js.native
+  /* private */ var _onInputSourcesChange: js.Any
   
-  var _sessionEndedObserver: js.Any = js.native
+  /* private */ var _sessionEndedObserver: js.Any
   
-  var _sessionInitObserver: js.Any = js.native
+  /* private */ var _sessionInitObserver: js.Any
   
   /**
     * XR controllers being tracked
     */
-  var controllers: js.Array[WebXRInputSource] = js.native
+  var controllers: js.Array[WebXRInputSource]
   
   /**
     * Event when a controller has been connected/added
     */
-  var onControllerAddedObservable: Observable[WebXRInputSource] = js.native
+  var onControllerAddedObservable: Observable[WebXRInputSource]
   
   /**
     * Event when a controller has been removed/disconnected
     */
-  var onControllerRemovedObservable: Observable[WebXRInputSource] = js.native
+  var onControllerRemovedObservable: Observable[WebXRInputSource]
   
-  val options: js.Any = js.native
+  /* private */ val options: js.Any
   
   /**
     * the WebXR camera for this session. Mainly used for teleportation
     */
-  var xrCamera: WebXRCamera = js.native
+  var xrCamera: WebXRCamera
   
   /**
     * the xr session manager for this session
     */
-  var xrSessionManager: WebXRSessionManager = js.native
+  var xrSessionManager: WebXRSessionManager
 }
 object WebXRInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _addAndRemoveControllers: js.Any,
     _frameObserver: js.Any,
     _onInputSourcesChange: js.Any,
@@ -66,43 +65,30 @@ object WebXRInput {
     __obj.asInstanceOf[WebXRInput]
   }
   
-  @scala.inline
-  implicit class WebXRInputMutableBuilder[Self <: WebXRInput] (val x: Self) extends AnyVal {
+  extension [Self <: WebXRInput](x: Self) {
     
-    @scala.inline
-    def setControllers(value: js.Array[WebXRInputSource]): Self = StObject.set(x, "controllers", value.asInstanceOf[js.Any])
+    inline def setControllers(value: js.Array[WebXRInputSource]): Self = StObject.set(x, "controllers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControllersVarargs(value: WebXRInputSource*): Self = StObject.set(x, "controllers", js.Array(value :_*))
+    inline def setControllersVarargs(value: WebXRInputSource*): Self = StObject.set(x, "controllers", js.Array(value :_*))
     
-    @scala.inline
-    def setOnControllerAddedObservable(value: Observable[WebXRInputSource]): Self = StObject.set(x, "onControllerAddedObservable", value.asInstanceOf[js.Any])
+    inline def setOnControllerAddedObservable(value: Observable[WebXRInputSource]): Self = StObject.set(x, "onControllerAddedObservable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnControllerRemovedObservable(value: Observable[WebXRInputSource]): Self = StObject.set(x, "onControllerRemovedObservable", value.asInstanceOf[js.Any])
+    inline def setOnControllerRemovedObservable(value: Observable[WebXRInputSource]): Self = StObject.set(x, "onControllerRemovedObservable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXrCamera(value: WebXRCamera): Self = StObject.set(x, "xrCamera", value.asInstanceOf[js.Any])
+    inline def setXrCamera(value: WebXRCamera): Self = StObject.set(x, "xrCamera", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXrSessionManager(value: WebXRSessionManager): Self = StObject.set(x, "xrSessionManager", value.asInstanceOf[js.Any])
+    inline def setXrSessionManager(value: WebXRSessionManager): Self = StObject.set(x, "xrSessionManager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_addAndRemoveControllers(value: js.Any): Self = StObject.set(x, "_addAndRemoveControllers", value.asInstanceOf[js.Any])
+    inline def set_addAndRemoveControllers(value: js.Any): Self = StObject.set(x, "_addAndRemoveControllers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_frameObserver(value: js.Any): Self = StObject.set(x, "_frameObserver", value.asInstanceOf[js.Any])
+    inline def set_frameObserver(value: js.Any): Self = StObject.set(x, "_frameObserver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_onInputSourcesChange(value: js.Any): Self = StObject.set(x, "_onInputSourcesChange", value.asInstanceOf[js.Any])
+    inline def set_onInputSourcesChange(value: js.Any): Self = StObject.set(x, "_onInputSourcesChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_sessionEndedObserver(value: js.Any): Self = StObject.set(x, "_sessionEndedObserver", value.asInstanceOf[js.Any])
+    inline def set_sessionEndedObserver(value: js.Any): Self = StObject.set(x, "_sessionEndedObserver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_sessionInitObserver(value: js.Any): Self = StObject.set(x, "_sessionInitObserver", value.asInstanceOf[js.Any])
+    inline def set_sessionInitObserver(value: js.Any): Self = StObject.set(x, "_sessionInitObserver", value.asInstanceOf[js.Any])
   }
 }

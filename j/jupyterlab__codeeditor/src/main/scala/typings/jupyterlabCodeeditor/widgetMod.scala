@@ -11,7 +11,6 @@ import typings.luminoWidgets.mod.Widget.ResizeMessage
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object widgetMod {
@@ -27,31 +26,31 @@ object widgetMod {
     /**
       * Handle the `'lm-dragenter'` event for the widget.
       */
-    var _evtDragEnter: js.Any = js.native
+    /* private */ var _evtDragEnter: js.Any = js.native
     
     /**
       * Handle the `'lm-dragleave'` event for the widget.
       */
-    var _evtDragLeave: js.Any = js.native
+    /* private */ var _evtDragLeave: js.Any = js.native
     
     /**
       * Handle the `'lm-dragover'` event for the widget.
       */
-    var _evtDragOver: js.Any = js.native
+    /* private */ var _evtDragOver: js.Any = js.native
     
     /**
       * Handle the `'lm-drop'` event for the widget.
       */
-    var _evtDrop: js.Any = js.native
+    /* private */ var _evtDrop: js.Any = js.native
     
-    var _hasRefreshedSinceAttach: js.Any = js.native
+    /* private */ var _hasRefreshedSinceAttach: js.Any = js.native
     
     /**
       * Handle a change in model selections.
       */
-    var _onSelectionsChanged: js.Any = js.native
+    /* private */ var _onSelectionsChanged: js.Any = js.native
     
-    var _updateOnShow: js.Any = js.native
+    /* private */ var _updateOnShow: js.Any = js.native
     
     /**
       * Get the editor wrapped by the widget.
@@ -85,13 +84,12 @@ object widgetMod {
     /**
       * The options used to initialize a code editor widget.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The configuration options for the editor.
         */
-      var config: js.UndefOr[PartialIConfig] = js.native
+      var config: js.UndefOr[PartialIConfig] = js.undefined
       
       /**
         * A code editor factory.
@@ -100,32 +98,31 @@ object widgetMod {
         * The widget needs a factory and a model instead of a `CodeEditor.IEditor`
         * object because it needs to provide its own node as the host.
         */
-      var factory: Factory = js.native
+      var factory: Factory
       
       /**
         * The model used to initialize the code editor.
         */
-      var model: IModel = js.native
+      var model: IModel
       
       /**
         * The default selection style for the editor.
         */
-      var selectionStyle: js.UndefOr[ISelectionStyle] = js.native
+      var selectionStyle: js.UndefOr[ISelectionStyle] = js.undefined
       
       /**
         * Whether to send an update request to the editor when it is shown.
         */
-      var updateOnShow: js.UndefOr[Boolean] = js.native
+      var updateOnShow: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The desired uuid for the editor.
         */
-      var uuid: js.UndefOr[String] = js.native
+      var uuid: js.UndefOr[String] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         factory: /* options */ typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions => IEditor,
         model: IModel
       ): IOptions = {
@@ -133,38 +130,27 @@ object widgetMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setConfig(value: PartialIConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+        inline def setConfig(value: PartialIConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+        inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
         
-        @scala.inline
-        def setFactory(value: /* options */ typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions => IEditor): Self = StObject.set(x, "factory", js.Any.fromFunction1(value))
+        inline def setFactory(value: /* options */ typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions => IEditor): Self = StObject.set(x, "factory", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setModel(value: IModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+        inline def setModel(value: IModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelectionStyle(value: ISelectionStyle): Self = StObject.set(x, "selectionStyle", value.asInstanceOf[js.Any])
+        inline def setSelectionStyle(value: ISelectionStyle): Self = StObject.set(x, "selectionStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelectionStyleUndefined: Self = StObject.set(x, "selectionStyle", js.undefined)
+        inline def setSelectionStyleUndefined: Self = StObject.set(x, "selectionStyle", js.undefined)
         
-        @scala.inline
-        def setUpdateOnShow(value: Boolean): Self = StObject.set(x, "updateOnShow", value.asInstanceOf[js.Any])
+        inline def setUpdateOnShow(value: Boolean): Self = StObject.set(x, "updateOnShow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdateOnShowUndefined: Self = StObject.set(x, "updateOnShow", js.undefined)
+        inline def setUpdateOnShowUndefined: Self = StObject.set(x, "updateOnShow", js.undefined)
         
-        @scala.inline
-        def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+        inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
+        inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
       }
     }
   }

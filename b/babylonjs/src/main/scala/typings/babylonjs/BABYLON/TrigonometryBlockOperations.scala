@@ -2,7 +2,6 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,73 +12,109 @@ object TrigonometryBlockOperations extends StObject {
   
   /** Abs */
   @js.native
-  sealed trait Abs extends TrigonometryBlockOperations
+  sealed trait Abs
+    extends StObject
+       with TrigonometryBlockOperations
   
   /** Arc cosinus */
   @js.native
-  sealed trait ArcCos extends TrigonometryBlockOperations
+  sealed trait ArcCos
+    extends StObject
+       with TrigonometryBlockOperations
   
   /** Arc sinus */
   @js.native
-  sealed trait ArcSin extends TrigonometryBlockOperations
+  sealed trait ArcSin
+    extends StObject
+       with TrigonometryBlockOperations
   
   /** Arc tangent */
   @js.native
-  sealed trait ArcTan extends TrigonometryBlockOperations
+  sealed trait ArcTan
+    extends StObject
+       with TrigonometryBlockOperations
   
   /** Ceiling */
   @js.native
-  sealed trait Ceiling extends TrigonometryBlockOperations
+  sealed trait Ceiling
+    extends StObject
+       with TrigonometryBlockOperations
   
   /** Cos */
   @js.native
-  sealed trait Cos extends TrigonometryBlockOperations
+  sealed trait Cos
+    extends StObject
+       with TrigonometryBlockOperations
   
   /** To degrees (from radians) */
   @js.native
-  sealed trait Degrees extends TrigonometryBlockOperations
+  sealed trait Degrees
+    extends StObject
+       with TrigonometryBlockOperations
   
   /** Exp */
   @js.native
-  sealed trait Exp extends TrigonometryBlockOperations
+  sealed trait Exp
+    extends StObject
+       with TrigonometryBlockOperations
   
   /** Exp2 */
   @js.native
-  sealed trait Exp2 extends TrigonometryBlockOperations
+  sealed trait Exp2
+    extends StObject
+       with TrigonometryBlockOperations
   
   /** Floor */
   @js.native
-  sealed trait Floor extends TrigonometryBlockOperations
+  sealed trait Floor
+    extends StObject
+       with TrigonometryBlockOperations
   
   /** Fraction */
   @js.native
-  sealed trait Fract extends TrigonometryBlockOperations
+  sealed trait Fract
+    extends StObject
+       with TrigonometryBlockOperations
   
   /** Log */
   @js.native
-  sealed trait Log extends TrigonometryBlockOperations
+  sealed trait Log
+    extends StObject
+       with TrigonometryBlockOperations
   
   /** To radians (from degrees) */
   @js.native
-  sealed trait Radians extends TrigonometryBlockOperations
+  sealed trait Radians
+    extends StObject
+       with TrigonometryBlockOperations
   
   /** Round */
   @js.native
-  sealed trait Round extends TrigonometryBlockOperations
+  sealed trait Round
+    extends StObject
+       with TrigonometryBlockOperations
   
   /** Sign */
   @js.native
-  sealed trait Sign extends TrigonometryBlockOperations
+  sealed trait Sign
+    extends StObject
+       with TrigonometryBlockOperations
   
   /** Sin */
   @js.native
-  sealed trait Sin extends TrigonometryBlockOperations
+  sealed trait Sin
+    extends StObject
+       with TrigonometryBlockOperations
   
   /** Square root */
   @js.native
-  sealed trait Sqrt extends TrigonometryBlockOperations
+  sealed trait Sqrt
+    extends StObject
+       with TrigonometryBlockOperations
   
   /** Tangent */
   @js.native
-  sealed trait Tan extends TrigonometryBlockOperations
+  sealed trait Tan
+    extends StObject
+       with TrigonometryBlockOperations
 }

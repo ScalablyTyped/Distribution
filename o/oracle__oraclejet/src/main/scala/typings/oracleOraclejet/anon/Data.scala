@@ -3,34 +3,32 @@ package typings.oracleOraclejet.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Data
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var data: js.Object = js.native
+  var data: js.Object
   
-  var group: String = js.native
+  var group: String
   
-  var groupData: js.Array[_] = js.native
+  var groupData: js.Array[js.Any]
   
-  var id: String = js.native
+  var id: String
   
-  var itemData: js.Object = js.native
+  var itemData: js.Object
   
-  var series: String = js.native
+  var series: String
   
-  var seriesData: js.Object = js.native
+  var seriesData: js.Object
 }
 object Data {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: js.Object,
     group: String,
-    groupData: js.Array[_],
+    groupData: js.Array[js.Any],
     id: String,
     itemData: js.Object,
     series: String,
@@ -40,31 +38,22 @@ object Data {
     __obj.asInstanceOf[Data]
   }
   
-  @scala.inline
-  implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+  extension [Self <: Data](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupData(value: js.Array[_]): Self = StObject.set(x, "groupData", value.asInstanceOf[js.Any])
+    inline def setGroupData(value: js.Array[js.Any]): Self = StObject.set(x, "groupData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupDataVarargs(value: js.Any*): Self = StObject.set(x, "groupData", js.Array(value :_*))
+    inline def setGroupDataVarargs(value: js.Any*): Self = StObject.set(x, "groupData", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemData(value: js.Object): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
+    inline def setItemData(value: js.Object): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeries(value: String): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: String): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesData(value: js.Object): Self = StObject.set(x, "seriesData", value.asInstanceOf[js.Any])
+    inline def setSeriesData(value: js.Object): Self = StObject.set(x, "seriesData", value.asInstanceOf[js.Any])
   }
 }

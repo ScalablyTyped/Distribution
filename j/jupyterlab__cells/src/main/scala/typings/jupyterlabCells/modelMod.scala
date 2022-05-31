@@ -23,10 +23,13 @@ import typings.luminoSignaling.mod.ISignal
 import typings.luminoSignaling.mod.Signal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modelMod {
+  
+  @JSImport("@jupyterlab/cells/lib/model", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@jupyterlab/cells/lib/model", "AttachmentsCellModel")
   @js.native
@@ -36,7 +39,7 @@ object modelMod {
       */
     def this(options: IOptions) = this()
     
-    var _attachments: js.Any = js.native
+    /* private */ var _attachments: js.Any = js.native
     
     /**
       * Get the attachments of the model.
@@ -50,7 +53,16 @@ object modelMod {
       */
     @JSImport("@jupyterlab/cells/lib/model", "AttachmentsCellModel.ContentFactory")
     @js.native
-    class ContentFactory () extends IContentFactory
+    class ContentFactory ()
+      extends StObject
+         with IContentFactory {
+      
+      /**
+        * Create an output area.
+        */
+      /* CompleteClass */
+      override def createAttachmentsModel(options: typings.jupyterlabAttachments.modelMod.IAttachmentsModel.IOptions): IAttachmentsModel = js.native
+    }
     
     /**
       * The shared `ContentFactory` instance.
@@ -62,60 +74,52 @@ object modelMod {
     /**
       * A factory for creating code cell model content.
       */
-    @js.native
     trait IContentFactory extends StObject {
       
       /**
         * Create an output area.
         */
-      def createAttachmentsModel(options: typings.jupyterlabAttachments.modelMod.IAttachmentsModel.IOptions): IAttachmentsModel = js.native
+      def createAttachmentsModel(options: typings.jupyterlabAttachments.modelMod.IAttachmentsModel.IOptions): IAttachmentsModel
     }
     object IContentFactory {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         createAttachmentsModel: typings.jupyterlabAttachments.modelMod.IAttachmentsModel.IOptions => IAttachmentsModel
       ): IContentFactory = {
         val __obj = js.Dynamic.literal(createAttachmentsModel = js.Any.fromFunction1(createAttachmentsModel))
         __obj.asInstanceOf[IContentFactory]
       }
       
-      @scala.inline
-      implicit class IContentFactoryMutableBuilder[Self <: IContentFactory] (val x: Self) extends AnyVal {
+      extension [Self <: IContentFactory](x: Self) {
         
-        @scala.inline
-        def setCreateAttachmentsModel(value: typings.jupyterlabAttachments.modelMod.IAttachmentsModel.IOptions => IAttachmentsModel): Self = StObject.set(x, "createAttachmentsModel", js.Any.fromFunction1(value))
+        inline def setCreateAttachmentsModel(value: typings.jupyterlabAttachments.modelMod.IAttachmentsModel.IOptions => IAttachmentsModel): Self = StObject.set(x, "createAttachmentsModel", js.Any.fromFunction1(value))
       }
     }
     
     /**
       * The options used to initialize a `AttachmentsCellModel`.
       */
-    @js.native
     trait IOptions
-      extends typings.jupyterlabCells.modelMod.CellModel.IOptions {
+      extends StObject
+         with typings.jupyterlabCells.modelMod.CellModel.IOptions {
       
       /**
         * The factory for attachment model creation.
         */
-      var contentFactory: js.UndefOr[IContentFactory] = js.native
+      var contentFactory: js.UndefOr[IContentFactory] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): IOptions = {
+      inline def apply(): IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setContentFactory(value: IContentFactory): Self = StObject.set(x, "contentFactory", value.asInstanceOf[js.Any])
+        inline def setContentFactory(value: IContentFactory): Self = StObject.set(x, "contentFactory", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentFactoryUndefined: Self = StObject.set(x, "contentFactory", js.undefined)
+        inline def setContentFactoryUndefined: Self = StObject.set(x, "contentFactory", js.undefined)
       }
     }
   }
@@ -166,7 +170,13 @@ object modelMod {
     /**
       * A signal emitted when a model state changes.
       */
-    val stateChanged: (ISignal[ICellModel, typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[_, _, String]]) | (Signal[this.type, typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[_, _, String]]) = js.native
+    val stateChanged: (ISignal[
+        ICellModel, 
+        typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[js.Any, js.Any, String]
+      ]) | (Signal[
+        this.type, 
+        typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[js.Any, js.Any, String]
+      ]) = js.native
     
     /**
       * Serialize the model to JSON.
@@ -197,52 +207,43 @@ object modelMod {
     /**
       * The options used to initialize a `CellModel`.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The source cell data.
         */
-      var cell: js.UndefOr[IBaseCell] = js.native
+      var cell: js.UndefOr[IBaseCell] = js.undefined
       
       /**
         * A unique identifier for this cell.
         */
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
       /**
         * An IModelDB in which to store cell data.
         */
-      var modelDB: js.UndefOr[IModelDB] = js.native
+      var modelDB: js.UndefOr[IModelDB] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): typings.jupyterlabCells.modelMod.CellModel.IOptions = {
+      inline def apply(): typings.jupyterlabCells.modelMod.CellModel.IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.jupyterlabCells.modelMod.CellModel.IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: typings.jupyterlabCells.modelMod.CellModel.IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.jupyterlabCells.modelMod.CellModel.IOptions](x: Self) {
         
-        @scala.inline
-        def setCell(value: IBaseCell): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+        inline def setCell(value: IBaseCell): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
+        inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+        inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
-        @scala.inline
-        def setModelDB(value: IModelDB): Self = StObject.set(x, "modelDB", value.asInstanceOf[js.Any])
+        inline def setModelDB(value: IModelDB): Self = StObject.set(x, "modelDB", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModelDBUndefined: Self = StObject.set(x, "modelDB", js.undefined)
+        inline def setModelDBUndefined: Self = StObject.set(x, "modelDB", js.undefined)
       }
     }
   }
@@ -262,9 +263,9 @@ object modelMod {
     /**
       * Handle a change to the execution count.
       */
-    var _onExecutionCountChanged: js.Any = js.native
+    /* private */ var _onExecutionCountChanged: js.Any = js.native
     
-    var _outputs: js.Any = js.native
+    /* private */ var _outputs: js.Any = js.native
     
     /**
       * Clear execution, outputs, and related metadata
@@ -305,7 +306,16 @@ object modelMod {
       */
     @JSImport("@jupyterlab/cells/lib/model", "CodeCellModel.ContentFactory")
     @js.native
-    class ContentFactory () extends IContentFactory
+    class ContentFactory ()
+      extends StObject
+         with IContentFactory {
+      
+      /**
+        * Create an output area.
+        */
+      /* CompleteClass */
+      override def createOutputArea(options: typings.jupyterlabOutputarea.modelMod.IOutputAreaModel.IOptions): IOutputAreaModel = js.native
+    }
     
     /**
       * The shared `ContentFactory` instance.
@@ -317,60 +327,52 @@ object modelMod {
     /**
       * A factory for creating code cell model content.
       */
-    @js.native
     trait IContentFactory extends StObject {
       
       /**
         * Create an output area.
         */
-      def createOutputArea(options: typings.jupyterlabOutputarea.modelMod.IOutputAreaModel.IOptions): IOutputAreaModel = js.native
+      def createOutputArea(options: typings.jupyterlabOutputarea.modelMod.IOutputAreaModel.IOptions): IOutputAreaModel
     }
     object IContentFactory {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         createOutputArea: typings.jupyterlabOutputarea.modelMod.IOutputAreaModel.IOptions => IOutputAreaModel
       ): IContentFactory = {
         val __obj = js.Dynamic.literal(createOutputArea = js.Any.fromFunction1(createOutputArea))
         __obj.asInstanceOf[IContentFactory]
       }
       
-      @scala.inline
-      implicit class IContentFactoryMutableBuilder[Self <: IContentFactory] (val x: Self) extends AnyVal {
+      extension [Self <: IContentFactory](x: Self) {
         
-        @scala.inline
-        def setCreateOutputArea(value: typings.jupyterlabOutputarea.modelMod.IOutputAreaModel.IOptions => IOutputAreaModel): Self = StObject.set(x, "createOutputArea", js.Any.fromFunction1(value))
+        inline def setCreateOutputArea(value: typings.jupyterlabOutputarea.modelMod.IOutputAreaModel.IOptions => IOutputAreaModel): Self = StObject.set(x, "createOutputArea", js.Any.fromFunction1(value))
       }
     }
     
     /**
       * The options used to initialize a `CodeCellModel`.
       */
-    @js.native
     trait IOptions
-      extends typings.jupyterlabCells.modelMod.CellModel.IOptions {
+      extends StObject
+         with typings.jupyterlabCells.modelMod.CellModel.IOptions {
       
       /**
         * The factory for output area model creation.
         */
-      var contentFactory: js.UndefOr[IContentFactory] = js.native
+      var contentFactory: js.UndefOr[IContentFactory] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): typings.jupyterlabCells.modelMod.CodeCellModel.IOptions = {
+      inline def apply(): typings.jupyterlabCells.modelMod.CodeCellModel.IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.jupyterlabCells.modelMod.CodeCellModel.IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: typings.jupyterlabCells.modelMod.CodeCellModel.IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.jupyterlabCells.modelMod.CodeCellModel.IOptions](x: Self) {
         
-        @scala.inline
-        def setContentFactory(value: IContentFactory): Self = StObject.set(x, "contentFactory", value.asInstanceOf[js.Any])
+        inline def setContentFactory(value: IContentFactory): Self = StObject.set(x, "contentFactory", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentFactoryUndefined: Self = StObject.set(x, "contentFactory", js.undefined)
+        inline def setContentFactoryUndefined: Self = StObject.set(x, "contentFactory", js.undefined)
       }
     }
   }
@@ -405,30 +407,24 @@ object modelMod {
     def type_MRawCellModel: raw = js.native
   }
   
-  @JSImport("@jupyterlab/cells/lib/model", "isCodeCellModel")
-  @js.native
-  def isCodeCellModel(model: ICellModel): /* is @jupyterlab/cells.@jupyterlab/cells/lib/model.ICodeCellModel */ Boolean = js.native
+  inline def isCodeCellModel(model: ICellModel): /* is @jupyterlab/cells.@jupyterlab/cells/lib/model.ICodeCellModel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCodeCellModel")(model.asInstanceOf[js.Any]).asInstanceOf[/* is @jupyterlab/cells.@jupyterlab/cells/lib/model.ICodeCellModel */ Boolean]
   
-  @JSImport("@jupyterlab/cells/lib/model", "isMarkdownCellModel")
-  @js.native
-  def isMarkdownCellModel(model: ICellModel): /* is @jupyterlab/cells.@jupyterlab/cells/lib/model.IMarkdownCellModel */ Boolean = js.native
+  inline def isMarkdownCellModel(model: ICellModel): /* is @jupyterlab/cells.@jupyterlab/cells/lib/model.IMarkdownCellModel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMarkdownCellModel")(model.asInstanceOf[js.Any]).asInstanceOf[/* is @jupyterlab/cells.@jupyterlab/cells/lib/model.IMarkdownCellModel */ Boolean]
   
-  @JSImport("@jupyterlab/cells/lib/model", "isRawCellModel")
-  @js.native
-  def isRawCellModel(model: ICellModel): /* is @jupyterlab/cells.@jupyterlab/cells/lib/model.IRawCellModel */ Boolean = js.native
+  inline def isRawCellModel(model: ICellModel): /* is @jupyterlab/cells.@jupyterlab/cells/lib/model.IRawCellModel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRawCellModel")(model.asInstanceOf[js.Any]).asInstanceOf[/* is @jupyterlab/cells.@jupyterlab/cells/lib/model.IRawCellModel */ Boolean]
   
-  @js.native
-  trait IAttachmentsCellModel extends ICellModel {
+  trait IAttachmentsCellModel
+    extends StObject
+       with ICellModel {
     
     /**
       * The cell attachments
       */
-    val attachments: IAttachmentsModel = js.native
+    val attachments: IAttachmentsModel
   }
   object IAttachmentsCellModel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attachments: IAttachmentsModel,
       contentChanged: ISignal[ICellModel, Unit],
       dispose: () => Unit,
@@ -442,7 +438,10 @@ object modelMod {
         ],
       modelDB: IModelDB,
       selections: IObservableMap[js.Array[ITextSelection]],
-      stateChanged: ISignal[ICellModel, typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[_, _, String]],
+      stateChanged: ISignal[
+          ICellModel, 
+          typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[js.Any, js.Any, String]
+        ],
       toJSON: () => ICell,
       trusted: Boolean,
       `type`: CellType,
@@ -453,56 +452,57 @@ object modelMod {
       __obj.asInstanceOf[IAttachmentsCellModel]
     }
     
-    @scala.inline
-    implicit class IAttachmentsCellModelMutableBuilder[Self <: IAttachmentsCellModel] (val x: Self) extends AnyVal {
+    extension [Self <: IAttachmentsCellModel](x: Self) {
       
-      @scala.inline
-      def setAttachments(value: IAttachmentsModel): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+      inline def setAttachments(value: IAttachmentsModel): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait ICellModel extends IModel {
+  trait ICellModel
+    extends StObject
+       with IModel {
     
     /**
       * A signal emitted when the content of the model changes.
       */
-    val contentChanged: ISignal[ICellModel, Unit] = js.native
+    val contentChanged: ISignal[ICellModel, Unit]
     
     /**
       * A unique identifier for the cell.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The metadata associated with the cell.
       */
-    val metadata: IObservableJSON = js.native
+    val metadata: IObservableJSON
     
     /**
       * A signal emitted when a model state changes.
       */
-    val stateChanged: ISignal[ICellModel, typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[_, _, String]] = js.native
+    val stateChanged: ISignal[
+        ICellModel, 
+        typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[js.Any, js.Any, String]
+      ]
     
     /**
       * Serialize the model to JSON.
       */
-    def toJSON(): ICell = js.native
+    def toJSON(): ICell
     
     /**
       * Whether the cell is trusted.
       */
-    var trusted: Boolean = js.native
+    var trusted: Boolean
     
     /**
       * The type of the cell.
       */
-    val `type`: CellType = js.native
+    val `type`: CellType
   }
   object ICellModel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       contentChanged: ISignal[ICellModel, Unit],
       dispose: () => Unit,
       id: String,
@@ -515,7 +515,10 @@ object modelMod {
         ],
       modelDB: IModelDB,
       selections: IObservableMap[js.Array[ITextSelection]],
-      stateChanged: ISignal[ICellModel, typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[_, _, String]],
+      stateChanged: ISignal[
+          ICellModel, 
+          typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[js.Any, js.Any, String]
+        ],
       toJSON: () => ICell,
       trusted: Boolean,
       `type`: CellType,
@@ -526,49 +529,47 @@ object modelMod {
       __obj.asInstanceOf[ICellModel]
     }
     
-    @scala.inline
-    implicit class ICellModelMutableBuilder[Self <: ICellModel] (val x: Self) extends AnyVal {
+    extension [Self <: ICellModel](x: Self) {
       
-      @scala.inline
-      def setContentChanged(value: ISignal[ICellModel, Unit]): Self = StObject.set(x, "contentChanged", value.asInstanceOf[js.Any])
+      inline def setContentChanged(value: ISignal[ICellModel, Unit]): Self = StObject.set(x, "contentChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: IObservableJSON): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IObservableJSON): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateChanged(value: ISignal[ICellModel, typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[_, _, String]]): Self = StObject.set(x, "stateChanged", value.asInstanceOf[js.Any])
+      inline def setStateChanged(
+        value: ISignal[
+              ICellModel, 
+              typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[js.Any, js.Any, String]
+            ]
+      ): Self = StObject.set(x, "stateChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToJSON(value: () => ICell): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => ICell): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTrusted(value: Boolean): Self = StObject.set(x, "trusted", value.asInstanceOf[js.Any])
+      inline def setTrusted(value: Boolean): Self = StObject.set(x, "trusted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: CellType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: CellType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait ICodeCellModel extends ICellModel {
+  trait ICodeCellModel
+    extends StObject
+       with ICellModel {
     
     /**
       * Clear execution, outputs, and related metadata
       */
-    def clearExecution(): Unit = js.native
+    def clearExecution(): Unit
     
     /**
       * The code cell's prompt number. Will be null if the cell has not been run.
       */
-    var executionCount: ExecutionCount = js.native
+    var executionCount: ExecutionCount
     
     /**
       * The cell outputs.
       */
-    val outputs: IOutputAreaModel = js.native
+    val outputs: IOutputAreaModel
     
     /**
       * The type of the cell.
@@ -577,12 +578,11 @@ object modelMod {
       * This is a read-only property.
       */
     @JSName("type")
-    val type_ICodeCellModel: code = js.native
+    val type_ICodeCellModel: code
   }
   object ICodeCellModel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clearExecution: () => Unit,
       contentChanged: ISignal[ICellModel, Unit],
       dispose: () => Unit,
@@ -597,50 +597,46 @@ object modelMod {
       modelDB: IModelDB,
       outputs: IOutputAreaModel,
       selections: IObservableMap[js.Array[ITextSelection]],
-      stateChanged: ISignal[ICellModel, typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[_, _, String]],
+      stateChanged: ISignal[
+          ICellModel, 
+          typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[js.Any, js.Any, String]
+        ],
       toJSON: () => ICell,
       trusted: Boolean,
-      `type`: code,
       value: IObservableString
     ): ICodeCellModel = {
-      val __obj = js.Dynamic.literal(clearExecution = js.Any.fromFunction0(clearExecution), contentChanged = contentChanged.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), id = id.asInstanceOf[js.Any], isDisposed = isDisposed.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any], mimeTypeChanged = mimeTypeChanged.asInstanceOf[js.Any], modelDB = modelDB.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any], stateChanged = stateChanged.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), trusted = trusted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(clearExecution = js.Any.fromFunction0(clearExecution), contentChanged = contentChanged.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), id = id.asInstanceOf[js.Any], isDisposed = isDisposed.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any], mimeTypeChanged = mimeTypeChanged.asInstanceOf[js.Any], modelDB = modelDB.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any], stateChanged = stateChanged.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), trusted = trusted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], executionCount = null)
+      __obj.updateDynamic("type")("code")
       __obj.asInstanceOf[ICodeCellModel]
     }
     
-    @scala.inline
-    implicit class ICodeCellModelMutableBuilder[Self <: ICodeCellModel] (val x: Self) extends AnyVal {
+    extension [Self <: ICodeCellModel](x: Self) {
       
-      @scala.inline
-      def setClearExecution(value: () => Unit): Self = StObject.set(x, "clearExecution", js.Any.fromFunction0(value))
+      inline def setClearExecution(value: () => Unit): Self = StObject.set(x, "clearExecution", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExecutionCount(value: ExecutionCount): Self = StObject.set(x, "executionCount", value.asInstanceOf[js.Any])
+      inline def setExecutionCount(value: ExecutionCount): Self = StObject.set(x, "executionCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecutionCountNull: Self = StObject.set(x, "executionCount", null)
+      inline def setExecutionCountNull: Self = StObject.set(x, "executionCount", null)
       
-      @scala.inline
-      def setOutputs(value: IOutputAreaModel): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+      inline def setOutputs(value: IOutputAreaModel): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait IMarkdownCellModel extends IAttachmentsCellModel {
+  trait IMarkdownCellModel
+    extends StObject
+       with IAttachmentsCellModel {
     
     /**
       * The type of the cell.
       */
     @JSName("type")
-    val type_IMarkdownCellModel: markdown = js.native
+    val type_IMarkdownCellModel: markdown
   }
   object IMarkdownCellModel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attachments: IAttachmentsModel,
       contentChanged: ISignal[ICellModel, Unit],
       dispose: () => Unit,
@@ -654,38 +650,38 @@ object modelMod {
         ],
       modelDB: IModelDB,
       selections: IObservableMap[js.Array[ITextSelection]],
-      stateChanged: ISignal[ICellModel, typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[_, _, String]],
+      stateChanged: ISignal[
+          ICellModel, 
+          typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[js.Any, js.Any, String]
+        ],
       toJSON: () => ICell,
       trusted: Boolean,
-      `type`: markdown,
       value: IObservableString
     ): IMarkdownCellModel = {
       val __obj = js.Dynamic.literal(attachments = attachments.asInstanceOf[js.Any], contentChanged = contentChanged.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), id = id.asInstanceOf[js.Any], isDisposed = isDisposed.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any], mimeTypeChanged = mimeTypeChanged.asInstanceOf[js.Any], modelDB = modelDB.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any], stateChanged = stateChanged.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), trusted = trusted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("markdown")
       __obj.asInstanceOf[IMarkdownCellModel]
     }
     
-    @scala.inline
-    implicit class IMarkdownCellModelMutableBuilder[Self <: IMarkdownCellModel] (val x: Self) extends AnyVal {
+    extension [Self <: IMarkdownCellModel](x: Self) {
       
-      @scala.inline
-      def setType(value: markdown): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: markdown): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait IRawCellModel extends IAttachmentsCellModel {
+  trait IRawCellModel
+    extends StObject
+       with IAttachmentsCellModel {
     
     /**
       * The type of the cell.
       */
     @JSName("type")
-    val type_IRawCellModel: raw = js.native
+    val type_IRawCellModel: raw
   }
   object IRawCellModel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attachments: IAttachmentsModel,
       contentChanged: ISignal[ICellModel, Unit],
       dispose: () => Unit,
@@ -699,22 +695,22 @@ object modelMod {
         ],
       modelDB: IModelDB,
       selections: IObservableMap[js.Array[ITextSelection]],
-      stateChanged: ISignal[ICellModel, typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[_, _, String]],
+      stateChanged: ISignal[
+          ICellModel, 
+          typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[js.Any, js.Any, String]
+        ],
       toJSON: () => ICell,
       trusted: Boolean,
-      `type`: raw,
       value: IObservableString
     ): IRawCellModel = {
       val __obj = js.Dynamic.literal(attachments = attachments.asInstanceOf[js.Any], contentChanged = contentChanged.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), id = id.asInstanceOf[js.Any], isDisposed = isDisposed.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any], mimeTypeChanged = mimeTypeChanged.asInstanceOf[js.Any], modelDB = modelDB.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any], stateChanged = stateChanged.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), trusted = trusted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("raw")
       __obj.asInstanceOf[IRawCellModel]
     }
     
-    @scala.inline
-    implicit class IRawCellModelMutableBuilder[Self <: IRawCellModel] (val x: Self) extends AnyVal {
+    extension [Self <: IRawCellModel](x: Self) {
       
-      @scala.inline
-      def setType(value: raw): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: raw): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

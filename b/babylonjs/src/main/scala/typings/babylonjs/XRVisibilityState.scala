@@ -2,7 +2,6 @@ package typings.babylonjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -13,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XRVisibilityState extends StObject
 object XRVisibilityState {
   
-  @scala.inline
-  def hidden: typings.babylonjs.babylonjsStrings.hidden = "hidden".asInstanceOf[typings.babylonjs.babylonjsStrings.hidden]
+  inline def hidden: typings.babylonjs.babylonjsStrings.hidden = "hidden".asInstanceOf[typings.babylonjs.babylonjsStrings.hidden]
   
-  @scala.inline
-  def visible: typings.babylonjs.babylonjsStrings.visible = "visible".asInstanceOf[typings.babylonjs.babylonjsStrings.visible]
+  inline def visible: typings.babylonjs.babylonjsStrings.visible = "visible".asInstanceOf[typings.babylonjs.babylonjsStrings.visible]
   
-  @scala.inline
-  def `visible-blurred`: typings.babylonjs.babylonjsStrings.`visible-blurred` = "visible-blurred".asInstanceOf[typings.babylonjs.babylonjsStrings.`visible-blurred`]
+  inline def `visible-blurred`: typings.babylonjs.babylonjsStrings.`visible-blurred` = "visible-blurred".asInstanceOf[typings.babylonjs.babylonjsStrings.`visible-blurred`]
 }

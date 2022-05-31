@@ -15,10 +15,13 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@jupyterlab/cells", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@jupyterlab/cells", "AttachmentsCell")
   @js.native
@@ -82,10 +85,6 @@ object mod {
       extends typings.jupyterlabCells.widgetMod.Cell.ContentFactory {
       def this(options: typings.jupyterlabCells.widgetMod.Cell.ContentFactory.IOptions) = this()
     }
-    /**
-      * A namespace for cell content factory.
-      */
-    object ContentFactory
     
     /**
       * The default content factory for cells.
@@ -97,15 +96,17 @@ object mod {
   
   object CellDragUtils {
     
+    @JSImport("@jupyterlab/cells", "CellDragUtils")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Create an image for the cell(s) to be dragged
       *
       * @param activeCell - The cell from where the drag event is triggered
       * @param selectedCells - The cells to be dragged
       */
-    @JSImport("@jupyterlab/cells", "CellDragUtils.createCellDragImage")
-    @js.native
-    def createCellDragImage(activeCell: typings.jupyterlabCells.widgetMod.Cell, selectedCells: js.Array[ICell]): HTMLElement = js.native
+    inline def createCellDragImage(activeCell: typings.jupyterlabCells.widgetMod.Cell, selectedCells: js.Array[ICell]): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createCellDragImage")(activeCell.asInstanceOf[js.Any], selectedCells.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
     
     /**
       * Detect which part of the cell triggered the MouseEvent
@@ -113,9 +114,7 @@ object mod {
       * @param cell - The cell which contains the MouseEvent's target
       * @param target - The DOM node which triggered the MouseEvent
       */
-    @JSImport("@jupyterlab/cells", "CellDragUtils.detectTargetArea")
-    @js.native
-    def detectTargetArea(cell: typings.jupyterlabCells.widgetMod.Cell, target: HTMLElement): ICellTargetArea = js.native
+    inline def detectTargetArea(cell: typings.jupyterlabCells.widgetMod.Cell, target: HTMLElement): ICellTargetArea = (^.asInstanceOf[js.Dynamic].applyDynamic("detectTargetArea")(cell.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[ICellTargetArea]
     
     /**
       * Find the cell index containing the target html element.
@@ -130,13 +129,11 @@ object mod {
       * @returns index of the cell we're looking for. Returns -1 if
       * the cell is not founds
       */
-    @JSImport("@jupyterlab/cells", "CellDragUtils.findCell")
-    @js.native
-    def findCell(
+    inline def findCell(
       node: HTMLElement,
       cells: IterableOrArrayLike[typings.jupyterlabCells.widgetMod.Cell],
       isCellNode: js.Function1[/* node */ HTMLElement, Boolean]
-    ): Double = js.native
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findCell")(node.asInstanceOf[js.Any], cells.asInstanceOf[js.Any], isCellNode.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Detect if a drag event should be started. This is down if the
@@ -147,9 +144,7 @@ object mod {
       * @param nextX - Current X Coordinate of the mouse pointer
       * @param nextY - Current Y Coordinate of the mouse pointer
       */
-    @JSImport("@jupyterlab/cells", "CellDragUtils.shouldStartDrag")
-    @js.native
-    def shouldStartDrag(prevX: Double, prevY: Double, nextX: Double, nextY: Double): Boolean = js.native
+    inline def shouldStartDrag(prevX: Double, prevY: Double, nextX: Double, nextY: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldStartDrag")(prevX.asInstanceOf[js.Any], prevY.asInstanceOf[js.Any], nextX.asInstanceOf[js.Any], nextY.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   @JSImport("@jupyterlab/cells", "CellFooter")
@@ -189,19 +184,19 @@ object mod {
   }
   object CodeCell {
     
+    @JSImport("@jupyterlab/cells", "CodeCell")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Execute a cell given a client session.
       */
-    @JSImport("@jupyterlab/cells", "CodeCell.execute")
-    @js.native
-    def execute(cell: typings.jupyterlabCells.widgetMod.CodeCell, sessionContext: ISessionContext): js.Promise[IExecuteReplyMsg | Unit] = js.native
-    @JSImport("@jupyterlab/cells", "CodeCell.execute")
-    @js.native
-    def execute(
+    inline def execute(cell: typings.jupyterlabCells.widgetMod.CodeCell, sessionContext: ISessionContext): js.Promise[IExecuteReplyMsg | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(cell.asInstanceOf[js.Any], sessionContext.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IExecuteReplyMsg | Unit]]
+    inline def execute(
       cell: typings.jupyterlabCells.widgetMod.CodeCell,
       sessionContext: ISessionContext,
       metadata: JSONObject
-    ): js.Promise[IExecuteReplyMsg | Unit] = js.native
+    ): js.Promise[IExecuteReplyMsg | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(cell.asInstanceOf[js.Any], sessionContext.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IExecuteReplyMsg | Unit]]
   }
   
   @JSImport("@jupyterlab/cells", "CodeCellModel")
@@ -264,10 +259,6 @@ object mod {
       extends typings.jupyterlabCells.inputareaMod.InputArea.ContentFactory {
       def this(options: typings.jupyterlabCells.inputareaMod.InputArea.ContentFactory.IOptions) = this()
     }
-    /**
-      * A namespace for the input area content factory.
-      */
-    object ContentFactory
     
     /**
       * The default `ContentFactory` instance.
@@ -375,15 +366,9 @@ object mod {
     def this(options: typings.jupyterlabCells.modelMod.AttachmentsCellModel.IOptions) = this()
   }
   
-  @JSImport("@jupyterlab/cells", "isCodeCellModel")
-  @js.native
-  def isCodeCellModel(model: ICellModel): /* is @jupyterlab/cells.@jupyterlab/cells/lib/model.ICodeCellModel */ Boolean = js.native
+  inline def isCodeCellModel(model: ICellModel): /* is @jupyterlab/cells.@jupyterlab/cells/lib/model.ICodeCellModel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCodeCellModel")(model.asInstanceOf[js.Any]).asInstanceOf[/* is @jupyterlab/cells.@jupyterlab/cells/lib/model.ICodeCellModel */ Boolean]
   
-  @JSImport("@jupyterlab/cells", "isMarkdownCellModel")
-  @js.native
-  def isMarkdownCellModel(model: ICellModel): /* is @jupyterlab/cells.@jupyterlab/cells/lib/model.IMarkdownCellModel */ Boolean = js.native
+  inline def isMarkdownCellModel(model: ICellModel): /* is @jupyterlab/cells.@jupyterlab/cells/lib/model.IMarkdownCellModel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMarkdownCellModel")(model.asInstanceOf[js.Any]).asInstanceOf[/* is @jupyterlab/cells.@jupyterlab/cells/lib/model.IMarkdownCellModel */ Boolean]
   
-  @JSImport("@jupyterlab/cells", "isRawCellModel")
-  @js.native
-  def isRawCellModel(model: ICellModel): /* is @jupyterlab/cells.@jupyterlab/cells/lib/model.IRawCellModel */ Boolean = js.native
+  inline def isRawCellModel(model: ICellModel): /* is @jupyterlab/cells.@jupyterlab/cells/lib/model.IRawCellModel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRawCellModel")(model.asInstanceOf[js.Any]).asInstanceOf[/* is @jupyterlab/cells.@jupyterlab/cells/lib/model.IRawCellModel */ Boolean]
 }

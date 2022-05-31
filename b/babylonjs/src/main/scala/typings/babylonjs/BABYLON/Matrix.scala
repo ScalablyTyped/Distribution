@@ -3,27 +3,26 @@ package typings.babylonjs.BABYLON
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Matrix extends StObject {
   
-  var _isIdentity: js.Any = js.native
+  /* private */ var _isIdentity: js.Any = js.native
   
-  var _isIdentity3x2: js.Any = js.native
+  /* private */ var _isIdentity3x2: js.Any = js.native
   
-  var _isIdentity3x2Dirty: js.Any = js.native
+  /* private */ var _isIdentity3x2Dirty: js.Any = js.native
   
-  var _isIdentityDirty: js.Any = js.native
+  /* private */ var _isIdentityDirty: js.Any = js.native
   
-  val _m: js.Any = js.native
+  /* private */ val _m: js.Any = js.native
   
   /** @hidden */
   def _markAsUpdated(): Unit = js.native
   
   /** @hidden */
-  var _updateIdentityStatus: js.Any = js.native
+  /* private */ var _updateIdentityStatus: js.Any = js.native
   
   /**
     * Adds the current matrix with a second one
@@ -96,11 +95,11 @@ trait Matrix extends StObject {
     * @returns true if operation was successful
     */
   def decompose(): Boolean = js.native
-  def decompose(scale: js.UndefOr[scala.Nothing], rotation: js.UndefOr[scala.Nothing], translation: Vector3): Boolean = js.native
-  def decompose(scale: js.UndefOr[scala.Nothing], rotation: Quaternion): Boolean = js.native
-  def decompose(scale: js.UndefOr[scala.Nothing], rotation: Quaternion, translation: Vector3): Boolean = js.native
+  def decompose(scale: Unit, rotation: Unit, translation: Vector3): Boolean = js.native
+  def decompose(scale: Unit, rotation: Quaternion): Boolean = js.native
+  def decompose(scale: Unit, rotation: Quaternion, translation: Vector3): Boolean = js.native
   def decompose(scale: Vector3): Boolean = js.native
-  def decompose(scale: Vector3, rotation: js.UndefOr[scala.Nothing], translation: Vector3): Boolean = js.native
+  def decompose(scale: Vector3, rotation: Unit, translation: Vector3): Boolean = js.native
   def decompose(scale: Vector3, rotation: Quaternion): Boolean = js.native
   def decompose(scale: Vector3, rotation: Quaternion, translation: Vector3): Boolean = js.native
   

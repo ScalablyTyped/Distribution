@@ -2,7 +2,6 @@ package typings.babylonjs.legacyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "PBRSpecularGlossinessMaterial")
@@ -20,10 +19,12 @@ class PBRSpecularGlossinessMaterial protected ()
 /* static members */
 object PBRSpecularGlossinessMaterial {
   
+  @JSImport("babylonjs/Legacy/legacy", "PBRSpecularGlossinessMaterial")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Parses a JSON object correponding to the serialize function.
     */
-  @JSImport("babylonjs/Legacy/legacy", "PBRSpecularGlossinessMaterial.Parse")
-  @js.native
-  def Parse(source: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.pbrSpecularGlossinessMaterialMod.PBRSpecularGlossinessMaterial = js.native
+  inline def Parse(source: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.pbrSpecularGlossinessMaterialMod.PBRSpecularGlossinessMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.pbrSpecularGlossinessMaterialMod.PBRSpecularGlossinessMaterial]
 }

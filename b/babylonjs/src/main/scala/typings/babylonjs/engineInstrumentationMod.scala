@@ -5,14 +5,15 @@ import typings.babylonjs.perfCounterMod.PerfCounter
 import typings.babylonjs.sceneMod.IDisposable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object engineInstrumentationMod {
   
   @JSImport("babylonjs/Instrumentation/engineInstrumentation", "EngineInstrumentation")
   @js.native
-  class EngineInstrumentation protected () extends IDisposable {
+  class EngineInstrumentation protected ()
+    extends StObject
+       with IDisposable {
     /**
       * Instantiates a new engine instrumentation.
       * This class can be used to get instrumentation data from a Babylon engine
@@ -24,23 +25,23 @@ object engineInstrumentationMod {
       */
     engine: Engine) = this()
     
-    var _captureGPUFrameTime: js.Any = js.native
+    /* private */ var _captureGPUFrameTime: js.Any = js.native
     
-    var _captureShaderCompilationTime: js.Any = js.native
+    /* private */ var _captureShaderCompilationTime: js.Any = js.native
     
-    var _gpuFrameTime: js.Any = js.native
+    /* private */ var _gpuFrameTime: js.Any = js.native
     
-    var _gpuFrameTimeToken: js.Any = js.native
+    /* private */ var _gpuFrameTimeToken: js.Any = js.native
     
-    var _onAfterShaderCompilationObserver: js.Any = js.native
+    /* private */ var _onAfterShaderCompilationObserver: js.Any = js.native
     
-    var _onBeforeShaderCompilationObserver: js.Any = js.native
+    /* private */ var _onBeforeShaderCompilationObserver: js.Any = js.native
     
-    var _onBeginFrameObserver: js.Any = js.native
+    /* private */ var _onBeginFrameObserver: js.Any = js.native
     
-    var _onEndFrameObserver: js.Any = js.native
+    /* private */ var _onEndFrameObserver: js.Any = js.native
     
-    var _shaderCompilationTime: js.Any = js.native
+    /* private */ var _shaderCompilationTime: js.Any = js.native
     
     /**
       * Gets the GPU frame time capture status
@@ -59,6 +60,12 @@ object engineInstrumentationMod {
       * Enable or disable the shader compilation time capture
       */
     def captureShaderCompilationTime_=(value: Boolean): Unit = js.native
+    
+    /**
+      * Releases all held resources
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * Define the instrumented engine.

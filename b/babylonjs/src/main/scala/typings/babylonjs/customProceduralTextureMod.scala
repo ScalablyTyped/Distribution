@@ -5,7 +5,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.textureMod.Texture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object customProceduralTextureMod {
@@ -32,7 +31,7 @@ object customProceduralTextureMod {
       texturePath: String,
       size: Double,
       scene: Scene,
-      fallbackTexture: js.UndefOr[scala.Nothing],
+      fallbackTexture: Unit,
       generateMipMaps: Boolean
     ) = this()
     def this(
@@ -44,15 +43,15 @@ object customProceduralTextureMod {
       generateMipMaps: Boolean
     ) = this()
     
-    var _animate: js.Any = js.native
+    /* private */ var _animate: js.Any = js.native
     
-    var _config: js.Any = js.native
+    /* private */ var _config: js.Any = js.native
     
-    var _loadJson: js.Any = js.native
+    /* private */ var _loadJson: js.Any = js.native
     
-    var _texturePath: js.Any = js.native
+    /* private */ var _texturePath: js.Any = js.native
     
-    var _time: js.Any = js.native
+    /* private */ var _time: js.Any = js.native
     
     /**
       * Define if the texture animates or not.

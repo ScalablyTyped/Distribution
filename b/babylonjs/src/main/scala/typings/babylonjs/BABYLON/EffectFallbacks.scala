@@ -2,19 +2,20 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EffectFallbacks extends IEffectFallbacks {
+trait EffectFallbacks
+  extends StObject
+     with IEffectFallbacks {
   
-  var _currentRank: js.Any = js.native
+  /* private */ var _currentRank: js.Any = js.native
   
-  var _defines: js.Any = js.native
+  /* private */ var _defines: js.Any = js.native
   
-  var _maxRank: js.Any = js.native
+  /* private */ var _maxRank: js.Any = js.native
   
-  var _mesh: js.Any = js.native
+  /* private */ var _mesh: js.Any = js.native
   
   /**
     * Sets the mesh to use CPU skinning when needing to fallback.

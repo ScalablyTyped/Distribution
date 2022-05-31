@@ -110,8 +110,7 @@ object crypto {
   @JSGlobal("jsrsasign.KJUR.crypto.DSA")
   @js.native
   class DSA ()
-    extends StObject
-       with typings.jsrsasign.jsrsasign.KJUR.crypto.DSA
+    extends typings.jsrsasign.mod.KJUR.crypto.DSA
   
   /**
     * class for EC key generation,  ECDSA signing and verifcation
@@ -130,8 +129,7 @@ object crypto {
   @JSGlobal("jsrsasign.KJUR.crypto.ECDSA")
   @js.native
   class ECDSA ()
-    extends StObject
-       with typings.jsrsasign.jsrsasign.KJUR.crypto.ECDSA {
+    extends typings.jsrsasign.mod.KJUR.crypto.ECDSA {
     def this(publicKey: Curve) = this()
   }
   object ECDSA {
@@ -298,8 +296,7 @@ object crypto {
   @JSGlobal("jsrsasign.KJUR.crypto.Mac")
   @js.native
   class Mac protected ()
-    extends StObject
-       with typings.jsrsasign.jsrsasign.KJUR.crypto.Mac {
+    extends typings.jsrsasign.mod.KJUR.crypto.Mac {
     def this(params: Pass) = this()
   }
   
@@ -334,85 +331,8 @@ object crypto {
   @JSGlobal("jsrsasign.KJUR.crypto.MessageDigest")
   @js.native
   class MessageDigest protected ()
-    extends StObject
-       with typings.jsrsasign.jsrsasign.KJUR.crypto.MessageDigest {
+    extends typings.jsrsasign.mod.KJUR.crypto.MessageDigest {
     def this(params: Prov) = this()
-    
-    /**
-      * completes hash calculation and returns hash result
-      * @description
-      * @example
-      * md.digest()
-      */
-    /* CompleteClass */
-    override def digest(): Unit = js.native
-    
-    /**
-      * performs final update on the digest using hexadecimal string, then completes the digest computation
-      * @param hex hexadecimal string to final update
-      * @description
-      * @example
-      * md.digestHex('0f2abd')
-      */
-    /* CompleteClass */
-    override def digestHex(hex: String): Unit = js.native
-    
-    /**
-      * performs final update on the digest using string, then completes the digest computation
-      * @param str string to final update
-      * @description
-      * @example
-      * md.digestString('aaa')
-      */
-    /* CompleteClass */
-    override def digestString(str: String): Unit = js.native
-    
-    /**
-      * set hash algorithm and provider
-      * @param alg hash algorithm name
-      * @param prov provider name
-      * @description
-      * This methods set an algorithm and a cryptographic provider.
-      * Here is acceptable algorithm names ignoring cases and hyphens:
-      * - MD5
-      * - SHA1
-      * - SHA224
-      * - SHA256
-      * - SHA384
-      * - SHA512
-      * - RIPEMD160
-      * NOTE: Since jsrsasign 6.2.0 crypto 1.1.10, this method ignores
-      * upper or lower cases. Also any hyphens (i.e. "-") will be ignored
-      * so that "SHA1" or "SHA-1" will be acceptable.
-      * @example
-      * // for SHA1
-      * md.setAlgAndProvider('sha1', 'cryptojs');
-      * md.setAlgAndProvider('SHA1');
-      * // for RIPEMD160
-      * md.setAlgAndProvider('ripemd160', 'cryptojs');
-      */
-    /* CompleteClass */
-    override def setAlgAndProvider(alg: String, prov: String): Unit = js.native
-    
-    /**
-      * update digest by specified hexadecimal string
-      * @param hex hexadecimal string to update
-      * @description
-      * @example
-      * md.updateHex('0afe36');
-      */
-    /* CompleteClass */
-    override def updateHex(hex: String): Unit = js.native
-    
-    /**
-      * update digest by specified string
-      * @param str string to update
-      * @description
-      * @example
-      * md.updateString('New York');
-      */
-    /* CompleteClass */
-    override def updateString(str: String): Unit = js.native
   }
   object MessageDigest {
     
@@ -569,8 +489,7 @@ object crypto {
   @JSGlobal("jsrsasign.KJUR.crypto.Signature")
   @js.native
   class Signature ()
-    extends StObject
-       with typings.jsrsasign.jsrsasign.KJUR.crypto.Signature {
+    extends typings.jsrsasign.mod.KJUR.crypto.Signature {
     def this(params: `0`) = this()
   }
   object Signature {

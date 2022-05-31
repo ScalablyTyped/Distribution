@@ -43,63 +43,61 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ojComboboxOneEventMap[K, D]
-  extends ojComboboxEventMap[js.Any, ojComboboxOneSettableProperties[K, D], js.Any, String] {
+  extends StObject
+     with ojComboboxEventMap[js.Any, ojComboboxOneSettableProperties[K, D], js.Any, String] {
   
-  var asyncValidatorsChanged: JetElementCustomEvent[js.Array[AsyncValidator[_]]] = js.native
+  var asyncValidatorsChanged: JetElementCustomEvent[js.Array[AsyncValidator[js.Any]]]
   
-  var converterChanged: JetElementCustomEvent[Converter[_] | RegisteredConverter | Null] = js.native
+  var converterChanged: JetElementCustomEvent[Converter[js.Any] | RegisteredConverter | Null]
   
-  var filterOnOpenChanged: JetElementCustomEvent[none | rawValue] = js.native
+  var filterOnOpenChanged: JetElementCustomEvent[none | rawValue]
   
-  var minLengthChanged: JetElementCustomEvent[Double] = js.native
+  var minLengthChanged: JetElementCustomEvent[Double]
   
   @JSName("ojAnimateEnd")
-  var ojAnimateEnd_ojComboboxOneEventMap: ojAnimateEnd = js.native
+  var ojAnimateEnd_ojComboboxOneEventMap: ojAnimateEnd
   
   @JSName("ojAnimateStart")
-  var ojAnimateStart_ojComboboxOneEventMap: ojAnimateStart = js.native
+  var ojAnimateStart_ojComboboxOneEventMap: ojAnimateStart
   
-  var ojValueUpdated: typings.oracleOraclejet.ojselectcomboboxMod.ojComboboxOne.ojValueUpdated = js.native
+  var ojValueUpdated: typings.oracleOraclejet.ojselectcomboboxMod.ojComboboxOne.ojValueUpdated
   
-  var optionRendererChanged: JetElementCustomEvent[js.UndefOr[(js.Function1[/* param0 */ OptionContext, Element]) | Null]] = js.native
+  var optionRendererChanged: JetElementCustomEvent[js.UndefOr[(js.Function1[/* param0 */ OptionContext, Element]) | Null]]
   
   var optionsChanged: JetElementCustomEvent[
     (js.Array[
       typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Option | typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Optgroup
     ]) | (DataProvider[K, D]) | Null
-  ] = js.native
+  ]
   
-  var optionsKeysChanged: JetElementCustomEvent[Children] = js.native
+  var optionsKeysChanged: JetElementCustomEvent[Children]
   
-  var pickerAttributesChanged: JetElementCustomEvent[Class] = js.native
+  var pickerAttributesChanged: JetElementCustomEvent[Class]
   
-  var placeholderChanged: JetElementCustomEvent[String | Null] = js.native
+  var placeholderChanged: JetElementCustomEvent[String | Null]
   
-  var rawValueChanged: JetElementCustomEvent[String | Null] = js.native
+  var rawValueChanged: JetElementCustomEvent[String | Null]
   
-  var readOnlyChanged: JetElementCustomEvent[Boolean] = js.native
+  var readOnlyChanged: JetElementCustomEvent[Boolean]
   
-  var requiredChanged: JetElementCustomEvent[Boolean] = js.native
+  var requiredChanged: JetElementCustomEvent[Boolean]
   
-  var validatorsChanged: JetElementCustomEvent[(js.Array[Validator[_] | RegisteredValidator]) | Null] = js.native
+  var validatorsChanged: JetElementCustomEvent[(js.Array[Validator[js.Any] | RegisteredValidator]) | Null]
   
-  var valueOptionChanged: JetElementCustomEvent[LabelValue] = js.native
+  var valueOptionChanged: JetElementCustomEvent[LabelValue]
 }
 object ojComboboxOneEventMap {
   
-  @scala.inline
-  def apply[K, D](
+  inline def apply[K, D](
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,
     animationiteration: AnimationEvent,
     animationstart: AnimationEvent,
-    asyncValidatorsChanged: JetElementCustomEvent[js.Array[AsyncValidator[_]]],
+    asyncValidatorsChanged: JetElementCustomEvent[js.Array[AsyncValidator[js.Any]]],
     auxclick: MouseEvent,
     blur: FocusEvent,
     cancel: Event,
@@ -109,7 +107,7 @@ object ojComboboxOneEventMap {
     click: MouseEvent,
     close: Event,
     contextmenu: MouseEvent,
-    converterChanged: JetElementCustomEvent[Converter[_] | RegisteredConverter | Null],
+    converterChanged: JetElementCustomEvent[Converter[js.Any] | RegisteredConverter | Null],
     copy: ClipboardEvent,
     cuechange: Event,
     cut: ClipboardEvent,
@@ -211,7 +209,7 @@ object ojComboboxOneEventMap {
     transitionstart: TransitionEvent,
     translationsChanged: JetElementCustomEvent[js.Object | Null],
     validChanged: JetElementCustomEvent[valid | pending | invalidHidden | invalidShown],
-    validatorsChanged: JetElementCustomEvent[(js.Array[Validator[_] | RegisteredValidator]) | Null],
+    validatorsChanged: JetElementCustomEvent[(js.Array[Validator[js.Any] | RegisteredValidator]) | Null],
     valueChanged: JetElementCustomEvent[js.Any],
     valueOptionChanged: JetElementCustomEvent[LabelValue],
     volumechange: Event,
@@ -222,37 +220,27 @@ object ojComboboxOneEventMap {
     __obj.asInstanceOf[ojComboboxOneEventMap[K, D]]
   }
   
-  @scala.inline
-  implicit class ojComboboxOneEventMapMutableBuilder[Self <: ojComboboxOneEventMap[_, _], K, D] (val x: Self with (ojComboboxOneEventMap[K, D])) extends AnyVal {
+  extension [Self <: ojComboboxOneEventMap[?, ?], K, D](x: Self & (ojComboboxOneEventMap[K, D])) {
     
-    @scala.inline
-    def setAsyncValidatorsChanged(value: JetElementCustomEvent[js.Array[AsyncValidator[_]]]): Self = StObject.set(x, "asyncValidatorsChanged", value.asInstanceOf[js.Any])
+    inline def setAsyncValidatorsChanged(value: JetElementCustomEvent[js.Array[AsyncValidator[js.Any]]]): Self = StObject.set(x, "asyncValidatorsChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConverterChanged(value: JetElementCustomEvent[Converter[_] | RegisteredConverter | Null]): Self = StObject.set(x, "converterChanged", value.asInstanceOf[js.Any])
+    inline def setConverterChanged(value: JetElementCustomEvent[Converter[js.Any] | RegisteredConverter | Null]): Self = StObject.set(x, "converterChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterOnOpenChanged(value: JetElementCustomEvent[none | rawValue]): Self = StObject.set(x, "filterOnOpenChanged", value.asInstanceOf[js.Any])
+    inline def setFilterOnOpenChanged(value: JetElementCustomEvent[none | rawValue]): Self = StObject.set(x, "filterOnOpenChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinLengthChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "minLengthChanged", value.asInstanceOf[js.Any])
+    inline def setMinLengthChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "minLengthChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
+    inline def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOjAnimateStart(value: ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
+    inline def setOjAnimateStart(value: ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOjValueUpdated(value: ojValueUpdated): Self = StObject.set(x, "ojValueUpdated", value.asInstanceOf[js.Any])
+    inline def setOjValueUpdated(value: ojValueUpdated): Self = StObject.set(x, "ojValueUpdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionRendererChanged(
+    inline def setOptionRendererChanged(
       value: JetElementCustomEvent[js.UndefOr[(js.Function1[/* param0 */ OptionContext, Element]) | Null]]
     ): Self = StObject.set(x, "optionRendererChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsChanged(
+    inline def setOptionsChanged(
       value: JetElementCustomEvent[
           (js.Array[
             typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Option | typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Optgroup
@@ -260,28 +248,20 @@ object ojComboboxOneEventMap {
         ]
     ): Self = StObject.set(x, "optionsChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsKeysChanged(value: JetElementCustomEvent[Children]): Self = StObject.set(x, "optionsKeysChanged", value.asInstanceOf[js.Any])
+    inline def setOptionsKeysChanged(value: JetElementCustomEvent[Children]): Self = StObject.set(x, "optionsKeysChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickerAttributesChanged(value: JetElementCustomEvent[Class]): Self = StObject.set(x, "pickerAttributesChanged", value.asInstanceOf[js.Any])
+    inline def setPickerAttributesChanged(value: JetElementCustomEvent[Class]): Self = StObject.set(x, "pickerAttributesChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "placeholderChanged", value.asInstanceOf[js.Any])
+    inline def setPlaceholderChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "placeholderChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawValueChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "rawValueChanged", value.asInstanceOf[js.Any])
+    inline def setRawValueChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "rawValueChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "readOnlyChanged", value.asInstanceOf[js.Any])
+    inline def setReadOnlyChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "readOnlyChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "requiredChanged", value.asInstanceOf[js.Any])
+    inline def setRequiredChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "requiredChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidatorsChanged(value: JetElementCustomEvent[(js.Array[Validator[_] | RegisteredValidator]) | Null]): Self = StObject.set(x, "validatorsChanged", value.asInstanceOf[js.Any])
+    inline def setValidatorsChanged(value: JetElementCustomEvent[(js.Array[Validator[js.Any] | RegisteredValidator]) | Null]): Self = StObject.set(x, "validatorsChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueOptionChanged(value: JetElementCustomEvent[LabelValue]): Self = StObject.set(x, "valueOptionChanged", value.asInstanceOf[js.Any])
+    inline def setValueOptionChanged(value: JetElementCustomEvent[LabelValue]): Self = StObject.set(x, "valueOptionChanged", value.asInstanceOf[js.Any])
   }
 }

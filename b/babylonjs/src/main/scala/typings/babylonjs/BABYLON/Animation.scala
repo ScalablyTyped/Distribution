@@ -2,7 +2,6 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -11,12 +10,12 @@ trait Animation extends StObject {
   /**
     * Stores the easing function of the animation
     */
-  var _easingFunction: js.Any = js.native
+  /* private */ var _easingFunction: js.Any = js.native
   
   /**
     * The set of event that will be linked to this animation
     */
-  var _events: js.Any = js.native
+  /* private */ var _events: js.Any = js.native
   
   /**
     * @hidden Internal use only
@@ -31,12 +30,12 @@ trait Animation extends StObject {
   /**
     * Stores the key frames of the animation
     */
-  var _keys: js.Any = js.native
+  /* private */ var _keys: js.Any = js.native
   
   /**
     * Stores the animation ranges for the animation
     */
-  var _ranges: js.Any = js.native
+  /* private */ var _ranges: js.Any = js.native
   
   /**
     * @hidden Internal use only

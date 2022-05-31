@@ -3,7 +3,6 @@ package typings.babylonjs.xRIndexMod
 import typings.babylonjs.webXRHandTrackingMod.IWebXRHandTrackingOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/XR/index", "WebXRHandTracking")
@@ -49,6 +48,5 @@ object WebXRHandTracking {
   @JSImport("babylonjs/XR/index", "WebXRHandTracking._idCounter")
   @js.native
   def _idCounter: js.Any = js.native
-  @scala.inline
-  def _idCounter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_idCounter")(x.asInstanceOf[js.Any])
+  inline def _idCounter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_idCounter")(x.asInstanceOf[js.Any])
 }

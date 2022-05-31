@@ -3,19 +3,20 @@ package typings.babylonjs.BABYLON
 import typings.std.DeviceOrientationEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArcRotateCameraVRDeviceOrientationInput extends ICameraInput[ArcRotateCamera] {
+trait ArcRotateCameraVRDeviceOrientationInput
+  extends StObject
+     with ICameraInput[ArcRotateCamera] {
   
-  var _alpha: js.Any = js.native
+  /* private */ var _alpha: js.Any = js.native
   
-  var _deviceOrientationHandler: js.Any = js.native
+  /* private */ var _deviceOrientationHandler: js.Any = js.native
   
-  var _dirty: js.Any = js.native
+  /* private */ var _dirty: js.Any = js.native
   
-  var _gamma: js.Any = js.native
+  /* private */ var _gamma: js.Any = js.native
   
   /** @hidden */
   def _onOrientationEvent(evt: DeviceOrientationEvent): Unit = js.native

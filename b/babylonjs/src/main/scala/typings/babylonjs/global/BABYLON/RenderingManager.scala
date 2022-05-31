@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.RenderingManager")
 @js.native
 class RenderingManager protected ()
-  extends typings.babylonjs.BABYLON.RenderingManager {
+  extends StObject
+     with typings.babylonjs.BABYLON.RenderingManager {
   /**
     * Instantiates a new rendering group for a particular scene
     * @param scene Defines the scene the groups belongs to
@@ -28,8 +28,7 @@ object RenderingManager {
   @JSGlobal("BABYLON.RenderingManager.AUTOCLEAR")
   @js.native
   def AUTOCLEAR: Boolean = js.native
-  @scala.inline
-  def AUTOCLEAR_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUTOCLEAR")(x.asInstanceOf[js.Any])
+  inline def AUTOCLEAR_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUTOCLEAR")(x.asInstanceOf[js.Any])
   
   /**
     * The max id used for rendering groups (not included)
@@ -37,8 +36,7 @@ object RenderingManager {
   @JSGlobal("BABYLON.RenderingManager.MAX_RENDERINGGROUPS")
   @js.native
   def MAX_RENDERINGGROUPS: Double = js.native
-  @scala.inline
-  def MAX_RENDERINGGROUPS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_RENDERINGGROUPS")(x.asInstanceOf[js.Any])
+  inline def MAX_RENDERINGGROUPS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_RENDERINGGROUPS")(x.asInstanceOf[js.Any])
   
   /**
     * The min id used for rendering groups (included)
@@ -46,6 +44,5 @@ object RenderingManager {
   @JSGlobal("BABYLON.RenderingManager.MIN_RENDERINGGROUPS")
   @js.native
   def MIN_RENDERINGGROUPS: Double = js.native
-  @scala.inline
-  def MIN_RENDERINGGROUPS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_RENDERINGGROUPS")(x.asInstanceOf[js.Any])
+  inline def MIN_RENDERINGGROUPS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_RENDERINGGROUPS")(x.asInstanceOf[js.Any])
 }

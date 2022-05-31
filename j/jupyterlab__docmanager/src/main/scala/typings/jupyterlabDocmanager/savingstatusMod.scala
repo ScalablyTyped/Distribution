@@ -9,7 +9,6 @@ import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.SaveState
 import typings.luminoWidgets.mod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object savingstatusMod {
@@ -35,16 +34,16 @@ object savingstatusMod {
         */
       def this(docManager: IDocumentManager) = this()
       
-      var _docManager: js.Any = js.native
+      /* private */ var _docManager: js.Any = js.native
       
       /**
         * React to a saving status change from the current document widget.
         */
-      var _onStatusChange: js.Any = js.native
+      /* private */ var _onStatusChange: js.Any = js.native
       
-      var _status: js.Any = js.native
+      /* private */ var _status: js.Any = js.native
       
-      var _widget: js.Any = js.native
+      /* private */ var _widget: js.Any = js.native
       
       /**
         * The current status of the model.
@@ -63,27 +62,23 @@ object savingstatusMod {
     /**
       * Options for creating a new SaveStatus item
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The application document manager.
         */
-      var docManager: IDocumentManager = js.native
+      var docManager: IDocumentManager
     }
     object IOptions {
       
-      @scala.inline
-      def apply(docManager: IDocumentManager): IOptions = {
+      inline def apply(docManager: IDocumentManager): IOptions = {
         val __obj = js.Dynamic.literal(docManager = docManager.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setDocManager(value: IDocumentManager): Self = StObject.set(x, "docManager", value.asInstanceOf[js.Any])
+        inline def setDocManager(value: IDocumentManager): Self = StObject.set(x, "docManager", value.asInstanceOf[js.Any])
       }
     }
   }

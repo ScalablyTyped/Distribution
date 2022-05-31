@@ -7,7 +7,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.subMeshMod.SubMesh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object octreesIndexMod {
@@ -30,13 +29,13 @@ object octreesIndexMod {
     ) = this()
     def this(
       creationFunc: js.Function2[/* entry */ T, /* block */ typings.babylonjs.octreeBlockMod.OctreeBlock[T], Unit],
-      maxBlockCapacity: js.UndefOr[scala.Nothing],
+      maxBlockCapacity: Double,
       /** Defines the maximum depth (sub-levels) for your octree. Default value is 2, which means 8 8 8 = 512 blocks :) (This parameter takes precedence over capacity.) */
     maxDepth: Double
     ) = this()
     def this(
       creationFunc: js.Function2[/* entry */ T, /* block */ typings.babylonjs.octreeBlockMod.OctreeBlock[T], Unit],
-      maxBlockCapacity: Double,
+      maxBlockCapacity: Unit,
       /** Defines the maximum depth (sub-levels) for your octree. Default value is 2, which means 8 8 8 = 512 blocks :) (This parameter takes precedence over capacity.) */
     maxDepth: Double
     ) = this()
@@ -44,19 +43,19 @@ object octreesIndexMod {
   /* static members */
   object Octree {
     
+    @JSImport("babylonjs/Culling/Octrees/index", "Octree")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Adds a mesh into the octree block if it intersects the block
       */
-    @JSImport("babylonjs/Culling/Octrees/index", "Octree.CreationFuncForMeshes")
-    @js.native
-    def CreationFuncForMeshes(entry: AbstractMesh, block: typings.babylonjs.octreeBlockMod.OctreeBlock[AbstractMesh]): Unit = js.native
+    inline def CreationFuncForMeshes(entry: AbstractMesh, block: typings.babylonjs.octreeBlockMod.OctreeBlock[AbstractMesh]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreationFuncForMeshes")(entry.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Adds a submesh into the octree block if it intersects the block
       */
-    @JSImport("babylonjs/Culling/Octrees/index", "Octree.CreationFuncForSubMeshes")
-    @js.native
-    def CreationFuncForSubMeshes(entry: SubMesh, block: typings.babylonjs.octreeBlockMod.OctreeBlock[SubMesh]): Unit = js.native
+    inline def CreationFuncForSubMeshes(entry: SubMesh, block: typings.babylonjs.octreeBlockMod.OctreeBlock[SubMesh]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreationFuncForSubMeshes")(entry.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("babylonjs/Culling/Octrees/index", "OctreeBlock")
@@ -84,12 +83,14 @@ object octreesIndexMod {
   /* static members */
   object OctreeBlock {
     
+    @JSImport("babylonjs/Culling/Octrees/index", "OctreeBlock")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * @hidden
       */
-    @JSImport("babylonjs/Culling/Octrees/index", "OctreeBlock._CreateBlocks")
-    @js.native
-    def _CreateBlocks[T](
+    inline def _CreateBlocks[T](
       worldMin: Vector3,
       worldMax: Vector3,
       entries: js.Array[T],
@@ -98,7 +99,7 @@ object octreesIndexMod {
       maxDepth: Double,
       target: IOctreeContainer[T],
       creationFunc: js.Function2[/* entry */ T, /* block */ typings.babylonjs.octreeBlockMod.OctreeBlock[T], Unit]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateBlocks")(worldMin.asInstanceOf[js.Any], worldMax.asInstanceOf[js.Any], entries.asInstanceOf[js.Any], maxBlockCapacity.asInstanceOf[js.Any], currentDepth.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any], target.asInstanceOf[js.Any], creationFunc.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("babylonjs/Culling/Octrees/index", "OctreeSceneComponent")
@@ -134,9 +135,9 @@ object octreesIndexMod {
         * @see https://doc.babylonjs.com/how_to/optimizing_your_scene_with_octrees
         */
       def createOrUpdateSubmeshesOctree(): typings.babylonjs.octreeMod.Octree[SubMesh] = js.native
-      def createOrUpdateSubmeshesOctree(maxCapacity: js.UndefOr[scala.Nothing], maxDepth: Double): typings.babylonjs.octreeMod.Octree[SubMesh] = js.native
       def createOrUpdateSubmeshesOctree(maxCapacity: Double): typings.babylonjs.octreeMod.Octree[SubMesh] = js.native
       def createOrUpdateSubmeshesOctree(maxCapacity: Double, maxDepth: Double): typings.babylonjs.octreeMod.Octree[SubMesh] = js.native
+      def createOrUpdateSubmeshesOctree(maxCapacity: Unit, maxDepth: Double): typings.babylonjs.octreeMod.Octree[SubMesh] = js.native
     }
   }
   
@@ -160,9 +161,9 @@ object octreesIndexMod {
         * @returns an octree of AbstractMesh
         */
       def createOrUpdateSelectionOctree(): typings.babylonjs.octreeMod.Octree[AbstractMesh] = js.native
-      def createOrUpdateSelectionOctree(maxCapacity: js.UndefOr[scala.Nothing], maxDepth: Double): typings.babylonjs.octreeMod.Octree[AbstractMesh] = js.native
       def createOrUpdateSelectionOctree(maxCapacity: Double): typings.babylonjs.octreeMod.Octree[AbstractMesh] = js.native
       def createOrUpdateSelectionOctree(maxCapacity: Double, maxDepth: Double): typings.babylonjs.octreeMod.Octree[AbstractMesh] = js.native
+      def createOrUpdateSelectionOctree(maxCapacity: Unit, maxDepth: Double): typings.babylonjs.octreeMod.Octree[AbstractMesh] = js.native
       
       /**
         * Gets the octree used to boost mesh selection (picking)

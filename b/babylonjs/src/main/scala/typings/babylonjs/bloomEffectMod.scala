@@ -7,7 +7,6 @@ import typings.babylonjs.postProcessRenderEffectMod.PostProcessRenderEffect
 import typings.babylonjs.sceneMod.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bloomEffectMod {
@@ -37,7 +36,7 @@ object bloomEffectMod {
       bloomScale: Double,
       bloomWeight: Double,
       bloomKernel: Double,
-      pipelineTextureType: js.UndefOr[scala.Nothing],
+      pipelineTextureType: Double,
       blockCompilation: Boolean
     ) = this()
     def this(
@@ -45,13 +44,13 @@ object bloomEffectMod {
       bloomScale: Double,
       bloomWeight: Double,
       bloomKernel: Double,
-      pipelineTextureType: Double,
+      pipelineTextureType: Unit,
       blockCompilation: Boolean
     ) = this()
     
-    var _blurX: js.Any = js.native
+    /* private */ var _blurX: js.Any = js.native
     
-    var _blurY: js.Any = js.native
+    /* private */ var _blurY: js.Any = js.native
     
     /**
       * @hidden Internal
@@ -70,14 +69,14 @@ object bloomEffectMod {
       */
     def _isReady(): Boolean = js.native
     
-    var _merge: js.Any = js.native
+    /* private */ var _merge: js.Any = js.native
     
     /**
       * @hidden Internal
       */
     def _updateEffects(): Unit = js.native
     
-    var bloomScale: js.Any = js.native
+    /* private */ var bloomScale: js.Any = js.native
     
     /**
       * Disposes each of the internal effects for a given camera.

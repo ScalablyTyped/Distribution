@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.IWebXRHandTrackingOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.WebXRHandTracking")
 @js.native
 class WebXRHandTracking protected ()
-  extends typings.babylonjs.BABYLON.WebXRHandTracking {
+  extends StObject
+     with typings.babylonjs.BABYLON.WebXRHandTracking {
   /**
     * Creates a new instance of the hit test feature
     * @param _xrSessionManager an instance of WebXRSessionManager
@@ -22,6 +22,12 @@ class WebXRHandTracking protected ()
     */
   options: IWebXRHandTrackingOptions
   ) = this()
+  
+  /**
+    * Releases all held resources
+    */
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
 }
 /* static members */
 object WebXRHandTracking {
@@ -49,6 +55,5 @@ object WebXRHandTracking {
   @JSGlobal("BABYLON.WebXRHandTracking._idCounter")
   @js.native
   def _idCounter: js.Any = js.native
-  @scala.inline
-  def _idCounter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_idCounter")(x.asInstanceOf[js.Any])
+  inline def _idCounter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_idCounter")(x.asInstanceOf[js.Any])
 }

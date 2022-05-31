@@ -14,7 +14,6 @@ import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object planeDragGizmoMod {
@@ -30,26 +29,16 @@ object planeDragGizmoMod {
       */
     def this(dragPlaneNormal: Vector3) = this()
     def this(dragPlaneNormal: Vector3, color: Color3) = this()
-    def this(dragPlaneNormal: Vector3, color: js.UndefOr[scala.Nothing], gizmoLayer: UtilityLayerRenderer) = this()
+    def this(dragPlaneNormal: Vector3, color: Unit, gizmoLayer: UtilityLayerRenderer) = this()
     def this(dragPlaneNormal: Vector3, color: Color3, gizmoLayer: UtilityLayerRenderer) = this()
+    def this(dragPlaneNormal: Vector3, color: Unit, gizmoLayer: Unit, parent: Nullable[PositionGizmo]) = this()
     def this(
       dragPlaneNormal: Vector3,
-      color: js.UndefOr[scala.Nothing],
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      parent: Nullable[PositionGizmo]
-    ) = this()
-    def this(
-      dragPlaneNormal: Vector3,
-      color: js.UndefOr[scala.Nothing],
+      color: Unit,
       gizmoLayer: UtilityLayerRenderer,
       parent: Nullable[PositionGizmo]
     ) = this()
-    def this(
-      dragPlaneNormal: Vector3,
-      color: Color3,
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      parent: Nullable[PositionGizmo]
-    ) = this()
+    def this(dragPlaneNormal: Vector3, color: Color3, gizmoLayer: Unit, parent: Nullable[PositionGizmo]) = this()
     def this(
       dragPlaneNormal: Vector3,
       color: Color3,
@@ -57,21 +46,21 @@ object planeDragGizmoMod {
       parent: Nullable[PositionGizmo]
     ) = this()
     
-    var _coloredMaterial: js.Any = js.native
+    /* private */ var _coloredMaterial: js.Any = js.native
     
-    var _disableMaterial: js.Any = js.native
+    /* private */ var _disableMaterial: js.Any = js.native
     
-    var _dragging: js.Any = js.native
+    /* private */ var _dragging: js.Any = js.native
     
-    var _gizmoMesh: js.Any = js.native
+    /* private */ var _gizmoMesh: js.Any = js.native
     
-    var _hoverMaterial: js.Any = js.native
+    /* private */ var _hoverMaterial: js.Any = js.native
     
-    var _isEnabled: js.Any = js.native
+    /* private */ var _isEnabled: js.Any = js.native
     
-    var _parent: js.Any = js.native
+    /* private */ var _parent: js.Any = js.native
     
-    var _pointerObserver: js.Any = js.native
+    /* private */ var _pointerObserver: js.Any = js.native
     
     /**
       * Drag behavior responsible for the gizmos dragging interactions
@@ -98,9 +87,11 @@ object planeDragGizmoMod {
   /* static members */
   object PlaneDragGizmo {
     
-    /** @hidden */
-    @JSImport("babylonjs/Gizmos/planeDragGizmo", "PlaneDragGizmo._CreatePlane")
+    @JSImport("babylonjs/Gizmos/planeDragGizmo", "PlaneDragGizmo")
     @js.native
-    def _CreatePlane(scene: Scene, material: StandardMaterial): TransformNode = js.native
+    val ^ : js.Any = js.native
+    
+    /** @hidden */
+    inline def _CreatePlane(scene: Scene, material: StandardMaterial): TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreatePlane")(scene.asInstanceOf[js.Any], material.asInstanceOf[js.Any])).asInstanceOf[TransformNode]
   }
 }

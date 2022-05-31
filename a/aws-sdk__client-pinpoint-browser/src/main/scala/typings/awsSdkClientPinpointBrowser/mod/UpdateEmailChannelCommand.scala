@@ -1,5 +1,6 @@
 package typings.awsSdkClientPinpointBrowser.mod
 
+import typings.awsSdkClientPinpointBrowser.typesUpdateEmailChannelInputMod.UpdateEmailChannelInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class UpdateEmailChannelCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.updateEmailChannelCommandMod.UpdateEmailChannelCommand {
-  def this(input: typings.awsSdkClientPinpointBrowser.typesUpdateEmailChannelInputMod.UpdateEmailChannelInput) = this()
+  def this(input: UpdateEmailChannelInput) = this()
 }

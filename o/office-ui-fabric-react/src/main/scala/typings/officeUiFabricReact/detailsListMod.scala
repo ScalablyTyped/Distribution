@@ -4,14 +4,15 @@ import typings.officeUiFabricReact.anon.CheckboxVisibility
 import typings.officeUiFabricReact.anon.CollapseAllVisibility
 import typings.officeUiFabricReact.anon.IsSelectedOnFocus
 import typings.officeUiFabricReact.detailsColumnTypesMod.IDetailsColumnProps
+import typings.officeUiFabricReact.detailsHeaderTypesMod.IDetailsHeaderBaseProps
 import typings.officeUiFabricReact.detailsListBaseMod.IDetailsListState
-import typings.officeUiFabricReact.detailsListTypesMod.DetailsListLayoutMode
 import typings.officeUiFabricReact.detailsListTypesMod.IColumn
+import typings.officeUiFabricReact.detailsListTypesMod.IDetailsListProps
 import typings.officeUiFabricReact.detailsRowBaseMod.IDetailsRowState
 import typings.officeUiFabricReact.detailsRowCheckTypesMod.IDetailsRowCheckProps
 import typings.officeUiFabricReact.detailsRowFieldsTypesMod.IDetailsRowFieldsProps
 import typings.officeUiFabricReact.detailsRowTypesMod.ICellStyleProps
-import typings.officeUiFabricReact.detailsRowTypesMod.IDetailsItemProps
+import typings.officeUiFabricReact.detailsRowTypesMod.IDetailsRowBaseProps
 import typings.officeUiFabricReact.detailsRowTypesMod.IDetailsRowStyleProps
 import typings.officeUiFabricReact.detailsRowTypesMod.IDetailsRowStyles
 import typings.officeUiFabricReact.selectionZoneMod.ISelectionZoneProps
@@ -22,9 +23,6 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLElement
 import typings.uifabricUtilities.selectionSelectionMod.ISelectionOptions
 import typings.uifabricUtilities.selectionSelectionMod.ISelectionOptionsWithRequiredGetKey
-import typings.uifabricUtilities.selectionTypesMod.IObjectWithKey
-import typings.uifabricUtilities.selectionTypesMod.ISelection
-import typings.uifabricUtilities.selectionTypesMod.SelectionMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -131,13 +129,13 @@ object detailsListMod {
   
   @JSImport("office-ui-fabric-react/lib/components/DetailsList", "DetailsHeader")
   @js.native
-  val DetailsHeader: FunctionComponent[typings.officeUiFabricReact.detailsHeaderTypesMod.IDetailsHeaderBaseProps] = js.native
+  val DetailsHeader: FunctionComponent[IDetailsHeaderBaseProps] = js.native
   
   @JSImport("office-ui-fabric-react/lib/components/DetailsList", "DetailsHeaderBase")
   @js.native
   class DetailsHeaderBase protected ()
     extends typings.officeUiFabricReact.detailsHeaderBaseMod.DetailsHeaderBase {
-    def this(props: typings.officeUiFabricReact.detailsHeaderTypesMod.IDetailsHeaderBaseProps) = this()
+    def this(props: IDetailsHeaderBaseProps) = this()
   }
   /* static members */
   object DetailsHeaderBase {
@@ -154,13 +152,13 @@ object detailsListMod {
   
   @JSImport("office-ui-fabric-react/lib/components/DetailsList", "DetailsList")
   @js.native
-  val DetailsList: FunctionComponent[typings.officeUiFabricReact.detailsListTypesMod.IDetailsListProps] = js.native
+  val DetailsList: FunctionComponent[IDetailsListProps] = js.native
   
   @JSImport("office-ui-fabric-react/lib/components/DetailsList", "DetailsListBase")
   @js.native
   class DetailsListBase protected ()
     extends typings.officeUiFabricReact.detailsListBaseMod.DetailsListBase {
-    def this(props: typings.officeUiFabricReact.detailsListTypesMod.IDetailsListProps) = this()
+    def this(props: IDetailsListProps) = this()
   }
   /* static members */
   object DetailsListBase {
@@ -174,10 +172,7 @@ object detailsListMod {
     def defaultProps: CheckboxVisibility = js.native
     inline def defaultProps_=(x: CheckboxVisibility): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    inline def getDerivedStateFromProps(
-      nextProps: typings.officeUiFabricReact.detailsListTypesMod.IDetailsListProps,
-      previousState: IDetailsListState
-    ): IDetailsListState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], previousState.asInstanceOf[js.Any])).asInstanceOf[IDetailsListState]
+    inline def getDerivedStateFromProps(nextProps: IDetailsListProps, previousState: IDetailsListState): IDetailsListState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], previousState.asInstanceOf[js.Any])).asInstanceOf[IDetailsListState]
   }
   
   @JSImport("office-ui-fabric-react/lib/components/DetailsList", "DetailsListLayoutMode")
@@ -194,13 +189,13 @@ object detailsListMod {
   
   @JSImport("office-ui-fabric-react/lib/components/DetailsList", "DetailsRow")
   @js.native
-  val DetailsRow: FunctionComponent[typings.officeUiFabricReact.detailsRowTypesMod.IDetailsRowBaseProps] = js.native
+  val DetailsRow: FunctionComponent[IDetailsRowBaseProps] = js.native
   
   @JSImport("office-ui-fabric-react/lib/components/DetailsList", "DetailsRowBase")
   @js.native
   class DetailsRowBase protected ()
     extends typings.officeUiFabricReact.detailsRowBaseMod.DetailsRowBase {
-    def this(props: typings.officeUiFabricReact.detailsRowTypesMod.IDetailsRowBaseProps) = this()
+    def this(props: IDetailsRowBaseProps) = this()
   }
   /* static members */
   object DetailsRowBase {
@@ -209,10 +204,7 @@ object detailsListMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def getDerivedStateFromProps(
-      nextProps: typings.officeUiFabricReact.detailsRowTypesMod.IDetailsRowBaseProps,
-      previousState: IDetailsRowState
-    ): IDetailsRowState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], previousState.asInstanceOf[js.Any])).asInstanceOf[IDetailsRowState]
+    inline def getDerivedStateFromProps(nextProps: IDetailsRowBaseProps, previousState: IDetailsRowState): IDetailsRowState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], previousState.asInstanceOf[js.Any])).asInstanceOf[IDetailsRowState]
   }
   
   @JSImport("office-ui-fabric-react/lib/components/DetailsList", "DetailsRowCheck")
@@ -386,81 +378,4 @@ object detailsListMod {
   ): js.Array[IColumn] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildColumns")(items.asInstanceOf[js.Any], canResizeColumns.asInstanceOf[js.Any], onColumnClick.asInstanceOf[js.Any], sortedColumnKey.asInstanceOf[js.Any], isSortedDescending.asInstanceOf[js.Any], groupedColumnKey.asInstanceOf[js.Any], isMultiline.asInstanceOf[js.Any])).asInstanceOf[js.Array[IColumn]]
   
   inline def getDetailsRowStyles(props: IDetailsRowStyleProps): IDetailsRowStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getDetailsRowStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IDetailsRowStyles]
-  
-  trait IDetailsFooterBaseProps
-    extends StObject
-       with IDetailsItemProps
-  object IDetailsFooterBaseProps {
-    
-    inline def apply(): IDetailsFooterBaseProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[IDetailsFooterBaseProps]
-    }
-  }
-  
-  trait IDetailsHeaderBaseProps
-    extends StObject
-       with typings.officeUiFabricReact.detailsHeaderTypesMod.IDetailsHeaderBaseProps
-  object IDetailsHeaderBaseProps {
-    
-    inline def apply(layoutMode: DetailsListLayoutMode): IDetailsHeaderBaseProps = {
-      val __obj = js.Dynamic.literal(layoutMode = layoutMode.asInstanceOf[js.Any])
-      __obj.asInstanceOf[IDetailsHeaderBaseProps]
-    }
-  }
-  
-  trait IDetailsHeaderProps
-    extends StObject
-       with typings.officeUiFabricReact.detailsHeaderTypesMod.IDetailsHeaderProps
-  object IDetailsHeaderProps {
-    
-    inline def apply(
-      columns: js.Array[IColumn],
-      layoutMode: DetailsListLayoutMode,
-      selection: ISelection[IObjectWithKey],
-      selectionMode: SelectionMode
-    ): IDetailsHeaderProps = {
-      val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], layoutMode = layoutMode.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], selectionMode = selectionMode.asInstanceOf[js.Any])
-      __obj.asInstanceOf[IDetailsHeaderProps]
-    }
-  }
-  
-  trait IDetailsListProps
-    extends StObject
-       with typings.officeUiFabricReact.detailsListTypesMod.IDetailsListProps
-  object IDetailsListProps {
-    
-    inline def apply(items: js.Array[js.Any]): IDetailsListProps = {
-      val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
-      __obj.asInstanceOf[IDetailsListProps]
-    }
-  }
-  
-  trait IDetailsRowBaseProps
-    extends StObject
-       with typings.officeUiFabricReact.detailsRowTypesMod.IDetailsRowBaseProps
-  object IDetailsRowBaseProps {
-    
-    inline def apply(item: js.Any, itemIndex: Double): IDetailsRowBaseProps = {
-      val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], itemIndex = itemIndex.asInstanceOf[js.Any])
-      __obj.asInstanceOf[IDetailsRowBaseProps]
-    }
-  }
-  
-  trait IDetailsRowProps
-    extends StObject
-       with typings.officeUiFabricReact.detailsRowTypesMod.IDetailsRowProps
-  object IDetailsRowProps {
-    
-    inline def apply(
-      columns: js.Array[IColumn],
-      item: js.Any,
-      itemIndex: Double,
-      selection: ISelection[IObjectWithKey],
-      selectionMode: SelectionMode
-    ): IDetailsRowProps = {
-      val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemIndex = itemIndex.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], selectionMode = selectionMode.asInstanceOf[js.Any])
-      __obj.asInstanceOf[IDetailsRowProps]
-    }
-  }
 }

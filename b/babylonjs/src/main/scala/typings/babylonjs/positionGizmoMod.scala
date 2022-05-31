@@ -10,7 +10,6 @@ import typings.babylonjs.planeDragGizmoMod.PlaneDragGizmo
 import typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object positionGizmoMod {
@@ -24,35 +23,31 @@ object positionGizmoMod {
     */
   class PositionGizmo () extends Gizmo {
     def this(gizmoLayer: UtilityLayerRenderer) = this()
-    def this(gizmoLayer: js.UndefOr[scala.Nothing], thickness: Double) = this()
+    def this(gizmoLayer: Unit, thickness: Double) = this()
     def this(gizmoLayer: UtilityLayerRenderer, thickness: Double) = this()
-    def this(
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      thickness: js.UndefOr[scala.Nothing],
-      gizmoManager: GizmoManager
-    ) = this()
-    def this(gizmoLayer: js.UndefOr[scala.Nothing], thickness: Double, gizmoManager: GizmoManager) = this()
-    def this(gizmoLayer: UtilityLayerRenderer, thickness: js.UndefOr[scala.Nothing], gizmoManager: GizmoManager) = this()
+    def this(gizmoLayer: Unit, thickness: Double, gizmoManager: GizmoManager) = this()
+    def this(gizmoLayer: Unit, thickness: Unit, gizmoManager: GizmoManager) = this()
     def this(gizmoLayer: UtilityLayerRenderer, thickness: Double, gizmoManager: GizmoManager) = this()
+    def this(gizmoLayer: UtilityLayerRenderer, thickness: Unit, gizmoManager: GizmoManager) = this()
     
     /** Node Caching for quick lookup */
-    var _gizmoAxisCache: js.Any = js.native
+    /* private */ var _gizmoAxisCache: js.Any = js.native
     
     /**
       * private variables
       */
-    var _meshAttached: js.Any = js.native
+    /* private */ var _meshAttached: js.Any = js.native
     
-    var _nodeAttached: js.Any = js.native
+    /* private */ var _nodeAttached: js.Any = js.native
     
-    var _observables: js.Any = js.native
+    /* private */ var _observables: js.Any = js.native
     
     /**
       * If set to true, planar drag is enabled
       */
-    var _planarGizmoEnabled: js.Any = js.native
+    /* private */ var _planarGizmoEnabled: js.Any = js.native
     
-    var _snapDistance: js.Any = js.native
+    /* private */ var _snapDistance: js.Any = js.native
     
     /**
       * Builds Gizmo Axis Cache to enable features such as hover state preservation and graying out other axis during manipulation
@@ -62,10 +57,10 @@ object positionGizmoMod {
     def addToAxisCache(mesh: Mesh, cache: GizmoAxisCache): Unit = js.native
     
     /** Fires an event when any of it's sub gizmos are released from dragging */
-    var onDragEndObservable: Observable[_] = js.native
+    var onDragEndObservable: Observable[js.Any] = js.native
     
     /** Fires an event when any of it's sub gizmos are dragged */
-    var onDragStartObservable: Observable[_] = js.native
+    var onDragStartObservable: Observable[js.Any] = js.native
     
     def planarGizmoEnabled: Boolean = js.native
     /**

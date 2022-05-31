@@ -2,7 +2,6 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.FreeCameraMouseInput")
@@ -13,7 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param touchEnabled Defines if touch is enabled or not
   */
 class FreeCameraMouseInput ()
-  extends typings.babylonjs.BABYLON.FreeCameraMouseInput {
+  extends StObject
+     with typings.babylonjs.BABYLON.FreeCameraMouseInput {
   def this(/**
     * Define if touch is enabled in the mouse input
     */

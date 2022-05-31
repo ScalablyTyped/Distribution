@@ -8,7 +8,6 @@ import typings.jupyterlabServices.jupyterlabServicesStrings.stable
 import typings.jupyterlabServices.serverconnectionMod.ServerConnection.ISettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object builderMod {
@@ -21,7 +20,7 @@ object builderMod {
   class BuildManager () extends StObject {
     def this(options: IOptions) = this()
     
-    var _url: js.Any = js.native
+    /* private */ var _url: js.Any = js.native
     
     /**
       * Build the application.
@@ -58,65 +57,55 @@ object builderMod {
     /**
       * The instantiation options for a setting manager.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The server settings used to make API requests.
         */
-      var serverSettings: js.UndefOr[ISettings] = js.native
+      var serverSettings: js.UndefOr[ISettings] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): IOptions = {
+      inline def apply(): IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setServerSettings(value: ISettings): Self = StObject.set(x, "serverSettings", value.asInstanceOf[js.Any])
+        inline def setServerSettings(value: ISettings): Self = StObject.set(x, "serverSettings", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServerSettingsUndefined: Self = StObject.set(x, "serverSettings", js.undefined)
+        inline def setServerSettingsUndefined: Self = StObject.set(x, "serverSettings", js.undefined)
       }
     }
     
     /**
       * The build status response from the server.
       */
-    @js.native
     trait IStatus extends StObject {
       
       /**
         * The message associated with the build status.
         */
-      val message: String = js.native
+      val message: String
       
       /**
         * Whether a build is needed.
         */
-      val status: stable | needed | building = js.native
+      val status: stable | needed | building
     }
     object IStatus {
       
-      @scala.inline
-      def apply(message: String, status: stable | needed | building): IStatus = {
+      inline def apply(message: String, status: stable | needed | building): IStatus = {
         val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
         __obj.asInstanceOf[IStatus]
       }
       
-      @scala.inline
-      implicit class IStatusMutableBuilder[Self <: IStatus] (val x: Self) extends AnyVal {
+      extension [Self <: IStatus](x: Self) {
         
-        @scala.inline
-        def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+        inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatus(value: stable | needed | building): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: stable | needed | building): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       }
     }
   }

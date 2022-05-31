@@ -2,34 +2,27 @@ package typings.oracleOraclejet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RowK[K] extends StObject {
   
-  var column: js.UndefOr[K] = js.native
+  var column: js.UndefOr[K] = js.undefined
   
-  var row: K = js.native
+  var row: K
 }
 object RowK {
   
-  @scala.inline
-  def apply[K](row: K): RowK[K] = {
+  inline def apply[K](row: K): RowK[K] = {
     val __obj = js.Dynamic.literal(row = row.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowK[K]]
   }
   
-  @scala.inline
-  implicit class RowKMutableBuilder[Self <: RowK[_], K] (val x: Self with RowK[K]) extends AnyVal {
+  extension [Self <: RowK[?], K](x: Self & RowK[K]) {
     
-    @scala.inline
-    def setColumn(value: K): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: K): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
-    @scala.inline
-    def setRow(value: K): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: K): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
   }
 }

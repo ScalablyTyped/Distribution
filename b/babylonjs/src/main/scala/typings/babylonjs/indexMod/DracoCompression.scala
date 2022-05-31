@@ -3,7 +3,6 @@ package typings.babylonjs.indexMod
 import typings.babylonjs.dracoCompressionMod.IDracoCompressionConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "DracoCompression")
@@ -32,8 +31,7 @@ object DracoCompression {
   @JSImport("babylonjs/index", "DracoCompression.Configuration")
   @js.native
   def Configuration: IDracoCompressionConfiguration = js.native
-  @scala.inline
-  def Configuration_=(x: IDracoCompressionConfiguration): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Configuration")(x.asInstanceOf[js.Any])
+  inline def Configuration_=(x: IDracoCompressionConfiguration): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Configuration")(x.asInstanceOf[js.Any])
   
   /**
     * Default number of workers to create when creating the draco compression object.
@@ -41,18 +39,15 @@ object DracoCompression {
   @JSImport("babylonjs/index", "DracoCompression.DefaultNumWorkers")
   @js.native
   def DefaultNumWorkers: Double = js.native
-  @scala.inline
-  def DefaultNumWorkers_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultNumWorkers")(x.asInstanceOf[js.Any])
+  inline def DefaultNumWorkers_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultNumWorkers")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs/index", "DracoCompression.GetDefaultNumWorkers")
   @js.native
   def GetDefaultNumWorkers: js.Any = js.native
-  @scala.inline
-  def GetDefaultNumWorkers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GetDefaultNumWorkers")(x.asInstanceOf[js.Any])
+  inline def GetDefaultNumWorkers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GetDefaultNumWorkers")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs/index", "DracoCompression._Default")
   @js.native
   def _Default: js.Any = js.native
-  @scala.inline
-  def _Default_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Default")(x.asInstanceOf[js.Any])
+  inline def _Default_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Default")(x.asInstanceOf[js.Any])
 }

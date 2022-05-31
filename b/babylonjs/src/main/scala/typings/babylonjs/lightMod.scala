@@ -11,7 +11,6 @@ import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.uniformBufferMod.UniformBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lightMod {
@@ -43,11 +42,11 @@ object lightMod {
     /**
       * Recomputes the cached photometric scale if needed.
       */
-    var _computePhotometricScale: js.Any = js.native
+    /* private */ var _computePhotometricScale: js.Any = js.native
     
-    var _excludeWithLayerMask: js.Any = js.native
+    /* private */ var _excludeWithLayerMask: js.Any = js.native
     
-    var _excludedMeshes: js.Any = js.native
+    /* private */ var _excludedMeshes: js.Any = js.native
     
     /**
       * @hidden Internal use only.
@@ -57,29 +56,29 @@ object lightMod {
     /**
       * Returns the Photometric Scale according to the light type and intensity mode.
       */
-    var _getPhotometricScale: js.Any = js.native
+    /* private */ var _getPhotometricScale: js.Any = js.native
     
-    var _hookArrayForExcluded: js.Any = js.native
+    /* private */ var _hookArrayForExcluded: js.Any = js.native
     
-    var _hookArrayForIncludedOnly: js.Any = js.native
+    /* private */ var _hookArrayForIncludedOnly: js.Any = js.native
     
-    var _includeOnlyWithLayerMask: js.Any = js.native
+    /* private */ var _includeOnlyWithLayerMask: js.Any = js.native
     
-    var _includedOnlyMeshes: js.Any = js.native
+    /* private */ var _includedOnlyMeshes: js.Any = js.native
     
     /**
       * @hidden Internal use only.
       */
     var _includedOnlyMeshesIds: js.Array[String] = js.native
     
-    var _intensityMode: js.Any = js.native
+    /* private */ var _intensityMode: js.Any = js.native
     
-    var _inverseSquaredRange: Double = js.native
+    /* protected */ var _inverseSquaredRange: Double = js.native
     
     /** @hidden */
     val _isLight: Boolean = js.native
     
-    var _lightmapMode: js.Any = js.native
+    /* private */ var _lightmapMode: js.Any = js.native
     
     /**
       * Forces the meshes to update their light related information in their rendering used effects
@@ -91,16 +90,16 @@ object lightMod {
       * Cached photometric scale default to 1.0 as the automatic intensity mode defaults to 1.0 for every type
       * of light.
       */
-    var _photometricScale: js.Any = js.native
+    /* private */ var _photometricScale: js.Any = js.native
     
-    var _radius: js.Any = js.native
+    /* private */ var _radius: js.Any = js.native
     
-    var _range: js.Any = js.native
+    /* private */ var _range: js.Any = js.native
     
     /** @hidden */
     var _renderId: Double = js.native
     
-    var _renderPriority: js.Any = js.native
+    /* private */ var _renderPriority: js.Any = js.native
     
     /**
       * Reorder the light in the scene according to their defined priority.
@@ -108,9 +107,9 @@ object lightMod {
       */
     def _reorderLightsInScene(): Unit = js.native
     
-    var _resyncMeshes: js.Any = js.native
+    /* private */ var _resyncMeshes: js.Any = js.native
     
-    var _shadowEnabled: js.Any = js.native
+    /* private */ var _shadowEnabled: js.Any = js.native
     
     /**
       * Shadow generator associted to the light.
@@ -331,15 +330,17 @@ object lightMod {
   /* static members */
   object Light {
     
+    @JSImport("babylonjs/Lights/light", "Light")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Sort function to order lights for rendering.
       * @param a First Light object to compare to second.
       * @param b Second Light object to compare first.
       * @return -1 to reduce's a's index relative to be, 0 for no change, 1 to increase a's index relative to b.
       */
-    @JSImport("babylonjs/Lights/light", "Light.CompareLightsPriority")
-    @js.native
-    def CompareLightsPriority(a: Light, b: Light): Double = js.native
+    inline def CompareLightsPriority(a: Light, b: Light): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("CompareLightsPriority")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Falloff Default: light is falling off following the material specification:
@@ -380,9 +381,7 @@ object lightMod {
       * @param scene The scene the new light will belong to
       * @returns the constructor function
       */
-    @JSImport("babylonjs/Lights/light", "Light.GetConstructorFromName")
-    @js.native
-    def GetConstructorFromName(`type`: Double, name: String, scene: Scene): Nullable[js.Function0[this.type]] = js.native
+    inline def GetConstructorFromName(`type`: Double, name: String, scene: Scene): Nullable[js.Function0[this.type]] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetConstructorFromName")(`type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[js.Function0[this.type]]]
     
     /**
       * Each light type uses the default quantity according to its type:
@@ -483,8 +482,6 @@ object lightMod {
       * @param scene The scene to create the parsed light in
       * @returns the created light after parsing
       */
-    @JSImport("babylonjs/Lights/light", "Light.Parse")
-    @js.native
-    def Parse(parsedLight: js.Any, scene: Scene): Nullable[Light] = js.native
+    inline def Parse(parsedLight: js.Any, scene: Scene): Nullable[Light] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedLight.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[Light]]
   }
 }

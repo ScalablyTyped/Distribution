@@ -3,7 +3,6 @@ package typings.babylonjs
 import typings.babylonjs.effectMod.Effect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colorCurvesMod {
@@ -12,53 +11,53 @@ object colorCurvesMod {
   @js.native
   class ColorCurves () extends StObject {
     
-    var _dirty: js.Any = js.native
+    /* private */ var _dirty: js.Any = js.native
     
-    var _globalCurve: js.Any = js.native
+    /* private */ var _globalCurve: js.Any = js.native
     
-    var _globalDensity: js.Any = js.native
+    /* private */ var _globalDensity: js.Any = js.native
     
-    var _globalExposure: js.Any = js.native
+    /* private */ var _globalExposure: js.Any = js.native
     
-    var _globalHue: js.Any = js.native
+    /* private */ var _globalHue: js.Any = js.native
     
-    var _globalSaturation: js.Any = js.native
+    /* private */ var _globalSaturation: js.Any = js.native
     
-    var _highlightsCurve: js.Any = js.native
+    /* private */ var _highlightsCurve: js.Any = js.native
     
-    var _highlightsDensity: js.Any = js.native
+    /* private */ var _highlightsDensity: js.Any = js.native
     
-    var _highlightsExposure: js.Any = js.native
+    /* private */ var _highlightsExposure: js.Any = js.native
     
-    var _highlightsHue: js.Any = js.native
+    /* private */ var _highlightsHue: js.Any = js.native
     
-    var _highlightsSaturation: js.Any = js.native
+    /* private */ var _highlightsSaturation: js.Any = js.native
     
-    var _midtonesCurve: js.Any = js.native
+    /* private */ var _midtonesCurve: js.Any = js.native
     
-    var _midtonesDensity: js.Any = js.native
+    /* private */ var _midtonesDensity: js.Any = js.native
     
-    var _midtonesExposure: js.Any = js.native
+    /* private */ var _midtonesExposure: js.Any = js.native
     
-    var _midtonesHue: js.Any = js.native
+    /* private */ var _midtonesHue: js.Any = js.native
     
-    var _midtonesSaturation: js.Any = js.native
+    /* private */ var _midtonesSaturation: js.Any = js.native
     
-    var _negativeCurve: js.Any = js.native
+    /* private */ var _negativeCurve: js.Any = js.native
     
-    var _positiveCurve: js.Any = js.native
+    /* private */ var _positiveCurve: js.Any = js.native
     
-    var _shadowsCurve: js.Any = js.native
+    /* private */ var _shadowsCurve: js.Any = js.native
     
-    var _shadowsDensity: js.Any = js.native
+    /* private */ var _shadowsDensity: js.Any = js.native
     
-    var _shadowsExposure: js.Any = js.native
+    /* private */ var _shadowsExposure: js.Any = js.native
     
-    var _shadowsHue: js.Any = js.native
+    /* private */ var _shadowsHue: js.Any = js.native
     
-    var _shadowsSaturation: js.Any = js.native
+    /* private */ var _shadowsSaturation: js.Any = js.native
     
-    var _tempColor: js.Any = js.native
+    /* private */ var _tempColor: js.Any = js.native
     
     /**
       * Returns the class name
@@ -74,7 +73,7 @@ object colorCurvesMod {
       * @param exposure The exposure.
       * @param result The result data container.
       */
-    var getColorGradingDataToRef: js.Any = js.native
+    /* private */ var getColorGradingDataToRef: js.Any = js.native
     
     /**
       * Gets the global Density value.
@@ -281,76 +280,51 @@ object colorCurvesMod {
       * @param neutralUniform The neutral uniform shader parameter
       * @param negativeUniform The negative uniform shader parameter
       */
-    @JSImport("babylonjs/Materials/colorCurves", "ColorCurves.Bind")
-    @js.native
-    def Bind(colorCurves: ColorCurves, effect: Effect): Unit = js.native
-    @JSImport("babylonjs/Materials/colorCurves", "ColorCurves.Bind")
-    @js.native
-    def Bind(
-      colorCurves: ColorCurves,
-      effect: Effect,
-      positiveUniform: js.UndefOr[scala.Nothing],
-      neutralUniform: js.UndefOr[scala.Nothing],
-      negativeUniform: String
-    ): Unit = js.native
-    @JSImport("babylonjs/Materials/colorCurves", "ColorCurves.Bind")
-    @js.native
-    def Bind(
-      colorCurves: ColorCurves,
-      effect: Effect,
-      positiveUniform: js.UndefOr[scala.Nothing],
-      neutralUniform: String
-    ): Unit = js.native
-    @JSImport("babylonjs/Materials/colorCurves", "ColorCurves.Bind")
-    @js.native
-    def Bind(
-      colorCurves: ColorCurves,
-      effect: Effect,
-      positiveUniform: js.UndefOr[scala.Nothing],
-      neutralUniform: String,
-      negativeUniform: String
-    ): Unit = js.native
-    @JSImport("babylonjs/Materials/colorCurves", "ColorCurves.Bind")
-    @js.native
-    def Bind(colorCurves: ColorCurves, effect: Effect, positiveUniform: String): Unit = js.native
-    @JSImport("babylonjs/Materials/colorCurves", "ColorCurves.Bind")
-    @js.native
-    def Bind(
-      colorCurves: ColorCurves,
-      effect: Effect,
-      positiveUniform: String,
-      neutralUniform: js.UndefOr[scala.Nothing],
-      negativeUniform: String
-    ): Unit = js.native
-    @JSImport("babylonjs/Materials/colorCurves", "ColorCurves.Bind")
-    @js.native
-    def Bind(colorCurves: ColorCurves, effect: Effect, positiveUniform: String, neutralUniform: String): Unit = js.native
-    @JSImport("babylonjs/Materials/colorCurves", "ColorCurves.Bind")
-    @js.native
-    def Bind(
+    inline def Bind(colorCurves: ColorCurves, effect: Effect): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Bind")(colorCurves.asInstanceOf[js.Any], effect.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Bind(colorCurves: ColorCurves, effect: Effect, positiveUniform: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Bind")(colorCurves.asInstanceOf[js.Any], effect.asInstanceOf[js.Any], positiveUniform.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Bind(colorCurves: ColorCurves, effect: Effect, positiveUniform: String, neutralUniform: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Bind")(colorCurves.asInstanceOf[js.Any], effect.asInstanceOf[js.Any], positiveUniform.asInstanceOf[js.Any], neutralUniform.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Bind(
       colorCurves: ColorCurves,
       effect: Effect,
       positiveUniform: String,
       neutralUniform: String,
       negativeUniform: String
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Bind")(colorCurves.asInstanceOf[js.Any], effect.asInstanceOf[js.Any], positiveUniform.asInstanceOf[js.Any], neutralUniform.asInstanceOf[js.Any], negativeUniform.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Bind(
+      colorCurves: ColorCurves,
+      effect: Effect,
+      positiveUniform: String,
+      neutralUniform: Unit,
+      negativeUniform: String
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Bind")(colorCurves.asInstanceOf[js.Any], effect.asInstanceOf[js.Any], positiveUniform.asInstanceOf[js.Any], neutralUniform.asInstanceOf[js.Any], negativeUniform.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Bind(colorCurves: ColorCurves, effect: Effect, positiveUniform: Unit, neutralUniform: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Bind")(colorCurves.asInstanceOf[js.Any], effect.asInstanceOf[js.Any], positiveUniform.asInstanceOf[js.Any], neutralUniform.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Bind(
+      colorCurves: ColorCurves,
+      effect: Effect,
+      positiveUniform: Unit,
+      neutralUniform: String,
+      negativeUniform: String
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Bind")(colorCurves.asInstanceOf[js.Any], effect.asInstanceOf[js.Any], positiveUniform.asInstanceOf[js.Any], neutralUniform.asInstanceOf[js.Any], negativeUniform.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Bind(
+      colorCurves: ColorCurves,
+      effect: Effect,
+      positiveUniform: Unit,
+      neutralUniform: Unit,
+      negativeUniform: String
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Bind")(colorCurves.asInstanceOf[js.Any], effect.asInstanceOf[js.Any], positiveUniform.asInstanceOf[js.Any], neutralUniform.asInstanceOf[js.Any], negativeUniform.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Parses the color curve from a json representation.
       * @param source the JSON source to parse
       * @return The parsed curves
       */
-    @JSImport("babylonjs/Materials/colorCurves", "ColorCurves.Parse")
-    @js.native
-    def Parse(source: js.Any): ColorCurves = js.native
+    inline def Parse(source: js.Any): ColorCurves = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any]).asInstanceOf[ColorCurves]
     
     /**
       * Prepare the list of uniforms associated with the ColorCurves effects.
       * @param uniformsList The list of uniforms used in the effect
       */
-    @JSImport("babylonjs/Materials/colorCurves", "ColorCurves.PrepareUniforms")
-    @js.native
-    def PrepareUniforms(uniformsList: js.Array[String]): Unit = js.native
+    inline def PrepareUniforms(uniformsList: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("PrepareUniforms")(uniformsList.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Takes an input slider value and returns an adjusted value that provides extra control near the centre.
@@ -360,8 +334,7 @@ object colorCurvesMod {
     @JSImport("babylonjs/Materials/colorCurves", "ColorCurves.applyColorGradingSliderNonlinear")
     @js.native
     def applyColorGradingSliderNonlinear: js.Any = js.native
-    @scala.inline
-    def applyColorGradingSliderNonlinear_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("applyColorGradingSliderNonlinear")(x.asInstanceOf[js.Any])
+    inline def applyColorGradingSliderNonlinear_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("applyColorGradingSliderNonlinear")(x.asInstanceOf[js.Any])
     
     /**
       * Returns a value clamped between min and max
@@ -373,8 +346,7 @@ object colorCurvesMod {
     @JSImport("babylonjs/Materials/colorCurves", "ColorCurves.clamp")
     @js.native
     def clamp: js.Any = js.native
-    @scala.inline
-    def clamp_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clamp")(x.asInstanceOf[js.Any])
+    inline def clamp_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clamp")(x.asInstanceOf[js.Any])
     
     /**
       * Returns an RGBA Color4 based on Hue, Saturation and Brightness (also referred to as value, HSV).
@@ -386,7 +358,6 @@ object colorCurvesMod {
     @JSImport("babylonjs/Materials/colorCurves", "ColorCurves.fromHSBToRef")
     @js.native
     def fromHSBToRef: js.Any = js.native
-    @scala.inline
-    def fromHSBToRef_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromHSBToRef")(x.asInstanceOf[js.Any])
+    inline def fromHSBToRef_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromHSBToRef")(x.asInstanceOf[js.Any])
   }
 }

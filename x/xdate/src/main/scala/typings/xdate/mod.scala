@@ -769,7 +769,4 @@ object mod {
       inline def setPmDesignatorUndefined: Self = StObject.set(x, "pmDesignator", js.undefined)
     }
   }
-  
-  /* static member */
-  object locales
 }

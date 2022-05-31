@@ -6,7 +6,6 @@ import typings.babylonjs.thinEngineMod.ThinEngine
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object thinTextureMod {
@@ -22,18 +21,18 @@ object thinTextureMod {
       */
     def this(internalTexture: Nullable[InternalTexture]) = this()
     
-    var _cachedBaseSize: js.Any = js.native
+    /* private */ var _cachedBaseSize: js.Any = js.native
     
-    var _cachedSize: js.Any = js.native
+    /* private */ var _cachedSize: js.Any = js.native
     
-    var _engine: Nullable[ThinEngine] = js.native
+    /* protected */ var _engine: Nullable[ThinEngine] = js.native
     
     /** @hidden */
     var _texture: Nullable[InternalTexture] = js.native
     
-    var _wrapU: Double = js.native
+    /* protected */ var _wrapU: Double = js.native
     
-    var _wrapV: Double = js.native
+    /* protected */ var _wrapV: Double = js.native
     
     /**
       * With compliant hardware and browser (supporting anisotropic filtering)

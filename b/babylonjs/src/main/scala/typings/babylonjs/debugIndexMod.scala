@@ -15,7 +15,6 @@ import typings.babylonjs.transformNodeMod.TransformNode
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object debugIndexMod {
@@ -35,108 +34,174 @@ object debugIndexMod {
       */
     def this(scene: Scene) = this()
     def this(scene: Scene, scaleLines: Double) = this()
-    def this(scene: Scene, scaleLines: js.UndefOr[scala.Nothing], renderingGroupId: Nullable[Double]) = this()
     def this(scene: Scene, scaleLines: Double, renderingGroupId: Nullable[Double]) = this()
-    def this(
-      scene: Scene,
-      scaleLines: js.UndefOr[scala.Nothing],
-      renderingGroupId: js.UndefOr[Nullable[Double]],
-      xAxis: TransformNode
-    ) = this()
+    def this(scene: Scene, scaleLines: Unit, renderingGroupId: Nullable[Double]) = this()
+    def this(scene: Scene, scaleLines: Double, renderingGroupId: Unit, xAxis: TransformNode) = this()
+    def this(scene: Scene, scaleLines: Double, renderingGroupId: Nullable[Double], xAxis: TransformNode) = this()
+    def this(scene: Scene, scaleLines: Unit, renderingGroupId: Unit, xAxis: TransformNode) = this()
+    def this(scene: Scene, scaleLines: Unit, renderingGroupId: Nullable[Double], xAxis: TransformNode) = this()
+    def this(scene: Scene, scaleLines: Double, renderingGroupId: Unit, xAxis: Unit, yAxis: TransformNode) = this()
     def this(
       scene: Scene,
       scaleLines: Double,
-      renderingGroupId: js.UndefOr[Nullable[Double]],
-      xAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: js.UndefOr[scala.Nothing],
-      renderingGroupId: js.UndefOr[Nullable[Double]],
-      xAxis: js.UndefOr[scala.Nothing],
-      yAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: js.UndefOr[scala.Nothing],
-      renderingGroupId: js.UndefOr[Nullable[Double]],
+      renderingGroupId: Unit,
       xAxis: TransformNode,
       yAxis: TransformNode
     ) = this()
     def this(
       scene: Scene,
       scaleLines: Double,
-      renderingGroupId: js.UndefOr[Nullable[Double]],
-      xAxis: js.UndefOr[scala.Nothing],
+      renderingGroupId: Nullable[Double],
+      xAxis: Unit,
       yAxis: TransformNode
     ) = this()
     def this(
       scene: Scene,
       scaleLines: Double,
-      renderingGroupId: js.UndefOr[Nullable[Double]],
+      renderingGroupId: Nullable[Double],
+      xAxis: TransformNode,
+      yAxis: TransformNode
+    ) = this()
+    def this(scene: Scene, scaleLines: Unit, renderingGroupId: Unit, xAxis: Unit, yAxis: TransformNode) = this()
+    def this(scene: Scene, scaleLines: Unit, renderingGroupId: Unit, xAxis: TransformNode, yAxis: TransformNode) = this()
+    def this(
+      scene: Scene,
+      scaleLines: Unit,
+      renderingGroupId: Nullable[Double],
+      xAxis: Unit,
+      yAxis: TransformNode
+    ) = this()
+    def this(
+      scene: Scene,
+      scaleLines: Unit,
+      renderingGroupId: Nullable[Double],
       xAxis: TransformNode,
       yAxis: TransformNode
     ) = this()
     def this(
       scene: Scene,
-      scaleLines: js.UndefOr[scala.Nothing],
-      renderingGroupId: js.UndefOr[Nullable[Double]],
-      xAxis: js.UndefOr[scala.Nothing],
-      yAxis: js.UndefOr[scala.Nothing],
+      scaleLines: Double,
+      renderingGroupId: Unit,
+      xAxis: Unit,
+      yAxis: Unit,
       zAxis: TransformNode
     ) = this()
     def this(
       scene: Scene,
-      scaleLines: js.UndefOr[scala.Nothing],
-      renderingGroupId: js.UndefOr[Nullable[Double]],
-      xAxis: js.UndefOr[scala.Nothing],
-      yAxis: TransformNode,
-      zAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: js.UndefOr[scala.Nothing],
-      renderingGroupId: js.UndefOr[Nullable[Double]],
-      xAxis: TransformNode,
-      yAxis: js.UndefOr[scala.Nothing],
-      zAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: js.UndefOr[scala.Nothing],
-      renderingGroupId: js.UndefOr[Nullable[Double]],
-      xAxis: TransformNode,
+      scaleLines: Double,
+      renderingGroupId: Unit,
+      xAxis: Unit,
       yAxis: TransformNode,
       zAxis: TransformNode
     ) = this()
     def this(
       scene: Scene,
       scaleLines: Double,
-      renderingGroupId: js.UndefOr[Nullable[Double]],
-      xAxis: js.UndefOr[scala.Nothing],
-      yAxis: js.UndefOr[scala.Nothing],
+      renderingGroupId: Unit,
+      xAxis: TransformNode,
+      yAxis: Unit,
       zAxis: TransformNode
     ) = this()
     def this(
       scene: Scene,
       scaleLines: Double,
-      renderingGroupId: js.UndefOr[Nullable[Double]],
-      xAxis: js.UndefOr[scala.Nothing],
+      renderingGroupId: Unit,
+      xAxis: TransformNode,
       yAxis: TransformNode,
       zAxis: TransformNode
     ) = this()
     def this(
       scene: Scene,
       scaleLines: Double,
-      renderingGroupId: js.UndefOr[Nullable[Double]],
-      xAxis: TransformNode,
-      yAxis: js.UndefOr[scala.Nothing],
+      renderingGroupId: Nullable[Double],
+      xAxis: Unit,
+      yAxis: Unit,
       zAxis: TransformNode
     ) = this()
     def this(
       scene: Scene,
       scaleLines: Double,
-      renderingGroupId: js.UndefOr[Nullable[Double]],
+      renderingGroupId: Nullable[Double],
+      xAxis: Unit,
+      yAxis: TransformNode,
+      zAxis: TransformNode
+    ) = this()
+    def this(
+      scene: Scene,
+      scaleLines: Double,
+      renderingGroupId: Nullable[Double],
+      xAxis: TransformNode,
+      yAxis: Unit,
+      zAxis: TransformNode
+    ) = this()
+    def this(
+      scene: Scene,
+      scaleLines: Double,
+      renderingGroupId: Nullable[Double],
+      xAxis: TransformNode,
+      yAxis: TransformNode,
+      zAxis: TransformNode
+    ) = this()
+    def this(
+      scene: Scene,
+      scaleLines: Unit,
+      renderingGroupId: Unit,
+      xAxis: Unit,
+      yAxis: Unit,
+      zAxis: TransformNode
+    ) = this()
+    def this(
+      scene: Scene,
+      scaleLines: Unit,
+      renderingGroupId: Unit,
+      xAxis: Unit,
+      yAxis: TransformNode,
+      zAxis: TransformNode
+    ) = this()
+    def this(
+      scene: Scene,
+      scaleLines: Unit,
+      renderingGroupId: Unit,
+      xAxis: TransformNode,
+      yAxis: Unit,
+      zAxis: TransformNode
+    ) = this()
+    def this(
+      scene: Scene,
+      scaleLines: Unit,
+      renderingGroupId: Unit,
+      xAxis: TransformNode,
+      yAxis: TransformNode,
+      zAxis: TransformNode
+    ) = this()
+    def this(
+      scene: Scene,
+      scaleLines: Unit,
+      renderingGroupId: Nullable[Double],
+      xAxis: Unit,
+      yAxis: Unit,
+      zAxis: TransformNode
+    ) = this()
+    def this(
+      scene: Scene,
+      scaleLines: Unit,
+      renderingGroupId: Nullable[Double],
+      xAxis: Unit,
+      yAxis: TransformNode,
+      zAxis: TransformNode
+    ) = this()
+    def this(
+      scene: Scene,
+      scaleLines: Unit,
+      renderingGroupId: Nullable[Double],
+      xAxis: TransformNode,
+      yAxis: Unit,
+      zAxis: TransformNode
+    ) = this()
+    def this(
+      scene: Scene,
+      scaleLines: Unit,
+      renderingGroupId: Nullable[Double],
       xAxis: TransformNode,
       yAxis: TransformNode,
       zAxis: TransformNode
@@ -152,8 +217,7 @@ object debugIndexMod {
     @JSImport("babylonjs/Debug/index", "AxesViewer._SetRenderingGroupId")
     @js.native
     def _SetRenderingGroupId: js.Any = js.native
-    @scala.inline
-    def _SetRenderingGroupId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SetRenderingGroupId")(x.asInstanceOf[js.Any])
+    inline def _SetRenderingGroupId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SetRenderingGroupId")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Debug/index", "BoneAxesViewer")
@@ -199,8 +263,7 @@ object debugIndexMod {
     @JSImport("babylonjs/Debug/index", "DebugLayer.InspectorURL")
     @js.native
     def InspectorURL: String = js.native
-    @scala.inline
-    def InspectorURL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InspectorURL")(x.asInstanceOf[js.Any])
+    inline def InspectorURL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InspectorURL")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Debug/index", "DebugLayerTab")
@@ -208,17 +271,17 @@ object debugIndexMod {
   object DebugLayerTab extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.babylonjs.debugLayerMod.DebugLayerTab with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.babylonjs.debugLayerMod.DebugLayerTab & Double] = js.native
     
-    /* 1 */ val Debug: typings.babylonjs.debugLayerMod.DebugLayerTab.Debug with Double = js.native
+    /* 1 */ val Debug: typings.babylonjs.debugLayerMod.DebugLayerTab.Debug & Double = js.native
     
-    /* 0 */ val Properties: typings.babylonjs.debugLayerMod.DebugLayerTab.Properties with Double = js.native
+    /* 0 */ val Properties: typings.babylonjs.debugLayerMod.DebugLayerTab.Properties & Double = js.native
     
-    /* 4 */ val Settings: typings.babylonjs.debugLayerMod.DebugLayerTab.Settings with Double = js.native
+    /* 4 */ val Settings: typings.babylonjs.debugLayerMod.DebugLayerTab.Settings & Double = js.native
     
-    /* 2 */ val Statistics: typings.babylonjs.debugLayerMod.DebugLayerTab.Statistics with Double = js.native
+    /* 2 */ val Statistics: typings.babylonjs.debugLayerMod.DebugLayerTab.Statistics & Double = js.native
     
-    /* 3 */ val Tools: typings.babylonjs.debugLayerMod.DebugLayerTab.Tools with Double = js.native
+    /* 3 */ val Tools: typings.babylonjs.debugLayerMod.DebugLayerTab.Tools & Double = js.native
   }
   
   @JSImport("babylonjs/Debug/index", "PhysicsViewer")
@@ -248,6 +311,10 @@ object debugIndexMod {
   /* static members */
   object RayHelper {
     
+    @JSImport("babylonjs/Debug/index", "RayHelper")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Helper function to create a colored helper in a scene in one line.
       * @param ray Defines the ray we are currently tryin to visualize
@@ -255,9 +322,7 @@ object debugIndexMod {
       * @param color Defines the color we want to see the ray in
       * @returns The newly created ray helper.
       */
-    @JSImport("babylonjs/Debug/index", "RayHelper.CreateAndShow")
-    @js.native
-    def CreateAndShow(ray: Ray, scene: Scene, color: Color3): typings.babylonjs.rayHelperMod.RayHelper = js.native
+    inline def CreateAndShow(ray: Ray, scene: Scene, color: Color3): typings.babylonjs.rayHelperMod.RayHelper = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndShow")(ray.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rayHelperMod.RayHelper]
   }
   
   @JSImport("babylonjs/Debug/index", "SkeletonViewer")
@@ -299,18 +364,6 @@ object debugIndexMod {
       /** The Scene scope*/
     scene: Scene,
       /** defines a boolean indicating if bones matrices must be forced to update before rendering (true by default)  */
-    autoUpdateBonesMatrices: js.UndefOr[scala.Nothing],
-      /** defines the rendering group id to use with the viewer */
-    renderingGroupId: Double
-    ) = this()
-    def this(
-      /** defines the skeleton to render */
-    skeleton: Skeleton,
-      /** defines the mesh attached to the skeleton */
-    mesh: AbstractMesh,
-      /** The Scene scope*/
-    scene: Scene,
-      /** defines a boolean indicating if bones matrices must be forced to update before rendering (true by default)  */
     autoUpdateBonesMatrices: Boolean,
       /** defines the rendering group id to use with the viewer */
     renderingGroupId: Double
@@ -323,11 +376,9 @@ object debugIndexMod {
       /** The Scene scope*/
     scene: Scene,
       /** defines a boolean indicating if bones matrices must be forced to update before rendering (true by default)  */
-    autoUpdateBonesMatrices: js.UndefOr[scala.Nothing],
+    autoUpdateBonesMatrices: Unit,
       /** defines the rendering group id to use with the viewer */
-    renderingGroupId: js.UndefOr[scala.Nothing],
-      /** is the options for the viewer */
-    options: PartialISkeletonViewerOpt
+    renderingGroupId: Double
     ) = this()
     def this(
       /** defines the skeleton to render */
@@ -337,7 +388,7 @@ object debugIndexMod {
       /** The Scene scope*/
     scene: Scene,
       /** defines a boolean indicating if bones matrices must be forced to update before rendering (true by default)  */
-    autoUpdateBonesMatrices: js.UndefOr[scala.Nothing],
+    autoUpdateBonesMatrices: Boolean,
       /** defines the rendering group id to use with the viewer */
     renderingGroupId: Double,
       /** is the options for the viewer */
@@ -353,7 +404,7 @@ object debugIndexMod {
       /** defines a boolean indicating if bones matrices must be forced to update before rendering (true by default)  */
     autoUpdateBonesMatrices: Boolean,
       /** defines the rendering group id to use with the viewer */
-    renderingGroupId: js.UndefOr[scala.Nothing],
+    renderingGroupId: Unit,
       /** is the options for the viewer */
     options: PartialISkeletonViewerOpt
     ) = this()
@@ -365,9 +416,23 @@ object debugIndexMod {
       /** The Scene scope*/
     scene: Scene,
       /** defines a boolean indicating if bones matrices must be forced to update before rendering (true by default)  */
-    autoUpdateBonesMatrices: Boolean,
+    autoUpdateBonesMatrices: Unit,
       /** defines the rendering group id to use with the viewer */
     renderingGroupId: Double,
+      /** is the options for the viewer */
+    options: PartialISkeletonViewerOpt
+    ) = this()
+    def this(
+      /** defines the skeleton to render */
+    skeleton: Skeleton,
+      /** defines the mesh attached to the skeleton */
+    mesh: AbstractMesh,
+      /** The Scene scope*/
+    scene: Scene,
+      /** defines a boolean indicating if bones matrices must be forced to update before rendering (true by default)  */
+    autoUpdateBonesMatrices: Unit,
+      /** defines the rendering group id to use with the viewer */
+    renderingGroupId: Unit,
       /** is the options for the viewer */
     options: PartialISkeletonViewerOpt
     ) = this()
@@ -385,18 +450,14 @@ object debugIndexMod {
       * @returns The created ShaderMaterial
       * @see http://www.babylonjs-playground.com/#1BZJVJ#395
       */
-    @JSImport("babylonjs/Debug/index", "SkeletonViewer.CreateBoneWeightShader")
-    @js.native
-    def CreateBoneWeightShader(options: IBoneWeightShaderOptions, scene: Scene): ShaderMaterial = js.native
+    inline def CreateBoneWeightShader(options: IBoneWeightShaderOptions, scene: Scene): ShaderMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateBoneWeightShader")(options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[ShaderMaterial]
     
     /** public static method to create a BoneWeight Shader
       * @param options The constructor options
       * @param scene The scene that the shader is scoped to
       * @returns The created ShaderMaterial
       */
-    @JSImport("babylonjs/Debug/index", "SkeletonViewer.CreateSkeletonMapShader")
-    @js.native
-    def CreateSkeletonMapShader(options: ISkeletonMapShaderOptions, scene: Scene): ShaderMaterial = js.native
+    inline def CreateSkeletonMapShader(options: ISkeletonMapShaderOptions, scene: Scene): ShaderMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateSkeletonMapShader")(options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[ShaderMaterial]
     
     /** public Display constants BABYLON.SkeletonViewer.DISPLAY_LINES */
     @JSImport("babylonjs/Debug/index", "SkeletonViewer.DISPLAY_LINES")
@@ -422,32 +483,29 @@ object debugIndexMod {
     @JSImport("babylonjs/Debug/index", "SkeletonViewer._CreateBoneMapColorBuffer")
     @js.native
     def _CreateBoneMapColorBuffer: js.Any = js.native
-    @scala.inline
-    def _CreateBoneMapColorBuffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateBoneMapColorBuffer")(x.asInstanceOf[js.Any])
+    inline def _CreateBoneMapColorBuffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateBoneMapColorBuffer")(x.asInstanceOf[js.Any])
   }
   
   /* augmented module */
   object babylonjsSceneAugmentingMod {
     
-    @js.native
     trait Scene extends StObject {
       
       /**
         * @hidden
         * Backing field
         */
-      var _debugLayer: typings.babylonjs.debugLayerMod.DebugLayer = js.native
+      var _debugLayer: typings.babylonjs.debugLayerMod.DebugLayer
       
       /**
         * Gets the debug layer (aka Inspector) associated with the scene
         * @see https://doc.babylonjs.com/features/playground_debuglayer
         */
-      var debugLayer: typings.babylonjs.debugLayerMod.DebugLayer = js.native
+      var debugLayer: typings.babylonjs.debugLayerMod.DebugLayer
     }
     object Scene {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         _debugLayer: typings.babylonjs.debugLayerMod.DebugLayer,
         debugLayer: typings.babylonjs.debugLayerMod.DebugLayer
       ): typings.babylonjs.debugIndexMod.babylonjsSceneAugmentingMod.Scene = {
@@ -455,14 +513,11 @@ object debugIndexMod {
         __obj.asInstanceOf[typings.babylonjs.debugIndexMod.babylonjsSceneAugmentingMod.Scene]
       }
       
-      @scala.inline
-      implicit class SceneMutableBuilder[Self <: typings.babylonjs.debugIndexMod.babylonjsSceneAugmentingMod.Scene] (val x: Self) extends AnyVal {
+      extension [Self <: typings.babylonjs.debugIndexMod.babylonjsSceneAugmentingMod.Scene](x: Self) {
         
-        @scala.inline
-        def setDebugLayer(value: typings.babylonjs.debugLayerMod.DebugLayer): Self = StObject.set(x, "debugLayer", value.asInstanceOf[js.Any])
+        inline def setDebugLayer(value: typings.babylonjs.debugLayerMod.DebugLayer): Self = StObject.set(x, "debugLayer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set_debugLayer(value: typings.babylonjs.debugLayerMod.DebugLayer): Self = StObject.set(x, "_debugLayer", value.asInstanceOf[js.Any])
+        inline def set_debugLayer(value: typings.babylonjs.debugLayerMod.DebugLayer): Self = StObject.set(x, "_debugLayer", value.asInstanceOf[js.Any])
       }
     }
   }

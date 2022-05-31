@@ -4,7 +4,6 @@ import typings.babylonjs.nodeMaterialBuildStateMod.NodeMaterialBuildState
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pbrIndexMod {
@@ -33,6 +32,10 @@ object pbrIndexMod {
   /* static members */
   object ClearCoatBlock {
     
+    @JSImport("babylonjs/Materials/Node/Blocks/PBR/index", "ClearCoatBlock")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Gets the main code of the block (fragment side)
       * @param state current state of the node material building
@@ -44,9 +47,7 @@ object pbrIndexMod {
       * @param worldNormalVarName name of the variable holding the world normal
       * @returns the shader code
       */
-    @JSImport("babylonjs/Materials/Node/Blocks/PBR/index", "ClearCoatBlock.GetCode")
-    @js.native
-    def GetCode(
+    inline def GetCode(
       state: NodeMaterialBuildState,
       ccBlock: Nullable[typings.babylonjs.clearCoatBlockMod.ClearCoatBlock],
       reflectionBlock: Nullable[typings.babylonjs.reflectionBlockMod.ReflectionBlock],
@@ -54,7 +55,7 @@ object pbrIndexMod {
       generateTBNSpace: Boolean,
       vTBNAvailable: Boolean,
       worldNormalVarName: String
-    ): String = js.native
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCode")(state.asInstanceOf[js.Any], ccBlock.asInstanceOf[js.Any], reflectionBlock.asInstanceOf[js.Any], worldPosVarName.asInstanceOf[js.Any], generateTBNSpace.asInstanceOf[js.Any], vTBNAvailable.asInstanceOf[js.Any], worldNormalVarName.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   @JSImport("babylonjs/Materials/Node/Blocks/PBR/index", "PBRMetallicRoughnessBlock")
@@ -114,6 +115,10 @@ object pbrIndexMod {
   /* static members */
   object SubSurfaceBlock {
     
+    @JSImport("babylonjs/Materials/Node/Blocks/PBR/index", "SubSurfaceBlock")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Gets the main code of the block (fragment side)
       * @param state current state of the node material building
@@ -122,13 +127,11 @@ object pbrIndexMod {
       * @param worldPosVarName name of the variable holding the world position
       * @returns the shader code
       */
-    @JSImport("babylonjs/Materials/Node/Blocks/PBR/index", "SubSurfaceBlock.GetCode")
-    @js.native
-    def GetCode(
+    inline def GetCode(
       state: NodeMaterialBuildState,
       ssBlock: Nullable[typings.babylonjs.subSurfaceBlockMod.SubSurfaceBlock],
       reflectionBlock: Nullable[typings.babylonjs.reflectionBlockMod.ReflectionBlock],
       worldPosVarName: String
-    ): String = js.native
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCode")(state.asInstanceOf[js.Any], ssBlock.asInstanceOf[js.Any], reflectionBlock.asInstanceOf[js.Any], worldPosVarName.asInstanceOf[js.Any])).asInstanceOf[String]
   }
 }

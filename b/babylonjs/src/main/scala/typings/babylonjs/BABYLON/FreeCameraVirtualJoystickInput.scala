@@ -2,15 +2,16 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FreeCameraVirtualJoystickInput extends ICameraInput[FreeCamera] {
+trait FreeCameraVirtualJoystickInput
+  extends StObject
+     with ICameraInput[FreeCamera] {
   
-  var _leftjoystick: js.Any = js.native
+  /* private */ var _leftjoystick: js.Any = js.native
   
-  var _rightjoystick: js.Any = js.native
+  /* private */ var _rightjoystick: js.Any = js.native
   
   /**
     * Defines the camera the input is attached to.

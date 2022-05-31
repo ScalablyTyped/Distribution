@@ -2,12 +2,13 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @hidden */
 @js.native
-trait NativeTexture extends InternalTexture {
+trait NativeTexture
+  extends StObject
+     with InternalTexture {
   
   def getInternalTexture(): InternalTexture = js.native
   

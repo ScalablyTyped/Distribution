@@ -3,14 +3,15 @@ package typings.babylonjs
 import typings.babylonjs.iShaderProcessorMod.IShaderProcessor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webGL2ShaderProcessorsMod {
   
   @JSImport("babylonjs/Engines/WebGL/webGL2ShaderProcessors", "WebGL2ShaderProcessor")
   @js.native
-  class WebGL2ShaderProcessor () extends IShaderProcessor {
+  class WebGL2ShaderProcessor ()
+    extends StObject
+       with IShaderProcessor {
     
     @JSName("attributeProcessor")
     def attributeProcessor_MWebGL2ShaderProcessor(attribute: String): String = js.native

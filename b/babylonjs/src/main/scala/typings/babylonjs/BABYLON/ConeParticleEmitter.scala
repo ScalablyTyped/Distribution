@@ -2,19 +2,20 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConeParticleEmitter extends IParticleEmitterType {
+trait ConeParticleEmitter
+  extends StObject
+     with IParticleEmitterType {
   
-  var _angle: js.Any = js.native
+  /* private */ var _angle: js.Any = js.native
   
-  var _buildHeight: js.Any = js.native
+  /* private */ var _buildHeight: js.Any = js.native
   
-  var _height: js.Any = js.native
+  /* private */ var _height: js.Any = js.native
   
-  var _radius: js.Any = js.native
+  /* private */ var _radius: js.Any = js.native
   
   /**
     * Gets or sets the angle of the emission cone

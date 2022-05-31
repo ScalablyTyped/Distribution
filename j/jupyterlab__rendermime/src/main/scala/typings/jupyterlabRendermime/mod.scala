@@ -1,6 +1,5 @@
 package typings.jupyterlabRendermime
 
-import org.scalablytyped.runtime.Shortcut
 import typings.jupyterlabNbformat.mod.IMimeBundle
 import typings.jupyterlabNbformat.mod.IOutput
 import typings.jupyterlabRendermime.anon.Math
@@ -13,10 +12,13 @@ import typings.luminoCoreutils.jsonMod.PartialJSONObject
 import typings.luminoCoreutils.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@jupyterlab/rendermime", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@jupyterlab/rendermime", "AttachmentModel")
   @js.native
@@ -29,6 +31,10 @@ object mod {
   }
   object AttachmentModel {
     
+    @JSImport("@jupyterlab/rendermime", "AttachmentModel")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get the data for an attachment.
       *
@@ -36,26 +42,16 @@ object mod {
       *
       * @returns - The data for the payload.
       */
-    @JSImport("@jupyterlab/rendermime", "AttachmentModel.getData")
-    @js.native
-    def getData(bundle: IMimeBundle): PartialJSONObject = js.native
+    inline def getData(bundle: IMimeBundle): PartialJSONObject = ^.asInstanceOf[js.Dynamic].applyDynamic("getData")(bundle.asInstanceOf[js.Any]).asInstanceOf[PartialJSONObject]
   }
   
   @JSImport("@jupyterlab/rendermime", "ILatexTypesetter")
   @js.native
   val ILatexTypesetter: Token[typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.ILatexTypesetter] = js.native
   
-  object IRenderMimeRegistry extends Shortcut {
-    
-    @JSImport("@jupyterlab/rendermime", "IRenderMimeRegistry")
-    @js.native
-    val ^ : Token[typings.jupyterlabRendermime.tokensMod.IRenderMimeRegistry] = js.native
-    
-    type _To = Token[typings.jupyterlabRendermime.tokensMod.IRenderMimeRegistry]
-    
-    /* This means you don't have to write `^`, but can instead just say `IRenderMimeRegistry.foo` */
-    override def _to: Token[typings.jupyterlabRendermime.tokensMod.IRenderMimeRegistry] = ^
-  }
+  @JSImport("@jupyterlab/rendermime", "IRenderMimeRegistry")
+  @js.native
+  val IRenderMimeRegistry: Token[typings.jupyterlabRendermime.tokensMod.IRenderMimeRegistry] = js.native
   
   @JSImport("@jupyterlab/rendermime", "MimeModel")
   @js.native
@@ -78,6 +74,10 @@ object mod {
   }
   object OutputModel {
     
+    @JSImport("@jupyterlab/rendermime", "OutputModel")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get the data for an output.
       *
@@ -85,9 +85,7 @@ object mod {
       *
       * @returns - The data for the payload.
       */
-    @JSImport("@jupyterlab/rendermime", "OutputModel.getData")
-    @js.native
-    def getData(output: IOutput): PartialJSONObject = js.native
+    inline def getData(output: IOutput): PartialJSONObject = ^.asInstanceOf[js.Dynamic].applyDynamic("getData")(output.asInstanceOf[js.Any]).asInstanceOf[PartialJSONObject]
     
     /**
       * Get the metadata from an output message.
@@ -96,9 +94,7 @@ object mod {
       *
       * @returns - The metadata for the payload.
       */
-    @JSImport("@jupyterlab/rendermime", "OutputModel.getMetadata")
-    @js.native
-    def getMetadata(output: IOutput): PartialJSONObject = js.native
+    inline def getMetadata(output: IOutput): PartialJSONObject = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")(output.asInstanceOf[js.Any]).asInstanceOf[PartialJSONObject]
   }
   
   @JSImport("@jupyterlab/rendermime", "RenderMimeRegistry")
@@ -256,55 +252,21 @@ object mod {
   @js.native
   val markdownRendererFactory: IRendererFactory = js.native
   
-  @JSImport("@jupyterlab/rendermime", "removeMath")
-  @js.native
-  def removeMath(text: String): Math = js.native
+  inline def removeMath(text: String): Math = ^.asInstanceOf[js.Dynamic].applyDynamic("removeMath")(text.asInstanceOf[js.Any]).asInstanceOf[Math]
   
-  object renderHTML {
-    
-    @JSImport("@jupyterlab/rendermime", "renderHTML")
-    @js.native
-    def apply(options: typings.jupyterlabRendermime.renderersMod.renderHTML.IOptions): js.Promise[Unit] = js.native
-  }
+  inline def renderHTML(options: typings.jupyterlabRendermime.renderersMod.renderHTML.IOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderHTML")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  object renderImage {
-    
-    @JSImport("@jupyterlab/rendermime", "renderImage")
-    @js.native
-    def apply(options: IRenderOptions): js.Promise[Unit] = js.native
-  }
+  inline def renderImage(options: IRenderOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderImage")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  object renderLatex {
-    
-    @JSImport("@jupyterlab/rendermime", "renderLatex")
-    @js.native
-    def apply(options: typings.jupyterlabRendermime.renderersMod.renderLatex.IRenderOptions): js.Promise[Unit] = js.native
-  }
+  inline def renderLatex(options: typings.jupyterlabRendermime.renderersMod.renderLatex.IRenderOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderLatex")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  object renderMarkdown {
-    
-    @JSImport("@jupyterlab/rendermime", "renderMarkdown")
-    @js.native
-    def apply(options: typings.jupyterlabRendermime.renderersMod.renderMarkdown.IRenderOptions): js.Promise[Unit] = js.native
-  }
+  inline def renderMarkdown(options: typings.jupyterlabRendermime.renderersMod.renderMarkdown.IRenderOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderMarkdown")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  object renderSVG {
-    
-    @JSImport("@jupyterlab/rendermime", "renderSVG")
-    @js.native
-    def apply(options: typings.jupyterlabRendermime.renderersMod.renderSVG.IRenderOptions): js.Promise[Unit] = js.native
-  }
+  inline def renderSVG(options: typings.jupyterlabRendermime.renderersMod.renderSVG.IRenderOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderSVG")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  object renderText {
-    
-    @JSImport("@jupyterlab/rendermime", "renderText")
-    @js.native
-    def apply(options: typings.jupyterlabRendermime.renderersMod.renderText.IRenderOptions): js.Promise[Unit] = js.native
-  }
+  inline def renderText(options: typings.jupyterlabRendermime.renderersMod.renderText.IRenderOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderText")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("@jupyterlab/rendermime", "replaceMath")
-  @js.native
-  def replaceMath(text: String, math: js.Array[String]): String = js.native
+  inline def replaceMath(text: String, math: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceMath")(text.asInstanceOf[js.Any], math.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("@jupyterlab/rendermime", "standardRendererFactories")
   @js.native
@@ -317,12 +279,4 @@ object mod {
   @JSImport("@jupyterlab/rendermime", "textRendererFactory")
   @js.native
   val textRendererFactory: IRendererFactory = js.native
-  
-  object IRenderMime {
-    
-    /**
-      * The namespace for IMimeModel associated interfaces.
-      */
-    object IMimeModel
-  }
 }

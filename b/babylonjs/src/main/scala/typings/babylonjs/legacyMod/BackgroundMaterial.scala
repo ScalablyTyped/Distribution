@@ -2,7 +2,6 @@ package typings.babylonjs.legacyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "BackgroundMaterial")
@@ -30,9 +29,7 @@ object BackgroundMaterial {
     * @param rootUrl The root url of the assets the material depends upon
     * @returns the instantiated BackgroundMaterial.
     */
-  @JSImport("babylonjs/Legacy/legacy", "BackgroundMaterial.Parse")
-  @js.native
-  def Parse(source: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.backgroundMaterialMod.BackgroundMaterial = js.native
+  inline def Parse(source: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.backgroundMaterialMod.BackgroundMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.backgroundMaterialMod.BackgroundMaterial]
   
   /**
     * Standard reflectance value at parallel view angle.
@@ -40,8 +37,7 @@ object BackgroundMaterial {
   @JSImport("babylonjs/Legacy/legacy", "BackgroundMaterial.StandardReflectance0")
   @js.native
   def StandardReflectance0: Double = js.native
-  @scala.inline
-  def StandardReflectance0_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StandardReflectance0")(x.asInstanceOf[js.Any])
+  inline def StandardReflectance0_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StandardReflectance0")(x.asInstanceOf[js.Any])
   
   /**
     * Standard reflectance value at grazing angle.
@@ -49,6 +45,5 @@ object BackgroundMaterial {
   @JSImport("babylonjs/Legacy/legacy", "BackgroundMaterial.StandardReflectance90")
   @js.native
   def StandardReflectance90: Double = js.native
-  @scala.inline
-  def StandardReflectance90_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StandardReflectance90")(x.asInstanceOf[js.Any])
+  inline def StandardReflectance90_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StandardReflectance90")(x.asInstanceOf[js.Any])
 }

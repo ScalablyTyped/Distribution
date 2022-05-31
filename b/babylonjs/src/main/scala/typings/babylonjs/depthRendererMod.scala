@@ -7,7 +7,6 @@ import typings.babylonjs.subMeshMod.SubMesh
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object depthRendererMod {
@@ -24,29 +23,26 @@ object depthRendererMod {
       */
     def this(scene: Scene) = this()
     def this(scene: Scene, `type`: Double) = this()
-    def this(scene: Scene, `type`: js.UndefOr[scala.Nothing], camera: Nullable[Camera]) = this()
     def this(scene: Scene, `type`: Double, camera: Nullable[Camera]) = this()
-    def this(
-      scene: Scene,
-      `type`: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[Nullable[Camera]],
-      storeNonLinearDepth: Boolean
-    ) = this()
-    def this(scene: Scene, `type`: Double, camera: js.UndefOr[Nullable[Camera]], storeNonLinearDepth: Boolean) = this()
+    def this(scene: Scene, `type`: Unit, camera: Nullable[Camera]) = this()
+    def this(scene: Scene, `type`: Double, camera: Unit, storeNonLinearDepth: Boolean) = this()
+    def this(scene: Scene, `type`: Double, camera: Nullable[Camera], storeNonLinearDepth: Boolean) = this()
+    def this(scene: Scene, `type`: Unit, camera: Unit, storeNonLinearDepth: Boolean) = this()
+    def this(scene: Scene, `type`: Unit, camera: Nullable[Camera], storeNonLinearDepth: Boolean) = this()
     
-    var _cachedDefines: js.Any = js.native
+    /* private */ var _cachedDefines: js.Any = js.native
     
-    var _camera: js.Any = js.native
+    /* private */ var _camera: js.Any = js.native
     
-    val _clearColor: js.Any = js.native
+    /* private */ val _clearColor: js.Any = js.native
     
-    var _depthMap: js.Any = js.native
+    /* private */ var _depthMap: js.Any = js.native
     
-    var _effect: js.Any = js.native
+    /* private */ var _effect: js.Any = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
-    val _storeNonLinearDepth: js.Any = js.native
+    /* private */ val _storeNonLinearDepth: js.Any = js.native
     
     /**
       * Disposes of the depth renderer.
@@ -83,9 +79,11 @@ object depthRendererMod {
   /* static members */
   object DepthRenderer {
     
-    /** @hidden */
-    @JSImport("babylonjs/Rendering/depthRenderer", "DepthRenderer._SceneComponentInitialization")
+    @JSImport("babylonjs/Rendering/depthRenderer", "DepthRenderer")
     @js.native
-    def _SceneComponentInitialization(scene: Scene): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    /** @hidden */
+    inline def _SceneComponentInitialization(scene: Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

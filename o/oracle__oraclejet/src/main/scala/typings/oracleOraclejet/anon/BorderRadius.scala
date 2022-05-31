@@ -25,46 +25,43 @@ import typings.oracleOraclejet.oracleOraclejetStrings.triangleDown
 import typings.oracleOraclejet.oracleOraclejetStrings.triangleUp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BorderRadius extends StObject {
   
-  var borderColor: String = js.native
+  var borderColor: String
   
-  var borderRadius: String = js.native
+  var borderRadius: String
   
-  var borderWidth: Double = js.native
+  var borderWidth: Double
   
-  var color: String = js.native
+  var color: String
   
-  var height: Double = js.native
+  var height: Double
   
-  var pattern: smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | none = js.native
+  var pattern: smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | none
   
   var shape: js.UndefOr[
     circle | diamond | ellipse | human | plus | rectangle | square | star | triangleDown | triangleUp | String
-  ] = js.native
+  ] = js.undefined
   
-  var source: String = js.native
+  var source: String
   
-  var sourceHover: String = js.native
+  var sourceHover: String
   
-  var sourceHoverSelected: String = js.native
+  var sourceHoverSelected: String
   
-  var sourceSelected: String = js.native
+  var sourceSelected: String
   
-  var svgClassName: String = js.native
+  var svgClassName: String
   
-  var svgStyle: js.Object = js.native
+  var svgStyle: js.Object
   
-  var width: Double = js.native
+  var width: Double
 }
 object BorderRadius {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     borderColor: String,
     borderRadius: String,
     borderWidth: Double,
@@ -83,56 +80,40 @@ object BorderRadius {
     __obj.asInstanceOf[BorderRadius]
   }
   
-  @scala.inline
-  implicit class BorderRadiusMutableBuilder[Self <: BorderRadius] (val x: Self) extends AnyVal {
+  extension [Self <: BorderRadius](x: Self) {
     
-    @scala.inline
-    def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderRadius(value: String): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    inline def setBorderRadius(value: String): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+    inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPattern(
+    inline def setPattern(
       value: smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | none
     ): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShape(
+    inline def setShape(
       value: circle | diamond | ellipse | human | plus | rectangle | square | star | triangleDown | triangleUp | String
     ): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceHover(value: String): Self = StObject.set(x, "sourceHover", value.asInstanceOf[js.Any])
+    inline def setSourceHover(value: String): Self = StObject.set(x, "sourceHover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceHoverSelected(value: String): Self = StObject.set(x, "sourceHoverSelected", value.asInstanceOf[js.Any])
+    inline def setSourceHoverSelected(value: String): Self = StObject.set(x, "sourceHoverSelected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceSelected(value: String): Self = StObject.set(x, "sourceSelected", value.asInstanceOf[js.Any])
+    inline def setSourceSelected(value: String): Self = StObject.set(x, "sourceSelected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgClassName(value: String): Self = StObject.set(x, "svgClassName", value.asInstanceOf[js.Any])
+    inline def setSvgClassName(value: String): Self = StObject.set(x, "svgClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgStyle(value: js.Object): Self = StObject.set(x, "svgStyle", value.asInstanceOf[js.Any])
+    inline def setSvgStyle(value: js.Object): Self = StObject.set(x, "svgStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

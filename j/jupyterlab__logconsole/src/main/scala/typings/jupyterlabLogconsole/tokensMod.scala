@@ -15,13 +15,13 @@ import typings.luminoDisposable.mod.IDisposable
 import typings.luminoSignaling.mod.ISignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tokensMod {
   
-  @js.native
-  trait ILoggerRegistry extends IDisposable {
+  trait ILoggerRegistry
+    extends StObject
+       with IDisposable {
     
     /**
       * Get the logger for the specified source.
@@ -30,19 +30,19 @@ object tokensMod {
       *
       * @returns The logger for the specified source.
       */
-    def getLogger(source: String): ILogger = js.native
+    def getLogger(source: String): ILogger
     
     /**
       * Get all loggers registered.
       *
       * @returns The array containing all registered loggers.
       */
-    def getLoggers(): js.Array[ILogger] = js.native
+    def getLoggers(): js.Array[ILogger]
     
     /**
       * A signal emitted when the logger registry changes.
       */
-    val registryChanged: ISignal[this.type, ILoggerRegistryChange] = js.native
+    val registryChanged: ISignal[this.type, ILoggerRegistryChange]
   }
   object ILoggerRegistry {
     
@@ -50,17 +50,13 @@ object tokensMod {
     @js.native
     val ^ : Token[ILoggerRegistry] = js.native
     
-    @scala.inline
-    implicit class ILoggerRegistryMutableBuilder[Self <: ILoggerRegistry] (val x: Self) extends AnyVal {
+    extension [Self <: ILoggerRegistry](x: Self) {
       
-      @scala.inline
-      def setGetLogger(value: String => ILogger): Self = StObject.set(x, "getLogger", js.Any.fromFunction1(value))
+      inline def setGetLogger(value: String => ILogger): Self = StObject.set(x, "getLogger", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetLoggers(value: () => js.Array[ILogger]): Self = StObject.set(x, "getLoggers", js.Any.fromFunction0(value))
+      inline def setGetLoggers(value: () => js.Array[ILogger]): Self = StObject.set(x, "getLoggers", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRegistryChanged(value: ISignal[ILoggerRegistry, ILoggerRegistryChange]): Self = StObject.set(x, "registryChanged", value.asInstanceOf[js.Any])
+      inline def setRegistryChanged(value: ISignal[ILoggerRegistry, ILoggerRegistryChange]): Self = StObject.set(x, "registryChanged", value.asInstanceOf[js.Any])
     }
   }
   
@@ -71,47 +67,41 @@ object tokensMod {
   trait IContentChange extends StObject
   object IContentChange {
     
-    @scala.inline
-    def append: typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.append = "append".asInstanceOf[typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.append]
+    inline def append: typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.append = "append".asInstanceOf[typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.append]
     
-    @scala.inline
-    def clear: typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.clear = "clear".asInstanceOf[typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.clear]
+    inline def clear: typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.clear = "clear".asInstanceOf[typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.clear]
   }
   
-  @js.native
   trait IHtmlLog
-    extends ILogPayloadBase
+    extends StObject
+       with ILogPayloadBase
        with ILogPayload {
     
     /**
       * Log data as HTML string.
       */
     @JSName("data")
-    var data_IHtmlLog: String = js.native
+    var data_IHtmlLog: String
     
     /**
       * Type of log data.
       */
     @JSName("type")
-    var type_IHtmlLog: html = js.native
+    var type_IHtmlLog: html
   }
   object IHtmlLog {
     
-    @scala.inline
-    def apply(data: String, level: LogLevel, `type`: html): IHtmlLog = {
+    inline def apply(data: String, level: LogLevel): IHtmlLog = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("html")
       __obj.asInstanceOf[IHtmlLog]
     }
     
-    @scala.inline
-    implicit class IHtmlLogMutableBuilder[Self <: IHtmlLog] (val x: Self) extends AnyVal {
+    extension [Self <: IHtmlLog](x: Self) {
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: html): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: html): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -123,138 +113,129 @@ object tokensMod {
   trait ILogPayload extends StObject
   object ILogPayload {
     
-    @scala.inline
-    def IHtmlLog(data: String, level: LogLevel, `type`: html): typings.jupyterlabLogconsole.tokensMod.IHtmlLog = {
+    inline def IHtmlLog(data: String, level: LogLevel): typings.jupyterlabLogconsole.tokensMod.IHtmlLog = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("html")
       __obj.asInstanceOf[typings.jupyterlabLogconsole.tokensMod.IHtmlLog]
     }
     
-    @scala.inline
-    def IOutputLog(data: IOutput, level: LogLevel, `type`: output): typings.jupyterlabLogconsole.tokensMod.IOutputLog = {
+    inline def IOutputLog(data: IOutput, level: LogLevel): typings.jupyterlabLogconsole.tokensMod.IOutputLog = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("output")
       __obj.asInstanceOf[typings.jupyterlabLogconsole.tokensMod.IOutputLog]
     }
     
-    @scala.inline
-    def ITextLog(data: String, level: LogLevel, `type`: text): typings.jupyterlabLogconsole.tokensMod.ITextLog = {
+    inline def ITextLog(data: String, level: LogLevel): typings.jupyterlabLogconsole.tokensMod.ITextLog = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("text")
       __obj.asInstanceOf[typings.jupyterlabLogconsole.tokensMod.ITextLog]
     }
   }
   
-  @js.native
   trait ILogPayloadBase extends StObject {
     
     /**
       * Data
       */
-    var data: js.Any = js.native
+    var data: js.Any
     
     /**
       * Log level
       */
-    var level: LogLevel = js.native
+    var level: LogLevel
     
     /**
       * Type of log data.
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object ILogPayloadBase {
     
-    @scala.inline
-    def apply(data: js.Any, level: LogLevel, `type`: String): ILogPayloadBase = {
+    inline def apply(data: js.Any, level: LogLevel, `type`: String): ILogPayloadBase = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ILogPayloadBase]
     }
     
-    @scala.inline
-    implicit class ILogPayloadBaseMutableBuilder[Self <: ILogPayloadBase] (val x: Self) extends AnyVal {
+    extension [Self <: ILogPayloadBase](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevel(value: LogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: LogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait ILogger extends IDisposable {
+  trait ILogger
+    extends StObject
+       with IDisposable {
     
     /**
       * Add a checkpoint in the log.
       */
-    def checkpoint(): Unit = js.native
+    def checkpoint(): Unit
     
     /**
       * Clear all outputs logged.
       */
-    def clear(): Unit = js.native
+    def clear(): Unit
     
     /**
       * A signal emitted when the log model changes.
       */
-    val contentChanged: ISignal[this.type, IContentChange] = js.native
+    val contentChanged: ISignal[this.type, IContentChange]
     
     /**
       * Number of outputs logged.
       */
-    val length: Double = js.native
+    val length: Double
     
     /**
       * Log level.
       */
-    var level: LogLevel = js.native
+    var level: LogLevel
     
     /**
       * Log an output to logger.
       *
       * @param log - The output to be logged.
       */
-    def log(log: ILogPayload): Unit = js.native
+    def log(log: ILogPayload): Unit
     
     /**
       * Max number of messages.
       */
-    var maxLength: Double = js.native
+    var maxLength: Double
     
     /**
       * Output Area Model used to manage log storage in memory.
       */
-    val outputAreaModel: ILoggerOutputAreaModel = js.native
+    val outputAreaModel: ILoggerOutputAreaModel
     
     /**
       * Rendermime to use when rendering outputs logged.
       */
-    var rendermime: IRenderMimeRegistry | Null = js.native
+    var rendermime: IRenderMimeRegistry | Null
     
     /**
       * The name of the log source.
       */
-    val source: String = js.native
+    val source: String
     
     /**
       * A signal emitted when the rendermime changes.
       */
-    val stateChanged: ISignal[this.type, IStateChange] = js.native
+    val stateChanged: ISignal[this.type, IStateChange]
     
     /**
       * The cumulative number of messages the log has stored.
       */
-    val version: Double = js.native
+    val version: Double
   }
   object ILogger {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       checkpoint: () => Unit,
       clear: () => Unit,
       contentChanged: ISignal[ILogger, IContentChange],
@@ -269,56 +250,44 @@ object tokensMod {
       stateChanged: ISignal[ILogger, IStateChange],
       version: Double
     ): ILogger = {
-      val __obj = js.Dynamic.literal(checkpoint = js.Any.fromFunction0(checkpoint), clear = js.Any.fromFunction0(clear), contentChanged = contentChanged.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), isDisposed = isDisposed.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], log = js.Any.fromFunction1(log), maxLength = maxLength.asInstanceOf[js.Any], outputAreaModel = outputAreaModel.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], stateChanged = stateChanged.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(checkpoint = js.Any.fromFunction0(checkpoint), clear = js.Any.fromFunction0(clear), contentChanged = contentChanged.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), isDisposed = isDisposed.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], log = js.Any.fromFunction1(log), maxLength = maxLength.asInstanceOf[js.Any], outputAreaModel = outputAreaModel.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], stateChanged = stateChanged.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], rendermime = null)
       __obj.asInstanceOf[ILogger]
     }
     
-    @scala.inline
-    implicit class ILoggerMutableBuilder[Self <: ILogger] (val x: Self) extends AnyVal {
+    extension [Self <: ILogger](x: Self) {
       
-      @scala.inline
-      def setCheckpoint(value: () => Unit): Self = StObject.set(x, "checkpoint", js.Any.fromFunction0(value))
+      inline def setCheckpoint(value: () => Unit): Self = StObject.set(x, "checkpoint", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setContentChanged(value: ISignal[ILogger, IContentChange]): Self = StObject.set(x, "contentChanged", value.asInstanceOf[js.Any])
+      inline def setContentChanged(value: ISignal[ILogger, IContentChange]): Self = StObject.set(x, "contentChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevel(value: LogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: LogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLog(value: ILogPayload => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+      inline def setLog(value: ILogPayload => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+      inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputAreaModel(value: ILoggerOutputAreaModel): Self = StObject.set(x, "outputAreaModel", value.asInstanceOf[js.Any])
+      inline def setOutputAreaModel(value: ILoggerOutputAreaModel): Self = StObject.set(x, "outputAreaModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRendermime(value: IRenderMimeRegistry): Self = StObject.set(x, "rendermime", value.asInstanceOf[js.Any])
+      inline def setRendermime(value: IRenderMimeRegistry): Self = StObject.set(x, "rendermime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRendermimeNull: Self = StObject.set(x, "rendermime", null)
+      inline def setRendermimeNull: Self = StObject.set(x, "rendermime", null)
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateChanged(value: ISignal[ILogger, IStateChange]): Self = StObject.set(x, "stateChanged", value.asInstanceOf[js.Any])
+      inline def setStateChanged(value: ISignal[ILogger, IStateChange]): Self = StObject.set(x, "stateChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
   @js.native
-  trait ILoggerOutputAreaModel extends IOutputAreaModel {
+  trait ILoggerOutputAreaModel
+    extends StObject
+       with IOutputAreaModel {
     
     /**
       * The maximum number of outputs to store.
@@ -328,40 +297,36 @@ object tokensMod {
   
   type ILoggerRegistryChange = append
   
-  @js.native
   trait IOutputLog
-    extends ILogPayloadBase
+    extends StObject
+       with ILogPayloadBase
        with ILogPayload {
     
     /**
       * Log data as Notebook kernel output.
       */
     @JSName("data")
-    var data_IOutputLog: IOutput = js.native
+    var data_IOutputLog: IOutput
     
     /**
       * Type of log data.
       */
     @JSName("type")
-    var type_IOutputLog: output = js.native
+    var type_IOutputLog: output
   }
   object IOutputLog {
     
-    @scala.inline
-    def apply(data: IOutput, level: LogLevel, `type`: output): IOutputLog = {
+    inline def apply(data: IOutput, level: LogLevel): IOutputLog = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("output")
       __obj.asInstanceOf[IOutputLog]
     }
     
-    @scala.inline
-    implicit class IOutputLogMutableBuilder[Self <: IOutputLog] (val x: Self) extends AnyVal {
+    extension [Self <: IOutputLog](x: Self) {
       
-      @scala.inline
-      def setData(value: IOutput): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: IOutput): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: output): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: output): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -371,40 +336,36 @@ object tokensMod {
     rendermime | level
   ]
   
-  @js.native
   trait ITextLog
-    extends ILogPayloadBase
+    extends StObject
+       with ILogPayloadBase
        with ILogPayload {
     
     /**
       * Log data as plain text.
       */
     @JSName("data")
-    var data_ITextLog: String = js.native
+    var data_ITextLog: String
     
     /**
       * Type of log data.
       */
     @JSName("type")
-    var type_ITextLog: text = js.native
+    var type_ITextLog: text
   }
   object ITextLog {
     
-    @scala.inline
-    def apply(data: String, level: LogLevel, `type`: text): ITextLog = {
+    inline def apply(data: String, level: LogLevel): ITextLog = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("text")
       __obj.asInstanceOf[ITextLog]
     }
     
-    @scala.inline
-    implicit class ITextLogMutableBuilder[Self <: ITextLog] (val x: Self) extends AnyVal {
+    extension [Self <: ITextLog](x: Self) {
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: text): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: text): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -418,19 +379,14 @@ object tokensMod {
   trait LogLevel extends StObject
   object LogLevel {
     
-    @scala.inline
-    def critical: typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.critical = "critical".asInstanceOf[typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.critical]
+    inline def critical: typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.critical = "critical".asInstanceOf[typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.critical]
     
-    @scala.inline
-    def debug: typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.debug = "debug".asInstanceOf[typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.debug]
+    inline def debug: typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.debug = "debug".asInstanceOf[typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.debug]
     
-    @scala.inline
-    def error: typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.error = "error".asInstanceOf[typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.error]
+    inline def error: typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.error = "error".asInstanceOf[typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.error]
     
-    @scala.inline
-    def info: typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.info = "info".asInstanceOf[typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.info]
+    inline def info: typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.info = "info".asInstanceOf[typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.info]
     
-    @scala.inline
-    def warning: typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.warning = "warning".asInstanceOf[typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.warning]
+    inline def warning: typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.warning = "warning".asInstanceOf[typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.warning]
   }
 }

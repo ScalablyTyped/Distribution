@@ -35,56 +35,57 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ojlabelMod {
   
   @js.native
-  trait ojLabel extends baseComponent[ojLabelSettableProperties] {
+  trait ojLabel
+    extends StObject
+       with baseComponent[ojLabelSettableProperties] {
     
     @JSName("addEventListener")
     def addEventListener_forChanged(
       `type`: forChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_forChanged(
       `type`: forChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_helpChanged(
       `type`: helpChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[DefinitionSource], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[DefinitionSource], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_helpChanged(
       `type`: helpChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[DefinitionSource], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[DefinitionSource], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_labelIdChanged(
       `type`: labelIdChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_labelIdChanged(
       `type`: labelIdChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_showRequiredChanged(
       `type`: showRequiredChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean | Null], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean | Null], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_showRequiredChanged(
       `type`: showRequiredChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean | Null], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean | Null], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     
@@ -103,13 +104,13 @@ object ojlabelMod {
     
     var labelId: String | Null = js.native
     
-    var onForChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
+    var onForChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], js.Any]) | Null = js.native
     
-    var onHelpChanged: (js.Function1[/* event */ JetElementCustomEvent[DefinitionSource], _]) | Null = js.native
+    var onHelpChanged: (js.Function1[/* event */ JetElementCustomEvent[DefinitionSource], js.Any]) | Null = js.native
     
-    var onLabelIdChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
+    var onLabelIdChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], js.Any]) | Null = js.native
     
-    var onShowRequiredChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean | Null], _]) | Null = js.native
+    var onShowRequiredChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean | Null], js.Any]) | Null = js.native
     
     def setProperties(properties: ojLabelSettablePropertiesLenient): Unit = js.native
     
@@ -136,21 +137,21 @@ object ojlabelMod {
     var translations_ojLabel: TooltipHelp = js.native
   }
   
-  @js.native
-  trait ojLabelEventMap extends baseComponentEventMap[ojLabelSettableProperties] {
+  trait ojLabelEventMap
+    extends StObject
+       with baseComponentEventMap[ojLabelSettableProperties] {
     
-    var forChanged: JetElementCustomEvent[String | Null] = js.native
+    var forChanged: JetElementCustomEvent[String | Null]
     
-    var helpChanged: JetElementCustomEvent[DefinitionSource] = js.native
+    var helpChanged: JetElementCustomEvent[DefinitionSource]
     
-    var labelIdChanged: JetElementCustomEvent[String | Null] = js.native
+    var labelIdChanged: JetElementCustomEvent[String | Null]
     
-    var showRequiredChanged: JetElementCustomEvent[Boolean | Null] = js.native
+    var showRequiredChanged: JetElementCustomEvent[Boolean | Null]
   }
   object ojLabelEventMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: UIEvent,
       animationcancel: AnimationEvent,
       animationend: AnimationEvent,
@@ -253,138 +254,110 @@ object ojlabelMod {
       __obj.asInstanceOf[ojLabelEventMap]
     }
     
-    @scala.inline
-    implicit class ojLabelEventMapMutableBuilder[Self <: ojLabelEventMap] (val x: Self) extends AnyVal {
+    extension [Self <: ojLabelEventMap](x: Self) {
       
-      @scala.inline
-      def setForChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "forChanged", value.asInstanceOf[js.Any])
+      inline def setForChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "forChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelpChanged(value: JetElementCustomEvent[DefinitionSource]): Self = StObject.set(x, "helpChanged", value.asInstanceOf[js.Any])
+      inline def setHelpChanged(value: JetElementCustomEvent[DefinitionSource]): Self = StObject.set(x, "helpChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelIdChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "labelIdChanged", value.asInstanceOf[js.Any])
+      inline def setLabelIdChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "labelIdChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowRequiredChanged(value: JetElementCustomEvent[Boolean | Null]): Self = StObject.set(x, "showRequiredChanged", value.asInstanceOf[js.Any])
+      inline def setShowRequiredChanged(value: JetElementCustomEvent[Boolean | Null]): Self = StObject.set(x, "showRequiredChanged", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait ojLabelSettableProperties extends baseComponentSettableProperties {
+  trait ojLabelSettableProperties
+    extends StObject
+       with baseComponentSettableProperties {
     
-    var `for`: String | Null = js.native
+    var `for`: String | Null
     
-    var help: DefinitionSource = js.native
+    var help: DefinitionSource
     
-    var labelId: String | Null = js.native
+    var labelId: String | Null
     
-    var showRequired: Boolean | Null = js.native
+    var showRequired: Boolean | Null
     
     @JSName("translations")
-    var translations_ojLabelSettableProperties: TooltipHelp = js.native
+    var translations_ojLabelSettableProperties: TooltipHelp
   }
   object ojLabelSettableProperties {
     
-    @scala.inline
-    def apply(help: DefinitionSource, translations: TooltipHelp): ojLabelSettableProperties = {
-      val __obj = js.Dynamic.literal(help = help.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any])
+    inline def apply(help: DefinitionSource, translations: TooltipHelp): ojLabelSettableProperties = {
+      val __obj = js.Dynamic.literal(help = help.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], labelId = null, showRequired = null)
+      __obj.updateDynamic("for")(null)
       __obj.asInstanceOf[ojLabelSettableProperties]
     }
     
-    @scala.inline
-    implicit class ojLabelSettablePropertiesMutableBuilder[Self <: ojLabelSettableProperties] (val x: Self) extends AnyVal {
+    extension [Self <: ojLabelSettableProperties](x: Self) {
       
-      @scala.inline
-      def setFor(value: String): Self = StObject.set(x, "for", value.asInstanceOf[js.Any])
+      inline def setFor(value: String): Self = StObject.set(x, "for", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForNull: Self = StObject.set(x, "for", null)
+      inline def setForNull: Self = StObject.set(x, "for", null)
       
-      @scala.inline
-      def setHelp(value: DefinitionSource): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+      inline def setHelp(value: DefinitionSource): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelId(value: String): Self = StObject.set(x, "labelId", value.asInstanceOf[js.Any])
+      inline def setLabelId(value: String): Self = StObject.set(x, "labelId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelIdNull: Self = StObject.set(x, "labelId", null)
+      inline def setLabelIdNull: Self = StObject.set(x, "labelId", null)
       
-      @scala.inline
-      def setShowRequired(value: Boolean): Self = StObject.set(x, "showRequired", value.asInstanceOf[js.Any])
+      inline def setShowRequired(value: Boolean): Self = StObject.set(x, "showRequired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowRequiredNull: Self = StObject.set(x, "showRequired", null)
+      inline def setShowRequiredNull: Self = StObject.set(x, "showRequired", null)
       
-      @scala.inline
-      def setTranslations(value: TooltipHelp): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: TooltipHelp): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojlabel.ojLabelSettableProperties> */
-  @js.native
   trait ojLabelSettablePropertiesLenient
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var `for`: js.UndefOr[String | Null] = js.native
+    var `for`: js.UndefOr[String | Null] = js.undefined
     
-    var help: js.UndefOr[DefinitionSource] = js.native
+    var help: js.UndefOr[DefinitionSource] = js.undefined
     
-    var labelId: js.UndefOr[String | Null] = js.native
+    var labelId: js.UndefOr[String | Null] = js.undefined
     
-    var showRequired: js.UndefOr[Boolean | Null] = js.native
+    var showRequired: js.UndefOr[Boolean | Null] = js.undefined
     
-    var translations: js.UndefOr[TooltipHelp] = js.native
+    var translations: js.UndefOr[TooltipHelp] = js.undefined
   }
   object ojLabelSettablePropertiesLenient {
     
-    @scala.inline
-    def apply(): ojLabelSettablePropertiesLenient = {
+    inline def apply(): ojLabelSettablePropertiesLenient = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ojLabelSettablePropertiesLenient]
     }
     
-    @scala.inline
-    implicit class ojLabelSettablePropertiesLenientMutableBuilder[Self <: ojLabelSettablePropertiesLenient] (val x: Self) extends AnyVal {
+    extension [Self <: ojLabelSettablePropertiesLenient](x: Self) {
       
-      @scala.inline
-      def setFor(value: String): Self = StObject.set(x, "for", value.asInstanceOf[js.Any])
+      inline def setFor(value: String): Self = StObject.set(x, "for", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForNull: Self = StObject.set(x, "for", null)
+      inline def setForNull: Self = StObject.set(x, "for", null)
       
-      @scala.inline
-      def setForUndefined: Self = StObject.set(x, "for", js.undefined)
+      inline def setForUndefined: Self = StObject.set(x, "for", js.undefined)
       
-      @scala.inline
-      def setHelp(value: DefinitionSource): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+      inline def setHelp(value: DefinitionSource): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
+      inline def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
       
-      @scala.inline
-      def setLabelId(value: String): Self = StObject.set(x, "labelId", value.asInstanceOf[js.Any])
+      inline def setLabelId(value: String): Self = StObject.set(x, "labelId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelIdNull: Self = StObject.set(x, "labelId", null)
+      inline def setLabelIdNull: Self = StObject.set(x, "labelId", null)
       
-      @scala.inline
-      def setLabelIdUndefined: Self = StObject.set(x, "labelId", js.undefined)
+      inline def setLabelIdUndefined: Self = StObject.set(x, "labelId", js.undefined)
       
-      @scala.inline
-      def setShowRequired(value: Boolean): Self = StObject.set(x, "showRequired", value.asInstanceOf[js.Any])
+      inline def setShowRequired(value: Boolean): Self = StObject.set(x, "showRequired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowRequiredNull: Self = StObject.set(x, "showRequired", null)
+      inline def setShowRequiredNull: Self = StObject.set(x, "showRequired", null)
       
-      @scala.inline
-      def setShowRequiredUndefined: Self = StObject.set(x, "showRequired", js.undefined)
+      inline def setShowRequiredUndefined: Self = StObject.set(x, "showRequired", js.undefined)
       
-      @scala.inline
-      def setTranslations(value: TooltipHelp): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: TooltipHelp): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+      inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
     }
   }
 }

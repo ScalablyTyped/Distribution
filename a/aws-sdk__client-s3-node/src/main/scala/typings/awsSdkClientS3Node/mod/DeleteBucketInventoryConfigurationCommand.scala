@@ -1,5 +1,6 @@
 package typings.awsSdkClientS3Node.mod
 
+import typings.awsSdkClientS3Node.typesDeleteBucketInventoryConfigurationInputMod.DeleteBucketInventoryConfigurationInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class DeleteBucketInventoryConfigurationCommand protected ()
   extends typings.awsSdkClientS3Node.deleteBucketInventoryConfigurationCommandMod.DeleteBucketInventoryConfigurationCommand {
-  def this(input: typings.awsSdkClientS3Node.typesDeleteBucketInventoryConfigurationInputMod.DeleteBucketInventoryConfigurationInput) = this()
+  def this(input: DeleteBucketInventoryConfigurationInput) = this()
 }

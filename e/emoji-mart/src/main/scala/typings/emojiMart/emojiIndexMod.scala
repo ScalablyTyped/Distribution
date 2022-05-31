@@ -16,8 +16,5 @@ object emojiIndexMod {
     
     inline def search(query: String): js.Array[EmojiData] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any]).asInstanceOf[js.Array[EmojiData] | Null]
     inline def search(query: _empty): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any]).asInstanceOf[Null]
-    
-    /** Mapping of string to keyof emojis */
-    object emoticons
   }
 }

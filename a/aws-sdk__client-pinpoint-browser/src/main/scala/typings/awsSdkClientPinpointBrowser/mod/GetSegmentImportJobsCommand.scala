@@ -1,5 +1,6 @@
 package typings.awsSdkClientPinpointBrowser.mod
 
+import typings.awsSdkClientPinpointBrowser.typesGetSegmentImportJobsInputMod.GetSegmentImportJobsInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class GetSegmentImportJobsCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.getSegmentImportJobsCommandMod.GetSegmentImportJobsCommand {
-  def this(input: typings.awsSdkClientPinpointBrowser.typesGetSegmentImportJobsInputMod.GetSegmentImportJobsInput) = this()
+  def this(input: GetSegmentImportJobsInput) = this()
 }

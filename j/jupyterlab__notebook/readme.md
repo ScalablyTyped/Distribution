@@ -10,9 +10,9 @@ JupyterLab - Notebook
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/notebook |
 | Keywords           | - |
-| # releases         | 115 |
-| # dependents       | 253 |
-| # downloads        | 1564479 |
+| # releases         | 131 |
+| # dependents       | 271 |
+| # downloads        | 1697478 |
 | # stars            | 0 |
 
 ## Links

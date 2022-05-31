@@ -6,7 +6,6 @@ import typings.std.Float32Array
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hdrMod {
@@ -32,15 +31,12 @@ object hdrMod {
       * @param size The expected size of the extracted cubemap.
       * @return The Cube Map information.
       */
-    @JSImport("babylonjs/Misc/HighDynamicRange/hdr", "HDRTools.GetCubeMapTextureData")
-    @js.native
-    def GetCubeMapTextureData(buffer: ArrayBuffer, size: Double): CubeMapInfo = js.native
+    inline def GetCubeMapTextureData(buffer: ArrayBuffer, size: Double): CubeMapInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCubeMapTextureData")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[CubeMapInfo]
     
     @JSImport("babylonjs/Misc/HighDynamicRange/hdr", "HDRTools.Ldexp")
     @js.native
     def Ldexp: js.Any = js.native
-    @scala.inline
-    def Ldexp_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Ldexp")(x.asInstanceOf[js.Any])
+    inline def Ldexp_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Ldexp")(x.asInstanceOf[js.Any])
     
     /**
       * Reads header information from an RGBE texture stored in a native array.
@@ -50,9 +46,7 @@ object hdrMod {
       * @param uint8array The binary file stored in  native array.
       * @return The header information.
       */
-    @JSImport("babylonjs/Misc/HighDynamicRange/hdr", "HDRTools.RGBE_ReadHeader")
-    @js.native
-    def RGBE_ReadHeader(uint8array: Uint8Array): HDRInfo = js.native
+    inline def RGBE_ReadHeader(uint8array: Uint8Array): HDRInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("RGBE_ReadHeader")(uint8array.asInstanceOf[js.Any]).asInstanceOf[HDRInfo]
     
     /**
       * Returns the pixels data extracted from an RGBE texture.
@@ -65,72 +59,60 @@ object hdrMod {
       * @param hdrInfo The header information of the file.
       * @return The pixels data in RGB right to left up to down order.
       */
-    @JSImport("babylonjs/Misc/HighDynamicRange/hdr", "HDRTools.RGBE_ReadPixels")
-    @js.native
-    def RGBE_ReadPixels(uint8array: Uint8Array, hdrInfo: HDRInfo): Float32Array = js.native
+    inline def RGBE_ReadPixels(uint8array: Uint8Array, hdrInfo: HDRInfo): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("RGBE_ReadPixels")(uint8array.asInstanceOf[js.Any], hdrInfo.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
     
     @JSImport("babylonjs/Misc/HighDynamicRange/hdr", "HDRTools.RGBE_ReadPixels_NOT_RLE")
     @js.native
     def RGBE_ReadPixels_NOT_RLE: js.Any = js.native
-    @scala.inline
-    def RGBE_ReadPixels_NOT_RLE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RGBE_ReadPixels_NOT_RLE")(x.asInstanceOf[js.Any])
+    inline def RGBE_ReadPixels_NOT_RLE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RGBE_ReadPixels_NOT_RLE")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/HighDynamicRange/hdr", "HDRTools.RGBE_ReadPixels_RLE")
     @js.native
     def RGBE_ReadPixels_RLE: js.Any = js.native
-    @scala.inline
-    def RGBE_ReadPixels_RLE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RGBE_ReadPixels_RLE")(x.asInstanceOf[js.Any])
+    inline def RGBE_ReadPixels_RLE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RGBE_ReadPixels_RLE")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/HighDynamicRange/hdr", "HDRTools.Rgbe2float")
     @js.native
     def Rgbe2float: js.Any = js.native
-    @scala.inline
-    def Rgbe2float_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Rgbe2float")(x.asInstanceOf[js.Any])
+    inline def Rgbe2float_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Rgbe2float")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/HighDynamicRange/hdr", "HDRTools.readStringLine")
     @js.native
     def readStringLine: js.Any = js.native
-    @scala.inline
-    def readStringLine_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("readStringLine")(x.asInstanceOf[js.Any])
+    inline def readStringLine_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("readStringLine")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait HDRInfo extends StObject {
     
     /**
       * The index of the beginning of the data in the binary file.
       */
-    var dataPosition: Double = js.native
+    var dataPosition: Double
     
     /**
       * The height of the texture in pixels.
       */
-    var height: Double = js.native
+    var height: Double
     
     /**
       * The width of the texture in pixels.
       */
-    var width: Double = js.native
+    var width: Double
   }
   object HDRInfo {
     
-    @scala.inline
-    def apply(dataPosition: Double, height: Double, width: Double): HDRInfo = {
+    inline def apply(dataPosition: Double, height: Double, width: Double): HDRInfo = {
       val __obj = js.Dynamic.literal(dataPosition = dataPosition.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[HDRInfo]
     }
     
-    @scala.inline
-    implicit class HDRInfoMutableBuilder[Self <: HDRInfo] (val x: Self) extends AnyVal {
+    extension [Self <: HDRInfo](x: Self) {
       
-      @scala.inline
-      def setDataPosition(value: Double): Self = StObject.set(x, "dataPosition", value.asInstanceOf[js.Any])
+      inline def setDataPosition(value: Double): Self = StObject.set(x, "dataPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

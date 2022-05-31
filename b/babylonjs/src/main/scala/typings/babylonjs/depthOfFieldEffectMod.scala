@@ -9,7 +9,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object depthOfFieldEffectMod {
@@ -29,7 +28,7 @@ object depthOfFieldEffectMod {
     def this(
       scene: Scene,
       depthTexture: Nullable[RenderTargetTexture],
-      blurLevel: js.UndefOr[scala.Nothing],
+      blurLevel: Unit,
       pipelineTextureType: Double
     ) = this()
     def this(
@@ -41,22 +40,15 @@ object depthOfFieldEffectMod {
     def this(
       scene: Scene,
       depthTexture: Nullable[RenderTargetTexture],
-      blurLevel: js.UndefOr[scala.Nothing],
-      pipelineTextureType: js.UndefOr[scala.Nothing],
-      blockCompilation: Boolean
-    ) = this()
-    def this(
-      scene: Scene,
-      depthTexture: Nullable[RenderTargetTexture],
-      blurLevel: js.UndefOr[scala.Nothing],
+      blurLevel: Unit,
       pipelineTextureType: Double,
       blockCompilation: Boolean
     ) = this()
     def this(
       scene: Scene,
       depthTexture: Nullable[RenderTargetTexture],
-      blurLevel: DepthOfFieldEffectBlurLevel,
-      pipelineTextureType: js.UndefOr[scala.Nothing],
+      blurLevel: Unit,
+      pipelineTextureType: Unit,
       blockCompilation: Boolean
     ) = this()
     def this(
@@ -64,19 +56,26 @@ object depthOfFieldEffectMod {
       depthTexture: Nullable[RenderTargetTexture],
       blurLevel: DepthOfFieldEffectBlurLevel,
       pipelineTextureType: Double,
+      blockCompilation: Boolean
+    ) = this()
+    def this(
+      scene: Scene,
+      depthTexture: Nullable[RenderTargetTexture],
+      blurLevel: DepthOfFieldEffectBlurLevel,
+      pipelineTextureType: Unit,
       blockCompilation: Boolean
     ) = this()
     
-    var _circleOfConfusion: js.Any = js.native
+    /* private */ var _circleOfConfusion: js.Any = js.native
     
     /**
       * @hidden Internal, blurs from high to low
       */
     var _depthOfFieldBlurX: js.Array[DepthOfFieldBlurPostProcess] = js.native
     
-    var _depthOfFieldBlurY: js.Any = js.native
+    /* private */ var _depthOfFieldBlurY: js.Any = js.native
     
-    var _dofMerge: js.Any = js.native
+    /* private */ var _dofMerge: js.Any = js.native
     
     /**
       * @hidden Internal post processes in depth of field effect
@@ -144,27 +143,33 @@ object depthOfFieldEffectMod {
   object DepthOfFieldEffectBlurLevel extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[DepthOfFieldEffectBlurLevel with Double] = js.native
+    def apply(value: Double): js.UndefOr[DepthOfFieldEffectBlurLevel & Double] = js.native
     
     /**
       * Large blur
       */
     @js.native
-    sealed trait High extends DepthOfFieldEffectBlurLevel
-    /* 2 */ val High: typings.babylonjs.depthOfFieldEffectMod.DepthOfFieldEffectBlurLevel.High with Double = js.native
+    sealed trait High
+      extends StObject
+         with DepthOfFieldEffectBlurLevel
+    /* 2 */ val High: typings.babylonjs.depthOfFieldEffectMod.DepthOfFieldEffectBlurLevel.High & Double = js.native
     
     /**
       * Subtle blur
       */
     @js.native
-    sealed trait Low extends DepthOfFieldEffectBlurLevel
-    /* 0 */ val Low: typings.babylonjs.depthOfFieldEffectMod.DepthOfFieldEffectBlurLevel.Low with Double = js.native
+    sealed trait Low
+      extends StObject
+         with DepthOfFieldEffectBlurLevel
+    /* 0 */ val Low: typings.babylonjs.depthOfFieldEffectMod.DepthOfFieldEffectBlurLevel.Low & Double = js.native
     
     /**
       * Medium blur
       */
     @js.native
-    sealed trait Medium extends DepthOfFieldEffectBlurLevel
-    /* 1 */ val Medium: typings.babylonjs.depthOfFieldEffectMod.DepthOfFieldEffectBlurLevel.Medium with Double = js.native
+    sealed trait Medium
+      extends StObject
+         with DepthOfFieldEffectBlurLevel
+    /* 1 */ val Medium: typings.babylonjs.depthOfFieldEffectMod.DepthOfFieldEffectBlurLevel.Medium & Double = js.native
   }
 }

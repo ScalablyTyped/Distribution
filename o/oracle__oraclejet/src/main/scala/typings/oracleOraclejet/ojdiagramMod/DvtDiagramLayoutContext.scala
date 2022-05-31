@@ -3,42 +3,39 @@ package typings.oracleOraclejet.ojdiagramMod
 import typings.oracleOraclejet.anon.H
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DvtDiagramLayoutContext extends StObject {
   
-  def getCommonContainer(nodeId1: js.Any, nodeId2: js.Any): js.Any = js.native
+  def getCommonContainer(nodeId1: js.Any, nodeId2: js.Any): js.Any
   
-  def getComponentSize(): H = js.native
+  def getComponentSize(): H
   
-  def getCurrentViewport(): H = js.native
+  def getCurrentViewport(): H
   
-  def getEventData(): js.Object = js.native
+  def getEventData(): js.Object
   
-  def getLinkById(id: js.Any): DvtDiagramLayoutContextLink = js.native
+  def getLinkById(id: js.Any): DvtDiagramLayoutContextLink
   
-  def getLinkByIndex(index: Double): DvtDiagramLayoutContextLink = js.native
+  def getLinkByIndex(index: Double): DvtDiagramLayoutContextLink
   
-  def getLinkCount(): Double = js.native
+  def getLinkCount(): Double
   
-  def getNodeById(id: js.Any): DvtDiagramLayoutContextNode = js.native
+  def getNodeById(id: js.Any): DvtDiagramLayoutContextNode
   
-  def getNodeByIndex(index: Double): DvtDiagramLayoutContextNode = js.native
+  def getNodeByIndex(index: Double): DvtDiagramLayoutContextNode
   
-  def getNodeCount(): Double = js.native
+  def getNodeCount(): Double
   
-  def getViewport(): H = js.native
+  def getViewport(): H
   
-  def isLocaleR2L(): Boolean = js.native
+  def isLocaleR2L(): Boolean
   
-  def setViewport(viewport: H): Unit = js.native
+  def setViewport(viewport: H): Unit
 }
 object DvtDiagramLayoutContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCommonContainer: (js.Any, js.Any) => js.Any,
     getComponentSize: () => H,
     getCurrentViewport: () => H,
@@ -57,46 +54,32 @@ object DvtDiagramLayoutContext {
     __obj.asInstanceOf[DvtDiagramLayoutContext]
   }
   
-  @scala.inline
-  implicit class DvtDiagramLayoutContextMutableBuilder[Self <: DvtDiagramLayoutContext] (val x: Self) extends AnyVal {
+  extension [Self <: DvtDiagramLayoutContext](x: Self) {
     
-    @scala.inline
-    def setGetCommonContainer(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "getCommonContainer", js.Any.fromFunction2(value))
+    inline def setGetCommonContainer(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "getCommonContainer", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetComponentSize(value: () => H): Self = StObject.set(x, "getComponentSize", js.Any.fromFunction0(value))
+    inline def setGetComponentSize(value: () => H): Self = StObject.set(x, "getComponentSize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCurrentViewport(value: () => H): Self = StObject.set(x, "getCurrentViewport", js.Any.fromFunction0(value))
+    inline def setGetCurrentViewport(value: () => H): Self = StObject.set(x, "getCurrentViewport", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEventData(value: () => js.Object): Self = StObject.set(x, "getEventData", js.Any.fromFunction0(value))
+    inline def setGetEventData(value: () => js.Object): Self = StObject.set(x, "getEventData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLinkById(value: js.Any => DvtDiagramLayoutContextLink): Self = StObject.set(x, "getLinkById", js.Any.fromFunction1(value))
+    inline def setGetLinkById(value: js.Any => DvtDiagramLayoutContextLink): Self = StObject.set(x, "getLinkById", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetLinkByIndex(value: Double => DvtDiagramLayoutContextLink): Self = StObject.set(x, "getLinkByIndex", js.Any.fromFunction1(value))
+    inline def setGetLinkByIndex(value: Double => DvtDiagramLayoutContextLink): Self = StObject.set(x, "getLinkByIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetLinkCount(value: () => Double): Self = StObject.set(x, "getLinkCount", js.Any.fromFunction0(value))
+    inline def setGetLinkCount(value: () => Double): Self = StObject.set(x, "getLinkCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNodeById(value: js.Any => DvtDiagramLayoutContextNode): Self = StObject.set(x, "getNodeById", js.Any.fromFunction1(value))
+    inline def setGetNodeById(value: js.Any => DvtDiagramLayoutContextNode): Self = StObject.set(x, "getNodeById", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNodeByIndex(value: Double => DvtDiagramLayoutContextNode): Self = StObject.set(x, "getNodeByIndex", js.Any.fromFunction1(value))
+    inline def setGetNodeByIndex(value: Double => DvtDiagramLayoutContextNode): Self = StObject.set(x, "getNodeByIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNodeCount(value: () => Double): Self = StObject.set(x, "getNodeCount", js.Any.fromFunction0(value))
+    inline def setGetNodeCount(value: () => Double): Self = StObject.set(x, "getNodeCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetViewport(value: () => H): Self = StObject.set(x, "getViewport", js.Any.fromFunction0(value))
+    inline def setGetViewport(value: () => H): Self = StObject.set(x, "getViewport", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsLocaleR2L(value: () => Boolean): Self = StObject.set(x, "isLocaleR2L", js.Any.fromFunction0(value))
+    inline def setIsLocaleR2L(value: () => Boolean): Self = StObject.set(x, "isLocaleR2L", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetViewport(value: H => Unit): Self = StObject.set(x, "setViewport", js.Any.fromFunction1(value))
+    inline def setSetViewport(value: H => Unit): Self = StObject.set(x, "setViewport", js.Any.fromFunction1(value))
   }
 }

@@ -4,19 +4,16 @@ import typings.oracleOraclejet.anon.Threshold
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ojswipetorevealMod {
   
-  @JSImport("@oracle/oraclejet/ojswipetoreveal", "setupSwipeActions")
+  @JSImport("@oracle/oraclejet/ojswipetoreveal", JSImport.Namespace)
   @js.native
-  def setupSwipeActions(elem: Element): Unit = js.native
-  @JSImport("@oracle/oraclejet/ojswipetoreveal", "setupSwipeActions")
-  @js.native
-  def setupSwipeActions(elem: Element, options: Threshold): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@oracle/oraclejet/ojswipetoreveal", "tearDownSwipeActions")
-  @js.native
-  def tearDownSwipeActions(elem: Element): Unit = js.native
+  inline def setupSwipeActions(elem: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setupSwipeActions")(elem.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setupSwipeActions(elem: Element, options: Threshold): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setupSwipeActions")(elem.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def tearDownSwipeActions(elem: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("tearDownSwipeActions")(elem.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

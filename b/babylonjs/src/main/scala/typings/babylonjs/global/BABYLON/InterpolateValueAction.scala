@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.InterpolateValueAction")
 @js.native
 class InterpolateValueAction protected ()
-  extends typings.babylonjs.BABYLON.InterpolateValueAction {
+  extends StObject
+     with typings.babylonjs.BABYLON.InterpolateValueAction {
   /**
     * Instantiate the action
     * @param triggerOptions defines the trigger options
@@ -27,14 +27,6 @@ class InterpolateValueAction protected ()
     target: js.Any,
     propertyPath: String,
     value: js.Any,
-    duration: js.UndefOr[scala.Nothing],
-    condition: typings.babylonjs.BABYLON.Condition
-  ) = this()
-  def this(
-    triggerOptions: js.Any,
-    target: js.Any,
-    propertyPath: String,
-    value: js.Any,
     duration: Double,
     condition: typings.babylonjs.BABYLON.Condition
   ) = this()
@@ -43,18 +35,8 @@ class InterpolateValueAction protected ()
     target: js.Any,
     propertyPath: String,
     value: js.Any,
-    duration: js.UndefOr[scala.Nothing],
-    condition: js.UndefOr[scala.Nothing],
-    stopOtherAnimations: Boolean
-  ) = this()
-  def this(
-    triggerOptions: js.Any,
-    target: js.Any,
-    propertyPath: String,
-    value: js.Any,
-    duration: js.UndefOr[scala.Nothing],
-    condition: typings.babylonjs.BABYLON.Condition,
-    stopOtherAnimations: Boolean
+    duration: Unit,
+    condition: typings.babylonjs.BABYLON.Condition
   ) = this()
   def this(
     triggerOptions: js.Any,
@@ -62,7 +44,7 @@ class InterpolateValueAction protected ()
     propertyPath: String,
     value: js.Any,
     duration: Double,
-    condition: js.UndefOr[scala.Nothing],
+    condition: Unit,
     stopOtherAnimations: Boolean
   ) = this()
   def this(
@@ -79,38 +61,26 @@ class InterpolateValueAction protected ()
     target: js.Any,
     propertyPath: String,
     value: js.Any,
-    duration: js.UndefOr[scala.Nothing],
-    condition: js.UndefOr[scala.Nothing],
-    stopOtherAnimations: js.UndefOr[scala.Nothing],
-    onInterpolationDone: js.Function0[Unit]
+    duration: Unit,
+    condition: Unit,
+    stopOtherAnimations: Boolean
   ) = this()
   def this(
     triggerOptions: js.Any,
     target: js.Any,
     propertyPath: String,
     value: js.Any,
-    duration: js.UndefOr[scala.Nothing],
-    condition: js.UndefOr[scala.Nothing],
-    stopOtherAnimations: Boolean,
-    onInterpolationDone: js.Function0[Unit]
-  ) = this()
-  def this(
-    triggerOptions: js.Any,
-    target: js.Any,
-    propertyPath: String,
-    value: js.Any,
-    duration: js.UndefOr[scala.Nothing],
+    duration: Unit,
     condition: typings.babylonjs.BABYLON.Condition,
-    stopOtherAnimations: js.UndefOr[scala.Nothing],
-    onInterpolationDone: js.Function0[Unit]
+    stopOtherAnimations: Boolean
   ) = this()
   def this(
     triggerOptions: js.Any,
     target: js.Any,
     propertyPath: String,
     value: js.Any,
-    duration: js.UndefOr[scala.Nothing],
-    condition: typings.babylonjs.BABYLON.Condition,
+    duration: Double,
+    condition: Unit,
     stopOtherAnimations: Boolean,
     onInterpolationDone: js.Function0[Unit]
   ) = this()
@@ -120,28 +90,8 @@ class InterpolateValueAction protected ()
     propertyPath: String,
     value: js.Any,
     duration: Double,
-    condition: js.UndefOr[scala.Nothing],
-    stopOtherAnimations: js.UndefOr[scala.Nothing],
-    onInterpolationDone: js.Function0[Unit]
-  ) = this()
-  def this(
-    triggerOptions: js.Any,
-    target: js.Any,
-    propertyPath: String,
-    value: js.Any,
-    duration: Double,
-    condition: js.UndefOr[scala.Nothing],
-    stopOtherAnimations: Boolean,
-    onInterpolationDone: js.Function0[Unit]
-  ) = this()
-  def this(
-    triggerOptions: js.Any,
-    target: js.Any,
-    propertyPath: String,
-    value: js.Any,
-    duration: Double,
-    condition: typings.babylonjs.BABYLON.Condition,
-    stopOtherAnimations: js.UndefOr[scala.Nothing],
+    condition: Unit,
+    stopOtherAnimations: Unit,
     onInterpolationDone: js.Function0[Unit]
   ) = this()
   def this(
@@ -152,6 +102,56 @@ class InterpolateValueAction protected ()
     duration: Double,
     condition: typings.babylonjs.BABYLON.Condition,
     stopOtherAnimations: Boolean,
+    onInterpolationDone: js.Function0[Unit]
+  ) = this()
+  def this(
+    triggerOptions: js.Any,
+    target: js.Any,
+    propertyPath: String,
+    value: js.Any,
+    duration: Double,
+    condition: typings.babylonjs.BABYLON.Condition,
+    stopOtherAnimations: Unit,
+    onInterpolationDone: js.Function0[Unit]
+  ) = this()
+  def this(
+    triggerOptions: js.Any,
+    target: js.Any,
+    propertyPath: String,
+    value: js.Any,
+    duration: Unit,
+    condition: Unit,
+    stopOtherAnimations: Boolean,
+    onInterpolationDone: js.Function0[Unit]
+  ) = this()
+  def this(
+    triggerOptions: js.Any,
+    target: js.Any,
+    propertyPath: String,
+    value: js.Any,
+    duration: Unit,
+    condition: Unit,
+    stopOtherAnimations: Unit,
+    onInterpolationDone: js.Function0[Unit]
+  ) = this()
+  def this(
+    triggerOptions: js.Any,
+    target: js.Any,
+    propertyPath: String,
+    value: js.Any,
+    duration: Unit,
+    condition: typings.babylonjs.BABYLON.Condition,
+    stopOtherAnimations: Boolean,
+    onInterpolationDone: js.Function0[Unit]
+  ) = this()
+  def this(
+    triggerOptions: js.Any,
+    target: js.Any,
+    propertyPath: String,
+    value: js.Any,
+    duration: Unit,
+    condition: typings.babylonjs.BABYLON.Condition,
+    stopOtherAnimations: Unit,
     onInterpolationDone: js.Function0[Unit]
   ) = this()
 }

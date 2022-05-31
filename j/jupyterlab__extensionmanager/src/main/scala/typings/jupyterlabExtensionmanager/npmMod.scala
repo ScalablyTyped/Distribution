@@ -7,10 +7,13 @@ import typings.jupyterlabExtensionmanager.anon.Flags
 import typings.jupyterlabExtensionmanager.companionsMod.IJupyterLabPackageData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object npmMod {
+  
+  @JSImport("@jupyterlab/extensionmanager/lib/npm", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@jupyterlab/extensionmanager/lib/npm", "Searcher")
   @js.native
@@ -22,8 +25,8 @@ object npmMod {
     */
   class Searcher () extends StObject {
     def this(repoUri: String) = this()
-    def this(repoUri: js.UndefOr[scala.Nothing], cdnUri: String) = this()
     def this(repoUri: String, cdnUri: String) = this()
+    def this(repoUri: Unit, cdnUri: String) = this()
     
     /**
       * The URI of the CDN to use for fetching full package data.
@@ -51,47 +54,43 @@ object npmMod {
       * @param pageination The pagination size to use. See registry API documentation for acceptable values.
       */
     def searchExtensions(query: String): js.Promise[ISearchResult] = js.native
-    def searchExtensions(query: String, page: js.UndefOr[scala.Nothing], pageination: Double): js.Promise[ISearchResult] = js.native
     def searchExtensions(query: String, page: Double): js.Promise[ISearchResult] = js.native
     def searchExtensions(query: String, page: Double, pageination: Double): js.Promise[ISearchResult] = js.native
+    def searchExtensions(query: String, page: Unit, pageination: Double): js.Promise[ISearchResult] = js.native
   }
   
-  @JSImport("@jupyterlab/extensionmanager/lib/npm", "isJupyterOrg")
-  @js.native
-  def isJupyterOrg(name: String): Boolean = js.native
+  inline def isJupyterOrg(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJupyterOrg")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @js.native
   trait IPackageMetadata extends StObject {
     
     /**
       * A short description of the package.
       */
-    var description: String = js.native
+    var description: String
     
     /**
       * A mapping of dist tags to the versions they point to.
       */
-    var `dist-tags`: Dictkey = js.native
+    var `dist-tags`: Dictkey
     
     /**
       * ISO string of the last time this package was modified.
       */
-    var modified: String = js.native
+    var modified: String
     
     /**
       * The package name.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * A mapping of semver-compliant version numbers to version data.
       */
-    var versions: StringDictionary[Deprecated] = js.native
+    var versions: StringDictionary[Deprecated]
   }
   object IPackageMetadata {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       description: String,
       `dist-tags`: Dictkey,
       modified: String,
@@ -103,70 +102,58 @@ object npmMod {
       __obj.asInstanceOf[IPackageMetadata]
     }
     
-    @scala.inline
-    implicit class IPackageMetadataMutableBuilder[Self <: IPackageMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: IPackageMetadata](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDist-tags`(value: Dictkey): Self = StObject.set(x, "dist-tags", value.asInstanceOf[js.Any])
+      inline def `setDist-tags`(value: Dictkey): Self = StObject.set(x, "dist-tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModified(value: String): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+      inline def setModified(value: String): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersions(value: StringDictionary[Deprecated]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
+      inline def setVersions(value: StringDictionary[Deprecated]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait IPerson extends StObject {
     
     /**
       * The email of the person.
       */
-    var email: String = js.native
+    var email: String
     
     /**
       * The username of the person.
       */
-    var username: String = js.native
+    var username: String
   }
   object IPerson {
     
-    @scala.inline
-    def apply(email: String, username: String): IPerson = {
+    inline def apply(email: String, username: String): IPerson = {
       val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPerson]
     }
     
-    @scala.inline
-    implicit class IPersonMutableBuilder[Self <: IPerson] (val x: Self) extends AnyVal {
+    extension [Self <: IPerson](x: Self) {
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait ISearchResult extends StObject {
     
     /**
       * A collection of search results.
       */
-    var objects: js.Array[Flags] = js.native
+    var objects: js.Array[Flags]
     
     /**
       * Timestamp of the search result creation.
       */
-    var time: String = js.native
+    var time: String
     
     /**
       * The total number of objects found by the search.
@@ -174,30 +161,24 @@ object npmMod {
       * This can be greater than the number of objects due
       * to pagination of the search results.
       */
-    var total: Double = js.native
+    var total: Double
   }
   object ISearchResult {
     
-    @scala.inline
-    def apply(objects: js.Array[Flags], time: String, total: Double): ISearchResult = {
+    inline def apply(objects: js.Array[Flags], time: String, total: Double): ISearchResult = {
       val __obj = js.Dynamic.literal(objects = objects.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISearchResult]
     }
     
-    @scala.inline
-    implicit class ISearchResultMutableBuilder[Self <: ISearchResult] (val x: Self) extends AnyVal {
+    extension [Self <: ISearchResult](x: Self) {
       
-      @scala.inline
-      def setObjects(value: js.Array[Flags]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+      inline def setObjects(value: js.Array[Flags]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectsVarargs(value: Flags*): Self = StObject.set(x, "objects", js.Array(value :_*))
+      inline def setObjectsVarargs(value: Flags*): Self = StObject.set(x, "objects", js.Array(value :_*))
       
-      @scala.inline
-      def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
 }

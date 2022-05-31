@@ -4,13 +4,13 @@ import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.BABYLON.PostProcessOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.BlackAndWhitePostProcess")
 @js.native
 class BlackAndWhitePostProcess protected ()
-  extends typings.babylonjs.BABYLON.BlackAndWhitePostProcess {
+  extends StObject
+     with typings.babylonjs.BABYLON.BlackAndWhitePostProcess {
   /**
     * Creates a black and white post process
     * @see https://doc.babylonjs.com/how_to/how_to_use_postprocesses#black-and-white
@@ -34,21 +34,14 @@ class BlackAndWhitePostProcess protected ()
     name: String,
     options: Double,
     camera: typings.babylonjs.BABYLON.Camera,
-    samplingMode: js.UndefOr[scala.Nothing],
+    samplingMode: Double,
     engine: typings.babylonjs.BABYLON.Engine
   ) = this()
   def this(
     name: String,
     options: Double,
     camera: typings.babylonjs.BABYLON.Camera,
-    samplingMode: Double,
-    engine: typings.babylonjs.BABYLON.Engine
-  ) = this()
-  def this(
-    name: String,
-    options: PostProcessOptions,
-    camera: typings.babylonjs.BABYLON.Camera,
-    samplingMode: js.UndefOr[scala.Nothing],
+    samplingMode: Unit,
     engine: typings.babylonjs.BABYLON.Engine
   ) = this()
   def this(
@@ -60,26 +53,17 @@ class BlackAndWhitePostProcess protected ()
   ) = this()
   def this(
     name: String,
-    options: Double,
+    options: PostProcessOptions,
     camera: typings.babylonjs.BABYLON.Camera,
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: js.UndefOr[scala.Nothing],
-    reusable: Boolean
-  ) = this()
-  def this(
-    name: String,
-    options: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: typings.babylonjs.BABYLON.Engine,
-    reusable: Boolean
+    samplingMode: Unit,
+    engine: typings.babylonjs.BABYLON.Engine
   ) = this()
   def this(
     name: String,
     options: Double,
     camera: typings.babylonjs.BABYLON.Camera,
     samplingMode: Double,
-    engine: js.UndefOr[scala.Nothing],
+    engine: Unit,
     reusable: Boolean
   ) = this()
   def this(
@@ -92,17 +76,17 @@ class BlackAndWhitePostProcess protected ()
   ) = this()
   def this(
     name: String,
-    options: PostProcessOptions,
+    options: Double,
     camera: typings.babylonjs.BABYLON.Camera,
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: js.UndefOr[scala.Nothing],
+    samplingMode: Unit,
+    engine: Unit,
     reusable: Boolean
   ) = this()
   def this(
     name: String,
-    options: PostProcessOptions,
+    options: Double,
     camera: typings.babylonjs.BABYLON.Camera,
-    samplingMode: js.UndefOr[scala.Nothing],
+    samplingMode: Unit,
     engine: typings.babylonjs.BABYLON.Engine,
     reusable: Boolean
   ) = this()
@@ -111,7 +95,7 @@ class BlackAndWhitePostProcess protected ()
     options: PostProcessOptions,
     camera: typings.babylonjs.BABYLON.Camera,
     samplingMode: Double,
-    engine: js.UndefOr[scala.Nothing],
+    engine: Unit,
     reusable: Boolean
   ) = this()
   def this(
@@ -119,6 +103,22 @@ class BlackAndWhitePostProcess protected ()
     options: PostProcessOptions,
     camera: typings.babylonjs.BABYLON.Camera,
     samplingMode: Double,
+    engine: typings.babylonjs.BABYLON.Engine,
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    options: PostProcessOptions,
+    camera: typings.babylonjs.BABYLON.Camera,
+    samplingMode: Unit,
+    engine: Unit,
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    options: PostProcessOptions,
+    camera: typings.babylonjs.BABYLON.Camera,
+    samplingMode: Unit,
     engine: typings.babylonjs.BABYLON.Engine,
     reusable: Boolean
   ) = this()
@@ -126,13 +126,15 @@ class BlackAndWhitePostProcess protected ()
 /* static members */
 object BlackAndWhitePostProcess {
   
-  /** @hidden */
-  @JSGlobal("BABYLON.BlackAndWhitePostProcess._Parse")
+  @JSGlobal("BABYLON.BlackAndWhitePostProcess")
   @js.native
-  def _Parse(
+  val ^ : js.Any = js.native
+  
+  /** @hidden */
+  inline def _Parse(
     parsedPostProcess: js.Any,
     targetCamera: typings.babylonjs.BABYLON.Camera,
     scene: typings.babylonjs.BABYLON.Scene,
     rootUrl: String
-  ): Nullable[typings.babylonjs.BABYLON.BlackAndWhitePostProcess] = js.native
+  ): Nullable[typings.babylonjs.BABYLON.BlackAndWhitePostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.BlackAndWhitePostProcess]]
 }

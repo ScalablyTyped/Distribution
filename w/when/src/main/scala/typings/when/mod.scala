@@ -380,7 +380,4 @@ object mod {
     handler: js.Function1[/* value */ T, Promise[js.Any] | Unit],
     seed: Promise[U]
   ): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("unfold")(unspool.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
-  
-  // Helper interfaces
-  object _underscore
 }

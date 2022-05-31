@@ -1,5 +1,6 @@
 package typings.awsSdkClientPinpointBrowser.mod
 
+import typings.awsSdkClientPinpointBrowser.typesGetChannelsInputMod.GetChannelsInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class GetChannelsCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.getChannelsCommandMod.GetChannelsCommand {
-  def this(input: typings.awsSdkClientPinpointBrowser.typesGetChannelsInputMod.GetChannelsInput) = this()
+  def this(input: GetChannelsInput) = this()
 }

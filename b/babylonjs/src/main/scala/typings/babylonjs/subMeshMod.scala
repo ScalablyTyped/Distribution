@@ -22,14 +22,15 @@ import typings.babylonjs.typesMod.IndicesArray
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subMeshMod {
   
   @JSImport("babylonjs/Meshes/subMesh", "SubMesh")
   @js.native
-  class SubMesh protected () extends ICullable {
+  class SubMesh protected ()
+    extends StObject
+       with ICullable {
     /**
       * Creates a new submesh
       * @param materialIndex defines the material index to use
@@ -81,7 +82,7 @@ object subMeshMod {
       /** indices count */
     indexCount: Double,
       mesh: AbstractMesh,
-      renderingMesh: js.UndefOr[scala.Nothing],
+      renderingMesh: Unit,
       createBoundingBox: Boolean
     ) = this()
     def this(
@@ -111,23 +112,7 @@ object subMeshMod {
       /** indices count */
     indexCount: Double,
       mesh: AbstractMesh,
-      renderingMesh: js.UndefOr[scala.Nothing],
-      createBoundingBox: js.UndefOr[scala.Nothing],
-      addToMesh: Boolean
-    ) = this()
-    def this(
-      /** the material index to use */
-    materialIndex: Double,
-      /** vertex index start */
-    verticesStart: Double,
-      /** vertices count */
-    verticesCount: Double,
-      /** index start */
-    indexStart: Double,
-      /** indices count */
-    indexCount: Double,
-      mesh: AbstractMesh,
-      renderingMesh: js.UndefOr[scala.Nothing],
+      renderingMesh: Unit,
       createBoundingBox: Boolean,
       addToMesh: Boolean
     ) = this()
@@ -143,8 +128,8 @@ object subMeshMod {
       /** indices count */
     indexCount: Double,
       mesh: AbstractMesh,
-      renderingMesh: Mesh,
-      createBoundingBox: js.UndefOr[scala.Nothing],
+      renderingMesh: Unit,
+      createBoundingBox: Unit,
       addToMesh: Boolean
     ) = this()
     def this(
@@ -161,6 +146,22 @@ object subMeshMod {
       mesh: AbstractMesh,
       renderingMesh: Mesh,
       createBoundingBox: Boolean,
+      addToMesh: Boolean
+    ) = this()
+    def this(
+      /** the material index to use */
+    materialIndex: Double,
+      /** vertex index start */
+    verticesStart: Double,
+      /** vertices count */
+    verticesCount: Double,
+      /** index start */
+    indexStart: Double,
+      /** indices count */
+    indexCount: Double,
+      mesh: AbstractMesh,
+      renderingMesh: Mesh,
+      createBoundingBox: Unit,
       addToMesh: Boolean
     ) = this()
     
@@ -170,17 +171,17 @@ object subMeshMod {
       */
     def IsGlobal: Boolean = js.native
     
-    var _IsMultiMaterial: js.Any = js.native
+    /* private */ var _IsMultiMaterial: js.Any = js.native
     
     /** @hidden */
     var _alphaIndex: Double = js.native
     
-    var _boundingInfo: js.Any = js.native
+    /* private */ var _boundingInfo: js.Any = js.native
     
     /** @hidden */
     def _checkCollision(collider: Collider): Boolean = js.native
     
-    var _currentMaterial: js.Any = js.native
+    /* private */ var _currentMaterial: js.Any = js.native
     
     /** @hidden */
     var _distanceToCamera: Double = js.native
@@ -197,16 +198,16 @@ object subMeshMod {
     var _id: Double = js.native
     
     /** @hidden */
-    var _intersectLines: js.Any = js.native
+    /* private */ var _intersectLines: js.Any = js.native
     
     /** @hidden */
-    var _intersectTriangles: js.Any = js.native
+    /* private */ var _intersectTriangles: js.Any = js.native
     
     /** @hidden */
-    var _intersectUnIndexedLines: js.Any = js.native
+    /* private */ var _intersectUnIndexedLines: js.Any = js.native
     
     /** @hidden */
-    var _intersectUnIndexedTriangles: js.Any = js.native
+    /* private */ var _intersectUnIndexedTriangles: js.Any = js.native
     
     /** @hidden */
     var _lastColliderTransformMatrix: Nullable[Matrix] = js.native
@@ -214,7 +215,7 @@ object subMeshMod {
     /** @hidden */
     var _lastColliderWorldVertices: Nullable[js.Array[Vector3]] = js.native
     
-    var _linesIndexBuffer: js.Any = js.native
+    /* private */ var _linesIndexBuffer: js.Any = js.native
     
     /** @hidden */
     var _linesIndexCount: Double = js.native
@@ -225,7 +226,7 @@ object subMeshMod {
     /** @hidden */
     var _materialEffect: Nullable[Effect] = js.native
     
-    var _mesh: js.Any = js.native
+    /* private */ var _mesh: js.Any = js.native
     
     /** @hidden */
     def _rebuild(): Unit = js.native
@@ -233,7 +234,7 @@ object subMeshMod {
     /** @hidden */
     var _renderId: Double = js.native
     
-    var _renderingMesh: js.Any = js.native
+    /* private */ var _renderingMesh: js.Any = js.native
     
     /** @hidden */
     var _trianglePlanes: js.Array[Plane] = js.native
@@ -322,13 +323,6 @@ object subMeshMod {
       * @returns intersection info or null if no intersection
       */
     def intersects(ray: Ray, positions: js.Array[Vector3], indices: IndicesArray): Nullable[IntersectionInfo] = js.native
-    def intersects(
-      ray: Ray,
-      positions: js.Array[Vector3],
-      indices: IndicesArray,
-      fastCheck: js.UndefOr[scala.Nothing],
-      trianglePredicate: TrianglePickingPredicate
-    ): Nullable[IntersectionInfo] = js.native
     def intersects(ray: Ray, positions: js.Array[Vector3], indices: IndicesArray, fastCheck: Boolean): Nullable[IntersectionInfo] = js.native
     def intersects(
       ray: Ray,
@@ -337,6 +331,30 @@ object subMeshMod {
       fastCheck: Boolean,
       trianglePredicate: TrianglePickingPredicate
     ): Nullable[IntersectionInfo] = js.native
+    def intersects(
+      ray: Ray,
+      positions: js.Array[Vector3],
+      indices: IndicesArray,
+      fastCheck: Unit,
+      trianglePredicate: TrianglePickingPredicate
+    ): Nullable[IntersectionInfo] = js.native
+    
+    /**
+      * Checks if a cullable object (mesh...) is in the camera frustum
+      * Unlike isInFrustum this cheks the full bounding box
+      * @param frustumPlanes Camera near/planes
+      * @returns true if the object is in frustum otherwise false
+      */
+    /* CompleteClass */
+    override def isCompletelyInFrustum(frustumPlanes: js.Array[Plane]): Boolean = js.native
+    
+    /**
+      * Checks if the object or part of the object is in the frustum
+      * @param frustumPlanes Camera near/planes
+      * @returns true if the object is in frustum otherwise false
+      */
+    /* CompleteClass */
+    override def isInFrustum(frustumPlanes: js.Array[Plane]): Boolean = js.native
     
     /**
       * Gets material defines used by the effect associated to the sub mesh
@@ -396,6 +414,10 @@ object subMeshMod {
   /* static members */
   object SubMesh {
     
+    @JSImport("babylonjs/Meshes/subMesh", "SubMesh")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Add a new submesh to a mesh
       * @param materialIndex defines the material index to use
@@ -408,31 +430,25 @@ object subMeshMod {
       * @param createBoundingBox defines if bounding box should be created for this submesh
       * @returns the new submesh
       */
-    @JSImport("babylonjs/Meshes/subMesh", "SubMesh.AddToMesh")
-    @js.native
-    def AddToMesh(
+    inline def AddToMesh(
       materialIndex: Double,
       verticesStart: Double,
       verticesCount: Double,
       indexStart: Double,
       indexCount: Double,
       mesh: AbstractMesh
-    ): SubMesh = js.native
-    @JSImport("babylonjs/Meshes/subMesh", "SubMesh.AddToMesh")
-    @js.native
-    def AddToMesh(
+    ): SubMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("AddToMesh")(materialIndex.asInstanceOf[js.Any], verticesStart.asInstanceOf[js.Any], verticesCount.asInstanceOf[js.Any], indexStart.asInstanceOf[js.Any], indexCount.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any])).asInstanceOf[SubMesh]
+    inline def AddToMesh(
       materialIndex: Double,
       verticesStart: Double,
       verticesCount: Double,
       indexStart: Double,
       indexCount: Double,
       mesh: AbstractMesh,
-      renderingMesh: js.UndefOr[scala.Nothing],
+      renderingMesh: Unit,
       createBoundingBox: Boolean
-    ): SubMesh = js.native
-    @JSImport("babylonjs/Meshes/subMesh", "SubMesh.AddToMesh")
-    @js.native
-    def AddToMesh(
+    ): SubMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("AddToMesh")(materialIndex.asInstanceOf[js.Any], verticesStart.asInstanceOf[js.Any], verticesCount.asInstanceOf[js.Any], indexStart.asInstanceOf[js.Any], indexCount.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any], renderingMesh.asInstanceOf[js.Any], createBoundingBox.asInstanceOf[js.Any])).asInstanceOf[SubMesh]
+    inline def AddToMesh(
       materialIndex: Double,
       verticesStart: Double,
       verticesCount: Double,
@@ -440,10 +456,8 @@ object subMeshMod {
       indexCount: Double,
       mesh: AbstractMesh,
       renderingMesh: Mesh
-    ): SubMesh = js.native
-    @JSImport("babylonjs/Meshes/subMesh", "SubMesh.AddToMesh")
-    @js.native
-    def AddToMesh(
+    ): SubMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("AddToMesh")(materialIndex.asInstanceOf[js.Any], verticesStart.asInstanceOf[js.Any], verticesCount.asInstanceOf[js.Any], indexStart.asInstanceOf[js.Any], indexCount.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any], renderingMesh.asInstanceOf[js.Any])).asInstanceOf[SubMesh]
+    inline def AddToMesh(
       materialIndex: Double,
       verticesStart: Double,
       verticesCount: Double,
@@ -452,7 +466,7 @@ object subMeshMod {
       mesh: AbstractMesh,
       renderingMesh: Mesh,
       createBoundingBox: Boolean
-    ): SubMesh = js.native
+    ): SubMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("AddToMesh")(materialIndex.asInstanceOf[js.Any], verticesStart.asInstanceOf[js.Any], verticesCount.asInstanceOf[js.Any], indexStart.asInstanceOf[js.Any], indexCount.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any], renderingMesh.asInstanceOf[js.Any], createBoundingBox.asInstanceOf[js.Any])).asInstanceOf[SubMesh]
     
     /**
       * Creates a new submesh from indices data
@@ -463,17 +477,13 @@ object subMeshMod {
       * @param renderingMesh the optional rendering mesh
       * @returns a new submesh
       */
-    @JSImport("babylonjs/Meshes/subMesh", "SubMesh.CreateFromIndices")
-    @js.native
-    def CreateFromIndices(materialIndex: Double, startIndex: Double, indexCount: Double, mesh: AbstractMesh): SubMesh = js.native
-    @JSImport("babylonjs/Meshes/subMesh", "SubMesh.CreateFromIndices")
-    @js.native
-    def CreateFromIndices(
+    inline def CreateFromIndices(materialIndex: Double, startIndex: Double, indexCount: Double, mesh: AbstractMesh): SubMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromIndices")(materialIndex.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], indexCount.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any])).asInstanceOf[SubMesh]
+    inline def CreateFromIndices(
       materialIndex: Double,
       startIndex: Double,
       indexCount: Double,
       mesh: AbstractMesh,
       renderingMesh: Mesh
-    ): SubMesh = js.native
+    ): SubMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromIndices")(materialIndex.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], indexCount.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any], renderingMesh.asInstanceOf[js.Any])).asInstanceOf[SubMesh]
   }
 }

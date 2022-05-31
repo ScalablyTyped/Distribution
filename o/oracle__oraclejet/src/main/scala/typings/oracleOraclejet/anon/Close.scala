@@ -2,50 +2,47 @@ package typings.oracleOraclejet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Close extends StObject {
   
-  var close: Scaling = js.native
+  var close: Scaling
   
-  var group: TooltipDisplay = js.native
+  var group: TooltipDisplay
   
-  var high: Scaling = js.native
+  var high: Scaling
   
-  var label: ConverterScaling = js.native
+  var label: ConverterScaling
   
-  var low: Scaling = js.native
+  var low: Scaling
   
-  var open: Scaling = js.native
+  var open: Scaling
   
-  var q1: Scaling = js.native
+  var q1: Scaling
   
-  var q2: Scaling = js.native
+  var q2: Scaling
   
-  var q3: Scaling = js.native
+  var q3: Scaling
   
-  var series: TooltipLabel = js.native
+  var series: TooltipLabel
   
-  var targetValue: Scaling = js.native
+  var targetValue: Scaling
   
-  var value: Scaling = js.native
+  var value: Scaling
   
-  var volume: Scaling = js.native
+  var volume: Scaling
   
-  var x: Scaling = js.native
+  var x: Scaling
   
-  var y: Scaling = js.native
+  var y: Scaling
   
-  var y2: Scaling = js.native
+  var y2: Scaling
   
-  var z: Scaling = js.native
+  var z: Scaling
 }
 object Close {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: Scaling,
     group: TooltipDisplay,
     high: Scaling,
@@ -68,58 +65,40 @@ object Close {
     __obj.asInstanceOf[Close]
   }
   
-  @scala.inline
-  implicit class CloseMutableBuilder[Self <: Close] (val x: Self) extends AnyVal {
+  extension [Self <: Close](x: Self) {
     
-    @scala.inline
-    def setClose(value: Scaling): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: Scaling): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroup(value: TooltipDisplay): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: TooltipDisplay): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHigh(value: Scaling): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
+    inline def setHigh(value: Scaling): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: ConverterScaling): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: ConverterScaling): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLow(value: Scaling): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
+    inline def setLow(value: Scaling): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen(value: Scaling): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: Scaling): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQ1(value: Scaling): Self = StObject.set(x, "q1", value.asInstanceOf[js.Any])
+    inline def setQ1(value: Scaling): Self = StObject.set(x, "q1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQ2(value: Scaling): Self = StObject.set(x, "q2", value.asInstanceOf[js.Any])
+    inline def setQ2(value: Scaling): Self = StObject.set(x, "q2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQ3(value: Scaling): Self = StObject.set(x, "q3", value.asInstanceOf[js.Any])
+    inline def setQ3(value: Scaling): Self = StObject.set(x, "q3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeries(value: TooltipLabel): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: TooltipLabel): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetValue(value: Scaling): Self = StObject.set(x, "targetValue", value.asInstanceOf[js.Any])
+    inline def setTargetValue(value: Scaling): Self = StObject.set(x, "targetValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Scaling): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Scaling): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolume(value: Scaling): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+    inline def setVolume(value: Scaling): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Scaling): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Scaling): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Scaling): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Scaling): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY2(value: Scaling): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
+    inline def setY2(value: Scaling): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZ(value: Scaling): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+    inline def setZ(value: Scaling): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
   }
 }

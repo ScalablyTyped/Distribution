@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.CascadedShadowGenerator")
 @js.native
 class CascadedShadowGenerator protected ()
-  extends typings.babylonjs.BABYLON.CascadedShadowGenerator {
+  extends StObject
+     with typings.babylonjs.BABYLON.CascadedShadowGenerator {
   /**
     * Creates a Cascaded Shadow Generator object.
     * A ShadowGenerator is the required tool to use the shadows.
@@ -34,8 +34,7 @@ object CascadedShadowGenerator {
   @JSGlobal("BABYLON.CascadedShadowGenerator.CLASSNAME")
   @js.native
   def CLASSNAME: String = js.native
-  @scala.inline
-  def CLASSNAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASSNAME")(x.asInstanceOf[js.Any])
+  inline def CLASSNAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASSNAME")(x.asInstanceOf[js.Any])
   
   /**
     * Defines the default number of cascades used by the CSM.
@@ -64,14 +63,10 @@ object CascadedShadowGenerator {
     * @param scene The scene to create the shadow map for
     * @returns The parsed shadow generator
     */
-  @JSGlobal("BABYLON.CascadedShadowGenerator.Parse")
-  @js.native
-  def Parse(parsedShadowGenerator: js.Any, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.ShadowGenerator = js.native
+  inline def Parse(parsedShadowGenerator: js.Any, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.ShadowGenerator]
   
   /** @hidden */
-  @JSGlobal("BABYLON.CascadedShadowGenerator._SceneComponentInitialization")
-  @js.native
-  def _SceneComponentInitialization(scene: typings.babylonjs.BABYLON.Scene): Unit = js.native
+  inline def _SceneComponentInitialization(scene: typings.babylonjs.BABYLON.Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSGlobal("BABYLON.CascadedShadowGenerator.frustumCornersNDCSpace")
   @js.native

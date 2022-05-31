@@ -3,31 +3,30 @@ package typings.babylonjs.BABYLON
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait VideoRecorder extends StObject {
   
-  var _canvas: js.Any = js.native
+  /* private */ var _canvas: js.Any = js.native
   
-  var _fileName: js.Any = js.native
+  /* private */ var _fileName: js.Any = js.native
   
-  var _handleDataAvailable: js.Any = js.native
+  /* private */ var _handleDataAvailable: js.Any = js.native
   
-  var _handleError: js.Any = js.native
+  /* private */ var _handleError: js.Any = js.native
   
-  var _handleStop: js.Any = js.native
+  /* private */ var _handleStop: js.Any = js.native
   
-  var _mediaRecorder: js.Any = js.native
+  /* private */ var _mediaRecorder: js.Any = js.native
   
-  val _options: js.Any = js.native
+  /* private */ val _options: js.Any = js.native
   
-  var _recordedChunks: js.Any = js.native
+  /* private */ var _recordedChunks: js.Any = js.native
   
-  var _reject: js.Any = js.native
+  /* private */ var _reject: js.Any = js.native
   
-  var _resolve: js.Any = js.native
+  /* private */ var _resolve: js.Any = js.native
   
   /**
     * Releases internal resources used during the recording.
@@ -48,8 +47,9 @@ trait VideoRecorder extends StObject {
     * @return A promise callback at the end of the recording with the video data in Blob.
     */
   def startRecording(): js.Promise[Blob] = js.native
-  def startRecording(fileName: js.UndefOr[Nullable[String]], maxDuration: Double): js.Promise[Blob] = js.native
+  def startRecording(fileName: Unit, maxDuration: Double): js.Promise[Blob] = js.native
   def startRecording(fileName: Nullable[String]): js.Promise[Blob] = js.native
+  def startRecording(fileName: Nullable[String], maxDuration: Double): js.Promise[Blob] = js.native
   
   /**
     * Stops the current recording before the default capture timeout passed in the startRecording function.

@@ -11,7 +11,6 @@ import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.uniformBufferMod.UniformBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pbrClearCoatConfigurationMod {
@@ -25,29 +24,29 @@ object pbrClearCoatConfigurationMod {
       */
     def this(markAllSubMeshesAsTexturesDirty: js.Function0[Unit]) = this()
     
-    var _bumpTexture: js.Any = js.native
+    /* private */ var _bumpTexture: js.Any = js.native
     
-    var _indexOfRefraction: js.Any = js.native
+    /* private */ var _indexOfRefraction: js.Any = js.native
     
     /** @hidden */
-    var _internalMarkAllSubMeshesAsTexturesDirty: js.Any = js.native
+    /* private */ var _internalMarkAllSubMeshesAsTexturesDirty: js.Any = js.native
     
-    var _isEnabled: js.Any = js.native
+    /* private */ var _isEnabled: js.Any = js.native
     
-    var _isTintEnabled: js.Any = js.native
+    /* private */ var _isTintEnabled: js.Any = js.native
     
     /** @hidden */
     def _markAllSubMeshesAsTexturesDirty(): Unit = js.native
     
-    var _remapF0OnInterfaceChange: js.Any = js.native
+    /* private */ var _remapF0OnInterfaceChange: js.Any = js.native
     
-    var _texture: js.Any = js.native
+    /* private */ var _texture: js.Any = js.native
     
-    var _textureRoughness: js.Any = js.native
+    /* private */ var _textureRoughness: js.Any = js.native
     
-    var _tintTexture: js.Any = js.native
+    /* private */ var _tintTexture: js.Any = js.native
     
-    var _useRoughnessFromMainTexture: js.Any = js.native
+    /* private */ var _useRoughnessFromMainTexture: js.Any = js.native
     
     /**
       * Binds the material data.
@@ -235,6 +234,10 @@ object pbrClearCoatConfigurationMod {
   /* static members */
   object PBRClearCoatConfiguration {
     
+    @JSImport("babylonjs/Materials/PBR/pbrClearCoatConfiguration", "PBRClearCoatConfiguration")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Add fallbacks to the effect fallbacks list.
       * @param defines defines the Base texture to use.
@@ -242,33 +245,25 @@ object pbrClearCoatConfigurationMod {
       * @param currentRank defines the current fallback rank.
       * @returns the new fallback rank.
       */
-    @JSImport("babylonjs/Materials/PBR/pbrClearCoatConfiguration", "PBRClearCoatConfiguration.AddFallbacks")
-    @js.native
-    def AddFallbacks(defines: IMaterialClearCoatDefines, fallbacks: EffectFallbacks, currentRank: Double): Double = js.native
+    inline def AddFallbacks(defines: IMaterialClearCoatDefines, fallbacks: EffectFallbacks, currentRank: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("AddFallbacks")(defines.asInstanceOf[js.Any], fallbacks.asInstanceOf[js.Any], currentRank.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Add the required samplers to the current list.
       * @param samplers defines the current sampler list.
       */
-    @JSImport("babylonjs/Materials/PBR/pbrClearCoatConfiguration", "PBRClearCoatConfiguration.AddSamplers")
-    @js.native
-    def AddSamplers(samplers: js.Array[String]): Unit = js.native
+    inline def AddSamplers(samplers: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AddSamplers")(samplers.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Add the required uniforms to the current list.
       * @param uniforms defines the current uniform list.
       */
-    @JSImport("babylonjs/Materials/PBR/pbrClearCoatConfiguration", "PBRClearCoatConfiguration.AddUniforms")
-    @js.native
-    def AddUniforms(uniforms: js.Array[String]): Unit = js.native
+    inline def AddUniforms(uniforms: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AddUniforms")(uniforms.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Add the required uniforms to the current buffer.
       * @param uniformBuffer defines the current uniform buffer.
       */
-    @JSImport("babylonjs/Materials/PBR/pbrClearCoatConfiguration", "PBRClearCoatConfiguration.PrepareUniformBuffer")
-    @js.native
-    def PrepareUniformBuffer(uniformBuffer: UniformBuffer): Unit = js.native
+    inline def PrepareUniformBuffer(uniformBuffer: UniformBuffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("PrepareUniformBuffer")(uniformBuffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * This defaults to 1.5 corresponding to a 0.04 f0 or a 4% reflectance at normal incidence
@@ -280,44 +275,42 @@ object pbrClearCoatConfigurationMod {
     val _DefaultIndexOfRefraction: Double = js.native
   }
   
-  @js.native
   trait IMaterialClearCoatDefines extends StObject {
     
-    var CLEARCOAT: Boolean = js.native
+    var CLEARCOAT: Boolean
     
-    var CLEARCOAT_BUMP: Boolean = js.native
+    var CLEARCOAT_BUMP: Boolean
     
-    var CLEARCOAT_BUMPDIRECTUV: Double = js.native
+    var CLEARCOAT_BUMPDIRECTUV: Double
     
-    var CLEARCOAT_DEFAULTIOR: Boolean = js.native
+    var CLEARCOAT_DEFAULTIOR: Boolean
     
-    var CLEARCOAT_REMAP_F0: Boolean = js.native
+    var CLEARCOAT_REMAP_F0: Boolean
     
-    var CLEARCOAT_TEXTURE: Boolean = js.native
+    var CLEARCOAT_TEXTURE: Boolean
     
-    var CLEARCOAT_TEXTUREDIRECTUV: Double = js.native
+    var CLEARCOAT_TEXTUREDIRECTUV: Double
     
-    var CLEARCOAT_TEXTURE_ROUGHNESS: Boolean = js.native
+    var CLEARCOAT_TEXTURE_ROUGHNESS: Boolean
     
-    var CLEARCOAT_TEXTURE_ROUGHNESSDIRECTUV: Double = js.native
+    var CLEARCOAT_TEXTURE_ROUGHNESSDIRECTUV: Double
     
-    var CLEARCOAT_TEXTURE_ROUGHNESS_IDENTICAL: Boolean = js.native
+    var CLEARCOAT_TEXTURE_ROUGHNESS_IDENTICAL: Boolean
     
-    var CLEARCOAT_TINT: Boolean = js.native
+    var CLEARCOAT_TINT: Boolean
     
-    var CLEARCOAT_TINT_TEXTURE: Boolean = js.native
+    var CLEARCOAT_TINT_TEXTURE: Boolean
     
-    var CLEARCOAT_TINT_TEXTUREDIRECTUV: Double = js.native
+    var CLEARCOAT_TINT_TEXTUREDIRECTUV: Double
     
-    var CLEARCOAT_USE_ROUGHNESS_FROM_MAINTEXTURE: Boolean = js.native
+    var CLEARCOAT_USE_ROUGHNESS_FROM_MAINTEXTURE: Boolean
     
     /** @hidden */
-    var _areTexturesDirty: Boolean = js.native
+    var _areTexturesDirty: Boolean
   }
   object IMaterialClearCoatDefines {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CLEARCOAT: Boolean,
       CLEARCOAT_BUMP: Boolean,
       CLEARCOAT_BUMPDIRECTUV: Double,
@@ -338,53 +331,37 @@ object pbrClearCoatConfigurationMod {
       __obj.asInstanceOf[IMaterialClearCoatDefines]
     }
     
-    @scala.inline
-    implicit class IMaterialClearCoatDefinesMutableBuilder[Self <: IMaterialClearCoatDefines] (val x: Self) extends AnyVal {
+    extension [Self <: IMaterialClearCoatDefines](x: Self) {
       
-      @scala.inline
-      def setCLEARCOAT(value: Boolean): Self = StObject.set(x, "CLEARCOAT", value.asInstanceOf[js.Any])
+      inline def setCLEARCOAT(value: Boolean): Self = StObject.set(x, "CLEARCOAT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLEARCOAT_BUMP(value: Boolean): Self = StObject.set(x, "CLEARCOAT_BUMP", value.asInstanceOf[js.Any])
+      inline def setCLEARCOAT_BUMP(value: Boolean): Self = StObject.set(x, "CLEARCOAT_BUMP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLEARCOAT_BUMPDIRECTUV(value: Double): Self = StObject.set(x, "CLEARCOAT_BUMPDIRECTUV", value.asInstanceOf[js.Any])
+      inline def setCLEARCOAT_BUMPDIRECTUV(value: Double): Self = StObject.set(x, "CLEARCOAT_BUMPDIRECTUV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLEARCOAT_DEFAULTIOR(value: Boolean): Self = StObject.set(x, "CLEARCOAT_DEFAULTIOR", value.asInstanceOf[js.Any])
+      inline def setCLEARCOAT_DEFAULTIOR(value: Boolean): Self = StObject.set(x, "CLEARCOAT_DEFAULTIOR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLEARCOAT_REMAP_F0(value: Boolean): Self = StObject.set(x, "CLEARCOAT_REMAP_F0", value.asInstanceOf[js.Any])
+      inline def setCLEARCOAT_REMAP_F0(value: Boolean): Self = StObject.set(x, "CLEARCOAT_REMAP_F0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLEARCOAT_TEXTURE(value: Boolean): Self = StObject.set(x, "CLEARCOAT_TEXTURE", value.asInstanceOf[js.Any])
+      inline def setCLEARCOAT_TEXTURE(value: Boolean): Self = StObject.set(x, "CLEARCOAT_TEXTURE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLEARCOAT_TEXTUREDIRECTUV(value: Double): Self = StObject.set(x, "CLEARCOAT_TEXTUREDIRECTUV", value.asInstanceOf[js.Any])
+      inline def setCLEARCOAT_TEXTUREDIRECTUV(value: Double): Self = StObject.set(x, "CLEARCOAT_TEXTUREDIRECTUV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLEARCOAT_TEXTURE_ROUGHNESS(value: Boolean): Self = StObject.set(x, "CLEARCOAT_TEXTURE_ROUGHNESS", value.asInstanceOf[js.Any])
+      inline def setCLEARCOAT_TEXTURE_ROUGHNESS(value: Boolean): Self = StObject.set(x, "CLEARCOAT_TEXTURE_ROUGHNESS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLEARCOAT_TEXTURE_ROUGHNESSDIRECTUV(value: Double): Self = StObject.set(x, "CLEARCOAT_TEXTURE_ROUGHNESSDIRECTUV", value.asInstanceOf[js.Any])
+      inline def setCLEARCOAT_TEXTURE_ROUGHNESSDIRECTUV(value: Double): Self = StObject.set(x, "CLEARCOAT_TEXTURE_ROUGHNESSDIRECTUV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLEARCOAT_TEXTURE_ROUGHNESS_IDENTICAL(value: Boolean): Self = StObject.set(x, "CLEARCOAT_TEXTURE_ROUGHNESS_IDENTICAL", value.asInstanceOf[js.Any])
+      inline def setCLEARCOAT_TEXTURE_ROUGHNESS_IDENTICAL(value: Boolean): Self = StObject.set(x, "CLEARCOAT_TEXTURE_ROUGHNESS_IDENTICAL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLEARCOAT_TINT(value: Boolean): Self = StObject.set(x, "CLEARCOAT_TINT", value.asInstanceOf[js.Any])
+      inline def setCLEARCOAT_TINT(value: Boolean): Self = StObject.set(x, "CLEARCOAT_TINT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLEARCOAT_TINT_TEXTURE(value: Boolean): Self = StObject.set(x, "CLEARCOAT_TINT_TEXTURE", value.asInstanceOf[js.Any])
+      inline def setCLEARCOAT_TINT_TEXTURE(value: Boolean): Self = StObject.set(x, "CLEARCOAT_TINT_TEXTURE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLEARCOAT_TINT_TEXTUREDIRECTUV(value: Double): Self = StObject.set(x, "CLEARCOAT_TINT_TEXTUREDIRECTUV", value.asInstanceOf[js.Any])
+      inline def setCLEARCOAT_TINT_TEXTUREDIRECTUV(value: Double): Self = StObject.set(x, "CLEARCOAT_TINT_TEXTUREDIRECTUV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLEARCOAT_USE_ROUGHNESS_FROM_MAINTEXTURE(value: Boolean): Self = StObject.set(x, "CLEARCOAT_USE_ROUGHNESS_FROM_MAINTEXTURE", value.asInstanceOf[js.Any])
+      inline def setCLEARCOAT_USE_ROUGHNESS_FROM_MAINTEXTURE(value: Boolean): Self = StObject.set(x, "CLEARCOAT_USE_ROUGHNESS_FROM_MAINTEXTURE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_areTexturesDirty(value: Boolean): Self = StObject.set(x, "_areTexturesDirty", value.asInstanceOf[js.Any])
+      inline def set_areTexturesDirty(value: Boolean): Self = StObject.set(x, "_areTexturesDirty", value.asInstanceOf[js.Any])
     }
   }
 }

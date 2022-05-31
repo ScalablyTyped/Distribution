@@ -2,11 +2,12 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChromaticAberrationPostProcess extends PostProcess {
+trait ChromaticAberrationPostProcess
+  extends StObject
+     with PostProcess {
   
   /**
     * The amount of seperation of rgb channels (default: 30)

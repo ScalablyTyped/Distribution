@@ -7,7 +7,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.shadowLightMod.ShadowLight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object directionalLightMod {
@@ -26,13 +25,13 @@ object directionalLightMod {
       */
     def this(name: String, direction: Vector3, scene: Scene) = this()
     
-    var _orthoBottom: js.Any = js.native
+    /* private */ var _orthoBottom: js.Any = js.native
     
-    var _orthoLeft: js.Any = js.native
+    /* private */ var _orthoLeft: js.Any = js.native
     
-    var _orthoRight: js.Any = js.native
+    /* private */ var _orthoRight: js.Any = js.native
     
-    var _orthoTop: js.Any = js.native
+    /* private */ var _orthoTop: js.Any = js.native
     
     /**
       * Sets the passed matrix "matrix" as auto extend projection matrix for the shadows cast by the light according to the passed view matrix.
@@ -46,9 +45,9 @@ object directionalLightMod {
       */
     /* protected */ def _setDefaultFixedFrustumShadowProjectionMatrix(matrix: Matrix): Unit = js.native
     
-    var _shadowFrustumSize: js.Any = js.native
+    /* private */ var _shadowFrustumSize: js.Any = js.native
     
-    var _shadowOrthoScale: js.Any = js.native
+    /* private */ var _shadowOrthoScale: js.Any = js.native
     
     /**
       * Automatically compute the shadowMinZ and shadowMaxZ for the projection matrix to best fit (including all the casters)

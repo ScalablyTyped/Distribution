@@ -1,15 +1,16 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.ISpriteManager
+import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.Sprite")
 @js.native
 class Sprite protected ()
-  extends typings.babylonjs.BABYLON.Sprite {
+  extends StObject
+     with typings.babylonjs.BABYLON.Sprite {
   /**
     * Creates a new Sprite
     * @param name defines the name
@@ -17,9 +18,19 @@ class Sprite protected ()
     */
   def this(/** defines the name */
   name: String, manager: ISpriteManager) = this()
+  
+  /**
+    * Array of animations
+    */
+  /* CompleteClass */
+  var animations: Nullable[js.Array[typings.babylonjs.BABYLON.Animation]] = js.native
 }
 /* static members */
 object Sprite {
+  
+  @JSGlobal("BABYLON.Sprite")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Parses a JSON object to create a new sprite
@@ -27,7 +38,5 @@ object Sprite {
     * @param manager defines the hosting manager
     * @returns the new sprite
     */
-  @JSGlobal("BABYLON.Sprite.Parse")
-  @js.native
-  def Parse(parsedSprite: js.Any, manager: typings.babylonjs.BABYLON.SpriteManager): typings.babylonjs.BABYLON.Sprite = js.native
+  inline def Parse(parsedSprite: js.Any, manager: typings.babylonjs.BABYLON.SpriteManager): typings.babylonjs.BABYLON.Sprite = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSprite.asInstanceOf[js.Any], manager.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Sprite]
 }

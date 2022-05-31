@@ -6,88 +6,67 @@ import typings.oracleOraclejet.oracleOraclejetStrings.normal
 import typings.oracleOraclejet.oracleOraclejetStrings.summary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Baseline extends StObject {
   
-  var baseline: js.UndefOr[SvgClassName] = js.native
+  var baseline: js.UndefOr[SvgClassName] = js.undefined
   
-  var borderRadius: js.UndefOr[String] = js.native
+  var borderRadius: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var labelPosition: js.UndefOr[String | js.Array[String]] = js.native
+  var labelPosition: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var progress: js.UndefOr[SvgStyle] = js.native
+  var progress: js.UndefOr[SvgStyle] = js.undefined
   
-  var svgClassName: js.UndefOr[String] = js.native
+  var svgClassName: js.UndefOr[String] = js.undefined
   
-  var svgStyle: js.UndefOr[js.Object] = js.native
+  var svgStyle: js.UndefOr[js.Object] = js.undefined
   
-  var `type`: js.UndefOr[normal | milestone | summary | auto] = js.native
+  var `type`: js.UndefOr[normal | milestone | summary | auto] = js.undefined
 }
 object Baseline {
   
-  @scala.inline
-  def apply(): Baseline = {
+  inline def apply(): Baseline = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Baseline]
   }
   
-  @scala.inline
-  implicit class BaselineMutableBuilder[Self <: Baseline] (val x: Self) extends AnyVal {
+  extension [Self <: Baseline](x: Self) {
     
-    @scala.inline
-    def setBaseline(value: SvgClassName): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
+    inline def setBaseline(value: SvgClassName): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaselineUndefined: Self = StObject.set(x, "baseline", js.undefined)
+    inline def setBaselineUndefined: Self = StObject.set(x, "baseline", js.undefined)
     
-    @scala.inline
-    def setBorderRadius(value: String): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    inline def setBorderRadius(value: String): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
+    inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setLabelPosition(value: String | js.Array[String]): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
+    inline def setLabelPosition(value: String | js.Array[String]): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelPositionUndefined: Self = StObject.set(x, "labelPosition", js.undefined)
+    inline def setLabelPositionUndefined: Self = StObject.set(x, "labelPosition", js.undefined)
     
-    @scala.inline
-    def setLabelPositionVarargs(value: String*): Self = StObject.set(x, "labelPosition", js.Array(value :_*))
+    inline def setLabelPositionVarargs(value: String*): Self = StObject.set(x, "labelPosition", js.Array(value :_*))
     
-    @scala.inline
-    def setProgress(value: SvgStyle): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: SvgStyle): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
-    @scala.inline
-    def setSvgClassName(value: String): Self = StObject.set(x, "svgClassName", value.asInstanceOf[js.Any])
+    inline def setSvgClassName(value: String): Self = StObject.set(x, "svgClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgClassNameUndefined: Self = StObject.set(x, "svgClassName", js.undefined)
+    inline def setSvgClassNameUndefined: Self = StObject.set(x, "svgClassName", js.undefined)
     
-    @scala.inline
-    def setSvgStyle(value: js.Object): Self = StObject.set(x, "svgStyle", value.asInstanceOf[js.Any])
+    inline def setSvgStyle(value: js.Object): Self = StObject.set(x, "svgStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgStyleUndefined: Self = StObject.set(x, "svgStyle", js.undefined)
+    inline def setSvgStyleUndefined: Self = StObject.set(x, "svgStyle", js.undefined)
     
-    @scala.inline
-    def setType(value: normal | milestone | summary | auto): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: normal | milestone | summary | auto): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

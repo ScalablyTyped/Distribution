@@ -8,7 +8,6 @@ import typings.std.Float32Array
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object analyserMod {
@@ -52,23 +51,23 @@ object analyserMod {
       */
     var SMOOTHING: Double = js.native
     
-    var _audioEngine: js.Any = js.native
+    /* private */ var _audioEngine: js.Any = js.native
     
-    var _byteFreqs: js.Any = js.native
+    /* private */ var _byteFreqs: js.Any = js.native
     
-    var _byteTime: js.Any = js.native
+    /* private */ var _byteTime: js.Any = js.native
     
-    var _debugCanvas: js.Any = js.native
+    /* private */ var _debugCanvas: js.Any = js.native
     
-    var _debugCanvasContext: js.Any = js.native
+    /* private */ var _debugCanvasContext: js.Any = js.native
     
-    var _floatFreqs: js.Any = js.native
+    /* private */ var _floatFreqs: js.Any = js.native
     
-    var _registerFunc: js.Any = js.native
+    /* private */ var _registerFunc: js.Any = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
-    var _webAudioAnalyser: js.Any = js.native
+    /* private */ var _webAudioAnalyser: js.Any = js.native
     
     /**
       * Connects two audio nodes

@@ -2,11 +2,12 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlyCameraInputsManager extends CameraInputsManager[FlyCamera] {
+trait FlyCameraInputsManager
+  extends StObject
+     with CameraInputsManager[FlyCamera] {
   
   /**
     * Add keyboard input support to the input manager.

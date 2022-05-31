@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "normalplaytime"
-version := "1.0-dt-20200909Z-7ee7ee"
+version := "1.0-dt-20200909Z-d54cb1"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

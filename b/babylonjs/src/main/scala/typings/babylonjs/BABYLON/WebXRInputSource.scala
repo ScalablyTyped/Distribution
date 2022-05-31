@@ -5,21 +5,20 @@ import typings.babylonjs.XRInputSource
 import typings.babylonjs.XRReferenceSpace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebXRInputSource extends StObject {
   
-  var _disposed: js.Any = js.native
+  /* private */ var _disposed: js.Any = js.native
   
-  var _options: js.Any = js.native
+  /* private */ var _options: js.Any = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
-  var _tmpVector: js.Any = js.native
+  /* private */ var _tmpVector: js.Any = js.native
   
-  var _uniqueId: js.Any = js.native
+  /* private */ var _uniqueId: js.Any = js.native
   
   /**
     * Disposes of the object

@@ -20,7 +20,6 @@ import typings.luminoWidgets.mod.Widget
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object frontendMod {
@@ -31,9 +30,9 @@ object frontendMod {
     /**
       * Construct a new JupyterFrontEnd object.
       */
-    def this(options: IOptions[T, _]) = this()
+    def this(options: IOptions[T, js.Any]) = this()
     
-    var _contextMenuEvent: js.Any = js.native
+    /* private */ var _contextMenuEvent: js.Any = js.native
     
     /**
       * The command linker used by the application.
@@ -90,7 +89,6 @@ object frontendMod {
     /**
       * An interface for URL and directory paths used by a Jupyter front-end.
       */
-    @js.native
     trait IPaths extends StObject {
       
       /**
@@ -109,12 +107,12 @@ object frontendMod {
         * these paths in a request to the server (it would be better to write a
         * server extension to handle these cases).
         */
-      val directories: AppSettings = js.native
+      val directories: AppSettings
       
       /**
         * The urls used by the application.
         */
-      val urls: App = js.native
+      val urls: App
     }
     object IPaths {
       
@@ -125,35 +123,30 @@ object frontendMod {
       @js.native
       val ^ : Token[IPaths] = js.native
       
-      @scala.inline
-      implicit class IPathsMutableBuilder[Self <: IPaths] (val x: Self) extends AnyVal {
+      extension [Self <: IPaths](x: Self) {
         
-        @scala.inline
-        def setDirectories(value: AppSettings): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
+        inline def setDirectories(value: AppSettings): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUrls(value: App): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+        inline def setUrls(value: App): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
       }
     }
     
     /**
       * An interface for a front-end tree route resolver.
       */
-    @js.native
     trait ITreeResolver extends StObject {
       
       /**
         * A promise that resolves to the routed tree paths or null.
         */
-      val paths: js.Promise[Paths] = js.native
+      val paths: js.Promise[Paths]
     }
     /**
       * A namespace for tree resolver types.
       */
     object ITreeResolver extends Shortcut {
       
-      @scala.inline
-      def apply(paths: js.Promise[Paths]): ITreeResolver = {
+      inline def apply(paths: js.Promise[Paths]): ITreeResolver = {
         val __obj = js.Dynamic.literal(paths = paths.asInstanceOf[js.Any])
         __obj.asInstanceOf[ITreeResolver]
       }
@@ -162,11 +155,9 @@ object frontendMod {
       @js.native
       val ^ : Token[ITreeResolver] = js.native
       
-      @scala.inline
-      implicit class ITreeResolverMutableBuilder[Self <: ITreeResolver] (val x: Self) extends AnyVal {
+      extension [Self <: ITreeResolver](x: Self) {
         
-        @scala.inline
-        def setPaths(value: js.Promise[Paths]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+        inline def setPaths(value: js.Promise[Paths]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       }
       
       /**
@@ -184,65 +175,55 @@ object frontendMod {
     /**
       * The options used to initialize a JupyterFrontEnd.
       */
-    @js.native
     trait IOptions[T /* <: IShell */, U]
-      extends typings.luminoApplication.mod.Application.IOptions[T] {
+      extends StObject
+         with typings.luminoApplication.mod.Application.IOptions[T] {
       
       /**
         * The command linker used by the application.
         */
-      var commandLinker: js.UndefOr[CommandLinker] = js.native
+      var commandLinker: js.UndefOr[CommandLinker] = js.undefined
       
       /**
         * The document registry instance used by the application.
         */
-      var docRegistry: js.UndefOr[DocumentRegistry] = js.native
+      var docRegistry: js.UndefOr[DocumentRegistry] = js.undefined
       
       /**
         * Promise that resolves when state is first restored, returning layout
         * description.
         */
-      var restored: js.UndefOr[js.Promise[U]] = js.native
+      var restored: js.UndefOr[js.Promise[U]] = js.undefined
       
       /**
         * The service manager used by the application.
         */
-      var serviceManager: js.UndefOr[ServiceManager] = js.native
+      var serviceManager: js.UndefOr[ServiceManager] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply[T /* <: IShell */, U](shell: T): IOptions[T, U] = {
+      inline def apply[T /* <: IShell */, U](shell: T): IOptions[T, U] = {
         val __obj = js.Dynamic.literal(shell = shell.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions[T, U]]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions[_, _], T /* <: IShell */, U] (val x: Self with (IOptions[T, U])) extends AnyVal {
+      extension [Self <: IOptions[?, ?], T /* <: IShell */, U](x: Self & (IOptions[T, U])) {
         
-        @scala.inline
-        def setCommandLinker(value: CommandLinker): Self = StObject.set(x, "commandLinker", value.asInstanceOf[js.Any])
+        inline def setCommandLinker(value: CommandLinker): Self = StObject.set(x, "commandLinker", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCommandLinkerUndefined: Self = StObject.set(x, "commandLinker", js.undefined)
+        inline def setCommandLinkerUndefined: Self = StObject.set(x, "commandLinker", js.undefined)
         
-        @scala.inline
-        def setDocRegistry(value: DocumentRegistry): Self = StObject.set(x, "docRegistry", value.asInstanceOf[js.Any])
+        inline def setDocRegistry(value: DocumentRegistry): Self = StObject.set(x, "docRegistry", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDocRegistryUndefined: Self = StObject.set(x, "docRegistry", js.undefined)
+        inline def setDocRegistryUndefined: Self = StObject.set(x, "docRegistry", js.undefined)
         
-        @scala.inline
-        def setRestored(value: js.Promise[U]): Self = StObject.set(x, "restored", value.asInstanceOf[js.Any])
+        inline def setRestored(value: js.Promise[U]): Self = StObject.set(x, "restored", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRestoredUndefined: Self = StObject.set(x, "restored", js.undefined)
+        inline def setRestoredUndefined: Self = StObject.set(x, "restored", js.undefined)
         
-        @scala.inline
-        def setServiceManager(value: ServiceManager): Self = StObject.set(x, "serviceManager", value.asInstanceOf[js.Any])
+        inline def setServiceManager(value: ServiceManager): Self = StObject.set(x, "serviceManager", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServiceManagerUndefined: Self = StObject.set(x, "serviceManager", js.undefined)
+        inline def setServiceManagerUndefined: Self = StObject.set(x, "serviceManager", js.undefined)
       }
     }
     
@@ -271,9 +252,9 @@ object frontendMod {
         * widget, as defined in the `DocumentRegistry`.
         */
       def add(widget: Widget): Unit = js.native
-      def add(widget: Widget, area: js.UndefOr[scala.Nothing], options: IOpenOptions): Unit = js.native
       def add(widget: Widget, area: String): Unit = js.native
       def add(widget: Widget, area: String, options: IOpenOptions): Unit = js.native
+      def add(widget: Widget, area: Unit, options: IOpenOptions): Unit = js.native
       
       /**
         * The focused widget in the application shell.

@@ -11,7 +11,6 @@ import typings.babylonjs.subEmitterMod.SubEmitter
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object particleMod {
@@ -196,7 +195,7 @@ object particleMod {
       */
     def updateCellIndex(): Unit = js.native
     
-    var updateCellInfoFromSystem: js.Any = js.native
+    /* private */ var updateCellInfoFromSystem: js.Any = js.native
   }
   /* static members */
   object Particle {
@@ -208,7 +207,6 @@ object particleMod {
     @JSImport("babylonjs/Particles/particle", "Particle._Count")
     @js.native
     def _Count: js.Any = js.native
-    @scala.inline
-    def _Count_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Count")(x.asInstanceOf[js.Any])
+    inline def _Count_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Count")(x.asInstanceOf[js.Any])
   }
 }

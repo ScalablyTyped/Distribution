@@ -7,7 +7,6 @@ import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object boneIKControllerMod {
@@ -24,33 +23,33 @@ object boneIKControllerMod {
     def this(mesh: AbstractMesh, bone: Bone) = this()
     def this(mesh: AbstractMesh, bone: Bone, options: BendAxis) = this()
     
-    var _adjustRoll: js.Any = js.native
+    /* private */ var _adjustRoll: js.Any = js.native
     
-    var _bendAxis: js.Any = js.native
+    /* private */ var _bendAxis: js.Any = js.native
     
-    var _bone1: js.Any = js.native
+    /* private */ var _bone1: js.Any = js.native
     
-    var _bone1Length: js.Any = js.native
+    /* private */ var _bone1Length: js.Any = js.native
     
-    var _bone1Mat: js.Any = js.native
+    /* private */ var _bone1Mat: js.Any = js.native
     
-    var _bone1Quat: js.Any = js.native
+    /* private */ var _bone1Quat: js.Any = js.native
     
-    var _bone2: js.Any = js.native
+    /* private */ var _bone2: js.Any = js.native
     
-    var _bone2Ang: js.Any = js.native
+    /* private */ var _bone2Ang: js.Any = js.native
     
-    var _bone2Length: js.Any = js.native
+    /* private */ var _bone2Length: js.Any = js.native
     
-    var _maxAngle: js.Any = js.native
+    /* private */ var _maxAngle: js.Any = js.native
     
-    var _maxReach: js.Any = js.native
+    /* private */ var _maxReach: js.Any = js.native
     
-    var _rightHandedSystem: js.Any = js.native
+    /* private */ var _rightHandedSystem: js.Any = js.native
     
-    var _setMaxAngle: js.Any = js.native
+    /* private */ var _setMaxAngle: js.Any = js.native
     
-    var _slerping: js.Any = js.native
+    /* private */ var _slerping: js.Any = js.native
     
     /**
       * Gets or sets maximum allowed angle
@@ -116,19 +115,16 @@ object boneIKControllerMod {
     @JSImport("babylonjs/Bones/boneIKController", "BoneIKController._tmpMats")
     @js.native
     def _tmpMats: js.Any = js.native
-    @scala.inline
-    def _tmpMats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpMats")(x.asInstanceOf[js.Any])
+    inline def _tmpMats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpMats")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Bones/boneIKController", "BoneIKController._tmpQuat")
     @js.native
     def _tmpQuat: js.Any = js.native
-    @scala.inline
-    def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
+    inline def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Bones/boneIKController", "BoneIKController._tmpVecs")
     @js.native
     def _tmpVecs: js.Any = js.native
-    @scala.inline
-    def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
+    inline def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
   }
 }

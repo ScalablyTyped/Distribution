@@ -21,7 +21,6 @@ import typings.luminoWidgets.mod.Widget
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object widgetMod {
@@ -37,18 +36,18 @@ object widgetMod {
     /**
       * Clear the widget inputs and outputs.
       */
-    var _clear: js.Any = js.native
+    /* private */ var _clear: js.Any = js.native
     
-    var _displayIdMap: js.Any = js.native
+    /* private */ var _displayIdMap: js.Any = js.native
     
-    var _future: js.Any = js.native
+    /* private */ var _future: js.Any = js.native
     
     /**
       * Render and insert a single output into the layout.
       */
-    var _insertOutput: js.Any = js.native
+    /* private */ var _insertOutput: js.Any = js.native
     
-    var _minHeightTimeout: js.Any = js.native
+    /* private */ var _minHeightTimeout: js.Any = js.native
     
     /**
       * Update indices in _displayIdMap in response to element remove from model items
@@ -58,24 +57,24 @@ object widgetMod {
       * @param count - The number of elements removed from model items
       *
       */
-    var _moveDisplayIdIndices: js.Any = js.native
+    /* private */ var _moveDisplayIdIndices: js.Any = js.native
     
     /**
       * Handle an execute reply message.
       */
-    var _onExecuteReply: js.Any = js.native
+    /* private */ var _onExecuteReply: js.Any = js.native
     
     /**
       * Handle an iopub message.
       */
-    var _onIOPub: js.Any = js.native
+    /* private */ var _onIOPub: js.Any = js.native
     
-    var _preventHeightChangeJitter: js.Any = js.native
+    /* private */ var _preventHeightChangeJitter: js.Any = js.native
     
     /**
       * Update an output in the layout in place.
       */
-    var _setOutput: js.Any = js.native
+    /* private */ var _setOutput: js.Any = js.native
     
     /**
       * The content factory used by the widget.
@@ -145,12 +144,31 @@ object widgetMod {
   }
   object OutputArea {
     
+    @JSImport("@jupyterlab/outputarea/lib/widget", "OutputArea")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * The default implementation of `IContentFactory`.
       */
     @JSImport("@jupyterlab/outputarea/lib/widget", "OutputArea.ContentFactory")
     @js.native
-    class ContentFactory () extends IContentFactory
+    class ContentFactory ()
+      extends StObject
+         with IContentFactory {
+      
+      /**
+        * Create an output prompt.
+        */
+      /* CompleteClass */
+      override def createOutputPrompt(): IOutputPrompt = js.native
+      
+      /**
+        * Create an stdin widget.
+        */
+      /* CompleteClass */
+      override def createStdin(options: typings.jupyterlabOutputarea.widgetMod.Stdin.IOptions): IStdin = js.native
+    }
     
     /**
       * The default `ContentFactory` instance.
@@ -162,16 +180,10 @@ object widgetMod {
     /**
       * Execute code on an output area.
       */
-    @JSImport("@jupyterlab/outputarea/lib/widget", "OutputArea.execute")
-    @js.native
-    def execute(code: String, output: OutputArea, sessionContext: ISessionContext): js.Promise[js.UndefOr[IExecuteReplyMsg]] = js.native
-    @JSImport("@jupyterlab/outputarea/lib/widget", "OutputArea.execute")
-    @js.native
-    def execute(code: String, output: OutputArea, sessionContext: ISessionContext, metadata: JSONObject): js.Promise[js.UndefOr[IExecuteReplyMsg]] = js.native
+    inline def execute(code: String, output: OutputArea, sessionContext: ISessionContext): js.Promise[js.UndefOr[IExecuteReplyMsg]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(code.asInstanceOf[js.Any], output.asInstanceOf[js.Any], sessionContext.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[IExecuteReplyMsg]]]
+    inline def execute(code: String, output: OutputArea, sessionContext: ISessionContext, metadata: JSONObject): js.Promise[js.UndefOr[IExecuteReplyMsg]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(code.asInstanceOf[js.Any], output.asInstanceOf[js.Any], sessionContext.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[IExecuteReplyMsg]]]
     
-    @JSImport("@jupyterlab/outputarea/lib/widget", "OutputArea.isIsolated")
-    @js.native
-    def isIsolated(mimeType: String, metadata: ReadonlyPartialJSONObject): Boolean = js.native
+    inline def isIsolated(mimeType: String, metadata: ReadonlyPartialJSONObject): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIsolated")(mimeType.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * An output area widget content factory.
@@ -179,23 +191,21 @@ object widgetMod {
       * The content factory is used to create children in a way
       * that can be customized.
       */
-    @js.native
     trait IContentFactory extends StObject {
       
       /**
         * Create an output prompt.
         */
-      def createOutputPrompt(): IOutputPrompt = js.native
+      def createOutputPrompt(): IOutputPrompt
       
       /**
         * Create an stdin widget.
         */
-      def createStdin(options: typings.jupyterlabOutputarea.widgetMod.Stdin.IOptions): IStdin = js.native
+      def createStdin(options: typings.jupyterlabOutputarea.widgetMod.Stdin.IOptions): IStdin
     }
     object IContentFactory {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         createOutputPrompt: () => IOutputPrompt,
         createStdin: typings.jupyterlabOutputarea.widgetMod.Stdin.IOptions => IStdin
       ): IContentFactory = {
@@ -203,60 +213,50 @@ object widgetMod {
         __obj.asInstanceOf[IContentFactory]
       }
       
-      @scala.inline
-      implicit class IContentFactoryMutableBuilder[Self <: IContentFactory] (val x: Self) extends AnyVal {
+      extension [Self <: IContentFactory](x: Self) {
         
-        @scala.inline
-        def setCreateOutputPrompt(value: () => IOutputPrompt): Self = StObject.set(x, "createOutputPrompt", js.Any.fromFunction0(value))
+        inline def setCreateOutputPrompt(value: () => IOutputPrompt): Self = StObject.set(x, "createOutputPrompt", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setCreateStdin(value: typings.jupyterlabOutputarea.widgetMod.Stdin.IOptions => IStdin): Self = StObject.set(x, "createStdin", js.Any.fromFunction1(value))
+        inline def setCreateStdin(value: typings.jupyterlabOutputarea.widgetMod.Stdin.IOptions => IStdin): Self = StObject.set(x, "createStdin", js.Any.fromFunction1(value))
       }
     }
     
     /**
       * The options to create an `OutputArea`.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The content factory used by the widget to create children.
         */
-      var contentFactory: js.UndefOr[IContentFactory] = js.native
+      var contentFactory: js.UndefOr[IContentFactory] = js.undefined
       
       /**
         * The model used by the widget.
         */
-      var model: IOutputAreaModel = js.native
+      var model: IOutputAreaModel
       
       /**
         * The rendermime instance used by the widget.
         */
-      var rendermime: IRenderMimeRegistry = js.native
+      var rendermime: IRenderMimeRegistry
     }
     object IOptions {
       
-      @scala.inline
-      def apply(model: IOutputAreaModel, rendermime: IRenderMimeRegistry): IOptions = {
+      inline def apply(model: IOutputAreaModel, rendermime: IRenderMimeRegistry): IOptions = {
         val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any], rendermime = rendermime.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setContentFactory(value: IContentFactory): Self = StObject.set(x, "contentFactory", value.asInstanceOf[js.Any])
+        inline def setContentFactory(value: IContentFactory): Self = StObject.set(x, "contentFactory", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentFactoryUndefined: Self = StObject.set(x, "contentFactory", js.undefined)
+        inline def setContentFactoryUndefined: Self = StObject.set(x, "contentFactory", js.undefined)
         
-        @scala.inline
-        def setModel(value: IOutputAreaModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+        inline def setModel(value: IOutputAreaModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRendermime(value: IRenderMimeRegistry): Self = StObject.set(x, "rendermime", value.asInstanceOf[js.Any])
+        inline def setRendermime(value: IRenderMimeRegistry): Self = StObject.set(x, "rendermime", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -265,7 +265,7 @@ object widgetMod {
   @js.native
   class OutputPrompt () extends IOutputPrompt {
     
-    var _executionCount: js.Any = js.native
+    /* private */ var _executionCount: js.Any = js.native
     
     /**
       * The execution count for the prompt.
@@ -291,13 +291,13 @@ object widgetMod {
       */
     def this(options: typings.jupyterlabOutputarea.widgetMod.Stdin.IOptions) = this()
     
-    var _future: js.Any = js.native
+    /* private */ var _future: js.Any = js.native
     
-    var _input: js.Any = js.native
+    /* private */ var _input: js.Any = js.native
     
-    var _promise: js.Any = js.native
+    /* private */ var _promise: js.Any = js.native
     
-    var _value: js.Any = js.native
+    /* private */ var _value: js.Any = js.native
     
     /**
       * Handle the DOM events for the widget.
@@ -322,28 +322,26 @@ object widgetMod {
     /**
       * The options to create a stdin widget.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The kernel future associated with the request.
         */
-      var future: IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+      var future: IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]]
       
       /**
         * Whether the input is a password.
         */
-      var password: Boolean = js.native
+      var password: Boolean
       
       /**
         * The prompt text.
         */
-      var prompt: String = js.native
+      var prompt: String
     }
     object IOptions {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         future: IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]],
         password: Boolean,
         prompt: String
@@ -352,17 +350,13 @@ object widgetMod {
         __obj.asInstanceOf[typings.jupyterlabOutputarea.widgetMod.Stdin.IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: typings.jupyterlabOutputarea.widgetMod.Stdin.IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.jupyterlabOutputarea.widgetMod.Stdin.IOptions](x: Self) {
         
-        @scala.inline
-        def setFuture(value: IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]]): Self = StObject.set(x, "future", value.asInstanceOf[js.Any])
+        inline def setFuture(value: IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]]): Self = StObject.set(x, "future", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPassword(value: Boolean): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+        inline def setPassword(value: Boolean): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+        inline def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
       }
     }
   }

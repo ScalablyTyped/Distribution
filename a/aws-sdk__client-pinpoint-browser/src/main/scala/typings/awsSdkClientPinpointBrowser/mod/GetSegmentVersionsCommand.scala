@@ -1,5 +1,6 @@
 package typings.awsSdkClientPinpointBrowser.mod
 
+import typings.awsSdkClientPinpointBrowser.typesGetSegmentVersionsInputMod.GetSegmentVersionsInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class GetSegmentVersionsCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.getSegmentVersionsCommandMod.GetSegmentVersionsCommand {
-  def this(input: typings.awsSdkClientPinpointBrowser.typesGetSegmentVersionsInputMod.GetSegmentVersionsInput) = this()
+  def this(input: GetSegmentVersionsInput) = this()
 }

@@ -19,7 +19,6 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listingMod {
@@ -34,165 +33,165 @@ object listingMod {
       */
     def this(options: IOptions) = this()
     
-    var _clipboard: js.Any = js.native
+    /* private */ var _clipboard: js.Any = js.native
     
     /**
       * Copy the selected items, and optionally cut as well.
       */
-    var _copy: js.Any = js.native
+    /* private */ var _copy: js.Any = js.native
     
     /**
       * Delete the files with the given paths.
       */
-    var _delete: js.Any = js.native
+    /* private */ var _delete: js.Any = js.native
     
     /**
       * Allow the user to rename item on a given row.
       */
-    var _doRename: js.Any = js.native
+    /* private */ var _doRename: js.Any = js.native
     
-    var _drag: js.Any = js.native
+    /* private */ var _drag: js.Any = js.native
     
-    var _dragData: js.Any = js.native
+    /* private */ var _dragData: js.Any = js.native
     
-    var _editNode: js.Any = js.native
+    /* private */ var _editNode: js.Any = js.native
     
     /**
       * Handle the `'click'` event for the widget.
       */
-    var _evtClick: js.Any = js.native
+    /* private */ var _evtClick: js.Any = js.native
     
     /**
       * Handle the `'dblclick'` event for the widget.
       */
-    var _evtDblClick: js.Any = js.native
+    /* private */ var _evtDblClick: js.Any = js.native
     
     /**
       * Handle the `'lm-dragenter'` event for the widget.
       */
-    var _evtDragEnter: js.Any = js.native
+    /* private */ var _evtDragEnter: js.Any = js.native
     
     /**
       * Handle the `'lm-dragleave'` event for the widget.
       */
-    var _evtDragLeave: js.Any = js.native
+    /* private */ var _evtDragLeave: js.Any = js.native
     
     /**
       * Handle the `'lm-dragover'` event for the widget.
       */
-    var _evtDragOver: js.Any = js.native
+    /* private */ var _evtDragOver: js.Any = js.native
     
     /**
       * Handle the `'lm-drop'` event for the widget.
       */
-    var _evtDrop: js.Any = js.native
+    /* private */ var _evtDrop: js.Any = js.native
     
     /**
       * Handle the `'keydown'` event for the widget.
       */
-    var _evtKeydown: js.Any = js.native
+    /* private */ var _evtKeydown: js.Any = js.native
     
     /**
       * Handle the `'mousedown'` event for the widget.
       */
-    var _evtMousedown: js.Any = js.native
+    /* private */ var _evtMousedown: js.Any = js.native
     
     /**
       * Handle the `'mousemove'` event for the widget.
       */
-    var _evtMousemove: js.Any = js.native
+    /* private */ var _evtMousemove: js.Any = js.native
     
     /**
       * Handle the `'mouseup'` event for the widget.
       */
-    var _evtMouseup: js.Any = js.native
+    /* private */ var _evtMouseup: js.Any = js.native
     
     /**
       * Handle the `drop` event for the widget.
       */
-    var _evtNativeDrop: js.Any = js.native
+    /* private */ var _evtNativeDrop: js.Any = js.native
     
     /**
       * Handle the `'scroll'` event for the widget.
       */
-    var _evtScroll: js.Any = js.native
+    /* private */ var _evtScroll: js.Any = js.native
     
     /**
       * Handle selection on a file node.
       */
-    var _handleFileSelect: js.Any = js.native
+    /* private */ var _handleFileSelect: js.Any = js.native
     
     /**
       * Handle a multiple select on a file item node.
       */
-    var _handleMultiSelect: js.Any = js.native
+    /* private */ var _handleMultiSelect: js.Any = js.native
     
     /**
       * Handle the opening of an item.
       */
-    var _handleOpen: js.Any = js.native
+    /* private */ var _handleOpen: js.Any = js.native
     
-    var _inRename: js.Any = js.native
+    /* private */ var _inRename: js.Any = js.native
     
-    var _isCut: js.Any = js.native
+    /* private */ var _isCut: js.Any = js.native
     
-    var _isDirty: js.Any = js.native
+    /* private */ var _isDirty: js.Any = js.native
     
-    var _items: js.Any = js.native
+    /* private */ var _items: js.Any = js.native
     
-    var _manager: js.Any = js.native
+    /* private */ var _manager: js.Any = js.native
     
-    var _model: js.Any = js.native
+    /* private */ var _model: js.Any = js.native
     
     /**
       * Handle an `activateRequested` signal from the manager.
       */
-    var _onActivateRequested: js.Any = js.native
+    /* private */ var _onActivateRequested: js.Any = js.native
     
     /**
       * Handle a `fileChanged` signal from the model.
       */
-    var _onFileChanged: js.Any = js.native
+    /* private */ var _onFileChanged: js.Any = js.native
     
-    var _onItemOpened: js.Any = js.native
+    /* private */ var _onItemOpened: js.Any = js.native
     
     /**
       * Handle the `refreshed` signal from the model.
       */
-    var _onModelRefreshed: js.Any = js.native
+    /* private */ var _onModelRefreshed: js.Any = js.native
     
     /**
       * Handle a `pathChanged` signal from the model.
       */
-    var _onPathChanged: js.Any = js.native
+    /* private */ var _onPathChanged: js.Any = js.native
     
-    var _prevPath: js.Any = js.native
+    /* private */ var _prevPath: js.Any = js.native
     
-    var _renderer: js.Any = js.native
+    /* private */ var _renderer: js.Any = js.native
     
-    var _searchPrefix: js.Any = js.native
+    /* private */ var _searchPrefix: js.Any = js.native
     
-    var _searchPrefixTimer: js.Any = js.native
+    /* private */ var _searchPrefixTimer: js.Any = js.native
     
     /**
       * Select a given item.
       */
-    var _selectItem: js.Any = js.native
+    /* private */ var _selectItem: js.Any = js.native
     
-    var _selectTimer: js.Any = js.native
+    /* private */ var _selectTimer: js.Any = js.native
     
-    var _selection: js.Any = js.native
+    /* private */ var _selection: js.Any = js.native
     
-    var _softSelection: js.Any = js.native
+    /* private */ var _softSelection: js.Any = js.native
     
-    var _sortState: js.Any = js.native
+    /* private */ var _sortState: js.Any = js.native
     
-    var _sortedItems: js.Any = js.native
+    /* private */ var _sortedItems: js.Any = js.native
     
     /**
       * Start a drag event.
       */
-    var _startDrag: js.Any = js.native
+    /* private */ var _startDrag: js.Any = js.native
     
     /**
       * Clear the selected items.
@@ -377,12 +376,14 @@ object listingMod {
       */
     @JSImport("@jupyterlab/filebrowser/lib/listing", "DirListing.Renderer")
     @js.native
-    class Renderer () extends IRenderer {
+    class Renderer ()
+      extends StObject
+         with IRenderer {
       
       /**
         * Create a node for a header item.
         */
-      var _createHeaderItemNode: js.Any = js.native
+      /* private */ var _createHeaderItemNode: js.Any = js.native
     }
     
     /**
@@ -399,75 +400,64 @@ object listingMod {
       * To get the contents, call and await the `withContent`
       * method.
       */
-    @js.native
     trait IContentsThunk extends StObject {
       
       /**
         * The contents model.
         */
-      var model: IModel = js.native
+      var model: IModel
       
       /**
         * Fetches the model with contents.
         */
-      def withContent(): js.Promise[IModel] = js.native
+      def withContent(): js.Promise[IModel]
     }
     object IContentsThunk {
       
-      @scala.inline
-      def apply(model: IModel, withContent: () => js.Promise[IModel]): IContentsThunk = {
+      inline def apply(model: IModel, withContent: () => js.Promise[IModel]): IContentsThunk = {
         val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any], withContent = js.Any.fromFunction0(withContent))
         __obj.asInstanceOf[IContentsThunk]
       }
       
-      @scala.inline
-      implicit class IContentsThunkMutableBuilder[Self <: IContentsThunk] (val x: Self) extends AnyVal {
+      extension [Self <: IContentsThunk](x: Self) {
         
-        @scala.inline
-        def setModel(value: IModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+        inline def setModel(value: IModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWithContent(value: () => js.Promise[IModel]): Self = StObject.set(x, "withContent", js.Any.fromFunction0(value))
+        inline def setWithContent(value: () => js.Promise[IModel]): Self = StObject.set(x, "withContent", js.Any.fromFunction0(value))
       }
     }
     
     /**
       * An options object for initializing a file browser directory listing.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * A file browser model instance.
         */
-      var model: FileBrowserModel = js.native
+      var model: FileBrowserModel
       
       /**
         * A renderer for file items.
         *
         * The default is a shared `Renderer` instance.
         */
-      var renderer: js.UndefOr[IRenderer] = js.native
+      var renderer: js.UndefOr[IRenderer] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(model: FileBrowserModel): IOptions = {
+      inline def apply(model: FileBrowserModel): IOptions = {
         val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setModel(value: FileBrowserModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+        inline def setModel(value: FileBrowserModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+        inline def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+        inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
       }
     }
     
@@ -546,35 +536,30 @@ object listingMod {
     /**
       * A sort state.
       */
-    @js.native
     trait ISortState extends StObject {
       
       /**
         * The direction of sort.
         */
-      var direction: ascending | descending = js.native
+      var direction: ascending | descending
       
       /**
         * The sort key.
         */
-      var key: name | last_modified = js.native
+      var key: name | last_modified
     }
     object ISortState {
       
-      @scala.inline
-      def apply(direction: ascending | descending, key: name | last_modified): ISortState = {
+      inline def apply(direction: ascending | descending, key: name | last_modified): ISortState = {
         val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
         __obj.asInstanceOf[ISortState]
       }
       
-      @scala.inline
-      implicit class ISortStateMutableBuilder[Self <: ISortState] (val x: Self) extends AnyVal {
+      extension [Self <: ISortState](x: Self) {
         
-        @scala.inline
-        def setDirection(value: ascending | descending): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+        inline def setDirection(value: ascending | descending): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKey(value: name | last_modified): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: name | last_modified): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       }
     }
   }

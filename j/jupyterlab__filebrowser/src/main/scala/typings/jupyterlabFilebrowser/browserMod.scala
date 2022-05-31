@@ -10,7 +10,6 @@ import typings.luminoWidgets.mod.Widget
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object browserMod {
@@ -25,20 +24,20 @@ object browserMod {
       */
     def this(options: IOptions) = this()
     
-    var _crumbs: js.Any = js.native
+    /* private */ var _crumbs: js.Any = js.native
     
-    var _directoryPending: js.Any = js.native
+    /* private */ var _directoryPending: js.Any = js.native
     
-    var _listing: js.Any = js.native
+    /* private */ var _listing: js.Any = js.native
     
-    var _manager: js.Any = js.native
+    /* private */ var _manager: js.Any = js.native
     
-    var _navigateToCurrentDirectory: js.Any = js.native
+    /* private */ var _navigateToCurrentDirectory: js.Any = js.native
     
     /**
       * Handle a connection lost signal from the model.
       */
-    var _onConnectionFailure: js.Any = js.native
+    /* private */ var _onConnectionFailure: js.Any = js.native
     
     def clearSelectedItems(): Unit = js.native
     
@@ -151,25 +150,24 @@ object browserMod {
     /**
       * An options object for initializing a file browser widget.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The widget/DOM id of the file browser.
         */
-      var id: String = js.native
+      var id: String
       
       /**
         * A file browser model instance.
         */
-      var model: FileBrowserModel = js.native
+      var model: FileBrowserModel
       
       /**
         * An optional renderer for the directory listing area.
         *
         * The default is a shared instance of `DirListing.Renderer`.
         */
-      var renderer: js.UndefOr[IRenderer] = js.native
+      var renderer: js.UndefOr[IRenderer] = js.undefined
       
       /**
         * Whether a file browser automatically restores state when instantiated.
@@ -179,36 +177,28 @@ object browserMod {
         * The file browser model will need to be restored manually for the file
         * browser to be able to save its state.
         */
-      var restore: js.UndefOr[Boolean] = js.native
+      var restore: js.UndefOr[Boolean] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(id: String, model: FileBrowserModel): IOptions = {
+      inline def apply(id: String, model: FileBrowserModel): IOptions = {
         val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModel(value: FileBrowserModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+        inline def setModel(value: FileBrowserModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+        inline def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+        inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
         
-        @scala.inline
-        def setRestore(value: Boolean): Self = StObject.set(x, "restore", value.asInstanceOf[js.Any])
+        inline def setRestore(value: Boolean): Self = StObject.set(x, "restore", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRestoreUndefined: Self = StObject.set(x, "restore", js.undefined)
+        inline def setRestoreUndefined: Self = StObject.set(x, "restore", js.undefined)
       }
     }
   }

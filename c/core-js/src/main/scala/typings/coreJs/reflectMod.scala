@@ -259,7 +259,4 @@ object reflectMod {
   inline def set(target: js.Any, propertyKey: PropertyKey, value: js.Any, receiver: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any], receiver.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def setPrototypeOf(target: js.Any, proto: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("setPrototypeOf")(target.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
-  /* was `typeof core.Reflect` */
-  object Reflect
 }

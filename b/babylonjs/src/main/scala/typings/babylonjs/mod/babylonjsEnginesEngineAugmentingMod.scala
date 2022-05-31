@@ -13,7 +13,6 @@ import typings.std.WebGLQuery
 import typings.std.WebGLTransformFeedback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -62,7 +61,7 @@ object babylonjsEnginesEngineAugmentingMod {
     def _onVRFullScreenTriggered(): Unit = js.native
     
     /** @hidden */
-    var _onVrDisplayConnect: Nullable[js.Function1[/* display */ _, Unit]] = js.native
+    var _onVrDisplayConnect: Nullable[js.Function1[/* display */ js.Any, Unit]] = js.native
     
     /** @hidden */
     var _onVrDisplayDisconnect: Nullable[js.Function0[Unit]] = js.native
@@ -144,36 +143,7 @@ object babylonjsEnginesEngineAugmentingMod {
       uniformsNames: js.Array[String],
       samplers: js.Array[String],
       defines: String,
-      fallbacks: js.UndefOr[scala.Nothing],
-      onCompiled: js.UndefOr[scala.Nothing],
-      onError: js.UndefOr[scala.Nothing],
-      particleSystem: IParticleSystem
-    ): typings.babylonjs.effectMod.Effect = js.native
-    def createEffectForParticles(
-      fragmentName: String,
-      uniformsNames: js.Array[String],
-      samplers: js.Array[String],
-      defines: String,
-      fallbacks: js.UndefOr[scala.Nothing],
-      onCompiled: js.UndefOr[scala.Nothing],
-      onError: js.Function2[/* effect */ typings.babylonjs.effectMod.Effect, /* errors */ String, Unit]
-    ): typings.babylonjs.effectMod.Effect = js.native
-    def createEffectForParticles(
-      fragmentName: String,
-      uniformsNames: js.Array[String],
-      samplers: js.Array[String],
-      defines: String,
-      fallbacks: js.UndefOr[scala.Nothing],
-      onCompiled: js.UndefOr[scala.Nothing],
-      onError: js.Function2[/* effect */ typings.babylonjs.effectMod.Effect, /* errors */ String, Unit],
-      particleSystem: IParticleSystem
-    ): typings.babylonjs.effectMod.Effect = js.native
-    def createEffectForParticles(
-      fragmentName: String,
-      uniformsNames: js.Array[String],
-      samplers: js.Array[String],
-      defines: String,
-      fallbacks: js.UndefOr[scala.Nothing],
+      fallbacks: Unit,
       onCompiled: js.Function1[/* effect */ typings.babylonjs.effectMod.Effect, Unit]
     ): typings.babylonjs.effectMod.Effect = js.native
     def createEffectForParticles(
@@ -181,17 +151,7 @@ object babylonjsEnginesEngineAugmentingMod {
       uniformsNames: js.Array[String],
       samplers: js.Array[String],
       defines: String,
-      fallbacks: js.UndefOr[scala.Nothing],
-      onCompiled: js.Function1[/* effect */ typings.babylonjs.effectMod.Effect, Unit],
-      onError: js.UndefOr[scala.Nothing],
-      particleSystem: IParticleSystem
-    ): typings.babylonjs.effectMod.Effect = js.native
-    def createEffectForParticles(
-      fragmentName: String,
-      uniformsNames: js.Array[String],
-      samplers: js.Array[String],
-      defines: String,
-      fallbacks: js.UndefOr[scala.Nothing],
+      fallbacks: Unit,
       onCompiled: js.Function1[/* effect */ typings.babylonjs.effectMod.Effect, Unit],
       onError: js.Function2[/* effect */ typings.babylonjs.effectMod.Effect, /* errors */ String, Unit]
     ): typings.babylonjs.effectMod.Effect = js.native
@@ -200,9 +160,48 @@ object babylonjsEnginesEngineAugmentingMod {
       uniformsNames: js.Array[String],
       samplers: js.Array[String],
       defines: String,
-      fallbacks: js.UndefOr[scala.Nothing],
+      fallbacks: Unit,
       onCompiled: js.Function1[/* effect */ typings.babylonjs.effectMod.Effect, Unit],
       onError: js.Function2[/* effect */ typings.babylonjs.effectMod.Effect, /* errors */ String, Unit],
+      particleSystem: IParticleSystem
+    ): typings.babylonjs.effectMod.Effect = js.native
+    def createEffectForParticles(
+      fragmentName: String,
+      uniformsNames: js.Array[String],
+      samplers: js.Array[String],
+      defines: String,
+      fallbacks: Unit,
+      onCompiled: js.Function1[/* effect */ typings.babylonjs.effectMod.Effect, Unit],
+      onError: Unit,
+      particleSystem: IParticleSystem
+    ): typings.babylonjs.effectMod.Effect = js.native
+    def createEffectForParticles(
+      fragmentName: String,
+      uniformsNames: js.Array[String],
+      samplers: js.Array[String],
+      defines: String,
+      fallbacks: Unit,
+      onCompiled: Unit,
+      onError: js.Function2[/* effect */ typings.babylonjs.effectMod.Effect, /* errors */ String, Unit]
+    ): typings.babylonjs.effectMod.Effect = js.native
+    def createEffectForParticles(
+      fragmentName: String,
+      uniformsNames: js.Array[String],
+      samplers: js.Array[String],
+      defines: String,
+      fallbacks: Unit,
+      onCompiled: Unit,
+      onError: js.Function2[/* effect */ typings.babylonjs.effectMod.Effect, /* errors */ String, Unit],
+      particleSystem: IParticleSystem
+    ): typings.babylonjs.effectMod.Effect = js.native
+    def createEffectForParticles(
+      fragmentName: String,
+      uniformsNames: js.Array[String],
+      samplers: js.Array[String],
+      defines: String,
+      fallbacks: Unit,
+      onCompiled: Unit,
+      onError: Unit,
       particleSystem: IParticleSystem
     ): typings.babylonjs.effectMod.Effect = js.native
     def createEffectForParticles(
@@ -218,35 +217,6 @@ object babylonjsEnginesEngineAugmentingMod {
       samplers: js.Array[String],
       defines: String,
       fallbacks: typings.babylonjs.effectFallbacksMod.EffectFallbacks,
-      onCompiled: js.UndefOr[scala.Nothing],
-      onError: js.UndefOr[scala.Nothing],
-      particleSystem: IParticleSystem
-    ): typings.babylonjs.effectMod.Effect = js.native
-    def createEffectForParticles(
-      fragmentName: String,
-      uniformsNames: js.Array[String],
-      samplers: js.Array[String],
-      defines: String,
-      fallbacks: typings.babylonjs.effectFallbacksMod.EffectFallbacks,
-      onCompiled: js.UndefOr[scala.Nothing],
-      onError: js.Function2[/* effect */ typings.babylonjs.effectMod.Effect, /* errors */ String, Unit]
-    ): typings.babylonjs.effectMod.Effect = js.native
-    def createEffectForParticles(
-      fragmentName: String,
-      uniformsNames: js.Array[String],
-      samplers: js.Array[String],
-      defines: String,
-      fallbacks: typings.babylonjs.effectFallbacksMod.EffectFallbacks,
-      onCompiled: js.UndefOr[scala.Nothing],
-      onError: js.Function2[/* effect */ typings.babylonjs.effectMod.Effect, /* errors */ String, Unit],
-      particleSystem: IParticleSystem
-    ): typings.babylonjs.effectMod.Effect = js.native
-    def createEffectForParticles(
-      fragmentName: String,
-      uniformsNames: js.Array[String],
-      samplers: js.Array[String],
-      defines: String,
-      fallbacks: typings.babylonjs.effectFallbacksMod.EffectFallbacks,
       onCompiled: js.Function1[/* effect */ typings.babylonjs.effectMod.Effect, Unit]
     ): typings.babylonjs.effectMod.Effect = js.native
     def createEffectForParticles(
@@ -256,16 +226,6 @@ object babylonjsEnginesEngineAugmentingMod {
       defines: String,
       fallbacks: typings.babylonjs.effectFallbacksMod.EffectFallbacks,
       onCompiled: js.Function1[/* effect */ typings.babylonjs.effectMod.Effect, Unit],
-      onError: js.UndefOr[scala.Nothing],
-      particleSystem: IParticleSystem
-    ): typings.babylonjs.effectMod.Effect = js.native
-    def createEffectForParticles(
-      fragmentName: String,
-      uniformsNames: js.Array[String],
-      samplers: js.Array[String],
-      defines: String,
-      fallbacks: typings.babylonjs.effectFallbacksMod.EffectFallbacks,
-      onCompiled: js.Function1[/* effect */ typings.babylonjs.effectMod.Effect, Unit],
       onError: js.Function2[/* effect */ typings.babylonjs.effectMod.Effect, /* errors */ String, Unit]
     ): typings.babylonjs.effectMod.Effect = js.native
     def createEffectForParticles(
@@ -276,6 +236,45 @@ object babylonjsEnginesEngineAugmentingMod {
       fallbacks: typings.babylonjs.effectFallbacksMod.EffectFallbacks,
       onCompiled: js.Function1[/* effect */ typings.babylonjs.effectMod.Effect, Unit],
       onError: js.Function2[/* effect */ typings.babylonjs.effectMod.Effect, /* errors */ String, Unit],
+      particleSystem: IParticleSystem
+    ): typings.babylonjs.effectMod.Effect = js.native
+    def createEffectForParticles(
+      fragmentName: String,
+      uniformsNames: js.Array[String],
+      samplers: js.Array[String],
+      defines: String,
+      fallbacks: typings.babylonjs.effectFallbacksMod.EffectFallbacks,
+      onCompiled: js.Function1[/* effect */ typings.babylonjs.effectMod.Effect, Unit],
+      onError: Unit,
+      particleSystem: IParticleSystem
+    ): typings.babylonjs.effectMod.Effect = js.native
+    def createEffectForParticles(
+      fragmentName: String,
+      uniformsNames: js.Array[String],
+      samplers: js.Array[String],
+      defines: String,
+      fallbacks: typings.babylonjs.effectFallbacksMod.EffectFallbacks,
+      onCompiled: Unit,
+      onError: js.Function2[/* effect */ typings.babylonjs.effectMod.Effect, /* errors */ String, Unit]
+    ): typings.babylonjs.effectMod.Effect = js.native
+    def createEffectForParticles(
+      fragmentName: String,
+      uniformsNames: js.Array[String],
+      samplers: js.Array[String],
+      defines: String,
+      fallbacks: typings.babylonjs.effectFallbacksMod.EffectFallbacks,
+      onCompiled: Unit,
+      onError: js.Function2[/* effect */ typings.babylonjs.effectMod.Effect, /* errors */ String, Unit],
+      particleSystem: IParticleSystem
+    ): typings.babylonjs.effectMod.Effect = js.native
+    def createEffectForParticles(
+      fragmentName: String,
+      uniformsNames: js.Array[String],
+      samplers: js.Array[String],
+      defines: String,
+      fallbacks: typings.babylonjs.effectFallbacksMod.EffectFallbacks,
+      onCompiled: Unit,
+      onError: Unit,
       particleSystem: IParticleSystem
     ): typings.babylonjs.effectMod.Effect = js.native
     

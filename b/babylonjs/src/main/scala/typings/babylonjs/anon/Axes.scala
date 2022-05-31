@@ -2,24 +2,21 @@ package typings.babylonjs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Axes extends StObject {
   
-  var axes: Xrstandardthumbstick = js.native
+  var axes: Xrstandardthumbstick
   
-  var buttons: Xrstandardsqueeze = js.native
+  var buttons: Xrstandardsqueeze
   
-  var defaultAxis: MaxNodeName = js.native
+  var defaultAxis: MaxNodeName
   
-  var defaultButton: PressedNodeName = js.native
+  var defaultButton: PressedNodeName
 }
 object Axes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     axes: Xrstandardthumbstick,
     buttons: Xrstandardsqueeze,
     defaultAxis: MaxNodeName,
@@ -29,19 +26,14 @@ object Axes {
     __obj.asInstanceOf[Axes]
   }
   
-  @scala.inline
-  implicit class AxesMutableBuilder[Self <: Axes] (val x: Self) extends AnyVal {
+  extension [Self <: Axes](x: Self) {
     
-    @scala.inline
-    def setAxes(value: Xrstandardthumbstick): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
+    inline def setAxes(value: Xrstandardthumbstick): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtons(value: Xrstandardsqueeze): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: Xrstandardsqueeze): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultAxis(value: MaxNodeName): Self = StObject.set(x, "defaultAxis", value.asInstanceOf[js.Any])
+    inline def setDefaultAxis(value: MaxNodeName): Self = StObject.set(x, "defaultAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultButton(value: PressedNodeName): Self = StObject.set(x, "defaultButton", value.asInstanceOf[js.Any])
+    inline def setDefaultButton(value: PressedNodeName): Self = StObject.set(x, "defaultButton", value.asInstanceOf[js.Any])
   }
 }

@@ -4,8 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("webix.ui.text")
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.webix.webix.ui.baseview because Already inherited
+- typings.webix.webix.ui.text because var conflicts: $allowsClear, $compareValue_Original, $height, $prepareValue_Original, $renderIcon_Original, $render_Original, $scope, $skin_Original, $view, $width, config, name, on_click_Original, touchable. Inlined  */ @JSGlobal("webix.ui.text")
 @js.native
 class text ()
-  extends StObject
-     with typings.webix.webix.ui.text
+  extends typings.webix.mod.ui.text

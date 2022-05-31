@@ -11,7 +11,6 @@ import typings.std.Element
 import typings.std.HTMLSelectElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -28,11 +27,11 @@ object mod extends Shortcut {
       */
     def this(widget: LogConsolePanel) = this()
     
-    var _id: js.Any = js.native
+    /* private */ var _id: js.Any = js.native
     
-    var _logConsole: js.Any = js.native
+    /* private */ var _logConsole: js.Any = js.native
     
-    var _updateSource: js.Any = js.native
+    /* private */ var _updateSource: js.Any = js.native
     
     /**
       * Handle `change` events for the HTMLSelect component.

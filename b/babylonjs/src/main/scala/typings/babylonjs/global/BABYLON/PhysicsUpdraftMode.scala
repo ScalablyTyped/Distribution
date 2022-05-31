@@ -2,7 +2,6 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.PhysicsUpdraftMode")
@@ -10,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object PhysicsUpdraftMode extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.babylonjs.BABYLON.PhysicsUpdraftMode with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.babylonjs.BABYLON.PhysicsUpdraftMode & Double] = js.native
   
-  /* 0 */ val Center: typings.babylonjs.BABYLON.PhysicsUpdraftMode.Center with Double = js.native
+  /* 0 */ val Center: typings.babylonjs.BABYLON.PhysicsUpdraftMode.Center & Double = js.native
   
-  /* 1 */ val Perpendicular: typings.babylonjs.BABYLON.PhysicsUpdraftMode.Perpendicular with Double = js.native
+  /* 1 */ val Perpendicular: typings.babylonjs.BABYLON.PhysicsUpdraftMode.Perpendicular & Double = js.native
 }

@@ -14,7 +14,6 @@ import typings.luminoSignaling.mod.ISignal
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tokensMod {
@@ -97,18 +96,19 @@ object tokensMod {
     /**
       * The parsed location currently being routed.
       */
-    @js.native
-    trait ILocation extends ReadonlyPartialJSONObject {
+    trait ILocation
+      extends StObject
+         with ReadonlyPartialJSONObject {
       
       /**
         * The location hash.
         */
-      var hash: String = js.native
+      var hash: String
       
       /**
         * The path that matched a routing pattern.
         */
-      var path: String = js.native
+      var path: String
       
       /**
         * The request being routed with the router `base` omitted.
@@ -116,117 +116,98 @@ object tokensMod {
         * #### Notes
         * This field includes the query string and hash, if they exist.
         */
-      var request: String = js.native
+      var request: String
       
       /**
         * The search element, including leading question mark (`'?'`), if any,
         * of the path.
         */
-      var search: js.UndefOr[String] = js.native
+      var search: js.UndefOr[String] = js.undefined
     }
     object ILocation {
       
-      @scala.inline
-      def apply(hash: String, path: String, request: String): ILocation = {
+      inline def apply(hash: String, path: String, request: String): ILocation = {
         val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
         __obj.asInstanceOf[ILocation]
       }
       
-      @scala.inline
-      implicit class ILocationMutableBuilder[Self <: ILocation] (val x: Self) extends AnyVal {
+      extension [Self <: ILocation](x: Self) {
         
-        @scala.inline
-        def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+        inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRequest(value: String): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+        inline def setRequest(value: String): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+        inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+        inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
       }
     }
     
     /**
       * The options passed into a navigation request.
       */
-    @js.native
     trait INavOptions extends StObject {
       
       /**
         * Whether the navigation should be hard URL change instead of an HTML
         * history API change.
         */
-      var hard: js.UndefOr[Boolean] = js.native
+      var hard: js.UndefOr[Boolean] = js.undefined
     }
     object INavOptions {
       
-      @scala.inline
-      def apply(): INavOptions = {
+      inline def apply(): INavOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[INavOptions]
       }
       
-      @scala.inline
-      implicit class INavOptionsMutableBuilder[Self <: INavOptions] (val x: Self) extends AnyVal {
+      extension [Self <: INavOptions](x: Self) {
         
-        @scala.inline
-        def setHard(value: Boolean): Self = StObject.set(x, "hard", value.asInstanceOf[js.Any])
+        inline def setHard(value: Boolean): Self = StObject.set(x, "hard", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHardUndefined: Self = StObject.set(x, "hard", js.undefined)
+        inline def setHardUndefined: Self = StObject.set(x, "hard", js.undefined)
       }
     }
     
     /**
       * The specification for registering a route with the router.
       */
-    @js.native
     trait IRegisterOptions extends StObject {
       
       /**
         * The command string that will be invoked upon matching.
         */
-      var command: String = js.native
+      var command: String
       
       /**
         * The regular expression that will be matched against URLs.
         */
-      var pattern: RegExp = js.native
+      var pattern: RegExp
       
       /**
         * The rank order of the registered rule. A lower rank denotes a higher
         * priority. The default rank is `100`.
         */
-      var rank: js.UndefOr[Double] = js.native
+      var rank: js.UndefOr[Double] = js.undefined
     }
     object IRegisterOptions {
       
-      @scala.inline
-      def apply(command: String, pattern: RegExp): IRegisterOptions = {
+      inline def apply(command: String, pattern: RegExp): IRegisterOptions = {
         val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
         __obj.asInstanceOf[IRegisterOptions]
       }
       
-      @scala.inline
-      implicit class IRegisterOptionsMutableBuilder[Self <: IRegisterOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IRegisterOptions](x: Self) {
         
-        @scala.inline
-        def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+        inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPattern(value: RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+        inline def setPattern(value: RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+        inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
+        inline def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
       }
     }
     

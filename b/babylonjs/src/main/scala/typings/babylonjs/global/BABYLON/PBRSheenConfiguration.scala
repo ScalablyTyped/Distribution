@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.IMaterialSheenDefines
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.PBRSheenConfiguration")
 @js.native
 class PBRSheenConfiguration protected ()
-  extends typings.babylonjs.BABYLON.PBRSheenConfiguration {
+  extends StObject
+     with typings.babylonjs.BABYLON.PBRSheenConfiguration {
   /**
     * Instantiate a new istance of clear coat configuration.
     * @param markAllSubMeshesAsTexturesDirty Callback to flag the material to dirty
@@ -19,6 +19,10 @@ class PBRSheenConfiguration protected ()
 /* static members */
 object PBRSheenConfiguration {
   
+  @JSGlobal("BABYLON.PBRSheenConfiguration")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Add fallbacks to the effect fallbacks list.
     * @param defines defines the Base texture to use.
@@ -26,35 +30,27 @@ object PBRSheenConfiguration {
     * @param currentRank defines the current fallback rank.
     * @returns the new fallback rank.
     */
-  @JSGlobal("BABYLON.PBRSheenConfiguration.AddFallbacks")
-  @js.native
-  def AddFallbacks(
+  inline def AddFallbacks(
     defines: IMaterialSheenDefines,
     fallbacks: typings.babylonjs.BABYLON.EffectFallbacks,
     currentRank: Double
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("AddFallbacks")(defines.asInstanceOf[js.Any], fallbacks.asInstanceOf[js.Any], currentRank.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Add the required samplers to the current list.
     * @param samplers defines the current sampler list.
     */
-  @JSGlobal("BABYLON.PBRSheenConfiguration.AddSamplers")
-  @js.native
-  def AddSamplers(samplers: js.Array[String]): Unit = js.native
+  inline def AddSamplers(samplers: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AddSamplers")(samplers.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Add the required uniforms to the current list.
     * @param uniforms defines the current uniform list.
     */
-  @JSGlobal("BABYLON.PBRSheenConfiguration.AddUniforms")
-  @js.native
-  def AddUniforms(uniforms: js.Array[String]): Unit = js.native
+  inline def AddUniforms(uniforms: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AddUniforms")(uniforms.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Add the required uniforms to the current buffer.
     * @param uniformBuffer defines the current uniform buffer.
     */
-  @JSGlobal("BABYLON.PBRSheenConfiguration.PrepareUniformBuffer")
-  @js.native
-  def PrepareUniformBuffer(uniformBuffer: typings.babylonjs.BABYLON.UniformBuffer): Unit = js.native
+  inline def PrepareUniformBuffer(uniformBuffer: typings.babylonjs.BABYLON.UniformBuffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("PrepareUniformBuffer")(uniformBuffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -6,12 +6,10 @@ import typings.luminoWidgets.mod.Widget
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tokenMod {
   
-  @js.native
   trait IPropertyInspectorProvider extends StObject {
     
     /**
@@ -25,7 +23,7 @@ object tokenMod {
       * A widget can be unregistered by disposing of its property
       * inspector.
       */
-    def register(widget: Widget): IPropertyInspector = js.native
+    def register(widget: Widget): IPropertyInspector
   }
   object IPropertyInspectorProvider {
     
@@ -33,16 +31,16 @@ object tokenMod {
     @js.native
     val ^ : Token[IPropertyInspectorProvider] = js.native
     
-    @scala.inline
-    implicit class IPropertyInspectorProviderMutableBuilder[Self <: IPropertyInspectorProvider] (val x: Self) extends AnyVal {
+    extension [Self <: IPropertyInspectorProvider](x: Self) {
       
-      @scala.inline
-      def setRegister(value: Widget => IPropertyInspector): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
+      inline def setRegister(value: Widget => IPropertyInspector): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
     }
   }
   
   @js.native
-  trait IPropertyInspector extends IDisposable {
+  trait IPropertyInspector
+    extends StObject
+       with IDisposable {
     
     def render(content: Widget): Unit = js.native
     def render(content: ReactElement): Unit = js.native

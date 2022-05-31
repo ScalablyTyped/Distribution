@@ -16,7 +16,6 @@ import typings.babylonjs.typesMod.Nullable
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shaderMaterialMod {
@@ -41,63 +40,63 @@ object shaderMaterialMod {
     def this(name: String, scene: Scene, shaderPath: js.Any) = this()
     def this(name: String, scene: Scene, shaderPath: js.Any, options: PartialIShaderMaterialOpt) = this()
     
-    var _cachedDefines: js.Any = js.native
+    /* private */ var _cachedDefines: js.Any = js.native
     
-    var _cachedWorldViewMatrix: js.Any = js.native
+    /* private */ var _cachedWorldViewMatrix: js.Any = js.native
     
-    var _cachedWorldViewProjectionMatrix: js.Any = js.native
+    /* private */ var _cachedWorldViewProjectionMatrix: js.Any = js.native
     
-    var _checkCache: js.Any = js.native
+    /* private */ var _checkCache: js.Any = js.native
     
-    var _checkUniform: js.Any = js.native
+    /* private */ var _checkUniform: js.Any = js.native
     
-    var _colors3: js.Any = js.native
+    /* private */ var _colors3: js.Any = js.native
     
-    var _colors3Arrays: js.Any = js.native
+    /* private */ var _colors3Arrays: js.Any = js.native
     
-    var _colors4: js.Any = js.native
+    /* private */ var _colors4: js.Any = js.native
     
-    var _colors4Arrays: js.Any = js.native
+    /* private */ var _colors4Arrays: js.Any = js.native
     
-    var _floats: js.Any = js.native
+    /* private */ var _floats: js.Any = js.native
     
-    var _floatsArrays: js.Any = js.native
+    /* private */ var _floatsArrays: js.Any = js.native
     
-    var _ints: js.Any = js.native
+    /* private */ var _ints: js.Any = js.native
     
-    var _matrices: js.Any = js.native
+    /* private */ var _matrices: js.Any = js.native
     
-    var _matrices2x2: js.Any = js.native
+    /* private */ var _matrices2x2: js.Any = js.native
     
-    var _matrices3x3: js.Any = js.native
+    /* private */ var _matrices3x3: js.Any = js.native
     
-    var _matrixArrays: js.Any = js.native
+    /* private */ var _matrixArrays: js.Any = js.native
     
-    var _multiview: js.Any = js.native
+    /* private */ var _multiview: js.Any = js.native
     
-    var _options: js.Any = js.native
+    /* private */ var _options: js.Any = js.native
     
-    var _renderId: js.Any = js.native
+    /* private */ var _renderId: js.Any = js.native
     
-    var _shaderPath: js.Any = js.native
+    /* private */ var _shaderPath: js.Any = js.native
     
-    var _textureArrays: js.Any = js.native
+    /* private */ var _textureArrays: js.Any = js.native
     
-    var _textures: js.Any = js.native
+    /* private */ var _textures: js.Any = js.native
     
-    var _vectors2: js.Any = js.native
+    /* private */ var _vectors2: js.Any = js.native
     
-    var _vectors2Arrays: js.Any = js.native
+    /* private */ var _vectors2Arrays: js.Any = js.native
     
-    var _vectors3: js.Any = js.native
+    /* private */ var _vectors3: js.Any = js.native
     
-    var _vectors3Arrays: js.Any = js.native
+    /* private */ var _vectors3Arrays: js.Any = js.native
     
-    var _vectors4: js.Any = js.native
+    /* private */ var _vectors4: js.Any = js.native
     
-    var _vectors4Arrays: js.Any = js.native
+    /* private */ var _vectors4Arrays: js.Any = js.native
     
-    def bind(world: Matrix, mesh: js.UndefOr[scala.Nothing], effectOverride: Nullable[Effect]): Unit = js.native
+    def bind(world: Matrix, mesh: Unit, effectOverride: Nullable[Effect]): Unit = js.native
     def bind(world: Matrix, mesh: Mesh, effectOverride: Nullable[Effect]): Unit = js.native
     
     def bindOnlyWorldMatrix(world: Matrix, effectOverride: Nullable[Effect]): Unit = js.native
@@ -290,12 +289,8 @@ object shaderMaterialMod {
       * @param rootUrl defines the root URL to use to load textures and relative dependencies
       * @returns a promise that will resolve to the new ShaderMaterial
       */
-    @JSImport("babylonjs/Materials/shaderMaterial", "ShaderMaterial.CreateFromSnippetAsync")
-    @js.native
-    def CreateFromSnippetAsync(snippetId: String, scene: Scene): js.Promise[ShaderMaterial] = js.native
-    @JSImport("babylonjs/Materials/shaderMaterial", "ShaderMaterial.CreateFromSnippetAsync")
-    @js.native
-    def CreateFromSnippetAsync(snippetId: String, scene: Scene, rootUrl: String): js.Promise[ShaderMaterial] = js.native
+    inline def CreateFromSnippetAsync(snippetId: String, scene: Scene): js.Promise[ShaderMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ShaderMaterial]]
+    inline def CreateFromSnippetAsync(snippetId: String, scene: Scene, rootUrl: String): js.Promise[ShaderMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ShaderMaterial]]
     
     /**
       * Creates a shader material from parsed shader material data
@@ -304,9 +299,7 @@ object shaderMaterialMod {
       * @param rootUrl defines the root URL to use to load textures and relative dependencies
       * @returns a new material
       */
-    @JSImport("babylonjs/Materials/shaderMaterial", "ShaderMaterial.Parse")
-    @js.native
-    def Parse(source: js.Any, scene: Scene, rootUrl: String): ShaderMaterial = js.native
+    inline def Parse(source: js.Any, scene: Scene, rootUrl: String): ShaderMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[ShaderMaterial]
     
     /**
       * Creates a new ShaderMaterial from a snippet saved in a remote file
@@ -316,63 +309,56 @@ object shaderMaterialMod {
       * @param rootUrl defines the root URL to use to load textures and relative dependencies
       * @returns a promise that will resolve to the new ShaderMaterial
       */
-    @JSImport("babylonjs/Materials/shaderMaterial", "ShaderMaterial.ParseFromFileAsync")
-    @js.native
-    def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene): js.Promise[ShaderMaterial] = js.native
-    @JSImport("babylonjs/Materials/shaderMaterial", "ShaderMaterial.ParseFromFileAsync")
-    @js.native
-    def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene, rootUrl: String): js.Promise[ShaderMaterial] = js.native
+    inline def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene): js.Promise[ShaderMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ShaderMaterial]]
+    inline def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene, rootUrl: String): js.Promise[ShaderMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ShaderMaterial]]
     
     /** Define the Url to load snippets */
     @JSImport("babylonjs/Materials/shaderMaterial", "ShaderMaterial.SnippetUrl")
     @js.native
     def SnippetUrl: String = js.native
-    @scala.inline
-    def SnippetUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SnippetUrl")(x.asInstanceOf[js.Any])
+    inline def SnippetUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SnippetUrl")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IShaderMaterialOptions extends StObject {
     
     /**
       * The list of attribute names used in the shader
       */
-    var attributes: js.Array[String] = js.native
+    var attributes: js.Array[String]
     
     /**
       * The list of defines used in the shader
       */
-    var defines: js.Array[String] = js.native
+    var defines: js.Array[String]
     
     /**
       * Does the material work in alpha blend mode
       */
-    var needAlphaBlending: Boolean = js.native
+    var needAlphaBlending: Boolean
     
     /**
       * Does the material work in alpha test mode
       */
-    var needAlphaTesting: Boolean = js.native
+    var needAlphaTesting: Boolean
     
     /**
       * The list of sampler names used in the shader
       */
-    var samplers: js.Array[String] = js.native
+    var samplers: js.Array[String]
     
     /**
       * The list of UBO names used in the shader
       */
-    var uniformBuffers: js.Array[String] = js.native
+    var uniformBuffers: js.Array[String]
     
     /**
       * The list of unifrom names used in the shader
       */
-    var uniforms: js.Array[String] = js.native
+    var uniforms: js.Array[String]
   }
   object IShaderMaterialOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attributes: js.Array[String],
       defines: js.Array[String],
       needAlphaBlending: Boolean,
@@ -385,44 +371,31 @@ object shaderMaterialMod {
       __obj.asInstanceOf[IShaderMaterialOptions]
     }
     
-    @scala.inline
-    implicit class IShaderMaterialOptionsMutableBuilder[Self <: IShaderMaterialOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IShaderMaterialOptions](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
       
-      @scala.inline
-      def setDefines(value: js.Array[String]): Self = StObject.set(x, "defines", value.asInstanceOf[js.Any])
+      inline def setDefines(value: js.Array[String]): Self = StObject.set(x, "defines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefinesVarargs(value: String*): Self = StObject.set(x, "defines", js.Array(value :_*))
+      inline def setDefinesVarargs(value: String*): Self = StObject.set(x, "defines", js.Array(value :_*))
       
-      @scala.inline
-      def setNeedAlphaBlending(value: Boolean): Self = StObject.set(x, "needAlphaBlending", value.asInstanceOf[js.Any])
+      inline def setNeedAlphaBlending(value: Boolean): Self = StObject.set(x, "needAlphaBlending", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeedAlphaTesting(value: Boolean): Self = StObject.set(x, "needAlphaTesting", value.asInstanceOf[js.Any])
+      inline def setNeedAlphaTesting(value: Boolean): Self = StObject.set(x, "needAlphaTesting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSamplers(value: js.Array[String]): Self = StObject.set(x, "samplers", value.asInstanceOf[js.Any])
+      inline def setSamplers(value: js.Array[String]): Self = StObject.set(x, "samplers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSamplersVarargs(value: String*): Self = StObject.set(x, "samplers", js.Array(value :_*))
+      inline def setSamplersVarargs(value: String*): Self = StObject.set(x, "samplers", js.Array(value :_*))
       
-      @scala.inline
-      def setUniformBuffers(value: js.Array[String]): Self = StObject.set(x, "uniformBuffers", value.asInstanceOf[js.Any])
+      inline def setUniformBuffers(value: js.Array[String]): Self = StObject.set(x, "uniformBuffers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniformBuffersVarargs(value: String*): Self = StObject.set(x, "uniformBuffers", js.Array(value :_*))
+      inline def setUniformBuffersVarargs(value: String*): Self = StObject.set(x, "uniformBuffers", js.Array(value :_*))
       
-      @scala.inline
-      def setUniforms(value: js.Array[String]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
+      inline def setUniforms(value: js.Array[String]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniformsVarargs(value: String*): Self = StObject.set(x, "uniforms", js.Array(value :_*))
+      inline def setUniformsVarargs(value: String*): Self = StObject.set(x, "uniforms", js.Array(value :_*))
     }
   }
 }

@@ -4,15 +4,16 @@ import typings.std.ArrayBuffer
 import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DracoCompression extends IDisposable {
+trait DracoCompression
+  extends StObject
+     with IDisposable {
   
-  var _decoderModulePromise: js.Any = js.native
+  /* private */ var _decoderModulePromise: js.Any = js.native
   
-  var _workerPoolPromise: js.Any = js.native
+  /* private */ var _workerPoolPromise: js.Any = js.native
   
   /**
     * Decode Draco compressed mesh data to vertex data.

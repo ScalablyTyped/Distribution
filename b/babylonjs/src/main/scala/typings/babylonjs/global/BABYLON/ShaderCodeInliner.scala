@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.ShaderCodeInliner")
 @js.native
 class ShaderCodeInliner protected ()
-  extends typings.babylonjs.BABYLON.ShaderCodeInliner {
+  extends StObject
+     with typings.babylonjs.BABYLON.ShaderCodeInliner {
   /**
     * Initializes the inliner
     * @param sourceCode shader code source to inline

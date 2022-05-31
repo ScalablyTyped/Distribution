@@ -19,26 +19,23 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@jupyterlab/ui-components", "Button")
+  @JSImport("@jupyterlab/ui-components", JSImport.Namespace)
   @js.native
-  def Button(props: IButtonProps with CommonProps[_]): Element = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@jupyterlab/ui-components", "Checkbox")
-  @js.native
-  def Checkbox(
-    props: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ICheckboxProps */ js.Any) with CommonProps[_]
-  ): Element = js.native
+  inline def Button(props: IButtonProps & CommonProps[js.Any]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("@jupyterlab/ui-components", "Collapse")
-  @js.native
-  def Collapse(
-    props: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ICollapseProps */ js.Any) with CommonProps[_]
-  ): Element = js.native
+  inline def Checkbox(
+    props: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ICheckboxProps */ js.Any) & CommonProps[js.Any]
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Checkbox")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  inline def Collapse(
+    props: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ICollapseProps */ js.Any) & CommonProps[js.Any]
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Collapse")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   object CommandPaletteSvg {
     
@@ -117,9 +114,7 @@ object mod {
   @js.native
   val ILabIconManager: Token[typings.jupyterlabUiComponents.tokensMod.ILabIconManager] = js.native
   
-  @JSImport("@jupyterlab/ui-components", "InputGroup")
-  @js.native
-  def InputGroup(props: IInputGroupProps with CommonProps[_]): Element = js.native
+  inline def InputGroup(props: IInputGroupProps & CommonProps[js.Any]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InputGroup")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@jupyterlab/ui-components", "LabIcon")
   @js.native
@@ -140,14 +135,12 @@ object mod {
     @JSImport("@jupyterlab/ui-components", "LabIcon._debug")
     @js.native
     def _debug: js.Any = js.native
-    @scala.inline
-    def _debug_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_debug")(x.asInstanceOf[js.Any])
+    inline def _debug_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_debug")(x.asInstanceOf[js.Any])
     
     @JSImport("@jupyterlab/ui-components", "LabIcon._instances")
     @js.native
     def _instances: js.Any = js.native
-    @scala.inline
-    def _instances_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instances")(x.asInstanceOf[js.Any])
+    inline def _instances_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instances")(x.asInstanceOf[js.Any])
     
     /** *********
       * statics *
@@ -160,9 +153,7 @@ object mod {
       *
       * @returns the cleaned container
       */
-    @JSImport("@jupyterlab/ui-components", "LabIcon.remove")
-    @js.native
-    def remove(container: HTMLElement): HTMLElement = js.native
+    inline def remove(container: HTMLElement): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(container.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
     
     /**
       * Resolve an icon name or a {name, svgstr} pair into an
@@ -173,9 +164,7 @@ object mod {
       *
       * @returns a LabIcon instance
       */
-    @JSImport("@jupyterlab/ui-components", "LabIcon.resolve")
-    @js.native
-    def resolve(hasIcon: Icon): typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+    inline def resolve(hasIcon: Icon): typings.jupyterlabUiComponents.labiconMod.LabIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hasIcon.asInstanceOf[js.Any]).asInstanceOf[typings.jupyterlabUiComponents.labiconMod.LabIcon]
     
     /**
       * Resolve an icon name or a {name, svgstr} pair into a DOM element.
@@ -198,9 +187,7 @@ object mod {
       *
       * @returns a DOM node with the resolved icon rendered into it
       */
-    @JSImport("@jupyterlab/ui-components", "LabIcon.resolveElement")
-    @js.native
-    def resolveElement(hasIconIconClassFallbackProps: PartialIResolverPropsIPro): HTMLElement = js.native
+    inline def resolveElement(hasIconIconClassFallbackProps: PartialIResolverPropsIPro): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveElement")(hasIconIconClassFallbackProps.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
     
     /**
       * Resolve an icon name or a {name, svgstr} pair into a React component.
@@ -223,28 +210,20 @@ object mod {
       *
       * @returns a React component that will render the resolved icon
       */
-    @JSImport("@jupyterlab/ui-components", "LabIcon.resolveReact")
-    @js.native
-    def resolveReact(hasIconIconClassFallbackProps: PartialIResolverPropsIRea): Element = js.native
+    inline def resolveReact(hasIconIconClassFallbackProps: PartialIResolverPropsIRea): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveReact")(hasIconIconClassFallbackProps.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     /**
       * Resolve a {name, svgstr} pair into an actual svg node.
       */
-    @JSImport("@jupyterlab/ui-components", "LabIcon.resolveSvg")
-    @js.native
-    def resolveSvg(hasNameSvgstr: IIcon): HTMLElement | Null = js.native
+    inline def resolveSvg(hasNameSvgstr: IIcon): HTMLElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveSvg")(hasNameSvgstr.asInstanceOf[js.Any]).asInstanceOf[HTMLElement | Null]
     
     /**
       * Toggle icon debug from off-to-on, or vice-versa.
       *
       * @param debug - optional boolean to force debug on or off
       */
-    @JSImport("@jupyterlab/ui-components", "LabIcon.toggleDebug")
-    @js.native
-    def toggleDebug(): Unit = js.native
-    @JSImport("@jupyterlab/ui-components", "LabIcon.toggleDebug")
-    @js.native
-    def toggleDebug(debug: Boolean): Unit = js.native
+    inline def toggleDebug(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleDebug")().asInstanceOf[Unit]
+    inline def toggleDebug(debug: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleDebug")(debug.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("@jupyterlab/ui-components", "MenuSvg")
@@ -259,6 +238,10 @@ object mod {
     def this(options: typings.luminoWidgets.menuMod.Menu.IOptions) = this()
   }
   object MenuSvg {
+    
+    @JSImport("@jupyterlab/ui-components", "MenuSvg")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * a modified implementation of the Menu Renderer
@@ -275,16 +258,12 @@ object mod {
     @js.native
     val defaultRenderer: typings.jupyterlabUiComponents.menusvgMod.MenuSvg.Renderer = js.native
     
-    @JSImport("@jupyterlab/ui-components", "MenuSvg.overrideDefaultRenderer")
-    @js.native
-    def overrideDefaultRenderer(menu: Menu): Unit = js.native
+    inline def overrideDefaultRenderer(menu: Menu): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("overrideDefaultRenderer")(menu.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @JSImport("@jupyterlab/ui-components", "Select")
-  @js.native
-  def Select(
-    props: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISelectProps<any> */ js.Any) with CommonProps[_]
-  ): Element = js.native
+  inline def Select(
+    props: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISelectProps<any> */ js.Any) & CommonProps[js.Any]
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Select")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@jupyterlab/ui-components", "TabBarSvg")
   @js.native
@@ -379,13 +358,9 @@ object mod {
   @js.native
   val circleIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   
-  @JSImport("@jupyterlab/ui-components", "classesDedupe")
-  @js.native
-  def classesDedupe_false(classes: (js.UndefOr[String | `false` | Null | StringDictionary[js.Any]])*): String = js.native
+  inline def classesDedupe_false(classes: (js.UndefOr[String | `false` | Null | StringDictionary[js.Any]])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("classesDedupe")(classes.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@jupyterlab/ui-components", "classes")
-  @js.native
-  def classes_false(classes: (js.UndefOr[String | `false` | Null | StringDictionary[js.Any]])*): String = js.native
+  inline def classes_false(classes: (js.UndefOr[String | `false` | Null | StringDictionary[js.Any]])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("classes")(classes.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("@jupyterlab/ui-components", "clearIcon")
   @js.native
@@ -443,12 +418,8 @@ object mod {
   @js.native
   val folderIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   
-  @JSImport("@jupyterlab/ui-components", "getReactAttrs")
-  @js.native
-  def getReactAttrs(elem: typings.std.Element): js.Any = js.native
-  @JSImport("@jupyterlab/ui-components", "getReactAttrs")
-  @js.native
-  def getReactAttrs(elem: typings.std.Element, hasIgnore: Ignore): js.Any = js.native
+  inline def getReactAttrs(elem: typings.std.Element): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getReactAttrs")(elem.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getReactAttrs(elem: typings.std.Element, hasIgnore: Ignore): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getReactAttrs")(elem.asInstanceOf[js.Any], hasIgnore.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @JSImport("@jupyterlab/ui-components", "html5Icon")
   @js.native

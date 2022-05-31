@@ -2,17 +2,16 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EffectRenderer extends StObject {
   
-  var _fullscreenViewport: js.Any = js.native
+  /* private */ var _fullscreenViewport: js.Any = js.native
   
-  var _indexBuffer: js.Any = js.native
+  /* private */ var _indexBuffer: js.Any = js.native
   
-  var _vertexBuffers: js.Any = js.native
+  /* private */ var _vertexBuffers: js.Any = js.native
   
   /**
     * Sets the current effect wrapper to use during draw.
@@ -38,9 +37,9 @@ trait EffectRenderer extends StObject {
     */
   def draw(): Unit = js.native
   
-  var engine: js.Any = js.native
+  /* private */ var engine: js.Any = js.native
   
-  var isRenderTargetTexture: js.Any = js.native
+  /* private */ var isRenderTargetTexture: js.Any = js.native
   
   /**
     * renders one or more effects to a specified texture

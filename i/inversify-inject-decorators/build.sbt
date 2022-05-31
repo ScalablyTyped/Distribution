@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "inversify-inject-decorators"
-version := "3.1.0-ca4e0b"
+version := "3.1.0-542575"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "inversify" % "5.0.1-9d0ebb",
-  "org.scalablytyped" %%% "std" % "4.1-2f6855")
+  "org.scalablytyped" %%% "inversify" % "5.0.1-b0b0e3",
+  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

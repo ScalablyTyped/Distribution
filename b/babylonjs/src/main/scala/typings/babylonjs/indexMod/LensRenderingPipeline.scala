@@ -2,7 +2,6 @@ package typings.babylonjs.indexMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "LensRenderingPipeline")
@@ -41,14 +40,14 @@ class LensRenderingPipeline protected ()
     name: String,
     parameters: js.Any,
     scene: typings.babylonjs.sceneMod.Scene,
-    ratio: js.UndefOr[scala.Nothing],
+    ratio: Double,
     cameras: js.Array[typings.babylonjs.cameraMod.Camera]
   ) = this()
   def this(
     name: String,
     parameters: js.Any,
     scene: typings.babylonjs.sceneMod.Scene,
-    ratio: Double,
+    ratio: Unit,
     cameras: js.Array[typings.babylonjs.cameraMod.Camera]
   ) = this()
 }

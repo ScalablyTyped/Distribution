@@ -2,18 +2,17 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GeometryBufferRendererSceneComponent extends ISceneComponent {
+trait GeometryBufferRendererSceneComponent
+  extends StObject
+     with ISceneComponent {
   
-  var _gatherRenderTargets: js.Any = js.native
+  /* private */ var _gatherRenderTargets: js.Any
 }
 object GeometryBufferRendererSceneComponent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _gatherRenderTargets: js.Any,
     dispose: () => Unit,
     name: String,
@@ -25,10 +24,8 @@ object GeometryBufferRendererSceneComponent {
     __obj.asInstanceOf[GeometryBufferRendererSceneComponent]
   }
   
-  @scala.inline
-  implicit class GeometryBufferRendererSceneComponentMutableBuilder[Self <: GeometryBufferRendererSceneComponent] (val x: Self) extends AnyVal {
+  extension [Self <: GeometryBufferRendererSceneComponent](x: Self) {
     
-    @scala.inline
-    def set_gatherRenderTargets(value: js.Any): Self = StObject.set(x, "_gatherRenderTargets", value.asInstanceOf[js.Any])
+    inline def set_gatherRenderTargets(value: js.Any): Self = StObject.set(x, "_gatherRenderTargets", value.asInstanceOf[js.Any])
   }
 }

@@ -4,13 +4,13 @@ import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.BABYLON.PostProcessOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.BloomMergePostProcess")
 @js.native
 class BloomMergePostProcess protected ()
-  extends typings.babylonjs.BABYLON.BloomMergePostProcess {
+  extends StObject
+     with typings.babylonjs.BABYLON.BloomMergePostProcess {
   /**
     * Creates a new instance of @see BloomMergePostProcess
     * @param name The name of the effect.

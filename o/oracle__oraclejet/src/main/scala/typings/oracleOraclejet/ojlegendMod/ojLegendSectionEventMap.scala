@@ -25,24 +25,23 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ojLegendSectionEventMap extends HTMLElementEventMap {
+trait ojLegendSectionEventMap
+  extends StObject
+     with HTMLElementEventMap {
   
-  var collapsibleChanged: JetElementCustomEvent[js.UndefOr[on | off]] = js.native
+  var collapsibleChanged: JetElementCustomEvent[js.UndefOr[on | off]]
   
-  var textChanged: JetElementCustomEvent[js.UndefOr[String]] = js.native
+  var textChanged: JetElementCustomEvent[js.UndefOr[String]]
   
-  var textHalignChanged: JetElementCustomEvent[js.UndefOr[center | end | start]] = js.native
+  var textHalignChanged: JetElementCustomEvent[js.UndefOr[center | end | start]]
   
-  var textStyleChanged: JetElementCustomEvent[js.UndefOr[js.Object]] = js.native
+  var textStyleChanged: JetElementCustomEvent[js.UndefOr[js.Object]]
 }
 object ojLegendSectionEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,
@@ -144,19 +143,14 @@ object ojLegendSectionEventMap {
     __obj.asInstanceOf[ojLegendSectionEventMap]
   }
   
-  @scala.inline
-  implicit class ojLegendSectionEventMapMutableBuilder[Self <: ojLegendSectionEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: ojLegendSectionEventMap](x: Self) {
     
-    @scala.inline
-    def setCollapsibleChanged(value: JetElementCustomEvent[js.UndefOr[on | off]]): Self = StObject.set(x, "collapsibleChanged", value.asInstanceOf[js.Any])
+    inline def setCollapsibleChanged(value: JetElementCustomEvent[js.UndefOr[on | off]]): Self = StObject.set(x, "collapsibleChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = StObject.set(x, "textChanged", value.asInstanceOf[js.Any])
+    inline def setTextChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = StObject.set(x, "textChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextHalignChanged(value: JetElementCustomEvent[js.UndefOr[center | end | start]]): Self = StObject.set(x, "textHalignChanged", value.asInstanceOf[js.Any])
+    inline def setTextHalignChanged(value: JetElementCustomEvent[js.UndefOr[center | end | start]]): Self = StObject.set(x, "textHalignChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextStyleChanged(value: JetElementCustomEvent[js.UndefOr[js.Object]]): Self = StObject.set(x, "textStyleChanged", value.asInstanceOf[js.Any])
+    inline def setTextStyleChanged(value: JetElementCustomEvent[js.UndefOr[js.Object]]): Self = StObject.set(x, "textStyleChanged", value.asInstanceOf[js.Any])
   }
 }

@@ -4,7 +4,6 @@ import typings.babylonjs.cameraInputsManagerMod.ICameraInput
 import typings.babylonjs.flyCameraMod.FlyCamera
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object flyCameraMouseInputMod {
@@ -16,16 +15,18 @@ object flyCameraMouseInputMod {
     * @param touchEnabled Define if touch is enabled. (Default is true.)
     * @see https://doc.babylonjs.com/how_to/customizing_camera_inputs
     */
-  class FlyCameraMouseInput () extends ICameraInput[FlyCamera] {
+  class FlyCameraMouseInput ()
+    extends StObject
+       with ICameraInput[FlyCamera] {
     def this(touchEnabled: Boolean) = this()
     
-    var _observer: js.Any = js.native
+    /* private */ var _observer: js.Any = js.native
     
-    var _onMouseMove: js.Any = js.native
+    /* private */ var _onMouseMove: js.Any = js.native
     
-    var _pointerInput: js.Any = js.native
+    /* private */ var _pointerInput: js.Any = js.native
     
-    var _rollObserver: js.Any = js.native
+    /* private */ var _rollObserver: js.Any = js.native
     
     /**
       * Detect if any button is being pressed while mouse is moved.
@@ -68,16 +69,16 @@ object flyCameraMouseInputMod {
     @JSName("camera")
     var camera_FlyCameraMouseInput: FlyCamera = js.native
     
-    var element: js.Any = js.native
+    /* private */ var element: js.Any = js.native
     
-    var noPreventDefault: js.Any = js.native
+    /* private */ var noPreventDefault: js.Any = js.native
     
-    var previousPosition: js.Any = js.native
+    /* private */ var previousPosition: js.Any = js.native
     
     /**
       * Rotate camera by mouse offset.
       */
-    var rotateCamera: js.Any = js.native
+    /* private */ var rotateCamera: js.Any = js.native
     
     /**
       * Defines if touch is enabled. (Default is true.)

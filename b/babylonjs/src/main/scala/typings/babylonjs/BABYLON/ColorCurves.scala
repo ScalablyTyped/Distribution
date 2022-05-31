@@ -2,59 +2,58 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ColorCurves extends StObject {
   
-  var _dirty: js.Any = js.native
+  /* private */ var _dirty: js.Any = js.native
   
-  var _globalCurve: js.Any = js.native
+  /* private */ var _globalCurve: js.Any = js.native
   
-  var _globalDensity: js.Any = js.native
+  /* private */ var _globalDensity: js.Any = js.native
   
-  var _globalExposure: js.Any = js.native
+  /* private */ var _globalExposure: js.Any = js.native
   
-  var _globalHue: js.Any = js.native
+  /* private */ var _globalHue: js.Any = js.native
   
-  var _globalSaturation: js.Any = js.native
+  /* private */ var _globalSaturation: js.Any = js.native
   
-  var _highlightsCurve: js.Any = js.native
+  /* private */ var _highlightsCurve: js.Any = js.native
   
-  var _highlightsDensity: js.Any = js.native
+  /* private */ var _highlightsDensity: js.Any = js.native
   
-  var _highlightsExposure: js.Any = js.native
+  /* private */ var _highlightsExposure: js.Any = js.native
   
-  var _highlightsHue: js.Any = js.native
+  /* private */ var _highlightsHue: js.Any = js.native
   
-  var _highlightsSaturation: js.Any = js.native
+  /* private */ var _highlightsSaturation: js.Any = js.native
   
-  var _midtonesCurve: js.Any = js.native
+  /* private */ var _midtonesCurve: js.Any = js.native
   
-  var _midtonesDensity: js.Any = js.native
+  /* private */ var _midtonesDensity: js.Any = js.native
   
-  var _midtonesExposure: js.Any = js.native
+  /* private */ var _midtonesExposure: js.Any = js.native
   
-  var _midtonesHue: js.Any = js.native
+  /* private */ var _midtonesHue: js.Any = js.native
   
-  var _midtonesSaturation: js.Any = js.native
+  /* private */ var _midtonesSaturation: js.Any = js.native
   
-  var _negativeCurve: js.Any = js.native
+  /* private */ var _negativeCurve: js.Any = js.native
   
-  var _positiveCurve: js.Any = js.native
+  /* private */ var _positiveCurve: js.Any = js.native
   
-  var _shadowsCurve: js.Any = js.native
+  /* private */ var _shadowsCurve: js.Any = js.native
   
-  var _shadowsDensity: js.Any = js.native
+  /* private */ var _shadowsDensity: js.Any = js.native
   
-  var _shadowsExposure: js.Any = js.native
+  /* private */ var _shadowsExposure: js.Any = js.native
   
-  var _shadowsHue: js.Any = js.native
+  /* private */ var _shadowsHue: js.Any = js.native
   
-  var _shadowsSaturation: js.Any = js.native
+  /* private */ var _shadowsSaturation: js.Any = js.native
   
-  var _tempColor: js.Any = js.native
+  /* private */ var _tempColor: js.Any = js.native
   
   /**
     * Returns the class name
@@ -70,7 +69,7 @@ trait ColorCurves extends StObject {
     * @param exposure The exposure.
     * @param result The result data container.
     */
-  var getColorGradingDataToRef: js.Any = js.native
+  /* private */ var getColorGradingDataToRef: js.Any = js.native
   
   /**
     * Gets the global Density value.

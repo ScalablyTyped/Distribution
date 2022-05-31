@@ -13,7 +13,6 @@ import typings.babylonjs.webXRPlaneDetectorMod.IWebXRPlaneDetectorOptions
 import typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object featuresIndexMod {
@@ -175,8 +174,7 @@ object featuresIndexMod {
     @JSImport("babylonjs/XR/features/index", "WebXRControllerPointerSelection._idCounter")
     @js.native
     def _idCounter: js.Any = js.native
-    @scala.inline
-    def _idCounter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_idCounter")(x.asInstanceOf[js.Any])
+    inline def _idCounter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_idCounter")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/XR/features/index", "WebXRFeaturePointSystem")
@@ -239,7 +237,7 @@ object featuresIndexMod {
     xrController: WebXRInputSource,
       /** the meshes to be used to track the hand joints */
     trackedMeshes: js.Array[AbstractMesh],
-      _handMesh: js.UndefOr[scala.Nothing],
+      _handMesh: Unit,
       _rigMapping: js.Array[String]
     ) = this()
     def this(
@@ -255,16 +253,7 @@ object featuresIndexMod {
     xrController: WebXRInputSource,
       /** the meshes to be used to track the hand joints */
     trackedMeshes: js.Array[AbstractMesh],
-      _handMesh: js.UndefOr[scala.Nothing],
-      _rigMapping: js.UndefOr[scala.Nothing],
-      disableDefaultHandMesh: Boolean
-    ) = this()
-    def this(
-      /** the controller to which the hand correlates */
-    xrController: WebXRInputSource,
-      /** the meshes to be used to track the hand joints */
-    trackedMeshes: js.Array[AbstractMesh],
-      _handMesh: js.UndefOr[scala.Nothing],
+      _handMesh: Unit,
       _rigMapping: js.Array[String],
       disableDefaultHandMesh: Boolean
     ) = this()
@@ -273,8 +262,8 @@ object featuresIndexMod {
     xrController: WebXRInputSource,
       /** the meshes to be used to track the hand joints */
     trackedMeshes: js.Array[AbstractMesh],
-      _handMesh: AbstractMesh,
-      _rigMapping: js.UndefOr[scala.Nothing],
+      _handMesh: Unit,
+      _rigMapping: Unit,
       disableDefaultHandMesh: Boolean
     ) = this()
     def this(
@@ -284,6 +273,15 @@ object featuresIndexMod {
     trackedMeshes: js.Array[AbstractMesh],
       _handMesh: AbstractMesh,
       _rigMapping: js.Array[String],
+      disableDefaultHandMesh: Boolean
+    ) = this()
+    def this(
+      /** the controller to which the hand correlates */
+    xrController: WebXRInputSource,
+      /** the meshes to be used to track the hand joints */
+    trackedMeshes: js.Array[AbstractMesh],
+      _handMesh: AbstractMesh,
+      _rigMapping: Unit,
       disableDefaultHandMesh: Boolean
     ) = this()
   }
@@ -331,8 +329,7 @@ object featuresIndexMod {
     @JSImport("babylonjs/XR/features/index", "WebXRHandTracking._idCounter")
     @js.native
     def _idCounter: js.Any = js.native
-    @scala.inline
-    def _idCounter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_idCounter")(x.asInstanceOf[js.Any])
+    inline def _idCounter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_idCounter")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/XR/features/index", "WebXRHitTest")
@@ -394,6 +391,10 @@ object featuresIndexMod {
   /* static members */
   object WebXRHitTestLegacy {
     
+    @JSImport("babylonjs/XR/features/index", "WebXRHitTestLegacy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * The module's name
       */
@@ -419,17 +420,13 @@ object featuresIndexMod {
       * @param filter filter function that will filter the results
       * @returns a promise that resolves with an array of native XR hit result in xr coordinates system
       */
-    @JSImport("babylonjs/XR/features/index", "WebXRHitTestLegacy.XRHitTestWithRay")
-    @js.native
-    def XRHitTestWithRay(xrSession: XRSession, xrRay: XRRay, referenceSpace: XRReferenceSpace): js.Promise[js.Array[XRHitResult]] = js.native
-    @JSImport("babylonjs/XR/features/index", "WebXRHitTestLegacy.XRHitTestWithRay")
-    @js.native
-    def XRHitTestWithRay(
+    inline def XRHitTestWithRay(xrSession: XRSession, xrRay: XRRay, referenceSpace: XRReferenceSpace): js.Promise[js.Array[XRHitResult]] = (^.asInstanceOf[js.Dynamic].applyDynamic("XRHitTestWithRay")(xrSession.asInstanceOf[js.Any], xrRay.asInstanceOf[js.Any], referenceSpace.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[XRHitResult]]]
+    inline def XRHitTestWithRay(
       xrSession: XRSession,
       xrRay: XRRay,
       referenceSpace: XRReferenceSpace,
       filter: js.Function1[/* result */ XRHitResult, Boolean]
-    ): js.Promise[js.Array[XRHitResult]] = js.native
+    ): js.Promise[js.Array[XRHitResult]] = (^.asInstanceOf[js.Dynamic].applyDynamic("XRHitTestWithRay")(xrSession.asInstanceOf[js.Any], xrRay.asInstanceOf[js.Any], referenceSpace.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[XRHitResult]]]
     
     /**
       * Execute a hit test on the current running session using a select event returned from a transient input (such as touch)
@@ -437,9 +434,7 @@ object featuresIndexMod {
       * @param referenceSpace the reference space to use for this hit test
       * @returns a promise that resolves with an array of native XR hit result in xr coordinates system
       */
-    @JSImport("babylonjs/XR/features/index", "WebXRHitTestLegacy.XRHitTestWithSelectEvent")
-    @js.native
-    def XRHitTestWithSelectEvent(event: XRInputSourceEvent, referenceSpace: XRReferenceSpace): js.Promise[js.Array[XRHitResult]] = js.native
+    inline def XRHitTestWithSelectEvent(event: XRInputSourceEvent, referenceSpace: XRReferenceSpace): js.Promise[js.Array[XRHitResult]] = (^.asInstanceOf[js.Dynamic].applyDynamic("XRHitTestWithSelectEvent")(event.asInstanceOf[js.Any], referenceSpace.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[XRHitResult]]]
   }
   
   @JSImport("babylonjs/XR/features/index", "WebXRMotionControllerTeleportation")

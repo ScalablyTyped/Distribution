@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.PlaneRotationGizmo")
 @js.native
 class PlaneRotationGizmo protected ()
-  extends typings.babylonjs.BABYLON.PlaneRotationGizmo {
+  extends StObject
+     with typings.babylonjs.BABYLON.PlaneRotationGizmo {
   /**
     * Creates a PlaneRotationGizmo
     * @param gizmoLayer The utility layer the gizmo will be added to
@@ -28,6 +28,12 @@ class PlaneRotationGizmo protected ()
     useEulerRotation: js.UndefOr[Boolean],
     thickness: js.UndefOr[Double]
   ) = this()
+  
+  /**
+    * Releases all held resources
+    */
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
 }
 /* static members */
 object PlaneRotationGizmo {
@@ -39,6 +45,5 @@ object PlaneRotationGizmo {
   @JSGlobal("BABYLON.PlaneRotationGizmo._CircleConstants")
   @js.native
   def _CircleConstants: js.Any = js.native
-  @scala.inline
-  def _CircleConstants_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CircleConstants")(x.asInstanceOf[js.Any])
+  inline def _CircleConstants_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CircleConstants")(x.asInstanceOf[js.Any])
 }

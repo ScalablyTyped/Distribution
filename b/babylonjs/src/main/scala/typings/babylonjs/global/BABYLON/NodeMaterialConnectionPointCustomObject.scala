@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.NodeMaterialConnectionPointCustomObject")
 @js.native
 class NodeMaterialConnectionPointCustomObject[T /* <: typings.babylonjs.BABYLON.NodeMaterialBlock */] protected ()
-  extends typings.babylonjs.BABYLON.NodeMaterialConnectionPointCustomObject[T] {
+  extends StObject
+     with typings.babylonjs.BABYLON.NodeMaterialConnectionPointCustomObject[T] {
   /**
     * Creates a new connection point
     * @param name defines the connection point name

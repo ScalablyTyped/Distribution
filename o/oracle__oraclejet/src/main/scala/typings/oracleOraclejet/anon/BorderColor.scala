@@ -33,46 +33,43 @@ import typings.oracleOraclejet.oracleOraclejetStrings.triangleUp
 import typings.oracleOraclejet.oracleOraclejetStrings.visible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BorderColor extends StObject {
   
-  var borderColor: String = js.native
+  var borderColor: String
   
-  var categories: js.Array[String] = js.native
+  var categories: js.Array[String]
   
-  var categoryVisibility: hidden | visible = js.native
+  var categoryVisibility: hidden | visible
   
-  var color: String = js.native
+  var color: String
   
-  var id: String = js.native
+  var id: String
   
-  var lineStyle: dotted | dashed | solid = js.native
+  var lineStyle: dotted | dashed | solid
   
-  var lineWidth: Double = js.native
+  var lineWidth: Double
   
-  var markerColor: String = js.native
+  var markerColor: String
   
   var markerShape: js.UndefOr[
     circle | diamond | human | plus | rectangle | square | star | triangleDown | triangleUp | String
-  ] = js.native
+  ] = js.undefined
   
-  var pattern: smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | none = js.native
+  var pattern: smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | none
   
-  var shortDesc: String = js.native
+  var shortDesc: String
   
-  var source: String = js.native
+  var source: String
   
-  var symbolType: line | lineWithMarker | image | marker = js.native
+  var symbolType: line | lineWithMarker | image | marker
   
-  var text: String = js.native
+  var text: String
 }
 object BorderColor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     borderColor: String,
     categories: js.Array[String],
     categoryVisibility: hidden | visible,
@@ -91,59 +88,42 @@ object BorderColor {
     __obj.asInstanceOf[BorderColor]
   }
   
-  @scala.inline
-  implicit class BorderColorMutableBuilder[Self <: BorderColor] (val x: Self) extends AnyVal {
+  extension [Self <: BorderColor](x: Self) {
     
-    @scala.inline
-    def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
-    @scala.inline
-    def setCategoryVisibility(value: hidden | visible): Self = StObject.set(x, "categoryVisibility", value.asInstanceOf[js.Any])
+    inline def setCategoryVisibility(value: hidden | visible): Self = StObject.set(x, "categoryVisibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineStyle(value: dotted | dashed | solid): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
+    inline def setLineStyle(value: dotted | dashed | solid): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerColor(value: String): Self = StObject.set(x, "markerColor", value.asInstanceOf[js.Any])
+    inline def setMarkerColor(value: String): Self = StObject.set(x, "markerColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerShape(
+    inline def setMarkerShape(
       value: circle | diamond | human | plus | rectangle | square | star | triangleDown | triangleUp | String
     ): Self = StObject.set(x, "markerShape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerShapeUndefined: Self = StObject.set(x, "markerShape", js.undefined)
+    inline def setMarkerShapeUndefined: Self = StObject.set(x, "markerShape", js.undefined)
     
-    @scala.inline
-    def setPattern(
+    inline def setPattern(
       value: smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | none
     ): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortDesc(value: String): Self = StObject.set(x, "shortDesc", value.asInstanceOf[js.Any])
+    inline def setShortDesc(value: String): Self = StObject.set(x, "shortDesc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolType(value: line | lineWithMarker | image | marker): Self = StObject.set(x, "symbolType", value.asInstanceOf[js.Any])
+    inline def setSymbolType(value: line | lineWithMarker | image | marker): Self = StObject.set(x, "symbolType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

@@ -7,7 +7,6 @@ import typings.jupyterlabServices.sessionSessionMod.ISessionConnection
 import typings.jupyterlabStatedb.mod.DataConnector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kernelconnectorMod {
@@ -22,37 +21,32 @@ object kernelconnectorMod {
       */
     def this(options: IOptions) = this()
     
-    var _session: js.Any = js.native
+    /* private */ var _session: js.Any = js.native
   }
   object KernelConnector {
     
     /**
       * The instantiation options for cell completion handlers.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The session used by the kernel connector.
         */
-      var session: ISessionConnection | Null = js.native
+      var session: ISessionConnection | Null
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): IOptions = {
-        val __obj = js.Dynamic.literal()
+      inline def apply(): IOptions = {
+        val __obj = js.Dynamic.literal(session = null)
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setSession(value: ISessionConnection): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+        inline def setSession(value: ISessionConnection): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSessionNull: Self = StObject.set(x, "session", null)
+        inline def setSessionNull: Self = StObject.set(x, "session", null)
       }
     }
   }

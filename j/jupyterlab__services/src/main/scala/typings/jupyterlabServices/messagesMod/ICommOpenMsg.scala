@@ -7,22 +7,21 @@ import typings.jupyterlabServices.jupyterlabServicesStrings.shell
 import typings.luminoCoreutils.jsonMod.JSONObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ICommOpenMsg[T /* <: shell | iopub */] extends IMessage[comm_open] {
+trait ICommOpenMsg[T /* <: shell | iopub */]
+  extends StObject
+     with IMessage[comm_open] {
   
   @JSName("channel")
-  var channel_ICommOpenMsg: T = js.native
+  var channel_ICommOpenMsg: T
   
   @JSName("content")
-  var content_ICommOpenMsg: Data = js.native
+  var content_ICommOpenMsg: Data
 }
 object ICommOpenMsg {
   
-  @scala.inline
-  def apply[T /* <: shell | iopub */](
+  inline def apply[T /* <: shell | iopub */](
     channel: T,
     content: Data,
     header: IHeader[comm_open],
@@ -33,13 +32,10 @@ object ICommOpenMsg {
     __obj.asInstanceOf[ICommOpenMsg[T]]
   }
   
-  @scala.inline
-  implicit class ICommOpenMsgMutableBuilder[Self <: ICommOpenMsg[_], T /* <: shell | iopub */] (val x: Self with ICommOpenMsg[T]) extends AnyVal {
+  extension [Self <: ICommOpenMsg[?], T /* <: shell | iopub */](x: Self & ICommOpenMsg[T]) {
     
-    @scala.inline
-    def setChannel(value: T): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: T): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(value: Data): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Data): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }
 }

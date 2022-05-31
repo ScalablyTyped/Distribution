@@ -2,53 +2,52 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BoneLookController extends StObject {
   
-  var _boneQuat: js.Any = js.native
+  /* private */ var _boneQuat: js.Any = js.native
   
-  var _firstFrameSkipped: js.Any = js.native
+  /* private */ var _firstFrameSkipped: js.Any = js.native
   
-  var _fowardAxis: js.Any = js.native
+  /* private */ var _fowardAxis: js.Any = js.native
   
-  var _getAngleBetween: js.Any = js.native
+  /* private */ var _getAngleBetween: js.Any = js.native
   
-  var _getAngleDiff: js.Any = js.native
+  /* private */ var _getAngleDiff: js.Any = js.native
   
-  var _isAngleBetween: js.Any = js.native
+  /* private */ var _isAngleBetween: js.Any = js.native
   
-  var _maxPitch: js.Any = js.native
+  /* private */ var _maxPitch: js.Any = js.native
   
-  var _maxPitchTan: js.Any = js.native
+  /* private */ var _maxPitchTan: js.Any = js.native
   
-  var _maxYaw: js.Any = js.native
+  /* private */ var _maxYaw: js.Any = js.native
   
-  var _maxYawCos: js.Any = js.native
+  /* private */ var _maxYawCos: js.Any = js.native
   
-  var _maxYawSin: js.Any = js.native
+  /* private */ var _maxYawSin: js.Any = js.native
   
-  var _midYawConstraint: js.Any = js.native
+  /* private */ var _midYawConstraint: js.Any = js.native
   
-  var _minPitch: js.Any = js.native
+  /* private */ var _minPitch: js.Any = js.native
   
-  var _minPitchTan: js.Any = js.native
+  /* private */ var _minPitchTan: js.Any = js.native
   
-  var _minYaw: js.Any = js.native
+  /* private */ var _minYaw: js.Any = js.native
   
-  var _minYawCos: js.Any = js.native
+  /* private */ var _minYawCos: js.Any = js.native
   
-  var _minYawSin: js.Any = js.native
+  /* private */ var _minYawSin: js.Any = js.native
   
-  var _slerping: js.Any = js.native
+  /* private */ var _slerping: js.Any = js.native
   
-  var _transformYawPitch: js.Any = js.native
+  /* private */ var _transformYawPitch: js.Any = js.native
   
-  var _transformYawPitchInv: js.Any = js.native
+  /* private */ var _transformYawPitchInv: js.Any = js.native
   
-  var _yawRange: js.Any = js.native
+  /* private */ var _yawRange: js.Any = js.native
   
   /**
     * Used to make an adjustment to the pitch of the bone

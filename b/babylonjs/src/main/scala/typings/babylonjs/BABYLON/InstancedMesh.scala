@@ -2,18 +2,19 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstancedMesh extends AbstractMesh {
+trait InstancedMesh
+  extends StObject
+     with AbstractMesh {
   
-  var _currentLOD: js.Any = js.native
+  /* private */ var _currentLOD: js.Any = js.native
   
   /** @hidden */
   var _indexInSourceMeshInstanceArray: Double = js.native
   
-  var _sourceMesh: js.Any = js.native
+  /* private */ var _sourceMesh: js.Any = js.native
   
   /** @hidden */
   def _syncSubMeshes(): InstancedMesh = js.native
@@ -27,6 +28,7 @@ trait InstancedMesh extends AbstractMesh {
     * Returns the clone.
     */
   def clone(name: String): InstancedMesh = js.native
+  def clone(name: String, newParent: Unit, doNotCloneChildren: Boolean): InstancedMesh = js.native
   
   /**
     * Creates a new InstancedMesh object from the mesh model.
@@ -35,6 +37,12 @@ trait InstancedMesh extends AbstractMesh {
     * @returns a new InstancedMesh
     */
   def createInstance(name: String): InstancedMesh = js.native
+  
+  /**
+    * Releases all held resources
+    */
+  /* InferMemberOverrides */
+  override def dispose(): Unit = js.native
   
   /**
     * Sets the mesh indices.

@@ -1,17 +1,18 @@
 package typings.babylonjs.global.BABYLON
 
+import typings.babylonjs.BABYLON.Behavior
 import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.HTMLVideoElement
 import typings.babylonjs.anon.AutoPlay
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.TextureDome")
 @js.native
 abstract class TextureDome[T /* <: typings.babylonjs.BABYLON.Texture */] protected ()
-  extends typings.babylonjs.BABYLON.TextureDome[T] {
+  extends StObject
+     with typings.babylonjs.BABYLON.TextureDome[T] {
   /**
     * Create an instance of this class and pass through the parameters to the relevant classes- Texture, StandardMaterial, and Mesh.
     * @param name Element's name, child elements will append suffixes for their own names.
@@ -42,7 +43,7 @@ abstract class TextureDome[T /* <: typings.babylonjs.BABYLON.Texture */] protect
     options: AutoPlay,
     scene: typings.babylonjs.BABYLON.Scene,
     onError: Nullable[
-        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
       ]
   ) = this()
   def this(
@@ -51,7 +52,7 @@ abstract class TextureDome[T /* <: typings.babylonjs.BABYLON.Texture */] protect
     options: AutoPlay,
     scene: typings.babylonjs.BABYLON.Scene,
     onError: Nullable[
-        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
       ]
   ) = this()
   def this(
@@ -60,9 +61,33 @@ abstract class TextureDome[T /* <: typings.babylonjs.BABYLON.Texture */] protect
     options: AutoPlay,
     scene: typings.babylonjs.BABYLON.Scene,
     onError: Nullable[
-        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
       ]
   ) = this()
+  
+  /**
+    * Attach a behavior
+    * @param behavior defines the behavior to attach
+    * @returns the current host
+    */
+  /* CompleteClass */
+  override def addBehavior(behavior: Behavior[typings.babylonjs.BABYLON.Node]): typings.babylonjs.BABYLON.Node = js.native
+  
+  /**
+    * Gets a behavior using its name to search
+    * @param name defines the name to search
+    * @returns the behavior or null if not found
+    */
+  /* CompleteClass */
+  override def getBehaviorByName(name: String): Nullable[Behavior[typings.babylonjs.BABYLON.Node]] = js.native
+  
+  /**
+    * Remove a behavior from the current object
+    * @param behavior defines the behavior to detach
+    * @returns the current host
+    */
+  /* CompleteClass */
+  override def removeBehavior(behavior: Behavior[typings.babylonjs.BABYLON.Node]): typings.babylonjs.BABYLON.Node = js.native
 }
 /* static members */
 object TextureDome {

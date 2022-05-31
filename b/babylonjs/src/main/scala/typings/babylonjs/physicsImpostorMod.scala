@@ -18,7 +18,6 @@ import typings.babylonjs.typesMod.Nullable
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object physicsImpostorMod {
@@ -63,7 +62,7 @@ object physicsImpostorMod {
       * The type of the physics imposter
       */
     `type`: Double,
-      _options: js.UndefOr[scala.Nothing],
+      _options: Unit,
       _scene: Scene
     ) = this()
     def this(
@@ -79,15 +78,15 @@ object physicsImpostorMod {
       _scene: Scene
     ) = this()
     
-    var _bodyUpdateRequired: js.Any = js.native
+    /* private */ var _bodyUpdateRequired: js.Any = js.native
     
-    var _deltaPosition: js.Any = js.native
+    /* private */ var _deltaPosition: js.Any = js.native
     
-    var _deltaRotation: js.Any = js.native
+    /* private */ var _deltaRotation: js.Any = js.native
     
-    var _deltaRotationConjugated: js.Any = js.native
+    /* private */ var _deltaRotationConjugated: js.Any = js.native
     
-    var _getPhysicsParent: js.Any = js.native
+    /* private */ var _getPhysicsParent: js.Any = js.native
     
     /**
       * This function will completly initialize this impostor.
@@ -98,36 +97,36 @@ object physicsImpostorMod {
       */
     def _init(): Unit = js.native
     
-    var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: js.Any = js.native
     
     /** @hidden */
     var _isFromLine: Boolean = js.native
     
-    var _joints: js.Any = js.native
+    /* private */ var _joints: js.Any = js.native
     
-    var _onAfterPhysicsStepCallbacks: js.Any = js.native
+    /* private */ var _onAfterPhysicsStepCallbacks: js.Any = js.native
     
-    var _onBeforePhysicsStepCallbacks: js.Any = js.native
+    /* private */ var _onBeforePhysicsStepCallbacks: js.Any = js.native
     
     /** @hidden */
     var _onPhysicsCollideCallbacks: js.Array[Callback] = js.native
     
-    var _options: js.Any = js.native
+    /* private */ var _options: js.Any = js.native
     
-    var _parent: js.Any = js.native
+    /* private */ var _parent: js.Any = js.native
     
-    var _physicsBody: js.Any = js.native
+    /* private */ var _physicsBody: js.Any = js.native
     
-    var _physicsEngine: js.Any = js.native
+    /* private */ var _physicsEngine: js.Any = js.native
     
     /** @hidden */
     var _pluginData: js.Any = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
-    var _tmpQuat: js.Any = js.native
+    /* private */ var _tmpQuat: js.Any = js.native
     
-    var _tmpQuat2: js.Any = js.native
+    /* private */ var _tmpQuat2: js.Any = js.native
     
     /**
       * Add an anchor to a cloth impostor
@@ -474,19 +473,19 @@ object physicsImpostorMod {
       * @param adjustRotation Optional quaternion for adjusting the local rotation of the bone.
       */
     def syncBoneWithImpostor(bone: Bone, boneMesh: AbstractMesh, jointPivot: Vector3): Unit = js.native
-    def syncBoneWithImpostor(
-      bone: Bone,
-      boneMesh: AbstractMesh,
-      jointPivot: Vector3,
-      distToJoint: js.UndefOr[scala.Nothing],
-      adjustRotation: Quaternion
-    ): Unit = js.native
     def syncBoneWithImpostor(bone: Bone, boneMesh: AbstractMesh, jointPivot: Vector3, distToJoint: Double): Unit = js.native
     def syncBoneWithImpostor(
       bone: Bone,
       boneMesh: AbstractMesh,
       jointPivot: Vector3,
       distToJoint: Double,
+      adjustRotation: Quaternion
+    ): Unit = js.native
+    def syncBoneWithImpostor(
+      bone: Bone,
+      boneMesh: AbstractMesh,
+      jointPivot: Vector3,
+      distToJoint: Unit,
       adjustRotation: Quaternion
     ): Unit = js.native
     
@@ -500,36 +499,13 @@ object physicsImpostorMod {
       * @param boneAxis Optional vector3 axis the bone is aligned with
       */
     def syncImpostorWithBone(bone: Bone, boneMesh: AbstractMesh, jointPivot: Vector3): Unit = js.native
-    def syncImpostorWithBone(
-      bone: Bone,
-      boneMesh: AbstractMesh,
-      jointPivot: Vector3,
-      distToJoint: js.UndefOr[scala.Nothing],
-      adjustRotation: js.UndefOr[scala.Nothing],
-      boneAxis: Vector3
-    ): Unit = js.native
-    def syncImpostorWithBone(
-      bone: Bone,
-      boneMesh: AbstractMesh,
-      jointPivot: Vector3,
-      distToJoint: js.UndefOr[scala.Nothing],
-      adjustRotation: Quaternion
-    ): Unit = js.native
-    def syncImpostorWithBone(
-      bone: Bone,
-      boneMesh: AbstractMesh,
-      jointPivot: Vector3,
-      distToJoint: js.UndefOr[scala.Nothing],
-      adjustRotation: Quaternion,
-      boneAxis: Vector3
-    ): Unit = js.native
     def syncImpostorWithBone(bone: Bone, boneMesh: AbstractMesh, jointPivot: Vector3, distToJoint: Double): Unit = js.native
     def syncImpostorWithBone(
       bone: Bone,
       boneMesh: AbstractMesh,
       jointPivot: Vector3,
       distToJoint: Double,
-      adjustRotation: js.UndefOr[scala.Nothing],
+      adjustRotation: Unit,
       boneAxis: Vector3
     ): Unit = js.native
     def syncImpostorWithBone(
@@ -544,6 +520,29 @@ object physicsImpostorMod {
       boneMesh: AbstractMesh,
       jointPivot: Vector3,
       distToJoint: Double,
+      adjustRotation: Quaternion,
+      boneAxis: Vector3
+    ): Unit = js.native
+    def syncImpostorWithBone(
+      bone: Bone,
+      boneMesh: AbstractMesh,
+      jointPivot: Vector3,
+      distToJoint: Unit,
+      adjustRotation: Unit,
+      boneAxis: Vector3
+    ): Unit = js.native
+    def syncImpostorWithBone(
+      bone: Bone,
+      boneMesh: AbstractMesh,
+      jointPivot: Vector3,
+      distToJoint: Unit,
+      adjustRotation: Quaternion
+    ): Unit = js.native
+    def syncImpostorWithBone(
+      bone: Bone,
+      boneMesh: AbstractMesh,
+      jointPivot: Vector3,
+      distToJoint: Unit,
       adjustRotation: Quaternion,
       boneAxis: Vector3
     ): Unit = js.native
@@ -621,8 +620,7 @@ object physicsImpostorMod {
     @JSImport("babylonjs/Physics/physicsImpostor", "PhysicsImpostor.BoxImpostor")
     @js.native
     def BoxImpostor: Double = js.native
-    @scala.inline
-    def BoxImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BoxImpostor")(x.asInstanceOf[js.Any])
+    inline def BoxImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BoxImpostor")(x.asInstanceOf[js.Any])
     
     /**
       * Capsule-Impostor type (Ammo.js plugin only)
@@ -630,8 +628,7 @@ object physicsImpostorMod {
     @JSImport("babylonjs/Physics/physicsImpostor", "PhysicsImpostor.CapsuleImpostor")
     @js.native
     def CapsuleImpostor: Double = js.native
-    @scala.inline
-    def CapsuleImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CapsuleImpostor")(x.asInstanceOf[js.Any])
+    inline def CapsuleImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CapsuleImpostor")(x.asInstanceOf[js.Any])
     
     /**
       * Cloth-Imposter type
@@ -639,8 +636,7 @@ object physicsImpostorMod {
     @JSImport("babylonjs/Physics/physicsImpostor", "PhysicsImpostor.ClothImpostor")
     @js.native
     def ClothImpostor: Double = js.native
-    @scala.inline
-    def ClothImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ClothImpostor")(x.asInstanceOf[js.Any])
+    inline def ClothImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ClothImpostor")(x.asInstanceOf[js.Any])
     
     /**
       * ConvexHull-Impostor type (Ammo.js plugin only)
@@ -648,8 +644,7 @@ object physicsImpostorMod {
     @JSImport("babylonjs/Physics/physicsImpostor", "PhysicsImpostor.ConvexHullImpostor")
     @js.native
     def ConvexHullImpostor: Double = js.native
-    @scala.inline
-    def ConvexHullImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConvexHullImpostor")(x.asInstanceOf[js.Any])
+    inline def ConvexHullImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConvexHullImpostor")(x.asInstanceOf[js.Any])
     
     /**
       * Custom-Imposter type (Ammo.js plugin only)
@@ -657,8 +652,7 @@ object physicsImpostorMod {
     @JSImport("babylonjs/Physics/physicsImpostor", "PhysicsImpostor.CustomImpostor")
     @js.native
     def CustomImpostor: Double = js.native
-    @scala.inline
-    def CustomImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CustomImpostor")(x.asInstanceOf[js.Any])
+    inline def CustomImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CustomImpostor")(x.asInstanceOf[js.Any])
     
     /**
       * Cylinder-Imposter type
@@ -666,8 +660,7 @@ object physicsImpostorMod {
     @JSImport("babylonjs/Physics/physicsImpostor", "PhysicsImpostor.CylinderImpostor")
     @js.native
     def CylinderImpostor: Double = js.native
-    @scala.inline
-    def CylinderImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CylinderImpostor")(x.asInstanceOf[js.Any])
+    inline def CylinderImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CylinderImpostor")(x.asInstanceOf[js.Any])
     
     /**
       * The default object size of the imposter
@@ -675,8 +668,7 @@ object physicsImpostorMod {
     @JSImport("babylonjs/Physics/physicsImpostor", "PhysicsImpostor.DEFAULT_OBJECT_SIZE")
     @js.native
     def DEFAULT_OBJECT_SIZE: Vector3 = js.native
-    @scala.inline
-    def DEFAULT_OBJECT_SIZE_=(x: Vector3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_OBJECT_SIZE")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_OBJECT_SIZE_=(x: Vector3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_OBJECT_SIZE")(x.asInstanceOf[js.Any])
     
     /**
       * Heightmap-Imposter type
@@ -684,8 +676,7 @@ object physicsImpostorMod {
     @JSImport("babylonjs/Physics/physicsImpostor", "PhysicsImpostor.HeightmapImpostor")
     @js.native
     def HeightmapImpostor: Double = js.native
-    @scala.inline
-    def HeightmapImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HeightmapImpostor")(x.asInstanceOf[js.Any])
+    inline def HeightmapImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HeightmapImpostor")(x.asInstanceOf[js.Any])
     
     /**
       * The identity quaternion of the imposter
@@ -693,8 +684,7 @@ object physicsImpostorMod {
     @JSImport("babylonjs/Physics/physicsImpostor", "PhysicsImpostor.IDENTITY_QUATERNION")
     @js.native
     def IDENTITY_QUATERNION: Quaternion = js.native
-    @scala.inline
-    def IDENTITY_QUATERNION_=(x: Quaternion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IDENTITY_QUATERNION")(x.asInstanceOf[js.Any])
+    inline def IDENTITY_QUATERNION_=(x: Quaternion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IDENTITY_QUATERNION")(x.asInstanceOf[js.Any])
     
     /**
       * Mesh-imposter type
@@ -702,8 +692,7 @@ object physicsImpostorMod {
     @JSImport("babylonjs/Physics/physicsImpostor", "PhysicsImpostor.MeshImpostor")
     @js.native
     def MeshImpostor: Double = js.native
-    @scala.inline
-    def MeshImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MeshImpostor")(x.asInstanceOf[js.Any])
+    inline def MeshImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MeshImpostor")(x.asInstanceOf[js.Any])
     
     /**
       * No-Imposter type
@@ -711,8 +700,7 @@ object physicsImpostorMod {
     @JSImport("babylonjs/Physics/physicsImpostor", "PhysicsImpostor.NoImpostor")
     @js.native
     def NoImpostor: Double = js.native
-    @scala.inline
-    def NoImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NoImpostor")(x.asInstanceOf[js.Any])
+    inline def NoImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NoImpostor")(x.asInstanceOf[js.Any])
     
     /**
       * Particle-Imposter type
@@ -720,8 +708,7 @@ object physicsImpostorMod {
     @JSImport("babylonjs/Physics/physicsImpostor", "PhysicsImpostor.ParticleImpostor")
     @js.native
     def ParticleImpostor: Double = js.native
-    @scala.inline
-    def ParticleImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ParticleImpostor")(x.asInstanceOf[js.Any])
+    inline def ParticleImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ParticleImpostor")(x.asInstanceOf[js.Any])
     
     /**
       * Plane-Imposter type
@@ -729,8 +716,7 @@ object physicsImpostorMod {
     @JSImport("babylonjs/Physics/physicsImpostor", "PhysicsImpostor.PlaneImpostor")
     @js.native
     def PlaneImpostor: Double = js.native
-    @scala.inline
-    def PlaneImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PlaneImpostor")(x.asInstanceOf[js.Any])
+    inline def PlaneImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PlaneImpostor")(x.asInstanceOf[js.Any])
     
     /**
       * Rope-Imposter type
@@ -738,8 +724,7 @@ object physicsImpostorMod {
     @JSImport("babylonjs/Physics/physicsImpostor", "PhysicsImpostor.RopeImpostor")
     @js.native
     def RopeImpostor: Double = js.native
-    @scala.inline
-    def RopeImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RopeImpostor")(x.asInstanceOf[js.Any])
+    inline def RopeImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RopeImpostor")(x.asInstanceOf[js.Any])
     
     /**
       * Softbody-Imposter type
@@ -747,8 +732,7 @@ object physicsImpostorMod {
     @JSImport("babylonjs/Physics/physicsImpostor", "PhysicsImpostor.SoftbodyImpostor")
     @js.native
     def SoftbodyImpostor: Double = js.native
-    @scala.inline
-    def SoftbodyImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SoftbodyImpostor")(x.asInstanceOf[js.Any])
+    inline def SoftbodyImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SoftbodyImpostor")(x.asInstanceOf[js.Any])
     
     /**
       * Sphere-Imposter type
@@ -756,20 +740,17 @@ object physicsImpostorMod {
     @JSImport("babylonjs/Physics/physicsImpostor", "PhysicsImpostor.SphereImpostor")
     @js.native
     def SphereImpostor: Double = js.native
-    @scala.inline
-    def SphereImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SphereImpostor")(x.asInstanceOf[js.Any])
+    inline def SphereImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SphereImpostor")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Physics/physicsImpostor", "PhysicsImpostor._tmpQuat")
     @js.native
     def _tmpQuat: js.Any = js.native
-    @scala.inline
-    def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
+    inline def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Physics/physicsImpostor", "PhysicsImpostor._tmpVecs")
     @js.native
     def _tmpVecs: js.Any = js.native
-    @scala.inline
-    def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
+    inline def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -893,183 +874,151 @@ object physicsImpostorMod {
     def translate(axis: Vector3, distance: Double, space: Space): TransformNode = js.native
   }
   
-  @js.native
   trait PhysicsImpostorParameters extends StObject {
     
     /**
       * The collision margin around a soft object
       */
-    var damping: js.UndefOr[Double] = js.native
+    var damping: js.UndefOr[Double] = js.undefined
     
     /**
       * Specifies if bi-directional transformations should be disabled
       */
-    var disableBidirectionalTransformation: js.UndefOr[Boolean] = js.native
+    var disableBidirectionalTransformation: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The number used to fix points on a cloth (0, 1, 2, 4, 8) or rope (0, 1, 2) only
       * 0 None, 1, back left or top, 2, back right or bottom, 4, front left, 8, front right
       * Add to fix multiple points
       */
-    var fixedPoints: js.UndefOr[Double] = js.native
+    var fixedPoints: js.UndefOr[Double] = js.undefined
     
     /**
       * The friction of the physics imposter
       */
-    var friction: js.UndefOr[Double] = js.native
+    var friction: js.UndefOr[Double] = js.undefined
     
     /**
       * Specifies if the parent should be ignored
       */
-    var ignoreParent: js.UndefOr[Boolean] = js.native
+    var ignoreParent: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The collision margin around a soft object
       */
-    var margin: js.UndefOr[Double] = js.native
+    var margin: js.UndefOr[Double] = js.undefined
     
     /**
       * The mass of the physics imposter
       */
-    var mass: Double = js.native
+    var mass: Double
     
     /**
       * The native options of the physics imposter
       */
-    var nativeOptions: js.UndefOr[js.Any] = js.native
+    var nativeOptions: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The path for a rope based on an extrusion
       */
-    var path: js.UndefOr[js.Any] = js.native
+    var path: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The number of iterations used in maintaining consistent vertex positions, soft object only
       */
-    var positionIterations: js.UndefOr[Double] = js.native
+    var positionIterations: js.UndefOr[Double] = js.undefined
     
     /**
       * The pressure inside the physics imposter, soft object only
       */
-    var pressure: js.UndefOr[Double] = js.native
+    var pressure: js.UndefOr[Double] = js.undefined
     
     /**
       * The coefficient of restitution of the physics imposter
       */
-    var restitution: js.UndefOr[Double] = js.native
+    var restitution: js.UndefOr[Double] = js.undefined
     
     /**
       * The shape of an extrusion used for a rope based on an extrusion
       */
-    var shape: js.UndefOr[js.Any] = js.native
+    var shape: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The stiffness the physics imposter, soft object only
       */
-    var stiffness: js.UndefOr[Double] = js.native
+    var stiffness: js.UndefOr[Double] = js.undefined
     
     /**
       * The number of iterations used in maintaining consistent vertex velocities, soft object only
       */
-    var velocityIterations: js.UndefOr[Double] = js.native
+    var velocityIterations: js.UndefOr[Double] = js.undefined
   }
   object PhysicsImpostorParameters {
     
-    @scala.inline
-    def apply(mass: Double): PhysicsImpostorParameters = {
+    inline def apply(mass: Double): PhysicsImpostorParameters = {
       val __obj = js.Dynamic.literal(mass = mass.asInstanceOf[js.Any])
       __obj.asInstanceOf[PhysicsImpostorParameters]
     }
     
-    @scala.inline
-    implicit class PhysicsImpostorParametersMutableBuilder[Self <: PhysicsImpostorParameters] (val x: Self) extends AnyVal {
+    extension [Self <: PhysicsImpostorParameters](x: Self) {
       
-      @scala.inline
-      def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
+      inline def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDampingUndefined: Self = StObject.set(x, "damping", js.undefined)
+      inline def setDampingUndefined: Self = StObject.set(x, "damping", js.undefined)
       
-      @scala.inline
-      def setDisableBidirectionalTransformation(value: Boolean): Self = StObject.set(x, "disableBidirectionalTransformation", value.asInstanceOf[js.Any])
+      inline def setDisableBidirectionalTransformation(value: Boolean): Self = StObject.set(x, "disableBidirectionalTransformation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableBidirectionalTransformationUndefined: Self = StObject.set(x, "disableBidirectionalTransformation", js.undefined)
+      inline def setDisableBidirectionalTransformationUndefined: Self = StObject.set(x, "disableBidirectionalTransformation", js.undefined)
       
-      @scala.inline
-      def setFixedPoints(value: Double): Self = StObject.set(x, "fixedPoints", value.asInstanceOf[js.Any])
+      inline def setFixedPoints(value: Double): Self = StObject.set(x, "fixedPoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedPointsUndefined: Self = StObject.set(x, "fixedPoints", js.undefined)
+      inline def setFixedPointsUndefined: Self = StObject.set(x, "fixedPoints", js.undefined)
       
-      @scala.inline
-      def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
+      inline def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrictionUndefined: Self = StObject.set(x, "friction", js.undefined)
+      inline def setFrictionUndefined: Self = StObject.set(x, "friction", js.undefined)
       
-      @scala.inline
-      def setIgnoreParent(value: Boolean): Self = StObject.set(x, "ignoreParent", value.asInstanceOf[js.Any])
+      inline def setIgnoreParent(value: Boolean): Self = StObject.set(x, "ignoreParent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreParentUndefined: Self = StObject.set(x, "ignoreParent", js.undefined)
+      inline def setIgnoreParentUndefined: Self = StObject.set(x, "ignoreParent", js.undefined)
       
-      @scala.inline
-      def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+      inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      @scala.inline
-      def setMass(value: Double): Self = StObject.set(x, "mass", value.asInstanceOf[js.Any])
+      inline def setMass(value: Double): Self = StObject.set(x, "mass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativeOptions(value: js.Any): Self = StObject.set(x, "nativeOptions", value.asInstanceOf[js.Any])
+      inline def setNativeOptions(value: js.Any): Self = StObject.set(x, "nativeOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativeOptionsUndefined: Self = StObject.set(x, "nativeOptions", js.undefined)
+      inline def setNativeOptionsUndefined: Self = StObject.set(x, "nativeOptions", js.undefined)
       
-      @scala.inline
-      def setPath(value: js.Any): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Any): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPositionIterations(value: Double): Self = StObject.set(x, "positionIterations", value.asInstanceOf[js.Any])
+      inline def setPositionIterations(value: Double): Self = StObject.set(x, "positionIterations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionIterationsUndefined: Self = StObject.set(x, "positionIterations", js.undefined)
+      inline def setPositionIterationsUndefined: Self = StObject.set(x, "positionIterations", js.undefined)
       
-      @scala.inline
-      def setPressure(value: Double): Self = StObject.set(x, "pressure", value.asInstanceOf[js.Any])
+      inline def setPressure(value: Double): Self = StObject.set(x, "pressure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPressureUndefined: Self = StObject.set(x, "pressure", js.undefined)
+      inline def setPressureUndefined: Self = StObject.set(x, "pressure", js.undefined)
       
-      @scala.inline
-      def setRestitution(value: Double): Self = StObject.set(x, "restitution", value.asInstanceOf[js.Any])
+      inline def setRestitution(value: Double): Self = StObject.set(x, "restitution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestitutionUndefined: Self = StObject.set(x, "restitution", js.undefined)
+      inline def setRestitutionUndefined: Self = StObject.set(x, "restitution", js.undefined)
       
-      @scala.inline
-      def setShape(value: js.Any): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: js.Any): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+      inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
       
-      @scala.inline
-      def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
+      inline def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStiffnessUndefined: Self = StObject.set(x, "stiffness", js.undefined)
+      inline def setStiffnessUndefined: Self = StObject.set(x, "stiffness", js.undefined)
       
-      @scala.inline
-      def setVelocityIterations(value: Double): Self = StObject.set(x, "velocityIterations", value.asInstanceOf[js.Any])
+      inline def setVelocityIterations(value: Double): Self = StObject.set(x, "velocityIterations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVelocityIterationsUndefined: Self = StObject.set(x, "velocityIterations", js.undefined)
+      inline def setVelocityIterationsUndefined: Self = StObject.set(x, "velocityIterations", js.undefined)
     }
   }
 }

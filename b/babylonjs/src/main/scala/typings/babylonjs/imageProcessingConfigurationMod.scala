@@ -9,7 +9,6 @@ import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imageProcessingConfigurationMod {
@@ -18,37 +17,37 @@ object imageProcessingConfigurationMod {
   @js.native
   class ImageProcessingConfiguration () extends StObject {
     
-    var _applyByPostProcess: js.Any = js.native
+    /* private */ var _applyByPostProcess: js.Any = js.native
     
-    var _colorCurvesEnabled: js.Any = js.native
+    /* private */ var _colorCurvesEnabled: js.Any = js.native
     
-    var _colorGradingBGR: js.Any = js.native
+    /* private */ var _colorGradingBGR: js.Any = js.native
     
-    var _colorGradingEnabled: js.Any = js.native
+    /* private */ var _colorGradingEnabled: js.Any = js.native
     
-    var _colorGradingTexture: js.Any = js.native
+    /* private */ var _colorGradingTexture: js.Any = js.native
     
-    var _colorGradingWithGreenDepth: js.Any = js.native
+    /* private */ var _colorGradingWithGreenDepth: js.Any = js.native
     
-    var _contrast: Double = js.native
+    /* protected */ var _contrast: Double = js.native
     
     /** @hidden */
     var _exposure: Double = js.native
     
-    var _isEnabled: js.Any = js.native
+    /* private */ var _isEnabled: js.Any = js.native
     
-    var _toneMappingEnabled: js.Any = js.native
+    /* private */ var _toneMappingEnabled: js.Any = js.native
     
-    var _toneMappingType: js.Any = js.native
+    /* private */ var _toneMappingType: js.Any = js.native
     
     /**
       * Method called each time the image processing information changes requires to recompile the effect.
       */
     /* protected */ def _updateParameters(): Unit = js.native
     
-    var _vignetteBlendMode: js.Any = js.native
+    /* private */ var _vignetteBlendMode: js.Any = js.native
     
-    var _vignetteEnabled: js.Any = js.native
+    /* private */ var _vignetteEnabled: js.Any = js.native
     
     /**
       * Gets wether the image processing is applied through a post process or not.
@@ -254,27 +253,21 @@ object imageProcessingConfigurationMod {
       * @param source the JSON source to parse
       * @return The parsed image processing
       */
-    @JSImport("babylonjs/Materials/imageProcessingConfiguration", "ImageProcessingConfiguration.Parse")
-    @js.native
-    def Parse(source: js.Any): ImageProcessingConfiguration = js.native
+    inline def Parse(source: js.Any): ImageProcessingConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any]).asInstanceOf[ImageProcessingConfiguration]
     
     /**
       * Prepare the list of samplers associated with the Image Processing effects.
       * @param samplersList The list of uniforms used in the effect
       * @param defines the list of defines currently in use
       */
-    @JSImport("babylonjs/Materials/imageProcessingConfiguration", "ImageProcessingConfiguration.PrepareSamplers")
-    @js.native
-    def PrepareSamplers(samplersList: js.Array[String], defines: IImageProcessingConfigurationDefines): Unit = js.native
+    inline def PrepareSamplers(samplersList: js.Array[String], defines: IImageProcessingConfigurationDefines): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PrepareSamplers")(samplersList.asInstanceOf[js.Any], defines.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Prepare the list of uniforms associated with the Image Processing effects.
       * @param uniforms The list of uniforms used in the effect
       * @param defines the list of defines currently in use
       */
-    @JSImport("babylonjs/Materials/imageProcessingConfiguration", "ImageProcessingConfiguration.PrepareUniforms")
-    @js.native
-    def PrepareUniforms(uniforms: js.Array[String], defines: IImageProcessingConfigurationDefines): Unit = js.native
+    inline def PrepareUniforms(uniforms: js.Array[String], defines: IImageProcessingConfigurationDefines): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PrepareUniforms")(uniforms.asInstanceOf[js.Any], defines.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * ACES Tone mapping (used by default in unreal and unity). This can help getting closer
@@ -294,57 +287,96 @@ object imageProcessingConfigurationMod {
     @JSImport("babylonjs/Materials/imageProcessingConfiguration", "ImageProcessingConfiguration._VIGNETTEMODE_MULTIPLY")
     @js.native
     def _VIGNETTEMODE_MULTIPLY: js.Any = js.native
-    @scala.inline
-    def _VIGNETTEMODE_MULTIPLY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_VIGNETTEMODE_MULTIPLY")(x.asInstanceOf[js.Any])
+    inline def _VIGNETTEMODE_MULTIPLY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_VIGNETTEMODE_MULTIPLY")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Materials/imageProcessingConfiguration", "ImageProcessingConfiguration._VIGNETTEMODE_OPAQUE")
     @js.native
     def _VIGNETTEMODE_OPAQUE: js.Any = js.native
-    @scala.inline
-    def _VIGNETTEMODE_OPAQUE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_VIGNETTEMODE_OPAQUE")(x.asInstanceOf[js.Any])
+    inline def _VIGNETTEMODE_OPAQUE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_VIGNETTEMODE_OPAQUE")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Materials/imageProcessingConfiguration", "ImageProcessingConfigurationDefines")
   @js.native
   class ImageProcessingConfigurationDefines ()
     extends MaterialDefines
-       with IImageProcessingConfigurationDefines
-  
-  @js.native
-  trait IImageProcessingConfigurationDefines extends StObject {
+       with IImageProcessingConfigurationDefines {
     
+    /* CompleteClass */
     var COLORCURVES: Boolean = js.native
     
+    /* CompleteClass */
     var COLORGRADING: Boolean = js.native
     
+    /* CompleteClass */
     var COLORGRADING3D: Boolean = js.native
     
+    /* CompleteClass */
     var CONTRAST: Boolean = js.native
     
+    /* CompleteClass */
     var EXPOSURE: Boolean = js.native
     
+    /* CompleteClass */
     var IMAGEPROCESSING: Boolean = js.native
     
+    /* CompleteClass */
     var IMAGEPROCESSINGPOSTPROCESS: Boolean = js.native
     
+    /* CompleteClass */
     var SAMPLER3DBGRMAP: Boolean = js.native
     
+    /* CompleteClass */
     var SAMPLER3DGREENDEPTH: Boolean = js.native
     
+    /* CompleteClass */
     var TONEMAPPING: Boolean = js.native
     
+    /* CompleteClass */
     var TONEMAPPING_ACES: Boolean = js.native
     
+    /* CompleteClass */
     var VIGNETTE: Boolean = js.native
     
+    /* CompleteClass */
     var VIGNETTEBLENDMODEMULTIPLY: Boolean = js.native
     
+    /* CompleteClass */
     var VIGNETTEBLENDMODEOPAQUE: Boolean = js.native
+  }
+  
+  trait IImageProcessingConfigurationDefines extends StObject {
+    
+    var COLORCURVES: Boolean
+    
+    var COLORGRADING: Boolean
+    
+    var COLORGRADING3D: Boolean
+    
+    var CONTRAST: Boolean
+    
+    var EXPOSURE: Boolean
+    
+    var IMAGEPROCESSING: Boolean
+    
+    var IMAGEPROCESSINGPOSTPROCESS: Boolean
+    
+    var SAMPLER3DBGRMAP: Boolean
+    
+    var SAMPLER3DGREENDEPTH: Boolean
+    
+    var TONEMAPPING: Boolean
+    
+    var TONEMAPPING_ACES: Boolean
+    
+    var VIGNETTE: Boolean
+    
+    var VIGNETTEBLENDMODEMULTIPLY: Boolean
+    
+    var VIGNETTEBLENDMODEOPAQUE: Boolean
   }
   object IImageProcessingConfigurationDefines {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       COLORCURVES: Boolean,
       COLORGRADING: Boolean,
       COLORGRADING3D: Boolean,
@@ -364,50 +396,35 @@ object imageProcessingConfigurationMod {
       __obj.asInstanceOf[IImageProcessingConfigurationDefines]
     }
     
-    @scala.inline
-    implicit class IImageProcessingConfigurationDefinesMutableBuilder[Self <: IImageProcessingConfigurationDefines] (val x: Self) extends AnyVal {
+    extension [Self <: IImageProcessingConfigurationDefines](x: Self) {
       
-      @scala.inline
-      def setCOLORCURVES(value: Boolean): Self = StObject.set(x, "COLORCURVES", value.asInstanceOf[js.Any])
+      inline def setCOLORCURVES(value: Boolean): Self = StObject.set(x, "COLORCURVES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCOLORGRADING(value: Boolean): Self = StObject.set(x, "COLORGRADING", value.asInstanceOf[js.Any])
+      inline def setCOLORGRADING(value: Boolean): Self = StObject.set(x, "COLORGRADING", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCOLORGRADING3D(value: Boolean): Self = StObject.set(x, "COLORGRADING3D", value.asInstanceOf[js.Any])
+      inline def setCOLORGRADING3D(value: Boolean): Self = StObject.set(x, "COLORGRADING3D", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCONTRAST(value: Boolean): Self = StObject.set(x, "CONTRAST", value.asInstanceOf[js.Any])
+      inline def setCONTRAST(value: Boolean): Self = StObject.set(x, "CONTRAST", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEXPOSURE(value: Boolean): Self = StObject.set(x, "EXPOSURE", value.asInstanceOf[js.Any])
+      inline def setEXPOSURE(value: Boolean): Self = StObject.set(x, "EXPOSURE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIMAGEPROCESSING(value: Boolean): Self = StObject.set(x, "IMAGEPROCESSING", value.asInstanceOf[js.Any])
+      inline def setIMAGEPROCESSING(value: Boolean): Self = StObject.set(x, "IMAGEPROCESSING", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIMAGEPROCESSINGPOSTPROCESS(value: Boolean): Self = StObject.set(x, "IMAGEPROCESSINGPOSTPROCESS", value.asInstanceOf[js.Any])
+      inline def setIMAGEPROCESSINGPOSTPROCESS(value: Boolean): Self = StObject.set(x, "IMAGEPROCESSINGPOSTPROCESS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSAMPLER3DBGRMAP(value: Boolean): Self = StObject.set(x, "SAMPLER3DBGRMAP", value.asInstanceOf[js.Any])
+      inline def setSAMPLER3DBGRMAP(value: Boolean): Self = StObject.set(x, "SAMPLER3DBGRMAP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSAMPLER3DGREENDEPTH(value: Boolean): Self = StObject.set(x, "SAMPLER3DGREENDEPTH", value.asInstanceOf[js.Any])
+      inline def setSAMPLER3DGREENDEPTH(value: Boolean): Self = StObject.set(x, "SAMPLER3DGREENDEPTH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTONEMAPPING(value: Boolean): Self = StObject.set(x, "TONEMAPPING", value.asInstanceOf[js.Any])
+      inline def setTONEMAPPING(value: Boolean): Self = StObject.set(x, "TONEMAPPING", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTONEMAPPING_ACES(value: Boolean): Self = StObject.set(x, "TONEMAPPING_ACES", value.asInstanceOf[js.Any])
+      inline def setTONEMAPPING_ACES(value: Boolean): Self = StObject.set(x, "TONEMAPPING_ACES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVIGNETTE(value: Boolean): Self = StObject.set(x, "VIGNETTE", value.asInstanceOf[js.Any])
+      inline def setVIGNETTE(value: Boolean): Self = StObject.set(x, "VIGNETTE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVIGNETTEBLENDMODEMULTIPLY(value: Boolean): Self = StObject.set(x, "VIGNETTEBLENDMODEMULTIPLY", value.asInstanceOf[js.Any])
+      inline def setVIGNETTEBLENDMODEMULTIPLY(value: Boolean): Self = StObject.set(x, "VIGNETTEBLENDMODEMULTIPLY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVIGNETTEBLENDMODEOPAQUE(value: Boolean): Self = StObject.set(x, "VIGNETTEBLENDMODEOPAQUE", value.asInstanceOf[js.Any])
+      inline def setVIGNETTEBLENDMODEOPAQUE(value: Boolean): Self = StObject.set(x, "VIGNETTEBLENDMODEOPAQUE", value.asInstanceOf[js.Any])
     }
   }
 }

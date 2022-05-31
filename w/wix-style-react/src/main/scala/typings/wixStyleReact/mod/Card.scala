@@ -9,6 +9,7 @@ import typings.wixStyleReact.anon.PartialCardProps
 import typings.wixStyleReact.anon.WeakValidationMapCardProp
 import typings.wixStyleReact.cardContentMod.default
 import typings.wixStyleReact.cardMod.CardProps
+import typings.wixStyleReact.srcDividerMod.DividerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,8 +35,8 @@ object Card {
   
   @JSImport("wix-style-react", "Card.Divider")
   @js.native
-  def Divider: FunctionComponent[typings.wixStyleReact.srcDividerMod.DividerProps] = js.native
-  inline def Divider_=(x: FunctionComponent[typings.wixStyleReact.srcDividerMod.DividerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Divider")(x.asInstanceOf[js.Any])
+  def Divider: FunctionComponent[DividerProps] = js.native
+  inline def Divider_=(x: FunctionComponent[DividerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Divider")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("wix-style-react", "Card.Header")

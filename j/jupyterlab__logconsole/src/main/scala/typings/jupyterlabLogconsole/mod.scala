@@ -5,7 +5,6 @@ import typings.luminoCoreutils.mod.Token
 import typings.luminoWidgets.mod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -38,10 +37,6 @@ object mod {
       */
     def this(options: IOptions) = this()
   }
-  /**
-    * Log Output Model namespace that defines initialization options.
-    */
-  object LogOutputModel
   
   @JSImport("@jupyterlab/logconsole", "Logger")
   @js.native

@@ -15,51 +15,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("jsrsasign.KJUR.asn1.Time")
 @js.native
 class Time ()
-  extends StObject
-     with typings.jsrsasign.jsrsasign.KJUR.asn1.Time {
+  extends typings.jsrsasign.mod.KJUR.asn1.Time {
   def this(params: StringParamtypegenundefin) = this()
-  
-  /**
-    * get hexadecimal string of ASN.1 TLV bytes
-    * @return hexadecimal string of ASN.1 TLV
-    */
-  /* CompleteClass */
-  override def getEncodedHex(): String = js.native
-  
-  /* CompleteClass */
-  override def getFreshValueHex(): String = js.native
-  
-  /**
-    * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
-    * @return hexadecimal string of ASN.1 TLV length(L)
-    */
-  /* CompleteClass */
-  override def getLengthHexFromValue(): String = js.native
-  
-  /**
-    * get hexadecimal string of ASN.1 TLV value(V) bytes
-    * @return hexadecimal string of ASN.1 TLV value(V) bytes
-    */
-  /* CompleteClass */
-  override def getValueHex(): String = js.native
-  
-  /** hexadecimal string of ASN.1 TLV length(L) */
-  /* CompleteClass */
-  var hL: String = js.native
-  
-  /** hexadecimal string of ASN.1 TLV tag(T) */
-  /* CompleteClass */
-  var hT: String = js.native
-  
-  /** hexadecimal string of ASN.1 TLV */
-  /* CompleteClass */
-  var hTLV: String = js.native
-  
-  /** hexadecimal string of ASN.1 TLV value(V) */
-  /* CompleteClass */
-  var hV: String = js.native
-  
-  /** flag whether internal data was changed */
-  /* CompleteClass */
-  var isModified: String = js.native
 }

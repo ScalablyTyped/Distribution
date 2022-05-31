@@ -74,14 +74,6 @@ object globalMod {
       * }
       */
     inline def open_b(filePath: String, mode: b): bytes = (js.Dynamic.global.applyDynamic("open")(filePath.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[bytes]
-    
-    // === Init context and VU logic ===
-    // ---------------------------------
-    /**
-      * Environment variables.
-      * https://k6.io/docs/using-k6/environment-variables
-      */
-    object __ENV
   }
   
   trait Console extends StObject {

@@ -279,9 +279,4 @@ object mod {
   inline def useTransition[E /* <: HTMLElement */](
     hasAppearRepaintTemporaryTransitionInPropTimeoutOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedPropRef: TransitionOptions[E]
   ): TransitionReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTransition")(hasAppearRepaintTemporaryTransitionInPropTimeoutOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedPropRef.asInstanceOf[js.Any]).asInstanceOf[TransitionReturnValue[E]]
-  
-  @js.native
-  trait Rendered
-    extends StObject
-       with typings.std.Boolean
 }

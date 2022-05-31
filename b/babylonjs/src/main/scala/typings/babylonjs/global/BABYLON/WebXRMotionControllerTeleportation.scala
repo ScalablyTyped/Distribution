@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.IWebXRTeleportationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.WebXRMotionControllerTeleportation")
 @js.native
 class WebXRMotionControllerTeleportation protected ()
-  extends typings.babylonjs.BABYLON.WebXRMotionControllerTeleportation {
+  extends StObject
+     with typings.babylonjs.BABYLON.WebXRMotionControllerTeleportation {
   /**
     * constructs a new anchor system
     * @param _xrSessionManager an instance of WebXRSessionManager
@@ -19,6 +19,12 @@ class WebXRMotionControllerTeleportation protected ()
     _xrSessionManager: typings.babylonjs.BABYLON.WebXRSessionManager,
     _options: IWebXRTeleportationOptions
   ) = this()
+  
+  /**
+    * Releases all held resources
+    */
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
 }
 /* static members */
 object WebXRMotionControllerTeleportation {

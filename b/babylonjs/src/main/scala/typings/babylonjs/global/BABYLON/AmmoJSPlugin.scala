@@ -2,7 +2,6 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.AmmoJSPlugin")
@@ -14,26 +13,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param overlappingPairCache can be used to specify your own overlapping pair cache
   */
 class AmmoJSPlugin ()
-  extends typings.babylonjs.BABYLON.AmmoJSPlugin {
+  extends StObject
+     with typings.babylonjs.BABYLON.AmmoJSPlugin {
   def this(_useDeltaForWorldStep: Boolean) = this()
-  def this(_useDeltaForWorldStep: js.UndefOr[scala.Nothing], ammoInjection: js.Any) = this()
   def this(_useDeltaForWorldStep: Boolean, ammoInjection: js.Any) = this()
-  def this(
-    _useDeltaForWorldStep: js.UndefOr[scala.Nothing],
-    ammoInjection: js.UndefOr[scala.Nothing],
-    overlappingPairCache: js.Any
-  ) = this()
-  def this(
-    _useDeltaForWorldStep: js.UndefOr[scala.Nothing],
-    ammoInjection: js.Any,
-    overlappingPairCache: js.Any
-  ) = this()
-  def this(
-    _useDeltaForWorldStep: Boolean,
-    ammoInjection: js.UndefOr[scala.Nothing],
-    overlappingPairCache: js.Any
-  ) = this()
+  def this(_useDeltaForWorldStep: Unit, ammoInjection: js.Any) = this()
   def this(_useDeltaForWorldStep: Boolean, ammoInjection: js.Any, overlappingPairCache: js.Any) = this()
+  def this(_useDeltaForWorldStep: Boolean, ammoInjection: Unit, overlappingPairCache: js.Any) = this()
+  def this(_useDeltaForWorldStep: Unit, ammoInjection: js.Any, overlappingPairCache: js.Any) = this()
+  def this(_useDeltaForWorldStep: Unit, ammoInjection: Unit, overlappingPairCache: js.Any) = this()
 }
 /* static members */
 object AmmoJSPlugin {

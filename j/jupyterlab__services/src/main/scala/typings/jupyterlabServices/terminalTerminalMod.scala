@@ -10,14 +10,15 @@ import typings.luminoDisposable.mod.IObservableDisposable
 import typings.luminoSignaling.mod.ISignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object terminalTerminalMod {
   
-  @JSImport("@jupyterlab/services/lib/terminal/terminal", "isAvailable")
+  @JSImport("@jupyterlab/services/lib/terminal/terminal", JSImport.Namespace)
   @js.native
-  def isAvailable(): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  inline def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
   
   /* Rewritten from type alias, can be one of: 
     - typings.jupyterlabServices.jupyterlabServicesStrings.connected
@@ -27,19 +28,17 @@ object terminalTerminalMod {
   trait ConnectionStatus extends StObject
   object ConnectionStatus {
     
-    @scala.inline
-    def connected: typings.jupyterlabServices.jupyterlabServicesStrings.connected = "connected".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.connected]
+    inline def connected: typings.jupyterlabServices.jupyterlabServicesStrings.connected = "connected".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.connected]
     
-    @scala.inline
-    def connecting: typings.jupyterlabServices.jupyterlabServicesStrings.connecting = "connecting".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.connecting]
+    inline def connecting: typings.jupyterlabServices.jupyterlabServicesStrings.connecting = "connecting".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.connecting]
     
-    @scala.inline
-    def disconnected: typings.jupyterlabServices.jupyterlabServicesStrings.disconnected = "disconnected".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.disconnected]
+    inline def disconnected: typings.jupyterlabServices.jupyterlabServicesStrings.disconnected = "disconnected".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.disconnected]
   }
   
   @js.native
   trait IManager
-    extends typings.jupyterlabServices.basemanagerMod.IManager {
+    extends StObject
+       with typings.jupyterlabServices.basemanagerMod.IManager {
     
     def connectTo(options: OmitIOptionsserverSettingModel): ITerminalConnection = js.native
     
@@ -101,99 +100,92 @@ object terminalTerminalMod {
     def startNew(options: IOptions): js.Promise[ITerminalConnection] = js.native
   }
   
-  @js.native
   trait IMessage extends StObject {
     
     /**
       * The content of the message.
       */
-    val content: js.UndefOr[js.Array[JSONPrimitive]] = js.native
+    val content: js.UndefOr[js.Array[JSONPrimitive]] = js.undefined
     
     /**
       * The type of the message.
       */
-    val `type`: MessageType = js.native
+    val `type`: MessageType
   }
   object IMessage {
     
-    @scala.inline
-    def apply(`type`: MessageType): IMessage = {
+    inline def apply(`type`: MessageType): IMessage = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[IMessage]
     }
     
-    @scala.inline
-    implicit class IMessageMutableBuilder[Self <: IMessage] (val x: Self) extends AnyVal {
+    extension [Self <: IMessage](x: Self) {
       
-      @scala.inline
-      def setContent(value: js.Array[JSONPrimitive]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: js.Array[JSONPrimitive]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setContentVarargs(value: JSONPrimitive*): Self = StObject.set(x, "content", js.Array(value :_*))
+      inline def setContentVarargs(value: JSONPrimitive*): Self = StObject.set(x, "content", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: MessageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: MessageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait ITerminalConnection extends IObservableDisposable {
+  trait ITerminalConnection
+    extends StObject
+       with IObservableDisposable {
     
     /**
       * The current connection status of the terminal.
       */
-    val connectionStatus: ConnectionStatus = js.native
+    val connectionStatus: ConnectionStatus
     
     /**
       * A signal emitted when the terminal connection status changes.
       */
-    var connectionStatusChanged: ISignal[this.type, ConnectionStatus] = js.native
+    var connectionStatusChanged: ISignal[this.type, ConnectionStatus]
     
     /**
       * A signal emitted when a message is received from the server.
       */
-    var messageReceived: ISignal[ITerminalConnection, IMessage] = js.native
+    var messageReceived: ISignal[ITerminalConnection, IMessage]
     
     /**
       * The model associated with the session.
       */
-    val model: IModel = js.native
+    val model: IModel
     
     /**
       * Get the name of the terminal session.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * Reconnect to the terminal.
       *
       * @returns A promise that resolves when the terminal has reconnected.
       */
-    def reconnect(): js.Promise[Unit] = js.native
+    def reconnect(): js.Promise[Unit]
     
     /**
       * Send a message to the terminal session.
       */
-    def send(message: IMessage): Unit = js.native
+    def send(message: IMessage): Unit
     
     /**
       * The server settings for the session.
       */
-    val serverSettings: ISettings = js.native
+    val serverSettings: ISettings
     
     /**
       * Shut down the terminal session.
       */
-    def shutdown(): js.Promise[Unit] = js.native
+    def shutdown(): js.Promise[Unit]
   }
   object ITerminalConnection {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       connectionStatus: ConnectionStatus,
       connectionStatusChanged: ISignal[ITerminalConnection, ConnectionStatus],
       dispose: () => Unit,
@@ -211,70 +203,54 @@ object terminalTerminalMod {
       __obj.asInstanceOf[ITerminalConnection]
     }
     
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * Terminal model.
         */
-      var model: IModel = js.native
+      var model: IModel
       
       /**
         * The server settings.
         */
-      var serverSettings: js.UndefOr[ISettings] = js.native
+      var serverSettings: js.UndefOr[ISettings] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(model: IModel): IOptions = {
+      inline def apply(model: IModel): IOptions = {
         val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setModel(value: IModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+        inline def setModel(value: IModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServerSettings(value: ISettings): Self = StObject.set(x, "serverSettings", value.asInstanceOf[js.Any])
+        inline def setServerSettings(value: ISettings): Self = StObject.set(x, "serverSettings", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServerSettingsUndefined: Self = StObject.set(x, "serverSettings", js.undefined)
+        inline def setServerSettingsUndefined: Self = StObject.set(x, "serverSettings", js.undefined)
       }
     }
     
-    @scala.inline
-    implicit class ITerminalConnectionMutableBuilder[Self <: ITerminalConnection] (val x: Self) extends AnyVal {
+    extension [Self <: ITerminalConnection](x: Self) {
       
-      @scala.inline
-      def setConnectionStatus(value: ConnectionStatus): Self = StObject.set(x, "connectionStatus", value.asInstanceOf[js.Any])
+      inline def setConnectionStatus(value: ConnectionStatus): Self = StObject.set(x, "connectionStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionStatusChanged(value: ISignal[ITerminalConnection, ConnectionStatus]): Self = StObject.set(x, "connectionStatusChanged", value.asInstanceOf[js.Any])
+      inline def setConnectionStatusChanged(value: ISignal[ITerminalConnection, ConnectionStatus]): Self = StObject.set(x, "connectionStatusChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageReceived(value: ISignal[ITerminalConnection, IMessage]): Self = StObject.set(x, "messageReceived", value.asInstanceOf[js.Any])
+      inline def setMessageReceived(value: ISignal[ITerminalConnection, IMessage]): Self = StObject.set(x, "messageReceived", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModel(value: IModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: IModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReconnect(value: () => js.Promise[Unit]): Self = StObject.set(x, "reconnect", js.Any.fromFunction0(value))
+      inline def setReconnect(value: () => js.Promise[Unit]): Self = StObject.set(x, "reconnect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSend(value: IMessage => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+      inline def setSend(value: IMessage => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setServerSettings(value: ISettings): Self = StObject.set(x, "serverSettings", value.asInstanceOf[js.Any])
+      inline def setServerSettings(value: ISettings): Self = StObject.set(x, "serverSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShutdown(value: () => js.Promise[Unit]): Self = StObject.set(x, "shutdown", js.Any.fromFunction0(value))
+      inline def setShutdown(value: () => js.Promise[Unit]): Self = StObject.set(x, "shutdown", js.Any.fromFunction0(value))
     }
   }
   
@@ -287,16 +263,12 @@ object terminalTerminalMod {
   trait MessageType extends StObject
   object MessageType {
     
-    @scala.inline
-    def disconnect: typings.jupyterlabServices.jupyterlabServicesStrings.disconnect = "disconnect".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.disconnect]
+    inline def disconnect: typings.jupyterlabServices.jupyterlabServicesStrings.disconnect = "disconnect".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.disconnect]
     
-    @scala.inline
-    def set_size: typings.jupyterlabServices.jupyterlabServicesStrings.set_size = "set_size".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.set_size]
+    inline def set_size: typings.jupyterlabServices.jupyterlabServicesStrings.set_size = "set_size".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.set_size]
     
-    @scala.inline
-    def stdin: typings.jupyterlabServices.jupyterlabServicesStrings.stdin = "stdin".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.stdin]
+    inline def stdin: typings.jupyterlabServices.jupyterlabServicesStrings.stdin = "stdin".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.stdin]
     
-    @scala.inline
-    def stdout: typings.jupyterlabServices.jupyterlabServicesStrings.stdout = "stdout".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.stdout]
+    inline def stdout: typings.jupyterlabServices.jupyterlabServicesStrings.stdout = "stdout".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.stdout]
   }
 }

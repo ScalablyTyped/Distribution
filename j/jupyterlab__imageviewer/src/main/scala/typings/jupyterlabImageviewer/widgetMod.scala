@@ -6,10 +6,10 @@ import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.Context
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IModel
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IWidgetFactoryOptions
 import typings.jupyterlabDocregistry.registryMod.IDocumentWidget
+import typings.luminoMessaging.mod.Message
 import typings.luminoWidgets.mod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object widgetMod {
@@ -24,32 +24,32 @@ object widgetMod {
       */
     def this(context: Context) = this()
     
-    var _colorinversion: js.Any = js.native
+    /* private */ var _colorinversion: js.Any = js.native
     
-    var _img: js.Any = js.native
+    /* private */ var _img: js.Any = js.native
     
-    var _matrix: js.Any = js.native
+    /* private */ var _matrix: js.Any = js.native
     
-    var _mimeType: js.Any = js.native
+    /* private */ var _mimeType: js.Any = js.native
     
     /**
       * Handle a change to the title.
       */
-    var _onTitleChanged: js.Any = js.native
+    /* private */ var _onTitleChanged: js.Any = js.native
     
-    var _ready: js.Any = js.native
+    /* private */ var _ready: js.Any = js.native
     
     /**
       * Render the widget content.
       */
-    var _render: js.Any = js.native
+    /* private */ var _render: js.Any = js.native
     
-    var _scale: js.Any = js.native
+    /* private */ var _scale: js.Any = js.native
     
     /**
       * Update the image CSS style, including the transform and filter.
       */
-    var _updateStyle: js.Any = js.native
+    /* private */ var _updateStyle: js.Any = js.native
     
     /**
       * The color inversion of the image.
@@ -63,6 +63,20 @@ object widgetMod {
     val context: Context = js.native
     
     /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* InferMemberOverrides */
+    override def dispose(): Unit = js.native
+    
+    /**
       * Flip the image horizontally.
       */
     def flipHorizontal(): Unit = js.native
@@ -71,6 +85,14 @@ object widgetMod {
       * Flip the image vertically.
       */
     def flipVertical(): Unit = js.native
+    
+    /**
+      * Process a message sent to the handler.
+      *
+      * @param msg - The message to be processed.
+      */
+    /* InferMemberOverrides */
+    override def processMessage(msg: Message): Unit = js.native
     
     /**
       * A promise that resolves when the image viewer is ready.

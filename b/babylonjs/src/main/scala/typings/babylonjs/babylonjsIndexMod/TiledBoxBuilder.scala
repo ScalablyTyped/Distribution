@@ -5,7 +5,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Meshes/index", "TiledBoxBuilder")
@@ -14,6 +13,10 @@ class TiledBoxBuilder ()
   extends typings.babylonjs.buildersIndexMod.TiledBoxBuilder
 /* static members */
 object TiledBoxBuilder {
+  
+  @JSImport("babylonjs/Meshes/index", "TiledBoxBuilder")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a box mesh
@@ -27,10 +30,6 @@ object TiledBoxBuilder {
     * @param scene defines the hosting scene
     * @returns the box mesh
     */
-  @JSImport("babylonjs/Meshes/index", "TiledBoxBuilder.CreateTiledBox")
-  @js.native
-  def CreateTiledBox(name: String, options: Pattern): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs/Meshes/index", "TiledBoxBuilder.CreateTiledBox")
-  @js.native
-  def CreateTiledBox(name: String, options: Pattern, scene: Nullable[Scene]): typings.babylonjs.meshMod.Mesh = js.native
+  inline def CreateTiledBox(name: String, options: Pattern): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateTiledBox(name: String, options: Pattern, scene: Nullable[Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
 }

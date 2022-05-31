@@ -5,178 +5,201 @@ import typings.jupyterlabUiComponents.styleIconMod.LabIconStyle.IPosition
 import typings.jupyterlabUiComponents.styleIconMod.LabIconStyle.ISize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jupyterlabUiComponentsStrings {
   
   @js.native
-  sealed trait bottom extends IPosition
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  sealed trait bottom
+    extends StObject
+       with IPosition
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait `bottom left` extends IPosition
-  @scala.inline
-  def `bottom left`: `bottom left` = ("bottom left").asInstanceOf[`bottom left`]
+  sealed trait `bottom left`
+    extends StObject
+       with IPosition
+  inline def `bottom left`: `bottom left` = ("bottom left").asInstanceOf[`bottom left`]
   
   @js.native
-  sealed trait `bottom right` extends IPosition
-  @scala.inline
-  def `bottom right`: `bottom right` = ("bottom right").asInstanceOf[`bottom right`]
+  sealed trait `bottom right`
+    extends StObject
+       with IPosition
+  inline def `bottom right`: `bottom right` = ("bottom right").asInstanceOf[`bottom right`]
   
   @js.native
-  sealed trait breadCrumb extends IBuiltin
-  @scala.inline
-  def breadCrumb: breadCrumb = "breadCrumb".asInstanceOf[breadCrumb]
+  sealed trait breadCrumb
+    extends StObject
+       with IBuiltin
+  inline def breadCrumb: breadCrumb = "breadCrumb".asInstanceOf[breadCrumb]
   
   @js.native
   sealed trait button extends StObject
-  @scala.inline
-  def button: button = "button".asInstanceOf[button]
+  inline def button: button = "button".asInstanceOf[button]
   
   @js.native
-  sealed trait center extends IPosition
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
+  sealed trait center
+    extends StObject
+       with IPosition
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait commandPaletteHeader extends IBuiltin
-  @scala.inline
-  def commandPaletteHeader: commandPaletteHeader = "commandPaletteHeader".asInstanceOf[commandPaletteHeader]
+  sealed trait commandPaletteHeader
+    extends StObject
+       with IBuiltin
+  inline def commandPaletteHeader: commandPaletteHeader = "commandPaletteHeader".asInstanceOf[commandPaletteHeader]
   
   @js.native
-  sealed trait commandPaletteItem extends IBuiltin
-  @scala.inline
-  def commandPaletteItem: commandPaletteItem = "commandPaletteItem".asInstanceOf[commandPaletteItem]
+  sealed trait commandPaletteItem
+    extends StObject
+       with IBuiltin
+  inline def commandPaletteItem: commandPaletteItem = "commandPaletteItem".asInstanceOf[commandPaletteItem]
   
   @js.native
   sealed trait div extends StObject
-  @scala.inline
-  def div: div = "div".asInstanceOf[div]
+  inline def div: div = "div".asInstanceOf[div]
   
   @js.native
-  sealed trait large extends ISize
-  @scala.inline
-  def large: large = "large".asInstanceOf[large]
+  sealed trait large
+    extends StObject
+       with ISize
+  inline def large: large = "large".asInstanceOf[large]
   
   @js.native
-  sealed trait launcherCard extends IBuiltin
-  @scala.inline
-  def launcherCard: launcherCard = "launcherCard".asInstanceOf[launcherCard]
+  sealed trait launcherCard
+    extends StObject
+       with IBuiltin
+  inline def launcherCard: launcherCard = "launcherCard".asInstanceOf[launcherCard]
   
   @js.native
-  sealed trait launcherSection extends IBuiltin
-  @scala.inline
-  def launcherSection: launcherSection = "launcherSection".asInstanceOf[launcherSection]
+  sealed trait launcherSection
+    extends StObject
+       with IBuiltin
+  inline def launcherSection: launcherSection = "launcherSection".asInstanceOf[launcherSection]
   
   @js.native
-  sealed trait left extends IPosition
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
+  sealed trait left
+    extends StObject
+       with IPosition
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait listing extends IBuiltin
-  @scala.inline
-  def listing: listing = "listing".asInstanceOf[listing]
+  sealed trait listing
+    extends StObject
+       with IBuiltin
+  inline def listing: listing = "listing".asInstanceOf[listing]
   
   @js.native
-  sealed trait listingHeaderItem extends IBuiltin
-  @scala.inline
-  def listingHeaderItem: listingHeaderItem = "listingHeaderItem".asInstanceOf[listingHeaderItem]
+  sealed trait listingHeaderItem
+    extends StObject
+       with IBuiltin
+  inline def listingHeaderItem: listingHeaderItem = "listingHeaderItem".asInstanceOf[listingHeaderItem]
   
   @js.native
-  sealed trait mainAreaTab extends IBuiltin
-  @scala.inline
-  def mainAreaTab: mainAreaTab = "mainAreaTab".asInstanceOf[mainAreaTab]
+  sealed trait mainAreaTab
+    extends StObject
+       with IBuiltin
+  inline def mainAreaTab: mainAreaTab = "mainAreaTab".asInstanceOf[mainAreaTab]
   
   @js.native
-  sealed trait menuItem extends IBuiltin
-  @scala.inline
-  def menuItem: menuItem = "menuItem".asInstanceOf[menuItem]
+  sealed trait menuItem
+    extends StObject
+       with IBuiltin
+  inline def menuItem: menuItem = "menuItem".asInstanceOf[menuItem]
   
   @js.native
-  sealed trait normal extends ISize
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
+  sealed trait normal
+    extends StObject
+       with ISize
+  inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
   sealed trait reset extends StObject
-  @scala.inline
-  def reset: reset = "reset".asInstanceOf[reset]
+  inline def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
-  sealed trait right extends IPosition
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
+  sealed trait right
+    extends StObject
+       with IPosition
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait runningItem extends IBuiltin
-  @scala.inline
-  def runningItem: runningItem = "runningItem".asInstanceOf[runningItem]
+  sealed trait runningItem
+    extends StObject
+       with IBuiltin
+  inline def runningItem: runningItem = "runningItem".asInstanceOf[runningItem]
   
   @js.native
-  sealed trait select extends IBuiltin
-  @scala.inline
-  def select: select = "select".asInstanceOf[select]
+  sealed trait select
+    extends StObject
+       with IBuiltin
+  inline def select: select = "select".asInstanceOf[select]
   
   @js.native
-  sealed trait settingsEditor extends IBuiltin
-  @scala.inline
-  def settingsEditor: settingsEditor = "settingsEditor".asInstanceOf[settingsEditor]
+  sealed trait settingsEditor
+    extends StObject
+       with IBuiltin
+  inline def settingsEditor: settingsEditor = "settingsEditor".asInstanceOf[settingsEditor]
   
   @js.native
-  sealed trait sideBar extends IBuiltin
-  @scala.inline
-  def sideBar: sideBar = "sideBar".asInstanceOf[sideBar]
+  sealed trait sideBar
+    extends StObject
+       with IBuiltin
+  inline def sideBar: sideBar = "sideBar".asInstanceOf[sideBar]
   
   @js.native
-  sealed trait small extends ISize
-  @scala.inline
-  def small: small = "small".asInstanceOf[small]
+  sealed trait small
+    extends StObject
+       with ISize
+  inline def small: small = "small".asInstanceOf[small]
   
   @js.native
   sealed trait span extends StObject
-  @scala.inline
-  def span: span = "span".asInstanceOf[span]
+  inline def span: span = "span".asInstanceOf[span]
   
   @js.native
-  sealed trait splash extends IBuiltin
-  @scala.inline
-  def splash: splash = "splash".asInstanceOf[splash]
+  sealed trait splash
+    extends StObject
+       with IBuiltin
+  inline def splash: splash = "splash".asInstanceOf[splash]
   
   @js.native
-  sealed trait statusBar extends IBuiltin
-  @scala.inline
-  def statusBar: statusBar = "statusBar".asInstanceOf[statusBar]
+  sealed trait statusBar
+    extends StObject
+       with IBuiltin
+  inline def statusBar: statusBar = "statusBar".asInstanceOf[statusBar]
   
   @js.native
   sealed trait submit extends StObject
-  @scala.inline
-  def submit: submit = "submit".asInstanceOf[submit]
+  inline def submit: submit = "submit".asInstanceOf[submit]
   
   @js.native
-  sealed trait toolbarButton extends IBuiltin
-  @scala.inline
-  def toolbarButton: toolbarButton = "toolbarButton".asInstanceOf[toolbarButton]
+  sealed trait toolbarButton
+    extends StObject
+       with IBuiltin
+  inline def toolbarButton: toolbarButton = "toolbarButton".asInstanceOf[toolbarButton]
   
   @js.native
-  sealed trait top extends IPosition
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
+  sealed trait top
+    extends StObject
+       with IPosition
+  inline def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait `top left` extends IPosition
-  @scala.inline
-  def `top left`: `top left` = ("top left").asInstanceOf[`top left`]
+  sealed trait `top left`
+    extends StObject
+       with IPosition
+  inline def `top left`: `top left` = ("top left").asInstanceOf[`top left`]
   
   @js.native
-  sealed trait `top right` extends IPosition
-  @scala.inline
-  def `top right`: `top right` = ("top right").asInstanceOf[`top right`]
+  sealed trait `top right`
+    extends StObject
+       with IPosition
+  inline def `top right`: `top right` = ("top right").asInstanceOf[`top right`]
   
   @js.native
-  sealed trait xlarge extends ISize
-  @scala.inline
-  def xlarge: xlarge = "xlarge".asInstanceOf[xlarge]
+  sealed trait xlarge
+    extends StObject
+       with ISize
+  inline def xlarge: xlarge = "xlarge".asInstanceOf[xlarge]
 }

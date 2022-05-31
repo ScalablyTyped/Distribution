@@ -2,21 +2,22 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeviceOrientationCamera extends FreeCamera {
+trait DeviceOrientationCamera
+  extends StObject
+     with FreeCamera {
   
-  var _disablePointerInputWhenUsingDeviceOrientation: js.Any = js.native
+  /* private */ var _disablePointerInputWhenUsingDeviceOrientation: js.Any = js.native
   
-  var _dragFactor: js.Any = js.native
+  /* private */ var _dragFactor: js.Any = js.native
   
-  var _initialQuaternion: js.Any = js.native
+  /* private */ var _initialQuaternion: js.Any = js.native
   
-  var _quaternionCache: js.Any = js.native
+  /* private */ var _quaternionCache: js.Any = js.native
   
-  var _tmpDragQuaternion: js.Any = js.native
+  /* private */ var _tmpDragQuaternion: js.Any = js.native
   
   /**
     * Gets or sets a boolean indicating that pointer input must be disabled on first orientation sensor update (Default: true)

@@ -2,37 +2,38 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PBRMetallicRoughnessBlock extends NodeMaterialBlock {
+trait PBRMetallicRoughnessBlock
+  extends StObject
+     with NodeMaterialBlock {
   
-  var _environmentBRDFTexture: js.Any = js.native
+  /* private */ var _environmentBRDFTexture: js.Any = js.native
   
-  var _environmentBrdfSamplerName: js.Any = js.native
+  /* private */ var _environmentBrdfSamplerName: js.Any = js.native
   
-  var _getAlbedoOpacityCode: js.Any = js.native
+  /* private */ var _getAlbedoOpacityCode: js.Any = js.native
   
-  var _getAmbientOcclusionCode: js.Any = js.native
+  /* private */ var _getAmbientOcclusionCode: js.Any = js.native
   
-  var _getReflectivityCode: js.Any = js.native
+  /* private */ var _getReflectivityCode: js.Any = js.native
   
-  var _injectVertexCode: js.Any = js.native
+  /* private */ var _injectVertexCode: js.Any = js.native
   
-  var _invertNormalName: js.Any = js.native
+  /* private */ var _invertNormalName: js.Any = js.native
   
-  var _lightId: js.Any = js.native
+  /* private */ var _lightId: js.Any = js.native
   
-  var _metallicF0Factor: js.Any = js.native
+  /* private */ var _metallicF0Factor: js.Any = js.native
   
-  var _metallicReflectanceColor: js.Any = js.native
+  /* private */ var _metallicReflectanceColor: js.Any = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
-  var _vMetallicReflectanceFactorsName: js.Any = js.native
+  /* private */ var _vMetallicReflectanceFactorsName: js.Any = js.native
   
-  var _vNormalWName: js.Any = js.native
+  /* private */ var _vNormalWName: js.Any = js.native
   
   /**
     * Gets the alpha output component

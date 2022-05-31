@@ -7,7 +7,6 @@ import typings.std.ImageData
 import typings.std.OffscreenCanvas
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object engineDynamicTextureMod {
@@ -15,7 +14,6 @@ object engineDynamicTextureMod {
   /* augmented module */
   object babylonjsEnginesThinEngineAugmentingMod {
     
-    @js.native
     trait ThinEngine extends StObject {
       
       /**
@@ -26,7 +24,7 @@ object engineDynamicTextureMod {
         * @param samplingMode defines the required sampling mode (Texture.NEAREST_SAMPLINGMODE by default)
         * @returns the dynamic texture inside an InternalTexture
         */
-      def createDynamicTexture(width: Double, height: Double, generateMipMaps: Boolean, samplingMode: Double): InternalTexture = js.native
+      def createDynamicTexture(width: Double, height: Double, generateMipMaps: Boolean, samplingMode: Double): InternalTexture
       
       /**
         * Update the content of a dynamic texture
@@ -44,12 +42,11 @@ object engineDynamicTextureMod {
         premulAlpha: js.UndefOr[Boolean],
         format: js.UndefOr[Double],
         forceBindTexture: js.UndefOr[Boolean]
-      ): Unit = js.native
+      ): Unit
     }
     object ThinEngine {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         createDynamicTexture: (Double, Double, Boolean, Double) => InternalTexture,
         updateDynamicTexture: (Nullable[InternalTexture], ImageBitmap | ImageData | HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | OffscreenCanvas, js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Double], js.UndefOr[Boolean]) => Unit
       ): ThinEngine = {
@@ -57,14 +54,11 @@ object engineDynamicTextureMod {
         __obj.asInstanceOf[ThinEngine]
       }
       
-      @scala.inline
-      implicit class ThinEngineMutableBuilder[Self <: ThinEngine] (val x: Self) extends AnyVal {
+      extension [Self <: ThinEngine](x: Self) {
         
-        @scala.inline
-        def setCreateDynamicTexture(value: (Double, Double, Boolean, Double) => InternalTexture): Self = StObject.set(x, "createDynamicTexture", js.Any.fromFunction4(value))
+        inline def setCreateDynamicTexture(value: (Double, Double, Boolean, Double) => InternalTexture): Self = StObject.set(x, "createDynamicTexture", js.Any.fromFunction4(value))
         
-        @scala.inline
-        def setUpdateDynamicTexture(
+        inline def setUpdateDynamicTexture(
           value: (Nullable[InternalTexture], ImageBitmap | ImageData | HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | OffscreenCanvas, js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Double], js.UndefOr[Boolean]) => Unit
         ): Self = StObject.set(x, "updateDynamicTexture", js.Any.fromFunction6(value))
       }

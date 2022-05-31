@@ -3,7 +3,6 @@ package typings.babylonjs.indexMod
 import typings.babylonjs.anon.Segments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "HemisphereBuilder")
@@ -13,6 +12,10 @@ class HemisphereBuilder ()
 /* static members */
 object HemisphereBuilder {
   
+  @JSImport("babylonjs/index", "HemisphereBuilder")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a hemisphere mesh
     * @param name defines the name of the mesh
@@ -20,7 +23,5 @@ object HemisphereBuilder {
     * @param scene defines the hosting scene
     * @returns the hemisphere mesh
     */
-  @JSImport("babylonjs/index", "HemisphereBuilder.CreateHemisphere")
-  @js.native
-  def CreateHemisphere(name: String, options: Segments, scene: js.Any): typings.babylonjs.meshMod.Mesh = js.native
+  inline def CreateHemisphere(name: String, options: Segments, scene: js.Any): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateHemisphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
 }

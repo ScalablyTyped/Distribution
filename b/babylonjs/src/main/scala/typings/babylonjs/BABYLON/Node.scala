@@ -3,18 +3,19 @@ package typings.babylonjs.BABYLON
 import typings.babylonjs.anon.MaxMin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Node extends IBehaviorAware[Node] {
+trait Node
+  extends StObject
+     with IBehaviorAware[Node] {
   
   /** @hidden */
   def _addToSceneRootNodes(): Unit = js.native
   
-  var _animationPropertiesOverride: js.Any = js.native
+  /* private */ var _animationPropertiesOverride: js.Any = js.native
   
-  var _behaviors: js.Any = js.native
+  /* private */ var _behaviors: js.Any = js.native
   
   /** @hidden */
   var _cache: js.Any = js.native
@@ -22,30 +23,30 @@ trait Node extends IBehaviorAware[Node] {
   /** @hidden */
   var _childUpdateId: Double = js.native
   
-  var _children: js.Any = js.native
+  /* private */ var _children: js.Any = js.native
   
   /** @hidden */
   var _currentRenderId: Double = js.native
   
-  var _doNotSerialize: js.Any = js.native
+  /* private */ var _doNotSerialize: js.Any = js.native
   
   /** @hidden */
   def _getActionManagerForTrigger(): Nullable[AbstractActionManager] = js.native
-  def _getActionManagerForTrigger(trigger: js.UndefOr[scala.Nothing], initialCall: Boolean): Nullable[AbstractActionManager] = js.native
   def _getActionManagerForTrigger(trigger: Double): Nullable[AbstractActionManager] = js.native
   def _getActionManagerForTrigger(trigger: Double, initialCall: Boolean): Nullable[AbstractActionManager] = js.native
+  def _getActionManagerForTrigger(trigger: Unit, initialCall: Boolean): Nullable[AbstractActionManager] = js.native
   
   /** @hidden */
   def _getDescendants(results: js.Array[Node]): Unit = js.native
-  def _getDescendants(
-    results: js.Array[Node],
-    directDescendantsOnly: js.UndefOr[scala.Nothing],
-    predicate: js.Function1[/* node */ this.type, Boolean]
-  ): Unit = js.native
   def _getDescendants(results: js.Array[Node], directDescendantsOnly: Boolean): Unit = js.native
   def _getDescendants(
     results: js.Array[Node],
     directDescendantsOnly: Boolean,
+    predicate: js.Function1[/* node */ this.type, Boolean]
+  ): Unit = js.native
+  def _getDescendants(
+    results: js.Array[Node],
+    directDescendantsOnly: Unit,
     predicate: js.Function1[/* node */ this.type, Boolean]
   ): Unit = js.native
   
@@ -58,14 +59,14 @@ trait Node extends IBehaviorAware[Node] {
   /** @hidden */
   var _isDisposed: Boolean = js.native
   
-  var _isEnabled: js.Any = js.native
+  /* private */ var _isEnabled: js.Any = js.native
   
   /** @hidden */
   val _isNode: Boolean = js.native
   
-  var _isParentEnabled: js.Any = js.native
+  /* private */ var _isParentEnabled: js.Any = js.native
   
-  var _isReady: js.Any = js.native
+  /* private */ var _isReady: js.Any = js.native
   
   /** @hidden */
   def _isSynchronized(): Boolean = js.native
@@ -73,13 +74,13 @@ trait Node extends IBehaviorAware[Node] {
   /** @hidden */
   def _markSyncedWithParent(): Unit = js.native
   
-  var _onDisposeObserver: js.Any = js.native
+  /* private */ var _onDisposeObserver: js.Any = js.native
   
-  var _parentNode: js.Any = js.native
+  /* private */ var _parentNode: js.Any = js.native
   
-  var _parentUpdateId: js.Any = js.native
+  /* private */ var _parentUpdateId: js.Any = js.native
   
-  var _ranges: org.scalablytyped.runtime.StringDictionary[Nullable[AnimationRange]] = js.native
+  /* protected */ var _ranges: org.scalablytyped.runtime.StringDictionary[Nullable[AnimationRange]] = js.native
   
   /** @hidden */
   def _removeFromSceneRootNodes(): Unit = js.native
@@ -88,7 +89,7 @@ trait Node extends IBehaviorAware[Node] {
   var _scene: Scene = js.native
   
   /** @hidden */
-  var _sceneRootNodesIndex: js.Any = js.native
+  /* private */ var _sceneRootNodesIndex: js.Any = js.native
   
   /** @hidden */
   def _setReady(state: Boolean): Unit = js.native
@@ -134,28 +135,13 @@ trait Node extends IBehaviorAware[Node] {
     * @returns the object created for this animation. If range does not exist, it will return null
     */
   def beginAnimation(name: String): Nullable[Animatable] = js.native
-  def beginAnimation(
-    name: String,
-    loop: js.UndefOr[scala.Nothing],
-    speedRatio: js.UndefOr[scala.Nothing],
-    onAnimationEnd: js.Function0[Unit]
-  ): Nullable[Animatable] = js.native
-  def beginAnimation(name: String, loop: js.UndefOr[scala.Nothing], speedRatio: Double): Nullable[Animatable] = js.native
-  def beginAnimation(
-    name: String,
-    loop: js.UndefOr[scala.Nothing],
-    speedRatio: Double,
-    onAnimationEnd: js.Function0[Unit]
-  ): Nullable[Animatable] = js.native
   def beginAnimation(name: String, loop: Boolean): Nullable[Animatable] = js.native
-  def beginAnimation(
-    name: String,
-    loop: Boolean,
-    speedRatio: js.UndefOr[scala.Nothing],
-    onAnimationEnd: js.Function0[Unit]
-  ): Nullable[Animatable] = js.native
   def beginAnimation(name: String, loop: Boolean, speedRatio: Double): Nullable[Animatable] = js.native
   def beginAnimation(name: String, loop: Boolean, speedRatio: Double, onAnimationEnd: js.Function0[Unit]): Nullable[Animatable] = js.native
+  def beginAnimation(name: String, loop: Boolean, speedRatio: Unit, onAnimationEnd: js.Function0[Unit]): Nullable[Animatable] = js.native
+  def beginAnimation(name: String, loop: Unit, speedRatio: Double): Nullable[Animatable] = js.native
+  def beginAnimation(name: String, loop: Unit, speedRatio: Double, onAnimationEnd: js.Function0[Unit]): Nullable[Animatable] = js.native
+  def beginAnimation(name: String, loop: Unit, speedRatio: Unit, onAnimationEnd: js.Function0[Unit]): Nullable[Animatable] = js.native
   
   /**
     * Gets the list of attached behaviors
@@ -193,9 +179,9 @@ trait Node extends IBehaviorAware[Node] {
     * @param disposeMaterialAndTextures Set to true to also dispose referenced materials and textures (false by default)
     */
   def dispose(): Unit = js.native
-  def dispose(doNotRecurse: js.UndefOr[scala.Nothing], disposeMaterialAndTextures: Boolean): Unit = js.native
   def dispose(doNotRecurse: Boolean): Unit = js.native
   def dispose(doNotRecurse: Boolean, disposeMaterialAndTextures: Boolean): Unit = js.native
+  def dispose(doNotRecurse: Unit, disposeMaterialAndTextures: Boolean): Unit = js.native
   
   /**
     * Gets or sets a boolean used to define if the node must be serialized
@@ -230,12 +216,9 @@ trait Node extends IBehaviorAware[Node] {
     * @returns an array of AbstractMesh
     */
   def getChildMeshes(): js.Array[AbstractMesh] = js.native
-  def getChildMeshes(
-    directDescendantsOnly: js.UndefOr[scala.Nothing],
-    predicate: js.Function1[/* node */ this.type, Boolean]
-  ): js.Array[AbstractMesh] = js.native
   def getChildMeshes(directDescendantsOnly: Boolean): js.Array[AbstractMesh] = js.native
   def getChildMeshes(directDescendantsOnly: Boolean, predicate: js.Function1[/* node */ this.type, Boolean]): js.Array[AbstractMesh] = js.native
+  def getChildMeshes(directDescendantsOnly: Unit, predicate: js.Function1[/* node */ this.type, Boolean]): js.Array[AbstractMesh] = js.native
   
   /**
     * Get all direct children of this node
@@ -244,9 +227,9 @@ trait Node extends IBehaviorAware[Node] {
     * @returns an array of Node
     */
   def getChildren(): js.Array[Node] = js.native
-  def getChildren(predicate: js.UndefOr[scala.Nothing], directDescendantsOnly: Boolean): js.Array[Node] = js.native
   def getChildren(predicate: js.Function1[/* node */ this.type, Boolean]): js.Array[Node] = js.native
   def getChildren(predicate: js.Function1[/* node */ this.type, Boolean], directDescendantsOnly: Boolean): js.Array[Node] = js.native
+  def getChildren(predicate: Unit, directDescendantsOnly: Boolean): js.Array[Node] = js.native
   
   /**
     * Gets a string identifying the name of the class
@@ -261,12 +244,9 @@ trait Node extends IBehaviorAware[Node] {
     * @return all children nodes of all types
     */
   def getDescendants(): js.Array[Node] = js.native
-  def getDescendants(
-    directDescendantsOnly: js.UndefOr[scala.Nothing],
-    predicate: js.Function1[/* node */ this.type, Boolean]
-  ): js.Array[Node] = js.native
   def getDescendants(directDescendantsOnly: Boolean): js.Array[Node] = js.native
   def getDescendants(directDescendantsOnly: Boolean, predicate: js.Function1[/* node */ this.type, Boolean]): js.Array[Node] = js.native
+  def getDescendants(directDescendantsOnly: Unit, predicate: js.Function1[/* node */ this.type, Boolean]): js.Array[Node] = js.native
   
   /**
     * Gets the engine of the node
@@ -281,13 +261,13 @@ trait Node extends IBehaviorAware[Node] {
     * @returns the new bounding vectors
     */
   def getHierarchyBoundingVectors(): MaxMin = js.native
-  def getHierarchyBoundingVectors(
-    includeDescendants: js.UndefOr[scala.Nothing],
-    predicate: Nullable[js.Function1[/* abstractMesh */ AbstractMesh, Boolean]]
-  ): MaxMin = js.native
   def getHierarchyBoundingVectors(includeDescendants: Boolean): MaxMin = js.native
   def getHierarchyBoundingVectors(
     includeDescendants: Boolean,
+    predicate: Nullable[js.Function1[/* abstractMesh */ AbstractMesh, Boolean]]
+  ): MaxMin = js.native
+  def getHierarchyBoundingVectors(
+    includeDescendants: Unit,
     predicate: Nullable[js.Function1[/* abstractMesh */ AbstractMesh, Boolean]]
   ): MaxMin = js.native
   

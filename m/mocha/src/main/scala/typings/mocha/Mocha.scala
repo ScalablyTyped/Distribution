@@ -3493,13 +3493,6 @@ object Mocha {
           inline def setOk(value: String): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
         }
       }
-      
-      /**
-        * ANSI TTY control sequences common among reporters.
-        *
-        * @see https://mochajs.org/api/module-base#.cursor
-        */
-      object cursor
     }
     
     /**
@@ -3894,16 +3887,6 @@ object Mocha {
       }
     }
     
-    /* was `typeof Base` */
-    object base {
-      
-      /**
-        * ANSI TTY control sequences common among reporters.
-        *
-        * @see https://mochajs.org/api/module-base#.cursor
-        */
-      object cursor
-    }
     /**
       * Initialize a new `Base` reporter.
       *
@@ -3981,8 +3964,6 @@ object Mocha {
     /* was `typeof Nyan` */
     type nyan = Nyan_
     
-    /* was `typeof Progress` */
-    object progress
     /**
       * Initialize a new `Progress` bar test reporter.
       *
@@ -4007,8 +3988,6 @@ object Mocha {
     /* was `typeof TAP` */
     type tap = TAP_
     
-    /* was `typeof XUnit` */
-    object xunit
     /**
       * Initialize a new `XUnit` test reporter.
       *

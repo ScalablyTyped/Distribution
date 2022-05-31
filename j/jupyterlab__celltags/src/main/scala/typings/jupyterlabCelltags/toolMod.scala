@@ -7,7 +7,6 @@ import typings.jupyterlabNotebook.mod.NotebookTools.Tool
 import typings.jupyterlabNotebook.tokensMod.INotebookTracker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toolMod {
@@ -43,7 +42,7 @@ object toolMod {
       */
     def createTagInput(): Unit = js.native
     
-    var header: js.Any = js.native
+    /* private */ var header: js.Any = js.native
     
     /**
       * Update each tag widget to represent whether it is applied to the current
@@ -91,7 +90,7 @@ object toolMod {
       */
     def removeTag(name: String): Unit = js.native
     
-    var tagList: js.Any = js.native
+    /* private */ var tagList: js.Any = js.native
     
     var tracker: INotebookTracker = js.native
     

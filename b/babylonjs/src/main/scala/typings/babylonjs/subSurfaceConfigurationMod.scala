@@ -6,14 +6,15 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.subSurfaceScatteringPostProcessMod.SubSurfaceScatteringPostProcess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subSurfaceConfigurationMod {
   
   @JSImport("babylonjs/Rendering/subSurfaceConfiguration", "SubSurfaceConfiguration")
   @js.native
-  class SubSurfaceConfiguration protected () extends PrePassEffectConfiguration {
+  class SubSurfaceConfiguration protected ()
+    extends StObject
+       with PrePassEffectConfiguration {
     /**
       * Builds a subsurface configuration object
       * @param scene The scene
@@ -26,15 +27,15 @@ object subSurfaceConfigurationMod {
       * rcp(s) = 1 / ShapeParam = ScatteringDistance.
       * Returns the sampled radial distance, s.t. (u = 0 -> r = 0) and (u = 1 -> r = Inf).
       */
-    var _sampleBurleyDiffusionProfile: js.Any = js.native
+    /* private */ var _sampleBurleyDiffusionProfile: js.Any = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
-    var _ssDiffusionD: js.Any = js.native
+    /* private */ var _ssDiffusionD: js.Any = js.native
     
-    var _ssDiffusionS: js.Any = js.native
+    /* private */ var _ssDiffusionS: js.Any = js.native
     
-    var _ssFilterRadii: js.Any = js.native
+    /* private */ var _ssFilterRadii: js.Any = js.native
     
     /**
       * Adds a new diffusion profile.
@@ -64,6 +65,12 @@ object subSurfaceConfigurationMod {
     def dispose_MSubSurfaceConfiguration(): Unit = js.native
     
     /**
+      * Is the effect enabled
+      */
+    /* CompleteClass */
+    var enabled: Boolean = js.native
+    
+    /**
       * @hidden
       * https://zero-radiance.github.io/post/sampling-diffusion/
       *
@@ -82,6 +89,12 @@ object subSurfaceConfigurationMod {
       * Used for subsurface scattering
       */
     var metersPerUnit: Double = js.native
+    
+    /**
+      * Name of the effect
+      */
+    /* CompleteClass */
+    var name: String = js.native
     
     /**
       * Post process to attach for screen space subsurface scattering
@@ -111,13 +124,21 @@ object subSurfaceConfigurationMod {
       * Diffusion profile filter radius for subsurface scattering
       */
     def ssFilterRadii: js.Array[Double] = js.native
+    
+    /**
+      * Textures required in the MRT
+      */
+    /* CompleteClass */
+    var texturesRequired: js.Array[Double] = js.native
   }
   /* static members */
   object SubSurfaceConfiguration {
     
-    /** @hidden */
-    @JSImport("babylonjs/Rendering/subSurfaceConfiguration", "SubSurfaceConfiguration._SceneComponentInitialization")
+    @JSImport("babylonjs/Rendering/subSurfaceConfiguration", "SubSurfaceConfiguration")
     @js.native
-    def _SceneComponentInitialization(scene: Scene): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    /** @hidden */
+    inline def _SceneComponentInitialization(scene: Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

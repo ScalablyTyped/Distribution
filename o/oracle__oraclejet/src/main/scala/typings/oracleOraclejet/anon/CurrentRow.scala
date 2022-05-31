@@ -3,21 +3,19 @@ package typings.oracleOraclejet.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CurrentRow[K]
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var currentRow: typings.oracleOraclejet.ojtableMod.ojTable.CurrentRow[K] = js.native
+  var currentRow: typings.oracleOraclejet.ojtableMod.ojTable.CurrentRow[K]
   
-  var previousCurrentRow: typings.oracleOraclejet.ojtableMod.ojTable.CurrentRow[K] = js.native
+  var previousCurrentRow: typings.oracleOraclejet.ojtableMod.ojTable.CurrentRow[K]
 }
 object CurrentRow {
   
-  @scala.inline
-  def apply[K](
+  inline def apply[K](
     currentRow: typings.oracleOraclejet.ojtableMod.ojTable.CurrentRow[K],
     previousCurrentRow: typings.oracleOraclejet.ojtableMod.ojTable.CurrentRow[K]
   ): CurrentRow[K] = {
@@ -25,13 +23,10 @@ object CurrentRow {
     __obj.asInstanceOf[CurrentRow[K]]
   }
   
-  @scala.inline
-  implicit class CurrentRowMutableBuilder[Self <: CurrentRow[_], K] (val x: Self with CurrentRow[K]) extends AnyVal {
+  extension [Self <: CurrentRow[?], K](x: Self & CurrentRow[K]) {
     
-    @scala.inline
-    def setCurrentRow(value: typings.oracleOraclejet.ojtableMod.ojTable.CurrentRow[K]): Self = StObject.set(x, "currentRow", value.asInstanceOf[js.Any])
+    inline def setCurrentRow(value: typings.oracleOraclejet.ojtableMod.ojTable.CurrentRow[K]): Self = StObject.set(x, "currentRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousCurrentRow(value: typings.oracleOraclejet.ojtableMod.ojTable.CurrentRow[K]): Self = StObject.set(x, "previousCurrentRow", value.asInstanceOf[js.Any])
+    inline def setPreviousCurrentRow(value: typings.oracleOraclejet.ojtableMod.ojTable.CurrentRow[K]): Self = StObject.set(x, "previousCurrentRow", value.asInstanceOf[js.Any])
   }
 }

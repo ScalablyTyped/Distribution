@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "typescript-tuple"
-version := "2.2.1-0f4ce7"
+version := "2.2.1-f080b2"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "std" % "4.1-2f6855",
+  "org.scalablytyped" %%% "std" % "4.1-f7e8ab",
   "org.scalablytyped" %%% "typescript-compare" % "0.0.2-e709bd",
   "org.scalablytyped" %%% "typescript-logic" % "0.0.0-2e24de")
 publishArtifact in packageDoc := false

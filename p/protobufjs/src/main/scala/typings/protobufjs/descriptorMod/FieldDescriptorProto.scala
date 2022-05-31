@@ -486,13 +486,4 @@ object FieldDescriptorProto {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   inline def verify(message: StringDictionary[js.Any]): Null | String = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[Null | String]
-  
-  /** Message fields. */
-  object fields
-  
-  /** Message fields by id. */
-  object fieldsById
-  
-  /** Oneofs declared within this namespace, if any. */
-  object oneofs
 }

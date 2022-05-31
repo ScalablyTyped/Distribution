@@ -10,9 +10,9 @@ JupyterLab - Log Console Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/logconsole-extension |
 | Keywords           | - |
-| # releases         | 85 |
+| # releases         | 105 |
 | # dependents       | 1 |
-| # downloads        | 1180174 |
+| # downloads        | 1344682 |
 | # stars            | 0 |
 
 ## Links

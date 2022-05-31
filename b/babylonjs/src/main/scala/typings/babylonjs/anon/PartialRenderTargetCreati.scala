@@ -2,70 +2,54 @@ package typings.babylonjs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<babylonjs.BABYLON.RenderTargetCreationOptions> */
-@js.native
 trait PartialRenderTargetCreati extends StObject {
   
-  var format: js.UndefOr[Double] = js.native
+  var format: js.UndefOr[Double] = js.undefined
   
-  var generateDepthBuffer: js.UndefOr[Boolean] = js.native
+  var generateDepthBuffer: js.UndefOr[Boolean] = js.undefined
   
-  var generateMipMaps: js.UndefOr[Boolean] = js.native
+  var generateMipMaps: js.UndefOr[Boolean] = js.undefined
   
-  var generateStencilBuffer: js.UndefOr[Boolean] = js.native
+  var generateStencilBuffer: js.UndefOr[Boolean] = js.undefined
   
-  var samplingMode: js.UndefOr[Double] = js.native
+  var samplingMode: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[Double] = js.native
+  var `type`: js.UndefOr[Double] = js.undefined
 }
 object PartialRenderTargetCreati {
   
-  @scala.inline
-  def apply(): PartialRenderTargetCreati = {
+  inline def apply(): PartialRenderTargetCreati = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialRenderTargetCreati]
   }
   
-  @scala.inline
-  implicit class PartialRenderTargetCreatiMutableBuilder[Self <: PartialRenderTargetCreati] (val x: Self) extends AnyVal {
+  extension [Self <: PartialRenderTargetCreati](x: Self) {
     
-    @scala.inline
-    def setFormat(value: Double): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: Double): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setGenerateDepthBuffer(value: Boolean): Self = StObject.set(x, "generateDepthBuffer", value.asInstanceOf[js.Any])
+    inline def setGenerateDepthBuffer(value: Boolean): Self = StObject.set(x, "generateDepthBuffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerateDepthBufferUndefined: Self = StObject.set(x, "generateDepthBuffer", js.undefined)
+    inline def setGenerateDepthBufferUndefined: Self = StObject.set(x, "generateDepthBuffer", js.undefined)
     
-    @scala.inline
-    def setGenerateMipMaps(value: Boolean): Self = StObject.set(x, "generateMipMaps", value.asInstanceOf[js.Any])
+    inline def setGenerateMipMaps(value: Boolean): Self = StObject.set(x, "generateMipMaps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerateMipMapsUndefined: Self = StObject.set(x, "generateMipMaps", js.undefined)
+    inline def setGenerateMipMapsUndefined: Self = StObject.set(x, "generateMipMaps", js.undefined)
     
-    @scala.inline
-    def setGenerateStencilBuffer(value: Boolean): Self = StObject.set(x, "generateStencilBuffer", value.asInstanceOf[js.Any])
+    inline def setGenerateStencilBuffer(value: Boolean): Self = StObject.set(x, "generateStencilBuffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerateStencilBufferUndefined: Self = StObject.set(x, "generateStencilBuffer", js.undefined)
+    inline def setGenerateStencilBufferUndefined: Self = StObject.set(x, "generateStencilBuffer", js.undefined)
     
-    @scala.inline
-    def setSamplingMode(value: Double): Self = StObject.set(x, "samplingMode", value.asInstanceOf[js.Any])
+    inline def setSamplingMode(value: Double): Self = StObject.set(x, "samplingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSamplingModeUndefined: Self = StObject.set(x, "samplingMode", js.undefined)
+    inline def setSamplingModeUndefined: Self = StObject.set(x, "samplingMode", js.undefined)
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

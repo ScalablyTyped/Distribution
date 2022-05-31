@@ -1,5 +1,6 @@
 package typings.awsSdkClientPinpointBrowser.mod
 
+import typings.awsSdkClientPinpointBrowser.typesUpdateApplicationSettingsInputMod.UpdateApplicationSettingsInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class UpdateApplicationSettingsCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.updateApplicationSettingsCommandMod.UpdateApplicationSettingsCommand {
-  def this(input: typings.awsSdkClientPinpointBrowser.typesUpdateApplicationSettingsInputMod.UpdateApplicationSettingsInput) = this()
+  def this(input: UpdateApplicationSettingsInput) = this()
 }

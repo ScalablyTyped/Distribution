@@ -18,7 +18,6 @@ import typings.std.File
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object assetsManagerMod {
@@ -34,20 +33,20 @@ object assetsManagerMod {
       * Task name
       */ name: String) = this()
     
-    var _errorObject: js.Any = js.native
+    /* private */ var _errorObject: js.Any = js.native
     
-    var _isCompleted: js.Any = js.native
+    /* private */ var _isCompleted: js.Any = js.native
     
     /**
       * Internal only
       * @hidden
       */
     def _setErrorObject(): Unit = js.native
-    def _setErrorObject(message: js.UndefOr[scala.Nothing], exception: js.Any): Unit = js.native
     def _setErrorObject(message: String): Unit = js.native
     def _setErrorObject(message: String, exception: js.Any): Unit = js.native
+    def _setErrorObject(message: Unit, exception: js.Any): Unit = js.native
     
-    var _taskState: js.Any = js.native
+    /* private */ var _taskState: js.Any = js.native
     
     /**
       * Gets the current error object (if task is in error)
@@ -63,17 +62,17 @@ object assetsManagerMod {
       * Task name
       */ var name: String = js.native
     
-    var onDoneCallback: js.Any = js.native
+    /* private */ var onDoneCallback: js.Any = js.native
     
     /**
       * Callback called when the task is not successful
       */
     def onError(task: js.Any): Unit = js.native
-    def onError(task: js.Any, message: js.UndefOr[scala.Nothing], exception: js.Any): Unit = js.native
     def onError(task: js.Any, message: String): Unit = js.native
     def onError(task: js.Any, message: String, exception: js.Any): Unit = js.native
+    def onError(task: js.Any, message: Unit, exception: js.Any): Unit = js.native
     
-    var onErrorCallback: js.Any = js.native
+    /* private */ var onErrorCallback: js.Any = js.native
     
     /**
       * Callback called when the task is successful
@@ -123,35 +122,43 @@ object assetsManagerMod {
   object AssetTaskState extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[AssetTaskState with Double] = js.native
+    def apply(value: Double): js.UndefOr[AssetTaskState & Double] = js.native
     
     /**
       * Done
       */
     @js.native
-    sealed trait DONE extends AssetTaskState
-    /* 2 */ val DONE: typings.babylonjs.assetsManagerMod.AssetTaskState.DONE with Double = js.native
+    sealed trait DONE
+      extends StObject
+         with AssetTaskState
+    /* 2 */ val DONE: typings.babylonjs.assetsManagerMod.AssetTaskState.DONE & Double = js.native
     
     /**
       * Error
       */
     @js.native
-    sealed trait ERROR extends AssetTaskState
-    /* 3 */ val ERROR: typings.babylonjs.assetsManagerMod.AssetTaskState.ERROR with Double = js.native
+    sealed trait ERROR
+      extends StObject
+         with AssetTaskState
+    /* 3 */ val ERROR: typings.babylonjs.assetsManagerMod.AssetTaskState.ERROR & Double = js.native
     
     /**
       * Initialization
       */
     @js.native
-    sealed trait INIT extends AssetTaskState
-    /* 0 */ val INIT: typings.babylonjs.assetsManagerMod.AssetTaskState.INIT with Double = js.native
+    sealed trait INIT
+      extends StObject
+         with AssetTaskState
+    /* 0 */ val INIT: typings.babylonjs.assetsManagerMod.AssetTaskState.INIT & Double = js.native
     
     /**
       * Running
       */
     @js.native
-    sealed trait RUNNING extends AssetTaskState
-    /* 1 */ val RUNNING: typings.babylonjs.assetsManagerMod.AssetTaskState.RUNNING with Double = js.native
+    sealed trait RUNNING
+      extends StObject
+         with AssetTaskState
+    /* 1 */ val RUNNING: typings.babylonjs.assetsManagerMod.AssetTaskState.RUNNING & Double = js.native
   }
   
   @JSImport("babylonjs/Misc/assetsManager", "AssetsManager")
@@ -163,19 +170,19 @@ object assetsManagerMod {
       */
     def this(scene: Scene) = this()
     
-    var _decreaseWaitingTasksCount: js.Any = js.native
+    /* private */ var _decreaseWaitingTasksCount: js.Any = js.native
     
-    var _isLoading: js.Any = js.native
+    /* private */ var _isLoading: js.Any = js.native
     
-    var _runTask: js.Any = js.native
+    /* private */ var _runTask: js.Any = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
-    var _tasks: js.Array[AbstractAssetTask] = js.native
+    /* protected */ var _tasks: js.Array[AbstractAssetTask] = js.native
     
-    var _totalTasksCount: Double = js.native
+    /* protected */ var _totalTasksCount: Double = js.native
     
-    var _waitingTasksCount: Double = js.native
+    /* protected */ var _waitingTasksCount: Double = js.native
     
     /**
       * Add a BinaryFileAssetTask to the list of active tasks
@@ -205,29 +212,7 @@ object assetsManagerMod {
       * @returns a new CubeTextureAssetTask object
       */
     def addCubeTextureTask(taskName: String, url: String): CubeTextureAssetTask = js.native
-    def addCubeTextureTask(
-      taskName: String,
-      url: String,
-      extensions: js.UndefOr[scala.Nothing],
-      noMipmap: js.UndefOr[scala.Nothing],
-      files: js.Array[String]
-    ): CubeTextureAssetTask = js.native
-    def addCubeTextureTask(taskName: String, url: String, extensions: js.UndefOr[scala.Nothing], noMipmap: Boolean): CubeTextureAssetTask = js.native
-    def addCubeTextureTask(
-      taskName: String,
-      url: String,
-      extensions: js.UndefOr[scala.Nothing],
-      noMipmap: Boolean,
-      files: js.Array[String]
-    ): CubeTextureAssetTask = js.native
     def addCubeTextureTask(taskName: String, url: String, extensions: js.Array[String]): CubeTextureAssetTask = js.native
-    def addCubeTextureTask(
-      taskName: String,
-      url: String,
-      extensions: js.Array[String],
-      noMipmap: js.UndefOr[scala.Nothing],
-      files: js.Array[String]
-    ): CubeTextureAssetTask = js.native
     def addCubeTextureTask(taskName: String, url: String, extensions: js.Array[String], noMipmap: Boolean): CubeTextureAssetTask = js.native
     def addCubeTextureTask(
       taskName: String,
@@ -236,6 +221,16 @@ object assetsManagerMod {
       noMipmap: Boolean,
       files: js.Array[String]
     ): CubeTextureAssetTask = js.native
+    def addCubeTextureTask(
+      taskName: String,
+      url: String,
+      extensions: js.Array[String],
+      noMipmap: Unit,
+      files: js.Array[String]
+    ): CubeTextureAssetTask = js.native
+    def addCubeTextureTask(taskName: String, url: String, extensions: Unit, noMipmap: Boolean): CubeTextureAssetTask = js.native
+    def addCubeTextureTask(taskName: String, url: String, extensions: Unit, noMipmap: Boolean, files: js.Array[String]): CubeTextureAssetTask = js.native
+    def addCubeTextureTask(taskName: String, url: String, extensions: Unit, noMipmap: Unit, files: js.Array[String]): CubeTextureAssetTask = js.native
     
     /**
       *
@@ -249,15 +244,9 @@ object assetsManagerMod {
       * @returns a new EquiRectangularCubeTextureAssetTask object
       */
     def addEquiRectangularCubeTextureAssetTask(taskName: String, url: String, size: Double): EquiRectangularCubeTextureAssetTask = js.native
-    def addEquiRectangularCubeTextureAssetTask(
-      taskName: String,
-      url: String,
-      size: Double,
-      noMipmap: js.UndefOr[scala.Nothing],
-      gammaSpace: Boolean
-    ): EquiRectangularCubeTextureAssetTask = js.native
     def addEquiRectangularCubeTextureAssetTask(taskName: String, url: String, size: Double, noMipmap: Boolean): EquiRectangularCubeTextureAssetTask = js.native
     def addEquiRectangularCubeTextureAssetTask(taskName: String, url: String, size: Double, noMipmap: Boolean, gammaSpace: Boolean): EquiRectangularCubeTextureAssetTask = js.native
+    def addEquiRectangularCubeTextureAssetTask(taskName: String, url: String, size: Double, noMipmap: Unit, gammaSpace: Boolean): EquiRectangularCubeTextureAssetTask = js.native
     
     /**
       *
@@ -272,92 +261,7 @@ object assetsManagerMod {
       * @returns a new HDRCubeTextureAssetTask object
       */
     def addHDRCubeTextureTask(taskName: String, url: String, size: Double): HDRCubeTextureAssetTask = js.native
-    def addHDRCubeTextureTask(
-      taskName: String,
-      url: String,
-      size: Double,
-      noMipmap: js.UndefOr[scala.Nothing],
-      generateHarmonics: js.UndefOr[scala.Nothing],
-      gammaSpace: js.UndefOr[scala.Nothing],
-      reserved: Boolean
-    ): HDRCubeTextureAssetTask = js.native
-    def addHDRCubeTextureTask(
-      taskName: String,
-      url: String,
-      size: Double,
-      noMipmap: js.UndefOr[scala.Nothing],
-      generateHarmonics: js.UndefOr[scala.Nothing],
-      gammaSpace: Boolean
-    ): HDRCubeTextureAssetTask = js.native
-    def addHDRCubeTextureTask(
-      taskName: String,
-      url: String,
-      size: Double,
-      noMipmap: js.UndefOr[scala.Nothing],
-      generateHarmonics: js.UndefOr[scala.Nothing],
-      gammaSpace: Boolean,
-      reserved: Boolean
-    ): HDRCubeTextureAssetTask = js.native
-    def addHDRCubeTextureTask(
-      taskName: String,
-      url: String,
-      size: Double,
-      noMipmap: js.UndefOr[scala.Nothing],
-      generateHarmonics: Boolean
-    ): HDRCubeTextureAssetTask = js.native
-    def addHDRCubeTextureTask(
-      taskName: String,
-      url: String,
-      size: Double,
-      noMipmap: js.UndefOr[scala.Nothing],
-      generateHarmonics: Boolean,
-      gammaSpace: js.UndefOr[scala.Nothing],
-      reserved: Boolean
-    ): HDRCubeTextureAssetTask = js.native
-    def addHDRCubeTextureTask(
-      taskName: String,
-      url: String,
-      size: Double,
-      noMipmap: js.UndefOr[scala.Nothing],
-      generateHarmonics: Boolean,
-      gammaSpace: Boolean
-    ): HDRCubeTextureAssetTask = js.native
-    def addHDRCubeTextureTask(
-      taskName: String,
-      url: String,
-      size: Double,
-      noMipmap: js.UndefOr[scala.Nothing],
-      generateHarmonics: Boolean,
-      gammaSpace: Boolean,
-      reserved: Boolean
-    ): HDRCubeTextureAssetTask = js.native
     def addHDRCubeTextureTask(taskName: String, url: String, size: Double, noMipmap: Boolean): HDRCubeTextureAssetTask = js.native
-    def addHDRCubeTextureTask(
-      taskName: String,
-      url: String,
-      size: Double,
-      noMipmap: Boolean,
-      generateHarmonics: js.UndefOr[scala.Nothing],
-      gammaSpace: js.UndefOr[scala.Nothing],
-      reserved: Boolean
-    ): HDRCubeTextureAssetTask = js.native
-    def addHDRCubeTextureTask(
-      taskName: String,
-      url: String,
-      size: Double,
-      noMipmap: Boolean,
-      generateHarmonics: js.UndefOr[scala.Nothing],
-      gammaSpace: Boolean
-    ): HDRCubeTextureAssetTask = js.native
-    def addHDRCubeTextureTask(
-      taskName: String,
-      url: String,
-      size: Double,
-      noMipmap: Boolean,
-      generateHarmonics: js.UndefOr[scala.Nothing],
-      gammaSpace: Boolean,
-      reserved: Boolean
-    ): HDRCubeTextureAssetTask = js.native
     def addHDRCubeTextureTask(taskName: String, url: String, size: Double, noMipmap: Boolean, generateHarmonics: Boolean): HDRCubeTextureAssetTask = js.native
     def addHDRCubeTextureTask(
       taskName: String,
@@ -365,15 +269,6 @@ object assetsManagerMod {
       size: Double,
       noMipmap: Boolean,
       generateHarmonics: Boolean,
-      gammaSpace: js.UndefOr[scala.Nothing],
-      reserved: Boolean
-    ): HDRCubeTextureAssetTask = js.native
-    def addHDRCubeTextureTask(
-      taskName: String,
-      url: String,
-      size: Double,
-      noMipmap: Boolean,
-      generateHarmonics: Boolean,
       gammaSpace: Boolean
     ): HDRCubeTextureAssetTask = js.native
     def addHDRCubeTextureTask(
@@ -383,6 +278,94 @@ object assetsManagerMod {
       noMipmap: Boolean,
       generateHarmonics: Boolean,
       gammaSpace: Boolean,
+      reserved: Boolean
+    ): HDRCubeTextureAssetTask = js.native
+    def addHDRCubeTextureTask(
+      taskName: String,
+      url: String,
+      size: Double,
+      noMipmap: Boolean,
+      generateHarmonics: Boolean,
+      gammaSpace: Unit,
+      reserved: Boolean
+    ): HDRCubeTextureAssetTask = js.native
+    def addHDRCubeTextureTask(
+      taskName: String,
+      url: String,
+      size: Double,
+      noMipmap: Boolean,
+      generateHarmonics: Unit,
+      gammaSpace: Boolean
+    ): HDRCubeTextureAssetTask = js.native
+    def addHDRCubeTextureTask(
+      taskName: String,
+      url: String,
+      size: Double,
+      noMipmap: Boolean,
+      generateHarmonics: Unit,
+      gammaSpace: Boolean,
+      reserved: Boolean
+    ): HDRCubeTextureAssetTask = js.native
+    def addHDRCubeTextureTask(
+      taskName: String,
+      url: String,
+      size: Double,
+      noMipmap: Boolean,
+      generateHarmonics: Unit,
+      gammaSpace: Unit,
+      reserved: Boolean
+    ): HDRCubeTextureAssetTask = js.native
+    def addHDRCubeTextureTask(taskName: String, url: String, size: Double, noMipmap: Unit, generateHarmonics: Boolean): HDRCubeTextureAssetTask = js.native
+    def addHDRCubeTextureTask(
+      taskName: String,
+      url: String,
+      size: Double,
+      noMipmap: Unit,
+      generateHarmonics: Boolean,
+      gammaSpace: Boolean
+    ): HDRCubeTextureAssetTask = js.native
+    def addHDRCubeTextureTask(
+      taskName: String,
+      url: String,
+      size: Double,
+      noMipmap: Unit,
+      generateHarmonics: Boolean,
+      gammaSpace: Boolean,
+      reserved: Boolean
+    ): HDRCubeTextureAssetTask = js.native
+    def addHDRCubeTextureTask(
+      taskName: String,
+      url: String,
+      size: Double,
+      noMipmap: Unit,
+      generateHarmonics: Boolean,
+      gammaSpace: Unit,
+      reserved: Boolean
+    ): HDRCubeTextureAssetTask = js.native
+    def addHDRCubeTextureTask(
+      taskName: String,
+      url: String,
+      size: Double,
+      noMipmap: Unit,
+      generateHarmonics: Unit,
+      gammaSpace: Boolean
+    ): HDRCubeTextureAssetTask = js.native
+    def addHDRCubeTextureTask(
+      taskName: String,
+      url: String,
+      size: Double,
+      noMipmap: Unit,
+      generateHarmonics: Unit,
+      gammaSpace: Boolean,
+      reserved: Boolean
+    ): HDRCubeTextureAssetTask = js.native
+    def addHDRCubeTextureTask(
+      taskName: String,
+      url: String,
+      size: Double,
+      noMipmap: Unit,
+      generateHarmonics: Unit,
+      gammaSpace: Unit,
       reserved: Boolean
     ): HDRCubeTextureAssetTask = js.native
     
@@ -422,31 +405,13 @@ object assetsManagerMod {
       * @returns a new TextureAssetTask object
       */
     def addTextureTask(taskName: String, url: String): TextureAssetTask = js.native
-    def addTextureTask(
-      taskName: String,
-      url: String,
-      noMipmap: js.UndefOr[scala.Nothing],
-      invertY: js.UndefOr[scala.Nothing],
-      samplingMode: Double
-    ): TextureAssetTask = js.native
-    def addTextureTask(taskName: String, url: String, noMipmap: js.UndefOr[scala.Nothing], invertY: Boolean): TextureAssetTask = js.native
-    def addTextureTask(
-      taskName: String,
-      url: String,
-      noMipmap: js.UndefOr[scala.Nothing],
-      invertY: Boolean,
-      samplingMode: Double
-    ): TextureAssetTask = js.native
     def addTextureTask(taskName: String, url: String, noMipmap: Boolean): TextureAssetTask = js.native
-    def addTextureTask(
-      taskName: String,
-      url: String,
-      noMipmap: Boolean,
-      invertY: js.UndefOr[scala.Nothing],
-      samplingMode: Double
-    ): TextureAssetTask = js.native
     def addTextureTask(taskName: String, url: String, noMipmap: Boolean, invertY: Boolean): TextureAssetTask = js.native
     def addTextureTask(taskName: String, url: String, noMipmap: Boolean, invertY: Boolean, samplingMode: Double): TextureAssetTask = js.native
+    def addTextureTask(taskName: String, url: String, noMipmap: Boolean, invertY: Unit, samplingMode: Double): TextureAssetTask = js.native
+    def addTextureTask(taskName: String, url: String, noMipmap: Unit, invertY: Boolean): TextureAssetTask = js.native
+    def addTextureTask(taskName: String, url: String, noMipmap: Unit, invertY: Boolean, samplingMode: Double): TextureAssetTask = js.native
+    def addTextureTask(taskName: String, url: String, noMipmap: Unit, invertY: Unit, samplingMode: Double): TextureAssetTask = js.native
     
     /**
       * Gets or sets a boolean defining if the AssetsManager should automatically hide the loading screen
@@ -528,7 +493,9 @@ object assetsManagerMod {
   
   @JSImport("babylonjs/Misc/assetsManager", "AssetsProgressEvent")
   @js.native
-  class AssetsProgressEvent protected () extends IAssetsProgressEvent {
+  class AssetsProgressEvent protected ()
+    extends StObject
+       with IAssetsProgressEvent {
     /**
       * Creates a AssetsProgressEvent
       * @param remainingCount defines the number of remaining tasks to process
@@ -536,6 +503,24 @@ object assetsManagerMod {
       * @param task defines the task that was just processed
       */
     def this(remainingCount: Double, totalCount: Double, task: AbstractAssetTask) = this()
+    
+    /**
+      * Defines the number of remaining tasks to process
+      */
+    /* CompleteClass */
+    var remainingCount: Double = js.native
+    
+    /**
+      * Defines the task that was just processed
+      */
+    /* CompleteClass */
+    var task: AbstractAssetTask = js.native
+    
+    /**
+      * Defines the total number of tasks
+      */
+    /* CompleteClass */
+    var totalCount: Double = js.native
   }
   
   @JSImport("babylonjs/Misc/assetsManager", "BinaryFileAssetTask")
@@ -566,9 +551,9 @@ object assetsManagerMod {
       * Callback called when the task is successful
       */
     def onError(task: BinaryFileAssetTask): Unit = js.native
-    def onError(task: BinaryFileAssetTask, message: js.UndefOr[scala.Nothing], exception: js.Any): Unit = js.native
     def onError(task: BinaryFileAssetTask, message: String): Unit = js.native
     def onError(task: BinaryFileAssetTask, message: String, exception: js.Any): Unit = js.native
+    def onError(task: BinaryFileAssetTask, message: Unit, exception: js.Any): Unit = js.native
     
     /**
       * Callback called when the task is successful
@@ -662,9 +647,9 @@ object assetsManagerMod {
       * Callback called when the task is successful
       */
     def onError(task: ContainerAssetTask): Unit = js.native
-    def onError(task: ContainerAssetTask, message: js.UndefOr[scala.Nothing], exception: js.Any): Unit = js.native
     def onError(task: ContainerAssetTask, message: String): Unit = js.native
     def onError(task: ContainerAssetTask, message: String, exception: js.Any): Unit = js.native
+    def onError(task: ContainerAssetTask, message: Unit, exception: js.Any): Unit = js.native
     
     /**
       * Callback called when the task is successful
@@ -731,24 +716,6 @@ object assetsManagerMod {
       /**
       * Defines the extensions to use to load files (["_px", "_py", "_pz", "_nx", "_ny", "_nz"] by default)
       */
-    extensions: js.UndefOr[scala.Nothing],
-      /**
-      * Defines if mipmaps should not be generated (default is false)
-      */
-    noMipmap: Boolean
-    ) = this()
-    def this(
-      /**
-      * Defines the name of the task
-      */
-    name: String,
-      /**
-      * Defines the location of the files to load (You have to specify the folder where the files are + filename with no extension)
-      */
-    url: String,
-      /**
-      * Defines the extensions to use to load files (["_px", "_py", "_pz", "_nx", "_ny", "_nz"] by default)
-      */
     extensions: js.Array[String],
       /**
       * Defines if mipmaps should not be generated (default is false)
@@ -767,15 +734,11 @@ object assetsManagerMod {
       /**
       * Defines the extensions to use to load files (["_px", "_py", "_pz", "_nx", "_ny", "_nz"] by default)
       */
-    extensions: js.UndefOr[scala.Nothing],
+    extensions: Unit,
       /**
       * Defines if mipmaps should not be generated (default is false)
       */
-    noMipmap: js.UndefOr[scala.Nothing],
-      /**
-      * Defines the explicit list of files (undefined by default)
-      */
-    files: js.Array[String]
+    noMipmap: Boolean
     ) = this()
     def this(
       /**
@@ -789,7 +752,7 @@ object assetsManagerMod {
       /**
       * Defines the extensions to use to load files (["_px", "_py", "_pz", "_nx", "_ny", "_nz"] by default)
       */
-    extensions: js.UndefOr[scala.Nothing],
+    extensions: js.Array[String],
       /**
       * Defines if mipmaps should not be generated (default is false)
       */
@@ -815,7 +778,7 @@ object assetsManagerMod {
       /**
       * Defines if mipmaps should not be generated (default is false)
       */
-    noMipmap: js.UndefOr[scala.Nothing],
+    noMipmap: Unit,
       /**
       * Defines the explicit list of files (undefined by default)
       */
@@ -833,11 +796,33 @@ object assetsManagerMod {
       /**
       * Defines the extensions to use to load files (["_px", "_py", "_pz", "_nx", "_ny", "_nz"] by default)
       */
-    extensions: js.Array[String],
+    extensions: Unit,
       /**
       * Defines if mipmaps should not be generated (default is false)
       */
     noMipmap: Boolean,
+      /**
+      * Defines the explicit list of files (undefined by default)
+      */
+    files: js.Array[String]
+    ) = this()
+    def this(
+      /**
+      * Defines the name of the task
+      */
+    name: String,
+      /**
+      * Defines the location of the files to load (You have to specify the folder where the files are + filename with no extension)
+      */
+    url: String,
+      /**
+      * Defines the extensions to use to load files (["_px", "_py", "_pz", "_nx", "_ny", "_nz"] by default)
+      */
+    extensions: Unit,
+      /**
+      * Defines if mipmaps should not be generated (default is false)
+      */
+    noMipmap: Unit,
       /**
       * Defines the explicit list of files (undefined by default)
       */
@@ -863,14 +848,20 @@ object assetsManagerMod {
       * Callback called when the task is successful
       */
     def onError(task: CubeTextureAssetTask): Unit = js.native
-    def onError(task: CubeTextureAssetTask, message: js.UndefOr[scala.Nothing], exception: js.Any): Unit = js.native
     def onError(task: CubeTextureAssetTask, message: String): Unit = js.native
     def onError(task: CubeTextureAssetTask, message: String, exception: js.Any): Unit = js.native
+    def onError(task: CubeTextureAssetTask, message: Unit, exception: js.Any): Unit = js.native
     
     /**
       * Callback called when the task is successful
       */
     def onSuccess(task: CubeTextureAssetTask): Unit = js.native
+    
+    /**
+      * Gets the loaded texture
+      */
+    /* CompleteClass */
+    var texture: CubeTexture = js.native
     
     /**
       * Defines the location of the files to load (You have to specify the folder where the files are + filename with no extension)
@@ -942,7 +933,7 @@ object assetsManagerMod {
       /**
       * Defines if mipmaps should not be generated (default is false)
       */
-    noMipmap: js.UndefOr[scala.Nothing],
+    noMipmap: Boolean,
       /**
       * Specifies if the texture will be use in gamma or linear space (the PBR material requires those texture in linear space,
       * but the standard material would require them in Gamma space) (default is true)
@@ -965,7 +956,7 @@ object assetsManagerMod {
       /**
       * Defines if mipmaps should not be generated (default is false)
       */
-    noMipmap: Boolean,
+    noMipmap: Unit,
       /**
       * Specifies if the texture will be use in gamma or linear space (the PBR material requires those texture in linear space,
       * but the standard material would require them in Gamma space) (default is true)
@@ -988,9 +979,9 @@ object assetsManagerMod {
       * Callback called when the task is successful
       */
     def onError(task: EquiRectangularCubeTextureAssetTask): Unit = js.native
-    def onError(task: EquiRectangularCubeTextureAssetTask, message: js.UndefOr[scala.Nothing], exception: js.Any): Unit = js.native
     def onError(task: EquiRectangularCubeTextureAssetTask, message: String): Unit = js.native
     def onError(task: EquiRectangularCubeTextureAssetTask, message: String, exception: js.Any): Unit = js.native
+    def onError(task: EquiRectangularCubeTextureAssetTask, message: Unit, exception: js.Any): Unit = js.native
     
     /**
       * Callback called when the task is successful
@@ -1001,6 +992,12 @@ object assetsManagerMod {
       * Defines the desired size (the more it increases the longer the generation will be)
       */
     var size: Double = js.native
+    
+    /**
+      * Gets the loaded texture
+      */
+    /* CompleteClass */
+    var texture: EquiRectangularCubeTexture = js.native
     
     /**
       * Defines the location of the file to load
@@ -1071,7 +1068,29 @@ object assetsManagerMod {
       /**
       * Defines if mipmaps should not be generated (default is false)
       */
-    noMipmap: js.UndefOr[scala.Nothing],
+    noMipmap: Boolean,
+      /**
+      * Specifies whether you want to extract the polynomial harmonics during the generation process (default is true)
+      */
+    generateHarmonics: Boolean
+    ) = this()
+    def this(
+      /**
+      * Defines the name of the task
+      */
+    name: String,
+      /**
+      * Defines the location of the file to load
+      */
+    url: String,
+      /**
+      * Defines the desired size (the more it increases the longer the generation will be)
+      */
+    size: Double,
+      /**
+      * Defines if mipmaps should not be generated (default is false)
+      */
+    noMipmap: Unit,
       /**
       * Specifies whether you want to extract the polynomial harmonics during the generation process (default is true)
       */
@@ -1097,54 +1116,6 @@ object assetsManagerMod {
       /**
       * Specifies whether you want to extract the polynomial harmonics during the generation process (default is true)
       */
-    generateHarmonics: Boolean
-    ) = this()
-    def this(
-      /**
-      * Defines the name of the task
-      */
-    name: String,
-      /**
-      * Defines the location of the file to load
-      */
-    url: String,
-      /**
-      * Defines the desired size (the more it increases the longer the generation will be)
-      */
-    size: Double,
-      /**
-      * Defines if mipmaps should not be generated (default is false)
-      */
-    noMipmap: js.UndefOr[scala.Nothing],
-      /**
-      * Specifies whether you want to extract the polynomial harmonics during the generation process (default is true)
-      */
-    generateHarmonics: js.UndefOr[scala.Nothing],
-      /**
-      * Specifies if the texture will be use in gamma or linear space (the PBR material requires those texture in linear space, but the standard material would require them in Gamma space) (default is false)
-      */
-    gammaSpace: Boolean
-    ) = this()
-    def this(
-      /**
-      * Defines the name of the task
-      */
-    name: String,
-      /**
-      * Defines the location of the file to load
-      */
-    url: String,
-      /**
-      * Defines the desired size (the more it increases the longer the generation will be)
-      */
-    size: Double,
-      /**
-      * Defines if mipmaps should not be generated (default is false)
-      */
-    noMipmap: js.UndefOr[scala.Nothing],
-      /**
-      * Specifies whether you want to extract the polynomial harmonics during the generation process (default is true)
-      */
     generateHarmonics: Boolean,
       /**
       * Specifies if the texture will be use in gamma or linear space (the PBR material requires those texture in linear space, but the standard material would require them in Gamma space) (default is false)
@@ -1171,7 +1142,59 @@ object assetsManagerMod {
       /**
       * Specifies whether you want to extract the polynomial harmonics during the generation process (default is true)
       */
-    generateHarmonics: js.UndefOr[scala.Nothing],
+    generateHarmonics: Unit,
+      /**
+      * Specifies if the texture will be use in gamma or linear space (the PBR material requires those texture in linear space, but the standard material would require them in Gamma space) (default is false)
+      */
+    gammaSpace: Boolean
+    ) = this()
+    def this(
+      /**
+      * Defines the name of the task
+      */
+    name: String,
+      /**
+      * Defines the location of the file to load
+      */
+    url: String,
+      /**
+      * Defines the desired size (the more it increases the longer the generation will be)
+      */
+    size: Double,
+      /**
+      * Defines if mipmaps should not be generated (default is false)
+      */
+    noMipmap: Unit,
+      /**
+      * Specifies whether you want to extract the polynomial harmonics during the generation process (default is true)
+      */
+    generateHarmonics: Boolean,
+      /**
+      * Specifies if the texture will be use in gamma or linear space (the PBR material requires those texture in linear space, but the standard material would require them in Gamma space) (default is false)
+      */
+    gammaSpace: Boolean
+    ) = this()
+    def this(
+      /**
+      * Defines the name of the task
+      */
+    name: String,
+      /**
+      * Defines the location of the file to load
+      */
+    url: String,
+      /**
+      * Defines the desired size (the more it increases the longer the generation will be)
+      */
+    size: Double,
+      /**
+      * Defines if mipmaps should not be generated (default is false)
+      */
+    noMipmap: Unit,
+      /**
+      * Specifies whether you want to extract the polynomial harmonics during the generation process (default is true)
+      */
+    generateHarmonics: Unit,
       /**
       * Specifies if the texture will be use in gamma or linear space (the PBR material requires those texture in linear space, but the standard material would require them in Gamma space) (default is false)
       */
@@ -1194,122 +1217,6 @@ object assetsManagerMod {
       * Defines if mipmaps should not be generated (default is false)
       */
     noMipmap: Boolean,
-      /**
-      * Specifies whether you want to extract the polynomial harmonics during the generation process (default is true)
-      */
-    generateHarmonics: Boolean,
-      /**
-      * Specifies if the texture will be use in gamma or linear space (the PBR material requires those texture in linear space, but the standard material would require them in Gamma space) (default is false)
-      */
-    gammaSpace: Boolean
-    ) = this()
-    def this(
-      /**
-      * Defines the name of the task
-      */
-    name: String,
-      /**
-      * Defines the location of the file to load
-      */
-    url: String,
-      /**
-      * Defines the desired size (the more it increases the longer the generation will be)
-      */
-    size: Double,
-      /**
-      * Defines if mipmaps should not be generated (default is false)
-      */
-    noMipmap: js.UndefOr[scala.Nothing],
-      /**
-      * Specifies whether you want to extract the polynomial harmonics during the generation process (default is true)
-      */
-    generateHarmonics: js.UndefOr[scala.Nothing],
-      /**
-      * Specifies if the texture will be use in gamma or linear space (the PBR material requires those texture in linear space, but the standard material would require them in Gamma space) (default is false)
-      */
-    gammaSpace: js.UndefOr[scala.Nothing],
-      /**
-      * Internal Use Only
-      */
-    reserved: Boolean
-    ) = this()
-    def this(
-      /**
-      * Defines the name of the task
-      */
-    name: String,
-      /**
-      * Defines the location of the file to load
-      */
-    url: String,
-      /**
-      * Defines the desired size (the more it increases the longer the generation will be)
-      */
-    size: Double,
-      /**
-      * Defines if mipmaps should not be generated (default is false)
-      */
-    noMipmap: js.UndefOr[scala.Nothing],
-      /**
-      * Specifies whether you want to extract the polynomial harmonics during the generation process (default is true)
-      */
-    generateHarmonics: js.UndefOr[scala.Nothing],
-      /**
-      * Specifies if the texture will be use in gamma or linear space (the PBR material requires those texture in linear space, but the standard material would require them in Gamma space) (default is false)
-      */
-    gammaSpace: Boolean,
-      /**
-      * Internal Use Only
-      */
-    reserved: Boolean
-    ) = this()
-    def this(
-      /**
-      * Defines the name of the task
-      */
-    name: String,
-      /**
-      * Defines the location of the file to load
-      */
-    url: String,
-      /**
-      * Defines the desired size (the more it increases the longer the generation will be)
-      */
-    size: Double,
-      /**
-      * Defines if mipmaps should not be generated (default is false)
-      */
-    noMipmap: js.UndefOr[scala.Nothing],
-      /**
-      * Specifies whether you want to extract the polynomial harmonics during the generation process (default is true)
-      */
-    generateHarmonics: Boolean,
-      /**
-      * Specifies if the texture will be use in gamma or linear space (the PBR material requires those texture in linear space, but the standard material would require them in Gamma space) (default is false)
-      */
-    gammaSpace: js.UndefOr[scala.Nothing],
-      /**
-      * Internal Use Only
-      */
-    reserved: Boolean
-    ) = this()
-    def this(
-      /**
-      * Defines the name of the task
-      */
-    name: String,
-      /**
-      * Defines the location of the file to load
-      */
-    url: String,
-      /**
-      * Defines the desired size (the more it increases the longer the generation will be)
-      */
-    size: Double,
-      /**
-      * Defines if mipmaps should not be generated (default is false)
-      */
-    noMipmap: js.UndefOr[scala.Nothing],
       /**
       * Specifies whether you want to extract the polynomial harmonics during the generation process (default is true)
       */
@@ -1343,11 +1250,11 @@ object assetsManagerMod {
       /**
       * Specifies whether you want to extract the polynomial harmonics during the generation process (default is true)
       */
-    generateHarmonics: js.UndefOr[scala.Nothing],
+    generateHarmonics: Boolean,
       /**
       * Specifies if the texture will be use in gamma or linear space (the PBR material requires those texture in linear space, but the standard material would require them in Gamma space) (default is false)
       */
-    gammaSpace: js.UndefOr[scala.Nothing],
+    gammaSpace: Unit,
       /**
       * Internal Use Only
       */
@@ -1373,7 +1280,7 @@ object assetsManagerMod {
       /**
       * Specifies whether you want to extract the polynomial harmonics during the generation process (default is true)
       */
-    generateHarmonics: js.UndefOr[scala.Nothing],
+    generateHarmonics: Unit,
       /**
       * Specifies if the texture will be use in gamma or linear space (the PBR material requires those texture in linear space, but the standard material would require them in Gamma space) (default is false)
       */
@@ -1403,11 +1310,11 @@ object assetsManagerMod {
       /**
       * Specifies whether you want to extract the polynomial harmonics during the generation process (default is true)
       */
-    generateHarmonics: Boolean,
+    generateHarmonics: Unit,
       /**
       * Specifies if the texture will be use in gamma or linear space (the PBR material requires those texture in linear space, but the standard material would require them in Gamma space) (default is false)
       */
-    gammaSpace: js.UndefOr[scala.Nothing],
+    gammaSpace: Unit,
       /**
       * Internal Use Only
       */
@@ -1429,7 +1336,7 @@ object assetsManagerMod {
       /**
       * Defines if mipmaps should not be generated (default is false)
       */
-    noMipmap: Boolean,
+    noMipmap: Unit,
       /**
       * Specifies whether you want to extract the polynomial harmonics during the generation process (default is true)
       */
@@ -1438,6 +1345,96 @@ object assetsManagerMod {
       * Specifies if the texture will be use in gamma or linear space (the PBR material requires those texture in linear space, but the standard material would require them in Gamma space) (default is false)
       */
     gammaSpace: Boolean,
+      /**
+      * Internal Use Only
+      */
+    reserved: Boolean
+    ) = this()
+    def this(
+      /**
+      * Defines the name of the task
+      */
+    name: String,
+      /**
+      * Defines the location of the file to load
+      */
+    url: String,
+      /**
+      * Defines the desired size (the more it increases the longer the generation will be)
+      */
+    size: Double,
+      /**
+      * Defines if mipmaps should not be generated (default is false)
+      */
+    noMipmap: Unit,
+      /**
+      * Specifies whether you want to extract the polynomial harmonics during the generation process (default is true)
+      */
+    generateHarmonics: Boolean,
+      /**
+      * Specifies if the texture will be use in gamma or linear space (the PBR material requires those texture in linear space, but the standard material would require them in Gamma space) (default is false)
+      */
+    gammaSpace: Unit,
+      /**
+      * Internal Use Only
+      */
+    reserved: Boolean
+    ) = this()
+    def this(
+      /**
+      * Defines the name of the task
+      */
+    name: String,
+      /**
+      * Defines the location of the file to load
+      */
+    url: String,
+      /**
+      * Defines the desired size (the more it increases the longer the generation will be)
+      */
+    size: Double,
+      /**
+      * Defines if mipmaps should not be generated (default is false)
+      */
+    noMipmap: Unit,
+      /**
+      * Specifies whether you want to extract the polynomial harmonics during the generation process (default is true)
+      */
+    generateHarmonics: Unit,
+      /**
+      * Specifies if the texture will be use in gamma or linear space (the PBR material requires those texture in linear space, but the standard material would require them in Gamma space) (default is false)
+      */
+    gammaSpace: Boolean,
+      /**
+      * Internal Use Only
+      */
+    reserved: Boolean
+    ) = this()
+    def this(
+      /**
+      * Defines the name of the task
+      */
+    name: String,
+      /**
+      * Defines the location of the file to load
+      */
+    url: String,
+      /**
+      * Defines the desired size (the more it increases the longer the generation will be)
+      */
+    size: Double,
+      /**
+      * Defines if mipmaps should not be generated (default is false)
+      */
+    noMipmap: Unit,
+      /**
+      * Specifies whether you want to extract the polynomial harmonics during the generation process (default is true)
+      */
+    generateHarmonics: Unit,
+      /**
+      * Specifies if the texture will be use in gamma or linear space (the PBR material requires those texture in linear space, but the standard material would require them in Gamma space) (default is false)
+      */
+    gammaSpace: Unit,
       /**
       * Internal Use Only
       */
@@ -1463,9 +1460,9 @@ object assetsManagerMod {
       * Callback called when the task is successful
       */
     def onError(task: HDRCubeTextureAssetTask): Unit = js.native
-    def onError(task: HDRCubeTextureAssetTask, message: js.UndefOr[scala.Nothing], exception: js.Any): Unit = js.native
     def onError(task: HDRCubeTextureAssetTask, message: String): Unit = js.native
     def onError(task: HDRCubeTextureAssetTask, message: String, exception: js.Any): Unit = js.native
+    def onError(task: HDRCubeTextureAssetTask, message: Unit, exception: js.Any): Unit = js.native
     
     /**
       * Callback called when the task is successful
@@ -1481,6 +1478,12 @@ object assetsManagerMod {
       * Defines the desired size (the more it increases the longer the generation will be)
       */
     var size: Double = js.native
+    
+    /**
+      * Gets the loaded texture
+      */
+    /* CompleteClass */
+    var texture: HDRCubeTexture = js.native
     
     /**
       * Defines the location of the file to load
@@ -1516,9 +1519,9 @@ object assetsManagerMod {
       * Callback called when the task is successful
       */
     def onError(task: ImageAssetTask): Unit = js.native
-    def onError(task: ImageAssetTask, message: js.UndefOr[scala.Nothing], exception: js.Any): Unit = js.native
     def onError(task: ImageAssetTask, message: String): Unit = js.native
     def onError(task: ImageAssetTask, message: String, exception: js.Any): Unit = js.native
+    def onError(task: ImageAssetTask, message: Unit, exception: js.Any): Unit = js.native
     
     /**
       * Callback called when the task is successful
@@ -1607,9 +1610,9 @@ object assetsManagerMod {
       * Callback called when the task is successful
       */
     def onError(task: MeshAssetTask): Unit = js.native
-    def onError(task: MeshAssetTask, message: js.UndefOr[scala.Nothing], exception: js.Any): Unit = js.native
     def onError(task: MeshAssetTask, message: String): Unit = js.native
     def onError(task: MeshAssetTask, message: String, exception: js.Any): Unit = js.native
+    def onError(task: MeshAssetTask, message: Unit, exception: js.Any): Unit = js.native
     
     /**
       * Callback called when the task is successful
@@ -1650,9 +1653,9 @@ object assetsManagerMod {
       * Callback called when the task is successful
       */
     def onError(task: TextFileAssetTask): Unit = js.native
-    def onError(task: TextFileAssetTask, message: js.UndefOr[scala.Nothing], exception: js.Any): Unit = js.native
     def onError(task: TextFileAssetTask, message: String): Unit = js.native
     def onError(task: TextFileAssetTask, message: String, exception: js.Any): Unit = js.native
+    def onError(task: TextFileAssetTask, message: Unit, exception: js.Any): Unit = js.native
     
     /**
       * Callback called when the task is successful
@@ -1719,24 +1722,6 @@ object assetsManagerMod {
       /**
       * Defines if mipmap should not be generated (default is false)
       */
-    noMipmap: js.UndefOr[scala.Nothing],
-      /**
-      * Defines if texture must be inverted on Y axis (default is true)
-      */
-    invertY: Boolean
-    ) = this()
-    def this(
-      /**
-      * Defines the name of the task
-      */
-    name: String,
-      /**
-      * Defines the location of the file to load
-      */
-    url: String,
-      /**
-      * Defines if mipmap should not be generated (default is false)
-      */
     noMipmap: Boolean,
       /**
       * Defines if texture must be inverted on Y axis (default is true)
@@ -1755,15 +1740,11 @@ object assetsManagerMod {
       /**
       * Defines if mipmap should not be generated (default is false)
       */
-    noMipmap: js.UndefOr[scala.Nothing],
+    noMipmap: Unit,
       /**
       * Defines if texture must be inverted on Y axis (default is true)
       */
-    invertY: js.UndefOr[scala.Nothing],
-      /**
-      * Defines the sampling mode to use (default is Texture.TRILINEAR_SAMPLINGMODE)
-      */
-    samplingMode: Double
+    invertY: Boolean
     ) = this()
     def this(
       /**
@@ -1777,7 +1758,7 @@ object assetsManagerMod {
       /**
       * Defines if mipmap should not be generated (default is false)
       */
-    noMipmap: js.UndefOr[scala.Nothing],
+    noMipmap: Boolean,
       /**
       * Defines if texture must be inverted on Y axis (default is true)
       */
@@ -1803,7 +1784,7 @@ object assetsManagerMod {
       /**
       * Defines if texture must be inverted on Y axis (default is true)
       */
-    invertY: js.UndefOr[scala.Nothing],
+    invertY: Unit,
       /**
       * Defines the sampling mode to use (default is Texture.TRILINEAR_SAMPLINGMODE)
       */
@@ -1821,11 +1802,33 @@ object assetsManagerMod {
       /**
       * Defines if mipmap should not be generated (default is false)
       */
-    noMipmap: Boolean,
+    noMipmap: Unit,
       /**
       * Defines if texture must be inverted on Y axis (default is true)
       */
     invertY: Boolean,
+      /**
+      * Defines the sampling mode to use (default is Texture.TRILINEAR_SAMPLINGMODE)
+      */
+    samplingMode: Double
+    ) = this()
+    def this(
+      /**
+      * Defines the name of the task
+      */
+    name: String,
+      /**
+      * Defines the location of the file to load
+      */
+    url: String,
+      /**
+      * Defines if mipmap should not be generated (default is false)
+      */
+    noMipmap: Unit,
+      /**
+      * Defines if texture must be inverted on Y axis (default is true)
+      */
+    invertY: Unit,
       /**
       * Defines the sampling mode to use (default is Texture.TRILINEAR_SAMPLINGMODE)
       */
@@ -1846,9 +1849,9 @@ object assetsManagerMod {
       * Callback called when the task is successful
       */
     def onError(task: TextureAssetTask): Unit = js.native
-    def onError(task: TextureAssetTask, message: js.UndefOr[scala.Nothing], exception: js.Any): Unit = js.native
     def onError(task: TextureAssetTask, message: String): Unit = js.native
     def onError(task: TextureAssetTask, message: String, exception: js.Any): Unit = js.native
+    def onError(task: TextureAssetTask, message: Unit, exception: js.Any): Unit = js.native
     
     /**
       * Callback called when the task is successful
@@ -1861,72 +1864,68 @@ object assetsManagerMod {
     var samplingMode: Double = js.native
     
     /**
+      * Gets the loaded texture
+      */
+    /* CompleteClass */
+    var texture: Texture = js.native
+    
+    /**
       * Defines the location of the file to load
       */
     var url: String = js.native
   }
   
-  @js.native
   trait IAssetsProgressEvent extends StObject {
     
     /**
       * Defines the number of remaining tasks to process
       */
-    var remainingCount: Double = js.native
+    var remainingCount: Double
     
     /**
       * Defines the task that was just processed
       */
-    var task: AbstractAssetTask = js.native
+    var task: AbstractAssetTask
     
     /**
       * Defines the total number of tasks
       */
-    var totalCount: Double = js.native
+    var totalCount: Double
   }
   object IAssetsProgressEvent {
     
-    @scala.inline
-    def apply(remainingCount: Double, task: AbstractAssetTask, totalCount: Double): IAssetsProgressEvent = {
+    inline def apply(remainingCount: Double, task: AbstractAssetTask, totalCount: Double): IAssetsProgressEvent = {
       val __obj = js.Dynamic.literal(remainingCount = remainingCount.asInstanceOf[js.Any], task = task.asInstanceOf[js.Any], totalCount = totalCount.asInstanceOf[js.Any])
       __obj.asInstanceOf[IAssetsProgressEvent]
     }
     
-    @scala.inline
-    implicit class IAssetsProgressEventMutableBuilder[Self <: IAssetsProgressEvent] (val x: Self) extends AnyVal {
+    extension [Self <: IAssetsProgressEvent](x: Self) {
       
-      @scala.inline
-      def setRemainingCount(value: Double): Self = StObject.set(x, "remainingCount", value.asInstanceOf[js.Any])
+      inline def setRemainingCount(value: Double): Self = StObject.set(x, "remainingCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTask(value: AbstractAssetTask): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
+      inline def setTask(value: AbstractAssetTask): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
+      inline def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait ITextureAssetTask[TEX /* <: BaseTexture */] extends StObject {
     
     /**
       * Gets the loaded texture
       */
-    var texture: TEX = js.native
+    var texture: TEX
   }
   object ITextureAssetTask {
     
-    @scala.inline
-    def apply[TEX /* <: BaseTexture */](texture: TEX): ITextureAssetTask[TEX] = {
+    inline def apply[TEX /* <: BaseTexture */](texture: TEX): ITextureAssetTask[TEX] = {
       val __obj = js.Dynamic.literal(texture = texture.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITextureAssetTask[TEX]]
     }
     
-    @scala.inline
-    implicit class ITextureAssetTaskMutableBuilder[Self <: ITextureAssetTask[_], TEX /* <: BaseTexture */] (val x: Self with ITextureAssetTask[TEX]) extends AnyVal {
+    extension [Self <: ITextureAssetTask[?], TEX /* <: BaseTexture */](x: Self & ITextureAssetTask[TEX]) {
       
-      @scala.inline
-      def setTexture(value: TEX): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
+      inline def setTexture(value: TEX): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
     }
   }
 }

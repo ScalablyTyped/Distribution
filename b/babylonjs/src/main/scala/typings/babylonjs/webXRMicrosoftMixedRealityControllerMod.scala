@@ -7,7 +7,6 @@ import typings.babylonjs.webXRAbstractMotionControllerMod.MotionControllerHanded
 import typings.babylonjs.webXRAbstractMotionControllerMod.WebXRAbstractMotionController
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webXRMicrosoftMixedRealityControllerMod {
@@ -21,7 +20,7 @@ object webXRMicrosoftMixedRealityControllerMod {
       handedness: MotionControllerHandedness
     ) = this()
     
-    val _mapping: Axes = js.native
+    /* protected */ val _mapping: Axes = js.native
     
     /* protected */ def _updateModel(): Unit = js.native
   }
@@ -38,8 +37,7 @@ object webXRMicrosoftMixedRealityControllerMod {
     @JSImport("babylonjs/XR/motionController/webXRMicrosoftMixedRealityController", "WebXRMicrosoftMixedRealityController.MODEL_BASE_URL")
     @js.native
     def MODEL_BASE_URL: String = js.native
-    @scala.inline
-    def MODEL_BASE_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_BASE_URL")(x.asInstanceOf[js.Any])
+    inline def MODEL_BASE_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_BASE_URL")(x.asInstanceOf[js.Any])
     
     /**
       * The name of the left controller model file
@@ -47,8 +45,7 @@ object webXRMicrosoftMixedRealityControllerMod {
     @JSImport("babylonjs/XR/motionController/webXRMicrosoftMixedRealityController", "WebXRMicrosoftMixedRealityController.MODEL_LEFT_FILENAME")
     @js.native
     def MODEL_LEFT_FILENAME: String = js.native
-    @scala.inline
-    def MODEL_LEFT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_LEFT_FILENAME")(x.asInstanceOf[js.Any])
+    inline def MODEL_LEFT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_LEFT_FILENAME")(x.asInstanceOf[js.Any])
     
     /**
       * The name of the right controller model file
@@ -56,7 +53,6 @@ object webXRMicrosoftMixedRealityControllerMod {
     @JSImport("babylonjs/XR/motionController/webXRMicrosoftMixedRealityController", "WebXRMicrosoftMixedRealityController.MODEL_RIGHT_FILENAME")
     @js.native
     def MODEL_RIGHT_FILENAME: String = js.native
-    @scala.inline
-    def MODEL_RIGHT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_RIGHT_FILENAME")(x.asInstanceOf[js.Any])
+    inline def MODEL_RIGHT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_RIGHT_FILENAME")(x.asInstanceOf[js.Any])
   }
 }

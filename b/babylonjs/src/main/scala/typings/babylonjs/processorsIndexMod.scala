@@ -11,7 +11,6 @@ import typings.std.EventTarget
 import typings.std.ProgressEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object processorsIndexMod {
@@ -82,22 +81,16 @@ object processorsIndexMod {
     @JSImport("babylonjs/Engines/Processors/index", "ShaderDefineExpression._OperatorPriority")
     @js.native
     def _OperatorPriority: js.Any = js.native
-    @scala.inline
-    def _OperatorPriority_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_OperatorPriority")(x.asInstanceOf[js.Any])
+    inline def _OperatorPriority_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_OperatorPriority")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Engines/Processors/index", "ShaderDefineExpression._Stack")
     @js.native
     def _Stack: js.Any = js.native
-    @scala.inline
-    def _Stack_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Stack")(x.asInstanceOf[js.Any])
+    inline def _Stack_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Stack")(x.asInstanceOf[js.Any])
     
-    @JSImport("babylonjs/Engines/Processors/index", "ShaderDefineExpression.infixToPostfix")
-    @js.native
-    def infixToPostfix(infix: String): js.Array[String] = js.native
+    inline def infixToPostfix(infix: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("infixToPostfix")(infix.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @JSImport("babylonjs/Engines/Processors/index", "ShaderDefineExpression.postfixToInfix")
-    @js.native
-    def postfixToInfix(postfix: js.Array[String]): String = js.native
+    inline def postfixToInfix(postfix: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("postfixToInfix")(postfix.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSImport("babylonjs/Engines/Processors/index", "ShaderDefineIsDefinedOperator")
@@ -124,38 +117,32 @@ object processorsIndexMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("babylonjs/Engines/Processors/index", "ShaderProcessor.Process")
-    @js.native
-    def Process(
+    inline def Process(
       sourceCode: String,
       options: ProcessingOptions,
       callback: js.Function1[/* migratedCode */ String, Unit],
       engine: ThinEngine
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Process")(sourceCode.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], engine.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("babylonjs/Engines/Processors/index", "ShaderProcessor._BuildExpression")
     @js.native
     def _BuildExpression: js.Any = js.native
-    @scala.inline
-    def _BuildExpression_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BuildExpression")(x.asInstanceOf[js.Any])
+    inline def _BuildExpression_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BuildExpression")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Engines/Processors/index", "ShaderProcessor._BuildSubExpression")
     @js.native
     def _BuildSubExpression: js.Any = js.native
-    @scala.inline
-    def _BuildSubExpression_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BuildSubExpression")(x.asInstanceOf[js.Any])
+    inline def _BuildSubExpression_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BuildSubExpression")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Engines/Processors/index", "ShaderProcessor._EvaluatePreProcessors")
     @js.native
     def _EvaluatePreProcessors: js.Any = js.native
-    @scala.inline
-    def _EvaluatePreProcessors_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_EvaluatePreProcessors")(x.asInstanceOf[js.Any])
+    inline def _EvaluatePreProcessors_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_EvaluatePreProcessors")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Engines/Processors/index", "ShaderProcessor._ExtractOperation")
     @js.native
     def _ExtractOperation: js.Any = js.native
-    @scala.inline
-    def _ExtractOperation_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ExtractOperation")(x.asInstanceOf[js.Any])
+    inline def _ExtractOperation_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ExtractOperation")(x.asInstanceOf[js.Any])
     
     /**
       * Loads a file from a url
@@ -168,172 +155,60 @@ object processorsIndexMod {
       * @returns a file request object
       * @hidden
       */
-    @JSImport("babylonjs/Engines/Processors/index", "ShaderProcessor._FileToolsLoadFile")
-    @js.native
-    def _FileToolsLoadFile(
+    inline def _FileToolsLoadFile(
       url: String,
       onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit]
-    ): IFileRequest = js.native
-    @JSImport("babylonjs/Engines/Processors/index", "ShaderProcessor._FileToolsLoadFile")
-    @js.native
-    def _FileToolsLoadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      offlineProvider: js.UndefOr[scala.Nothing],
-      useArrayBuffer: js.UndefOr[scala.Nothing],
-      onError: js.Function2[
-          /* request */ js.UndefOr[WebRequest], 
-          /* exception */ js.UndefOr[LoadFileError], 
-          Unit
-        ]
-    ): IFileRequest = js.native
-    @JSImport("babylonjs/Engines/Processors/index", "ShaderProcessor._FileToolsLoadFile")
-    @js.native
-    def _FileToolsLoadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      offlineProvider: js.UndefOr[scala.Nothing],
-      useArrayBuffer: Boolean
-    ): IFileRequest = js.native
-    @JSImport("babylonjs/Engines/Processors/index", "ShaderProcessor._FileToolsLoadFile")
-    @js.native
-    def _FileToolsLoadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      offlineProvider: js.UndefOr[scala.Nothing],
-      useArrayBuffer: Boolean,
-      onError: js.Function2[
-          /* request */ js.UndefOr[WebRequest], 
-          /* exception */ js.UndefOr[LoadFileError], 
-          Unit
-        ]
-    ): IFileRequest = js.native
-    @JSImport("babylonjs/Engines/Processors/index", "ShaderProcessor._FileToolsLoadFile")
-    @js.native
-    def _FileToolsLoadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      offlineProvider: IOfflineProvider
-    ): IFileRequest = js.native
-    @JSImport("babylonjs/Engines/Processors/index", "ShaderProcessor._FileToolsLoadFile")
-    @js.native
-    def _FileToolsLoadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      offlineProvider: IOfflineProvider,
-      useArrayBuffer: js.UndefOr[scala.Nothing],
-      onError: js.Function2[
-          /* request */ js.UndefOr[WebRequest], 
-          /* exception */ js.UndefOr[LoadFileError], 
-          Unit
-        ]
-    ): IFileRequest = js.native
-    @JSImport("babylonjs/Engines/Processors/index", "ShaderProcessor._FileToolsLoadFile")
-    @js.native
-    def _FileToolsLoadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      offlineProvider: IOfflineProvider,
-      useArrayBuffer: Boolean
-    ): IFileRequest = js.native
-    @JSImport("babylonjs/Engines/Processors/index", "ShaderProcessor._FileToolsLoadFile")
-    @js.native
-    def _FileToolsLoadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      offlineProvider: IOfflineProvider,
-      useArrayBuffer: Boolean,
-      onError: js.Function2[
-          /* request */ js.UndefOr[WebRequest], 
-          /* exception */ js.UndefOr[LoadFileError], 
-          Unit
-        ]
-    ): IFileRequest = js.native
-    @JSImport("babylonjs/Engines/Processors/index", "ShaderProcessor._FileToolsLoadFile")
-    @js.native
-    def _FileToolsLoadFile(
+    ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
+    inline def _FileToolsLoadFile(
       url: String,
       onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit]
-    ): IFileRequest = js.native
-    @JSImport("babylonjs/Engines/Processors/index", "ShaderProcessor._FileToolsLoadFile")
-    @js.native
-    def _FileToolsLoadFile(
+    ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
+    inline def _FileToolsLoadFile(
       url: String,
       onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-      offlineProvider: js.UndefOr[scala.Nothing],
-      useArrayBuffer: js.UndefOr[scala.Nothing],
-      onError: js.Function2[
-          /* request */ js.UndefOr[WebRequest], 
-          /* exception */ js.UndefOr[LoadFileError], 
-          Unit
-        ]
-    ): IFileRequest = js.native
-    @JSImport("babylonjs/Engines/Processors/index", "ShaderProcessor._FileToolsLoadFile")
-    @js.native
-    def _FileToolsLoadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-      offlineProvider: js.UndefOr[scala.Nothing],
+      offlineProvider: Unit,
       useArrayBuffer: Boolean
-    ): IFileRequest = js.native
-    @JSImport("babylonjs/Engines/Processors/index", "ShaderProcessor._FileToolsLoadFile")
-    @js.native
-    def _FileToolsLoadFile(
+    ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
+    inline def _FileToolsLoadFile(
       url: String,
       onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-      offlineProvider: js.UndefOr[scala.Nothing],
+      offlineProvider: Unit,
       useArrayBuffer: Boolean,
       onError: js.Function2[
           /* request */ js.UndefOr[WebRequest], 
           /* exception */ js.UndefOr[LoadFileError], 
           Unit
         ]
-    ): IFileRequest = js.native
-    @JSImport("babylonjs/Engines/Processors/index", "ShaderProcessor._FileToolsLoadFile")
-    @js.native
-    def _FileToolsLoadFile(
+    ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
+    inline def _FileToolsLoadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
+      offlineProvider: Unit,
+      useArrayBuffer: Unit,
+      onError: js.Function2[
+          /* request */ js.UndefOr[WebRequest], 
+          /* exception */ js.UndefOr[LoadFileError], 
+          Unit
+        ]
+    ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
+    inline def _FileToolsLoadFile(
       url: String,
       onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
       offlineProvider: IOfflineProvider
-    ): IFileRequest = js.native
-    @JSImport("babylonjs/Engines/Processors/index", "ShaderProcessor._FileToolsLoadFile")
-    @js.native
-    def _FileToolsLoadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-      offlineProvider: IOfflineProvider,
-      useArrayBuffer: js.UndefOr[scala.Nothing],
-      onError: js.Function2[
-          /* request */ js.UndefOr[WebRequest], 
-          /* exception */ js.UndefOr[LoadFileError], 
-          Unit
-        ]
-    ): IFileRequest = js.native
-    @JSImport("babylonjs/Engines/Processors/index", "ShaderProcessor._FileToolsLoadFile")
-    @js.native
-    def _FileToolsLoadFile(
+    ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
+    inline def _FileToolsLoadFile(
       url: String,
       onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
       offlineProvider: IOfflineProvider,
       useArrayBuffer: Boolean
-    ): IFileRequest = js.native
-    @JSImport("babylonjs/Engines/Processors/index", "ShaderProcessor._FileToolsLoadFile")
-    @js.native
-    def _FileToolsLoadFile(
+    ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
+    inline def _FileToolsLoadFile(
       url: String,
       onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
@@ -344,7 +219,87 @@ object processorsIndexMod {
           /* exception */ js.UndefOr[LoadFileError], 
           Unit
         ]
-    ): IFileRequest = js.native
+    ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
+    inline def _FileToolsLoadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
+      offlineProvider: IOfflineProvider,
+      useArrayBuffer: Unit,
+      onError: js.Function2[
+          /* request */ js.UndefOr[WebRequest], 
+          /* exception */ js.UndefOr[LoadFileError], 
+          Unit
+        ]
+    ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
+    inline def _FileToolsLoadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: Unit,
+      offlineProvider: Unit,
+      useArrayBuffer: Boolean
+    ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
+    inline def _FileToolsLoadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: Unit,
+      offlineProvider: Unit,
+      useArrayBuffer: Boolean,
+      onError: js.Function2[
+          /* request */ js.UndefOr[WebRequest], 
+          /* exception */ js.UndefOr[LoadFileError], 
+          Unit
+        ]
+    ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
+    inline def _FileToolsLoadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: Unit,
+      offlineProvider: Unit,
+      useArrayBuffer: Unit,
+      onError: js.Function2[
+          /* request */ js.UndefOr[WebRequest], 
+          /* exception */ js.UndefOr[LoadFileError], 
+          Unit
+        ]
+    ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
+    inline def _FileToolsLoadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: Unit,
+      offlineProvider: IOfflineProvider
+    ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
+    inline def _FileToolsLoadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: Unit,
+      offlineProvider: IOfflineProvider,
+      useArrayBuffer: Boolean
+    ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
+    inline def _FileToolsLoadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: Unit,
+      offlineProvider: IOfflineProvider,
+      useArrayBuffer: Boolean,
+      onError: js.Function2[
+          /* request */ js.UndefOr[WebRequest], 
+          /* exception */ js.UndefOr[LoadFileError], 
+          Unit
+        ]
+    ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
+    inline def _FileToolsLoadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: Unit,
+      offlineProvider: IOfflineProvider,
+      useArrayBuffer: Unit,
+      onError: js.Function2[
+          /* request */ js.UndefOr[WebRequest], 
+          /* exception */ js.UndefOr[LoadFileError], 
+          Unit
+        ]
+    ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
     
     @JSImport("babylonjs/Engines/Processors/index", "ShaderProcessor._MoveCursor")
     @js.native
@@ -353,34 +308,28 @@ object processorsIndexMod {
     @JSImport("babylonjs/Engines/Processors/index", "ShaderProcessor._MoveCursorWithinIf")
     @js.native
     def _MoveCursorWithinIf: js.Any = js.native
-    @scala.inline
-    def _MoveCursorWithinIf_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MoveCursorWithinIf")(x.asInstanceOf[js.Any])
+    inline def _MoveCursorWithinIf_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MoveCursorWithinIf")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def _MoveCursor_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MoveCursor")(x.asInstanceOf[js.Any])
+    inline def _MoveCursor_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MoveCursor")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Engines/Processors/index", "ShaderProcessor._PreparePreProcessors")
     @js.native
     def _PreparePreProcessors: js.Any = js.native
-    @scala.inline
-    def _PreparePreProcessors_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_PreparePreProcessors")(x.asInstanceOf[js.Any])
+    inline def _PreparePreProcessors_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_PreparePreProcessors")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Engines/Processors/index", "ShaderProcessor._ProcessIncludes")
     @js.native
     def _ProcessIncludes: js.Any = js.native
-    @scala.inline
-    def _ProcessIncludes_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ProcessIncludes")(x.asInstanceOf[js.Any])
+    inline def _ProcessIncludes_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ProcessIncludes")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Engines/Processors/index", "ShaderProcessor._ProcessPrecision")
     @js.native
     def _ProcessPrecision: js.Any = js.native
-    @scala.inline
-    def _ProcessPrecision_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ProcessPrecision")(x.asInstanceOf[js.Any])
+    inline def _ProcessPrecision_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ProcessPrecision")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Engines/Processors/index", "ShaderProcessor._ProcessShaderConversion")
     @js.native
     def _ProcessShaderConversion: js.Any = js.native
-    @scala.inline
-    def _ProcessShaderConversion_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ProcessShaderConversion")(x.asInstanceOf[js.Any])
+    inline def _ProcessShaderConversion_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ProcessShaderConversion")(x.asInstanceOf[js.Any])
   }
 }

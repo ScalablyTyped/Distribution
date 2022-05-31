@@ -1552,7 +1552,4 @@ object mod {
       }
     }
   }
-  
-  /* static member */
-  object options
 }

@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.PlaySoundAction")
 @js.native
 class PlaySoundAction protected ()
-  extends typings.babylonjs.BABYLON.PlaySoundAction {
+  extends StObject
+     with typings.babylonjs.BABYLON.PlaySoundAction {
   /**
     * Instantiate the action
     * @param triggerOptions defines the trigger options

@@ -23,24 +23,23 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ojChartGroupEventMap extends HTMLElementEventMap {
+trait ojChartGroupEventMap
+  extends StObject
+     with HTMLElementEventMap {
   
-  var drillingChanged: JetElementCustomEvent[js.UndefOr[on | off | inherit]] = js.native
+  var drillingChanged: JetElementCustomEvent[js.UndefOr[on | off | inherit]]
   
-  var labelStyleChanged: JetElementCustomEvent[js.UndefOr[js.Object]] = js.native
+  var labelStyleChanged: JetElementCustomEvent[js.UndefOr[js.Object]]
   
-  var nameChanged: JetElementCustomEvent[js.UndefOr[String]] = js.native
+  var nameChanged: JetElementCustomEvent[js.UndefOr[String]]
   
-  var shortDescChanged: JetElementCustomEvent[js.UndefOr[String]] = js.native
+  var shortDescChanged: JetElementCustomEvent[js.UndefOr[String]]
 }
 object ojChartGroupEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,
@@ -142,19 +141,14 @@ object ojChartGroupEventMap {
     __obj.asInstanceOf[ojChartGroupEventMap]
   }
   
-  @scala.inline
-  implicit class ojChartGroupEventMapMutableBuilder[Self <: ojChartGroupEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: ojChartGroupEventMap](x: Self) {
     
-    @scala.inline
-    def setDrillingChanged(value: JetElementCustomEvent[js.UndefOr[on | off | inherit]]): Self = StObject.set(x, "drillingChanged", value.asInstanceOf[js.Any])
+    inline def setDrillingChanged(value: JetElementCustomEvent[js.UndefOr[on | off | inherit]]): Self = StObject.set(x, "drillingChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelStyleChanged(value: JetElementCustomEvent[js.UndefOr[js.Object]]): Self = StObject.set(x, "labelStyleChanged", value.asInstanceOf[js.Any])
+    inline def setLabelStyleChanged(value: JetElementCustomEvent[js.UndefOr[js.Object]]): Self = StObject.set(x, "labelStyleChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = StObject.set(x, "nameChanged", value.asInstanceOf[js.Any])
+    inline def setNameChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = StObject.set(x, "nameChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortDescChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = StObject.set(x, "shortDescChanged", value.asInstanceOf[js.Any])
+    inline def setShortDescChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = StObject.set(x, "shortDescChanged", value.asInstanceOf[js.Any])
   }
 }

@@ -8,7 +8,6 @@ import typings.jupyterlabNotebook.jupyterlabNotebookStrings.replace
 import typings.jupyterlabNotebook.widgetMod.Notebook
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object actionsMod {
@@ -24,8 +23,12 @@ object actionsMod {
     * standalone class is because at run time, the `Private.executed` variable
     * does not yet exist, so it needs to be referenced via a getter.
     */
-  class NotebookActions protected () extends StObject
+  /* private */ class NotebookActions () extends StObject
   object NotebookActions {
+    
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Change the selected cell type(s).
@@ -40,9 +43,7 @@ object actionsMod {
       * The existing selection will be cleared.
       * Any cells converted to markdown will be unrendered.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.changeCellType")
-    @js.native
-    def changeCellType(notebook: Notebook, value: CellType): Unit = js.native
+    inline def changeCellType(notebook: Notebook, value: CellType): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("changeCellType")(notebook.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Clear all the code outputs on the widget.
@@ -52,9 +53,7 @@ object actionsMod {
       * #### Notes
       * The widget `mode` will be preserved.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.clearAllOutputs")
-    @js.native
-    def clearAllOutputs(notebook: Notebook): Unit = js.native
+    inline def clearAllOutputs(notebook: Notebook): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAllOutputs")(notebook.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Clear the code outputs of the selected cells.
@@ -64,18 +63,14 @@ object actionsMod {
       * #### Notes
       * The widget `mode` will be preserved.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.clearOutputs")
-    @js.native
-    def clearOutputs(notebook: Notebook): Unit = js.native
+    inline def clearOutputs(notebook: Notebook): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearOutputs")(notebook.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Copy the selected cell data to a clipboard.
       *
       * @param notebook - The target notebook widget.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.copy")
-    @js.native
-    def copy(notebook: Notebook): Unit = js.native
+    inline def copy(notebook: Notebook): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(notebook.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Cut the selected cell data to a clipboard.
@@ -86,9 +81,7 @@ object actionsMod {
       * This action can be undone.
       * A new code cell is added if all cells are cut.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.cut")
-    @js.native
-    def cut(notebook: Notebook): Unit = js.native
+    inline def cut(notebook: Notebook): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cut")(notebook.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Delete the selected cells.
@@ -100,36 +93,28 @@ object actionsMod {
       * It will add a code cell if all cells are deleted.
       * This action can be undone.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.deleteCells")
-    @js.native
-    def deleteCells(notebook: Notebook): Unit = js.native
+    inline def deleteCells(notebook: Notebook): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteCells")(notebook.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Deselect all of the cells of the notebook.
       *
       * @param notebook - the targe notebook widget.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.deselectAll")
-    @js.native
-    def deselectAll(notebook: Notebook): Unit = js.native
+    inline def deselectAll(notebook: Notebook): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deselectAll")(notebook.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Disable output scrolling for all selected cells.
       *
       * @param notebook - The target notebook widget.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.disableOutputScrolling")
-    @js.native
-    def disableOutputScrolling(notebook: Notebook): Unit = js.native
+    inline def disableOutputScrolling(notebook: Notebook): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableOutputScrolling")(notebook.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Enable output scrolling for all selected cells.
       *
       * @param notebook - The target notebook widget.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.enableOutputScrolling")
-    @js.native
-    def enableOutputScrolling(notebook: Notebook): Unit = js.native
+    inline def enableOutputScrolling(notebook: Notebook): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableOutputScrolling")(notebook.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Extend the selection to the cell above.
@@ -141,12 +126,8 @@ object actionsMod {
       * This is a no-op if the first cell is the active cell.
       * The new cell will be activated.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.extendSelectionAbove")
-    @js.native
-    def extendSelectionAbove(notebook: Notebook): Unit = js.native
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.extendSelectionAbove")
-    @js.native
-    def extendSelectionAbove(notebook: Notebook, toTop: Boolean): Unit = js.native
+    inline def extendSelectionAbove(notebook: Notebook): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extendSelectionAbove")(notebook.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def extendSelectionAbove(notebook: Notebook, toTop: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extendSelectionAbove")(notebook.asInstanceOf[js.Any], toTop.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Extend the selection to the cell below.
@@ -158,48 +139,36 @@ object actionsMod {
       * This is a no-op if the last cell is the active cell.
       * The new cell will be activated.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.extendSelectionBelow")
-    @js.native
-    def extendSelectionBelow(notebook: Notebook): Unit = js.native
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.extendSelectionBelow")
-    @js.native
-    def extendSelectionBelow(notebook: Notebook, toBottom: Boolean): Unit = js.native
+    inline def extendSelectionBelow(notebook: Notebook): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extendSelectionBelow")(notebook.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def extendSelectionBelow(notebook: Notebook, toBottom: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extendSelectionBelow")(notebook.asInstanceOf[js.Any], toBottom.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Hide the code on all code cells.
       *
       * @param notebook - The target notebook widget.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.hideAllCode")
-    @js.native
-    def hideAllCode(notebook: Notebook): Unit = js.native
+    inline def hideAllCode(notebook: Notebook): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideAllCode")(notebook.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Hide the output on all code cells.
       *
       * @param notebook - The target notebook widget.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.hideAllOutputs")
-    @js.native
-    def hideAllOutputs(notebook: Notebook): Unit = js.native
+    inline def hideAllOutputs(notebook: Notebook): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideAllOutputs")(notebook.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Hide the code on selected code cells.
       *
       * @param notebook - The target notebook widget.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.hideCode")
-    @js.native
-    def hideCode(notebook: Notebook): Unit = js.native
+    inline def hideCode(notebook: Notebook): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideCode")(notebook.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Hide the output on selected code cells.
       *
       * @param notebook - The target notebook widget.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.hideOutput")
-    @js.native
-    def hideOutput(notebook: Notebook): Unit = js.native
+    inline def hideOutput(notebook: Notebook): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideOutput")(notebook.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Insert a new code cell above the active cell.
@@ -212,9 +181,7 @@ object actionsMod {
       * The existing selection will be cleared.
       * The new cell will the active cell.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.insertAbove")
-    @js.native
-    def insertAbove(notebook: Notebook): Unit = js.native
+    inline def insertAbove(notebook: Notebook): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("insertAbove")(notebook.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Insert a new code cell below the active cell.
@@ -227,9 +194,7 @@ object actionsMod {
       * The existing selection will be cleared.
       * The new cell will be the active cell.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.insertBelow")
-    @js.native
-    def insertBelow(notebook: Notebook): Unit = js.native
+    inline def insertBelow(notebook: Notebook): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("insertBelow")(notebook.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Merge the selected cells.
@@ -244,27 +209,21 @@ object actionsMod {
       * The final cell will have the same type as the active cell.
       * If the active cell is a markdown cell, it will be unrendered.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.mergeCells")
-    @js.native
-    def mergeCells(notebook: Notebook): Unit = js.native
+    inline def mergeCells(notebook: Notebook): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeCells")(notebook.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Move the selected cell(s) down.
       *
       * @param notebook = The target notebook widget.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.moveDown")
-    @js.native
-    def moveDown(notebook: Notebook): Unit = js.native
+    inline def moveDown(notebook: Notebook): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("moveDown")(notebook.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Move the selected cell(s) up.
       *
       * @param widget - The target notebook widget.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.moveUp")
-    @js.native
-    def moveUp(notebook: Notebook): Unit = js.native
+    inline def moveUp(notebook: Notebook): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("moveUp")(notebook.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Paste cells from the application clipboard.
@@ -281,18 +240,13 @@ object actionsMod {
       * This is a no-op if there is no cell data on the clipboard.
       * This action can be undone.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.paste")
-    @js.native
-    def paste(notebook: Notebook): Unit = js.native
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.paste")
-    @js.native
-    def paste_above(notebook: Notebook, mode: above): Unit = js.native
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.paste")
-    @js.native
-    def paste_below(notebook: Notebook, mode: below): Unit = js.native
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.paste")
-    @js.native
-    def paste_replace(notebook: Notebook, mode: replace): Unit = js.native
+    inline def paste(notebook: Notebook): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("paste")(notebook.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    inline def paste_above(notebook: Notebook, mode: above): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("paste")(notebook.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def paste_below(notebook: Notebook, mode: below): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("paste")(notebook.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def paste_replace(notebook: Notebook, mode: replace): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("paste")(notebook.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Redo a cell action.
@@ -302,16 +256,10 @@ object actionsMod {
       * #### Notes
       * This is a no-op if there are no cell actions to redo.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.redo")
-    @js.native
-    def redo(notebook: Notebook): Unit = js.native
+    inline def redo(notebook: Notebook): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("redo")(notebook.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.renderAllMarkdown")
-    @js.native
-    def renderAllMarkdown(notebook: Notebook): js.Promise[Boolean] = js.native
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.renderAllMarkdown")
-    @js.native
-    def renderAllMarkdown(notebook: Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = js.native
+    inline def renderAllMarkdown(notebook: Notebook): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderAllMarkdown")(notebook.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    inline def renderAllMarkdown(notebook: Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderAllMarkdown")(notebook.asInstanceOf[js.Any], sessionContext.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
     
     /**
       * Replaces the selection in the active cell of the notebook.
@@ -319,9 +267,7 @@ object actionsMod {
       * @param notebook - The target notebook widget.
       * @param text - The text to replace the selection.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.replaceSelection")
-    @js.native
-    def replaceSelection(notebook: Notebook, text: String): Unit = js.native
+    inline def replaceSelection(notebook: Notebook, text: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceSelection")(notebook.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Run the selected cell(s).
@@ -336,12 +282,8 @@ object actionsMod {
       * An execution error will prevent the remaining code cells from executing.
       * All markdown cells will be rendered.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.run")
-    @js.native
-    def run(notebook: Notebook): js.Promise[Boolean] = js.native
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.run")
-    @js.native
-    def run(notebook: Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = js.native
+    inline def run(notebook: Notebook): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(notebook.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    inline def run(notebook: Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(notebook.asInstanceOf[js.Any], sessionContext.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
     
     /**
       * Run all of the cells in the notebook.
@@ -356,12 +298,8 @@ object actionsMod {
       * All markdown cells will be rendered.
       * The last cell in the notebook will be activated and scrolled into view.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.runAll")
-    @js.native
-    def runAll(notebook: Notebook): js.Promise[Boolean] = js.native
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.runAll")
-    @js.native
-    def runAll(notebook: Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = js.native
+    inline def runAll(notebook: Notebook): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("runAll")(notebook.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    inline def runAll(notebook: Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("runAll")(notebook.asInstanceOf[js.Any], sessionContext.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
     
     /**
       * Run all of the cells before the currently active cell (exclusive).
@@ -376,12 +314,8 @@ object actionsMod {
       * All markdown cells will be rendered.
       * The currently active cell will remain selected.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.runAllAbove")
-    @js.native
-    def runAllAbove(notebook: Notebook): js.Promise[Boolean] = js.native
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.runAllAbove")
-    @js.native
-    def runAllAbove(notebook: Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = js.native
+    inline def runAllAbove(notebook: Notebook): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("runAllAbove")(notebook.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    inline def runAllAbove(notebook: Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("runAllAbove")(notebook.asInstanceOf[js.Any], sessionContext.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
     
     /**
       * Run all of the cells after the currently active cell (inclusive).
@@ -396,12 +330,8 @@ object actionsMod {
       * All markdown cells will be rendered.
       * The last cell in the notebook will be activated and scrolled into view.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.runAllBelow")
-    @js.native
-    def runAllBelow(notebook: Notebook): js.Promise[Boolean] = js.native
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.runAllBelow")
-    @js.native
-    def runAllBelow(notebook: Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = js.native
+    inline def runAllBelow(notebook: Notebook): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("runAllBelow")(notebook.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    inline def runAllBelow(notebook: Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("runAllBelow")(notebook.asInstanceOf[js.Any], sessionContext.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
     
     /**
       * Run the selected cell(s) and advance to the next cell.
@@ -418,12 +348,8 @@ object actionsMod {
       * If the last selected cell is the last cell, a new code cell
       * will be created in `'edit'` mode.  The new cell creation can be undone.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.runAndAdvance")
-    @js.native
-    def runAndAdvance(notebook: Notebook): js.Promise[Boolean] = js.native
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.runAndAdvance")
-    @js.native
-    def runAndAdvance(notebook: Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = js.native
+    inline def runAndAdvance(notebook: Notebook): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("runAndAdvance")(notebook.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    inline def runAndAdvance(notebook: Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("runAndAdvance")(notebook.asInstanceOf[js.Any], sessionContext.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
     
     /**
       * Run the selected cell(s) and insert a new code cell.
@@ -440,12 +366,8 @@ object actionsMod {
       * The cell insert can be undone.
       * The new cell will be scrolled into view.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.runAndInsert")
-    @js.native
-    def runAndInsert(notebook: Notebook): js.Promise[Boolean] = js.native
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.runAndInsert")
-    @js.native
-    def runAndInsert(notebook: Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = js.native
+    inline def runAndInsert(notebook: Notebook): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("runAndInsert")(notebook.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    inline def runAndInsert(notebook: Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("runAndInsert")(notebook.asInstanceOf[js.Any], sessionContext.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
     
     /**
       * Select the above the active cell.
@@ -458,18 +380,14 @@ object actionsMod {
       * This will skip any collapsed cells.
       * The existing selection will be cleared.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.selectAbove")
-    @js.native
-    def selectAbove(notebook: Notebook): Unit = js.native
+    inline def selectAbove(notebook: Notebook): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAbove")(notebook.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Select all of the cells of the notebook.
       *
       * @param notebook - the target notebook widget.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.selectAll")
-    @js.native
-    def selectAll(notebook: Notebook): Unit = js.native
+    inline def selectAll(notebook: Notebook): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(notebook.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Select the cell below the active cell.
@@ -482,9 +400,7 @@ object actionsMod {
       * This will skip any collapsed cells.
       * The existing selection will be cleared.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.selectBelow")
-    @js.native
-    def selectBelow(notebook: Notebook): Unit = js.native
+    inline def selectBelow(notebook: Notebook): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("selectBelow")(notebook.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Go to the last cell that is run or current if it is running.
@@ -494,9 +410,7 @@ object actionsMod {
       *
       * @param notebook - The target notebook widget.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.selectLastRunCell")
-    @js.native
-    def selectLastRunCell(notebook: Notebook): Unit = js.native
+    inline def selectLastRunCell(notebook: Notebook): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("selectLastRunCell")(notebook.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Set the markdown header level.
@@ -512,45 +426,35 @@ object actionsMod {
       * There will always be one blank space after the header.
       * The cells will be unrendered.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.setMarkdownHeader")
-    @js.native
-    def setMarkdownHeader(notebook: Notebook, level: Double): Unit = js.native
+    inline def setMarkdownHeader(notebook: Notebook, level: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMarkdownHeader")(notebook.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Show the code on all code cells.
       *
       * @param widget - The target notebook widget.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.showAllCode")
-    @js.native
-    def showAllCode(notebook: Notebook): Unit = js.native
+    inline def showAllCode(notebook: Notebook): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showAllCode")(notebook.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Show the output on all code cells.
       *
       * @param notebook - The target notebook widget.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.showAllOutputs")
-    @js.native
-    def showAllOutputs(notebook: Notebook): Unit = js.native
+    inline def showAllOutputs(notebook: Notebook): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showAllOutputs")(notebook.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Show the code on selected code cells.
       *
       * @param notebook - The target notebook widget.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.showCode")
-    @js.native
-    def showCode(notebook: Notebook): Unit = js.native
+    inline def showCode(notebook: Notebook): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showCode")(notebook.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Show the output on selected code cells.
       *
       * @param notebook - The target notebook widget.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.showOutput")
-    @js.native
-    def showOutput(notebook: Notebook): Unit = js.native
+    inline def showOutput(notebook: Notebook): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showOutput")(notebook.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Split the active cell into two or more cells.
@@ -566,9 +470,7 @@ object actionsMod {
       * Both cells will have the same type as the original cell.
       * This action can be undone.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.splitCell")
-    @js.native
-    def splitCell(notebook: Notebook): Unit = js.native
+    inline def splitCell(notebook: Notebook): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("splitCell")(notebook.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Toggle the line number of all cells.
@@ -579,9 +481,7 @@ object actionsMod {
       * The original state is based on the state of the active cell.
       * The `mode` of the widget will be preserved.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.toggleAllLineNumbers")
-    @js.native
-    def toggleAllLineNumbers(notebook: Notebook): Unit = js.native
+    inline def toggleAllLineNumbers(notebook: Notebook): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleAllLineNumbers")(notebook.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Trust the notebook after prompting the user.
@@ -593,9 +493,7 @@ object actionsMod {
       * #### Notes
       * No dialog will be presented if the notebook is already trusted.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.trust")
-    @js.native
-    def trust(notebook: Notebook): js.Promise[Unit] = js.native
+    inline def trust(notebook: Notebook): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("trust")(notebook.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Undo a cell action.
@@ -605,8 +503,6 @@ object actionsMod {
       * #### Notes
       * This is a no-op if if there are no cell actions to undo.
       */
-    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.undo")
-    @js.native
-    def undo(notebook: Notebook): Unit = js.native
+    inline def undo(notebook: Notebook): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("undo")(notebook.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

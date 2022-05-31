@@ -2,15 +2,14 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GradientBlockColorStep extends StObject {
   
-  var _color: js.Any = js.native
+  /* private */ var _color: js.Any = js.native
   
-  var _step: js.Any = js.native
+  /* private */ var _step: js.Any = js.native
   
   /**
     * Gets the color associated with this step

@@ -5,7 +5,6 @@ import typings.babylonjs.postProcessMod.PostProcess
 import typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vrDistortionCorrectionPostProcessMod {
@@ -22,18 +21,18 @@ object vrDistortionCorrectionPostProcessMod {
       */
     def this(name: String, camera: Camera, isRightEye: Boolean, vrMetrics: VRCameraMetrics) = this()
     
-    var _distortionFactors: js.Any = js.native
+    /* private */ var _distortionFactors: js.Any = js.native
     
-    var _isRightEye: js.Any = js.native
+    /* private */ var _isRightEye: js.Any = js.native
     
-    var _lensCenter: js.Any = js.native
+    /* private */ var _lensCenter: js.Any = js.native
     
-    var _lensCenterOffset: js.Any = js.native
+    /* private */ var _lensCenterOffset: js.Any = js.native
     
-    var _postProcessScaleFactor: js.Any = js.native
+    /* private */ var _postProcessScaleFactor: js.Any = js.native
     
-    var _scaleFactor: js.Any = js.native
+    /* private */ var _scaleFactor: js.Any = js.native
     
-    var _scaleIn: js.Any = js.native
+    /* private */ var _scaleIn: js.Any = js.native
   }
 }

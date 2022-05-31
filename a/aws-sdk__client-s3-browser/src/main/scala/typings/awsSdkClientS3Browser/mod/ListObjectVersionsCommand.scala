@@ -1,5 +1,6 @@
 package typings.awsSdkClientS3Browser.mod
 
+import typings.awsSdkClientS3Browser.typesListObjectVersionsInputMod.ListObjectVersionsInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class ListObjectVersionsCommand protected ()
   extends typings.awsSdkClientS3Browser.listObjectVersionsCommandMod.ListObjectVersionsCommand {
-  def this(input: typings.awsSdkClientS3Browser.typesListObjectVersionsInputMod.ListObjectVersionsInput) = this()
+  def this(input: ListObjectVersionsInput) = this()
 }

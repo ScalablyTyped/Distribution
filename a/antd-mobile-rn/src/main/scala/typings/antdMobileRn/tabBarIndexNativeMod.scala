@@ -49,7 +49,5 @@ object tabBarIndexNativeMod {
   }
   
   /* was `typeof TabBarIOS` */
-  object _default
-  /* was `typeof TabBarIOS` */
   type _default = typings.antdMobileRn.tabbarIosMod.default
 }

@@ -2,39 +2,31 @@ package typings.babylonjs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Height extends StObject {
   
-  var height: Double = js.native
+  var height: Double
   
-  var layers: js.UndefOr[Double] = js.native
+  var layers: js.UndefOr[Double] = js.undefined
   
-  var width: Double = js.native
+  var width: Double
 }
 object Height {
   
-  @scala.inline
-  def apply(height: Double, width: Double): Height = {
+  inline def apply(height: Double, width: Double): Height = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Height]
   }
   
-  @scala.inline
-  implicit class HeightMutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
+  extension [Self <: Height](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayers(value: Double): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+    inline def setLayers(value: Double): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+    inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

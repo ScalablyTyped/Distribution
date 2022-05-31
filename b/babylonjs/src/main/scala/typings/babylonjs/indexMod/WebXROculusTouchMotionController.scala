@@ -4,7 +4,6 @@ import typings.babylonjs.webXRAbstractMotionControllerMod.IMinimalMotionControll
 import typings.babylonjs.webXRAbstractMotionControllerMod.MotionControllerHandedness
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "WebXROculusTouchMotionController")
@@ -26,14 +25,14 @@ class WebXROculusTouchMotionController protected ()
     scene: typings.babylonjs.sceneMod.Scene,
     gamepadObject: IMinimalMotionControllerObject,
     handedness: MotionControllerHandedness,
-    legacyMapping: js.UndefOr[scala.Nothing],
+    legacyMapping: Boolean,
     _forceLegacyControllers: Boolean
   ) = this()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
     gamepadObject: IMinimalMotionControllerObject,
     handedness: MotionControllerHandedness,
-    legacyMapping: Boolean,
+    legacyMapping: Unit,
     _forceLegacyControllers: Boolean
   ) = this()
 }
@@ -50,8 +49,7 @@ object WebXROculusTouchMotionController {
   @JSImport("babylonjs/index", "WebXROculusTouchMotionController.MODEL_BASE_URL")
   @js.native
   def MODEL_BASE_URL: String = js.native
-  @scala.inline
-  def MODEL_BASE_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_BASE_URL")(x.asInstanceOf[js.Any])
+  inline def MODEL_BASE_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_BASE_URL")(x.asInstanceOf[js.Any])
   
   /**
     * The name of the left controller model file
@@ -59,8 +57,7 @@ object WebXROculusTouchMotionController {
   @JSImport("babylonjs/index", "WebXROculusTouchMotionController.MODEL_LEFT_FILENAME")
   @js.native
   def MODEL_LEFT_FILENAME: String = js.native
-  @scala.inline
-  def MODEL_LEFT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_LEFT_FILENAME")(x.asInstanceOf[js.Any])
+  inline def MODEL_LEFT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_LEFT_FILENAME")(x.asInstanceOf[js.Any])
   
   /**
     * The name of the right controller model file
@@ -68,8 +65,7 @@ object WebXROculusTouchMotionController {
   @JSImport("babylonjs/index", "WebXROculusTouchMotionController.MODEL_RIGHT_FILENAME")
   @js.native
   def MODEL_RIGHT_FILENAME: String = js.native
-  @scala.inline
-  def MODEL_RIGHT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_RIGHT_FILENAME")(x.asInstanceOf[js.Any])
+  inline def MODEL_RIGHT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_RIGHT_FILENAME")(x.asInstanceOf[js.Any])
   
   /**
     * Base Url for the Quest controller model.
@@ -77,6 +73,5 @@ object WebXROculusTouchMotionController {
   @JSImport("babylonjs/index", "WebXROculusTouchMotionController.QUEST_MODEL_BASE_URL")
   @js.native
   def QUEST_MODEL_BASE_URL: String = js.native
-  @scala.inline
-  def QUEST_MODEL_BASE_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUEST_MODEL_BASE_URL")(x.asInstanceOf[js.Any])
+  inline def QUEST_MODEL_BASE_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUEST_MODEL_BASE_URL")(x.asInstanceOf[js.Any])
 }

@@ -3,7 +3,6 @@ package typings.babylonjs.indexMod
 import typings.babylonjs.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "Action")
@@ -26,22 +25,20 @@ class Action protected ()
 /* static members */
 object Action {
   
-  @JSImport("babylonjs/index", "Action._GetTargetProperty")
+  @JSImport("babylonjs/index", "Action")
   @js.native
-  def _GetTargetProperty(target: typings.babylonjs.nodeMod.Node): Name = js.native
+  val ^ : js.Any = js.native
+  
+  inline def _GetTargetProperty(target: typings.babylonjs.nodeMod.Node): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetTargetProperty")(target.asInstanceOf[js.Any]).asInstanceOf[Name]
   /**
     * Internal only
     * @hidden
     */
-  @JSImport("babylonjs/index", "Action._GetTargetProperty")
-  @js.native
-  def _GetTargetProperty(target: typings.babylonjs.sceneMod.Scene): Name = js.native
+  inline def _GetTargetProperty(target: typings.babylonjs.sceneMod.Scene): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetTargetProperty")(target.asInstanceOf[js.Any]).asInstanceOf[Name]
   
   /**
     * Internal only
     * @hidden
     */
-  @JSImport("babylonjs/index", "Action._SerializeValueAsString")
-  @js.native
-  def _SerializeValueAsString(value: js.Any): String = js.native
+  inline def _SerializeValueAsString(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_SerializeValueAsString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
 }

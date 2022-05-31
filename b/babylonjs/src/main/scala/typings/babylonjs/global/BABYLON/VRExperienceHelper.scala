@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.VRExperienceHelperOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.VRExperienceHelper")
 @js.native
 class VRExperienceHelper protected ()
-  extends typings.babylonjs.BABYLON.VRExperienceHelper {
+  extends StObject
+     with typings.babylonjs.BABYLON.VRExperienceHelper {
   /**
     * Instantiates a VRExperienceHelper.
     * Helps to quickly add VR support to an existing scene.

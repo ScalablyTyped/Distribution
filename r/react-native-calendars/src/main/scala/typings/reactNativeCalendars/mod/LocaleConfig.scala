@@ -397,7 +397,4 @@ object LocaleConfig {
     */
   /* static member */
   inline def today(): XDate = ^.asInstanceOf[js.Dynamic].applyDynamic("today")().asInstanceOf[XDate]
-  
-  /* static member */
-  object locales
 }

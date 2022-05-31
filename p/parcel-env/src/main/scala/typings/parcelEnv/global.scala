@@ -23,9 +23,4 @@ object global {
   @js.native
   def require: NodeRequire = js.native
   inline def require_=(x: NodeRequire): Unit = js.Dynamic.global.updateDynamic("require")(x.asInstanceOf[js.Any])
-  
-  /**
-  * Declare process variable
-  */
-  object NodeJS
 }

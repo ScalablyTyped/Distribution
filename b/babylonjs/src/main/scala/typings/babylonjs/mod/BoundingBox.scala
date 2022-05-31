@@ -3,7 +3,6 @@ package typings.babylonjs.mod
 import typings.babylonjs.typesMod.DeepImmutable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "BoundingBox")
@@ -29,18 +28,20 @@ class BoundingBox protected ()
 /* static members */
 object BoundingBox {
   
+  @JSImport("babylonjs", "BoundingBox")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Tests if two bounding boxes are intersections
     * @param box0 defines the first box to test
     * @param box1 defines the second box to test
     * @returns true if there is an intersection
     */
-  @JSImport("babylonjs", "BoundingBox.Intersects")
-  @js.native
-  def Intersects(
+  inline def Intersects(
     box0: DeepImmutable[typings.babylonjs.boundingBoxMod.BoundingBox],
     box1: DeepImmutable[typings.babylonjs.boundingBoxMod.BoundingBox]
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Intersects")(box0.asInstanceOf[js.Any], box1.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Tests if a bounding box defines by a min/max vectors intersects a sphere
@@ -50,14 +51,12 @@ object BoundingBox {
     * @param sphereRadius defines the sphere radius
     * @returns true if there is an intersection
     */
-  @JSImport("babylonjs", "BoundingBox.IntersectsSphere")
-  @js.native
-  def IntersectsSphere(
+  inline def IntersectsSphere(
     minPoint: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     maxPoint: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     sphereCenter: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     sphereRadius: Double
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("IntersectsSphere")(minPoint.asInstanceOf[js.Any], maxPoint.asInstanceOf[js.Any], sphereCenter.asInstanceOf[js.Any], sphereRadius.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Tests if a bounding box defined with 8 vectors is entirely inside frustum planes
@@ -65,12 +64,10 @@ object BoundingBox {
     * @param frustumPlanes defines the frustum planes to test
     * @return true if there is an inclusion
     */
-  @JSImport("babylonjs", "BoundingBox.IsCompletelyInFrustum")
-  @js.native
-  def IsCompletelyInFrustum(
+  inline def IsCompletelyInFrustum(
     boundingVectors: js.Array[DeepImmutable[typings.babylonjs.mathVectorMod.Vector3]],
     frustumPlanes: js.Array[DeepImmutable[typings.babylonjs.mathPlaneMod.Plane]]
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("IsCompletelyInFrustum")(boundingVectors.asInstanceOf[js.Any], frustumPlanes.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Tests if a bounding box defined with 8 vectors intersects frustum planes
@@ -78,12 +75,10 @@ object BoundingBox {
     * @param frustumPlanes defines the frustum planes to test
     * @return true if there is an intersection
     */
-  @JSImport("babylonjs", "BoundingBox.IsInFrustum")
-  @js.native
-  def IsInFrustum(
+  inline def IsInFrustum(
     boundingVectors: js.Array[DeepImmutable[typings.babylonjs.mathVectorMod.Vector3]],
     frustumPlanes: js.Array[DeepImmutable[typings.babylonjs.mathPlaneMod.Plane]]
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("IsInFrustum")(boundingVectors.asInstanceOf[js.Any], frustumPlanes.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("babylonjs", "BoundingBox.TmpVector3")
   @js.native

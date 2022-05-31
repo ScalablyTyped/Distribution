@@ -3,19 +3,20 @@ package typings.babylonjs.BABYLON
 import typings.babylonjs.anon.Minimum
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Geometry extends IGetSetVerticesData {
+trait Geometry
+  extends StObject
+     with IGetSetVerticesData {
   
-  var _applyToMesh: js.Any = js.native
+  /* private */ var _applyToMesh: js.Any = js.native
   
   /** @hidden */
   def _bind(effect: Nullable[Effect]): Unit = js.native
   def _bind(effect: Nullable[Effect], indexToBind: Nullable[DataBuffer]): Unit = js.native
   
-  var _boundingBias: js.Any = js.native
+  /* private */ var _boundingBias: js.Any = js.native
   
   /** @hidden */
   var _boundingInfo: Nullable[BoundingInfo] = js.native
@@ -24,34 +25,34 @@ trait Geometry extends IGetSetVerticesData {
   var _delayInfo: js.Array[String] = js.native
   
   /** @hidden */
-  var _delayLoadingFunction: Nullable[js.Function2[/* any */ _, /* geometry */ this.type, Unit]] = js.native
+  var _delayLoadingFunction: Nullable[js.Function2[/* any */ js.Any, /* geometry */ this.type, Unit]] = js.native
   
-  var _disposeVertexArrayObjects: js.Any = js.native
+  /* private */ var _disposeVertexArrayObjects: js.Any = js.native
   
-  var _engine: js.Any = js.native
+  /* private */ var _engine: js.Any = js.native
   
-  var _extend: js.Any = js.native
+  /* private */ var _extend: js.Any = js.native
   
   /** @hidden */
   def _generatePointsArray(): Boolean = js.native
   
-  var _indexBuffer: js.Any = js.native
+  /* private */ var _indexBuffer: js.Any = js.native
   
-  var _indexBufferIsUpdatable: js.Any = js.native
+  /* private */ var _indexBufferIsUpdatable: js.Any = js.native
   
   /** @hidden */
   var _indices: IndicesArray = js.native
   
-  var _isDisposed: js.Any = js.native
+  /* private */ var _isDisposed: js.Any = js.native
   
-  var _meshes: js.Any = js.native
+  /* private */ var _meshes: js.Any = js.native
   
   /** @hidden */
   var _positions: Nullable[js.Array[Vector3]] = js.native
   
-  var _positionsCache: js.Any = js.native
+  /* private */ var _positionsCache: js.Any = js.native
   
-  var _queueLoad: js.Any = js.native
+  /* private */ var _queueLoad: js.Any = js.native
   
   /** @hidden */
   def _rebuild(): Unit = js.native
@@ -63,20 +64,20 @@ trait Geometry extends IGetSetVerticesData {
   /** @hidden */
   def _resetPointsArrayCache(): Unit = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
   /** @hidden */
   var _softwareSkinningFrameId: Double = js.native
   
-  var _totalVertices: js.Any = js.native
+  /* private */ var _totalVertices: js.Any = js.native
   
-  var _updatable: js.Any = js.native
+  /* private */ var _updatable: js.Any = js.native
   
-  var _updateBoundingInfo: js.Any = js.native
+  /* private */ var _updateBoundingInfo: js.Any = js.native
   
-  var _updateExtend: js.Any = js.native
+  /* private */ var _updateExtend: js.Any = js.native
   
-  var _vertexArrayObjects: js.Any = js.native
+  /* private */ var _vertexArrayObjects: js.Any = js.native
   
   /** @hidden */
   var _vertexBuffers: org.scalablytyped.runtime.StringDictionary[VertexBuffer] = js.native
@@ -212,7 +213,7 @@ trait Geometry extends IGetSetVerticesData {
   /** Get the list of meshes using this geometry */
   def meshes: js.Array[Mesh] = js.native
   
-  var notifyUpdate: js.Any = js.native
+  /* private */ var notifyUpdate: js.Any = js.native
   
   /**
     * Callback called when the geometry is updated
@@ -261,6 +262,7 @@ trait Geometry extends IGetSetVerticesData {
     * @param updatable defines if the index buffer must be flagged as updatable (false by default)
     */
   def setIndices(indices: IndicesArray): Unit = js.native
+  def setIndices(indices: IndicesArray, totalVertices: Unit, updatable: Boolean): Unit = js.native
   
   /**
     * Affect a vertex buffer to the geometry. the vertexBuffer.getKind() function is used to determine where to store the data
@@ -278,15 +280,15 @@ trait Geometry extends IGetSetVerticesData {
     * @param stride defines the stride to use (0 by default). This value is deduced from the kind value if not specified
     */
   def setVerticesData(kind: String, data: FloatArray): Unit = js.native
-  def setVerticesData(kind: String, data: FloatArray, updatable: js.UndefOr[scala.Nothing], stride: Double): Unit = js.native
   def setVerticesData(kind: String, data: FloatArray, updatable: Boolean, stride: Double): Unit = js.native
+  def setVerticesData(kind: String, data: FloatArray, updatable: Unit, stride: Double): Unit = js.native
   
   /**
     * Invert the geometry to move from a right handed system to a left handed one.
     */
   def toLeftHanded(): Unit = js.native
   
-  var toNumberArray: js.Any = js.native
+  /* private */ var toNumberArray: js.Any = js.native
   
   /**
     * Gets or sets the unique ID of the geometry
@@ -300,9 +302,9 @@ trait Geometry extends IGetSetVerticesData {
     * @param gpuMemoryOnly defines a boolean indicating that only the GPU memory must be updated leaving the CPU version of the indices unchanged (false by default)
     */
   def updateIndices(indices: IndicesArray): Unit = js.native
-  def updateIndices(indices: IndicesArray, offset: js.UndefOr[scala.Nothing], gpuMemoryOnly: Boolean): Unit = js.native
   def updateIndices(indices: IndicesArray, offset: Double): Unit = js.native
   def updateIndices(indices: IndicesArray, offset: Double, gpuMemoryOnly: Boolean): Unit = js.native
+  def updateIndices(indices: IndicesArray, offset: Unit, gpuMemoryOnly: Boolean): Unit = js.native
   
   /**
     * Update a specific vertex buffer

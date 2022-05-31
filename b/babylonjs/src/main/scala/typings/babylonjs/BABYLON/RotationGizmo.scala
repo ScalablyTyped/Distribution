@@ -2,22 +2,23 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RotationGizmo extends Gizmo {
+trait RotationGizmo
+  extends StObject
+     with Gizmo {
   
   /* protected */ def _checkBillboardTransform(): Unit = js.native
   
   /** Node Caching for quick lookup */
-  var _gizmoAxisCache: js.Any = js.native
+  /* private */ var _gizmoAxisCache: js.Any = js.native
   
-  var _meshAttached: js.Any = js.native
+  /* private */ var _meshAttached: js.Any = js.native
   
-  var _nodeAttached: js.Any = js.native
+  /* private */ var _nodeAttached: js.Any = js.native
   
-  var _observables: js.Any = js.native
+  /* private */ var _observables: js.Any = js.native
   
   /**
     * Builds Gizmo Axis Cache to enable features such as hover state preservation and graying out other axis during manipulation
@@ -27,10 +28,10 @@ trait RotationGizmo extends Gizmo {
   def addToAxisCache(mesh: Mesh, cache: GizmoAxisCache): Unit = js.native
   
   /** Fires an event when any of it's sub gizmos are released from dragging */
-  var onDragEndObservable: Observable[_] = js.native
+  var onDragEndObservable: Observable[js.Any] = js.native
   
   /** Fires an event when any of it's sub gizmos are dragged */
-  var onDragStartObservable: Observable[_] = js.native
+  var onDragStartObservable: Observable[js.Any] = js.native
   
   def snapDistance: Double = js.native
   /**

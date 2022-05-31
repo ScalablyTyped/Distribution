@@ -2,30 +2,29 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LensFlareSystem extends StObject {
   
-  var _effect: js.Any = js.native
+  /* private */ var _effect: js.Any = js.native
   
-  var _emitter: js.Any = js.native
+  /* private */ var _emitter: js.Any = js.native
   
-  var _indexBuffer: js.Any = js.native
+  /* private */ var _indexBuffer: js.Any = js.native
   
-  var _isEnabled: js.Any = js.native
+  /* private */ var _isEnabled: js.Any = js.native
   
   /** @hidden */
   def _isVisible(): Boolean = js.native
   
-  var _positionX: js.Any = js.native
+  /* private */ var _positionX: js.Any = js.native
   
-  var _positionY: js.Any = js.native
+  /* private */ var _positionY: js.Any = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
-  var _vertexBuffers: js.Any = js.native
+  /* private */ var _vertexBuffers: js.Any = js.native
   
   /**
     * Define a limit from the border the lens flare can be visible.

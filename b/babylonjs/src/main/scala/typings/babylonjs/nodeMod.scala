@@ -18,14 +18,15 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeMod {
   
   @JSImport("babylonjs/node", "Node")
   @js.native
-  class Node protected () extends IBehaviorAware[Node] {
+  class Node protected ()
+    extends StObject
+       with IBehaviorAware[Node] {
     /**
       * Creates a new Node
       * @param name the name and id to be given to this node
@@ -37,9 +38,9 @@ object nodeMod {
     /** @hidden */
     def _addToSceneRootNodes(): Unit = js.native
     
-    var _animationPropertiesOverride: js.Any = js.native
+    /* private */ var _animationPropertiesOverride: js.Any = js.native
     
-    var _behaviors: js.Any = js.native
+    /* private */ var _behaviors: js.Any = js.native
     
     /** @hidden */
     var _cache: js.Any = js.native
@@ -47,30 +48,30 @@ object nodeMod {
     /** @hidden */
     var _childUpdateId: Double = js.native
     
-    var _children: js.Any = js.native
+    /* private */ var _children: js.Any = js.native
     
     /** @hidden */
     var _currentRenderId: Double = js.native
     
-    var _doNotSerialize: js.Any = js.native
+    /* private */ var _doNotSerialize: js.Any = js.native
     
     /** @hidden */
     def _getActionManagerForTrigger(): Nullable[AbstractActionManager] = js.native
-    def _getActionManagerForTrigger(trigger: js.UndefOr[scala.Nothing], initialCall: Boolean): Nullable[AbstractActionManager] = js.native
     def _getActionManagerForTrigger(trigger: Double): Nullable[AbstractActionManager] = js.native
     def _getActionManagerForTrigger(trigger: Double, initialCall: Boolean): Nullable[AbstractActionManager] = js.native
+    def _getActionManagerForTrigger(trigger: Unit, initialCall: Boolean): Nullable[AbstractActionManager] = js.native
     
     /** @hidden */
     def _getDescendants(results: js.Array[Node]): Unit = js.native
-    def _getDescendants(
-      results: js.Array[Node],
-      directDescendantsOnly: js.UndefOr[scala.Nothing],
-      predicate: js.Function1[/* node */ this.type, Boolean]
-    ): Unit = js.native
     def _getDescendants(results: js.Array[Node], directDescendantsOnly: Boolean): Unit = js.native
     def _getDescendants(
       results: js.Array[Node],
       directDescendantsOnly: Boolean,
+      predicate: js.Function1[/* node */ this.type, Boolean]
+    ): Unit = js.native
+    def _getDescendants(
+      results: js.Array[Node],
+      directDescendantsOnly: Unit,
       predicate: js.Function1[/* node */ this.type, Boolean]
     ): Unit = js.native
     
@@ -83,14 +84,14 @@ object nodeMod {
     /** @hidden */
     var _isDisposed: Boolean = js.native
     
-    var _isEnabled: js.Any = js.native
+    /* private */ var _isEnabled: js.Any = js.native
     
     /** @hidden */
     val _isNode: Boolean = js.native
     
-    var _isParentEnabled: js.Any = js.native
+    /* private */ var _isParentEnabled: js.Any = js.native
     
-    var _isReady: js.Any = js.native
+    /* private */ var _isReady: js.Any = js.native
     
     /** @hidden */
     def _isSynchronized(): Boolean = js.native
@@ -98,13 +99,13 @@ object nodeMod {
     /** @hidden */
     def _markSyncedWithParent(): Unit = js.native
     
-    var _onDisposeObserver: js.Any = js.native
+    /* private */ var _onDisposeObserver: js.Any = js.native
     
-    var _parentNode: js.Any = js.native
+    /* private */ var _parentNode: js.Any = js.native
     
-    var _parentUpdateId: js.Any = js.native
+    /* private */ var _parentUpdateId: js.Any = js.native
     
-    var _ranges: StringDictionary[Nullable[AnimationRange]] = js.native
+    /* protected */ var _ranges: StringDictionary[Nullable[AnimationRange]] = js.native
     
     /** @hidden */
     def _removeFromSceneRootNodes(): Unit = js.native
@@ -113,7 +114,7 @@ object nodeMod {
     var _scene: Scene = js.native
     
     /** @hidden */
-    var _sceneRootNodesIndex: js.Any = js.native
+    /* private */ var _sceneRootNodesIndex: js.Any = js.native
     
     /** @hidden */
     def _setReady(state: Boolean): Unit = js.native
@@ -137,6 +138,13 @@ object nodeMod {
     /** @hidden */
     var _worldMatrixDeterminantIsDirty: Boolean = js.native
     
+    /**
+      * Attach a behavior
+      * @param behavior defines the behavior to attach
+      * @returns the current host
+      */
+    /* CompleteClass */
+    override def addBehavior(behavior: Behavior[Node]): Node = js.native
     def addBehavior(behavior: Behavior[Node], attachImmediately: Boolean): Node = js.native
     
     /**
@@ -159,28 +167,13 @@ object nodeMod {
       * @returns the object created for this animation. If range does not exist, it will return null
       */
     def beginAnimation(name: String): Nullable[Animatable] = js.native
-    def beginAnimation(
-      name: String,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.Function0[Unit]
-    ): Nullable[Animatable] = js.native
-    def beginAnimation(name: String, loop: js.UndefOr[scala.Nothing], speedRatio: Double): Nullable[Animatable] = js.native
-    def beginAnimation(
-      name: String,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: Double,
-      onAnimationEnd: js.Function0[Unit]
-    ): Nullable[Animatable] = js.native
     def beginAnimation(name: String, loop: Boolean): Nullable[Animatable] = js.native
-    def beginAnimation(
-      name: String,
-      loop: Boolean,
-      speedRatio: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.Function0[Unit]
-    ): Nullable[Animatable] = js.native
     def beginAnimation(name: String, loop: Boolean, speedRatio: Double): Nullable[Animatable] = js.native
     def beginAnimation(name: String, loop: Boolean, speedRatio: Double, onAnimationEnd: js.Function0[Unit]): Nullable[Animatable] = js.native
+    def beginAnimation(name: String, loop: Boolean, speedRatio: Unit, onAnimationEnd: js.Function0[Unit]): Nullable[Animatable] = js.native
+    def beginAnimation(name: String, loop: Unit, speedRatio: Double): Nullable[Animatable] = js.native
+    def beginAnimation(name: String, loop: Unit, speedRatio: Double, onAnimationEnd: js.Function0[Unit]): Nullable[Animatable] = js.native
+    def beginAnimation(name: String, loop: Unit, speedRatio: Unit, onAnimationEnd: js.Function0[Unit]): Nullable[Animatable] = js.native
     
     /**
       * Gets the list of attached behaviors
@@ -218,9 +211,9 @@ object nodeMod {
       * @param disposeMaterialAndTextures Set to true to also dispose referenced materials and textures (false by default)
       */
     def dispose(): Unit = js.native
-    def dispose(doNotRecurse: js.UndefOr[scala.Nothing], disposeMaterialAndTextures: Boolean): Unit = js.native
     def dispose(doNotRecurse: Boolean): Unit = js.native
     def dispose(doNotRecurse: Boolean, disposeMaterialAndTextures: Boolean): Unit = js.native
+    def dispose(doNotRecurse: Unit, disposeMaterialAndTextures: Boolean): Unit = js.native
     
     /**
       * Gets or sets a boolean used to define if the node must be serialized
@@ -249,18 +242,23 @@ object nodeMod {
     def getAnimationRanges(): js.Array[Nullable[AnimationRange]] = js.native
     
     /**
+      * Gets a behavior using its name to search
+      * @param name defines the name to search
+      * @returns the behavior or null if not found
+      */
+    /* CompleteClass */
+    override def getBehaviorByName(name: String): Nullable[Behavior[Node]] = js.native
+    
+    /**
       * Get all child-meshes of this node
       * @param directDescendantsOnly defines if true only direct descendants of 'this' will be considered, if false direct and also indirect (children of children, an so on in a recursive manner) descendants of 'this' will be considered (Default: false)
       * @param predicate defines an optional predicate that will be called on every evaluated child, the predicate must return true for a given child to be part of the result, otherwise it will be ignored
       * @returns an array of AbstractMesh
       */
     def getChildMeshes(): js.Array[AbstractMesh] = js.native
-    def getChildMeshes(
-      directDescendantsOnly: js.UndefOr[scala.Nothing],
-      predicate: js.Function1[/* node */ this.type, Boolean]
-    ): js.Array[AbstractMesh] = js.native
     def getChildMeshes(directDescendantsOnly: Boolean): js.Array[AbstractMesh] = js.native
     def getChildMeshes(directDescendantsOnly: Boolean, predicate: js.Function1[/* node */ this.type, Boolean]): js.Array[AbstractMesh] = js.native
+    def getChildMeshes(directDescendantsOnly: Unit, predicate: js.Function1[/* node */ this.type, Boolean]): js.Array[AbstractMesh] = js.native
     
     /**
       * Get all direct children of this node
@@ -269,9 +267,9 @@ object nodeMod {
       * @returns an array of Node
       */
     def getChildren(): js.Array[Node] = js.native
-    def getChildren(predicate: js.UndefOr[scala.Nothing], directDescendantsOnly: Boolean): js.Array[Node] = js.native
     def getChildren(predicate: js.Function1[/* node */ this.type, Boolean]): js.Array[Node] = js.native
     def getChildren(predicate: js.Function1[/* node */ this.type, Boolean], directDescendantsOnly: Boolean): js.Array[Node] = js.native
+    def getChildren(predicate: Unit, directDescendantsOnly: Boolean): js.Array[Node] = js.native
     
     /**
       * Gets a string identifying the name of the class
@@ -286,12 +284,9 @@ object nodeMod {
       * @return all children nodes of all types
       */
     def getDescendants(): js.Array[Node] = js.native
-    def getDescendants(
-      directDescendantsOnly: js.UndefOr[scala.Nothing],
-      predicate: js.Function1[/* node */ this.type, Boolean]
-    ): js.Array[Node] = js.native
     def getDescendants(directDescendantsOnly: Boolean): js.Array[Node] = js.native
     def getDescendants(directDescendantsOnly: Boolean, predicate: js.Function1[/* node */ this.type, Boolean]): js.Array[Node] = js.native
+    def getDescendants(directDescendantsOnly: Unit, predicate: js.Function1[/* node */ this.type, Boolean]): js.Array[Node] = js.native
     
     /**
       * Gets the engine of the node
@@ -306,13 +301,13 @@ object nodeMod {
       * @returns the new bounding vectors
       */
     def getHierarchyBoundingVectors(): Max = js.native
-    def getHierarchyBoundingVectors(
-      includeDescendants: js.UndefOr[scala.Nothing],
-      predicate: Nullable[js.Function1[/* abstractMesh */ AbstractMesh, Boolean]]
-    ): Max = js.native
     def getHierarchyBoundingVectors(includeDescendants: Boolean): Max = js.native
     def getHierarchyBoundingVectors(
       includeDescendants: Boolean,
+      predicate: Nullable[js.Function1[/* abstractMesh */ AbstractMesh, Boolean]]
+    ): Max = js.native
+    def getHierarchyBoundingVectors(
+      includeDescendants: Unit,
       predicate: Nullable[js.Function1[/* abstractMesh */ AbstractMesh, Boolean]]
     ): Max = js.native
     
@@ -409,6 +404,14 @@ object nodeMod {
     def parent_=(parent: Nullable[Node]): Unit = js.native
     
     /**
+      * Remove a behavior from the current object
+      * @param behavior defines the behavior to detach
+      * @returns the current host
+      */
+    /* CompleteClass */
+    override def removeBehavior(behavior: Behavior[Node]): Node = js.native
+    
+    /**
       * For internal use only. Please do not use.
       */
     var reservedDataStore: js.Any = js.native
@@ -457,9 +460,7 @@ object nodeMod {
       * @param type defines the type name of the node to construct
       * @param constructorFunc defines the constructor function
       */
-    @JSImport("babylonjs/node", "Node.AddNodeConstructor")
-    @js.native
-    def AddNodeConstructor(`type`: String, constructorFunc: NodeConstructor): Unit = js.native
+    inline def AddNodeConstructor(`type`: String, constructorFunc: NodeConstructor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("AddNodeConstructor")(`type`.asInstanceOf[js.Any], constructorFunc.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Returns a node constructor based on type name
@@ -469,12 +470,8 @@ object nodeMod {
       * @param options defines optional options to transmit to constructors
       * @returns the new constructor or null
       */
-    @JSImport("babylonjs/node", "Node.Construct")
-    @js.native
-    def Construct(`type`: String, name: String, scene: Scene): Nullable[js.Function0[this.type]] = js.native
-    @JSImport("babylonjs/node", "Node.Construct")
-    @js.native
-    def Construct(`type`: String, name: String, scene: Scene, options: js.Any): Nullable[js.Function0[this.type]] = js.native
+    inline def Construct(`type`: String, name: String, scene: Scene): Nullable[js.Function0[this.type]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Construct")(`type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[js.Function0[this.type]]]
+    inline def Construct(`type`: String, name: String, scene: Scene, options: js.Any): Nullable[js.Function0[this.type]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Construct")(`type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Nullable[js.Function0[this.type]]]
     
     /**
       * Parse animation range data from a serialization object and store them into a given node
@@ -482,20 +479,15 @@ object nodeMod {
       * @param parsedNode defines the serialization object to read data from
       * @param scene defines the hosting scene
       */
-    @JSImport("babylonjs/node", "Node.ParseAnimationRanges")
-    @js.native
-    def ParseAnimationRanges(node: Node, parsedNode: js.Any, scene: Scene): Unit = js.native
+    inline def ParseAnimationRanges(node: Node, parsedNode: js.Any, scene: Scene): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseAnimationRanges")(node.asInstanceOf[js.Any], parsedNode.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** @hidden */
-    @JSImport("babylonjs/node", "Node._AnimationRangeFactory")
-    @js.native
-    def _AnimationRangeFactory(name: String, from: Double, to: Double): AnimationRange = js.native
+    inline def _AnimationRangeFactory(name: String, from: Double, to: Double): AnimationRange = (^.asInstanceOf[js.Dynamic].applyDynamic("_AnimationRangeFactory")(name.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[AnimationRange]
     
     @JSImport("babylonjs/node", "Node._NodeConstructors")
     @js.native
     def _NodeConstructors: js.Any = js.native
-    @scala.inline
-    def _NodeConstructors_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_NodeConstructors")(x.asInstanceOf[js.Any])
+    inline def _NodeConstructors_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_NodeConstructors")(x.asInstanceOf[js.Any])
   }
   
   type NodeConstructor = js.Function3[

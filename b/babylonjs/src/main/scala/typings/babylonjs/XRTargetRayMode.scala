@@ -2,7 +2,6 @@ package typings.babylonjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XRTargetRayMode extends StObject
 object XRTargetRayMode {
   
-  @scala.inline
-  def gaze: typings.babylonjs.babylonjsStrings.gaze = "gaze".asInstanceOf[typings.babylonjs.babylonjsStrings.gaze]
+  inline def gaze: typings.babylonjs.babylonjsStrings.gaze = "gaze".asInstanceOf[typings.babylonjs.babylonjsStrings.gaze]
   
-  @scala.inline
-  def screen: typings.babylonjs.babylonjsStrings.screen = "screen".asInstanceOf[typings.babylonjs.babylonjsStrings.screen]
+  inline def screen: typings.babylonjs.babylonjsStrings.screen = "screen".asInstanceOf[typings.babylonjs.babylonjsStrings.screen]
   
-  @scala.inline
-  def `tracked-pointer`: typings.babylonjs.babylonjsStrings.`tracked-pointer` = "tracked-pointer".asInstanceOf[typings.babylonjs.babylonjsStrings.`tracked-pointer`]
+  inline def `tracked-pointer`: typings.babylonjs.babylonjsStrings.`tracked-pointer` = "tracked-pointer".asInstanceOf[typings.babylonjs.babylonjsStrings.`tracked-pointer`]
 }

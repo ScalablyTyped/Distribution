@@ -49,9 +49,6 @@ object dialogMod {
     /** init */
     inline def setupDialogs(): Unit = js.Dynamic.global.applyDynamic("setupDialogs")().asInstanceOf[Unit]
     
-    /** All onscreen dialogs, keyed by their ID. */
-    object DIALOGS
-    
     // see https://jqueryui.com/dialog/
     trait DialogOptions extends StObject {
       

@@ -2,15 +2,16 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClearCoatBlock extends NodeMaterialBlock {
+trait ClearCoatBlock
+  extends StObject
+     with NodeMaterialBlock {
   
-  var _generateTBNSpace: js.Any = js.native
+  /* private */ var _generateTBNSpace: js.Any = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
   /**
     * Gets the clear coat object output component

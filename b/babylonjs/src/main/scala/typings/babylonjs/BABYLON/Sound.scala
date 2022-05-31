@@ -6,88 +6,87 @@ import typings.std.AudioNode
 import typings.std.GainNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Sound extends StObject {
   
-  var _audioBuffer: js.Any = js.native
+  /* private */ var _audioBuffer: js.Any = js.native
   
-  var _coneInnerAngle: js.Any = js.native
+  /* private */ var _coneInnerAngle: js.Any = js.native
   
-  var _coneOuterAngle: js.Any = js.native
+  /* private */ var _coneOuterAngle: js.Any = js.native
   
-  var _coneOuterGain: js.Any = js.native
+  /* private */ var _coneOuterGain: js.Any = js.native
   
-  var _connectedTransformNode: js.Any = js.native
+  /* private */ var _connectedTransformNode: js.Any = js.native
   
-  var _createSpatialParameters: js.Any = js.native
+  /* private */ var _createSpatialParameters: js.Any = js.native
   
-  var _customAttenuationFunction: js.Any = js.native
+  /* private */ var _customAttenuationFunction: js.Any = js.native
   
-  var _htmlAudioElement: js.Any = js.native
+  /* private */ var _htmlAudioElement: js.Any = js.native
   
-  var _inputAudioNode: js.Any = js.native
+  /* private */ var _inputAudioNode: js.Any = js.native
   
-  var _isDirectional: js.Any = js.native
+  /* private */ var _isDirectional: js.Any = js.native
   
-  var _isOutputConnected: js.Any = js.native
+  /* private */ var _isOutputConnected: js.Any = js.native
   
-  var _isReadyToPlay: js.Any = js.native
+  /* private */ var _isReadyToPlay: js.Any = js.native
   
-  var _length: js.Any = js.native
+  /* private */ var _length: js.Any = js.native
   
-  var _localDirection: js.Any = js.native
+  /* private */ var _localDirection: js.Any = js.native
   
-  var _offset: js.Any = js.native
+  /* private */ var _offset: js.Any = js.native
   
-  var _onRegisterAfterWorldMatrixUpdate: js.Any = js.native
+  /* private */ var _onRegisterAfterWorldMatrixUpdate: js.Any = js.native
   
-  var _onended: js.Any = js.native
+  /* private */ var _onended: js.Any = js.native
   
-  var _outputAudioNode: js.Any = js.native
+  /* private */ var _outputAudioNode: js.Any = js.native
   
-  var _panningModel: js.Any = js.native
+  /* private */ var _panningModel: js.Any = js.native
   
-  var _playbackRate: js.Any = js.native
+  /* private */ var _playbackRate: js.Any = js.native
   
-  var _position: js.Any = js.native
+  /* private */ var _position: js.Any = js.native
   
   /** @hidden */
   var _positionInEmitterSpace: Boolean = js.native
   
-  var _readyToPlayCallback: js.Any = js.native
+  /* private */ var _readyToPlayCallback: js.Any = js.native
   
-  var _registerFunc: js.Any = js.native
+  /* private */ var _registerFunc: js.Any = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
-  var _soundGain: js.Any = js.native
+  /* private */ var _soundGain: js.Any = js.native
   
-  var _soundLoaded: js.Any = js.native
+  /* private */ var _soundLoaded: js.Any = js.native
   
-  var _soundPanner: js.Any = js.native
+  /* private */ var _soundPanner: js.Any = js.native
   
-  var _soundSource: js.Any = js.native
+  /* private */ var _soundSource: js.Any = js.native
   
-  var _startOffset: js.Any = js.native
+  /* private */ var _startOffset: js.Any = js.native
   
-  var _startTime: js.Any = js.native
+  /* private */ var _startTime: js.Any = js.native
   
-  var _streaming: js.Any = js.native
+  /* private */ var _streaming: js.Any = js.native
   
-  var _streamingSource: js.Any = js.native
+  /* private */ var _streamingSource: js.Any = js.native
   
-  var _switchPanningModel: js.Any = js.native
+  /* private */ var _switchPanningModel: js.Any = js.native
   
-  var _updateDirection: js.Any = js.native
+  /* private */ var _updateDirection: js.Any = js.native
   
-  var _updateSpatialParameters: js.Any = js.native
+  /* private */ var _updateSpatialParameters: js.Any = js.native
   
-  var _urlType: js.Any = js.native
+  /* private */ var _urlType: js.Any = js.native
   
-  var _volume: js.Any = js.native
+  /* private */ var _volume: js.Any = js.native
   
   /**
     * Attach the sound to a dedicated mesh
@@ -231,13 +230,13 @@ trait Sound extends StObject {
     * @param length (optional) Sound duration (in seconds)
     */
   def play(): Unit = js.native
-  def play(time: js.UndefOr[scala.Nothing], offset: js.UndefOr[scala.Nothing], length: Double): Unit = js.native
-  def play(time: js.UndefOr[scala.Nothing], offset: Double): Unit = js.native
-  def play(time: js.UndefOr[scala.Nothing], offset: Double, length: Double): Unit = js.native
   def play(time: Double): Unit = js.native
-  def play(time: Double, offset: js.UndefOr[scala.Nothing], length: Double): Unit = js.native
   def play(time: Double, offset: Double): Unit = js.native
   def play(time: Double, offset: Double, length: Double): Unit = js.native
+  def play(time: Double, offset: Unit, length: Double): Unit = js.native
+  def play(time: Unit, offset: Double): Unit = js.native
+  def play(time: Unit, offset: Double, length: Double): Unit = js.native
+  def play(time: Unit, offset: Unit, length: Double): Unit = js.native
   
   /**
     * Define the reference distance the sound should be heard perfectly.

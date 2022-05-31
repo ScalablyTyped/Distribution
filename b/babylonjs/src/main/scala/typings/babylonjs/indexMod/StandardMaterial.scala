@@ -2,7 +2,6 @@ package typings.babylonjs.indexMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "StandardMaterial")
@@ -22,6 +21,10 @@ class StandardMaterial protected ()
 /* static members */
 object StandardMaterial {
   
+  @JSImport("babylonjs/index", "StandardMaterial")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a standard material from parsed material data
     * @param source defines the JSON representation of the material
@@ -29,7 +32,5 @@ object StandardMaterial {
     * @param rootUrl defines the root URL to use to load textures and relative dependencies
     * @returns a new standard material
     */
-  @JSImport("babylonjs/index", "StandardMaterial.Parse")
-  @js.native
-  def Parse(source: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.standardMaterialMod.StandardMaterial = js.native
+  inline def Parse(source: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.standardMaterialMod.StandardMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.standardMaterialMod.StandardMaterial]
 }

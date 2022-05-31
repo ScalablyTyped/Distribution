@@ -2,32 +2,31 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PointParticleEmitter extends IParticleEmitterType {
+trait PointParticleEmitter
+  extends StObject
+     with IParticleEmitterType {
   
   /**
     * Random direction of each particle after it has been emitted, between direction1 and direction2 vectors.
     */
-  var direction1: Vector3 = js.native
+  var direction1: Vector3
   
   /**
     * Random direction of each particle after it has been emitted, between direction1 and direction2 vectors.
     */
-  var direction2: Vector3 = js.native
+  var direction2: Vector3
   
   /**
     * Parse properties from a JSON object
     * @param serializationObject defines the JSON object
     */
-  def parse(serializationObject: js.Any): Unit = js.native
+  def parse(serializationObject: js.Any): Unit
 }
 object PointParticleEmitter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     applyToShader: Effect => Unit,
     direction1: Vector3,
     direction2: Vector3,
@@ -42,16 +41,12 @@ object PointParticleEmitter {
     __obj.asInstanceOf[PointParticleEmitter]
   }
   
-  @scala.inline
-  implicit class PointParticleEmitterMutableBuilder[Self <: PointParticleEmitter] (val x: Self) extends AnyVal {
+  extension [Self <: PointParticleEmitter](x: Self) {
     
-    @scala.inline
-    def setDirection1(value: Vector3): Self = StObject.set(x, "direction1", value.asInstanceOf[js.Any])
+    inline def setDirection1(value: Vector3): Self = StObject.set(x, "direction1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirection2(value: Vector3): Self = StObject.set(x, "direction2", value.asInstanceOf[js.Any])
+    inline def setDirection2(value: Vector3): Self = StObject.set(x, "direction2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParse(value: js.Any => Unit): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+    inline def setParse(value: js.Any => Unit): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
   }
 }

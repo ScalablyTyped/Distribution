@@ -4,7 +4,6 @@ import typings.materialTabIndicator.anon.PartialMDCTabIndicatorAda
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabIndicator {
@@ -27,7 +26,7 @@ object tabIndicator {
   @js.native
   class MDCTabIndicator protected ()
     extends typings.materialTabIndicator.mod.MDCTabIndicator {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialTabIndicator.foundationMod.MDCTabIndicatorFoundation,
@@ -37,9 +36,11 @@ object tabIndicator {
   /* static members */
   object MDCTabIndicator {
     
-    @JSImport("material-components-web", "tabIndicator.MDCTabIndicator.attachTo")
+    @JSImport("material-components-web", "tabIndicator.MDCTabIndicator")
     @js.native
-    def attachTo(root: Element): typings.materialTabIndicator.componentMod.MDCTabIndicator = js.native
+    val ^ : js.Any = js.native
+    
+    inline def attachTo(root: Element): typings.materialTabIndicator.componentMod.MDCTabIndicator = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTabIndicator.componentMod.MDCTabIndicator]
   }
   
   @JSImport("material-components-web", "tabIndicator.MDCTabIndicatorFoundation")
@@ -80,20 +81,17 @@ object tabIndicator {
     @JSImport("material-components-web", "tabIndicator.cssClasses.ACTIVE")
     @js.native
     def ACTIVE: String = js.native
-    @scala.inline
-    def ACTIVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACTIVE")(x.asInstanceOf[js.Any])
+    inline def ACTIVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACTIVE")(x.asInstanceOf[js.Any])
     
     @JSImport("material-components-web", "tabIndicator.cssClasses.FADE")
     @js.native
     def FADE: String = js.native
-    @scala.inline
-    def FADE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FADE")(x.asInstanceOf[js.Any])
+    inline def FADE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FADE")(x.asInstanceOf[js.Any])
     
     @JSImport("material-components-web", "tabIndicator.cssClasses.NO_TRANSITION")
     @js.native
     def NO_TRANSITION: String = js.native
-    @scala.inline
-    def NO_TRANSITION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_TRANSITION")(x.asInstanceOf[js.Any])
+    inline def NO_TRANSITION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_TRANSITION")(x.asInstanceOf[js.Any])
   }
   
   object strings {
@@ -105,7 +103,6 @@ object tabIndicator {
     @JSImport("material-components-web", "tabIndicator.strings.CONTENT_SELECTOR")
     @js.native
     def CONTENT_SELECTOR: String = js.native
-    @scala.inline
-    def CONTENT_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONTENT_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def CONTENT_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONTENT_SELECTOR")(x.asInstanceOf[js.Any])
   }
 }

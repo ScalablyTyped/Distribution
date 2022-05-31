@@ -113,7 +113,6 @@ import typings.std.ProgressEvent
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sceneMod {
@@ -144,9 +143,9 @@ object sceneMod {
     /** @hidden */
     var _activeIndices: PerfCounter = js.native
     
-    var _activeMesh: js.Any = js.native
+    /* private */ var _activeMesh: js.Any = js.native
     
-    var _activeMeshes: js.Any = js.native
+    /* private */ var _activeMeshes: js.Any = js.native
     
     /** @hidden */
     var _activeMeshesFrozen: Boolean = js.native
@@ -157,9 +156,9 @@ object sceneMod {
     /** @hidden */
     var _activeParticles: PerfCounter = js.native
     
-    var _activeRequests: js.Any = js.native
+    /* private */ var _activeRequests: js.Any = js.native
     
-    var _activeSkeletons: js.Any = js.native
+    /* private */ var _activeSkeletons: js.Any = js.native
     
     /**
       * @hidden
@@ -212,9 +211,9 @@ object sceneMod {
     /** @hidden */
     def _animate(): Unit = js.native
     
-    var _animationPropertiesOverride: js.Any = js.native
+    /* private */ var _animationPropertiesOverride: js.Any = js.native
     
-    var _animationRatio: js.Any = js.native
+    /* private */ var _animationRatio: js.Any = js.native
     
     /** @hidden */
     var _animationTime: Double = js.native
@@ -264,12 +263,12 @@ object sceneMod {
       */
     var _beforeRenderingMeshStage: Stage[RenderingMeshStageAction] = js.native
     
-    var _bindFrameBuffer: js.Any = js.native
+    /* private */ var _bindFrameBuffer: js.Any = js.native
     
     /** @hidden */
     var _blockEntityCollection: Boolean = js.native
     
-    var _blockMaterialDirtyMechanism: js.Any = js.native
+    /* private */ var _blockMaterialDirtyMechanism: js.Any = js.native
     
     /** @hidden (Backing field) */
     var _boundingBoxRenderer: BoundingBoxRenderer = js.native
@@ -292,12 +291,12 @@ object sceneMod {
       */
     var _cameraDrawRenderTargetStage: Stage[CameraStageFrameBufferAction] = js.native
     
-    var _checkIntersections: js.Any = js.native
+    /* private */ var _checkIntersections: js.Any = js.native
     
     /** @hidden */
     def _checkIsReady(): Unit = js.native
     
-    var _collisionCoordinator: js.Any = js.native
+    /* private */ var _collisionCoordinator: js.Any = js.native
     
     /**
       * @hidden
@@ -308,11 +307,11 @@ object sceneMod {
     /** @hidden */
     def _createMultiviewUbo(): Unit = js.native
     
-    var _createUbo: js.Any = js.native
+    /* private */ var _createUbo: js.Any = js.native
     
-    var _currentInternalStep: js.Any = js.native
+    /* private */ var _currentInternalStep: js.Any = js.native
     
-    var _currentStepId: js.Any = js.native
+    /* private */ var _currentStepId: js.Any = js.native
     
     /**
       * @hidden
@@ -320,11 +319,11 @@ object sceneMod {
       */
     var _debugLayer: DebugLayer = js.native
     
-    var _defaultMaterial: js.Any = js.native
+    /* private */ var _defaultMaterial: js.Any = js.native
     
-    var _defaultMeshCandidates: js.Any = js.native
+    /* private */ var _defaultMeshCandidates: js.Any = js.native
     
-    var _defaultSubMeshCandidates: js.Any = js.native
+    /* private */ var _defaultSubMeshCandidates: js.Any = js.native
     
     /** @hidden (Backing field) */
     var _depthRenderer: StringDictionary[DepthRenderer] = js.native
@@ -332,14 +331,14 @@ object sceneMod {
     /** @hidden */
     var _edgeRenderLineShader: Nullable[ShaderMaterial] = js.native
     
-    var _engine: js.Any = js.native
+    /* private */ var _engine: js.Any = js.native
     
     /** @hidden */
-    var _environmentIntensity: Double = js.native
+    /* protected */ var _environmentIntensity: Double = js.native
     
-    var _evaluateActiveMeshes: js.Any = js.native
+    /* private */ var _evaluateActiveMeshes: js.Any = js.native
     
-    var _evaluateSubMesh: js.Any = js.native
+    /* private */ var _evaluateSubMesh: js.Any = js.native
     
     /**
       * @hidden
@@ -347,27 +346,27 @@ object sceneMod {
       */
     var _evaluateSubMeshStage: Stage[EvaluateSubMeshStageAction] = js.native
     
-    var _executeOnceBeforeRender: js.Any = js.native
+    /* private */ var _executeOnceBeforeRender: js.Any = js.native
     
-    var _executeWhenReadyTimeoutId: js.Any = js.native
+    /* private */ var _executeWhenReadyTimeoutId: js.Any = js.native
     
-    var _externalData: js.Any = js.native
+    /* private */ var _externalData: js.Any = js.native
     
-    var _fogEnabled: js.Any = js.native
+    /* private */ var _fogEnabled: js.Any = js.native
     
-    var _fogMode: js.Any = js.native
+    /* private */ var _fogMode: js.Any = js.native
     
-    var _forcePointsCloud: js.Any = js.native
+    /* private */ var _forcePointsCloud: js.Any = js.native
     
     /** @hidden (Backing field) */
     var _forceShowBoundingBoxes: Boolean = js.native
     
-    var _forceWireframe: js.Any = js.native
+    /* private */ var _forceWireframe: js.Any = js.native
     
     /** @hidden */
     var _forcedViewPosition: Nullable[Vector3] = js.native
     
-    var _frameId: js.Any = js.native
+    /* private */ var _frameId: js.Any = js.native
     
     /** @hidden */
     var _frustumPlanes: js.Array[Plane] = js.native
@@ -390,7 +389,7 @@ object sceneMod {
     /** @hidden (Backing field) */
     var _geometryBufferRenderer: Nullable[GeometryBufferRenderer] = js.native
     
-    var _getByTags: js.Any = js.native
+    /* private */ var _getByTags: js.Any = js.native
     
     /**
       * @hidden
@@ -410,86 +409,41 @@ object sceneMod {
       */
     def _getDefaultSubMeshCandidates(mesh: AbstractMesh): ISmartArrayLike[SubMesh] = js.native
     
-    var _getGeometryByUniqueID: js.Any = js.native
+    /* private */ var _getGeometryByUniqueID: js.Any = js.native
     
     /** @hidden */
-    var _imageProcessingConfiguration: ImageProcessingConfiguration = js.native
+    /* protected */ var _imageProcessingConfiguration: ImageProcessingConfiguration = js.native
     
     /** @hidden */
     var _inputManager: InputManager = js.native
     
-    var _intermediateRendering: js.Any = js.native
+    /* private */ var _intermediateRendering: js.Any = js.native
     
     /** @hidden */
     def _internalMultiPick(rayFunction: js.Function1[/* world */ Matrix, Ray]): Nullable[js.Array[PickingInfo]] = js.native
     def _internalMultiPick(
       rayFunction: js.Function1[/* world */ Matrix, Ray],
-      predicate: js.UndefOr[scala.Nothing],
-      trianglePredicate: TrianglePickingPredicate
-    ): Nullable[js.Array[PickingInfo]] = js.native
-    def _internalMultiPick(
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
       predicate: js.Function1[/* mesh */ AbstractMesh, Boolean]
     ): Nullable[js.Array[PickingInfo]] = js.native
     def _internalMultiPick(
       rayFunction: js.Function1[/* world */ Matrix, Ray],
       predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
+      trianglePredicate: TrianglePickingPredicate
+    ): Nullable[js.Array[PickingInfo]] = js.native
+    def _internalMultiPick(
+      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      predicate: Unit,
       trianglePredicate: TrianglePickingPredicate
     ): Nullable[js.Array[PickingInfo]] = js.native
     
     /** @hidden */
     def _internalMultiPickSprites(ray: Ray): Nullable[js.Array[PickingInfo]] = js.native
-    def _internalMultiPickSprites(ray: Ray, predicate: js.UndefOr[scala.Nothing], camera: Camera): Nullable[js.Array[PickingInfo]] = js.native
     def _internalMultiPickSprites(ray: Ray, predicate: js.Function1[/* sprite */ Sprite, Boolean]): Nullable[js.Array[PickingInfo]] = js.native
     def _internalMultiPickSprites(ray: Ray, predicate: js.Function1[/* sprite */ Sprite, Boolean], camera: Camera): Nullable[js.Array[PickingInfo]] = js.native
+    def _internalMultiPickSprites(ray: Ray, predicate: Unit, camera: Camera): Nullable[js.Array[PickingInfo]] = js.native
     
     /** @hidden */
     def _internalPick(rayFunction: js.Function1[/* world */ Matrix, Ray]): Nullable[PickingInfo] = js.native
-    def _internalPick(
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
-      predicate: js.UndefOr[scala.Nothing],
-      fastCheck: js.UndefOr[scala.Nothing],
-      onlyBoundingInfo: js.UndefOr[scala.Nothing],
-      trianglePredicate: TrianglePickingPredicate
-    ): Nullable[PickingInfo] = js.native
-    def _internalPick(
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
-      predicate: js.UndefOr[scala.Nothing],
-      fastCheck: js.UndefOr[scala.Nothing],
-      onlyBoundingInfo: Boolean
-    ): Nullable[PickingInfo] = js.native
-    def _internalPick(
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
-      predicate: js.UndefOr[scala.Nothing],
-      fastCheck: js.UndefOr[scala.Nothing],
-      onlyBoundingInfo: Boolean,
-      trianglePredicate: TrianglePickingPredicate
-    ): Nullable[PickingInfo] = js.native
-    def _internalPick(
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
-      predicate: js.UndefOr[scala.Nothing],
-      fastCheck: Boolean
-    ): Nullable[PickingInfo] = js.native
-    def _internalPick(
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
-      predicate: js.UndefOr[scala.Nothing],
-      fastCheck: Boolean,
-      onlyBoundingInfo: js.UndefOr[scala.Nothing],
-      trianglePredicate: TrianglePickingPredicate
-    ): Nullable[PickingInfo] = js.native
-    def _internalPick(
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
-      predicate: js.UndefOr[scala.Nothing],
-      fastCheck: Boolean,
-      onlyBoundingInfo: Boolean
-    ): Nullable[PickingInfo] = js.native
-    def _internalPick(
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
-      predicate: js.UndefOr[scala.Nothing],
-      fastCheck: Boolean,
-      onlyBoundingInfo: Boolean,
-      trianglePredicate: TrianglePickingPredicate
-    ): Nullable[PickingInfo] = js.native
     def _internalPick(
       rayFunction: js.Function1[/* world */ Matrix, Ray],
       predicate: js.Function1[/* mesh */ AbstractMesh, Boolean]
@@ -497,39 +451,12 @@ object sceneMod {
     def _internalPick(
       rayFunction: js.Function1[/* world */ Matrix, Ray],
       predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
-      fastCheck: js.UndefOr[scala.Nothing],
-      onlyBoundingInfo: js.UndefOr[scala.Nothing],
-      trianglePredicate: TrianglePickingPredicate
-    ): Nullable[PickingInfo] = js.native
-    def _internalPick(
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
-      predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
-      fastCheck: js.UndefOr[scala.Nothing],
-      onlyBoundingInfo: Boolean
-    ): Nullable[PickingInfo] = js.native
-    def _internalPick(
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
-      predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
-      fastCheck: js.UndefOr[scala.Nothing],
-      onlyBoundingInfo: Boolean,
-      trianglePredicate: TrianglePickingPredicate
-    ): Nullable[PickingInfo] = js.native
-    def _internalPick(
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
-      predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
       fastCheck: Boolean
     ): Nullable[PickingInfo] = js.native
     def _internalPick(
       rayFunction: js.Function1[/* world */ Matrix, Ray],
       predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
       fastCheck: Boolean,
-      onlyBoundingInfo: js.UndefOr[scala.Nothing],
-      trianglePredicate: TrianglePickingPredicate
-    ): Nullable[PickingInfo] = js.native
-    def _internalPick(
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
-      predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
-      fastCheck: Boolean,
       onlyBoundingInfo: Boolean
     ): Nullable[PickingInfo] = js.native
     def _internalPick(
@@ -537,6 +464,74 @@ object sceneMod {
       predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
       fastCheck: Boolean,
       onlyBoundingInfo: Boolean,
+      trianglePredicate: TrianglePickingPredicate
+    ): Nullable[PickingInfo] = js.native
+    def _internalPick(
+      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
+      fastCheck: Boolean,
+      onlyBoundingInfo: Unit,
+      trianglePredicate: TrianglePickingPredicate
+    ): Nullable[PickingInfo] = js.native
+    def _internalPick(
+      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
+      fastCheck: Unit,
+      onlyBoundingInfo: Boolean
+    ): Nullable[PickingInfo] = js.native
+    def _internalPick(
+      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
+      fastCheck: Unit,
+      onlyBoundingInfo: Boolean,
+      trianglePredicate: TrianglePickingPredicate
+    ): Nullable[PickingInfo] = js.native
+    def _internalPick(
+      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
+      fastCheck: Unit,
+      onlyBoundingInfo: Unit,
+      trianglePredicate: TrianglePickingPredicate
+    ): Nullable[PickingInfo] = js.native
+    def _internalPick(rayFunction: js.Function1[/* world */ Matrix, Ray], predicate: Unit, fastCheck: Boolean): Nullable[PickingInfo] = js.native
+    def _internalPick(
+      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      predicate: Unit,
+      fastCheck: Boolean,
+      onlyBoundingInfo: Boolean
+    ): Nullable[PickingInfo] = js.native
+    def _internalPick(
+      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      predicate: Unit,
+      fastCheck: Boolean,
+      onlyBoundingInfo: Boolean,
+      trianglePredicate: TrianglePickingPredicate
+    ): Nullable[PickingInfo] = js.native
+    def _internalPick(
+      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      predicate: Unit,
+      fastCheck: Boolean,
+      onlyBoundingInfo: Unit,
+      trianglePredicate: TrianglePickingPredicate
+    ): Nullable[PickingInfo] = js.native
+    def _internalPick(
+      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      predicate: Unit,
+      fastCheck: Unit,
+      onlyBoundingInfo: Boolean
+    ): Nullable[PickingInfo] = js.native
+    def _internalPick(
+      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      predicate: Unit,
+      fastCheck: Unit,
+      onlyBoundingInfo: Boolean,
+      trianglePredicate: TrianglePickingPredicate
+    ): Nullable[PickingInfo] = js.native
+    def _internalPick(
+      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      predicate: Unit,
+      fastCheck: Unit,
+      onlyBoundingInfo: Unit,
       trianglePredicate: TrianglePickingPredicate
     ): Nullable[PickingInfo] = js.native
     
@@ -552,72 +547,6 @@ object sceneMod {
       rayFunction: js.Function1[/* world */ Matrix, Ray],
       mesh: AbstractMesh,
       world: Matrix,
-      fastCheck: js.UndefOr[scala.Nothing],
-      onlyBoundingInfo: js.UndefOr[scala.Nothing],
-      trianglePredicate: js.UndefOr[scala.Nothing],
-      skipBoundingInfo: Boolean
-    ): Nullable[PickingInfo] = js.native
-    def _internalPickForMesh(
-      pickingInfo: Nullable[PickingInfo],
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
-      mesh: AbstractMesh,
-      world: Matrix,
-      fastCheck: js.UndefOr[scala.Nothing],
-      onlyBoundingInfo: js.UndefOr[scala.Nothing],
-      trianglePredicate: TrianglePickingPredicate
-    ): Nullable[PickingInfo] = js.native
-    def _internalPickForMesh(
-      pickingInfo: Nullable[PickingInfo],
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
-      mesh: AbstractMesh,
-      world: Matrix,
-      fastCheck: js.UndefOr[scala.Nothing],
-      onlyBoundingInfo: js.UndefOr[scala.Nothing],
-      trianglePredicate: TrianglePickingPredicate,
-      skipBoundingInfo: Boolean
-    ): Nullable[PickingInfo] = js.native
-    def _internalPickForMesh(
-      pickingInfo: Nullable[PickingInfo],
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
-      mesh: AbstractMesh,
-      world: Matrix,
-      fastCheck: js.UndefOr[scala.Nothing],
-      onlyBoundingInfo: Boolean
-    ): Nullable[PickingInfo] = js.native
-    def _internalPickForMesh(
-      pickingInfo: Nullable[PickingInfo],
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
-      mesh: AbstractMesh,
-      world: Matrix,
-      fastCheck: js.UndefOr[scala.Nothing],
-      onlyBoundingInfo: Boolean,
-      trianglePredicate: js.UndefOr[scala.Nothing],
-      skipBoundingInfo: Boolean
-    ): Nullable[PickingInfo] = js.native
-    def _internalPickForMesh(
-      pickingInfo: Nullable[PickingInfo],
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
-      mesh: AbstractMesh,
-      world: Matrix,
-      fastCheck: js.UndefOr[scala.Nothing],
-      onlyBoundingInfo: Boolean,
-      trianglePredicate: TrianglePickingPredicate
-    ): Nullable[PickingInfo] = js.native
-    def _internalPickForMesh(
-      pickingInfo: Nullable[PickingInfo],
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
-      mesh: AbstractMesh,
-      world: Matrix,
-      fastCheck: js.UndefOr[scala.Nothing],
-      onlyBoundingInfo: Boolean,
-      trianglePredicate: TrianglePickingPredicate,
-      skipBoundingInfo: Boolean
-    ): Nullable[PickingInfo] = js.native
-    def _internalPickForMesh(
-      pickingInfo: Nullable[PickingInfo],
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
-      mesh: AbstractMesh,
-      world: Matrix,
       fastCheck: Boolean
     ): Nullable[PickingInfo] = js.native
     def _internalPickForMesh(
@@ -626,35 +555,6 @@ object sceneMod {
       mesh: AbstractMesh,
       world: Matrix,
       fastCheck: Boolean,
-      onlyBoundingInfo: js.UndefOr[scala.Nothing],
-      trianglePredicate: js.UndefOr[scala.Nothing],
-      skipBoundingInfo: Boolean
-    ): Nullable[PickingInfo] = js.native
-    def _internalPickForMesh(
-      pickingInfo: Nullable[PickingInfo],
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
-      mesh: AbstractMesh,
-      world: Matrix,
-      fastCheck: Boolean,
-      onlyBoundingInfo: js.UndefOr[scala.Nothing],
-      trianglePredicate: TrianglePickingPredicate
-    ): Nullable[PickingInfo] = js.native
-    def _internalPickForMesh(
-      pickingInfo: Nullable[PickingInfo],
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
-      mesh: AbstractMesh,
-      world: Matrix,
-      fastCheck: Boolean,
-      onlyBoundingInfo: js.UndefOr[scala.Nothing],
-      trianglePredicate: TrianglePickingPredicate,
-      skipBoundingInfo: Boolean
-    ): Nullable[PickingInfo] = js.native
-    def _internalPickForMesh(
-      pickingInfo: Nullable[PickingInfo],
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
-      mesh: AbstractMesh,
-      world: Matrix,
-      fastCheck: Boolean,
       onlyBoundingInfo: Boolean
     ): Nullable[PickingInfo] = js.native
     def _internalPickForMesh(
@@ -664,7 +564,7 @@ object sceneMod {
       world: Matrix,
       fastCheck: Boolean,
       onlyBoundingInfo: Boolean,
-      trianglePredicate: js.UndefOr[scala.Nothing],
+      trianglePredicate: Unit,
       skipBoundingInfo: Boolean
     ): Nullable[PickingInfo] = js.native
     def _internalPickForMesh(
@@ -686,24 +586,105 @@ object sceneMod {
       trianglePredicate: TrianglePickingPredicate,
       skipBoundingInfo: Boolean
     ): Nullable[PickingInfo] = js.native
+    def _internalPickForMesh(
+      pickingInfo: Nullable[PickingInfo],
+      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      mesh: AbstractMesh,
+      world: Matrix,
+      fastCheck: Boolean,
+      onlyBoundingInfo: Unit,
+      trianglePredicate: Unit,
+      skipBoundingInfo: Boolean
+    ): Nullable[PickingInfo] = js.native
+    def _internalPickForMesh(
+      pickingInfo: Nullable[PickingInfo],
+      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      mesh: AbstractMesh,
+      world: Matrix,
+      fastCheck: Boolean,
+      onlyBoundingInfo: Unit,
+      trianglePredicate: TrianglePickingPredicate
+    ): Nullable[PickingInfo] = js.native
+    def _internalPickForMesh(
+      pickingInfo: Nullable[PickingInfo],
+      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      mesh: AbstractMesh,
+      world: Matrix,
+      fastCheck: Boolean,
+      onlyBoundingInfo: Unit,
+      trianglePredicate: TrianglePickingPredicate,
+      skipBoundingInfo: Boolean
+    ): Nullable[PickingInfo] = js.native
+    def _internalPickForMesh(
+      pickingInfo: Nullable[PickingInfo],
+      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      mesh: AbstractMesh,
+      world: Matrix,
+      fastCheck: Unit,
+      onlyBoundingInfo: Boolean
+    ): Nullable[PickingInfo] = js.native
+    def _internalPickForMesh(
+      pickingInfo: Nullable[PickingInfo],
+      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      mesh: AbstractMesh,
+      world: Matrix,
+      fastCheck: Unit,
+      onlyBoundingInfo: Boolean,
+      trianglePredicate: Unit,
+      skipBoundingInfo: Boolean
+    ): Nullable[PickingInfo] = js.native
+    def _internalPickForMesh(
+      pickingInfo: Nullable[PickingInfo],
+      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      mesh: AbstractMesh,
+      world: Matrix,
+      fastCheck: Unit,
+      onlyBoundingInfo: Boolean,
+      trianglePredicate: TrianglePickingPredicate
+    ): Nullable[PickingInfo] = js.native
+    def _internalPickForMesh(
+      pickingInfo: Nullable[PickingInfo],
+      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      mesh: AbstractMesh,
+      world: Matrix,
+      fastCheck: Unit,
+      onlyBoundingInfo: Boolean,
+      trianglePredicate: TrianglePickingPredicate,
+      skipBoundingInfo: Boolean
+    ): Nullable[PickingInfo] = js.native
+    def _internalPickForMesh(
+      pickingInfo: Nullable[PickingInfo],
+      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      mesh: AbstractMesh,
+      world: Matrix,
+      fastCheck: Unit,
+      onlyBoundingInfo: Unit,
+      trianglePredicate: Unit,
+      skipBoundingInfo: Boolean
+    ): Nullable[PickingInfo] = js.native
+    def _internalPickForMesh(
+      pickingInfo: Nullable[PickingInfo],
+      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      mesh: AbstractMesh,
+      world: Matrix,
+      fastCheck: Unit,
+      onlyBoundingInfo: Unit,
+      trianglePredicate: TrianglePickingPredicate
+    ): Nullable[PickingInfo] = js.native
+    def _internalPickForMesh(
+      pickingInfo: Nullable[PickingInfo],
+      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      mesh: AbstractMesh,
+      world: Matrix,
+      fastCheck: Unit,
+      onlyBoundingInfo: Unit,
+      trianglePredicate: TrianglePickingPredicate,
+      skipBoundingInfo: Boolean
+    ): Nullable[PickingInfo] = js.native
     
     /** @hidden */
     def _internalPickSprites(ray: Ray): Nullable[PickingInfo] = js.native
-    def _internalPickSprites(
-      ray: Ray,
-      predicate: js.UndefOr[scala.Nothing],
-      fastCheck: js.UndefOr[scala.Nothing],
-      camera: Camera
-    ): Nullable[PickingInfo] = js.native
-    def _internalPickSprites(ray: Ray, predicate: js.UndefOr[scala.Nothing], fastCheck: Boolean): Nullable[PickingInfo] = js.native
-    def _internalPickSprites(ray: Ray, predicate: js.UndefOr[scala.Nothing], fastCheck: Boolean, camera: Camera): Nullable[PickingInfo] = js.native
     def _internalPickSprites(ray: Ray, predicate: js.Function1[/* sprite */ Sprite, Boolean]): Nullable[PickingInfo] = js.native
-    def _internalPickSprites(
-      ray: Ray,
-      predicate: js.Function1[/* sprite */ Sprite, Boolean],
-      fastCheck: js.UndefOr[scala.Nothing],
-      camera: Camera
-    ): Nullable[PickingInfo] = js.native
     def _internalPickSprites(ray: Ray, predicate: js.Function1[/* sprite */ Sprite, Boolean], fastCheck: Boolean): Nullable[PickingInfo] = js.native
     def _internalPickSprites(
       ray: Ray,
@@ -711,8 +692,12 @@ object sceneMod {
       fastCheck: Boolean,
       camera: Camera
     ): Nullable[PickingInfo] = js.native
+    def _internalPickSprites(ray: Ray, predicate: js.Function1[/* sprite */ Sprite, Boolean], fastCheck: Unit, camera: Camera): Nullable[PickingInfo] = js.native
+    def _internalPickSprites(ray: Ray, predicate: Unit, fastCheck: Boolean): Nullable[PickingInfo] = js.native
+    def _internalPickSprites(ray: Ray, predicate: Unit, fastCheck: Boolean, camera: Camera): Nullable[PickingInfo] = js.native
+    def _internalPickSprites(ray: Ray, predicate: Unit, fastCheck: Unit, camera: Camera): Nullable[PickingInfo] = js.native
     
-    var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: js.Any = js.native
     
     /** @hidden */
     def _isInIntermediateRendering(): Boolean = js.native
@@ -726,80 +711,12 @@ object sceneMod {
     /** @hidden */
     val _isScene: Boolean = js.native
     
-    var _lightsEnabled: js.Any = js.native
+    /* private */ var _lightsEnabled: js.Any = js.native
     
     /** @hidden */
     def _loadFile(
       url: String,
       onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit]
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      useOfflineSupport: js.UndefOr[scala.Nothing],
-      useArrayBuffer: js.UndefOr[scala.Nothing],
-      onError: js.Function2[
-          /* request */ js.UndefOr[WebRequest], 
-          /* exception */ js.UndefOr[LoadFileError], 
-          Unit
-        ]
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      useOfflineSupport: js.UndefOr[scala.Nothing],
-      useArrayBuffer: Boolean
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      useOfflineSupport: js.UndefOr[scala.Nothing],
-      useArrayBuffer: Boolean,
-      onError: js.Function2[
-          /* request */ js.UndefOr[WebRequest], 
-          /* exception */ js.UndefOr[LoadFileError], 
-          Unit
-        ]
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      useOfflineSupport: Boolean
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      useOfflineSupport: Boolean,
-      useArrayBuffer: js.UndefOr[scala.Nothing],
-      onError: js.Function2[
-          /* request */ js.UndefOr[WebRequest], 
-          /* exception */ js.UndefOr[LoadFileError], 
-          Unit
-        ]
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      useOfflineSupport: Boolean,
-      useArrayBuffer: Boolean
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      useOfflineSupport: Boolean,
-      useArrayBuffer: Boolean,
-      onError: js.Function2[
-          /* request */ js.UndefOr[WebRequest], 
-          /* exception */ js.UndefOr[LoadFileError], 
-          Unit
-        ]
     ): IFileRequest = js.native
     def _loadFile(
       url: String,
@@ -810,37 +727,6 @@ object sceneMod {
       url: String,
       onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-      useOfflineSupport: js.UndefOr[scala.Nothing],
-      useArrayBuffer: js.UndefOr[scala.Nothing],
-      onError: js.Function2[
-          /* request */ js.UndefOr[WebRequest], 
-          /* exception */ js.UndefOr[LoadFileError], 
-          Unit
-        ]
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-      useOfflineSupport: js.UndefOr[scala.Nothing],
-      useArrayBuffer: Boolean
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-      useOfflineSupport: js.UndefOr[scala.Nothing],
-      useArrayBuffer: Boolean,
-      onError: js.Function2[
-          /* request */ js.UndefOr[WebRequest], 
-          /* exception */ js.UndefOr[LoadFileError], 
-          Unit
-        ]
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
       useOfflineSupport: Boolean
     ): IFileRequest = js.native
     def _loadFile(
@@ -848,7 +734,14 @@ object sceneMod {
       onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
       useOfflineSupport: Boolean,
-      useArrayBuffer: js.UndefOr[scala.Nothing],
+      useArrayBuffer: Boolean
+    ): IFileRequest = js.native
+    def _loadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
+      useOfflineSupport: Boolean,
+      useArrayBuffer: Boolean,
       onError: js.Function2[
           /* request */ js.UndefOr[WebRequest], 
           /* exception */ js.UndefOr[LoadFileError], 
@@ -860,14 +753,106 @@ object sceneMod {
       onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
       useOfflineSupport: Boolean,
+      useArrayBuffer: Unit,
+      onError: js.Function2[
+          /* request */ js.UndefOr[WebRequest], 
+          /* exception */ js.UndefOr[LoadFileError], 
+          Unit
+        ]
+    ): IFileRequest = js.native
+    def _loadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
+      useOfflineSupport: Unit,
       useArrayBuffer: Boolean
     ): IFileRequest = js.native
     def _loadFile(
       url: String,
       onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
+      useOfflineSupport: Unit,
+      useArrayBuffer: Boolean,
+      onError: js.Function2[
+          /* request */ js.UndefOr[WebRequest], 
+          /* exception */ js.UndefOr[LoadFileError], 
+          Unit
+        ]
+    ): IFileRequest = js.native
+    def _loadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
+      useOfflineSupport: Unit,
+      useArrayBuffer: Unit,
+      onError: js.Function2[
+          /* request */ js.UndefOr[WebRequest], 
+          /* exception */ js.UndefOr[LoadFileError], 
+          Unit
+        ]
+    ): IFileRequest = js.native
+    def _loadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: Unit,
+      useOfflineSupport: Boolean
+    ): IFileRequest = js.native
+    def _loadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: Unit,
+      useOfflineSupport: Boolean,
+      useArrayBuffer: Boolean
+    ): IFileRequest = js.native
+    def _loadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: Unit,
       useOfflineSupport: Boolean,
       useArrayBuffer: Boolean,
+      onError: js.Function2[
+          /* request */ js.UndefOr[WebRequest], 
+          /* exception */ js.UndefOr[LoadFileError], 
+          Unit
+        ]
+    ): IFileRequest = js.native
+    def _loadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: Unit,
+      useOfflineSupport: Boolean,
+      useArrayBuffer: Unit,
+      onError: js.Function2[
+          /* request */ js.UndefOr[WebRequest], 
+          /* exception */ js.UndefOr[LoadFileError], 
+          Unit
+        ]
+    ): IFileRequest = js.native
+    def _loadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: Unit,
+      useOfflineSupport: Unit,
+      useArrayBuffer: Boolean
+    ): IFileRequest = js.native
+    def _loadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: Unit,
+      useOfflineSupport: Unit,
+      useArrayBuffer: Boolean,
+      onError: js.Function2[
+          /* request */ js.UndefOr[WebRequest], 
+          /* exception */ js.UndefOr[LoadFileError], 
+          Unit
+        ]
+    ): IFileRequest = js.native
+    def _loadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: Unit,
+      useOfflineSupport: Unit,
+      useArrayBuffer: Unit,
       onError: js.Function2[
           /* request */ js.UndefOr[WebRequest], 
           /* exception */ js.UndefOr[LoadFileError], 
@@ -877,26 +862,7 @@ object sceneMod {
     
     /** @hidden */
     def _loadFileAsync(url: String): js.Promise[String | ArrayBuffer] = js.native
-    def _loadFileAsync(
-      url: String,
-      onProgress: js.UndefOr[scala.Nothing],
-      useOfflineSupport: js.UndefOr[scala.Nothing],
-      useArrayBuffer: Boolean
-    ): js.Promise[String | ArrayBuffer] = js.native
-    def _loadFileAsync(url: String, onProgress: js.UndefOr[scala.Nothing], useOfflineSupport: Boolean): js.Promise[String | ArrayBuffer] = js.native
-    def _loadFileAsync(
-      url: String,
-      onProgress: js.UndefOr[scala.Nothing],
-      useOfflineSupport: Boolean,
-      useArrayBuffer: Boolean
-    ): js.Promise[String | ArrayBuffer] = js.native
     def _loadFileAsync(url: String, onProgress: js.Function1[/* data */ js.Any, Unit]): js.Promise[String | ArrayBuffer] = js.native
-    def _loadFileAsync(
-      url: String,
-      onProgress: js.Function1[/* data */ js.Any, Unit],
-      useOfflineSupport: js.UndefOr[scala.Nothing],
-      useArrayBuffer: Boolean
-    ): js.Promise[String | ArrayBuffer] = js.native
     def _loadFileAsync(url: String, onProgress: js.Function1[/* data */ js.Any, Unit], useOfflineSupport: Boolean): js.Promise[String | ArrayBuffer] = js.native
     def _loadFileAsync(
       url: String,
@@ -904,6 +870,15 @@ object sceneMod {
       useOfflineSupport: Boolean,
       useArrayBuffer: Boolean
     ): js.Promise[String | ArrayBuffer] = js.native
+    def _loadFileAsync(
+      url: String,
+      onProgress: js.Function1[/* data */ js.Any, Unit],
+      useOfflineSupport: Unit,
+      useArrayBuffer: Boolean
+    ): js.Promise[String | ArrayBuffer] = js.native
+    def _loadFileAsync(url: String, onProgress: Unit, useOfflineSupport: Boolean): js.Promise[String | ArrayBuffer] = js.native
+    def _loadFileAsync(url: String, onProgress: Unit, useOfflineSupport: Boolean, useArrayBuffer: Boolean): js.Promise[String | ArrayBuffer] = js.native
+    def _loadFileAsync(url: String, onProgress: Unit, useOfflineSupport: Unit, useArrayBuffer: Boolean): js.Promise[String | ArrayBuffer] = js.native
     
     /**
       * @hidden
@@ -911,7 +886,7 @@ object sceneMod {
       */
     var _mainSoundTrack: SoundTrack = js.native
     
-    var _meshesForIntersections: js.Any = js.native
+    /* private */ var _meshesForIntersections: js.Any = js.native
     
     /** @hidden */
     var _mirroredCameraPosition: Nullable[Vector3] = js.native
@@ -919,21 +894,21 @@ object sceneMod {
     /** @hidden */
     var _multiviewSceneUbo: Nullable[UniformBuffer] = js.native
     
-    var _onAfterCameraRenderObserver: js.Any = js.native
+    /* private */ var _onAfterCameraRenderObserver: js.Any = js.native
     
-    var _onAfterRenderObserver: js.Any = js.native
+    /* private */ var _onAfterRenderObserver: js.Any = js.native
     
-    var _onBeforeCameraRenderObserver: js.Any = js.native
+    /* private */ var _onBeforeCameraRenderObserver: js.Any = js.native
     
-    var _onBeforeRenderObserver: js.Any = js.native
+    /* private */ var _onBeforeRenderObserver: js.Any = js.native
     
-    var _onDisposeObserver: js.Any = js.native
+    /* private */ var _onDisposeObserver: js.Any = js.native
     
     /** @hidden */
     var _outlineRenderer: OutlineRenderer = js.native
     
     /** @hidden */
-    var _pendingData: js.Array[_] = js.native
+    var _pendingData: js.Array[js.Any] = js.native
     
     /** @hidden (Backing field) */
     var _physicsEngine: Nullable[IPhysicsEngine] = js.native
@@ -977,7 +952,7 @@ object sceneMod {
       */
     var _preActiveMeshStage: Stage[PreActiveMeshStageAction] = js.native
     
-    var _preventFreeActiveMeshesAndRenderingGroups: js.Any = js.native
+    /* private */ var _preventFreeActiveMeshesAndRenderingGroups: js.Any = js.native
     
     /** @hidden */
     def _processLateAnimationBindings(): Unit = js.native
@@ -988,71 +963,71 @@ object sceneMod {
     /** @hidden */
     def _processLateAnimationBindingsForQuaternions(holder: Animations, refQuaternion: Quaternion): Quaternion = js.native
     
-    var _processSubCameras: js.Any = js.native
+    /* private */ var _processSubCameras: js.Any = js.native
     
-    var _processedMaterials: js.Any = js.native
+    /* private */ var _processedMaterials: js.Any = js.native
     
-    var _projectionMatrix: js.Any = js.native
+    /* private */ var _projectionMatrix: js.Any = js.native
     
-    var _projectionUpdateFlag: js.Any = js.native
+    /* private */ var _projectionUpdateFlag: js.Any = js.native
     
     /** @hidden */
     def _readFile(file: File, onSuccess: js.Function1[/* data */ String | ArrayBuffer, Unit]): IFileRequest = js.native
     def _readFile(
       file: File,
       onSuccess: js.Function1[/* data */ String | ArrayBuffer, Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      useArrayBuffer: js.UndefOr[scala.Nothing],
-      onError: js.Function1[/* error */ ReadFileError, Unit]
+      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], js.Any]
     ): IFileRequest = js.native
     def _readFile(
       file: File,
       onSuccess: js.Function1[/* data */ String | ArrayBuffer, Unit],
-      onProgress: js.UndefOr[scala.Nothing],
+      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], js.Any],
       useArrayBuffer: Boolean
     ): IFileRequest = js.native
     def _readFile(
       file: File,
       onSuccess: js.Function1[/* data */ String | ArrayBuffer, Unit],
-      onProgress: js.UndefOr[scala.Nothing],
+      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], js.Any],
       useArrayBuffer: Boolean,
       onError: js.Function1[/* error */ ReadFileError, Unit]
     ): IFileRequest = js.native
     def _readFile(
       file: File,
       onSuccess: js.Function1[/* data */ String | ArrayBuffer, Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], _]
-    ): IFileRequest = js.native
-    def _readFile(
-      file: File,
-      onSuccess: js.Function1[/* data */ String | ArrayBuffer, Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], _],
-      useArrayBuffer: js.UndefOr[scala.Nothing],
+      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], js.Any],
+      useArrayBuffer: Unit,
       onError: js.Function1[/* error */ ReadFileError, Unit]
     ): IFileRequest = js.native
     def _readFile(
       file: File,
       onSuccess: js.Function1[/* data */ String | ArrayBuffer, Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], _],
+      onProgress: Unit,
       useArrayBuffer: Boolean
     ): IFileRequest = js.native
     def _readFile(
       file: File,
       onSuccess: js.Function1[/* data */ String | ArrayBuffer, Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], _],
+      onProgress: Unit,
       useArrayBuffer: Boolean,
+      onError: js.Function1[/* error */ ReadFileError, Unit]
+    ): IFileRequest = js.native
+    def _readFile(
+      file: File,
+      onSuccess: js.Function1[/* data */ String | ArrayBuffer, Unit],
+      onProgress: Unit,
+      useArrayBuffer: Unit,
       onError: js.Function1[/* error */ ReadFileError, Unit]
     ): IFileRequest = js.native
     
     /** @hidden */
     def _readFileAsync(file: File): js.Promise[String | ArrayBuffer] = js.native
-    def _readFileAsync(file: File, onProgress: js.UndefOr[scala.Nothing], useArrayBuffer: Boolean): js.Promise[String | ArrayBuffer] = js.native
-    def _readFileAsync(file: File, onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], _]): js.Promise[String | ArrayBuffer] = js.native
+    def _readFileAsync(file: File, onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], js.Any]): js.Promise[String | ArrayBuffer] = js.native
     def _readFileAsync(
       file: File,
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], _],
+      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], js.Any],
       useArrayBuffer: Boolean
     ): js.Promise[String | ArrayBuffer] = js.native
+    def _readFileAsync(file: File, onProgress: Unit, useArrayBuffer: Boolean): js.Promise[String | ArrayBuffer] = js.native
     
     /** @hidden */
     def _rebuildGeometries(): Unit = js.native
@@ -1066,10 +1041,10 @@ object sceneMod {
     /**
       * Registers the transient components if needed.
       */
-    var _registerTransientComponents: js.Any = js.native
+    /* private */ var _registerTransientComponents: js.Any = js.native
     
     /** @hidden */
-    var _registeredForLateAnimationBindings: SmartArrayNoDuplicate[_] = js.native
+    var _registeredForLateAnimationBindings: SmartArrayNoDuplicate[js.Any] = js.native
     
     /** @hidden */
     def _removePendingData(data: js.Any): Unit = js.native
@@ -1078,143 +1053,19 @@ object sceneMod {
     def _renderForCamera(camera: Camera): Unit = js.native
     def _renderForCamera(camera: Camera, rigParent: Camera): Unit = js.native
     
-    var _renderId: js.Any = js.native
+    /* private */ var _renderId: js.Any = js.native
     
     /** @hidden */
     def _renderMultiviewToSingleView(camera: Camera): Unit = js.native
     
-    var _renderTargets: js.Any = js.native
+    /* private */ var _renderTargets: js.Any = js.native
     
-    var _renderingManager: js.Any = js.native
+    /* private */ var _renderingManager: js.Any = js.native
     
     /** @hidden */
     def _requestFile(
       url: String,
       onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit]
-    ): IFileRequest = js.native
-    def _requestFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      useOfflineSupport: js.UndefOr[scala.Nothing],
-      useArrayBuffer: js.UndefOr[scala.Nothing],
-      onError: js.UndefOr[scala.Nothing],
-      onOpened: js.Function1[/* request */ WebRequest, Unit]
-    ): IFileRequest = js.native
-    def _requestFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      useOfflineSupport: js.UndefOr[scala.Nothing],
-      useArrayBuffer: js.UndefOr[scala.Nothing],
-      onError: js.Function1[/* error */ RequestFileError, Unit]
-    ): IFileRequest = js.native
-    def _requestFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      useOfflineSupport: js.UndefOr[scala.Nothing],
-      useArrayBuffer: js.UndefOr[scala.Nothing],
-      onError: js.Function1[/* error */ RequestFileError, Unit],
-      onOpened: js.Function1[/* request */ WebRequest, Unit]
-    ): IFileRequest = js.native
-    def _requestFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      useOfflineSupport: js.UndefOr[scala.Nothing],
-      useArrayBuffer: Boolean
-    ): IFileRequest = js.native
-    def _requestFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      useOfflineSupport: js.UndefOr[scala.Nothing],
-      useArrayBuffer: Boolean,
-      onError: js.UndefOr[scala.Nothing],
-      onOpened: js.Function1[/* request */ WebRequest, Unit]
-    ): IFileRequest = js.native
-    def _requestFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      useOfflineSupport: js.UndefOr[scala.Nothing],
-      useArrayBuffer: Boolean,
-      onError: js.Function1[/* error */ RequestFileError, Unit]
-    ): IFileRequest = js.native
-    def _requestFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      useOfflineSupport: js.UndefOr[scala.Nothing],
-      useArrayBuffer: Boolean,
-      onError: js.Function1[/* error */ RequestFileError, Unit],
-      onOpened: js.Function1[/* request */ WebRequest, Unit]
-    ): IFileRequest = js.native
-    def _requestFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      useOfflineSupport: Boolean
-    ): IFileRequest = js.native
-    def _requestFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      useOfflineSupport: Boolean,
-      useArrayBuffer: js.UndefOr[scala.Nothing],
-      onError: js.UndefOr[scala.Nothing],
-      onOpened: js.Function1[/* request */ WebRequest, Unit]
-    ): IFileRequest = js.native
-    def _requestFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      useOfflineSupport: Boolean,
-      useArrayBuffer: js.UndefOr[scala.Nothing],
-      onError: js.Function1[/* error */ RequestFileError, Unit]
-    ): IFileRequest = js.native
-    def _requestFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      useOfflineSupport: Boolean,
-      useArrayBuffer: js.UndefOr[scala.Nothing],
-      onError: js.Function1[/* error */ RequestFileError, Unit],
-      onOpened: js.Function1[/* request */ WebRequest, Unit]
-    ): IFileRequest = js.native
-    def _requestFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      useOfflineSupport: Boolean,
-      useArrayBuffer: Boolean
-    ): IFileRequest = js.native
-    def _requestFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      useOfflineSupport: Boolean,
-      useArrayBuffer: Boolean,
-      onError: js.UndefOr[scala.Nothing],
-      onOpened: js.Function1[/* request */ WebRequest, Unit]
-    ): IFileRequest = js.native
-    def _requestFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      useOfflineSupport: Boolean,
-      useArrayBuffer: Boolean,
-      onError: js.Function1[/* error */ RequestFileError, Unit]
-    ): IFileRequest = js.native
-    def _requestFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      useOfflineSupport: Boolean,
-      useArrayBuffer: Boolean,
-      onError: js.Function1[/* error */ RequestFileError, Unit],
-      onOpened: js.Function1[/* request */ WebRequest, Unit]
     ): IFileRequest = js.native
     def _requestFile(
       url: String,
@@ -1225,65 +1076,6 @@ object sceneMod {
       url: String,
       onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-      useOfflineSupport: js.UndefOr[scala.Nothing],
-      useArrayBuffer: js.UndefOr[scala.Nothing],
-      onError: js.UndefOr[scala.Nothing],
-      onOpened: js.Function1[/* request */ WebRequest, Unit]
-    ): IFileRequest = js.native
-    def _requestFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-      useOfflineSupport: js.UndefOr[scala.Nothing],
-      useArrayBuffer: js.UndefOr[scala.Nothing],
-      onError: js.Function1[/* error */ RequestFileError, Unit]
-    ): IFileRequest = js.native
-    def _requestFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-      useOfflineSupport: js.UndefOr[scala.Nothing],
-      useArrayBuffer: js.UndefOr[scala.Nothing],
-      onError: js.Function1[/* error */ RequestFileError, Unit],
-      onOpened: js.Function1[/* request */ WebRequest, Unit]
-    ): IFileRequest = js.native
-    def _requestFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-      useOfflineSupport: js.UndefOr[scala.Nothing],
-      useArrayBuffer: Boolean
-    ): IFileRequest = js.native
-    def _requestFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-      useOfflineSupport: js.UndefOr[scala.Nothing],
-      useArrayBuffer: Boolean,
-      onError: js.UndefOr[scala.Nothing],
-      onOpened: js.Function1[/* request */ WebRequest, Unit]
-    ): IFileRequest = js.native
-    def _requestFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-      useOfflineSupport: js.UndefOr[scala.Nothing],
-      useArrayBuffer: Boolean,
-      onError: js.Function1[/* error */ RequestFileError, Unit]
-    ): IFileRequest = js.native
-    def _requestFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-      useOfflineSupport: js.UndefOr[scala.Nothing],
-      useArrayBuffer: Boolean,
-      onError: js.Function1[/* error */ RequestFileError, Unit],
-      onOpened: js.Function1[/* request */ WebRequest, Unit]
-    ): IFileRequest = js.native
-    def _requestFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
       useOfflineSupport: Boolean
     ): IFileRequest = js.native
     def _requestFile(
@@ -1291,32 +1083,6 @@ object sceneMod {
       onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
       useOfflineSupport: Boolean,
-      useArrayBuffer: js.UndefOr[scala.Nothing],
-      onError: js.UndefOr[scala.Nothing],
-      onOpened: js.Function1[/* request */ WebRequest, Unit]
-    ): IFileRequest = js.native
-    def _requestFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-      useOfflineSupport: Boolean,
-      useArrayBuffer: js.UndefOr[scala.Nothing],
-      onError: js.Function1[/* error */ RequestFileError, Unit]
-    ): IFileRequest = js.native
-    def _requestFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-      useOfflineSupport: Boolean,
-      useArrayBuffer: js.UndefOr[scala.Nothing],
-      onError: js.Function1[/* error */ RequestFileError, Unit],
-      onOpened: js.Function1[/* request */ WebRequest, Unit]
-    ): IFileRequest = js.native
-    def _requestFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-      useOfflineSupport: Boolean,
       useArrayBuffer: Boolean
     ): IFileRequest = js.native
     def _requestFile(
@@ -1325,15 +1091,6 @@ object sceneMod {
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
       useOfflineSupport: Boolean,
       useArrayBuffer: Boolean,
-      onError: js.UndefOr[scala.Nothing],
-      onOpened: js.Function1[/* request */ WebRequest, Unit]
-    ): IFileRequest = js.native
-    def _requestFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-      useOfflineSupport: Boolean,
-      useArrayBuffer: Boolean,
       onError: js.Function1[/* error */ RequestFileError, Unit]
     ): IFileRequest = js.native
     def _requestFile(
@@ -1343,73 +1100,230 @@ object sceneMod {
       useOfflineSupport: Boolean,
       useArrayBuffer: Boolean,
       onError: js.Function1[/* error */ RequestFileError, Unit],
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): IFileRequest = js.native
+    def _requestFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
+      useOfflineSupport: Boolean,
+      useArrayBuffer: Boolean,
+      onError: Unit,
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): IFileRequest = js.native
+    def _requestFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
+      useOfflineSupport: Boolean,
+      useArrayBuffer: Unit,
+      onError: js.Function1[/* error */ RequestFileError, Unit]
+    ): IFileRequest = js.native
+    def _requestFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
+      useOfflineSupport: Boolean,
+      useArrayBuffer: Unit,
+      onError: js.Function1[/* error */ RequestFileError, Unit],
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): IFileRequest = js.native
+    def _requestFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
+      useOfflineSupport: Boolean,
+      useArrayBuffer: Unit,
+      onError: Unit,
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): IFileRequest = js.native
+    def _requestFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
+      useOfflineSupport: Unit,
+      useArrayBuffer: Boolean
+    ): IFileRequest = js.native
+    def _requestFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
+      useOfflineSupport: Unit,
+      useArrayBuffer: Boolean,
+      onError: js.Function1[/* error */ RequestFileError, Unit]
+    ): IFileRequest = js.native
+    def _requestFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
+      useOfflineSupport: Unit,
+      useArrayBuffer: Boolean,
+      onError: js.Function1[/* error */ RequestFileError, Unit],
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): IFileRequest = js.native
+    def _requestFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
+      useOfflineSupport: Unit,
+      useArrayBuffer: Boolean,
+      onError: Unit,
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): IFileRequest = js.native
+    def _requestFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
+      useOfflineSupport: Unit,
+      useArrayBuffer: Unit,
+      onError: js.Function1[/* error */ RequestFileError, Unit]
+    ): IFileRequest = js.native
+    def _requestFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
+      useOfflineSupport: Unit,
+      useArrayBuffer: Unit,
+      onError: js.Function1[/* error */ RequestFileError, Unit],
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): IFileRequest = js.native
+    def _requestFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
+      useOfflineSupport: Unit,
+      useArrayBuffer: Unit,
+      onError: Unit,
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): IFileRequest = js.native
+    def _requestFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onProgress: Unit,
+      useOfflineSupport: Boolean
+    ): IFileRequest = js.native
+    def _requestFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onProgress: Unit,
+      useOfflineSupport: Boolean,
+      useArrayBuffer: Boolean
+    ): IFileRequest = js.native
+    def _requestFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onProgress: Unit,
+      useOfflineSupport: Boolean,
+      useArrayBuffer: Boolean,
+      onError: js.Function1[/* error */ RequestFileError, Unit]
+    ): IFileRequest = js.native
+    def _requestFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onProgress: Unit,
+      useOfflineSupport: Boolean,
+      useArrayBuffer: Boolean,
+      onError: js.Function1[/* error */ RequestFileError, Unit],
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): IFileRequest = js.native
+    def _requestFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onProgress: Unit,
+      useOfflineSupport: Boolean,
+      useArrayBuffer: Boolean,
+      onError: Unit,
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): IFileRequest = js.native
+    def _requestFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onProgress: Unit,
+      useOfflineSupport: Boolean,
+      useArrayBuffer: Unit,
+      onError: js.Function1[/* error */ RequestFileError, Unit]
+    ): IFileRequest = js.native
+    def _requestFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onProgress: Unit,
+      useOfflineSupport: Boolean,
+      useArrayBuffer: Unit,
+      onError: js.Function1[/* error */ RequestFileError, Unit],
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): IFileRequest = js.native
+    def _requestFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onProgress: Unit,
+      useOfflineSupport: Boolean,
+      useArrayBuffer: Unit,
+      onError: Unit,
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): IFileRequest = js.native
+    def _requestFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onProgress: Unit,
+      useOfflineSupport: Unit,
+      useArrayBuffer: Boolean
+    ): IFileRequest = js.native
+    def _requestFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onProgress: Unit,
+      useOfflineSupport: Unit,
+      useArrayBuffer: Boolean,
+      onError: js.Function1[/* error */ RequestFileError, Unit]
+    ): IFileRequest = js.native
+    def _requestFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onProgress: Unit,
+      useOfflineSupport: Unit,
+      useArrayBuffer: Boolean,
+      onError: js.Function1[/* error */ RequestFileError, Unit],
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): IFileRequest = js.native
+    def _requestFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onProgress: Unit,
+      useOfflineSupport: Unit,
+      useArrayBuffer: Boolean,
+      onError: Unit,
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): IFileRequest = js.native
+    def _requestFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onProgress: Unit,
+      useOfflineSupport: Unit,
+      useArrayBuffer: Unit,
+      onError: js.Function1[/* error */ RequestFileError, Unit]
+    ): IFileRequest = js.native
+    def _requestFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onProgress: Unit,
+      useOfflineSupport: Unit,
+      useArrayBuffer: Unit,
+      onError: js.Function1[/* error */ RequestFileError, Unit],
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): IFileRequest = js.native
+    def _requestFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onProgress: Unit,
+      useOfflineSupport: Unit,
+      useArrayBuffer: Unit,
+      onError: Unit,
       onOpened: js.Function1[/* request */ WebRequest, Unit]
     ): IFileRequest = js.native
     
     /** @hidden */
     def _requestFileAsync(url: String): js.Promise[String | ArrayBuffer] = js.native
-    def _requestFileAsync(
-      url: String,
-      onProgress: js.UndefOr[scala.Nothing],
-      useOfflineSupport: js.UndefOr[scala.Nothing],
-      useArrayBuffer: js.UndefOr[scala.Nothing],
-      onOpened: js.Function1[/* request */ WebRequest, Unit]
-    ): js.Promise[String | ArrayBuffer] = js.native
-    def _requestFileAsync(
-      url: String,
-      onProgress: js.UndefOr[scala.Nothing],
-      useOfflineSupport: js.UndefOr[scala.Nothing],
-      useArrayBuffer: Boolean
-    ): js.Promise[String | ArrayBuffer] = js.native
-    def _requestFileAsync(
-      url: String,
-      onProgress: js.UndefOr[scala.Nothing],
-      useOfflineSupport: js.UndefOr[scala.Nothing],
-      useArrayBuffer: Boolean,
-      onOpened: js.Function1[/* request */ WebRequest, Unit]
-    ): js.Promise[String | ArrayBuffer] = js.native
-    def _requestFileAsync(url: String, onProgress: js.UndefOr[scala.Nothing], useOfflineSupport: Boolean): js.Promise[String | ArrayBuffer] = js.native
-    def _requestFileAsync(
-      url: String,
-      onProgress: js.UndefOr[scala.Nothing],
-      useOfflineSupport: Boolean,
-      useArrayBuffer: js.UndefOr[scala.Nothing],
-      onOpened: js.Function1[/* request */ WebRequest, Unit]
-    ): js.Promise[String | ArrayBuffer] = js.native
-    def _requestFileAsync(
-      url: String,
-      onProgress: js.UndefOr[scala.Nothing],
-      useOfflineSupport: Boolean,
-      useArrayBuffer: Boolean
-    ): js.Promise[String | ArrayBuffer] = js.native
-    def _requestFileAsync(
-      url: String,
-      onProgress: js.UndefOr[scala.Nothing],
-      useOfflineSupport: Boolean,
-      useArrayBuffer: Boolean,
-      onOpened: js.Function1[/* request */ WebRequest, Unit]
-    ): js.Promise[String | ArrayBuffer] = js.native
     def _requestFileAsync(url: String, onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit]): js.Promise[String | ArrayBuffer] = js.native
-    def _requestFileAsync(
-      url: String,
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-      useOfflineSupport: js.UndefOr[scala.Nothing],
-      useArrayBuffer: js.UndefOr[scala.Nothing],
-      onOpened: js.Function1[/* request */ WebRequest, Unit]
-    ): js.Promise[String | ArrayBuffer] = js.native
-    def _requestFileAsync(
-      url: String,
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-      useOfflineSupport: js.UndefOr[scala.Nothing],
-      useArrayBuffer: Boolean
-    ): js.Promise[String | ArrayBuffer] = js.native
-    def _requestFileAsync(
-      url: String,
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-      useOfflineSupport: js.UndefOr[scala.Nothing],
-      useArrayBuffer: Boolean,
-      onOpened: js.Function1[/* request */ WebRequest, Unit]
-    ): js.Promise[String | ArrayBuffer] = js.native
     def _requestFileAsync(
       url: String,
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
@@ -1419,13 +1333,6 @@ object sceneMod {
       url: String,
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
       useOfflineSupport: Boolean,
-      useArrayBuffer: js.UndefOr[scala.Nothing],
-      onOpened: js.Function1[/* request */ WebRequest, Unit]
-    ): js.Promise[String | ArrayBuffer] = js.native
-    def _requestFileAsync(
-      url: String,
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-      useOfflineSupport: Boolean,
       useArrayBuffer: Boolean
     ): js.Promise[String | ArrayBuffer] = js.native
     def _requestFileAsync(
@@ -1435,8 +1342,66 @@ object sceneMod {
       useArrayBuffer: Boolean,
       onOpened: js.Function1[/* request */ WebRequest, Unit]
     ): js.Promise[String | ArrayBuffer] = js.native
+    def _requestFileAsync(
+      url: String,
+      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
+      useOfflineSupport: Boolean,
+      useArrayBuffer: Unit,
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): js.Promise[String | ArrayBuffer] = js.native
+    def _requestFileAsync(
+      url: String,
+      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
+      useOfflineSupport: Unit,
+      useArrayBuffer: Boolean
+    ): js.Promise[String | ArrayBuffer] = js.native
+    def _requestFileAsync(
+      url: String,
+      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
+      useOfflineSupport: Unit,
+      useArrayBuffer: Boolean,
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): js.Promise[String | ArrayBuffer] = js.native
+    def _requestFileAsync(
+      url: String,
+      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
+      useOfflineSupport: Unit,
+      useArrayBuffer: Unit,
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): js.Promise[String | ArrayBuffer] = js.native
+    def _requestFileAsync(url: String, onProgress: Unit, useOfflineSupport: Boolean): js.Promise[String | ArrayBuffer] = js.native
+    def _requestFileAsync(url: String, onProgress: Unit, useOfflineSupport: Boolean, useArrayBuffer: Boolean): js.Promise[String | ArrayBuffer] = js.native
+    def _requestFileAsync(
+      url: String,
+      onProgress: Unit,
+      useOfflineSupport: Boolean,
+      useArrayBuffer: Boolean,
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): js.Promise[String | ArrayBuffer] = js.native
+    def _requestFileAsync(
+      url: String,
+      onProgress: Unit,
+      useOfflineSupport: Boolean,
+      useArrayBuffer: Unit,
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): js.Promise[String | ArrayBuffer] = js.native
+    def _requestFileAsync(url: String, onProgress: Unit, useOfflineSupport: Unit, useArrayBuffer: Boolean): js.Promise[String | ArrayBuffer] = js.native
+    def _requestFileAsync(
+      url: String,
+      onProgress: Unit,
+      useOfflineSupport: Unit,
+      useArrayBuffer: Boolean,
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): js.Promise[String | ArrayBuffer] = js.native
+    def _requestFileAsync(
+      url: String,
+      onProgress: Unit,
+      useOfflineSupport: Unit,
+      useArrayBuffer: Unit,
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): js.Promise[String | ArrayBuffer] = js.native
     
-    var _sceneUbo: js.Any = js.native
+    /* private */ var _sceneUbo: js.Any = js.native
     
     /**
       * @hidden
@@ -1450,18 +1415,18 @@ object sceneMod {
       */
     var _serializableComponents: js.Array[ISceneSerializableComponent] = js.native
     
-    var _shadowsEnabled: js.Any = js.native
+    /* private */ var _shadowsEnabled: js.Any = js.native
     
     /** @hidden (Backing field) */
     var _simplificationQueue: SimplificationQueue = js.native
     
-    var _skeletonsEnabled: js.Any = js.native
+    /* private */ var _skeletonsEnabled: js.Any = js.native
     
-    var _skipEvaluateActiveMeshesCompletely: js.Any = js.native
+    /* private */ var _skipEvaluateActiveMeshesCompletely: js.Any = js.native
     
-    var _skipFrustumClipping: js.Any = js.native
+    /* private */ var _skipFrustumClipping: js.Any = js.native
     
-    var _softwareSkinnedMeshes: js.Any = js.native
+    /* private */ var _softwareSkinnedMeshes: js.Any = js.native
     
     /** @hidden */
     var _tempPickingRay: Nullable[Ray] = js.native
@@ -1469,16 +1434,16 @@ object sceneMod {
     /** @hidden */
     var _tempSpritePickingRay: Nullable[Ray] = js.native
     
-    var _texturesEnabled: js.Any = js.native
+    /* private */ var _texturesEnabled: js.Any = js.native
     
-    var _timeAccumulator: js.Any = js.native
+    /* private */ var _timeAccumulator: js.Any = js.native
     
     /** @hidden */
     var _toBeDisposed: js.Array[Nullable[IDisposable]] = js.native
     
-    var _totalVertices: js.Any = js.native
+    /* private */ var _totalVertices: js.Any = js.native
     
-    var _transformMatrix: js.Any = js.native
+    /* private */ var _transformMatrix: js.Any = js.native
     
     /** @hidden */
     var _transformMatrixR: Matrix = js.native
@@ -1486,22 +1451,22 @@ object sceneMod {
     /**
       * List of components to register on the next registration step.
       */
-    var _transientComponents: js.Any = js.native
+    /* private */ var _transientComponents: js.Any = js.native
     
-    var _uid: js.Any = js.native
+    /* private */ var _uid: js.Any = js.native
     
     /** @hidden */
     def _updateMultiviewUbo(): Unit = js.native
-    def _updateMultiviewUbo(viewR: js.UndefOr[scala.Nothing], projectionR: Matrix): Unit = js.native
+    def _updateMultiviewUbo(viewR: Unit, projectionR: Matrix): Unit = js.native
     def _updateMultiviewUbo(viewR: Matrix): Unit = js.native
     def _updateMultiviewUbo(viewR: Matrix, projectionR: Matrix): Unit = js.native
     
-    var _useRightHandedSystem: js.Any = js.native
+    /* private */ var _useRightHandedSystem: js.Any = js.native
     
     /** @hidden */
     var _viewMatrix: Matrix = js.native
     
-    var _viewUpdateFlag: js.Any = js.native
+    /* private */ var _viewUpdateFlag: js.Any = js.native
     
     /**
       * Gets or sets the action manager associated with the scene
@@ -1667,13 +1632,13 @@ object sceneMod {
       * @param attachMove defines if you want to attach events to pointermove
       */
     def attachControl(): Unit = js.native
-    def attachControl(attachUp: js.UndefOr[scala.Nothing], attachDown: js.UndefOr[scala.Nothing], attachMove: Boolean): Unit = js.native
-    def attachControl(attachUp: js.UndefOr[scala.Nothing], attachDown: Boolean): Unit = js.native
-    def attachControl(attachUp: js.UndefOr[scala.Nothing], attachDown: Boolean, attachMove: Boolean): Unit = js.native
     def attachControl(attachUp: Boolean): Unit = js.native
-    def attachControl(attachUp: Boolean, attachDown: js.UndefOr[scala.Nothing], attachMove: Boolean): Unit = js.native
     def attachControl(attachUp: Boolean, attachDown: Boolean): Unit = js.native
     def attachControl(attachUp: Boolean, attachDown: Boolean, attachMove: Boolean): Unit = js.native
+    def attachControl(attachUp: Boolean, attachDown: Unit, attachMove: Boolean): Unit = js.native
+    def attachControl(attachUp: Unit, attachDown: Boolean): Unit = js.native
+    def attachControl(attachUp: Unit, attachDown: Boolean, attachMove: Boolean): Unit = js.native
+    def attachControl(attachUp: Unit, attachDown: Unit, attachMove: Boolean): Unit = js.native
     
     /**
       * Gets or sets if audio support is enabled
@@ -1751,160 +1716,6 @@ object sceneMod {
       * @returns the list of created animatables
       */
     def beginDirectAnimation(target: js.Any, animations: js.Array[Animation], from: Double, to: Double): Animatable = js.native
-    def beginDirectAnimation(
-      target: js.Any,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.UndefOr[scala.Nothing],
-      onAnimationLoop: js.UndefOr[scala.Nothing],
-      isAdditive: Boolean
-    ): Animatable = js.native
-    def beginDirectAnimation(
-      target: js.Any,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.UndefOr[scala.Nothing],
-      onAnimationLoop: js.Function0[Unit]
-    ): Animatable = js.native
-    def beginDirectAnimation(
-      target: js.Any,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.UndefOr[scala.Nothing],
-      onAnimationLoop: js.Function0[Unit],
-      isAdditive: Boolean
-    ): Animatable = js.native
-    def beginDirectAnimation(
-      target: js.Any,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.Function0[Unit]
-    ): Animatable = js.native
-    def beginDirectAnimation(
-      target: js.Any,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.Function0[Unit],
-      onAnimationLoop: js.UndefOr[scala.Nothing],
-      isAdditive: Boolean
-    ): Animatable = js.native
-    def beginDirectAnimation(
-      target: js.Any,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.Function0[Unit],
-      onAnimationLoop: js.Function0[Unit]
-    ): Animatable = js.native
-    def beginDirectAnimation(
-      target: js.Any,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.Function0[Unit],
-      onAnimationLoop: js.Function0[Unit],
-      isAdditive: Boolean
-    ): Animatable = js.native
-    def beginDirectAnimation(
-      target: js.Any,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: Double
-    ): Animatable = js.native
-    def beginDirectAnimation(
-      target: js.Any,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: Double,
-      onAnimationEnd: js.UndefOr[scala.Nothing],
-      onAnimationLoop: js.UndefOr[scala.Nothing],
-      isAdditive: Boolean
-    ): Animatable = js.native
-    def beginDirectAnimation(
-      target: js.Any,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: Double,
-      onAnimationEnd: js.UndefOr[scala.Nothing],
-      onAnimationLoop: js.Function0[Unit]
-    ): Animatable = js.native
-    def beginDirectAnimation(
-      target: js.Any,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: Double,
-      onAnimationEnd: js.UndefOr[scala.Nothing],
-      onAnimationLoop: js.Function0[Unit],
-      isAdditive: Boolean
-    ): Animatable = js.native
-    def beginDirectAnimation(
-      target: js.Any,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: Double,
-      onAnimationEnd: js.Function0[Unit]
-    ): Animatable = js.native
-    def beginDirectAnimation(
-      target: js.Any,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: Double,
-      onAnimationEnd: js.Function0[Unit],
-      onAnimationLoop: js.UndefOr[scala.Nothing],
-      isAdditive: Boolean
-    ): Animatable = js.native
-    def beginDirectAnimation(
-      target: js.Any,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: Double,
-      onAnimationEnd: js.Function0[Unit],
-      onAnimationLoop: js.Function0[Unit]
-    ): Animatable = js.native
-    def beginDirectAnimation(
-      target: js.Any,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: Double,
-      onAnimationEnd: js.Function0[Unit],
-      onAnimationLoop: js.Function0[Unit],
-      isAdditive: Boolean
-    ): Animatable = js.native
     def beginDirectAnimation(target: js.Any, animations: js.Array[Animation], from: Double, to: Double, loop: Boolean): Animatable = js.native
     def beginDirectAnimation(
       target: js.Any,
@@ -1912,79 +1723,6 @@ object sceneMod {
       from: Double,
       to: Double,
       loop: Boolean,
-      speedRatio: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.UndefOr[scala.Nothing],
-      onAnimationLoop: js.UndefOr[scala.Nothing],
-      isAdditive: Boolean
-    ): Animatable = js.native
-    def beginDirectAnimation(
-      target: js.Any,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: Boolean,
-      speedRatio: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.UndefOr[scala.Nothing],
-      onAnimationLoop: js.Function0[Unit]
-    ): Animatable = js.native
-    def beginDirectAnimation(
-      target: js.Any,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: Boolean,
-      speedRatio: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.UndefOr[scala.Nothing],
-      onAnimationLoop: js.Function0[Unit],
-      isAdditive: Boolean
-    ): Animatable = js.native
-    def beginDirectAnimation(
-      target: js.Any,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: Boolean,
-      speedRatio: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.Function0[Unit]
-    ): Animatable = js.native
-    def beginDirectAnimation(
-      target: js.Any,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: Boolean,
-      speedRatio: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.Function0[Unit],
-      onAnimationLoop: js.UndefOr[scala.Nothing],
-      isAdditive: Boolean
-    ): Animatable = js.native
-    def beginDirectAnimation(
-      target: js.Any,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: Boolean,
-      speedRatio: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.Function0[Unit],
-      onAnimationLoop: js.Function0[Unit]
-    ): Animatable = js.native
-    def beginDirectAnimation(
-      target: js.Any,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: Boolean,
-      speedRatio: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.Function0[Unit],
-      onAnimationLoop: js.Function0[Unit],
-      isAdditive: Boolean
-    ): Animatable = js.native
-    def beginDirectAnimation(
-      target: js.Any,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: Boolean,
       speedRatio: Double
     ): Animatable = js.native
     def beginDirectAnimation(
@@ -1994,38 +1732,6 @@ object sceneMod {
       to: Double,
       loop: Boolean,
       speedRatio: Double,
-      onAnimationEnd: js.UndefOr[scala.Nothing],
-      onAnimationLoop: js.UndefOr[scala.Nothing],
-      isAdditive: Boolean
-    ): Animatable = js.native
-    def beginDirectAnimation(
-      target: js.Any,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: Boolean,
-      speedRatio: Double,
-      onAnimationEnd: js.UndefOr[scala.Nothing],
-      onAnimationLoop: js.Function0[Unit]
-    ): Animatable = js.native
-    def beginDirectAnimation(
-      target: js.Any,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: Boolean,
-      speedRatio: Double,
-      onAnimationEnd: js.UndefOr[scala.Nothing],
-      onAnimationLoop: js.Function0[Unit],
-      isAdditive: Boolean
-    ): Animatable = js.native
-    def beginDirectAnimation(
-      target: js.Any,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: Boolean,
-      speedRatio: Double,
       onAnimationEnd: js.Function0[Unit]
     ): Animatable = js.native
     def beginDirectAnimation(
@@ -2036,17 +1742,6 @@ object sceneMod {
       loop: Boolean,
       speedRatio: Double,
       onAnimationEnd: js.Function0[Unit],
-      onAnimationLoop: js.UndefOr[scala.Nothing],
-      isAdditive: Boolean
-    ): Animatable = js.native
-    def beginDirectAnimation(
-      target: js.Any,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: Boolean,
-      speedRatio: Double,
-      onAnimationEnd: js.Function0[Unit],
       onAnimationLoop: js.Function0[Unit]
     ): Animatable = js.native
     def beginDirectAnimation(
@@ -2058,6 +1753,276 @@ object sceneMod {
       speedRatio: Double,
       onAnimationEnd: js.Function0[Unit],
       onAnimationLoop: js.Function0[Unit],
+      isAdditive: Boolean
+    ): Animatable = js.native
+    def beginDirectAnimation(
+      target: js.Any,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Boolean,
+      speedRatio: Double,
+      onAnimationEnd: js.Function0[Unit],
+      onAnimationLoop: Unit,
+      isAdditive: Boolean
+    ): Animatable = js.native
+    def beginDirectAnimation(
+      target: js.Any,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Boolean,
+      speedRatio: Double,
+      onAnimationEnd: Unit,
+      onAnimationLoop: js.Function0[Unit]
+    ): Animatable = js.native
+    def beginDirectAnimation(
+      target: js.Any,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Boolean,
+      speedRatio: Double,
+      onAnimationEnd: Unit,
+      onAnimationLoop: js.Function0[Unit],
+      isAdditive: Boolean
+    ): Animatable = js.native
+    def beginDirectAnimation(
+      target: js.Any,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Boolean,
+      speedRatio: Double,
+      onAnimationEnd: Unit,
+      onAnimationLoop: Unit,
+      isAdditive: Boolean
+    ): Animatable = js.native
+    def beginDirectAnimation(
+      target: js.Any,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Boolean,
+      speedRatio: Unit,
+      onAnimationEnd: js.Function0[Unit]
+    ): Animatable = js.native
+    def beginDirectAnimation(
+      target: js.Any,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Boolean,
+      speedRatio: Unit,
+      onAnimationEnd: js.Function0[Unit],
+      onAnimationLoop: js.Function0[Unit]
+    ): Animatable = js.native
+    def beginDirectAnimation(
+      target: js.Any,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Boolean,
+      speedRatio: Unit,
+      onAnimationEnd: js.Function0[Unit],
+      onAnimationLoop: js.Function0[Unit],
+      isAdditive: Boolean
+    ): Animatable = js.native
+    def beginDirectAnimation(
+      target: js.Any,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Boolean,
+      speedRatio: Unit,
+      onAnimationEnd: js.Function0[Unit],
+      onAnimationLoop: Unit,
+      isAdditive: Boolean
+    ): Animatable = js.native
+    def beginDirectAnimation(
+      target: js.Any,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Boolean,
+      speedRatio: Unit,
+      onAnimationEnd: Unit,
+      onAnimationLoop: js.Function0[Unit]
+    ): Animatable = js.native
+    def beginDirectAnimation(
+      target: js.Any,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Boolean,
+      speedRatio: Unit,
+      onAnimationEnd: Unit,
+      onAnimationLoop: js.Function0[Unit],
+      isAdditive: Boolean
+    ): Animatable = js.native
+    def beginDirectAnimation(
+      target: js.Any,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Boolean,
+      speedRatio: Unit,
+      onAnimationEnd: Unit,
+      onAnimationLoop: Unit,
+      isAdditive: Boolean
+    ): Animatable = js.native
+    def beginDirectAnimation(
+      target: js.Any,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Unit,
+      speedRatio: Double
+    ): Animatable = js.native
+    def beginDirectAnimation(
+      target: js.Any,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Unit,
+      speedRatio: Double,
+      onAnimationEnd: js.Function0[Unit]
+    ): Animatable = js.native
+    def beginDirectAnimation(
+      target: js.Any,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Unit,
+      speedRatio: Double,
+      onAnimationEnd: js.Function0[Unit],
+      onAnimationLoop: js.Function0[Unit]
+    ): Animatable = js.native
+    def beginDirectAnimation(
+      target: js.Any,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Unit,
+      speedRatio: Double,
+      onAnimationEnd: js.Function0[Unit],
+      onAnimationLoop: js.Function0[Unit],
+      isAdditive: Boolean
+    ): Animatable = js.native
+    def beginDirectAnimation(
+      target: js.Any,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Unit,
+      speedRatio: Double,
+      onAnimationEnd: js.Function0[Unit],
+      onAnimationLoop: Unit,
+      isAdditive: Boolean
+    ): Animatable = js.native
+    def beginDirectAnimation(
+      target: js.Any,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Unit,
+      speedRatio: Double,
+      onAnimationEnd: Unit,
+      onAnimationLoop: js.Function0[Unit]
+    ): Animatable = js.native
+    def beginDirectAnimation(
+      target: js.Any,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Unit,
+      speedRatio: Double,
+      onAnimationEnd: Unit,
+      onAnimationLoop: js.Function0[Unit],
+      isAdditive: Boolean
+    ): Animatable = js.native
+    def beginDirectAnimation(
+      target: js.Any,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Unit,
+      speedRatio: Double,
+      onAnimationEnd: Unit,
+      onAnimationLoop: Unit,
+      isAdditive: Boolean
+    ): Animatable = js.native
+    def beginDirectAnimation(
+      target: js.Any,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Unit,
+      speedRatio: Unit,
+      onAnimationEnd: js.Function0[Unit]
+    ): Animatable = js.native
+    def beginDirectAnimation(
+      target: js.Any,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Unit,
+      speedRatio: Unit,
+      onAnimationEnd: js.Function0[Unit],
+      onAnimationLoop: js.Function0[Unit]
+    ): Animatable = js.native
+    def beginDirectAnimation(
+      target: js.Any,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Unit,
+      speedRatio: Unit,
+      onAnimationEnd: js.Function0[Unit],
+      onAnimationLoop: js.Function0[Unit],
+      isAdditive: Boolean
+    ): Animatable = js.native
+    def beginDirectAnimation(
+      target: js.Any,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Unit,
+      speedRatio: Unit,
+      onAnimationEnd: js.Function0[Unit],
+      onAnimationLoop: Unit,
+      isAdditive: Boolean
+    ): Animatable = js.native
+    def beginDirectAnimation(
+      target: js.Any,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Unit,
+      speedRatio: Unit,
+      onAnimationEnd: Unit,
+      onAnimationLoop: js.Function0[Unit]
+    ): Animatable = js.native
+    def beginDirectAnimation(
+      target: js.Any,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Unit,
+      speedRatio: Unit,
+      onAnimationEnd: Unit,
+      onAnimationLoop: js.Function0[Unit],
+      isAdditive: Boolean
+    ): Animatable = js.native
+    def beginDirectAnimation(
+      target: js.Any,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Unit,
+      speedRatio: Unit,
+      onAnimationEnd: Unit,
+      onAnimationLoop: Unit,
       isAdditive: Boolean
     ): Animatable = js.native
     
@@ -2088,175 +2053,6 @@ object sceneMod {
       animations: js.Array[Animation],
       from: Double,
       to: Double,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.UndefOr[scala.Nothing],
-      onAnimationLoop: js.UndefOr[scala.Nothing],
-      isAdditive: Boolean
-    ): js.Array[Animatable] = js.native
-    def beginDirectHierarchyAnimation(
-      target: Node,
-      directDescendantsOnly: Boolean,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.UndefOr[scala.Nothing],
-      onAnimationLoop: js.Function0[Unit]
-    ): js.Array[Animatable] = js.native
-    def beginDirectHierarchyAnimation(
-      target: Node,
-      directDescendantsOnly: Boolean,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.UndefOr[scala.Nothing],
-      onAnimationLoop: js.Function0[Unit],
-      isAdditive: Boolean
-    ): js.Array[Animatable] = js.native
-    def beginDirectHierarchyAnimation(
-      target: Node,
-      directDescendantsOnly: Boolean,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.Function0[Unit]
-    ): js.Array[Animatable] = js.native
-    def beginDirectHierarchyAnimation(
-      target: Node,
-      directDescendantsOnly: Boolean,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.Function0[Unit],
-      onAnimationLoop: js.UndefOr[scala.Nothing],
-      isAdditive: Boolean
-    ): js.Array[Animatable] = js.native
-    def beginDirectHierarchyAnimation(
-      target: Node,
-      directDescendantsOnly: Boolean,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.Function0[Unit],
-      onAnimationLoop: js.Function0[Unit]
-    ): js.Array[Animatable] = js.native
-    def beginDirectHierarchyAnimation(
-      target: Node,
-      directDescendantsOnly: Boolean,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.Function0[Unit],
-      onAnimationLoop: js.Function0[Unit],
-      isAdditive: Boolean
-    ): js.Array[Animatable] = js.native
-    def beginDirectHierarchyAnimation(
-      target: Node,
-      directDescendantsOnly: Boolean,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: Double
-    ): js.Array[Animatable] = js.native
-    def beginDirectHierarchyAnimation(
-      target: Node,
-      directDescendantsOnly: Boolean,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: Double,
-      onAnimationEnd: js.UndefOr[scala.Nothing],
-      onAnimationLoop: js.UndefOr[scala.Nothing],
-      isAdditive: Boolean
-    ): js.Array[Animatable] = js.native
-    def beginDirectHierarchyAnimation(
-      target: Node,
-      directDescendantsOnly: Boolean,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: Double,
-      onAnimationEnd: js.UndefOr[scala.Nothing],
-      onAnimationLoop: js.Function0[Unit]
-    ): js.Array[Animatable] = js.native
-    def beginDirectHierarchyAnimation(
-      target: Node,
-      directDescendantsOnly: Boolean,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: Double,
-      onAnimationEnd: js.UndefOr[scala.Nothing],
-      onAnimationLoop: js.Function0[Unit],
-      isAdditive: Boolean
-    ): js.Array[Animatable] = js.native
-    def beginDirectHierarchyAnimation(
-      target: Node,
-      directDescendantsOnly: Boolean,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: Double,
-      onAnimationEnd: js.Function0[Unit]
-    ): js.Array[Animatable] = js.native
-    def beginDirectHierarchyAnimation(
-      target: Node,
-      directDescendantsOnly: Boolean,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: Double,
-      onAnimationEnd: js.Function0[Unit],
-      onAnimationLoop: js.UndefOr[scala.Nothing],
-      isAdditive: Boolean
-    ): js.Array[Animatable] = js.native
-    def beginDirectHierarchyAnimation(
-      target: Node,
-      directDescendantsOnly: Boolean,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: Double,
-      onAnimationEnd: js.Function0[Unit],
-      onAnimationLoop: js.Function0[Unit]
-    ): js.Array[Animatable] = js.native
-    def beginDirectHierarchyAnimation(
-      target: Node,
-      directDescendantsOnly: Boolean,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: Double,
-      onAnimationEnd: js.Function0[Unit],
-      onAnimationLoop: js.Function0[Unit],
-      isAdditive: Boolean
-    ): js.Array[Animatable] = js.native
-    def beginDirectHierarchyAnimation(
-      target: Node,
-      directDescendantsOnly: Boolean,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
       loop: Boolean
     ): js.Array[Animatable] = js.native
     def beginDirectHierarchyAnimation(
@@ -2266,86 +2062,6 @@ object sceneMod {
       from: Double,
       to: Double,
       loop: Boolean,
-      speedRatio: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.UndefOr[scala.Nothing],
-      onAnimationLoop: js.UndefOr[scala.Nothing],
-      isAdditive: Boolean
-    ): js.Array[Animatable] = js.native
-    def beginDirectHierarchyAnimation(
-      target: Node,
-      directDescendantsOnly: Boolean,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: Boolean,
-      speedRatio: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.UndefOr[scala.Nothing],
-      onAnimationLoop: js.Function0[Unit]
-    ): js.Array[Animatable] = js.native
-    def beginDirectHierarchyAnimation(
-      target: Node,
-      directDescendantsOnly: Boolean,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: Boolean,
-      speedRatio: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.UndefOr[scala.Nothing],
-      onAnimationLoop: js.Function0[Unit],
-      isAdditive: Boolean
-    ): js.Array[Animatable] = js.native
-    def beginDirectHierarchyAnimation(
-      target: Node,
-      directDescendantsOnly: Boolean,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: Boolean,
-      speedRatio: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.Function0[Unit]
-    ): js.Array[Animatable] = js.native
-    def beginDirectHierarchyAnimation(
-      target: Node,
-      directDescendantsOnly: Boolean,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: Boolean,
-      speedRatio: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.Function0[Unit],
-      onAnimationLoop: js.UndefOr[scala.Nothing],
-      isAdditive: Boolean
-    ): js.Array[Animatable] = js.native
-    def beginDirectHierarchyAnimation(
-      target: Node,
-      directDescendantsOnly: Boolean,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: Boolean,
-      speedRatio: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.Function0[Unit],
-      onAnimationLoop: js.Function0[Unit]
-    ): js.Array[Animatable] = js.native
-    def beginDirectHierarchyAnimation(
-      target: Node,
-      directDescendantsOnly: Boolean,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: Boolean,
-      speedRatio: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.Function0[Unit],
-      onAnimationLoop: js.Function0[Unit],
-      isAdditive: Boolean
-    ): js.Array[Animatable] = js.native
-    def beginDirectHierarchyAnimation(
-      target: Node,
-      directDescendantsOnly: Boolean,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: Boolean,
       speedRatio: Double
     ): js.Array[Animatable] = js.native
     def beginDirectHierarchyAnimation(
@@ -2356,41 +2072,6 @@ object sceneMod {
       to: Double,
       loop: Boolean,
       speedRatio: Double,
-      onAnimationEnd: js.UndefOr[scala.Nothing],
-      onAnimationLoop: js.UndefOr[scala.Nothing],
-      isAdditive: Boolean
-    ): js.Array[Animatable] = js.native
-    def beginDirectHierarchyAnimation(
-      target: Node,
-      directDescendantsOnly: Boolean,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: Boolean,
-      speedRatio: Double,
-      onAnimationEnd: js.UndefOr[scala.Nothing],
-      onAnimationLoop: js.Function0[Unit]
-    ): js.Array[Animatable] = js.native
-    def beginDirectHierarchyAnimation(
-      target: Node,
-      directDescendantsOnly: Boolean,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: Boolean,
-      speedRatio: Double,
-      onAnimationEnd: js.UndefOr[scala.Nothing],
-      onAnimationLoop: js.Function0[Unit],
-      isAdditive: Boolean
-    ): js.Array[Animatable] = js.native
-    def beginDirectHierarchyAnimation(
-      target: Node,
-      directDescendantsOnly: Boolean,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: Boolean,
-      speedRatio: Double,
       onAnimationEnd: js.Function0[Unit]
     ): js.Array[Animatable] = js.native
     def beginDirectHierarchyAnimation(
@@ -2402,18 +2083,6 @@ object sceneMod {
       loop: Boolean,
       speedRatio: Double,
       onAnimationEnd: js.Function0[Unit],
-      onAnimationLoop: js.UndefOr[scala.Nothing],
-      isAdditive: Boolean
-    ): js.Array[Animatable] = js.native
-    def beginDirectHierarchyAnimation(
-      target: Node,
-      directDescendantsOnly: Boolean,
-      animations: js.Array[Animation],
-      from: Double,
-      to: Double,
-      loop: Boolean,
-      speedRatio: Double,
-      onAnimationEnd: js.Function0[Unit],
       onAnimationLoop: js.Function0[Unit]
     ): js.Array[Animatable] = js.native
     def beginDirectHierarchyAnimation(
@@ -2426,6 +2095,302 @@ object sceneMod {
       speedRatio: Double,
       onAnimationEnd: js.Function0[Unit],
       onAnimationLoop: js.Function0[Unit],
+      isAdditive: Boolean
+    ): js.Array[Animatable] = js.native
+    def beginDirectHierarchyAnimation(
+      target: Node,
+      directDescendantsOnly: Boolean,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Boolean,
+      speedRatio: Double,
+      onAnimationEnd: js.Function0[Unit],
+      onAnimationLoop: Unit,
+      isAdditive: Boolean
+    ): js.Array[Animatable] = js.native
+    def beginDirectHierarchyAnimation(
+      target: Node,
+      directDescendantsOnly: Boolean,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Boolean,
+      speedRatio: Double,
+      onAnimationEnd: Unit,
+      onAnimationLoop: js.Function0[Unit]
+    ): js.Array[Animatable] = js.native
+    def beginDirectHierarchyAnimation(
+      target: Node,
+      directDescendantsOnly: Boolean,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Boolean,
+      speedRatio: Double,
+      onAnimationEnd: Unit,
+      onAnimationLoop: js.Function0[Unit],
+      isAdditive: Boolean
+    ): js.Array[Animatable] = js.native
+    def beginDirectHierarchyAnimation(
+      target: Node,
+      directDescendantsOnly: Boolean,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Boolean,
+      speedRatio: Double,
+      onAnimationEnd: Unit,
+      onAnimationLoop: Unit,
+      isAdditive: Boolean
+    ): js.Array[Animatable] = js.native
+    def beginDirectHierarchyAnimation(
+      target: Node,
+      directDescendantsOnly: Boolean,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Boolean,
+      speedRatio: Unit,
+      onAnimationEnd: js.Function0[Unit]
+    ): js.Array[Animatable] = js.native
+    def beginDirectHierarchyAnimation(
+      target: Node,
+      directDescendantsOnly: Boolean,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Boolean,
+      speedRatio: Unit,
+      onAnimationEnd: js.Function0[Unit],
+      onAnimationLoop: js.Function0[Unit]
+    ): js.Array[Animatable] = js.native
+    def beginDirectHierarchyAnimation(
+      target: Node,
+      directDescendantsOnly: Boolean,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Boolean,
+      speedRatio: Unit,
+      onAnimationEnd: js.Function0[Unit],
+      onAnimationLoop: js.Function0[Unit],
+      isAdditive: Boolean
+    ): js.Array[Animatable] = js.native
+    def beginDirectHierarchyAnimation(
+      target: Node,
+      directDescendantsOnly: Boolean,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Boolean,
+      speedRatio: Unit,
+      onAnimationEnd: js.Function0[Unit],
+      onAnimationLoop: Unit,
+      isAdditive: Boolean
+    ): js.Array[Animatable] = js.native
+    def beginDirectHierarchyAnimation(
+      target: Node,
+      directDescendantsOnly: Boolean,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Boolean,
+      speedRatio: Unit,
+      onAnimationEnd: Unit,
+      onAnimationLoop: js.Function0[Unit]
+    ): js.Array[Animatable] = js.native
+    def beginDirectHierarchyAnimation(
+      target: Node,
+      directDescendantsOnly: Boolean,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Boolean,
+      speedRatio: Unit,
+      onAnimationEnd: Unit,
+      onAnimationLoop: js.Function0[Unit],
+      isAdditive: Boolean
+    ): js.Array[Animatable] = js.native
+    def beginDirectHierarchyAnimation(
+      target: Node,
+      directDescendantsOnly: Boolean,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Boolean,
+      speedRatio: Unit,
+      onAnimationEnd: Unit,
+      onAnimationLoop: Unit,
+      isAdditive: Boolean
+    ): js.Array[Animatable] = js.native
+    def beginDirectHierarchyAnimation(
+      target: Node,
+      directDescendantsOnly: Boolean,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Unit,
+      speedRatio: Double
+    ): js.Array[Animatable] = js.native
+    def beginDirectHierarchyAnimation(
+      target: Node,
+      directDescendantsOnly: Boolean,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Unit,
+      speedRatio: Double,
+      onAnimationEnd: js.Function0[Unit]
+    ): js.Array[Animatable] = js.native
+    def beginDirectHierarchyAnimation(
+      target: Node,
+      directDescendantsOnly: Boolean,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Unit,
+      speedRatio: Double,
+      onAnimationEnd: js.Function0[Unit],
+      onAnimationLoop: js.Function0[Unit]
+    ): js.Array[Animatable] = js.native
+    def beginDirectHierarchyAnimation(
+      target: Node,
+      directDescendantsOnly: Boolean,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Unit,
+      speedRatio: Double,
+      onAnimationEnd: js.Function0[Unit],
+      onAnimationLoop: js.Function0[Unit],
+      isAdditive: Boolean
+    ): js.Array[Animatable] = js.native
+    def beginDirectHierarchyAnimation(
+      target: Node,
+      directDescendantsOnly: Boolean,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Unit,
+      speedRatio: Double,
+      onAnimationEnd: js.Function0[Unit],
+      onAnimationLoop: Unit,
+      isAdditive: Boolean
+    ): js.Array[Animatable] = js.native
+    def beginDirectHierarchyAnimation(
+      target: Node,
+      directDescendantsOnly: Boolean,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Unit,
+      speedRatio: Double,
+      onAnimationEnd: Unit,
+      onAnimationLoop: js.Function0[Unit]
+    ): js.Array[Animatable] = js.native
+    def beginDirectHierarchyAnimation(
+      target: Node,
+      directDescendantsOnly: Boolean,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Unit,
+      speedRatio: Double,
+      onAnimationEnd: Unit,
+      onAnimationLoop: js.Function0[Unit],
+      isAdditive: Boolean
+    ): js.Array[Animatable] = js.native
+    def beginDirectHierarchyAnimation(
+      target: Node,
+      directDescendantsOnly: Boolean,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Unit,
+      speedRatio: Double,
+      onAnimationEnd: Unit,
+      onAnimationLoop: Unit,
+      isAdditive: Boolean
+    ): js.Array[Animatable] = js.native
+    def beginDirectHierarchyAnimation(
+      target: Node,
+      directDescendantsOnly: Boolean,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Unit,
+      speedRatio: Unit,
+      onAnimationEnd: js.Function0[Unit]
+    ): js.Array[Animatable] = js.native
+    def beginDirectHierarchyAnimation(
+      target: Node,
+      directDescendantsOnly: Boolean,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Unit,
+      speedRatio: Unit,
+      onAnimationEnd: js.Function0[Unit],
+      onAnimationLoop: js.Function0[Unit]
+    ): js.Array[Animatable] = js.native
+    def beginDirectHierarchyAnimation(
+      target: Node,
+      directDescendantsOnly: Boolean,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Unit,
+      speedRatio: Unit,
+      onAnimationEnd: js.Function0[Unit],
+      onAnimationLoop: js.Function0[Unit],
+      isAdditive: Boolean
+    ): js.Array[Animatable] = js.native
+    def beginDirectHierarchyAnimation(
+      target: Node,
+      directDescendantsOnly: Boolean,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Unit,
+      speedRatio: Unit,
+      onAnimationEnd: js.Function0[Unit],
+      onAnimationLoop: Unit,
+      isAdditive: Boolean
+    ): js.Array[Animatable] = js.native
+    def beginDirectHierarchyAnimation(
+      target: Node,
+      directDescendantsOnly: Boolean,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Unit,
+      speedRatio: Unit,
+      onAnimationEnd: Unit,
+      onAnimationLoop: js.Function0[Unit]
+    ): js.Array[Animatable] = js.native
+    def beginDirectHierarchyAnimation(
+      target: Node,
+      directDescendantsOnly: Boolean,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Unit,
+      speedRatio: Unit,
+      onAnimationEnd: Unit,
+      onAnimationLoop: js.Function0[Unit],
+      isAdditive: Boolean
+    ): js.Array[Animatable] = js.native
+    def beginDirectHierarchyAnimation(
+      target: Node,
+      directDescendantsOnly: Boolean,
+      animations: js.Array[Animation],
+      from: Double,
+      to: Double,
+      loop: Unit,
+      speedRatio: Unit,
+      onAnimationEnd: Unit,
+      onAnimationLoop: Unit,
       isAdditive: Boolean
     ): js.Array[Animatable] = js.native
     
@@ -2522,11 +2487,27 @@ object sceneMod {
     var clearColor: Color4 = js.native
     
     /**
+      * Gets or sets the active clipplane 1
+      */
+    /* CompleteClass */
+    var clipPlane: Nullable[typings.babylonjs.mathMod.Plane] = js.native
+    
+    /**
+      * Gets or sets the active clipplane 2
+      */
+    /* CompleteClass */
+    var clipPlane2: Nullable[typings.babylonjs.mathMod.Plane] = js.native
+    /**
       * Gets or sets the active clipplane 2
       */
     @JSName("clipPlane2")
     var clipPlane2_Scene: Nullable[Plane] = js.native
     
+    /**
+      * Gets or sets the active clipplane 3
+      */
+    /* CompleteClass */
+    var clipPlane3: Nullable[typings.babylonjs.mathMod.Plane] = js.native
     /**
       * Gets or sets the active clipplane 3
       */
@@ -2536,15 +2517,30 @@ object sceneMod {
     /**
       * Gets or sets the active clipplane 4
       */
+    /* CompleteClass */
+    var clipPlane4: Nullable[typings.babylonjs.mathMod.Plane] = js.native
+    /**
+      * Gets or sets the active clipplane 4
+      */
     @JSName("clipPlane4")
     var clipPlane4_Scene: Nullable[Plane] = js.native
     
     /**
       * Gets or sets the active clipplane 5
       */
+    /* CompleteClass */
+    var clipPlane5: Nullable[typings.babylonjs.mathMod.Plane] = js.native
+    /**
+      * Gets or sets the active clipplane 5
+      */
     @JSName("clipPlane5")
     var clipPlane5_Scene: Nullable[Plane] = js.native
     
+    /**
+      * Gets or sets the active clipplane 6
+      */
+    /* CompleteClass */
+    var clipPlane6: Nullable[typings.babylonjs.mathMod.Plane] = js.native
     /**
       * Gets or sets the active clipplane 6
       */
@@ -2580,17 +2576,13 @@ object sceneMod {
       * @param attachCameraControls has default false, when true attaches camera controls to the canvas.
       */
     def createDefaultCamera(): Unit = js.native
-    def createDefaultCamera(
-      createArcRotateCamera: js.UndefOr[scala.Nothing],
-      replace: js.UndefOr[scala.Nothing],
-      attachCameraControls: Boolean
-    ): Unit = js.native
-    def createDefaultCamera(createArcRotateCamera: js.UndefOr[scala.Nothing], replace: Boolean): Unit = js.native
-    def createDefaultCamera(createArcRotateCamera: js.UndefOr[scala.Nothing], replace: Boolean, attachCameraControls: Boolean): Unit = js.native
     def createDefaultCamera(createArcRotateCamera: Boolean): Unit = js.native
-    def createDefaultCamera(createArcRotateCamera: Boolean, replace: js.UndefOr[scala.Nothing], attachCameraControls: Boolean): Unit = js.native
     def createDefaultCamera(createArcRotateCamera: Boolean, replace: Boolean): Unit = js.native
     def createDefaultCamera(createArcRotateCamera: Boolean, replace: Boolean, attachCameraControls: Boolean): Unit = js.native
+    def createDefaultCamera(createArcRotateCamera: Boolean, replace: Unit, attachCameraControls: Boolean): Unit = js.native
+    def createDefaultCamera(createArcRotateCamera: Unit, replace: Boolean): Unit = js.native
+    def createDefaultCamera(createArcRotateCamera: Unit, replace: Boolean, attachCameraControls: Boolean): Unit = js.native
+    def createDefaultCamera(createArcRotateCamera: Unit, replace: Unit, attachCameraControls: Boolean): Unit = js.native
     
     /**
       * Creates a default camera and a default light.
@@ -2600,17 +2592,13 @@ object sceneMod {
       * @param attachCameraControls has the default false, when true attaches camera controls to the canvas.
       */
     def createDefaultCameraOrLight(): Unit = js.native
-    def createDefaultCameraOrLight(
-      createArcRotateCamera: js.UndefOr[scala.Nothing],
-      replace: js.UndefOr[scala.Nothing],
-      attachCameraControls: Boolean
-    ): Unit = js.native
-    def createDefaultCameraOrLight(createArcRotateCamera: js.UndefOr[scala.Nothing], replace: Boolean): Unit = js.native
-    def createDefaultCameraOrLight(createArcRotateCamera: js.UndefOr[scala.Nothing], replace: Boolean, attachCameraControls: Boolean): Unit = js.native
     def createDefaultCameraOrLight(createArcRotateCamera: Boolean): Unit = js.native
-    def createDefaultCameraOrLight(createArcRotateCamera: Boolean, replace: js.UndefOr[scala.Nothing], attachCameraControls: Boolean): Unit = js.native
     def createDefaultCameraOrLight(createArcRotateCamera: Boolean, replace: Boolean): Unit = js.native
     def createDefaultCameraOrLight(createArcRotateCamera: Boolean, replace: Boolean, attachCameraControls: Boolean): Unit = js.native
+    def createDefaultCameraOrLight(createArcRotateCamera: Boolean, replace: Unit, attachCameraControls: Boolean): Unit = js.native
+    def createDefaultCameraOrLight(createArcRotateCamera: Unit, replace: Boolean): Unit = js.native
+    def createDefaultCameraOrLight(createArcRotateCamera: Unit, replace: Boolean, attachCameraControls: Boolean): Unit = js.native
+    def createDefaultCameraOrLight(createArcRotateCamera: Unit, replace: Unit, attachCameraControls: Boolean): Unit = js.native
     
     /**
       * Creates a new environment
@@ -2640,145 +2628,24 @@ object sceneMod {
       * @returns a new mesh holding the sky box
       */
     def createDefaultSkybox(): Nullable[Mesh] = js.native
-    def createDefaultSkybox(
-      environmentTexture: js.UndefOr[scala.Nothing],
-      pbr: js.UndefOr[scala.Nothing],
-      scale: js.UndefOr[scala.Nothing],
-      blur: js.UndefOr[scala.Nothing],
-      setGlobalEnvTexture: Boolean
-    ): Nullable[Mesh] = js.native
-    def createDefaultSkybox(
-      environmentTexture: js.UndefOr[scala.Nothing],
-      pbr: js.UndefOr[scala.Nothing],
-      scale: js.UndefOr[scala.Nothing],
-      blur: Double
-    ): Nullable[Mesh] = js.native
-    def createDefaultSkybox(
-      environmentTexture: js.UndefOr[scala.Nothing],
-      pbr: js.UndefOr[scala.Nothing],
-      scale: js.UndefOr[scala.Nothing],
-      blur: Double,
-      setGlobalEnvTexture: Boolean
-    ): Nullable[Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: js.UndefOr[scala.Nothing], pbr: js.UndefOr[scala.Nothing], scale: Double): Nullable[Mesh] = js.native
-    def createDefaultSkybox(
-      environmentTexture: js.UndefOr[scala.Nothing],
-      pbr: js.UndefOr[scala.Nothing],
-      scale: Double,
-      blur: js.UndefOr[scala.Nothing],
-      setGlobalEnvTexture: Boolean
-    ): Nullable[Mesh] = js.native
-    def createDefaultSkybox(
-      environmentTexture: js.UndefOr[scala.Nothing],
-      pbr: js.UndefOr[scala.Nothing],
-      scale: Double,
-      blur: Double
-    ): Nullable[Mesh] = js.native
-    def createDefaultSkybox(
-      environmentTexture: js.UndefOr[scala.Nothing],
-      pbr: js.UndefOr[scala.Nothing],
-      scale: Double,
-      blur: Double,
-      setGlobalEnvTexture: Boolean
-    ): Nullable[Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: js.UndefOr[scala.Nothing], pbr: Boolean): Nullable[Mesh] = js.native
-    def createDefaultSkybox(
-      environmentTexture: js.UndefOr[scala.Nothing],
-      pbr: Boolean,
-      scale: js.UndefOr[scala.Nothing],
-      blur: js.UndefOr[scala.Nothing],
-      setGlobalEnvTexture: Boolean
-    ): Nullable[Mesh] = js.native
-    def createDefaultSkybox(
-      environmentTexture: js.UndefOr[scala.Nothing],
-      pbr: Boolean,
-      scale: js.UndefOr[scala.Nothing],
-      blur: Double
-    ): Nullable[Mesh] = js.native
-    def createDefaultSkybox(
-      environmentTexture: js.UndefOr[scala.Nothing],
-      pbr: Boolean,
-      scale: js.UndefOr[scala.Nothing],
-      blur: Double,
-      setGlobalEnvTexture: Boolean
-    ): Nullable[Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: js.UndefOr[scala.Nothing], pbr: Boolean, scale: Double): Nullable[Mesh] = js.native
-    def createDefaultSkybox(
-      environmentTexture: js.UndefOr[scala.Nothing],
-      pbr: Boolean,
-      scale: Double,
-      blur: js.UndefOr[scala.Nothing],
-      setGlobalEnvTexture: Boolean
-    ): Nullable[Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: js.UndefOr[scala.Nothing], pbr: Boolean, scale: Double, blur: Double): Nullable[Mesh] = js.native
-    def createDefaultSkybox(
-      environmentTexture: js.UndefOr[scala.Nothing],
-      pbr: Boolean,
-      scale: Double,
-      blur: Double,
-      setGlobalEnvTexture: Boolean
-    ): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Double): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Double, blur: Double): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Double, blur: Double, setGlobalEnvTexture: Boolean): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Double, blur: Unit, setGlobalEnvTexture: Boolean): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Unit, blur: Double): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Unit, blur: Double, setGlobalEnvTexture: Boolean): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Unit, blur: Unit, setGlobalEnvTexture: Boolean): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Double): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Double, blur: Double): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Double, blur: Double, setGlobalEnvTexture: Boolean): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Double, blur: Unit, setGlobalEnvTexture: Boolean): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Unit, blur: Double): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Unit, blur: Double, setGlobalEnvTexture: Boolean): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Unit, blur: Unit, setGlobalEnvTexture: Boolean): Nullable[Mesh] = js.native
     def createDefaultSkybox(environmentTexture: BaseTexture): Nullable[Mesh] = js.native
-    def createDefaultSkybox(
-      environmentTexture: BaseTexture,
-      pbr: js.UndefOr[scala.Nothing],
-      scale: js.UndefOr[scala.Nothing],
-      blur: js.UndefOr[scala.Nothing],
-      setGlobalEnvTexture: Boolean
-    ): Nullable[Mesh] = js.native
-    def createDefaultSkybox(
-      environmentTexture: BaseTexture,
-      pbr: js.UndefOr[scala.Nothing],
-      scale: js.UndefOr[scala.Nothing],
-      blur: Double
-    ): Nullable[Mesh] = js.native
-    def createDefaultSkybox(
-      environmentTexture: BaseTexture,
-      pbr: js.UndefOr[scala.Nothing],
-      scale: js.UndefOr[scala.Nothing],
-      blur: Double,
-      setGlobalEnvTexture: Boolean
-    ): Nullable[Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: BaseTexture, pbr: js.UndefOr[scala.Nothing], scale: Double): Nullable[Mesh] = js.native
-    def createDefaultSkybox(
-      environmentTexture: BaseTexture,
-      pbr: js.UndefOr[scala.Nothing],
-      scale: Double,
-      blur: js.UndefOr[scala.Nothing],
-      setGlobalEnvTexture: Boolean
-    ): Nullable[Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: BaseTexture, pbr: js.UndefOr[scala.Nothing], scale: Double, blur: Double): Nullable[Mesh] = js.native
-    def createDefaultSkybox(
-      environmentTexture: BaseTexture,
-      pbr: js.UndefOr[scala.Nothing],
-      scale: Double,
-      blur: Double,
-      setGlobalEnvTexture: Boolean
-    ): Nullable[Mesh] = js.native
     def createDefaultSkybox(environmentTexture: BaseTexture, pbr: Boolean): Nullable[Mesh] = js.native
-    def createDefaultSkybox(
-      environmentTexture: BaseTexture,
-      pbr: Boolean,
-      scale: js.UndefOr[scala.Nothing],
-      blur: js.UndefOr[scala.Nothing],
-      setGlobalEnvTexture: Boolean
-    ): Nullable[Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: BaseTexture, pbr: Boolean, scale: js.UndefOr[scala.Nothing], blur: Double): Nullable[Mesh] = js.native
-    def createDefaultSkybox(
-      environmentTexture: BaseTexture,
-      pbr: Boolean,
-      scale: js.UndefOr[scala.Nothing],
-      blur: Double,
-      setGlobalEnvTexture: Boolean
-    ): Nullable[Mesh] = js.native
     def createDefaultSkybox(environmentTexture: BaseTexture, pbr: Boolean, scale: Double): Nullable[Mesh] = js.native
-    def createDefaultSkybox(
-      environmentTexture: BaseTexture,
-      pbr: Boolean,
-      scale: Double,
-      blur: js.UndefOr[scala.Nothing],
-      setGlobalEnvTexture: Boolean
-    ): Nullable[Mesh] = js.native
     def createDefaultSkybox(environmentTexture: BaseTexture, pbr: Boolean, scale: Double, blur: Double): Nullable[Mesh] = js.native
     def createDefaultSkybox(
       environmentTexture: BaseTexture,
@@ -2787,6 +2654,53 @@ object sceneMod {
       blur: Double,
       setGlobalEnvTexture: Boolean
     ): Nullable[Mesh] = js.native
+    def createDefaultSkybox(
+      environmentTexture: BaseTexture,
+      pbr: Boolean,
+      scale: Double,
+      blur: Unit,
+      setGlobalEnvTexture: Boolean
+    ): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: BaseTexture, pbr: Boolean, scale: Unit, blur: Double): Nullable[Mesh] = js.native
+    def createDefaultSkybox(
+      environmentTexture: BaseTexture,
+      pbr: Boolean,
+      scale: Unit,
+      blur: Double,
+      setGlobalEnvTexture: Boolean
+    ): Nullable[Mesh] = js.native
+    def createDefaultSkybox(
+      environmentTexture: BaseTexture,
+      pbr: Boolean,
+      scale: Unit,
+      blur: Unit,
+      setGlobalEnvTexture: Boolean
+    ): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: BaseTexture, pbr: Unit, scale: Double): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: BaseTexture, pbr: Unit, scale: Double, blur: Double): Nullable[Mesh] = js.native
+    def createDefaultSkybox(
+      environmentTexture: BaseTexture,
+      pbr: Unit,
+      scale: Double,
+      blur: Double,
+      setGlobalEnvTexture: Boolean
+    ): Nullable[Mesh] = js.native
+    def createDefaultSkybox(
+      environmentTexture: BaseTexture,
+      pbr: Unit,
+      scale: Double,
+      blur: Unit,
+      setGlobalEnvTexture: Boolean
+    ): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: BaseTexture, pbr: Unit, scale: Unit, blur: Double): Nullable[Mesh] = js.native
+    def createDefaultSkybox(
+      environmentTexture: BaseTexture,
+      pbr: Unit,
+      scale: Unit,
+      blur: Double,
+      setGlobalEnvTexture: Boolean
+    ): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: BaseTexture, pbr: Unit, scale: Unit, blur: Unit, setGlobalEnvTexture: Boolean): Nullable[Mesh] = js.native
     
     /**
       * Creates a new VREXperienceHelper
@@ -2813,9 +2727,9 @@ object sceneMod {
       * @returns an octree of AbstractMesh
       */
     def createOrUpdateSelectionOctree(): Octree[AbstractMesh] = js.native
-    def createOrUpdateSelectionOctree(maxCapacity: js.UndefOr[scala.Nothing], maxDepth: Double): Octree[AbstractMesh] = js.native
     def createOrUpdateSelectionOctree(maxCapacity: Double): Octree[AbstractMesh] = js.native
     def createOrUpdateSelectionOctree(maxCapacity: Double, maxDepth: Double): Octree[AbstractMesh] = js.native
+    def createOrUpdateSelectionOctree(maxCapacity: Unit, maxDepth: Double): Octree[AbstractMesh] = js.native
     
     /**
       * Creates a ray that can be used to pick in the scene
@@ -2963,14 +2877,13 @@ object sceneMod {
       * @returns the created depth renderer
       */
     def enableDepthRenderer(): DepthRenderer = js.native
-    def enableDepthRenderer(
-      camera: js.UndefOr[Nullable[Camera]],
-      storeNonLinearDepth: js.UndefOr[scala.Nothing],
-      force32bitsFloat: Boolean
-    ): DepthRenderer = js.native
-    def enableDepthRenderer(camera: js.UndefOr[Nullable[Camera]], storeNonLinearDepth: Boolean): DepthRenderer = js.native
-    def enableDepthRenderer(camera: js.UndefOr[Nullable[Camera]], storeNonLinearDepth: Boolean, force32bitsFloat: Boolean): DepthRenderer = js.native
+    def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Boolean): DepthRenderer = js.native
+    def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Boolean, force32bitsFloat: Boolean): DepthRenderer = js.native
+    def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Unit, force32bitsFloat: Boolean): DepthRenderer = js.native
     def enableDepthRenderer(camera: Nullable[Camera]): DepthRenderer = js.native
+    def enableDepthRenderer(camera: Nullable[Camera], storeNonLinearDepth: Boolean): DepthRenderer = js.native
+    def enableDepthRenderer(camera: Nullable[Camera], storeNonLinearDepth: Boolean, force32bitsFloat: Boolean): DepthRenderer = js.native
+    def enableDepthRenderer(camera: Nullable[Camera], storeNonLinearDepth: Unit, force32bitsFloat: Boolean): DepthRenderer = js.native
     
     /**
       * Enables a GeometryBufferRender and associates it with the scene
@@ -3119,29 +3032,25 @@ object sceneMod {
       * @returns the current scene
       */
     def freezeActiveMeshes(): Scene = js.native
-    def freezeActiveMeshes(
-      skipEvaluateActiveMeshes: js.UndefOr[scala.Nothing],
-      onSuccess: js.UndefOr[scala.Nothing],
-      onError: js.Function1[/* message */ String, Unit]
-    ): Scene = js.native
-    def freezeActiveMeshes(skipEvaluateActiveMeshes: js.UndefOr[scala.Nothing], onSuccess: js.Function0[Unit]): Scene = js.native
-    def freezeActiveMeshes(
-      skipEvaluateActiveMeshes: js.UndefOr[scala.Nothing],
-      onSuccess: js.Function0[Unit],
-      onError: js.Function1[/* message */ String, Unit]
-    ): Scene = js.native
     def freezeActiveMeshes(skipEvaluateActiveMeshes: Boolean): Scene = js.native
-    def freezeActiveMeshes(
-      skipEvaluateActiveMeshes: Boolean,
-      onSuccess: js.UndefOr[scala.Nothing],
-      onError: js.Function1[/* message */ String, Unit]
-    ): Scene = js.native
     def freezeActiveMeshes(skipEvaluateActiveMeshes: Boolean, onSuccess: js.Function0[Unit]): Scene = js.native
     def freezeActiveMeshes(
       skipEvaluateActiveMeshes: Boolean,
       onSuccess: js.Function0[Unit],
       onError: js.Function1[/* message */ String, Unit]
     ): Scene = js.native
+    def freezeActiveMeshes(
+      skipEvaluateActiveMeshes: Boolean,
+      onSuccess: Unit,
+      onError: js.Function1[/* message */ String, Unit]
+    ): Scene = js.native
+    def freezeActiveMeshes(skipEvaluateActiveMeshes: Unit, onSuccess: js.Function0[Unit]): Scene = js.native
+    def freezeActiveMeshes(
+      skipEvaluateActiveMeshes: Unit,
+      onSuccess: js.Function0[Unit],
+      onError: js.Function1[/* message */ String, Unit]
+    ): Scene = js.native
+    def freezeActiveMeshes(skipEvaluateActiveMeshes: Unit, onSuccess: Unit, onError: js.Function1[/* message */ String, Unit]): Scene = js.native
     
     /**
       * Freeze all materials
@@ -3163,7 +3072,7 @@ object sceneMod {
     /**
       * an optional map from Geometry Id to Geometry index in the 'geometries' array
       */
-    var geometriesByUniqueId: js.Any = js.native
+    /* private */ var geometriesByUniqueId: js.Any = js.native
     
     /**
       * Gets or Sets the current geometry buffer associated to the scene.
@@ -3842,27 +3751,12 @@ object sceneMod {
       * @returns an array of PickingInfo
       */
     def multiPick(x: Double, y: Double): Nullable[js.Array[PickingInfo]] = js.native
-    def multiPick(
-      x: Double,
-      y: Double,
-      predicate: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      trianglePredicate: TrianglePickingPredicate
-    ): Nullable[js.Array[PickingInfo]] = js.native
-    def multiPick(x: Double, y: Double, predicate: js.UndefOr[scala.Nothing], camera: Camera): Nullable[js.Array[PickingInfo]] = js.native
-    def multiPick(
-      x: Double,
-      y: Double,
-      predicate: js.UndefOr[scala.Nothing],
-      camera: Camera,
-      trianglePredicate: TrianglePickingPredicate
-    ): Nullable[js.Array[PickingInfo]] = js.native
     def multiPick(x: Double, y: Double, predicate: js.Function1[/* mesh */ AbstractMesh, Boolean]): Nullable[js.Array[PickingInfo]] = js.native
     def multiPick(
       x: Double,
       y: Double,
       predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
-      camera: js.UndefOr[scala.Nothing],
+      camera: Unit,
       trianglePredicate: TrianglePickingPredicate
     ): Nullable[js.Array[PickingInfo]] = js.native
     def multiPick(x: Double, y: Double, predicate: js.Function1[/* mesh */ AbstractMesh, Boolean], camera: Camera): Nullable[js.Array[PickingInfo]] = js.native
@@ -3873,6 +3767,9 @@ object sceneMod {
       camera: Camera,
       trianglePredicate: TrianglePickingPredicate
     ): Nullable[js.Array[PickingInfo]] = js.native
+    def multiPick(x: Double, y: Double, predicate: Unit, camera: Unit, trianglePredicate: TrianglePickingPredicate): Nullable[js.Array[PickingInfo]] = js.native
+    def multiPick(x: Double, y: Double, predicate: Unit, camera: Camera): Nullable[js.Array[PickingInfo]] = js.native
+    def multiPick(x: Double, y: Double, predicate: Unit, camera: Camera, trianglePredicate: TrianglePickingPredicate): Nullable[js.Array[PickingInfo]] = js.native
     
     /** Launch a ray to try to pick sprites in the scene
       * @param x position on screen
@@ -3882,9 +3779,9 @@ object sceneMod {
       * @returns a PickingInfo array
       */
     def multiPickSprite(x: Double, y: Double): Nullable[js.Array[PickingInfo]] = js.native
-    def multiPickSprite(x: Double, y: Double, predicate: js.UndefOr[scala.Nothing], camera: Camera): Nullable[js.Array[PickingInfo]] = js.native
     def multiPickSprite(x: Double, y: Double, predicate: js.Function1[/* sprite */ Sprite, Boolean]): Nullable[js.Array[PickingInfo]] = js.native
     def multiPickSprite(x: Double, y: Double, predicate: js.Function1[/* sprite */ Sprite, Boolean], camera: Camera): Nullable[js.Array[PickingInfo]] = js.native
+    def multiPickSprite(x: Double, y: Double, predicate: Unit, camera: Camera): Nullable[js.Array[PickingInfo]] = js.native
     
     /** Use the given ray to pick sprites in the scene
       * @param ray The ray (in world space) to use to pick meshes
@@ -3893,9 +3790,9 @@ object sceneMod {
       * @returns a PickingInfo array
       */
     def multiPickSpriteWithRay(ray: Ray): Nullable[js.Array[PickingInfo]] = js.native
-    def multiPickSpriteWithRay(ray: Ray, predicate: js.UndefOr[scala.Nothing], camera: Camera): Nullable[js.Array[PickingInfo]] = js.native
     def multiPickSpriteWithRay(ray: Ray, predicate: js.Function1[/* sprite */ Sprite, Boolean]): Nullable[js.Array[PickingInfo]] = js.native
     def multiPickSpriteWithRay(ray: Ray, predicate: js.Function1[/* sprite */ Sprite, Boolean], camera: Camera): Nullable[js.Array[PickingInfo]] = js.native
+    def multiPickSpriteWithRay(ray: Ray, predicate: Unit, camera: Camera): Nullable[js.Array[PickingInfo]] = js.native
     
     /**
       * Launch a ray to try to pick a mesh in the scene
@@ -4219,53 +4116,7 @@ object sceneMod {
       * @returns a PickingInfo
       */
     def pick(x: Double, y: Double): Nullable[PickingInfo] = js.native
-    def pick(
-      x: Double,
-      y: Double,
-      predicate: js.UndefOr[scala.Nothing],
-      fastCheck: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[Nullable[Camera]],
-      trianglePredicate: TrianglePickingPredicate
-    ): Nullable[PickingInfo] = js.native
-    def pick(
-      x: Double,
-      y: Double,
-      predicate: js.UndefOr[scala.Nothing],
-      fastCheck: js.UndefOr[scala.Nothing],
-      camera: Nullable[Camera]
-    ): Nullable[PickingInfo] = js.native
-    def pick(x: Double, y: Double, predicate: js.UndefOr[scala.Nothing], fastCheck: Boolean): Nullable[PickingInfo] = js.native
-    def pick(
-      x: Double,
-      y: Double,
-      predicate: js.UndefOr[scala.Nothing],
-      fastCheck: Boolean,
-      camera: js.UndefOr[Nullable[Camera]],
-      trianglePredicate: TrianglePickingPredicate
-    ): Nullable[PickingInfo] = js.native
-    def pick(
-      x: Double,
-      y: Double,
-      predicate: js.UndefOr[scala.Nothing],
-      fastCheck: Boolean,
-      camera: Nullable[Camera]
-    ): Nullable[PickingInfo] = js.native
     def pick(x: Double, y: Double, predicate: js.Function1[/* mesh */ AbstractMesh, Boolean]): Nullable[PickingInfo] = js.native
-    def pick(
-      x: Double,
-      y: Double,
-      predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
-      fastCheck: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[Nullable[Camera]],
-      trianglePredicate: TrianglePickingPredicate
-    ): Nullable[PickingInfo] = js.native
-    def pick(
-      x: Double,
-      y: Double,
-      predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
-      fastCheck: js.UndefOr[scala.Nothing],
-      camera: Nullable[Camera]
-    ): Nullable[PickingInfo] = js.native
     def pick(
       x: Double,
       y: Double,
@@ -4277,7 +4128,7 @@ object sceneMod {
       y: Double,
       predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
       fastCheck: Boolean,
-      camera: js.UndefOr[Nullable[Camera]],
+      camera: Unit,
       trianglePredicate: TrianglePickingPredicate
     ): Nullable[PickingInfo] = js.native
     def pick(
@@ -4286,6 +4137,72 @@ object sceneMod {
       predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
       fastCheck: Boolean,
       camera: Nullable[Camera]
+    ): Nullable[PickingInfo] = js.native
+    def pick(
+      x: Double,
+      y: Double,
+      predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
+      fastCheck: Boolean,
+      camera: Nullable[Camera],
+      trianglePredicate: TrianglePickingPredicate
+    ): Nullable[PickingInfo] = js.native
+    def pick(
+      x: Double,
+      y: Double,
+      predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
+      fastCheck: Unit,
+      camera: Unit,
+      trianglePredicate: TrianglePickingPredicate
+    ): Nullable[PickingInfo] = js.native
+    def pick(
+      x: Double,
+      y: Double,
+      predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
+      fastCheck: Unit,
+      camera: Nullable[Camera]
+    ): Nullable[PickingInfo] = js.native
+    def pick(
+      x: Double,
+      y: Double,
+      predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
+      fastCheck: Unit,
+      camera: Nullable[Camera],
+      trianglePredicate: TrianglePickingPredicate
+    ): Nullable[PickingInfo] = js.native
+    def pick(x: Double, y: Double, predicate: Unit, fastCheck: Boolean): Nullable[PickingInfo] = js.native
+    def pick(
+      x: Double,
+      y: Double,
+      predicate: Unit,
+      fastCheck: Boolean,
+      camera: Unit,
+      trianglePredicate: TrianglePickingPredicate
+    ): Nullable[PickingInfo] = js.native
+    def pick(x: Double, y: Double, predicate: Unit, fastCheck: Boolean, camera: Nullable[Camera]): Nullable[PickingInfo] = js.native
+    def pick(
+      x: Double,
+      y: Double,
+      predicate: Unit,
+      fastCheck: Boolean,
+      camera: Nullable[Camera],
+      trianglePredicate: TrianglePickingPredicate
+    ): Nullable[PickingInfo] = js.native
+    def pick(
+      x: Double,
+      y: Double,
+      predicate: Unit,
+      fastCheck: Unit,
+      camera: Unit,
+      trianglePredicate: TrianglePickingPredicate
+    ): Nullable[PickingInfo] = js.native
+    def pick(x: Double, y: Double, predicate: Unit, fastCheck: Unit, camera: Nullable[Camera]): Nullable[PickingInfo] = js.native
+    def pick(
+      x: Double,
+      y: Double,
+      predicate: Unit,
+      fastCheck: Unit,
+      camera: Nullable[Camera],
+      trianglePredicate: TrianglePickingPredicate
     ): Nullable[PickingInfo] = js.native
     
     /** Launch a ray to try to pick a sprite in the scene
@@ -4297,23 +4214,7 @@ object sceneMod {
       * @returns a PickingInfo
       */
     def pickSprite(x: Double, y: Double): Nullable[PickingInfo] = js.native
-    def pickSprite(
-      x: Double,
-      y: Double,
-      predicate: js.UndefOr[scala.Nothing],
-      fastCheck: js.UndefOr[scala.Nothing],
-      camera: Camera
-    ): Nullable[PickingInfo] = js.native
-    def pickSprite(x: Double, y: Double, predicate: js.UndefOr[scala.Nothing], fastCheck: Boolean): Nullable[PickingInfo] = js.native
-    def pickSprite(x: Double, y: Double, predicate: js.UndefOr[scala.Nothing], fastCheck: Boolean, camera: Camera): Nullable[PickingInfo] = js.native
     def pickSprite(x: Double, y: Double, predicate: js.Function1[/* sprite */ Sprite, Boolean]): Nullable[PickingInfo] = js.native
-    def pickSprite(
-      x: Double,
-      y: Double,
-      predicate: js.Function1[/* sprite */ Sprite, Boolean],
-      fastCheck: js.UndefOr[scala.Nothing],
-      camera: Camera
-    ): Nullable[PickingInfo] = js.native
     def pickSprite(x: Double, y: Double, predicate: js.Function1[/* sprite */ Sprite, Boolean], fastCheck: Boolean): Nullable[PickingInfo] = js.native
     def pickSprite(
       x: Double,
@@ -4322,6 +4223,16 @@ object sceneMod {
       fastCheck: Boolean,
       camera: Camera
     ): Nullable[PickingInfo] = js.native
+    def pickSprite(
+      x: Double,
+      y: Double,
+      predicate: js.Function1[/* sprite */ Sprite, Boolean],
+      fastCheck: Unit,
+      camera: Camera
+    ): Nullable[PickingInfo] = js.native
+    def pickSprite(x: Double, y: Double, predicate: Unit, fastCheck: Boolean): Nullable[PickingInfo] = js.native
+    def pickSprite(x: Double, y: Double, predicate: Unit, fastCheck: Boolean, camera: Camera): Nullable[PickingInfo] = js.native
+    def pickSprite(x: Double, y: Double, predicate: Unit, fastCheck: Unit, camera: Camera): Nullable[PickingInfo] = js.native
     
     /** Use the given ray to pick a sprite in the scene
       * @param ray The ray (in world space) to use to pick meshes
@@ -4331,21 +4242,7 @@ object sceneMod {
       * @returns a PickingInfo
       */
     def pickSpriteWithRay(ray: Ray): Nullable[PickingInfo] = js.native
-    def pickSpriteWithRay(
-      ray: Ray,
-      predicate: js.UndefOr[scala.Nothing],
-      fastCheck: js.UndefOr[scala.Nothing],
-      camera: Camera
-    ): Nullable[PickingInfo] = js.native
-    def pickSpriteWithRay(ray: Ray, predicate: js.UndefOr[scala.Nothing], fastCheck: Boolean): Nullable[PickingInfo] = js.native
-    def pickSpriteWithRay(ray: Ray, predicate: js.UndefOr[scala.Nothing], fastCheck: Boolean, camera: Camera): Nullable[PickingInfo] = js.native
     def pickSpriteWithRay(ray: Ray, predicate: js.Function1[/* sprite */ Sprite, Boolean]): Nullable[PickingInfo] = js.native
-    def pickSpriteWithRay(
-      ray: Ray,
-      predicate: js.Function1[/* sprite */ Sprite, Boolean],
-      fastCheck: js.UndefOr[scala.Nothing],
-      camera: Camera
-    ): Nullable[PickingInfo] = js.native
     def pickSpriteWithRay(ray: Ray, predicate: js.Function1[/* sprite */ Sprite, Boolean], fastCheck: Boolean): Nullable[PickingInfo] = js.native
     def pickSpriteWithRay(
       ray: Ray,
@@ -4353,6 +4250,10 @@ object sceneMod {
       fastCheck: Boolean,
       camera: Camera
     ): Nullable[PickingInfo] = js.native
+    def pickSpriteWithRay(ray: Ray, predicate: js.Function1[/* sprite */ Sprite, Boolean], fastCheck: Unit, camera: Camera): Nullable[PickingInfo] = js.native
+    def pickSpriteWithRay(ray: Ray, predicate: Unit, fastCheck: Boolean): Nullable[PickingInfo] = js.native
+    def pickSpriteWithRay(ray: Ray, predicate: Unit, fastCheck: Boolean, camera: Camera): Nullable[PickingInfo] = js.native
+    def pickSpriteWithRay(ray: Ray, predicate: Unit, fastCheck: Unit, camera: Camera): Nullable[PickingInfo] = js.native
     
     /** Launch a ray to try to pick a mesh in the scene using only bounding information of the main mesh (not using submeshes)
       * @param x position on screen
@@ -4363,29 +4264,7 @@ object sceneMod {
       * @returns a PickingInfo (Please note that some info will not be set like distance, bv, bu and everything that cannot be capture by only using bounding infos)
       */
     def pickWithBoundingInfo(x: Double, y: Double): Nullable[PickingInfo] = js.native
-    def pickWithBoundingInfo(
-      x: Double,
-      y: Double,
-      predicate: js.UndefOr[scala.Nothing],
-      fastCheck: js.UndefOr[scala.Nothing],
-      camera: Nullable[Camera]
-    ): Nullable[PickingInfo] = js.native
-    def pickWithBoundingInfo(x: Double, y: Double, predicate: js.UndefOr[scala.Nothing], fastCheck: Boolean): Nullable[PickingInfo] = js.native
-    def pickWithBoundingInfo(
-      x: Double,
-      y: Double,
-      predicate: js.UndefOr[scala.Nothing],
-      fastCheck: Boolean,
-      camera: Nullable[Camera]
-    ): Nullable[PickingInfo] = js.native
     def pickWithBoundingInfo(x: Double, y: Double, predicate: js.Function1[/* mesh */ AbstractMesh, Boolean]): Nullable[PickingInfo] = js.native
-    def pickWithBoundingInfo(
-      x: Double,
-      y: Double,
-      predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
-      fastCheck: js.UndefOr[scala.Nothing],
-      camera: Nullable[Camera]
-    ): Nullable[PickingInfo] = js.native
     def pickWithBoundingInfo(
       x: Double,
       y: Double,
@@ -4399,6 +4278,16 @@ object sceneMod {
       fastCheck: Boolean,
       camera: Nullable[Camera]
     ): Nullable[PickingInfo] = js.native
+    def pickWithBoundingInfo(
+      x: Double,
+      y: Double,
+      predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
+      fastCheck: Unit,
+      camera: Nullable[Camera]
+    ): Nullable[PickingInfo] = js.native
+    def pickWithBoundingInfo(x: Double, y: Double, predicate: Unit, fastCheck: Boolean): Nullable[PickingInfo] = js.native
+    def pickWithBoundingInfo(x: Double, y: Double, predicate: Unit, fastCheck: Boolean, camera: Nullable[Camera]): Nullable[PickingInfo] = js.native
+    def pickWithBoundingInfo(x: Double, y: Double, predicate: Unit, fastCheck: Unit, camera: Nullable[Camera]): Nullable[PickingInfo] = js.native
     
     /** Use the given ray to pick a mesh in the scene
       * @param ray The ray to use to pick meshes
@@ -4408,26 +4297,7 @@ object sceneMod {
       * @returns a PickingInfo
       */
     def pickWithRay(ray: Ray): Nullable[PickingInfo] = js.native
-    def pickWithRay(
-      ray: Ray,
-      predicate: js.UndefOr[scala.Nothing],
-      fastCheck: js.UndefOr[scala.Nothing],
-      trianglePredicate: TrianglePickingPredicate
-    ): Nullable[PickingInfo] = js.native
-    def pickWithRay(ray: Ray, predicate: js.UndefOr[scala.Nothing], fastCheck: Boolean): Nullable[PickingInfo] = js.native
-    def pickWithRay(
-      ray: Ray,
-      predicate: js.UndefOr[scala.Nothing],
-      fastCheck: Boolean,
-      trianglePredicate: TrianglePickingPredicate
-    ): Nullable[PickingInfo] = js.native
     def pickWithRay(ray: Ray, predicate: js.Function1[/* mesh */ AbstractMesh, Boolean]): Nullable[PickingInfo] = js.native
-    def pickWithRay(
-      ray: Ray,
-      predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
-      fastCheck: js.UndefOr[scala.Nothing],
-      trianglePredicate: TrianglePickingPredicate
-    ): Nullable[PickingInfo] = js.native
     def pickWithRay(ray: Ray, predicate: js.Function1[/* mesh */ AbstractMesh, Boolean], fastCheck: Boolean): Nullable[PickingInfo] = js.native
     def pickWithRay(
       ray: Ray,
@@ -4435,6 +4305,15 @@ object sceneMod {
       fastCheck: Boolean,
       trianglePredicate: TrianglePickingPredicate
     ): Nullable[PickingInfo] = js.native
+    def pickWithRay(
+      ray: Ray,
+      predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
+      fastCheck: Unit,
+      trianglePredicate: TrianglePickingPredicate
+    ): Nullable[PickingInfo] = js.native
+    def pickWithRay(ray: Ray, predicate: Unit, fastCheck: Boolean): Nullable[PickingInfo] = js.native
+    def pickWithRay(ray: Ray, predicate: Unit, fastCheck: Boolean, trianglePredicate: TrianglePickingPredicate): Nullable[PickingInfo] = js.native
+    def pickWithRay(ray: Ray, predicate: Unit, fastCheck: Unit, trianglePredicate: TrianglePickingPredicate): Nullable[PickingInfo] = js.native
     
     /**
       * Gets or sets a predicate used to select candidate meshes for a pointer down event
@@ -4641,9 +4520,9 @@ object sceneMod {
       * @param ignoreAnimations defines a boolean indicating if animations should not be executed (false by default)
       */
     def render(): Unit = js.native
-    def render(updateCameras: js.UndefOr[scala.Nothing], ignoreAnimations: Boolean): Unit = js.native
     def render(updateCameras: Boolean): Unit = js.native
     def render(updateCameras: Boolean, ignoreAnimations: Boolean): Unit = js.native
+    def render(updateCameras: Unit, ignoreAnimations: Boolean): Unit = js.native
     
     /**
       * Gets or sets a boolean indicating if render targets are enabled on this scene
@@ -4720,14 +4599,9 @@ object sceneMod {
       * @param stencil Automatically clears stencil between groups if true and autoClear is true.
       */
     def setRenderingAutoClearDepthStencil(renderingGroupId: Double, autoClearDepthStencil: Boolean): Unit = js.native
-    def setRenderingAutoClearDepthStencil(
-      renderingGroupId: Double,
-      autoClearDepthStencil: Boolean,
-      depth: js.UndefOr[scala.Nothing],
-      stencil: Boolean
-    ): Unit = js.native
     def setRenderingAutoClearDepthStencil(renderingGroupId: Double, autoClearDepthStencil: Boolean, depth: Boolean): Unit = js.native
     def setRenderingAutoClearDepthStencil(renderingGroupId: Double, autoClearDepthStencil: Boolean, depth: Boolean, stencil: Boolean): Unit = js.native
+    def setRenderingAutoClearDepthStencil(renderingGroupId: Double, autoClearDepthStencil: Boolean, depth: Unit, stencil: Boolean): Unit = js.native
     
     /**
       * Overrides the default sort function applied in the renderging group to prepare the meshes.
@@ -4741,18 +4615,41 @@ object sceneMod {
     def setRenderingOrder(renderingGroupId: Double): Unit = js.native
     def setRenderingOrder(
       renderingGroupId: Double,
-      opaqueSortCompareFn: js.UndefOr[Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]],
-      alphaTestSortCompareFn: js.UndefOr[Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]],
+      opaqueSortCompareFn: Unit,
+      alphaTestSortCompareFn: Unit,
       transparentSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
     ): Unit = js.native
     def setRenderingOrder(
       renderingGroupId: Double,
-      opaqueSortCompareFn: js.UndefOr[Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]],
+      opaqueSortCompareFn: Unit,
       alphaTestSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
     ): Unit = js.native
     def setRenderingOrder(
       renderingGroupId: Double,
+      opaqueSortCompareFn: Unit,
+      alphaTestSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]],
+      transparentSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
+    ): Unit = js.native
+    def setRenderingOrder(
+      renderingGroupId: Double,
       opaqueSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
+    ): Unit = js.native
+    def setRenderingOrder(
+      renderingGroupId: Double,
+      opaqueSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]],
+      alphaTestSortCompareFn: Unit,
+      transparentSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
+    ): Unit = js.native
+    def setRenderingOrder(
+      renderingGroupId: Double,
+      opaqueSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]],
+      alphaTestSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
+    ): Unit = js.native
+    def setRenderingOrder(
+      renderingGroupId: Double,
+      opaqueSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]],
+      alphaTestSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]],
+      transparentSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
     ): Unit = js.native
     
     /**
@@ -4770,7 +4667,7 @@ object sceneMod {
       * @param projectionR defines the right Projection matrix to use (if provided)
       */
     def setTransformMatrix(viewL: Matrix, projectionL: Matrix): Unit = js.native
-    def setTransformMatrix(viewL: Matrix, projectionL: Matrix, viewR: js.UndefOr[scala.Nothing], projectionR: Matrix): Unit = js.native
+    def setTransformMatrix(viewL: Matrix, projectionL: Matrix, viewR: Unit, projectionR: Matrix): Unit = js.native
     def setTransformMatrix(viewL: Matrix, projectionL: Matrix, viewR: Matrix): Unit = js.native
     def setTransformMatrix(viewL: Matrix, projectionL: Matrix, viewR: Matrix, projectionR: Matrix): Unit = js.native
     
@@ -4815,7 +4712,7 @@ object sceneMod {
       * @returns the current scene
       */
     def simulatePointerUp(pickResult: PickingInfo): Scene = js.native
-    def simulatePointerUp(pickResult: PickingInfo, pointerEventInit: js.UndefOr[scala.Nothing], doubleTap: Boolean): Scene = js.native
+    def simulatePointerUp(pickResult: PickingInfo, pointerEventInit: Unit, doubleTap: Boolean): Scene = js.native
     def simulatePointerUp(pickResult: PickingInfo, pointerEventInit: PointerEventInit): Scene = js.native
     def simulatePointerUp(pickResult: PickingInfo, pointerEventInit: PointerEventInit, doubleTap: Boolean): Scene = js.native
     
@@ -4865,13 +4762,9 @@ object sceneMod {
       * @param targetMask - a function that determines if the animation should be stopped based on its target (all animations will be stopped if both this and animationName are empty)
       */
     def stopAnimation(target: js.Any): Unit = js.native
-    def stopAnimation(
-      target: js.Any,
-      animationName: js.UndefOr[scala.Nothing],
-      targetMask: js.Function1[/* target */ js.Any, Boolean]
-    ): Unit = js.native
     def stopAnimation(target: js.Any, animationName: String): Unit = js.native
     def stopAnimation(target: js.Any, animationName: String, targetMask: js.Function1[/* target */ js.Any, Boolean]): Unit = js.native
+    def stopAnimation(target: js.Any, animationName: Unit, targetMask: js.Function1[/* target */ js.Any, Boolean]): Unit = js.native
     
     /**
       * Switch active camera
@@ -4981,9 +4874,7 @@ object sceneMod {
       * Factory used to create the a collision coordinator.
       * @returns The collision coordinator
       */
-    @JSImport("babylonjs/scene", "Scene.CollisionCoordinatorFactory")
-    @js.native
-    def CollisionCoordinatorFactory(): ICollisionCoordinator = js.native
+    inline def CollisionCoordinatorFactory(): ICollisionCoordinator = ^.asInstanceOf[js.Dynamic].applyDynamic("CollisionCoordinatorFactory")().asInstanceOf[ICollisionCoordinator]
     
     /**
       * Factory used to create the default material.
@@ -4991,9 +4882,7 @@ object sceneMod {
       * @param scene The scene to create the material for
       * @returns The default material
       */
-    @JSImport("babylonjs/scene", "Scene.DefaultMaterialFactory")
-    @js.native
-    def DefaultMaterialFactory(scene: Scene): Material = js.native
+    inline def DefaultMaterialFactory(scene: Scene): Material = ^.asInstanceOf[js.Dynamic].applyDynamic("DefaultMaterialFactory")(scene.asInstanceOf[js.Any]).asInstanceOf[Material]
     
     /** The fog density is following an exponential function */
     @JSImport("babylonjs/scene", "Scene.FOGMODE_EXP")
@@ -5022,8 +4911,7 @@ object sceneMod {
     @JSImport("babylonjs/scene", "Scene.MaxDeltaTime")
     @js.native
     def MaxDeltaTime: Double = js.native
-    @scala.inline
-    def MaxDeltaTime_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MaxDeltaTime")(x.asInstanceOf[js.Any])
+    inline def MaxDeltaTime_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MaxDeltaTime")(x.asInstanceOf[js.Any])
     
     /**
       * Gets or sets the minimum deltatime when deterministic lock step is enabled
@@ -5032,92 +4920,76 @@ object sceneMod {
     @JSImport("babylonjs/scene", "Scene.MinDeltaTime")
     @js.native
     def MinDeltaTime: Double = js.native
-    @scala.inline
-    def MinDeltaTime_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MinDeltaTime")(x.asInstanceOf[js.Any])
+    inline def MinDeltaTime_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MinDeltaTime")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IDisposable extends StObject {
     
     /**
       * Releases all held resources
       */
-    def dispose(): Unit = js.native
+    def dispose(): Unit
   }
   object IDisposable {
     
-    @scala.inline
-    def apply(dispose: () => Unit): IDisposable = {
+    inline def apply(dispose: () => Unit): IDisposable = {
       val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose))
       __obj.asInstanceOf[IDisposable]
     }
     
-    @scala.inline
-    implicit class IDisposableMutableBuilder[Self <: IDisposable] (val x: Self) extends AnyVal {
+    extension [Self <: IDisposable](x: Self) {
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     }
   }
   
-  @js.native
   trait SceneOptions extends StObject {
     
     /**
       * Defines that each mesh of the scene should keep up-to-date a map of referencing cloned meshes for fast diposing
       * It will improve performance when the number of mesh becomes important, but might consume a bit more memory
       */
-    var useClonedMeshMap: js.UndefOr[Boolean] = js.native
+    var useClonedMeshMap: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines that scene should keep up-to-date a map of geometry to enable fast look-up by uniqueId
       * It will improve performance when the number of geometries becomes important.
       */
-    var useGeometryUniqueIdsMap: js.UndefOr[Boolean] = js.native
+    var useGeometryUniqueIdsMap: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines that each material of the scene should keep up-to-date a map of referencing meshes for fast diposing
       * It will improve performance when the number of mesh becomes important, but might consume a bit more memory
       */
-    var useMaterialMeshMap: js.UndefOr[Boolean] = js.native
+    var useMaterialMeshMap: js.UndefOr[Boolean] = js.undefined
     
     /** Defines if the creation of the scene should impact the engine (Eg. UtilityLayer's scene) */
-    var virtual: js.UndefOr[Boolean] = js.native
+    var virtual: js.UndefOr[Boolean] = js.undefined
   }
   object SceneOptions {
     
-    @scala.inline
-    def apply(): SceneOptions = {
+    inline def apply(): SceneOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SceneOptions]
     }
     
-    @scala.inline
-    implicit class SceneOptionsMutableBuilder[Self <: SceneOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SceneOptions](x: Self) {
       
-      @scala.inline
-      def setUseClonedMeshMap(value: Boolean): Self = StObject.set(x, "useClonedMeshMap", value.asInstanceOf[js.Any])
+      inline def setUseClonedMeshMap(value: Boolean): Self = StObject.set(x, "useClonedMeshMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseClonedMeshMapUndefined: Self = StObject.set(x, "useClonedMeshMap", js.undefined)
+      inline def setUseClonedMeshMapUndefined: Self = StObject.set(x, "useClonedMeshMap", js.undefined)
       
-      @scala.inline
-      def setUseGeometryUniqueIdsMap(value: Boolean): Self = StObject.set(x, "useGeometryUniqueIdsMap", value.asInstanceOf[js.Any])
+      inline def setUseGeometryUniqueIdsMap(value: Boolean): Self = StObject.set(x, "useGeometryUniqueIdsMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseGeometryUniqueIdsMapUndefined: Self = StObject.set(x, "useGeometryUniqueIdsMap", js.undefined)
+      inline def setUseGeometryUniqueIdsMapUndefined: Self = StObject.set(x, "useGeometryUniqueIdsMap", js.undefined)
       
-      @scala.inline
-      def setUseMaterialMeshMap(value: Boolean): Self = StObject.set(x, "useMaterialMeshMap", value.asInstanceOf[js.Any])
+      inline def setUseMaterialMeshMap(value: Boolean): Self = StObject.set(x, "useMaterialMeshMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseMaterialMeshMapUndefined: Self = StObject.set(x, "useMaterialMeshMap", js.undefined)
+      inline def setUseMaterialMeshMapUndefined: Self = StObject.set(x, "useMaterialMeshMap", js.undefined)
       
-      @scala.inline
-      def setVirtual(value: Boolean): Self = StObject.set(x, "virtual", value.asInstanceOf[js.Any])
+      inline def setVirtual(value: Boolean): Self = StObject.set(x, "virtual", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualUndefined: Self = StObject.set(x, "virtual", js.undefined)
+      inline def setVirtualUndefined: Self = StObject.set(x, "virtual", js.undefined)
     }
   }
 }

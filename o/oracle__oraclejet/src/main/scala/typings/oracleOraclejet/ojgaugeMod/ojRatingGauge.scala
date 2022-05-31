@@ -46,178 +46,187 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ojRatingGauge extends dvtBaseGauge[ojRatingGaugeSettableProperties] {
+trait ojRatingGauge
+  extends StObject
+     with dvtBaseGauge[ojRatingGaugeSettableProperties] {
   
   def addEventListener(
     `type`: orientationChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[vertical | horizontal], _]
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ JetElementCustomEvent[vertical | horizontal], 
+      js.Any
+    ]
   ): Unit = js.native
   def addEventListener(
     `type`: orientationChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[vertical | horizontal], _],
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ JetElementCustomEvent[vertical | horizontal], 
+      js.Any
+    ],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: preserveAspectRatioChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | meet], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | meet], js.Any]
   ): Unit = js.native
   def addEventListener(
     `type`: preserveAspectRatioChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | meet], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | meet], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: stepChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`0.5` | `1`], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`0.5` | `1`], js.Any]
   ): Unit = js.native
   def addEventListener(
     `type`: stepChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`0.5` | `1`], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`0.5` | `1`], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: visualEffectsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | auto], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | auto], js.Any]
   ): Unit = js.native
   def addEventListener(
     `type`: visualEffectsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | auto], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | auto], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_changedChanged(
     `type`: changedChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_changedChanged(
     `type`: changedChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_changedStateChanged(
     `type`: changedStateChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Source], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Source], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_changedStateChanged(
     `type`: changedStateChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Source], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Source], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_hoverStateChanged(
     `type`: hoverStateChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Source], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Source], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_hoverStateChanged(
     `type`: hoverStateChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Source], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Source], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_maxChanged(
     `type`: maxChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_maxChanged(
     `type`: maxChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_minChanged(
     `type`: minChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_minChanged(
     `type`: minChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readonlyChanged(
     `type`: readonlyChanged_,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readonlyChanged(
     `type`: readonlyChanged_,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_selectedStateChanged(
     `type`: selectedStateChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Source], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Source], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_selectedStateChanged(
     `type`: selectedStateChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Source], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Source], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_thresholdsChanged(
     `type`: thresholdsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[Threshold]], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[Threshold]], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_thresholdsChanged(
     `type`: thresholdsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[Threshold]], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[Threshold]], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`11`], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`11`], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`11`], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`11`], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_transientValueChanged(
     `type`: transientValueChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double | Null], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double | Null], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_transientValueChanged(
     `type`: transientValueChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double | Null], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double | Null], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_unselectedStateChanged(
     `type`: unselectedStateChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Source], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Source], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_unselectedStateChanged(
     `type`: unselectedStateChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Source], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Source], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_valueChanged(
     `type`: valueChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double | Null], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double | Null], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_valueChanged(
     `type`: valueChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double | Null], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double | Null], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   
@@ -264,37 +273,37 @@ trait ojRatingGauge extends dvtBaseGauge[ojRatingGaugeSettableProperties] {
   
   var min: Double = js.native
   
-  var onChangedChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
+  var onChangedChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], js.Any]) | Null = js.native
   
-  var onChangedStateChanged: (js.Function1[/* event */ JetElementCustomEvent[Source], _]) | Null = js.native
+  var onChangedStateChanged: (js.Function1[/* event */ JetElementCustomEvent[Source], js.Any]) | Null = js.native
   
-  var onHoverStateChanged: (js.Function1[/* event */ JetElementCustomEvent[Source], _]) | Null = js.native
+  var onHoverStateChanged: (js.Function1[/* event */ JetElementCustomEvent[Source], js.Any]) | Null = js.native
   
-  var onMaxChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  var onMaxChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], js.Any]) | Null = js.native
   
-  var onMinChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  var onMinChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], js.Any]) | Null = js.native
   
-  var onOrientationChanged: (js.Function1[/* event */ JetElementCustomEvent[vertical | horizontal], _]) | Null = js.native
+  var onOrientationChanged: (js.Function1[/* event */ JetElementCustomEvent[vertical | horizontal], js.Any]) | Null = js.native
   
-  var onPreserveAspectRatioChanged: (js.Function1[/* event */ JetElementCustomEvent[none | meet], _]) | Null = js.native
+  var onPreserveAspectRatioChanged: (js.Function1[/* event */ JetElementCustomEvent[none | meet], js.Any]) | Null = js.native
   
-  var onReadonlyChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
+  var onReadonlyChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], js.Any]) | Null = js.native
   
-  var onSelectedStateChanged: (js.Function1[/* event */ JetElementCustomEvent[Source], _]) | Null = js.native
+  var onSelectedStateChanged: (js.Function1[/* event */ JetElementCustomEvent[Source], js.Any]) | Null = js.native
   
-  var onStepChanged: (js.Function1[/* event */ JetElementCustomEvent[`0.5` | `1`], _]) | Null = js.native
+  var onStepChanged: (js.Function1[/* event */ JetElementCustomEvent[`0.5` | `1`], js.Any]) | Null = js.native
   
-  var onThresholdsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[Threshold]], _]) | Null = js.native
+  var onThresholdsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[Threshold]], js.Any]) | Null = js.native
   
-  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`11`], _]) | Null = js.native
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`11`], js.Any]) | Null = js.native
   
-  var onTransientValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
+  var onTransientValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], js.Any]) | Null = js.native
   
-  var onUnselectedStateChanged: (js.Function1[/* event */ JetElementCustomEvent[Source], _]) | Null = js.native
+  var onUnselectedStateChanged: (js.Function1[/* event */ JetElementCustomEvent[Source], js.Any]) | Null = js.native
   
-  var onValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
+  var onValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], js.Any]) | Null = js.native
   
-  var onVisualEffectsChanged: (js.Function1[/* event */ JetElementCustomEvent[none | auto], _]) | Null = js.native
+  var onVisualEffectsChanged: (js.Function1[/* event */ JetElementCustomEvent[none | auto], js.Any]) | Null = js.native
   
   var orientation: vertical | horizontal = js.native
   
@@ -360,88 +369,70 @@ trait ojRatingGauge extends dvtBaseGauge[ojRatingGaugeSettableProperties] {
 object ojRatingGauge {
   
   // tslint:disable-next-line interface-over-type-literal
-  @js.native
   trait Threshold extends StObject {
     
-    var borderColor: js.UndefOr[String] = js.native
+    var borderColor: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var shortDesc: js.UndefOr[String] = js.native
+    var shortDesc: js.UndefOr[String] = js.undefined
   }
   object Threshold {
     
-    @scala.inline
-    def apply(): Threshold = {
+    inline def apply(): Threshold = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Threshold]
     }
     
-    @scala.inline
-    implicit class ThresholdMutableBuilder[Self <: Threshold] (val x: Self) extends AnyVal {
+    extension [Self <: Threshold](x: Self) {
       
-      @scala.inline
-      def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+      inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+      inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setShortDesc(value: String): Self = StObject.set(x, "shortDesc", value.asInstanceOf[js.Any])
+      inline def setShortDesc(value: String): Self = StObject.set(x, "shortDesc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortDescUndefined: Self = StObject.set(x, "shortDesc", js.undefined)
+      inline def setShortDescUndefined: Self = StObject.set(x, "shortDesc", js.undefined)
     }
   }
   
   // tslint:disable-next-line interface-over-type-literal
-  @js.native
   trait TooltipContext extends StObject {
     
-    var color: String = js.native
+    var color: String
     
-    var componentElement: Element = js.native
+    var componentElement: Element
     
-    var label: String = js.native
+    var label: String
     
-    var parentElement: Element = js.native
+    var parentElement: Element
   }
   object TooltipContext {
     
-    @scala.inline
-    def apply(color: String, componentElement: Element, label: String, parentElement: Element): TooltipContext = {
+    inline def apply(color: String, componentElement: Element, label: String, parentElement: Element): TooltipContext = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], componentElement = componentElement.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], parentElement = parentElement.asInstanceOf[js.Any])
       __obj.asInstanceOf[TooltipContext]
     }
     
-    @scala.inline
-    implicit class TooltipContextMutableBuilder[Self <: TooltipContext] (val x: Self) extends AnyVal {
+    extension [Self <: TooltipContext](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentElement(value: Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
+      inline def setComponentElement(value: Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentElement(value: Element): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
+      inline def setParentElement(value: Element): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
     }
   }
 }

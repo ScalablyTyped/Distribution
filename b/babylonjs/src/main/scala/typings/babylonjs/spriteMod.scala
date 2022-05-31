@@ -2,6 +2,7 @@ package typings.babylonjs
 
 import typings.babylonjs.actionManagerMod.ActionManager
 import typings.babylonjs.animatableInterfaceMod.IAnimatable
+import typings.babylonjs.animationMod.Animation
 import typings.babylonjs.mathColorMod.Color4
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.observableMod.Observable
@@ -11,7 +12,6 @@ import typings.babylonjs.thinSpriteMod.ThinSprite
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spriteMod {
@@ -29,16 +29,22 @@ object spriteMod {
     def this(/** defines the name */
     name: String, manager: ISpriteManager) = this()
     
-    var _endAnimation: js.Any = js.native
+    /* private */ var _endAnimation: js.Any = js.native
     
-    var _manager: js.Any = js.native
+    /* private */ var _manager: js.Any = js.native
     
-    var _onAnimationEnd: js.Any = js.native
+    /* private */ var _onAnimationEnd: js.Any = js.native
     
     /**
       * Gets or sets the associated action manager
       */
     var actionManager: Nullable[ActionManager] = js.native
+    
+    /**
+      * Array of animations
+      */
+    /* CompleteClass */
+    var animations: Nullable[js.Array[Animation]] = js.native
     
     /** Gets or sets the main color */
     @JSName("color")
@@ -117,14 +123,16 @@ object spriteMod {
   /* static members */
   object Sprite {
     
+    @JSImport("babylonjs/Sprites/sprite", "Sprite")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Parses a JSON object to create a new sprite
       * @param parsedSprite The JSON object to parse
       * @param manager defines the hosting manager
       * @returns the new sprite
       */
-    @JSImport("babylonjs/Sprites/sprite", "Sprite.Parse")
-    @js.native
-    def Parse(parsedSprite: js.Any, manager: SpriteManager): Sprite = js.native
+    inline def Parse(parsedSprite: js.Any, manager: SpriteManager): Sprite = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSprite.asInstanceOf[js.Any], manager.asInstanceOf[js.Any])).asInstanceOf[Sprite]
   }
 }

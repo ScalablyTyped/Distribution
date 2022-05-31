@@ -3,19 +3,20 @@ package typings.babylonjs.BABYLON
 import typings.babylonjs.anon.Height
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeMaterial extends PushMaterial {
+trait NodeMaterial
+  extends StObject
+     with PushMaterial {
   
-  var BJSNODEMATERIALEDITOR: js.Any = js.native
+  /* private */ var BJSNODEMATERIALEDITOR: js.Any = js.native
   
-  var _addFragmentOutputNode: js.Any = js.native
+  /* private */ var _addFragmentOutputNode: js.Any = js.native
   
-  var _addVertexOutputNode: js.Any = js.native
+  /* private */ var _addVertexOutputNode: js.Any = js.native
   
-  var _animationFrame: js.Any = js.native
+  /* private */ var _animationFrame: js.Any = js.native
   
   /**
     * Attaches a new image processing configuration to the Standard Material.
@@ -23,46 +24,46 @@ trait NodeMaterial extends PushMaterial {
     */
   /* protected */ def _attachImageProcessingConfiguration(configuration: Nullable[ImageProcessingConfiguration]): Unit = js.native
   
-  var _buildId: js.Any = js.native
+  /* private */ var _buildId: js.Any = js.native
   
-  var _buildWasSuccessful: js.Any = js.native
+  /* private */ var _buildWasSuccessful: js.Any = js.native
   
-  var _cachedWorldViewMatrix: js.Any = js.native
+  /* private */ var _cachedWorldViewMatrix: js.Any = js.native
   
-  var _cachedWorldViewProjectionMatrix: js.Any = js.native
+  /* private */ var _cachedWorldViewProjectionMatrix: js.Any = js.native
   
-  var _checkInternals: js.Any = js.native
+  /* private */ var _checkInternals: js.Any = js.native
   
-  var _createEffectForParticles: js.Any = js.native
+  /* private */ var _createEffectForParticles: js.Any = js.native
   
-  var _createEffectForPostProcess: js.Any = js.native
+  /* private */ var _createEffectForPostProcess: js.Any = js.native
   
   /** Creates the node editor window. */
-  var _createNodeEditor: js.Any = js.native
+  /* private */ var _createNodeEditor: js.Any = js.native
   
-  var _fragmentCompilationState: js.Any = js.native
+  /* private */ var _fragmentCompilationState: js.Any = js.native
   
   /**
     * Gets or sets the root nodes of the material fragment (pixel) shader
     */
   var _fragmentOutputNodes: js.Array[NodeMaterialBlock] = js.native
   
-  var _gatherBlocks: js.Any = js.native
+  /* private */ var _gatherBlocks: js.Any = js.native
   
   /** Get the inspector from bundle or global */
-  var _getGlobalNodeMaterialEditor: js.Any = js.native
+  /* private */ var _getGlobalNodeMaterialEditor: js.Any = js.native
   
   /**
     * Default configuration related to image processing available in the standard Material.
     */
-  var _imageProcessingConfiguration: ImageProcessingConfiguration = js.native
+  /* protected */ var _imageProcessingConfiguration: ImageProcessingConfiguration = js.native
   
   /**
     * Keep track of the image processing observer to allow dispose and replace.
     */
-  var _imageProcessingObserver: js.Any = js.native
+  /* private */ var _imageProcessingObserver: js.Any = js.native
   
-  var _initializeBlock: js.Any = js.native
+  /* private */ var _initializeBlock: js.Any = js.native
   
   /**
     * Specifies the mode of the node material
@@ -70,25 +71,25 @@ trait NodeMaterial extends PushMaterial {
     */
   var _mode: NodeMaterialModes = js.native
   
-  var _optimizers: js.Any = js.native
+  /* private */ var _optimizers: js.Any = js.native
   
-  var _options: js.Any = js.native
+  /* private */ var _options: js.Any = js.native
   
-  var _prepareDefinesForAttributes: js.Any = js.native
+  /* private */ var _prepareDefinesForAttributes: js.Any = js.native
   
-  var _processDefines: js.Any = js.native
+  /* private */ var _processDefines: js.Any = js.native
   
-  var _removeFragmentOutputNode: js.Any = js.native
+  /* private */ var _removeFragmentOutputNode: js.Any = js.native
   
-  var _removeVertexOutputNode: js.Any = js.native
+  /* private */ var _removeVertexOutputNode: js.Any = js.native
   
-  var _resetDualBlocks: js.Any = js.native
+  /* private */ var _resetDualBlocks: js.Any = js.native
   
-  var _restoreConnections: js.Any = js.native
+  /* private */ var _restoreConnections: js.Any = js.native
   
-  var _sharedData: js.Any = js.native
+  /* private */ var _sharedData: js.Any = js.native
   
-  var _vertexCompilationState: js.Any = js.native
+  /* private */ var _vertexCompilationState: js.Any = js.native
   
   /**
     * Gets or sets the root nodes of the material vertex shader
@@ -136,15 +137,15 @@ trait NodeMaterial extends PushMaterial {
     * @param onError defines a function to call when the effect creation has failed
     */
   def createEffectForParticles(particleSystem: IParticleSystem): Unit = js.native
-  def createEffectForParticles(
-    particleSystem: IParticleSystem,
-    onCompiled: js.UndefOr[scala.Nothing],
-    onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]
-  ): Unit = js.native
   def createEffectForParticles(particleSystem: IParticleSystem, onCompiled: js.Function1[/* effect */ Effect, Unit]): Unit = js.native
   def createEffectForParticles(
     particleSystem: IParticleSystem,
     onCompiled: js.Function1[/* effect */ Effect, Unit],
+    onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]
+  ): Unit = js.native
+  def createEffectForParticles(
+    particleSystem: IParticleSystem,
+    onCompiled: Unit,
     onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]
   ): Unit = js.native
   
@@ -269,9 +270,9 @@ trait NodeMaterial extends PushMaterial {
     * @param merge defines whether or not the source must be merged or replace the current content
     */
   def loadFromSerialization(source: js.Any): Unit = js.native
-  def loadFromSerialization(source: js.Any, rootUrl: js.UndefOr[scala.Nothing], merge: Boolean): Unit = js.native
   def loadFromSerialization(source: js.Any, rootUrl: String): Unit = js.native
   def loadFromSerialization(source: js.Any, rootUrl: String, merge: Boolean): Unit = js.native
+  def loadFromSerialization(source: js.Any, rootUrl: Unit, merge: Boolean): Unit = js.native
   
   /**
     * Defines the maximum number of lights that can be used in the material

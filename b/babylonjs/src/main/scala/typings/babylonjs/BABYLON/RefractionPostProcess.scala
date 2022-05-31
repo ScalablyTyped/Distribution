@@ -2,15 +2,16 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RefractionPostProcess extends PostProcess {
+trait RefractionPostProcess
+  extends StObject
+     with PostProcess {
   
-  var _ownRefractionTexture: js.Any = js.native
+  /* private */ var _ownRefractionTexture: js.Any = js.native
   
-  var _refTexture: js.Any = js.native
+  /* private */ var _refTexture: js.Any = js.native
   
   /** the base color of the refraction (used to taint the rendering) */
   var color: Color3 = js.native

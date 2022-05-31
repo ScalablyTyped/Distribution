@@ -4,65 +4,50 @@ import typings.babylonjs.cameraMod.Camera
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<babylonjs.babylonjs/Layers/effectLayer.IEffectLayerOptions> */
-@js.native
 trait PartialIEffectLayerOption extends StObject {
   
-  var alphaBlendingMode: js.UndefOr[Double] = js.native
+  var alphaBlendingMode: js.UndefOr[Double] = js.undefined
   
-  var camera: js.UndefOr[Nullable[Camera]] = js.native
+  var camera: js.UndefOr[Nullable[Camera]] = js.undefined
   
-  var mainTextureFixedSize: js.UndefOr[Double] = js.native
+  var mainTextureFixedSize: js.UndefOr[Double] = js.undefined
   
-  var mainTextureRatio: js.UndefOr[Double] = js.native
+  var mainTextureRatio: js.UndefOr[Double] = js.undefined
   
-  var renderingGroupId: js.UndefOr[Double] = js.native
+  var renderingGroupId: js.UndefOr[Double] = js.undefined
 }
 object PartialIEffectLayerOption {
   
-  @scala.inline
-  def apply(): PartialIEffectLayerOption = {
+  inline def apply(): PartialIEffectLayerOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialIEffectLayerOption]
   }
   
-  @scala.inline
-  implicit class PartialIEffectLayerOptionMutableBuilder[Self <: PartialIEffectLayerOption] (val x: Self) extends AnyVal {
+  extension [Self <: PartialIEffectLayerOption](x: Self) {
     
-    @scala.inline
-    def setAlphaBlendingMode(value: Double): Self = StObject.set(x, "alphaBlendingMode", value.asInstanceOf[js.Any])
+    inline def setAlphaBlendingMode(value: Double): Self = StObject.set(x, "alphaBlendingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaBlendingModeUndefined: Self = StObject.set(x, "alphaBlendingMode", js.undefined)
+    inline def setAlphaBlendingModeUndefined: Self = StObject.set(x, "alphaBlendingMode", js.undefined)
     
-    @scala.inline
-    def setCamera(value: Nullable[Camera]): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+    inline def setCamera(value: Nullable[Camera]): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCameraNull: Self = StObject.set(x, "camera", null)
+    inline def setCameraNull: Self = StObject.set(x, "camera", null)
     
-    @scala.inline
-    def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
+    inline def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
     
-    @scala.inline
-    def setMainTextureFixedSize(value: Double): Self = StObject.set(x, "mainTextureFixedSize", value.asInstanceOf[js.Any])
+    inline def setMainTextureFixedSize(value: Double): Self = StObject.set(x, "mainTextureFixedSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMainTextureFixedSizeUndefined: Self = StObject.set(x, "mainTextureFixedSize", js.undefined)
+    inline def setMainTextureFixedSizeUndefined: Self = StObject.set(x, "mainTextureFixedSize", js.undefined)
     
-    @scala.inline
-    def setMainTextureRatio(value: Double): Self = StObject.set(x, "mainTextureRatio", value.asInstanceOf[js.Any])
+    inline def setMainTextureRatio(value: Double): Self = StObject.set(x, "mainTextureRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMainTextureRatioUndefined: Self = StObject.set(x, "mainTextureRatio", js.undefined)
+    inline def setMainTextureRatioUndefined: Self = StObject.set(x, "mainTextureRatio", js.undefined)
     
-    @scala.inline
-    def setRenderingGroupId(value: Double): Self = StObject.set(x, "renderingGroupId", value.asInstanceOf[js.Any])
+    inline def setRenderingGroupId(value: Double): Self = StObject.set(x, "renderingGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderingGroupIdUndefined: Self = StObject.set(x, "renderingGroupId", js.undefined)
+    inline def setRenderingGroupIdUndefined: Self = StObject.set(x, "renderingGroupId", js.undefined)
   }
 }

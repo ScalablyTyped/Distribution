@@ -2,35 +2,34 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PerfCounter extends StObject {
   
-  var _average: js.Any = js.native
+  /* private */ var _average: js.Any = js.native
   
-  var _current: js.Any = js.native
+  /* private */ var _current: js.Any = js.native
   
-  var _fetchResult: js.Any = js.native
+  /* private */ var _fetchResult: js.Any = js.native
   
-  var _lastSecAccumulated: js.Any = js.native
+  /* private */ var _lastSecAccumulated: js.Any = js.native
   
-  var _lastSecAverage: js.Any = js.native
+  /* private */ var _lastSecAverage: js.Any = js.native
   
-  var _lastSecTime: js.Any = js.native
+  /* private */ var _lastSecTime: js.Any = js.native
   
-  var _lastSecValueCount: js.Any = js.native
+  /* private */ var _lastSecValueCount: js.Any = js.native
   
-  var _max: js.Any = js.native
+  /* private */ var _max: js.Any = js.native
   
-  var _min: js.Any = js.native
+  /* private */ var _min: js.Any = js.native
   
-  var _startMonitoringTime: js.Any = js.native
+  /* private */ var _startMonitoringTime: js.Any = js.native
   
-  var _totalAccumulated: js.Any = js.native
+  /* private */ var _totalAccumulated: js.Any = js.native
   
-  var _totalValueCount: js.Any = js.native
+  /* private */ var _totalValueCount: js.Any = js.native
   
   /**
     * Call this method to monitor a count of something (e.g. mesh drawn in viewport count)

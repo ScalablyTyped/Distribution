@@ -3,33 +3,34 @@ package typings.babylonjs.BABYLON
 import typings.babylonjs.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VideoTexture extends Texture {
+trait VideoTexture
+  extends StObject
+     with Texture {
   
-  var _createInternalTexture: js.Any = js.native
+  /* private */ var _createInternalTexture: js.Any = js.native
   
-  var _createInternalTextureOnEvent: js.Any = js.native
+  /* private */ var _createInternalTextureOnEvent: js.Any = js.native
   
-  var _currentSrc: js.Any = js.native
+  /* private */ var _currentSrc: js.Any = js.native
   
-  var _displayingPosterTexture: js.Any = js.native
+  /* private */ var _displayingPosterTexture: js.Any = js.native
   
-  var _frameId: js.Any = js.native
+  /* private */ var _frameId: js.Any = js.native
   
-  var _generateMipMaps: js.Any = js.native
+  /* private */ var _generateMipMaps: js.Any = js.native
   
-  var _getName: js.Any = js.native
+  /* private */ var _getName: js.Any = js.native
   
-  var _getVideo: js.Any = js.native
+  /* private */ var _getVideo: js.Any = js.native
   
-  var _onUserActionRequestedObservable: js.Any = js.native
+  /* private */ var _onUserActionRequestedObservable: js.Any = js.native
   
-  var _settings: js.Any = js.native
+  /* private */ var _settings: js.Any = js.native
   
-  var _stillImageCaptured: js.Any = js.native
+  /* private */ var _stillImageCaptured: js.Any = js.native
   
   /* protected */ def _updateInternalTexture(): Unit = js.native
   
@@ -44,7 +45,7 @@ trait VideoTexture extends Texture {
     */
   def onUserActionRequestedObservable: Observable[Texture] = js.native
   
-  var reset: js.Any = js.native
+  /* private */ var reset: js.Any = js.native
   
   /**
     * Update Texture in the `auto` mode. Does not do anything if `settings.autoUpdateTexture` is false.

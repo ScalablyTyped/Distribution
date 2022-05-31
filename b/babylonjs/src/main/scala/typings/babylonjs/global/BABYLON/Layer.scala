@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.Layer")
 @js.native
 class Layer protected ()
-  extends typings.babylonjs.BABYLON.Layer {
+  extends StObject
+     with typings.babylonjs.BABYLON.Layer {
   /**
     * Instantiates a new layer.
     * This represents a full screen 2d layer.
@@ -45,7 +45,7 @@ class Layer protected ()
   name: String,
     imgUrl: Nullable[String],
     scene: Nullable[typings.babylonjs.BABYLON.Scene],
-    isBackground: js.UndefOr[scala.Nothing],
+    isBackground: Boolean,
     color: typings.babylonjs.BABYLON.Color4
   ) = this()
   def this(
@@ -55,7 +55,7 @@ class Layer protected ()
   name: String,
     imgUrl: Nullable[String],
     scene: Nullable[typings.babylonjs.BABYLON.Scene],
-    isBackground: Boolean,
+    isBackground: Unit,
     color: typings.babylonjs.BABYLON.Color4
   ) = this()
 }

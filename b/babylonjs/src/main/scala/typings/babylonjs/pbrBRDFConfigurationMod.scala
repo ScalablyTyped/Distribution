@@ -3,7 +3,6 @@ package typings.babylonjs
 import typings.babylonjs.sceneMod.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pbrBRDFConfigurationMod {
@@ -18,18 +17,18 @@ object pbrBRDFConfigurationMod {
     def this(markAllSubMeshesAsMiscDirty: js.Function0[Unit]) = this()
     
     /** @hidden */
-    var _internalMarkAllSubMeshesAsMiscDirty: js.Any = js.native
+    /* private */ var _internalMarkAllSubMeshesAsMiscDirty: js.Any = js.native
     
     /** @hidden */
     def _markAllSubMeshesAsMiscDirty(): Unit = js.native
     
-    var _useEnergyConservation: js.Any = js.native
+    /* private */ var _useEnergyConservation: js.Any = js.native
     
-    var _useSmithVisibilityHeightCorrelated: js.Any = js.native
+    /* private */ var _useSmithVisibilityHeightCorrelated: js.Any = js.native
     
-    var _useSpecularGlossinessInputEnergyConservation: js.Any = js.native
+    /* private */ var _useSpecularGlossinessInputEnergyConservation: js.Any = js.native
     
-    var _useSphericalHarmonics: js.Any = js.native
+    /* private */ var _useSphericalHarmonics: js.Any = js.native
     
     /**
       * Makes a duplicate of the current configuration into another one.
@@ -109,8 +108,7 @@ object pbrBRDFConfigurationMod {
     @JSImport("babylonjs/Materials/PBR/pbrBRDFConfiguration", "PBRBRDFConfiguration.DEFAULT_USE_ENERGY_CONSERVATION")
     @js.native
     def DEFAULT_USE_ENERGY_CONSERVATION: Boolean = js.native
-    @scala.inline
-    def DEFAULT_USE_ENERGY_CONSERVATION_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_USE_ENERGY_CONSERVATION")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_USE_ENERGY_CONSERVATION_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_USE_ENERGY_CONSERVATION")(x.asInstanceOf[js.Any])
     
     /**
       * Default value used for the Smith Visibility Height Correlated mode.
@@ -119,8 +117,7 @@ object pbrBRDFConfigurationMod {
     @JSImport("babylonjs/Materials/PBR/pbrBRDFConfiguration", "PBRBRDFConfiguration.DEFAULT_USE_SMITH_VISIBILITY_HEIGHT_CORRELATED")
     @js.native
     def DEFAULT_USE_SMITH_VISIBILITY_HEIGHT_CORRELATED: Boolean = js.native
-    @scala.inline
-    def DEFAULT_USE_SMITH_VISIBILITY_HEIGHT_CORRELATED_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_USE_SMITH_VISIBILITY_HEIGHT_CORRELATED")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_USE_SMITH_VISIBILITY_HEIGHT_CORRELATED_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_USE_SMITH_VISIBILITY_HEIGHT_CORRELATED")(x.asInstanceOf[js.Any])
     
     /**
       * Default value used for activating energy conservation for the specular workflow.
@@ -130,8 +127,7 @@ object pbrBRDFConfigurationMod {
     @JSImport("babylonjs/Materials/PBR/pbrBRDFConfiguration", "PBRBRDFConfiguration.DEFAULT_USE_SPECULAR_GLOSSINESS_INPUT_ENERGY_CONSERVATION")
     @js.native
     def DEFAULT_USE_SPECULAR_GLOSSINESS_INPUT_ENERGY_CONSERVATION: Boolean = js.native
-    @scala.inline
-    def DEFAULT_USE_SPECULAR_GLOSSINESS_INPUT_ENERGY_CONSERVATION_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_USE_SPECULAR_GLOSSINESS_INPUT_ENERGY_CONSERVATION")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_USE_SPECULAR_GLOSSINESS_INPUT_ENERGY_CONSERVATION_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_USE_SPECULAR_GLOSSINESS_INPUT_ENERGY_CONSERVATION")(x.asInstanceOf[js.Any])
     
     /**
       * Default value used for the IBL diffuse part.
@@ -141,28 +137,25 @@ object pbrBRDFConfigurationMod {
     @JSImport("babylonjs/Materials/PBR/pbrBRDFConfiguration", "PBRBRDFConfiguration.DEFAULT_USE_SPHERICAL_HARMONICS")
     @js.native
     def DEFAULT_USE_SPHERICAL_HARMONICS: Boolean = js.native
-    @scala.inline
-    def DEFAULT_USE_SPHERICAL_HARMONICS_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_USE_SPHERICAL_HARMONICS")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_USE_SPHERICAL_HARMONICS_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_USE_SPHERICAL_HARMONICS")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IMaterialBRDFDefines extends StObject {
     
-    var BRDF_V_HEIGHT_CORRELATED: Boolean = js.native
+    var BRDF_V_HEIGHT_CORRELATED: Boolean
     
-    var MS_BRDF_ENERGY_CONSERVATION: Boolean = js.native
+    var MS_BRDF_ENERGY_CONSERVATION: Boolean
     
-    var SPECULAR_GLOSSINESS_ENERGY_CONSERVATION: Boolean = js.native
+    var SPECULAR_GLOSSINESS_ENERGY_CONSERVATION: Boolean
     
-    var SPHERICAL_HARMONICS: Boolean = js.native
+    var SPHERICAL_HARMONICS: Boolean
     
     /** @hidden */
-    var _areMiscDirty: Boolean = js.native
+    var _areMiscDirty: Boolean
   }
   object IMaterialBRDFDefines {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       BRDF_V_HEIGHT_CORRELATED: Boolean,
       MS_BRDF_ENERGY_CONSERVATION: Boolean,
       SPECULAR_GLOSSINESS_ENERGY_CONSERVATION: Boolean,
@@ -173,23 +166,17 @@ object pbrBRDFConfigurationMod {
       __obj.asInstanceOf[IMaterialBRDFDefines]
     }
     
-    @scala.inline
-    implicit class IMaterialBRDFDefinesMutableBuilder[Self <: IMaterialBRDFDefines] (val x: Self) extends AnyVal {
+    extension [Self <: IMaterialBRDFDefines](x: Self) {
       
-      @scala.inline
-      def setBRDF_V_HEIGHT_CORRELATED(value: Boolean): Self = StObject.set(x, "BRDF_V_HEIGHT_CORRELATED", value.asInstanceOf[js.Any])
+      inline def setBRDF_V_HEIGHT_CORRELATED(value: Boolean): Self = StObject.set(x, "BRDF_V_HEIGHT_CORRELATED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMS_BRDF_ENERGY_CONSERVATION(value: Boolean): Self = StObject.set(x, "MS_BRDF_ENERGY_CONSERVATION", value.asInstanceOf[js.Any])
+      inline def setMS_BRDF_ENERGY_CONSERVATION(value: Boolean): Self = StObject.set(x, "MS_BRDF_ENERGY_CONSERVATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSPECULAR_GLOSSINESS_ENERGY_CONSERVATION(value: Boolean): Self = StObject.set(x, "SPECULAR_GLOSSINESS_ENERGY_CONSERVATION", value.asInstanceOf[js.Any])
+      inline def setSPECULAR_GLOSSINESS_ENERGY_CONSERVATION(value: Boolean): Self = StObject.set(x, "SPECULAR_GLOSSINESS_ENERGY_CONSERVATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSPHERICAL_HARMONICS(value: Boolean): Self = StObject.set(x, "SPHERICAL_HARMONICS", value.asInstanceOf[js.Any])
+      inline def setSPHERICAL_HARMONICS(value: Boolean): Self = StObject.set(x, "SPHERICAL_HARMONICS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_areMiscDirty(value: Boolean): Self = StObject.set(x, "_areMiscDirty", value.asInstanceOf[js.Any])
+      inline def set_areMiscDirty(value: Boolean): Self = StObject.set(x, "_areMiscDirty", value.asInstanceOf[js.Any])
     }
   }
 }

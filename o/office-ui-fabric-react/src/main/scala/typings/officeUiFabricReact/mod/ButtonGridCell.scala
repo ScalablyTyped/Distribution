@@ -1,6 +1,7 @@
 package typings.officeUiFabricReact.mod
 
 import typings.officeUiFabricReact.anon.Disabled
+import typings.officeUiFabricReact.buttonGridCellTypesMod.IButtonGridCellProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.officeUiFabricReact.buttonGridMod.ButtonGridCell because Already inherited
 - typings.officeUiFabricReact.gridMod.ButtonGridCell because Inheritance from two classes. Inlined  */ @JSImport("office-ui-fabric-react", "ButtonGridCell")
 @js.native
-class ButtonGridCell[T, P /* <: typings.officeUiFabricReact.buttonGridCellTypesMod.IButtonGridCellProps[T] */] protected ()
+class ButtonGridCell[T, P /* <: IButtonGridCellProps[T] */] protected ()
   extends typings.officeUiFabricReact.libButtonGridMod.ButtonGridCell[T, P] {
   def this(props: P) = this()
   /**

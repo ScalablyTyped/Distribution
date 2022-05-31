@@ -7,7 +7,6 @@ import typings.std.Event
 import typings.std.HTMLSelectElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toolbarMod {
@@ -20,7 +19,7 @@ object toolbarMod {
       */
     def this(options: IOptions) = this()
     
-    var _delimiterChanged: js.Any = js.native
+    /* private */ var _delimiterChanged: js.Any = js.native
     
     /**
       * A signal emitted when the delimiter selection has changed.
@@ -50,27 +49,23 @@ object toolbarMod {
     /**
       * The instantiation options for a CSV toolbar.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The initially selected delimiter.
         */
-      var selected: String = js.native
+      var selected: String
     }
     object IOptions {
       
-      @scala.inline
-      def apply(selected: String): IOptions = {
+      inline def apply(selected: String): IOptions = {
         val __obj = js.Dynamic.literal(selected = selected.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+        inline def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       }
     }
   }

@@ -12,12 +12,6 @@ object startMod extends Shortcut {
   @js.native
   val ^ : js.Object & Agent = js.native
   
-  // Inlined from @types/aws-lambda - start
-  object AwsLambda
-  
-  // Inlined from @types/connect - start
-  object Connect
-  
   type _To = js.Object & Agent
   
   /* This means you don't have to write `^`, but can instead just say `startMod.foo` */

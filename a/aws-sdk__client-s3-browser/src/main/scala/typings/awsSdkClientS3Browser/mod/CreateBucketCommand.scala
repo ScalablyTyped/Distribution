@@ -1,5 +1,6 @@
 package typings.awsSdkClientS3Browser.mod
 
+import typings.awsSdkClientS3Browser.typesCreateBucketInputMod.CreateBucketInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class CreateBucketCommand protected ()
   extends typings.awsSdkClientS3Browser.createBucketCommandMod.CreateBucketCommand {
-  def this(input: typings.awsSdkClientS3Browser.typesCreateBucketInputMod.CreateBucketInput) = this()
+  def this(input: CreateBucketInput) = this()
 }

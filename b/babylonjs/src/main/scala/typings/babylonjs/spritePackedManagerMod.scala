@@ -4,7 +4,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.spriteManagerMod.SpriteManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spritePackedManagerMod {
@@ -44,15 +43,6 @@ object spritePackedManagerMod {
       imgUrl: String,
       capacity: Double,
       scene: Scene,
-      spriteJSON: js.UndefOr[scala.Nothing],
-      epsilon: Double
-    ) = this()
-    def this(
-      /** defines the packed manager's name */
-    name: String,
-      imgUrl: String,
-      capacity: Double,
-      scene: Scene,
       spriteJSON: String,
       epsilon: Double
     ) = this()
@@ -71,29 +61,8 @@ object spritePackedManagerMod {
       imgUrl: String,
       capacity: Double,
       scene: Scene,
-      spriteJSON: js.UndefOr[scala.Nothing],
-      epsilon: js.UndefOr[scala.Nothing],
-      samplingMode: Double
-    ) = this()
-    def this(
-      /** defines the packed manager's name */
-    name: String,
-      imgUrl: String,
-      capacity: Double,
-      scene: Scene,
-      spriteJSON: js.UndefOr[scala.Nothing],
-      epsilon: Double,
-      samplingMode: Double
-    ) = this()
-    def this(
-      /** defines the packed manager's name */
-    name: String,
-      imgUrl: String,
-      capacity: Double,
-      scene: Scene,
-      spriteJSON: String,
-      epsilon: js.UndefOr[scala.Nothing],
-      samplingMode: Double
+      spriteJSON: Unit,
+      epsilon: Double
     ) = this()
     def this(
       /** defines the packed manager's name */
@@ -111,8 +80,8 @@ object spritePackedManagerMod {
       imgUrl: String,
       capacity: Double,
       scene: Scene,
-      spriteJSON: Null,
-      epsilon: js.UndefOr[scala.Nothing],
+      spriteJSON: String,
+      epsilon: Unit,
       samplingMode: Double
     ) = this()
     def this(
@@ -123,6 +92,36 @@ object spritePackedManagerMod {
       scene: Scene,
       spriteJSON: Null,
       epsilon: Double,
+      samplingMode: Double
+    ) = this()
+    def this(
+      /** defines the packed manager's name */
+    name: String,
+      imgUrl: String,
+      capacity: Double,
+      scene: Scene,
+      spriteJSON: Null,
+      epsilon: Unit,
+      samplingMode: Double
+    ) = this()
+    def this(
+      /** defines the packed manager's name */
+    name: String,
+      imgUrl: String,
+      capacity: Double,
+      scene: Scene,
+      spriteJSON: Unit,
+      epsilon: Double,
+      samplingMode: Double
+    ) = this()
+    def this(
+      /** defines the packed manager's name */
+    name: String,
+      imgUrl: String,
+      capacity: Double,
+      scene: Scene,
+      spriteJSON: Unit,
+      epsilon: Unit,
       samplingMode: Double
     ) = this()
   }

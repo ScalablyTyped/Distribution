@@ -2,15 +2,16 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EdgesRenderer extends IEdgesRenderer {
+trait EdgesRenderer
+  extends StObject
+     with IEdgesRenderer {
   
-  var _buffers: org.scalablytyped.runtime.StringDictionary[Nullable[VertexBuffer]] = js.native
+  /* protected */ var _buffers: org.scalablytyped.runtime.StringDictionary[Nullable[VertexBuffer]] = js.native
   
-  var _buffersForInstances: org.scalablytyped.runtime.StringDictionary[Nullable[VertexBuffer]] = js.native
+  /* protected */ var _buffersForInstances: org.scalablytyped.runtime.StringDictionary[Nullable[VertexBuffer]] = js.native
   
   /**
     * Checks if the pair of p0 and p1 is en edge
@@ -23,9 +24,9 @@ trait EdgesRenderer extends IEdgesRenderer {
     */
   /* protected */ def _checkEdge(faceIndex: Double, edge: Double, faceNormals: js.Array[Vector3], p0: Vector3, p1: Vector3): Unit = js.native
   
-  var _checkVerticesInsteadOfIndices: Boolean = js.native
+  /* protected */ var _checkVerticesInsteadOfIndices: Boolean = js.native
   
-  var _epsilon: Double = js.native
+  /* protected */ var _epsilon: Double = js.native
   
   /**
     * Generates lines edges from adjacencjes
@@ -33,25 +34,25 @@ trait EdgesRenderer extends IEdgesRenderer {
     */
   def _generateEdgesLines(): Unit = js.native
   
-  var _generateEdgesLinesAlternate: js.Any = js.native
+  /* private */ var _generateEdgesLinesAlternate: js.Any = js.native
   
-  var _ib: DataBuffer = js.native
+  /* protected */ var _ib: DataBuffer = js.native
   
-  var _indicesCount: Double = js.native
+  /* protected */ var _indicesCount: Double = js.native
   
-  var _lineShader: ShaderMaterial = js.native
+  /* protected */ var _lineShader: ShaderMaterial = js.native
   
-  var _linesIndices: js.Array[Double] = js.native
+  /* protected */ var _linesIndices: js.Array[Double] = js.native
   
-  var _linesNormals: js.Array[Double] = js.native
+  /* protected */ var _linesNormals: js.Array[Double] = js.native
   
-  var _linesPositions: js.Array[Double] = js.native
+  /* protected */ var _linesPositions: js.Array[Double] = js.native
   
-  var _meshDisposeObserver: js.Any = js.native
+  /* private */ var _meshDisposeObserver: js.Any = js.native
   
-  var _meshRebuildObserver: js.Any = js.native
+  /* private */ var _meshRebuildObserver: js.Any = js.native
   
-  var _options: Nullable[IEdgesRendererOptions] = js.native
+  /* protected */ var _options: Nullable[IEdgesRendererOptions] = js.native
   
   /* protected */ def _prepareRessources(): Unit = js.native
   
@@ -62,12 +63,12 @@ trait EdgesRenderer extends IEdgesRenderer {
   /** @hidden */
   def _rebuild(): Unit = js.native
   
-  var _source: AbstractMesh = js.native
+  /* protected */ var _source: AbstractMesh = js.native
   
   /**
     * See https://playground.babylonjs.com/#R3JR6V#1 for a visual display of the algorithm
     */
-  var _tessellateTriangle: js.Any = js.native
+  /* private */ var _tessellateTriangle: js.Any = js.native
   
   /**
     * push line into the position, normal and index buffer

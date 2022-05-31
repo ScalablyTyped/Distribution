@@ -2,21 +2,21 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PoseEnabledController
-  extends Gamepad
+  extends StObject
+     with Gamepad
      with PoseControlled {
   
-  var _calculatedPosition: Vector3 = js.native
+  /* protected */ var _calculatedPosition: Vector3 = js.native
   
-  var _calculatedRotation: js.Any = js.native
+  /* private */ var _calculatedRotation: js.Any = js.native
   
-  var _deviceRoomPosition: js.Any = js.native
+  /* private */ var _deviceRoomPosition: js.Any = js.native
   
-  var _deviceRoomRotationQuaternion: js.Any = js.native
+  /* private */ var _deviceRoomRotationQuaternion: js.Any = js.native
   
   /**
     * Internal, matrix used to convert room space to babylon space
@@ -29,11 +29,11 @@ trait PoseEnabledController
     */
   def _disableTrackPosition(fixedPosition: Vector3): Unit = js.native
   
-  var _draggedRoomRotation: js.Any = js.native
+  /* private */ var _draggedRoomRotation: js.Any = js.native
   
-  var _leftHandSystemQuaternion: js.Any = js.native
+  /* private */ var _leftHandSystemQuaternion: js.Any = js.native
   
-  var _maxRotationDistFromHeadset: js.Any = js.native
+  /* private */ var _maxRotationDistFromHeadset: js.Any = js.native
   
   /**
     * Internal, the mesh attached to the controller
@@ -52,16 +52,16 @@ trait PoseEnabledController
     */
   var _pointingPoseNode: Nullable[TransformNode] = js.native
   
-  var _poseControlledCamera: js.Any = js.native
+  /* private */ var _poseControlledCamera: js.Any = js.native
   
-  var _trackPosition: js.Any = js.native
+  /* private */ var _trackPosition: js.Any = js.native
   
   /**
     * Updates only the pose device and mesh without doing any button event checking
     */
   /* protected */ def _updatePoseAndMesh(): Unit = js.native
   
-  var _workingMatrix: js.Any = js.native
+  /* private */ var _workingMatrix: js.Any = js.native
   
   /**
     * Attaches a mesh to the controller

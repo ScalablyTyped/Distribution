@@ -3,7 +3,6 @@ package typings.babylonjs.indexMod
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -66,9 +65,9 @@ object babylonjsMeshesAbstractMeshAugmentingMod {
       * @see https://doc.babylonjs.com/how_to/optimizing_your_scene_with_octrees
       */
     def createOrUpdateSubmeshesOctree(): typings.babylonjs.octreeMod.Octree[typings.babylonjs.subMeshMod.SubMesh] = js.native
-    def createOrUpdateSubmeshesOctree(maxCapacity: js.UndefOr[scala.Nothing], maxDepth: Double): typings.babylonjs.octreeMod.Octree[typings.babylonjs.subMeshMod.SubMesh] = js.native
     def createOrUpdateSubmeshesOctree(maxCapacity: Double): typings.babylonjs.octreeMod.Octree[typings.babylonjs.subMeshMod.SubMesh] = js.native
     def createOrUpdateSubmeshesOctree(maxCapacity: Double, maxDepth: Double): typings.babylonjs.octreeMod.Octree[typings.babylonjs.subMeshMod.SubMesh] = js.native
+    def createOrUpdateSubmeshesOctree(maxCapacity: Unit, maxDepth: Double): typings.babylonjs.octreeMod.Octree[typings.babylonjs.subMeshMod.SubMesh] = js.native
     
     /**
       * Gets the edgesRenderer associated with the mesh

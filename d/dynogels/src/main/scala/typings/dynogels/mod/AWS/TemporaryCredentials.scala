@@ -21,5 +21,3 @@ class TemporaryCredentials ()
   def this(options: TemporaryCredentialsOptions) = this()
   def this(options: TemporaryCredentialsOptions, masterCredentials: typings.awsSdk.credentialsMod.Credentials) = this()
 }
-// Needed to expose interfaces on the class
-object TemporaryCredentials

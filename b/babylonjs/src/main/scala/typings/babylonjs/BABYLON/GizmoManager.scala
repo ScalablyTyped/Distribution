@@ -3,36 +3,37 @@ package typings.babylonjs.BABYLON
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GizmoManager extends IDisposable {
+trait GizmoManager
+  extends StObject
+     with IDisposable {
   
   /**
     * Subscribes to pointer down events, for attaching and detaching mesh
     * @param scene The sceme layer the observer will be added to
     */
-  var _attachToMeshPointerObserver: js.Any = js.native
+  /* private */ var _attachToMeshPointerObserver: js.Any = js.native
   
-  var _attachedMesh: js.Any = js.native
+  /* private */ var _attachedMesh: js.Any = js.native
   
-  var _attachedNode: js.Any = js.native
+  /* private */ var _attachedNode: js.Any = js.native
   
-  var _boundingBoxColor: js.Any = js.native
+  /* private */ var _boundingBoxColor: js.Any = js.native
   
-  var _defaultKeepDepthUtilityLayer: js.Any = js.native
+  /* private */ var _defaultKeepDepthUtilityLayer: js.Any = js.native
   
-  var _defaultUtilityLayer: js.Any = js.native
+  /* private */ var _defaultUtilityLayer: js.Any = js.native
   
   /** Node Caching for quick lookup */
-  var _gizmoAxisCache: js.Any = js.native
+  /* private */ var _gizmoAxisCache: js.Any = js.native
   
-  var _gizmosEnabled: js.Any = js.native
+  /* private */ var _gizmosEnabled: js.Any = js.native
   
-  var _pointerObservers: js.Any = js.native
+  /* private */ var _pointerObservers: js.Any = js.native
   
-  var _thickness: js.Any = js.native
+  /* private */ var _thickness: js.Any = js.native
   
   /**
     * Builds Gizmo Axis Cache to enable features such as hover state preservation and graying out other axis during manipulation
@@ -115,7 +116,7 @@ trait GizmoManager extends IDisposable {
     */
   def scaleGizmoEnabled_=(value: Boolean): Unit = js.native
   
-  var scene: js.Any = js.native
+  /* private */ var scene: js.Any = js.native
   
   /**
     * If pointer events should perform attaching/detaching a gizmo, if false this can be done manually via attachToMesh/attachToNode. (Default: true)

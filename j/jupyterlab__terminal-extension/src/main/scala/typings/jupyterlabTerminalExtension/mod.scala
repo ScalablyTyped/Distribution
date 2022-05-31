@@ -1,6 +1,5 @@
 package typings.jupyterlabTerminalExtension
 
-import org.scalablytyped.runtime.Shortcut
 import typings.jupyterlabApplication.frontendMod.JupyterFrontEnd.IShell
 import typings.jupyterlabApplication.frontendMod.JupyterFrontEndPlugin
 import typings.jupyterlabApplication.mod.JupyterFrontEnd
@@ -12,10 +11,13 @@ import typings.jupyterlabTerminal.tokensMod.ITerminalTracker
 import typings.jupyterlabTerminalExtension.anon.PartialIOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
+  
+  @JSImport("@jupyterlab/terminal-extension", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * The default terminal extension.
@@ -24,17 +26,10 @@ object mod extends Shortcut {
   @js.native
   val default: JupyterFrontEndPlugin[ITerminalTracker] = js.native
   
-  @JSImport("@jupyterlab/terminal-extension", "addCommands")
-  @js.native
-  def addCommands(
+  inline def addCommands(
     app: JupyterFrontEnd[IShell],
     tracker: WidgetTracker[MainAreaWidget[ITerminal]],
     settingRegistry: ISettingRegistry,
     options: PartialIOptions
-  ): Unit = js.native
-  
-  type _To = JupyterFrontEndPlugin[ITerminalTracker]
-  
-  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: JupyterFrontEndPlugin[ITerminalTracker] = default
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCommands")(app.asInstanceOf[js.Any], tracker.asInstanceOf[js.Any], settingRegistry.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

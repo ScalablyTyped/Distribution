@@ -2,7 +2,6 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,9 +12,13 @@ object NodeMaterialConnectionPointDirection extends StObject {
   
   /** Input */
   @js.native
-  sealed trait Input extends NodeMaterialConnectionPointDirection
+  sealed trait Input
+    extends StObject
+       with NodeMaterialConnectionPointDirection
   
   /** Output */
   @js.native
-  sealed trait Output extends NodeMaterialConnectionPointDirection
+  sealed trait Output
+    extends StObject
+       with NodeMaterialConnectionPointDirection
 }

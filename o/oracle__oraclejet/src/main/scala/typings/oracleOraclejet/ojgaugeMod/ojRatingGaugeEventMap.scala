@@ -32,48 +32,47 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ojRatingGaugeEventMap extends dvtBaseComponentEventMap[ojRatingGaugeSettableProperties] {
+trait ojRatingGaugeEventMap
+  extends StObject
+     with dvtBaseComponentEventMap[ojRatingGaugeSettableProperties] {
   
-  var changedChanged: JetElementCustomEvent[Boolean] = js.native
+  var changedChanged: JetElementCustomEvent[Boolean]
   
-  var changedStateChanged: JetElementCustomEvent[Source] = js.native
+  var changedStateChanged: JetElementCustomEvent[Source]
   
-  var hoverStateChanged: JetElementCustomEvent[Source] = js.native
+  var hoverStateChanged: JetElementCustomEvent[Source]
   
-  var maxChanged: JetElementCustomEvent[Double] = js.native
+  var maxChanged: JetElementCustomEvent[Double]
   
-  var minChanged: JetElementCustomEvent[Double] = js.native
+  var minChanged: JetElementCustomEvent[Double]
   
-  var orientationChanged: JetElementCustomEvent[vertical | horizontal] = js.native
+  var orientationChanged: JetElementCustomEvent[vertical | horizontal]
   
-  var preserveAspectRatioChanged: JetElementCustomEvent[none | meet] = js.native
+  var preserveAspectRatioChanged: JetElementCustomEvent[none | meet]
   
-  var readonlyChanged: JetElementCustomEvent[Boolean] = js.native
+  var readonlyChanged: JetElementCustomEvent[Boolean]
   
-  var selectedStateChanged: JetElementCustomEvent[Source] = js.native
+  var selectedStateChanged: JetElementCustomEvent[Source]
   
-  var stepChanged: JetElementCustomEvent[`0.5` | `1`] = js.native
+  var stepChanged: JetElementCustomEvent[`0.5` | `1`]
   
-  var thresholdsChanged: JetElementCustomEvent[js.Array[Threshold]] = js.native
+  var thresholdsChanged: JetElementCustomEvent[js.Array[Threshold]]
   
-  var tooltipChanged: JetElementCustomEvent[`11`] = js.native
+  var tooltipChanged: JetElementCustomEvent[`11`]
   
-  var transientValueChanged: JetElementCustomEvent[Double | Null] = js.native
+  var transientValueChanged: JetElementCustomEvent[Double | Null]
   
-  var unselectedStateChanged: JetElementCustomEvent[Source] = js.native
+  var unselectedStateChanged: JetElementCustomEvent[Source]
   
-  var valueChanged: JetElementCustomEvent[Double | Null] = js.native
+  var valueChanged: JetElementCustomEvent[Double | Null]
   
-  var visualEffectsChanged: JetElementCustomEvent[none | auto] = js.native
+  var visualEffectsChanged: JetElementCustomEvent[none | auto]
 }
 object ojRatingGaugeEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,
@@ -189,55 +188,38 @@ object ojRatingGaugeEventMap {
     __obj.asInstanceOf[ojRatingGaugeEventMap]
   }
   
-  @scala.inline
-  implicit class ojRatingGaugeEventMapMutableBuilder[Self <: ojRatingGaugeEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: ojRatingGaugeEventMap](x: Self) {
     
-    @scala.inline
-    def setChangedChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "changedChanged", value.asInstanceOf[js.Any])
+    inline def setChangedChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "changedChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangedStateChanged(value: JetElementCustomEvent[Source]): Self = StObject.set(x, "changedStateChanged", value.asInstanceOf[js.Any])
+    inline def setChangedStateChanged(value: JetElementCustomEvent[Source]): Self = StObject.set(x, "changedStateChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverStateChanged(value: JetElementCustomEvent[Source]): Self = StObject.set(x, "hoverStateChanged", value.asInstanceOf[js.Any])
+    inline def setHoverStateChanged(value: JetElementCustomEvent[Source]): Self = StObject.set(x, "hoverStateChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "maxChanged", value.asInstanceOf[js.Any])
+    inline def setMaxChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "maxChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "minChanged", value.asInstanceOf[js.Any])
+    inline def setMinChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "minChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationChanged(value: JetElementCustomEvent[vertical | horizontal]): Self = StObject.set(x, "orientationChanged", value.asInstanceOf[js.Any])
+    inline def setOrientationChanged(value: JetElementCustomEvent[vertical | horizontal]): Self = StObject.set(x, "orientationChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveAspectRatioChanged(value: JetElementCustomEvent[none | meet]): Self = StObject.set(x, "preserveAspectRatioChanged", value.asInstanceOf[js.Any])
+    inline def setPreserveAspectRatioChanged(value: JetElementCustomEvent[none | meet]): Self = StObject.set(x, "preserveAspectRatioChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadonlyChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "readonlyChanged", value.asInstanceOf[js.Any])
+    inline def setReadonlyChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "readonlyChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedStateChanged(value: JetElementCustomEvent[Source]): Self = StObject.set(x, "selectedStateChanged", value.asInstanceOf[js.Any])
+    inline def setSelectedStateChanged(value: JetElementCustomEvent[Source]): Self = StObject.set(x, "selectedStateChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepChanged(value: JetElementCustomEvent[`0.5` | `1`]): Self = StObject.set(x, "stepChanged", value.asInstanceOf[js.Any])
+    inline def setStepChanged(value: JetElementCustomEvent[`0.5` | `1`]): Self = StObject.set(x, "stepChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdsChanged(value: JetElementCustomEvent[js.Array[Threshold]]): Self = StObject.set(x, "thresholdsChanged", value.asInstanceOf[js.Any])
+    inline def setThresholdsChanged(value: JetElementCustomEvent[js.Array[Threshold]]): Self = StObject.set(x, "thresholdsChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipChanged(value: JetElementCustomEvent[`11`]): Self = StObject.set(x, "tooltipChanged", value.asInstanceOf[js.Any])
+    inline def setTooltipChanged(value: JetElementCustomEvent[`11`]): Self = StObject.set(x, "tooltipChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransientValueChanged(value: JetElementCustomEvent[Double | Null]): Self = StObject.set(x, "transientValueChanged", value.asInstanceOf[js.Any])
+    inline def setTransientValueChanged(value: JetElementCustomEvent[Double | Null]): Self = StObject.set(x, "transientValueChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnselectedStateChanged(value: JetElementCustomEvent[Source]): Self = StObject.set(x, "unselectedStateChanged", value.asInstanceOf[js.Any])
+    inline def setUnselectedStateChanged(value: JetElementCustomEvent[Source]): Self = StObject.set(x, "unselectedStateChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueChanged(value: JetElementCustomEvent[Double | Null]): Self = StObject.set(x, "valueChanged", value.asInstanceOf[js.Any])
+    inline def setValueChanged(value: JetElementCustomEvent[Double | Null]): Self = StObject.set(x, "valueChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisualEffectsChanged(value: JetElementCustomEvent[none | auto]): Self = StObject.set(x, "visualEffectsChanged", value.asInstanceOf[js.Any])
+    inline def setVisualEffectsChanged(value: JetElementCustomEvent[none | auto]): Self = StObject.set(x, "visualEffectsChanged", value.asInstanceOf[js.Any])
   }
 }

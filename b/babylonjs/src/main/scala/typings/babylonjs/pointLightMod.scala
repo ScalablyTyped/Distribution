@@ -5,7 +5,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.shadowLightMod.ShadowLight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pointLightMod {
@@ -28,7 +27,7 @@ object pointLightMod {
       */
     def this(name: String, position: Vector3, scene: Scene) = this()
     
-    var _shadowAngle: js.Any = js.native
+    /* private */ var _shadowAngle: js.Any = js.native
     
     /**
       * Gets the direction if it has been set.

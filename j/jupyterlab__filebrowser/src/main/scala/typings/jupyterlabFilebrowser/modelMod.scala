@@ -14,7 +14,6 @@ import typings.std.Error
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modelMod {
@@ -25,78 +24,80 @@ object modelMod {
   
   @JSImport("@jupyterlab/filebrowser/lib/model", "FileBrowserModel")
   @js.native
-  class FileBrowserModel protected () extends IDisposable {
+  class FileBrowserModel protected ()
+    extends StObject
+       with IDisposable {
     /**
       * Construct a new file browser model.
       */
     def this(options: IOptions) = this()
     
-    var _connectionFailure: js.Any = js.native
+    /* private */ var _connectionFailure: js.Any = js.native
     
-    var _driveName: js.Any = js.native
+    /* private */ var _driveName: js.Any = js.native
     
-    var _fileChanged: js.Any = js.native
+    /* private */ var _fileChanged: js.Any = js.native
     
     /**
       * Handle an updated contents model.
       */
-    var _handleContents: js.Any = js.native
+    /* private */ var _handleContents: js.Any = js.native
     
-    var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: js.Any = js.native
     
-    var _items: js.Any = js.native
+    /* private */ var _items: js.Any = js.native
     
-    var _key: js.Any = js.native
+    /* private */ var _key: js.Any = js.native
     
-    var _model: js.Any = js.native
+    /* private */ var _model: js.Any = js.native
     
     /**
       * Handle a change on the contents manager.
       */
-    var _onFileChanged: js.Any = js.native
+    /* private */ var _onFileChanged: js.Any = js.native
     
     /**
       * Handle a change to the running sessions.
       */
-    var _onRunningChanged: js.Any = js.native
+    /* private */ var _onRunningChanged: js.Any = js.native
     
-    var _pathChanged: js.Any = js.native
+    /* private */ var _pathChanged: js.Any = js.native
     
-    var _paths: js.Any = js.native
+    /* private */ var _paths: js.Any = js.native
     
-    var _pending: js.Any = js.native
+    /* private */ var _pending: js.Any = js.native
     
-    var _pendingPath: js.Any = js.native
+    /* private */ var _pendingPath: js.Any = js.native
     
-    var _poll: js.Any = js.native
+    /* private */ var _poll: js.Any = js.native
     
     /**
       * Populate the model's sessions collection.
       */
-    var _populateSessions: js.Any = js.native
+    /* private */ var _populateSessions: js.Any = js.native
     
-    var _refreshed: js.Any = js.native
+    /* private */ var _refreshed: js.Any = js.native
     
-    var _restored: js.Any = js.native
+    /* private */ var _restored: js.Any = js.native
     
-    var _sessions: js.Any = js.native
+    /* private */ var _sessions: js.Any = js.native
     
-    var _shouldUploadLarge: js.Any = js.native
+    /* private */ var _shouldUploadLarge: js.Any = js.native
     
-    var _state: js.Any = js.native
+    /* private */ var _state: js.Any = js.native
     
-    var _unloadEventListener: js.Any = js.native
+    /* private */ var _unloadEventListener: js.Any = js.native
     
     /**
       * Perform the actual upload.
       */
-    var _upload: js.Any = js.native
+    /* private */ var _upload: js.Any = js.native
     
-    var _uploadChanged: js.Any = js.native
+    /* private */ var _uploadChanged: js.Any = js.native
     
-    var _uploadCheckDisposed: js.Any = js.native
+    /* private */ var _uploadCheckDisposed: js.Any = js.native
     
-    var _uploads: js.Any = js.native
+    /* private */ var _uploads: js.Any = js.native
     
     /**
       * Change directory.
@@ -112,6 +113,20 @@ object modelMod {
       * A signal emitted when the file browser model loses connection.
       */
     def connectionFailure: ISignal[this.type, Error] = js.native
+    
+    /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * Download a file.
@@ -133,6 +148,14 @@ object modelMod {
       */
     def fileChanged: ISignal[this.type, IChangedArgs] = js.native
     
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
     /**
       * Get whether the model is disposed.
       */
@@ -240,75 +263,63 @@ object modelMod {
     /**
       * An options object for initializing a file browser.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * Whether a file browser automatically loads its initial path.
         * The default is `true`.
         */
-      var auto: js.UndefOr[Boolean] = js.native
+      var auto: js.UndefOr[Boolean] = js.undefined
       
       /**
         * An optional `Contents.IDrive` name for the model.
         * If given, the model will prepend `driveName:` to
         * all paths used in file operations.
         */
-      var driveName: js.UndefOr[String] = js.native
+      var driveName: js.UndefOr[String] = js.undefined
       
       /**
         * A document manager instance.
         */
-      var manager: IDocumentManager = js.native
+      var manager: IDocumentManager
       
       /**
         * The time interval for browser refreshing, in ms.
         */
-      var refreshInterval: js.UndefOr[Double] = js.native
+      var refreshInterval: js.UndefOr[Double] = js.undefined
       
       /**
         * An optional state database. If provided, the model will restore which
         * folder was last opened when it is restored.
         */
-      var state: js.UndefOr[IStateDB[ReadonlyPartialJSONValue]] = js.native
+      var state: js.UndefOr[IStateDB[ReadonlyPartialJSONValue]] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(manager: IDocumentManager): IOptions = {
+      inline def apply(manager: IDocumentManager): IOptions = {
         val __obj = js.Dynamic.literal(manager = manager.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
+        inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
+        inline def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
         
-        @scala.inline
-        def setDriveName(value: String): Self = StObject.set(x, "driveName", value.asInstanceOf[js.Any])
+        inline def setDriveName(value: String): Self = StObject.set(x, "driveName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDriveNameUndefined: Self = StObject.set(x, "driveName", js.undefined)
+        inline def setDriveNameUndefined: Self = StObject.set(x, "driveName", js.undefined)
         
-        @scala.inline
-        def setManager(value: IDocumentManager): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
+        inline def setManager(value: IDocumentManager): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRefreshInterval(value: Double): Self = StObject.set(x, "refreshInterval", value.asInstanceOf[js.Any])
+        inline def setRefreshInterval(value: Double): Self = StObject.set(x, "refreshInterval", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRefreshIntervalUndefined: Self = StObject.set(x, "refreshInterval", js.undefined)
+        inline def setRefreshIntervalUndefined: Self = StObject.set(x, "refreshInterval", js.undefined)
         
-        @scala.inline
-        def setState(value: IStateDB[ReadonlyPartialJSONValue]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+        inline def setState(value: IStateDB[ReadonlyPartialJSONValue]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+        inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       }
     }
   }
@@ -318,38 +329,34 @@ object modelMod {
   class FilterFileBrowserModel protected () extends FileBrowserModel {
     def this(options: typings.jupyterlabFilebrowser.modelMod.FilterFileBrowserModel.IOptions) = this()
     
-    var _filter: js.Any = js.native
+    /* private */ var _filter: js.Any = js.native
   }
   object FilterFileBrowserModel {
     
     /**
       * Constructor options
       */
-    @js.native
     trait IOptions
-      extends typings.jupyterlabFilebrowser.modelMod.FileBrowserModel.IOptions {
+      extends StObject
+         with typings.jupyterlabFilebrowser.modelMod.FileBrowserModel.IOptions {
       
       /**
         * Filter function on file browser item model
         */
-      var filter: js.UndefOr[js.Function1[/* value */ IModel, Boolean]] = js.native
+      var filter: js.UndefOr[js.Function1[/* value */ IModel, Boolean]] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(manager: IDocumentManager): typings.jupyterlabFilebrowser.modelMod.FilterFileBrowserModel.IOptions = {
+      inline def apply(manager: IDocumentManager): typings.jupyterlabFilebrowser.modelMod.FilterFileBrowserModel.IOptions = {
         val __obj = js.Dynamic.literal(manager = manager.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.jupyterlabFilebrowser.modelMod.FilterFileBrowserModel.IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: typings.jupyterlabFilebrowser.modelMod.FilterFileBrowserModel.IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.jupyterlabFilebrowser.modelMod.FilterFileBrowserModel.IOptions](x: Self) {
         
-        @scala.inline
-        def setFilter(value: /* value */ IModel => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+        inline def setFilter(value: /* value */ IModel => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+        inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       }
     }
   }
@@ -358,32 +365,27 @@ object modelMod {
   @js.native
   val LARGE_FILE_SIZE: Double = js.native
   
-  @js.native
   trait IUploadModel extends StObject {
     
-    var path: String = js.native
+    var path: String
     
     /**
       * % uploaded [0, 1)
       */
-    var progress: Double = js.native
+    var progress: Double
   }
   object IUploadModel {
     
-    @scala.inline
-    def apply(path: String, progress: Double): IUploadModel = {
+    inline def apply(path: String, progress: Double): IUploadModel = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any])
       __obj.asInstanceOf[IUploadModel]
     }
     
-    @scala.inline
-    implicit class IUploadModelMutableBuilder[Self <: IUploadModel] (val x: Self) extends AnyVal {
+    extension [Self <: IUploadModel](x: Self) {
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+      inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     }
   }
 }

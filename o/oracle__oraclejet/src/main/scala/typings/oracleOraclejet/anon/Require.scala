@@ -2,37 +2,32 @@ package typings.oracleOraclejet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Require extends StObject {
   
   var require: js.UndefOr[
-    (js.Function1[/* module */ String, _]) | (js.Function3[
+    (js.Function1[/* module */ String, js.Any]) | (js.Function3[
       /* modules */ js.Array[String], 
       /* ready */ js.UndefOr[js.Any], 
       /* errback */ js.UndefOr[js.Any], 
       Unit
     ])
-  ] = js.native
+  ] = js.undefined
   
-  var viewPath: String = js.native
+  var viewPath: String
 }
 object Require {
   
-  @scala.inline
-  def apply(viewPath: String): Require = {
+  inline def apply(viewPath: String): Require = {
     val __obj = js.Dynamic.literal(viewPath = viewPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[Require]
   }
   
-  @scala.inline
-  implicit class RequireMutableBuilder[Self <: Require] (val x: Self) extends AnyVal {
+  extension [Self <: Require](x: Self) {
     
-    @scala.inline
-    def setRequire(
-      value: (js.Function1[/* module */ String, _]) | (js.Function3[
+    inline def setRequire(
+      value: (js.Function1[/* module */ String, js.Any]) | (js.Function3[
           /* modules */ js.Array[String], 
           /* ready */ js.UndefOr[js.Any], 
           /* errback */ js.UndefOr[js.Any], 
@@ -40,18 +35,14 @@ object Require {
         ])
     ): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequireFunction1(value: /* module */ String => _): Self = StObject.set(x, "require", js.Any.fromFunction1(value))
+    inline def setRequireFunction1(value: /* module */ String => js.Any): Self = StObject.set(x, "require", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRequireFunction3(
+    inline def setRequireFunction3(
       value: (/* modules */ js.Array[String], /* ready */ js.UndefOr[js.Any], /* errback */ js.UndefOr[js.Any]) => Unit
     ): Self = StObject.set(x, "require", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRequireUndefined: Self = StObject.set(x, "require", js.undefined)
+    inline def setRequireUndefined: Self = StObject.set(x, "require", js.undefined)
     
-    @scala.inline
-    def setViewPath(value: String): Self = StObject.set(x, "viewPath", value.asInstanceOf[js.Any])
+    inline def setViewPath(value: String): Self = StObject.set(x, "viewPath", value.asInstanceOf[js.Any])
   }
 }

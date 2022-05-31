@@ -3,32 +3,27 @@ package typings.oracleOraclejet.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Header
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var content: typings.std.Element = js.native
+  var content: typings.std.Element
   
-  var header: typings.std.Element = js.native
+  var header: typings.std.Element
 }
 object Header {
   
-  @scala.inline
-  def apply(content: typings.std.Element, header: typings.std.Element): Header = {
+  inline def apply(content: typings.std.Element, header: typings.std.Element): Header = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any])
     __obj.asInstanceOf[Header]
   }
   
-  @scala.inline
-  implicit class HeaderMutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
+  extension [Self <: Header](x: Self) {
     
-    @scala.inline
-    def setContent(value: typings.std.Element): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: typings.std.Element): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeader(value: typings.std.Element): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: typings.std.Element): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
   }
 }

@@ -4,7 +4,6 @@ import typings.babylonjs.webXRFeaturesManagerMod.IWebXRFeature
 import typings.babylonjs.webXRFeaturesManagerMod.WebXRFeatureConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "WebXRFeaturesManager")
@@ -21,6 +20,10 @@ class WebXRFeaturesManager protected ()
 /* static members */
 object WebXRFeaturesManager {
   
+  @JSImport("babylonjs", "WebXRFeaturesManager")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Used to register a module. After calling this function a developer can use this feature in the scene.
     * Mainly used internally.
@@ -30,44 +33,16 @@ object WebXRFeaturesManager {
     * @param version the (babylon) version of the module
     * @param stable is that a stable version of this module
     */
-  @JSImport("babylonjs", "WebXRFeaturesManager.AddWebXRFeature")
-  @js.native
-  def AddWebXRFeature(featureName: String, constructorFunction: WebXRFeatureConstructor): Unit = js.native
-  @JSImport("babylonjs", "WebXRFeaturesManager.AddWebXRFeature")
-  @js.native
-  def AddWebXRFeature(
-    featureName: String,
-    constructorFunction: WebXRFeatureConstructor,
-    version: js.UndefOr[scala.Nothing],
-    stable: Boolean
-  ): Unit = js.native
-  @JSImport("babylonjs", "WebXRFeaturesManager.AddWebXRFeature")
-  @js.native
-  def AddWebXRFeature(featureName: String, constructorFunction: WebXRFeatureConstructor, version: Double): Unit = js.native
-  @JSImport("babylonjs", "WebXRFeaturesManager.AddWebXRFeature")
-  @js.native
-  def AddWebXRFeature(
+  inline def AddWebXRFeature(featureName: String, constructorFunction: WebXRFeatureConstructor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("AddWebXRFeature")(featureName.asInstanceOf[js.Any], constructorFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def AddWebXRFeature(featureName: String, constructorFunction: WebXRFeatureConstructor, version: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("AddWebXRFeature")(featureName.asInstanceOf[js.Any], constructorFunction.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def AddWebXRFeature(
     featureName: String,
     constructorFunction: WebXRFeatureConstructor,
     version: Double,
     stable: Boolean
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("AddWebXRFeature")(featureName.asInstanceOf[js.Any], constructorFunction.asInstanceOf[js.Any], version.asInstanceOf[js.Any], stable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def AddWebXRFeature(featureName: String, constructorFunction: WebXRFeatureConstructor, version: Unit, stable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("AddWebXRFeature")(featureName.asInstanceOf[js.Any], constructorFunction.asInstanceOf[js.Any], version.asInstanceOf[js.Any], stable.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("babylonjs", "WebXRFeaturesManager.ConstructFeature")
-  @js.native
-  def ConstructFeature(
-    featureName: String,
-    version: js.UndefOr[scala.Nothing],
-    xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager
-  ): js.Function0[IWebXRFeature] = js.native
-  @JSImport("babylonjs", "WebXRFeaturesManager.ConstructFeature")
-  @js.native
-  def ConstructFeature(
-    featureName: String,
-    version: js.UndefOr[scala.Nothing],
-    xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager,
-    options: js.Any
-  ): js.Function0[IWebXRFeature] = js.native
   /**
     * Returns a constructor of a specific feature.
     *
@@ -77,57 +52,56 @@ object WebXRFeaturesManager {
     * @param options optional options provided to the module.
     * @returns a function that, when called, will return a new instance of this feature
     */
-  @JSImport("babylonjs", "WebXRFeaturesManager.ConstructFeature")
-  @js.native
-  def ConstructFeature(
+  inline def ConstructFeature(
     featureName: String,
     version: Double,
     xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager
-  ): js.Function0[IWebXRFeature] = js.native
-  @JSImport("babylonjs", "WebXRFeaturesManager.ConstructFeature")
-  @js.native
-  def ConstructFeature(
+  ): js.Function0[IWebXRFeature] = (^.asInstanceOf[js.Dynamic].applyDynamic("ConstructFeature")(featureName.asInstanceOf[js.Any], version.asInstanceOf[js.Any], xrSessionManager.asInstanceOf[js.Any])).asInstanceOf[js.Function0[IWebXRFeature]]
+  inline def ConstructFeature(
     featureName: String,
     version: Double,
     xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager,
     options: js.Any
-  ): js.Function0[IWebXRFeature] = js.native
+  ): js.Function0[IWebXRFeature] = (^.asInstanceOf[js.Dynamic].applyDynamic("ConstructFeature")(featureName.asInstanceOf[js.Any], version.asInstanceOf[js.Any], xrSessionManager.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[IWebXRFeature]]
+  inline def ConstructFeature(
+    featureName: String,
+    version: Unit,
+    xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager
+  ): js.Function0[IWebXRFeature] = (^.asInstanceOf[js.Dynamic].applyDynamic("ConstructFeature")(featureName.asInstanceOf[js.Any], version.asInstanceOf[js.Any], xrSessionManager.asInstanceOf[js.Any])).asInstanceOf[js.Function0[IWebXRFeature]]
+  inline def ConstructFeature(
+    featureName: String,
+    version: Unit,
+    xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager,
+    options: js.Any
+  ): js.Function0[IWebXRFeature] = (^.asInstanceOf[js.Dynamic].applyDynamic("ConstructFeature")(featureName.asInstanceOf[js.Any], version.asInstanceOf[js.Any], xrSessionManager.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[IWebXRFeature]]
   
   /**
     * Can be used to return the list of features currently registered
     *
     * @returns an Array of available features
     */
-  @JSImport("babylonjs", "WebXRFeaturesManager.GetAvailableFeatures")
-  @js.native
-  def GetAvailableFeatures(): js.Array[String] = js.native
+  inline def GetAvailableFeatures(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAvailableFeatures")().asInstanceOf[js.Array[String]]
   
   /**
     * Gets the versions available for a specific feature
     * @param featureName the name of the feature
     * @returns an array with the available versions
     */
-  @JSImport("babylonjs", "WebXRFeaturesManager.GetAvailableVersions")
-  @js.native
-  def GetAvailableVersions(featureName: String): js.Array[String] = js.native
+  inline def GetAvailableVersions(featureName: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAvailableVersions")(featureName.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   /**
     * Return the latest unstable version of this feature
     * @param featureName the name of the feature to search
     * @returns the version number. if not found will return -1
     */
-  @JSImport("babylonjs", "WebXRFeaturesManager.GetLatestVersionOfFeature")
-  @js.native
-  def GetLatestVersionOfFeature(featureName: String): Double = js.native
+  inline def GetLatestVersionOfFeature(featureName: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetLatestVersionOfFeature")(featureName.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Return the latest stable version of this feature
     * @param featureName the name of the feature to search
     * @returns the version number. if not found will return -1
     */
-  @JSImport("babylonjs", "WebXRFeaturesManager.GetStableVersionOfFeature")
-  @js.native
-  def GetStableVersionOfFeature(featureName: String): Double = js.native
+  inline def GetStableVersionOfFeature(featureName: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetStableVersionOfFeature")(featureName.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("babylonjs", "WebXRFeaturesManager._AvailableFeatures")
   @js.native

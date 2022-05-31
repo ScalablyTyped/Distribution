@@ -31,19 +31,19 @@ import typings.std.CustomEvent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojInputText
-  extends inputBase[js.Any, ojInputTextSettableProperties, js.Any, js.Any] {
+  extends StObject
+     with inputBase[js.Any, ojInputTextSettableProperties, js.Any, js.Any] {
   
   def addEventListener(
     `type`: clearIconChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[never | always | conditional], 
-      _
+      js.Any
     ]
   ): Unit = js.native
   def addEventListener(
@@ -51,7 +51,7 @@ trait ojInputText
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[never | always | conditional], 
-      _
+      js.Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -62,7 +62,7 @@ trait ojInputText
       /* ev */ JetElementCustomEvent[
         /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojinputtext.inputBase<any, @oracle/oraclejet.@oracle/oraclejet/ojinputtext.ojInputTextSettableProperties, any, any>['rawValue'] */ js.Any
       ], 
-      _
+      js.Any
     ]
   ): Unit = js.native
   def addEventListener(
@@ -72,7 +72,7 @@ trait ojInputText
       /* ev */ JetElementCustomEvent[
         /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojinputtext.inputBase<any, @oracle/oraclejet.@oracle/oraclejet/ojinputtext.ojInputTextSettableProperties, any, any>['rawValue'] */ js.Any
       ], 
-      _
+      js.Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -83,7 +83,7 @@ trait ojInputText
       /* ev */ JetElementCustomEvent[
         /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojeditablevalue.editableValue<any, @oracle/oraclejet.@oracle/oraclejet/ojinputtext.ojInputTextSettableProperties, any, any>['value'] */ js.Any
       ], 
-      _
+      js.Any
     ]
   ): Unit = js.native
   def addEventListener(
@@ -93,7 +93,7 @@ trait ojInputText
       /* ev */ JetElementCustomEvent[
         /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojeditablevalue.editableValue<any, @oracle/oraclejet.@oracle/oraclejet/ojinputtext.ojInputTextSettableProperties, any, any>['value'] */ js.Any
       ], 
-      _
+      js.Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -102,7 +102,7 @@ trait ojInputText
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[auto | email | number | search | tel | text | url], 
-      _
+      js.Any
     ]
   ): Unit = js.native
   def addEventListener(
@@ -110,7 +110,7 @@ trait ojInputText
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[auto | email | number | search | tel | text | url], 
-      _
+      js.Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -119,8 +119,8 @@ trait ojInputText
     `type`: converterChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[Converter[_] | RegisteredConverter | Null], 
-      _
+      /* ev */ JetElementCustomEvent[Converter[js.Any] | RegisteredConverter | Null], 
+      js.Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -128,31 +128,31 @@ trait ojInputText
     `type`: converterChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[Converter[_] | RegisteredConverter | Null], 
-      _
+      /* ev */ JetElementCustomEvent[Converter[js.Any] | RegisteredConverter | Null], 
+      js.Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_listChanged(
     `type`: listChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_listChanged(
     `type`: listChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   
   var clearIcon: never | always | conditional = js.native
   
-  var converter: Converter[_] | RegisteredConverter | Null = js.native
+  var converter: Converter[js.Any] | RegisteredConverter | Null = js.native
   
   @JSName("getProperty")
   def getProperty_clearIcon(property: clearIcon): never | always | conditional = js.native
   @JSName("getProperty")
-  def getProperty_converter(property: converter): Converter[_] | RegisteredConverter | Null = js.native
+  def getProperty_converter(property: converter): Converter[js.Any] | RegisteredConverter | Null = js.native
   @JSName("getProperty")
   def getProperty_list(property: list): String = js.native
   @JSName("getProperty")
@@ -160,21 +160,24 @@ trait ojInputText
   
   var list: String = js.native
   
-  var onClearIconChanged: (js.Function1[/* event */ JetElementCustomEvent[never | always | conditional], _]) | Null = js.native
+  var onClearIconChanged: (js.Function1[/* event */ JetElementCustomEvent[never | always | conditional], js.Any]) | Null = js.native
   
-  var onConverterChanged: (js.Function1[/* event */ JetElementCustomEvent[Converter[_] | RegisteredConverter | Null], _]) | Null = js.native
+  var onConverterChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[Converter[js.Any] | RegisteredConverter | Null], 
+    js.Any
+  ]) | Null = js.native
   
-  var onListChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  var onListChanged: (js.Function1[/* event */ JetElementCustomEvent[String], js.Any]) | Null = js.native
   
   @JSName("onOjAnimateEnd")
-  var onOjAnimateEnd_ojInputText: (js.Function1[/* event */ ojAnimateEnd, _]) | Null = js.native
+  var onOjAnimateEnd_ojInputText: (js.Function1[/* event */ ojAnimateEnd, js.Any]) | Null = js.native
   
   @JSName("onOjAnimateStart")
-  var onOjAnimateStart_ojInputText: (js.Function1[/* event */ ojAnimateStart, _]) | Null = js.native
+  var onOjAnimateStart_ojInputText: (js.Function1[/* event */ ojAnimateStart, js.Any]) | Null = js.native
   
   var onVirtualKeyboardChanged: (js.Function1[
     /* event */ JetElementCustomEvent[auto | email | number | search | tel | text | url], 
-    _
+    js.Any
   ]) | Null = js.native
   
   def setProperties(properties: ojInputTextSettablePropertiesLenient): Unit = js.native
@@ -192,7 +195,7 @@ trait ojInputText
   @JSName("setProperty")
   def setProperty_converter(property: converter): Unit = js.native
   @JSName("setProperty")
-  def setProperty_converter(property: converter, value: Converter[_]): Unit = js.native
+  def setProperty_converter(property: converter, value: Converter[js.Any]): Unit = js.native
   @JSName("setProperty")
   def setProperty_converter(property: converter, value: RegisteredConverter): Unit = js.native
   @JSName("setProperty")

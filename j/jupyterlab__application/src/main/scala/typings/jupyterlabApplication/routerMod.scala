@@ -7,22 +7,23 @@ import typings.luminoCommands.mod.CommandRegistry
 import typings.luminoSignaling.mod.ISignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routerMod {
   
   @JSImport("@jupyterlab/application/lib/router", "Router")
   @js.native
-  class Router protected () extends IRouter {
+  class Router protected ()
+    extends StObject
+       with IRouter {
     /**
       * Create a URL router.
       */
     def this(options: IOptions) = this()
     
-    var _routed: js.Any = js.native
+    /* private */ var _routed: js.Any = js.native
     
-    var _rules: js.Any = js.native
+    /* private */ var _rules: js.Any = js.native
     
     /**
       * Returns the parsed current URL of the application.
@@ -50,35 +51,30 @@ object routerMod {
     /**
       * The options for instantiating a JupyterLab URL router.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The fully qualified base URL for the router.
         */
-      var base: String = js.native
+      var base: String
       
       /**
         * The command registry used by the router.
         */
-      var commands: CommandRegistry = js.native
+      var commands: CommandRegistry
     }
     object IOptions {
       
-      @scala.inline
-      def apply(base: String, commands: CommandRegistry): IOptions = {
+      inline def apply(base: String, commands: CommandRegistry): IOptions = {
         val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], commands = commands.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+        inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCommands(value: CommandRegistry): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+        inline def setCommands(value: CommandRegistry): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
       }
     }
   }

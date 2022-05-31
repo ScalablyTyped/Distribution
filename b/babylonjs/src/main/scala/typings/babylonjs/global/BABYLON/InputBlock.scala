@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.InputBlock")
 @js.native
 class InputBlock protected ()
-  extends typings.babylonjs.BABYLON.InputBlock {
+  extends StObject
+     with typings.babylonjs.BABYLON.InputBlock {
   /**
     * Creates a new InputBlock
     * @param name defines the block name
@@ -19,7 +19,7 @@ class InputBlock protected ()
   def this(name: String, target: typings.babylonjs.BABYLON.NodeMaterialBlockTargets) = this()
   def this(
     name: String,
-    target: js.UndefOr[scala.Nothing],
+    target: Unit,
     `type`: typings.babylonjs.BABYLON.NodeMaterialBlockConnectionPointTypes
   ) = this()
   def this(

@@ -2,15 +2,16 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpotLight extends ShadowLight {
+trait SpotLight
+  extends StObject
+     with ShadowLight {
   
-  var _angle: js.Any = js.native
+  /* private */ var _angle: js.Any = js.native
   
-  var _computeAngleValues: js.Any = js.native
+  /* private */ var _computeAngleValues: js.Any = js.native
   
   /**
     * Main function for light texture projection matrix computing.
@@ -21,39 +22,39 @@ trait SpotLight extends ShadowLight {
   
   /* protected */ def _computeProjectionTextureViewLightMatrix(): Unit = js.native
   
-  var _cosHalfAngle: js.Any = js.native
+  /* private */ var _cosHalfAngle: js.Any = js.native
   
-  var _innerAngle: js.Any = js.native
+  /* private */ var _innerAngle: js.Any = js.native
   
-  var _lightAngleOffset: js.Any = js.native
+  /* private */ var _lightAngleOffset: js.Any = js.native
   
-  var _lightAngleScale: js.Any = js.native
+  /* private */ var _lightAngleScale: js.Any = js.native
   
-  var _projectionTexture: js.Any = js.native
+  /* private */ var _projectionTexture: js.Any = js.native
   
-  var _projectionTextureDirty: js.Any = js.native
+  /* private */ var _projectionTextureDirty: js.Any = js.native
   
-  var _projectionTextureLightFar: Double = js.native
+  /* protected */ var _projectionTextureLightFar: Double = js.native
   
-  var _projectionTextureLightNear: Double = js.native
+  /* protected */ var _projectionTextureLightNear: Double = js.native
   
-  var _projectionTextureMatrix: js.Any = js.native
+  /* private */ var _projectionTextureMatrix: js.Any = js.native
   
-  var _projectionTextureProjectionLightDirty: js.Any = js.native
+  /* private */ var _projectionTextureProjectionLightDirty: js.Any = js.native
   
-  var _projectionTextureProjectionLightMatrix: js.Any = js.native
+  /* private */ var _projectionTextureProjectionLightMatrix: js.Any = js.native
   
-  var _projectionTextureScalingMatrix: js.Any = js.native
+  /* private */ var _projectionTextureScalingMatrix: js.Any = js.native
   
-  var _projectionTextureUpDirection: Vector3 = js.native
+  /* protected */ var _projectionTextureUpDirection: Vector3 = js.native
   
-  var _projectionTextureViewLightDirty: js.Any = js.native
+  /* private */ var _projectionTextureViewLightDirty: js.Any = js.native
   
-  var _projectionTextureViewLightMatrix: js.Any = js.native
+  /* private */ var _projectionTextureViewLightMatrix: js.Any = js.native
   
-  var _projectionTextureViewTargetVector: js.Any = js.native
+  /* private */ var _projectionTextureViewTargetVector: js.Any = js.native
   
-  var _shadowAngleScale: js.Any = js.native
+  /* private */ var _shadowAngleScale: js.Any = js.native
   
   /**
     * Gets the cone angle of the spot light in Radians.

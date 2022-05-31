@@ -12,7 +12,6 @@ import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object axisScaleGizmoMod {
@@ -29,80 +28,69 @@ object axisScaleGizmoMod {
       */
     def this(dragAxis: Vector3) = this()
     def this(dragAxis: Vector3, color: Color3) = this()
-    def this(dragAxis: Vector3, color: js.UndefOr[scala.Nothing], gizmoLayer: UtilityLayerRenderer) = this()
+    def this(dragAxis: Vector3, color: Unit, gizmoLayer: UtilityLayerRenderer) = this()
     def this(dragAxis: Vector3, color: Color3, gizmoLayer: UtilityLayerRenderer) = this()
-    def this(
-      dragAxis: Vector3,
-      color: js.UndefOr[scala.Nothing],
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      parent: Nullable[ScaleGizmo]
-    ) = this()
-    def this(
-      dragAxis: Vector3,
-      color: js.UndefOr[scala.Nothing],
-      gizmoLayer: UtilityLayerRenderer,
-      parent: Nullable[ScaleGizmo]
-    ) = this()
-    def this(
-      dragAxis: Vector3,
-      color: Color3,
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      parent: Nullable[ScaleGizmo]
-    ) = this()
+    def this(dragAxis: Vector3, color: Unit, gizmoLayer: Unit, parent: Nullable[ScaleGizmo]) = this()
+    def this(dragAxis: Vector3, color: Unit, gizmoLayer: UtilityLayerRenderer, parent: Nullable[ScaleGizmo]) = this()
+    def this(dragAxis: Vector3, color: Color3, gizmoLayer: Unit, parent: Nullable[ScaleGizmo]) = this()
     def this(dragAxis: Vector3, color: Color3, gizmoLayer: UtilityLayerRenderer, parent: Nullable[ScaleGizmo]) = this()
+    def this(dragAxis: Vector3, color: Unit, gizmoLayer: Unit, parent: Unit, thickness: Double) = this()
+    def this(dragAxis: Vector3, color: Unit, gizmoLayer: Unit, parent: Nullable[ScaleGizmo], thickness: Double) = this()
+    def this(dragAxis: Vector3, color: Unit, gizmoLayer: UtilityLayerRenderer, parent: Unit, thickness: Double) = this()
     def this(
       dragAxis: Vector3,
-      color: js.UndefOr[scala.Nothing],
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      parent: js.UndefOr[Nullable[ScaleGizmo]],
-      thickness: Double
-    ) = this()
-    def this(
-      dragAxis: Vector3,
-      color: js.UndefOr[scala.Nothing],
+      color: Unit,
       gizmoLayer: UtilityLayerRenderer,
-      parent: js.UndefOr[Nullable[ScaleGizmo]],
+      parent: Nullable[ScaleGizmo],
       thickness: Double
     ) = this()
+    def this(dragAxis: Vector3, color: Color3, gizmoLayer: Unit, parent: Unit, thickness: Double) = this()
     def this(
       dragAxis: Vector3,
       color: Color3,
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      parent: js.UndefOr[Nullable[ScaleGizmo]],
+      gizmoLayer: Unit,
+      parent: Nullable[ScaleGizmo],
       thickness: Double
     ) = this()
     def this(
       dragAxis: Vector3,
       color: Color3,
       gizmoLayer: UtilityLayerRenderer,
-      parent: js.UndefOr[Nullable[ScaleGizmo]],
+      parent: Unit,
+      thickness: Double
+    ) = this()
+    def this(
+      dragAxis: Vector3,
+      color: Color3,
+      gizmoLayer: UtilityLayerRenderer,
+      parent: Nullable[ScaleGizmo],
       thickness: Double
     ) = this()
     
-    var _coloredMaterial: js.Any = js.native
+    /* private */ var _coloredMaterial: js.Any = js.native
     
     /** Create Geometry for Gizmo */
-    var _createGizmoMesh: js.Any = js.native
+    /* private */ var _createGizmoMesh: js.Any = js.native
     
-    var _disableMaterial: js.Any = js.native
+    /* private */ var _disableMaterial: js.Any = js.native
     
-    var _dragging: js.Any = js.native
+    /* private */ var _dragging: js.Any = js.native
     
-    var _gizmoMesh: js.Any = js.native
+    /* private */ var _gizmoMesh: js.Any = js.native
     
-    var _hoverMaterial: js.Any = js.native
+    /* private */ var _hoverMaterial: js.Any = js.native
     
-    var _isEnabled: js.Any = js.native
+    /* private */ var _isEnabled: js.Any = js.native
     
-    var _parent: js.Any = js.native
+    /* private */ var _parent: js.Any = js.native
     
-    var _pointerObserver: js.Any = js.native
+    /* private */ var _pointerObserver: js.Any = js.native
     
-    var _tmpMatrix: js.Any = js.native
+    /* private */ var _tmpMatrix: js.Any = js.native
     
-    var _tmpMatrix2: js.Any = js.native
+    /* private */ var _tmpMatrix2: js.Any = js.native
     
-    var _tmpVector: js.Any = js.native
+    /* private */ var _tmpVector: js.Any = js.native
     
     /**
       * Drag behavior responsible for the gizmos dragging interactions

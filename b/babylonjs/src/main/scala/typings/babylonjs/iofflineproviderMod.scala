@@ -3,7 +3,6 @@ package typings.babylonjs
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iofflineproviderMod {
@@ -33,39 +32,12 @@ object iofflineproviderMod {
     def loadFile(
       url: String,
       sceneLoaded: js.Function1[/* data */ js.Any, Unit],
-      progressCallBack: js.UndefOr[scala.Nothing],
-      errorCallback: js.UndefOr[scala.Nothing],
-      useArrayBuffer: Boolean
-    ): Unit = js.native
-    def loadFile(
-      url: String,
-      sceneLoaded: js.Function1[/* data */ js.Any, Unit],
-      progressCallBack: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function0[Unit]
-    ): Unit = js.native
-    def loadFile(
-      url: String,
-      sceneLoaded: js.Function1[/* data */ js.Any, Unit],
-      progressCallBack: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function0[Unit],
-      useArrayBuffer: Boolean
-    ): Unit = js.native
-    def loadFile(
-      url: String,
-      sceneLoaded: js.Function1[/* data */ js.Any, Unit],
       progressCallBack: js.Function1[/* data */ js.Any, Unit]
     ): Unit = js.native
     def loadFile(
       url: String,
       sceneLoaded: js.Function1[/* data */ js.Any, Unit],
       progressCallBack: js.Function1[/* data */ js.Any, Unit],
-      errorCallback: js.UndefOr[scala.Nothing],
-      useArrayBuffer: Boolean
-    ): Unit = js.native
-    def loadFile(
-      url: String,
-      sceneLoaded: js.Function1[/* data */ js.Any, Unit],
-      progressCallBack: js.Function1[/* data */ js.Any, Unit],
       errorCallback: js.Function0[Unit]
     ): Unit = js.native
     def loadFile(
@@ -73,6 +45,33 @@ object iofflineproviderMod {
       sceneLoaded: js.Function1[/* data */ js.Any, Unit],
       progressCallBack: js.Function1[/* data */ js.Any, Unit],
       errorCallback: js.Function0[Unit],
+      useArrayBuffer: Boolean
+    ): Unit = js.native
+    def loadFile(
+      url: String,
+      sceneLoaded: js.Function1[/* data */ js.Any, Unit],
+      progressCallBack: js.Function1[/* data */ js.Any, Unit],
+      errorCallback: Unit,
+      useArrayBuffer: Boolean
+    ): Unit = js.native
+    def loadFile(
+      url: String,
+      sceneLoaded: js.Function1[/* data */ js.Any, Unit],
+      progressCallBack: Unit,
+      errorCallback: js.Function0[Unit]
+    ): Unit = js.native
+    def loadFile(
+      url: String,
+      sceneLoaded: js.Function1[/* data */ js.Any, Unit],
+      progressCallBack: Unit,
+      errorCallback: js.Function0[Unit],
+      useArrayBuffer: Boolean
+    ): Unit = js.native
+    def loadFile(
+      url: String,
+      sceneLoaded: js.Function1[/* data */ js.Any, Unit],
+      progressCallBack: Unit,
+      errorCallback: Unit,
       useArrayBuffer: Boolean
     ): Unit = js.native
     

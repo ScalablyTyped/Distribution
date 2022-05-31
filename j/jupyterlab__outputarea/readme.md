@@ -10,9 +10,9 @@ JupyterLab - Notebook Output Area
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/outputarea |
 | Keywords           | - |
-| # releases         | 113 |
+| # releases         | 129 |
 | # dependents       | 26 |
-| # downloads        | 1604757 |
+| # downloads        | 1776170 |
 | # stars            | 0 |
 
 ## Links

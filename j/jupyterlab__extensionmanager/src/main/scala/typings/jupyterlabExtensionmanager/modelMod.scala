@@ -18,7 +18,6 @@ import typings.jupyterlabServices.mod.ServiceManager
 import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.ISettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modelMod {
@@ -33,23 +32,23 @@ object modelMod {
       *
       * @param pending A promise that resolves when the action is completed.
       */
-    /* protected */ def _addPendingAction(pending: js.Promise[_]): Unit = js.native
+    /* protected */ def _addPendingAction(pending: js.Promise[js.Any]): Unit = js.native
     
-    var _blacklistArray: js.Any = js.native
+    /* private */ var _blacklistArray: js.Any = js.native
     
-    var _debouncedUpdate: js.Any = js.native
+    /* private */ var _debouncedUpdate: js.Any = js.native
     
-    var _installed: js.Any = js.native
+    /* private */ var _installed: js.Any = js.native
     
-    var _listMode: js.Any = js.native
+    /* private */ var _listMode: js.Any = js.native
     
-    var _listingIsLoaded: js.Any = js.native
+    /* private */ var _listingIsLoaded: js.Any = js.native
     
-    var _page: js.Any = js.native
+    /* private */ var _page: js.Any = js.native
     
-    var _pagination: js.Any = js.native
+    /* private */ var _pagination: js.Any = js.native
     
-    var _pendingActions: js.Any = js.native
+    /* private */ var _pendingActions: js.Any = js.native
     
     /**
       * Send a request to the server to perform an action on an extension.
@@ -59,17 +58,17 @@ object modelMod {
       */
     /* protected */ def _performAction(action: String, entry: IEntry): js.Promise[IActionReply] = js.native
     
-    var _query: js.Any = js.native
+    /* private */ var _query: js.Any = js.native
     
-    var _searchResult: js.Any = js.native
+    /* private */ var _searchResult: js.Any = js.native
     
-    var _totalBlacklistedFound: js.Any = js.native
+    /* private */ var _totalBlacklistedFound: js.Any = js.native
     
-    var _totalEntries: js.Any = js.native
+    /* private */ var _totalEntries: js.Any = js.native
     
-    var _totalWhitelistedFound: js.Any = js.native
+    /* private */ var _totalWhitelistedFound: js.Any = js.native
     
-    var _whitelistArray: js.Any = js.native
+    /* private */ var _whitelistArray: js.Any = js.native
     
     /**
       * Contains an error message if an error occurred when searching for lists.
@@ -140,14 +139,14 @@ object modelMod {
       */
     var installedError: String | Null = js.native
     
-    var isListed: js.Any = js.native
+    /* private */ var isListed: js.Any = js.native
     
     /**
       * The list mode.
       */
     def listMode: black | white | default | invalid = js.native
     
-    var lister: Lister = js.native
+    /* protected */ var lister: Lister = js.native
     
     /**
       * The current NPM repository search page.
@@ -226,7 +225,7 @@ object modelMod {
     /**
       * A helper for performing searches of jupyterlab extensions on the NPM repository.
       */
-    var searcher: Searcher = js.native
+    /* protected */ var searcher: Searcher = js.native
     
     /**
       * Contains an error message if an error occurred when querying the server extension.
@@ -236,7 +235,7 @@ object modelMod {
     /**
       * Settings for connecting to the notebook server.
       */
-    var serverConnectionSettings: typings.jupyterlabServices.serverconnectionMod.ServerConnection.ISettings = js.native
+    /* protected */ var serverConnectionSettings: typings.jupyterlabServices.serverconnectionMod.ServerConnection.ISettings = js.native
     
     /**
       * Contains an error message if the server has unfulfilled requirements.
@@ -246,7 +245,7 @@ object modelMod {
     /**
       * The service manager to use for building.
       */
-    var serviceManager: ServiceManager = js.native
+    /* protected */ var serviceManager: ServiceManager = js.native
     
     /**
       * The total number of blacklisted results in the current search.
@@ -302,22 +301,20 @@ object modelMod {
   }
   object ListModel {
     
+    @JSImport("@jupyterlab/extensionmanager/lib/model", "ListModel")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Utility function to check whether an entry can be updated.
       *
       * @param entry The entry to check.
       */
-    @JSImport("@jupyterlab/extensionmanager/lib/model", "ListModel.entryHasUpdate")
-    @js.native
-    def entryHasUpdate(entry: IEntry): Boolean = js.native
+    inline def entryHasUpdate(entry: IEntry): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("entryHasUpdate")(entry.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("@jupyterlab/extensionmanager/lib/model", "ListModel.isDisclaimed")
-    @js.native
-    def isDisclaimed(): Boolean = js.native
+    inline def isDisclaimed(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDisclaimed")().asInstanceOf[Boolean]
     
-    @JSImport("@jupyterlab/extensionmanager/lib/model", "ListModel.toogleDisclaimed")
-    @js.native
-    def toogleDisclaimed(): Unit = js.native
+    inline def toogleDisclaimed(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toogleDisclaimed")().asInstanceOf[Unit]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -329,108 +326,95 @@ object modelMod {
   trait Action extends StObject
   object Action {
     
-    @scala.inline
-    def disable: typings.jupyterlabExtensionmanager.jupyterlabExtensionmanagerStrings.disable = "disable".asInstanceOf[typings.jupyterlabExtensionmanager.jupyterlabExtensionmanagerStrings.disable]
+    inline def disable: typings.jupyterlabExtensionmanager.jupyterlabExtensionmanagerStrings.disable = "disable".asInstanceOf[typings.jupyterlabExtensionmanager.jupyterlabExtensionmanagerStrings.disable]
     
-    @scala.inline
-    def enable: typings.jupyterlabExtensionmanager.jupyterlabExtensionmanagerStrings.enable = "enable".asInstanceOf[typings.jupyterlabExtensionmanager.jupyterlabExtensionmanagerStrings.enable]
+    inline def enable: typings.jupyterlabExtensionmanager.jupyterlabExtensionmanagerStrings.enable = "enable".asInstanceOf[typings.jupyterlabExtensionmanager.jupyterlabExtensionmanagerStrings.enable]
     
-    @scala.inline
-    def install: typings.jupyterlabExtensionmanager.jupyterlabExtensionmanagerStrings.install = "install".asInstanceOf[typings.jupyterlabExtensionmanager.jupyterlabExtensionmanagerStrings.install]
+    inline def install: typings.jupyterlabExtensionmanager.jupyterlabExtensionmanagerStrings.install = "install".asInstanceOf[typings.jupyterlabExtensionmanager.jupyterlabExtensionmanagerStrings.install]
     
-    @scala.inline
-    def uninstall: typings.jupyterlabExtensionmanager.jupyterlabExtensionmanagerStrings.uninstall = "uninstall".asInstanceOf[typings.jupyterlabExtensionmanager.jupyterlabExtensionmanagerStrings.uninstall]
+    inline def uninstall: typings.jupyterlabExtensionmanager.jupyterlabExtensionmanagerStrings.uninstall = "uninstall".asInstanceOf[typings.jupyterlabExtensionmanager.jupyterlabExtensionmanagerStrings.uninstall]
   }
   
-  @js.native
   trait IActionReply extends StObject {
     
     /**
       * An optional message when the status is not 'ok'.
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /**
       * The status category of the reply.
       */
-    var status: ok | warning | error | Null = js.native
+    var status: ok | warning | error | Null
   }
   object IActionReply {
     
-    @scala.inline
-    def apply(): IActionReply = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(): IActionReply = {
+      val __obj = js.Dynamic.literal(status = null)
       __obj.asInstanceOf[IActionReply]
     }
     
-    @scala.inline
-    implicit class IActionReplyMutableBuilder[Self <: IActionReply] (val x: Self) extends AnyVal {
+    extension [Self <: IActionReply](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setStatus(value: ok | warning | error): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: ok | warning | error): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusNull: Self = StObject.set(x, "status", null)
+      inline def setStatusNull: Self = StObject.set(x, "status", null)
     }
   }
   
-  @js.native
   trait IEntry extends StObject {
     
-    var blacklistEntry: js.UndefOr[IListEntry] = js.native
+    var blacklistEntry: js.UndefOr[IListEntry] = js.undefined
     
     /**
       * A short description of the extension.
       */
-    var description: String = js.native
+    var description: String
     
     /**
       * Whether the extension is currently enabled.
       */
-    var enabled: Boolean = js.native
+    var enabled: Boolean
     
     /**
       * Whether the extension is currently installed.
       */
-    var installed: Boolean = js.native
+    var installed: Boolean
     
     /**
       * The installed version of the extension.
       */
-    var installed_version: String = js.native
+    var installed_version: String
     
     /**
       * The latest version of the extension.
       */
-    var latest_version: String = js.native
+    var latest_version: String
     
     /**
       * The name of the extension.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * A flag indicating the status of an installed extension.
       */
-    var status: ok | warning | error | deprecated | Null = js.native
+    var status: ok | warning | error | deprecated | Null
     
     /**
       * A representative link of the package.
       */
-    var url: String = js.native
+    var url: String
     
-    var whitelistEntry: js.UndefOr[IListEntry] = js.native
+    var whitelistEntry: js.UndefOr[IListEntry] = js.undefined
   }
   object IEntry {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       description: String,
       enabled: Boolean,
       installed: Boolean,
@@ -439,101 +423,85 @@ object modelMod {
       name: String,
       url: String
     ): IEntry = {
-      val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], installed = installed.asInstanceOf[js.Any], installed_version = installed_version.asInstanceOf[js.Any], latest_version = latest_version.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], installed = installed.asInstanceOf[js.Any], installed_version = installed_version.asInstanceOf[js.Any], latest_version = latest_version.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], status = null)
       __obj.asInstanceOf[IEntry]
     }
     
-    @scala.inline
-    implicit class IEntryMutableBuilder[Self <: IEntry] (val x: Self) extends AnyVal {
+    extension [Self <: IEntry](x: Self) {
       
-      @scala.inline
-      def setBlacklistEntry(value: IListEntry): Self = StObject.set(x, "blacklistEntry", value.asInstanceOf[js.Any])
+      inline def setBlacklistEntry(value: IListEntry): Self = StObject.set(x, "blacklistEntry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlacklistEntryUndefined: Self = StObject.set(x, "blacklistEntry", js.undefined)
+      inline def setBlacklistEntryUndefined: Self = StObject.set(x, "blacklistEntry", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstalled(value: Boolean): Self = StObject.set(x, "installed", value.asInstanceOf[js.Any])
+      inline def setInstalled(value: Boolean): Self = StObject.set(x, "installed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstalled_version(value: String): Self = StObject.set(x, "installed_version", value.asInstanceOf[js.Any])
+      inline def setInstalled_version(value: String): Self = StObject.set(x, "installed_version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatest_version(value: String): Self = StObject.set(x, "latest_version", value.asInstanceOf[js.Any])
+      inline def setLatest_version(value: String): Self = StObject.set(x, "latest_version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: ok | warning | error | deprecated): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: ok | warning | error | deprecated): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusNull: Self = StObject.set(x, "status", null)
+      inline def setStatusNull: Self = StObject.set(x, "status", null)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhitelistEntry(value: IListEntry): Self = StObject.set(x, "whitelistEntry", value.asInstanceOf[js.Any])
+      inline def setWhitelistEntry(value: IListEntry): Self = StObject.set(x, "whitelistEntry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhitelistEntryUndefined: Self = StObject.set(x, "whitelistEntry", js.undefined)
+      inline def setWhitelistEntryUndefined: Self = StObject.set(x, "whitelistEntry", js.undefined)
     }
   }
   
-  @js.native
   trait IInstalledEntry extends StObject {
     
     /**
       * A short description of the extension.
       */
-    var description: String = js.native
+    var description: String
     
     /**
       * Whether the extension is currently enabled.
       */
-    var enabled: Boolean = js.native
+    var enabled: Boolean
     
     /**
       * Whether the extension is currently installed.
       */
-    var installed: js.UndefOr[Boolean] = js.native
+    var installed: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The installed version of the extension.
       */
-    var installed_version: String = js.native
+    var installed_version: String
     
     /**
       * The latest version of the extension.
       */
-    var latest_version: String = js.native
+    var latest_version: String
     
     /**
       * The name of the extension.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * A flag indicating the status of an installed extension.
       */
-    var status: ok | warning | error | deprecated | Null = js.native
+    var status: ok | warning | error | deprecated | Null
     
     /**
       * A representative link of the package.
       */
-    var url: String = js.native
+    var url: String
   }
   object IInstalledEntry {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       description: String,
       enabled: Boolean,
       installed_version: String,
@@ -541,42 +509,31 @@ object modelMod {
       name: String,
       url: String
     ): IInstalledEntry = {
-      val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], installed_version = installed_version.asInstanceOf[js.Any], latest_version = latest_version.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], installed_version = installed_version.asInstanceOf[js.Any], latest_version = latest_version.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], status = null)
       __obj.asInstanceOf[IInstalledEntry]
     }
     
-    @scala.inline
-    implicit class IInstalledEntryMutableBuilder[Self <: IInstalledEntry] (val x: Self) extends AnyVal {
+    extension [Self <: IInstalledEntry](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstalled(value: Boolean): Self = StObject.set(x, "installed", value.asInstanceOf[js.Any])
+      inline def setInstalled(value: Boolean): Self = StObject.set(x, "installed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstalledUndefined: Self = StObject.set(x, "installed", js.undefined)
+      inline def setInstalledUndefined: Self = StObject.set(x, "installed", js.undefined)
       
-      @scala.inline
-      def setInstalled_version(value: String): Self = StObject.set(x, "installed_version", value.asInstanceOf[js.Any])
+      inline def setInstalled_version(value: String): Self = StObject.set(x, "installed_version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatest_version(value: String): Self = StObject.set(x, "latest_version", value.asInstanceOf[js.Any])
+      inline def setLatest_version(value: String): Self = StObject.set(x, "latest_version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: ok | warning | error | deprecated): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: ok | warning | error | deprecated): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusNull: Self = StObject.set(x, "status", null)
+      inline def setStatusNull: Self = StObject.set(x, "status", null)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

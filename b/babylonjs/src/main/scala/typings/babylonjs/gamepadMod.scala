@@ -3,7 +3,6 @@ package typings.babylonjs
 import typings.babylonjs.observableMod.Observable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gamepadMod {
@@ -63,22 +62,6 @@ object gamepadMod {
       * The browser gamepad
       */
     browserGamepad: js.Any,
-      leftStickX: js.UndefOr[scala.Nothing],
-      leftStickY: Double
-    ) = this()
-    def this(
-      /**
-      * The id of the gamepad
-      */
-    id: String,
-      /**
-      * The index of the gamepad
-      */
-    index: Double,
-      /**
-      * The browser gamepad
-      */
-    browserGamepad: js.Any,
       leftStickX: Double,
       leftStickY: Double
     ) = this()
@@ -95,43 +78,8 @@ object gamepadMod {
       * The browser gamepad
       */
     browserGamepad: js.Any,
-      leftStickX: js.UndefOr[scala.Nothing],
-      leftStickY: js.UndefOr[scala.Nothing],
-      rightStickX: Double
-    ) = this()
-    def this(
-      /**
-      * The id of the gamepad
-      */
-    id: String,
-      /**
-      * The index of the gamepad
-      */
-    index: Double,
-      /**
-      * The browser gamepad
-      */
-    browserGamepad: js.Any,
-      leftStickX: js.UndefOr[scala.Nothing],
-      leftStickY: Double,
-      rightStickX: Double
-    ) = this()
-    def this(
-      /**
-      * The id of the gamepad
-      */
-    id: String,
-      /**
-      * The index of the gamepad
-      */
-    index: Double,
-      /**
-      * The browser gamepad
-      */
-    browserGamepad: js.Any,
-      leftStickX: Double,
-      leftStickY: js.UndefOr[scala.Nothing],
-      rightStickX: Double
+      leftStickX: Unit,
+      leftStickY: Double
     ) = this()
     def this(
       /**
@@ -163,10 +111,9 @@ object gamepadMod {
       * The browser gamepad
       */
     browserGamepad: js.Any,
-      leftStickX: js.UndefOr[scala.Nothing],
-      leftStickY: js.UndefOr[scala.Nothing],
-      rightStickX: js.UndefOr[scala.Nothing],
-      rightStickY: Double
+      leftStickX: Double,
+      leftStickY: Unit,
+      rightStickX: Double
     ) = this()
     def this(
       /**
@@ -181,28 +128,9 @@ object gamepadMod {
       * The browser gamepad
       */
     browserGamepad: js.Any,
-      leftStickX: js.UndefOr[scala.Nothing],
-      leftStickY: js.UndefOr[scala.Nothing],
-      rightStickX: Double,
-      rightStickY: Double
-    ) = this()
-    def this(
-      /**
-      * The id of the gamepad
-      */
-    id: String,
-      /**
-      * The index of the gamepad
-      */
-    index: Double,
-      /**
-      * The browser gamepad
-      */
-    browserGamepad: js.Any,
-      leftStickX: js.UndefOr[scala.Nothing],
+      leftStickX: Unit,
       leftStickY: Double,
-      rightStickX: js.UndefOr[scala.Nothing],
-      rightStickY: Double
+      rightStickX: Double
     ) = this()
     def this(
       /**
@@ -217,7 +145,24 @@ object gamepadMod {
       * The browser gamepad
       */
     browserGamepad: js.Any,
-      leftStickX: js.UndefOr[scala.Nothing],
+      leftStickX: Unit,
+      leftStickY: Unit,
+      rightStickX: Double
+    ) = this()
+    def this(
+      /**
+      * The id of the gamepad
+      */
+    id: String,
+      /**
+      * The index of the gamepad
+      */
+    index: Double,
+      /**
+      * The browser gamepad
+      */
+    browserGamepad: js.Any,
+      leftStickX: Double,
       leftStickY: Double,
       rightStickX: Double,
       rightStickY: Double
@@ -236,8 +181,8 @@ object gamepadMod {
       */
     browserGamepad: js.Any,
       leftStickX: Double,
-      leftStickY: js.UndefOr[scala.Nothing],
-      rightStickX: js.UndefOr[scala.Nothing],
+      leftStickY: Double,
+      rightStickX: Unit,
       rightStickY: Double
     ) = this()
     def this(
@@ -254,7 +199,7 @@ object gamepadMod {
       */
     browserGamepad: js.Any,
       leftStickX: Double,
-      leftStickY: js.UndefOr[scala.Nothing],
+      leftStickY: Unit,
       rightStickX: Double,
       rightStickY: Double
     ) = this()
@@ -272,8 +217,8 @@ object gamepadMod {
       */
     browserGamepad: js.Any,
       leftStickX: Double,
-      leftStickY: Double,
-      rightStickX: js.UndefOr[scala.Nothing],
+      leftStickY: Unit,
+      rightStickX: Unit,
       rightStickY: Double
     ) = this()
     def this(
@@ -289,41 +234,95 @@ object gamepadMod {
       * The browser gamepad
       */
     browserGamepad: js.Any,
-      leftStickX: Double,
+      leftStickX: Unit,
       leftStickY: Double,
       rightStickX: Double,
+      rightStickY: Double
+    ) = this()
+    def this(
+      /**
+      * The id of the gamepad
+      */
+    id: String,
+      /**
+      * The index of the gamepad
+      */
+    index: Double,
+      /**
+      * The browser gamepad
+      */
+    browserGamepad: js.Any,
+      leftStickX: Unit,
+      leftStickY: Double,
+      rightStickX: Unit,
+      rightStickY: Double
+    ) = this()
+    def this(
+      /**
+      * The id of the gamepad
+      */
+    id: String,
+      /**
+      * The index of the gamepad
+      */
+    index: Double,
+      /**
+      * The browser gamepad
+      */
+    browserGamepad: js.Any,
+      leftStickX: Unit,
+      leftStickY: Unit,
+      rightStickX: Double,
+      rightStickY: Double
+    ) = this()
+    def this(
+      /**
+      * The id of the gamepad
+      */
+    id: String,
+      /**
+      * The index of the gamepad
+      */
+    index: Double,
+      /**
+      * The browser gamepad
+      */
+    browserGamepad: js.Any,
+      leftStickX: Unit,
+      leftStickY: Unit,
+      rightStickX: Unit,
       rightStickY: Double
     ) = this()
     
     /**
       * Specifies whether the left control stick should be Y-inverted
       */
-    var _invertLeftStickY: Boolean = js.native
+    /* protected */ var _invertLeftStickY: Boolean = js.native
     
     /** @hidden */
     var _isConnected: Boolean = js.native
     
-    var _leftStick: js.Any = js.native
+    /* private */ var _leftStick: js.Any = js.native
     
-    var _leftStickAxisX: js.Any = js.native
+    /* private */ var _leftStickAxisX: js.Any = js.native
     
-    var _leftStickAxisY: js.Any = js.native
+    /* private */ var _leftStickAxisY: js.Any = js.native
     
     /**
       * Triggered when the left control stick has been changed
       */
-    var _onleftstickchanged: js.Any = js.native
+    /* private */ var _onleftstickchanged: js.Any = js.native
     
     /**
       * Triggered when the right control stick has been changed
       */
-    var _onrightstickchanged: js.Any = js.native
+    /* private */ var _onrightstickchanged: js.Any = js.native
     
-    var _rightStick: js.Any = js.native
+    /* private */ var _rightStick: js.Any = js.native
     
-    var _rightStickAxisX: js.Any = js.native
+    /* private */ var _rightStickAxisX: js.Any = js.native
     
-    var _rightStickAxisY: js.Any = js.native
+    /* private */ var _rightStickAxisY: js.Any = js.native
     
     /**
       * The browser gamepad
@@ -403,8 +402,7 @@ object gamepadMod {
     @JSImport("babylonjs/Gamepads/gamepad", "Gamepad.DUALSHOCK")
     @js.native
     def DUALSHOCK: Double = js.native
-    @scala.inline
-    def DUALSHOCK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DUALSHOCK")(x.asInstanceOf[js.Any])
+    inline def DUALSHOCK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DUALSHOCK")(x.asInstanceOf[js.Any])
     
     /**
       * Represents a gamepad controller
@@ -412,8 +410,7 @@ object gamepadMod {
     @JSImport("babylonjs/Gamepads/gamepad", "Gamepad.GAMEPAD")
     @js.native
     def GAMEPAD: Double = js.native
-    @scala.inline
-    def GAMEPAD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GAMEPAD")(x.asInstanceOf[js.Any])
+    inline def GAMEPAD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GAMEPAD")(x.asInstanceOf[js.Any])
     
     /**
       * Represents a generic controller
@@ -421,8 +418,7 @@ object gamepadMod {
     @JSImport("babylonjs/Gamepads/gamepad", "Gamepad.GENERIC")
     @js.native
     def GENERIC: Double = js.native
-    @scala.inline
-    def GENERIC_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GENERIC")(x.asInstanceOf[js.Any])
+    inline def GENERIC_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GENERIC")(x.asInstanceOf[js.Any])
     
     /**
       * Represents a pose-enabled controller
@@ -430,8 +426,7 @@ object gamepadMod {
     @JSImport("babylonjs/Gamepads/gamepad", "Gamepad.POSE_ENABLED")
     @js.native
     def POSE_ENABLED: Double = js.native
-    @scala.inline
-    def POSE_ENABLED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POSE_ENABLED")(x.asInstanceOf[js.Any])
+    inline def POSE_ENABLED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POSE_ENABLED")(x.asInstanceOf[js.Any])
     
     /**
       * Represents an XBox controller
@@ -439,8 +434,7 @@ object gamepadMod {
     @JSImport("babylonjs/Gamepads/gamepad", "Gamepad.XBOX")
     @js.native
     def XBOX: Double = js.native
-    @scala.inline
-    def XBOX_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XBOX")(x.asInstanceOf[js.Any])
+    inline def XBOX_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XBOX")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Gamepads/gamepad", "GenericPad")
@@ -455,13 +449,13 @@ object gamepadMod {
       */
     def this(id: String, index: Double, browserGamepad: js.Any) = this()
     
-    var _buttons: js.Any = js.native
+    /* private */ var _buttons: js.Any = js.native
     
-    var _onbuttondown: js.Any = js.native
+    /* private */ var _onbuttondown: js.Any = js.native
     
-    var _onbuttonup: js.Any = js.native
+    /* private */ var _onbuttonup: js.Any = js.native
     
-    var _setButtonValue: js.Any = js.native
+    /* private */ var _setButtonValue: js.Any = js.native
     
     /**
       * Observable triggered when a button has been pressed
@@ -516,51 +510,44 @@ object gamepadMod {
     var y: Double = js.native
   }
   
-  @js.native
   trait GamepadButtonChanges extends StObject {
     
     /**
       * Called when a gamepad has been changed
       */
-    var changed: Boolean = js.native
+    var changed: Boolean
     
     /**
       * Called when a gamepad press event has been triggered
       */
-    var pressChanged: Boolean = js.native
+    var pressChanged: Boolean
     
     /**
       * Called when a touch event has been triggered
       */
-    var touchChanged: Boolean = js.native
+    var touchChanged: Boolean
     
     /**
       * Called when a value has changed
       */
-    var valueChanged: Boolean = js.native
+    var valueChanged: Boolean
   }
   object GamepadButtonChanges {
     
-    @scala.inline
-    def apply(changed: Boolean, pressChanged: Boolean, touchChanged: Boolean, valueChanged: Boolean): GamepadButtonChanges = {
+    inline def apply(changed: Boolean, pressChanged: Boolean, touchChanged: Boolean, valueChanged: Boolean): GamepadButtonChanges = {
       val __obj = js.Dynamic.literal(changed = changed.asInstanceOf[js.Any], pressChanged = pressChanged.asInstanceOf[js.Any], touchChanged = touchChanged.asInstanceOf[js.Any], valueChanged = valueChanged.asInstanceOf[js.Any])
       __obj.asInstanceOf[GamepadButtonChanges]
     }
     
-    @scala.inline
-    implicit class GamepadButtonChangesMutableBuilder[Self <: GamepadButtonChanges] (val x: Self) extends AnyVal {
+    extension [Self <: GamepadButtonChanges](x: Self) {
       
-      @scala.inline
-      def setChanged(value: Boolean): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
+      inline def setChanged(value: Boolean): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPressChanged(value: Boolean): Self = StObject.set(x, "pressChanged", value.asInstanceOf[js.Any])
+      inline def setPressChanged(value: Boolean): Self = StObject.set(x, "pressChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchChanged(value: Boolean): Self = StObject.set(x, "touchChanged", value.asInstanceOf[js.Any])
+      inline def setTouchChanged(value: Boolean): Self = StObject.set(x, "touchChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueChanged(value: Boolean): Self = StObject.set(x, "valueChanged", value.asInstanceOf[js.Any])
+      inline def setValueChanged(value: Boolean): Self = StObject.set(x, "valueChanged", value.asInstanceOf[js.Any])
     }
   }
 }

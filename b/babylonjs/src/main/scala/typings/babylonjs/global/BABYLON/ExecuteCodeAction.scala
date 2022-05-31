@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.ExecuteCodeAction")
 @js.native
 class ExecuteCodeAction protected ()
-  extends typings.babylonjs.BABYLON.ExecuteCodeAction {
+  extends StObject
+     with typings.babylonjs.BABYLON.ExecuteCodeAction {
   /**
     * Instantiate the action
     * @param triggerOptions defines the trigger options

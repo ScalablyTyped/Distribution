@@ -3,51 +3,40 @@ package typings.jupyterlabServices.anon
 import typings.jupyterlabServices.sessionSessionMod.IModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<@jupyterlab/services.@jupyterlab/services/lib/session/session.ISessionConnection.IOptions, 'connectToKernel' | 'serverSettings'> */
-@js.native
 trait OmitIOptionsconnectToKern extends StObject {
   
-  var clientId: js.UndefOr[String] = js.native
+  var clientId: js.UndefOr[String] = js.undefined
   
-  var kernelConnectionOptions: js.UndefOr[OmitIOptionsmodelusername] = js.native
+  var kernelConnectionOptions: js.UndefOr[OmitIOptionsmodelusername] = js.undefined
   
-  var model: IModel = js.native
+  var model: IModel
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object OmitIOptionsconnectToKern {
   
-  @scala.inline
-  def apply(model: IModel): OmitIOptionsconnectToKern = {
+  inline def apply(model: IModel): OmitIOptionsconnectToKern = {
     val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
     __obj.asInstanceOf[OmitIOptionsconnectToKern]
   }
   
-  @scala.inline
-  implicit class OmitIOptionsconnectToKernMutableBuilder[Self <: OmitIOptionsconnectToKern] (val x: Self) extends AnyVal {
+  extension [Self <: OmitIOptionsconnectToKern](x: Self) {
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
-    @scala.inline
-    def setKernelConnectionOptions(value: OmitIOptionsmodelusername): Self = StObject.set(x, "kernelConnectionOptions", value.asInstanceOf[js.Any])
+    inline def setKernelConnectionOptions(value: OmitIOptionsmodelusername): Self = StObject.set(x, "kernelConnectionOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKernelConnectionOptionsUndefined: Self = StObject.set(x, "kernelConnectionOptions", js.undefined)
+    inline def setKernelConnectionOptionsUndefined: Self = StObject.set(x, "kernelConnectionOptions", js.undefined)
     
-    @scala.inline
-    def setModel(value: IModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: IModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

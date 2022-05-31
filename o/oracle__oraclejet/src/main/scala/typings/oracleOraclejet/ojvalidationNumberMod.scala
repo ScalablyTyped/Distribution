@@ -26,7 +26,6 @@ import typings.oracleOraclejet.oracleOraclejetStrings.symbol
 import typings.oracleOraclejet.oracleOraclejetStrings.unit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ojvalidationNumberMod {
@@ -48,255 +47,213 @@ object ojvalidationNumberMod {
   object IntlNumberConverter {
     
     // tslint:disable-next-line interface-over-type-literal
-    @js.native
     trait ConverterOptions extends StObject {
       
-      var currency: js.UndefOr[String] = js.native
+      var currency: js.UndefOr[String] = js.undefined
       
-      var currencyDisplay: js.UndefOr[code | symbol | name] = js.native
+      var currencyDisplay: js.UndefOr[code | symbol | name] = js.undefined
       
-      var currencyFormat: js.UndefOr[standard | short | long] = js.native
+      var currencyFormat: js.UndefOr[standard | short | long] = js.undefined
       
-      var decimalFormat: js.UndefOr[standard | short | long] = js.native
+      var decimalFormat: js.UndefOr[standard | short | long] = js.undefined
       
-      var lenientParse: js.UndefOr[full | none] = js.native
+      var lenientParse: js.UndefOr[full | none] = js.undefined
       
-      var maximumFractionDigits: js.UndefOr[Double] = js.native
+      var maximumFractionDigits: js.UndefOr[Double] = js.undefined
       
-      var minimumFractionDigits: js.UndefOr[Double] = js.native
+      var minimumFractionDigits: js.UndefOr[Double] = js.undefined
       
-      var minimumIntegerDigits: js.UndefOr[Double] = js.native
+      var minimumIntegerDigits: js.UndefOr[Double] = js.undefined
       
-      var pattern: js.UndefOr[String] = js.native
+      var pattern: js.UndefOr[String] = js.undefined
       
-      var roundDuringParse: js.UndefOr[Boolean] = js.native
+      var roundDuringParse: js.UndefOr[Boolean] = js.undefined
       
-      var roundingMode: js.UndefOr[HALF_UP | HALF_DOWN | HALF_EVEN] = js.native
+      var roundingMode: js.UndefOr[HALF_UP | HALF_DOWN | HALF_EVEN] = js.undefined
       
-      var separators: js.UndefOr[Separators] = js.native
+      var separators: js.UndefOr[Separators] = js.undefined
       
-      var style: js.UndefOr[decimal | currency | percent | unit] = js.native
+      var style: js.UndefOr[decimal | currency | percent | unit] = js.undefined
       
-      var unit: js.UndefOr[byte | bit] = js.native
+      var unit: js.UndefOr[byte | bit] = js.undefined
       
-      var useGrouping: js.UndefOr[Boolean] = js.native
+      var useGrouping: js.UndefOr[Boolean] = js.undefined
     }
     object ConverterOptions {
       
-      @scala.inline
-      def apply(): ConverterOptions = {
+      inline def apply(): ConverterOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ConverterOptions]
       }
       
-      @scala.inline
-      implicit class ConverterOptionsMutableBuilder[Self <: ConverterOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ConverterOptions](x: Self) {
         
-        @scala.inline
-        def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+        inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCurrencyDisplay(value: code | symbol | name): Self = StObject.set(x, "currencyDisplay", value.asInstanceOf[js.Any])
+        inline def setCurrencyDisplay(value: code | symbol | name): Self = StObject.set(x, "currencyDisplay", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCurrencyDisplayUndefined: Self = StObject.set(x, "currencyDisplay", js.undefined)
+        inline def setCurrencyDisplayUndefined: Self = StObject.set(x, "currencyDisplay", js.undefined)
         
-        @scala.inline
-        def setCurrencyFormat(value: standard | short | long): Self = StObject.set(x, "currencyFormat", value.asInstanceOf[js.Any])
+        inline def setCurrencyFormat(value: standard | short | long): Self = StObject.set(x, "currencyFormat", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCurrencyFormatUndefined: Self = StObject.set(x, "currencyFormat", js.undefined)
+        inline def setCurrencyFormatUndefined: Self = StObject.set(x, "currencyFormat", js.undefined)
         
-        @scala.inline
-        def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+        inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
         
-        @scala.inline
-        def setDecimalFormat(value: standard | short | long): Self = StObject.set(x, "decimalFormat", value.asInstanceOf[js.Any])
+        inline def setDecimalFormat(value: standard | short | long): Self = StObject.set(x, "decimalFormat", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDecimalFormatUndefined: Self = StObject.set(x, "decimalFormat", js.undefined)
+        inline def setDecimalFormatUndefined: Self = StObject.set(x, "decimalFormat", js.undefined)
         
-        @scala.inline
-        def setLenientParse(value: full | none): Self = StObject.set(x, "lenientParse", value.asInstanceOf[js.Any])
+        inline def setLenientParse(value: full | none): Self = StObject.set(x, "lenientParse", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLenientParseUndefined: Self = StObject.set(x, "lenientParse", js.undefined)
+        inline def setLenientParseUndefined: Self = StObject.set(x, "lenientParse", js.undefined)
         
-        @scala.inline
-        def setMaximumFractionDigits(value: Double): Self = StObject.set(x, "maximumFractionDigits", value.asInstanceOf[js.Any])
+        inline def setMaximumFractionDigits(value: Double): Self = StObject.set(x, "maximumFractionDigits", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaximumFractionDigitsUndefined: Self = StObject.set(x, "maximumFractionDigits", js.undefined)
+        inline def setMaximumFractionDigitsUndefined: Self = StObject.set(x, "maximumFractionDigits", js.undefined)
         
-        @scala.inline
-        def setMinimumFractionDigits(value: Double): Self = StObject.set(x, "minimumFractionDigits", value.asInstanceOf[js.Any])
+        inline def setMinimumFractionDigits(value: Double): Self = StObject.set(x, "minimumFractionDigits", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinimumFractionDigitsUndefined: Self = StObject.set(x, "minimumFractionDigits", js.undefined)
+        inline def setMinimumFractionDigitsUndefined: Self = StObject.set(x, "minimumFractionDigits", js.undefined)
         
-        @scala.inline
-        def setMinimumIntegerDigits(value: Double): Self = StObject.set(x, "minimumIntegerDigits", value.asInstanceOf[js.Any])
+        inline def setMinimumIntegerDigits(value: Double): Self = StObject.set(x, "minimumIntegerDigits", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinimumIntegerDigitsUndefined: Self = StObject.set(x, "minimumIntegerDigits", js.undefined)
+        inline def setMinimumIntegerDigitsUndefined: Self = StObject.set(x, "minimumIntegerDigits", js.undefined)
         
-        @scala.inline
-        def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+        inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+        inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
         
-        @scala.inline
-        def setRoundDuringParse(value: Boolean): Self = StObject.set(x, "roundDuringParse", value.asInstanceOf[js.Any])
+        inline def setRoundDuringParse(value: Boolean): Self = StObject.set(x, "roundDuringParse", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRoundDuringParseUndefined: Self = StObject.set(x, "roundDuringParse", js.undefined)
+        inline def setRoundDuringParseUndefined: Self = StObject.set(x, "roundDuringParse", js.undefined)
         
-        @scala.inline
-        def setRoundingMode(value: HALF_UP | HALF_DOWN | HALF_EVEN): Self = StObject.set(x, "roundingMode", value.asInstanceOf[js.Any])
+        inline def setRoundingMode(value: HALF_UP | HALF_DOWN | HALF_EVEN): Self = StObject.set(x, "roundingMode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRoundingModeUndefined: Self = StObject.set(x, "roundingMode", js.undefined)
+        inline def setRoundingModeUndefined: Self = StObject.set(x, "roundingMode", js.undefined)
         
-        @scala.inline
-        def setSeparators(value: Separators): Self = StObject.set(x, "separators", value.asInstanceOf[js.Any])
+        inline def setSeparators(value: Separators): Self = StObject.set(x, "separators", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSeparatorsUndefined: Self = StObject.set(x, "separators", js.undefined)
+        inline def setSeparatorsUndefined: Self = StObject.set(x, "separators", js.undefined)
         
-        @scala.inline
-        def setStyle(value: decimal | currency | percent | unit): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+        inline def setStyle(value: decimal | currency | percent | unit): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+        inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
         
-        @scala.inline
-        def setUnit(value: byte | bit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+        inline def setUnit(value: byte | bit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+        inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
         
-        @scala.inline
-        def setUseGrouping(value: Boolean): Self = StObject.set(x, "useGrouping", value.asInstanceOf[js.Any])
+        inline def setUseGrouping(value: Boolean): Self = StObject.set(x, "useGrouping", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseGroupingUndefined: Self = StObject.set(x, "useGrouping", js.undefined)
+        inline def setUseGroupingUndefined: Self = StObject.set(x, "useGrouping", js.undefined)
       }
     }
     
     // tslint:disable-next-line interface-over-type-literal
-    @js.native
     trait Separators extends StObject {
       
-      var decimal: js.UndefOr[String] = js.native
+      var decimal: js.UndefOr[String] = js.undefined
       
-      var group: js.UndefOr[String] = js.native
+      var group: js.UndefOr[String] = js.undefined
     }
     object Separators {
       
-      @scala.inline
-      def apply(): Separators = {
+      inline def apply(): Separators = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Separators]
       }
       
-      @scala.inline
-      implicit class SeparatorsMutableBuilder[Self <: Separators] (val x: Self) extends AnyVal {
+      extension [Self <: Separators](x: Self) {
         
-        @scala.inline
-        def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
+        inline def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDecimalUndefined: Self = StObject.set(x, "decimal", js.undefined)
+        inline def setDecimalUndefined: Self = StObject.set(x, "decimal", js.undefined)
         
-        @scala.inline
-        def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+        inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+        inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       }
     }
   }
   
   @JSImport("@oracle/oraclejet/ojvalidation-number", "NumberConverter")
   @js.native
-  class NumberConverter () extends Converter[Double]
+  class NumberConverter ()
+    extends StObject
+       with Converter[Double] {
+    
+    /* CompleteClass */
+    override def format(value: Double): String | Null = js.native
+    
+    /* CompleteClass */
+    override def parse(value: String): Double | Null = js.native
+  }
   
   @JSImport("@oracle/oraclejet/ojvalidation-number", "NumberRangeValidator")
   @js.native
-  class NumberRangeValidator () extends Validator[String | Double] {
+  class NumberRangeValidator ()
+    extends StObject
+       with Validator[String | Double] {
     def this(options: ValidatorOptions) = this()
     
     @JSName("getHint")
     def getHint_MNumberRangeValidator(): String | Null = js.native
     
+    /* CompleteClass */
+    override def validate(value: String | Double): Unit = js.native
     def validate(value: String): Unit = js.native
     def validate(value: Double): Unit = js.native
   }
   object NumberRangeValidator {
     
     // tslint:disable-next-line interface-over-type-literal
-    @js.native
     trait ValidatorOptions extends StObject {
       
-      var converter: js.UndefOr[NumberConverter] = js.native
+      var converter: js.UndefOr[NumberConverter] = js.undefined
       
-      var hint: js.UndefOr[Max] = js.native
+      var hint: js.UndefOr[Max] = js.undefined
       
-      var max: js.UndefOr[Double] = js.native
+      var max: js.UndefOr[Double] = js.undefined
       
-      var messageDetail: js.UndefOr[ExactRangeOverflow] = js.native
+      var messageDetail: js.UndefOr[ExactRangeOverflow] = js.undefined
       
-      var messageSummary: js.UndefOr[RangeOverflowRangeUnderflow] = js.native
+      var messageSummary: js.UndefOr[RangeOverflowRangeUnderflow] = js.undefined
       
-      var min: js.UndefOr[Double] = js.native
+      var min: js.UndefOr[Double] = js.undefined
     }
     object ValidatorOptions {
       
-      @scala.inline
-      def apply(): ValidatorOptions = {
+      inline def apply(): ValidatorOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ValidatorOptions]
       }
       
-      @scala.inline
-      implicit class ValidatorOptionsMutableBuilder[Self <: ValidatorOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ValidatorOptions](x: Self) {
         
-        @scala.inline
-        def setConverter(value: NumberConverter): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
+        inline def setConverter(value: NumberConverter): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConverterUndefined: Self = StObject.set(x, "converter", js.undefined)
+        inline def setConverterUndefined: Self = StObject.set(x, "converter", js.undefined)
         
-        @scala.inline
-        def setHint(value: Max): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
+        inline def setHint(value: Max): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
+        inline def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
         
-        @scala.inline
-        def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+        inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+        inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
         
-        @scala.inline
-        def setMessageDetail(value: ExactRangeOverflow): Self = StObject.set(x, "messageDetail", value.asInstanceOf[js.Any])
+        inline def setMessageDetail(value: ExactRangeOverflow): Self = StObject.set(x, "messageDetail", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessageDetailUndefined: Self = StObject.set(x, "messageDetail", js.undefined)
+        inline def setMessageDetailUndefined: Self = StObject.set(x, "messageDetail", js.undefined)
         
-        @scala.inline
-        def setMessageSummary(value: RangeOverflowRangeUnderflow): Self = StObject.set(x, "messageSummary", value.asInstanceOf[js.Any])
+        inline def setMessageSummary(value: RangeOverflowRangeUnderflow): Self = StObject.set(x, "messageSummary", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessageSummaryUndefined: Self = StObject.set(x, "messageSummary", js.undefined)
+        inline def setMessageSummaryUndefined: Self = StObject.set(x, "messageSummary", js.undefined)
         
-        @scala.inline
-        def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+        inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+        inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       }
     }
   }

@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.CSG")
 @js.native
 class CSG ()
-  extends typings.babylonjs.BABYLON.CSG
+  extends StObject
+     with typings.babylonjs.BABYLON.CSG
 /* static members */
 object CSG {
   
@@ -21,9 +21,7 @@ object CSG {
     * @param mesh The Mesh to convert to CSG
     * @returns A new CSG from the Mesh
     */
-  @JSGlobal("BABYLON.CSG.FromMesh")
-  @js.native
-  def FromMesh(mesh: typings.babylonjs.BABYLON.Mesh): typings.babylonjs.BABYLON.CSG = js.native
+  inline def FromMesh(mesh: typings.babylonjs.BABYLON.Mesh): typings.babylonjs.BABYLON.CSG = ^.asInstanceOf[js.Dynamic].applyDynamic("FromMesh")(mesh.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.CSG]
   
   /**
     * Construct a CSG solid from a list of `CSG.Polygon` instances.
@@ -32,6 +30,5 @@ object CSG {
   @JSGlobal("BABYLON.CSG.FromPolygons")
   @js.native
   def FromPolygons: js.Any = js.native
-  @scala.inline
-  def FromPolygons_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FromPolygons")(x.asInstanceOf[js.Any])
+  inline def FromPolygons_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FromPolygons")(x.asInstanceOf[js.Any])
 }

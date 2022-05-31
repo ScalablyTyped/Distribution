@@ -9,10 +9,13 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object decoratorsMod {
+  
+  @JSImport("babylonjs/Misc/decorators", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("babylonjs/Misc/decorators", "SerializationHelper")
   @js.native
@@ -20,14 +23,16 @@ object decoratorsMod {
   /* static members */
   object SerializationHelper {
     
+    @JSImport("babylonjs/Misc/decorators", "SerializationHelper")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Appends the serialized animations from the source animations
       * @param source Source containing the animations
       * @param destination Target to store the animations
       */
-    @JSImport("babylonjs/Misc/decorators", "SerializationHelper.AppendSerializedAnimations")
-    @js.native
-    def AppendSerializedAnimations(source: IAnimatable, destination: js.Any): Unit = js.native
+    inline def AppendSerializedAnimations(source: IAnimatable, destination: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("AppendSerializedAnimations")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Clones an object
@@ -35,9 +40,7 @@ object decoratorsMod {
       * @param source defines the source object
       * @returns the cloned object
       */
-    @JSImport("babylonjs/Misc/decorators", "SerializationHelper.Clone")
-    @js.native
-    def Clone[T](creationFunction: js.Function0[T], source: T): T = js.native
+    inline def Clone[T](creationFunction: js.Function0[T], source: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("Clone")(creationFunction.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[T]
     
     /**
       * Instanciates a new object based on a source one (some data will be shared between both object)
@@ -45,9 +48,7 @@ object decoratorsMod {
       * @param source defines the source object
       * @returns the new object
       */
-    @JSImport("babylonjs/Misc/decorators", "SerializationHelper.Instanciate")
-    @js.native
-    def Instanciate[T](creationFunction: js.Function0[T], source: T): T = js.native
+    inline def Instanciate[T](creationFunction: js.Function0[T], source: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("Instanciate")(creationFunction.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[T]
     
     /**
       * Creates a new entity from a serialization data object
@@ -57,17 +58,13 @@ object decoratorsMod {
       * @param rootUrl defines the root url for resources
       * @returns a new entity
       */
-    @JSImport("babylonjs/Misc/decorators", "SerializationHelper.Parse")
-    @js.native
-    def Parse[T](creationFunction: js.Function0[T], source: js.Any, scene: Nullable[Scene]): T = js.native
-    @JSImport("babylonjs/Misc/decorators", "SerializationHelper.Parse")
-    @js.native
-    def Parse[T](
+    inline def Parse[T](creationFunction: js.Function0[T], source: js.Any, scene: Nullable[Scene]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(creationFunction.asInstanceOf[js.Any], source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def Parse[T](
       creationFunction: js.Function0[T],
       source: js.Any,
       scene: Nullable[Scene],
       rootUrl: Nullable[String]
-    ): T = js.native
+    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(creationFunction.asInstanceOf[js.Any], source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[T]
     
     /**
       * Static function used to serialized a specific entity
@@ -75,129 +72,61 @@ object decoratorsMod {
       * @param serializationObject defines the optional target obecjt where serialization data will be stored
       * @returns a JSON compatible object representing the serialization of the entity
       */
-    @JSImport("babylonjs/Misc/decorators", "SerializationHelper.Serialize")
-    @js.native
-    def Serialize[T](entity: T): js.Any = js.native
-    @JSImport("babylonjs/Misc/decorators", "SerializationHelper.Serialize")
-    @js.native
-    def Serialize[T](entity: T, serializationObject: js.Any): js.Any = js.native
+    inline def Serialize[T](entity: T): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Serialize")(entity.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def Serialize[T](entity: T, serializationObject: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("Serialize")(entity.asInstanceOf[js.Any], serializationObject.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /** @hidden */
-    @JSImport("babylonjs/Misc/decorators", "SerializationHelper._ColorCurvesParser")
-    @js.native
-    def _ColorCurvesParser(sourceProperty: js.Any): ColorCurves = js.native
+    inline def _ColorCurvesParser(sourceProperty: js.Any): ColorCurves = ^.asInstanceOf[js.Dynamic].applyDynamic("_ColorCurvesParser")(sourceProperty.asInstanceOf[js.Any]).asInstanceOf[ColorCurves]
     
     /** @hidden */
-    @JSImport("babylonjs/Misc/decorators", "SerializationHelper._FresnelParametersParser")
-    @js.native
-    def _FresnelParametersParser(sourceProperty: js.Any): FresnelParameters = js.native
+    inline def _FresnelParametersParser(sourceProperty: js.Any): FresnelParameters = ^.asInstanceOf[js.Dynamic].applyDynamic("_FresnelParametersParser")(sourceProperty.asInstanceOf[js.Any]).asInstanceOf[FresnelParameters]
     
     /** @hidden */
-    @JSImport("babylonjs/Misc/decorators", "SerializationHelper._ImageProcessingConfigurationParser")
-    @js.native
-    def _ImageProcessingConfigurationParser(sourceProperty: js.Any): ImageProcessingConfiguration = js.native
+    inline def _ImageProcessingConfigurationParser(sourceProperty: js.Any): ImageProcessingConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("_ImageProcessingConfigurationParser")(sourceProperty.asInstanceOf[js.Any]).asInstanceOf[ImageProcessingConfiguration]
     
     /** @hidden */
-    @JSImport("babylonjs/Misc/decorators", "SerializationHelper._TextureParser")
-    @js.native
-    def _TextureParser(sourceProperty: js.Any, scene: Scene, rootUrl: String): Nullable[BaseTexture] = js.native
+    inline def _TextureParser(sourceProperty: js.Any, scene: Scene, rootUrl: String): Nullable[BaseTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("_TextureParser")(sourceProperty.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[BaseTexture]]
   }
   
-  @JSImport("babylonjs/Misc/decorators", "expandToProperty")
-  @js.native
-  def expandToProperty(callback: String): js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit] = js.native
-  @JSImport("babylonjs/Misc/decorators", "expandToProperty")
-  @js.native
-  def expandToProperty(callback: String, targetKey: Nullable[String]): js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit] = js.native
+  inline def expandToProperty(callback: String): js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("expandToProperty")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit]]
+  inline def expandToProperty(callback: String, targetKey: Nullable[String]): js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("expandToProperty")(callback.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit]]
   
-  @JSImport("babylonjs/Misc/decorators", "serialize")
-  @js.native
-  def serialize(): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = js.native
-  @JSImport("babylonjs/Misc/decorators", "serialize")
-  @js.native
-  def serialize(sourceName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = js.native
+  inline def serialize(): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")().asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit]]
+  inline def serialize(sourceName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(sourceName.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit]]
   
-  @JSImport("babylonjs/Misc/decorators", "serializeAsCameraReference")
-  @js.native
-  def serializeAsCameraReference(): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = js.native
-  @JSImport("babylonjs/Misc/decorators", "serializeAsCameraReference")
-  @js.native
-  def serializeAsCameraReference(sourceName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = js.native
+  inline def serializeAsCameraReference(): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeAsCameraReference")().asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit]]
+  inline def serializeAsCameraReference(sourceName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeAsCameraReference")(sourceName.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit]]
   
-  @JSImport("babylonjs/Misc/decorators", "serializeAsColor3")
-  @js.native
-  def serializeAsColor3(): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = js.native
-  @JSImport("babylonjs/Misc/decorators", "serializeAsColor3")
-  @js.native
-  def serializeAsColor3(sourceName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = js.native
+  inline def serializeAsColor3(): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeAsColor3")().asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit]]
+  inline def serializeAsColor3(sourceName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeAsColor3")(sourceName.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit]]
   
-  @JSImport("babylonjs/Misc/decorators", "serializeAsColor4")
-  @js.native
-  def serializeAsColor4(): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = js.native
-  @JSImport("babylonjs/Misc/decorators", "serializeAsColor4")
-  @js.native
-  def serializeAsColor4(sourceName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = js.native
+  inline def serializeAsColor4(): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeAsColor4")().asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit]]
+  inline def serializeAsColor4(sourceName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeAsColor4")(sourceName.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit]]
   
-  @JSImport("babylonjs/Misc/decorators", "serializeAsColorCurves")
-  @js.native
-  def serializeAsColorCurves(): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = js.native
-  @JSImport("babylonjs/Misc/decorators", "serializeAsColorCurves")
-  @js.native
-  def serializeAsColorCurves(sourceName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = js.native
+  inline def serializeAsColorCurves(): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeAsColorCurves")().asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit]]
+  inline def serializeAsColorCurves(sourceName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeAsColorCurves")(sourceName.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit]]
   
-  @JSImport("babylonjs/Misc/decorators", "serializeAsFresnelParameters")
-  @js.native
-  def serializeAsFresnelParameters(): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = js.native
-  @JSImport("babylonjs/Misc/decorators", "serializeAsFresnelParameters")
-  @js.native
-  def serializeAsFresnelParameters(sourceName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = js.native
+  inline def serializeAsFresnelParameters(): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeAsFresnelParameters")().asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit]]
+  inline def serializeAsFresnelParameters(sourceName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeAsFresnelParameters")(sourceName.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit]]
   
-  @JSImport("babylonjs/Misc/decorators", "serializeAsImageProcessingConfiguration")
-  @js.native
-  def serializeAsImageProcessingConfiguration(): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = js.native
-  @JSImport("babylonjs/Misc/decorators", "serializeAsImageProcessingConfiguration")
-  @js.native
-  def serializeAsImageProcessingConfiguration(sourceName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = js.native
+  inline def serializeAsImageProcessingConfiguration(): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeAsImageProcessingConfiguration")().asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit]]
+  inline def serializeAsImageProcessingConfiguration(sourceName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeAsImageProcessingConfiguration")(sourceName.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit]]
   
-  @JSImport("babylonjs/Misc/decorators", "serializeAsMatrix")
-  @js.native
-  def serializeAsMatrix(): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = js.native
-  @JSImport("babylonjs/Misc/decorators", "serializeAsMatrix")
-  @js.native
-  def serializeAsMatrix(sourceName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = js.native
+  inline def serializeAsMatrix(): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeAsMatrix")().asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit]]
+  inline def serializeAsMatrix(sourceName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeAsMatrix")(sourceName.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit]]
   
-  @JSImport("babylonjs/Misc/decorators", "serializeAsMeshReference")
-  @js.native
-  def serializeAsMeshReference(): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = js.native
-  @JSImport("babylonjs/Misc/decorators", "serializeAsMeshReference")
-  @js.native
-  def serializeAsMeshReference(sourceName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = js.native
+  inline def serializeAsMeshReference(): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeAsMeshReference")().asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit]]
+  inline def serializeAsMeshReference(sourceName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeAsMeshReference")(sourceName.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit]]
   
-  @JSImport("babylonjs/Misc/decorators", "serializeAsQuaternion")
-  @js.native
-  def serializeAsQuaternion(): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = js.native
-  @JSImport("babylonjs/Misc/decorators", "serializeAsQuaternion")
-  @js.native
-  def serializeAsQuaternion(sourceName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = js.native
+  inline def serializeAsQuaternion(): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeAsQuaternion")().asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit]]
+  inline def serializeAsQuaternion(sourceName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeAsQuaternion")(sourceName.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit]]
   
-  @JSImport("babylonjs/Misc/decorators", "serializeAsTexture")
-  @js.native
-  def serializeAsTexture(): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = js.native
-  @JSImport("babylonjs/Misc/decorators", "serializeAsTexture")
-  @js.native
-  def serializeAsTexture(sourceName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = js.native
+  inline def serializeAsTexture(): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeAsTexture")().asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit]]
+  inline def serializeAsTexture(sourceName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeAsTexture")(sourceName.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit]]
   
-  @JSImport("babylonjs/Misc/decorators", "serializeAsVector2")
-  @js.native
-  def serializeAsVector2(): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = js.native
-  @JSImport("babylonjs/Misc/decorators", "serializeAsVector2")
-  @js.native
-  def serializeAsVector2(sourceName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = js.native
+  inline def serializeAsVector2(): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeAsVector2")().asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit]]
+  inline def serializeAsVector2(sourceName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeAsVector2")(sourceName.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit]]
   
-  @JSImport("babylonjs/Misc/decorators", "serializeAsVector3")
-  @js.native
-  def serializeAsVector3(): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = js.native
-  @JSImport("babylonjs/Misc/decorators", "serializeAsVector3")
-  @js.native
-  def serializeAsVector3(sourceName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = js.native
+  inline def serializeAsVector3(): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeAsVector3")().asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit]]
+  inline def serializeAsVector3(sourceName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeAsVector3")(sourceName.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String | js.Symbol, Unit]]
 }

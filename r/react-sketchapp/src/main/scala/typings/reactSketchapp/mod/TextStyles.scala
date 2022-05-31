@@ -32,9 +32,4 @@ object TextStyles {
     * don't need to use this.
     */
   inline def resolve(style: TextStyle): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(style.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  /**
-    * Find all of the registered styles. You probably don't need to use this.
-    */
-  object styles
 }

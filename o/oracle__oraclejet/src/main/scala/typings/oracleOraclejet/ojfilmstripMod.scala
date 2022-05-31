@@ -49,21 +49,22 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ojfilmstripMod {
   
   @js.native
-  trait ojFilmStrip extends baseComponent[ojFilmStripSettableProperties] {
+  trait ojFilmStrip
+    extends StObject
+       with baseComponent[ojFilmStripSettableProperties] {
     
     def addEventListener(
       `type`: arrowPlacementChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[adjacent | overlay], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[adjacent | overlay], js.Any]
     ): Unit = js.native
     def addEventListener(
       `type`: arrowPlacementChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[adjacent | overlay], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[adjacent | overlay], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     def addEventListener(
@@ -71,7 +72,7 @@ object ojfilmstripMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[visible | hidden | hover | auto], 
-          _
+          js.Any
         ]
     ): Unit = js.native
     def addEventListener(
@@ -79,48 +80,56 @@ object ojfilmstripMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[visible | hidden | hover | auto], 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
     def addEventListener(
       `type`: loopingChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[off | page], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[off | page], js.Any]
     ): Unit = js.native
     def addEventListener(
       `type`: loopingChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[off | page], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[off | page], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     def addEventListener(
       `type`: orientationChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[horizontal | vertical], _]
+      listener: js.ThisFunction1[
+          /* this */ HTMLElement, 
+          /* ev */ JetElementCustomEvent[horizontal | vertical], 
+          js.Any
+        ]
     ): Unit = js.native
     def addEventListener(
       `type`: orientationChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[horizontal | vertical], _],
+      listener: js.ThisFunction1[
+          /* this */ HTMLElement, 
+          /* ev */ JetElementCustomEvent[horizontal | vertical], 
+          js.Any
+        ],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_currentItemChanged(
       `type`: currentItemChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Id], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Id], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_currentItemChanged(
       `type`: currentItemChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Id], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Id], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_maxItemsPerPageChanged(
       `type`: maxItemsPerPageChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_maxItemsPerPageChanged(
       `type`: maxItemsPerPageChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     
@@ -149,17 +158,17 @@ object ojfilmstripMod {
     
     var maxItemsPerPage: Double = js.native
     
-    var onArrowPlacementChanged: (js.Function1[/* event */ JetElementCustomEvent[adjacent | overlay], _]) | Null = js.native
+    var onArrowPlacementChanged: (js.Function1[/* event */ JetElementCustomEvent[adjacent | overlay], js.Any]) | Null = js.native
     
-    var onArrowVisibilityChanged: (js.Function1[/* event */ JetElementCustomEvent[visible | hidden | hover | auto], _]) | Null = js.native
+    var onArrowVisibilityChanged: (js.Function1[/* event */ JetElementCustomEvent[visible | hidden | hover | auto], js.Any]) | Null = js.native
     
-    var onCurrentItemChanged: (js.Function1[/* event */ JetElementCustomEvent[Id], _]) | Null = js.native
+    var onCurrentItemChanged: (js.Function1[/* event */ JetElementCustomEvent[Id], js.Any]) | Null = js.native
     
-    var onLoopingChanged: (js.Function1[/* event */ JetElementCustomEvent[off | page], _]) | Null = js.native
+    var onLoopingChanged: (js.Function1[/* event */ JetElementCustomEvent[off | page], js.Any]) | Null = js.native
     
-    var onMaxItemsPerPageChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+    var onMaxItemsPerPageChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], js.Any]) | Null = js.native
     
-    var onOrientationChanged: (js.Function1[/* event */ JetElementCustomEvent[horizontal | vertical], _]) | Null = js.native
+    var onOrientationChanged: (js.Function1[/* event */ JetElementCustomEvent[horizontal | vertical], js.Any]) | Null = js.native
     
     var orientation: horizontal | vertical = js.native
     
@@ -186,25 +195,25 @@ object ojfilmstripMod {
     var translations_ojFilmStrip: LabelAccArrowNextPage = js.native
   }
   
-  @js.native
-  trait ojFilmStripEventMap extends baseComponentEventMap[ojFilmStripSettableProperties] {
+  trait ojFilmStripEventMap
+    extends StObject
+       with baseComponentEventMap[ojFilmStripSettableProperties] {
     
-    var arrowPlacementChanged: JetElementCustomEvent[adjacent | overlay] = js.native
+    var arrowPlacementChanged: JetElementCustomEvent[adjacent | overlay]
     
-    var arrowVisibilityChanged: JetElementCustomEvent[visible | hidden | hover | auto] = js.native
+    var arrowVisibilityChanged: JetElementCustomEvent[visible | hidden | hover | auto]
     
-    var currentItemChanged: JetElementCustomEvent[Id] = js.native
+    var currentItemChanged: JetElementCustomEvent[Id]
     
-    var loopingChanged: JetElementCustomEvent[off | page] = js.native
+    var loopingChanged: JetElementCustomEvent[off | page]
     
-    var maxItemsPerPageChanged: JetElementCustomEvent[Double] = js.native
+    var maxItemsPerPageChanged: JetElementCustomEvent[Double]
     
-    var orientationChanged: JetElementCustomEvent[horizontal | vertical] = js.native
+    var orientationChanged: JetElementCustomEvent[horizontal | vertical]
   }
   object ojFilmStripEventMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: UIEvent,
       animationcancel: AnimationEvent,
       animationend: AnimationEvent,
@@ -309,51 +318,44 @@ object ojfilmstripMod {
       __obj.asInstanceOf[ojFilmStripEventMap]
     }
     
-    @scala.inline
-    implicit class ojFilmStripEventMapMutableBuilder[Self <: ojFilmStripEventMap] (val x: Self) extends AnyVal {
+    extension [Self <: ojFilmStripEventMap](x: Self) {
       
-      @scala.inline
-      def setArrowPlacementChanged(value: JetElementCustomEvent[adjacent | overlay]): Self = StObject.set(x, "arrowPlacementChanged", value.asInstanceOf[js.Any])
+      inline def setArrowPlacementChanged(value: JetElementCustomEvent[adjacent | overlay]): Self = StObject.set(x, "arrowPlacementChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrowVisibilityChanged(value: JetElementCustomEvent[visible | hidden | hover | auto]): Self = StObject.set(x, "arrowVisibilityChanged", value.asInstanceOf[js.Any])
+      inline def setArrowVisibilityChanged(value: JetElementCustomEvent[visible | hidden | hover | auto]): Self = StObject.set(x, "arrowVisibilityChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentItemChanged(value: JetElementCustomEvent[Id]): Self = StObject.set(x, "currentItemChanged", value.asInstanceOf[js.Any])
+      inline def setCurrentItemChanged(value: JetElementCustomEvent[Id]): Self = StObject.set(x, "currentItemChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopingChanged(value: JetElementCustomEvent[off | page]): Self = StObject.set(x, "loopingChanged", value.asInstanceOf[js.Any])
+      inline def setLoopingChanged(value: JetElementCustomEvent[off | page]): Self = StObject.set(x, "loopingChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxItemsPerPageChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "maxItemsPerPageChanged", value.asInstanceOf[js.Any])
+      inline def setMaxItemsPerPageChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "maxItemsPerPageChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientationChanged(value: JetElementCustomEvent[horizontal | vertical]): Self = StObject.set(x, "orientationChanged", value.asInstanceOf[js.Any])
+      inline def setOrientationChanged(value: JetElementCustomEvent[horizontal | vertical]): Self = StObject.set(x, "orientationChanged", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait ojFilmStripSettableProperties extends baseComponentSettableProperties {
+  trait ojFilmStripSettableProperties
+    extends StObject
+       with baseComponentSettableProperties {
     
-    var arrowPlacement: adjacent | overlay = js.native
+    var arrowPlacement: adjacent | overlay
     
-    var arrowVisibility: visible | hidden | hover | auto = js.native
+    var arrowVisibility: visible | hidden | hover | auto
     
-    var currentItem: Id = js.native
+    var currentItem: Id
     
-    var looping: off | page = js.native
+    var looping: off | page
     
-    var maxItemsPerPage: Double = js.native
+    var maxItemsPerPage: Double
     
-    var orientation: horizontal | vertical = js.native
+    var orientation: horizontal | vertical
     
     @JSName("translations")
-    var translations_ojFilmStripSettableProperties: LabelAccArrowNextPage = js.native
+    var translations_ojFilmStripSettableProperties: LabelAccArrowNextPage
   }
   object ojFilmStripSettableProperties {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arrowPlacement: adjacent | overlay,
       arrowVisibility: visible | hidden | hover | auto,
       currentItem: Id,
@@ -366,103 +368,79 @@ object ojfilmstripMod {
       __obj.asInstanceOf[ojFilmStripSettableProperties]
     }
     
-    @scala.inline
-    implicit class ojFilmStripSettablePropertiesMutableBuilder[Self <: ojFilmStripSettableProperties] (val x: Self) extends AnyVal {
+    extension [Self <: ojFilmStripSettableProperties](x: Self) {
       
-      @scala.inline
-      def setArrowPlacement(value: adjacent | overlay): Self = StObject.set(x, "arrowPlacement", value.asInstanceOf[js.Any])
+      inline def setArrowPlacement(value: adjacent | overlay): Self = StObject.set(x, "arrowPlacement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrowVisibility(value: visible | hidden | hover | auto): Self = StObject.set(x, "arrowVisibility", value.asInstanceOf[js.Any])
+      inline def setArrowVisibility(value: visible | hidden | hover | auto): Self = StObject.set(x, "arrowVisibility", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentItem(value: Id): Self = StObject.set(x, "currentItem", value.asInstanceOf[js.Any])
+      inline def setCurrentItem(value: Id): Self = StObject.set(x, "currentItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLooping(value: off | page): Self = StObject.set(x, "looping", value.asInstanceOf[js.Any])
+      inline def setLooping(value: off | page): Self = StObject.set(x, "looping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxItemsPerPage(value: Double): Self = StObject.set(x, "maxItemsPerPage", value.asInstanceOf[js.Any])
+      inline def setMaxItemsPerPage(value: Double): Self = StObject.set(x, "maxItemsPerPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslations(value: LabelAccArrowNextPage): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: LabelAccArrowNextPage): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojfilmstrip.ojFilmStripSettableProperties> */
-  @js.native
   trait ojFilmStripSettablePropertiesLenient
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var arrowPlacement: js.UndefOr[adjacent | overlay] = js.native
+    var arrowPlacement: js.UndefOr[adjacent | overlay] = js.undefined
     
-    var arrowVisibility: js.UndefOr[visible | hidden | hover | auto] = js.native
+    var arrowVisibility: js.UndefOr[visible | hidden | hover | auto] = js.undefined
     
-    var currentItem: js.UndefOr[Id] = js.native
+    var currentItem: js.UndefOr[Id] = js.undefined
     
-    var looping: js.UndefOr[off | page] = js.native
+    var looping: js.UndefOr[off | page] = js.undefined
     
-    var maxItemsPerPage: js.UndefOr[Double] = js.native
+    var maxItemsPerPage: js.UndefOr[Double] = js.undefined
     
-    var orientation: js.UndefOr[horizontal | vertical] = js.native
+    var orientation: js.UndefOr[horizontal | vertical] = js.undefined
     
-    var translations: js.UndefOr[LabelAccArrowNextPage] = js.native
+    var translations: js.UndefOr[LabelAccArrowNextPage] = js.undefined
   }
   object ojFilmStripSettablePropertiesLenient {
     
-    @scala.inline
-    def apply(): ojFilmStripSettablePropertiesLenient = {
+    inline def apply(): ojFilmStripSettablePropertiesLenient = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ojFilmStripSettablePropertiesLenient]
     }
     
-    @scala.inline
-    implicit class ojFilmStripSettablePropertiesLenientMutableBuilder[Self <: ojFilmStripSettablePropertiesLenient] (val x: Self) extends AnyVal {
+    extension [Self <: ojFilmStripSettablePropertiesLenient](x: Self) {
       
-      @scala.inline
-      def setArrowPlacement(value: adjacent | overlay): Self = StObject.set(x, "arrowPlacement", value.asInstanceOf[js.Any])
+      inline def setArrowPlacement(value: adjacent | overlay): Self = StObject.set(x, "arrowPlacement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrowPlacementUndefined: Self = StObject.set(x, "arrowPlacement", js.undefined)
+      inline def setArrowPlacementUndefined: Self = StObject.set(x, "arrowPlacement", js.undefined)
       
-      @scala.inline
-      def setArrowVisibility(value: visible | hidden | hover | auto): Self = StObject.set(x, "arrowVisibility", value.asInstanceOf[js.Any])
+      inline def setArrowVisibility(value: visible | hidden | hover | auto): Self = StObject.set(x, "arrowVisibility", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrowVisibilityUndefined: Self = StObject.set(x, "arrowVisibility", js.undefined)
+      inline def setArrowVisibilityUndefined: Self = StObject.set(x, "arrowVisibility", js.undefined)
       
-      @scala.inline
-      def setCurrentItem(value: Id): Self = StObject.set(x, "currentItem", value.asInstanceOf[js.Any])
+      inline def setCurrentItem(value: Id): Self = StObject.set(x, "currentItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentItemUndefined: Self = StObject.set(x, "currentItem", js.undefined)
+      inline def setCurrentItemUndefined: Self = StObject.set(x, "currentItem", js.undefined)
       
-      @scala.inline
-      def setLooping(value: off | page): Self = StObject.set(x, "looping", value.asInstanceOf[js.Any])
+      inline def setLooping(value: off | page): Self = StObject.set(x, "looping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopingUndefined: Self = StObject.set(x, "looping", js.undefined)
+      inline def setLoopingUndefined: Self = StObject.set(x, "looping", js.undefined)
       
-      @scala.inline
-      def setMaxItemsPerPage(value: Double): Self = StObject.set(x, "maxItemsPerPage", value.asInstanceOf[js.Any])
+      inline def setMaxItemsPerPage(value: Double): Self = StObject.set(x, "maxItemsPerPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxItemsPerPageUndefined: Self = StObject.set(x, "maxItemsPerPage", js.undefined)
+      inline def setMaxItemsPerPageUndefined: Self = StObject.set(x, "maxItemsPerPage", js.undefined)
       
-      @scala.inline
-      def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+      inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       
-      @scala.inline
-      def setTranslations(value: LabelAccArrowNextPage): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: LabelAccArrowNextPage): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+      inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
     }
   }
 }

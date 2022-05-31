@@ -2,19 +2,18 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PredicateCondition extends Condition {
+trait PredicateCondition
+  extends StObject
+     with Condition {
   
   /** defines the predicate function used to validate the condition */
-  def predicate(): Boolean = js.native
+  def predicate(): Boolean
 }
 object PredicateCondition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _actionManager: ActionManager,
     _currentResult: Boolean,
     _evaluationId: Double,
@@ -29,10 +28,8 @@ object PredicateCondition {
     __obj.asInstanceOf[PredicateCondition]
   }
   
-  @scala.inline
-  implicit class PredicateConditionMutableBuilder[Self <: PredicateCondition] (val x: Self) extends AnyVal {
+  extension [Self <: PredicateCondition](x: Self) {
     
-    @scala.inline
-    def setPredicate(value: () => Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction0(value))
+    inline def setPredicate(value: () => Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction0(value))
   }
 }

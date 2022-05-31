@@ -2,26 +2,25 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CustomOptimization extends SceneOptimization {
+trait CustomOptimization
+  extends StObject
+     with SceneOptimization {
   
   /**
     * Callback called to apply the custom optimization.
     */
-  def onApply(scene: Scene, optimizer: SceneOptimizer): Boolean = js.native
+  def onApply(scene: Scene, optimizer: SceneOptimizer): Boolean
   
   /**
     * Callback called to get custom description
     */
-  def onGetDescription(): String = js.native
+  def onGetDescription(): String
 }
 object CustomOptimization {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     apply: (Scene, SceneOptimizer) => Boolean,
     getDescription: () => String,
     onApply: (Scene, SceneOptimizer) => Boolean,
@@ -32,13 +31,10 @@ object CustomOptimization {
     __obj.asInstanceOf[CustomOptimization]
   }
   
-  @scala.inline
-  implicit class CustomOptimizationMutableBuilder[Self <: CustomOptimization] (val x: Self) extends AnyVal {
+  extension [Self <: CustomOptimization](x: Self) {
     
-    @scala.inline
-    def setOnApply(value: (Scene, SceneOptimizer) => Boolean): Self = StObject.set(x, "onApply", js.Any.fromFunction2(value))
+    inline def setOnApply(value: (Scene, SceneOptimizer) => Boolean): Self = StObject.set(x, "onApply", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnGetDescription(value: () => String): Self = StObject.set(x, "onGetDescription", js.Any.fromFunction0(value))
+    inline def setOnGetDescription(value: () => String): Self = StObject.set(x, "onGetDescription", js.Any.fromFunction0(value))
   }
 }

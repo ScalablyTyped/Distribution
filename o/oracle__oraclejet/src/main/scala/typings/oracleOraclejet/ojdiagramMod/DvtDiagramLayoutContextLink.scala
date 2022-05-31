@@ -11,7 +11,6 @@ import typings.oracleOraclejet.oracleOraclejetStrings.right
 import typings.oracleOraclejet.oracleOraclejetStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,7 +18,7 @@ trait DvtDiagramLayoutContextLink extends StObject {
   
   def getCoordinateSpace(): js.Any = js.native
   
-  def getData(): js.Object | js.Array[_] = js.native
+  def getData(): js.Object | js.Array[js.Any] = js.native
   
   def getEndConnectorOffset(): Double = js.native
   
@@ -41,7 +40,7 @@ trait DvtDiagramLayoutContextLink extends StObject {
   
   def getLinkWidth(): Double = js.native
   
-  def getPoints(): js.Array[_] = js.native
+  def getPoints(): js.Array[js.Any] = js.native
   
   def getSelected(): Boolean = js.native
   
@@ -75,5 +74,5 @@ trait DvtDiagramLayoutContextLink extends StObject {
   @JSName("setLabelValign")
   def setLabelValign_top(valign: top): Unit = js.native
   
-  def setPoints(points: js.Array[_]): Unit = js.native
+  def setPoints(points: js.Array[js.Any]): Unit = js.native
 }

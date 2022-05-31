@@ -4,21 +4,22 @@ import typings.babylonjs.HTMLCanvasElement
 import typings.babylonjs.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HtmlElementTexture extends BaseTexture {
+trait HtmlElementTexture
+  extends StObject
+     with BaseTexture {
   
-  var _createInternalTexture: js.Any = js.native
+  /* private */ var _createInternalTexture: js.Any = js.native
   
-  var _generateMipMaps: js.Any = js.native
+  /* private */ var _generateMipMaps: js.Any = js.native
   
-  var _isVideo: js.Any = js.native
+  /* private */ var _isVideo: js.Any = js.native
   
-  var _samplingMode: js.Any = js.native
+  /* private */ var _samplingMode: js.Any = js.native
   
-  var _textureMatrix: js.Any = js.native
+  /* private */ var _textureMatrix: js.Any = js.native
   
   /**
     * The texture URL.

@@ -151,15 +151,4 @@ object mod {
   inline def usePagination(props: UsePaginationProps): UsePaginationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("usePagination")(props.asInstanceOf[js.Any]).asInstanceOf[UsePaginationResult]
   
   inline def useTabContext(): TabContextValue | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("useTabContext")().asInstanceOf[TabContextValue | Null]
-  
-  trait AutocompleteChangeDetails[T]
-    extends StObject
-       with typings.materialUiLab.useAutocompleteUseAutocompleteMod.AutocompleteChangeDetails[T]
-  object AutocompleteChangeDetails {
-    
-    inline def apply[T](option: T): AutocompleteChangeDetails[T] = {
-      val __obj = js.Dynamic.literal(option = option.asInstanceOf[js.Any])
-      __obj.asInstanceOf[AutocompleteChangeDetails[T]]
-    }
-  }
 }

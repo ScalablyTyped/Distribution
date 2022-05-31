@@ -70,7 +70,6 @@ import typings.std.WebGLTexture
 import typings.std.WebGLVertexArrayObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object thinEngineMod {
@@ -98,13 +97,6 @@ object thinEngineMod {
       canvasOrContext: Nullable[
             HTMLCanvasElement | OffscreenCanvas | WebGLRenderingContext | WebGL2RenderingContext
           ],
-      antialias: js.UndefOr[scala.Nothing],
-      options: EngineOptions
-    ) = this()
-    def this(
-      canvasOrContext: Nullable[
-            HTMLCanvasElement | OffscreenCanvas | WebGLRenderingContext | WebGL2RenderingContext
-          ],
       antialias: Boolean,
       options: EngineOptions
     ) = this()
@@ -112,15 +104,22 @@ object thinEngineMod {
       canvasOrContext: Nullable[
             HTMLCanvasElement | OffscreenCanvas | WebGLRenderingContext | WebGL2RenderingContext
           ],
-      antialias: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
+      antialias: Unit,
+      options: EngineOptions
+    ) = this()
+    def this(
+      canvasOrContext: Nullable[
+            HTMLCanvasElement | OffscreenCanvas | WebGLRenderingContext | WebGL2RenderingContext
+          ],
+      antialias: Boolean,
+      options: Unit,
       adaptToDeviceRatio: Boolean
     ) = this()
     def this(
       canvasOrContext: Nullable[
             HTMLCanvasElement | OffscreenCanvas | WebGLRenderingContext | WebGL2RenderingContext
           ],
-      antialias: js.UndefOr[scala.Nothing],
+      antialias: Boolean,
       options: EngineOptions,
       adaptToDeviceRatio: Boolean
     ) = this()
@@ -128,27 +127,27 @@ object thinEngineMod {
       canvasOrContext: Nullable[
             HTMLCanvasElement | OffscreenCanvas | WebGLRenderingContext | WebGL2RenderingContext
           ],
-      antialias: Boolean,
-      options: js.UndefOr[scala.Nothing],
+      antialias: Unit,
+      options: Unit,
       adaptToDeviceRatio: Boolean
     ) = this()
     def this(
       canvasOrContext: Nullable[
             HTMLCanvasElement | OffscreenCanvas | WebGLRenderingContext | WebGL2RenderingContext
           ],
-      antialias: Boolean,
+      antialias: Unit,
       options: EngineOptions,
       adaptToDeviceRatio: Boolean
     ) = this()
     
-    var _activateCurrentTexture: js.Any = js.native
+    /* private */ var _activateCurrentTexture: js.Any = js.native
     
     /** @hidden */
-    var _activeChannel: Double = js.native
+    /* protected */ var _activeChannel: Double = js.native
     
-    var _activeRenderLoops: js.Array[js.Function0[Unit]] = js.native
+    /* protected */ var _activeRenderLoops: js.Array[js.Function0[Unit]] = js.native
     
-    var _activeRequests: js.Any = js.native
+    /* private */ var _activeRequests: js.Any = js.native
     
     /** @hidden */
     var _alphaEquation: Double = js.native
@@ -168,54 +167,49 @@ object thinEngineMod {
     /** @hidden */
     def _bindIndexBufferWithCache(indexBuffer: Nullable[DataBuffer]): Unit = js.native
     
-    var _bindSamplerUniformToChannel: js.Any = js.native
+    /* private */ var _bindSamplerUniformToChannel: js.Any = js.native
     
     /** @hidden */
     def _bindTexture(channel: Double, texture: Nullable[InternalTexture]): Unit = js.native
     
     /** @hidden */
     def _bindTextureDirectly(target: Double, texture: Nullable[InternalTexture]): Boolean = js.native
-    def _bindTextureDirectly(
-      target: Double,
-      texture: Nullable[InternalTexture],
-      forTextureDataUpdate: js.UndefOr[scala.Nothing],
-      force: Boolean
-    ): Boolean = js.native
     def _bindTextureDirectly(target: Double, texture: Nullable[InternalTexture], forTextureDataUpdate: Boolean): Boolean = js.native
     def _bindTextureDirectly(target: Double, texture: Nullable[InternalTexture], forTextureDataUpdate: Boolean, force: Boolean): Boolean = js.native
+    def _bindTextureDirectly(target: Double, texture: Nullable[InternalTexture], forTextureDataUpdate: Unit, force: Boolean): Boolean = js.native
     
     /** @hidden */
     def _bindUnboundFramebuffer(framebuffer: Nullable[WebGLFramebuffer]): Unit = js.native
     
-    var _bindVertexBuffersAttributes: js.Any = js.native
+    /* private */ var _bindVertexBuffersAttributes: js.Any = js.native
     
     /** @hidden */
     var _boundRenderFunction: js.Any = js.native
     
     /** @hidden */
-    var _boundTexturesCache: StringDictionary[Nullable[InternalTexture]] = js.native
+    /* protected */ var _boundTexturesCache: StringDictionary[Nullable[InternalTexture]] = js.native
     
-    var _boundUniforms: NumberDictionary[WebGLUniformLocation] = js.native
-    
-    /** @hidden */
-    var _cachedEffectForVertexBuffers: Nullable[Effect] = js.native
+    /* protected */ var _boundUniforms: NumberDictionary[WebGLUniformLocation] = js.native
     
     /** @hidden */
-    var _cachedIndexBuffer: Nullable[DataBuffer] = js.native
-    
-    var _cachedVertexArrayObject: js.Any = js.native
+    /* protected */ var _cachedEffectForVertexBuffers: Nullable[Effect] = js.native
     
     /** @hidden */
-    var _cachedVertexBuffers: js.Any = js.native
+    /* protected */ var _cachedIndexBuffer: Nullable[DataBuffer] = js.native
+    
+    /* private */ var _cachedVertexArrayObject: js.Any = js.native
     
     /** @hidden */
-    var _cachedViewport: Nullable[IViewportLike] = js.native
+    /* protected */ var _cachedVertexBuffers: js.Any = js.native
     
-    var _canRenderToFloatFramebuffer: js.Any = js.native
+    /** @hidden */
+    /* protected */ var _cachedViewport: Nullable[IViewportLike] = js.native
     
-    var _canRenderToFramebuffer: js.Any = js.native
+    /* private */ var _canRenderToFloatFramebuffer: js.Any = js.native
     
-    var _canRenderToHalfFloatFramebuffer: js.Any = js.native
+    /* private */ var _canRenderToFramebuffer: js.Any = js.native
+    
+    /* private */ var _canRenderToHalfFloatFramebuffer: js.Any = js.native
     
     /** @hidden */
     var _caps: EngineCapabilities = js.native
@@ -226,7 +220,7 @@ object thinEngineMod {
       onfinish: js.Function1[/* images */ js.Array[ArrayBuffer], Unit],
       files: js.Array[String],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
         ]
     ): Unit = js.native
     
@@ -236,7 +230,7 @@ object thinEngineMod {
       onfinish: js.Function1[/* images */ js.Array[HTMLImageElement], Unit],
       files: js.Array[String],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
         ]
     ): Unit = js.native
     def _cascadeLoadImgs(
@@ -244,24 +238,24 @@ object thinEngineMod {
       onfinish: js.Function1[/* images */ js.Array[HTMLImageElement], Unit],
       files: js.Array[String],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
         ],
       mimeType: String
     ): Unit = js.native
     
     /** @hidden */
-    var _colorWrite: Boolean = js.native
+    /* protected */ var _colorWrite: Boolean = js.native
     
     /** @hidden */
-    var _colorWriteChanged: Boolean = js.native
+    /* protected */ var _colorWriteChanged: Boolean = js.native
     
-    var _compileRawShader: js.Any = js.native
+    /* private */ var _compileRawShader: js.Any = js.native
     
-    var _compileShader: js.Any = js.native
+    /* private */ var _compileShader: js.Any = js.native
     
-    var _compiledEffects: js.Any = js.native
+    /* private */ var _compiledEffects: js.Any = js.native
     
-    var _contextWasLost: Boolean = js.native
+    /* protected */ var _contextWasLost: Boolean = js.native
     
     /**
       * Creates a depth stencil cube texture.
@@ -292,31 +286,31 @@ object thinEngineMod {
     /** @hidden */
     def _createTexture(): WebGLTexture = js.native
     
-    var _createVertexBuffer: js.Any = js.native
+    /* private */ var _createVertexBuffer: js.Any = js.native
     
-    var _creationOptions: EngineOptions = js.native
+    /* protected */ var _creationOptions: EngineOptions = js.native
     
-    var _currentBoundBuffer: js.Array[Nullable[WebGLBuffer]] = js.native
+    /* protected */ var _currentBoundBuffer: js.Array[Nullable[WebGLBuffer]] = js.native
     
-    var _currentBufferPointers: js.Any = js.native
+    /* private */ var _currentBufferPointers: js.Any = js.native
     
     /** @hidden */
-    var _currentEffect: Nullable[Effect] = js.native
+    /* protected */ var _currentEffect: Nullable[Effect] = js.native
     
     /** @hidden */
     var _currentFramebuffer: Nullable[WebGLFramebuffer] = js.native
     
-    var _currentInstanceBuffers: js.Any = js.native
+    /* private */ var _currentInstanceBuffers: js.Any = js.native
     
-    var _currentInstanceLocations: js.Any = js.native
+    /* private */ var _currentInstanceLocations: js.Any = js.native
     
     /** @hidden */
-    var _currentProgram: Nullable[WebGLProgram] = js.native
+    /* protected */ var _currentProgram: Nullable[WebGLProgram] = js.native
     
     /** @hidden */
     var _currentRenderTarget: Nullable[InternalTexture] = js.native
     
-    var _currentTextureChannel: js.Any = js.native
+    /* private */ var _currentTextureChannel: js.Any = js.native
     
     /* protected */ def _deleteBuffer(buffer: DataBuffer): Unit = js.native
     
@@ -326,23 +320,23 @@ object thinEngineMod {
     /* protected */ def _deleteTexture(texture: Nullable[WebGLTexture]): Unit = js.native
     
     /** @hidden */
-    var _depthCullingState: DepthCullingState = js.native
+    /* protected */ var _depthCullingState: DepthCullingState = js.native
     
     /** @hidden */
     var _doNotHandleContextLost: Boolean = js.native
     
-    var _drawMode: js.Any = js.native
+    /* private */ var _drawMode: js.Any = js.native
     
     /** @hidden */
     var _dummyFramebuffer: Nullable[WebGLFramebuffer] = js.native
     
-    var _emptyCubeTexture: js.Any = js.native
+    /* private */ var _emptyCubeTexture: js.Any = js.native
     
-    var _emptyTexture: js.Any = js.native
+    /* private */ var _emptyTexture: js.Any = js.native
     
-    var _emptyTexture2DArray: js.Any = js.native
+    /* private */ var _emptyTexture2DArray: js.Any = js.native
     
-    var _emptyTexture3D: js.Any = js.native
+    /* private */ var _emptyTexture3D: js.Any = js.native
     
     /** @hidden */
     def _executeWhenRenderingStateIsCompiled(pipelineContext: IPipelineContext, action: js.Function0[Unit]): Unit = js.native
@@ -352,9 +346,9 @@ object thinEngineMod {
     /** @hidden */
     var _frameHandler: Double = js.native
     
-    var _framebufferDimensionsObject: js.Any = js.native
+    /* private */ var _framebufferDimensionsObject: js.Any = js.native
     
-    var _getDepthStencilBuffer: js.Any = js.native
+    /* private */ var _getDepthStencilBuffer: js.Any = js.native
     
     /** @hidden */
     def _getInternalFormat(format: Double): Double = js.native
@@ -372,9 +366,9 @@ object thinEngineMod {
     /** @hidden */
     def _getShaderSource(shader: WebGLShader): Nullable[String] = js.native
     
-    var _getTextureTarget: js.Any = js.native
+    /* private */ var _getTextureTarget: js.Any = js.native
     
-    var _getTextureWrapMode: js.Any = js.native
+    /* private */ var _getTextureWrapMode: js.Any = js.native
     
     /** @hidden */
     def _getUnpackAlignement(): Double = js.native
@@ -385,15 +379,15 @@ object thinEngineMod {
     /** @hidden */
     var _gl: WebGLRenderingContext = js.native
     
-    var _glRenderer: js.Any = js.native
+    /* private */ var _glRenderer: js.Any = js.native
     
-    var _glVendor: js.Any = js.native
+    /* private */ var _glVendor: js.Any = js.native
     
-    var _glVersion: js.Any = js.native
+    /* private */ var _glVersion: js.Any = js.native
     
-    var _hardwareScalingLevel: js.Any = js.native
+    /* private */ var _hardwareScalingLevel: js.Any = js.native
     
-    var _highPrecisionShadersAllowed: Boolean = js.native
+    /* protected */ var _highPrecisionShadersAllowed: Boolean = js.native
     
     /* protected */ def _initGLContext(): Unit = js.native
     
@@ -403,64 +397,12 @@ object thinEngineMod {
     /** @hidden */
     def _isRenderingStateCompiled(pipelineContext: IPipelineContext): Boolean = js.native
     
-    var _isStencilEnable: js.Any = js.native
+    /* private */ var _isStencilEnable: js.Any = js.native
     
     /** @hidden */
     def _loadFile(
       url: String,
       onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit]
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      offlineProvider: js.UndefOr[scala.Nothing],
-      useArrayBuffer: js.UndefOr[scala.Nothing],
-      onError: js.Function2[/* request */ js.UndefOr[IWebRequest], /* exception */ js.UndefOr[js.Any], Unit]
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      offlineProvider: js.UndefOr[scala.Nothing],
-      useArrayBuffer: Boolean
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      offlineProvider: js.UndefOr[scala.Nothing],
-      useArrayBuffer: Boolean,
-      onError: js.Function2[/* request */ js.UndefOr[IWebRequest], /* exception */ js.UndefOr[js.Any], Unit]
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      offlineProvider: IOfflineProvider
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      offlineProvider: IOfflineProvider,
-      useArrayBuffer: js.UndefOr[scala.Nothing],
-      onError: js.Function2[/* request */ js.UndefOr[IWebRequest], /* exception */ js.UndefOr[js.Any], Unit]
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      offlineProvider: IOfflineProvider,
-      useArrayBuffer: Boolean
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      offlineProvider: IOfflineProvider,
-      useArrayBuffer: Boolean,
-      onError: js.Function2[/* request */ js.UndefOr[IWebRequest], /* exception */ js.UndefOr[js.Any], Unit]
     ): IFileRequest = js.native
     def _loadFile(
       url: String,
@@ -471,23 +413,23 @@ object thinEngineMod {
       url: String,
       onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
       onProgress: js.Function1[/* data */ js.Any, Unit],
-      offlineProvider: js.UndefOr[scala.Nothing],
-      useArrayBuffer: js.UndefOr[scala.Nothing],
-      onError: js.Function2[/* request */ js.UndefOr[IWebRequest], /* exception */ js.UndefOr[js.Any], Unit]
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.Function1[/* data */ js.Any, Unit],
-      offlineProvider: js.UndefOr[scala.Nothing],
+      offlineProvider: Unit,
       useArrayBuffer: Boolean
     ): IFileRequest = js.native
     def _loadFile(
       url: String,
       onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
       onProgress: js.Function1[/* data */ js.Any, Unit],
-      offlineProvider: js.UndefOr[scala.Nothing],
+      offlineProvider: Unit,
       useArrayBuffer: Boolean,
+      onError: js.Function2[/* request */ js.UndefOr[IWebRequest], /* exception */ js.UndefOr[js.Any], Unit]
+    ): IFileRequest = js.native
+    def _loadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: js.Function1[/* data */ js.Any, Unit],
+      offlineProvider: Unit,
+      useArrayBuffer: Unit,
       onError: js.Function2[/* request */ js.UndefOr[IWebRequest], /* exception */ js.UndefOr[js.Any], Unit]
     ): IFileRequest = js.native
     def _loadFile(
@@ -501,14 +443,6 @@ object thinEngineMod {
       onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
       onProgress: js.Function1[/* data */ js.Any, Unit],
       offlineProvider: IOfflineProvider,
-      useArrayBuffer: js.UndefOr[scala.Nothing],
-      onError: js.Function2[/* request */ js.UndefOr[IWebRequest], /* exception */ js.UndefOr[js.Any], Unit]
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.Function1[/* data */ js.Any, Unit],
-      offlineProvider: IOfflineProvider,
       useArrayBuffer: Boolean
     ): IFileRequest = js.native
     def _loadFile(
@@ -519,18 +453,78 @@ object thinEngineMod {
       useArrayBuffer: Boolean,
       onError: js.Function2[/* request */ js.UndefOr[IWebRequest], /* exception */ js.UndefOr[js.Any], Unit]
     ): IFileRequest = js.native
+    def _loadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: js.Function1[/* data */ js.Any, Unit],
+      offlineProvider: IOfflineProvider,
+      useArrayBuffer: Unit,
+      onError: js.Function2[/* request */ js.UndefOr[IWebRequest], /* exception */ js.UndefOr[js.Any], Unit]
+    ): IFileRequest = js.native
+    def _loadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: Unit,
+      offlineProvider: Unit,
+      useArrayBuffer: Boolean
+    ): IFileRequest = js.native
+    def _loadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: Unit,
+      offlineProvider: Unit,
+      useArrayBuffer: Boolean,
+      onError: js.Function2[/* request */ js.UndefOr[IWebRequest], /* exception */ js.UndefOr[js.Any], Unit]
+    ): IFileRequest = js.native
+    def _loadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: Unit,
+      offlineProvider: Unit,
+      useArrayBuffer: Unit,
+      onError: js.Function2[/* request */ js.UndefOr[IWebRequest], /* exception */ js.UndefOr[js.Any], Unit]
+    ): IFileRequest = js.native
+    def _loadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: Unit,
+      offlineProvider: IOfflineProvider
+    ): IFileRequest = js.native
+    def _loadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: Unit,
+      offlineProvider: IOfflineProvider,
+      useArrayBuffer: Boolean
+    ): IFileRequest = js.native
+    def _loadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: Unit,
+      offlineProvider: IOfflineProvider,
+      useArrayBuffer: Boolean,
+      onError: js.Function2[/* request */ js.UndefOr[IWebRequest], /* exception */ js.UndefOr[js.Any], Unit]
+    ): IFileRequest = js.native
+    def _loadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: Unit,
+      offlineProvider: IOfflineProvider,
+      useArrayBuffer: Unit,
+      onError: js.Function2[/* request */ js.UndefOr[IWebRequest], /* exception */ js.UndefOr[js.Any], Unit]
+    ): IFileRequest = js.native
     
-    var _maxSimultaneousTextures: js.Any = js.native
+    /* private */ var _maxSimultaneousTextures: js.Any = js.native
     
-    var _mustWipeVertexAttributes: js.Any = js.native
+    /* private */ var _mustWipeVertexAttributes: js.Any = js.native
     
-    var _nextFreeTextureSlots: js.Any = js.native
+    /* private */ var _nextFreeTextureSlots: js.Any = js.native
     
     /* protected */ def _normalizeIndexData(indices: IndicesArray): Uint16Array | Uint32Array = js.native
     
-    var _onContextLost: js.Any = js.native
+    /* private */ var _onContextLost: js.Any = js.native
     
-    var _onContextRestored: js.Any = js.native
+    /* private */ var _onContextRestored: js.Any = js.native
     
     /** @hidden */
     def _partialLoadFile(
@@ -539,7 +533,7 @@ object thinEngineMod {
       loadedFiles: js.Array[ArrayBuffer],
       onfinish: js.Function1[/* files */ js.Array[ArrayBuffer], Unit],
       onErrorCallBack: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
         ]
     ): Unit = js.native
     
@@ -551,7 +545,7 @@ object thinEngineMod {
       scene: Nullable[Scene],
       onfinish: js.Function1[/* images */ js.Array[HTMLImageElement], Unit],
       onErrorCallBack: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
         ]
     ): Unit = js.native
     def _partialLoadImg(
@@ -561,7 +555,7 @@ object thinEngineMod {
       scene: Nullable[Scene],
       onfinish: js.Function1[/* images */ js.Array[HTMLImageElement], Unit],
       onErrorCallBack: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
         ],
       mimeType: String
     ): Unit = js.native
@@ -577,7 +571,7 @@ object thinEngineMod {
       transformFeedbackVaryings: Nullable[js.Array[String]]
     ): Unit = js.native
     
-    var _prepareWebGLTexture: js.Any = js.native
+    /* private */ var _prepareWebGLTexture: js.Any = js.native
     
     /* protected */ def _prepareWebGLTextureContinuation(
       texture: InternalTexture,
@@ -599,38 +593,7 @@ object thinEngineMod {
     
     /** @hidden */
     def _readTexturePixels(texture: InternalTexture, width: Double, height: Double): ArrayBufferView = js.native
-    def _readTexturePixels(
-      texture: InternalTexture,
-      width: Double,
-      height: Double,
-      faceIndex: js.UndefOr[scala.Nothing],
-      level: js.UndefOr[scala.Nothing],
-      buffer: Nullable[ArrayBufferView]
-    ): ArrayBufferView = js.native
-    def _readTexturePixels(
-      texture: InternalTexture,
-      width: Double,
-      height: Double,
-      faceIndex: js.UndefOr[scala.Nothing],
-      level: Double
-    ): ArrayBufferView = js.native
-    def _readTexturePixels(
-      texture: InternalTexture,
-      width: Double,
-      height: Double,
-      faceIndex: js.UndefOr[scala.Nothing],
-      level: Double,
-      buffer: Nullable[ArrayBufferView]
-    ): ArrayBufferView = js.native
     def _readTexturePixels(texture: InternalTexture, width: Double, height: Double, faceIndex: Double): ArrayBufferView = js.native
-    def _readTexturePixels(
-      texture: InternalTexture,
-      width: Double,
-      height: Double,
-      faceIndex: Double,
-      level: js.UndefOr[scala.Nothing],
-      buffer: Nullable[ArrayBufferView]
-    ): ArrayBufferView = js.native
     def _readTexturePixels(texture: InternalTexture, width: Double, height: Double, faceIndex: Double, level: Double): ArrayBufferView = js.native
     def _readTexturePixels(
       texture: InternalTexture,
@@ -640,12 +603,37 @@ object thinEngineMod {
       level: Double,
       buffer: Nullable[ArrayBufferView]
     ): ArrayBufferView = js.native
+    def _readTexturePixels(
+      texture: InternalTexture,
+      width: Double,
+      height: Double,
+      faceIndex: Double,
+      level: Unit,
+      buffer: Nullable[ArrayBufferView]
+    ): ArrayBufferView = js.native
+    def _readTexturePixels(texture: InternalTexture, width: Double, height: Double, faceIndex: Unit, level: Double): ArrayBufferView = js.native
+    def _readTexturePixels(
+      texture: InternalTexture,
+      width: Double,
+      height: Double,
+      faceIndex: Unit,
+      level: Double,
+      buffer: Nullable[ArrayBufferView]
+    ): ArrayBufferView = js.native
+    def _readTexturePixels(
+      texture: InternalTexture,
+      width: Double,
+      height: Double,
+      faceIndex: Unit,
+      level: Unit,
+      buffer: Nullable[ArrayBufferView]
+    ): ArrayBufferView = js.native
     
     /* protected */ def _rebuildBuffers(): Unit = js.native
     
-    var _rebuildEffects: js.Any = js.native
+    /* private */ var _rebuildEffects: js.Any = js.native
     
-    var _rebuildInternalTextures: js.Any = js.native
+    /* private */ var _rebuildInternalTextures: js.Any = js.native
     
     /** @hidden */
     def _releaseBuffer(buffer: DataBuffer): Boolean = js.native
@@ -662,9 +650,9 @@ object thinEngineMod {
     /** @hidden */
     def _renderLoop(): Unit = js.native
     
-    var _renderingCanvas: Nullable[HTMLCanvasElement] = js.native
+    /* protected */ var _renderingCanvas: Nullable[HTMLCanvasElement] = js.native
     
-    var _renderingQueueLaunched: Boolean = js.native
+    /* protected */ var _renderingQueueLaunched: Boolean = js.native
     
     /** @hidden */
     /* protected */ def _reportDrawCall(): Unit = js.native
@@ -675,7 +663,7 @@ object thinEngineMod {
     def _rescaleTexture(
       source: InternalTexture,
       destination: InternalTexture,
-      scene: Nullable[_],
+      scene: Nullable[js.Any],
       internalFormat: Double,
       onComplete: js.Function0[Unit]
     ): Unit = js.native
@@ -696,12 +684,6 @@ object thinEngineMod {
     /* protected */ def _setProgram(program: WebGLProgram): Unit = js.native
     
     /* protected */ def _setTexture(channel: Double, texture: Nullable[ThinTexture]): Boolean = js.native
-    /* protected */ def _setTexture(
-      channel: Double,
-      texture: Nullable[ThinTexture],
-      isPartOfTextureArray: js.UndefOr[scala.Nothing],
-      depthStencilTexture: Boolean
-    ): Boolean = js.native
     /* protected */ def _setTexture(channel: Double, texture: Nullable[ThinTexture], isPartOfTextureArray: Boolean): Boolean = js.native
     /* protected */ def _setTexture(
       channel: Double,
@@ -709,10 +691,16 @@ object thinEngineMod {
       isPartOfTextureArray: Boolean,
       depthStencilTexture: Boolean
     ): Boolean = js.native
+    /* protected */ def _setTexture(
+      channel: Double,
+      texture: Nullable[ThinTexture],
+      isPartOfTextureArray: Unit,
+      depthStencilTexture: Boolean
+    ): Boolean = js.native
     
-    var _setTextureParameterFloat: js.Any = js.native
+    /* private */ var _setTextureParameterFloat: js.Any = js.native
     
-    var _setTextureParameterInteger: js.Any = js.native
+    /* private */ var _setTextureParameterInteger: js.Any = js.native
     
     /** @hidden */
     def _setupDepthStencilTexture(
@@ -747,18 +735,18 @@ object thinEngineMod {
     def _shouldUseHighPrecisionShader: Boolean = js.native
     
     /** @hidden */
-    var _stencilState: StencilState = js.native
+    /* protected */ var _stencilState: StencilState = js.native
     
     /* protected */ def _supportsHardwareTextureRescaling: Boolean = js.native
     
-    var _textureUnits: js.Any = js.native
+    /* private */ var _textureUnits: js.Any = js.native
     
     /** @hidden */
     var _transformTextureUrl: Nullable[js.Function1[/* url */ String, String]] = js.native
     
-    var _uintIndicesCurrentlySet: js.Any = js.native
+    /* private */ var _uintIndicesCurrentlySet: js.Any = js.native
     
-    var _unbindVertexArrayObject: js.Any = js.native
+    /* private */ var _unbindVertexArrayObject: js.Any = js.native
     
     /** @hidden */
     var _uniformBuffers: js.Array[UniformBuffer] = js.native
@@ -766,18 +754,13 @@ object thinEngineMod {
     /** @hidden */
     def _unpackFlipY(value: Boolean): Unit = js.native
     
-    var _unpackFlipYCached: js.Any = js.native
+    /* private */ var _unpackFlipYCached: js.Any = js.native
     
     /** @hidden */
     def _uploadArrayBufferViewToTexture(texture: InternalTexture, imageData: ArrayBufferView): Unit = js.native
-    def _uploadArrayBufferViewToTexture(
-      texture: InternalTexture,
-      imageData: ArrayBufferView,
-      faceIndex: js.UndefOr[scala.Nothing],
-      lod: Double
-    ): Unit = js.native
     def _uploadArrayBufferViewToTexture(texture: InternalTexture, imageData: ArrayBufferView, faceIndex: Double): Unit = js.native
     def _uploadArrayBufferViewToTexture(texture: InternalTexture, imageData: ArrayBufferView, faceIndex: Double, lod: Double): Unit = js.native
+    def _uploadArrayBufferViewToTexture(texture: InternalTexture, imageData: ArrayBufferView, faceIndex: Unit, lod: Double): Unit = js.native
     
     /** @hidden */
     def _uploadCompressedDataToTextureDirectly(
@@ -786,15 +769,6 @@ object thinEngineMod {
       width: Double,
       height: Double,
       data: ArrayBufferView
-    ): Unit = js.native
-    def _uploadCompressedDataToTextureDirectly(
-      texture: InternalTexture,
-      internalFormat: Double,
-      width: Double,
-      height: Double,
-      data: ArrayBufferView,
-      faceIndex: js.UndefOr[scala.Nothing],
-      lod: Double
     ): Unit = js.native
     def _uploadCompressedDataToTextureDirectly(
       texture: InternalTexture,
@@ -813,99 +787,25 @@ object thinEngineMod {
       faceIndex: Double,
       lod: Double
     ): Unit = js.native
+    def _uploadCompressedDataToTextureDirectly(
+      texture: InternalTexture,
+      internalFormat: Double,
+      width: Double,
+      height: Double,
+      data: ArrayBufferView,
+      faceIndex: Unit,
+      lod: Double
+    ): Unit = js.native
     
     /** @hidden */
     def _uploadDataToTextureDirectly(texture: InternalTexture, imageData: ArrayBufferView): Unit = js.native
-    def _uploadDataToTextureDirectly(
-      texture: InternalTexture,
-      imageData: ArrayBufferView,
-      faceIndex: js.UndefOr[scala.Nothing],
-      lod: js.UndefOr[scala.Nothing],
-      babylonInternalFormat: js.UndefOr[scala.Nothing],
-      useTextureWidthAndHeight: Boolean
-    ): Unit = js.native
-    def _uploadDataToTextureDirectly(
-      texture: InternalTexture,
-      imageData: ArrayBufferView,
-      faceIndex: js.UndefOr[scala.Nothing],
-      lod: js.UndefOr[scala.Nothing],
-      babylonInternalFormat: Double
-    ): Unit = js.native
-    def _uploadDataToTextureDirectly(
-      texture: InternalTexture,
-      imageData: ArrayBufferView,
-      faceIndex: js.UndefOr[scala.Nothing],
-      lod: js.UndefOr[scala.Nothing],
-      babylonInternalFormat: Double,
-      useTextureWidthAndHeight: Boolean
-    ): Unit = js.native
-    def _uploadDataToTextureDirectly(
-      texture: InternalTexture,
-      imageData: ArrayBufferView,
-      faceIndex: js.UndefOr[scala.Nothing],
-      lod: Double
-    ): Unit = js.native
-    def _uploadDataToTextureDirectly(
-      texture: InternalTexture,
-      imageData: ArrayBufferView,
-      faceIndex: js.UndefOr[scala.Nothing],
-      lod: Double,
-      babylonInternalFormat: js.UndefOr[scala.Nothing],
-      useTextureWidthAndHeight: Boolean
-    ): Unit = js.native
-    def _uploadDataToTextureDirectly(
-      texture: InternalTexture,
-      imageData: ArrayBufferView,
-      faceIndex: js.UndefOr[scala.Nothing],
-      lod: Double,
-      babylonInternalFormat: Double
-    ): Unit = js.native
-    def _uploadDataToTextureDirectly(
-      texture: InternalTexture,
-      imageData: ArrayBufferView,
-      faceIndex: js.UndefOr[scala.Nothing],
-      lod: Double,
-      babylonInternalFormat: Double,
-      useTextureWidthAndHeight: Boolean
-    ): Unit = js.native
     def _uploadDataToTextureDirectly(texture: InternalTexture, imageData: ArrayBufferView, faceIndex: Double): Unit = js.native
-    def _uploadDataToTextureDirectly(
-      texture: InternalTexture,
-      imageData: ArrayBufferView,
-      faceIndex: Double,
-      lod: js.UndefOr[scala.Nothing],
-      babylonInternalFormat: js.UndefOr[scala.Nothing],
-      useTextureWidthAndHeight: Boolean
-    ): Unit = js.native
-    def _uploadDataToTextureDirectly(
-      texture: InternalTexture,
-      imageData: ArrayBufferView,
-      faceIndex: Double,
-      lod: js.UndefOr[scala.Nothing],
-      babylonInternalFormat: Double
-    ): Unit = js.native
-    def _uploadDataToTextureDirectly(
-      texture: InternalTexture,
-      imageData: ArrayBufferView,
-      faceIndex: Double,
-      lod: js.UndefOr[scala.Nothing],
-      babylonInternalFormat: Double,
-      useTextureWidthAndHeight: Boolean
-    ): Unit = js.native
     def _uploadDataToTextureDirectly(texture: InternalTexture, imageData: ArrayBufferView, faceIndex: Double, lod: Double): Unit = js.native
     def _uploadDataToTextureDirectly(
       texture: InternalTexture,
       imageData: ArrayBufferView,
       faceIndex: Double,
       lod: Double,
-      babylonInternalFormat: js.UndefOr[scala.Nothing],
-      useTextureWidthAndHeight: Boolean
-    ): Unit = js.native
-    def _uploadDataToTextureDirectly(
-      texture: InternalTexture,
-      imageData: ArrayBufferView,
-      faceIndex: Double,
-      lod: Double,
       babylonInternalFormat: Double
     ): Unit = js.native
     def _uploadDataToTextureDirectly(
@@ -916,12 +816,90 @@ object thinEngineMod {
       babylonInternalFormat: Double,
       useTextureWidthAndHeight: Boolean
     ): Unit = js.native
+    def _uploadDataToTextureDirectly(
+      texture: InternalTexture,
+      imageData: ArrayBufferView,
+      faceIndex: Double,
+      lod: Double,
+      babylonInternalFormat: Unit,
+      useTextureWidthAndHeight: Boolean
+    ): Unit = js.native
+    def _uploadDataToTextureDirectly(
+      texture: InternalTexture,
+      imageData: ArrayBufferView,
+      faceIndex: Double,
+      lod: Unit,
+      babylonInternalFormat: Double
+    ): Unit = js.native
+    def _uploadDataToTextureDirectly(
+      texture: InternalTexture,
+      imageData: ArrayBufferView,
+      faceIndex: Double,
+      lod: Unit,
+      babylonInternalFormat: Double,
+      useTextureWidthAndHeight: Boolean
+    ): Unit = js.native
+    def _uploadDataToTextureDirectly(
+      texture: InternalTexture,
+      imageData: ArrayBufferView,
+      faceIndex: Double,
+      lod: Unit,
+      babylonInternalFormat: Unit,
+      useTextureWidthAndHeight: Boolean
+    ): Unit = js.native
+    def _uploadDataToTextureDirectly(texture: InternalTexture, imageData: ArrayBufferView, faceIndex: Unit, lod: Double): Unit = js.native
+    def _uploadDataToTextureDirectly(
+      texture: InternalTexture,
+      imageData: ArrayBufferView,
+      faceIndex: Unit,
+      lod: Double,
+      babylonInternalFormat: Double
+    ): Unit = js.native
+    def _uploadDataToTextureDirectly(
+      texture: InternalTexture,
+      imageData: ArrayBufferView,
+      faceIndex: Unit,
+      lod: Double,
+      babylonInternalFormat: Double,
+      useTextureWidthAndHeight: Boolean
+    ): Unit = js.native
+    def _uploadDataToTextureDirectly(
+      texture: InternalTexture,
+      imageData: ArrayBufferView,
+      faceIndex: Unit,
+      lod: Double,
+      babylonInternalFormat: Unit,
+      useTextureWidthAndHeight: Boolean
+    ): Unit = js.native
+    def _uploadDataToTextureDirectly(
+      texture: InternalTexture,
+      imageData: ArrayBufferView,
+      faceIndex: Unit,
+      lod: Unit,
+      babylonInternalFormat: Double
+    ): Unit = js.native
+    def _uploadDataToTextureDirectly(
+      texture: InternalTexture,
+      imageData: ArrayBufferView,
+      faceIndex: Unit,
+      lod: Unit,
+      babylonInternalFormat: Double,
+      useTextureWidthAndHeight: Boolean
+    ): Unit = js.native
+    def _uploadDataToTextureDirectly(
+      texture: InternalTexture,
+      imageData: ArrayBufferView,
+      faceIndex: Unit,
+      lod: Unit,
+      babylonInternalFormat: Unit,
+      useTextureWidthAndHeight: Boolean
+    ): Unit = js.native
     
-    var _vaoRecordInProgress: js.Any = js.native
+    /* private */ var _vaoRecordInProgress: js.Any = js.native
     
-    var _vertexAttribArraysEnabled: js.Any = js.native
+    /* private */ var _vertexAttribArraysEnabled: js.Any = js.native
     
-    var _vertexAttribPointer: js.Any = js.native
+    /* private */ var _vertexAttribPointer: js.Any = js.native
     
     /** @hidden */
     var _videoTextureSupported: Boolean = js.native
@@ -929,12 +907,12 @@ object thinEngineMod {
     /** @hidden */
     def _viewport(x: Double, y: Double, width: Double, height: Double): Unit = js.native
     
-    var _viewportCached: js.Any = js.native
+    /* private */ var _viewportCached: js.Any = js.native
     
     /** @hidden */
     var _webGLVersion: Double = js.native
     
-    var _windowIsBackground: Boolean = js.native
+    /* protected */ var _windowIsBackground: Boolean = js.native
     
     /** @hidden */
     var _workingCanvas: Nullable[HTMLCanvasElement | OffscreenCanvas] = js.native
@@ -987,7 +965,7 @@ object thinEngineMod {
       */
     def bindAttachments(attachments: js.Array[Double]): Unit = js.native
     
-    var bindBuffer: js.Any = js.native
+    /* private */ var bindBuffer: js.Any = js.native
     
     /**
       * Bind a list of vertex buffers to the webGL context
@@ -1110,84 +1088,6 @@ object thinEngineMod {
       */
     def clearInternalTexturesCache(): Unit = js.native
     
-    def createCubeTexture(
-      rootUrl: String,
-      scene: Nullable[Scene],
-      files: Nullable[js.Array[String]],
-      noMipmap: js.UndefOr[scala.Nothing],
-      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
-      onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
-        ],
-      format: js.UndefOr[scala.Nothing],
-      forcedExtension: js.Any,
-      createPolynomials: Boolean,
-      lodScale: Double,
-      lodOffset: Double,
-      fallback: Nullable[InternalTexture],
-      loaderOptions: js.Any
-    ): InternalTexture = js.native
-    def createCubeTexture(
-      rootUrl: String,
-      scene: Nullable[Scene],
-      files: Nullable[js.Array[String]],
-      noMipmap: js.UndefOr[scala.Nothing],
-      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
-      onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
-        ],
-      format: Double,
-      forcedExtension: js.Any,
-      createPolynomials: Boolean,
-      lodScale: Double,
-      lodOffset: Double,
-      fallback: Nullable[InternalTexture],
-      loaderOptions: js.Any
-    ): InternalTexture = js.native
-    def createCubeTexture(
-      rootUrl: String,
-      scene: Nullable[Scene],
-      files: Nullable[js.Array[String]],
-      noMipmap: Boolean,
-      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
-      onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
-        ],
-      format: js.UndefOr[scala.Nothing],
-      forcedExtension: js.Any
-    ): InternalTexture = js.native
-    def createCubeTexture(
-      rootUrl: String,
-      scene: Nullable[Scene],
-      files: Nullable[js.Array[String]],
-      noMipmap: Boolean,
-      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
-      onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
-        ],
-      format: js.UndefOr[scala.Nothing],
-      forcedExtension: js.Any,
-      createPolynomials: Boolean,
-      lodScale: Double,
-      lodOffset: Double
-    ): InternalTexture = js.native
-    def createCubeTexture(
-      rootUrl: String,
-      scene: Nullable[Scene],
-      files: Nullable[js.Array[String]],
-      noMipmap: Boolean,
-      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
-      onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
-        ],
-      format: js.UndefOr[scala.Nothing],
-      forcedExtension: js.Any,
-      createPolynomials: Boolean,
-      lodScale: Double,
-      lodOffset: Double,
-      fallback: Nullable[InternalTexture],
-      loaderOptions: js.Any
-    ): InternalTexture = js.native
     /**
       * Creates a cube texture
       * @param rootUrl defines the url where the files to load is located
@@ -1205,9 +1105,9 @@ object thinEngineMod {
       scene: Nullable[Scene],
       files: Nullable[js.Array[String]],
       noMipmap: Boolean,
-      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
+      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
         ],
       format: Double,
       forcedExtension: js.Any
@@ -1232,9 +1132,9 @@ object thinEngineMod {
       scene: Nullable[Scene],
       files: Nullable[js.Array[String]],
       noMipmap: Boolean,
-      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
+      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
         ],
       format: Double,
       forcedExtension: js.Any,
@@ -1264,11 +1164,89 @@ object thinEngineMod {
       scene: Nullable[Scene],
       files: Nullable[js.Array[String]],
       noMipmap: Boolean,
-      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
+      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
         ],
       format: Double,
+      forcedExtension: js.Any,
+      createPolynomials: Boolean,
+      lodScale: Double,
+      lodOffset: Double,
+      fallback: Nullable[InternalTexture],
+      loaderOptions: js.Any
+    ): InternalTexture = js.native
+    def createCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      files: Nullable[js.Array[String]],
+      noMipmap: Boolean,
+      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ],
+      format: Unit,
+      forcedExtension: js.Any
+    ): InternalTexture = js.native
+    def createCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      files: Nullable[js.Array[String]],
+      noMipmap: Boolean,
+      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ],
+      format: Unit,
+      forcedExtension: js.Any,
+      createPolynomials: Boolean,
+      lodScale: Double,
+      lodOffset: Double
+    ): InternalTexture = js.native
+    def createCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      files: Nullable[js.Array[String]],
+      noMipmap: Boolean,
+      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ],
+      format: Unit,
+      forcedExtension: js.Any,
+      createPolynomials: Boolean,
+      lodScale: Double,
+      lodOffset: Double,
+      fallback: Nullable[InternalTexture],
+      loaderOptions: js.Any
+    ): InternalTexture = js.native
+    def createCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      files: Nullable[js.Array[String]],
+      noMipmap: Unit,
+      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ],
+      format: Double,
+      forcedExtension: js.Any,
+      createPolynomials: Boolean,
+      lodScale: Double,
+      lodOffset: Double,
+      fallback: Nullable[InternalTexture],
+      loaderOptions: js.Any
+    ): InternalTexture = js.native
+    def createCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      files: Nullable[js.Array[String]],
+      noMipmap: Unit,
+      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ],
+      format: Unit,
       forcedExtension: js.Any,
       createPolynomials: Boolean,
       lodScale: Double,
@@ -1379,40 +1357,8 @@ object thinEngineMod {
       scene: Nullable[Scene],
       lodScale: Double,
       lodOffset: Double,
-      onLoad: js.UndefOr[Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]]],
-      onError: js.UndefOr[Nullable[js.Function2[js.UndefOr[String], js.UndefOr[_], Unit]]],
-      format: js.UndefOr[scala.Nothing],
-      forcedExtension: js.UndefOr[scala.Nothing],
-      createPolynomials: Boolean
-    ): InternalTexture = js.native
-    def createPrefilteredCubeTexture(
-      rootUrl: String,
-      scene: Nullable[Scene],
-      lodScale: Double,
-      lodOffset: Double,
-      onLoad: js.UndefOr[Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]]],
-      onError: js.UndefOr[Nullable[js.Function2[js.UndefOr[String], js.UndefOr[_], Unit]]],
-      format: js.UndefOr[scala.Nothing],
-      forcedExtension: js.Any
-    ): InternalTexture = js.native
-    def createPrefilteredCubeTexture(
-      rootUrl: String,
-      scene: Nullable[Scene],
-      lodScale: Double,
-      lodOffset: Double,
-      onLoad: js.UndefOr[Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]]],
-      onError: js.UndefOr[Nullable[js.Function2[js.UndefOr[String], js.UndefOr[_], Unit]]],
-      format: js.UndefOr[scala.Nothing],
-      forcedExtension: js.Any,
-      createPolynomials: Boolean
-    ): InternalTexture = js.native
-    def createPrefilteredCubeTexture(
-      rootUrl: String,
-      scene: Nullable[Scene],
-      lodScale: Double,
-      lodOffset: Double,
-      onLoad: js.UndefOr[Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]]],
-      onError: js.UndefOr[Nullable[js.Function2[js.UndefOr[String], js.UndefOr[_], Unit]]],
+      onLoad: Unit,
+      onError: Unit,
       format: Double
     ): InternalTexture = js.native
     def createPrefilteredCubeTexture(
@@ -1420,19 +1366,8 @@ object thinEngineMod {
       scene: Nullable[Scene],
       lodScale: Double,
       lodOffset: Double,
-      onLoad: js.UndefOr[Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]]],
-      onError: js.UndefOr[Nullable[js.Function2[js.UndefOr[String], js.UndefOr[_], Unit]]],
-      format: Double,
-      forcedExtension: js.UndefOr[scala.Nothing],
-      createPolynomials: Boolean
-    ): InternalTexture = js.native
-    def createPrefilteredCubeTexture(
-      rootUrl: String,
-      scene: Nullable[Scene],
-      lodScale: Double,
-      lodOffset: Double,
-      onLoad: js.UndefOr[Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]]],
-      onError: js.UndefOr[Nullable[js.Function2[js.UndefOr[String], js.UndefOr[_], Unit]]],
+      onLoad: Unit,
+      onError: Unit,
       format: Double,
       forcedExtension: js.Any
     ): InternalTexture = js.native
@@ -1441,8 +1376,8 @@ object thinEngineMod {
       scene: Nullable[Scene],
       lodScale: Double,
       lodOffset: Double,
-      onLoad: js.UndefOr[Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]]],
-      onError: js.UndefOr[Nullable[js.Function2[js.UndefOr[String], js.UndefOr[_], Unit]]],
+      onLoad: Unit,
+      onError: Unit,
       format: Double,
       forcedExtension: js.Any,
       createPolynomials: Boolean
@@ -1452,8 +1387,140 @@ object thinEngineMod {
       scene: Nullable[Scene],
       lodScale: Double,
       lodOffset: Double,
-      onLoad: js.UndefOr[Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]]],
-      onError: Nullable[js.Function2[js.UndefOr[String], js.UndefOr[_], Unit]]
+      onLoad: Unit,
+      onError: Unit,
+      format: Double,
+      forcedExtension: Unit,
+      createPolynomials: Boolean
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Unit,
+      onError: Unit,
+      format: Unit,
+      forcedExtension: js.Any
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Unit,
+      onError: Unit,
+      format: Unit,
+      forcedExtension: js.Any,
+      createPolynomials: Boolean
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Unit,
+      onError: Unit,
+      format: Unit,
+      forcedExtension: Unit,
+      createPolynomials: Boolean
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Unit,
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ]
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Unit,
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ],
+      format: Double
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Unit,
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ],
+      format: Double,
+      forcedExtension: js.Any
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Unit,
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ],
+      format: Double,
+      forcedExtension: js.Any,
+      createPolynomials: Boolean
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Unit,
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ],
+      format: Double,
+      forcedExtension: Unit,
+      createPolynomials: Boolean
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Unit,
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ],
+      format: Unit,
+      forcedExtension: js.Any
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Unit,
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ],
+      format: Unit,
+      forcedExtension: js.Any,
+      createPolynomials: Boolean
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Unit,
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ],
+      format: Unit,
+      forcedExtension: Unit,
+      createPolynomials: Boolean
     ): InternalTexture = js.native
     def createPrefilteredCubeTexture(
       rootUrl: String,
@@ -1461,6 +1528,176 @@ object thinEngineMod {
       lodScale: Double,
       lodOffset: Double,
       onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]]
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+      onError: Unit,
+      format: Double
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+      onError: Unit,
+      format: Double,
+      forcedExtension: js.Any
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+      onError: Unit,
+      format: Double,
+      forcedExtension: js.Any,
+      createPolynomials: Boolean
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+      onError: Unit,
+      format: Double,
+      forcedExtension: Unit,
+      createPolynomials: Boolean
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+      onError: Unit,
+      format: Unit,
+      forcedExtension: js.Any
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+      onError: Unit,
+      format: Unit,
+      forcedExtension: js.Any,
+      createPolynomials: Boolean
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+      onError: Unit,
+      format: Unit,
+      forcedExtension: Unit,
+      createPolynomials: Boolean
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ]
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ],
+      format: Double
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ],
+      format: Double,
+      forcedExtension: js.Any
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ],
+      format: Double,
+      forcedExtension: js.Any,
+      createPolynomials: Boolean
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ],
+      format: Double,
+      forcedExtension: Unit,
+      createPolynomials: Boolean
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ],
+      format: Unit,
+      forcedExtension: js.Any
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ],
+      format: Unit,
+      forcedExtension: js.Any,
+      createPolynomials: Boolean
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ],
+      format: Unit,
+      forcedExtension: Unit,
+      createPolynomials: Boolean
     ): InternalTexture = js.native
     
     /**
@@ -1513,7 +1750,7 @@ object thinEngineMod {
         ],
       onLoad: Nullable[js.Function0[Unit]],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
         ]
     ): InternalTexture = js.native
     /**
@@ -1545,7 +1782,7 @@ object thinEngineMod {
         ],
       onLoad: Nullable[js.Function0[Unit]],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
         ],
       samplingMode: Double,
       invertY: Boolean
@@ -1565,7 +1802,7 @@ object thinEngineMod {
       pipelineContext: IPipelineContext,
       vertexCode: String,
       fragmentCode: String,
-      context: js.UndefOr[scala.Nothing],
+      context: Unit,
       transformFeedbackVaryings: Nullable[js.Array[String]]
     ): WebGLProgram = js.native
     def createRawShaderProgram(
@@ -1700,7 +1937,7 @@ object thinEngineMod {
       vertexCode: String,
       fragmentCode: String,
       defines: Nullable[String],
-      context: js.UndefOr[scala.Nothing],
+      context: Unit,
       transformFeedbackVaryings: Nullable[js.Array[String]]
     ): WebGLProgram = js.native
     def createShaderProgram(
@@ -1747,7 +1984,7 @@ object thinEngineMod {
       scene: Nullable[ISceneLike],
       samplingMode: js.UndefOr[Double],
       onLoad: js.UndefOr[Nullable[js.Function0[Unit]]],
-      onError: js.UndefOr[Nullable[js.Function2[/* message */ String, /* exception */ _, Unit]]],
+      onError: js.UndefOr[Nullable[js.Function2[/* message */ String, /* exception */ js.Any, Unit]]],
       buffer: js.UndefOr[
           Nullable[String | ArrayBuffer | ArrayBufferView | HTMLImageElement | Blob | ImageBitmap]
         ],
@@ -2362,9 +2599,9 @@ object thinEngineMod {
       * @param requiredHeight defines the height required for rendering. If not provided the rendering canvas' height is used
       */
     def setViewport(viewport: IViewportLike): Unit = js.native
-    def setViewport(viewport: IViewportLike, requiredWidth: js.UndefOr[scala.Nothing], requiredHeight: Double): Unit = js.native
     def setViewport(viewport: IViewportLike, requiredWidth: Double): Unit = js.native
     def setViewport(viewport: IViewportLike, requiredWidth: Double, requiredHeight: Double): Unit = js.native
+    def setViewport(viewport: IViewportLike, requiredWidth: Unit, requiredHeight: Double): Unit = js.native
     
     /**
       * Gets the stencil state manager
@@ -2391,13 +2628,9 @@ object thinEngineMod {
       * @param onBeforeUnbind defines a function which will be called before the effective unbind
       */
     def unBindFramebuffer(texture: InternalTexture): Unit = js.native
-    def unBindFramebuffer(
-      texture: InternalTexture,
-      disableGenerateMipMaps: js.UndefOr[scala.Nothing],
-      onBeforeUnbind: js.Function0[Unit]
-    ): Unit = js.native
     def unBindFramebuffer(texture: InternalTexture, disableGenerateMipMaps: Boolean): Unit = js.native
     def unBindFramebuffer(texture: InternalTexture, disableGenerateMipMaps: Boolean, onBeforeUnbind: js.Function0[Unit]): Unit = js.native
+    def unBindFramebuffer(texture: InternalTexture, disableGenerateMipMaps: Unit, onBeforeUnbind: js.Function0[Unit]): Unit = js.native
     
     /**
       * Unbind a list of render target textures from the webGL context
@@ -2481,14 +2714,9 @@ object thinEngineMod {
       * @param byteLength the byte length of the data
       */
     def updateDynamicVertexBuffer(vertexBuffer: DataBuffer, data: DataArray): Unit = js.native
-    def updateDynamicVertexBuffer(
-      vertexBuffer: DataBuffer,
-      data: DataArray,
-      byteOffset: js.UndefOr[scala.Nothing],
-      byteLength: Double
-    ): Unit = js.native
     def updateDynamicVertexBuffer(vertexBuffer: DataBuffer, data: DataArray, byteOffset: Double): Unit = js.native
     def updateDynamicVertexBuffer(vertexBuffer: DataBuffer, data: DataArray, byteOffset: Double, byteLength: Double): Unit = js.native
+    def updateDynamicVertexBuffer(vertexBuffer: DataBuffer, data: DataArray, byteOffset: Unit, byteLength: Double): Unit = js.native
     
     /**
       * Update the sample count for a given multiple render target texture
@@ -2660,16 +2888,6 @@ object thinEngineMod {
       yOffset: Double,
       width: Double,
       height: Double,
-      faceIndex: js.UndefOr[scala.Nothing],
-      lod: Double
-    ): Unit = js.native
-    def updateTextureData(
-      texture: InternalTexture,
-      imageData: ArrayBufferView,
-      xOffset: Double,
-      yOffset: Double,
-      width: Double,
-      height: Double,
       faceIndex: Double
     ): Unit = js.native
     def updateTextureData(
@@ -2680,6 +2898,16 @@ object thinEngineMod {
       width: Double,
       height: Double,
       faceIndex: Double,
+      lod: Double
+    ): Unit = js.native
+    def updateTextureData(
+      texture: InternalTexture,
+      imageData: ArrayBufferView,
+      xOffset: Double,
+      yOffset: Double,
+      width: Double,
+      height: Double,
+      faceIndex: Unit,
       lod: Double
     ): Unit = js.native
     
@@ -2700,13 +2928,14 @@ object thinEngineMod {
       * @param wrapR defines the texture wrap mode of the r coordinates
       */
     def updateTextureWrappingMode(texture: InternalTexture, wrapU: Nullable[Double]): Unit = js.native
+    def updateTextureWrappingMode(texture: InternalTexture, wrapU: Nullable[Double], wrapV: Unit, wrapR: Nullable[Double]): Unit = js.native
+    def updateTextureWrappingMode(texture: InternalTexture, wrapU: Nullable[Double], wrapV: Nullable[Double]): Unit = js.native
     def updateTextureWrappingMode(
       texture: InternalTexture,
       wrapU: Nullable[Double],
-      wrapV: js.UndefOr[Nullable[Double]],
+      wrapV: Nullable[Double],
       wrapR: Nullable[Double]
     ): Unit = js.native
-    def updateTextureWrappingMode(texture: InternalTexture, wrapU: Nullable[Double], wrapV: Nullable[Double]): Unit = js.native
     
     /**
       * Update an existing uniform buffer
@@ -2717,9 +2946,9 @@ object thinEngineMod {
       * @param count defines the size of the data to update
       */
     def updateUniformBuffer(uniformBuffer: DataBuffer, elements: FloatArray): Unit = js.native
-    def updateUniformBuffer(uniformBuffer: DataBuffer, elements: FloatArray, offset: js.UndefOr[scala.Nothing], count: Double): Unit = js.native
     def updateUniformBuffer(uniformBuffer: DataBuffer, elements: FloatArray, offset: Double): Unit = js.native
     def updateUniformBuffer(uniformBuffer: DataBuffer, elements: FloatArray, offset: Double, count: Double): Unit = js.native
+    def updateUniformBuffer(uniformBuffer: DataBuffer, elements: FloatArray, offset: Unit, count: Double): Unit = js.native
     
     /**
       * Update a video texture
@@ -2763,9 +2992,7 @@ object thinEngineMod {
       * @param x Number to start search from.
       * @return Next highest power of two.
       */
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine.CeilingPOT")
-    @js.native
-    def CeilingPOT(x: Double): Double = js.native
+    inline def CeilingPOT(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("CeilingPOT")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Gets or sets the epsilon value used by collision engine
@@ -2773,24 +3000,20 @@ object thinEngineMod {
     @JSImport("babylonjs/Engines/thinEngine", "ThinEngine.CollisionsEpsilon")
     @js.native
     def CollisionsEpsilon: Double = js.native
-    @scala.inline
-    def CollisionsEpsilon_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CollisionsEpsilon")(x.asInstanceOf[js.Any])
+    inline def CollisionsEpsilon_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CollisionsEpsilon")(x.asInstanceOf[js.Any])
     
     /** Use this array to turn off some WebGL2 features on known buggy browsers version */
     @JSImport("babylonjs/Engines/thinEngine", "ThinEngine.ExceptionList")
     @js.native
     def ExceptionList: js.Array[Capture | CaptureConstraint] = js.native
-    @scala.inline
-    def ExceptionList_=(x: js.Array[Capture | CaptureConstraint]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExceptionList")(x.asInstanceOf[js.Any])
+    inline def ExceptionList_=(x: js.Array[Capture | CaptureConstraint]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExceptionList")(x.asInstanceOf[js.Any])
     
     /**
       * Find the next lowest power of two.
       * @param x Number to start search from.
       * @return Next lowest power of two.
       */
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine.FloorPOT")
-    @js.native
-    def FloorPOT(x: Double): Double = js.native
+    inline def FloorPOT(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("FloorPOT")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Get the closest exponent of two
@@ -2799,21 +3022,15 @@ object thinEngineMod {
       * @param mode defines how to define the closest value
       * @returns closest exponent of two of the given value
       */
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine.GetExponentOfTwo")
-    @js.native
-    def GetExponentOfTwo(value: Double, max: Double): Double = js.native
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine.GetExponentOfTwo")
-    @js.native
-    def GetExponentOfTwo(value: Double, max: Double, mode: Double): Double = js.native
+    inline def GetExponentOfTwo(value: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("GetExponentOfTwo")(value.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def GetExponentOfTwo(value: Double, max: Double, mode: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("GetExponentOfTwo")(value.asInstanceOf[js.Any], max.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Find the nearest power of two.
       * @param x Number to start search from.
       * @return Next nearest power of two.
       */
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine.NearestPOT")
-    @js.native
-    def NearestPOT(x: Double): Double = js.native
+    inline def NearestPOT(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("NearestPOT")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Queue a new function into the requested animation frame pool (ie. this function will be executed byt the browser for the next frame)
@@ -2821,19 +3038,11 @@ object thinEngineMod {
       * @param requester - the object that will request the next frame. Falls back to window.
       * @returns frame number
       */
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine.QueueNewFrame")
-    @js.native
-    def QueueNewFrame(func: js.Function0[Unit]): Double = js.native
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine.QueueNewFrame")
-    @js.native
-    def QueueNewFrame(func: js.Function0[Unit], requester: js.Any): Double = js.native
+    inline def QueueNewFrame(func: js.Function0[Unit]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("QueueNewFrame")(func.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def QueueNewFrame(func: js.Function0[Unit], requester: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("QueueNewFrame")(func.asInstanceOf[js.Any], requester.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine._ConcatenateShader")
-    @js.native
-    def _ConcatenateShader(source: String, defines: Nullable[String]): String = js.native
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine._ConcatenateShader")
-    @js.native
-    def _ConcatenateShader(source: String, defines: Nullable[String], shaderVersion: String): String = js.native
+    inline def _ConcatenateShader(source: String, defines: Nullable[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("_ConcatenateShader")(source.asInstanceOf[js.Any], defines.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def _ConcatenateShader(source: String, defines: Nullable[String], shaderVersion: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("_ConcatenateShader")(source.asInstanceOf[js.Any], defines.asInstanceOf[js.Any], shaderVersion.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Loads a file from a url
@@ -2846,172 +3055,60 @@ object thinEngineMod {
       * @returns a file request object
       * @hidden
       */
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine._FileToolsLoadFile")
-    @js.native
-    def _FileToolsLoadFile(
+    inline def _FileToolsLoadFile(
       url: String,
       onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit]
-    ): IFileRequest = js.native
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine._FileToolsLoadFile")
-    @js.native
-    def _FileToolsLoadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      offlineProvider: js.UndefOr[scala.Nothing],
-      useArrayBuffer: js.UndefOr[scala.Nothing],
-      onError: js.Function2[
-          /* request */ js.UndefOr[WebRequest], 
-          /* exception */ js.UndefOr[LoadFileError], 
-          Unit
-        ]
-    ): IFileRequest = js.native
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine._FileToolsLoadFile")
-    @js.native
-    def _FileToolsLoadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      offlineProvider: js.UndefOr[scala.Nothing],
-      useArrayBuffer: Boolean
-    ): IFileRequest = js.native
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine._FileToolsLoadFile")
-    @js.native
-    def _FileToolsLoadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      offlineProvider: js.UndefOr[scala.Nothing],
-      useArrayBuffer: Boolean,
-      onError: js.Function2[
-          /* request */ js.UndefOr[WebRequest], 
-          /* exception */ js.UndefOr[LoadFileError], 
-          Unit
-        ]
-    ): IFileRequest = js.native
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine._FileToolsLoadFile")
-    @js.native
-    def _FileToolsLoadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      offlineProvider: IOfflineProvider
-    ): IFileRequest = js.native
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine._FileToolsLoadFile")
-    @js.native
-    def _FileToolsLoadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      offlineProvider: IOfflineProvider,
-      useArrayBuffer: js.UndefOr[scala.Nothing],
-      onError: js.Function2[
-          /* request */ js.UndefOr[WebRequest], 
-          /* exception */ js.UndefOr[LoadFileError], 
-          Unit
-        ]
-    ): IFileRequest = js.native
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine._FileToolsLoadFile")
-    @js.native
-    def _FileToolsLoadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      offlineProvider: IOfflineProvider,
-      useArrayBuffer: Boolean
-    ): IFileRequest = js.native
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine._FileToolsLoadFile")
-    @js.native
-    def _FileToolsLoadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      offlineProvider: IOfflineProvider,
-      useArrayBuffer: Boolean,
-      onError: js.Function2[
-          /* request */ js.UndefOr[WebRequest], 
-          /* exception */ js.UndefOr[LoadFileError], 
-          Unit
-        ]
-    ): IFileRequest = js.native
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine._FileToolsLoadFile")
-    @js.native
-    def _FileToolsLoadFile(
+    ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
+    inline def _FileToolsLoadFile(
       url: String,
       onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit]
-    ): IFileRequest = js.native
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine._FileToolsLoadFile")
-    @js.native
-    def _FileToolsLoadFile(
+    ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
+    inline def _FileToolsLoadFile(
       url: String,
       onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-      offlineProvider: js.UndefOr[scala.Nothing],
-      useArrayBuffer: js.UndefOr[scala.Nothing],
-      onError: js.Function2[
-          /* request */ js.UndefOr[WebRequest], 
-          /* exception */ js.UndefOr[LoadFileError], 
-          Unit
-        ]
-    ): IFileRequest = js.native
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine._FileToolsLoadFile")
-    @js.native
-    def _FileToolsLoadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-      offlineProvider: js.UndefOr[scala.Nothing],
+      offlineProvider: Unit,
       useArrayBuffer: Boolean
-    ): IFileRequest = js.native
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine._FileToolsLoadFile")
-    @js.native
-    def _FileToolsLoadFile(
+    ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
+    inline def _FileToolsLoadFile(
       url: String,
       onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-      offlineProvider: js.UndefOr[scala.Nothing],
+      offlineProvider: Unit,
       useArrayBuffer: Boolean,
       onError: js.Function2[
           /* request */ js.UndefOr[WebRequest], 
           /* exception */ js.UndefOr[LoadFileError], 
           Unit
         ]
-    ): IFileRequest = js.native
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine._FileToolsLoadFile")
-    @js.native
-    def _FileToolsLoadFile(
+    ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
+    inline def _FileToolsLoadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
+      offlineProvider: Unit,
+      useArrayBuffer: Unit,
+      onError: js.Function2[
+          /* request */ js.UndefOr[WebRequest], 
+          /* exception */ js.UndefOr[LoadFileError], 
+          Unit
+        ]
+    ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
+    inline def _FileToolsLoadFile(
       url: String,
       onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
       offlineProvider: IOfflineProvider
-    ): IFileRequest = js.native
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine._FileToolsLoadFile")
-    @js.native
-    def _FileToolsLoadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-      offlineProvider: IOfflineProvider,
-      useArrayBuffer: js.UndefOr[scala.Nothing],
-      onError: js.Function2[
-          /* request */ js.UndefOr[WebRequest], 
-          /* exception */ js.UndefOr[LoadFileError], 
-          Unit
-        ]
-    ): IFileRequest = js.native
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine._FileToolsLoadFile")
-    @js.native
-    def _FileToolsLoadFile(
+    ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
+    inline def _FileToolsLoadFile(
       url: String,
       onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
       offlineProvider: IOfflineProvider,
       useArrayBuffer: Boolean
-    ): IFileRequest = js.native
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine._FileToolsLoadFile")
-    @js.native
-    def _FileToolsLoadFile(
+    ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
+    inline def _FileToolsLoadFile(
       url: String,
       onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
@@ -3022,7 +3119,87 @@ object thinEngineMod {
           /* exception */ js.UndefOr[LoadFileError], 
           Unit
         ]
-    ): IFileRequest = js.native
+    ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
+    inline def _FileToolsLoadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
+      offlineProvider: IOfflineProvider,
+      useArrayBuffer: Unit,
+      onError: js.Function2[
+          /* request */ js.UndefOr[WebRequest], 
+          /* exception */ js.UndefOr[LoadFileError], 
+          Unit
+        ]
+    ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
+    inline def _FileToolsLoadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: Unit,
+      offlineProvider: Unit,
+      useArrayBuffer: Boolean
+    ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
+    inline def _FileToolsLoadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: Unit,
+      offlineProvider: Unit,
+      useArrayBuffer: Boolean,
+      onError: js.Function2[
+          /* request */ js.UndefOr[WebRequest], 
+          /* exception */ js.UndefOr[LoadFileError], 
+          Unit
+        ]
+    ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
+    inline def _FileToolsLoadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: Unit,
+      offlineProvider: Unit,
+      useArrayBuffer: Unit,
+      onError: js.Function2[
+          /* request */ js.UndefOr[WebRequest], 
+          /* exception */ js.UndefOr[LoadFileError], 
+          Unit
+        ]
+    ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
+    inline def _FileToolsLoadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: Unit,
+      offlineProvider: IOfflineProvider
+    ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
+    inline def _FileToolsLoadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: Unit,
+      offlineProvider: IOfflineProvider,
+      useArrayBuffer: Boolean
+    ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
+    inline def _FileToolsLoadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: Unit,
+      offlineProvider: IOfflineProvider,
+      useArrayBuffer: Boolean,
+      onError: js.Function2[
+          /* request */ js.UndefOr[WebRequest], 
+          /* exception */ js.UndefOr[LoadFileError], 
+          Unit
+        ]
+    ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
+    inline def _FileToolsLoadFile(
+      url: String,
+      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+      onProgress: Unit,
+      offlineProvider: IOfflineProvider,
+      useArrayBuffer: Unit,
+      onError: js.Function2[
+          /* request */ js.UndefOr[WebRequest], 
+          /* exception */ js.UndefOr[LoadFileError], 
+          Unit
+        ]
+    ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
     
     /**
       * Loads an image as an HTMLImageElement.
@@ -3034,292 +3211,240 @@ object thinEngineMod {
       * @returns the HTMLImageElement of the loaded image
       * @hidden
       */
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine._FileToolsLoadImage")
-    @js.native
-    def _FileToolsLoadImage(
+    inline def _FileToolsLoadImage(
       input: String,
       onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
       onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit],
       offlineProvider: Nullable[IOfflineProvider]
-    ): Nullable[HTMLImageElement] = js.native
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine._FileToolsLoadImage")
-    @js.native
-    def _FileToolsLoadImage(
+    ): Nullable[HTMLImageElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadImage")(input.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any])).asInstanceOf[Nullable[HTMLImageElement]]
+    inline def _FileToolsLoadImage(
       input: String,
       onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
       onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit],
       offlineProvider: Nullable[IOfflineProvider],
       mimeType: String
-    ): Nullable[HTMLImageElement] = js.native
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine._FileToolsLoadImage")
-    @js.native
-    def _FileToolsLoadImage(
+    ): Nullable[HTMLImageElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadImage")(input.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[Nullable[HTMLImageElement]]
+    inline def _FileToolsLoadImage(
       input: ArrayBufferView,
       onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
       onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit],
       offlineProvider: Nullable[IOfflineProvider]
-    ): Nullable[HTMLImageElement] = js.native
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine._FileToolsLoadImage")
-    @js.native
-    def _FileToolsLoadImage(
+    ): Nullable[HTMLImageElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadImage")(input.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any])).asInstanceOf[Nullable[HTMLImageElement]]
+    inline def _FileToolsLoadImage(
       input: ArrayBufferView,
       onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
       onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit],
       offlineProvider: Nullable[IOfflineProvider],
       mimeType: String
-    ): Nullable[HTMLImageElement] = js.native
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine._FileToolsLoadImage")
-    @js.native
-    def _FileToolsLoadImage(
+    ): Nullable[HTMLImageElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadImage")(input.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[Nullable[HTMLImageElement]]
+    inline def _FileToolsLoadImage(
       input: ArrayBuffer,
       onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
       onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit],
       offlineProvider: Nullable[IOfflineProvider]
-    ): Nullable[HTMLImageElement] = js.native
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine._FileToolsLoadImage")
-    @js.native
-    def _FileToolsLoadImage(
+    ): Nullable[HTMLImageElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadImage")(input.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any])).asInstanceOf[Nullable[HTMLImageElement]]
+    inline def _FileToolsLoadImage(
       input: ArrayBuffer,
       onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
       onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit],
       offlineProvider: Nullable[IOfflineProvider],
       mimeType: String
-    ): Nullable[HTMLImageElement] = js.native
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine._FileToolsLoadImage")
-    @js.native
-    def _FileToolsLoadImage(
+    ): Nullable[HTMLImageElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadImage")(input.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[Nullable[HTMLImageElement]]
+    inline def _FileToolsLoadImage(
       input: Blob,
       onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
       onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit],
       offlineProvider: Nullable[IOfflineProvider]
-    ): Nullable[HTMLImageElement] = js.native
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine._FileToolsLoadImage")
-    @js.native
-    def _FileToolsLoadImage(
+    ): Nullable[HTMLImageElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadImage")(input.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any])).asInstanceOf[Nullable[HTMLImageElement]]
+    inline def _FileToolsLoadImage(
       input: Blob,
       onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
       onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit],
       offlineProvider: Nullable[IOfflineProvider],
       mimeType: String
-    ): Nullable[HTMLImageElement] = js.native
+    ): Nullable[HTMLImageElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadImage")(input.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[Nullable[HTMLImageElement]]
     
     @JSImport("babylonjs/Engines/thinEngine", "ThinEngine._HasMajorPerformanceCaveat")
     @js.native
     def _HasMajorPerformanceCaveat: js.Any = js.native
-    @scala.inline
-    def _HasMajorPerformanceCaveat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_HasMajorPerformanceCaveat")(x.asInstanceOf[js.Any])
+    inline def _HasMajorPerformanceCaveat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_HasMajorPerformanceCaveat")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Engines/thinEngine", "ThinEngine._IsSupported")
     @js.native
     def _IsSupported: js.Any = js.native
-    @scala.inline
-    def _IsSupported_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsSupported")(x.asInstanceOf[js.Any])
+    inline def _IsSupported_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsSupported")(x.asInstanceOf[js.Any])
     
     /** @hidden */
     @JSImport("babylonjs/Engines/thinEngine", "ThinEngine._TextureLoaders")
     @js.native
     def _TextureLoaders: js.Array[IInternalTextureLoader] = js.native
-    @scala.inline
-    def _TextureLoaders_=(x: js.Array[IInternalTextureLoader]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TextureLoaders")(x.asInstanceOf[js.Any])
+    inline def _TextureLoaders_=(x: js.Array[IInternalTextureLoader]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TextureLoaders")(x.asInstanceOf[js.Any])
     
     /**
       * Gets a boolean indicating if the engine can be instanciated (ie. if a webGL context can be found)
       * @returns true if the engine can be created
       * @ignorenaming
       */
-    @JSImport("babylonjs/Engines/thinEngine", "ThinEngine.isSupported")
-    @js.native
-    def isSupported(): Boolean = js.native
+    inline def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
   }
   
-  @js.native
-  trait EngineOptions extends WebGLContextAttributes {
+  trait EngineOptions
+    extends StObject
+       with WebGLContextAttributes {
     
     /**
       * Defines if webaudio should be initialized as well
       * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music
       */
-    var audioEngine: js.UndefOr[Boolean] = js.native
+    var audioEngine: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines if webvr should be enabled automatically
       * @see https://doc.babylonjs.com/how_to/webvr_camera
       */
-    var autoEnableWebVR: js.UndefOr[Boolean] = js.native
+    var autoEnableWebVR: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines if animations should run using a deterministic lock step
       * @see https://doc.babylonjs.com/babylon101/animations#deterministic-lockstep
       */
-    var deterministicLockstep: js.UndefOr[Boolean] = js.native
+    var deterministicLockstep: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines if webgl2 should be turned off even if supported
       * @see https://doc.babylonjs.com/features/webgl2
       */
-    var disableWebGL2Support: js.UndefOr[Boolean] = js.native
+    var disableWebGL2Support: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines that engine should ignore context lost events
       * If this event happens when this parameter is true, you will have to reload the page to restore rendering
       */
-    var doNotHandleContextLost: js.UndefOr[Boolean] = js.native
+    var doNotHandleContextLost: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines that engine should ignore modifying touch action attribute and style
       * If not handle, you might need to set it up on your side for expected touch devices behavior.
       */
-    var doNotHandleTouchAction: js.UndefOr[Boolean] = js.native
+    var doNotHandleTouchAction: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines if the engine should no exceed a specified device ratio
       * @see https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio
       */
-    var limitDeviceRatio: js.UndefOr[Double] = js.native
+    var limitDeviceRatio: js.UndefOr[Double] = js.undefined
     
     /** Defines the maximum steps to use with deterministic lock step mode */
-    var lockstepMaxSteps: js.UndefOr[Double] = js.native
+    var lockstepMaxSteps: js.UndefOr[Double] = js.undefined
     
     /** Defines the seconds between each deterministic lock step */
-    var timeStep: js.UndefOr[Double] = js.native
+    var timeStep: js.UndefOr[Double] = js.undefined
     
     /**
       * Defines that engine should compile shaders with high precision floats (if supported). True by default
       */
-    var useHighPrecisionFloats: js.UndefOr[Boolean] = js.native
+    var useHighPrecisionFloats: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Make the matrix computations to be performed in 64 bits instead of 32 bits. False by default
       */
-    var useHighPrecisionMatrix: js.UndefOr[Boolean] = js.native
+    var useHighPrecisionMatrix: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Make the canvas XR Compatible for XR sessions
       */
-    var xrCompatible: js.UndefOr[Boolean] = js.native
+    var xrCompatible: js.UndefOr[Boolean] = js.undefined
   }
   object EngineOptions {
     
-    @scala.inline
-    def apply(): EngineOptions = {
+    inline def apply(): EngineOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EngineOptions]
     }
     
-    @scala.inline
-    implicit class EngineOptionsMutableBuilder[Self <: EngineOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EngineOptions](x: Self) {
       
-      @scala.inline
-      def setAudioEngine(value: Boolean): Self = StObject.set(x, "audioEngine", value.asInstanceOf[js.Any])
+      inline def setAudioEngine(value: Boolean): Self = StObject.set(x, "audioEngine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudioEngineUndefined: Self = StObject.set(x, "audioEngine", js.undefined)
+      inline def setAudioEngineUndefined: Self = StObject.set(x, "audioEngine", js.undefined)
       
-      @scala.inline
-      def setAutoEnableWebVR(value: Boolean): Self = StObject.set(x, "autoEnableWebVR", value.asInstanceOf[js.Any])
+      inline def setAutoEnableWebVR(value: Boolean): Self = StObject.set(x, "autoEnableWebVR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoEnableWebVRUndefined: Self = StObject.set(x, "autoEnableWebVR", js.undefined)
+      inline def setAutoEnableWebVRUndefined: Self = StObject.set(x, "autoEnableWebVR", js.undefined)
       
-      @scala.inline
-      def setDeterministicLockstep(value: Boolean): Self = StObject.set(x, "deterministicLockstep", value.asInstanceOf[js.Any])
+      inline def setDeterministicLockstep(value: Boolean): Self = StObject.set(x, "deterministicLockstep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeterministicLockstepUndefined: Self = StObject.set(x, "deterministicLockstep", js.undefined)
+      inline def setDeterministicLockstepUndefined: Self = StObject.set(x, "deterministicLockstep", js.undefined)
       
-      @scala.inline
-      def setDisableWebGL2Support(value: Boolean): Self = StObject.set(x, "disableWebGL2Support", value.asInstanceOf[js.Any])
+      inline def setDisableWebGL2Support(value: Boolean): Self = StObject.set(x, "disableWebGL2Support", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableWebGL2SupportUndefined: Self = StObject.set(x, "disableWebGL2Support", js.undefined)
+      inline def setDisableWebGL2SupportUndefined: Self = StObject.set(x, "disableWebGL2Support", js.undefined)
       
-      @scala.inline
-      def setDoNotHandleContextLost(value: Boolean): Self = StObject.set(x, "doNotHandleContextLost", value.asInstanceOf[js.Any])
+      inline def setDoNotHandleContextLost(value: Boolean): Self = StObject.set(x, "doNotHandleContextLost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoNotHandleContextLostUndefined: Self = StObject.set(x, "doNotHandleContextLost", js.undefined)
+      inline def setDoNotHandleContextLostUndefined: Self = StObject.set(x, "doNotHandleContextLost", js.undefined)
       
-      @scala.inline
-      def setDoNotHandleTouchAction(value: Boolean): Self = StObject.set(x, "doNotHandleTouchAction", value.asInstanceOf[js.Any])
+      inline def setDoNotHandleTouchAction(value: Boolean): Self = StObject.set(x, "doNotHandleTouchAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoNotHandleTouchActionUndefined: Self = StObject.set(x, "doNotHandleTouchAction", js.undefined)
+      inline def setDoNotHandleTouchActionUndefined: Self = StObject.set(x, "doNotHandleTouchAction", js.undefined)
       
-      @scala.inline
-      def setLimitDeviceRatio(value: Double): Self = StObject.set(x, "limitDeviceRatio", value.asInstanceOf[js.Any])
+      inline def setLimitDeviceRatio(value: Double): Self = StObject.set(x, "limitDeviceRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitDeviceRatioUndefined: Self = StObject.set(x, "limitDeviceRatio", js.undefined)
+      inline def setLimitDeviceRatioUndefined: Self = StObject.set(x, "limitDeviceRatio", js.undefined)
       
-      @scala.inline
-      def setLockstepMaxSteps(value: Double): Self = StObject.set(x, "lockstepMaxSteps", value.asInstanceOf[js.Any])
+      inline def setLockstepMaxSteps(value: Double): Self = StObject.set(x, "lockstepMaxSteps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockstepMaxStepsUndefined: Self = StObject.set(x, "lockstepMaxSteps", js.undefined)
+      inline def setLockstepMaxStepsUndefined: Self = StObject.set(x, "lockstepMaxSteps", js.undefined)
       
-      @scala.inline
-      def setTimeStep(value: Double): Self = StObject.set(x, "timeStep", value.asInstanceOf[js.Any])
+      inline def setTimeStep(value: Double): Self = StObject.set(x, "timeStep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeStepUndefined: Self = StObject.set(x, "timeStep", js.undefined)
+      inline def setTimeStepUndefined: Self = StObject.set(x, "timeStep", js.undefined)
       
-      @scala.inline
-      def setUseHighPrecisionFloats(value: Boolean): Self = StObject.set(x, "useHighPrecisionFloats", value.asInstanceOf[js.Any])
+      inline def setUseHighPrecisionFloats(value: Boolean): Self = StObject.set(x, "useHighPrecisionFloats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseHighPrecisionFloatsUndefined: Self = StObject.set(x, "useHighPrecisionFloats", js.undefined)
+      inline def setUseHighPrecisionFloatsUndefined: Self = StObject.set(x, "useHighPrecisionFloats", js.undefined)
       
-      @scala.inline
-      def setUseHighPrecisionMatrix(value: Boolean): Self = StObject.set(x, "useHighPrecisionMatrix", value.asInstanceOf[js.Any])
+      inline def setUseHighPrecisionMatrix(value: Boolean): Self = StObject.set(x, "useHighPrecisionMatrix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseHighPrecisionMatrixUndefined: Self = StObject.set(x, "useHighPrecisionMatrix", js.undefined)
+      inline def setUseHighPrecisionMatrixUndefined: Self = StObject.set(x, "useHighPrecisionMatrix", js.undefined)
       
-      @scala.inline
-      def setXrCompatible(value: Boolean): Self = StObject.set(x, "xrCompatible", value.asInstanceOf[js.Any])
+      inline def setXrCompatible(value: Boolean): Self = StObject.set(x, "xrCompatible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXrCompatibleUndefined: Self = StObject.set(x, "xrCompatible", js.undefined)
+      inline def setXrCompatibleUndefined: Self = StObject.set(x, "xrCompatible", js.undefined)
     }
   }
   
-  @js.native
   trait HostInformation extends StObject {
     
     /**
       * Defines if the current host is a mobile
       */
-    var isMobile: Boolean = js.native
+    var isMobile: Boolean
   }
   object HostInformation {
     
-    @scala.inline
-    def apply(isMobile: Boolean): HostInformation = {
+    inline def apply(isMobile: Boolean): HostInformation = {
       val __obj = js.Dynamic.literal(isMobile = isMobile.asInstanceOf[js.Any])
       __obj.asInstanceOf[HostInformation]
     }
     
-    @scala.inline
-    implicit class HostInformationMutableBuilder[Self <: HostInformation] (val x: Self) extends AnyVal {
+    extension [Self <: HostInformation](x: Self) {
       
-      @scala.inline
-      def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
+      inline def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait ISceneLike extends StObject {
     
-    def _addPendingData(data: js.Any): Unit = js.native
+    def _addPendingData(data: js.Any): Unit
     
-    def _removePendingData(data: js.Any): Unit = js.native
+    def _removePendingData(data: js.Any): Unit
     
-    var offlineProvider: IOfflineProvider = js.native
+    var offlineProvider: IOfflineProvider
   }
   object ISceneLike {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _addPendingData: js.Any => Unit,
       _removePendingData: js.Any => Unit,
       offlineProvider: IOfflineProvider
@@ -3328,17 +3453,13 @@ object thinEngineMod {
       __obj.asInstanceOf[ISceneLike]
     }
     
-    @scala.inline
-    implicit class ISceneLikeMutableBuilder[Self <: ISceneLike] (val x: Self) extends AnyVal {
+    extension [Self <: ISceneLike](x: Self) {
       
-      @scala.inline
-      def setOfflineProvider(value: IOfflineProvider): Self = StObject.set(x, "offlineProvider", value.asInstanceOf[js.Any])
+      inline def setOfflineProvider(value: IOfflineProvider): Self = StObject.set(x, "offlineProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_addPendingData(value: js.Any => Unit): Self = StObject.set(x, "_addPendingData", js.Any.fromFunction1(value))
+      inline def set_addPendingData(value: js.Any => Unit): Self = StObject.set(x, "_addPendingData", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_removePendingData(value: js.Any => Unit): Self = StObject.set(x, "_removePendingData", js.Any.fromFunction1(value))
+      inline def set_removePendingData(value: js.Any => Unit): Self = StObject.set(x, "_removePendingData", js.Any.fromFunction1(value))
     }
   }
 }

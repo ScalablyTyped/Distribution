@@ -32,48 +32,47 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ojGanttTaskEventMap extends HTMLElementEventMap {
+trait ojGanttTaskEventMap
+  extends StObject
+     with HTMLElementEventMap {
   
-  var baselineChanged: JetElementCustomEvent[End] = js.native
+  var baselineChanged: JetElementCustomEvent[End]
   
-  var borderRadiusChanged: JetElementCustomEvent[String] = js.native
+  var borderRadiusChanged: JetElementCustomEvent[String]
   
-  var endChanged: JetElementCustomEvent[String] = js.native
+  var endChanged: JetElementCustomEvent[String]
   
-  var heightChanged: JetElementCustomEvent[Double | Null] = js.native
+  var heightChanged: JetElementCustomEvent[Double | Null]
   
-  var labelChanged: JetElementCustomEvent[String] = js.native
+  var labelChanged: JetElementCustomEvent[String]
   
-  var labelPositionChanged: JetElementCustomEvent[start | innerCenter | innerStart | innerEnd | end | none] = js.native
+  var labelPositionChanged: JetElementCustomEvent[start | innerCenter | innerStart | innerEnd | end | none]
   
   var labelStyleChanged: JetElementCustomEvent[
     /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttTask['labelStyle'] */ js.Any
-  ] = js.native
+  ]
   
-  var progressChanged: JetElementCustomEvent[Value] = js.native
+  var progressChanged: JetElementCustomEvent[Value]
   
-  var rowIdChanged: JetElementCustomEvent[js.UndefOr[_]] = js.native
+  var rowIdChanged: JetElementCustomEvent[js.UndefOr[js.Any]]
   
-  var shortDescChanged: JetElementCustomEvent[String | Null] = js.native
+  var shortDescChanged: JetElementCustomEvent[String | Null]
   
-  var startChanged: JetElementCustomEvent[String] = js.native
+  var startChanged: JetElementCustomEvent[String]
   
-  var svgClassNameChanged: JetElementCustomEvent[String] = js.native
+  var svgClassNameChanged: JetElementCustomEvent[String]
   
   var svgStyleChanged: JetElementCustomEvent[
     /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttTask['svgStyle'] */ js.Any
-  ] = js.native
+  ]
   
-  var typeChanged: JetElementCustomEvent[normal | milestone | summary | auto] = js.native
+  var typeChanged: JetElementCustomEvent[normal | milestone | summary | auto]
 }
 object ojGanttTaskEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,
@@ -153,7 +152,7 @@ object ojGanttTaskEventMap {
     ratechange: Event,
     reset: Event,
     resize: UIEvent,
-    rowIdChanged: JetElementCustomEvent[js.UndefOr[_]],
+    rowIdChanged: JetElementCustomEvent[js.UndefOr[js.Any]],
     scroll: Event,
     securitypolicyviolation: SecurityPolicyViolationEvent,
     seeked: Event,
@@ -189,57 +188,42 @@ object ojGanttTaskEventMap {
     __obj.asInstanceOf[ojGanttTaskEventMap]
   }
   
-  @scala.inline
-  implicit class ojGanttTaskEventMapMutableBuilder[Self <: ojGanttTaskEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: ojGanttTaskEventMap](x: Self) {
     
-    @scala.inline
-    def setBaselineChanged(value: JetElementCustomEvent[End]): Self = StObject.set(x, "baselineChanged", value.asInstanceOf[js.Any])
+    inline def setBaselineChanged(value: JetElementCustomEvent[End]): Self = StObject.set(x, "baselineChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderRadiusChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "borderRadiusChanged", value.asInstanceOf[js.Any])
+    inline def setBorderRadiusChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "borderRadiusChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "endChanged", value.asInstanceOf[js.Any])
+    inline def setEndChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "endChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightChanged(value: JetElementCustomEvent[Double | Null]): Self = StObject.set(x, "heightChanged", value.asInstanceOf[js.Any])
+    inline def setHeightChanged(value: JetElementCustomEvent[Double | Null]): Self = StObject.set(x, "heightChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "labelChanged", value.asInstanceOf[js.Any])
+    inline def setLabelChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "labelChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelPositionChanged(value: JetElementCustomEvent[start | innerCenter | innerStart | innerEnd | end | none]): Self = StObject.set(x, "labelPositionChanged", value.asInstanceOf[js.Any])
+    inline def setLabelPositionChanged(value: JetElementCustomEvent[start | innerCenter | innerStart | innerEnd | end | none]): Self = StObject.set(x, "labelPositionChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelStyleChanged(
+    inline def setLabelStyleChanged(
       value: JetElementCustomEvent[
           /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttTask['labelStyle'] */ js.Any
         ]
     ): Self = StObject.set(x, "labelStyleChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressChanged(value: JetElementCustomEvent[Value]): Self = StObject.set(x, "progressChanged", value.asInstanceOf[js.Any])
+    inline def setProgressChanged(value: JetElementCustomEvent[Value]): Self = StObject.set(x, "progressChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowIdChanged(value: JetElementCustomEvent[js.UndefOr[_]]): Self = StObject.set(x, "rowIdChanged", value.asInstanceOf[js.Any])
+    inline def setRowIdChanged(value: JetElementCustomEvent[js.UndefOr[js.Any]]): Self = StObject.set(x, "rowIdChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortDescChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "shortDescChanged", value.asInstanceOf[js.Any])
+    inline def setShortDescChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "shortDescChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "startChanged", value.asInstanceOf[js.Any])
+    inline def setStartChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "startChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgClassNameChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "svgClassNameChanged", value.asInstanceOf[js.Any])
+    inline def setSvgClassNameChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "svgClassNameChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgStyleChanged(
+    inline def setSvgStyleChanged(
       value: JetElementCustomEvent[
           /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttTask['svgStyle'] */ js.Any
         ]
     ): Self = StObject.set(x, "svgStyleChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeChanged(value: JetElementCustomEvent[normal | milestone | summary | auto]): Self = StObject.set(x, "typeChanged", value.asInstanceOf[js.Any])
+    inline def setTypeChanged(value: JetElementCustomEvent[normal | milestone | summary | auto]): Self = StObject.set(x, "typeChanged", value.asInstanceOf[js.Any])
   }
 }

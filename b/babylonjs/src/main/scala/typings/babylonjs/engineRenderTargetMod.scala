@@ -6,7 +6,6 @@ import typings.babylonjs.internalTextureMod.InternalTexture
 import typings.babylonjs.renderTargetCreationOptionsMod.RenderTargetCreationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object engineRenderTargetMod {

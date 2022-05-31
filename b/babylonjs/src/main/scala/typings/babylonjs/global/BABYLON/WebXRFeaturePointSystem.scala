@@ -2,18 +2,24 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.WebXRFeaturePointSystem")
 @js.native
 class WebXRFeaturePointSystem protected ()
-  extends typings.babylonjs.BABYLON.WebXRFeaturePointSystem {
+  extends StObject
+     with typings.babylonjs.BABYLON.WebXRFeaturePointSystem {
   /**
     * construct the feature point system
     * @param _xrSessionManager an instance of xr Session manager
     */
   def this(_xrSessionManager: typings.babylonjs.BABYLON.WebXRSessionManager) = this()
+  
+  /**
+    * Releases all held resources
+    */
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
 }
 /* static members */
 object WebXRFeaturePointSystem {

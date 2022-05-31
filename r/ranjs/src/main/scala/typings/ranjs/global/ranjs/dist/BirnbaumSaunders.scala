@@ -1,0 +1,18 @@
+package typings.ranjs.global.ranjs.dist
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSGlobal("ranjs.dist.BirnbaumSaunders")
+@js.native
+class BirnbaumSaunders ()
+  extends typings.ranjs.mod.dist.BirnbaumSaunders {
+  def this(mu: Double) = this()
+  def this(mu: Double, beta: Double) = this()
+  def this(mu: Unit, beta: Double) = this()
+  def this(mu: Double, beta: Double, gamma: Double) = this()
+  def this(mu: Double, beta: Unit, gamma: Double) = this()
+  def this(mu: Unit, beta: Double, gamma: Double) = this()
+  def this(mu: Unit, beta: Unit, gamma: Double) = this()
+}

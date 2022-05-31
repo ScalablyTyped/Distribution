@@ -9,13 +9,14 @@ import typings.oracleOraclejet.oracleOraclejetStrings.off
 import typings.oracleOraclejet.oracleOraclejetStrings.on
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ojtimeBaseMod {
   
   @js.native
-  trait dvtTimeComponent[SP /* <: dvtTimeComponentSettableProperties */] extends dvtBaseComponent[SP] {
+  trait dvtTimeComponent[SP /* <: dvtTimeComponentSettableProperties */]
+    extends StObject
+       with dvtBaseComponent[SP] {
     
     def setProperties(properties: dvtTimeComponentSettablePropertiesLenient): Unit = js.native
   }
@@ -25,36 +26,30 @@ object ojtimeBaseMod {
   type dvtTimeComponentSettableProperties = dvtBaseComponentSettableProperties
   
   /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojtime-base.dvtTimeComponentSettableProperties> */
-  @js.native
   trait dvtTimeComponentSettablePropertiesLenient
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var trackResize: js.UndefOr[on | off] = js.native
+    var trackResize: js.UndefOr[on | off] = js.undefined
     
-    var translations: js.UndefOr[LabelCountWithTotal] = js.native
+    var translations: js.UndefOr[LabelCountWithTotal] = js.undefined
   }
   object dvtTimeComponentSettablePropertiesLenient {
     
-    @scala.inline
-    def apply(): dvtTimeComponentSettablePropertiesLenient = {
+    inline def apply(): dvtTimeComponentSettablePropertiesLenient = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[dvtTimeComponentSettablePropertiesLenient]
     }
     
-    @scala.inline
-    implicit class dvtTimeComponentSettablePropertiesLenientMutableBuilder[Self <: dvtTimeComponentSettablePropertiesLenient] (val x: Self) extends AnyVal {
+    extension [Self <: dvtTimeComponentSettablePropertiesLenient](x: Self) {
       
-      @scala.inline
-      def setTrackResize(value: on | off): Self = StObject.set(x, "trackResize", value.asInstanceOf[js.Any])
+      inline def setTrackResize(value: on | off): Self = StObject.set(x, "trackResize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackResizeUndefined: Self = StObject.set(x, "trackResize", js.undefined)
+      inline def setTrackResizeUndefined: Self = StObject.set(x, "trackResize", js.undefined)
       
-      @scala.inline
-      def setTranslations(value: LabelCountWithTotal): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: LabelCountWithTotal): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+      inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
     }
   }
 }

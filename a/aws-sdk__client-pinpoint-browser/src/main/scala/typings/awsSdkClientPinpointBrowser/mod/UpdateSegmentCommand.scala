@@ -1,5 +1,6 @@
 package typings.awsSdkClientPinpointBrowser.mod
 
+import typings.awsSdkClientPinpointBrowser.typesUpdateSegmentInputMod.UpdateSegmentInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class UpdateSegmentCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.updateSegmentCommandMod.UpdateSegmentCommand {
-  def this(input: typings.awsSdkClientPinpointBrowser.typesUpdateSegmentInputMod.UpdateSegmentInput) = this()
+  def this(input: UpdateSegmentInput) = this()
 }

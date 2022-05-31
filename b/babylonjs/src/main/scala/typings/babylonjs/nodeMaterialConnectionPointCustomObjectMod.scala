@@ -6,7 +6,6 @@ import typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnect
 import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeMaterialConnectionPointCustomObjectMod {
@@ -36,10 +35,10 @@ object nodeMaterialConnectionPointCustomObjectMod {
       _nameForCheking: String
     ) = this()
     
-    var _blockName: js.Any = js.native
+    /* private */ var _blockName: js.Any = js.native
     
-    var _blockType: js.Any = js.native
+    /* private */ var _blockType: js.Any = js.native
     
-    var _nameForCheking: js.Any = js.native
+    /* private */ var _nameForCheking: js.Any = js.native
   }
 }

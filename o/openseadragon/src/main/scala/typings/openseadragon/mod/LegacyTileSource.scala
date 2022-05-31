@@ -1,6 +1,6 @@
 package typings.openseadragon.mod
 
-import typings.openseadragon.anon.Url
+import typings.openseadragon.anon.Height
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("openseadragon", "LegacyTileSource")
 @js.native
 class LegacyTileSource () extends TileSource {
-  def this(levels: js.Array[Url]) = this()
+  def this(levels: js.Array[Height]) = this()
 }

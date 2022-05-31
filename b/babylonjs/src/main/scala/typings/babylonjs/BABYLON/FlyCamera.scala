@@ -2,32 +2,33 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlyCamera extends TargetCamera {
+trait FlyCamera
+  extends StObject
+     with TargetCamera {
   
   /** @hidden */
   def _collideWithWorld(displacement: Vector3): Unit = js.native
   
-  var _collider: js.Any = js.native
+  /* private */ var _collider: js.Any = js.native
   
-  var _collisionMask: js.Any = js.native
+  /* private */ var _collisionMask: js.Any = js.native
   
-  var _diffPosition: js.Any = js.native
+  /* private */ var _diffPosition: js.Any = js.native
   
   /** @hidden */
   var _localDirection: Vector3 = js.native
   
-  var _needMoveForGravity: js.Any = js.native
+  /* private */ var _needMoveForGravity: js.Any = js.native
   
-  var _newPosition: js.Any = js.native
+  /* private */ var _newPosition: js.Any = js.native
   
-  var _oldPosition: js.Any = js.native
+  /* private */ var _oldPosition: js.Any = js.native
   
   /** @hidden */
-  var _onCollisionPositionChange: js.Any = js.native
+  /* private */ var _onCollisionPositionChange: js.Any = js.native
   
   /**
     * Track Roll to maintain the wanted Rolling when looking around.

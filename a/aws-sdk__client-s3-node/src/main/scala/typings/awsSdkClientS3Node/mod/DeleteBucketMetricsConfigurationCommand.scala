@@ -1,5 +1,6 @@
 package typings.awsSdkClientS3Node.mod
 
+import typings.awsSdkClientS3Node.typesDeleteBucketMetricsConfigurationInputMod.DeleteBucketMetricsConfigurationInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class DeleteBucketMetricsConfigurationCommand protected ()
   extends typings.awsSdkClientS3Node.deleteBucketMetricsConfigurationCommandMod.DeleteBucketMetricsConfigurationCommand {
-  def this(input: typings.awsSdkClientS3Node.typesDeleteBucketMetricsConfigurationInputMod.DeleteBucketMetricsConfigurationInput) = this()
+  def this(input: DeleteBucketMetricsConfigurationInput) = this()
 }

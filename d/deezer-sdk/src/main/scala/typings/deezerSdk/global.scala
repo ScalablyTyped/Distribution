@@ -19,9 +19,4 @@ object global {
   @js.native
   def dzAsyncInit: js.Function0[Unit] = js.native
   inline def dzAsyncInit_=(x: js.Function0[Unit]): Unit = js.Dynamic.global.updateDynamic("dzAsyncInit")(x.asInstanceOf[js.Any])
-  
-  /**
-    * See: {@link https://developers.deezer.com/sdk/javascript | Deezer Javascript SDK}
-    */
-  object DeezerSdk
 }

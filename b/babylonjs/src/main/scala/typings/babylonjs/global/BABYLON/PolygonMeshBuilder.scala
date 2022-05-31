@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.PolygonMeshBuilder")
 @js.native
 class PolygonMeshBuilder protected ()
-  extends typings.babylonjs.BABYLON.PolygonMeshBuilder {
+  extends StObject
+     with typings.babylonjs.BABYLON.PolygonMeshBuilder {
   def this(name: String, contours: js.Any) = this()
   def this(name: String, contours: js.Array[typings.babylonjs.BABYLON.Vector2]) = this()
   /**
@@ -26,12 +26,12 @@ class PolygonMeshBuilder protected ()
     scene: typings.babylonjs.BABYLON.Scene
   ) = this()
   def this(name: String, contours: typings.babylonjs.BABYLON.Path2, scene: typings.babylonjs.BABYLON.Scene) = this()
-  def this(name: String, contours: js.Any, scene: js.UndefOr[scala.Nothing], earcutInjection: js.Any) = this()
+  def this(name: String, contours: js.Any, scene: Unit, earcutInjection: js.Any) = this()
   def this(name: String, contours: js.Any, scene: typings.babylonjs.BABYLON.Scene, earcutInjection: js.Any) = this()
   def this(
     name: String,
     contours: js.Array[typings.babylonjs.BABYLON.Vector2],
-    scene: js.UndefOr[scala.Nothing],
+    scene: Unit,
     earcutInjection: js.Any
   ) = this()
   def this(
@@ -40,12 +40,7 @@ class PolygonMeshBuilder protected ()
     scene: typings.babylonjs.BABYLON.Scene,
     earcutInjection: js.Any
   ) = this()
-  def this(
-    name: String,
-    contours: typings.babylonjs.BABYLON.Path2,
-    scene: js.UndefOr[scala.Nothing],
-    earcutInjection: js.Any
-  ) = this()
+  def this(name: String, contours: typings.babylonjs.BABYLON.Path2, scene: Unit, earcutInjection: js.Any) = this()
   def this(
     name: String,
     contours: typings.babylonjs.BABYLON.Path2,

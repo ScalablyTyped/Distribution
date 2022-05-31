@@ -10,24 +10,21 @@ import typings.oracleOraclejet.oracleOraclejetStrings.thousand
 import typings.oracleOraclejet.oracleOraclejetStrings.trillion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Scaling extends StObject {
   
-  var converter: js.Object = js.native
+  var converter: js.Object
   
-  var scaling: none | thousand | million | billion | trillion | quadrillion | auto = js.native
+  var scaling: none | thousand | million | billion | trillion | quadrillion | auto
   
-  var tooltipDisplay: off | auto = js.native
+  var tooltipDisplay: off | auto
   
-  var tooltipLabel: String = js.native
+  var tooltipLabel: String
 }
 object Scaling {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     converter: js.Object,
     scaling: none | thousand | million | billion | trillion | quadrillion | auto,
     tooltipDisplay: off | auto,
@@ -37,19 +34,14 @@ object Scaling {
     __obj.asInstanceOf[Scaling]
   }
   
-  @scala.inline
-  implicit class ScalingMutableBuilder[Self <: Scaling] (val x: Self) extends AnyVal {
+  extension [Self <: Scaling](x: Self) {
     
-    @scala.inline
-    def setConverter(value: js.Object): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
+    inline def setConverter(value: js.Object): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaling(value: none | thousand | million | billion | trillion | quadrillion | auto): Self = StObject.set(x, "scaling", value.asInstanceOf[js.Any])
+    inline def setScaling(value: none | thousand | million | billion | trillion | quadrillion | auto): Self = StObject.set(x, "scaling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipDisplay(value: off | auto): Self = StObject.set(x, "tooltipDisplay", value.asInstanceOf[js.Any])
+    inline def setTooltipDisplay(value: off | auto): Self = StObject.set(x, "tooltipDisplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipLabel(value: String): Self = StObject.set(x, "tooltipLabel", value.asInstanceOf[js.Any])
+    inline def setTooltipLabel(value: String): Self = StObject.set(x, "tooltipLabel", value.asInstanceOf[js.Any])
   }
 }

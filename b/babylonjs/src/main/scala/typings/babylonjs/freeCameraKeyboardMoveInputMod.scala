@@ -4,27 +4,28 @@ import typings.babylonjs.cameraInputsManagerMod.ICameraInput
 import typings.babylonjs.freeCameraMod.FreeCamera
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object freeCameraKeyboardMoveInputMod {
   
   @JSImport("babylonjs/Cameras/Inputs/freeCameraKeyboardMoveInput", "FreeCameraKeyboardMoveInput")
   @js.native
-  class FreeCameraKeyboardMoveInput () extends ICameraInput[FreeCamera] {
+  class FreeCameraKeyboardMoveInput ()
+    extends StObject
+       with ICameraInput[FreeCamera] {
     
-    var _engine: js.Any = js.native
+    /* private */ var _engine: js.Any = js.native
     
-    var _keys: js.Any = js.native
+    /* private */ var _keys: js.Any = js.native
     
-    var _onCanvasBlurObserver: js.Any = js.native
+    /* private */ var _onCanvasBlurObserver: js.Any = js.native
     
-    var _onKeyboardObserver: js.Any = js.native
+    /* private */ var _onKeyboardObserver: js.Any = js.native
     
     /** @hidden */
     def _onLostFocus(): Unit = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
     /**
       * Defines the camera the input is attached to.

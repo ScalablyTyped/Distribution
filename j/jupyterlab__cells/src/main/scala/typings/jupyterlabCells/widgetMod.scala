@@ -30,7 +30,6 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object widgetMod {
@@ -47,36 +46,36 @@ object widgetMod {
       * Takes in a file object and adds it to
       * the cell attachments
       */
-    var _attachFile: js.Any = js.native
+    /* private */ var _attachFile: js.Any = js.native
     
     /**
       * Attaches all DataTransferItems (obtained from
       * clipboard or native drop events) to the cell
       */
-    var _attachFiles: js.Any = js.native
+    /* private */ var _attachFiles: js.Any = js.native
     
-    var _evtDragOver: js.Any = js.native
+    /* private */ var _evtDragOver: js.Any = js.native
     
     /**
       * Handle the `'lm-drop'` event for the widget.
       */
-    var _evtDrop: js.Any = js.native
+    /* private */ var _evtDrop: js.Any = js.native
     
     /**
       * Handle the `drop` event for the widget
       */
-    var _evtNativeDrop: js.Any = js.native
+    /* private */ var _evtNativeDrop: js.Any = js.native
     
     /**
       * Handle the `paste` event for the widget
       */
-    var _evtPaste: js.Any = js.native
+    /* private */ var _evtPaste: js.Any = js.native
     
     /**
       * Generates a unique URI for a file
       * while preserving the file extension.
       */
-    var _generateURI: js.Any = js.native
+    /* private */ var _generateURI: js.Any = js.native
     
     /**
       * Handle the DOM events for the widget.
@@ -111,21 +110,21 @@ object widgetMod {
       */
     def this(options: IOptions) = this()
     
-    var _input: js.Any = js.native
+    /* private */ var _input: js.Any = js.native
     
-    var _inputHidden: js.Any = js.native
+    /* private */ var _inputHidden: js.Any = js.native
     
-    var _inputPlaceholder: js.Any = js.native
+    /* private */ var _inputPlaceholder: js.Any = js.native
     
-    var _inputWrapper: js.Any = js.native
+    /* private */ var _inputWrapper: js.Any = js.native
     
-    var _model: js.Any = js.native
+    /* private */ var _model: js.Any = js.native
     
-    var _readOnly: js.Any = js.native
+    /* private */ var _readOnly: js.Any = js.native
     
-    var _syncCollapse: js.Any = js.native
+    /* private */ var _syncCollapse: js.Any = js.native
     
-    var _syncEditable: js.Any = js.native
+    /* private */ var _syncEditable: js.Any = js.native
     
     /**
       * The content factory used by the widget.
@@ -247,11 +246,51 @@ object widgetMod {
     /**
       * Create a content factory for a cell.
       */
-    class ContentFactory () extends IContentFactory {
+    class ContentFactory ()
+      extends StObject
+         with IContentFactory {
       def this(options: typings.jupyterlabCells.widgetMod.Cell.ContentFactory.IOptions) = this()
       
-      var _editorFactory: js.Any = js.native
+      /* private */ var _editorFactory: js.Any = js.native
       
+      /**
+        * Create a new cell header for the parent widget.
+        */
+      /* CompleteClass */
+      override def createCellFooter(): ICellFooter = js.native
+      
+      /**
+        * Create a new cell header for the parent widget.
+        */
+      /* CompleteClass */
+      override def createCellHeader(): ICellHeader = js.native
+      
+      /**
+        * Create an input prompt.
+        */
+      /* CompleteClass */
+      override def createInputPrompt(): IInputPrompt = js.native
+      
+      /**
+        * Create an output prompt.
+        */
+      /* CompleteClass */
+      override def createOutputPrompt(): IOutputPrompt = js.native
+      
+      /**
+        * Create an stdin widget.
+        */
+      /* CompleteClass */
+      override def createStdin(options: typings.jupyterlabOutputarea.widgetMod.Stdin.IOptions): IStdin = js.native
+      
+      /**
+        * The editor factory we need to include in `CodeEditorWratter.IOptions`.
+        *
+        * This is a separate readonly attribute rather than a factory method as we need
+        * to pass it around.
+        */
+      /* CompleteClass */
+      override val editorFactory: Factory = js.native
       /**
         * The readonly editor factory that create code editors
         */
@@ -266,7 +305,6 @@ object widgetMod {
       /**
         * Options for the content factory.
         */
-      @js.native
       trait IOptions extends StObject {
         
         /**
@@ -275,24 +313,20 @@ object widgetMod {
           * If this is not passed, a default CodeMirror editor factory
           * will be used.
           */
-        var editorFactory: js.UndefOr[Factory] = js.native
+        var editorFactory: js.UndefOr[Factory] = js.undefined
       }
       object IOptions {
         
-        @scala.inline
-        def apply(): typings.jupyterlabCells.widgetMod.Cell.ContentFactory.IOptions = {
+        inline def apply(): typings.jupyterlabCells.widgetMod.Cell.ContentFactory.IOptions = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[typings.jupyterlabCells.widgetMod.Cell.ContentFactory.IOptions]
         }
         
-        @scala.inline
-        implicit class IOptionsMutableBuilder[Self <: typings.jupyterlabCells.widgetMod.Cell.ContentFactory.IOptions] (val x: Self) extends AnyVal {
+        extension [Self <: typings.jupyterlabCells.widgetMod.Cell.ContentFactory.IOptions](x: Self) {
           
-          @scala.inline
-          def setEditorFactory(value: /* options */ typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions => IEditor): Self = StObject.set(x, "editorFactory", js.Any.fromFunction1(value))
+          inline def setEditorFactory(value: /* options */ typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions => IEditor): Self = StObject.set(x, "editorFactory", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setEditorFactoryUndefined: Self = StObject.set(x, "editorFactory", js.undefined)
+          inline def setEditorFactoryUndefined: Self = StObject.set(x, "editorFactory", js.undefined)
         }
       }
     }
@@ -313,25 +347,24 @@ object widgetMod {
       * provide a single factory object for all notebook/cell/outputarea related
       * widgets.
       */
-    @js.native
     trait IContentFactory
-      extends typings.jupyterlabOutputarea.widgetMod.OutputArea.IContentFactory
+      extends StObject
+         with typings.jupyterlabOutputarea.widgetMod.OutputArea.IContentFactory
          with typings.jupyterlabCells.inputareaMod.InputArea.IContentFactory {
       
       /**
         * Create a new cell header for the parent widget.
         */
-      def createCellFooter(): ICellFooter = js.native
+      def createCellFooter(): ICellFooter
       
       /**
         * Create a new cell header for the parent widget.
         */
-      def createCellHeader(): ICellHeader = js.native
+      def createCellHeader(): ICellHeader
     }
     object IContentFactory {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         createCellFooter: () => ICellFooter,
         createCellHeader: () => ICellHeader,
         createInputPrompt: () => IInputPrompt,
@@ -343,74 +376,61 @@ object widgetMod {
         __obj.asInstanceOf[IContentFactory]
       }
       
-      @scala.inline
-      implicit class IContentFactoryMutableBuilder[Self <: IContentFactory] (val x: Self) extends AnyVal {
+      extension [Self <: IContentFactory](x: Self) {
         
-        @scala.inline
-        def setCreateCellFooter(value: () => ICellFooter): Self = StObject.set(x, "createCellFooter", js.Any.fromFunction0(value))
+        inline def setCreateCellFooter(value: () => ICellFooter): Self = StObject.set(x, "createCellFooter", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setCreateCellHeader(value: () => ICellHeader): Self = StObject.set(x, "createCellHeader", js.Any.fromFunction0(value))
+        inline def setCreateCellHeader(value: () => ICellHeader): Self = StObject.set(x, "createCellHeader", js.Any.fromFunction0(value))
       }
     }
     
     /**
       * An options object for initializing a cell widget.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The factory object for customizable cell children.
         */
-      var contentFactory: js.UndefOr[IContentFactory] = js.native
+      var contentFactory: js.UndefOr[IContentFactory] = js.undefined
       
       /**
         * The configuration options for the text editor widget.
         */
-      var editorConfig: js.UndefOr[PartialIConfig] = js.native
+      var editorConfig: js.UndefOr[PartialIConfig] = js.undefined
       
       /**
         * The model used by the cell.
         */
-      var model: ICellModel = js.native
+      var model: ICellModel
       
       /**
         * Whether to send an update request to the editor when it is shown.
         */
-      var updateEditorOnShow: js.UndefOr[Boolean] = js.native
+      var updateEditorOnShow: js.UndefOr[Boolean] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(model: ICellModel): IOptions = {
+      inline def apply(model: ICellModel): IOptions = {
         val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setContentFactory(value: IContentFactory): Self = StObject.set(x, "contentFactory", value.asInstanceOf[js.Any])
+        inline def setContentFactory(value: IContentFactory): Self = StObject.set(x, "contentFactory", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentFactoryUndefined: Self = StObject.set(x, "contentFactory", js.undefined)
+        inline def setContentFactoryUndefined: Self = StObject.set(x, "contentFactory", js.undefined)
         
-        @scala.inline
-        def setEditorConfig(value: PartialIConfig): Self = StObject.set(x, "editorConfig", value.asInstanceOf[js.Any])
+        inline def setEditorConfig(value: PartialIConfig): Self = StObject.set(x, "editorConfig", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEditorConfigUndefined: Self = StObject.set(x, "editorConfig", js.undefined)
+        inline def setEditorConfigUndefined: Self = StObject.set(x, "editorConfig", js.undefined)
         
-        @scala.inline
-        def setModel(value: ICellModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+        inline def setModel(value: ICellModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdateEditorOnShow(value: Boolean): Self = StObject.set(x, "updateEditorOnShow", value.asInstanceOf[js.Any])
+        inline def setUpdateEditorOnShow(value: Boolean): Self = StObject.set(x, "updateEditorOnShow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdateEditorOnShowUndefined: Self = StObject.set(x, "updateEditorOnShow", js.undefined)
+        inline def setUpdateEditorOnShowUndefined: Self = StObject.set(x, "updateEditorOnShow", js.undefined)
       }
     }
   }
@@ -423,26 +443,26 @@ object widgetMod {
       */
     def this(options: typings.jupyterlabCells.widgetMod.CodeCell.IOptions) = this()
     
-    var _output: js.Any = js.native
+    /* private */ var _output: js.Any = js.native
     
-    var _outputHidden: js.Any = js.native
+    /* private */ var _outputHidden: js.Any = js.native
     
     /**
       * Handle changes in the number of outputs in the output area.
       */
-    var _outputLengthHandler: js.Any = js.native
+    /* private */ var _outputLengthHandler: js.Any = js.native
     
-    var _outputPlaceholder: js.Any = js.native
+    /* private */ var _outputPlaceholder: js.Any = js.native
     
-    var _outputWrapper: js.Any = js.native
+    /* private */ var _outputWrapper: js.Any = js.native
     
-    var _outputsScrolled: js.Any = js.native
+    /* private */ var _outputsScrolled: js.Any = js.native
     
-    var _rendermime: js.Any = js.native
+    /* private */ var _rendermime: js.Any = js.native
     
-    var _savingMetadata: js.Any = js.native
+    /* private */ var _savingMetadata: js.Any = js.native
     
-    var _syncScrolled: js.Any = js.native
+    /* private */ var _syncScrolled: js.Any = js.native
     
     /**
       * Clone the OutputArea alone, returning a simplified output area, using the same model.
@@ -463,7 +483,10 @@ object widgetMod {
     /**
       * Handle changes in the model.
       */
-    /* protected */ def onStateChanged(model: ICellModel, args: typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[_, _, String]): Unit = js.native
+    /* protected */ def onStateChanged(
+      model: ICellModel,
+      args: typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[js.Any, js.Any, String]
+    ): Unit = js.native
     
     /**
       * Get the output area for the cell.
@@ -495,41 +518,38 @@ object widgetMod {
   }
   object CodeCell {
     
+    @JSImport("@jupyterlab/cells/lib/widget", "CodeCell")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Execute a cell given a client session.
       */
-    @JSImport("@jupyterlab/cells/lib/widget", "CodeCell.execute")
-    @js.native
-    def execute(cell: CodeCell, sessionContext: ISessionContext): js.Promise[IExecuteReplyMsg | Unit] = js.native
-    @JSImport("@jupyterlab/cells/lib/widget", "CodeCell.execute")
-    @js.native
-    def execute(cell: CodeCell, sessionContext: ISessionContext, metadata: JSONObject): js.Promise[IExecuteReplyMsg | Unit] = js.native
+    inline def execute(cell: CodeCell, sessionContext: ISessionContext): js.Promise[IExecuteReplyMsg | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(cell.asInstanceOf[js.Any], sessionContext.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IExecuteReplyMsg | Unit]]
+    inline def execute(cell: CodeCell, sessionContext: ISessionContext, metadata: JSONObject): js.Promise[IExecuteReplyMsg | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(cell.asInstanceOf[js.Any], sessionContext.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IExecuteReplyMsg | Unit]]
     
     /**
       * An options object for initializing a base cell widget.
       */
-    @js.native
     trait IOptions
-      extends typings.jupyterlabCells.widgetMod.Cell.IOptions {
+      extends StObject
+         with typings.jupyterlabCells.widgetMod.Cell.IOptions {
       
       /**
         * The mime renderer for the cell widget.
         */
-      var rendermime: IRenderMimeRegistry = js.native
+      var rendermime: IRenderMimeRegistry
     }
     object IOptions {
       
-      @scala.inline
-      def apply(model: ICellModel, rendermime: IRenderMimeRegistry): typings.jupyterlabCells.widgetMod.CodeCell.IOptions = {
+      inline def apply(model: ICellModel, rendermime: IRenderMimeRegistry): typings.jupyterlabCells.widgetMod.CodeCell.IOptions = {
         val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any], rendermime = rendermime.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.jupyterlabCells.widgetMod.CodeCell.IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: typings.jupyterlabCells.widgetMod.CodeCell.IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.jupyterlabCells.widgetMod.CodeCell.IOptions](x: Self) {
         
-        @scala.inline
-        def setRendermime(value: IRenderMimeRegistry): Self = StObject.set(x, "rendermime", value.asInstanceOf[js.Any])
+        inline def setRendermime(value: IRenderMimeRegistry): Self = StObject.set(x, "rendermime", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -545,24 +565,24 @@ object widgetMod {
     /**
       * Handle the rendered state.
       */
-    var _handleRendered: js.Any = js.native
+    /* private */ var _handleRendered: js.Any = js.native
     
-    var _monitor: js.Any = js.native
+    /* private */ var _monitor: js.Any = js.native
     
-    var _prevText: js.Any = js.native
+    /* private */ var _prevText: js.Any = js.native
     
-    var _ready: js.Any = js.native
+    /* private */ var _ready: js.Any = js.native
     
-    var _rendered: js.Any = js.native
+    /* private */ var _rendered: js.Any = js.native
     
-    var _renderer: js.Any = js.native
+    /* private */ var _renderer: js.Any = js.native
     
-    var _rendermime: js.Any = js.native
+    /* private */ var _rendermime: js.Any = js.native
     
     /**
       * Update the rendered input.
       */
-    var _updateRenderedInput: js.Any = js.native
+    /* private */ var _updateRenderedInput: js.Any = js.native
     
     /**
       * The model used by the widget.
@@ -591,28 +611,25 @@ object widgetMod {
     /**
       * An options object for initializing a base cell widget.
       */
-    @js.native
     trait IOptions
-      extends typings.jupyterlabCells.widgetMod.Cell.IOptions {
+      extends StObject
+         with typings.jupyterlabCells.widgetMod.Cell.IOptions {
       
       /**
         * The mime renderer for the cell widget.
         */
-      var rendermime: IRenderMimeRegistry = js.native
+      var rendermime: IRenderMimeRegistry
     }
     object IOptions {
       
-      @scala.inline
-      def apply(model: ICellModel, rendermime: IRenderMimeRegistry): typings.jupyterlabCells.widgetMod.MarkdownCell.IOptions = {
+      inline def apply(model: ICellModel, rendermime: IRenderMimeRegistry): typings.jupyterlabCells.widgetMod.MarkdownCell.IOptions = {
         val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any], rendermime = rendermime.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.jupyterlabCells.widgetMod.MarkdownCell.IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: typings.jupyterlabCells.widgetMod.MarkdownCell.IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.jupyterlabCells.widgetMod.MarkdownCell.IOptions](x: Self) {
         
-        @scala.inline
-        def setRendermime(value: IRenderMimeRegistry): Self = StObject.set(x, "rendermime", value.asInstanceOf[js.Any])
+        inline def setRendermime(value: IRenderMimeRegistry): Self = StObject.set(x, "rendermime", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -636,13 +653,12 @@ object widgetMod {
     /**
       * An options object for initializing a base cell widget.
       */
-    @js.native
     trait IOptions
-      extends typings.jupyterlabCells.widgetMod.Cell.IOptions
+      extends StObject
+         with typings.jupyterlabCells.widgetMod.Cell.IOptions
     object IOptions {
       
-      @scala.inline
-      def apply(model: ICellModel): typings.jupyterlabCells.widgetMod.RawCell.IOptions = {
+      inline def apply(model: ICellModel): typings.jupyterlabCells.widgetMod.RawCell.IOptions = {
         val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.jupyterlabCells.widgetMod.RawCell.IOptions]
       }

@@ -3,7 +3,6 @@ package typings.babylonjs.legacyMod
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "CubeTexture")
@@ -38,7 +37,7 @@ class CubeTexture protected ()
     onLoad: js.UndefOr[Nullable[js.Function0[Unit]]],
     onError: js.UndefOr[
         Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
         ]
       ],
     format: js.UndefOr[Double],
@@ -53,6 +52,10 @@ class CubeTexture protected ()
 /* static members */
 object CubeTexture {
   
+  @JSImport("babylonjs/Legacy/legacy", "CubeTexture")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a cube texture from an array of image urls
     * @param files defines an array of image urls
@@ -60,12 +63,8 @@ object CubeTexture {
     * @param noMipmap specifies if mip maps are not used
     * @returns a cube texture
     */
-  @JSImport("babylonjs/Legacy/legacy", "CubeTexture.CreateFromImages")
-  @js.native
-  def CreateFromImages(files: js.Array[String], scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.cubeTextureMod.CubeTexture = js.native
-  @JSImport("babylonjs/Legacy/legacy", "CubeTexture.CreateFromImages")
-  @js.native
-  def CreateFromImages(files: js.Array[String], scene: typings.babylonjs.sceneMod.Scene, noMipmap: Boolean): typings.babylonjs.cubeTextureMod.CubeTexture = js.native
+  inline def CreateFromImages(files: js.Array[String], scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.cubeTextureMod.CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromImages")(files.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.cubeTextureMod.CubeTexture]
+  inline def CreateFromImages(files: js.Array[String], scene: typings.babylonjs.sceneMod.Scene, noMipmap: Boolean): typings.babylonjs.cubeTextureMod.CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromImages")(files.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], noMipmap.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.cubeTextureMod.CubeTexture]
   
   /**
     * Creates and return a texture created from prefilterd data by tools like IBL Baker or Lys.
@@ -75,28 +74,20 @@ object CubeTexture {
     * @param createPolynomials defines whether or not to create polynomial harmonics from the texture data if necessary
     * @return the prefiltered texture
     */
-  @JSImport("babylonjs/Legacy/legacy", "CubeTexture.CreateFromPrefilteredData")
-  @js.native
-  def CreateFromPrefilteredData(url: String, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.cubeTextureMod.CubeTexture = js.native
-  @JSImport("babylonjs/Legacy/legacy", "CubeTexture.CreateFromPrefilteredData")
-  @js.native
-  def CreateFromPrefilteredData(
-    url: String,
-    scene: typings.babylonjs.sceneMod.Scene,
-    forcedExtension: js.UndefOr[scala.Nothing],
-    createPolynomials: Boolean
-  ): typings.babylonjs.cubeTextureMod.CubeTexture = js.native
-  @JSImport("babylonjs/Legacy/legacy", "CubeTexture.CreateFromPrefilteredData")
-  @js.native
-  def CreateFromPrefilteredData(url: String, scene: typings.babylonjs.sceneMod.Scene, forcedExtension: js.Any): typings.babylonjs.cubeTextureMod.CubeTexture = js.native
-  @JSImport("babylonjs/Legacy/legacy", "CubeTexture.CreateFromPrefilteredData")
-  @js.native
-  def CreateFromPrefilteredData(
+  inline def CreateFromPrefilteredData(url: String, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.cubeTextureMod.CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromPrefilteredData")(url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.cubeTextureMod.CubeTexture]
+  inline def CreateFromPrefilteredData(url: String, scene: typings.babylonjs.sceneMod.Scene, forcedExtension: js.Any): typings.babylonjs.cubeTextureMod.CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromPrefilteredData")(url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], forcedExtension.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.cubeTextureMod.CubeTexture]
+  inline def CreateFromPrefilteredData(
     url: String,
     scene: typings.babylonjs.sceneMod.Scene,
     forcedExtension: js.Any,
     createPolynomials: Boolean
-  ): typings.babylonjs.cubeTextureMod.CubeTexture = js.native
+  ): typings.babylonjs.cubeTextureMod.CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromPrefilteredData")(url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], forcedExtension.asInstanceOf[js.Any], createPolynomials.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.cubeTextureMod.CubeTexture]
+  inline def CreateFromPrefilteredData(
+    url: String,
+    scene: typings.babylonjs.sceneMod.Scene,
+    forcedExtension: Unit,
+    createPolynomials: Boolean
+  ): typings.babylonjs.cubeTextureMod.CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromPrefilteredData")(url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], forcedExtension.asInstanceOf[js.Any], createPolynomials.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.cubeTextureMod.CubeTexture]
   
   /**
     * Parses text to create a cube texture
@@ -105,7 +96,5 @@ object CubeTexture {
     * @param rootUrl defines the root url of the cube texture
     * @returns a cube texture
     */
-  @JSImport("babylonjs/Legacy/legacy", "CubeTexture.Parse")
-  @js.native
-  def Parse(parsedTexture: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.cubeTextureMod.CubeTexture = js.native
+  inline def Parse(parsedTexture: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.cubeTextureMod.CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.cubeTextureMod.CubeTexture]
 }

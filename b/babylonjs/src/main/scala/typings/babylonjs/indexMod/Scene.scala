@@ -4,7 +4,6 @@ import typings.babylonjs.collisionCoordinatorMod.ICollisionCoordinator
 import typings.babylonjs.sceneMod.SceneOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "Scene")
@@ -30,9 +29,7 @@ object Scene {
     * Factory used to create the a collision coordinator.
     * @returns The collision coordinator
     */
-  @JSImport("babylonjs/index", "Scene.CollisionCoordinatorFactory")
-  @js.native
-  def CollisionCoordinatorFactory(): ICollisionCoordinator = js.native
+  inline def CollisionCoordinatorFactory(): ICollisionCoordinator = ^.asInstanceOf[js.Dynamic].applyDynamic("CollisionCoordinatorFactory")().asInstanceOf[ICollisionCoordinator]
   
   /**
     * Factory used to create the default material.
@@ -40,9 +37,7 @@ object Scene {
     * @param scene The scene to create the material for
     * @returns The default material
     */
-  @JSImport("babylonjs/index", "Scene.DefaultMaterialFactory")
-  @js.native
-  def DefaultMaterialFactory(scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.materialMod.Material = js.native
+  inline def DefaultMaterialFactory(scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.materialMod.Material = ^.asInstanceOf[js.Dynamic].applyDynamic("DefaultMaterialFactory")(scene.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.materialMod.Material]
   
   /** The fog density is following an exponential function */
   @JSImport("babylonjs/index", "Scene.FOGMODE_EXP")
@@ -71,8 +66,7 @@ object Scene {
   @JSImport("babylonjs/index", "Scene.MaxDeltaTime")
   @js.native
   def MaxDeltaTime: Double = js.native
-  @scala.inline
-  def MaxDeltaTime_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MaxDeltaTime")(x.asInstanceOf[js.Any])
+  inline def MaxDeltaTime_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MaxDeltaTime")(x.asInstanceOf[js.Any])
   
   /**
     * Gets or sets the minimum deltatime when deterministic lock step is enabled
@@ -81,6 +75,5 @@ object Scene {
   @JSImport("babylonjs/index", "Scene.MinDeltaTime")
   @js.native
   def MinDeltaTime: Double = js.native
-  @scala.inline
-  def MinDeltaTime_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MinDeltaTime")(x.asInstanceOf[js.Any])
+  inline def MinDeltaTime_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MinDeltaTime")(x.asInstanceOf[js.Any])
 }

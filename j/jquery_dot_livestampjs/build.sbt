@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_livestampjs"
-version := "0.0-unknown-dt-20201002Z-aea42b"
+version := "0.0-unknown-dt-20201002Z-2379ce"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "moment" % "2.29.1-f52f14",
-  "org.scalablytyped" %%% "std" % "4.1-2f6855")
+  "org.scalablytyped" %%% "moment" % "2.29.1-4a676b",
+  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

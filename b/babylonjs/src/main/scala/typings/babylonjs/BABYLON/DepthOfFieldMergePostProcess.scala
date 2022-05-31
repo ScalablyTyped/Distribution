@@ -2,13 +2,14 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DepthOfFieldMergePostProcess extends PostProcess {
+trait DepthOfFieldMergePostProcess
+  extends StObject
+     with PostProcess {
   
-  var blurSteps: js.Any = js.native
+  /* private */ var blurSteps: js.Any = js.native
   
   /**
     * Updates the effect with the current post process compile time values and recompiles the shader.

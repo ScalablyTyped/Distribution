@@ -10,9 +10,9 @@ JupyterLab - UI components written in React
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/ui-components |
 | Keywords           | - |
-| # releases         | 98 |
-| # dependents       | 102 |
-| # downloads        | 1628066 |
+| # releases         | 108 |
+| # dependents       | 118 |
+| # downloads        | 1816236 |
 | # stars            | 0 |
 
 ## Links

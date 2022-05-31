@@ -11,7 +11,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object highlightLayerMod {
@@ -28,24 +27,24 @@ object highlightLayerMod {
     def this(name: String, scene: Scene) = this()
     def this(name: String, scene: Scene, options: PartialIHighlightLayerOpt) = this()
     
-    var _blurTexture: js.Any = js.native
+    /* private */ var _blurTexture: js.Any = js.native
     
     /**
       * Force the stencil to the normal expected value for none glowing parts
       */
-    var _defaultStencilReference: js.Any = js.native
+    /* private */ var _defaultStencilReference: js.Any = js.native
     
-    var _downSamplePostprocess: js.Any = js.native
+    /* private */ var _downSamplePostprocess: js.Any = js.native
     
-    var _excludedMeshes: js.Any = js.native
+    /* private */ var _excludedMeshes: js.Any = js.native
     
-    var _horizontalBlurPostprocess: js.Any = js.native
+    /* private */ var _horizontalBlurPostprocess: js.Any = js.native
     
-    var _instanceGlowingMeshStencilReference: js.Any = js.native
+    /* private */ var _instanceGlowingMeshStencilReference: js.Any = js.native
     
-    var _meshes: js.Any = js.native
+    /* private */ var _meshes: js.Any = js.native
     
-    var _options: js.Any = js.native
+    /* private */ var _options: js.Any = js.native
     
     /**
       * Returns true if the mesh should render, otherwise false.
@@ -54,7 +53,7 @@ object highlightLayerMod {
       */
     /* protected */ def _shouldRenderMesh(mesh: Mesh): Boolean = js.native
     
-    var _verticalBlurPostprocess: js.Any = js.native
+    /* private */ var _verticalBlurPostprocess: js.Any = js.native
     
     /**
       * Add a mesh in the exclusion list to prevent it to impact or being impacted by the highlight layer.
@@ -153,8 +152,7 @@ object highlightLayerMod {
     @JSImport("babylonjs/Layers/highlightLayer", "HighlightLayer.GlowingMeshStencilReference")
     @js.native
     def GlowingMeshStencilReference: Double = js.native
-    @scala.inline
-    def GlowingMeshStencilReference_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GlowingMeshStencilReference")(x.asInstanceOf[js.Any])
+    inline def GlowingMeshStencilReference_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GlowingMeshStencilReference")(x.asInstanceOf[js.Any])
     
     /**
       * The neutral color used during the preparation of the glow effect.
@@ -163,8 +161,7 @@ object highlightLayerMod {
     @JSImport("babylonjs/Layers/highlightLayer", "HighlightLayer.NeutralColor")
     @js.native
     def NeutralColor: Color4 = js.native
-    @scala.inline
-    def NeutralColor_=(x: Color4): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NeutralColor")(x.asInstanceOf[js.Any])
+    inline def NeutralColor_=(x: Color4): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NeutralColor")(x.asInstanceOf[js.Any])
     
     /**
       * Stencil value used for the other meshes in the scene.
@@ -172,8 +169,7 @@ object highlightLayerMod {
     @JSImport("babylonjs/Layers/highlightLayer", "HighlightLayer.NormalMeshStencilReference")
     @js.native
     def NormalMeshStencilReference: Double = js.native
-    @scala.inline
-    def NormalMeshStencilReference_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NormalMeshStencilReference")(x.asInstanceOf[js.Any])
+    inline def NormalMeshStencilReference_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NormalMeshStencilReference")(x.asInstanceOf[js.Any])
     
     /**
       * Creates a Highlight layer from parsed Highlight layer data
@@ -182,65 +178,61 @@ object highlightLayerMod {
       * @param rootUrl defines the root URL containing the Highlight layer information
       * @returns a parsed Highlight layer
       */
-    @JSImport("babylonjs/Layers/highlightLayer", "HighlightLayer.Parse")
-    @js.native
-    def Parse(parsedHightlightLayer: js.Any, scene: Scene, rootUrl: String): HighlightLayer = js.native
+    inline def Parse(parsedHightlightLayer: js.Any, scene: Scene, rootUrl: String): HighlightLayer = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedHightlightLayer.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[HighlightLayer]
   }
   
-  @js.native
   trait IHighlightLayerOptions extends StObject {
     
     /**
       * Alpha blending mode used to apply the blur. Default is combine.
       */
-    var alphaBlendingMode: Double = js.native
+    var alphaBlendingMode: Double
     
     /**
       * How big in texel of the blur texture is the horizontal blur.
       */
-    var blurHorizontalSize: Double = js.native
+    var blurHorizontalSize: Double
     
     /**
       * Multiplication factor apply to the main texture size in the first step of the blur to reduce the size
       * of the picture to blur (the smaller the faster).
       */
-    var blurTextureSizeRatio: Double = js.native
+    var blurTextureSizeRatio: Double
     
     /**
       * How big in texel of the blur texture is the vertical blur.
       */
-    var blurVerticalSize: Double = js.native
+    var blurVerticalSize: Double
     
     /**
       * The camera attached to the layer.
       */
-    var camera: Nullable[Camera] = js.native
+    var camera: Nullable[Camera]
     
     /**
       * Should we display highlight as a solid stroke?
       */
-    var isStroke: js.UndefOr[Boolean] = js.native
+    var isStroke: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enforces a fixed size texture to ensure resize independant blur.
       */
-    var mainTextureFixedSize: js.UndefOr[Double] = js.native
+    var mainTextureFixedSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Multiplication factor apply to the canvas size to compute the render target size
       * used to generated the glowing objects (the smaller the faster).
       */
-    var mainTextureRatio: Double = js.native
+    var mainTextureRatio: Double
     
     /**
       * The rendering group to draw the layer in.
       */
-    var renderingGroupId: Double = js.native
+    var renderingGroupId: Double
   }
   object IHighlightLayerOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alphaBlendingMode: Double,
       blurHorizontalSize: Double,
       blurTextureSizeRatio: Double,
@@ -248,55 +240,41 @@ object highlightLayerMod {
       mainTextureRatio: Double,
       renderingGroupId: Double
     ): IHighlightLayerOptions = {
-      val __obj = js.Dynamic.literal(alphaBlendingMode = alphaBlendingMode.asInstanceOf[js.Any], blurHorizontalSize = blurHorizontalSize.asInstanceOf[js.Any], blurTextureSizeRatio = blurTextureSizeRatio.asInstanceOf[js.Any], blurVerticalSize = blurVerticalSize.asInstanceOf[js.Any], mainTextureRatio = mainTextureRatio.asInstanceOf[js.Any], renderingGroupId = renderingGroupId.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(alphaBlendingMode = alphaBlendingMode.asInstanceOf[js.Any], blurHorizontalSize = blurHorizontalSize.asInstanceOf[js.Any], blurTextureSizeRatio = blurTextureSizeRatio.asInstanceOf[js.Any], blurVerticalSize = blurVerticalSize.asInstanceOf[js.Any], mainTextureRatio = mainTextureRatio.asInstanceOf[js.Any], renderingGroupId = renderingGroupId.asInstanceOf[js.Any], camera = null)
       __obj.asInstanceOf[IHighlightLayerOptions]
     }
     
-    @scala.inline
-    implicit class IHighlightLayerOptionsMutableBuilder[Self <: IHighlightLayerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IHighlightLayerOptions](x: Self) {
       
-      @scala.inline
-      def setAlphaBlendingMode(value: Double): Self = StObject.set(x, "alphaBlendingMode", value.asInstanceOf[js.Any])
+      inline def setAlphaBlendingMode(value: Double): Self = StObject.set(x, "alphaBlendingMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlurHorizontalSize(value: Double): Self = StObject.set(x, "blurHorizontalSize", value.asInstanceOf[js.Any])
+      inline def setBlurHorizontalSize(value: Double): Self = StObject.set(x, "blurHorizontalSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlurTextureSizeRatio(value: Double): Self = StObject.set(x, "blurTextureSizeRatio", value.asInstanceOf[js.Any])
+      inline def setBlurTextureSizeRatio(value: Double): Self = StObject.set(x, "blurTextureSizeRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlurVerticalSize(value: Double): Self = StObject.set(x, "blurVerticalSize", value.asInstanceOf[js.Any])
+      inline def setBlurVerticalSize(value: Double): Self = StObject.set(x, "blurVerticalSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCamera(value: Nullable[Camera]): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+      inline def setCamera(value: Nullable[Camera]): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCameraNull: Self = StObject.set(x, "camera", null)
+      inline def setCameraNull: Self = StObject.set(x, "camera", null)
       
-      @scala.inline
-      def setIsStroke(value: Boolean): Self = StObject.set(x, "isStroke", value.asInstanceOf[js.Any])
+      inline def setIsStroke(value: Boolean): Self = StObject.set(x, "isStroke", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsStrokeUndefined: Self = StObject.set(x, "isStroke", js.undefined)
+      inline def setIsStrokeUndefined: Self = StObject.set(x, "isStroke", js.undefined)
       
-      @scala.inline
-      def setMainTextureFixedSize(value: Double): Self = StObject.set(x, "mainTextureFixedSize", value.asInstanceOf[js.Any])
+      inline def setMainTextureFixedSize(value: Double): Self = StObject.set(x, "mainTextureFixedSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMainTextureFixedSizeUndefined: Self = StObject.set(x, "mainTextureFixedSize", js.undefined)
+      inline def setMainTextureFixedSizeUndefined: Self = StObject.set(x, "mainTextureFixedSize", js.undefined)
       
-      @scala.inline
-      def setMainTextureRatio(value: Double): Self = StObject.set(x, "mainTextureRatio", value.asInstanceOf[js.Any])
+      inline def setMainTextureRatio(value: Double): Self = StObject.set(x, "mainTextureRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderingGroupId(value: Double): Self = StObject.set(x, "renderingGroupId", value.asInstanceOf[js.Any])
+      inline def setRenderingGroupId(value: Double): Self = StObject.set(x, "renderingGroupId", value.asInstanceOf[js.Any])
     }
   }
   
   /* augmented module */
   object babylonjsAbstractSceneAugmentingMod {
     
-    @js.native
     trait AbstractScene extends StObject {
       
       /**
@@ -304,21 +282,18 @@ object highlightLayerMod {
         * @param name The name of the highlight layer to look for.
         * @return The highlight layer if found otherwise null.
         */
-      def getHighlightLayerByName(name: String): Nullable[HighlightLayer] = js.native
+      def getHighlightLayerByName(name: String): Nullable[HighlightLayer]
     }
     object AbstractScene {
       
-      @scala.inline
-      def apply(getHighlightLayerByName: String => Nullable[HighlightLayer]): AbstractScene = {
+      inline def apply(getHighlightLayerByName: String => Nullable[HighlightLayer]): AbstractScene = {
         val __obj = js.Dynamic.literal(getHighlightLayerByName = js.Any.fromFunction1(getHighlightLayerByName))
         __obj.asInstanceOf[AbstractScene]
       }
       
-      @scala.inline
-      implicit class AbstractSceneMutableBuilder[Self <: AbstractScene] (val x: Self) extends AnyVal {
+      extension [Self <: AbstractScene](x: Self) {
         
-        @scala.inline
-        def setGetHighlightLayerByName(value: String => Nullable[HighlightLayer]): Self = StObject.set(x, "getHighlightLayerByName", js.Any.fromFunction1(value))
+        inline def setGetHighlightLayerByName(value: String => Nullable[HighlightLayer]): Self = StObject.set(x, "getHighlightLayerByName", js.Any.fromFunction1(value))
       }
     }
   }

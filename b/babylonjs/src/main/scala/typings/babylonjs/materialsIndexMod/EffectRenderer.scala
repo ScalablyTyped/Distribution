@@ -4,7 +4,6 @@ import typings.babylonjs.effectRendererMod.IEffectRendererOptions
 import typings.babylonjs.thinEngineMod.ThinEngine
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Materials/index", "EffectRenderer")
@@ -29,6 +28,5 @@ object EffectRenderer {
   @JSImport("babylonjs/Materials/index", "EffectRenderer._DefaultOptions")
   @js.native
   def _DefaultOptions: js.Any = js.native
-  @scala.inline
-  def _DefaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultOptions")(x.asInstanceOf[js.Any])
+  inline def _DefaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultOptions")(x.asInstanceOf[js.Any])
 }

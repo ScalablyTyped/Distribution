@@ -9,18 +9,25 @@ import typings.babylonjs.transformNodeMod.TransformNode
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object particleSystemSetMod {
   
   @JSImport("babylonjs/Particles/particleSystemSet", "ParticleSystemSet")
   @js.native
-  class ParticleSystemSet () extends IDisposable {
+  class ParticleSystemSet ()
+    extends StObject
+       with IDisposable {
     
-    var _emitterCreationOptions: js.Any = js.native
+    /* private */ var _emitterCreationOptions: js.Any = js.native
     
-    var _emitterNode: js.Any = js.native
+    /* private */ var _emitterNode: js.Any = js.native
+    
+    /**
+      * Releases all held resources
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * Gets the emitter node used with this set
@@ -68,8 +75,7 @@ object particleSystemSetMod {
     @JSImport("babylonjs/Particles/particleSystemSet", "ParticleSystemSet.BaseAssetsUrl")
     @js.native
     def BaseAssetsUrl: String = js.native
-    @scala.inline
-    def BaseAssetsUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BaseAssetsUrl")(x.asInstanceOf[js.Any])
+    inline def BaseAssetsUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BaseAssetsUrl")(x.asInstanceOf[js.Any])
     
     /**
       * Parse a new ParticleSystemSet from a serialized source
@@ -78,11 +84,7 @@ object particleSystemSetMod {
       * @param gpu defines if we want GPU particles or CPU particles
       * @returns a new ParticleSystemSet
       */
-    @JSImport("babylonjs/Particles/particleSystemSet", "ParticleSystemSet.Parse")
-    @js.native
-    def Parse(data: js.Any, scene: Scene): ParticleSystemSet = js.native
-    @JSImport("babylonjs/Particles/particleSystemSet", "ParticleSystemSet.Parse")
-    @js.native
-    def Parse(data: js.Any, scene: Scene, gpu: Boolean): ParticleSystemSet = js.native
+    inline def Parse(data: js.Any, scene: Scene): ParticleSystemSet = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(data.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[ParticleSystemSet]
+    inline def Parse(data: js.Any, scene: Scene, gpu: Boolean): ParticleSystemSet = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(data.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any])).asInstanceOf[ParticleSystemSet]
   }
 }

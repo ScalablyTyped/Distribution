@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.VRDistortionCorrectionPostProcess")
 @js.native
 class VRDistortionCorrectionPostProcess protected ()
-  extends typings.babylonjs.BABYLON.VRDistortionCorrectionPostProcess {
+  extends StObject
+     with typings.babylonjs.BABYLON.VRDistortionCorrectionPostProcess {
   /**
     * Initializes the VRDistortionCorrectionPostProcess
     * @param name The name of the effect.

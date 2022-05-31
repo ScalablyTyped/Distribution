@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.HDRCubeTexture")
 @js.native
 class HDRCubeTexture protected ()
-  extends typings.babylonjs.BABYLON.HDRCubeTexture {
+  extends StObject
+     with typings.babylonjs.BABYLON.HDRCubeTexture {
   /**
     * Instantiates an HDRTexture from the following parameters.
     *
@@ -32,10 +32,16 @@ class HDRCubeTexture protected ()
     onLoad: js.UndefOr[Nullable[js.Function0[Unit]]],
     onError: js.UndefOr[
         Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
         ]
       ]
   ) = this()
+  
+  /**
+    * Array of animations
+    */
+  /* CompleteClass */
+  var animations: Nullable[js.Array[typings.babylonjs.BABYLON.Animation]] = js.native
 }
 /* static members */
 object HDRCubeTexture {
@@ -51,13 +57,10 @@ object HDRCubeTexture {
     * @param rootUrl Define the root url in case we need to load relative dependencies
     * @returns the newly created texture after parsing
     */
-  @JSGlobal("BABYLON.HDRCubeTexture.Parse")
-  @js.native
-  def Parse(parsedTexture: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): Nullable[typings.babylonjs.BABYLON.HDRCubeTexture] = js.native
+  inline def Parse(parsedTexture: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): Nullable[typings.babylonjs.BABYLON.HDRCubeTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.HDRCubeTexture]]
   
   @JSGlobal("BABYLON.HDRCubeTexture._facesMapping")
   @js.native
   def _facesMapping: js.Any = js.native
-  @scala.inline
-  def _facesMapping_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_facesMapping")(x.asInstanceOf[js.Any])
+  inline def _facesMapping_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_facesMapping")(x.asInstanceOf[js.Any])
 }

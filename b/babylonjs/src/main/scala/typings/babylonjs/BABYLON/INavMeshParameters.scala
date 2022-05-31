@@ -2,88 +2,85 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait INavMeshParameters extends StObject {
   
   /**
     * The y-axis cell size to use for fields. [Limit: > 0] [Units: wu]
     */
-  var ch: Double = js.native
+  var ch: Double
   
   /**
     * The xz-plane cell size to use for fields. [Limit: > 0] [Units: wu]
     */
-  var cs: Double = js.native
+  var cs: Double
   
   /**
     * Sets the sampling distance to use when generating the detail mesh.
     * (For height detail only.) [Limits: 0 or >= 0.9] [Units: wu]
     */
-  var detailSampleDist: Double = js.native
+  var detailSampleDist: Double
   
   /**
     * The maximum distance the detail mesh surface should deviate from heightfield
     * data. (For height detail only.) [Limit: >=0] [Units: wu]
     */
-  var detailSampleMaxError: Double = js.native
+  var detailSampleMaxError: Double
   
   /**
     * The maximum allowed length for contour edges along the border of the mesh. [Limit: >=0] [Units: vx]
     */
-  var maxEdgeLen: Double = js.native
+  var maxEdgeLen: Double
   
   /**
     * The maximum distance a simplfied contour's border edges should deviate
     * the original raw contour. [Limit: >=0] [Units: vx]
     */
-  var maxSimplificationError: Double = js.native
+  var maxSimplificationError: Double
   
   /**
     * The maximum number of vertices allowed for polygons generated during the
     * contour to polygon conversion process. [Limit: >= 3]
     */
-  var maxVertsPerPoly: Double = js.native
+  var maxVertsPerPoly: Double
   
   /**
     * Any regions with a span count smaller than this value will, if possible,
     * be merged with larger regions. [Limit: >=0] [Units: vx]
     */
-  var mergeRegionArea: Double = js.native
+  var mergeRegionArea: Double
   
   /**
     * The minimum number of cells allowed to form isolated island areas. [Limit: >=0] [Units: vx]
     */
-  var minRegionArea: Double = js.native
+  var minRegionArea: Double
   
   /**
     * Maximum ledge height that is considered to still be traversable. [Limit: >=0] [Units: vx]
     */
-  var walkableClimb: Double = js.native
+  var walkableClimb: Double
   
   /**
     * Minimum floor to 'ceiling' height that will still allow the floor area to
     * be considered walkable. [Limit: >= 3] [Units: vx]
     */
-  var walkableHeight: Double = js.native
+  var walkableHeight: Double
   
   /**
     * The distance to erode/shrink the walkable area of the heightfield away from
     * obstructions.  [Limit: >=0] [Units: vx]
     */
-  var walkableRadius: Double = js.native
+  var walkableRadius: Double
   
   /**
     * The maximum slope that is considered walkable. [Limits: 0 <= value < 90] [Units: Degrees]
     */
-  var walkableSlopeAngle: Double = js.native
+  var walkableSlopeAngle: Double
 }
 object INavMeshParameters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ch: Double,
     cs: Double,
     detailSampleDist: Double,
@@ -102,46 +99,32 @@ object INavMeshParameters {
     __obj.asInstanceOf[INavMeshParameters]
   }
   
-  @scala.inline
-  implicit class INavMeshParametersMutableBuilder[Self <: INavMeshParameters] (val x: Self) extends AnyVal {
+  extension [Self <: INavMeshParameters](x: Self) {
     
-    @scala.inline
-    def setCh(value: Double): Self = StObject.set(x, "ch", value.asInstanceOf[js.Any])
+    inline def setCh(value: Double): Self = StObject.set(x, "ch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCs(value: Double): Self = StObject.set(x, "cs", value.asInstanceOf[js.Any])
+    inline def setCs(value: Double): Self = StObject.set(x, "cs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailSampleDist(value: Double): Self = StObject.set(x, "detailSampleDist", value.asInstanceOf[js.Any])
+    inline def setDetailSampleDist(value: Double): Self = StObject.set(x, "detailSampleDist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailSampleMaxError(value: Double): Self = StObject.set(x, "detailSampleMaxError", value.asInstanceOf[js.Any])
+    inline def setDetailSampleMaxError(value: Double): Self = StObject.set(x, "detailSampleMaxError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxEdgeLen(value: Double): Self = StObject.set(x, "maxEdgeLen", value.asInstanceOf[js.Any])
+    inline def setMaxEdgeLen(value: Double): Self = StObject.set(x, "maxEdgeLen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSimplificationError(value: Double): Self = StObject.set(x, "maxSimplificationError", value.asInstanceOf[js.Any])
+    inline def setMaxSimplificationError(value: Double): Self = StObject.set(x, "maxSimplificationError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxVertsPerPoly(value: Double): Self = StObject.set(x, "maxVertsPerPoly", value.asInstanceOf[js.Any])
+    inline def setMaxVertsPerPoly(value: Double): Self = StObject.set(x, "maxVertsPerPoly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeRegionArea(value: Double): Self = StObject.set(x, "mergeRegionArea", value.asInstanceOf[js.Any])
+    inline def setMergeRegionArea(value: Double): Self = StObject.set(x, "mergeRegionArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinRegionArea(value: Double): Self = StObject.set(x, "minRegionArea", value.asInstanceOf[js.Any])
+    inline def setMinRegionArea(value: Double): Self = StObject.set(x, "minRegionArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWalkableClimb(value: Double): Self = StObject.set(x, "walkableClimb", value.asInstanceOf[js.Any])
+    inline def setWalkableClimb(value: Double): Self = StObject.set(x, "walkableClimb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWalkableHeight(value: Double): Self = StObject.set(x, "walkableHeight", value.asInstanceOf[js.Any])
+    inline def setWalkableHeight(value: Double): Self = StObject.set(x, "walkableHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWalkableRadius(value: Double): Self = StObject.set(x, "walkableRadius", value.asInstanceOf[js.Any])
+    inline def setWalkableRadius(value: Double): Self = StObject.set(x, "walkableRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWalkableSlopeAngle(value: Double): Self = StObject.set(x, "walkableSlopeAngle", value.asInstanceOf[js.Any])
+    inline def setWalkableSlopeAngle(value: Double): Self = StObject.set(x, "walkableSlopeAngle", value.asInstanceOf[js.Any])
   }
 }

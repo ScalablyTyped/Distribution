@@ -11,13 +11,13 @@ import typings.babylonjs.BABYLON.SceneLoaderSuccessCallback
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.SceneLoader")
 @js.native
 class SceneLoader ()
-  extends typings.babylonjs.BABYLON.SceneLoader
+  extends StObject
+     with typings.babylonjs.BABYLON.SceneLoader
 /* static members */
 object SceneLoader {
   
@@ -36,9 +36,7 @@ object SceneLoader {
     * @param pluginExtension the extension used to determine the plugin
     * @returns The loaded plugin
     */
-  @JSGlobal("BABYLON.SceneLoader.Append")
-  @js.native
-  def Append(
+  inline def Append(
     rootUrl: String,
     sceneFilename: js.UndefOr[String | File],
     scene: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]],
@@ -49,13 +47,13 @@ object SceneLoader {
         js.Function3[
           /* scene */ typings.babylonjs.BABYLON.Scene, 
           /* message */ String, 
-          /* exception */ js.UndefOr[_], 
+          /* exception */ js.UndefOr[js.Any], 
           Unit
         ]
       ]
     ],
     pluginExtension: js.UndefOr[Nullable[String]]
-  ): Nullable[ISceneLoaderPlugin | ISceneLoaderPluginAsync] = js.native
+  ): Nullable[ISceneLoaderPlugin | ISceneLoaderPluginAsync] = (^.asInstanceOf[js.Dynamic].applyDynamic("Append")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[Nullable[ISceneLoaderPlugin | ISceneLoaderPluginAsync]]
   
   /**
     * Append a scene
@@ -66,79 +64,132 @@ object SceneLoader {
     * @param pluginExtension the extension used to determine the plugin
     * @returns The given scene
     */
-  @JSGlobal("BABYLON.SceneLoader.AppendAsync")
-  @js.native
-  def AppendAsync(rootUrl: String): js.Promise[typings.babylonjs.BABYLON.Scene] = js.native
-  @JSGlobal("BABYLON.SceneLoader.AppendAsync")
-  @js.native
-  def AppendAsync(
-    rootUrl: String,
-    sceneFilename: js.UndefOr[scala.Nothing],
-    scene: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]],
-    onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
-    pluginExtension: Nullable[String]
-  ): js.Promise[typings.babylonjs.BABYLON.Scene] = js.native
-  @JSGlobal("BABYLON.SceneLoader.AppendAsync")
-  @js.native
-  def AppendAsync(
-    rootUrl: String,
-    sceneFilename: js.UndefOr[scala.Nothing],
-    scene: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]],
-    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
-  ): js.Promise[typings.babylonjs.BABYLON.Scene] = js.native
-  @JSGlobal("BABYLON.SceneLoader.AppendAsync")
-  @js.native
-  def AppendAsync(
-    rootUrl: String,
-    sceneFilename: js.UndefOr[scala.Nothing],
-    scene: Nullable[typings.babylonjs.BABYLON.Scene]
-  ): js.Promise[typings.babylonjs.BABYLON.Scene] = js.native
-  @JSGlobal("BABYLON.SceneLoader.AppendAsync")
-  @js.native
-  def AppendAsync(rootUrl: String, sceneFilename: String): js.Promise[typings.babylonjs.BABYLON.Scene] = js.native
-  @JSGlobal("BABYLON.SceneLoader.AppendAsync")
-  @js.native
-  def AppendAsync(
+  inline def AppendAsync(rootUrl: String): js.Promise[typings.babylonjs.BABYLON.Scene] = ^.asInstanceOf[js.Dynamic].applyDynamic("AppendAsync")(rootUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def AppendAsync(rootUrl: String, sceneFilename: String): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("AppendAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def AppendAsync(
     rootUrl: String,
     sceneFilename: String,
-    scene: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]],
-    onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
+    scene: Unit,
+    onProgress: Unit,
     pluginExtension: Nullable[String]
-  ): js.Promise[typings.babylonjs.BABYLON.Scene] = js.native
-  @JSGlobal("BABYLON.SceneLoader.AppendAsync")
-  @js.native
-  def AppendAsync(
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("AppendAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def AppendAsync(
     rootUrl: String,
     sceneFilename: String,
-    scene: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]],
+    scene: Unit,
     onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
-  ): js.Promise[typings.babylonjs.BABYLON.Scene] = js.native
-  @JSGlobal("BABYLON.SceneLoader.AppendAsync")
-  @js.native
-  def AppendAsync(rootUrl: String, sceneFilename: String, scene: Nullable[typings.babylonjs.BABYLON.Scene]): js.Promise[typings.babylonjs.BABYLON.Scene] = js.native
-  @JSGlobal("BABYLON.SceneLoader.AppendAsync")
-  @js.native
-  def AppendAsync(rootUrl: String, sceneFilename: File): js.Promise[typings.babylonjs.BABYLON.Scene] = js.native
-  @JSGlobal("BABYLON.SceneLoader.AppendAsync")
-  @js.native
-  def AppendAsync(
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("AppendAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def AppendAsync(
     rootUrl: String,
-    sceneFilename: File,
-    scene: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]],
-    onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
+    sceneFilename: String,
+    scene: Unit,
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]],
     pluginExtension: Nullable[String]
-  ): js.Promise[typings.babylonjs.BABYLON.Scene] = js.native
-  @JSGlobal("BABYLON.SceneLoader.AppendAsync")
-  @js.native
-  def AppendAsync(
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("AppendAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def AppendAsync(rootUrl: String, sceneFilename: String, scene: Nullable[typings.babylonjs.BABYLON.Scene]): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("AppendAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def AppendAsync(
+    rootUrl: String,
+    sceneFilename: String,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    onProgress: Unit,
+    pluginExtension: Nullable[String]
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("AppendAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def AppendAsync(
+    rootUrl: String,
+    sceneFilename: String,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("AppendAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def AppendAsync(
+    rootUrl: String,
+    sceneFilename: String,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]],
+    pluginExtension: Nullable[String]
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("AppendAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def AppendAsync(
+    rootUrl: String,
+    sceneFilename: Unit,
+    scene: Unit,
+    onProgress: Unit,
+    pluginExtension: Nullable[String]
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("AppendAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def AppendAsync(
+    rootUrl: String,
+    sceneFilename: Unit,
+    scene: Unit,
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("AppendAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def AppendAsync(
+    rootUrl: String,
+    sceneFilename: Unit,
+    scene: Unit,
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]],
+    pluginExtension: Nullable[String]
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("AppendAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def AppendAsync(rootUrl: String, sceneFilename: Unit, scene: Nullable[typings.babylonjs.BABYLON.Scene]): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("AppendAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def AppendAsync(
+    rootUrl: String,
+    sceneFilename: Unit,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    onProgress: Unit,
+    pluginExtension: Nullable[String]
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("AppendAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def AppendAsync(
+    rootUrl: String,
+    sceneFilename: Unit,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("AppendAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def AppendAsync(
+    rootUrl: String,
+    sceneFilename: Unit,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]],
+    pluginExtension: Nullable[String]
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("AppendAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def AppendAsync(rootUrl: String, sceneFilename: File): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("AppendAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def AppendAsync(
     rootUrl: String,
     sceneFilename: File,
-    scene: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]],
+    scene: Unit,
+    onProgress: Unit,
+    pluginExtension: Nullable[String]
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("AppendAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def AppendAsync(
+    rootUrl: String,
+    sceneFilename: File,
+    scene: Unit,
     onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
-  ): js.Promise[typings.babylonjs.BABYLON.Scene] = js.native
-  @JSGlobal("BABYLON.SceneLoader.AppendAsync")
-  @js.native
-  def AppendAsync(rootUrl: String, sceneFilename: File, scene: Nullable[typings.babylonjs.BABYLON.Scene]): js.Promise[typings.babylonjs.BABYLON.Scene] = js.native
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("AppendAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def AppendAsync(
+    rootUrl: String,
+    sceneFilename: File,
+    scene: Unit,
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]],
+    pluginExtension: Nullable[String]
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("AppendAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def AppendAsync(rootUrl: String, sceneFilename: File, scene: Nullable[typings.babylonjs.BABYLON.Scene]): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("AppendAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def AppendAsync(
+    rootUrl: String,
+    sceneFilename: File,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    onProgress: Unit,
+    pluginExtension: Nullable[String]
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("AppendAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def AppendAsync(
+    rootUrl: String,
+    sceneFilename: File,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("AppendAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def AppendAsync(
+    rootUrl: String,
+    sceneFilename: File,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]],
+    pluginExtension: Nullable[String]
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("AppendAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
   
   /**
     * Detailled logging while loading
@@ -151,18 +202,14 @@ object SceneLoader {
     * Gets the default plugin (used to load Babylon files)
     * @returns the .babylon plugin
     */
-  @JSGlobal("BABYLON.SceneLoader.GetDefaultPlugin")
-  @js.native
-  def GetDefaultPlugin(): IRegisteredPlugin = js.native
+  inline def GetDefaultPlugin(): IRegisteredPlugin = ^.asInstanceOf[js.Dynamic].applyDynamic("GetDefaultPlugin")().asInstanceOf[IRegisteredPlugin]
   
   /**
     * Gets a plugin that can load the given extension
     * @param extension defines the extension to load
     * @returns a plugin or null if none works
     */
-  @JSGlobal("BABYLON.SceneLoader.GetPluginForExtension")
-  @js.native
-  def GetPluginForExtension(extension: String): ISceneLoaderPlugin | ISceneLoaderPluginAsync | ISceneLoaderPluginFactory = js.native
+  inline def GetPluginForExtension(`extension`: String): ISceneLoaderPlugin | ISceneLoaderPluginAsync | ISceneLoaderPluginFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("GetPluginForExtension")(`extension`.asInstanceOf[js.Any]).asInstanceOf[ISceneLoaderPlugin | ISceneLoaderPluginAsync | ISceneLoaderPluginFactory]
   
   /**
     * Import animations from a file into a scene
@@ -177,15 +224,13 @@ object SceneLoader {
     * @param onError a callback with the scene, a message, and possibly an exception when import fails
     * @param pluginExtension the extension used to determine the plugin
     */
-  @JSGlobal("BABYLON.SceneLoader.ImportAnimations")
-  @js.native
-  def ImportAnimations(
+  inline def ImportAnimations(
     rootUrl: String,
     sceneFilename: js.UndefOr[String | File],
     scene: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]],
     overwriteAnimations: js.UndefOr[Boolean],
     animationGroupLoadingMode: js.UndefOr[typings.babylonjs.BABYLON.SceneLoaderAnimationGroupLoadingMode],
-    targetConverter: js.UndefOr[Nullable[js.Function1[/* target */ _, _]]],
+    targetConverter: js.UndefOr[Nullable[js.Function1[/* target */ js.Any, js.Any]]],
     onSuccess: js.UndefOr[Nullable[js.Function1[/* scene */ typings.babylonjs.BABYLON.Scene, Unit]]],
     onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
     onError: js.UndefOr[
@@ -193,13 +238,13 @@ object SceneLoader {
         js.Function3[
           /* scene */ typings.babylonjs.BABYLON.Scene, 
           /* message */ String, 
-          /* exception */ js.UndefOr[_], 
+          /* exception */ js.UndefOr[js.Any], 
           Unit
         ]
       ]
     ],
     pluginExtension: js.UndefOr[Nullable[String]]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportAnimations")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], overwriteAnimations.asInstanceOf[js.Any], animationGroupLoadingMode.asInstanceOf[js.Any], targetConverter.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Import animations from a file into a scene
@@ -215,15 +260,13 @@ object SceneLoader {
     * @param pluginExtension the extension used to determine the plugin
     * @returns the updated scene with imported animations
     */
-  @JSGlobal("BABYLON.SceneLoader.ImportAnimationsAsync")
-  @js.native
-  def ImportAnimationsAsync(
+  inline def ImportAnimationsAsync(
     rootUrl: String,
     sceneFilename: js.UndefOr[String | File],
     scene: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]],
     overwriteAnimations: js.UndefOr[Boolean],
     animationGroupLoadingMode: js.UndefOr[typings.babylonjs.BABYLON.SceneLoaderAnimationGroupLoadingMode],
-    targetConverter: js.UndefOr[Nullable[js.Function1[/* target */ _, _]]],
+    targetConverter: js.UndefOr[Nullable[js.Function1[/* target */ js.Any, js.Any]]],
     onSuccess: js.UndefOr[Nullable[js.Function1[/* scene */ typings.babylonjs.BABYLON.Scene, Unit]]],
     onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
     onError: js.UndefOr[
@@ -231,13 +274,13 @@ object SceneLoader {
         js.Function3[
           /* scene */ typings.babylonjs.BABYLON.Scene, 
           /* message */ String, 
-          /* exception */ js.UndefOr[_], 
+          /* exception */ js.UndefOr[js.Any], 
           Unit
         ]
       ]
     ],
     pluginExtension: js.UndefOr[Nullable[String]]
-  ): js.Promise[typings.babylonjs.BABYLON.Scene] = js.native
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportAnimationsAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], overwriteAnimations.asInstanceOf[js.Any], animationGroupLoadingMode.asInstanceOf[js.Any], targetConverter.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
   
   /**
     * Import meshes into a scene
@@ -251,9 +294,7 @@ object SceneLoader {
     * @param pluginExtension the extension used to determine the plugin
     * @returns The loaded plugin
     */
-  @JSGlobal("BABYLON.SceneLoader.ImportMesh")
-  @js.native
-  def ImportMesh(
+  inline def ImportMesh(
     meshNames: js.Any,
     rootUrl: String,
     sceneFilename: js.UndefOr[String | File],
@@ -265,13 +306,13 @@ object SceneLoader {
         js.Function3[
           /* scene */ typings.babylonjs.BABYLON.Scene, 
           /* message */ String, 
-          /* exception */ js.UndefOr[_], 
+          /* exception */ js.UndefOr[js.Any], 
           Unit
         ]
       ]
     ],
     pluginExtension: js.UndefOr[Nullable[String]]
-  ): Nullable[ISceneLoaderPlugin | ISceneLoaderPluginAsync] = js.native
+  ): Nullable[ISceneLoaderPlugin | ISceneLoaderPluginAsync] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMesh")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[Nullable[ISceneLoaderPlugin | ISceneLoaderPluginAsync]]
   
   /**
     * Import meshes into a scene
@@ -283,105 +324,172 @@ object SceneLoader {
     * @param pluginExtension the extension used to determine the plugin
     * @returns The loaded list of imported meshes, particle systems, skeletons, and animation groups
     */
-  @JSGlobal("BABYLON.SceneLoader.ImportMeshAsync")
-  @js.native
-  def ImportMeshAsync(meshNames: js.Any, rootUrl: String): js.Promise[ISceneLoaderAsyncResult] = js.native
-  @JSGlobal("BABYLON.SceneLoader.ImportMeshAsync")
-  @js.native
-  def ImportMeshAsync(
-    meshNames: js.Any,
-    rootUrl: String,
-    sceneFilename: js.UndefOr[scala.Nothing],
-    scene: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]],
-    onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
-    pluginExtension: Nullable[String]
-  ): js.Promise[ISceneLoaderAsyncResult] = js.native
-  @JSGlobal("BABYLON.SceneLoader.ImportMeshAsync")
-  @js.native
-  def ImportMeshAsync(
-    meshNames: js.Any,
-    rootUrl: String,
-    sceneFilename: js.UndefOr[scala.Nothing],
-    scene: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]],
-    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
-  ): js.Promise[ISceneLoaderAsyncResult] = js.native
-  @JSGlobal("BABYLON.SceneLoader.ImportMeshAsync")
-  @js.native
-  def ImportMeshAsync(
-    meshNames: js.Any,
-    rootUrl: String,
-    sceneFilename: js.UndefOr[scala.Nothing],
-    scene: Nullable[typings.babylonjs.BABYLON.Scene]
-  ): js.Promise[ISceneLoaderAsyncResult] = js.native
-  @JSGlobal("BABYLON.SceneLoader.ImportMeshAsync")
-  @js.native
-  def ImportMeshAsync(meshNames: js.Any, rootUrl: String, sceneFilename: String): js.Promise[ISceneLoaderAsyncResult] = js.native
-  @JSGlobal("BABYLON.SceneLoader.ImportMeshAsync")
-  @js.native
-  def ImportMeshAsync(
+  inline def ImportMeshAsync(meshNames: js.Any, rootUrl: String): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
+  inline def ImportMeshAsync(meshNames: js.Any, rootUrl: String, sceneFilename: String): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
+  inline def ImportMeshAsync(
     meshNames: js.Any,
     rootUrl: String,
     sceneFilename: String,
-    scene: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]],
-    onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
+    scene: Unit,
+    onProgress: Unit,
     pluginExtension: Nullable[String]
-  ): js.Promise[ISceneLoaderAsyncResult] = js.native
-  @JSGlobal("BABYLON.SceneLoader.ImportMeshAsync")
-  @js.native
-  def ImportMeshAsync(
+  ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
+  inline def ImportMeshAsync(
     meshNames: js.Any,
     rootUrl: String,
     sceneFilename: String,
-    scene: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]],
+    scene: Unit,
     onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
-  ): js.Promise[ISceneLoaderAsyncResult] = js.native
-  @JSGlobal("BABYLON.SceneLoader.ImportMeshAsync")
-  @js.native
-  def ImportMeshAsync(
+  ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
+  inline def ImportMeshAsync(
+    meshNames: js.Any,
+    rootUrl: String,
+    sceneFilename: String,
+    scene: Unit,
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]],
+    pluginExtension: Nullable[String]
+  ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
+  inline def ImportMeshAsync(
     meshNames: js.Any,
     rootUrl: String,
     sceneFilename: String,
     scene: Nullable[typings.babylonjs.BABYLON.Scene]
-  ): js.Promise[ISceneLoaderAsyncResult] = js.native
-  @JSGlobal("BABYLON.SceneLoader.ImportMeshAsync")
-  @js.native
-  def ImportMeshAsync(meshNames: js.Any, rootUrl: String, sceneFilename: File): js.Promise[ISceneLoaderAsyncResult] = js.native
-  @JSGlobal("BABYLON.SceneLoader.ImportMeshAsync")
-  @js.native
-  def ImportMeshAsync(
+  ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
+  inline def ImportMeshAsync(
     meshNames: js.Any,
     rootUrl: String,
-    sceneFilename: File,
-    scene: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]],
-    onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
+    sceneFilename: String,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    onProgress: Unit,
     pluginExtension: Nullable[String]
-  ): js.Promise[ISceneLoaderAsyncResult] = js.native
-  @JSGlobal("BABYLON.SceneLoader.ImportMeshAsync")
-  @js.native
-  def ImportMeshAsync(
+  ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
+  inline def ImportMeshAsync(
+    meshNames: js.Any,
+    rootUrl: String,
+    sceneFilename: String,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
+  ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
+  inline def ImportMeshAsync(
+    meshNames: js.Any,
+    rootUrl: String,
+    sceneFilename: String,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]],
+    pluginExtension: Nullable[String]
+  ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
+  inline def ImportMeshAsync(
+    meshNames: js.Any,
+    rootUrl: String,
+    sceneFilename: Unit,
+    scene: Unit,
+    onProgress: Unit,
+    pluginExtension: Nullable[String]
+  ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
+  inline def ImportMeshAsync(
+    meshNames: js.Any,
+    rootUrl: String,
+    sceneFilename: Unit,
+    scene: Unit,
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
+  ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
+  inline def ImportMeshAsync(
+    meshNames: js.Any,
+    rootUrl: String,
+    sceneFilename: Unit,
+    scene: Unit,
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]],
+    pluginExtension: Nullable[String]
+  ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
+  inline def ImportMeshAsync(
+    meshNames: js.Any,
+    rootUrl: String,
+    sceneFilename: Unit,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene]
+  ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
+  inline def ImportMeshAsync(
+    meshNames: js.Any,
+    rootUrl: String,
+    sceneFilename: Unit,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    onProgress: Unit,
+    pluginExtension: Nullable[String]
+  ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
+  inline def ImportMeshAsync(
+    meshNames: js.Any,
+    rootUrl: String,
+    sceneFilename: Unit,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
+  ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
+  inline def ImportMeshAsync(
+    meshNames: js.Any,
+    rootUrl: String,
+    sceneFilename: Unit,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]],
+    pluginExtension: Nullable[String]
+  ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
+  inline def ImportMeshAsync(meshNames: js.Any, rootUrl: String, sceneFilename: File): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
+  inline def ImportMeshAsync(
     meshNames: js.Any,
     rootUrl: String,
     sceneFilename: File,
-    scene: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]],
+    scene: Unit,
+    onProgress: Unit,
+    pluginExtension: Nullable[String]
+  ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
+  inline def ImportMeshAsync(
+    meshNames: js.Any,
+    rootUrl: String,
+    sceneFilename: File,
+    scene: Unit,
     onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
-  ): js.Promise[ISceneLoaderAsyncResult] = js.native
-  @JSGlobal("BABYLON.SceneLoader.ImportMeshAsync")
-  @js.native
-  def ImportMeshAsync(
+  ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
+  inline def ImportMeshAsync(
+    meshNames: js.Any,
+    rootUrl: String,
+    sceneFilename: File,
+    scene: Unit,
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]],
+    pluginExtension: Nullable[String]
+  ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
+  inline def ImportMeshAsync(
     meshNames: js.Any,
     rootUrl: String,
     sceneFilename: File,
     scene: Nullable[typings.babylonjs.BABYLON.Scene]
-  ): js.Promise[ISceneLoaderAsyncResult] = js.native
+  ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
+  inline def ImportMeshAsync(
+    meshNames: js.Any,
+    rootUrl: String,
+    sceneFilename: File,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    onProgress: Unit,
+    pluginExtension: Nullable[String]
+  ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
+  inline def ImportMeshAsync(
+    meshNames: js.Any,
+    rootUrl: String,
+    sceneFilename: File,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
+  ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
+  inline def ImportMeshAsync(
+    meshNames: js.Any,
+    rootUrl: String,
+    sceneFilename: File,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]],
+    pluginExtension: Nullable[String]
+  ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
   
   /**
     * Gets a boolean indicating that the given extension can be loaded
     * @param extension defines the extension to load
     * @returns true if the extension is supported
     */
-  @JSGlobal("BABYLON.SceneLoader.IsPluginForExtensionAvailable")
-  @js.native
-  def IsPluginForExtensionAvailable(extension: String): Boolean = js.native
+  inline def IsPluginForExtensionAvailable(`extension`: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsPluginForExtensionAvailable")(`extension`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Load a scene
@@ -394,9 +502,7 @@ object SceneLoader {
     * @param pluginExtension the extension used to determine the plugin
     * @returns The loaded plugin
     */
-  @JSGlobal("BABYLON.SceneLoader.Load")
-  @js.native
-  def Load(
+  inline def Load(
     rootUrl: String,
     sceneFilename: js.UndefOr[String | File],
     engine: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Engine]],
@@ -407,13 +513,13 @@ object SceneLoader {
         js.Function3[
           /* scene */ typings.babylonjs.BABYLON.Scene, 
           /* message */ String, 
-          /* exception */ js.UndefOr[_], 
+          /* exception */ js.UndefOr[js.Any], 
           Unit
         ]
       ]
     ],
     pluginExtension: js.UndefOr[Nullable[String]]
-  ): Nullable[ISceneLoaderPlugin | ISceneLoaderPluginAsync] = js.native
+  ): Nullable[ISceneLoaderPlugin | ISceneLoaderPluginAsync] = (^.asInstanceOf[js.Dynamic].applyDynamic("Load")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[Nullable[ISceneLoaderPlugin | ISceneLoaderPluginAsync]]
   
   /**
     * Load a scene into an asset container
@@ -426,9 +532,7 @@ object SceneLoader {
     * @param pluginExtension the extension used to determine the plugin
     * @returns The loaded plugin
     */
-  @JSGlobal("BABYLON.SceneLoader.LoadAssetContainer")
-  @js.native
-  def LoadAssetContainer(
+  inline def LoadAssetContainer(
     rootUrl: String,
     sceneFilename: js.UndefOr[String | File],
     scene: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]],
@@ -441,13 +545,13 @@ object SceneLoader {
         js.Function3[
           /* scene */ typings.babylonjs.BABYLON.Scene, 
           /* message */ String, 
-          /* exception */ js.UndefOr[_], 
+          /* exception */ js.UndefOr[js.Any], 
           Unit
         ]
       ]
     ],
     pluginExtension: js.UndefOr[Nullable[String]]
-  ): Nullable[ISceneLoaderPlugin | ISceneLoaderPluginAsync] = js.native
+  ): Nullable[ISceneLoaderPlugin | ISceneLoaderPluginAsync] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAssetContainer")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[Nullable[ISceneLoaderPlugin | ISceneLoaderPluginAsync]]
   
   /**
     * Load a scene into an asset container
@@ -458,56 +562,90 @@ object SceneLoader {
     * @param pluginExtension the extension used to determine the plugin
     * @returns The loaded asset container
     */
-  @JSGlobal("BABYLON.SceneLoader.LoadAssetContainerAsync")
-  @js.native
-  def LoadAssetContainerAsync(rootUrl: String): js.Promise[typings.babylonjs.BABYLON.AssetContainer] = js.native
-  @JSGlobal("BABYLON.SceneLoader.LoadAssetContainerAsync")
-  @js.native
-  def LoadAssetContainerAsync(
-    rootUrl: String,
-    sceneFilename: js.UndefOr[scala.Nothing],
-    scene: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]],
-    onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
-    pluginExtension: Nullable[String]
-  ): js.Promise[typings.babylonjs.BABYLON.AssetContainer] = js.native
-  @JSGlobal("BABYLON.SceneLoader.LoadAssetContainerAsync")
-  @js.native
-  def LoadAssetContainerAsync(
-    rootUrl: String,
-    sceneFilename: js.UndefOr[scala.Nothing],
-    scene: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]],
-    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
-  ): js.Promise[typings.babylonjs.BABYLON.AssetContainer] = js.native
-  @JSGlobal("BABYLON.SceneLoader.LoadAssetContainerAsync")
-  @js.native
-  def LoadAssetContainerAsync(
-    rootUrl: String,
-    sceneFilename: js.UndefOr[scala.Nothing],
-    scene: Nullable[typings.babylonjs.BABYLON.Scene]
-  ): js.Promise[typings.babylonjs.BABYLON.AssetContainer] = js.native
-  @JSGlobal("BABYLON.SceneLoader.LoadAssetContainerAsync")
-  @js.native
-  def LoadAssetContainerAsync(rootUrl: String, sceneFilename: String): js.Promise[typings.babylonjs.BABYLON.AssetContainer] = js.native
-  @JSGlobal("BABYLON.SceneLoader.LoadAssetContainerAsync")
-  @js.native
-  def LoadAssetContainerAsync(
+  inline def LoadAssetContainerAsync(rootUrl: String): js.Promise[typings.babylonjs.BABYLON.AssetContainer] = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadAssetContainerAsync")(rootUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.AssetContainer]]
+  inline def LoadAssetContainerAsync(rootUrl: String, sceneFilename: String): js.Promise[typings.babylonjs.BABYLON.AssetContainer] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAssetContainerAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.AssetContainer]]
+  inline def LoadAssetContainerAsync(
     rootUrl: String,
     sceneFilename: String,
-    scene: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]],
-    onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
+    scene: Unit,
+    onProgress: Unit,
     pluginExtension: Nullable[String]
-  ): js.Promise[typings.babylonjs.BABYLON.AssetContainer] = js.native
-  @JSGlobal("BABYLON.SceneLoader.LoadAssetContainerAsync")
-  @js.native
-  def LoadAssetContainerAsync(
+  ): js.Promise[typings.babylonjs.BABYLON.AssetContainer] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAssetContainerAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.AssetContainer]]
+  inline def LoadAssetContainerAsync(
     rootUrl: String,
     sceneFilename: String,
-    scene: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]],
+    scene: Unit,
     onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
-  ): js.Promise[typings.babylonjs.BABYLON.AssetContainer] = js.native
-  @JSGlobal("BABYLON.SceneLoader.LoadAssetContainerAsync")
-  @js.native
-  def LoadAssetContainerAsync(rootUrl: String, sceneFilename: String, scene: Nullable[typings.babylonjs.BABYLON.Scene]): js.Promise[typings.babylonjs.BABYLON.AssetContainer] = js.native
+  ): js.Promise[typings.babylonjs.BABYLON.AssetContainer] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAssetContainerAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.AssetContainer]]
+  inline def LoadAssetContainerAsync(
+    rootUrl: String,
+    sceneFilename: String,
+    scene: Unit,
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]],
+    pluginExtension: Nullable[String]
+  ): js.Promise[typings.babylonjs.BABYLON.AssetContainer] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAssetContainerAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.AssetContainer]]
+  inline def LoadAssetContainerAsync(rootUrl: String, sceneFilename: String, scene: Nullable[typings.babylonjs.BABYLON.Scene]): js.Promise[typings.babylonjs.BABYLON.AssetContainer] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAssetContainerAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.AssetContainer]]
+  inline def LoadAssetContainerAsync(
+    rootUrl: String,
+    sceneFilename: String,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    onProgress: Unit,
+    pluginExtension: Nullable[String]
+  ): js.Promise[typings.babylonjs.BABYLON.AssetContainer] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAssetContainerAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.AssetContainer]]
+  inline def LoadAssetContainerAsync(
+    rootUrl: String,
+    sceneFilename: String,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
+  ): js.Promise[typings.babylonjs.BABYLON.AssetContainer] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAssetContainerAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.AssetContainer]]
+  inline def LoadAssetContainerAsync(
+    rootUrl: String,
+    sceneFilename: String,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]],
+    pluginExtension: Nullable[String]
+  ): js.Promise[typings.babylonjs.BABYLON.AssetContainer] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAssetContainerAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.AssetContainer]]
+  inline def LoadAssetContainerAsync(
+    rootUrl: String,
+    sceneFilename: Unit,
+    scene: Unit,
+    onProgress: Unit,
+    pluginExtension: Nullable[String]
+  ): js.Promise[typings.babylonjs.BABYLON.AssetContainer] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAssetContainerAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.AssetContainer]]
+  inline def LoadAssetContainerAsync(
+    rootUrl: String,
+    sceneFilename: Unit,
+    scene: Unit,
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
+  ): js.Promise[typings.babylonjs.BABYLON.AssetContainer] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAssetContainerAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.AssetContainer]]
+  inline def LoadAssetContainerAsync(
+    rootUrl: String,
+    sceneFilename: Unit,
+    scene: Unit,
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]],
+    pluginExtension: Nullable[String]
+  ): js.Promise[typings.babylonjs.BABYLON.AssetContainer] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAssetContainerAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.AssetContainer]]
+  inline def LoadAssetContainerAsync(rootUrl: String, sceneFilename: Unit, scene: Nullable[typings.babylonjs.BABYLON.Scene]): js.Promise[typings.babylonjs.BABYLON.AssetContainer] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAssetContainerAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.AssetContainer]]
+  inline def LoadAssetContainerAsync(
+    rootUrl: String,
+    sceneFilename: Unit,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    onProgress: Unit,
+    pluginExtension: Nullable[String]
+  ): js.Promise[typings.babylonjs.BABYLON.AssetContainer] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAssetContainerAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.AssetContainer]]
+  inline def LoadAssetContainerAsync(
+    rootUrl: String,
+    sceneFilename: Unit,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
+  ): js.Promise[typings.babylonjs.BABYLON.AssetContainer] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAssetContainerAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.AssetContainer]]
+  inline def LoadAssetContainerAsync(
+    rootUrl: String,
+    sceneFilename: Unit,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]],
+    pluginExtension: Nullable[String]
+  ): js.Promise[typings.babylonjs.BABYLON.AssetContainer] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAssetContainerAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.AssetContainer]]
   
   /**
     * Load a scene
@@ -518,79 +656,132 @@ object SceneLoader {
     * @param pluginExtension the extension used to determine the plugin
     * @returns The loaded scene
     */
-  @JSGlobal("BABYLON.SceneLoader.LoadAsync")
-  @js.native
-  def LoadAsync(rootUrl: String): js.Promise[typings.babylonjs.BABYLON.Scene] = js.native
-  @JSGlobal("BABYLON.SceneLoader.LoadAsync")
-  @js.native
-  def LoadAsync(
-    rootUrl: String,
-    sceneFilename: js.UndefOr[scala.Nothing],
-    engine: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Engine]],
-    onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
-    pluginExtension: Nullable[String]
-  ): js.Promise[typings.babylonjs.BABYLON.Scene] = js.native
-  @JSGlobal("BABYLON.SceneLoader.LoadAsync")
-  @js.native
-  def LoadAsync(
-    rootUrl: String,
-    sceneFilename: js.UndefOr[scala.Nothing],
-    engine: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Engine]],
-    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
-  ): js.Promise[typings.babylonjs.BABYLON.Scene] = js.native
-  @JSGlobal("BABYLON.SceneLoader.LoadAsync")
-  @js.native
-  def LoadAsync(
-    rootUrl: String,
-    sceneFilename: js.UndefOr[scala.Nothing],
-    engine: Nullable[typings.babylonjs.BABYLON.Engine]
-  ): js.Promise[typings.babylonjs.BABYLON.Scene] = js.native
-  @JSGlobal("BABYLON.SceneLoader.LoadAsync")
-  @js.native
-  def LoadAsync(rootUrl: String, sceneFilename: String): js.Promise[typings.babylonjs.BABYLON.Scene] = js.native
-  @JSGlobal("BABYLON.SceneLoader.LoadAsync")
-  @js.native
-  def LoadAsync(
+  inline def LoadAsync(rootUrl: String): js.Promise[typings.babylonjs.BABYLON.Scene] = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadAsync")(rootUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def LoadAsync(rootUrl: String, sceneFilename: String): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def LoadAsync(
     rootUrl: String,
     sceneFilename: String,
-    engine: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Engine]],
-    onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
+    engine: Unit,
+    onProgress: Unit,
     pluginExtension: Nullable[String]
-  ): js.Promise[typings.babylonjs.BABYLON.Scene] = js.native
-  @JSGlobal("BABYLON.SceneLoader.LoadAsync")
-  @js.native
-  def LoadAsync(
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def LoadAsync(
     rootUrl: String,
     sceneFilename: String,
-    engine: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Engine]],
+    engine: Unit,
     onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
-  ): js.Promise[typings.babylonjs.BABYLON.Scene] = js.native
-  @JSGlobal("BABYLON.SceneLoader.LoadAsync")
-  @js.native
-  def LoadAsync(rootUrl: String, sceneFilename: String, engine: Nullable[typings.babylonjs.BABYLON.Engine]): js.Promise[typings.babylonjs.BABYLON.Scene] = js.native
-  @JSGlobal("BABYLON.SceneLoader.LoadAsync")
-  @js.native
-  def LoadAsync(rootUrl: String, sceneFilename: File): js.Promise[typings.babylonjs.BABYLON.Scene] = js.native
-  @JSGlobal("BABYLON.SceneLoader.LoadAsync")
-  @js.native
-  def LoadAsync(
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def LoadAsync(
     rootUrl: String,
-    sceneFilename: File,
-    engine: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Engine]],
-    onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
+    sceneFilename: String,
+    engine: Unit,
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]],
     pluginExtension: Nullable[String]
-  ): js.Promise[typings.babylonjs.BABYLON.Scene] = js.native
-  @JSGlobal("BABYLON.SceneLoader.LoadAsync")
-  @js.native
-  def LoadAsync(
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def LoadAsync(rootUrl: String, sceneFilename: String, engine: Nullable[typings.babylonjs.BABYLON.Engine]): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], engine.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def LoadAsync(
+    rootUrl: String,
+    sceneFilename: String,
+    engine: Nullable[typings.babylonjs.BABYLON.Engine],
+    onProgress: Unit,
+    pluginExtension: Nullable[String]
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def LoadAsync(
+    rootUrl: String,
+    sceneFilename: String,
+    engine: Nullable[typings.babylonjs.BABYLON.Engine],
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def LoadAsync(
+    rootUrl: String,
+    sceneFilename: String,
+    engine: Nullable[typings.babylonjs.BABYLON.Engine],
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]],
+    pluginExtension: Nullable[String]
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def LoadAsync(
+    rootUrl: String,
+    sceneFilename: Unit,
+    engine: Unit,
+    onProgress: Unit,
+    pluginExtension: Nullable[String]
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def LoadAsync(
+    rootUrl: String,
+    sceneFilename: Unit,
+    engine: Unit,
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def LoadAsync(
+    rootUrl: String,
+    sceneFilename: Unit,
+    engine: Unit,
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]],
+    pluginExtension: Nullable[String]
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def LoadAsync(rootUrl: String, sceneFilename: Unit, engine: Nullable[typings.babylonjs.BABYLON.Engine]): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], engine.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def LoadAsync(
+    rootUrl: String,
+    sceneFilename: Unit,
+    engine: Nullable[typings.babylonjs.BABYLON.Engine],
+    onProgress: Unit,
+    pluginExtension: Nullable[String]
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def LoadAsync(
+    rootUrl: String,
+    sceneFilename: Unit,
+    engine: Nullable[typings.babylonjs.BABYLON.Engine],
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def LoadAsync(
+    rootUrl: String,
+    sceneFilename: Unit,
+    engine: Nullable[typings.babylonjs.BABYLON.Engine],
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]],
+    pluginExtension: Nullable[String]
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def LoadAsync(rootUrl: String, sceneFilename: File): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def LoadAsync(
     rootUrl: String,
     sceneFilename: File,
-    engine: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Engine]],
+    engine: Unit,
+    onProgress: Unit,
+    pluginExtension: Nullable[String]
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def LoadAsync(
+    rootUrl: String,
+    sceneFilename: File,
+    engine: Unit,
     onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
-  ): js.Promise[typings.babylonjs.BABYLON.Scene] = js.native
-  @JSGlobal("BABYLON.SceneLoader.LoadAsync")
-  @js.native
-  def LoadAsync(rootUrl: String, sceneFilename: File, engine: Nullable[typings.babylonjs.BABYLON.Engine]): js.Promise[typings.babylonjs.BABYLON.Scene] = js.native
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def LoadAsync(
+    rootUrl: String,
+    sceneFilename: File,
+    engine: Unit,
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]],
+    pluginExtension: Nullable[String]
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def LoadAsync(rootUrl: String, sceneFilename: File, engine: Nullable[typings.babylonjs.BABYLON.Engine]): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], engine.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def LoadAsync(
+    rootUrl: String,
+    sceneFilename: File,
+    engine: Nullable[typings.babylonjs.BABYLON.Engine],
+    onProgress: Unit,
+    pluginExtension: Nullable[String]
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def LoadAsync(
+    rootUrl: String,
+    sceneFilename: File,
+    engine: Nullable[typings.babylonjs.BABYLON.Engine],
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
+  inline def LoadAsync(
+    rootUrl: String,
+    sceneFilename: File,
+    engine: Nullable[typings.babylonjs.BABYLON.Engine],
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]],
+    pluginExtension: Nullable[String]
+  ): js.Promise[typings.babylonjs.BABYLON.Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.Scene]]
   
   /**
     * Minimal logging while loading
@@ -612,19 +803,14 @@ object SceneLoader {
   @JSGlobal("BABYLON.SceneLoader.OnPluginActivatedObservable")
   @js.native
   def OnPluginActivatedObservable: typings.babylonjs.BABYLON.Observable[ISceneLoaderPlugin | ISceneLoaderPluginAsync] = js.native
-  @scala.inline
-  def OnPluginActivatedObservable_=(x: typings.babylonjs.BABYLON.Observable[ISceneLoaderPlugin | ISceneLoaderPluginAsync]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OnPluginActivatedObservable")(x.asInstanceOf[js.Any])
+  inline def OnPluginActivatedObservable_=(x: typings.babylonjs.BABYLON.Observable[ISceneLoaderPlugin | ISceneLoaderPluginAsync]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OnPluginActivatedObservable")(x.asInstanceOf[js.Any])
   
   /**
     * Adds a new plugin to the list of registered plugins
     * @param plugin defines the plugin to add
     */
-  @JSGlobal("BABYLON.SceneLoader.RegisterPlugin")
-  @js.native
-  def RegisterPlugin(plugin: ISceneLoaderPlugin): Unit = js.native
-  @JSGlobal("BABYLON.SceneLoader.RegisterPlugin")
-  @js.native
-  def RegisterPlugin(plugin: ISceneLoaderPluginAsync): Unit = js.native
+  inline def RegisterPlugin(plugin: ISceneLoaderPlugin): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("RegisterPlugin")(plugin.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def RegisterPlugin(plugin: ISceneLoaderPluginAsync): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("RegisterPlugin")(plugin.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Summary logging while loading
@@ -636,48 +822,40 @@ object SceneLoader {
   @JSGlobal("BABYLON.SceneLoader._GetDirectLoad")
   @js.native
   def _GetDirectLoad: js.Any = js.native
-  @scala.inline
-  def _GetDirectLoad_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetDirectLoad")(x.asInstanceOf[js.Any])
+  inline def _GetDirectLoad_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetDirectLoad")(x.asInstanceOf[js.Any])
   
   @JSGlobal("BABYLON.SceneLoader._GetFileInfo")
   @js.native
   def _GetFileInfo: js.Any = js.native
-  @scala.inline
-  def _GetFileInfo_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetFileInfo")(x.asInstanceOf[js.Any])
+  inline def _GetFileInfo_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetFileInfo")(x.asInstanceOf[js.Any])
   
   @JSGlobal("BABYLON.SceneLoader._GetPluginForDirectLoad")
   @js.native
   def _GetPluginForDirectLoad: js.Any = js.native
-  @scala.inline
-  def _GetPluginForDirectLoad_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetPluginForDirectLoad")(x.asInstanceOf[js.Any])
+  inline def _GetPluginForDirectLoad_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetPluginForDirectLoad")(x.asInstanceOf[js.Any])
   
   @JSGlobal("BABYLON.SceneLoader._GetPluginForExtension")
   @js.native
   def _GetPluginForExtension: js.Any = js.native
-  @scala.inline
-  def _GetPluginForExtension_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetPluginForExtension")(x.asInstanceOf[js.Any])
+  inline def _GetPluginForExtension_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetPluginForExtension")(x.asInstanceOf[js.Any])
   
   @JSGlobal("BABYLON.SceneLoader._GetPluginForFilename")
   @js.native
   def _GetPluginForFilename: js.Any = js.native
-  @scala.inline
-  def _GetPluginForFilename_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetPluginForFilename")(x.asInstanceOf[js.Any])
+  inline def _GetPluginForFilename_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetPluginForFilename")(x.asInstanceOf[js.Any])
   
   @JSGlobal("BABYLON.SceneLoader._LoadData")
   @js.native
   def _LoadData: js.Any = js.native
-  @scala.inline
-  def _LoadData_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LoadData")(x.asInstanceOf[js.Any])
+  inline def _LoadData_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LoadData")(x.asInstanceOf[js.Any])
   
   @JSGlobal("BABYLON.SceneLoader._registeredPlugins")
   @js.native
   def _registeredPlugins: js.Any = js.native
-  @scala.inline
-  def _registeredPlugins_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_registeredPlugins")(x.asInstanceOf[js.Any])
+  inline def _registeredPlugins_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_registeredPlugins")(x.asInstanceOf[js.Any])
   
   @JSGlobal("BABYLON.SceneLoader._showingLoadingScreen")
   @js.native
   def _showingLoadingScreen: js.Any = js.native
-  @scala.inline
-  def _showingLoadingScreen_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_showingLoadingScreen")(x.asInstanceOf[js.Any])
+  inline def _showingLoadingScreen_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_showingLoadingScreen")(x.asInstanceOf[js.Any])
 }

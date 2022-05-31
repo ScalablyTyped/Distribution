@@ -4,8 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("webix.ui.layout")
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.webix.webix.ui.baseview because Already inherited
+- typings.webix.webix.ui.layout because var conflicts: $height, $skin_Original, $view, $width, config, name. Inlined  */ @JSGlobal("webix.ui.layout")
 @js.native
 class layout ()
-  extends StObject
-     with typings.webix.webix.ui.layout
+  extends typings.webix.mod.ui.layout

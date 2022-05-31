@@ -5,7 +5,6 @@ import typings.babylonjs.anon.Angle
 import typings.babylonjs.meshMod.Mesh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object decalBuilderMod {
@@ -15,6 +14,10 @@ object decalBuilderMod {
   class DecalBuilder () extends StObject
   /* static members */
   object DecalBuilder {
+    
+    @JSImport("babylonjs/Meshes/Builders/decalBuilder", "DecalBuilder")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Creates a decal mesh.
@@ -30,8 +33,6 @@ object decalBuilderMod {
       * @returns the decal mesh
       * @see https://doc.babylonjs.com/how_to/decals
       */
-    @JSImport("babylonjs/Meshes/Builders/decalBuilder", "DecalBuilder.CreateDecal")
-    @js.native
-    def CreateDecal(name: String, sourceMesh: AbstractMesh, options: Angle): Mesh = js.native
+    inline def CreateDecal(name: String, sourceMesh: AbstractMesh, options: Angle): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDecal")(name.asInstanceOf[js.Any], sourceMesh.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
   }
 }

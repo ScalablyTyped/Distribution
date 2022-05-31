@@ -7,7 +7,6 @@ import typings.babylonjs.nodeMaterialBuildStateMod.NodeMaterialBuildState
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object refractionBlockMod {
@@ -44,7 +43,7 @@ object refractionBlockMod {
     /** @hidden */
     var _refractionMatrixName: String = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
     /** @hidden */
     var _vRefractionFilteringInfoName: String = js.native

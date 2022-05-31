@@ -4,13 +4,13 @@ import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.BABYLON.PostProcessOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.ColorCorrectionPostProcess")
 @js.native
 class ColorCorrectionPostProcess protected ()
-  extends typings.babylonjs.BABYLON.ColorCorrectionPostProcess {
+  extends StObject
+     with typings.babylonjs.BABYLON.ColorCorrectionPostProcess {
   def this(name: String, colorTableUrl: String, options: Double, camera: typings.babylonjs.BABYLON.Camera) = this()
   def this(
     name: String,
@@ -37,7 +37,7 @@ class ColorCorrectionPostProcess protected ()
     colorTableUrl: String,
     options: Double,
     camera: typings.babylonjs.BABYLON.Camera,
-    samplingMode: js.UndefOr[scala.Nothing],
+    samplingMode: Double,
     engine: typings.babylonjs.BABYLON.Engine
   ) = this()
   def this(
@@ -45,15 +45,7 @@ class ColorCorrectionPostProcess protected ()
     colorTableUrl: String,
     options: Double,
     camera: typings.babylonjs.BABYLON.Camera,
-    samplingMode: Double,
-    engine: typings.babylonjs.BABYLON.Engine
-  ) = this()
-  def this(
-    name: String,
-    colorTableUrl: String,
-    options: PostProcessOptions,
-    camera: typings.babylonjs.BABYLON.Camera,
-    samplingMode: js.UndefOr[scala.Nothing],
+    samplingMode: Unit,
     engine: typings.babylonjs.BABYLON.Engine
   ) = this()
   def this(
@@ -67,20 +59,10 @@ class ColorCorrectionPostProcess protected ()
   def this(
     name: String,
     colorTableUrl: String,
-    options: Double,
+    options: PostProcessOptions,
     camera: typings.babylonjs.BABYLON.Camera,
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: js.UndefOr[scala.Nothing],
-    reusable: Boolean
-  ) = this()
-  def this(
-    name: String,
-    colorTableUrl: String,
-    options: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: typings.babylonjs.BABYLON.Engine,
-    reusable: Boolean
+    samplingMode: Unit,
+    engine: typings.babylonjs.BABYLON.Engine
   ) = this()
   def this(
     name: String,
@@ -88,7 +70,7 @@ class ColorCorrectionPostProcess protected ()
     options: Double,
     camera: typings.babylonjs.BABYLON.Camera,
     samplingMode: Double,
-    engine: js.UndefOr[scala.Nothing],
+    engine: Unit,
     reusable: Boolean
   ) = this()
   def this(
@@ -103,18 +85,18 @@ class ColorCorrectionPostProcess protected ()
   def this(
     name: String,
     colorTableUrl: String,
-    options: PostProcessOptions,
+    options: Double,
     camera: typings.babylonjs.BABYLON.Camera,
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: js.UndefOr[scala.Nothing],
+    samplingMode: Unit,
+    engine: Unit,
     reusable: Boolean
   ) = this()
   def this(
     name: String,
     colorTableUrl: String,
-    options: PostProcessOptions,
+    options: Double,
     camera: typings.babylonjs.BABYLON.Camera,
-    samplingMode: js.UndefOr[scala.Nothing],
+    samplingMode: Unit,
     engine: typings.babylonjs.BABYLON.Engine,
     reusable: Boolean
   ) = this()
@@ -124,7 +106,7 @@ class ColorCorrectionPostProcess protected ()
     options: PostProcessOptions,
     camera: typings.babylonjs.BABYLON.Camera,
     samplingMode: Double,
-    engine: js.UndefOr[scala.Nothing],
+    engine: Unit,
     reusable: Boolean
   ) = this()
   def this(
@@ -133,6 +115,24 @@ class ColorCorrectionPostProcess protected ()
     options: PostProcessOptions,
     camera: typings.babylonjs.BABYLON.Camera,
     samplingMode: Double,
+    engine: typings.babylonjs.BABYLON.Engine,
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    colorTableUrl: String,
+    options: PostProcessOptions,
+    camera: typings.babylonjs.BABYLON.Camera,
+    samplingMode: Unit,
+    engine: Unit,
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    colorTableUrl: String,
+    options: PostProcessOptions,
+    camera: typings.babylonjs.BABYLON.Camera,
+    samplingMode: Unit,
     engine: typings.babylonjs.BABYLON.Engine,
     reusable: Boolean
   ) = this()
@@ -140,13 +140,15 @@ class ColorCorrectionPostProcess protected ()
 /* static members */
 object ColorCorrectionPostProcess {
   
-  /** @hidden */
-  @JSGlobal("BABYLON.ColorCorrectionPostProcess._Parse")
+  @JSGlobal("BABYLON.ColorCorrectionPostProcess")
   @js.native
-  def _Parse(
+  val ^ : js.Any = js.native
+  
+  /** @hidden */
+  inline def _Parse(
     parsedPostProcess: js.Any,
     targetCamera: typings.babylonjs.BABYLON.Camera,
     scene: typings.babylonjs.BABYLON.Scene,
     rootUrl: String
-  ): Nullable[typings.babylonjs.BABYLON.ColorCorrectionPostProcess] = js.native
+  ): Nullable[typings.babylonjs.BABYLON.ColorCorrectionPostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.ColorCorrectionPostProcess]]
 }

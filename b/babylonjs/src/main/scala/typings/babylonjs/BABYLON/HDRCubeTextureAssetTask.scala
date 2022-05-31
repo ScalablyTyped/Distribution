@@ -2,12 +2,12 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait HDRCubeTextureAssetTask
-  extends AbstractAssetTask
+  extends StObject
+     with AbstractAssetTask
      with ITextureAssetTask[HDRCubeTexture] {
   
   /**
@@ -29,9 +29,9 @@ trait HDRCubeTextureAssetTask
     * Callback called when the task is successful
     */
   def onError(task: HDRCubeTextureAssetTask): Unit = js.native
-  def onError(task: HDRCubeTextureAssetTask, message: js.UndefOr[scala.Nothing], exception: js.Any): Unit = js.native
   def onError(task: HDRCubeTextureAssetTask, message: String): Unit = js.native
   def onError(task: HDRCubeTextureAssetTask, message: String, exception: js.Any): Unit = js.native
+  def onError(task: HDRCubeTextureAssetTask, message: Unit, exception: js.Any): Unit = js.native
   
   /**
     * Callback called when the task is successful

@@ -3,7 +3,6 @@ package typings.babylonjs.mod
 import typings.babylonjs.octreeBlockMod.IOctreeContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "OctreeBlock")
@@ -31,12 +30,14 @@ class OctreeBlock[T] protected ()
 /* static members */
 object OctreeBlock {
   
+  @JSImport("babylonjs", "OctreeBlock")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * @hidden
     */
-  @JSImport("babylonjs", "OctreeBlock._CreateBlocks")
-  @js.native
-  def _CreateBlocks[T](
+  inline def _CreateBlocks[T](
     worldMin: typings.babylonjs.mathVectorMod.Vector3,
     worldMax: typings.babylonjs.mathVectorMod.Vector3,
     entries: js.Array[T],
@@ -45,5 +46,5 @@ object OctreeBlock {
     maxDepth: Double,
     target: IOctreeContainer[T],
     creationFunc: js.Function2[/* entry */ T, /* block */ typings.babylonjs.octreeBlockMod.OctreeBlock[T], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateBlocks")(worldMin.asInstanceOf[js.Any], worldMax.asInstanceOf[js.Any], entries.asInstanceOf[js.Any], maxBlockCapacity.asInstanceOf[js.Any], currentDepth.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any], target.asInstanceOf[js.Any], creationFunc.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

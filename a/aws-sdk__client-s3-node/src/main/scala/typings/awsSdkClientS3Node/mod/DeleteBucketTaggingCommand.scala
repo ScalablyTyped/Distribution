@@ -1,5 +1,6 @@
 package typings.awsSdkClientS3Node.mod
 
+import typings.awsSdkClientS3Node.typesDeleteBucketTaggingInputMod.DeleteBucketTaggingInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class DeleteBucketTaggingCommand protected ()
   extends typings.awsSdkClientS3Node.deleteBucketTaggingCommandMod.DeleteBucketTaggingCommand {
-  def this(input: typings.awsSdkClientS3Node.typesDeleteBucketTaggingInputMod.DeleteBucketTaggingInput) = this()
+  def this(input: DeleteBucketTaggingInput) = this()
 }

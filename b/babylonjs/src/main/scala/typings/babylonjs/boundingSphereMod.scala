@@ -6,7 +6,6 @@ import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.typesMod.DeepImmutable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object boundingSphereMod {
@@ -26,7 +25,7 @@ object boundingSphereMod {
     /** @hidden */
     def _update(worldMatrix: DeepImmutable[Matrix]): Unit = js.native
     
-    var _worldMatrix: js.Any = js.native
+    /* private */ var _worldMatrix: js.Any = js.native
     
     /**
       * Gets the center of the bounding sphere in local space
@@ -105,15 +104,17 @@ object boundingSphereMod {
   /* static members */
   object BoundingSphere {
     
+    @JSImport("babylonjs/Culling/boundingSphere", "BoundingSphere")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Checks if two sphere intersct
       * @param sphere0 sphere 0
       * @param sphere1 sphere 1
       * @returns true if the speres intersect
       */
-    @JSImport("babylonjs/Culling/boundingSphere", "BoundingSphere.Intersects")
-    @js.native
-    def Intersects(sphere0: DeepImmutable[BoundingSphere], sphere1: DeepImmutable[BoundingSphere]): Boolean = js.native
+    inline def Intersects(sphere0: DeepImmutable[BoundingSphere], sphere1: DeepImmutable[BoundingSphere]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Intersects")(sphere0.asInstanceOf[js.Any], sphere1.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     @JSImport("babylonjs/Culling/boundingSphere", "BoundingSphere.TmpVector3")
     @js.native

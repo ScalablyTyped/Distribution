@@ -1,6 +1,5 @@
 package typings.jupyterlabSettingregistry
 
-import org.scalablytyped.runtime.Shortcut
 import typings.jupyterlabSettingregistry.settingregistryMod.SettingRegistry.IOptions
 import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.IShortcut
 import typings.luminoCoreutils.mod.Token
@@ -18,22 +17,9 @@ object mod {
   class DefaultSchemaValidator ()
     extends typings.jupyterlabSettingregistry.settingregistryMod.DefaultSchemaValidator
   
-  object ISettingRegistry extends Shortcut {
-    
-    @JSImport("@jupyterlab/settingregistry", "ISettingRegistry")
-    @js.native
-    val ^ : Token[typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry] = js.native
-    
-    /**
-      * A namespace for plugin functionality.
-      */
-    object IPlugin
-    
-    type _To = Token[typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry]
-    
-    /* This means you don't have to write `^`, but can instead just say `ISettingRegistry.foo` */
-    override def _to: Token[typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry] = ^
-  }
+  @JSImport("@jupyterlab/settingregistry", "ISettingRegistry")
+  @js.native
+  val ISettingRegistry: Token[typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry] = js.native
   
   @JSImport("@jupyterlab/settingregistry", "SettingRegistry")
   @js.native

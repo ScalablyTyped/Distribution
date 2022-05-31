@@ -31,44 +31,43 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ojSparkChartItemEventMap extends HTMLElementEventMap {
+trait ojSparkChartItemEventMap
+  extends StObject
+     with HTMLElementEventMap {
   
-  var borderColorChanged: JetElementCustomEvent[String] = js.native
+  var borderColorChanged: JetElementCustomEvent[String]
   
-  var colorChanged: JetElementCustomEvent[String] = js.native
+  var colorChanged: JetElementCustomEvent[String]
   
-  var dateChanged: JetElementCustomEvent[String] = js.native
+  var dateChanged: JetElementCustomEvent[String]
   
-  var highChanged: JetElementCustomEvent[Double | Null] = js.native
+  var highChanged: JetElementCustomEvent[Double | Null]
   
-  var lowChanged: JetElementCustomEvent[Double | Null] = js.native
+  var lowChanged: JetElementCustomEvent[Double | Null]
   
-  var markerDisplayedChanged: JetElementCustomEvent[off | on] = js.native
+  var markerDisplayedChanged: JetElementCustomEvent[off | on]
   
   var markerShapeChanged: JetElementCustomEvent[
     js.UndefOr[
       auto | circle | diamond | human | plus | square | star | triangleDown | triangleUp | String
     ]
-  ] = js.native
+  ]
   
-  var markerSizeChanged: JetElementCustomEvent[Double] = js.native
+  var markerSizeChanged: JetElementCustomEvent[Double]
   
-  var svgClassNameChanged: JetElementCustomEvent[String] = js.native
+  var svgClassNameChanged: JetElementCustomEvent[String]
   
   var svgStyleChanged: JetElementCustomEvent[
     /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojchart.ojSparkChartItem['svgStyle'] */ js.Any
-  ] = js.native
+  ]
   
-  var valueChanged: JetElementCustomEvent[Double | Null] = js.native
+  var valueChanged: JetElementCustomEvent[Double | Null]
 }
 object ojSparkChartItemEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,
@@ -183,29 +182,21 @@ object ojSparkChartItemEventMap {
     __obj.asInstanceOf[ojSparkChartItemEventMap]
   }
   
-  @scala.inline
-  implicit class ojSparkChartItemEventMapMutableBuilder[Self <: ojSparkChartItemEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: ojSparkChartItemEventMap](x: Self) {
     
-    @scala.inline
-    def setBorderColorChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "borderColorChanged", value.asInstanceOf[js.Any])
+    inline def setBorderColorChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "borderColorChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "colorChanged", value.asInstanceOf[js.Any])
+    inline def setColorChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "colorChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "dateChanged", value.asInstanceOf[js.Any])
+    inline def setDateChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "dateChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighChanged(value: JetElementCustomEvent[Double | Null]): Self = StObject.set(x, "highChanged", value.asInstanceOf[js.Any])
+    inline def setHighChanged(value: JetElementCustomEvent[Double | Null]): Self = StObject.set(x, "highChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowChanged(value: JetElementCustomEvent[Double | Null]): Self = StObject.set(x, "lowChanged", value.asInstanceOf[js.Any])
+    inline def setLowChanged(value: JetElementCustomEvent[Double | Null]): Self = StObject.set(x, "lowChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerDisplayedChanged(value: JetElementCustomEvent[off | on]): Self = StObject.set(x, "markerDisplayedChanged", value.asInstanceOf[js.Any])
+    inline def setMarkerDisplayedChanged(value: JetElementCustomEvent[off | on]): Self = StObject.set(x, "markerDisplayedChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerShapeChanged(
+    inline def setMarkerShapeChanged(
       value: JetElementCustomEvent[
           js.UndefOr[
             auto | circle | diamond | human | plus | square | star | triangleDown | triangleUp | String
@@ -213,20 +204,16 @@ object ojSparkChartItemEventMap {
         ]
     ): Self = StObject.set(x, "markerShapeChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerSizeChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "markerSizeChanged", value.asInstanceOf[js.Any])
+    inline def setMarkerSizeChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "markerSizeChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgClassNameChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "svgClassNameChanged", value.asInstanceOf[js.Any])
+    inline def setSvgClassNameChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "svgClassNameChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgStyleChanged(
+    inline def setSvgStyleChanged(
       value: JetElementCustomEvent[
           /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojchart.ojSparkChartItem['svgStyle'] */ js.Any
         ]
     ): Self = StObject.set(x, "svgStyleChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueChanged(value: JetElementCustomEvent[Double | Null]): Self = StObject.set(x, "valueChanged", value.asInstanceOf[js.Any])
+    inline def setValueChanged(value: JetElementCustomEvent[Double | Null]): Self = StObject.set(x, "valueChanged", value.asInstanceOf[js.Any])
   }
 }

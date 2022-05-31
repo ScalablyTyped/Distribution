@@ -2,26 +2,21 @@ package typings.oracleOraclejet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HistoryUpdate extends StObject {
   
-  var historyUpdate: String = js.native
+  var historyUpdate: String
 }
 object HistoryUpdate {
   
-  @scala.inline
-  def apply(historyUpdate: String): HistoryUpdate = {
+  inline def apply(historyUpdate: String): HistoryUpdate = {
     val __obj = js.Dynamic.literal(historyUpdate = historyUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryUpdate]
   }
   
-  @scala.inline
-  implicit class HistoryUpdateMutableBuilder[Self <: HistoryUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: HistoryUpdate](x: Self) {
     
-    @scala.inline
-    def setHistoryUpdate(value: String): Self = StObject.set(x, "historyUpdate", value.asInstanceOf[js.Any])
+    inline def setHistoryUpdate(value: String): Self = StObject.set(x, "historyUpdate", value.asInstanceOf[js.Any])
   }
 }

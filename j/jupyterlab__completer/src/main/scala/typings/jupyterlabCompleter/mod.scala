@@ -1,13 +1,11 @@
 package typings.jupyterlabCompleter
 
-import org.scalablytyped.runtime.Shortcut
 import typings.jupyterlabCompleter.jupyterlabCompleterStrings.ICompletionItemsReply
 import typings.jupyterlabCompleter.widgetMod.Completer.IOptions
 import typings.luminoCoreutils.mod.Token
 import typings.luminoMessaging.mod.Message
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -97,17 +95,9 @@ object mod {
     def this(options: typings.jupyterlabCompleter.contextconnectorMod.ContextConnector.IOptions) = this()
   }
   
-  object ICompletionManager extends Shortcut {
-    
-    @JSImport("@jupyterlab/completer", "ICompletionManager")
-    @js.native
-    val ^ : Token[typings.jupyterlabCompleter.tokensMod.ICompletionManager] = js.native
-    
-    type _To = Token[typings.jupyterlabCompleter.tokensMod.ICompletionManager]
-    
-    /* This means you don't have to write `^`, but can instead just say `ICompletionManager.foo` */
-    override def _to: Token[typings.jupyterlabCompleter.tokensMod.ICompletionManager] = ^
-  }
+  @JSImport("@jupyterlab/completer", "ICompletionManager")
+  @js.native
+  val ICompletionManager: Token[typings.jupyterlabCompleter.tokensMod.ICompletionManager] = js.native
   
   @JSImport("@jupyterlab/completer", "KernelConnector")
   @js.native

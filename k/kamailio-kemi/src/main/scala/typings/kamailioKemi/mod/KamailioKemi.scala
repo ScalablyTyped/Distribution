@@ -108,7 +108,4 @@ object KamailioKemi {
     
     inline def `9`: typings.kamailioKemi.kamailioKemiNumbers.`9` = 9.asInstanceOf[typings.kamailioKemi.kamailioKemiNumbers.`9`]
   }
-  
-  // Special declaration of debugger and enum to avoid using reserved words
-  object debugger
 }

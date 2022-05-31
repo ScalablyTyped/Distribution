@@ -2,7 +2,6 @@ package typings.babylonjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XREye extends StObject
 object XREye {
   
-  @scala.inline
-  def left: typings.babylonjs.babylonjsStrings.left = "left".asInstanceOf[typings.babylonjs.babylonjsStrings.left]
+  inline def left: typings.babylonjs.babylonjsStrings.left = "left".asInstanceOf[typings.babylonjs.babylonjsStrings.left]
   
-  @scala.inline
-  def none: typings.babylonjs.babylonjsStrings.none = "none".asInstanceOf[typings.babylonjs.babylonjsStrings.none]
+  inline def none: typings.babylonjs.babylonjsStrings.none = "none".asInstanceOf[typings.babylonjs.babylonjsStrings.none]
   
-  @scala.inline
-  def right: typings.babylonjs.babylonjsStrings.right = "right".asInstanceOf[typings.babylonjs.babylonjsStrings.right]
+  inline def right: typings.babylonjs.babylonjsStrings.right = "right".asInstanceOf[typings.babylonjs.babylonjsStrings.right]
 }

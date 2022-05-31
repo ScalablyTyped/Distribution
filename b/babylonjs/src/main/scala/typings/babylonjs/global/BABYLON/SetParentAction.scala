@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.SetParentAction")
 @js.native
 class SetParentAction protected ()
-  extends typings.babylonjs.BABYLON.SetParentAction {
+  extends StObject
+     with typings.babylonjs.BABYLON.SetParentAction {
   /**
     * Instantiate the action
     * @param triggerOptions defines the trigger options

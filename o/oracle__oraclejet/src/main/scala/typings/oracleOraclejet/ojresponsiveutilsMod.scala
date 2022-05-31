@@ -2,18 +2,17 @@ package typings.oracleOraclejet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ojresponsiveutilsMod {
   
-  @JSImport("@oracle/oraclejet/ojresponsiveutils", "compare")
+  @JSImport("@oracle/oraclejet/ojresponsiveutils", JSImport.Namespace)
   @js.native
-  def compare(size1: SCREEN_RANGE, size2: SCREEN_RANGE): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@oracle/oraclejet/ojresponsiveutils", "getFrameworkQuery")
-  @js.native
-  def getFrameworkQuery(frameworkQueryKey: FRAMEWORK_QUERY_KEY): String | Null = js.native
+  inline def compare(size1: SCREEN_RANGE, size2: SCREEN_RANGE): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(size1.asInstanceOf[js.Any], size2.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def getFrameworkQuery(frameworkQueryKey: FRAMEWORK_QUERY_KEY): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getFrameworkQuery")(frameworkQueryKey.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /* Rewritten from type alias, can be one of: 
     - typings.oracleOraclejet.oracleOraclejetStrings.`sm-up`
@@ -33,44 +32,31 @@ object ojresponsiveutilsMod {
   trait FRAMEWORK_QUERY_KEY extends StObject
   object FRAMEWORK_QUERY_KEY {
     
-    @scala.inline
-    def `high-resolution`: typings.oracleOraclejet.oracleOraclejetStrings.`high-resolution` = "high-resolution".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.`high-resolution`]
+    inline def `high-resolution`: typings.oracleOraclejet.oracleOraclejetStrings.`high-resolution` = "high-resolution".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.`high-resolution`]
     
-    @scala.inline
-    def `lg-down`: typings.oracleOraclejet.oracleOraclejetStrings.`lg-down` = "lg-down".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.`lg-down`]
+    inline def `lg-down`: typings.oracleOraclejet.oracleOraclejetStrings.`lg-down` = "lg-down".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.`lg-down`]
     
-    @scala.inline
-    def `lg-only`: typings.oracleOraclejet.oracleOraclejetStrings.`lg-only` = "lg-only".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.`lg-only`]
+    inline def `lg-only`: typings.oracleOraclejet.oracleOraclejetStrings.`lg-only` = "lg-only".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.`lg-only`]
     
-    @scala.inline
-    def `lg-up`: typings.oracleOraclejet.oracleOraclejetStrings.`lg-up` = "lg-up".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.`lg-up`]
+    inline def `lg-up`: typings.oracleOraclejet.oracleOraclejetStrings.`lg-up` = "lg-up".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.`lg-up`]
     
-    @scala.inline
-    def `md-down`: typings.oracleOraclejet.oracleOraclejetStrings.`md-down` = "md-down".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.`md-down`]
+    inline def `md-down`: typings.oracleOraclejet.oracleOraclejetStrings.`md-down` = "md-down".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.`md-down`]
     
-    @scala.inline
-    def `md-only`: typings.oracleOraclejet.oracleOraclejetStrings.`md-only` = "md-only".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.`md-only`]
+    inline def `md-only`: typings.oracleOraclejet.oracleOraclejetStrings.`md-only` = "md-only".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.`md-only`]
     
-    @scala.inline
-    def `md-up`: typings.oracleOraclejet.oracleOraclejetStrings.`md-up` = "md-up".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.`md-up`]
+    inline def `md-up`: typings.oracleOraclejet.oracleOraclejetStrings.`md-up` = "md-up".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.`md-up`]
     
-    @scala.inline
-    def `sm-only`: typings.oracleOraclejet.oracleOraclejetStrings.`sm-only` = "sm-only".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.`sm-only`]
+    inline def `sm-only`: typings.oracleOraclejet.oracleOraclejetStrings.`sm-only` = "sm-only".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.`sm-only`]
     
-    @scala.inline
-    def `sm-up`: typings.oracleOraclejet.oracleOraclejetStrings.`sm-up` = "sm-up".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.`sm-up`]
+    inline def `sm-up`: typings.oracleOraclejet.oracleOraclejetStrings.`sm-up` = "sm-up".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.`sm-up`]
     
-    @scala.inline
-    def `xl-down`: typings.oracleOraclejet.oracleOraclejetStrings.`xl-down` = "xl-down".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.`xl-down`]
+    inline def `xl-down`: typings.oracleOraclejet.oracleOraclejetStrings.`xl-down` = "xl-down".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.`xl-down`]
     
-    @scala.inline
-    def `xl-only`: typings.oracleOraclejet.oracleOraclejetStrings.`xl-only` = "xl-only".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.`xl-only`]
+    inline def `xl-only`: typings.oracleOraclejet.oracleOraclejetStrings.`xl-only` = "xl-only".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.`xl-only`]
     
-    @scala.inline
-    def `xl-up`: typings.oracleOraclejet.oracleOraclejetStrings.`xl-up` = "xl-up".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.`xl-up`]
+    inline def `xl-up`: typings.oracleOraclejet.oracleOraclejetStrings.`xl-up` = "xl-up".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.`xl-up`]
     
-    @scala.inline
-    def `xxl-up`: typings.oracleOraclejet.oracleOraclejetStrings.`xxl-up` = "xxl-up".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.`xxl-up`]
+    inline def `xxl-up`: typings.oracleOraclejet.oracleOraclejetStrings.`xxl-up` = "xxl-up".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.`xxl-up`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -83,19 +69,14 @@ object ojresponsiveutilsMod {
   trait SCREEN_RANGE extends StObject
   object SCREEN_RANGE {
     
-    @scala.inline
-    def lg: typings.oracleOraclejet.oracleOraclejetStrings.lg = "lg".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.lg]
+    inline def lg: typings.oracleOraclejet.oracleOraclejetStrings.lg = "lg".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.lg]
     
-    @scala.inline
-    def md: typings.oracleOraclejet.oracleOraclejetStrings.md = "md".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.md]
+    inline def md: typings.oracleOraclejet.oracleOraclejetStrings.md = "md".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.md]
     
-    @scala.inline
-    def sm: typings.oracleOraclejet.oracleOraclejetStrings.sm = "sm".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.sm]
+    inline def sm: typings.oracleOraclejet.oracleOraclejetStrings.sm = "sm".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.sm]
     
-    @scala.inline
-    def xl: typings.oracleOraclejet.oracleOraclejetStrings.xl = "xl".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.xl]
+    inline def xl: typings.oracleOraclejet.oracleOraclejetStrings.xl = "xl".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.xl]
     
-    @scala.inline
-    def xxl: typings.oracleOraclejet.oracleOraclejetStrings.xxl = "xxl".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.xxl]
+    inline def xxl: typings.oracleOraclejet.oracleOraclejetStrings.xxl = "xxl".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.xxl]
   }
 }

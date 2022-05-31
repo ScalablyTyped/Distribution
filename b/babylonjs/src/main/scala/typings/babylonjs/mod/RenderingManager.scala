@@ -2,7 +2,6 @@ package typings.babylonjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "RenderingManager")
@@ -28,8 +27,7 @@ object RenderingManager {
   @JSImport("babylonjs", "RenderingManager.AUTOCLEAR")
   @js.native
   def AUTOCLEAR: Boolean = js.native
-  @scala.inline
-  def AUTOCLEAR_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUTOCLEAR")(x.asInstanceOf[js.Any])
+  inline def AUTOCLEAR_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUTOCLEAR")(x.asInstanceOf[js.Any])
   
   /**
     * The max id used for rendering groups (not included)
@@ -37,8 +35,7 @@ object RenderingManager {
   @JSImport("babylonjs", "RenderingManager.MAX_RENDERINGGROUPS")
   @js.native
   def MAX_RENDERINGGROUPS: Double = js.native
-  @scala.inline
-  def MAX_RENDERINGGROUPS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_RENDERINGGROUPS")(x.asInstanceOf[js.Any])
+  inline def MAX_RENDERINGGROUPS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_RENDERINGGROUPS")(x.asInstanceOf[js.Any])
   
   /**
     * The min id used for rendering groups (included)
@@ -46,6 +43,5 @@ object RenderingManager {
   @JSImport("babylonjs", "RenderingManager.MIN_RENDERINGGROUPS")
   @js.native
   def MIN_RENDERINGGROUPS: Double = js.native
-  @scala.inline
-  def MIN_RENDERINGGROUPS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_RENDERINGGROUPS")(x.asInstanceOf[js.Any])
+  inline def MIN_RENDERINGGROUPS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_RENDERINGGROUPS")(x.asInstanceOf[js.Any])
 }

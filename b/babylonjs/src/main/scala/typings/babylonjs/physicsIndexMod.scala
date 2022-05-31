@@ -16,7 +16,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object physicsIndexMod {
@@ -32,24 +31,12 @@ object physicsIndexMod {
   class AmmoJSPlugin ()
     extends typings.babylonjs.physicsPluginsIndexMod.AmmoJSPlugin {
     def this(_useDeltaForWorldStep: Boolean) = this()
-    def this(_useDeltaForWorldStep: js.UndefOr[scala.Nothing], ammoInjection: js.Any) = this()
     def this(_useDeltaForWorldStep: Boolean, ammoInjection: js.Any) = this()
-    def this(
-      _useDeltaForWorldStep: js.UndefOr[scala.Nothing],
-      ammoInjection: js.UndefOr[scala.Nothing],
-      overlappingPairCache: js.Any
-    ) = this()
-    def this(
-      _useDeltaForWorldStep: js.UndefOr[scala.Nothing],
-      ammoInjection: js.Any,
-      overlappingPairCache: js.Any
-    ) = this()
-    def this(
-      _useDeltaForWorldStep: Boolean,
-      ammoInjection: js.UndefOr[scala.Nothing],
-      overlappingPairCache: js.Any
-    ) = this()
+    def this(_useDeltaForWorldStep: Unit, ammoInjection: js.Any) = this()
     def this(_useDeltaForWorldStep: Boolean, ammoInjection: js.Any, overlappingPairCache: js.Any) = this()
+    def this(_useDeltaForWorldStep: Boolean, ammoInjection: Unit, overlappingPairCache: js.Any) = this()
+    def this(_useDeltaForWorldStep: Unit, ammoInjection: js.Any, overlappingPairCache: js.Any) = this()
+    def this(_useDeltaForWorldStep: Unit, ammoInjection: Unit, overlappingPairCache: js.Any) = this()
   }
   /* static members */
   object AmmoJSPlugin {
@@ -72,16 +59,12 @@ object physicsIndexMod {
   class CannonJSPlugin ()
     extends typings.babylonjs.physicsPluginsIndexMod.CannonJSPlugin {
     def this(_useDeltaForWorldStep: Boolean) = this()
-    def this(_useDeltaForWorldStep: js.UndefOr[scala.Nothing], iterations: Double) = this()
     def this(_useDeltaForWorldStep: Boolean, iterations: Double) = this()
-    def this(
-      _useDeltaForWorldStep: js.UndefOr[scala.Nothing],
-      iterations: js.UndefOr[scala.Nothing],
-      cannonInjection: js.Any
-    ) = this()
-    def this(_useDeltaForWorldStep: js.UndefOr[scala.Nothing], iterations: Double, cannonInjection: js.Any) = this()
-    def this(_useDeltaForWorldStep: Boolean, iterations: js.UndefOr[scala.Nothing], cannonInjection: js.Any) = this()
+    def this(_useDeltaForWorldStep: Unit, iterations: Double) = this()
     def this(_useDeltaForWorldStep: Boolean, iterations: Double, cannonInjection: js.Any) = this()
+    def this(_useDeltaForWorldStep: Boolean, iterations: Unit, cannonInjection: js.Any) = this()
+    def this(_useDeltaForWorldStep: Unit, iterations: Double, cannonInjection: js.Any) = this()
+    def this(_useDeltaForWorldStep: Unit, iterations: Unit, cannonInjection: js.Any) = this()
   }
   
   @JSImport("babylonjs/Physics/index", "DistanceJoint")
@@ -134,16 +117,12 @@ object physicsIndexMod {
   class OimoJSPlugin ()
     extends typings.babylonjs.physicsPluginsIndexMod.OimoJSPlugin {
     def this(_useDeltaForWorldStep: Boolean) = this()
-    def this(_useDeltaForWorldStep: js.UndefOr[scala.Nothing], iterations: Double) = this()
     def this(_useDeltaForWorldStep: Boolean, iterations: Double) = this()
-    def this(
-      _useDeltaForWorldStep: js.UndefOr[scala.Nothing],
-      iterations: js.UndefOr[scala.Nothing],
-      oimoInjection: js.Any
-    ) = this()
-    def this(_useDeltaForWorldStep: js.UndefOr[scala.Nothing], iterations: Double, oimoInjection: js.Any) = this()
-    def this(_useDeltaForWorldStep: Boolean, iterations: js.UndefOr[scala.Nothing], oimoInjection: js.Any) = this()
+    def this(_useDeltaForWorldStep: Unit, iterations: Double) = this()
     def this(_useDeltaForWorldStep: Boolean, iterations: Double, oimoInjection: js.Any) = this()
+    def this(_useDeltaForWorldStep: Boolean, iterations: Unit, oimoInjection: js.Any) = this()
+    def this(_useDeltaForWorldStep: Unit, iterations: Double, oimoInjection: js.Any) = this()
+    def this(_useDeltaForWorldStep: Unit, iterations: Unit, oimoInjection: js.Any) = this()
   }
   
   @JSImport("babylonjs/Physics/index", "PhysicsEngine")
@@ -169,9 +148,7 @@ object physicsIndexMod {
       * Factory used to create the default physics plugin.
       * @returns The default physics plugin
       */
-    @JSImport("babylonjs/Physics/index", "PhysicsEngine.DefaultPluginFactory")
-    @js.native
-    def DefaultPluginFactory(): IPhysicsEnginePlugin = js.native
+    inline def DefaultPluginFactory(): IPhysicsEnginePlugin = ^.asInstanceOf[js.Dynamic].applyDynamic("DefaultPluginFactory")().asInstanceOf[IPhysicsEnginePlugin]
     
     /**
       * Global value used to control the smallest number supported by the simulation
@@ -179,8 +156,7 @@ object physicsIndexMod {
     @JSImport("babylonjs/Physics/index", "PhysicsEngine.Epsilon")
     @js.native
     def Epsilon: Double = js.native
-    @scala.inline
-    def Epsilon_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Epsilon")(x.asInstanceOf[js.Any])
+    inline def Epsilon_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Epsilon")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Physics/index", "PhysicsEngineSceneComponent")
@@ -246,7 +222,7 @@ object physicsIndexMod {
       * The type of the physics imposter
       */
     `type`: Double,
-      _options: js.UndefOr[scala.Nothing],
+      _options: Unit,
       _scene: Scene
     ) = this()
     def this(
@@ -275,8 +251,7 @@ object physicsIndexMod {
     @JSImport("babylonjs/Physics/index", "PhysicsImpostor.BoxImpostor")
     @js.native
     def BoxImpostor: Double = js.native
-    @scala.inline
-    def BoxImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BoxImpostor")(x.asInstanceOf[js.Any])
+    inline def BoxImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BoxImpostor")(x.asInstanceOf[js.Any])
     
     /**
       * Capsule-Impostor type (Ammo.js plugin only)
@@ -284,8 +259,7 @@ object physicsIndexMod {
     @JSImport("babylonjs/Physics/index", "PhysicsImpostor.CapsuleImpostor")
     @js.native
     def CapsuleImpostor: Double = js.native
-    @scala.inline
-    def CapsuleImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CapsuleImpostor")(x.asInstanceOf[js.Any])
+    inline def CapsuleImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CapsuleImpostor")(x.asInstanceOf[js.Any])
     
     /**
       * Cloth-Imposter type
@@ -293,8 +267,7 @@ object physicsIndexMod {
     @JSImport("babylonjs/Physics/index", "PhysicsImpostor.ClothImpostor")
     @js.native
     def ClothImpostor: Double = js.native
-    @scala.inline
-    def ClothImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ClothImpostor")(x.asInstanceOf[js.Any])
+    inline def ClothImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ClothImpostor")(x.asInstanceOf[js.Any])
     
     /**
       * ConvexHull-Impostor type (Ammo.js plugin only)
@@ -302,8 +275,7 @@ object physicsIndexMod {
     @JSImport("babylonjs/Physics/index", "PhysicsImpostor.ConvexHullImpostor")
     @js.native
     def ConvexHullImpostor: Double = js.native
-    @scala.inline
-    def ConvexHullImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConvexHullImpostor")(x.asInstanceOf[js.Any])
+    inline def ConvexHullImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConvexHullImpostor")(x.asInstanceOf[js.Any])
     
     /**
       * Custom-Imposter type (Ammo.js plugin only)
@@ -311,8 +283,7 @@ object physicsIndexMod {
     @JSImport("babylonjs/Physics/index", "PhysicsImpostor.CustomImpostor")
     @js.native
     def CustomImpostor: Double = js.native
-    @scala.inline
-    def CustomImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CustomImpostor")(x.asInstanceOf[js.Any])
+    inline def CustomImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CustomImpostor")(x.asInstanceOf[js.Any])
     
     /**
       * Cylinder-Imposter type
@@ -320,8 +291,7 @@ object physicsIndexMod {
     @JSImport("babylonjs/Physics/index", "PhysicsImpostor.CylinderImpostor")
     @js.native
     def CylinderImpostor: Double = js.native
-    @scala.inline
-    def CylinderImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CylinderImpostor")(x.asInstanceOf[js.Any])
+    inline def CylinderImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CylinderImpostor")(x.asInstanceOf[js.Any])
     
     /**
       * The default object size of the imposter
@@ -329,8 +299,7 @@ object physicsIndexMod {
     @JSImport("babylonjs/Physics/index", "PhysicsImpostor.DEFAULT_OBJECT_SIZE")
     @js.native
     def DEFAULT_OBJECT_SIZE: Vector3 = js.native
-    @scala.inline
-    def DEFAULT_OBJECT_SIZE_=(x: Vector3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_OBJECT_SIZE")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_OBJECT_SIZE_=(x: Vector3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_OBJECT_SIZE")(x.asInstanceOf[js.Any])
     
     /**
       * Heightmap-Imposter type
@@ -338,8 +307,7 @@ object physicsIndexMod {
     @JSImport("babylonjs/Physics/index", "PhysicsImpostor.HeightmapImpostor")
     @js.native
     def HeightmapImpostor: Double = js.native
-    @scala.inline
-    def HeightmapImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HeightmapImpostor")(x.asInstanceOf[js.Any])
+    inline def HeightmapImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HeightmapImpostor")(x.asInstanceOf[js.Any])
     
     /**
       * The identity quaternion of the imposter
@@ -347,8 +315,7 @@ object physicsIndexMod {
     @JSImport("babylonjs/Physics/index", "PhysicsImpostor.IDENTITY_QUATERNION")
     @js.native
     def IDENTITY_QUATERNION: Quaternion = js.native
-    @scala.inline
-    def IDENTITY_QUATERNION_=(x: Quaternion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IDENTITY_QUATERNION")(x.asInstanceOf[js.Any])
+    inline def IDENTITY_QUATERNION_=(x: Quaternion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IDENTITY_QUATERNION")(x.asInstanceOf[js.Any])
     
     /**
       * Mesh-imposter type
@@ -356,8 +323,7 @@ object physicsIndexMod {
     @JSImport("babylonjs/Physics/index", "PhysicsImpostor.MeshImpostor")
     @js.native
     def MeshImpostor: Double = js.native
-    @scala.inline
-    def MeshImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MeshImpostor")(x.asInstanceOf[js.Any])
+    inline def MeshImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MeshImpostor")(x.asInstanceOf[js.Any])
     
     /**
       * No-Imposter type
@@ -365,8 +331,7 @@ object physicsIndexMod {
     @JSImport("babylonjs/Physics/index", "PhysicsImpostor.NoImpostor")
     @js.native
     def NoImpostor: Double = js.native
-    @scala.inline
-    def NoImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NoImpostor")(x.asInstanceOf[js.Any])
+    inline def NoImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NoImpostor")(x.asInstanceOf[js.Any])
     
     /**
       * Particle-Imposter type
@@ -374,8 +339,7 @@ object physicsIndexMod {
     @JSImport("babylonjs/Physics/index", "PhysicsImpostor.ParticleImpostor")
     @js.native
     def ParticleImpostor: Double = js.native
-    @scala.inline
-    def ParticleImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ParticleImpostor")(x.asInstanceOf[js.Any])
+    inline def ParticleImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ParticleImpostor")(x.asInstanceOf[js.Any])
     
     /**
       * Plane-Imposter type
@@ -383,8 +347,7 @@ object physicsIndexMod {
     @JSImport("babylonjs/Physics/index", "PhysicsImpostor.PlaneImpostor")
     @js.native
     def PlaneImpostor: Double = js.native
-    @scala.inline
-    def PlaneImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PlaneImpostor")(x.asInstanceOf[js.Any])
+    inline def PlaneImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PlaneImpostor")(x.asInstanceOf[js.Any])
     
     /**
       * Rope-Imposter type
@@ -392,8 +355,7 @@ object physicsIndexMod {
     @JSImport("babylonjs/Physics/index", "PhysicsImpostor.RopeImpostor")
     @js.native
     def RopeImpostor: Double = js.native
-    @scala.inline
-    def RopeImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RopeImpostor")(x.asInstanceOf[js.Any])
+    inline def RopeImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RopeImpostor")(x.asInstanceOf[js.Any])
     
     /**
       * Softbody-Imposter type
@@ -401,8 +363,7 @@ object physicsIndexMod {
     @JSImport("babylonjs/Physics/index", "PhysicsImpostor.SoftbodyImpostor")
     @js.native
     def SoftbodyImpostor: Double = js.native
-    @scala.inline
-    def SoftbodyImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SoftbodyImpostor")(x.asInstanceOf[js.Any])
+    inline def SoftbodyImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SoftbodyImpostor")(x.asInstanceOf[js.Any])
     
     /**
       * Sphere-Imposter type
@@ -410,20 +371,17 @@ object physicsIndexMod {
     @JSImport("babylonjs/Physics/index", "PhysicsImpostor.SphereImpostor")
     @js.native
     def SphereImpostor: Double = js.native
-    @scala.inline
-    def SphereImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SphereImpostor")(x.asInstanceOf[js.Any])
+    inline def SphereImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SphereImpostor")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Physics/index", "PhysicsImpostor._tmpQuat")
     @js.native
     def _tmpQuat: js.Any = js.native
-    @scala.inline
-    def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
+    inline def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Physics/index", "PhysicsImpostor._tmpVecs")
     @js.native
     def _tmpVecs: js.Any = js.native
-    @scala.inline
-    def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
+    inline def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Physics/index", "PhysicsJoint")
@@ -459,8 +417,7 @@ object physicsIndexMod {
     @JSImport("babylonjs/Physics/index", "PhysicsJoint.BallAndSocketJoint")
     @js.native
     def BallAndSocketJoint: Double = js.native
-    @scala.inline
-    def BallAndSocketJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BallAndSocketJoint")(x.asInstanceOf[js.Any])
+    inline def BallAndSocketJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BallAndSocketJoint")(x.asInstanceOf[js.Any])
     
     /**
       * Distance-Joint type
@@ -468,8 +425,7 @@ object physicsIndexMod {
     @JSImport("babylonjs/Physics/index", "PhysicsJoint.DistanceJoint")
     @js.native
     def DistanceJoint: Double = js.native
-    @scala.inline
-    def DistanceJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DistanceJoint")(x.asInstanceOf[js.Any])
+    inline def DistanceJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DistanceJoint")(x.asInstanceOf[js.Any])
     
     /**
       * Hinge-Joint 2 type
@@ -477,8 +433,7 @@ object physicsIndexMod {
     @JSImport("babylonjs/Physics/index", "PhysicsJoint.Hinge2Joint")
     @js.native
     def Hinge2Joint: Double = js.native
-    @scala.inline
-    def Hinge2Joint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Hinge2Joint")(x.asInstanceOf[js.Any])
+    inline def Hinge2Joint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Hinge2Joint")(x.asInstanceOf[js.Any])
     
     /**
       * Hinge-Joint type
@@ -486,8 +441,7 @@ object physicsIndexMod {
     @JSImport("babylonjs/Physics/index", "PhysicsJoint.HingeJoint")
     @js.native
     def HingeJoint: Double = js.native
-    @scala.inline
-    def HingeJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HingeJoint")(x.asInstanceOf[js.Any])
+    inline def HingeJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HingeJoint")(x.asInstanceOf[js.Any])
     
     /**
       * Lock-Joint type
@@ -495,8 +449,7 @@ object physicsIndexMod {
     @JSImport("babylonjs/Physics/index", "PhysicsJoint.LockJoint")
     @js.native
     def LockJoint: Double = js.native
-    @scala.inline
-    def LockJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LockJoint")(x.asInstanceOf[js.Any])
+    inline def LockJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LockJoint")(x.asInstanceOf[js.Any])
     
     /**
       * Point to Point Joint type.  Similar to a Ball-Joint.  Different in parameters
@@ -504,8 +457,7 @@ object physicsIndexMod {
     @JSImport("babylonjs/Physics/index", "PhysicsJoint.PointToPointJoint")
     @js.native
     def PointToPointJoint: Double = js.native
-    @scala.inline
-    def PointToPointJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PointToPointJoint")(x.asInstanceOf[js.Any])
+    inline def PointToPointJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PointToPointJoint")(x.asInstanceOf[js.Any])
     
     /**
       * Prismatic-Joint type
@@ -513,8 +465,7 @@ object physicsIndexMod {
     @JSImport("babylonjs/Physics/index", "PhysicsJoint.PrismaticJoint")
     @js.native
     def PrismaticJoint: Double = js.native
-    @scala.inline
-    def PrismaticJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PrismaticJoint")(x.asInstanceOf[js.Any])
+    inline def PrismaticJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PrismaticJoint")(x.asInstanceOf[js.Any])
     
     /**
       * Slider-Joint type
@@ -522,8 +473,7 @@ object physicsIndexMod {
     @JSImport("babylonjs/Physics/index", "PhysicsJoint.SliderJoint")
     @js.native
     def SliderJoint: Double = js.native
-    @scala.inline
-    def SliderJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SliderJoint")(x.asInstanceOf[js.Any])
+    inline def SliderJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SliderJoint")(x.asInstanceOf[js.Any])
     
     /**
       * Spring-Joint type
@@ -531,8 +481,7 @@ object physicsIndexMod {
     @JSImport("babylonjs/Physics/index", "PhysicsJoint.SpringJoint")
     @js.native
     def SpringJoint: Double = js.native
-    @scala.inline
-    def SpringJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SpringJoint")(x.asInstanceOf[js.Any])
+    inline def SpringJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SpringJoint")(x.asInstanceOf[js.Any])
     
     /**
       * Universal-Joint type
@@ -541,8 +490,7 @@ object physicsIndexMod {
     @JSImport("babylonjs/Physics/index", "PhysicsJoint.UniversalJoint")
     @js.native
     def UniversalJoint: Double = js.native
-    @scala.inline
-    def UniversalJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UniversalJoint")(x.asInstanceOf[js.Any])
+    inline def UniversalJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UniversalJoint")(x.asInstanceOf[js.Any])
     
     /**
       * Wheel-Joint type
@@ -550,8 +498,7 @@ object physicsIndexMod {
     @JSImport("babylonjs/Physics/index", "PhysicsJoint.WheelJoint")
     @js.native
     def WheelJoint: Double = js.native
-    @scala.inline
-    def WheelJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WheelJoint")(x.asInstanceOf[js.Any])
+    inline def WheelJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WheelJoint")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Physics/index", "PhysicsRadialExplosionEventOptions")
@@ -564,11 +511,11 @@ object physicsIndexMod {
   object PhysicsRadialImpulseFalloff extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.babylonjs.physicsHelperMod.PhysicsRadialImpulseFalloff with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.babylonjs.physicsHelperMod.PhysicsRadialImpulseFalloff & Double] = js.native
     
-    /* 0 */ val Constant: typings.babylonjs.physicsHelperMod.PhysicsRadialImpulseFalloff.Constant with Double = js.native
+    /* 0 */ val Constant: typings.babylonjs.physicsHelperMod.PhysicsRadialImpulseFalloff.Constant & Double = js.native
     
-    /* 1 */ val Linear: typings.babylonjs.physicsHelperMod.PhysicsRadialImpulseFalloff.Linear with Double = js.native
+    /* 1 */ val Linear: typings.babylonjs.physicsHelperMod.PhysicsRadialImpulseFalloff.Linear & Double = js.native
   }
   
   @JSImport("babylonjs/Physics/index", "PhysicsUpdraftEventOptions")
@@ -581,11 +528,11 @@ object physicsIndexMod {
   object PhysicsUpdraftMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.babylonjs.physicsHelperMod.PhysicsUpdraftMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.babylonjs.physicsHelperMod.PhysicsUpdraftMode & Double] = js.native
     
-    /* 0 */ val Center: typings.babylonjs.physicsHelperMod.PhysicsUpdraftMode.Center with Double = js.native
+    /* 0 */ val Center: typings.babylonjs.physicsHelperMod.PhysicsUpdraftMode.Center & Double = js.native
     
-    /* 1 */ val Perpendicular: typings.babylonjs.physicsHelperMod.PhysicsUpdraftMode.Perpendicular with Double = js.native
+    /* 1 */ val Perpendicular: typings.babylonjs.physicsHelperMod.PhysicsUpdraftMode.Perpendicular & Double = js.native
   }
   
   @JSImport("babylonjs/Physics/index", "PhysicsVortexEventOptions")

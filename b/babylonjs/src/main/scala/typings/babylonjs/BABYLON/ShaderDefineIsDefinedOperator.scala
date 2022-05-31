@@ -2,20 +2,19 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ShaderDefineIsDefinedOperator extends ShaderDefineExpression {
+trait ShaderDefineIsDefinedOperator
+  extends StObject
+     with ShaderDefineExpression {
   
-  var define: String = js.native
+  var define: String
   
-  var not: Boolean = js.native
+  var not: Boolean
 }
 object ShaderDefineIsDefinedOperator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     define: String,
     isTrue: org.scalablytyped.runtime.StringDictionary[String] => Boolean,
     not: Boolean
@@ -24,13 +23,10 @@ object ShaderDefineIsDefinedOperator {
     __obj.asInstanceOf[ShaderDefineIsDefinedOperator]
   }
   
-  @scala.inline
-  implicit class ShaderDefineIsDefinedOperatorMutableBuilder[Self <: ShaderDefineIsDefinedOperator] (val x: Self) extends AnyVal {
+  extension [Self <: ShaderDefineIsDefinedOperator](x: Self) {
     
-    @scala.inline
-    def setDefine(value: String): Self = StObject.set(x, "define", value.asInstanceOf[js.Any])
+    inline def setDefine(value: String): Self = StObject.set(x, "define", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNot(value: Boolean): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
+    inline def setNot(value: Boolean): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
   }
 }

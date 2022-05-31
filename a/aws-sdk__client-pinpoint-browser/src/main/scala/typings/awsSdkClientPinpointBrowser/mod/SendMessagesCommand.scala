@@ -1,5 +1,6 @@
 package typings.awsSdkClientPinpointBrowser.mod
 
+import typings.awsSdkClientPinpointBrowser.typesSendMessagesInputMod.SendMessagesInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class SendMessagesCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.sendMessagesCommandMod.SendMessagesCommand {
-  def this(input: typings.awsSdkClientPinpointBrowser.typesSendMessagesInputMod.SendMessagesInput) = this()
+  def this(input: SendMessagesInput) = this()
 }

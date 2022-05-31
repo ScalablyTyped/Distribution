@@ -14,21 +14,22 @@ import typings.std.CustomEvent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ojInputDateTime[SP /* <: ojInputDateTimeSettableProperties */] extends ojInputDate[SP] {
+trait ojInputDateTime[SP /* <: ojInputDateTimeSettableProperties */]
+  extends StObject
+     with ojInputDate[SP] {
   
   @JSName("addEventListener")
   def addEventListener_timePickerChanged(
     `type`: timePickerChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[FooterLayout], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[FooterLayout], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_timePickerChanged(
     `type`: timePickerChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[FooterLayout], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[FooterLayout], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   
@@ -38,12 +39,12 @@ trait ojInputDateTime[SP /* <: ojInputDateTimeSettableProperties */] extends ojI
   def hideTimePicker(): Unit = js.native
   
   @JSName("onOjAnimateEnd")
-  var onOjAnimateEnd_ojInputDateTime: (js.Function1[/* event */ ojAnimateEnd, _]) | Null = js.native
+  var onOjAnimateEnd_ojInputDateTime: (js.Function1[/* event */ ojAnimateEnd, js.Any]) | Null = js.native
   
   @JSName("onOjAnimateStart")
-  var onOjAnimateStart_ojInputDateTime: (js.Function1[/* event */ ojAnimateStart, _]) | Null = js.native
+  var onOjAnimateStart_ojInputDateTime: (js.Function1[/* event */ ojAnimateStart, js.Any]) | Null = js.native
   
-  var onTimePickerChanged: (js.Function1[/* event */ JetElementCustomEvent[FooterLayout], _]) | Null = js.native
+  var onTimePickerChanged: (js.Function1[/* event */ JetElementCustomEvent[FooterLayout], js.Any]) | Null = js.native
   
   def setProperties(properties: ojInputDateTimeSettablePropertiesLenient): Unit = js.native
   

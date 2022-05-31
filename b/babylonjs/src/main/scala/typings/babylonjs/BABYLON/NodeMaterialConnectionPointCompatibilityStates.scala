@@ -2,7 +2,6 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,13 +12,19 @@ object NodeMaterialConnectionPointCompatibilityStates extends StObject {
   
   /** Points are compatibles */
   @js.native
-  sealed trait Compatible extends NodeMaterialConnectionPointCompatibilityStates
+  sealed trait Compatible
+    extends StObject
+       with NodeMaterialConnectionPointCompatibilityStates
   
   /** Points are incompatible because of their targets (vertex vs fragment) */
   @js.native
-  sealed trait TargetIncompatible extends NodeMaterialConnectionPointCompatibilityStates
+  sealed trait TargetIncompatible
+    extends StObject
+       with NodeMaterialConnectionPointCompatibilityStates
   
   /** Points are incompatible because of their types */
   @js.native
-  sealed trait TypeIncompatible extends NodeMaterialConnectionPointCompatibilityStates
+  sealed trait TypeIncompatible
+    extends StObject
+       with NodeMaterialConnectionPointCompatibilityStates
 }

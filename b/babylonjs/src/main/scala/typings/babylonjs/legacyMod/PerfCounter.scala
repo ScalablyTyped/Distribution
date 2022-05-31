@@ -2,7 +2,6 @@ package typings.babylonjs.legacyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "PerfCounter")
@@ -25,6 +24,5 @@ object PerfCounter {
   @JSImport("babylonjs/Legacy/legacy", "PerfCounter.Enabled")
   @js.native
   def Enabled: Boolean = js.native
-  @scala.inline
-  def Enabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Enabled")(x.asInstanceOf[js.Any])
+  inline def Enabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Enabled")(x.asInstanceOf[js.Any])
 }

@@ -4,7 +4,6 @@ import typings.babylonjs.anon.DiameterX
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "SphereBuilder")
@@ -13,6 +12,10 @@ class SphereBuilder ()
   extends typings.babylonjs.babylonjsIndexMod.SphereBuilder
 /* static members */
 object SphereBuilder {
+  
+  @JSImport("babylonjs/index", "SphereBuilder")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a sphere mesh
@@ -30,10 +33,6 @@ object SphereBuilder {
     * @returns the sphere mesh
     * @see https://doc.babylonjs.com/how_to/set_shapes#sphere
     */
-  @JSImport("babylonjs/index", "SphereBuilder.CreateSphere")
-  @js.native
-  def CreateSphere(name: String, options: DiameterX): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs/index", "SphereBuilder.CreateSphere")
-  @js.native
-  def CreateSphere(name: String, options: DiameterX, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = js.native
+  inline def CreateSphere(name: String, options: DiameterX): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateSphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateSphere(name: String, options: DiameterX, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateSphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
 }

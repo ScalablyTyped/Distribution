@@ -238,9 +238,6 @@ object dom {
     /* static member */
     inline def whitespaces(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("whitespaces")().asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
     inline def whitespaces(isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("whitespaces")(isReject.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
-    
-    /* static member */
-    object validEmptyBlockContainers
   }
   
   @JSGlobal("CKEDITOR.dom.window")

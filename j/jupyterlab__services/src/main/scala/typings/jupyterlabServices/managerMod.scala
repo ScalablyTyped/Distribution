@@ -9,7 +9,6 @@ import typings.luminoSignaling.mod.ISignal
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object managerMod {
@@ -28,17 +27,17 @@ object managerMod {
   class KernelSpecManager () extends BaseManager {
     def this(options: IOptions) = this()
     
-    var _connectionFailure: js.Any = js.native
+    /* private */ var _connectionFailure: js.Any = js.native
     
-    var _isReady: js.Any = js.native
+    /* private */ var _isReady: js.Any = js.native
     
-    var _pollSpecs: js.Any = js.native
+    /* private */ var _pollSpecs: js.Any = js.native
     
-    var _ready: js.Any = js.native
+    /* private */ var _ready: js.Any = js.native
     
-    var _specs: js.Any = js.native
+    /* private */ var _specs: js.Any = js.native
     
-    var _specsChanged: js.Any = js.native
+    /* private */ var _specsChanged: js.Any = js.native
     
     /**
       * A signal emitted when there is a connection failure.
@@ -103,31 +102,27 @@ object managerMod {
     /**
       * The options used to initialize a KernelManager.
       */
-    @js.native
     trait IOptions
-      extends typings.jupyterlabServices.basemanagerMod.BaseManager.IOptions {
+      extends StObject
+         with typings.jupyterlabServices.basemanagerMod.BaseManager.IOptions {
       
       /**
         * When the manager stops polling the API. Defaults to `when-hidden`.
         */
-      var standby: js.UndefOr[Standby] = js.native
+      var standby: js.UndefOr[Standby] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): IOptions = {
+      inline def apply(): IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setStandby(value: Standby): Self = StObject.set(x, "standby", value.asInstanceOf[js.Any])
+        inline def setStandby(value: Standby): Self = StObject.set(x, "standby", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStandbyUndefined: Self = StObject.set(x, "standby", js.undefined)
+        inline def setStandbyUndefined: Self = StObject.set(x, "standby", js.undefined)
       }
     }
   }

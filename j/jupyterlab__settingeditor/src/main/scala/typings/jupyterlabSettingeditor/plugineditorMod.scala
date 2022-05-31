@@ -13,7 +13,6 @@ import typings.luminoSignaling.mod.ISignal
 import typings.luminoWidgets.mod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object plugineditorMod {
@@ -31,13 +30,13 @@ object plugineditorMod {
     /**
       * Handle layout state changes that need to be saved.
       */
-    var _onStateChanged: js.Any = js.native
+    /* private */ var _onStateChanged: js.Any = js.native
     
-    var _rawEditor: js.Any = js.native
+    /* private */ var _rawEditor: js.Any = js.native
     
-    var _settings: js.Any = js.native
+    /* private */ var _settings: js.Any = js.native
     
-    var _stateChanged: js.Any = js.native
+    /* private */ var _stateChanged: js.Any = js.native
     
     /**
       * If the editor is in a dirty state, confirm that the user wants to leave.
@@ -77,33 +76,31 @@ object plugineditorMod {
     /**
       * The instantiation options for a plugin editor.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The toolbar commands and registry for the setting editor toolbar.
         */
-      var commands: Registry = js.native
+      var commands: Registry
       
       /**
         * The editor factory used by the plugin editor.
         */
-      var editorFactory: Factory = js.native
+      var editorFactory: Factory
       
       /**
         * The setting registry used by the editor.
         */
-      var registry: ISettingRegistry = js.native
+      var registry: ISettingRegistry
       
       /**
         * The optional MIME renderer to use for rendering debug messages.
         */
-      var rendermime: js.UndefOr[IRenderMimeRegistry] = js.native
+      var rendermime: js.UndefOr[IRenderMimeRegistry] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         commands: Registry,
         editorFactory: /* options */ typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions => IEditor,
         registry: ISettingRegistry
@@ -112,23 +109,17 @@ object plugineditorMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setCommands(value: Registry): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+        inline def setCommands(value: Registry): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEditorFactory(value: /* options */ typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions => IEditor): Self = StObject.set(x, "editorFactory", js.Any.fromFunction1(value))
+        inline def setEditorFactory(value: /* options */ typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions => IEditor): Self = StObject.set(x, "editorFactory", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setRegistry(value: ISettingRegistry): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
+        inline def setRegistry(value: ISettingRegistry): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRendermime(value: IRenderMimeRegistry): Self = StObject.set(x, "rendermime", value.asInstanceOf[js.Any])
+        inline def setRendermime(value: IRenderMimeRegistry): Self = StObject.set(x, "rendermime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRendermimeUndefined: Self = StObject.set(x, "rendermime", js.undefined)
+        inline def setRendermimeUndefined: Self = StObject.set(x, "rendermime", js.undefined)
       }
     }
   }

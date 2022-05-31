@@ -14,97 +14,75 @@ import typings.oracleOraclejet.oracleOraclejetStrings.triangleDown
 import typings.oracleOraclejet.oracleOraclejetStrings.triangleUp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BorderStyle extends StObject {
   
-  var borderColor: js.UndefOr[String] = js.native
+  var borderColor: js.UndefOr[String] = js.undefined
   
-  var borderStyle: js.UndefOr[none | solid] = js.native
+  var borderStyle: js.UndefOr[none | solid] = js.undefined
   
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var labelStyle: js.UndefOr[js.Object] = js.native
+  var labelStyle: js.UndefOr[js.Object] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
   var shape: js.UndefOr[
     circle | diamond | ellipse | human | plus | rectangle | square | star | triangleDown | triangleUp | String
-  ] = js.native
+  ] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object BorderStyle {
   
-  @scala.inline
-  def apply(): BorderStyle = {
+  inline def apply(): BorderStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BorderStyle]
   }
   
-  @scala.inline
-  implicit class BorderStyleMutableBuilder[Self <: BorderStyle] (val x: Self) extends AnyVal {
+  extension [Self <: BorderStyle](x: Self) {
     
-    @scala.inline
-    def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+    inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
-    @scala.inline
-    def setBorderStyle(value: none | solid): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
+    inline def setBorderStyle(value: none | solid): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
+    inline def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
     
-    @scala.inline
-    def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+    inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
+    inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setLabelStyle(value: js.Object): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
+    inline def setLabelStyle(value: js.Object): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
+    inline def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    @scala.inline
-    def setShape(
+    inline def setShape(
       value: circle | diamond | ellipse | human | plus | rectangle | square | star | triangleDown | triangleUp | String
     ): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

@@ -8,13 +8,13 @@ import typings.babylonjs.XRReferenceSpace
 import typings.babylonjs.XRSession
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.WebXRHitTestLegacy")
 @js.native
 class WebXRHitTestLegacy protected ()
-  extends typings.babylonjs.BABYLON.WebXRHitTestLegacy {
+  extends StObject
+     with typings.babylonjs.BABYLON.WebXRHitTestLegacy {
   /**
     * Creates a new instance of the (legacy version) hit test feature
     * @param _xrSessionManager an instance of WebXRSessionManager
@@ -28,9 +28,19 @@ class WebXRHitTestLegacy protected ()
     */
   options: IWebXRLegacyHitTestOptions
   ) = this()
+  
+  /**
+    * Releases all held resources
+    */
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
 }
 /* static members */
 object WebXRHitTestLegacy {
+  
+  @JSGlobal("BABYLON.WebXRHitTestLegacy")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * The module's name
@@ -57,17 +67,13 @@ object WebXRHitTestLegacy {
     * @param filter filter function that will filter the results
     * @returns a promise that resolves with an array of native XR hit result in xr coordinates system
     */
-  @JSGlobal("BABYLON.WebXRHitTestLegacy.XRHitTestWithRay")
-  @js.native
-  def XRHitTestWithRay(xrSession: XRSession, xrRay: XRRay, referenceSpace: XRReferenceSpace): js.Promise[js.Array[XRHitResult]] = js.native
-  @JSGlobal("BABYLON.WebXRHitTestLegacy.XRHitTestWithRay")
-  @js.native
-  def XRHitTestWithRay(
+  inline def XRHitTestWithRay(xrSession: XRSession, xrRay: XRRay, referenceSpace: XRReferenceSpace): js.Promise[js.Array[XRHitResult]] = (^.asInstanceOf[js.Dynamic].applyDynamic("XRHitTestWithRay")(xrSession.asInstanceOf[js.Any], xrRay.asInstanceOf[js.Any], referenceSpace.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[XRHitResult]]]
+  inline def XRHitTestWithRay(
     xrSession: XRSession,
     xrRay: XRRay,
     referenceSpace: XRReferenceSpace,
     filter: js.Function1[/* result */ XRHitResult, Boolean]
-  ): js.Promise[js.Array[XRHitResult]] = js.native
+  ): js.Promise[js.Array[XRHitResult]] = (^.asInstanceOf[js.Dynamic].applyDynamic("XRHitTestWithRay")(xrSession.asInstanceOf[js.Any], xrRay.asInstanceOf[js.Any], referenceSpace.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[XRHitResult]]]
   
   /**
     * Execute a hit test on the current running session using a select event returned from a transient input (such as touch)
@@ -75,7 +81,5 @@ object WebXRHitTestLegacy {
     * @param referenceSpace the reference space to use for this hit test
     * @returns a promise that resolves with an array of native XR hit result in xr coordinates system
     */
-  @JSGlobal("BABYLON.WebXRHitTestLegacy.XRHitTestWithSelectEvent")
-  @js.native
-  def XRHitTestWithSelectEvent(event: XRInputSourceEvent, referenceSpace: XRReferenceSpace): js.Promise[js.Array[XRHitResult]] = js.native
+  inline def XRHitTestWithSelectEvent(event: XRInputSourceEvent, referenceSpace: XRReferenceSpace): js.Promise[js.Array[XRHitResult]] = (^.asInstanceOf[js.Dynamic].applyDynamic("XRHitTestWithSelectEvent")(event.asInstanceOf[js.Any], referenceSpace.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[XRHitResult]]]
 }

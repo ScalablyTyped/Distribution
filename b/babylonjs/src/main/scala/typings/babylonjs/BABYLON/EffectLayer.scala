@@ -3,7 +3,6 @@ package typings.babylonjs.BABYLON
 import typings.babylonjs.anon.PartialIEffectLayerOptionAlphaBlendingMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,7 +14,7 @@ trait EffectLayer extends StObject {
     */
   /* protected */ def _addCustomEffectDefines(defines: js.Array[String]): Unit = js.native
   
-  var _cachedDefines: js.Any = js.native
+  /* private */ var _cachedDefines: js.Any = js.native
   
   /**
     * Returns true if the mesh can be rendered, otherwise false.
@@ -52,27 +51,27 @@ trait EffectLayer extends StObject {
   /**
     * Dispose only the render target textures and post process.
     */
-  var _disposeTextureAndPostProcesses: js.Any = js.native
+  /* private */ var _disposeTextureAndPostProcesses: js.Any = js.native
   
-  var _effectLayerMapGenerationEffect: js.Any = js.native
+  /* private */ var _effectLayerMapGenerationEffect: js.Any = js.native
   
-  var _effectLayerOptions: js.Any = js.native
+  /* private */ var _effectLayerOptions: js.Any = js.native
   
-  var _emissiveTextureAndColor: typings.babylonjs.anon.Texture = js.native
+  /* protected */ var _emissiveTextureAndColor: typings.babylonjs.anon.Texture = js.native
   
-  var _engine: Engine = js.native
+  /* protected */ var _engine: Engine = js.native
   
   /**
     * Generates the index buffer of the full screen quad blending to the main canvas.
     */
-  var _generateIndexBuffer: js.Any = js.native
+  /* private */ var _generateIndexBuffer: js.Any = js.native
   
   /**
     * Generates the vertex buffer of the full screen quad blending to the main canvas.
     */
-  var _generateVertexBuffer: js.Any = js.native
+  /* private */ var _generateVertexBuffer: js.Any = js.native
   
-  var _indexBuffer: js.Any = js.native
+  /* private */ var _indexBuffer: js.Any = js.native
   
   /**
     * Initializes the effect layer with the required options.
@@ -95,15 +94,15 @@ trait EffectLayer extends StObject {
     */
   /* protected */ def _isReady(subMesh: SubMesh, useInstances: Boolean, emissiveTexture: Nullable[BaseTexture]): Boolean = js.native
   
-  var _mainTexture: RenderTargetTexture = js.native
+  /* protected */ var _mainTexture: RenderTargetTexture = js.native
   
-  var _mainTextureDesiredSize: ISize = js.native
+  /* protected */ var _mainTextureDesiredSize: ISize = js.native
   
-  var _maxSize: Double = js.native
+  /* protected */ var _maxSize: Double = js.native
   
-  var _mergeEffect: js.Any = js.native
+  /* private */ var _mergeEffect: js.Any = js.native
   
-  var _postProcesses: js.Array[PostProcess] = js.native
+  /* protected */ var _postProcesses: js.Array[PostProcess] = js.native
   
   /**
     * Rebuild the required buffers.
@@ -117,7 +116,7 @@ trait EffectLayer extends StObject {
   /* protected */ def _renderSubMesh(subMesh: SubMesh): Unit = js.native
   /* protected */ def _renderSubMesh(subMesh: SubMesh, enableAlphaMode: Boolean): Unit = js.native
   
-  var _scene: Scene = js.native
+  /* protected */ var _scene: Scene = js.native
   
   /**
     * Sets the required values for both the emissive texture and and the main color.
@@ -128,9 +127,9 @@ trait EffectLayer extends StObject {
     * Sets the main texture desired size which is the closest power of two
     * of the engine canvas size.
     */
-  var _setMainTextureSize: js.Any = js.native
+  /* private */ var _setMainTextureSize: js.Any = js.native
   
-  var _shouldRender: Boolean = js.native
+  /* protected */ var _shouldRender: Boolean = js.native
   
   /**
     * Returns true if the mesh should render, otherwise false.
@@ -146,7 +145,7 @@ trait EffectLayer extends StObject {
     */
   /* protected */ def _shouldRenderMesh(mesh: AbstractMesh): Boolean = js.native
   
-  var _textures: js.Array[BaseTexture] = js.native
+  /* protected */ var _textures: js.Array[BaseTexture] = js.native
   
   /**
     * Defines whether the current material of the mesh should be use to render the effect.
@@ -154,7 +153,7 @@ trait EffectLayer extends StObject {
     */
   /* protected */ def _useMeshMaterial(mesh: AbstractMesh): Boolean = js.native
   
-  var _vertexBuffers: js.Any = js.native
+  /* private */ var _vertexBuffers: js.Any = js.native
   
   /**
     * Gets the camera attached to the layer.
@@ -269,7 +268,7 @@ trait EffectLayer extends StObject {
     * Serializes this layer (Glow or Highlight for example)
     * @returns a serialized layer object
     */
-  var serialize: js.UndefOr[js.Function0[_]] = js.native
+  var serialize: js.UndefOr[js.Function0[js.Any]] = js.native
   
   /**
     * Returns true if the layer contains information to display, otherwise false.

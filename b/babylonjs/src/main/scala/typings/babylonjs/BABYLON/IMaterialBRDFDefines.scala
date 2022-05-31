@@ -2,27 +2,24 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMaterialBRDFDefines extends StObject {
   
-  var BRDF_V_HEIGHT_CORRELATED: Boolean = js.native
+  var BRDF_V_HEIGHT_CORRELATED: Boolean
   
-  var MS_BRDF_ENERGY_CONSERVATION: Boolean = js.native
+  var MS_BRDF_ENERGY_CONSERVATION: Boolean
   
-  var SPECULAR_GLOSSINESS_ENERGY_CONSERVATION: Boolean = js.native
+  var SPECULAR_GLOSSINESS_ENERGY_CONSERVATION: Boolean
   
-  var SPHERICAL_HARMONICS: Boolean = js.native
+  var SPHERICAL_HARMONICS: Boolean
   
   /** @hidden */
-  var _areMiscDirty: Boolean = js.native
+  var _areMiscDirty: Boolean
 }
 object IMaterialBRDFDefines {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BRDF_V_HEIGHT_CORRELATED: Boolean,
     MS_BRDF_ENERGY_CONSERVATION: Boolean,
     SPECULAR_GLOSSINESS_ENERGY_CONSERVATION: Boolean,
@@ -33,22 +30,16 @@ object IMaterialBRDFDefines {
     __obj.asInstanceOf[IMaterialBRDFDefines]
   }
   
-  @scala.inline
-  implicit class IMaterialBRDFDefinesMutableBuilder[Self <: IMaterialBRDFDefines] (val x: Self) extends AnyVal {
+  extension [Self <: IMaterialBRDFDefines](x: Self) {
     
-    @scala.inline
-    def setBRDF_V_HEIGHT_CORRELATED(value: Boolean): Self = StObject.set(x, "BRDF_V_HEIGHT_CORRELATED", value.asInstanceOf[js.Any])
+    inline def setBRDF_V_HEIGHT_CORRELATED(value: Boolean): Self = StObject.set(x, "BRDF_V_HEIGHT_CORRELATED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMS_BRDF_ENERGY_CONSERVATION(value: Boolean): Self = StObject.set(x, "MS_BRDF_ENERGY_CONSERVATION", value.asInstanceOf[js.Any])
+    inline def setMS_BRDF_ENERGY_CONSERVATION(value: Boolean): Self = StObject.set(x, "MS_BRDF_ENERGY_CONSERVATION", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSPECULAR_GLOSSINESS_ENERGY_CONSERVATION(value: Boolean): Self = StObject.set(x, "SPECULAR_GLOSSINESS_ENERGY_CONSERVATION", value.asInstanceOf[js.Any])
+    inline def setSPECULAR_GLOSSINESS_ENERGY_CONSERVATION(value: Boolean): Self = StObject.set(x, "SPECULAR_GLOSSINESS_ENERGY_CONSERVATION", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSPHERICAL_HARMONICS(value: Boolean): Self = StObject.set(x, "SPHERICAL_HARMONICS", value.asInstanceOf[js.Any])
+    inline def setSPHERICAL_HARMONICS(value: Boolean): Self = StObject.set(x, "SPHERICAL_HARMONICS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_areMiscDirty(value: Boolean): Self = StObject.set(x, "_areMiscDirty", value.asInstanceOf[js.Any])
+    inline def set_areMiscDirty(value: Boolean): Self = StObject.set(x, "_areMiscDirty", value.asInstanceOf[js.Any])
   }
 }

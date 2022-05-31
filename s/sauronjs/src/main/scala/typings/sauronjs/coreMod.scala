@@ -43,25 +43,11 @@ object coreMod {
   
   inline def attachSubject(`object`: typings.sauronjs.serviceMod.^): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("attachSubject")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  object cache {
-    
-    inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
-    inline def apply(id: String): Cache = ^.asInstanceOf[js.Dynamic].apply(id.asInstanceOf[js.Any]).asInstanceOf[Cache]
-    
-    @JSImport("sauronjs/src/core", "cache")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def cache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cache")().asInstanceOf[Unit]
+  inline def cache(id: String): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("cache")(id.asInstanceOf[js.Any]).asInstanceOf[Cache]
   
-  object instance {
-    
-    inline def apply(componentMap: SauronComponentMap): SauronInstance = ^.asInstanceOf[js.Dynamic].apply(componentMap.asInstanceOf[js.Any]).asInstanceOf[SauronInstance]
-    inline def apply(componentMap: SauronComponentMap, id: String): SauronInstance = (^.asInstanceOf[js.Dynamic].apply(componentMap.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SauronInstance]
-    
-    @JSImport("sauronjs/src/core", "instance")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def instance(componentMap: SauronComponentMap): SauronInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")(componentMap.asInstanceOf[js.Any]).asInstanceOf[SauronInstance]
+  inline def instance(componentMap: SauronComponentMap, id: String): SauronInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("instance")(componentMap.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SauronInstance]
   
   inline def next(channels: js.Array[String], event: String, data: js.Any, id: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("next")(channels.asInstanceOf[js.Any], event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

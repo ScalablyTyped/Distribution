@@ -4,34 +4,27 @@ import typings.babylonjs.BABYLON.Nullable
 import typings.std.FocusEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HandlerName extends StObject {
   
-  var handler: Nullable[js.Function1[/* e */ FocusEvent, _]] = js.native
+  var handler: Nullable[js.Function1[/* e */ FocusEvent, js.Any]]
   
-  var name: String = js.native
+  var name: String
 }
 object HandlerName {
   
-  @scala.inline
-  def apply(name: String): HandlerName = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  inline def apply(name: String): HandlerName = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], handler = null)
     __obj.asInstanceOf[HandlerName]
   }
   
-  @scala.inline
-  implicit class HandlerNameMutableBuilder[Self <: HandlerName] (val x: Self) extends AnyVal {
+  extension [Self <: HandlerName](x: Self) {
     
-    @scala.inline
-    def setHandler(value: /* e */ FocusEvent => _): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
+    inline def setHandler(value: /* e */ FocusEvent => js.Any): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHandlerNull: Self = StObject.set(x, "handler", null)
+    inline def setHandlerNull: Self = StObject.set(x, "handler", null)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

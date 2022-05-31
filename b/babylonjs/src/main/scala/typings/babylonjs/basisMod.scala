@@ -7,7 +7,6 @@ import typings.std.ArrayBuffer
 import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object basisMod {
@@ -27,9 +26,7 @@ object basisMod {
       * @param basisFormat format chosen from GetSupportedTranscodeFormat
       * @returns internal format corresponding to the Basis format
       */
-    @JSImport("babylonjs/Misc/basis", "BasisTools.GetInternalFormatFromBasisFormat")
-    @js.native
-    def GetInternalFormatFromBasisFormat(basisFormat: Double): Double = js.native
+    inline def GetInternalFormatFromBasisFormat(basisFormat: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetInternalFormatFromBasisFormat")(basisFormat.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * URL to use when loading the basis transcoder
@@ -37,30 +34,23 @@ object basisMod {
     @JSImport("babylonjs/Misc/basis", "BasisTools.JSModuleURL")
     @js.native
     def JSModuleURL: String = js.native
-    @scala.inline
-    def JSModuleURL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JSModuleURL")(x.asInstanceOf[js.Any])
+    inline def JSModuleURL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JSModuleURL")(x.asInstanceOf[js.Any])
     
     /**
       * Loads a texture from the transcode result
       * @param texture texture load to
       * @param transcodeResult the result of transcoding the basis file to load from
       */
-    @JSImport("babylonjs/Misc/basis", "BasisTools.LoadTextureFromTranscodeResult")
-    @js.native
-    def LoadTextureFromTranscodeResult(texture: InternalTexture, transcodeResult: TranscodeResult): Unit = js.native
+    inline def LoadTextureFromTranscodeResult(texture: InternalTexture, transcodeResult: TranscodeResult): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadTextureFromTranscodeResult")(texture.asInstanceOf[js.Any], transcodeResult.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("babylonjs/Misc/basis", "BasisTools.TranscodeAsync")
-    @js.native
-    def TranscodeAsync(data: ArrayBufferView, config: BasisTranscodeConfiguration): js.Promise[TranscodeResult] = js.native
+    inline def TranscodeAsync(data: ArrayBufferView, config: BasisTranscodeConfiguration): js.Promise[TranscodeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("TranscodeAsync")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TranscodeResult]]
     /**
       * Transcodes a loaded image file to compressed pixel data
       * @param data image data to transcode
       * @param config configuration options for the transcoding
       * @returns a promise resulting in the transcoded image
       */
-    @JSImport("babylonjs/Misc/basis", "BasisTools.TranscodeAsync")
-    @js.native
-    def TranscodeAsync(data: ArrayBuffer, config: BasisTranscodeConfiguration): js.Promise[TranscodeResult] = js.native
+    inline def TranscodeAsync(data: ArrayBuffer, config: BasisTranscodeConfiguration): js.Promise[TranscodeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("TranscodeAsync")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TranscodeResult]]
     
     /**
       * URL to use when loading the wasm module for the transcoder
@@ -68,20 +58,17 @@ object basisMod {
     @JSImport("babylonjs/Misc/basis", "BasisTools.WasmModuleURL")
     @js.native
     def WasmModuleURL: String = js.native
-    @scala.inline
-    def WasmModuleURL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WasmModuleURL")(x.asInstanceOf[js.Any])
+    inline def WasmModuleURL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WasmModuleURL")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/basis", "BasisTools._CreateWorkerAsync")
     @js.native
     def _CreateWorkerAsync: js.Any = js.native
-    @scala.inline
-    def _CreateWorkerAsync_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateWorkerAsync")(x.asInstanceOf[js.Any])
+    inline def _CreateWorkerAsync_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateWorkerAsync")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/basis", "BasisTools._IgnoreSupportedFormats")
     @js.native
     def _IgnoreSupportedFormats: js.Any = js.native
-    @scala.inline
-    def _IgnoreSupportedFormats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IgnoreSupportedFormats")(x.asInstanceOf[js.Any])
+    inline def _IgnoreSupportedFormats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IgnoreSupportedFormats")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/basis", "BasisTools._Worker")
     @js.native
@@ -90,17 +77,14 @@ object basisMod {
     @JSImport("babylonjs/Misc/basis", "BasisTools._WorkerPromise")
     @js.native
     def _WorkerPromise: js.Any = js.native
-    @scala.inline
-    def _WorkerPromise_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_WorkerPromise")(x.asInstanceOf[js.Any])
+    inline def _WorkerPromise_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_WorkerPromise")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def _Worker_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Worker")(x.asInstanceOf[js.Any])
+    inline def _Worker_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Worker")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/basis", "BasisTools._actionId")
     @js.native
     def _actionId: js.Any = js.native
-    @scala.inline
-    def _actionId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_actionId")(x.asInstanceOf[js.Any])
+    inline def _actionId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_actionId")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Misc/basis", "BasisTranscodeConfiguration")
@@ -126,73 +110,62 @@ object basisMod {
   /**
     * Info about the .basis files
     */
-  @js.native
   trait BasisFileInfo extends StObject {
     
     /**
       * If the file has alpha
       */
-    var hasAlpha: Boolean = js.native
+    var hasAlpha: Boolean
     
     /**
       * Info about each image of the basis file
       */
-    var images: js.Array[Levels] = js.native
+    var images: js.Array[Levels]
   }
   object BasisFileInfo {
     
-    @scala.inline
-    def apply(hasAlpha: Boolean, images: js.Array[Levels]): BasisFileInfo = {
+    inline def apply(hasAlpha: Boolean, images: js.Array[Levels]): BasisFileInfo = {
       val __obj = js.Dynamic.literal(hasAlpha = hasAlpha.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any])
       __obj.asInstanceOf[BasisFileInfo]
     }
     
-    @scala.inline
-    implicit class BasisFileInfoMutableBuilder[Self <: BasisFileInfo] (val x: Self) extends AnyVal {
+    extension [Self <: BasisFileInfo](x: Self) {
       
-      @scala.inline
-      def setHasAlpha(value: Boolean): Self = StObject.set(x, "hasAlpha", value.asInstanceOf[js.Any])
+      inline def setHasAlpha(value: Boolean): Self = StObject.set(x, "hasAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImages(value: js.Array[Levels]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+      inline def setImages(value: js.Array[Levels]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImagesVarargs(value: Levels*): Self = StObject.set(x, "images", js.Array(value :_*))
+      inline def setImagesVarargs(value: Levels*): Self = StObject.set(x, "images", js.Array(value :_*))
     }
   }
   
   /**
     * Result of transcoding a basis file
     */
-  @js.native
   trait TranscodeResult extends StObject {
     
     /**
       * Info about the .basis file
       */
-    var fileInfo: BasisFileInfo = js.native
+    var fileInfo: BasisFileInfo
     
     /**
       * Format to use when loading the file
       */
-    var format: Double = js.native
+    var format: Double
   }
   object TranscodeResult {
     
-    @scala.inline
-    def apply(fileInfo: BasisFileInfo, format: Double): TranscodeResult = {
+    inline def apply(fileInfo: BasisFileInfo, format: Double): TranscodeResult = {
       val __obj = js.Dynamic.literal(fileInfo = fileInfo.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any])
       __obj.asInstanceOf[TranscodeResult]
     }
     
-    @scala.inline
-    implicit class TranscodeResultMutableBuilder[Self <: TranscodeResult] (val x: Self) extends AnyVal {
+    extension [Self <: TranscodeResult](x: Self) {
       
-      @scala.inline
-      def setFileInfo(value: BasisFileInfo): Self = StObject.set(x, "fileInfo", value.asInstanceOf[js.Any])
+      inline def setFileInfo(value: BasisFileInfo): Self = StObject.set(x, "fileInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormat(value: Double): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: Double): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.SwitchBooleanAction")
 @js.native
 class SwitchBooleanAction protected ()
-  extends typings.babylonjs.BABYLON.SwitchBooleanAction {
+  extends StObject
+     with typings.babylonjs.BABYLON.SwitchBooleanAction {
   /**
     * Instantiate the action
     * @param triggerOptions defines the trigger options

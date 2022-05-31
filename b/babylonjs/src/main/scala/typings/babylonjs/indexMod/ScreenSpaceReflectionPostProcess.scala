@@ -4,7 +4,6 @@ import typings.babylonjs.postProcessMod.PostProcessOptions
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "ScreenSpaceReflectionPostProcess")
@@ -40,13 +39,15 @@ class ScreenSpaceReflectionPostProcess protected ()
 /* static members */
 object ScreenSpaceReflectionPostProcess {
   
-  /** @hidden */
-  @JSImport("babylonjs/index", "ScreenSpaceReflectionPostProcess._Parse")
+  @JSImport("babylonjs/index", "ScreenSpaceReflectionPostProcess")
   @js.native
-  def _Parse(
+  val ^ : js.Any = js.native
+  
+  /** @hidden */
+  inline def _Parse(
     parsedPostProcess: js.Any,
     targetCamera: typings.babylonjs.cameraMod.Camera,
     scene: typings.babylonjs.sceneMod.Scene,
     rootUrl: String
-  ): typings.babylonjs.screenSpaceReflectionPostProcessMod.ScreenSpaceReflectionPostProcess = js.native
+  ): typings.babylonjs.screenSpaceReflectionPostProcessMod.ScreenSpaceReflectionPostProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.screenSpaceReflectionPostProcessMod.ScreenSpaceReflectionPostProcess]
 }

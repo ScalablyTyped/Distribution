@@ -2,23 +2,24 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OutlineRenderer extends ISceneComponent {
+trait OutlineRenderer
+  extends StObject
+     with ISceneComponent {
   
-  var _afterRenderingMesh: js.Any = js.native
+  /* private */ var _afterRenderingMesh: js.Any = js.native
   
-  var _beforeRenderingMesh: js.Any = js.native
+  /* private */ var _beforeRenderingMesh: js.Any = js.native
   
-  var _cachedDefines: js.Any = js.native
+  /* private */ var _cachedDefines: js.Any = js.native
   
-  var _effect: js.Any = js.native
+  /* private */ var _effect: js.Any = js.native
   
-  var _engine: js.Any = js.native
+  /* private */ var _engine: js.Any = js.native
   
-  var _savedDepthWrite: js.Any = js.native
+  /* private */ var _savedDepthWrite: js.Any = js.native
   
   /**
     * Returns whether or not the outline renderer is ready for a given submesh.

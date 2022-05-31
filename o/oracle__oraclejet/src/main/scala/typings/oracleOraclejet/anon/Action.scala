@@ -3,32 +3,27 @@ package typings.oracleOraclejet.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Action
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var action: String = js.native
+  var action: String
   
-  var element: typings.std.Element = js.native
+  var element: typings.std.Element
 }
 object Action {
   
-  @scala.inline
-  def apply(action: String, element: typings.std.Element): Action = {
+  inline def apply(action: String, element: typings.std.Element): Action = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any])
     __obj.asInstanceOf[Action]
   }
   
-  @scala.inline
-  implicit class ActionMutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
+  extension [Self <: Action](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElement(value: typings.std.Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: typings.std.Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
   }
 }

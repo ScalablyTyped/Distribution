@@ -16,7 +16,6 @@ import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
 import typings.luminoCoreutils.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tokensMod {
@@ -161,63 +160,52 @@ object tokensMod {
     /**
       * The options used to clone a rendermime instance.
       */
-    @js.native
     trait ICloneOptions extends StObject {
       
       /**
         * The new LaTeX typesetter.
         */
-      var latexTypesetter: js.UndefOr[typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.ILatexTypesetter] = js.native
+      var latexTypesetter: js.UndefOr[typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.ILatexTypesetter] = js.undefined
       
       /**
         * The new path handler.
         */
-      var linkHandler: js.UndefOr[ILinkHandler] = js.native
+      var linkHandler: js.UndefOr[ILinkHandler] = js.undefined
       
       /**
         * The new resolver object.
         */
-      var resolver: js.UndefOr[IResolver] = js.native
+      var resolver: js.UndefOr[IResolver] = js.undefined
       
       /**
         * The new sanitizer used to sanitize untrusted html inputs.
         */
-      var sanitizer: js.UndefOr[typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.ISanitizer] = js.native
+      var sanitizer: js.UndefOr[typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.ISanitizer] = js.undefined
     }
     object ICloneOptions {
       
-      @scala.inline
-      def apply(): ICloneOptions = {
+      inline def apply(): ICloneOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ICloneOptions]
       }
       
-      @scala.inline
-      implicit class ICloneOptionsMutableBuilder[Self <: ICloneOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ICloneOptions](x: Self) {
         
-        @scala.inline
-        def setLatexTypesetter(value: typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.ILatexTypesetter): Self = StObject.set(x, "latexTypesetter", value.asInstanceOf[js.Any])
+        inline def setLatexTypesetter(value: typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.ILatexTypesetter): Self = StObject.set(x, "latexTypesetter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLatexTypesetterUndefined: Self = StObject.set(x, "latexTypesetter", js.undefined)
+        inline def setLatexTypesetterUndefined: Self = StObject.set(x, "latexTypesetter", js.undefined)
         
-        @scala.inline
-        def setLinkHandler(value: ILinkHandler): Self = StObject.set(x, "linkHandler", value.asInstanceOf[js.Any])
+        inline def setLinkHandler(value: ILinkHandler): Self = StObject.set(x, "linkHandler", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLinkHandlerUndefined: Self = StObject.set(x, "linkHandler", js.undefined)
+        inline def setLinkHandlerUndefined: Self = StObject.set(x, "linkHandler", js.undefined)
         
-        @scala.inline
-        def setResolver(value: IResolver): Self = StObject.set(x, "resolver", value.asInstanceOf[js.Any])
+        inline def setResolver(value: IResolver): Self = StObject.set(x, "resolver", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResolverUndefined: Self = StObject.set(x, "resolver", js.undefined)
+        inline def setResolverUndefined: Self = StObject.set(x, "resolver", js.undefined)
         
-        @scala.inline
-        def setSanitizer(value: typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.ISanitizer): Self = StObject.set(x, "sanitizer", value.asInstanceOf[js.Any])
+        inline def setSanitizer(value: typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.ISanitizer): Self = StObject.set(x, "sanitizer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSanitizerUndefined: Self = StObject.set(x, "sanitizer", js.undefined)
+        inline def setSanitizerUndefined: Self = StObject.set(x, "sanitizer", js.undefined)
       }
     }
     

@@ -49,32 +49,15 @@ object mod {
   
   object prototypeNamespace {
     
-    object extract {
-      
-      inline def apply(format: js.Any, carrier: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any], carrier.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-      
-      @JSImport("zipkin-javascript-opentracing", "prototypeNamespace.extract")
-      @js.native
-      val ^ : js.Any = js.native
-    }
+    @JSImport("zipkin-javascript-opentracing", "prototypeNamespace")
+    @js.native
+    val ^ : js.Any = js.native
     
-    object inject {
-      
-      inline def apply(span: js.Any, format: js.Any, carrier: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(span.asInstanceOf[js.Any], format.asInstanceOf[js.Any], carrier.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      
-      @JSImport("zipkin-javascript-opentracing", "prototypeNamespace.inject")
-      @js.native
-      val ^ : js.Any = js.native
-    }
+    inline def extract(format: js.Any, carrier: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(format.asInstanceOf[js.Any], carrier.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    object startSpan {
-      
-      inline def apply(name: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-      
-      @JSImport("zipkin-javascript-opentracing", "prototypeNamespace.startSpan")
-      @js.native
-      val ^ : js.Any = js.native
-    }
+    inline def inject(span: js.Any, format: js.Any, carrier: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(span.asInstanceOf[js.Any], format.asInstanceOf[js.Any], carrier.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def startSpan(name: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("startSpan")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   trait zipkinJavascriptOpentracing extends StObject {

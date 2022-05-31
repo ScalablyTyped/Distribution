@@ -1,11 +1,11 @@
 package typings.jupyterlabObservables
 
 import typings.jupyterlabObservables.modeldbMod.IObservable
+import typings.jupyterlabObservables.modeldbMod.ObservableType
 import typings.jupyterlabObservables.observablestringMod.IObservableString.IChangedArgs
 import typings.luminoSignaling.mod.ISignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object observablestringMod {
@@ -15,15 +15,22 @@ object observablestringMod {
   /**
     * Construct a new observable string.
     */
-  class ObservableString () extends IObservableString {
+  class ObservableString ()
+    extends StObject
+       with IObservableString {
     def this(initialText: String) = this()
     
-    var _changed: js.Any = js.native
+    /* private */ var _changed: js.Any = js.native
     
-    var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: js.Any = js.native
     
-    var _text: js.Any = js.native
+    /* private */ var _text: js.Any = js.native
     
+    /**
+      * A signal emitted when the string has changed.
+      */
+    /* CompleteClass */
+    override val changed: ISignal[this.type, IChangedArgs] = js.native
     /**
       * A signal emitted when the string has changed.
       */
@@ -31,36 +38,24 @@ object observablestringMod {
     def changed_MObservableString: ISignal[this.type, IChangedArgs] = js.native
     
     /**
-      * Test whether the string has been disposed.
-      */
-    @JSName("isDisposed")
-    def isDisposed_MObservableString: Boolean = js.native
-    
-    /**
-      * Get the value of the string.
-      */
-    @JSName("text")
-    def text_MObservableString: String = js.native
-    
-    /**
-      * The type of the Observable.
-      */
-    @JSName("type")
-    def type_MObservableString: typings.jupyterlabObservables.jupyterlabObservablesStrings.String = js.native
-  }
-  
-  @js.native
-  trait IObservableString extends IObservable {
-    
-    /**
-      * A signal emitted when the string has changed.
-      */
-    val changed: ISignal[this.type, IChangedArgs] = js.native
-    
-    /**
       * Set the ObservableString to an empty string.
       */
-    def clear(): Unit = js.native
+    /* CompleteClass */
+    override def clear(): Unit = js.native
+    
+    /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * Insert a substring.
@@ -69,7 +64,22 @@ object observablestringMod {
       *
       * @param text - The substring to insert.
       */
-    def insert(index: Double, text: String): Unit = js.native
+    /* CompleteClass */
+    override def insert(index: Double, text: String): Unit = js.native
+    
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
+    /**
+      * Test whether the string has been disposed.
+      */
+    @JSName("isDisposed")
+    def isDisposed_MObservableString: Boolean = js.native
     
     /**
       * Remove a substring.
@@ -78,34 +88,94 @@ object observablestringMod {
       *
       * @param end - The ending index.
       */
-    def remove(start: Double, end: Double): Unit = js.native
+    /* CompleteClass */
+    override def remove(start: Double, end: Double): Unit = js.native
     
     /**
       * The value of the string.
       */
+    /* CompleteClass */
     var text: String = js.native
+    /**
+      * Get the value of the string.
+      */
+    @JSName("text")
+    def text_MObservableString: String = js.native
+    
+    /**
+      * The type of this object.
+      */
+    /* CompleteClass */
+    override val `type`: ObservableType = js.native
+    /**
+      * The type of the Observable.
+      */
+    /* CompleteClass */
+    @JSName("type")
+    var type_IObservableString: typings.jupyterlabObservables.jupyterlabObservablesStrings.String = js.native
+    /**
+      * The type of the Observable.
+      */
+    @JSName("type")
+    def type_MObservableString: typings.jupyterlabObservables.jupyterlabObservablesStrings.String = js.native
+  }
+  
+  trait IObservableString
+    extends StObject
+       with IObservable {
+    
+    /**
+      * A signal emitted when the string has changed.
+      */
+    val changed: ISignal[this.type, IChangedArgs]
+    
+    /**
+      * Set the ObservableString to an empty string.
+      */
+    def clear(): Unit
+    
+    /**
+      * Insert a substring.
+      *
+      * @param index - The starting index.
+      *
+      * @param text - The substring to insert.
+      */
+    def insert(index: Double, text: String): Unit
+    
+    /**
+      * Remove a substring.
+      *
+      * @param start - The starting index.
+      *
+      * @param end - The ending index.
+      */
+    def remove(start: Double, end: Double): Unit
+    
+    /**
+      * The value of the string.
+      */
+    var text: String
     
     /**
       * The type of the Observable.
       */
     @JSName("type")
-    var type_IObservableString: typings.jupyterlabObservables.jupyterlabObservablesStrings.String = js.native
+    var type_IObservableString: typings.jupyterlabObservables.jupyterlabObservablesStrings.String
   }
   object IObservableString {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       changed: ISignal[IObservableString, IChangedArgs],
       clear: () => Unit,
       dispose: () => Unit,
       insert: (Double, String) => Unit,
       isDisposed: Boolean,
       remove: (Double, Double) => Unit,
-      text: String,
-      `type`: typings.jupyterlabObservables.jupyterlabObservablesStrings.String
+      text: String
     ): IObservableString = {
       val __obj = js.Dynamic.literal(changed = changed.asInstanceOf[js.Any], clear = js.Any.fromFunction0(clear), dispose = js.Any.fromFunction0(dispose), insert = js.Any.fromFunction2(insert), isDisposed = isDisposed.asInstanceOf[js.Any], remove = js.Any.fromFunction2(remove), text = text.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("String")
       __obj.asInstanceOf[IObservableString]
     }
     
@@ -120,36 +190,32 @@ object observablestringMod {
     trait ChangeType extends StObject
     object ChangeType {
       
-      @scala.inline
-      def insert: typings.jupyterlabObservables.jupyterlabObservablesStrings.insert = "insert".asInstanceOf[typings.jupyterlabObservables.jupyterlabObservablesStrings.insert]
+      inline def insert: typings.jupyterlabObservables.jupyterlabObservablesStrings.insert = "insert".asInstanceOf[typings.jupyterlabObservables.jupyterlabObservablesStrings.insert]
       
-      @scala.inline
-      def remove: typings.jupyterlabObservables.jupyterlabObservablesStrings.remove = "remove".asInstanceOf[typings.jupyterlabObservables.jupyterlabObservablesStrings.remove]
+      inline def remove: typings.jupyterlabObservables.jupyterlabObservablesStrings.remove = "remove".asInstanceOf[typings.jupyterlabObservables.jupyterlabObservablesStrings.remove]
       
-      @scala.inline
-      def set: typings.jupyterlabObservables.jupyterlabObservablesStrings.set = "set".asInstanceOf[typings.jupyterlabObservables.jupyterlabObservablesStrings.set]
+      inline def set: typings.jupyterlabObservables.jupyterlabObservablesStrings.set = "set".asInstanceOf[typings.jupyterlabObservables.jupyterlabObservablesStrings.set]
     }
     
     /**
       * The changed args object which is emitted by an observable string.
       */
-    @js.native
     trait IChangedArgs extends StObject {
       
       /**
         * The end index of the change.
         */
-      var end: Double = js.native
+      var end: Double
       
       /**
         * The starting index of the change.
         */
-      var start: Double = js.native
+      var start: Double
       
       /**
         * The type of change undergone by the list.
         */
-      var `type`: ChangeType = js.native
+      var `type`: ChangeType
       
       /**
         * The value of the change.
@@ -164,54 +230,41 @@ object observablestringMod {
         * If `ChangeType` is remove this is the
         * value of the removed substring.
         */
-      var value: String = js.native
+      var value: String
     }
     object IChangedArgs {
       
-      @scala.inline
-      def apply(end: Double, start: Double, `type`: ChangeType, value: String): IChangedArgs = {
+      inline def apply(end: Double, start: Double, `type`: ChangeType, value: String): IChangedArgs = {
         val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[IChangedArgs]
       }
       
-      @scala.inline
-      implicit class IChangedArgsMutableBuilder[Self <: IChangedArgs] (val x: Self) extends AnyVal {
+      extension [Self <: IChangedArgs](x: Self) {
         
-        @scala.inline
-        def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+        inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+        inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: ChangeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: ChangeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       }
     }
     
-    @scala.inline
-    implicit class IObservableStringMutableBuilder[Self <: IObservableString] (val x: Self) extends AnyVal {
+    extension [Self <: IObservableString](x: Self) {
       
-      @scala.inline
-      def setChanged(value: ISignal[IObservableString, IChangedArgs]): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
+      inline def setChanged(value: ISignal[IObservableString, IChangedArgs]): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInsert(value: (Double, String) => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
+      inline def setInsert(value: (Double, String) => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemove(value: (Double, Double) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+      inline def setRemove(value: (Double, Double) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: typings.jupyterlabObservables.jupyterlabObservablesStrings.String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.jupyterlabObservables.jupyterlabObservablesStrings.String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.Animatable")
 @js.native
 class Animatable protected ()
-  extends typings.babylonjs.BABYLON.Animatable {
+  extends StObject
+     with typings.babylonjs.BABYLON.Animatable {
   /**
     * Creates a new Animatable
     * @param scene defines the hosting scene

@@ -2,7 +2,6 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -11,23 +10,23 @@ trait Animatable extends StObject {
   /** @hidden */
   def _animate(delay: Double): Boolean = js.native
   
-  var _localDelayOffset: js.Any = js.native
+  /* private */ var _localDelayOffset: js.Any = js.native
   
-  var _paused: js.Any = js.native
+  /* private */ var _paused: js.Any = js.native
   
-  var _pausedDelay: js.Any = js.native
+  /* private */ var _pausedDelay: js.Any = js.native
   
-  var _raiseOnAnimationEnd: js.Any = js.native
+  /* private */ var _raiseOnAnimationEnd: js.Any = js.native
   
-  var _runtimeAnimations: js.Any = js.native
+  /* private */ var _runtimeAnimations: js.Any = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
-  var _speedRatio: js.Any = js.native
+  /* private */ var _speedRatio: js.Any = js.native
   
-  var _syncRoot: js.Any = js.native
+  /* private */ var _syncRoot: js.Any = js.native
   
-  var _weight: js.Any = js.native
+  /* private */ var _weight: js.Any = js.native
   
   /**
     * Gets a boolean indicating if the animation has started
@@ -144,9 +143,9 @@ trait Animatable extends StObject {
     * @param targetMask - a function that determines if the animation should be stopped based on its target (all animations will be stopped if both this and animationName are empty)
     */
   def stop(): Unit = js.native
-  def stop(animationName: js.UndefOr[scala.Nothing], targetMask: js.Function1[/* target */ js.Any, Boolean]): Unit = js.native
   def stop(animationName: String): Unit = js.native
   def stop(animationName: String, targetMask: js.Function1[/* target */ js.Any, Boolean]): Unit = js.native
+  def stop(animationName: Unit, targetMask: js.Function1[/* target */ js.Any, Boolean]): Unit = js.native
   
   /**
     * Gets the root Animatable used to synchronize and normalize animations

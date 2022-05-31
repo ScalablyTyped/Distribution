@@ -1,5 +1,6 @@
 package typings.awsSdkClientS3Browser.mod
 
+import typings.awsSdkClientS3Browser.typesGetBucketMetricsConfigurationInputMod.GetBucketMetricsConfigurationInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class GetBucketMetricsConfigurationCommand protected ()
   extends typings.awsSdkClientS3Browser.getBucketMetricsConfigurationCommandMod.GetBucketMetricsConfigurationCommand {
-  def this(input: typings.awsSdkClientS3Browser.typesGetBucketMetricsConfigurationInputMod.GetBucketMetricsConfigurationInput) = this()
+  def this(input: GetBucketMetricsConfigurationInput) = this()
 }

@@ -34,22 +34,21 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ojInputPasswordEventMap extends inputBaseEventMap[String | Null, ojInputPasswordSettableProperties, String | Null, String | Null] {
+trait ojInputPasswordEventMap
+  extends StObject
+     with inputBaseEventMap[String | Null, ojInputPasswordSettableProperties, String | Null, String | Null] {
   
   @JSName("ojAnimateEnd")
-  var ojAnimateEnd_ojInputPasswordEventMap: ojAnimateEnd = js.native
+  var ojAnimateEnd_ojInputPasswordEventMap: ojAnimateEnd
   
   @JSName("ojAnimateStart")
-  var ojAnimateStart_ojInputPasswordEventMap: ojAnimateStart = js.native
+  var ojAnimateStart_ojInputPasswordEventMap: ojAnimateStart
 }
 object ojInputPasswordEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,
@@ -167,13 +166,10 @@ object ojInputPasswordEventMap {
     __obj.asInstanceOf[ojInputPasswordEventMap]
   }
   
-  @scala.inline
-  implicit class ojInputPasswordEventMapMutableBuilder[Self <: ojInputPasswordEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: ojInputPasswordEventMap](x: Self) {
     
-    @scala.inline
-    def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
+    inline def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOjAnimateStart(value: ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
+    inline def setOjAnimateStart(value: ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
   }
 }

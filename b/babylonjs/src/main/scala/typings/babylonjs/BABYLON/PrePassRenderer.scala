@@ -2,7 +2,6 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,71 +17,71 @@ trait PrePassRenderer extends StObject {
     */
   def _beforeCameraDraw(): Unit = js.native
   
-  var _bindFrameBuffer: js.Any = js.native
+  /* private */ var _bindFrameBuffer: js.Any = js.native
   
-  var _bindPostProcessChain: js.Any = js.native
+  /* private */ var _bindPostProcessChain: js.Any = js.native
   
-  var _checkRTSize: js.Any = js.native
+  /* private */ var _checkRTSize: js.Any = js.native
   
-  var _clearAttachments: js.Any = js.native
+  /* private */ var _clearAttachments: js.Any = js.native
   
-  val _clearColor: js.Any = js.native
+  /* private */ val _clearColor: js.Any = js.native
   
-  var _createCompositionEffect: js.Any = js.native
+  /* private */ var _createCompositionEffect: js.Any = js.native
   
-  var _defaultAttachments: js.Any = js.native
+  /* private */ var _defaultAttachments: js.Any = js.native
   
-  var _disable: js.Any = js.native
+  /* private */ var _disable: js.Any = js.native
   
   /**
     * Configuration for prepass effects
     */
-  var _effectConfigurations: js.Any = js.native
+  /* private */ var _effectConfigurations: js.Any = js.native
   
-  var _enable: js.Any = js.native
+  /* private */ var _enable: js.Any = js.native
   
   /**
     * Enables a texture on the MultiRenderTarget for prepass
     */
-  var _enableTextures: js.Any = js.native
+  /* private */ var _enableTextures: js.Any = js.native
   
-  var _enabled: js.Any = js.native
+  /* private */ var _enabled: js.Any = js.native
   
-  var _engine: js.Any = js.native
+  /* private */ var _engine: js.Any = js.native
   
-  var _geometryBuffer: js.Any = js.native
+  /* private */ var _geometryBuffer: js.Any = js.native
   
-  var _initializeAttachments: js.Any = js.native
+  /* private */ var _initializeAttachments: js.Any = js.native
   
-  var _isDirty: js.Any = js.native
+  /* private */ var _isDirty: js.Any = js.native
   
-  var _markAllMaterialsAsPrePassDirty: js.Any = js.native
+  /* private */ var _markAllMaterialsAsPrePassDirty: js.Any = js.native
   
-  var _mrtFormats: js.Any = js.native
+  /* private */ var _mrtFormats: js.Any = js.native
   
-  var _mrtLayout: js.Any = js.native
+  /* private */ var _mrtLayout: js.Any = js.native
   
-  var _multiRenderAttachments: js.Any = js.native
+  /* private */ var _multiRenderAttachments: js.Any = js.native
   
-  var _postProcesses: js.Any = js.native
+  /* private */ var _postProcesses: js.Any = js.native
   
-  var _resetLayout: js.Any = js.native
+  /* private */ var _resetLayout: js.Any = js.native
   
-  var _resetPostProcessChain: js.Any = js.native
+  /* private */ var _resetPostProcessChain: js.Any = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
-  var _setState: js.Any = js.native
+  /* private */ var _setState: js.Any = js.native
   
-  var _textureFormats: js.Any = js.native
+  /* private */ var _textureFormats: js.Any = js.native
   
-  var _textureIndices: js.Any = js.native
+  /* private */ var _textureIndices: js.Any = js.native
   
-  var _update: js.Any = js.native
+  /* private */ var _update: js.Any = js.native
   
-  var _updateGeometryBufferLayout: js.Any = js.native
+  /* private */ var _updateGeometryBufferLayout: js.Any = js.native
   
-  var _useGeometryBufferFallback: js.Any = js.native
+  /* private */ var _useGeometryBufferFallback: js.Any = js.native
   
   /**
     * Adds an effect configuration to the prepass.

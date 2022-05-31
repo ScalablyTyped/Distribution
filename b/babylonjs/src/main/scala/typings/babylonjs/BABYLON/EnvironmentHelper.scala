@@ -4,96 +4,95 @@ import typings.babylonjs.anon.Exception
 import typings.babylonjs.anon.PartialIEnvironmentHelperBackgroundYRotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EnvironmentHelper extends StObject {
   
-  var _errorHandler: js.Any = js.native
+  /* private */ var _errorHandler: js.Any = js.native
   
   /**
     * Get the scene sizes according to the setup.
     */
-  var _getSceneSize: js.Any = js.native
+  /* private */ var _getSceneSize: js.Any = js.native
   
-  var _ground: js.Any = js.native
+  /* private */ var _ground: js.Any = js.native
   
-  var _groundMaterial: js.Any = js.native
+  /* private */ var _groundMaterial: js.Any = js.native
   
-  var _groundMirror: js.Any = js.native
+  /* private */ var _groundMirror: js.Any = js.native
   
-  var _groundTexture: js.Any = js.native
+  /* private */ var _groundTexture: js.Any = js.native
   
-  var _options: js.Any = js.native
+  /* private */ var _options: js.Any = js.native
   
-  var _rootMesh: js.Any = js.native
+  /* private */ var _rootMesh: js.Any = js.native
   
   /**
     * Stores the creation options.
     */
-  val _scene: js.Any = js.native
+  /* private */ val _scene: js.Any = js.native
   
   /**
     * Setup the background according to the specified options.
     */
-  var _setupBackground: js.Any = js.native
+  /* private */ var _setupBackground: js.Any = js.native
   
   /**
     * Setup the environment texture according to the specified options.
     */
-  var _setupEnvironmentTexture: js.Any = js.native
+  /* private */ var _setupEnvironmentTexture: js.Any = js.native
   
   /**
     * Setup the ground according to the specified options.
     */
-  var _setupGround: js.Any = js.native
+  /* private */ var _setupGround: js.Any = js.native
   
   /**
     * Setup the ground diffuse texture according to the specified options.
     */
-  var _setupGroundDiffuseTexture: js.Any = js.native
+  /* private */ var _setupGroundDiffuseTexture: js.Any = js.native
   
   /**
     * Setup the ground material according to the specified options.
     */
-  var _setupGroundMaterial: js.Any = js.native
+  /* private */ var _setupGroundMaterial: js.Any = js.native
   
   /**
     * Setup the ground mirror texture according to the specified options.
     */
-  var _setupGroundMirrorTexture: js.Any = js.native
+  /* private */ var _setupGroundMirrorTexture: js.Any = js.native
   
   /**
     * Setup the image processing according to the specified options.
     */
-  var _setupImageProcessing: js.Any = js.native
+  /* private */ var _setupImageProcessing: js.Any = js.native
   
   /**
     * Setup the ground to receive the mirror texture.
     */
-  var _setupMirrorInGroundMaterial: js.Any = js.native
+  /* private */ var _setupMirrorInGroundMaterial: js.Any = js.native
   
   /**
     * Setup the skybox according to the specified options.
     */
-  var _setupSkybox: js.Any = js.native
+  /* private */ var _setupSkybox: js.Any = js.native
   
   /**
     * Setup the skybox material according to the specified options.
     */
-  var _setupSkyboxMaterial: js.Any = js.native
+  /* private */ var _setupSkyboxMaterial: js.Any = js.native
   
   /**
     * Setup the skybox reflection texture according to the specified options.
     */
-  var _setupSkyboxReflectionTexture: js.Any = js.native
+  /* private */ var _setupSkyboxReflectionTexture: js.Any = js.native
   
-  var _skybox: js.Any = js.native
+  /* private */ var _skybox: js.Any = js.native
   
-  var _skyboxMaterial: js.Any = js.native
+  /* private */ var _skyboxMaterial: js.Any = js.native
   
-  var _skyboxTexture: js.Any = js.native
+  /* private */ var _skyboxTexture: js.Any = js.native
   
   /**
     * Dispose all the elements created by the Helper.

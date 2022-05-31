@@ -8,7 +8,6 @@ import typings.babylonjs.shadowLightMod.ShadowLight
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spotLightMod {
@@ -29,9 +28,9 @@ object spotLightMod {
       */
     def this(name: String, position: Vector3, direction: Vector3, angle: Double, exponent: Double, scene: Scene) = this()
     
-    var _angle: js.Any = js.native
+    /* private */ var _angle: js.Any = js.native
     
-    var _computeAngleValues: js.Any = js.native
+    /* private */ var _computeAngleValues: js.Any = js.native
     
     /**
       * Main function for light texture projection matrix computing.
@@ -42,39 +41,39 @@ object spotLightMod {
     
     /* protected */ def _computeProjectionTextureViewLightMatrix(): Unit = js.native
     
-    var _cosHalfAngle: js.Any = js.native
+    /* private */ var _cosHalfAngle: js.Any = js.native
     
-    var _innerAngle: js.Any = js.native
+    /* private */ var _innerAngle: js.Any = js.native
     
-    var _lightAngleOffset: js.Any = js.native
+    /* private */ var _lightAngleOffset: js.Any = js.native
     
-    var _lightAngleScale: js.Any = js.native
+    /* private */ var _lightAngleScale: js.Any = js.native
     
-    var _projectionTexture: js.Any = js.native
+    /* private */ var _projectionTexture: js.Any = js.native
     
-    var _projectionTextureDirty: js.Any = js.native
+    /* private */ var _projectionTextureDirty: js.Any = js.native
     
-    var _projectionTextureLightFar: Double = js.native
+    /* protected */ var _projectionTextureLightFar: Double = js.native
     
-    var _projectionTextureLightNear: Double = js.native
+    /* protected */ var _projectionTextureLightNear: Double = js.native
     
-    var _projectionTextureMatrix: js.Any = js.native
+    /* private */ var _projectionTextureMatrix: js.Any = js.native
     
-    var _projectionTextureProjectionLightDirty: js.Any = js.native
+    /* private */ var _projectionTextureProjectionLightDirty: js.Any = js.native
     
-    var _projectionTextureProjectionLightMatrix: js.Any = js.native
+    /* private */ var _projectionTextureProjectionLightMatrix: js.Any = js.native
     
-    var _projectionTextureScalingMatrix: js.Any = js.native
+    /* private */ var _projectionTextureScalingMatrix: js.Any = js.native
     
-    var _projectionTextureUpDirection: Vector3 = js.native
+    /* protected */ var _projectionTextureUpDirection: Vector3 = js.native
     
-    var _projectionTextureViewLightDirty: js.Any = js.native
+    /* private */ var _projectionTextureViewLightDirty: js.Any = js.native
     
-    var _projectionTextureViewLightMatrix: js.Any = js.native
+    /* private */ var _projectionTextureViewLightMatrix: js.Any = js.native
     
-    var _projectionTextureViewTargetVector: js.Any = js.native
+    /* private */ var _projectionTextureViewTargetVector: js.Any = js.native
     
-    var _shadowAngleScale: js.Any = js.native
+    /* private */ var _shadowAngleScale: js.Any = js.native
     
     /**
       * Gets the cone angle of the spot light in Radians.
@@ -164,13 +163,11 @@ object spotLightMod {
     @JSImport("babylonjs/Lights/spotLight", "SpotLight._IsProceduralTexture")
     @js.native
     def _IsProceduralTexture: js.Any = js.native
-    @scala.inline
-    def _IsProceduralTexture_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsProceduralTexture")(x.asInstanceOf[js.Any])
+    inline def _IsProceduralTexture_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsProceduralTexture")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Lights/spotLight", "SpotLight._IsTexture")
     @js.native
     def _IsTexture: js.Any = js.native
-    @scala.inline
-    def _IsTexture_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsTexture")(x.asInstanceOf[js.Any])
+    inline def _IsTexture_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsTexture")(x.asInstanceOf[js.Any])
   }
 }

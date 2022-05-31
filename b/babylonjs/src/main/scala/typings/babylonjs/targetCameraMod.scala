@@ -9,7 +9,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object targetCameraMod {
@@ -29,9 +28,9 @@ object targetCameraMod {
     def this(name: String, position: Vector3, scene: Scene) = this()
     def this(name: String, position: Vector3, scene: Scene, setActiveOnSceneIfNoneActive: Boolean) = this()
     
-    var _cachedQuaternionRotationZ: js.Any = js.native
+    /* private */ var _cachedQuaternionRotationZ: js.Any = js.native
     
-    var _cachedRotationZ: js.Any = js.native
+    /* private */ var _cachedRotationZ: js.Any = js.native
     
     /** @hidden */
     var _camMatrix: Matrix = js.native
@@ -53,12 +52,12 @@ object targetCameraMod {
     /** @hidden */
     def _decideIfNeedsToMove(): Boolean = js.native
     
-    var _defaultUp: js.Any = js.native
+    /* private */ var _defaultUp: js.Any = js.native
     
     /** @hidden */
     def _getLockedTargetPosition(): Nullable[Vector3] = js.native
     
-    var _getRigCamPositionAndTarget: js.Any = js.native
+    /* private */ var _getRigCamPositionAndTarget: js.Any = js.native
     
     /** @hidden */
     var _initialFocalDistance: Double = js.native
@@ -73,19 +72,19 @@ object targetCameraMod {
       * Update the up vector to apply the rotation of the camera (So if you changed the camera rotation.z this will let you update the up vector as well)
       * @returns the current camera
       */
-    var _rotateUpVectorWithCameraRotationMatrix: js.Any = js.native
+    /* private */ var _rotateUpVectorWithCameraRotationMatrix: js.Any = js.native
     
-    var _storedPosition: js.Any = js.native
+    /* private */ var _storedPosition: js.Any = js.native
     
-    var _storedRotation: js.Any = js.native
+    /* private */ var _storedRotation: js.Any = js.native
     
-    var _storedRotationQuaternion: js.Any = js.native
+    /* private */ var _storedRotationQuaternion: js.Any = js.native
     
-    var _tmpQuaternion: js.Any = js.native
+    /* private */ var _tmpQuaternion: js.Any = js.native
     
-    var _tmpTargetVector: js.Any = js.native
+    /* private */ var _tmpTargetVector: js.Any = js.native
     
-    var _tmpUpVector: js.Any = js.native
+    /* private */ var _tmpUpVector: js.Any = js.native
     
     /** @hidden */
     var _transformedReferencePoint: Vector3 = js.native
@@ -187,19 +186,16 @@ object targetCameraMod {
     @JSImport("babylonjs/Cameras/targetCamera", "TargetCamera._RigCamTransformMatrix")
     @js.native
     def _RigCamTransformMatrix: js.Any = js.native
-    @scala.inline
-    def _RigCamTransformMatrix_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_RigCamTransformMatrix")(x.asInstanceOf[js.Any])
+    inline def _RigCamTransformMatrix_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_RigCamTransformMatrix")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Cameras/targetCamera", "TargetCamera._TargetFocalPoint")
     @js.native
     def _TargetFocalPoint: js.Any = js.native
-    @scala.inline
-    def _TargetFocalPoint_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TargetFocalPoint")(x.asInstanceOf[js.Any])
+    inline def _TargetFocalPoint_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TargetFocalPoint")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Cameras/targetCamera", "TargetCamera._TargetTransformMatrix")
     @js.native
     def _TargetTransformMatrix: js.Any = js.native
-    @scala.inline
-    def _TargetTransformMatrix_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TargetTransformMatrix")(x.asInstanceOf[js.Any])
+    inline def _TargetTransformMatrix_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TargetTransformMatrix")(x.asInstanceOf[js.Any])
   }
 }

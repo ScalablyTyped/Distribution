@@ -9,17 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RetryAttempts extends StObject {
   
-  var headers: js.UndefOr[js.Any] = js.undefined
+  var callbackParameterName: js.UndefOr[String] = js.undefined
   
-  var overrideMimeType: js.UndefOr[String] = js.undefined
+  var headers: js.UndefOr[js.Any] = js.undefined
   
   var proxy: js.UndefOr[DefaultProxy] = js.undefined
   
   var queryParameters: js.UndefOr[js.Any] = js.undefined
   
   var request: js.UndefOr[typings.std.Request] = js.undefined
-  
-  var responseType: js.UndefOr[String] = js.undefined
   
   var retryAttempts: js.UndefOr[Double] = js.undefined
   
@@ -38,13 +36,13 @@ object RetryAttempts {
   
   extension [Self <: RetryAttempts](x: Self) {
     
+    inline def setCallbackParameterName(value: String): Self = StObject.set(x, "callbackParameterName", value.asInstanceOf[js.Any])
+    
+    inline def setCallbackParameterNameUndefined: Self = StObject.set(x, "callbackParameterName", js.undefined)
+    
     inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
-    
-    inline def setOverrideMimeType(value: String): Self = StObject.set(x, "overrideMimeType", value.asInstanceOf[js.Any])
-    
-    inline def setOverrideMimeTypeUndefined: Self = StObject.set(x, "overrideMimeType", js.undefined)
     
     inline def setProxy(value: DefaultProxy): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
@@ -57,10 +55,6 @@ object RetryAttempts {
     inline def setRequest(value: typings.std.Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
-    
-    inline def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
-    
-    inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
     
     inline def setRetryAttempts(value: Double): Self = StObject.set(x, "retryAttempts", value.asInstanceOf[js.Any])
     

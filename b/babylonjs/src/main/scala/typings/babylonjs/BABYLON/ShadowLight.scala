@@ -2,17 +2,18 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShadowLight extends IShadowLight {
+trait ShadowLight
+  extends StObject
+     with IShadowLight {
   
-  var _direction: Vector3 = js.native
+  /* protected */ var _direction: Vector3 = js.native
   
-  var _needProjectionMatrixCompute: js.Any = js.native
+  /* private */ var _needProjectionMatrixCompute: js.Any = js.native
   
-  var _position: Vector3 = js.native
+  /* protected */ var _position: Vector3 = js.native
   
   /* protected */ def _setDefaultShadowProjectionMatrix(matrix: Matrix, viewMatrix: Matrix, renderList: js.Array[AbstractMesh]): Unit = js.native
   
@@ -20,9 +21,9 @@ trait ShadowLight extends IShadowLight {
   
   /* protected */ def _setPosition(value: Vector3): Unit = js.native
   
-  var _shadowMaxZ: Double = js.native
+  /* protected */ var _shadowMaxZ: Double = js.native
   
-  var _shadowMinZ: Double = js.native
+  /* protected */ var _shadowMinZ: Double = js.native
   
   /**
     * In 2d mode (needCube being false), gets the direction used to cast the shadow.

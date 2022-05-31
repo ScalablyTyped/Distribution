@@ -6,19 +6,18 @@ import typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.right
 import typings.typestyle.typesMod.NestedCSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object styleIconMod {
   
   object LabIconStyle {
     
-    @JSImport("@jupyterlab/ui-components/lib/style/icon", "LabIconStyle.styleClass")
+    @JSImport("@jupyterlab/ui-components/lib/style/icon", "LabIconStyle")
     @js.native
-    def styleClass(): String = js.native
-    @JSImport("@jupyterlab/ui-components/lib/style/icon", "LabIconStyle.styleClass")
-    @js.native
-    def styleClass(props: IProps): String = js.native
+    val ^ : js.Any = js.native
+    
+    inline def styleClass(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("styleClass")().asInstanceOf[String]
+    inline def styleClass(props: IProps): String = ^.asInstanceOf[js.Dynamic].applyDynamic("styleClass")(props.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * - breadCrumb: The path icons above the filebrowser
@@ -56,56 +55,42 @@ object styleIconMod {
       - typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.statusBar
       - typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.toolbarButton
     */
-    trait IBuiltin extends ISheetResolvable
+    trait IBuiltin
+      extends StObject
+         with ISheetResolvable
     object IBuiltin {
       
-      @scala.inline
-      def breadCrumb: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.breadCrumb = "breadCrumb".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.breadCrumb]
+      inline def breadCrumb: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.breadCrumb = "breadCrumb".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.breadCrumb]
       
-      @scala.inline
-      def commandPaletteHeader: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.commandPaletteHeader = "commandPaletteHeader".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.commandPaletteHeader]
+      inline def commandPaletteHeader: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.commandPaletteHeader = "commandPaletteHeader".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.commandPaletteHeader]
       
-      @scala.inline
-      def commandPaletteItem: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.commandPaletteItem = "commandPaletteItem".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.commandPaletteItem]
+      inline def commandPaletteItem: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.commandPaletteItem = "commandPaletteItem".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.commandPaletteItem]
       
-      @scala.inline
-      def launcherCard: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.launcherCard = "launcherCard".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.launcherCard]
+      inline def launcherCard: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.launcherCard = "launcherCard".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.launcherCard]
       
-      @scala.inline
-      def launcherSection: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.launcherSection = "launcherSection".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.launcherSection]
+      inline def launcherSection: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.launcherSection = "launcherSection".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.launcherSection]
       
-      @scala.inline
-      def listing: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.listing = "listing".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.listing]
+      inline def listing: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.listing = "listing".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.listing]
       
-      @scala.inline
-      def listingHeaderItem: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.listingHeaderItem = "listingHeaderItem".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.listingHeaderItem]
+      inline def listingHeaderItem: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.listingHeaderItem = "listingHeaderItem".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.listingHeaderItem]
       
-      @scala.inline
-      def mainAreaTab: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.mainAreaTab = "mainAreaTab".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.mainAreaTab]
+      inline def mainAreaTab: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.mainAreaTab = "mainAreaTab".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.mainAreaTab]
       
-      @scala.inline
-      def menuItem: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.menuItem = "menuItem".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.menuItem]
+      inline def menuItem: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.menuItem = "menuItem".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.menuItem]
       
-      @scala.inline
-      def runningItem: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.runningItem = "runningItem".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.runningItem]
+      inline def runningItem: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.runningItem = "runningItem".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.runningItem]
       
-      @scala.inline
-      def select: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.select = "select".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.select]
+      inline def select: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.select = "select".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.select]
       
-      @scala.inline
-      def settingsEditor: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.settingsEditor = "settingsEditor".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.settingsEditor]
+      inline def settingsEditor: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.settingsEditor = "settingsEditor".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.settingsEditor]
       
-      @scala.inline
-      def sideBar: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.sideBar = "sideBar".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.sideBar]
+      inline def sideBar: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.sideBar = "sideBar".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.sideBar]
       
-      @scala.inline
-      def splash: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.splash = "splash".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.splash]
+      inline def splash: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.splash = "splash".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.splash]
       
-      @scala.inline
-      def statusBar: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.statusBar = "statusBar".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.statusBar]
+      inline def statusBar: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.statusBar = "statusBar".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.statusBar]
       
-      @scala.inline
-      def toolbarButton: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.toolbarButton = "toolbarButton".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.toolbarButton]
+      inline def toolbarButton: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.toolbarButton = "toolbarButton".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.toolbarButton]
     }
     
     /* Rewritten from type alias, can be one of: 
@@ -122,48 +107,39 @@ object styleIconMod {
     trait IPosition extends StObject
     object IPosition {
       
-      @scala.inline
-      def bottom: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.bottom = "bottom".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.bottom]
+      inline def bottom: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.bottom = "bottom".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.bottom]
       
-      @scala.inline
-      def `bottom left`: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.`bottom left` = ("bottom left").asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.`bottom left`]
+      inline def `bottom left`: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.`bottom left` = ("bottom left").asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.`bottom left`]
       
-      @scala.inline
-      def `bottom right`: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.`bottom right` = ("bottom right").asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.`bottom right`]
+      inline def `bottom right`: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.`bottom right` = ("bottom right").asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.`bottom right`]
       
-      @scala.inline
-      def center: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.center = "center".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.center]
+      inline def center: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.center = "center".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.center]
       
-      @scala.inline
-      def left: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.left = "left".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.left]
+      inline def left: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.left = "left".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.left]
       
-      @scala.inline
-      def right: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.right = "right".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.right]
+      inline def right: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.right = "right".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.right]
       
-      @scala.inline
-      def top: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.top = "top".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.top]
+      inline def top: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.top = "top".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.top]
       
-      @scala.inline
-      def `top left`: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.`top left` = ("top left").asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.`top left`]
+      inline def `top left`: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.`top left` = ("top left").asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.`top left`]
       
-      @scala.inline
-      def `top right`: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.`top right` = ("top right").asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.`top right`]
+      inline def `top right`: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.`top right` = ("top right").asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.`top right`]
     }
     
-    @js.native
     trait IProps
-      extends NestedCSSProperties
+      extends StObject
+         with NestedCSSProperties
          with ISheetOptions {
       
       /**
         * @deprecated use elementPosition instead
         */
-      var justify: js.UndefOr[center | right | left] = js.native
+      var justify: js.UndefOr[center | right | left] = js.undefined
       
       /**
         * @deprecated use stylesheet instead
         */
-      var kind: js.UndefOr[IBuiltin] = js.native
+      var kind: js.UndefOr[IBuiltin] = js.undefined
       
       /**
         * Specify the icon styling. Can be either a string naming one of
@@ -172,39 +148,30 @@ object styleIconMod {
         * the actual style will be determined by merging the stylesheets in
         * the array, giving precedence to the rightmost values.
         */
-      var stylesheet: js.UndefOr[ISheetResolvable | js.Array[ISheetResolvable]] = js.native
+      var stylesheet: js.UndefOr[ISheetResolvable | js.Array[ISheetResolvable]] = js.undefined
     }
     object IProps {
       
-      @scala.inline
-      def apply(): IProps = {
+      inline def apply(): IProps = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IProps]
       }
       
-      @scala.inline
-      implicit class IPropsMutableBuilder[Self <: IProps] (val x: Self) extends AnyVal {
+      extension [Self <: IProps](x: Self) {
         
-        @scala.inline
-        def setJustify(value: center | right | left): Self = StObject.set(x, "justify", value.asInstanceOf[js.Any])
+        inline def setJustify(value: center | right | left): Self = StObject.set(x, "justify", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setJustifyUndefined: Self = StObject.set(x, "justify", js.undefined)
+        inline def setJustifyUndefined: Self = StObject.set(x, "justify", js.undefined)
         
-        @scala.inline
-        def setKind(value: IBuiltin): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: IBuiltin): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        @scala.inline
-        def setStylesheet(value: ISheetResolvable | js.Array[ISheetResolvable]): Self = StObject.set(x, "stylesheet", value.asInstanceOf[js.Any])
+        inline def setStylesheet(value: ISheetResolvable | js.Array[ISheetResolvable]): Self = StObject.set(x, "stylesheet", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStylesheetUndefined: Self = StObject.set(x, "stylesheet", js.undefined)
+        inline def setStylesheetUndefined: Self = StObject.set(x, "stylesheet", js.undefined)
         
-        @scala.inline
-        def setStylesheetVarargs(value: ISheetResolvable*): Self = StObject.set(x, "stylesheet", js.Array(value :_*))
+        inline def setStylesheetVarargs(value: ISheetResolvable*): Self = StObject.set(x, "stylesheet", js.Array(value :_*))
       }
     }
     
@@ -212,55 +179,48 @@ object styleIconMod {
       * Stylesheet with a collection of CSS props for each node
       * in an icon, plus some custom options
       */
-    @js.native
-    trait ISheet extends ISheetResolvable {
+    trait ISheet
+      extends StObject
+         with ISheetResolvable {
       
       /**
         * CSS properties that will be applied to the outer container
         * element via a typestyle class
         */
-      var container: js.UndefOr[NestedCSSProperties] = js.native
+      var container: js.UndefOr[NestedCSSProperties] = js.undefined
       
       /**
         * CSS properties that will be applied to the inner svg
         * element via a typestyle class
         */
-      var element: js.UndefOr[NestedCSSProperties] = js.native
+      var element: js.UndefOr[NestedCSSProperties] = js.undefined
       
       /**
         * Options that function as modifiers for this style's
         * CSS properties
         */
-      var options: js.UndefOr[ISheetOptions] = js.native
+      var options: js.UndefOr[ISheetOptions] = js.undefined
     }
     object ISheet {
       
-      @scala.inline
-      def apply(): ISheet = {
+      inline def apply(): ISheet = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ISheet]
       }
       
-      @scala.inline
-      implicit class ISheetMutableBuilder[Self <: ISheet] (val x: Self) extends AnyVal {
+      extension [Self <: ISheet](x: Self) {
         
-        @scala.inline
-        def setContainer(value: NestedCSSProperties): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+        inline def setContainer(value: NestedCSSProperties): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+        inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
         
-        @scala.inline
-        def setElement(value: NestedCSSProperties): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+        inline def setElement(value: NestedCSSProperties): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+        inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
         
-        @scala.inline
-        def setOptions(value: ISheetOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+        inline def setOptions(value: ISheetOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+        inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       }
     }
     
@@ -269,14 +229,13 @@ object styleIconMod {
       * such as the set of props required to center an svg inside
       * of a parent node
       */
-    @js.native
     trait ISheetOptions extends StObject {
       
       /**
         * How to position the inner svg element,
         * relative to the outer container
         */
-      var elementPosition: js.UndefOr[IPosition] = js.native
+      var elementPosition: js.UndefOr[IPosition] = js.undefined
       
       /**
         * the size of the inner svg element. Can be any of:
@@ -285,30 +244,24 @@ object styleIconMod {
         *   - 'large': 20px x 20px
         *   - 'xlarge': 24px x 24px
         */
-      var elementSize: js.UndefOr[ISize] = js.native
+      var elementSize: js.UndefOr[ISize] = js.undefined
     }
     object ISheetOptions {
       
-      @scala.inline
-      def apply(): ISheetOptions = {
+      inline def apply(): ISheetOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ISheetOptions]
       }
       
-      @scala.inline
-      implicit class ISheetOptionsMutableBuilder[Self <: ISheetOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ISheetOptions](x: Self) {
         
-        @scala.inline
-        def setElementPosition(value: IPosition): Self = StObject.set(x, "elementPosition", value.asInstanceOf[js.Any])
+        inline def setElementPosition(value: IPosition): Self = StObject.set(x, "elementPosition", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setElementPositionUndefined: Self = StObject.set(x, "elementPosition", js.undefined)
+        inline def setElementPositionUndefined: Self = StObject.set(x, "elementPosition", js.undefined)
         
-        @scala.inline
-        def setElementSize(value: ISize): Self = StObject.set(x, "elementSize", value.asInstanceOf[js.Any])
+        inline def setElementSize(value: ISize): Self = StObject.set(x, "elementSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setElementSizeUndefined: Self = StObject.set(x, "elementSize", js.undefined)
+        inline def setElementSizeUndefined: Self = StObject.set(x, "elementSize", js.undefined)
       }
     }
     
@@ -330,17 +283,13 @@ object styleIconMod {
     trait ISize extends StObject
     object ISize {
       
-      @scala.inline
-      def large: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.large = "large".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.large]
+      inline def large: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.large = "large".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.large]
       
-      @scala.inline
-      def normal: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.normal = "normal".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.normal]
+      inline def normal: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.normal = "normal".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.normal]
       
-      @scala.inline
-      def small: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.small = "small".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.small]
+      inline def small: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.small = "small".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.small]
       
-      @scala.inline
-      def xlarge: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.xlarge = "xlarge".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.xlarge]
+      inline def xlarge: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.xlarge = "xlarge".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.xlarge]
     }
   }
 }

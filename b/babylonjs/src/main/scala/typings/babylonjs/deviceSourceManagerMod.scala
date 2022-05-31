@@ -10,7 +10,6 @@ import typings.babylonjs.sceneMod.IDisposable
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deviceSourceManagerMod {
@@ -34,7 +33,7 @@ object deviceSourceManagerMod {
     deviceSlot: Double
     ) = this()
     
-    val _deviceInputSystem: js.Any = js.native
+    /* private */ val _deviceInputSystem: js.Any = js.native
     
     /** "Slot" or index that device is referenced in */
     val deviceSlot: Double = js.native
@@ -57,7 +56,9 @@ object deviceSourceManagerMod {
   
   @JSImport("babylonjs/DeviceInput/InputDevices/deviceSourceManager", "DeviceSourceManager")
   @js.native
-  class DeviceSourceManager protected () extends IDisposable {
+  class DeviceSourceManager protected ()
+    extends StObject
+       with IDisposable {
     /**
       * Default Constructor
       * @param engine engine to pull input element from
@@ -69,26 +70,32 @@ object deviceSourceManagerMod {
       * @param deviceType Enum specifying device type
       * @param deviceSlot "Slot" or index that device is referenced in
       */
-    var _addDevice: js.Any = js.native
+    /* private */ var _addDevice: js.Any = js.native
     
-    val _deviceInputSystem: js.Any = js.native
+    /* private */ val _deviceInputSystem: js.Any = js.native
     
-    val _devices: js.Any = js.native
+    /* private */ val _devices: js.Any = js.native
     
-    val _firstDevice: js.Any = js.native
+    /* private */ val _firstDevice: js.Any = js.native
     
     /**
       * Function to remove device name to device list
       * @param deviceType Enum specifying device type
       * @param deviceSlot "Slot" or index that device is referenced in
       */
-    var _removeDevice: js.Any = js.native
+    /* private */ var _removeDevice: js.Any = js.native
     
     /**
       * Updates array storing first connected device of each type
       * @param type Type of Device
       */
-    var _updateFirstDevices: js.Any = js.native
+    /* private */ var _updateFirstDevices: js.Any = js.native
+    
+    /**
+      * Releases all held resources
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * Gets a DeviceSource, given a type and slot

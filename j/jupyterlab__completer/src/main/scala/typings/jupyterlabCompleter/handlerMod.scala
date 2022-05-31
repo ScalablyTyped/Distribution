@@ -14,38 +14,39 @@ import typings.luminoDisposable.mod.IDisposable
 import typings.luminoMessaging.mod.Message
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object handlerMod {
   
   @JSImport("@jupyterlab/completer/lib/handler", "CompletionHandler")
   @js.native
-  class CompletionHandler protected () extends IDisposable {
+  class CompletionHandler protected ()
+    extends StObject
+       with IDisposable {
     /**
       * Construct a new completion handler for a widget.
       */
     def this(options: IOptions) = this()
     
-    var _connector: js.Any = js.native
+    /* private */ var _connector: js.Any = js.native
     
-    var _editor: js.Any = js.native
+    /* private */ var _editor: js.Any = js.native
     
-    var _enabled: js.Any = js.native
+    /* private */ var _enabled: js.Any = js.native
     
-    var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: js.Any = js.native
     
-    var _isICompletionItemsConnector: js.Any = js.native
+    /* private */ var _isICompletionItemsConnector: js.Any = js.native
     
     /**
       * Make a completion request.
       */
-    var _makeRequest: js.Any = js.native
+    /* private */ var _makeRequest: js.Any = js.native
     
     /**
       * If completion request fails, reset model and fail silently.
       */
-    var _onFailure: js.Any = js.native
+    /* private */ var _onFailure: js.Any = js.native
     
     /**
       * Receive completion items from provider.
@@ -54,7 +55,7 @@ object handlerMod {
       *
       * @param reply - The API response returned for a completion request.
       */
-    var _onFetchItemsReply: js.Any = js.native
+    /* private */ var _onFetchItemsReply: js.Any = js.native
     
     /**
       * Receive a completion reply from the connector.
@@ -63,16 +64,16 @@ object handlerMod {
       *
       * @param reply - The API response returned for a completion request.
       */
-    var _onReply: js.Any = js.native
+    /* private */ var _onReply: js.Any = js.native
     
-    var _pending: js.Any = js.native
+    /* private */ var _pending: js.Any = js.native
     
     /**
       * Updates model with text state and current cursor position.
       */
-    var _updateModel: js.Any = js.native
+    /* private */ var _updateModel: js.Any = js.native
     
-    var _validate: js.Any = js.native
+    /* private */ var _validate: js.Any = js.native
     
     /**
       * The completer widget managed by the handler.
@@ -91,6 +92,20 @@ object handlerMod {
     def connector_=(connector: IDataConnector[IReply, Unit, IRequest, String]): Unit = js.native
     
     /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
       * The editor used by the completion handler.
       */
     def editor: IEditor | Null = js.native
@@ -106,6 +121,14 @@ object handlerMod {
       */
     def invoke(): Unit = js.native
     
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
     /**
       * Get whether the completion handler is disposed.
       */
@@ -181,24 +204,20 @@ object handlerMod {
       val InvokeRequest: Message = js.native
     }
     
-    @js.native
     trait ICompleterConnecterResponseType extends StObject {
       
-      var responseType: typings.jupyterlabCompleter.jupyterlabCompleterStrings.ICompletionItemsReply = js.native
+      var responseType: typings.jupyterlabCompleter.jupyterlabCompleterStrings.ICompletionItemsReply
     }
     object ICompleterConnecterResponseType {
       
-      @scala.inline
-      def apply(responseType: typings.jupyterlabCompleter.jupyterlabCompleterStrings.ICompletionItemsReply): ICompleterConnecterResponseType = {
-        val __obj = js.Dynamic.literal(responseType = responseType.asInstanceOf[js.Any])
+      inline def apply(): ICompleterConnecterResponseType = {
+        val __obj = js.Dynamic.literal(responseType = "ICompletionItemsReply")
         __obj.asInstanceOf[ICompleterConnecterResponseType]
       }
       
-      @scala.inline
-      implicit class ICompleterConnecterResponseTypeMutableBuilder[Self <: ICompleterConnecterResponseType] (val x: Self) extends AnyVal {
+      extension [Self <: ICompleterConnecterResponseType](x: Self) {
         
-        @scala.inline
-        def setResponseType(value: typings.jupyterlabCompleter.jupyterlabCompleterStrings.ICompletionItemsReply): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+        inline def setResponseType(value: typings.jupyterlabCompleter.jupyterlabCompleterStrings.ICompletionItemsReply): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
       }
     }
     
@@ -211,84 +230,70 @@ object handlerMod {
       * - custom icons
       * and other potential new features.
       */
-    @js.native
     trait ICompletionItem extends StObject {
       
       /**
         * Indicates if the item is deprecated.
         */
-      var deprecated: js.UndefOr[Boolean] = js.native
+      var deprecated: js.UndefOr[Boolean] = js.undefined
       
       /**
         * A human-readable string with additional information
         * about this item, like type or symbol information.
         */
-      var documentation: js.UndefOr[String] = js.native
+      var documentation: js.UndefOr[String] = js.undefined
       
       /**
         * LabIcon object for icon to be rendered with completion type.
         */
-      var icon: js.UndefOr[LabIcon] = js.native
+      var icon: js.UndefOr[LabIcon] = js.undefined
       
       /**
         * Completion to be inserted.
         */
-      var insertText: js.UndefOr[String] = js.native
+      var insertText: js.UndefOr[String] = js.undefined
       
       /**
         * User facing completion.
         * If insertText is not set, this will be inserted.
         */
-      var label: String = js.native
+      var label: String
       
       /**
         * Type of this completion item.
         */
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object ICompletionItem {
       
-      @scala.inline
-      def apply(label: String): ICompletionItem = {
+      inline def apply(label: String): ICompletionItem = {
         val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
         __obj.asInstanceOf[ICompletionItem]
       }
       
-      @scala.inline
-      implicit class ICompletionItemMutableBuilder[Self <: ICompletionItem] (val x: Self) extends AnyVal {
+      extension [Self <: ICompletionItem](x: Self) {
         
-        @scala.inline
-        def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+        inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+        inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
         
-        @scala.inline
-        def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
+        inline def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
+        inline def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
         
-        @scala.inline
-        def setIcon(value: LabIcon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: LabIcon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+        inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
         
-        @scala.inline
-        def setInsertText(value: String): Self = StObject.set(x, "insertText", value.asInstanceOf[js.Any])
+        inline def setInsertText(value: String): Self = StObject.set(x, "insertText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInsertTextUndefined: Self = StObject.set(x, "insertText", js.undefined)
+        inline def setInsertTextUndefined: Self = StObject.set(x, "insertText", js.undefined)
         
-        @scala.inline
-        def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
     
@@ -299,64 +304,60 @@ object handlerMod {
       */
     type ICompletionItems = js.Array[ICompletionItem]
     
-    type ICompletionItemsConnector = (IDataConnector[ICompletionItemsReply, Unit, IRequest, String]) with ICompleterConnecterResponseType
+    @js.native
+    trait ICompletionItemsConnector
+      extends StObject
+         with IDataConnector[ICompletionItemsReply, Unit, IRequest, String]
+         with ICompleterConnecterResponseType
     
     /**
       * A reply to a completion items fetch request.
       */
-    @js.native
     trait ICompletionItemsReply extends StObject {
       
       /**
         * The end index for the substring being replaced by completion.
         */
-      var end: Double = js.native
+      var end: Double
       
       /**
         * A list of completion items.
         */
-      var items: ICompletionItems = js.native
+      var items: ICompletionItems
       
       /**
         * The starting index for the substring being replaced by completion.
         */
-      var start: Double = js.native
+      var start: Double
     }
     object ICompletionItemsReply {
       
-      @scala.inline
-      def apply(end: Double, items: ICompletionItems, start: Double): ICompletionItemsReply = {
+      inline def apply(end: Double, items: ICompletionItems, start: Double): ICompletionItemsReply = {
         val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
         __obj.asInstanceOf[ICompletionItemsReply]
       }
       
-      @scala.inline
-      implicit class ICompletionItemsReplyMutableBuilder[Self <: ICompletionItemsReply] (val x: Self) extends AnyVal {
+      extension [Self <: ICompletionItemsReply](x: Self) {
         
-        @scala.inline
-        def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+        inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setItems(value: ICompletionItems): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+        inline def setItems(value: ICompletionItems): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setItemsVarargs(value: ICompletionItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: ICompletionItem*): Self = StObject.set(x, "items", js.Array(value :_*))
         
-        @scala.inline
-        def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+        inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       }
     }
     
     /**
       * The instantiation options for cell completion handlers.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The completion widget the handler will connect to.
         */
-      var completer: Completer = js.native
+      var completer: Completer
       
       /**
         * The data connector used to populate completion requests.
@@ -366,12 +367,11 @@ object handlerMod {
         * it is acceptable for the other methods to be simple functions that return
         * rejected promises.
         */
-      var connector: (IDataConnector[IReply, Unit, IRequest, String]) | ICompletionItemsConnector = js.native
+      var connector: (IDataConnector[IReply, Unit, IRequest, String]) | ICompletionItemsConnector
     }
     object IOptions {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         completer: Completer,
         connector: (IDataConnector[IReply, Unit, IRequest, String]) | ICompletionItemsConnector
       ): IOptions = {
@@ -379,103 +379,87 @@ object handlerMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setCompleter(value: Completer): Self = StObject.set(x, "completer", value.asInstanceOf[js.Any])
+        inline def setCompleter(value: Completer): Self = StObject.set(x, "completer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConnector(value: (IDataConnector[IReply, Unit, IRequest, String]) | ICompletionItemsConnector): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
+        inline def setConnector(value: (IDataConnector[IReply, Unit, IRequest, String]) | ICompletionItemsConnector): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
       }
     }
     
     /**
       * A reply to a completion request.
       */
-    @js.native
     trait IReply extends StObject {
       
       /**
         * The end index for the substring being replaced by completion.
         */
-      var end: Double = js.native
+      var end: Double
       
       /**
         * A list of matching completion strings.
         */
-      var matches: js.Array[String] = js.native
+      var matches: js.Array[String]
       
       /**
         * Any metadata that accompanies the completion reply.
         */
-      var metadata: ReadonlyJSONObject = js.native
+      var metadata: ReadonlyJSONObject
       
       /**
         * The starting index for the substring being replaced by completion.
         */
-      var start: Double = js.native
+      var start: Double
     }
     object IReply {
       
-      @scala.inline
-      def apply(end: Double, matches: js.Array[String], metadata: ReadonlyJSONObject, start: Double): IReply = {
+      inline def apply(end: Double, matches: js.Array[String], metadata: ReadonlyJSONObject, start: Double): IReply = {
         val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
         __obj.asInstanceOf[IReply]
       }
       
-      @scala.inline
-      implicit class IReplyMutableBuilder[Self <: IReply] (val x: Self) extends AnyVal {
+      extension [Self <: IReply](x: Self) {
         
-        @scala.inline
-        def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+        inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMatches(value: js.Array[String]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+        inline def setMatches(value: js.Array[String]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value :_*))
+        inline def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value :_*))
         
-        @scala.inline
-        def setMetadata(value: ReadonlyJSONObject): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+        inline def setMetadata(value: ReadonlyJSONObject): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+        inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       }
     }
     
     /**
       * The details of a completion request.
       */
-    @js.native
     trait IRequest extends StObject {
       
       /**
         * The cursor offset position within the text being completed.
         */
-      var offset: Double = js.native
+      var offset: Double
       
       /**
         * The text being completed.
         */
-      var text: String = js.native
+      var text: String
     }
     object IRequest {
       
-      @scala.inline
-      def apply(offset: Double, text: String): IRequest = {
+      inline def apply(offset: Double, text: String): IRequest = {
         val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
         __obj.asInstanceOf[IRequest]
       }
       
-      @scala.inline
-      implicit class IRequestMutableBuilder[Self <: IRequest] (val x: Self) extends AnyVal {
+      extension [Self <: IRequest](x: Self) {
         
-        @scala.inline
-        def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+        inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+        inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       }
     }
   }

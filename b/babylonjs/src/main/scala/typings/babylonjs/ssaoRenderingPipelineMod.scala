@@ -5,7 +5,6 @@ import typings.babylonjs.postProcessRenderPipelineMod.PostProcessRenderPipeline
 import typings.babylonjs.sceneMod.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ssaoRenderingPipelineMod {
@@ -53,31 +52,31 @@ object ssaoRenderingPipelineMod {
       */
     var SSAORenderEffect: String = js.native
     
-    var _blurHPostProcess: js.Any = js.native
+    /* private */ var _blurHPostProcess: js.Any = js.native
     
-    var _blurVPostProcess: js.Any = js.native
+    /* private */ var _blurVPostProcess: js.Any = js.native
     
-    var _createBlurPostProcess: js.Any = js.native
+    /* private */ var _createBlurPostProcess: js.Any = js.native
     
-    var _createRandomTexture: js.Any = js.native
+    /* private */ var _createRandomTexture: js.Any = js.native
     
-    var _createSSAOCombinePostProcess: js.Any = js.native
+    /* private */ var _createSSAOCombinePostProcess: js.Any = js.native
     
-    var _createSSAOPostProcess: js.Any = js.native
+    /* private */ var _createSSAOPostProcess: js.Any = js.native
     
-    var _depthTexture: js.Any = js.native
+    /* private */ var _depthTexture: js.Any = js.native
     
-    var _firstUpdate: js.Any = js.native
+    /* private */ var _firstUpdate: js.Any = js.native
     
-    var _originalColorPostProcess: js.Any = js.native
+    /* private */ var _originalColorPostProcess: js.Any = js.native
     
-    var _randomTexture: js.Any = js.native
+    /* private */ var _randomTexture: js.Any = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
-    var _ssaoCombinePostProcess: js.Any = js.native
+    /* private */ var _ssaoCombinePostProcess: js.Any = js.native
     
-    var _ssaoPostProcess: js.Any = js.native
+    /* private */ var _ssaoPostProcess: js.Any = js.native
     
     /**
       * Related to fallOff, used to interpolate SSAO samples (first interpolate function input) based on the occlusion difference of each pixel

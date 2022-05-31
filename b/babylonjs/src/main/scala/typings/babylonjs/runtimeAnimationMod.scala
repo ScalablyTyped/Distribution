@@ -6,7 +6,6 @@ import typings.babylonjs.animationMod.IAnimationState
 import typings.babylonjs.sceneMod.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object runtimeAnimationMod {
@@ -26,12 +25,12 @@ object runtimeAnimationMod {
     /**
       * The active target of the runtime animation
       */
-    var _activeTargets: js.Any = js.native
+    /* private */ var _activeTargets: js.Any = js.native
     
     /**
       * The animation used by the runtime animation
       */
-    var _animation: js.Any = js.native
+    /* private */ var _animation: js.Any = js.native
     
     /** @hidden */
     var _animationState: IAnimationState = js.native
@@ -39,58 +38,58 @@ object runtimeAnimationMod {
     /**
       * The blending factor of the runtime animation
       */
-    var _blendingFactor: js.Any = js.native
+    /* private */ var _blendingFactor: js.Any = js.native
     
-    var _currentActiveTarget: js.Any = js.native
+    /* private */ var _currentActiveTarget: js.Any = js.native
     
     /**
       * The current frame of the runtime animation
       */
-    var _currentFrame: js.Any = js.native
+    /* private */ var _currentFrame: js.Any = js.native
     
     /**
       * The current value of the runtime animation
       */
-    var _currentValue: js.Any = js.native
+    /* private */ var _currentValue: js.Any = js.native
     
-    var _directTarget: js.Any = js.native
+    /* private */ var _directTarget: js.Any = js.native
     
-    var _enableBlending: js.Any = js.native
+    /* private */ var _enableBlending: js.Any = js.native
     
-    var _events: js.Any = js.native
+    /* private */ var _events: js.Any = js.native
     
     /**
       * Gets the loop pmode of the runtime animation
       * @returns Loop Mode
       */
-    var _getCorrectLoopMode: js.Any = js.native
+    /* private */ var _getCorrectLoopMode: js.Any = js.native
     
-    var _getOriginalValues: js.Any = js.native
+    /* private */ var _getOriginalValues: js.Any = js.native
     
     /**
       * The high limits cache of the runtime animation
       */
-    var _highLimitsCache: js.Any = js.native
+    /* private */ var _highLimitsCache: js.Any = js.native
     
     /**
       * The initiating animatable
       */
-    var _host: js.Any = js.native
+    /* private */ var _host: js.Any = js.native
     
-    var _keys: js.Any = js.native
+    /* private */ var _keys: js.Any = js.native
     
-    var _maxFrame: js.Any = js.native
+    /* private */ var _maxFrame: js.Any = js.native
     
-    var _maxValue: js.Any = js.native
+    /* private */ var _maxValue: js.Any = js.native
     
-    var _minFrame: js.Any = js.native
+    /* private */ var _minFrame: js.Any = js.native
     
-    var _minValue: js.Any = js.native
+    /* private */ var _minValue: js.Any = js.native
     
     /**
       * The offsets cache of the runtime animation
       */
-    var _offsetsCache: js.Any = js.native
+    /* private */ var _offsetsCache: js.Any = js.native
     
     /** @hidden */
     def _onLoop(): Unit = js.native
@@ -98,63 +97,63 @@ object runtimeAnimationMod {
     /**
       * The original blend value of the runtime animation
       */
-    var _originalBlendValue: js.Any = js.native
+    /* private */ var _originalBlendValue: js.Any = js.native
     
     /**
       * The original value of the runtime animation
       */
-    var _originalValue: js.Any = js.native
+    /* private */ var _originalValue: js.Any = js.native
     
     /**
       * @hidden Internal use only
       */
     def _prepareForSpeedRatioChange(newSpeedRatio: Double): Unit = js.native
     
-    var _preparePath: js.Any = js.native
+    /* private */ var _preparePath: js.Any = js.native
     
     /**
       * The previous delay of the runtime animation
       */
-    var _previousDelay: js.Any = js.native
+    /* private */ var _previousDelay: js.Any = js.native
     
     /**
       * The previous ratio of the runtime animation
       */
-    var _previousRatio: js.Any = js.native
+    /* private */ var _previousRatio: js.Any = js.native
     
     /**
       * The ratio offset of the runtime animation
       */
-    var _ratioOffset: js.Any = js.native
+    /* private */ var _ratioOffset: js.Any = js.native
     
     /**
       * The BabylonJS scene
       */
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
-    var _setValue: js.Any = js.native
+    /* private */ var _setValue: js.Any = js.native
     
     /**
       * Specifies if the runtime animation has been stopped
       */
-    var _stopped: js.Any = js.native
+    /* private */ var _stopped: js.Any = js.native
     
     /**
       * The target of the runtime animation
       */
-    var _target: js.Any = js.native
+    /* private */ var _target: js.Any = js.native
     
-    var _targetIsArray: js.Any = js.native
+    /* private */ var _targetIsArray: js.Any = js.native
     
     /**
       * The target path of the runtime animation
       */
-    var _targetPath: js.Any = js.native
+    /* private */ var _targetPath: js.Any = js.native
     
     /**
       * The weight of the runtime animation
       */
-    var _weight: js.Any = js.native
+    /* private */ var _weight: js.Any = js.native
     
     /**
       * Execute the current animation

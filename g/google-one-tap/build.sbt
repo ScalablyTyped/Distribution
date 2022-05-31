@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google-one-tap"
-version := "1.0-dt-20201001Z-4bfcc2"
+version := "1.0-dt-20201001Z-148949"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -4,29 +4,30 @@ import typings.babylonjs.XRFrame
 import typings.babylonjs.XRReferenceSpace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebXRHand extends IDisposable {
+trait WebXRHand
+  extends StObject
+     with IDisposable {
   
-  var _defaultHandMesh: js.Any = js.native
+  /* private */ var _defaultHandMesh: js.Any = js.native
   
-  var _generateDefaultHandMesh: js.Any = js.native
+  /* private */ var _generateDefaultHandMesh: js.Any = js.native
   
-  var _handMesh: js.Any = js.native
+  /* private */ var _handMesh: js.Any = js.native
   
-  var _rigMapping: js.Any = js.native
+  /* private */ var _rigMapping: js.Any = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
-  var _transformNodeMapping: js.Any = js.native
+  /* private */ var _transformNodeMapping: js.Any = js.native
   
   /**
     * Populate the HandPartsDefinition object.
     * This is called as a side effect since certain browsers don't have XRHand defined.
     */
-  var generateHandPartsDefinition: js.Any = js.native
+  /* private */ var generateHandPartsDefinition: js.Any = js.native
   
   /**
     * Get meshes of part of the hand

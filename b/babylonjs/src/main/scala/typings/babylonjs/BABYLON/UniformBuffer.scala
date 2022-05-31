@@ -3,7 +3,6 @@ package typings.babylonjs.BABYLON
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,85 +11,85 @@ trait UniformBuffer extends StObject {
   /** @hidden */
   var _alreadyBound: Boolean = js.native
   
-  var _buffer: js.Any = js.native
+  /* private */ var _buffer: js.Any = js.native
   
-  var _bufferData: js.Any = js.native
+  /* private */ var _bufferData: js.Any = js.native
   
-  var _cacheMatrix: js.Any = js.native
+  /* private */ var _cacheMatrix: js.Any = js.native
   
-  var _currentEffect: js.Any = js.native
+  /* private */ var _currentEffect: js.Any = js.native
   
-  var _data: js.Any = js.native
+  /* private */ var _data: js.Any = js.native
   
-  var _dynamic: js.Any = js.native
+  /* private */ var _dynamic: js.Any = js.native
   
-  var _engine: js.Any = js.native
+  /* private */ var _engine: js.Any = js.native
   
   /**
     * std140 layout specifies how to align data within an UBO structure.
     * See https://khronos.org/registry/OpenGL/specs/gl/glspec45.core.pdf#page=159
     * for specs.
     */
-  var _fillAlignment: js.Any = js.native
+  /* private */ var _fillAlignment: js.Any = js.native
   
-  var _needSync: js.Any = js.native
+  /* private */ var _needSync: js.Any = js.native
   
-  var _noUBO: js.Any = js.native
+  /* private */ var _noUBO: js.Any = js.native
   
   /** @hidden */
   def _rebuild(): Unit = js.native
   
-  var _uniformLocationPointer: js.Any = js.native
+  /* private */ var _uniformLocationPointer: js.Any = js.native
   
-  var _uniformLocations: js.Any = js.native
+  /* private */ var _uniformLocations: js.Any = js.native
   
-  var _uniformSizes: js.Any = js.native
+  /* private */ var _uniformSizes: js.Any = js.native
   
-  var _updateColor3ForEffect: js.Any = js.native
+  /* private */ var _updateColor3ForEffect: js.Any = js.native
   
-  var _updateColor3ForUniform: js.Any = js.native
+  /* private */ var _updateColor3ForUniform: js.Any = js.native
   
-  var _updateColor4ForEffect: js.Any = js.native
+  /* private */ var _updateColor4ForEffect: js.Any = js.native
   
-  var _updateColor4ForUniform: js.Any = js.native
+  /* private */ var _updateColor4ForUniform: js.Any = js.native
   
-  var _updateFloat2ForEffect: js.Any = js.native
+  /* private */ var _updateFloat2ForEffect: js.Any = js.native
   
-  var _updateFloat2ForUniform: js.Any = js.native
+  /* private */ var _updateFloat2ForUniform: js.Any = js.native
   
-  var _updateFloat3ForEffect: js.Any = js.native
+  /* private */ var _updateFloat3ForEffect: js.Any = js.native
   
-  var _updateFloat3ForUniform: js.Any = js.native
+  /* private */ var _updateFloat3ForUniform: js.Any = js.native
   
-  var _updateFloat4ForEffect: js.Any = js.native
+  /* private */ var _updateFloat4ForEffect: js.Any = js.native
   
-  var _updateFloat4ForUniform: js.Any = js.native
+  /* private */ var _updateFloat4ForUniform: js.Any = js.native
   
-  var _updateFloatForEffect: js.Any = js.native
+  /* private */ var _updateFloatForEffect: js.Any = js.native
   
-  var _updateFloatForUniform: js.Any = js.native
+  /* private */ var _updateFloatForUniform: js.Any = js.native
   
-  var _updateMatrix2x2ForEffect: js.Any = js.native
+  /* private */ var _updateMatrix2x2ForEffect: js.Any = js.native
   
-  var _updateMatrix2x2ForUniform: js.Any = js.native
+  /* private */ var _updateMatrix2x2ForUniform: js.Any = js.native
   
-  var _updateMatrix3x3ForEffect: js.Any = js.native
+  /* private */ var _updateMatrix3x3ForEffect: js.Any = js.native
   
-  var _updateMatrix3x3ForUniform: js.Any = js.native
+  /* private */ var _updateMatrix3x3ForUniform: js.Any = js.native
   
-  var _updateMatrixForEffect: js.Any = js.native
+  /* private */ var _updateMatrixForEffect: js.Any = js.native
   
-  var _updateMatrixForUniform: js.Any = js.native
+  /* private */ var _updateMatrixForUniform: js.Any = js.native
   
-  var _updateVector3ForEffect: js.Any = js.native
+  /* private */ var _updateVector3ForEffect: js.Any = js.native
   
-  var _updateVector3ForUniform: js.Any = js.native
+  /* private */ var _updateVector3ForUniform: js.Any = js.native
   
-  var _updateVector4ForEffect: js.Any = js.native
+  /* private */ var _updateVector4ForEffect: js.Any = js.native
   
-  var _updateVector4ForUniform: js.Any = js.native
+  /* private */ var _updateVector4ForUniform: js.Any = js.native
   
-  var _valueCache: js.Any = js.native
+  /* private */ var _valueCache: js.Any = js.native
   
   /**
     * Adds a vec3 to the uniform buffer.

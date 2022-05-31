@@ -3,7 +3,6 @@ package typings.oracleOraclejet
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ojattributegrouphandlerMod {
@@ -15,11 +14,11 @@ object ojattributegrouphandlerMod {
     
     def addMatchRule(category: String, attributeValue: js.Any): Unit = js.native
     
-    def getCategoryAssignments(): js.Array[StringDictionary[_]] = js.native
+    def getCategoryAssignments(): js.Array[StringDictionary[js.Any]] = js.native
     
     def getValue(category: String): js.Any = js.native
     
-    def getValueRamp(): js.Array[_] = js.native
+    def getValueRamp(): js.Array[js.Any] = js.native
   }
   
   @JSImport("@oracle/oraclejet/ojattributegrouphandler", "ColorAttributeGroupHandler")

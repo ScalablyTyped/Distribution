@@ -8,7 +8,6 @@ import typings.jupyterlabStatedb.mod.DataConnector
 import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object workspaceMod {
@@ -31,30 +30,25 @@ object workspaceMod {
     /**
       * The instantiation options for a workspace manager.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The server settings used to make API requests.
         */
-      var serverSettings: js.UndefOr[ISettings] = js.native
+      var serverSettings: js.UndefOr[ISettings] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): IOptions = {
+      inline def apply(): IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setServerSettings(value: ISettings): Self = StObject.set(x, "serverSettings", value.asInstanceOf[js.Any])
+        inline def setServerSettings(value: ISettings): Self = StObject.set(x, "serverSettings", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServerSettingsUndefined: Self = StObject.set(x, "serverSettings", js.undefined)
+        inline def setServerSettingsUndefined: Self = StObject.set(x, "serverSettings", js.undefined)
       }
     }
   }
@@ -69,35 +63,30 @@ object workspaceMod {
     /**
       * The interface describing a workspace API response.
       */
-    @js.native
     trait IWorkspace extends StObject {
       
       /**
         * The workspace data.
         */
-      var data: ReadonlyPartialJSONObject = js.native
+      var data: ReadonlyPartialJSONObject
       
       /**
         * The metadata for a workspace.
         */
-      var metadata: Id = js.native
+      var metadata: Id
     }
     object IWorkspace {
       
-      @scala.inline
-      def apply(data: ReadonlyPartialJSONObject, metadata: Id): IWorkspace = {
+      inline def apply(data: ReadonlyPartialJSONObject, metadata: Id): IWorkspace = {
         val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
         __obj.asInstanceOf[IWorkspace]
       }
       
-      @scala.inline
-      implicit class IWorkspaceMutableBuilder[Self <: IWorkspace] (val x: Self) extends AnyVal {
+      extension [Self <: IWorkspace](x: Self) {
         
-        @scala.inline
-        def setData(value: ReadonlyPartialJSONObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: ReadonlyPartialJSONObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetadata(value: Id): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+        inline def setMetadata(value: Id): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       }
     }
   }

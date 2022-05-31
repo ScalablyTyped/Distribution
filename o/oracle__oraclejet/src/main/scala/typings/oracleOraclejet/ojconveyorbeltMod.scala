@@ -30,32 +30,41 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ojconveyorbeltMod {
   
   @js.native
-  trait ojConveyorBelt extends baseComponent[ojConveyorBeltSettableProperties] {
+  trait ojConveyorBelt
+    extends StObject
+       with baseComponent[ojConveyorBeltSettableProperties] {
     
     def addEventListener(
       `type`: orientationChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[horizontal | vertical], _]
+      listener: js.ThisFunction1[
+          /* this */ HTMLElement, 
+          /* ev */ JetElementCustomEvent[horizontal | vertical], 
+          js.Any
+        ]
     ): Unit = js.native
     def addEventListener(
       `type`: orientationChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[horizontal | vertical], _],
+      listener: js.ThisFunction1[
+          /* this */ HTMLElement, 
+          /* ev */ JetElementCustomEvent[horizontal | vertical], 
+          js.Any
+        ],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_contentParentChanged(
       `type`: contentParentChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_contentParentChanged(
       `type`: contentParentChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     
@@ -66,9 +75,9 @@ object ojconveyorbeltMod {
     @JSName("getProperty")
     def getProperty_orientation(property: orientation): horizontal | vertical = js.native
     
-    var onContentParentChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
+    var onContentParentChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], js.Any]) | Null = js.native
     
-    var onOrientationChanged: (js.Function1[/* event */ JetElementCustomEvent[horizontal | vertical], _]) | Null = js.native
+    var onOrientationChanged: (js.Function1[/* event */ JetElementCustomEvent[horizontal | vertical], js.Any]) | Null = js.native
     
     var orientation: horizontal | vertical = js.native
     
@@ -82,17 +91,17 @@ object ojconveyorbeltMod {
     def setProperty_contentParent(property: contentParent, value: String): Unit = js.native
   }
   
-  @js.native
-  trait ojConveyorBeltEventMap extends baseComponentEventMap[ojConveyorBeltSettableProperties] {
+  trait ojConveyorBeltEventMap
+    extends StObject
+       with baseComponentEventMap[ojConveyorBeltSettableProperties] {
     
-    var contentParentChanged: JetElementCustomEvent[String | Null] = js.native
+    var contentParentChanged: JetElementCustomEvent[String | Null]
     
-    var orientationChanged: JetElementCustomEvent[horizontal | vertical] = js.native
+    var orientationChanged: JetElementCustomEvent[horizontal | vertical]
   }
   object ojConveyorBeltEventMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: UIEvent,
       animationcancel: AnimationEvent,
       animationend: AnimationEvent,
@@ -193,91 +202,74 @@ object ojconveyorbeltMod {
       __obj.asInstanceOf[ojConveyorBeltEventMap]
     }
     
-    @scala.inline
-    implicit class ojConveyorBeltEventMapMutableBuilder[Self <: ojConveyorBeltEventMap] (val x: Self) extends AnyVal {
+    extension [Self <: ojConveyorBeltEventMap](x: Self) {
       
-      @scala.inline
-      def setContentParentChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "contentParentChanged", value.asInstanceOf[js.Any])
+      inline def setContentParentChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "contentParentChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientationChanged(value: JetElementCustomEvent[horizontal | vertical]): Self = StObject.set(x, "orientationChanged", value.asInstanceOf[js.Any])
+      inline def setOrientationChanged(value: JetElementCustomEvent[horizontal | vertical]): Self = StObject.set(x, "orientationChanged", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait ojConveyorBeltSettableProperties extends baseComponentSettableProperties {
+  trait ojConveyorBeltSettableProperties
+    extends StObject
+       with baseComponentSettableProperties {
     
-    var contentParent: String | Null = js.native
+    var contentParent: String | Null
     
-    var orientation: horizontal | vertical = js.native
+    var orientation: horizontal | vertical
   }
   object ojConveyorBeltSettableProperties {
     
-    @scala.inline
-    def apply(orientation: horizontal | vertical): ojConveyorBeltSettableProperties = {
-      val __obj = js.Dynamic.literal(orientation = orientation.asInstanceOf[js.Any])
+    inline def apply(orientation: horizontal | vertical): ojConveyorBeltSettableProperties = {
+      val __obj = js.Dynamic.literal(orientation = orientation.asInstanceOf[js.Any], contentParent = null, translations = null)
       __obj.asInstanceOf[ojConveyorBeltSettableProperties]
     }
     
-    @scala.inline
-    implicit class ojConveyorBeltSettablePropertiesMutableBuilder[Self <: ojConveyorBeltSettableProperties] (val x: Self) extends AnyVal {
+    extension [Self <: ojConveyorBeltSettableProperties](x: Self) {
       
-      @scala.inline
-      def setContentParent(value: String): Self = StObject.set(x, "contentParent", value.asInstanceOf[js.Any])
+      inline def setContentParent(value: String): Self = StObject.set(x, "contentParent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentParentNull: Self = StObject.set(x, "contentParent", null)
+      inline def setContentParentNull: Self = StObject.set(x, "contentParent", null)
       
-      @scala.inline
-      def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojconveyorbelt.ojConveyorBeltSettableProperties> */
-  @js.native
   trait ojConveyorBeltSettablePropertiesLenient
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var contentParent: js.UndefOr[String | Null] = js.native
+    var contentParent: js.UndefOr[String | Null] = js.undefined
     
-    var orientation: js.UndefOr[horizontal | vertical] = js.native
+    var orientation: js.UndefOr[horizontal | vertical] = js.undefined
     
-    var translations: js.UndefOr[js.Object | Null] = js.native
+    var translations: js.UndefOr[js.Object | Null] = js.undefined
   }
   object ojConveyorBeltSettablePropertiesLenient {
     
-    @scala.inline
-    def apply(): ojConveyorBeltSettablePropertiesLenient = {
+    inline def apply(): ojConveyorBeltSettablePropertiesLenient = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ojConveyorBeltSettablePropertiesLenient]
     }
     
-    @scala.inline
-    implicit class ojConveyorBeltSettablePropertiesLenientMutableBuilder[Self <: ojConveyorBeltSettablePropertiesLenient] (val x: Self) extends AnyVal {
+    extension [Self <: ojConveyorBeltSettablePropertiesLenient](x: Self) {
       
-      @scala.inline
-      def setContentParent(value: String): Self = StObject.set(x, "contentParent", value.asInstanceOf[js.Any])
+      inline def setContentParent(value: String): Self = StObject.set(x, "contentParent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentParentNull: Self = StObject.set(x, "contentParent", null)
+      inline def setContentParentNull: Self = StObject.set(x, "contentParent", null)
       
-      @scala.inline
-      def setContentParentUndefined: Self = StObject.set(x, "contentParent", js.undefined)
+      inline def setContentParentUndefined: Self = StObject.set(x, "contentParent", js.undefined)
       
-      @scala.inline
-      def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+      inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       
-      @scala.inline
-      def setTranslations(value: js.Object): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: js.Object): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslationsNull: Self = StObject.set(x, "translations", null)
+      inline def setTranslationsNull: Self = StObject.set(x, "translations", null)
       
-      @scala.inline
-      def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+      inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
     }
   }
 }

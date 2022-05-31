@@ -8,20 +8,21 @@ import typings.jupyterlabServices.contentsMod.Contents.ContentType
 import typings.jupyterlabServices.contentsMod.Contents.FileFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modelfactoryMod {
   
   @JSImport("@jupyterlab/notebook/lib/modelfactory", "NotebookModelFactory")
   @js.native
-  class NotebookModelFactory protected () extends IModelFactory[INotebookModel] {
+  class NotebookModelFactory protected ()
+    extends StObject
+       with IModelFactory[INotebookModel] {
     /**
       * Construct a new notebook model factory.
       */
     def this(options: IOptions) = this()
     
-    var _disposed: js.Any = js.native
+    /* private */ var _disposed: js.Any = js.native
     
     /**
       * The content model factory used by the NotebookModelFactory.
@@ -35,11 +36,33 @@ object modelfactoryMod {
     def contentType_MNotebookModelFactory: ContentType = js.native
     
     /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
       * The format of the file.
       */
     @JSName("fileFormat")
     def fileFormat_MNotebookModelFactory: FileFormat = js.native
     
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
     /**
       * Get whether the model factory has been disposed.
       */
@@ -57,42 +80,35 @@ object modelfactoryMod {
     /**
       * The options used to initialize a NotebookModelFactory.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The factory for code cell content.
         */
-      var codeCellContentFactory: js.UndefOr[typings.jupyterlabCells.modelMod.CodeCellModel.IContentFactory] = js.native
+      var codeCellContentFactory: js.UndefOr[typings.jupyterlabCells.modelMod.CodeCellModel.IContentFactory] = js.undefined
       
       /**
         * The content factory used by the NotebookModelFactory.  If
         * given, it will supersede the `codeCellContentFactory`.
         */
-      var contentFactory: js.UndefOr[IContentFactory] = js.native
+      var contentFactory: js.UndefOr[IContentFactory] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): IOptions = {
+      inline def apply(): IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setCodeCellContentFactory(value: typings.jupyterlabCells.modelMod.CodeCellModel.IContentFactory): Self = StObject.set(x, "codeCellContentFactory", value.asInstanceOf[js.Any])
+        inline def setCodeCellContentFactory(value: typings.jupyterlabCells.modelMod.CodeCellModel.IContentFactory): Self = StObject.set(x, "codeCellContentFactory", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCodeCellContentFactoryUndefined: Self = StObject.set(x, "codeCellContentFactory", js.undefined)
+        inline def setCodeCellContentFactoryUndefined: Self = StObject.set(x, "codeCellContentFactory", js.undefined)
         
-        @scala.inline
-        def setContentFactory(value: IContentFactory): Self = StObject.set(x, "contentFactory", value.asInstanceOf[js.Any])
+        inline def setContentFactory(value: IContentFactory): Self = StObject.set(x, "contentFactory", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentFactoryUndefined: Self = StObject.set(x, "contentFactory", js.undefined)
+        inline def setContentFactoryUndefined: Self = StObject.set(x, "contentFactory", js.undefined)
       }
     }
   }

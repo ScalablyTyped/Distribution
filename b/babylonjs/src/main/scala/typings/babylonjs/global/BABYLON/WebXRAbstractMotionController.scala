@@ -5,13 +5,13 @@ import typings.babylonjs.BABYLON.IMotionControllerLayout
 import typings.babylonjs.BABYLON.MotionControllerHandedness
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.WebXRAbstractMotionController")
 @js.native
 abstract class WebXRAbstractMotionController protected ()
-  extends typings.babylonjs.BABYLON.WebXRAbstractMotionController {
+  extends StObject
+     with typings.babylonjs.BABYLON.WebXRAbstractMotionController {
   /**
     * constructs a new abstract motion controller
     * @param scene the scene to which the model of the controller will be added
@@ -45,4 +45,10 @@ abstract class WebXRAbstractMotionController protected ()
   handedness: MotionControllerHandedness,
     _doNotLoadControllerMesh: Boolean
   ) = this()
+  
+  /**
+    * Releases all held resources
+    */
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
 }

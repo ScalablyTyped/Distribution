@@ -2,39 +2,38 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BoneIKController extends StObject {
   
-  var _adjustRoll: js.Any = js.native
+  /* private */ var _adjustRoll: js.Any = js.native
   
-  var _bendAxis: js.Any = js.native
+  /* private */ var _bendAxis: js.Any = js.native
   
-  var _bone1: js.Any = js.native
+  /* private */ var _bone1: js.Any = js.native
   
-  var _bone1Length: js.Any = js.native
+  /* private */ var _bone1Length: js.Any = js.native
   
-  var _bone1Mat: js.Any = js.native
+  /* private */ var _bone1Mat: js.Any = js.native
   
-  var _bone1Quat: js.Any = js.native
+  /* private */ var _bone1Quat: js.Any = js.native
   
-  var _bone2: js.Any = js.native
+  /* private */ var _bone2: js.Any = js.native
   
-  var _bone2Ang: js.Any = js.native
+  /* private */ var _bone2Ang: js.Any = js.native
   
-  var _bone2Length: js.Any = js.native
+  /* private */ var _bone2Length: js.Any = js.native
   
-  var _maxAngle: js.Any = js.native
+  /* private */ var _maxAngle: js.Any = js.native
   
-  var _maxReach: js.Any = js.native
+  /* private */ var _maxReach: js.Any = js.native
   
-  var _rightHandedSystem: js.Any = js.native
+  /* private */ var _rightHandedSystem: js.Any = js.native
   
-  var _setMaxAngle: js.Any = js.native
+  /* private */ var _setMaxAngle: js.Any = js.native
   
-  var _slerping: js.Any = js.native
+  /* private */ var _slerping: js.Any = js.native
   
   /**
     * Gets or sets maximum allowed angle

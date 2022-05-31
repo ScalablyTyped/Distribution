@@ -3,7 +3,6 @@ package typings.babylonjs.legacyMod
 import typings.babylonjs.shadowLightMod.IShadowLight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "ShadowGenerator")
@@ -35,8 +34,7 @@ object ShadowGenerator {
   @JSImport("babylonjs/Legacy/legacy", "ShadowGenerator.CLASSNAME")
   @js.native
   def CLASSNAME: String = js.native
-  @scala.inline
-  def CLASSNAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASSNAME")(x.asInstanceOf[js.Any])
+  inline def CLASSNAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASSNAME")(x.asInstanceOf[js.Any])
   
   /**
     * Shadow generator mode ESM: Blurred Exponential Shadow Mapping using the inverse of the exponential preventing
@@ -112,16 +110,12 @@ object ShadowGenerator {
     * @param constr A function that builds a shadow generator or undefined to create an instance of the default shadow generator
     * @returns The parsed shadow generator
     */
-  @JSImport("babylonjs/Legacy/legacy", "ShadowGenerator.Parse")
-  @js.native
-  def Parse(parsedShadowGenerator: js.Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.shadowGeneratorMod.ShadowGenerator = js.native
-  @JSImport("babylonjs/Legacy/legacy", "ShadowGenerator.Parse")
-  @js.native
-  def Parse(
+  inline def Parse(parsedShadowGenerator: js.Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.shadowGeneratorMod.ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.shadowGeneratorMod.ShadowGenerator]
+  inline def Parse(
     parsedShadowGenerator: js.Any,
     scene: typings.babylonjs.sceneMod.Scene,
     constr: js.Function2[/* mapSize */ Double, /* light */ IShadowLight, this.type]
-  ): typings.babylonjs.shadowGeneratorMod.ShadowGenerator = js.native
+  ): typings.babylonjs.shadowGeneratorMod.ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], constr.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.shadowGeneratorMod.ShadowGenerator]
   
   /**
     * Reserved for PCF and PCSS
@@ -160,7 +154,5 @@ object ShadowGenerator {
   val QUALITY_MEDIUM: Double = js.native
   
   /** @hidden */
-  @JSImport("babylonjs/Legacy/legacy", "ShadowGenerator._SceneComponentInitialization")
-  @js.native
-  def _SceneComponentInitialization(scene: typings.babylonjs.sceneMod.Scene): Unit = js.native
+  inline def _SceneComponentInitialization(scene: typings.babylonjs.sceneMod.Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

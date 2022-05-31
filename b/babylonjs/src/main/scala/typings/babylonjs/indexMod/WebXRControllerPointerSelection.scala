@@ -3,7 +3,6 @@ package typings.babylonjs.indexMod
 import typings.babylonjs.webXRControllerPointerSelectionMod.IWebXRControllerPointerSelectionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "WebXRControllerPointerSelection")
@@ -46,6 +45,5 @@ object WebXRControllerPointerSelection {
   @JSImport("babylonjs/index", "WebXRControllerPointerSelection._idCounter")
   @js.native
   def _idCounter: js.Any = js.native
-  @scala.inline
-  def _idCounter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_idCounter")(x.asInstanceOf[js.Any])
+  inline def _idCounter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_idCounter")(x.asInstanceOf[js.Any])
 }

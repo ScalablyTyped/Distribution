@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.PhysicsJointData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.MotorEnabledJoint")
 @js.native
 class MotorEnabledJoint protected ()
-  extends typings.babylonjs.BABYLON.MotorEnabledJoint {
+  extends StObject
+     with typings.babylonjs.BABYLON.MotorEnabledJoint {
   /**
     * Initializes the Motor-Enabled Joint
     * @param type The type of the joint

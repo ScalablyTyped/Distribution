@@ -21,7 +21,6 @@ import typings.std.Event
 import typings.std.HTMLSelectElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notebooktoolsMod {
@@ -34,42 +33,42 @@ object notebooktoolsMod {
       */
     def this(options: IOptions) = this()
     
-    var _advancedTools: js.Any = js.native
+    /* private */ var _advancedTools: js.Any = js.native
     
-    var _commonTools: js.Any = js.native
+    /* private */ var _commonTools: js.Any = js.native
     
     /**
       * Handle a change to the active cell.
       */
-    var _onActiveCellChanged: js.Any = js.native
+    /* private */ var _onActiveCellChanged: js.Any = js.native
     
     /**
       * Handle a change in the notebook model metadata.
       */
-    var _onActiveCellMetadataChanged: js.Any = js.native
+    /* private */ var _onActiveCellMetadataChanged: js.Any = js.native
     
     /**
       * Handle a change to the notebook panel.
       */
-    var _onActiveNotebookPanelChanged: js.Any = js.native
+    /* private */ var _onActiveNotebookPanelChanged: js.Any = js.native
     
     /**
       * Handle a change in the active cell metadata.
       */
-    var _onActiveNotebookPanelMetadataChanged: js.Any = js.native
+    /* private */ var _onActiveNotebookPanelMetadataChanged: js.Any = js.native
     
     /**
       * Handle a change in the selection.
       */
-    var _onSelectionChanged: js.Any = js.native
+    /* private */ var _onSelectionChanged: js.Any = js.native
     
-    var _prevActiveCell: js.Any = js.native
+    /* private */ var _prevActiveCell: js.Any = js.native
     
-    var _prevActiveNotebookModel: js.Any = js.native
+    /* private */ var _prevActiveNotebookModel: js.Any = js.native
     
-    var _toolChildren: js.Any = js.native
+    /* private */ var _toolChildren: js.Any = js.native
     
-    var _tracker: js.Any = js.native
+    /* private */ var _tracker: js.Any = js.native
     
     /**
       * The active cell widget.
@@ -91,6 +90,10 @@ object notebooktoolsMod {
   }
   object NotebookTools {
     
+    @JSImport("@jupyterlab/notebook/lib/notebooktools", "NotebookTools")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * A singleton conflatable `'activecell-changed'` message.
       */
@@ -108,19 +111,19 @@ object notebooktoolsMod {
       */
     class ActiveCellTool () extends Tool {
       
-      var _cellModel: js.Any = js.native
+      /* private */ var _cellModel: js.Any = js.native
       
-      var _model: js.Any = js.native
+      /* private */ var _model: js.Any = js.native
       
       /**
         * Handle a change to the current editor mimetype.
         */
-      var _onMimeTypeChanged: js.Any = js.native
+      /* private */ var _onMimeTypeChanged: js.Any = js.native
       
       /**
         * Handle a change to the current editor value.
         */
-      var _onValueChanged: js.Any = js.native
+      /* private */ var _onValueChanged: js.Any = js.native
       
       /**
         * Handle a change to the active cell.
@@ -143,7 +146,7 @@ object notebooktoolsMod {
     class CellMetadataEditorTool protected () extends MetadataEditorTool {
       def this(options: typings.jupyterlabNotebook.notebooktoolsMod.NotebookTools.MetadataEditorTool.IOptions) = this()
       
-      var _update: js.Any = js.native
+      /* private */ var _update: js.Any = js.native
       
       /**
         * Handle a change to the active cell metadata.
@@ -162,25 +165,25 @@ object notebooktoolsMod {
         */
       def this(options: typings.jupyterlabNotebook.notebooktoolsMod.NotebookTools.KeySelector.IOptions) = this()
       
-      var _changeGuard: js.Any = js.native
+      /* private */ var _changeGuard: js.Any = js.native
       
-      var _default: js.Any = js.native
+      /* private */ var _default: js.Any = js.native
       
       /**
         * Get the value for the data.
         */
-      var _getValue: js.Any = js.native
+      /* private */ var _getValue: js.Any = js.native
       
-      var _getter: js.Any = js.native
+      /* private */ var _getter: js.Any = js.native
       
       /**
         * Set the value for the data.
         */
-      var _setValue: js.Any = js.native
+      /* private */ var _setValue: js.Any = js.native
       
-      var _setter: js.Any = js.native
+      /* private */ var _setter: js.Any = js.native
       
-      var _validCellTypes: js.Any = js.native
+      /* private */ var _validCellTypes: js.Any = js.native
       
       /**
         * Handle the DOM events for the widget.
@@ -217,13 +220,12 @@ object notebooktoolsMod {
       /**
         * The options used to initialize a keyselector.
         */
-      @js.native
       trait IOptions extends StObject {
         
         /**
           * Default value for default setters and getters if value is not found.
           */
-        var default: js.UndefOr[ReadonlyPartialJSONValue] = js.native
+        var default: js.UndefOr[ReadonlyPartialJSONValue] = js.undefined
         
         /**
           * An optional value getter for the selector.
@@ -232,12 +234,12 @@ object notebooktoolsMod {
           *
           * @returns The appropriate value for the selector.
           */
-        var getter: js.UndefOr[js.Function1[/* cell */ Cell, js.UndefOr[ReadonlyPartialJSONValue]]] = js.native
+        var getter: js.UndefOr[js.Function1[/* cell */ Cell, js.UndefOr[ReadonlyPartialJSONValue]]] = js.undefined
         
         /**
           * The metadata key of interest.
           */
-        var key: String = js.native
+        var key: String
         
         /**
           * The map of options to values.
@@ -246,7 +248,7 @@ object notebooktoolsMod {
           * If a value equals the default, choosing it may erase the key from the
           * metadata.
           */
-        var optionsMap: ReadonlyPartialJSONObject = js.native
+        var optionsMap: ReadonlyPartialJSONObject
         
         /**
           * An optional value setter for the selector.
@@ -261,70 +263,54 @@ object notebooktoolsMod {
           */
         var setter: js.UndefOr[
                 js.Function2[/* cell */ Cell, /* value */ js.UndefOr[ReadonlyPartialJSONValue], Unit]
-              ] = js.native
+              ] = js.undefined
         
         /**
           * The optional title of the selector - defaults to capitalized `key`.
           */
-        var title: js.UndefOr[String] = js.native
+        var title: js.UndefOr[String] = js.undefined
         
         /**
           * The optional valid cell types - defaults to all valid types.
           */
-        var validCellTypes: js.UndefOr[js.Array[CellType]] = js.native
+        var validCellTypes: js.UndefOr[js.Array[CellType]] = js.undefined
       }
       object IOptions {
         
-        @scala.inline
-        def apply(key: String, optionsMap: ReadonlyPartialJSONObject): typings.jupyterlabNotebook.notebooktoolsMod.NotebookTools.KeySelector.IOptions = {
+        inline def apply(key: String, optionsMap: ReadonlyPartialJSONObject): typings.jupyterlabNotebook.notebooktoolsMod.NotebookTools.KeySelector.IOptions = {
           val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], optionsMap = optionsMap.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.jupyterlabNotebook.notebooktoolsMod.NotebookTools.KeySelector.IOptions]
         }
         
-        @scala.inline
-        implicit class IOptionsMutableBuilder[Self <: typings.jupyterlabNotebook.notebooktoolsMod.NotebookTools.KeySelector.IOptions] (val x: Self) extends AnyVal {
+        extension [Self <: typings.jupyterlabNotebook.notebooktoolsMod.NotebookTools.KeySelector.IOptions](x: Self) {
           
-          @scala.inline
-          def setDefault(value: ReadonlyPartialJSONValue): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+          inline def setDefault(value: ReadonlyPartialJSONValue): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDefaultNull: Self = StObject.set(x, "default", null)
+          inline def setDefaultNull: Self = StObject.set(x, "default", null)
           
-          @scala.inline
-          def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+          inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
           
-          @scala.inline
-          def setGetter(value: /* cell */ Cell => js.UndefOr[ReadonlyPartialJSONValue]): Self = StObject.set(x, "getter", js.Any.fromFunction1(value))
+          inline def setGetter(value: /* cell */ Cell => js.UndefOr[ReadonlyPartialJSONValue]): Self = StObject.set(x, "getter", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setGetterUndefined: Self = StObject.set(x, "getter", js.undefined)
+          inline def setGetterUndefined: Self = StObject.set(x, "getter", js.undefined)
           
-          @scala.inline
-          def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+          inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOptionsMap(value: ReadonlyPartialJSONObject): Self = StObject.set(x, "optionsMap", value.asInstanceOf[js.Any])
+          inline def setOptionsMap(value: ReadonlyPartialJSONObject): Self = StObject.set(x, "optionsMap", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSetter(value: (/* cell */ Cell, /* value */ js.UndefOr[ReadonlyPartialJSONValue]) => Unit): Self = StObject.set(x, "setter", js.Any.fromFunction2(value))
+          inline def setSetter(value: (/* cell */ Cell, /* value */ js.UndefOr[ReadonlyPartialJSONValue]) => Unit): Self = StObject.set(x, "setter", js.Any.fromFunction2(value))
           
-          @scala.inline
-          def setSetterUndefined: Self = StObject.set(x, "setter", js.undefined)
+          inline def setSetterUndefined: Self = StObject.set(x, "setter", js.undefined)
           
-          @scala.inline
-          def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+          inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+          inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
           
-          @scala.inline
-          def setValidCellTypes(value: js.Array[CellType]): Self = StObject.set(x, "validCellTypes", value.asInstanceOf[js.Any])
+          inline def setValidCellTypes(value: js.Array[CellType]): Self = StObject.set(x, "validCellTypes", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setValidCellTypesUndefined: Self = StObject.set(x, "validCellTypes", js.undefined)
+          inline def setValidCellTypesUndefined: Self = StObject.set(x, "validCellTypes", js.undefined)
           
-          @scala.inline
-          def setValidCellTypesVarargs(value: CellType*): Self = StObject.set(x, "validCellTypes", js.Array(value :_*))
+          inline def setValidCellTypesVarargs(value: CellType*): Self = StObject.set(x, "validCellTypes", js.Array(value :_*))
         }
       }
     }
@@ -353,49 +339,41 @@ object notebooktoolsMod {
       /**
         * The options used to initialize a metadata editor tool.
         */
-      @js.native
       trait IOptions extends StObject {
         
         /**
           * Initial collapse state, defaults to true.
           */
-        var collapsed: js.UndefOr[Boolean] = js.native
+        var collapsed: js.UndefOr[Boolean] = js.undefined
         
         /**
           * The editor factory used by the tool.
           */
-        var editorFactory: Factory = js.native
+        var editorFactory: Factory
         
         /**
           * The label for the JSON editor
           */
-        var label: js.UndefOr[String] = js.native
+        var label: js.UndefOr[String] = js.undefined
       }
       object IOptions {
         
-        @scala.inline
-        def apply(editorFactory: /* options */ typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions => IEditor): typings.jupyterlabNotebook.notebooktoolsMod.NotebookTools.MetadataEditorTool.IOptions = {
+        inline def apply(editorFactory: /* options */ typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions => IEditor): typings.jupyterlabNotebook.notebooktoolsMod.NotebookTools.MetadataEditorTool.IOptions = {
           val __obj = js.Dynamic.literal(editorFactory = js.Any.fromFunction1(editorFactory))
           __obj.asInstanceOf[typings.jupyterlabNotebook.notebooktoolsMod.NotebookTools.MetadataEditorTool.IOptions]
         }
         
-        @scala.inline
-        implicit class IOptionsMutableBuilder[Self <: typings.jupyterlabNotebook.notebooktoolsMod.NotebookTools.MetadataEditorTool.IOptions] (val x: Self) extends AnyVal {
+        extension [Self <: typings.jupyterlabNotebook.notebooktoolsMod.NotebookTools.MetadataEditorTool.IOptions](x: Self) {
           
-          @scala.inline
-          def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+          inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+          inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
           
-          @scala.inline
-          def setEditorFactory(value: /* options */ typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions => IEditor): Self = StObject.set(x, "editorFactory", js.Any.fromFunction1(value))
+          inline def setEditorFactory(value: /* options */ typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions => IEditor): Self = StObject.set(x, "editorFactory", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+          inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+          inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
         }
       }
     }
@@ -408,7 +386,7 @@ object notebooktoolsMod {
     class NotebookMetadataEditorTool protected () extends MetadataEditorTool {
       def this(options: typings.jupyterlabNotebook.notebooktoolsMod.NotebookTools.MetadataEditorTool.IOptions) = this()
       
-      var _update: js.Any = js.native
+      /* private */ var _update: js.Any = js.native
       
       /**
         * Handle a change to the notebook metadata.
@@ -480,90 +458,74 @@ object notebooktoolsMod {
     /**
       * Create an nbconvert selector.
       */
-    @JSImport("@jupyterlab/notebook/lib/notebooktools", "NotebookTools.createNBConvertSelector")
-    @js.native
-    def createNBConvertSelector(optionsMap: ReadonlyPartialJSONObject): KeySelector = js.native
+    inline def createNBConvertSelector(optionsMap: ReadonlyPartialJSONObject): KeySelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createNBConvertSelector")(optionsMap.asInstanceOf[js.Any]).asInstanceOf[KeySelector]
     
     /**
       * Create a slideshow selector.
       */
-    @JSImport("@jupyterlab/notebook/lib/notebooktools", "NotebookTools.createSlideShowSelector")
-    @js.native
-    def createSlideShowSelector(): KeySelector = js.native
+    inline def createSlideShowSelector(): KeySelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createSlideShowSelector")().asInstanceOf[KeySelector]
     
     /**
       * The options used to add an item to the notebook tools.
       */
-    @js.native
     trait IAddOptions extends StObject {
       
       /**
         * The rank order of the widget among its siblings.
         */
-      var rank: js.UndefOr[Double] = js.native
+      var rank: js.UndefOr[Double] = js.undefined
       
       /**
         * The section to which the tool should be added.
         */
-      var section: js.UndefOr[common | advanced] = js.native
+      var section: js.UndefOr[common | advanced] = js.undefined
       
       /**
         * The tool to add to the notebook tools area.
         */
-      var tool: Tool = js.native
+      var tool: Tool
     }
     object IAddOptions {
       
-      @scala.inline
-      def apply(tool: Tool): IAddOptions = {
+      inline def apply(tool: Tool): IAddOptions = {
         val __obj = js.Dynamic.literal(tool = tool.asInstanceOf[js.Any])
         __obj.asInstanceOf[IAddOptions]
       }
       
-      @scala.inline
-      implicit class IAddOptionsMutableBuilder[Self <: IAddOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IAddOptions](x: Self) {
         
-        @scala.inline
-        def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+        inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
+        inline def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
         
-        @scala.inline
-        def setSection(value: common | advanced): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+        inline def setSection(value: common | advanced): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSectionUndefined: Self = StObject.set(x, "section", js.undefined)
+        inline def setSectionUndefined: Self = StObject.set(x, "section", js.undefined)
         
-        @scala.inline
-        def setTool(value: Tool): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
+        inline def setTool(value: Tool): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
       }
     }
     
     /**
       * The options used to create a NotebookTools object.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The notebook tracker used by the notebook tools.
         */
-      var tracker: INotebookTracker = js.native
+      var tracker: INotebookTracker
     }
     object IOptions {
       
-      @scala.inline
-      def apply(tracker: INotebookTracker): IOptions = {
+      inline def apply(tracker: INotebookTracker): IOptions = {
         val __obj = js.Dynamic.literal(tracker = tracker.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setTracker(value: INotebookTracker): Self = StObject.set(x, "tracker", value.asInstanceOf[js.Any])
+        inline def setTracker(value: INotebookTracker): Self = StObject.set(x, "tracker", value.asInstanceOf[js.Any])
       }
     }
   }

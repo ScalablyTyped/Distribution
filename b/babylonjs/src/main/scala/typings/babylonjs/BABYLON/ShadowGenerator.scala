@@ -2,59 +2,60 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShadowGenerator extends IShadowGenerator {
+trait ShadowGenerator
+  extends StObject
+     with IShadowGenerator {
   
   /* protected */ def _applyFilterValues(): Unit = js.native
   
-  var _bias: Double = js.native
+  /* protected */ var _bias: Double = js.native
   
   /* protected */ def _bindCustomEffectForRenderSubMeshForShadowMap(subMesh: SubMesh, effect: Effect, matriceNames: js.Any, mesh: AbstractMesh): Unit = js.native
   
-  var _blurBoxOffset: Double = js.native
+  /* protected */ var _blurBoxOffset: Double = js.native
   
-  var _blurKernel: Double = js.native
+  /* protected */ var _blurKernel: Double = js.native
   
-  var _blurPostProcesses: js.Array[PostProcess] = js.native
+  /* protected */ var _blurPostProcesses: js.Array[PostProcess] = js.native
   
-  var _blurScale: Double = js.native
+  /* protected */ var _blurScale: Double = js.native
   
-  var _boxBlurPostprocess: Nullable[PostProcess] = js.native
+  /* protected */ var _boxBlurPostprocess: Nullable[PostProcess] = js.native
   
-  var _cachedDefines: String = js.native
+  /* protected */ var _cachedDefines: String = js.native
   
-  var _cachedDirection: Vector3 = js.native
+  /* protected */ var _cachedDirection: Vector3 = js.native
   
-  var _cachedPosition: Vector3 = js.native
+  /* protected */ var _cachedPosition: Vector3 = js.native
   
-  var _contactHardeningLightSizeUVRatio: Double = js.native
+  /* protected */ var _contactHardeningLightSizeUVRatio: Double = js.native
   
   /* protected */ def _createTargetRenderTexture(): Unit = js.native
   
-  var _currentFaceIndex: Double = js.native
+  /* protected */ var _currentFaceIndex: Double = js.native
   
-  var _currentFaceIndexCache: Double = js.native
+  /* protected */ var _currentFaceIndexCache: Double = js.native
   
-  var _currentRenderID: Double = js.native
+  /* protected */ var _currentRenderID: Double = js.native
   
-  var _darkness: Double = js.native
+  /* protected */ var _darkness: Double = js.native
   
-  var _defaultTextureMatrix: Matrix = js.native
+  /* protected */ var _defaultTextureMatrix: Matrix = js.native
   
-  var _depthScale: Double = js.native
+  /* protected */ var _depthScale: Double = js.native
   
   /* protected */ def _disposeBlurPostProcesses(): Unit = js.native
   
   /* protected */ def _disposeRTTandPostProcesses(): Unit = js.native
   
-  var _effect: Effect = js.native
+  /* protected */ var _effect: Effect = js.native
   
-  var _filter: Double = js.native
+  /* protected */ var _filter: Double = js.native
   
-  var _filteringQuality: Double = js.native
+  /* protected */ var _filteringQuality: Double = js.native
   
   /* protected */ def _initializeBlurRTTAndPostProcesses(): Unit = js.native
   
@@ -64,21 +65,21 @@ trait ShadowGenerator extends IShadowGenerator {
   
   /* protected */ def _isReadyCustomDefines(defines: js.Any, subMesh: SubMesh, useInstances: Boolean): Unit = js.native
   
-  var _kernelBlurXPostprocess: Nullable[PostProcess] = js.native
+  /* protected */ var _kernelBlurXPostprocess: Nullable[PostProcess] = js.native
   
-  var _kernelBlurYPostprocess: Nullable[PostProcess] = js.native
+  /* protected */ var _kernelBlurYPostprocess: Nullable[PostProcess] = js.native
   
-  var _light: IShadowLight = js.native
+  /* protected */ var _light: IShadowLight = js.native
   
-  var _lightDirection: Vector3 = js.native
+  /* protected */ var _lightDirection: Vector3 = js.native
   
-  var _mapSize: Double = js.native
+  /* protected */ var _mapSize: Double = js.native
   
-  var _normalBias: Double = js.native
+  /* protected */ var _normalBias: Double = js.native
   
-  var _prepareShadowDefines: js.Any = js.native
+  /* private */ var _prepareShadowDefines: js.Any = js.native
   
-  var _projectionMatrix: Matrix = js.native
+  /* protected */ var _projectionMatrix: Matrix = js.native
   
   /* protected */ def _renderForShadowMap(
     opaqueSubMeshes: SmartArray[SubMesh],
@@ -90,25 +91,25 @@ trait ShadowGenerator extends IShadowGenerator {
   /* protected */ def _renderSubMeshForShadowMap(subMesh: SubMesh): Unit = js.native
   /* protected */ def _renderSubMeshForShadowMap(subMesh: SubMesh, isTransparent: Boolean): Unit = js.native
   
-  var _scene: Scene = js.native
+  /* protected */ var _scene: Scene = js.native
   
-  var _shadowMap: Nullable[RenderTargetTexture] = js.native
+  /* protected */ var _shadowMap: Nullable[RenderTargetTexture] = js.native
   
-  var _shadowMap2: Nullable[RenderTargetTexture] = js.native
+  /* protected */ var _shadowMap2: Nullable[RenderTargetTexture] = js.native
   
-  var _storedUniqueId: Nullable[Double] = js.native
+  /* protected */ var _storedUniqueId: Nullable[Double] = js.native
   
-  var _textureType: Double = js.native
+  /* protected */ var _textureType: Double = js.native
   
-  var _transformMatrix: Matrix = js.native
+  /* protected */ var _transformMatrix: Matrix = js.native
   
-  var _transparencyShadow: Boolean = js.native
+  /* protected */ var _transparencyShadow: Boolean = js.native
   
-  var _useKernelBlur: Boolean = js.native
+  /* protected */ var _useKernelBlur: Boolean = js.native
   
   /* protected */ def _validateFilter(filter: Double): Double = js.native
   
-  var _viewMatrix: Matrix = js.native
+  /* protected */ var _viewMatrix: Matrix = js.native
   
   /**
     * Helper function to add a mesh and its descendants to the list of shadow casters.

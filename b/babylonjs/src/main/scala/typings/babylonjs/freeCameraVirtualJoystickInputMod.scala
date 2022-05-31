@@ -5,18 +5,19 @@ import typings.babylonjs.freeCameraMod.FreeCamera
 import typings.babylonjs.virtualJoystickMod.VirtualJoystick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object freeCameraVirtualJoystickInputMod {
   
   @JSImport("babylonjs/Cameras/Inputs/freeCameraVirtualJoystickInput", "FreeCameraVirtualJoystickInput")
   @js.native
-  class FreeCameraVirtualJoystickInput () extends ICameraInput[FreeCamera] {
+  class FreeCameraVirtualJoystickInput ()
+    extends StObject
+       with ICameraInput[FreeCamera] {
     
-    var _leftjoystick: js.Any = js.native
+    /* private */ var _leftjoystick: js.Any = js.native
     
-    var _rightjoystick: js.Any = js.native
+    /* private */ var _rightjoystick: js.Any = js.native
     
     /**
       * Defines the camera the input is attached to.
@@ -47,28 +48,24 @@ object freeCameraVirtualJoystickInputMod {
   /* augmented module */
   object babylonjsCamerasFreeCameraInputsManagerAugmentingMod {
     
-    @js.native
     trait FreeCameraInputsManager extends StObject {
       
       /**
         * Add virtual joystick input support to the input manager.
         * @returns the current input manager
         */
-      def addVirtualJoystick(): FreeCameraInputsManager = js.native
+      def addVirtualJoystick(): FreeCameraInputsManager
     }
     object FreeCameraInputsManager {
       
-      @scala.inline
-      def apply(addVirtualJoystick: () => FreeCameraInputsManager): FreeCameraInputsManager = {
+      inline def apply(addVirtualJoystick: () => FreeCameraInputsManager): FreeCameraInputsManager = {
         val __obj = js.Dynamic.literal(addVirtualJoystick = js.Any.fromFunction0(addVirtualJoystick))
         __obj.asInstanceOf[FreeCameraInputsManager]
       }
       
-      @scala.inline
-      implicit class FreeCameraInputsManagerMutableBuilder[Self <: FreeCameraInputsManager] (val x: Self) extends AnyVal {
+      extension [Self <: FreeCameraInputsManager](x: Self) {
         
-        @scala.inline
-        def setAddVirtualJoystick(value: () => FreeCameraInputsManager): Self = StObject.set(x, "addVirtualJoystick", js.Any.fromFunction0(value))
+        inline def setAddVirtualJoystick(value: () => FreeCameraInputsManager): Self = StObject.set(x, "addVirtualJoystick", js.Any.fromFunction0(value))
       }
     }
   }

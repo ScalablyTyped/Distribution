@@ -283,10 +283,4 @@ object cryptoMod {
     
     inline def hex: typings.k6.k6Strings.hex = "hex".asInstanceOf[typings.k6.k6Strings.hex]
   }
-  
-  /**
-    * This module provides common hashing functionality available in the GoLang crypto package.
-    * https://k6.io/docs/javascript-api/k6-crypto
-    */
-  object crypto
 }

@@ -2,7 +2,6 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.AnimationKeyInterpolation")
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object AnimationKeyInterpolation extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.babylonjs.BABYLON.AnimationKeyInterpolation with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.babylonjs.BABYLON.AnimationKeyInterpolation & Double] = js.native
   
-  /* 1 */ val STEP: typings.babylonjs.BABYLON.AnimationKeyInterpolation.STEP with Double = js.native
+  /* 1 */ val STEP: typings.babylonjs.BABYLON.AnimationKeyInterpolation.STEP & Double = js.native
 }

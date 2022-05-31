@@ -2,7 +2,6 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -13,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MotionControllerComponentStateType extends StObject
 object MotionControllerComponentStateType {
   
-  @scala.inline
-  def default: typings.babylonjs.babylonjsStrings.default = "default".asInstanceOf[typings.babylonjs.babylonjsStrings.default]
+  inline def default: typings.babylonjs.babylonjsStrings.default = "default".asInstanceOf[typings.babylonjs.babylonjsStrings.default]
   
-  @scala.inline
-  def pressed: typings.babylonjs.babylonjsStrings.pressed = "pressed".asInstanceOf[typings.babylonjs.babylonjsStrings.pressed]
+  inline def pressed: typings.babylonjs.babylonjsStrings.pressed = "pressed".asInstanceOf[typings.babylonjs.babylonjsStrings.pressed]
   
-  @scala.inline
-  def touched: typings.babylonjs.babylonjsStrings.touched = "touched".asInstanceOf[typings.babylonjs.babylonjsStrings.touched]
+  inline def touched: typings.babylonjs.babylonjsStrings.touched = "touched".asInstanceOf[typings.babylonjs.babylonjsStrings.touched]
 }

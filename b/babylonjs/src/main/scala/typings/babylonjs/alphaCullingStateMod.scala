@@ -2,7 +2,6 @@ package typings.babylonjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object alphaCullingStateMod {
@@ -14,21 +13,21 @@ object alphaCullingStateMod {
     */
   class AlphaState () extends StObject {
     
-    var _alphaBlend: js.Any = js.native
+    /* private */ var _alphaBlend: js.Any = js.native
     
-    var _blendConstants: js.Any = js.native
+    /* private */ var _blendConstants: js.Any = js.native
     
-    var _blendEquationParameters: js.Any = js.native
+    /* private */ var _blendEquationParameters: js.Any = js.native
     
-    var _blendFunctionParameters: js.Any = js.native
+    /* private */ var _blendFunctionParameters: js.Any = js.native
     
-    var _isAlphaBlendDirty: js.Any = js.native
+    /* private */ var _isAlphaBlendDirty: js.Any = js.native
     
-    var _isBlendConstantsDirty: js.Any = js.native
+    /* private */ var _isBlendConstantsDirty: js.Any = js.native
     
-    var _isBlendEquationParametersDirty: js.Any = js.native
+    /* private */ var _isBlendEquationParametersDirty: js.Any = js.native
     
-    var _isBlendFunctionParametersDirty: js.Any = js.native
+    /* private */ var _isBlendFunctionParametersDirty: js.Any = js.native
     
     def alphaBlend: Boolean = js.native
     def alphaBlend_=(value: Boolean): Unit = js.native

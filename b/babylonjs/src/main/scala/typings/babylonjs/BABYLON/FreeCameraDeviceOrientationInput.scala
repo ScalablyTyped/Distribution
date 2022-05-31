@@ -2,34 +2,35 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FreeCameraDeviceOrientationInput extends ICameraInput[FreeCamera] {
+trait FreeCameraDeviceOrientationInput
+  extends StObject
+     with ICameraInput[FreeCamera] {
   
-  var _alpha: js.Any = js.native
+  /* private */ var _alpha: js.Any = js.native
   
-  var _beta: js.Any = js.native
+  /* private */ var _beta: js.Any = js.native
   
-  var _camera: js.Any = js.native
+  /* private */ var _camera: js.Any = js.native
   
-  var _constantTranform: js.Any = js.native
+  /* private */ var _constantTranform: js.Any = js.native
   
-  var _deviceOrientation: js.Any = js.native
+  /* private */ var _deviceOrientation: js.Any = js.native
   
-  var _gamma: js.Any = js.native
+  /* private */ var _gamma: js.Any = js.native
   
   /**
     * @hidden
     */
   var _onDeviceOrientationChangedObservable: Observable[Unit] = js.native
   
-  var _orientationChanged: js.Any = js.native
+  /* private */ var _orientationChanged: js.Any = js.native
   
-  var _screenOrientationAngle: js.Any = js.native
+  /* private */ var _screenOrientationAngle: js.Any = js.native
   
-  var _screenQuaternion: js.Any = js.native
+  /* private */ var _screenQuaternion: js.Any = js.native
   
   /**
     * Define the camera controlled by the input.

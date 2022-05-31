@@ -2,26 +2,23 @@ package typings.babylonjs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LightmapMode extends StObject {
   
-  var lightmapMode: Boolean = js.native
+  var lightmapMode: Boolean
   
-  var needNormals: Boolean = js.native
+  var needNormals: Boolean
   
-  var needRebuild: Boolean = js.native
+  var needRebuild: Boolean
   
-  var shadowEnabled: Boolean = js.native
+  var shadowEnabled: Boolean
   
-  var specularEnabled: Boolean = js.native
+  var specularEnabled: Boolean
 }
 object LightmapMode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     lightmapMode: Boolean,
     needNormals: Boolean,
     needRebuild: Boolean,
@@ -32,22 +29,16 @@ object LightmapMode {
     __obj.asInstanceOf[LightmapMode]
   }
   
-  @scala.inline
-  implicit class LightmapModeMutableBuilder[Self <: LightmapMode] (val x: Self) extends AnyVal {
+  extension [Self <: LightmapMode](x: Self) {
     
-    @scala.inline
-    def setLightmapMode(value: Boolean): Self = StObject.set(x, "lightmapMode", value.asInstanceOf[js.Any])
+    inline def setLightmapMode(value: Boolean): Self = StObject.set(x, "lightmapMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeedNormals(value: Boolean): Self = StObject.set(x, "needNormals", value.asInstanceOf[js.Any])
+    inline def setNeedNormals(value: Boolean): Self = StObject.set(x, "needNormals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeedRebuild(value: Boolean): Self = StObject.set(x, "needRebuild", value.asInstanceOf[js.Any])
+    inline def setNeedRebuild(value: Boolean): Self = StObject.set(x, "needRebuild", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowEnabled(value: Boolean): Self = StObject.set(x, "shadowEnabled", value.asInstanceOf[js.Any])
+    inline def setShadowEnabled(value: Boolean): Self = StObject.set(x, "shadowEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecularEnabled(value: Boolean): Self = StObject.set(x, "specularEnabled", value.asInstanceOf[js.Any])
+    inline def setSpecularEnabled(value: Boolean): Self = StObject.set(x, "specularEnabled", value.asInstanceOf[js.Any])
   }
 }

@@ -1321,17 +1321,4 @@ object reactNativeMod {
   inline def setAsyncStorage(AsyncStorage: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAsyncStorage")(AsyncStorage.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def setLocalDatastoreController(controller: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLocalDatastoreController")(controller.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
-  /**
-    * A Parse.Op is an atomic operation that can be applied to a field in a
-    * Parse.Object. For example, calling <code>object.set("foo", "bar")</code>
-    * is an example of a Parse.Op.Set. Calling <code>object.unset("foo")</code>
-    * is a Parse.Op.Unset. These operations are stored in a Parse.Object and
-    * sent to the server as part of <code>object.save()</code> operations.
-    * Instances of Parse.Op should be immutable.
-    *
-    * You should not create subclasses of Parse.Op or instantiate Parse.Op
-    * directly.
-    */
-  object Op
 }

@@ -29,15 +29,19 @@ import typings.babylonjs.anon.UseVertexAlpha
 import typings.babylonjs.anon.Wrap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.MeshBuilder")
 @js.native
 class MeshBuilder ()
-  extends typings.babylonjs.BABYLON.MeshBuilder
+  extends StObject
+     with typings.babylonjs.BABYLON.MeshBuilder
 /* static members */
 object MeshBuilder {
+  
+  @JSGlobal("BABYLON.MeshBuilder")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a box mesh
@@ -54,12 +58,8 @@ object MeshBuilder {
     * @param scene defines the hosting scene
     * @returns the box mesh
     */
-  @JSGlobal("BABYLON.MeshBuilder.CreateBox")
-  @js.native
-  def CreateBox(name: String, options: TopBaseAt): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.MeshBuilder.CreateBox")
-  @js.native
-  def CreateBox(name: String, options: TopBaseAt, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
+  inline def CreateBox(name: String, options: TopBaseAt): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreateBox(name: String, options: TopBaseAt, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
   
   /**
     * Creates a Capsule Mesh
@@ -69,18 +69,10 @@ object MeshBuilder {
     * @returns the capsule mesh
     * @see https://doc.babylonjs.com/how_to/capsule_shape
     */
-  @JSGlobal("BABYLON.MeshBuilder.CreateCapsule")
-  @js.native
-  def CreateCapsule(name: String): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.MeshBuilder.CreateCapsule")
-  @js.native
-  def CreateCapsule(name: String, options: js.UndefOr[scala.Nothing], scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.MeshBuilder.CreateCapsule")
-  @js.native
-  def CreateCapsule(name: String, options: ICreateCapsuleOptions): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.MeshBuilder.CreateCapsule")
-  @js.native
-  def CreateCapsule(name: String, options: ICreateCapsuleOptions, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
+  inline def CreateCapsule(name: String): typings.babylonjs.BABYLON.Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateCapsule")(name.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreateCapsule(name: String, options: Unit, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCapsule")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreateCapsule(name: String, options: ICreateCapsuleOptions): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCapsule")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreateCapsule(name: String, options: ICreateCapsuleOptions, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCapsule")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
   
   /**
     * Creates a cylinder or a cone mesh
@@ -110,12 +102,8 @@ object MeshBuilder {
     * @returns the cylinder mesh
     * @see https://doc.babylonjs.com/how_to/set_shapes#cylinder-or-cone
     */
-  @JSGlobal("BABYLON.MeshBuilder.CreateCylinder")
-  @js.native
-  def CreateCylinder(name: String, options: DiameterTop): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.MeshBuilder.CreateCylinder")
-  @js.native
-  def CreateCylinder(name: String, options: DiameterTop, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
+  inline def CreateCylinder(name: String, options: DiameterTop): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCylinder")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreateCylinder(name: String, options: DiameterTop, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCylinder")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
   
   /**
     * Creates a dashed line mesh
@@ -134,12 +122,8 @@ object MeshBuilder {
     * @returns the dashed line mesh
     * @see https://doc.babylonjs.com/how_to/parametric_shapes#dashed-lines
     */
-  @JSGlobal("BABYLON.MeshBuilder.CreateDashedLines")
-  @js.native
-  def CreateDashedLines(name: String, options: GapSizeInstance): typings.babylonjs.BABYLON.LinesMesh = js.native
-  @JSGlobal("BABYLON.MeshBuilder.CreateDashedLines")
-  @js.native
-  def CreateDashedLines(name: String, options: GapSizeInstance, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.LinesMesh = js.native
+  inline def CreateDashedLines(name: String, options: GapSizeInstance): typings.babylonjs.BABYLON.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDashedLines")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.LinesMesh]
+  inline def CreateDashedLines(name: String, options: GapSizeInstance, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDashedLines")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.LinesMesh]
   
   /**
     * Creates a decal mesh.
@@ -155,9 +139,7 @@ object MeshBuilder {
     * @returns the decal mesh
     * @see https://doc.babylonjs.com/how_to/decals
     */
-  @JSGlobal("BABYLON.MeshBuilder.CreateDecal")
-  @js.native
-  def CreateDecal(name: String, sourceMesh: typings.babylonjs.BABYLON.AbstractMesh, options: Normal): typings.babylonjs.BABYLON.Mesh = js.native
+  inline def CreateDecal(name: String, sourceMesh: typings.babylonjs.BABYLON.AbstractMesh, options: Normal): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDecal")(name.asInstanceOf[js.Any], sourceMesh.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
   
   /**
     * Creates a plane polygonal mesh.  By default, this is a disc
@@ -173,12 +155,8 @@ object MeshBuilder {
     * @returns the plane polygonal mesh
     * @see https://doc.babylonjs.com/how_to/set_shapes#disc-or-regular-polygon
     */
-  @JSGlobal("BABYLON.MeshBuilder.CreateDisc")
-  @js.native
-  def CreateDisc(name: String, options: FrontUVsRadius): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.MeshBuilder.CreateDisc")
-  @js.native
-  def CreateDisc(name: String, options: FrontUVsRadius, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
+  inline def CreateDisc(name: String, options: FrontUVsRadius): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDisc")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreateDisc(name: String, options: FrontUVsRadius, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDisc")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
   
   /**
     * Creates a ground mesh
@@ -191,12 +169,8 @@ object MeshBuilder {
     * @returns the ground mesh
     * @see https://doc.babylonjs.com/how_to/set_shapes#ground
     */
-  @JSGlobal("BABYLON.MeshBuilder.CreateGround")
-  @js.native
-  def CreateGround(name: String, options: SubdivisionsX): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.MeshBuilder.CreateGround")
-  @js.native
-  def CreateGround(name: String, options: SubdivisionsX, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
+  inline def CreateGround(name: String, options: SubdivisionsX): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreateGround(name: String, options: SubdivisionsX, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
   
   /**
     * Creates a ground mesh from a height map
@@ -217,12 +191,8 @@ object MeshBuilder {
     * @see https://doc.babylonjs.com/babylon101/height_map
     * @see https://doc.babylonjs.com/how_to/set_shapes#ground-from-a-height-map
     */
-  @JSGlobal("BABYLON.MeshBuilder.CreateGroundFromHeightMap")
-  @js.native
-  def CreateGroundFromHeightMap(name: String, url: String, options: MaxHeight): typings.babylonjs.BABYLON.GroundMesh = js.native
-  @JSGlobal("BABYLON.MeshBuilder.CreateGroundFromHeightMap")
-  @js.native
-  def CreateGroundFromHeightMap(name: String, url: String, options: MaxHeight, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.GroundMesh = js.native
+  inline def CreateGroundFromHeightMap(name: String, url: String, options: MaxHeight): typings.babylonjs.BABYLON.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.GroundMesh]
+  inline def CreateGroundFromHeightMap(name: String, url: String, options: MaxHeight, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.GroundMesh]
   
   /**
     * Creates a sphere based upon an icosahedron with 20 triangular faces which can be subdivided
@@ -239,12 +209,8 @@ object MeshBuilder {
     * @returns the icosahedron mesh
     * @see https://doc.babylonjs.com/how_to/polyhedra_shapes#icosphere
     */
-  @JSGlobal("BABYLON.MeshBuilder.CreateIcoSphere")
-  @js.native
-  def CreateIcoSphere(name: String, options: BackUVsFlat): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.MeshBuilder.CreateIcoSphere")
-  @js.native
-  def CreateIcoSphere(name: String, options: BackUVsFlat, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
+  inline def CreateIcoSphere(name: String, options: BackUVsFlat): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateIcoSphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreateIcoSphere(name: String, options: BackUVsFlat, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateIcoSphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
   
   /**
     * Creates lathe mesh.
@@ -266,12 +232,8 @@ object MeshBuilder {
     * @returns the lathe mesh
     * @see https://doc.babylonjs.com/how_to/parametric_shapes#lathe
     */
-  @JSGlobal("BABYLON.MeshBuilder.CreateLathe")
-  @js.native
-  def CreateLathe(name: String, options: Closed): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.MeshBuilder.CreateLathe")
-  @js.native
-  def CreateLathe(name: String, options: Closed, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
+  inline def CreateLathe(name: String, options: Closed): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLathe")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreateLathe(name: String, options: Closed, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLathe")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
   
   /**
     * Creates a line system mesh. A line system is a pool of many lines gathered in a single mesh
@@ -290,9 +252,7 @@ object MeshBuilder {
     * @param scene defines the hosting scene
     * @returns a new line system mesh
     */
-  @JSGlobal("BABYLON.MeshBuilder.CreateLineSystem")
-  @js.native
-  def CreateLineSystem(name: String, options: UseVertexAlpha, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.LinesMesh = js.native
+  inline def CreateLineSystem(name: String, options: UseVertexAlpha, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLineSystem")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.LinesMesh]
   
   /**
     * Creates a line mesh
@@ -310,12 +270,8 @@ object MeshBuilder {
     * @param scene defines the hosting scene
     * @returns a new line mesh
     */
-  @JSGlobal("BABYLON.MeshBuilder.CreateLines")
-  @js.native
-  def CreateLines(name: String, options: ColorsInstance): typings.babylonjs.BABYLON.LinesMesh = js.native
-  @JSGlobal("BABYLON.MeshBuilder.CreateLines")
-  @js.native
-  def CreateLines(name: String, options: ColorsInstance, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.LinesMesh = js.native
+  inline def CreateLines(name: String, options: ColorsInstance): typings.babylonjs.BABYLON.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLines")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.LinesMesh]
+  inline def CreateLines(name: String, options: ColorsInstance, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLines")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.LinesMesh]
   
   /**
     * Creates a plane mesh
@@ -331,12 +287,8 @@ object MeshBuilder {
     * @returns the plane mesh
     * @see https://doc.babylonjs.com/how_to/set_shapes#plane
     */
-  @JSGlobal("BABYLON.MeshBuilder.CreatePlane")
-  @js.native
-  def CreatePlane(name: String, options: SourcePlane): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.MeshBuilder.CreatePlane")
-  @js.native
-  def CreatePlane(name: String, options: SourcePlane, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
+  inline def CreatePlane(name: String, options: SourcePlane): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePlane")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreatePlane(name: String, options: SourcePlane, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePlane")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
   
   /**
     * Creates a polygon mesh
@@ -352,20 +304,15 @@ object MeshBuilder {
     * @param earcutInjection can be used to inject your own earcut reference
     * @returns the polygon mesh
     */
-  @JSGlobal("BABYLON.MeshBuilder.CreatePolygon")
-  @js.native
-  def CreatePolygon(name: String, options: FaceColorsFaceUV): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.MeshBuilder.CreatePolygon")
-  @js.native
-  def CreatePolygon(
+  inline def CreatePolygon(name: String, options: FaceColorsFaceUV): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreatePolygon(name: String, options: FaceColorsFaceUV, scene: Unit, earcutInjection: js.Any): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreatePolygon(name: String, options: FaceColorsFaceUV, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreatePolygon(
     name: String,
     options: FaceColorsFaceUV,
-    scene: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]],
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
     earcutInjection: js.Any
-  ): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.MeshBuilder.CreatePolygon")
-  @js.native
-  def CreatePolygon(name: String, options: FaceColorsFaceUV, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
+  ): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
   
   /**
     * Creates a polyhedron mesh
@@ -386,12 +333,8 @@ object MeshBuilder {
     * @returns the polyhedron mesh
     * @see https://doc.babylonjs.com/how_to/polyhedra_shapes
     */
-  @JSGlobal("BABYLON.MeshBuilder.CreatePolyhedron")
-  @js.native
-  def CreatePolyhedron(name: String, options: SizeZ): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.MeshBuilder.CreatePolyhedron")
-  @js.native
-  def CreatePolyhedron(name: String, options: SizeZ, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
+  inline def CreatePolyhedron(name: String, options: SizeZ): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreatePolyhedron(name: String, options: SizeZ, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
   
   /**
     * Creates a ribbon mesh. The ribbon is a parametric shape.  It has no predefined shape. Its final shape will depend on the input parameters
@@ -416,12 +359,8 @@ object MeshBuilder {
     * @see https://doc.babylonjs.com/how_to/ribbon_tutorial
     * @see https://doc.babylonjs.com/how_to/parametric_shapes
     */
-  @JSGlobal("BABYLON.MeshBuilder.CreateRibbon")
-  @js.native
-  def CreateRibbon(name: String, options: Offset): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.MeshBuilder.CreateRibbon")
-  @js.native
-  def CreateRibbon(name: String, options: Offset, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
+  inline def CreateRibbon(name: String, options: Offset): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreateRibbon(name: String, options: Offset, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
   
   /**
     * Creates a sphere mesh
@@ -439,12 +378,8 @@ object MeshBuilder {
     * @returns the sphere mesh
     * @see https://doc.babylonjs.com/how_to/set_shapes#sphere
     */
-  @JSGlobal("BABYLON.MeshBuilder.CreateSphere")
-  @js.native
-  def CreateSphere(name: String, options: DiameterZ): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.MeshBuilder.CreateSphere")
-  @js.native
-  def CreateSphere(name: String, options: DiameterZ, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
+  inline def CreateSphere(name: String, options: DiameterZ): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateSphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreateSphere(name: String, options: DiameterZ, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateSphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
   
   /**
     * Creates a tiled box mesh
@@ -455,12 +390,8 @@ object MeshBuilder {
     * @param scene defines the hosting scene
     * @returns the tiled box mesh
     */
-  @JSGlobal("BABYLON.MeshBuilder.CreateTiledBox")
-  @js.native
-  def CreateTiledBox(name: String, options: DepthFaceColors): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.MeshBuilder.CreateTiledBox")
-  @js.native
-  def CreateTiledBox(name: String, options: DepthFaceColors, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
+  inline def CreateTiledBox(name: String, options: DepthFaceColors): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreateTiledBox(name: String, options: DepthFaceColors, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
   
   /**
     * Creates a tiled ground mesh
@@ -475,12 +406,8 @@ object MeshBuilder {
     * @returns the tiled ground mesh
     * @see https://doc.babylonjs.com/how_to/set_shapes#tiled-ground
     */
-  @JSGlobal("BABYLON.MeshBuilder.CreateTiledGround")
-  @js.native
-  def CreateTiledGround(name: String, options: Updatable): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.MeshBuilder.CreateTiledGround")
-  @js.native
-  def CreateTiledGround(name: String, options: Updatable, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
+  inline def CreateTiledGround(name: String, options: Updatable): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreateTiledGround(name: String, options: Updatable, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
   
   /**
     * Creates a tiled plane mesh
@@ -494,12 +421,8 @@ object MeshBuilder {
     * @returns the plane mesh
     * @see https://doc.babylonjs.com/how_to/set_shapes#plane
     */
-  @JSGlobal("BABYLON.MeshBuilder.CreateTiledPlane")
-  @js.native
-  def CreateTiledPlane(name: String, options: AlignVerticalBackUVs): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.MeshBuilder.CreateTiledPlane")
-  @js.native
-  def CreateTiledPlane(name: String, options: AlignVerticalBackUVs, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
+  inline def CreateTiledPlane(name: String, options: AlignVerticalBackUVs): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledPlane")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreateTiledPlane(name: String, options: AlignVerticalBackUVs, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledPlane")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
   
   /**
     * Creates a torus mesh
@@ -515,12 +438,8 @@ object MeshBuilder {
     * @returns the torus mesh
     * @see https://doc.babylonjs.com/how_to/set_shapes#torus
     */
-  @JSGlobal("BABYLON.MeshBuilder.CreateTorus")
-  @js.native
-  def CreateTorus(name: String, options: DiameterFrontUVs): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.MeshBuilder.CreateTorus")
-  @js.native
-  def CreateTorus(name: String, options: DiameterFrontUVs, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
+  inline def CreateTorus(name: String, options: DiameterFrontUVs): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreateTorus(name: String, options: DiameterFrontUVs, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
   
   /**
     * Creates a torus knot mesh
@@ -537,12 +456,8 @@ object MeshBuilder {
     * @returns the torus knot mesh
     * @see  https://doc.babylonjs.com/how_to/set_shapes#torus-knot
     */
-  @JSGlobal("BABYLON.MeshBuilder.CreateTorusKnot")
-  @js.native
-  def CreateTorusKnot(name: String, options: Tube): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.MeshBuilder.CreateTorusKnot")
-  @js.native
-  def CreateTorusKnot(name: String, options: Tube, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
+  inline def CreateTorusKnot(name: String, options: Tube): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreateTorusKnot(name: String, options: Tube, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
   
   /**
     * Creates a tube mesh.
@@ -566,12 +481,8 @@ object MeshBuilder {
     * @see https://doc.babylonjs.com/how_to/parametric_shapes
     * @see https://doc.babylonjs.com/how_to/set_shapes#tube
     */
-  @JSGlobal("BABYLON.MeshBuilder.CreateTube")
-  @js.native
-  def CreateTube(name: String, options: BackUVsCap): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.MeshBuilder.CreateTube")
-  @js.native
-  def CreateTube(name: String, options: BackUVsCap, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
+  inline def CreateTube(name: String, options: BackUVsCap): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTube")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreateTube(name: String, options: BackUVsCap, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTube")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
   
   /**
     * Creates an extruded polygon mesh, with depth in the Y direction.
@@ -583,20 +494,15 @@ object MeshBuilder {
     * @param earcutInjection can be used to inject your own earcut reference
     * @returns the polygon mesh
     */
-  @JSGlobal("BABYLON.MeshBuilder.ExtrudePolygon")
-  @js.native
-  def ExtrudePolygon(name: String, options: Wrap): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.MeshBuilder.ExtrudePolygon")
-  @js.native
-  def ExtrudePolygon(
+  inline def ExtrudePolygon(name: String, options: Wrap): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def ExtrudePolygon(name: String, options: Wrap, scene: Unit, earcutInjection: js.Any): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def ExtrudePolygon(name: String, options: Wrap, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def ExtrudePolygon(
     name: String,
     options: Wrap,
-    scene: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]],
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
     earcutInjection: js.Any
-  ): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.MeshBuilder.ExtrudePolygon")
-  @js.native
-  def ExtrudePolygon(name: String, options: Wrap, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
+  ): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
   
   /**
     * Creates an extruded shape mesh. The extrusion is a parametric shape. It has no predefined shape. Its final shape will depend on the input parameters.
@@ -618,12 +524,8 @@ object MeshBuilder {
     * @see https://doc.babylonjs.com/how_to/parametric_shapes
     * @see https://doc.babylonjs.com/how_to/parametric_shapes#extruded-shapes
     */
-  @JSGlobal("BABYLON.MeshBuilder.ExtrudeShape")
-  @js.native
-  def ExtrudeShape(name: String, options: Rotation): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.MeshBuilder.ExtrudeShape")
-  @js.native
-  def ExtrudeShape(name: String, options: Rotation, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
+  inline def ExtrudeShape(name: String, options: Rotation): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def ExtrudeShape(name: String, options: Rotation, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
   
   /**
     * Creates an custom extruded shape mesh.
@@ -651,10 +553,6 @@ object MeshBuilder {
     * @see https://doc.babylonjs.com/how_to/parametric_shapes
     * @see https://doc.babylonjs.com/how_to/parametric_shapes#extruded-shapes
     */
-  @JSGlobal("BABYLON.MeshBuilder.ExtrudeShapeCustom")
-  @js.native
-  def ExtrudeShapeCustom(name: String, options: RibbonCloseArray): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.MeshBuilder.ExtrudeShapeCustom")
-  @js.native
-  def ExtrudeShapeCustom(name: String, options: RibbonCloseArray, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
+  inline def ExtrudeShapeCustom(name: String, options: RibbonCloseArray): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShapeCustom")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def ExtrudeShapeCustom(name: String, options: RibbonCloseArray, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShapeCustom")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
 }

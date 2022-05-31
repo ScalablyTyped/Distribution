@@ -28,13 +28,14 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ojswipeactionsMod {
   
   @js.native
-  trait ojSwipeActions extends baseComponent[ojSwipeActionsSettableProperties] {
+  trait ojSwipeActions
+    extends StObject
+       with baseComponent[ojSwipeActionsSettableProperties] {
     
     @JSName("addEventListener")
     def addEventListener_ojAction(
@@ -42,7 +43,7 @@ object ojswipeactionsMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojswipeactionsMod.ojSwipeActions.ojAction, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -51,12 +52,15 @@ object ojswipeactionsMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojswipeactionsMod.ojSwipeActions.ojAction, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
     
-    var onOjAction: (js.Function1[/* event */ typings.oracleOraclejet.ojswipeactionsMod.ojSwipeActions.ojAction, _]) | Null = js.native
+    var onOjAction: (js.Function1[
+        /* event */ typings.oracleOraclejet.ojswipeactionsMod.ojSwipeActions.ojAction, 
+        js.Any
+      ]) | Null = js.native
     
     def setProperties(properties: ojSwipeActionsSettablePropertiesLenient): Unit = js.native
     
@@ -71,15 +75,15 @@ object ojswipeactionsMod {
     type ojAction = CustomEvent[StringDictionary[js.Any]]
   }
   
-  @js.native
-  trait ojSwipeActionsEventMap extends baseComponentEventMap[ojSwipeActionsSettableProperties] {
+  trait ojSwipeActionsEventMap
+    extends StObject
+       with baseComponentEventMap[ojSwipeActionsSettableProperties] {
     
-    var ojAction: typings.oracleOraclejet.ojswipeactionsMod.ojSwipeActions.ojAction = js.native
+    var ojAction: typings.oracleOraclejet.ojswipeactionsMod.ojSwipeActions.ojAction
   }
   object ojSwipeActionsEventMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: UIEvent,
       animationcancel: AnimationEvent,
       animationend: AnimationEvent,
@@ -179,59 +183,51 @@ object ojswipeactionsMod {
       __obj.asInstanceOf[ojSwipeActionsEventMap]
     }
     
-    @scala.inline
-    implicit class ojSwipeActionsEventMapMutableBuilder[Self <: ojSwipeActionsEventMap] (val x: Self) extends AnyVal {
+    extension [Self <: ojSwipeActionsEventMap](x: Self) {
       
-      @scala.inline
-      def setOjAction(value: typings.oracleOraclejet.ojswipeactionsMod.ojSwipeActions.ojAction): Self = StObject.set(x, "ojAction", value.asInstanceOf[js.Any])
+      inline def setOjAction(value: typings.oracleOraclejet.ojswipeactionsMod.ojSwipeActions.ojAction): Self = StObject.set(x, "ojAction", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait ojSwipeActionsSettableProperties extends baseComponentSettableProperties {
+  trait ojSwipeActionsSettableProperties
+    extends StObject
+       with baseComponentSettableProperties {
     
     @JSName("translations")
-    var translations_ojSwipeActionsSettableProperties: AriaHideActionsDescription = js.native
+    var translations_ojSwipeActionsSettableProperties: AriaHideActionsDescription
   }
   object ojSwipeActionsSettableProperties {
     
-    @scala.inline
-    def apply(translations: AriaHideActionsDescription): ojSwipeActionsSettableProperties = {
+    inline def apply(translations: AriaHideActionsDescription): ojSwipeActionsSettableProperties = {
       val __obj = js.Dynamic.literal(translations = translations.asInstanceOf[js.Any])
       __obj.asInstanceOf[ojSwipeActionsSettableProperties]
     }
     
-    @scala.inline
-    implicit class ojSwipeActionsSettablePropertiesMutableBuilder[Self <: ojSwipeActionsSettableProperties] (val x: Self) extends AnyVal {
+    extension [Self <: ojSwipeActionsSettableProperties](x: Self) {
       
-      @scala.inline
-      def setTranslations(value: AriaHideActionsDescription): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: AriaHideActionsDescription): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojswipeactions.ojSwipeActionsSettableProperties> */
-  @js.native
   trait ojSwipeActionsSettablePropertiesLenient
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var translations: js.UndefOr[AriaHideActionsDescription] = js.native
+    var translations: js.UndefOr[AriaHideActionsDescription] = js.undefined
   }
   object ojSwipeActionsSettablePropertiesLenient {
     
-    @scala.inline
-    def apply(): ojSwipeActionsSettablePropertiesLenient = {
+    inline def apply(): ojSwipeActionsSettablePropertiesLenient = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ojSwipeActionsSettablePropertiesLenient]
     }
     
-    @scala.inline
-    implicit class ojSwipeActionsSettablePropertiesLenientMutableBuilder[Self <: ojSwipeActionsSettablePropertiesLenient] (val x: Self) extends AnyVal {
+    extension [Self <: ojSwipeActionsSettablePropertiesLenient](x: Self) {
       
-      @scala.inline
-      def setTranslations(value: AriaHideActionsDescription): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: AriaHideActionsDescription): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+      inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
     }
   }
 }

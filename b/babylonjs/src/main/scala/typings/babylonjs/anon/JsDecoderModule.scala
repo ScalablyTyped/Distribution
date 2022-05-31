@@ -2,30 +2,27 @@ package typings.babylonjs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JsDecoderModule extends StObject {
   
-  var jsDecoderModule: String = js.native
+  var jsDecoderModule: String
   
-  var jsMSCTranscoder: Null = js.native
+  var jsMSCTranscoder: Null
   
-  var wasmMSCTranscoder: Null = js.native
+  var wasmMSCTranscoder: Null
   
-  var wasmUASTCToASTC: Null = js.native
+  var wasmUASTCToASTC: Null
   
-  var wasmUASTCToBC7: Null = js.native
+  var wasmUASTCToBC7: Null
   
-  var wasmUASTCToRGBA_SRGB: Null = js.native
+  var wasmUASTCToRGBA_SRGB: Null
   
-  var wasmUASTCToRGBA_UNORM: Null = js.native
+  var wasmUASTCToRGBA_UNORM: Null
 }
 object JsDecoderModule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     jsDecoderModule: String,
     jsMSCTranscoder: Null,
     wasmMSCTranscoder: Null,
@@ -38,28 +35,20 @@ object JsDecoderModule {
     __obj.asInstanceOf[JsDecoderModule]
   }
   
-  @scala.inline
-  implicit class JsDecoderModuleMutableBuilder[Self <: JsDecoderModule] (val x: Self) extends AnyVal {
+  extension [Self <: JsDecoderModule](x: Self) {
     
-    @scala.inline
-    def setJsDecoderModule(value: String): Self = StObject.set(x, "jsDecoderModule", value.asInstanceOf[js.Any])
+    inline def setJsDecoderModule(value: String): Self = StObject.set(x, "jsDecoderModule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsMSCTranscoder(value: Null): Self = StObject.set(x, "jsMSCTranscoder", value.asInstanceOf[js.Any])
+    inline def setJsMSCTranscoder(value: Null): Self = StObject.set(x, "jsMSCTranscoder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWasmMSCTranscoder(value: Null): Self = StObject.set(x, "wasmMSCTranscoder", value.asInstanceOf[js.Any])
+    inline def setWasmMSCTranscoder(value: Null): Self = StObject.set(x, "wasmMSCTranscoder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWasmUASTCToASTC(value: Null): Self = StObject.set(x, "wasmUASTCToASTC", value.asInstanceOf[js.Any])
+    inline def setWasmUASTCToASTC(value: Null): Self = StObject.set(x, "wasmUASTCToASTC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWasmUASTCToBC7(value: Null): Self = StObject.set(x, "wasmUASTCToBC7", value.asInstanceOf[js.Any])
+    inline def setWasmUASTCToBC7(value: Null): Self = StObject.set(x, "wasmUASTCToBC7", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWasmUASTCToRGBA_SRGB(value: Null): Self = StObject.set(x, "wasmUASTCToRGBA_SRGB", value.asInstanceOf[js.Any])
+    inline def setWasmUASTCToRGBA_SRGB(value: Null): Self = StObject.set(x, "wasmUASTCToRGBA_SRGB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWasmUASTCToRGBA_UNORM(value: Null): Self = StObject.set(x, "wasmUASTCToRGBA_UNORM", value.asInstanceOf[js.Any])
+    inline def setWasmUASTCToRGBA_UNORM(value: Null): Self = StObject.set(x, "wasmUASTCToRGBA_UNORM", value.asInstanceOf[js.Any])
   }
 }

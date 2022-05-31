@@ -9,7 +9,6 @@ import typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager
 import typings.babylonjs.webXRTypesMod.WebXRTrackingState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webXRCameraMod {
@@ -25,34 +24,34 @@ object webXRCameraMod {
       */
     def this(name: String, scene: Scene, _xrSessionManager: WebXRSessionManager) = this()
     
-    var _firstFrame: js.Any = js.native
+    /* private */ var _firstFrame: js.Any = js.native
     
-    var _referenceQuaternion: js.Any = js.native
+    /* private */ var _referenceQuaternion: js.Any = js.native
     
-    var _referencedPosition: js.Any = js.native
+    /* private */ var _referencedPosition: js.Any = js.native
     
-    var _rotate180: js.Any = js.native
+    /* private */ var _rotate180: js.Any = js.native
     
-    var _setTrackingState: js.Any = js.native
+    /* private */ var _setTrackingState: js.Any = js.native
     
-    var _trackingState: js.Any = js.native
+    /* private */ var _trackingState: js.Any = js.native
     
     /** @hidden */
     def _updateForDualEyeDebugging(): Unit = js.native
     
-    var _updateFromXRSession: js.Any = js.native
+    /* private */ var _updateFromXRSession: js.Any = js.native
     
-    var _updateNumberOfRigCameras: js.Any = js.native
+    /* private */ var _updateNumberOfRigCameras: js.Any = js.native
     
-    var _updateReferenceSpace: js.Any = js.native
+    /* private */ var _updateReferenceSpace: js.Any = js.native
     
-    var _updateReferenceSpaceOffset: js.Any = js.native
+    /* private */ var _updateReferenceSpaceOffset: js.Any = js.native
     
-    var _xrInvPositionCache: js.Any = js.native
+    /* private */ var _xrInvPositionCache: js.Any = js.native
     
-    var _xrInvQuaternionCache: js.Any = js.native
+    /* private */ var _xrInvQuaternionCache: js.Any = js.native
     
-    var _xrSessionManager: js.Any = js.native
+    /* private */ var _xrSessionManager: js.Any = js.native
     
     /**
       * Should position compensation execute on first frame.
@@ -88,7 +87,7 @@ object webXRCameraMod {
       * @param resetToBaseReferenceSpace should XR reset to the base reference space
       */
     def setTransformationFromNonVRCamera(): Unit = js.native
-    def setTransformationFromNonVRCamera(otherCamera: js.UndefOr[scala.Nothing], resetToBaseReferenceSpace: Boolean): Unit = js.native
+    def setTransformationFromNonVRCamera(otherCamera: Unit, resetToBaseReferenceSpace: Boolean): Unit = js.native
     def setTransformationFromNonVRCamera(otherCamera: Camera): Unit = js.native
     def setTransformationFromNonVRCamera(otherCamera: Camera, resetToBaseReferenceSpace: Boolean): Unit = js.native
     

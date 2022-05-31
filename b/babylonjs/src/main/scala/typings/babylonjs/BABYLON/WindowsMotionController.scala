@@ -3,11 +3,12 @@ package typings.babylonjs.BABYLON
 import typings.babylonjs.anon.AxisMeshNames
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WindowsMotionController extends WebVRController {
+trait WindowsMotionController
+  extends StObject
+     with WebVRController {
   
   /**
     * Moves the axis on the controller mesh based on its current state
@@ -24,16 +25,16 @@ trait WindowsMotionController extends WebVRController {
     */
   /* protected */ def _lerpButtonTransform(buttonName: String, buttonValue: Double): Unit = js.native
   
-  var _loadedMeshInfo: js.Any = js.native
+  /* private */ var _loadedMeshInfo: js.Any = js.native
   
-  val _mapping: AxisMeshNames = js.native
+  /* protected */ val _mapping: AxisMeshNames = js.native
   
   /* protected */ def _updateTrackpad(): Unit = js.native
   
-  var createMeshInfo: js.Any = js.native
+  /* private */ var createMeshInfo: js.Any = js.native
   
-  def initControllerMesh(scene: Scene, meshLoaded: js.UndefOr[scala.Nothing], forceDefault: Boolean): Unit = js.native
   def initControllerMesh(scene: Scene, meshLoaded: js.Function1[/* mesh */ AbstractMesh, Unit], forceDefault: Boolean): Unit = js.native
+  def initControllerMesh(scene: Scene, meshLoaded: Unit, forceDefault: Boolean): Unit = js.native
   
   /**
     * Fired when the grip button on this controller is modified
@@ -83,7 +84,7 @@ trait WindowsMotionController extends WebVRController {
     * @param meshes list of meshes that make up the controller model to process
     * @return structured view of the given meshes, with mapping of buttons and axes to meshes that can be transformed.
     */
-  var processModel: js.Any = js.native
+  /* private */ var processModel: js.Any = js.native
   
   /**
     * The current x and y values of this controller's trackpad

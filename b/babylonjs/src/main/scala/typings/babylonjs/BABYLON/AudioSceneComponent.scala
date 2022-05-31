@@ -2,25 +2,26 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AudioSceneComponent extends ISceneSerializableComponent {
+trait AudioSceneComponent
+  extends StObject
+     with ISceneSerializableComponent {
   
-  var _afterRender: js.Any = js.native
+  /* private */ var _afterRender: js.Any = js.native
   
-  var _audioEnabled: js.Any = js.native
+  /* private */ var _audioEnabled: js.Any = js.native
   
-  var _audioListenerPositionProvider: js.Any = js.native
+  /* private */ var _audioListenerPositionProvider: js.Any = js.native
   
-  var _cachedCameraDirection: js.Any = js.native
+  /* private */ var _cachedCameraDirection: js.Any = js.native
   
-  var _cachedCameraPosition: js.Any = js.native
+  /* private */ var _cachedCameraPosition: js.Any = js.native
   
-  var _headphone: js.Any = js.native
+  /* private */ var _headphone: js.Any = js.native
   
-  var _lastCheck: js.Any = js.native
+  /* private */ var _lastCheck: js.Any = js.native
   
   /**
     * Gets whether audio is enabled or not.

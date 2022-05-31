@@ -2,34 +2,35 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebVRController extends PoseEnabledController {
+trait WebVRController
+  extends StObject
+     with PoseEnabledController {
   
   /**
     * Array of button availible on the controller
     */
-  var _buttons: js.Array[MutableGamepadButton] = js.native
+  /* protected */ var _buttons: js.Array[MutableGamepadButton] = js.native
   
-  var _changes: js.Any = js.native
+  /* private */ var _changes: js.Any = js.native
   
-  var _checkChanges: js.Any = js.native
+  /* private */ var _checkChanges: js.Any = js.native
   
   /**
     * Internal, the default controller model for the controller
     */
-  var _defaultModel: Nullable[AbstractMesh] = js.native
+  /* protected */ var _defaultModel: Nullable[AbstractMesh] = js.native
   
   /**
     * Function to be called when a button is modified
     */
   /* protected */ def _handleButtonChange(buttonIdx: Double, value: ExtendedGamepadButton, changes: GamepadButtonChanges): Unit = js.native
   
-  var _onButtonStateChange: js.Any = js.native
+  /* private */ var _onButtonStateChange: js.Any = js.native
   
-  var _setButtonValue: js.Any = js.native
+  /* private */ var _setButtonValue: js.Any = js.native
   
   /**
     * The default controller model for the controller

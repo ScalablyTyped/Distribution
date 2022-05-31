@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact.mod
 
+import typings.uifabricUtilities.selectionSelectionMod.ISelectionOptions
 import typings.uifabricUtilities.selectionSelectionMod.ISelectionOptionsWithRequiredGetKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -27,7 +28,5 @@ class Selection[TItem] protected ()
     * object with a `getKey` implementation. Providing options is optional otherwise.
     * (At most one `options` object is accepted.)
     */
-  def this(/* import warning: parser.TsParser#functionParam Dropping repeated marker of param options because its type TItem extends IObjectWithKey ? [] | [ISelectionOptions<TItem>] : [ISelectionOptionsWithRequiredGetKey<TItem>] is not an array type */ options: js.Array[
-        js.Any | typings.uifabricUtilities.selectionSelectionMod.ISelectionOptions[TItem] | ISelectionOptionsWithRequiredGetKey[TItem]
-      ]) = this()
+  def this(/* import warning: parser.TsParser#functionParam Dropping repeated marker of param options because its type TItem extends IObjectWithKey ? [] | [ISelectionOptions<TItem>] : [ISelectionOptionsWithRequiredGetKey<TItem>] is not an array type */ options: js.Array[js.Any | ISelectionOptions[TItem] | ISelectionOptionsWithRequiredGetKey[TItem]]) = this()
 }

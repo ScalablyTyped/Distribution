@@ -2,23 +2,24 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bone extends Node {
+trait Bone
+  extends StObject
+     with Node {
   
-  var _absoluteTransform: js.Any = js.native
+  /* private */ var _absoluteTransform: js.Any = js.native
   
-  var _baseMatrix: js.Any = js.native
+  /* private */ var _baseMatrix: js.Any = js.native
   
-  var _bindPose: js.Any = js.native
+  /* private */ var _bindPose: js.Any = js.native
   
-  var _compose: js.Any = js.native
+  /* private */ var _compose: js.Any = js.native
   
-  var _decompose: js.Any = js.native
+  /* private */ var _decompose: js.Any = js.native
   
-  var _getNegativeRotationToRef: js.Any = js.native
+  /* private */ var _getNegativeRotationToRef: js.Any = js.native
   
   /**
     * @hidden Internal only
@@ -27,53 +28,53 @@ trait Bone extends Node {
     */
   var _index: Nullable[Double] = js.native
   
-  var _invertedAbsoluteTransform: js.Any = js.native
+  /* private */ var _invertedAbsoluteTransform: js.Any = js.native
   
   /** @hidden */
   var _linkedTransformNode: Nullable[TransformNode] = js.native
   
-  var _localMatrix: js.Any = js.native
+  /* private */ var _localMatrix: js.Any = js.native
   
-  var _localPosition: js.Any = js.native
+  /* private */ var _localPosition: js.Any = js.native
   
-  var _localRotation: js.Any = js.native
+  /* private */ var _localRotation: js.Any = js.native
   
-  var _localScaling: js.Any = js.native
+  /* private */ var _localScaling: js.Any = js.native
   
   /** @hidden */
   def _markAsDirtyAndCompose(): Unit = js.native
   
-  var _markAsDirtyAndDecompose: js.Any = js.native
+  /* private */ var _markAsDirtyAndDecompose: js.Any = js.native
   
   /** @hidden */
   def _matrix: Matrix = js.native
   /** @hidden */
   def _matrix_=(value: Matrix): Unit = js.native
   
-  var _needToCompose: js.Any = js.native
+  /* private */ var _needToCompose: js.Any = js.native
   
-  var _needToDecompose: js.Any = js.native
+  /* private */ var _needToDecompose: js.Any = js.native
   
-  var _parent: js.Any = js.native
+  /* private */ var _parent: js.Any = js.native
   
-  var _restPose: js.Any = js.native
+  /* private */ var _restPose: js.Any = js.native
   
-  var _rotateWithMatrix: js.Any = js.native
+  /* private */ var _rotateWithMatrix: js.Any = js.native
   
-  var _scalingDeterminant: js.Any = js.native
+  /* private */ var _scalingDeterminant: js.Any = js.native
   
-  var _skeleton: js.Any = js.native
+  /* private */ var _skeleton: js.Any = js.native
   
   /** @hidden */
   def _updateDifferenceMatrix(): Unit = js.native
-  def _updateDifferenceMatrix(rootMatrix: js.UndefOr[scala.Nothing], updateChildren: Boolean): Unit = js.native
+  def _updateDifferenceMatrix(rootMatrix: Unit, updateChildren: Boolean): Unit = js.native
   def _updateDifferenceMatrix(rootMatrix: Matrix): Unit = js.native
   def _updateDifferenceMatrix(rootMatrix: Matrix, updateChildren: Boolean): Unit = js.native
   
   /** @hidden */
   var _waitingTransformNodeId: Nullable[String] = js.native
   
-  var _worldTransform: js.Any = js.native
+  /* private */ var _worldTransform: js.Any = js.native
   
   /**
     * Gets the list of child bones
@@ -119,8 +120,8 @@ trait Bone extends Node {
   def getAbsolutePositionFromLocal(position: Vector3): Vector3 = js.native
   def getAbsolutePositionFromLocal(position: Vector3, mesh: Nullable[AbstractMesh]): Vector3 = js.native
   
-  def getAbsolutePositionFromLocalToRef(position: Vector3, mesh: js.UndefOr[scala.Nothing], result: Vector3): Unit = js.native
   def getAbsolutePositionFromLocalToRef(position: Vector3, mesh: Null, result: Vector3): Unit = js.native
+  def getAbsolutePositionFromLocalToRef(position: Vector3, mesh: Unit, result: Vector3): Unit = js.native
   /**
     * Get the world position of a point that is in the local space of the bone and copy it to the result param
     * @param position The local position
@@ -163,8 +164,8 @@ trait Bone extends Node {
   def getDirection(localAxis: Vector3): Vector3 = js.native
   def getDirection(localAxis: Vector3, mesh: Nullable[AbstractMesh]): Vector3 = js.native
   
-  def getDirectionToRef(localAxis: Vector3, mesh: js.UndefOr[scala.Nothing], result: Vector3): Unit = js.native
   def getDirectionToRef(localAxis: Vector3, mesh: Null, result: Vector3): Unit = js.native
+  def getDirectionToRef(localAxis: Vector3, mesh: Unit, result: Vector3): Unit = js.native
   /**
     * Copy the world direction to a vector3 from an axis that is in the local space of the bone
     * @param localAxis The local direction that is used to compute the world direction
@@ -201,8 +202,8 @@ trait Bone extends Node {
   def getLocalPositionFromAbsolute(position: Vector3): Vector3 = js.native
   def getLocalPositionFromAbsolute(position: Vector3, mesh: Nullable[AbstractMesh]): Vector3 = js.native
   
-  def getLocalPositionFromAbsoluteToRef(position: Vector3, mesh: js.UndefOr[scala.Nothing], result: Vector3): Unit = js.native
   def getLocalPositionFromAbsoluteToRef(position: Vector3, mesh: Null, result: Vector3): Unit = js.native
+  def getLocalPositionFromAbsoluteToRef(position: Vector3, mesh: Unit, result: Vector3): Unit = js.native
   /**
     * Get the local position of a point that is in world space and copy it to the result param
     * @param position The world position
@@ -224,11 +225,11 @@ trait Bone extends Node {
     * @returns The position of the bone
     */
   def getPosition(): Vector3 = js.native
-  def getPosition(space: js.UndefOr[scala.Nothing], mesh: Nullable[AbstractMesh]): Vector3 = js.native
+  def getPosition(space: Unit, mesh: Nullable[AbstractMesh]): Vector3 = js.native
   def getPosition(space: Space): Vector3 = js.native
   def getPosition(space: Space, mesh: Nullable[AbstractMesh]): Vector3 = js.native
   
-  def getPositionToRef(space: js.UndefOr[scala.Nothing], mesh: Nullable[AbstractMesh], result: Vector3): Unit = js.native
+  def getPositionToRef(space: Unit, mesh: Nullable[AbstractMesh], result: Vector3): Unit = js.native
   /**
     * Copy the position of the bone to a vector3 in local or world space
     * @param space The space that the returned position is in
@@ -250,11 +251,11 @@ trait Bone extends Node {
     * @returns The euler rotation
     */
   def getRotation(): Vector3 = js.native
-  def getRotation(space: js.UndefOr[scala.Nothing], mesh: Nullable[AbstractMesh]): Vector3 = js.native
+  def getRotation(space: Unit, mesh: Nullable[AbstractMesh]): Vector3 = js.native
   def getRotation(space: Space): Vector3 = js.native
   def getRotation(space: Space, mesh: Nullable[AbstractMesh]): Vector3 = js.native
   
-  def getRotationMatrix(space: js.UndefOr[scala.Nothing], mesh: AbstractMesh): Matrix = js.native
+  def getRotationMatrix(space: Unit, mesh: AbstractMesh): Matrix = js.native
   /**
     * Get the rotation matrix of the bone in local or world space
     * @param space The space that the rotation should be in
@@ -263,7 +264,7 @@ trait Bone extends Node {
     */
   def getRotationMatrix(space: Space, mesh: AbstractMesh): Matrix = js.native
   
-  def getRotationMatrixToRef(space: js.UndefOr[scala.Nothing], mesh: AbstractMesh, result: Matrix): Unit = js.native
+  def getRotationMatrixToRef(space: Unit, mesh: AbstractMesh, result: Matrix): Unit = js.native
   /**
     * Copy the rotation matrix of the bone to a matrix.  The rotation can be in either local or world space
     * @param space The space that the rotation should be in
@@ -279,15 +280,15 @@ trait Bone extends Node {
     * @returns The quaternion rotation
     */
   def getRotationQuaternion(): Quaternion = js.native
-  def getRotationQuaternion(space: js.UndefOr[scala.Nothing], mesh: Nullable[AbstractMesh]): Quaternion = js.native
+  def getRotationQuaternion(space: Unit, mesh: Nullable[AbstractMesh]): Quaternion = js.native
   def getRotationQuaternion(space: Space): Quaternion = js.native
   def getRotationQuaternion(space: Space, mesh: Nullable[AbstractMesh]): Quaternion = js.native
   
-  def getRotationQuaternionToRef(space: js.UndefOr[scala.Nothing], mesh: js.UndefOr[scala.Nothing], result: Quaternion): Unit = js.native
-  def getRotationQuaternionToRef(space: js.UndefOr[scala.Nothing], mesh: Null, result: Quaternion): Unit = js.native
-  def getRotationQuaternionToRef(space: js.UndefOr[scala.Nothing], mesh: AbstractMesh, result: Quaternion): Unit = js.native
-  def getRotationQuaternionToRef(space: Space, mesh: js.UndefOr[scala.Nothing], result: Quaternion): Unit = js.native
+  def getRotationQuaternionToRef(space: Unit, mesh: Null, result: Quaternion): Unit = js.native
+  def getRotationQuaternionToRef(space: Unit, mesh: Unit, result: Quaternion): Unit = js.native
+  def getRotationQuaternionToRef(space: Unit, mesh: AbstractMesh, result: Quaternion): Unit = js.native
   def getRotationQuaternionToRef(space: Space, mesh: Null, result: Quaternion): Unit = js.native
+  def getRotationQuaternionToRef(space: Space, mesh: Unit, result: Quaternion): Unit = js.native
   /**
     * Copy the quaternion rotation of the bone to a quaternion.  The rotation can be in either local or world space
     * @param space The space that the rotation should be in
@@ -296,11 +297,11 @@ trait Bone extends Node {
     */
   def getRotationQuaternionToRef(space: Space, mesh: AbstractMesh, result: Quaternion): Unit = js.native
   
-  def getRotationToRef(space: js.UndefOr[scala.Nothing], mesh: js.UndefOr[scala.Nothing], result: Vector3): Unit = js.native
-  def getRotationToRef(space: js.UndefOr[scala.Nothing], mesh: Null, result: Vector3): Unit = js.native
-  def getRotationToRef(space: js.UndefOr[scala.Nothing], mesh: AbstractMesh, result: Vector3): Unit = js.native
-  def getRotationToRef(space: Space, mesh: js.UndefOr[scala.Nothing], result: Vector3): Unit = js.native
+  def getRotationToRef(space: Unit, mesh: Null, result: Vector3): Unit = js.native
+  def getRotationToRef(space: Unit, mesh: Unit, result: Vector3): Unit = js.native
+  def getRotationToRef(space: Unit, mesh: AbstractMesh, result: Vector3): Unit = js.native
   def getRotationToRef(space: Space, mesh: Null, result: Vector3): Unit = js.native
+  def getRotationToRef(space: Space, mesh: Unit, result: Vector3): Unit = js.native
   /**
     * Copy the euler rotation of the bone to a vector3.  The rotation can be in either local or world space
     * @param space The space that the rotation should be in
@@ -367,7 +368,7 @@ trait Bone extends Node {
     * @param mesh The mesh that this bone is attached to. This is only used in world space
     */
   def rotate(axis: Vector3, amount: Double): Unit = js.native
-  def rotate(axis: Vector3, amount: Double, space: js.UndefOr[scala.Nothing], mesh: AbstractMesh): Unit = js.native
+  def rotate(axis: Vector3, amount: Double, space: Unit, mesh: AbstractMesh): Unit = js.native
   def rotate(axis: Vector3, amount: Double, space: Space): Unit = js.native
   def rotate(axis: Vector3, amount: Double, space: Space, mesh: AbstractMesh): Unit = js.native
   
@@ -410,7 +411,7 @@ trait Bone extends Node {
     * @param mesh The mesh that this bone is attached to.  This is only used in world space
     */
   def setAxisAngle(axis: Vector3, angle: Double): Unit = js.native
-  def setAxisAngle(axis: Vector3, angle: Double, space: js.UndefOr[scala.Nothing], mesh: AbstractMesh): Unit = js.native
+  def setAxisAngle(axis: Vector3, angle: Double, space: Unit, mesh: AbstractMesh): Unit = js.native
   def setAxisAngle(axis: Vector3, angle: Double, space: Space): Unit = js.native
   def setAxisAngle(axis: Vector3, angle: Double, space: Space, mesh: AbstractMesh): Unit = js.native
   
@@ -440,7 +441,7 @@ trait Bone extends Node {
     * @param mesh The mesh that this bone is attached to.  This is only used in world space
     */
   def setPosition(position: Vector3): Unit = js.native
-  def setPosition(position: Vector3, space: js.UndefOr[scala.Nothing], mesh: AbstractMesh): Unit = js.native
+  def setPosition(position: Vector3, space: Unit, mesh: AbstractMesh): Unit = js.native
   def setPosition(position: Vector3, space: Space): Unit = js.native
   def setPosition(position: Vector3, space: Space, mesh: AbstractMesh): Unit = js.native
   
@@ -457,7 +458,7 @@ trait Bone extends Node {
     * @param mesh The mesh that this bone is attached to. This is only used in world space
     */
   def setRotation(rotation: Vector3): Unit = js.native
-  def setRotation(rotation: Vector3, space: js.UndefOr[scala.Nothing], mesh: AbstractMesh): Unit = js.native
+  def setRotation(rotation: Vector3, space: Unit, mesh: AbstractMesh): Unit = js.native
   def setRotation(rotation: Vector3, space: Space): Unit = js.native
   def setRotation(rotation: Vector3, space: Space, mesh: AbstractMesh): Unit = js.native
   
@@ -468,7 +469,7 @@ trait Bone extends Node {
     * @param mesh The mesh that this bone is attached to. This is only used in world space
     */
   def setRotationMatrix(rotMat: Matrix): Unit = js.native
-  def setRotationMatrix(rotMat: Matrix, space: js.UndefOr[scala.Nothing], mesh: AbstractMesh): Unit = js.native
+  def setRotationMatrix(rotMat: Matrix, space: Unit, mesh: AbstractMesh): Unit = js.native
   def setRotationMatrix(rotMat: Matrix, space: Space): Unit = js.native
   def setRotationMatrix(rotMat: Matrix, space: Space, mesh: AbstractMesh): Unit = js.native
   
@@ -479,7 +480,7 @@ trait Bone extends Node {
     * @param mesh The mesh that this bone is attached to. This is only used in world space
     */
   def setRotationQuaternion(quat: Quaternion): Unit = js.native
-  def setRotationQuaternion(quat: Quaternion, space: js.UndefOr[scala.Nothing], mesh: AbstractMesh): Unit = js.native
+  def setRotationQuaternion(quat: Quaternion, space: Unit, mesh: AbstractMesh): Unit = js.native
   def setRotationQuaternion(quat: Quaternion, space: Space): Unit = js.native
   def setRotationQuaternion(quat: Quaternion, space: Space, mesh: AbstractMesh): Unit = js.native
   
@@ -498,7 +499,7 @@ trait Bone extends Node {
     * @param mesh The mesh that this bone is attached to.  This is only used in world space
     */
   def setYawPitchRoll(yaw: Double, pitch: Double, roll: Double): Unit = js.native
-  def setYawPitchRoll(yaw: Double, pitch: Double, roll: Double, space: js.UndefOr[scala.Nothing], mesh: AbstractMesh): Unit = js.native
+  def setYawPitchRoll(yaw: Double, pitch: Double, roll: Double, space: Unit, mesh: AbstractMesh): Unit = js.native
   def setYawPitchRoll(yaw: Double, pitch: Double, roll: Double, space: Space): Unit = js.native
   def setYawPitchRoll(yaw: Double, pitch: Double, roll: Double, space: Space, mesh: AbstractMesh): Unit = js.native
   
@@ -509,7 +510,7 @@ trait Bone extends Node {
     * @param mesh The mesh that this bone is attached to. This is only used in world space
     */
   def translate(vec: Vector3): Unit = js.native
-  def translate(vec: Vector3, space: js.UndefOr[scala.Nothing], mesh: AbstractMesh): Unit = js.native
+  def translate(vec: Vector3, space: Unit, mesh: AbstractMesh): Unit = js.native
   def translate(vec: Vector3, space: Space): Unit = js.native
   def translate(vec: Vector3, space: Space, mesh: AbstractMesh): Unit = js.native
   
@@ -520,7 +521,7 @@ trait Bone extends Node {
     * @param updateLocalMatrix defines if the local matrix should be updated
     */
   def updateMatrix(matrix: Matrix): Unit = js.native
-  def updateMatrix(matrix: Matrix, updateDifferenceMatrix: js.UndefOr[scala.Nothing], updateLocalMatrix: Boolean): Unit = js.native
   def updateMatrix(matrix: Matrix, updateDifferenceMatrix: Boolean): Unit = js.native
   def updateMatrix(matrix: Matrix, updateDifferenceMatrix: Boolean, updateLocalMatrix: Boolean): Unit = js.native
+  def updateMatrix(matrix: Matrix, updateDifferenceMatrix: Unit, updateLocalMatrix: Boolean): Unit = js.native
 }

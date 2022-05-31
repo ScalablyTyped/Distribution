@@ -50,76 +50,75 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ojSparkChartEventMap[K, D] extends dvtBaseComponentEventMap[ojSparkChartSettableProperties[K, D]] {
+trait ojSparkChartEventMap[K, D]
+  extends StObject
+     with dvtBaseComponentEventMap[ojSparkChartSettableProperties[K, D]] {
   
-  var animationDurationChanged: JetElementCustomEvent[Double | Null] = js.native
+  var animationDurationChanged: JetElementCustomEvent[Double | Null]
   
-  var animationOnDataChangeChanged: JetElementCustomEvent[auto | none] = js.native
+  var animationOnDataChangeChanged: JetElementCustomEvent[auto | none]
   
-  var animationOnDisplayChanged: JetElementCustomEvent[auto | none] = js.native
+  var animationOnDisplayChanged: JetElementCustomEvent[auto | none]
   
-  var areaColorChanged: JetElementCustomEvent[String] = js.native
+  var areaColorChanged: JetElementCustomEvent[String]
   
-  var areaSvgClassNameChanged: JetElementCustomEvent[String] = js.native
+  var areaSvgClassNameChanged: JetElementCustomEvent[String]
   
   var areaSvgStyleChanged: JetElementCustomEvent[
     /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojchart.ojSparkChart<K, D>['areaSvgStyle'] */ js.Any
-  ] = js.native
+  ]
   
-  var asChanged: JetElementCustomEvent[String] = js.native
+  var asChanged: JetElementCustomEvent[String]
   
-  var barGapRatioChanged: JetElementCustomEvent[Double] = js.native
+  var barGapRatioChanged: JetElementCustomEvent[Double]
   
-  var baselineScalingChanged: JetElementCustomEvent[zero | min] = js.native
+  var baselineScalingChanged: JetElementCustomEvent[zero | min]
   
-  var colorChanged: JetElementCustomEvent[String] = js.native
+  var colorChanged: JetElementCustomEvent[String]
   
-  var dataChanged: JetElementCustomEvent[(DataProvider[K, D]) | Null] = js.native
+  var dataChanged: JetElementCustomEvent[(DataProvider[K, D]) | Null]
   
-  var firstColorChanged: JetElementCustomEvent[String] = js.native
+  var firstColorChanged: JetElementCustomEvent[String]
   
-  var highColorChanged: JetElementCustomEvent[String] = js.native
+  var highColorChanged: JetElementCustomEvent[String]
   
-  var lastColorChanged: JetElementCustomEvent[String] = js.native
+  var lastColorChanged: JetElementCustomEvent[String]
   
-  var lineStyleChanged: JetElementCustomEvent[dotted | dashed | solid] = js.native
+  var lineStyleChanged: JetElementCustomEvent[dotted | dashed | solid]
   
   var lineTypeChanged: JetElementCustomEvent[
     curved | stepped | centeredStepped | segmented | centeredSegmented | none | straight
-  ] = js.native
+  ]
   
-  var lineWidthChanged: JetElementCustomEvent[Double] = js.native
+  var lineWidthChanged: JetElementCustomEvent[Double]
   
-  var lowColorChanged: JetElementCustomEvent[String] = js.native
+  var lowColorChanged: JetElementCustomEvent[String]
   
   var markerShapeChanged: JetElementCustomEvent[
     auto | circle | diamond | human | plus | square | star | triangleDown | triangleUp | String
-  ] = js.native
+  ]
   
-  var markerSizeChanged: JetElementCustomEvent[Double] = js.native
+  var markerSizeChanged: JetElementCustomEvent[Double]
   
-  var referenceObjectsChanged: JetElementCustomEvent[js.Array[ReferenceObject]] = js.native
+  var referenceObjectsChanged: JetElementCustomEvent[js.Array[ReferenceObject]]
   
-  var svgClassNameChanged: JetElementCustomEvent[String] = js.native
+  var svgClassNameChanged: JetElementCustomEvent[String]
   
   var svgStyleChanged: JetElementCustomEvent[
     /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojchart.ojSparkChart<K, D>['svgStyle'] */ js.Any
-  ] = js.native
+  ]
   
-  var tooltipChanged: JetElementCustomEvent[`0`] = js.native
+  var tooltipChanged: JetElementCustomEvent[`0`]
   
-  var typeChanged: JetElementCustomEvent[area | lineWithArea | bar | line] = js.native
+  var typeChanged: JetElementCustomEvent[area | lineWithArea | bar | line]
   
-  var visualEffectsChanged: JetElementCustomEvent[none | auto] = js.native
+  var visualEffectsChanged: JetElementCustomEvent[none | auto]
 }
 object ojSparkChartEventMap {
   
-  @scala.inline
-  def apply[K, D](
+  inline def apply[K, D](
     abort: UIEvent,
     animationDurationChanged: JetElementCustomEvent[Double | Null],
     animationOnDataChangeChanged: JetElementCustomEvent[auto | none],
@@ -253,101 +252,74 @@ object ojSparkChartEventMap {
     __obj.asInstanceOf[ojSparkChartEventMap[K, D]]
   }
   
-  @scala.inline
-  implicit class ojSparkChartEventMapMutableBuilder[Self <: ojSparkChartEventMap[_, _], K, D] (val x: Self with (ojSparkChartEventMap[K, D])) extends AnyVal {
+  extension [Self <: ojSparkChartEventMap[?, ?], K, D](x: Self & (ojSparkChartEventMap[K, D])) {
     
-    @scala.inline
-    def setAnimationDurationChanged(value: JetElementCustomEvent[Double | Null]): Self = StObject.set(x, "animationDurationChanged", value.asInstanceOf[js.Any])
+    inline def setAnimationDurationChanged(value: JetElementCustomEvent[Double | Null]): Self = StObject.set(x, "animationDurationChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationOnDataChangeChanged(value: JetElementCustomEvent[auto | none]): Self = StObject.set(x, "animationOnDataChangeChanged", value.asInstanceOf[js.Any])
+    inline def setAnimationOnDataChangeChanged(value: JetElementCustomEvent[auto | none]): Self = StObject.set(x, "animationOnDataChangeChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationOnDisplayChanged(value: JetElementCustomEvent[auto | none]): Self = StObject.set(x, "animationOnDisplayChanged", value.asInstanceOf[js.Any])
+    inline def setAnimationOnDisplayChanged(value: JetElementCustomEvent[auto | none]): Self = StObject.set(x, "animationOnDisplayChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAreaColorChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "areaColorChanged", value.asInstanceOf[js.Any])
+    inline def setAreaColorChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "areaColorChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAreaSvgClassNameChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "areaSvgClassNameChanged", value.asInstanceOf[js.Any])
+    inline def setAreaSvgClassNameChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "areaSvgClassNameChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAreaSvgStyleChanged(
+    inline def setAreaSvgStyleChanged(
       value: JetElementCustomEvent[
           /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojchart.ojSparkChart<K, D>['areaSvgStyle'] */ js.Any
         ]
     ): Self = StObject.set(x, "areaSvgStyleChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "asChanged", value.asInstanceOf[js.Any])
+    inline def setAsChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "asChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarGapRatioChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "barGapRatioChanged", value.asInstanceOf[js.Any])
+    inline def setBarGapRatioChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "barGapRatioChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaselineScalingChanged(value: JetElementCustomEvent[zero | min]): Self = StObject.set(x, "baselineScalingChanged", value.asInstanceOf[js.Any])
+    inline def setBaselineScalingChanged(value: JetElementCustomEvent[zero | min]): Self = StObject.set(x, "baselineScalingChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "colorChanged", value.asInstanceOf[js.Any])
+    inline def setColorChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "colorChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataChanged(value: JetElementCustomEvent[(DataProvider[K, D]) | Null]): Self = StObject.set(x, "dataChanged", value.asInstanceOf[js.Any])
+    inline def setDataChanged(value: JetElementCustomEvent[(DataProvider[K, D]) | Null]): Self = StObject.set(x, "dataChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstColorChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "firstColorChanged", value.asInstanceOf[js.Any])
+    inline def setFirstColorChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "firstColorChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighColorChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "highColorChanged", value.asInstanceOf[js.Any])
+    inline def setHighColorChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "highColorChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastColorChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "lastColorChanged", value.asInstanceOf[js.Any])
+    inline def setLastColorChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "lastColorChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineStyleChanged(value: JetElementCustomEvent[dotted | dashed | solid]): Self = StObject.set(x, "lineStyleChanged", value.asInstanceOf[js.Any])
+    inline def setLineStyleChanged(value: JetElementCustomEvent[dotted | dashed | solid]): Self = StObject.set(x, "lineStyleChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineTypeChanged(
+    inline def setLineTypeChanged(
       value: JetElementCustomEvent[
           curved | stepped | centeredStepped | segmented | centeredSegmented | none | straight
         ]
     ): Self = StObject.set(x, "lineTypeChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineWidthChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "lineWidthChanged", value.asInstanceOf[js.Any])
+    inline def setLineWidthChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "lineWidthChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowColorChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "lowColorChanged", value.asInstanceOf[js.Any])
+    inline def setLowColorChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "lowColorChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerShapeChanged(
+    inline def setMarkerShapeChanged(
       value: JetElementCustomEvent[
           auto | circle | diamond | human | plus | square | star | triangleDown | triangleUp | String
         ]
     ): Self = StObject.set(x, "markerShapeChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerSizeChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "markerSizeChanged", value.asInstanceOf[js.Any])
+    inline def setMarkerSizeChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "markerSizeChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceObjectsChanged(value: JetElementCustomEvent[js.Array[ReferenceObject]]): Self = StObject.set(x, "referenceObjectsChanged", value.asInstanceOf[js.Any])
+    inline def setReferenceObjectsChanged(value: JetElementCustomEvent[js.Array[ReferenceObject]]): Self = StObject.set(x, "referenceObjectsChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgClassNameChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "svgClassNameChanged", value.asInstanceOf[js.Any])
+    inline def setSvgClassNameChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "svgClassNameChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgStyleChanged(
+    inline def setSvgStyleChanged(
       value: JetElementCustomEvent[
           /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojchart.ojSparkChart<K, D>['svgStyle'] */ js.Any
         ]
     ): Self = StObject.set(x, "svgStyleChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipChanged(value: JetElementCustomEvent[`0`]): Self = StObject.set(x, "tooltipChanged", value.asInstanceOf[js.Any])
+    inline def setTooltipChanged(value: JetElementCustomEvent[`0`]): Self = StObject.set(x, "tooltipChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeChanged(value: JetElementCustomEvent[area | lineWithArea | bar | line]): Self = StObject.set(x, "typeChanged", value.asInstanceOf[js.Any])
+    inline def setTypeChanged(value: JetElementCustomEvent[area | lineWithArea | bar | line]): Self = StObject.set(x, "typeChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisualEffectsChanged(value: JetElementCustomEvent[none | auto]): Self = StObject.set(x, "visualEffectsChanged", value.asInstanceOf[js.Any])
+    inline def setVisualEffectsChanged(value: JetElementCustomEvent[none | auto]): Self = StObject.set(x, "visualEffectsChanged", value.asInstanceOf[js.Any])
   }
 }

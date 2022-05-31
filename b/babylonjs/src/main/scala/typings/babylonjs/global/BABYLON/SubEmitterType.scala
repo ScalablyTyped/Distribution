@@ -2,7 +2,6 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.SubEmitterType")
@@ -10,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object SubEmitterType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.babylonjs.BABYLON.SubEmitterType with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.babylonjs.BABYLON.SubEmitterType & Double] = js.native
   
-  /* 0 */ val ATTACHED: typings.babylonjs.BABYLON.SubEmitterType.ATTACHED with Double = js.native
+  /* 0 */ val ATTACHED: typings.babylonjs.BABYLON.SubEmitterType.ATTACHED & Double = js.native
   
-  /* 1 */ val END: typings.babylonjs.BABYLON.SubEmitterType.END with Double = js.native
+  /* 1 */ val END: typings.babylonjs.BABYLON.SubEmitterType.END & Double = js.native
 }

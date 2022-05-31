@@ -9,7 +9,6 @@ import typings.babylonjs.planeRotationGizmoMod.PlaneRotationGizmo
 import typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rotationGizmoMod {
@@ -25,119 +24,83 @@ object rotationGizmoMod {
     */
   class RotationGizmo () extends Gizmo {
     def this(gizmoLayer: UtilityLayerRenderer) = this()
-    def this(gizmoLayer: js.UndefOr[scala.Nothing], tessellation: Double) = this()
+    def this(gizmoLayer: Unit, tessellation: Double) = this()
     def this(gizmoLayer: UtilityLayerRenderer, tessellation: Double) = this()
-    def this(
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      tessellation: js.UndefOr[scala.Nothing],
-      useEulerRotation: Boolean
-    ) = this()
-    def this(gizmoLayer: js.UndefOr[scala.Nothing], tessellation: Double, useEulerRotation: Boolean) = this()
-    def this(
-      gizmoLayer: UtilityLayerRenderer,
-      tessellation: js.UndefOr[scala.Nothing],
-      useEulerRotation: Boolean
-    ) = this()
+    def this(gizmoLayer: Unit, tessellation: Double, useEulerRotation: Boolean) = this()
+    def this(gizmoLayer: Unit, tessellation: Unit, useEulerRotation: Boolean) = this()
     def this(gizmoLayer: UtilityLayerRenderer, tessellation: Double, useEulerRotation: Boolean) = this()
-    def this(
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      tessellation: js.UndefOr[scala.Nothing],
-      useEulerRotation: js.UndefOr[scala.Nothing],
-      thickness: Double
-    ) = this()
-    def this(
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      tessellation: js.UndefOr[scala.Nothing],
-      useEulerRotation: Boolean,
-      thickness: Double
-    ) = this()
-    def this(
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      tessellation: Double,
-      useEulerRotation: js.UndefOr[scala.Nothing],
-      thickness: Double
-    ) = this()
-    def this(
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      tessellation: Double,
-      useEulerRotation: Boolean,
-      thickness: Double
-    ) = this()
-    def this(
-      gizmoLayer: UtilityLayerRenderer,
-      tessellation: js.UndefOr[scala.Nothing],
-      useEulerRotation: js.UndefOr[scala.Nothing],
-      thickness: Double
-    ) = this()
-    def this(
-      gizmoLayer: UtilityLayerRenderer,
-      tessellation: js.UndefOr[scala.Nothing],
-      useEulerRotation: Boolean,
-      thickness: Double
-    ) = this()
-    def this(
-      gizmoLayer: UtilityLayerRenderer,
-      tessellation: Double,
-      useEulerRotation: js.UndefOr[scala.Nothing],
-      thickness: Double
-    ) = this()
+    def this(gizmoLayer: UtilityLayerRenderer, tessellation: Unit, useEulerRotation: Boolean) = this()
+    def this(gizmoLayer: Unit, tessellation: Double, useEulerRotation: Boolean, thickness: Double) = this()
+    def this(gizmoLayer: Unit, tessellation: Double, useEulerRotation: Unit, thickness: Double) = this()
+    def this(gizmoLayer: Unit, tessellation: Unit, useEulerRotation: Boolean, thickness: Double) = this()
+    def this(gizmoLayer: Unit, tessellation: Unit, useEulerRotation: Unit, thickness: Double) = this()
     def this(
       gizmoLayer: UtilityLayerRenderer,
       tessellation: Double,
       useEulerRotation: Boolean,
       thickness: Double
     ) = this()
+    def this(gizmoLayer: UtilityLayerRenderer, tessellation: Double, useEulerRotation: Unit, thickness: Double) = this()
+    def this(gizmoLayer: UtilityLayerRenderer, tessellation: Unit, useEulerRotation: Boolean, thickness: Double) = this()
+    def this(gizmoLayer: UtilityLayerRenderer, tessellation: Unit, useEulerRotation: Unit, thickness: Double) = this()
     def this(
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      tessellation: js.UndefOr[scala.Nothing],
-      useEulerRotation: js.UndefOr[scala.Nothing],
-      thickness: js.UndefOr[scala.Nothing],
-      gizmoManager: GizmoManager
-    ) = this()
-    def this(
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      tessellation: js.UndefOr[scala.Nothing],
-      useEulerRotation: js.UndefOr[scala.Nothing],
-      thickness: Double,
-      gizmoManager: GizmoManager
-    ) = this()
-    def this(
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      tessellation: js.UndefOr[scala.Nothing],
-      useEulerRotation: Boolean,
-      thickness: js.UndefOr[scala.Nothing],
-      gizmoManager: GizmoManager
-    ) = this()
-    def this(
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      tessellation: js.UndefOr[scala.Nothing],
+      gizmoLayer: Unit,
+      tessellation: Double,
       useEulerRotation: Boolean,
       thickness: Double,
       gizmoManager: GizmoManager
     ) = this()
     def this(
-      gizmoLayer: js.UndefOr[scala.Nothing],
+      gizmoLayer: Unit,
       tessellation: Double,
-      useEulerRotation: js.UndefOr[scala.Nothing],
-      thickness: js.UndefOr[scala.Nothing],
+      useEulerRotation: Boolean,
+      thickness: Unit,
       gizmoManager: GizmoManager
     ) = this()
     def this(
-      gizmoLayer: js.UndefOr[scala.Nothing],
+      gizmoLayer: Unit,
       tessellation: Double,
-      useEulerRotation: js.UndefOr[scala.Nothing],
+      useEulerRotation: Unit,
       thickness: Double,
       gizmoManager: GizmoManager
     ) = this()
     def this(
-      gizmoLayer: js.UndefOr[scala.Nothing],
+      gizmoLayer: Unit,
       tessellation: Double,
-      useEulerRotation: Boolean,
-      thickness: js.UndefOr[scala.Nothing],
+      useEulerRotation: Unit,
+      thickness: Unit,
       gizmoManager: GizmoManager
     ) = this()
     def this(
-      gizmoLayer: js.UndefOr[scala.Nothing],
+      gizmoLayer: Unit,
+      tessellation: Unit,
+      useEulerRotation: Boolean,
+      thickness: Double,
+      gizmoManager: GizmoManager
+    ) = this()
+    def this(
+      gizmoLayer: Unit,
+      tessellation: Unit,
+      useEulerRotation: Boolean,
+      thickness: Unit,
+      gizmoManager: GizmoManager
+    ) = this()
+    def this(
+      gizmoLayer: Unit,
+      tessellation: Unit,
+      useEulerRotation: Unit,
+      thickness: Double,
+      gizmoManager: GizmoManager
+    ) = this()
+    def this(
+      gizmoLayer: Unit,
+      tessellation: Unit,
+      useEulerRotation: Unit,
+      thickness: Unit,
+      gizmoManager: GizmoManager
+    ) = this()
+    def this(
+      gizmoLayer: UtilityLayerRenderer,
       tessellation: Double,
       useEulerRotation: Boolean,
       thickness: Double,
@@ -145,71 +108,64 @@ object rotationGizmoMod {
     ) = this()
     def this(
       gizmoLayer: UtilityLayerRenderer,
-      tessellation: js.UndefOr[scala.Nothing],
-      useEulerRotation: js.UndefOr[scala.Nothing],
-      thickness: js.UndefOr[scala.Nothing],
-      gizmoManager: GizmoManager
-    ) = this()
-    def this(
-      gizmoLayer: UtilityLayerRenderer,
-      tessellation: js.UndefOr[scala.Nothing],
-      useEulerRotation: js.UndefOr[scala.Nothing],
-      thickness: Double,
-      gizmoManager: GizmoManager
-    ) = this()
-    def this(
-      gizmoLayer: UtilityLayerRenderer,
-      tessellation: js.UndefOr[scala.Nothing],
+      tessellation: Double,
       useEulerRotation: Boolean,
-      thickness: js.UndefOr[scala.Nothing],
+      thickness: Unit,
       gizmoManager: GizmoManager
     ) = this()
     def this(
       gizmoLayer: UtilityLayerRenderer,
-      tessellation: js.UndefOr[scala.Nothing],
-      useEulerRotation: Boolean,
+      tessellation: Double,
+      useEulerRotation: Unit,
       thickness: Double,
       gizmoManager: GizmoManager
     ) = this()
     def this(
       gizmoLayer: UtilityLayerRenderer,
       tessellation: Double,
-      useEulerRotation: js.UndefOr[scala.Nothing],
-      thickness: js.UndefOr[scala.Nothing],
+      useEulerRotation: Unit,
+      thickness: Unit,
       gizmoManager: GizmoManager
     ) = this()
     def this(
       gizmoLayer: UtilityLayerRenderer,
-      tessellation: Double,
-      useEulerRotation: js.UndefOr[scala.Nothing],
+      tessellation: Unit,
+      useEulerRotation: Boolean,
+      thickness: Double,
+      gizmoManager: GizmoManager
+    ) = this()
+    def this(
+      gizmoLayer: UtilityLayerRenderer,
+      tessellation: Unit,
+      useEulerRotation: Boolean,
+      thickness: Unit,
+      gizmoManager: GizmoManager
+    ) = this()
+    def this(
+      gizmoLayer: UtilityLayerRenderer,
+      tessellation: Unit,
+      useEulerRotation: Unit,
       thickness: Double,
       gizmoManager: GizmoManager
     ) = this()
     def this(
       gizmoLayer: UtilityLayerRenderer,
-      tessellation: Double,
-      useEulerRotation: Boolean,
-      thickness: js.UndefOr[scala.Nothing],
-      gizmoManager: GizmoManager
-    ) = this()
-    def this(
-      gizmoLayer: UtilityLayerRenderer,
-      tessellation: Double,
-      useEulerRotation: Boolean,
-      thickness: Double,
+      tessellation: Unit,
+      useEulerRotation: Unit,
+      thickness: Unit,
       gizmoManager: GizmoManager
     ) = this()
     
     /* protected */ def _checkBillboardTransform(): Unit = js.native
     
     /** Node Caching for quick lookup */
-    var _gizmoAxisCache: js.Any = js.native
+    /* private */ var _gizmoAxisCache: js.Any = js.native
     
-    var _meshAttached: js.Any = js.native
+    /* private */ var _meshAttached: js.Any = js.native
     
-    var _nodeAttached: js.Any = js.native
+    /* private */ var _nodeAttached: js.Any = js.native
     
-    var _observables: js.Any = js.native
+    /* private */ var _observables: js.Any = js.native
     
     /**
       * Builds Gizmo Axis Cache to enable features such as hover state preservation and graying out other axis during manipulation
@@ -219,10 +175,10 @@ object rotationGizmoMod {
     def addToAxisCache(mesh: Mesh, cache: GizmoAxisCache): Unit = js.native
     
     /** Fires an event when any of it's sub gizmos are released from dragging */
-    var onDragEndObservable: Observable[_] = js.native
+    var onDragEndObservable: Observable[js.Any] = js.native
     
     /** Fires an event when any of it's sub gizmos are dragged */
-    var onDragStartObservable: Observable[_] = js.native
+    var onDragStartObservable: Observable[js.Any] = js.native
     
     def snapDistance: Double = js.native
     /**

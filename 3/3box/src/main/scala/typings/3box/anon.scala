@@ -6,6 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
+  trait `0` extends StObject {
+    
+    var metadata: js.UndefOr[Boolean] = js.undefined
+  }
+  object `0` {
+    
+    inline def apply(): `0` = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[`0`]
+    }
+    
+    extension [Self <: `0`](x: Self) {
+      
+      inline def setMetadata(value: Boolean): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    }
+  }
+  
   trait Address extends StObject {
     
     var address: String
@@ -125,37 +144,6 @@ object anon {
       inline def setUseCacheService(value: Boolean): Self = StObject.set(x, "useCacheService", value.asInstanceOf[js.Any])
       
       inline def setUseCacheServiceUndefined: Self = StObject.set(x, "useCacheService", js.undefined)
-    }
-  }
-  
-  trait BlocklistMetadata extends StObject {
-    
-    var blocklist: js.UndefOr[js.Any] = js.undefined
-    
-    var metadata: js.UndefOr[String] = js.undefined
-    
-    var profileServer: js.UndefOr[String] = js.undefined
-  }
-  object BlocklistMetadata {
-    
-    inline def apply(): BlocklistMetadata = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[BlocklistMetadata]
-    }
-    
-    extension [Self <: BlocklistMetadata](x: Self) {
-      
-      inline def setBlocklist(value: js.Any): Self = StObject.set(x, "blocklist", value.asInstanceOf[js.Any])
-      
-      inline def setBlocklistUndefined: Self = StObject.set(x, "blocklist", js.undefined)
-      
-      inline def setMetadata(value: String): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
-      
-      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
-      
-      inline def setProfileServer(value: String): Self = StObject.set(x, "profileServer", value.asInstanceOf[js.Any])
-      
-      inline def setProfileServerUndefined: Self = StObject.set(x, "profileServer", js.undefined)
     }
   }
   
@@ -279,7 +267,11 @@ object anon {
   
   trait Metadata extends StObject {
     
-    var metadata: js.UndefOr[Boolean] = js.undefined
+    var blocklist: js.UndefOr[js.Any] = js.undefined
+    
+    var metadata: js.UndefOr[String] = js.undefined
+    
+    var profileServer: js.UndefOr[String] = js.undefined
   }
   object Metadata {
     
@@ -290,9 +282,17 @@ object anon {
     
     extension [Self <: Metadata](x: Self) {
       
-      inline def setMetadata(value: Boolean): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setBlocklist(value: js.Any): Self = StObject.set(x, "blocklist", value.asInstanceOf[js.Any])
+      
+      inline def setBlocklistUndefined: Self = StObject.set(x, "blocklist", js.undefined)
+      
+      inline def setMetadata(value: String): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
       inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      
+      inline def setProfileServer(value: String): Self = StObject.set(x, "profileServer", value.asInstanceOf[js.Any])
+      
+      inline def setProfileServerUndefined: Self = StObject.set(x, "profileServer", js.undefined)
     }
   }
   

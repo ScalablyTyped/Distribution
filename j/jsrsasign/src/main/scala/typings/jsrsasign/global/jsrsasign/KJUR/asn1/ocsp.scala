@@ -60,54 +60,9 @@ object ocsp {
   @JSGlobal("jsrsasign.KJUR.asn1.ocsp.CertID")
   @js.native
   class CertID ()
-    extends StObject
-       with typings.jsrsasign.jsrsasign.KJUR.asn1.ocsp.CertID {
+    extends typings.jsrsasign.mod.KJUR.asn1.ocsp.CertID {
     def this(params: Keyhash) = this()
     def this(params: CertificateRequest) = this()
-    
-    /**
-      * get hexadecimal string of ASN.1 TLV bytes
-      * @return hexadecimal string of ASN.1 TLV
-      */
-    /* CompleteClass */
-    override def getEncodedHex(): String = js.native
-    
-    /* CompleteClass */
-    override def getFreshValueHex(): String = js.native
-    
-    /**
-      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
-      * @return hexadecimal string of ASN.1 TLV length(L)
-      */
-    /* CompleteClass */
-    override def getLengthHexFromValue(): String = js.native
-    
-    /**
-      * get hexadecimal string of ASN.1 TLV value(V) bytes
-      * @return hexadecimal string of ASN.1 TLV value(V) bytes
-      */
-    /* CompleteClass */
-    override def getValueHex(): String = js.native
-    
-    /** hexadecimal string of ASN.1 TLV length(L) */
-    /* CompleteClass */
-    var hL: String = js.native
-    
-    /** hexadecimal string of ASN.1 TLV tag(T) */
-    /* CompleteClass */
-    var hT: String = js.native
-    
-    /** hexadecimal string of ASN.1 TLV */
-    /* CompleteClass */
-    var hTLV: String = js.native
-    
-    /** hexadecimal string of ASN.1 TLV value(V) */
-    /* CompleteClass */
-    var hV: String = js.native
-    
-    /** flag whether internal data was changed */
-    /* CompleteClass */
-    var isModified: String = js.native
   }
   
   /**
@@ -134,53 +89,8 @@ object ocsp {
   @JSGlobal("jsrsasign.KJUR.asn1.ocsp.OCSPRequest")
   @js.native
   class OCSPRequest ()
-    extends StObject
-       with typings.jsrsasign.jsrsasign.KJUR.asn1.ocsp.OCSPRequest {
+    extends typings.jsrsasign.mod.KJUR.asn1.ocsp.OCSPRequest {
     def this(params: CertificateRequestList) = this()
-    
-    /**
-      * get hexadecimal string of ASN.1 TLV bytes
-      * @return hexadecimal string of ASN.1 TLV
-      */
-    /* CompleteClass */
-    override def getEncodedHex(): String = js.native
-    
-    /* CompleteClass */
-    override def getFreshValueHex(): String = js.native
-    
-    /**
-      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
-      * @return hexadecimal string of ASN.1 TLV length(L)
-      */
-    /* CompleteClass */
-    override def getLengthHexFromValue(): String = js.native
-    
-    /**
-      * get hexadecimal string of ASN.1 TLV value(V) bytes
-      * @return hexadecimal string of ASN.1 TLV value(V) bytes
-      */
-    /* CompleteClass */
-    override def getValueHex(): String = js.native
-    
-    /** hexadecimal string of ASN.1 TLV length(L) */
-    /* CompleteClass */
-    var hL: String = js.native
-    
-    /** hexadecimal string of ASN.1 TLV tag(T) */
-    /* CompleteClass */
-    var hT: String = js.native
-    
-    /** hexadecimal string of ASN.1 TLV */
-    /* CompleteClass */
-    var hTLV: String = js.native
-    
-    /** hexadecimal string of ASN.1 TLV value(V) */
-    /* CompleteClass */
-    var hV: String = js.native
-    
-    /** flag whether internal data was changed */
-    /* CompleteClass */
-    var isModified: String = js.native
   }
   
   /**
@@ -255,54 +165,9 @@ object ocsp {
   @JSGlobal("jsrsasign.KJUR.asn1.ocsp.Request")
   @js.native
   class Request ()
-    extends StObject
-       with typings.jsrsasign.jsrsasign.KJUR.asn1.ocsp.Request {
+    extends typings.jsrsasign.mod.KJUR.asn1.ocsp.Request {
     def this(params: Namehash) = this()
     def this(params: CertificateRequest) = this()
-    
-    /**
-      * get hexadecimal string of ASN.1 TLV bytes
-      * @return hexadecimal string of ASN.1 TLV
-      */
-    /* CompleteClass */
-    override def getEncodedHex(): String = js.native
-    
-    /* CompleteClass */
-    override def getFreshValueHex(): String = js.native
-    
-    /**
-      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
-      * @return hexadecimal string of ASN.1 TLV length(L)
-      */
-    /* CompleteClass */
-    override def getLengthHexFromValue(): String = js.native
-    
-    /**
-      * get hexadecimal string of ASN.1 TLV value(V) bytes
-      * @return hexadecimal string of ASN.1 TLV value(V) bytes
-      */
-    /* CompleteClass */
-    override def getValueHex(): String = js.native
-    
-    /** hexadecimal string of ASN.1 TLV length(L) */
-    /* CompleteClass */
-    var hL: String = js.native
-    
-    /** hexadecimal string of ASN.1 TLV tag(T) */
-    /* CompleteClass */
-    var hT: String = js.native
-    
-    /** hexadecimal string of ASN.1 TLV */
-    /* CompleteClass */
-    var hTLV: String = js.native
-    
-    /** hexadecimal string of ASN.1 TLV value(V) */
-    /* CompleteClass */
-    var hV: String = js.native
-    
-    /** flag whether internal data was changed */
-    /* CompleteClass */
-    var isModified: String = js.native
   }
   
   /**
@@ -330,65 +195,7 @@ object ocsp {
   @JSGlobal("jsrsasign.KJUR.asn1.ocsp.TBSRequest")
   @js.native
   class TBSRequest ()
-    extends StObject
-       with typings.jsrsasign.jsrsasign.KJUR.asn1.ocsp.TBSRequest {
+    extends typings.jsrsasign.mod.KJUR.asn1.ocsp.TBSRequest {
     def this(params: CertificateRequestList) = this()
-    
-    /**
-      * get hexadecimal string of ASN.1 TLV bytes
-      * @return hexadecimal string of ASN.1 TLV
-      */
-    /* CompleteClass */
-    override def getEncodedHex(): String = js.native
-    
-    /* CompleteClass */
-    override def getFreshValueHex(): String = js.native
-    
-    /**
-      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
-      * @return hexadecimal string of ASN.1 TLV length(L)
-      */
-    /* CompleteClass */
-    override def getLengthHexFromValue(): String = js.native
-    
-    /**
-      * get hexadecimal string of ASN.1 TLV value(V) bytes
-      * @return hexadecimal string of ASN.1 TLV value(V) bytes
-      */
-    /* CompleteClass */
-    override def getValueHex(): String = js.native
-    
-    /** hexadecimal string of ASN.1 TLV length(L) */
-    /* CompleteClass */
-    var hL: String = js.native
-    
-    /** hexadecimal string of ASN.1 TLV tag(T) */
-    /* CompleteClass */
-    var hT: String = js.native
-    
-    /** hexadecimal string of ASN.1 TLV */
-    /* CompleteClass */
-    var hTLV: String = js.native
-    
-    /** hexadecimal string of ASN.1 TLV value(V) */
-    /* CompleteClass */
-    var hV: String = js.native
-    
-    /** flag whether internal data was changed */
-    /* CompleteClass */
-    var isModified: String = js.native
-    
-    /**
-      * set TBSRequest ASN.1 object by array of parameters.
-      * @param aParams array of parameters for Request class
-      * @example
-      * o = new KJUR.asn1.ocsp.TBSRequest();
-      * o.setRequestListByParam([
-      *   {issuerCert: "-----BEGIN...", subjectCert: "-----BEGIN...", alg:},
-      *   {issuerCert: "-----BEGIN...", subjectCert: "-----BEGIN...", alg: "sha256"}
-      * ]);
-      */
-    /* CompleteClass */
-    override def setRequestListByParam(aParams: js.Array[CertificateRequest]): Unit = js.native
   }
 }

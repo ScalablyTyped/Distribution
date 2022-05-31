@@ -2,7 +2,6 @@ package typings.babylonjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mathConstantsMod {
@@ -18,8 +17,7 @@ object mathConstantsMod {
   @JSImport("babylonjs/Maths/math.constants", "Epsilon")
   @js.native
   def Epsilon: Double = js.native
-  @scala.inline
-  def Epsilon_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Epsilon")(x.asInstanceOf[js.Any])
+  inline def Epsilon_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Epsilon")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs/Maths/math.constants", "ToGammaSpace")
   @js.native

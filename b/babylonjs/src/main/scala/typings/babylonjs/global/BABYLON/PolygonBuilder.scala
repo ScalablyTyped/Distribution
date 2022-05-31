@@ -4,15 +4,19 @@ import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.anon.Wrap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.PolygonBuilder")
 @js.native
 class PolygonBuilder ()
-  extends typings.babylonjs.BABYLON.PolygonBuilder
+  extends StObject
+     with typings.babylonjs.BABYLON.PolygonBuilder
 /* static members */
 object PolygonBuilder {
+  
+  @JSGlobal("BABYLON.PolygonBuilder")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a polygon mesh
@@ -28,20 +32,15 @@ object PolygonBuilder {
     * @param earcutInjection can be used to inject your own earcut reference
     * @returns the polygon mesh
     */
-  @JSGlobal("BABYLON.PolygonBuilder.CreatePolygon")
-  @js.native
-  def CreatePolygon(name: String, options: Wrap): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.PolygonBuilder.CreatePolygon")
-  @js.native
-  def CreatePolygon(
+  inline def CreatePolygon(name: String, options: Wrap): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreatePolygon(name: String, options: Wrap, scene: Unit, earcutInjection: js.Any): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreatePolygon(name: String, options: Wrap, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreatePolygon(
     name: String,
     options: Wrap,
-    scene: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]],
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
     earcutInjection: js.Any
-  ): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.PolygonBuilder.CreatePolygon")
-  @js.native
-  def CreatePolygon(name: String, options: Wrap, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
+  ): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
   
   /**
     * Creates an extruded polygon mesh, with depth in the Y direction.
@@ -53,18 +52,13 @@ object PolygonBuilder {
     * @param earcutInjection can be used to inject your own earcut reference
     * @returns the polygon mesh
     */
-  @JSGlobal("BABYLON.PolygonBuilder.ExtrudePolygon")
-  @js.native
-  def ExtrudePolygon(name: String, options: Wrap): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.PolygonBuilder.ExtrudePolygon")
-  @js.native
-  def ExtrudePolygon(
+  inline def ExtrudePolygon(name: String, options: Wrap): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def ExtrudePolygon(name: String, options: Wrap, scene: Unit, earcutInjection: js.Any): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def ExtrudePolygon(name: String, options: Wrap, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def ExtrudePolygon(
     name: String,
     options: Wrap,
-    scene: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]],
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
     earcutInjection: js.Any
-  ): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.PolygonBuilder.ExtrudePolygon")
-  @js.native
-  def ExtrudePolygon(name: String, options: Wrap, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
+  ): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
 }

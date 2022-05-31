@@ -4,7 +4,6 @@ import typings.babylonjs.cameraMod.Camera
 import typings.babylonjs.postProcessRenderPipelineMod.PostProcessRenderPipeline
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object postProcessRenderPipelineManagerMod {
@@ -20,7 +19,7 @@ object postProcessRenderPipelineManagerMod {
     /** @hidden */
     def _rebuild(): Unit = js.native
     
-    var _renderPipelines: js.Any = js.native
+    /* private */ var _renderPipelines: js.Any = js.native
     
     /**
       * Adds a pipeline to the manager

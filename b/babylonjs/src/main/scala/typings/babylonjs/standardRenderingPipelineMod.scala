@@ -16,7 +16,6 @@ import typings.babylonjs.textureMod.Texture
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object standardRenderingPipelineMod {
@@ -38,11 +37,12 @@ object standardRenderingPipelineMod {
       */
     def this(name: String, scene: Scene, ratio: Double) = this()
     def this(name: String, scene: Scene, ratio: Double, originalPostProcess: Nullable[PostProcess]) = this()
+    def this(name: String, scene: Scene, ratio: Double, originalPostProcess: Unit, cameras: js.Array[Camera]) = this()
     def this(
       name: String,
       scene: Scene,
       ratio: Double,
-      originalPostProcess: js.UndefOr[Nullable[PostProcess]],
+      originalPostProcess: Nullable[PostProcess],
       cameras: js.Array[Camera]
     ) = this()
     
@@ -88,81 +88,86 @@ object standardRenderingPipelineMod {
     def VLSEnabled: Boolean = js.native
     def VLSEnabled_=(enabled: Boolean): Unit = js.native
     
-    var _basePostProcess: js.Any = js.native
+    /* private */ var _basePostProcess: js.Any = js.native
     
-    var _bloomEnabled: js.Any = js.native
+    /* private */ var _bloomEnabled: js.Any = js.native
     
-    var _buildPipeline: js.Any = js.native
+    /* private */ var _buildPipeline: js.Any = js.native
     
-    var _camerasToBeAttached: js.Any = js.native
+    /* private */ var _camerasToBeAttached: js.Any = js.native
     
-    var _createBlurPostProcesses: js.Any = js.native
+    /* private */ var _createBlurPostProcesses: js.Any = js.native
     
-    var _createBrightPassPostProcess: js.Any = js.native
+    /* private */ var _createBrightPassPostProcess: js.Any = js.native
     
-    var _createDepthOfFieldPostProcess: js.Any = js.native
+    /* private */ var _createDepthOfFieldPostProcess: js.Any = js.native
     
-    var _createDownSampleX4PostProcess: js.Any = js.native
+    /* private */ var _createDownSampleX4PostProcess: js.Any = js.native
     
-    var _createHdrPostProcess: js.Any = js.native
+    /* private */ var _createHdrPostProcess: js.Any = js.native
     
-    var _createLensFlarePostProcess: js.Any = js.native
+    /* private */ var _createLensFlarePostProcess: js.Any = js.native
     
-    var _createLuminancePostProcesses: js.Any = js.native
+    /* private */ var _createLuminancePostProcesses: js.Any = js.native
     
-    var _createMotionBlurPostProcess: js.Any = js.native
+    /* private */ var _createMotionBlurPostProcess: js.Any = js.native
     
-    var _createTextureAdderPostProcess: js.Any = js.native
+    /* private */ var _createTextureAdderPostProcess: js.Any = js.native
     
-    var _createVolumetricLightPostProcess: js.Any = js.native
+    /* private */ var _createVolumetricLightPostProcess: js.Any = js.native
     
-    var _currentDepthOfFieldSource: js.Any = js.native
+    /* private */ var _currentDepthOfFieldSource: js.Any = js.native
     
-    var _currentExposure: js.Any = js.native
+    /* private */ var _currentExposure: js.Any = js.native
     
-    var _depthOfFieldEnabled: js.Any = js.native
+    /* private */ var _depthOfFieldEnabled: js.Any = js.native
     
-    var _disposePostProcesses: js.Any = js.native
+    /* private */ var _disposePostProcesses: js.Any = js.native
     
-    var _fixedExposure: js.Any = js.native
+    /* private */ var _fixedExposure: js.Any = js.native
     
-    var _floatTextureType: js.Any = js.native
+    /* private */ var _floatTextureType: js.Any = js.native
     
-    var _fxaaEnabled: js.Any = js.native
+    /* private */ var _fxaaEnabled: js.Any = js.native
     
-    var _getDepthTexture: js.Any = js.native
+    /* private */ var _getDepthTexture: js.Any = js.native
     
-    var _hdrAutoExposure: js.Any = js.native
+    /* private */ var _hdrAutoExposure: js.Any = js.native
     
-    var _hdrCurrentLuminance: js.Any = js.native
+    /* private */ var _hdrCurrentLuminance: js.Any = js.native
     
-    var _hdrEnabled: js.Any = js.native
+    /* private */ var _hdrEnabled: js.Any = js.native
     
-    var _isObjectBasedMotionBlur: js.Any = js.native
+    /* private */ var _isObjectBasedMotionBlur: js.Any = js.native
     
-    var _lensFlareEnabled: js.Any = js.native
+    /* private */ var _lensFlareEnabled: js.Any = js.native
     
-    var _motionBlurEnabled: js.Any = js.native
+    /* private */ var _motionBlurEnabled: js.Any = js.native
     
-    var _motionBlurSamples: js.Any = js.native
+    /* private */ var _motionBlurSamples: js.Any = js.native
     
-    var _motionStrength: js.Any = js.native
+    /* private */ var _motionStrength: js.Any = js.native
     
-    var _ratio: js.Any = js.native
+    /* private */ var _ratio: js.Any = js.native
     
-    var _samples: js.Any = js.native
+    /* private */ var _samples: js.Any = js.native
     
     /**
       * Private members
       */
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
-    var _screenSpaceReflectionsEnabled: js.Any = js.native
+    /* private */ var _screenSpaceReflectionsEnabled: js.Any = js.native
     
-    var _vlsEnabled: js.Any = js.native
+    /* private */ var _vlsEnabled: js.Any = js.native
     
-    var _volumetricLightStepsCount: js.Any = js.native
+    /* private */ var _volumetricLightStepsCount: js.Any = js.native
     
+    /**
+      * Array of animations
+      */
+    /* CompleteClass */
+    var animations: Nullable[js.Array[Animation]] = js.native
     /**
       * List of animations for the pipeline (IAnimatable implementation)
       */
@@ -492,8 +497,7 @@ object standardRenderingPipelineMod {
     @JSImport("babylonjs/PostProcesses/RenderPipeline/Pipelines/standardRenderingPipeline", "StandardRenderingPipeline.LuminanceSteps")
     @js.native
     def LuminanceSteps: Double = js.native
-    @scala.inline
-    def LuminanceSteps_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LuminanceSteps")(x.asInstanceOf[js.Any])
+    inline def LuminanceSteps_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LuminanceSteps")(x.asInstanceOf[js.Any])
     
     /**
       * Parse the serialized pipeline
@@ -502,8 +506,6 @@ object standardRenderingPipelineMod {
       * @param rootUrl The URL of the serialized pipeline.
       * @returns An instantiated pipeline from the serialized object.
       */
-    @JSImport("babylonjs/PostProcesses/RenderPipeline/Pipelines/standardRenderingPipeline", "StandardRenderingPipeline.Parse")
-    @js.native
-    def Parse(source: js.Any, scene: Scene, rootUrl: String): StandardRenderingPipeline = js.native
+    inline def Parse(source: js.Any, scene: Scene, rootUrl: String): StandardRenderingPipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[StandardRenderingPipeline]
   }
 }

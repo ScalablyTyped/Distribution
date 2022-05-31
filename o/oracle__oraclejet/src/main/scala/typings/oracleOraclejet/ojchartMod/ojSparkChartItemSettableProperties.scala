@@ -14,40 +14,39 @@ import typings.oracleOraclejet.oracleOraclejetStrings.triangleDown
 import typings.oracleOraclejet.oracleOraclejetStrings.triangleUp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ojSparkChartItemSettableProperties extends JetSettableProperties {
+trait ojSparkChartItemSettableProperties
+  extends StObject
+     with JetSettableProperties {
   
-  var borderColor: String = js.native
+  var borderColor: String
   
-  var color: String = js.native
+  var color: String
   
-  var date: String = js.native
+  var date: String
   
-  var high: Double | Null = js.native
+  var high: Double | Null
   
-  var low: Double | Null = js.native
+  var low: Double | Null
   
-  var markerDisplayed: off | on = js.native
+  var markerDisplayed: off | on
   
   var markerShape: js.UndefOr[
     auto | circle | diamond | human | plus | square | star | triangleDown | triangleUp | String
-  ] = js.native
+  ] = js.undefined
   
-  var markerSize: Double = js.native
+  var markerSize: Double
   
-  var svgClassName: String = js.native
+  var svgClassName: String
   
-  var svgStyle: js.Object = js.native
+  var svgStyle: js.Object
   
-  var value: Double | Null = js.native
+  var value: Double | Null
 }
 object ojSparkChartItemSettableProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     borderColor: String,
     color: String,
     date: String,
@@ -56,56 +55,40 @@ object ojSparkChartItemSettableProperties {
     svgClassName: String,
     svgStyle: js.Object
   ): ojSparkChartItemSettableProperties = {
-    val __obj = js.Dynamic.literal(borderColor = borderColor.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], markerDisplayed = markerDisplayed.asInstanceOf[js.Any], markerSize = markerSize.asInstanceOf[js.Any], svgClassName = svgClassName.asInstanceOf[js.Any], svgStyle = svgStyle.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(borderColor = borderColor.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], markerDisplayed = markerDisplayed.asInstanceOf[js.Any], markerSize = markerSize.asInstanceOf[js.Any], svgClassName = svgClassName.asInstanceOf[js.Any], svgStyle = svgStyle.asInstanceOf[js.Any], high = null, low = null, value = null)
     __obj.asInstanceOf[ojSparkChartItemSettableProperties]
   }
   
-  @scala.inline
-  implicit class ojSparkChartItemSettablePropertiesMutableBuilder[Self <: ojSparkChartItemSettableProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ojSparkChartItemSettableProperties](x: Self) {
     
-    @scala.inline
-    def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHigh(value: Double): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
+    inline def setHigh(value: Double): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighNull: Self = StObject.set(x, "high", null)
+    inline def setHighNull: Self = StObject.set(x, "high", null)
     
-    @scala.inline
-    def setLow(value: Double): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
+    inline def setLow(value: Double): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowNull: Self = StObject.set(x, "low", null)
+    inline def setLowNull: Self = StObject.set(x, "low", null)
     
-    @scala.inline
-    def setMarkerDisplayed(value: off | on): Self = StObject.set(x, "markerDisplayed", value.asInstanceOf[js.Any])
+    inline def setMarkerDisplayed(value: off | on): Self = StObject.set(x, "markerDisplayed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerShape(value: auto | circle | diamond | human | plus | square | star | triangleDown | triangleUp | String): Self = StObject.set(x, "markerShape", value.asInstanceOf[js.Any])
+    inline def setMarkerShape(value: auto | circle | diamond | human | plus | square | star | triangleDown | triangleUp | String): Self = StObject.set(x, "markerShape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerShapeUndefined: Self = StObject.set(x, "markerShape", js.undefined)
+    inline def setMarkerShapeUndefined: Self = StObject.set(x, "markerShape", js.undefined)
     
-    @scala.inline
-    def setMarkerSize(value: Double): Self = StObject.set(x, "markerSize", value.asInstanceOf[js.Any])
+    inline def setMarkerSize(value: Double): Self = StObject.set(x, "markerSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgClassName(value: String): Self = StObject.set(x, "svgClassName", value.asInstanceOf[js.Any])
+    inline def setSvgClassName(value: String): Self = StObject.set(x, "svgClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgStyle(value: js.Object): Self = StObject.set(x, "svgStyle", value.asInstanceOf[js.Any])
+    inline def setSvgStyle(value: js.Object): Self = StObject.set(x, "svgStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueNull: Self = StObject.set(x, "value", null)
+    inline def setValueNull: Self = StObject.set(x, "value", null)
   }
 }

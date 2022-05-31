@@ -3,7 +3,6 @@ package typings.babylonjs.legacyMod
 import typings.babylonjs.postProcessMod.PostProcessOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "RefractionPostProcess")
@@ -70,7 +69,7 @@ class RefractionPostProcess protected ()
     colorLevel: Double,
     options: Double,
     camera: typings.babylonjs.cameraMod.Camera,
-    samplingMode: js.UndefOr[scala.Nothing],
+    samplingMode: Double,
     engine: typings.babylonjs.engineMod.Engine
   ) = this()
   def this(
@@ -81,18 +80,7 @@ class RefractionPostProcess protected ()
     colorLevel: Double,
     options: Double,
     camera: typings.babylonjs.cameraMod.Camera,
-    samplingMode: Double,
-    engine: typings.babylonjs.engineMod.Engine
-  ) = this()
-  def this(
-    name: String,
-    refractionTextureUrl: String,
-    color: typings.babylonjs.mathColorMod.Color3,
-    depth: Double,
-    colorLevel: Double,
-    options: PostProcessOptions,
-    camera: typings.babylonjs.cameraMod.Camera,
-    samplingMode: js.UndefOr[scala.Nothing],
+    samplingMode: Unit,
     engine: typings.babylonjs.engineMod.Engine
   ) = this()
   def this(
@@ -112,23 +100,10 @@ class RefractionPostProcess protected ()
     color: typings.babylonjs.mathColorMod.Color3,
     depth: Double,
     colorLevel: Double,
-    options: Double,
+    options: PostProcessOptions,
     camera: typings.babylonjs.cameraMod.Camera,
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: js.UndefOr[scala.Nothing],
-    reusable: Boolean
-  ) = this()
-  def this(
-    name: String,
-    refractionTextureUrl: String,
-    color: typings.babylonjs.mathColorMod.Color3,
-    depth: Double,
-    colorLevel: Double,
-    options: Double,
-    camera: typings.babylonjs.cameraMod.Camera,
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: typings.babylonjs.engineMod.Engine,
-    reusable: Boolean
+    samplingMode: Unit,
+    engine: typings.babylonjs.engineMod.Engine
   ) = this()
   def this(
     name: String,
@@ -139,7 +114,7 @@ class RefractionPostProcess protected ()
     options: Double,
     camera: typings.babylonjs.cameraMod.Camera,
     samplingMode: Double,
-    engine: js.UndefOr[scala.Nothing],
+    engine: Unit,
     reusable: Boolean
   ) = this()
   def this(
@@ -160,10 +135,10 @@ class RefractionPostProcess protected ()
     color: typings.babylonjs.mathColorMod.Color3,
     depth: Double,
     colorLevel: Double,
-    options: PostProcessOptions,
+    options: Double,
     camera: typings.babylonjs.cameraMod.Camera,
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: js.UndefOr[scala.Nothing],
+    samplingMode: Unit,
+    engine: Unit,
     reusable: Boolean
   ) = this()
   def this(
@@ -172,9 +147,9 @@ class RefractionPostProcess protected ()
     color: typings.babylonjs.mathColorMod.Color3,
     depth: Double,
     colorLevel: Double,
-    options: PostProcessOptions,
+    options: Double,
     camera: typings.babylonjs.cameraMod.Camera,
-    samplingMode: js.UndefOr[scala.Nothing],
+    samplingMode: Unit,
     engine: typings.babylonjs.engineMod.Engine,
     reusable: Boolean
   ) = this()
@@ -187,7 +162,7 @@ class RefractionPostProcess protected ()
     options: PostProcessOptions,
     camera: typings.babylonjs.cameraMod.Camera,
     samplingMode: Double,
-    engine: js.UndefOr[scala.Nothing],
+    engine: Unit,
     reusable: Boolean
   ) = this()
   def this(
@@ -199,6 +174,30 @@ class RefractionPostProcess protected ()
     options: PostProcessOptions,
     camera: typings.babylonjs.cameraMod.Camera,
     samplingMode: Double,
+    engine: typings.babylonjs.engineMod.Engine,
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    refractionTextureUrl: String,
+    color: typings.babylonjs.mathColorMod.Color3,
+    depth: Double,
+    colorLevel: Double,
+    options: PostProcessOptions,
+    camera: typings.babylonjs.cameraMod.Camera,
+    samplingMode: Unit,
+    engine: Unit,
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    refractionTextureUrl: String,
+    color: typings.babylonjs.mathColorMod.Color3,
+    depth: Double,
+    colorLevel: Double,
+    options: PostProcessOptions,
+    camera: typings.babylonjs.cameraMod.Camera,
+    samplingMode: Unit,
     engine: typings.babylonjs.engineMod.Engine,
     reusable: Boolean
   ) = this()
@@ -206,13 +205,15 @@ class RefractionPostProcess protected ()
 /* static members */
 object RefractionPostProcess {
   
-  /** @hidden */
-  @JSImport("babylonjs/Legacy/legacy", "RefractionPostProcess._Parse")
+  @JSImport("babylonjs/Legacy/legacy", "RefractionPostProcess")
   @js.native
-  def _Parse(
+  val ^ : js.Any = js.native
+  
+  /** @hidden */
+  inline def _Parse(
     parsedPostProcess: js.Any,
     targetCamera: typings.babylonjs.cameraMod.Camera,
     scene: typings.babylonjs.sceneMod.Scene,
     rootUrl: String
-  ): typings.babylonjs.refractionPostProcessMod.RefractionPostProcess = js.native
+  ): typings.babylonjs.refractionPostProcessMod.RefractionPostProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.refractionPostProcessMod.RefractionPostProcess]
 }

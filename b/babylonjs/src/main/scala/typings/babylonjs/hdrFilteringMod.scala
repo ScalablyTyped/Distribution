@@ -5,7 +5,6 @@ import typings.babylonjs.thinEngineMod.ThinEngine
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hdrFilteringMod {
@@ -22,21 +21,21 @@ object hdrFilteringMod {
     def this(engine: ThinEngine) = this()
     def this(engine: ThinEngine, options: IHDRFilteringOptions) = this()
     
-    var _createEffect: js.Any = js.native
+    /* private */ var _createEffect: js.Any = js.native
     
-    var _createRenderTarget: js.Any = js.native
+    /* private */ var _createRenderTarget: js.Any = js.native
     
-    var _effectRenderer: js.Any = js.native
+    /* private */ var _effectRenderer: js.Any = js.native
     
-    var _effectWrapper: js.Any = js.native
+    /* private */ var _effectWrapper: js.Any = js.native
     
-    var _engine: js.Any = js.native
+    /* private */ var _engine: js.Any = js.native
     
-    var _lodGenerationOffset: js.Any = js.native
+    /* private */ var _lodGenerationOffset: js.Any = js.native
     
-    var _lodGenerationScale: js.Any = js.native
+    /* private */ var _lodGenerationScale: js.Any = js.native
     
-    var _prefilterInternal: js.Any = js.native
+    /* private */ var _prefilterInternal: js.Any = js.native
     
     /**
       * Scales pixel intensity for the input HDR map.
@@ -59,8 +58,8 @@ object hdrFilteringMod {
       * @param onFinished Callback when filtering is done
       * @return Promise called when prefiltering is done
       */
-    def prefilter(texture: BaseTexture): js.UndefOr[js.Promise[_]] = js.native
-    def prefilter(texture: BaseTexture, onFinished: Nullable[js.Function0[Unit]]): js.UndefOr[js.Promise[_]] = js.native
+    def prefilter(texture: BaseTexture): js.UndefOr[js.Promise[js.Any]] = js.native
+    def prefilter(texture: BaseTexture, onFinished: Nullable[js.Function0[Unit]]): js.UndefOr[js.Promise[js.Any]] = js.native
     
     /**
       * Quality switch for prefiltering. Should be set to `Constants.TEXTURE_FILTERING_QUALITY_OFFLINE` unless
@@ -72,41 +71,34 @@ object hdrFilteringMod {
   /**
     * Options for texture filtering
     */
-  @js.native
   trait IHDRFilteringOptions extends StObject {
     
     /**
       * Scales pixel intensity for the input HDR map.
       */
-    var hdrScale: js.UndefOr[Double] = js.native
+    var hdrScale: js.UndefOr[Double] = js.undefined
     
     /**
       * Quality of the filter. Should be `Constants.TEXTURE_FILTERING_QUALITY_OFFLINE` for prefiltering
       */
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
   }
   object IHDRFilteringOptions {
     
-    @scala.inline
-    def apply(): IHDRFilteringOptions = {
+    inline def apply(): IHDRFilteringOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IHDRFilteringOptions]
     }
     
-    @scala.inline
-    implicit class IHDRFilteringOptionsMutableBuilder[Self <: IHDRFilteringOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IHDRFilteringOptions](x: Self) {
       
-      @scala.inline
-      def setHdrScale(value: Double): Self = StObject.set(x, "hdrScale", value.asInstanceOf[js.Any])
+      inline def setHdrScale(value: Double): Self = StObject.set(x, "hdrScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHdrScaleUndefined: Self = StObject.set(x, "hdrScale", js.undefined)
+      inline def setHdrScaleUndefined: Self = StObject.set(x, "hdrScale", js.undefined)
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     }
   }
 }

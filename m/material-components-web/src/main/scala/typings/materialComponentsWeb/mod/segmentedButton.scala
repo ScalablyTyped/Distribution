@@ -5,7 +5,6 @@ import typings.materialSegmentedButton.anon.PartialMDCSegmentedButtonAddClass
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object segmentedButton {
@@ -14,7 +13,7 @@ object segmentedButton {
   @js.native
   class MDCSegmentedButton protected ()
     extends typings.materialSegmentedButton.mod.MDCSegmentedButton {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialSegmentedButton.foundationMod.MDCSegmentedButtonFoundation,
@@ -24,9 +23,11 @@ object segmentedButton {
   /* static members */
   object MDCSegmentedButton {
     
-    @JSImport("material-components-web", "segmentedButton.MDCSegmentedButton.attachTo")
+    @JSImport("material-components-web", "segmentedButton.MDCSegmentedButton")
     @js.native
-    def attachTo(root: Element): typings.materialSegmentedButton.componentMod.MDCSegmentedButton = js.native
+    val ^ : js.Any = js.native
+    
+    inline def attachTo(root: Element): typings.materialSegmentedButton.componentMod.MDCSegmentedButton = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialSegmentedButton.componentMod.MDCSegmentedButton]
   }
   
   @JSImport("material-components-web", "segmentedButton.MDCSegmentedButtonFoundation")
@@ -40,7 +41,7 @@ object segmentedButton {
   @js.native
   class MDCSegmentedButtonSegment protected ()
     extends typings.materialSegmentedButton.mod.MDCSegmentedButtonSegment {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialSegmentedButton.segmentFoundationMod.MDCSegmentedButtonSegmentFoundation,
@@ -50,9 +51,11 @@ object segmentedButton {
   /* static members */
   object MDCSegmentedButtonSegment {
     
-    @JSImport("material-components-web", "segmentedButton.MDCSegmentedButtonSegment.attachTo")
+    @JSImport("material-components-web", "segmentedButton.MDCSegmentedButtonSegment")
     @js.native
-    def attachTo(root: Element): typings.materialSegmentedButton.segmentComponentMod.MDCSegmentedButtonSegment = js.native
+    val ^ : js.Any = js.native
+    
+    inline def attachTo(root: Element): typings.materialSegmentedButton.segmentComponentMod.MDCSegmentedButtonSegment = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialSegmentedButton.segmentComponentMod.MDCSegmentedButtonSegment]
   }
   
   @JSImport("material-components-web", "segmentedButton.MDCSegmentedButtonSegmentFoundation")

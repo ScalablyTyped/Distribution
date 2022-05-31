@@ -2,31 +2,32 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SceneOptimizer extends IDisposable {
+trait SceneOptimizer
+  extends StObject
+     with IDisposable {
   
-  var _checkCurrentState: js.Any = js.native
+  /* private */ var _checkCurrentState: js.Any = js.native
   
-  var _currentFrameRate: js.Any = js.native
+  /* private */ var _currentFrameRate: js.Any = js.native
   
-  var _currentPriorityLevel: js.Any = js.native
+  /* private */ var _currentPriorityLevel: js.Any = js.native
   
-  var _improvementMode: js.Any = js.native
+  /* private */ var _improvementMode: js.Any = js.native
   
-  var _isRunning: js.Any = js.native
+  /* private */ var _isRunning: js.Any = js.native
   
-  var _options: js.Any = js.native
+  /* private */ var _options: js.Any = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
-  var _sceneDisposeObserver: js.Any = js.native
+  /* private */ var _sceneDisposeObserver: js.Any = js.native
   
-  var _targetFrameRate: js.Any = js.native
+  /* private */ var _targetFrameRate: js.Any = js.native
   
-  var _trackerDuration: js.Any = js.native
+  /* private */ var _trackerDuration: js.Any = js.native
   
   /**
     * Gets the current frame rate checked by the SceneOptimizer

@@ -2,11 +2,12 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XRWindowsMotionController extends WindowsMotionController {
+trait XRWindowsMotionController
+  extends StObject
+     with WindowsMotionController {
   
   /**
     * Fired when the thumbstick on this controller is clicked

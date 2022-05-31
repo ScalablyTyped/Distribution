@@ -47,95 +47,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("jsrsasign.KJUR.asn1.DERBitString")
 @js.native
 class DERBitString ()
-  extends StObject
-     with typings.jsrsasign.jsrsasign.KJUR.asn1.DERBitString {
+  extends typings.jsrsasign.mod.KJUR.asn1.DERBitString {
   def this(params: ASN1ObjectParam) = this()
   def this(params: ArrayParam[Boolean]) = this()
   def this(params: BinParam) = this()
   def this(params: HexParam) = this()
-  
-  /**
-    * get hexadecimal string of ASN.1 TLV bytes
-    * @return hexadecimal string of ASN.1 TLV
-    */
-  /* CompleteClass */
-  override def getEncodedHex(): String = js.native
-  
-  /* CompleteClass */
-  override def getFreshValueHex(): String = js.native
-  
-  /**
-    * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
-    * @return hexadecimal string of ASN.1 TLV length(L)
-    */
-  /* CompleteClass */
-  override def getLengthHexFromValue(): String = js.native
-  
-  /**
-    * get hexadecimal string of ASN.1 TLV value(V) bytes
-    * @return hexadecimal string of ASN.1 TLV value(V) bytes
-    */
-  /* CompleteClass */
-  override def getValueHex(): String = js.native
-  
-  /** hexadecimal string of ASN.1 TLV length(L) */
-  /* CompleteClass */
-  var hL: String = js.native
-  
-  /** hexadecimal string of ASN.1 TLV tag(T) */
-  /* CompleteClass */
-  var hT: String = js.native
-  
-  /** hexadecimal string of ASN.1 TLV */
-  /* CompleteClass */
-  var hTLV: String = js.native
-  
-  /** hexadecimal string of ASN.1 TLV value(V) */
-  /* CompleteClass */
-  var hV: String = js.native
-  
-  /** flag whether internal data was changed */
-  /* CompleteClass */
-  var isModified: String = js.native
-  
-  /**
-    * set ASN.1 DER BitString by binary string
-    * @param binaryString binary value string (i.e. '10111')
-    * @description
-    * Its unused bits will be calculated automatically by length of
-    * 'binaryValue'.
-    *
-    * NOTE: Trailing zeros '0' will be ignored.
-    * @example
-    * o = new KJUR.asn1.DERBitString();
-    * o.setByBooleanArray("01011");
-    */
-  /* CompleteClass */
-  override def setByBinaryString(binaryString: String): Unit = js.native
-  
-  /**
-    * set ASN.1 TLV value(V) by an array of boolean
-    * @param booleanArray array of boolean (ex. [true, false, true])
-    * @description
-    * NOTE: Trailing falses will be ignored in the ASN.1 DER Object.
-    * @example
-    * o = new KJUR.asn1.DERBitString();
-    * o.setByBooleanArray([false, true, false, true, true]);
-    */
-  /* CompleteClass */
-  override def setByBooleanArray(booleanArray: js.Array[Boolean]): Unit = js.native
-  
-  /**
-    * set ASN.1 value(V) by a hexadecimal string including unused bits
-    */
-  /* CompleteClass */
-  override def setHexValueIncludingUnusedBits(newHexStringIncludingUnusedBits: String): Unit = js.native
-  
-  /**
-    * set ASN.1 value(V) by unused bit and hexadecimal string of value
-    */
-  /* CompleteClass */
-  override def setUnusedBitsAndHexValue(unusedBits: Double, hValue: String): Unit = js.native
 }
 object DERBitString {
   

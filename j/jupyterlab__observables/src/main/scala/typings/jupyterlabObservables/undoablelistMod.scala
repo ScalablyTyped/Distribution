@@ -5,7 +5,6 @@ import typings.jupyterlabObservables.observablelistMod.ObservableList
 import typings.luminoCoreutils.jsonMod.JSONValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object undoablelistMod {
@@ -24,34 +23,34 @@ object undoablelistMod {
     /**
       * Copy a change as JSON.
       */
-    var _copyChange: js.Any = js.native
+    /* private */ var _copyChange: js.Any = js.native
     
-    var _inCompound: js.Any = js.native
+    /* private */ var _inCompound: js.Any = js.native
     
-    var _index: js.Any = js.native
+    /* private */ var _index: js.Any = js.native
     
-    var _isUndoable: js.Any = js.native
+    /* private */ var _isUndoable: js.Any = js.native
     
-    var _madeCompoundChange: js.Any = js.native
+    /* private */ var _madeCompoundChange: js.Any = js.native
     
     /**
       * Handle a change in the list.
       */
-    var _onListChanged: js.Any = js.native
+    /* private */ var _onListChanged: js.Any = js.native
     
     /**
       * Redo a change event.
       */
-    var _redoChange: js.Any = js.native
+    /* private */ var _redoChange: js.Any = js.native
     
-    var _serializer: js.Any = js.native
+    /* private */ var _serializer: js.Any = js.native
     
-    var _stack: js.Any = js.native
+    /* private */ var _stack: js.Any = js.native
     
     /**
       * Undo a change event.
       */
-    var _undoChange: js.Any = js.native
+    /* private */ var _undoChange: js.Any = js.native
     
     /**
       * Begin a compound operation.
@@ -115,11 +114,28 @@ object undoablelistMod {
       */
     @JSImport("@jupyterlab/observables/lib/undoablelist", "ObservableUndoableList.IdentitySerializer")
     @js.native
-    class IdentitySerializer[T /* <: JSONValue */] () extends ISerializer[T]
+    class IdentitySerializer[T /* <: JSONValue */] ()
+      extends StObject
+         with ISerializer[T] {
+      
+      /**
+        * Deserialize the object from JSON.
+        */
+      /* CompleteClass */
+      override def fromJSON(value: JSONValue): T = js.native
+      
+      /**
+        * Convert the object to JSON.
+        */
+      /* CompleteClass */
+      override def toJSON(value: T): JSONValue = js.native
+    }
   }
   
   @js.native
-  trait IObservableUndoableList[T] extends IObservableList[T] {
+  trait IObservableUndoableList[T]
+    extends StObject
+       with IObservableList[T] {
     
     /**
       * Begin a compound operation.
@@ -161,35 +177,30 @@ object undoablelistMod {
     def undo(): Unit = js.native
   }
   
-  @js.native
   trait ISerializer[T] extends StObject {
     
     /**
       * Deserialize the object from JSON.
       */
-    def fromJSON(value: JSONValue): T = js.native
+    def fromJSON(value: JSONValue): T
     
     /**
       * Convert the object to JSON.
       */
-    def toJSON(value: T): JSONValue = js.native
+    def toJSON(value: T): JSONValue
   }
   object ISerializer {
     
-    @scala.inline
-    def apply[T](fromJSON: JSONValue => T, toJSON: T => JSONValue): ISerializer[T] = {
+    inline def apply[T](fromJSON: JSONValue => T, toJSON: T => JSONValue): ISerializer[T] = {
       val __obj = js.Dynamic.literal(fromJSON = js.Any.fromFunction1(fromJSON), toJSON = js.Any.fromFunction1(toJSON))
       __obj.asInstanceOf[ISerializer[T]]
     }
     
-    @scala.inline
-    implicit class ISerializerMutableBuilder[Self <: ISerializer[_], T] (val x: Self with ISerializer[T]) extends AnyVal {
+    extension [Self <: ISerializer[?], T](x: Self & ISerializer[T]) {
       
-      @scala.inline
-      def setFromJSON(value: JSONValue => T): Self = StObject.set(x, "fromJSON", js.Any.fromFunction1(value))
+      inline def setFromJSON(value: JSONValue => T): Self = StObject.set(x, "fromJSON", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToJSON(value: T => JSONValue): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
+      inline def setToJSON(value: T => JSONValue): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
     }
   }
 }

@@ -4,11 +4,12 @@ import typings.babylonjs.anon.OffsetX
 import typings.std.PointerEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FreeCameraMouseInput extends ICameraInput[FreeCamera] {
+trait FreeCameraMouseInput
+  extends StObject
+     with ICameraInput[FreeCamera] {
   
   /**
     * @hidden
@@ -16,11 +17,11 @@ trait FreeCameraMouseInput extends ICameraInput[FreeCamera] {
     */
   var _allowCameraRotation: Boolean = js.native
   
-  var _observer: js.Any = js.native
+  /* private */ var _observer: js.Any = js.native
   
-  var _onMouseMove: js.Any = js.native
+  /* private */ var _onMouseMove: js.Any = js.native
   
-  var _pointerInput: js.Any = js.native
+  /* private */ var _pointerInput: js.Any = js.native
   
   /**
     * Defines the pointer angular sensibility  along the X and Y axis or how fast is the camera rotating.
@@ -49,7 +50,7 @@ trait FreeCameraMouseInput extends ICameraInput[FreeCamera] {
     */
   var onPointerMovedObservable: Observable[OffsetX] = js.native
   
-  var previousPosition: js.Any = js.native
+  /* private */ var previousPosition: js.Any = js.native
   
   /**
     * Define if touch is enabled in the mouse input

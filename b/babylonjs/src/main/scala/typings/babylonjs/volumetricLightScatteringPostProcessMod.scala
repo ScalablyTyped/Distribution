@@ -11,7 +11,6 @@ import typings.babylonjs.renderTargetTextureMod.RenderTargetTexture
 import typings.babylonjs.sceneMod.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object volumetricLightScatteringPostProcessMod {
@@ -43,23 +42,23 @@ object volumetricLightScatteringPostProcessMod {
       scene: js.UndefOr[Scene]
     ) = this()
     
-    var _cachedDefines: js.Any = js.native
+    /* private */ var _cachedDefines: js.Any = js.native
     
-    var _createPass: js.Any = js.native
+    /* private */ var _createPass: js.Any = js.native
     
-    var _isReady: js.Any = js.native
+    /* private */ var _isReady: js.Any = js.native
     
-    var _meshExcluded: js.Any = js.native
+    /* private */ var _meshExcluded: js.Any = js.native
     
-    var _screenCoordinates: js.Any = js.native
+    /* private */ var _screenCoordinates: js.Any = js.native
     
-    var _updateMeshScreenCoordinates: js.Any = js.native
+    /* private */ var _updateMeshScreenCoordinates: js.Any = js.native
     
-    var _viewPort: js.Any = js.native
+    /* private */ var _viewPort: js.Any = js.native
     
-    var _volumetricLightScatteringPass: js.Any = js.native
+    /* private */ var _volumetricLightScatteringPass: js.Any = js.native
     
-    var _volumetricLightScatteringRTT: js.Any = js.native
+    /* private */ var _volumetricLightScatteringRTT: js.Any = js.native
     
     /**
       * If not undefined, the mesh position is computed from the attached node position
@@ -139,14 +138,16 @@ object volumetricLightScatteringPostProcessMod {
   /* static members */
   object VolumetricLightScatteringPostProcess {
     
+    @JSImport("babylonjs/PostProcesses/volumetricLightScatteringPostProcess", "VolumetricLightScatteringPostProcess")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a default mesh for the Volumeric Light Scattering post-process
       * @param name The mesh name
       * @param scene The scene where to create the mesh
       * @return the default mesh
       */
-    @JSImport("babylonjs/PostProcesses/volumetricLightScatteringPostProcess", "VolumetricLightScatteringPostProcess.CreateDefaultMesh")
-    @js.native
-    def CreateDefaultMesh(name: String, scene: Scene): Mesh = js.native
+    inline def CreateDefaultMesh(name: String, scene: Scene): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDefaultMesh")(name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
   }
 }

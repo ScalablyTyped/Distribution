@@ -7,7 +7,6 @@ import typings.jupyterlabDocregistry.registryMod.IDocumentWidget
 import typings.luminoCoreutils.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {

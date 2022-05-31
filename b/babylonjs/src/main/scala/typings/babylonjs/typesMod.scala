@@ -10,7 +10,6 @@ import typings.std.Uint16Array
 import typings.std.Uint32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -21,11 +20,13 @@ object typesMod {
   
   /** @hidden */
   @js.native
-  trait DeepImmutableArray[T] extends ReadonlyArray[DeepImmutable[T]]
+  trait DeepImmutableArray[T]
+    extends StObject
+       with ReadonlyArray[DeepImmutable[T]]
   
   type DeepImmutableObject[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ K in keyof T ]: babylonjs.babylonjs/types.DeepImmutable<T[K]>}
-    */ typings.babylonjs.babylonjsStrings.DeepImmutableObject with TopLevel[T]
+    */ typings.babylonjs.babylonjsStrings.DeepImmutableObject & TopLevel[T]
   
   type FloatArray = js.Array[Double] | Float32Array
   

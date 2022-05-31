@@ -6,7 +6,6 @@ import typings.babylonjs.rayMod.Ray
 import typings.babylonjs.smartArrayMod.SmartArrayNoDuplicate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object octreeBlockMod {
@@ -32,19 +31,19 @@ object octreeBlockMod {
       creationFunc: js.Function2[/* entry */ T, /* block */ OctreeBlock[T], Unit]
     ) = this()
     
-    var _boundingVectors: js.Any = js.native
+    /* private */ var _boundingVectors: js.Any = js.native
     
-    var _capacity: js.Any = js.native
+    /* private */ var _capacity: js.Any = js.native
     
-    var _creationFunc: js.Any = js.native
+    /* private */ var _creationFunc: js.Any = js.native
     
-    var _depth: js.Any = js.native
+    /* private */ var _depth: js.Any = js.native
     
-    var _maxDepth: js.Any = js.native
+    /* private */ var _maxDepth: js.Any = js.native
     
-    var _maxPoint: js.Any = js.native
+    /* private */ var _maxPoint: js.Any = js.native
     
-    var _minPoint: js.Any = js.native
+    /* private */ var _minPoint: js.Any = js.native
     
     /**
       * Add an array of elements to this block
@@ -128,12 +127,14 @@ object octreeBlockMod {
   /* static members */
   object OctreeBlock {
     
+    @JSImport("babylonjs/Culling/Octrees/octreeBlock", "OctreeBlock")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * @hidden
       */
-    @JSImport("babylonjs/Culling/Octrees/octreeBlock", "OctreeBlock._CreateBlocks")
-    @js.native
-    def _CreateBlocks[T](
+    inline def _CreateBlocks[T](
       worldMin: Vector3,
       worldMax: Vector3,
       entries: js.Array[T],
@@ -142,33 +143,28 @@ object octreeBlockMod {
       maxDepth: Double,
       target: IOctreeContainer[T],
       creationFunc: js.Function2[/* entry */ T, /* block */ OctreeBlock[T], Unit]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateBlocks")(worldMin.asInstanceOf[js.Any], worldMax.asInstanceOf[js.Any], entries.asInstanceOf[js.Any], maxBlockCapacity.asInstanceOf[js.Any], currentDepth.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any], target.asInstanceOf[js.Any], creationFunc.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @js.native
   trait IOctreeContainer[T] extends StObject {
     
     /**
       * Blocks within the octree
       */
-    var blocks: js.Array[OctreeBlock[T]] = js.native
+    var blocks: js.Array[OctreeBlock[T]]
   }
   object IOctreeContainer {
     
-    @scala.inline
-    def apply[T](blocks: js.Array[OctreeBlock[T]]): IOctreeContainer[T] = {
+    inline def apply[T](blocks: js.Array[OctreeBlock[T]]): IOctreeContainer[T] = {
       val __obj = js.Dynamic.literal(blocks = blocks.asInstanceOf[js.Any])
       __obj.asInstanceOf[IOctreeContainer[T]]
     }
     
-    @scala.inline
-    implicit class IOctreeContainerMutableBuilder[Self <: IOctreeContainer[_], T] (val x: Self with IOctreeContainer[T]) extends AnyVal {
+    extension [Self <: IOctreeContainer[?], T](x: Self & IOctreeContainer[T]) {
       
-      @scala.inline
-      def setBlocks(value: js.Array[OctreeBlock[T]]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
+      inline def setBlocks(value: js.Array[OctreeBlock[T]]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlocksVarargs(value: OctreeBlock[T]*): Self = StObject.set(x, "blocks", js.Array(value :_*))
+      inline def setBlocksVarargs(value: OctreeBlock[T]*): Self = StObject.set(x, "blocks", js.Array(value :_*))
     }
   }
 }

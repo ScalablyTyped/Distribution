@@ -4,15 +4,19 @@ import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.anon.BackUVsCap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.TubeBuilder")
 @js.native
 class TubeBuilder ()
-  extends typings.babylonjs.BABYLON.TubeBuilder
+  extends StObject
+     with typings.babylonjs.BABYLON.TubeBuilder
 /* static members */
 object TubeBuilder {
+  
+  @JSGlobal("BABYLON.TubeBuilder")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a tube mesh.
@@ -36,10 +40,6 @@ object TubeBuilder {
     * @see https://doc.babylonjs.com/how_to/parametric_shapes
     * @see https://doc.babylonjs.com/how_to/set_shapes#tube
     */
-  @JSGlobal("BABYLON.TubeBuilder.CreateTube")
-  @js.native
-  def CreateTube(name: String, options: BackUVsCap): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.TubeBuilder.CreateTube")
-  @js.native
-  def CreateTube(name: String, options: BackUVsCap, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
+  inline def CreateTube(name: String, options: BackUVsCap): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTube")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreateTube(name: String, options: BackUVsCap, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTube")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
 }

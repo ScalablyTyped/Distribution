@@ -12,6 +12,36 @@ inline def SDK_VERSION: java.lang.String = typings.firebase.mod.default.^.asInst
 inline def SDK_VERSION_=(x: java.lang.String): scala.Unit = typings.firebase.mod.default.^.asInstanceOf[js.Dynamic].updateDynamic("SDK_VERSION")(x.asInstanceOf[js.Any])
 
 /**
+  * Retrieves a Firebase {@link firebase.app.App app} instance.
+  *
+  * When called with no arguments, the default app is returned. When an app name
+  * is provided, the app corresponding to that name is returned.
+  *
+  * An exception is thrown if the app being retrieved has not yet been
+  * initialized.
+  *
+  * @example
+  * ```javascript
+  * // Return the default app
+  * var app = firebase.app();
+  * ```
+  *
+  * @example
+  * ```javascript
+  * // Return a named app
+  * var otherApp = firebase.app("otherApp");
+  * ```
+  *
+  * @param name Optional name of the app to return. If no name is
+  *   provided, the default is `"[DEFAULT]"`.
+  *
+  * @return The app corresponding to the provided app name.
+  *   If no app name is provided, the default app is returned.
+  */
+inline def app(): typings.firebase.mod.firebase.app.App = typings.firebase.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("app")().asInstanceOf[typings.firebase.mod.firebase.app.App]
+inline def app(name: java.lang.String): typings.firebase.mod.firebase.app.App = typings.firebase.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("app")(name.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.app.App]
+
+/**
   * A (read-only) array of all initialized apps.
   */
 inline def apps: js.Array[typings.firebase.mod.firebase.app.App] = typings.firebase.mod.default.^.asInstanceOf[js.Dynamic].selectDynamic("apps").asInstanceOf[js.Array[typings.firebase.mod.firebase.app.App]]

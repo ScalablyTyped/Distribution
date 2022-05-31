@@ -4,14 +4,15 @@ import typings.babylonjs.mathColorMod.Color3
 import typings.babylonjs.mathColorMod.Color4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gradientsMod {
   
   @JSImport("babylonjs/Misc/gradients", "Color3Gradient")
   @js.native
-  class Color3Gradient protected () extends IValueGradient {
+  class Color3Gradient protected ()
+    extends StObject
+       with IValueGradient {
     /**
       * Creates a new color3 gradient
       * @param gradient gets or sets the gradient value (between 0 and 1)
@@ -32,11 +33,19 @@ object gradientsMod {
       * Gets or sets the associated color
       */
     var color: Color3 = js.native
+    
+    /**
+      * Gets or sets the gradient value (between 0 and 1)
+      */
+    /* CompleteClass */
+    var gradient: Double = js.native
   }
   
   @JSImport("babylonjs/Misc/gradients", "ColorGradient")
   @js.native
-  class ColorGradient protected () extends IValueGradient {
+  class ColorGradient protected ()
+    extends StObject
+       with IValueGradient {
     /**
       * Creates a new color4 gradient
       * @param gradient gets or sets the gradient value (between 0 and 1)
@@ -84,11 +93,19 @@ object gradientsMod {
       * @param result defines the target Color4 to store the result in
       */
     def getColorToRef(result: Color4): Unit = js.native
+    
+    /**
+      * Gets or sets the gradient value (between 0 and 1)
+      */
+    /* CompleteClass */
+    var gradient: Double = js.native
   }
   
   @JSImport("babylonjs/Misc/gradients", "FactorGradient")
   @js.native
-  class FactorGradient protected () extends IValueGradient {
+  class FactorGradient protected ()
+    extends StObject
+       with IValueGradient {
     /**
       * Creates a new factor gradient
       * @param gradient gets or sets the gradient value (between 0 and 1)
@@ -136,6 +153,12 @@ object gradientsMod {
       * @returns the picked number
       */
     def getFactor(): Double = js.native
+    
+    /**
+      * Gets or sets the gradient value (between 0 and 1)
+      */
+    /* CompleteClass */
+    var gradient: Double = js.native
   }
   
   @JSImport("babylonjs/Misc/gradients", "GradientHelper")
@@ -144,42 +167,40 @@ object gradientsMod {
   /* static members */
   object GradientHelper {
     
+    @JSImport("babylonjs/Misc/gradients", "GradientHelper")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Gets the current gradient from an array of IValueGradient
       * @param ratio defines the current ratio to get
       * @param gradients defines the array of IValueGradient
       * @param updateFunc defines the callback function used to get the final value from the selected gradients
       */
-    @JSImport("babylonjs/Misc/gradients", "GradientHelper.GetCurrentGradient")
-    @js.native
-    def GetCurrentGradient(
+    inline def GetCurrentGradient(
       ratio: Double,
       gradients: js.Array[IValueGradient],
       updateFunc: js.Function3[/* current */ IValueGradient, /* next */ IValueGradient, /* scale */ Double, Unit]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCurrentGradient")(ratio.asInstanceOf[js.Any], gradients.asInstanceOf[js.Any], updateFunc.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @js.native
   trait IValueGradient extends StObject {
     
     /**
       * Gets or sets the gradient value (between 0 and 1)
       */
-    var gradient: Double = js.native
+    var gradient: Double
   }
   object IValueGradient {
     
-    @scala.inline
-    def apply(gradient: Double): IValueGradient = {
+    inline def apply(gradient: Double): IValueGradient = {
       val __obj = js.Dynamic.literal(gradient = gradient.asInstanceOf[js.Any])
       __obj.asInstanceOf[IValueGradient]
     }
     
-    @scala.inline
-    implicit class IValueGradientMutableBuilder[Self <: IValueGradient] (val x: Self) extends AnyVal {
+    extension [Self <: IValueGradient](x: Self) {
       
-      @scala.inline
-      def setGradient(value: Double): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
+      inline def setGradient(value: Double): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     }
   }
 }

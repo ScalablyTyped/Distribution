@@ -115,13 +115,10 @@ object modalModalMod {
     def displayName: js.UndefOr[String] = js.native
     inline def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    /* Inlined react.react.WeakValidationMap<{[x: string] : any, [x: number] : any}> */
-    object propTypes {
-      
-      @JSImport("rbx/components/modal/modal", "Modal.propTypes")
-      @js.native
-      val ^ : Active = js.native
-    }
+    @JSImport("rbx/components/modal/modal", "Modal.propTypes")
+    @js.native
+    def propTypes: Active = js.native
+    inline def propTypes_=(x: Active): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("rbx/components/modal/modal", "Modal.$$typeof")
     @js.native

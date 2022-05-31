@@ -3,37 +3,38 @@ package typings.babylonjs.BABYLON
 import typings.babylonjs.XRReferenceSpace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebXRAnchorSystem extends WebXRAbstractFeature {
+trait WebXRAnchorSystem
+  extends StObject
+     with WebXRAbstractFeature {
   
-  var _createAnchorAtTransformation: js.Any = js.native
+  /* private */ var _createAnchorAtTransformation: js.Any = js.native
   
   /**
     * avoiding using Array.find for global support.
     * @param xrAnchor the plane to find in the array
     */
-  var _findIndexInAnchorArray: js.Any = js.native
+  /* private */ var _findIndexInAnchorArray: js.Any = js.native
   
-  var _futureAnchors: js.Any = js.native
+  /* private */ var _futureAnchors: js.Any = js.native
   
-  var _lastFrameDetected: js.Any = js.native
+  /* private */ var _lastFrameDetected: js.Any = js.native
   
-  var _options: js.Any = js.native
+  /* private */ var _options: js.Any = js.native
   
-  var _populateTmpTransformation: js.Any = js.native
+  /* private */ var _populateTmpTransformation: js.Any = js.native
   
-  var _referenceSpaceForFrameAnchors: js.Any = js.native
+  /* private */ var _referenceSpaceForFrameAnchors: js.Any = js.native
   
-  var _tmpQuaternion: js.Any = js.native
+  /* private */ var _tmpQuaternion: js.Any = js.native
   
-  var _tmpVector: js.Any = js.native
+  /* private */ var _tmpVector: js.Any = js.native
   
-  var _trackedAnchors: js.Any = js.native
+  /* private */ var _trackedAnchors: js.Any = js.native
   
-  var _updateAnchorWithXRFrame: js.Any = js.native
+  /* private */ var _updateAnchorWithXRFrame: js.Any = js.native
   
   /**
     * Add a new anchor at a specific position and rotation
@@ -48,11 +49,7 @@ trait WebXRAnchorSystem extends WebXRAbstractFeature {
     * @returns A promise that fulfills when babylon has created the corresponding WebXRAnchor object and tracking has begun
     */
   def addAnchorAtPositionAndRotationAsync(position: Vector3): js.Promise[IWebXRAnchor] = js.native
-  def addAnchorAtPositionAndRotationAsync(
-    position: Vector3,
-    rotationQuaternion: js.UndefOr[scala.Nothing],
-    forceCreateInCurrentFrame: Boolean
-  ): js.Promise[IWebXRAnchor] = js.native
+  def addAnchorAtPositionAndRotationAsync(position: Vector3, rotationQuaternion: Unit, forceCreateInCurrentFrame: Boolean): js.Promise[IWebXRAnchor] = js.native
   def addAnchorAtPositionAndRotationAsync(position: Vector3, rotationQuaternion: Quaternion): js.Promise[IWebXRAnchor] = js.native
   def addAnchorAtPositionAndRotationAsync(position: Vector3, rotationQuaternion: Quaternion, forceCreateInCurrentFrame: Boolean): js.Promise[IWebXRAnchor] = js.native
   
@@ -67,11 +64,7 @@ trait WebXRAnchorSystem extends WebXRAbstractFeature {
     * @returns A promise that fulfills when babylon has created the corresponding WebXRAnchor object and tracking has begun
     */
   def addAnchorPointUsingHitTestResultAsync(hitTestResult: IWebXRHitResult): js.Promise[IWebXRAnchor] = js.native
-  def addAnchorPointUsingHitTestResultAsync(
-    hitTestResult: IWebXRHitResult,
-    position: js.UndefOr[scala.Nothing],
-    rotationQuaternion: Quaternion
-  ): js.Promise[IWebXRAnchor] = js.native
+  def addAnchorPointUsingHitTestResultAsync(hitTestResult: IWebXRHitResult, position: Unit, rotationQuaternion: Quaternion): js.Promise[IWebXRAnchor] = js.native
   def addAnchorPointUsingHitTestResultAsync(hitTestResult: IWebXRHitResult, position: Vector3): js.Promise[IWebXRAnchor] = js.native
   def addAnchorPointUsingHitTestResultAsync(hitTestResult: IWebXRHitResult, position: Vector3, rotationQuaternion: Quaternion): js.Promise[IWebXRAnchor] = js.native
   

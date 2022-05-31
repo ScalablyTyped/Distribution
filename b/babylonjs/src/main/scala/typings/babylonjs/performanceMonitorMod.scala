@@ -2,7 +2,6 @@ package typings.babylonjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object performanceMonitorMod {
@@ -16,11 +15,11 @@ object performanceMonitorMod {
   class PerformanceMonitor () extends StObject {
     def this(frameSampleSize: Double) = this()
     
-    var _enabled: js.Any = js.native
+    /* private */ var _enabled: js.Any = js.native
     
-    var _lastFrameTimeMs: js.Any = js.native
+    /* private */ var _lastFrameTimeMs: js.Any = js.native
     
-    var _rollingFrameTime: js.Any = js.native
+    /* private */ var _rollingFrameTime: js.Any = js.native
     
     /**
       * Returns the average framerate in frames per second over the sliding window (or the subset of frames sampled so far)
@@ -90,13 +89,13 @@ object performanceMonitorMod {
       */
     def this(length: Double) = this()
     
-    var _m2: Double = js.native
+    /* protected */ var _m2: Double = js.native
     
-    var _pos: Double = js.native
+    /* protected */ var _pos: Double = js.native
     
-    var _sampleCount: Double = js.native
+    /* protected */ var _sampleCount: Double = js.native
     
-    var _samples: js.Array[Double] = js.native
+    /* protected */ var _samples: js.Array[Double] = js.native
     
     /**
       * Wraps a value around the sample range boundaries

@@ -14,7 +14,6 @@ import typings.std.WebGLRenderbuffer
 import typings.std.WebGLTexture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -77,7 +76,7 @@ trait InternalTexture extends StObject {
   /** @hidden */
   var _depthStencilTextureArray: Nullable[WebGLTexture] = js.native
   
-  var _engine: js.Any = js.native
+  /* private */ var _engine: js.Any = js.native
   
   /** @hidden */
   var _extension: String = js.native

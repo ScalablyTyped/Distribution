@@ -3,11 +3,12 @@ package typings.babylonjs.BABYLON
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BinaryFileAssetTask extends AbstractAssetTask {
+trait BinaryFileAssetTask
+  extends StObject
+     with AbstractAssetTask {
   
   /**
     * Gets the lodaded data (as an array buffer)
@@ -18,9 +19,9 @@ trait BinaryFileAssetTask extends AbstractAssetTask {
     * Callback called when the task is successful
     */
   def onError(task: BinaryFileAssetTask): Unit = js.native
-  def onError(task: BinaryFileAssetTask, message: js.UndefOr[scala.Nothing], exception: js.Any): Unit = js.native
   def onError(task: BinaryFileAssetTask, message: String): Unit = js.native
   def onError(task: BinaryFileAssetTask, message: String, exception: js.Any): Unit = js.native
+  def onError(task: BinaryFileAssetTask, message: Unit, exception: js.Any): Unit = js.native
   
   /**
     * Callback called when the task is successful

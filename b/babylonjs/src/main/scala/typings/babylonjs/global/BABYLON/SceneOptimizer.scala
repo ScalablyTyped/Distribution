@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.SceneOptimizer")
 @js.native
 class SceneOptimizer protected ()
-  extends typings.babylonjs.BABYLON.SceneOptimizer {
+  extends StObject
+     with typings.babylonjs.BABYLON.SceneOptimizer {
   /**
     * Creates a new SceneOptimizer
     * @param scene defines the scene to work on
@@ -18,11 +18,7 @@ class SceneOptimizer protected ()
     */
   def this(scene: typings.babylonjs.BABYLON.Scene) = this()
   def this(scene: typings.babylonjs.BABYLON.Scene, options: typings.babylonjs.BABYLON.SceneOptimizerOptions) = this()
-  def this(
-    scene: typings.babylonjs.BABYLON.Scene,
-    options: js.UndefOr[scala.Nothing],
-    autoGeneratePriorities: Boolean
-  ) = this()
+  def this(scene: typings.babylonjs.BABYLON.Scene, options: Unit, autoGeneratePriorities: Boolean) = this()
   def this(
     scene: typings.babylonjs.BABYLON.Scene,
     options: typings.babylonjs.BABYLON.SceneOptimizerOptions,
@@ -30,20 +26,14 @@ class SceneOptimizer protected ()
   ) = this()
   def this(
     scene: typings.babylonjs.BABYLON.Scene,
-    options: js.UndefOr[scala.Nothing],
-    autoGeneratePriorities: js.UndefOr[scala.Nothing],
-    improvementMode: Boolean
-  ) = this()
-  def this(
-    scene: typings.babylonjs.BABYLON.Scene,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     autoGeneratePriorities: Boolean,
     improvementMode: Boolean
   ) = this()
   def this(
     scene: typings.babylonjs.BABYLON.Scene,
-    options: typings.babylonjs.BABYLON.SceneOptimizerOptions,
-    autoGeneratePriorities: js.UndefOr[scala.Nothing],
+    options: Unit,
+    autoGeneratePriorities: Unit,
     improvementMode: Boolean
   ) = this()
   def this(
@@ -52,9 +42,25 @@ class SceneOptimizer protected ()
     autoGeneratePriorities: Boolean,
     improvementMode: Boolean
   ) = this()
+  def this(
+    scene: typings.babylonjs.BABYLON.Scene,
+    options: typings.babylonjs.BABYLON.SceneOptimizerOptions,
+    autoGeneratePriorities: Unit,
+    improvementMode: Boolean
+  ) = this()
+  
+  /**
+    * Releases all held resources
+    */
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
 }
 /* static members */
 object SceneOptimizer {
+  
+  @JSGlobal("BABYLON.SceneOptimizer")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Helper function to create a SceneOptimizer with one single line of code
@@ -64,56 +70,36 @@ object SceneOptimizer {
     * @param onFailure defines a callback to call on failure
     * @returns the new SceneOptimizer object
     */
-  @JSGlobal("BABYLON.SceneOptimizer.OptimizeAsync")
-  @js.native
-  def OptimizeAsync(scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.SceneOptimizer = js.native
-  @JSGlobal("BABYLON.SceneOptimizer.OptimizeAsync")
-  @js.native
-  def OptimizeAsync(
+  inline def OptimizeAsync(scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.SceneOptimizer = ^.asInstanceOf[js.Dynamic].applyDynamic("OptimizeAsync")(scene.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.SceneOptimizer]
+  inline def OptimizeAsync(scene: typings.babylonjs.BABYLON.Scene, options: Unit, onSuccess: js.Function0[Unit]): typings.babylonjs.BABYLON.SceneOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("OptimizeAsync")(scene.asInstanceOf[js.Any], options.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.SceneOptimizer]
+  inline def OptimizeAsync(
     scene: typings.babylonjs.BABYLON.Scene,
-    options: js.UndefOr[scala.Nothing],
-    onSuccess: js.UndefOr[scala.Nothing],
-    onFailure: js.Function0[Unit]
-  ): typings.babylonjs.BABYLON.SceneOptimizer = js.native
-  @JSGlobal("BABYLON.SceneOptimizer.OptimizeAsync")
-  @js.native
-  def OptimizeAsync(
-    scene: typings.babylonjs.BABYLON.Scene,
-    options: js.UndefOr[scala.Nothing],
-    onSuccess: js.Function0[Unit]
-  ): typings.babylonjs.BABYLON.SceneOptimizer = js.native
-  @JSGlobal("BABYLON.SceneOptimizer.OptimizeAsync")
-  @js.native
-  def OptimizeAsync(
-    scene: typings.babylonjs.BABYLON.Scene,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     onSuccess: js.Function0[Unit],
     onFailure: js.Function0[Unit]
-  ): typings.babylonjs.BABYLON.SceneOptimizer = js.native
-  @JSGlobal("BABYLON.SceneOptimizer.OptimizeAsync")
-  @js.native
-  def OptimizeAsync(scene: typings.babylonjs.BABYLON.Scene, options: typings.babylonjs.BABYLON.SceneOptimizerOptions): typings.babylonjs.BABYLON.SceneOptimizer = js.native
-  @JSGlobal("BABYLON.SceneOptimizer.OptimizeAsync")
-  @js.native
-  def OptimizeAsync(
+  ): typings.babylonjs.BABYLON.SceneOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("OptimizeAsync")(scene.asInstanceOf[js.Any], options.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onFailure.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.SceneOptimizer]
+  inline def OptimizeAsync(
     scene: typings.babylonjs.BABYLON.Scene,
-    options: typings.babylonjs.BABYLON.SceneOptimizerOptions,
-    onSuccess: js.UndefOr[scala.Nothing],
+    options: Unit,
+    onSuccess: Unit,
     onFailure: js.Function0[Unit]
-  ): typings.babylonjs.BABYLON.SceneOptimizer = js.native
-  @JSGlobal("BABYLON.SceneOptimizer.OptimizeAsync")
-  @js.native
-  def OptimizeAsync(
+  ): typings.babylonjs.BABYLON.SceneOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("OptimizeAsync")(scene.asInstanceOf[js.Any], options.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onFailure.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.SceneOptimizer]
+  inline def OptimizeAsync(scene: typings.babylonjs.BABYLON.Scene, options: typings.babylonjs.BABYLON.SceneOptimizerOptions): typings.babylonjs.BABYLON.SceneOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("OptimizeAsync")(scene.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.SceneOptimizer]
+  inline def OptimizeAsync(
     scene: typings.babylonjs.BABYLON.Scene,
     options: typings.babylonjs.BABYLON.SceneOptimizerOptions,
     onSuccess: js.Function0[Unit]
-  ): typings.babylonjs.BABYLON.SceneOptimizer = js.native
-  @JSGlobal("BABYLON.SceneOptimizer.OptimizeAsync")
-  @js.native
-  def OptimizeAsync(
+  ): typings.babylonjs.BABYLON.SceneOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("OptimizeAsync")(scene.asInstanceOf[js.Any], options.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.SceneOptimizer]
+  inline def OptimizeAsync(
     scene: typings.babylonjs.BABYLON.Scene,
     options: typings.babylonjs.BABYLON.SceneOptimizerOptions,
     onSuccess: js.Function0[Unit],
     onFailure: js.Function0[Unit]
-  ): typings.babylonjs.BABYLON.SceneOptimizer = js.native
+  ): typings.babylonjs.BABYLON.SceneOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("OptimizeAsync")(scene.asInstanceOf[js.Any], options.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onFailure.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.SceneOptimizer]
+  inline def OptimizeAsync(
+    scene: typings.babylonjs.BABYLON.Scene,
+    options: typings.babylonjs.BABYLON.SceneOptimizerOptions,
+    onSuccess: Unit,
+    onFailure: js.Function0[Unit]
+  ): typings.babylonjs.BABYLON.SceneOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("OptimizeAsync")(scene.asInstanceOf[js.Any], options.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onFailure.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.SceneOptimizer]
 }

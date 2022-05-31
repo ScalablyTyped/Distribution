@@ -2,7 +2,6 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -100,21 +99,16 @@ trait IPhysicsEnginePlugin extends StObject {
   def setGravity(gravity: Vector3): Unit = js.native
   
   def setLimit(joint: IMotorEnabledJoint, upperLimit: Double): Unit = js.native
-  def setLimit(
-    joint: IMotorEnabledJoint,
-    upperLimit: Double,
-    lowerLimit: js.UndefOr[scala.Nothing],
-    motorIndex: Double
-  ): Unit = js.native
   def setLimit(joint: IMotorEnabledJoint, upperLimit: Double, lowerLimit: Double): Unit = js.native
   def setLimit(joint: IMotorEnabledJoint, upperLimit: Double, lowerLimit: Double, motorIndex: Double): Unit = js.native
+  def setLimit(joint: IMotorEnabledJoint, upperLimit: Double, lowerLimit: Unit, motorIndex: Double): Unit = js.native
   
   def setLinearVelocity(impostor: PhysicsImpostor, velocity: Nullable[Vector3]): Unit = js.native
   
   def setMotor(joint: IMotorEnabledJoint, speed: Double): Unit = js.native
-  def setMotor(joint: IMotorEnabledJoint, speed: Double, maxForce: js.UndefOr[scala.Nothing], motorIndex: Double): Unit = js.native
   def setMotor(joint: IMotorEnabledJoint, speed: Double, maxForce: Double): Unit = js.native
   def setMotor(joint: IMotorEnabledJoint, speed: Double, maxForce: Double, motorIndex: Double): Unit = js.native
+  def setMotor(joint: IMotorEnabledJoint, speed: Double, maxForce: Unit, motorIndex: Double): Unit = js.native
   
   def setPhysicsBodyTransformation(impostor: PhysicsImpostor, newPosition: Vector3, newRotation: Quaternion): Unit = js.native
   

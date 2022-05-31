@@ -10,7 +10,6 @@ import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.uniformBufferMod.UniformBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pbrAnisotropicConfigurationMod {
@@ -25,14 +24,14 @@ object pbrAnisotropicConfigurationMod {
     def this(markAllSubMeshesAsTexturesDirty: js.Function0[Unit]) = this()
     
     /** @hidden */
-    var _internalMarkAllSubMeshesAsTexturesDirty: js.Any = js.native
+    /* private */ var _internalMarkAllSubMeshesAsTexturesDirty: js.Any = js.native
     
-    var _isEnabled: js.Any = js.native
+    /* private */ var _isEnabled: js.Any = js.native
     
     /** @hidden */
     def _markAllSubMeshesAsTexturesDirty(): Unit = js.native
     
-    var _texture: js.Any = js.native
+    /* private */ var _texture: js.Any = js.native
     
     /**
       * Binds the material data.
@@ -136,6 +135,10 @@ object pbrAnisotropicConfigurationMod {
   /* static members */
   object PBRAnisotropicConfiguration {
     
+    @JSImport("babylonjs/Materials/PBR/pbrAnisotropicConfiguration", "PBRAnisotropicConfiguration")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Add fallbacks to the effect fallbacks list.
       * @param defines defines the Base texture to use.
@@ -143,54 +146,44 @@ object pbrAnisotropicConfigurationMod {
       * @param currentRank defines the current fallback rank.
       * @returns the new fallback rank.
       */
-    @JSImport("babylonjs/Materials/PBR/pbrAnisotropicConfiguration", "PBRAnisotropicConfiguration.AddFallbacks")
-    @js.native
-    def AddFallbacks(defines: IMaterialAnisotropicDefines, fallbacks: EffectFallbacks, currentRank: Double): Double = js.native
+    inline def AddFallbacks(defines: IMaterialAnisotropicDefines, fallbacks: EffectFallbacks, currentRank: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("AddFallbacks")(defines.asInstanceOf[js.Any], fallbacks.asInstanceOf[js.Any], currentRank.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Add the required samplers to the current list.
       * @param samplers defines the current sampler list.
       */
-    @JSImport("babylonjs/Materials/PBR/pbrAnisotropicConfiguration", "PBRAnisotropicConfiguration.AddSamplers")
-    @js.native
-    def AddSamplers(samplers: js.Array[String]): Unit = js.native
+    inline def AddSamplers(samplers: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AddSamplers")(samplers.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Add the required uniforms to the current list.
       * @param uniforms defines the current uniform list.
       */
-    @JSImport("babylonjs/Materials/PBR/pbrAnisotropicConfiguration", "PBRAnisotropicConfiguration.AddUniforms")
-    @js.native
-    def AddUniforms(uniforms: js.Array[String]): Unit = js.native
+    inline def AddUniforms(uniforms: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AddUniforms")(uniforms.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Add the required uniforms to the current buffer.
       * @param uniformBuffer defines the current uniform buffer.
       */
-    @JSImport("babylonjs/Materials/PBR/pbrAnisotropicConfiguration", "PBRAnisotropicConfiguration.PrepareUniformBuffer")
-    @js.native
-    def PrepareUniformBuffer(uniformBuffer: UniformBuffer): Unit = js.native
+    inline def PrepareUniformBuffer(uniformBuffer: UniformBuffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("PrepareUniformBuffer")(uniformBuffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @js.native
   trait IMaterialAnisotropicDefines extends StObject {
     
-    var ANISOTROPIC: Boolean = js.native
+    var ANISOTROPIC: Boolean
     
-    var ANISOTROPIC_TEXTURE: Boolean = js.native
+    var ANISOTROPIC_TEXTURE: Boolean
     
-    var ANISOTROPIC_TEXTUREDIRECTUV: Double = js.native
+    var ANISOTROPIC_TEXTUREDIRECTUV: Double
     
-    var MAINUV1: Boolean = js.native
+    var MAINUV1: Boolean
     
-    var _areTexturesDirty: Boolean = js.native
+    var _areTexturesDirty: Boolean
     
-    var _needUVs: Boolean = js.native
+    var _needUVs: Boolean
   }
   object IMaterialAnisotropicDefines {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ANISOTROPIC: Boolean,
       ANISOTROPIC_TEXTURE: Boolean,
       ANISOTROPIC_TEXTUREDIRECTUV: Double,
@@ -202,26 +195,19 @@ object pbrAnisotropicConfigurationMod {
       __obj.asInstanceOf[IMaterialAnisotropicDefines]
     }
     
-    @scala.inline
-    implicit class IMaterialAnisotropicDefinesMutableBuilder[Self <: IMaterialAnisotropicDefines] (val x: Self) extends AnyVal {
+    extension [Self <: IMaterialAnisotropicDefines](x: Self) {
       
-      @scala.inline
-      def setANISOTROPIC(value: Boolean): Self = StObject.set(x, "ANISOTROPIC", value.asInstanceOf[js.Any])
+      inline def setANISOTROPIC(value: Boolean): Self = StObject.set(x, "ANISOTROPIC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setANISOTROPIC_TEXTURE(value: Boolean): Self = StObject.set(x, "ANISOTROPIC_TEXTURE", value.asInstanceOf[js.Any])
+      inline def setANISOTROPIC_TEXTURE(value: Boolean): Self = StObject.set(x, "ANISOTROPIC_TEXTURE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setANISOTROPIC_TEXTUREDIRECTUV(value: Double): Self = StObject.set(x, "ANISOTROPIC_TEXTUREDIRECTUV", value.asInstanceOf[js.Any])
+      inline def setANISOTROPIC_TEXTUREDIRECTUV(value: Double): Self = StObject.set(x, "ANISOTROPIC_TEXTUREDIRECTUV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMAINUV1(value: Boolean): Self = StObject.set(x, "MAINUV1", value.asInstanceOf[js.Any])
+      inline def setMAINUV1(value: Boolean): Self = StObject.set(x, "MAINUV1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_areTexturesDirty(value: Boolean): Self = StObject.set(x, "_areTexturesDirty", value.asInstanceOf[js.Any])
+      inline def set_areTexturesDirty(value: Boolean): Self = StObject.set(x, "_areTexturesDirty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_needUVs(value: Boolean): Self = StObject.set(x, "_needUVs", value.asInstanceOf[js.Any])
+      inline def set_needUVs(value: Boolean): Self = StObject.set(x, "_needUVs", value.asInstanceOf[js.Any])
     }
   }
 }

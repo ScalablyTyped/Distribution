@@ -2,25 +2,24 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OctreeBlock[T] extends StObject {
   
-  var _boundingVectors: js.Any = js.native
+  /* private */ var _boundingVectors: js.Any = js.native
   
-  var _capacity: js.Any = js.native
+  /* private */ var _capacity: js.Any = js.native
   
-  var _creationFunc: js.Any = js.native
+  /* private */ var _creationFunc: js.Any = js.native
   
-  var _depth: js.Any = js.native
+  /* private */ var _depth: js.Any = js.native
   
-  var _maxDepth: js.Any = js.native
+  /* private */ var _maxDepth: js.Any = js.native
   
-  var _maxPoint: js.Any = js.native
+  /* private */ var _maxPoint: js.Any = js.native
   
-  var _minPoint: js.Any = js.native
+  /* private */ var _minPoint: js.Any = js.native
   
   /**
     * Add an array of elements to this block

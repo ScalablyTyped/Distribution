@@ -349,12 +349,5 @@ object networking {
       */
     inline def startDisconnect(networkGuid: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startDisconnect")(networkGuid.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def startDisconnect(networkGuid: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startDisconnect")(networkGuid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    /**
-      * Partial classes for internal use
-      * @internal
-      * @private
-      */
-    object internal
   }
 }

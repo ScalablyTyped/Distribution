@@ -2,27 +2,28 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MultiRenderTarget extends RenderTargetTexture {
+trait MultiRenderTarget
+  extends StObject
+     with RenderTargetTexture {
   
-  var _count: js.Any = js.native
+  /* private */ var _count: js.Any = js.native
   
-  var _createInternalTextures: js.Any = js.native
+  /* private */ var _createInternalTextures: js.Any = js.native
   
-  var _createTextures: js.Any = js.native
+  /* private */ var _createTextures: js.Any = js.native
   
-  var _initTypes: js.Any = js.native
+  /* private */ var _initTypes: js.Any = js.native
   
-  var _internalTextures: js.Any = js.native
+  /* private */ var _internalTextures: js.Any = js.native
   
-  var _multiRenderTargetOptions: js.Any = js.native
+  /* private */ var _multiRenderTargetOptions: js.Any = js.native
   
   def _rebuild(forceFullRebuild: Boolean): Unit = js.native
   
-  var _textures: js.Any = js.native
+  /* private */ var _textures: js.Any = js.native
   
   /**
     * Gets the number of textures in this MRT. This number can be different from `_textures.length` in case a depth texture is generated.

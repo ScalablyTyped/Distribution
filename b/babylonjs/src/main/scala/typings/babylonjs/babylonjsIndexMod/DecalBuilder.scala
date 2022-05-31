@@ -3,7 +3,6 @@ package typings.babylonjs.babylonjsIndexMod
 import typings.babylonjs.anon.Angle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Meshes/index", "DecalBuilder")
@@ -12,6 +11,10 @@ class DecalBuilder ()
   extends typings.babylonjs.buildersIndexMod.DecalBuilder
 /* static members */
 object DecalBuilder {
+  
+  @JSImport("babylonjs/Meshes/index", "DecalBuilder")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a decal mesh.
@@ -27,7 +30,5 @@ object DecalBuilder {
     * @returns the decal mesh
     * @see https://doc.babylonjs.com/how_to/decals
     */
-  @JSImport("babylonjs/Meshes/index", "DecalBuilder.CreateDecal")
-  @js.native
-  def CreateDecal(name: String, sourceMesh: typings.babylonjs.abstractMeshMod.AbstractMesh, options: Angle): typings.babylonjs.meshMod.Mesh = js.native
+  inline def CreateDecal(name: String, sourceMesh: typings.babylonjs.abstractMeshMod.AbstractMesh, options: Angle): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDecal")(name.asInstanceOf[js.Any], sourceMesh.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
 }

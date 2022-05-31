@@ -9,29 +9,44 @@ import typings.jupyterlabServices.messagesMod.IOPubMessageType
 import typings.luminoDisposable.mod.IDisposable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object foreignMod {
   
   @JSImport("@jupyterlab/console/lib/foreign", "ForeignHandler")
   @js.native
-  class ForeignHandler protected () extends IDisposable {
+  class ForeignHandler protected ()
+    extends StObject
+       with IDisposable {
     /**
       * Construct a new foreign message handler.
       */
     def this(options: IOptions) = this()
     
-    var _enabled: js.Any = js.native
+    /* private */ var _enabled: js.Any = js.native
     
-    var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: js.Any = js.native
     
     /**
       * Create a new code cell for an input originated from a foreign session.
       */
-    var _newCell: js.Any = js.native
+    /* private */ var _newCell: js.Any = js.native
     
-    var _parent: js.Any = js.native
+    /* private */ var _parent: js.Any = js.native
+    
+    /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * Set whether the handler is able to inject foreign cells into a console.
@@ -39,6 +54,14 @@ object foreignMod {
     def enabled: Boolean = js.native
     def enabled_=(value: Boolean): Unit = js.native
     
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
     /**
       * Test whether the handler is disposed.
       */
@@ -68,68 +91,61 @@ object foreignMod {
     /**
       * The instantiation options for a foreign handler.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The parent into which the handler will inject code cells.
         */
-      var parent: IReceiver = js.native
+      var parent: IReceiver
       
       /**
         * The client session used by the foreign handler.
         */
-      var sessionContext: ISessionContext = js.native
+      var sessionContext: ISessionContext
     }
     object IOptions {
       
-      @scala.inline
-      def apply(parent: IReceiver, sessionContext: ISessionContext): IOptions = {
+      inline def apply(parent: IReceiver, sessionContext: ISessionContext): IOptions = {
         val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], sessionContext = sessionContext.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setParent(value: IReceiver): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+        inline def setParent(value: IReceiver): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSessionContext(value: ISessionContext): Self = StObject.set(x, "sessionContext", value.asInstanceOf[js.Any])
+        inline def setSessionContext(value: ISessionContext): Self = StObject.set(x, "sessionContext", value.asInstanceOf[js.Any])
       }
     }
     
     /**
       * A receiver of newly created foreign cells.
       */
-    @js.native
     trait IReceiver extends StObject {
       
       /**
         * Add a newly created cell.
         */
-      def addCell(cell: CodeCell, msgId: String): Unit = js.native
+      def addCell(cell: CodeCell, msgId: String): Unit
       
       /**
         * Create a cell.
         */
-      def createCodeCell(): CodeCell = js.native
+      def createCodeCell(): CodeCell
       
       /**
         * Get a cell associated with a message id.
         */
-      def getCell(msgId: String): js.UndefOr[CodeCell] = js.native
+      def getCell(msgId: String): js.UndefOr[CodeCell]
       
       /**
         * Trigger a rendering update on the receiver.
         */
-      def update(): Unit = js.native
+      def update(): Unit
     }
     object IReceiver {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         addCell: (CodeCell, String) => Unit,
         createCodeCell: () => CodeCell,
         getCell: String => js.UndefOr[CodeCell],
@@ -139,20 +155,15 @@ object foreignMod {
         __obj.asInstanceOf[IReceiver]
       }
       
-      @scala.inline
-      implicit class IReceiverMutableBuilder[Self <: IReceiver] (val x: Self) extends AnyVal {
+      extension [Self <: IReceiver](x: Self) {
         
-        @scala.inline
-        def setAddCell(value: (CodeCell, String) => Unit): Self = StObject.set(x, "addCell", js.Any.fromFunction2(value))
+        inline def setAddCell(value: (CodeCell, String) => Unit): Self = StObject.set(x, "addCell", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setCreateCodeCell(value: () => CodeCell): Self = StObject.set(x, "createCodeCell", js.Any.fromFunction0(value))
+        inline def setCreateCodeCell(value: () => CodeCell): Self = StObject.set(x, "createCodeCell", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetCell(value: String => js.UndefOr[CodeCell]): Self = StObject.set(x, "getCell", js.Any.fromFunction1(value))
+        inline def setGetCell(value: String => js.UndefOr[CodeCell]): Self = StObject.set(x, "getCell", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+        inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
       }
     }
   }

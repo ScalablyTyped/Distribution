@@ -2,50 +2,53 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BoundingBoxGizmo extends Gizmo {
+trait BoundingBoxGizmo
+  extends StObject
+     with Gizmo {
   
   /**
     * Mesh used as a pivot to rotate the attached node
     */
-  var _anchorMesh: js.Any = js.native
+  /* private */ var _anchorMesh: js.Any = js.native
   
-  var _boundingDimensions: js.Any = js.native
+  /* protected */ def _attachedNodeChanged(value: Nullable[AbstractMesh]): Unit = js.native
   
-  var _dragMesh: js.Any = js.native
+  /* private */ var _boundingDimensions: js.Any = js.native
   
-  var _existingMeshScale: js.Any = js.native
+  /* private */ var _dragMesh: js.Any = js.native
   
-  var _lineBoundingBox: js.Any = js.native
+  /* private */ var _existingMeshScale: js.Any = js.native
   
-  var _pointerObserver: js.Any = js.native
+  /* private */ var _lineBoundingBox: js.Any = js.native
   
-  var _renderObserver: js.Any = js.native
+  /* private */ var _pointerObserver: js.Any = js.native
   
-  var _rotateSpheresParent: js.Any = js.native
+  /* private */ var _renderObserver: js.Any = js.native
   
-  var _scaleBoxesParent: js.Any = js.native
+  /* private */ var _rotateSpheresParent: js.Any = js.native
   
-  var _scaleDragSpeed: js.Any = js.native
+  /* private */ var _scaleBoxesParent: js.Any = js.native
   
-  var _selectNode: js.Any = js.native
+  /* private */ var _scaleDragSpeed: js.Any = js.native
   
-  var _tmpQuaternion: js.Any = js.native
+  /* private */ var _selectNode: js.Any = js.native
   
-  var _tmpRotationMatrix: js.Any = js.native
+  /* private */ var _tmpQuaternion: js.Any = js.native
   
-  var _tmpVector: js.Any = js.native
+  /* private */ var _tmpRotationMatrix: js.Any = js.native
   
-  var _updateDummy: js.Any = js.native
+  /* private */ var _tmpVector: js.Any = js.native
   
-  var _updateRotationSpheres: js.Any = js.native
+  /* private */ var _updateDummy: js.Any = js.native
   
-  var _updateScaleBoxes: js.Any = js.native
+  /* private */ var _updateRotationSpheres: js.Any = js.native
   
-  var coloredMaterial: js.Any = js.native
+  /* private */ var _updateScaleBoxes: js.Any = js.native
+  
+  /* private */ var coloredMaterial: js.Any = js.native
   
   /**
     * Enables a pointer drag behavior on the bounding box of the gizmo
@@ -69,7 +72,7 @@ trait BoundingBoxGizmo extends Gizmo {
     */
   var fixedDragMeshScreenSizeDistanceFactor: Double = js.native
   
-  var hoverColoredMaterial: js.Any = js.native
+  /* private */ var hoverColoredMaterial: js.Any = js.native
   
   /**
     * If child meshes should be ignored when calculating the boudning box. This should be set to true to avoid perf hits with heavily nested meshes (Default: false)
@@ -106,7 +109,7 @@ trait BoundingBoxGizmo extends Gizmo {
     */
   var onScaleBoxDragObservable: Observable[js.Object] = js.native
   
-  var pointerDragBehavior: js.Any = js.native
+  /* private */ var pointerDragBehavior: js.Any = js.native
   
   /**
     * The size of the rotation spheres attached to the bounding box (Default: 0.1)

@@ -1,7 +1,6 @@
 package typings.babylonjs
 
 import typings.babylonjs.instancedMeshMod.InstancedMesh
-import typings.babylonjs.materialMod.Material
 import typings.babylonjs.mathColorMod.Color3
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.nodeMod.Node
@@ -9,7 +8,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linesMeshMod {
@@ -58,11 +56,11 @@ object linesMeshMod {
     useVertexAlpha: js.UndefOr[Boolean]
     ) = this()
     
-    var _addClipPlaneDefine: js.Any = js.native
+    /* private */ var _addClipPlaneDefine: js.Any = js.native
     
-    var _colorShader: js.Any = js.native
+    /* private */ var _colorShader: js.Any = js.native
     
-    var _removeClipPlaneDefine: js.Any = js.native
+    /* private */ var _removeClipPlaneDefine: js.Any = js.native
     
     /**
       * Alpha of the line (Default: 1)
@@ -74,7 +72,7 @@ object linesMeshMod {
       */
     var color: Color3 = js.native
     
-    var color4: js.Any = js.native
+    /* private */ var color4: js.Any = js.native
     
     /**
       * The intersection Threshold is the margin applied when intersection a segment of the LinesMesh with a Ray.
@@ -82,11 +80,6 @@ object linesMeshMod {
       * Default value is 0.1
       */
     var intersectionThreshold: Double = js.native
-    
-    /**
-      * @hidden
-      */
-    def material_=(value: Material): Unit = js.native
     
     /**
       * If vertex alpha should be applied to the mesh

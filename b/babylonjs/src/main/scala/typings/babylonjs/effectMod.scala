@@ -23,14 +23,15 @@ import typings.std.Float32Array
 import typings.std.Int32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object effectMod {
   
   @JSImport("babylonjs/Materials/effect", "Effect")
   @js.native
-  class Effect protected () extends IDisposable {
+  class Effect protected ()
+    extends StObject
+       with IDisposable {
     /**
       * Instantiates an effect.
       * An effect can be used to create/manage/execute vertex and fragment shaders.
@@ -58,13 +59,13 @@ object effectMod {
       indexParameters: js.UndefOr[js.Any]
     ) = this()
     
-    var _allFallbacksProcessed: js.Any = js.native
+    /* private */ var _allFallbacksProcessed: js.Any = js.native
     
-    var _attributeLocationByName: js.Any = js.native
+    /* private */ var _attributeLocationByName: js.Any = js.native
     
-    var _attributes: js.Any = js.native
+    /* private */ var _attributes: js.Any = js.native
     
-    var _attributesNames: js.Any = js.native
+    /* private */ var _attributesNames: js.Any = js.native
     
     /**
       * Binds a texture to the engine to be used as output of the shader.
@@ -89,25 +90,25 @@ object effectMod {
     /** @hidden */
     def _cacheMatrix(uniformName: String, matrix: IMatrixLike): Boolean = js.native
     
-    var _checkIsReady: js.Any = js.native
+    /* private */ var _checkIsReady: js.Any = js.native
     
-    var _compilationError: js.Any = js.native
+    /* private */ var _compilationError: js.Any = js.native
     
-    var _engine: js.Any = js.native
+    /* private */ var _engine: js.Any = js.native
     
-    var _fallbacks: js.Any = js.native
+    /* private */ var _fallbacks: js.Any = js.native
     
-    var _fragmentSourceCode: js.Any = js.native
+    /* private */ var _fragmentSourceCode: js.Any = js.native
     
-    var _fragmentSourceCodeOverride: js.Any = js.native
+    /* private */ var _fragmentSourceCodeOverride: js.Any = js.native
     
-    var _getShaderCodeAndErrorLine: js.Any = js.native
+    /* private */ var _getShaderCodeAndErrorLine: js.Any = js.native
     
-    var _indexParameters: js.Any = js.native
+    /* private */ var _indexParameters: js.Any = js.native
     
-    var _isReady: js.Any = js.native
+    /* private */ var _isReady: js.Any = js.native
     
-    var _isReadyInternal: js.Any = js.native
+    /* private */ var _isReadyInternal: js.Any = js.native
     
     /**
       * Key for the effect.
@@ -115,7 +116,7 @@ object effectMod {
       */
     var _key: String = js.native
     
-    var _loadShader: js.Any = js.native
+    /* private */ var _loadShader: js.Any = js.native
     
     /** @hidden */
     var _multiTarget: Boolean = js.native
@@ -135,11 +136,11 @@ object effectMod {
       */
     def _prepareEffect(): Unit = js.native
     
-    var _processCompilationErrors: js.Any = js.native
+    /* private */ var _processCompilationErrors: js.Any = js.native
     
-    var _rawFragmentSourceCode: js.Any = js.native
+    /* private */ var _rawFragmentSourceCode: js.Any = js.native
     
-    var _rawVertexSourceCode: js.Any = js.native
+    /* private */ var _rawVertexSourceCode: js.Any = js.native
     
     /**
       * Recompiles the webGL program
@@ -156,27 +157,27 @@ object effectMod {
       onError: js.Function1[/* message */ String, Unit]
     ): Unit = js.native
     
-    var _samplerList: js.Any = js.native
+    /* private */ var _samplerList: js.Any = js.native
     
-    var _samplers: js.Any = js.native
+    /* private */ var _samplers: js.Any = js.native
     
-    var _transformFeedbackVaryings: js.Any = js.native
+    /* private */ var _transformFeedbackVaryings: js.Any = js.native
     
-    var _uniformBuffersNames: js.Any = js.native
+    /* private */ var _uniformBuffersNames: js.Any = js.native
     
-    var _uniformBuffersNamesList: js.Any = js.native
+    /* private */ var _uniformBuffersNamesList: js.Any = js.native
     
-    var _uniforms: js.Any = js.native
+    /* private */ var _uniforms: js.Any = js.native
     
-    var _uniformsNames: js.Any = js.native
+    /* private */ var _uniformsNames: js.Any = js.native
     
-    var _useFinalCode: js.Any = js.native
+    /* private */ var _useFinalCode: js.Any = js.native
     
-    var _valueCache: js.Any = js.native
+    /* private */ var _valueCache: js.Any = js.native
     
-    var _vertexSourceCode: js.Any = js.native
+    /* private */ var _vertexSourceCode: js.Any = js.native
     
-    var _vertexSourceCodeOverride: js.Any = js.native
+    /* private */ var _vertexSourceCodeOverride: js.Any = js.native
     
     /**
       * @hidden
@@ -208,6 +209,12 @@ object effectMod {
       * String container all the define statements that should be set on the shader.
       */
     var defines: String = js.native
+    
+    /**
+      * Releases all held resources
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * Adds a callback to the onCompiled observable and call the callback imediatly if already ready.
@@ -657,8 +664,7 @@ object effectMod {
     @JSImport("babylonjs/Materials/effect", "Effect.IncludesShadersStore")
     @js.native
     def IncludesShadersStore: StringDictionary[String] = js.native
-    @scala.inline
-    def IncludesShadersStore_=(x: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IncludesShadersStore")(x.asInstanceOf[js.Any])
+    inline def IncludesShadersStore_=(x: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IncludesShadersStore")(x.asInstanceOf[js.Any])
     
     /**
       * Enable logging of the shader code when a compilation error occurs
@@ -666,8 +672,7 @@ object effectMod {
     @JSImport("babylonjs/Materials/effect", "Effect.LogShaderCodeOnCompilationError")
     @js.native
     def LogShaderCodeOnCompilationError: Boolean = js.native
-    @scala.inline
-    def LogShaderCodeOnCompilationError_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LogShaderCodeOnCompilationError")(x.asInstanceOf[js.Any])
+    inline def LogShaderCodeOnCompilationError_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LogShaderCodeOnCompilationError")(x.asInstanceOf[js.Any])
     
     /**
       * This function will add a new shader to the shader store
@@ -675,25 +680,15 @@ object effectMod {
       * @param pixelShader optional pixel shader content
       * @param vertexShader optional vertex shader content
       */
-    @JSImport("babylonjs/Materials/effect", "Effect.RegisterShader")
-    @js.native
-    def RegisterShader(name: String): Unit = js.native
-    @JSImport("babylonjs/Materials/effect", "Effect.RegisterShader")
-    @js.native
-    def RegisterShader(name: String, pixelShader: js.UndefOr[scala.Nothing], vertexShader: String): Unit = js.native
-    @JSImport("babylonjs/Materials/effect", "Effect.RegisterShader")
-    @js.native
-    def RegisterShader(name: String, pixelShader: String): Unit = js.native
-    @JSImport("babylonjs/Materials/effect", "Effect.RegisterShader")
-    @js.native
-    def RegisterShader(name: String, pixelShader: String, vertexShader: String): Unit = js.native
+    inline def RegisterShader(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("RegisterShader")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def RegisterShader(name: String, pixelShader: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterShader")(name.asInstanceOf[js.Any], pixelShader.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def RegisterShader(name: String, pixelShader: String, vertexShader: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterShader")(name.asInstanceOf[js.Any], pixelShader.asInstanceOf[js.Any], vertexShader.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def RegisterShader(name: String, pixelShader: Unit, vertexShader: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterShader")(name.asInstanceOf[js.Any], pixelShader.asInstanceOf[js.Any], vertexShader.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Resets the cache of effects.
       */
-    @JSImport("babylonjs/Materials/effect", "Effect.ResetCache")
-    @js.native
-    def ResetCache(): Unit = js.native
+    inline def ResetCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ResetCache")().asInstanceOf[Unit]
     
     /**
       * Gets or sets the relative url used to load shaders if using the engine in non-minified mode
@@ -701,8 +696,7 @@ object effectMod {
     @JSImport("babylonjs/Materials/effect", "Effect.ShadersRepository")
     @js.native
     def ShadersRepository: String = js.native
-    @scala.inline
-    def ShadersRepository_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ShadersRepository")(x.asInstanceOf[js.Any])
+    inline def ShadersRepository_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ShadersRepository")(x.asInstanceOf[js.Any])
     
     /**
       * Store of each shader (The can be looked up using effect.key)
@@ -710,190 +704,156 @@ object effectMod {
     @JSImport("babylonjs/Materials/effect", "Effect.ShadersStore")
     @js.native
     def ShadersStore: StringDictionary[String] = js.native
-    @scala.inline
-    def ShadersStore_=(x: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ShadersStore")(x.asInstanceOf[js.Any])
+    inline def ShadersStore_=(x: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ShadersStore")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Materials/effect", "Effect._baseCache")
     @js.native
     def _baseCache: js.Any = js.native
-    @scala.inline
-    def _baseCache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_baseCache")(x.asInstanceOf[js.Any])
+    inline def _baseCache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_baseCache")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Materials/effect", "Effect._uniqueIdSeed")
     @js.native
     def _uniqueIdSeed: js.Any = js.native
-    @scala.inline
-    def _uniqueIdSeed_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_uniqueIdSeed")(x.asInstanceOf[js.Any])
+    inline def _uniqueIdSeed_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_uniqueIdSeed")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IEffectCreationOptions extends StObject {
     
     /**
       * Atrributes that will be used in the shader.
       */
-    var attributes: js.Array[String] = js.native
+    var attributes: js.Array[String]
     
     /**
       * Define statements that will be set in the shader.
       */
-    var defines: js.Any = js.native
+    var defines: js.Any
     
     /**
       * Possible fallbacks for this effect to improve performance when needed.
       */
-    var fallbacks: Nullable[IEffectFallbacks] = js.native
+    var fallbacks: Nullable[IEffectFallbacks]
     
     /**
       * Parameters to be used with Babylons include syntax to iterate over an array (eg. {lights: 10})
       */
-    var indexParameters: js.UndefOr[js.Any] = js.native
+    var indexParameters: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Max number of lights that can be used in the shader.
       */
-    var maxSimultaneousLights: js.UndefOr[Double] = js.native
+    var maxSimultaneousLights: js.UndefOr[Double] = js.undefined
     
     /**
       * Is this effect rendering to several color attachments ?
       */
-    var multiTarget: js.UndefOr[Boolean] = js.native
+    var multiTarget: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Callback that will be called when the shader is compiled.
       */
-    var onCompiled: Nullable[js.Function1[/* effect */ Effect, Unit]] = js.native
+    var onCompiled: Nullable[js.Function1[/* effect */ Effect, Unit]]
     
     /**
       * Callback that will be called if an error occurs during shader compilation.
       */
-    var onError: Nullable[js.Function2[/* effect */ Effect, /* errors */ String, Unit]] = js.native
+    var onError: Nullable[js.Function2[/* effect */ Effect, /* errors */ String, Unit]]
     
     /**
       * If provided, will be called two times with the vertex and fragment code so that this code can be updated before it is compiled by the GPU
       */
-    var processFinalCode: js.UndefOr[Nullable[js.Function2[/* shaderType */ String, /* code */ String, String]]] = js.native
+    var processFinalCode: js.UndefOr[Nullable[js.Function2[/* shaderType */ String, /* code */ String, String]]] = js.undefined
     
     /**
       * Sampler texture variable names that will be set in the shader.
       */
-    var samplers: js.Array[String] = js.native
+    var samplers: js.Array[String]
     
     /**
       * See https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/transformFeedbackVaryings
       */
-    var transformFeedbackVaryings: js.UndefOr[Nullable[js.Array[String]]] = js.native
+    var transformFeedbackVaryings: js.UndefOr[Nullable[js.Array[String]]] = js.undefined
     
     /**
       * Uniform buffer variable names that will be set in the shader.
       */
-    var uniformBuffersNames: js.Array[String] = js.native
+    var uniformBuffersNames: js.Array[String]
     
     /**
       * Uniform varible names that will be set in the shader.
       */
-    var uniformsNames: js.Array[String] = js.native
+    var uniformsNames: js.Array[String]
   }
   object IEffectCreationOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attributes: js.Array[String],
       defines: js.Any,
       samplers: js.Array[String],
       uniformBuffersNames: js.Array[String],
       uniformsNames: js.Array[String]
     ): IEffectCreationOptions = {
-      val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], defines = defines.asInstanceOf[js.Any], samplers = samplers.asInstanceOf[js.Any], uniformBuffersNames = uniformBuffersNames.asInstanceOf[js.Any], uniformsNames = uniformsNames.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], defines = defines.asInstanceOf[js.Any], samplers = samplers.asInstanceOf[js.Any], uniformBuffersNames = uniformBuffersNames.asInstanceOf[js.Any], uniformsNames = uniformsNames.asInstanceOf[js.Any], fallbacks = null, onCompiled = null, onError = null)
       __obj.asInstanceOf[IEffectCreationOptions]
     }
     
-    @scala.inline
-    implicit class IEffectCreationOptionsMutableBuilder[Self <: IEffectCreationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IEffectCreationOptions](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
       
-      @scala.inline
-      def setDefines(value: js.Any): Self = StObject.set(x, "defines", value.asInstanceOf[js.Any])
+      inline def setDefines(value: js.Any): Self = StObject.set(x, "defines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbacks(value: Nullable[IEffectFallbacks]): Self = StObject.set(x, "fallbacks", value.asInstanceOf[js.Any])
+      inline def setFallbacks(value: Nullable[IEffectFallbacks]): Self = StObject.set(x, "fallbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbacksNull: Self = StObject.set(x, "fallbacks", null)
+      inline def setFallbacksNull: Self = StObject.set(x, "fallbacks", null)
       
-      @scala.inline
-      def setIndexParameters(value: js.Any): Self = StObject.set(x, "indexParameters", value.asInstanceOf[js.Any])
+      inline def setIndexParameters(value: js.Any): Self = StObject.set(x, "indexParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexParametersUndefined: Self = StObject.set(x, "indexParameters", js.undefined)
+      inline def setIndexParametersUndefined: Self = StObject.set(x, "indexParameters", js.undefined)
       
-      @scala.inline
-      def setMaxSimultaneousLights(value: Double): Self = StObject.set(x, "maxSimultaneousLights", value.asInstanceOf[js.Any])
+      inline def setMaxSimultaneousLights(value: Double): Self = StObject.set(x, "maxSimultaneousLights", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxSimultaneousLightsUndefined: Self = StObject.set(x, "maxSimultaneousLights", js.undefined)
+      inline def setMaxSimultaneousLightsUndefined: Self = StObject.set(x, "maxSimultaneousLights", js.undefined)
       
-      @scala.inline
-      def setMultiTarget(value: Boolean): Self = StObject.set(x, "multiTarget", value.asInstanceOf[js.Any])
+      inline def setMultiTarget(value: Boolean): Self = StObject.set(x, "multiTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiTargetUndefined: Self = StObject.set(x, "multiTarget", js.undefined)
+      inline def setMultiTargetUndefined: Self = StObject.set(x, "multiTarget", js.undefined)
       
-      @scala.inline
-      def setOnCompiled(value: /* effect */ Effect => Unit): Self = StObject.set(x, "onCompiled", js.Any.fromFunction1(value))
+      inline def setOnCompiled(value: /* effect */ Effect => Unit): Self = StObject.set(x, "onCompiled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCompiledNull: Self = StObject.set(x, "onCompiled", null)
+      inline def setOnCompiledNull: Self = StObject.set(x, "onCompiled", null)
       
-      @scala.inline
-      def setOnError(value: (/* effect */ Effect, /* errors */ String) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction2(value))
+      inline def setOnError(value: (/* effect */ Effect, /* errors */ String) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnErrorNull: Self = StObject.set(x, "onError", null)
+      inline def setOnErrorNull: Self = StObject.set(x, "onError", null)
       
-      @scala.inline
-      def setProcessFinalCode(value: (/* shaderType */ String, /* code */ String) => String): Self = StObject.set(x, "processFinalCode", js.Any.fromFunction2(value))
+      inline def setProcessFinalCode(value: (/* shaderType */ String, /* code */ String) => String): Self = StObject.set(x, "processFinalCode", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setProcessFinalCodeNull: Self = StObject.set(x, "processFinalCode", null)
+      inline def setProcessFinalCodeNull: Self = StObject.set(x, "processFinalCode", null)
       
-      @scala.inline
-      def setProcessFinalCodeUndefined: Self = StObject.set(x, "processFinalCode", js.undefined)
+      inline def setProcessFinalCodeUndefined: Self = StObject.set(x, "processFinalCode", js.undefined)
       
-      @scala.inline
-      def setSamplers(value: js.Array[String]): Self = StObject.set(x, "samplers", value.asInstanceOf[js.Any])
+      inline def setSamplers(value: js.Array[String]): Self = StObject.set(x, "samplers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSamplersVarargs(value: String*): Self = StObject.set(x, "samplers", js.Array(value :_*))
+      inline def setSamplersVarargs(value: String*): Self = StObject.set(x, "samplers", js.Array(value :_*))
       
-      @scala.inline
-      def setTransformFeedbackVaryings(value: Nullable[js.Array[String]]): Self = StObject.set(x, "transformFeedbackVaryings", value.asInstanceOf[js.Any])
+      inline def setTransformFeedbackVaryings(value: Nullable[js.Array[String]]): Self = StObject.set(x, "transformFeedbackVaryings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformFeedbackVaryingsNull: Self = StObject.set(x, "transformFeedbackVaryings", null)
+      inline def setTransformFeedbackVaryingsNull: Self = StObject.set(x, "transformFeedbackVaryings", null)
       
-      @scala.inline
-      def setTransformFeedbackVaryingsUndefined: Self = StObject.set(x, "transformFeedbackVaryings", js.undefined)
+      inline def setTransformFeedbackVaryingsUndefined: Self = StObject.set(x, "transformFeedbackVaryings", js.undefined)
       
-      @scala.inline
-      def setTransformFeedbackVaryingsVarargs(value: String*): Self = StObject.set(x, "transformFeedbackVaryings", js.Array(value :_*))
+      inline def setTransformFeedbackVaryingsVarargs(value: String*): Self = StObject.set(x, "transformFeedbackVaryings", js.Array(value :_*))
       
-      @scala.inline
-      def setUniformBuffersNames(value: js.Array[String]): Self = StObject.set(x, "uniformBuffersNames", value.asInstanceOf[js.Any])
+      inline def setUniformBuffersNames(value: js.Array[String]): Self = StObject.set(x, "uniformBuffersNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniformBuffersNamesVarargs(value: String*): Self = StObject.set(x, "uniformBuffersNames", js.Array(value :_*))
+      inline def setUniformBuffersNamesVarargs(value: String*): Self = StObject.set(x, "uniformBuffersNames", js.Array(value :_*))
       
-      @scala.inline
-      def setUniformsNames(value: js.Array[String]): Self = StObject.set(x, "uniformsNames", value.asInstanceOf[js.Any])
+      inline def setUniformsNames(value: js.Array[String]): Self = StObject.set(x, "uniformsNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniformsNamesVarargs(value: String*): Self = StObject.set(x, "uniformsNames", js.Array(value :_*))
+      inline def setUniformsNamesVarargs(value: String*): Self = StObject.set(x, "uniformsNames", js.Array(value :_*))
     }
   }
 }

@@ -4,110 +4,84 @@ import typings.jupyterlabServices.contentsMod.Contents.ContentType
 import typings.jupyterlabServices.contentsMod.Contents.FileFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@jupyterlab/services.@jupyterlab/services/lib/contents.Contents.IModel> */
-@js.native
 trait PartialIModel extends StObject {
   
-  var chunk: js.UndefOr[Double] = js.native
+  var chunk: js.UndefOr[Double] = js.undefined
   
-  var content: js.UndefOr[js.Any] = js.native
+  var content: js.UndefOr[js.Any] = js.undefined
   
-  var created: js.UndefOr[String] = js.native
+  var created: js.UndefOr[String] = js.undefined
   
-  var format: js.UndefOr[FileFormat] = js.native
+  var format: js.UndefOr[FileFormat] = js.undefined
   
-  var last_modified: js.UndefOr[String] = js.native
+  var last_modified: js.UndefOr[String] = js.undefined
   
-  var mimetype: js.UndefOr[String] = js.native
+  var mimetype: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[ContentType] = js.native
+  var `type`: js.UndefOr[ContentType] = js.undefined
   
-  var writable: js.UndefOr[Boolean] = js.native
+  var writable: js.UndefOr[Boolean] = js.undefined
 }
 object PartialIModel {
   
-  @scala.inline
-  def apply(): PartialIModel = {
+  inline def apply(): PartialIModel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialIModel]
   }
   
-  @scala.inline
-  implicit class PartialIModelMutableBuilder[Self <: PartialIModel] (val x: Self) extends AnyVal {
+  extension [Self <: PartialIModel](x: Self) {
     
-    @scala.inline
-    def setChunk(value: Double): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
+    inline def setChunk(value: Double): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChunkUndefined: Self = StObject.set(x, "chunk", js.undefined)
+    inline def setChunkUndefined: Self = StObject.set(x, "chunk", js.undefined)
     
-    @scala.inline
-    def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    @scala.inline
-    def setFormat(value: FileFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: FileFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setLast_modified(value: String): Self = StObject.set(x, "last_modified", value.asInstanceOf[js.Any])
+    inline def setLast_modified(value: String): Self = StObject.set(x, "last_modified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast_modifiedUndefined: Self = StObject.set(x, "last_modified", js.undefined)
+    inline def setLast_modifiedUndefined: Self = StObject.set(x, "last_modified", js.undefined)
     
-    @scala.inline
-    def setMimetype(value: String): Self = StObject.set(x, "mimetype", value.asInstanceOf[js.Any])
+    inline def setMimetype(value: String): Self = StObject.set(x, "mimetype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimetypeUndefined: Self = StObject.set(x, "mimetype", js.undefined)
+    inline def setMimetypeUndefined: Self = StObject.set(x, "mimetype", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setType(value: ContentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ContentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
+    inline def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWritableUndefined: Self = StObject.set(x, "writable", js.undefined)
+    inline def setWritableUndefined: Self = StObject.set(x, "writable", js.undefined)
   }
 }

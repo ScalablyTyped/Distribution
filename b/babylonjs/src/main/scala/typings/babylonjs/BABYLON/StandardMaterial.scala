@@ -2,13 +2,14 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StandardMaterial extends PushMaterial {
+trait StandardMaterial
+  extends StObject
+     with PushMaterial {
   
-  var _ambientTexture: js.Any = js.native
+  /* private */ var _ambientTexture: js.Any = js.native
   
   /**
     * Attaches a new image processing configuration to the Standard Material.
@@ -16,19 +17,19 @@ trait StandardMaterial extends PushMaterial {
     */
   /* protected */ def _attachImageProcessingConfiguration(configuration: Nullable[ImageProcessingConfiguration]): Unit = js.native
   
-  var _bumpTexture: js.Any = js.native
+  /* private */ var _bumpTexture: js.Any = js.native
   
-  var _diffuseFresnelParameters: js.Any = js.native
+  /* private */ var _diffuseFresnelParameters: js.Any = js.native
   
-  var _diffuseTexture: js.Any = js.native
+  /* private */ var _diffuseTexture: js.Any = js.native
   
-  var _disableLighting: js.Any = js.native
+  /* private */ var _disableLighting: js.Any = js.native
   
-  var _emissiveFresnelParameters: js.Any = js.native
+  /* private */ var _emissiveFresnelParameters: js.Any = js.native
   
-  var _emissiveTexture: js.Any = js.native
+  /* private */ var _emissiveTexture: js.Any = js.native
   
-  var _globalAmbientColor: Color3 = js.native
+  /* protected */ var _globalAmbientColor: Color3 = js.native
   
   /**
     * Specifies whether or not there is a usable alpha channel for transparency.
@@ -38,73 +39,73 @@ trait StandardMaterial extends PushMaterial {
   /**
     * Default configuration related to image processing available in the standard Material.
     */
-  var _imageProcessingConfiguration: ImageProcessingConfiguration = js.native
+  /* protected */ var _imageProcessingConfiguration: ImageProcessingConfiguration = js.native
   
   /**
     * Keep track of the image processing observer to allow dispose and replace.
     */
-  var _imageProcessingObserver: js.Any = js.native
+  /* private */ var _imageProcessingObserver: js.Any = js.native
   
-  var _invertNormalMapX: js.Any = js.native
+  /* private */ var _invertNormalMapX: js.Any = js.native
   
-  var _invertNormalMapY: js.Any = js.native
+  /* private */ var _invertNormalMapY: js.Any = js.native
   
-  var _lightmapTexture: js.Any = js.native
+  /* private */ var _lightmapTexture: js.Any = js.native
   
-  var _linkEmissiveWithDiffuse: js.Any = js.native
+  /* private */ var _linkEmissiveWithDiffuse: js.Any = js.native
   
-  var _maxSimultaneousLights: js.Any = js.native
+  /* private */ var _maxSimultaneousLights: js.Any = js.native
   
-  var _opacityFresnelParameters: js.Any = js.native
+  /* private */ var _opacityFresnelParameters: js.Any = js.native
   
-  var _opacityTexture: js.Any = js.native
+  /* private */ var _opacityTexture: js.Any = js.native
   
-  var _rebuildInParallel: Boolean = js.native
+  /* protected */ var _rebuildInParallel: Boolean = js.native
   
-  var _reflectionFresnelParameters: js.Any = js.native
+  /* private */ var _reflectionFresnelParameters: js.Any = js.native
   
-  var _reflectionTexture: js.Any = js.native
+  /* private */ var _reflectionTexture: js.Any = js.native
   
-  var _refractionFresnelParameters: js.Any = js.native
+  /* private */ var _refractionFresnelParameters: js.Any = js.native
   
-  var _refractionTexture: js.Any = js.native
+  /* private */ var _refractionTexture: js.Any = js.native
   
-  var _renderTargets: SmartArray[RenderTargetTexture] = js.native
+  /* protected */ var _renderTargets: SmartArray[RenderTargetTexture] = js.native
   
-  var _roughness: js.Any = js.native
+  /* private */ var _roughness: js.Any = js.native
   
   /**
     * Specifies whether or not the alpha value of the diffuse texture should be used for alpha blending.
     */
   /* protected */ def _shouldUseAlphaFromDiffuseTexture(): Boolean = js.native
   
-  var _specularTexture: js.Any = js.native
+  /* private */ var _specularTexture: js.Any = js.native
   
-  var _twoSidedLighting: js.Any = js.native
+  /* private */ var _twoSidedLighting: js.Any = js.native
   
-  var _useAlphaFromDiffuseTexture: js.Any = js.native
+  /* private */ var _useAlphaFromDiffuseTexture: js.Any = js.native
   
-  var _useEmissiveAsIllumination: js.Any = js.native
+  /* private */ var _useEmissiveAsIllumination: js.Any = js.native
   
-  var _useGlossinessFromSpecularMapAlpha: js.Any = js.native
+  /* private */ var _useGlossinessFromSpecularMapAlpha: js.Any = js.native
   
-  var _useLightmapAsShadowmap: js.Any = js.native
+  /* private */ var _useLightmapAsShadowmap: js.Any = js.native
   
-  var _useLogarithmicDepth: Boolean = js.native
+  /* protected */ var _useLogarithmicDepth: Boolean = js.native
   
-  var _useObjectSpaceNormalMap: js.Any = js.native
+  /* private */ var _useObjectSpaceNormalMap: js.Any = js.native
   
-  var _useParallax: js.Any = js.native
+  /* private */ var _useParallax: js.Any = js.native
   
-  var _useParallaxOcclusion: js.Any = js.native
+  /* private */ var _useParallaxOcclusion: js.Any = js.native
   
-  var _useReflectionFresnelFromSpecular: js.Any = js.native
+  /* private */ var _useReflectionFresnelFromSpecular: js.Any = js.native
   
-  var _useReflectionOverAlpha: js.Any = js.native
+  /* private */ var _useReflectionOverAlpha: js.Any = js.native
   
-  var _useSpecularOverAlpha: js.Any = js.native
+  /* private */ var _useSpecularOverAlpha: js.Any = js.native
   
-  var _worldViewProjectionMatrix: Matrix = js.native
+  /* protected */ var _worldViewProjectionMatrix: Matrix = js.native
   
   /**
     * Defines the alpha limits in alpha test mode.

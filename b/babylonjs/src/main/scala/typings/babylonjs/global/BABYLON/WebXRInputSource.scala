@@ -4,13 +4,13 @@ import typings.babylonjs.BABYLON.IWebXRControllerOptions
 import typings.babylonjs.XRInputSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.WebXRInputSource")
 @js.native
 class WebXRInputSource protected ()
-  extends typings.babylonjs.BABYLON.WebXRInputSource {
+  extends StObject
+     with typings.babylonjs.BABYLON.WebXRInputSource {
   /**
     * Creates the input source object
     * @see https://doc.babylonjs.com/how_to/webxr_controllers_support

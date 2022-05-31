@@ -2,33 +2,34 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlowLayer extends EffectLayer {
+trait GlowLayer
+  extends StObject
+     with EffectLayer {
   
-  var _blurTexture1: js.Any = js.native
+  /* private */ var _blurTexture1: js.Any = js.native
   
-  var _blurTexture2: js.Any = js.native
+  /* private */ var _blurTexture2: js.Any = js.native
   
-  var _excludedMeshes: js.Any = js.native
+  /* private */ var _excludedMeshes: js.Any = js.native
   
-  var _horizontalBlurPostprocess1: js.Any = js.native
+  /* private */ var _horizontalBlurPostprocess1: js.Any = js.native
   
-  var _horizontalBlurPostprocess2: js.Any = js.native
+  /* private */ var _horizontalBlurPostprocess2: js.Any = js.native
   
-  var _includedOnlyMeshes: js.Any = js.native
+  /* private */ var _includedOnlyMeshes: js.Any = js.native
   
-  var _intensity: js.Any = js.native
+  /* private */ var _intensity: js.Any = js.native
   
-  var _meshesUsingTheirOwnMaterials: js.Any = js.native
+  /* private */ var _meshesUsingTheirOwnMaterials: js.Any = js.native
   
-  var _options: js.Any = js.native
+  /* private */ var _options: js.Any = js.native
   
-  var _postProcesses1: js.Any = js.native
+  /* private */ var _postProcesses1: js.Any = js.native
   
-  var _postProcesses2: js.Any = js.native
+  /* private */ var _postProcesses2: js.Any = js.native
   
   /**
     * Returns true if the mesh should render, otherwise false.
@@ -37,9 +38,9 @@ trait GlowLayer extends EffectLayer {
     */
   /* protected */ def _shouldRenderMesh(mesh: Mesh): Boolean = js.native
   
-  var _verticalBlurPostprocess1: js.Any = js.native
+  /* private */ var _verticalBlurPostprocess1: js.Any = js.native
   
-  var _verticalBlurPostprocess2: js.Any = js.native
+  /* private */ var _verticalBlurPostprocess2: js.Any = js.native
   
   /**
     * Add a mesh in the exclusion list to prevent it to impact or being impacted by the glow layer.

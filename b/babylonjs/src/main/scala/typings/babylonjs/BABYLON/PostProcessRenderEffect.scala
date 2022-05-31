@@ -2,7 +2,6 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -21,7 +20,7 @@ trait PostProcessRenderEffect extends StObject {
     */
   def _attachCameras(cameras: Camera): Unit = js.native
   
-  var _cameras: js.Any = js.native
+  /* private */ var _cameras: js.Any = js.native
   
   /**
     * Detatches the effect on cameras
@@ -62,9 +61,9 @@ trait PostProcessRenderEffect extends StObject {
     */
   def _enable(cameras: Nullable[js.Array[Camera]]): Unit = js.native
   
-  var _getPostProcesses: js.Any = js.native
+  /* private */ var _getPostProcesses: js.Any = js.native
   
-  var _indicesForCamera: js.Any = js.native
+  /* private */ var _indicesForCamera: js.Any = js.native
   
   /**
     * Name of the effect
@@ -72,9 +71,9 @@ trait PostProcessRenderEffect extends StObject {
     */
   var _name: String = js.native
   
-  var _postProcesses: js.Any = js.native
+  /* private */ var _postProcesses: js.Any = js.native
   
-  var _singleInstance: js.Any = js.native
+  /* private */ var _singleInstance: js.Any = js.native
   
   /**
     * Updates the current state of the effect

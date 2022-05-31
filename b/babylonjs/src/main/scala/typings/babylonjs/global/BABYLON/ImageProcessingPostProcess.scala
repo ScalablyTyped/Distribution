@@ -4,13 +4,13 @@ import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.BABYLON.PostProcessOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.ImageProcessingPostProcess")
 @js.native
 class ImageProcessingPostProcess protected ()
-  extends typings.babylonjs.BABYLON.ImageProcessingPostProcess {
+  extends StObject
+     with typings.babylonjs.BABYLON.ImageProcessingPostProcess {
   def this(
     name: String,
     options: Double | PostProcessOptions,

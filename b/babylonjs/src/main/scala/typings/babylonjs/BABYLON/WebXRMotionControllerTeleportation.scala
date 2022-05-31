@@ -2,53 +2,54 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebXRMotionControllerTeleportation extends WebXRAbstractFeature {
+trait WebXRMotionControllerTeleportation
+  extends StObject
+     with WebXRAbstractFeature {
   
-  var _attachController: js.Any = js.native
+  /* private */ var _attachController: js.Any = js.native
   
-  var _controllers: js.Any = js.native
+  /* private */ var _controllers: js.Any = js.native
   
-  var _createDefaultTargetMesh: js.Any = js.native
+  /* private */ var _createDefaultTargetMesh: js.Any = js.native
   
-  var _currentTeleportationControllerId: js.Any = js.native
+  /* private */ var _currentTeleportationControllerId: js.Any = js.native
   
-  var _detachController: js.Any = js.native
+  /* private */ var _detachController: js.Any = js.native
   
-  var _findClosestSnapPointWithRadius: js.Any = js.native
+  /* private */ var _findClosestSnapPointWithRadius: js.Any = js.native
   
-  var _floorMeshes: js.Any = js.native
+  /* private */ var _floorMeshes: js.Any = js.native
   
-  var _options: js.Any = js.native
+  /* private */ var _options: js.Any = js.native
   
-  var _quadraticBezierCurve: js.Any = js.native
+  /* private */ var _quadraticBezierCurve: js.Any = js.native
   
-  var _rotationEnabled: js.Any = js.native
+  /* private */ var _rotationEnabled: js.Any = js.native
   
-  var _selectionFeature: js.Any = js.native
+  /* private */ var _selectionFeature: js.Any = js.native
   
-  var _setTargetMeshPosition: js.Any = js.native
+  /* private */ var _setTargetMeshPosition: js.Any = js.native
   
-  var _setTargetMeshVisibility: js.Any = js.native
+  /* private */ var _setTargetMeshVisibility: js.Any = js.native
   
-  var _showParabolicPath: js.Any = js.native
+  /* private */ var _showParabolicPath: js.Any = js.native
   
-  var _snapToPositions: js.Any = js.native
+  /* private */ var _snapToPositions: js.Any = js.native
   
-  var _snappedToPoint: js.Any = js.native
+  /* private */ var _snappedToPoint: js.Any = js.native
   
-  var _teleportForward: js.Any = js.native
+  /* private */ var _teleportForward: js.Any = js.native
   
-  var _teleportationRingMaterial: js.Any = js.native
+  /* private */ var _teleportationRingMaterial: js.Any = js.native
   
-  var _tmpQuaternion: js.Any = js.native
+  /* private */ var _tmpQuaternion: js.Any = js.native
   
-  var _tmpRay: js.Any = js.native
+  /* private */ var _tmpRay: js.Any = js.native
   
-  var _tmpVector: js.Any = js.native
+  /* private */ var _tmpVector: js.Any = js.native
   
   /**
     * Add a new mesh to the floor meshes array

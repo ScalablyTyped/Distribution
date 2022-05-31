@@ -9,7 +9,6 @@ import typings.jupyterlabFilebrowser.uploadstatusMod.FileUploadStatus.IOptions
 import typings.jupyterlabFilebrowser.uploadstatusMod.FileUploadStatus.Model
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uploadstatusMod {
@@ -22,9 +21,9 @@ object uploadstatusMod {
       */
     def this(opts: IOptions) = this()
     
-    var _onBrowserChange: js.Any = js.native
+    /* private */ var _onBrowserChange: js.Any = js.native
     
-    var _tracker: js.Any = js.native
+    /* private */ var _tracker: js.Any = js.native
   }
   object FileUploadStatus {
     
@@ -39,14 +38,14 @@ object uploadstatusMod {
     class Model () extends VDomModel {
       def this(browserModel: FileBrowserModel) = this()
       
-      var _browserModel: js.Any = js.native
+      /* private */ var _browserModel: js.Any = js.native
       
-      var _items: js.Any = js.native
+      /* private */ var _items: js.Any = js.native
       
       /**
         * Handle an uploadChanged event in the filebrowser model.
         */
-      var _uploadChanged: js.Any = js.native
+      /* private */ var _uploadChanged: js.Any = js.native
       
       /**
         * The current file browser model.
@@ -63,27 +62,23 @@ object uploadstatusMod {
     /**
       * Options for creating the upload status item.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The application file browser tracker.
         */
-      val tracker: WidgetTracker[FileBrowser] = js.native
+      val tracker: WidgetTracker[FileBrowser]
     }
     object IOptions {
       
-      @scala.inline
-      def apply(tracker: WidgetTracker[FileBrowser]): IOptions = {
+      inline def apply(tracker: WidgetTracker[FileBrowser]): IOptions = {
         val __obj = js.Dynamic.literal(tracker = tracker.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setTracker(value: WidgetTracker[FileBrowser]): Self = StObject.set(x, "tracker", value.asInstanceOf[js.Any])
+        inline def setTracker(value: WidgetTracker[FileBrowser]): Self = StObject.set(x, "tracker", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -92,43 +87,37 @@ object uploadstatusMod {
     * The interface for an item that is being uploaded to
     * the file system.
     */
-  @js.native
   trait IFileUploadItem extends StObject {
     
     /**
       * Whether the upload is complete.
       */
-    var complete: Boolean = js.native
+    var complete: Boolean
     
     /**
       * The path on the filesystem that is being uploaded to.
       */
-    var path: String = js.native
+    var path: String
     
     /**
       * The upload progress fraction.
       */
-    var progress: Double = js.native
+    var progress: Double
   }
   object IFileUploadItem {
     
-    @scala.inline
-    def apply(complete: Boolean, path: String, progress: Double): IFileUploadItem = {
+    inline def apply(complete: Boolean, path: String, progress: Double): IFileUploadItem = {
       val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any])
       __obj.asInstanceOf[IFileUploadItem]
     }
     
-    @scala.inline
-    implicit class IFileUploadItemMutableBuilder[Self <: IFileUploadItem] (val x: Self) extends AnyVal {
+    extension [Self <: IFileUploadItem](x: Self) {
       
-      @scala.inline
-      def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+      inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     }
   }
 }

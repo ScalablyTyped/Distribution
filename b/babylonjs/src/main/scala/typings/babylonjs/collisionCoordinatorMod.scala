@@ -7,47 +7,31 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object collisionCoordinatorMod {
   
   @JSImport("babylonjs/Collisions/collisionCoordinator", "DefaultCollisionCoordinator")
   @js.native
-  class DefaultCollisionCoordinator () extends ICollisionCoordinator {
+  class DefaultCollisionCoordinator ()
+    extends StObject
+       with ICollisionCoordinator {
     
-    var _collideWithWorld: js.Any = js.native
+    /* private */ var _collideWithWorld: js.Any = js.native
     
-    var _finalPosition: js.Any = js.native
+    /* private */ var _finalPosition: js.Any = js.native
     
-    var _scaledPosition: js.Any = js.native
+    /* private */ var _scaledPosition: js.Any = js.native
     
-    var _scaledVelocity: js.Any = js.native
+    /* private */ var _scaledVelocity: js.Any = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
-    def getNewPosition(
-      position: Vector3,
-      displacement: Vector3,
-      collider: Collider,
-      maximumRetry: Double,
-      excludedMesh: AbstractMesh,
-      onNewPosition: js.Function3[
-          /* collisionIndex */ Double, 
-          /* newPosition */ Vector3, 
-          /* collidedMesh */ Nullable[AbstractMesh], 
-          Unit
-        ],
-      collisionIndex: Double
-    ): Unit = js.native
-  }
-  
-  @js.native
-  trait ICollisionCoordinator extends StObject {
+    /* CompleteClass */
+    override def createCollider(): Collider = js.native
     
-    def createCollider(): Collider = js.native
-    
-    def getNewPosition(
+    /* CompleteClass */
+    override def getNewPosition(
       position: Vector3,
       displacement: Vector3,
       collider: Collider,
@@ -62,12 +46,34 @@ object collisionCoordinatorMod {
       collisionIndex: Double
     ): Unit = js.native
     
-    def init(scene: Scene): Unit = js.native
+    /* CompleteClass */
+    override def init(scene: Scene): Unit = js.native
+  }
+  
+  trait ICollisionCoordinator extends StObject {
+    
+    def createCollider(): Collider
+    
+    def getNewPosition(
+      position: Vector3,
+      displacement: Vector3,
+      collider: Collider,
+      maximumRetry: Double,
+      excludedMesh: Nullable[AbstractMesh],
+      onNewPosition: js.Function3[
+          /* collisionIndex */ Double, 
+          /* newPosition */ Vector3, 
+          /* collidedMesh */ Nullable[AbstractMesh], 
+          Unit
+        ],
+      collisionIndex: Double
+    ): Unit
+    
+    def init(scene: Scene): Unit
   }
   object ICollisionCoordinator {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createCollider: () => Collider,
       getNewPosition: (Vector3, Vector3, Collider, Double, Nullable[AbstractMesh], js.Function3[
           /* collisionIndex */ Double, 
@@ -81,14 +87,11 @@ object collisionCoordinatorMod {
       __obj.asInstanceOf[ICollisionCoordinator]
     }
     
-    @scala.inline
-    implicit class ICollisionCoordinatorMutableBuilder[Self <: ICollisionCoordinator] (val x: Self) extends AnyVal {
+    extension [Self <: ICollisionCoordinator](x: Self) {
       
-      @scala.inline
-      def setCreateCollider(value: () => Collider): Self = StObject.set(x, "createCollider", js.Any.fromFunction0(value))
+      inline def setCreateCollider(value: () => Collider): Self = StObject.set(x, "createCollider", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNewPosition(
+      inline def setGetNewPosition(
         value: (Vector3, Vector3, Collider, Double, Nullable[AbstractMesh], js.Function3[
               /* collisionIndex */ Double, 
               /* newPosition */ Vector3, 
@@ -97,8 +100,7 @@ object collisionCoordinatorMod {
             ], Double) => Unit
       ): Self = StObject.set(x, "getNewPosition", js.Any.fromFunction7(value))
       
-      @scala.inline
-      def setInit(value: Scene => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+      inline def setInit(value: Scene => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     }
   }
 }

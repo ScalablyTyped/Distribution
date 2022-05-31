@@ -34,43 +34,44 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ojprogressMod {
   
   @js.native
-  trait ojProgress extends baseComponent[ojProgressSettableProperties] {
+  trait ojProgress
+    extends StObject
+       with baseComponent[ojProgressSettableProperties] {
     
     def addEventListener(
       `type`: typeChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[bar | circle], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[bar | circle], js.Any]
     ): Unit = js.native
     def addEventListener(
       `type`: typeChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[bar | circle], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[bar | circle], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_maxChanged(
       `type`: maxChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_maxChanged(
       `type`: maxChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_valueChanged(
       `type`: valueChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_valueChanged(
       `type`: valueChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     
@@ -83,11 +84,11 @@ object ojprogressMod {
     
     var max: Double = js.native
     
-    var onMaxChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+    var onMaxChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], js.Any]) | Null = js.native
     
-    var onTypeChanged: (js.Function1[/* event */ JetElementCustomEvent[bar | circle], _]) | Null = js.native
+    var onTypeChanged: (js.Function1[/* event */ JetElementCustomEvent[bar | circle], js.Any]) | Null = js.native
     
-    var onValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+    var onValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], js.Any]) | Null = js.native
     
     def setProperties(properties: ojProgressSettablePropertiesLenient): Unit = js.native
     
@@ -108,19 +109,19 @@ object ojprogressMod {
     var value: Double = js.native
   }
   
-  @js.native
-  trait ojProgressEventMap extends baseComponentEventMap[ojProgressSettableProperties] {
+  trait ojProgressEventMap
+    extends StObject
+       with baseComponentEventMap[ojProgressSettableProperties] {
     
-    var maxChanged: JetElementCustomEvent[Double] = js.native
+    var maxChanged: JetElementCustomEvent[Double]
     
-    var typeChanged: JetElementCustomEvent[bar | circle] = js.native
+    var typeChanged: JetElementCustomEvent[bar | circle]
     
-    var valueChanged: JetElementCustomEvent[Double] = js.native
+    var valueChanged: JetElementCustomEvent[Double]
   }
   object ojProgressEventMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: UIEvent,
       animationcancel: AnimationEvent,
       animationend: AnimationEvent,
@@ -222,105 +223,86 @@ object ojprogressMod {
       __obj.asInstanceOf[ojProgressEventMap]
     }
     
-    @scala.inline
-    implicit class ojProgressEventMapMutableBuilder[Self <: ojProgressEventMap] (val x: Self) extends AnyVal {
+    extension [Self <: ojProgressEventMap](x: Self) {
       
-      @scala.inline
-      def setMaxChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "maxChanged", value.asInstanceOf[js.Any])
+      inline def setMaxChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "maxChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeChanged(value: JetElementCustomEvent[bar | circle]): Self = StObject.set(x, "typeChanged", value.asInstanceOf[js.Any])
+      inline def setTypeChanged(value: JetElementCustomEvent[bar | circle]): Self = StObject.set(x, "typeChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "valueChanged", value.asInstanceOf[js.Any])
+      inline def setValueChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "valueChanged", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait ojProgressSettableProperties extends baseComponentSettableProperties {
+  trait ojProgressSettableProperties
+    extends StObject
+       with baseComponentSettableProperties {
     
-    var max: Double = js.native
+    var max: Double
     
     @JSName("translations")
-    var translations_ojProgressSettableProperties: AriaIndeterminateProgressText = js.native
+    var translations_ojProgressSettableProperties: AriaIndeterminateProgressText
     
-    var `type`: bar | circle = js.native
+    var `type`: bar | circle
     
-    var value: Double = js.native
+    var value: Double
   }
   object ojProgressSettableProperties {
     
-    @scala.inline
-    def apply(max: Double, translations: AriaIndeterminateProgressText, `type`: bar | circle, value: Double): ojProgressSettableProperties = {
+    inline def apply(max: Double, translations: AriaIndeterminateProgressText, `type`: bar | circle, value: Double): ojProgressSettableProperties = {
       val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ojProgressSettableProperties]
     }
     
-    @scala.inline
-    implicit class ojProgressSettablePropertiesMutableBuilder[Self <: ojProgressSettableProperties] (val x: Self) extends AnyVal {
+    extension [Self <: ojProgressSettableProperties](x: Self) {
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslations(value: AriaIndeterminateProgressText): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: AriaIndeterminateProgressText): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: bar | circle): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: bar | circle): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojprogress.ojProgressSettableProperties> */
-  @js.native
   trait ojProgressSettablePropertiesLenient
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var translations: js.UndefOr[AriaIndeterminateProgressText] = js.native
+    var translations: js.UndefOr[AriaIndeterminateProgressText] = js.undefined
     
-    var `type`: js.UndefOr[bar | circle] = js.native
+    var `type`: js.UndefOr[bar | circle] = js.undefined
     
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object ojProgressSettablePropertiesLenient {
     
-    @scala.inline
-    def apply(): ojProgressSettablePropertiesLenient = {
+    inline def apply(): ojProgressSettablePropertiesLenient = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ojProgressSettablePropertiesLenient]
     }
     
-    @scala.inline
-    implicit class ojProgressSettablePropertiesLenientMutableBuilder[Self <: ojProgressSettablePropertiesLenient] (val x: Self) extends AnyVal {
+    extension [Self <: ojProgressSettablePropertiesLenient](x: Self) {
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setTranslations(value: AriaIndeterminateProgressText): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: AriaIndeterminateProgressText): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+      inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
       
-      @scala.inline
-      def setType(value: bar | circle): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: bar | circle): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

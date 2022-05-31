@@ -162,11 +162,6 @@ object JsHamcrest {
     }
   }
   
-  /**
-    * Provides methods for exposing matchers and operators for several testing frameworks.
-    */
-  object Integration
-  
   trait Matcher
     extends StObject
        with SelfDescribing {
@@ -231,11 +226,6 @@ object JsHamcrest {
       inline def setMatches(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "matches", js.Any.fromFunction1(value))
     }
   }
-  
-  /**
-    * Defines all of the built-in matchers grouped into five categories.
-    */
-  object Matchers
   
   //
   // Matcher

@@ -13,7 +13,6 @@ import typings.babylonjs.typesMod.float
 import typings.babylonjs.typesMod.int
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object backgroundMaterialMod {
@@ -28,7 +27,7 @@ object backgroundMaterialMod {
       */
     def this(name: String, scene: Scene) = this()
     
-    var __perceptualColor: Nullable[Color3] = js.native
+    /* protected */ var __perceptualColor: Nullable[Color3] = js.native
     
     /**
       * Attaches a new image processing configuration to the PBR Material.
@@ -39,32 +38,32 @@ object backgroundMaterialMod {
     /**
       * Compute the primary color according to the chosen perceptual color.
       */
-    var _computePrimaryColorFromPerceptualColor: js.Any = js.native
+    /* private */ var _computePrimaryColorFromPerceptualColor: js.Any = js.native
     
     /**
       * Compute the highlights and shadow colors according to their chosen levels.
       */
-    var _computePrimaryColors: js.Any = js.native
+    /* private */ var _computePrimaryColors: js.Any = js.native
     
-    var _diffuseTexture: Nullable[BaseTexture] = js.native
+    /* protected */ var _diffuseTexture: Nullable[BaseTexture] = js.native
     
-    var _enableNoise: Boolean = js.native
+    /* protected */ var _enableNoise: Boolean = js.native
     
-    var _fovMultiplier: js.Any = js.native
+    /* private */ var _fovMultiplier: js.Any = js.native
     
     /**
       * Default configuration related to image processing available in the Background Material.
       */
-    var _imageProcessingConfiguration: ImageProcessingConfiguration = js.native
+    /* protected */ var _imageProcessingConfiguration: ImageProcessingConfiguration = js.native
     
     /**
       * Keep track of the image processing observer to allow dispose and replace.
       */
-    var _imageProcessingObserver: js.Any = js.native
+    /* private */ var _imageProcessingObserver: js.Any = js.native
     
-    var _maxSimultaneousLights: js.Any = js.native
+    /* private */ var _maxSimultaneousLights: js.Any = js.native
     
-    var _opacityFresnel: Boolean = js.native
+    /* protected */ var _opacityFresnel: Boolean = js.native
     
     /**
       * Experimental Internal Use Only.
@@ -79,45 +78,45 @@ object backgroundMaterialMod {
     def _perceptualColor: Nullable[Color3] = js.native
     def _perceptualColor_=(value: Nullable[Color3]): Unit = js.native
     
-    var _primaryColor: Color3 = js.native
+    /* protected */ var _primaryColor: Color3 = js.native
     
-    var _primaryColorHighlightLevel: float = js.native
+    /* protected */ var _primaryColorHighlightLevel: float = js.native
     
-    var _primaryColorShadowLevel: float = js.native
+    /* protected */ var _primaryColorShadowLevel: float = js.native
     
-    var _primaryHighlightColor: js.Any = js.native
+    /* private */ var _primaryHighlightColor: js.Any = js.native
     
-    var _primaryShadowColor: js.Any = js.native
+    /* private */ var _primaryShadowColor: js.Any = js.native
     
-    var _reflectionAmount: Double = js.native
+    /* protected */ var _reflectionAmount: Double = js.native
     
-    var _reflectionBlur: float = js.native
+    /* protected */ var _reflectionBlur: float = js.native
     
-    var _reflectionControls: js.Any = js.native
+    /* private */ var _reflectionControls: js.Any = js.native
     
-    var _reflectionFalloffDistance: Double = js.native
+    /* protected */ var _reflectionFalloffDistance: Double = js.native
     
-    var _reflectionFresnel: Boolean = js.native
+    /* protected */ var _reflectionFresnel: Boolean = js.native
     
-    var _reflectionReflectance0: Double = js.native
+    /* protected */ var _reflectionReflectance0: Double = js.native
     
-    var _reflectionReflectance90: Double = js.native
+    /* protected */ var _reflectionReflectance90: Double = js.native
     
-    var _reflectionTexture: Nullable[BaseTexture] = js.native
+    /* protected */ var _reflectionTexture: Nullable[BaseTexture] = js.native
     
-    var _renderTargets: js.Any = js.native
+    /* private */ var _renderTargets: js.Any = js.native
     
-    var _sceneCenter: Vector3 = js.native
+    /* protected */ var _sceneCenter: Vector3 = js.native
     
-    var _shadowLevel: float = js.native
+    /* protected */ var _shadowLevel: float = js.native
     
-    var _shadowLights: Nullable[js.Array[IShadowLight]] = js.native
+    /* protected */ var _shadowLights: Nullable[js.Array[IShadowLight]] = js.native
     
-    var _shadowOnly: js.Any = js.native
+    /* private */ var _shadowOnly: js.Any = js.native
     
-    var _useRGBColor: Boolean = js.native
+    /* protected */ var _useRGBColor: Boolean = js.native
     
-    var _white: js.Any = js.native
+    /* private */ var _white: js.Any = js.native
     
     /**
       * Build the uniform buffer used in the material.
@@ -358,9 +357,7 @@ object backgroundMaterialMod {
       * @param rootUrl The root url of the assets the material depends upon
       * @returns the instantiated BackgroundMaterial.
       */
-    @JSImport("babylonjs/Materials/Background/backgroundMaterial", "BackgroundMaterial.Parse")
-    @js.native
-    def Parse(source: js.Any, scene: Scene, rootUrl: String): BackgroundMaterial = js.native
+    inline def Parse(source: js.Any, scene: Scene, rootUrl: String): BackgroundMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[BackgroundMaterial]
     
     /**
       * Standard reflectance value at parallel view angle.
@@ -368,8 +365,7 @@ object backgroundMaterialMod {
     @JSImport("babylonjs/Materials/Background/backgroundMaterial", "BackgroundMaterial.StandardReflectance0")
     @js.native
     def StandardReflectance0: Double = js.native
-    @scala.inline
-    def StandardReflectance0_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StandardReflectance0")(x.asInstanceOf[js.Any])
+    inline def StandardReflectance0_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StandardReflectance0")(x.asInstanceOf[js.Any])
     
     /**
       * Standard reflectance value at grazing angle.
@@ -377,7 +373,6 @@ object backgroundMaterialMod {
     @JSImport("babylonjs/Materials/Background/backgroundMaterial", "BackgroundMaterial.StandardReflectance90")
     @js.native
     def StandardReflectance90: Double = js.native
-    @scala.inline
-    def StandardReflectance90_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StandardReflectance90")(x.asInstanceOf[js.Any])
+    inline def StandardReflectance90_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StandardReflectance90")(x.asInstanceOf[js.Any])
   }
 }

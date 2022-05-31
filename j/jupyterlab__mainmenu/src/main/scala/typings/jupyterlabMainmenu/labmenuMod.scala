@@ -8,14 +8,15 @@ import typings.luminoWidgets.mod.Menu
 import typings.luminoWidgets.mod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object labmenuMod {
   
   @JSImport("@jupyterlab/mainmenu/lib/labmenu", "JupyterLabMenu")
   @js.native
-  class JupyterLabMenu protected () extends IJupyterLabMenu {
+  class JupyterLabMenu protected ()
+    extends StObject
+       with IJupyterLabMenu {
     /**
       * Construct a new menu.
       *
@@ -27,12 +28,34 @@ object labmenuMod {
     def this(options: IOptions) = this()
     def this(options: IOptions, includeSeparators: Boolean) = this()
     
-    var _groups: js.Any = js.native
+    /* private */ var _groups: js.Any = js.native
     
-    var _includeSeparators: js.Any = js.native
+    /* private */ var _includeSeparators: js.Any = js.native
     
-    var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: js.Any = js.native
     
+    /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
     /**
       * Whether the menu has been disposed.
       */
@@ -46,7 +69,9 @@ object labmenuMod {
   }
   
   @js.native
-  trait IJupyterLabMenu extends IDisposable {
+  trait IJupyterLabMenu
+    extends StObject
+       with IDisposable {
     
     /**
       * Add a group of menu items specific to a particular
@@ -56,7 +81,6 @@ object labmenuMod {
     def addGroup(items: js.Array[IItemOptions], rank: Double): IDisposable = js.native
   }
   
-  @js.native
   trait IMenuExtender[T /* <: Widget */] extends StObject {
     
     /**
@@ -66,32 +90,27 @@ object labmenuMod {
       * provided, the criterion is equivalent to
       * `tracker.has(widget) && extender.isEnabled(widget)`
       */
-    var isEnabled: js.UndefOr[js.Function1[/* widget */ T, Boolean]] = js.native
+    var isEnabled: js.UndefOr[js.Function1[/* widget */ T, Boolean]] = js.undefined
     
     /**
       * A widget tracker for identifying the appropriate extender.
       */
-    var tracker: IWidgetTracker[T] = js.native
+    var tracker: IWidgetTracker[T]
   }
   object IMenuExtender {
     
-    @scala.inline
-    def apply[T /* <: Widget */](tracker: IWidgetTracker[T]): IMenuExtender[T] = {
+    inline def apply[T /* <: Widget */](tracker: IWidgetTracker[T]): IMenuExtender[T] = {
       val __obj = js.Dynamic.literal(tracker = tracker.asInstanceOf[js.Any])
       __obj.asInstanceOf[IMenuExtender[T]]
     }
     
-    @scala.inline
-    implicit class IMenuExtenderMutableBuilder[Self <: IMenuExtender[_], T /* <: Widget */] (val x: Self with IMenuExtender[T]) extends AnyVal {
+    extension [Self <: IMenuExtender[?], T /* <: Widget */](x: Self & IMenuExtender[T]) {
       
-      @scala.inline
-      def setIsEnabled(value: /* widget */ T => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction1(value))
+      inline def setIsEnabled(value: /* widget */ T => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
+      inline def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
       
-      @scala.inline
-      def setTracker(value: IWidgetTracker[T]): Self = StObject.set(x, "tracker", value.asInstanceOf[js.Any])
+      inline def setTracker(value: IWidgetTracker[T]): Self = StObject.set(x, "tracker", value.asInstanceOf[js.Any])
     }
   }
 }

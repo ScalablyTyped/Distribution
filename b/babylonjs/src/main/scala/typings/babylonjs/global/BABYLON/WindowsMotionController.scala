@@ -1,19 +1,58 @@
 package typings.babylonjs.global.BABYLON
 
+import typings.babylonjs.BABYLON.DevicePose
+import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.WindowsMotionController")
 @js.native
 class WindowsMotionController protected ()
-  extends typings.babylonjs.BABYLON.WindowsMotionController {
+  extends StObject
+     with typings.babylonjs.BABYLON.WindowsMotionController {
   /**
     * Creates a new WindowsMotionController from a gamepad
     * @param vrGamepad the gamepad that the controller should be created from
     */
   def this(vrGamepad: js.Any) = this()
+  
+  /**
+    * The rotation quaternion of the device in babylon space.
+    */
+  /* CompleteClass */
+  var deviceRotationQuaternion: typings.babylonjs.BABYLON.Quaternion = js.native
+  
+  /**
+    * The scale of the device to be used when translating from device space to babylon space.
+    */
+  /* CompleteClass */
+  var deviceScaleFactor: Double = js.native
+  
+  /**
+    * The position of the object in babylon space.
+    */
+  /* CompleteClass */
+  var position: typings.babylonjs.BABYLON.Vector3 = js.native
+  
+  /**
+    * The raw pose coming from the device.
+    */
+  /* CompleteClass */
+  var rawPose: Nullable[DevicePose] = js.native
+  
+  /**
+    * The rotation quaternion of the object in babylon space.
+    */
+  /* CompleteClass */
+  var rotationQuaternion: typings.babylonjs.BABYLON.Quaternion = js.native
+  
+  /**
+    * Updates the poseControlled values based on the input device pose.
+    * @param poseData the pose data to update the object with
+    */
+  /* CompleteClass */
+  override def updateFromDevice(poseData: DevicePose): Unit = js.native
 }
 /* static members */
 object WindowsMotionController {
@@ -42,8 +81,7 @@ object WindowsMotionController {
   @JSGlobal("BABYLON.WindowsMotionController.MODEL_BASE_URL")
   @js.native
   def MODEL_BASE_URL: String = js.native
-  @scala.inline
-  def MODEL_BASE_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_BASE_URL")(x.asInstanceOf[js.Any])
+  inline def MODEL_BASE_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_BASE_URL")(x.asInstanceOf[js.Any])
   
   /**
     * The name of the left controller model file
@@ -51,8 +89,7 @@ object WindowsMotionController {
   @JSGlobal("BABYLON.WindowsMotionController.MODEL_LEFT_FILENAME")
   @js.native
   def MODEL_LEFT_FILENAME: String = js.native
-  @scala.inline
-  def MODEL_LEFT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_LEFT_FILENAME")(x.asInstanceOf[js.Any])
+  inline def MODEL_LEFT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_LEFT_FILENAME")(x.asInstanceOf[js.Any])
   
   /**
     * The name of the right controller model file
@@ -60,6 +97,5 @@ object WindowsMotionController {
   @JSGlobal("BABYLON.WindowsMotionController.MODEL_RIGHT_FILENAME")
   @js.native
   def MODEL_RIGHT_FILENAME: String = js.native
-  @scala.inline
-  def MODEL_RIGHT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_RIGHT_FILENAME")(x.asInstanceOf[js.Any])
+  inline def MODEL_RIGHT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_RIGHT_FILENAME")(x.asInstanceOf[js.Any])
 }

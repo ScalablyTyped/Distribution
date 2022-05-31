@@ -6,7 +6,6 @@ import typings.babylonjs.typesMod.DeepImmutable
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mathPathMod {
@@ -20,7 +19,7 @@ object mathPathMod {
       */
     def this(radians: Double) = this()
     
-    var _radians: js.Any = js.native
+    /* private */ var _radians: js.Any = js.native
     
     /**
       * Get value in degrees
@@ -37,33 +36,31 @@ object mathPathMod {
   /* static members */
   object Angle {
     
+    @JSImport("babylonjs/Maths/math.path", "Angle")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Gets a new Angle object valued with the gradient angle, in radians, of the line joining two points
       * @param a defines first point as the origin
       * @param b defines point
       * @returns a new Angle
       */
-    @JSImport("babylonjs/Maths/math.path", "Angle.BetweenTwoPoints")
-    @js.native
-    def BetweenTwoPoints(a: DeepImmutable[Vector2], b: DeepImmutable[Vector2]): Angle = js.native
+    inline def BetweenTwoPoints(a: DeepImmutable[Vector2], b: DeepImmutable[Vector2]): Angle = (^.asInstanceOf[js.Dynamic].applyDynamic("BetweenTwoPoints")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Angle]
     
     /**
       * Gets a new Angle object from the given float in degrees
       * @param degrees defines the angle value in degrees
       * @returns a new Angle
       */
-    @JSImport("babylonjs/Maths/math.path", "Angle.FromDegrees")
-    @js.native
-    def FromDegrees(degrees: Double): Angle = js.native
+    inline def FromDegrees(degrees: Double): Angle = ^.asInstanceOf[js.Dynamic].applyDynamic("FromDegrees")(degrees.asInstanceOf[js.Any]).asInstanceOf[Angle]
     
     /**
       * Gets a new Angle object from the given float in radians
       * @param radians defines the angle value in radians
       * @returns a new Angle
       */
-    @JSImport("babylonjs/Maths/math.path", "Angle.FromRadians")
-    @js.native
-    def FromRadians(radians: Double): Angle = js.native
+    inline def FromRadians(radians: Double): Angle = ^.asInstanceOf[js.Dynamic].applyDynamic("FromRadians")(radians.asInstanceOf[js.Any]).asInstanceOf[Angle]
   }
   
   @JSImport("babylonjs/Maths/math.path", "Arc2")
@@ -125,6 +122,10 @@ object mathPathMod {
   /* static members */
   object BezierCurve {
     
+    @JSImport("babylonjs/Maths/math.path", "BezierCurve")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns the cubic Bezier interpolated value (float) at "t" (float) from the given x1, y1, x2, y2 floats
       * @param t defines the time
@@ -134,9 +135,7 @@ object mathPathMod {
       * @param y2 defines the right coordinate on Y axis
       * @returns the interpolated value
       */
-    @JSImport("babylonjs/Maths/math.path", "BezierCurve.Interpolate")
-    @js.native
-    def Interpolate(t: Double, x1: Double, y1: Double, x2: Double, y2: Double): Double = js.native
+    inline def Interpolate(t: Double, x1: Double, y1: Double, x2: Double, y2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Interpolate")(t.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
   @JSImport("babylonjs/Maths/math.path", "Curve3")
@@ -150,11 +149,11 @@ object mathPathMod {
       */
     def this(points: js.Array[Vector3]) = this()
     
-    var _computeLength: js.Any = js.native
+    /* private */ var _computeLength: js.Any = js.native
     
-    var _length: js.Any = js.native
+    /* private */ var _length: js.Any = js.native
     
-    var _points: js.Any = js.native
+    /* private */ var _points: js.Any = js.native
     
     /**
       * Returns a new instance of Curve3 object : var curve = curveA.continue(curveB);
@@ -178,6 +177,10 @@ object mathPathMod {
   /* static members */
   object Curve3 {
     
+    @JSImport("babylonjs/Maths/math.path", "Curve3")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns a Curve3 object along a CatmullRom Spline curve :
       * @param points (array of Vector3) the points the spline must pass through. At least, four points required
@@ -185,12 +188,8 @@ object mathPathMod {
       * @param closed (boolean) optional with default false, when true forms a closed loop from the points
       * @returns the created Curve3
       */
-    @JSImport("babylonjs/Maths/math.path", "Curve3.CreateCatmullRomSpline")
-    @js.native
-    def CreateCatmullRomSpline(points: DeepImmutable[js.Array[Vector3]], nbPoints: Double): Curve3 = js.native
-    @JSImport("babylonjs/Maths/math.path", "Curve3.CreateCatmullRomSpline")
-    @js.native
-    def CreateCatmullRomSpline(points: DeepImmutable[js.Array[Vector3]], nbPoints: Double, closed: Boolean): Curve3 = js.native
+    inline def CreateCatmullRomSpline(points: DeepImmutable[js.Array[Vector3]], nbPoints: Double): Curve3 = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCatmullRomSpline")(points.asInstanceOf[js.Any], nbPoints.asInstanceOf[js.Any])).asInstanceOf[Curve3]
+    inline def CreateCatmullRomSpline(points: DeepImmutable[js.Array[Vector3]], nbPoints: Double, closed: Boolean): Curve3 = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCatmullRomSpline")(points.asInstanceOf[js.Any], nbPoints.asInstanceOf[js.Any], closed.asInstanceOf[js.Any])).asInstanceOf[Curve3]
     
     /**
       * Returns a Curve3 object along a Cubic Bezier curve : https://doc.babylonjs.com/how_to/how_to_use_curve3#cubic-bezier-curve
@@ -201,15 +200,13 @@ object mathPathMod {
       * @param nbPoints (integer) the wanted number of points in the curve
       * @returns the created Curve3
       */
-    @JSImport("babylonjs/Maths/math.path", "Curve3.CreateCubicBezier")
-    @js.native
-    def CreateCubicBezier(
+    inline def CreateCubicBezier(
       v0: DeepImmutable[Vector3],
       v1: DeepImmutable[Vector3],
       v2: DeepImmutable[Vector3],
       v3: DeepImmutable[Vector3],
       nbPoints: Double
-    ): Curve3 = js.native
+    ): Curve3 = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCubicBezier")(v0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], nbPoints.asInstanceOf[js.Any])).asInstanceOf[Curve3]
     
     /**
       * Returns a Curve3 object along a Hermite Spline curve : https://doc.babylonjs.com/how_to/how_to_use_curve3#hermite-spline
@@ -220,15 +217,13 @@ object mathPathMod {
       * @param nbPoints (integer) the wanted number of points in the curve
       * @returns the created Curve3
       */
-    @JSImport("babylonjs/Maths/math.path", "Curve3.CreateHermiteSpline")
-    @js.native
-    def CreateHermiteSpline(
+    inline def CreateHermiteSpline(
       p1: DeepImmutable[Vector3],
       t1: DeepImmutable[Vector3],
       p2: DeepImmutable[Vector3],
       t2: DeepImmutable[Vector3],
       nbPoints: Double
-    ): Curve3 = js.native
+    ): Curve3 = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateHermiteSpline")(p1.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], nbPoints.asInstanceOf[js.Any])).asInstanceOf[Curve3]
     
     /**
       * Returns a Curve3 object along a Quadratic Bezier curve : https://doc.babylonjs.com/how_to/how_to_use_curve3#quadratic-bezier-curve
@@ -238,14 +233,12 @@ object mathPathMod {
       * @param nbPoints (integer) the wanted number of points in the curve
       * @returns the created Curve3
       */
-    @JSImport("babylonjs/Maths/math.path", "Curve3.CreateQuadraticBezier")
-    @js.native
-    def CreateQuadraticBezier(
+    inline def CreateQuadraticBezier(
       v0: DeepImmutable[Vector3],
       v1: DeepImmutable[Vector3],
       v2: DeepImmutable[Vector3],
       nbPoints: Double
-    ): Curve3 = js.native
+    ): Curve3 = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateQuadraticBezier")(v0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], nbPoints.asInstanceOf[js.Any])).asInstanceOf[Curve3]
   }
   
   @js.native
@@ -255,19 +248,23 @@ object mathPathMod {
   object Orientation extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Orientation with Double] = js.native
+    def apply(value: Double): js.UndefOr[Orientation & Double] = js.native
     
     /** Counter clockwise */
     @js.native
-    sealed trait CCW extends Orientation
-    /* 1 */ val CCW: typings.babylonjs.mathPathMod.Orientation.CCW with Double = js.native
+    sealed trait CCW
+      extends StObject
+         with Orientation
+    /* 1 */ val CCW: typings.babylonjs.mathPathMod.Orientation.CCW & Double = js.native
     
     /**
       * Clockwise
       */
     @js.native
-    sealed trait CW extends Orientation
-    /* 0 */ val CW: typings.babylonjs.mathPathMod.Orientation.CW with Double = js.native
+    sealed trait CW
+      extends StObject
+         with Orientation
+    /* 0 */ val CW: typings.babylonjs.mathPathMod.Orientation.CW & Double = js.native
   }
   
   @JSImport("babylonjs/Maths/math.path", "Path2")
@@ -280,9 +277,9 @@ object mathPathMod {
       */
     def this(x: Double, y: Double) = this()
     
-    var _length: js.Any = js.native
+    /* private */ var _length: js.Any = js.native
     
-    var _points: js.Any = js.native
+    /* private */ var _points: js.Any = js.native
     
     /**
       * Adds _numberOfSegments_ segments according to the arc definition (middle point coordinates, end point coordinates, the arc start point being the current Path2 last point) to the current Path2.
@@ -337,15 +334,17 @@ object mathPathMod {
   /* static members */
   object Path2 {
     
+    @JSImport("babylonjs/Maths/math.path", "Path2")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new path starting from an x and y position
       * @param x starting x value
       * @param y starting y value
       * @returns a new Path2 starting at the coordinates (x, y).
       */
-    @JSImport("babylonjs/Maths/math.path", "Path2.StartingAt")
-    @js.native
-    def StartingAt(x: Double, y: Double): Path2 = js.native
+    inline def StartingAt(x: Double, y: Double): Path2 = (^.asInstanceOf[js.Dynamic].applyDynamic("StartingAt")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Path2]
   }
   
   @JSImport("babylonjs/Maths/math.path", "Path3D")
@@ -376,7 +375,7 @@ object mathPathMod {
       * an array of Vector3, the curve axis of the Path3D
       */
     path: js.Array[Vector3],
-      firstNormal: js.UndefOr[Nullable[Vector3]],
+      firstNormal: Unit,
       raw: Boolean
     ) = this()
     def this(
@@ -384,8 +383,16 @@ object mathPathMod {
       * an array of Vector3, the curve axis of the Path3D
       */
     path: js.Array[Vector3],
-      firstNormal: js.UndefOr[Nullable[Vector3]],
-      raw: js.UndefOr[scala.Nothing],
+      firstNormal: Nullable[Vector3],
+      raw: Boolean
+    ) = this()
+    def this(
+      /**
+      * an array of Vector3, the curve axis of the Path3D
+      */
+    path: js.Array[Vector3],
+      firstNormal: Unit,
+      raw: Boolean,
       alignTangentsWithPath: Boolean
     ) = this()
     def this(
@@ -393,32 +400,50 @@ object mathPathMod {
       * an array of Vector3, the curve axis of the Path3D
       */
     path: js.Array[Vector3],
-      firstNormal: js.UndefOr[Nullable[Vector3]],
+      firstNormal: Unit,
+      raw: Unit,
+      alignTangentsWithPath: Boolean
+    ) = this()
+    def this(
+      /**
+      * an array of Vector3, the curve axis of the Path3D
+      */
+    path: js.Array[Vector3],
+      firstNormal: Nullable[Vector3],
       raw: Boolean,
       alignTangentsWithPath: Boolean
     ) = this()
+    def this(
+      /**
+      * an array of Vector3, the curve axis of the Path3D
+      */
+    path: js.Array[Vector3],
+      firstNormal: Nullable[Vector3],
+      raw: Unit,
+      alignTangentsWithPath: Boolean
+    ) = this()
     
-    var _alignTangentsWithPath: js.Any = js.native
+    /* private */ var _alignTangentsWithPath: js.Any = js.native
     
-    var _binormals: js.Any = js.native
+    /* private */ var _binormals: js.Any = js.native
     
-    var _compute: js.Any = js.native
+    /* private */ var _compute: js.Any = js.native
     
-    var _curve: js.Any = js.native
+    /* private */ var _curve: js.Any = js.native
     
-    var _distances: js.Any = js.native
+    /* private */ var _distances: js.Any = js.native
     
-    var _getFirstNonNullVector: js.Any = js.native
+    /* private */ var _getFirstNonNullVector: js.Any = js.native
     
-    var _getLastNonNullVector: js.Any = js.native
+    /* private */ var _getLastNonNullVector: js.Any = js.native
     
-    var _normalVector: js.Any = js.native
+    /* private */ var _normalVector: js.Any = js.native
     
-    var _normals: js.Any = js.native
+    /* private */ var _normals: js.Any = js.native
     
-    val _pointAtData: js.Any = js.native
+    /* private */ val _pointAtData: js.Any = js.native
     
-    var _raw: js.Any = js.native
+    /* private */ var _raw: js.Any = js.native
     
     /**
       * Updates the point at data from the specified parameters
@@ -426,14 +451,14 @@ object mathPathMod {
       * @param point the interpolated point
       * @param parentIndex the index of an existing curve point that is on, or else positionally the first behind, the interpolated point
       */
-    var _setPointAtData: js.Any = js.native
+    /* private */ var _setPointAtData: js.Any = js.native
     
-    var _tangents: js.Any = js.native
+    /* private */ var _tangents: js.Any = js.native
     
     /**
       * Updates the point at interpolation matrix for the tangents, normals and binormals
       */
-    var _updateInterpolationMatrix: js.Any = js.native
+    /* private */ var _updateInterpolationMatrix: js.Any = js.native
     
     /**
       * Updates the point at data for an interpolated point along this curve
@@ -441,7 +466,7 @@ object mathPathMod {
       * @interpolateTNB wether to compute the interpolated tangent, normal and binormal
       * @returns the (updated) point at data
       */
-    var _updatePointAtData: js.Any = js.native
+    /* private */ var _updatePointAtData: js.Any = js.native
     
     /**
       * Returns the binormal vector of an interpolated Path3D curve point at the specified position along this path.
@@ -558,9 +583,9 @@ object mathPathMod {
       * @returns a sub path (slice) of this path
       */
     def slice(): Path3D = js.native
-    def slice(start: js.UndefOr[scala.Nothing], end: Double): Path3D = js.native
     def slice(start: Double): Path3D = js.native
     def slice(start: Double, end: Double): Path3D = js.native
+    def slice(start: Unit, end: Double): Path3D = js.native
     
     /**
       * Forces the Path3D tangent, normal, binormal and distance recomputation.
@@ -570,11 +595,8 @@ object mathPathMod {
       * @returns the same object updated.
       */
     def update(path: js.Array[Vector3]): Path3D = js.native
-    def update(
-      path: js.Array[Vector3],
-      firstNormal: js.UndefOr[Nullable[Vector3]],
-      alignTangentsWithPath: Boolean
-    ): Path3D = js.native
+    def update(path: js.Array[Vector3], firstNormal: Unit, alignTangentsWithPath: Boolean): Path3D = js.native
     def update(path: js.Array[Vector3], firstNormal: Nullable[Vector3]): Path3D = js.native
+    def update(path: js.Array[Vector3], firstNormal: Nullable[Vector3], alignTangentsWithPath: Boolean): Path3D = js.native
   }
 }

@@ -4,8 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("webix.ui.proto")
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.webix.webix.ui.baseview because Already inherited
+- typings.webix.webix.ui.proto because var conflicts: $height, $scope, $skin_Original, $view, $width, config, data, name, `type`, types, waitData. Inlined  */ @JSGlobal("webix.ui.proto")
 @js.native
 class proto ()
-  extends StObject
-     with typings.webix.webix.ui.proto
+  extends typings.webix.mod.ui.proto

@@ -3,31 +3,29 @@ package typings.oracleOraclejet.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaselineEnd[K2, D2]
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var baselineEnd: String = js.native
+  var baselineEnd: String
   
-  var baselineStart: String = js.native
+  var baselineStart: String
   
-  var end: String = js.native
+  var end: String
   
-  var rowContext: ComponentElement[K2] = js.native
+  var rowContext: ComponentElement[K2]
   
-  var start: String = js.native
+  var start: String
   
-  var taskContexts: js.Array[ItemData[K2, D2]] = js.native
+  var taskContexts: js.Array[ItemData[K2, D2]]
   
-  var value: String = js.native
+  var value: String
 }
 object BaselineEnd {
   
-  @scala.inline
-  def apply[K2, D2](
+  inline def apply[K2, D2](
     baselineEnd: String,
     baselineStart: String,
     end: String,
@@ -40,31 +38,22 @@ object BaselineEnd {
     __obj.asInstanceOf[BaselineEnd[K2, D2]]
   }
   
-  @scala.inline
-  implicit class BaselineEndMutableBuilder[Self <: BaselineEnd[_, _], K2, D2] (val x: Self with (BaselineEnd[K2, D2])) extends AnyVal {
+  extension [Self <: BaselineEnd[?, ?], K2, D2](x: Self & (BaselineEnd[K2, D2])) {
     
-    @scala.inline
-    def setBaselineEnd(value: String): Self = StObject.set(x, "baselineEnd", value.asInstanceOf[js.Any])
+    inline def setBaselineEnd(value: String): Self = StObject.set(x, "baselineEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaselineStart(value: String): Self = StObject.set(x, "baselineStart", value.asInstanceOf[js.Any])
+    inline def setBaselineStart(value: String): Self = StObject.set(x, "baselineStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowContext(value: ComponentElement[K2]): Self = StObject.set(x, "rowContext", value.asInstanceOf[js.Any])
+    inline def setRowContext(value: ComponentElement[K2]): Self = StObject.set(x, "rowContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskContexts(value: js.Array[ItemData[K2, D2]]): Self = StObject.set(x, "taskContexts", value.asInstanceOf[js.Any])
+    inline def setTaskContexts(value: js.Array[ItemData[K2, D2]]): Self = StObject.set(x, "taskContexts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskContextsVarargs(value: (ItemData[K2, D2])*): Self = StObject.set(x, "taskContexts", js.Array(value :_*))
+    inline def setTaskContextsVarargs(value: (ItemData[K2, D2])*): Self = StObject.set(x, "taskContexts", js.Array(value :_*))
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

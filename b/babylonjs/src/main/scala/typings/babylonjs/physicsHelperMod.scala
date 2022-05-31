@@ -8,7 +8,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object physicsHelperMod {
@@ -22,9 +21,9 @@ object physicsHelperMod {
       */
     def this(scene: Scene) = this()
     
-    var _physicsEngine: js.Any = js.native
+    /* private */ var _physicsEngine: js.Any = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
     /**
       * Applies a radial explosion force
@@ -35,12 +34,6 @@ object physicsHelperMod {
       * @returns A physics radial explosion event, or null
       */
     def applyRadialExplosionForce(origin: Vector3, radiusOrEventOptions: Double): Nullable[PhysicsRadialExplosionEvent] = js.native
-    def applyRadialExplosionForce(
-      origin: Vector3,
-      radiusOrEventOptions: Double,
-      strength: js.UndefOr[scala.Nothing],
-      falloff: PhysicsRadialImpulseFalloff
-    ): Nullable[PhysicsRadialExplosionEvent] = js.native
     def applyRadialExplosionForce(origin: Vector3, radiusOrEventOptions: Double, strength: Double): Nullable[PhysicsRadialExplosionEvent] = js.native
     def applyRadialExplosionForce(
       origin: Vector3,
@@ -48,18 +41,24 @@ object physicsHelperMod {
       strength: Double,
       falloff: PhysicsRadialImpulseFalloff
     ): Nullable[PhysicsRadialExplosionEvent] = js.native
-    def applyRadialExplosionForce(origin: Vector3, radiusOrEventOptions: PhysicsRadialExplosionEventOptions): Nullable[PhysicsRadialExplosionEvent] = js.native
     def applyRadialExplosionForce(
       origin: Vector3,
-      radiusOrEventOptions: PhysicsRadialExplosionEventOptions,
-      strength: js.UndefOr[scala.Nothing],
+      radiusOrEventOptions: Double,
+      strength: Unit,
       falloff: PhysicsRadialImpulseFalloff
     ): Nullable[PhysicsRadialExplosionEvent] = js.native
+    def applyRadialExplosionForce(origin: Vector3, radiusOrEventOptions: PhysicsRadialExplosionEventOptions): Nullable[PhysicsRadialExplosionEvent] = js.native
     def applyRadialExplosionForce(origin: Vector3, radiusOrEventOptions: PhysicsRadialExplosionEventOptions, strength: Double): Nullable[PhysicsRadialExplosionEvent] = js.native
     def applyRadialExplosionForce(
       origin: Vector3,
       radiusOrEventOptions: PhysicsRadialExplosionEventOptions,
       strength: Double,
+      falloff: PhysicsRadialImpulseFalloff
+    ): Nullable[PhysicsRadialExplosionEvent] = js.native
+    def applyRadialExplosionForce(
+      origin: Vector3,
+      radiusOrEventOptions: PhysicsRadialExplosionEventOptions,
+      strength: Unit,
       falloff: PhysicsRadialImpulseFalloff
     ): Nullable[PhysicsRadialExplosionEvent] = js.native
     
@@ -72,12 +71,6 @@ object physicsHelperMod {
       * @returns A physics radial explosion event, or null
       */
     def applyRadialExplosionImpulse(origin: Vector3, radiusOrEventOptions: Double): Nullable[PhysicsRadialExplosionEvent] = js.native
-    def applyRadialExplosionImpulse(
-      origin: Vector3,
-      radiusOrEventOptions: Double,
-      strength: js.UndefOr[scala.Nothing],
-      falloff: PhysicsRadialImpulseFalloff
-    ): Nullable[PhysicsRadialExplosionEvent] = js.native
     def applyRadialExplosionImpulse(origin: Vector3, radiusOrEventOptions: Double, strength: Double): Nullable[PhysicsRadialExplosionEvent] = js.native
     def applyRadialExplosionImpulse(
       origin: Vector3,
@@ -85,18 +78,24 @@ object physicsHelperMod {
       strength: Double,
       falloff: PhysicsRadialImpulseFalloff
     ): Nullable[PhysicsRadialExplosionEvent] = js.native
-    def applyRadialExplosionImpulse(origin: Vector3, radiusOrEventOptions: PhysicsRadialExplosionEventOptions): Nullable[PhysicsRadialExplosionEvent] = js.native
     def applyRadialExplosionImpulse(
       origin: Vector3,
-      radiusOrEventOptions: PhysicsRadialExplosionEventOptions,
-      strength: js.UndefOr[scala.Nothing],
+      radiusOrEventOptions: Double,
+      strength: Unit,
       falloff: PhysicsRadialImpulseFalloff
     ): Nullable[PhysicsRadialExplosionEvent] = js.native
+    def applyRadialExplosionImpulse(origin: Vector3, radiusOrEventOptions: PhysicsRadialExplosionEventOptions): Nullable[PhysicsRadialExplosionEvent] = js.native
     def applyRadialExplosionImpulse(origin: Vector3, radiusOrEventOptions: PhysicsRadialExplosionEventOptions, strength: Double): Nullable[PhysicsRadialExplosionEvent] = js.native
     def applyRadialExplosionImpulse(
       origin: Vector3,
       radiusOrEventOptions: PhysicsRadialExplosionEventOptions,
       strength: Double,
+      falloff: PhysicsRadialImpulseFalloff
+    ): Nullable[PhysicsRadialExplosionEvent] = js.native
+    def applyRadialExplosionImpulse(
+      origin: Vector3,
+      radiusOrEventOptions: PhysicsRadialExplosionEventOptions,
+      strength: Unit,
       falloff: PhysicsRadialImpulseFalloff
     ): Nullable[PhysicsRadialExplosionEvent] = js.native
     
@@ -109,12 +108,6 @@ object physicsHelperMod {
       * @returns A physics gravitational field event, or null
       */
     def gravitationalField(origin: Vector3, radiusOrEventOptions: Double): Nullable[PhysicsGravitationalFieldEvent] = js.native
-    def gravitationalField(
-      origin: Vector3,
-      radiusOrEventOptions: Double,
-      strength: js.UndefOr[scala.Nothing],
-      falloff: PhysicsRadialImpulseFalloff
-    ): Nullable[PhysicsGravitationalFieldEvent] = js.native
     def gravitationalField(origin: Vector3, radiusOrEventOptions: Double, strength: Double): Nullable[PhysicsGravitationalFieldEvent] = js.native
     def gravitationalField(
       origin: Vector3,
@@ -122,18 +115,24 @@ object physicsHelperMod {
       strength: Double,
       falloff: PhysicsRadialImpulseFalloff
     ): Nullable[PhysicsGravitationalFieldEvent] = js.native
-    def gravitationalField(origin: Vector3, radiusOrEventOptions: PhysicsRadialExplosionEventOptions): Nullable[PhysicsGravitationalFieldEvent] = js.native
     def gravitationalField(
       origin: Vector3,
-      radiusOrEventOptions: PhysicsRadialExplosionEventOptions,
-      strength: js.UndefOr[scala.Nothing],
+      radiusOrEventOptions: Double,
+      strength: Unit,
       falloff: PhysicsRadialImpulseFalloff
     ): Nullable[PhysicsGravitationalFieldEvent] = js.native
+    def gravitationalField(origin: Vector3, radiusOrEventOptions: PhysicsRadialExplosionEventOptions): Nullable[PhysicsGravitationalFieldEvent] = js.native
     def gravitationalField(origin: Vector3, radiusOrEventOptions: PhysicsRadialExplosionEventOptions, strength: Double): Nullable[PhysicsGravitationalFieldEvent] = js.native
     def gravitationalField(
       origin: Vector3,
       radiusOrEventOptions: PhysicsRadialExplosionEventOptions,
       strength: Double,
+      falloff: PhysicsRadialImpulseFalloff
+    ): Nullable[PhysicsGravitationalFieldEvent] = js.native
+    def gravitationalField(
+      origin: Vector3,
+      radiusOrEventOptions: PhysicsRadialExplosionEventOptions,
+      strength: Unit,
       falloff: PhysicsRadialImpulseFalloff
     ): Nullable[PhysicsGravitationalFieldEvent] = js.native
     
@@ -147,29 +146,7 @@ object physicsHelperMod {
       * @returns A physics updraft event, or null
       */
     def updraft(origin: Vector3, radiusOrEventOptions: Double): Nullable[PhysicsUpdraftEvent] = js.native
-    def updraft(
-      origin: Vector3,
-      radiusOrEventOptions: Double,
-      strength: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      updraftMode: PhysicsUpdraftMode
-    ): Nullable[PhysicsUpdraftEvent] = js.native
-    def updraft(origin: Vector3, radiusOrEventOptions: Double, strength: js.UndefOr[scala.Nothing], height: Double): Nullable[PhysicsUpdraftEvent] = js.native
-    def updraft(
-      origin: Vector3,
-      radiusOrEventOptions: Double,
-      strength: js.UndefOr[scala.Nothing],
-      height: Double,
-      updraftMode: PhysicsUpdraftMode
-    ): Nullable[PhysicsUpdraftEvent] = js.native
     def updraft(origin: Vector3, radiusOrEventOptions: Double, strength: Double): Nullable[PhysicsUpdraftEvent] = js.native
-    def updraft(
-      origin: Vector3,
-      radiusOrEventOptions: Double,
-      strength: Double,
-      height: js.UndefOr[scala.Nothing],
-      updraftMode: PhysicsUpdraftMode
-    ): Nullable[PhysicsUpdraftEvent] = js.native
     def updraft(origin: Vector3, radiusOrEventOptions: Double, strength: Double, height: Double): Nullable[PhysicsUpdraftEvent] = js.native
     def updraft(
       origin: Vector3,
@@ -178,39 +155,34 @@ object physicsHelperMod {
       height: Double,
       updraftMode: PhysicsUpdraftMode
     ): Nullable[PhysicsUpdraftEvent] = js.native
-    def updraft(origin: Vector3, radiusOrEventOptions: PhysicsUpdraftEventOptions): Nullable[PhysicsUpdraftEvent] = js.native
     def updraft(
       origin: Vector3,
-      radiusOrEventOptions: PhysicsUpdraftEventOptions,
-      strength: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
+      radiusOrEventOptions: Double,
+      strength: Double,
+      height: Unit,
       updraftMode: PhysicsUpdraftMode
     ): Nullable[PhysicsUpdraftEvent] = js.native
+    def updraft(origin: Vector3, radiusOrEventOptions: Double, strength: Unit, height: Double): Nullable[PhysicsUpdraftEvent] = js.native
     def updraft(
       origin: Vector3,
-      radiusOrEventOptions: PhysicsUpdraftEventOptions,
-      strength: js.UndefOr[scala.Nothing],
-      height: Double
-    ): Nullable[PhysicsUpdraftEvent] = js.native
-    def updraft(
-      origin: Vector3,
-      radiusOrEventOptions: PhysicsUpdraftEventOptions,
-      strength: js.UndefOr[scala.Nothing],
+      radiusOrEventOptions: Double,
+      strength: Unit,
       height: Double,
       updraftMode: PhysicsUpdraftMode
     ): Nullable[PhysicsUpdraftEvent] = js.native
+    def updraft(
+      origin: Vector3,
+      radiusOrEventOptions: Double,
+      strength: Unit,
+      height: Unit,
+      updraftMode: PhysicsUpdraftMode
+    ): Nullable[PhysicsUpdraftEvent] = js.native
+    def updraft(origin: Vector3, radiusOrEventOptions: PhysicsUpdraftEventOptions): Nullable[PhysicsUpdraftEvent] = js.native
     def updraft(origin: Vector3, radiusOrEventOptions: PhysicsUpdraftEventOptions, strength: Double): Nullable[PhysicsUpdraftEvent] = js.native
     def updraft(
       origin: Vector3,
       radiusOrEventOptions: PhysicsUpdraftEventOptions,
       strength: Double,
-      height: js.UndefOr[scala.Nothing],
-      updraftMode: PhysicsUpdraftMode
-    ): Nullable[PhysicsUpdraftEvent] = js.native
-    def updraft(
-      origin: Vector3,
-      radiusOrEventOptions: PhysicsUpdraftEventOptions,
-      strength: Double,
       height: Double
     ): Nullable[PhysicsUpdraftEvent] = js.native
     def updraft(
@@ -218,6 +190,28 @@ object physicsHelperMod {
       radiusOrEventOptions: PhysicsUpdraftEventOptions,
       strength: Double,
       height: Double,
+      updraftMode: PhysicsUpdraftMode
+    ): Nullable[PhysicsUpdraftEvent] = js.native
+    def updraft(
+      origin: Vector3,
+      radiusOrEventOptions: PhysicsUpdraftEventOptions,
+      strength: Double,
+      height: Unit,
+      updraftMode: PhysicsUpdraftMode
+    ): Nullable[PhysicsUpdraftEvent] = js.native
+    def updraft(origin: Vector3, radiusOrEventOptions: PhysicsUpdraftEventOptions, strength: Unit, height: Double): Nullable[PhysicsUpdraftEvent] = js.native
+    def updraft(
+      origin: Vector3,
+      radiusOrEventOptions: PhysicsUpdraftEventOptions,
+      strength: Unit,
+      height: Double,
+      updraftMode: PhysicsUpdraftMode
+    ): Nullable[PhysicsUpdraftEvent] = js.native
+    def updraft(
+      origin: Vector3,
+      radiusOrEventOptions: PhysicsUpdraftEventOptions,
+      strength: Unit,
+      height: Unit,
       updraftMode: PhysicsUpdraftMode
     ): Nullable[PhysicsUpdraftEvent] = js.native
     
@@ -231,18 +225,13 @@ object physicsHelperMod {
       * A physics vortex event or null
       */
     def vortex(origin: Vector3, radiusOrEventOptions: Double): Nullable[PhysicsVortexEvent] = js.native
-    def vortex(origin: Vector3, radiusOrEventOptions: Double, strength: js.UndefOr[scala.Nothing], height: Double): Nullable[PhysicsVortexEvent] = js.native
     def vortex(origin: Vector3, radiusOrEventOptions: Double, strength: Double): Nullable[PhysicsVortexEvent] = js.native
     def vortex(origin: Vector3, radiusOrEventOptions: Double, strength: Double, height: Double): Nullable[PhysicsVortexEvent] = js.native
+    def vortex(origin: Vector3, radiusOrEventOptions: Double, strength: Unit, height: Double): Nullable[PhysicsVortexEvent] = js.native
     def vortex(origin: Vector3, radiusOrEventOptions: PhysicsVortexEventOptions): Nullable[PhysicsVortexEvent] = js.native
-    def vortex(
-      origin: Vector3,
-      radiusOrEventOptions: PhysicsVortexEventOptions,
-      strength: js.UndefOr[scala.Nothing],
-      height: Double
-    ): Nullable[PhysicsVortexEvent] = js.native
     def vortex(origin: Vector3, radiusOrEventOptions: PhysicsVortexEventOptions, strength: Double): Nullable[PhysicsVortexEvent] = js.native
     def vortex(origin: Vector3, radiusOrEventOptions: PhysicsVortexEventOptions, strength: Double, height: Double): Nullable[PhysicsVortexEvent] = js.native
+    def vortex(origin: Vector3, radiusOrEventOptions: PhysicsVortexEventOptions, strength: Unit, height: Double): Nullable[PhysicsVortexEvent] = js.native
   }
   
   @JSImport("babylonjs/Physics/physicsHelper", "PhysicsRadialExplosionEventOptions")
@@ -282,17 +271,21 @@ object physicsHelperMod {
   object PhysicsRadialImpulseFalloff extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[PhysicsRadialImpulseFalloff with Double] = js.native
+    def apply(value: Double): js.UndefOr[PhysicsRadialImpulseFalloff & Double] = js.native
     
     /** Defines that impulse is constant in strength across it's whole radius */
     @js.native
-    sealed trait Constant extends PhysicsRadialImpulseFalloff
-    /* 0 */ val Constant: typings.babylonjs.physicsHelperMod.PhysicsRadialImpulseFalloff.Constant with Double = js.native
+    sealed trait Constant
+      extends StObject
+         with PhysicsRadialImpulseFalloff
+    /* 0 */ val Constant: typings.babylonjs.physicsHelperMod.PhysicsRadialImpulseFalloff.Constant & Double = js.native
     
     /** Defines that impulse gets weaker if it's further from the origin */
     @js.native
-    sealed trait Linear extends PhysicsRadialImpulseFalloff
-    /* 1 */ val Linear: typings.babylonjs.physicsHelperMod.PhysicsRadialImpulseFalloff.Linear with Double = js.native
+    sealed trait Linear
+      extends StObject
+         with PhysicsRadialImpulseFalloff
+    /* 1 */ val Linear: typings.babylonjs.physicsHelperMod.PhysicsRadialImpulseFalloff.Linear & Double = js.native
   }
   
   @JSImport("babylonjs/Physics/physicsHelper", "PhysicsUpdraftEventOptions")
@@ -327,17 +320,21 @@ object physicsHelperMod {
   object PhysicsUpdraftMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[PhysicsUpdraftMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[PhysicsUpdraftMode & Double] = js.native
     
     /** Defines that the upstream forces will pull towards the top center of the cylinder */
     @js.native
-    sealed trait Center extends PhysicsUpdraftMode
-    /* 0 */ val Center: typings.babylonjs.physicsHelperMod.PhysicsUpdraftMode.Center with Double = js.native
+    sealed trait Center
+      extends StObject
+         with PhysicsUpdraftMode
+    /* 0 */ val Center: typings.babylonjs.physicsHelperMod.PhysicsUpdraftMode.Center & Double = js.native
     
     /** Defines that once a impostor is inside the cylinder, it will shoot out perpendicular from the ground of the cylinder */
     @js.native
-    sealed trait Perpendicular extends PhysicsUpdraftMode
-    /* 1 */ val Perpendicular: typings.babylonjs.physicsHelperMod.PhysicsUpdraftMode.Perpendicular with Double = js.native
+    sealed trait Perpendicular
+      extends StObject
+         with PhysicsUpdraftMode
+    /* 1 */ val Perpendicular: typings.babylonjs.physicsHelperMod.PhysicsUpdraftMode.Perpendicular & Double = js.native
   }
   
   @JSImport("babylonjs/Physics/physicsHelper", "PhysicsVortexEventOptions")
@@ -380,35 +377,30 @@ object physicsHelperMod {
     var updraftForceMultiplier: Double = js.native
   }
   
-  @js.native
   trait PhysicsAffectedImpostorWithData extends StObject {
     
     /**
       * The data about the hit/horce from the explosion
       */
-    var hitData: PhysicsHitData = js.native
+    var hitData: PhysicsHitData
     
     /**
       * The impostor affected by the effect
       */
-    var impostor: PhysicsImpostor = js.native
+    var impostor: PhysicsImpostor
   }
   object PhysicsAffectedImpostorWithData {
     
-    @scala.inline
-    def apply(hitData: PhysicsHitData, impostor: PhysicsImpostor): PhysicsAffectedImpostorWithData = {
+    inline def apply(hitData: PhysicsHitData, impostor: PhysicsImpostor): PhysicsAffectedImpostorWithData = {
       val __obj = js.Dynamic.literal(hitData = hitData.asInstanceOf[js.Any], impostor = impostor.asInstanceOf[js.Any])
       __obj.asInstanceOf[PhysicsAffectedImpostorWithData]
     }
     
-    @scala.inline
-    implicit class PhysicsAffectedImpostorWithDataMutableBuilder[Self <: PhysicsAffectedImpostorWithData] (val x: Self) extends AnyVal {
+    extension [Self <: PhysicsAffectedImpostorWithData](x: Self) {
       
-      @scala.inline
-      def setHitData(value: PhysicsHitData): Self = StObject.set(x, "hitData", value.asInstanceOf[js.Any])
+      inline def setHitData(value: PhysicsHitData): Self = StObject.set(x, "hitData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImpostor(value: PhysicsImpostor): Self = StObject.set(x, "impostor", value.asInstanceOf[js.Any])
+      inline def setImpostor(value: PhysicsImpostor): Self = StObject.set(x, "impostor", value.asInstanceOf[js.Any])
     }
   }
   
@@ -418,21 +410,21 @@ object physicsHelperMod {
   @js.native
   trait PhysicsGravitationalFieldEvent extends StObject {
     
-    var _dataFetched: js.Any = js.native
+    /* private */ var _dataFetched: js.Any = js.native
     
-    var _options: js.Any = js.native
+    /* private */ var _options: js.Any = js.native
     
-    var _origin: js.Any = js.native
+    /* private */ var _origin: js.Any = js.native
     
-    var _physicsHelper: js.Any = js.native
+    /* private */ var _physicsHelper: js.Any = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
-    var _sphere: js.Any = js.native
+    /* private */ var _sphere: js.Any = js.native
     
-    var _tick: js.Any = js.native
+    /* private */ var _tick: js.Any = js.native
     
-    var _tickCallback: js.Any = js.native
+    /* private */ var _tickCallback: js.Any = js.native
     
     /**
       * Disables the gravitational field.
@@ -458,67 +450,57 @@ object physicsHelperMod {
     def getData(): PhysicsGravitationalFieldEventData = js.native
   }
   
-  @js.native
   trait PhysicsGravitationalFieldEventData extends StObject {
     
     /**
       * A sphere mesh used for the gravitational field event
       */
-    var sphere: Mesh = js.native
+    var sphere: Mesh
   }
   object PhysicsGravitationalFieldEventData {
     
-    @scala.inline
-    def apply(sphere: Mesh): PhysicsGravitationalFieldEventData = {
+    inline def apply(sphere: Mesh): PhysicsGravitationalFieldEventData = {
       val __obj = js.Dynamic.literal(sphere = sphere.asInstanceOf[js.Any])
       __obj.asInstanceOf[PhysicsGravitationalFieldEventData]
     }
     
-    @scala.inline
-    implicit class PhysicsGravitationalFieldEventDataMutableBuilder[Self <: PhysicsGravitationalFieldEventData] (val x: Self) extends AnyVal {
+    extension [Self <: PhysicsGravitationalFieldEventData](x: Self) {
       
-      @scala.inline
-      def setSphere(value: Mesh): Self = StObject.set(x, "sphere", value.asInstanceOf[js.Any])
+      inline def setSphere(value: Mesh): Self = StObject.set(x, "sphere", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait PhysicsHitData extends StObject {
     
     /**
       * The contact point
       */
-    var contactPoint: Vector3 = js.native
+    var contactPoint: Vector3
     
     /**
       * The distance from the origin to the contact point
       */
-    var distanceFromOrigin: Double = js.native
+    var distanceFromOrigin: Double
     
     /**
       * The force applied at the contact point
       */
-    var force: Vector3 = js.native
+    var force: Vector3
   }
   object PhysicsHitData {
     
-    @scala.inline
-    def apply(contactPoint: Vector3, distanceFromOrigin: Double, force: Vector3): PhysicsHitData = {
+    inline def apply(contactPoint: Vector3, distanceFromOrigin: Double, force: Vector3): PhysicsHitData = {
       val __obj = js.Dynamic.literal(contactPoint = contactPoint.asInstanceOf[js.Any], distanceFromOrigin = distanceFromOrigin.asInstanceOf[js.Any], force = force.asInstanceOf[js.Any])
       __obj.asInstanceOf[PhysicsHitData]
     }
     
-    @scala.inline
-    implicit class PhysicsHitDataMutableBuilder[Self <: PhysicsHitData] (val x: Self) extends AnyVal {
+    extension [Self <: PhysicsHitData](x: Self) {
       
-      @scala.inline
-      def setContactPoint(value: Vector3): Self = StObject.set(x, "contactPoint", value.asInstanceOf[js.Any])
+      inline def setContactPoint(value: Vector3): Self = StObject.set(x, "contactPoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistanceFromOrigin(value: Double): Self = StObject.set(x, "distanceFromOrigin", value.asInstanceOf[js.Any])
+      inline def setDistanceFromOrigin(value: Double): Self = StObject.set(x, "distanceFromOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForce(value: Vector3): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+      inline def setForce(value: Vector3): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     }
   }
   
@@ -528,18 +510,18 @@ object physicsHelperMod {
   @js.native
   trait PhysicsRadialExplosionEvent extends StObject {
     
-    var _dataFetched: js.Any = js.native
+    /* private */ var _dataFetched: js.Any = js.native
     
-    var _intersectsWithSphere: js.Any = js.native
+    /* private */ var _intersectsWithSphere: js.Any = js.native
     
-    var _options: js.Any = js.native
+    /* private */ var _options: js.Any = js.native
     
     /*** Helpers ***/
-    var _prepareSphere: js.Any = js.native
+    /* private */ var _prepareSphere: js.Any = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
-    var _sphere: js.Any = js.native
+    /* private */ var _sphere: js.Any = js.native
     
     /**
       * Disposes the sphere.
@@ -569,27 +551,23 @@ object physicsHelperMod {
     def triggerAffectedImpostorsCallback(affectedImpostorsWithData: js.Array[PhysicsAffectedImpostorWithData]): Unit = js.native
   }
   
-  @js.native
   trait PhysicsRadialExplosionEventData extends StObject {
     
     /**
       * A sphere used for the radial explosion event
       */
-    var sphere: Mesh = js.native
+    var sphere: Mesh
   }
   object PhysicsRadialExplosionEventData {
     
-    @scala.inline
-    def apply(sphere: Mesh): PhysicsRadialExplosionEventData = {
+    inline def apply(sphere: Mesh): PhysicsRadialExplosionEventData = {
       val __obj = js.Dynamic.literal(sphere = sphere.asInstanceOf[js.Any])
       __obj.asInstanceOf[PhysicsRadialExplosionEventData]
     }
     
-    @scala.inline
-    implicit class PhysicsRadialExplosionEventDataMutableBuilder[Self <: PhysicsRadialExplosionEventData] (val x: Self) extends AnyVal {
+    extension [Self <: PhysicsRadialExplosionEventData](x: Self) {
       
-      @scala.inline
-      def setSphere(value: Mesh): Self = StObject.set(x, "sphere", value.asInstanceOf[js.Any])
+      inline def setSphere(value: Mesh): Self = StObject.set(x, "sphere", value.asInstanceOf[js.Any])
     }
   }
   
@@ -599,32 +577,32 @@ object physicsHelperMod {
   @js.native
   trait PhysicsUpdraftEvent extends StObject {
     
-    var _cylinder: js.Any = js.native
+    /* private */ var _cylinder: js.Any = js.native
     
-    var _cylinderPosition: js.Any = js.native
+    /* private */ var _cylinderPosition: js.Any = js.native
     
-    var _dataFetched: js.Any = js.native
+    /* private */ var _dataFetched: js.Any = js.native
     
-    var _intersectsWithCylinder: js.Any = js.native
+    /* private */ var _intersectsWithCylinder: js.Any = js.native
     
-    var _options: js.Any = js.native
+    /* private */ var _options: js.Any = js.native
     
-    var _origin: js.Any = js.native
+    /* private */ var _origin: js.Any = js.native
     
-    var _originDirection: js.Any = js.native
+    /* private */ var _originDirection: js.Any = js.native
     
-    var _originTop: js.Any = js.native
+    /* private */ var _originTop: js.Any = js.native
     
-    var _physicsEngine: js.Any = js.native
+    /* private */ var _physicsEngine: js.Any = js.native
     
     /*** Helpers ***/
-    var _prepareCylinder: js.Any = js.native
+    /* private */ var _prepareCylinder: js.Any = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
-    var _tick: js.Any = js.native
+    /* private */ var _tick: js.Any = js.native
     
-    var _tickCallback: js.Any = js.native
+    /* private */ var _tickCallback: js.Any = js.native
     
     /**
       * Disables the updraft.
@@ -649,30 +627,26 @@ object physicsHelperMod {
       */
     def getData(): PhysicsUpdraftEventData = js.native
     
-    var getImpostorHitData: js.Any = js.native
+    /* private */ var getImpostorHitData: js.Any = js.native
   }
   
-  @js.native
   trait PhysicsUpdraftEventData extends StObject {
     
     /**
       * A cylinder used for the updraft event
       */
-    var cylinder: Mesh = js.native
+    var cylinder: Mesh
   }
   object PhysicsUpdraftEventData {
     
-    @scala.inline
-    def apply(cylinder: Mesh): PhysicsUpdraftEventData = {
+    inline def apply(cylinder: Mesh): PhysicsUpdraftEventData = {
       val __obj = js.Dynamic.literal(cylinder = cylinder.asInstanceOf[js.Any])
       __obj.asInstanceOf[PhysicsUpdraftEventData]
     }
     
-    @scala.inline
-    implicit class PhysicsUpdraftEventDataMutableBuilder[Self <: PhysicsUpdraftEventData] (val x: Self) extends AnyVal {
+    extension [Self <: PhysicsUpdraftEventData](x: Self) {
       
-      @scala.inline
-      def setCylinder(value: Mesh): Self = StObject.set(x, "cylinder", value.asInstanceOf[js.Any])
+      inline def setCylinder(value: Mesh): Self = StObject.set(x, "cylinder", value.asInstanceOf[js.Any])
     }
   }
   
@@ -682,30 +656,30 @@ object physicsHelperMod {
   @js.native
   trait PhysicsVortexEvent extends StObject {
     
-    var _cylinder: js.Any = js.native
+    /* private */ var _cylinder: js.Any = js.native
     
-    var _cylinderPosition: js.Any = js.native
+    /* private */ var _cylinderPosition: js.Any = js.native
     
-    var _dataFetched: js.Any = js.native
+    /* private */ var _dataFetched: js.Any = js.native
     
-    var _intersectsWithCylinder: js.Any = js.native
+    /* private */ var _intersectsWithCylinder: js.Any = js.native
     
-    var _options: js.Any = js.native
+    /* private */ var _options: js.Any = js.native
     
-    var _origin: js.Any = js.native
+    /* private */ var _origin: js.Any = js.native
     
-    var _originTop: js.Any = js.native
+    /* private */ var _originTop: js.Any = js.native
     
-    var _physicsEngine: js.Any = js.native
+    /* private */ var _physicsEngine: js.Any = js.native
     
     /*** Helpers ***/
-    var _prepareCylinder: js.Any = js.native
+    /* private */ var _prepareCylinder: js.Any = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
-    var _tick: js.Any = js.native
+    /* private */ var _tick: js.Any = js.native
     
-    var _tickCallback: js.Any = js.native
+    /* private */ var _tickCallback: js.Any = js.native
     
     /**
       * Disables the cortex.
@@ -730,30 +704,26 @@ object physicsHelperMod {
       */
     def getData(): PhysicsVortexEventData = js.native
     
-    var getImpostorHitData: js.Any = js.native
+    /* private */ var getImpostorHitData: js.Any = js.native
   }
   
-  @js.native
   trait PhysicsVortexEventData extends StObject {
     
     /**
       * A cylinder used for the vortex event
       */
-    var cylinder: Mesh = js.native
+    var cylinder: Mesh
   }
   object PhysicsVortexEventData {
     
-    @scala.inline
-    def apply(cylinder: Mesh): PhysicsVortexEventData = {
+    inline def apply(cylinder: Mesh): PhysicsVortexEventData = {
       val __obj = js.Dynamic.literal(cylinder = cylinder.asInstanceOf[js.Any])
       __obj.asInstanceOf[PhysicsVortexEventData]
     }
     
-    @scala.inline
-    implicit class PhysicsVortexEventDataMutableBuilder[Self <: PhysicsVortexEventData] (val x: Self) extends AnyVal {
+    extension [Self <: PhysicsVortexEventData](x: Self) {
       
-      @scala.inline
-      def setCylinder(value: Mesh): Self = StObject.set(x, "cylinder", value.asInstanceOf[js.Any])
+      inline def setCylinder(value: Mesh): Self = StObject.set(x, "cylinder", value.asInstanceOf[js.Any])
     }
   }
 }

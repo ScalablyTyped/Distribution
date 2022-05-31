@@ -2,32 +2,28 @@ package typings.jupyterlabServices.messagesMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.jupyterlabServices.anon.TargetnameString
-import typings.jupyterlabServices.jupyterlabServicesStrings.ok
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ICommInfoReply extends IReplyOkContent {
+trait ICommInfoReply
+  extends StObject
+     with IReplyOkContent {
   
   /**
     * Mapping of comm ids to target names.
     */
-  var comms: StringDictionary[TargetnameString] = js.native
+  var comms: StringDictionary[TargetnameString]
 }
 object ICommInfoReply {
   
-  @scala.inline
-  def apply(comms: StringDictionary[TargetnameString], status: ok): ICommInfoReply = {
-    val __obj = js.Dynamic.literal(comms = comms.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+  inline def apply(comms: StringDictionary[TargetnameString]): ICommInfoReply = {
+    val __obj = js.Dynamic.literal(comms = comms.asInstanceOf[js.Any], status = "ok")
     __obj.asInstanceOf[ICommInfoReply]
   }
   
-  @scala.inline
-  implicit class ICommInfoReplyMutableBuilder[Self <: ICommInfoReply] (val x: Self) extends AnyVal {
+  extension [Self <: ICommInfoReply](x: Self) {
     
-    @scala.inline
-    def setComms(value: StringDictionary[TargetnameString]): Self = StObject.set(x, "comms", value.asInstanceOf[js.Any])
+    inline def setComms(value: StringDictionary[TargetnameString]): Self = StObject.set(x, "comms", value.asInstanceOf[js.Any])
   }
 }

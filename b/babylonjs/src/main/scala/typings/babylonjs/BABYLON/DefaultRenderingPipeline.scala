@@ -2,19 +2,19 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DefaultRenderingPipeline
-  extends PostProcessRenderPipeline
+  extends StObject
+     with PostProcessRenderPipeline
      with IDisposable
      with IAnimatable {
   
   /**
     * ID of the chromatic aberration post process,
     */
-  val ChromaticAberrationPostProcessId: js.Any = js.native
+  /* private */ val ChromaticAberrationPostProcessId: js.Any = js.native
   
   /**
     * @ignore
@@ -25,7 +25,7 @@ trait DefaultRenderingPipeline
   /**
     * ID of the grain post process
     */
-  val GrainPostProcessId: js.Any = js.native
+  /* private */ val GrainPostProcessId: js.Any = js.native
   
   /**
     * @ignore
@@ -36,82 +36,82 @@ trait DefaultRenderingPipeline
   /**
     * ID of the sharpen post process,
     */
-  val SharpenPostProcessId: js.Any = js.native
+  /* private */ val SharpenPostProcessId: js.Any = js.native
   
-  var _bloomEnabled: js.Any = js.native
+  /* private */ var _bloomEnabled: js.Any = js.native
   
-  var _bloomKernel: js.Any = js.native
+  /* private */ var _bloomKernel: js.Any = js.native
   
-  var _bloomScale: js.Any = js.native
+  /* private */ var _bloomScale: js.Any = js.native
   
   /**
     * Specifies the luma threshold for the area that will be blurred by the bloom
     */
-  var _bloomThreshold: js.Any = js.native
+  /* private */ var _bloomThreshold: js.Any = js.native
   
   /**
     * Specifies the weight of the bloom in the final rendering
     */
-  var _bloomWeight: js.Any = js.native
+  /* private */ var _bloomWeight: js.Any = js.native
   
-  var _buildAllowed: js.Any = js.native
+  /* private */ var _buildAllowed: js.Any = js.native
   
-  var _buildPipeline: js.Any = js.native
+  /* private */ var _buildPipeline: js.Any = js.native
   
-  var _camerasToBeAttached: js.Any = js.native
+  /* private */ var _camerasToBeAttached: js.Any = js.native
   
-  var _chromaticAberrationEffect: js.Any = js.native
+  /* private */ var _chromaticAberrationEffect: js.Any = js.native
   
-  var _chromaticAberrationEnabled: js.Any = js.native
+  /* private */ var _chromaticAberrationEnabled: js.Any = js.native
   
-  var _defaultPipelineTextureType: js.Any = js.native
+  /* private */ var _defaultPipelineTextureType: js.Any = js.native
   
-  var _depthOfFieldBlurLevel: js.Any = js.native
+  /* private */ var _depthOfFieldBlurLevel: js.Any = js.native
   
-  var _depthOfFieldEnabled: js.Any = js.native
+  /* private */ var _depthOfFieldEnabled: js.Any = js.native
   
-  var _depthOfFieldSceneObserver: js.Any = js.native
+  /* private */ var _depthOfFieldSceneObserver: js.Any = js.native
   
-  var _disposePostProcesses: js.Any = js.native
+  /* private */ var _disposePostProcesses: js.Any = js.native
   
-  var _fxaaEnabled: js.Any = js.native
+  /* private */ var _fxaaEnabled: js.Any = js.native
   
   /**
     * Glow post process which adds a glow to emissive areas of the image
     */
-  var _glowLayer: js.Any = js.native
+  /* private */ var _glowLayer: js.Any = js.native
   
-  var _grainEffect: js.Any = js.native
+  /* private */ var _grainEffect: js.Any = js.native
   
-  var _grainEnabled: js.Any = js.native
+  /* private */ var _grainEnabled: js.Any = js.native
   
-  var _hardwareScaleLevel: js.Any = js.native
+  /* private */ var _hardwareScaleLevel: js.Any = js.native
   
-  var _hasCleared: js.Any = js.native
+  /* private */ var _hasCleared: js.Any = js.native
   
-  var _hdr: js.Any = js.native
+  /* private */ var _hdr: js.Any = js.native
   
-  var _imageProcessingConfigurationObserver: js.Any = js.native
+  /* private */ var _imageProcessingConfigurationObserver: js.Any = js.native
   
-  var _imageProcessingEnabled: js.Any = js.native
+  /* private */ var _imageProcessingEnabled: js.Any = js.native
   
-  var _prevPostProcess: js.Any = js.native
+  /* private */ var _prevPostProcess: js.Any = js.native
   
-  var _prevPrevPostProcess: js.Any = js.native
+  /* private */ var _prevPrevPostProcess: js.Any = js.native
   
-  var _rebuildBloom: js.Any = js.native
+  /* private */ var _rebuildBloom: js.Any = js.native
   
-  var _resizeObserver: js.Any = js.native
+  /* private */ var _resizeObserver: js.Any = js.native
   
-  var _samples: js.Any = js.native
+  /* private */ var _samples: js.Any = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
-  var _setAutoClearAndTextureSharing: js.Any = js.native
+  /* private */ var _setAutoClearAndTextureSharing: js.Any = js.native
   
-  var _sharpenEffect: js.Any = js.native
+  /* private */ var _sharpenEffect: js.Any = js.native
   
-  var _sharpenEnabled: js.Any = js.native
+  /* private */ var _sharpenEnabled: js.Any = js.native
   
   /**
     * Adds a camera to the pipeline
@@ -125,7 +125,7 @@ trait DefaultRenderingPipeline
   @JSName("animations")
   var animations_DefaultRenderingPipeline: js.Array[Animation] = js.native
   
-  var bloom: js.Any = js.native
+  /* private */ var bloom: js.Any = js.native
   
   def bloomEnabled: Boolean = js.native
   /**

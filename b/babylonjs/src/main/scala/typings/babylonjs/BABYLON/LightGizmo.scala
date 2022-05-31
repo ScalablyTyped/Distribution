@@ -2,25 +2,26 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LightGizmo extends Gizmo {
+trait LightGizmo
+  extends StObject
+     with Gizmo {
   
-  var _attachedMeshParent: js.Any = js.native
+  /* private */ var _attachedMeshParent: js.Any = js.native
   
-  var _cachedForward: js.Any = js.native
+  /* private */ var _cachedForward: js.Any = js.native
   
-  var _cachedPosition: js.Any = js.native
+  /* private */ var _cachedPosition: js.Any = js.native
   
-  var _light: js.Any = js.native
+  /* private */ var _light: js.Any = js.native
   
-  var _lightMesh: js.Any = js.native
+  /* private */ var _lightMesh: js.Any = js.native
   
-  var _material: js.Any = js.native
+  /* private */ var _material: js.Any = js.native
   
-  var _pointerObserver: js.Any = js.native
+  /* private */ var _pointerObserver: js.Any = js.native
   
   def light: Nullable[Light] = js.native
   /**

@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.PointsCloudSystem")
 @js.native
 class PointsCloudSystem protected ()
-  extends typings.babylonjs.BABYLON.PointsCloudSystem {
+  extends StObject
+     with typings.babylonjs.BABYLON.PointsCloudSystem {
   /**
     * Creates a PCS (Points Cloud System) object
     * @param name (String) is the PCS name, this will be the underlying mesh name
@@ -20,4 +20,10 @@ class PointsCloudSystem protected ()
     */
   def this(name: String, pointSize: Double, scene: typings.babylonjs.BABYLON.Scene) = this()
   def this(name: String, pointSize: Double, scene: typings.babylonjs.BABYLON.Scene, options: `0`) = this()
+  
+  /**
+    * Releases all held resources
+    */
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
 }

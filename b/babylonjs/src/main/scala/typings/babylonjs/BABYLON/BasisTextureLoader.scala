@@ -3,11 +3,12 @@ package typings.babylonjs.BABYLON
 import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BasisTextureLoader extends IInternalTextureLoader {
+trait BasisTextureLoader
+  extends StObject
+     with IInternalTextureLoader {
   
   /**
     * Uploads the 2D texture data to the WebGL texture. It has already been bound once in the callback.

@@ -5,7 +5,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -33,40 +32,8 @@ object babylonjsEnginesThinEngineAugmentingMod {
       scene: Nullable[Scene],
       lodScale: Double,
       lodOffset: Double,
-      onLoad: js.UndefOr[Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]]],
-      onError: js.UndefOr[Nullable[js.Function2[js.UndefOr[String], js.UndefOr[_], Unit]]],
-      format: js.UndefOr[scala.Nothing],
-      forcedExtension: js.UndefOr[scala.Nothing],
-      createPolynomials: Boolean
-    ): InternalTexture = js.native
-    def createPrefilteredCubeTexture(
-      rootUrl: String,
-      scene: Nullable[Scene],
-      lodScale: Double,
-      lodOffset: Double,
-      onLoad: js.UndefOr[Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]]],
-      onError: js.UndefOr[Nullable[js.Function2[js.UndefOr[String], js.UndefOr[_], Unit]]],
-      format: js.UndefOr[scala.Nothing],
-      forcedExtension: js.Any
-    ): InternalTexture = js.native
-    def createPrefilteredCubeTexture(
-      rootUrl: String,
-      scene: Nullable[Scene],
-      lodScale: Double,
-      lodOffset: Double,
-      onLoad: js.UndefOr[Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]]],
-      onError: js.UndefOr[Nullable[js.Function2[js.UndefOr[String], js.UndefOr[_], Unit]]],
-      format: js.UndefOr[scala.Nothing],
-      forcedExtension: js.Any,
-      createPolynomials: Boolean
-    ): InternalTexture = js.native
-    def createPrefilteredCubeTexture(
-      rootUrl: String,
-      scene: Nullable[Scene],
-      lodScale: Double,
-      lodOffset: Double,
-      onLoad: js.UndefOr[Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]]],
-      onError: js.UndefOr[Nullable[js.Function2[js.UndefOr[String], js.UndefOr[_], Unit]]],
+      onLoad: Unit,
+      onError: Unit,
       format: Double
     ): InternalTexture = js.native
     def createPrefilteredCubeTexture(
@@ -74,19 +41,8 @@ object babylonjsEnginesThinEngineAugmentingMod {
       scene: Nullable[Scene],
       lodScale: Double,
       lodOffset: Double,
-      onLoad: js.UndefOr[Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]]],
-      onError: js.UndefOr[Nullable[js.Function2[js.UndefOr[String], js.UndefOr[_], Unit]]],
-      format: Double,
-      forcedExtension: js.UndefOr[scala.Nothing],
-      createPolynomials: Boolean
-    ): InternalTexture = js.native
-    def createPrefilteredCubeTexture(
-      rootUrl: String,
-      scene: Nullable[Scene],
-      lodScale: Double,
-      lodOffset: Double,
-      onLoad: js.UndefOr[Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]]],
-      onError: js.UndefOr[Nullable[js.Function2[js.UndefOr[String], js.UndefOr[_], Unit]]],
+      onLoad: Unit,
+      onError: Unit,
       format: Double,
       forcedExtension: js.Any
     ): InternalTexture = js.native
@@ -95,8 +51,8 @@ object babylonjsEnginesThinEngineAugmentingMod {
       scene: Nullable[Scene],
       lodScale: Double,
       lodOffset: Double,
-      onLoad: js.UndefOr[Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]]],
-      onError: js.UndefOr[Nullable[js.Function2[js.UndefOr[String], js.UndefOr[_], Unit]]],
+      onLoad: Unit,
+      onError: Unit,
       format: Double,
       forcedExtension: js.Any,
       createPolynomials: Boolean
@@ -106,8 +62,140 @@ object babylonjsEnginesThinEngineAugmentingMod {
       scene: Nullable[Scene],
       lodScale: Double,
       lodOffset: Double,
-      onLoad: js.UndefOr[Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]]],
-      onError: Nullable[js.Function2[js.UndefOr[String], js.UndefOr[_], Unit]]
+      onLoad: Unit,
+      onError: Unit,
+      format: Double,
+      forcedExtension: Unit,
+      createPolynomials: Boolean
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Unit,
+      onError: Unit,
+      format: Unit,
+      forcedExtension: js.Any
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Unit,
+      onError: Unit,
+      format: Unit,
+      forcedExtension: js.Any,
+      createPolynomials: Boolean
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Unit,
+      onError: Unit,
+      format: Unit,
+      forcedExtension: Unit,
+      createPolynomials: Boolean
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Unit,
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ]
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Unit,
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ],
+      format: Double
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Unit,
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ],
+      format: Double,
+      forcedExtension: js.Any
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Unit,
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ],
+      format: Double,
+      forcedExtension: js.Any,
+      createPolynomials: Boolean
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Unit,
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ],
+      format: Double,
+      forcedExtension: Unit,
+      createPolynomials: Boolean
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Unit,
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ],
+      format: Unit,
+      forcedExtension: js.Any
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Unit,
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ],
+      format: Unit,
+      forcedExtension: js.Any,
+      createPolynomials: Boolean
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Unit,
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ],
+      format: Unit,
+      forcedExtension: Unit,
+      createPolynomials: Boolean
     ): InternalTexture = js.native
     def createPrefilteredCubeTexture(
       rootUrl: String,
@@ -115,6 +203,176 @@ object babylonjsEnginesThinEngineAugmentingMod {
       lodScale: Double,
       lodOffset: Double,
       onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]]
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+      onError: Unit,
+      format: Double
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+      onError: Unit,
+      format: Double,
+      forcedExtension: js.Any
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+      onError: Unit,
+      format: Double,
+      forcedExtension: js.Any,
+      createPolynomials: Boolean
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+      onError: Unit,
+      format: Double,
+      forcedExtension: Unit,
+      createPolynomials: Boolean
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+      onError: Unit,
+      format: Unit,
+      forcedExtension: js.Any
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+      onError: Unit,
+      format: Unit,
+      forcedExtension: js.Any,
+      createPolynomials: Boolean
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+      onError: Unit,
+      format: Unit,
+      forcedExtension: Unit,
+      createPolynomials: Boolean
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ]
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ],
+      format: Double
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ],
+      format: Double,
+      forcedExtension: js.Any
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ],
+      format: Double,
+      forcedExtension: js.Any,
+      createPolynomials: Boolean
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ],
+      format: Double,
+      forcedExtension: Unit,
+      createPolynomials: Boolean
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ],
+      format: Unit,
+      forcedExtension: js.Any
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ],
+      format: Unit,
+      forcedExtension: js.Any,
+      createPolynomials: Boolean
+    ): InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        ],
+      format: Unit,
+      forcedExtension: Unit,
+      createPolynomials: Boolean
     ): InternalTexture = js.native
   }
 }

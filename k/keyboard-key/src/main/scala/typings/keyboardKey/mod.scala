@@ -1218,10 +1218,4 @@ object mod extends Shortcut {
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
   override def _to: `54` = ^
-  
-  /**
-    * Mapping from numeric key code to key name. If the value is an array, the first element is the
-    * primary key name, and the second element is the key name when shift is pressed.
-    */
-  object codes
 }

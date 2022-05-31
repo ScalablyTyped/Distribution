@@ -4,7 +4,6 @@ import typings.babylonjs.typesMod.Nullable
 import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "InternalTexture")
@@ -30,14 +29,16 @@ class InternalTexture protected ()
 /* static members */
 object InternalTexture {
   
-  /** @hidden */
-  @JSImport("babylonjs", "InternalTexture._UpdateRGBDAsync")
+  @JSImport("babylonjs", "InternalTexture")
   @js.native
-  def _UpdateRGBDAsync(
+  val ^ : js.Any = js.native
+  
+  /** @hidden */
+  inline def _UpdateRGBDAsync(
     internalTexture: typings.babylonjs.internalTextureMod.InternalTexture,
     data: js.Array[js.Array[ArrayBufferView]],
     sphericalPolynomial: Nullable[typings.babylonjs.sphericalPolynomialMod.SphericalPolynomial],
     lodScale: Double,
     lodOffset: Double
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("_UpdateRGBDAsync")(internalTexture.asInstanceOf[js.Any], data.asInstanceOf[js.Any], sphericalPolynomial.asInstanceOf[js.Any], lodScale.asInstanceOf[js.Any], lodOffset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

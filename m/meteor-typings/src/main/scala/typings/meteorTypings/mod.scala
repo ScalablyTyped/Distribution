@@ -279,7 +279,4 @@ object mod {
       inline def setVerifyEmail(value: String => String): Self = StObject.set(x, "verifyEmail", js.Any.fromFunction1(value))
     }
   }
-  
-  /* augmented module */
-  object meteorAccountsBaseAugmentingMod
 }

@@ -3,7 +3,6 @@ package typings.babylonjs.texturesIndexMod
 import typings.babylonjs.sceneMod.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Materials/Textures/index", "CustomProceduralTexture")
@@ -35,7 +34,7 @@ class CustomProceduralTexture protected ()
     texturePath: String,
     size: Double,
     scene: Scene,
-    fallbackTexture: js.UndefOr[scala.Nothing],
+    fallbackTexture: Unit,
     generateMipMaps: Boolean
   ) = this()
   def this(

@@ -7,7 +7,6 @@ import typings.babylonjs.mathViewportMod.Viewport
 import typings.babylonjs.sceneMod.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lensFlareSystemMod {
@@ -29,24 +28,24 @@ object lensFlareSystemMod {
       */
     name: String, emitter: js.Any, scene: Scene) = this()
     
-    var _effect: js.Any = js.native
+    /* private */ var _effect: js.Any = js.native
     
-    var _emitter: js.Any = js.native
+    /* private */ var _emitter: js.Any = js.native
     
-    var _indexBuffer: js.Any = js.native
+    /* private */ var _indexBuffer: js.Any = js.native
     
-    var _isEnabled: js.Any = js.native
+    /* private */ var _isEnabled: js.Any = js.native
     
     /** @hidden */
     def _isVisible(): Boolean = js.native
     
-    var _positionX: js.Any = js.native
+    /* private */ var _positionX: js.Any = js.native
     
-    var _positionY: js.Any = js.native
+    /* private */ var _positionY: js.Any = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
-    var _vertexBuffers: js.Any = js.native
+    /* private */ var _vertexBuffers: js.Any = js.native
     
     /**
       * Define a limit from the border the lens flare can be visible.
@@ -141,6 +140,10 @@ object lensFlareSystemMod {
   /* static members */
   object LensFlareSystem {
     
+    @JSImport("babylonjs/LensFlares/lensFlareSystem", "LensFlareSystem")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Parse a lens flare system from a JSON repressentation
       * @param parsedLensFlareSystem Define the JSON to parse
@@ -148,13 +151,9 @@ object lensFlareSystemMod {
       * @param rootUrl Define the rootUrl of the load sequence to easily find a load relative dependencies such as textures
       * @returns the parsed system
       */
-    @JSImport("babylonjs/LensFlares/lensFlareSystem", "LensFlareSystem.Parse")
-    @js.native
-    def Parse(parsedLensFlareSystem: js.Any, scene: Scene, rootUrl: String): LensFlareSystem = js.native
+    inline def Parse(parsedLensFlareSystem: js.Any, scene: Scene, rootUrl: String): LensFlareSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedLensFlareSystem.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[LensFlareSystem]
     
     /** @hidden */
-    @JSImport("babylonjs/LensFlares/lensFlareSystem", "LensFlareSystem._SceneComponentInitialization")
-    @js.native
-    def _SceneComponentInitialization(scene: Scene): Unit = js.native
+    inline def _SceneComponentInitialization(scene: Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

@@ -30,22 +30,21 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ojSelectEventMap[V, SP /* <: ojSelectSettableProperties[V, SV] */, SV] extends editableValueEventMap[V, SP, SV, V] {
+trait ojSelectEventMap[V, SP /* <: ojSelectSettableProperties[V, SV] */, SV]
+  extends StObject
+     with editableValueEventMap[V, SP, SV, V] {
   
   @JSName("ojAnimateEnd")
-  var ojAnimateEnd_ojSelectEventMap: ojAnimateEnd = js.native
+  var ojAnimateEnd_ojSelectEventMap: ojAnimateEnd
   
   @JSName("ojAnimateStart")
-  var ojAnimateStart_ojSelectEventMap: ojAnimateStart = js.native
+  var ojAnimateStart_ojSelectEventMap: ojAnimateStart
 }
 object ojSelectEventMap {
   
-  @scala.inline
-  def apply[V, SP /* <: ojSelectSettableProperties[V, SV] */, SV](
+  inline def apply[V, SP /* <: ojSelectSettableProperties[V, SV] */, SV](
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,
@@ -155,13 +154,10 @@ object ojSelectEventMap {
     __obj.asInstanceOf[ojSelectEventMap[V, SP, SV]]
   }
   
-  @scala.inline
-  implicit class ojSelectEventMapMutableBuilder[Self <: ojSelectEventMap[_, _, _], V, SP /* <: ojSelectSettableProperties[V, SV] */, SV] (val x: Self with (ojSelectEventMap[V, SP, SV])) extends AnyVal {
+  extension [Self <: ojSelectEventMap[?, ?, ?], V, SP /* <: ojSelectSettableProperties[V, SV] */, SV](x: Self & (ojSelectEventMap[V, SP, SV])) {
     
-    @scala.inline
-    def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
+    inline def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOjAnimateStart(value: ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
+    inline def setOjAnimateStart(value: ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
   }
 }

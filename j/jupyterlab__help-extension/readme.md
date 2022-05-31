@@ -10,9 +10,9 @@ JupyterLab - Help Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/help-extension |
 | Keywords           | - |
-| # releases         | 114 |
+| # releases         | 130 |
 | # dependents       | 2 |
-| # downloads        | 1350972 |
+| # downloads        | 1461656 |
 | # stars            | 0 |
 
 ## Links

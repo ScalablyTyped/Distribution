@@ -10,7 +10,6 @@ import typings.babylonjs.webXRHitTestMod.IWebXRHitResult
 import typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webXRAnchorSystemMod {
@@ -26,31 +25,31 @@ object webXRAnchorSystemMod {
     def this(_xrSessionManager: WebXRSessionManager) = this()
     def this(_xrSessionManager: WebXRSessionManager, _options: IWebXRAnchorSystemOptions) = this()
     
-    var _createAnchorAtTransformation: js.Any = js.native
+    /* private */ var _createAnchorAtTransformation: js.Any = js.native
     
     /**
       * avoiding using Array.find for global support.
       * @param xrAnchor the plane to find in the array
       */
-    var _findIndexInAnchorArray: js.Any = js.native
+    /* private */ var _findIndexInAnchorArray: js.Any = js.native
     
-    var _futureAnchors: js.Any = js.native
+    /* private */ var _futureAnchors: js.Any = js.native
     
-    var _lastFrameDetected: js.Any = js.native
+    /* private */ var _lastFrameDetected: js.Any = js.native
     
-    var _options: js.Any = js.native
+    /* private */ var _options: js.Any = js.native
     
-    var _populateTmpTransformation: js.Any = js.native
+    /* private */ var _populateTmpTransformation: js.Any = js.native
     
-    var _referenceSpaceForFrameAnchors: js.Any = js.native
+    /* private */ var _referenceSpaceForFrameAnchors: js.Any = js.native
     
-    var _tmpQuaternion: js.Any = js.native
+    /* private */ var _tmpQuaternion: js.Any = js.native
     
-    var _tmpVector: js.Any = js.native
+    /* private */ var _tmpVector: js.Any = js.native
     
-    var _trackedAnchors: js.Any = js.native
+    /* private */ var _trackedAnchors: js.Any = js.native
     
-    var _updateAnchorWithXRFrame: js.Any = js.native
+    /* private */ var _updateAnchorWithXRFrame: js.Any = js.native
     
     /**
       * Add a new anchor at a specific position and rotation
@@ -65,11 +64,7 @@ object webXRAnchorSystemMod {
       * @returns A promise that fulfills when babylon has created the corresponding WebXRAnchor object and tracking has begun
       */
     def addAnchorAtPositionAndRotationAsync(position: Vector3): js.Promise[IWebXRAnchor] = js.native
-    def addAnchorAtPositionAndRotationAsync(
-      position: Vector3,
-      rotationQuaternion: js.UndefOr[scala.Nothing],
-      forceCreateInCurrentFrame: Boolean
-    ): js.Promise[IWebXRAnchor] = js.native
+    def addAnchorAtPositionAndRotationAsync(position: Vector3, rotationQuaternion: Unit, forceCreateInCurrentFrame: Boolean): js.Promise[IWebXRAnchor] = js.native
     def addAnchorAtPositionAndRotationAsync(position: Vector3, rotationQuaternion: Quaternion): js.Promise[IWebXRAnchor] = js.native
     def addAnchorAtPositionAndRotationAsync(position: Vector3, rotationQuaternion: Quaternion, forceCreateInCurrentFrame: Boolean): js.Promise[IWebXRAnchor] = js.native
     
@@ -84,11 +79,7 @@ object webXRAnchorSystemMod {
       * @returns A promise that fulfills when babylon has created the corresponding WebXRAnchor object and tracking has begun
       */
     def addAnchorPointUsingHitTestResultAsync(hitTestResult: IWebXRHitResult): js.Promise[IWebXRAnchor] = js.native
-    def addAnchorPointUsingHitTestResultAsync(
-      hitTestResult: IWebXRHitResult,
-      position: js.UndefOr[scala.Nothing],
-      rotationQuaternion: Quaternion
-    ): js.Promise[IWebXRAnchor] = js.native
+    def addAnchorPointUsingHitTestResultAsync(hitTestResult: IWebXRHitResult, position: Unit, rotationQuaternion: Quaternion): js.Promise[IWebXRAnchor] = js.native
     def addAnchorPointUsingHitTestResultAsync(hitTestResult: IWebXRHitResult, position: Vector3): js.Promise[IWebXRAnchor] = js.native
     def addAnchorPointUsingHitTestResultAsync(hitTestResult: IWebXRHitResult, position: Vector3, rotationQuaternion: Quaternion): js.Promise[IWebXRAnchor] = js.native
     
@@ -139,101 +130,85 @@ object webXRAnchorSystemMod {
     val Version: Double = js.native
   }
   
-  @js.native
   trait IWebXRAnchor extends StObject {
     
     /**
       * if defined, this object will be constantly updated by the anchor's position and rotation
       */
-    var attachedNode: js.UndefOr[TransformNode] = js.native
+    var attachedNode: js.UndefOr[TransformNode] = js.undefined
     
     /**
       * A babylon-assigned ID for this anchor
       */
-    var id: Double = js.native
+    var id: Double
     
     /**
       * Remove this anchor from the scene
       */
-    def remove(): Unit = js.native
+    def remove(): Unit
     
     /**
       * Transformation matrix to apply to an object attached to this anchor
       */
-    var transformationMatrix: Matrix = js.native
+    var transformationMatrix: Matrix
     
     /**
       * The native anchor object
       */
-    var xrAnchor: XRAnchor = js.native
+    var xrAnchor: XRAnchor
   }
   object IWebXRAnchor {
     
-    @scala.inline
-    def apply(id: Double, remove: () => Unit, transformationMatrix: Matrix, xrAnchor: XRAnchor): IWebXRAnchor = {
+    inline def apply(id: Double, remove: () => Unit, transformationMatrix: Matrix, xrAnchor: XRAnchor): IWebXRAnchor = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], remove = js.Any.fromFunction0(remove), transformationMatrix = transformationMatrix.asInstanceOf[js.Any], xrAnchor = xrAnchor.asInstanceOf[js.Any])
       __obj.asInstanceOf[IWebXRAnchor]
     }
     
-    @scala.inline
-    implicit class IWebXRAnchorMutableBuilder[Self <: IWebXRAnchor] (val x: Self) extends AnyVal {
+    extension [Self <: IWebXRAnchor](x: Self) {
       
-      @scala.inline
-      def setAttachedNode(value: TransformNode): Self = StObject.set(x, "attachedNode", value.asInstanceOf[js.Any])
+      inline def setAttachedNode(value: TransformNode): Self = StObject.set(x, "attachedNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachedNodeUndefined: Self = StObject.set(x, "attachedNode", js.undefined)
+      inline def setAttachedNodeUndefined: Self = StObject.set(x, "attachedNode", js.undefined)
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+      inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTransformationMatrix(value: Matrix): Self = StObject.set(x, "transformationMatrix", value.asInstanceOf[js.Any])
+      inline def setTransformationMatrix(value: Matrix): Self = StObject.set(x, "transformationMatrix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXrAnchor(value: XRAnchor): Self = StObject.set(x, "xrAnchor", value.asInstanceOf[js.Any])
+      inline def setXrAnchor(value: XRAnchor): Self = StObject.set(x, "xrAnchor", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait IWebXRAnchorSystemOptions extends StObject {
     
     /**
       * If set to true a reference of the created anchors will be kept until the next session starts
       * If not defined, anchors will be removed from the array when the feature is detached or the session ended.
       */
-    var doNotRemoveAnchorsOnSessionEnded: js.UndefOr[Boolean] = js.native
+    var doNotRemoveAnchorsOnSessionEnded: js.UndefOr[Boolean] = js.undefined
     
     /**
       * a node that will be used to convert local to world coordinates
       */
-    var worldParentNode: js.UndefOr[TransformNode] = js.native
+    var worldParentNode: js.UndefOr[TransformNode] = js.undefined
   }
   object IWebXRAnchorSystemOptions {
     
-    @scala.inline
-    def apply(): IWebXRAnchorSystemOptions = {
+    inline def apply(): IWebXRAnchorSystemOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IWebXRAnchorSystemOptions]
     }
     
-    @scala.inline
-    implicit class IWebXRAnchorSystemOptionsMutableBuilder[Self <: IWebXRAnchorSystemOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IWebXRAnchorSystemOptions](x: Self) {
       
-      @scala.inline
-      def setDoNotRemoveAnchorsOnSessionEnded(value: Boolean): Self = StObject.set(x, "doNotRemoveAnchorsOnSessionEnded", value.asInstanceOf[js.Any])
+      inline def setDoNotRemoveAnchorsOnSessionEnded(value: Boolean): Self = StObject.set(x, "doNotRemoveAnchorsOnSessionEnded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoNotRemoveAnchorsOnSessionEndedUndefined: Self = StObject.set(x, "doNotRemoveAnchorsOnSessionEnded", js.undefined)
+      inline def setDoNotRemoveAnchorsOnSessionEndedUndefined: Self = StObject.set(x, "doNotRemoveAnchorsOnSessionEnded", js.undefined)
       
-      @scala.inline
-      def setWorldParentNode(value: TransformNode): Self = StObject.set(x, "worldParentNode", value.asInstanceOf[js.Any])
+      inline def setWorldParentNode(value: TransformNode): Self = StObject.set(x, "worldParentNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorldParentNodeUndefined: Self = StObject.set(x, "worldParentNode", js.undefined)
+      inline def setWorldParentNodeUndefined: Self = StObject.set(x, "worldParentNode", js.undefined)
     }
   }
 }

@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "ethersproject__abstract-provider"
-version := "5.0.6-a4ed75"
+version := "5.0.6-735566"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ethersproject__bignumber" % "5.0.10-5dacd0",
-  "org.scalablytyped" %%% "ethersproject__bytes" % "5.0.6-930faa",
+  "org.scalablytyped" %%% "ethersproject__bignumber" % "5.0.10-64e579",
+  "org.scalablytyped" %%% "ethersproject__bytes" % "5.0.6-b21087",
   "org.scalablytyped" %%% "ethersproject__networks" % "5.0.5-c5c319",
-  "org.scalablytyped" %%% "ethersproject__properties" % "5.0.5-053dce",
-  "org.scalablytyped" %%% "ethersproject__transactions" % "5.0.7-268703",
-  "org.scalablytyped" %%% "ethersproject__web" % "5.0.10-c5a73e",
-  "org.scalablytyped" %%% "std" % "4.1-2f6855")
+  "org.scalablytyped" %%% "ethersproject__properties" % "5.0.5-05ae41",
+  "org.scalablytyped" %%% "ethersproject__transactions" % "5.0.7-e3e13e",
+  "org.scalablytyped" %%% "ethersproject__web" % "5.0.10-594465",
+  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

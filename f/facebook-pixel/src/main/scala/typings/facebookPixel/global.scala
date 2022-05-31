@@ -11,13 +11,4 @@ object global {
   @js.native
   def fbq: Event = js.native
   inline def fbq_=(x: Event): Unit = js.Dynamic.global.updateDynamic("fbq")(x.asInstanceOf[js.Any])
-  
-  object facebook {
-    
-    object Pixel {
-      
-      // For Facebook Tag API using Dynamic Product Ads
-      object DPA
-    }
-  }
 }

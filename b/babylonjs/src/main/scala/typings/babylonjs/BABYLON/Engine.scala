@@ -15,31 +15,32 @@ import typings.std.WebGLQuery
 import typings.std.WebGLTransformFeedback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Engine extends ThinEngine {
+trait Engine
+  extends StObject
+     with ThinEngine {
   
-  var _cachedStencilBuffer: js.Any = js.native
+  /* private */ var _cachedStencilBuffer: js.Any = js.native
   
-  var _cachedStencilFunction: js.Any = js.native
+  /* private */ var _cachedStencilFunction: js.Any = js.native
   
-  var _cachedStencilMask: js.Any = js.native
+  /* private */ var _cachedStencilMask: js.Any = js.native
   
-  var _cachedStencilOperationDepthFail: js.Any = js.native
+  /* private */ var _cachedStencilOperationDepthFail: js.Any = js.native
   
-  var _cachedStencilOperationFail: js.Any = js.native
+  /* private */ var _cachedStencilOperationFail: js.Any = js.native
   
-  var _cachedStencilOperationPass: js.Any = js.native
+  /* private */ var _cachedStencilOperationPass: js.Any = js.native
   
-  var _cachedStencilReference: js.Any = js.native
+  /* private */ var _cachedStencilReference: js.Any = js.native
   
-  var _clientWaitAsync: js.Any = js.native
+  /* private */ var _clientWaitAsync: js.Any = js.native
   
   /** @hidden */
   def _connectVREvents(): Unit = js.native
-  def _connectVREvents(canvas: js.UndefOr[scala.Nothing], document: js.Any): Unit = js.native
+  def _connectVREvents(canvas: Unit, document: js.Any): Unit = js.native
   def _connectVREvents(canvas: HTMLCanvasElement): Unit = js.native
   def _connectVREvents(canvas: HTMLCanvasElement, document: js.Any): Unit = js.native
   
@@ -52,11 +53,11 @@ trait Engine extends ThinEngine {
   /** @hidden */
   def _deleteTimeQuery(query: WebGLQuery): Unit = js.native
   
-  var _deltaTime: js.Any = js.native
+  /* private */ var _deltaTime: js.Any = js.native
   
-  var _deterministicLockstep: js.Any = js.native
+  /* private */ var _deterministicLockstep: js.Any = js.native
   
-  var _disableTouchAction: js.Any = js.native
+  /* private */ var _disableTouchAction: js.Any = js.native
   
   /** @hidden */
   var _drawCalls: PerfCounter = js.native
@@ -64,7 +65,7 @@ trait Engine extends ThinEngine {
   /** @hidden */
   var _excludedCompressedTextures: js.Array[String] = js.native
   
-  var _fps: js.Any = js.native
+  /* private */ var _fps: js.Any = js.native
   
   /** @hidden */
   def _getGlAlgorithmType(algorithmType: Double): Double = js.native
@@ -80,15 +81,15 @@ trait Engine extends ThinEngine {
   
   /** @hidden */
   def _loadFileAsync(url: String): js.Promise[String | ArrayBuffer] = js.native
-  def _loadFileAsync(url: String, offlineProvider: js.UndefOr[scala.Nothing], useArrayBuffer: Boolean): js.Promise[String | ArrayBuffer] = js.native
+  def _loadFileAsync(url: String, offlineProvider: Unit, useArrayBuffer: Boolean): js.Promise[String | ArrayBuffer] = js.native
   def _loadFileAsync(url: String, offlineProvider: IOfflineProvider): js.Promise[String | ArrayBuffer] = js.native
   def _loadFileAsync(url: String, offlineProvider: IOfflineProvider, useArrayBuffer: Boolean): js.Promise[String | ArrayBuffer] = js.native
   
-  var _loadingScreen: js.Any = js.native
+  /* private */ var _loadingScreen: js.Any = js.native
   
-  var _lockstepMaxSteps: js.Any = js.native
+  /* private */ var _lockstepMaxSteps: js.Any = js.native
   
-  var _measureFps: js.Any = js.native
+  /* private */ var _measureFps: js.Any = js.native
   
   /** @hidden */
   var _oldHardwareScaleFactor: Double = js.native
@@ -96,19 +97,19 @@ trait Engine extends ThinEngine {
   /** @hidden */
   var _oldSize: Size = js.native
   
-  var _onBlur: js.Any = js.native
+  /* private */ var _onBlur: js.Any = js.native
   
-  var _onCanvasBlur: js.Any = js.native
+  /* private */ var _onCanvasBlur: js.Any = js.native
   
-  var _onCanvasFocus: js.Any = js.native
+  /* private */ var _onCanvasFocus: js.Any = js.native
   
-  var _onCanvasPointerOut: js.Any = js.native
+  /* private */ var _onCanvasPointerOut: js.Any = js.native
   
-  var _onFocus: js.Any = js.native
+  /* private */ var _onFocus: js.Any = js.native
   
-  var _onFullscreenChange: js.Any = js.native
+  /* private */ var _onFullscreenChange: js.Any = js.native
   
-  var _onPointerLockChange: js.Any = js.native
+  /* private */ var _onPointerLockChange: js.Any = js.native
   
   /** @hidden */
   def _onVRDisplayPointerRestricted(): Unit = js.native
@@ -120,7 +121,7 @@ trait Engine extends ThinEngine {
   def _onVRFullScreenTriggered(): Unit = js.native
   
   /** @hidden */
-  var _onVrDisplayConnect: Nullable[js.Function1[/* display */ _, Unit]] = js.native
+  var _onVrDisplayConnect: Nullable[js.Function1[/* display */ js.Any, Unit]] = js.native
   
   /** @hidden */
   var _onVrDisplayDisconnect: Nullable[js.Function0[Unit]] = js.native
@@ -128,9 +129,9 @@ trait Engine extends ThinEngine {
   /** @hidden */
   var _onVrDisplayPresentChange: Nullable[js.Function0[Unit]] = js.native
   
-  var _performanceMonitor: js.Any = js.native
+  /* private */ var _performanceMonitor: js.Any = js.native
   
-  var _pointerLockRequested: js.Any = js.native
+  /* private */ var _pointerLockRequested: js.Any = js.native
   
   /** @hidden */
   def _prepareVRComponent(): Unit = js.native
@@ -155,7 +156,7 @@ trait Engine extends ThinEngine {
   /** @hidden */
   def _requestVRFrame(): Unit = js.native
   
-  var _rescalePostProcess: js.Any = js.native
+  /* private */ var _rescalePostProcess: js.Any = js.native
   
   /** @hidden */
   def _submitVRFrame(): Unit = js.native
@@ -163,22 +164,17 @@ trait Engine extends ThinEngine {
   /** @hidden */
   var _textureFormatInUse: String = js.native
   
-  var _timeStep: js.Any = js.native
+  /* private */ var _timeStep: js.Any = js.native
   
   def _uploadImageToTexture(texture: InternalTexture, image: ImageBitmap): Unit = js.native
-  def _uploadImageToTexture(texture: InternalTexture, image: ImageBitmap, faceIndex: js.UndefOr[scala.Nothing], lod: Double): Unit = js.native
   def _uploadImageToTexture(texture: InternalTexture, image: ImageBitmap, faceIndex: Double): Unit = js.native
   def _uploadImageToTexture(texture: InternalTexture, image: ImageBitmap, faceIndex: Double, lod: Double): Unit = js.native
+  def _uploadImageToTexture(texture: InternalTexture, image: ImageBitmap, faceIndex: Unit, lod: Double): Unit = js.native
   /** @hidden */
   def _uploadImageToTexture(texture: InternalTexture, image: HTMLImageElement): Unit = js.native
-  def _uploadImageToTexture(
-    texture: InternalTexture,
-    image: HTMLImageElement,
-    faceIndex: js.UndefOr[scala.Nothing],
-    lod: Double
-  ): Unit = js.native
   def _uploadImageToTexture(texture: InternalTexture, image: HTMLImageElement, faceIndex: Double): Unit = js.native
   def _uploadImageToTexture(texture: InternalTexture, image: HTMLImageElement, faceIndex: Double, lod: Double): Unit = js.native
+  def _uploadImageToTexture(texture: InternalTexture, image: HTMLImageElement, faceIndex: Unit, lod: Double): Unit = js.native
   
   /** @hidden */
   var _vrDisplay: js.Any = js.native
@@ -259,36 +255,7 @@ trait Engine extends ThinEngine {
     uniformsNames: js.Array[String],
     samplers: js.Array[String],
     defines: String,
-    fallbacks: js.UndefOr[scala.Nothing],
-    onCompiled: js.UndefOr[scala.Nothing],
-    onError: js.UndefOr[scala.Nothing],
-    particleSystem: IParticleSystem
-  ): Effect = js.native
-  def createEffectForParticles(
-    fragmentName: String,
-    uniformsNames: js.Array[String],
-    samplers: js.Array[String],
-    defines: String,
-    fallbacks: js.UndefOr[scala.Nothing],
-    onCompiled: js.UndefOr[scala.Nothing],
-    onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]
-  ): Effect = js.native
-  def createEffectForParticles(
-    fragmentName: String,
-    uniformsNames: js.Array[String],
-    samplers: js.Array[String],
-    defines: String,
-    fallbacks: js.UndefOr[scala.Nothing],
-    onCompiled: js.UndefOr[scala.Nothing],
-    onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit],
-    particleSystem: IParticleSystem
-  ): Effect = js.native
-  def createEffectForParticles(
-    fragmentName: String,
-    uniformsNames: js.Array[String],
-    samplers: js.Array[String],
-    defines: String,
-    fallbacks: js.UndefOr[scala.Nothing],
+    fallbacks: Unit,
     onCompiled: js.Function1[/* effect */ Effect, Unit]
   ): Effect = js.native
   def createEffectForParticles(
@@ -296,17 +263,7 @@ trait Engine extends ThinEngine {
     uniformsNames: js.Array[String],
     samplers: js.Array[String],
     defines: String,
-    fallbacks: js.UndefOr[scala.Nothing],
-    onCompiled: js.Function1[/* effect */ Effect, Unit],
-    onError: js.UndefOr[scala.Nothing],
-    particleSystem: IParticleSystem
-  ): Effect = js.native
-  def createEffectForParticles(
-    fragmentName: String,
-    uniformsNames: js.Array[String],
-    samplers: js.Array[String],
-    defines: String,
-    fallbacks: js.UndefOr[scala.Nothing],
+    fallbacks: Unit,
     onCompiled: js.Function1[/* effect */ Effect, Unit],
     onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]
   ): Effect = js.native
@@ -315,9 +272,48 @@ trait Engine extends ThinEngine {
     uniformsNames: js.Array[String],
     samplers: js.Array[String],
     defines: String,
-    fallbacks: js.UndefOr[scala.Nothing],
+    fallbacks: Unit,
     onCompiled: js.Function1[/* effect */ Effect, Unit],
     onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit],
+    particleSystem: IParticleSystem
+  ): Effect = js.native
+  def createEffectForParticles(
+    fragmentName: String,
+    uniformsNames: js.Array[String],
+    samplers: js.Array[String],
+    defines: String,
+    fallbacks: Unit,
+    onCompiled: js.Function1[/* effect */ Effect, Unit],
+    onError: Unit,
+    particleSystem: IParticleSystem
+  ): Effect = js.native
+  def createEffectForParticles(
+    fragmentName: String,
+    uniformsNames: js.Array[String],
+    samplers: js.Array[String],
+    defines: String,
+    fallbacks: Unit,
+    onCompiled: Unit,
+    onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]
+  ): Effect = js.native
+  def createEffectForParticles(
+    fragmentName: String,
+    uniformsNames: js.Array[String],
+    samplers: js.Array[String],
+    defines: String,
+    fallbacks: Unit,
+    onCompiled: Unit,
+    onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit],
+    particleSystem: IParticleSystem
+  ): Effect = js.native
+  def createEffectForParticles(
+    fragmentName: String,
+    uniformsNames: js.Array[String],
+    samplers: js.Array[String],
+    defines: String,
+    fallbacks: Unit,
+    onCompiled: Unit,
+    onError: Unit,
     particleSystem: IParticleSystem
   ): Effect = js.native
   def createEffectForParticles(
@@ -333,35 +329,6 @@ trait Engine extends ThinEngine {
     samplers: js.Array[String],
     defines: String,
     fallbacks: EffectFallbacks,
-    onCompiled: js.UndefOr[scala.Nothing],
-    onError: js.UndefOr[scala.Nothing],
-    particleSystem: IParticleSystem
-  ): Effect = js.native
-  def createEffectForParticles(
-    fragmentName: String,
-    uniformsNames: js.Array[String],
-    samplers: js.Array[String],
-    defines: String,
-    fallbacks: EffectFallbacks,
-    onCompiled: js.UndefOr[scala.Nothing],
-    onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]
-  ): Effect = js.native
-  def createEffectForParticles(
-    fragmentName: String,
-    uniformsNames: js.Array[String],
-    samplers: js.Array[String],
-    defines: String,
-    fallbacks: EffectFallbacks,
-    onCompiled: js.UndefOr[scala.Nothing],
-    onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit],
-    particleSystem: IParticleSystem
-  ): Effect = js.native
-  def createEffectForParticles(
-    fragmentName: String,
-    uniformsNames: js.Array[String],
-    samplers: js.Array[String],
-    defines: String,
-    fallbacks: EffectFallbacks,
     onCompiled: js.Function1[/* effect */ Effect, Unit]
   ): Effect = js.native
   def createEffectForParticles(
@@ -371,16 +338,6 @@ trait Engine extends ThinEngine {
     defines: String,
     fallbacks: EffectFallbacks,
     onCompiled: js.Function1[/* effect */ Effect, Unit],
-    onError: js.UndefOr[scala.Nothing],
-    particleSystem: IParticleSystem
-  ): Effect = js.native
-  def createEffectForParticles(
-    fragmentName: String,
-    uniformsNames: js.Array[String],
-    samplers: js.Array[String],
-    defines: String,
-    fallbacks: EffectFallbacks,
-    onCompiled: js.Function1[/* effect */ Effect, Unit],
     onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]
   ): Effect = js.native
   def createEffectForParticles(
@@ -391,6 +348,45 @@ trait Engine extends ThinEngine {
     fallbacks: EffectFallbacks,
     onCompiled: js.Function1[/* effect */ Effect, Unit],
     onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit],
+    particleSystem: IParticleSystem
+  ): Effect = js.native
+  def createEffectForParticles(
+    fragmentName: String,
+    uniformsNames: js.Array[String],
+    samplers: js.Array[String],
+    defines: String,
+    fallbacks: EffectFallbacks,
+    onCompiled: js.Function1[/* effect */ Effect, Unit],
+    onError: Unit,
+    particleSystem: IParticleSystem
+  ): Effect = js.native
+  def createEffectForParticles(
+    fragmentName: String,
+    uniformsNames: js.Array[String],
+    samplers: js.Array[String],
+    defines: String,
+    fallbacks: EffectFallbacks,
+    onCompiled: Unit,
+    onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]
+  ): Effect = js.native
+  def createEffectForParticles(
+    fragmentName: String,
+    uniformsNames: js.Array[String],
+    samplers: js.Array[String],
+    defines: String,
+    fallbacks: EffectFallbacks,
+    onCompiled: Unit,
+    onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit],
+    particleSystem: IParticleSystem
+  ): Effect = js.native
+  def createEffectForParticles(
+    fragmentName: String,
+    uniformsNames: js.Array[String],
+    samplers: js.Array[String],
+    defines: String,
+    fallbacks: EffectFallbacks,
+    onCompiled: Unit,
+    onError: Unit,
     particleSystem: IParticleSystem
   ): Effect = js.native
   
@@ -966,18 +962,13 @@ trait Engine extends ThinEngine {
     * @param reverseSide defines if culling must be reversed (CCW instead of CW and CW instead of CCW)
     */
   def setState(culling: Boolean): Unit = js.native
-  def setState(
-    culling: Boolean,
-    zOffset: js.UndefOr[scala.Nothing],
-    force: js.UndefOr[scala.Nothing],
-    reverseSide: Boolean
-  ): Unit = js.native
-  def setState(culling: Boolean, zOffset: js.UndefOr[scala.Nothing], force: Boolean): Unit = js.native
-  def setState(culling: Boolean, zOffset: js.UndefOr[scala.Nothing], force: Boolean, reverseSide: Boolean): Unit = js.native
   def setState(culling: Boolean, zOffset: Double): Unit = js.native
-  def setState(culling: Boolean, zOffset: Double, force: js.UndefOr[scala.Nothing], reverseSide: Boolean): Unit = js.native
   def setState(culling: Boolean, zOffset: Double, force: Boolean): Unit = js.native
   def setState(culling: Boolean, zOffset: Double, force: Boolean, reverseSide: Boolean): Unit = js.native
+  def setState(culling: Boolean, zOffset: Double, force: Unit, reverseSide: Boolean): Unit = js.native
+  def setState(culling: Boolean, zOffset: Unit, force: Boolean): Unit = js.native
+  def setState(culling: Boolean, zOffset: Unit, force: Boolean, reverseSide: Boolean): Unit = js.native
+  def setState(culling: Boolean, zOffset: Unit, force: Unit, reverseSide: Boolean): Unit = js.native
   
   /**
     * Enable or disable the stencil buffer

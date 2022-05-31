@@ -3,7 +3,6 @@ package typings.babylonjs
 import typings.babylonjs.soundMod.Sound
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object weightedsoundMod {
@@ -19,19 +18,19 @@ object weightedsoundMod {
       */
     def this(loop: Boolean, sounds: js.Array[Sound], weights: js.Array[Double]) = this()
     
-    var _coneInnerAngle: js.Any = js.native
+    /* private */ var _coneInnerAngle: js.Any = js.native
     
-    var _coneOuterAngle: js.Any = js.native
+    /* private */ var _coneOuterAngle: js.Any = js.native
     
-    var _currentIndex: js.Any = js.native
+    /* private */ var _currentIndex: js.Any = js.native
     
-    var _onended: js.Any = js.native
+    /* private */ var _onended: js.Any = js.native
     
-    var _sounds: js.Any = js.native
+    /* private */ var _sounds: js.Any = js.native
     
-    var _volume: js.Any = js.native
+    /* private */ var _volume: js.Any = js.native
     
-    var _weights: js.Any = js.native
+    /* private */ var _weights: js.Any = js.native
     
     /**
       * The size of cone in degrees for a directional sound in which there will be no attenuation.

@@ -18,7 +18,6 @@ import typings.std.HTMLElement
 import typings.std.PointerEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sceneComponentMod {
@@ -248,7 +247,9 @@ object sceneComponentMod {
     * Hide ctor from the rest of the world.
     * @param items The items to add.
     */
-  class Stage[T /* <: js.Function */] protected () extends Array[Action[T]] {
+  /* private */ class Stage[T /* <: js.Function */] ()
+    extends StObject
+       with Array[Action[T]] {
     
     /**
       * Clears all the steps from the stage.
@@ -266,13 +267,15 @@ object sceneComponentMod {
   /* static members */
   object Stage {
     
+    @JSImport("babylonjs/sceneComponent", "Stage")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new Stage.
       * @returns A new instance of a Stage
       */
-    @JSImport("babylonjs/sceneComponent", "Stage.Create")
-    @js.native
-    def Create[T /* <: js.Function */](): Stage[T] = js.native
+    inline def Create[T /* <: js.Function */](): Stage[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("Create")().asInstanceOf[Stage[T]]
   }
   
   type CameraStageAction = js.Function1[/* camera */ Camera, Unit]
@@ -281,65 +284,59 @@ object sceneComponentMod {
   
   type EvaluateSubMeshStageAction = js.Function2[/* mesh */ AbstractMesh, /* subMesh */ SubMesh, Unit]
   
-  @js.native
   trait ISceneComponent extends StObject {
     
     /**
       * Disposes the component and the associated ressources.
       */
-    def dispose(): Unit = js.native
+    def dispose(): Unit
     
     /**
       * The name of the component. Each component must have a unique name.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Rebuilds the elements related to this component in case of
       * context lost for instance.
       */
-    def rebuild(): Unit = js.native
+    def rebuild(): Unit
     
     /**
       * Register the component to one instance of a scene.
       */
-    def register(): Unit = js.native
+    def register(): Unit
     
     /**
       * The scene the component belongs to.
       */
-    var scene: Scene = js.native
+    var scene: Scene
   }
   object ISceneComponent {
     
-    @scala.inline
-    def apply(dispose: () => Unit, name: String, rebuild: () => Unit, register: () => Unit, scene: Scene): ISceneComponent = {
+    inline def apply(dispose: () => Unit, name: String, rebuild: () => Unit, register: () => Unit, scene: Scene): ISceneComponent = {
       val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), name = name.asInstanceOf[js.Any], rebuild = js.Any.fromFunction0(rebuild), register = js.Any.fromFunction0(register), scene = scene.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISceneComponent]
     }
     
-    @scala.inline
-    implicit class ISceneComponentMutableBuilder[Self <: ISceneComponent] (val x: Self) extends AnyVal {
+    extension [Self <: ISceneComponent](x: Self) {
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRebuild(value: () => Unit): Self = StObject.set(x, "rebuild", js.Any.fromFunction0(value))
+      inline def setRebuild(value: () => Unit): Self = StObject.set(x, "rebuild", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRegister(value: () => Unit): Self = StObject.set(x, "register", js.Any.fromFunction0(value))
+      inline def setRegister(value: () => Unit): Self = StObject.set(x, "register", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setScene(value: Scene): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
+      inline def setScene(value: Scene): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     }
   }
   
   @js.native
-  trait ISceneSerializableComponent extends ISceneComponent {
+  trait ISceneSerializableComponent
+    extends StObject
+       with ISceneComponent {
     
     /**
       * Adds all the elements from the container to the scene

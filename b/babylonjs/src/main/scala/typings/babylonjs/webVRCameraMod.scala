@@ -12,7 +12,6 @@ import typings.std.Float32Array
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webVRCameraMod {
@@ -31,7 +30,7 @@ object webVRCameraMod {
     def this(name: String, position: Vector3, scene: Scene) = this()
     def this(name: String, position: Vector3, scene: Scene, webVROptions: WebVROptions) = this()
     
-    var _attached: js.Any = js.native
+    /* private */ var _attached: js.Any = js.native
     
     /**
       * @hidden
@@ -39,46 +38,46 @@ object webVRCameraMod {
       */
     def _computeDevicePosition(): Unit = js.native
     
-    var _correctPositionIfNotTrackPosition: js.Any = js.native
+    /* private */ var _correctPositionIfNotTrackPosition: js.Any = js.native
     
-    var _defaultHeight: js.Any = js.native
+    /* private */ var _defaultHeight: js.Any = js.native
     
-    var _descendants: js.Array[Node] = js.native
+    /* protected */ var _descendants: js.Array[Node] = js.native
     
-    var _detachIfAttached: js.Any = js.native
+    /* private */ var _detachIfAttached: js.Any = js.native
     
-    var _deviceRoomPosition: js.Any = js.native
+    /* private */ var _deviceRoomPosition: js.Any = js.native
     
     /** @hidden */
     var _deviceRoomRotationQuaternion: Quaternion = js.native
     
-    var _deviceToWorld: js.Any = js.native
+    /* private */ var _deviceToWorld: js.Any = js.native
     
-    var _frameData: js.Any = js.native
+    /* private */ var _frameData: js.Any = js.native
     
-    var _leftController: js.Any = js.native
+    /* private */ var _leftController: js.Any = js.native
     
-    var _lightOnControllers: js.Any = js.native
+    /* private */ var _lightOnControllers: js.Any = js.native
     
-    var _onGamepadConnectedObserver: js.Any = js.native
+    /* private */ var _onGamepadConnectedObserver: js.Any = js.native
     
-    var _onGamepadDisconnectedObserver: js.Any = js.native
+    /* private */ var _onGamepadDisconnectedObserver: js.Any = js.native
     
-    var _onVREnabled: js.Any = js.native
+    /* private */ var _onVREnabled: js.Any = js.native
     
-    var _oneVector: js.Any = js.native
+    /* private */ var _oneVector: js.Any = js.native
     
-    var _poseSet: js.Any = js.native
+    /* private */ var _poseSet: js.Any = js.native
     
-    var _rightController: js.Any = js.native
+    /* private */ var _rightController: js.Any = js.native
     
-    var _specsVersion: js.Any = js.native
+    /* private */ var _specsVersion: js.Any = js.native
     
-    var _standingMatrix: js.Any = js.native
+    /* private */ var _standingMatrix: js.Any = js.native
     
-    var _tmpMatrix: js.Any = js.native
+    /* private */ var _tmpMatrix: js.Any = js.native
     
-    var _updateCacheWhenTrackingDisabledObserver: js.Any = js.native
+    /* private */ var _updateCacheWhenTrackingDisabledObserver: js.Any = js.native
     
     /**
       * @hidden
@@ -86,11 +85,11 @@ object webVRCameraMod {
       */
     var _vrDevice: js.Any = js.native
     
-    var _workingMatrix: js.Any = js.native
+    /* private */ var _workingMatrix: js.Any = js.native
     
-    var _workingVector: js.Any = js.native
+    /* private */ var _workingVector: js.Any = js.native
     
-    var _worldToDevice: js.Any = js.native
+    /* private */ var _worldToDevice: js.Any = js.native
     
     /**
       * References to the webVR controllers for the vrDevice.
@@ -148,7 +147,7 @@ object webVRCameraMod {
     /**
       * Emits an event when the HMD's pose has been updated.
       */
-    var onPoseUpdatedFromDeviceObservable: Observable[_] = js.native
+    var onPoseUpdatedFromDeviceObservable: Observable[js.Any] = js.native
     
     /**
       * The rawPose of the vrDevice.
@@ -171,7 +170,7 @@ object webVRCameraMod {
       */
     def rightController: Nullable[WebVRController] = js.native
     
-    var updateCacheCalled: js.Any = js.native
+    /* private */ var updateCacheCalled: js.Any = js.native
     
     /**
       * Updates the poseControlled values based on the input device pose.
@@ -196,299 +195,249 @@ object webVRCameraMod {
       */
     def useStandingMatrixAsync(): js.Promise[Boolean] = js.native
     
-    var webVROptions: js.Any = js.native
+    /* private */ var webVROptions: js.Any = js.native
   }
   
-  @js.native
   trait DevicePose extends StObject {
     
     /**
       * The angularAcceleration of the device, values in array are [x,y,z].
       */
-    val angularAcceleration: Nullable[Float32Array] = js.native
+    val angularAcceleration: Nullable[Float32Array]
     
     /**
       * The angularVelocity of the device, values in array are [x,y,z].
       */
-    val angularVelocity: Nullable[Float32Array] = js.native
+    val angularVelocity: Nullable[Float32Array]
     
     /**
       * The linearAcceleration of the device, values in array are [x,y,z].
       */
-    val linearAcceleration: Nullable[Float32Array] = js.native
+    val linearAcceleration: Nullable[Float32Array]
     
     /**
       * The linearVelocity of the device, values in array are [x,y,z].
       */
-    val linearVelocity: Nullable[Float32Array] = js.native
+    val linearVelocity: Nullable[Float32Array]
     
     /**
       * The orientation of the device in a quaternion array, values in array are [x,y,z,w].
       */
-    val orientation: Nullable[Float32Array] = js.native
+    val orientation: Nullable[Float32Array]
     
     /**
       * The position of the device, values in array are [x,y,z].
       */
-    val position: Nullable[Float32Array] = js.native
+    val position: Nullable[Float32Array]
   }
   object DevicePose {
     
-    @scala.inline
-    def apply(): DevicePose = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(): DevicePose = {
+      val __obj = js.Dynamic.literal(angularAcceleration = null, angularVelocity = null, linearAcceleration = null, linearVelocity = null, orientation = null, position = null)
       __obj.asInstanceOf[DevicePose]
     }
     
-    @scala.inline
-    implicit class DevicePoseMutableBuilder[Self <: DevicePose] (val x: Self) extends AnyVal {
+    extension [Self <: DevicePose](x: Self) {
       
-      @scala.inline
-      def setAngularAcceleration(value: Nullable[Float32Array]): Self = StObject.set(x, "angularAcceleration", value.asInstanceOf[js.Any])
+      inline def setAngularAcceleration(value: Nullable[Float32Array]): Self = StObject.set(x, "angularAcceleration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAngularAccelerationNull: Self = StObject.set(x, "angularAcceleration", null)
+      inline def setAngularAccelerationNull: Self = StObject.set(x, "angularAcceleration", null)
       
-      @scala.inline
-      def setAngularVelocity(value: Nullable[Float32Array]): Self = StObject.set(x, "angularVelocity", value.asInstanceOf[js.Any])
+      inline def setAngularVelocity(value: Nullable[Float32Array]): Self = StObject.set(x, "angularVelocity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAngularVelocityNull: Self = StObject.set(x, "angularVelocity", null)
+      inline def setAngularVelocityNull: Self = StObject.set(x, "angularVelocity", null)
       
-      @scala.inline
-      def setLinearAcceleration(value: Nullable[Float32Array]): Self = StObject.set(x, "linearAcceleration", value.asInstanceOf[js.Any])
+      inline def setLinearAcceleration(value: Nullable[Float32Array]): Self = StObject.set(x, "linearAcceleration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinearAccelerationNull: Self = StObject.set(x, "linearAcceleration", null)
+      inline def setLinearAccelerationNull: Self = StObject.set(x, "linearAcceleration", null)
       
-      @scala.inline
-      def setLinearVelocity(value: Nullable[Float32Array]): Self = StObject.set(x, "linearVelocity", value.asInstanceOf[js.Any])
+      inline def setLinearVelocity(value: Nullable[Float32Array]): Self = StObject.set(x, "linearVelocity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinearVelocityNull: Self = StObject.set(x, "linearVelocity", null)
+      inline def setLinearVelocityNull: Self = StObject.set(x, "linearVelocity", null)
       
-      @scala.inline
-      def setOrientation(value: Nullable[Float32Array]): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: Nullable[Float32Array]): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientationNull: Self = StObject.set(x, "orientation", null)
+      inline def setOrientationNull: Self = StObject.set(x, "orientation", null)
       
-      @scala.inline
-      def setPosition(value: Nullable[Float32Array]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Nullable[Float32Array]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionNull: Self = StObject.set(x, "position", null)
+      inline def setPositionNull: Self = StObject.set(x, "position", null)
     }
   }
   
-  @js.native
   trait PoseControlled extends StObject {
     
     /**
       * The position of the device in babylon space.
       */
-    var devicePosition: js.UndefOr[Vector3] = js.native
+    var devicePosition: js.UndefOr[Vector3] = js.undefined
     
     /**
       * The rotation quaternion of the device in babylon space.
       */
-    var deviceRotationQuaternion: Quaternion = js.native
+    var deviceRotationQuaternion: Quaternion
     
     /**
       * The scale of the device to be used when translating from device space to babylon space.
       */
-    var deviceScaleFactor: Double = js.native
+    var deviceScaleFactor: Double
     
     /**
       * The position of the object in babylon space.
       */
-    var position: Vector3 = js.native
+    var position: Vector3
     
     /**
       * The raw pose coming from the device.
       */
-    var rawPose: Nullable[DevicePose] = js.native
+    var rawPose: Nullable[DevicePose]
     
     /**
       * The rotation quaternion of the object in babylon space.
       */
-    var rotationQuaternion: Quaternion = js.native
+    var rotationQuaternion: Quaternion
     
     /**
       * Updates the poseControlled values based on the input device pose.
       * @param poseData the pose data to update the object with
       */
-    def updateFromDevice(poseData: DevicePose): Unit = js.native
+    def updateFromDevice(poseData: DevicePose): Unit
   }
   object PoseControlled {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       deviceRotationQuaternion: Quaternion,
       deviceScaleFactor: Double,
       position: Vector3,
       rotationQuaternion: Quaternion,
       updateFromDevice: DevicePose => Unit
     ): PoseControlled = {
-      val __obj = js.Dynamic.literal(deviceRotationQuaternion = deviceRotationQuaternion.asInstanceOf[js.Any], deviceScaleFactor = deviceScaleFactor.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], rotationQuaternion = rotationQuaternion.asInstanceOf[js.Any], updateFromDevice = js.Any.fromFunction1(updateFromDevice))
+      val __obj = js.Dynamic.literal(deviceRotationQuaternion = deviceRotationQuaternion.asInstanceOf[js.Any], deviceScaleFactor = deviceScaleFactor.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], rotationQuaternion = rotationQuaternion.asInstanceOf[js.Any], updateFromDevice = js.Any.fromFunction1(updateFromDevice), rawPose = null)
       __obj.asInstanceOf[PoseControlled]
     }
     
-    @scala.inline
-    implicit class PoseControlledMutableBuilder[Self <: PoseControlled] (val x: Self) extends AnyVal {
+    extension [Self <: PoseControlled](x: Self) {
       
-      @scala.inline
-      def setDevicePosition(value: Vector3): Self = StObject.set(x, "devicePosition", value.asInstanceOf[js.Any])
+      inline def setDevicePosition(value: Vector3): Self = StObject.set(x, "devicePosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevicePositionUndefined: Self = StObject.set(x, "devicePosition", js.undefined)
+      inline def setDevicePositionUndefined: Self = StObject.set(x, "devicePosition", js.undefined)
       
-      @scala.inline
-      def setDeviceRotationQuaternion(value: Quaternion): Self = StObject.set(x, "deviceRotationQuaternion", value.asInstanceOf[js.Any])
+      inline def setDeviceRotationQuaternion(value: Quaternion): Self = StObject.set(x, "deviceRotationQuaternion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceScaleFactor(value: Double): Self = StObject.set(x, "deviceScaleFactor", value.asInstanceOf[js.Any])
+      inline def setDeviceScaleFactor(value: Double): Self = StObject.set(x, "deviceScaleFactor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: Vector3): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Vector3): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawPose(value: Nullable[DevicePose]): Self = StObject.set(x, "rawPose", value.asInstanceOf[js.Any])
+      inline def setRawPose(value: Nullable[DevicePose]): Self = StObject.set(x, "rawPose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawPoseNull: Self = StObject.set(x, "rawPose", null)
+      inline def setRawPoseNull: Self = StObject.set(x, "rawPose", null)
       
-      @scala.inline
-      def setRotationQuaternion(value: Quaternion): Self = StObject.set(x, "rotationQuaternion", value.asInstanceOf[js.Any])
+      inline def setRotationQuaternion(value: Quaternion): Self = StObject.set(x, "rotationQuaternion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateFromDevice(value: DevicePose => Unit): Self = StObject.set(x, "updateFromDevice", js.Any.fromFunction1(value))
+      inline def setUpdateFromDevice(value: DevicePose => Unit): Self = StObject.set(x, "updateFromDevice", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
   trait WebVROptions extends StObject {
     
     /**
       * Should the native controller meshes be initialized. (default: true)
       */
-    var controllerMeshes: js.UndefOr[Boolean] = js.native
+    var controllerMeshes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If you'd like to provide your own button to the VRHelper. (default: standard babylon vr button)
       */
-    var customVRButton: js.UndefOr[HTMLButtonElement] = js.native
+    var customVRButton: js.UndefOr[HTMLButtonElement] = js.undefined
     
     /**
       * To change the default offset from the ground to account for user's height in meters. Will be scaled by positionScale. (default: 1.7)
       */
-    var defaultHeight: js.UndefOr[Double] = js.native
+    var defaultHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * Creating a default HemiLight only on controllers. (default: true)
       */
-    var defaultLightingOnControllers: js.UndefOr[Boolean] = js.native
+    var defaultLightingOnControllers: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If there are more than one VRDisplays, this will choose the display matching this name. (default: pick first vrDisplay)
       */
-    var displayName: js.UndefOr[String] = js.native
+    var displayName: js.UndefOr[String] = js.undefined
     
     /**
       * Sets the scale of the vrDevice in babylon space. (default: 1)
       */
-    var positionScale: js.UndefOr[Double] = js.native
+    var positionScale: js.UndefOr[Double] = js.undefined
     
     /**
       * To change the length of the ray for gaze/controllers. Will be scaled by positionScale. (default: 100)
       */
-    var rayLength: js.UndefOr[Double] = js.native
+    var rayLength: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets if the webVR camera should be tracked to the vrDevice. (default: true)
       */
-    var trackPosition: js.UndefOr[Boolean] = js.native
+    var trackPosition: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If you don't want to use the default VR button of the helper. (default: false)
       */
-    var useCustomVRButton: js.UndefOr[Boolean] = js.native
+    var useCustomVRButton: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If multiview should be used if availible (default: false)
       */
-    var useMultiview: js.UndefOr[Boolean] = js.native
+    var useMultiview: js.UndefOr[Boolean] = js.undefined
   }
   object WebVROptions {
     
-    @scala.inline
-    def apply(): WebVROptions = {
+    inline def apply(): WebVROptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WebVROptions]
     }
     
-    @scala.inline
-    implicit class WebVROptionsMutableBuilder[Self <: WebVROptions] (val x: Self) extends AnyVal {
+    extension [Self <: WebVROptions](x: Self) {
       
-      @scala.inline
-      def setControllerMeshes(value: Boolean): Self = StObject.set(x, "controllerMeshes", value.asInstanceOf[js.Any])
+      inline def setControllerMeshes(value: Boolean): Self = StObject.set(x, "controllerMeshes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControllerMeshesUndefined: Self = StObject.set(x, "controllerMeshes", js.undefined)
+      inline def setControllerMeshesUndefined: Self = StObject.set(x, "controllerMeshes", js.undefined)
       
-      @scala.inline
-      def setCustomVRButton(value: HTMLButtonElement): Self = StObject.set(x, "customVRButton", value.asInstanceOf[js.Any])
+      inline def setCustomVRButton(value: HTMLButtonElement): Self = StObject.set(x, "customVRButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomVRButtonUndefined: Self = StObject.set(x, "customVRButton", js.undefined)
+      inline def setCustomVRButtonUndefined: Self = StObject.set(x, "customVRButton", js.undefined)
       
-      @scala.inline
-      def setDefaultHeight(value: Double): Self = StObject.set(x, "defaultHeight", value.asInstanceOf[js.Any])
+      inline def setDefaultHeight(value: Double): Self = StObject.set(x, "defaultHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultHeightUndefined: Self = StObject.set(x, "defaultHeight", js.undefined)
+      inline def setDefaultHeightUndefined: Self = StObject.set(x, "defaultHeight", js.undefined)
       
-      @scala.inline
-      def setDefaultLightingOnControllers(value: Boolean): Self = StObject.set(x, "defaultLightingOnControllers", value.asInstanceOf[js.Any])
+      inline def setDefaultLightingOnControllers(value: Boolean): Self = StObject.set(x, "defaultLightingOnControllers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultLightingOnControllersUndefined: Self = StObject.set(x, "defaultLightingOnControllers", js.undefined)
+      inline def setDefaultLightingOnControllersUndefined: Self = StObject.set(x, "defaultLightingOnControllers", js.undefined)
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      @scala.inline
-      def setPositionScale(value: Double): Self = StObject.set(x, "positionScale", value.asInstanceOf[js.Any])
+      inline def setPositionScale(value: Double): Self = StObject.set(x, "positionScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionScaleUndefined: Self = StObject.set(x, "positionScale", js.undefined)
+      inline def setPositionScaleUndefined: Self = StObject.set(x, "positionScale", js.undefined)
       
-      @scala.inline
-      def setRayLength(value: Double): Self = StObject.set(x, "rayLength", value.asInstanceOf[js.Any])
+      inline def setRayLength(value: Double): Self = StObject.set(x, "rayLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRayLengthUndefined: Self = StObject.set(x, "rayLength", js.undefined)
+      inline def setRayLengthUndefined: Self = StObject.set(x, "rayLength", js.undefined)
       
-      @scala.inline
-      def setTrackPosition(value: Boolean): Self = StObject.set(x, "trackPosition", value.asInstanceOf[js.Any])
+      inline def setTrackPosition(value: Boolean): Self = StObject.set(x, "trackPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackPositionUndefined: Self = StObject.set(x, "trackPosition", js.undefined)
+      inline def setTrackPositionUndefined: Self = StObject.set(x, "trackPosition", js.undefined)
       
-      @scala.inline
-      def setUseCustomVRButton(value: Boolean): Self = StObject.set(x, "useCustomVRButton", value.asInstanceOf[js.Any])
+      inline def setUseCustomVRButton(value: Boolean): Self = StObject.set(x, "useCustomVRButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseCustomVRButtonUndefined: Self = StObject.set(x, "useCustomVRButton", js.undefined)
+      inline def setUseCustomVRButtonUndefined: Self = StObject.set(x, "useCustomVRButton", js.undefined)
       
-      @scala.inline
-      def setUseMultiview(value: Boolean): Self = StObject.set(x, "useMultiview", value.asInstanceOf[js.Any])
+      inline def setUseMultiview(value: Boolean): Self = StObject.set(x, "useMultiview", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseMultiviewUndefined: Self = StObject.set(x, "useMultiview", js.undefined)
+      inline def setUseMultiviewUndefined: Self = StObject.set(x, "useMultiview", js.undefined)
     }
   }
 }

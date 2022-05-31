@@ -4,15 +4,19 @@ import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.anon.TopBaseAt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.BoxBuilder")
 @js.native
 class BoxBuilder ()
-  extends typings.babylonjs.BABYLON.BoxBuilder
+  extends StObject
+     with typings.babylonjs.BABYLON.BoxBuilder
 /* static members */
 object BoxBuilder {
+  
+  @JSGlobal("BABYLON.BoxBuilder")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a box mesh
@@ -29,10 +33,6 @@ object BoxBuilder {
     * @param scene defines the hosting scene
     * @returns the box mesh
     */
-  @JSGlobal("BABYLON.BoxBuilder.CreateBox")
-  @js.native
-  def CreateBox(name: String, options: TopBaseAt): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.BoxBuilder.CreateBox")
-  @js.native
-  def CreateBox(name: String, options: TopBaseAt, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
+  inline def CreateBox(name: String, options: TopBaseAt): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreateBox(name: String, options: TopBaseAt, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
 }

@@ -2,11 +2,12 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArcTan2Block extends NodeMaterialBlock {
+trait ArcTan2Block
+  extends StObject
+     with NodeMaterialBlock {
   
   /**
     * Gets the output component

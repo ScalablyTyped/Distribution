@@ -1,25 +1,27 @@
 package typings.babylonjs
 
 import typings.babylonjs.abstractMeshMod.AbstractMesh
+import typings.babylonjs.effectMod.Effect
 import typings.babylonjs.iEffectFallbacksMod.IEffectFallbacks
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object effectFallbacksMod {
   
   @JSImport("babylonjs/Materials/effectFallbacks", "EffectFallbacks")
   @js.native
-  class EffectFallbacks () extends IEffectFallbacks {
+  class EffectFallbacks ()
+    extends StObject
+       with IEffectFallbacks {
     
-    var _currentRank: js.Any = js.native
+    /* private */ var _currentRank: js.Any = js.native
     
-    var _defines: js.Any = js.native
+    /* private */ var _defines: js.Any = js.native
     
-    var _maxRank: js.Any = js.native
+    /* private */ var _maxRank: js.Any = js.native
     
-    var _mesh: js.Any = js.native
+    /* private */ var _mesh: js.Any = js.native
     
     /**
       * Sets the mesh to use CPU skinning when needing to fallback.
@@ -38,7 +40,27 @@ object effectFallbacksMod {
     /**
       * Checks to see if more fallbacks are still availible.
       */
+    /* CompleteClass */
+    var hasMoreFallbacks: Boolean = js.native
+    /**
+      * Checks to see if more fallbacks are still availible.
+      */
     @JSName("hasMoreFallbacks")
     def hasMoreFallbacks_MEffectFallbacks: Boolean = js.native
+    
+    /**
+      * Removes the defines that should be removed when falling back.
+      * @param currentDefines defines the current define statements for the shader.
+      * @param effect defines the current effect we try to compile
+      * @returns The resulting defines with defines of the current rank removed.
+      */
+    /* CompleteClass */
+    override def reduce(currentDefines: String, effect: Effect): String = js.native
+    
+    /**
+      * Removes the fallback from the bound mesh.
+      */
+    /* CompleteClass */
+    override def unBindMesh(): Unit = js.native
   }
 }

@@ -4,7 +4,6 @@ import typings.babylonjs.baseCameraPointersInputMod.BaseCameraPointersInput
 import typings.babylonjs.followCameraMod.FollowCamera
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object followCameraPointersInputMod {
@@ -13,9 +12,9 @@ object followCameraPointersInputMod {
   @js.native
   class FollowCameraPointersInput () extends BaseCameraPointersInput {
     
-    var _warning: js.Any = js.native
+    /* private */ var _warning: js.Any = js.native
     
-    var _warningCounter: js.Any = js.native
+    /* private */ var _warningCounter: js.Any = js.native
     
     /**
       * Defines the pointer angular sensibility along the X axis or how fast is

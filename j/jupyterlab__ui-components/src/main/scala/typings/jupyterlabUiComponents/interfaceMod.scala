@@ -3,7 +3,6 @@ package typings.jupyterlabUiComponents
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfaceMod {
@@ -12,28 +11,23 @@ object interfaceMod {
   @js.native
   val DEFAULT_STYLE_CLASS: /* "jp-DefaultStyle" */ String = js.native
   
-  @js.native
   trait IElementRefProps[E /* <: HTMLElement */] extends StObject {
     
     /** Ref handler to access the instance of the internal HTML element. */
-    var elementRef: js.UndefOr[js.Function1[/* ref */ E | Null, Unit]] = js.native
+    var elementRef: js.UndefOr[js.Function1[/* ref */ E | Null, Unit]] = js.undefined
   }
   object IElementRefProps {
     
-    @scala.inline
-    def apply[E /* <: HTMLElement */](): IElementRefProps[E] = {
+    inline def apply[E /* <: HTMLElement */](): IElementRefProps[E] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IElementRefProps[E]]
     }
     
-    @scala.inline
-    implicit class IElementRefPropsMutableBuilder[Self <: IElementRefProps[_], E /* <: HTMLElement */] (val x: Self with IElementRefProps[E]) extends AnyVal {
+    extension [Self <: IElementRefProps[?], E /* <: HTMLElement */](x: Self & IElementRefProps[E]) {
       
-      @scala.inline
-      def setElementRef(value: /* ref */ E | Null => Unit): Self = StObject.set(x, "elementRef", js.Any.fromFunction1(value))
+      inline def setElementRef(value: /* ref */ E | Null => Unit): Self = StObject.set(x, "elementRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setElementRefUndefined: Self = StObject.set(x, "elementRef", js.undefined)
+      inline def setElementRefUndefined: Self = StObject.set(x, "elementRef", js.undefined)
     }
   }
 }

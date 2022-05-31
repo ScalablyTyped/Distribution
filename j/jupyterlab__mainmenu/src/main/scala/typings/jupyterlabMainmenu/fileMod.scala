@@ -11,7 +11,6 @@ import typings.luminoWidgets.mod.Widget
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileMod {
@@ -46,7 +45,9 @@ object fileMod {
   }
   
   @js.native
-  trait IFileMenu extends IJupyterLabMenu {
+  trait IFileMenu
+    extends StObject
+       with IJupyterLabMenu {
     
     /**
       * The close and cleanup extension point.
@@ -74,78 +75,71 @@ object fileMod {
       * Interface for an activity that has some cleanup action associated
       * with it in addition to merely closing its widget in the main area.
       */
-    @js.native
-    trait ICloseAndCleaner[T /* <: Widget */] extends IMenuExtender[T] {
+    trait ICloseAndCleaner[T /* <: Widget */]
+      extends StObject
+         with IMenuExtender[T] {
       
       /**
         * A label to use for the cleanup action.
         */
-      var action: String = js.native
+      var action: String
       
       /**
         * A function to perform the close and cleanup action.
         */
-      def closeAndCleanup(widget: T): js.Promise[Unit] = js.native
+      def closeAndCleanup(widget: T): js.Promise[Unit]
       
       /**
         * A label to use for the activity that is being cleaned up.
         */
-      var name: String = js.native
+      var name: String
     }
     object ICloseAndCleaner {
       
-      @scala.inline
-      def apply[T /* <: Widget */](action: String, closeAndCleanup: T => js.Promise[Unit], name: String, tracker: IWidgetTracker[T]): ICloseAndCleaner[T] = {
+      inline def apply[T /* <: Widget */](action: String, closeAndCleanup: T => js.Promise[Unit], name: String, tracker: IWidgetTracker[T]): ICloseAndCleaner[T] = {
         val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], closeAndCleanup = js.Any.fromFunction1(closeAndCleanup), name = name.asInstanceOf[js.Any], tracker = tracker.asInstanceOf[js.Any])
         __obj.asInstanceOf[ICloseAndCleaner[T]]
       }
       
-      @scala.inline
-      implicit class ICloseAndCleanerMutableBuilder[Self <: ICloseAndCleaner[_], T /* <: Widget */] (val x: Self with ICloseAndCleaner[T]) extends AnyVal {
+      extension [Self <: ICloseAndCleaner[?], T /* <: Widget */](x: Self & ICloseAndCleaner[T]) {
         
-        @scala.inline
-        def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+        inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCloseAndCleanup(value: T => js.Promise[Unit]): Self = StObject.set(x, "closeAndCleanup", js.Any.fromFunction1(value))
+        inline def setCloseAndCleanup(value: T => js.Promise[Unit]): Self = StObject.set(x, "closeAndCleanup", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       }
     }
     
     /**
       * Interface for a command to create a console for an activity.
       */
-    @js.native
-    trait IConsoleCreator[T /* <: Widget */] extends IMenuExtender[T] {
+    trait IConsoleCreator[T /* <: Widget */]
+      extends StObject
+         with IMenuExtender[T] {
       
       /**
         * The function to create the console.
         */
-      def createConsole(widget: T): js.Promise[Unit] = js.native
+      def createConsole(widget: T): js.Promise[Unit]
       
       /**
         * A label to use for the activity for which a console is being created.
         */
-      var name: String = js.native
+      var name: String
     }
     object IConsoleCreator {
       
-      @scala.inline
-      def apply[T /* <: Widget */](createConsole: T => js.Promise[Unit], name: String, tracker: IWidgetTracker[T]): IConsoleCreator[T] = {
+      inline def apply[T /* <: Widget */](createConsole: T => js.Promise[Unit], name: String, tracker: IWidgetTracker[T]): IConsoleCreator[T] = {
         val __obj = js.Dynamic.literal(createConsole = js.Any.fromFunction1(createConsole), name = name.asInstanceOf[js.Any], tracker = tracker.asInstanceOf[js.Any])
         __obj.asInstanceOf[IConsoleCreator[T]]
       }
       
-      @scala.inline
-      implicit class IConsoleCreatorMutableBuilder[Self <: IConsoleCreator[_], T /* <: Widget */] (val x: Self with IConsoleCreator[T]) extends AnyVal {
+      extension [Self <: IConsoleCreator[?], T /* <: Widget */](x: Self & IConsoleCreator[T]) {
         
-        @scala.inline
-        def setCreateConsole(value: T => js.Promise[Unit]): Self = StObject.set(x, "createConsole", js.Any.fromFunction1(value))
+        inline def setCreateConsole(value: T => js.Promise[Unit]): Self = StObject.set(x, "createConsole", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       }
     }
   }

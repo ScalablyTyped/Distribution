@@ -2,7 +2,6 @@ package typings.babylonjs.legacyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "SubEmitter")
@@ -21,6 +20,10 @@ class SubEmitter protected ()
 /* static members */
 object SubEmitter {
   
+  @JSImport("babylonjs/Legacy/legacy", "SubEmitter")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new SubEmitter from a serialized JSON version
     * @param serializationObject defines the JSON object to read from
@@ -28,22 +31,14 @@ object SubEmitter {
     * @param rootUrl defines the rootUrl for data loading
     * @returns a new SubEmitter
     */
-  @JSImport("babylonjs/Legacy/legacy", "SubEmitter.Parse")
-  @js.native
-  def Parse(serializationObject: js.Any, sceneOrEngine: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.subEmitterMod.SubEmitter = js.native
-  @JSImport("babylonjs/Legacy/legacy", "SubEmitter.Parse")
-  @js.native
-  def Parse(
+  inline def Parse(serializationObject: js.Any, sceneOrEngine: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.subEmitterMod.SubEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(serializationObject.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.subEmitterMod.SubEmitter]
+  inline def Parse(
     serializationObject: js.Any,
     sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine,
     rootUrl: String
-  ): typings.babylonjs.subEmitterMod.SubEmitter = js.native
+  ): typings.babylonjs.subEmitterMod.SubEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(serializationObject.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.subEmitterMod.SubEmitter]
   
   /** @hidden */
-  @JSImport("babylonjs/Legacy/legacy", "SubEmitter._ParseParticleSystem")
-  @js.native
-  def _ParseParticleSystem(system: js.Any, sceneOrEngine: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.particleSystemMod.ParticleSystem = js.native
-  @JSImport("babylonjs/Legacy/legacy", "SubEmitter._ParseParticleSystem")
-  @js.native
-  def _ParseParticleSystem(system: js.Any, sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine, rootUrl: String): typings.babylonjs.particleSystemMod.ParticleSystem = js.native
+  inline def _ParseParticleSystem(system: js.Any, sceneOrEngine: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.particleSystemMod.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("_ParseParticleSystem")(system.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particleSystemMod.ParticleSystem]
+  inline def _ParseParticleSystem(system: js.Any, sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine, rootUrl: String): typings.babylonjs.particleSystemMod.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("_ParseParticleSystem")(system.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particleSystemMod.ParticleSystem]
 }

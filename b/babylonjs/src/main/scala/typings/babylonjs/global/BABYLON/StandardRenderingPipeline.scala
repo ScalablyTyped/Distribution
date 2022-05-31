@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.StandardRenderingPipeline")
 @js.native
 class StandardRenderingPipeline protected ()
-  extends typings.babylonjs.BABYLON.StandardRenderingPipeline {
+  extends StObject
+     with typings.babylonjs.BABYLON.StandardRenderingPipeline {
   /**
     * Default pipeline should be used going forward but the standard pipeline will be kept for backwards compatibility.
     * @constructor
@@ -30,9 +30,28 @@ class StandardRenderingPipeline protected ()
     name: String,
     scene: typings.babylonjs.BABYLON.Scene,
     ratio: Double,
-    originalPostProcess: js.UndefOr[Nullable[typings.babylonjs.BABYLON.PostProcess]],
+    originalPostProcess: Unit,
     cameras: js.Array[typings.babylonjs.BABYLON.Camera]
   ) = this()
+  def this(
+    name: String,
+    scene: typings.babylonjs.BABYLON.Scene,
+    ratio: Double,
+    originalPostProcess: Nullable[typings.babylonjs.BABYLON.PostProcess],
+    cameras: js.Array[typings.babylonjs.BABYLON.Camera]
+  ) = this()
+  
+  /**
+    * Array of animations
+    */
+  /* CompleteClass */
+  var animations: Nullable[js.Array[typings.babylonjs.BABYLON.Animation]] = js.native
+  
+  /**
+    * Disposes of the pipeline
+    */
+  /* InferMemberOverrides */
+  override def dispose(): Unit = js.native
 }
 /* static members */
 object StandardRenderingPipeline {
@@ -47,8 +66,7 @@ object StandardRenderingPipeline {
   @JSGlobal("BABYLON.StandardRenderingPipeline.LuminanceSteps")
   @js.native
   def LuminanceSteps: Double = js.native
-  @scala.inline
-  def LuminanceSteps_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LuminanceSteps")(x.asInstanceOf[js.Any])
+  inline def LuminanceSteps_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LuminanceSteps")(x.asInstanceOf[js.Any])
   
   /**
     * Parse the serialized pipeline
@@ -57,7 +75,5 @@ object StandardRenderingPipeline {
     * @param rootUrl The URL of the serialized pipeline.
     * @returns An instantiated pipeline from the serialized object.
     */
-  @JSGlobal("BABYLON.StandardRenderingPipeline.Parse")
-  @js.native
-  def Parse(source: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.StandardRenderingPipeline = js.native
+  inline def Parse(source: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.StandardRenderingPipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.StandardRenderingPipeline]
 }

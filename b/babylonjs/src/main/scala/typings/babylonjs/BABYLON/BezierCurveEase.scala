@@ -2,28 +2,27 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BezierCurveEase extends EasingFunction {
+trait BezierCurveEase
+  extends StObject
+     with EasingFunction {
   
   /** Defines the x component of the start tangent in the bezier curve */
-  var x1: Double = js.native
+  var x1: Double
   
   /** Defines the x component of the end tangent in the bezier curve */
-  var x2: Double = js.native
+  var x2: Double
   
   /** Defines the y component of the start tangent in the bezier curve */
-  var y1: Double = js.native
+  var y1: Double
   
   /** Defines the y component of the end tangent in the bezier curve */
-  var y2: Double = js.native
+  var y2: Double
 }
 object BezierCurveEase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _easingMode: js.Any,
     ease: Double => Double,
     easeInCore: Double => Double,
@@ -38,19 +37,14 @@ object BezierCurveEase {
     __obj.asInstanceOf[BezierCurveEase]
   }
   
-  @scala.inline
-  implicit class BezierCurveEaseMutableBuilder[Self <: BezierCurveEase] (val x: Self) extends AnyVal {
+  extension [Self <: BezierCurveEase](x: Self) {
     
-    @scala.inline
-    def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
+    inline def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX2(value: Double): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
+    inline def setX2(value: Double): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
+    inline def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY2(value: Double): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
+    inline def setY2(value: Double): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
   }
 }

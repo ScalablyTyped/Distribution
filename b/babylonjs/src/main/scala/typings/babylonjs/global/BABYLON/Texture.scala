@@ -8,13 +8,13 @@ import typings.std.Blob
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.Texture")
 @js.native
 class Texture protected ()
-  extends typings.babylonjs.BABYLON.Texture {
+  extends StObject
+     with typings.babylonjs.BABYLON.Texture {
   /**
     * Instantiates a new texture.
     * This represents a texture in babylon. It can be easily loaded from a network, base64 or html input.
@@ -41,7 +41,7 @@ class Texture protected ()
     onLoad: js.UndefOr[Nullable[js.Function0[Unit]]],
     onError: js.UndefOr[
         Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
         ]
       ],
     buffer: js.UndefOr[
@@ -52,6 +52,12 @@ class Texture protected ()
     mimeType: js.UndefOr[String],
     loaderOptions: js.UndefOr[js.Any]
   ) = this()
+  
+  /**
+    * Array of animations
+    */
+  /* CompleteClass */
+  var animations: Nullable[js.Array[typings.babylonjs.BABYLON.Animation]] = js.native
 }
 /* static members */
 object Texture {
@@ -88,9 +94,7 @@ object Texture {
     * @param format define the format of the texture we are trying to load (Engine.TEXTUREFORMAT_RGBA...)
     * @returns the created texture
     */
-  @JSGlobal("BABYLON.Texture.CreateFromBase64String")
-  @js.native
-  def CreateFromBase64String(
+  inline def CreateFromBase64String(
     data: String,
     name: String,
     scene: typings.babylonjs.BABYLON.Scene,
@@ -100,7 +104,7 @@ object Texture {
     onLoad: js.UndefOr[Nullable[js.Function0[Unit]]],
     onError: js.UndefOr[Nullable[js.Function0[Unit]]],
     format: js.UndefOr[Double]
-  ): typings.babylonjs.BABYLON.Texture = js.native
+  ): typings.babylonjs.BABYLON.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromBase64String")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], noMipmap.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Texture]
   
   /** Equirectangular coordinates mode */
   @JSGlobal("BABYLON.Texture.EQUIRECTANGULAR_MODE")
@@ -129,8 +133,7 @@ object Texture {
   @JSGlobal("BABYLON.Texture.ForceSerializeBuffers")
   @js.native
   def ForceSerializeBuffers: Boolean = js.native
-  @scala.inline
-  def ForceSerializeBuffers_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ForceSerializeBuffers")(x.asInstanceOf[js.Any])
+  inline def ForceSerializeBuffers_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ForceSerializeBuffers")(x.asInstanceOf[js.Any])
   
   /** Inverse Cubic coordinates mode */
   @JSGlobal("BABYLON.Texture.INVCUBIC_MODE")
@@ -182,9 +185,7 @@ object Texture {
     * @param format define the format of the texture we are trying to load (Engine.TEXTUREFORMAT_RGBA...)
     * @returns the created texture
     */
-  @JSGlobal("BABYLON.Texture.LoadFromDataString")
-  @js.native
-  def LoadFromDataString(
+  inline def LoadFromDataString(
     name: String,
     buffer: js.Any,
     scene: typings.babylonjs.BABYLON.Scene,
@@ -195,11 +196,11 @@ object Texture {
     onLoad: js.UndefOr[Nullable[js.Function0[Unit]]],
     onError: js.UndefOr[
       Nullable[
-        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
       ]
     ],
     format: js.UndefOr[Double]
-  ): typings.babylonjs.BABYLON.Texture = js.native
+  ): typings.babylonjs.BABYLON.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadFromDataString")(name.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], deleteBuffer.asInstanceOf[js.Any], noMipmap.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Texture]
   
   /** Texture is repeating and mirrored */
   @JSGlobal("BABYLON.Texture.MIRROR_ADDRESSMODE")
@@ -258,9 +259,7 @@ object Texture {
     * @param rootUrl Define the root url of the parsing sequence in the case of relative dependencies
     * @returns The parsed texture if successful
     */
-  @JSGlobal("BABYLON.Texture.Parse")
-  @js.native
-  def Parse(parsedTexture: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): Nullable[typings.babylonjs.BABYLON.BaseTexture] = js.native
+  inline def Parse(parsedTexture: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): Nullable[typings.babylonjs.BABYLON.BaseTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.BaseTexture]]
   
   /** Inverse Cubic coordinates mode */
   @JSGlobal("BABYLON.Texture.SKYBOX_MODE")
@@ -278,8 +277,7 @@ object Texture {
   @JSGlobal("BABYLON.Texture.SerializeBuffers")
   @js.native
   def SerializeBuffers: Boolean = js.native
-  @scala.inline
-  def SerializeBuffers_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SerializeBuffers")(x.asInstanceOf[js.Any])
+  inline def SerializeBuffers_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SerializeBuffers")(x.asInstanceOf[js.Any])
   
   /** Trilinear is mag = linear and min = linear and mip = linear */
   @JSGlobal("BABYLON.Texture.TRILINEAR_SAMPLINGMODE")
@@ -292,8 +290,7 @@ object Texture {
   @JSGlobal("BABYLON.Texture.UseSerializedUrlIfAny")
   @js.native
   def UseSerializedUrlIfAny: Boolean = js.native
-  @scala.inline
-  def UseSerializedUrlIfAny_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UseSerializedUrlIfAny")(x.asInstanceOf[js.Any])
+  inline def UseSerializedUrlIfAny_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UseSerializedUrlIfAny")(x.asInstanceOf[js.Any])
   
   /** Texture is repeating outside of 0..1 UVs */
   @JSGlobal("BABYLON.Texture.WRAP_ADDRESSMODE")
@@ -301,27 +298,21 @@ object Texture {
   val WRAP_ADDRESSMODE: Double = js.native
   
   /** @hidden */
-  @JSGlobal("BABYLON.Texture._CreateMirror")
-  @js.native
-  def _CreateMirror(
+  inline def _CreateMirror(
     name: String,
     renderTargetSize: Double,
     scene: typings.babylonjs.BABYLON.Scene,
     generateMipMaps: Boolean
-  ): typings.babylonjs.BABYLON.MirrorTexture = js.native
+  ): typings.babylonjs.BABYLON.MirrorTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateMirror")(name.asInstanceOf[js.Any], renderTargetSize.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.MirrorTexture]
   
   /** @hidden */
-  @JSGlobal("BABYLON.Texture._CreateRenderTargetTexture")
-  @js.native
-  def _CreateRenderTargetTexture(
+  inline def _CreateRenderTargetTexture(
     name: String,
     renderTargetSize: Double,
     scene: typings.babylonjs.BABYLON.Scene,
     generateMipMaps: Boolean
-  ): typings.babylonjs.BABYLON.RenderTargetTexture = js.native
+  ): typings.babylonjs.BABYLON.RenderTargetTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateRenderTargetTexture")(name.asInstanceOf[js.Any], renderTargetSize.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.RenderTargetTexture]
   
   /** @hidden */
-  @JSGlobal("BABYLON.Texture._CubeTextureParser")
-  @js.native
-  def _CubeTextureParser(jsonTexture: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.CubeTexture = js.native
+  inline def _CubeTextureParser(jsonTexture: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("_CubeTextureParser")(jsonTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.CubeTexture]
 }

@@ -4,7 +4,6 @@ import typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnect
 import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object waveBlockMod {
@@ -41,21 +40,27 @@ object waveBlockMod {
   object WaveBlockKind extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[WaveBlockKind with Double] = js.native
+    def apply(value: Double): js.UndefOr[WaveBlockKind & Double] = js.native
     
     /** SawTooth */
     @js.native
-    sealed trait SawTooth extends WaveBlockKind
-    /* 0 */ val SawTooth: typings.babylonjs.waveBlockMod.WaveBlockKind.SawTooth with Double = js.native
+    sealed trait SawTooth
+      extends StObject
+         with WaveBlockKind
+    /* 0 */ val SawTooth: typings.babylonjs.waveBlockMod.WaveBlockKind.SawTooth & Double = js.native
     
     /** Square */
     @js.native
-    sealed trait Square extends WaveBlockKind
-    /* 1 */ val Square: typings.babylonjs.waveBlockMod.WaveBlockKind.Square with Double = js.native
+    sealed trait Square
+      extends StObject
+         with WaveBlockKind
+    /* 1 */ val Square: typings.babylonjs.waveBlockMod.WaveBlockKind.Square & Double = js.native
     
     /** Triangle */
     @js.native
-    sealed trait Triangle extends WaveBlockKind
-    /* 2 */ val Triangle: typings.babylonjs.waveBlockMod.WaveBlockKind.Triangle with Double = js.native
+    sealed trait Triangle
+      extends StObject
+         with WaveBlockKind
+    /* 2 */ val Triangle: typings.babylonjs.waveBlockMod.WaveBlockKind.Triangle & Double = js.native
   }
 }

@@ -12,7 +12,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object animatableMod {
@@ -56,23 +55,23 @@ object animatableMod {
     /** @hidden */
     def _animate(delay: Double): Boolean = js.native
     
-    var _localDelayOffset: js.Any = js.native
+    /* private */ var _localDelayOffset: js.Any = js.native
     
-    var _paused: js.Any = js.native
+    /* private */ var _paused: js.Any = js.native
     
-    var _pausedDelay: js.Any = js.native
+    /* private */ var _pausedDelay: js.Any = js.native
     
-    var _raiseOnAnimationEnd: js.Any = js.native
+    /* private */ var _raiseOnAnimationEnd: js.Any = js.native
     
-    var _runtimeAnimations: js.Any = js.native
+    /* private */ var _runtimeAnimations: js.Any = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
-    var _speedRatio: js.Any = js.native
+    /* private */ var _speedRatio: js.Any = js.native
     
-    var _syncRoot: js.Any = js.native
+    /* private */ var _syncRoot: js.Any = js.native
     
-    var _weight: js.Any = js.native
+    /* private */ var _weight: js.Any = js.native
     
     /**
       * Gets a boolean indicating if the animation has started
@@ -189,9 +188,9 @@ object animatableMod {
       * @param targetMask - a function that determines if the animation should be stopped based on its target (all animations will be stopped if both this and animationName are empty)
       */
     def stop(): Unit = js.native
-    def stop(animationName: js.UndefOr[scala.Nothing], targetMask: js.Function1[/* target */ js.Any, Boolean]): Unit = js.native
     def stop(animationName: String): Unit = js.native
     def stop(animationName: String, targetMask: js.Function1[/* target */ js.Any, Boolean]): Unit = js.native
+    def stop(animationName: Unit, targetMask: js.Function1[/* target */ js.Any, Boolean]): Unit = js.native
     
     /**
       * Gets the root Animatable used to synchronize and normalize animations
@@ -228,7 +227,6 @@ object animatableMod {
   /* augmented module */
   object babylonjsBonesBoneAugmentingMod {
     
-    @js.native
     trait Bone extends StObject {
       
       /**
@@ -246,21 +244,18 @@ object animatableMod {
         frameOffset: Double,
         rescaleAsRequired: Boolean,
         skelDimensionsRatio: Nullable[Vector3]
-      ): Boolean = js.native
+      ): Boolean
     }
     object Bone {
       
-      @scala.inline
-      def apply(copyAnimationRange: (Bone, String, Double, Boolean, Nullable[Vector3]) => Boolean): Bone = {
+      inline def apply(copyAnimationRange: (Bone, String, Double, Boolean, Nullable[Vector3]) => Boolean): Bone = {
         val __obj = js.Dynamic.literal(copyAnimationRange = js.Any.fromFunction5(copyAnimationRange))
         __obj.asInstanceOf[Bone]
       }
       
-      @scala.inline
-      implicit class BoneMutableBuilder[Self <: Bone] (val x: Self) extends AnyVal {
+      extension [Self <: Bone](x: Self) {
         
-        @scala.inline
-        def setCopyAnimationRange(value: (Bone, String, Double, Boolean, Nullable[Vector3]) => Boolean): Self = StObject.set(x, "copyAnimationRange", js.Any.fromFunction5(value))
+        inline def setCopyAnimationRange(value: (Bone, String, Double, Boolean, Nullable[Vector3]) => Boolean): Self = StObject.set(x, "copyAnimationRange", js.Any.fromFunction5(value))
       }
     }
   }
@@ -326,160 +321,6 @@ object animatableMod {
         * @returns the list of created animatables
         */
       def beginDirectAnimation(target: js.Any, animations: js.Array[Animation], from: Double, to: Double): Animatable = js.native
-      def beginDirectAnimation(
-        target: js.Any,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: js.UndefOr[scala.Nothing],
-        speedRatio: js.UndefOr[scala.Nothing],
-        onAnimationEnd: js.UndefOr[scala.Nothing],
-        onAnimationLoop: js.UndefOr[scala.Nothing],
-        isAdditive: Boolean
-      ): Animatable = js.native
-      def beginDirectAnimation(
-        target: js.Any,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: js.UndefOr[scala.Nothing],
-        speedRatio: js.UndefOr[scala.Nothing],
-        onAnimationEnd: js.UndefOr[scala.Nothing],
-        onAnimationLoop: js.Function0[Unit]
-      ): Animatable = js.native
-      def beginDirectAnimation(
-        target: js.Any,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: js.UndefOr[scala.Nothing],
-        speedRatio: js.UndefOr[scala.Nothing],
-        onAnimationEnd: js.UndefOr[scala.Nothing],
-        onAnimationLoop: js.Function0[Unit],
-        isAdditive: Boolean
-      ): Animatable = js.native
-      def beginDirectAnimation(
-        target: js.Any,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: js.UndefOr[scala.Nothing],
-        speedRatio: js.UndefOr[scala.Nothing],
-        onAnimationEnd: js.Function0[Unit]
-      ): Animatable = js.native
-      def beginDirectAnimation(
-        target: js.Any,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: js.UndefOr[scala.Nothing],
-        speedRatio: js.UndefOr[scala.Nothing],
-        onAnimationEnd: js.Function0[Unit],
-        onAnimationLoop: js.UndefOr[scala.Nothing],
-        isAdditive: Boolean
-      ): Animatable = js.native
-      def beginDirectAnimation(
-        target: js.Any,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: js.UndefOr[scala.Nothing],
-        speedRatio: js.UndefOr[scala.Nothing],
-        onAnimationEnd: js.Function0[Unit],
-        onAnimationLoop: js.Function0[Unit]
-      ): Animatable = js.native
-      def beginDirectAnimation(
-        target: js.Any,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: js.UndefOr[scala.Nothing],
-        speedRatio: js.UndefOr[scala.Nothing],
-        onAnimationEnd: js.Function0[Unit],
-        onAnimationLoop: js.Function0[Unit],
-        isAdditive: Boolean
-      ): Animatable = js.native
-      def beginDirectAnimation(
-        target: js.Any,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: js.UndefOr[scala.Nothing],
-        speedRatio: Double
-      ): Animatable = js.native
-      def beginDirectAnimation(
-        target: js.Any,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: js.UndefOr[scala.Nothing],
-        speedRatio: Double,
-        onAnimationEnd: js.UndefOr[scala.Nothing],
-        onAnimationLoop: js.UndefOr[scala.Nothing],
-        isAdditive: Boolean
-      ): Animatable = js.native
-      def beginDirectAnimation(
-        target: js.Any,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: js.UndefOr[scala.Nothing],
-        speedRatio: Double,
-        onAnimationEnd: js.UndefOr[scala.Nothing],
-        onAnimationLoop: js.Function0[Unit]
-      ): Animatable = js.native
-      def beginDirectAnimation(
-        target: js.Any,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: js.UndefOr[scala.Nothing],
-        speedRatio: Double,
-        onAnimationEnd: js.UndefOr[scala.Nothing],
-        onAnimationLoop: js.Function0[Unit],
-        isAdditive: Boolean
-      ): Animatable = js.native
-      def beginDirectAnimation(
-        target: js.Any,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: js.UndefOr[scala.Nothing],
-        speedRatio: Double,
-        onAnimationEnd: js.Function0[Unit]
-      ): Animatable = js.native
-      def beginDirectAnimation(
-        target: js.Any,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: js.UndefOr[scala.Nothing],
-        speedRatio: Double,
-        onAnimationEnd: js.Function0[Unit],
-        onAnimationLoop: js.UndefOr[scala.Nothing],
-        isAdditive: Boolean
-      ): Animatable = js.native
-      def beginDirectAnimation(
-        target: js.Any,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: js.UndefOr[scala.Nothing],
-        speedRatio: Double,
-        onAnimationEnd: js.Function0[Unit],
-        onAnimationLoop: js.Function0[Unit]
-      ): Animatable = js.native
-      def beginDirectAnimation(
-        target: js.Any,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: js.UndefOr[scala.Nothing],
-        speedRatio: Double,
-        onAnimationEnd: js.Function0[Unit],
-        onAnimationLoop: js.Function0[Unit],
-        isAdditive: Boolean
-      ): Animatable = js.native
       def beginDirectAnimation(target: js.Any, animations: js.Array[Animation], from: Double, to: Double, loop: Boolean): Animatable = js.native
       def beginDirectAnimation(
         target: js.Any,
@@ -487,79 +328,6 @@ object animatableMod {
         from: Double,
         to: Double,
         loop: Boolean,
-        speedRatio: js.UndefOr[scala.Nothing],
-        onAnimationEnd: js.UndefOr[scala.Nothing],
-        onAnimationLoop: js.UndefOr[scala.Nothing],
-        isAdditive: Boolean
-      ): Animatable = js.native
-      def beginDirectAnimation(
-        target: js.Any,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: Boolean,
-        speedRatio: js.UndefOr[scala.Nothing],
-        onAnimationEnd: js.UndefOr[scala.Nothing],
-        onAnimationLoop: js.Function0[Unit]
-      ): Animatable = js.native
-      def beginDirectAnimation(
-        target: js.Any,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: Boolean,
-        speedRatio: js.UndefOr[scala.Nothing],
-        onAnimationEnd: js.UndefOr[scala.Nothing],
-        onAnimationLoop: js.Function0[Unit],
-        isAdditive: Boolean
-      ): Animatable = js.native
-      def beginDirectAnimation(
-        target: js.Any,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: Boolean,
-        speedRatio: js.UndefOr[scala.Nothing],
-        onAnimationEnd: js.Function0[Unit]
-      ): Animatable = js.native
-      def beginDirectAnimation(
-        target: js.Any,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: Boolean,
-        speedRatio: js.UndefOr[scala.Nothing],
-        onAnimationEnd: js.Function0[Unit],
-        onAnimationLoop: js.UndefOr[scala.Nothing],
-        isAdditive: Boolean
-      ): Animatable = js.native
-      def beginDirectAnimation(
-        target: js.Any,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: Boolean,
-        speedRatio: js.UndefOr[scala.Nothing],
-        onAnimationEnd: js.Function0[Unit],
-        onAnimationLoop: js.Function0[Unit]
-      ): Animatable = js.native
-      def beginDirectAnimation(
-        target: js.Any,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: Boolean,
-        speedRatio: js.UndefOr[scala.Nothing],
-        onAnimationEnd: js.Function0[Unit],
-        onAnimationLoop: js.Function0[Unit],
-        isAdditive: Boolean
-      ): Animatable = js.native
-      def beginDirectAnimation(
-        target: js.Any,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: Boolean,
         speedRatio: Double
       ): Animatable = js.native
       def beginDirectAnimation(
@@ -569,38 +337,6 @@ object animatableMod {
         to: Double,
         loop: Boolean,
         speedRatio: Double,
-        onAnimationEnd: js.UndefOr[scala.Nothing],
-        onAnimationLoop: js.UndefOr[scala.Nothing],
-        isAdditive: Boolean
-      ): Animatable = js.native
-      def beginDirectAnimation(
-        target: js.Any,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: Boolean,
-        speedRatio: Double,
-        onAnimationEnd: js.UndefOr[scala.Nothing],
-        onAnimationLoop: js.Function0[Unit]
-      ): Animatable = js.native
-      def beginDirectAnimation(
-        target: js.Any,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: Boolean,
-        speedRatio: Double,
-        onAnimationEnd: js.UndefOr[scala.Nothing],
-        onAnimationLoop: js.Function0[Unit],
-        isAdditive: Boolean
-      ): Animatable = js.native
-      def beginDirectAnimation(
-        target: js.Any,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: Boolean,
-        speedRatio: Double,
         onAnimationEnd: js.Function0[Unit]
       ): Animatable = js.native
       def beginDirectAnimation(
@@ -611,17 +347,6 @@ object animatableMod {
         loop: Boolean,
         speedRatio: Double,
         onAnimationEnd: js.Function0[Unit],
-        onAnimationLoop: js.UndefOr[scala.Nothing],
-        isAdditive: Boolean
-      ): Animatable = js.native
-      def beginDirectAnimation(
-        target: js.Any,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: Boolean,
-        speedRatio: Double,
-        onAnimationEnd: js.Function0[Unit],
         onAnimationLoop: js.Function0[Unit]
       ): Animatable = js.native
       def beginDirectAnimation(
@@ -633,6 +358,276 @@ object animatableMod {
         speedRatio: Double,
         onAnimationEnd: js.Function0[Unit],
         onAnimationLoop: js.Function0[Unit],
+        isAdditive: Boolean
+      ): Animatable = js.native
+      def beginDirectAnimation(
+        target: js.Any,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Boolean,
+        speedRatio: Double,
+        onAnimationEnd: js.Function0[Unit],
+        onAnimationLoop: Unit,
+        isAdditive: Boolean
+      ): Animatable = js.native
+      def beginDirectAnimation(
+        target: js.Any,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Boolean,
+        speedRatio: Double,
+        onAnimationEnd: Unit,
+        onAnimationLoop: js.Function0[Unit]
+      ): Animatable = js.native
+      def beginDirectAnimation(
+        target: js.Any,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Boolean,
+        speedRatio: Double,
+        onAnimationEnd: Unit,
+        onAnimationLoop: js.Function0[Unit],
+        isAdditive: Boolean
+      ): Animatable = js.native
+      def beginDirectAnimation(
+        target: js.Any,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Boolean,
+        speedRatio: Double,
+        onAnimationEnd: Unit,
+        onAnimationLoop: Unit,
+        isAdditive: Boolean
+      ): Animatable = js.native
+      def beginDirectAnimation(
+        target: js.Any,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Boolean,
+        speedRatio: Unit,
+        onAnimationEnd: js.Function0[Unit]
+      ): Animatable = js.native
+      def beginDirectAnimation(
+        target: js.Any,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Boolean,
+        speedRatio: Unit,
+        onAnimationEnd: js.Function0[Unit],
+        onAnimationLoop: js.Function0[Unit]
+      ): Animatable = js.native
+      def beginDirectAnimation(
+        target: js.Any,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Boolean,
+        speedRatio: Unit,
+        onAnimationEnd: js.Function0[Unit],
+        onAnimationLoop: js.Function0[Unit],
+        isAdditive: Boolean
+      ): Animatable = js.native
+      def beginDirectAnimation(
+        target: js.Any,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Boolean,
+        speedRatio: Unit,
+        onAnimationEnd: js.Function0[Unit],
+        onAnimationLoop: Unit,
+        isAdditive: Boolean
+      ): Animatable = js.native
+      def beginDirectAnimation(
+        target: js.Any,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Boolean,
+        speedRatio: Unit,
+        onAnimationEnd: Unit,
+        onAnimationLoop: js.Function0[Unit]
+      ): Animatable = js.native
+      def beginDirectAnimation(
+        target: js.Any,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Boolean,
+        speedRatio: Unit,
+        onAnimationEnd: Unit,
+        onAnimationLoop: js.Function0[Unit],
+        isAdditive: Boolean
+      ): Animatable = js.native
+      def beginDirectAnimation(
+        target: js.Any,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Boolean,
+        speedRatio: Unit,
+        onAnimationEnd: Unit,
+        onAnimationLoop: Unit,
+        isAdditive: Boolean
+      ): Animatable = js.native
+      def beginDirectAnimation(
+        target: js.Any,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Unit,
+        speedRatio: Double
+      ): Animatable = js.native
+      def beginDirectAnimation(
+        target: js.Any,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Unit,
+        speedRatio: Double,
+        onAnimationEnd: js.Function0[Unit]
+      ): Animatable = js.native
+      def beginDirectAnimation(
+        target: js.Any,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Unit,
+        speedRatio: Double,
+        onAnimationEnd: js.Function0[Unit],
+        onAnimationLoop: js.Function0[Unit]
+      ): Animatable = js.native
+      def beginDirectAnimation(
+        target: js.Any,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Unit,
+        speedRatio: Double,
+        onAnimationEnd: js.Function0[Unit],
+        onAnimationLoop: js.Function0[Unit],
+        isAdditive: Boolean
+      ): Animatable = js.native
+      def beginDirectAnimation(
+        target: js.Any,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Unit,
+        speedRatio: Double,
+        onAnimationEnd: js.Function0[Unit],
+        onAnimationLoop: Unit,
+        isAdditive: Boolean
+      ): Animatable = js.native
+      def beginDirectAnimation(
+        target: js.Any,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Unit,
+        speedRatio: Double,
+        onAnimationEnd: Unit,
+        onAnimationLoop: js.Function0[Unit]
+      ): Animatable = js.native
+      def beginDirectAnimation(
+        target: js.Any,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Unit,
+        speedRatio: Double,
+        onAnimationEnd: Unit,
+        onAnimationLoop: js.Function0[Unit],
+        isAdditive: Boolean
+      ): Animatable = js.native
+      def beginDirectAnimation(
+        target: js.Any,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Unit,
+        speedRatio: Double,
+        onAnimationEnd: Unit,
+        onAnimationLoop: Unit,
+        isAdditive: Boolean
+      ): Animatable = js.native
+      def beginDirectAnimation(
+        target: js.Any,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Unit,
+        speedRatio: Unit,
+        onAnimationEnd: js.Function0[Unit]
+      ): Animatable = js.native
+      def beginDirectAnimation(
+        target: js.Any,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Unit,
+        speedRatio: Unit,
+        onAnimationEnd: js.Function0[Unit],
+        onAnimationLoop: js.Function0[Unit]
+      ): Animatable = js.native
+      def beginDirectAnimation(
+        target: js.Any,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Unit,
+        speedRatio: Unit,
+        onAnimationEnd: js.Function0[Unit],
+        onAnimationLoop: js.Function0[Unit],
+        isAdditive: Boolean
+      ): Animatable = js.native
+      def beginDirectAnimation(
+        target: js.Any,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Unit,
+        speedRatio: Unit,
+        onAnimationEnd: js.Function0[Unit],
+        onAnimationLoop: Unit,
+        isAdditive: Boolean
+      ): Animatable = js.native
+      def beginDirectAnimation(
+        target: js.Any,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Unit,
+        speedRatio: Unit,
+        onAnimationEnd: Unit,
+        onAnimationLoop: js.Function0[Unit]
+      ): Animatable = js.native
+      def beginDirectAnimation(
+        target: js.Any,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Unit,
+        speedRatio: Unit,
+        onAnimationEnd: Unit,
+        onAnimationLoop: js.Function0[Unit],
+        isAdditive: Boolean
+      ): Animatable = js.native
+      def beginDirectAnimation(
+        target: js.Any,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Unit,
+        speedRatio: Unit,
+        onAnimationEnd: Unit,
+        onAnimationLoop: Unit,
         isAdditive: Boolean
       ): Animatable = js.native
       
@@ -663,175 +658,6 @@ object animatableMod {
         animations: js.Array[Animation],
         from: Double,
         to: Double,
-        loop: js.UndefOr[scala.Nothing],
-        speedRatio: js.UndefOr[scala.Nothing],
-        onAnimationEnd: js.UndefOr[scala.Nothing],
-        onAnimationLoop: js.UndefOr[scala.Nothing],
-        isAdditive: Boolean
-      ): js.Array[Animatable] = js.native
-      def beginDirectHierarchyAnimation(
-        target: Node,
-        directDescendantsOnly: Boolean,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: js.UndefOr[scala.Nothing],
-        speedRatio: js.UndefOr[scala.Nothing],
-        onAnimationEnd: js.UndefOr[scala.Nothing],
-        onAnimationLoop: js.Function0[Unit]
-      ): js.Array[Animatable] = js.native
-      def beginDirectHierarchyAnimation(
-        target: Node,
-        directDescendantsOnly: Boolean,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: js.UndefOr[scala.Nothing],
-        speedRatio: js.UndefOr[scala.Nothing],
-        onAnimationEnd: js.UndefOr[scala.Nothing],
-        onAnimationLoop: js.Function0[Unit],
-        isAdditive: Boolean
-      ): js.Array[Animatable] = js.native
-      def beginDirectHierarchyAnimation(
-        target: Node,
-        directDescendantsOnly: Boolean,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: js.UndefOr[scala.Nothing],
-        speedRatio: js.UndefOr[scala.Nothing],
-        onAnimationEnd: js.Function0[Unit]
-      ): js.Array[Animatable] = js.native
-      def beginDirectHierarchyAnimation(
-        target: Node,
-        directDescendantsOnly: Boolean,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: js.UndefOr[scala.Nothing],
-        speedRatio: js.UndefOr[scala.Nothing],
-        onAnimationEnd: js.Function0[Unit],
-        onAnimationLoop: js.UndefOr[scala.Nothing],
-        isAdditive: Boolean
-      ): js.Array[Animatable] = js.native
-      def beginDirectHierarchyAnimation(
-        target: Node,
-        directDescendantsOnly: Boolean,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: js.UndefOr[scala.Nothing],
-        speedRatio: js.UndefOr[scala.Nothing],
-        onAnimationEnd: js.Function0[Unit],
-        onAnimationLoop: js.Function0[Unit]
-      ): js.Array[Animatable] = js.native
-      def beginDirectHierarchyAnimation(
-        target: Node,
-        directDescendantsOnly: Boolean,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: js.UndefOr[scala.Nothing],
-        speedRatio: js.UndefOr[scala.Nothing],
-        onAnimationEnd: js.Function0[Unit],
-        onAnimationLoop: js.Function0[Unit],
-        isAdditive: Boolean
-      ): js.Array[Animatable] = js.native
-      def beginDirectHierarchyAnimation(
-        target: Node,
-        directDescendantsOnly: Boolean,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: js.UndefOr[scala.Nothing],
-        speedRatio: Double
-      ): js.Array[Animatable] = js.native
-      def beginDirectHierarchyAnimation(
-        target: Node,
-        directDescendantsOnly: Boolean,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: js.UndefOr[scala.Nothing],
-        speedRatio: Double,
-        onAnimationEnd: js.UndefOr[scala.Nothing],
-        onAnimationLoop: js.UndefOr[scala.Nothing],
-        isAdditive: Boolean
-      ): js.Array[Animatable] = js.native
-      def beginDirectHierarchyAnimation(
-        target: Node,
-        directDescendantsOnly: Boolean,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: js.UndefOr[scala.Nothing],
-        speedRatio: Double,
-        onAnimationEnd: js.UndefOr[scala.Nothing],
-        onAnimationLoop: js.Function0[Unit]
-      ): js.Array[Animatable] = js.native
-      def beginDirectHierarchyAnimation(
-        target: Node,
-        directDescendantsOnly: Boolean,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: js.UndefOr[scala.Nothing],
-        speedRatio: Double,
-        onAnimationEnd: js.UndefOr[scala.Nothing],
-        onAnimationLoop: js.Function0[Unit],
-        isAdditive: Boolean
-      ): js.Array[Animatable] = js.native
-      def beginDirectHierarchyAnimation(
-        target: Node,
-        directDescendantsOnly: Boolean,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: js.UndefOr[scala.Nothing],
-        speedRatio: Double,
-        onAnimationEnd: js.Function0[Unit]
-      ): js.Array[Animatable] = js.native
-      def beginDirectHierarchyAnimation(
-        target: Node,
-        directDescendantsOnly: Boolean,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: js.UndefOr[scala.Nothing],
-        speedRatio: Double,
-        onAnimationEnd: js.Function0[Unit],
-        onAnimationLoop: js.UndefOr[scala.Nothing],
-        isAdditive: Boolean
-      ): js.Array[Animatable] = js.native
-      def beginDirectHierarchyAnimation(
-        target: Node,
-        directDescendantsOnly: Boolean,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: js.UndefOr[scala.Nothing],
-        speedRatio: Double,
-        onAnimationEnd: js.Function0[Unit],
-        onAnimationLoop: js.Function0[Unit]
-      ): js.Array[Animatable] = js.native
-      def beginDirectHierarchyAnimation(
-        target: Node,
-        directDescendantsOnly: Boolean,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: js.UndefOr[scala.Nothing],
-        speedRatio: Double,
-        onAnimationEnd: js.Function0[Unit],
-        onAnimationLoop: js.Function0[Unit],
-        isAdditive: Boolean
-      ): js.Array[Animatable] = js.native
-      def beginDirectHierarchyAnimation(
-        target: Node,
-        directDescendantsOnly: Boolean,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
         loop: Boolean
       ): js.Array[Animatable] = js.native
       def beginDirectHierarchyAnimation(
@@ -841,86 +667,6 @@ object animatableMod {
         from: Double,
         to: Double,
         loop: Boolean,
-        speedRatio: js.UndefOr[scala.Nothing],
-        onAnimationEnd: js.UndefOr[scala.Nothing],
-        onAnimationLoop: js.UndefOr[scala.Nothing],
-        isAdditive: Boolean
-      ): js.Array[Animatable] = js.native
-      def beginDirectHierarchyAnimation(
-        target: Node,
-        directDescendantsOnly: Boolean,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: Boolean,
-        speedRatio: js.UndefOr[scala.Nothing],
-        onAnimationEnd: js.UndefOr[scala.Nothing],
-        onAnimationLoop: js.Function0[Unit]
-      ): js.Array[Animatable] = js.native
-      def beginDirectHierarchyAnimation(
-        target: Node,
-        directDescendantsOnly: Boolean,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: Boolean,
-        speedRatio: js.UndefOr[scala.Nothing],
-        onAnimationEnd: js.UndefOr[scala.Nothing],
-        onAnimationLoop: js.Function0[Unit],
-        isAdditive: Boolean
-      ): js.Array[Animatable] = js.native
-      def beginDirectHierarchyAnimation(
-        target: Node,
-        directDescendantsOnly: Boolean,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: Boolean,
-        speedRatio: js.UndefOr[scala.Nothing],
-        onAnimationEnd: js.Function0[Unit]
-      ): js.Array[Animatable] = js.native
-      def beginDirectHierarchyAnimation(
-        target: Node,
-        directDescendantsOnly: Boolean,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: Boolean,
-        speedRatio: js.UndefOr[scala.Nothing],
-        onAnimationEnd: js.Function0[Unit],
-        onAnimationLoop: js.UndefOr[scala.Nothing],
-        isAdditive: Boolean
-      ): js.Array[Animatable] = js.native
-      def beginDirectHierarchyAnimation(
-        target: Node,
-        directDescendantsOnly: Boolean,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: Boolean,
-        speedRatio: js.UndefOr[scala.Nothing],
-        onAnimationEnd: js.Function0[Unit],
-        onAnimationLoop: js.Function0[Unit]
-      ): js.Array[Animatable] = js.native
-      def beginDirectHierarchyAnimation(
-        target: Node,
-        directDescendantsOnly: Boolean,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: Boolean,
-        speedRatio: js.UndefOr[scala.Nothing],
-        onAnimationEnd: js.Function0[Unit],
-        onAnimationLoop: js.Function0[Unit],
-        isAdditive: Boolean
-      ): js.Array[Animatable] = js.native
-      def beginDirectHierarchyAnimation(
-        target: Node,
-        directDescendantsOnly: Boolean,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: Boolean,
         speedRatio: Double
       ): js.Array[Animatable] = js.native
       def beginDirectHierarchyAnimation(
@@ -931,41 +677,6 @@ object animatableMod {
         to: Double,
         loop: Boolean,
         speedRatio: Double,
-        onAnimationEnd: js.UndefOr[scala.Nothing],
-        onAnimationLoop: js.UndefOr[scala.Nothing],
-        isAdditive: Boolean
-      ): js.Array[Animatable] = js.native
-      def beginDirectHierarchyAnimation(
-        target: Node,
-        directDescendantsOnly: Boolean,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: Boolean,
-        speedRatio: Double,
-        onAnimationEnd: js.UndefOr[scala.Nothing],
-        onAnimationLoop: js.Function0[Unit]
-      ): js.Array[Animatable] = js.native
-      def beginDirectHierarchyAnimation(
-        target: Node,
-        directDescendantsOnly: Boolean,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: Boolean,
-        speedRatio: Double,
-        onAnimationEnd: js.UndefOr[scala.Nothing],
-        onAnimationLoop: js.Function0[Unit],
-        isAdditive: Boolean
-      ): js.Array[Animatable] = js.native
-      def beginDirectHierarchyAnimation(
-        target: Node,
-        directDescendantsOnly: Boolean,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: Boolean,
-        speedRatio: Double,
         onAnimationEnd: js.Function0[Unit]
       ): js.Array[Animatable] = js.native
       def beginDirectHierarchyAnimation(
@@ -977,18 +688,6 @@ object animatableMod {
         loop: Boolean,
         speedRatio: Double,
         onAnimationEnd: js.Function0[Unit],
-        onAnimationLoop: js.UndefOr[scala.Nothing],
-        isAdditive: Boolean
-      ): js.Array[Animatable] = js.native
-      def beginDirectHierarchyAnimation(
-        target: Node,
-        directDescendantsOnly: Boolean,
-        animations: js.Array[Animation],
-        from: Double,
-        to: Double,
-        loop: Boolean,
-        speedRatio: Double,
-        onAnimationEnd: js.Function0[Unit],
         onAnimationLoop: js.Function0[Unit]
       ): js.Array[Animatable] = js.native
       def beginDirectHierarchyAnimation(
@@ -1001,6 +700,302 @@ object animatableMod {
         speedRatio: Double,
         onAnimationEnd: js.Function0[Unit],
         onAnimationLoop: js.Function0[Unit],
+        isAdditive: Boolean
+      ): js.Array[Animatable] = js.native
+      def beginDirectHierarchyAnimation(
+        target: Node,
+        directDescendantsOnly: Boolean,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Boolean,
+        speedRatio: Double,
+        onAnimationEnd: js.Function0[Unit],
+        onAnimationLoop: Unit,
+        isAdditive: Boolean
+      ): js.Array[Animatable] = js.native
+      def beginDirectHierarchyAnimation(
+        target: Node,
+        directDescendantsOnly: Boolean,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Boolean,
+        speedRatio: Double,
+        onAnimationEnd: Unit,
+        onAnimationLoop: js.Function0[Unit]
+      ): js.Array[Animatable] = js.native
+      def beginDirectHierarchyAnimation(
+        target: Node,
+        directDescendantsOnly: Boolean,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Boolean,
+        speedRatio: Double,
+        onAnimationEnd: Unit,
+        onAnimationLoop: js.Function0[Unit],
+        isAdditive: Boolean
+      ): js.Array[Animatable] = js.native
+      def beginDirectHierarchyAnimation(
+        target: Node,
+        directDescendantsOnly: Boolean,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Boolean,
+        speedRatio: Double,
+        onAnimationEnd: Unit,
+        onAnimationLoop: Unit,
+        isAdditive: Boolean
+      ): js.Array[Animatable] = js.native
+      def beginDirectHierarchyAnimation(
+        target: Node,
+        directDescendantsOnly: Boolean,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Boolean,
+        speedRatio: Unit,
+        onAnimationEnd: js.Function0[Unit]
+      ): js.Array[Animatable] = js.native
+      def beginDirectHierarchyAnimation(
+        target: Node,
+        directDescendantsOnly: Boolean,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Boolean,
+        speedRatio: Unit,
+        onAnimationEnd: js.Function0[Unit],
+        onAnimationLoop: js.Function0[Unit]
+      ): js.Array[Animatable] = js.native
+      def beginDirectHierarchyAnimation(
+        target: Node,
+        directDescendantsOnly: Boolean,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Boolean,
+        speedRatio: Unit,
+        onAnimationEnd: js.Function0[Unit],
+        onAnimationLoop: js.Function0[Unit],
+        isAdditive: Boolean
+      ): js.Array[Animatable] = js.native
+      def beginDirectHierarchyAnimation(
+        target: Node,
+        directDescendantsOnly: Boolean,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Boolean,
+        speedRatio: Unit,
+        onAnimationEnd: js.Function0[Unit],
+        onAnimationLoop: Unit,
+        isAdditive: Boolean
+      ): js.Array[Animatable] = js.native
+      def beginDirectHierarchyAnimation(
+        target: Node,
+        directDescendantsOnly: Boolean,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Boolean,
+        speedRatio: Unit,
+        onAnimationEnd: Unit,
+        onAnimationLoop: js.Function0[Unit]
+      ): js.Array[Animatable] = js.native
+      def beginDirectHierarchyAnimation(
+        target: Node,
+        directDescendantsOnly: Boolean,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Boolean,
+        speedRatio: Unit,
+        onAnimationEnd: Unit,
+        onAnimationLoop: js.Function0[Unit],
+        isAdditive: Boolean
+      ): js.Array[Animatable] = js.native
+      def beginDirectHierarchyAnimation(
+        target: Node,
+        directDescendantsOnly: Boolean,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Boolean,
+        speedRatio: Unit,
+        onAnimationEnd: Unit,
+        onAnimationLoop: Unit,
+        isAdditive: Boolean
+      ): js.Array[Animatable] = js.native
+      def beginDirectHierarchyAnimation(
+        target: Node,
+        directDescendantsOnly: Boolean,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Unit,
+        speedRatio: Double
+      ): js.Array[Animatable] = js.native
+      def beginDirectHierarchyAnimation(
+        target: Node,
+        directDescendantsOnly: Boolean,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Unit,
+        speedRatio: Double,
+        onAnimationEnd: js.Function0[Unit]
+      ): js.Array[Animatable] = js.native
+      def beginDirectHierarchyAnimation(
+        target: Node,
+        directDescendantsOnly: Boolean,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Unit,
+        speedRatio: Double,
+        onAnimationEnd: js.Function0[Unit],
+        onAnimationLoop: js.Function0[Unit]
+      ): js.Array[Animatable] = js.native
+      def beginDirectHierarchyAnimation(
+        target: Node,
+        directDescendantsOnly: Boolean,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Unit,
+        speedRatio: Double,
+        onAnimationEnd: js.Function0[Unit],
+        onAnimationLoop: js.Function0[Unit],
+        isAdditive: Boolean
+      ): js.Array[Animatable] = js.native
+      def beginDirectHierarchyAnimation(
+        target: Node,
+        directDescendantsOnly: Boolean,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Unit,
+        speedRatio: Double,
+        onAnimationEnd: js.Function0[Unit],
+        onAnimationLoop: Unit,
+        isAdditive: Boolean
+      ): js.Array[Animatable] = js.native
+      def beginDirectHierarchyAnimation(
+        target: Node,
+        directDescendantsOnly: Boolean,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Unit,
+        speedRatio: Double,
+        onAnimationEnd: Unit,
+        onAnimationLoop: js.Function0[Unit]
+      ): js.Array[Animatable] = js.native
+      def beginDirectHierarchyAnimation(
+        target: Node,
+        directDescendantsOnly: Boolean,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Unit,
+        speedRatio: Double,
+        onAnimationEnd: Unit,
+        onAnimationLoop: js.Function0[Unit],
+        isAdditive: Boolean
+      ): js.Array[Animatable] = js.native
+      def beginDirectHierarchyAnimation(
+        target: Node,
+        directDescendantsOnly: Boolean,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Unit,
+        speedRatio: Double,
+        onAnimationEnd: Unit,
+        onAnimationLoop: Unit,
+        isAdditive: Boolean
+      ): js.Array[Animatable] = js.native
+      def beginDirectHierarchyAnimation(
+        target: Node,
+        directDescendantsOnly: Boolean,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Unit,
+        speedRatio: Unit,
+        onAnimationEnd: js.Function0[Unit]
+      ): js.Array[Animatable] = js.native
+      def beginDirectHierarchyAnimation(
+        target: Node,
+        directDescendantsOnly: Boolean,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Unit,
+        speedRatio: Unit,
+        onAnimationEnd: js.Function0[Unit],
+        onAnimationLoop: js.Function0[Unit]
+      ): js.Array[Animatable] = js.native
+      def beginDirectHierarchyAnimation(
+        target: Node,
+        directDescendantsOnly: Boolean,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Unit,
+        speedRatio: Unit,
+        onAnimationEnd: js.Function0[Unit],
+        onAnimationLoop: js.Function0[Unit],
+        isAdditive: Boolean
+      ): js.Array[Animatable] = js.native
+      def beginDirectHierarchyAnimation(
+        target: Node,
+        directDescendantsOnly: Boolean,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Unit,
+        speedRatio: Unit,
+        onAnimationEnd: js.Function0[Unit],
+        onAnimationLoop: Unit,
+        isAdditive: Boolean
+      ): js.Array[Animatable] = js.native
+      def beginDirectHierarchyAnimation(
+        target: Node,
+        directDescendantsOnly: Boolean,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Unit,
+        speedRatio: Unit,
+        onAnimationEnd: Unit,
+        onAnimationLoop: js.Function0[Unit]
+      ): js.Array[Animatable] = js.native
+      def beginDirectHierarchyAnimation(
+        target: Node,
+        directDescendantsOnly: Boolean,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Unit,
+        speedRatio: Unit,
+        onAnimationEnd: Unit,
+        onAnimationLoop: js.Function0[Unit],
+        isAdditive: Boolean
+      ): js.Array[Animatable] = js.native
+      def beginDirectHierarchyAnimation(
+        target: Node,
+        directDescendantsOnly: Boolean,
+        animations: js.Array[Animation],
+        from: Double,
+        to: Double,
+        loop: Unit,
+        speedRatio: Unit,
+        onAnimationEnd: Unit,
+        onAnimationLoop: Unit,
         isAdditive: Boolean
       ): js.Array[Animatable] = js.native
       

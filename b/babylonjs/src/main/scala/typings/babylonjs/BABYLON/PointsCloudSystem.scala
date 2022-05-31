@@ -2,75 +2,76 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PointsCloudSystem extends IDisposable {
+trait PointsCloudSystem
+  extends StObject
+     with IDisposable {
   
-  var _addParticle: js.Any = js.native
+  /* private */ var _addParticle: js.Any = js.native
   
-  var _alwaysVisible: js.Any = js.native
+  /* private */ var _alwaysVisible: js.Any = js.native
   
   /**
     * @hidden
     */
-  var _buildMesh: js.Any = js.native
+  /* private */ var _buildMesh: js.Any = js.native
   
-  var _calculateDensity: js.Any = js.native
+  /* private */ var _calculateDensity: js.Any = js.native
   
-  var _colorFromTexture: js.Any = js.native
+  /* private */ var _colorFromTexture: js.Any = js.native
   
-  var _colors: js.Any = js.native
+  /* private */ var _colors: js.Any = js.native
   
-  var _colors32: js.Any = js.native
+  /* private */ var _colors32: js.Any = js.native
   
-  var _computeBoundingBox: js.Any = js.native
+  /* private */ var _computeBoundingBox: js.Any = js.native
   
-  var _computeParticleColor: js.Any = js.native
+  /* private */ var _computeParticleColor: js.Any = js.native
   
-  var _computeParticleRotation: js.Any = js.native
+  /* private */ var _computeParticleRotation: js.Any = js.native
   
-  var _computeParticleTexture: js.Any = js.native
+  /* private */ var _computeParticleTexture: js.Any = js.native
   
-  var _getColorIndicesForCoord: js.Any = js.native
+  /* private */ var _getColorIndicesForCoord: js.Any = js.native
   
-  var _groupCounter: js.Any = js.native
+  /* private */ var _groupCounter: js.Any = js.native
   
-  var _groups: js.Any = js.native
+  /* private */ var _groups: js.Any = js.native
   
-  var _indices: js.Any = js.native
+  /* private */ var _indices: js.Any = js.native
   
-  var _indices32: js.Any = js.native
+  /* private */ var _indices32: js.Any = js.native
   
-  var _isReady: js.Any = js.native
+  /* private */ var _isReady: js.Any = js.native
   
-  var _isVisibilityBoxLocked: js.Any = js.native
+  /* private */ var _isVisibilityBoxLocked: js.Any = js.native
   
-  var _normals: js.Any = js.native
+  /* private */ var _normals: js.Any = js.native
   
-  var _positions: js.Any = js.native
+  /* private */ var _positions: js.Any = js.native
   
-  var _positions32: js.Any = js.native
+  /* private */ var _positions32: js.Any = js.native
   
-  var _promises: js.Any = js.native
+  /* private */ var _promises: js.Any = js.native
   
-  var _randomUnitVector: js.Any = js.native
+  /* private */ var _randomUnitVector: js.Any = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
-  var _setPointsColorOrUV: js.Any = js.native
+  /* private */ var _setPointsColorOrUV: js.Any = js.native
   
   /**
     * @hidden
     */
   var _size: Double = js.native
   
-  var _updatable: js.Any = js.native
+  /* private */ var _updatable: js.Any = js.native
   
-  var _uvs: js.Any = js.native
+  /* private */ var _uvs: js.Any = js.native
   
-  var _uvs32: js.Any = js.native
+  /* private */ var _uvs32: js.Any = js.native
   
   /**
     * Adds points to the PCS in random positions within a unit sphere
@@ -91,23 +92,17 @@ trait PointsCloudSystem extends IDisposable {
     * @returns the number of groups in the system
     */
   def addSurfacePoints(mesh: Mesh, nb: Double): Double = js.native
-  def addSurfacePoints(
-    mesh: Mesh,
-    nb: Double,
-    colorWith: js.UndefOr[scala.Nothing],
-    color: js.UndefOr[scala.Nothing],
-    range: Double
-  ): Double = js.native
-  def addSurfacePoints(mesh: Mesh, nb: Double, colorWith: js.UndefOr[scala.Nothing], color: Double): Double = js.native
-  def addSurfacePoints(mesh: Mesh, nb: Double, colorWith: js.UndefOr[scala.Nothing], color: Double, range: Double): Double = js.native
-  def addSurfacePoints(mesh: Mesh, nb: Double, colorWith: js.UndefOr[scala.Nothing], color: Color4): Double = js.native
-  def addSurfacePoints(mesh: Mesh, nb: Double, colorWith: js.UndefOr[scala.Nothing], color: Color4, range: Double): Double = js.native
   def addSurfacePoints(mesh: Mesh, nb: Double, colorWith: Double): Double = js.native
-  def addSurfacePoints(mesh: Mesh, nb: Double, colorWith: Double, color: js.UndefOr[scala.Nothing], range: Double): Double = js.native
   def addSurfacePoints(mesh: Mesh, nb: Double, colorWith: Double, color: Double): Double = js.native
   def addSurfacePoints(mesh: Mesh, nb: Double, colorWith: Double, color: Double, range: Double): Double = js.native
+  def addSurfacePoints(mesh: Mesh, nb: Double, colorWith: Double, color: Unit, range: Double): Double = js.native
   def addSurfacePoints(mesh: Mesh, nb: Double, colorWith: Double, color: Color4): Double = js.native
   def addSurfacePoints(mesh: Mesh, nb: Double, colorWith: Double, color: Color4, range: Double): Double = js.native
+  def addSurfacePoints(mesh: Mesh, nb: Double, colorWith: Unit, color: Double): Double = js.native
+  def addSurfacePoints(mesh: Mesh, nb: Double, colorWith: Unit, color: Double, range: Double): Double = js.native
+  def addSurfacePoints(mesh: Mesh, nb: Double, colorWith: Unit, color: Unit, range: Double): Double = js.native
+  def addSurfacePoints(mesh: Mesh, nb: Double, colorWith: Unit, color: Color4): Double = js.native
+  def addSurfacePoints(mesh: Mesh, nb: Double, colorWith: Unit, color: Color4, range: Double): Double = js.native
   
   /**
     * Adds points to the PCS inside the model shape
@@ -119,23 +114,17 @@ trait PointsCloudSystem extends IDisposable {
     * @returns the number of groups in the system
     */
   def addVolumePoints(mesh: Mesh, nb: Double): Double = js.native
-  def addVolumePoints(
-    mesh: Mesh,
-    nb: Double,
-    colorWith: js.UndefOr[scala.Nothing],
-    color: js.UndefOr[scala.Nothing],
-    range: Double
-  ): Double = js.native
-  def addVolumePoints(mesh: Mesh, nb: Double, colorWith: js.UndefOr[scala.Nothing], color: Double): Double = js.native
-  def addVolumePoints(mesh: Mesh, nb: Double, colorWith: js.UndefOr[scala.Nothing], color: Double, range: Double): Double = js.native
-  def addVolumePoints(mesh: Mesh, nb: Double, colorWith: js.UndefOr[scala.Nothing], color: Color4): Double = js.native
-  def addVolumePoints(mesh: Mesh, nb: Double, colorWith: js.UndefOr[scala.Nothing], color: Color4, range: Double): Double = js.native
   def addVolumePoints(mesh: Mesh, nb: Double, colorWith: Double): Double = js.native
-  def addVolumePoints(mesh: Mesh, nb: Double, colorWith: Double, color: js.UndefOr[scala.Nothing], range: Double): Double = js.native
   def addVolumePoints(mesh: Mesh, nb: Double, colorWith: Double, color: Double): Double = js.native
   def addVolumePoints(mesh: Mesh, nb: Double, colorWith: Double, color: Double, range: Double): Double = js.native
+  def addVolumePoints(mesh: Mesh, nb: Double, colorWith: Double, color: Unit, range: Double): Double = js.native
   def addVolumePoints(mesh: Mesh, nb: Double, colorWith: Double, color: Color4): Double = js.native
   def addVolumePoints(mesh: Mesh, nb: Double, colorWith: Double, color: Color4, range: Double): Double = js.native
+  def addVolumePoints(mesh: Mesh, nb: Double, colorWith: Unit, color: Double): Double = js.native
+  def addVolumePoints(mesh: Mesh, nb: Double, colorWith: Unit, color: Double, range: Double): Double = js.native
+  def addVolumePoints(mesh: Mesh, nb: Double, colorWith: Unit, color: Unit, range: Double): Double = js.native
+  def addVolumePoints(mesh: Mesh, nb: Double, colorWith: Unit, color: Color4): Double = js.native
+  def addVolumePoints(mesh: Mesh, nb: Double, colorWith: Unit, color: Color4, range: Double): Double = js.native
   
   /**
     * This will be called  by `setParticles()` after all the other treatments and just before the actual mesh update.
@@ -146,13 +135,13 @@ trait PointsCloudSystem extends IDisposable {
     * @param update the boolean update value actually passed to setParticles()
     */
   def afterUpdateParticles(): Unit = js.native
-  def afterUpdateParticles(start: js.UndefOr[scala.Nothing], stop: js.UndefOr[scala.Nothing], update: Boolean): Unit = js.native
-  def afterUpdateParticles(start: js.UndefOr[scala.Nothing], stop: Double): Unit = js.native
-  def afterUpdateParticles(start: js.UndefOr[scala.Nothing], stop: Double, update: Boolean): Unit = js.native
   def afterUpdateParticles(start: Double): Unit = js.native
-  def afterUpdateParticles(start: Double, stop: js.UndefOr[scala.Nothing], update: Boolean): Unit = js.native
   def afterUpdateParticles(start: Double, stop: Double): Unit = js.native
   def afterUpdateParticles(start: Double, stop: Double, update: Boolean): Unit = js.native
+  def afterUpdateParticles(start: Double, stop: Unit, update: Boolean): Unit = js.native
+  def afterUpdateParticles(start: Unit, stop: Double): Unit = js.native
+  def afterUpdateParticles(start: Unit, stop: Double, update: Boolean): Unit = js.native
+  def afterUpdateParticles(start: Unit, stop: Unit, update: Boolean): Unit = js.native
   
   /**
     * This will be called before any other treatment by `setParticles()` and will be passed three parameters.
@@ -162,13 +151,13 @@ trait PointsCloudSystem extends IDisposable {
     * @param update the boolean update value actually passed to setParticles()
     */
   def beforeUpdateParticles(): Unit = js.native
-  def beforeUpdateParticles(start: js.UndefOr[scala.Nothing], stop: js.UndefOr[scala.Nothing], update: Boolean): Unit = js.native
-  def beforeUpdateParticles(start: js.UndefOr[scala.Nothing], stop: Double): Unit = js.native
-  def beforeUpdateParticles(start: js.UndefOr[scala.Nothing], stop: Double, update: Boolean): Unit = js.native
   def beforeUpdateParticles(start: Double): Unit = js.native
-  def beforeUpdateParticles(start: Double, stop: js.UndefOr[scala.Nothing], update: Boolean): Unit = js.native
   def beforeUpdateParticles(start: Double, stop: Double): Unit = js.native
   def beforeUpdateParticles(start: Double, stop: Double, update: Boolean): Unit = js.native
+  def beforeUpdateParticles(start: Double, stop: Unit, update: Boolean): Unit = js.native
+  def beforeUpdateParticles(start: Unit, stop: Double): Unit = js.native
+  def beforeUpdateParticles(start: Unit, stop: Double, update: Boolean): Unit = js.native
+  def beforeUpdateParticles(start: Unit, stop: Unit, update: Boolean): Unit = js.native
   
   /**
     * Builds the PCS underlying mesh. Returns a standard Mesh.
@@ -285,13 +274,13 @@ trait PointsCloudSystem extends IDisposable {
     * @returns the PCS.
     */
   def setParticles(): PointsCloudSystem = js.native
-  def setParticles(start: js.UndefOr[scala.Nothing], end: js.UndefOr[scala.Nothing], update: Boolean): PointsCloudSystem = js.native
-  def setParticles(start: js.UndefOr[scala.Nothing], end: Double): PointsCloudSystem = js.native
-  def setParticles(start: js.UndefOr[scala.Nothing], end: Double, update: Boolean): PointsCloudSystem = js.native
   def setParticles(start: Double): PointsCloudSystem = js.native
-  def setParticles(start: Double, end: js.UndefOr[scala.Nothing], update: Boolean): PointsCloudSystem = js.native
   def setParticles(start: Double, end: Double): PointsCloudSystem = js.native
   def setParticles(start: Double, end: Double, update: Boolean): PointsCloudSystem = js.native
+  def setParticles(start: Double, end: Unit, update: Boolean): PointsCloudSystem = js.native
+  def setParticles(start: Unit, end: Double): PointsCloudSystem = js.native
+  def setParticles(start: Unit, end: Double, update: Boolean): PointsCloudSystem = js.native
+  def setParticles(start: Unit, end: Unit, update: Boolean): PointsCloudSystem = js.native
   
   /**
     * Visibility helper : Sets the size of a visibility box, this sets the underlying mesh bounding box.

@@ -2,22 +2,23 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GroundMesh extends Mesh {
+trait GroundMesh
+  extends StObject
+     with Mesh {
   
-  var _computeHeightQuads: js.Any = js.native
+  /* private */ var _computeHeightQuads: js.Any = js.native
   
-  var _getFacetAt: js.Any = js.native
+  /* private */ var _getFacetAt: js.Any = js.native
   
   /** @hidden */
   var _height: Double = js.native
   
-  var _heightQuads: js.Any = js.native
+  /* private */ var _heightQuads: js.Any = js.native
   
-  var _initHeightQuads: js.Any = js.native
+  /* private */ var _initHeightQuads: js.Any = js.native
   
   /** @hidden */
   var _maxX: Double = js.native

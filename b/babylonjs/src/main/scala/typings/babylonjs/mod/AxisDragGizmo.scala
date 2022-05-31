@@ -3,7 +3,6 @@ package typings.babylonjs.mod
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "AxisDragGizmo")
@@ -21,7 +20,7 @@ class AxisDragGizmo protected ()
   def this(dragAxis: typings.babylonjs.mathVectorMod.Vector3, color: typings.babylonjs.mathColorMod.Color3) = this()
   def this(
     dragAxis: typings.babylonjs.mathVectorMod.Vector3,
-    color: js.UndefOr[scala.Nothing],
+    color: Unit,
     gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
   ) = this()
   def this(
@@ -31,20 +30,20 @@ class AxisDragGizmo protected ()
   ) = this()
   def this(
     dragAxis: typings.babylonjs.mathVectorMod.Vector3,
-    color: js.UndefOr[scala.Nothing],
-    gizmoLayer: js.UndefOr[scala.Nothing],
+    color: Unit,
+    gizmoLayer: Unit,
     parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]
   ) = this()
   def this(
     dragAxis: typings.babylonjs.mathVectorMod.Vector3,
-    color: js.UndefOr[scala.Nothing],
+    color: Unit,
     gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer,
     parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]
   ) = this()
   def this(
     dragAxis: typings.babylonjs.mathVectorMod.Vector3,
     color: typings.babylonjs.mathColorMod.Color3,
-    gizmoLayer: js.UndefOr[scala.Nothing],
+    gizmoLayer: Unit,
     parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]
   ) = this()
   def this(
@@ -55,69 +54,91 @@ class AxisDragGizmo protected ()
   ) = this()
   def this(
     dragAxis: typings.babylonjs.mathVectorMod.Vector3,
-    color: js.UndefOr[scala.Nothing],
-    gizmoLayer: js.UndefOr[scala.Nothing],
-    parent: js.UndefOr[Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]],
+    color: Unit,
+    gizmoLayer: Unit,
+    parent: Unit,
     thickness: Double
   ) = this()
   def this(
     dragAxis: typings.babylonjs.mathVectorMod.Vector3,
-    color: js.UndefOr[scala.Nothing],
+    color: Unit,
+    gizmoLayer: Unit,
+    parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo],
+    thickness: Double
+  ) = this()
+  def this(
+    dragAxis: typings.babylonjs.mathVectorMod.Vector3,
+    color: Unit,
     gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer,
-    parent: js.UndefOr[Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]],
+    parent: Unit,
+    thickness: Double
+  ) = this()
+  def this(
+    dragAxis: typings.babylonjs.mathVectorMod.Vector3,
+    color: Unit,
+    gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer,
+    parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo],
     thickness: Double
   ) = this()
   def this(
     dragAxis: typings.babylonjs.mathVectorMod.Vector3,
     color: typings.babylonjs.mathColorMod.Color3,
-    gizmoLayer: js.UndefOr[scala.Nothing],
-    parent: js.UndefOr[Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]],
+    gizmoLayer: Unit,
+    parent: Unit,
+    thickness: Double
+  ) = this()
+  def this(
+    dragAxis: typings.babylonjs.mathVectorMod.Vector3,
+    color: typings.babylonjs.mathColorMod.Color3,
+    gizmoLayer: Unit,
+    parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo],
     thickness: Double
   ) = this()
   def this(
     dragAxis: typings.babylonjs.mathVectorMod.Vector3,
     color: typings.babylonjs.mathColorMod.Color3,
     gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer,
-    parent: js.UndefOr[Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]],
+    parent: Unit,
+    thickness: Double
+  ) = this()
+  def this(
+    dragAxis: typings.babylonjs.mathVectorMod.Vector3,
+    color: typings.babylonjs.mathColorMod.Color3,
+    gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer,
+    parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo],
     thickness: Double
   ) = this()
 }
 /* static members */
 object AxisDragGizmo {
   
-  /** @hidden */
-  @JSImport("babylonjs", "AxisDragGizmo._CreateArrow")
+  @JSImport("babylonjs", "AxisDragGizmo")
   @js.native
-  def _CreateArrow(
+  val ^ : js.Any = js.native
+  
+  /** @hidden */
+  inline def _CreateArrow(
     scene: typings.babylonjs.sceneMod.Scene,
     material: typings.babylonjs.standardMaterialMod.StandardMaterial
-  ): typings.babylonjs.transformNodeMod.TransformNode = js.native
-  @JSImport("babylonjs", "AxisDragGizmo._CreateArrow")
-  @js.native
-  def _CreateArrow(
-    scene: typings.babylonjs.sceneMod.Scene,
-    material: typings.babylonjs.standardMaterialMod.StandardMaterial,
-    thickness: js.UndefOr[scala.Nothing],
-    isCollider: Boolean
-  ): typings.babylonjs.transformNodeMod.TransformNode = js.native
-  @JSImport("babylonjs", "AxisDragGizmo._CreateArrow")
-  @js.native
-  def _CreateArrow(
+  ): typings.babylonjs.transformNodeMod.TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrow")(scene.asInstanceOf[js.Any], material.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.transformNodeMod.TransformNode]
+  inline def _CreateArrow(
     scene: typings.babylonjs.sceneMod.Scene,
     material: typings.babylonjs.standardMaterialMod.StandardMaterial,
     thickness: Double
-  ): typings.babylonjs.transformNodeMod.TransformNode = js.native
-  @JSImport("babylonjs", "AxisDragGizmo._CreateArrow")
-  @js.native
-  def _CreateArrow(
+  ): typings.babylonjs.transformNodeMod.TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrow")(scene.asInstanceOf[js.Any], material.asInstanceOf[js.Any], thickness.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.transformNodeMod.TransformNode]
+  inline def _CreateArrow(
     scene: typings.babylonjs.sceneMod.Scene,
     material: typings.babylonjs.standardMaterialMod.StandardMaterial,
     thickness: Double,
     isCollider: Boolean
-  ): typings.babylonjs.transformNodeMod.TransformNode = js.native
+  ): typings.babylonjs.transformNodeMod.TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrow")(scene.asInstanceOf[js.Any], material.asInstanceOf[js.Any], thickness.asInstanceOf[js.Any], isCollider.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.transformNodeMod.TransformNode]
+  inline def _CreateArrow(
+    scene: typings.babylonjs.sceneMod.Scene,
+    material: typings.babylonjs.standardMaterialMod.StandardMaterial,
+    thickness: Unit,
+    isCollider: Boolean
+  ): typings.babylonjs.transformNodeMod.TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrow")(scene.asInstanceOf[js.Any], material.asInstanceOf[js.Any], thickness.asInstanceOf[js.Any], isCollider.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.transformNodeMod.TransformNode]
   
   /** @hidden */
-  @JSImport("babylonjs", "AxisDragGizmo._CreateArrowInstance")
-  @js.native
-  def _CreateArrowInstance(scene: typings.babylonjs.sceneMod.Scene, arrow: typings.babylonjs.transformNodeMod.TransformNode): typings.babylonjs.transformNodeMod.TransformNode = js.native
+  inline def _CreateArrowInstance(scene: typings.babylonjs.sceneMod.Scene, arrow: typings.babylonjs.transformNodeMod.TransformNode): typings.babylonjs.transformNodeMod.TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrowInstance")(scene.asInstanceOf[js.Any], arrow.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.transformNodeMod.TransformNode]
 }

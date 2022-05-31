@@ -1,7 +1,5 @@
 package typings.reactMdForm
 
-import typings.react.mod.ChangeEvent
-import typings.react.mod.EventHandler
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
@@ -30,6 +28,7 @@ import typings.reactMdForm.textFieldAddonMod.TextFieldAddonProps
 import typings.reactMdForm.textFieldContainerMod.TextFieldContainerProps
 import typings.reactMdForm.textFieldTextFieldMod.TextFieldProps
 import typings.reactMdForm.toggleContainerMod.ToggleContainerProps
+import typings.reactMdForm.useCheckedMod.ChangeEventHandler
 import typings.reactMdForm.useCheckedMod.SetChecked
 import typings.reactMdForm.useChoiceMod.InputElement
 import typings.reactMdForm.useChoiceMod.SetValue
@@ -147,13 +146,10 @@ object mod {
   
   inline def isListboxOptionProps(option: ListboxOption): /* is @react-md/form.@react-md/form/types/select/utils.ListboxOptionProps */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isListboxOptionProps")(option.asInstanceOf[js.Any]).asInstanceOf[/* is @react-md/form.@react-md/form/types/select/utils.ListboxOptionProps */ Boolean]
   
-  inline def useChecked(defaultChecked: js.Function0[Boolean]): js.Tuple3[Boolean, typings.reactMdForm.useCheckedMod.ChangeEventHandler, SetChecked] = ^.asInstanceOf[js.Dynamic].applyDynamic("useChecked")(defaultChecked.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[Boolean, typings.reactMdForm.useCheckedMod.ChangeEventHandler, SetChecked]]
-  inline def useChecked(
-    defaultChecked: js.Function0[Boolean],
-    onChange: typings.reactMdForm.useCheckedMod.ChangeEventHandler
-  ): js.Tuple3[Boolean, typings.reactMdForm.useCheckedMod.ChangeEventHandler, SetChecked] = (^.asInstanceOf[js.Dynamic].applyDynamic("useChecked")(defaultChecked.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Boolean, typings.reactMdForm.useCheckedMod.ChangeEventHandler, SetChecked]]
-  inline def useChecked(defaultChecked: Boolean): js.Tuple3[Boolean, typings.reactMdForm.useCheckedMod.ChangeEventHandler, SetChecked] = ^.asInstanceOf[js.Dynamic].applyDynamic("useChecked")(defaultChecked.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[Boolean, typings.reactMdForm.useCheckedMod.ChangeEventHandler, SetChecked]]
-  inline def useChecked(defaultChecked: Boolean, onChange: typings.reactMdForm.useCheckedMod.ChangeEventHandler): js.Tuple3[Boolean, typings.reactMdForm.useCheckedMod.ChangeEventHandler, SetChecked] = (^.asInstanceOf[js.Dynamic].applyDynamic("useChecked")(defaultChecked.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Boolean, typings.reactMdForm.useCheckedMod.ChangeEventHandler, SetChecked]]
+  inline def useChecked(defaultChecked: js.Function0[Boolean]): js.Tuple3[Boolean, ChangeEventHandler, SetChecked] = ^.asInstanceOf[js.Dynamic].applyDynamic("useChecked")(defaultChecked.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[Boolean, ChangeEventHandler, SetChecked]]
+  inline def useChecked(defaultChecked: js.Function0[Boolean], onChange: ChangeEventHandler): js.Tuple3[Boolean, ChangeEventHandler, SetChecked] = (^.asInstanceOf[js.Dynamic].applyDynamic("useChecked")(defaultChecked.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Boolean, ChangeEventHandler, SetChecked]]
+  inline def useChecked(defaultChecked: Boolean): js.Tuple3[Boolean, ChangeEventHandler, SetChecked] = ^.asInstanceOf[js.Dynamic].applyDynamic("useChecked")(defaultChecked.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[Boolean, ChangeEventHandler, SetChecked]]
+  inline def useChecked(defaultChecked: Boolean, onChange: ChangeEventHandler): js.Tuple3[Boolean, ChangeEventHandler, SetChecked] = (^.asInstanceOf[js.Dynamic].applyDynamic("useChecked")(defaultChecked.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Boolean, ChangeEventHandler, SetChecked]]
   
   inline def useChoice[E /* <: InputElement */](defaultValue: String): js.Tuple3[String, typings.reactMdForm.useChoiceMod.ChangeEventHandler[E], SetValue[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useChoice")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[String, typings.reactMdForm.useChoiceMod.ChangeEventHandler[E], SetValue[String]]]
   inline def useChoice[E /* <: InputElement */](defaultValue: String, onChange: typings.reactMdForm.useChoiceMod.ChangeEventHandler[E]): js.Tuple3[String, typings.reactMdForm.useChoiceMod.ChangeEventHandler[E], SetValue[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useChoice")(defaultValue.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[String, typings.reactMdForm.useChoiceMod.ChangeEventHandler[E], SetValue[String]]]
@@ -203,7 +199,4 @@ object mod {
   ): IndeterminateCheckedReturnValue[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useIndeterminateChecked")(values.asInstanceOf[js.Any], defaultCheckedValues.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any])).asInstanceOf[IndeterminateCheckedReturnValue[T]]
   
   inline def useSelectState[T /* <: String */](defaultValue: DefaultValue[T]): ReturnValue[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSelectState")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[T]]
-  
-  @js.native
-  trait ChangeEventHandler[E /* <: InputElement */] extends EventHandler[ChangeEvent[E | HTMLInputElement]]
 }

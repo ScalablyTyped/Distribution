@@ -2,12 +2,13 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.babylonjs.BABYLON.IMotorEnabledJoint because var conflicts: physicsJoint. Inlined setMotor, setMotor, setMotor, setMotor, setMotor, setMotor, setMotor, setMotor, setLimit, setLimit, setLimit, setLimit */ @js.native
-trait MotorEnabledJoint extends PhysicsJoint {
+trait MotorEnabledJoint
+  extends StObject
+     with PhysicsJoint {
   
   /**
     * Set the motor's limits.
@@ -22,9 +23,9 @@ trait MotorEnabledJoint extends PhysicsJoint {
     * @param motorIndex The index of the motor
     */
   def setLimit(upperLimit: Double): Unit = js.native
-  def setLimit(upperLimit: Double, lowerLimit: js.UndefOr[scala.Nothing], motorIndex: Double): Unit = js.native
   def setLimit(upperLimit: Double, lowerLimit: Double): Unit = js.native
   def setLimit(upperLimit: Double, lowerLimit: Double, motorIndex: Double): Unit = js.native
+  def setLimit(upperLimit: Double, lowerLimit: Unit, motorIndex: Double): Unit = js.native
   
   /**
     * Set the motor values.
@@ -39,11 +40,11 @@ trait MotorEnabledJoint extends PhysicsJoint {
     * @param motorIndex The index of the motor
     */
   def setMotor(): Unit = js.native
-  def setMotor(force: js.UndefOr[scala.Nothing], maxForce: js.UndefOr[scala.Nothing], motorIndex: Double): Unit = js.native
-  def setMotor(force: js.UndefOr[scala.Nothing], maxForce: Double): Unit = js.native
-  def setMotor(force: js.UndefOr[scala.Nothing], maxForce: Double, motorIndex: Double): Unit = js.native
   def setMotor(force: Double): Unit = js.native
-  def setMotor(force: Double, maxForce: js.UndefOr[scala.Nothing], motorIndex: Double): Unit = js.native
   def setMotor(force: Double, maxForce: Double): Unit = js.native
   def setMotor(force: Double, maxForce: Double, motorIndex: Double): Unit = js.native
+  def setMotor(force: Double, maxForce: Unit, motorIndex: Double): Unit = js.native
+  def setMotor(force: Unit, maxForce: Double): Unit = js.native
+  def setMotor(force: Unit, maxForce: Double, motorIndex: Double): Unit = js.native
+  def setMotor(force: Unit, maxForce: Unit, motorIndex: Double): Unit = js.native
 }

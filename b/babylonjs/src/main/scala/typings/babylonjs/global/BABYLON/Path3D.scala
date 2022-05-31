@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.Path3D")
 @js.native
 class Path3D protected ()
-  extends typings.babylonjs.BABYLON.Path3D {
+  extends StObject
+     with typings.babylonjs.BABYLON.Path3D {
   /**
     * new Path3D(path, normal, raw)
     * Creates a Path3D. A Path3D is a logical math object, so not a mesh.
@@ -35,7 +35,7 @@ class Path3D protected ()
     * an array of Vector3, the curve axis of the Path3D
     */
   path: js.Array[typings.babylonjs.BABYLON.Vector3],
-    firstNormal: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Vector3]],
+    firstNormal: Unit,
     raw: Boolean
   ) = this()
   def this(
@@ -43,8 +43,16 @@ class Path3D protected ()
     * an array of Vector3, the curve axis of the Path3D
     */
   path: js.Array[typings.babylonjs.BABYLON.Vector3],
-    firstNormal: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Vector3]],
-    raw: js.UndefOr[scala.Nothing],
+    firstNormal: Nullable[typings.babylonjs.BABYLON.Vector3],
+    raw: Boolean
+  ) = this()
+  def this(
+    /**
+    * an array of Vector3, the curve axis of the Path3D
+    */
+  path: js.Array[typings.babylonjs.BABYLON.Vector3],
+    firstNormal: Unit,
+    raw: Boolean,
     alignTangentsWithPath: Boolean
   ) = this()
   def this(
@@ -52,8 +60,26 @@ class Path3D protected ()
     * an array of Vector3, the curve axis of the Path3D
     */
   path: js.Array[typings.babylonjs.BABYLON.Vector3],
-    firstNormal: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Vector3]],
+    firstNormal: Unit,
+    raw: Unit,
+    alignTangentsWithPath: Boolean
+  ) = this()
+  def this(
+    /**
+    * an array of Vector3, the curve axis of the Path3D
+    */
+  path: js.Array[typings.babylonjs.BABYLON.Vector3],
+    firstNormal: Nullable[typings.babylonjs.BABYLON.Vector3],
     raw: Boolean,
+    alignTangentsWithPath: Boolean
+  ) = this()
+  def this(
+    /**
+    * an array of Vector3, the curve axis of the Path3D
+    */
+  path: js.Array[typings.babylonjs.BABYLON.Vector3],
+    firstNormal: Nullable[typings.babylonjs.BABYLON.Vector3],
+    raw: Unit,
     alignTangentsWithPath: Boolean
   ) = this()
 }

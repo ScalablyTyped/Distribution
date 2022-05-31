@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.TextureAssetTask")
 @js.native
 class TextureAssetTask protected ()
-  extends typings.babylonjs.BABYLON.TextureAssetTask {
+  extends StObject
+     with typings.babylonjs.BABYLON.TextureAssetTask {
   /**
     * Creates a new TextureAssetTask object
     * @param name defines the name of the task
@@ -53,24 +53,6 @@ class TextureAssetTask protected ()
     /**
     * Defines if mipmap should not be generated (default is false)
     */
-  noMipmap: js.UndefOr[scala.Nothing],
-    /**
-    * Defines if texture must be inverted on Y axis (default is true)
-    */
-  invertY: Boolean
-  ) = this()
-  def this(
-    /**
-    * Defines the name of the task
-    */
-  name: String,
-    /**
-    * Defines the location of the file to load
-    */
-  url: String,
-    /**
-    * Defines if mipmap should not be generated (default is false)
-    */
   noMipmap: Boolean,
     /**
     * Defines if texture must be inverted on Y axis (default is true)
@@ -89,15 +71,11 @@ class TextureAssetTask protected ()
     /**
     * Defines if mipmap should not be generated (default is false)
     */
-  noMipmap: js.UndefOr[scala.Nothing],
+  noMipmap: Unit,
     /**
     * Defines if texture must be inverted on Y axis (default is true)
     */
-  invertY: js.UndefOr[scala.Nothing],
-    /**
-    * Defines the sampling mode to use (default is Texture.TRILINEAR_SAMPLINGMODE)
-    */
-  samplingMode: Double
+  invertY: Boolean
   ) = this()
   def this(
     /**
@@ -111,7 +89,7 @@ class TextureAssetTask protected ()
     /**
     * Defines if mipmap should not be generated (default is false)
     */
-  noMipmap: js.UndefOr[scala.Nothing],
+  noMipmap: Boolean,
     /**
     * Defines if texture must be inverted on Y axis (default is true)
     */
@@ -137,7 +115,7 @@ class TextureAssetTask protected ()
     /**
     * Defines if texture must be inverted on Y axis (default is true)
     */
-  invertY: js.UndefOr[scala.Nothing],
+  invertY: Unit,
     /**
     * Defines the sampling mode to use (default is Texture.TRILINEAR_SAMPLINGMODE)
     */
@@ -155,7 +133,7 @@ class TextureAssetTask protected ()
     /**
     * Defines if mipmap should not be generated (default is false)
     */
-  noMipmap: Boolean,
+  noMipmap: Unit,
     /**
     * Defines if texture must be inverted on Y axis (default is true)
     */
@@ -165,4 +143,32 @@ class TextureAssetTask protected ()
     */
   samplingMode: Double
   ) = this()
+  def this(
+    /**
+    * Defines the name of the task
+    */
+  name: String,
+    /**
+    * Defines the location of the file to load
+    */
+  url: String,
+    /**
+    * Defines if mipmap should not be generated (default is false)
+    */
+  noMipmap: Unit,
+    /**
+    * Defines if texture must be inverted on Y axis (default is true)
+    */
+  invertY: Unit,
+    /**
+    * Defines the sampling mode to use (default is Texture.TRILINEAR_SAMPLINGMODE)
+    */
+  samplingMode: Double
+  ) = this()
+  
+  /**
+    * Gets the loaded texture
+    */
+  /* CompleteClass */
+  var texture: typings.babylonjs.BABYLON.Texture = js.native
 }

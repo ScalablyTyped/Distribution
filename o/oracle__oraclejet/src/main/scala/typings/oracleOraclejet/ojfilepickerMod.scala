@@ -110,12 +110,15 @@ import typings.oracleOraclejet.oracleOraclejetStrings.transitionstart
 import typings.oracleOraclejet.oracleOraclejetStrings.volumechange
 import typings.oracleOraclejet.oracleOraclejetStrings.waiting
 import typings.oracleOraclejet.oracleOraclejetStrings.wheel
+import typings.std.AddEventListenerOptions
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.CustomEvent
 import typings.std.DragEvent
 import typings.std.ErrorEvent
 import typings.std.Event
+import typings.std.EventListenerOptions
+import typings.std.EventListenerOrEventListenerObject
 import typings.std.EventTarget
 import typings.std.FileList
 import typings.std.FocusEvent
@@ -132,48 +135,50 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ojfilepickerMod {
   
-  @js.native
   trait FileUploadTransport extends StObject {
     
-    def flush(): Unit = js.native
+    def flush(): Unit
     
-    def queue(fileList: FileList): js.Array[ProgressItem] = js.native
+    def queue(fileList: FileList): js.Array[ProgressItem]
   }
   object FileUploadTransport {
     
-    @scala.inline
-    def apply(flush: () => Unit, queue: FileList => js.Array[ProgressItem]): FileUploadTransport = {
+    inline def apply(flush: () => Unit, queue: FileList => js.Array[ProgressItem]): FileUploadTransport = {
       val __obj = js.Dynamic.literal(flush = js.Any.fromFunction0(flush), queue = js.Any.fromFunction1(queue))
       __obj.asInstanceOf[FileUploadTransport]
     }
     
-    @scala.inline
-    implicit class FileUploadTransportMutableBuilder[Self <: FileUploadTransport] (val x: Self) extends AnyVal {
+    extension [Self <: FileUploadTransport](x: Self) {
       
-      @scala.inline
-      def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+      inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setQueue(value: FileList => js.Array[ProgressItem]): Self = StObject.set(x, "queue", js.Any.fromFunction1(value))
+      inline def setQueue(value: FileList => js.Array[ProgressItem]): Self = StObject.set(x, "queue", js.Any.fromFunction1(value))
     }
   }
   
   @js.native
-  trait ojFilePicker extends JetElement[ojFilePickerSettableProperties] {
+  trait ojFilePicker
+    extends StObject
+       with JetElement[ojFilePickerSettableProperties] {
     
     var accept: js.Array[String] | Null = js.native
     
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     def addEventListener(
       `type`: selectOnChanged,
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[auto | click | drop | clickAndDrop], 
-          _
+          js.Any
         ]
     ): Unit = js.native
     def addEventListener(
@@ -181,470 +186,499 @@ object ojfilepickerMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[auto | click | drop | clickAndDrop], 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
     def addEventListener(
       `type`: selectionModeChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[multiple | single], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[multiple | single], js.Any]
     ): Unit = js.native
     def addEventListener(
       `type`: selectionModeChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[multiple | single], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[multiple | single], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ UIEvent, _]): Unit = js.native
+    def addEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ UIEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_abort(
       `type`: abort,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ UIEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ UIEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_acceptChanged(
       `type`: acceptChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String] | Null], _]
+      listener: js.ThisFunction1[
+          /* this */ HTMLElement, 
+          /* ev */ JetElementCustomEvent[js.Array[String] | Null], 
+          js.Any
+        ]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_acceptChanged(
       `type`: acceptChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String] | Null], _],
+      listener: js.ThisFunction1[
+          /* this */ HTMLElement, 
+          /* ev */ JetElementCustomEvent[js.Array[String] | Null], 
+          js.Any
+        ],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_animationcancel(
       `type`: animationcancel,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ AnimationEvent, _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ AnimationEvent, js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_animationcancel(
       `type`: animationcancel,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ AnimationEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ AnimationEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_animationend(
       `type`: animationend,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ AnimationEvent, _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ AnimationEvent, js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_animationend(
       `type`: animationend,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ AnimationEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ AnimationEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_animationiteration(
       `type`: animationiteration,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ AnimationEvent, _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ AnimationEvent, js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_animationiteration(
       `type`: animationiteration,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ AnimationEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ AnimationEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_animationstart(
       `type`: animationstart,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ AnimationEvent, _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ AnimationEvent, js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_animationstart(
       `type`: animationstart,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ AnimationEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ AnimationEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_auxclick(`type`: auxclick, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
+    def addEventListener_auxclick(`type`: auxclick, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_auxclick(
       `type`: auxclick,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_blur(`type`: blur, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, _]): Unit = js.native
+    def addEventListener_blur(`type`: blur, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_blur(
       `type`: blur,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_cancel(`type`: cancel, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_cancel(`type`: cancel, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_cancel(
       `type`: cancel,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_canplay(`type`: canplay, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_canplay(`type`: canplay, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_canplay(
       `type`: canplay,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_canplaythrough(`type`: canplaythrough, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_canplaythrough(`type`: canplaythrough, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_canplaythrough(
       `type`: canplaythrough,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_change(`type`: change, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_change(`type`: change, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_change(
       `type`: change,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_click(`type`: click, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
+    def addEventListener_click(`type`: click, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_click(
       `type`: click,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_close(`type`: close, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_close(`type`: close, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_close(
       `type`: close,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
-    @JSName("addEventListener")
-    def addEventListener_contextmenu(`type`: contextmenu, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_contextmenu(
       `type`: contextmenu,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any]
+    ): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_contextmenu(
+      `type`: contextmenu,
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_copy(`type`: copy, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ClipboardEvent, _]): Unit = js.native
+    def addEventListener_copy(`type`: copy, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ClipboardEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_copy(
       `type`: copy,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ClipboardEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ClipboardEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_cuechange(`type`: cuechange, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_cuechange(`type`: cuechange, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_cuechange(
       `type`: cuechange,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_cut(`type`: cut, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ClipboardEvent, _]): Unit = js.native
+    def addEventListener_cut(`type`: cut, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ClipboardEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_cut(
       `type`: cut,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ClipboardEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ClipboardEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_dblclick(`type`: dblclick, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
+    def addEventListener_dblclick(`type`: dblclick, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_dblclick(
       `type`: dblclick,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_drag(`type`: drag, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, _]): Unit = js.native
+    def addEventListener_drag(`type`: drag, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_drag(
       `type`: drag,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_dragend(`type`: dragend, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, _]): Unit = js.native
+    def addEventListener_dragend(`type`: dragend, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_dragend(
       `type`: dragend,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_dragenter(`type`: dragenter, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, _]): Unit = js.native
+    def addEventListener_dragenter(`type`: dragenter, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_dragenter(
       `type`: dragenter,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_dragexit(`type`: dragexit, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_dragexit(`type`: dragexit, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_dragexit(
       `type`: dragexit,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_dragleave(`type`: dragleave, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, _]): Unit = js.native
+    def addEventListener_dragleave(`type`: dragleave, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_dragleave(
       `type`: dragleave,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_dragover(`type`: dragover, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, _]): Unit = js.native
+    def addEventListener_dragover(`type`: dragover, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_dragover(
       `type`: dragover,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_dragstart(`type`: dragstart, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, _]): Unit = js.native
+    def addEventListener_dragstart(`type`: dragstart, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_dragstart(
       `type`: dragstart,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_drop(`type`: drop, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, _]): Unit = js.native
+    def addEventListener_drop(`type`: drop, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_drop(
       `type`: drop,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_durationchange(`type`: durationchange, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_durationchange(`type`: durationchange, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_durationchange(
       `type`: durationchange,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_emptied(`type`: emptied, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_emptied(`type`: emptied, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_emptied(
       `type`: emptied,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_ended(`type`: ended, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_ended(`type`: ended, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_ended(
       `type`: ended,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ErrorEvent, _]): Unit = js.native
+    def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ErrorEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_error(
       `type`: error,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ErrorEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ErrorEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_focus(`type`: focus, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, _]): Unit = js.native
+    def addEventListener_focus(`type`: focus, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_focus(
       `type`: focus,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_focusin(`type`: focusin, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, _]): Unit = js.native
+    def addEventListener_focusin(`type`: focusin, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_focusin(
       `type`: focusin,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_focusout(`type`: focusout, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, _]): Unit = js.native
+    def addEventListener_focusout(`type`: focusout, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_focusout(
       `type`: focusout,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
-    @JSName("addEventListener")
-    def addEventListener_fullscreenchange(`type`: fullscreenchange, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_fullscreenchange(
       `type`: fullscreenchange,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
-      useCapture: Boolean
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_fullscreenerror(`type`: fullscreenerror, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_fullscreenchange(
+      `type`: fullscreenchange,
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
+      useCapture: Boolean
+    ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_fullscreenerror(
       `type`: fullscreenerror,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
+    ): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_fullscreenerror(
+      `type`: fullscreenerror,
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_gotpointercapture(
       `type`: gotpointercapture,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_gotpointercapture(
       `type`: gotpointercapture,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_input(`type`: input, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_input(`type`: input, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_input(
       `type`: input,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_invalid(`type`: invalid, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_invalid(`type`: invalid, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_invalid(
       `type`: invalid,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
-    @JSName("addEventListener")
-    def addEventListener_keydown(`type`: keydown, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ KeyboardEvent, _]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_keydown(
       `type`: keydown,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ KeyboardEvent, _],
-      useCapture: Boolean
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ KeyboardEvent, js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_keypress(`type`: keypress, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ KeyboardEvent, _]): Unit = js.native
+    def addEventListener_keydown(
+      `type`: keydown,
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ KeyboardEvent, js.Any],
+      useCapture: Boolean
+    ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_keypress(
       `type`: keypress,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ KeyboardEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ KeyboardEvent, js.Any]
+    ): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_keypress(
+      `type`: keypress,
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ KeyboardEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_keyup(`type`: keyup, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ KeyboardEvent, _]): Unit = js.native
+    def addEventListener_keyup(`type`: keyup, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ KeyboardEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_keyup(
       `type`: keyup,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ KeyboardEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ KeyboardEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_load(`type`: load, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_load(`type`: load, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_load(
       `type`: load,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_loadeddata(`type`: loadeddata, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_loadeddata(`type`: loadeddata, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_loadeddata(
       `type`: loadeddata,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_loadedmetadata(`type`: loadedmetadata, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_loadedmetadata(`type`: loadedmetadata, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_loadedmetadata(
       `type`: loadedmetadata,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_loadstart(`type`: loadstart, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_loadstart(`type`: loadstart, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_loadstart(
       `type`: loadstart,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_lostpointercapture(
       `type`: lostpointercapture,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_lostpointercapture(
       `type`: lostpointercapture,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_mousedown(`type`: mousedown, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
+    def addEventListener_mousedown(`type`: mousedown, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_mousedown(
       `type`: mousedown,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
-    @JSName("addEventListener")
-    def addEventListener_mouseenter(`type`: mouseenter, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_mouseenter(
       `type`: mouseenter,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _],
-      useCapture: Boolean
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_mouseleave(`type`: mouseleave, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
+    def addEventListener_mouseenter(
+      `type`: mouseenter,
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any],
+      useCapture: Boolean
+    ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_mouseleave(
       `type`: mouseleave,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any]
+    ): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_mouseleave(
+      `type`: mouseleave,
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_mousemove(`type`: mousemove, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
+    def addEventListener_mousemove(`type`: mousemove, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_mousemove(
       `type`: mousemove,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_mouseout(`type`: mouseout, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
+    def addEventListener_mouseout(`type`: mouseout, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_mouseout(
       `type`: mouseout,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_mouseover(`type`: mouseover, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
+    def addEventListener_mouseover(`type`: mouseover, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_mouseover(
       `type`: mouseover,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_mouseup(`type`: mouseup, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
+    def addEventListener_mouseup(`type`: mouseup, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_mouseup(
       `type`: mouseup,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
@@ -653,7 +687,7 @@ object ojfilepickerMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojfilepickerMod.ojFilePicker.ojSelect, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -662,341 +696,371 @@ object ojfilepickerMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojfilepickerMod.ojFilePicker.ojSelect, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_paste(`type`: paste, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ClipboardEvent, _]): Unit = js.native
+    def addEventListener_paste(`type`: paste, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ClipboardEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_paste(
       `type`: paste,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ClipboardEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ClipboardEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_pause(`type`: pause, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_pause(`type`: pause, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_pause(
       `type`: pause,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_play(`type`: play, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_play(`type`: play, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_play(
       `type`: play,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_playing(`type`: playing, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_playing(`type`: playing, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_playing(
       `type`: playing,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_pointercancel(
       `type`: pointercancel,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_pointercancel(
       `type`: pointercancel,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
-    @JSName("addEventListener")
-    def addEventListener_pointerdown(`type`: pointerdown, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, _]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_pointerdown(
       `type`: pointerdown,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, _],
-      useCapture: Boolean
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_pointerenter(`type`: pointerenter, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, _]): Unit = js.native
+    def addEventListener_pointerdown(
+      `type`: pointerdown,
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any],
+      useCapture: Boolean
+    ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_pointerenter(
       `type`: pointerenter,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, _],
-      useCapture: Boolean
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_pointerleave(`type`: pointerleave, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, _]): Unit = js.native
+    def addEventListener_pointerenter(
+      `type`: pointerenter,
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any],
+      useCapture: Boolean
+    ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_pointerleave(
       `type`: pointerleave,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, _],
-      useCapture: Boolean
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_pointermove(`type`: pointermove, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, _]): Unit = js.native
+    def addEventListener_pointerleave(
+      `type`: pointerleave,
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any],
+      useCapture: Boolean
+    ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_pointermove(
       `type`: pointermove,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, _],
-      useCapture: Boolean
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_pointerout(`type`: pointerout, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, _]): Unit = js.native
+    def addEventListener_pointermove(
+      `type`: pointermove,
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any],
+      useCapture: Boolean
+    ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_pointerout(
       `type`: pointerout,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, _],
-      useCapture: Boolean
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_pointerover(`type`: pointerover, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, _]): Unit = js.native
+    def addEventListener_pointerout(
+      `type`: pointerout,
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any],
+      useCapture: Boolean
+    ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_pointerover(
       `type`: pointerover,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, _],
-      useCapture: Boolean
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_pointerup(`type`: pointerup, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, _]): Unit = js.native
+    def addEventListener_pointerover(
+      `type`: pointerover,
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any],
+      useCapture: Boolean
+    ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_pointerup(
       `type`: pointerup,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any]
+    ): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_pointerup(
+      `type`: pointerup,
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_progress(
       `type`: progress,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_progress(
       `type`: progress,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_ratechange(`type`: ratechange, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_ratechange(`type`: ratechange, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_ratechange(
       `type`: ratechange,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_reset(`type`: reset, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_reset(`type`: reset, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_reset(
       `type`: reset,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_resize(`type`: resize, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ UIEvent, _]): Unit = js.native
+    def addEventListener_resize(`type`: resize, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ UIEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_resize(
       `type`: resize,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ UIEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ UIEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_scroll(`type`: scroll, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_scroll(`type`: scroll, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_scroll(
       `type`: scroll,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_securitypolicyviolation(
       `type`: securitypolicyviolation,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ SecurityPolicyViolationEvent, _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ SecurityPolicyViolationEvent, js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_securitypolicyviolation(
       `type`: securitypolicyviolation,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ SecurityPolicyViolationEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ SecurityPolicyViolationEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_seeked(`type`: seeked, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_seeked(`type`: seeked, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_seeked(
       `type`: seeked,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_seeking(`type`: seeking, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_seeking(`type`: seeking, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_seeking(
       `type`: seeking,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_select(`type`: select, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_select(`type`: select, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_select(
       `type`: select,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
-    @JSName("addEventListener")
-    def addEventListener_selectionchange(`type`: selectionchange, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_selectionchange(
       `type`: selectionchange,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
+    ): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_selectionchange(
+      `type`: selectionchange,
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_selectstart(`type`: selectstart, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_selectstart(`type`: selectstart, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_selectstart(
       `type`: selectstart,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_stalled(`type`: stalled, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_stalled(`type`: stalled, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_stalled(
       `type`: stalled,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_submit(`type`: submit, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_submit(`type`: submit, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_submit(
       `type`: submit,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_suspend(`type`: suspend, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_suspend(`type`: suspend, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_suspend(
       `type`: suspend,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_timeupdate(`type`: timeupdate, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_timeupdate(`type`: timeupdate, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_timeupdate(
       `type`: timeupdate,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_toggle(`type`: toggle, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_toggle(`type`: toggle, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_toggle(
       `type`: toggle,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
-    @JSName("addEventListener")
-    def addEventListener_touchcancel(`type`: touchcancel, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, _]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_touchcancel(
       `type`: touchcancel,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, js.Any]
+    ): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_touchcancel(
+      `type`: touchcancel,
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_touchend(`type`: touchend, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, _]): Unit = js.native
+    def addEventListener_touchend(`type`: touchend, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_touchend(
       `type`: touchend,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_touchmove(`type`: touchmove, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, _]): Unit = js.native
+    def addEventListener_touchmove(`type`: touchmove, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_touchmove(
       `type`: touchmove,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
-    @JSName("addEventListener")
-    def addEventListener_touchstart(`type`: touchstart_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, _]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_touchstart(
       `type`: touchstart_,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, js.Any]
+    ): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_touchstart(
+      `type`: touchstart_,
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_transitioncancel(
       `type`: transitioncancel,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TransitionEvent, _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TransitionEvent, js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_transitioncancel(
       `type`: transitioncancel,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TransitionEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TransitionEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_transitionend(
       `type`: transitionend,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TransitionEvent, _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TransitionEvent, js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_transitionend(
       `type`: transitionend,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TransitionEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TransitionEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_transitionrun(
       `type`: transitionrun,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TransitionEvent, _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TransitionEvent, js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_transitionrun(
       `type`: transitionrun,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TransitionEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TransitionEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_transitionstart(
       `type`: transitionstart,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TransitionEvent, _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TransitionEvent, js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_transitionstart(
       `type`: transitionstart,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TransitionEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TransitionEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_volumechange(`type`: volumechange, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_volumechange(`type`: volumechange, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_volumechange(
       `type`: volumechange,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_waiting(`type`: waiting, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_waiting(`type`: waiting, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_waiting(
       `type`: waiting,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_wheel(`type`: wheel, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ WheelEvent, _]): Unit = js.native
+    def addEventListener_wheel(`type`: wheel, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ WheelEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_wheel(
       `type`: wheel,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ WheelEvent, _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ WheelEvent, js.Any],
       useCapture: Boolean
     ): Unit = js.native
     
@@ -1008,13 +1072,20 @@ object ojfilepickerMod {
     @JSName("getProperty")
     def getProperty_selectionMode(property: selectionMode): multiple | single = js.native
     
-    var onAcceptChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String] | Null], _]) | Null = js.native
+    var onAcceptChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String] | Null], js.Any]) | Null = js.native
     
-    var onOjSelect: (js.Function1[/* event */ typings.oracleOraclejet.ojfilepickerMod.ojFilePicker.ojSelect, _]) | Null = js.native
+    var onOjSelect: (js.Function1[/* event */ typings.oracleOraclejet.ojfilepickerMod.ojFilePicker.ojSelect, js.Any]) | Null = js.native
     
-    var onSelectOnChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | click | drop | clickAndDrop], _]) | Null = js.native
+    var onSelectOnChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | click | drop | clickAndDrop], js.Any]) | Null = js.native
     
-    var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[multiple | single], _]) | Null = js.native
+    var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[multiple | single], js.Any]) | Null = js.native
+    
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
     
     var selectOn: auto | click | drop | clickAndDrop = js.native
     
@@ -1039,21 +1110,21 @@ object ojfilepickerMod {
     type ojSelect = CustomEvent[Files]
   }
   
-  @js.native
-  trait ojFilePickerEventMap extends HTMLElementEventMap {
+  trait ojFilePickerEventMap
+    extends StObject
+       with HTMLElementEventMap {
     
-    var acceptChanged: JetElementCustomEvent[js.Array[String] | Null] = js.native
+    var acceptChanged: JetElementCustomEvent[js.Array[String] | Null]
     
-    var ojSelect: typings.oracleOraclejet.ojfilepickerMod.ojFilePicker.ojSelect = js.native
+    var ojSelect: typings.oracleOraclejet.ojfilepickerMod.ojFilePicker.ojSelect
     
-    var selectOnChanged: JetElementCustomEvent[auto | click | drop | clickAndDrop] = js.native
+    var selectOnChanged: JetElementCustomEvent[auto | click | drop | clickAndDrop]
     
-    var selectionModeChanged: JetElementCustomEvent[multiple | single] = js.native
+    var selectionModeChanged: JetElementCustomEvent[multiple | single]
   }
   object ojFilePickerEventMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: UIEvent,
       acceptChanged: JetElementCustomEvent[js.Array[String] | Null],
       animationcancel: AnimationEvent,
@@ -1155,105 +1226,84 @@ object ojfilepickerMod {
       __obj.asInstanceOf[ojFilePickerEventMap]
     }
     
-    @scala.inline
-    implicit class ojFilePickerEventMapMutableBuilder[Self <: ojFilePickerEventMap] (val x: Self) extends AnyVal {
+    extension [Self <: ojFilePickerEventMap](x: Self) {
       
-      @scala.inline
-      def setAcceptChanged(value: JetElementCustomEvent[js.Array[String] | Null]): Self = StObject.set(x, "acceptChanged", value.asInstanceOf[js.Any])
+      inline def setAcceptChanged(value: JetElementCustomEvent[js.Array[String] | Null]): Self = StObject.set(x, "acceptChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjSelect(value: typings.oracleOraclejet.ojfilepickerMod.ojFilePicker.ojSelect): Self = StObject.set(x, "ojSelect", value.asInstanceOf[js.Any])
+      inline def setOjSelect(value: typings.oracleOraclejet.ojfilepickerMod.ojFilePicker.ojSelect): Self = StObject.set(x, "ojSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectOnChanged(value: JetElementCustomEvent[auto | click | drop | clickAndDrop]): Self = StObject.set(x, "selectOnChanged", value.asInstanceOf[js.Any])
+      inline def setSelectOnChanged(value: JetElementCustomEvent[auto | click | drop | clickAndDrop]): Self = StObject.set(x, "selectOnChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionModeChanged(value: JetElementCustomEvent[multiple | single]): Self = StObject.set(x, "selectionModeChanged", value.asInstanceOf[js.Any])
+      inline def setSelectionModeChanged(value: JetElementCustomEvent[multiple | single]): Self = StObject.set(x, "selectionModeChanged", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait ojFilePickerSettableProperties extends JetSettableProperties {
+  trait ojFilePickerSettableProperties
+    extends StObject
+       with JetSettableProperties {
     
-    var accept: js.Array[String] | Null = js.native
+    var accept: js.Array[String] | Null
     
-    var selectOn: auto | click | drop | clickAndDrop = js.native
+    var selectOn: auto | click | drop | clickAndDrop
     
-    var selectionMode: multiple | single = js.native
+    var selectionMode: multiple | single
   }
   object ojFilePickerSettableProperties {
     
-    @scala.inline
-    def apply(selectOn: auto | click | drop | clickAndDrop, selectionMode: multiple | single): ojFilePickerSettableProperties = {
-      val __obj = js.Dynamic.literal(selectOn = selectOn.asInstanceOf[js.Any], selectionMode = selectionMode.asInstanceOf[js.Any])
+    inline def apply(selectOn: auto | click | drop | clickAndDrop, selectionMode: multiple | single): ojFilePickerSettableProperties = {
+      val __obj = js.Dynamic.literal(selectOn = selectOn.asInstanceOf[js.Any], selectionMode = selectionMode.asInstanceOf[js.Any], accept = null)
       __obj.asInstanceOf[ojFilePickerSettableProperties]
     }
     
-    @scala.inline
-    implicit class ojFilePickerSettablePropertiesMutableBuilder[Self <: ojFilePickerSettableProperties] (val x: Self) extends AnyVal {
+    extension [Self <: ojFilePickerSettableProperties](x: Self) {
       
-      @scala.inline
-      def setAccept(value: js.Array[String]): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
+      inline def setAccept(value: js.Array[String]): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcceptNull: Self = StObject.set(x, "accept", null)
+      inline def setAcceptNull: Self = StObject.set(x, "accept", null)
       
-      @scala.inline
-      def setAcceptVarargs(value: String*): Self = StObject.set(x, "accept", js.Array(value :_*))
+      inline def setAcceptVarargs(value: String*): Self = StObject.set(x, "accept", js.Array(value :_*))
       
-      @scala.inline
-      def setSelectOn(value: auto | click | drop | clickAndDrop): Self = StObject.set(x, "selectOn", value.asInstanceOf[js.Any])
+      inline def setSelectOn(value: auto | click | drop | clickAndDrop): Self = StObject.set(x, "selectOn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionMode(value: multiple | single): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
+      inline def setSelectionMode(value: multiple | single): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojfilepicker.ojFilePickerSettableProperties> */
-  @js.native
   trait ojFilePickerSettablePropertiesLenient
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var accept: js.UndefOr[js.Array[String] | Null] = js.native
+    var accept: js.UndefOr[js.Array[String] | Null] = js.undefined
     
-    var selectOn: js.UndefOr[auto | click | drop | clickAndDrop] = js.native
+    var selectOn: js.UndefOr[auto | click | drop | clickAndDrop] = js.undefined
     
-    var selectionMode: js.UndefOr[multiple | single] = js.native
+    var selectionMode: js.UndefOr[multiple | single] = js.undefined
   }
   object ojFilePickerSettablePropertiesLenient {
     
-    @scala.inline
-    def apply(): ojFilePickerSettablePropertiesLenient = {
+    inline def apply(): ojFilePickerSettablePropertiesLenient = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ojFilePickerSettablePropertiesLenient]
     }
     
-    @scala.inline
-    implicit class ojFilePickerSettablePropertiesLenientMutableBuilder[Self <: ojFilePickerSettablePropertiesLenient] (val x: Self) extends AnyVal {
+    extension [Self <: ojFilePickerSettablePropertiesLenient](x: Self) {
       
-      @scala.inline
-      def setAccept(value: js.Array[String]): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
+      inline def setAccept(value: js.Array[String]): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcceptNull: Self = StObject.set(x, "accept", null)
+      inline def setAcceptNull: Self = StObject.set(x, "accept", null)
       
-      @scala.inline
-      def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
+      inline def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
       
-      @scala.inline
-      def setAcceptVarargs(value: String*): Self = StObject.set(x, "accept", js.Array(value :_*))
+      inline def setAcceptVarargs(value: String*): Self = StObject.set(x, "accept", js.Array(value :_*))
       
-      @scala.inline
-      def setSelectOn(value: auto | click | drop | clickAndDrop): Self = StObject.set(x, "selectOn", value.asInstanceOf[js.Any])
+      inline def setSelectOn(value: auto | click | drop | clickAndDrop): Self = StObject.set(x, "selectOn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectOnUndefined: Self = StObject.set(x, "selectOn", js.undefined)
+      inline def setSelectOnUndefined: Self = StObject.set(x, "selectOn", js.undefined)
       
-      @scala.inline
-      def setSelectionMode(value: multiple | single): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
+      inline def setSelectionMode(value: multiple | single): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
+      inline def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
     }
   }
 }

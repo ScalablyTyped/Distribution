@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.Material")
 @js.native
 class Material protected ()
-  extends typings.babylonjs.BABYLON.Material {
+  extends StObject
+     with typings.babylonjs.BABYLON.Material {
   /**
     * Creates a material instance
     * @param name defines the name of the material
@@ -18,6 +18,12 @@ class Material protected ()
     */
   def this(name: String, scene: typings.babylonjs.BABYLON.Scene) = this()
   def this(name: String, scene: typings.babylonjs.BABYLON.Scene, doNotAdd: Boolean) = this()
+  
+  /**
+    * Array of animations
+    */
+  /* CompleteClass */
+  var animations: Nullable[js.Array[typings.babylonjs.BABYLON.Animation]] = js.native
 }
 /* static members */
 object Material {
@@ -148,9 +154,7 @@ object Material {
     * @param rootUrl defines the root URL to use to load textures
     * @returns a new material
     */
-  @JSGlobal("BABYLON.Material.Parse")
-  @js.native
-  def Parse(parsedMaterial: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): Nullable[typings.babylonjs.BABYLON.Material] = js.native
+  inline def Parse(parsedMaterial: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): Nullable[typings.babylonjs.BABYLON.Material] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedMaterial.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Material]]
   
   /**
     * Returns the point fill mode
@@ -223,8 +227,7 @@ object Material {
   @JSGlobal("BABYLON.Material._FresnelAndMiscDirtyCallBack")
   @js.native
   def _FresnelAndMiscDirtyCallBack: js.Any = js.native
-  @scala.inline
-  def _FresnelAndMiscDirtyCallBack_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_FresnelAndMiscDirtyCallBack")(x.asInstanceOf[js.Any])
+  inline def _FresnelAndMiscDirtyCallBack_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_FresnelAndMiscDirtyCallBack")(x.asInstanceOf[js.Any])
   
   @JSGlobal("BABYLON.Material._FresnelDirtyCallBack")
   @js.native
@@ -253,8 +256,7 @@ object Material {
   @JSGlobal("BABYLON.Material._TextureAndMiscDirtyCallBack")
   @js.native
   def _TextureAndMiscDirtyCallBack: js.Any = js.native
-  @scala.inline
-  def _TextureAndMiscDirtyCallBack_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TextureAndMiscDirtyCallBack")(x.asInstanceOf[js.Any])
+  inline def _TextureAndMiscDirtyCallBack_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TextureAndMiscDirtyCallBack")(x.asInstanceOf[js.Any])
   
   @JSGlobal("BABYLON.Material._TextureDirtyCallBack")
   @js.native

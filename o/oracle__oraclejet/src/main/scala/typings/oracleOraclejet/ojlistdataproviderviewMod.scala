@@ -8,20 +8,23 @@ import typings.oracleOraclejet.ojdataproviderMod.SortCriterion
 import typings.std.EventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ojlistdataproviderviewMod {
   
   @JSImport("@oracle/oraclejet/ojlistdataproviderview", JSImport.Namespace)
   @js.native
-  class ^[K, D, Kin, Din] protected () extends ListDataProviderView[K, D, Kin, Din] {
+  class ^[K, D, Kin, Din] protected ()
+    extends StObject
+       with ListDataProviderView[K, D, Kin, Din] {
     def this(dataProvider: DataProvider[K, D]) = this()
     def this(dataProvider: DataProvider[K, D], options: Attributes[Kin, D, K, Din]) = this()
   }
   
   @js.native
-  trait ListDataProviderView[K, D, Kin, Din] extends DataProvider[K, D] {
+  trait ListDataProviderView[K, D, Kin, Din]
+    extends StObject
+       with DataProvider[K, D] {
     
     def addEventListener(eventType: String, listener: EventListener): Unit = js.native
     

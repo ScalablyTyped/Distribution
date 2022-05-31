@@ -6,7 +6,6 @@ import typings.babylonjs.postProcessMod.PostProcess
 import typings.babylonjs.postProcessMod.PostProcessOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anaglyphPostProcessMod {
@@ -27,21 +26,8 @@ object anaglyphPostProcessMod {
     def this(name: String, options: PostProcessOptions, rigCameras: js.Array[Camera]) = this()
     def this(name: String, options: Double, rigCameras: js.Array[Camera], samplingMode: Double) = this()
     def this(name: String, options: PostProcessOptions, rigCameras: js.Array[Camera], samplingMode: Double) = this()
-    def this(
-      name: String,
-      options: Double,
-      rigCameras: js.Array[Camera],
-      samplingMode: js.UndefOr[scala.Nothing],
-      engine: Engine
-    ) = this()
     def this(name: String, options: Double, rigCameras: js.Array[Camera], samplingMode: Double, engine: Engine) = this()
-    def this(
-      name: String,
-      options: PostProcessOptions,
-      rigCameras: js.Array[Camera],
-      samplingMode: js.UndefOr[scala.Nothing],
-      engine: Engine
-    ) = this()
+    def this(name: String, options: Double, rigCameras: js.Array[Camera], samplingMode: Unit, engine: Engine) = this()
     def this(
       name: String,
       options: PostProcessOptions,
@@ -51,26 +37,17 @@ object anaglyphPostProcessMod {
     ) = this()
     def this(
       name: String,
-      options: Double,
+      options: PostProcessOptions,
       rigCameras: js.Array[Camera],
-      samplingMode: js.UndefOr[scala.Nothing],
-      engine: js.UndefOr[scala.Nothing],
-      reusable: Boolean
-    ) = this()
-    def this(
-      name: String,
-      options: Double,
-      rigCameras: js.Array[Camera],
-      samplingMode: js.UndefOr[scala.Nothing],
-      engine: Engine,
-      reusable: Boolean
+      samplingMode: Unit,
+      engine: Engine
     ) = this()
     def this(
       name: String,
       options: Double,
       rigCameras: js.Array[Camera],
       samplingMode: Double,
-      engine: js.UndefOr[scala.Nothing],
+      engine: Unit,
       reusable: Boolean
     ) = this()
     def this(
@@ -83,17 +60,17 @@ object anaglyphPostProcessMod {
     ) = this()
     def this(
       name: String,
-      options: PostProcessOptions,
+      options: Double,
       rigCameras: js.Array[Camera],
-      samplingMode: js.UndefOr[scala.Nothing],
-      engine: js.UndefOr[scala.Nothing],
+      samplingMode: Unit,
+      engine: Unit,
       reusable: Boolean
     ) = this()
     def this(
       name: String,
-      options: PostProcessOptions,
+      options: Double,
       rigCameras: js.Array[Camera],
-      samplingMode: js.UndefOr[scala.Nothing],
+      samplingMode: Unit,
       engine: Engine,
       reusable: Boolean
     ) = this()
@@ -102,7 +79,7 @@ object anaglyphPostProcessMod {
       options: PostProcessOptions,
       rigCameras: js.Array[Camera],
       samplingMode: Double,
-      engine: js.UndefOr[scala.Nothing],
+      engine: Unit,
       reusable: Boolean
     ) = this()
     def this(
@@ -110,10 +87,26 @@ object anaglyphPostProcessMod {
       options: PostProcessOptions,
       rigCameras: js.Array[Camera],
       samplingMode: Double,
+      engine: Engine,
+      reusable: Boolean
+    ) = this()
+    def this(
+      name: String,
+      options: PostProcessOptions,
+      rigCameras: js.Array[Camera],
+      samplingMode: Unit,
+      engine: Unit,
+      reusable: Boolean
+    ) = this()
+    def this(
+      name: String,
+      options: PostProcessOptions,
+      rigCameras: js.Array[Camera],
+      samplingMode: Unit,
       engine: Engine,
       reusable: Boolean
     ) = this()
     
-    var _passedProcess: js.Any = js.native
+    /* private */ var _passedProcess: js.Any = js.native
   }
 }

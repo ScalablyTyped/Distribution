@@ -26,24 +26,23 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ojButtonEventMap[SP /* <: ojButtonSettableProperties */] extends baseComponentEventMap[SP] {
+trait ojButtonEventMap[SP /* <: ojButtonSettableProperties */]
+  extends StObject
+     with baseComponentEventMap[SP] {
   
-  var chromingChanged: JetElementCustomEvent[full | half | outlined] = js.native
+  var chromingChanged: JetElementCustomEvent[full | half | outlined]
   
-  var disabledChanged: JetElementCustomEvent[Boolean] = js.native
+  var disabledChanged: JetElementCustomEvent[Boolean]
   
-  var displayChanged: JetElementCustomEvent[all | icons] = js.native
+  var displayChanged: JetElementCustomEvent[all | icons]
   
-  var ojAction: typings.oracleOraclejet.ojbuttonMod.ojButton.ojAction = js.native
+  var ojAction: typings.oracleOraclejet.ojbuttonMod.ojButton.ojAction
 }
 object ojButtonEventMap {
   
-  @scala.inline
-  def apply[SP /* <: ojButtonSettableProperties */](
+  inline def apply[SP /* <: ojButtonSettableProperties */](
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,
@@ -146,19 +145,14 @@ object ojButtonEventMap {
     __obj.asInstanceOf[ojButtonEventMap[SP]]
   }
   
-  @scala.inline
-  implicit class ojButtonEventMapMutableBuilder[Self <: ojButtonEventMap[_], SP /* <: ojButtonSettableProperties */] (val x: Self with ojButtonEventMap[SP]) extends AnyVal {
+  extension [Self <: ojButtonEventMap[?], SP /* <: ojButtonSettableProperties */](x: Self & ojButtonEventMap[SP]) {
     
-    @scala.inline
-    def setChromingChanged(value: JetElementCustomEvent[full | half | outlined]): Self = StObject.set(x, "chromingChanged", value.asInstanceOf[js.Any])
+    inline def setChromingChanged(value: JetElementCustomEvent[full | half | outlined]): Self = StObject.set(x, "chromingChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "disabledChanged", value.asInstanceOf[js.Any])
+    inline def setDisabledChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "disabledChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayChanged(value: JetElementCustomEvent[all | icons]): Self = StObject.set(x, "displayChanged", value.asInstanceOf[js.Any])
+    inline def setDisplayChanged(value: JetElementCustomEvent[all | icons]): Self = StObject.set(x, "displayChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOjAction(value: ojAction): Self = StObject.set(x, "ojAction", value.asInstanceOf[js.Any])
+    inline def setOjAction(value: ojAction): Self = StObject.set(x, "ojAction", value.asInstanceOf[js.Any])
   }
 }

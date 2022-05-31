@@ -3,11 +3,12 @@ package typings.babylonjs.BABYLON
 import typings.babylonjs.anon.PartialIMaterialCompilati
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Material extends IAnimatable {
+trait Material
+  extends StObject
+     with IAnimatable {
   
   /**
     * Processes to execute after binding the material to a mesh
@@ -19,32 +20,32 @@ trait Material extends IAnimatable {
   /**
     * The alpha value of the material
     */
-  var _alpha: Double = js.native
+  /* protected */ var _alpha: Double = js.native
   
   /**
     * Stores the value of the alpha mode
     */
-  var _alphaMode: js.Any = js.native
+  /* private */ var _alphaMode: js.Any = js.native
   
   /**
     * Specifies if back face culling is enabled
     */
-  var _backFaceCulling: Boolean = js.native
+  /* protected */ var _backFaceCulling: Boolean = js.native
   
   /**
     * Specifies if the color write state should be cached
     */
-  var _cachedColorWriteState: js.Any = js.native
+  /* private */ var _cachedColorWriteState: js.Any = js.native
   
   /**
     * Specifies if the depth function state should be cached
     */
-  var _cachedDepthFunctionState: js.Any = js.native
+  /* private */ var _cachedDepthFunctionState: js.Any = js.native
   
   /**
     * Specifies if the depth write state should be cached
     */
-  var _cachedDepthWriteState: js.Any = js.native
+  /* private */ var _cachedDepthWriteState: js.Any = js.native
   
   /**
     * Returns true if alpha blending should be disabled.
@@ -60,17 +61,17 @@ trait Material extends IAnimatable {
   /**
     * Stores the fill mode state
     */
-  var _fillMode: js.Any = js.native
+  /* private */ var _fillMode: js.Any = js.native
   
   /**
     * Stores the state specifing if fog should be enabled
     */
-  var _fogEnabled: js.Any = js.native
+  /* private */ var _fogEnabled: js.Any = js.native
   
   /**
     * Enforces alpha test in opaque or blend mode in order to improve the performances of some situations.
     */
-  var _forceAlphaTest: Boolean = js.native
+  /* protected */ var _forceAlphaTest: Boolean = js.native
   
   /** @hidden */
   var _indexInSceneMaterialArray: Double = js.native
@@ -139,34 +140,34 @@ trait Material extends IAnimatable {
   /**
     * Stores the state of the need depth pre-pass value
     */
-  var _needDepthPrePass: js.Any = js.native
+  /* private */ var _needDepthPrePass: js.Any = js.native
   
-  var _onBindObservable: js.Any = js.native
+  /* private */ var _onBindObservable: js.Any = js.native
   
   /**
     * An observer which watches for bind events
     */
-  var _onBindObserver: js.Any = js.native
+  /* private */ var _onBindObserver: js.Any = js.native
   
   /**
     * An observer which watches for dispose events
     */
-  var _onDisposeObserver: js.Any = js.native
+  /* private */ var _onDisposeObserver: js.Any = js.native
   
-  var _onEffectCreatedObservable: Nullable[Observable[typings.babylonjs.anon.SubMesh]] = js.native
+  /* protected */ var _onEffectCreatedObservable: Nullable[Observable[typings.babylonjs.anon.SubMesh]] = js.native
   
-  var _onUnBindObservable: js.Any = js.native
+  /* private */ var _onUnBindObservable: js.Any = js.native
   
   /** @hidden */
   def _preBind(): Boolean = js.native
-  def _preBind(effect: js.UndefOr[scala.Nothing], overrideOrientation: Nullable[Double]): Boolean = js.native
+  def _preBind(effect: Unit, overrideOrientation: Nullable[Double]): Boolean = js.native
   def _preBind(effect: Effect): Boolean = js.native
   def _preBind(effect: Effect, overrideOrientation: Nullable[Double]): Boolean = js.native
   
   /**
     * Stores a reference to the scene
     */
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
   /**
     * Specifies if material alpha testing should be turned on for the mesh
@@ -182,17 +183,17 @@ trait Material extends IAnimatable {
   /**
     * The transparency mode of the material.
     */
-  var _transparencyMode: Nullable[Double] = js.native
+  /* protected */ var _transparencyMode: Nullable[Double] = js.native
   
   /**
     * Stores the uniform buffer
     */
-  var _uniformBuffer: UniformBuffer = js.native
+  /* protected */ var _uniformBuffer: UniformBuffer = js.native
   
   /**
     * Specifies if uniform buffers should be used
     */
-  var _useUBO: js.Any = js.native
+  /* private */ var _useUBO: js.Any = js.native
   
   /**
     * Gets or sets a boolean indicating that the material is allowed (if supported) to do shader hot swapping.
@@ -320,15 +321,6 @@ trait Material extends IAnimatable {
     uniformBuffers: js.Array[String],
     samplers: js.Array[String],
     defines: js.Array[String],
-    attributes: js.UndefOr[scala.Nothing],
-    options: ICustomShaderNameResolveOptions
-  ): String = js.native
-  def customShaderNameResolve(
-    shaderName: String,
-    uniforms: js.Array[String],
-    uniformBuffers: js.Array[String],
-    samplers: js.Array[String],
-    defines: js.Array[String],
     attributes: js.Array[String]
   ): String = js.native
   def customShaderNameResolve(
@@ -338,6 +330,15 @@ trait Material extends IAnimatable {
     samplers: js.Array[String],
     defines: js.Array[String],
     attributes: js.Array[String],
+    options: ICustomShaderNameResolveOptions
+  ): String = js.native
+  def customShaderNameResolve(
+    shaderName: String,
+    uniforms: js.Array[String],
+    uniformBuffers: js.Array[String],
+    samplers: js.Array[String],
+    defines: js.Array[String],
+    attributes: Unit,
     options: ICustomShaderNameResolveOptions
   ): String = js.native
   /**
@@ -356,15 +357,6 @@ trait Material extends IAnimatable {
     uniformBuffers: js.Array[String],
     samplers: js.Array[String],
     defines: MaterialDefines,
-    attributes: js.UndefOr[scala.Nothing],
-    options: ICustomShaderNameResolveOptions
-  ): String = js.native
-  def customShaderNameResolve(
-    shaderName: String,
-    uniforms: js.Array[String],
-    uniformBuffers: js.Array[String],
-    samplers: js.Array[String],
-    defines: MaterialDefines,
     attributes: js.Array[String]
   ): String = js.native
   def customShaderNameResolve(
@@ -374,6 +366,15 @@ trait Material extends IAnimatable {
     samplers: js.Array[String],
     defines: MaterialDefines,
     attributes: js.Array[String],
+    options: ICustomShaderNameResolveOptions
+  ): String = js.native
+  def customShaderNameResolve(
+    shaderName: String,
+    uniforms: js.Array[String],
+    uniformBuffers: js.Array[String],
+    samplers: js.Array[String],
+    defines: MaterialDefines,
+    attributes: Unit,
     options: ICustomShaderNameResolveOptions
   ): String = js.native
   
@@ -399,25 +400,13 @@ trait Material extends IAnimatable {
     * @param notBoundToMesh specifies if the material that is being disposed is known to be not bound to any mesh
     */
   def dispose(): Unit = js.native
-  def dispose(
-    forceDisposeEffect: js.UndefOr[scala.Nothing],
-    forceDisposeTextures: js.UndefOr[scala.Nothing],
-    notBoundToMesh: Boolean
-  ): Unit = js.native
-  def dispose(forceDisposeEffect: js.UndefOr[scala.Nothing], forceDisposeTextures: Boolean): Unit = js.native
-  def dispose(
-    forceDisposeEffect: js.UndefOr[scala.Nothing],
-    forceDisposeTextures: Boolean,
-    notBoundToMesh: Boolean
-  ): Unit = js.native
   def dispose(forceDisposeEffect: Boolean): Unit = js.native
-  def dispose(
-    forceDisposeEffect: Boolean,
-    forceDisposeTextures: js.UndefOr[scala.Nothing],
-    notBoundToMesh: Boolean
-  ): Unit = js.native
   def dispose(forceDisposeEffect: Boolean, forceDisposeTextures: Boolean): Unit = js.native
   def dispose(forceDisposeEffect: Boolean, forceDisposeTextures: Boolean, notBoundToMesh: Boolean): Unit = js.native
+  def dispose(forceDisposeEffect: Boolean, forceDisposeTextures: Unit, notBoundToMesh: Boolean): Unit = js.native
+  def dispose(forceDisposeEffect: Unit, forceDisposeTextures: Boolean): Unit = js.native
+  def dispose(forceDisposeEffect: Unit, forceDisposeTextures: Boolean, notBoundToMesh: Boolean): Unit = js.native
+  def dispose(forceDisposeEffect: Unit, forceDisposeTextures: Unit, notBoundToMesh: Boolean): Unit = js.native
   
   /**
     * Specifies if the material should be serialized
@@ -450,24 +439,11 @@ trait Material extends IAnimatable {
     * @param onError defines a function to execute if the material fails compiling
     */
   def forceCompilation(mesh: AbstractMesh): Unit = js.native
-  def forceCompilation(
-    mesh: AbstractMesh,
-    onCompiled: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    onError: js.Function1[/* reason */ String, Unit]
-  ): Unit = js.native
-  def forceCompilation(mesh: AbstractMesh, onCompiled: js.UndefOr[scala.Nothing], options: PartialIMaterialCompilati): Unit = js.native
-  def forceCompilation(
-    mesh: AbstractMesh,
-    onCompiled: js.UndefOr[scala.Nothing],
-    options: PartialIMaterialCompilati,
-    onError: js.Function1[/* reason */ String, Unit]
-  ): Unit = js.native
   def forceCompilation(mesh: AbstractMesh, onCompiled: js.Function1[/* material */ this.type, Unit]): Unit = js.native
   def forceCompilation(
     mesh: AbstractMesh,
     onCompiled: js.Function1[/* material */ this.type, Unit],
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     onError: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
   def forceCompilation(
@@ -478,6 +454,19 @@ trait Material extends IAnimatable {
   def forceCompilation(
     mesh: AbstractMesh,
     onCompiled: js.Function1[/* material */ this.type, Unit],
+    options: PartialIMaterialCompilati,
+    onError: js.Function1[/* reason */ String, Unit]
+  ): Unit = js.native
+  def forceCompilation(
+    mesh: AbstractMesh,
+    onCompiled: Unit,
+    options: Unit,
+    onError: js.Function1[/* reason */ String, Unit]
+  ): Unit = js.native
+  def forceCompilation(mesh: AbstractMesh, onCompiled: Unit, options: PartialIMaterialCompilati): Unit = js.native
+  def forceCompilation(
+    mesh: AbstractMesh,
+    onCompiled: Unit,
     options: PartialIMaterialCompilati,
     onError: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
@@ -577,7 +566,7 @@ trait Material extends IAnimatable {
     * @returns a boolean indicating if the material is ready to be used
     */
   def isReady(): Boolean = js.native
-  def isReady(mesh: js.UndefOr[scala.Nothing], useInstances: Boolean): Boolean = js.native
+  def isReady(mesh: Unit, useInstances: Boolean): Boolean = js.native
   def isReady(mesh: AbstractMesh): Boolean = js.native
   def isReady(mesh: AbstractMesh, useInstances: Boolean): Boolean = js.native
   
@@ -698,7 +687,7 @@ trait Material extends IAnimatable {
   def pointsCloud_=(value: Boolean): Unit = js.native
   
   /** @hidden */
-  var releaseVertexArrayObject: js.Any = js.native
+  /* private */ var releaseVertexArrayObject: js.Any = js.native
   
   /**
     * For internal use only. Please do not use.

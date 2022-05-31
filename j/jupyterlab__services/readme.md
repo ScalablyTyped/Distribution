@@ -10,9 +10,9 @@ Client APIs for the Jupyter services REST APIs
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/services |
 | Keywords           | jupyter, notebook, services |
-| # releases         | 103 |
-| # dependents       | 206 |
-| # downloads        | 2337822 |
+| # releases         | 118 |
+| # dependents       | 230 |
+| # downloads        | 2464927 |
 | # stars            | 0 |
 
 ## Links

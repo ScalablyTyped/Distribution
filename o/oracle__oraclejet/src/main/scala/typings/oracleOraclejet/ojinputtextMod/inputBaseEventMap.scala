@@ -35,38 +35,37 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait inputBaseEventMap[V, SP /* <: inputBaseSettableProperties[V, SV, V] */, SV, RV] extends editableValueEventMap[V, SP, SV, RV] {
+trait inputBaseEventMap[V, SP /* <: inputBaseSettableProperties[V, SV, V] */, SV, RV]
+  extends StObject
+     with editableValueEventMap[V, SP, SV, RV] {
   
-  var asyncValidatorsChanged: JetElementCustomEvent[js.Array[AsyncValidator[V]]] = js.native
+  var asyncValidatorsChanged: JetElementCustomEvent[js.Array[AsyncValidator[V]]]
   
-  var autocompleteChanged: JetElementCustomEvent[on | off | String] = js.native
+  var autocompleteChanged: JetElementCustomEvent[on | off | String]
   
-  var autofocusChanged: JetElementCustomEvent[Boolean] = js.native
+  var autofocusChanged: JetElementCustomEvent[Boolean]
   
   @JSName("ojAnimateEnd")
-  var ojAnimateEnd_inputBaseEventMap: ojAnimateEnd = js.native
+  var ojAnimateEnd_inputBaseEventMap: ojAnimateEnd
   
   @JSName("ojAnimateStart")
-  var ojAnimateStart_inputBaseEventMap: ojAnimateStart = js.native
+  var ojAnimateStart_inputBaseEventMap: ojAnimateStart
   
-  var placeholderChanged: JetElementCustomEvent[String] = js.native
+  var placeholderChanged: JetElementCustomEvent[String]
   
-  var rawValueChanged: JetElementCustomEvent[RV] = js.native
+  var rawValueChanged: JetElementCustomEvent[RV]
   
-  var readonlyChanged: JetElementCustomEvent[Boolean] = js.native
+  var readonlyChanged: JetElementCustomEvent[Boolean]
   
-  var requiredChanged: JetElementCustomEvent[Boolean] = js.native
+  var requiredChanged: JetElementCustomEvent[Boolean]
   
-  var validatorsChanged: JetElementCustomEvent[(js.Array[Validator[V] | RegisteredValidator]) | Null] = js.native
+  var validatorsChanged: JetElementCustomEvent[(js.Array[Validator[V] | RegisteredValidator]) | Null]
 }
 object inputBaseEventMap {
   
-  @scala.inline
-  def apply[V, SP /* <: inputBaseSettableProperties[V, SV, V] */, SV, RV](
+  inline def apply[V, SP /* <: inputBaseSettableProperties[V, SV, V] */, SV, RV](
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,
@@ -184,37 +183,26 @@ object inputBaseEventMap {
     __obj.asInstanceOf[inputBaseEventMap[V, SP, SV, RV]]
   }
   
-  @scala.inline
-  implicit class inputBaseEventMapMutableBuilder[Self <: inputBaseEventMap[_, _, _, _], V, SP /* <: inputBaseSettableProperties[V, SV, V] */, SV, RV] (val x: Self with (inputBaseEventMap[V, SP, SV, RV])) extends AnyVal {
+  extension [Self <: inputBaseEventMap[?, ?, ?, ?], V, SP /* <: inputBaseSettableProperties[V, SV, V] */, SV, RV](x: Self & (inputBaseEventMap[V, SP, SV, RV])) {
     
-    @scala.inline
-    def setAsyncValidatorsChanged(value: JetElementCustomEvent[js.Array[AsyncValidator[V]]]): Self = StObject.set(x, "asyncValidatorsChanged", value.asInstanceOf[js.Any])
+    inline def setAsyncValidatorsChanged(value: JetElementCustomEvent[js.Array[AsyncValidator[V]]]): Self = StObject.set(x, "asyncValidatorsChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutocompleteChanged(value: JetElementCustomEvent[on | off | String]): Self = StObject.set(x, "autocompleteChanged", value.asInstanceOf[js.Any])
+    inline def setAutocompleteChanged(value: JetElementCustomEvent[on | off | String]): Self = StObject.set(x, "autocompleteChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutofocusChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "autofocusChanged", value.asInstanceOf[js.Any])
+    inline def setAutofocusChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "autofocusChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
+    inline def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOjAnimateStart(value: ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
+    inline def setOjAnimateStart(value: ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "placeholderChanged", value.asInstanceOf[js.Any])
+    inline def setPlaceholderChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "placeholderChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawValueChanged(value: JetElementCustomEvent[RV]): Self = StObject.set(x, "rawValueChanged", value.asInstanceOf[js.Any])
+    inline def setRawValueChanged(value: JetElementCustomEvent[RV]): Self = StObject.set(x, "rawValueChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadonlyChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "readonlyChanged", value.asInstanceOf[js.Any])
+    inline def setReadonlyChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "readonlyChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "requiredChanged", value.asInstanceOf[js.Any])
+    inline def setRequiredChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "requiredChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidatorsChanged(value: JetElementCustomEvent[(js.Array[Validator[V] | RegisteredValidator]) | Null]): Self = StObject.set(x, "validatorsChanged", value.asInstanceOf[js.Any])
+    inline def setValidatorsChanged(value: JetElementCustomEvent[(js.Array[Validator[V] | RegisteredValidator]) | Null]): Self = StObject.set(x, "validatorsChanged", value.asInstanceOf[js.Any])
   }
 }

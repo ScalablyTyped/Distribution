@@ -8,7 +8,6 @@ import typings.babylonjs.typesMod.Nullable
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -64,28 +63,11 @@ object babylonjsMeshesMeshAugmentingMod {
       * @returns the current mesh
       */
     def simplify(settings: js.Array[ISimplificationSettings]): typings.babylonjs.meshSimplificationSceneComponentMod.babylonjsMeshesMeshAugmentingMod.Mesh = js.native
-    def simplify(
-      settings: js.Array[ISimplificationSettings],
-      parallelProcessing: js.UndefOr[scala.Nothing],
-      simplificationType: js.UndefOr[scala.Nothing],
-      successCallback: js.Function2[/* mesh */ js.UndefOr[this.type], /* submeshIndex */ js.UndefOr[Double], Unit]
-    ): typings.babylonjs.meshSimplificationSceneComponentMod.babylonjsMeshesMeshAugmentingMod.Mesh = js.native
-    def simplify(
-      settings: js.Array[ISimplificationSettings],
-      parallelProcessing: js.UndefOr[scala.Nothing],
-      simplificationType: typings.babylonjs.meshSimplificationMod.SimplificationType
-    ): typings.babylonjs.meshSimplificationSceneComponentMod.babylonjsMeshesMeshAugmentingMod.Mesh = js.native
-    def simplify(
-      settings: js.Array[ISimplificationSettings],
-      parallelProcessing: js.UndefOr[scala.Nothing],
-      simplificationType: typings.babylonjs.meshSimplificationMod.SimplificationType,
-      successCallback: js.Function2[/* mesh */ js.UndefOr[this.type], /* submeshIndex */ js.UndefOr[Double], Unit]
-    ): typings.babylonjs.meshSimplificationSceneComponentMod.babylonjsMeshesMeshAugmentingMod.Mesh = js.native
     def simplify(settings: js.Array[ISimplificationSettings], parallelProcessing: Boolean): typings.babylonjs.meshSimplificationSceneComponentMod.babylonjsMeshesMeshAugmentingMod.Mesh = js.native
     def simplify(
       settings: js.Array[ISimplificationSettings],
       parallelProcessing: Boolean,
-      simplificationType: js.UndefOr[scala.Nothing],
+      simplificationType: Unit,
       successCallback: js.Function2[/* mesh */ js.UndefOr[this.type], /* submeshIndex */ js.UndefOr[Double], Unit]
     ): typings.babylonjs.meshSimplificationSceneComponentMod.babylonjsMeshesMeshAugmentingMod.Mesh = js.native
     def simplify(
@@ -96,6 +78,23 @@ object babylonjsMeshesMeshAugmentingMod {
     def simplify(
       settings: js.Array[ISimplificationSettings],
       parallelProcessing: Boolean,
+      simplificationType: typings.babylonjs.meshSimplificationMod.SimplificationType,
+      successCallback: js.Function2[/* mesh */ js.UndefOr[this.type], /* submeshIndex */ js.UndefOr[Double], Unit]
+    ): typings.babylonjs.meshSimplificationSceneComponentMod.babylonjsMeshesMeshAugmentingMod.Mesh = js.native
+    def simplify(
+      settings: js.Array[ISimplificationSettings],
+      parallelProcessing: Unit,
+      simplificationType: Unit,
+      successCallback: js.Function2[/* mesh */ js.UndefOr[this.type], /* submeshIndex */ js.UndefOr[Double], Unit]
+    ): typings.babylonjs.meshSimplificationSceneComponentMod.babylonjsMeshesMeshAugmentingMod.Mesh = js.native
+    def simplify(
+      settings: js.Array[ISimplificationSettings],
+      parallelProcessing: Unit,
+      simplificationType: typings.babylonjs.meshSimplificationMod.SimplificationType
+    ): typings.babylonjs.meshSimplificationSceneComponentMod.babylonjsMeshesMeshAugmentingMod.Mesh = js.native
+    def simplify(
+      settings: js.Array[ISimplificationSettings],
+      parallelProcessing: Unit,
       simplificationType: typings.babylonjs.meshSimplificationMod.SimplificationType,
       successCallback: js.Function2[/* mesh */ js.UndefOr[this.type], /* submeshIndex */ js.UndefOr[Double], Unit]
     ): typings.babylonjs.meshSimplificationSceneComponentMod.babylonjsMeshesMeshAugmentingMod.Mesh = js.native

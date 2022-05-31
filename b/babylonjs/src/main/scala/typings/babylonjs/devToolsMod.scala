@@ -2,7 +2,6 @@ package typings.babylonjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object devToolsMod {
@@ -13,8 +12,10 @@ object devToolsMod {
   /* static members */
   object DevTools {
     
-    @JSImport("babylonjs/Misc/devTools", "_DevTools.WarnImport")
+    @JSImport("babylonjs/Misc/devTools", "_DevTools")
     @js.native
-    def WarnImport(name: String): String = js.native
+    val ^ : js.Any = js.native
+    
+    inline def WarnImport(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("WarnImport")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

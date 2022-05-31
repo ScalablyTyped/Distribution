@@ -3,17 +3,18 @@ package typings.babylonjs.BABYLON
 import typings.babylonjs.XRHandedness
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebXRHandTracking extends WebXRAbstractFeature {
+trait WebXRHandTracking
+  extends StObject
+     with WebXRAbstractFeature {
   
-  var _attachHand: js.Any = js.native
+  /* private */ var _attachHand: js.Any = js.native
   
-  var _detachHand: js.Any = js.native
+  /* private */ var _detachHand: js.Any = js.native
   
-  var _hands: js.Any = js.native
+  /* private */ var _hands: js.Any = js.native
   
   /**
     * Get the hand object according to the controller id

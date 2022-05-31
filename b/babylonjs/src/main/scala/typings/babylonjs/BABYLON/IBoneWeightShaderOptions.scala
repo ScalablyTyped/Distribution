@@ -2,81 +2,64 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBoneWeightShaderOptions extends StObject {
   
   /** Colors for Uninfluenced bones */
-  var colorBase: js.UndefOr[Color3] = js.native
+  var colorBase: js.UndefOr[Color3] = js.undefined
   
   /** Color for 0.75-1 Weight Influence */
-  var colorFull: js.UndefOr[Color3] = js.native
+  var colorFull: js.UndefOr[Color3] = js.undefined
   
   /** Color for 0.5-0.75 Weight Influence */
-  var colorHalf: js.UndefOr[Color3] = js.native
+  var colorHalf: js.UndefOr[Color3] = js.undefined
   
   /** Color for 0.25-0.5 Weight Influence */
-  var colorQuarter: js.UndefOr[Color3] = js.native
+  var colorQuarter: js.UndefOr[Color3] = js.undefined
   
   /** Colors for 0.0-0.25 Weight bones */
-  var colorZero: js.UndefOr[Color3] = js.native
+  var colorZero: js.UndefOr[Color3] = js.undefined
   
   /** Skeleton to Map */
-  var skeleton: Skeleton = js.native
+  var skeleton: Skeleton
   
   /** Color for Zero Weight Influence */
-  var targetBoneIndex: js.UndefOr[Double] = js.native
+  var targetBoneIndex: js.UndefOr[Double] = js.undefined
 }
 object IBoneWeightShaderOptions {
   
-  @scala.inline
-  def apply(skeleton: Skeleton): IBoneWeightShaderOptions = {
+  inline def apply(skeleton: Skeleton): IBoneWeightShaderOptions = {
     val __obj = js.Dynamic.literal(skeleton = skeleton.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBoneWeightShaderOptions]
   }
   
-  @scala.inline
-  implicit class IBoneWeightShaderOptionsMutableBuilder[Self <: IBoneWeightShaderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IBoneWeightShaderOptions](x: Self) {
     
-    @scala.inline
-    def setColorBase(value: Color3): Self = StObject.set(x, "colorBase", value.asInstanceOf[js.Any])
+    inline def setColorBase(value: Color3): Self = StObject.set(x, "colorBase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorBaseUndefined: Self = StObject.set(x, "colorBase", js.undefined)
+    inline def setColorBaseUndefined: Self = StObject.set(x, "colorBase", js.undefined)
     
-    @scala.inline
-    def setColorFull(value: Color3): Self = StObject.set(x, "colorFull", value.asInstanceOf[js.Any])
+    inline def setColorFull(value: Color3): Self = StObject.set(x, "colorFull", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorFullUndefined: Self = StObject.set(x, "colorFull", js.undefined)
+    inline def setColorFullUndefined: Self = StObject.set(x, "colorFull", js.undefined)
     
-    @scala.inline
-    def setColorHalf(value: Color3): Self = StObject.set(x, "colorHalf", value.asInstanceOf[js.Any])
+    inline def setColorHalf(value: Color3): Self = StObject.set(x, "colorHalf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorHalfUndefined: Self = StObject.set(x, "colorHalf", js.undefined)
+    inline def setColorHalfUndefined: Self = StObject.set(x, "colorHalf", js.undefined)
     
-    @scala.inline
-    def setColorQuarter(value: Color3): Self = StObject.set(x, "colorQuarter", value.asInstanceOf[js.Any])
+    inline def setColorQuarter(value: Color3): Self = StObject.set(x, "colorQuarter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorQuarterUndefined: Self = StObject.set(x, "colorQuarter", js.undefined)
+    inline def setColorQuarterUndefined: Self = StObject.set(x, "colorQuarter", js.undefined)
     
-    @scala.inline
-    def setColorZero(value: Color3): Self = StObject.set(x, "colorZero", value.asInstanceOf[js.Any])
+    inline def setColorZero(value: Color3): Self = StObject.set(x, "colorZero", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorZeroUndefined: Self = StObject.set(x, "colorZero", js.undefined)
+    inline def setColorZeroUndefined: Self = StObject.set(x, "colorZero", js.undefined)
     
-    @scala.inline
-    def setSkeleton(value: Skeleton): Self = StObject.set(x, "skeleton", value.asInstanceOf[js.Any])
+    inline def setSkeleton(value: Skeleton): Self = StObject.set(x, "skeleton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetBoneIndex(value: Double): Self = StObject.set(x, "targetBoneIndex", value.asInstanceOf[js.Any])
+    inline def setTargetBoneIndex(value: Double): Self = StObject.set(x, "targetBoneIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetBoneIndexUndefined: Self = StObject.set(x, "targetBoneIndex", js.undefined)
+    inline def setTargetBoneIndexUndefined: Self = StObject.set(x, "targetBoneIndex", js.undefined)
   }
 }

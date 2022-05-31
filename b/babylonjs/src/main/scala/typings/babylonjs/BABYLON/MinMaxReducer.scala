@@ -3,25 +3,24 @@ package typings.babylonjs.BABYLON
 import typings.babylonjs.anon.Min
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MinMaxReducer extends StObject {
   
-  var _activated: Boolean = js.native
+  /* protected */ var _activated: Boolean = js.native
   
-  var _camera: Camera = js.native
+  /* protected */ var _camera: Camera = js.native
   
-  var _forceFullscreenViewport: Boolean = js.native
+  /* protected */ var _forceFullscreenViewport: Boolean = js.native
   
-  var _onAfterUnbindObserver: Nullable[Observer[RenderTargetTexture]] = js.native
+  /* protected */ var _onAfterUnbindObserver: Nullable[Observer[RenderTargetTexture]] = js.native
   
-  var _postProcessManager: PostProcessManager = js.native
+  /* protected */ var _postProcessManager: PostProcessManager = js.native
   
-  var _reductionSteps: Nullable[js.Array[PostProcess]] = js.native
+  /* protected */ var _reductionSteps: Nullable[js.Array[PostProcess]] = js.native
   
-  var _sourceTexture: Nullable[RenderTargetTexture] = js.native
+  /* protected */ var _sourceTexture: Nullable[RenderTargetTexture] = js.native
   
   /**
     * Activates the reduction computation.
@@ -71,17 +70,17 @@ trait MinMaxReducer extends StObject {
     * @param forceFullscreenViewport Forces the post processes used for the reduction to be applied without taking into account viewport (defaults to true)
     */
   def setSourceTexture(sourceTexture: RenderTargetTexture, depthRedux: Boolean): Unit = js.native
-  def setSourceTexture(
-    sourceTexture: RenderTargetTexture,
-    depthRedux: Boolean,
-    `type`: js.UndefOr[scala.Nothing],
-    forceFullscreenViewport: Boolean
-  ): Unit = js.native
   def setSourceTexture(sourceTexture: RenderTargetTexture, depthRedux: Boolean, `type`: Double): Unit = js.native
   def setSourceTexture(
     sourceTexture: RenderTargetTexture,
     depthRedux: Boolean,
     `type`: Double,
+    forceFullscreenViewport: Boolean
+  ): Unit = js.native
+  def setSourceTexture(
+    sourceTexture: RenderTargetTexture,
+    depthRedux: Boolean,
+    `type`: Unit,
     forceFullscreenViewport: Boolean
   ): Unit = js.native
   

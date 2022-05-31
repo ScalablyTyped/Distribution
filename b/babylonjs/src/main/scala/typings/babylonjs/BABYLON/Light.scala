@@ -2,11 +2,12 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Light extends Node {
+trait Light
+  extends StObject
+     with Node {
   
   /**
     * Binds the lights information from the scene to the effect for the given mesh.
@@ -24,11 +25,11 @@ trait Light extends Node {
   /**
     * Recomputes the cached photometric scale if needed.
     */
-  var _computePhotometricScale: js.Any = js.native
+  /* private */ var _computePhotometricScale: js.Any = js.native
   
-  var _excludeWithLayerMask: js.Any = js.native
+  /* private */ var _excludeWithLayerMask: js.Any = js.native
   
-  var _excludedMeshes: js.Any = js.native
+  /* private */ var _excludedMeshes: js.Any = js.native
   
   /**
     * @hidden Internal use only.
@@ -38,29 +39,29 @@ trait Light extends Node {
   /**
     * Returns the Photometric Scale according to the light type and intensity mode.
     */
-  var _getPhotometricScale: js.Any = js.native
+  /* private */ var _getPhotometricScale: js.Any = js.native
   
-  var _hookArrayForExcluded: js.Any = js.native
+  /* private */ var _hookArrayForExcluded: js.Any = js.native
   
-  var _hookArrayForIncludedOnly: js.Any = js.native
+  /* private */ var _hookArrayForIncludedOnly: js.Any = js.native
   
-  var _includeOnlyWithLayerMask: js.Any = js.native
+  /* private */ var _includeOnlyWithLayerMask: js.Any = js.native
   
-  var _includedOnlyMeshes: js.Any = js.native
+  /* private */ var _includedOnlyMeshes: js.Any = js.native
   
   /**
     * @hidden Internal use only.
     */
   var _includedOnlyMeshesIds: js.Array[String] = js.native
   
-  var _intensityMode: js.Any = js.native
+  /* private */ var _intensityMode: js.Any = js.native
   
-  var _inverseSquaredRange: Double = js.native
+  /* protected */ var _inverseSquaredRange: Double = js.native
   
   /** @hidden */
   val _isLight: Boolean = js.native
   
-  var _lightmapMode: js.Any = js.native
+  /* private */ var _lightmapMode: js.Any = js.native
   
   /**
     * Forces the meshes to update their light related information in their rendering used effects
@@ -72,16 +73,16 @@ trait Light extends Node {
     * Cached photometric scale default to 1.0 as the automatic intensity mode defaults to 1.0 for every type
     * of light.
     */
-  var _photometricScale: js.Any = js.native
+  /* private */ var _photometricScale: js.Any = js.native
   
-  var _radius: js.Any = js.native
+  /* private */ var _radius: js.Any = js.native
   
-  var _range: js.Any = js.native
+  /* private */ var _range: js.Any = js.native
   
   /** @hidden */
   var _renderId: Double = js.native
   
-  var _renderPriority: js.Any = js.native
+  /* private */ var _renderPriority: js.Any = js.native
   
   /**
     * Reorder the light in the scene according to their defined priority.
@@ -89,9 +90,9 @@ trait Light extends Node {
     */
   def _reorderLightsInScene(): Unit = js.native
   
-  var _resyncMeshes: js.Any = js.native
+  /* private */ var _resyncMeshes: js.Any = js.native
   
-  var _shadowEnabled: js.Any = js.native
+  /* private */ var _shadowEnabled: js.Any = js.native
   
   /**
     * Shadow generator associted to the light.

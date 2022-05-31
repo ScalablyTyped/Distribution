@@ -2,11 +2,12 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISpriteManager extends IDisposable {
+trait ISpriteManager
+  extends StObject
+     with IDisposable {
   
   /** Defines the default height of a cell in the spritesheet */
   var cellHeight: Double = js.native
@@ -23,7 +24,6 @@ trait ISpriteManager extends IDisposable {
     * @returns picking info or null.
     */
   def intersects(ray: Ray, camera: Camera): Nullable[PickingInfo] = js.native
-  def intersects(ray: Ray, camera: Camera, predicate: js.UndefOr[scala.Nothing], fastCheck: Boolean): Nullable[PickingInfo] = js.native
   def intersects(ray: Ray, camera: Camera, predicate: js.Function1[/* sprite */ Sprite, Boolean]): Nullable[PickingInfo] = js.native
   def intersects(
     ray: Ray,
@@ -31,6 +31,7 @@ trait ISpriteManager extends IDisposable {
     predicate: js.Function1[/* sprite */ Sprite, Boolean],
     fastCheck: Boolean
   ): Nullable[PickingInfo] = js.native
+  def intersects(ray: Ray, camera: Camera, predicate: Unit, fastCheck: Boolean): Nullable[PickingInfo] = js.native
   
   /**
     * Gets or sets a boolean indicating if the mesh can be picked (by scene.pick for instance or through actions). Default is true

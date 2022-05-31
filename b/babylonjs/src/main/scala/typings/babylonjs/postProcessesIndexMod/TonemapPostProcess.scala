@@ -4,7 +4,6 @@ import typings.babylonjs.cameraMod.Camera
 import typings.babylonjs.engineMod.Engine
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/PostProcesses/index", "TonemapPostProcess")
@@ -42,15 +41,6 @@ class TonemapPostProcess protected ()
     /** Defines the required exposure adjustement */
   exposureAdjustment: Double,
     camera: Camera,
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: Engine
-  ) = this()
-  def this(
-    name: String,
-    _operator: typings.babylonjs.tonemapPostProcessMod.TonemappingOperator,
-    /** Defines the required exposure adjustement */
-  exposureAdjustment: Double,
-    camera: Camera,
     samplingMode: Double,
     engine: Engine
   ) = this()
@@ -60,8 +50,17 @@ class TonemapPostProcess protected ()
     /** Defines the required exposure adjustement */
   exposureAdjustment: Double,
     camera: Camera,
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: js.UndefOr[scala.Nothing],
+    samplingMode: Unit,
+    engine: Engine
+  ) = this()
+  def this(
+    name: String,
+    _operator: typings.babylonjs.tonemapPostProcessMod.TonemappingOperator,
+    /** Defines the required exposure adjustement */
+  exposureAdjustment: Double,
+    camera: Camera,
+    samplingMode: Double,
+    engine: Unit,
     textureFormat: Double
   ) = this()
   def this(
@@ -70,7 +69,7 @@ class TonemapPostProcess protected ()
     /** Defines the required exposure adjustement */
   exposureAdjustment: Double,
     camera: Camera,
-    samplingMode: js.UndefOr[scala.Nothing],
+    samplingMode: Double,
     engine: Engine,
     textureFormat: Double
   ) = this()
@@ -80,8 +79,8 @@ class TonemapPostProcess protected ()
     /** Defines the required exposure adjustement */
   exposureAdjustment: Double,
     camera: Camera,
-    samplingMode: Double,
-    engine: js.UndefOr[scala.Nothing],
+    samplingMode: Unit,
+    engine: Unit,
     textureFormat: Double
   ) = this()
   def this(
@@ -90,7 +89,7 @@ class TonemapPostProcess protected ()
     /** Defines the required exposure adjustement */
   exposureAdjustment: Double,
     camera: Camera,
-    samplingMode: Double,
+    samplingMode: Unit,
     engine: Engine,
     textureFormat: Double
   ) = this()

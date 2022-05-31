@@ -11,7 +11,6 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vdomMod {
@@ -41,20 +40,22 @@ object vdomMod {
       *
       * @returns a promise that resolves when the rendering is done.
       */
-    var renderDOM: js.Any = js.native
+    /* private */ var renderDOM: js.Any = js.native
     
     var renderPromise: js.UndefOr[js.Promise[Unit]] = js.native
   }
   /* static members */
   object ReactWidget {
     
+    @JSImport("@jupyterlab/apputils/lib/vdom", "ReactWidget")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new `ReactWidget` that renders a constant element.
       * @param element React element to render.
       */
-    @JSImport("@jupyterlab/apputils/lib/vdom", "ReactWidget.create")
-    @js.native
-    def create(element: ReactRenderElement): ReactWidget = js.native
+    inline def create(element: ReactRenderElement): ReactWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any]).asInstanceOf[ReactWidget]
   }
   
   @JSImport("@jupyterlab/apputils/lib/vdom", "UseSignal")
@@ -69,21 +70,50 @@ object vdomMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MUseSignal(): Unit = js.native
     
-    var slot: js.Any = js.native
+    /* private */ var slot: js.Any = js.native
   }
   
   @JSImport("@jupyterlab/apputils/lib/vdom", "VDomModel")
   @js.native
-  class VDomModel () extends IModel {
+  class VDomModel ()
+    extends StObject
+       with IModel {
     
-    var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: js.Any = js.native
     
+    /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
     /**
       * Test whether the model is disposed.
       */
     @JSName("isDisposed")
     def isDisposed_MVDomModel: Boolean = js.native
     
+    /**
+      * A signal emitted when any model state changes.
+      */
+    /* CompleteClass */
+    override val stateChanged: ISignal[this.type, Unit] = js.native
     /**
       * A signal emitted when any model state changes.
       */
@@ -99,9 +129,9 @@ object vdomMod {
       */
     def this(model: T | Unit) = this()
     
-    var _model: js.Any = js.native
+    /* private */ var _model: js.Any = js.native
     
-    var _modelChanged: js.Any = js.native
+    /* private */ var _modelChanged: js.Any = js.native
     
     /**
       * Get the current model.
@@ -123,27 +153,25 @@ object vdomMod {
     /**
       * An interface for a model to be used with vdom rendering.
       */
-    @js.native
-    trait IModel extends IDisposable {
+    trait IModel
+      extends StObject
+         with IDisposable {
       
       /**
         * A signal emitted when any model state changes.
         */
-      val stateChanged: ISignal[this.type, Unit] = js.native
+      val stateChanged: ISignal[this.type, Unit]
     }
     object IModel {
       
-      @scala.inline
-      def apply(dispose: () => Unit, isDisposed: Boolean, stateChanged: ISignal[IModel, Unit]): IModel = {
+      inline def apply(dispose: () => Unit, isDisposed: Boolean, stateChanged: ISignal[IModel, Unit]): IModel = {
         val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), isDisposed = isDisposed.asInstanceOf[js.Any], stateChanged = stateChanged.asInstanceOf[js.Any])
         __obj.asInstanceOf[IModel]
       }
       
-      @scala.inline
-      implicit class IModelMutableBuilder[Self <: IModel] (val x: Self) extends AnyVal {
+      extension [Self <: IModel](x: Self) {
         
-        @scala.inline
-        def setStateChanged(value: ISignal[IModel, Unit]): Self = StObject.set(x, "stateChanged", value.asInstanceOf[js.Any])
+        inline def setStateChanged(value: ISignal[IModel, Unit]): Self = StObject.set(x, "stateChanged", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -160,7 +188,7 @@ object vdomMod {
     def children(): ReactNode = js.native
     def children(sender: SENDER): ReactNode = js.native
     def children(sender: SENDER, args: ARGS): ReactNode = js.native
-    def children(sender: js.UndefOr[scala.Nothing], args: ARGS): ReactNode = js.native
+    def children(sender: Unit, args: ARGS): ReactNode = js.native
     
     /**
       * Initial value to use for the args, used before the signal emits a value.
@@ -188,24 +216,20 @@ object vdomMod {
     var signal: ISignal[SENDER, ARGS] = js.native
   }
   
-  @js.native
   trait IUseSignalState[SENDER, ARGS] extends StObject {
     
-    var value: js.Tuple2[js.UndefOr[SENDER], js.UndefOr[ARGS]] = js.native
+    var value: js.Tuple2[js.UndefOr[SENDER], js.UndefOr[ARGS]]
   }
   object IUseSignalState {
     
-    @scala.inline
-    def apply[SENDER, ARGS](value: js.Tuple2[js.UndefOr[SENDER], js.UndefOr[ARGS]]): IUseSignalState[SENDER, ARGS] = {
+    inline def apply[SENDER, ARGS](value: js.Tuple2[js.UndefOr[SENDER], js.UndefOr[ARGS]]): IUseSignalState[SENDER, ARGS] = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[IUseSignalState[SENDER, ARGS]]
     }
     
-    @scala.inline
-    implicit class IUseSignalStateMutableBuilder[Self <: IUseSignalState[_, _], SENDER, ARGS] (val x: Self with (IUseSignalState[SENDER, ARGS])) extends AnyVal {
+    extension [Self <: IUseSignalState[?, ?], SENDER, ARGS](x: Self & (IUseSignalState[SENDER, ARGS])) {
       
-      @scala.inline
-      def setValue(value: js.Tuple2[js.UndefOr[SENDER], js.UndefOr[ARGS]]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Tuple2[js.UndefOr[SENDER], js.UndefOr[ARGS]]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

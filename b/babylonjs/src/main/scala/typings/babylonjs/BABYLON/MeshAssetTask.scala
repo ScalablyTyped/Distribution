@@ -3,11 +3,12 @@ package typings.babylonjs.BABYLON
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MeshAssetTask extends AbstractAssetTask {
+trait MeshAssetTask
+  extends StObject
+     with AbstractAssetTask {
   
   /**
     * Gets the list of loaded animation groups
@@ -38,9 +39,9 @@ trait MeshAssetTask extends AbstractAssetTask {
     * Callback called when the task is successful
     */
   def onError(task: MeshAssetTask): Unit = js.native
-  def onError(task: MeshAssetTask, message: js.UndefOr[scala.Nothing], exception: js.Any): Unit = js.native
   def onError(task: MeshAssetTask, message: String): Unit = js.native
   def onError(task: MeshAssetTask, message: String, exception: js.Any): Unit = js.native
+  def onError(task: MeshAssetTask, message: Unit, exception: js.Any): Unit = js.native
   
   /**
     * Callback called when the task is successful

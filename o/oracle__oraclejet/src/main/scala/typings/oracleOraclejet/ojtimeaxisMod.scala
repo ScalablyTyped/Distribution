@@ -46,20 +46,21 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ojtimeaxisMod {
   
   @js.native
-  trait ojTimeAxis extends dvtBaseComponent[ojTimeAxisSettableProperties] {
+  trait ojTimeAxis
+    extends StObject
+       with dvtBaseComponent[ojTimeAxisSettableProperties] {
     
     def addEventListener(
       `type`: scaleChanged,
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[seconds | minutes | hours | days | weeks | months | quarters | years], 
-          _
+          js.Any
         ]
     ): Unit = js.native
     def addEventListener(
@@ -67,7 +68,7 @@ object ojtimeaxisMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[seconds | minutes | hours | days | weeks | months | quarters | years], 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -77,7 +78,7 @@ object ojtimeaxisMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[Converters | Converter[String]], 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -86,30 +87,30 @@ object ojtimeaxisMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[Converters | Converter[String]], 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_endChanged(
       `type`: endChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_endChanged(
       `type`: endChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_startChanged(
       `type`: startChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_startChanged(
       `type`: startChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     
@@ -126,16 +127,16 @@ object ojtimeaxisMod {
     @JSName("getProperty")
     def getProperty_start(property: start): String = js.native
     
-    var onConverterChanged: (js.Function1[/* event */ JetElementCustomEvent[Converters | Converter[String]], _]) | Null = js.native
+    var onConverterChanged: (js.Function1[/* event */ JetElementCustomEvent[Converters | Converter[String]], js.Any]) | Null = js.native
     
-    var onEndChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+    var onEndChanged: (js.Function1[/* event */ JetElementCustomEvent[String], js.Any]) | Null = js.native
     
     var onScaleChanged: (js.Function1[
         /* event */ JetElementCustomEvent[seconds | minutes | hours | days | weeks | months | quarters | years], 
-        _
+        js.Any
       ]) | Null = js.native
     
-    var onStartChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+    var onStartChanged: (js.Function1[/* event */ JetElementCustomEvent[String], js.Any]) | Null = js.native
     
     var scale: seconds | minutes | hours | days | weeks | months | quarters | years = js.native
     
@@ -168,110 +169,89 @@ object ojtimeaxisMod {
   object ojTimeAxis {
     
     // tslint:disable-next-line interface-over-type-literal
-    @js.native
     trait Converters extends StObject {
       
-      var default: js.UndefOr[Converter[String]] = js.native
+      var default: js.UndefOr[Converter[String]] = js.undefined
       
-      var days: js.UndefOr[Converter[String]] = js.native
+      var days: js.UndefOr[Converter[String]] = js.undefined
       
-      var hours: js.UndefOr[Converter[String]] = js.native
+      var hours: js.UndefOr[Converter[String]] = js.undefined
       
-      var minutes: js.UndefOr[Converter[String]] = js.native
+      var minutes: js.UndefOr[Converter[String]] = js.undefined
       
-      var months: js.UndefOr[Converter[String]] = js.native
+      var months: js.UndefOr[Converter[String]] = js.undefined
       
-      var quarters: js.UndefOr[Converter[String]] = js.native
+      var quarters: js.UndefOr[Converter[String]] = js.undefined
       
-      var seconds: js.UndefOr[Converter[String]] = js.native
+      var seconds: js.UndefOr[Converter[String]] = js.undefined
       
-      var weeks: js.UndefOr[Converter[String]] = js.native
+      var weeks: js.UndefOr[Converter[String]] = js.undefined
       
-      var years: js.UndefOr[Converter[String]] = js.native
+      var years: js.UndefOr[Converter[String]] = js.undefined
     }
     object Converters {
       
-      @scala.inline
-      def apply(): Converters = {
+      inline def apply(): Converters = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Converters]
       }
       
-      @scala.inline
-      implicit class ConvertersMutableBuilder[Self <: Converters] (val x: Self) extends AnyVal {
+      extension [Self <: Converters](x: Self) {
         
-        @scala.inline
-        def setDays(value: Converter[String]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
+        inline def setDays(value: Converter[String]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDaysUndefined: Self = StObject.set(x, "days", js.undefined)
+        inline def setDaysUndefined: Self = StObject.set(x, "days", js.undefined)
         
-        @scala.inline
-        def setDefault(value: Converter[String]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+        inline def setDefault(value: Converter[String]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+        inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
         
-        @scala.inline
-        def setHours(value: Converter[String]): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
+        inline def setHours(value: Converter[String]): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHoursUndefined: Self = StObject.set(x, "hours", js.undefined)
+        inline def setHoursUndefined: Self = StObject.set(x, "hours", js.undefined)
         
-        @scala.inline
-        def setMinutes(value: Converter[String]): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
+        inline def setMinutes(value: Converter[String]): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinutesUndefined: Self = StObject.set(x, "minutes", js.undefined)
+        inline def setMinutesUndefined: Self = StObject.set(x, "minutes", js.undefined)
         
-        @scala.inline
-        def setMonths(value: Converter[String]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
+        inline def setMonths(value: Converter[String]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMonthsUndefined: Self = StObject.set(x, "months", js.undefined)
+        inline def setMonthsUndefined: Self = StObject.set(x, "months", js.undefined)
         
-        @scala.inline
-        def setQuarters(value: Converter[String]): Self = StObject.set(x, "quarters", value.asInstanceOf[js.Any])
+        inline def setQuarters(value: Converter[String]): Self = StObject.set(x, "quarters", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setQuartersUndefined: Self = StObject.set(x, "quarters", js.undefined)
+        inline def setQuartersUndefined: Self = StObject.set(x, "quarters", js.undefined)
         
-        @scala.inline
-        def setSeconds(value: Converter[String]): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+        inline def setSeconds(value: Converter[String]): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
+        inline def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
         
-        @scala.inline
-        def setWeeks(value: Converter[String]): Self = StObject.set(x, "weeks", value.asInstanceOf[js.Any])
+        inline def setWeeks(value: Converter[String]): Self = StObject.set(x, "weeks", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWeeksUndefined: Self = StObject.set(x, "weeks", js.undefined)
+        inline def setWeeksUndefined: Self = StObject.set(x, "weeks", js.undefined)
         
-        @scala.inline
-        def setYears(value: Converter[String]): Self = StObject.set(x, "years", value.asInstanceOf[js.Any])
+        inline def setYears(value: Converter[String]): Self = StObject.set(x, "years", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setYearsUndefined: Self = StObject.set(x, "years", js.undefined)
+        inline def setYearsUndefined: Self = StObject.set(x, "years", js.undefined)
       }
     }
   }
   
-  @js.native
-  trait ojTimeAxisEventMap extends dvtBaseComponentEventMap[ojTimeAxisSettableProperties] {
+  trait ojTimeAxisEventMap
+    extends StObject
+       with dvtBaseComponentEventMap[ojTimeAxisSettableProperties] {
     
-    var converterChanged: JetElementCustomEvent[Converters | Converter[String]] = js.native
+    var converterChanged: JetElementCustomEvent[Converters | Converter[String]]
     
-    var endChanged: JetElementCustomEvent[String] = js.native
+    var endChanged: JetElementCustomEvent[String]
     
-    var scaleChanged: JetElementCustomEvent[seconds | minutes | hours | days | weeks | months | quarters | years] = js.native
+    var scaleChanged: JetElementCustomEvent[seconds | minutes | hours | days | weeks | months | quarters | years]
     
-    var startChanged: JetElementCustomEvent[String] = js.native
+    var startChanged: JetElementCustomEvent[String]
   }
   object ojTimeAxisEventMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: UIEvent,
       animationcancel: AnimationEvent,
       animationend: AnimationEvent,
@@ -375,41 +355,36 @@ object ojtimeaxisMod {
       __obj.asInstanceOf[ojTimeAxisEventMap]
     }
     
-    @scala.inline
-    implicit class ojTimeAxisEventMapMutableBuilder[Self <: ojTimeAxisEventMap] (val x: Self) extends AnyVal {
+    extension [Self <: ojTimeAxisEventMap](x: Self) {
       
-      @scala.inline
-      def setConverterChanged(value: JetElementCustomEvent[Converters | Converter[String]]): Self = StObject.set(x, "converterChanged", value.asInstanceOf[js.Any])
+      inline def setConverterChanged(value: JetElementCustomEvent[Converters | Converter[String]]): Self = StObject.set(x, "converterChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "endChanged", value.asInstanceOf[js.Any])
+      inline def setEndChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "endChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleChanged(value: JetElementCustomEvent[seconds | minutes | hours | days | weeks | months | quarters | years]): Self = StObject.set(x, "scaleChanged", value.asInstanceOf[js.Any])
+      inline def setScaleChanged(value: JetElementCustomEvent[seconds | minutes | hours | days | weeks | months | quarters | years]): Self = StObject.set(x, "scaleChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "startChanged", value.asInstanceOf[js.Any])
+      inline def setStartChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "startChanged", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait ojTimeAxisSettableProperties extends dvtBaseComponentSettableProperties {
+  trait ojTimeAxisSettableProperties
+    extends StObject
+       with dvtBaseComponentSettableProperties {
     
-    var converter: Converters | Converter[String] = js.native
+    var converter: Converters | Converter[String]
     
-    var end: String = js.native
+    var end: String
     
-    var scale: seconds | minutes | hours | days | weeks | months | quarters | years = js.native
+    var scale: seconds | minutes | hours | days | weeks | months | quarters | years
     
-    var start: String = js.native
+    var start: String
     
     @JSName("translations")
-    var translations_ojTimeAxisSettableProperties: LabelAndValue = js.native
+    var translations_ojTimeAxisSettableProperties: LabelAndValue
   }
   object ojTimeAxisSettableProperties {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       converter: Converters | Converter[String],
       end: String,
       scale: seconds | minutes | hours | days | weeks | months | quarters | years,
@@ -421,89 +396,69 @@ object ojtimeaxisMod {
       __obj.asInstanceOf[ojTimeAxisSettableProperties]
     }
     
-    @scala.inline
-    implicit class ojTimeAxisSettablePropertiesMutableBuilder[Self <: ojTimeAxisSettableProperties] (val x: Self) extends AnyVal {
+    extension [Self <: ojTimeAxisSettableProperties](x: Self) {
       
-      @scala.inline
-      def setConverter(value: Converters | Converter[String]): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
+      inline def setConverter(value: Converters | Converter[String]): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScale(value: seconds | minutes | hours | days | weeks | months | quarters | years): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: seconds | minutes | hours | days | weeks | months | quarters | years): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslations(value: LabelAndValue): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: LabelAndValue): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojtimeaxis.ojTimeAxisSettableProperties> */
-  @js.native
   trait ojTimeAxisSettablePropertiesLenient
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var converter: js.UndefOr[Converters | Converter[String]] = js.native
+    var converter: js.UndefOr[Converters | Converter[String]] = js.undefined
     
-    var end: js.UndefOr[String] = js.native
+    var end: js.UndefOr[String] = js.undefined
     
-    var scale: js.UndefOr[seconds | minutes | hours | days | weeks | months | quarters | years] = js.native
+    var scale: js.UndefOr[seconds | minutes | hours | days | weeks | months | quarters | years] = js.undefined
     
-    var start: js.UndefOr[String] = js.native
+    var start: js.UndefOr[String] = js.undefined
     
-    var trackResize: js.UndefOr[on | off] = js.native
+    var trackResize: js.UndefOr[on | off] = js.undefined
     
-    var translations: js.UndefOr[LabelAndValue] = js.native
+    var translations: js.UndefOr[LabelAndValue] = js.undefined
   }
   object ojTimeAxisSettablePropertiesLenient {
     
-    @scala.inline
-    def apply(): ojTimeAxisSettablePropertiesLenient = {
+    inline def apply(): ojTimeAxisSettablePropertiesLenient = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ojTimeAxisSettablePropertiesLenient]
     }
     
-    @scala.inline
-    implicit class ojTimeAxisSettablePropertiesLenientMutableBuilder[Self <: ojTimeAxisSettablePropertiesLenient] (val x: Self) extends AnyVal {
+    extension [Self <: ojTimeAxisSettablePropertiesLenient](x: Self) {
       
-      @scala.inline
-      def setConverter(value: Converters | Converter[String]): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
+      inline def setConverter(value: Converters | Converter[String]): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConverterUndefined: Self = StObject.set(x, "converter", js.undefined)
+      inline def setConverterUndefined: Self = StObject.set(x, "converter", js.undefined)
       
-      @scala.inline
-      def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setScale(value: seconds | minutes | hours | days | weeks | months | quarters | years): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: seconds | minutes | hours | days | weeks | months | quarters | years): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      @scala.inline
-      def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      @scala.inline
-      def setTrackResize(value: on | off): Self = StObject.set(x, "trackResize", value.asInstanceOf[js.Any])
+      inline def setTrackResize(value: on | off): Self = StObject.set(x, "trackResize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackResizeUndefined: Self = StObject.set(x, "trackResize", js.undefined)
+      inline def setTrackResizeUndefined: Self = StObject.set(x, "trackResize", js.undefined)
       
-      @scala.inline
-      def setTranslations(value: LabelAndValue): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: LabelAndValue): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+      inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
     }
   }
 }

@@ -6,11 +6,12 @@ import typings.std.WebGLShader
 import typings.std.WebGLTransformFeedback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebGLPipelineContext extends IPipelineContext {
+trait WebGLPipelineContext
+  extends StObject
+     with IPipelineContext {
   
   var context: js.UndefOr[WebGLRenderingContext] = js.native
   

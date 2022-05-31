@@ -10,52 +10,45 @@ import typings.oracleOraclejet.oracleOraclejetStrings.oneTabstop
 import typings.oracleOraclejet.oracleOraclejetStrings.outlined
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ojButtonsetOneSettableProperties extends baseComponentSettableProperties {
+trait ojButtonsetOneSettableProperties
+  extends StObject
+     with baseComponentSettableProperties {
   
-  var chroming: full | half | outlined = js.native
+  var chroming: full | half | outlined
   
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
-  var display: all | icons = js.native
+  var display: all | icons
   
-  var focusManagement: oneTabstop | none = js.native
+  var focusManagement: oneTabstop | none
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object ojButtonsetOneSettableProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     chroming: full | half | outlined,
     disabled: Boolean,
     display: all | icons,
     focusManagement: oneTabstop | none,
     value: js.Any
   ): ojButtonsetOneSettableProperties = {
-    val __obj = js.Dynamic.literal(chroming = chroming.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], focusManagement = focusManagement.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(chroming = chroming.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], focusManagement = focusManagement.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], translations = null)
     __obj.asInstanceOf[ojButtonsetOneSettableProperties]
   }
   
-  @scala.inline
-  implicit class ojButtonsetOneSettablePropertiesMutableBuilder[Self <: ojButtonsetOneSettableProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ojButtonsetOneSettableProperties](x: Self) {
     
-    @scala.inline
-    def setChroming(value: full | half | outlined): Self = StObject.set(x, "chroming", value.asInstanceOf[js.Any])
+    inline def setChroming(value: full | half | outlined): Self = StObject.set(x, "chroming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplay(value: all | icons): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: all | icons): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusManagement(value: oneTabstop | none): Self = StObject.set(x, "focusManagement", value.asInstanceOf[js.Any])
+    inline def setFocusManagement(value: oneTabstop | none): Self = StObject.set(x, "focusManagement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

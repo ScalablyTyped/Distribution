@@ -3,32 +3,33 @@ package typings.babylonjs.BABYLON
 import typings.babylonjs.anon.SnapDistance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlaneRotationGizmo extends Gizmo {
+trait PlaneRotationGizmo
+  extends StObject
+     with Gizmo {
   
-  var _coloredMaterial: js.Any = js.native
+  /* private */ var _coloredMaterial: js.Any = js.native
   
   /** Create Geometry for Gizmo */
-  var _createGizmoMesh: js.Any = js.native
+  /* private */ var _createGizmoMesh: js.Any = js.native
   
-  var _disableMaterial: js.Any = js.native
+  /* private */ var _disableMaterial: js.Any = js.native
   
-  var _dragging: js.Any = js.native
+  /* private */ var _dragging: js.Any = js.native
   
-  var _gizmoMesh: js.Any = js.native
+  /* private */ var _gizmoMesh: js.Any = js.native
   
-  var _hoverMaterial: js.Any = js.native
+  /* private */ var _hoverMaterial: js.Any = js.native
   
-  var _isEnabled: js.Any = js.native
+  /* private */ var _isEnabled: js.Any = js.native
   
-  var _parent: js.Any = js.native
+  /* private */ var _parent: js.Any = js.native
   
-  var _pointerObserver: js.Any = js.native
+  /* private */ var _pointerObserver: js.Any = js.native
   
-  var _rotationCircle: js.Any = js.native
+  /* private */ var _rotationCircle: js.Any = js.native
   
   /**
     * Drag behavior responsible for the gizmos dragging interactions
@@ -47,14 +48,14 @@ trait PlaneRotationGizmo extends Gizmo {
     */
   var onSnapObservable: Observable[SnapDistance] = js.native
   
-  var setupRotationCircle: js.Any = js.native
+  /* private */ var setupRotationCircle: js.Any = js.native
   
   /**
     * Rotation distance in radians that the gizmo will snap to (Default: 0)
     */
   var snapDistance: Double = js.native
   
-  var updateRotationCircle: js.Any = js.native
+  /* private */ var updateRotationCircle: js.Any = js.native
   
-  var updateRotationPath: js.Any = js.native
+  /* private */ var updateRotationPath: js.Any = js.native
 }

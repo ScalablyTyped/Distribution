@@ -1,5 +1,6 @@
 package typings.awsSdkClientPinpointBrowser.mod
 
+import typings.awsSdkClientPinpointBrowser.typesPutEventStreamInputMod.PutEventStreamInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class PutEventStreamCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.putEventStreamCommandMod.PutEventStreamCommand {
-  def this(input: typings.awsSdkClientPinpointBrowser.typesPutEventStreamInputMod.PutEventStreamInput) = this()
+  def this(input: PutEventStreamInput) = this()
 }

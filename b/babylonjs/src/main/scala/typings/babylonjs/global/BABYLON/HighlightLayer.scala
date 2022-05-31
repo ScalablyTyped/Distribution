@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.anon.PartialIHighlightLayerOptAlphaBlendingMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.HighlightLayer")
 @js.native
 class HighlightLayer protected ()
-  extends typings.babylonjs.BABYLON.HighlightLayer {
+  extends StObject
+     with typings.babylonjs.BABYLON.HighlightLayer {
   /**
     * Instantiates a new highlight Layer and references it to the scene..
     * @param name The name of the layer
@@ -43,8 +43,7 @@ object HighlightLayer {
   @JSGlobal("BABYLON.HighlightLayer.GlowingMeshStencilReference")
   @js.native
   def GlowingMeshStencilReference: Double = js.native
-  @scala.inline
-  def GlowingMeshStencilReference_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GlowingMeshStencilReference")(x.asInstanceOf[js.Any])
+  inline def GlowingMeshStencilReference_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GlowingMeshStencilReference")(x.asInstanceOf[js.Any])
   
   /**
     * The neutral color used during the preparation of the glow effect.
@@ -53,8 +52,7 @@ object HighlightLayer {
   @JSGlobal("BABYLON.HighlightLayer.NeutralColor")
   @js.native
   def NeutralColor: typings.babylonjs.BABYLON.Color4 = js.native
-  @scala.inline
-  def NeutralColor_=(x: typings.babylonjs.BABYLON.Color4): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NeutralColor")(x.asInstanceOf[js.Any])
+  inline def NeutralColor_=(x: typings.babylonjs.BABYLON.Color4): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NeutralColor")(x.asInstanceOf[js.Any])
   
   /**
     * Stencil value used for the other meshes in the scene.
@@ -62,8 +60,7 @@ object HighlightLayer {
   @JSGlobal("BABYLON.HighlightLayer.NormalMeshStencilReference")
   @js.native
   def NormalMeshStencilReference: Double = js.native
-  @scala.inline
-  def NormalMeshStencilReference_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NormalMeshStencilReference")(x.asInstanceOf[js.Any])
+  inline def NormalMeshStencilReference_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NormalMeshStencilReference")(x.asInstanceOf[js.Any])
   
   /**
     * Creates a Highlight layer from parsed Highlight layer data
@@ -72,7 +69,5 @@ object HighlightLayer {
     * @param rootUrl defines the root URL containing the Highlight layer information
     * @returns a parsed Highlight layer
     */
-  @JSGlobal("BABYLON.HighlightLayer.Parse")
-  @js.native
-  def Parse(parsedHightlightLayer: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.HighlightLayer = js.native
+  inline def Parse(parsedHightlightLayer: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.HighlightLayer = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedHightlightLayer.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.HighlightLayer]
 }

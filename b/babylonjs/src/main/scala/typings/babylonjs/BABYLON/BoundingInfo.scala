@@ -2,16 +2,17 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BoundingInfo extends ICullable {
+trait BoundingInfo
+  extends StObject
+     with ICullable {
   
   /** @hidden */
   def _checkCollision(collider: Collider): Boolean = js.native
   
-  var _isLocked: js.Any = js.native
+  /* private */ var _isLocked: js.Any = js.native
   
   /**
     * Bounding box for the mesh

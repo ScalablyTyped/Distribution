@@ -4,39 +4,36 @@ import typings.babylonjs.HTMLCanvasElement
 import typings.babylonjs.WebGLUniformLocation
 import typings.babylonjs.anon.Width
 import typings.std.Float32Array
-import typings.std.Int32Array
 import typings.std.WebGLVertexArrayObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NativeEngine extends Engine {
+trait NativeEngine
+  extends StObject
+     with Engine {
   
   /** Defines the invalid handle returned by bgfx when resource creation goes wrong */
-  val INVALID_HANDLE: js.Any = js.native
+  /* private */ val INVALID_HANDLE: js.Any = js.native
   
-  /** @hidden */
-  def _bindTexture(channel: Double, texture: InternalTexture): Unit = js.native
+  /* private */ var _boundBuffersVertexArray: js.Any = js.native
   
-  var _boundBuffersVertexArray: js.Any = js.native
-  
-  var _currentDepthTest: js.Any = js.native
+  /* private */ var _currentDepthTest: js.Any = js.native
   
   /* protected */ def _deleteBuffer(buffer: NativeDataBuffer): Unit = js.native
   
-  var _getAddressMode: js.Any = js.native
+  /* private */ var _getAddressMode: js.Any = js.native
   
-  var _getNativeAlphaMode: js.Any = js.native
+  /* private */ var _getNativeAlphaMode: js.Any = js.native
   
-  var _getNativeAttribType: js.Any = js.native
+  /* private */ var _getNativeAttribType: js.Any = js.native
   
-  var _getNativeSamplingMode: js.Any = js.native
+  /* private */ var _getNativeSamplingMode: js.Any = js.native
   
-  var _getNativeTextureFormat: js.Any = js.native
+  /* private */ var _getNativeTextureFormat: js.Any = js.native
   
-  val _native: js.Any = js.native
+  /* private */ val _native: js.Any = js.native
   
   /* protected */ def _recordVertexArrayObject(
     vertexArray: js.Any,
@@ -45,85 +42,91 @@ trait NativeEngine extends Engine {
     effect: Effect
   ): Unit = js.native
   
-  var _updateAnisotropicLevel: js.Any = js.native
+  /* protected */ def _setTexture(channel: Double, texture: Nullable[BaseTexture]): Boolean = js.native
+  /* protected */ def _setTexture(channel: Double, texture: Nullable[BaseTexture], isPartOfTextureArray: Boolean): Boolean = js.native
+  /* protected */ def _setTexture(
+    channel: Double,
+    texture: Nullable[BaseTexture],
+    isPartOfTextureArray: Boolean,
+    depthStencilTexture: Boolean
+  ): Boolean = js.native
+  /* protected */ def _setTexture(
+    channel: Double,
+    texture: Nullable[BaseTexture],
+    isPartOfTextureArray: Unit,
+    depthStencilTexture: Boolean
+  ): Boolean = js.native
+  
+  /* private */ var _updateAnisotropicLevel: js.Any = js.native
+  
+  def bindBuffers(
+    vertexBuffers: org.scalablytyped.runtime.StringDictionary[VertexBuffer],
+    indexBuffer: Nullable[NativeDataBuffer],
+    effect: Effect
+  ): Unit = js.native
   
   def bindFramebuffer(texture: InternalTexture): Unit = js.native
-  def bindFramebuffer(
-    texture: InternalTexture,
-    faceIndex: js.UndefOr[scala.Nothing],
-    requiredWidth: js.UndefOr[scala.Nothing],
-    requiredHeight: js.UndefOr[scala.Nothing],
-    forceFullscreenViewport: Boolean
-  ): Unit = js.native
-  def bindFramebuffer(
-    texture: InternalTexture,
-    faceIndex: js.UndefOr[scala.Nothing],
-    requiredWidth: js.UndefOr[scala.Nothing],
-    requiredHeight: Double
-  ): Unit = js.native
-  def bindFramebuffer(
-    texture: InternalTexture,
-    faceIndex: js.UndefOr[scala.Nothing],
-    requiredWidth: js.UndefOr[scala.Nothing],
-    requiredHeight: Double,
-    forceFullscreenViewport: Boolean
-  ): Unit = js.native
-  def bindFramebuffer(texture: InternalTexture, faceIndex: js.UndefOr[scala.Nothing], requiredWidth: Double): Unit = js.native
-  def bindFramebuffer(
-    texture: InternalTexture,
-    faceIndex: js.UndefOr[scala.Nothing],
-    requiredWidth: Double,
-    requiredHeight: js.UndefOr[scala.Nothing],
-    forceFullscreenViewport: Boolean
-  ): Unit = js.native
-  def bindFramebuffer(
-    texture: InternalTexture,
-    faceIndex: js.UndefOr[scala.Nothing],
-    requiredWidth: Double,
-    requiredHeight: Double
-  ): Unit = js.native
-  def bindFramebuffer(
-    texture: InternalTexture,
-    faceIndex: js.UndefOr[scala.Nothing],
-    requiredWidth: Double,
-    requiredHeight: Double,
-    forceFullscreenViewport: Boolean
-  ): Unit = js.native
   def bindFramebuffer(texture: InternalTexture, faceIndex: Double): Unit = js.native
-  def bindFramebuffer(
-    texture: InternalTexture,
-    faceIndex: Double,
-    requiredWidth: js.UndefOr[scala.Nothing],
-    requiredHeight: js.UndefOr[scala.Nothing],
-    forceFullscreenViewport: Boolean
-  ): Unit = js.native
-  def bindFramebuffer(
-    texture: InternalTexture,
-    faceIndex: Double,
-    requiredWidth: js.UndefOr[scala.Nothing],
-    requiredHeight: Double
-  ): Unit = js.native
-  def bindFramebuffer(
-    texture: InternalTexture,
-    faceIndex: Double,
-    requiredWidth: js.UndefOr[scala.Nothing],
-    requiredHeight: Double,
-    forceFullscreenViewport: Boolean
-  ): Unit = js.native
   def bindFramebuffer(texture: InternalTexture, faceIndex: Double, requiredWidth: Double): Unit = js.native
-  def bindFramebuffer(
-    texture: InternalTexture,
-    faceIndex: Double,
-    requiredWidth: Double,
-    requiredHeight: js.UndefOr[scala.Nothing],
-    forceFullscreenViewport: Boolean
-  ): Unit = js.native
   def bindFramebuffer(texture: InternalTexture, faceIndex: Double, requiredWidth: Double, requiredHeight: Double): Unit = js.native
   def bindFramebuffer(
     texture: InternalTexture,
     faceIndex: Double,
     requiredWidth: Double,
     requiredHeight: Double,
+    forceFullscreenViewport: Boolean
+  ): Unit = js.native
+  def bindFramebuffer(
+    texture: InternalTexture,
+    faceIndex: Double,
+    requiredWidth: Double,
+    requiredHeight: Unit,
+    forceFullscreenViewport: Boolean
+  ): Unit = js.native
+  def bindFramebuffer(texture: InternalTexture, faceIndex: Double, requiredWidth: Unit, requiredHeight: Double): Unit = js.native
+  def bindFramebuffer(
+    texture: InternalTexture,
+    faceIndex: Double,
+    requiredWidth: Unit,
+    requiredHeight: Double,
+    forceFullscreenViewport: Boolean
+  ): Unit = js.native
+  def bindFramebuffer(
+    texture: InternalTexture,
+    faceIndex: Double,
+    requiredWidth: Unit,
+    requiredHeight: Unit,
+    forceFullscreenViewport: Boolean
+  ): Unit = js.native
+  def bindFramebuffer(texture: InternalTexture, faceIndex: Unit, requiredWidth: Double): Unit = js.native
+  def bindFramebuffer(texture: InternalTexture, faceIndex: Unit, requiredWidth: Double, requiredHeight: Double): Unit = js.native
+  def bindFramebuffer(
+    texture: InternalTexture,
+    faceIndex: Unit,
+    requiredWidth: Double,
+    requiredHeight: Double,
+    forceFullscreenViewport: Boolean
+  ): Unit = js.native
+  def bindFramebuffer(
+    texture: InternalTexture,
+    faceIndex: Unit,
+    requiredWidth: Double,
+    requiredHeight: Unit,
+    forceFullscreenViewport: Boolean
+  ): Unit = js.native
+  def bindFramebuffer(texture: InternalTexture, faceIndex: Unit, requiredWidth: Unit, requiredHeight: Double): Unit = js.native
+  def bindFramebuffer(
+    texture: InternalTexture,
+    faceIndex: Unit,
+    requiredWidth: Unit,
+    requiredHeight: Double,
+    forceFullscreenViewport: Boolean
+  ): Unit = js.native
+  def bindFramebuffer(
+    texture: InternalTexture,
+    faceIndex: Unit,
+    requiredWidth: Unit,
+    requiredHeight: Unit,
     forceFullscreenViewport: Boolean
   ): Unit = js.native
   
@@ -150,10 +153,10 @@ trait NativeEngine extends Engine {
     scene: Nullable[Scene],
     files: Nullable[js.Array[String]],
     noMipmap: js.UndefOr[Boolean],
-    onLoad: js.UndefOr[Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]]],
+    onLoad: js.UndefOr[Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]]],
     onError: js.UndefOr[
       Nullable[
-        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
       ]
     ],
     format: js.UndefOr[Double],
@@ -171,25 +174,15 @@ trait NativeEngine extends Engine {
   
   def createVertexBuffer(data: DataArray, updateable: Boolean): NativeDataBuffer = js.native
   
-  def setArray(uniform: WebGLUniformLocation, array: js.Array[Double]): Boolean = js.native
-  
-  def setArray2(uniform: WebGLUniformLocation, array: js.Array[Double]): Boolean = js.native
-  
-  def setArray3(uniform: WebGLUniformLocation, array: js.Array[Double]): Boolean = js.native
-  
-  def setArray4(uniform: WebGLUniformLocation, array: js.Array[Double]): Boolean = js.native
+  def recordVertexArrayObject(
+    vertexBuffers: org.scalablytyped.runtime.StringDictionary[VertexBuffer],
+    indexBuffer: Nullable[NativeDataBuffer],
+    effect: Effect
+  ): WebGLVertexArrayObject = js.native
   
   def setColor3(uniform: WebGLUniformLocation, color3: Color3): Boolean = js.native
   
   def setColor4(uniform: WebGLUniformLocation, color3: Color3, alpha: Double): Boolean = js.native
-  
-  def setFloat(uniform: WebGLUniformLocation, value: Double): Boolean = js.native
-  
-  def setFloat2(uniform: WebGLUniformLocation, x: Double, y: Double): Boolean = js.native
-  
-  def setFloat3(uniform: WebGLUniformLocation, x: Double, y: Double, z: Double): Boolean = js.native
-  
-  def setFloat4(uniform: WebGLUniformLocation, x: Double, y: Double, z: Double, w: Double): Boolean = js.native
   
   def setFloatArray(uniform: WebGLUniformLocation, array: Float32Array): Boolean = js.native
   
@@ -199,28 +192,12 @@ trait NativeEngine extends Engine {
   
   def setFloatArray4(uniform: WebGLUniformLocation, array: Float32Array): Boolean = js.native
   
-  def setInt(uniform: WebGLUniformLocation, int: Double): Boolean = js.native
-  
-  def setIntArray(uniform: WebGLUniformLocation, array: Int32Array): Boolean = js.native
-  
-  def setIntArray2(uniform: WebGLUniformLocation, array: Int32Array): Boolean = js.native
-  
-  def setIntArray3(uniform: WebGLUniformLocation, array: Int32Array): Boolean = js.native
-  
-  def setIntArray4(uniform: WebGLUniformLocation, array: Int32Array): Boolean = js.native
-  
-  def setMatrices(uniform: WebGLUniformLocation, matrices: Float32Array): Boolean = js.native
-  
   def setMatrix(uniform: WebGLUniformLocation, matrix: Matrix): Unit = js.native
   
-  def setMatrix2x2(uniform: WebGLUniformLocation, matrix: Float32Array): Boolean = js.native
-  
-  def setMatrix3x3(uniform: WebGLUniformLocation, matrix: Float32Array): Boolean = js.native
-  
   def setViewport(viewport: Viewport): Unit = js.native
-  def setViewport(viewport: Viewport, requiredWidth: js.UndefOr[scala.Nothing], requiredHeight: Double): Unit = js.native
   def setViewport(viewport: Viewport, requiredWidth: Double): Unit = js.native
   def setViewport(viewport: Viewport, requiredWidth: Double, requiredHeight: Double): Unit = js.native
+  def setViewport(viewport: Viewport, requiredWidth: Unit, requiredHeight: Double): Unit = js.native
   
   /**
     * Update the content of a dynamic texture
@@ -236,13 +213,6 @@ trait NativeEngine extends Engine {
     texture: Nullable[InternalTexture],
     canvas: HTMLCanvasElement,
     invertY: Boolean,
-    premulAlpha: js.UndefOr[scala.Nothing],
-    format: Double
-  ): Unit = js.native
-  def updateDynamicTexture(
-    texture: Nullable[InternalTexture],
-    canvas: HTMLCanvasElement,
-    invertY: Boolean,
     premulAlpha: Boolean
   ): Unit = js.native
   def updateDynamicTexture(
@@ -250,6 +220,13 @@ trait NativeEngine extends Engine {
     canvas: HTMLCanvasElement,
     invertY: Boolean,
     premulAlpha: Boolean,
+    format: Double
+  ): Unit = js.native
+  def updateDynamicTexture(
+    texture: Nullable[InternalTexture],
+    canvas: HTMLCanvasElement,
+    invertY: Boolean,
+    premulAlpha: Unit,
     format: Double
   ): Unit = js.native
 }

@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.MorphTarget")
 @js.native
 class MorphTarget protected ()
-  extends typings.babylonjs.BABYLON.MorphTarget {
+  extends StObject
+     with typings.babylonjs.BABYLON.MorphTarget {
   /**
     * Creates a new MorphTarget
     * @param name defines the name of the target
@@ -23,18 +23,28 @@ class MorphTarget protected ()
   def this(
     /** defines the name of the target */
   name: String,
-    influence: js.UndefOr[scala.Nothing],
+    influence: Double,
     scene: Nullable[typings.babylonjs.BABYLON.Scene]
   ) = this()
   def this(
     /** defines the name of the target */
   name: String,
-    influence: Double,
+    influence: Unit,
     scene: Nullable[typings.babylonjs.BABYLON.Scene]
   ) = this()
+  
+  /**
+    * Array of animations
+    */
+  /* CompleteClass */
+  var animations: Nullable[js.Array[typings.babylonjs.BABYLON.Animation]] = js.native
 }
 /* static members */
 object MorphTarget {
+  
+  @JSGlobal("BABYLON.MorphTarget")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a MorphTarget from mesh data
@@ -43,25 +53,15 @@ object MorphTarget {
     * @param influence defines the influence to attach to the target
     * @returns a new MorphTarget
     */
-  @JSGlobal("BABYLON.MorphTarget.FromMesh")
-  @js.native
-  def FromMesh(mesh: typings.babylonjs.BABYLON.AbstractMesh): typings.babylonjs.BABYLON.MorphTarget = js.native
-  @JSGlobal("BABYLON.MorphTarget.FromMesh")
-  @js.native
-  def FromMesh(mesh: typings.babylonjs.BABYLON.AbstractMesh, name: js.UndefOr[scala.Nothing], influence: Double): typings.babylonjs.BABYLON.MorphTarget = js.native
-  @JSGlobal("BABYLON.MorphTarget.FromMesh")
-  @js.native
-  def FromMesh(mesh: typings.babylonjs.BABYLON.AbstractMesh, name: String): typings.babylonjs.BABYLON.MorphTarget = js.native
-  @JSGlobal("BABYLON.MorphTarget.FromMesh")
-  @js.native
-  def FromMesh(mesh: typings.babylonjs.BABYLON.AbstractMesh, name: String, influence: Double): typings.babylonjs.BABYLON.MorphTarget = js.native
+  inline def FromMesh(mesh: typings.babylonjs.BABYLON.AbstractMesh): typings.babylonjs.BABYLON.MorphTarget = ^.asInstanceOf[js.Dynamic].applyDynamic("FromMesh")(mesh.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.MorphTarget]
+  inline def FromMesh(mesh: typings.babylonjs.BABYLON.AbstractMesh, name: String): typings.babylonjs.BABYLON.MorphTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("FromMesh")(mesh.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.MorphTarget]
+  inline def FromMesh(mesh: typings.babylonjs.BABYLON.AbstractMesh, name: String, influence: Double): typings.babylonjs.BABYLON.MorphTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("FromMesh")(mesh.asInstanceOf[js.Any], name.asInstanceOf[js.Any], influence.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.MorphTarget]
+  inline def FromMesh(mesh: typings.babylonjs.BABYLON.AbstractMesh, name: Unit, influence: Double): typings.babylonjs.BABYLON.MorphTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("FromMesh")(mesh.asInstanceOf[js.Any], name.asInstanceOf[js.Any], influence.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.MorphTarget]
   
   /**
     * Creates a new target from serialized data
     * @param serializationObject defines the serialized data to use
     * @returns a new MorphTarget
     */
-  @JSGlobal("BABYLON.MorphTarget.Parse")
-  @js.native
-  def Parse(serializationObject: js.Any): typings.babylonjs.BABYLON.MorphTarget = js.native
+  inline def Parse(serializationObject: js.Any): typings.babylonjs.BABYLON.MorphTarget = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(serializationObject.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.MorphTarget]
 }

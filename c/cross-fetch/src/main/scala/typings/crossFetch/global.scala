@@ -19,8 +19,6 @@ object global {
     extends typings.std.global.Headers {
     def this(init: HeadersInit) = this()
   }
-  /* was `typeof Headers` */
-  object Headers
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   /* was `typeof Request` */
@@ -31,8 +29,6 @@ object global {
     def this(input: RequestInfo) = this()
     def this(input: RequestInfo, init: RequestInit) = this()
   }
-  /* was `typeof Request` */
-  object Request
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   /* was `typeof Response` */

@@ -14,7 +14,6 @@ import typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gizmosIndexMod {
@@ -32,24 +31,24 @@ object gizmosIndexMod {
       */
     def this(dragAxis: Vector3) = this()
     def this(dragAxis: Vector3, color: Color3) = this()
-    def this(dragAxis: Vector3, color: js.UndefOr[scala.Nothing], gizmoLayer: UtilityLayerRenderer) = this()
+    def this(dragAxis: Vector3, color: Unit, gizmoLayer: UtilityLayerRenderer) = this()
     def this(dragAxis: Vector3, color: Color3, gizmoLayer: UtilityLayerRenderer) = this()
     def this(
       dragAxis: Vector3,
-      color: js.UndefOr[scala.Nothing],
-      gizmoLayer: js.UndefOr[scala.Nothing],
+      color: Unit,
+      gizmoLayer: Unit,
       parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]
     ) = this()
     def this(
       dragAxis: Vector3,
-      color: js.UndefOr[scala.Nothing],
+      color: Unit,
       gizmoLayer: UtilityLayerRenderer,
       parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]
     ) = this()
     def this(
       dragAxis: Vector3,
       color: Color3,
-      gizmoLayer: js.UndefOr[scala.Nothing],
+      gizmoLayer: Unit,
       parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]
     ) = this()
     def this(
@@ -58,61 +57,60 @@ object gizmosIndexMod {
       gizmoLayer: UtilityLayerRenderer,
       parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]
     ) = this()
+    def this(dragAxis: Vector3, color: Unit, gizmoLayer: Unit, parent: Unit, thickness: Double) = this()
     def this(
       dragAxis: Vector3,
-      color: js.UndefOr[scala.Nothing],
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      parent: js.UndefOr[Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]],
+      color: Unit,
+      gizmoLayer: Unit,
+      parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo],
+      thickness: Double
+    ) = this()
+    def this(dragAxis: Vector3, color: Unit, gizmoLayer: UtilityLayerRenderer, parent: Unit, thickness: Double) = this()
+    def this(
+      dragAxis: Vector3,
+      color: Unit,
+      gizmoLayer: UtilityLayerRenderer,
+      parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo],
+      thickness: Double
+    ) = this()
+    def this(dragAxis: Vector3, color: Color3, gizmoLayer: Unit, parent: Unit, thickness: Double) = this()
+    def this(
+      dragAxis: Vector3,
+      color: Color3,
+      gizmoLayer: Unit,
+      parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo],
       thickness: Double
     ) = this()
     def this(
       dragAxis: Vector3,
-      color: js.UndefOr[scala.Nothing],
-      gizmoLayer: UtilityLayerRenderer,
-      parent: js.UndefOr[Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]],
-      thickness: Double
-    ) = this()
-    def this(
-      dragAxis: Vector3,
       color: Color3,
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      parent: js.UndefOr[Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]],
+      gizmoLayer: UtilityLayerRenderer,
+      parent: Unit,
       thickness: Double
     ) = this()
     def this(
       dragAxis: Vector3,
       color: Color3,
       gizmoLayer: UtilityLayerRenderer,
-      parent: js.UndefOr[Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]],
+      parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo],
       thickness: Double
     ) = this()
   }
   /* static members */
   object AxisDragGizmo {
     
-    /** @hidden */
-    @JSImport("babylonjs/Gizmos/index", "AxisDragGizmo._CreateArrow")
+    @JSImport("babylonjs/Gizmos/index", "AxisDragGizmo")
     @js.native
-    def _CreateArrow(scene: Scene, material: StandardMaterial): TransformNode = js.native
-    @JSImport("babylonjs/Gizmos/index", "AxisDragGizmo._CreateArrow")
-    @js.native
-    def _CreateArrow(
-      scene: Scene,
-      material: StandardMaterial,
-      thickness: js.UndefOr[scala.Nothing],
-      isCollider: Boolean
-    ): TransformNode = js.native
-    @JSImport("babylonjs/Gizmos/index", "AxisDragGizmo._CreateArrow")
-    @js.native
-    def _CreateArrow(scene: Scene, material: StandardMaterial, thickness: Double): TransformNode = js.native
-    @JSImport("babylonjs/Gizmos/index", "AxisDragGizmo._CreateArrow")
-    @js.native
-    def _CreateArrow(scene: Scene, material: StandardMaterial, thickness: Double, isCollider: Boolean): TransformNode = js.native
+    val ^ : js.Any = js.native
     
     /** @hidden */
-    @JSImport("babylonjs/Gizmos/index", "AxisDragGizmo._CreateArrowInstance")
-    @js.native
-    def _CreateArrowInstance(scene: Scene, arrow: TransformNode): TransformNode = js.native
+    inline def _CreateArrow(scene: Scene, material: StandardMaterial): TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrow")(scene.asInstanceOf[js.Any], material.asInstanceOf[js.Any])).asInstanceOf[TransformNode]
+    inline def _CreateArrow(scene: Scene, material: StandardMaterial, thickness: Double): TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrow")(scene.asInstanceOf[js.Any], material.asInstanceOf[js.Any], thickness.asInstanceOf[js.Any])).asInstanceOf[TransformNode]
+    inline def _CreateArrow(scene: Scene, material: StandardMaterial, thickness: Double, isCollider: Boolean): TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrow")(scene.asInstanceOf[js.Any], material.asInstanceOf[js.Any], thickness.asInstanceOf[js.Any], isCollider.asInstanceOf[js.Any])).asInstanceOf[TransformNode]
+    inline def _CreateArrow(scene: Scene, material: StandardMaterial, thickness: Unit, isCollider: Boolean): TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrow")(scene.asInstanceOf[js.Any], material.asInstanceOf[js.Any], thickness.asInstanceOf[js.Any], isCollider.asInstanceOf[js.Any])).asInstanceOf[TransformNode]
+    
+    /** @hidden */
+    inline def _CreateArrowInstance(scene: Scene, arrow: TransformNode): TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrowInstance")(scene.asInstanceOf[js.Any], arrow.asInstanceOf[js.Any])).asInstanceOf[TransformNode]
   }
   
   @JSImport("babylonjs/Gizmos/index", "AxisScaleGizmo")
@@ -128,24 +126,24 @@ object gizmosIndexMod {
       */
     def this(dragAxis: Vector3) = this()
     def this(dragAxis: Vector3, color: Color3) = this()
-    def this(dragAxis: Vector3, color: js.UndefOr[scala.Nothing], gizmoLayer: UtilityLayerRenderer) = this()
+    def this(dragAxis: Vector3, color: Unit, gizmoLayer: UtilityLayerRenderer) = this()
     def this(dragAxis: Vector3, color: Color3, gizmoLayer: UtilityLayerRenderer) = this()
     def this(
       dragAxis: Vector3,
-      color: js.UndefOr[scala.Nothing],
-      gizmoLayer: js.UndefOr[scala.Nothing],
+      color: Unit,
+      gizmoLayer: Unit,
       parent: Nullable[typings.babylonjs.scaleGizmoMod.ScaleGizmo]
     ) = this()
     def this(
       dragAxis: Vector3,
-      color: js.UndefOr[scala.Nothing],
+      color: Unit,
       gizmoLayer: UtilityLayerRenderer,
       parent: Nullable[typings.babylonjs.scaleGizmoMod.ScaleGizmo]
     ) = this()
     def this(
       dragAxis: Vector3,
       color: Color3,
-      gizmoLayer: js.UndefOr[scala.Nothing],
+      gizmoLayer: Unit,
       parent: Nullable[typings.babylonjs.scaleGizmoMod.ScaleGizmo]
     ) = this()
     def this(
@@ -154,32 +152,42 @@ object gizmosIndexMod {
       gizmoLayer: UtilityLayerRenderer,
       parent: Nullable[typings.babylonjs.scaleGizmoMod.ScaleGizmo]
     ) = this()
+    def this(dragAxis: Vector3, color: Unit, gizmoLayer: Unit, parent: Unit, thickness: Double) = this()
     def this(
       dragAxis: Vector3,
-      color: js.UndefOr[scala.Nothing],
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      parent: js.UndefOr[Nullable[typings.babylonjs.scaleGizmoMod.ScaleGizmo]],
+      color: Unit,
+      gizmoLayer: Unit,
+      parent: Nullable[typings.babylonjs.scaleGizmoMod.ScaleGizmo],
+      thickness: Double
+    ) = this()
+    def this(dragAxis: Vector3, color: Unit, gizmoLayer: UtilityLayerRenderer, parent: Unit, thickness: Double) = this()
+    def this(
+      dragAxis: Vector3,
+      color: Unit,
+      gizmoLayer: UtilityLayerRenderer,
+      parent: Nullable[typings.babylonjs.scaleGizmoMod.ScaleGizmo],
+      thickness: Double
+    ) = this()
+    def this(dragAxis: Vector3, color: Color3, gizmoLayer: Unit, parent: Unit, thickness: Double) = this()
+    def this(
+      dragAxis: Vector3,
+      color: Color3,
+      gizmoLayer: Unit,
+      parent: Nullable[typings.babylonjs.scaleGizmoMod.ScaleGizmo],
       thickness: Double
     ) = this()
     def this(
       dragAxis: Vector3,
-      color: js.UndefOr[scala.Nothing],
-      gizmoLayer: UtilityLayerRenderer,
-      parent: js.UndefOr[Nullable[typings.babylonjs.scaleGizmoMod.ScaleGizmo]],
-      thickness: Double
-    ) = this()
-    def this(
-      dragAxis: Vector3,
       color: Color3,
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      parent: js.UndefOr[Nullable[typings.babylonjs.scaleGizmoMod.ScaleGizmo]],
+      gizmoLayer: UtilityLayerRenderer,
+      parent: Unit,
       thickness: Double
     ) = this()
     def this(
       dragAxis: Vector3,
       color: Color3,
       gizmoLayer: UtilityLayerRenderer,
-      parent: js.UndefOr[Nullable[typings.babylonjs.scaleGizmoMod.ScaleGizmo]],
+      parent: Nullable[typings.babylonjs.scaleGizmoMod.ScaleGizmo],
       thickness: Double
     ) = this()
   }
@@ -194,20 +202,22 @@ object gizmosIndexMod {
   class BoundingBoxGizmo ()
     extends typings.babylonjs.boundingBoxGizmoMod.BoundingBoxGizmo {
     def this(color: Color3) = this()
-    def this(color: js.UndefOr[scala.Nothing], gizmoLayer: UtilityLayerRenderer) = this()
+    def this(color: Unit, gizmoLayer: UtilityLayerRenderer) = this()
     def this(color: Color3, gizmoLayer: UtilityLayerRenderer) = this()
   }
   /* static members */
   object BoundingBoxGizmo {
+    
+    @JSImport("babylonjs/Gizmos/index", "BoundingBoxGizmo")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Makes a mesh not pickable and wraps the mesh inside of a bounding box mesh that is pickable. (This is useful to avoid picking within complex geometry)
       * @param mesh the mesh to wrap in the bounding box mesh and make not pickable
       * @returns the bounding box mesh with the passed in mesh as a child
       */
-    @JSImport("babylonjs/Gizmos/index", "BoundingBoxGizmo.MakeNotPickableAndWrapInBoundingBox")
-    @js.native
-    def MakeNotPickableAndWrapInBoundingBox(mesh: Mesh): Mesh = js.native
+    inline def MakeNotPickableAndWrapInBoundingBox(mesh: Mesh): Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("MakeNotPickableAndWrapInBoundingBox")(mesh.asInstanceOf[js.Any]).asInstanceOf[Mesh]
   }
   
   @JSImport("babylonjs/Gizmos/index", "CameraGizmo")
@@ -230,20 +240,17 @@ object gizmosIndexMod {
     @JSImport("babylonjs/Gizmos/index", "CameraGizmo._CreateCameraFrustum")
     @js.native
     def _CreateCameraFrustum: js.Any = js.native
-    @scala.inline
-    def _CreateCameraFrustum_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateCameraFrustum")(x.asInstanceOf[js.Any])
+    inline def _CreateCameraFrustum_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateCameraFrustum")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Gizmos/index", "CameraGizmo._CreateCameraMesh")
     @js.native
     def _CreateCameraMesh: js.Any = js.native
-    @scala.inline
-    def _CreateCameraMesh_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateCameraMesh")(x.asInstanceOf[js.Any])
+    inline def _CreateCameraMesh_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateCameraMesh")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Gizmos/index", "CameraGizmo._Scale")
     @js.native
     def _Scale: js.Any = js.native
-    @scala.inline
-    def _Scale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Scale")(x.asInstanceOf[js.Any])
+    inline def _Scale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Scale")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Gizmos/index", "Gizmo")
@@ -260,15 +267,17 @@ object gizmosIndexMod {
   /* static members */
   object Gizmo {
     
+    @JSImport("babylonjs/Gizmos/index", "Gizmo")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Subscribes to pointer up, down, and hover events. Used for responsive gizmos.
       * @param gizmoLayer The utility layer the gizmo will be added to
       * @param gizmoAxisCache Gizmo axis definition used for reactive gizmo UI
       * @returns {Observer<PointerInfo>} pointerObserver
       */
-    @JSImport("babylonjs/Gizmos/index", "Gizmo.GizmoAxisPointerObserver")
-    @js.native
-    def GizmoAxisPointerObserver(gizmoLayer: UtilityLayerRenderer, gizmoAxisCache: Map[Mesh, GizmoAxisCache]): Observer[PointerInfo] = js.native
+    inline def GizmoAxisPointerObserver(gizmoLayer: UtilityLayerRenderer, gizmoAxisCache: Map[Mesh, GizmoAxisCache]): Observer[PointerInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("GizmoAxisPointerObserver")(gizmoLayer.asInstanceOf[js.Any], gizmoAxisCache.asInstanceOf[js.Any])).asInstanceOf[Observer[PointerInfo]]
   }
   
   @JSImport("babylonjs/Gizmos/index", "GizmoManager")
@@ -284,29 +293,19 @@ object gizmosIndexMod {
       */
     def this(scene: Scene) = this()
     def this(scene: Scene, thickness: Double) = this()
-    def this(scene: Scene, thickness: js.UndefOr[scala.Nothing], utilityLayer: UtilityLayerRenderer) = this()
     def this(scene: Scene, thickness: Double, utilityLayer: UtilityLayerRenderer) = this()
+    def this(scene: Scene, thickness: Unit, utilityLayer: UtilityLayerRenderer) = this()
+    def this(scene: Scene, thickness: Double, utilityLayer: Unit, keepDepthUtilityLayer: UtilityLayerRenderer) = this()
     def this(
       scene: Scene,
-      thickness: js.UndefOr[scala.Nothing],
-      utilityLayer: js.UndefOr[scala.Nothing],
-      keepDepthUtilityLayer: UtilityLayerRenderer
-    ) = this()
-    def this(
-      scene: Scene,
-      thickness: js.UndefOr[scala.Nothing],
+      thickness: Double,
       utilityLayer: UtilityLayerRenderer,
       keepDepthUtilityLayer: UtilityLayerRenderer
     ) = this()
+    def this(scene: Scene, thickness: Unit, utilityLayer: Unit, keepDepthUtilityLayer: UtilityLayerRenderer) = this()
     def this(
       scene: Scene,
-      thickness: Double,
-      utilityLayer: js.UndefOr[scala.Nothing],
-      keepDepthUtilityLayer: UtilityLayerRenderer
-    ) = this()
-    def this(
-      scene: Scene,
-      thickness: Double,
+      thickness: Unit,
       utilityLayer: UtilityLayerRenderer,
       keepDepthUtilityLayer: UtilityLayerRenderer
     ) = this()
@@ -332,14 +331,12 @@ object gizmosIndexMod {
     @JSImport("babylonjs/Gizmos/index", "LightGizmo._CreateDirectionalLightMesh")
     @js.native
     def _CreateDirectionalLightMesh: js.Any = js.native
-    @scala.inline
-    def _CreateDirectionalLightMesh_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateDirectionalLightMesh")(x.asInstanceOf[js.Any])
+    inline def _CreateDirectionalLightMesh_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateDirectionalLightMesh")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Gizmos/index", "LightGizmo._CreateHemisphericLightMesh")
     @js.native
     def _CreateHemisphericLightMesh: js.Any = js.native
-    @scala.inline
-    def _CreateHemisphericLightMesh_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateHemisphericLightMesh")(x.asInstanceOf[js.Any])
+    inline def _CreateHemisphericLightMesh_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateHemisphericLightMesh")(x.asInstanceOf[js.Any])
     
     /**
       * Creates the lines for a light mesh
@@ -347,26 +344,22 @@ object gizmosIndexMod {
     @JSImport("babylonjs/Gizmos/index", "LightGizmo._CreateLightLines")
     @js.native
     def _CreateLightLines: js.Any = js.native
-    @scala.inline
-    def _CreateLightLines_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateLightLines")(x.asInstanceOf[js.Any])
+    inline def _CreateLightLines_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateLightLines")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Gizmos/index", "LightGizmo._CreatePointLightMesh")
     @js.native
     def _CreatePointLightMesh: js.Any = js.native
-    @scala.inline
-    def _CreatePointLightMesh_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreatePointLightMesh")(x.asInstanceOf[js.Any])
+    inline def _CreatePointLightMesh_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreatePointLightMesh")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Gizmos/index", "LightGizmo._CreateSpotLightMesh")
     @js.native
     def _CreateSpotLightMesh: js.Any = js.native
-    @scala.inline
-    def _CreateSpotLightMesh_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateSpotLightMesh")(x.asInstanceOf[js.Any])
+    inline def _CreateSpotLightMesh_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateSpotLightMesh")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Gizmos/index", "LightGizmo._Scale")
     @js.native
     def _Scale: js.Any = js.native
-    @scala.inline
-    def _Scale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Scale")(x.asInstanceOf[js.Any])
+    inline def _Scale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Scale")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Gizmos/index", "PlaneDragGizmo")
@@ -381,24 +374,24 @@ object gizmosIndexMod {
       */
     def this(dragPlaneNormal: Vector3) = this()
     def this(dragPlaneNormal: Vector3, color: Color3) = this()
-    def this(dragPlaneNormal: Vector3, color: js.UndefOr[scala.Nothing], gizmoLayer: UtilityLayerRenderer) = this()
+    def this(dragPlaneNormal: Vector3, color: Unit, gizmoLayer: UtilityLayerRenderer) = this()
     def this(dragPlaneNormal: Vector3, color: Color3, gizmoLayer: UtilityLayerRenderer) = this()
     def this(
       dragPlaneNormal: Vector3,
-      color: js.UndefOr[scala.Nothing],
-      gizmoLayer: js.UndefOr[scala.Nothing],
+      color: Unit,
+      gizmoLayer: Unit,
       parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]
     ) = this()
     def this(
       dragPlaneNormal: Vector3,
-      color: js.UndefOr[scala.Nothing],
+      color: Unit,
       gizmoLayer: UtilityLayerRenderer,
       parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]
     ) = this()
     def this(
       dragPlaneNormal: Vector3,
       color: Color3,
-      gizmoLayer: js.UndefOr[scala.Nothing],
+      gizmoLayer: Unit,
       parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]
     ) = this()
     def this(
@@ -411,10 +404,12 @@ object gizmosIndexMod {
   /* static members */
   object PlaneDragGizmo {
     
-    /** @hidden */
-    @JSImport("babylonjs/Gizmos/index", "PlaneDragGizmo._CreatePlane")
+    @JSImport("babylonjs/Gizmos/index", "PlaneDragGizmo")
     @js.native
-    def _CreatePlane(scene: Scene, material: StandardMaterial): TransformNode = js.native
+    val ^ : js.Any = js.native
+    
+    /** @hidden */
+    inline def _CreatePlane(scene: Scene, material: StandardMaterial): TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreatePlane")(scene.asInstanceOf[js.Any], material.asInstanceOf[js.Any])).asInstanceOf[TransformNode]
   }
   
   @JSImport("babylonjs/Gizmos/index", "PlaneRotationGizmo")
@@ -450,8 +445,7 @@ object gizmosIndexMod {
     @JSImport("babylonjs/Gizmos/index", "PlaneRotationGizmo._CircleConstants")
     @js.native
     def _CircleConstants: js.Any = js.native
-    @scala.inline
-    def _CircleConstants_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CircleConstants")(x.asInstanceOf[js.Any])
+    inline def _CircleConstants_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CircleConstants")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Gizmos/index", "PositionGizmo")
@@ -464,26 +458,18 @@ object gizmosIndexMod {
   class PositionGizmo ()
     extends typings.babylonjs.positionGizmoMod.PositionGizmo {
     def this(gizmoLayer: UtilityLayerRenderer) = this()
-    def this(gizmoLayer: js.UndefOr[scala.Nothing], thickness: Double) = this()
+    def this(gizmoLayer: Unit, thickness: Double) = this()
     def this(gizmoLayer: UtilityLayerRenderer, thickness: Double) = this()
+    def this(gizmoLayer: Unit, thickness: Double, gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager) = this()
+    def this(gizmoLayer: Unit, thickness: Unit, gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager) = this()
     def this(
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      thickness: js.UndefOr[scala.Nothing],
-      gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
-    ) = this()
-    def this(
-      gizmoLayer: js.UndefOr[scala.Nothing],
+      gizmoLayer: UtilityLayerRenderer,
       thickness: Double,
       gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
     ) = this()
     def this(
       gizmoLayer: UtilityLayerRenderer,
-      thickness: js.UndefOr[scala.Nothing],
-      gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
-    ) = this()
-    def this(
-      gizmoLayer: UtilityLayerRenderer,
-      thickness: Double,
+      thickness: Unit,
       gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
     ) = this()
   }
@@ -500,119 +486,83 @@ object gizmosIndexMod {
   class RotationGizmo ()
     extends typings.babylonjs.rotationGizmoMod.RotationGizmo {
     def this(gizmoLayer: UtilityLayerRenderer) = this()
-    def this(gizmoLayer: js.UndefOr[scala.Nothing], tessellation: Double) = this()
+    def this(gizmoLayer: Unit, tessellation: Double) = this()
     def this(gizmoLayer: UtilityLayerRenderer, tessellation: Double) = this()
-    def this(
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      tessellation: js.UndefOr[scala.Nothing],
-      useEulerRotation: Boolean
-    ) = this()
-    def this(gizmoLayer: js.UndefOr[scala.Nothing], tessellation: Double, useEulerRotation: Boolean) = this()
-    def this(
-      gizmoLayer: UtilityLayerRenderer,
-      tessellation: js.UndefOr[scala.Nothing],
-      useEulerRotation: Boolean
-    ) = this()
+    def this(gizmoLayer: Unit, tessellation: Double, useEulerRotation: Boolean) = this()
+    def this(gizmoLayer: Unit, tessellation: Unit, useEulerRotation: Boolean) = this()
     def this(gizmoLayer: UtilityLayerRenderer, tessellation: Double, useEulerRotation: Boolean) = this()
-    def this(
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      tessellation: js.UndefOr[scala.Nothing],
-      useEulerRotation: js.UndefOr[scala.Nothing],
-      thickness: Double
-    ) = this()
-    def this(
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      tessellation: js.UndefOr[scala.Nothing],
-      useEulerRotation: Boolean,
-      thickness: Double
-    ) = this()
-    def this(
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      tessellation: Double,
-      useEulerRotation: js.UndefOr[scala.Nothing],
-      thickness: Double
-    ) = this()
-    def this(
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      tessellation: Double,
-      useEulerRotation: Boolean,
-      thickness: Double
-    ) = this()
-    def this(
-      gizmoLayer: UtilityLayerRenderer,
-      tessellation: js.UndefOr[scala.Nothing],
-      useEulerRotation: js.UndefOr[scala.Nothing],
-      thickness: Double
-    ) = this()
-    def this(
-      gizmoLayer: UtilityLayerRenderer,
-      tessellation: js.UndefOr[scala.Nothing],
-      useEulerRotation: Boolean,
-      thickness: Double
-    ) = this()
-    def this(
-      gizmoLayer: UtilityLayerRenderer,
-      tessellation: Double,
-      useEulerRotation: js.UndefOr[scala.Nothing],
-      thickness: Double
-    ) = this()
+    def this(gizmoLayer: UtilityLayerRenderer, tessellation: Unit, useEulerRotation: Boolean) = this()
+    def this(gizmoLayer: Unit, tessellation: Double, useEulerRotation: Boolean, thickness: Double) = this()
+    def this(gizmoLayer: Unit, tessellation: Double, useEulerRotation: Unit, thickness: Double) = this()
+    def this(gizmoLayer: Unit, tessellation: Unit, useEulerRotation: Boolean, thickness: Double) = this()
+    def this(gizmoLayer: Unit, tessellation: Unit, useEulerRotation: Unit, thickness: Double) = this()
     def this(
       gizmoLayer: UtilityLayerRenderer,
       tessellation: Double,
       useEulerRotation: Boolean,
       thickness: Double
     ) = this()
+    def this(gizmoLayer: UtilityLayerRenderer, tessellation: Double, useEulerRotation: Unit, thickness: Double) = this()
+    def this(gizmoLayer: UtilityLayerRenderer, tessellation: Unit, useEulerRotation: Boolean, thickness: Double) = this()
+    def this(gizmoLayer: UtilityLayerRenderer, tessellation: Unit, useEulerRotation: Unit, thickness: Double) = this()
     def this(
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      tessellation: js.UndefOr[scala.Nothing],
-      useEulerRotation: js.UndefOr[scala.Nothing],
-      thickness: js.UndefOr[scala.Nothing],
-      gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
-    ) = this()
-    def this(
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      tessellation: js.UndefOr[scala.Nothing],
-      useEulerRotation: js.UndefOr[scala.Nothing],
-      thickness: Double,
-      gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
-    ) = this()
-    def this(
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      tessellation: js.UndefOr[scala.Nothing],
-      useEulerRotation: Boolean,
-      thickness: js.UndefOr[scala.Nothing],
-      gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
-    ) = this()
-    def this(
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      tessellation: js.UndefOr[scala.Nothing],
+      gizmoLayer: Unit,
+      tessellation: Double,
       useEulerRotation: Boolean,
       thickness: Double,
       gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
     ) = this()
     def this(
-      gizmoLayer: js.UndefOr[scala.Nothing],
+      gizmoLayer: Unit,
       tessellation: Double,
-      useEulerRotation: js.UndefOr[scala.Nothing],
-      thickness: js.UndefOr[scala.Nothing],
+      useEulerRotation: Boolean,
+      thickness: Unit,
       gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
     ) = this()
     def this(
-      gizmoLayer: js.UndefOr[scala.Nothing],
+      gizmoLayer: Unit,
       tessellation: Double,
-      useEulerRotation: js.UndefOr[scala.Nothing],
+      useEulerRotation: Unit,
       thickness: Double,
       gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
     ) = this()
     def this(
-      gizmoLayer: js.UndefOr[scala.Nothing],
+      gizmoLayer: Unit,
       tessellation: Double,
-      useEulerRotation: Boolean,
-      thickness: js.UndefOr[scala.Nothing],
+      useEulerRotation: Unit,
+      thickness: Unit,
       gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
     ) = this()
     def this(
-      gizmoLayer: js.UndefOr[scala.Nothing],
+      gizmoLayer: Unit,
+      tessellation: Unit,
+      useEulerRotation: Boolean,
+      thickness: Double,
+      gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
+    ) = this()
+    def this(
+      gizmoLayer: Unit,
+      tessellation: Unit,
+      useEulerRotation: Boolean,
+      thickness: Unit,
+      gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
+    ) = this()
+    def this(
+      gizmoLayer: Unit,
+      tessellation: Unit,
+      useEulerRotation: Unit,
+      thickness: Double,
+      gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
+    ) = this()
+    def this(
+      gizmoLayer: Unit,
+      tessellation: Unit,
+      useEulerRotation: Unit,
+      thickness: Unit,
+      gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
+    ) = this()
+    def this(
+      gizmoLayer: UtilityLayerRenderer,
       tessellation: Double,
       useEulerRotation: Boolean,
       thickness: Double,
@@ -620,58 +570,51 @@ object gizmosIndexMod {
     ) = this()
     def this(
       gizmoLayer: UtilityLayerRenderer,
-      tessellation: js.UndefOr[scala.Nothing],
-      useEulerRotation: js.UndefOr[scala.Nothing],
-      thickness: js.UndefOr[scala.Nothing],
-      gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
-    ) = this()
-    def this(
-      gizmoLayer: UtilityLayerRenderer,
-      tessellation: js.UndefOr[scala.Nothing],
-      useEulerRotation: js.UndefOr[scala.Nothing],
-      thickness: Double,
-      gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
-    ) = this()
-    def this(
-      gizmoLayer: UtilityLayerRenderer,
-      tessellation: js.UndefOr[scala.Nothing],
+      tessellation: Double,
       useEulerRotation: Boolean,
-      thickness: js.UndefOr[scala.Nothing],
+      thickness: Unit,
       gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
     ) = this()
     def this(
       gizmoLayer: UtilityLayerRenderer,
-      tessellation: js.UndefOr[scala.Nothing],
-      useEulerRotation: Boolean,
+      tessellation: Double,
+      useEulerRotation: Unit,
       thickness: Double,
       gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
     ) = this()
     def this(
       gizmoLayer: UtilityLayerRenderer,
       tessellation: Double,
-      useEulerRotation: js.UndefOr[scala.Nothing],
-      thickness: js.UndefOr[scala.Nothing],
+      useEulerRotation: Unit,
+      thickness: Unit,
       gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
     ) = this()
     def this(
       gizmoLayer: UtilityLayerRenderer,
-      tessellation: Double,
-      useEulerRotation: js.UndefOr[scala.Nothing],
+      tessellation: Unit,
+      useEulerRotation: Boolean,
+      thickness: Double,
+      gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
+    ) = this()
+    def this(
+      gizmoLayer: UtilityLayerRenderer,
+      tessellation: Unit,
+      useEulerRotation: Boolean,
+      thickness: Unit,
+      gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
+    ) = this()
+    def this(
+      gizmoLayer: UtilityLayerRenderer,
+      tessellation: Unit,
+      useEulerRotation: Unit,
       thickness: Double,
       gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
     ) = this()
     def this(
       gizmoLayer: UtilityLayerRenderer,
-      tessellation: Double,
-      useEulerRotation: Boolean,
-      thickness: js.UndefOr[scala.Nothing],
-      gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
-    ) = this()
-    def this(
-      gizmoLayer: UtilityLayerRenderer,
-      tessellation: Double,
-      useEulerRotation: Boolean,
-      thickness: Double,
+      tessellation: Unit,
+      useEulerRotation: Unit,
+      thickness: Unit,
       gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
     ) = this()
   }
@@ -686,26 +629,18 @@ object gizmosIndexMod {
   class ScaleGizmo ()
     extends typings.babylonjs.scaleGizmoMod.ScaleGizmo {
     def this(gizmoLayer: UtilityLayerRenderer) = this()
-    def this(gizmoLayer: js.UndefOr[scala.Nothing], thickness: Double) = this()
+    def this(gizmoLayer: Unit, thickness: Double) = this()
     def this(gizmoLayer: UtilityLayerRenderer, thickness: Double) = this()
+    def this(gizmoLayer: Unit, thickness: Double, gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager) = this()
+    def this(gizmoLayer: Unit, thickness: Unit, gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager) = this()
     def this(
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      thickness: js.UndefOr[scala.Nothing],
-      gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
-    ) = this()
-    def this(
-      gizmoLayer: js.UndefOr[scala.Nothing],
+      gizmoLayer: UtilityLayerRenderer,
       thickness: Double,
       gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
     ) = this()
     def this(
       gizmoLayer: UtilityLayerRenderer,
-      thickness: js.UndefOr[scala.Nothing],
-      gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
-    ) = this()
-    def this(
-      gizmoLayer: UtilityLayerRenderer,
-      thickness: Double,
+      thickness: Unit,
       gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
     ) = this()
   }

@@ -10,13 +10,13 @@ import typings.babylonjs.WebGLRenderingContext
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.Engine")
 @js.native
 class Engine protected ()
-  extends typings.babylonjs.BABYLON.Engine {
+  extends StObject
+     with typings.babylonjs.BABYLON.Engine {
   /**
     * Creates a new engine
     * @param canvasOrContext defines the canvas or WebGL context to use for rendering. If you provide a WebGL context, Babylon.js will not hook events on the canvas (like pointers, keyboards, etc...) so no event observables will be available. This is mostly used when Babylon.js is used as a plugin on a system which alreay used the WebGL context
@@ -28,35 +28,35 @@ class Engine protected ()
   def this(canvasOrContext: Nullable[HTMLCanvasElement | WebGLRenderingContext], antialias: Boolean) = this()
   def this(
     canvasOrContext: Nullable[HTMLCanvasElement | WebGLRenderingContext],
-    antialias: js.UndefOr[scala.Nothing],
-    options: EngineOptions
-  ) = this()
-  def this(
-    canvasOrContext: Nullable[HTMLCanvasElement | WebGLRenderingContext],
     antialias: Boolean,
     options: EngineOptions
   ) = this()
   def this(
     canvasOrContext: Nullable[HTMLCanvasElement | WebGLRenderingContext],
-    antialias: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
+    antialias: Unit,
+    options: EngineOptions
+  ) = this()
+  def this(
+    canvasOrContext: Nullable[HTMLCanvasElement | WebGLRenderingContext],
+    antialias: Boolean,
+    options: Unit,
     adaptToDeviceRatio: Boolean
   ) = this()
   def this(
     canvasOrContext: Nullable[HTMLCanvasElement | WebGLRenderingContext],
-    antialias: js.UndefOr[scala.Nothing],
+    antialias: Boolean,
     options: EngineOptions,
     adaptToDeviceRatio: Boolean
   ) = this()
   def this(
     canvasOrContext: Nullable[HTMLCanvasElement | WebGLRenderingContext],
-    antialias: Boolean,
-    options: js.UndefOr[scala.Nothing],
+    antialias: Unit,
+    options: Unit,
     adaptToDeviceRatio: Boolean
   ) = this()
   def this(
     canvasOrContext: Nullable[HTMLCanvasElement | WebGLRenderingContext],
-    antialias: Boolean,
+    antialias: Unit,
     options: EngineOptions,
     adaptToDeviceRatio: Boolean
   ) = this()
@@ -138,9 +138,7 @@ object Engine {
     * Default AudioEngine factory responsible of creating the Audio Engine.
     * By default, this will create a BabylonJS Audio Engine if the workload has been embedded.
     */
-  @JSGlobal("BABYLON.Engine.AudioEngineFactory")
-  @js.native
-  def AudioEngineFactory(hostElement: Nullable[HTMLElement]): IAudioEngine = js.native
+  inline def AudioEngineFactory(hostElement: Nullable[HTMLElement]): IAudioEngine = ^.asInstanceOf[js.Dynamic].applyDynamic("AudioEngineFactory")(hostElement.asInstanceOf[js.Any]).asInstanceOf[IAudioEngine]
   
   /** Passed to stencilOperation to specify that stencil value must be decremented */
   @JSGlobal("BABYLON.Engine.DECR")
@@ -178,9 +176,7 @@ object Engine {
     * @param canvas The rendering canvas element
     * @returns The loading screen
     */
-  @JSGlobal("BABYLON.Engine.DefaultLoadingScreenFactory")
-  @js.native
-  def DefaultLoadingScreenFactory(canvas: HTMLCanvasElement): ILoadingScreen = js.native
+  inline def DefaultLoadingScreenFactory(canvas: HTMLCanvasElement): ILoadingScreen = ^.asInstanceOf[js.Dynamic].applyDynamic("DefaultLoadingScreenFactory")(canvas.asInstanceOf[js.Any]).asInstanceOf[ILoadingScreen]
   
   /** Passed to depthFunction or stencilFunction to specify depth or stencil tests will pass if the new depth value is equals to the stored value */
   @JSGlobal("BABYLON.Engine.EQUAL")
@@ -232,12 +228,8 @@ object Engine {
     * @param flag defines which part of the materials must be marked as dirty
     * @param predicate defines a predicate used to filter which materials should be affected
     */
-  @JSGlobal("BABYLON.Engine.MarkAllMaterialsAsDirty")
-  @js.native
-  def MarkAllMaterialsAsDirty(flag: Double): Unit = js.native
-  @JSGlobal("BABYLON.Engine.MarkAllMaterialsAsDirty")
-  @js.native
-  def MarkAllMaterialsAsDirty(flag: Double, predicate: js.Function1[/* mat */ typings.babylonjs.BABYLON.Material, Boolean]): Unit = js.native
+  inline def MarkAllMaterialsAsDirty(flag: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("MarkAllMaterialsAsDirty")(flag.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def MarkAllMaterialsAsDirty(flag: Double, predicate: js.Function1[/* mat */ typings.babylonjs.BABYLON.Material, Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("MarkAllMaterialsAsDirty")(flag.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Passed to depthFunction or stencilFunction to specify depth or stencil tests will never pass. i.e. Nothing will be drawn */
   @JSGlobal("BABYLON.Engine.NEVER")
@@ -253,13 +245,11 @@ object Engine {
     * Default offline support factory responsible of creating a tool used to store data locally.
     * By default, this will create a Database object if the workload has been embedded.
     */
-  @JSGlobal("BABYLON.Engine.OfflineProviderFactory")
-  @js.native
-  def OfflineProviderFactory(
+  inline def OfflineProviderFactory(
     urlToScene: String,
-    callbackManifestChecked: js.Function1[/* checked */ Boolean, _],
+    callbackManifestChecked: js.Function1[/* checked */ Boolean, js.Any],
     disableManifestCheck: Boolean
-  ): IOfflineProvider = js.native
+  ): IOfflineProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("OfflineProviderFactory")(urlToScene.asInstanceOf[js.Any], callbackManifestChecked.asInstanceOf[js.Any], disableManifestCheck.asInstanceOf[js.Any])).asInstanceOf[IOfflineProvider]
   
   /** Passed to stencilOperation to specify that stencil value must be replaced */
   @JSGlobal("BABYLON.Engine.REPLACE")
@@ -574,33 +564,25 @@ object Engine {
   /**
     * Asks the browser to exit fullscreen mode
     */
-  @JSGlobal("BABYLON.Engine._ExitFullscreen")
-  @js.native
-  def _ExitFullscreen(): Unit = js.native
+  inline def _ExitFullscreen(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_ExitFullscreen")().asInstanceOf[Unit]
   
   /**
     * Asks the browser to exit pointerlock mode
     */
-  @JSGlobal("BABYLON.Engine._ExitPointerlock")
-  @js.native
-  def _ExitPointerlock(): Unit = js.native
+  inline def _ExitPointerlock(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_ExitPointerlock")().asInstanceOf[Unit]
   
   /**
     * Ask the browser to promote the current element to fullscreen rendering mode
     * @param element defines the DOM element to promote
     */
-  @JSGlobal("BABYLON.Engine._RequestFullscreen")
-  @js.native
-  def _RequestFullscreen(element: HTMLElement): Unit = js.native
+  inline def _RequestFullscreen(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_RequestFullscreen")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** Pointerlock and fullscreen */
   /**
     * Ask the browser to promote the current element to pointerlock mode
     * @param element defines the DOM element to promote
     */
-  @JSGlobal("BABYLON.Engine._RequestPointerlock")
-  @js.native
-  def _RequestPointerlock(element: HTMLElement): Unit = js.native
+  inline def _RequestPointerlock(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_RequestPointerlock")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Method called to create the default rescale post process on each engine.
@@ -608,8 +590,7 @@ object Engine {
   @JSGlobal("BABYLON.Engine._RescalePostProcessFactory")
   @js.native
   def _RescalePostProcessFactory: Nullable[js.Function1[/* engine */ this.type, typings.babylonjs.BABYLON.PostProcess]] = js.native
-  @scala.inline
-  def _RescalePostProcessFactory_=(x: Nullable[js.Function1[/* engine */ this.type, typings.babylonjs.BABYLON.PostProcess]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_RescalePostProcessFactory")(x.asInstanceOf[js.Any])
+  inline def _RescalePostProcessFactory_=(x: Nullable[js.Function1[/* engine */ this.type, typings.babylonjs.BABYLON.PostProcess]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_RescalePostProcessFactory")(x.asInstanceOf[js.Any])
   
   /**
     * Gets the audio engine
@@ -619,6 +600,5 @@ object Engine {
   @JSGlobal("BABYLON.Engine.audioEngine")
   @js.native
   def audioEngine: IAudioEngine = js.native
-  @scala.inline
-  def audioEngine_=(x: IAudioEngine): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("audioEngine")(x.asInstanceOf[js.Any])
+  inline def audioEngine_=(x: IAudioEngine): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("audioEngine")(x.asInstanceOf[js.Any])
 }

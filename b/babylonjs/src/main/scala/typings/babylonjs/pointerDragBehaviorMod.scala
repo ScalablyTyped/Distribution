@@ -10,7 +10,6 @@ import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.rayMod.Ray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pointerDragBehaviorMod {
@@ -21,66 +20,74 @@ object pointerDragBehaviorMod {
     * Creates a pointer drag behavior that can be attached to a mesh
     * @param options The drag axis or normal of the plane that will be dragged across. If no options are specified the drag plane will always face the ray's origin (eg. camera)
     */
-  class PointerDragBehavior () extends Behavior[AbstractMesh] {
+  class PointerDragBehavior ()
+    extends StObject
+       with Behavior[AbstractMesh] {
     def this(options: DragAxis) = this()
     
-    var _alternatePickedPoint: js.Any = js.native
+    /* private */ var _alternatePickedPoint: js.Any = js.native
     
-    var _attachedToElement: js.Any = js.native
+    /* private */ var _attachedToElement: js.Any = js.native
     
-    var _beforeRenderObserver: js.Any = js.native
+    /* private */ var _beforeRenderObserver: js.Any = js.native
     
-    var _debugMode: js.Any = js.native
+    /* private */ var _debugMode: js.Any = js.native
     
-    var _dragDelta: js.Any = js.native
+    /* private */ var _dragDelta: js.Any = js.native
     
-    var _dragPlane: js.Any = js.native
+    /* private */ var _dragPlane: js.Any = js.native
     
-    var _lastPointerRay: js.Any = js.native
+    /* private */ var _lastPointerRay: js.Any = js.native
     
-    var _localAxis: js.Any = js.native
+    /* private */ var _localAxis: js.Any = js.native
     
-    var _lookAt: js.Any = js.native
+    /* private */ var _lookAt: js.Any = js.native
     
     /* protected */ def _moveDrag(ray: Ray): Unit = js.native
     
-    var _moving: js.Any = js.native
+    /* private */ var _moving: js.Any = js.native
     
-    var _options: js.Any = js.native
+    /* private */ var _options: js.Any = js.native
     
-    var _pickWithRayOnDragPlane: js.Any = js.native
+    /* private */ var _pickWithRayOnDragPlane: js.Any = js.native
     
-    var _pointA: js.Any = js.native
+    /* private */ var _pointA: js.Any = js.native
     
-    var _pointC: js.Any = js.native
+    /* private */ var _pointC: js.Any = js.native
     
-    var _pointerObserver: js.Any = js.native
+    /* private */ var _pointerObserver: js.Any = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
     /* protected */ def _startDrag(pointerId: Double): Unit = js.native
-    /* protected */ def _startDrag(pointerId: Double, fromRay: js.UndefOr[scala.Nothing], startPickedPoint: Vector3): Unit = js.native
+    /* protected */ def _startDrag(pointerId: Double, fromRay: Unit, startPickedPoint: Vector3): Unit = js.native
     /* protected */ def _startDrag(pointerId: Double, fromRay: Ray): Unit = js.native
     /* protected */ def _startDrag(pointerId: Double, fromRay: Ray, startPickedPoint: Vector3): Unit = js.native
     
-    var _startDragRay: js.Any = js.native
+    /* private */ var _startDragRay: js.Any = js.native
     
-    var _targetPosition: js.Any = js.native
+    /* private */ var _targetPosition: js.Any = js.native
     
-    var _tmpVector: js.Any = js.native
+    /* private */ var _tmpVector: js.Any = js.native
     
-    var _updateDragPlanePosition: js.Any = js.native
+    /* private */ var _updateDragPlanePosition: js.Any = js.native
     
     /**
       * @hidden
       */
     var _useAlternatePickedPointAboveMaxDragAngle: Boolean = js.native
     
-    var _useAlternatePickedPointAboveMaxDragAngleDragSpeed: js.Any = js.native
+    /* private */ var _useAlternatePickedPointAboveMaxDragAngleDragSpeed: js.Any = js.native
     
-    var _worldDragAxis: js.Any = js.native
+    /* private */ var _worldDragAxis: js.Any = js.native
     
     def attach(ownerNode: AbstractMesh, predicate: js.Function1[/* m */ AbstractMesh, Boolean]): Unit = js.native
+    /**
+      * Called when the behavior is attached to a target
+      * @param target defines the target where the behavior is attached to
+      */
+    /* CompleteClass */
+    override def attach(target: AbstractMesh): Unit = js.native
     
     /**
       * Abstract mesh the behavior is set on
@@ -91,6 +98,12 @@ object pointerDragBehaviorMod {
       * The id of the pointer that is currently interacting with the behavior (-1 when no pointer is active)
       */
     var currentDraggingPointerID: Double = js.native
+    
+    /**
+      * Called when the behavior is detached from its target
+      */
+    /* CompleteClass */
+    override def detach(): Unit = js.native
     
     /**
       * If camera controls should be detached during the drag
@@ -113,6 +126,12 @@ object pointerDragBehaviorMod {
     var enabled: Boolean = js.native
     
     /**
+      * Function called when the behavior needs to be initialized (after attaching it to a target)
+      */
+    /* CompleteClass */
+    override def init(): Unit = js.native
+    
+    /**
       * The last position where the pointer hit the drag plane in world space
       */
     var lastDragPosition: Vector3 = js.native
@@ -127,6 +146,9 @@ object pointerDragBehaviorMod {
       */
     var moveAttached: Boolean = js.native
     
+    /** gets or sets behavior's name */
+    /* CompleteClass */
+    var name: String = js.native
     /**
       *  The name of the behavior
       */
@@ -178,17 +200,13 @@ object pointerDragBehaviorMod {
       * @param startPickedPoint picked point of the pointer to be simulated (Default: attached mesh position)
       */
     def startDrag(): Unit = js.native
-    def startDrag(
-      pointerId: js.UndefOr[scala.Nothing],
-      fromRay: js.UndefOr[scala.Nothing],
-      startPickedPoint: Vector3
-    ): Unit = js.native
-    def startDrag(pointerId: js.UndefOr[scala.Nothing], fromRay: Ray): Unit = js.native
-    def startDrag(pointerId: js.UndefOr[scala.Nothing], fromRay: Ray, startPickedPoint: Vector3): Unit = js.native
     def startDrag(pointerId: Double): Unit = js.native
-    def startDrag(pointerId: Double, fromRay: js.UndefOr[scala.Nothing], startPickedPoint: Vector3): Unit = js.native
+    def startDrag(pointerId: Double, fromRay: Unit, startPickedPoint: Vector3): Unit = js.native
     def startDrag(pointerId: Double, fromRay: Ray): Unit = js.native
     def startDrag(pointerId: Double, fromRay: Ray, startPickedPoint: Vector3): Unit = js.native
+    def startDrag(pointerId: Unit, fromRay: Unit, startPickedPoint: Vector3): Unit = js.native
+    def startDrag(pointerId: Unit, fromRay: Ray): Unit = js.native
+    def startDrag(pointerId: Unit, fromRay: Ray, startPickedPoint: Vector3): Unit = js.native
     
     /**
       * If the drag plane orientation should be updated during the dragging (Default: true)
@@ -215,13 +233,11 @@ object pointerDragBehaviorMod {
     @JSImport("babylonjs/Behaviors/Meshes/pointerDragBehavior", "PointerDragBehavior._AnyMouseID")
     @js.native
     def _AnyMouseID: js.Any = js.native
-    @scala.inline
-    def _AnyMouseID_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_AnyMouseID")(x.asInstanceOf[js.Any])
+    inline def _AnyMouseID_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_AnyMouseID")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Behaviors/Meshes/pointerDragBehavior", "PointerDragBehavior._planeScene")
     @js.native
     def _planeScene: js.Any = js.native
-    @scala.inline
-    def _planeScene_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_planeScene")(x.asInstanceOf[js.Any])
+    inline def _planeScene_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_planeScene")(x.asInstanceOf[js.Any])
   }
 }

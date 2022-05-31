@@ -1,15 +1,16 @@
 package typings.babylonjs.global.BABYLON
 
+import typings.babylonjs.BABYLON.Behavior
 import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.AbstractMesh")
 @js.native
 class AbstractMesh protected ()
-  extends typings.babylonjs.BABYLON.AbstractMesh {
+  extends StObject
+     with typings.babylonjs.BABYLON.AbstractMesh {
   /**
     * Creates a new AbstractMesh
     * @param name defines the name of the mesh
@@ -17,6 +18,53 @@ class AbstractMesh protected ()
     */
   def this(name: String) = this()
   def this(name: String, scene: Nullable[typings.babylonjs.BABYLON.Scene]) = this()
+  
+  /**
+    * Attach a behavior
+    * @param behavior defines the behavior to attach
+    * @returns the current host
+    */
+  /* CompleteClass */
+  override def addBehavior(behavior: Behavior[typings.babylonjs.BABYLON.Node]): typings.babylonjs.BABYLON.Node = js.native
+  
+  /**
+    * Releases all held resources
+    */
+  /* InferMemberOverrides */
+  override def dispose(): Unit = js.native
+  
+  /**
+    * Gets a behavior using its name to search
+    * @param name defines the name to search
+    * @returns the behavior or null if not found
+    */
+  /* CompleteClass */
+  override def getBehaviorByName(name: String): Nullable[Behavior[typings.babylonjs.BABYLON.Node]] = js.native
+  
+  /**
+    * Checks if a cullable object (mesh...) is in the camera frustum
+    * Unlike isInFrustum this cheks the full bounding box
+    * @param frustumPlanes Camera near/planes
+    * @returns true if the object is in frustum otherwise false
+    */
+  /* CompleteClass */
+  override def isCompletelyInFrustum(frustumPlanes: js.Array[typings.babylonjs.BABYLON.Plane]): Boolean = js.native
+  
+  /**
+    * Checks if the object or part of the object is in the frustum
+    * @param frustumPlanes Camera near/planes
+    * @returns true if the object is in frustum otherwise false
+    */
+  /* CompleteClass */
+  override def isInFrustum(frustumPlanes: js.Array[typings.babylonjs.BABYLON.Plane]): Boolean = js.native
+  
+  /**
+    * Remove a behavior from the current object
+    * @param behavior defines the behavior to detach
+    * @returns the current host
+    */
+  /* CompleteClass */
+  override def removeBehavior(behavior: Behavior[typings.babylonjs.BABYLON.Node]): typings.babylonjs.BABYLON.Node = js.native
 }
 /* static members */
 object AbstractMesh {
@@ -75,34 +123,29 @@ object AbstractMesh {
   @JSGlobal("BABYLON.AbstractMesh.OCCLUSION_ALGORITHM_TYPE_ACCURATE")
   @js.native
   def OCCLUSION_ALGORITHM_TYPE_ACCURATE: Double = js.native
-  @scala.inline
-  def OCCLUSION_ALGORITHM_TYPE_ACCURATE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_ALGORITHM_TYPE_ACCURATE")(x.asInstanceOf[js.Any])
+  inline def OCCLUSION_ALGORITHM_TYPE_ACCURATE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_ALGORITHM_TYPE_ACCURATE")(x.asInstanceOf[js.Any])
   
   /** Use a conservative occlusion algorithm */
   @JSGlobal("BABYLON.AbstractMesh.OCCLUSION_ALGORITHM_TYPE_CONSERVATIVE")
   @js.native
   def OCCLUSION_ALGORITHM_TYPE_CONSERVATIVE: Double = js.native
-  @scala.inline
-  def OCCLUSION_ALGORITHM_TYPE_CONSERVATIVE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_ALGORITHM_TYPE_CONSERVATIVE")(x.asInstanceOf[js.Any])
+  inline def OCCLUSION_ALGORITHM_TYPE_CONSERVATIVE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_ALGORITHM_TYPE_CONSERVATIVE")(x.asInstanceOf[js.Any])
   
   /** No occlusion */
   @JSGlobal("BABYLON.AbstractMesh.OCCLUSION_TYPE_NONE")
   @js.native
   def OCCLUSION_TYPE_NONE: Double = js.native
-  @scala.inline
-  def OCCLUSION_TYPE_NONE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_TYPE_NONE")(x.asInstanceOf[js.Any])
+  inline def OCCLUSION_TYPE_NONE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_TYPE_NONE")(x.asInstanceOf[js.Any])
   
   /** Occlusion set to optimisitic */
   @JSGlobal("BABYLON.AbstractMesh.OCCLUSION_TYPE_OPTIMISTIC")
   @js.native
   def OCCLUSION_TYPE_OPTIMISTIC: Double = js.native
-  @scala.inline
-  def OCCLUSION_TYPE_OPTIMISTIC_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_TYPE_OPTIMISTIC")(x.asInstanceOf[js.Any])
+  inline def OCCLUSION_TYPE_OPTIMISTIC_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_TYPE_OPTIMISTIC")(x.asInstanceOf[js.Any])
   
   /** Occlusion set to strict */
   @JSGlobal("BABYLON.AbstractMesh.OCCLUSION_TYPE_STRICT")
   @js.native
   def OCCLUSION_TYPE_STRICT: Double = js.native
-  @scala.inline
-  def OCCLUSION_TYPE_STRICT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_TYPE_STRICT")(x.asInstanceOf[js.Any])
+  inline def OCCLUSION_TYPE_STRICT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_TYPE_STRICT")(x.asInstanceOf[js.Any])
 }

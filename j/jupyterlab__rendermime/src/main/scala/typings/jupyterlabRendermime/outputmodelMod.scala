@@ -10,36 +10,42 @@ import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
 import typings.luminoSignaling.mod.ISignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object outputmodelMod {
   
   @JSImport("@jupyterlab/rendermime/lib/outputmodel", "OutputModel")
   @js.native
-  class OutputModel protected () extends IOutputModel {
+  class OutputModel protected ()
+    extends StObject
+       with IOutputModel {
     /**
       * Construct a new output model.
       */
     def this(options: IOptions) = this()
     
-    var _changed: js.Any = js.native
+    /* private */ var _changed: js.Any = js.native
     
-    var _data: js.Any = js.native
+    /* private */ var _data: js.Any = js.native
     
-    var _metadata: js.Any = js.native
+    /* private */ var _metadata: js.Any = js.native
     
-    var _raw: js.Any = js.native
+    /* private */ var _raw: js.Any = js.native
     
-    var _rawData: js.Any = js.native
+    /* private */ var _rawData: js.Any = js.native
     
-    var _rawMetadata: js.Any = js.native
+    /* private */ var _rawMetadata: js.Any = js.native
     
     /**
       * Update an observable JSON object using a readonly JSON object.
       */
-    var _updateObservable: js.Any = js.native
+    /* private */ var _updateObservable: js.Any = js.native
     
+    /**
+      * A signal emitted when the output model changes.
+      */
+    /* CompleteClass */
+    override val changed: ISignal[this.type, Unit] = js.native
     /**
       * A signal emitted when the output model changes.
       */
@@ -49,16 +55,74 @@ object outputmodelMod {
     /**
       * The data associated with the model.
       */
+    /* CompleteClass */
+    override val data: ReadonlyPartialJSONObject = js.native
+    /**
+      * The data associated with the model.
+      */
     @JSName("data")
     def data_MOutputModel: ReadonlyPartialJSONObject = js.native
     
+    /**
+      * Dispose of the resources used by the output model.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * The execution count of the model.
+      */
+    /* CompleteClass */
+    override val executionCount: ExecutionCount = js.native
+    
+    /**
+      * The metadata associated with the model.
+      *
+      * Among others, it can include an attribute named `fragment`
+      * that stores a URI fragment identifier for the MIME resource.
+      */
+    /* CompleteClass */
+    override val metadata: ReadonlyPartialJSONObject = js.native
     /**
       * The metadata associated with the model.
       */
     @JSName("metadata")
     def metadata_MOutputModel: ReadonlyPartialJSONObject = js.native
+    
+    /**
+      * Set the data associated with the model.
+      *
+      * #### Notes
+      * Calling this function may trigger an asynchronous operation
+      * that could cause the renderer to be rendered with a new model
+      * containing the new data.
+      */
+    /* CompleteClass */
+    override def setData(options: ISetDataOptions): Unit = js.native
+    
+    /**
+      * Serialize the model to JSON.
+      */
+    /* CompleteClass */
+    override def toJSON(): IOutput = js.native
+    
+    /**
+      * Whether the data in the model is trusted.
+      */
+    /* CompleteClass */
+    override val trusted: Boolean = js.native
+    
+    /**
+      * The output type.
+      */
+    /* CompleteClass */
+    override val `type`: String = js.native
   }
   object OutputModel {
+    
+    @JSImport("@jupyterlab/rendermime/lib/outputmodel", "OutputModel")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get the data for an output.
@@ -67,9 +131,7 @@ object outputmodelMod {
       *
       * @returns - The data for the payload.
       */
-    @JSImport("@jupyterlab/rendermime/lib/outputmodel", "OutputModel.getData")
-    @js.native
-    def getData(output: IOutput): PartialJSONObject = js.native
+    inline def getData(output: IOutput): PartialJSONObject = ^.asInstanceOf[js.Dynamic].applyDynamic("getData")(output.asInstanceOf[js.Any]).asInstanceOf[PartialJSONObject]
     
     /**
       * Get the metadata from an output message.
@@ -78,43 +140,41 @@ object outputmodelMod {
       *
       * @returns - The metadata for the payload.
       */
-    @JSImport("@jupyterlab/rendermime/lib/outputmodel", "OutputModel.getMetadata")
-    @js.native
-    def getMetadata(output: IOutput): PartialJSONObject = js.native
+    inline def getMetadata(output: IOutput): PartialJSONObject = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")(output.asInstanceOf[js.Any]).asInstanceOf[PartialJSONObject]
   }
   
-  @js.native
-  trait IOutputModel extends IMimeModel {
+  trait IOutputModel
+    extends StObject
+       with IMimeModel {
     
     /**
       * A signal emitted when the output model changes.
       */
-    val changed: ISignal[this.type, Unit] = js.native
+    val changed: ISignal[this.type, Unit]
     
     /**
       * Dispose of the resources used by the output model.
       */
-    def dispose(): Unit = js.native
+    def dispose(): Unit
     
     /**
       * The execution count of the model.
       */
-    val executionCount: ExecutionCount = js.native
+    val executionCount: ExecutionCount
     
     /**
       * Serialize the model to JSON.
       */
-    def toJSON(): IOutput = js.native
+    def toJSON(): IOutput
     
     /**
       * The output type.
       */
-    val `type`: String = js.native
+    val `type`: String
   }
   object IOutputModel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       changed: ISignal[IOutputModel, Unit],
       data: ReadonlyPartialJSONObject,
       dispose: () => Unit,
@@ -124,7 +184,7 @@ object outputmodelMod {
       trusted: Boolean,
       `type`: String
     ): IOutputModel = {
-      val __obj = js.Dynamic.literal(changed = changed.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), metadata = metadata.asInstanceOf[js.Any], setData = js.Any.fromFunction1(setData), toJSON = js.Any.fromFunction0(toJSON), trusted = trusted.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(changed = changed.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), metadata = metadata.asInstanceOf[js.Any], setData = js.Any.fromFunction1(setData), toJSON = js.Any.fromFunction0(toJSON), trusted = trusted.asInstanceOf[js.Any], executionCount = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[IOutputModel]
     }
@@ -132,61 +192,48 @@ object outputmodelMod {
     /**
       * The options used to create a notebook output model.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * Whether the output is trusted.  The default is false.
         */
-      var trusted: js.UndefOr[Boolean] = js.native
+      var trusted: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The raw output value.
         */
-      var value: IOutput = js.native
+      var value: IOutput
     }
     object IOptions {
       
-      @scala.inline
-      def apply(value: IOutput): IOptions = {
+      inline def apply(value: IOutput): IOptions = {
         val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setTrusted(value: Boolean): Self = StObject.set(x, "trusted", value.asInstanceOf[js.Any])
+        inline def setTrusted(value: Boolean): Self = StObject.set(x, "trusted", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTrustedUndefined: Self = StObject.set(x, "trusted", js.undefined)
+        inline def setTrustedUndefined: Self = StObject.set(x, "trusted", js.undefined)
         
-        @scala.inline
-        def setValue(value: IOutput): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: IOutput): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       }
     }
     
-    @scala.inline
-    implicit class IOutputModelMutableBuilder[Self <: IOutputModel] (val x: Self) extends AnyVal {
+    extension [Self <: IOutputModel](x: Self) {
       
-      @scala.inline
-      def setChanged(value: ISignal[IOutputModel, Unit]): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
+      inline def setChanged(value: ISignal[IOutputModel, Unit]): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExecutionCount(value: ExecutionCount): Self = StObject.set(x, "executionCount", value.asInstanceOf[js.Any])
+      inline def setExecutionCount(value: ExecutionCount): Self = StObject.set(x, "executionCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecutionCountNull: Self = StObject.set(x, "executionCount", null)
+      inline def setExecutionCountNull: Self = StObject.set(x, "executionCount", null)
       
-      @scala.inline
-      def setToJSON(value: () => IOutput): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => IOutput): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

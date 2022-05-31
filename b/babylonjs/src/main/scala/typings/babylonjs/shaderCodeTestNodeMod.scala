@@ -4,7 +4,6 @@ import typings.babylonjs.shaderCodeNodeMod.ShaderCodeNode
 import typings.babylonjs.shaderDefineExpressionMod.ShaderDefineExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shaderCodeTestNodeMod {

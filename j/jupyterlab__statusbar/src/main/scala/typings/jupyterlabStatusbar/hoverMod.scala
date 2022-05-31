@@ -7,10 +7,13 @@ import typings.luminoWidgets.mod.Widget
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hoverMod {
+  
+  @JSImport("@jupyterlab/statusbar/lib/components/hover", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@jupyterlab/statusbar/lib/components/hover", "Popup")
   @js.native
@@ -20,17 +23,17 @@ object hoverMod {
       */
     def this(options: IOptions) = this()
     
-    var _align: js.Any = js.native
+    /* private */ var _align: js.Any = js.native
     
-    var _anchor: js.Any = js.native
+    /* private */ var _anchor: js.Any = js.native
     
-    var _body: js.Any = js.native
+    /* private */ var _body: js.Any = js.native
     
-    var _evtClick: js.Any = js.native
+    /* private */ var _evtClick: js.Any = js.native
     
-    var _evtKeydown: js.Any = js.native
+    /* private */ var _evtKeydown: js.Any = js.native
     
-    var _setGeometry: js.Any = js.native
+    /* private */ var _setGeometry: js.Any = js.native
     
     /**
       * Handle DOM events for the widget.
@@ -52,51 +55,42 @@ object hoverMod {
     /**
       * Options for creating a Popup widget.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * Whether to align the popup to the left or the right of the anchor.
         */
-      var align: js.UndefOr[left | right] = js.native
+      var align: js.UndefOr[left | right] = js.undefined
       
       /**
         * The widget to which we are attaching the popup.
         */
-      var anchor: Widget = js.native
+      var anchor: Widget
       
       /**
         * The content of the popup.
         */
-      var body: Widget = js.native
+      var body: Widget
     }
     object IOptions {
       
-      @scala.inline
-      def apply(anchor: Widget, body: Widget): IOptions = {
+      inline def apply(anchor: Widget, body: Widget): IOptions = {
         val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setAlign(value: left | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+        inline def setAlign(value: left | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+        inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
         
-        @scala.inline
-        def setAnchor(value: Widget): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+        inline def setAnchor(value: Widget): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBody(value: Widget): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+        inline def setBody(value: Widget): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       }
     }
   }
   
-  @JSImport("@jupyterlab/statusbar/lib/components/hover", "showPopup")
-  @js.native
-  def showPopup(options: IOptions): Popup = js.native
+  inline def showPopup(options: IOptions): Popup = ^.asInstanceOf[js.Dynamic].applyDynamic("showPopup")(options.asInstanceOf[js.Any]).asInstanceOf[Popup]
 }

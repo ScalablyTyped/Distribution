@@ -12,7 +12,6 @@ import typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gizmoMod {
@@ -23,29 +22,31 @@ object gizmoMod {
     * Creates a gizmo
     * @param gizmoLayer The utility layer the gizmo will be added to
     */
-  class Gizmo () extends IDisposable {
+  class Gizmo ()
+    extends StObject
+       with IDisposable {
     def this(/** The utility layer the gizmo will be added to */
     gizmoLayer: UtilityLayerRenderer) = this()
     
-    var _attachedMesh: js.Any = js.native
+    /* private */ var _attachedMesh: js.Any = js.native
     
-    var _attachedNode: js.Any = js.native
+    /* private */ var _attachedNode: js.Any = js.native
     
     /* protected */ def _attachedNodeChanged(value: Nullable[Node]): Unit = js.native
     
-    var _beforeRenderObserver: js.Any = js.native
+    /* private */ var _beforeRenderObserver: js.Any = js.native
     
     /**
       * If a custom mesh has been set (Default: false)
       */
-    var _customMeshSet: Boolean = js.native
+    /* protected */ var _customMeshSet: Boolean = js.native
     
-    var _interactionsEnabled: Boolean = js.native
+    /* protected */ var _interactionsEnabled: Boolean = js.native
     
     /**
       * boolean updated by pointermove when a gizmo mesh is hovered
       */
-    var _isHovered: Boolean = js.native
+    /* protected */ var _isHovered: Boolean = js.native
     
     /**
       * computes the rotation/scaling/position of the transform once the Node world matrix has changed.
@@ -53,7 +54,7 @@ object gizmoMod {
       */
     /* protected */ def _matrixChanged(): Unit = js.native
     
-    var _rightHandtoLeftHandMatrix: js.Any = js.native
+    /* private */ var _rightHandtoLeftHandMatrix: js.Any = js.native
     
     /**
       * The root mesh of the gizmo
@@ -63,24 +64,24 @@ object gizmoMod {
     /**
       * Ratio for the scale of the gizmo (Default: 1)
       */
-    var _scaleRatio: Double = js.native
+    /* protected */ var _scaleRatio: Double = js.native
     
-    var _tempMatrix1: js.Any = js.native
+    /* private */ var _tempMatrix1: js.Any = js.native
     
-    var _tempMatrix2: js.Any = js.native
+    /* private */ var _tempMatrix2: js.Any = js.native
     
-    var _tempQuaternion: js.Any = js.native
+    /* private */ var _tempQuaternion: js.Any = js.native
     
-    var _tempVector: js.Any = js.native
+    /* private */ var _tempVector: js.Any = js.native
     
-    var _tempVector2: js.Any = js.native
+    /* private */ var _tempVector2: js.Any = js.native
     
     /**
       * Updates the gizmo to match the attached mesh's position/rotation
       */
     /* protected */ def _update(): Unit = js.native
     
-    var _updateGizmoRotationToMatchAttachedMesh: Boolean = js.native
+    /* protected */ var _updateGizmoRotationToMatchAttachedMesh: Boolean = js.native
     
     /**
       * Mesh that the gizmo will be attached to. (eg. on a drag gizmo the mesh that will be dragged)
@@ -95,6 +96,12 @@ object gizmoMod {
       */
     def attachedNode: Nullable[Node] = js.native
     def attachedNode_=(value: Nullable[Node]): Unit = js.native
+    
+    /**
+      * Releases all held resources
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /** The utility layer the gizmo will be added to */
     var gizmoLayer: UtilityLayerRenderer = js.native
@@ -135,42 +142,42 @@ object gizmoMod {
   /* static members */
   object Gizmo {
     
+    @JSImport("babylonjs/Gizmos/gizmo", "Gizmo")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Subscribes to pointer up, down, and hover events. Used for responsive gizmos.
       * @param gizmoLayer The utility layer the gizmo will be added to
       * @param gizmoAxisCache Gizmo axis definition used for reactive gizmo UI
       * @returns {Observer<PointerInfo>} pointerObserver
       */
-    @JSImport("babylonjs/Gizmos/gizmo", "Gizmo.GizmoAxisPointerObserver")
-    @js.native
-    def GizmoAxisPointerObserver(gizmoLayer: UtilityLayerRenderer, gizmoAxisCache: Map[Mesh, GizmoAxisCache]): Observer[PointerInfo] = js.native
+    inline def GizmoAxisPointerObserver(gizmoLayer: UtilityLayerRenderer, gizmoAxisCache: Map[Mesh, GizmoAxisCache]): Observer[PointerInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("GizmoAxisPointerObserver")(gizmoLayer.asInstanceOf[js.Any], gizmoAxisCache.asInstanceOf[js.Any])).asInstanceOf[Observer[PointerInfo]]
   }
   
-  @js.native
   trait GizmoAxisCache extends StObject {
     
     /** Used to indicate Active state of the Gizmo */
-    var active: Boolean = js.native
+    var active: Boolean
     
     /** Mesh used to detect user interaction with Gizmo */
-    var colliderMeshes: js.Array[Mesh] = js.native
+    var colliderMeshes: js.Array[Mesh]
     
     /** Material used to inicate disabled state of the Gizmo */
-    var disableMaterial: StandardMaterial = js.native
+    var disableMaterial: StandardMaterial
     
     /** Mesh used to runder the Gizmo */
-    var gizmoMeshes: js.Array[Mesh] = js.native
+    var gizmoMeshes: js.Array[Mesh]
     
     /** Material used to inicate hover state of the Gizmo */
-    var hoverMaterial: StandardMaterial = js.native
+    var hoverMaterial: StandardMaterial
     
     /** Material used to inicate color of gizmo mesh */
-    var material: StandardMaterial = js.native
+    var material: StandardMaterial
   }
   object GizmoAxisCache {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       active: Boolean,
       colliderMeshes: js.Array[Mesh],
       disableMaterial: StandardMaterial,
@@ -182,32 +189,23 @@ object gizmoMod {
       __obj.asInstanceOf[GizmoAxisCache]
     }
     
-    @scala.inline
-    implicit class GizmoAxisCacheMutableBuilder[Self <: GizmoAxisCache] (val x: Self) extends AnyVal {
+    extension [Self <: GizmoAxisCache](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColliderMeshes(value: js.Array[Mesh]): Self = StObject.set(x, "colliderMeshes", value.asInstanceOf[js.Any])
+      inline def setColliderMeshes(value: js.Array[Mesh]): Self = StObject.set(x, "colliderMeshes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColliderMeshesVarargs(value: Mesh*): Self = StObject.set(x, "colliderMeshes", js.Array(value :_*))
+      inline def setColliderMeshesVarargs(value: Mesh*): Self = StObject.set(x, "colliderMeshes", js.Array(value :_*))
       
-      @scala.inline
-      def setDisableMaterial(value: StandardMaterial): Self = StObject.set(x, "disableMaterial", value.asInstanceOf[js.Any])
+      inline def setDisableMaterial(value: StandardMaterial): Self = StObject.set(x, "disableMaterial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGizmoMeshes(value: js.Array[Mesh]): Self = StObject.set(x, "gizmoMeshes", value.asInstanceOf[js.Any])
+      inline def setGizmoMeshes(value: js.Array[Mesh]): Self = StObject.set(x, "gizmoMeshes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGizmoMeshesVarargs(value: Mesh*): Self = StObject.set(x, "gizmoMeshes", js.Array(value :_*))
+      inline def setGizmoMeshesVarargs(value: Mesh*): Self = StObject.set(x, "gizmoMeshes", js.Array(value :_*))
       
-      @scala.inline
-      def setHoverMaterial(value: StandardMaterial): Self = StObject.set(x, "hoverMaterial", value.asInstanceOf[js.Any])
+      inline def setHoverMaterial(value: StandardMaterial): Self = StObject.set(x, "hoverMaterial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaterial(value: StandardMaterial): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
+      inline def setMaterial(value: StandardMaterial): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -10,7 +10,6 @@ import typings.luminoWidgets.mod.Widget
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object runMod {
@@ -36,7 +35,9 @@ object runMod {
   }
   
   @js.native
-  trait IRunMenu extends IJupyterLabMenu {
+  trait IRunMenu
+    extends StObject
+       with IJupyterLabMenu {
     
     /**
       * A set storing ICodeRunner for the Run menu.
@@ -52,62 +53,54 @@ object runMod {
       * An object that runs code, which may be
       * registered with the Run menu.
       */
-    @js.native
-    trait ICodeRunner[T /* <: Widget */] extends IMenuExtender[T] {
+    trait ICodeRunner[T /* <: Widget */]
+      extends StObject
+         with IMenuExtender[T] {
       
       /**
         * A string label for the thing that is being run,
         * which is used to populate the menu labels.
         */
-      var noun: String = js.native
+      var noun: String
       
       /**
         * A function to restart and run all the code hosted by the widget, which
         * returns a promise of whether the action was performed.
         */
-      var restartAndRunAll: js.UndefOr[js.Function1[/* widget */ T, js.Promise[Boolean]]] = js.native
+      var restartAndRunAll: js.UndefOr[js.Function1[/* widget */ T, js.Promise[Boolean]]] = js.undefined
       
       /**
         * A function to run a chunk of code.
         */
-      var run: js.UndefOr[js.Function1[/* widget */ T, js.Promise[Unit]]] = js.native
+      var run: js.UndefOr[js.Function1[/* widget */ T, js.Promise[Unit]]] = js.undefined
       
       /**
         * A function to run the entirety of the code hosted by the widget.
         */
-      var runAll: js.UndefOr[js.Function1[/* widget */ T, js.Promise[Unit]]] = js.native
+      var runAll: js.UndefOr[js.Function1[/* widget */ T, js.Promise[Unit]]] = js.undefined
     }
     object ICodeRunner {
       
-      @scala.inline
-      def apply[T /* <: Widget */](noun: String, tracker: IWidgetTracker[T]): ICodeRunner[T] = {
+      inline def apply[T /* <: Widget */](noun: String, tracker: IWidgetTracker[T]): ICodeRunner[T] = {
         val __obj = js.Dynamic.literal(noun = noun.asInstanceOf[js.Any], tracker = tracker.asInstanceOf[js.Any])
         __obj.asInstanceOf[ICodeRunner[T]]
       }
       
-      @scala.inline
-      implicit class ICodeRunnerMutableBuilder[Self <: ICodeRunner[_], T /* <: Widget */] (val x: Self with ICodeRunner[T]) extends AnyVal {
+      extension [Self <: ICodeRunner[?], T /* <: Widget */](x: Self & ICodeRunner[T]) {
         
-        @scala.inline
-        def setNoun(value: String): Self = StObject.set(x, "noun", value.asInstanceOf[js.Any])
+        inline def setNoun(value: String): Self = StObject.set(x, "noun", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRestartAndRunAll(value: /* widget */ T => js.Promise[Boolean]): Self = StObject.set(x, "restartAndRunAll", js.Any.fromFunction1(value))
+        inline def setRestartAndRunAll(value: /* widget */ T => js.Promise[Boolean]): Self = StObject.set(x, "restartAndRunAll", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setRestartAndRunAllUndefined: Self = StObject.set(x, "restartAndRunAll", js.undefined)
+        inline def setRestartAndRunAllUndefined: Self = StObject.set(x, "restartAndRunAll", js.undefined)
         
-        @scala.inline
-        def setRun(value: /* widget */ T => js.Promise[Unit]): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
+        inline def setRun(value: /* widget */ T => js.Promise[Unit]): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setRunAll(value: /* widget */ T => js.Promise[Unit]): Self = StObject.set(x, "runAll", js.Any.fromFunction1(value))
+        inline def setRunAll(value: /* widget */ T => js.Promise[Unit]): Self = StObject.set(x, "runAll", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setRunAllUndefined: Self = StObject.set(x, "runAll", js.undefined)
+        inline def setRunAllUndefined: Self = StObject.set(x, "runAll", js.undefined)
         
-        @scala.inline
-        def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
+        inline def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
       }
     }
   }

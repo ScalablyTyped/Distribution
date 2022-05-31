@@ -28,21 +28,20 @@ import typings.oracleOraclejet.oracleOraclejetStrings.pending
 import typings.oracleOraclejet.oracleOraclejetStrings.valid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ojInputDateTimeSettableProperties extends ojInputDateSettableProperties {
+trait ojInputDateTimeSettableProperties
+  extends StObject
+     with ojInputDateSettableProperties {
   
-  var timePicker: FooterLayout = js.native
+  var timePicker: FooterLayout
   
   @JSName("translations")
-  var translations_ojInputDateTimeSettableProperties: Cancel = js.native
+  var translations_ojInputDateTimeSettableProperties: Cancel
 }
 object ojInputDateTimeSettableProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     asyncValidators: js.Array[AsyncValidator[String]],
     autocomplete: on | off | String,
     autofocus: Boolean,
@@ -68,17 +67,14 @@ object ojInputDateTimeSettableProperties {
     valid: valid | pending | invalidHidden | invalidShown,
     value: String
   ): ojInputDateTimeSettableProperties = {
-    val __obj = js.Dynamic.literal(asyncValidators = asyncValidators.asInstanceOf[js.Any], autocomplete = autocomplete.asInstanceOf[js.Any], autofocus = autofocus.asInstanceOf[js.Any], converter = converter.asInstanceOf[js.Any], datePicker = datePicker.asInstanceOf[js.Any], dayFormatter = js.Any.fromFunction1(dayFormatter), dayMetaData = dayMetaData.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], keyboardEdit = keyboardEdit.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], pickerAttributes = pickerAttributes.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], rawValue = rawValue.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], renderMode = renderMode.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], timePicker = timePicker.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(asyncValidators = asyncValidators.asInstanceOf[js.Any], autocomplete = autocomplete.asInstanceOf[js.Any], autofocus = autofocus.asInstanceOf[js.Any], converter = converter.asInstanceOf[js.Any], datePicker = datePicker.asInstanceOf[js.Any], dayFormatter = js.Any.fromFunction1(dayFormatter), dayMetaData = dayMetaData.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], keyboardEdit = keyboardEdit.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], pickerAttributes = pickerAttributes.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], rawValue = rawValue.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], renderMode = renderMode.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], timePicker = timePicker.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], describedBy = null, max = null, min = null, validators = null)
     __obj.asInstanceOf[ojInputDateTimeSettableProperties]
   }
   
-  @scala.inline
-  implicit class ojInputDateTimeSettablePropertiesMutableBuilder[Self <: ojInputDateTimeSettableProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ojInputDateTimeSettableProperties](x: Self) {
     
-    @scala.inline
-    def setTimePicker(value: FooterLayout): Self = StObject.set(x, "timePicker", value.asInstanceOf[js.Any])
+    inline def setTimePicker(value: FooterLayout): Self = StObject.set(x, "timePicker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslations(value: Cancel): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+    inline def setTranslations(value: Cancel): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
   }
 }

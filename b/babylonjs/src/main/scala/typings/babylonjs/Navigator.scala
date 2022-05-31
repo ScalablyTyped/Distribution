@@ -5,46 +5,43 @@ import typings.std.NavigatorUserMediaErrorCallback
 import typings.std.NavigatorUserMediaSuccessCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Navigator extends StObject {
   
-  val activeVRDisplays: js.Array[VRDisplay] = js.native
+  val activeVRDisplays: js.Array[VRDisplay]
   
-  def getVRDisplays(): js.Promise[js.Array[VRDisplay]] = js.native
+  def getVRDisplays(): js.Promise[js.Array[VRDisplay]]
   
   def mozGetUserMedia(
     constraints: MediaStreamConstraints,
     successCallback: NavigatorUserMediaSuccessCallback,
     errorCallback: NavigatorUserMediaErrorCallback
-  ): Unit = js.native
+  ): Unit
   
-  def mozGetVRDevices(any: js.Any): js.Any = js.native
+  def mozGetVRDevices(any: js.Any): js.Any
   
-  def msGetGamepads(): js.Array[Gamepad] = js.native
+  def msGetGamepads(): js.Array[Gamepad]
   
   def msGetUserMedia(
     constraints: MediaStreamConstraints,
     successCallback: NavigatorUserMediaSuccessCallback,
     errorCallback: NavigatorUserMediaErrorCallback
-  ): Unit = js.native
+  ): Unit
   
-  def webkitGamepads(): js.Array[Gamepad] = js.native
+  def webkitGamepads(): js.Array[Gamepad]
   
-  def webkitGetGamepads(): js.Array[Gamepad] = js.native
+  def webkitGetGamepads(): js.Array[Gamepad]
   
   def webkitGetUserMedia(
     constraints: MediaStreamConstraints,
     successCallback: NavigatorUserMediaSuccessCallback,
     errorCallback: NavigatorUserMediaErrorCallback
-  ): Unit = js.native
+  ): Unit
 }
 object Navigator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activeVRDisplays: js.Array[VRDisplay],
     getVRDisplays: () => js.Promise[js.Array[VRDisplay]],
     mozGetUserMedia: (MediaStreamConstraints, NavigatorUserMediaSuccessCallback, NavigatorUserMediaErrorCallback) => Unit,
@@ -59,42 +56,31 @@ object Navigator {
     __obj.asInstanceOf[Navigator]
   }
   
-  @scala.inline
-  implicit class NavigatorMutableBuilder[Self <: Navigator] (val x: Self) extends AnyVal {
+  extension [Self <: Navigator](x: Self) {
     
-    @scala.inline
-    def setActiveVRDisplays(value: js.Array[VRDisplay]): Self = StObject.set(x, "activeVRDisplays", value.asInstanceOf[js.Any])
+    inline def setActiveVRDisplays(value: js.Array[VRDisplay]): Self = StObject.set(x, "activeVRDisplays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveVRDisplaysVarargs(value: VRDisplay*): Self = StObject.set(x, "activeVRDisplays", js.Array(value :_*))
+    inline def setActiveVRDisplaysVarargs(value: VRDisplay*): Self = StObject.set(x, "activeVRDisplays", js.Array(value :_*))
     
-    @scala.inline
-    def setGetVRDisplays(value: () => js.Promise[js.Array[VRDisplay]]): Self = StObject.set(x, "getVRDisplays", js.Any.fromFunction0(value))
+    inline def setGetVRDisplays(value: () => js.Promise[js.Array[VRDisplay]]): Self = StObject.set(x, "getVRDisplays", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMozGetUserMedia(
+    inline def setMozGetUserMedia(
       value: (MediaStreamConstraints, NavigatorUserMediaSuccessCallback, NavigatorUserMediaErrorCallback) => Unit
     ): Self = StObject.set(x, "mozGetUserMedia", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setMozGetVRDevices(value: js.Any => js.Any): Self = StObject.set(x, "mozGetVRDevices", js.Any.fromFunction1(value))
+    inline def setMozGetVRDevices(value: js.Any => js.Any): Self = StObject.set(x, "mozGetVRDevices", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMsGetGamepads(value: () => js.Array[Gamepad]): Self = StObject.set(x, "msGetGamepads", js.Any.fromFunction0(value))
+    inline def setMsGetGamepads(value: () => js.Array[Gamepad]): Self = StObject.set(x, "msGetGamepads", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMsGetUserMedia(
+    inline def setMsGetUserMedia(
       value: (MediaStreamConstraints, NavigatorUserMediaSuccessCallback, NavigatorUserMediaErrorCallback) => Unit
     ): Self = StObject.set(x, "msGetUserMedia", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setWebkitGamepads(value: () => js.Array[Gamepad]): Self = StObject.set(x, "webkitGamepads", js.Any.fromFunction0(value))
+    inline def setWebkitGamepads(value: () => js.Array[Gamepad]): Self = StObject.set(x, "webkitGamepads", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWebkitGetGamepads(value: () => js.Array[Gamepad]): Self = StObject.set(x, "webkitGetGamepads", js.Any.fromFunction0(value))
+    inline def setWebkitGetGamepads(value: () => js.Array[Gamepad]): Self = StObject.set(x, "webkitGetGamepads", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWebkitGetUserMedia(
+    inline def setWebkitGetUserMedia(
       value: (MediaStreamConstraints, NavigatorUserMediaSuccessCallback, NavigatorUserMediaErrorCallback) => Unit
     ): Self = StObject.set(x, "webkitGetUserMedia", js.Any.fromFunction3(value))
   }

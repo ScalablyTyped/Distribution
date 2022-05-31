@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.GeometryBufferRenderer")
 @js.native
 class GeometryBufferRenderer protected ()
-  extends typings.babylonjs.BABYLON.GeometryBufferRenderer {
+  extends StObject
+     with typings.babylonjs.BABYLON.GeometryBufferRenderer {
   /**
     * Creates a new G Buffer for the scene
     * @param scene The scene the buffer belongs to
@@ -19,6 +19,10 @@ class GeometryBufferRenderer protected ()
 }
 /* static members */
 object GeometryBufferRenderer {
+  
+  @JSGlobal("BABYLON.GeometryBufferRenderer")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Constant used to retrieve the depth + normal texture index in the G-Buffer textures array
@@ -53,7 +57,5 @@ object GeometryBufferRenderer {
   val VELOCITY_TEXTURE_TYPE: Double = js.native
   
   /** @hidden */
-  @JSGlobal("BABYLON.GeometryBufferRenderer._SceneComponentInitialization")
-  @js.native
-  def _SceneComponentInitialization(scene: typings.babylonjs.BABYLON.Scene): Unit = js.native
+  inline def _SceneComponentInitialization(scene: typings.babylonjs.BABYLON.Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

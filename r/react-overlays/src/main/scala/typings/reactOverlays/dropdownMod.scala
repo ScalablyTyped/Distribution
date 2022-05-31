@@ -304,15 +304,6 @@ object dropdownMod {
     }
   }
   
-  object Dropdown {
-    
-    /* was `typeof DropdownMenu` */
-    object Menu
-    
-    /* was `typeof DropdownToggle` */
-    object Toggle
-  }
-  
   trait DropdownInjectedProps extends StObject {
     
     var onKeyDown: KeyboardEventHandler[typings.std.Element]

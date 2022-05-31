@@ -14,5 +14,3 @@ class ChainableTemporaryCredentials ()
   extends typings.awsSdk.mod.ChainableTemporaryCredentials {
   def this(options: ChainableTemporaryCredentialsOptions) = this()
 }
-// Needed to expose interfaces on the class
-object ChainableTemporaryCredentials

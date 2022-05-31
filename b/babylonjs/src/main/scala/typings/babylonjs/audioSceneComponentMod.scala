@@ -8,33 +8,34 @@ import typings.babylonjs.soundTrackMod.SoundTrack
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object audioSceneComponentMod {
   
   @JSImport("babylonjs/Audio/audioSceneComponent", "AudioSceneComponent")
   @js.native
-  class AudioSceneComponent protected () extends ISceneSerializableComponent {
+  class AudioSceneComponent protected ()
+    extends StObject
+       with ISceneSerializableComponent {
     /**
       * Creates a new instance of the component for the given scene
       * @param scene Defines the scene to register the component in
       */
     def this(scene: Scene) = this()
     
-    var _afterRender: js.Any = js.native
+    /* private */ var _afterRender: js.Any = js.native
     
-    var _audioEnabled: js.Any = js.native
+    /* private */ var _audioEnabled: js.Any = js.native
     
-    var _audioListenerPositionProvider: js.Any = js.native
+    /* private */ var _audioListenerPositionProvider: js.Any = js.native
     
-    var _cachedCameraDirection: js.Any = js.native
+    /* private */ var _cachedCameraDirection: js.Any = js.native
     
-    var _cachedCameraPosition: js.Any = js.native
+    /* private */ var _cachedCameraPosition: js.Any = js.native
     
-    var _headphone: js.Any = js.native
+    /* private */ var _headphone: js.Any = js.native
     
-    var _lastCheck: js.Any = js.native
+    /* private */ var _lastCheck: js.Any = js.native
     
     /**
       * Gets whether audio is enabled or not.
@@ -63,6 +64,12 @@ object audioSceneComponentMod {
     def disableAudio(): Unit = js.native
     
     /**
+      * Disposes the component and the associated ressources.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
       * Enables audio in the associated scene.
       */
     def enableAudio(): Unit = js.native
@@ -72,6 +79,31 @@ object audioSceneComponentMod {
       * Please use the according Switch methods to change output.
       */
     def headphone: Boolean = js.native
+    
+    /**
+      * The name of the component. Each component must have a unique name.
+      */
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /**
+      * Rebuilds the elements related to this component in case of
+      * context lost for instance.
+      */
+    /* CompleteClass */
+    override def rebuild(): Unit = js.native
+    
+    /**
+      * Register the component to one instance of a scene.
+      */
+    /* CompleteClass */
+    override def register(): Unit = js.native
+    
+    /**
+      * The scene the component belongs to.
+      */
+    /* CompleteClass */
+    var scene: Scene = js.native
     
     /**
       * Switch audio to headphone output.
@@ -93,46 +125,38 @@ object audioSceneComponentMod {
     @JSImport("babylonjs/Audio/audioSceneComponent", "AudioSceneComponent._CameraDirectionLH")
     @js.native
     def _CameraDirectionLH: js.Any = js.native
-    @scala.inline
-    def _CameraDirectionLH_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CameraDirectionLH")(x.asInstanceOf[js.Any])
+    inline def _CameraDirectionLH_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CameraDirectionLH")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Audio/audioSceneComponent", "AudioSceneComponent._CameraDirectionRH")
     @js.native
     def _CameraDirectionRH: js.Any = js.native
-    @scala.inline
-    def _CameraDirectionRH_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CameraDirectionRH")(x.asInstanceOf[js.Any])
+    inline def _CameraDirectionRH_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CameraDirectionRH")(x.asInstanceOf[js.Any])
   }
   
   /* augmented module */
   object babylonjsAbstractSceneAugmentingMod {
     
-    @js.native
     trait AbstractScene extends StObject {
       
       /**
         * The list of sounds used in the scene.
         */
-      var sounds: Nullable[js.Array[Sound]] = js.native
+      var sounds: Nullable[js.Array[Sound]]
     }
     object AbstractScene {
       
-      @scala.inline
-      def apply(): AbstractScene = {
-        val __obj = js.Dynamic.literal()
+      inline def apply(): AbstractScene = {
+        val __obj = js.Dynamic.literal(sounds = null)
         __obj.asInstanceOf[AbstractScene]
       }
       
-      @scala.inline
-      implicit class AbstractSceneMutableBuilder[Self <: AbstractScene] (val x: Self) extends AnyVal {
+      extension [Self <: AbstractScene](x: Self) {
         
-        @scala.inline
-        def setSounds(value: Nullable[js.Array[Sound]]): Self = StObject.set(x, "sounds", value.asInstanceOf[js.Any])
+        inline def setSounds(value: Nullable[js.Array[Sound]]): Self = StObject.set(x, "sounds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSoundsNull: Self = StObject.set(x, "sounds", null)
+        inline def setSoundsNull: Self = StObject.set(x, "sounds", null)
         
-        @scala.inline
-        def setSoundsVarargs(value: Sound*): Self = StObject.set(x, "sounds", js.Array(value :_*))
+        inline def setSoundsVarargs(value: Sound*): Self = StObject.set(x, "sounds", js.Array(value :_*))
       }
     }
   }
@@ -140,61 +164,59 @@ object audioSceneComponentMod {
   /* augmented module */
   object babylonjsSceneAugmentingMod {
     
-    @js.native
     trait Scene extends StObject {
       
       /**
         * @hidden
         * Backing field
         */
-      var _mainSoundTrack: SoundTrack = js.native
+      var _mainSoundTrack: SoundTrack
       
       /**
         * Gets or sets if audio support is enabled
         * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music
         */
-      var audioEnabled: Boolean = js.native
+      var audioEnabled: Boolean
       
       /**
         * Gets or sets custom audio listener position provider
         * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music
         */
-      var audioListenerPositionProvider: Nullable[js.Function0[Vector3]] = js.native
+      var audioListenerPositionProvider: Nullable[js.Function0[Vector3]]
       
       /**
         * Gets or sets a refresh rate when using 3D audio positioning
         */
-      var audioPositioningRefreshRate: Double = js.native
+      var audioPositioningRefreshRate: Double
       
       /**
         * Gets a sound using a given name
         * @param name defines the name to search for
         * @return the found sound or null if not found at all.
         */
-      def getSoundByName(name: String): Nullable[Sound] = js.native
+      def getSoundByName(name: String): Nullable[Sound]
       
       /**
         * Gets or sets if audio will be output to headphones
         * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music
         */
-      var headphone: Boolean = js.native
+      var headphone: Boolean
       
       /**
         * The main sound track played by the scene.
         * It cotains your primary collection of sounds.
         */
-      var mainSoundTrack: SoundTrack = js.native
+      var mainSoundTrack: SoundTrack
       
       /**
         * The list of sound tracks added to the scene
         * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music
         */
-      var soundTracks: Nullable[js.Array[SoundTrack]] = js.native
+      var soundTracks: Nullable[js.Array[SoundTrack]]
     }
     object Scene {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         _mainSoundTrack: SoundTrack,
         audioEnabled: Boolean,
         audioPositioningRefreshRate: Double,
@@ -202,45 +224,33 @@ object audioSceneComponentMod {
         headphone: Boolean,
         mainSoundTrack: SoundTrack
       ): typings.babylonjs.audioSceneComponentMod.babylonjsSceneAugmentingMod.Scene = {
-        val __obj = js.Dynamic.literal(_mainSoundTrack = _mainSoundTrack.asInstanceOf[js.Any], audioEnabled = audioEnabled.asInstanceOf[js.Any], audioPositioningRefreshRate = audioPositioningRefreshRate.asInstanceOf[js.Any], getSoundByName = js.Any.fromFunction1(getSoundByName), headphone = headphone.asInstanceOf[js.Any], mainSoundTrack = mainSoundTrack.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(_mainSoundTrack = _mainSoundTrack.asInstanceOf[js.Any], audioEnabled = audioEnabled.asInstanceOf[js.Any], audioPositioningRefreshRate = audioPositioningRefreshRate.asInstanceOf[js.Any], getSoundByName = js.Any.fromFunction1(getSoundByName), headphone = headphone.asInstanceOf[js.Any], mainSoundTrack = mainSoundTrack.asInstanceOf[js.Any], audioListenerPositionProvider = null, soundTracks = null)
         __obj.asInstanceOf[typings.babylonjs.audioSceneComponentMod.babylonjsSceneAugmentingMod.Scene]
       }
       
-      @scala.inline
-      implicit class SceneMutableBuilder[Self <: typings.babylonjs.audioSceneComponentMod.babylonjsSceneAugmentingMod.Scene] (val x: Self) extends AnyVal {
+      extension [Self <: typings.babylonjs.audioSceneComponentMod.babylonjsSceneAugmentingMod.Scene](x: Self) {
         
-        @scala.inline
-        def setAudioEnabled(value: Boolean): Self = StObject.set(x, "audioEnabled", value.asInstanceOf[js.Any])
+        inline def setAudioEnabled(value: Boolean): Self = StObject.set(x, "audioEnabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAudioListenerPositionProvider(value: () => Vector3): Self = StObject.set(x, "audioListenerPositionProvider", js.Any.fromFunction0(value))
+        inline def setAudioListenerPositionProvider(value: () => Vector3): Self = StObject.set(x, "audioListenerPositionProvider", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAudioListenerPositionProviderNull: Self = StObject.set(x, "audioListenerPositionProvider", null)
+        inline def setAudioListenerPositionProviderNull: Self = StObject.set(x, "audioListenerPositionProvider", null)
         
-        @scala.inline
-        def setAudioPositioningRefreshRate(value: Double): Self = StObject.set(x, "audioPositioningRefreshRate", value.asInstanceOf[js.Any])
+        inline def setAudioPositioningRefreshRate(value: Double): Self = StObject.set(x, "audioPositioningRefreshRate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGetSoundByName(value: String => Nullable[Sound]): Self = StObject.set(x, "getSoundByName", js.Any.fromFunction1(value))
+        inline def setGetSoundByName(value: String => Nullable[Sound]): Self = StObject.set(x, "getSoundByName", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setHeadphone(value: Boolean): Self = StObject.set(x, "headphone", value.asInstanceOf[js.Any])
+        inline def setHeadphone(value: Boolean): Self = StObject.set(x, "headphone", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMainSoundTrack(value: SoundTrack): Self = StObject.set(x, "mainSoundTrack", value.asInstanceOf[js.Any])
+        inline def setMainSoundTrack(value: SoundTrack): Self = StObject.set(x, "mainSoundTrack", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSoundTracks(value: Nullable[js.Array[SoundTrack]]): Self = StObject.set(x, "soundTracks", value.asInstanceOf[js.Any])
+        inline def setSoundTracks(value: Nullable[js.Array[SoundTrack]]): Self = StObject.set(x, "soundTracks", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSoundTracksNull: Self = StObject.set(x, "soundTracks", null)
+        inline def setSoundTracksNull: Self = StObject.set(x, "soundTracks", null)
         
-        @scala.inline
-        def setSoundTracksVarargs(value: SoundTrack*): Self = StObject.set(x, "soundTracks", js.Array(value :_*))
+        inline def setSoundTracksVarargs(value: SoundTrack*): Self = StObject.set(x, "soundTracks", js.Array(value :_*))
         
-        @scala.inline
-        def set_mainSoundTrack(value: SoundTrack): Self = StObject.set(x, "_mainSoundTrack", value.asInstanceOf[js.Any])
+        inline def set_mainSoundTrack(value: SoundTrack): Self = StObject.set(x, "_mainSoundTrack", value.asInstanceOf[js.Any])
       }
     }
   }

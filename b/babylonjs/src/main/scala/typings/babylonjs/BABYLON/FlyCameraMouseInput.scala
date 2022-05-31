@@ -2,19 +2,20 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlyCameraMouseInput extends ICameraInput[FlyCamera] {
+trait FlyCameraMouseInput
+  extends StObject
+     with ICameraInput[FlyCamera] {
   
-  var _observer: js.Any = js.native
+  /* private */ var _observer: js.Any = js.native
   
-  var _onMouseMove: js.Any = js.native
+  /* private */ var _onMouseMove: js.Any = js.native
   
-  var _pointerInput: js.Any = js.native
+  /* private */ var _pointerInput: js.Any = js.native
   
-  var _rollObserver: js.Any = js.native
+  /* private */ var _rollObserver: js.Any = js.native
   
   /**
     * Detect if any button is being pressed while mouse is moved.
@@ -57,16 +58,16 @@ trait FlyCameraMouseInput extends ICameraInput[FlyCamera] {
   @JSName("camera")
   var camera_FlyCameraMouseInput: FlyCamera = js.native
   
-  var element: js.Any = js.native
+  /* private */ var element: js.Any = js.native
   
-  var noPreventDefault: js.Any = js.native
+  /* private */ var noPreventDefault: js.Any = js.native
   
-  var previousPosition: js.Any = js.native
+  /* private */ var previousPosition: js.Any = js.native
   
   /**
     * Rotate camera by mouse offset.
     */
-  var rotateCamera: js.Any = js.native
+  /* private */ var rotateCamera: js.Any = js.native
   
   /**
     * Defines if touch is enabled. (Default is true.)

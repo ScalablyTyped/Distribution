@@ -8,12 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object componentsMod {
   
-  object MediaUpload {
-    
-    inline def apply[T /* <: Boolean */](props: Props[T]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
-    
-    @JSImport("@wordpress/media-utils/components", "MediaUpload")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  @JSImport("@wordpress/media-utils/components", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def MediaUpload[T /* <: Boolean */](props: Props[T]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MediaUpload")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

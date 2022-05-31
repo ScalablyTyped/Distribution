@@ -6,7 +6,6 @@ import typings.babylonjs.typesMod.FloatArray
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object engineUniformBufferMod {
@@ -63,9 +62,9 @@ object engineUniformBufferMod {
         * @param count defines the size of the data to update
         */
       def updateUniformBuffer(uniformBuffer: DataBuffer, elements: FloatArray): Unit = js.native
-      def updateUniformBuffer(uniformBuffer: DataBuffer, elements: FloatArray, offset: js.UndefOr[scala.Nothing], count: Double): Unit = js.native
       def updateUniformBuffer(uniformBuffer: DataBuffer, elements: FloatArray, offset: Double): Unit = js.native
       def updateUniformBuffer(uniformBuffer: DataBuffer, elements: FloatArray, offset: Double, count: Double): Unit = js.native
+      def updateUniformBuffer(uniformBuffer: DataBuffer, elements: FloatArray, offset: Unit, count: Double): Unit = js.native
     }
   }
 }

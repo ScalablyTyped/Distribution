@@ -12,7 +12,6 @@ import typings.luminoWidgets.mod.Widget
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object editMod {
@@ -45,7 +44,9 @@ object editMod {
   }
   
   @js.native
-  trait IEditMenu extends IJupyterLabMenu {
+  trait IEditMenu
+    extends StObject
+       with IJupyterLabMenu {
     
     /**
       * A set storing IClearers for the Edit menu.
@@ -67,134 +68,117 @@ object editMod {
     /**
       * Interface for an activity that wants to register a 'Clear...' menu item
       */
-    @js.native
-    trait IClearer[T /* <: Widget */] extends IMenuExtender[T] {
+    trait IClearer[T /* <: Widget */]
+      extends StObject
+         with IMenuExtender[T] {
       
       /**
         * A function to clear all of an activity.
         */
-      var clearAll: js.UndefOr[js.Function1[/* widget */ T, Unit]] = js.native
+      var clearAll: js.UndefOr[js.Function1[/* widget */ T, Unit]] = js.undefined
       
       /**
         * A function to clear the currently portion of activity.
         */
-      var clearCurrent: js.UndefOr[js.Function1[/* widget */ T, Unit]] = js.native
+      var clearCurrent: js.UndefOr[js.Function1[/* widget */ T, Unit]] = js.undefined
       
       /**
         * A name for the thing to be cleared, used for labeling `clearCurrent`.
         */
-      var noun: js.UndefOr[String] = js.native
+      var noun: js.UndefOr[String] = js.undefined
       
       /**
         * A plural name for the thing to be cleared, used for labeling `clearAll`.
         */
-      var pluralNoun: js.UndefOr[String] = js.native
+      var pluralNoun: js.UndefOr[String] = js.undefined
     }
     object IClearer {
       
-      @scala.inline
-      def apply[T /* <: Widget */](tracker: IWidgetTracker[T]): IClearer[T] = {
+      inline def apply[T /* <: Widget */](tracker: IWidgetTracker[T]): IClearer[T] = {
         val __obj = js.Dynamic.literal(tracker = tracker.asInstanceOf[js.Any])
         __obj.asInstanceOf[IClearer[T]]
       }
       
-      @scala.inline
-      implicit class IClearerMutableBuilder[Self <: IClearer[_], T /* <: Widget */] (val x: Self with IClearer[T]) extends AnyVal {
+      extension [Self <: IClearer[?], T /* <: Widget */](x: Self & IClearer[T]) {
         
-        @scala.inline
-        def setClearAll(value: /* widget */ T => Unit): Self = StObject.set(x, "clearAll", js.Any.fromFunction1(value))
+        inline def setClearAll(value: /* widget */ T => Unit): Self = StObject.set(x, "clearAll", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setClearAllUndefined: Self = StObject.set(x, "clearAll", js.undefined)
+        inline def setClearAllUndefined: Self = StObject.set(x, "clearAll", js.undefined)
         
-        @scala.inline
-        def setClearCurrent(value: /* widget */ T => Unit): Self = StObject.set(x, "clearCurrent", js.Any.fromFunction1(value))
+        inline def setClearCurrent(value: /* widget */ T => Unit): Self = StObject.set(x, "clearCurrent", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setClearCurrentUndefined: Self = StObject.set(x, "clearCurrent", js.undefined)
+        inline def setClearCurrentUndefined: Self = StObject.set(x, "clearCurrent", js.undefined)
         
-        @scala.inline
-        def setNoun(value: String): Self = StObject.set(x, "noun", value.asInstanceOf[js.Any])
+        inline def setNoun(value: String): Self = StObject.set(x, "noun", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNounUndefined: Self = StObject.set(x, "noun", js.undefined)
+        inline def setNounUndefined: Self = StObject.set(x, "noun", js.undefined)
         
-        @scala.inline
-        def setPluralNoun(value: String): Self = StObject.set(x, "pluralNoun", value.asInstanceOf[js.Any])
+        inline def setPluralNoun(value: String): Self = StObject.set(x, "pluralNoun", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPluralNounUndefined: Self = StObject.set(x, "pluralNoun", js.undefined)
+        inline def setPluralNounUndefined: Self = StObject.set(x, "pluralNoun", js.undefined)
       }
     }
     
     /**
       * Interface for an activity that uses Go to Line.
       */
-    @js.native
-    trait IGoToLiner[T /* <: Widget */] extends IMenuExtender[T] {
+    trait IGoToLiner[T /* <: Widget */]
+      extends StObject
+         with IMenuExtender[T] {
       
       /**
         * Execute a go to line command for the activity.
         */
-      var goToLine: js.UndefOr[js.Function1[/* widget */ T, Unit]] = js.native
+      var goToLine: js.UndefOr[js.Function1[/* widget */ T, Unit]] = js.undefined
     }
     object IGoToLiner {
       
-      @scala.inline
-      def apply[T /* <: Widget */](tracker: IWidgetTracker[T]): IGoToLiner[T] = {
+      inline def apply[T /* <: Widget */](tracker: IWidgetTracker[T]): IGoToLiner[T] = {
         val __obj = js.Dynamic.literal(tracker = tracker.asInstanceOf[js.Any])
         __obj.asInstanceOf[IGoToLiner[T]]
       }
       
-      @scala.inline
-      implicit class IGoToLinerMutableBuilder[Self <: IGoToLiner[_], T /* <: Widget */] (val x: Self with IGoToLiner[T]) extends AnyVal {
+      extension [Self <: IGoToLiner[?], T /* <: Widget */](x: Self & IGoToLiner[T]) {
         
-        @scala.inline
-        def setGoToLine(value: /* widget */ T => Unit): Self = StObject.set(x, "goToLine", js.Any.fromFunction1(value))
+        inline def setGoToLine(value: /* widget */ T => Unit): Self = StObject.set(x, "goToLine", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGoToLineUndefined: Self = StObject.set(x, "goToLine", js.undefined)
+        inline def setGoToLineUndefined: Self = StObject.set(x, "goToLine", js.undefined)
       }
     }
     
     /**
       * Interface for an activity that uses Undo/Redo.
       */
-    @js.native
-    trait IUndoer[T /* <: Widget */] extends IMenuExtender[T] {
+    trait IUndoer[T /* <: Widget */]
+      extends StObject
+         with IMenuExtender[T] {
       
       /**
         * Execute a redo command for the activity.
         */
-      var redo: js.UndefOr[js.Function1[/* widget */ T, Unit]] = js.native
+      var redo: js.UndefOr[js.Function1[/* widget */ T, Unit]] = js.undefined
       
       /**
         * Execute an undo command for the activity.
         */
-      var undo: js.UndefOr[js.Function1[/* widget */ T, Unit]] = js.native
+      var undo: js.UndefOr[js.Function1[/* widget */ T, Unit]] = js.undefined
     }
     object IUndoer {
       
-      @scala.inline
-      def apply[T /* <: Widget */](tracker: IWidgetTracker[T]): IUndoer[T] = {
+      inline def apply[T /* <: Widget */](tracker: IWidgetTracker[T]): IUndoer[T] = {
         val __obj = js.Dynamic.literal(tracker = tracker.asInstanceOf[js.Any])
         __obj.asInstanceOf[IUndoer[T]]
       }
       
-      @scala.inline
-      implicit class IUndoerMutableBuilder[Self <: IUndoer[_], T /* <: Widget */] (val x: Self with IUndoer[T]) extends AnyVal {
+      extension [Self <: IUndoer[?], T /* <: Widget */](x: Self & IUndoer[T]) {
         
-        @scala.inline
-        def setRedo(value: /* widget */ T => Unit): Self = StObject.set(x, "redo", js.Any.fromFunction1(value))
+        inline def setRedo(value: /* widget */ T => Unit): Self = StObject.set(x, "redo", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setRedoUndefined: Self = StObject.set(x, "redo", js.undefined)
+        inline def setRedoUndefined: Self = StObject.set(x, "redo", js.undefined)
         
-        @scala.inline
-        def setUndo(value: /* widget */ T => Unit): Self = StObject.set(x, "undo", js.Any.fromFunction1(value))
+        inline def setUndo(value: /* widget */ T => Unit): Self = StObject.set(x, "undo", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setUndoUndefined: Self = StObject.set(x, "undo", js.undefined)
+        inline def setUndoUndefined: Self = StObject.set(x, "undo", js.undefined)
       }
     }
   }

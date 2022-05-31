@@ -4,8 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("webix.ui.form")
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.webix.webix.ui.baseview because Already inherited
+- typings.webix.webix.ui.form because var conflicts: $height, $skin_Original, $view, $width, config, elements, name. Inlined  */ @JSGlobal("webix.ui.form")
 @js.native
 class form ()
-  extends StObject
-     with typings.webix.webix.ui.form
+  extends typings.webix.mod.ui.form

@@ -2,7 +2,6 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -32,9 +31,9 @@ trait PickingInfo extends StObject {
     * @returns The normal correspodning to the face the pick collided with
     */
   def getNormal(): Nullable[Vector3] = js.native
-  def getNormal(useWorldCoordinates: js.UndefOr[scala.Nothing], useVerticesNormals: Boolean): Nullable[Vector3] = js.native
   def getNormal(useWorldCoordinates: Boolean): Nullable[Vector3] = js.native
   def getNormal(useWorldCoordinates: Boolean, useVerticesNormals: Boolean): Nullable[Vector3] = js.native
+  def getNormal(useWorldCoordinates: Unit, useVerticesNormals: Boolean): Nullable[Vector3] = js.native
   
   /**
     * Gets the texture coordinates of where the pick occured

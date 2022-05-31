@@ -3,10 +3,13 @@ package typings.babylonjs
 import typings.babylonjs.anon.Rebuild
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeMaterialDecoratorMod {
+  
+  @JSImport("babylonjs/Materials/Node/nodeMaterialDecorator", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait PropertyTypeForEdition extends StObject
@@ -15,179 +18,142 @@ object nodeMaterialDecoratorMod {
   object PropertyTypeForEdition extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[PropertyTypeForEdition with Double] = js.native
+    def apply(value: Double): js.UndefOr[PropertyTypeForEdition & Double] = js.native
     
     /** property is a boolean */
     @js.native
-    sealed trait Boolean extends PropertyTypeForEdition
-    /* 0 */ val Boolean: typings.babylonjs.nodeMaterialDecoratorMod.PropertyTypeForEdition.Boolean with Double = js.native
+    sealed trait Boolean
+      extends StObject
+         with PropertyTypeForEdition
+    /* 0 */ val Boolean: typings.babylonjs.nodeMaterialDecoratorMod.PropertyTypeForEdition.Boolean & Double = js.native
     
     /** property is a float */
     @js.native
-    sealed trait Float extends PropertyTypeForEdition
-    /* 1 */ val Float: typings.babylonjs.nodeMaterialDecoratorMod.PropertyTypeForEdition.Float with Double = js.native
+    sealed trait Float
+      extends StObject
+         with PropertyTypeForEdition
+    /* 1 */ val Float: typings.babylonjs.nodeMaterialDecoratorMod.PropertyTypeForEdition.Float & Double = js.native
     
     /** property is a list of values */
     @js.native
-    sealed trait List extends PropertyTypeForEdition
-    /* 3 */ val List: typings.babylonjs.nodeMaterialDecoratorMod.PropertyTypeForEdition.List with Double = js.native
+    sealed trait List
+      extends StObject
+         with PropertyTypeForEdition
+    /* 3 */ val List: typings.babylonjs.nodeMaterialDecoratorMod.PropertyTypeForEdition.List & Double = js.native
     
     /** property is a Vector2 */
     @js.native
-    sealed trait Vector2 extends PropertyTypeForEdition
-    /* 2 */ val Vector2: typings.babylonjs.nodeMaterialDecoratorMod.PropertyTypeForEdition.Vector2 with Double = js.native
+    sealed trait Vector2
+      extends StObject
+         with PropertyTypeForEdition
+    /* 2 */ val Vector2: typings.babylonjs.nodeMaterialDecoratorMod.PropertyTypeForEdition.Vector2 & Double = js.native
   }
   
-  @JSImport("babylonjs/Materials/Node/nodeMaterialDecorator", "editableInPropertyPage")
-  @js.native
-  def editableInPropertyPage(displayName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit] = js.native
-  @JSImport("babylonjs/Materials/Node/nodeMaterialDecorator", "editableInPropertyPage")
-  @js.native
-  def editableInPropertyPage(
-    displayName: String,
-    propertyType: js.UndefOr[scala.Nothing],
-    groupName: js.UndefOr[scala.Nothing],
-    options: IEditablePropertyOption
-  ): js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit] = js.native
-  @JSImport("babylonjs/Materials/Node/nodeMaterialDecorator", "editableInPropertyPage")
-  @js.native
-  def editableInPropertyPage(displayName: String, propertyType: js.UndefOr[scala.Nothing], groupName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit] = js.native
-  @JSImport("babylonjs/Materials/Node/nodeMaterialDecorator", "editableInPropertyPage")
-  @js.native
-  def editableInPropertyPage(
-    displayName: String,
-    propertyType: js.UndefOr[scala.Nothing],
-    groupName: String,
-    options: IEditablePropertyOption
-  ): js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit] = js.native
-  @JSImport("babylonjs/Materials/Node/nodeMaterialDecorator", "editableInPropertyPage")
-  @js.native
-  def editableInPropertyPage(displayName: String, propertyType: PropertyTypeForEdition): js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit] = js.native
-  @JSImport("babylonjs/Materials/Node/nodeMaterialDecorator", "editableInPropertyPage")
-  @js.native
-  def editableInPropertyPage(
-    displayName: String,
-    propertyType: PropertyTypeForEdition,
-    groupName: js.UndefOr[scala.Nothing],
-    options: IEditablePropertyOption
-  ): js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit] = js.native
-  @JSImport("babylonjs/Materials/Node/nodeMaterialDecorator", "editableInPropertyPage")
-  @js.native
-  def editableInPropertyPage(displayName: String, propertyType: PropertyTypeForEdition, groupName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit] = js.native
-  @JSImport("babylonjs/Materials/Node/nodeMaterialDecorator", "editableInPropertyPage")
-  @js.native
-  def editableInPropertyPage(
+  inline def editableInPropertyPage(displayName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("editableInPropertyPage")(displayName.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit]]
+  inline def editableInPropertyPage(displayName: String, propertyType: Unit, groupName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("editableInPropertyPage")(displayName.asInstanceOf[js.Any], propertyType.asInstanceOf[js.Any], groupName.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit]]
+  inline def editableInPropertyPage(displayName: String, propertyType: Unit, groupName: String, options: IEditablePropertyOption): js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("editableInPropertyPage")(displayName.asInstanceOf[js.Any], propertyType.asInstanceOf[js.Any], groupName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit]]
+  inline def editableInPropertyPage(displayName: String, propertyType: Unit, groupName: Unit, options: IEditablePropertyOption): js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("editableInPropertyPage")(displayName.asInstanceOf[js.Any], propertyType.asInstanceOf[js.Any], groupName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit]]
+  inline def editableInPropertyPage(displayName: String, propertyType: PropertyTypeForEdition): js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("editableInPropertyPage")(displayName.asInstanceOf[js.Any], propertyType.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit]]
+  inline def editableInPropertyPage(displayName: String, propertyType: PropertyTypeForEdition, groupName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("editableInPropertyPage")(displayName.asInstanceOf[js.Any], propertyType.asInstanceOf[js.Any], groupName.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit]]
+  inline def editableInPropertyPage(
     displayName: String,
     propertyType: PropertyTypeForEdition,
     groupName: String,
     options: IEditablePropertyOption
-  ): js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit] = js.native
+  ): js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("editableInPropertyPage")(displayName.asInstanceOf[js.Any], propertyType.asInstanceOf[js.Any], groupName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit]]
+  inline def editableInPropertyPage(
+    displayName: String,
+    propertyType: PropertyTypeForEdition,
+    groupName: Unit,
+    options: IEditablePropertyOption
+  ): js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("editableInPropertyPage")(displayName.asInstanceOf[js.Any], propertyType.asInstanceOf[js.Any], groupName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit]]
   
-  @js.native
   trait IEditablePropertyListOption extends StObject {
     
     /** label of the option */
-    var label: String = js.native
+    var label: String
     
     /** value of the option */
-    var value: Double = js.native
+    var value: Double
   }
   object IEditablePropertyListOption {
     
-    @scala.inline
-    def apply(label: String, value: Double): IEditablePropertyListOption = {
+    inline def apply(label: String, value: Double): IEditablePropertyListOption = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[IEditablePropertyListOption]
     }
     
-    @scala.inline
-    implicit class IEditablePropertyListOptionMutableBuilder[Self <: IEditablePropertyListOption] (val x: Self) extends AnyVal {
+    extension [Self <: IEditablePropertyListOption](x: Self) {
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait IEditablePropertyOption extends StObject {
     
     /** max value */
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     /** min value */
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
     /** notifiers: indicates which actions to take when the property is changed */
-    var notifiers: js.UndefOr[Rebuild] = js.native
+    var notifiers: js.UndefOr[Rebuild] = js.undefined
     
     /** list of the options for a variable of type list */
-    var options: js.UndefOr[js.Array[IEditablePropertyListOption]] = js.native
+    var options: js.UndefOr[js.Array[IEditablePropertyListOption]] = js.undefined
   }
   object IEditablePropertyOption {
     
-    @scala.inline
-    def apply(): IEditablePropertyOption = {
+    inline def apply(): IEditablePropertyOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IEditablePropertyOption]
     }
     
-    @scala.inline
-    implicit class IEditablePropertyOptionMutableBuilder[Self <: IEditablePropertyOption] (val x: Self) extends AnyVal {
+    extension [Self <: IEditablePropertyOption](x: Self) {
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setNotifiers(value: Rebuild): Self = StObject.set(x, "notifiers", value.asInstanceOf[js.Any])
+      inline def setNotifiers(value: Rebuild): Self = StObject.set(x, "notifiers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotifiersUndefined: Self = StObject.set(x, "notifiers", js.undefined)
+      inline def setNotifiersUndefined: Self = StObject.set(x, "notifiers", js.undefined)
       
-      @scala.inline
-      def setOptions(value: js.Array[IEditablePropertyListOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[IEditablePropertyListOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setOptionsVarargs(value: IEditablePropertyListOption*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: IEditablePropertyListOption*): Self = StObject.set(x, "options", js.Array(value :_*))
     }
   }
   
-  @js.native
   trait IPropertyDescriptionForEdition extends StObject {
     
     /** display name of the property */
-    var displayName: String = js.native
+    var displayName: String
     
     /** group of the property - all properties with the same group value will be displayed in a specific section */
-    var groupName: String = js.native
+    var groupName: String
     
     /** options for the property */
-    var options: IEditablePropertyOption = js.native
+    var options: IEditablePropertyOption
     
     /** name of the property */
-    var propertyName: String = js.native
+    var propertyName: String
     
     /** type of the property */
-    var `type`: PropertyTypeForEdition = js.native
+    var `type`: PropertyTypeForEdition
   }
   object IPropertyDescriptionForEdition {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       displayName: String,
       groupName: String,
       options: IEditablePropertyOption,
@@ -199,23 +165,17 @@ object nodeMaterialDecoratorMod {
       __obj.asInstanceOf[IPropertyDescriptionForEdition]
     }
     
-    @scala.inline
-    implicit class IPropertyDescriptionForEditionMutableBuilder[Self <: IPropertyDescriptionForEdition] (val x: Self) extends AnyVal {
+    extension [Self <: IPropertyDescriptionForEdition](x: Self) {
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
+      inline def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: IEditablePropertyOption): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: IEditablePropertyOption): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
+      inline def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: PropertyTypeForEdition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: PropertyTypeForEdition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

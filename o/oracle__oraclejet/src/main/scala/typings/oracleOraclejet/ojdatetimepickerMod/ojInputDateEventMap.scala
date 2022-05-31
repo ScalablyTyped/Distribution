@@ -48,40 +48,39 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ojInputDateEventMap[SP /* <: ojInputDateSettableProperties */] extends inputBaseEventMap[String, SP, String, String] {
+trait ojInputDateEventMap[SP /* <: ojInputDateSettableProperties */]
+  extends StObject
+     with inputBaseEventMap[String, SP, String, String] {
   
-  var converterChanged: JetElementCustomEvent[Converter[String] | RegisteredConverter] = js.native
+  var converterChanged: JetElementCustomEvent[Converter[String] | RegisteredConverter]
   
-  var datePickerChanged: JetElementCustomEvent[ChangeMonth] = js.native
+  var datePickerChanged: JetElementCustomEvent[ChangeMonth]
   
-  var dayFormatterChanged: JetElementCustomEvent[js.Function1[/* param */ DayFormatterInput, Null | all | DayFormatterOutput]] = js.native
+  var dayFormatterChanged: JetElementCustomEvent[js.Function1[/* param */ DayFormatterInput, Null | all | DayFormatterOutput]]
   
-  var dayMetaDataChanged: JetElementCustomEvent[StringDictionary[StringDictionary[StringDictionary[Disabled]]]] = js.native
+  var dayMetaDataChanged: JetElementCustomEvent[StringDictionary[StringDictionary[StringDictionary[Disabled]]]]
   
-  var keyboardEditChanged: JetElementCustomEvent[enabled | disabled] = js.native
+  var keyboardEditChanged: JetElementCustomEvent[enabled | disabled]
   
-  var maxChanged: JetElementCustomEvent[String | Null] = js.native
+  var maxChanged: JetElementCustomEvent[String | Null]
   
-  var minChanged: JetElementCustomEvent[String | Null] = js.native
+  var minChanged: JetElementCustomEvent[String | Null]
   
   @JSName("ojAnimateEnd")
-  var ojAnimateEnd_ojInputDateEventMap: ojAnimateEnd = js.native
+  var ojAnimateEnd_ojInputDateEventMap: ojAnimateEnd
   
   @JSName("ojAnimateStart")
-  var ojAnimateStart_ojInputDateEventMap: ojAnimateStart = js.native
+  var ojAnimateStart_ojInputDateEventMap: ojAnimateStart
   
-  var pickerAttributesChanged: JetElementCustomEvent[Class] = js.native
+  var pickerAttributesChanged: JetElementCustomEvent[Class]
   
-  var renderModeChanged: JetElementCustomEvent[jet | native] = js.native
+  var renderModeChanged: JetElementCustomEvent[jet | native]
 }
 object ojInputDateEventMap {
   
-  @scala.inline
-  def apply[SP /* <: ojInputDateSettableProperties */](
+  inline def apply[SP /* <: ojInputDateSettableProperties */](
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,
@@ -208,42 +207,30 @@ object ojInputDateEventMap {
     __obj.asInstanceOf[ojInputDateEventMap[SP]]
   }
   
-  @scala.inline
-  implicit class ojInputDateEventMapMutableBuilder[Self <: ojInputDateEventMap[_], SP /* <: ojInputDateSettableProperties */] (val x: Self with ojInputDateEventMap[SP]) extends AnyVal {
+  extension [Self <: ojInputDateEventMap[?], SP /* <: ojInputDateSettableProperties */](x: Self & ojInputDateEventMap[SP]) {
     
-    @scala.inline
-    def setConverterChanged(value: JetElementCustomEvent[Converter[String] | RegisteredConverter]): Self = StObject.set(x, "converterChanged", value.asInstanceOf[js.Any])
+    inline def setConverterChanged(value: JetElementCustomEvent[Converter[String] | RegisteredConverter]): Self = StObject.set(x, "converterChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatePickerChanged(value: JetElementCustomEvent[ChangeMonth]): Self = StObject.set(x, "datePickerChanged", value.asInstanceOf[js.Any])
+    inline def setDatePickerChanged(value: JetElementCustomEvent[ChangeMonth]): Self = StObject.set(x, "datePickerChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayFormatterChanged(
+    inline def setDayFormatterChanged(
       value: JetElementCustomEvent[js.Function1[/* param */ DayFormatterInput, Null | all | DayFormatterOutput]]
     ): Self = StObject.set(x, "dayFormatterChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayMetaDataChanged(value: JetElementCustomEvent[StringDictionary[StringDictionary[StringDictionary[Disabled]]]]): Self = StObject.set(x, "dayMetaDataChanged", value.asInstanceOf[js.Any])
+    inline def setDayMetaDataChanged(value: JetElementCustomEvent[StringDictionary[StringDictionary[StringDictionary[Disabled]]]]): Self = StObject.set(x, "dayMetaDataChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboardEditChanged(value: JetElementCustomEvent[enabled | disabled]): Self = StObject.set(x, "keyboardEditChanged", value.asInstanceOf[js.Any])
+    inline def setKeyboardEditChanged(value: JetElementCustomEvent[enabled | disabled]): Self = StObject.set(x, "keyboardEditChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "maxChanged", value.asInstanceOf[js.Any])
+    inline def setMaxChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "maxChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "minChanged", value.asInstanceOf[js.Any])
+    inline def setMinChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "minChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
+    inline def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOjAnimateStart(value: ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
+    inline def setOjAnimateStart(value: ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickerAttributesChanged(value: JetElementCustomEvent[Class]): Self = StObject.set(x, "pickerAttributesChanged", value.asInstanceOf[js.Any])
+    inline def setPickerAttributesChanged(value: JetElementCustomEvent[Class]): Self = StObject.set(x, "pickerAttributesChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderModeChanged(value: JetElementCustomEvent[jet | native]): Self = StObject.set(x, "renderModeChanged", value.asInstanceOf[js.Any])
+    inline def setRenderModeChanged(value: JetElementCustomEvent[jet | native]): Self = StObject.set(x, "renderModeChanged", value.asInstanceOf[js.Any])
   }
 }

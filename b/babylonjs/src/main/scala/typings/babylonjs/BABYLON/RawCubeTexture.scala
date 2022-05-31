@@ -3,11 +3,12 @@ package typings.babylonjs.BABYLON
 import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RawCubeTexture extends CubeTexture {
+trait RawCubeTexture
+  extends StObject
+     with CubeTexture {
   
   /**
     * Updates the raw cube texture.
@@ -36,22 +37,35 @@ trait RawCubeTexture extends CubeTexture {
     * @returns a promsie that resolves when the operation is complete
     */
   def updateRGBDAsync(data: js.Array[js.Array[ArrayBufferView]]): js.Promise[Unit] = js.native
+  def updateRGBDAsync(data: js.Array[js.Array[ArrayBufferView]], sphericalPolynomial: Unit, lodScale: Double): js.Promise[Unit] = js.native
   def updateRGBDAsync(
     data: js.Array[js.Array[ArrayBufferView]],
-    sphericalPolynomial: js.UndefOr[Nullable[SphericalPolynomial]],
-    lodScale: js.UndefOr[scala.Nothing],
+    sphericalPolynomial: Unit,
+    lodScale: Double,
     lodOffset: Double
   ): js.Promise[Unit] = js.native
   def updateRGBDAsync(
     data: js.Array[js.Array[ArrayBufferView]],
-    sphericalPolynomial: js.UndefOr[Nullable[SphericalPolynomial]],
+    sphericalPolynomial: Unit,
+    lodScale: Unit,
+    lodOffset: Double
+  ): js.Promise[Unit] = js.native
+  def updateRGBDAsync(data: js.Array[js.Array[ArrayBufferView]], sphericalPolynomial: Nullable[SphericalPolynomial]): js.Promise[Unit] = js.native
+  def updateRGBDAsync(
+    data: js.Array[js.Array[ArrayBufferView]],
+    sphericalPolynomial: Nullable[SphericalPolynomial],
     lodScale: Double
   ): js.Promise[Unit] = js.native
   def updateRGBDAsync(
     data: js.Array[js.Array[ArrayBufferView]],
-    sphericalPolynomial: js.UndefOr[Nullable[SphericalPolynomial]],
+    sphericalPolynomial: Nullable[SphericalPolynomial],
     lodScale: Double,
     lodOffset: Double
   ): js.Promise[Unit] = js.native
-  def updateRGBDAsync(data: js.Array[js.Array[ArrayBufferView]], sphericalPolynomial: Nullable[SphericalPolynomial]): js.Promise[Unit] = js.native
+  def updateRGBDAsync(
+    data: js.Array[js.Array[ArrayBufferView]],
+    sphericalPolynomial: Nullable[SphericalPolynomial],
+    lodScale: Unit,
+    lodOffset: Double
+  ): js.Promise[Unit] = js.native
 }

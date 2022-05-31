@@ -3,29 +3,28 @@ package typings.babylonjs.BABYLON
 import typings.std.Worker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkerPool extends IDisposable {
+trait WorkerPool
+  extends StObject
+     with IDisposable {
   
-  var _execute: js.Any = js.native
+  /* private */ var _execute: js.Any
   
-  var _pendingActions: js.Any = js.native
+  /* private */ var _pendingActions: js.Any
   
-  var _workerInfos: js.Any = js.native
+  /* private */ var _workerInfos: js.Any
   
   /**
     * Pushes an action to the worker pool. If all the workers are active, the action will be
     * pended until a worker has completed its action.
     * @param action The action to perform. Call onComplete when the action is complete.
     */
-  def push(action: js.Function2[/* worker */ Worker, /* onComplete */ js.Function0[Unit], Unit]): Unit = js.native
+  def push(action: js.Function2[/* worker */ Worker, /* onComplete */ js.Function0[Unit], Unit]): Unit
 }
 object WorkerPool {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _execute: js.Any,
     _pendingActions: js.Any,
     _workerInfos: js.Any,
@@ -36,19 +35,14 @@ object WorkerPool {
     __obj.asInstanceOf[WorkerPool]
   }
   
-  @scala.inline
-  implicit class WorkerPoolMutableBuilder[Self <: WorkerPool] (val x: Self) extends AnyVal {
+  extension [Self <: WorkerPool](x: Self) {
     
-    @scala.inline
-    def setPush(value: js.Function2[/* worker */ Worker, /* onComplete */ js.Function0[Unit], Unit] => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+    inline def setPush(value: js.Function2[/* worker */ Worker, /* onComplete */ js.Function0[Unit], Unit] => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_execute(value: js.Any): Self = StObject.set(x, "_execute", value.asInstanceOf[js.Any])
+    inline def set_execute(value: js.Any): Self = StObject.set(x, "_execute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_pendingActions(value: js.Any): Self = StObject.set(x, "_pendingActions", value.asInstanceOf[js.Any])
+    inline def set_pendingActions(value: js.Any): Self = StObject.set(x, "_pendingActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_workerInfos(value: js.Any): Self = StObject.set(x, "_workerInfos", value.asInstanceOf[js.Any])
+    inline def set_workerInfos(value: js.Any): Self = StObject.set(x, "_workerInfos", value.asInstanceOf[js.Any])
   }
 }

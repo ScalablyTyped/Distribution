@@ -22,40 +22,39 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ojThematicMapAreaEventMap extends HTMLElementEventMap {
+trait ojThematicMapAreaEventMap
+  extends StObject
+     with HTMLElementEventMap {
   
-  var categoriesChanged: JetElementCustomEvent[js.Array[String]] = js.native
+  var categoriesChanged: JetElementCustomEvent[js.Array[String]]
   
-  var colorChanged: JetElementCustomEvent[String] = js.native
+  var colorChanged: JetElementCustomEvent[String]
   
-  var labelChanged: JetElementCustomEvent[String] = js.native
+  var labelChanged: JetElementCustomEvent[String]
   
   var labelStyleChanged: JetElementCustomEvent[
     /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapArea['labelStyle'] */ js.Any
-  ] = js.native
+  ]
   
-  var locationChanged: JetElementCustomEvent[String] = js.native
+  var locationChanged: JetElementCustomEvent[String]
   
-  var opacityChanged: JetElementCustomEvent[Double] = js.native
+  var opacityChanged: JetElementCustomEvent[Double]
   
-  var selectableChanged: JetElementCustomEvent[auto | off] = js.native
+  var selectableChanged: JetElementCustomEvent[auto | off]
   
-  var shortDescChanged: JetElementCustomEvent[String] = js.native
+  var shortDescChanged: JetElementCustomEvent[String]
   
-  var svgClassNameChanged: JetElementCustomEvent[String] = js.native
+  var svgClassNameChanged: JetElementCustomEvent[String]
   
   var svgStyleChanged: JetElementCustomEvent[
     /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapArea['svgStyle'] */ js.Any
-  ] = js.native
+  ]
 }
 object ojThematicMapAreaEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,
@@ -167,42 +166,31 @@ object ojThematicMapAreaEventMap {
     __obj.asInstanceOf[ojThematicMapAreaEventMap]
   }
   
-  @scala.inline
-  implicit class ojThematicMapAreaEventMapMutableBuilder[Self <: ojThematicMapAreaEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: ojThematicMapAreaEventMap](x: Self) {
     
-    @scala.inline
-    def setCategoriesChanged(value: JetElementCustomEvent[js.Array[String]]): Self = StObject.set(x, "categoriesChanged", value.asInstanceOf[js.Any])
+    inline def setCategoriesChanged(value: JetElementCustomEvent[js.Array[String]]): Self = StObject.set(x, "categoriesChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "colorChanged", value.asInstanceOf[js.Any])
+    inline def setColorChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "colorChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "labelChanged", value.asInstanceOf[js.Any])
+    inline def setLabelChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "labelChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelStyleChanged(
+    inline def setLabelStyleChanged(
       value: JetElementCustomEvent[
           /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapArea['labelStyle'] */ js.Any
         ]
     ): Self = StObject.set(x, "labelStyleChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "locationChanged", value.asInstanceOf[js.Any])
+    inline def setLocationChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "locationChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "opacityChanged", value.asInstanceOf[js.Any])
+    inline def setOpacityChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "opacityChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectableChanged(value: JetElementCustomEvent[auto | off]): Self = StObject.set(x, "selectableChanged", value.asInstanceOf[js.Any])
+    inline def setSelectableChanged(value: JetElementCustomEvent[auto | off]): Self = StObject.set(x, "selectableChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortDescChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "shortDescChanged", value.asInstanceOf[js.Any])
+    inline def setShortDescChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "shortDescChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgClassNameChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "svgClassNameChanged", value.asInstanceOf[js.Any])
+    inline def setSvgClassNameChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "svgClassNameChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgStyleChanged(
+    inline def setSvgStyleChanged(
       value: JetElementCustomEvent[
           /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapArea['svgStyle'] */ js.Any
         ]

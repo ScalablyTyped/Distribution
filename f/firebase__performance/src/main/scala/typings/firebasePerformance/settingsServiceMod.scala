@@ -4,7 +4,6 @@ import typings.firebaseAppTypes.mod.FirebaseApp
 import typings.firebaseInstallationsTypes.mod.FirebaseInstallations
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object settingsServiceMod {
@@ -52,8 +51,10 @@ object settingsServiceMod {
   /* static members */
   object SettingsService {
     
-    @JSImport("@firebase/performance/dist/src/services/settings_service", "SettingsService.getInstance")
+    @JSImport("@firebase/performance/dist/src/services/settings_service", "SettingsService")
     @js.native
-    def getInstance(): SettingsService = js.native
+    val ^ : js.Any = js.native
+    
+    inline def getInstance(): SettingsService = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[SettingsService]
   }
 }

@@ -95,116 +95,115 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ojChartEventMap[K, D] extends dvtBaseComponentEventMap[ojChartSettableProperties[K, D]] {
+trait ojChartEventMap[K, D]
+  extends StObject
+     with dvtBaseComponentEventMap[ojChartSettableProperties[K, D]] {
   
-  var animationOnDataChangeChanged: JetElementCustomEvent[auto | slideToLeft | slideToRight | none] = js.native
+  var animationOnDataChangeChanged: JetElementCustomEvent[auto | slideToLeft | slideToRight | none]
   
-  var animationOnDisplayChanged: JetElementCustomEvent[auto | alphaFade | zoom | none] = js.native
+  var animationOnDisplayChanged: JetElementCustomEvent[auto | alphaFade | zoom | none]
   
-  var asChanged: JetElementCustomEvent[String] = js.native
+  var asChanged: JetElementCustomEvent[String]
   
-  var coordinateSystemChanged: JetElementCustomEvent[polar | cartesian] = js.native
+  var coordinateSystemChanged: JetElementCustomEvent[polar | cartesian]
   
-  var dataChanged: JetElementCustomEvent[(DataProvider[K, D]) | Null] = js.native
+  var dataChanged: JetElementCustomEvent[(DataProvider[K, D]) | Null]
   
-  var dataCursorBehaviorChanged: JetElementCustomEvent[smooth | snap | auto] = js.native
+  var dataCursorBehaviorChanged: JetElementCustomEvent[smooth | snap | auto]
   
-  var dataCursorChanged: JetElementCustomEvent[off | on | auto] = js.native
+  var dataCursorChanged: JetElementCustomEvent[off | on | auto]
   
-  var dataCursorPositionChanged: JetElementCustomEvent[X] = js.native
+  var dataCursorPositionChanged: JetElementCustomEvent[X]
   
-  var dataLabelChanged: JetElementCustomEvent[js.Function1[/* context */ DataLabelContext, Insert | PreventDefault]] = js.native
+  var dataLabelChanged: JetElementCustomEvent[js.Function1[/* context */ DataLabelContext, Insert | PreventDefault]]
   
-  var dndChanged: JetElementCustomEvent[Drag] = js.native
+  var dndChanged: JetElementCustomEvent[Drag]
   
-  var dragModeChanged: JetElementCustomEvent[pan | zoom | select | off | user] = js.native
+  var dragModeChanged: JetElementCustomEvent[pan | zoom | select | off | user]
   
-  var drillingChanged: JetElementCustomEvent[on | seriesOnly | groupsOnly | off] = js.native
+  var drillingChanged: JetElementCustomEvent[on | seriesOnly | groupsOnly | off]
   
-  var groupComparatorChanged: JetElementCustomEvent[(js.Function2[/* param0 */ js.Object, /* param1 */ js.Object, Double]) | Null] = js.native
+  var groupComparatorChanged: JetElementCustomEvent[(js.Function2[/* param0 */ js.Object, /* param1 */ js.Object, Double]) | Null]
   
-  var hiddenCategoriesChanged: JetElementCustomEvent[js.Array[String]] = js.native
+  var hiddenCategoriesChanged: JetElementCustomEvent[js.Array[String]]
   
-  var hideAndShowBehaviorChanged: JetElementCustomEvent[withRescale | withoutRescale | none] = js.native
+  var hideAndShowBehaviorChanged: JetElementCustomEvent[withRescale | withoutRescale | none]
   
-  var highlightMatchChanged: JetElementCustomEvent[any | all] = js.native
+  var highlightMatchChanged: JetElementCustomEvent[any | all]
   
-  var highlightedCategoriesChanged: JetElementCustomEvent[js.Array[String]] = js.native
+  var highlightedCategoriesChanged: JetElementCustomEvent[js.Array[String]]
   
-  var hoverBehaviorChanged: JetElementCustomEvent[dim | none] = js.native
+  var hoverBehaviorChanged: JetElementCustomEvent[dim | none]
   
-  var initialZoomingChanged: JetElementCustomEvent[first | last | none] = js.native
+  var initialZoomingChanged: JetElementCustomEvent[first | last | none]
   
-  var legendChanged: JetElementCustomEvent[BackgroundColor] = js.native
+  var legendChanged: JetElementCustomEvent[BackgroundColor]
   
-  var ojDrill: typings.oracleOraclejet.ojchartMod.ojChart.ojDrill = js.native
+  var ojDrill: typings.oracleOraclejet.ojchartMod.ojChart.ojDrill
   
-  var ojSelectInput: typings.oracleOraclejet.ojchartMod.ojChart.ojSelectInput = js.native
+  var ojSelectInput: typings.oracleOraclejet.ojchartMod.ojChart.ojSelectInput
   
-  var ojViewportChange: typings.oracleOraclejet.ojchartMod.ojChart.ojViewportChange = js.native
+  var ojViewportChange: typings.oracleOraclejet.ojchartMod.ojChart.ojViewportChange
   
-  var ojViewportChangeInput: typings.oracleOraclejet.ojchartMod.ojChart.ojViewportChangeInput = js.native
+  var ojViewportChangeInput: typings.oracleOraclejet.ojchartMod.ojChart.ojViewportChangeInput
   
-  var orientationChanged: JetElementCustomEvent[horizontal | vertical] = js.native
+  var orientationChanged: JetElementCustomEvent[horizontal | vertical]
   
-  var otherThresholdChanged: JetElementCustomEvent[Double] = js.native
+  var otherThresholdChanged: JetElementCustomEvent[Double]
   
-  var overviewChanged: JetElementCustomEvent[Content] = js.native
+  var overviewChanged: JetElementCustomEvent[Content]
   
-  var pieCenterChanged: JetElementCustomEvent[Converter] = js.native
+  var pieCenterChanged: JetElementCustomEvent[Converter]
   
-  var plotAreaChanged: JetElementCustomEvent[BorderWidth] = js.native
+  var plotAreaChanged: JetElementCustomEvent[BorderWidth]
   
-  var polarGridShapeChanged: JetElementCustomEvent[polygon | circle] = js.native
+  var polarGridShapeChanged: JetElementCustomEvent[polygon | circle]
   
-  var selectionChanged: JetElementCustomEvent[js.Array[K]] = js.native
+  var selectionChanged: JetElementCustomEvent[js.Array[K]]
   
-  var selectionModeChanged: JetElementCustomEvent[single | multiple | none] = js.native
+  var selectionModeChanged: JetElementCustomEvent[single | multiple | none]
   
-  var seriesComparatorChanged: JetElementCustomEvent[(js.Function2[/* param0 */ js.Object, /* param1 */ js.Object, Double]) | Null] = js.native
+  var seriesComparatorChanged: JetElementCustomEvent[(js.Function2[/* param0 */ js.Object, /* param1 */ js.Object, Double]) | Null]
   
-  var sortingChanged: JetElementCustomEvent[ascending | descending | off] = js.native
+  var sortingChanged: JetElementCustomEvent[ascending | descending | off]
   
-  var splitDualYChanged: JetElementCustomEvent[on | off | auto] = js.native
+  var splitDualYChanged: JetElementCustomEvent[on | off | auto]
   
-  var splitterPositionChanged: JetElementCustomEvent[Double] = js.native
+  var splitterPositionChanged: JetElementCustomEvent[Double]
   
-  var stackChanged: JetElementCustomEvent[on | off] = js.native
+  var stackChanged: JetElementCustomEvent[on | off]
   
-  var stackLabelChanged: JetElementCustomEvent[on | off] = js.native
+  var stackLabelChanged: JetElementCustomEvent[on | off]
   
-  var styleDefaultsChanged: JetElementCustomEvent[AnimationDownColor] = js.native
+  var styleDefaultsChanged: JetElementCustomEvent[AnimationDownColor]
   
-  var timeAxisTypeChanged: JetElementCustomEvent[enabled | mixedFrequency | skipGaps | disabled | auto] = js.native
+  var timeAxisTypeChanged: JetElementCustomEvent[enabled | mixedFrequency | skipGaps | disabled | auto]
   
-  var tooltipChanged: JetElementCustomEvent[Renderer] = js.native
+  var tooltipChanged: JetElementCustomEvent[Renderer]
   
-  var touchResponseChanged: JetElementCustomEvent[touchStart | auto] = js.native
+  var touchResponseChanged: JetElementCustomEvent[touchStart | auto]
   
   var typeChanged: JetElementCustomEvent[
     line | area | lineWithArea | stock | boxPlot | combo | pie | scatter | bubble | funnel | pyramid | bar
-  ] = js.native
+  ]
   
-  var valueFormatsChanged: JetElementCustomEvent[Close] = js.native
+  var valueFormatsChanged: JetElementCustomEvent[Close]
   
-  var xAxisChanged: JetElementCustomEvent[AxisLine] = js.native
+  var xAxisChanged: JetElementCustomEvent[AxisLine]
   
-  var y2AxisChanged: JetElementCustomEvent[AlignTickMarks] = js.native
+  var y2AxisChanged: JetElementCustomEvent[AlignTickMarks]
   
-  var yAxisChanged: JetElementCustomEvent[BaselineScaling] = js.native
+  var yAxisChanged: JetElementCustomEvent[BaselineScaling]
   
-  var zoomAndScrollChanged: JetElementCustomEvent[delayedScrollOnly | liveScrollOnly | delayed | live | off] = js.native
+  var zoomAndScrollChanged: JetElementCustomEvent[delayedScrollOnly | liveScrollOnly | delayed | live | off]
   
-  var zoomDirectionChanged: JetElementCustomEvent[x | y | auto] = js.native
+  var zoomDirectionChanged: JetElementCustomEvent[x | y | auto]
 }
 object ojChartEventMap {
   
-  @scala.inline
-  def apply[K, D](
+  inline def apply[K, D](
     abort: UIEvent,
     animationOnDataChangeChanged: JetElementCustomEvent[auto | slideToLeft | slideToRight | none],
     animationOnDisplayChanged: JetElementCustomEvent[auto | alphaFade | zoom | none],
@@ -355,164 +354,114 @@ object ojChartEventMap {
     __obj.asInstanceOf[ojChartEventMap[K, D]]
   }
   
-  @scala.inline
-  implicit class ojChartEventMapMutableBuilder[Self <: ojChartEventMap[_, _], K, D] (val x: Self with (ojChartEventMap[K, D])) extends AnyVal {
+  extension [Self <: ojChartEventMap[?, ?], K, D](x: Self & (ojChartEventMap[K, D])) {
     
-    @scala.inline
-    def setAnimationOnDataChangeChanged(value: JetElementCustomEvent[auto | slideToLeft | slideToRight | none]): Self = StObject.set(x, "animationOnDataChangeChanged", value.asInstanceOf[js.Any])
+    inline def setAnimationOnDataChangeChanged(value: JetElementCustomEvent[auto | slideToLeft | slideToRight | none]): Self = StObject.set(x, "animationOnDataChangeChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationOnDisplayChanged(value: JetElementCustomEvent[auto | alphaFade | zoom | none]): Self = StObject.set(x, "animationOnDisplayChanged", value.asInstanceOf[js.Any])
+    inline def setAnimationOnDisplayChanged(value: JetElementCustomEvent[auto | alphaFade | zoom | none]): Self = StObject.set(x, "animationOnDisplayChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "asChanged", value.asInstanceOf[js.Any])
+    inline def setAsChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "asChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoordinateSystemChanged(value: JetElementCustomEvent[polar | cartesian]): Self = StObject.set(x, "coordinateSystemChanged", value.asInstanceOf[js.Any])
+    inline def setCoordinateSystemChanged(value: JetElementCustomEvent[polar | cartesian]): Self = StObject.set(x, "coordinateSystemChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataChanged(value: JetElementCustomEvent[(DataProvider[K, D]) | Null]): Self = StObject.set(x, "dataChanged", value.asInstanceOf[js.Any])
+    inline def setDataChanged(value: JetElementCustomEvent[(DataProvider[K, D]) | Null]): Self = StObject.set(x, "dataChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataCursorBehaviorChanged(value: JetElementCustomEvent[smooth | snap | auto]): Self = StObject.set(x, "dataCursorBehaviorChanged", value.asInstanceOf[js.Any])
+    inline def setDataCursorBehaviorChanged(value: JetElementCustomEvent[smooth | snap | auto]): Self = StObject.set(x, "dataCursorBehaviorChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataCursorChanged(value: JetElementCustomEvent[off | on | auto]): Self = StObject.set(x, "dataCursorChanged", value.asInstanceOf[js.Any])
+    inline def setDataCursorChanged(value: JetElementCustomEvent[off | on | auto]): Self = StObject.set(x, "dataCursorChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataCursorPositionChanged(value: JetElementCustomEvent[X]): Self = StObject.set(x, "dataCursorPositionChanged", value.asInstanceOf[js.Any])
+    inline def setDataCursorPositionChanged(value: JetElementCustomEvent[X]): Self = StObject.set(x, "dataCursorPositionChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataLabelChanged(
+    inline def setDataLabelChanged(
       value: JetElementCustomEvent[js.Function1[/* context */ DataLabelContext, Insert | PreventDefault]]
     ): Self = StObject.set(x, "dataLabelChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDndChanged(value: JetElementCustomEvent[Drag]): Self = StObject.set(x, "dndChanged", value.asInstanceOf[js.Any])
+    inline def setDndChanged(value: JetElementCustomEvent[Drag]): Self = StObject.set(x, "dndChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragModeChanged(value: JetElementCustomEvent[pan | zoom | select | off | user]): Self = StObject.set(x, "dragModeChanged", value.asInstanceOf[js.Any])
+    inline def setDragModeChanged(value: JetElementCustomEvent[pan | zoom | select | off | user]): Self = StObject.set(x, "dragModeChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrillingChanged(value: JetElementCustomEvent[on | seriesOnly | groupsOnly | off]): Self = StObject.set(x, "drillingChanged", value.asInstanceOf[js.Any])
+    inline def setDrillingChanged(value: JetElementCustomEvent[on | seriesOnly | groupsOnly | off]): Self = StObject.set(x, "drillingChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupComparatorChanged(
+    inline def setGroupComparatorChanged(
       value: JetElementCustomEvent[(js.Function2[/* param0 */ js.Object, /* param1 */ js.Object, Double]) | Null]
     ): Self = StObject.set(x, "groupComparatorChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenCategoriesChanged(value: JetElementCustomEvent[js.Array[String]]): Self = StObject.set(x, "hiddenCategoriesChanged", value.asInstanceOf[js.Any])
+    inline def setHiddenCategoriesChanged(value: JetElementCustomEvent[js.Array[String]]): Self = StObject.set(x, "hiddenCategoriesChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideAndShowBehaviorChanged(value: JetElementCustomEvent[withRescale | withoutRescale | none]): Self = StObject.set(x, "hideAndShowBehaviorChanged", value.asInstanceOf[js.Any])
+    inline def setHideAndShowBehaviorChanged(value: JetElementCustomEvent[withRescale | withoutRescale | none]): Self = StObject.set(x, "hideAndShowBehaviorChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightMatchChanged(value: JetElementCustomEvent[any | all]): Self = StObject.set(x, "highlightMatchChanged", value.asInstanceOf[js.Any])
+    inline def setHighlightMatchChanged(value: JetElementCustomEvent[any | all]): Self = StObject.set(x, "highlightMatchChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightedCategoriesChanged(value: JetElementCustomEvent[js.Array[String]]): Self = StObject.set(x, "highlightedCategoriesChanged", value.asInstanceOf[js.Any])
+    inline def setHighlightedCategoriesChanged(value: JetElementCustomEvent[js.Array[String]]): Self = StObject.set(x, "highlightedCategoriesChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverBehaviorChanged(value: JetElementCustomEvent[dim | none]): Self = StObject.set(x, "hoverBehaviorChanged", value.asInstanceOf[js.Any])
+    inline def setHoverBehaviorChanged(value: JetElementCustomEvent[dim | none]): Self = StObject.set(x, "hoverBehaviorChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialZoomingChanged(value: JetElementCustomEvent[first | last | none]): Self = StObject.set(x, "initialZoomingChanged", value.asInstanceOf[js.Any])
+    inline def setInitialZoomingChanged(value: JetElementCustomEvent[first | last | none]): Self = StObject.set(x, "initialZoomingChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendChanged(value: JetElementCustomEvent[BackgroundColor]): Self = StObject.set(x, "legendChanged", value.asInstanceOf[js.Any])
+    inline def setLegendChanged(value: JetElementCustomEvent[BackgroundColor]): Self = StObject.set(x, "legendChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOjDrill(value: ojDrill): Self = StObject.set(x, "ojDrill", value.asInstanceOf[js.Any])
+    inline def setOjDrill(value: ojDrill): Self = StObject.set(x, "ojDrill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOjSelectInput(value: ojSelectInput): Self = StObject.set(x, "ojSelectInput", value.asInstanceOf[js.Any])
+    inline def setOjSelectInput(value: ojSelectInput): Self = StObject.set(x, "ojSelectInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOjViewportChange(value: ojViewportChange): Self = StObject.set(x, "ojViewportChange", value.asInstanceOf[js.Any])
+    inline def setOjViewportChange(value: ojViewportChange): Self = StObject.set(x, "ojViewportChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOjViewportChangeInput(value: ojViewportChangeInput): Self = StObject.set(x, "ojViewportChangeInput", value.asInstanceOf[js.Any])
+    inline def setOjViewportChangeInput(value: ojViewportChangeInput): Self = StObject.set(x, "ojViewportChangeInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationChanged(value: JetElementCustomEvent[horizontal | vertical]): Self = StObject.set(x, "orientationChanged", value.asInstanceOf[js.Any])
+    inline def setOrientationChanged(value: JetElementCustomEvent[horizontal | vertical]): Self = StObject.set(x, "orientationChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtherThresholdChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "otherThresholdChanged", value.asInstanceOf[js.Any])
+    inline def setOtherThresholdChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "otherThresholdChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverviewChanged(value: JetElementCustomEvent[Content]): Self = StObject.set(x, "overviewChanged", value.asInstanceOf[js.Any])
+    inline def setOverviewChanged(value: JetElementCustomEvent[Content]): Self = StObject.set(x, "overviewChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPieCenterChanged(value: JetElementCustomEvent[Converter]): Self = StObject.set(x, "pieCenterChanged", value.asInstanceOf[js.Any])
+    inline def setPieCenterChanged(value: JetElementCustomEvent[Converter]): Self = StObject.set(x, "pieCenterChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlotAreaChanged(value: JetElementCustomEvent[BorderWidth]): Self = StObject.set(x, "plotAreaChanged", value.asInstanceOf[js.Any])
+    inline def setPlotAreaChanged(value: JetElementCustomEvent[BorderWidth]): Self = StObject.set(x, "plotAreaChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolarGridShapeChanged(value: JetElementCustomEvent[polygon | circle]): Self = StObject.set(x, "polarGridShapeChanged", value.asInstanceOf[js.Any])
+    inline def setPolarGridShapeChanged(value: JetElementCustomEvent[polygon | circle]): Self = StObject.set(x, "polarGridShapeChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionChanged(value: JetElementCustomEvent[js.Array[K]]): Self = StObject.set(x, "selectionChanged", value.asInstanceOf[js.Any])
+    inline def setSelectionChanged(value: JetElementCustomEvent[js.Array[K]]): Self = StObject.set(x, "selectionChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionModeChanged(value: JetElementCustomEvent[single | multiple | none]): Self = StObject.set(x, "selectionModeChanged", value.asInstanceOf[js.Any])
+    inline def setSelectionModeChanged(value: JetElementCustomEvent[single | multiple | none]): Self = StObject.set(x, "selectionModeChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesComparatorChanged(
+    inline def setSeriesComparatorChanged(
       value: JetElementCustomEvent[(js.Function2[/* param0 */ js.Object, /* param1 */ js.Object, Double]) | Null]
     ): Self = StObject.set(x, "seriesComparatorChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortingChanged(value: JetElementCustomEvent[ascending | descending | off]): Self = StObject.set(x, "sortingChanged", value.asInstanceOf[js.Any])
+    inline def setSortingChanged(value: JetElementCustomEvent[ascending | descending | off]): Self = StObject.set(x, "sortingChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitDualYChanged(value: JetElementCustomEvent[on | off | auto]): Self = StObject.set(x, "splitDualYChanged", value.asInstanceOf[js.Any])
+    inline def setSplitDualYChanged(value: JetElementCustomEvent[on | off | auto]): Self = StObject.set(x, "splitDualYChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitterPositionChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "splitterPositionChanged", value.asInstanceOf[js.Any])
+    inline def setSplitterPositionChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "splitterPositionChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackChanged(value: JetElementCustomEvent[on | off]): Self = StObject.set(x, "stackChanged", value.asInstanceOf[js.Any])
+    inline def setStackChanged(value: JetElementCustomEvent[on | off]): Self = StObject.set(x, "stackChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackLabelChanged(value: JetElementCustomEvent[on | off]): Self = StObject.set(x, "stackLabelChanged", value.asInstanceOf[js.Any])
+    inline def setStackLabelChanged(value: JetElementCustomEvent[on | off]): Self = StObject.set(x, "stackLabelChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleDefaultsChanged(value: JetElementCustomEvent[AnimationDownColor]): Self = StObject.set(x, "styleDefaultsChanged", value.asInstanceOf[js.Any])
+    inline def setStyleDefaultsChanged(value: JetElementCustomEvent[AnimationDownColor]): Self = StObject.set(x, "styleDefaultsChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeAxisTypeChanged(value: JetElementCustomEvent[enabled | mixedFrequency | skipGaps | disabled | auto]): Self = StObject.set(x, "timeAxisTypeChanged", value.asInstanceOf[js.Any])
+    inline def setTimeAxisTypeChanged(value: JetElementCustomEvent[enabled | mixedFrequency | skipGaps | disabled | auto]): Self = StObject.set(x, "timeAxisTypeChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipChanged(value: JetElementCustomEvent[Renderer]): Self = StObject.set(x, "tooltipChanged", value.asInstanceOf[js.Any])
+    inline def setTooltipChanged(value: JetElementCustomEvent[Renderer]): Self = StObject.set(x, "tooltipChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchResponseChanged(value: JetElementCustomEvent[touchStart | auto]): Self = StObject.set(x, "touchResponseChanged", value.asInstanceOf[js.Any])
+    inline def setTouchResponseChanged(value: JetElementCustomEvent[touchStart | auto]): Self = StObject.set(x, "touchResponseChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeChanged(
+    inline def setTypeChanged(
       value: JetElementCustomEvent[
           line | area | lineWithArea | stock | boxPlot | combo | pie | scatter | bubble | funnel | pyramid | bar
         ]
     ): Self = StObject.set(x, "typeChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueFormatsChanged(value: JetElementCustomEvent[Close]): Self = StObject.set(x, "valueFormatsChanged", value.asInstanceOf[js.Any])
+    inline def setValueFormatsChanged(value: JetElementCustomEvent[Close]): Self = StObject.set(x, "valueFormatsChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXAxisChanged(value: JetElementCustomEvent[AxisLine]): Self = StObject.set(x, "xAxisChanged", value.asInstanceOf[js.Any])
+    inline def setXAxisChanged(value: JetElementCustomEvent[AxisLine]): Self = StObject.set(x, "xAxisChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY2AxisChanged(value: JetElementCustomEvent[AlignTickMarks]): Self = StObject.set(x, "y2AxisChanged", value.asInstanceOf[js.Any])
+    inline def setY2AxisChanged(value: JetElementCustomEvent[AlignTickMarks]): Self = StObject.set(x, "y2AxisChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYAxisChanged(value: JetElementCustomEvent[BaselineScaling]): Self = StObject.set(x, "yAxisChanged", value.asInstanceOf[js.Any])
+    inline def setYAxisChanged(value: JetElementCustomEvent[BaselineScaling]): Self = StObject.set(x, "yAxisChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomAndScrollChanged(value: JetElementCustomEvent[delayedScrollOnly | liveScrollOnly | delayed | live | off]): Self = StObject.set(x, "zoomAndScrollChanged", value.asInstanceOf[js.Any])
+    inline def setZoomAndScrollChanged(value: JetElementCustomEvent[delayedScrollOnly | liveScrollOnly | delayed | live | off]): Self = StObject.set(x, "zoomAndScrollChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomDirectionChanged(value: JetElementCustomEvent[typings.oracleOraclejet.oracleOraclejetStrings.x | y | auto]): Self = StObject.set(x, "zoomDirectionChanged", value.asInstanceOf[js.Any])
+    inline def setZoomDirectionChanged(value: JetElementCustomEvent[typings.oracleOraclejet.oracleOraclejetStrings.x | y | auto]): Self = StObject.set(x, "zoomDirectionChanged", value.asInstanceOf[js.Any])
   }
 }

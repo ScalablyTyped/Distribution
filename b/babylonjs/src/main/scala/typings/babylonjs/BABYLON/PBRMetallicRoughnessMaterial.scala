@@ -2,11 +2,12 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PBRMetallicRoughnessMaterial extends PBRBaseSimpleMaterial {
+trait PBRMetallicRoughnessMaterial
+  extends StObject
+     with PBRBaseSimpleMaterial {
   
   /**
     * The base color has two different interpretations depending on the value of metalness.

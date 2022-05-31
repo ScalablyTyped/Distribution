@@ -11,14 +11,15 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object actionMod {
   
   @JSImport("babylonjs/Actions/action", "Action")
   @js.native
-  class Action protected () extends IAction {
+  class Action protected ()
+    extends StObject
+       with IAction {
     /**
       * Creates a new Action
       * @param triggerOptions the trigger, with or without parameters, for the action
@@ -39,9 +40,9 @@ object actionMod {
     @JSName("_actionManager")
     var _actionManager_Action: ActionManager = js.native
     
-    var _child: js.Any = js.native
+    /* private */ var _child: js.Any = js.native
     
-    var _condition: js.Any = js.native
+    /* private */ var _condition: js.Any = js.native
     
     /**
       * Internal only
@@ -55,7 +56,7 @@ object actionMod {
       */
     def _getProperty(propertyPath: String): String = js.native
     
-    var _nextActiveAction: js.Any = js.native
+    /* private */ var _nextActiveAction: js.Any = js.native
     
     /**
       * Internal only called by serialize
@@ -64,7 +65,7 @@ object actionMod {
     /* protected */ def _serialize(serializedAction: js.Any): js.Any = js.native
     /* protected */ def _serialize(serializedAction: js.Any, parent: js.Any): js.Any = js.native
     
-    var _triggerParameter: js.Any = js.native
+    /* private */ var _triggerParameter: js.Any = js.native
     
     /**
       * Execute placeholder for child classes
@@ -94,24 +95,22 @@ object actionMod {
   /* static members */
   object Action {
     
-    @JSImport("babylonjs/Actions/action", "Action._GetTargetProperty")
+    @JSImport("babylonjs/Actions/action", "Action")
     @js.native
-    def _GetTargetProperty(target: Node): Name = js.native
+    val ^ : js.Any = js.native
+    
+    inline def _GetTargetProperty(target: Node): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetTargetProperty")(target.asInstanceOf[js.Any]).asInstanceOf[Name]
     /**
       * Internal only
       * @hidden
       */
-    @JSImport("babylonjs/Actions/action", "Action._GetTargetProperty")
-    @js.native
-    def _GetTargetProperty(target: Scene): Name = js.native
+    inline def _GetTargetProperty(target: Scene): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetTargetProperty")(target.asInstanceOf[js.Any]).asInstanceOf[Name]
     
     /**
       * Internal only
       * @hidden
       */
-    @JSImport("babylonjs/Actions/action", "Action._SerializeValueAsString")
-    @js.native
-    def _SerializeValueAsString(value: js.Any): String = js.native
+    inline def _SerializeValueAsString(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_SerializeValueAsString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @js.native

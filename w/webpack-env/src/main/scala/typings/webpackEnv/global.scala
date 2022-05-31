@@ -123,9 +123,4 @@ object global {
   def webpackRequire: js.Any = js.native
   
   inline def webpackRequire_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("__webpack_require__")(x.asInstanceOf[js.Any])
-  
-  /**
-  * Declare process variable
-  */
-  object NodeJS
 }

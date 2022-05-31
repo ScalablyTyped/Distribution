@@ -10,9 +10,9 @@ A viewer for HTML documents.
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/htmlviewer |
 | Keywords           | - |
-| # releases         | 116 |
+| # releases         | 131 |
 | # dependents       | 2 |
-| # downloads        | 1292391 |
+| # downloads        | 1426646 |
 | # stars            | 0 |
 
 ## Links

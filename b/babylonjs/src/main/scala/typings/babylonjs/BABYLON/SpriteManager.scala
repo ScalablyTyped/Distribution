@@ -2,36 +2,37 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpriteManager extends ISpriteManager {
+trait SpriteManager
+  extends StObject
+     with ISpriteManager {
   
   /** Associative array from JSON sprite data file */
-  var _cellData: js.Any = js.native
+  /* private */ var _cellData: js.Any = js.native
   
-  var _checkTextureAlpha: js.Any = js.native
+  /* private */ var _checkTextureAlpha: js.Any = js.native
   
-  var _customUpdate: js.Any = js.native
+  /* private */ var _customUpdate: js.Any = js.native
   
-  var _fromPacked: js.Any = js.native
+  /* private */ var _fromPacked: js.Any = js.native
   
-  var _makePacked: js.Any = js.native
+  /* private */ var _makePacked: js.Any = js.native
   
-  var _onDisposeObserver: js.Any = js.native
+  /* private */ var _onDisposeObserver: js.Any = js.native
   
   /** True when packed cell data from JSON file is ready*/
-  var _packedAndReady: js.Any = js.native
+  /* private */ var _packedAndReady: js.Any = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
   /** Array of sprite names from JSON sprite data file */
-  var _spriteMap: js.Any = js.native
+  /* private */ var _spriteMap: js.Any = js.native
   
-  var _spriteRenderer: js.Any = js.native
+  /* private */ var _spriteRenderer: js.Any = js.native
   
-  var _textureContent: js.Any = js.native
+  /* private */ var _textureContent: js.Any = js.native
   
   /**
     * Blend mode use to render the particle, it can be any of

@@ -2,7 +2,6 @@ package typings.babylonjs.indexMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "ConeParticleEmitter")
@@ -16,29 +15,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class ConeParticleEmitter ()
   extends typings.babylonjs.particlesIndexMod.ConeParticleEmitter {
   def this(radius: Double) = this()
-  def this(radius: js.UndefOr[scala.Nothing], angle: Double) = this()
   def this(radius: Double, angle: Double) = this()
+  def this(radius: Unit, angle: Double) = this()
   def this(
-    radius: js.UndefOr[scala.Nothing],
-    angle: js.UndefOr[scala.Nothing],
-    /** defines how much to randomize the particle direction [0-1] (default is 0) */
-  directionRandomizer: Double
-  ) = this()
-  def this(
-    radius: js.UndefOr[scala.Nothing],
+    radius: Double,
     angle: Double,
     /** defines how much to randomize the particle direction [0-1] (default is 0) */
   directionRandomizer: Double
   ) = this()
   def this(
     radius: Double,
-    angle: js.UndefOr[scala.Nothing],
+    angle: Unit,
     /** defines how much to randomize the particle direction [0-1] (default is 0) */
   directionRandomizer: Double
   ) = this()
   def this(
-    radius: Double,
+    radius: Unit,
     angle: Double,
+    /** defines how much to randomize the particle direction [0-1] (default is 0) */
+  directionRandomizer: Double
+  ) = this()
+  def this(
+    radius: Unit,
+    angle: Unit,
     /** defines how much to randomize the particle direction [0-1] (default is 0) */
   directionRandomizer: Double
   ) = this()

@@ -30,7 +30,6 @@ import typings.std.HTMLElement
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object CodeEditor {
@@ -43,21 +42,59 @@ object CodeEditor {
   /**
     * Construct a new Model.
     */
-  class Model () extends IModel {
+  class Model ()
+    extends StObject
+       with IModel {
     def this(options: typings.jupyterlabCodeeditor.editorMod.CodeEditor.Model.IOptions) = this()
     
-    var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: js.Any = js.native
     
-    var _mimeTypeChanged: js.Any = js.native
+    /* private */ var _mimeTypeChanged: js.Any = js.native
     
-    var _onMimeTypeChanged: js.Any = js.native
+    /* private */ var _onMimeTypeChanged: js.Any = js.native
     
+    /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
     /**
       * Whether the model is disposed.
       */
     @JSName("isDisposed")
     def isDisposed_MModel: Boolean = js.native
     
+    /**
+      * A mime type of the model.
+      *
+      * #### Notes
+      * It is never `null`, the default mime type is `text/plain`.
+      */
+    /* CompleteClass */
+    var mimeType: String = js.native
+    
+    /**
+      * A signal emitted when a property changes.
+      */
+    /* CompleteClass */
+    var mimeTypeChanged: ISignal[IModel, IChangedArgs[String, String, String]] = js.native
     /**
       * A signal emitted when a mimetype changes.
       */
@@ -71,11 +108,28 @@ object CodeEditor {
     def mimeType_MModel: String = js.native
     
     /**
+      * The underlying `IModelDB` instance in which model
+      * data is stored.
+      */
+    /* CompleteClass */
+    override val modelDB: IModelDB = js.native
+    
+    /**
+      * The currently selected code.
+      */
+    /* CompleteClass */
+    override val selections: IObservableMap[js.Array[ITextSelection]] = js.native
+    /**
       * Get the selections for the model.
       */
     @JSName("selections")
     def selections_MModel: IObservableMap[js.Array[ITextSelection]] = js.native
     
+    /**
+      * The text stored in the model.
+      */
+    /* CompleteClass */
+    override val value: IObservableString = js.native
     /**
       * Get the value of the model.
       */
@@ -84,52 +138,43 @@ object CodeEditor {
   }
   object Model {
     
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The mimetype of the model.
         */
-      var mimeType: js.UndefOr[String] = js.native
+      var mimeType: js.UndefOr[String] = js.undefined
       
       /**
         * An optional modelDB for storing model state.
         */
-      var modelDB: js.UndefOr[IModelDB] = js.native
+      var modelDB: js.UndefOr[IModelDB] = js.undefined
       
       /**
         * The initial value of the model.
         */
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): typings.jupyterlabCodeeditor.editorMod.CodeEditor.Model.IOptions = {
+      inline def apply(): typings.jupyterlabCodeeditor.editorMod.CodeEditor.Model.IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.jupyterlabCodeeditor.editorMod.CodeEditor.Model.IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: typings.jupyterlabCodeeditor.editorMod.CodeEditor.Model.IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.jupyterlabCodeeditor.editorMod.CodeEditor.Model.IOptions](x: Self) {
         
-        @scala.inline
-        def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+        inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+        inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
         
-        @scala.inline
-        def setModelDB(value: IModelDB): Self = StObject.set(x, "modelDB", value.asInstanceOf[js.Any])
+        inline def setModelDB(value: IModelDB): Self = StObject.set(x, "modelDB", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModelDBUndefined: Self = StObject.set(x, "modelDB", js.undefined)
+        inline def setModelDBUndefined: Self = StObject.set(x, "modelDB", js.undefined)
         
-        @scala.inline
-        def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+        inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       }
     }
   }
@@ -159,14 +204,11 @@ object CodeEditor {
   trait EdgeLocation extends StObject
   object EdgeLocation {
     
-    @scala.inline
-    def bottom: typings.jupyterlabCodeeditor.jupyterlabCodeeditorStrings.bottom = "bottom".asInstanceOf[typings.jupyterlabCodeeditor.jupyterlabCodeeditorStrings.bottom]
+    inline def bottom: typings.jupyterlabCodeeditor.jupyterlabCodeeditorStrings.bottom = "bottom".asInstanceOf[typings.jupyterlabCodeeditor.jupyterlabCodeeditorStrings.bottom]
     
-    @scala.inline
-    def top: typings.jupyterlabCodeeditor.jupyterlabCodeeditorStrings.top = "top".asInstanceOf[typings.jupyterlabCodeeditor.jupyterlabCodeeditorStrings.top]
+    inline def top: typings.jupyterlabCodeeditor.jupyterlabCodeeditorStrings.top = "top".asInstanceOf[typings.jupyterlabCodeeditor.jupyterlabCodeeditorStrings.top]
     
-    @scala.inline
-    def topLine: typings.jupyterlabCodeeditor.jupyterlabCodeeditorStrings.topLine = "topLine".asInstanceOf[typings.jupyterlabCodeeditor.jupyterlabCodeeditorStrings.topLine]
+    inline def topLine: typings.jupyterlabCodeeditor.jupyterlabCodeeditorStrings.topLine = "topLine".asInstanceOf[typings.jupyterlabCodeeditor.jupyterlabCodeeditorStrings.topLine]
   }
   
   /**
@@ -177,48 +219,47 @@ object CodeEditor {
   /**
     * The configuration options for an editor.
     */
-  @js.native
   trait IConfig extends StObject {
     
     /**
       * Whether to automatically close brackets after opening them.
       */
-    var autoClosingBrackets: Boolean = js.native
+    var autoClosingBrackets: Boolean
     
     /**
       * Wheter to allow code folding
       */
-    var codeFolding: Boolean = js.native
+    var codeFolding: Boolean
     
     /**
       * User preferred font family for text editors.
       */
-    var fontFamily: String | Null = js.native
+    var fontFamily: String | Null
     
     /**
       * User preferred size in pixel of the font used in text editors.
       */
-    var fontSize: Double | Null = js.native
+    var fontSize: Double | Null
     
     /**
       * Whether the editor should handle paste events.
       */
-    var handlePaste: js.UndefOr[Boolean] = js.native
+    var handlePaste: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to insert spaces when pressing Tab.
       */
-    var insertSpaces: Boolean = js.native
+    var insertSpaces: Boolean
     
     /**
       * User preferred text line height, as a multiplier of font size.
       */
-    var lineHeight: Double | Null = js.native
+    var lineHeight: Double | Null
     
     /**
       * Whether line numbers should be displayed.
       */
-    var lineNumbers: Boolean = js.native
+    var lineNumbers: Boolean
     
     /**
       * Control the line wrapping of the editor. Possible values are:
@@ -227,37 +268,36 @@ object CodeEditor {
       * - "wordWrapColumn", lines will wrap at `wordWrapColumn`.
       * - "bounded", lines will wrap at minimum between viewport width and wordWrapColumn.
       */
-    var lineWrap: off | on | wordWrapColumn | bounded = js.native
+    var lineWrap: off | on | wordWrapColumn | bounded
     
     /**
       * Whether to highlight matching brackets when one of them is selected.
       */
-    var matchBrackets: Boolean = js.native
+    var matchBrackets: Boolean
     
     /**
       * Whether the editor is read-only.
       */
-    var readOnly: Boolean = js.native
+    var readOnly: Boolean
     
     /**
       * Column index at which rulers should be added.
       */
-    var rulers: js.Array[Double] = js.native
+    var rulers: js.Array[Double]
     
     /**
       * The number of spaces a tab is equal to.
       */
-    var tabSize: Double = js.native
+    var tabSize: Double
     
     /**
       * The column where to break text line.
       */
-    var wordWrapColumn: Double = js.native
+    var wordWrapColumn: Double
   }
   object IConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       autoClosingBrackets: Boolean,
       codeFolding: Boolean,
       insertSpaces: Boolean,
@@ -269,83 +309,62 @@ object CodeEditor {
       tabSize: Double,
       wordWrapColumn: Double
     ): IConfig = {
-      val __obj = js.Dynamic.literal(autoClosingBrackets = autoClosingBrackets.asInstanceOf[js.Any], codeFolding = codeFolding.asInstanceOf[js.Any], insertSpaces = insertSpaces.asInstanceOf[js.Any], lineNumbers = lineNumbers.asInstanceOf[js.Any], lineWrap = lineWrap.asInstanceOf[js.Any], matchBrackets = matchBrackets.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], rulers = rulers.asInstanceOf[js.Any], tabSize = tabSize.asInstanceOf[js.Any], wordWrapColumn = wordWrapColumn.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(autoClosingBrackets = autoClosingBrackets.asInstanceOf[js.Any], codeFolding = codeFolding.asInstanceOf[js.Any], insertSpaces = insertSpaces.asInstanceOf[js.Any], lineNumbers = lineNumbers.asInstanceOf[js.Any], lineWrap = lineWrap.asInstanceOf[js.Any], matchBrackets = matchBrackets.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], rulers = rulers.asInstanceOf[js.Any], tabSize = tabSize.asInstanceOf[js.Any], wordWrapColumn = wordWrapColumn.asInstanceOf[js.Any], fontFamily = null, fontSize = null, lineHeight = null)
       __obj.asInstanceOf[IConfig]
     }
     
-    @scala.inline
-    implicit class IConfigMutableBuilder[Self <: IConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IConfig](x: Self) {
       
-      @scala.inline
-      def setAutoClosingBrackets(value: Boolean): Self = StObject.set(x, "autoClosingBrackets", value.asInstanceOf[js.Any])
+      inline def setAutoClosingBrackets(value: Boolean): Self = StObject.set(x, "autoClosingBrackets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeFolding(value: Boolean): Self = StObject.set(x, "codeFolding", value.asInstanceOf[js.Any])
+      inline def setCodeFolding(value: Boolean): Self = StObject.set(x, "codeFolding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+      inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontFamilyNull: Self = StObject.set(x, "fontFamily", null)
+      inline def setFontFamilyNull: Self = StObject.set(x, "fontFamily", null)
       
-      @scala.inline
-      def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSizeNull: Self = StObject.set(x, "fontSize", null)
+      inline def setFontSizeNull: Self = StObject.set(x, "fontSize", null)
       
-      @scala.inline
-      def setHandlePaste(value: Boolean): Self = StObject.set(x, "handlePaste", value.asInstanceOf[js.Any])
+      inline def setHandlePaste(value: Boolean): Self = StObject.set(x, "handlePaste", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandlePasteUndefined: Self = StObject.set(x, "handlePaste", js.undefined)
+      inline def setHandlePasteUndefined: Self = StObject.set(x, "handlePaste", js.undefined)
       
-      @scala.inline
-      def setInsertSpaces(value: Boolean): Self = StObject.set(x, "insertSpaces", value.asInstanceOf[js.Any])
+      inline def setInsertSpaces(value: Boolean): Self = StObject.set(x, "insertSpaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+      inline def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineHeightNull: Self = StObject.set(x, "lineHeight", null)
+      inline def setLineHeightNull: Self = StObject.set(x, "lineHeight", null)
       
-      @scala.inline
-      def setLineNumbers(value: Boolean): Self = StObject.set(x, "lineNumbers", value.asInstanceOf[js.Any])
+      inline def setLineNumbers(value: Boolean): Self = StObject.set(x, "lineNumbers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineWrap(value: off | on | wordWrapColumn | bounded): Self = StObject.set(x, "lineWrap", value.asInstanceOf[js.Any])
+      inline def setLineWrap(value: off | on | wordWrapColumn | bounded): Self = StObject.set(x, "lineWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchBrackets(value: Boolean): Self = StObject.set(x, "matchBrackets", value.asInstanceOf[js.Any])
+      inline def setMatchBrackets(value: Boolean): Self = StObject.set(x, "matchBrackets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+      inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulers(value: js.Array[Double]): Self = StObject.set(x, "rulers", value.asInstanceOf[js.Any])
+      inline def setRulers(value: js.Array[Double]): Self = StObject.set(x, "rulers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulersVarargs(value: Double*): Self = StObject.set(x, "rulers", js.Array(value :_*))
+      inline def setRulersVarargs(value: Double*): Self = StObject.set(x, "rulers", js.Array(value :_*))
       
-      @scala.inline
-      def setTabSize(value: Double): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
+      inline def setTabSize(value: Double): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWordWrapColumn(value: Double): Self = StObject.set(x, "wordWrapColumn", value.asInstanceOf[js.Any])
+      inline def setWordWrapColumn(value: Double): Self = StObject.set(x, "wordWrapColumn", value.asInstanceOf[js.Any])
     }
   }
   
   /**
     * An interface describing editor state coordinates.
     */
-  @js.native
   trait ICoordinate
-    extends JSONObject
+    extends StObject
+       with JSONObject
        with ClientRect
   object ICoordinate {
     
-    @scala.inline
-    def apply(bottom: Double, height: Double, left: Double, right: Double, top: Double, width: Double): ICoordinate = {
+    inline def apply(bottom: Double, height: Double, left: Double, right: Double, top: Double, width: Double): ICoordinate = {
       val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICoordinate]
     }
@@ -354,35 +373,30 @@ object CodeEditor {
   /**
     * The dimension of an element.
     */
-  @js.native
   trait IDimension extends StObject {
     
     /**
       * The height of an element in pixels.
       */
-    val height: Double = js.native
+    val height: Double
     
     /**
       * The width of an element in pixels.
       */
-    val width: Double = js.native
+    val width: Double
   }
   object IDimension {
     
-    @scala.inline
-    def apply(height: Double, width: Double): IDimension = {
+    inline def apply(height: Double, width: Double): IDimension = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDimension]
     }
     
-    @scala.inline
-    implicit class IDimensionMutableBuilder[Self <: IDimension] (val x: Self) extends AnyVal {
+    extension [Self <: IDimension](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -391,7 +405,8 @@ object CodeEditor {
     */
   @js.native
   trait IEditor
-    extends ISelectionOwner
+    extends StObject
+       with ISelectionOwner
        with IDisposable {
     
     /**
@@ -672,8 +687,9 @@ object CodeEditor {
   /**
     * An editor model.
     */
-  @js.native
-  trait IModel extends IDisposable {
+  trait IModel
+    extends StObject
+       with IDisposable {
     
     /**
       * A mime type of the model.
@@ -681,33 +697,32 @@ object CodeEditor {
       * #### Notes
       * It is never `null`, the default mime type is `text/plain`.
       */
-    var mimeType: String = js.native
+    var mimeType: String
     
     /**
       * A signal emitted when a property changes.
       */
-    var mimeTypeChanged: ISignal[IModel, IChangedArgs[String, String, String]] = js.native
+    var mimeTypeChanged: ISignal[IModel, IChangedArgs[String, String, String]]
     
     /**
       * The underlying `IModelDB` instance in which model
       * data is stored.
       */
-    val modelDB: IModelDB = js.native
+    val modelDB: IModelDB
     
     /**
       * The currently selected code.
       */
-    val selections: IObservableMap[js.Array[ITextSelection]] = js.native
+    val selections: IObservableMap[js.Array[ITextSelection]]
     
     /**
       * The text stored in the model.
       */
-    val value: IObservableString = js.native
+    val value: IObservableString
   }
   object IModel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dispose: () => Unit,
       isDisposed: Boolean,
       mimeType: String,
@@ -720,134 +735,115 @@ object CodeEditor {
       __obj.asInstanceOf[IModel]
     }
     
-    @scala.inline
-    implicit class IModelMutableBuilder[Self <: IModel] (val x: Self) extends AnyVal {
+    extension [Self <: IModel](x: Self) {
       
-      @scala.inline
-      def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+      inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimeTypeChanged(value: ISignal[IModel, IChangedArgs[String, String, String]]): Self = StObject.set(x, "mimeTypeChanged", value.asInstanceOf[js.Any])
+      inline def setMimeTypeChanged(value: ISignal[IModel, IChangedArgs[String, String, String]]): Self = StObject.set(x, "mimeTypeChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelDB(value: IModelDB): Self = StObject.set(x, "modelDB", value.asInstanceOf[js.Any])
+      inline def setModelDB(value: IModelDB): Self = StObject.set(x, "modelDB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelections(value: IObservableMap[js.Array[ITextSelection]]): Self = StObject.set(x, "selections", value.asInstanceOf[js.Any])
+      inline def setSelections(value: IObservableMap[js.Array[ITextSelection]]): Self = StObject.set(x, "selections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: IObservableString): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: IObservableString): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
   /**
     * The options used to initialize an editor.
     */
-  @js.native
   trait IOptions extends StObject {
     
     /**
       * The configuration options for the editor.
       */
-    var config: js.UndefOr[PartialIConfig] = js.native
+    var config: js.UndefOr[PartialIConfig] = js.undefined
     
     /**
       * The host widget used by the editor.
       */
-    var host: HTMLElement = js.native
+    var host: HTMLElement
     
     /**
       * The model used by the editor.
       */
-    var model: IModel = js.native
+    var model: IModel
     
     /**
       * The default selection style for the editor.
       */
-    var selectionStyle: js.UndefOr[PartialISelectionStyle] = js.native
+    var selectionStyle: js.UndefOr[PartialISelectionStyle] = js.undefined
     
     /**
       * The desired uuid for the editor.
       */
-    var uuid: js.UndefOr[String] = js.native
+    var uuid: js.UndefOr[String] = js.undefined
   }
   object IOptions {
     
-    @scala.inline
-    def apply(host: HTMLElement, model: IModel): IOptions = {
+    inline def apply(host: HTMLElement, model: IModel): IOptions = {
       val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any])
       __obj.asInstanceOf[IOptions]
     }
     
-    @scala.inline
-    implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IOptions](x: Self) {
       
-      @scala.inline
-      def setConfig(value: PartialIConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: PartialIConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setHost(value: HTMLElement): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: HTMLElement): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModel(value: IModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: IModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionStyle(value: PartialISelectionStyle): Self = StObject.set(x, "selectionStyle", value.asInstanceOf[js.Any])
+      inline def setSelectionStyle(value: PartialISelectionStyle): Self = StObject.set(x, "selectionStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionStyleUndefined: Self = StObject.set(x, "selectionStyle", js.undefined)
+      inline def setSelectionStyleUndefined: Self = StObject.set(x, "selectionStyle", js.undefined)
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
+      inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
     }
   }
   
   /**
     * A zero-based position in the editor.
     */
-  @js.native
-  trait IPosition extends JSONObject {
+  trait IPosition
+    extends StObject
+       with JSONObject {
     
     /**
       * The cursor column number.
       */
-    val column: Double = js.native
+    val column: Double
     
     /**
       * The cursor line number.
       */
-    val line: Double = js.native
+    val line: Double
   }
   object IPosition {
     
-    @scala.inline
-    def apply(column: Double, line: Double): IPosition = {
+    inline def apply(column: Double, line: Double): IPosition = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPosition]
     }
     
-    @scala.inline
-    implicit class IPositionMutableBuilder[Self <: IPosition] (val x: Self) extends AnyVal {
+    extension [Self <: IPosition](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     }
   }
   
   /**
     * A range.
     */
-  @js.native
-  trait IRange extends JSONObject {
+  trait IRange
+    extends StObject
+       with JSONObject {
     
     /**
       * The position of the last character in the current range.
@@ -856,7 +852,7 @@ object CodeEditor {
       * If this position is less than [start] then the range is considered
       * to be backward.
       */
-    val end: IPosition = js.native
+    val end: IPosition
     
     /**
       * The position of the first character in the current range.
@@ -865,47 +861,42 @@ object CodeEditor {
       * If this position is greater than [end] then the range is considered
       * to be backward.
       */
-    val start: IPosition = js.native
+    val start: IPosition
   }
   object IRange {
     
-    @scala.inline
-    def apply(end: IPosition, start: IPosition): IRange = {
+    inline def apply(end: IPosition, start: IPosition): IRange = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[IRange]
     }
     
-    @scala.inline
-    implicit class IRangeMutableBuilder[Self <: IRange] (val x: Self) extends AnyVal {
+    extension [Self <: IRange](x: Self) {
       
-      @scala.inline
-      def setEnd(value: IPosition): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: IPosition): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: IPosition): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: IPosition): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
   
   /**
     * A selection owner.
     */
-  @js.native
   trait ISelectionOwner extends StObject {
     
     /**
       * Returns the primary position of the cursor, never `null`.
       */
-    def getCursorPosition(): IPosition = js.native
+    def getCursorPosition(): IPosition
     
     /**
       * Returns the primary selection, never `null`.
       */
-    def getSelection(): IRange = js.native
+    def getSelection(): IRange
     
     /**
       * Gets the selections for all the cursors, never `null` or empty.
       */
-    def getSelections(): js.Array[IRange] = js.native
+    def getSelections(): js.Array[IRange]
     
     /**
       * Set the primary position of the cursor.
@@ -915,7 +906,7 @@ object CodeEditor {
       * #### Notes
       * This will remove any secondary cursors.
       */
-    def setCursorPosition(position: IPosition): Unit = js.native
+    def setCursorPosition(position: IPosition): Unit
     
     /**
       * Set the primary selection.
@@ -925,7 +916,7 @@ object CodeEditor {
       * #### Notes
       * This will remove any secondary cursors.
       */
-    def setSelection(selection: IRange): Unit = js.native
+    def setSelection(selection: IRange): Unit
     
     /**
       * Sets the selections for all the cursors.
@@ -937,17 +928,16 @@ object CodeEditor {
       * Passing an empty array resets a cursor position to the start of a
       * document.
       */
-    def setSelections(selections: js.Array[IRange]): Unit = js.native
+    def setSelections(selections: js.Array[IRange]): Unit
     
     /**
       * The uuid of this selection owner.
       */
-    var uuid: String = js.native
+    var uuid: String
   }
   object ISelectionOwner {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getCursorPosition: () => IPosition,
       getSelection: () => IRange,
       getSelections: () => js.Array[IRange],
@@ -960,153 +950,131 @@ object CodeEditor {
       __obj.asInstanceOf[ISelectionOwner]
     }
     
-    @scala.inline
-    implicit class ISelectionOwnerMutableBuilder[Self <: ISelectionOwner] (val x: Self) extends AnyVal {
+    extension [Self <: ISelectionOwner](x: Self) {
       
-      @scala.inline
-      def setGetCursorPosition(value: () => IPosition): Self = StObject.set(x, "getCursorPosition", js.Any.fromFunction0(value))
+      inline def setGetCursorPosition(value: () => IPosition): Self = StObject.set(x, "getCursorPosition", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSelection(value: () => IRange): Self = StObject.set(x, "getSelection", js.Any.fromFunction0(value))
+      inline def setGetSelection(value: () => IRange): Self = StObject.set(x, "getSelection", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSelections(value: () => js.Array[IRange]): Self = StObject.set(x, "getSelections", js.Any.fromFunction0(value))
+      inline def setGetSelections(value: () => js.Array[IRange]): Self = StObject.set(x, "getSelections", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetCursorPosition(value: IPosition => Unit): Self = StObject.set(x, "setCursorPosition", js.Any.fromFunction1(value))
+      inline def setSetCursorPosition(value: IPosition => Unit): Self = StObject.set(x, "setCursorPosition", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetSelection(value: IRange => Unit): Self = StObject.set(x, "setSelection", js.Any.fromFunction1(value))
+      inline def setSetSelection(value: IRange => Unit): Self = StObject.set(x, "setSelection", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetSelections(value: js.Array[IRange] => Unit): Self = StObject.set(x, "setSelections", js.Any.fromFunction1(value))
+      inline def setSetSelections(value: js.Array[IRange] => Unit): Self = StObject.set(x, "setSelections", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     }
   }
   
   /**
     * A selection style.
     */
-  @js.native
-  trait ISelectionStyle extends JSONObject {
+  trait ISelectionStyle
+    extends StObject
+       with JSONObject {
     
     /**
       * A class name added to a selection.
       */
-    var className: String = js.native
+    var className: String
     
     /**
       * A color for UI elements.
       */
-    var color: String = js.native
+    var color: String
     
     /**
       * A display name added to a selection.
       */
-    var displayName: String = js.native
+    var displayName: String
   }
   object ISelectionStyle {
     
-    @scala.inline
-    def apply(className: String, color: String, displayName: String): ISelectionStyle = {
+    inline def apply(className: String, color: String, displayName: String): ISelectionStyle = {
       val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISelectionStyle]
     }
     
-    @scala.inline
-    implicit class ISelectionStyleMutableBuilder[Self <: ISelectionStyle] (val x: Self) extends AnyVal {
+    extension [Self <: ISelectionStyle](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     }
   }
   
   /**
     * A text selection.
     */
-  @js.native
-  trait ITextSelection extends IRange {
+  trait ITextSelection
+    extends StObject
+       with IRange {
     
     /**
       * The style of this selection.
       */
-    val style: ISelectionStyle = js.native
+    val style: ISelectionStyle
     
     /**
       * The uuid of the text selection owner.
       */
-    val uuid: String = js.native
+    val uuid: String
   }
   object ITextSelection {
     
-    @scala.inline
-    def apply(end: IPosition, start: IPosition, style: ISelectionStyle, uuid: String): ITextSelection = {
+    inline def apply(end: IPosition, start: IPosition, style: ISelectionStyle, uuid: String): ITextSelection = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITextSelection]
     }
     
-    @scala.inline
-    implicit class ITextSelectionMutableBuilder[Self <: ITextSelection] (val x: Self) extends AnyVal {
+    extension [Self <: ITextSelection](x: Self) {
       
-      @scala.inline
-      def setStyle(value: ISelectionStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: ISelectionStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     }
   }
   
   /**
     * An interface for a text token, such as a word, keyword, or variable.
     */
-  @js.native
   trait IToken extends StObject {
     
     /**
       * The offset of the token in the code editor.
       */
-    var offset: Double = js.native
+    var offset: Double
     
     /**
       * An optional type for the token.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /**
       * The value of the token.
       */
-    var value: String = js.native
+    var value: String
   }
   object IToken {
     
-    @scala.inline
-    def apply(offset: Double, value: String): IToken = {
+    inline def apply(offset: Double, value: String): IToken = {
       val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[IToken]
     }
     
-    @scala.inline
-    implicit class ITokenMutableBuilder[Self <: IToken] (val x: Self) extends AnyVal {
+    extension [Self <: IToken](x: Self) {
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

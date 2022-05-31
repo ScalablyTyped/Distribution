@@ -1063,7 +1063,4 @@ object dragPanesMod {
   }
   
   inline def factory(highcharts: TypeofHighchartsAddEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("factory")(highcharts.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
-  /* augmented module */
-  object highchartsAugmentingMod
 }

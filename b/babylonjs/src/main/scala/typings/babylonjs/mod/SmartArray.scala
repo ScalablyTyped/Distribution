@@ -2,7 +2,6 @@ package typings.babylonjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "SmartArray")
@@ -25,6 +24,5 @@ object SmartArray {
   @JSImport("babylonjs", "SmartArray._GlobalId")
   @js.native
   def _GlobalId: js.Any = js.native
-  @scala.inline
-  def _GlobalId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GlobalId")(x.asInstanceOf[js.Any])
+  inline def _GlobalId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GlobalId")(x.asInstanceOf[js.Any])
 }

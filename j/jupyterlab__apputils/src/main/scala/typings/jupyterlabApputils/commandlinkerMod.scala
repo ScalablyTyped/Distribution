@@ -9,28 +9,29 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commandlinkerMod {
   
   @JSImport("@jupyterlab/apputils/lib/commandlinker", "CommandLinker")
   @js.native
-  class CommandLinker protected () extends IDisposable {
+  class CommandLinker protected ()
+    extends StObject
+       with IDisposable {
     /**
       * Instantiate a new command linker.
       */
     def this(options: IOptions) = this()
     
-    var _commands: js.Any = js.native
+    /* private */ var _commands: js.Any = js.native
     
     /**
       * The global click handler that deploys commands/argument pairs that are
       * attached to the node being clicked.
       */
-    var _evtClick: js.Any = js.native
+    /* private */ var _evtClick: js.Any = js.native
     
-    var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: js.Any = js.native
     
     /**
       * Connect a command/argument pair to a given node so that when it is clicked,
@@ -71,6 +72,20 @@ object commandlinkerMod {
     def disconnectNode(node: HTMLElement): HTMLElement = js.native
     
     /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
       * Handle the DOM events for the command linker helper class.
       *
       * @param event - The DOM event sent to the class.
@@ -82,6 +97,14 @@ object commandlinkerMod {
       */
     def handleEvent(event: Event): Unit = js.native
     
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
     /**
       * Test whether the linker is disposed.
       */
@@ -127,27 +150,23 @@ object commandlinkerMod {
     /**
       * The instantiation options for a command linker.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The command registry instance that all linked commands will use.
         */
-      var commands: CommandRegistry = js.native
+      var commands: CommandRegistry
     }
     object IOptions {
       
-      @scala.inline
-      def apply(commands: CommandRegistry): IOptions = {
+      inline def apply(commands: CommandRegistry): IOptions = {
         val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setCommands(value: CommandRegistry): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+        inline def setCommands(value: CommandRegistry): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
       }
     }
   }

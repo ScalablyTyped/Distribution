@@ -2,31 +2,30 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PBRSheenConfiguration extends StObject {
   
-  var _albedoScaling: js.Any = js.native
+  /* private */ var _albedoScaling: js.Any = js.native
   
   /** @hidden */
-  var _internalMarkAllSubMeshesAsTexturesDirty: js.Any = js.native
+  /* private */ var _internalMarkAllSubMeshesAsTexturesDirty: js.Any = js.native
   
-  var _isEnabled: js.Any = js.native
+  /* private */ var _isEnabled: js.Any = js.native
   
-  var _linkSheenWithAlbedo: js.Any = js.native
+  /* private */ var _linkSheenWithAlbedo: js.Any = js.native
   
   /** @hidden */
   def _markAllSubMeshesAsTexturesDirty(): Unit = js.native
   
-  var _roughness: js.Any = js.native
+  /* private */ var _roughness: js.Any = js.native
   
-  var _texture: js.Any = js.native
+  /* private */ var _texture: js.Any = js.native
   
-  var _textureRoughness: js.Any = js.native
+  /* private */ var _textureRoughness: js.Any = js.native
   
-  var _useRoughnessFromMainTexture: js.Any = js.native
+  /* private */ var _useRoughnessFromMainTexture: js.Any = js.native
   
   /**
     * If true, the sheen effect is layered above the base BRDF with the albedo-scaling technique.

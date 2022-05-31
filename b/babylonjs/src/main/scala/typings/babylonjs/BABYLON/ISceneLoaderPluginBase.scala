@@ -3,10 +3,8 @@ package typings.babylonjs.BABYLON
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISceneLoaderPluginBase extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait ISceneLoaderPluginBase extends StObject {
     * @param data string containing the file data
     * @returns if the data can be loaded directly
     */
-  var canDirectLoad: js.UndefOr[js.Function1[/* data */ String, Boolean]] = js.native
+  var canDirectLoad: js.UndefOr[js.Function1[/* data */ String, Boolean]] = js.undefined
   
   /**
     * The callback that returns the data to pass to the plugin if the data can be directly loaded.
@@ -22,17 +20,17 @@ trait ISceneLoaderPluginBase extends StObject {
     * @param data string containing the data
     * @returns data to pass to the plugin
     */
-  var directLoad: js.UndefOr[js.Function2[/* scene */ Scene, /* data */ String, _]] = js.native
+  var directLoad: js.UndefOr[js.Function2[/* scene */ Scene, /* data */ String, js.Any]] = js.undefined
   
   /**
     * The file extensions supported by this plugin.
     */
-  var extensions: String | ISceneLoaderPluginExtensions = js.native
+  var extensions: String | ISceneLoaderPluginExtensions
   
   /**
     * The friendly name of this plugin.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The callback called when loading from a file object.
@@ -49,12 +47,12 @@ trait ISceneLoaderPluginBase extends StObject {
       /* scene */ Scene, 
       /* file */ File, 
       /* onSuccess */ js.Function1[/* data */ js.Any, Unit], 
-      /* onProgress */ js.UndefOr[js.Function1[/* ev */ ISceneLoaderProgressEvent, _]], 
+      /* onProgress */ js.UndefOr[js.Function1[/* ev */ ISceneLoaderProgressEvent, js.Any]], 
       /* useArrayBuffer */ js.UndefOr[Boolean], 
       /* onError */ js.UndefOr[js.Function1[/* error */ js.Any, Unit]], 
       IFileRequest
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The callback called when loading from a url.
@@ -76,7 +74,7 @@ trait ISceneLoaderPluginBase extends StObject {
       /* onError */ js.UndefOr[js.Function1[/* error */ js.Any, Unit]], 
       IFileRequest
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The callback that allows custom handling of the root url based on the response url.
@@ -84,57 +82,43 @@ trait ISceneLoaderPluginBase extends StObject {
     * @param responseURL the response url if available
     * @returns the new root url
     */
-  var rewriteRootURL: js.UndefOr[js.Function2[/* rootUrl */ String, /* responseURL */ js.UndefOr[String], String]] = js.native
+  var rewriteRootURL: js.UndefOr[js.Function2[/* rootUrl */ String, /* responseURL */ js.UndefOr[String], String]] = js.undefined
 }
 object ISceneLoaderPluginBase {
   
-  @scala.inline
-  def apply(extensions: String | ISceneLoaderPluginExtensions, name: String): ISceneLoaderPluginBase = {
+  inline def apply(extensions: String | ISceneLoaderPluginExtensions, name: String): ISceneLoaderPluginBase = {
     val __obj = js.Dynamic.literal(extensions = extensions.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISceneLoaderPluginBase]
   }
   
-  @scala.inline
-  implicit class ISceneLoaderPluginBaseMutableBuilder[Self <: ISceneLoaderPluginBase] (val x: Self) extends AnyVal {
+  extension [Self <: ISceneLoaderPluginBase](x: Self) {
     
-    @scala.inline
-    def setCanDirectLoad(value: /* data */ String => Boolean): Self = StObject.set(x, "canDirectLoad", js.Any.fromFunction1(value))
+    inline def setCanDirectLoad(value: /* data */ String => Boolean): Self = StObject.set(x, "canDirectLoad", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCanDirectLoadUndefined: Self = StObject.set(x, "canDirectLoad", js.undefined)
+    inline def setCanDirectLoadUndefined: Self = StObject.set(x, "canDirectLoad", js.undefined)
     
-    @scala.inline
-    def setDirectLoad(value: (/* scene */ Scene, /* data */ String) => _): Self = StObject.set(x, "directLoad", js.Any.fromFunction2(value))
+    inline def setDirectLoad(value: (/* scene */ Scene, /* data */ String) => js.Any): Self = StObject.set(x, "directLoad", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDirectLoadUndefined: Self = StObject.set(x, "directLoad", js.undefined)
+    inline def setDirectLoadUndefined: Self = StObject.set(x, "directLoad", js.undefined)
     
-    @scala.inline
-    def setExtensions(value: String | ISceneLoaderPluginExtensions): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    inline def setExtensions(value: String | ISceneLoaderPluginExtensions): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadFile(
-      value: (/* scene */ Scene, /* file */ File, /* onSuccess */ js.Function1[/* data */ js.Any, Unit], /* onProgress */ js.UndefOr[js.Function1[/* ev */ ISceneLoaderProgressEvent, _]], /* useArrayBuffer */ js.UndefOr[Boolean], /* onError */ js.UndefOr[js.Function1[/* error */ js.Any, Unit]]) => IFileRequest
+    inline def setReadFile(
+      value: (/* scene */ Scene, /* file */ File, /* onSuccess */ js.Function1[/* data */ js.Any, Unit], /* onProgress */ js.UndefOr[js.Function1[/* ev */ ISceneLoaderProgressEvent, js.Any]], /* useArrayBuffer */ js.UndefOr[Boolean], /* onError */ js.UndefOr[js.Function1[/* error */ js.Any, Unit]]) => IFileRequest
     ): Self = StObject.set(x, "readFile", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setReadFileUndefined: Self = StObject.set(x, "readFile", js.undefined)
+    inline def setReadFileUndefined: Self = StObject.set(x, "readFile", js.undefined)
     
-    @scala.inline
-    def setRequestFile(
+    inline def setRequestFile(
       value: (/* scene */ Scene, /* url */ String, /* onSuccess */ js.Function2[/* data */ js.Any, /* request */ js.UndefOr[WebRequest], Unit], /* onProgress */ js.UndefOr[js.Function1[/* ev */ ISceneLoaderProgressEvent, Unit]], /* useArrayBuffer */ js.UndefOr[Boolean], /* onError */ js.UndefOr[js.Function1[/* error */ js.Any, Unit]]) => IFileRequest
     ): Self = StObject.set(x, "requestFile", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setRequestFileUndefined: Self = StObject.set(x, "requestFile", js.undefined)
+    inline def setRequestFileUndefined: Self = StObject.set(x, "requestFile", js.undefined)
     
-    @scala.inline
-    def setRewriteRootURL(value: (/* rootUrl */ String, /* responseURL */ js.UndefOr[String]) => String): Self = StObject.set(x, "rewriteRootURL", js.Any.fromFunction2(value))
+    inline def setRewriteRootURL(value: (/* rootUrl */ String, /* responseURL */ js.UndefOr[String]) => String): Self = StObject.set(x, "rewriteRootURL", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRewriteRootURLUndefined: Self = StObject.set(x, "rewriteRootURL", js.undefined)
+    inline def setRewriteRootURLUndefined: Self = StObject.set(x, "rewriteRootURL", js.undefined)
   }
 }

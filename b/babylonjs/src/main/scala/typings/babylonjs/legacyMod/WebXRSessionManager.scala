@@ -3,7 +3,6 @@ package typings.babylonjs.legacyMod
 import typings.babylonjs.XRSessionMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "WebXRSessionManager")
@@ -20,12 +19,14 @@ class WebXRSessionManager protected ()
 /* static members */
 object WebXRSessionManager {
   
+  @JSImport("babylonjs/Legacy/legacy", "WebXRSessionManager")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Returns a promise that resolves with a boolean indicating if the provided session mode is supported by this browser
     * @param sessionMode defines the session to test
     * @returns a promise with boolean as final value
     */
-  @JSImport("babylonjs/Legacy/legacy", "WebXRSessionManager.IsSessionSupportedAsync")
-  @js.native
-  def IsSessionSupportedAsync(sessionMode: XRSessionMode): js.Promise[Boolean] = js.native
+  inline def IsSessionSupportedAsync(sessionMode: XRSessionMode): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("IsSessionSupportedAsync")(sessionMode.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
 }

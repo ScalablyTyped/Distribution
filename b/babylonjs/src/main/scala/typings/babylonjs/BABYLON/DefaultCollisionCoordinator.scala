@@ -2,48 +2,32 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DefaultCollisionCoordinator extends ICollisionCoordinator {
+trait DefaultCollisionCoordinator
+  extends StObject
+     with ICollisionCoordinator {
   
-  var _collideWithWorld: js.Any = js.native
+  /* private */ var _collideWithWorld: js.Any
   
-  var _finalPosition: js.Any = js.native
+  /* private */ var _finalPosition: js.Any
   
-  var _scaledPosition: js.Any = js.native
+  /* private */ var _scaledPosition: js.Any
   
-  var _scaledVelocity: js.Any = js.native
+  /* private */ var _scaledVelocity: js.Any
   
-  var _scene: js.Any = js.native
-  
-  def getNewPosition(
-    position: Vector3,
-    displacement: Vector3,
-    collider: Collider,
-    maximumRetry: Double,
-    excludedMesh: AbstractMesh,
-    onNewPosition: js.Function3[
-      /* collisionIndex */ Double, 
-      /* newPosition */ Vector3, 
-      /* collidedMesh */ Nullable[AbstractMesh], 
-      Unit
-    ],
-    collisionIndex: Double
-  ): Unit = js.native
+  /* private */ var _scene: js.Any
 }
 object DefaultCollisionCoordinator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _collideWithWorld: js.Any,
     _finalPosition: js.Any,
     _scaledPosition: js.Any,
     _scaledVelocity: js.Any,
     _scene: js.Any,
     createCollider: () => Collider,
-    getNewPosition: (Vector3, Vector3, Collider, Double, AbstractMesh, js.Function3[
+    getNewPosition: (Vector3, Vector3, Collider, Double, Nullable[AbstractMesh], js.Function3[
       /* collisionIndex */ Double, 
       /* newPosition */ Vector3, 
       /* collidedMesh */ Nullable[AbstractMesh], 
@@ -55,32 +39,16 @@ object DefaultCollisionCoordinator {
     __obj.asInstanceOf[DefaultCollisionCoordinator]
   }
   
-  @scala.inline
-  implicit class DefaultCollisionCoordinatorMutableBuilder[Self <: DefaultCollisionCoordinator] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultCollisionCoordinator](x: Self) {
     
-    @scala.inline
-    def setGetNewPosition(
-      value: (Vector3, Vector3, Collider, Double, AbstractMesh, js.Function3[
-          /* collisionIndex */ Double, 
-          /* newPosition */ Vector3, 
-          /* collidedMesh */ Nullable[AbstractMesh], 
-          Unit
-        ], Double) => Unit
-    ): Self = StObject.set(x, "getNewPosition", js.Any.fromFunction7(value))
+    inline def set_collideWithWorld(value: js.Any): Self = StObject.set(x, "_collideWithWorld", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_collideWithWorld(value: js.Any): Self = StObject.set(x, "_collideWithWorld", value.asInstanceOf[js.Any])
+    inline def set_finalPosition(value: js.Any): Self = StObject.set(x, "_finalPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_finalPosition(value: js.Any): Self = StObject.set(x, "_finalPosition", value.asInstanceOf[js.Any])
+    inline def set_scaledPosition(value: js.Any): Self = StObject.set(x, "_scaledPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_scaledPosition(value: js.Any): Self = StObject.set(x, "_scaledPosition", value.asInstanceOf[js.Any])
+    inline def set_scaledVelocity(value: js.Any): Self = StObject.set(x, "_scaledVelocity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_scaledVelocity(value: js.Any): Self = StObject.set(x, "_scaledVelocity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_scene(value: js.Any): Self = StObject.set(x, "_scene", value.asInstanceOf[js.Any])
+    inline def set_scene(value: js.Any): Self = StObject.set(x, "_scene", value.asInstanceOf[js.Any])
   }
 }

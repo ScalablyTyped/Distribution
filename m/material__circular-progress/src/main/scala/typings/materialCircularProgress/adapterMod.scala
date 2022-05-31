@@ -2,32 +2,29 @@ package typings.materialCircularProgress
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adapterMod {
   
-  @js.native
   trait MDCCircularProgressAdapter extends StObject {
     
-    def addClass(className: String): Unit = js.native
+    def addClass(className: String): Unit
     
-    def getDeterminateCircleAttribute(attributeName: String): String | Null = js.native
+    def getDeterminateCircleAttribute(attributeName: String): String | Null
     
-    def hasClass(className: String): Boolean = js.native
+    def hasClass(className: String): Boolean
     
-    def removeAttribute(attributeName: String): Unit = js.native
+    def removeAttribute(attributeName: String): Unit
     
-    def removeClass(className: String): Unit = js.native
+    def removeClass(className: String): Unit
     
-    def setAttribute(attributeName: String, value: String): Unit = js.native
+    def setAttribute(attributeName: String, value: String): Unit
     
-    def setDeterminateCircleAttribute(attributeName: String, value: String): Unit = js.native
+    def setDeterminateCircleAttribute(attributeName: String, value: String): Unit
   }
   object MDCCircularProgressAdapter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addClass: String => Unit,
       getDeterminateCircleAttribute: String => String | Null,
       hasClass: String => Boolean,
@@ -40,29 +37,21 @@ object adapterMod {
       __obj.asInstanceOf[MDCCircularProgressAdapter]
     }
     
-    @scala.inline
-    implicit class MDCCircularProgressAdapterMutableBuilder[Self <: MDCCircularProgressAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: MDCCircularProgressAdapter](x: Self) {
       
-      @scala.inline
-      def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
+      inline def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDeterminateCircleAttribute(value: String => String | Null): Self = StObject.set(x, "getDeterminateCircleAttribute", js.Any.fromFunction1(value))
+      inline def setGetDeterminateCircleAttribute(value: String => String | Null): Self = StObject.set(x, "getDeterminateCircleAttribute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasClass(value: String => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
+      inline def setHasClass(value: String => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveAttribute(value: String => Unit): Self = StObject.set(x, "removeAttribute", js.Any.fromFunction1(value))
+      inline def setRemoveAttribute(value: String => Unit): Self = StObject.set(x, "removeAttribute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveClass(value: String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
+      inline def setRemoveClass(value: String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetAttribute(value: (String, String) => Unit): Self = StObject.set(x, "setAttribute", js.Any.fromFunction2(value))
+      inline def setSetAttribute(value: (String, String) => Unit): Self = StObject.set(x, "setAttribute", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetDeterminateCircleAttribute(value: (String, String) => Unit): Self = StObject.set(x, "setDeterminateCircleAttribute", js.Any.fromFunction2(value))
+      inline def setSetDeterminateCircleAttribute(value: (String, String) => Unit): Self = StObject.set(x, "setDeterminateCircleAttribute", js.Any.fromFunction2(value))
     }
   }
 }

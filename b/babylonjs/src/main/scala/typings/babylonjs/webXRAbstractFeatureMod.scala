@@ -6,14 +6,15 @@ import typings.babylonjs.webXRFeaturesManagerMod.IWebXRFeature
 import typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webXRAbstractFeatureMod {
   
   @JSImport("babylonjs/XR/features/WebXRAbstractFeature", "WebXRAbstractFeature")
   @js.native
-  abstract class WebXRAbstractFeature protected () extends IWebXRFeature {
+  abstract class WebXRAbstractFeature protected ()
+    extends StObject
+       with IWebXRFeature {
     /**
       * Construct a new (abstract) WebXR feature
       * @param _xrSessionManager the xr session manager for this feature
@@ -30,7 +31,7 @@ object webXRAbstractFeatureMod {
       callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit]
     ): Unit = js.native
     
-    var _attached: js.Any = js.native
+    /* private */ var _attached: js.Any = js.native
     
     /**
       * Code in this function will be executed on each xrFrame received from the browser.
@@ -39,15 +40,21 @@ object webXRAbstractFeatureMod {
       */
     /* protected */ def _onXRFrame(_xrFrame: XRFrame): Unit = js.native
     
-    var _removeOnDetach: js.Any = js.native
+    /* private */ var _removeOnDetach: js.Any = js.native
     
-    var _xrSessionManager: WebXRSessionManager = js.native
+    /* protected */ var _xrSessionManager: WebXRSessionManager = js.native
     
     /**
       * Is this feature attached
       */
     @JSName("attached")
     def attached_MWebXRAbstractFeature: Boolean = js.native
+    
+    /**
+      * Releases all held resources
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * The name of the native xr feature name (like anchor, hit-test, or hand-tracking)

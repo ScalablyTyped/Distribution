@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.ColorGradingTexture")
 @js.native
 class ColorGradingTexture protected ()
-  extends typings.babylonjs.BABYLON.ColorGradingTexture {
+  extends StObject
+     with typings.babylonjs.BABYLON.ColorGradingTexture {
   /**
     * Instantiates a ColorGradingTexture from the following parameters.
     *
@@ -25,6 +25,12 @@ class ColorGradingTexture protected ()
     sceneOrEngine: typings.babylonjs.BABYLON.ThinEngine,
     onLoad: Nullable[js.Function0[Unit]]
   ) = this()
+  
+  /**
+    * Array of animations
+    */
+  /* CompleteClass */
+  var animations: Nullable[js.Array[typings.babylonjs.BABYLON.Animation]] = js.native
 }
 /* static members */
 object ColorGradingTexture {
@@ -40,9 +46,7 @@ object ColorGradingTexture {
     * @param rootUrl The root url of the data assets to load
     * @return A color gradind texture
     */
-  @JSGlobal("BABYLON.ColorGradingTexture.Parse")
-  @js.native
-  def Parse(parsedTexture: js.Any, scene: typings.babylonjs.BABYLON.Scene): Nullable[typings.babylonjs.BABYLON.ColorGradingTexture] = js.native
+  inline def Parse(parsedTexture: js.Any, scene: typings.babylonjs.BABYLON.Scene): Nullable[typings.babylonjs.BABYLON.ColorGradingTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.ColorGradingTexture]]
   
   /**
     * Empty line regex stored for GC.
@@ -50,6 +54,5 @@ object ColorGradingTexture {
   @JSGlobal("BABYLON.ColorGradingTexture._noneEmptyLineRegex")
   @js.native
   def _noneEmptyLineRegex: js.Any = js.native
-  @scala.inline
-  def _noneEmptyLineRegex_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_noneEmptyLineRegex")(x.asInstanceOf[js.Any])
+  inline def _noneEmptyLineRegex_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_noneEmptyLineRegex")(x.asInstanceOf[js.Any])
 }

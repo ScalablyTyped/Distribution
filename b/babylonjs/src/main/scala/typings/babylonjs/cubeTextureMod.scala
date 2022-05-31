@@ -9,7 +9,6 @@ import typings.babylonjs.thinEngineMod.ThinEngine
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cubeTextureMod {
@@ -45,7 +44,7 @@ object cubeTextureMod {
       onLoad: js.UndefOr[Nullable[js.Function0[Unit]]],
       onError: js.UndefOr[
             Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
             ]
           ],
       format: js.UndefOr[Double],
@@ -57,27 +56,27 @@ object cubeTextureMod {
       loaderOptions: js.UndefOr[js.Any]
     ) = this()
     
-    var _boundingBoxSize: js.Any = js.native
+    /* private */ var _boundingBoxSize: js.Any = js.native
     
-    var _createPolynomials: js.Any = js.native
+    /* private */ var _createPolynomials: js.Any = js.native
     
-    var _delayedOnLoad: js.Any = js.native
+    /* private */ var _delayedOnLoad: js.Any = js.native
     
-    var _extensions: js.Any = js.native
+    /* private */ var _extensions: js.Any = js.native
     
-    var _files: js.Any = js.native
+    /* private */ var _files: js.Any = js.native
     
-    var _forcedExtension: Nullable[String] = js.native
+    /* protected */ var _forcedExtension: Nullable[String] = js.native
     
-    var _format: js.Any = js.native
+    /* private */ var _format: js.Any = js.native
     
-    var _loaderOptions: js.Any = js.native
+    /* private */ var _loaderOptions: js.Any = js.native
     
-    var _noMipmap: js.Any = js.native
+    /* private */ var _noMipmap: js.Any = js.native
     
-    var _rotationY: Double = js.native
+    /* protected */ var _rotationY: Double = js.native
     
-    var _textureMatrix: js.Any = js.native
+    /* private */ var _textureMatrix: js.Any = js.native
     
     /**
       * Gets or sets the center of the bounding box associated with the cube texture.
@@ -129,23 +128,13 @@ object cubeTextureMod {
       * @param prefiltered Defines whether the updated texture is prefiltered or not
       */
     def updateURL(url: String): Unit = js.native
-    def updateURL(
-      url: String,
-      forcedExtension: js.UndefOr[scala.Nothing],
-      onLoad: js.UndefOr[scala.Nothing],
-      prefiltered: Boolean
-    ): Unit = js.native
-    def updateURL(url: String, forcedExtension: js.UndefOr[scala.Nothing], onLoad: js.Function0[Unit]): Unit = js.native
-    def updateURL(
-      url: String,
-      forcedExtension: js.UndefOr[scala.Nothing],
-      onLoad: js.Function0[Unit],
-      prefiltered: Boolean
-    ): Unit = js.native
     def updateURL(url: String, forcedExtension: String): Unit = js.native
-    def updateURL(url: String, forcedExtension: String, onLoad: js.UndefOr[scala.Nothing], prefiltered: Boolean): Unit = js.native
     def updateURL(url: String, forcedExtension: String, onLoad: js.Function0[Unit]): Unit = js.native
     def updateURL(url: String, forcedExtension: String, onLoad: js.Function0[Unit], prefiltered: Boolean): Unit = js.native
+    def updateURL(url: String, forcedExtension: String, onLoad: Unit, prefiltered: Boolean): Unit = js.native
+    def updateURL(url: String, forcedExtension: Unit, onLoad: js.Function0[Unit]): Unit = js.native
+    def updateURL(url: String, forcedExtension: Unit, onLoad: js.Function0[Unit], prefiltered: Boolean): Unit = js.native
+    def updateURL(url: String, forcedExtension: Unit, onLoad: Unit, prefiltered: Boolean): Unit = js.native
     
     /**
       * The url of the texture
@@ -155,6 +144,10 @@ object cubeTextureMod {
   /* static members */
   object CubeTexture {
     
+    @JSImport("babylonjs/Materials/Textures/cubeTexture", "CubeTexture")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a cube texture from an array of image urls
       * @param files defines an array of image urls
@@ -162,12 +155,8 @@ object cubeTextureMod {
       * @param noMipmap specifies if mip maps are not used
       * @returns a cube texture
       */
-    @JSImport("babylonjs/Materials/Textures/cubeTexture", "CubeTexture.CreateFromImages")
-    @js.native
-    def CreateFromImages(files: js.Array[String], scene: Scene): CubeTexture = js.native
-    @JSImport("babylonjs/Materials/Textures/cubeTexture", "CubeTexture.CreateFromImages")
-    @js.native
-    def CreateFromImages(files: js.Array[String], scene: Scene, noMipmap: Boolean): CubeTexture = js.native
+    inline def CreateFromImages(files: js.Array[String], scene: Scene): CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromImages")(files.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[CubeTexture]
+    inline def CreateFromImages(files: js.Array[String], scene: Scene, noMipmap: Boolean): CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromImages")(files.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], noMipmap.asInstanceOf[js.Any])).asInstanceOf[CubeTexture]
     
     /**
       * Creates and return a texture created from prefilterd data by tools like IBL Baker or Lys.
@@ -177,18 +166,10 @@ object cubeTextureMod {
       * @param createPolynomials defines whether or not to create polynomial harmonics from the texture data if necessary
       * @return the prefiltered texture
       */
-    @JSImport("babylonjs/Materials/Textures/cubeTexture", "CubeTexture.CreateFromPrefilteredData")
-    @js.native
-    def CreateFromPrefilteredData(url: String, scene: Scene): CubeTexture = js.native
-    @JSImport("babylonjs/Materials/Textures/cubeTexture", "CubeTexture.CreateFromPrefilteredData")
-    @js.native
-    def CreateFromPrefilteredData(url: String, scene: Scene, forcedExtension: js.UndefOr[scala.Nothing], createPolynomials: Boolean): CubeTexture = js.native
-    @JSImport("babylonjs/Materials/Textures/cubeTexture", "CubeTexture.CreateFromPrefilteredData")
-    @js.native
-    def CreateFromPrefilteredData(url: String, scene: Scene, forcedExtension: js.Any): CubeTexture = js.native
-    @JSImport("babylonjs/Materials/Textures/cubeTexture", "CubeTexture.CreateFromPrefilteredData")
-    @js.native
-    def CreateFromPrefilteredData(url: String, scene: Scene, forcedExtension: js.Any, createPolynomials: Boolean): CubeTexture = js.native
+    inline def CreateFromPrefilteredData(url: String, scene: Scene): CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromPrefilteredData")(url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[CubeTexture]
+    inline def CreateFromPrefilteredData(url: String, scene: Scene, forcedExtension: js.Any): CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromPrefilteredData")(url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], forcedExtension.asInstanceOf[js.Any])).asInstanceOf[CubeTexture]
+    inline def CreateFromPrefilteredData(url: String, scene: Scene, forcedExtension: js.Any, createPolynomials: Boolean): CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromPrefilteredData")(url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], forcedExtension.asInstanceOf[js.Any], createPolynomials.asInstanceOf[js.Any])).asInstanceOf[CubeTexture]
+    inline def CreateFromPrefilteredData(url: String, scene: Scene, forcedExtension: Unit, createPolynomials: Boolean): CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromPrefilteredData")(url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], forcedExtension.asInstanceOf[js.Any], createPolynomials.asInstanceOf[js.Any])).asInstanceOf[CubeTexture]
     
     /**
       * Parses text to create a cube texture
@@ -197,8 +178,6 @@ object cubeTextureMod {
       * @param rootUrl defines the root url of the cube texture
       * @returns a cube texture
       */
-    @JSImport("babylonjs/Materials/Textures/cubeTexture", "CubeTexture.Parse")
-    @js.native
-    def Parse(parsedTexture: js.Any, scene: Scene, rootUrl: String): CubeTexture = js.native
+    inline def Parse(parsedTexture: js.Any, scene: Scene, rootUrl: String): CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[CubeTexture]
   }
 }

@@ -5,7 +5,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.transformNodeMod.TransformNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object trailMeshMod {
@@ -24,38 +23,8 @@ object trailMeshMod {
       */
     def this(name: String, generator: TransformNode, scene: Scene) = this()
     def this(name: String, generator: TransformNode, scene: Scene, diameter: Double) = this()
-    def this(
-      name: String,
-      generator: TransformNode,
-      scene: Scene,
-      diameter: js.UndefOr[scala.Nothing],
-      length: Double
-    ) = this()
     def this(name: String, generator: TransformNode, scene: Scene, diameter: Double, length: Double) = this()
-    def this(
-      name: String,
-      generator: TransformNode,
-      scene: Scene,
-      diameter: js.UndefOr[scala.Nothing],
-      length: js.UndefOr[scala.Nothing],
-      autoStart: Boolean
-    ) = this()
-    def this(
-      name: String,
-      generator: TransformNode,
-      scene: Scene,
-      diameter: js.UndefOr[scala.Nothing],
-      length: Double,
-      autoStart: Boolean
-    ) = this()
-    def this(
-      name: String,
-      generator: TransformNode,
-      scene: Scene,
-      diameter: Double,
-      length: js.UndefOr[scala.Nothing],
-      autoStart: Boolean
-    ) = this()
+    def this(name: String, generator: TransformNode, scene: Scene, diameter: Unit, length: Double) = this()
     def this(
       name: String,
       generator: TransformNode,
@@ -64,28 +33,51 @@ object trailMeshMod {
       length: Double,
       autoStart: Boolean
     ) = this()
+    def this(
+      name: String,
+      generator: TransformNode,
+      scene: Scene,
+      diameter: Double,
+      length: Unit,
+      autoStart: Boolean
+    ) = this()
+    def this(
+      name: String,
+      generator: TransformNode,
+      scene: Scene,
+      diameter: Unit,
+      length: Double,
+      autoStart: Boolean
+    ) = this()
+    def this(
+      name: String,
+      generator: TransformNode,
+      scene: Scene,
+      diameter: Unit,
+      length: Unit,
+      autoStart: Boolean
+    ) = this()
     
-    var _autoStart: js.Any = js.native
+    /* private */ var _autoStart: js.Any = js.native
     
-    var _beforeRenderObserver: js.Any = js.native
+    /* private */ var _beforeRenderObserver: js.Any = js.native
     
-    var _createMesh: js.Any = js.native
+    /* private */ var _createMesh: js.Any = js.native
     
-    var _diameter: js.Any = js.native
+    /* private */ var _diameter: js.Any = js.native
     
-    var _generator: js.Any = js.native
+    /* private */ var _generator: js.Any = js.native
     
-    var _length: js.Any = js.native
+    /* private */ var _length: js.Any = js.native
     
-    var _running: js.Any = js.native
+    /* private */ var _running: js.Any = js.native
     
-    var _sectionNormalVectors: js.Any = js.native
+    /* private */ var _sectionNormalVectors: js.Any = js.native
     
-    var _sectionPolygonPointsCount: js.Any = js.native
+    /* private */ var _sectionPolygonPointsCount: js.Any = js.native
     
-    var _sectionVectors: js.Any = js.native
+    /* private */ var _sectionVectors: js.Any = js.native
     
-    def clone(name: js.UndefOr[scala.Nothing], newGenerator: TransformNode): TrailMesh = js.native
     /**
       * Returns a new TrailMesh object.
       * @param name is a string, the name given to the new mesh
@@ -93,6 +85,7 @@ object trailMeshMod {
       * @returns a new mesh
       */
     def clone(name: String, newGenerator: TransformNode): TrailMesh = js.native
+    def clone(name: Unit, newGenerator: TransformNode): TrailMesh = js.native
     
     /**
       * Start trailing mesh.
@@ -112,14 +105,16 @@ object trailMeshMod {
   /* static members */
   object TrailMesh {
     
+    @JSImport("babylonjs/Meshes/trailMesh", "TrailMesh")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Parses a serialized trail mesh
       * @param parsedMesh the serialized mesh
       * @param scene the scene to create the trail mesh in
       * @returns the created trail mesh
       */
-    @JSImport("babylonjs/Meshes/trailMesh", "TrailMesh.Parse")
-    @js.native
-    def Parse(parsedMesh: js.Any, scene: Scene): TrailMesh = js.native
+    inline def Parse(parsedMesh: js.Any, scene: Scene): TrailMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedMesh.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[TrailMesh]
   }
 }

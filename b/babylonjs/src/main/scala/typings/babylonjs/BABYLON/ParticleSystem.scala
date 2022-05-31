@@ -2,42 +2,42 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.babylonjs.BABYLON.IParticleSystem because var conflicts: animations, beginAnimationFrom, beginAnimationLoop, beginAnimationOnStart, beginAnimationTo, billboardMode, blendMode, color1, color2, colorDead, disposeOnStop, emitRate, emitter, endSpriteCellID, gravity, id, isAnimationSheetEnabled, isBillboardBased, layerMask, limitVelocityDamping, maxAngularSpeed, maxEmitPower, maxInitialRotation, maxLifeTime, maxScaleX, maxScaleY, maxSize, minAngularSpeed, minEmitPower, minInitialRotation, minLifeTime, minScaleX, minScaleY, minSize, name, noiseStrength, noiseTexture, particleEmitterType, particleTexture, preWarmCycles, preWarmStepOffset, renderingGroupId, snippetId, spriteCellChangeSpeed, spriteCellHeight, spriteCellWidth, spriteRandomStartCell, startDelay, startSpriteCellID, targetStopDuration, translationPivot, updateSpeed. Inlined isLocal, defaultProjectionMatrix, getCapacity, getActiveCount, isStarted, animate, render, onDisposeObservable, onStoppedObservable, clone, serialize, rebuild, forceRefreshGradients, start, start, stop, reset, isStopping, isReady, getClassName, getCustomEffect, setCustomEffect, fillDefines, fillUniformsAttributesAndSamplerNames, onBeforeDrawParticlesObservable, vertexShaderName, addColorGradient, addColorGradient, removeColorGradient, addSizeGradient, addSizeGradient, removeSizeGradient, addAngularSpeedGradient, addAngularSpeedGradient, removeAngularSpeedGradient, addVelocityGradient, addVelocityGradient, removeVelocityGradient, addLimitVelocityGradient, addLimitVelocityGradient, removeLimitVelocityGradient, addDragGradient, addDragGradient, removeDragGradient, addEmitRateGradient, addEmitRateGradient, removeEmitRateGradient, addStartSizeGradient, addStartSizeGradient, removeStartSizeGradient, addLifeTimeGradient, addLifeTimeGradient, removeLifeTimeGradient, addRampGradient, getRampGradients, useRampGradients, addColorRemapGradient, addAlphaRemapGradient
 - typings.babylonjs.BABYLON.IAnimatable because var conflicts: animations. Inlined  */ @js.native
 trait ParticleSystem
-  extends BaseParticleSystem
+  extends StObject
+     with BaseParticleSystem
      with IDisposable {
   
-  var _actualFrame: js.Any = js.native
+  /* private */ var _actualFrame: js.Any = js.native
   
-  var _addFactorGradient: js.Any = js.native
+  /* private */ var _addFactorGradient: js.Any = js.native
   
-  var _alive: js.Any = js.native
+  /* private */ var _alive: js.Any = js.native
   
   /**
     * @hidden (for internal use only)
     */
   def _appendParticleVertex(index: Double, particle: Particle, offsetX: Double, offsetY: Double): Unit = js.native
   
-  var _appendParticleVertices: js.Any = js.native
+  /* private */ var _appendParticleVertices: js.Any = js.native
   
-  var _cachedDefines: js.Any = js.native
+  /* private */ var _cachedDefines: js.Any = js.native
   
-  var _capacity: js.Any = js.native
+  /* private */ var _capacity: js.Any = js.native
   
-  var _colorDiff: js.Any = js.native
+  /* private */ var _colorDiff: js.Any = js.native
   
-  var _createIndexBuffer: js.Any = js.native
+  /* private */ var _createIndexBuffer: js.Any = js.native
   
-  var _createParticle: js.Any = js.native
+  /* private */ var _createParticle: js.Any = js.native
   
-  var _createRampGradientTexture: js.Any = js.native
+  /* private */ var _createRampGradientTexture: js.Any = js.native
   
-  var _createVertexBuffers: js.Any = js.native
+  /* private */ var _createVertexBuffers: js.Any = js.native
   
   /** @hidden */
   var _currentEmitRate1: Double = js.native
@@ -48,7 +48,7 @@ trait ParticleSystem
   /** @hidden */
   var _currentEmitRateGradient: Nullable[FactorGradient] = js.native
   
-  var _currentRenderId: js.Any = js.native
+  /* private */ var _currentRenderId: js.Any = js.native
   
   /** @hidden */
   var _currentStartSize1: Double = js.native
@@ -59,7 +59,7 @@ trait ParticleSystem
   /** @hidden */
   var _currentStartSizeGradient: Nullable[FactorGradient] = js.native
   
-  var _customEffect: js.Any = js.native
+  /* private */ var _customEffect: js.Any = js.native
   
   /**
     * @hidden
@@ -67,88 +67,88 @@ trait ParticleSystem
     */
   var _disposeEmitterOnDispose: Boolean = js.native
   
-  var _effect: js.Any = js.native
+  /* private */ var _effect: js.Any = js.native
   
-  var _emitFromParticle: js.Any = js.native
+  /* private */ var _emitFromParticle: js.Any = js.native
   
-  var _emitterWorldMatrix: js.Any = js.native
+  /* private */ var _emitterWorldMatrix: js.Any = js.native
   
-  var _epsilon: js.Any = js.native
+  /* private */ var _epsilon: js.Any = js.native
   
-  var _fetchR: js.Any = js.native
+  /* private */ var _fetchR: js.Any = js.native
   
   /** @hidden */
-  var _getEffect: js.Any = js.native
+  /* private */ var _getEffect: js.Any = js.native
   
-  var _indexBuffer: js.Any = js.native
+  /* private */ var _indexBuffer: js.Any = js.native
   
   /**
     * @hidden
     */
   var _inheritedVelocityOffset: Vector3 = js.native
   
-  var _newPartsExcess: js.Any = js.native
+  /* private */ var _newPartsExcess: js.Any = js.native
   
   /** @hidden */
-  var _onBeforeDrawParticlesObservable: js.Any = js.native
+  /* private */ var _onBeforeDrawParticlesObservable: js.Any = js.native
   
-  var _onDisposeObserver: js.Any = js.native
+  /* private */ var _onDisposeObserver: js.Any = js.native
   
-  var _particles: js.Any = js.native
+  /* private */ var _particles: js.Any = js.native
   
-  var _prepareSubEmitterInternalArray: js.Any = js.native
+  /* private */ var _prepareSubEmitterInternalArray: js.Any = js.native
   
-  var _rampGradientsTexture: js.Any = js.native
+  /* private */ var _rampGradientsTexture: js.Any = js.native
   
-  val _rawTextureWidth: js.Any = js.native
+  /* private */ val _rawTextureWidth: js.Any = js.native
   
-  var _removeFactorGradient: js.Any = js.native
+  /* private */ var _removeFactorGradient: js.Any = js.native
   
-  var _removeFromRoot: js.Any = js.native
+  /* private */ var _removeFromRoot: js.Any = js.native
   
-  var _render: js.Any = js.native
+  /* private */ var _render: js.Any = js.native
   
-  var _resetEffect: js.Any = js.native
+  /* private */ var _resetEffect: js.Any = js.native
   
-  var _rootParticleSystem: js.Any = js.native
+  /* private */ var _rootParticleSystem: js.Any = js.native
   
-  var _scaledColorStep: js.Any = js.native
+  /* private */ var _scaledColorStep: js.Any = js.native
   
-  var _scaledDirection: js.Any = js.native
+  /* private */ var _scaledDirection: js.Any = js.native
   
-  var _scaledGravity: js.Any = js.native
+  /* private */ var _scaledGravity: js.Any = js.native
   
-  var _scaledUpdateSpeed: js.Any = js.native
+  /* private */ var _scaledUpdateSpeed: js.Any = js.native
   
-  var _spriteBuffer: js.Any = js.native
+  /* private */ var _spriteBuffer: js.Any = js.native
   
-  var _started: js.Any = js.native
+  /* private */ var _started: js.Any = js.native
   
-  var _stockParticles: js.Any = js.native
+  /* private */ var _stockParticles: js.Any = js.native
   
-  var _stopSubEmitters: js.Any = js.native
+  /* private */ var _stopSubEmitters: js.Any = js.native
   
-  var _stopped: js.Any = js.native
+  /* private */ var _stopped: js.Any = js.native
   
-  var _subEmitters: js.Any = js.native
+  /* private */ var _subEmitters: js.Any = js.native
   
-  var _syncRampGradientTexture: js.Any = js.native
+  /* private */ var _syncRampGradientTexture: js.Any = js.native
   
-  var _update: js.Any = js.native
+  /* private */ var _update: js.Any = js.native
   
-  var _useInstancing: js.Any = js.native
+  /* private */ var _useInstancing: js.Any = js.native
   
-  var _useRampGradients: js.Any = js.native
+  /* private */ var _useRampGradients: js.Any = js.native
   
-  var _vertexArrayObject: js.Any = js.native
+  /* private */ var _vertexArrayObject: js.Any = js.native
   
-  var _vertexBuffer: js.Any = js.native
+  /* private */ var _vertexBuffer: js.Any = js.native
   
-  var _vertexBufferSize: js.Any = js.native
+  /* private */ var _vertexBufferSize: js.Any = js.native
   
-  var _vertexBuffers: js.Any = js.native
+  /* private */ var _vertexBuffers: js.Any = js.native
   
-  var _vertexData: js.Any = js.native
+  /* private */ var _vertexData: js.Any = js.native
   
   /**
     * The current active Sub-systems, this property is used by the root particle system only.

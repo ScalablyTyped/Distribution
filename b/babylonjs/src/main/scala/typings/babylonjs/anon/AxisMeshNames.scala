@@ -2,26 +2,23 @@ package typings.babylonjs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AxisMeshNames extends StObject {
   
-  var axisMeshNames: js.Array[String] = js.native
+  var axisMeshNames: js.Array[String]
   
-  var buttonMeshNames: Grip = js.native
+  var buttonMeshNames: Grip
   
-  var buttonObservableNames: Grip = js.native
+  var buttonObservableNames: Grip
   
-  var buttons: js.Array[String] = js.native
+  var buttons: js.Array[String]
   
-  var pointingPoseMeshName: String = js.native
+  var pointingPoseMeshName: String
 }
 object AxisMeshNames {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     axisMeshNames: js.Array[String],
     buttonMeshNames: Grip,
     buttonObservableNames: Grip,
@@ -32,28 +29,20 @@ object AxisMeshNames {
     __obj.asInstanceOf[AxisMeshNames]
   }
   
-  @scala.inline
-  implicit class AxisMeshNamesMutableBuilder[Self <: AxisMeshNames] (val x: Self) extends AnyVal {
+  extension [Self <: AxisMeshNames](x: Self) {
     
-    @scala.inline
-    def setAxisMeshNames(value: js.Array[String]): Self = StObject.set(x, "axisMeshNames", value.asInstanceOf[js.Any])
+    inline def setAxisMeshNames(value: js.Array[String]): Self = StObject.set(x, "axisMeshNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisMeshNamesVarargs(value: String*): Self = StObject.set(x, "axisMeshNames", js.Array(value :_*))
+    inline def setAxisMeshNamesVarargs(value: String*): Self = StObject.set(x, "axisMeshNames", js.Array(value :_*))
     
-    @scala.inline
-    def setButtonMeshNames(value: Grip): Self = StObject.set(x, "buttonMeshNames", value.asInstanceOf[js.Any])
+    inline def setButtonMeshNames(value: Grip): Self = StObject.set(x, "buttonMeshNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonObservableNames(value: Grip): Self = StObject.set(x, "buttonObservableNames", value.asInstanceOf[js.Any])
+    inline def setButtonObservableNames(value: Grip): Self = StObject.set(x, "buttonObservableNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtons(value: js.Array[String]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: js.Array[String]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsVarargs(value: String*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: String*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
-    @scala.inline
-    def setPointingPoseMeshName(value: String): Self = StObject.set(x, "pointingPoseMeshName", value.asInstanceOf[js.Any])
+    inline def setPointingPoseMeshName(value: String): Self = StObject.set(x, "pointingPoseMeshName", value.asInstanceOf[js.Any])
   }
 }

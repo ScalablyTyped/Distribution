@@ -3,61 +3,46 @@ package typings.jupyterlabServices
 import typings.jupyterlabServices.serverconnectionMod.ServerConnection.ISettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object terminalRestapiMod {
+  
+  @JSImport("@jupyterlab/services/lib/terminal/restapi", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@jupyterlab/services/lib/terminal/restapi", "TERMINAL_SERVICE_URL")
   @js.native
   val TERMINAL_SERVICE_URL: /* "api/terminals" */ String = js.native
   
-  @JSImport("@jupyterlab/services/lib/terminal/restapi", "isAvailable")
-  @js.native
-  def isAvailable(): Boolean = js.native
+  inline def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
   
-  @JSImport("@jupyterlab/services/lib/terminal/restapi", "listRunning")
-  @js.native
-  def listRunning(): js.Promise[js.Array[IModel]] = js.native
-  @JSImport("@jupyterlab/services/lib/terminal/restapi", "listRunning")
-  @js.native
-  def listRunning(settings: ISettings): js.Promise[js.Array[IModel]] = js.native
+  inline def listRunning(): js.Promise[js.Array[IModel]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listRunning")().asInstanceOf[js.Promise[js.Array[IModel]]]
+  inline def listRunning(settings: ISettings): js.Promise[js.Array[IModel]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listRunning")(settings.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[IModel]]]
   
-  @JSImport("@jupyterlab/services/lib/terminal/restapi", "shutdownTerminal")
-  @js.native
-  def shutdownTerminal(name: String): js.Promise[Unit] = js.native
-  @JSImport("@jupyterlab/services/lib/terminal/restapi", "shutdownTerminal")
-  @js.native
-  def shutdownTerminal(name: String, settings: ISettings): js.Promise[Unit] = js.native
+  inline def shutdownTerminal(name: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("shutdownTerminal")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def shutdownTerminal(name: String, settings: ISettings): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("shutdownTerminal")(name.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("@jupyterlab/services/lib/terminal/restapi", "startNew")
-  @js.native
-  def startNew(): js.Promise[IModel] = js.native
-  @JSImport("@jupyterlab/services/lib/terminal/restapi", "startNew")
-  @js.native
-  def startNew(settings: ISettings): js.Promise[IModel] = js.native
+  inline def startNew(): js.Promise[IModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("startNew")().asInstanceOf[js.Promise[IModel]]
+  inline def startNew(settings: ISettings): js.Promise[IModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("startNew")(settings.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IModel]]
   
-  @js.native
   trait IModel extends StObject {
     
     /**
       * The name of the terminal session.
       */
-    val name: String = js.native
+    val name: String
   }
   object IModel {
     
-    @scala.inline
-    def apply(name: String): IModel = {
+    inline def apply(name: String): IModel = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[IModel]
     }
     
-    @scala.inline
-    implicit class IModelMutableBuilder[Self <: IModel] (val x: Self) extends AnyVal {
+    extension [Self <: IModel](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -11,7 +11,6 @@ import typings.luminoWidgets.mod.Widget
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helpMod {
@@ -36,7 +35,9 @@ object helpMod {
   }
   
   @js.native
-  trait IHelpMenu extends IJupyterLabMenu {
+  trait IHelpMenu
+    extends StObject
+       with IJupyterLabMenu {
     
     /**
       * A set of kernel users for the help menu.
@@ -51,27 +52,25 @@ object helpMod {
       * Interface for a Kernel user to register itself
       * with the IHelpMenu's semantic extension points.
       */
-    @js.native
-    trait IKernelUser[T /* <: Widget */] extends IMenuExtender[T] {
+    trait IKernelUser[T /* <: Widget */]
+      extends StObject
+         with IMenuExtender[T] {
       
       /**
         * A function to get the kernel for a widget.
         */
-      def getKernel(widget: T): IKernelConnection | Null = js.native
+      def getKernel(widget: T): IKernelConnection | Null
     }
     object IKernelUser {
       
-      @scala.inline
-      def apply[T /* <: Widget */](getKernel: T => IKernelConnection | Null, tracker: IWidgetTracker[T]): IKernelUser[T] = {
+      inline def apply[T /* <: Widget */](getKernel: T => IKernelConnection | Null, tracker: IWidgetTracker[T]): IKernelUser[T] = {
         val __obj = js.Dynamic.literal(getKernel = js.Any.fromFunction1(getKernel), tracker = tracker.asInstanceOf[js.Any])
         __obj.asInstanceOf[IKernelUser[T]]
       }
       
-      @scala.inline
-      implicit class IKernelUserMutableBuilder[Self <: IKernelUser[_], T /* <: Widget */] (val x: Self with IKernelUser[T]) extends AnyVal {
+      extension [Self <: IKernelUser[?], T /* <: Widget */](x: Self & IKernelUser[T]) {
         
-        @scala.inline
-        def setGetKernel(value: T => IKernelConnection | Null): Self = StObject.set(x, "getKernel", js.Any.fromFunction1(value))
+        inline def setGetKernel(value: T => IKernelConnection | Null): Self = StObject.set(x, "getKernel", js.Any.fromFunction1(value))
       }
     }
   }

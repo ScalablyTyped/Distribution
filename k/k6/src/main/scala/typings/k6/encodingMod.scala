@@ -70,10 +70,4 @@ object encodingMod {
     
     inline def url: typings.k6.k6Strings.url = "url".asInstanceOf[typings.k6.k6Strings.url]
   }
-  
-  /**
-    * The encoding module provides base64 encoding/decoding.
-    * https://k6.io/docs/javascript-api/k6-encoding
-    */
-  object encoding
 }

@@ -4,18 +4,19 @@ import typings.babylonjs.arcRotateCameraMod.ArcRotateCamera
 import typings.babylonjs.cameraInputsManagerMod.ICameraInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arcRotateCameraMouseWheelInputMod {
   
   @JSImport("babylonjs/Cameras/Inputs/arcRotateCameraMouseWheelInput", "ArcRotateCameraMouseWheelInput")
   @js.native
-  class ArcRotateCameraMouseWheelInput () extends ICameraInput[ArcRotateCamera] {
+  class ArcRotateCameraMouseWheelInput ()
+    extends StObject
+       with ICameraInput[ArcRotateCamera] {
     
-    var _observer: js.Any = js.native
+    /* private */ var _observer: js.Any = js.native
     
-    var _wheel: js.Any = js.native
+    /* private */ var _wheel: js.Any = js.native
     
     /**
       * Defines the camera the input is attached to.
@@ -23,7 +24,7 @@ object arcRotateCameraMouseWheelInputMod {
     @JSName("camera")
     var camera_ArcRotateCameraMouseWheelInput: ArcRotateCamera = js.native
     
-    var computeDeltaFromMouseWheelLegacyEvent: js.Any = js.native
+    /* private */ var computeDeltaFromMouseWheelLegacyEvent: js.Any = js.native
     
     /**
       * wheelDeltaPercentage will be used instead of wheelPrecision if different from 0.

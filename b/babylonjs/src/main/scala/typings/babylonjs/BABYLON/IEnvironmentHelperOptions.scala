@@ -2,10 +2,8 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEnvironmentHelperOptions extends StObject {
   
   /**
@@ -13,43 +11,43 @@ trait IEnvironmentHelperOptions extends StObject {
     * This helps aligning the key lights of your scene with the background.
     * 0 by default.
     */
-  var backgroundYRotation: Double = js.native
+  var backgroundYRotation: Double
   
   /**
     * The value of the contrast to apply to the scene.
     * 1.6 by default if setupImageProcessing is true.
     */
-  var cameraContrast: Double = js.native
+  var cameraContrast: Double
   
   /**
     * The value of the exposure to apply to the scene.
     * 0.6 by default if setupImageProcessing is true.
     */
-  var cameraExposure: Double = js.native
+  var cameraExposure: Double
   
   /**
     * Specifies whether or not to create a ground.
     * True by default.
     */
-  var createGround: Boolean = js.native
+  var createGround: Boolean
   
   /**
     * Specifies whether or not to create a skybox.
     * True by default.
     */
-  var createSkybox: Boolean = js.native
+  var createSkybox: Boolean
   
   /**
     * Creates a mirror texture attach to the ground.
     * false by default.
     */
-  var enableGroundMirror: Boolean = js.native
+  var enableGroundMirror: Boolean
   
   /**
     * Enables the ground to receive shadows.
     * True by default.
     */
-  var enableGroundShadow: Boolean = js.native
+  var enableGroundShadow: Boolean
   
   /**
     * The texture used as your environment texture in the scene.
@@ -57,32 +55,32 @@ trait IEnvironmentHelperOptions extends StObject {
     *
     * Remarks: Can be either a texture or a url.
     */
-  var environmentTexture: String | BaseTexture = js.native
+  var environmentTexture: String | BaseTexture
   
   /**
     * The color mixed in the ground texture by default.
     * BabylonJS clearColor by default.
     */
-  var groundColor: Color3 = js.native
+  var groundColor: Color3
   
   /**
     * Specifies the ground mirror visibility amount.
     * 1 by default
     */
-  var groundMirrorAmount: Double = js.native
+  var groundMirrorAmount: Double
   
   /**
     * Specifies the ground mirror blur kernel size.
     * 64 by default.
     */
-  var groundMirrorBlurKernel: Double = js.native
+  var groundMirrorBlurKernel: Double
   
   /**
     * Specifies the ground mirror Falloff distance.
     * This can helps reducing the size of the reflection.
     * 0 by Default.
     */
-  var groundMirrorFallOffDistance: Double = js.native
+  var groundMirrorFallOffDistance: Double
   
   /**
     * Specifies the ground mirror reflectance weight.
@@ -90,37 +88,37 @@ trait IEnvironmentHelperOptions extends StObject {
     * of the mirror.
     * 1 by default.
     */
-  var groundMirrorFresnelWeight: Double = js.native
+  var groundMirrorFresnelWeight: Double
   
   /**
     * Specifies the ground mirror size ratio.
     * 0.3 by default as the default kernel is 64.
     */
-  var groundMirrorSizeRatio: Double = js.native
+  var groundMirrorSizeRatio: Double
   
   /**
     * Specifies the ground mirror texture type.
     * Unsigned Int by Default.
     */
-  var groundMirrorTextureType: Double = js.native
+  var groundMirrorTextureType: Double
   
   /**
     * Specifies the ground opacity.
     * 1 by default.
     */
-  var groundOpacity: Double = js.native
+  var groundOpacity: Double
   
   /**
     * Helps preventing the shadow to be fully black on the ground.
     * 0.5 by default.
     */
-  var groundShadowLevel: Double = js.native
+  var groundShadowLevel: Double
   
   /**
     * Specifies the ground size.
     * 15 by default.
     */
-  var groundSize: Double = js.native
+  var groundSize: Double
   
   /**
     * The texture used on the ground for the main color.
@@ -128,41 +126,41 @@ trait IEnvironmentHelperOptions extends StObject {
     *
     * Remarks: Can be either a texture or a url.
     */
-  var groundTexture: String | BaseTexture = js.native
+  var groundTexture: String | BaseTexture
   
   /**
     * Specifies a bias applied to the ground vertical position to prevent z-fighting with
     * the shown objects.
     */
-  var groundYBias: Double = js.native
+  var groundYBias: Double
   
   /**
     * Default position of the rootMesh if autoSize is not true.
     */
-  var rootPosition: Vector3 = js.native
+  var rootPosition: Vector3
   
   /**
     * Sets up the image processing in the scene.
     * true by default.
     */
-  var setupImageProcessing: Boolean = js.native
+  var setupImageProcessing: Boolean
   
   /**
     * Compute automatically the size of the elements to best fit with the scene.
     */
-  var sizeAuto: Boolean = js.native
+  var sizeAuto: Boolean
   
   /**
     * The color mixed in the skybox texture by default.
     * BabylonJS clearColor by default.
     */
-  var skyboxColor: Color3 = js.native
+  var skyboxColor: Color3
   
   /**
     * Specifies the skybox size.
     * 20 by default.
     */
-  var skyboxSize: Double = js.native
+  var skyboxSize: Double
   
   /**
     * The texture used on the skybox for the main color.
@@ -170,18 +168,17 @@ trait IEnvironmentHelperOptions extends StObject {
     *
     * Remarks: Can be either a texture or a url.
     */
-  var skyboxTexture: String | BaseTexture = js.native
+  var skyboxTexture: String | BaseTexture
   
   /**
     * Specifies whether or not tonemapping should be enabled in the scene.
     * true by default if setupImageProcessing is true.
     */
-  var toneMappingEnabled: Boolean = js.native
+  var toneMappingEnabled: Boolean
 }
 object IEnvironmentHelperOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backgroundYRotation: Double,
     cameraContrast: Double,
     cameraExposure: Double,
@@ -214,88 +211,60 @@ object IEnvironmentHelperOptions {
     __obj.asInstanceOf[IEnvironmentHelperOptions]
   }
   
-  @scala.inline
-  implicit class IEnvironmentHelperOptionsMutableBuilder[Self <: IEnvironmentHelperOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IEnvironmentHelperOptions](x: Self) {
     
-    @scala.inline
-    def setBackgroundYRotation(value: Double): Self = StObject.set(x, "backgroundYRotation", value.asInstanceOf[js.Any])
+    inline def setBackgroundYRotation(value: Double): Self = StObject.set(x, "backgroundYRotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCameraContrast(value: Double): Self = StObject.set(x, "cameraContrast", value.asInstanceOf[js.Any])
+    inline def setCameraContrast(value: Double): Self = StObject.set(x, "cameraContrast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCameraExposure(value: Double): Self = StObject.set(x, "cameraExposure", value.asInstanceOf[js.Any])
+    inline def setCameraExposure(value: Double): Self = StObject.set(x, "cameraExposure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateGround(value: Boolean): Self = StObject.set(x, "createGround", value.asInstanceOf[js.Any])
+    inline def setCreateGround(value: Boolean): Self = StObject.set(x, "createGround", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateSkybox(value: Boolean): Self = StObject.set(x, "createSkybox", value.asInstanceOf[js.Any])
+    inline def setCreateSkybox(value: Boolean): Self = StObject.set(x, "createSkybox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableGroundMirror(value: Boolean): Self = StObject.set(x, "enableGroundMirror", value.asInstanceOf[js.Any])
+    inline def setEnableGroundMirror(value: Boolean): Self = StObject.set(x, "enableGroundMirror", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableGroundShadow(value: Boolean): Self = StObject.set(x, "enableGroundShadow", value.asInstanceOf[js.Any])
+    inline def setEnableGroundShadow(value: Boolean): Self = StObject.set(x, "enableGroundShadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentTexture(value: String | BaseTexture): Self = StObject.set(x, "environmentTexture", value.asInstanceOf[js.Any])
+    inline def setEnvironmentTexture(value: String | BaseTexture): Self = StObject.set(x, "environmentTexture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroundColor(value: Color3): Self = StObject.set(x, "groundColor", value.asInstanceOf[js.Any])
+    inline def setGroundColor(value: Color3): Self = StObject.set(x, "groundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroundMirrorAmount(value: Double): Self = StObject.set(x, "groundMirrorAmount", value.asInstanceOf[js.Any])
+    inline def setGroundMirrorAmount(value: Double): Self = StObject.set(x, "groundMirrorAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroundMirrorBlurKernel(value: Double): Self = StObject.set(x, "groundMirrorBlurKernel", value.asInstanceOf[js.Any])
+    inline def setGroundMirrorBlurKernel(value: Double): Self = StObject.set(x, "groundMirrorBlurKernel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroundMirrorFallOffDistance(value: Double): Self = StObject.set(x, "groundMirrorFallOffDistance", value.asInstanceOf[js.Any])
+    inline def setGroundMirrorFallOffDistance(value: Double): Self = StObject.set(x, "groundMirrorFallOffDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroundMirrorFresnelWeight(value: Double): Self = StObject.set(x, "groundMirrorFresnelWeight", value.asInstanceOf[js.Any])
+    inline def setGroundMirrorFresnelWeight(value: Double): Self = StObject.set(x, "groundMirrorFresnelWeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroundMirrorSizeRatio(value: Double): Self = StObject.set(x, "groundMirrorSizeRatio", value.asInstanceOf[js.Any])
+    inline def setGroundMirrorSizeRatio(value: Double): Self = StObject.set(x, "groundMirrorSizeRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroundMirrorTextureType(value: Double): Self = StObject.set(x, "groundMirrorTextureType", value.asInstanceOf[js.Any])
+    inline def setGroundMirrorTextureType(value: Double): Self = StObject.set(x, "groundMirrorTextureType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroundOpacity(value: Double): Self = StObject.set(x, "groundOpacity", value.asInstanceOf[js.Any])
+    inline def setGroundOpacity(value: Double): Self = StObject.set(x, "groundOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroundShadowLevel(value: Double): Self = StObject.set(x, "groundShadowLevel", value.asInstanceOf[js.Any])
+    inline def setGroundShadowLevel(value: Double): Self = StObject.set(x, "groundShadowLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroundSize(value: Double): Self = StObject.set(x, "groundSize", value.asInstanceOf[js.Any])
+    inline def setGroundSize(value: Double): Self = StObject.set(x, "groundSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroundTexture(value: String | BaseTexture): Self = StObject.set(x, "groundTexture", value.asInstanceOf[js.Any])
+    inline def setGroundTexture(value: String | BaseTexture): Self = StObject.set(x, "groundTexture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroundYBias(value: Double): Self = StObject.set(x, "groundYBias", value.asInstanceOf[js.Any])
+    inline def setGroundYBias(value: Double): Self = StObject.set(x, "groundYBias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootPosition(value: Vector3): Self = StObject.set(x, "rootPosition", value.asInstanceOf[js.Any])
+    inline def setRootPosition(value: Vector3): Self = StObject.set(x, "rootPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetupImageProcessing(value: Boolean): Self = StObject.set(x, "setupImageProcessing", value.asInstanceOf[js.Any])
+    inline def setSetupImageProcessing(value: Boolean): Self = StObject.set(x, "setupImageProcessing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeAuto(value: Boolean): Self = StObject.set(x, "sizeAuto", value.asInstanceOf[js.Any])
+    inline def setSizeAuto(value: Boolean): Self = StObject.set(x, "sizeAuto", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkyboxColor(value: Color3): Self = StObject.set(x, "skyboxColor", value.asInstanceOf[js.Any])
+    inline def setSkyboxColor(value: Color3): Self = StObject.set(x, "skyboxColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkyboxSize(value: Double): Self = StObject.set(x, "skyboxSize", value.asInstanceOf[js.Any])
+    inline def setSkyboxSize(value: Double): Self = StObject.set(x, "skyboxSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkyboxTexture(value: String | BaseTexture): Self = StObject.set(x, "skyboxTexture", value.asInstanceOf[js.Any])
+    inline def setSkyboxTexture(value: String | BaseTexture): Self = StObject.set(x, "skyboxTexture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToneMappingEnabled(value: Boolean): Self = StObject.set(x, "toneMappingEnabled", value.asInstanceOf[js.Any])
+    inline def setToneMappingEnabled(value: Boolean): Self = StObject.set(x, "toneMappingEnabled", value.asInstanceOf[js.Any])
   }
 }

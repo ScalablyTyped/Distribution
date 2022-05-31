@@ -11,7 +11,6 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsoneditorMod {
@@ -24,45 +23,45 @@ object jsoneditorMod {
       */
     def this(options: IOptions) = this()
     
-    var _changeGuard: js.Any = js.native
+    /* private */ var _changeGuard: js.Any = js.native
     
-    var _dataDirty: js.Any = js.native
+    /* private */ var _dataDirty: js.Any = js.native
     
     /**
       * Handle blur events for the text area.
       */
-    var _evtBlur: js.Any = js.native
+    /* private */ var _evtBlur: js.Any = js.native
     
     /**
       * Handle click events for the buttons.
       */
-    var _evtClick: js.Any = js.native
+    /* private */ var _evtClick: js.Any = js.native
     
-    var _inputDirty: js.Any = js.native
+    /* private */ var _inputDirty: js.Any = js.native
     
     /**
       * Merge the user content.
       */
-    var _mergeContent: js.Any = js.native
+    /* private */ var _mergeContent: js.Any = js.native
     
     /**
       * Handle a change to the metadata of the source.
       */
-    var _onSourceChanged: js.Any = js.native
+    /* private */ var _onSourceChanged: js.Any = js.native
     
     /**
       * Handle change events.
       */
-    var _onValueChanged: js.Any = js.native
+    /* private */ var _onValueChanged: js.Any = js.native
     
-    var _originalValue: js.Any = js.native
+    /* private */ var _originalValue: js.Any = js.native
     
     /**
       * Set the value given the owner contents.
       */
-    var _setValue: js.Any = js.native
+    /* private */ var _setValue: js.Any = js.native
     
-    var _source: js.Any = js.native
+    /* private */ var _source: js.Any = js.native
     
     /**
       * The commit button used by the JSON editor.
@@ -122,27 +121,23 @@ object jsoneditorMod {
     /**
       * The options used to initialize a json editor.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The editor factory used by the editor.
         */
-      var editorFactory: Factory = js.native
+      var editorFactory: Factory
     }
     object IOptions {
       
-      @scala.inline
-      def apply(editorFactory: /* options */ typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions => IEditor): IOptions = {
+      inline def apply(editorFactory: /* options */ typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions => IEditor): IOptions = {
         val __obj = js.Dynamic.literal(editorFactory = js.Any.fromFunction1(editorFactory))
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setEditorFactory(value: /* options */ typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions => IEditor): Self = StObject.set(x, "editorFactory", js.Any.fromFunction1(value))
+        inline def setEditorFactory(value: /* options */ typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions => IEditor): Self = StObject.set(x, "editorFactory", js.Any.fromFunction1(value))
       }
     }
   }

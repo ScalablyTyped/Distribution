@@ -23,15 +23,8 @@ object mod {
   
   inline def addPlugins(plugins: js.Array[Plugin]): Block[Context] = ^.asInstanceOf[js.Dynamic].applyDynamic("addPlugins")(plugins.asInstanceOf[js.Any]).asInstanceOf[Block[Context]]
   
-  object babel {
-    
-    inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-    inline def apply(options: typings.webpackBlocksBabel.mod.babel): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    
-    @JSImport("webpack-blocks", "babel")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def babel(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("babel")().asInstanceOf[js.Any]
+  inline def babel(options: typings.webpackBlocksBabel.mod.babel): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("babel")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   inline def createConfig(configSetters: js.Array[Block[Context]]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createConfig")(configSetters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   inline def createConfig(configSetters: Block[Context]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createConfig")(configSetters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
@@ -53,19 +46,12 @@ object mod {
   
   inline def defineConstants(constants: ConstantOptions): Block[Context] = ^.asInstanceOf[js.Dynamic].applyDynamic("defineConstants")(constants.asInstanceOf[js.Any]).asInstanceOf[Block[Context]]
   
-  object devServer {
-    
-    inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-    inline def apply(options: Unit, entry: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], entry.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def apply(options: Unit, entry: js.Array[String]): js.Any = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], entry.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def apply(options: Options): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def apply(options: Options, entry: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], entry.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def apply(options: Options, entry: js.Array[String]): js.Any = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], entry.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    
-    @JSImport("webpack-blocks", "devServer")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def devServer(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("devServer")().asInstanceOf[js.Any]
+  inline def devServer(options: Unit, entry: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("devServer")(options.asInstanceOf[js.Any], entry.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def devServer(options: Unit, entry: js.Array[String]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("devServer")(options.asInstanceOf[js.Any], entry.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def devServer(options: Options): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("devServer")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def devServer(options: Options, entry: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("devServer")(options.asInstanceOf[js.Any], entry.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def devServer(options: Options, entry: js.Array[String]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("devServer")(options.asInstanceOf[js.Any], entry.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   inline def entryPoint(entry: String): Block[Context] = ^.asInstanceOf[js.Dynamic].applyDynamic("entryPoint")(entry.asInstanceOf[js.Any]).asInstanceOf[Block[Context]]
   inline def entryPoint(
@@ -94,29 +80,15 @@ object mod {
     performanceBudget: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Options.Performance */ js.Any
   ): Block[Context] = ^.asInstanceOf[js.Dynamic].applyDynamic("performance")(performanceBudget.asInstanceOf[js.Any]).asInstanceOf[Block[Context]]
   
-  object postcss {
-    
-    inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-    inline def apply(options: typings.webpackBlocksPostcss.mod.Options): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    
-    @JSImport("webpack-blocks", "postcss")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def postcss(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("postcss")().asInstanceOf[js.Any]
+  inline def postcss(options: typings.webpackBlocksPostcss.mod.Options): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("postcss")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   inline def resolve(
     config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Resolve */ js.Any
   ): Block[Context] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(config.asInstanceOf[js.Any]).asInstanceOf[Block[Context]]
   
-  object sass {
-    
-    inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-    inline def apply(options: typings.webpackBlocksSass.mod.Options): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    
-    @JSImport("webpack-blocks", "sass")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def sass(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sass")().asInstanceOf[js.Any]
+  inline def sass(options: typings.webpackBlocksSass.mod.Options): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sass")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   inline def setContext(contextPath: String): Block[Context] = ^.asInstanceOf[js.Dynamic].applyDynamic("setContext")(contextPath.asInstanceOf[js.Any]).asInstanceOf[Block[Context]]
   
@@ -137,25 +109,11 @@ object mod {
     devtool: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Options.Devtool */ js.Any
   ): Block[Context] = ^.asInstanceOf[js.Dynamic].applyDynamic("sourceMaps")(devtool.asInstanceOf[js.Any]).asInstanceOf[Block[Context]]
   
-  object typescript {
-    
-    inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-    inline def apply(options: typings.webpackBlocksTypescript.mod.Options): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    
-    @JSImport("webpack-blocks", "typescript")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def typescript(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("typescript")().asInstanceOf[js.Any]
+  inline def typescript(options: typings.webpackBlocksTypescript.mod.Options): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("typescript")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  object uglify {
-    
-    inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-    inline def apply(options: typings.webpackBlocksUglify.mod.Options): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    
-    @JSImport("webpack-blocks", "uglify")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def uglify(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("uglify")().asInstanceOf[js.Any]
+  inline def uglify(options: typings.webpackBlocksUglify.mod.Options): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("uglify")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   inline def url(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("url")().asInstanceOf[js.Any]
   inline def url(options: UrlOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("url")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]

@@ -2,42 +2,41 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CylinderParticleEmitter extends IParticleEmitterType {
+trait CylinderParticleEmitter
+  extends StObject
+     with IParticleEmitterType {
   
   /**
     * How much to randomize the particle direction [0-1].
     */
-  var directionRandomizer: Double = js.native
+  var directionRandomizer: Double
   
   /**
     * The height of the emission cylinder.
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * Parse properties from a JSON object
     * @param serializationObject defines the JSON object
     */
-  def parse(serializationObject: js.Any): Unit = js.native
+  def parse(serializationObject: js.Any): Unit
   
   /**
     * The radius of the emission cylinder.
     */
-  var radius: Double = js.native
+  var radius: Double
   
   /**
     * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
     */
-  var radiusRange: Double = js.native
+  var radiusRange: Double
 }
 object CylinderParticleEmitter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     applyToShader: Effect => Unit,
     directionRandomizer: Double,
     getClassName: () => String,
@@ -54,22 +53,16 @@ object CylinderParticleEmitter {
     __obj.asInstanceOf[CylinderParticleEmitter]
   }
   
-  @scala.inline
-  implicit class CylinderParticleEmitterMutableBuilder[Self <: CylinderParticleEmitter] (val x: Self) extends AnyVal {
+  extension [Self <: CylinderParticleEmitter](x: Self) {
     
-    @scala.inline
-    def setDirectionRandomizer(value: Double): Self = StObject.set(x, "directionRandomizer", value.asInstanceOf[js.Any])
+    inline def setDirectionRandomizer(value: Double): Self = StObject.set(x, "directionRandomizer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParse(value: js.Any => Unit): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+    inline def setParse(value: js.Any => Unit): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusRange(value: Double): Self = StObject.set(x, "radiusRange", value.asInstanceOf[js.Any])
+    inline def setRadiusRange(value: Double): Self = StObject.set(x, "radiusRange", value.asInstanceOf[js.Any])
   }
 }

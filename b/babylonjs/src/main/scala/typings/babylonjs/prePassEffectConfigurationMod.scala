@@ -3,84 +3,70 @@ package typings.babylonjs
 import typings.babylonjs.postProcessMod.PostProcess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object prePassEffectConfigurationMod {
   
-  @js.native
   trait PrePassEffectConfiguration extends StObject {
     
     /**
       * Creates the associated post process
       */
-    var createPostProcess: js.UndefOr[js.Function0[PostProcess]] = js.native
+    var createPostProcess: js.UndefOr[js.Function0[PostProcess]] = js.undefined
     
     /**
       * Disposes the effect configuration
       */
-    var dispose: js.UndefOr[js.Function0[Unit]] = js.native
+    var dispose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Is the effect enabled
       */
-    var enabled: Boolean = js.native
+    var enabled: Boolean
     
     /**
       * Name of the effect
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Post process to attach for this effect
       */
-    var postProcess: js.UndefOr[PostProcess] = js.native
+    var postProcess: js.UndefOr[PostProcess] = js.undefined
     
     /**
       * Textures required in the MRT
       */
-    var texturesRequired: js.Array[Double] = js.native
+    var texturesRequired: js.Array[Double]
   }
   object PrePassEffectConfiguration {
     
-    @scala.inline
-    def apply(enabled: Boolean, name: String, texturesRequired: js.Array[Double]): PrePassEffectConfiguration = {
+    inline def apply(enabled: Boolean, name: String, texturesRequired: js.Array[Double]): PrePassEffectConfiguration = {
       val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], texturesRequired = texturesRequired.asInstanceOf[js.Any])
       __obj.asInstanceOf[PrePassEffectConfiguration]
     }
     
-    @scala.inline
-    implicit class PrePassEffectConfigurationMutableBuilder[Self <: PrePassEffectConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: PrePassEffectConfiguration](x: Self) {
       
-      @scala.inline
-      def setCreatePostProcess(value: () => PostProcess): Self = StObject.set(x, "createPostProcess", js.Any.fromFunction0(value))
+      inline def setCreatePostProcess(value: () => PostProcess): Self = StObject.set(x, "createPostProcess", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCreatePostProcessUndefined: Self = StObject.set(x, "createPostProcess", js.undefined)
+      inline def setCreatePostProcessUndefined: Self = StObject.set(x, "createPostProcess", js.undefined)
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisposeUndefined: Self = StObject.set(x, "dispose", js.undefined)
+      inline def setDisposeUndefined: Self = StObject.set(x, "dispose", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostProcess(value: PostProcess): Self = StObject.set(x, "postProcess", value.asInstanceOf[js.Any])
+      inline def setPostProcess(value: PostProcess): Self = StObject.set(x, "postProcess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostProcessUndefined: Self = StObject.set(x, "postProcess", js.undefined)
+      inline def setPostProcessUndefined: Self = StObject.set(x, "postProcess", js.undefined)
       
-      @scala.inline
-      def setTexturesRequired(value: js.Array[Double]): Self = StObject.set(x, "texturesRequired", value.asInstanceOf[js.Any])
+      inline def setTexturesRequired(value: js.Array[Double]): Self = StObject.set(x, "texturesRequired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTexturesRequiredVarargs(value: Double*): Self = StObject.set(x, "texturesRequired", js.Array(value :_*))
+      inline def setTexturesRequiredVarargs(value: Double*): Self = StObject.set(x, "texturesRequired", js.Array(value :_*))
     }
   }
 }

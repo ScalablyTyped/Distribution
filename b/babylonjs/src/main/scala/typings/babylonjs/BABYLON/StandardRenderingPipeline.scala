@@ -2,12 +2,12 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StandardRenderingPipeline
-  extends PostProcessRenderPipeline
+  extends StObject
+     with PostProcessRenderPipeline
      with IDisposable
      with IAnimatable {
   
@@ -53,80 +53,80 @@ trait StandardRenderingPipeline
   def VLSEnabled: Boolean = js.native
   def VLSEnabled_=(enabled: Boolean): Unit = js.native
   
-  var _basePostProcess: js.Any = js.native
+  /* private */ var _basePostProcess: js.Any = js.native
   
-  var _bloomEnabled: js.Any = js.native
+  /* private */ var _bloomEnabled: js.Any = js.native
   
-  var _buildPipeline: js.Any = js.native
+  /* private */ var _buildPipeline: js.Any = js.native
   
-  var _camerasToBeAttached: js.Any = js.native
+  /* private */ var _camerasToBeAttached: js.Any = js.native
   
-  var _createBlurPostProcesses: js.Any = js.native
+  /* private */ var _createBlurPostProcesses: js.Any = js.native
   
-  var _createBrightPassPostProcess: js.Any = js.native
+  /* private */ var _createBrightPassPostProcess: js.Any = js.native
   
-  var _createDepthOfFieldPostProcess: js.Any = js.native
+  /* private */ var _createDepthOfFieldPostProcess: js.Any = js.native
   
-  var _createDownSampleX4PostProcess: js.Any = js.native
+  /* private */ var _createDownSampleX4PostProcess: js.Any = js.native
   
-  var _createHdrPostProcess: js.Any = js.native
+  /* private */ var _createHdrPostProcess: js.Any = js.native
   
-  var _createLensFlarePostProcess: js.Any = js.native
+  /* private */ var _createLensFlarePostProcess: js.Any = js.native
   
-  var _createLuminancePostProcesses: js.Any = js.native
+  /* private */ var _createLuminancePostProcesses: js.Any = js.native
   
-  var _createMotionBlurPostProcess: js.Any = js.native
+  /* private */ var _createMotionBlurPostProcess: js.Any = js.native
   
-  var _createTextureAdderPostProcess: js.Any = js.native
+  /* private */ var _createTextureAdderPostProcess: js.Any = js.native
   
-  var _createVolumetricLightPostProcess: js.Any = js.native
+  /* private */ var _createVolumetricLightPostProcess: js.Any = js.native
   
-  var _currentDepthOfFieldSource: js.Any = js.native
+  /* private */ var _currentDepthOfFieldSource: js.Any = js.native
   
-  var _currentExposure: js.Any = js.native
+  /* private */ var _currentExposure: js.Any = js.native
   
-  var _depthOfFieldEnabled: js.Any = js.native
+  /* private */ var _depthOfFieldEnabled: js.Any = js.native
   
-  var _disposePostProcesses: js.Any = js.native
+  /* private */ var _disposePostProcesses: js.Any = js.native
   
-  var _fixedExposure: js.Any = js.native
+  /* private */ var _fixedExposure: js.Any = js.native
   
-  var _floatTextureType: js.Any = js.native
+  /* private */ var _floatTextureType: js.Any = js.native
   
-  var _fxaaEnabled: js.Any = js.native
+  /* private */ var _fxaaEnabled: js.Any = js.native
   
-  var _getDepthTexture: js.Any = js.native
+  /* private */ var _getDepthTexture: js.Any = js.native
   
-  var _hdrAutoExposure: js.Any = js.native
+  /* private */ var _hdrAutoExposure: js.Any = js.native
   
-  var _hdrCurrentLuminance: js.Any = js.native
+  /* private */ var _hdrCurrentLuminance: js.Any = js.native
   
-  var _hdrEnabled: js.Any = js.native
+  /* private */ var _hdrEnabled: js.Any = js.native
   
-  var _isObjectBasedMotionBlur: js.Any = js.native
+  /* private */ var _isObjectBasedMotionBlur: js.Any = js.native
   
-  var _lensFlareEnabled: js.Any = js.native
+  /* private */ var _lensFlareEnabled: js.Any = js.native
   
-  var _motionBlurEnabled: js.Any = js.native
+  /* private */ var _motionBlurEnabled: js.Any = js.native
   
-  var _motionBlurSamples: js.Any = js.native
+  /* private */ var _motionBlurSamples: js.Any = js.native
   
-  var _motionStrength: js.Any = js.native
+  /* private */ var _motionStrength: js.Any = js.native
   
-  var _ratio: js.Any = js.native
+  /* private */ var _ratio: js.Any = js.native
   
-  var _samples: js.Any = js.native
+  /* private */ var _samples: js.Any = js.native
   
   /**
     * Private members
     */
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
-  var _screenSpaceReflectionsEnabled: js.Any = js.native
+  /* private */ var _screenSpaceReflectionsEnabled: js.Any = js.native
   
-  var _vlsEnabled: js.Any = js.native
+  /* private */ var _vlsEnabled: js.Any = js.native
   
-  var _volumetricLightStepsCount: js.Any = js.native
+  /* private */ var _volumetricLightStepsCount: js.Any = js.native
   
   /**
     * List of animations for the pipeline (IAnimatable implementation)

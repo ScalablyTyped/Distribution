@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.BabylonFileLoaderConfiguration")
 @js.native
 class BabylonFileLoaderConfiguration ()
-  extends typings.babylonjs.BABYLON.BabylonFileLoaderConfiguration
+  extends StObject
+     with typings.babylonjs.BABYLON.BabylonFileLoaderConfiguration
 /* static members */
 object BabylonFileLoaderConfiguration {
   
@@ -24,6 +24,5 @@ object BabylonFileLoaderConfiguration {
   @JSGlobal("BABYLON.BabylonFileLoaderConfiguration.LoaderInjectedPhysicsEngine")
   @js.native
   def LoaderInjectedPhysicsEngine: js.Any = js.native
-  @scala.inline
-  def LoaderInjectedPhysicsEngine_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LoaderInjectedPhysicsEngine")(x.asInstanceOf[js.Any])
+  inline def LoaderInjectedPhysicsEngine_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LoaderInjectedPhysicsEngine")(x.asInstanceOf[js.Any])
 }

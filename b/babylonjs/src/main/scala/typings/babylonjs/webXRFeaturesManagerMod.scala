@@ -5,7 +5,6 @@ import typings.babylonjs.sceneMod.IDisposable
 import typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webXRFeaturesManagerMod {
@@ -82,7 +81,9 @@ object webXRFeaturesManagerMod {
   
   @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeaturesManager")
   @js.native
-  class WebXRFeaturesManager protected () extends IDisposable {
+  class WebXRFeaturesManager protected ()
+    extends StObject
+       with IDisposable {
     /**
       * constructs a new features manages.
       *
@@ -90,9 +91,9 @@ object webXRFeaturesManagerMod {
       */
     def this(_xrSessionManager: WebXRSessionManager) = this()
     
-    var _features: js.Any = js.native
+    /* private */ var _features: js.Any = js.native
     
-    var _xrSessionManager: js.Any = js.native
+    /* private */ var _xrSessionManager: js.Any = js.native
     
     /**
       * Attach a feature to the current session. Mainly used when session started to start the feature effect.
@@ -117,6 +118,12 @@ object webXRFeaturesManagerMod {
     def disableFeature(featureName: NameString): Boolean = js.native
     
     /**
+      * Releases all held resources
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
       * Enable a feature using its name and a version. This will enable it in the scene, and will be responsible to attach it when the session starts.
       * If used twice, the old version will be disposed and a new one will be constructed. This way you can re-enable with different configuration.
       *
@@ -128,76 +135,8 @@ object webXRFeaturesManagerMod {
       * @returns a new constructed feature or throws an error if feature not found.
       */
     def enableFeature(featureName: String): IWebXRFeature = js.native
-    def enableFeature(
-      featureName: String,
-      version: js.UndefOr[scala.Nothing],
-      moduleOptions: js.UndefOr[scala.Nothing],
-      attachIfPossible: js.UndefOr[scala.Nothing],
-      required: Boolean
-    ): IWebXRFeature = js.native
-    def enableFeature(
-      featureName: String,
-      version: js.UndefOr[scala.Nothing],
-      moduleOptions: js.UndefOr[scala.Nothing],
-      attachIfPossible: Boolean
-    ): IWebXRFeature = js.native
-    def enableFeature(
-      featureName: String,
-      version: js.UndefOr[scala.Nothing],
-      moduleOptions: js.UndefOr[scala.Nothing],
-      attachIfPossible: Boolean,
-      required: Boolean
-    ): IWebXRFeature = js.native
-    def enableFeature(featureName: String, version: js.UndefOr[scala.Nothing], moduleOptions: js.Any): IWebXRFeature = js.native
-    def enableFeature(
-      featureName: String,
-      version: js.UndefOr[scala.Nothing],
-      moduleOptions: js.Any,
-      attachIfPossible: js.UndefOr[scala.Nothing],
-      required: Boolean
-    ): IWebXRFeature = js.native
-    def enableFeature(
-      featureName: String,
-      version: js.UndefOr[scala.Nothing],
-      moduleOptions: js.Any,
-      attachIfPossible: Boolean
-    ): IWebXRFeature = js.native
-    def enableFeature(
-      featureName: String,
-      version: js.UndefOr[scala.Nothing],
-      moduleOptions: js.Any,
-      attachIfPossible: Boolean,
-      required: Boolean
-    ): IWebXRFeature = js.native
     def enableFeature(featureName: String, version: String): IWebXRFeature = js.native
-    def enableFeature(
-      featureName: String,
-      version: String,
-      moduleOptions: js.UndefOr[scala.Nothing],
-      attachIfPossible: js.UndefOr[scala.Nothing],
-      required: Boolean
-    ): IWebXRFeature = js.native
-    def enableFeature(
-      featureName: String,
-      version: String,
-      moduleOptions: js.UndefOr[scala.Nothing],
-      attachIfPossible: Boolean
-    ): IWebXRFeature = js.native
-    def enableFeature(
-      featureName: String,
-      version: String,
-      moduleOptions: js.UndefOr[scala.Nothing],
-      attachIfPossible: Boolean,
-      required: Boolean
-    ): IWebXRFeature = js.native
     def enableFeature(featureName: String, version: String, moduleOptions: js.Any): IWebXRFeature = js.native
-    def enableFeature(
-      featureName: String,
-      version: String,
-      moduleOptions: js.Any,
-      attachIfPossible: js.UndefOr[scala.Nothing],
-      required: Boolean
-    ): IWebXRFeature = js.native
     def enableFeature(featureName: String, version: String, moduleOptions: js.Any, attachIfPossible: Boolean): IWebXRFeature = js.native
     def enableFeature(
       featureName: String,
@@ -206,35 +145,30 @@ object webXRFeaturesManagerMod {
       attachIfPossible: Boolean,
       required: Boolean
     ): IWebXRFeature = js.native
-    def enableFeature(featureName: String, version: Double): IWebXRFeature = js.native
     def enableFeature(
       featureName: String,
-      version: Double,
-      moduleOptions: js.UndefOr[scala.Nothing],
-      attachIfPossible: js.UndefOr[scala.Nothing],
+      version: String,
+      moduleOptions: js.Any,
+      attachIfPossible: Unit,
       required: Boolean
     ): IWebXRFeature = js.native
+    def enableFeature(featureName: String, version: String, moduleOptions: Unit, attachIfPossible: Boolean): IWebXRFeature = js.native
     def enableFeature(
       featureName: String,
-      version: Double,
-      moduleOptions: js.UndefOr[scala.Nothing],
-      attachIfPossible: Boolean
-    ): IWebXRFeature = js.native
-    def enableFeature(
-      featureName: String,
-      version: Double,
-      moduleOptions: js.UndefOr[scala.Nothing],
+      version: String,
+      moduleOptions: Unit,
       attachIfPossible: Boolean,
       required: Boolean
     ): IWebXRFeature = js.native
-    def enableFeature(featureName: String, version: Double, moduleOptions: js.Any): IWebXRFeature = js.native
     def enableFeature(
       featureName: String,
-      version: Double,
-      moduleOptions: js.Any,
-      attachIfPossible: js.UndefOr[scala.Nothing],
+      version: String,
+      moduleOptions: Unit,
+      attachIfPossible: Unit,
       required: Boolean
     ): IWebXRFeature = js.native
+    def enableFeature(featureName: String, version: Double): IWebXRFeature = js.native
+    def enableFeature(featureName: String, version: Double, moduleOptions: js.Any): IWebXRFeature = js.native
     def enableFeature(featureName: String, version: Double, moduleOptions: js.Any, attachIfPossible: Boolean): IWebXRFeature = js.native
     def enableFeature(
       featureName: String,
@@ -243,77 +177,56 @@ object webXRFeaturesManagerMod {
       attachIfPossible: Boolean,
       required: Boolean
     ): IWebXRFeature = js.native
+    def enableFeature(
+      featureName: String,
+      version: Double,
+      moduleOptions: js.Any,
+      attachIfPossible: Unit,
+      required: Boolean
+    ): IWebXRFeature = js.native
+    def enableFeature(featureName: String, version: Double, moduleOptions: Unit, attachIfPossible: Boolean): IWebXRFeature = js.native
+    def enableFeature(
+      featureName: String,
+      version: Double,
+      moduleOptions: Unit,
+      attachIfPossible: Boolean,
+      required: Boolean
+    ): IWebXRFeature = js.native
+    def enableFeature(
+      featureName: String,
+      version: Double,
+      moduleOptions: Unit,
+      attachIfPossible: Unit,
+      required: Boolean
+    ): IWebXRFeature = js.native
+    def enableFeature(featureName: String, version: Unit, moduleOptions: js.Any): IWebXRFeature = js.native
+    def enableFeature(featureName: String, version: Unit, moduleOptions: js.Any, attachIfPossible: Boolean): IWebXRFeature = js.native
+    def enableFeature(
+      featureName: String,
+      version: Unit,
+      moduleOptions: js.Any,
+      attachIfPossible: Boolean,
+      required: Boolean
+    ): IWebXRFeature = js.native
+    def enableFeature(
+      featureName: String,
+      version: Unit,
+      moduleOptions: js.Any,
+      attachIfPossible: Unit,
+      required: Boolean
+    ): IWebXRFeature = js.native
+    def enableFeature(featureName: String, version: Unit, moduleOptions: Unit, attachIfPossible: Boolean): IWebXRFeature = js.native
+    def enableFeature(
+      featureName: String,
+      version: Unit,
+      moduleOptions: Unit,
+      attachIfPossible: Boolean,
+      required: Boolean
+    ): IWebXRFeature = js.native
+    def enableFeature(featureName: String, version: Unit, moduleOptions: Unit, attachIfPossible: Unit, required: Boolean): IWebXRFeature = js.native
     def enableFeature(featureName: NameString): IWebXRFeature = js.native
-    def enableFeature(
-      featureName: NameString,
-      version: js.UndefOr[scala.Nothing],
-      moduleOptions: js.UndefOr[scala.Nothing],
-      attachIfPossible: js.UndefOr[scala.Nothing],
-      required: Boolean
-    ): IWebXRFeature = js.native
-    def enableFeature(
-      featureName: NameString,
-      version: js.UndefOr[scala.Nothing],
-      moduleOptions: js.UndefOr[scala.Nothing],
-      attachIfPossible: Boolean
-    ): IWebXRFeature = js.native
-    def enableFeature(
-      featureName: NameString,
-      version: js.UndefOr[scala.Nothing],
-      moduleOptions: js.UndefOr[scala.Nothing],
-      attachIfPossible: Boolean,
-      required: Boolean
-    ): IWebXRFeature = js.native
-    def enableFeature(featureName: NameString, version: js.UndefOr[scala.Nothing], moduleOptions: js.Any): IWebXRFeature = js.native
-    def enableFeature(
-      featureName: NameString,
-      version: js.UndefOr[scala.Nothing],
-      moduleOptions: js.Any,
-      attachIfPossible: js.UndefOr[scala.Nothing],
-      required: Boolean
-    ): IWebXRFeature = js.native
-    def enableFeature(
-      featureName: NameString,
-      version: js.UndefOr[scala.Nothing],
-      moduleOptions: js.Any,
-      attachIfPossible: Boolean
-    ): IWebXRFeature = js.native
-    def enableFeature(
-      featureName: NameString,
-      version: js.UndefOr[scala.Nothing],
-      moduleOptions: js.Any,
-      attachIfPossible: Boolean,
-      required: Boolean
-    ): IWebXRFeature = js.native
     def enableFeature(featureName: NameString, version: String): IWebXRFeature = js.native
-    def enableFeature(
-      featureName: NameString,
-      version: String,
-      moduleOptions: js.UndefOr[scala.Nothing],
-      attachIfPossible: js.UndefOr[scala.Nothing],
-      required: Boolean
-    ): IWebXRFeature = js.native
-    def enableFeature(
-      featureName: NameString,
-      version: String,
-      moduleOptions: js.UndefOr[scala.Nothing],
-      attachIfPossible: Boolean
-    ): IWebXRFeature = js.native
-    def enableFeature(
-      featureName: NameString,
-      version: String,
-      moduleOptions: js.UndefOr[scala.Nothing],
-      attachIfPossible: Boolean,
-      required: Boolean
-    ): IWebXRFeature = js.native
     def enableFeature(featureName: NameString, version: String, moduleOptions: js.Any): IWebXRFeature = js.native
-    def enableFeature(
-      featureName: NameString,
-      version: String,
-      moduleOptions: js.Any,
-      attachIfPossible: js.UndefOr[scala.Nothing],
-      required: Boolean
-    ): IWebXRFeature = js.native
     def enableFeature(featureName: NameString, version: String, moduleOptions: js.Any, attachIfPossible: Boolean): IWebXRFeature = js.native
     def enableFeature(
       featureName: NameString,
@@ -322,41 +235,89 @@ object webXRFeaturesManagerMod {
       attachIfPossible: Boolean,
       required: Boolean
     ): IWebXRFeature = js.native
-    def enableFeature(featureName: NameString, version: Double): IWebXRFeature = js.native
     def enableFeature(
       featureName: NameString,
-      version: Double,
-      moduleOptions: js.UndefOr[scala.Nothing],
-      attachIfPossible: js.UndefOr[scala.Nothing],
+      version: String,
+      moduleOptions: js.Any,
+      attachIfPossible: Unit,
       required: Boolean
     ): IWebXRFeature = js.native
+    def enableFeature(featureName: NameString, version: String, moduleOptions: Unit, attachIfPossible: Boolean): IWebXRFeature = js.native
     def enableFeature(
       featureName: NameString,
-      version: Double,
-      moduleOptions: js.UndefOr[scala.Nothing],
-      attachIfPossible: Boolean
-    ): IWebXRFeature = js.native
-    def enableFeature(
-      featureName: NameString,
-      version: Double,
-      moduleOptions: js.UndefOr[scala.Nothing],
+      version: String,
+      moduleOptions: Unit,
       attachIfPossible: Boolean,
       required: Boolean
     ): IWebXRFeature = js.native
-    def enableFeature(featureName: NameString, version: Double, moduleOptions: js.Any): IWebXRFeature = js.native
     def enableFeature(
       featureName: NameString,
-      version: Double,
-      moduleOptions: js.Any,
-      attachIfPossible: js.UndefOr[scala.Nothing],
+      version: String,
+      moduleOptions: Unit,
+      attachIfPossible: Unit,
       required: Boolean
     ): IWebXRFeature = js.native
+    def enableFeature(featureName: NameString, version: Double): IWebXRFeature = js.native
+    def enableFeature(featureName: NameString, version: Double, moduleOptions: js.Any): IWebXRFeature = js.native
     def enableFeature(featureName: NameString, version: Double, moduleOptions: js.Any, attachIfPossible: Boolean): IWebXRFeature = js.native
     def enableFeature(
       featureName: NameString,
       version: Double,
       moduleOptions: js.Any,
       attachIfPossible: Boolean,
+      required: Boolean
+    ): IWebXRFeature = js.native
+    def enableFeature(
+      featureName: NameString,
+      version: Double,
+      moduleOptions: js.Any,
+      attachIfPossible: Unit,
+      required: Boolean
+    ): IWebXRFeature = js.native
+    def enableFeature(featureName: NameString, version: Double, moduleOptions: Unit, attachIfPossible: Boolean): IWebXRFeature = js.native
+    def enableFeature(
+      featureName: NameString,
+      version: Double,
+      moduleOptions: Unit,
+      attachIfPossible: Boolean,
+      required: Boolean
+    ): IWebXRFeature = js.native
+    def enableFeature(
+      featureName: NameString,
+      version: Double,
+      moduleOptions: Unit,
+      attachIfPossible: Unit,
+      required: Boolean
+    ): IWebXRFeature = js.native
+    def enableFeature(featureName: NameString, version: Unit, moduleOptions: js.Any): IWebXRFeature = js.native
+    def enableFeature(featureName: NameString, version: Unit, moduleOptions: js.Any, attachIfPossible: Boolean): IWebXRFeature = js.native
+    def enableFeature(
+      featureName: NameString,
+      version: Unit,
+      moduleOptions: js.Any,
+      attachIfPossible: Boolean,
+      required: Boolean
+    ): IWebXRFeature = js.native
+    def enableFeature(
+      featureName: NameString,
+      version: Unit,
+      moduleOptions: js.Any,
+      attachIfPossible: Unit,
+      required: Boolean
+    ): IWebXRFeature = js.native
+    def enableFeature(featureName: NameString, version: Unit, moduleOptions: Unit, attachIfPossible: Boolean): IWebXRFeature = js.native
+    def enableFeature(
+      featureName: NameString,
+      version: Unit,
+      moduleOptions: Unit,
+      attachIfPossible: Boolean,
+      required: Boolean
+    ): IWebXRFeature = js.native
+    def enableFeature(
+      featureName: NameString,
+      version: Unit,
+      moduleOptions: Unit,
+      attachIfPossible: Unit,
       required: Boolean
     ): IWebXRFeature = js.native
     
@@ -386,6 +347,10 @@ object webXRFeaturesManagerMod {
   /* static members */
   object WebXRFeaturesManager {
     
+    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeaturesManager")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Used to register a module. After calling this function a developer can use this feature in the scene.
       * Mainly used internally.
@@ -395,40 +360,16 @@ object webXRFeaturesManagerMod {
       * @param version the (babylon) version of the module
       * @param stable is that a stable version of this module
       */
-    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeaturesManager.AddWebXRFeature")
-    @js.native
-    def AddWebXRFeature(featureName: String, constructorFunction: WebXRFeatureConstructor): Unit = js.native
-    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeaturesManager.AddWebXRFeature")
-    @js.native
-    def AddWebXRFeature(
-      featureName: String,
-      constructorFunction: WebXRFeatureConstructor,
-      version: js.UndefOr[scala.Nothing],
-      stable: Boolean
-    ): Unit = js.native
-    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeaturesManager.AddWebXRFeature")
-    @js.native
-    def AddWebXRFeature(featureName: String, constructorFunction: WebXRFeatureConstructor, version: Double): Unit = js.native
-    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeaturesManager.AddWebXRFeature")
-    @js.native
-    def AddWebXRFeature(
+    inline def AddWebXRFeature(featureName: String, constructorFunction: WebXRFeatureConstructor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("AddWebXRFeature")(featureName.asInstanceOf[js.Any], constructorFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def AddWebXRFeature(featureName: String, constructorFunction: WebXRFeatureConstructor, version: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("AddWebXRFeature")(featureName.asInstanceOf[js.Any], constructorFunction.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def AddWebXRFeature(
       featureName: String,
       constructorFunction: WebXRFeatureConstructor,
       version: Double,
       stable: Boolean
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("AddWebXRFeature")(featureName.asInstanceOf[js.Any], constructorFunction.asInstanceOf[js.Any], version.asInstanceOf[js.Any], stable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def AddWebXRFeature(featureName: String, constructorFunction: WebXRFeatureConstructor, version: Unit, stable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("AddWebXRFeature")(featureName.asInstanceOf[js.Any], constructorFunction.asInstanceOf[js.Any], version.asInstanceOf[js.Any], stable.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeaturesManager.ConstructFeature")
-    @js.native
-    def ConstructFeature(featureName: String, version: js.UndefOr[scala.Nothing], xrSessionManager: WebXRSessionManager): js.Function0[IWebXRFeature] = js.native
-    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeaturesManager.ConstructFeature")
-    @js.native
-    def ConstructFeature(
-      featureName: String,
-      version: js.UndefOr[scala.Nothing],
-      xrSessionManager: WebXRSessionManager,
-      options: js.Any
-    ): js.Function0[IWebXRFeature] = js.native
     /**
       * Returns a constructor of a specific feature.
       *
@@ -438,48 +379,38 @@ object webXRFeaturesManagerMod {
       * @param options optional options provided to the module.
       * @returns a function that, when called, will return a new instance of this feature
       */
-    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeaturesManager.ConstructFeature")
-    @js.native
-    def ConstructFeature(featureName: String, version: Double, xrSessionManager: WebXRSessionManager): js.Function0[IWebXRFeature] = js.native
-    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeaturesManager.ConstructFeature")
-    @js.native
-    def ConstructFeature(featureName: String, version: Double, xrSessionManager: WebXRSessionManager, options: js.Any): js.Function0[IWebXRFeature] = js.native
+    inline def ConstructFeature(featureName: String, version: Double, xrSessionManager: WebXRSessionManager): js.Function0[IWebXRFeature] = (^.asInstanceOf[js.Dynamic].applyDynamic("ConstructFeature")(featureName.asInstanceOf[js.Any], version.asInstanceOf[js.Any], xrSessionManager.asInstanceOf[js.Any])).asInstanceOf[js.Function0[IWebXRFeature]]
+    inline def ConstructFeature(featureName: String, version: Double, xrSessionManager: WebXRSessionManager, options: js.Any): js.Function0[IWebXRFeature] = (^.asInstanceOf[js.Dynamic].applyDynamic("ConstructFeature")(featureName.asInstanceOf[js.Any], version.asInstanceOf[js.Any], xrSessionManager.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[IWebXRFeature]]
+    inline def ConstructFeature(featureName: String, version: Unit, xrSessionManager: WebXRSessionManager): js.Function0[IWebXRFeature] = (^.asInstanceOf[js.Dynamic].applyDynamic("ConstructFeature")(featureName.asInstanceOf[js.Any], version.asInstanceOf[js.Any], xrSessionManager.asInstanceOf[js.Any])).asInstanceOf[js.Function0[IWebXRFeature]]
+    inline def ConstructFeature(featureName: String, version: Unit, xrSessionManager: WebXRSessionManager, options: js.Any): js.Function0[IWebXRFeature] = (^.asInstanceOf[js.Dynamic].applyDynamic("ConstructFeature")(featureName.asInstanceOf[js.Any], version.asInstanceOf[js.Any], xrSessionManager.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[IWebXRFeature]]
     
     /**
       * Can be used to return the list of features currently registered
       *
       * @returns an Array of available features
       */
-    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeaturesManager.GetAvailableFeatures")
-    @js.native
-    def GetAvailableFeatures(): js.Array[String] = js.native
+    inline def GetAvailableFeatures(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAvailableFeatures")().asInstanceOf[js.Array[String]]
     
     /**
       * Gets the versions available for a specific feature
       * @param featureName the name of the feature
       * @returns an array with the available versions
       */
-    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeaturesManager.GetAvailableVersions")
-    @js.native
-    def GetAvailableVersions(featureName: String): js.Array[String] = js.native
+    inline def GetAvailableVersions(featureName: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAvailableVersions")(featureName.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
     /**
       * Return the latest unstable version of this feature
       * @param featureName the name of the feature to search
       * @returns the version number. if not found will return -1
       */
-    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeaturesManager.GetLatestVersionOfFeature")
-    @js.native
-    def GetLatestVersionOfFeature(featureName: String): Double = js.native
+    inline def GetLatestVersionOfFeature(featureName: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetLatestVersionOfFeature")(featureName.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Return the latest stable version of this feature
       * @param featureName the name of the feature to search
       * @returns the version number. if not found will return -1
       */
-    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeaturesManager.GetStableVersionOfFeature")
-    @js.native
-    def GetStableVersionOfFeature(featureName: String): Double = js.native
+    inline def GetStableVersionOfFeature(featureName: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetStableVersionOfFeature")(featureName.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeaturesManager._AvailableFeatures")
     @js.native
@@ -487,7 +418,9 @@ object webXRFeaturesManagerMod {
   }
   
   @js.native
-  trait IWebXRFeature extends IDisposable {
+  trait IWebXRFeature
+    extends StObject
+       with IDisposable {
     
     /**
       * Attach the feature to the session

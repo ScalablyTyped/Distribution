@@ -4,7 +4,6 @@ import typings.babylonjs.anon.DragAxis
 import typings.babylonjs.transformNodeMod.TransformNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object meshesIndexMod {
@@ -56,14 +55,12 @@ object meshesIndexMod {
     @JSImport("babylonjs/Behaviors/Meshes/index", "PointerDragBehavior._AnyMouseID")
     @js.native
     def _AnyMouseID: js.Any = js.native
-    @scala.inline
-    def _AnyMouseID_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_AnyMouseID")(x.asInstanceOf[js.Any])
+    inline def _AnyMouseID_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_AnyMouseID")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Behaviors/Meshes/index", "PointerDragBehavior._planeScene")
     @js.native
     def _planeScene: js.Any = js.native
-    @scala.inline
-    def _planeScene_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_planeScene")(x.asInstanceOf[js.Any])
+    inline def _planeScene_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_planeScene")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Behaviors/Meshes/index", "SixDofDragBehavior")
@@ -83,7 +80,6 @@ object meshesIndexMod {
     @JSImport("babylonjs/Behaviors/Meshes/index", "SixDofDragBehavior._virtualScene")
     @js.native
     def _virtualScene: js.Any = js.native
-    @scala.inline
-    def _virtualScene_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_virtualScene")(x.asInstanceOf[js.Any])
+    inline def _virtualScene_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_virtualScene")(x.asInstanceOf[js.Any])
   }
 }

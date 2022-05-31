@@ -1,0 +1,33 @@
+package typings.apolloProtobufjs.global.protobuf
+
+import typings.apolloProtobufjs.mod.Buffer
+import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSGlobal("protobuf.Reader")
+@js.native
+class Reader protected ()
+  extends typings.apolloProtobufjs.mod.Reader {
+  /**
+    * Constructs a new reader instance using the specified buffer.
+    * @param buffer Buffer to read from
+    */
+  def this(buffer: Uint8Array) = this()
+}
+/* static members */
+object Reader {
+  
+  @JSGlobal("protobuf.Reader")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Creates a new reader using the specified buffer.
+    * @param buffer Buffer to read from
+    * @returns A {@link BufferReader} if `buffer` is a Buffer, otherwise a {@link Reader}
+    * @throws {Error} If `buffer` is not a valid buffer
+    */
+  inline def create(buffer: Buffer | Uint8Array): typings.apolloProtobufjs.mod.Reader | typings.apolloProtobufjs.mod.BufferReader = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.apolloProtobufjs.mod.Reader | typings.apolloProtobufjs.mod.BufferReader]
+}

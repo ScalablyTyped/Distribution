@@ -7,28 +7,25 @@ import typings.oracleOraclejet.oracleOraclejetStrings.on
 import typings.oracleOraclejet.oracleOraclejetStrings.solid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineColor extends StObject {
   
-  var lineColor: String = js.native
+  var lineColor: String
   
-  var lineStyle: dotted | dashed | solid = js.native
+  var lineStyle: dotted | dashed | solid
   
-  var lineWidth: Double = js.native
+  var lineWidth: Double
   
-  var markerColor: String = js.native
+  var markerColor: String
   
-  var markerDisplayed: off | on = js.native
+  var markerDisplayed: off | on
   
-  var markerSize: Double = js.native
+  var markerSize: Double
 }
 object LineColor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     lineColor: String,
     lineStyle: dotted | dashed | solid,
     lineWidth: Double,
@@ -40,25 +37,18 @@ object LineColor {
     __obj.asInstanceOf[LineColor]
   }
   
-  @scala.inline
-  implicit class LineColorMutableBuilder[Self <: LineColor] (val x: Self) extends AnyVal {
+  extension [Self <: LineColor](x: Self) {
     
-    @scala.inline
-    def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
+    inline def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineStyle(value: dotted | dashed | solid): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
+    inline def setLineStyle(value: dotted | dashed | solid): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerColor(value: String): Self = StObject.set(x, "markerColor", value.asInstanceOf[js.Any])
+    inline def setMarkerColor(value: String): Self = StObject.set(x, "markerColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerDisplayed(value: off | on): Self = StObject.set(x, "markerDisplayed", value.asInstanceOf[js.Any])
+    inline def setMarkerDisplayed(value: off | on): Self = StObject.set(x, "markerDisplayed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerSize(value: Double): Self = StObject.set(x, "markerSize", value.asInstanceOf[js.Any])
+    inline def setMarkerSize(value: Double): Self = StObject.set(x, "markerSize", value.asInstanceOf[js.Any])
   }
 }

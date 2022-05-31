@@ -2,11 +2,12 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PBRMaterial extends PBRBaseMaterial {
+trait PBRMaterial
+  extends StObject
+     with PBRBaseMaterial {
   
   /**
     * AKA Diffuse Color in other nomenclature.

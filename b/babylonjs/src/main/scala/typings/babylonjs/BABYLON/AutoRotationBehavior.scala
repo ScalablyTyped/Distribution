@@ -2,50 +2,51 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoRotationBehavior extends Behavior[ArcRotateCamera] {
+trait AutoRotationBehavior
+  extends StObject
+     with Behavior[ArcRotateCamera] {
   
   /**
     *  Applies any current user interaction to the camera. Takes into account maximum alpha rotation.
     */
-  var _applyUserInteraction: js.Any = js.native
+  /* private */ var _applyUserInteraction: js.Any = js.native
   
-  var _attachedCamera: js.Any = js.native
+  /* private */ var _attachedCamera: js.Any = js.native
   
-  var _cameraRotationSpeed: js.Any = js.native
+  /* private */ var _cameraRotationSpeed: js.Any = js.native
   
-  var _idleRotationSpeed: js.Any = js.native
+  /* private */ var _idleRotationSpeed: js.Any = js.native
   
-  var _idleRotationSpinupTime: js.Any = js.native
+  /* private */ var _idleRotationSpinupTime: js.Any = js.native
   
-  var _idleRotationWaitTime: js.Any = js.native
+  /* private */ var _idleRotationWaitTime: js.Any = js.native
   
-  var _isPointerDown: js.Any = js.native
+  /* private */ var _isPointerDown: js.Any = js.native
   
-  var _lastFrameRadius: js.Any = js.native
+  /* private */ var _lastFrameRadius: js.Any = js.native
   
-  var _lastFrameTime: js.Any = js.native
+  /* private */ var _lastFrameTime: js.Any = js.native
   
-  var _lastInteractionTime: js.Any = js.native
+  /* private */ var _lastInteractionTime: js.Any = js.native
   
-  var _onAfterCheckInputsObserver: js.Any = js.native
+  /* private */ var _onAfterCheckInputsObserver: js.Any = js.native
   
-  var _onPrePointerObservableObserver: js.Any = js.native
+  /* private */ var _onPrePointerObservableObserver: js.Any = js.native
   
-  var _shouldAnimationStopForInteraction: js.Any = js.native
+  /* private */ var _shouldAnimationStopForInteraction: js.Any = js.native
   
-  var _userIsMoving: js.Any = js.native
+  /* private */ var _userIsMoving: js.Any = js.native
   
   /**
     * Returns true if user is scrolling.
     * @return true if user is scrolling.
     */
-  var _userIsZooming: js.Any = js.native
+  /* private */ var _userIsZooming: js.Any = js.native
   
-  var _zoomStopsAnimation: js.Any = js.native
+  /* private */ var _zoomStopsAnimation: js.Any = js.native
   
   /**
     * Gets the default speed at which the camera rotates around the model.

@@ -5,28 +5,29 @@ import typings.babylonjs.behaviorMod.Behavior
 import typings.babylonjs.easingMod.BackEase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bouncingBehaviorMod {
   
   @JSImport("babylonjs/Behaviors/Cameras/bouncingBehavior", "BouncingBehavior")
   @js.native
-  class BouncingBehavior () extends Behavior[ArcRotateCamera] {
+  class BouncingBehavior ()
+    extends StObject
+       with Behavior[ArcRotateCamera] {
     
-    var _animatables: js.Any = js.native
+    /* private */ var _animatables: js.Any = js.native
     
     /**
       * Applies an animation to the radius of the camera, extending by the radiusDelta.
       * @param radiusDelta The delta by which to animate to. Can be negative.
       */
-    var _applyBoundRadiusAnimation: js.Any = js.native
+    /* private */ var _applyBoundRadiusAnimation: js.Any = js.native
     
-    var _attachedCamera: js.Any = js.native
+    /* private */ var _attachedCamera: js.Any = js.native
     
-    var _autoTransitionRange: js.Any = js.native
+    /* private */ var _autoTransitionRange: js.Any = js.native
     
-    var _cachedWheelPrecision: js.Any = js.native
+    /* private */ var _cachedWheelPrecision: js.Any = js.native
     
     /**
       * Removes all animation locks. Allows new animations to be added to any of the camera properties.
@@ -38,15 +39,22 @@ object bouncingBehaviorMod {
       * @param radiusLimit The limit to check against.
       * @return Bool to indicate if at limit.
       */
-    var _isRadiusAtLimit: js.Any = js.native
+    /* private */ var _isRadiusAtLimit: js.Any = js.native
     
-    var _onAfterCheckInputsObserver: js.Any = js.native
+    /* private */ var _onAfterCheckInputsObserver: js.Any = js.native
     
-    var _onMeshTargetChangedObserver: js.Any = js.native
+    /* private */ var _onMeshTargetChangedObserver: js.Any = js.native
     
-    var _radiusBounceTransition: js.Any = js.native
+    /* private */ var _radiusBounceTransition: js.Any = js.native
     
-    var _radiusIsAnimating: js.Any = js.native
+    /* private */ var _radiusIsAnimating: js.Any = js.native
+    
+    /**
+      * Called when the behavior is attached to a target
+      * @param target defines the target where the behavior is attached to
+      */
+    /* CompleteClass */
+    override def attach(target: ArcRotateCamera): Unit = js.native
     
     /**
       * Gets a value indicating if the lowerRadiusTransitionRange and upperRadiusTransitionRange are defined automatically
@@ -59,10 +67,25 @@ object bouncingBehaviorMod {
     def autoTransitionRange_=(value: Boolean): Unit = js.native
     
     /**
+      * Called when the behavior is detached from its target
+      */
+    /* CompleteClass */
+    override def detach(): Unit = js.native
+    
+    /**
+      * Function called when the behavior needs to be initialized (after attaching it to a target)
+      */
+    /* CompleteClass */
+    override def init(): Unit = js.native
+    
+    /**
       * Length of the distance animated by the transition when lower radius is reached
       */
     var lowerRadiusTransitionRange: Double = js.native
     
+    /** gets or sets behavior's name */
+    /* CompleteClass */
+    var name: String = js.native
     /**
       * Gets the name of the behavior.
       */
@@ -97,8 +120,7 @@ object bouncingBehaviorMod {
     @JSImport("babylonjs/Behaviors/Cameras/bouncingBehavior", "BouncingBehavior.EasingFunction")
     @js.native
     def EasingFunction: BackEase = js.native
-    @scala.inline
-    def EasingFunction_=(x: BackEase): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EasingFunction")(x.asInstanceOf[js.Any])
+    inline def EasingFunction_=(x: BackEase): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EasingFunction")(x.asInstanceOf[js.Any])
     
     /**
       * The easing mode used by animations
@@ -106,7 +128,6 @@ object bouncingBehaviorMod {
     @JSImport("babylonjs/Behaviors/Cameras/bouncingBehavior", "BouncingBehavior.EasingMode")
     @js.native
     def EasingMode: Double = js.native
-    @scala.inline
-    def EasingMode_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EasingMode")(x.asInstanceOf[js.Any])
+    inline def EasingMode_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EasingMode")(x.asInstanceOf[js.Any])
   }
 }

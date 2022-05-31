@@ -2,20 +2,19 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ShaderDefineOrOperator extends ShaderDefineExpression {
+trait ShaderDefineOrOperator
+  extends StObject
+     with ShaderDefineExpression {
   
-  var leftOperand: ShaderDefineExpression = js.native
+  var leftOperand: ShaderDefineExpression
   
-  var rightOperand: ShaderDefineExpression = js.native
+  var rightOperand: ShaderDefineExpression
 }
 object ShaderDefineOrOperator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isTrue: org.scalablytyped.runtime.StringDictionary[String] => Boolean,
     leftOperand: ShaderDefineExpression,
     rightOperand: ShaderDefineExpression
@@ -24,13 +23,10 @@ object ShaderDefineOrOperator {
     __obj.asInstanceOf[ShaderDefineOrOperator]
   }
   
-  @scala.inline
-  implicit class ShaderDefineOrOperatorMutableBuilder[Self <: ShaderDefineOrOperator] (val x: Self) extends AnyVal {
+  extension [Self <: ShaderDefineOrOperator](x: Self) {
     
-    @scala.inline
-    def setLeftOperand(value: ShaderDefineExpression): Self = StObject.set(x, "leftOperand", value.asInstanceOf[js.Any])
+    inline def setLeftOperand(value: ShaderDefineExpression): Self = StObject.set(x, "leftOperand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightOperand(value: ShaderDefineExpression): Self = StObject.set(x, "rightOperand", value.asInstanceOf[js.Any])
+    inline def setRightOperand(value: ShaderDefineExpression): Self = StObject.set(x, "rightOperand", value.asInstanceOf[js.Any])
   }
 }

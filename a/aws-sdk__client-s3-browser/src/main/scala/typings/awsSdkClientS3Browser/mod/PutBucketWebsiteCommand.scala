@@ -1,5 +1,6 @@
 package typings.awsSdkClientS3Browser.mod
 
+import typings.awsSdkClientS3Browser.typesPutBucketWebsiteInputMod.PutBucketWebsiteInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class PutBucketWebsiteCommand protected ()
   extends typings.awsSdkClientS3Browser.putBucketWebsiteCommandMod.PutBucketWebsiteCommand {
-  def this(input: typings.awsSdkClientS3Browser.typesPutBucketWebsiteInputMod.PutBucketWebsiteInput) = this()
+  def this(input: PutBucketWebsiteInput) = this()
 }

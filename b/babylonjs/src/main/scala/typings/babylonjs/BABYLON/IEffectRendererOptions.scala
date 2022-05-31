@@ -2,49 +2,39 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEffectRendererOptions extends StObject {
   
   /**
     * Defines the indices.
     */
-  var indices: js.UndefOr[js.Array[Double]] = js.native
+  var indices: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * Defines the vertices positions.
     */
-  var positions: js.UndefOr[js.Array[Double]] = js.native
+  var positions: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object IEffectRendererOptions {
   
-  @scala.inline
-  def apply(): IEffectRendererOptions = {
+  inline def apply(): IEffectRendererOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IEffectRendererOptions]
   }
   
-  @scala.inline
-  implicit class IEffectRendererOptionsMutableBuilder[Self <: IEffectRendererOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IEffectRendererOptions](x: Self) {
     
-    @scala.inline
-    def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+    inline def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
+    inline def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
     
-    @scala.inline
-    def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value :_*))
+    inline def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value :_*))
     
-    @scala.inline
-    def setPositions(value: js.Array[Double]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
+    inline def setPositions(value: js.Array[Double]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionsUndefined: Self = StObject.set(x, "positions", js.undefined)
+    inline def setPositionsUndefined: Self = StObject.set(x, "positions", js.undefined)
     
-    @scala.inline
-    def setPositionsVarargs(value: Double*): Self = StObject.set(x, "positions", js.Array(value :_*))
+    inline def setPositionsVarargs(value: Double*): Self = StObject.set(x, "positions", js.Array(value :_*))
   }
 }

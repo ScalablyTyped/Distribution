@@ -2,7 +2,6 @@ package typings.babylonjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "Size")
@@ -19,6 +18,10 @@ class Size protected ()
 /* static members */
 object Size {
   
+  @JSImport("babylonjs", "Size")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new Size set at the linear interpolation "amount" between "start" and "end"
     * @param start starting size to lerp between
@@ -26,15 +29,11 @@ object Size {
     * @param amount amount to lerp between the start and end values
     * @returns a new Size set at the linear interpolation "amount" between "start" and "end"
     */
-  @JSImport("babylonjs", "Size.Lerp")
-  @js.native
-  def Lerp(start: typings.babylonjs.mathSizeMod.Size, end: typings.babylonjs.mathSizeMod.Size, amount: Double): typings.babylonjs.mathSizeMod.Size = js.native
+  inline def Lerp(start: typings.babylonjs.mathSizeMod.Size, end: typings.babylonjs.mathSizeMod.Size, amount: Double): typings.babylonjs.mathSizeMod.Size = (^.asInstanceOf[js.Dynamic].applyDynamic("Lerp")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathSizeMod.Size]
   
   /**
     * Create a new size of zero
     * @returns a new Size set to (0.0, 0.0)
     */
-  @JSImport("babylonjs", "Size.Zero")
-  @js.native
-  def Zero(): typings.babylonjs.mathSizeMod.Size = js.native
+  inline def Zero(): typings.babylonjs.mathSizeMod.Size = ^.asInstanceOf[js.Dynamic].applyDynamic("Zero")().asInstanceOf[typings.babylonjs.mathSizeMod.Size]
 }

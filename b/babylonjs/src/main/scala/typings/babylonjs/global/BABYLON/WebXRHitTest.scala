@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.IWebXRHitTestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.WebXRHitTest")
 @js.native
 class WebXRHitTest protected ()
-  extends typings.babylonjs.BABYLON.WebXRHitTest {
+  extends StObject
+     with typings.babylonjs.BABYLON.WebXRHitTest {
   /**
     * Creates a new instance of the hit test feature
     * @param _xrSessionManager an instance of WebXRSessionManager
@@ -23,6 +23,12 @@ class WebXRHitTest protected ()
     */
   options: IWebXRHitTestOptions
   ) = this()
+  
+  /**
+    * Releases all held resources
+    */
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
 }
 /* static members */
 object WebXRHitTest {

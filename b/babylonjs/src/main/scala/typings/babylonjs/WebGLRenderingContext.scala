@@ -10,7 +10,6 @@ import typings.std.WebGLTransformFeedback
 import typings.std.WebGLVertexArrayObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Type definitions for WebGL 2, Editor's Draft Fri Feb 24 16:10:18 2017 -0800
@@ -249,18 +248,6 @@ trait WebGLRenderingContext extends StObject {
     depth: Double,
     border: Double,
     data: ArrayBufferView,
-    offset: js.UndefOr[scala.Nothing],
-    length: Double
-  ): Unit = js.native
-  def compressedTexImage3D(
-    target: Double,
-    level: Double,
-    internalformat: Double,
-    width: Double,
-    height: Double,
-    depth: Double,
-    border: Double,
-    data: ArrayBufferView,
     offset: Double
   ): Unit = js.native
   def compressedTexImage3D(
@@ -273,6 +260,18 @@ trait WebGLRenderingContext extends StObject {
     border: Double,
     data: ArrayBufferView,
     offset: Double,
+    length: Double
+  ): Unit = js.native
+  def compressedTexImage3D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    depth: Double,
+    border: Double,
+    data: ArrayBufferView,
+    offset: Unit,
     length: Double
   ): Unit = js.native
   

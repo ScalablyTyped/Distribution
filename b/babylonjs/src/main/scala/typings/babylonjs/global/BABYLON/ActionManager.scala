@@ -3,30 +3,38 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.ActionManager")
 @js.native
 class ActionManager protected ()
-  extends typings.babylonjs.BABYLON.ActionManager {
+  extends StObject
+     with typings.babylonjs.BABYLON.ActionManager {
   /**
     * Creates a new action manager
     * @param scene defines the hosting scene
     */
   def this(scene: typings.babylonjs.BABYLON.Scene) = this()
+  
+  /**
+    * Releases all held resources
+    */
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
 }
 /* static members */
 object ActionManager {
+  
+  @JSGlobal("BABYLON.ActionManager")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Get a trigger name by index
     * @param trigger defines the trigger index
     * @returns a trigger name
     */
-  @JSGlobal("BABYLON.ActionManager.GetTriggerName")
-  @js.native
-  def GetTriggerName(trigger: Double): String = js.native
+  inline def GetTriggerName(trigger: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetTriggerName")(trigger.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Nothing
@@ -171,11 +179,9 @@ object ActionManager {
     * @param object defines the hosting mesh
     * @param scene defines the hosting scene
     */
-  @JSGlobal("BABYLON.ActionManager.Parse")
-  @js.native
-  def Parse(
+  inline def Parse(
     parsedActions: js.Any,
     `object`: Nullable[typings.babylonjs.BABYLON.AbstractMesh],
     scene: typings.babylonjs.BABYLON.Scene
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedActions.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

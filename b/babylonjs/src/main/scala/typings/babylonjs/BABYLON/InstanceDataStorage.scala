@@ -3,43 +3,40 @@ package typings.babylonjs.BABYLON
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @hidden
   **/
-@js.native
 trait InstanceDataStorage extends StObject {
   
-  var batchCache: InstancesBatch = js.native
+  var batchCache: InstancesBatch
   
-  var hardwareInstancedRendering: Boolean = js.native
+  var hardwareInstancedRendering: Boolean
   
-  var instancesBuffer: Nullable[Buffer] = js.native
+  var instancesBuffer: Nullable[Buffer]
   
-  var instancesBufferSize: Double = js.native
+  var instancesBufferSize: Double
   
-  var instancesData: Float32Array = js.native
+  var instancesData: Float32Array
   
-  var isFrozen: Boolean = js.native
+  var isFrozen: Boolean
   
-  var manualUpdate: Boolean = js.native
+  var manualUpdate: Boolean
   
-  var overridenInstanceCount: Double = js.native
+  var overridenInstanceCount: Double
   
-  var previousBatch: Nullable[InstancesBatch] = js.native
+  var previousBatch: Nullable[InstancesBatch]
   
-  var previousRenderId: Double = js.native
+  var previousRenderId: Double
   
-  var sideOrientation: Double = js.native
+  var sideOrientation: Double
   
-  var visibleInstances: js.Any = js.native
+  var visibleInstances: js.Any
 }
 object InstanceDataStorage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     batchCache: InstancesBatch,
     hardwareInstancedRendering: Boolean,
     instancesBufferSize: Double,
@@ -51,53 +48,38 @@ object InstanceDataStorage {
     sideOrientation: Double,
     visibleInstances: js.Any
   ): InstanceDataStorage = {
-    val __obj = js.Dynamic.literal(batchCache = batchCache.asInstanceOf[js.Any], hardwareInstancedRendering = hardwareInstancedRendering.asInstanceOf[js.Any], instancesBufferSize = instancesBufferSize.asInstanceOf[js.Any], instancesData = instancesData.asInstanceOf[js.Any], isFrozen = isFrozen.asInstanceOf[js.Any], manualUpdate = manualUpdate.asInstanceOf[js.Any], overridenInstanceCount = overridenInstanceCount.asInstanceOf[js.Any], previousRenderId = previousRenderId.asInstanceOf[js.Any], sideOrientation = sideOrientation.asInstanceOf[js.Any], visibleInstances = visibleInstances.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(batchCache = batchCache.asInstanceOf[js.Any], hardwareInstancedRendering = hardwareInstancedRendering.asInstanceOf[js.Any], instancesBufferSize = instancesBufferSize.asInstanceOf[js.Any], instancesData = instancesData.asInstanceOf[js.Any], isFrozen = isFrozen.asInstanceOf[js.Any], manualUpdate = manualUpdate.asInstanceOf[js.Any], overridenInstanceCount = overridenInstanceCount.asInstanceOf[js.Any], previousRenderId = previousRenderId.asInstanceOf[js.Any], sideOrientation = sideOrientation.asInstanceOf[js.Any], visibleInstances = visibleInstances.asInstanceOf[js.Any], instancesBuffer = null, previousBatch = null)
     __obj.asInstanceOf[InstanceDataStorage]
   }
   
-  @scala.inline
-  implicit class InstanceDataStorageMutableBuilder[Self <: InstanceDataStorage] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceDataStorage](x: Self) {
     
-    @scala.inline
-    def setBatchCache(value: InstancesBatch): Self = StObject.set(x, "batchCache", value.asInstanceOf[js.Any])
+    inline def setBatchCache(value: InstancesBatch): Self = StObject.set(x, "batchCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHardwareInstancedRendering(value: Boolean): Self = StObject.set(x, "hardwareInstancedRendering", value.asInstanceOf[js.Any])
+    inline def setHardwareInstancedRendering(value: Boolean): Self = StObject.set(x, "hardwareInstancedRendering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesBuffer(value: Nullable[Buffer]): Self = StObject.set(x, "instancesBuffer", value.asInstanceOf[js.Any])
+    inline def setInstancesBuffer(value: Nullable[Buffer]): Self = StObject.set(x, "instancesBuffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesBufferNull: Self = StObject.set(x, "instancesBuffer", null)
+    inline def setInstancesBufferNull: Self = StObject.set(x, "instancesBuffer", null)
     
-    @scala.inline
-    def setInstancesBufferSize(value: Double): Self = StObject.set(x, "instancesBufferSize", value.asInstanceOf[js.Any])
+    inline def setInstancesBufferSize(value: Double): Self = StObject.set(x, "instancesBufferSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesData(value: Float32Array): Self = StObject.set(x, "instancesData", value.asInstanceOf[js.Any])
+    inline def setInstancesData(value: Float32Array): Self = StObject.set(x, "instancesData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFrozen(value: Boolean): Self = StObject.set(x, "isFrozen", value.asInstanceOf[js.Any])
+    inline def setIsFrozen(value: Boolean): Self = StObject.set(x, "isFrozen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualUpdate(value: Boolean): Self = StObject.set(x, "manualUpdate", value.asInstanceOf[js.Any])
+    inline def setManualUpdate(value: Boolean): Self = StObject.set(x, "manualUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverridenInstanceCount(value: Double): Self = StObject.set(x, "overridenInstanceCount", value.asInstanceOf[js.Any])
+    inline def setOverridenInstanceCount(value: Double): Self = StObject.set(x, "overridenInstanceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousBatch(value: Nullable[InstancesBatch]): Self = StObject.set(x, "previousBatch", value.asInstanceOf[js.Any])
+    inline def setPreviousBatch(value: Nullable[InstancesBatch]): Self = StObject.set(x, "previousBatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousBatchNull: Self = StObject.set(x, "previousBatch", null)
+    inline def setPreviousBatchNull: Self = StObject.set(x, "previousBatch", null)
     
-    @scala.inline
-    def setPreviousRenderId(value: Double): Self = StObject.set(x, "previousRenderId", value.asInstanceOf[js.Any])
+    inline def setPreviousRenderId(value: Double): Self = StObject.set(x, "previousRenderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSideOrientation(value: Double): Self = StObject.set(x, "sideOrientation", value.asInstanceOf[js.Any])
+    inline def setSideOrientation(value: Double): Self = StObject.set(x, "sideOrientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleInstances(value: js.Any): Self = StObject.set(x, "visibleInstances", value.asInstanceOf[js.Any])
+    inline def setVisibleInstances(value: js.Any): Self = StObject.set(x, "visibleInstances", value.asInstanceOf[js.Any])
   }
 }

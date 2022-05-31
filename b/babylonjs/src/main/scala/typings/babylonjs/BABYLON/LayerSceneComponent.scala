@@ -2,27 +2,28 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LayerSceneComponent extends ISceneComponent {
+trait LayerSceneComponent
+  extends StObject
+     with ISceneComponent {
   
-  var _draw: js.Any = js.native
+  /* private */ var _draw: js.Any = js.native
   
-  var _drawCameraBackground: js.Any = js.native
+  /* private */ var _drawCameraBackground: js.Any = js.native
   
-  var _drawCameraForeground: js.Any = js.native
+  /* private */ var _drawCameraForeground: js.Any = js.native
   
-  var _drawCameraPredicate: js.Any = js.native
+  /* private */ var _drawCameraPredicate: js.Any = js.native
   
-  var _drawRenderTargetBackground: js.Any = js.native
+  /* private */ var _drawRenderTargetBackground: js.Any = js.native
   
-  var _drawRenderTargetForeground: js.Any = js.native
+  /* private */ var _drawRenderTargetForeground: js.Any = js.native
   
-  var _drawRenderTargetPredicate: js.Any = js.native
+  /* private */ var _drawRenderTargetPredicate: js.Any = js.native
   
-  var _engine: js.Any = js.native
+  /* private */ var _engine: js.Any = js.native
   
   /**
     * Adds all the elements from the container to the scene

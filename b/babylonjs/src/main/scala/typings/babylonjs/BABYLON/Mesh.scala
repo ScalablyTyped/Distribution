@@ -7,11 +7,12 @@ import typings.std.Float32Array
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Mesh extends AbstractMesh {
+trait Mesh
+  extends StObject
+     with AbstractMesh {
   
   /** @hidden */
   var _binaryInfo: js.Any = js.native
@@ -44,7 +45,7 @@ trait Mesh extends AbstractMesh {
   def _draw(subMesh: SubMesh, fillMode: Double): Mesh = js.native
   def _draw(subMesh: SubMesh, fillMode: Double, instancesCount: Double): Mesh = js.native
   
-  var _effectiveMaterial: js.Any = js.native
+  /* private */ var _effectiveMaterial: js.Any = js.native
   
   /** @hidden */
   var _geometry: Nullable[Geometry] = js.native
@@ -56,14 +57,14 @@ trait Mesh extends AbstractMesh {
   /** @hidden */
   var _instanceDataStorage: InstanceDataStorage = js.native
   
-  var _internalMeshDataInfo: js.Any = js.native
+  /* private */ var _internalMeshDataInfo: js.Any = js.native
   
   /** @hidden */
   def _isMesh: Boolean = js.native
   
-  var _onBeforeDraw: js.Any = js.native
+  /* private */ var _onBeforeDraw: js.Any = js.native
   
-  var _onBeforeDrawObserver: js.Any = js.native
+  /* private */ var _onBeforeDrawObserver: js.Any = js.native
   
   /** @hidden */
   var _originalBuilderSideOrientation: Double = js.native
@@ -102,7 +103,7 @@ trait Mesh extends AbstractMesh {
     effectiveMaterial: Material
   ): Mesh = js.native
   
-  var _queueLoad: js.Any = js.native
+  /* private */ var _queueLoad: js.Any = js.native
   
   /** @hidden */
   def _registerInstanceForRenderId(instance: InstancedMesh, renderId: Double): Mesh = js.native
@@ -119,7 +120,7 @@ trait Mesh extends AbstractMesh {
   /** @hidden */
   var _shouldGenerateFlatShading: Boolean = js.native
   
-  var _sortLODLevels: js.Any = js.native
+  /* private */ var _sortLODLevels: js.Any = js.native
   
   /** @hidden */
   def _syncGeometryWithMorphTargetManager(): Unit = js.native
@@ -169,65 +170,6 @@ trait Mesh extends AbstractMesh {
     url: String,
     minHeight: Double,
     maxHeight: Double,
-    onSuccess: js.UndefOr[scala.Nothing],
-    uvOffset: js.UndefOr[scala.Nothing],
-    uvScale: js.UndefOr[scala.Nothing],
-    forceUpdate: Boolean
-  ): Mesh = js.native
-  def applyDisplacementMap(
-    url: String,
-    minHeight: Double,
-    maxHeight: Double,
-    onSuccess: js.UndefOr[scala.Nothing],
-    uvOffset: js.UndefOr[scala.Nothing],
-    uvScale: Vector2
-  ): Mesh = js.native
-  def applyDisplacementMap(
-    url: String,
-    minHeight: Double,
-    maxHeight: Double,
-    onSuccess: js.UndefOr[scala.Nothing],
-    uvOffset: js.UndefOr[scala.Nothing],
-    uvScale: Vector2,
-    forceUpdate: Boolean
-  ): Mesh = js.native
-  def applyDisplacementMap(
-    url: String,
-    minHeight: Double,
-    maxHeight: Double,
-    onSuccess: js.UndefOr[scala.Nothing],
-    uvOffset: Vector2
-  ): Mesh = js.native
-  def applyDisplacementMap(
-    url: String,
-    minHeight: Double,
-    maxHeight: Double,
-    onSuccess: js.UndefOr[scala.Nothing],
-    uvOffset: Vector2,
-    uvScale: js.UndefOr[scala.Nothing],
-    forceUpdate: Boolean
-  ): Mesh = js.native
-  def applyDisplacementMap(
-    url: String,
-    minHeight: Double,
-    maxHeight: Double,
-    onSuccess: js.UndefOr[scala.Nothing],
-    uvOffset: Vector2,
-    uvScale: Vector2
-  ): Mesh = js.native
-  def applyDisplacementMap(
-    url: String,
-    minHeight: Double,
-    maxHeight: Double,
-    onSuccess: js.UndefOr[scala.Nothing],
-    uvOffset: Vector2,
-    uvScale: Vector2,
-    forceUpdate: Boolean
-  ): Mesh = js.native
-  def applyDisplacementMap(
-    url: String,
-    minHeight: Double,
-    maxHeight: Double,
     onSuccess: js.Function1[/* mesh */ this.type, Unit]
   ): Mesh = js.native
   def applyDisplacementMap(
@@ -235,8 +177,8 @@ trait Mesh extends AbstractMesh {
     minHeight: Double,
     maxHeight: Double,
     onSuccess: js.Function1[/* mesh */ this.type, Unit],
-    uvOffset: js.UndefOr[scala.Nothing],
-    uvScale: js.UndefOr[scala.Nothing],
+    uvOffset: Unit,
+    uvScale: Unit,
     forceUpdate: Boolean
   ): Mesh = js.native
   def applyDisplacementMap(
@@ -244,7 +186,7 @@ trait Mesh extends AbstractMesh {
     minHeight: Double,
     maxHeight: Double,
     onSuccess: js.Function1[/* mesh */ this.type, Unit],
-    uvOffset: js.UndefOr[scala.Nothing],
+    uvOffset: Unit,
     uvScale: Vector2
   ): Mesh = js.native
   def applyDisplacementMap(
@@ -252,7 +194,7 @@ trait Mesh extends AbstractMesh {
     minHeight: Double,
     maxHeight: Double,
     onSuccess: js.Function1[/* mesh */ this.type, Unit],
-    uvOffset: js.UndefOr[scala.Nothing],
+    uvOffset: Unit,
     uvScale: Vector2,
     forceUpdate: Boolean
   ): Mesh = js.native
@@ -269,7 +211,7 @@ trait Mesh extends AbstractMesh {
     maxHeight: Double,
     onSuccess: js.Function1[/* mesh */ this.type, Unit],
     uvOffset: Vector2,
-    uvScale: js.UndefOr[scala.Nothing],
+    uvScale: Unit,
     forceUpdate: Boolean
   ): Mesh = js.native
   def applyDisplacementMap(
@@ -285,6 +227,59 @@ trait Mesh extends AbstractMesh {
     minHeight: Double,
     maxHeight: Double,
     onSuccess: js.Function1[/* mesh */ this.type, Unit],
+    uvOffset: Vector2,
+    uvScale: Vector2,
+    forceUpdate: Boolean
+  ): Mesh = js.native
+  def applyDisplacementMap(
+    url: String,
+    minHeight: Double,
+    maxHeight: Double,
+    onSuccess: Unit,
+    uvOffset: Unit,
+    uvScale: Unit,
+    forceUpdate: Boolean
+  ): Mesh = js.native
+  def applyDisplacementMap(
+    url: String,
+    minHeight: Double,
+    maxHeight: Double,
+    onSuccess: Unit,
+    uvOffset: Unit,
+    uvScale: Vector2
+  ): Mesh = js.native
+  def applyDisplacementMap(
+    url: String,
+    minHeight: Double,
+    maxHeight: Double,
+    onSuccess: Unit,
+    uvOffset: Unit,
+    uvScale: Vector2,
+    forceUpdate: Boolean
+  ): Mesh = js.native
+  def applyDisplacementMap(url: String, minHeight: Double, maxHeight: Double, onSuccess: Unit, uvOffset: Vector2): Mesh = js.native
+  def applyDisplacementMap(
+    url: String,
+    minHeight: Double,
+    maxHeight: Double,
+    onSuccess: Unit,
+    uvOffset: Vector2,
+    uvScale: Unit,
+    forceUpdate: Boolean
+  ): Mesh = js.native
+  def applyDisplacementMap(
+    url: String,
+    minHeight: Double,
+    maxHeight: Double,
+    onSuccess: Unit,
+    uvOffset: Vector2,
+    uvScale: Vector2
+  ): Mesh = js.native
+  def applyDisplacementMap(
+    url: String,
+    minHeight: Double,
+    maxHeight: Double,
+    onSuccess: Unit,
     uvOffset: Vector2,
     uvScale: Vector2,
     forceUpdate: Boolean
@@ -318,8 +313,8 @@ trait Mesh extends AbstractMesh {
     heightMapHeight: Double,
     minHeight: Double,
     maxHeight: Double,
-    uvOffset: js.UndefOr[scala.Nothing],
-    uvScale: js.UndefOr[scala.Nothing],
+    uvOffset: Unit,
+    uvScale: Unit,
     forceUpdate: Boolean
   ): Mesh = js.native
   def applyDisplacementMapFromBuffer(
@@ -328,7 +323,7 @@ trait Mesh extends AbstractMesh {
     heightMapHeight: Double,
     minHeight: Double,
     maxHeight: Double,
-    uvOffset: js.UndefOr[scala.Nothing],
+    uvOffset: Unit,
     uvScale: Vector2
   ): Mesh = js.native
   def applyDisplacementMapFromBuffer(
@@ -337,7 +332,7 @@ trait Mesh extends AbstractMesh {
     heightMapHeight: Double,
     minHeight: Double,
     maxHeight: Double,
-    uvOffset: js.UndefOr[scala.Nothing],
+    uvOffset: Unit,
     uvScale: Vector2,
     forceUpdate: Boolean
   ): Mesh = js.native
@@ -356,7 +351,7 @@ trait Mesh extends AbstractMesh {
     minHeight: Double,
     maxHeight: Double,
     uvOffset: Vector2,
-    uvScale: js.UndefOr[scala.Nothing],
+    uvScale: Unit,
     forceUpdate: Boolean
   ): Mesh = js.native
   def applyDisplacementMapFromBuffer(
@@ -422,37 +417,24 @@ trait Mesh extends AbstractMesh {
     */
   def cleanMatrixWeights(): Unit = js.native
   
-  def clone(
-    name: js.UndefOr[scala.Nothing],
-    newParent: js.UndefOr[Nullable[Node]],
-    doNotCloneChildren: js.UndefOr[scala.Nothing],
-    clonePhysicsImpostor: Boolean
-  ): Mesh = js.native
-  def clone(
-    name: js.UndefOr[scala.Nothing],
-    newParent: js.UndefOr[Nullable[Node]],
-    doNotCloneChildren: Boolean
-  ): Mesh = js.native
-  def clone(
-    name: js.UndefOr[scala.Nothing],
-    newParent: js.UndefOr[Nullable[Node]],
-    doNotCloneChildren: Boolean,
-    clonePhysicsImpostor: Boolean
-  ): Mesh = js.native
-  def clone(name: js.UndefOr[scala.Nothing], newParent: Nullable[Node]): Mesh = js.native
   def clone(name: String): Mesh = js.native
+  def clone(name: String, newParent: Unit, doNotCloneChildren: Boolean): Mesh = js.native
+  def clone(name: String, newParent: Unit, doNotCloneChildren: Boolean, clonePhysicsImpostor: Boolean): Mesh = js.native
+  def clone(name: String, newParent: Unit, doNotCloneChildren: Unit, clonePhysicsImpostor: Boolean): Mesh = js.native
   def clone(
     name: String,
-    newParent: js.UndefOr[Nullable[Node]],
-    doNotCloneChildren: js.UndefOr[scala.Nothing],
-    clonePhysicsImpostor: Boolean
-  ): Mesh = js.native
-  def clone(
-    name: String,
-    newParent: js.UndefOr[Nullable[Node]],
+    newParent: Nullable[Node],
     doNotCloneChildren: Boolean,
     clonePhysicsImpostor: Boolean
   ): Mesh = js.native
+  def clone(name: String, newParent: Nullable[Node], doNotCloneChildren: Unit, clonePhysicsImpostor: Boolean): Mesh = js.native
+  def clone(name: Unit, newParent: Unit, doNotCloneChildren: Boolean): Mesh = js.native
+  def clone(name: Unit, newParent: Unit, doNotCloneChildren: Boolean, clonePhysicsImpostor: Boolean): Mesh = js.native
+  def clone(name: Unit, newParent: Unit, doNotCloneChildren: Unit, clonePhysicsImpostor: Boolean): Mesh = js.native
+  def clone(name: Unit, newParent: Nullable[Node]): Mesh = js.native
+  def clone(name: Unit, newParent: Nullable[Node], doNotCloneChildren: Boolean): Mesh = js.native
+  def clone(name: Unit, newParent: Nullable[Node], doNotCloneChildren: Boolean, clonePhysicsImpostor: Boolean): Mesh = js.native
+  def clone(name: Unit, newParent: Nullable[Node], doNotCloneChildren: Unit, clonePhysicsImpostor: Boolean): Mesh = js.native
   
   /**
     * Gets the list of clones of this mesh
@@ -495,6 +477,12 @@ trait Mesh extends AbstractMesh {
     * Gets the file containing delay loading data for this mesh
     */
   var delayLoadingFile: String = js.native
+  
+  /**
+    * Releases all held resources
+    */
+  /* InferMemberOverrides */
+  override def dispose(): Unit = js.native
   
   /**
     * true to use the edge renderer for all instances of this mesh
@@ -623,8 +611,8 @@ trait Mesh extends AbstractMesh {
     */
   var instances: js.Array[InstancedMesh] = js.native
   
-  def isReady(completeCheck: js.UndefOr[scala.Nothing], forceInstanceSupport: Boolean): Boolean = js.native
   def isReady(completeCheck: Boolean, forceInstanceSupport: Boolean): Boolean = js.native
+  def isReady(completeCheck: Unit, forceInstanceSupport: Boolean): Boolean = js.native
   
   /**
     * Gets or sets a boolean indicating that this mesh does not use index buffer
@@ -688,9 +676,9 @@ trait Mesh extends AbstractMesh {
   def morphTargetManager: Nullable[MorphTargetManager] = js.native
   def morphTargetManager_=(value: Nullable[MorphTargetManager]): Unit = js.native
   
-  var normalizeSkinFourWeights: js.Any = js.native
+  /* private */ var normalizeSkinFourWeights: js.Any = js.native
   
-  var normalizeSkinWeightsAndExtra: js.Any = js.native
+  /* private */ var normalizeSkinWeightsAndExtra: js.Any = js.native
   
   /**
     * An event triggered after rendering the mesh
@@ -812,6 +800,7 @@ trait Mesh extends AbstractMesh {
     * @returns the current mesh
     */
   def setIndices(indices: IndicesArray): AbstractMesh = js.native
+  def setIndices(indices: IndicesArray, totalVertices: Unit, updatable: Boolean): AbstractMesh = js.native
   
   /**
     * Sets the mesh material by the material or multiMaterial `id` property
@@ -849,28 +838,11 @@ trait Mesh extends AbstractMesh {
     * @returns the current mesh
     */
   def simplify(settings: js.Array[ISimplificationSettings]): Mesh = js.native
-  def simplify(
-    settings: js.Array[ISimplificationSettings],
-    parallelProcessing: js.UndefOr[scala.Nothing],
-    simplificationType: js.UndefOr[scala.Nothing],
-    successCallback: js.Function2[/* mesh */ js.UndefOr[this.type], /* submeshIndex */ js.UndefOr[Double], Unit]
-  ): Mesh = js.native
-  def simplify(
-    settings: js.Array[ISimplificationSettings],
-    parallelProcessing: js.UndefOr[scala.Nothing],
-    simplificationType: SimplificationType
-  ): Mesh = js.native
-  def simplify(
-    settings: js.Array[ISimplificationSettings],
-    parallelProcessing: js.UndefOr[scala.Nothing],
-    simplificationType: SimplificationType,
-    successCallback: js.Function2[/* mesh */ js.UndefOr[this.type], /* submeshIndex */ js.UndefOr[Double], Unit]
-  ): Mesh = js.native
   def simplify(settings: js.Array[ISimplificationSettings], parallelProcessing: Boolean): Mesh = js.native
   def simplify(
     settings: js.Array[ISimplificationSettings],
     parallelProcessing: Boolean,
-    simplificationType: js.UndefOr[scala.Nothing],
+    simplificationType: Unit,
     successCallback: js.Function2[/* mesh */ js.UndefOr[this.type], /* submeshIndex */ js.UndefOr[Double], Unit]
   ): Mesh = js.native
   def simplify(
@@ -881,6 +853,23 @@ trait Mesh extends AbstractMesh {
   def simplify(
     settings: js.Array[ISimplificationSettings],
     parallelProcessing: Boolean,
+    simplificationType: SimplificationType,
+    successCallback: js.Function2[/* mesh */ js.UndefOr[this.type], /* submeshIndex */ js.UndefOr[Double], Unit]
+  ): Mesh = js.native
+  def simplify(
+    settings: js.Array[ISimplificationSettings],
+    parallelProcessing: Unit,
+    simplificationType: Unit,
+    successCallback: js.Function2[/* mesh */ js.UndefOr[this.type], /* submeshIndex */ js.UndefOr[Double], Unit]
+  ): Mesh = js.native
+  def simplify(
+    settings: js.Array[ISimplificationSettings],
+    parallelProcessing: Unit,
+    simplificationType: SimplificationType
+  ): Mesh = js.native
+  def simplify(
+    settings: js.Array[ISimplificationSettings],
+    parallelProcessing: Unit,
     simplificationType: SimplificationType,
     successCallback: js.Function2[/* mesh */ js.UndefOr[this.type], /* submeshIndex */ js.UndefOr[Double], Unit]
   ): Mesh = js.native

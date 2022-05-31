@@ -3,7 +3,6 @@ package typings.babylonjs.legacyMod
 import typings.babylonjs.typesMod.DataArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "VertexBuffer")
@@ -70,9 +69,7 @@ object VertexBuffer {
     * @param kind The kind string to deduce
     * @returns The deduced stride
     */
-  @JSImport("babylonjs/Legacy/legacy", "VertexBuffer.DeduceStride")
-  @js.native
-  def DeduceStride(kind: String): Double = js.native
+  inline def DeduceStride(kind: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("DeduceStride")(kind.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * The float type.
@@ -92,9 +89,7 @@ object VertexBuffer {
     * @param normalized whether the data is normalized
     * @param callback the callback function called for each value
     */
-  @JSImport("babylonjs/Legacy/legacy", "VertexBuffer.ForEach")
-  @js.native
-  def ForEach(
+  inline def ForEach(
     data: DataArray,
     byteOffset: Double,
     byteStride: Double,
@@ -103,16 +98,14 @@ object VertexBuffer {
     count: Double,
     normalized: Boolean,
     callback: js.Function2[/* value */ Double, /* index */ Double, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ForEach")(data.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any], byteStride.asInstanceOf[js.Any], componentCount.asInstanceOf[js.Any], componentType.asInstanceOf[js.Any], count.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Gets the byte length of the given type.
     * @param type the type
     * @returns the number of bytes
     */
-  @JSImport("babylonjs/Legacy/legacy", "VertexBuffer.GetTypeByteLength")
-  @js.native
-  def GetTypeByteLength(`type`: Double): Double = js.native
+  inline def GetTypeByteLength(`type`: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetTypeByteLength")(`type`.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * The integer type.
@@ -243,6 +236,5 @@ object VertexBuffer {
   @JSImport("babylonjs/Legacy/legacy", "VertexBuffer._GetFloatValue")
   @js.native
   def _GetFloatValue: js.Any = js.native
-  @scala.inline
-  def _GetFloatValue_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetFloatValue")(x.asInstanceOf[js.Any])
+  inline def _GetFloatValue_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetFloatValue")(x.asInstanceOf[js.Any])
 }

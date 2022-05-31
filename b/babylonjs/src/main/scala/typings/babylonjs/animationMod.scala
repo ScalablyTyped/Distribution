@@ -20,7 +20,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object animationMod {
@@ -69,7 +68,7 @@ object animationMod {
       /**The data type of the animation */
     dataType: Double,
       /**The loop mode of the animation */
-    loopMode: js.UndefOr[scala.Nothing],
+    loopMode: Double,
       /**Specifies if blending should be enabled */
     enableBlending: Boolean
     ) = this()
@@ -83,7 +82,7 @@ object animationMod {
       /**The data type of the animation */
     dataType: Double,
       /**The loop mode of the animation */
-    loopMode: Double,
+    loopMode: Unit,
       /**Specifies if blending should be enabled */
     enableBlending: Boolean
     ) = this()
@@ -91,12 +90,12 @@ object animationMod {
     /**
       * Stores the easing function of the animation
       */
-    var _easingFunction: js.Any = js.native
+    /* private */ var _easingFunction: js.Any = js.native
     
     /**
       * The set of event that will be linked to this animation
       */
-    var _events: js.Any = js.native
+    /* private */ var _events: js.Any = js.native
     
     /**
       * @hidden Internal use only
@@ -111,12 +110,12 @@ object animationMod {
     /**
       * Stores the key frames of the animation
       */
-    var _keys: js.Any = js.native
+    /* private */ var _keys: js.Any = js.native
     
     /**
       * Stores the animation ranges for the animation
       */
-    var _ranges: js.Any = js.native
+    /* private */ var _ranges: js.Any = js.native
     
     /**
       * @hidden Internal use only
@@ -457,8 +456,7 @@ object animationMod {
     @JSImport("babylonjs/Animations/animation", "Animation.AllowMatricesInterpolation")
     @js.native
     def AllowMatricesInterpolation: Boolean = js.native
-    @scala.inline
-    def AllowMatricesInterpolation_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AllowMatricesInterpolation")(x.asInstanceOf[js.Any])
+    inline def AllowMatricesInterpolation_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AllowMatricesInterpolation")(x.asInstanceOf[js.Any])
     
     /**
       * When matrix interpolation is enabled, this boolean forces the system to use Matrix.DecomposeLerp instead of Matrix.Lerp. Interpolation is more precise but slower
@@ -466,17 +464,14 @@ object animationMod {
     @JSImport("babylonjs/Animations/animation", "Animation.AllowMatrixDecomposeForInterpolation")
     @js.native
     def AllowMatrixDecomposeForInterpolation: Boolean = js.native
-    @scala.inline
-    def AllowMatrixDecomposeForInterpolation_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AllowMatrixDecomposeForInterpolation")(x.asInstanceOf[js.Any])
+    inline def AllowMatrixDecomposeForInterpolation_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AllowMatrixDecomposeForInterpolation")(x.asInstanceOf[js.Any])
     
     /**
       * Appends the serialized animations from the source animations
       * @param source Source containing the animations
       * @param destination Target to store the animations
       */
-    @JSImport("babylonjs/Animations/animation", "Animation.AppendSerializedAnimations")
-    @js.native
-    def AppendSerializedAnimations(source: IAnimatable, destination: js.Any): Unit = js.native
+    inline def AppendSerializedAnimations(source: IAnimatable, destination: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("AppendSerializedAnimations")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Create and start an animation on a node
@@ -492,9 +487,7 @@ object animationMod {
       * @param onAnimationEnd defines the callback to call when animation end
       * @returns the animatable created for this animation
       */
-    @JSImport("babylonjs/Animations/animation", "Animation.CreateAndStartAnimation")
-    @js.native
-    def CreateAndStartAnimation(
+    inline def CreateAndStartAnimation(
       name: String,
       node: Node,
       targetProperty: String,
@@ -502,51 +495,8 @@ object animationMod {
       totalFrame: Double,
       from: js.Any,
       to: js.Any
-    ): Nullable[Animatable] = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.CreateAndStartAnimation")
-    @js.native
-    def CreateAndStartAnimation(
-      name: String,
-      node: Node,
-      targetProperty: String,
-      framePerSecond: Double,
-      totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
-      loopMode: js.UndefOr[scala.Nothing],
-      easingFunction: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.Function0[Unit]
-    ): Nullable[Animatable] = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.CreateAndStartAnimation")
-    @js.native
-    def CreateAndStartAnimation(
-      name: String,
-      node: Node,
-      targetProperty: String,
-      framePerSecond: Double,
-      totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
-      loopMode: js.UndefOr[scala.Nothing],
-      easingFunction: EasingFunction
-    ): Nullable[Animatable] = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.CreateAndStartAnimation")
-    @js.native
-    def CreateAndStartAnimation(
-      name: String,
-      node: Node,
-      targetProperty: String,
-      framePerSecond: Double,
-      totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
-      loopMode: js.UndefOr[scala.Nothing],
-      easingFunction: EasingFunction,
-      onAnimationEnd: js.Function0[Unit]
-    ): Nullable[Animatable] = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.CreateAndStartAnimation")
-    @js.native
-    def CreateAndStartAnimation(
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
+    inline def CreateAndStartAnimation(
       name: String,
       node: Node,
       targetProperty: String,
@@ -555,10 +505,8 @@ object animationMod {
       from: js.Any,
       to: js.Any,
       loopMode: Double
-    ): Nullable[Animatable] = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.CreateAndStartAnimation")
-    @js.native
-    def CreateAndStartAnimation(
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
+    inline def CreateAndStartAnimation(
       name: String,
       node: Node,
       targetProperty: String,
@@ -567,12 +515,10 @@ object animationMod {
       from: js.Any,
       to: js.Any,
       loopMode: Double,
-      easingFunction: js.UndefOr[scala.Nothing],
+      easingFunction: Unit,
       onAnimationEnd: js.Function0[Unit]
-    ): Nullable[Animatable] = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.CreateAndStartAnimation")
-    @js.native
-    def CreateAndStartAnimation(
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
+    inline def CreateAndStartAnimation(
       name: String,
       node: Node,
       targetProperty: String,
@@ -582,10 +528,8 @@ object animationMod {
       to: js.Any,
       loopMode: Double,
       easingFunction: EasingFunction
-    ): Nullable[Animatable] = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.CreateAndStartAnimation")
-    @js.native
-    def CreateAndStartAnimation(
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
+    inline def CreateAndStartAnimation(
       name: String,
       node: Node,
       targetProperty: String,
@@ -596,7 +540,42 @@ object animationMod {
       loopMode: Double,
       easingFunction: EasingFunction,
       onAnimationEnd: js.Function0[Unit]
-    ): Nullable[Animatable] = js.native
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
+    inline def CreateAndStartAnimation(
+      name: String,
+      node: Node,
+      targetProperty: String,
+      framePerSecond: Double,
+      totalFrame: Double,
+      from: js.Any,
+      to: js.Any,
+      loopMode: Unit,
+      easingFunction: Unit,
+      onAnimationEnd: js.Function0[Unit]
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
+    inline def CreateAndStartAnimation(
+      name: String,
+      node: Node,
+      targetProperty: String,
+      framePerSecond: Double,
+      totalFrame: Double,
+      from: js.Any,
+      to: js.Any,
+      loopMode: Unit,
+      easingFunction: EasingFunction
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
+    inline def CreateAndStartAnimation(
+      name: String,
+      node: Node,
+      targetProperty: String,
+      framePerSecond: Double,
+      totalFrame: Double,
+      from: js.Any,
+      to: js.Any,
+      loopMode: Unit,
+      easingFunction: EasingFunction,
+      onAnimationEnd: js.Function0[Unit]
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
     
     /**
       * Create and start an animation on a node and its descendants
@@ -614,9 +593,7 @@ object animationMod {
       * @returns the list of animatables created for all nodes
       * @example https://www.babylonjs-playground.com/#MH0VLI
       */
-    @JSImport("babylonjs/Animations/animation", "Animation.CreateAndStartHierarchyAnimation")
-    @js.native
-    def CreateAndStartHierarchyAnimation(
+    inline def CreateAndStartHierarchyAnimation(
       name: String,
       node: Node,
       directDescendantsOnly: Boolean,
@@ -625,54 +602,8 @@ object animationMod {
       totalFrame: Double,
       from: js.Any,
       to: js.Any
-    ): Nullable[js.Array[Animatable]] = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.CreateAndStartHierarchyAnimation")
-    @js.native
-    def CreateAndStartHierarchyAnimation(
-      name: String,
-      node: Node,
-      directDescendantsOnly: Boolean,
-      targetProperty: String,
-      framePerSecond: Double,
-      totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
-      loopMode: js.UndefOr[scala.Nothing],
-      easingFunction: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.Function0[Unit]
-    ): Nullable[js.Array[Animatable]] = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.CreateAndStartHierarchyAnimation")
-    @js.native
-    def CreateAndStartHierarchyAnimation(
-      name: String,
-      node: Node,
-      directDescendantsOnly: Boolean,
-      targetProperty: String,
-      framePerSecond: Double,
-      totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
-      loopMode: js.UndefOr[scala.Nothing],
-      easingFunction: EasingFunction
-    ): Nullable[js.Array[Animatable]] = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.CreateAndStartHierarchyAnimation")
-    @js.native
-    def CreateAndStartHierarchyAnimation(
-      name: String,
-      node: Node,
-      directDescendantsOnly: Boolean,
-      targetProperty: String,
-      framePerSecond: Double,
-      totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
-      loopMode: js.UndefOr[scala.Nothing],
-      easingFunction: EasingFunction,
-      onAnimationEnd: js.Function0[Unit]
-    ): Nullable[js.Array[Animatable]] = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.CreateAndStartHierarchyAnimation")
-    @js.native
-    def CreateAndStartHierarchyAnimation(
+    ): Nullable[js.Array[Animatable]] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartHierarchyAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], directDescendantsOnly.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Nullable[js.Array[Animatable]]]
+    inline def CreateAndStartHierarchyAnimation(
       name: String,
       node: Node,
       directDescendantsOnly: Boolean,
@@ -682,10 +613,8 @@ object animationMod {
       from: js.Any,
       to: js.Any,
       loopMode: Double
-    ): Nullable[js.Array[Animatable]] = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.CreateAndStartHierarchyAnimation")
-    @js.native
-    def CreateAndStartHierarchyAnimation(
+    ): Nullable[js.Array[Animatable]] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartHierarchyAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], directDescendantsOnly.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any])).asInstanceOf[Nullable[js.Array[Animatable]]]
+    inline def CreateAndStartHierarchyAnimation(
       name: String,
       node: Node,
       directDescendantsOnly: Boolean,
@@ -695,12 +624,10 @@ object animationMod {
       from: js.Any,
       to: js.Any,
       loopMode: Double,
-      easingFunction: js.UndefOr[scala.Nothing],
+      easingFunction: Unit,
       onAnimationEnd: js.Function0[Unit]
-    ): Nullable[js.Array[Animatable]] = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.CreateAndStartHierarchyAnimation")
-    @js.native
-    def CreateAndStartHierarchyAnimation(
+    ): Nullable[js.Array[Animatable]] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartHierarchyAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], directDescendantsOnly.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any])).asInstanceOf[Nullable[js.Array[Animatable]]]
+    inline def CreateAndStartHierarchyAnimation(
       name: String,
       node: Node,
       directDescendantsOnly: Boolean,
@@ -711,10 +638,8 @@ object animationMod {
       to: js.Any,
       loopMode: Double,
       easingFunction: EasingFunction
-    ): Nullable[js.Array[Animatable]] = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.CreateAndStartHierarchyAnimation")
-    @js.native
-    def CreateAndStartHierarchyAnimation(
+    ): Nullable[js.Array[Animatable]] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartHierarchyAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], directDescendantsOnly.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any])).asInstanceOf[Nullable[js.Array[Animatable]]]
+    inline def CreateAndStartHierarchyAnimation(
       name: String,
       node: Node,
       directDescendantsOnly: Boolean,
@@ -726,7 +651,45 @@ object animationMod {
       loopMode: Double,
       easingFunction: EasingFunction,
       onAnimationEnd: js.Function0[Unit]
-    ): Nullable[js.Array[Animatable]] = js.native
+    ): Nullable[js.Array[Animatable]] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartHierarchyAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], directDescendantsOnly.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any])).asInstanceOf[Nullable[js.Array[Animatable]]]
+    inline def CreateAndStartHierarchyAnimation(
+      name: String,
+      node: Node,
+      directDescendantsOnly: Boolean,
+      targetProperty: String,
+      framePerSecond: Double,
+      totalFrame: Double,
+      from: js.Any,
+      to: js.Any,
+      loopMode: Unit,
+      easingFunction: Unit,
+      onAnimationEnd: js.Function0[Unit]
+    ): Nullable[js.Array[Animatable]] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartHierarchyAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], directDescendantsOnly.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any])).asInstanceOf[Nullable[js.Array[Animatable]]]
+    inline def CreateAndStartHierarchyAnimation(
+      name: String,
+      node: Node,
+      directDescendantsOnly: Boolean,
+      targetProperty: String,
+      framePerSecond: Double,
+      totalFrame: Double,
+      from: js.Any,
+      to: js.Any,
+      loopMode: Unit,
+      easingFunction: EasingFunction
+    ): Nullable[js.Array[Animatable]] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartHierarchyAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], directDescendantsOnly.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any])).asInstanceOf[Nullable[js.Array[Animatable]]]
+    inline def CreateAndStartHierarchyAnimation(
+      name: String,
+      node: Node,
+      directDescendantsOnly: Boolean,
+      targetProperty: String,
+      framePerSecond: Double,
+      totalFrame: Double,
+      from: js.Any,
+      to: js.Any,
+      loopMode: Unit,
+      easingFunction: EasingFunction,
+      onAnimationEnd: js.Function0[Unit]
+    ): Nullable[js.Array[Animatable]] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartHierarchyAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], directDescendantsOnly.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any])).asInstanceOf[Nullable[js.Array[Animatable]]]
     
     /**
       * Sets up an animation
@@ -736,18 +699,14 @@ object animationMod {
       * @param easingFunction The easing function used in the animation
       * @returns The created animation
       */
-    @JSImport("babylonjs/Animations/animation", "Animation.CreateAnimation")
-    @js.native
-    def CreateAnimation(property: String, animationType: Double, framePerSecond: Double, easingFunction: EasingFunction): Animation = js.native
+    inline def CreateAnimation(property: String, animationType: Double, framePerSecond: Double, easingFunction: EasingFunction): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAnimation")(property.asInstanceOf[js.Any], animationType.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any])).asInstanceOf[Animation]
     
     /**
       * Creates an animation or an array of animations from a snippet saved by the Inspector
       * @param snippetId defines the snippet to load
       * @returns a promise that will resolve to the new animation or a new array of animations
       */
-    @JSImport("babylonjs/Animations/animation", "Animation.CreateFromSnippetAsync")
-    @js.native
-    def CreateFromSnippetAsync(snippetId: String): js.Promise[Animation | js.Array[Animation]] = js.native
+    inline def CreateFromSnippetAsync(snippetId: String): js.Promise[Animation | js.Array[Animation]] = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromSnippetAsync")(snippetId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Animation | js.Array[Animation]]]
     
     /**
       * Creates a new animation, merges it with the existing animations and starts it
@@ -763,9 +722,7 @@ object animationMod {
       * @param onAnimationEnd Callback to run once the animation is complete
       * @returns Nullable animation
       */
-    @JSImport("babylonjs/Animations/animation", "Animation.CreateMergeAndStartAnimation")
-    @js.native
-    def CreateMergeAndStartAnimation(
+    inline def CreateMergeAndStartAnimation(
       name: String,
       node: Node,
       targetProperty: String,
@@ -773,51 +730,8 @@ object animationMod {
       totalFrame: Double,
       from: js.Any,
       to: js.Any
-    ): Nullable[Animatable] = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.CreateMergeAndStartAnimation")
-    @js.native
-    def CreateMergeAndStartAnimation(
-      name: String,
-      node: Node,
-      targetProperty: String,
-      framePerSecond: Double,
-      totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
-      loopMode: js.UndefOr[scala.Nothing],
-      easingFunction: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.Function0[Unit]
-    ): Nullable[Animatable] = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.CreateMergeAndStartAnimation")
-    @js.native
-    def CreateMergeAndStartAnimation(
-      name: String,
-      node: Node,
-      targetProperty: String,
-      framePerSecond: Double,
-      totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
-      loopMode: js.UndefOr[scala.Nothing],
-      easingFunction: EasingFunction
-    ): Nullable[Animatable] = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.CreateMergeAndStartAnimation")
-    @js.native
-    def CreateMergeAndStartAnimation(
-      name: String,
-      node: Node,
-      targetProperty: String,
-      framePerSecond: Double,
-      totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
-      loopMode: js.UndefOr[scala.Nothing],
-      easingFunction: EasingFunction,
-      onAnimationEnd: js.Function0[Unit]
-    ): Nullable[Animatable] = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.CreateMergeAndStartAnimation")
-    @js.native
-    def CreateMergeAndStartAnimation(
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateMergeAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
+    inline def CreateMergeAndStartAnimation(
       name: String,
       node: Node,
       targetProperty: String,
@@ -826,10 +740,8 @@ object animationMod {
       from: js.Any,
       to: js.Any,
       loopMode: Double
-    ): Nullable[Animatable] = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.CreateMergeAndStartAnimation")
-    @js.native
-    def CreateMergeAndStartAnimation(
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateMergeAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
+    inline def CreateMergeAndStartAnimation(
       name: String,
       node: Node,
       targetProperty: String,
@@ -838,12 +750,10 @@ object animationMod {
       from: js.Any,
       to: js.Any,
       loopMode: Double,
-      easingFunction: js.UndefOr[scala.Nothing],
+      easingFunction: Unit,
       onAnimationEnd: js.Function0[Unit]
-    ): Nullable[Animatable] = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.CreateMergeAndStartAnimation")
-    @js.native
-    def CreateMergeAndStartAnimation(
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateMergeAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
+    inline def CreateMergeAndStartAnimation(
       name: String,
       node: Node,
       targetProperty: String,
@@ -853,10 +763,8 @@ object animationMod {
       to: js.Any,
       loopMode: Double,
       easingFunction: EasingFunction
-    ): Nullable[Animatable] = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.CreateMergeAndStartAnimation")
-    @js.native
-    def CreateMergeAndStartAnimation(
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateMergeAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
+    inline def CreateMergeAndStartAnimation(
       name: String,
       node: Node,
       targetProperty: String,
@@ -867,7 +775,42 @@ object animationMod {
       loopMode: Double,
       easingFunction: EasingFunction,
       onAnimationEnd: js.Function0[Unit]
-    ): Nullable[Animatable] = js.native
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateMergeAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
+    inline def CreateMergeAndStartAnimation(
+      name: String,
+      node: Node,
+      targetProperty: String,
+      framePerSecond: Double,
+      totalFrame: Double,
+      from: js.Any,
+      to: js.Any,
+      loopMode: Unit,
+      easingFunction: Unit,
+      onAnimationEnd: js.Function0[Unit]
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateMergeAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
+    inline def CreateMergeAndStartAnimation(
+      name: String,
+      node: Node,
+      targetProperty: String,
+      framePerSecond: Double,
+      totalFrame: Double,
+      from: js.Any,
+      to: js.Any,
+      loopMode: Unit,
+      easingFunction: EasingFunction
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateMergeAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
+    inline def CreateMergeAndStartAnimation(
+      name: String,
+      node: Node,
+      targetProperty: String,
+      framePerSecond: Double,
+      totalFrame: Double,
+      from: js.Any,
+      to: js.Any,
+      loopMode: Unit,
+      easingFunction: EasingFunction,
+      onAnimationEnd: js.Function0[Unit]
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateMergeAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
     
     /**
       * Convert the keyframes for all animations belonging to the group to be relative to a given reference frame.
@@ -878,126 +821,77 @@ object animationMod {
       * @param clonedName defines the name of the resulting cloned Animation if cloneOriginal is true
       * @returns a new Animation if cloneOriginal is true or the original Animation if cloneOriginal is false
       */
-    @JSImport("babylonjs/Animations/animation", "Animation.MakeAnimationAdditive")
-    @js.native
-    def MakeAnimationAdditive(sourceAnimation: Animation): Animation = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.MakeAnimationAdditive")
-    @js.native
-    def MakeAnimationAdditive(
-      sourceAnimation: Animation,
-      referenceFrame: js.UndefOr[scala.Nothing],
-      range: js.UndefOr[scala.Nothing],
-      cloneOriginal: js.UndefOr[scala.Nothing],
-      clonedName: String
-    ): Animation = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.MakeAnimationAdditive")
-    @js.native
-    def MakeAnimationAdditive(
-      sourceAnimation: Animation,
-      referenceFrame: js.UndefOr[scala.Nothing],
-      range: js.UndefOr[scala.Nothing],
-      cloneOriginal: Boolean
-    ): Animation = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.MakeAnimationAdditive")
-    @js.native
-    def MakeAnimationAdditive(
-      sourceAnimation: Animation,
-      referenceFrame: js.UndefOr[scala.Nothing],
-      range: js.UndefOr[scala.Nothing],
-      cloneOriginal: Boolean,
-      clonedName: String
-    ): Animation = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.MakeAnimationAdditive")
-    @js.native
-    def MakeAnimationAdditive(sourceAnimation: Animation, referenceFrame: js.UndefOr[scala.Nothing], range: String): Animation = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.MakeAnimationAdditive")
-    @js.native
-    def MakeAnimationAdditive(
-      sourceAnimation: Animation,
-      referenceFrame: js.UndefOr[scala.Nothing],
-      range: String,
-      cloneOriginal: js.UndefOr[scala.Nothing],
-      clonedName: String
-    ): Animation = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.MakeAnimationAdditive")
-    @js.native
-    def MakeAnimationAdditive(
-      sourceAnimation: Animation,
-      referenceFrame: js.UndefOr[scala.Nothing],
-      range: String,
-      cloneOriginal: Boolean
-    ): Animation = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.MakeAnimationAdditive")
-    @js.native
-    def MakeAnimationAdditive(
-      sourceAnimation: Animation,
-      referenceFrame: js.UndefOr[scala.Nothing],
-      range: String,
-      cloneOriginal: Boolean,
-      clonedName: String
-    ): Animation = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.MakeAnimationAdditive")
-    @js.native
-    def MakeAnimationAdditive(sourceAnimation: Animation, referenceFrame: Double): Animation = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.MakeAnimationAdditive")
-    @js.native
-    def MakeAnimationAdditive(
-      sourceAnimation: Animation,
-      referenceFrame: Double,
-      range: js.UndefOr[scala.Nothing],
-      cloneOriginal: js.UndefOr[scala.Nothing],
-      clonedName: String
-    ): Animation = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.MakeAnimationAdditive")
-    @js.native
-    def MakeAnimationAdditive(
-      sourceAnimation: Animation,
-      referenceFrame: Double,
-      range: js.UndefOr[scala.Nothing],
-      cloneOriginal: Boolean
-    ): Animation = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.MakeAnimationAdditive")
-    @js.native
-    def MakeAnimationAdditive(
-      sourceAnimation: Animation,
-      referenceFrame: Double,
-      range: js.UndefOr[scala.Nothing],
-      cloneOriginal: Boolean,
-      clonedName: String
-    ): Animation = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.MakeAnimationAdditive")
-    @js.native
-    def MakeAnimationAdditive(sourceAnimation: Animation, referenceFrame: Double, range: String): Animation = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.MakeAnimationAdditive")
-    @js.native
-    def MakeAnimationAdditive(
-      sourceAnimation: Animation,
-      referenceFrame: Double,
-      range: String,
-      cloneOriginal: js.UndefOr[scala.Nothing],
-      clonedName: String
-    ): Animation = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.MakeAnimationAdditive")
-    @js.native
-    def MakeAnimationAdditive(sourceAnimation: Animation, referenceFrame: Double, range: String, cloneOriginal: Boolean): Animation = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.MakeAnimationAdditive")
-    @js.native
-    def MakeAnimationAdditive(
+    inline def MakeAnimationAdditive(sourceAnimation: Animation): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimation.asInstanceOf[js.Any]).asInstanceOf[Animation]
+    inline def MakeAnimationAdditive(sourceAnimation: Animation, referenceFrame: Double): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimation.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any])).asInstanceOf[Animation]
+    inline def MakeAnimationAdditive(sourceAnimation: Animation, referenceFrame: Double, range: String): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimation.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Animation]
+    inline def MakeAnimationAdditive(sourceAnimation: Animation, referenceFrame: Double, range: String, cloneOriginal: Boolean): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimation.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any])).asInstanceOf[Animation]
+    inline def MakeAnimationAdditive(
       sourceAnimation: Animation,
       referenceFrame: Double,
       range: String,
       cloneOriginal: Boolean,
       clonedName: String
-    ): Animation = js.native
+    ): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimation.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any], clonedName.asInstanceOf[js.Any])).asInstanceOf[Animation]
+    inline def MakeAnimationAdditive(
+      sourceAnimation: Animation,
+      referenceFrame: Double,
+      range: String,
+      cloneOriginal: Unit,
+      clonedName: String
+    ): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimation.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any], clonedName.asInstanceOf[js.Any])).asInstanceOf[Animation]
+    inline def MakeAnimationAdditive(sourceAnimation: Animation, referenceFrame: Double, range: Unit, cloneOriginal: Boolean): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimation.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any])).asInstanceOf[Animation]
+    inline def MakeAnimationAdditive(
+      sourceAnimation: Animation,
+      referenceFrame: Double,
+      range: Unit,
+      cloneOriginal: Boolean,
+      clonedName: String
+    ): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimation.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any], clonedName.asInstanceOf[js.Any])).asInstanceOf[Animation]
+    inline def MakeAnimationAdditive(
+      sourceAnimation: Animation,
+      referenceFrame: Double,
+      range: Unit,
+      cloneOriginal: Unit,
+      clonedName: String
+    ): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimation.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any], clonedName.asInstanceOf[js.Any])).asInstanceOf[Animation]
+    inline def MakeAnimationAdditive(sourceAnimation: Animation, referenceFrame: Unit, range: String): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimation.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Animation]
+    inline def MakeAnimationAdditive(sourceAnimation: Animation, referenceFrame: Unit, range: String, cloneOriginal: Boolean): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimation.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any])).asInstanceOf[Animation]
+    inline def MakeAnimationAdditive(
+      sourceAnimation: Animation,
+      referenceFrame: Unit,
+      range: String,
+      cloneOriginal: Boolean,
+      clonedName: String
+    ): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimation.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any], clonedName.asInstanceOf[js.Any])).asInstanceOf[Animation]
+    inline def MakeAnimationAdditive(
+      sourceAnimation: Animation,
+      referenceFrame: Unit,
+      range: String,
+      cloneOriginal: Unit,
+      clonedName: String
+    ): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimation.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any], clonedName.asInstanceOf[js.Any])).asInstanceOf[Animation]
+    inline def MakeAnimationAdditive(sourceAnimation: Animation, referenceFrame: Unit, range: Unit, cloneOriginal: Boolean): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimation.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any])).asInstanceOf[Animation]
+    inline def MakeAnimationAdditive(
+      sourceAnimation: Animation,
+      referenceFrame: Unit,
+      range: Unit,
+      cloneOriginal: Boolean,
+      clonedName: String
+    ): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimation.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any], clonedName.asInstanceOf[js.Any])).asInstanceOf[Animation]
+    inline def MakeAnimationAdditive(
+      sourceAnimation: Animation,
+      referenceFrame: Unit,
+      range: Unit,
+      cloneOriginal: Unit,
+      clonedName: String
+    ): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimation.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any], clonedName.asInstanceOf[js.Any])).asInstanceOf[Animation]
     
     /**
       * Parses an animation object and creates an animation
       * @param parsedAnimation Parsed animation object
       * @returns Animation object
       */
-    @JSImport("babylonjs/Animations/animation", "Animation.Parse")
-    @js.native
-    def Parse(parsedAnimation: js.Any): Animation = js.native
+    inline def Parse(parsedAnimation: js.Any): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedAnimation.asInstanceOf[js.Any]).asInstanceOf[Animation]
     
     /**
       * Creates a new animation or an array of animations from a snippet saved in a remote file
@@ -1005,16 +899,13 @@ object animationMod {
       * @param url defines the url to load from
       * @returns a promise that will resolve to the new animation or an array of animations
       */
-    @JSImport("babylonjs/Animations/animation", "Animation.ParseFromFileAsync")
-    @js.native
-    def ParseFromFileAsync(name: Nullable[String], url: String): js.Promise[Animation | js.Array[Animation]] = js.native
+    inline def ParseFromFileAsync(name: Nullable[String], url: String): js.Promise[Animation | js.Array[Animation]] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Animation | js.Array[Animation]]]
     
     /** Define the Url to load snippets */
     @JSImport("babylonjs/Animations/animation", "Animation.SnippetUrl")
     @js.native
     def SnippetUrl: String = js.native
-    @scala.inline
-    def SnippetUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SnippetUrl")(x.asInstanceOf[js.Any])
+    inline def SnippetUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SnippetUrl")(x.asInstanceOf[js.Any])
     
     /**
       * Transition property of an host to the target Value
@@ -1028,9 +919,7 @@ object animationMod {
       * @param onAnimationEnd Callback trigger at the end of the animation
       * @returns Nullable animation
       */
-    @JSImport("babylonjs/Animations/animation", "Animation.TransitionTo")
-    @js.native
-    def TransitionTo(
+    inline def TransitionTo(
       property: String,
       targetValue: js.Any,
       host: js.Any,
@@ -1038,10 +927,8 @@ object animationMod {
       frameRate: Double,
       transition: Animation,
       duration: Double
-    ): Nullable[Animatable] = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation.TransitionTo")
-    @js.native
-    def TransitionTo(
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("TransitionTo")(property.asInstanceOf[js.Any], targetValue.asInstanceOf[js.Any], host.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], frameRate.asInstanceOf[js.Any], transition.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
+    inline def TransitionTo(
       property: String,
       targetValue: js.Any,
       host: js.Any,
@@ -1050,36 +937,20 @@ object animationMod {
       transition: Animation,
       duration: Double,
       onAnimationEnd: Nullable[js.Function0[Unit]]
-    ): Nullable[Animatable] = js.native
+    ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("TransitionTo")(property.asInstanceOf[js.Any], targetValue.asInstanceOf[js.Any], host.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], frameRate.asInstanceOf[js.Any], transition.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
     
     /**
       * @hidden Internal use
       */
-    @JSImport("babylonjs/Animations/animation", "Animation._PrepareAnimation")
-    @js.native
-    def _PrepareAnimation(
+    inline def _PrepareAnimation(
       name: String,
       targetProperty: String,
       framePerSecond: Double,
       totalFrame: Double,
       from: js.Any,
       to: js.Any
-    ): Nullable[Animation] = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation._PrepareAnimation")
-    @js.native
-    def _PrepareAnimation(
-      name: String,
-      targetProperty: String,
-      framePerSecond: Double,
-      totalFrame: Double,
-      from: js.Any,
-      to: js.Any,
-      loopMode: js.UndefOr[scala.Nothing],
-      easingFunction: EasingFunction
-    ): Nullable[Animation] = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation._PrepareAnimation")
-    @js.native
-    def _PrepareAnimation(
+    ): Nullable[Animation] = (^.asInstanceOf[js.Dynamic].applyDynamic("_PrepareAnimation")(name.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animation]]
+    inline def _PrepareAnimation(
       name: String,
       targetProperty: String,
       framePerSecond: Double,
@@ -1087,10 +958,8 @@ object animationMod {
       from: js.Any,
       to: js.Any,
       loopMode: Double
-    ): Nullable[Animation] = js.native
-    @JSImport("babylonjs/Animations/animation", "Animation._PrepareAnimation")
-    @js.native
-    def _PrepareAnimation(
+    ): Nullable[Animation] = (^.asInstanceOf[js.Dynamic].applyDynamic("_PrepareAnimation")(name.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animation]]
+    inline def _PrepareAnimation(
       name: String,
       targetProperty: String,
       framePerSecond: Double,
@@ -1099,12 +968,20 @@ object animationMod {
       to: js.Any,
       loopMode: Double,
       easingFunction: EasingFunction
-    ): Nullable[Animation] = js.native
+    ): Nullable[Animation] = (^.asInstanceOf[js.Dynamic].applyDynamic("_PrepareAnimation")(name.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animation]]
+    inline def _PrepareAnimation(
+      name: String,
+      targetProperty: String,
+      framePerSecond: Double,
+      totalFrame: Double,
+      from: js.Any,
+      to: js.Any,
+      loopMode: Unit,
+      easingFunction: EasingFunction
+    ): Nullable[Animation] = (^.asInstanceOf[js.Dynamic].applyDynamic("_PrepareAnimation")(name.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animation]]
     
     /** @hidden */
-    @JSImport("babylonjs/Animations/animation", "Animation._UniversalLerp")
-    @js.native
-    def _UniversalLerp(left: js.Any, right: js.Any, amount: Double): js.Any = js.native
+    inline def _UniversalLerp(left: js.Any, right: js.Any, amount: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_UniversalLerp")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   @JSImport("babylonjs/Animations/animation", "_IAnimationState")

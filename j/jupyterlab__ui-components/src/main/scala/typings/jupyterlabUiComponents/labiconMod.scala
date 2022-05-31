@@ -26,48 +26,49 @@ import typings.std.HTMLElement
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object labiconMod {
   
   @JSImport("@jupyterlab/ui-components/lib/icon/labicon", "LabIcon")
   @js.native
-  class LabIcon protected () extends ILabIcon {
+  class LabIcon protected ()
+    extends StObject
+       with ILabIcon {
     /** *********
       * members *
       ***********/
     def this(hasNameSvgstrRenderUnrender_loading: IOptionsloadingbooleanund) = this()
     
-    var _className: String = js.native
+    /* protected */ var _className: String = js.native
     
-    /* protected */ def _initReact(displayName: String): ForwardRefExoticComponent[IProps with RefAttributes[SVGElement]] = js.native
+    /* protected */ def _initReact(displayName: String): ForwardRefExoticComponent[IProps & RefAttributes[SVGElement]] = js.native
     
     /* protected */ def _initRender(hasRenderUnrender: PartialIRenderer): Unit = js.native
     
     /* protected */ def _initSvg(): HTMLElement | Null = js.native
     /* protected */ def _initSvg(hasTitleUuid: Title): HTMLElement | Null = js.native
     
-    var _loading: Boolean = js.native
+    /* protected */ var _loading: Boolean = js.native
     
-    var _props: IProps = js.native
+    /* protected */ var _props: IProps = js.native
     
     /**
       * Cache for svg parsing intermediates
       *   - undefined: the cache has not yet been populated
       *   - null: a valid, but empty, value
       */
-    var _svgElement: js.UndefOr[HTMLElement | Null] = js.native
+    /* protected */ var _svgElement: js.UndefOr[HTMLElement | Null] = js.native
     
-    var _svgInnerHTML: js.UndefOr[String | Null] = js.native
+    /* protected */ var _svgInnerHTML: js.UndefOr[String | Null] = js.native
     
-    var _svgReactAttrs: js.UndefOr[js.Any | Null] = js.native
+    /* protected */ var _svgReactAttrs: js.UndefOr[js.Any | Null] = js.native
     
-    var _svgReplaced: Signal[this.type, Unit] = js.native
+    /* protected */ var _svgReplaced: Signal[this.type, Unit] = js.native
     
-    var _svgstr: String = js.native
+    /* protected */ var _svgstr: String = js.native
     
-    var _uuid: String = js.native
+    /* protected */ var _uuid: String = js.native
     
     /**
       * Get a view of this icon that is bound to the specified icon/style props
@@ -120,6 +121,15 @@ object labiconMod {
     def element(props: IProps): HTMLElement = js.native
     
     /**
+      * The name of the icon. By convention, the icon name will be namespaced
+      * as so:
+      *
+      *     "pkg-name:icon-name"
+      */
+    /* CompleteClass */
+    override val name: String = js.native
+    
+    /**
       * A React component that will create the icon.
       *
       * @param className - a string that will be used as the class
@@ -164,6 +174,11 @@ object labiconMod {
     
     /* protected */ def svgReactAttrs: js.Any | Null = js.native
     
+    /**
+      * A string containing the raw contents of an svg file.
+      */
+    /* CompleteClass */
+    var svgstr: String = js.native
     @JSName("svgstr")
     def svgstr_MLabIcon: String = js.native
     
@@ -182,14 +197,12 @@ object labiconMod {
     @JSImport("@jupyterlab/ui-components/lib/icon/labicon", "LabIcon._debug")
     @js.native
     def _debug: js.Any = js.native
-    @scala.inline
-    def _debug_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_debug")(x.asInstanceOf[js.Any])
+    inline def _debug_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_debug")(x.asInstanceOf[js.Any])
     
     @JSImport("@jupyterlab/ui-components/lib/icon/labicon", "LabIcon._instances")
     @js.native
     def _instances: js.Any = js.native
-    @scala.inline
-    def _instances_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instances")(x.asInstanceOf[js.Any])
+    inline def _instances_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instances")(x.asInstanceOf[js.Any])
     
     /** *********
       * statics *
@@ -202,9 +215,7 @@ object labiconMod {
       *
       * @returns the cleaned container
       */
-    @JSImport("@jupyterlab/ui-components/lib/icon/labicon", "LabIcon.remove")
-    @js.native
-    def remove(container: HTMLElement): HTMLElement = js.native
+    inline def remove(container: HTMLElement): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(container.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
     
     /**
       * Resolve an icon name or a {name, svgstr} pair into an
@@ -215,9 +226,7 @@ object labiconMod {
       *
       * @returns a LabIcon instance
       */
-    @JSImport("@jupyterlab/ui-components/lib/icon/labicon", "LabIcon.resolve")
-    @js.native
-    def resolve(hasIcon: Icon): LabIcon = js.native
+    inline def resolve(hasIcon: Icon): LabIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hasIcon.asInstanceOf[js.Any]).asInstanceOf[LabIcon]
     
     /**
       * Resolve an icon name or a {name, svgstr} pair into a DOM element.
@@ -240,9 +249,7 @@ object labiconMod {
       *
       * @returns a DOM node with the resolved icon rendered into it
       */
-    @JSImport("@jupyterlab/ui-components/lib/icon/labicon", "LabIcon.resolveElement")
-    @js.native
-    def resolveElement(hasIconIconClassFallbackProps: PartialIResolverPropsIPro): HTMLElement = js.native
+    inline def resolveElement(hasIconIconClassFallbackProps: PartialIResolverPropsIPro): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveElement")(hasIconIconClassFallbackProps.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
     
     /**
       * Resolve an icon name or a {name, svgstr} pair into a React component.
@@ -265,28 +272,20 @@ object labiconMod {
       *
       * @returns a React component that will render the resolved icon
       */
-    @JSImport("@jupyterlab/ui-components/lib/icon/labicon", "LabIcon.resolveReact")
-    @js.native
-    def resolveReact(hasIconIconClassFallbackProps: PartialIResolverPropsIRea): Element = js.native
+    inline def resolveReact(hasIconIconClassFallbackProps: PartialIResolverPropsIRea): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveReact")(hasIconIconClassFallbackProps.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     /**
       * Resolve a {name, svgstr} pair into an actual svg node.
       */
-    @JSImport("@jupyterlab/ui-components/lib/icon/labicon", "LabIcon.resolveSvg")
-    @js.native
-    def resolveSvg(hasNameSvgstr: IIcon): HTMLElement | Null = js.native
+    inline def resolveSvg(hasNameSvgstr: IIcon): HTMLElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveSvg")(hasNameSvgstr.asInstanceOf[js.Any]).asInstanceOf[HTMLElement | Null]
     
     /**
       * Toggle icon debug from off-to-on, or vice-versa.
       *
       * @param debug - optional boolean to force debug on or off
       */
-    @JSImport("@jupyterlab/ui-components/lib/icon/labicon", "LabIcon.toggleDebug")
-    @js.native
-    def toggleDebug(): Unit = js.native
-    @JSImport("@jupyterlab/ui-components/lib/icon/labicon", "LabIcon.toggleDebug")
-    @js.native
-    def toggleDebug(debug: Boolean): Unit = js.native
+    inline def toggleDebug(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleDebug")().asInstanceOf[Unit]
+    inline def toggleDebug(debug: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleDebug")(debug.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** ***********
       * interfaces *
@@ -294,7 +293,6 @@ object labiconMod {
     /**
       * The simplest possible interface for defining a generic icon.
       */
-    @js.native
     trait IIcon extends StObject {
       
       /**
@@ -303,29 +301,25 @@ object labiconMod {
         *
         *     "pkg-name:icon-name"
         */
-      val name: String = js.native
+      val name: String
       
       /**
         * A string containing the raw contents of an svg file.
         */
-      var svgstr: String = js.native
+      var svgstr: String
     }
     object IIcon {
       
-      @scala.inline
-      def apply(name: String, svgstr: String): IIcon = {
+      inline def apply(name: String, svgstr: String): IIcon = {
         val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], svgstr = svgstr.asInstanceOf[js.Any])
         __obj.asInstanceOf[IIcon]
       }
       
-      @scala.inline
-      implicit class IIconMutableBuilder[Self <: IIcon] (val x: Self) extends AnyVal {
+      extension [Self <: IIcon](x: Self) {
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSvgstr(value: String): Self = StObject.set(x, "svgstr", value.asInstanceOf[js.Any])
+        inline def setSvgstr(value: String): Self = StObject.set(x, "svgstr", value.asInstanceOf[js.Any])
       }
     }
     
@@ -335,7 +329,8 @@ object labiconMod {
       */
     @js.native
     trait ILabIcon
-      extends IIcon
+      extends StObject
+         with IIcon
          with IRenderer
     
     /**
@@ -349,7 +344,6 @@ object labiconMod {
       */
     /* Inlined parent @jupyterlab/ui-components.@jupyterlab/ui-components/lib/icon/labicon.LabIcon.IIcon */
     /* Inlined parent std.Partial<@lumino/virtualdom.@lumino/virtualdom.VirtualElement.IRenderer> */
-    @js.native
     trait IOptions extends StObject {
       
       /**
@@ -358,124 +352,104 @@ object labiconMod {
         *
         *     "pkg-name:icon-name"
         */
-      val name: String = js.native
+      val name: String
       
-      var render: js.UndefOr[js.Function1[/* host */ HTMLElement, Unit]] = js.native
+      var render: js.UndefOr[js.Function1[/* host */ HTMLElement, Unit]] = js.undefined
       
       /**
         * A string containing the raw contents of an svg file.
         */
-      var svgstr: String = js.native
+      var svgstr: String
       
-      var unrender: js.UndefOr[js.Function2[/* host */ HTMLElement, /* options */ js.UndefOr[Attrs], Unit]] = js.native
+      var unrender: js.UndefOr[js.Function2[/* host */ HTMLElement, /* options */ js.UndefOr[Attrs], Unit]] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(name: String, svgstr: String): IOptions = {
+      inline def apply(name: String, svgstr: String): IOptions = {
         val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], svgstr = svgstr.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRender(value: /* host */ HTMLElement => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+        inline def setRender(value: /* host */ HTMLElement => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+        inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
         
-        @scala.inline
-        def setSvgstr(value: String): Self = StObject.set(x, "svgstr", value.asInstanceOf[js.Any])
+        inline def setSvgstr(value: String): Self = StObject.set(x, "svgstr", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUnrender(value: (/* host */ HTMLElement, /* options */ js.UndefOr[Attrs]) => Unit): Self = StObject.set(x, "unrender", js.Any.fromFunction2(value))
+        inline def setUnrender(value: (/* host */ HTMLElement, /* options */ js.UndefOr[Attrs]) => Unit): Self = StObject.set(x, "unrender", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setUnrenderUndefined: Self = StObject.set(x, "unrender", js.undefined)
+        inline def setUnrenderUndefined: Self = StObject.set(x, "unrender", js.undefined)
       }
     }
     
     /**
       * The input props for creating a new LabIcon
       */
-    @js.native
     trait IProps
-      extends typings.jupyterlabUiComponents.styleIconMod.LabIconStyle.IProps {
+      extends StObject
+         with typings.jupyterlabUiComponents.styleIconMod.LabIconStyle.IProps {
       
       /**
         * Extra classNames. Used in addition to the typestyle className to
         * set the className of the icon's outermost container node
         */
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
       /**
         * The icon's outermost node, which acts as a container for the actual
         * svg node. If container is not supplied, it will be created
         */
-      var container: js.UndefOr[HTMLElement] = js.native
+      var container: js.UndefOr[HTMLElement] = js.undefined
       
       /**
         * Optional text label that will be added as a sibling to the icon's
         * svg node
         */
-      var label: js.UndefOr[String] = js.native
+      var label: js.UndefOr[String] = js.undefined
       
       /**
         * HTML element tag used to create the icon's outermost container node,
         * if no container is passed in
         */
-      var tag: js.UndefOr[div | span] = js.native
+      var tag: js.UndefOr[div | span] = js.undefined
       
       /**
         * Optional title that will be set on the icon's outermost container node
         */
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object IProps {
       
-      @scala.inline
-      def apply(): IProps = {
+      inline def apply(): IProps = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IProps]
       }
       
-      @scala.inline
-      implicit class IPropsMutableBuilder[Self <: IProps] (val x: Self) extends AnyVal {
+      extension [Self <: IProps](x: Self) {
         
-        @scala.inline
-        def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+        inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
         
-        @scala.inline
-        def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+        inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+        inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
         
-        @scala.inline
-        def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+        inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
         
-        @scala.inline
-        def setTag(value: div | span): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+        inline def setTag(value: div | span): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+        inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       }
     }
     
@@ -489,53 +463,53 @@ object labiconMod {
       * The properties that can be passed into the React component stored in
       * the .react field of a LabIcon.
       */
-    type IReactProps = IProps with RefAttributes[SVGElement]
+    trait IReactProps
+      extends StObject
+         with IProps
+         with RefAttributes[SVGElement]
+    object IReactProps {
+      
+      inline def apply(): IReactProps = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[IReactProps]
+      }
+    }
     
     /**
       * The type of the svg node ref that can be passed into icon React components
       */
     type IReactRef = RefObject[SVGElement]
     
-    @js.native
     trait IRendererOptions extends StObject {
       
-      var attrs: js.UndefOr[ElementAttrs] = js.native
+      var attrs: js.UndefOr[ElementAttrs] = js.undefined
       
-      var children: js.UndefOr[js.Array[VirtualNode]] = js.native
+      var children: js.UndefOr[js.Array[VirtualNode]] = js.undefined
       
-      var props: js.UndefOr[IProps] = js.native
+      var props: js.UndefOr[IProps] = js.undefined
     }
     object IRendererOptions {
       
-      @scala.inline
-      def apply(): IRendererOptions = {
+      inline def apply(): IRendererOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IRendererOptions]
       }
       
-      @scala.inline
-      implicit class IRendererOptionsMutableBuilder[Self <: IRendererOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IRendererOptions](x: Self) {
         
-        @scala.inline
-        def setAttrs(value: ElementAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+        inline def setAttrs(value: ElementAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
+        inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
         
-        @scala.inline
-        def setChildren(value: js.Array[VirtualNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        inline def setChildren(value: js.Array[VirtualNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+        inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
-        @scala.inline
-        def setChildrenVarargs(value: VirtualNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+        inline def setChildrenVarargs(value: VirtualNode*): Self = StObject.set(x, "children", js.Array(value :_*))
         
-        @scala.inline
-        def setProps(value: IProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+        inline def setProps(value: IProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+        inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
       }
     }
     
@@ -547,43 +521,34 @@ object labiconMod {
       */
     type IResolvable = String | IIconPartialIRenderer
     
-    @js.native
     trait IResolverProps extends StObject {
       
-      var fallback: js.UndefOr[LabIcon] = js.native
+      var fallback: js.UndefOr[LabIcon] = js.undefined
       
-      var icon: js.UndefOr[IMaybeResolvable] = js.native
+      var icon: js.UndefOr[IMaybeResolvable] = js.undefined
       
-      var iconClass: js.UndefOr[String] = js.native
+      var iconClass: js.UndefOr[String] = js.undefined
     }
     object IResolverProps {
       
-      @scala.inline
-      def apply(): IResolverProps = {
+      inline def apply(): IResolverProps = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IResolverProps]
       }
       
-      @scala.inline
-      implicit class IResolverPropsMutableBuilder[Self <: IResolverProps] (val x: Self) extends AnyVal {
+      extension [Self <: IResolverProps](x: Self) {
         
-        @scala.inline
-        def setFallback(value: LabIcon): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+        inline def setFallback(value: LabIcon): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+        inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
         
-        @scala.inline
-        def setIcon(value: IMaybeResolvable): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: IMaybeResolvable): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+        inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+        inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
         
-        @scala.inline
-        def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+        inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       }
     }
   }

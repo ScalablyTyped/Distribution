@@ -4,15 +4,19 @@ import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.anon.Offset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.RibbonBuilder")
 @js.native
 class RibbonBuilder ()
-  extends typings.babylonjs.BABYLON.RibbonBuilder
+  extends StObject
+     with typings.babylonjs.BABYLON.RibbonBuilder
 /* static members */
 object RibbonBuilder {
+  
+  @JSGlobal("BABYLON.RibbonBuilder")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a ribbon mesh. The ribbon is a parametric shape.  It has no predefined shape. Its final shape will depend on the input parameters
@@ -37,10 +41,6 @@ object RibbonBuilder {
     * @see https://doc.babylonjs.com/how_to/ribbon_tutorial
     * @see https://doc.babylonjs.com/how_to/parametric_shapes
     */
-  @JSGlobal("BABYLON.RibbonBuilder.CreateRibbon")
-  @js.native
-  def CreateRibbon(name: String, options: Offset): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.RibbonBuilder.CreateRibbon")
-  @js.native
-  def CreateRibbon(name: String, options: Offset, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
+  inline def CreateRibbon(name: String, options: Offset): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreateRibbon(name: String, options: Offset, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
 }

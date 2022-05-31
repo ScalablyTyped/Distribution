@@ -3,26 +3,21 @@ package typings.oracleOraclejet.anon
 import typings.oracleOraclejet.oracleOraclejetStrings.`oj-datagrid-cell`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubId extends StObject {
   
-  var subId: `oj-datagrid-cell` = js.native
+  var subId: `oj-datagrid-cell`
 }
 object SubId {
   
-  @scala.inline
-  def apply(subId: `oj-datagrid-cell`): SubId = {
-    val __obj = js.Dynamic.literal(subId = subId.asInstanceOf[js.Any])
+  inline def apply(): SubId = {
+    val __obj = js.Dynamic.literal(subId = "oj-datagrid-cell")
     __obj.asInstanceOf[SubId]
   }
   
-  @scala.inline
-  implicit class SubIdMutableBuilder[Self <: SubId] (val x: Self) extends AnyVal {
+  extension [Self <: SubId](x: Self) {
     
-    @scala.inline
-    def setSubId(value: `oj-datagrid-cell`): Self = StObject.set(x, "subId", value.asInstanceOf[js.Any])
+    inline def setSubId(value: `oj-datagrid-cell`): Self = StObject.set(x, "subId", value.asInstanceOf[js.Any])
   }
 }

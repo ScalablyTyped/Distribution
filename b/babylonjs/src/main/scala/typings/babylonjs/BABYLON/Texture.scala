@@ -7,76 +7,84 @@ import typings.std.Blob
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Texture extends BaseTexture {
+trait Texture
+  extends StObject
+     with BaseTexture {
   
   /** @hidden */
   var _buffer: Nullable[String | ArrayBuffer | ArrayBufferView | HTMLImageElement | Blob | ImageBitmap] = js.native
   
-  var _cachedCoordinatesMode: js.Any = js.native
+  /* private */ var _cachedCoordinatesMode: js.Any = js.native
   
-  var _cachedHomogeneousRotationInUVTransform: js.Any = js.native
+  /* private */ var _cachedHomogeneousRotationInUVTransform: js.Any = js.native
   
-  var _cachedProjectionMatrixId: js.Any = js.native
+  /* private */ var _cachedProjectionMatrixId: js.Any = js.native
   
-  var _cachedTextureMatrix: js.Any = js.native
+  /* private */ var _cachedTextureMatrix: js.Any = js.native
   
-  var _cachedUAng: js.Any = js.native
+  /* private */ var _cachedUAng: js.Any = js.native
   
-  var _cachedUOffset: js.Any = js.native
+  /* private */ var _cachedUOffset: js.Any = js.native
   
-  var _cachedURotationCenter: js.Any = js.native
+  /* private */ var _cachedURotationCenter: js.Any = js.native
   
-  var _cachedUScale: js.Any = js.native
+  /* private */ var _cachedUScale: js.Any = js.native
   
-  var _cachedVAng: js.Any = js.native
+  /* private */ var _cachedVAng: js.Any = js.native
   
-  var _cachedVOffset: js.Any = js.native
+  /* private */ var _cachedVOffset: js.Any = js.native
   
-  var _cachedVRotationCenter: js.Any = js.native
+  /* private */ var _cachedVRotationCenter: js.Any = js.native
   
-  var _cachedVScale: js.Any = js.native
+  /* private */ var _cachedVScale: js.Any = js.native
   
-  var _cachedWAng: js.Any = js.native
+  /* private */ var _cachedWAng: js.Any = js.native
   
-  var _cachedWRotationCenter: js.Any = js.native
+  /* private */ var _cachedWRotationCenter: js.Any = js.native
   
-  var _delayedOnError: js.Any = js.native
+  /* private */ var _delayedOnError: js.Any = js.native
   
-  var _delayedOnLoad: js.Any = js.native
+  /* private */ var _delayedOnLoad: js.Any = js.native
   
-  var _deleteBuffer: js.Any = js.native
+  /* private */ var _deleteBuffer: js.Any = js.native
   
-  var _format: Nullable[Double] = js.native
+  /* protected */ var _format: Nullable[Double] = js.native
   
   /** @hidden */
-  var _initialSamplingMode: Double = js.native
+  /* protected */ var _initialSamplingMode: Double = js.native
   
   /** @hidden */
   var _invertY: Boolean = js.native
   
-  var _isBlocking: Boolean = js.native
+  /* protected */ var _isBlocking: Boolean = js.native
   
-  var _loaderOptions: js.Any = js.native
+  /* private */ var _loaderOptions: js.Any = js.native
   
-  var _mimeType: js.Any = js.native
+  /* private */ var _mimeType: js.Any = js.native
   
-  var _noMipmap: js.Any = js.native
+  /* private */ var _noMipmap: js.Any = js.native
   
-  var _prepareRowForTextureGeneration: js.Any = js.native
+  /* private */ var _prepareRowForTextureGeneration: js.Any = js.native
   
-  var _projectionModeMatrix: js.Any = js.native
+  /* private */ var _projectionModeMatrix: js.Any = js.native
   
-  var _rowGenerationMatrix: js.Any = js.native
+  /* private */ var _rowGenerationMatrix: js.Any = js.native
   
-  var _t0: js.Any = js.native
+  /* private */ var _t0: js.Any = js.native
   
-  var _t1: js.Any = js.native
+  /* private */ var _t1: js.Any = js.native
   
-  var _t2: js.Any = js.native
+  /* private */ var _t2: js.Any = js.native
+  
+  /**
+    * Checks if the texture has the same transform matrix than another texture
+    * @param texture texture to check against
+    * @returns true if the transforms are the same, else false
+    */
+  def checkTransformsAreIdentical(texture: Nullable[Texture]): Boolean = js.native
   
   def getTextureMatrix(uBase: Double): Matrix = js.native
   
@@ -145,12 +153,13 @@ trait Texture extends BaseTexture {
     * @param onLoad callback called when the texture is loaded  (defaults to null)
     */
   def updateURL(url: String): Unit = js.native
+  def updateURL(url: String, buffer: Unit, onLoad: js.Function0[Unit]): Unit = js.native
+  def updateURL(url: String, buffer: Nullable[String | ArrayBuffer | ArrayBufferView | HTMLImageElement | Blob]): Unit = js.native
   def updateURL(
     url: String,
-    buffer: js.UndefOr[Nullable[String | ArrayBuffer | ArrayBufferView | HTMLImageElement | Blob]],
+    buffer: Nullable[String | ArrayBuffer | ArrayBufferView | HTMLImageElement | Blob],
     onLoad: js.Function0[Unit]
   ): Unit = js.native
-  def updateURL(url: String, buffer: Nullable[String | ArrayBuffer | ArrayBufferView | HTMLImageElement | Blob]): Unit = js.native
   
   /**
     * Define the url of the texture.

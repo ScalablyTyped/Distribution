@@ -2,25 +2,24 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StateCondition extends Condition {
+trait StateCondition
+  extends StObject
+     with Condition {
   
   /**
     * Internal only
     * @hidden
     */
-  var _target: js.Any = js.native
+  /* private */ var _target: js.Any
   
   /** Value to compare with target state  */
-  var value: String = js.native
+  var value: String
 }
 object StateCondition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _actionManager: ActionManager,
     _currentResult: Boolean,
     _evaluationId: Double,
@@ -36,13 +35,10 @@ object StateCondition {
     __obj.asInstanceOf[StateCondition]
   }
   
-  @scala.inline
-  implicit class StateConditionMutableBuilder[Self <: StateCondition] (val x: Self) extends AnyVal {
+  extension [Self <: StateCondition](x: Self) {
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_target(value: js.Any): Self = StObject.set(x, "_target", value.asInstanceOf[js.Any])
+    inline def set_target(value: js.Any): Self = StObject.set(x, "_target", value.asInstanceOf[js.Any])
   }
 }

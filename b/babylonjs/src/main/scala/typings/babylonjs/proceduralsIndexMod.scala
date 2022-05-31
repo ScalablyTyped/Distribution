@@ -6,7 +6,6 @@ import typings.babylonjs.textureMod.Texture
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object proceduralsIndexMod {
@@ -34,7 +33,7 @@ object proceduralsIndexMod {
       texturePath: String,
       size: Double,
       scene: Scene,
-      fallbackTexture: js.UndefOr[scala.Nothing],
+      fallbackTexture: Unit,
       generateMipMaps: Boolean
     ) = this()
     def this(
@@ -61,46 +60,45 @@ object proceduralsIndexMod {
       */
     def this(name: String) = this()
     def this(name: String, size: Double) = this()
-    def this(name: String, size: js.UndefOr[scala.Nothing], scene: Nullable[Scene]) = this()
     def this(name: String, size: Double, scene: Nullable[Scene]) = this()
+    def this(name: String, size: Unit, scene: Nullable[Scene]) = this()
+    def this(name: String, size: Double, scene: Unit, fallbackTexture: Texture) = this()
+    def this(name: String, size: Double, scene: Nullable[Scene], fallbackTexture: Texture) = this()
+    def this(name: String, size: Unit, scene: Unit, fallbackTexture: Texture) = this()
+    def this(name: String, size: Unit, scene: Nullable[Scene], fallbackTexture: Texture) = this()
+    def this(name: String, size: Double, scene: Unit, fallbackTexture: Unit, generateMipMaps: Boolean) = this()
+    def this(name: String, size: Double, scene: Unit, fallbackTexture: Texture, generateMipMaps: Boolean) = this()
     def this(
       name: String,
-      size: js.UndefOr[scala.Nothing],
-      scene: js.UndefOr[Nullable[Scene]],
-      fallbackTexture: Texture
-    ) = this()
-    def this(name: String, size: Double, scene: js.UndefOr[Nullable[Scene]], fallbackTexture: Texture) = this()
-    def this(
-      name: String,
-      size: js.UndefOr[scala.Nothing],
-      scene: js.UndefOr[Nullable[Scene]],
-      fallbackTexture: js.UndefOr[scala.Nothing],
+      size: Double,
+      scene: Nullable[Scene],
+      fallbackTexture: Unit,
       generateMipMaps: Boolean
     ) = this()
     def this(
       name: String,
-      size: js.UndefOr[scala.Nothing],
-      scene: js.UndefOr[Nullable[Scene]],
+      size: Double,
+      scene: Nullable[Scene],
       fallbackTexture: Texture,
       generateMipMaps: Boolean
     ) = this()
+    def this(name: String, size: Unit, scene: Unit, fallbackTexture: Unit, generateMipMaps: Boolean) = this()
+    def this(name: String, size: Unit, scene: Unit, fallbackTexture: Texture, generateMipMaps: Boolean) = this()
+    def this(name: String, size: Unit, scene: Nullable[Scene], fallbackTexture: Unit, generateMipMaps: Boolean) = this()
     def this(
       name: String,
-      size: Double,
-      scene: js.UndefOr[Nullable[Scene]],
-      fallbackTexture: js.UndefOr[scala.Nothing],
-      generateMipMaps: Boolean
-    ) = this()
-    def this(
-      name: String,
-      size: Double,
-      scene: js.UndefOr[Nullable[Scene]],
+      size: Unit,
+      scene: Nullable[Scene],
       fallbackTexture: Texture,
       generateMipMaps: Boolean
     ) = this()
   }
   /* static members */
   object NoiseProceduralTexture {
+    
+    @JSImport("babylonjs/Materials/Textures/Procedurals/index", "NoiseProceduralTexture")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Creates a NoiseProceduralTexture from parsed noise procedural texture data
@@ -109,9 +107,7 @@ object proceduralsIndexMod {
       * @param rootUrl defines the root URL containing noise procedural texture information
       * @returns a parsed NoiseProceduralTexture
       */
-    @JSImport("babylonjs/Materials/Textures/Procedurals/index", "NoiseProceduralTexture.Parse")
-    @js.native
-    def Parse(parsedTexture: js.Any, scene: Scene): typings.babylonjs.noiseProceduralTextureMod.NoiseProceduralTexture = js.native
+    inline def Parse(parsedTexture: js.Any, scene: Scene): typings.babylonjs.noiseProceduralTextureMod.NoiseProceduralTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.noiseProceduralTextureMod.NoiseProceduralTexture]
   }
   
   @JSImport("babylonjs/Materials/Textures/Procedurals/index", "ProceduralTexture")
@@ -145,7 +141,7 @@ object proceduralsIndexMod {
       size: RenderTargetTextureSize,
       fragment: js.Any,
       scene: Nullable[Scene],
-      fallbackTexture: js.UndefOr[Nullable[Texture]],
+      fallbackTexture: Unit,
       generateMipMaps: Boolean
     ) = this()
     def this(
@@ -153,16 +149,15 @@ object proceduralsIndexMod {
       size: RenderTargetTextureSize,
       fragment: js.Any,
       scene: Nullable[Scene],
-      fallbackTexture: js.UndefOr[Nullable[Texture]],
-      generateMipMaps: js.UndefOr[scala.Nothing],
-      isCube: Boolean
+      fallbackTexture: Nullable[Texture],
+      generateMipMaps: Boolean
     ) = this()
     def this(
       name: String,
       size: RenderTargetTextureSize,
       fragment: js.Any,
       scene: Nullable[Scene],
-      fallbackTexture: js.UndefOr[Nullable[Texture]],
+      fallbackTexture: Unit,
       generateMipMaps: Boolean,
       isCube: Boolean
     ) = this()
@@ -171,9 +166,36 @@ object proceduralsIndexMod {
       size: RenderTargetTextureSize,
       fragment: js.Any,
       scene: Nullable[Scene],
-      fallbackTexture: js.UndefOr[Nullable[Texture]],
-      generateMipMaps: js.UndefOr[scala.Nothing],
-      isCube: js.UndefOr[scala.Nothing],
+      fallbackTexture: Unit,
+      generateMipMaps: Unit,
+      isCube: Boolean
+    ) = this()
+    def this(
+      name: String,
+      size: RenderTargetTextureSize,
+      fragment: js.Any,
+      scene: Nullable[Scene],
+      fallbackTexture: Nullable[Texture],
+      generateMipMaps: Boolean,
+      isCube: Boolean
+    ) = this()
+    def this(
+      name: String,
+      size: RenderTargetTextureSize,
+      fragment: js.Any,
+      scene: Nullable[Scene],
+      fallbackTexture: Nullable[Texture],
+      generateMipMaps: Unit,
+      isCube: Boolean
+    ) = this()
+    def this(
+      name: String,
+      size: RenderTargetTextureSize,
+      fragment: js.Any,
+      scene: Nullable[Scene],
+      fallbackTexture: Unit,
+      generateMipMaps: Boolean,
+      isCube: Boolean,
       textureType: Double
     ) = this()
     def this(
@@ -181,8 +203,18 @@ object proceduralsIndexMod {
       size: RenderTargetTextureSize,
       fragment: js.Any,
       scene: Nullable[Scene],
-      fallbackTexture: js.UndefOr[Nullable[Texture]],
-      generateMipMaps: js.UndefOr[scala.Nothing],
+      fallbackTexture: Unit,
+      generateMipMaps: Boolean,
+      isCube: Unit,
+      textureType: Double
+    ) = this()
+    def this(
+      name: String,
+      size: RenderTargetTextureSize,
+      fragment: js.Any,
+      scene: Nullable[Scene],
+      fallbackTexture: Unit,
+      generateMipMaps: Unit,
       isCube: Boolean,
       textureType: Double
     ) = this()
@@ -191,9 +223,9 @@ object proceduralsIndexMod {
       size: RenderTargetTextureSize,
       fragment: js.Any,
       scene: Nullable[Scene],
-      fallbackTexture: js.UndefOr[Nullable[Texture]],
-      generateMipMaps: Boolean,
-      isCube: js.UndefOr[scala.Nothing],
+      fallbackTexture: Unit,
+      generateMipMaps: Unit,
+      isCube: Unit,
       textureType: Double
     ) = this()
     def this(
@@ -201,9 +233,39 @@ object proceduralsIndexMod {
       size: RenderTargetTextureSize,
       fragment: js.Any,
       scene: Nullable[Scene],
-      fallbackTexture: js.UndefOr[Nullable[Texture]],
+      fallbackTexture: Nullable[Texture],
       generateMipMaps: Boolean,
       isCube: Boolean,
+      textureType: Double
+    ) = this()
+    def this(
+      name: String,
+      size: RenderTargetTextureSize,
+      fragment: js.Any,
+      scene: Nullable[Scene],
+      fallbackTexture: Nullable[Texture],
+      generateMipMaps: Boolean,
+      isCube: Unit,
+      textureType: Double
+    ) = this()
+    def this(
+      name: String,
+      size: RenderTargetTextureSize,
+      fragment: js.Any,
+      scene: Nullable[Scene],
+      fallbackTexture: Nullable[Texture],
+      generateMipMaps: Unit,
+      isCube: Boolean,
+      textureType: Double
+    ) = this()
+    def this(
+      name: String,
+      size: RenderTargetTextureSize,
+      fragment: js.Any,
+      scene: Nullable[Scene],
+      fallbackTexture: Nullable[Texture],
+      generateMipMaps: Unit,
+      isCube: Unit,
       textureType: Double
     ) = this()
   }
@@ -222,31 +284,26 @@ object proceduralsIndexMod {
   /* augmented module */
   object babylonjsAbstractSceneAugmentingMod {
     
-    @js.native
     trait AbstractScene extends StObject {
       
       /**
         * The list of procedural textures added to the scene
         * @see https://doc.babylonjs.com/how_to/how_to_use_procedural_textures
         */
-      var proceduralTextures: js.Array[typings.babylonjs.proceduralTextureMod.ProceduralTexture] = js.native
+      var proceduralTextures: js.Array[typings.babylonjs.proceduralTextureMod.ProceduralTexture]
     }
     object AbstractScene {
       
-      @scala.inline
-      def apply(proceduralTextures: js.Array[typings.babylonjs.proceduralTextureMod.ProceduralTexture]): AbstractScene = {
+      inline def apply(proceduralTextures: js.Array[typings.babylonjs.proceduralTextureMod.ProceduralTexture]): AbstractScene = {
         val __obj = js.Dynamic.literal(proceduralTextures = proceduralTextures.asInstanceOf[js.Any])
         __obj.asInstanceOf[AbstractScene]
       }
       
-      @scala.inline
-      implicit class AbstractSceneMutableBuilder[Self <: AbstractScene] (val x: Self) extends AnyVal {
+      extension [Self <: AbstractScene](x: Self) {
         
-        @scala.inline
-        def setProceduralTextures(value: js.Array[typings.babylonjs.proceduralTextureMod.ProceduralTexture]): Self = StObject.set(x, "proceduralTextures", value.asInstanceOf[js.Any])
+        inline def setProceduralTextures(value: js.Array[typings.babylonjs.proceduralTextureMod.ProceduralTexture]): Self = StObject.set(x, "proceduralTextures", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProceduralTexturesVarargs(value: typings.babylonjs.proceduralTextureMod.ProceduralTexture*): Self = StObject.set(x, "proceduralTextures", js.Array(value :_*))
+        inline def setProceduralTexturesVarargs(value: typings.babylonjs.proceduralTextureMod.ProceduralTexture*): Self = StObject.set(x, "proceduralTextures", js.Array(value :_*))
       }
     }
   }

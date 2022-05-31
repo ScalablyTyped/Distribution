@@ -7,10 +7,13 @@ import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.ISettings
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@jupyterlab/extensionmanager", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@jupyterlab/extensionmanager", "CollapsibleSection")
   @js.native
@@ -34,30 +37,23 @@ object mod {
   }
   object ListModel {
     
+    @JSImport("@jupyterlab/extensionmanager", "ListModel")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Utility function to check whether an entry can be updated.
       *
       * @param entry The entry to check.
       */
-    @JSImport("@jupyterlab/extensionmanager", "ListModel.entryHasUpdate")
-    @js.native
-    def entryHasUpdate(entry: IEntry): Boolean = js.native
+    inline def entryHasUpdate(entry: IEntry): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("entryHasUpdate")(entry.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("@jupyterlab/extensionmanager", "ListModel.isDisclaimed")
-    @js.native
-    def isDisclaimed(): Boolean = js.native
+    inline def isDisclaimed(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDisclaimed")().asInstanceOf[Boolean]
     
-    @JSImport("@jupyterlab/extensionmanager", "ListModel.toogleDisclaimed")
-    @js.native
-    def toogleDisclaimed(): Unit = js.native
+    inline def toogleDisclaimed(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toogleDisclaimed")().asInstanceOf[Unit]
   }
   
-  object ListView {
-    
-    @JSImport("@jupyterlab/extensionmanager", "ListView")
-    @js.native
-    def apply(props: typings.jupyterlabExtensionmanager.widgetMod.ListView.IProperties): ReactElement = js.native
-  }
+  inline def ListView(props: typings.jupyterlabExtensionmanager.widgetMod.ListView.IProperties): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ListView")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("@jupyterlab/extensionmanager", "Lister")
   @js.native
@@ -85,11 +81,9 @@ object mod {
   class Searcher ()
     extends typings.jupyterlabExtensionmanager.npmMod.Searcher {
     def this(repoUri: String) = this()
-    def this(repoUri: js.UndefOr[scala.Nothing], cdnUri: String) = this()
     def this(repoUri: String, cdnUri: String) = this()
+    def this(repoUri: Unit, cdnUri: String) = this()
   }
   
-  @JSImport("@jupyterlab/extensionmanager", "isJupyterOrg")
-  @js.native
-  def isJupyterOrg(name: String): Boolean = js.native
+  inline def isJupyterOrg(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJupyterOrg")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -2,15 +2,19 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.RetryStrategy")
 @js.native
 class RetryStrategy ()
-  extends typings.babylonjs.BABYLON.RetryStrategy
+  extends StObject
+     with typings.babylonjs.BABYLON.RetryStrategy
 /* static members */
 object RetryStrategy {
+  
+  @JSGlobal("BABYLON.RetryStrategy")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Function used to defines an exponential back off strategy
@@ -18,36 +22,48 @@ object RetryStrategy {
     * @param baseInterval defines the interval between retries
     * @returns the strategy function to use
     */
-  @JSGlobal("BABYLON.RetryStrategy.ExponentialBackoff")
-  @js.native
-  def ExponentialBackoff(): js.Function3[
+  inline def ExponentialBackoff(): js.Function3[
     /* url */ String, 
     /* request */ typings.babylonjs.BABYLON.WebRequest, 
     /* retryIndex */ Double, 
     Double
-  ] = js.native
-  @JSGlobal("BABYLON.RetryStrategy.ExponentialBackoff")
-  @js.native
-  def ExponentialBackoff(maxRetries: js.UndefOr[scala.Nothing], baseInterval: Double): js.Function3[
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ExponentialBackoff")().asInstanceOf[js.Function3[
     /* url */ String, 
     /* request */ typings.babylonjs.BABYLON.WebRequest, 
     /* retryIndex */ Double, 
     Double
-  ] = js.native
-  @JSGlobal("BABYLON.RetryStrategy.ExponentialBackoff")
-  @js.native
-  def ExponentialBackoff(maxRetries: Double): js.Function3[
+  ]]
+  inline def ExponentialBackoff(maxRetries: Double): js.Function3[
     /* url */ String, 
     /* request */ typings.babylonjs.BABYLON.WebRequest, 
     /* retryIndex */ Double, 
     Double
-  ] = js.native
-  @JSGlobal("BABYLON.RetryStrategy.ExponentialBackoff")
-  @js.native
-  def ExponentialBackoff(maxRetries: Double, baseInterval: Double): js.Function3[
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ExponentialBackoff")(maxRetries.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
     /* url */ String, 
     /* request */ typings.babylonjs.BABYLON.WebRequest, 
     /* retryIndex */ Double, 
     Double
-  ] = js.native
+  ]]
+  inline def ExponentialBackoff(maxRetries: Double, baseInterval: Double): js.Function3[
+    /* url */ String, 
+    /* request */ typings.babylonjs.BABYLON.WebRequest, 
+    /* retryIndex */ Double, 
+    Double
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("ExponentialBackoff")(maxRetries.asInstanceOf[js.Any], baseInterval.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
+    /* url */ String, 
+    /* request */ typings.babylonjs.BABYLON.WebRequest, 
+    /* retryIndex */ Double, 
+    Double
+  ]]
+  inline def ExponentialBackoff(maxRetries: Unit, baseInterval: Double): js.Function3[
+    /* url */ String, 
+    /* request */ typings.babylonjs.BABYLON.WebRequest, 
+    /* retryIndex */ Double, 
+    Double
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("ExponentialBackoff")(maxRetries.asInstanceOf[js.Any], baseInterval.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
+    /* url */ String, 
+    /* request */ typings.babylonjs.BABYLON.WebRequest, 
+    /* retryIndex */ Double, 
+    Double
+  ]]
 }

@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.WebXRFeatureName")
 @js.native
 class WebXRFeatureName ()
-  extends typings.babylonjs.BABYLON.WebXRFeatureName
+  extends StObject
+     with typings.babylonjs.BABYLON.WebXRFeatureName
 /* static members */
 object WebXRFeatureName {
   

@@ -1,8 +1,9 @@
 package typings.babylonjs.global.BABYLON
 
+import typings.babylonjs.BABYLON.Nullable
+import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,4 +12,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("BABYLON._ThinInstanceDataStorage")
 @js.native
 class ThinInstanceDataStorage ()
-  extends typings.babylonjs.BABYLON.ThinInstanceDataStorage
+  extends StObject
+     with typings.babylonjs.BABYLON.ThinInstanceDataStorage {
+  
+  /* CompleteClass */
+  var boundingVectors: js.Array[typings.babylonjs.BABYLON.Vector3] = js.native
+  
+  /* CompleteClass */
+  var instancesCount: Double = js.native
+  
+  /* CompleteClass */
+  var matrixBuffer: Nullable[typings.babylonjs.BABYLON.Buffer] = js.native
+  
+  /* CompleteClass */
+  var matrixBufferSize: Double = js.native
+  
+  /* CompleteClass */
+  var matrixData: Nullable[Float32Array] = js.native
+  
+  /* CompleteClass */
+  var worldMatrices: Nullable[js.Array[typings.babylonjs.BABYLON.Matrix]] = js.native
+}

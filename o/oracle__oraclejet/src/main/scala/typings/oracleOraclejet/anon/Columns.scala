@@ -2,31 +2,25 @@ package typings.oracleOraclejet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Columns extends StObject {
   
-  var columns: DataTypesDragEnter = js.native
+  var columns: DataTypesDragEnter
   
-  var rows: DragEnterDragLeave = js.native
+  var rows: DragEnterDragLeave
 }
 object Columns {
   
-  @scala.inline
-  def apply(columns: DataTypesDragEnter, rows: DragEnterDragLeave): Columns = {
+  inline def apply(columns: DataTypesDragEnter, rows: DragEnterDragLeave): Columns = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[Columns]
   }
   
-  @scala.inline
-  implicit class ColumnsMutableBuilder[Self <: Columns] (val x: Self) extends AnyVal {
+  extension [Self <: Columns](x: Self) {
     
-    @scala.inline
-    def setColumns(value: DataTypesDragEnter): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: DataTypesDragEnter): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRows(value: DragEnterDragLeave): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: DragEnterDragLeave): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
   }
 }

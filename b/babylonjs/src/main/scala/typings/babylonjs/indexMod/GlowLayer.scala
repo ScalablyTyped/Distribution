@@ -3,7 +3,6 @@ package typings.babylonjs.indexMod
 import typings.babylonjs.anon.PartialIGlowLayerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "GlowLayer")
@@ -32,8 +31,7 @@ object GlowLayer {
   @JSImport("babylonjs/index", "GlowLayer.DefaultBlurKernelSize")
   @js.native
   def DefaultBlurKernelSize: Double = js.native
-  @scala.inline
-  def DefaultBlurKernelSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultBlurKernelSize")(x.asInstanceOf[js.Any])
+  inline def DefaultBlurKernelSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultBlurKernelSize")(x.asInstanceOf[js.Any])
   
   /**
     * The default texture size ratio used for the glow.
@@ -41,8 +39,7 @@ object GlowLayer {
   @JSImport("babylonjs/index", "GlowLayer.DefaultTextureRatio")
   @js.native
   def DefaultTextureRatio: Double = js.native
-  @scala.inline
-  def DefaultTextureRatio_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultTextureRatio")(x.asInstanceOf[js.Any])
+  inline def DefaultTextureRatio_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultTextureRatio")(x.asInstanceOf[js.Any])
   
   /**
     * Effect Name of the layer.
@@ -58,7 +55,5 @@ object GlowLayer {
     * @param rootUrl defines the root URL containing the glow layer information
     * @returns a parsed Glow Layer
     */
-  @JSImport("babylonjs/index", "GlowLayer.Parse")
-  @js.native
-  def Parse(parsedGlowLayer: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.glowLayerMod.GlowLayer = js.native
+  inline def Parse(parsedGlowLayer: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.glowLayerMod.GlowLayer = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedGlowLayer.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.glowLayerMod.GlowLayer]
 }

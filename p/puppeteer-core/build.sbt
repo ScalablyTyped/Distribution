@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "puppeteer-core"
-version := "5.5.0-4e6943"
+version := "5.5.0-c95f2d"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "devtools-protocol" % "0.0.818844-e67d3d",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-e00132",
-  "org.scalablytyped" %%% "std" % "4.1-2f6855",
-  "org.scalablytyped" %%% "ws" % "7.4-dt-20201109Z-8b3f01")
+  "org.scalablytyped" %%% "devtools-protocol" % "0.0.818844-f06cd7",
+  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-11c649",
+  "org.scalablytyped" %%% "std" % "4.1-f7e8ab",
+  "org.scalablytyped" %%% "ws" % "7.4-dt-20201109Z-9be819")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.ITexturePackerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.TexturePacker")
 @js.native
 class TexturePacker protected ()
-  extends typings.babylonjs.BABYLON.TexturePacker {
+  extends StObject
+     with typings.babylonjs.BABYLON.TexturePacker {
   /**
     * Initializes a texture package series from an array of meshes or a single mesh.
     * @param name The name of the package

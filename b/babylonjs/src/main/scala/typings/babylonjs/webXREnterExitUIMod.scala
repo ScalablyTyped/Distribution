@@ -10,7 +10,6 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webXREnterExitUIMod {
@@ -22,13 +21,15 @@ object webXREnterExitUIMod {
     * @param scene babylon scene object to use
     * @param options (read-only) version of the options passed to this UI
     */
-  class WebXREnterExitUI protected () extends IDisposable {
+  /* private */ class WebXREnterExitUI ()
+    extends StObject
+       with IDisposable {
     
-    var _activeButton: js.Any = js.native
+    /* private */ var _activeButton: js.Any = js.native
     
-    var _buttons: js.Any = js.native
+    /* private */ var _buttons: js.Any = js.native
     
-    var _updateButtons: js.Any = js.native
+    /* private */ var _updateButtons: js.Any = js.native
     
     /**
       * Fired every time the active button is changed.
@@ -39,6 +40,12 @@ object webXREnterExitUIMod {
       */
     var activeButtonChangedObservable: Observable[Nullable[WebXREnterExitUIButton]] = js.native
     
+    /**
+      * Releases all held resources
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
     /** version of the options passed to this UI */
     var options: WebXREnterExitUIOptions = js.native
     
@@ -47,10 +54,14 @@ object webXREnterExitUIMod {
       */
     val overlay: HTMLDivElement = js.native
     
-    var scene: js.Any = js.native
+    /* private */ var scene: js.Any = js.native
   }
   /* static members */
   object WebXREnterExitUI {
+    
+    @JSImport("babylonjs/XR/webXREnterExitUI", "WebXREnterExitUI")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Creates UI to allow the user to enter/exit XR mode
@@ -59,9 +70,7 @@ object webXREnterExitUIMod {
       * @param options options to configure the UI
       * @returns the created ui
       */
-    @JSImport("babylonjs/XR/webXREnterExitUI", "WebXREnterExitUI.CreateAsync")
-    @js.native
-    def CreateAsync(scene: Scene, helper: WebXRExperienceHelper, options: WebXREnterExitUIOptions): js.Promise[WebXREnterExitUI] = js.native
+    inline def CreateAsync(scene: Scene, helper: WebXRExperienceHelper, options: WebXREnterExitUIOptions): js.Promise[WebXREnterExitUI] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(scene.asInstanceOf[js.Any], helper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WebXREnterExitUI]]
   }
   
   @JSImport("babylonjs/XR/webXREnterExitUI", "WebXREnterExitUIButton")

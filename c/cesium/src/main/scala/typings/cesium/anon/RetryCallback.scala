@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RetryCallback extends StObject {
   
-  var callbackParameterName: js.UndefOr[String] = js.undefined
-  
   var headers: js.UndefOr[js.Any] = js.undefined
+  
+  var preserveQueryParameters: js.UndefOr[Boolean] = js.undefined
   
   var proxy: js.UndefOr[DefaultProxy] = js.undefined
   
@@ -25,24 +25,24 @@ trait RetryCallback extends StObject {
   
   var templateValues: js.UndefOr[js.Any] = js.undefined
   
-  var url: String
+  var url: js.UndefOr[String] = js.undefined
 }
 object RetryCallback {
   
-  inline def apply(url: String): RetryCallback = {
-    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+  inline def apply(): RetryCallback = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RetryCallback]
   }
   
   extension [Self <: RetryCallback](x: Self) {
     
-    inline def setCallbackParameterName(value: String): Self = StObject.set(x, "callbackParameterName", value.asInstanceOf[js.Any])
-    
-    inline def setCallbackParameterNameUndefined: Self = StObject.set(x, "callbackParameterName", js.undefined)
-    
     inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    
+    inline def setPreserveQueryParameters(value: Boolean): Self = StObject.set(x, "preserveQueryParameters", value.asInstanceOf[js.Any])
+    
+    inline def setPreserveQueryParametersUndefined: Self = StObject.set(x, "preserveQueryParameters", js.undefined)
     
     inline def setProxy(value: DefaultProxy): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
@@ -69,5 +69,7 @@ object RetryCallback {
     inline def setTemplateValuesUndefined: Self = StObject.set(x, "templateValues", js.undefined)
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

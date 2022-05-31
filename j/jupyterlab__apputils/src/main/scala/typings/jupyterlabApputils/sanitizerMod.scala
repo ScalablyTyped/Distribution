@@ -5,7 +5,6 @@ import typings.jupyterlabApputils.sanitizerMod.ISanitizer.IOptions
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sanitizerMod {
@@ -34,55 +33,45 @@ object sanitizerMod {
     /**
       * The options used to sanitize.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The allowed attributes for a given tag.
         */
-      var allowedAttributes: js.UndefOr[StringDictionary[js.Array[String]]] = js.native
+      var allowedAttributes: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
       
       /**
         * The allowed style values for a given tag.
         */
-      var allowedStyles: js.UndefOr[StringDictionary[StringDictionary[js.Array[RegExp]]]] = js.native
+      var allowedStyles: js.UndefOr[StringDictionary[StringDictionary[js.Array[RegExp]]]] = js.undefined
       
       /**
         * The allowed tags.
         */
-      var allowedTags: js.UndefOr[js.Array[String]] = js.native
+      var allowedTags: js.UndefOr[js.Array[String]] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): IOptions = {
+      inline def apply(): IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setAllowedAttributes(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "allowedAttributes", value.asInstanceOf[js.Any])
+        inline def setAllowedAttributes(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "allowedAttributes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAllowedAttributesUndefined: Self = StObject.set(x, "allowedAttributes", js.undefined)
+        inline def setAllowedAttributesUndefined: Self = StObject.set(x, "allowedAttributes", js.undefined)
         
-        @scala.inline
-        def setAllowedStyles(value: StringDictionary[StringDictionary[js.Array[RegExp]]]): Self = StObject.set(x, "allowedStyles", value.asInstanceOf[js.Any])
+        inline def setAllowedStyles(value: StringDictionary[StringDictionary[js.Array[RegExp]]]): Self = StObject.set(x, "allowedStyles", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAllowedStylesUndefined: Self = StObject.set(x, "allowedStyles", js.undefined)
+        inline def setAllowedStylesUndefined: Self = StObject.set(x, "allowedStyles", js.undefined)
         
-        @scala.inline
-        def setAllowedTags(value: js.Array[String]): Self = StObject.set(x, "allowedTags", value.asInstanceOf[js.Any])
+        inline def setAllowedTags(value: js.Array[String]): Self = StObject.set(x, "allowedTags", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAllowedTagsUndefined: Self = StObject.set(x, "allowedTags", js.undefined)
+        inline def setAllowedTagsUndefined: Self = StObject.set(x, "allowedTags", js.undefined)
         
-        @scala.inline
-        def setAllowedTagsVarargs(value: String*): Self = StObject.set(x, "allowedTags", js.Array(value :_*))
+        inline def setAllowedTagsVarargs(value: String*): Self = StObject.set(x, "allowedTags", js.Array(value :_*))
       }
     }
   }

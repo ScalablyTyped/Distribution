@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.UniformBuffer")
 @js.native
 class UniformBuffer protected ()
-  extends typings.babylonjs.BABYLON.UniformBuffer {
+  extends StObject
+     with typings.babylonjs.BABYLON.UniformBuffer {
   /**
     * Instantiates a new Uniform buffer objects.
     *
@@ -24,8 +24,8 @@ class UniformBuffer protected ()
     */
   def this(engine: typings.babylonjs.BABYLON.Engine) = this()
   def this(engine: typings.babylonjs.BABYLON.Engine, data: js.Array[Double]) = this()
-  def this(engine: typings.babylonjs.BABYLON.Engine, data: js.UndefOr[scala.Nothing], dynamic: Boolean) = this()
   def this(engine: typings.babylonjs.BABYLON.Engine, data: js.Array[Double], dynamic: Boolean) = this()
+  def this(engine: typings.babylonjs.BABYLON.Engine, data: Unit, dynamic: Boolean) = this()
 }
 /* static members */
 object UniformBuffer {
@@ -37,12 +37,10 @@ object UniformBuffer {
   @JSGlobal("BABYLON.UniformBuffer._MAX_UNIFORM_SIZE")
   @js.native
   def _MAX_UNIFORM_SIZE: js.Any = js.native
-  @scala.inline
-  def _MAX_UNIFORM_SIZE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MAX_UNIFORM_SIZE")(x.asInstanceOf[js.Any])
+  inline def _MAX_UNIFORM_SIZE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MAX_UNIFORM_SIZE")(x.asInstanceOf[js.Any])
   
   @JSGlobal("BABYLON.UniformBuffer._tempBuffer")
   @js.native
   def _tempBuffer: js.Any = js.native
-  @scala.inline
-  def _tempBuffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tempBuffer")(x.asInstanceOf[js.Any])
+  inline def _tempBuffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tempBuffer")(x.asInstanceOf[js.Any])
 }

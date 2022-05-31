@@ -14,7 +14,7 @@ trait Convert extends StObject {
   
   var endTransform: js.UndefOr[Matrix4] = js.undefined
   
-  var orientation: js.UndefOr[Direction | Heading] = js.undefined
+  var orientation: js.UndefOr[Up | Heading] = js.undefined
 }
 object Convert {
   
@@ -37,7 +37,7 @@ object Convert {
     
     inline def setEndTransformUndefined: Self = StObject.set(x, "endTransform", js.undefined)
     
-    inline def setOrientation(value: Direction | Heading): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: Up | Heading): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
   }

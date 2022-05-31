@@ -48,22 +48,21 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ojDateTimePickerEventMap extends ojInputDateTimeEventMap[ojDateTimePickerSettableProperties] {
+trait ojDateTimePickerEventMap
+  extends StObject
+     with ojInputDateTimeEventMap[ojDateTimePickerSettableProperties] {
   
   @JSName("ojAnimateEnd")
-  var ojAnimateEnd_ojDateTimePickerEventMap: ojAnimateEnd = js.native
+  var ojAnimateEnd_ojDateTimePickerEventMap: ojAnimateEnd
   
   @JSName("ojAnimateStart")
-  var ojAnimateStart_ojDateTimePickerEventMap: ojAnimateStart = js.native
+  var ojAnimateStart_ojDateTimePickerEventMap: ojAnimateStart
 }
 object ojDateTimePickerEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,
@@ -191,13 +190,10 @@ object ojDateTimePickerEventMap {
     __obj.asInstanceOf[ojDateTimePickerEventMap]
   }
   
-  @scala.inline
-  implicit class ojDateTimePickerEventMapMutableBuilder[Self <: ojDateTimePickerEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: ojDateTimePickerEventMap](x: Self) {
     
-    @scala.inline
-    def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
+    inline def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOjAnimateStart(value: ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
+    inline def setOjAnimateStart(value: ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
   }
 }

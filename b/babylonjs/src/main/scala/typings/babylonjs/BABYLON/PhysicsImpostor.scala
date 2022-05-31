@@ -4,21 +4,20 @@ import typings.babylonjs.anon.OtherImpostors
 import typings.babylonjs.anon.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PhysicsImpostor extends StObject {
   
-  var _bodyUpdateRequired: js.Any = js.native
+  /* private */ var _bodyUpdateRequired: js.Any = js.native
   
-  var _deltaPosition: js.Any = js.native
+  /* private */ var _deltaPosition: js.Any = js.native
   
-  var _deltaRotation: js.Any = js.native
+  /* private */ var _deltaRotation: js.Any = js.native
   
-  var _deltaRotationConjugated: js.Any = js.native
+  /* private */ var _deltaRotationConjugated: js.Any = js.native
   
-  var _getPhysicsParent: js.Any = js.native
+  /* private */ var _getPhysicsParent: js.Any = js.native
   
   /**
     * This function will completly initialize this impostor.
@@ -29,36 +28,36 @@ trait PhysicsImpostor extends StObject {
     */
   def _init(): Unit = js.native
   
-  var _isDisposed: js.Any = js.native
+  /* private */ var _isDisposed: js.Any = js.native
   
   /** @hidden */
   var _isFromLine: Boolean = js.native
   
-  var _joints: js.Any = js.native
+  /* private */ var _joints: js.Any = js.native
   
-  var _onAfterPhysicsStepCallbacks: js.Any = js.native
+  /* private */ var _onAfterPhysicsStepCallbacks: js.Any = js.native
   
-  var _onBeforePhysicsStepCallbacks: js.Any = js.native
+  /* private */ var _onBeforePhysicsStepCallbacks: js.Any = js.native
   
   /** @hidden */
   var _onPhysicsCollideCallbacks: js.Array[OtherImpostors] = js.native
   
-  var _options: js.Any = js.native
+  /* private */ var _options: js.Any = js.native
   
-  var _parent: js.Any = js.native
+  /* private */ var _parent: js.Any = js.native
   
-  var _physicsBody: js.Any = js.native
+  /* private */ var _physicsBody: js.Any = js.native
   
-  var _physicsEngine: js.Any = js.native
+  /* private */ var _physicsEngine: js.Any = js.native
   
   /** @hidden */
   var _pluginData: js.Any = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
-  var _tmpQuat: js.Any = js.native
+  /* private */ var _tmpQuat: js.Any = js.native
   
-  var _tmpQuat2: js.Any = js.native
+  /* private */ var _tmpQuat2: js.Any = js.native
   
   /**
     * Add an anchor to a cloth impostor
@@ -405,19 +404,19 @@ trait PhysicsImpostor extends StObject {
     * @param adjustRotation Optional quaternion for adjusting the local rotation of the bone.
     */
   def syncBoneWithImpostor(bone: Bone, boneMesh: AbstractMesh, jointPivot: Vector3): Unit = js.native
-  def syncBoneWithImpostor(
-    bone: Bone,
-    boneMesh: AbstractMesh,
-    jointPivot: Vector3,
-    distToJoint: js.UndefOr[scala.Nothing],
-    adjustRotation: Quaternion
-  ): Unit = js.native
   def syncBoneWithImpostor(bone: Bone, boneMesh: AbstractMesh, jointPivot: Vector3, distToJoint: Double): Unit = js.native
   def syncBoneWithImpostor(
     bone: Bone,
     boneMesh: AbstractMesh,
     jointPivot: Vector3,
     distToJoint: Double,
+    adjustRotation: Quaternion
+  ): Unit = js.native
+  def syncBoneWithImpostor(
+    bone: Bone,
+    boneMesh: AbstractMesh,
+    jointPivot: Vector3,
+    distToJoint: Unit,
     adjustRotation: Quaternion
   ): Unit = js.native
   
@@ -431,36 +430,13 @@ trait PhysicsImpostor extends StObject {
     * @param boneAxis Optional vector3 axis the bone is aligned with
     */
   def syncImpostorWithBone(bone: Bone, boneMesh: AbstractMesh, jointPivot: Vector3): Unit = js.native
-  def syncImpostorWithBone(
-    bone: Bone,
-    boneMesh: AbstractMesh,
-    jointPivot: Vector3,
-    distToJoint: js.UndefOr[scala.Nothing],
-    adjustRotation: js.UndefOr[scala.Nothing],
-    boneAxis: Vector3
-  ): Unit = js.native
-  def syncImpostorWithBone(
-    bone: Bone,
-    boneMesh: AbstractMesh,
-    jointPivot: Vector3,
-    distToJoint: js.UndefOr[scala.Nothing],
-    adjustRotation: Quaternion
-  ): Unit = js.native
-  def syncImpostorWithBone(
-    bone: Bone,
-    boneMesh: AbstractMesh,
-    jointPivot: Vector3,
-    distToJoint: js.UndefOr[scala.Nothing],
-    adjustRotation: Quaternion,
-    boneAxis: Vector3
-  ): Unit = js.native
   def syncImpostorWithBone(bone: Bone, boneMesh: AbstractMesh, jointPivot: Vector3, distToJoint: Double): Unit = js.native
   def syncImpostorWithBone(
     bone: Bone,
     boneMesh: AbstractMesh,
     jointPivot: Vector3,
     distToJoint: Double,
-    adjustRotation: js.UndefOr[scala.Nothing],
+    adjustRotation: Unit,
     boneAxis: Vector3
   ): Unit = js.native
   def syncImpostorWithBone(
@@ -475,6 +451,29 @@ trait PhysicsImpostor extends StObject {
     boneMesh: AbstractMesh,
     jointPivot: Vector3,
     distToJoint: Double,
+    adjustRotation: Quaternion,
+    boneAxis: Vector3
+  ): Unit = js.native
+  def syncImpostorWithBone(
+    bone: Bone,
+    boneMesh: AbstractMesh,
+    jointPivot: Vector3,
+    distToJoint: Unit,
+    adjustRotation: Unit,
+    boneAxis: Vector3
+  ): Unit = js.native
+  def syncImpostorWithBone(
+    bone: Bone,
+    boneMesh: AbstractMesh,
+    jointPivot: Vector3,
+    distToJoint: Unit,
+    adjustRotation: Quaternion
+  ): Unit = js.native
+  def syncImpostorWithBone(
+    bone: Bone,
+    boneMesh: AbstractMesh,
+    jointPivot: Vector3,
+    distToJoint: Unit,
     adjustRotation: Quaternion,
     boneAxis: Vector3
   ): Unit = js.native

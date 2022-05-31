@@ -2,15 +2,14 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait QuarticEase extends EasingFunction
+trait QuarticEase
+  extends StObject
+     with EasingFunction
 object QuarticEase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _easingMode: js.Any,
     ease: Double => Double,
     easeInCore: Double => Double,

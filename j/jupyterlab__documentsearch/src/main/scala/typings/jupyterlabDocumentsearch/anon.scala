@@ -3,68 +3,65 @@ package typings.jupyterlabDocumentsearch
 import typings.jupyterlabCodemirror.mod.CodeMirrorEditor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait APPLET extends StObject {
     
-    var APPLET: Boolean = js.native
+    var APPLET: Boolean
     
-    var AREA: Boolean = js.native
+    var AREA: Boolean
     
-    var AUDIO: Boolean = js.native
+    var AUDIO: Boolean
     
-    var BASE: Boolean = js.native
+    var BASE: Boolean
     
-    var BODY: Boolean = js.native
+    var BODY: Boolean
     
-    var CANVAS: Boolean = js.native
+    var CANVAS: Boolean
     
-    var EMBED: Boolean = js.native
+    var EMBED: Boolean
     
-    var HEAD: Boolean = js.native
+    var HEAD: Boolean
     
-    var IFRAME: Boolean = js.native
+    var IFRAME: Boolean
     
-    var IMG: Boolean = js.native
+    var IMG: Boolean
     
-    var LINK: Boolean = js.native
+    var LINK: Boolean
     
-    var MAP: Boolean = js.native
+    var MAP: Boolean
     
-    var META: Boolean = js.native
+    var META: Boolean
     
-    var NOEMBED: Boolean = js.native
+    var NOEMBED: Boolean
     
-    var NOSCRIPT: Boolean = js.native
+    var NOSCRIPT: Boolean
     
-    var OBJECT: Boolean = js.native
+    var OBJECT: Boolean
     
-    var PARAM: Boolean = js.native
+    var PARAM: Boolean
     
-    var PICTURE: Boolean = js.native
+    var PICTURE: Boolean
     
-    var SCRIPT: Boolean = js.native
+    var SCRIPT: Boolean
     
-    var SOURCE: Boolean = js.native
+    var SOURCE: Boolean
     
-    var STYLE: Boolean = js.native
+    var STYLE: Boolean
     
-    var SVG: Boolean = js.native
+    var SVG: Boolean
     
-    var TITLE: Boolean = js.native
+    var TITLE: Boolean
     
-    var TRACK: Boolean = js.native
+    var TRACK: Boolean
     
-    var VIDEO: Boolean = js.native
+    var VIDEO: Boolean
   }
   object APPLET {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       APPLET: Boolean,
       AREA: Boolean,
       AUDIO: Boolean,
@@ -95,104 +92,74 @@ object anon {
       __obj.asInstanceOf[APPLET]
     }
     
-    @scala.inline
-    implicit class APPLETMutableBuilder[Self <: APPLET] (val x: Self) extends AnyVal {
+    extension [Self <: APPLET](x: Self) {
       
-      @scala.inline
-      def setAPPLET(value: Boolean): Self = StObject.set(x, "APPLET", value.asInstanceOf[js.Any])
+      inline def setAPPLET(value: Boolean): Self = StObject.set(x, "APPLET", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAREA(value: Boolean): Self = StObject.set(x, "AREA", value.asInstanceOf[js.Any])
+      inline def setAREA(value: Boolean): Self = StObject.set(x, "AREA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAUDIO(value: Boolean): Self = StObject.set(x, "AUDIO", value.asInstanceOf[js.Any])
+      inline def setAUDIO(value: Boolean): Self = StObject.set(x, "AUDIO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBASE(value: Boolean): Self = StObject.set(x, "BASE", value.asInstanceOf[js.Any])
+      inline def setBASE(value: Boolean): Self = StObject.set(x, "BASE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBODY(value: Boolean): Self = StObject.set(x, "BODY", value.asInstanceOf[js.Any])
+      inline def setBODY(value: Boolean): Self = StObject.set(x, "BODY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCANVAS(value: Boolean): Self = StObject.set(x, "CANVAS", value.asInstanceOf[js.Any])
+      inline def setCANVAS(value: Boolean): Self = StObject.set(x, "CANVAS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEMBED(value: Boolean): Self = StObject.set(x, "EMBED", value.asInstanceOf[js.Any])
+      inline def setEMBED(value: Boolean): Self = StObject.set(x, "EMBED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHEAD(value: Boolean): Self = StObject.set(x, "HEAD", value.asInstanceOf[js.Any])
+      inline def setHEAD(value: Boolean): Self = StObject.set(x, "HEAD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIFRAME(value: Boolean): Self = StObject.set(x, "IFRAME", value.asInstanceOf[js.Any])
+      inline def setIFRAME(value: Boolean): Self = StObject.set(x, "IFRAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIMG(value: Boolean): Self = StObject.set(x, "IMG", value.asInstanceOf[js.Any])
+      inline def setIMG(value: Boolean): Self = StObject.set(x, "IMG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLINK(value: Boolean): Self = StObject.set(x, "LINK", value.asInstanceOf[js.Any])
+      inline def setLINK(value: Boolean): Self = StObject.set(x, "LINK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMAP(value: Boolean): Self = StObject.set(x, "MAP", value.asInstanceOf[js.Any])
+      inline def setMAP(value: Boolean): Self = StObject.set(x, "MAP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMETA(value: Boolean): Self = StObject.set(x, "META", value.asInstanceOf[js.Any])
+      inline def setMETA(value: Boolean): Self = StObject.set(x, "META", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNOEMBED(value: Boolean): Self = StObject.set(x, "NOEMBED", value.asInstanceOf[js.Any])
+      inline def setNOEMBED(value: Boolean): Self = StObject.set(x, "NOEMBED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNOSCRIPT(value: Boolean): Self = StObject.set(x, "NOSCRIPT", value.asInstanceOf[js.Any])
+      inline def setNOSCRIPT(value: Boolean): Self = StObject.set(x, "NOSCRIPT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOBJECT(value: Boolean): Self = StObject.set(x, "OBJECT", value.asInstanceOf[js.Any])
+      inline def setOBJECT(value: Boolean): Self = StObject.set(x, "OBJECT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPARAM(value: Boolean): Self = StObject.set(x, "PARAM", value.asInstanceOf[js.Any])
+      inline def setPARAM(value: Boolean): Self = StObject.set(x, "PARAM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPICTURE(value: Boolean): Self = StObject.set(x, "PICTURE", value.asInstanceOf[js.Any])
+      inline def setPICTURE(value: Boolean): Self = StObject.set(x, "PICTURE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSCRIPT(value: Boolean): Self = StObject.set(x, "SCRIPT", value.asInstanceOf[js.Any])
+      inline def setSCRIPT(value: Boolean): Self = StObject.set(x, "SCRIPT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSOURCE(value: Boolean): Self = StObject.set(x, "SOURCE", value.asInstanceOf[js.Any])
+      inline def setSOURCE(value: Boolean): Self = StObject.set(x, "SOURCE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSTYLE(value: Boolean): Self = StObject.set(x, "STYLE", value.asInstanceOf[js.Any])
+      inline def setSTYLE(value: Boolean): Self = StObject.set(x, "STYLE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSVG(value: Boolean): Self = StObject.set(x, "SVG", value.asInstanceOf[js.Any])
+      inline def setSVG(value: Boolean): Self = StObject.set(x, "SVG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTITLE(value: Boolean): Self = StObject.set(x, "TITLE", value.asInstanceOf[js.Any])
+      inline def setTITLE(value: Boolean): Self = StObject.set(x, "TITLE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTRACK(value: Boolean): Self = StObject.set(x, "TRACK", value.asInstanceOf[js.Any])
+      inline def setTRACK(value: Boolean): Self = StObject.set(x, "TRACK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVIDEO(value: Boolean): Self = StObject.set(x, "VIDEO", value.asInstanceOf[js.Any])
+      inline def setVIDEO(value: Boolean): Self = StObject.set(x, "VIDEO", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Editor extends StObject {
     
-    var editor: CodeMirrorEditor = js.native
+    var editor: CodeMirrorEditor
   }
   object Editor {
     
-    @scala.inline
-    def apply(editor: CodeMirrorEditor): Editor = {
+    inline def apply(editor: CodeMirrorEditor): Editor = {
       val __obj = js.Dynamic.literal(editor = editor.asInstanceOf[js.Any])
       __obj.asInstanceOf[Editor]
     }
     
-    @scala.inline
-    implicit class EditorMutableBuilder[Self <: Editor] (val x: Self) extends AnyVal {
+    extension [Self <: Editor](x: Self) {
       
-      @scala.inline
-      def setEditor(value: CodeMirrorEditor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+      inline def setEditor(value: CodeMirrorEditor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     }
   }
 }

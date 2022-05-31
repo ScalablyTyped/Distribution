@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "pretty-quick"
-version := "2.0-dt-20200413Z-748d03"
+version := "2.0-dt-20200413Z-09351c"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "prettier" % "2.1-dt-20201016Z-72dfd3",
-  "org.scalablytyped" %%% "std" % "4.1-2f6855")
+  "org.scalablytyped" %%% "prettier" % "2.1-dt-20201016Z-f6a40e",
+  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

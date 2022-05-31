@@ -9,25 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  object createWorker {
-    
-    inline def apply(
-      canvas: HTMLCanvasElement,
-      workerUrl: String,
-      listener: js.Function1[/* ev */ MessageEvent[js.Any], js.Any]
-    ): WorkerInterface = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], workerUrl.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[WorkerInterface]
-    
-    @JSImport("offscreen-canvas", "createWorker")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  @JSImport("offscreen-canvas", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  object insideWorker {
-    
-    inline def apply(listener: js.Function1[/* ev */ MessageEvent[js.Any], js.Any]): typings.offscreenCanvas.insideWorkerMod.WorkerInterface = ^.asInstanceOf[js.Dynamic].apply(listener.asInstanceOf[js.Any]).asInstanceOf[typings.offscreenCanvas.insideWorkerMod.WorkerInterface]
-    
-    @JSImport("offscreen-canvas", "insideWorker")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def createWorker(
+    canvas: HTMLCanvasElement,
+    workerUrl: String,
+    listener: js.Function1[/* ev */ MessageEvent[js.Any], js.Any]
+  ): WorkerInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("createWorker")(canvas.asInstanceOf[js.Any], workerUrl.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[WorkerInterface]
+  
+  inline def insideWorker(listener: js.Function1[/* ev */ MessageEvent[js.Any], js.Any]): typings.offscreenCanvas.insideWorkerMod.WorkerInterface = ^.asInstanceOf[js.Dynamic].applyDynamic("insideWorker")(listener.asInstanceOf[js.Any]).asInstanceOf[typings.offscreenCanvas.insideWorkerMod.WorkerInterface]
 }

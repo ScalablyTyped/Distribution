@@ -13,14 +13,13 @@ import typings.babylonjs.webXRManagedOutputCanvasMod.WebXRManagedOutputCanvasOpt
 import typings.babylonjs.webXRTypesMod.WebXRRenderTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webXRDefaultExperienceMod {
   
   @JSImport("babylonjs/XR/webXRDefaultExperience", "WebXRDefaultExperience")
   @js.native
-  class WebXRDefaultExperience protected () extends StObject {
+  /* private */ class WebXRDefaultExperience () extends StObject {
     
     /**
       * Base experience
@@ -60,18 +59,18 @@ object webXRDefaultExperienceMod {
   /* static members */
   object WebXRDefaultExperience {
     
+    @JSImport("babylonjs/XR/webXRDefaultExperience", "WebXRDefaultExperience")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates the default xr experience
       * @param scene scene
       * @param options options for basic configuration
       * @returns resulting WebXRDefaultExperience
       */
-    @JSImport("babylonjs/XR/webXRDefaultExperience", "WebXRDefaultExperience.CreateAsync")
-    @js.native
-    def CreateAsync(scene: Scene): js.Promise[WebXRDefaultExperience] = js.native
-    @JSImport("babylonjs/XR/webXRDefaultExperience", "WebXRDefaultExperience.CreateAsync")
-    @js.native
-    def CreateAsync(scene: Scene, options: WebXRDefaultExperienceOptions): js.Promise[WebXRDefaultExperience] = js.native
+    inline def CreateAsync(scene: Scene): js.Promise[WebXRDefaultExperience] = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(scene.asInstanceOf[js.Any]).asInstanceOf[js.Promise[WebXRDefaultExperience]]
+    inline def CreateAsync(scene: Scene, options: WebXRDefaultExperienceOptions): js.Promise[WebXRDefaultExperience] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(scene.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WebXRDefaultExperience]]
   }
   
   @JSImport("babylonjs/XR/webXRDefaultExperience", "WebXRDefaultExperienceOptions")

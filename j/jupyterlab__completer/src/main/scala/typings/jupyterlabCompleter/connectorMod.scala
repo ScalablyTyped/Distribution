@@ -6,7 +6,6 @@ import typings.jupyterlabCompleter.handlerMod.CompletionHandler.IRequest
 import typings.jupyterlabStatedb.mod.DataConnector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object connectorMod {
@@ -21,15 +20,25 @@ object connectorMod {
       */
     def this(options: IOptions) = this()
     
-    var _context: js.Any = js.native
+    /* private */ var _context: js.Any = js.native
     
-    var _kernel: js.Any = js.native
+    /* private */ var _kernel: js.Any = js.native
   }
   object CompletionConnector {
     
     /**
       * The instantiation options for cell completion handlers.
       */
-    type IOptions = typings.jupyterlabCompleter.kernelconnectorMod.KernelConnector.IOptions with typings.jupyterlabCompleter.contextconnectorMod.ContextConnector.IOptions
+    trait IOptions
+      extends StObject
+         with typings.jupyterlabCompleter.kernelconnectorMod.KernelConnector.IOptions
+         with typings.jupyterlabCompleter.contextconnectorMod.ContextConnector.IOptions
+    object IOptions {
+      
+      inline def apply(): IOptions = {
+        val __obj = js.Dynamic.literal(editor = null, session = null)
+        __obj.asInstanceOf[IOptions]
+      }
+    }
   }
 }

@@ -56,21 +56,30 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ojsliderMod {
   
   @js.native
-  trait ojSlider extends editableValue[Double | Null, ojSliderSettableProperties, Double | Null, Double | Null] {
+  trait ojSlider
+    extends StObject
+       with editableValue[Double | Null, ojSliderSettableProperties, Double | Null, Double | Null] {
     
     def addEventListener(
       `type`: orientationChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[horizontal | vertical], _]
+      listener: js.ThisFunction1[
+          /* this */ HTMLElement, 
+          /* ev */ JetElementCustomEvent[horizontal | vertical], 
+          js.Any
+        ]
     ): Unit = js.native
     def addEventListener(
       `type`: orientationChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[horizontal | vertical], _],
+      listener: js.ThisFunction1[
+          /* this */ HTMLElement, 
+          /* ev */ JetElementCustomEvent[horizontal | vertical], 
+          js.Any
+        ],
       useCapture: Boolean
     ): Unit = js.native
     def addEventListener(
@@ -78,7 +87,7 @@ object ojsliderMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[fromMin | fromMax | single], 
-          _
+          js.Any
         ]
     ): Unit = js.native
     def addEventListener(
@@ -86,52 +95,52 @@ object ojsliderMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[fromMin | fromMax | single], 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_maxChanged(
       `type`: maxChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double | Null], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double | Null], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_maxChanged(
       `type`: maxChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double | Null], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double | Null], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_minChanged(
       `type`: minChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double | Null], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double | Null], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_minChanged(
       `type`: minChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double | Null], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double | Null], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_stepChanged(
       `type`: stepChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double | Null], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double | Null], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_stepChanged(
       `type`: stepChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double | Null], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double | Null], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_transientValueChanged(
       `type`: transientValueChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_transientValueChanged(
       `type`: transientValueChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     
@@ -152,23 +161,23 @@ object ojsliderMod {
     
     var min: Double | Null = js.native
     
-    var onMaxChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
+    var onMaxChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], js.Any]) | Null = js.native
     
-    var onMinChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
+    var onMinChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], js.Any]) | Null = js.native
     
     @JSName("onOjAnimateEnd")
-    var onOjAnimateEnd_ojSlider: (js.Function1[/* event */ ojAnimateEnd, _]) | Null = js.native
+    var onOjAnimateEnd_ojSlider: (js.Function1[/* event */ ojAnimateEnd, js.Any]) | Null = js.native
     
     @JSName("onOjAnimateStart")
-    var onOjAnimateStart_ojSlider: (js.Function1[/* event */ ojAnimateStart, _]) | Null = js.native
+    var onOjAnimateStart_ojSlider: (js.Function1[/* event */ ojAnimateStart, js.Any]) | Null = js.native
     
-    var onOrientationChanged: (js.Function1[/* event */ JetElementCustomEvent[horizontal | vertical], _]) | Null = js.native
+    var onOrientationChanged: (js.Function1[/* event */ JetElementCustomEvent[horizontal | vertical], js.Any]) | Null = js.native
     
-    var onStepChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
+    var onStepChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], js.Any]) | Null = js.native
     
-    var onTransientValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+    var onTransientValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], js.Any]) | Null = js.native
     
-    var onTypeChanged: (js.Function1[/* event */ JetElementCustomEvent[fromMin | fromMax | single], _]) | Null = js.native
+    var onTypeChanged: (js.Function1[/* event */ JetElementCustomEvent[fromMin | fromMax | single], js.Any]) | Null = js.native
     
     var orientation: horizontal | vertical = js.native
     
@@ -197,8 +206,6 @@ object ojsliderMod {
     def setProperty_translations(property: translations, value: InvalidStep): Unit = js.native
     @JSName("setProperty")
     def setProperty_value(property: value): Unit = js.native
-    @JSName("setProperty")
-    def setProperty_value(property: value, value: Double): Unit = js.native
     
     var step: Double | Null = js.native
     
@@ -216,31 +223,31 @@ object ojsliderMod {
     type ojAnimateStart = CustomEvent[Element]
   }
   
-  @js.native
-  trait ojSliderEventMap extends editableValueEventMap[Double | Null, ojSliderSettableProperties, Double | Null, Double | Null] {
+  trait ojSliderEventMap
+    extends StObject
+       with editableValueEventMap[Double | Null, ojSliderSettableProperties, Double | Null, Double | Null] {
     
-    var maxChanged: JetElementCustomEvent[Double | Null] = js.native
+    var maxChanged: JetElementCustomEvent[Double | Null]
     
-    var minChanged: JetElementCustomEvent[Double | Null] = js.native
+    var minChanged: JetElementCustomEvent[Double | Null]
     
     @JSName("ojAnimateEnd")
-    var ojAnimateEnd_ojSliderEventMap: ojAnimateEnd = js.native
+    var ojAnimateEnd_ojSliderEventMap: ojAnimateEnd
     
     @JSName("ojAnimateStart")
-    var ojAnimateStart_ojSliderEventMap: ojAnimateStart = js.native
+    var ojAnimateStart_ojSliderEventMap: ojAnimateStart
     
-    var orientationChanged: JetElementCustomEvent[horizontal | vertical] = js.native
+    var orientationChanged: JetElementCustomEvent[horizontal | vertical]
     
-    var stepChanged: JetElementCustomEvent[Double | Null] = js.native
+    var stepChanged: JetElementCustomEvent[Double | Null]
     
-    var transientValueChanged: JetElementCustomEvent[Double] = js.native
+    var transientValueChanged: JetElementCustomEvent[Double]
     
-    var typeChanged: JetElementCustomEvent[fromMin | fromMax | single] = js.native
+    var typeChanged: JetElementCustomEvent[fromMin | fromMax | single]
   }
   object ojSliderEventMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: UIEvent,
       animationcancel: AnimationEvent,
       animationend: AnimationEvent,
@@ -356,57 +363,48 @@ object ojsliderMod {
       __obj.asInstanceOf[ojSliderEventMap]
     }
     
-    @scala.inline
-    implicit class ojSliderEventMapMutableBuilder[Self <: ojSliderEventMap] (val x: Self) extends AnyVal {
+    extension [Self <: ojSliderEventMap](x: Self) {
       
-      @scala.inline
-      def setMaxChanged(value: JetElementCustomEvent[Double | Null]): Self = StObject.set(x, "maxChanged", value.asInstanceOf[js.Any])
+      inline def setMaxChanged(value: JetElementCustomEvent[Double | Null]): Self = StObject.set(x, "maxChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinChanged(value: JetElementCustomEvent[Double | Null]): Self = StObject.set(x, "minChanged", value.asInstanceOf[js.Any])
+      inline def setMinChanged(value: JetElementCustomEvent[Double | Null]): Self = StObject.set(x, "minChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
+      inline def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjAnimateStart(value: ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
+      inline def setOjAnimateStart(value: ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientationChanged(value: JetElementCustomEvent[horizontal | vertical]): Self = StObject.set(x, "orientationChanged", value.asInstanceOf[js.Any])
+      inline def setOrientationChanged(value: JetElementCustomEvent[horizontal | vertical]): Self = StObject.set(x, "orientationChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepChanged(value: JetElementCustomEvent[Double | Null]): Self = StObject.set(x, "stepChanged", value.asInstanceOf[js.Any])
+      inline def setStepChanged(value: JetElementCustomEvent[Double | Null]): Self = StObject.set(x, "stepChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransientValueChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "transientValueChanged", value.asInstanceOf[js.Any])
+      inline def setTransientValueChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "transientValueChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeChanged(value: JetElementCustomEvent[fromMin | fromMax | single]): Self = StObject.set(x, "typeChanged", value.asInstanceOf[js.Any])
+      inline def setTypeChanged(value: JetElementCustomEvent[fromMin | fromMax | single]): Self = StObject.set(x, "typeChanged", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait ojSliderSettableProperties extends editableValueSettableProperties[Double | Null, Double | Null, Double | Null] {
+  trait ojSliderSettableProperties
+    extends StObject
+       with editableValueSettableProperties[Double | Null, Double | Null, Double | Null] {
     
-    var max: Double | Null = js.native
+    var max: Double | Null
     
-    var min: Double | Null = js.native
+    var min: Double | Null
     
-    var orientation: horizontal | vertical = js.native
+    var orientation: horizontal | vertical
     
-    var step: Double | Null = js.native
+    var step: Double | Null
     
-    val transientValue: Double = js.native
+    val transientValue: Double
     
     @JSName("translations")
-    var translations_ojSliderSettableProperties: InvalidStep = js.native
+    var translations_ojSliderSettableProperties: InvalidStep
     
-    var `type`: fromMin | fromMax | single = js.native
+    var `type`: fromMin | fromMax | single
   }
   object ojSliderSettableProperties {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       disabled: Boolean,
       displayOptions: ConverterHint,
       help: Instruction,
@@ -419,209 +417,158 @@ object ojsliderMod {
       `type`: fromMin | fromMax | single,
       valid: valid | pending | invalidHidden | invalidShown
     ): ojSliderSettableProperties = {
-      val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], transientValue = transientValue.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], transientValue = transientValue.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], describedBy = null, max = null, min = null, step = null, value = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ojSliderSettableProperties]
     }
     
-    @scala.inline
-    implicit class ojSliderSettablePropertiesMutableBuilder[Self <: ojSliderSettableProperties] (val x: Self) extends AnyVal {
+    extension [Self <: ojSliderSettableProperties](x: Self) {
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxNull: Self = StObject.set(x, "max", null)
+      inline def setMaxNull: Self = StObject.set(x, "max", null)
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinNull: Self = StObject.set(x, "min", null)
+      inline def setMinNull: Self = StObject.set(x, "min", null)
       
-      @scala.inline
-      def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepNull: Self = StObject.set(x, "step", null)
+      inline def setStepNull: Self = StObject.set(x, "step", null)
       
-      @scala.inline
-      def setTransientValue(value: Double): Self = StObject.set(x, "transientValue", value.asInstanceOf[js.Any])
+      inline def setTransientValue(value: Double): Self = StObject.set(x, "transientValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslations(value: InvalidStep): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: InvalidStep): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: fromMin | fromMax | single): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: fromMin | fromMax | single): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojslider.ojSliderSettableProperties> */
-  @js.native
   trait ojSliderSettablePropertiesLenient
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var describedBy: js.UndefOr[String | Null] = js.native
+    var describedBy: js.UndefOr[String | Null] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var displayOptions: js.UndefOr[ConverterHint] = js.native
+    var displayOptions: js.UndefOr[ConverterHint] = js.undefined
     
-    var help: js.UndefOr[Instruction] = js.native
+    var help: js.UndefOr[Instruction] = js.undefined
     
-    var helpHints: js.UndefOr[Definition] = js.native
+    var helpHints: js.UndefOr[Definition] = js.undefined
     
-    var labelHint: js.UndefOr[String] = js.native
+    var labelHint: js.UndefOr[String] = js.undefined
     
-    var max: js.UndefOr[Double | Null] = js.native
+    var max: js.UndefOr[Double | Null] = js.undefined
     
-    var messagesCustom: js.UndefOr[js.Array[^]] = js.native
+    var messagesCustom: js.UndefOr[js.Array[^]] = js.undefined
     
-    var min: js.UndefOr[Double | Null] = js.native
+    var min: js.UndefOr[Double | Null] = js.undefined
     
-    var orientation: js.UndefOr[horizontal | vertical] = js.native
+    var orientation: js.UndefOr[horizontal | vertical] = js.undefined
     
-    var step: js.UndefOr[Double | Null] = js.native
+    var step: js.UndefOr[Double | Null] = js.undefined
     
-    var transientValue: js.UndefOr[Double] = js.native
+    var transientValue: js.UndefOr[Double] = js.undefined
     
-    var translations: js.UndefOr[InvalidStep] = js.native
+    var translations: js.UndefOr[InvalidStep] = js.undefined
     
-    var `type`: js.UndefOr[fromMin | fromMax | single] = js.native
+    var `type`: js.UndefOr[fromMin | fromMax | single] = js.undefined
     
     var valid: js.UndefOr[
         typings.oracleOraclejet.oracleOraclejetStrings.valid | pending | invalidHidden | invalidShown
-      ] = js.native
+      ] = js.undefined
     
-    var value: js.UndefOr[Double | Null] = js.native
+    var value: js.UndefOr[Double | Null] = js.undefined
   }
   object ojSliderSettablePropertiesLenient {
     
-    @scala.inline
-    def apply(): ojSliderSettablePropertiesLenient = {
+    inline def apply(): ojSliderSettablePropertiesLenient = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ojSliderSettablePropertiesLenient]
     }
     
-    @scala.inline
-    implicit class ojSliderSettablePropertiesLenientMutableBuilder[Self <: ojSliderSettablePropertiesLenient] (val x: Self) extends AnyVal {
+    extension [Self <: ojSliderSettablePropertiesLenient](x: Self) {
       
-      @scala.inline
-      def setDescribedBy(value: String): Self = StObject.set(x, "describedBy", value.asInstanceOf[js.Any])
+      inline def setDescribedBy(value: String): Self = StObject.set(x, "describedBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescribedByNull: Self = StObject.set(x, "describedBy", null)
+      inline def setDescribedByNull: Self = StObject.set(x, "describedBy", null)
       
-      @scala.inline
-      def setDescribedByUndefined: Self = StObject.set(x, "describedBy", js.undefined)
+      inline def setDescribedByUndefined: Self = StObject.set(x, "describedBy", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setDisplayOptions(value: ConverterHint): Self = StObject.set(x, "displayOptions", value.asInstanceOf[js.Any])
+      inline def setDisplayOptions(value: ConverterHint): Self = StObject.set(x, "displayOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayOptionsUndefined: Self = StObject.set(x, "displayOptions", js.undefined)
+      inline def setDisplayOptionsUndefined: Self = StObject.set(x, "displayOptions", js.undefined)
       
-      @scala.inline
-      def setHelp(value: Instruction): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+      inline def setHelp(value: Instruction): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelpHints(value: Definition): Self = StObject.set(x, "helpHints", value.asInstanceOf[js.Any])
+      inline def setHelpHints(value: Definition): Self = StObject.set(x, "helpHints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelpHintsUndefined: Self = StObject.set(x, "helpHints", js.undefined)
+      inline def setHelpHintsUndefined: Self = StObject.set(x, "helpHints", js.undefined)
       
-      @scala.inline
-      def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
+      inline def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
       
-      @scala.inline
-      def setLabelHint(value: String): Self = StObject.set(x, "labelHint", value.asInstanceOf[js.Any])
+      inline def setLabelHint(value: String): Self = StObject.set(x, "labelHint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelHintUndefined: Self = StObject.set(x, "labelHint", js.undefined)
+      inline def setLabelHintUndefined: Self = StObject.set(x, "labelHint", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxNull: Self = StObject.set(x, "max", null)
+      inline def setMaxNull: Self = StObject.set(x, "max", null)
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMessagesCustom(value: js.Array[^]): Self = StObject.set(x, "messagesCustom", value.asInstanceOf[js.Any])
+      inline def setMessagesCustom(value: js.Array[^]): Self = StObject.set(x, "messagesCustom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagesCustomUndefined: Self = StObject.set(x, "messagesCustom", js.undefined)
+      inline def setMessagesCustomUndefined: Self = StObject.set(x, "messagesCustom", js.undefined)
       
-      @scala.inline
-      def setMessagesCustomVarargs(value: ^ *): Self = StObject.set(x, "messagesCustom", js.Array(value :_*))
+      inline def setMessagesCustomVarargs(value: ^ *): Self = StObject.set(x, "messagesCustom", js.Array(value :_*))
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinNull: Self = StObject.set(x, "min", null)
+      inline def setMinNull: Self = StObject.set(x, "min", null)
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+      inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepNull: Self = StObject.set(x, "step", null)
+      inline def setStepNull: Self = StObject.set(x, "step", null)
       
-      @scala.inline
-      def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
       
-      @scala.inline
-      def setTransientValue(value: Double): Self = StObject.set(x, "transientValue", value.asInstanceOf[js.Any])
+      inline def setTransientValue(value: Double): Self = StObject.set(x, "transientValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransientValueUndefined: Self = StObject.set(x, "transientValue", js.undefined)
+      inline def setTransientValueUndefined: Self = StObject.set(x, "transientValue", js.undefined)
       
-      @scala.inline
-      def setTranslations(value: InvalidStep): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: InvalidStep): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+      inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
       
-      @scala.inline
-      def setType(value: fromMin | fromMax | single): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: fromMin | fromMax | single): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setValid(value: valid | pending | invalidHidden | invalidShown): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: valid | pending | invalidHidden | invalidShown): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
+      inline def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setValueNull: Self = StObject.set(x, "value", null)
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

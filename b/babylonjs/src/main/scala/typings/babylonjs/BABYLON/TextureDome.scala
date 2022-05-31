@@ -3,22 +3,23 @@ package typings.babylonjs.BABYLON
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextureDome[T /* <: Texture */] extends TransformNode {
+trait TextureDome[T /* <: Texture */]
+  extends StObject
+     with TransformNode {
   
   /* protected */ def _changeTextureMode(value: Double): Unit = js.native
   
-  var _crossEye: js.Any = js.native
+  /* private */ var _crossEye: js.Any = js.native
   
-  var _halfDome: js.Any = js.native
+  /* private */ var _halfDome: js.Any = js.native
   
   /**
     * A mesh that will be used to mask the back of the dome in case it is a 180 degree movie.
     */
-  var _halfDomeMask: js.Any = js.native
+  /* private */ var _halfDomeMask: js.Any = js.native
   
   /* protected */ def _initTexture(urlsOrElement: String, scene: Scene, options: js.Any): T = js.native
   /* protected */ def _initTexture(urlsOrElement: js.Array[String], scene: Scene, options: js.Any): T = js.native
@@ -27,26 +28,26 @@ trait TextureDome[T /* <: Texture */] extends TransformNode {
   /**
     * The skybox material
     */
-  var _material: BackgroundMaterial = js.native
+  /* protected */ var _material: BackgroundMaterial = js.native
   
   /**
     * The surface used for the dome
     */
-  var _mesh: Mesh = js.native
+  /* protected */ var _mesh: Mesh = js.native
   
   /**
     * Oberserver used in Stereoscopic VR Mode.
     */
-  var _onBeforeCameraRenderObserver: js.Any = js.native
+  /* private */ var _onBeforeCameraRenderObserver: js.Any = js.native
   
   /**
     * The texture being displayed on the sphere
     */
-  var _texture: T = js.native
+  /* protected */ var _texture: T = js.native
   
-  var _textureMode: Double = js.native
+  /* protected */ var _textureMode: Double = js.native
   
-  var _useDirectMapping: Boolean = js.native
+  /* protected */ var _useDirectMapping: Boolean = js.native
   
   /**
     * Is it a cross-eye texture?
@@ -83,8 +84,8 @@ trait TextureDome[T /* <: Texture */] extends TransformNode {
     */
   def mesh: Mesh = js.native
   
-  var onError: Nullable[
-    js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+  /* protected */ var onError: Nullable[
+    js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
   ] = js.native
   
   /**

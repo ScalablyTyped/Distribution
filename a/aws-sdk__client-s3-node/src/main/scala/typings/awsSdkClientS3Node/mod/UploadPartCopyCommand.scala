@@ -1,5 +1,6 @@
 package typings.awsSdkClientS3Node.mod
 
+import typings.awsSdkClientS3Node.typesUploadPartCopyInputMod.UploadPartCopyInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class UploadPartCopyCommand protected ()
   extends typings.awsSdkClientS3Node.uploadPartCopyCommandMod.UploadPartCopyCommand {
-  def this(input: typings.awsSdkClientS3Node.typesUploadPartCopyInputMod.UploadPartCopyInput) = this()
+  def this(input: UploadPartCopyInput) = this()
 }

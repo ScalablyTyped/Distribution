@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "keyboard-key"
-version := "1.1.0-41388d"
+version := "1.1.0-5d3533"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

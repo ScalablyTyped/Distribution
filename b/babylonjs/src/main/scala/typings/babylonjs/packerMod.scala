@@ -8,7 +8,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object packerMod {
@@ -34,47 +33,47 @@ object packerMod {
       * @param dtUnits is 1/dtSize
       * @param update flag to update the input meshes
       */
-    var _calculateMeshUVFrames: js.Any = js.native
+    /* private */ var _calculateMeshUVFrames: js.Any = js.native
     
     /**
       * Calculates the Size of the Channel Sets
       * @returns Vector2
       */
-    var _calculateSize: js.Any = js.native
+    /* private */ var _calculateSize: js.Any = js.native
     
     /**
       * Starts the package process
       * @param resolve The promises resolution function
       * @returns TexturePacker
       */
-    var _createFrames: js.Any = js.native
+    /* private */ var _createFrames: js.Any = js.native
     
     /** The expected number of textures the system is parsing. */
-    var _expecting: js.Any = js.native
+    /* private */ var _expecting: js.Any = js.native
     
     /**
       * Calculates the frames Offset.
       * @param index of the frame
       * @returns Vector2
       */
-    var _getFrameOffset: js.Any = js.native
+    /* private */ var _getFrameOffset: js.Any = js.native
     
     /** The padding value from Math.ceil(frameSize * paddingRatio) */
-    var _paddingValue: js.Any = js.native
+    /* private */ var _paddingValue: js.Any = js.native
     
     /**
       * Updates a Mesh to the frame data
       * @param mesh that is the target
       * @param frameID or the frame index
       */
-    var _updateMeshUV: js.Any = js.native
+    /* private */ var _updateMeshUV: js.Any = js.native
     
     /**
       * Updates a Meshes materials to use the texture packer channels
       * @param m is the mesh to target
       * @param force all channels on the packer to be set.
       */
-    var _updateTextureReferences: js.Any = js.native
+    /* private */ var _updateTextureReferences: js.Any = js.native
     
     /**
       * Disposes all textures associated with this packer
@@ -87,9 +86,9 @@ object packerMod {
       * @param quality of the image if downloading as jpeg, Ranges from >0 to 1.
       */
     def download(): Unit = js.native
-    def download(imageType: js.UndefOr[scala.Nothing], quality: Double): Unit = js.native
     def download(imageType: String): Unit = js.native
     def download(imageType: String, quality: Double): Unit = js.native
+    def download(imageType: Unit, quality: Double): Unit = js.native
     
     /** The Container array for the frames that are generated */
     var frames: js.Array[TexturePackerFrame] = js.native
@@ -167,216 +166,178 @@ object packerMod {
     val SUBUV_WRAP: Double = js.native
   }
   
-  @js.native
   trait ITexturePackerJSON extends StObject {
     
     /**
       * The frame data of the Packer
       */
-    var frames: js.Array[Double] = js.native
+    var frames: js.Array[Double]
     
     /**
       * The frame ID
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The options of the Packer
       */
-    var options: ITexturePackerOptions = js.native
+    var options: ITexturePackerOptions
     
     /**
       * The base64 channel data
       */
-    var sets: js.Any = js.native
+    var sets: js.Any
   }
   object ITexturePackerJSON {
     
-    @scala.inline
-    def apply(frames: js.Array[Double], name: String, options: ITexturePackerOptions, sets: js.Any): ITexturePackerJSON = {
+    inline def apply(frames: js.Array[Double], name: String, options: ITexturePackerOptions, sets: js.Any): ITexturePackerJSON = {
       val __obj = js.Dynamic.literal(frames = frames.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], sets = sets.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITexturePackerJSON]
     }
     
-    @scala.inline
-    implicit class ITexturePackerJSONMutableBuilder[Self <: ITexturePackerJSON] (val x: Self) extends AnyVal {
+    extension [Self <: ITexturePackerJSON](x: Self) {
       
-      @scala.inline
-      def setFrames(value: js.Array[Double]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+      inline def setFrames(value: js.Array[Double]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFramesVarargs(value: Double*): Self = StObject.set(x, "frames", js.Array(value :_*))
+      inline def setFramesVarargs(value: Double*): Self = StObject.set(x, "frames", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: ITexturePackerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: ITexturePackerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSets(value: js.Any): Self = StObject.set(x, "sets", value.asInstanceOf[js.Any])
+      inline def setSets(value: js.Any): Self = StObject.set(x, "sets", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait ITexturePackerOptions extends StObject {
     
     /**
       * number of columns if using custom column count layout(2).  This defaults to 4.
       */
-    var colnum: js.UndefOr[Double] = js.native
+    var colnum: js.UndefOr[Double] = js.undefined
     
     /**
       * string value representing the context fill style color.  Defaults to 'black'.
       */
-    var customFillColor: js.UndefOr[String] = js.native
+    var customFillColor: js.UndefOr[String] = js.undefined
     
     /**
       * boolean flag to dispose all the source textures.  Defaults to true.
       */
-    var disposeSources: js.UndefOr[Boolean] = js.native
+    var disposeSources: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Fills the blank cells in a set to the customFillColor.  Defaults to true.
       */
-    var fillBlanks: js.UndefOr[Boolean] = js.native
+    var fillBlanks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Width and Height Value of each Frame in the TexturePacker Sets
       */
-    var frameSize: js.UndefOr[Double] = js.native
+    var frameSize: js.UndefOr[Double] = js.undefined
     
     /**
       * number representing the layout style. Defaults to LAYOUT_STRIP
       */
-    var layout: js.UndefOr[Double] = js.native
+    var layout: js.UndefOr[Double] = js.undefined
     
     /**
       * Custom targets for the channels of a texture packer.  Default is all the channels of the Standard Material
       */
-    var map: js.UndefOr[js.Array[String]] = js.native
+    var map: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * If in SUBUV_COLOR padding mode what color to use.
       */
-    var paddingColor: js.UndefOr[Color3 | Color4] = js.native
+    var paddingColor: js.UndefOr[Color3 | Color4] = js.undefined
     
     /**
       * Number that declares the fill method for the padding gutter.
       */
-    var paddingMode: js.UndefOr[Double] = js.native
+    var paddingMode: js.UndefOr[Double] = js.undefined
     
     /**
       * Ratio of the value to add padding wise to each cell.  Defaults to 0.0115
       */
-    var paddingRatio: js.UndefOr[Double] = js.native
+    var paddingRatio: js.UndefOr[Double] = js.undefined
     
     /**
       * flag to update the input meshes to the new packed texture after compilation. Defaults to true.
       */
-    var updateInputMeshes: js.UndefOr[Boolean] = js.native
+    var updateInputMeshes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * the UV input targets, as a single value for all meshes. Defaults to VertexBuffer.UVKind
       */
-    var uvsIn: js.UndefOr[String] = js.native
+    var uvsIn: js.UndefOr[String] = js.undefined
     
     /**
       * the UV output targets, as a single value for all meshes.  Defaults to VertexBuffer.UVKind
       */
-    var uvsOut: js.UndefOr[String] = js.native
+    var uvsOut: js.UndefOr[String] = js.undefined
   }
   object ITexturePackerOptions {
     
-    @scala.inline
-    def apply(): ITexturePackerOptions = {
+    inline def apply(): ITexturePackerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITexturePackerOptions]
     }
     
-    @scala.inline
-    implicit class ITexturePackerOptionsMutableBuilder[Self <: ITexturePackerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ITexturePackerOptions](x: Self) {
       
-      @scala.inline
-      def setColnum(value: Double): Self = StObject.set(x, "colnum", value.asInstanceOf[js.Any])
+      inline def setColnum(value: Double): Self = StObject.set(x, "colnum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColnumUndefined: Self = StObject.set(x, "colnum", js.undefined)
+      inline def setColnumUndefined: Self = StObject.set(x, "colnum", js.undefined)
       
-      @scala.inline
-      def setCustomFillColor(value: String): Self = StObject.set(x, "customFillColor", value.asInstanceOf[js.Any])
+      inline def setCustomFillColor(value: String): Self = StObject.set(x, "customFillColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomFillColorUndefined: Self = StObject.set(x, "customFillColor", js.undefined)
+      inline def setCustomFillColorUndefined: Self = StObject.set(x, "customFillColor", js.undefined)
       
-      @scala.inline
-      def setDisposeSources(value: Boolean): Self = StObject.set(x, "disposeSources", value.asInstanceOf[js.Any])
+      inline def setDisposeSources(value: Boolean): Self = StObject.set(x, "disposeSources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisposeSourcesUndefined: Self = StObject.set(x, "disposeSources", js.undefined)
+      inline def setDisposeSourcesUndefined: Self = StObject.set(x, "disposeSources", js.undefined)
       
-      @scala.inline
-      def setFillBlanks(value: Boolean): Self = StObject.set(x, "fillBlanks", value.asInstanceOf[js.Any])
+      inline def setFillBlanks(value: Boolean): Self = StObject.set(x, "fillBlanks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillBlanksUndefined: Self = StObject.set(x, "fillBlanks", js.undefined)
+      inline def setFillBlanksUndefined: Self = StObject.set(x, "fillBlanks", js.undefined)
       
-      @scala.inline
-      def setFrameSize(value: Double): Self = StObject.set(x, "frameSize", value.asInstanceOf[js.Any])
+      inline def setFrameSize(value: Double): Self = StObject.set(x, "frameSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameSizeUndefined: Self = StObject.set(x, "frameSize", js.undefined)
+      inline def setFrameSizeUndefined: Self = StObject.set(x, "frameSize", js.undefined)
       
-      @scala.inline
-      def setLayout(value: Double): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: Double): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+      inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
-      @scala.inline
-      def setMap(value: js.Array[String]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: js.Array[String]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      @scala.inline
-      def setMapVarargs(value: String*): Self = StObject.set(x, "map", js.Array(value :_*))
+      inline def setMapVarargs(value: String*): Self = StObject.set(x, "map", js.Array(value :_*))
       
-      @scala.inline
-      def setPaddingColor(value: Color3 | Color4): Self = StObject.set(x, "paddingColor", value.asInstanceOf[js.Any])
+      inline def setPaddingColor(value: Color3 | Color4): Self = StObject.set(x, "paddingColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingColorUndefined: Self = StObject.set(x, "paddingColor", js.undefined)
+      inline def setPaddingColorUndefined: Self = StObject.set(x, "paddingColor", js.undefined)
       
-      @scala.inline
-      def setPaddingMode(value: Double): Self = StObject.set(x, "paddingMode", value.asInstanceOf[js.Any])
+      inline def setPaddingMode(value: Double): Self = StObject.set(x, "paddingMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingModeUndefined: Self = StObject.set(x, "paddingMode", js.undefined)
+      inline def setPaddingModeUndefined: Self = StObject.set(x, "paddingMode", js.undefined)
       
-      @scala.inline
-      def setPaddingRatio(value: Double): Self = StObject.set(x, "paddingRatio", value.asInstanceOf[js.Any])
+      inline def setPaddingRatio(value: Double): Self = StObject.set(x, "paddingRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingRatioUndefined: Self = StObject.set(x, "paddingRatio", js.undefined)
+      inline def setPaddingRatioUndefined: Self = StObject.set(x, "paddingRatio", js.undefined)
       
-      @scala.inline
-      def setUpdateInputMeshes(value: Boolean): Self = StObject.set(x, "updateInputMeshes", value.asInstanceOf[js.Any])
+      inline def setUpdateInputMeshes(value: Boolean): Self = StObject.set(x, "updateInputMeshes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateInputMeshesUndefined: Self = StObject.set(x, "updateInputMeshes", js.undefined)
+      inline def setUpdateInputMeshesUndefined: Self = StObject.set(x, "updateInputMeshes", js.undefined)
       
-      @scala.inline
-      def setUvsIn(value: String): Self = StObject.set(x, "uvsIn", value.asInstanceOf[js.Any])
+      inline def setUvsIn(value: String): Self = StObject.set(x, "uvsIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUvsInUndefined: Self = StObject.set(x, "uvsIn", js.undefined)
+      inline def setUvsInUndefined: Self = StObject.set(x, "uvsIn", js.undefined)
       
-      @scala.inline
-      def setUvsOut(value: String): Self = StObject.set(x, "uvsOut", value.asInstanceOf[js.Any])
+      inline def setUvsOut(value: String): Self = StObject.set(x, "uvsOut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUvsOutUndefined: Self = StObject.set(x, "uvsOut", js.undefined)
+      inline def setUvsOutUndefined: Self = StObject.set(x, "uvsOut", js.undefined)
     }
   }
 }

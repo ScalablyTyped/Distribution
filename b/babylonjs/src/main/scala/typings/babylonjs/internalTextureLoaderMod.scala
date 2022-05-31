@@ -5,7 +5,6 @@ import typings.babylonjs.typesMod.Nullable
 import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object internalTextureLoaderMod {
@@ -19,25 +18,25 @@ object internalTextureLoaderMod {
       * @param mimeType defines the optional mime type of the file being loaded
       * @returns true if the loader can load the specified file
       */
-    def canLoad(extension: String): Boolean = js.native
-    def canLoad(extension: String, mimeType: String): Boolean = js.native
+    def canLoad(`extension`: String): Boolean = js.native
+    def canLoad(`extension`: String, mimeType: String): Boolean = js.native
     
     def loadCubeData(
       data: js.Array[ArrayBufferView],
       texture: InternalTexture,
       createPolynomials: Boolean,
-      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
+      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
         ]
     ): Unit = js.native
     def loadCubeData(
       data: js.Array[ArrayBufferView],
       texture: InternalTexture,
       createPolynomials: Boolean,
-      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
+      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
         ],
       options: js.Any
     ): Unit = js.native
@@ -54,18 +53,18 @@ object internalTextureLoaderMod {
       data: ArrayBufferView,
       texture: InternalTexture,
       createPolynomials: Boolean,
-      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
+      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
         ]
     ): Unit = js.native
     def loadCubeData(
       data: ArrayBufferView,
       texture: InternalTexture,
       createPolynomials: Boolean,
-      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
+      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
         ],
       options: js.Any
     ): Unit = js.native

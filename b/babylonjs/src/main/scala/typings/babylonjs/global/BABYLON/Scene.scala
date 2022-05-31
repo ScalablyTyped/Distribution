@@ -1,16 +1,17 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.ICollisionCoordinator
+import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.BABYLON.SceneOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.Scene")
 @js.native
 class Scene protected ()
-  extends typings.babylonjs.BABYLON.Scene {
+  extends StObject
+     with typings.babylonjs.BABYLON.Scene {
   /**
     * Creates a new Scene
     * @param engine defines the engine to use to render this scene
@@ -18,6 +19,42 @@ class Scene protected ()
     */
   def this(engine: typings.babylonjs.BABYLON.Engine) = this()
   def this(engine: typings.babylonjs.BABYLON.Engine, options: SceneOptions) = this()
+  
+  /**
+    * Gets or sets the active clipplane 1
+    */
+  /* CompleteClass */
+  var clipPlane: Nullable[typings.babylonjs.BABYLON.Plane] = js.native
+  
+  /**
+    * Gets or sets the active clipplane 2
+    */
+  /* CompleteClass */
+  var clipPlane2: Nullable[typings.babylonjs.BABYLON.Plane] = js.native
+  
+  /**
+    * Gets or sets the active clipplane 3
+    */
+  /* CompleteClass */
+  var clipPlane3: Nullable[typings.babylonjs.BABYLON.Plane] = js.native
+  
+  /**
+    * Gets or sets the active clipplane 4
+    */
+  /* CompleteClass */
+  var clipPlane4: Nullable[typings.babylonjs.BABYLON.Plane] = js.native
+  
+  /**
+    * Gets or sets the active clipplane 5
+    */
+  /* CompleteClass */
+  var clipPlane5: Nullable[typings.babylonjs.BABYLON.Plane] = js.native
+  
+  /**
+    * Gets or sets the active clipplane 6
+    */
+  /* CompleteClass */
+  var clipPlane6: Nullable[typings.babylonjs.BABYLON.Plane] = js.native
 }
 /* static members */
 object Scene {
@@ -30,9 +67,7 @@ object Scene {
     * Factory used to create the a collision coordinator.
     * @returns The collision coordinator
     */
-  @JSGlobal("BABYLON.Scene.CollisionCoordinatorFactory")
-  @js.native
-  def CollisionCoordinatorFactory(): ICollisionCoordinator = js.native
+  inline def CollisionCoordinatorFactory(): ICollisionCoordinator = ^.asInstanceOf[js.Dynamic].applyDynamic("CollisionCoordinatorFactory")().asInstanceOf[ICollisionCoordinator]
   
   /**
     * Factory used to create the default material.
@@ -40,9 +75,7 @@ object Scene {
     * @param scene The scene to create the material for
     * @returns The default material
     */
-  @JSGlobal("BABYLON.Scene.DefaultMaterialFactory")
-  @js.native
-  def DefaultMaterialFactory(scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.Material = js.native
+  inline def DefaultMaterialFactory(scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.Material = ^.asInstanceOf[js.Dynamic].applyDynamic("DefaultMaterialFactory")(scene.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.Material]
   
   /** The fog density is following an exponential function */
   @JSGlobal("BABYLON.Scene.FOGMODE_EXP")
@@ -71,8 +104,7 @@ object Scene {
   @JSGlobal("BABYLON.Scene.MaxDeltaTime")
   @js.native
   def MaxDeltaTime: Double = js.native
-  @scala.inline
-  def MaxDeltaTime_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MaxDeltaTime")(x.asInstanceOf[js.Any])
+  inline def MaxDeltaTime_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MaxDeltaTime")(x.asInstanceOf[js.Any])
   
   /**
     * Gets or sets the minimum deltatime when deterministic lock step is enabled
@@ -81,6 +113,5 @@ object Scene {
   @JSGlobal("BABYLON.Scene.MinDeltaTime")
   @js.native
   def MinDeltaTime: Double = js.native
-  @scala.inline
-  def MinDeltaTime_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MinDeltaTime")(x.asInstanceOf[js.Any])
+  inline def MinDeltaTime_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MinDeltaTime")(x.asInstanceOf[js.Any])
 }

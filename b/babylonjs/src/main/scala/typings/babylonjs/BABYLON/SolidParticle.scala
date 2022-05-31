@@ -2,7 +2,6 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -150,7 +149,7 @@ trait SolidParticle extends StObject {
   /**
     * Custom object or properties.
     */
-  var props: Nullable[_] = js.native
+  var props: Nullable[js.Any] = js.native
   
   /**
     * Legacy support, changed quaternion to rotationQuaternion

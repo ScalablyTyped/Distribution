@@ -2,10 +2,8 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICullable extends StObject {
   
   /**
@@ -14,30 +12,26 @@ trait ICullable extends StObject {
     * @param frustumPlanes Camera near/planes
     * @returns true if the object is in frustum otherwise false
     */
-  def isCompletelyInFrustum(frustumPlanes: js.Array[Plane]): Boolean = js.native
+  def isCompletelyInFrustum(frustumPlanes: js.Array[Plane]): Boolean
   
   /**
     * Checks if the object or part of the object is in the frustum
     * @param frustumPlanes Camera near/planes
     * @returns true if the object is in frustum otherwise false
     */
-  def isInFrustum(frustumPlanes: js.Array[Plane]): Boolean = js.native
+  def isInFrustum(frustumPlanes: js.Array[Plane]): Boolean
 }
 object ICullable {
   
-  @scala.inline
-  def apply(isCompletelyInFrustum: js.Array[Plane] => Boolean, isInFrustum: js.Array[Plane] => Boolean): ICullable = {
+  inline def apply(isCompletelyInFrustum: js.Array[Plane] => Boolean, isInFrustum: js.Array[Plane] => Boolean): ICullable = {
     val __obj = js.Dynamic.literal(isCompletelyInFrustum = js.Any.fromFunction1(isCompletelyInFrustum), isInFrustum = js.Any.fromFunction1(isInFrustum))
     __obj.asInstanceOf[ICullable]
   }
   
-  @scala.inline
-  implicit class ICullableMutableBuilder[Self <: ICullable] (val x: Self) extends AnyVal {
+  extension [Self <: ICullable](x: Self) {
     
-    @scala.inline
-    def setIsCompletelyInFrustum(value: js.Array[Plane] => Boolean): Self = StObject.set(x, "isCompletelyInFrustum", js.Any.fromFunction1(value))
+    inline def setIsCompletelyInFrustum(value: js.Array[Plane] => Boolean): Self = StObject.set(x, "isCompletelyInFrustum", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsInFrustum(value: js.Array[Plane] => Boolean): Self = StObject.set(x, "isInFrustum", js.Any.fromFunction1(value))
+    inline def setIsInFrustum(value: js.Array[Plane] => Boolean): Self = StObject.set(x, "isInFrustum", js.Any.fromFunction1(value))
   }
 }

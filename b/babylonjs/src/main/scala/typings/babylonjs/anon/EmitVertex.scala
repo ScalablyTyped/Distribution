@@ -3,22 +3,19 @@ package typings.babylonjs.anon
 import typings.babylonjs.BABYLON.NodeMaterialConnectionPoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmitVertex extends StObject {
   
-  var emitFragment: Boolean = js.native
+  var emitFragment: Boolean
   
-  var emitVertex: Boolean = js.native
+  var emitVertex: Boolean
   
-  var notConnectedNonOptionalInputs: js.Array[NodeMaterialConnectionPoint] = js.native
+  var notConnectedNonOptionalInputs: js.Array[NodeMaterialConnectionPoint]
 }
 object EmitVertex {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     emitFragment: Boolean,
     emitVertex: Boolean,
     notConnectedNonOptionalInputs: js.Array[NodeMaterialConnectionPoint]
@@ -27,19 +24,14 @@ object EmitVertex {
     __obj.asInstanceOf[EmitVertex]
   }
   
-  @scala.inline
-  implicit class EmitVertexMutableBuilder[Self <: EmitVertex] (val x: Self) extends AnyVal {
+  extension [Self <: EmitVertex](x: Self) {
     
-    @scala.inline
-    def setEmitFragment(value: Boolean): Self = StObject.set(x, "emitFragment", value.asInstanceOf[js.Any])
+    inline def setEmitFragment(value: Boolean): Self = StObject.set(x, "emitFragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmitVertex(value: Boolean): Self = StObject.set(x, "emitVertex", value.asInstanceOf[js.Any])
+    inline def setEmitVertex(value: Boolean): Self = StObject.set(x, "emitVertex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotConnectedNonOptionalInputs(value: js.Array[NodeMaterialConnectionPoint]): Self = StObject.set(x, "notConnectedNonOptionalInputs", value.asInstanceOf[js.Any])
+    inline def setNotConnectedNonOptionalInputs(value: js.Array[NodeMaterialConnectionPoint]): Self = StObject.set(x, "notConnectedNonOptionalInputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotConnectedNonOptionalInputsVarargs(value: NodeMaterialConnectionPoint*): Self = StObject.set(x, "notConnectedNonOptionalInputs", js.Array(value :_*))
+    inline def setNotConnectedNonOptionalInputsVarargs(value: NodeMaterialConnectionPoint*): Self = StObject.set(x, "notConnectedNonOptionalInputs", js.Array(value :_*))
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cordova-plugin-spinner"
-version := "1.0.0-dt-20201002Z-1826bd"
+version := "1.0.0-dt-20201002Z-d7c7db"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

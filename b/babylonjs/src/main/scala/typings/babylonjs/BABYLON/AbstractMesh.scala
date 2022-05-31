@@ -5,12 +5,12 @@ import typings.std.Float32Array
 import typings.std.WebGLQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AbstractMesh
-  extends TransformNode
+  extends StObject
+     with TransformNode
      with IDisposable
      with ICullable
      with IGetSetVerticesData {
@@ -58,7 +58,7 @@ trait AbstractMesh
   def _getPositionData(applySkeleton: Boolean): Nullable[FloatArray] = js.native
   
   /** @hidden */
-  var _initFacetData: js.Any = js.native
+  /* private */ var _initFacetData: js.Any = js.native
   
   /** @hidden */
   var _internalAbstractMeshDataInfo: InternalAbstractMeshDataInfo = js.native
@@ -72,7 +72,7 @@ trait AbstractMesh
   /** @hidden */
   def _markSubMeshesAsAttributesDirty(): Unit = js.native
   
-  var _markSubMeshesAsDirty: js.Any = js.native
+  /* private */ var _markSubMeshesAsDirty: js.Any = js.native
   
   /** @hidden */
   def _markSubMeshesAsLightDirty(): Unit = js.native
@@ -84,9 +84,9 @@ trait AbstractMesh
   /** @hidden */
   var _masterMesh: Nullable[AbstractMesh] = js.native
   
-  var _material: js.Any = js.native
+  /* private */ var _material: js.Any = js.native
   
-  var _meshCollisionData: js.Any = js.native
+  /* private */ var _meshCollisionData: js.Any = js.native
   
   /**
     * Access property
@@ -97,7 +97,7 @@ trait AbstractMesh
   /** @hidden */
   var _occlusionQuery: Nullable[WebGLQuery] = js.native
   
-  var _onCollisionPositionChange: js.Any = js.native
+  /* private */ var _onCollisionPositionChange: js.Any = js.native
   
   /** @hidden */
   var _physicsImpostor: Nullable[PhysicsImpostor] = js.native
@@ -138,7 +138,7 @@ trait AbstractMesh
   /** @hidden */
   var _renderingGroup: Nullable[RenderingGroup] = js.native
   
-  var _renderingGroupId: js.Any = js.native
+  /* private */ var _renderingGroupId: js.Any = js.native
   
   /** @hidden */
   def _resyncLightSource(light: Light): Unit = js.native
@@ -300,9 +300,9 @@ trait AbstractMesh
     * @see https://doc.babylonjs.com/how_to/optimizing_your_scene_with_octrees
     */
   def createOrUpdateSubmeshesOctree(): Octree[SubMesh] = js.native
-  def createOrUpdateSubmeshesOctree(maxCapacity: js.UndefOr[scala.Nothing], maxDepth: Double): Octree[SubMesh] = js.native
   def createOrUpdateSubmeshesOctree(maxCapacity: Double): Octree[SubMesh] = js.native
   def createOrUpdateSubmeshesOctree(maxCapacity: Double, maxDepth: Double): Octree[SubMesh] = js.native
+  def createOrUpdateSubmeshesOctree(maxCapacity: Unit, maxDepth: Double): Octree[SubMesh] = js.native
   
   /**
     * The culling strategy to use to check whether the mesh must be rendered or not.
@@ -384,25 +384,13 @@ trait AbstractMesh
     * @see https://www.babylonjs-playground.com/#19O9TU#0
     */
   def enableEdgesRendering(): AbstractMesh = js.native
-  def enableEdgesRendering(
-    epsilon: js.UndefOr[scala.Nothing],
-    checkVerticesInsteadOfIndices: js.UndefOr[scala.Nothing],
-    options: IEdgesRendererOptions
-  ): AbstractMesh = js.native
-  def enableEdgesRendering(epsilon: js.UndefOr[scala.Nothing], checkVerticesInsteadOfIndices: Boolean): AbstractMesh = js.native
-  def enableEdgesRendering(
-    epsilon: js.UndefOr[scala.Nothing],
-    checkVerticesInsteadOfIndices: Boolean,
-    options: IEdgesRendererOptions
-  ): AbstractMesh = js.native
   def enableEdgesRendering(epsilon: Double): AbstractMesh = js.native
-  def enableEdgesRendering(
-    epsilon: Double,
-    checkVerticesInsteadOfIndices: js.UndefOr[scala.Nothing],
-    options: IEdgesRendererOptions
-  ): AbstractMesh = js.native
   def enableEdgesRendering(epsilon: Double, checkVerticesInsteadOfIndices: Boolean): AbstractMesh = js.native
   def enableEdgesRendering(epsilon: Double, checkVerticesInsteadOfIndices: Boolean, options: IEdgesRendererOptions): AbstractMesh = js.native
+  def enableEdgesRendering(epsilon: Double, checkVerticesInsteadOfIndices: Unit, options: IEdgesRendererOptions): AbstractMesh = js.native
+  def enableEdgesRendering(epsilon: Unit, checkVerticesInsteadOfIndices: Boolean): AbstractMesh = js.native
+  def enableEdgesRendering(epsilon: Unit, checkVerticesInsteadOfIndices: Boolean, options: IEdgesRendererOptions): AbstractMesh = js.native
+  def enableEdgesRendering(epsilon: Unit, checkVerticesInsteadOfIndices: Unit, options: IEdgesRendererOptions): AbstractMesh = js.native
   
   /**
     * Gets or sets a boolean indicating that pointer move events must be supported on this mesh (false by default)
@@ -444,34 +432,13 @@ trait AbstractMesh
     * @see https://doc.babylonjs.com/how_to/how_to_use_facetdata
     */
   def getClosestFacetAtCoordinates(x: Double, y: Double, z: Double): Nullable[Double] = js.native
-  def getClosestFacetAtCoordinates(
-    x: Double,
-    y: Double,
-    z: Double,
-    projected: js.UndefOr[scala.Nothing],
-    checkFace: js.UndefOr[scala.Nothing],
-    facing: Boolean
-  ): Nullable[Double] = js.native
-  def getClosestFacetAtCoordinates(x: Double, y: Double, z: Double, projected: js.UndefOr[scala.Nothing], checkFace: Boolean): Nullable[Double] = js.native
-  def getClosestFacetAtCoordinates(
-    x: Double,
-    y: Double,
-    z: Double,
-    projected: js.UndefOr[scala.Nothing],
-    checkFace: Boolean,
-    facing: Boolean
-  ): Nullable[Double] = js.native
+  def getClosestFacetAtCoordinates(x: Double, y: Double, z: Double, projected: Unit, checkFace: Boolean): Nullable[Double] = js.native
+  def getClosestFacetAtCoordinates(x: Double, y: Double, z: Double, projected: Unit, checkFace: Boolean, facing: Boolean): Nullable[Double] = js.native
+  def getClosestFacetAtCoordinates(x: Double, y: Double, z: Double, projected: Unit, checkFace: Unit, facing: Boolean): Nullable[Double] = js.native
   def getClosestFacetAtCoordinates(x: Double, y: Double, z: Double, projected: Vector3): Nullable[Double] = js.native
-  def getClosestFacetAtCoordinates(
-    x: Double,
-    y: Double,
-    z: Double,
-    projected: Vector3,
-    checkFace: js.UndefOr[scala.Nothing],
-    facing: Boolean
-  ): Nullable[Double] = js.native
   def getClosestFacetAtCoordinates(x: Double, y: Double, z: Double, projected: Vector3, checkFace: Boolean): Nullable[Double] = js.native
   def getClosestFacetAtCoordinates(x: Double, y: Double, z: Double, projected: Vector3, checkFace: Boolean, facing: Boolean): Nullable[Double] = js.native
+  def getClosestFacetAtCoordinates(x: Double, y: Double, z: Double, projected: Vector3, checkFace: Unit, facing: Boolean): Nullable[Double] = js.native
   
   /**
     * Returns the closest mesh facet index at (x,y,z) local coordinates, null if not found
@@ -485,34 +452,13 @@ trait AbstractMesh
     * @see https://doc.babylonjs.com/how_to/how_to_use_facetdata
     */
   def getClosestFacetAtLocalCoordinates(x: Double, y: Double, z: Double): Nullable[Double] = js.native
-  def getClosestFacetAtLocalCoordinates(
-    x: Double,
-    y: Double,
-    z: Double,
-    projected: js.UndefOr[scala.Nothing],
-    checkFace: js.UndefOr[scala.Nothing],
-    facing: Boolean
-  ): Nullable[Double] = js.native
-  def getClosestFacetAtLocalCoordinates(x: Double, y: Double, z: Double, projected: js.UndefOr[scala.Nothing], checkFace: Boolean): Nullable[Double] = js.native
-  def getClosestFacetAtLocalCoordinates(
-    x: Double,
-    y: Double,
-    z: Double,
-    projected: js.UndefOr[scala.Nothing],
-    checkFace: Boolean,
-    facing: Boolean
-  ): Nullable[Double] = js.native
+  def getClosestFacetAtLocalCoordinates(x: Double, y: Double, z: Double, projected: Unit, checkFace: Boolean): Nullable[Double] = js.native
+  def getClosestFacetAtLocalCoordinates(x: Double, y: Double, z: Double, projected: Unit, checkFace: Boolean, facing: Boolean): Nullable[Double] = js.native
+  def getClosestFacetAtLocalCoordinates(x: Double, y: Double, z: Double, projected: Unit, checkFace: Unit, facing: Boolean): Nullable[Double] = js.native
   def getClosestFacetAtLocalCoordinates(x: Double, y: Double, z: Double, projected: Vector3): Nullable[Double] = js.native
-  def getClosestFacetAtLocalCoordinates(
-    x: Double,
-    y: Double,
-    z: Double,
-    projected: Vector3,
-    checkFace: js.UndefOr[scala.Nothing],
-    facing: Boolean
-  ): Nullable[Double] = js.native
   def getClosestFacetAtLocalCoordinates(x: Double, y: Double, z: Double, projected: Vector3, checkFace: Boolean): Nullable[Double] = js.native
   def getClosestFacetAtLocalCoordinates(x: Double, y: Double, z: Double, projected: Vector3, checkFace: Boolean, facing: Boolean): Nullable[Double] = js.native
+  def getClosestFacetAtLocalCoordinates(x: Double, y: Double, z: Double, projected: Vector3, checkFace: Unit, facing: Boolean): Nullable[Double] = js.native
   
   /**
     * This function returns all of the particle systems in the scene that use the mesh as an emitter.
@@ -654,161 +600,45 @@ trait AbstractMesh
     * @see https://doc.babylonjs.com/babylon101/intersect_collisions_-_mesh
     */
   def intersects(ray: Ray): PickingInfo = js.native
-  def intersects(
-    ray: Ray,
-    fastCheck: js.UndefOr[scala.Nothing],
-    trianglePredicate: js.UndefOr[scala.Nothing],
-    onlyBoundingInfo: js.UndefOr[scala.Nothing],
-    worldToUse: js.UndefOr[scala.Nothing],
-    skipBoundingInfo: Boolean
-  ): PickingInfo = js.native
-  def intersects(
-    ray: Ray,
-    fastCheck: js.UndefOr[scala.Nothing],
-    trianglePredicate: js.UndefOr[scala.Nothing],
-    onlyBoundingInfo: js.UndefOr[scala.Nothing],
-    worldToUse: Matrix
-  ): PickingInfo = js.native
-  def intersects(
-    ray: Ray,
-    fastCheck: js.UndefOr[scala.Nothing],
-    trianglePredicate: js.UndefOr[scala.Nothing],
-    onlyBoundingInfo: js.UndefOr[scala.Nothing],
-    worldToUse: Matrix,
-    skipBoundingInfo: Boolean
-  ): PickingInfo = js.native
-  def intersects(
-    ray: Ray,
-    fastCheck: js.UndefOr[scala.Nothing],
-    trianglePredicate: js.UndefOr[scala.Nothing],
-    onlyBoundingInfo: Boolean
-  ): PickingInfo = js.native
-  def intersects(
-    ray: Ray,
-    fastCheck: js.UndefOr[scala.Nothing],
-    trianglePredicate: js.UndefOr[scala.Nothing],
-    onlyBoundingInfo: Boolean,
-    worldToUse: js.UndefOr[scala.Nothing],
-    skipBoundingInfo: Boolean
-  ): PickingInfo = js.native
-  def intersects(
-    ray: Ray,
-    fastCheck: js.UndefOr[scala.Nothing],
-    trianglePredicate: js.UndefOr[scala.Nothing],
-    onlyBoundingInfo: Boolean,
-    worldToUse: Matrix
-  ): PickingInfo = js.native
-  def intersects(
-    ray: Ray,
-    fastCheck: js.UndefOr[scala.Nothing],
-    trianglePredicate: js.UndefOr[scala.Nothing],
-    onlyBoundingInfo: Boolean,
-    worldToUse: Matrix,
-    skipBoundingInfo: Boolean
-  ): PickingInfo = js.native
-  def intersects(ray: Ray, fastCheck: js.UndefOr[scala.Nothing], trianglePredicate: TrianglePickingPredicate): PickingInfo = js.native
-  def intersects(
-    ray: Ray,
-    fastCheck: js.UndefOr[scala.Nothing],
-    trianglePredicate: TrianglePickingPredicate,
-    onlyBoundingInfo: js.UndefOr[scala.Nothing],
-    worldToUse: js.UndefOr[scala.Nothing],
-    skipBoundingInfo: Boolean
-  ): PickingInfo = js.native
-  def intersects(
-    ray: Ray,
-    fastCheck: js.UndefOr[scala.Nothing],
-    trianglePredicate: TrianglePickingPredicate,
-    onlyBoundingInfo: js.UndefOr[scala.Nothing],
-    worldToUse: Matrix
-  ): PickingInfo = js.native
-  def intersects(
-    ray: Ray,
-    fastCheck: js.UndefOr[scala.Nothing],
-    trianglePredicate: TrianglePickingPredicate,
-    onlyBoundingInfo: js.UndefOr[scala.Nothing],
-    worldToUse: Matrix,
-    skipBoundingInfo: Boolean
-  ): PickingInfo = js.native
-  def intersects(
-    ray: Ray,
-    fastCheck: js.UndefOr[scala.Nothing],
-    trianglePredicate: TrianglePickingPredicate,
-    onlyBoundingInfo: Boolean
-  ): PickingInfo = js.native
-  def intersects(
-    ray: Ray,
-    fastCheck: js.UndefOr[scala.Nothing],
-    trianglePredicate: TrianglePickingPredicate,
-    onlyBoundingInfo: Boolean,
-    worldToUse: js.UndefOr[scala.Nothing],
-    skipBoundingInfo: Boolean
-  ): PickingInfo = js.native
-  def intersects(
-    ray: Ray,
-    fastCheck: js.UndefOr[scala.Nothing],
-    trianglePredicate: TrianglePickingPredicate,
-    onlyBoundingInfo: Boolean,
-    worldToUse: Matrix
-  ): PickingInfo = js.native
-  def intersects(
-    ray: Ray,
-    fastCheck: js.UndefOr[scala.Nothing],
-    trianglePredicate: TrianglePickingPredicate,
-    onlyBoundingInfo: Boolean,
-    worldToUse: Matrix,
-    skipBoundingInfo: Boolean
-  ): PickingInfo = js.native
   def intersects(ray: Ray, fastCheck: Boolean): PickingInfo = js.native
+  def intersects(ray: Ray, fastCheck: Boolean, trianglePredicate: Unit, onlyBoundingInfo: Boolean): PickingInfo = js.native
   def intersects(
     ray: Ray,
     fastCheck: Boolean,
-    trianglePredicate: js.UndefOr[scala.Nothing],
-    onlyBoundingInfo: js.UndefOr[scala.Nothing],
-    worldToUse: js.UndefOr[scala.Nothing],
+    trianglePredicate: Unit,
+    onlyBoundingInfo: Boolean,
+    worldToUse: Unit,
     skipBoundingInfo: Boolean
   ): PickingInfo = js.native
   def intersects(
     ray: Ray,
     fastCheck: Boolean,
-    trianglePredicate: js.UndefOr[scala.Nothing],
-    onlyBoundingInfo: js.UndefOr[scala.Nothing],
+    trianglePredicate: Unit,
+    onlyBoundingInfo: Boolean,
     worldToUse: Matrix
   ): PickingInfo = js.native
   def intersects(
     ray: Ray,
     fastCheck: Boolean,
-    trianglePredicate: js.UndefOr[scala.Nothing],
-    onlyBoundingInfo: js.UndefOr[scala.Nothing],
+    trianglePredicate: Unit,
+    onlyBoundingInfo: Boolean,
     worldToUse: Matrix,
     skipBoundingInfo: Boolean
   ): PickingInfo = js.native
   def intersects(
     ray: Ray,
     fastCheck: Boolean,
-    trianglePredicate: js.UndefOr[scala.Nothing],
-    onlyBoundingInfo: Boolean
-  ): PickingInfo = js.native
-  def intersects(
-    ray: Ray,
-    fastCheck: Boolean,
-    trianglePredicate: js.UndefOr[scala.Nothing],
-    onlyBoundingInfo: Boolean,
-    worldToUse: js.UndefOr[scala.Nothing],
+    trianglePredicate: Unit,
+    onlyBoundingInfo: Unit,
+    worldToUse: Unit,
     skipBoundingInfo: Boolean
   ): PickingInfo = js.native
+  def intersects(ray: Ray, fastCheck: Boolean, trianglePredicate: Unit, onlyBoundingInfo: Unit, worldToUse: Matrix): PickingInfo = js.native
   def intersects(
     ray: Ray,
     fastCheck: Boolean,
-    trianglePredicate: js.UndefOr[scala.Nothing],
-    onlyBoundingInfo: Boolean,
-    worldToUse: Matrix
-  ): PickingInfo = js.native
-  def intersects(
-    ray: Ray,
-    fastCheck: Boolean,
-    trianglePredicate: js.UndefOr[scala.Nothing],
-    onlyBoundingInfo: Boolean,
+    trianglePredicate: Unit,
+    onlyBoundingInfo: Unit,
     worldToUse: Matrix,
     skipBoundingInfo: Boolean
   ): PickingInfo = js.native
@@ -817,29 +647,6 @@ trait AbstractMesh
     ray: Ray,
     fastCheck: Boolean,
     trianglePredicate: TrianglePickingPredicate,
-    onlyBoundingInfo: js.UndefOr[scala.Nothing],
-    worldToUse: js.UndefOr[scala.Nothing],
-    skipBoundingInfo: Boolean
-  ): PickingInfo = js.native
-  def intersects(
-    ray: Ray,
-    fastCheck: Boolean,
-    trianglePredicate: TrianglePickingPredicate,
-    onlyBoundingInfo: js.UndefOr[scala.Nothing],
-    worldToUse: Matrix
-  ): PickingInfo = js.native
-  def intersects(
-    ray: Ray,
-    fastCheck: Boolean,
-    trianglePredicate: TrianglePickingPredicate,
-    onlyBoundingInfo: js.UndefOr[scala.Nothing],
-    worldToUse: Matrix,
-    skipBoundingInfo: Boolean
-  ): PickingInfo = js.native
-  def intersects(
-    ray: Ray,
-    fastCheck: Boolean,
-    trianglePredicate: TrianglePickingPredicate,
     onlyBoundingInfo: Boolean
   ): PickingInfo = js.native
   def intersects(
@@ -847,7 +654,7 @@ trait AbstractMesh
     fastCheck: Boolean,
     trianglePredicate: TrianglePickingPredicate,
     onlyBoundingInfo: Boolean,
-    worldToUse: js.UndefOr[scala.Nothing],
+    worldToUse: Unit,
     skipBoundingInfo: Boolean
   ): PickingInfo = js.native
   def intersects(
@@ -862,6 +669,112 @@ trait AbstractMesh
     fastCheck: Boolean,
     trianglePredicate: TrianglePickingPredicate,
     onlyBoundingInfo: Boolean,
+    worldToUse: Matrix,
+    skipBoundingInfo: Boolean
+  ): PickingInfo = js.native
+  def intersects(
+    ray: Ray,
+    fastCheck: Boolean,
+    trianglePredicate: TrianglePickingPredicate,
+    onlyBoundingInfo: Unit,
+    worldToUse: Unit,
+    skipBoundingInfo: Boolean
+  ): PickingInfo = js.native
+  def intersects(
+    ray: Ray,
+    fastCheck: Boolean,
+    trianglePredicate: TrianglePickingPredicate,
+    onlyBoundingInfo: Unit,
+    worldToUse: Matrix
+  ): PickingInfo = js.native
+  def intersects(
+    ray: Ray,
+    fastCheck: Boolean,
+    trianglePredicate: TrianglePickingPredicate,
+    onlyBoundingInfo: Unit,
+    worldToUse: Matrix,
+    skipBoundingInfo: Boolean
+  ): PickingInfo = js.native
+  def intersects(ray: Ray, fastCheck: Unit, trianglePredicate: Unit, onlyBoundingInfo: Boolean): PickingInfo = js.native
+  def intersects(
+    ray: Ray,
+    fastCheck: Unit,
+    trianglePredicate: Unit,
+    onlyBoundingInfo: Boolean,
+    worldToUse: Unit,
+    skipBoundingInfo: Boolean
+  ): PickingInfo = js.native
+  def intersects(ray: Ray, fastCheck: Unit, trianglePredicate: Unit, onlyBoundingInfo: Boolean, worldToUse: Matrix): PickingInfo = js.native
+  def intersects(
+    ray: Ray,
+    fastCheck: Unit,
+    trianglePredicate: Unit,
+    onlyBoundingInfo: Boolean,
+    worldToUse: Matrix,
+    skipBoundingInfo: Boolean
+  ): PickingInfo = js.native
+  def intersects(
+    ray: Ray,
+    fastCheck: Unit,
+    trianglePredicate: Unit,
+    onlyBoundingInfo: Unit,
+    worldToUse: Unit,
+    skipBoundingInfo: Boolean
+  ): PickingInfo = js.native
+  def intersects(ray: Ray, fastCheck: Unit, trianglePredicate: Unit, onlyBoundingInfo: Unit, worldToUse: Matrix): PickingInfo = js.native
+  def intersects(
+    ray: Ray,
+    fastCheck: Unit,
+    trianglePredicate: Unit,
+    onlyBoundingInfo: Unit,
+    worldToUse: Matrix,
+    skipBoundingInfo: Boolean
+  ): PickingInfo = js.native
+  def intersects(ray: Ray, fastCheck: Unit, trianglePredicate: TrianglePickingPredicate): PickingInfo = js.native
+  def intersects(ray: Ray, fastCheck: Unit, trianglePredicate: TrianglePickingPredicate, onlyBoundingInfo: Boolean): PickingInfo = js.native
+  def intersects(
+    ray: Ray,
+    fastCheck: Unit,
+    trianglePredicate: TrianglePickingPredicate,
+    onlyBoundingInfo: Boolean,
+    worldToUse: Unit,
+    skipBoundingInfo: Boolean
+  ): PickingInfo = js.native
+  def intersects(
+    ray: Ray,
+    fastCheck: Unit,
+    trianglePredicate: TrianglePickingPredicate,
+    onlyBoundingInfo: Boolean,
+    worldToUse: Matrix
+  ): PickingInfo = js.native
+  def intersects(
+    ray: Ray,
+    fastCheck: Unit,
+    trianglePredicate: TrianglePickingPredicate,
+    onlyBoundingInfo: Boolean,
+    worldToUse: Matrix,
+    skipBoundingInfo: Boolean
+  ): PickingInfo = js.native
+  def intersects(
+    ray: Ray,
+    fastCheck: Unit,
+    trianglePredicate: TrianglePickingPredicate,
+    onlyBoundingInfo: Unit,
+    worldToUse: Unit,
+    skipBoundingInfo: Boolean
+  ): PickingInfo = js.native
+  def intersects(
+    ray: Ray,
+    fastCheck: Unit,
+    trianglePredicate: TrianglePickingPredicate,
+    onlyBoundingInfo: Unit,
+    worldToUse: Matrix
+  ): PickingInfo = js.native
+  def intersects(
+    ray: Ray,
+    fastCheck: Unit,
+    trianglePredicate: TrianglePickingPredicate,
+    onlyBoundingInfo: Unit,
     worldToUse: Matrix,
     skipBoundingInfo: Boolean
   ): PickingInfo = js.native
@@ -874,13 +787,13 @@ trait AbstractMesh
     * @returns true if there is an intersection
     */
   def intersectsMesh(mesh: AbstractMesh): Boolean = js.native
-  def intersectsMesh(mesh: AbstractMesh, precise: js.UndefOr[scala.Nothing], includeDescendants: Boolean): Boolean = js.native
   def intersectsMesh(mesh: AbstractMesh, precise: Boolean): Boolean = js.native
   def intersectsMesh(mesh: AbstractMesh, precise: Boolean, includeDescendants: Boolean): Boolean = js.native
+  def intersectsMesh(mesh: AbstractMesh, precise: Unit, includeDescendants: Boolean): Boolean = js.native
   def intersectsMesh(mesh: SolidParticle): Boolean = js.native
-  def intersectsMesh(mesh: SolidParticle, precise: js.UndefOr[scala.Nothing], includeDescendants: Boolean): Boolean = js.native
   def intersectsMesh(mesh: SolidParticle, precise: Boolean): Boolean = js.native
   def intersectsMesh(mesh: SolidParticle, precise: Boolean, includeDescendants: Boolean): Boolean = js.native
+  def intersectsMesh(mesh: SolidParticle, precise: Unit, includeDescendants: Boolean): Boolean = js.native
   
   /**
     * Returns true if the passed point (Vector3) is inside the mesh bounding box
@@ -1162,8 +1075,8 @@ trait AbstractMesh
     * @returns the current mesh
     */
   def setVerticesData(kind: String, data: FloatArray): AbstractMesh = js.native
-  def setVerticesData(kind: String, data: FloatArray, updatable: js.UndefOr[scala.Nothing], stride: Double): AbstractMesh = js.native
   def setVerticesData(kind: String, data: FloatArray, updatable: Boolean, stride: Double): AbstractMesh = js.native
+  def setVerticesData(kind: String, data: FloatArray, updatable: Unit, stride: Double): AbstractMesh = js.native
   
   /**
     * Gets or sets a boolean indicating if the bounding box must be rendered as well (false by default)
@@ -1217,9 +1130,9 @@ trait AbstractMesh
     * @returns the current mesh
     */
   def updateIndices(indices: IndicesArray): AbstractMesh = js.native
-  def updateIndices(indices: IndicesArray, offset: js.UndefOr[scala.Nothing], gpuMemoryOnly: Boolean): AbstractMesh = js.native
   def updateIndices(indices: IndicesArray, offset: Double): AbstractMesh = js.native
   def updateIndices(indices: IndicesArray, offset: Double, gpuMemoryOnly: Boolean): AbstractMesh = js.native
+  def updateIndices(indices: IndicesArray, offset: Unit, gpuMemoryOnly: Boolean): AbstractMesh = js.native
   
   /** Gets a boolean indicating if this mesh has skinning data and an attached skeleton */
   def useBones: Boolean = js.native

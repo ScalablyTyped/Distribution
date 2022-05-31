@@ -6,7 +6,6 @@ import typings.babylonjs.typesMod.Nullable
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object morphTargetManagerMod {
@@ -20,31 +19,31 @@ object morphTargetManagerMod {
   class MorphTargetManager () extends StObject {
     def this(scene: Nullable[Scene]) = this()
     
-    var _activeTargets: js.Any = js.native
+    /* private */ var _activeTargets: js.Any = js.native
     
-    var _influences: js.Any = js.native
+    /* private */ var _influences: js.Any = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
-    var _supportsNormals: js.Any = js.native
+    /* private */ var _supportsNormals: js.Any = js.native
     
-    var _supportsTangents: js.Any = js.native
+    /* private */ var _supportsTangents: js.Any = js.native
     
-    var _supportsUVs: js.Any = js.native
+    /* private */ var _supportsUVs: js.Any = js.native
     
-    var _syncActiveTargets: js.Any = js.native
+    /* private */ var _syncActiveTargets: js.Any = js.native
     
-    var _targetDataLayoutChangedObservers: js.Any = js.native
+    /* private */ var _targetDataLayoutChangedObservers: js.Any = js.native
     
-    var _targetInfluenceChangedObservers: js.Any = js.native
+    /* private */ var _targetInfluenceChangedObservers: js.Any = js.native
     
-    var _targets: js.Any = js.native
+    /* private */ var _targets: js.Any = js.native
     
-    var _tempInfluences: js.Any = js.native
+    /* private */ var _tempInfluences: js.Any = js.native
     
-    var _uniqueId: js.Any = js.native
+    /* private */ var _uniqueId: js.Any = js.native
     
-    var _vertexCount: js.Any = js.native
+    /* private */ var _vertexCount: js.Any = js.native
     
     /**
       * Add a new target to this manager
@@ -141,14 +140,16 @@ object morphTargetManagerMod {
   /* static members */
   object MorphTargetManager {
     
+    @JSImport("babylonjs/Morph/morphTargetManager", "MorphTargetManager")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new MorphTargetManager from serialized data
       * @param serializationObject defines the serialized data
       * @param scene defines the hosting scene
       * @returns the new MorphTargetManager
       */
-    @JSImport("babylonjs/Morph/morphTargetManager", "MorphTargetManager.Parse")
-    @js.native
-    def Parse(serializationObject: js.Any, scene: Scene): MorphTargetManager = js.native
+    inline def Parse(serializationObject: js.Any, scene: Scene): MorphTargetManager = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(serializationObject.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[MorphTargetManager]
   }
 }

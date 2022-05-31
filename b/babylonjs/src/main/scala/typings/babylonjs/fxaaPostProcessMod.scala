@@ -8,7 +8,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fxaaPostProcessMod {
@@ -26,14 +25,16 @@ object fxaaPostProcessMod {
       textureType: js.UndefOr[Double]
     ) = this()
     
-    var _getDefines: js.Any = js.native
+    /* private */ var _getDefines: js.Any = js.native
   }
   /* static members */
   object FxaaPostProcess {
     
-    /** @hidden */
-    @JSImport("babylonjs/PostProcesses/fxaaPostProcess", "FxaaPostProcess._Parse")
+    @JSImport("babylonjs/PostProcesses/fxaaPostProcess", "FxaaPostProcess")
     @js.native
-    def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): FxaaPostProcess = js.native
+    val ^ : js.Any = js.native
+    
+    /** @hidden */
+    inline def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): FxaaPostProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[FxaaPostProcess]
   }
 }

@@ -40,13 +40,14 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ojtrainMod {
   
   @js.native
-  trait ojTrain extends baseComponent[ojTrainSettableProperties] {
+  trait ojTrain
+    extends StObject
+       with baseComponent[ojTrainSettableProperties] {
     
     @JSName("addEventListener")
     def addEventListener_ojBeforeDeselect(
@@ -54,7 +55,7 @@ object ojtrainMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojtrainMod.ojTrain.ojBeforeDeselect, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -63,7 +64,7 @@ object ojtrainMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojtrainMod.ojTrain.ojBeforeDeselect, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -73,7 +74,7 @@ object ojtrainMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojtrainMod.ojTrain.ojBeforeSelect, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -82,7 +83,7 @@ object ojtrainMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojtrainMod.ojTrain.ojBeforeSelect, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -92,7 +93,7 @@ object ojtrainMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojtrainMod.ojTrain.ojDeselect, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -101,7 +102,7 @@ object ojtrainMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojtrainMod.ojTrain.ojDeselect, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -111,7 +112,7 @@ object ojtrainMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojtrainMod.ojTrain.ojSelect, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -120,30 +121,30 @@ object ojtrainMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojtrainMod.ojTrain.ojSelect, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_selectedStepChanged(
       `type`: selectedStepChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_selectedStepChanged(
       `type`: selectedStepChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_stepsChanged(
       `type`: stepsChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[Step]], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[Step]], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_stepsChanged(
       `type`: stepsChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[Step]], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[Step]], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     
@@ -158,17 +159,17 @@ object ojtrainMod {
     
     def getStep(id: String): Step | Null = js.native
     
-    var onOjBeforeDeselect: (js.Function1[/* event */ typings.oracleOraclejet.ojtrainMod.ojTrain.ojBeforeDeselect, _]) | Null = js.native
+    var onOjBeforeDeselect: (js.Function1[/* event */ typings.oracleOraclejet.ojtrainMod.ojTrain.ojBeforeDeselect, js.Any]) | Null = js.native
     
-    var onOjBeforeSelect: (js.Function1[/* event */ typings.oracleOraclejet.ojtrainMod.ojTrain.ojBeforeSelect, _]) | Null = js.native
+    var onOjBeforeSelect: (js.Function1[/* event */ typings.oracleOraclejet.ojtrainMod.ojTrain.ojBeforeSelect, js.Any]) | Null = js.native
     
-    var onOjDeselect: (js.Function1[/* event */ typings.oracleOraclejet.ojtrainMod.ojTrain.ojDeselect, _]) | Null = js.native
+    var onOjDeselect: (js.Function1[/* event */ typings.oracleOraclejet.ojtrainMod.ojTrain.ojDeselect, js.Any]) | Null = js.native
     
-    var onOjSelect: (js.Function1[/* event */ typings.oracleOraclejet.ojtrainMod.ojTrain.ojSelect, _]) | Null = js.native
+    var onOjSelect: (js.Function1[/* event */ typings.oracleOraclejet.ojtrainMod.ojTrain.ojSelect, js.Any]) | Null = js.native
     
-    var onSelectedStepChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+    var onSelectedStepChanged: (js.Function1[/* event */ JetElementCustomEvent[String], js.Any]) | Null = js.native
     
-    var onStepsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[Step]], _]) | Null = js.native
+    var onStepsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[Step]], js.Any]) | Null = js.native
     
     var selectedStep: String = js.native
     
@@ -186,53 +187,42 @@ object ojtrainMod {
   object ojTrain {
     
     // tslint:disable-next-line interface-over-type-literal
-    @js.native
     trait Step extends StObject {
       
-      var disabled: js.UndefOr[Boolean] = js.native
+      var disabled: js.UndefOr[Boolean] = js.undefined
       
-      var id: String = js.native
+      var id: String
       
-      var label: String = js.native
+      var label: String
       
-      var messageType: js.UndefOr[info | error | fatal | warning] = js.native
+      var messageType: js.UndefOr[info | error | fatal | warning] = js.undefined
       
-      var visited: js.UndefOr[Boolean] = js.native
+      var visited: js.UndefOr[Boolean] = js.undefined
     }
     object Step {
       
-      @scala.inline
-      def apply(id: String, label: String): Step = {
+      inline def apply(id: String, label: String): Step = {
         val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
         __obj.asInstanceOf[Step]
       }
       
-      @scala.inline
-      implicit class StepMutableBuilder[Self <: Step] (val x: Self) extends AnyVal {
+      extension [Self <: Step](x: Self) {
         
-        @scala.inline
-        def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+        inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+        inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessageType(value: info | error | fatal | warning): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
+        inline def setMessageType(value: info | error | fatal | warning): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessageTypeUndefined: Self = StObject.set(x, "messageType", js.undefined)
+        inline def setMessageTypeUndefined: Self = StObject.set(x, "messageType", js.undefined)
         
-        @scala.inline
-        def setVisited(value: Boolean): Self = StObject.set(x, "visited", value.asInstanceOf[js.Any])
+        inline def setVisited(value: Boolean): Self = StObject.set(x, "visited", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVisitedUndefined: Self = StObject.set(x, "visited", js.undefined)
+        inline def setVisitedUndefined: Self = StObject.set(x, "visited", js.undefined)
       }
     }
     
@@ -245,25 +235,25 @@ object ojtrainMod {
     type ojSelect = CustomEvent[FromStep]
   }
   
-  @js.native
-  trait ojTrainEventMap extends baseComponentEventMap[ojTrainSettableProperties] {
+  trait ojTrainEventMap
+    extends StObject
+       with baseComponentEventMap[ojTrainSettableProperties] {
     
-    var ojBeforeDeselect: typings.oracleOraclejet.ojtrainMod.ojTrain.ojBeforeDeselect = js.native
+    var ojBeforeDeselect: typings.oracleOraclejet.ojtrainMod.ojTrain.ojBeforeDeselect
     
-    var ojBeforeSelect: typings.oracleOraclejet.ojtrainMod.ojTrain.ojBeforeSelect = js.native
+    var ojBeforeSelect: typings.oracleOraclejet.ojtrainMod.ojTrain.ojBeforeSelect
     
-    var ojDeselect: typings.oracleOraclejet.ojtrainMod.ojTrain.ojDeselect = js.native
+    var ojDeselect: typings.oracleOraclejet.ojtrainMod.ojTrain.ojDeselect
     
-    var ojSelect: typings.oracleOraclejet.ojtrainMod.ojTrain.ojSelect = js.native
+    var ojSelect: typings.oracleOraclejet.ojtrainMod.ojTrain.ojSelect
     
-    var selectedStepChanged: JetElementCustomEvent[String] = js.native
+    var selectedStepChanged: JetElementCustomEvent[String]
     
-    var stepsChanged: JetElementCustomEvent[js.Array[Step]] = js.native
+    var stepsChanged: JetElementCustomEvent[js.Array[Step]]
   }
   object ojTrainEventMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: UIEvent,
       animationcancel: AnimationEvent,
       animationend: AnimationEvent,
@@ -368,103 +358,82 @@ object ojtrainMod {
       __obj.asInstanceOf[ojTrainEventMap]
     }
     
-    @scala.inline
-    implicit class ojTrainEventMapMutableBuilder[Self <: ojTrainEventMap] (val x: Self) extends AnyVal {
+    extension [Self <: ojTrainEventMap](x: Self) {
       
-      @scala.inline
-      def setOjBeforeDeselect(value: typings.oracleOraclejet.ojtrainMod.ojTrain.ojBeforeDeselect): Self = StObject.set(x, "ojBeforeDeselect", value.asInstanceOf[js.Any])
+      inline def setOjBeforeDeselect(value: typings.oracleOraclejet.ojtrainMod.ojTrain.ojBeforeDeselect): Self = StObject.set(x, "ojBeforeDeselect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjBeforeSelect(value: typings.oracleOraclejet.ojtrainMod.ojTrain.ojBeforeSelect): Self = StObject.set(x, "ojBeforeSelect", value.asInstanceOf[js.Any])
+      inline def setOjBeforeSelect(value: typings.oracleOraclejet.ojtrainMod.ojTrain.ojBeforeSelect): Self = StObject.set(x, "ojBeforeSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjDeselect(value: typings.oracleOraclejet.ojtrainMod.ojTrain.ojDeselect): Self = StObject.set(x, "ojDeselect", value.asInstanceOf[js.Any])
+      inline def setOjDeselect(value: typings.oracleOraclejet.ojtrainMod.ojTrain.ojDeselect): Self = StObject.set(x, "ojDeselect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjSelect(value: typings.oracleOraclejet.ojtrainMod.ojTrain.ojSelect): Self = StObject.set(x, "ojSelect", value.asInstanceOf[js.Any])
+      inline def setOjSelect(value: typings.oracleOraclejet.ojtrainMod.ojTrain.ojSelect): Self = StObject.set(x, "ojSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedStepChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "selectedStepChanged", value.asInstanceOf[js.Any])
+      inline def setSelectedStepChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "selectedStepChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepsChanged(value: JetElementCustomEvent[js.Array[Step]]): Self = StObject.set(x, "stepsChanged", value.asInstanceOf[js.Any])
+      inline def setStepsChanged(value: JetElementCustomEvent[js.Array[Step]]): Self = StObject.set(x, "stepsChanged", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait ojTrainSettableProperties extends baseComponentSettableProperties {
+  trait ojTrainSettableProperties
+    extends StObject
+       with baseComponentSettableProperties {
     
-    var selectedStep: String = js.native
+    var selectedStep: String
     
-    var steps: js.Array[Step] = js.native
+    var steps: js.Array[Step]
   }
   object ojTrainSettableProperties {
     
-    @scala.inline
-    def apply(selectedStep: String, steps: js.Array[Step]): ojTrainSettableProperties = {
-      val __obj = js.Dynamic.literal(selectedStep = selectedStep.asInstanceOf[js.Any], steps = steps.asInstanceOf[js.Any])
+    inline def apply(selectedStep: String, steps: js.Array[Step]): ojTrainSettableProperties = {
+      val __obj = js.Dynamic.literal(selectedStep = selectedStep.asInstanceOf[js.Any], steps = steps.asInstanceOf[js.Any], translations = null)
       __obj.asInstanceOf[ojTrainSettableProperties]
     }
     
-    @scala.inline
-    implicit class ojTrainSettablePropertiesMutableBuilder[Self <: ojTrainSettableProperties] (val x: Self) extends AnyVal {
+    extension [Self <: ojTrainSettableProperties](x: Self) {
       
-      @scala.inline
-      def setSelectedStep(value: String): Self = StObject.set(x, "selectedStep", value.asInstanceOf[js.Any])
+      inline def setSelectedStep(value: String): Self = StObject.set(x, "selectedStep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSteps(value: js.Array[Step]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+      inline def setSteps(value: js.Array[Step]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value :_*))
+      inline def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value :_*))
     }
   }
   
   /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojtrain.ojTrainSettableProperties> */
-  @js.native
   trait ojTrainSettablePropertiesLenient
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var selectedStep: js.UndefOr[String] = js.native
+    var selectedStep: js.UndefOr[String] = js.undefined
     
-    var steps: js.UndefOr[js.Array[Step]] = js.native
+    var steps: js.UndefOr[js.Array[Step]] = js.undefined
     
-    var translations: js.UndefOr[js.Object | Null] = js.native
+    var translations: js.UndefOr[js.Object | Null] = js.undefined
   }
   object ojTrainSettablePropertiesLenient {
     
-    @scala.inline
-    def apply(): ojTrainSettablePropertiesLenient = {
+    inline def apply(): ojTrainSettablePropertiesLenient = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ojTrainSettablePropertiesLenient]
     }
     
-    @scala.inline
-    implicit class ojTrainSettablePropertiesLenientMutableBuilder[Self <: ojTrainSettablePropertiesLenient] (val x: Self) extends AnyVal {
+    extension [Self <: ojTrainSettablePropertiesLenient](x: Self) {
       
-      @scala.inline
-      def setSelectedStep(value: String): Self = StObject.set(x, "selectedStep", value.asInstanceOf[js.Any])
+      inline def setSelectedStep(value: String): Self = StObject.set(x, "selectedStep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedStepUndefined: Self = StObject.set(x, "selectedStep", js.undefined)
+      inline def setSelectedStepUndefined: Self = StObject.set(x, "selectedStep", js.undefined)
       
-      @scala.inline
-      def setSteps(value: js.Array[Step]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+      inline def setSteps(value: js.Array[Step]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
+      inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
       
-      @scala.inline
-      def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value :_*))
+      inline def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value :_*))
       
-      @scala.inline
-      def setTranslations(value: js.Object): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: js.Object): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslationsNull: Self = StObject.set(x, "translations", null)
+      inline def setTranslationsNull: Self = StObject.set(x, "translations", null)
       
-      @scala.inline
-      def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+      inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
     }
   }
 }

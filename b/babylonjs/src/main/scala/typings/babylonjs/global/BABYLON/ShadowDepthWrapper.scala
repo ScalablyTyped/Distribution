@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.IIOptionShadowDepthMaterial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.ShadowDepthWrapper")
 @js.native
 class ShadowDepthWrapper protected ()
-  extends typings.babylonjs.BABYLON.ShadowDepthWrapper {
+  extends StObject
+     with typings.babylonjs.BABYLON.ShadowDepthWrapper {
   /**
     * Instantiate a new shadow depth wrapper.
     * It works by injecting some specific code in the vertex/fragment shaders of the base material and is used by a shadow generator to

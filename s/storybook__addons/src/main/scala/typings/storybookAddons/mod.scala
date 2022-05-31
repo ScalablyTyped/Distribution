@@ -4,6 +4,7 @@ import typings.storybookAddons.anon.Current
 import typings.storybookAddons.hooksMod.Decorator
 import typings.storybookAddons.hooksMod.EventMap
 import typings.storybookAddons.makeDecoratorMod.MakeDecoratorOptions
+import typings.storybookAddons.makeDecoratorMod.MakeDecoratorResult
 import typings.storybookAddons.typesMod.Args
 import typings.storybookAddons.typesMod.StoryContext
 import typings.storybookAddons.typesMod.StoryGetter
@@ -58,7 +59,7 @@ object mod {
   
   inline def isSupportedType(`type`: Types_): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupportedType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def makeDecorator(hasNameParameterNameWrapperSkipIfNoParametersOrOptions: MakeDecoratorOptions): typings.storybookAddons.makeDecoratorMod.MakeDecoratorResult = ^.asInstanceOf[js.Dynamic].applyDynamic("makeDecorator")(hasNameParameterNameWrapperSkipIfNoParametersOrOptions.asInstanceOf[js.Any]).asInstanceOf[typings.storybookAddons.makeDecoratorMod.MakeDecoratorResult]
+  inline def makeDecorator(hasNameParameterNameWrapperSkipIfNoParametersOrOptions: MakeDecoratorOptions): MakeDecoratorResult = ^.asInstanceOf[js.Dynamic].applyDynamic("makeDecorator")(hasNameParameterNameWrapperSkipIfNoParametersOrOptions.asInstanceOf[js.Any]).asInstanceOf[MakeDecoratorResult]
   
   inline def mockChannel(): typings.storybookChannels.mod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("mockChannel")().asInstanceOf[typings.storybookChannels.mod.default]
   
@@ -122,14 +123,4 @@ object mod {
   inline def useState[S](initialState: js.Function0[S]): js.Tuple2[S, js.Function1[/* update */ (js.Function1[/* prevState */ S, S]) | S, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useState")(initialState.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[S, js.Function1[/* update */ (js.Function1[/* prevState */ S, S]) | S, Unit]]]
   
   inline def useStoryContext(): StoryContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useStoryContext")().asInstanceOf[StoryContext]
-  
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - scala.Any because Already inherited
-  - scala.AnyRef because Already inherited
-  - js.Any because Already inherited
-  - js.Object because Already inherited
-  - js.Function because Already inherited
-  - typings.storybookAddons.typesMod.MakeDecoratorResult because Already inherited */ @js.native
-  trait MakeDecoratorResult
-    extends typings.storybookAddons.makeDecoratorMod.MakeDecoratorResult
 }

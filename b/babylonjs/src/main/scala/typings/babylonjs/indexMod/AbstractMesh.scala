@@ -3,7 +3,6 @@ package typings.babylonjs.indexMod
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "AbstractMesh")
@@ -75,34 +74,29 @@ object AbstractMesh {
   @JSImport("babylonjs/index", "AbstractMesh.OCCLUSION_ALGORITHM_TYPE_ACCURATE")
   @js.native
   def OCCLUSION_ALGORITHM_TYPE_ACCURATE: Double = js.native
-  @scala.inline
-  def OCCLUSION_ALGORITHM_TYPE_ACCURATE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_ALGORITHM_TYPE_ACCURATE")(x.asInstanceOf[js.Any])
+  inline def OCCLUSION_ALGORITHM_TYPE_ACCURATE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_ALGORITHM_TYPE_ACCURATE")(x.asInstanceOf[js.Any])
   
   /** Use a conservative occlusion algorithm */
   @JSImport("babylonjs/index", "AbstractMesh.OCCLUSION_ALGORITHM_TYPE_CONSERVATIVE")
   @js.native
   def OCCLUSION_ALGORITHM_TYPE_CONSERVATIVE: Double = js.native
-  @scala.inline
-  def OCCLUSION_ALGORITHM_TYPE_CONSERVATIVE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_ALGORITHM_TYPE_CONSERVATIVE")(x.asInstanceOf[js.Any])
+  inline def OCCLUSION_ALGORITHM_TYPE_CONSERVATIVE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_ALGORITHM_TYPE_CONSERVATIVE")(x.asInstanceOf[js.Any])
   
   /** No occlusion */
   @JSImport("babylonjs/index", "AbstractMesh.OCCLUSION_TYPE_NONE")
   @js.native
   def OCCLUSION_TYPE_NONE: Double = js.native
-  @scala.inline
-  def OCCLUSION_TYPE_NONE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_TYPE_NONE")(x.asInstanceOf[js.Any])
+  inline def OCCLUSION_TYPE_NONE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_TYPE_NONE")(x.asInstanceOf[js.Any])
   
   /** Occlusion set to optimisitic */
   @JSImport("babylonjs/index", "AbstractMesh.OCCLUSION_TYPE_OPTIMISTIC")
   @js.native
   def OCCLUSION_TYPE_OPTIMISTIC: Double = js.native
-  @scala.inline
-  def OCCLUSION_TYPE_OPTIMISTIC_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_TYPE_OPTIMISTIC")(x.asInstanceOf[js.Any])
+  inline def OCCLUSION_TYPE_OPTIMISTIC_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_TYPE_OPTIMISTIC")(x.asInstanceOf[js.Any])
   
   /** Occlusion set to strict */
   @JSImport("babylonjs/index", "AbstractMesh.OCCLUSION_TYPE_STRICT")
   @js.native
   def OCCLUSION_TYPE_STRICT: Double = js.native
-  @scala.inline
-  def OCCLUSION_TYPE_STRICT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_TYPE_STRICT")(x.asInstanceOf[js.Any])
+  inline def OCCLUSION_TYPE_STRICT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_TYPE_STRICT")(x.asInstanceOf[js.Any])
 }

@@ -2,30 +2,29 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ShadowDepthWrapper extends StObject {
   
-  var _baseMaterial: js.Any = js.native
+  /* private */ var _baseMaterial: js.Any = js.native
   
-  var _makeEffect: js.Any = js.native
+  /* private */ var _makeEffect: js.Any = js.native
   
   /** @hidden */
   var _matriceNames: js.Any = js.native
   
-  var _meshes: js.Any = js.native
+  /* private */ var _meshes: js.Any = js.native
   
-  var _onEffectCreatedObserver: js.Any = js.native
+  /* private */ var _onEffectCreatedObserver: js.Any = js.native
   
-  var _options: js.Any = js.native
+  /* private */ var _options: js.Any = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
-  var _subMeshToDepthEffect: js.Any = js.native
+  /* private */ var _subMeshToDepthEffect: js.Any = js.native
   
-  var _subMeshToEffect: js.Any = js.native
+  /* private */ var _subMeshToEffect: js.Any = js.native
   
   /** Gets the base material the wrapper is built upon */
   def baseMaterial: Material = js.native

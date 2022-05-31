@@ -1,5 +1,6 @@
 package typings.awsSdkClientPinpointBrowser.mod
 
+import typings.awsSdkClientPinpointBrowser.typesCreateExportJobInputMod.CreateExportJobInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class CreateExportJobCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.createExportJobCommandMod.CreateExportJobCommand {
-  def this(input: typings.awsSdkClientPinpointBrowser.typesCreateExportJobInputMod.CreateExportJobInput) = this()
+  def this(input: CreateExportJobInput) = this()
 }

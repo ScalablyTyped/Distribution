@@ -2,21 +2,22 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MeshParticleEmitter extends IParticleEmitterType {
+trait MeshParticleEmitter
+  extends StObject
+     with IParticleEmitterType {
   
-  var _indices: js.Any = js.native
+  /* private */ var _indices: js.Any = js.native
   
-  var _mesh: js.Any = js.native
+  /* private */ var _mesh: js.Any = js.native
   
-  var _normals: js.Any = js.native
+  /* private */ var _normals: js.Any = js.native
   
-  var _positions: js.Any = js.native
+  /* private */ var _positions: js.Any = js.native
   
-  var _storedNormal: js.Any = js.native
+  /* private */ var _storedNormal: js.Any = js.native
   
   /**
     * Random direction of each particle after it has been emitted, between direction1 and direction2 vectors.

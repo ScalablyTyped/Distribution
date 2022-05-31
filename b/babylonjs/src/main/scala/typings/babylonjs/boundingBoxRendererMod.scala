@@ -9,42 +9,49 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.smartArrayMod.SmartArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object boundingBoxRendererMod {
   
   @JSImport("babylonjs/Rendering/boundingBoxRenderer", "BoundingBoxRenderer")
   @js.native
-  class BoundingBoxRenderer protected () extends ISceneComponent {
+  class BoundingBoxRenderer protected ()
+    extends StObject
+       with ISceneComponent {
     /**
       * Instantiates a new bounding box renderer in a scene.
       * @param scene the scene the  renderer renders in
       */
     def this(scene: Scene) = this()
     
-    var _colorShader: js.Any = js.native
+    /* private */ var _colorShader: js.Any = js.native
     
-    var _createIndexBuffer: js.Any = js.native
+    /* private */ var _createIndexBuffer: js.Any = js.native
     
-    var _evaluateSubMesh: js.Any = js.native
+    /* private */ var _evaluateSubMesh: js.Any = js.native
     
-    var _fillIndexBuffer: js.Any = js.native
+    /* private */ var _fillIndexBuffer: js.Any = js.native
     
-    var _fillIndexData: js.Any = js.native
+    /* private */ var _fillIndexData: js.Any = js.native
     
-    var _indexBuffer: js.Any = js.native
+    /* private */ var _indexBuffer: js.Any = js.native
     
-    var _preActiveMesh: js.Any = js.native
+    /* private */ var _preActiveMesh: js.Any = js.native
     
-    var _prepareResources: js.Any = js.native
+    /* private */ var _prepareResources: js.Any = js.native
     
-    var _vertexBuffers: js.Any = js.native
+    /* private */ var _vertexBuffers: js.Any = js.native
     
     /**
       * Color of the bounding box lines placed behind an object
       */
     var backColor: Color3 = js.native
+    
+    /**
+      * Disposes the component and the associated ressources.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * When false, no bounding boxes will be rendered
@@ -55,6 +62,12 @@ object boundingBoxRendererMod {
       * Color of the bounding box lines placed in front of an object
       */
     var frontColor: Color3 = js.native
+    
+    /**
+      * The name of the component. Each component must have a unique name.
+      */
+    /* CompleteClass */
+    var name: String = js.native
     
     /**
       * Observable raised after rendering a bounding box
@@ -70,6 +83,19 @@ object boundingBoxRendererMod {
       * Observable raised after resources are created
       */
     var onResourcesReadyObservable: Observable[BoundingBoxRenderer] = js.native
+    
+    /**
+      * Rebuilds the elements related to this component in case of
+      * context lost for instance.
+      */
+    /* CompleteClass */
+    override def rebuild(): Unit = js.native
+    
+    /**
+      * Register the component to one instance of a scene.
+      */
+    /* CompleteClass */
+    override def register(): Unit = js.native
     
     /**
       * Render the bounding boxes of a specific rendering group
@@ -94,6 +120,12 @@ object boundingBoxRendererMod {
     def reset(): Unit = js.native
     
     /**
+      * The scene the component belongs to.
+      */
+    /* CompleteClass */
+    var scene: Scene = js.native
+    
+    /**
       * Defines if the renderer should show the back lines or not
       */
     var showBackLines: Boolean = js.native
@@ -102,33 +134,28 @@ object boundingBoxRendererMod {
   /* augmented module */
   object babylonjsMeshesAbstractMeshAugmentingMod {
     
-    @js.native
     trait AbstractMesh extends StObject {
       
       /** @hidden (Backing field) */
-      var _showBoundingBox: Boolean = js.native
+      var _showBoundingBox: Boolean
       
       /**
         * Gets or sets a boolean indicating if the bounding box must be rendered as well (false by default)
         */
-      var showBoundingBox: Boolean = js.native
+      var showBoundingBox: Boolean
     }
     object AbstractMesh {
       
-      @scala.inline
-      def apply(_showBoundingBox: Boolean, showBoundingBox: Boolean): typings.babylonjs.boundingBoxRendererMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh = {
+      inline def apply(_showBoundingBox: Boolean, showBoundingBox: Boolean): typings.babylonjs.boundingBoxRendererMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh = {
         val __obj = js.Dynamic.literal(_showBoundingBox = _showBoundingBox.asInstanceOf[js.Any], showBoundingBox = showBoundingBox.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.babylonjs.boundingBoxRendererMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh]
       }
       
-      @scala.inline
-      implicit class AbstractMeshMutableBuilder[Self <: typings.babylonjs.boundingBoxRendererMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh] (val x: Self) extends AnyVal {
+      extension [Self <: typings.babylonjs.boundingBoxRendererMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh](x: Self) {
         
-        @scala.inline
-        def setShowBoundingBox(value: Boolean): Self = StObject.set(x, "showBoundingBox", value.asInstanceOf[js.Any])
+        inline def setShowBoundingBox(value: Boolean): Self = StObject.set(x, "showBoundingBox", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set_showBoundingBox(value: Boolean): Self = StObject.set(x, "_showBoundingBox", value.asInstanceOf[js.Any])
+        inline def set_showBoundingBox(value: Boolean): Self = StObject.set(x, "_showBoundingBox", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -136,30 +163,28 @@ object boundingBoxRendererMod {
   /* augmented module */
   object babylonjsSceneAugmentingMod {
     
-    @js.native
     trait Scene extends StObject {
       
       /** @hidden (Backing field) */
-      var _boundingBoxRenderer: BoundingBoxRenderer = js.native
+      var _boundingBoxRenderer: BoundingBoxRenderer
       
       /** @hidden (Backing field) */
-      var _forceShowBoundingBoxes: Boolean = js.native
+      var _forceShowBoundingBoxes: Boolean
       
       /**
         * Gets or sets a boolean indicating if all bounding boxes must be rendered
         */
-      var forceShowBoundingBoxes: Boolean = js.native
+      var forceShowBoundingBoxes: Boolean
       
       /**
         * Gets the bounding box renderer associated with the scene
         * @returns a BoundingBoxRenderer
         */
-      def getBoundingBoxRenderer(): BoundingBoxRenderer = js.native
+      def getBoundingBoxRenderer(): BoundingBoxRenderer
     }
     object Scene {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         _boundingBoxRenderer: BoundingBoxRenderer,
         _forceShowBoundingBoxes: Boolean,
         forceShowBoundingBoxes: Boolean,
@@ -169,20 +194,15 @@ object boundingBoxRendererMod {
         __obj.asInstanceOf[typings.babylonjs.boundingBoxRendererMod.babylonjsSceneAugmentingMod.Scene]
       }
       
-      @scala.inline
-      implicit class SceneMutableBuilder[Self <: typings.babylonjs.boundingBoxRendererMod.babylonjsSceneAugmentingMod.Scene] (val x: Self) extends AnyVal {
+      extension [Self <: typings.babylonjs.boundingBoxRendererMod.babylonjsSceneAugmentingMod.Scene](x: Self) {
         
-        @scala.inline
-        def setForceShowBoundingBoxes(value: Boolean): Self = StObject.set(x, "forceShowBoundingBoxes", value.asInstanceOf[js.Any])
+        inline def setForceShowBoundingBoxes(value: Boolean): Self = StObject.set(x, "forceShowBoundingBoxes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGetBoundingBoxRenderer(value: () => BoundingBoxRenderer): Self = StObject.set(x, "getBoundingBoxRenderer", js.Any.fromFunction0(value))
+        inline def setGetBoundingBoxRenderer(value: () => BoundingBoxRenderer): Self = StObject.set(x, "getBoundingBoxRenderer", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def set_boundingBoxRenderer(value: BoundingBoxRenderer): Self = StObject.set(x, "_boundingBoxRenderer", value.asInstanceOf[js.Any])
+        inline def set_boundingBoxRenderer(value: BoundingBoxRenderer): Self = StObject.set(x, "_boundingBoxRenderer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set_forceShowBoundingBoxes(value: Boolean): Self = StObject.set(x, "_forceShowBoundingBoxes", value.asInstanceOf[js.Any])
+        inline def set_forceShowBoundingBoxes(value: Boolean): Self = StObject.set(x, "_forceShowBoundingBoxes", value.asInstanceOf[js.Any])
       }
     }
   }

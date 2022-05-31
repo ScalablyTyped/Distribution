@@ -2,7 +2,6 @@ package typings.babylonjs.indexMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "PrePassRenderer")
@@ -18,8 +17,10 @@ class PrePassRenderer protected ()
 /* static members */
 object PrePassRenderer {
   
-  /** @hidden */
-  @JSImport("babylonjs/index", "PrePassRenderer._SceneComponentInitialization")
+  @JSImport("babylonjs/index", "PrePassRenderer")
   @js.native
-  def _SceneComponentInitialization(scene: typings.babylonjs.sceneMod.Scene): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  /** @hidden */
+  inline def _SceneComponentInitialization(scene: typings.babylonjs.sceneMod.Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

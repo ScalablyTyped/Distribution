@@ -36,50 +36,49 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ojLegendEventMap[K, D] extends dvtBaseComponentEventMap[ojLegendSettableProperties[K, D]] {
+trait ojLegendEventMap[K, D]
+  extends StObject
+     with dvtBaseComponentEventMap[ojLegendSettableProperties[K, D]] {
   
-  var asChanged: JetElementCustomEvent[String] = js.native
+  var asChanged: JetElementCustomEvent[String]
   
-  var dataChanged: JetElementCustomEvent[(DataProvider[K, D]) | Null] = js.native
+  var dataChanged: JetElementCustomEvent[(DataProvider[K, D]) | Null]
   
-  var drillingChanged: JetElementCustomEvent[on | off] = js.native
+  var drillingChanged: JetElementCustomEvent[on | off]
   
-  var expandedChanged: JetElementCustomEvent[KeySet[K] | Null] = js.native
+  var expandedChanged: JetElementCustomEvent[KeySet[K] | Null]
   
-  var halignChanged: JetElementCustomEvent[center | end | start] = js.native
+  var halignChanged: JetElementCustomEvent[center | end | start]
   
-  var hiddenCategoriesChanged: JetElementCustomEvent[js.Array[String]] = js.native
+  var hiddenCategoriesChanged: JetElementCustomEvent[js.Array[String]]
   
-  var hideAndShowBehaviorChanged: JetElementCustomEvent[on | off] = js.native
+  var hideAndShowBehaviorChanged: JetElementCustomEvent[on | off]
   
-  var highlightedCategoriesChanged: JetElementCustomEvent[js.Array[String]] = js.native
+  var highlightedCategoriesChanged: JetElementCustomEvent[js.Array[String]]
   
-  var hoverBehaviorChanged: JetElementCustomEvent[dim | none] = js.native
+  var hoverBehaviorChanged: JetElementCustomEvent[dim | none]
   
-  var hoverBehaviorDelayChanged: JetElementCustomEvent[Double] = js.native
+  var hoverBehaviorDelayChanged: JetElementCustomEvent[Double]
   
-  var ojDrill: typings.oracleOraclejet.ojlegendMod.ojLegend.ojDrill = js.native
+  var ojDrill: typings.oracleOraclejet.ojlegendMod.ojLegend.ojDrill
   
-  var orientationChanged: JetElementCustomEvent[horizontal | vertical] = js.native
+  var orientationChanged: JetElementCustomEvent[horizontal | vertical]
   
-  var scrollingChanged: JetElementCustomEvent[off | asNeeded] = js.native
+  var scrollingChanged: JetElementCustomEvent[off | asNeeded]
   
-  var symbolHeightChanged: JetElementCustomEvent[Double] = js.native
+  var symbolHeightChanged: JetElementCustomEvent[Double]
   
-  var symbolWidthChanged: JetElementCustomEvent[Double] = js.native
+  var symbolWidthChanged: JetElementCustomEvent[Double]
   
-  var textStyleChanged: JetElementCustomEvent[js.UndefOr[js.Object]] = js.native
+  var textStyleChanged: JetElementCustomEvent[js.UndefOr[js.Object]]
   
-  var valignChanged: JetElementCustomEvent[middle | bottom | top] = js.native
+  var valignChanged: JetElementCustomEvent[middle | bottom | top]
 }
 object ojLegendEventMap {
   
-  @scala.inline
-  def apply[K, D](
+  inline def apply[K, D](
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,
@@ -196,58 +195,40 @@ object ojLegendEventMap {
     __obj.asInstanceOf[ojLegendEventMap[K, D]]
   }
   
-  @scala.inline
-  implicit class ojLegendEventMapMutableBuilder[Self <: ojLegendEventMap[_, _], K, D] (val x: Self with (ojLegendEventMap[K, D])) extends AnyVal {
+  extension [Self <: ojLegendEventMap[?, ?], K, D](x: Self & (ojLegendEventMap[K, D])) {
     
-    @scala.inline
-    def setAsChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "asChanged", value.asInstanceOf[js.Any])
+    inline def setAsChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "asChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataChanged(value: JetElementCustomEvent[(DataProvider[K, D]) | Null]): Self = StObject.set(x, "dataChanged", value.asInstanceOf[js.Any])
+    inline def setDataChanged(value: JetElementCustomEvent[(DataProvider[K, D]) | Null]): Self = StObject.set(x, "dataChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrillingChanged(value: JetElementCustomEvent[on | off]): Self = StObject.set(x, "drillingChanged", value.asInstanceOf[js.Any])
+    inline def setDrillingChanged(value: JetElementCustomEvent[on | off]): Self = StObject.set(x, "drillingChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedChanged(value: JetElementCustomEvent[KeySet[K] | Null]): Self = StObject.set(x, "expandedChanged", value.asInstanceOf[js.Any])
+    inline def setExpandedChanged(value: JetElementCustomEvent[KeySet[K] | Null]): Self = StObject.set(x, "expandedChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHalignChanged(value: JetElementCustomEvent[center | end | start]): Self = StObject.set(x, "halignChanged", value.asInstanceOf[js.Any])
+    inline def setHalignChanged(value: JetElementCustomEvent[center | end | start]): Self = StObject.set(x, "halignChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenCategoriesChanged(value: JetElementCustomEvent[js.Array[String]]): Self = StObject.set(x, "hiddenCategoriesChanged", value.asInstanceOf[js.Any])
+    inline def setHiddenCategoriesChanged(value: JetElementCustomEvent[js.Array[String]]): Self = StObject.set(x, "hiddenCategoriesChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideAndShowBehaviorChanged(value: JetElementCustomEvent[on | off]): Self = StObject.set(x, "hideAndShowBehaviorChanged", value.asInstanceOf[js.Any])
+    inline def setHideAndShowBehaviorChanged(value: JetElementCustomEvent[on | off]): Self = StObject.set(x, "hideAndShowBehaviorChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightedCategoriesChanged(value: JetElementCustomEvent[js.Array[String]]): Self = StObject.set(x, "highlightedCategoriesChanged", value.asInstanceOf[js.Any])
+    inline def setHighlightedCategoriesChanged(value: JetElementCustomEvent[js.Array[String]]): Self = StObject.set(x, "highlightedCategoriesChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverBehaviorChanged(value: JetElementCustomEvent[dim | none]): Self = StObject.set(x, "hoverBehaviorChanged", value.asInstanceOf[js.Any])
+    inline def setHoverBehaviorChanged(value: JetElementCustomEvent[dim | none]): Self = StObject.set(x, "hoverBehaviorChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverBehaviorDelayChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "hoverBehaviorDelayChanged", value.asInstanceOf[js.Any])
+    inline def setHoverBehaviorDelayChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "hoverBehaviorDelayChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOjDrill(value: ojDrill): Self = StObject.set(x, "ojDrill", value.asInstanceOf[js.Any])
+    inline def setOjDrill(value: ojDrill): Self = StObject.set(x, "ojDrill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationChanged(value: JetElementCustomEvent[horizontal | vertical]): Self = StObject.set(x, "orientationChanged", value.asInstanceOf[js.Any])
+    inline def setOrientationChanged(value: JetElementCustomEvent[horizontal | vertical]): Self = StObject.set(x, "orientationChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollingChanged(value: JetElementCustomEvent[off | asNeeded]): Self = StObject.set(x, "scrollingChanged", value.asInstanceOf[js.Any])
+    inline def setScrollingChanged(value: JetElementCustomEvent[off | asNeeded]): Self = StObject.set(x, "scrollingChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolHeightChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "symbolHeightChanged", value.asInstanceOf[js.Any])
+    inline def setSymbolHeightChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "symbolHeightChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolWidthChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "symbolWidthChanged", value.asInstanceOf[js.Any])
+    inline def setSymbolWidthChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "symbolWidthChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextStyleChanged(value: JetElementCustomEvent[js.UndefOr[js.Object]]): Self = StObject.set(x, "textStyleChanged", value.asInstanceOf[js.Any])
+    inline def setTextStyleChanged(value: JetElementCustomEvent[js.UndefOr[js.Object]]): Self = StObject.set(x, "textStyleChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValignChanged(value: JetElementCustomEvent[middle | bottom | top]): Self = StObject.set(x, "valignChanged", value.asInstanceOf[js.Any])
+    inline def setValignChanged(value: JetElementCustomEvent[middle | bottom | top]): Self = StObject.set(x, "valignChanged", value.asInstanceOf[js.Any])
   }
 }

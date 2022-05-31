@@ -3,69 +3,70 @@ package typings.babylonjs.BABYLON
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShaderMaterial extends Material {
+trait ShaderMaterial
+  extends StObject
+     with Material {
   
-  var _cachedDefines: js.Any = js.native
+  /* private */ var _cachedDefines: js.Any = js.native
   
-  var _cachedWorldViewMatrix: js.Any = js.native
+  /* private */ var _cachedWorldViewMatrix: js.Any = js.native
   
-  var _cachedWorldViewProjectionMatrix: js.Any = js.native
+  /* private */ var _cachedWorldViewProjectionMatrix: js.Any = js.native
   
-  var _checkCache: js.Any = js.native
+  /* private */ var _checkCache: js.Any = js.native
   
-  var _checkUniform: js.Any = js.native
+  /* private */ var _checkUniform: js.Any = js.native
   
-  var _colors3: js.Any = js.native
+  /* private */ var _colors3: js.Any = js.native
   
-  var _colors3Arrays: js.Any = js.native
+  /* private */ var _colors3Arrays: js.Any = js.native
   
-  var _colors4: js.Any = js.native
+  /* private */ var _colors4: js.Any = js.native
   
-  var _colors4Arrays: js.Any = js.native
+  /* private */ var _colors4Arrays: js.Any = js.native
   
-  var _floats: js.Any = js.native
+  /* private */ var _floats: js.Any = js.native
   
-  var _floatsArrays: js.Any = js.native
+  /* private */ var _floatsArrays: js.Any = js.native
   
-  var _ints: js.Any = js.native
+  /* private */ var _ints: js.Any = js.native
   
-  var _matrices: js.Any = js.native
+  /* private */ var _matrices: js.Any = js.native
   
-  var _matrices2x2: js.Any = js.native
+  /* private */ var _matrices2x2: js.Any = js.native
   
-  var _matrices3x3: js.Any = js.native
+  /* private */ var _matrices3x3: js.Any = js.native
   
-  var _matrixArrays: js.Any = js.native
+  /* private */ var _matrixArrays: js.Any = js.native
   
-  var _multiview: js.Any = js.native
+  /* private */ var _multiview: js.Any = js.native
   
-  var _options: js.Any = js.native
+  /* private */ var _options: js.Any = js.native
   
-  var _renderId: js.Any = js.native
+  /* private */ var _renderId: js.Any = js.native
   
-  var _shaderPath: js.Any = js.native
+  /* private */ var _shaderPath: js.Any = js.native
   
-  var _textureArrays: js.Any = js.native
+  /* private */ var _textureArrays: js.Any = js.native
   
-  var _textures: js.Any = js.native
+  /* private */ var _textures: js.Any = js.native
   
-  var _vectors2: js.Any = js.native
+  /* private */ var _vectors2: js.Any = js.native
   
-  var _vectors2Arrays: js.Any = js.native
+  /* private */ var _vectors2Arrays: js.Any = js.native
   
-  var _vectors3: js.Any = js.native
+  /* private */ var _vectors3: js.Any = js.native
   
-  var _vectors3Arrays: js.Any = js.native
+  /* private */ var _vectors3Arrays: js.Any = js.native
   
-  var _vectors4: js.Any = js.native
+  /* private */ var _vectors4: js.Any = js.native
   
-  var _vectors4Arrays: js.Any = js.native
+  /* private */ var _vectors4Arrays: js.Any = js.native
   
-  def bind(world: Matrix, mesh: js.UndefOr[scala.Nothing], effectOverride: Nullable[Effect]): Unit = js.native
+  def bind(world: Matrix, mesh: Unit, effectOverride: Nullable[Effect]): Unit = js.native
   def bind(world: Matrix, mesh: Mesh, effectOverride: Nullable[Effect]): Unit = js.native
   
   def bindOnlyWorldMatrix(world: Matrix, effectOverride: Nullable[Effect]): Unit = js.native

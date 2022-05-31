@@ -2,17 +2,18 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IncrementValueAction extends Action {
+trait IncrementValueAction
+  extends StObject
+     with Action {
   
-  var _effectiveTarget: js.Any = js.native
+  /* private */ var _effectiveTarget: js.Any = js.native
   
-  var _property: js.Any = js.native
+  /* private */ var _property: js.Any = js.native
   
-  var _target: js.Any = js.native
+  /* private */ var _target: js.Any = js.native
   
   /**
     * The path of the property to increment in the target.

@@ -7,36 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("@carbon/layout", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@carbon/layout", "baseFontSize")
   @js.native
   val baseFontSize: Double = js.native
   
-  object breakpoint {
-    
-    inline def apply(args: js.Any*): String = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[String]
-    
-    @JSImport("@carbon/layout", "breakpoint")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def breakpoint(args: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("breakpoint")(args.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  object breakpointDown {
-    
-    inline def apply(name: String): String = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[String]
-    
-    @JSImport("@carbon/layout", "breakpointDown")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def breakpointDown(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("breakpointDown")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  object breakpointUp {
-    
-    inline def apply(name: String): String = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[String]
-    
-    @JSImport("@carbon/layout", "breakpointUp")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def breakpointUp(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("breakpointUp")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
   object breakpoints {
     
@@ -70,45 +53,17 @@ object mod {
     inline def xlg_=(x: Columns): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xlg")(x.asInstanceOf[js.Any])
   }
   
-  object em {
-    
-    inline def apply(px: Double): String = ^.asInstanceOf[js.Dynamic].apply(px.asInstanceOf[js.Any]).asInstanceOf[String]
-    
-    @JSImport("@carbon/layout", "em")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def em(px: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("em")(px.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("@carbon/layout", "miniUnit")
   @js.native
   val miniUnit: Double = js.native
   
-  object miniUnits {
-    
-    inline def apply(count: Double): String = ^.asInstanceOf[js.Dynamic].apply(count.asInstanceOf[js.Any]).asInstanceOf[String]
-    
-    @JSImport("@carbon/layout", "miniUnits")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def miniUnits(count: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("miniUnits")(count.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  object px {
-    
-    inline def apply(value: Double): String = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[String]
-    
-    @JSImport("@carbon/layout", "px")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def px(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("px")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  object rem {
-    
-    inline def apply(px: Double): String = ^.asInstanceOf[js.Dynamic].apply(px.asInstanceOf[js.Any]).asInstanceOf[String]
-    
-    @JSImport("@carbon/layout", "rem")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def rem(px: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rem")(px.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("@carbon/layout", "spacing")
   @js.native

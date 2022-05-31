@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "timer-machine"
-version := "1.1-dt-20200515Z-c1f08f"
+version := "1.1-dt-20200515Z-ef8a86"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -2,7 +2,6 @@ package typings.babylonjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expressionsIndexMod {
@@ -33,22 +32,16 @@ object expressionsIndexMod {
     @JSImport("babylonjs/Engines/Processors/Expressions/index", "ShaderDefineExpression._OperatorPriority")
     @js.native
     def _OperatorPriority: js.Any = js.native
-    @scala.inline
-    def _OperatorPriority_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_OperatorPriority")(x.asInstanceOf[js.Any])
+    inline def _OperatorPriority_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_OperatorPriority")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Engines/Processors/Expressions/index", "ShaderDefineExpression._Stack")
     @js.native
     def _Stack: js.Any = js.native
-    @scala.inline
-    def _Stack_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Stack")(x.asInstanceOf[js.Any])
+    inline def _Stack_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Stack")(x.asInstanceOf[js.Any])
     
-    @JSImport("babylonjs/Engines/Processors/Expressions/index", "ShaderDefineExpression.infixToPostfix")
-    @js.native
-    def infixToPostfix(infix: String): js.Array[String] = js.native
+    inline def infixToPostfix(infix: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("infixToPostfix")(infix.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @JSImport("babylonjs/Engines/Processors/Expressions/index", "ShaderDefineExpression.postfixToInfix")
-    @js.native
-    def postfixToInfix(postfix: js.Array[String]): String = js.native
+    inline def postfixToInfix(postfix: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("postfixToInfix")(postfix.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSImport("babylonjs/Engines/Processors/Expressions/index", "ShaderDefineIsDefinedOperator")

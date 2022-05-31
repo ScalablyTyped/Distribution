@@ -5,7 +5,6 @@ import typings.babylonjs.anon.AutoPlay
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "PhotoDome")
@@ -42,7 +41,7 @@ class PhotoDome protected ()
     options: AutoPlay,
     scene: typings.babylonjs.sceneMod.Scene,
     onError: Nullable[
-        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
       ]
   ) = this()
   def this(
@@ -51,7 +50,7 @@ class PhotoDome protected ()
     options: AutoPlay,
     scene: typings.babylonjs.sceneMod.Scene,
     onError: Nullable[
-        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
       ]
   ) = this()
   def this(
@@ -60,7 +59,7 @@ class PhotoDome protected ()
     options: AutoPlay,
     scene: typings.babylonjs.sceneMod.Scene,
     onError: Nullable[
-        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
       ]
   ) = this()
 }

@@ -2,15 +2,19 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.Polygon")
 @js.native
 class Polygon ()
-  extends typings.babylonjs.BABYLON.Polygon
+  extends StObject
+     with typings.babylonjs.BABYLON.Polygon
 /* static members */
 object Polygon {
+  
+  @JSGlobal("BABYLON.Polygon")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a circle
@@ -20,44 +24,21 @@ object Polygon {
     * @param numberOfSides number of sides that make up the circle
     * @returns points that make the resulting circle
     */
-  @JSGlobal("BABYLON.Polygon.Circle")
-  @js.native
-  def Circle(radius: Double): js.Array[typings.babylonjs.BABYLON.Vector2] = js.native
-  @JSGlobal("BABYLON.Polygon.Circle")
-  @js.native
-  def Circle(
-    radius: Double,
-    cx: js.UndefOr[scala.Nothing],
-    cy: js.UndefOr[scala.Nothing],
-    numberOfSides: Double
-  ): js.Array[typings.babylonjs.BABYLON.Vector2] = js.native
-  @JSGlobal("BABYLON.Polygon.Circle")
-  @js.native
-  def Circle(radius: Double, cx: js.UndefOr[scala.Nothing], cy: Double): js.Array[typings.babylonjs.BABYLON.Vector2] = js.native
-  @JSGlobal("BABYLON.Polygon.Circle")
-  @js.native
-  def Circle(radius: Double, cx: js.UndefOr[scala.Nothing], cy: Double, numberOfSides: Double): js.Array[typings.babylonjs.BABYLON.Vector2] = js.native
-  @JSGlobal("BABYLON.Polygon.Circle")
-  @js.native
-  def Circle(radius: Double, cx: Double): js.Array[typings.babylonjs.BABYLON.Vector2] = js.native
-  @JSGlobal("BABYLON.Polygon.Circle")
-  @js.native
-  def Circle(radius: Double, cx: Double, cy: js.UndefOr[scala.Nothing], numberOfSides: Double): js.Array[typings.babylonjs.BABYLON.Vector2] = js.native
-  @JSGlobal("BABYLON.Polygon.Circle")
-  @js.native
-  def Circle(radius: Double, cx: Double, cy: Double): js.Array[typings.babylonjs.BABYLON.Vector2] = js.native
-  @JSGlobal("BABYLON.Polygon.Circle")
-  @js.native
-  def Circle(radius: Double, cx: Double, cy: Double, numberOfSides: Double): js.Array[typings.babylonjs.BABYLON.Vector2] = js.native
+  inline def Circle(radius: Double): js.Array[typings.babylonjs.BABYLON.Vector2] = ^.asInstanceOf[js.Dynamic].applyDynamic("Circle")(radius.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.babylonjs.BABYLON.Vector2]]
+  inline def Circle(radius: Double, cx: Double): js.Array[typings.babylonjs.BABYLON.Vector2] = (^.asInstanceOf[js.Dynamic].applyDynamic("Circle")(radius.asInstanceOf[js.Any], cx.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.babylonjs.BABYLON.Vector2]]
+  inline def Circle(radius: Double, cx: Double, cy: Double): js.Array[typings.babylonjs.BABYLON.Vector2] = (^.asInstanceOf[js.Dynamic].applyDynamic("Circle")(radius.asInstanceOf[js.Any], cx.asInstanceOf[js.Any], cy.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.babylonjs.BABYLON.Vector2]]
+  inline def Circle(radius: Double, cx: Double, cy: Double, numberOfSides: Double): js.Array[typings.babylonjs.BABYLON.Vector2] = (^.asInstanceOf[js.Dynamic].applyDynamic("Circle")(radius.asInstanceOf[js.Any], cx.asInstanceOf[js.Any], cy.asInstanceOf[js.Any], numberOfSides.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.babylonjs.BABYLON.Vector2]]
+  inline def Circle(radius: Double, cx: Double, cy: Unit, numberOfSides: Double): js.Array[typings.babylonjs.BABYLON.Vector2] = (^.asInstanceOf[js.Dynamic].applyDynamic("Circle")(radius.asInstanceOf[js.Any], cx.asInstanceOf[js.Any], cy.asInstanceOf[js.Any], numberOfSides.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.babylonjs.BABYLON.Vector2]]
+  inline def Circle(radius: Double, cx: Unit, cy: Double): js.Array[typings.babylonjs.BABYLON.Vector2] = (^.asInstanceOf[js.Dynamic].applyDynamic("Circle")(radius.asInstanceOf[js.Any], cx.asInstanceOf[js.Any], cy.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.babylonjs.BABYLON.Vector2]]
+  inline def Circle(radius: Double, cx: Unit, cy: Double, numberOfSides: Double): js.Array[typings.babylonjs.BABYLON.Vector2] = (^.asInstanceOf[js.Dynamic].applyDynamic("Circle")(radius.asInstanceOf[js.Any], cx.asInstanceOf[js.Any], cy.asInstanceOf[js.Any], numberOfSides.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.babylonjs.BABYLON.Vector2]]
+  inline def Circle(radius: Double, cx: Unit, cy: Unit, numberOfSides: Double): js.Array[typings.babylonjs.BABYLON.Vector2] = (^.asInstanceOf[js.Dynamic].applyDynamic("Circle")(radius.asInstanceOf[js.Any], cx.asInstanceOf[js.Any], cy.asInstanceOf[js.Any], numberOfSides.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.babylonjs.BABYLON.Vector2]]
   
   /**
     * Creates a polygon from input string
     * @param input Input polygon data
     * @returns the parsed points
     */
-  @JSGlobal("BABYLON.Polygon.Parse")
-  @js.native
-  def Parse(input: String): js.Array[typings.babylonjs.BABYLON.Vector2] = js.native
+  inline def Parse(input: String): js.Array[typings.babylonjs.BABYLON.Vector2] = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.babylonjs.BABYLON.Vector2]]
   
   /**
     * Creates a rectangle
@@ -67,9 +48,7 @@ object Polygon {
     * @param ymax top Y coord
     * @returns points that make the resulting rectation
     */
-  @JSGlobal("BABYLON.Polygon.Rectangle")
-  @js.native
-  def Rectangle(xmin: Double, ymin: Double, xmax: Double, ymax: Double): js.Array[typings.babylonjs.BABYLON.Vector2] = js.native
+  inline def Rectangle(xmin: Double, ymin: Double, xmax: Double, ymax: Double): js.Array[typings.babylonjs.BABYLON.Vector2] = (^.asInstanceOf[js.Dynamic].applyDynamic("Rectangle")(xmin.asInstanceOf[js.Any], ymin.asInstanceOf[js.Any], xmax.asInstanceOf[js.Any], ymax.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.babylonjs.BABYLON.Vector2]]
   
   /**
     * Starts building a polygon from x and y coordinates
@@ -77,7 +56,5 @@ object Polygon {
     * @param y y coordinate
     * @returns the started path2
     */
-  @JSGlobal("BABYLON.Polygon.StartingAt")
-  @js.native
-  def StartingAt(x: Double, y: Double): typings.babylonjs.BABYLON.Path2 = js.native
+  inline def StartingAt(x: Double, y: Double): typings.babylonjs.BABYLON.Path2 = (^.asInstanceOf[js.Dynamic].applyDynamic("StartingAt")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Path2]
 }

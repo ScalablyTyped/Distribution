@@ -11,14 +11,15 @@ import typings.babylonjs.textureMod.Texture
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spriteManagerMod {
   
   @JSImport("babylonjs/Sprites/spriteManager", "SpriteManager")
   @js.native
-  class SpriteManager protected () extends ISpriteManager {
+  class SpriteManager protected ()
+    extends StObject
+       with ISpriteManager {
     /**
       * Creates a new sprite manager
       * @param name defines the manager's name
@@ -55,16 +56,6 @@ object spriteManagerMod {
       capacity: Double,
       cellSize: js.Any,
       scene: Scene,
-      epsilon: js.UndefOr[scala.Nothing],
-      samplingMode: Double
-    ) = this()
-    def this(
-      /** defines the manager's name */
-    name: String,
-      imgUrl: String,
-      capacity: Double,
-      cellSize: js.Any,
-      scene: Scene,
       epsilon: Double,
       samplingMode: Double
     ) = this()
@@ -75,31 +66,8 @@ object spriteManagerMod {
       capacity: Double,
       cellSize: js.Any,
       scene: Scene,
-      epsilon: js.UndefOr[scala.Nothing],
-      samplingMode: js.UndefOr[scala.Nothing],
-      fromPacked: Boolean
-    ) = this()
-    def this(
-      /** defines the manager's name */
-    name: String,
-      imgUrl: String,
-      capacity: Double,
-      cellSize: js.Any,
-      scene: Scene,
-      epsilon: js.UndefOr[scala.Nothing],
-      samplingMode: Double,
-      fromPacked: Boolean
-    ) = this()
-    def this(
-      /** defines the manager's name */
-    name: String,
-      imgUrl: String,
-      capacity: Double,
-      cellSize: js.Any,
-      scene: Scene,
-      epsilon: Double,
-      samplingMode: js.UndefOr[scala.Nothing],
-      fromPacked: Boolean
+      epsilon: Unit,
+      samplingMode: Double
     ) = this()
     def this(
       /** defines the manager's name */
@@ -119,10 +87,9 @@ object spriteManagerMod {
       capacity: Double,
       cellSize: js.Any,
       scene: Scene,
-      epsilon: js.UndefOr[scala.Nothing],
-      samplingMode: js.UndefOr[scala.Nothing],
-      fromPacked: js.UndefOr[scala.Nothing],
-      spriteJSON: js.Any
+      epsilon: Double,
+      samplingMode: Unit,
+      fromPacked: Boolean
     ) = this()
     def this(
       /** defines the manager's name */
@@ -131,22 +98,9 @@ object spriteManagerMod {
       capacity: Double,
       cellSize: js.Any,
       scene: Scene,
-      epsilon: js.UndefOr[scala.Nothing],
-      samplingMode: js.UndefOr[scala.Nothing],
-      fromPacked: Boolean,
-      spriteJSON: js.Any
-    ) = this()
-    def this(
-      /** defines the manager's name */
-    name: String,
-      imgUrl: String,
-      capacity: Double,
-      cellSize: js.Any,
-      scene: Scene,
-      epsilon: js.UndefOr[scala.Nothing],
+      epsilon: Unit,
       samplingMode: Double,
-      fromPacked: js.UndefOr[scala.Nothing],
-      spriteJSON: js.Any
+      fromPacked: Boolean
     ) = this()
     def this(
       /** defines the manager's name */
@@ -155,7 +109,18 @@ object spriteManagerMod {
       capacity: Double,
       cellSize: js.Any,
       scene: Scene,
-      epsilon: js.UndefOr[scala.Nothing],
+      epsilon: Unit,
+      samplingMode: Unit,
+      fromPacked: Boolean
+    ) = this()
+    def this(
+      /** defines the manager's name */
+    name: String,
+      imgUrl: String,
+      capacity: Double,
+      cellSize: js.Any,
+      scene: Scene,
+      epsilon: Double,
       samplingMode: Double,
       fromPacked: Boolean,
       spriteJSON: js.Any
@@ -168,8 +133,8 @@ object spriteManagerMod {
       cellSize: js.Any,
       scene: Scene,
       epsilon: Double,
-      samplingMode: js.UndefOr[scala.Nothing],
-      fromPacked: js.UndefOr[scala.Nothing],
+      samplingMode: Double,
+      fromPacked: Unit,
       spriteJSON: js.Any
     ) = this()
     def this(
@@ -180,7 +145,7 @@ object spriteManagerMod {
       cellSize: js.Any,
       scene: Scene,
       epsilon: Double,
-      samplingMode: js.UndefOr[scala.Nothing],
+      samplingMode: Unit,
       fromPacked: Boolean,
       spriteJSON: js.Any
     ) = this()
@@ -192,8 +157,8 @@ object spriteManagerMod {
       cellSize: js.Any,
       scene: Scene,
       epsilon: Double,
-      samplingMode: Double,
-      fromPacked: js.UndefOr[scala.Nothing],
+      samplingMode: Unit,
+      fromPacked: Unit,
       spriteJSON: js.Any
     ) = this()
     def this(
@@ -203,36 +168,72 @@ object spriteManagerMod {
       capacity: Double,
       cellSize: js.Any,
       scene: Scene,
-      epsilon: Double,
+      epsilon: Unit,
       samplingMode: Double,
       fromPacked: Boolean,
+      spriteJSON: js.Any
+    ) = this()
+    def this(
+      /** defines the manager's name */
+    name: String,
+      imgUrl: String,
+      capacity: Double,
+      cellSize: js.Any,
+      scene: Scene,
+      epsilon: Unit,
+      samplingMode: Double,
+      fromPacked: Unit,
+      spriteJSON: js.Any
+    ) = this()
+    def this(
+      /** defines the manager's name */
+    name: String,
+      imgUrl: String,
+      capacity: Double,
+      cellSize: js.Any,
+      scene: Scene,
+      epsilon: Unit,
+      samplingMode: Unit,
+      fromPacked: Boolean,
+      spriteJSON: js.Any
+    ) = this()
+    def this(
+      /** defines the manager's name */
+    name: String,
+      imgUrl: String,
+      capacity: Double,
+      cellSize: js.Any,
+      scene: Scene,
+      epsilon: Unit,
+      samplingMode: Unit,
+      fromPacked: Unit,
       spriteJSON: js.Any
     ) = this()
     
     /** Associative array from JSON sprite data file */
-    var _cellData: js.Any = js.native
+    /* private */ var _cellData: js.Any = js.native
     
-    var _checkTextureAlpha: js.Any = js.native
+    /* private */ var _checkTextureAlpha: js.Any = js.native
     
-    var _customUpdate: js.Any = js.native
+    /* private */ var _customUpdate: js.Any = js.native
     
-    var _fromPacked: js.Any = js.native
+    /* private */ var _fromPacked: js.Any = js.native
     
-    var _makePacked: js.Any = js.native
+    /* private */ var _makePacked: js.Any = js.native
     
-    var _onDisposeObserver: js.Any = js.native
+    /* private */ var _onDisposeObserver: js.Any = js.native
     
     /** True when packed cell data from JSON file is ready*/
-    var _packedAndReady: js.Any = js.native
+    /* private */ var _packedAndReady: js.Any = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
     /** Array of sprite names from JSON sprite data file */
-    var _spriteMap: js.Any = js.native
+    /* private */ var _spriteMap: js.Any = js.native
     
-    var _spriteRenderer: js.Any = js.native
+    /* private */ var _spriteRenderer: js.Any = js.native
     
-    var _textureContent: js.Any = js.native
+    /* private */ var _textureContent: js.Any = js.native
     
     /**
       * Blend mode use to render the particle, it can be any of
@@ -265,6 +266,12 @@ object spriteManagerMod {
       *  and setting some specific blend modes.
       */
     var disableDepthWrite: Boolean = js.native
+    
+    /**
+      * Releases all held resources
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /** Gets or sets a boolean indicating if the manager must consider scene fog when rendering */
     def fogEnabled: Boolean = js.native
@@ -328,12 +335,8 @@ object spriteManagerMod {
       * @param rootUrl defines the root URL to use to load textures and relative dependencies
       * @returns a promise that will resolve to the new sprite manager
       */
-    @JSImport("babylonjs/Sprites/spriteManager", "SpriteManager.CreateFromSnippetAsync")
-    @js.native
-    def CreateFromSnippetAsync(snippetId: String, scene: Scene): js.Promise[SpriteManager] = js.native
-    @JSImport("babylonjs/Sprites/spriteManager", "SpriteManager.CreateFromSnippetAsync")
-    @js.native
-    def CreateFromSnippetAsync(snippetId: String, scene: Scene, rootUrl: String): js.Promise[SpriteManager] = js.native
+    inline def CreateFromSnippetAsync(snippetId: String, scene: Scene): js.Promise[SpriteManager] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SpriteManager]]
+    inline def CreateFromSnippetAsync(snippetId: String, scene: Scene, rootUrl: String): js.Promise[SpriteManager] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SpriteManager]]
     
     /**
       * Parses a JSON object to create a new sprite manager.
@@ -342,9 +345,7 @@ object spriteManagerMod {
       * @param rootUrl The root url to use to load external dependencies like texture
       * @returns the new sprite manager
       */
-    @JSImport("babylonjs/Sprites/spriteManager", "SpriteManager.Parse")
-    @js.native
-    def Parse(parsedManager: js.Any, scene: Scene, rootUrl: String): SpriteManager = js.native
+    inline def Parse(parsedManager: js.Any, scene: Scene, rootUrl: String): SpriteManager = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedManager.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[SpriteManager]
     
     /**
       * Creates a sprite manager from a snippet saved in a remote file
@@ -354,23 +355,20 @@ object spriteManagerMod {
       * @param rootUrl defines the root URL to use to load textures and relative dependencies
       * @returns a promise that will resolve to the new sprite manager
       */
-    @JSImport("babylonjs/Sprites/spriteManager", "SpriteManager.ParseFromFileAsync")
-    @js.native
-    def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene): js.Promise[SpriteManager] = js.native
-    @JSImport("babylonjs/Sprites/spriteManager", "SpriteManager.ParseFromFileAsync")
-    @js.native
-    def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene, rootUrl: String): js.Promise[SpriteManager] = js.native
+    inline def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene): js.Promise[SpriteManager] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SpriteManager]]
+    inline def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene, rootUrl: String): js.Promise[SpriteManager] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SpriteManager]]
     
     /** Define the Url to load snippets */
     @JSImport("babylonjs/Sprites/spriteManager", "SpriteManager.SnippetUrl")
     @js.native
     def SnippetUrl: String = js.native
-    @scala.inline
-    def SnippetUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SnippetUrl")(x.asInstanceOf[js.Any])
+    inline def SnippetUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SnippetUrl")(x.asInstanceOf[js.Any])
   }
   
   @js.native
-  trait ISpriteManager extends IDisposable {
+  trait ISpriteManager
+    extends StObject
+       with IDisposable {
     
     /** Defines the default height of a cell in the spritesheet */
     var cellHeight: Double = js.native
@@ -387,7 +385,6 @@ object spriteManagerMod {
       * @returns picking info or null.
       */
     def intersects(ray: Ray, camera: Camera): Nullable[PickingInfo] = js.native
-    def intersects(ray: Ray, camera: Camera, predicate: js.UndefOr[scala.Nothing], fastCheck: Boolean): Nullable[PickingInfo] = js.native
     def intersects(ray: Ray, camera: Camera, predicate: js.Function1[/* sprite */ Sprite, Boolean]): Nullable[PickingInfo] = js.native
     def intersects(
       ray: Ray,
@@ -395,6 +392,7 @@ object spriteManagerMod {
       predicate: js.Function1[/* sprite */ Sprite, Boolean],
       fastCheck: Boolean
     ): Nullable[PickingInfo] = js.native
+    def intersects(ray: Ray, camera: Camera, predicate: Unit, fastCheck: Boolean): Nullable[PickingInfo] = js.native
     
     /**
       * Gets or sets a boolean indicating if the mesh can be picked (by scene.pick for instance or through actions). Default is true

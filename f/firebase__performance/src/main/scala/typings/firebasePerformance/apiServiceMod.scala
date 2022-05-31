@@ -9,10 +9,13 @@ import typings.std.PerformanceEntry
 import typings.std.Storage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apiServiceMod {
+  
+  @JSImport("@firebase/performance/dist/src/services/api_service", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@firebase/performance/dist/src/services/api_service", "Api")
   @js.native
@@ -20,7 +23,7 @@ object apiServiceMod {
     def this(window: Window) = this()
     
     /** PreformanceObserver constructor function. */
-    val PerformanceObserver: js.Any = js.native
+    /* private */ val PerformanceObserver: js.Any = js.native
     
     val document: Document = js.native
     
@@ -42,7 +45,7 @@ object apiServiceMod {
     
     val onFirstInputDelay: js.UndefOr[js.Function] = js.native
     
-    val performance: js.Any = js.native
+    /* private */ val performance: js.Any = js.native
     
     def requiredApisAvailable(): Boolean = js.native
     
@@ -50,19 +53,19 @@ object apiServiceMod {
     
     val window: js.UndefOr[Window] = js.native
     
-    val windowLocation: js.Any = js.native
+    /* private */ val windowLocation: js.Any = js.native
   }
   /* static members */
   object Api {
     
-    @JSImport("@firebase/performance/dist/src/services/api_service", "Api.getInstance")
+    @JSImport("@firebase/performance/dist/src/services/api_service", "Api")
     @js.native
-    def getInstance(): Api = js.native
+    val ^ : js.Any = js.native
+    
+    inline def getInstance(): Api = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[Api]
   }
   
-  @JSImport("@firebase/performance/dist/src/services/api_service", "setupApi")
-  @js.native
-  def setupApi(window: Window): Unit = js.native
+  inline def setupApi(window: Window): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setupApi")(window.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.firebasePerformance.firebasePerformanceStrings.mark
@@ -75,53 +78,41 @@ object apiServiceMod {
   trait EntryType extends StObject
   object EntryType {
     
-    @scala.inline
-    def frame: typings.firebasePerformance.firebasePerformanceStrings.frame = "frame".asInstanceOf[typings.firebasePerformance.firebasePerformanceStrings.frame]
+    inline def frame: typings.firebasePerformance.firebasePerformanceStrings.frame = "frame".asInstanceOf[typings.firebasePerformance.firebasePerformanceStrings.frame]
     
-    @scala.inline
-    def mark: typings.firebasePerformance.firebasePerformanceStrings.mark = "mark".asInstanceOf[typings.firebasePerformance.firebasePerformanceStrings.mark]
+    inline def mark: typings.firebasePerformance.firebasePerformanceStrings.mark = "mark".asInstanceOf[typings.firebasePerformance.firebasePerformanceStrings.mark]
     
-    @scala.inline
-    def measure: typings.firebasePerformance.firebasePerformanceStrings.measure = "measure".asInstanceOf[typings.firebasePerformance.firebasePerformanceStrings.measure]
+    inline def measure: typings.firebasePerformance.firebasePerformanceStrings.measure = "measure".asInstanceOf[typings.firebasePerformance.firebasePerformanceStrings.measure]
     
-    @scala.inline
-    def navigation: typings.firebasePerformance.firebasePerformanceStrings.navigation = "navigation".asInstanceOf[typings.firebasePerformance.firebasePerformanceStrings.navigation]
+    inline def navigation: typings.firebasePerformance.firebasePerformanceStrings.navigation = "navigation".asInstanceOf[typings.firebasePerformance.firebasePerformanceStrings.navigation]
     
-    @scala.inline
-    def paint: typings.firebasePerformance.firebasePerformanceStrings.paint = "paint".asInstanceOf[typings.firebasePerformance.firebasePerformanceStrings.paint]
+    inline def paint: typings.firebasePerformance.firebasePerformanceStrings.paint = "paint".asInstanceOf[typings.firebasePerformance.firebasePerformanceStrings.paint]
     
-    @scala.inline
-    def resource: typings.firebasePerformance.firebasePerformanceStrings.resource = "resource".asInstanceOf[typings.firebasePerformance.firebasePerformanceStrings.resource]
+    inline def resource: typings.firebasePerformance.firebasePerformanceStrings.resource = "resource".asInstanceOf[typings.firebasePerformance.firebasePerformanceStrings.resource]
   }
   
   object global {
     
-    @js.native
     trait Window extends StObject {
       
-      var PerformanceObserver: TypeofPerformanceObserver = js.native
+      var PerformanceObserver: TypeofPerformanceObserver
       
-      var perfMetrics: js.UndefOr[OnFirstInputDelay] = js.native
+      var perfMetrics: js.UndefOr[OnFirstInputDelay] = js.undefined
     }
     object Window {
       
-      @scala.inline
-      def apply(PerformanceObserver: TypeofPerformanceObserver): Window = {
+      inline def apply(PerformanceObserver: TypeofPerformanceObserver): Window = {
         val __obj = js.Dynamic.literal(PerformanceObserver = PerformanceObserver.asInstanceOf[js.Any])
         __obj.asInstanceOf[Window]
       }
       
-      @scala.inline
-      implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+      extension [Self <: Window](x: Self) {
         
-        @scala.inline
-        def setPerfMetrics(value: OnFirstInputDelay): Self = StObject.set(x, "perfMetrics", value.asInstanceOf[js.Any])
+        inline def setPerfMetrics(value: OnFirstInputDelay): Self = StObject.set(x, "perfMetrics", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPerfMetricsUndefined: Self = StObject.set(x, "perfMetrics", js.undefined)
+        inline def setPerfMetricsUndefined: Self = StObject.set(x, "perfMetrics", js.undefined)
         
-        @scala.inline
-        def setPerformanceObserver(value: TypeofPerformanceObserver): Self = StObject.set(x, "PerformanceObserver", value.asInstanceOf[js.Any])
+        inline def setPerformanceObserver(value: TypeofPerformanceObserver): Self = StObject.set(x, "PerformanceObserver", value.asInstanceOf[js.Any])
       }
     }
   }

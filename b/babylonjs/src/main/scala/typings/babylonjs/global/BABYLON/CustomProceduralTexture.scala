@@ -1,14 +1,15 @@
 package typings.babylonjs.global.BABYLON
 
+import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.CustomProceduralTexture")
 @js.native
 class CustomProceduralTexture protected ()
-  extends typings.babylonjs.BABYLON.CustomProceduralTexture {
+  extends StObject
+     with typings.babylonjs.BABYLON.CustomProceduralTexture {
   /**
     * Instantiates a new Custom Procedural Texture.
     * Procedural texturing is a way to programmatically create a texture. There are 2 types of procedural textures: code-only, and code that references some classic 2D images, sometimes called 'refMaps' or 'sampler' images.
@@ -34,7 +35,7 @@ class CustomProceduralTexture protected ()
     texturePath: String,
     size: Double,
     scene: typings.babylonjs.BABYLON.Scene,
-    fallbackTexture: js.UndefOr[scala.Nothing],
+    fallbackTexture: Unit,
     generateMipMaps: Boolean
   ) = this()
   def this(
@@ -45,4 +46,10 @@ class CustomProceduralTexture protected ()
     fallbackTexture: typings.babylonjs.BABYLON.Texture,
     generateMipMaps: Boolean
   ) = this()
+  
+  /**
+    * Array of animations
+    */
+  /* CompleteClass */
+  var animations: Nullable[js.Array[typings.babylonjs.BABYLON.Animation]] = js.native
 }

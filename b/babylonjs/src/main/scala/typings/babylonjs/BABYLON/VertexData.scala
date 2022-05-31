@@ -2,19 +2,18 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait VertexData extends StObject {
   
-  var _applyTo: js.Any = js.native
+  /* private */ var _applyTo: js.Any = js.native
   
-  var _mergeElement: js.Any = js.native
+  /* private */ var _mergeElement: js.Any = js.native
   
-  var _update: js.Any = js.native
+  /* private */ var _update: js.Any = js.native
   
-  var _validate: js.Any = js.native
+  /* private */ var _validate: js.Any = js.native
   
   /**
     * Associates the vertexData to the passed Geometry.

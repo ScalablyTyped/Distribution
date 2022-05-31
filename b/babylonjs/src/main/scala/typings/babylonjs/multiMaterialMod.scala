@@ -5,7 +5,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object multiMaterialMod {
@@ -23,9 +22,9 @@ object multiMaterialMod {
       */
     def this(name: String, scene: Scene) = this()
     
-    var _hookArray: js.Any = js.native
+    /* private */ var _hookArray: js.Any = js.native
     
-    var _subMaterials: js.Any = js.native
+    /* private */ var _subMaterials: js.Any = js.native
     
     def clone(name: String, cloneChildren: Boolean): MultiMaterial = js.native
     
@@ -52,14 +51,16 @@ object multiMaterialMod {
   /* static members */
   object MultiMaterial {
     
+    @JSImport("babylonjs/Materials/multiMaterial", "MultiMaterial")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a MultiMaterial from parsed MultiMaterial data.
       * @param parsedMultiMaterial defines parsed MultiMaterial data.
       * @param scene defines the hosting scene
       * @returns a new MultiMaterial
       */
-    @JSImport("babylonjs/Materials/multiMaterial", "MultiMaterial.ParseMultiMaterial")
-    @js.native
-    def ParseMultiMaterial(parsedMultiMaterial: js.Any, scene: Scene): MultiMaterial = js.native
+    inline def ParseMultiMaterial(parsedMultiMaterial: js.Any, scene: Scene): MultiMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseMultiMaterial")(parsedMultiMaterial.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[MultiMaterial]
   }
 }

@@ -38,11 +38,6 @@ object mod {
     inline def show(targetModal: String, config: MicroModalConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(targetModal.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  /**
-    * MicroModal controller
-    */
-  object MicroModal
-  
   trait MicroModalConfig extends StObject {
     
     /**

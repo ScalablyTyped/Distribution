@@ -2,15 +2,14 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Path2 extends StObject {
   
-  var _length: js.Any = js.native
+  /* private */ var _length: js.Any = js.native
   
-  var _points: js.Any = js.native
+  /* private */ var _points: js.Any = js.native
   
   /**
     * Adds _numberOfSegments_ segments according to the arc definition (middle point coordinates, end point coordinates, the arc start point being the current Path2 last point) to the current Path2.

@@ -9,17 +9,15 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentsMod {
   
-  object GroupItem {
-    
-    @JSImport("@jupyterlab/statusbar/lib/components", "GroupItem")
-    @js.native
-    def apply(props: IProps with HTMLAttributes[HTMLDivElement]): ReactElement = js.native
-  }
+  @JSImport("@jupyterlab/statusbar/lib/components", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def GroupItem(props: IProps & HTMLAttributes[HTMLDivElement]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("GroupItem")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("@jupyterlab/statusbar/lib/components", "Popup")
   @js.native
@@ -31,21 +29,9 @@ object componentsMod {
     def this(options: IOptions) = this()
   }
   
-  object ProgressBar {
-    
-    @JSImport("@jupyterlab/statusbar/lib/components", "ProgressBar")
-    @js.native
-    def apply(props: typings.jupyterlabStatusbar.progressBarMod.ProgressBar.IProps): Element = js.native
-  }
+  inline def ProgressBar(props: typings.jupyterlabStatusbar.progressBarMod.ProgressBar.IProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ProgressBar")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  object TextItem {
-    
-    @JSImport("@jupyterlab/statusbar/lib/components", "TextItem")
-    @js.native
-    def apply(props: typings.jupyterlabStatusbar.textMod.TextItem.IProps with HTMLAttributes[HTMLSpanElement]): ReactElement = js.native
-  }
+  inline def TextItem(props: typings.jupyterlabStatusbar.textMod.TextItem.IProps & HTMLAttributes[HTMLSpanElement]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("TextItem")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @JSImport("@jupyterlab/statusbar/lib/components", "showPopup")
-  @js.native
-  def showPopup(options: IOptions): typings.jupyterlabStatusbar.hoverMod.Popup = js.native
+  inline def showPopup(options: IOptions): typings.jupyterlabStatusbar.hoverMod.Popup = ^.asInstanceOf[js.Dynamic].applyDynamic("showPopup")(options.asInstanceOf[js.Any]).asInstanceOf[typings.jupyterlabStatusbar.hoverMod.Popup]
 }

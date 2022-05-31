@@ -2,15 +2,14 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ShaderCodeConditionNode extends ShaderCodeNode
+trait ShaderCodeConditionNode
+  extends StObject
+     with ShaderCodeNode
 object ShaderCodeConditionNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     children: js.Array[ShaderCodeNode],
     isValid: org.scalablytyped.runtime.StringDictionary[String] => Boolean,
     line: String,

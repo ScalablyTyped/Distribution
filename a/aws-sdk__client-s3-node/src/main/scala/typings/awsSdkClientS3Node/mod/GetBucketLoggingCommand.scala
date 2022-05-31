@@ -1,5 +1,6 @@
 package typings.awsSdkClientS3Node.mod
 
+import typings.awsSdkClientS3Node.typesGetBucketLoggingInputMod.GetBucketLoggingInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class GetBucketLoggingCommand protected ()
   extends typings.awsSdkClientS3Node.getBucketLoggingCommandMod.GetBucketLoggingCommand {
-  def this(input: typings.awsSdkClientS3Node.typesGetBucketLoggingInputMod.GetBucketLoggingInput) = this()
+  def this(input: GetBucketLoggingInput) = this()
 }

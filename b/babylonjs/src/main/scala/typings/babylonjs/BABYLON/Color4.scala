@@ -3,7 +3,6 @@ package typings.babylonjs.BABYLON
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -39,9 +38,6 @@ trait Color4 extends StObject {
     */
   var b: Double = js.native
   
-  def clampToRef(min: js.UndefOr[scala.Nothing], max: js.UndefOr[scala.Nothing], result: Color4): Color4 = js.native
-  def clampToRef(min: js.UndefOr[scala.Nothing], max: Double, result: Color4): Color4 = js.native
-  def clampToRef(min: Double, max: js.UndefOr[scala.Nothing], result: Color4): Color4 = js.native
   /**
     * Clamps the rgb values by the min and max values and stores the result into "result"
     * @param min defines minimum clamping value (default is 0)
@@ -50,6 +46,9 @@ trait Color4 extends StObject {
     * @returns the cuurent Color4
     */
   def clampToRef(min: Double, max: Double, result: Color4): Color4 = js.native
+  def clampToRef(min: Double, max: Unit, result: Color4): Color4 = js.native
+  def clampToRef(min: Unit, max: Double, result: Color4): Color4 = js.native
+  def clampToRef(min: Unit, max: Unit, result: Color4): Color4 = js.native
   
   /**
     * Copies the given Color4 values into the current one

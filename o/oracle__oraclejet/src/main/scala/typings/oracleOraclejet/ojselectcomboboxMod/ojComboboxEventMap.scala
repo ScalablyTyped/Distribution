@@ -30,22 +30,21 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ojComboboxEventMap[V, SP /* <: ojComboboxSettableProperties[V, SV, RV] */, SV, RV] extends editableValueEventMap[V, SP, SV, RV] {
+trait ojComboboxEventMap[V, SP /* <: ojComboboxSettableProperties[V, SV, RV] */, SV, RV]
+  extends StObject
+     with editableValueEventMap[V, SP, SV, RV] {
   
   @JSName("ojAnimateEnd")
-  var ojAnimateEnd_ojComboboxEventMap: ojAnimateEnd = js.native
+  var ojAnimateEnd_ojComboboxEventMap: ojAnimateEnd
   
   @JSName("ojAnimateStart")
-  var ojAnimateStart_ojComboboxEventMap: ojAnimateStart = js.native
+  var ojAnimateStart_ojComboboxEventMap: ojAnimateStart
 }
 object ojComboboxEventMap {
   
-  @scala.inline
-  def apply[V, SP /* <: ojComboboxSettableProperties[V, SV, RV] */, SV, RV](
+  inline def apply[V, SP /* <: ojComboboxSettableProperties[V, SV, RV] */, SV, RV](
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,
@@ -155,13 +154,10 @@ object ojComboboxEventMap {
     __obj.asInstanceOf[ojComboboxEventMap[V, SP, SV, RV]]
   }
   
-  @scala.inline
-  implicit class ojComboboxEventMapMutableBuilder[Self <: ojComboboxEventMap[_, _, _, _], V, SP /* <: ojComboboxSettableProperties[V, SV, RV] */, SV, RV] (val x: Self with (ojComboboxEventMap[V, SP, SV, RV])) extends AnyVal {
+  extension [Self <: ojComboboxEventMap[?, ?, ?, ?], V, SP /* <: ojComboboxSettableProperties[V, SV, RV] */, SV, RV](x: Self & (ojComboboxEventMap[V, SP, SV, RV])) {
     
-    @scala.inline
-    def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
+    inline def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOjAnimateStart(value: ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
+    inline def setOjAnimateStart(value: ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
   }
 }

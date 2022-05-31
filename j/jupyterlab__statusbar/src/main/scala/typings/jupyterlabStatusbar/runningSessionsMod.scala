@@ -7,7 +7,6 @@ import typings.jupyterlabStatusbar.runningSessionsMod.RunningSessions.IOptions
 import typings.jupyterlabStatusbar.runningSessionsMod.RunningSessions.Model
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object runningSessionsMod {
@@ -20,19 +19,19 @@ object runningSessionsMod {
       */
     def this(opts: IOptions) = this()
     
-    var _handleClick: js.Any = js.native
+    /* private */ var _handleClick: js.Any = js.native
     
     /**
       * Set the number of kernel sessions when the list changes.
       */
-    var _onSessionsRunningChanged: js.Any = js.native
+    /* private */ var _onSessionsRunningChanged: js.Any = js.native
     
     /**
       * Set the number of terminal sessions when the list changes.
       */
-    var _onTerminalsRunningChanged: js.Any = js.native
+    /* private */ var _onTerminalsRunningChanged: js.Any = js.native
     
-    var _serviceManager: js.Any = js.native
+    /* private */ var _serviceManager: js.Any = js.native
   }
   object RunningSessions {
     
@@ -43,9 +42,9 @@ object runningSessionsMod {
     @js.native
     class Model () extends VDomModel {
       
-      var _sessions: js.Any = js.native
+      /* private */ var _sessions: js.Any = js.native
       
-      var _terminals: js.Any = js.native
+      /* private */ var _terminals: js.Any = js.native
       
       /**
         * The number of active kernel sessions.
@@ -63,36 +62,31 @@ object runningSessionsMod {
     /**
       * Options for creating a RunningSessions item.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * A click handler for the item. By defult this is used
         * to activate the running sessions side panel.
         */
-      def onClick(): Unit = js.native
+      def onClick(): Unit
       
       /**
         * The application service manager.
         */
-      var serviceManager: ServiceManager = js.native
+      var serviceManager: ServiceManager
     }
     object IOptions {
       
-      @scala.inline
-      def apply(onClick: () => Unit, serviceManager: ServiceManager): IOptions = {
+      inline def apply(onClick: () => Unit, serviceManager: ServiceManager): IOptions = {
         val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction0(onClick), serviceManager = serviceManager.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+        inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setServiceManager(value: ServiceManager): Self = StObject.set(x, "serviceManager", value.asInstanceOf[js.Any])
+        inline def setServiceManager(value: ServiceManager): Self = StObject.set(x, "serviceManager", value.asInstanceOf[js.Any])
       }
     }
   }

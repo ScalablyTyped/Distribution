@@ -3,98 +3,95 @@ package typings.babylonjs.BABYLON
 import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KhronosTextureContainer extends StObject {
   
-  var _upload2DCompressedLevels: js.Any = js.native
+  /* private */ var _upload2DCompressedLevels: js.Any
   
   /**
     * Gets the bytes of key value data
     */
-  var bytesOfKeyValueData: Double = js.native
+  var bytesOfKeyValueData: Double
   
   /** contents of the KTX container file */
-  var data: ArrayBufferView = js.native
+  var data: ArrayBufferView
   
   /**
     * Gets the base internal format
     */
-  var glBaseInternalFormat: Double = js.native
+  var glBaseInternalFormat: Double
   
   /**
     * Gets the openGL format
     */
-  var glFormat: Double = js.native
+  var glFormat: Double
   
   /**
     * Gets the openGL internal format
     */
-  var glInternalFormat: Double = js.native
+  var glInternalFormat: Double
   
   /**
     * Gets the openGL type
     */
-  var glType: Double = js.native
+  var glType: Double
   
   /**
     * Gets the openGL type size
     */
-  var glTypeSize: Double = js.native
+  var glTypeSize: Double
   
   /**
     * If the container has been made invalid (eg. constructor failed to correctly load array buffer)
     */
-  var isInvalid: Boolean = js.native
+  var isInvalid: Boolean
   
   /**
     * Gets the load type
     */
-  var loadType: Double = js.native
+  var loadType: Double
   
   /**
     * Gets the number of array elements
     */
-  var numberOfArrayElements: Double = js.native
+  var numberOfArrayElements: Double
   
   /**
     * Gets the number of faces
     */
-  var numberOfFaces: Double = js.native
+  var numberOfFaces: Double
   
   /**
     * Gets the number of mipmap levels
     */
-  var numberOfMipmapLevels: Double = js.native
+  var numberOfMipmapLevels: Double
   
   /**
     * Gets image depth in pixels
     */
-  var pixelDepth: Double = js.native
+  var pixelDepth: Double
   
   /**
     * Gets image height in pixel
     */
-  var pixelHeight: Double = js.native
+  var pixelHeight: Double
   
   /**
     * Gets image width in pixel
     */
-  var pixelWidth: Double = js.native
+  var pixelWidth: Double
   
   /**
     * Uploads KTX content to a Babylon Texture.
     * It is assumed that the texture has already been created & is currently bound
     * @hidden
     */
-  def uploadLevels(texture: InternalTexture, loadMipmaps: Boolean): Unit = js.native
+  def uploadLevels(texture: InternalTexture, loadMipmaps: Boolean): Unit
 }
 object KhronosTextureContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _upload2DCompressedLevels: js.Any,
     bytesOfKeyValueData: Double,
     data: ArrayBufferView,
@@ -117,58 +114,40 @@ object KhronosTextureContainer {
     __obj.asInstanceOf[KhronosTextureContainer]
   }
   
-  @scala.inline
-  implicit class KhronosTextureContainerMutableBuilder[Self <: KhronosTextureContainer] (val x: Self) extends AnyVal {
+  extension [Self <: KhronosTextureContainer](x: Self) {
     
-    @scala.inline
-    def setBytesOfKeyValueData(value: Double): Self = StObject.set(x, "bytesOfKeyValueData", value.asInstanceOf[js.Any])
+    inline def setBytesOfKeyValueData(value: Double): Self = StObject.set(x, "bytesOfKeyValueData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: ArrayBufferView): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: ArrayBufferView): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlBaseInternalFormat(value: Double): Self = StObject.set(x, "glBaseInternalFormat", value.asInstanceOf[js.Any])
+    inline def setGlBaseInternalFormat(value: Double): Self = StObject.set(x, "glBaseInternalFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlFormat(value: Double): Self = StObject.set(x, "glFormat", value.asInstanceOf[js.Any])
+    inline def setGlFormat(value: Double): Self = StObject.set(x, "glFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlInternalFormat(value: Double): Self = StObject.set(x, "glInternalFormat", value.asInstanceOf[js.Any])
+    inline def setGlInternalFormat(value: Double): Self = StObject.set(x, "glInternalFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlType(value: Double): Self = StObject.set(x, "glType", value.asInstanceOf[js.Any])
+    inline def setGlType(value: Double): Self = StObject.set(x, "glType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlTypeSize(value: Double): Self = StObject.set(x, "glTypeSize", value.asInstanceOf[js.Any])
+    inline def setGlTypeSize(value: Double): Self = StObject.set(x, "glTypeSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsInvalid(value: Boolean): Self = StObject.set(x, "isInvalid", value.asInstanceOf[js.Any])
+    inline def setIsInvalid(value: Boolean): Self = StObject.set(x, "isInvalid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadType(value: Double): Self = StObject.set(x, "loadType", value.asInstanceOf[js.Any])
+    inline def setLoadType(value: Double): Self = StObject.set(x, "loadType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfArrayElements(value: Double): Self = StObject.set(x, "numberOfArrayElements", value.asInstanceOf[js.Any])
+    inline def setNumberOfArrayElements(value: Double): Self = StObject.set(x, "numberOfArrayElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfFaces(value: Double): Self = StObject.set(x, "numberOfFaces", value.asInstanceOf[js.Any])
+    inline def setNumberOfFaces(value: Double): Self = StObject.set(x, "numberOfFaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfMipmapLevels(value: Double): Self = StObject.set(x, "numberOfMipmapLevels", value.asInstanceOf[js.Any])
+    inline def setNumberOfMipmapLevels(value: Double): Self = StObject.set(x, "numberOfMipmapLevels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelDepth(value: Double): Self = StObject.set(x, "pixelDepth", value.asInstanceOf[js.Any])
+    inline def setPixelDepth(value: Double): Self = StObject.set(x, "pixelDepth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelHeight(value: Double): Self = StObject.set(x, "pixelHeight", value.asInstanceOf[js.Any])
+    inline def setPixelHeight(value: Double): Self = StObject.set(x, "pixelHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelWidth(value: Double): Self = StObject.set(x, "pixelWidth", value.asInstanceOf[js.Any])
+    inline def setPixelWidth(value: Double): Self = StObject.set(x, "pixelWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadLevels(value: (InternalTexture, Boolean) => Unit): Self = StObject.set(x, "uploadLevels", js.Any.fromFunction2(value))
+    inline def setUploadLevels(value: (InternalTexture, Boolean) => Unit): Self = StObject.set(x, "uploadLevels", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set_upload2DCompressedLevels(value: js.Any): Self = StObject.set(x, "_upload2DCompressedLevels", value.asInstanceOf[js.Any])
+    inline def set_upload2DCompressedLevels(value: js.Any): Self = StObject.set(x, "_upload2DCompressedLevels", value.asInstanceOf[js.Any])
   }
 }

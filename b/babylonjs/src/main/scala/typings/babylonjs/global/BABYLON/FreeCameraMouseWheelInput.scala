@@ -2,10 +2,10 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.FreeCameraMouseWheelInput")
 @js.native
 class FreeCameraMouseWheelInput ()
-  extends typings.babylonjs.BABYLON.FreeCameraMouseWheelInput
+  extends StObject
+     with typings.babylonjs.BABYLON.FreeCameraMouseWheelInput

@@ -5,7 +5,6 @@ import typings.babylonjs.textureMod.Texture
 import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rawTexture3DMod {
@@ -53,17 +52,6 @@ object rawTexture3DMod {
       /** Gets or sets the texture format to use */
     format: Double,
       scene: Scene,
-      generateMipMaps: js.UndefOr[scala.Nothing],
-      invertY: Boolean
-    ) = this()
-    def this(
-      data: ArrayBufferView,
-      width: Double,
-      height: Double,
-      depth: Double,
-      /** Gets or sets the texture format to use */
-    format: Double,
-      scene: Scene,
       generateMipMaps: Boolean,
       invertY: Boolean
     ) = this()
@@ -75,33 +63,8 @@ object rawTexture3DMod {
       /** Gets or sets the texture format to use */
     format: Double,
       scene: Scene,
-      generateMipMaps: js.UndefOr[scala.Nothing],
-      invertY: js.UndefOr[scala.Nothing],
-      samplingMode: Double
-    ) = this()
-    def this(
-      data: ArrayBufferView,
-      width: Double,
-      height: Double,
-      depth: Double,
-      /** Gets or sets the texture format to use */
-    format: Double,
-      scene: Scene,
-      generateMipMaps: js.UndefOr[scala.Nothing],
-      invertY: Boolean,
-      samplingMode: Double
-    ) = this()
-    def this(
-      data: ArrayBufferView,
-      width: Double,
-      height: Double,
-      depth: Double,
-      /** Gets or sets the texture format to use */
-    format: Double,
-      scene: Scene,
-      generateMipMaps: Boolean,
-      invertY: js.UndefOr[scala.Nothing],
-      samplingMode: Double
+      generateMipMaps: Unit,
+      invertY: Boolean
     ) = this()
     def this(
       data: ArrayBufferView,
@@ -123,10 +86,9 @@ object rawTexture3DMod {
       /** Gets or sets the texture format to use */
     format: Double,
       scene: Scene,
-      generateMipMaps: js.UndefOr[scala.Nothing],
-      invertY: js.UndefOr[scala.Nothing],
-      samplingMode: js.UndefOr[scala.Nothing],
-      textureType: Double
+      generateMipMaps: Boolean,
+      invertY: Unit,
+      samplingMode: Double
     ) = this()
     def this(
       data: ArrayBufferView,
@@ -136,23 +98,9 @@ object rawTexture3DMod {
       /** Gets or sets the texture format to use */
     format: Double,
       scene: Scene,
-      generateMipMaps: js.UndefOr[scala.Nothing],
-      invertY: js.UndefOr[scala.Nothing],
-      samplingMode: Double,
-      textureType: Double
-    ) = this()
-    def this(
-      data: ArrayBufferView,
-      width: Double,
-      height: Double,
-      depth: Double,
-      /** Gets or sets the texture format to use */
-    format: Double,
-      scene: Scene,
-      generateMipMaps: js.UndefOr[scala.Nothing],
+      generateMipMaps: Unit,
       invertY: Boolean,
-      samplingMode: js.UndefOr[scala.Nothing],
-      textureType: Double
+      samplingMode: Double
     ) = this()
     def this(
       data: ArrayBufferView,
@@ -162,7 +110,19 @@ object rawTexture3DMod {
       /** Gets or sets the texture format to use */
     format: Double,
       scene: Scene,
-      generateMipMaps: js.UndefOr[scala.Nothing],
+      generateMipMaps: Unit,
+      invertY: Unit,
+      samplingMode: Double
+    ) = this()
+    def this(
+      data: ArrayBufferView,
+      width: Double,
+      height: Double,
+      depth: Double,
+      /** Gets or sets the texture format to use */
+    format: Double,
+      scene: Scene,
+      generateMipMaps: Boolean,
       invertY: Boolean,
       samplingMode: Double,
       textureType: Double
@@ -176,8 +136,8 @@ object rawTexture3DMod {
     format: Double,
       scene: Scene,
       generateMipMaps: Boolean,
-      invertY: js.UndefOr[scala.Nothing],
-      samplingMode: js.UndefOr[scala.Nothing],
+      invertY: Boolean,
+      samplingMode: Unit,
       textureType: Double
     ) = this()
     def this(
@@ -189,7 +149,7 @@ object rawTexture3DMod {
     format: Double,
       scene: Scene,
       generateMipMaps: Boolean,
-      invertY: js.UndefOr[scala.Nothing],
+      invertY: Unit,
       samplingMode: Double,
       textureType: Double
     ) = this()
@@ -202,8 +162,8 @@ object rawTexture3DMod {
     format: Double,
       scene: Scene,
       generateMipMaps: Boolean,
-      invertY: Boolean,
-      samplingMode: js.UndefOr[scala.Nothing],
+      invertY: Unit,
+      samplingMode: Unit,
       textureType: Double
     ) = this()
     def this(
@@ -214,9 +174,48 @@ object rawTexture3DMod {
       /** Gets or sets the texture format to use */
     format: Double,
       scene: Scene,
-      generateMipMaps: Boolean,
+      generateMipMaps: Unit,
       invertY: Boolean,
       samplingMode: Double,
+      textureType: Double
+    ) = this()
+    def this(
+      data: ArrayBufferView,
+      width: Double,
+      height: Double,
+      depth: Double,
+      /** Gets or sets the texture format to use */
+    format: Double,
+      scene: Scene,
+      generateMipMaps: Unit,
+      invertY: Boolean,
+      samplingMode: Unit,
+      textureType: Double
+    ) = this()
+    def this(
+      data: ArrayBufferView,
+      width: Double,
+      height: Double,
+      depth: Double,
+      /** Gets or sets the texture format to use */
+    format: Double,
+      scene: Scene,
+      generateMipMaps: Unit,
+      invertY: Unit,
+      samplingMode: Double,
+      textureType: Double
+    ) = this()
+    def this(
+      data: ArrayBufferView,
+      width: Double,
+      height: Double,
+      depth: Double,
+      /** Gets or sets the texture format to use */
+    format: Double,
+      scene: Scene,
+      generateMipMaps: Unit,
+      invertY: Unit,
+      samplingMode: Unit,
       textureType: Double
     ) = this()
     

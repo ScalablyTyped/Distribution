@@ -74,9 +74,4 @@ object WebView {
     /* CompleteClass */
     override def webkitRequestFullscreen(): Unit = js.native
   }
-  
-  /**
-    * WebView Events are different from Chrome Events, they extend the normal DOM Events.
-    */
-  object Events
 }

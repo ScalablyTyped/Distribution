@@ -4,13 +4,13 @@ import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.BABYLON.PostProcessOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.DepthOfFieldMergePostProcess")
 @js.native
 class DepthOfFieldMergePostProcess protected ()
-  extends typings.babylonjs.BABYLON.DepthOfFieldMergePostProcess {
+  extends StObject
+     with typings.babylonjs.BABYLON.DepthOfFieldMergePostProcess {
   /**
     * Creates a new instance of DepthOfFieldMergePostProcess
     * @param name The name of the effect.

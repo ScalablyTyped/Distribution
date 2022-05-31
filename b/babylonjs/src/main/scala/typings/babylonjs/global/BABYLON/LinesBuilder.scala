@@ -6,15 +6,19 @@ import typings.babylonjs.anon.DashSizeGapSize
 import typings.babylonjs.anon.UseVertexAlpha
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.LinesBuilder")
 @js.native
 class LinesBuilder ()
-  extends typings.babylonjs.BABYLON.LinesBuilder
+  extends StObject
+     with typings.babylonjs.BABYLON.LinesBuilder
 /* static members */
 object LinesBuilder {
+  
+  @JSGlobal("BABYLON.LinesBuilder")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a dashed line mesh
@@ -34,12 +38,8 @@ object LinesBuilder {
     * @returns the dashed line mesh
     * @see https://doc.babylonjs.com/how_to/parametric_shapes#dashed-lines
     */
-  @JSGlobal("BABYLON.LinesBuilder.CreateDashedLines")
-  @js.native
-  def CreateDashedLines(name: String, options: DashSizeGapSize): typings.babylonjs.BABYLON.LinesMesh = js.native
-  @JSGlobal("BABYLON.LinesBuilder.CreateDashedLines")
-  @js.native
-  def CreateDashedLines(name: String, options: DashSizeGapSize, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.LinesMesh = js.native
+  inline def CreateDashedLines(name: String, options: DashSizeGapSize): typings.babylonjs.BABYLON.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDashedLines")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.LinesMesh]
+  inline def CreateDashedLines(name: String, options: DashSizeGapSize, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDashedLines")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.LinesMesh]
   
   /**
     * Creates a line system mesh. A line system is a pool of many lines gathered in a single mesh
@@ -58,9 +58,7 @@ object LinesBuilder {
     * @param scene defines the hosting scene
     * @returns a new line system mesh
     */
-  @JSGlobal("BABYLON.LinesBuilder.CreateLineSystem")
-  @js.native
-  def CreateLineSystem(name: String, options: UseVertexAlpha, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.LinesMesh = js.native
+  inline def CreateLineSystem(name: String, options: UseVertexAlpha, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLineSystem")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.LinesMesh]
   
   /**
     * Creates a line mesh
@@ -78,10 +76,6 @@ object LinesBuilder {
     * @param scene defines the hosting scene
     * @returns a new line mesh
     */
-  @JSGlobal("BABYLON.LinesBuilder.CreateLines")
-  @js.native
-  def CreateLines(name: String, options: ColorsInstance): typings.babylonjs.BABYLON.LinesMesh = js.native
-  @JSGlobal("BABYLON.LinesBuilder.CreateLines")
-  @js.native
-  def CreateLines(name: String, options: ColorsInstance, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.LinesMesh = js.native
+  inline def CreateLines(name: String, options: ColorsInstance): typings.babylonjs.BABYLON.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLines")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.LinesMesh]
+  inline def CreateLines(name: String, options: ColorsInstance, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLines")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.LinesMesh]
 }

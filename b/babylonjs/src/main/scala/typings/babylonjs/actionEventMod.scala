@@ -8,14 +8,15 @@ import typings.babylonjs.typesMod.Nullable
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object actionEventMod {
   
   @JSImport("babylonjs/Actions/actionEvent", "ActionEvent")
   @js.native
-  class ActionEvent protected () extends IActionEvent {
+  class ActionEvent protected ()
+    extends StObject
+       with IActionEvent {
     /**
       * Creates a new ActionEvent
       * @param source The mesh or sprite that triggered the action
@@ -57,7 +58,7 @@ object actionEventMod {
       /** The mesh that is currently pointed at (can be null) */
     meshUnderPointer: Nullable[AbstractMesh],
       /** the original (browser) event that triggered the ActionEvent */
-    sourceEvent: js.UndefOr[scala.Nothing],
+    sourceEvent: js.Any,
       /** additional data for the event */
     additionalData: js.Any
     ) = this()
@@ -71,13 +72,33 @@ object actionEventMod {
       /** The mesh that is currently pointed at (can be null) */
     meshUnderPointer: Nullable[AbstractMesh],
       /** the original (browser) event that triggered the ActionEvent */
-    sourceEvent: js.Any,
+    sourceEvent: Unit,
       /** additional data for the event */
     additionalData: js.Any
     ) = this()
+    
+    /** The mesh that is currently pointed at (can be null) */
+    /* CompleteClass */
+    var meshUnderPointer: Nullable[AbstractMesh] = js.native
+    
+    /** The X mouse cursor position at the time of the event */
+    /* CompleteClass */
+    var pointerX: Double = js.native
+    
+    /** The Y mouse cursor position at the time of the event */
+    /* CompleteClass */
+    var pointerY: Double = js.native
+    
+    /** The mesh or sprite that triggered the action */
+    /* CompleteClass */
+    var source: js.Any = js.native
   }
   /* static members */
   object ActionEvent {
+    
+    @JSImport("babylonjs/Actions/actionEvent", "ActionEvent")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Helper function to auto-create an ActionEvent from a source mesh.
@@ -86,18 +107,10 @@ object actionEventMod {
       * @param additionalData additional data for the event
       * @returns the new ActionEvent
       */
-    @JSImport("babylonjs/Actions/actionEvent", "ActionEvent.CreateNew")
-    @js.native
-    def CreateNew(source: AbstractMesh): ActionEvent = js.native
-    @JSImport("babylonjs/Actions/actionEvent", "ActionEvent.CreateNew")
-    @js.native
-    def CreateNew(source: AbstractMesh, evt: js.UndefOr[scala.Nothing], additionalData: js.Any): ActionEvent = js.native
-    @JSImport("babylonjs/Actions/actionEvent", "ActionEvent.CreateNew")
-    @js.native
-    def CreateNew(source: AbstractMesh, evt: Event): ActionEvent = js.native
-    @JSImport("babylonjs/Actions/actionEvent", "ActionEvent.CreateNew")
-    @js.native
-    def CreateNew(source: AbstractMesh, evt: Event, additionalData: js.Any): ActionEvent = js.native
+    inline def CreateNew(source: AbstractMesh): ActionEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateNew")(source.asInstanceOf[js.Any]).asInstanceOf[ActionEvent]
+    inline def CreateNew(source: AbstractMesh, evt: Unit, additionalData: js.Any): ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNew")(source.asInstanceOf[js.Any], evt.asInstanceOf[js.Any], additionalData.asInstanceOf[js.Any])).asInstanceOf[ActionEvent]
+    inline def CreateNew(source: AbstractMesh, evt: Event): ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNew")(source.asInstanceOf[js.Any], evt.asInstanceOf[js.Any])).asInstanceOf[ActionEvent]
+    inline def CreateNew(source: AbstractMesh, evt: Event, additionalData: js.Any): ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNew")(source.asInstanceOf[js.Any], evt.asInstanceOf[js.Any], additionalData.asInstanceOf[js.Any])).asInstanceOf[ActionEvent]
     
     /**
       * Helper function to auto-create an ActionEvent from a primitive
@@ -107,18 +120,10 @@ object actionEventMod {
       * @param additionalData additional data for the event
       * @returns the new ActionEvent
       */
-    @JSImport("babylonjs/Actions/actionEvent", "ActionEvent.CreateNewFromPrimitive")
-    @js.native
-    def CreateNewFromPrimitive(prim: js.Any, pointerPos: Vector2): ActionEvent = js.native
-    @JSImport("babylonjs/Actions/actionEvent", "ActionEvent.CreateNewFromPrimitive")
-    @js.native
-    def CreateNewFromPrimitive(prim: js.Any, pointerPos: Vector2, evt: js.UndefOr[scala.Nothing], additionalData: js.Any): ActionEvent = js.native
-    @JSImport("babylonjs/Actions/actionEvent", "ActionEvent.CreateNewFromPrimitive")
-    @js.native
-    def CreateNewFromPrimitive(prim: js.Any, pointerPos: Vector2, evt: Event): ActionEvent = js.native
-    @JSImport("babylonjs/Actions/actionEvent", "ActionEvent.CreateNewFromPrimitive")
-    @js.native
-    def CreateNewFromPrimitive(prim: js.Any, pointerPos: Vector2, evt: Event, additionalData: js.Any): ActionEvent = js.native
+    inline def CreateNewFromPrimitive(prim: js.Any, pointerPos: Vector2): ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromPrimitive")(prim.asInstanceOf[js.Any], pointerPos.asInstanceOf[js.Any])).asInstanceOf[ActionEvent]
+    inline def CreateNewFromPrimitive(prim: js.Any, pointerPos: Vector2, evt: Unit, additionalData: js.Any): ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromPrimitive")(prim.asInstanceOf[js.Any], pointerPos.asInstanceOf[js.Any], evt.asInstanceOf[js.Any], additionalData.asInstanceOf[js.Any])).asInstanceOf[ActionEvent]
+    inline def CreateNewFromPrimitive(prim: js.Any, pointerPos: Vector2, evt: Event): ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromPrimitive")(prim.asInstanceOf[js.Any], pointerPos.asInstanceOf[js.Any], evt.asInstanceOf[js.Any])).asInstanceOf[ActionEvent]
+    inline def CreateNewFromPrimitive(prim: js.Any, pointerPos: Vector2, evt: Event, additionalData: js.Any): ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromPrimitive")(prim.asInstanceOf[js.Any], pointerPos.asInstanceOf[js.Any], evt.asInstanceOf[js.Any], additionalData.asInstanceOf[js.Any])).asInstanceOf[ActionEvent]
     
     /**
       * Helper function to auto-create an ActionEvent from a scene. If triggered by a mesh use ActionEvent.CreateNew
@@ -126,9 +131,7 @@ object actionEventMod {
       * @param evt The original (browser) event
       * @returns the new ActionEvent
       */
-    @JSImport("babylonjs/Actions/actionEvent", "ActionEvent.CreateNewFromScene")
-    @js.native
-    def CreateNewFromScene(scene: Scene, evt: Event): ActionEvent = js.native
+    inline def CreateNewFromScene(scene: Scene, evt: Event): ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromScene")(scene.asInstanceOf[js.Any], evt.asInstanceOf[js.Any])).asInstanceOf[ActionEvent]
     
     /**
       * Helper function to auto-create an ActionEvent from a source sprite
@@ -138,78 +141,58 @@ object actionEventMod {
       * @param additionalData additional data for the event
       * @returns the new ActionEvent
       */
-    @JSImport("babylonjs/Actions/actionEvent", "ActionEvent.CreateNewFromSprite")
-    @js.native
-    def CreateNewFromSprite(source: Sprite, scene: Scene): ActionEvent = js.native
-    @JSImport("babylonjs/Actions/actionEvent", "ActionEvent.CreateNewFromSprite")
-    @js.native
-    def CreateNewFromSprite(source: Sprite, scene: Scene, evt: js.UndefOr[scala.Nothing], additionalData: js.Any): ActionEvent = js.native
-    @JSImport("babylonjs/Actions/actionEvent", "ActionEvent.CreateNewFromSprite")
-    @js.native
-    def CreateNewFromSprite(source: Sprite, scene: Scene, evt: Event): ActionEvent = js.native
-    @JSImport("babylonjs/Actions/actionEvent", "ActionEvent.CreateNewFromSprite")
-    @js.native
-    def CreateNewFromSprite(source: Sprite, scene: Scene, evt: Event, additionalData: js.Any): ActionEvent = js.native
+    inline def CreateNewFromSprite(source: Sprite, scene: Scene): ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromSprite")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[ActionEvent]
+    inline def CreateNewFromSprite(source: Sprite, scene: Scene, evt: Unit, additionalData: js.Any): ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromSprite")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], evt.asInstanceOf[js.Any], additionalData.asInstanceOf[js.Any])).asInstanceOf[ActionEvent]
+    inline def CreateNewFromSprite(source: Sprite, scene: Scene, evt: Event): ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromSprite")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], evt.asInstanceOf[js.Any])).asInstanceOf[ActionEvent]
+    inline def CreateNewFromSprite(source: Sprite, scene: Scene, evt: Event, additionalData: js.Any): ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromSprite")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], evt.asInstanceOf[js.Any], additionalData.asInstanceOf[js.Any])).asInstanceOf[ActionEvent]
   }
   
-  @js.native
   trait IActionEvent extends StObject {
     
     /** additional data for the event */
-    var additionalData: js.UndefOr[js.Any] = js.native
+    var additionalData: js.UndefOr[js.Any] = js.undefined
     
     /** The mesh that is currently pointed at (can be null) */
-    var meshUnderPointer: Nullable[AbstractMesh] = js.native
+    var meshUnderPointer: Nullable[AbstractMesh]
     
     /** The X mouse cursor position at the time of the event */
-    var pointerX: Double = js.native
+    var pointerX: Double
     
     /** The Y mouse cursor position at the time of the event */
-    var pointerY: Double = js.native
+    var pointerY: Double
     
     /** The mesh or sprite that triggered the action */
-    var source: js.Any = js.native
+    var source: js.Any
     
     /** the original (browser) event that triggered the ActionEvent */
-    var sourceEvent: js.UndefOr[js.Any] = js.native
+    var sourceEvent: js.UndefOr[js.Any] = js.undefined
   }
   object IActionEvent {
     
-    @scala.inline
-    def apply(pointerX: Double, pointerY: Double, source: js.Any): IActionEvent = {
-      val __obj = js.Dynamic.literal(pointerX = pointerX.asInstanceOf[js.Any], pointerY = pointerY.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    inline def apply(pointerX: Double, pointerY: Double, source: js.Any): IActionEvent = {
+      val __obj = js.Dynamic.literal(pointerX = pointerX.asInstanceOf[js.Any], pointerY = pointerY.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], meshUnderPointer = null)
       __obj.asInstanceOf[IActionEvent]
     }
     
-    @scala.inline
-    implicit class IActionEventMutableBuilder[Self <: IActionEvent] (val x: Self) extends AnyVal {
+    extension [Self <: IActionEvent](x: Self) {
       
-      @scala.inline
-      def setAdditionalData(value: js.Any): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
+      inline def setAdditionalData(value: js.Any): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalDataUndefined: Self = StObject.set(x, "additionalData", js.undefined)
+      inline def setAdditionalDataUndefined: Self = StObject.set(x, "additionalData", js.undefined)
       
-      @scala.inline
-      def setMeshUnderPointer(value: Nullable[AbstractMesh]): Self = StObject.set(x, "meshUnderPointer", value.asInstanceOf[js.Any])
+      inline def setMeshUnderPointer(value: Nullable[AbstractMesh]): Self = StObject.set(x, "meshUnderPointer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeshUnderPointerNull: Self = StObject.set(x, "meshUnderPointer", null)
+      inline def setMeshUnderPointerNull: Self = StObject.set(x, "meshUnderPointer", null)
       
-      @scala.inline
-      def setPointerX(value: Double): Self = StObject.set(x, "pointerX", value.asInstanceOf[js.Any])
+      inline def setPointerX(value: Double): Self = StObject.set(x, "pointerX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerY(value: Double): Self = StObject.set(x, "pointerY", value.asInstanceOf[js.Any])
+      inline def setPointerY(value: Double): Self = StObject.set(x, "pointerY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceEvent(value: js.Any): Self = StObject.set(x, "sourceEvent", value.asInstanceOf[js.Any])
+      inline def setSourceEvent(value: js.Any): Self = StObject.set(x, "sourceEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceEventUndefined: Self = StObject.set(x, "sourceEvent", js.undefined)
+      inline def setSourceEventUndefined: Self = StObject.set(x, "sourceEvent", js.undefined)
     }
   }
 }

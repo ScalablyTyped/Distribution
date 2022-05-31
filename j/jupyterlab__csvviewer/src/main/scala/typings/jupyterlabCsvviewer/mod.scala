@@ -8,10 +8,13 @@ import typings.jupyterlabDocregistry.registryMod.IDocumentWidget
 import typings.luminoDatagrid.mod.DataGrid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@jupyterlab/csvviewer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@jupyterlab/csvviewer", "CSVDelimiter")
   @js.native
@@ -84,11 +87,7 @@ object mod {
   class TextRenderConfig ()
     extends typings.jupyterlabCsvviewer.widgetMod.TextRenderConfig
   
-  @JSImport("@jupyterlab/csvviewer", "parseDSV")
-  @js.native
-  def parseDSV(options: typings.jupyterlabCsvviewer.parseMod.IParser.IOptions): IResults = js.native
+  inline def parseDSV(options: typings.jupyterlabCsvviewer.parseMod.IParser.IOptions): IResults = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDSV")(options.asInstanceOf[js.Any]).asInstanceOf[IResults]
   
-  @JSImport("@jupyterlab/csvviewer", "parseDSVNoQuotes")
-  @js.native
-  def parseDSVNoQuotes(options: typings.jupyterlabCsvviewer.parseMod.IParser.IOptions): IResults = js.native
+  inline def parseDSVNoQuotes(options: typings.jupyterlabCsvviewer.parseMod.IParser.IOptions): IResults = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDSVNoQuotes")(options.asInstanceOf[js.Any]).asInstanceOf[IResults]
 }

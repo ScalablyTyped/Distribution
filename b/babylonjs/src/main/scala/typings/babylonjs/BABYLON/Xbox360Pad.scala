@@ -2,61 +2,62 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Xbox360Pad extends Gamepad {
+trait Xbox360Pad
+  extends StObject
+     with Gamepad {
   
-  var _buttonA: js.Any = js.native
+  /* private */ var _buttonA: js.Any = js.native
   
-  var _buttonB: js.Any = js.native
+  /* private */ var _buttonB: js.Any = js.native
   
-  var _buttonBack: js.Any = js.native
+  /* private */ var _buttonBack: js.Any = js.native
   
-  var _buttonLB: js.Any = js.native
+  /* private */ var _buttonLB: js.Any = js.native
   
-  var _buttonLeftStick: js.Any = js.native
+  /* private */ var _buttonLeftStick: js.Any = js.native
   
-  var _buttonRB: js.Any = js.native
+  /* private */ var _buttonRB: js.Any = js.native
   
-  var _buttonRightStick: js.Any = js.native
+  /* private */ var _buttonRightStick: js.Any = js.native
   
-  var _buttonStart: js.Any = js.native
+  /* private */ var _buttonStart: js.Any = js.native
   
-  var _buttonX: js.Any = js.native
+  /* private */ var _buttonX: js.Any = js.native
   
-  var _buttonY: js.Any = js.native
+  /* private */ var _buttonY: js.Any = js.native
   
-  var _dPadDown: js.Any = js.native
+  /* private */ var _dPadDown: js.Any = js.native
   
-  var _dPadLeft: js.Any = js.native
+  /* private */ var _dPadLeft: js.Any = js.native
   
-  var _dPadRight: js.Any = js.native
+  /* private */ var _dPadRight: js.Any = js.native
   
-  var _dPadUp: js.Any = js.native
+  /* private */ var _dPadUp: js.Any = js.native
   
-  var _isXboxOnePad: js.Any = js.native
+  /* private */ var _isXboxOnePad: js.Any = js.native
   
-  var _leftTrigger: js.Any = js.native
+  /* private */ var _leftTrigger: js.Any = js.native
   
-  var _onbuttondown: js.Any = js.native
+  /* private */ var _onbuttondown: js.Any = js.native
   
-  var _onbuttonup: js.Any = js.native
+  /* private */ var _onbuttonup: js.Any = js.native
   
-  var _ondpaddown: js.Any = js.native
+  /* private */ var _ondpaddown: js.Any = js.native
   
-  var _ondpadup: js.Any = js.native
+  /* private */ var _ondpadup: js.Any = js.native
   
-  var _onlefttriggerchanged: js.Any = js.native
+  /* private */ var _onlefttriggerchanged: js.Any = js.native
   
-  var _onrighttriggerchanged: js.Any = js.native
+  /* private */ var _onrighttriggerchanged: js.Any = js.native
   
-  var _rightTrigger: js.Any = js.native
+  /* private */ var _rightTrigger: js.Any = js.native
   
-  var _setButtonValue: js.Any = js.native
+  /* private */ var _setButtonValue: js.Any = js.native
   
-  var _setDPadValue: js.Any = js.native
+  /* private */ var _setDPadValue: js.Any = js.native
   
   /**
     * Gets the value of the `A` button

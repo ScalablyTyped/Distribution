@@ -2,7 +2,6 @@ package typings.babylonjs.legacyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "ElasticEase")
@@ -19,13 +18,13 @@ class ElasticEase ()
   oscillations: Double) = this()
   def this(
     /** Defines the number of oscillations*/
-  oscillations: js.UndefOr[scala.Nothing],
+  oscillations: Double,
     /** Defines the amplitude of the oscillations*/
   springiness: Double
   ) = this()
   def this(
     /** Defines the number of oscillations*/
-  oscillations: Double,
+  oscillations: Unit,
     /** Defines the amplitude of the oscillations*/
   springiness: Double
   ) = this()

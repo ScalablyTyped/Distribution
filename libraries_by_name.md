@@ -504,7 +504,6 @@
 | [aws-crypto__sha256-univer](./a/aws-crypto__sha256-universal) | A consistent interface for SHA256 across browsers  | - |
 | [aws-crypto__supports-web-](./a/aws-crypto__supports-web-crypto) | Provides functions for detecting if the host envir | - |
 | [aws-greengrass-core-sdk](./a/aws-greengrass-core-sdk) | The **AWS Greengrass Core SDK for JavaScript** all | - |
-| [aws-iot-device-sdk](./a/aws-iot-device-sdk) | AWS IoT Node.js SDK for Embedded Devices | api, amazon, aws, iot, mqtt |
 | [aws-kcl](./a/aws-kcl) | Kinesis Client Libray (KCL) in Node.js. | api, amazon, aws, big data, kinesis, kinesis client library, kcl, node.js |
 | [aws-lambda](./a/aws-lambda) | Deploy AWS Lambda functions from command line usin | lambda, aws lambda, deploy, deploy lambda |
 | [aws-lambda-mock-context](./a/aws-lambda-mock-context) | AWS Lambda mock context object | aws, lambda, context, ctx, function, mocking, mock, promise |
@@ -687,6 +686,7 @@
 | [babelify](./b/babelify) | Babel browserify transform | - |
 | [babylon](./b/babylon) | A JavaScript parser | babel, javascript, parser, babylon |
 | [babylon-walk](./b/babylon-walk) | Lightweight Babylon AST traversal | - |
+| [babylonjs](./b/babylonjs) | Babylon.js is a JavaScript 3D engine based on webg | 3D, javascript, html5, webgl |
 | [babyparse](./b/babyparse) | Fast and reliable CSV parser based on PapaParse | csv, parse, parsing, parser, delimited, text, data, auto-detect, comma, tab, stream |
 | [backblaze-b2](./b/backblaze-b2) | Node.js Library for the Backblaze B2 Storage Servi | backblaze, b2, storage |
 | [backbone](./b/backbone) | Give your JS App some Backbone with Models, Views, | model, view, controller, router, server, client, browser |
@@ -2488,6 +2488,7 @@
 | [firebase__logger](./f/firebase__logger) | A logger package for use in the Firebase JS SDK | - |
 | [firebase__messaging](./f/firebase__messaging) | This is the Firebase Cloud Messaging component of  | - |
 | [firebase__messaging-types](./f/firebase__messaging-types) | @firebase/messaging Types | - |
+| [firebase__performance](./f/firebase__performance) | Firebase performance for web | - |
 | [firebase__performance-typ](./f/firebase__performance-types) | @firebase/performance Types | - |
 | [firebase__polyfill](./f/firebase__polyfill) | This is the a set of polyfills/shims used by the F | - |
 | [firebase__remote-config](./f/firebase__remote-config) | The Remote Config package of the Firebase JS SDK | - |
@@ -4272,14 +4273,87 @@
 | [jui-grid](./j/jui-grid) | JUI grid can handle millions of data, and can disp | HTML5, CSS, JS, JavaScript, SVG, Grid, Framework, bootstrap, Web Development, free, MIT |
 | [jump_dot_js](./j/jump_dot_js) | A modern smooth scrolling library. | smooth, scroll |
 | [junk](./j/junk) | Filter out system junk files like .DS_Store and Th | junk, trash, garbage, files, os, ignore, exclude, filter, temp, tmp, system, clean, cleanup |
+| [jupyterlab__application](./j/jupyterlab__application) | JupyterLab - Application | - |
+| [jupyterlab__application-e](./j/jupyterlab__application-extension) | JupyterLab - Application Extension | - |
+| [jupyterlab__apputils](./j/jupyterlab__apputils) | JupyterLab - Application Utilities | jupyter, jupyterlab, jupyterlab-extension |
+| [jupyterlab__apputils-exte](./j/jupyterlab__apputils-extension) | JupyterLab - Application Utilities Extension | - |
+| [jupyterlab__attachments](./j/jupyterlab__attachments) | JupyterLab - Notebook Cell Attachments | - |
+| [jupyterlab__cells](./j/jupyterlab__cells) | JupyterLab - Notebook Cells | - |
+| [jupyterlab__celltags](./j/jupyterlab__celltags) | An extension for manipulating tags in cell metadat | jupyter, jupyterlab, jupyterlab-extension |
+| [jupyterlab__celltags-exte](./j/jupyterlab__celltags-extension) | An extension for manipulating tags in cell metadat | jupyter, jupyterlab, jupyterlab-extension |
+| [jupyterlab__codeeditor](./j/jupyterlab__codeeditor) | JupyterLab - Abstract Code Editor | - |
+| [jupyterlab__codemirror](./j/jupyterlab__codemirror) | JupyterLab - CodeMirror Editor Provider | - |
+| [jupyterlab__codemirror-ex](./j/jupyterlab__codemirror-extension) | JupyterLab - CodeMirror Provider Extension | - |
+| [jupyterlab__completer](./j/jupyterlab__completer) | JupyterLab - Completer | - |
+| [jupyterlab__completer-ext](./j/jupyterlab__completer-extension) | JupyterLab - Completer Extension | - |
+| [jupyterlab__console](./j/jupyterlab__console) | JupyterLab - Code Console | - |
+| [jupyterlab__console-exten](./j/jupyterlab__console-extension) | JupyterLab - Code Console Extension | - |
 | [jupyterlab__coreutils](./j/jupyterlab__coreutils) | JupyterLab - Core Utilities | - |
+| [jupyterlab__csvviewer](./j/jupyterlab__csvviewer) | JupyterLab - CSV Widget | - |
+| [jupyterlab__csvviewer-ext](./j/jupyterlab__csvviewer-extension) | JupyterLab - CSV Widget Extension | - |
+| [jupyterlab__docmanager](./j/jupyterlab__docmanager) | JupyterLab - Document Manager | - |
+| [jupyterlab__docmanager-ex](./j/jupyterlab__docmanager-extension) | JupyterLab - Document Manager Extension | - |
+| [jupyterlab__docregistry](./j/jupyterlab__docregistry) | JupyterLab - Document Registry | - |
+| [jupyterlab__documentsearc](./j/jupyterlab__documentsearch) | Document Search | - |
+| [jupyterlab__documentsearc](./j/jupyterlab__documentsearch-extension) | Search document types | - |
+| [jupyterlab__extensionmana](./j/jupyterlab__extensionmanager) | JupyterLab - Extension Manager | - |
+| [jupyterlab__extensionmana](./j/jupyterlab__extensionmanager-extension) | JupyterLab - Extension Manager Extension | - |
+| [jupyterlab__filebrowser](./j/jupyterlab__filebrowser) | JupyterLab - FileBrowser Widget | - |
+| [jupyterlab__filebrowser-e](./j/jupyterlab__filebrowser-extension) | JupyterLab - Filebrowser Widget Extension | - |
+| [jupyterlab__fileeditor](./j/jupyterlab__fileeditor) | JupyterLab - Editor Widget | - |
+| [jupyterlab__fileeditor-ex](./j/jupyterlab__fileeditor-extension) | JupyterLab - Editor Widget Extension | - |
+| [jupyterlab__help-extensio](./j/jupyterlab__help-extension) | JupyterLab - Help Extension | - |
+| [jupyterlab__htmlviewer](./j/jupyterlab__htmlviewer) | A viewer for HTML documents. | - |
+| [jupyterlab__htmlviewer-ex](./j/jupyterlab__htmlviewer-extension) | JupyterLab extension to render HTML files | jupyter, jupyterlab |
+| [jupyterlab__hub-extension](./j/jupyterlab__hub-extension) | JupyterLab integration for JupyterHub | - |
+| [jupyterlab__imageviewer](./j/jupyterlab__imageviewer) | JupyterLab - Image Widget | - |
+| [jupyterlab__imageviewer-e](./j/jupyterlab__imageviewer-extension) | JupyterLab - Image Widget Extension | - |
+| [jupyterlab__inspector](./j/jupyterlab__inspector) | JupyterLab - Code Inspector | - |
+| [jupyterlab__inspector-ext](./j/jupyterlab__inspector-extension) | JupyterLab - Code Inspector Extension | - |
+| [jupyterlab__javascript-ex](./j/jupyterlab__javascript-extension) | JupyterLab - Javascript Renderer | - |
+| [jupyterlab__json-extensio](./j/jupyterlab__json-extension) | JupyterLab - JSON Renderer | - |
+| [jupyterlab__launcher](./j/jupyterlab__launcher) | JupyterLab - Launcher Panel | - |
+| [jupyterlab__launcher-exte](./j/jupyterlab__launcher-extension) | JupyterLab - Launcher Page Extension | - |
+| [jupyterlab__logconsole](./j/jupyterlab__logconsole) | JupyterLab - Log Console | - |
+| [jupyterlab__logconsole-ex](./j/jupyterlab__logconsole-extension) | JupyterLab - Log Console Extension | - |
+| [jupyterlab__mainmenu](./j/jupyterlab__mainmenu) | JupyterLab - Main Menu | - |
+| [jupyterlab__mainmenu-exte](./j/jupyterlab__mainmenu-extension) | JupyterLab - Main Menu Extension | - |
+| [jupyterlab__markdownviewe](./j/jupyterlab__markdownviewer) | JupyterLab - Markdown viewer Widget | - |
+| [jupyterlab__markdownviewe](./j/jupyterlab__markdownviewer-extension) | JupyterLab - Markdown Renderer Extension | - |
 | [jupyterlab__mathjax2](./j/jupyterlab__mathjax2) | A MathJax 2 Typesetting provider for JupyterLab | - |
+| [jupyterlab__mathjax2-exte](./j/jupyterlab__mathjax2-extension) | A JupyterLab extension providing MathJax 2 Typeset | - |
 | [jupyterlab__metapackage](./j/jupyterlab__metapackage) | JupyterLab - Meta Package.  All of the packages us | - |
 | [jupyterlab__nbformat](./j/jupyterlab__nbformat) | Notebook format interfaces | - |
+| [jupyterlab__notebook](./j/jupyterlab__notebook) | JupyterLab - Notebook | - |
+| [jupyterlab__notebook-exte](./j/jupyterlab__notebook-extension) | JupyterLab - Notebook Extension | - |
+| [jupyterlab__observables](./j/jupyterlab__observables) | Data structures which may be observed for changes. | - |
+| [jupyterlab__outputarea](./j/jupyterlab__outputarea) | JupyterLab - Notebook Output Area | - |
 | [jupyterlab__pdf-extension](./j/jupyterlab__pdf-extension) | JupyterLab - PDF Viewer | - |
+| [jupyterlab__property-insp](./j/jupyterlab__property-inspector) | A property inspector display for widgets | - |
+| [jupyterlab__rendermime](./j/jupyterlab__rendermime) | JupyterLab - RenderMime | - |
+| [jupyterlab__rendermime-ex](./j/jupyterlab__rendermime-extension) | A rendermime extension for JupyterLab | - |
 | [jupyterlab__rendermime-in](./j/jupyterlab__rendermime-interfaces) | JupyterLab - Interfaces for Mime Renderers | - |
+| [jupyterlab__running](./j/jupyterlab__running) | JupyterLab - Running Sessions Panel | - |
+| [jupyterlab__running-exten](./j/jupyterlab__running-extension) | JupyterLab - Running Sessions Extension | - |
+| [jupyterlab__services](./j/jupyterlab__services) | Client APIs for the Jupyter services REST APIs | jupyter, notebook, services |
+| [jupyterlab__settingeditor](./j/jupyterlab__settingeditor) | The JupyterLab default setting editor interface | - |
+| [jupyterlab__settingeditor](./j/jupyterlab__settingeditor-extension) | JupyterLab - Setting Editor Extension | - |
 | [jupyterlab__settingregist](./j/jupyterlab__settingregistry) | Settings registry for Jupyterlab | - |
+| [jupyterlab__shortcuts-ext](./j/jupyterlab__shortcuts-extension) | JupyterLab - Shortcuts Extension | - |
 | [jupyterlab__statedb](./j/jupyterlab__statedb) | Package for managing state in Jupyterlab | - |
+| [jupyterlab__statusbar](./j/jupyterlab__statusbar) | JupyterLab statusbar package. | - |
+| [jupyterlab__statusbar-ext](./j/jupyterlab__statusbar-extension) | JupyterLab - Statusbar Extension | - |
+| [jupyterlab__tabmanager-ex](./j/jupyterlab__tabmanager-extension) | JupyterLab - Tab Manager Extension | - |
+| [jupyterlab__terminal](./j/jupyterlab__terminal) | JupyterLab - Terminal Emulator Widget | - |
+| [jupyterlab__terminal-exte](./j/jupyterlab__terminal-extension) | JupyterLab - Terminal Emulator Extension | - |
+| [jupyterlab__theme-dark-ex](./j/jupyterlab__theme-dark-extension) | JupyterLab - Default Dark Theme | - |
+| [jupyterlab__theme-light-e](./j/jupyterlab__theme-light-extension) | JupyterLab - Default Light Theme | - |
+| [jupyterlab__tooltip](./j/jupyterlab__tooltip) | JupyterLab - Tooltip Widget | - |
+| [jupyterlab__tooltip-exten](./j/jupyterlab__tooltip-extension) | JupyterLab - Tooltip Extension | - |
+| [jupyterlab__ui-components](./j/jupyterlab__ui-components) | JupyterLab - UI components written in React | - |
+| [jupyterlab__ui-components](./j/jupyterlab__ui-components-extension) | JupyterLab - UI component plugins | - |
+| [jupyterlab__vdom](./j/jupyterlab__vdom) | A viewer for VDOM documents. | - |
+| [jupyterlab__vdom-extensio](./j/jupyterlab__vdom-extension) | JupyterLab - VDOM Renderer | - |
 | [jupyterlab__vega5-extensi](./j/jupyterlab__vega5-extension) | JupyterLab - Vega 5 and Vega-Lite 3 Mime Renderer  | - |
 | [just-clone](./j/just-clone) | deep copies objects and arrays | object, clone, copy, deep-copy, extend, no-dependencies, just |
 | [just-debounce-it](./j/just-debounce-it) | return a debounced function | function, debounce, no-dependencies, just |
@@ -4651,7 +4725,6 @@
 | [loadable__server](./l/loadable__server) | Server utilities for loadable. | loadable |
 | [loadable__webpack-plugin](./l/loadable__webpack-plugin) | Webpack plugin for loadable (required for SSR). | loadable |
 | [loader-runner](./l/loader-runner) | Runs (webpack) loaders | webpack, loader |
-| [loader-utils](./l/loader-utils) | utils for webpack loaders | - |
 | [loadicons](./l/loadicons) | Load SVG icon sprites safely and asynchronously | svg, sprite |
 | [loadjs](./l/loadjs) | Tiny async loader for modern browsers | async, loader, dependency manager |
 | [loadware](./l/loadware) | A library to make sense of a bunch of middleware d | loadware, middleware, load, normalize |
@@ -5119,6 +5192,7 @@
 | [matcher](./m/matcher) | Simple wildcard matching | matcher, matching, match, regex, regexp, regular, expression, wildcard, pattern, string, filter, glob, globber, globbing, minimatch |
 | [matcher-collection](./m/matcher-collection) | Minimatch but for collections of minimatcher match | - |
 | [matchmediaquery](./m/matchmediaquery) | Media queries for your client and server | media, query, matchmedia, isomorphic, mq, responsive |
+| [material-components-web](./m/material-components-web) | Modular and customizable Material Design UI compon | material components, material design |
 | [material-design-lite](./m/material-design-lite) | Material Design Components in CSS, JS and HTML | - |
 | [material-ui](./m/material-ui) | React Components that Implement Google's Material  | react, react-component, material design, material-ui |
 | [material-ui-datatables](./m/material-ui-datatables) | An another React Data tables component. | react, react-component, material design, material-ui, datatables |
@@ -5134,6 +5208,7 @@
 | [material__base](./m/material__base) | The set of base classes for Material Components fo | - |
 | [material__checkbox](./m/material__checkbox) | The Material Components for the web checkbox compo | material components, material design, checkbox |
 | [material__chips](./m/material__chips) | The Material Components for the Web chips componen | material components, material design, chips |
+| [material__circular-progre](./m/material__circular-progress) | The Material Components for the web circular progr | material components, material design, circular-progress |
 | [material__data-table](./m/material__data-table) | The Material Components Web data table component | material components, material design, data table |
 | [material__dialog](./m/material__dialog) | The Material Components Web dialog component | material components, material design, dialog, modal |
 | [material__dom](./m/material__dom) | DOM manipulation utilities for Material Components | - |
@@ -5143,6 +5218,7 @@
 | [material__grid-list](./m/material__grid-list) | The Material Components for the web grid list comp | material components, material design, grid list |
 | [material__icon-button](./m/material__icon-button) | The Material Components for the web icon button co | material components, material design, button, icon button, icon toggle |
 | [material__line-ripple](./m/material__line-ripple) | The Material Components for the web line-ripple co | material components, material design, lineripple, line-ripple |
+| [material__linear-progress](./m/material__linear-progress) | The Material Components for the web linear progres | material components, material design, linear progress |
 | [material__list](./m/material__list) | The Material Components for the web list component | material components, material design, list |
 | [material__menu](./m/material__menu) | The Material Components for the web menu component | material components, material design, menu |
 | [material__menu-surface](./m/material__menu-surface) | The Material Components for the web menu surface c | material components, material design, menu surface |
@@ -6140,6 +6216,7 @@
 | [optimize-css-assets-webpa](./o/optimize-css-assets-webpack-plugin) | A Webpack plugin to optimize \ minimize CSS assets | CSS, duplicate, extract-text-webpack-plugin, minimize, optimize, remove, webpack |
 | [optional-js](./o/optional-js) | Optionals for JS - wrapper for possibly undefined  | optional, java, javascript |
 | [ora](./o/ora) | Elegant terminal spinner | cli, spinner, spinners, terminal, term, console, ascii, unicode, loading, indicator, progress, busy, wait, idle |
+| [oracle__oraclejet](./o/oracle__oraclejet) | Oracle JavaScript Extension Toolkit (JET) empowers | oraclejet |
 | [oracledb](./o/oracledb) | A Node.js module for Oracle Database access | Oracle, Database, official, DB, SQL, JSON, PL/SQL, SODA, OCI, API, client, library, driver, add-on, extension, binding, interface, adapter, module |
 | [orchestrator](./o/orchestrator) | A module for sequencing and executing tasks and de | async, task, parallel, compose |
 | [orderedmap](./o/orderedmap) | Persistent ordered mapping from strings | persistent, map |
@@ -8845,7 +8922,6 @@
 | [terraformer__arcgis](./t/terraformer__arcgis) | Convert ArcGIS JSON geometries to GeoJSON geometri | arcgis, convert, geo, geojson, geometry |
 | [terraformer__spatial](./t/terraformer__spatial) | Spatial predicates for GeoJSON. | arcgis, convert, geo, geojson, geometry |
 | [terser](./t/terser) | JavaScript parser, mangler/compressor and beautifi | uglify, terser, uglify-es, uglify-js, minify, minifier, javascript, ecmascript, es5, es6, es7, es8, es2015, es2016, es2017, async, await |
-| [terser-webpack-plugin](./t/terser-webpack-plugin) | Terser plugin for webpack | uglify, uglify-js, uglify-es, terser, webpack, webpack-plugin, minification, compress, compressor, min, minification, minifier, minify, optimize, optimizer |
 | [teslajs](./t/teslajs) | Full-featured Tesla REST API NodeJS package | Tesla, Model S, Model X, Model 3, REST |
 | [tesseract_dot_js](./t/tesseract_dot_js) | Pure Javascript Multilingual OCR | - |
 | [test-console](./t/test-console) | A simple and pragmatic library for testing Node.js | console, stdout, stderr, test, spy, test double |

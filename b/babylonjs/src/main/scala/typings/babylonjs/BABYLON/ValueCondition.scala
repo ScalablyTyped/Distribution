@@ -2,43 +2,42 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ValueCondition extends Condition {
+trait ValueCondition
+  extends StObject
+     with Condition {
   
   /**
     * Internal only
     * @hidden
     */
-  var _effectiveTarget: js.Any = js.native
+  /* private */ var _effectiveTarget: js.Any
   
   /**
     * Internal only
     * @hidden
     */
-  var _property: js.Any = js.native
+  /* private */ var _property: js.Any
   
   /**
     * Internal only
     * @hidden
     */
-  var _target: js.Any = js.native
+  /* private */ var _target: js.Any
   
   /** the conditional operator, default ValueCondition.IsEqual */
-  var operator: Double = js.native
+  var operator: Double
   
   /** path to specify the property of the target the conditional operator uses  */
-  var propertyPath: String = js.native
+  var propertyPath: String
   
   /** the value compared by the conditional operator against the current value of the property */
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object ValueCondition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _actionManager: ActionManager,
     _currentResult: Boolean,
     _effectiveTarget: js.Any,
@@ -58,25 +57,18 @@ object ValueCondition {
     __obj.asInstanceOf[ValueCondition]
   }
   
-  @scala.inline
-  implicit class ValueConditionMutableBuilder[Self <: ValueCondition] (val x: Self) extends AnyVal {
+  extension [Self <: ValueCondition](x: Self) {
     
-    @scala.inline
-    def setOperator(value: Double): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: Double): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyPath(value: String): Self = StObject.set(x, "propertyPath", value.asInstanceOf[js.Any])
+    inline def setPropertyPath(value: String): Self = StObject.set(x, "propertyPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_effectiveTarget(value: js.Any): Self = StObject.set(x, "_effectiveTarget", value.asInstanceOf[js.Any])
+    inline def set_effectiveTarget(value: js.Any): Self = StObject.set(x, "_effectiveTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_property(value: js.Any): Self = StObject.set(x, "_property", value.asInstanceOf[js.Any])
+    inline def set_property(value: js.Any): Self = StObject.set(x, "_property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_target(value: js.Any): Self = StObject.set(x, "_target", value.asInstanceOf[js.Any])
+    inline def set_target(value: js.Any): Self = StObject.set(x, "_target", value.asInstanceOf[js.Any])
   }
 }

@@ -3,11 +3,12 @@ package typings.babylonjs.BABYLON
 import typings.babylonjs.XRFrame
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebXRAbstractFeature extends IWebXRFeature {
+trait WebXRAbstractFeature
+  extends StObject
+     with IWebXRFeature {
   
   /**
     * This is used to register callbacks that will automatically be removed when detach is called.
@@ -19,7 +20,7 @@ trait WebXRAbstractFeature extends IWebXRFeature {
     callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit]
   ): Unit = js.native
   
-  var _attached: js.Any = js.native
+  /* private */ var _attached: js.Any = js.native
   
   /**
     * Code in this function will be executed on each xrFrame received from the browser.
@@ -28,9 +29,9 @@ trait WebXRAbstractFeature extends IWebXRFeature {
     */
   /* protected */ def _onXRFrame(_xrFrame: XRFrame): Unit = js.native
   
-  var _removeOnDetach: js.Any = js.native
+  /* private */ var _removeOnDetach: js.Any = js.native
   
-  var _xrSessionManager: WebXRSessionManager = js.native
+  /* protected */ var _xrSessionManager: WebXRSessionManager = js.native
   
   /**
     * Is this feature attached

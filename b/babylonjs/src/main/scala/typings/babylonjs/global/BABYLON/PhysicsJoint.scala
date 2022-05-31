@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.PhysicsJointData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.PhysicsJoint")
 @js.native
 class PhysicsJoint protected ()
-  extends typings.babylonjs.BABYLON.PhysicsJoint {
+  extends StObject
+     with typings.babylonjs.BABYLON.PhysicsJoint {
   /**
     * Initializes the physics joint
     * @param type The type of the physics joint
@@ -39,8 +39,7 @@ object PhysicsJoint {
   @JSGlobal("BABYLON.PhysicsJoint.BallAndSocketJoint")
   @js.native
   def BallAndSocketJoint: Double = js.native
-  @scala.inline
-  def BallAndSocketJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BallAndSocketJoint")(x.asInstanceOf[js.Any])
+  inline def BallAndSocketJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BallAndSocketJoint")(x.asInstanceOf[js.Any])
   
   /**
     * Distance-Joint type
@@ -48,8 +47,7 @@ object PhysicsJoint {
   @JSGlobal("BABYLON.PhysicsJoint.DistanceJoint")
   @js.native
   def DistanceJoint: Double = js.native
-  @scala.inline
-  def DistanceJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DistanceJoint")(x.asInstanceOf[js.Any])
+  inline def DistanceJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DistanceJoint")(x.asInstanceOf[js.Any])
   
   /**
     * Hinge-Joint 2 type
@@ -57,8 +55,7 @@ object PhysicsJoint {
   @JSGlobal("BABYLON.PhysicsJoint.Hinge2Joint")
   @js.native
   def Hinge2Joint: Double = js.native
-  @scala.inline
-  def Hinge2Joint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Hinge2Joint")(x.asInstanceOf[js.Any])
+  inline def Hinge2Joint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Hinge2Joint")(x.asInstanceOf[js.Any])
   
   /**
     * Hinge-Joint type
@@ -66,8 +63,7 @@ object PhysicsJoint {
   @JSGlobal("BABYLON.PhysicsJoint.HingeJoint")
   @js.native
   def HingeJoint: Double = js.native
-  @scala.inline
-  def HingeJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HingeJoint")(x.asInstanceOf[js.Any])
+  inline def HingeJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HingeJoint")(x.asInstanceOf[js.Any])
   
   /**
     * Lock-Joint type
@@ -75,8 +71,7 @@ object PhysicsJoint {
   @JSGlobal("BABYLON.PhysicsJoint.LockJoint")
   @js.native
   def LockJoint: Double = js.native
-  @scala.inline
-  def LockJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LockJoint")(x.asInstanceOf[js.Any])
+  inline def LockJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LockJoint")(x.asInstanceOf[js.Any])
   
   /**
     * Point to Point Joint type.  Similar to a Ball-Joint.  Different in parameters
@@ -84,8 +79,7 @@ object PhysicsJoint {
   @JSGlobal("BABYLON.PhysicsJoint.PointToPointJoint")
   @js.native
   def PointToPointJoint: Double = js.native
-  @scala.inline
-  def PointToPointJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PointToPointJoint")(x.asInstanceOf[js.Any])
+  inline def PointToPointJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PointToPointJoint")(x.asInstanceOf[js.Any])
   
   /**
     * Prismatic-Joint type
@@ -93,8 +87,7 @@ object PhysicsJoint {
   @JSGlobal("BABYLON.PhysicsJoint.PrismaticJoint")
   @js.native
   def PrismaticJoint: Double = js.native
-  @scala.inline
-  def PrismaticJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PrismaticJoint")(x.asInstanceOf[js.Any])
+  inline def PrismaticJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PrismaticJoint")(x.asInstanceOf[js.Any])
   
   /**
     * Slider-Joint type
@@ -102,8 +95,7 @@ object PhysicsJoint {
   @JSGlobal("BABYLON.PhysicsJoint.SliderJoint")
   @js.native
   def SliderJoint: Double = js.native
-  @scala.inline
-  def SliderJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SliderJoint")(x.asInstanceOf[js.Any])
+  inline def SliderJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SliderJoint")(x.asInstanceOf[js.Any])
   
   /**
     * Spring-Joint type
@@ -111,8 +103,7 @@ object PhysicsJoint {
   @JSGlobal("BABYLON.PhysicsJoint.SpringJoint")
   @js.native
   def SpringJoint: Double = js.native
-  @scala.inline
-  def SpringJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SpringJoint")(x.asInstanceOf[js.Any])
+  inline def SpringJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SpringJoint")(x.asInstanceOf[js.Any])
   
   /**
     * Universal-Joint type
@@ -121,8 +112,7 @@ object PhysicsJoint {
   @JSGlobal("BABYLON.PhysicsJoint.UniversalJoint")
   @js.native
   def UniversalJoint: Double = js.native
-  @scala.inline
-  def UniversalJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UniversalJoint")(x.asInstanceOf[js.Any])
+  inline def UniversalJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UniversalJoint")(x.asInstanceOf[js.Any])
   
   /**
     * Wheel-Joint type
@@ -130,6 +120,5 @@ object PhysicsJoint {
   @JSGlobal("BABYLON.PhysicsJoint.WheelJoint")
   @js.native
   def WheelJoint: Double = js.native
-  @scala.inline
-  def WheelJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WheelJoint")(x.asInstanceOf[js.Any])
+  inline def WheelJoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WheelJoint")(x.asInstanceOf[js.Any])
 }

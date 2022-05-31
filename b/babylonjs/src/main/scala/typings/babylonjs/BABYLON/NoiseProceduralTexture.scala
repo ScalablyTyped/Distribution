@@ -2,13 +2,14 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NoiseProceduralTexture extends ProceduralTexture {
+trait NoiseProceduralTexture
+  extends StObject
+     with ProceduralTexture {
   
-  var _updateShaderUniforms: js.Any = js.native
+  /* private */ var _updateShaderUniforms: js.Any = js.native
   
   /** Gets or sets animation speed factor (default is 1) */
   var animationSpeedFactor: Double = js.native

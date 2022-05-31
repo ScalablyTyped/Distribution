@@ -4,8 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("webix.ui.button")
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.webix.webix.ui.baseview because Already inherited
+- typings.webix.webix.ui.button because var conflicts: $compareValue_Original, $height, $prepareValue_Original, $scope, $skin_Original, $view, $width, config, name, on_click_Original, touchable. Inlined  */ @JSGlobal("webix.ui.button")
 @js.native
 class button ()
-  extends StObject
-     with typings.webix.webix.ui.button
+  extends typings.webix.mod.ui.button

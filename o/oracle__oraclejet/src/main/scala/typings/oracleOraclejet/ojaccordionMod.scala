@@ -35,34 +35,35 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ojaccordionMod {
   
   @js.native
-  trait ojAccordion extends baseComponent[ojAccordionSettableProperties] {
+  trait ojAccordion
+    extends StObject
+       with baseComponent[ojAccordionSettableProperties] {
     
     @JSName("addEventListener")
     def addEventListener_expandedChanged(
       `type`: expandedChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[Id] | Null], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[Id] | Null], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_expandedChanged(
       `type`: expandedChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[Id] | Null], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[Id] | Null], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_multipleChanged(
       `type`: multipleChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_multipleChanged(
       `type`: multipleChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
@@ -71,7 +72,7 @@ object ojaccordionMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojaccordionMod.ojAccordion.ojBeforeCollapse, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -80,7 +81,7 @@ object ojaccordionMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojaccordionMod.ojAccordion.ojBeforeCollapse, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -90,7 +91,7 @@ object ojaccordionMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojaccordionMod.ojAccordion.ojBeforeExpand, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -99,7 +100,7 @@ object ojaccordionMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojaccordionMod.ojAccordion.ojBeforeExpand, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -109,7 +110,7 @@ object ojaccordionMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojaccordionMod.ojAccordion.ojCollapse, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -118,7 +119,7 @@ object ojaccordionMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojaccordionMod.ojAccordion.ojCollapse, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -128,7 +129,7 @@ object ojaccordionMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojaccordionMod.ojAccordion.ojExpand, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -137,7 +138,7 @@ object ojaccordionMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojaccordionMod.ojAccordion.ojExpand, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -151,17 +152,23 @@ object ojaccordionMod {
     
     var multiple: Boolean = js.native
     
-    var onExpandedChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[Id] | Null], _]) | Null = js.native
+    var onExpandedChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[Id] | Null], js.Any]) | Null = js.native
     
-    var onMultipleChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
+    var onMultipleChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], js.Any]) | Null = js.native
     
-    var onOjBeforeCollapse: (js.Function1[/* event */ typings.oracleOraclejet.ojaccordionMod.ojAccordion.ojBeforeCollapse, _]) | Null = js.native
+    var onOjBeforeCollapse: (js.Function1[
+        /* event */ typings.oracleOraclejet.ojaccordionMod.ojAccordion.ojBeforeCollapse, 
+        js.Any
+      ]) | Null = js.native
     
-    var onOjBeforeExpand: (js.Function1[/* event */ typings.oracleOraclejet.ojaccordionMod.ojAccordion.ojBeforeExpand, _]) | Null = js.native
+    var onOjBeforeExpand: (js.Function1[
+        /* event */ typings.oracleOraclejet.ojaccordionMod.ojAccordion.ojBeforeExpand, 
+        js.Any
+      ]) | Null = js.native
     
-    var onOjCollapse: (js.Function1[/* event */ typings.oracleOraclejet.ojaccordionMod.ojAccordion.ojCollapse, _]) | Null = js.native
+    var onOjCollapse: (js.Function1[/* event */ typings.oracleOraclejet.ojaccordionMod.ojAccordion.ojCollapse, js.Any]) | Null = js.native
     
-    var onOjExpand: (js.Function1[/* event */ typings.oracleOraclejet.ojaccordionMod.ojAccordion.ojExpand, _]) | Null = js.native
+    var onOjExpand: (js.Function1[/* event */ typings.oracleOraclejet.ojaccordionMod.ojAccordion.ojExpand, js.Any]) | Null = js.native
     
     def setProperties(properties: ojAccordionSettablePropertiesLenient): Unit = js.native
     
@@ -183,25 +190,25 @@ object ojaccordionMod {
     type ojExpand = CustomEvent[DictpropName]
   }
   
-  @js.native
-  trait ojAccordionEventMap extends baseComponentEventMap[ojAccordionSettableProperties] {
+  trait ojAccordionEventMap
+    extends StObject
+       with baseComponentEventMap[ojAccordionSettableProperties] {
     
-    var expandedChanged: JetElementCustomEvent[js.Array[Id] | Null] = js.native
+    var expandedChanged: JetElementCustomEvent[js.Array[Id] | Null]
     
-    var multipleChanged: JetElementCustomEvent[Boolean] = js.native
+    var multipleChanged: JetElementCustomEvent[Boolean]
     
-    var ojBeforeCollapse: typings.oracleOraclejet.ojaccordionMod.ojAccordion.ojBeforeCollapse = js.native
+    var ojBeforeCollapse: typings.oracleOraclejet.ojaccordionMod.ojAccordion.ojBeforeCollapse
     
-    var ojBeforeExpand: typings.oracleOraclejet.ojaccordionMod.ojAccordion.ojBeforeExpand = js.native
+    var ojBeforeExpand: typings.oracleOraclejet.ojaccordionMod.ojAccordion.ojBeforeExpand
     
-    var ojCollapse: typings.oracleOraclejet.ojaccordionMod.ojAccordion.ojCollapse = js.native
+    var ojCollapse: typings.oracleOraclejet.ojaccordionMod.ojAccordion.ojCollapse
     
-    var ojExpand: typings.oracleOraclejet.ojaccordionMod.ojAccordion.ojExpand = js.native
+    var ojExpand: typings.oracleOraclejet.ojaccordionMod.ojAccordion.ojExpand
   }
   object ojAccordionEventMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: UIEvent,
       animationcancel: AnimationEvent,
       animationend: AnimationEvent,
@@ -306,109 +313,86 @@ object ojaccordionMod {
       __obj.asInstanceOf[ojAccordionEventMap]
     }
     
-    @scala.inline
-    implicit class ojAccordionEventMapMutableBuilder[Self <: ojAccordionEventMap] (val x: Self) extends AnyVal {
+    extension [Self <: ojAccordionEventMap](x: Self) {
       
-      @scala.inline
-      def setExpandedChanged(value: JetElementCustomEvent[js.Array[Id] | Null]): Self = StObject.set(x, "expandedChanged", value.asInstanceOf[js.Any])
+      inline def setExpandedChanged(value: JetElementCustomEvent[js.Array[Id] | Null]): Self = StObject.set(x, "expandedChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipleChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "multipleChanged", value.asInstanceOf[js.Any])
+      inline def setMultipleChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "multipleChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjBeforeCollapse(value: typings.oracleOraclejet.ojaccordionMod.ojAccordion.ojBeforeCollapse): Self = StObject.set(x, "ojBeforeCollapse", value.asInstanceOf[js.Any])
+      inline def setOjBeforeCollapse(value: typings.oracleOraclejet.ojaccordionMod.ojAccordion.ojBeforeCollapse): Self = StObject.set(x, "ojBeforeCollapse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjBeforeExpand(value: typings.oracleOraclejet.ojaccordionMod.ojAccordion.ojBeforeExpand): Self = StObject.set(x, "ojBeforeExpand", value.asInstanceOf[js.Any])
+      inline def setOjBeforeExpand(value: typings.oracleOraclejet.ojaccordionMod.ojAccordion.ojBeforeExpand): Self = StObject.set(x, "ojBeforeExpand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjCollapse(value: typings.oracleOraclejet.ojaccordionMod.ojAccordion.ojCollapse): Self = StObject.set(x, "ojCollapse", value.asInstanceOf[js.Any])
+      inline def setOjCollapse(value: typings.oracleOraclejet.ojaccordionMod.ojAccordion.ojCollapse): Self = StObject.set(x, "ojCollapse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjExpand(value: typings.oracleOraclejet.ojaccordionMod.ojAccordion.ojExpand): Self = StObject.set(x, "ojExpand", value.asInstanceOf[js.Any])
+      inline def setOjExpand(value: typings.oracleOraclejet.ojaccordionMod.ojAccordion.ojExpand): Self = StObject.set(x, "ojExpand", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait ojAccordionSettableProperties extends baseComponentSettableProperties {
+  trait ojAccordionSettableProperties
+    extends StObject
+       with baseComponentSettableProperties {
     
-    var expanded: (js.Array[Double | Id | String]) | Null = js.native
+    var expanded: (js.Array[Double | Id | String]) | Null
     
-    var multiple: Boolean = js.native
+    var multiple: Boolean
   }
   object ojAccordionSettableProperties {
     
-    @scala.inline
-    def apply(multiple: Boolean): ojAccordionSettableProperties = {
-      val __obj = js.Dynamic.literal(multiple = multiple.asInstanceOf[js.Any])
+    inline def apply(multiple: Boolean): ojAccordionSettableProperties = {
+      val __obj = js.Dynamic.literal(multiple = multiple.asInstanceOf[js.Any], expanded = null, translations = null)
       __obj.asInstanceOf[ojAccordionSettableProperties]
     }
     
-    @scala.inline
-    implicit class ojAccordionSettablePropertiesMutableBuilder[Self <: ojAccordionSettableProperties] (val x: Self) extends AnyVal {
+    extension [Self <: ojAccordionSettableProperties](x: Self) {
       
-      @scala.inline
-      def setExpanded(value: js.Array[Double | Id | String]): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+      inline def setExpanded(value: js.Array[Double | Id | String]): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandedNull: Self = StObject.set(x, "expanded", null)
+      inline def setExpandedNull: Self = StObject.set(x, "expanded", null)
       
-      @scala.inline
-      def setExpandedVarargs(value: (Double | Id | String)*): Self = StObject.set(x, "expanded", js.Array(value :_*))
+      inline def setExpandedVarargs(value: (Double | Id | String)*): Self = StObject.set(x, "expanded", js.Array(value :_*))
       
-      @scala.inline
-      def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+      inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojaccordion.ojAccordionSettableProperties> */
-  @js.native
   trait ojAccordionSettablePropertiesLenient
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var expanded: js.UndefOr[(js.Array[Double | Id | String]) | Null] = js.native
+    var expanded: js.UndefOr[(js.Array[Double | Id | String]) | Null] = js.undefined
     
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
     
-    var translations: js.UndefOr[js.Object | Null] = js.native
+    var translations: js.UndefOr[js.Object | Null] = js.undefined
   }
   object ojAccordionSettablePropertiesLenient {
     
-    @scala.inline
-    def apply(): ojAccordionSettablePropertiesLenient = {
+    inline def apply(): ojAccordionSettablePropertiesLenient = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ojAccordionSettablePropertiesLenient]
     }
     
-    @scala.inline
-    implicit class ojAccordionSettablePropertiesLenientMutableBuilder[Self <: ojAccordionSettablePropertiesLenient] (val x: Self) extends AnyVal {
+    extension [Self <: ojAccordionSettablePropertiesLenient](x: Self) {
       
-      @scala.inline
-      def setExpanded(value: js.Array[Double | Id | String]): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+      inline def setExpanded(value: js.Array[Double | Id | String]): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandedNull: Self = StObject.set(x, "expanded", null)
+      inline def setExpandedNull: Self = StObject.set(x, "expanded", null)
       
-      @scala.inline
-      def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+      inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
       
-      @scala.inline
-      def setExpandedVarargs(value: (Double | Id | String)*): Self = StObject.set(x, "expanded", js.Array(value :_*))
+      inline def setExpandedVarargs(value: (Double | Id | String)*): Self = StObject.set(x, "expanded", js.Array(value :_*))
       
-      @scala.inline
-      def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+      inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+      inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
       
-      @scala.inline
-      def setTranslations(value: js.Object): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: js.Object): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslationsNull: Self = StObject.set(x, "translations", null)
+      inline def setTranslationsNull: Self = StObject.set(x, "translations", null)
       
-      @scala.inline
-      def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+      inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
     }
   }
 }

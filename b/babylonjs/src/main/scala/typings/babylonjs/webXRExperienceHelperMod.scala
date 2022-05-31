@@ -10,7 +10,6 @@ import typings.babylonjs.webXRTypesMod.WebXRRenderTarget
 import typings.babylonjs.webXRTypesMod.WebXRState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webXRExperienceHelperMod {
@@ -21,22 +20,30 @@ object webXRExperienceHelperMod {
     * Creates a WebXRExperienceHelper
     * @param scene The scene the helper should be created in
     */
-  class WebXRExperienceHelper protected () extends IDisposable {
+  /* private */ class WebXRExperienceHelper ()
+    extends StObject
+       with IDisposable {
     
-    var _nonVRCamera: js.Any = js.native
+    /* private */ var _nonVRCamera: js.Any = js.native
     
-    var _nonXRToXRCamera: js.Any = js.native
+    /* private */ var _nonXRToXRCamera: js.Any = js.native
     
-    var _originalSceneAutoClear: js.Any = js.native
+    /* private */ var _originalSceneAutoClear: js.Any = js.native
     
-    var _setState: js.Any = js.native
+    /* private */ var _setState: js.Any = js.native
     
-    var _supported: js.Any = js.native
+    /* private */ var _supported: js.Any = js.native
     
     /**
       * Camera used to render xr content
       */
     var camera: WebXRCamera = js.native
+    
+    /**
+      * Releases all held resources
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * Enters XR mode (This must be done within a user interaction in most browsers eg. button click)
@@ -50,7 +57,7 @@ object webXRExperienceHelperMod {
     def enterXRAsync(
       sessionMode: XRSessionMode,
       referenceSpaceType: XRReferenceSpaceType,
-      renderTarget: js.UndefOr[scala.Nothing],
+      renderTarget: Unit,
       sessionCreationOptions: XRSessionInit
     ): js.Promise[WebXRSessionManager] = js.native
     def enterXRAsync(
@@ -88,7 +95,7 @@ object webXRExperienceHelperMod {
       */
     var onStateChangedObservable: Observable[WebXRState] = js.native
     
-    var scene: js.Any = js.native
+    /* private */ var scene: js.Any = js.native
     
     /** Session manager used to keep track of xr session */
     var sessionManager: WebXRSessionManager = js.native
@@ -101,13 +108,15 @@ object webXRExperienceHelperMod {
   /* static members */
   object WebXRExperienceHelper {
     
+    @JSImport("babylonjs/XR/webXRExperienceHelper", "WebXRExperienceHelper")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates the experience helper
       * @param scene the scene to attach the experience helper to
       * @returns a promise for the experience helper
       */
-    @JSImport("babylonjs/XR/webXRExperienceHelper", "WebXRExperienceHelper.CreateAsync")
-    @js.native
-    def CreateAsync(scene: Scene): js.Promise[WebXRExperienceHelper] = js.native
+    inline def CreateAsync(scene: Scene): js.Promise[WebXRExperienceHelper] = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(scene.asInstanceOf[js.Any]).asInstanceOf[js.Promise[WebXRExperienceHelper]]
   }
 }

@@ -4,7 +4,6 @@ import typings.luminoSignaling.mod.ISignal
 import typings.luminoWidgets.splitpanelMod.SplitPanel.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object splitpanelMod {
@@ -23,6 +22,6 @@ object splitpanelMod {
     /**
       * Emits when the split handle has moved.
       */
-    val handleMoved: ISignal[_, Unit] = js.native
+    val handleMoved: ISignal[js.Any, Unit] = js.native
   }
 }

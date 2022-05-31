@@ -2,85 +2,86 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SceneInstrumentation extends IDisposable {
+trait SceneInstrumentation
+  extends StObject
+     with IDisposable {
   
-  var _activeMeshesEvaluationTime: js.Any = js.native
+  /* private */ var _activeMeshesEvaluationTime: js.Any = js.native
   
-  var _animationsTime: js.Any = js.native
+  /* private */ var _animationsTime: js.Any = js.native
   
-  var _cameraRenderTime: js.Any = js.native
+  /* private */ var _cameraRenderTime: js.Any = js.native
   
-  var _captureActiveMeshesEvaluationTime: js.Any = js.native
+  /* private */ var _captureActiveMeshesEvaluationTime: js.Any = js.native
   
-  var _captureAnimationsTime: js.Any = js.native
+  /* private */ var _captureAnimationsTime: js.Any = js.native
   
-  var _captureCameraRenderTime: js.Any = js.native
+  /* private */ var _captureCameraRenderTime: js.Any = js.native
   
-  var _captureFrameTime: js.Any = js.native
+  /* private */ var _captureFrameTime: js.Any = js.native
   
-  var _captureInterFrameTime: js.Any = js.native
+  /* private */ var _captureInterFrameTime: js.Any = js.native
   
-  var _captureParticlesRenderTime: js.Any = js.native
+  /* private */ var _captureParticlesRenderTime: js.Any = js.native
   
-  var _capturePhysicsTime: js.Any = js.native
+  /* private */ var _capturePhysicsTime: js.Any = js.native
   
-  var _captureRenderTargetsRenderTime: js.Any = js.native
+  /* private */ var _captureRenderTargetsRenderTime: js.Any = js.native
   
-  var _captureRenderTime: js.Any = js.native
+  /* private */ var _captureRenderTime: js.Any = js.native
   
-  var _captureSpritesRenderTime: js.Any = js.native
+  /* private */ var _captureSpritesRenderTime: js.Any = js.native
   
-  var _frameTime: js.Any = js.native
+  /* private */ var _frameTime: js.Any = js.native
   
-  var _interFrameTime: js.Any = js.native
+  /* private */ var _interFrameTime: js.Any = js.native
   
-  var _onAfterActiveMeshesEvaluationObserver: js.Any = js.native
+  /* private */ var _onAfterActiveMeshesEvaluationObserver: js.Any = js.native
   
-  var _onAfterAnimationsObserver: js.Any = js.native
+  /* private */ var _onAfterAnimationsObserver: js.Any = js.native
   
-  var _onAfterCameraRenderObserver: js.Any = js.native
+  /* private */ var _onAfterCameraRenderObserver: js.Any = js.native
   
-  var _onAfterDrawPhaseObserver: js.Any = js.native
+  /* private */ var _onAfterDrawPhaseObserver: js.Any = js.native
   
-  var _onAfterParticlesRenderingObserver: js.Any = js.native
+  /* private */ var _onAfterParticlesRenderingObserver: js.Any = js.native
   
-  var _onAfterPhysicsObserver: js.Any = js.native
+  /* private */ var _onAfterPhysicsObserver: js.Any = js.native
   
-  var _onAfterRenderObserver: js.Any = js.native
+  /* private */ var _onAfterRenderObserver: js.Any = js.native
   
-  var _onAfterRenderTargetsRenderObserver: js.Any = js.native
+  /* private */ var _onAfterRenderTargetsRenderObserver: js.Any = js.native
   
-  var _onAfterSpritesRenderingObserver: js.Any = js.native
+  /* private */ var _onAfterSpritesRenderingObserver: js.Any = js.native
   
-  var _onBeforeActiveMeshesEvaluationObserver: js.Any = js.native
+  /* private */ var _onBeforeActiveMeshesEvaluationObserver: js.Any = js.native
   
-  var _onBeforeAnimationsObserver: js.Any = js.native
+  /* private */ var _onBeforeAnimationsObserver: js.Any = js.native
   
-  var _onBeforeCameraRenderObserver: js.Any = js.native
+  /* private */ var _onBeforeCameraRenderObserver: js.Any = js.native
   
-  var _onBeforeDrawPhaseObserver: js.Any = js.native
+  /* private */ var _onBeforeDrawPhaseObserver: js.Any = js.native
   
-  var _onBeforeParticlesRenderingObserver: js.Any = js.native
+  /* private */ var _onBeforeParticlesRenderingObserver: js.Any = js.native
   
-  var _onBeforePhysicsObserver: js.Any = js.native
+  /* private */ var _onBeforePhysicsObserver: js.Any = js.native
   
-  var _onBeforeRenderTargetsRenderObserver: js.Any = js.native
+  /* private */ var _onBeforeRenderTargetsRenderObserver: js.Any = js.native
   
-  var _onBeforeSpritesRenderingObserver: js.Any = js.native
+  /* private */ var _onBeforeSpritesRenderingObserver: js.Any = js.native
   
-  var _particlesRenderTime: js.Any = js.native
+  /* private */ var _particlesRenderTime: js.Any = js.native
   
-  var _physicsTime: js.Any = js.native
+  /* private */ var _physicsTime: js.Any = js.native
   
-  var _renderTargetsRenderTime: js.Any = js.native
+  /* private */ var _renderTargetsRenderTime: js.Any = js.native
   
-  var _renderTime: js.Any = js.native
+  /* private */ var _renderTime: js.Any = js.native
   
-  var _spritesRenderTime: js.Any = js.native
+  /* private */ var _spritesRenderTime: js.Any = js.native
   
   /**
     * Gets the perf counter used for active meshes evaluation time

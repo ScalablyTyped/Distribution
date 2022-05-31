@@ -3,7 +3,6 @@ package typings.babylonjs
 import typings.babylonjs.observableMod.Observable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xboxGamepadMod {
@@ -15,57 +14,77 @@ object xboxGamepadMod {
   object Xbox360Button extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Xbox360Button with Double] = js.native
+    def apply(value: Double): js.UndefOr[Xbox360Button & Double] = js.native
     
     /** A */
     @js.native
-    sealed trait A extends Xbox360Button
-    /* 0 */ val A: typings.babylonjs.xboxGamepadMod.Xbox360Button.A with Double = js.native
+    sealed trait A
+      extends StObject
+         with Xbox360Button
+    /* 0 */ val A: typings.babylonjs.xboxGamepadMod.Xbox360Button.A & Double = js.native
     
     /** B */
     @js.native
-    sealed trait B extends Xbox360Button
-    /* 1 */ val B: typings.babylonjs.xboxGamepadMod.Xbox360Button.B with Double = js.native
+    sealed trait B
+      extends StObject
+         with Xbox360Button
+    /* 1 */ val B: typings.babylonjs.xboxGamepadMod.Xbox360Button.B & Double = js.native
     
     /** Back */
     @js.native
-    sealed trait Back extends Xbox360Button
-    /* 8 */ val Back: typings.babylonjs.xboxGamepadMod.Xbox360Button.Back with Double = js.native
+    sealed trait Back
+      extends StObject
+         with Xbox360Button
+    /* 8 */ val Back: typings.babylonjs.xboxGamepadMod.Xbox360Button.Back & Double = js.native
     
     /** Left button */
     @js.native
-    sealed trait LB extends Xbox360Button
-    /* 4 */ val LB: typings.babylonjs.xboxGamepadMod.Xbox360Button.LB with Double = js.native
+    sealed trait LB
+      extends StObject
+         with Xbox360Button
+    /* 4 */ val LB: typings.babylonjs.xboxGamepadMod.Xbox360Button.LB & Double = js.native
     
     /** Left stick */
     @js.native
-    sealed trait LeftStick extends Xbox360Button
-    /* 10 */ val LeftStick: typings.babylonjs.xboxGamepadMod.Xbox360Button.LeftStick with Double = js.native
+    sealed trait LeftStick
+      extends StObject
+         with Xbox360Button
+    /* 10 */ val LeftStick: typings.babylonjs.xboxGamepadMod.Xbox360Button.LeftStick & Double = js.native
     
     /** Right button */
     @js.native
-    sealed trait RB extends Xbox360Button
-    /* 5 */ val RB: typings.babylonjs.xboxGamepadMod.Xbox360Button.RB with Double = js.native
+    sealed trait RB
+      extends StObject
+         with Xbox360Button
+    /* 5 */ val RB: typings.babylonjs.xboxGamepadMod.Xbox360Button.RB & Double = js.native
     
     /** Right stick */
     @js.native
-    sealed trait RightStick extends Xbox360Button
-    /* 11 */ val RightStick: typings.babylonjs.xboxGamepadMod.Xbox360Button.RightStick with Double = js.native
+    sealed trait RightStick
+      extends StObject
+         with Xbox360Button
+    /* 11 */ val RightStick: typings.babylonjs.xboxGamepadMod.Xbox360Button.RightStick & Double = js.native
     
     /** Start */
     @js.native
-    sealed trait Start extends Xbox360Button
-    /* 9 */ val Start: typings.babylonjs.xboxGamepadMod.Xbox360Button.Start with Double = js.native
+    sealed trait Start
+      extends StObject
+         with Xbox360Button
+    /* 9 */ val Start: typings.babylonjs.xboxGamepadMod.Xbox360Button.Start & Double = js.native
     
     /** X */
     @js.native
-    sealed trait X extends Xbox360Button
-    /* 2 */ val X: typings.babylonjs.xboxGamepadMod.Xbox360Button.X with Double = js.native
+    sealed trait X
+      extends StObject
+         with Xbox360Button
+    /* 2 */ val X: typings.babylonjs.xboxGamepadMod.Xbox360Button.X & Double = js.native
     
     /** Y */
     @js.native
-    sealed trait Y extends Xbox360Button
-    /* 3 */ val Y: typings.babylonjs.xboxGamepadMod.Xbox360Button.Y with Double = js.native
+    sealed trait Y
+      extends StObject
+         with Xbox360Button
+    /* 3 */ val Y: typings.babylonjs.xboxGamepadMod.Xbox360Button.Y & Double = js.native
   }
   
   @js.native
@@ -75,27 +94,35 @@ object xboxGamepadMod {
   object Xbox360Dpad extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Xbox360Dpad with Double] = js.native
+    def apply(value: Double): js.UndefOr[Xbox360Dpad & Double] = js.native
     
     /** Down */
     @js.native
-    sealed trait Down extends Xbox360Dpad
-    /* 13 */ val Down: typings.babylonjs.xboxGamepadMod.Xbox360Dpad.Down with Double = js.native
+    sealed trait Down
+      extends StObject
+         with Xbox360Dpad
+    /* 13 */ val Down: typings.babylonjs.xboxGamepadMod.Xbox360Dpad.Down & Double = js.native
     
     /** Left */
     @js.native
-    sealed trait Left extends Xbox360Dpad
-    /* 14 */ val Left: typings.babylonjs.xboxGamepadMod.Xbox360Dpad.Left with Double = js.native
+    sealed trait Left
+      extends StObject
+         with Xbox360Dpad
+    /* 14 */ val Left: typings.babylonjs.xboxGamepadMod.Xbox360Dpad.Left & Double = js.native
     
     /** Right */
     @js.native
-    sealed trait Right extends Xbox360Dpad
-    /* 15 */ val Right: typings.babylonjs.xboxGamepadMod.Xbox360Dpad.Right with Double = js.native
+    sealed trait Right
+      extends StObject
+         with Xbox360Dpad
+    /* 15 */ val Right: typings.babylonjs.xboxGamepadMod.Xbox360Dpad.Right & Double = js.native
     
     /** Up */
     @js.native
-    sealed trait Up extends Xbox360Dpad
-    /* 12 */ val Up: typings.babylonjs.xboxGamepadMod.Xbox360Dpad.Up with Double = js.native
+    sealed trait Up
+      extends StObject
+         with Xbox360Dpad
+    /* 12 */ val Up: typings.babylonjs.xboxGamepadMod.Xbox360Dpad.Up & Double = js.native
   }
   
   @JSImport("babylonjs/Gamepads/xboxGamepad", "Xbox360Pad")
@@ -112,55 +139,55 @@ object xboxGamepadMod {
     def this(id: String, index: Double, gamepad: js.Any) = this()
     def this(id: String, index: Double, gamepad: js.Any, xboxOne: Boolean) = this()
     
-    var _buttonA: js.Any = js.native
+    /* private */ var _buttonA: js.Any = js.native
     
-    var _buttonB: js.Any = js.native
+    /* private */ var _buttonB: js.Any = js.native
     
-    var _buttonBack: js.Any = js.native
+    /* private */ var _buttonBack: js.Any = js.native
     
-    var _buttonLB: js.Any = js.native
+    /* private */ var _buttonLB: js.Any = js.native
     
-    var _buttonLeftStick: js.Any = js.native
+    /* private */ var _buttonLeftStick: js.Any = js.native
     
-    var _buttonRB: js.Any = js.native
+    /* private */ var _buttonRB: js.Any = js.native
     
-    var _buttonRightStick: js.Any = js.native
+    /* private */ var _buttonRightStick: js.Any = js.native
     
-    var _buttonStart: js.Any = js.native
+    /* private */ var _buttonStart: js.Any = js.native
     
-    var _buttonX: js.Any = js.native
+    /* private */ var _buttonX: js.Any = js.native
     
-    var _buttonY: js.Any = js.native
+    /* private */ var _buttonY: js.Any = js.native
     
-    var _dPadDown: js.Any = js.native
+    /* private */ var _dPadDown: js.Any = js.native
     
-    var _dPadLeft: js.Any = js.native
+    /* private */ var _dPadLeft: js.Any = js.native
     
-    var _dPadRight: js.Any = js.native
+    /* private */ var _dPadRight: js.Any = js.native
     
-    var _dPadUp: js.Any = js.native
+    /* private */ var _dPadUp: js.Any = js.native
     
-    var _isXboxOnePad: js.Any = js.native
+    /* private */ var _isXboxOnePad: js.Any = js.native
     
-    var _leftTrigger: js.Any = js.native
+    /* private */ var _leftTrigger: js.Any = js.native
     
-    var _onbuttondown: js.Any = js.native
+    /* private */ var _onbuttondown: js.Any = js.native
     
-    var _onbuttonup: js.Any = js.native
+    /* private */ var _onbuttonup: js.Any = js.native
     
-    var _ondpaddown: js.Any = js.native
+    /* private */ var _ondpaddown: js.Any = js.native
     
-    var _ondpadup: js.Any = js.native
+    /* private */ var _ondpadup: js.Any = js.native
     
-    var _onlefttriggerchanged: js.Any = js.native
+    /* private */ var _onlefttriggerchanged: js.Any = js.native
     
-    var _onrighttriggerchanged: js.Any = js.native
+    /* private */ var _onrighttriggerchanged: js.Any = js.native
     
-    var _rightTrigger: js.Any = js.native
+    /* private */ var _rightTrigger: js.Any = js.native
     
-    var _setButtonValue: js.Any = js.native
+    /* private */ var _setButtonValue: js.Any = js.native
     
-    var _setDPadValue: js.Any = js.native
+    /* private */ var _setDPadValue: js.Any = js.native
     
     /**
       * Gets the value of the `A` button

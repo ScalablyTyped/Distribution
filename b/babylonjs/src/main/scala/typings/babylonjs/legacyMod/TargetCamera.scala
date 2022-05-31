@@ -2,7 +2,6 @@ package typings.babylonjs.legacyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "TargetCamera")
@@ -40,18 +39,15 @@ object TargetCamera {
   @JSImport("babylonjs/Legacy/legacy", "TargetCamera._RigCamTransformMatrix")
   @js.native
   def _RigCamTransformMatrix: js.Any = js.native
-  @scala.inline
-  def _RigCamTransformMatrix_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_RigCamTransformMatrix")(x.asInstanceOf[js.Any])
+  inline def _RigCamTransformMatrix_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_RigCamTransformMatrix")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs/Legacy/legacy", "TargetCamera._TargetFocalPoint")
   @js.native
   def _TargetFocalPoint: js.Any = js.native
-  @scala.inline
-  def _TargetFocalPoint_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TargetFocalPoint")(x.asInstanceOf[js.Any])
+  inline def _TargetFocalPoint_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TargetFocalPoint")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs/Legacy/legacy", "TargetCamera._TargetTransformMatrix")
   @js.native
   def _TargetTransformMatrix: js.Any = js.native
-  @scala.inline
-  def _TargetTransformMatrix_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TargetTransformMatrix")(x.asInstanceOf[js.Any])
+  inline def _TargetTransformMatrix_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TargetTransformMatrix")(x.asInstanceOf[js.Any])
 }

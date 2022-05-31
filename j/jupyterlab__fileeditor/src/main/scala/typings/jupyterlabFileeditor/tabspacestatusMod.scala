@@ -8,7 +8,6 @@ import typings.jupyterlabFileeditor.tabspacestatusMod.TabSpaceStatus.Model
 import typings.luminoWidgets.mod.Menu
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabspacestatusMod {
@@ -24,13 +23,13 @@ object tabspacestatusMod {
     /**
       * Handle a click on the status item.
       */
-    var _handleClick: js.Any = js.native
+    /* private */ var _handleClick: js.Any = js.native
     
-    var _menu: js.Any = js.native
+    /* private */ var _menu: js.Any = js.native
     
-    var _menuClosed: js.Any = js.native
+    /* private */ var _menuClosed: js.Any = js.native
     
-    var _popup: js.Any = js.native
+    /* private */ var _popup: js.Any = js.native
   }
   object TabSpaceStatus {
     
@@ -41,9 +40,9 @@ object tabspacestatusMod {
     @js.native
     class Model () extends VDomModel {
       
-      var _config: js.Any = js.native
+      /* private */ var _config: js.Any = js.native
       
-      var _triggerChange: js.Any = js.native
+      /* private */ var _triggerChange: js.Any = js.native
       
       /**
         * The editor config from the settings system.
@@ -55,28 +54,24 @@ object tabspacestatusMod {
     /**
       * Options for creating a TabSpace status item.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * A menu to open when clicking on the status item. This should allow
         * the user to make a different selection about tabs/spaces.
         */
-      var menu: Menu = js.native
+      var menu: Menu
     }
     object IOptions {
       
-      @scala.inline
-      def apply(menu: Menu): IOptions = {
+      inline def apply(menu: Menu): IOptions = {
         val __obj = js.Dynamic.literal(menu = menu.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setMenu(value: Menu): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+        inline def setMenu(value: Menu): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -89,44 +84,38 @@ object tabspacestatusMod {
     /**
       * The props for TabSpaceComponent.
       */
-    @js.native
     trait IProps extends StObject {
       
       /**
         * A click handler for the TabSpace component. By default
         * opens a menu allowing the user to select tabs vs spaces.
         */
-      def handleClick(): Unit = js.native
+      def handleClick(): Unit
       
       /**
         * Whether to use spaces or tabs.
         */
-      var isSpaces: Boolean = js.native
+      var isSpaces: Boolean
       
       /**
         * The number of spaces to insert on tab.
         */
-      var tabSpace: Double = js.native
+      var tabSpace: Double
     }
     object IProps {
       
-      @scala.inline
-      def apply(handleClick: () => Unit, isSpaces: Boolean, tabSpace: Double): IProps = {
+      inline def apply(handleClick: () => Unit, isSpaces: Boolean, tabSpace: Double): IProps = {
         val __obj = js.Dynamic.literal(handleClick = js.Any.fromFunction0(handleClick), isSpaces = isSpaces.asInstanceOf[js.Any], tabSpace = tabSpace.asInstanceOf[js.Any])
         __obj.asInstanceOf[IProps]
       }
       
-      @scala.inline
-      implicit class IPropsMutableBuilder[Self <: IProps] (val x: Self) extends AnyVal {
+      extension [Self <: IProps](x: Self) {
         
-        @scala.inline
-        def setHandleClick(value: () => Unit): Self = StObject.set(x, "handleClick", js.Any.fromFunction0(value))
+        inline def setHandleClick(value: () => Unit): Self = StObject.set(x, "handleClick", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setIsSpaces(value: Boolean): Self = StObject.set(x, "isSpaces", value.asInstanceOf[js.Any])
+        inline def setIsSpaces(value: Boolean): Self = StObject.set(x, "isSpaces", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTabSpace(value: Double): Self = StObject.set(x, "tabSpace", value.asInstanceOf[js.Any])
+        inline def setTabSpace(value: Double): Self = StObject.set(x, "tabSpace", value.asInstanceOf[js.Any])
       }
     }
   }

@@ -9,7 +9,6 @@ import typings.babylonjs.smartArrayMod.SmartArray
 import typings.babylonjs.subMeshMod.SubMesh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object octreeMod {
@@ -31,22 +30,22 @@ object octreeMod {
     ) = this()
     def this(
       creationFunc: js.Function2[/* entry */ T, /* block */ OctreeBlock[T], Unit],
-      maxBlockCapacity: js.UndefOr[scala.Nothing],
+      maxBlockCapacity: Double,
       /** Defines the maximum depth (sub-levels) for your octree. Default value is 2, which means 8 8 8 = 512 blocks :) (This parameter takes precedence over capacity.) */
     maxDepth: Double
     ) = this()
     def this(
       creationFunc: js.Function2[/* entry */ T, /* block */ OctreeBlock[T], Unit],
-      maxBlockCapacity: Double,
+      maxBlockCapacity: Unit,
       /** Defines the maximum depth (sub-levels) for your octree. Default value is 2, which means 8 8 8 = 512 blocks :) (This parameter takes precedence over capacity.) */
     maxDepth: Double
     ) = this()
     
-    var _creationFunc: js.Any = js.native
+    /* private */ var _creationFunc: js.Any = js.native
     
-    var _maxBlockCapacity: js.Any = js.native
+    /* private */ var _maxBlockCapacity: js.Any = js.native
     
-    var _selectionContent: js.Any = js.native
+    /* private */ var _selectionContent: js.Any = js.native
     
     /**
       * Adds a mesh to the octree
@@ -110,18 +109,18 @@ object octreeMod {
   /* static members */
   object Octree {
     
+    @JSImport("babylonjs/Culling/Octrees/octree", "Octree")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Adds a mesh into the octree block if it intersects the block
       */
-    @JSImport("babylonjs/Culling/Octrees/octree", "Octree.CreationFuncForMeshes")
-    @js.native
-    def CreationFuncForMeshes(entry: AbstractMesh, block: OctreeBlock[AbstractMesh]): Unit = js.native
+    inline def CreationFuncForMeshes(entry: AbstractMesh, block: OctreeBlock[AbstractMesh]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreationFuncForMeshes")(entry.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Adds a submesh into the octree block if it intersects the block
       */
-    @JSImport("babylonjs/Culling/Octrees/octree", "Octree.CreationFuncForSubMeshes")
-    @js.native
-    def CreationFuncForSubMeshes(entry: SubMesh, block: OctreeBlock[SubMesh]): Unit = js.native
+    inline def CreationFuncForSubMeshes(entry: SubMesh, block: OctreeBlock[SubMesh]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreationFuncForSubMeshes")(entry.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

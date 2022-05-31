@@ -5,7 +5,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lensFlaresIndexMod {
@@ -42,6 +41,10 @@ object lensFlaresIndexMod {
   /* static members */
   object LensFlare {
     
+    @JSImport("babylonjs/LensFlares/index", "LensFlare")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new Lens Flare.
       * This represents one of the lens effect in a `lensFlareSystem`.
@@ -54,15 +57,13 @@ object lensFlaresIndexMod {
       * @param system Define the `lensFlareSystem` this flare is part of
       * @returns The newly created Lens Flare
       */
-    @JSImport("babylonjs/LensFlares/index", "LensFlare.AddFlare")
-    @js.native
-    def AddFlare(
+    inline def AddFlare(
       size: Double,
       position: Double,
       color: Color3,
       imgUrl: String,
       system: typings.babylonjs.lensFlareSystemMod.LensFlareSystem
-    ): typings.babylonjs.lensFlareMod.LensFlare = js.native
+    ): typings.babylonjs.lensFlareMod.LensFlare = (^.asInstanceOf[js.Dynamic].applyDynamic("AddFlare")(size.asInstanceOf[js.Any], position.asInstanceOf[js.Any], color.asInstanceOf[js.Any], imgUrl.asInstanceOf[js.Any], system.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.lensFlareMod.LensFlare]
   }
   
   @JSImport("babylonjs/LensFlares/index", "LensFlareSystem")
@@ -86,6 +87,10 @@ object lensFlaresIndexMod {
   /* static members */
   object LensFlareSystem {
     
+    @JSImport("babylonjs/LensFlares/index", "LensFlareSystem")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Parse a lens flare system from a JSON repressentation
       * @param parsedLensFlareSystem Define the JSON to parse
@@ -93,14 +98,10 @@ object lensFlaresIndexMod {
       * @param rootUrl Define the rootUrl of the load sequence to easily find a load relative dependencies such as textures
       * @returns the parsed system
       */
-    @JSImport("babylonjs/LensFlares/index", "LensFlareSystem.Parse")
-    @js.native
-    def Parse(parsedLensFlareSystem: js.Any, scene: Scene, rootUrl: String): typings.babylonjs.lensFlareSystemMod.LensFlareSystem = js.native
+    inline def Parse(parsedLensFlareSystem: js.Any, scene: Scene, rootUrl: String): typings.babylonjs.lensFlareSystemMod.LensFlareSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedLensFlareSystem.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.lensFlareSystemMod.LensFlareSystem]
     
     /** @hidden */
-    @JSImport("babylonjs/LensFlares/index", "LensFlareSystem._SceneComponentInitialization")
-    @js.native
-    def _SceneComponentInitialization(scene: Scene): Unit = js.native
+    inline def _SceneComponentInitialization(scene: Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("babylonjs/LensFlares/index", "LensFlareSystemSceneComponent")
@@ -117,46 +118,44 @@ object lensFlaresIndexMod {
   /* augmented module */
   object babylonjsAbstractSceneAugmentingMod {
     
-    @js.native
     trait AbstractScene extends StObject {
       
       /**
         * Adds the given lens flare system to this scene
         * @param newLensFlareSystem The lens flare system to add
         */
-      def addLensFlareSystem(newLensFlareSystem: typings.babylonjs.lensFlareSystemMod.LensFlareSystem): Unit = js.native
+      def addLensFlareSystem(newLensFlareSystem: typings.babylonjs.lensFlareSystemMod.LensFlareSystem): Unit
       
       /**
         * Gets a lens flare system using its id
         * @param id defines the id to look for
         * @returns the lens flare system or null if not found
         */
-      def getLensFlareSystemByID(id: String): Nullable[typings.babylonjs.lensFlareSystemMod.LensFlareSystem] = js.native
+      def getLensFlareSystemByID(id: String): Nullable[typings.babylonjs.lensFlareSystemMod.LensFlareSystem]
       
       /**
         * Gets a lens flare system using its name
         * @param name defines the name to look for
         * @returns the lens flare system or null if not found
         */
-      def getLensFlareSystemByName(name: String): Nullable[typings.babylonjs.lensFlareSystemMod.LensFlareSystem] = js.native
+      def getLensFlareSystemByName(name: String): Nullable[typings.babylonjs.lensFlareSystemMod.LensFlareSystem]
       
       /**
         * The list of lens flare system added to the scene
         * @see https://doc.babylonjs.com/how_to/how_to_use_lens_flares
         */
-      var lensFlareSystems: js.Array[typings.babylonjs.lensFlareSystemMod.LensFlareSystem] = js.native
+      var lensFlareSystems: js.Array[typings.babylonjs.lensFlareSystemMod.LensFlareSystem]
       
       /**
         * Removes the given lens flare system from this scene.
         * @param toRemove The lens flare system to remove
         * @returns The index of the removed lens flare system
         */
-      def removeLensFlareSystem(toRemove: typings.babylonjs.lensFlareSystemMod.LensFlareSystem): Double = js.native
+      def removeLensFlareSystem(toRemove: typings.babylonjs.lensFlareSystemMod.LensFlareSystem): Double
     }
     object AbstractScene {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         addLensFlareSystem: typings.babylonjs.lensFlareSystemMod.LensFlareSystem => Unit,
         getLensFlareSystemByID: String => Nullable[typings.babylonjs.lensFlareSystemMod.LensFlareSystem],
         getLensFlareSystemByName: String => Nullable[typings.babylonjs.lensFlareSystemMod.LensFlareSystem],
@@ -167,26 +166,19 @@ object lensFlaresIndexMod {
         __obj.asInstanceOf[AbstractScene]
       }
       
-      @scala.inline
-      implicit class AbstractSceneMutableBuilder[Self <: AbstractScene] (val x: Self) extends AnyVal {
+      extension [Self <: AbstractScene](x: Self) {
         
-        @scala.inline
-        def setAddLensFlareSystem(value: typings.babylonjs.lensFlareSystemMod.LensFlareSystem => Unit): Self = StObject.set(x, "addLensFlareSystem", js.Any.fromFunction1(value))
+        inline def setAddLensFlareSystem(value: typings.babylonjs.lensFlareSystemMod.LensFlareSystem => Unit): Self = StObject.set(x, "addLensFlareSystem", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGetLensFlareSystemByID(value: String => Nullable[typings.babylonjs.lensFlareSystemMod.LensFlareSystem]): Self = StObject.set(x, "getLensFlareSystemByID", js.Any.fromFunction1(value))
+        inline def setGetLensFlareSystemByID(value: String => Nullable[typings.babylonjs.lensFlareSystemMod.LensFlareSystem]): Self = StObject.set(x, "getLensFlareSystemByID", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGetLensFlareSystemByName(value: String => Nullable[typings.babylonjs.lensFlareSystemMod.LensFlareSystem]): Self = StObject.set(x, "getLensFlareSystemByName", js.Any.fromFunction1(value))
+        inline def setGetLensFlareSystemByName(value: String => Nullable[typings.babylonjs.lensFlareSystemMod.LensFlareSystem]): Self = StObject.set(x, "getLensFlareSystemByName", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setLensFlareSystems(value: js.Array[typings.babylonjs.lensFlareSystemMod.LensFlareSystem]): Self = StObject.set(x, "lensFlareSystems", value.asInstanceOf[js.Any])
+        inline def setLensFlareSystems(value: js.Array[typings.babylonjs.lensFlareSystemMod.LensFlareSystem]): Self = StObject.set(x, "lensFlareSystems", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLensFlareSystemsVarargs(value: typings.babylonjs.lensFlareSystemMod.LensFlareSystem*): Self = StObject.set(x, "lensFlareSystems", js.Array(value :_*))
+        inline def setLensFlareSystemsVarargs(value: typings.babylonjs.lensFlareSystemMod.LensFlareSystem*): Self = StObject.set(x, "lensFlareSystems", js.Array(value :_*))
         
-        @scala.inline
-        def setRemoveLensFlareSystem(value: typings.babylonjs.lensFlareSystemMod.LensFlareSystem => Double): Self = StObject.set(x, "removeLensFlareSystem", js.Any.fromFunction1(value))
+        inline def setRemoveLensFlareSystem(value: typings.babylonjs.lensFlareSystemMod.LensFlareSystem => Double): Self = StObject.set(x, "removeLensFlareSystem", js.Any.fromFunction1(value))
       }
     }
   }

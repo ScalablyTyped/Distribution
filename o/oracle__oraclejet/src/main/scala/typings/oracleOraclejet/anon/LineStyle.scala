@@ -8,24 +8,21 @@ import typings.oracleOraclejet.oracleOraclejetStrings.on
 import typings.oracleOraclejet.oracleOraclejetStrings.solid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineStyle extends StObject {
   
-  var lineColor: String = js.native
+  var lineColor: String
   
-  var lineStyle: dotted | dashed | solid = js.native
+  var lineStyle: dotted | dashed | solid
   
-  var lineWidth: Double = js.native
+  var lineWidth: Double
   
-  var rendered: on | off | auto = js.native
+  var rendered: on | off | auto
 }
 object LineStyle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     lineColor: String,
     lineStyle: dotted | dashed | solid,
     lineWidth: Double,
@@ -35,19 +32,14 @@ object LineStyle {
     __obj.asInstanceOf[LineStyle]
   }
   
-  @scala.inline
-  implicit class LineStyleMutableBuilder[Self <: LineStyle] (val x: Self) extends AnyVal {
+  extension [Self <: LineStyle](x: Self) {
     
-    @scala.inline
-    def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
+    inline def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineStyle(value: dotted | dashed | solid): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
+    inline def setLineStyle(value: dotted | dashed | solid): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRendered(value: on | off | auto): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
+    inline def setRendered(value: on | off | auto): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
   }
 }

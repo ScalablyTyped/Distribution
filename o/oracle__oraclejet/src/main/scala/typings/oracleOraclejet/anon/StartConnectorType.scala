@@ -9,28 +9,25 @@ import typings.oracleOraclejet.oracleOraclejetStrings.rectangle
 import typings.oracleOraclejet.oracleOraclejetStrings.rectangleRounded
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartConnectorType extends StObject {
   
-  var color: String = js.native
+  var color: String
   
-  var endConnectorType: arrowOpen | arrow | arrowConcave | circle | rectangle | rectangleRounded | none = js.native
+  var endConnectorType: arrowOpen | arrow | arrowConcave | circle | rectangle | rectangleRounded | none
   
-  var startConnectorType: arrowOpen | arrow | arrowConcave | circle | rectangle | rectangleRounded | none = js.native
+  var startConnectorType: arrowOpen | arrow | arrowConcave | circle | rectangle | rectangleRounded | none
   
-  var svgClassName: String = js.native
+  var svgClassName: String
   
-  var svgStyle: js.Object = js.native
+  var svgStyle: js.Object
   
-  var width: Double = js.native
+  var width: Double
 }
 object StartConnectorType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     color: String,
     endConnectorType: arrowOpen | arrow | arrowConcave | circle | rectangle | rectangleRounded | none,
     startConnectorType: arrowOpen | arrow | arrowConcave | circle | rectangle | rectangleRounded | none,
@@ -42,25 +39,18 @@ object StartConnectorType {
     __obj.asInstanceOf[StartConnectorType]
   }
   
-  @scala.inline
-  implicit class StartConnectorTypeMutableBuilder[Self <: StartConnectorType] (val x: Self) extends AnyVal {
+  extension [Self <: StartConnectorType](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndConnectorType(value: arrowOpen | arrow | arrowConcave | circle | rectangle | rectangleRounded | none): Self = StObject.set(x, "endConnectorType", value.asInstanceOf[js.Any])
+    inline def setEndConnectorType(value: arrowOpen | arrow | arrowConcave | circle | rectangle | rectangleRounded | none): Self = StObject.set(x, "endConnectorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartConnectorType(value: arrowOpen | arrow | arrowConcave | circle | rectangle | rectangleRounded | none): Self = StObject.set(x, "startConnectorType", value.asInstanceOf[js.Any])
+    inline def setStartConnectorType(value: arrowOpen | arrow | arrowConcave | circle | rectangle | rectangleRounded | none): Self = StObject.set(x, "startConnectorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgClassName(value: String): Self = StObject.set(x, "svgClassName", value.asInstanceOf[js.Any])
+    inline def setSvgClassName(value: String): Self = StObject.set(x, "svgClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgStyle(value: js.Object): Self = StObject.set(x, "svgStyle", value.asInstanceOf[js.Any])
+    inline def setSvgStyle(value: js.Object): Self = StObject.set(x, "svgStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.anon.AdjustRoll
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.BoneLookController")
 @js.native
 class BoneLookController protected ()
-  extends typings.babylonjs.BABYLON.BoneLookController {
+  extends StObject
+     with typings.babylonjs.BABYLON.BoneLookController {
   /**
     * Create a BoneLookController
     * @param mesh the mesh that the bone belongs to
@@ -51,18 +51,15 @@ object BoneLookController {
   @JSGlobal("BABYLON.BoneLookController._tmpMats")
   @js.native
   def _tmpMats: js.Any = js.native
-  @scala.inline
-  def _tmpMats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpMats")(x.asInstanceOf[js.Any])
+  inline def _tmpMats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpMats")(x.asInstanceOf[js.Any])
   
   @JSGlobal("BABYLON.BoneLookController._tmpQuat")
   @js.native
   def _tmpQuat: js.Any = js.native
-  @scala.inline
-  def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
+  inline def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
   
   @JSGlobal("BABYLON.BoneLookController._tmpVecs")
   @js.native
   def _tmpVecs: js.Any = js.native
-  @scala.inline
-  def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
+  inline def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
 }

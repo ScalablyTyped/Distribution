@@ -5,11 +5,11 @@ import typings.jupyterlabInspector.inspectorMod.InspectorPanel.IOptions
 import typings.jupyterlabInspector.tokensMod.IInspector
 import typings.jupyterlabInspector.tokensMod.IInspector.IInspectable
 import typings.jupyterlabInspector.tokensMod.IInspector.IInspectorUpdate
+import typings.luminoMessaging.mod.Message
 import typings.luminoWidgets.mod.Panel
 import typings.luminoWidgets.mod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inspectorMod {
@@ -25,9 +25,23 @@ object inspectorMod {
        with IPrintable {
     def this(options: IOptions) = this()
     
-    var _content: js.Any = js.native
+    /* private */ var _content: js.Any = js.native
     
-    var _source: js.Any = js.native
+    /* private */ var _source: js.Any = js.native
+    
+    /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* InferMemberOverrides */
+    override def dispose(): Unit = js.native
     
     /**
       * Handle inspector update signals.
@@ -39,6 +53,19 @@ object inspectorMod {
       */
     /* protected */ def onSourceDisposed(sender: js.Any, args: Unit): Unit = js.native
     
+    /**
+      * Process a message sent to the handler.
+      *
+      * @param msg - The message to be processed.
+      */
+    /* InferMemberOverrides */
+    override def processMessage(msg: Message): Unit = js.native
+    
+    /**
+      * The source of events the inspector listens for.
+      */
+    /* CompleteClass */
+    var source: IInspectable | Null = js.native
     /**
       * The source of events the inspector panel listens for.
       */
@@ -58,30 +85,24 @@ object inspectorMod {
     @JSImport("@jupyterlab/inspector/lib/inspector", "InspectorPanel._generateContentWidget")
     @js.native
     def _generateContentWidget: js.Any = js.native
-    @scala.inline
-    def _generateContentWidget_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_generateContentWidget")(x.asInstanceOf[js.Any])
+    inline def _generateContentWidget_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_generateContentWidget")(x.asInstanceOf[js.Any])
     
-    @js.native
     trait IOptions extends StObject {
       
-      var initialContent: js.UndefOr[Widget | String] = js.native
+      var initialContent: js.UndefOr[Widget | String] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): IOptions = {
+      inline def apply(): IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setInitialContent(value: Widget | String): Self = StObject.set(x, "initialContent", value.asInstanceOf[js.Any])
+        inline def setInitialContent(value: Widget | String): Self = StObject.set(x, "initialContent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInitialContentUndefined: Self = StObject.set(x, "initialContent", js.undefined)
+        inline def setInitialContentUndefined: Self = StObject.set(x, "initialContent", js.undefined)
       }
     }
   }

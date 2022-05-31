@@ -7,7 +7,6 @@ import typings.babylonjs.mathAxisMod.Space
 import typings.babylonjs.mathVectorMod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object boneLookControllerMod {
@@ -37,47 +36,47 @@ object boneLookControllerMod {
     def this(mesh: AbstractMesh, bone: Bone, target: Vector3) = this()
     def this(mesh: AbstractMesh, bone: Bone, target: Vector3, options: AdjustPitch) = this()
     
-    var _boneQuat: js.Any = js.native
+    /* private */ var _boneQuat: js.Any = js.native
     
-    var _firstFrameSkipped: js.Any = js.native
+    /* private */ var _firstFrameSkipped: js.Any = js.native
     
-    var _fowardAxis: js.Any = js.native
+    /* private */ var _fowardAxis: js.Any = js.native
     
-    var _getAngleBetween: js.Any = js.native
+    /* private */ var _getAngleBetween: js.Any = js.native
     
-    var _getAngleDiff: js.Any = js.native
+    /* private */ var _getAngleDiff: js.Any = js.native
     
-    var _isAngleBetween: js.Any = js.native
+    /* private */ var _isAngleBetween: js.Any = js.native
     
-    var _maxPitch: js.Any = js.native
+    /* private */ var _maxPitch: js.Any = js.native
     
-    var _maxPitchTan: js.Any = js.native
+    /* private */ var _maxPitchTan: js.Any = js.native
     
-    var _maxYaw: js.Any = js.native
+    /* private */ var _maxYaw: js.Any = js.native
     
-    var _maxYawCos: js.Any = js.native
+    /* private */ var _maxYawCos: js.Any = js.native
     
-    var _maxYawSin: js.Any = js.native
+    /* private */ var _maxYawSin: js.Any = js.native
     
-    var _midYawConstraint: js.Any = js.native
+    /* private */ var _midYawConstraint: js.Any = js.native
     
-    var _minPitch: js.Any = js.native
+    /* private */ var _minPitch: js.Any = js.native
     
-    var _minPitchTan: js.Any = js.native
+    /* private */ var _minPitchTan: js.Any = js.native
     
-    var _minYaw: js.Any = js.native
+    /* private */ var _minYaw: js.Any = js.native
     
-    var _minYawCos: js.Any = js.native
+    /* private */ var _minYawCos: js.Any = js.native
     
-    var _minYawSin: js.Any = js.native
+    /* private */ var _minYawSin: js.Any = js.native
     
-    var _slerping: js.Any = js.native
+    /* private */ var _slerping: js.Any = js.native
     
-    var _transformYawPitch: js.Any = js.native
+    /* private */ var _transformYawPitch: js.Any = js.native
     
-    var _transformYawPitchInv: js.Any = js.native
+    /* private */ var _transformYawPitchInv: js.Any = js.native
     
-    var _yawRange: js.Any = js.native
+    /* private */ var _yawRange: js.Any = js.native
     
     /**
       * Used to make an adjustment to the pitch of the bone
@@ -163,19 +162,16 @@ object boneLookControllerMod {
     @JSImport("babylonjs/Bones/boneLookController", "BoneLookController._tmpMats")
     @js.native
     def _tmpMats: js.Any = js.native
-    @scala.inline
-    def _tmpMats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpMats")(x.asInstanceOf[js.Any])
+    inline def _tmpMats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpMats")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Bones/boneLookController", "BoneLookController._tmpQuat")
     @js.native
     def _tmpQuat: js.Any = js.native
-    @scala.inline
-    def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
+    inline def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Bones/boneLookController", "BoneLookController._tmpVecs")
     @js.native
     def _tmpVecs: js.Any = js.native
-    @scala.inline
-    def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
+    inline def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
   }
 }

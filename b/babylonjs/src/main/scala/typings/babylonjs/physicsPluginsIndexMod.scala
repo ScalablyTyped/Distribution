@@ -2,7 +2,6 @@ package typings.babylonjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object physicsPluginsIndexMod {
@@ -18,24 +17,12 @@ object physicsPluginsIndexMod {
   class AmmoJSPlugin ()
     extends typings.babylonjs.ammoJSPluginMod.AmmoJSPlugin {
     def this(_useDeltaForWorldStep: Boolean) = this()
-    def this(_useDeltaForWorldStep: js.UndefOr[scala.Nothing], ammoInjection: js.Any) = this()
     def this(_useDeltaForWorldStep: Boolean, ammoInjection: js.Any) = this()
-    def this(
-      _useDeltaForWorldStep: js.UndefOr[scala.Nothing],
-      ammoInjection: js.UndefOr[scala.Nothing],
-      overlappingPairCache: js.Any
-    ) = this()
-    def this(
-      _useDeltaForWorldStep: js.UndefOr[scala.Nothing],
-      ammoInjection: js.Any,
-      overlappingPairCache: js.Any
-    ) = this()
-    def this(
-      _useDeltaForWorldStep: Boolean,
-      ammoInjection: js.UndefOr[scala.Nothing],
-      overlappingPairCache: js.Any
-    ) = this()
+    def this(_useDeltaForWorldStep: Unit, ammoInjection: js.Any) = this()
     def this(_useDeltaForWorldStep: Boolean, ammoInjection: js.Any, overlappingPairCache: js.Any) = this()
+    def this(_useDeltaForWorldStep: Boolean, ammoInjection: Unit, overlappingPairCache: js.Any) = this()
+    def this(_useDeltaForWorldStep: Unit, ammoInjection: js.Any, overlappingPairCache: js.Any) = this()
+    def this(_useDeltaForWorldStep: Unit, ammoInjection: Unit, overlappingPairCache: js.Any) = this()
   }
   /* static members */
   object AmmoJSPlugin {
@@ -58,16 +45,12 @@ object physicsPluginsIndexMod {
   class CannonJSPlugin ()
     extends typings.babylonjs.cannonJSPluginMod.CannonJSPlugin {
     def this(_useDeltaForWorldStep: Boolean) = this()
-    def this(_useDeltaForWorldStep: js.UndefOr[scala.Nothing], iterations: Double) = this()
     def this(_useDeltaForWorldStep: Boolean, iterations: Double) = this()
-    def this(
-      _useDeltaForWorldStep: js.UndefOr[scala.Nothing],
-      iterations: js.UndefOr[scala.Nothing],
-      cannonInjection: js.Any
-    ) = this()
-    def this(_useDeltaForWorldStep: js.UndefOr[scala.Nothing], iterations: Double, cannonInjection: js.Any) = this()
-    def this(_useDeltaForWorldStep: Boolean, iterations: js.UndefOr[scala.Nothing], cannonInjection: js.Any) = this()
+    def this(_useDeltaForWorldStep: Unit, iterations: Double) = this()
     def this(_useDeltaForWorldStep: Boolean, iterations: Double, cannonInjection: js.Any) = this()
+    def this(_useDeltaForWorldStep: Boolean, iterations: Unit, cannonInjection: js.Any) = this()
+    def this(_useDeltaForWorldStep: Unit, iterations: Double, cannonInjection: js.Any) = this()
+    def this(_useDeltaForWorldStep: Unit, iterations: Unit, cannonInjection: js.Any) = this()
   }
   
   @JSImport("babylonjs/Physics/Plugins/index", "OimoJSPlugin")
@@ -75,15 +58,11 @@ object physicsPluginsIndexMod {
   class OimoJSPlugin ()
     extends typings.babylonjs.oimoJSPluginMod.OimoJSPlugin {
     def this(_useDeltaForWorldStep: Boolean) = this()
-    def this(_useDeltaForWorldStep: js.UndefOr[scala.Nothing], iterations: Double) = this()
     def this(_useDeltaForWorldStep: Boolean, iterations: Double) = this()
-    def this(
-      _useDeltaForWorldStep: js.UndefOr[scala.Nothing],
-      iterations: js.UndefOr[scala.Nothing],
-      oimoInjection: js.Any
-    ) = this()
-    def this(_useDeltaForWorldStep: js.UndefOr[scala.Nothing], iterations: Double, oimoInjection: js.Any) = this()
-    def this(_useDeltaForWorldStep: Boolean, iterations: js.UndefOr[scala.Nothing], oimoInjection: js.Any) = this()
+    def this(_useDeltaForWorldStep: Unit, iterations: Double) = this()
     def this(_useDeltaForWorldStep: Boolean, iterations: Double, oimoInjection: js.Any) = this()
+    def this(_useDeltaForWorldStep: Boolean, iterations: Unit, oimoInjection: js.Any) = this()
+    def this(_useDeltaForWorldStep: Unit, iterations: Double, oimoInjection: js.Any) = this()
+    def this(_useDeltaForWorldStep: Unit, iterations: Unit, oimoInjection: js.Any) = this()
   }
 }

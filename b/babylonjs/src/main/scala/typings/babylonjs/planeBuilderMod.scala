@@ -6,7 +6,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object planeBuilderMod {
@@ -16,6 +15,10 @@ object planeBuilderMod {
   class PlaneBuilder () extends StObject
   /* static members */
   object PlaneBuilder {
+    
+    @JSImport("babylonjs/Meshes/Builders/planeBuilder", "PlaneBuilder")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Creates a plane mesh
@@ -31,11 +34,7 @@ object planeBuilderMod {
       * @returns the plane mesh
       * @see https://doc.babylonjs.com/how_to/set_shapes#plane
       */
-    @JSImport("babylonjs/Meshes/Builders/planeBuilder", "PlaneBuilder.CreatePlane")
-    @js.native
-    def CreatePlane(name: String, options: Size): Mesh = js.native
-    @JSImport("babylonjs/Meshes/Builders/planeBuilder", "PlaneBuilder.CreatePlane")
-    @js.native
-    def CreatePlane(name: String, options: Size, scene: Nullable[Scene]): Mesh = js.native
+    inline def CreatePlane(name: String, options: Size): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePlane")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreatePlane(name: String, options: Size, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePlane")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
   }
 }

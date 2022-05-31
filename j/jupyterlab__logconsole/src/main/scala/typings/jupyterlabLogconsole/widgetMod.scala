@@ -10,7 +10,6 @@ import typings.luminoWidgets.mod.StackedPanel
 import typings.luminoWidgets.mod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object widgetMod {
@@ -26,27 +25,27 @@ object widgetMod {
       */
     def this(loggerRegistry: ILoggerRegistry) = this()
     
-    var _bindLoggerSignals: js.Any = js.native
+    /* private */ var _bindLoggerSignals: js.Any = js.native
     
-    var _handlePlaceholder: js.Any = js.native
+    /* private */ var _handlePlaceholder: js.Any = js.native
     
-    var _loggerRegistry: js.Any = js.native
+    /* private */ var _loggerRegistry: js.Any = js.native
     
-    var _loggersWatched: js.Any = js.native
+    /* private */ var _loggersWatched: js.Any = js.native
     
-    var _outputAreas: js.Any = js.native
+    /* private */ var _outputAreas: js.Any = js.native
     
-    var _placeholder: js.Any = js.native
+    /* private */ var _placeholder: js.Any = js.native
     
-    var _showOutputFromSource: js.Any = js.native
+    /* private */ var _showOutputFromSource: js.Any = js.native
     
-    var _source: js.Any = js.native
+    /* private */ var _source: js.Any = js.native
     
-    var _sourceChanged: js.Any = js.native
+    /* private */ var _sourceChanged: js.Any = js.native
     
-    var _sourceDisplayed: js.Any = js.native
+    /* private */ var _sourceDisplayed: js.Any = js.native
     
-    var _updateOutputAreas: js.Any = js.native
+    /* private */ var _updateOutputAreas: js.Any = js.native
     
     /**
       * The current logger.
@@ -86,17 +85,17 @@ object widgetMod {
   class ScrollingWidget[T /* <: Widget */] protected () extends Widget {
     def this(hasContentOptions: IOptions[T]) = this()
     
-    var _content: js.Any = js.native
+    /* private */ var _content: js.Any = js.native
     
-    var _handleScroll: js.Any = js.native
+    /* private */ var _handleScroll: js.Any = js.native
     
-    var _observer: js.Any = js.native
+    /* private */ var _observer: js.Any = js.native
     
-    var _scrollHeight: js.Any = js.native
+    /* private */ var _scrollHeight: js.Any = js.native
     
-    var _sentinel: js.Any = js.native
+    /* private */ var _sentinel: js.Any = js.native
     
-    var _tracking: js.Any = js.native
+    /* private */ var _tracking: js.Any = js.native
     
     /**
       * The content widget.
@@ -105,58 +104,48 @@ object widgetMod {
   }
   object ScrollingWidget {
     
-    @js.native
     trait IOptions[T /* <: Widget */]
-      extends typings.luminoWidgets.widgetMod.Widget.IOptions {
+      extends StObject
+         with typings.luminoWidgets.widgetMod.Widget.IOptions {
       
-      var content: T = js.native
+      var content: T
     }
     object IOptions {
       
-      @scala.inline
-      def apply[T /* <: Widget */](content: T): IOptions[T] = {
+      inline def apply[T /* <: Widget */](content: T): IOptions[T] = {
         val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions[T]]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions[_], T /* <: Widget */] (val x: Self with IOptions[T]) extends AnyVal {
+      extension [Self <: IOptions[?], T /* <: Widget */](x: Self & IOptions[T]) {
         
-        @scala.inline
-        def setContent(value: T): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+        inline def setContent(value: T): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       }
     }
   }
   
-  @js.native
   trait ISourceDisplayed extends StObject {
     
-    var source: String | Null = js.native
+    var source: String | Null
     
-    var version: Double | Null = js.native
+    var version: Double | Null
   }
   object ISourceDisplayed {
     
-    @scala.inline
-    def apply(): ISourceDisplayed = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(): ISourceDisplayed = {
+      val __obj = js.Dynamic.literal(source = null, version = null)
       __obj.asInstanceOf[ISourceDisplayed]
     }
     
-    @scala.inline
-    implicit class ISourceDisplayedMutableBuilder[Self <: ISourceDisplayed] (val x: Self) extends AnyVal {
+    extension [Self <: ISourceDisplayed](x: Self) {
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceNull: Self = StObject.set(x, "source", null)
+      inline def setSourceNull: Self = StObject.set(x, "source", null)
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionNull: Self = StObject.set(x, "version", null)
+      inline def setVersionNull: Self = StObject.set(x, "version", null)
     }
   }
 }

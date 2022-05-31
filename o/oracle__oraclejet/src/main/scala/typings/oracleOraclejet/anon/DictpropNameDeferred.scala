@@ -3,30 +3,25 @@ package typings.oracleOraclejet.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DictpropNameDeferred
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var deferred: js.UndefOr[Boolean] = js.native
+  var deferred: js.UndefOr[Boolean] = js.undefined
 }
 object DictpropNameDeferred {
   
-  @scala.inline
-  def apply(): DictpropNameDeferred = {
+  inline def apply(): DictpropNameDeferred = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DictpropNameDeferred]
   }
   
-  @scala.inline
-  implicit class DictpropNameDeferredMutableBuilder[Self <: DictpropNameDeferred] (val x: Self) extends AnyVal {
+  extension [Self <: DictpropNameDeferred](x: Self) {
     
-    @scala.inline
-    def setDeferred(value: Boolean): Self = StObject.set(x, "deferred", value.asInstanceOf[js.Any])
+    inline def setDeferred(value: Boolean): Self = StObject.set(x, "deferred", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferredUndefined: Self = StObject.set(x, "deferred", js.undefined)
+    inline def setDeferredUndefined: Self = StObject.set(x, "deferred", js.undefined)
   }
 }

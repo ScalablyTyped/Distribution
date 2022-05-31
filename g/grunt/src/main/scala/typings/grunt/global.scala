@@ -35,9 +35,4 @@ object global {
       }
     }
   }
-  
-  /**
-    * {@link https://github.com/isaacs/minimatch}
-    */
-  object minimatch
 }

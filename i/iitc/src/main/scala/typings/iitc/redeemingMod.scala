@@ -17,9 +17,6 @@ object redeemingMod {
     
     inline def setupRedeem(): Unit = js.Dynamic.global.applyDynamic("setupRedeem")().asInstanceOf[Unit]
     
-    /** These are HTTP status codes returned by the redemption API. */
-    object REDEEM_STATUSES
-    
     trait ResultData extends StObject {
       
       var ap: String

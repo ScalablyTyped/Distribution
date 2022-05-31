@@ -3,13 +3,16 @@ package typings.flux
 import typings.flux.fluxContainerMod.Component
 import typings.flux.fluxContainerMod.RealOptions
 import typings.flux.fluxMixinLegacyMod.Options
-import typings.flux.fluxReduceStoreMod.^
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
+  
+  @JSImport("flux/utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object Container {
     
@@ -59,30 +62,23 @@ object utilsMod {
     inline def create_TPropsTStateTContext[TProps, TState, TContext](base: Component[TProps, TState, TContext], options: RealOptions): Component[TProps, TState, TContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(base.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Component[TProps, TState, TContext]]
   }
   
-  object Mixin {
-    
-    /**
-      * `FluxContainer` should be preferred over this mixin, but it requires using
-      * react with classes. So this mixin is provided where it is not yet possible
-      * to convert a container to be a class.
-      *
-      * This mixin should be used for React components that have state based purely
-      * on stores. `this.props` will not be available inside of `calculateState()`.
-      *
-      * This mixin will only `setState` not replace it, so you should always return
-      * every key in your state unless you know what you are doing.
-      *
-      * On the second calculateState when prevState is not null, the state will be
-      * updated to contain the previous foo AND the bar that was just returned. Only
-      * returning bar will not delete foo.
-      */
-    inline def apply(stores: js.Array[typings.flux.fluxStoreMod.^[js.Any]]): js.Any = ^.asInstanceOf[js.Dynamic].apply(stores.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def apply(stores: js.Array[typings.flux.fluxStoreMod.^[js.Any]], options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(stores.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    
-    @JSImport("flux/utils", "Mixin")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  /**
+    * `FluxContainer` should be preferred over this mixin, but it requires using
+    * react with classes. So this mixin is provided where it is not yet possible
+    * to convert a container to be a class.
+    *
+    * This mixin should be used for React components that have state based purely
+    * on stores. `this.props` will not be available inside of `calculateState()`.
+    *
+    * This mixin will only `setState` not replace it, so you should always return
+    * every key in your state unless you know what you are doing.
+    *
+    * On the second calculateState when prevState is not null, the state will be
+    * updated to contain the previous foo AND the bar that was just returned. Only
+    * returning bar will not delete foo.
+    */
+  inline def Mixin(stores: js.Array[typings.flux.fluxStoreMod.^[js.Any]]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Mixin")(stores.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def Mixin(stores: js.Array[typings.flux.fluxStoreMod.^[js.Any]], options: Options): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("Mixin")(stores.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * This is the basic building block of a Flux application. All of your stores
@@ -90,7 +86,8 @@ object utilsMod {
     */
   @JSImport("flux/utils", "ReduceStore")
   @js.native
-  abstract class ReduceStore[TState, TPayload] () extends ^[TState, TPayload]
+  abstract class ReduceStore[TState, TPayload] ()
+    extends typings.flux.fluxReduceStoreMod.^[TState, TPayload]
   
   /**
     * This class represents the most basic functionality for a FluxStore. Do not

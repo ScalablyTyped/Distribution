@@ -13,26 +13,27 @@ import typings.luminoSignaling.mod.ISignal
 import typings.luminoWidgets.mod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object managerMod {
   
   @JSImport("@jupyterlab/docmanager/lib/manager", "DocumentManager")
   @js.native
-  class DocumentManager protected () extends IDocumentManager {
+  class DocumentManager protected ()
+    extends StObject
+       with IDocumentManager {
     /**
       * Construct a new document manager.
       */
     def this(options: IOptions) = this()
     
-    var _activateRequested: js.Any = js.native
+    /* private */ var _activateRequested: js.Any = js.native
     
-    var _autosave: js.Any = js.native
+    /* private */ var _autosave: js.Any = js.native
     
-    var _autosaveInterval: js.Any = js.native
+    /* private */ var _autosaveInterval: js.Any = js.native
     
-    var _contexts: js.Any = js.native
+    /* private */ var _contexts: js.Any = js.native
     
     /**
       * Get the contexts for a given path.
@@ -42,12 +43,12 @@ object managerMod {
       * with multiple model factories (for example, a notebook can be open with a
       * notebook model factory and a text model factory).
       */
-    var _contextsForPath: js.Any = js.native
+    /* private */ var _contextsForPath: js.Any = js.native
     
     /**
       * Create a context from a path and a model factory.
       */
-    var _createContext: js.Any = js.native
+    /* private */ var _createContext: js.Any = js.native
     
     /**
       * Creates a new document, or loads one from disk, depending on the `which` argument.
@@ -57,39 +58,39 @@ object managerMod {
       * The two cases differ in how the document context is handled, but the creation
       * of the widget and launching of the kernel are identical.
       */
-    var _createOrOpenDocument: js.Any = js.native
+    /* private */ var _createOrOpenDocument: js.Any = js.native
     
-    var _dialogs: js.Any = js.native
+    /* private */ var _dialogs: js.Any = js.native
     
     /**
       * Find a context for a given path and factory name.
       */
-    var _findContext: js.Any = js.native
+    /* private */ var _findContext: js.Any = js.native
     
-    var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: js.Any = js.native
     
     /**
       * Handle an activateRequested signal from the widget manager.
       */
-    var _onActivateRequested: js.Any = js.native
+    /* private */ var _onActivateRequested: js.Any = js.native
     
     /**
       * Handle a context disposal.
       */
-    var _onContextDisposed: js.Any = js.native
+    /* private */ var _onContextDisposed: js.Any = js.native
     
-    var _opener: js.Any = js.native
+    /* private */ var _opener: js.Any = js.native
     
-    var _setBusy: js.Any = js.native
+    /* private */ var _setBusy: js.Any = js.native
     
-    var _when: js.Any = js.native
+    /* private */ var _when: js.Any = js.native
     
     /**
       * Get the widget factory for a given widget name.
       */
-    var _widgetFactoryFor: js.Any = js.native
+    /* private */ var _widgetFactoryFor: js.Any = js.native
     
-    var _widgetManager: js.Any = js.native
+    /* private */ var _widgetManager: js.Any = js.native
     
     /**
       * A signal emitted when one of the documents is activated.
@@ -110,6 +111,28 @@ object managerMod {
     def autosave_MDocumentManager: Boolean = js.native
     
     /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
+    /**
       * Get whether the document manager has been disposed.
       */
     @JSName("isDisposed")
@@ -120,76 +143,64 @@ object managerMod {
     /**
       * The options used to initialize a document manager.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * A service manager instance.
         */
-      var manager: IManager = js.native
+      var manager: IManager
       
       /**
         * A widget opener for sibling widgets.
         */
-      var opener: IWidgetOpener = js.native
+      var opener: IWidgetOpener
       
       /**
         * A document registry instance.
         */
-      var registry: DocumentRegistry = js.native
+      var registry: DocumentRegistry
       
       /**
         * The provider for session dialogs.
         */
-      var sessionDialogs: js.UndefOr[IDialogs] = js.native
+      var sessionDialogs: js.UndefOr[IDialogs] = js.undefined
       
       /**
         * A function called when a kernel is busy.
         */
-      var setBusy: js.UndefOr[js.Function0[IDisposable]] = js.native
+      var setBusy: js.UndefOr[js.Function0[IDisposable]] = js.undefined
       
       /**
         * A promise for when to start using the manager.
         */
-      var when: js.UndefOr[js.Promise[Unit]] = js.native
+      var when: js.UndefOr[js.Promise[Unit]] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(manager: IManager, opener: IWidgetOpener, registry: DocumentRegistry): IOptions = {
+      inline def apply(manager: IManager, opener: IWidgetOpener, registry: DocumentRegistry): IOptions = {
         val __obj = js.Dynamic.literal(manager = manager.asInstanceOf[js.Any], opener = opener.asInstanceOf[js.Any], registry = registry.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setManager(value: IManager): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
+        inline def setManager(value: IManager): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOpener(value: IWidgetOpener): Self = StObject.set(x, "opener", value.asInstanceOf[js.Any])
+        inline def setOpener(value: IWidgetOpener): Self = StObject.set(x, "opener", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRegistry(value: DocumentRegistry): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
+        inline def setRegistry(value: DocumentRegistry): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSessionDialogs(value: IDialogs): Self = StObject.set(x, "sessionDialogs", value.asInstanceOf[js.Any])
+        inline def setSessionDialogs(value: IDialogs): Self = StObject.set(x, "sessionDialogs", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSessionDialogsUndefined: Self = StObject.set(x, "sessionDialogs", js.undefined)
+        inline def setSessionDialogsUndefined: Self = StObject.set(x, "sessionDialogs", js.undefined)
         
-        @scala.inline
-        def setSetBusy(value: () => IDisposable): Self = StObject.set(x, "setBusy", js.Any.fromFunction0(value))
+        inline def setSetBusy(value: () => IDisposable): Self = StObject.set(x, "setBusy", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSetBusyUndefined: Self = StObject.set(x, "setBusy", js.undefined)
+        inline def setSetBusyUndefined: Self = StObject.set(x, "setBusy", js.undefined)
         
-        @scala.inline
-        def setWhen(value: js.Promise[Unit]): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
+        inline def setWhen(value: js.Promise[Unit]): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
+        inline def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
       }
     }
     

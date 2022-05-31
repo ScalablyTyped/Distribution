@@ -4,7 +4,6 @@ import typings.materialRadio.anon.PartialMDCRadioAdapter
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object radio {
@@ -13,15 +12,17 @@ object radio {
   @js.native
   class MDCRadio protected ()
     extends typings.materialRadio.mod.MDCRadio {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(root: Element, foundation: typings.materialRadio.foundationMod.MDCRadioFoundation, args: js.Any*) = this()
   }
   /* static members */
   object MDCRadio {
     
-    @JSImport("material-components-web", "radio.MDCRadio.attachTo")
+    @JSImport("material-components-web", "radio.MDCRadio")
     @js.native
-    def attachTo(root: Element): typings.materialRadio.componentMod.MDCRadio = js.native
+    val ^ : js.Any = js.native
+    
+    inline def attachTo(root: Element): typings.materialRadio.componentMod.MDCRadio = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialRadio.componentMod.MDCRadio]
   }
   
   @JSImport("material-components-web", "radio.MDCRadioFoundation")
@@ -40,14 +41,12 @@ object radio {
     @JSImport("material-components-web", "radio.cssClasses.DISABLED")
     @js.native
     def DISABLED: String = js.native
-    @scala.inline
-    def DISABLED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISABLED")(x.asInstanceOf[js.Any])
+    inline def DISABLED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISABLED")(x.asInstanceOf[js.Any])
     
     @JSImport("material-components-web", "radio.cssClasses.ROOT")
     @js.native
     def ROOT: String = js.native
-    @scala.inline
-    def ROOT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT")(x.asInstanceOf[js.Any])
+    inline def ROOT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -81,7 +80,6 @@ object radio {
     @JSImport("material-components-web", "radio.strings.NATIVE_CONTROL_SELECTOR")
     @js.native
     def NATIVE_CONTROL_SELECTOR: String = js.native
-    @scala.inline
-    def NATIVE_CONTROL_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NATIVE_CONTROL_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def NATIVE_CONTROL_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NATIVE_CONTROL_SELECTOR")(x.asInstanceOf[js.Any])
   }
 }

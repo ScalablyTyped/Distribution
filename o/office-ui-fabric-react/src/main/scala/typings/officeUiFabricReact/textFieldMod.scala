@@ -54,22 +54,4 @@ object textFieldMod {
     def defaultProps: ITextFieldProps = js.native
     inline def defaultProps_=(x: ITextFieldProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
-  
-  trait ITextField
-    extends StObject
-       with typings.officeUiFabricReact.textFieldTypesMod.ITextField
-  object ITextField {
-    
-    inline def apply(
-      blur: () => Unit,
-      focus: () => Unit,
-      select: () => Unit,
-      setSelectionEnd: Double => Unit,
-      setSelectionRange: (Double, Double) => Unit,
-      setSelectionStart: Double => Unit
-    ): ITextField = {
-      val __obj = js.Dynamic.literal(blur = js.Any.fromFunction0(blur), focus = js.Any.fromFunction0(focus), select = js.Any.fromFunction0(select), setSelectionEnd = js.Any.fromFunction1(setSelectionEnd), setSelectionRange = js.Any.fromFunction2(setSelectionRange), setSelectionStart = js.Any.fromFunction1(setSelectionStart), selectionEnd = null, selectionStart = null)
-      __obj.asInstanceOf[ITextField]
-    }
-  }
 }

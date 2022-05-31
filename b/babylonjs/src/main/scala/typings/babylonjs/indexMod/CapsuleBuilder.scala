@@ -3,7 +3,6 @@ package typings.babylonjs.indexMod
 import typings.babylonjs.capsuleBuilderMod.ICreateCapsuleOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "CapsuleBuilder")
@@ -13,9 +12,11 @@ class CapsuleBuilder ()
 /* static members */
 object CapsuleBuilder {
   
-  @JSImport("babylonjs/index", "CapsuleBuilder.CreateCapsule")
+  @JSImport("babylonjs/index", "CapsuleBuilder")
   @js.native
-  def CreateCapsule(name: String, options: js.UndefOr[scala.Nothing], scene: js.Any): typings.babylonjs.meshMod.Mesh = js.native
+  val ^ : js.Any = js.native
+  
+  inline def CreateCapsule(name: String, options: Unit, scene: js.Any): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCapsule")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
   /**
     * Creates a capsule or a pill mesh
     * @param name defines the name of the mesh
@@ -23,7 +24,5 @@ object CapsuleBuilder {
     * @param scene The scene the mesh is scoped to.
     * @returns Capsule Mesh
     */
-  @JSImport("babylonjs/index", "CapsuleBuilder.CreateCapsule")
-  @js.native
-  def CreateCapsule(name: String, options: ICreateCapsuleOptions, scene: js.Any): typings.babylonjs.meshMod.Mesh = js.native
+  inline def CreateCapsule(name: String, options: ICreateCapsuleOptions, scene: js.Any): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCapsule")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
 }

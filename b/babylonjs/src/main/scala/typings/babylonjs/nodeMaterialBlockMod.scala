@@ -16,7 +16,6 @@ import typings.babylonjs.subMeshMod.SubMesh
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeMaterialBlockMod {
@@ -33,28 +32,18 @@ object nodeMaterialBlockMod {
       */
     def this(name: String) = this()
     def this(name: String, target: NodeMaterialBlockTargets) = this()
-    def this(name: String, target: js.UndefOr[scala.Nothing], isFinalMerger: Boolean) = this()
+    def this(name: String, target: Unit, isFinalMerger: Boolean) = this()
     def this(name: String, target: NodeMaterialBlockTargets, isFinalMerger: Boolean) = this()
-    def this(
-      name: String,
-      target: js.UndefOr[scala.Nothing],
-      isFinalMerger: js.UndefOr[scala.Nothing],
-      isInput: Boolean
-    ) = this()
-    def this(name: String, target: js.UndefOr[scala.Nothing], isFinalMerger: Boolean, isInput: Boolean) = this()
-    def this(
-      name: String,
-      target: NodeMaterialBlockTargets,
-      isFinalMerger: js.UndefOr[scala.Nothing],
-      isInput: Boolean
-    ) = this()
+    def this(name: String, target: Unit, isFinalMerger: Boolean, isInput: Boolean) = this()
+    def this(name: String, target: Unit, isFinalMerger: Unit, isInput: Boolean) = this()
     def this(name: String, target: NodeMaterialBlockTargets, isFinalMerger: Boolean, isInput: Boolean) = this()
+    def this(name: String, target: NodeMaterialBlockTargets, isFinalMerger: Unit, isInput: Boolean) = this()
     
     /* protected */ def _buildBlock(state: NodeMaterialBuildState): Unit = js.native
     
-    var _buildId: js.Any = js.native
+    /* private */ var _buildId: js.Any = js.native
     
-    var _buildTarget: js.Any = js.native
+    /* private */ var _buildTarget: js.Any = js.native
     
     /** @hidden */
     var _codeVariableName: String = js.native
@@ -64,7 +53,7 @@ object nodeMaterialBlockMod {
     /** @hidden */
     def _deserialize(serializationObject: js.Any, scene: Scene, rootUrl: String): Unit = js.native
     
-    var _deserializePortDisplayNamesAndExposedOnFrame: js.Any = js.native
+    /* private */ var _deserializePortDisplayNamesAndExposedOnFrame: js.Any = js.native
     
     /** @hidden */
     def _dumpCode(uniqueNames: js.Array[String], alreadyDumped: js.Array[NodeMaterialBlock]): String = js.native
@@ -79,16 +68,16 @@ object nodeMaterialBlockMod {
     /** @hidden */
     var _inputs: js.Array[NodeMaterialConnectionPoint] = js.native
     
-    var _isFinalMerger: js.Any = js.native
+    /* private */ var _isFinalMerger: js.Any = js.native
     
-    var _isInput: js.Any = js.native
+    /* private */ var _isInput: js.Any = js.native
     
-    var _isUnique: Boolean = js.native
+    /* protected */ var _isUnique: Boolean = js.native
     
     /* protected */ def _linkConnectionTypes(inputIndex0: Double, inputIndex1: Double): Unit = js.native
     /* protected */ def _linkConnectionTypes(inputIndex0: Double, inputIndex1: Double, looseCoupling: Boolean): Unit = js.native
     
-    var _name: js.Any = js.native
+    /* private */ var _name: js.Any = js.native
     
     /* protected */ def _outputRename(name: String): String = js.native
     
@@ -98,9 +87,9 @@ object nodeMaterialBlockMod {
     /** @hidden */
     var _preparationId: Double = js.native
     
-    var _processBuild: js.Any = js.native
+    /* private */ var _processBuild: js.Any = js.native
     
-    var _target: js.Any = js.native
+    /* private */ var _target: js.Any = js.native
     
     /* protected */ def _writeFloat(value: Double): String = js.native
     
@@ -120,7 +109,7 @@ object nodeMaterialBlockMod {
       * @param subMesh defines the submesh that will be rendered
       */
     def bind(effect: Effect, nodeMaterial: NodeMaterial): Unit = js.native
-    def bind(effect: Effect, nodeMaterial: NodeMaterial, mesh: js.UndefOr[scala.Nothing], subMesh: SubMesh): Unit = js.native
+    def bind(effect: Effect, nodeMaterial: NodeMaterial, mesh: Unit, subMesh: SubMesh): Unit = js.native
     def bind(effect: Effect, nodeMaterial: NodeMaterial, mesh: Mesh): Unit = js.native
     def bind(effect: Effect, nodeMaterial: NodeMaterial, mesh: Mesh, subMesh: SubMesh): Unit = js.native
     
@@ -294,13 +283,6 @@ object nodeMaterialBlockMod {
       mesh: AbstractMesh,
       nodeMaterial: NodeMaterial,
       defines: NodeMaterialDefines,
-      useInstances: js.UndefOr[scala.Nothing],
-      subMesh: SubMesh
-    ): Unit = js.native
-    def prepareDefines(
-      mesh: AbstractMesh,
-      nodeMaterial: NodeMaterial,
-      defines: NodeMaterialDefines,
       useInstances: Boolean
     ): Unit = js.native
     def prepareDefines(
@@ -308,6 +290,13 @@ object nodeMaterialBlockMod {
       nodeMaterial: NodeMaterial,
       defines: NodeMaterialDefines,
       useInstances: Boolean,
+      subMesh: SubMesh
+    ): Unit = js.native
+    def prepareDefines(
+      mesh: AbstractMesh,
+      nodeMaterial: NodeMaterial,
+      defines: NodeMaterialDefines,
+      useInstances: Unit,
       subMesh: SubMesh
     ): Unit = js.native
     
@@ -328,32 +317,12 @@ object nodeMaterialBlockMod {
       * @returns the current block
       */
     def registerInput(name: String, `type`: NodeMaterialBlockConnectionPointTypes): this.type = js.native
-    def registerInput(
-      name: String,
-      `type`: NodeMaterialBlockConnectionPointTypes,
-      isOptional: js.UndefOr[scala.Nothing],
-      target: js.UndefOr[scala.Nothing],
-      point: NodeMaterialConnectionPoint
-    ): this.type = js.native
-    def registerInput(
-      name: String,
-      `type`: NodeMaterialBlockConnectionPointTypes,
-      isOptional: js.UndefOr[scala.Nothing],
-      target: NodeMaterialBlockTargets
-    ): this.type = js.native
-    def registerInput(
-      name: String,
-      `type`: NodeMaterialBlockConnectionPointTypes,
-      isOptional: js.UndefOr[scala.Nothing],
-      target: NodeMaterialBlockTargets,
-      point: NodeMaterialConnectionPoint
-    ): this.type = js.native
     def registerInput(name: String, `type`: NodeMaterialBlockConnectionPointTypes, isOptional: Boolean): this.type = js.native
     def registerInput(
       name: String,
       `type`: NodeMaterialBlockConnectionPointTypes,
       isOptional: Boolean,
-      target: js.UndefOr[scala.Nothing],
+      target: Unit,
       point: NodeMaterialConnectionPoint
     ): this.type = js.native
     def registerInput(
@@ -366,6 +335,26 @@ object nodeMaterialBlockMod {
       name: String,
       `type`: NodeMaterialBlockConnectionPointTypes,
       isOptional: Boolean,
+      target: NodeMaterialBlockTargets,
+      point: NodeMaterialConnectionPoint
+    ): this.type = js.native
+    def registerInput(
+      name: String,
+      `type`: NodeMaterialBlockConnectionPointTypes,
+      isOptional: Unit,
+      target: Unit,
+      point: NodeMaterialConnectionPoint
+    ): this.type = js.native
+    def registerInput(
+      name: String,
+      `type`: NodeMaterialBlockConnectionPointTypes,
+      isOptional: Unit,
+      target: NodeMaterialBlockTargets
+    ): this.type = js.native
+    def registerInput(
+      name: String,
+      `type`: NodeMaterialBlockConnectionPointTypes,
+      isOptional: Unit,
       target: NodeMaterialBlockTargets,
       point: NodeMaterialConnectionPoint
     ): this.type = js.native
@@ -382,7 +371,7 @@ object nodeMaterialBlockMod {
     def registerOutput(
       name: String,
       `type`: NodeMaterialBlockConnectionPointTypes,
-      target: js.UndefOr[scala.Nothing],
+      target: Unit,
       point: NodeMaterialConnectionPoint
     ): this.type = js.native
     def registerOutput(name: String, `type`: NodeMaterialBlockConnectionPointTypes, target: NodeMaterialBlockTargets): this.type = js.native

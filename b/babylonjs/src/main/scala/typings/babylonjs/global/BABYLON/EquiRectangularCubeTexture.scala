@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.EquiRectangularCubeTexture")
 @js.native
 class EquiRectangularCubeTexture protected ()
-  extends typings.babylonjs.BABYLON.EquiRectangularCubeTexture {
+  extends StObject
+     with typings.babylonjs.BABYLON.EquiRectangularCubeTexture {
   /**
     * Instantiates an EquiRectangularCubeTexture from the following parameters.
     * @param url The location of the image
@@ -27,13 +27,6 @@ class EquiRectangularCubeTexture protected ()
     url: String,
     scene: typings.babylonjs.BABYLON.Scene,
     size: Double,
-    noMipmap: js.UndefOr[scala.Nothing],
-    gammaSpace: Boolean
-  ) = this()
-  def this(
-    url: String,
-    scene: typings.babylonjs.BABYLON.Scene,
-    size: Double,
     noMipmap: Boolean,
     gammaSpace: Boolean
   ) = this()
@@ -41,25 +34,8 @@ class EquiRectangularCubeTexture protected ()
     url: String,
     scene: typings.babylonjs.BABYLON.Scene,
     size: Double,
-    noMipmap: js.UndefOr[scala.Nothing],
-    gammaSpace: js.UndefOr[scala.Nothing],
-    onLoad: Nullable[js.Function0[Unit]]
-  ) = this()
-  def this(
-    url: String,
-    scene: typings.babylonjs.BABYLON.Scene,
-    size: Double,
-    noMipmap: js.UndefOr[scala.Nothing],
-    gammaSpace: Boolean,
-    onLoad: Nullable[js.Function0[Unit]]
-  ) = this()
-  def this(
-    url: String,
-    scene: typings.babylonjs.BABYLON.Scene,
-    size: Double,
-    noMipmap: Boolean,
-    gammaSpace: js.UndefOr[scala.Nothing],
-    onLoad: Nullable[js.Function0[Unit]]
+    noMipmap: Unit,
+    gammaSpace: Boolean
   ) = this()
   def this(
     url: String,
@@ -73,28 +49,25 @@ class EquiRectangularCubeTexture protected ()
     url: String,
     scene: typings.babylonjs.BABYLON.Scene,
     size: Double,
-    noMipmap: js.UndefOr[scala.Nothing],
-    gammaSpace: js.UndefOr[scala.Nothing],
-    onLoad: js.UndefOr[Nullable[js.Function0[Unit]]],
-    onError: Nullable[js.Function2[js.UndefOr[String], js.UndefOr[_], Unit]]
-  ) = this()
-  def this(
-    url: String,
-    scene: typings.babylonjs.BABYLON.Scene,
-    size: Double,
-    noMipmap: js.UndefOr[scala.Nothing],
-    gammaSpace: Boolean,
-    onLoad: js.UndefOr[Nullable[js.Function0[Unit]]],
-    onError: Nullable[js.Function2[js.UndefOr[String], js.UndefOr[_], Unit]]
-  ) = this()
-  def this(
-    url: String,
-    scene: typings.babylonjs.BABYLON.Scene,
-    size: Double,
     noMipmap: Boolean,
-    gammaSpace: js.UndefOr[scala.Nothing],
-    onLoad: js.UndefOr[Nullable[js.Function0[Unit]]],
-    onError: Nullable[js.Function2[js.UndefOr[String], js.UndefOr[_], Unit]]
+    gammaSpace: Unit,
+    onLoad: Nullable[js.Function0[Unit]]
+  ) = this()
+  def this(
+    url: String,
+    scene: typings.babylonjs.BABYLON.Scene,
+    size: Double,
+    noMipmap: Unit,
+    gammaSpace: Boolean,
+    onLoad: Nullable[js.Function0[Unit]]
+  ) = this()
+  def this(
+    url: String,
+    scene: typings.babylonjs.BABYLON.Scene,
+    size: Double,
+    noMipmap: Unit,
+    gammaSpace: Unit,
+    onLoad: Nullable[js.Function0[Unit]]
   ) = this()
   def this(
     url: String,
@@ -102,9 +75,94 @@ class EquiRectangularCubeTexture protected ()
     size: Double,
     noMipmap: Boolean,
     gammaSpace: Boolean,
-    onLoad: js.UndefOr[Nullable[js.Function0[Unit]]],
-    onError: Nullable[js.Function2[js.UndefOr[String], js.UndefOr[_], Unit]]
+    onLoad: Unit,
+    onError: Nullable[
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+      ]
   ) = this()
+  def this(
+    url: String,
+    scene: typings.babylonjs.BABYLON.Scene,
+    size: Double,
+    noMipmap: Boolean,
+    gammaSpace: Boolean,
+    onLoad: Nullable[js.Function0[Unit]],
+    onError: Nullable[
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+      ]
+  ) = this()
+  def this(
+    url: String,
+    scene: typings.babylonjs.BABYLON.Scene,
+    size: Double,
+    noMipmap: Boolean,
+    gammaSpace: Unit,
+    onLoad: Unit,
+    onError: Nullable[
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+      ]
+  ) = this()
+  def this(
+    url: String,
+    scene: typings.babylonjs.BABYLON.Scene,
+    size: Double,
+    noMipmap: Boolean,
+    gammaSpace: Unit,
+    onLoad: Nullable[js.Function0[Unit]],
+    onError: Nullable[
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+      ]
+  ) = this()
+  def this(
+    url: String,
+    scene: typings.babylonjs.BABYLON.Scene,
+    size: Double,
+    noMipmap: Unit,
+    gammaSpace: Boolean,
+    onLoad: Unit,
+    onError: Nullable[
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+      ]
+  ) = this()
+  def this(
+    url: String,
+    scene: typings.babylonjs.BABYLON.Scene,
+    size: Double,
+    noMipmap: Unit,
+    gammaSpace: Boolean,
+    onLoad: Nullable[js.Function0[Unit]],
+    onError: Nullable[
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+      ]
+  ) = this()
+  def this(
+    url: String,
+    scene: typings.babylonjs.BABYLON.Scene,
+    size: Double,
+    noMipmap: Unit,
+    gammaSpace: Unit,
+    onLoad: Unit,
+    onError: Nullable[
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+      ]
+  ) = this()
+  def this(
+    url: String,
+    scene: typings.babylonjs.BABYLON.Scene,
+    size: Double,
+    noMipmap: Unit,
+    gammaSpace: Unit,
+    onLoad: Nullable[js.Function0[Unit]],
+    onError: Nullable[
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+      ]
+  ) = this()
+  
+  /**
+    * Array of animations
+    */
+  /* CompleteClass */
+  var animations: Nullable[js.Array[typings.babylonjs.BABYLON.Animation]] = js.native
 }
 /* static members */
 object EquiRectangularCubeTexture {
@@ -117,6 +175,5 @@ object EquiRectangularCubeTexture {
   @JSGlobal("BABYLON.EquiRectangularCubeTexture._FacesMapping")
   @js.native
   def _FacesMapping: js.Any = js.native
-  @scala.inline
-  def _FacesMapping_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_FacesMapping")(x.asInstanceOf[js.Any])
+  inline def _FacesMapping_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_FacesMapping")(x.asInstanceOf[js.Any])
 }

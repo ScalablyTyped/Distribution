@@ -5,7 +5,6 @@ import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
 import typings.babylonjs.nodeMaterialBuildStateMod.NodeMaterialBuildState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anisotropyBlockMod {
@@ -19,7 +18,7 @@ object anisotropyBlockMod {
       */
     def this(name: String) = this()
     
-    var _generateTBNSpace: js.Any = js.native
+    /* private */ var _generateTBNSpace: js.Any = js.native
     
     /**
       * Gets the anisotropy object output component

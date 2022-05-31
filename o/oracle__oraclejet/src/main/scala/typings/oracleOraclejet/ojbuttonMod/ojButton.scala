@@ -19,39 +19,48 @@ import typings.std.CustomEvent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ojButton[SP /* <: ojButtonSettableProperties */] extends baseComponent[SP] {
+trait ojButton[SP /* <: ojButtonSettableProperties */]
+  extends StObject
+     with baseComponent[SP] {
   
   def addEventListener(
     `type`: chromingChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[full | half | outlined], _]
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ JetElementCustomEvent[full | half | outlined], 
+      js.Any
+    ]
   ): Unit = js.native
   def addEventListener(
     `type`: chromingChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[full | half | outlined], _],
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ JetElementCustomEvent[full | half | outlined], 
+      js.Any
+    ],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: displayChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[all | icons], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[all | icons], js.Any]
   ): Unit = js.native
   def addEventListener(
     `type`: displayChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[all | icons], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[all | icons], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_disabledChanged(
     `type`: disabledChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_disabledChanged(
     `type`: disabledChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -60,7 +69,7 @@ trait ojButton[SP /* <: ojButtonSettableProperties */] extends baseComponent[SP]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojbuttonMod.ojButton.ojAction, 
-      _
+      js.Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -69,7 +78,7 @@ trait ojButton[SP /* <: ojButtonSettableProperties */] extends baseComponent[SP]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojbuttonMod.ojButton.ojAction, 
-      _
+      js.Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -87,13 +96,13 @@ trait ojButton[SP /* <: ojButtonSettableProperties */] extends baseComponent[SP]
   @JSName("getProperty")
   def getProperty_display(property: display): all | icons = js.native
   
-  var onChromingChanged: (js.Function1[/* event */ JetElementCustomEvent[full | half | outlined], _]) | Null = js.native
+  var onChromingChanged: (js.Function1[/* event */ JetElementCustomEvent[full | half | outlined], js.Any]) | Null = js.native
   
-  var onDisabledChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
+  var onDisabledChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], js.Any]) | Null = js.native
   
-  var onDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[all | icons], _]) | Null = js.native
+  var onDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[all | icons], js.Any]) | Null = js.native
   
-  var onOjAction: (js.Function1[/* event */ typings.oracleOraclejet.ojbuttonMod.ojButton.ojAction, _]) | Null = js.native
+  var onOjAction: (js.Function1[/* event */ typings.oracleOraclejet.ojbuttonMod.ojButton.ojAction, js.Any]) | Null = js.native
   
   def setProperties(properties: ojButtonSettablePropertiesLenient): Unit = js.native
   

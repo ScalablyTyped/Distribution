@@ -3,60 +3,61 @@ package typings.babylonjs.BABYLON
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Skeleton extends IAnimatable {
+trait Skeleton
+  extends StObject
+     with IAnimatable {
   
-  var _animatables: js.Any = js.native
+  /* private */ var _animatables: js.Any = js.native
   
-  var _animationPropertiesOverride: js.Any = js.native
+  /* private */ var _animationPropertiesOverride: js.Any = js.native
   
-  var _canUseTextureForBones: js.Any = js.native
+  /* private */ var _canUseTextureForBones: js.Any = js.native
   
-  var _computeTransformMatrices: js.Any = js.native
+  /* private */ var _computeTransformMatrices: js.Any = js.native
   
-  var _getHighestAnimationFrame: js.Any = js.native
+  /* private */ var _getHighestAnimationFrame: js.Any = js.native
   
   /** @hidden */
   var _hasWaitingData: Nullable[Boolean] = js.native
   
-  var _identity: js.Any = js.native
+  /* private */ var _identity: js.Any = js.native
   
-  var _isDirty: js.Any = js.native
+  /* private */ var _isDirty: js.Any = js.native
   
-  var _lastAbsoluteTransformsUpdateId: js.Any = js.native
+  /* private */ var _lastAbsoluteTransformsUpdateId: js.Any = js.native
   
   /** @hidden */
   def _markAsDirty(): Unit = js.native
   
-  var _meshesWithPoseMatrix: js.Any = js.native
+  /* private */ var _meshesWithPoseMatrix: js.Any = js.native
   
   /** @hidden */
   var _numBonesWithLinkedTransformNode: Double = js.native
   
-  var _ranges: js.Any = js.native
+  /* private */ var _ranges: js.Any = js.native
   
   /** @hidden */
   def _registerMeshWithPoseMatrix(mesh: AbstractMesh): Unit = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
-  var _sortBones: js.Any = js.native
+  /* private */ var _sortBones: js.Any = js.native
   
-  var _synchronizedWithMesh: js.Any = js.native
+  /* private */ var _synchronizedWithMesh: js.Any = js.native
   
-  var _transformMatrices: js.Any = js.native
+  /* private */ var _transformMatrices: js.Any = js.native
   
-  var _transformMatrixTexture: js.Any = js.native
+  /* private */ var _transformMatrixTexture: js.Any = js.native
   
-  var _uniqueId: js.Any = js.native
+  /* private */ var _uniqueId: js.Any = js.native
   
   /** @hidden */
   def _unregisterMeshWithPoseMatrix(mesh: AbstractMesh): Unit = js.native
   
-  var _useTextureToStoreBoneMatrices: js.Any = js.native
+  /* private */ var _useTextureToStoreBoneMatrices: js.Any = js.native
   
   /** @hidden */
   var _waitingOverrideMeshId: Nullable[String] = js.native
@@ -82,28 +83,13 @@ trait Skeleton extends IAnimatable {
     * @returns a new animatable
     */
   def beginAnimation(name: String): Nullable[Animatable] = js.native
-  def beginAnimation(
-    name: String,
-    loop: js.UndefOr[scala.Nothing],
-    speedRatio: js.UndefOr[scala.Nothing],
-    onAnimationEnd: js.Function0[Unit]
-  ): Nullable[Animatable] = js.native
-  def beginAnimation(name: String, loop: js.UndefOr[scala.Nothing], speedRatio: Double): Nullable[Animatable] = js.native
-  def beginAnimation(
-    name: String,
-    loop: js.UndefOr[scala.Nothing],
-    speedRatio: Double,
-    onAnimationEnd: js.Function0[Unit]
-  ): Nullable[Animatable] = js.native
   def beginAnimation(name: String, loop: Boolean): Nullable[Animatable] = js.native
-  def beginAnimation(
-    name: String,
-    loop: Boolean,
-    speedRatio: js.UndefOr[scala.Nothing],
-    onAnimationEnd: js.Function0[Unit]
-  ): Nullable[Animatable] = js.native
   def beginAnimation(name: String, loop: Boolean, speedRatio: Double): Nullable[Animatable] = js.native
   def beginAnimation(name: String, loop: Boolean, speedRatio: Double, onAnimationEnd: js.Function0[Unit]): Nullable[Animatable] = js.native
+  def beginAnimation(name: String, loop: Boolean, speedRatio: Unit, onAnimationEnd: js.Function0[Unit]): Nullable[Animatable] = js.native
+  def beginAnimation(name: String, loop: Unit, speedRatio: Double): Nullable[Animatable] = js.native
+  def beginAnimation(name: String, loop: Unit, speedRatio: Double, onAnimationEnd: js.Function0[Unit]): Nullable[Animatable] = js.native
+  def beginAnimation(name: String, loop: Unit, speedRatio: Unit, onAnimationEnd: js.Function0[Unit]): Nullable[Animatable] = js.native
   
   /**
     * Defines the list of child bones

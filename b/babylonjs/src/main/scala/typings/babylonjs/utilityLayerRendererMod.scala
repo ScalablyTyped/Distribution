@@ -9,14 +9,15 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilityLayerRendererMod {
   
   @JSImport("babylonjs/Rendering/utilityLayerRenderer", "UtilityLayerRenderer")
   @js.native
-  class UtilityLayerRenderer protected () extends IDisposable {
+  class UtilityLayerRenderer protected ()
+    extends StObject
+       with IDisposable {
     /**
       * Instantiates a UtilityLayerRenderer
       * @param originalScene the original scene that will be rendered on top of
@@ -30,7 +31,7 @@ object utilityLayerRendererMod {
       handleEvents: Boolean
     ) = this()
     
-    var _afterRenderObserver: js.Any = js.native
+    /* private */ var _afterRenderObserver: js.Any = js.native
     
     /**
       * @hidden
@@ -38,21 +39,27 @@ object utilityLayerRendererMod {
       */
     def _getSharedGizmoLight(): HemisphericLight = js.native
     
-    var _lastPointerEvents: js.Any = js.native
+    /* private */ var _lastPointerEvents: js.Any = js.native
     
-    var _notifyObservers: js.Any = js.native
+    /* private */ var _notifyObservers: js.Any = js.native
     
-    var _originalPointerObserver: js.Any = js.native
+    /* private */ var _originalPointerObserver: js.Any = js.native
     
-    var _pointerCaptures: js.Any = js.native
+    /* private */ var _pointerCaptures: js.Any = js.native
     
-    var _renderCamera: js.Any = js.native
+    /* private */ var _renderCamera: js.Any = js.native
     
-    var _sceneDisposeObserver: js.Any = js.native
+    /* private */ var _sceneDisposeObserver: js.Any = js.native
     
-    var _sharedGizmoLight: js.Any = js.native
+    /* private */ var _sharedGizmoLight: js.Any = js.native
     
-    var _updateCamera: js.Any = js.native
+    /* private */ var _updateCamera: js.Any = js.native
+    
+    /**
+      * Releases all held resources
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * Gets the camera that is used to render the utility layer (when not set, this will be the last active camera)
@@ -119,13 +126,11 @@ object utilityLayerRendererMod {
     @JSImport("babylonjs/Rendering/utilityLayerRenderer", "UtilityLayerRenderer._DefaultKeepDepthUtilityLayer")
     @js.native
     def _DefaultKeepDepthUtilityLayer: js.Any = js.native
-    @scala.inline
-    def _DefaultKeepDepthUtilityLayer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultKeepDepthUtilityLayer")(x.asInstanceOf[js.Any])
+    inline def _DefaultKeepDepthUtilityLayer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultKeepDepthUtilityLayer")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Rendering/utilityLayerRenderer", "UtilityLayerRenderer._DefaultUtilityLayer")
     @js.native
     def _DefaultUtilityLayer: js.Any = js.native
-    @scala.inline
-    def _DefaultUtilityLayer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultUtilityLayer")(x.asInstanceOf[js.Any])
+    inline def _DefaultUtilityLayer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultUtilityLayer")(x.asInstanceOf[js.Any])
   }
 }

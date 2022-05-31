@@ -425,10 +425,4 @@ object global {
   @js.native
   def xit: ITestDefinition = js.native
   inline def xit_=(x: ITestDefinition): Unit = js.Dynamic.global.updateDynamic("xit")(x.asInstanceOf[js.Any])
-  
-  //
-  // refactored types into a namespace to reduce global pollution 
-  // and used Union Types to simplify overloads (requires TypeScript 1.4)
-  //
-  object KnockoutComponentTypes
 }

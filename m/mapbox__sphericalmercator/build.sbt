@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mapbox__sphericalmercator"
-version := "1.1-dt-20200925Z-5b7d25"
+version := "1.1-dt-20200925Z-b464d5"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

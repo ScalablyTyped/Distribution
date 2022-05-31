@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "react-redux-epic"
-version := "1.1-dt-20200515Z-a66a9a"
+version := "1.1-dt-20200515Z-7d8a60"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "csstype" % "2.6.14-344a29",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-49dd4c",
-  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-76d083",
-  "org.scalablytyped" %%% "redux" % "4.0.5-3039e4",
-  "org.scalablytyped" %%% "redux-observable" % "1.2.0-3d0f7b",
-  "org.scalablytyped" %%% "rxjs" % "6.6.3-fc5d55",
-  "org.scalablytyped" %%% "rxjs-compat" % "6.6.3-b1ecae",
-  "org.scalablytyped" %%% "std" % "4.1-2f6855")
+  "org.scalablytyped" %%% "csstype" % "2.6.14-dc2f99",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-3fbed9",
+  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-4ff700",
+  "org.scalablytyped" %%% "redux" % "4.0.5-213600",
+  "org.scalablytyped" %%% "redux-observable" % "1.2.0-a50df9",
+  "org.scalablytyped" %%% "rxjs" % "6.6.3-e772da",
+  "org.scalablytyped" %%% "rxjs-compat" % "6.6.3-e1471b",
+  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

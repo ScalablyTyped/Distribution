@@ -6,7 +6,6 @@ import typings.babylonjs.anon.Updatable
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "GroundBuilder")
@@ -15,6 +14,10 @@ class GroundBuilder ()
   extends typings.babylonjs.indexMod.GroundBuilder
 /* static members */
 object GroundBuilder {
+  
+  @JSImport("babylonjs/Legacy/legacy", "GroundBuilder")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a ground mesh
@@ -27,9 +30,7 @@ object GroundBuilder {
     * @returns the ground mesh
     * @see https://doc.babylonjs.com/how_to/set_shapes#ground
     */
-  @JSImport("babylonjs/Legacy/legacy", "GroundBuilder.CreateGround")
-  @js.native
-  def CreateGround(name: String, options: SubdivisionsX, scene: js.Any): typings.babylonjs.meshMod.Mesh = js.native
+  inline def CreateGround(name: String, options: SubdivisionsX, scene: js.Any): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
   
   /**
     * Creates a ground mesh from a height map
@@ -50,12 +51,8 @@ object GroundBuilder {
     * @see https://doc.babylonjs.com/babylon101/height_map
     * @see https://doc.babylonjs.com/how_to/set_shapes#ground-from-a-height-map
     */
-  @JSImport("babylonjs/Legacy/legacy", "GroundBuilder.CreateGroundFromHeightMap")
-  @js.native
-  def CreateGroundFromHeightMap(name: String, url: String, options: ColorFilter): typings.babylonjs.groundMeshMod.GroundMesh = js.native
-  @JSImport("babylonjs/Legacy/legacy", "GroundBuilder.CreateGroundFromHeightMap")
-  @js.native
-  def CreateGroundFromHeightMap(name: String, url: String, options: ColorFilter, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.groundMeshMod.GroundMesh = js.native
+  inline def CreateGroundFromHeightMap(name: String, url: String, options: ColorFilter): typings.babylonjs.groundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.groundMeshMod.GroundMesh]
+  inline def CreateGroundFromHeightMap(name: String, url: String, options: ColorFilter, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.groundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.groundMeshMod.GroundMesh]
   
   /**
     * Creates a tiled ground mesh
@@ -70,10 +67,6 @@ object GroundBuilder {
     * @returns the tiled ground mesh
     * @see https://doc.babylonjs.com/how_to/set_shapes#tiled-ground
     */
-  @JSImport("babylonjs/Legacy/legacy", "GroundBuilder.CreateTiledGround")
-  @js.native
-  def CreateTiledGround(name: String, options: Updatable): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs/Legacy/legacy", "GroundBuilder.CreateTiledGround")
-  @js.native
-  def CreateTiledGround(name: String, options: Updatable, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = js.native
+  inline def CreateTiledGround(name: String, options: Updatable): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateTiledGround(name: String, options: Updatable, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
 }

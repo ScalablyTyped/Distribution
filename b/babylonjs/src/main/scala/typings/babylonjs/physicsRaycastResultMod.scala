@@ -3,7 +3,6 @@ package typings.babylonjs
 import typings.babylonjs.mathVectorMod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object physicsRaycastResultMod {
@@ -12,17 +11,17 @@ object physicsRaycastResultMod {
   @js.native
   class PhysicsRaycastResult () extends StObject {
     
-    var _hasHit: js.Any = js.native
+    /* private */ var _hasHit: js.Any = js.native
     
-    var _hitDistance: js.Any = js.native
+    /* private */ var _hitDistance: js.Any = js.native
     
-    var _hitNormalWorld: js.Any = js.native
+    /* private */ var _hitNormalWorld: js.Any = js.native
     
-    var _hitPointWorld: js.Any = js.native
+    /* private */ var _hitPointWorld: js.Any = js.native
     
-    var _rayFromWorld: js.Any = js.native
+    /* private */ var _rayFromWorld: js.Any = js.native
     
-    var _rayToWorld: js.Any = js.native
+    /* private */ var _rayToWorld: js.Any = js.native
     
     /**
       * Calculates the distance manually
@@ -65,7 +64,7 @@ object physicsRaycastResultMod {
       * @param to The to point on world space
       */
     def reset(): Unit = js.native
-    def reset(from: js.UndefOr[scala.Nothing], to: Vector3): Unit = js.native
+    def reset(from: Unit, to: Vector3): Unit = js.native
     def reset(from: Vector3): Unit = js.native
     def reset(from: Vector3, to: Vector3): Unit = js.native
     
@@ -86,43 +85,37 @@ object physicsRaycastResultMod {
   /**
     * Interface for the size containing width and height
     */
-  @js.native
   trait IXYZ extends StObject {
     
     /**
       * X
       */
-    var x: Double = js.native
+    var x: Double
     
     /**
       * Y
       */
-    var y: Double = js.native
+    var y: Double
     
     /**
       * Z
       */
-    var z: Double = js.native
+    var z: Double
   }
   object IXYZ {
     
-    @scala.inline
-    def apply(x: Double, y: Double, z: Double): IXYZ = {
+    inline def apply(x: Double, y: Double, z: Double): IXYZ = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
       __obj.asInstanceOf[IXYZ]
     }
     
-    @scala.inline
-    implicit class IXYZMutableBuilder[Self <: IXYZ] (val x: Self) extends AnyVal {
+    extension [Self <: IXYZ](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+      inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     }
   }
 }

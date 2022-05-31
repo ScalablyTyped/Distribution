@@ -2,41 +2,38 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISimplificationTask extends StObject {
   
   /**
     * Mesh to simplify
     */
-  var mesh: Mesh = js.native
+  var mesh: Mesh
   
   /**
     * Defines if parallel processing can be used
     */
-  var parallelProcessing: Boolean = js.native
+  var parallelProcessing: Boolean
   
   /**
     * Array of settings
     */
-  var settings: js.Array[ISimplificationSettings] = js.native
+  var settings: js.Array[ISimplificationSettings]
   
   /**
     * Simplification type
     */
-  var simplificationType: SimplificationType = js.native
+  var simplificationType: SimplificationType
   
   /**
     * Callback called on success
     */
-  var successCallback: js.UndefOr[js.Function0[Unit]] = js.native
+  var successCallback: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object ISimplificationTask {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     mesh: Mesh,
     parallelProcessing: Boolean,
     settings: js.Array[ISimplificationSettings],
@@ -46,28 +43,20 @@ object ISimplificationTask {
     __obj.asInstanceOf[ISimplificationTask]
   }
   
-  @scala.inline
-  implicit class ISimplificationTaskMutableBuilder[Self <: ISimplificationTask] (val x: Self) extends AnyVal {
+  extension [Self <: ISimplificationTask](x: Self) {
     
-    @scala.inline
-    def setMesh(value: Mesh): Self = StObject.set(x, "mesh", value.asInstanceOf[js.Any])
+    inline def setMesh(value: Mesh): Self = StObject.set(x, "mesh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParallelProcessing(value: Boolean): Self = StObject.set(x, "parallelProcessing", value.asInstanceOf[js.Any])
+    inline def setParallelProcessing(value: Boolean): Self = StObject.set(x, "parallelProcessing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettings(value: js.Array[ISimplificationSettings]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: js.Array[ISimplificationSettings]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingsVarargs(value: ISimplificationSettings*): Self = StObject.set(x, "settings", js.Array(value :_*))
+    inline def setSettingsVarargs(value: ISimplificationSettings*): Self = StObject.set(x, "settings", js.Array(value :_*))
     
-    @scala.inline
-    def setSimplificationType(value: SimplificationType): Self = StObject.set(x, "simplificationType", value.asInstanceOf[js.Any])
+    inline def setSimplificationType(value: SimplificationType): Self = StObject.set(x, "simplificationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessCallback(value: () => Unit): Self = StObject.set(x, "successCallback", js.Any.fromFunction0(value))
+    inline def setSuccessCallback(value: () => Unit): Self = StObject.set(x, "successCallback", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSuccessCallbackUndefined: Self = StObject.set(x, "successCallback", js.undefined)
+    inline def setSuccessCallbackUndefined: Self = StObject.set(x, "successCallback", js.undefined)
   }
 }

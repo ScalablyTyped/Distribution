@@ -9,32 +9,38 @@ import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
 import typings.luminoSignaling.mod.ISignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object attachmentmodelMod {
   
   @JSImport("@jupyterlab/rendermime/lib/attachmentmodel", "AttachmentModel")
   @js.native
-  class AttachmentModel protected () extends IAttachmentModel {
+  class AttachmentModel protected ()
+    extends StObject
+       with IAttachmentModel {
     /**
       * Construct a new attachment model.
       */
     def this(options: IOptions) = this()
     
-    var _changed: js.Any = js.native
+    /* private */ var _changed: js.Any = js.native
     
-    var _data: js.Any = js.native
+    /* private */ var _data: js.Any = js.native
     
-    var _raw: js.Any = js.native
+    /* private */ var _raw: js.Any = js.native
     
-    var _rawData: js.Any = js.native
+    /* private */ var _rawData: js.Any = js.native
     
     /**
       * Update an observable JSON object using a readonly JSON object.
       */
-    var _updateObservable: js.Any = js.native
+    /* private */ var _updateObservable: js.Any = js.native
     
+    /**
+      * A signal emitted when the attachment model changes.
+      */
+    /* CompleteClass */
+    override val changed: ISignal[this.type, Unit] = js.native
     /**
       * A signal emitted when the attachment model changes.
       */
@@ -44,16 +50,62 @@ object attachmentmodelMod {
     /**
       * The data associated with the model.
       */
+    /* CompleteClass */
+    override val data: ReadonlyPartialJSONObject = js.native
+    /**
+      * The data associated with the model.
+      */
     @JSName("data")
     def data_MAttachmentModel: ReadonlyPartialJSONObject = js.native
     
+    /**
+      * Dispose of the resources used by the attachment model.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * The metadata associated with the model.
+      *
+      * Among others, it can include an attribute named `fragment`
+      * that stores a URI fragment identifier for the MIME resource.
+      */
+    /* CompleteClass */
+    override val metadata: ReadonlyPartialJSONObject = js.native
     /**
       * The metadata associated with the model.
       */
     @JSName("metadata")
     def metadata_MAttachmentModel: ReadonlyPartialJSONObject = js.native
+    
+    /**
+      * Set the data associated with the model.
+      *
+      * #### Notes
+      * Calling this function may trigger an asynchronous operation
+      * that could cause the renderer to be rendered with a new model
+      * containing the new data.
+      */
+    /* CompleteClass */
+    override def setData(options: ISetDataOptions): Unit = js.native
+    
+    /**
+      * Serialize the model to JSON.
+      */
+    /* CompleteClass */
+    override def toJSON(): IMimeBundle = js.native
+    
+    /**
+      * Whether the data in the model is trusted.
+      */
+    /* CompleteClass */
+    override val trusted: Boolean = js.native
   }
   object AttachmentModel {
+    
+    @JSImport("@jupyterlab/rendermime/lib/attachmentmodel", "AttachmentModel")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get the data for an attachment.
@@ -62,33 +114,31 @@ object attachmentmodelMod {
       *
       * @returns - The data for the payload.
       */
-    @JSImport("@jupyterlab/rendermime/lib/attachmentmodel", "AttachmentModel.getData")
-    @js.native
-    def getData(bundle: IMimeBundle): PartialJSONObject = js.native
+    inline def getData(bundle: IMimeBundle): PartialJSONObject = ^.asInstanceOf[js.Dynamic].applyDynamic("getData")(bundle.asInstanceOf[js.Any]).asInstanceOf[PartialJSONObject]
   }
   
-  @js.native
-  trait IAttachmentModel extends IMimeModel {
+  trait IAttachmentModel
+    extends StObject
+       with IMimeModel {
     
     /**
       * A signal emitted when the attachment model changes.
       */
-    val changed: ISignal[this.type, Unit] = js.native
+    val changed: ISignal[this.type, Unit]
     
     /**
       * Dispose of the resources used by the attachment model.
       */
-    def dispose(): Unit = js.native
+    def dispose(): Unit
     
     /**
       * Serialize the model to JSON.
       */
-    def toJSON(): IMimeBundle = js.native
+    def toJSON(): IMimeBundle
   }
   object IAttachmentModel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       changed: ISignal[IAttachmentModel, Unit],
       data: ReadonlyPartialJSONObject,
       dispose: () => Unit,
@@ -101,43 +151,35 @@ object attachmentmodelMod {
       __obj.asInstanceOf[IAttachmentModel]
     }
     
-    @scala.inline
-    implicit class IAttachmentModelMutableBuilder[Self <: IAttachmentModel] (val x: Self) extends AnyVal {
+    extension [Self <: IAttachmentModel](x: Self) {
       
-      @scala.inline
-      def setChanged(value: ISignal[IAttachmentModel, Unit]): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
+      inline def setChanged(value: ISignal[IAttachmentModel, Unit]): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToJSON(value: () => IMimeBundle): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => IMimeBundle): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     }
     
     /**
       * The options used to create a notebook attachment model.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The raw attachment value.
         */
-      var value: IMimeBundle = js.native
+      var value: IMimeBundle
     }
     object IOptions {
       
-      @scala.inline
-      def apply(value: IMimeBundle): IOptions = {
+      inline def apply(value: IMimeBundle): IOptions = {
         val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setValue(value: IMimeBundle): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: IMimeBundle): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       }
     }
   }

@@ -2,41 +2,42 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextureBlock extends NodeMaterialBlock {
+trait TextureBlock
+  extends StObject
+     with NodeMaterialBlock {
   
-  var _defineName: js.Any = js.native
+  /* private */ var _defineName: js.Any = js.native
   
-  var _fragmentOnly: js.Any = js.native
+  /* private */ var _fragmentOnly: js.Any = js.native
   
-  var _gammaDefineName: js.Any = js.native
+  /* private */ var _gammaDefineName: js.Any = js.native
   
-  var _injectVertexCode: js.Any = js.native
+  /* private */ var _injectVertexCode: js.Any = js.native
   
   /* private */ def _isMixed: js.Any = js.native
   
-  var _linearDefineName: js.Any = js.native
+  /* private */ var _linearDefineName: js.Any = js.native
   
-  var _mainUVDefineName: js.Any = js.native
+  /* private */ var _mainUVDefineName: js.Any = js.native
   
-  var _mainUVName: js.Any = js.native
+  /* private */ var _mainUVName: js.Any = js.native
   
-  var _samplerName: js.Any = js.native
+  /* private */ var _samplerName: js.Any = js.native
   
-  var _tempTextureRead: js.Any = js.native
+  /* private */ var _tempTextureRead: js.Any = js.native
   
-  var _textureInfoName: js.Any = js.native
+  /* private */ var _textureInfoName: js.Any = js.native
   
-  var _textureTransformName: js.Any = js.native
+  /* private */ var _textureTransformName: js.Any = js.native
   
-  var _transformedUVName: js.Any = js.native
+  /* private */ var _transformedUVName: js.Any = js.native
   
-  var _writeOutput: js.Any = js.native
+  /* private */ var _writeOutput: js.Any = js.native
   
-  var _writeTextureRead: js.Any = js.native
+  /* private */ var _writeTextureRead: js.Any = js.native
   
   /**
     * Gets the a output component

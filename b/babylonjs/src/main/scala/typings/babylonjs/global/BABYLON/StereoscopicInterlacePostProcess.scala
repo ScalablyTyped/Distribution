@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.StereoscopicInterlacePostProcess")
 @js.native
 class StereoscopicInterlacePostProcess protected ()
-  extends typings.babylonjs.BABYLON.StereoscopicInterlacePostProcess {
+  extends StObject
+     with typings.babylonjs.BABYLON.StereoscopicInterlacePostProcess {
   /**
     * Initializes a StereoscopicInterlacePostProcess
     * @param name The name of the effect.
@@ -29,13 +29,6 @@ class StereoscopicInterlacePostProcess protected ()
     name: String,
     rigCameras: js.Array[typings.babylonjs.BABYLON.Camera],
     isStereoscopicHoriz: Boolean,
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: typings.babylonjs.BABYLON.Engine
-  ) = this()
-  def this(
-    name: String,
-    rigCameras: js.Array[typings.babylonjs.BABYLON.Camera],
-    isStereoscopicHoriz: Boolean,
     samplingMode: Double,
     engine: typings.babylonjs.BABYLON.Engine
   ) = this()
@@ -43,15 +36,22 @@ class StereoscopicInterlacePostProcess protected ()
     name: String,
     rigCameras: js.Array[typings.babylonjs.BABYLON.Camera],
     isStereoscopicHoriz: Boolean,
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: js.UndefOr[scala.Nothing],
+    samplingMode: Unit,
+    engine: typings.babylonjs.BABYLON.Engine
+  ) = this()
+  def this(
+    name: String,
+    rigCameras: js.Array[typings.babylonjs.BABYLON.Camera],
+    isStereoscopicHoriz: Boolean,
+    samplingMode: Double,
+    engine: Unit,
     reusable: Boolean
   ) = this()
   def this(
     name: String,
     rigCameras: js.Array[typings.babylonjs.BABYLON.Camera],
     isStereoscopicHoriz: Boolean,
-    samplingMode: js.UndefOr[scala.Nothing],
+    samplingMode: Double,
     engine: typings.babylonjs.BABYLON.Engine,
     reusable: Boolean
   ) = this()
@@ -59,15 +59,15 @@ class StereoscopicInterlacePostProcess protected ()
     name: String,
     rigCameras: js.Array[typings.babylonjs.BABYLON.Camera],
     isStereoscopicHoriz: Boolean,
-    samplingMode: Double,
-    engine: js.UndefOr[scala.Nothing],
+    samplingMode: Unit,
+    engine: Unit,
     reusable: Boolean
   ) = this()
   def this(
     name: String,
     rigCameras: js.Array[typings.babylonjs.BABYLON.Camera],
     isStereoscopicHoriz: Boolean,
-    samplingMode: Double,
+    samplingMode: Unit,
     engine: typings.babylonjs.BABYLON.Engine,
     reusable: Boolean
   ) = this()

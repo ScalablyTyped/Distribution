@@ -30,29 +30,15 @@ object firebaseNamespaceMod {
   @js.native
   val SDK_VERSION: String = js.native
   
-  object app {
-    
-    inline def apply(): App = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[App]
-    inline def apply(name: String): App = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[App]
-    
-    @JSImport("firebase-admin/lib/firebase-namespace", "app")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def app(): App = ^.asInstanceOf[js.Dynamic].applyDynamic("app")().asInstanceOf[App]
+  inline def app(name: String): App = ^.asInstanceOf[js.Dynamic].applyDynamic("app")(name.asInstanceOf[js.Any]).asInstanceOf[App]
   
   @JSImport("firebase-admin/lib/firebase-namespace", "apps")
   @js.native
   val apps: js.Array[App | Null] = js.native
   
-  object auth {
-    
-    inline def apply(): Auth = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Auth]
-    inline def apply(app: App): Auth = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Auth]
-    
-    @JSImport("firebase-admin/lib/firebase-namespace", "auth")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def auth(): Auth = ^.asInstanceOf[js.Dynamic].applyDynamic("auth")().asInstanceOf[Auth]
+  inline def auth(app: App): Auth = ^.asInstanceOf[js.Dynamic].applyDynamic("auth")(app.asInstanceOf[js.Any]).asInstanceOf[Auth]
   
   object credential {
     
@@ -534,35 +520,14 @@ object firebaseNamespaceMod {
   inline def initializeApp(options: AppOptions): App = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeApp")(options.asInstanceOf[js.Any]).asInstanceOf[App]
   inline def initializeApp(options: AppOptions, name: String): App = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeApp")(options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[App]
   
-  object instanceId {
-    
-    inline def apply(): InstanceId = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[InstanceId]
-    inline def apply(app: App): InstanceId = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[InstanceId]
-    
-    @JSImport("firebase-admin/lib/firebase-namespace", "instanceId")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def instanceId(): InstanceId = ^.asInstanceOf[js.Dynamic].applyDynamic("instanceId")().asInstanceOf[InstanceId]
+  inline def instanceId(app: App): InstanceId = ^.asInstanceOf[js.Dynamic].applyDynamic("instanceId")(app.asInstanceOf[js.Any]).asInstanceOf[InstanceId]
   
-  object machineLearning {
-    
-    inline def apply(): MachineLearning = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[MachineLearning]
-    inline def apply(app: App): MachineLearning = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[MachineLearning]
-    
-    @JSImport("firebase-admin/lib/firebase-namespace", "machineLearning")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def machineLearning(): MachineLearning = ^.asInstanceOf[js.Dynamic].applyDynamic("machineLearning")().asInstanceOf[MachineLearning]
+  inline def machineLearning(app: App): MachineLearning = ^.asInstanceOf[js.Dynamic].applyDynamic("machineLearning")(app.asInstanceOf[js.Any]).asInstanceOf[MachineLearning]
   
-  object messaging {
-    
-    inline def apply(): Messaging = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Messaging]
-    inline def apply(app: App): Messaging = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Messaging]
-    
-    @JSImport("firebase-admin/lib/firebase-namespace", "messaging")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def messaging(): Messaging = ^.asInstanceOf[js.Dynamic].applyDynamic("messaging")().asInstanceOf[Messaging]
+  inline def messaging(app: App): Messaging = ^.asInstanceOf[js.Dynamic].applyDynamic("messaging")(app.asInstanceOf[js.Any]).asInstanceOf[Messaging]
   
   object projectManagement {
     
@@ -593,33 +558,12 @@ object firebaseNamespaceMod {
     }
   }
   
-  object remoteConfig {
-    
-    inline def apply(): RemoteConfig = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RemoteConfig]
-    inline def apply(app: App): RemoteConfig = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[RemoteConfig]
-    
-    @JSImport("firebase-admin/lib/firebase-namespace", "remoteConfig")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def remoteConfig(): RemoteConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("remoteConfig")().asInstanceOf[RemoteConfig]
+  inline def remoteConfig(app: App): RemoteConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("remoteConfig")(app.asInstanceOf[js.Any]).asInstanceOf[RemoteConfig]
   
-  object securityRules {
-    
-    inline def apply(): SecurityRules = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[SecurityRules]
-    inline def apply(app: App): SecurityRules = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[SecurityRules]
-    
-    @JSImport("firebase-admin/lib/firebase-namespace", "securityRules")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def securityRules(): SecurityRules = ^.asInstanceOf[js.Dynamic].applyDynamic("securityRules")().asInstanceOf[SecurityRules]
+  inline def securityRules(app: App): SecurityRules = ^.asInstanceOf[js.Dynamic].applyDynamic("securityRules")(app.asInstanceOf[js.Any]).asInstanceOf[SecurityRules]
   
-  object storage {
-    
-    inline def apply(): Storage = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Storage]
-    inline def apply(app: App): Storage = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Storage]
-    
-    @JSImport("firebase-admin/lib/firebase-namespace", "storage")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def storage(): Storage = ^.asInstanceOf[js.Dynamic].applyDynamic("storage")().asInstanceOf[Storage]
+  inline def storage(app: App): Storage = ^.asInstanceOf[js.Dynamic].applyDynamic("storage")(app.asInstanceOf[js.Any]).asInstanceOf[Storage]
 }

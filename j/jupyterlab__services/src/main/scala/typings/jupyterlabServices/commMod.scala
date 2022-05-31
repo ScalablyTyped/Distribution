@@ -15,7 +15,6 @@ import typings.std.ArrayBuffer
 import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commMod {
@@ -30,22 +29,18 @@ object commMod {
       */
     def this(target: String, id: String, kernel: IKernelConnection, disposeCb: js.Function0[Unit]) = this()
     
-    var _id: js.Any = js.native
+    /* private */ var _id: js.Any = js.native
     
-    var _kernel: js.Any = js.native
+    /* private */ var _kernel: js.Any = js.native
     
-    var _onClose: js.Any = js.native
+    /* private */ var _onClose: js.Any = js.native
     
-    var _onMsg: js.Any = js.native
+    /* private */ var _onMsg: js.Any = js.native
     
-    var _target: js.Any = js.native
+    /* private */ var _target: js.Any = js.native
     
     def close(data: JSONObject): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
-    def close(
-      data: JSONObject,
-      metadata: js.UndefOr[scala.Nothing],
-      buffers: js.Array[ArrayBuffer | ArrayBufferView]
-    ): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+    def close(data: JSONObject, metadata: Unit, buffers: js.Array[ArrayBuffer | ArrayBufferView]): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
     def close(data: JSONObject, metadata: JSONObject): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
     def close(data: JSONObject, metadata: JSONObject, buffers: js.Array[ArrayBuffer | ArrayBufferView]): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
     
@@ -54,6 +49,30 @@ object commMod {
       */
     @JSName("commId")
     def commId_MCommHandler: String = js.native
+    
+    /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    /* InferMemberOverrides */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
     
     /**
       * Get the callback for a comm close event.
@@ -91,11 +110,7 @@ object commMod {
     def onMsg_=(cb: js.Function1[/* msg */ ICommMsgMsg[iopub | shell], Unit | js.Thenable[Unit]]): Unit = js.native
     
     def open(data: JSONObject): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
-    def open(
-      data: JSONObject,
-      metadata: js.UndefOr[scala.Nothing],
-      buffers: js.Array[ArrayBuffer | ArrayBufferView]
-    ): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+    def open(data: JSONObject, metadata: Unit, buffers: js.Array[ArrayBuffer | ArrayBufferView]): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
     def open(data: JSONObject, metadata: JSONObject): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
     def open(data: JSONObject, metadata: JSONObject, buffers: js.Array[ArrayBuffer | ArrayBufferView]): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
     
@@ -108,25 +123,15 @@ object commMod {
       * **See also:** [[ICommMsg]]
       */
     def send(data: JSONObject): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+    def send(data: JSONObject, metadata: Unit, buffers: js.Array[ArrayBuffer | ArrayBufferView]): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
     def send(
       data: JSONObject,
-      metadata: js.UndefOr[scala.Nothing],
-      buffers: js.UndefOr[scala.Nothing],
-      disposeOnDone: Boolean
-    ): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
-    def send(
-      data: JSONObject,
-      metadata: js.UndefOr[scala.Nothing],
-      buffers: js.Array[ArrayBuffer | ArrayBufferView]
-    ): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
-    def send(
-      data: JSONObject,
-      metadata: js.UndefOr[scala.Nothing],
+      metadata: Unit,
       buffers: js.Array[ArrayBuffer | ArrayBufferView],
       disposeOnDone: Boolean
     ): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+    def send(data: JSONObject, metadata: Unit, buffers: Unit, disposeOnDone: Boolean): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
     def send(data: JSONObject, metadata: JSONObject): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
-    def send(data: JSONObject, metadata: JSONObject, buffers: js.UndefOr[scala.Nothing], disposeOnDone: Boolean): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
     def send(data: JSONObject, metadata: JSONObject, buffers: js.Array[ArrayBuffer | ArrayBufferView]): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
     def send(
       data: JSONObject,
@@ -134,6 +139,7 @@ object commMod {
       buffers: js.Array[ArrayBuffer | ArrayBufferView],
       disposeOnDone: Boolean
     ): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+    def send(data: JSONObject, metadata: JSONObject, buffers: Unit, disposeOnDone: Boolean): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
     
     /**
       * The target name for the comm channel.

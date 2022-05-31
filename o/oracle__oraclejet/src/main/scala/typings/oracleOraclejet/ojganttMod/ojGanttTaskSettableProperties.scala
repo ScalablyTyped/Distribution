@@ -15,44 +15,43 @@ import typings.oracleOraclejet.oracleOraclejetStrings.start
 import typings.oracleOraclejet.oracleOraclejetStrings.summary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ojGanttTaskSettableProperties extends JetSettableProperties {
+trait ojGanttTaskSettableProperties
+  extends StObject
+     with JetSettableProperties {
   
-  var baseline: End = js.native
+  var baseline: End
   
-  var borderRadius: String = js.native
+  var borderRadius: String
   
-  var end: String = js.native
+  var end: String
   
-  var height: Double | Null = js.native
+  var height: Double | Null
   
-  var label: String = js.native
+  var label: String
   
-  var labelPosition: start | innerCenter | innerStart | innerEnd | end | none = js.native
+  var labelPosition: start | innerCenter | innerStart | innerEnd | end | none
   
-  var labelStyle: js.Object = js.native
+  var labelStyle: js.Object
   
-  var progress: Value = js.native
+  var progress: Value
   
-  var rowId: js.UndefOr[js.Any] = js.native
+  var rowId: js.UndefOr[js.Any] = js.undefined
   
-  var shortDesc: String | Null = js.native
+  var shortDesc: String | Null
   
-  var start: String = js.native
+  var start: String
   
-  var svgClassName: String = js.native
+  var svgClassName: String
   
-  var svgStyle: js.Object = js.native
+  var svgStyle: js.Object
   
-  var `type`: normal | milestone | summary | auto = js.native
+  var `type`: normal | milestone | summary | auto
 }
 object ojGanttTaskSettableProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     baseline: End,
     borderRadius: String,
     end: String,
@@ -65,63 +64,45 @@ object ojGanttTaskSettableProperties {
     svgStyle: js.Object,
     `type`: normal | milestone | summary | auto
   ): ojGanttTaskSettableProperties = {
-    val __obj = js.Dynamic.literal(baseline = baseline.asInstanceOf[js.Any], borderRadius = borderRadius.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelPosition = labelPosition.asInstanceOf[js.Any], labelStyle = labelStyle.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], svgClassName = svgClassName.asInstanceOf[js.Any], svgStyle = svgStyle.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(baseline = baseline.asInstanceOf[js.Any], borderRadius = borderRadius.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelPosition = labelPosition.asInstanceOf[js.Any], labelStyle = labelStyle.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], svgClassName = svgClassName.asInstanceOf[js.Any], svgStyle = svgStyle.asInstanceOf[js.Any], height = null, shortDesc = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojGanttTaskSettableProperties]
   }
   
-  @scala.inline
-  implicit class ojGanttTaskSettablePropertiesMutableBuilder[Self <: ojGanttTaskSettableProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ojGanttTaskSettableProperties](x: Self) {
     
-    @scala.inline
-    def setBaseline(value: End): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
+    inline def setBaseline(value: End): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderRadius(value: String): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    inline def setBorderRadius(value: String): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightNull: Self = StObject.set(x, "height", null)
+    inline def setHeightNull: Self = StObject.set(x, "height", null)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelPosition(value: start | innerCenter | innerStart | innerEnd | end | none): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
+    inline def setLabelPosition(value: start | innerCenter | innerStart | innerEnd | end | none): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelStyle(value: js.Object): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
+    inline def setLabelStyle(value: js.Object): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgress(value: Value): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: Value): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowId(value: js.Any): Self = StObject.set(x, "rowId", value.asInstanceOf[js.Any])
+    inline def setRowId(value: js.Any): Self = StObject.set(x, "rowId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowIdUndefined: Self = StObject.set(x, "rowId", js.undefined)
+    inline def setRowIdUndefined: Self = StObject.set(x, "rowId", js.undefined)
     
-    @scala.inline
-    def setShortDesc(value: String): Self = StObject.set(x, "shortDesc", value.asInstanceOf[js.Any])
+    inline def setShortDesc(value: String): Self = StObject.set(x, "shortDesc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortDescNull: Self = StObject.set(x, "shortDesc", null)
+    inline def setShortDescNull: Self = StObject.set(x, "shortDesc", null)
     
-    @scala.inline
-    def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgClassName(value: String): Self = StObject.set(x, "svgClassName", value.asInstanceOf[js.Any])
+    inline def setSvgClassName(value: String): Self = StObject.set(x, "svgClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgStyle(value: js.Object): Self = StObject.set(x, "svgStyle", value.asInstanceOf[js.Any])
+    inline def setSvgStyle(value: js.Object): Self = StObject.set(x, "svgStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: normal | milestone | summary | auto): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: normal | milestone | summary | auto): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

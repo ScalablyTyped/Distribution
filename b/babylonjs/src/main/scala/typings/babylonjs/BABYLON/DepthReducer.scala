@@ -2,15 +2,16 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DepthReducer extends MinMaxReducer {
+trait DepthReducer
+  extends StObject
+     with MinMaxReducer {
   
-  var _depthRenderer: js.Any = js.native
+  /* private */ var _depthRenderer: js.Any = js.native
   
-  var _depthRendererId: js.Any = js.native
+  /* private */ var _depthRendererId: js.Any = js.native
   
   /**
     * Gets the depth renderer used for the computation.
@@ -25,16 +26,11 @@ trait DepthReducer extends MinMaxReducer {
     * @param forceFullscreenViewport Forces the post processes used for the reduction to be applied without taking into account viewport (defaults to true)
     */
   def setDepthRenderer(): Unit = js.native
-  def setDepthRenderer(
-    depthRenderer: js.UndefOr[Nullable[DepthRenderer]],
-    `type`: js.UndefOr[scala.Nothing],
-    forceFullscreenViewport: Boolean
-  ): Unit = js.native
-  def setDepthRenderer(depthRenderer: js.UndefOr[Nullable[DepthRenderer]], `type`: Double): Unit = js.native
-  def setDepthRenderer(
-    depthRenderer: js.UndefOr[Nullable[DepthRenderer]],
-    `type`: Double,
-    forceFullscreenViewport: Boolean
-  ): Unit = js.native
+  def setDepthRenderer(depthRenderer: Unit, `type`: Double): Unit = js.native
+  def setDepthRenderer(depthRenderer: Unit, `type`: Double, forceFullscreenViewport: Boolean): Unit = js.native
+  def setDepthRenderer(depthRenderer: Unit, `type`: Unit, forceFullscreenViewport: Boolean): Unit = js.native
   def setDepthRenderer(depthRenderer: Nullable[DepthRenderer]): Unit = js.native
+  def setDepthRenderer(depthRenderer: Nullable[DepthRenderer], `type`: Double): Unit = js.native
+  def setDepthRenderer(depthRenderer: Nullable[DepthRenderer], `type`: Double, forceFullscreenViewport: Boolean): Unit = js.native
+  def setDepthRenderer(depthRenderer: Nullable[DepthRenderer], `type`: Unit, forceFullscreenViewport: Boolean): Unit = js.native
 }

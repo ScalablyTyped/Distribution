@@ -18,7 +18,6 @@ import typings.luminoWidgets.mod.Widget
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object widgetMod {
@@ -30,27 +29,24 @@ object widgetMod {
   }
   object CSVDocumentWidget {
     
-    @js.native
-    trait IOptions extends IOptionsOptionalContent[CSVViewer, IModel] {
+    trait IOptions
+      extends StObject
+         with IOptionsOptionalContent[CSVViewer, IModel] {
       
-      var delimiter: js.UndefOr[String] = js.native
+      var delimiter: js.UndefOr[String] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(context: IContext[IModel]): IOptions = {
+      inline def apply(context: IContext[IModel]): IOptions = {
         val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+        inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+        inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
       }
     }
   }
@@ -63,29 +59,29 @@ object widgetMod {
       */
     def this(options: typings.jupyterlabCsvviewer.widgetMod.CSVViewer.IOptions) = this()
     
-    var _baseRenderer: js.Any = js.native
+    /* private */ var _baseRenderer: js.Any = js.native
     
-    var _context: js.Any = js.native
+    /* private */ var _context: js.Any = js.native
     
-    var _delimiter: js.Any = js.native
+    /* private */ var _delimiter: js.Any = js.native
     
-    var _grid: js.Any = js.native
+    /* private */ var _grid: js.Any = js.native
     
-    var _monitor: js.Any = js.native
+    /* private */ var _monitor: js.Any = js.native
     
-    var _revealed: js.Any = js.native
+    /* private */ var _revealed: js.Any = js.native
     
-    var _searchService: js.Any = js.native
+    /* private */ var _searchService: js.Any = js.native
     
     /**
       * Create the model for the grid.
       */
-    var _updateGrid: js.Any = js.native
+    /* private */ var _updateGrid: js.Any = js.native
     
     /**
       * Update the renderer for the grid.
       */
-    var _updateRenderer: js.Any = js.native
+    /* private */ var _updateRenderer: js.Any = js.native
     
     /**
       * The CSV widget's context.
@@ -129,27 +125,23 @@ object widgetMod {
     /**
       * Instantiation options for CSV widgets.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The document context for the CSV being rendered by the widget.
         */
-      var context: Context = js.native
+      var context: Context
     }
     object IOptions {
       
-      @scala.inline
-      def apply(context: Context): typings.jupyterlabCsvviewer.widgetMod.CSVViewer.IOptions = {
+      inline def apply(context: Context): typings.jupyterlabCsvviewer.widgetMod.CSVViewer.IOptions = {
         val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.jupyterlabCsvviewer.widgetMod.CSVViewer.IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: typings.jupyterlabCsvviewer.widgetMod.CSVViewer.IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.jupyterlabCsvviewer.widgetMod.CSVViewer.IOptions](x: Self) {
         
-        @scala.inline
-        def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+        inline def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -168,22 +160,22 @@ object widgetMod {
   class GridSearchService protected () extends StObject {
     def this(grid: DataGrid) = this()
     
-    var _changed: js.Any = js.native
+    /* private */ var _changed: js.Any = js.native
     
-    var _column: js.Any = js.native
+    /* private */ var _column: js.Any = js.native
     
-    var _grid: js.Any = js.native
+    /* private */ var _grid: js.Any = js.native
     
-    var _looping: js.Any = js.native
+    /* private */ var _looping: js.Any = js.native
     
-    var _query: js.Any = js.native
+    /* private */ var _query: js.Any = js.native
     
-    var _row: js.Any = js.native
+    /* private */ var _row: js.Any = js.native
     
     /**
       * Wrap indices if needed to just before the start or just after the end.
       */
-    var _wrapRows: js.Any = js.native
+    /* private */ var _wrapRows: js.Any = js.native
     
     /**
       * Returns a cellrenderer config function to render each cell background.

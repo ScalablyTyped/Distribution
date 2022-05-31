@@ -2,7 +2,6 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.AlphaState")
@@ -11,4 +10,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Initializes the state.
   */
 class AlphaState ()
-  extends typings.babylonjs.BABYLON.AlphaState
+  extends StObject
+     with typings.babylonjs.BABYLON.AlphaState

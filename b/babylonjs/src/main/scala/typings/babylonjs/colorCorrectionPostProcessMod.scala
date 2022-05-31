@@ -8,7 +8,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colorCorrectionPostProcessMod {
@@ -31,7 +30,7 @@ object colorCorrectionPostProcessMod {
       colorTableUrl: String,
       options: Double,
       camera: Camera,
-      samplingMode: js.UndefOr[scala.Nothing],
+      samplingMode: Double,
       engine: Engine
     ) = this()
     def this(
@@ -39,15 +38,7 @@ object colorCorrectionPostProcessMod {
       colorTableUrl: String,
       options: Double,
       camera: Camera,
-      samplingMode: Double,
-      engine: Engine
-    ) = this()
-    def this(
-      name: String,
-      colorTableUrl: String,
-      options: PostProcessOptions,
-      camera: Camera,
-      samplingMode: js.UndefOr[scala.Nothing],
+      samplingMode: Unit,
       engine: Engine
     ) = this()
     def this(
@@ -61,20 +52,10 @@ object colorCorrectionPostProcessMod {
     def this(
       name: String,
       colorTableUrl: String,
-      options: Double,
+      options: PostProcessOptions,
       camera: Camera,
-      samplingMode: js.UndefOr[scala.Nothing],
-      engine: js.UndefOr[scala.Nothing],
-      reusable: Boolean
-    ) = this()
-    def this(
-      name: String,
-      colorTableUrl: String,
-      options: Double,
-      camera: Camera,
-      samplingMode: js.UndefOr[scala.Nothing],
-      engine: Engine,
-      reusable: Boolean
+      samplingMode: Unit,
+      engine: Engine
     ) = this()
     def this(
       name: String,
@@ -82,7 +63,7 @@ object colorCorrectionPostProcessMod {
       options: Double,
       camera: Camera,
       samplingMode: Double,
-      engine: js.UndefOr[scala.Nothing],
+      engine: Unit,
       reusable: Boolean
     ) = this()
     def this(
@@ -97,18 +78,18 @@ object colorCorrectionPostProcessMod {
     def this(
       name: String,
       colorTableUrl: String,
-      options: PostProcessOptions,
+      options: Double,
       camera: Camera,
-      samplingMode: js.UndefOr[scala.Nothing],
-      engine: js.UndefOr[scala.Nothing],
+      samplingMode: Unit,
+      engine: Unit,
       reusable: Boolean
     ) = this()
     def this(
       name: String,
       colorTableUrl: String,
-      options: PostProcessOptions,
+      options: Double,
       camera: Camera,
-      samplingMode: js.UndefOr[scala.Nothing],
+      samplingMode: Unit,
       engine: Engine,
       reusable: Boolean
     ) = this()
@@ -118,7 +99,7 @@ object colorCorrectionPostProcessMod {
       options: PostProcessOptions,
       camera: Camera,
       samplingMode: Double,
-      engine: js.UndefOr[scala.Nothing],
+      engine: Unit,
       reusable: Boolean
     ) = this()
     def this(
@@ -127,11 +108,29 @@ object colorCorrectionPostProcessMod {
       options: PostProcessOptions,
       camera: Camera,
       samplingMode: Double,
+      engine: Engine,
+      reusable: Boolean
+    ) = this()
+    def this(
+      name: String,
+      colorTableUrl: String,
+      options: PostProcessOptions,
+      camera: Camera,
+      samplingMode: Unit,
+      engine: Unit,
+      reusable: Boolean
+    ) = this()
+    def this(
+      name: String,
+      colorTableUrl: String,
+      options: PostProcessOptions,
+      camera: Camera,
+      samplingMode: Unit,
       engine: Engine,
       reusable: Boolean
     ) = this()
     
-    var _colorTableTexture: js.Any = js.native
+    /* private */ var _colorTableTexture: js.Any = js.native
     
     /**
       * Gets the color table url used to create the LUT texture
@@ -141,9 +140,11 @@ object colorCorrectionPostProcessMod {
   /* static members */
   object ColorCorrectionPostProcess {
     
-    /** @hidden */
-    @JSImport("babylonjs/PostProcesses/colorCorrectionPostProcess", "ColorCorrectionPostProcess._Parse")
+    @JSImport("babylonjs/PostProcesses/colorCorrectionPostProcess", "ColorCorrectionPostProcess")
     @js.native
-    def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): Nullable[ColorCorrectionPostProcess] = js.native
+    val ^ : js.Any = js.native
+    
+    /** @hidden */
+    inline def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): Nullable[ColorCorrectionPostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[ColorCorrectionPostProcess]]
   }
 }

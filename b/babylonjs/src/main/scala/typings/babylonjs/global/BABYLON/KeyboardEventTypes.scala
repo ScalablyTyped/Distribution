@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.KeyboardEventTypes")
 @js.native
 class KeyboardEventTypes ()
-  extends typings.babylonjs.BABYLON.KeyboardEventTypes
+  extends StObject
+     with typings.babylonjs.BABYLON.KeyboardEventTypes
 /* static members */
 object KeyboardEventTypes {
   

@@ -2,10 +2,8 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IIOptionShadowDepthMaterial extends StObject {
   
   /** Variables in the vertex shader code that need to have their names remapped.
@@ -15,35 +13,28 @@ trait IIOptionShadowDepthMaterial extends StObject {
     * the name to use instead by using: ["worldPos", "myWorldPosVar"] assuming the variable is named myWorldPosVar in your code.
     * If the normal must also be remapped: ["worldPos", "myWorldPosVar", "vNormalW", "myWorldNormal"]
     */
-  var remappedVariables: js.UndefOr[js.Array[String]] = js.native
+  var remappedVariables: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Set standalone to true if the base material wrapped by ShadowDepthMaterial is not used for a regular object but for depth shadow generation only */
-  var standalone: js.UndefOr[Boolean] = js.native
+  var standalone: js.UndefOr[Boolean] = js.undefined
 }
 object IIOptionShadowDepthMaterial {
   
-  @scala.inline
-  def apply(): IIOptionShadowDepthMaterial = {
+  inline def apply(): IIOptionShadowDepthMaterial = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IIOptionShadowDepthMaterial]
   }
   
-  @scala.inline
-  implicit class IIOptionShadowDepthMaterialMutableBuilder[Self <: IIOptionShadowDepthMaterial] (val x: Self) extends AnyVal {
+  extension [Self <: IIOptionShadowDepthMaterial](x: Self) {
     
-    @scala.inline
-    def setRemappedVariables(value: js.Array[String]): Self = StObject.set(x, "remappedVariables", value.asInstanceOf[js.Any])
+    inline def setRemappedVariables(value: js.Array[String]): Self = StObject.set(x, "remappedVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemappedVariablesUndefined: Self = StObject.set(x, "remappedVariables", js.undefined)
+    inline def setRemappedVariablesUndefined: Self = StObject.set(x, "remappedVariables", js.undefined)
     
-    @scala.inline
-    def setRemappedVariablesVarargs(value: String*): Self = StObject.set(x, "remappedVariables", js.Array(value :_*))
+    inline def setRemappedVariablesVarargs(value: String*): Self = StObject.set(x, "remappedVariables", js.Array(value :_*))
     
-    @scala.inline
-    def setStandalone(value: Boolean): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
+    inline def setStandalone(value: Boolean): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandaloneUndefined: Self = StObject.set(x, "standalone", js.undefined)
+    inline def setStandaloneUndefined: Self = StObject.set(x, "standalone", js.undefined)
   }
 }

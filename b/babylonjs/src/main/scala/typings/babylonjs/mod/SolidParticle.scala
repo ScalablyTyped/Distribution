@@ -3,7 +3,6 @@ package typings.babylonjs.mod
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "SolidParticle")
@@ -54,7 +53,19 @@ class SolidParticle protected ()
     shapeId: Double,
     idxInShape: Double,
     sps: typings.babylonjs.solidParticleSystemMod.SolidParticleSystem,
-    modelBoundingInfo: js.UndefOr[Nullable[typings.babylonjs.boundingInfoMod.BoundingInfo]],
+    modelBoundingInfo: Unit,
+    materialIndex: Nullable[Double]
+  ) = this()
+  def this(
+    particleIndex: Double,
+    particleId: Double,
+    positionIndex: Double,
+    indiceIndex: Double,
+    model: Nullable[typings.babylonjs.solidParticleMod.ModelShape],
+    shapeId: Double,
+    idxInShape: Double,
+    sps: typings.babylonjs.solidParticleSystemMod.SolidParticleSystem,
+    modelBoundingInfo: Nullable[typings.babylonjs.boundingInfoMod.BoundingInfo],
     materialIndex: Nullable[Double]
   ) = this()
 }

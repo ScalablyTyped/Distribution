@@ -12,7 +12,6 @@ import typings.jupyterlabServices.contentsMod.Contents.IManager
 import typings.jupyterlabServices.sessionSessionMod.ISessionConnection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object registryMod {
@@ -24,16 +23,18 @@ object registryMod {
     *
     * @param options - The options for initializing the instance.
     */
-  class RenderMimeRegistry () extends IRenderMimeRegistry {
+  class RenderMimeRegistry ()
+    extends StObject
+       with IRenderMimeRegistry {
     def this(options: IOptions) = this()
     
-    var _factories: js.Any = js.native
+    /* private */ var _factories: js.Any = js.native
     
-    var _id: js.Any = js.native
+    /* private */ var _id: js.Any = js.native
     
-    var _ranks: js.Any = js.native
+    /* private */ var _ranks: js.Any = js.native
     
-    var _types: js.Any = js.native
+    /* private */ var _types: js.Any = js.native
     
     /**
       * The ordered list of mimeTypes.
@@ -48,17 +49,28 @@ object registryMod {
       */
     @JSImport("@jupyterlab/rendermime/lib/registry", "RenderMimeRegistry.UrlResolver")
     @js.native
-    class UrlResolver protected () extends IResolver {
+    class UrlResolver protected ()
+      extends StObject
+         with IResolver {
       /**
         * Create a new url resolver.
         */
       def this(options: IUrlResolverOptions) = this()
       
-      var _contents: js.Any = js.native
+      /* private */ var _contents: js.Any = js.native
       
-      var _path: js.Any = js.native
+      /* private */ var _path: js.Any = js.native
       
-      var _session: js.Any = js.native
+      /* private */ var _session: js.Any = js.native
+      
+      /**
+        * Get the download url for a given absolute url path.
+        *
+        * #### Notes
+        * This URL may include a query parameter.
+        */
+      /* CompleteClass */
+      override def getDownloadUrl(url: String): js.Promise[String] = js.native
       
       /**
         * Whether the URL should be handled by the resolver
@@ -78,99 +90,90 @@ object registryMod {
         */
       def path: String = js.native
       def path_=(value: String): Unit = js.native
+      
+      /**
+        * Resolve a relative url to an absolute url path.
+        */
+      /* CompleteClass */
+      override def resolveUrl(url: String): js.Promise[String] = js.native
     }
     
     /**
       * The options used to initialize a rendermime instance.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * Initial factories to add to the rendermime instance.
         */
-      var initialFactories: js.UndefOr[js.Array[IRendererFactory]] = js.native
+      var initialFactories: js.UndefOr[js.Array[IRendererFactory]] = js.undefined
       
       /**
         * An optional LaTeX typesetter.
         */
-      var latexTypesetter: js.UndefOr[ILatexTypesetter] = js.native
+      var latexTypesetter: js.UndefOr[ILatexTypesetter] = js.undefined
       
       /**
         * An optional path handler.
         */
-      var linkHandler: js.UndefOr[ILinkHandler] = js.native
+      var linkHandler: js.UndefOr[ILinkHandler] = js.undefined
       
       /**
         * The initial resolver object.
         *
         * The default is `null`.
         */
-      var resolver: js.UndefOr[IResolver] = js.native
+      var resolver: js.UndefOr[IResolver] = js.undefined
       
       /**
         * The sanitizer used to sanitize untrusted html inputs.
         *
         * If not given, a default sanitizer will be used.
         */
-      var sanitizer: js.UndefOr[ISanitizer] = js.native
+      var sanitizer: js.UndefOr[ISanitizer] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): IOptions = {
+      inline def apply(): IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setInitialFactories(value: js.Array[IRendererFactory]): Self = StObject.set(x, "initialFactories", value.asInstanceOf[js.Any])
+        inline def setInitialFactories(value: js.Array[IRendererFactory]): Self = StObject.set(x, "initialFactories", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInitialFactoriesUndefined: Self = StObject.set(x, "initialFactories", js.undefined)
+        inline def setInitialFactoriesUndefined: Self = StObject.set(x, "initialFactories", js.undefined)
         
-        @scala.inline
-        def setInitialFactoriesVarargs(value: IRendererFactory*): Self = StObject.set(x, "initialFactories", js.Array(value :_*))
+        inline def setInitialFactoriesVarargs(value: IRendererFactory*): Self = StObject.set(x, "initialFactories", js.Array(value :_*))
         
-        @scala.inline
-        def setLatexTypesetter(value: ILatexTypesetter): Self = StObject.set(x, "latexTypesetter", value.asInstanceOf[js.Any])
+        inline def setLatexTypesetter(value: ILatexTypesetter): Self = StObject.set(x, "latexTypesetter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLatexTypesetterUndefined: Self = StObject.set(x, "latexTypesetter", js.undefined)
+        inline def setLatexTypesetterUndefined: Self = StObject.set(x, "latexTypesetter", js.undefined)
         
-        @scala.inline
-        def setLinkHandler(value: ILinkHandler): Self = StObject.set(x, "linkHandler", value.asInstanceOf[js.Any])
+        inline def setLinkHandler(value: ILinkHandler): Self = StObject.set(x, "linkHandler", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLinkHandlerUndefined: Self = StObject.set(x, "linkHandler", js.undefined)
+        inline def setLinkHandlerUndefined: Self = StObject.set(x, "linkHandler", js.undefined)
         
-        @scala.inline
-        def setResolver(value: IResolver): Self = StObject.set(x, "resolver", value.asInstanceOf[js.Any])
+        inline def setResolver(value: IResolver): Self = StObject.set(x, "resolver", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResolverUndefined: Self = StObject.set(x, "resolver", js.undefined)
+        inline def setResolverUndefined: Self = StObject.set(x, "resolver", js.undefined)
         
-        @scala.inline
-        def setSanitizer(value: ISanitizer): Self = StObject.set(x, "sanitizer", value.asInstanceOf[js.Any])
+        inline def setSanitizer(value: ISanitizer): Self = StObject.set(x, "sanitizer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSanitizerUndefined: Self = StObject.set(x, "sanitizer", js.undefined)
+        inline def setSanitizerUndefined: Self = StObject.set(x, "sanitizer", js.undefined)
       }
     }
     
     /**
       * The options used to create a UrlResolver.
       */
-    @js.native
     trait IUrlResolverOptions extends StObject {
       
       /**
         * The contents manager used by the resolver.
         */
-      var contents: IManager = js.native
+      var contents: IManager
       
       /**
         * The path providing context for local urls.
@@ -178,7 +181,7 @@ object registryMod {
         * #### Notes
         * Either session or path must be given, and path takes precedence.
         */
-      var path: js.UndefOr[String] = js.native
+      var path: js.UndefOr[String] = js.undefined
       
       /**
         * The session used by the resolver.
@@ -191,33 +194,26 @@ object registryMod {
         *
         * TODO: remove this option and make `path` required.
         */
-      var session: js.UndefOr[ISessionContext | ISessionConnection] = js.native
+      var session: js.UndefOr[ISessionContext | ISessionConnection] = js.undefined
     }
     object IUrlResolverOptions {
       
-      @scala.inline
-      def apply(contents: IManager): IUrlResolverOptions = {
+      inline def apply(contents: IManager): IUrlResolverOptions = {
         val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
         __obj.asInstanceOf[IUrlResolverOptions]
       }
       
-      @scala.inline
-      implicit class IUrlResolverOptionsMutableBuilder[Self <: IUrlResolverOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IUrlResolverOptions](x: Self) {
         
-        @scala.inline
-        def setContents(value: IManager): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+        inline def setContents(value: IManager): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+        inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
         
-        @scala.inline
-        def setSession(value: ISessionContext | ISessionConnection): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+        inline def setSession(value: ISessionContext | ISessionConnection): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
+        inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
       }
     }
   }

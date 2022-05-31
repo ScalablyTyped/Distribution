@@ -1,5 +1,6 @@
 package typings.awsSdkClientPinpointBrowser.mod
 
+import typings.awsSdkClientPinpointBrowser.typesUpdateCampaignInputMod.UpdateCampaignInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class UpdateCampaignCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.updateCampaignCommandMod.UpdateCampaignCommand {
-  def this(input: typings.awsSdkClientPinpointBrowser.typesUpdateCampaignInputMod.UpdateCampaignInput) = this()
+  def this(input: UpdateCampaignInput) = this()
 }

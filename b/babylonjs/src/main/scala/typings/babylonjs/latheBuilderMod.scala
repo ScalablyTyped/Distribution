@@ -6,7 +6,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object latheBuilderMod {
@@ -16,6 +15,10 @@ object latheBuilderMod {
   class LatheBuilder () extends StObject
   /* static members */
   object LatheBuilder {
+    
+    @JSImport("babylonjs/Meshes/Builders/latheBuilder", "LatheBuilder")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Creates lathe mesh.
@@ -37,11 +40,7 @@ object latheBuilderMod {
       * @returns the lathe mesh
       * @see https://doc.babylonjs.com/how_to/parametric_shapes#lathe
       */
-    @JSImport("babylonjs/Meshes/Builders/latheBuilder", "LatheBuilder.CreateLathe")
-    @js.native
-    def CreateLathe(name: String, options: Clip): Mesh = js.native
-    @JSImport("babylonjs/Meshes/Builders/latheBuilder", "LatheBuilder.CreateLathe")
-    @js.native
-    def CreateLathe(name: String, options: Clip, scene: Nullable[Scene]): Mesh = js.native
+    inline def CreateLathe(name: String, options: Clip): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLathe")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreateLathe(name: String, options: Clip, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLathe")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
   }
 }

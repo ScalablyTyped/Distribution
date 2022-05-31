@@ -25,36 +25,33 @@ import typings.oracleOraclejet.oracleOraclejetStrings.triangleDown
 import typings.oracleOraclejet.oracleOraclejetStrings.triangleUp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Pattern extends StObject {
   
-  var borderColor: String = js.native
+  var borderColor: String
   
-  var borderRadius: String = js.native
+  var borderRadius: String
   
-  var borderWidth: Double = js.native
+  var borderWidth: Double
   
-  var color: String = js.native
+  var color: String
   
-  var height: Double = js.native
+  var height: Double
   
-  var opacity: Double = js.native
+  var opacity: Double
   
-  var pattern: smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | none = js.native
+  var pattern: smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | none
   
-  var shape: circle | ellipse | square | plus | diamond | triangleUp | triangleDown | human | rectangle | star = js.native
+  var shape: circle | ellipse | square | plus | diamond | triangleUp | triangleDown | human | rectangle | star
   
-  var source: String = js.native
+  var source: String
   
-  var width: Double = js.native
+  var width: Double
 }
 object Pattern {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     borderColor: String,
     borderRadius: String,
     borderWidth: Double,
@@ -70,41 +67,30 @@ object Pattern {
     __obj.asInstanceOf[Pattern]
   }
   
-  @scala.inline
-  implicit class PatternMutableBuilder[Self <: Pattern] (val x: Self) extends AnyVal {
+  extension [Self <: Pattern](x: Self) {
     
-    @scala.inline
-    def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderRadius(value: String): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    inline def setBorderRadius(value: String): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+    inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPattern(
+    inline def setPattern(
       value: smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | none
     ): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShape(
+    inline def setShape(
       value: circle | ellipse | square | plus | diamond | triangleUp | triangleDown | human | rectangle | star
     ): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

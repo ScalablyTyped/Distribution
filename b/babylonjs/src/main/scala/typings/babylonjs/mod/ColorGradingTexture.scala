@@ -3,7 +3,6 @@ package typings.babylonjs.mod
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "ColorGradingTexture")
@@ -40,9 +39,7 @@ object ColorGradingTexture {
     * @param rootUrl The root url of the data assets to load
     * @return A color gradind texture
     */
-  @JSImport("babylonjs", "ColorGradingTexture.Parse")
-  @js.native
-  def Parse(parsedTexture: js.Any, scene: typings.babylonjs.sceneMod.Scene): Nullable[typings.babylonjs.colorGradingTextureMod.ColorGradingTexture] = js.native
+  inline def Parse(parsedTexture: js.Any, scene: typings.babylonjs.sceneMod.Scene): Nullable[typings.babylonjs.colorGradingTextureMod.ColorGradingTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.colorGradingTextureMod.ColorGradingTexture]]
   
   /**
     * Empty line regex stored for GC.
@@ -50,6 +47,5 @@ object ColorGradingTexture {
   @JSImport("babylonjs", "ColorGradingTexture._noneEmptyLineRegex")
   @js.native
   def _noneEmptyLineRegex: js.Any = js.native
-  @scala.inline
-  def _noneEmptyLineRegex_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_noneEmptyLineRegex")(x.asInstanceOf[js.Any])
+  inline def _noneEmptyLineRegex_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_noneEmptyLineRegex")(x.asInstanceOf[js.Any])
 }

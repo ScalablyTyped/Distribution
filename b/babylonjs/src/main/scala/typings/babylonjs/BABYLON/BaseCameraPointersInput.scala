@@ -3,34 +3,35 @@ package typings.babylonjs.BABYLON
 import typings.std.PointerEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseCameraPointersInput extends ICameraInput[Camera] {
+trait BaseCameraPointersInput
+  extends StObject
+     with ICameraInput[Camera] {
   
   /**
     * Whether keyboard modifier keys are pressed at time of last mouse event.
     */
-  var _altKey: Boolean = js.native
+  /* protected */ var _altKey: Boolean = js.native
   
   /**
     * Which mouse buttons were pressed at time of last mouse event.
     * https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/buttons
     */
-  var _buttonsPressed: Double = js.native
+  /* protected */ var _buttonsPressed: Double = js.native
   
-  var _ctrlKey: Boolean = js.native
+  /* protected */ var _ctrlKey: Boolean = js.native
   
-  var _metaKey: Boolean = js.native
+  /* protected */ var _metaKey: Boolean = js.native
   
-  var _observer: js.Any = js.native
+  /* private */ var _observer: js.Any = js.native
   
-  var _onLostFocus: js.Any = js.native
+  /* private */ var _onLostFocus: js.Any = js.native
   
-  var _pointerInput: js.Any = js.native
+  /* private */ var _pointerInput: js.Any = js.native
   
-  var _shiftKey: Boolean = js.native
+  /* protected */ var _shiftKey: Boolean = js.native
   
   /**
     * Defines the buttons associated with the input to handle camera move.
@@ -94,7 +95,7 @@ trait BaseCameraPointersInput extends ICameraInput[Camera] {
     */
   /* protected */ def onTouch(point: Nullable[PointerTouch], offsetX: Double, offsetY: Double): Unit = js.native
   
-  var pointA: js.Any = js.native
+  /* private */ var pointA: js.Any = js.native
   
-  var pointB: js.Any = js.native
+  /* private */ var pointB: js.Any = js.native
 }

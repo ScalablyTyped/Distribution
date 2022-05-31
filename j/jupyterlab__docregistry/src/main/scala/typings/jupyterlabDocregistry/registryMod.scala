@@ -38,7 +38,6 @@ import typings.luminoWidgets.docklayoutMod.DockLayout.InsertMode
 import typings.luminoWidgets.mod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object registryMod {
@@ -48,30 +47,32 @@ object registryMod {
   /**
     * Construct a new document registry.
     */
-  class DocumentRegistry () extends IDisposable {
+  class DocumentRegistry ()
+    extends StObject
+       with IDisposable {
     def this(options: IOptions) = this()
     
-    var _changed: js.Any = js.native
+    /* private */ var _changed: js.Any = js.native
     
-    var _defaultRenderedWidgetFactories: js.Any = js.native
+    /* private */ var _defaultRenderedWidgetFactories: js.Any = js.native
     
-    var _defaultWidgetFactories: js.Any = js.native
+    /* private */ var _defaultWidgetFactories: js.Any = js.native
     
-    var _defaultWidgetFactory: js.Any = js.native
+    /* private */ var _defaultWidgetFactory: js.Any = js.native
     
-    var _defaultWidgetFactoryOverrides: js.Any = js.native
+    /* private */ var _defaultWidgetFactoryOverrides: js.Any = js.native
     
-    var _extenders: js.Any = js.native
+    /* private */ var _extenders: js.Any = js.native
     
-    var _fileTypes: js.Any = js.native
+    /* private */ var _fileTypes: js.Any = js.native
     
-    var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: js.Any = js.native
     
-    var _modelFactories: js.Any = js.native
+    /* private */ var _modelFactories: js.Any = js.native
     
-    var _widgetFactories: js.Any = js.native
+    /* private */ var _widgetFactories: js.Any = js.native
     
-    var _widgetFactoriesForFileType: js.Any = js.native
+    /* private */ var _widgetFactoriesForFileType: js.Any = js.native
     
     /**
       * Add a file type to the document registry.
@@ -112,7 +113,7 @@ object registryMod {
       * If the extension is already registered for the given
       * widget name, a warning will be logged and this will be a no-op.
       */
-    def addWidgetExtension(widgetName: String, extension: WidgetExtension): IDisposable = js.native
+    def addWidgetExtension(widgetName: String, `extension`: WidgetExtension): IDisposable = js.native
     
     /**
       * Add a widget factory to the registry.
@@ -164,6 +165,20 @@ object registryMod {
       */
     def defaultWidgetFactory(): WidgetFactory = js.native
     def defaultWidgetFactory(path: String): WidgetFactory = js.native
+    
+    /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * Create an iterator over the file types that have been registered.
@@ -227,6 +242,14 @@ object registryMod {
       */
     def getWidgetFactory(widgetName: String): js.UndefOr[WidgetFactory] = js.native
     
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
     /**
       * Get whether the document registry has been disposed.
       */
@@ -354,56 +377,49 @@ object registryMod {
     /**
       * An arguments object for the `changed` signal.
       */
-    @js.native
     trait IChangedArgs extends StObject {
       
       /**
         * Whether the item was added or removed.
         */
-      val change: added | removed = js.native
+      val change: added | removed
       
       /**
         * The name of the item or the widget factory being extended.
         */
-      val name: js.UndefOr[String] = js.native
+      val name: js.UndefOr[String] = js.undefined
       
       /**
         * The type of the changed item.
         */
-      val `type`: widgetFactory | modelFactory | widgetExtension | fileType = js.native
+      val `type`: widgetFactory | modelFactory | widgetExtension | fileType
     }
     object IChangedArgs {
       
-      @scala.inline
-      def apply(change: added | removed, `type`: widgetFactory | modelFactory | widgetExtension | fileType): IChangedArgs = {
+      inline def apply(change: added | removed, `type`: widgetFactory | modelFactory | widgetExtension | fileType): IChangedArgs = {
         val __obj = js.Dynamic.literal(change = change.asInstanceOf[js.Any])
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[IChangedArgs]
       }
       
-      @scala.inline
-      implicit class IChangedArgsMutableBuilder[Self <: IChangedArgs] (val x: Self) extends AnyVal {
+      extension [Self <: IChangedArgs](x: Self) {
         
-        @scala.inline
-        def setChange(value: added | removed): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
+        inline def setChange(value: added | removed): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setType(value: widgetFactory | modelFactory | widgetExtension | fileType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: widgetFactory | modelFactory | widgetExtension | fileType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
     /**
       * The interface for a document model that represents code.
       */
-    @js.native
     trait ICodeModel
-      extends IModel
+      extends StObject
+         with IModel
          with typings.jupyterlabCodeeditor.editorMod.CodeEditor.IModel {
       
       /**
@@ -411,12 +427,11 @@ object registryMod {
         * data is stored.
         */
       /* InferMemberOverrides */
-      override val modelDB: IModelDB = js.native
+      override val modelDB: IModelDB
     }
     object ICodeModel {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         contentChanged: ISignal[ICodeModel, Unit],
         defaultKernelLanguage: String,
         defaultKernelName: String,
@@ -434,7 +449,10 @@ object registryMod {
         modelDB: IModelDB,
         readOnly: Boolean,
         selections: IObservableMap[js.Array[ITextSelection]],
-        stateChanged: ISignal[ICodeModel, typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[_, _, String]],
+        stateChanged: ISignal[
+              ICodeModel, 
+              typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[js.Any, js.Any, String]
+            ],
         toJSON: () => PartialJSONValue,
         value: IObservableString
       ): ICodeModel = {
@@ -442,11 +460,9 @@ object registryMod {
         __obj.asInstanceOf[ICodeModel]
       }
       
-      @scala.inline
-      implicit class ICodeModelMutableBuilder[Self <: ICodeModel] (val x: Self) extends AnyVal {
+      extension [Self <: ICodeModel](x: Self) {
         
-        @scala.inline
-        def setModelDB(value: IModelDB): Self = StObject.set(x, "modelDB", value.asInstanceOf[js.Any])
+        inline def setModelDB(value: IModelDB): Self = StObject.set(x, "modelDB", value.asInstanceOf[js.Any])
       }
     }
     
@@ -454,7 +470,9 @@ object registryMod {
       * The document context object.
       */
     @js.native
-    trait IContext[T /* <: IModel */] extends IDisposable {
+    trait IContext[T /* <: IModel */]
+      extends StObject
+         with IDisposable {
       
       /**
         * Add a sibling widget to the document manager.
@@ -598,64 +616,62 @@ object registryMod {
     /**
       * An interface for a file type.
       */
-    @js.native
     trait IFileType extends StObject {
       
       /**
         * The content type of the new file.
         */
-      val contentType: ContentType = js.native
+      val contentType: ContentType
       
       /**
         * An optional display name for the file type.
         */
-      val displayName: js.UndefOr[String] = js.native
+      val displayName: js.UndefOr[String] = js.undefined
       
       /**
         * The extensions of the file type (e.g. `".txt"`).  Can be a compound
         * extension (e.g. `".table.json`).
         */
-      val extensions: js.Array[String] = js.native
+      val extensions: js.Array[String]
       
       /**
         * The format of the new file.
         */
-      val fileFormat: FileFormat = js.native
+      val fileFormat: FileFormat
       
       /**
         * The icon for the file type.
         */
-      val icon: js.UndefOr[LabIcon] = js.native
+      val icon: js.UndefOr[LabIcon] = js.undefined
       
       /**
         * The icon class name for the file type.
         */
-      val iconClass: js.UndefOr[String] = js.native
+      val iconClass: js.UndefOr[String] = js.undefined
       
       /**
         * The icon label for the file type.
         */
-      val iconLabel: js.UndefOr[String] = js.native
+      val iconLabel: js.UndefOr[String] = js.undefined
       
       /**
         * The mime types associated the file type.
         */
-      val mimeTypes: js.Array[String] = js.native
+      val mimeTypes: js.Array[String]
       
       /**
         * The name of the file type.
         */
-      val name: String = js.native
+      val name: String
       
       /**
         * An optional pattern for a file name (e.g. `^Dockerfile$`).
         */
-      val pattern: js.UndefOr[String] = js.native
+      val pattern: js.UndefOr[String] = js.undefined
     }
     object IFileType {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         contentType: ContentType,
         extensions: js.Array[String],
         fileFormat: FileFormat,
@@ -666,82 +682,65 @@ object registryMod {
         __obj.asInstanceOf[IFileType]
       }
       
-      @scala.inline
-      implicit class IFileTypeMutableBuilder[Self <: IFileType] (val x: Self) extends AnyVal {
+      extension [Self <: IFileType](x: Self) {
         
-        @scala.inline
-        def setContentType(value: ContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+        inline def setContentType(value: ContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+        inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+        inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
         
-        @scala.inline
-        def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+        inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+        inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
         
-        @scala.inline
-        def setFileFormat(value: FileFormat): Self = StObject.set(x, "fileFormat", value.asInstanceOf[js.Any])
+        inline def setFileFormat(value: FileFormat): Self = StObject.set(x, "fileFormat", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIcon(value: LabIcon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: LabIcon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+        inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+        inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
         
-        @scala.inline
-        def setIconLabel(value: String): Self = StObject.set(x, "iconLabel", value.asInstanceOf[js.Any])
+        inline def setIconLabel(value: String): Self = StObject.set(x, "iconLabel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconLabelUndefined: Self = StObject.set(x, "iconLabel", js.undefined)
+        inline def setIconLabelUndefined: Self = StObject.set(x, "iconLabel", js.undefined)
         
-        @scala.inline
-        def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+        inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
         
-        @scala.inline
-        def setMimeTypes(value: js.Array[String]): Self = StObject.set(x, "mimeTypes", value.asInstanceOf[js.Any])
+        inline def setMimeTypes(value: js.Array[String]): Self = StObject.set(x, "mimeTypes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMimeTypesVarargs(value: String*): Self = StObject.set(x, "mimeTypes", js.Array(value :_*))
+        inline def setMimeTypesVarargs(value: String*): Self = StObject.set(x, "mimeTypes", js.Array(value :_*))
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+        inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+        inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
       }
     }
     
     /**
       * The interface for a document model.
       */
-    @js.native
-    trait IModel extends IDisposable {
+    trait IModel
+      extends StObject
+         with IDisposable {
       
       /**
         * A signal emitted when the document content changes.
         */
-      var contentChanged: ISignal[this.type, Unit] = js.native
+      var contentChanged: ISignal[this.type, Unit]
       
       /**
         * The default kernel language of the document.
         */
-      val defaultKernelLanguage: String = js.native
+      val defaultKernelLanguage: String
       
       /**
         * The default kernel name of the document.
         */
-      val defaultKernelName: String = js.native
+      val defaultKernelName: String
       
       /**
         * The dirty state of the model.
@@ -750,7 +749,7 @@ object registryMod {
         * This should be cleared when the document is loaded from
         * or saved to disk.
         */
-      var dirty: Boolean = js.native
+      var dirty: Boolean
       
       /**
         * Deserialize the model from JSON.
@@ -758,7 +757,7 @@ object registryMod {
         * #### Notes
         * Should emit a [contentChanged] signal.
         */
-      def fromJSON(value: ReadonlyPartialJSONValue): Unit = js.native
+      def fromJSON(value: ReadonlyPartialJSONValue): Unit
       
       /**
         * Deserialize the model from a string.
@@ -766,7 +765,7 @@ object registryMod {
         * #### Notes
         * Should emit a [contentChanged] signal.
         */
-      def fromString(value: String): Unit = js.native
+      def fromString(value: String): Unit
       
       /**
         * Initialize model state after initial data load.
@@ -775,7 +774,7 @@ object registryMod {
         * This function must be called after the initial data is loaded to set up
         * initial model state, such as an initial undo stack, etc.
         */
-      def initialize(): Unit = js.native
+      def initialize(): Unit
       
       /**
         * The underlying `IModelDB` instance in which model
@@ -785,27 +784,29 @@ object registryMod {
         * Making direct edits to the values stored in the`IModelDB`
         * is not recommended, and may produce unpredictable results.
         */
-      val modelDB: IModelDB = js.native
+      val modelDB: IModelDB
       
       /**
         * The read-only state of the model.
         */
-      var readOnly: Boolean = js.native
+      var readOnly: Boolean
       
       /**
         * A signal emitted when the model state changes.
         */
-      var stateChanged: ISignal[this.type, typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[_, _, String]] = js.native
+      var stateChanged: ISignal[
+            this.type, 
+            typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[js.Any, js.Any, String]
+          ]
       
       /**
         * Serialize the model to JSON.
         */
-      def toJSON(): PartialJSONValue = js.native
+      def toJSON(): PartialJSONValue
     }
     object IModel {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         contentChanged: ISignal[IModel, Unit],
         defaultKernelLanguage: String,
         defaultKernelName: String,
@@ -817,48 +818,44 @@ object registryMod {
         isDisposed: Boolean,
         modelDB: IModelDB,
         readOnly: Boolean,
-        stateChanged: ISignal[IModel, typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[_, _, String]],
+        stateChanged: ISignal[
+              IModel, 
+              typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[js.Any, js.Any, String]
+            ],
         toJSON: () => PartialJSONValue
       ): IModel = {
         val __obj = js.Dynamic.literal(contentChanged = contentChanged.asInstanceOf[js.Any], defaultKernelLanguage = defaultKernelLanguage.asInstanceOf[js.Any], defaultKernelName = defaultKernelName.asInstanceOf[js.Any], dirty = dirty.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), fromJSON = js.Any.fromFunction1(fromJSON), fromString = js.Any.fromFunction1(fromString), initialize = js.Any.fromFunction0(initialize), isDisposed = isDisposed.asInstanceOf[js.Any], modelDB = modelDB.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], stateChanged = stateChanged.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
         __obj.asInstanceOf[IModel]
       }
       
-      @scala.inline
-      implicit class IModelMutableBuilder[Self <: IModel] (val x: Self) extends AnyVal {
+      extension [Self <: IModel](x: Self) {
         
-        @scala.inline
-        def setContentChanged(value: ISignal[IModel, Unit]): Self = StObject.set(x, "contentChanged", value.asInstanceOf[js.Any])
+        inline def setContentChanged(value: ISignal[IModel, Unit]): Self = StObject.set(x, "contentChanged", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaultKernelLanguage(value: String): Self = StObject.set(x, "defaultKernelLanguage", value.asInstanceOf[js.Any])
+        inline def setDefaultKernelLanguage(value: String): Self = StObject.set(x, "defaultKernelLanguage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaultKernelName(value: String): Self = StObject.set(x, "defaultKernelName", value.asInstanceOf[js.Any])
+        inline def setDefaultKernelName(value: String): Self = StObject.set(x, "defaultKernelName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
+        inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFromJSON(value: ReadonlyPartialJSONValue => Unit): Self = StObject.set(x, "fromJSON", js.Any.fromFunction1(value))
+        inline def setFromJSON(value: ReadonlyPartialJSONValue => Unit): Self = StObject.set(x, "fromJSON", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setFromString(value: String => Unit): Self = StObject.set(x, "fromString", js.Any.fromFunction1(value))
+        inline def setFromString(value: String => Unit): Self = StObject.set(x, "fromString", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setInitialize(value: () => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction0(value))
+        inline def setInitialize(value: () => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setModelDB(value: IModelDB): Self = StObject.set(x, "modelDB", value.asInstanceOf[js.Any])
+        inline def setModelDB(value: IModelDB): Self = StObject.set(x, "modelDB", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+        inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStateChanged(value: ISignal[IModel, typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[_, _, String]]): Self = StObject.set(x, "stateChanged", value.asInstanceOf[js.Any])
+        inline def setStateChanged(
+          value: ISignal[
+                  IModel, 
+                  typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[js.Any, js.Any, String]
+                ]
+        ): Self = StObject.set(x, "stateChanged", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setToJSON(value: () => PartialJSONValue): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+        inline def setToJSON(value: () => PartialJSONValue): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       }
     }
     
@@ -866,7 +863,9 @@ object registryMod {
       * The interface for a model factory.
       */
     @js.native
-    trait IModelFactory[T /* <: IModel */] extends IDisposable {
+    trait IModelFactory[T /* <: IModel */]
+      extends StObject
+         with IDisposable {
       
       /**
         * The content type of the file (defaults to `"file"`).
@@ -881,9 +880,9 @@ object registryMod {
         * @returns A new document model.
         */
       def createNew(): T = js.native
-      def createNew(languagePreference: js.UndefOr[scala.Nothing], modelDB: IModelDB): T = js.native
       def createNew(languagePreference: String): T = js.native
       def createNew(languagePreference: String, modelDB: IModelDB): T = js.native
+      def createNew(languagePreference: Unit, modelDB: IModelDB): T = js.native
       
       /**
         * The format of the file (defaults to `"text"`).
@@ -904,13 +903,12 @@ object registryMod {
     /**
       * The options used to open a widget.
       */
-    @js.native
     trait IOpenOptions extends StObject {
       
       /**
         * Whether to activate the widget.  Defaults to `true`.
         */
-      var activate: js.UndefOr[Boolean] = js.native
+      var activate: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The supported insertion modes.
@@ -918,7 +916,7 @@ object registryMod {
         * An insert mode is used to specify how a widget should be added
         * to the main area relative to a reference widget.
         */
-      var mode: js.UndefOr[InsertMode] = js.native
+      var mode: js.UndefOr[InsertMode] = js.undefined
       
       /**
         * The rank order of the widget among its siblings.
@@ -926,154 +924,126 @@ object registryMod {
         * #### Notes
         * This field may be used or ignored depending on shell implementation.
         */
-      var rank: js.UndefOr[Double] = js.native
+      var rank: js.UndefOr[Double] = js.undefined
       
       /**
         * The reference widget id for the insert location.
         *
         * The default is `null`.
         */
-      var ref: js.UndefOr[String | Null] = js.native
+      var ref: js.UndefOr[String | Null] = js.undefined
     }
     object IOpenOptions {
       
-      @scala.inline
-      def apply(): IOpenOptions = {
+      inline def apply(): IOpenOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOpenOptions]
       }
       
-      @scala.inline
-      implicit class IOpenOptionsMutableBuilder[Self <: IOpenOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOpenOptions](x: Self) {
         
-        @scala.inline
-        def setActivate(value: Boolean): Self = StObject.set(x, "activate", value.asInstanceOf[js.Any])
+        inline def setActivate(value: Boolean): Self = StObject.set(x, "activate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
+        inline def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
         
-        @scala.inline
-        def setMode(value: InsertMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+        inline def setMode(value: InsertMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+        inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
         
-        @scala.inline
-        def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+        inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
+        inline def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
         
-        @scala.inline
-        def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+        inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRefNull: Self = StObject.set(x, "ref", null)
+        inline def setRefNull: Self = StObject.set(x, "ref", null)
         
-        @scala.inline
-        def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+        inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       }
     }
     
     /**
       * The options used to create a document registry.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The initial file types for the registry.
         * The [[DocumentRegistry.defaultFileTypes]] will be used if not given.
         */
-      var initialFileTypes: js.UndefOr[js.Array[IFileType]] = js.native
+      var initialFileTypes: js.UndefOr[js.Array[IFileType]] = js.undefined
       
       /**
         * The text model factory for the registry.  A default instance will
         * be used if not given.
         */
-      var textModelFactory: js.UndefOr[ModelFactory] = js.native
+      var textModelFactory: js.UndefOr[ModelFactory] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): IOptions = {
+      inline def apply(): IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setInitialFileTypes(value: js.Array[IFileType]): Self = StObject.set(x, "initialFileTypes", value.asInstanceOf[js.Any])
+        inline def setInitialFileTypes(value: js.Array[IFileType]): Self = StObject.set(x, "initialFileTypes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInitialFileTypesUndefined: Self = StObject.set(x, "initialFileTypes", js.undefined)
+        inline def setInitialFileTypesUndefined: Self = StObject.set(x, "initialFileTypes", js.undefined)
         
-        @scala.inline
-        def setInitialFileTypesVarargs(value: IFileType*): Self = StObject.set(x, "initialFileTypes", js.Array(value :_*))
+        inline def setInitialFileTypesVarargs(value: IFileType*): Self = StObject.set(x, "initialFileTypes", js.Array(value :_*))
         
-        @scala.inline
-        def setTextModelFactory(value: ModelFactory): Self = StObject.set(x, "textModelFactory", value.asInstanceOf[js.Any])
+        inline def setTextModelFactory(value: ModelFactory): Self = StObject.set(x, "textModelFactory", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextModelFactoryUndefined: Self = StObject.set(x, "textModelFactory", js.undefined)
+        inline def setTextModelFactoryUndefined: Self = StObject.set(x, "textModelFactory", js.undefined)
       }
     }
     
     /**
       * The item to be added to document toolbar.
       */
-    @js.native
     trait IToolbarItem extends StObject {
       
-      var name: String = js.native
+      var name: String
       
-      var widget: Widget = js.native
+      var widget: Widget
     }
     object IToolbarItem {
       
-      @scala.inline
-      def apply(name: String, widget: Widget): IToolbarItem = {
+      inline def apply(name: String, widget: Widget): IToolbarItem = {
         val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], widget = widget.asInstanceOf[js.Any])
         __obj.asInstanceOf[IToolbarItem]
       }
       
-      @scala.inline
-      implicit class IToolbarItemMutableBuilder[Self <: IToolbarItem] (val x: Self) extends AnyVal {
+      extension [Self <: IToolbarItem](x: Self) {
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidget(value: Widget): Self = StObject.set(x, "widget", value.asInstanceOf[js.Any])
+        inline def setWidget(value: Widget): Self = StObject.set(x, "widget", value.asInstanceOf[js.Any])
       }
     }
     
     /**
       * An interface for a widget extension.
       */
-    @js.native
     trait IWidgetExtension[T /* <: Widget */, U /* <: IModel */] extends StObject {
       
       /**
         * Create a new extension for a given widget.
         */
-      def createNew(widget: T, context: IContext[U]): IDisposable = js.native
+      def createNew(widget: T, context: IContext[U]): IDisposable
     }
     object IWidgetExtension {
       
-      @scala.inline
-      def apply[T /* <: Widget */, U /* <: IModel */](createNew: (T, IContext[U]) => IDisposable): IWidgetExtension[T, U] = {
+      inline def apply[T /* <: Widget */, U /* <: IModel */](createNew: (T, IContext[U]) => IDisposable): IWidgetExtension[T, U] = {
         val __obj = js.Dynamic.literal(createNew = js.Any.fromFunction2(createNew))
         __obj.asInstanceOf[IWidgetExtension[T, U]]
       }
       
-      @scala.inline
-      implicit class IWidgetExtensionMutableBuilder[Self <: IWidgetExtension[_, _], T /* <: Widget */, U /* <: IModel */] (val x: Self with (IWidgetExtension[T, U])) extends AnyVal {
+      extension [Self <: IWidgetExtension[?, ?], T /* <: Widget */, U /* <: IModel */](x: Self & (IWidgetExtension[T, U])) {
         
-        @scala.inline
-        def setCreateNew(value: (T, IContext[U]) => IDisposable): Self = StObject.set(x, "createNew", js.Any.fromFunction2(value))
+        inline def setCreateNew(value: (T, IContext[U]) => IDisposable): Self = StObject.set(x, "createNew", js.Any.fromFunction2(value))
       }
     }
     
@@ -1082,7 +1052,8 @@ object registryMod {
       */
     @js.native
     trait IWidgetFactory[T /* <: IDocumentWidget[Widget, IModel] */, U /* <: IModel */]
-      extends IDisposable
+      extends StObject
+         with IDisposable
          with IWidgetFactoryOptions[Widget] {
       
       /**
@@ -1105,134 +1076,110 @@ object registryMod {
     /**
       * The options used to initialize a widget factory.
       */
-    @js.native
     trait IWidgetFactoryOptions[T /* <: Widget */] extends StObject {
       
       /**
         * Whether the widgets can start a kernel when opened.
         */
-      val canStartKernel: js.UndefOr[Boolean] = js.native
+      val canStartKernel: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The file types for which the factory should be the default.
         */
-      val defaultFor: js.UndefOr[js.Array[String]] = js.native
+      val defaultFor: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * The file types for which the factory should be the default for rendering,
         * if that is different than the default factory (which may be for editing).
         * If undefined, then it will fall back on the default file type.
         */
-      val defaultRendered: js.UndefOr[js.Array[String]] = js.native
+      val defaultRendered: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * The file types the widget can view.
         */
-      val fileTypes: js.Array[String] = js.native
+      val fileTypes: js.Array[String]
       
       /**
         * The registered name of the model type used to create the widgets.
         */
-      val modelName: js.UndefOr[String] = js.native
+      val modelName: js.UndefOr[String] = js.undefined
       
       /**
         * The name of the widget to display in dialogs.
         */
-      val name: String = js.native
+      val name: String
       
       /**
         * Whether the widgets prefer having a kernel started.
         */
-      val preferKernel: js.UndefOr[Boolean] = js.native
+      val preferKernel: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Whether the widget factory is read only.
         */
-      val readOnly: js.UndefOr[Boolean] = js.native
+      val readOnly: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Whether the kernel should be shutdown when the widget is closed.
         */
-      val shutdownOnClose: js.UndefOr[Boolean] = js.native
+      val shutdownOnClose: js.UndefOr[Boolean] = js.undefined
       
       /**
         * A function producing toolbar widgets, overriding the default toolbar widgets.
         */
-      val toolbarFactory: js.UndefOr[js.Function1[/* widget */ T, js.Array[IToolbarItem]]] = js.native
+      val toolbarFactory: js.UndefOr[js.Function1[/* widget */ T, js.Array[IToolbarItem]]] = js.undefined
     }
     object IWidgetFactoryOptions {
       
-      @scala.inline
-      def apply[T /* <: Widget */](fileTypes: js.Array[String], name: String): IWidgetFactoryOptions[T] = {
+      inline def apply[T /* <: Widget */](fileTypes: js.Array[String], name: String): IWidgetFactoryOptions[T] = {
         val __obj = js.Dynamic.literal(fileTypes = fileTypes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
         __obj.asInstanceOf[IWidgetFactoryOptions[T]]
       }
       
-      @scala.inline
-      implicit class IWidgetFactoryOptionsMutableBuilder[Self <: IWidgetFactoryOptions[_], T /* <: Widget */] (val x: Self with IWidgetFactoryOptions[T]) extends AnyVal {
+      extension [Self <: IWidgetFactoryOptions[?], T /* <: Widget */](x: Self & IWidgetFactoryOptions[T]) {
         
-        @scala.inline
-        def setCanStartKernel(value: Boolean): Self = StObject.set(x, "canStartKernel", value.asInstanceOf[js.Any])
+        inline def setCanStartKernel(value: Boolean): Self = StObject.set(x, "canStartKernel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCanStartKernelUndefined: Self = StObject.set(x, "canStartKernel", js.undefined)
+        inline def setCanStartKernelUndefined: Self = StObject.set(x, "canStartKernel", js.undefined)
         
-        @scala.inline
-        def setDefaultFor(value: js.Array[String]): Self = StObject.set(x, "defaultFor", value.asInstanceOf[js.Any])
+        inline def setDefaultFor(value: js.Array[String]): Self = StObject.set(x, "defaultFor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaultForUndefined: Self = StObject.set(x, "defaultFor", js.undefined)
+        inline def setDefaultForUndefined: Self = StObject.set(x, "defaultFor", js.undefined)
         
-        @scala.inline
-        def setDefaultForVarargs(value: String*): Self = StObject.set(x, "defaultFor", js.Array(value :_*))
+        inline def setDefaultForVarargs(value: String*): Self = StObject.set(x, "defaultFor", js.Array(value :_*))
         
-        @scala.inline
-        def setDefaultRendered(value: js.Array[String]): Self = StObject.set(x, "defaultRendered", value.asInstanceOf[js.Any])
+        inline def setDefaultRendered(value: js.Array[String]): Self = StObject.set(x, "defaultRendered", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaultRenderedUndefined: Self = StObject.set(x, "defaultRendered", js.undefined)
+        inline def setDefaultRenderedUndefined: Self = StObject.set(x, "defaultRendered", js.undefined)
         
-        @scala.inline
-        def setDefaultRenderedVarargs(value: String*): Self = StObject.set(x, "defaultRendered", js.Array(value :_*))
+        inline def setDefaultRenderedVarargs(value: String*): Self = StObject.set(x, "defaultRendered", js.Array(value :_*))
         
-        @scala.inline
-        def setFileTypes(value: js.Array[String]): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
+        inline def setFileTypes(value: js.Array[String]): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFileTypesVarargs(value: String*): Self = StObject.set(x, "fileTypes", js.Array(value :_*))
+        inline def setFileTypesVarargs(value: String*): Self = StObject.set(x, "fileTypes", js.Array(value :_*))
         
-        @scala.inline
-        def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
+        inline def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModelNameUndefined: Self = StObject.set(x, "modelName", js.undefined)
+        inline def setModelNameUndefined: Self = StObject.set(x, "modelName", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPreferKernel(value: Boolean): Self = StObject.set(x, "preferKernel", value.asInstanceOf[js.Any])
+        inline def setPreferKernel(value: Boolean): Self = StObject.set(x, "preferKernel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPreferKernelUndefined: Self = StObject.set(x, "preferKernel", js.undefined)
+        inline def setPreferKernelUndefined: Self = StObject.set(x, "preferKernel", js.undefined)
         
-        @scala.inline
-        def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+        inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+        inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
         
-        @scala.inline
-        def setShutdownOnClose(value: Boolean): Self = StObject.set(x, "shutdownOnClose", value.asInstanceOf[js.Any])
+        inline def setShutdownOnClose(value: Boolean): Self = StObject.set(x, "shutdownOnClose", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShutdownOnCloseUndefined: Self = StObject.set(x, "shutdownOnClose", js.undefined)
+        inline def setShutdownOnCloseUndefined: Self = StObject.set(x, "shutdownOnClose", js.undefined)
         
-        @scala.inline
-        def setToolbarFactory(value: /* widget */ T => js.Array[IToolbarItem]): Self = StObject.set(x, "toolbarFactory", js.Any.fromFunction1(value))
+        inline def setToolbarFactory(value: /* widget */ T => js.Array[IToolbarItem]): Self = StObject.set(x, "toolbarFactory", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setToolbarFactoryUndefined: Self = StObject.set(x, "toolbarFactory", js.undefined)
+        inline def setToolbarFactoryUndefined: Self = StObject.set(x, "toolbarFactory", js.undefined)
       }
     }
     
@@ -1249,14 +1196,11 @@ object registryMod {
     trait SaveState extends StObject
     object SaveState {
       
-      @scala.inline
-      def completed: typings.jupyterlabDocregistry.jupyterlabDocregistryStrings.completed = "completed".asInstanceOf[typings.jupyterlabDocregistry.jupyterlabDocregistryStrings.completed]
+      inline def completed: typings.jupyterlabDocregistry.jupyterlabDocregistryStrings.completed = "completed".asInstanceOf[typings.jupyterlabDocregistry.jupyterlabDocregistryStrings.completed]
       
-      @scala.inline
-      def failed: typings.jupyterlabDocregistry.jupyterlabDocregistryStrings.failed = "failed".asInstanceOf[typings.jupyterlabDocregistry.jupyterlabDocregistryStrings.failed]
+      inline def failed: typings.jupyterlabDocregistry.jupyterlabDocregistryStrings.failed = "failed".asInstanceOf[typings.jupyterlabDocregistry.jupyterlabDocregistryStrings.failed]
       
-      @scala.inline
-      def started: typings.jupyterlabDocregistry.jupyterlabDocregistryStrings.started = "started".asInstanceOf[typings.jupyterlabDocregistry.jupyterlabDocregistryStrings.started]
+      inline def started: typings.jupyterlabDocregistry.jupyterlabDocregistryStrings.started = "started".asInstanceOf[typings.jupyterlabDocregistry.jupyterlabDocregistryStrings.started]
     }
     
     /**

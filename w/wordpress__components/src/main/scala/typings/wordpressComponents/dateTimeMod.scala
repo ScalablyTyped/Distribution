@@ -9,17 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object dateTimeMod {
   
-  object DatePicker extends Shortcut {
-    
-    @JSImport("@wordpress/components/date-time", "DatePicker")
-    @js.native
-    val ^ : ComponentType[Props] = js.native
-    
-    type _To = ComponentType[Props]
-    
-    /* This means you don't have to write `^`, but can instead just say `DatePicker.foo` */
-    override def _to: ComponentType[Props] = ^
-  }
+  @JSImport("@wordpress/components/date-time", "DatePicker")
+  @js.native
+  val DatePicker: ComponentType[Props] = js.native
   
   object DateTimePicker extends Shortcut {
     
@@ -63,15 +55,7 @@ object dateTimeMod {
     override def _to: ComponentType[typings.wordpressComponents.dateTimeMod.DateTimePicker.Props] = ^
   }
   
-  object TimePicker extends Shortcut {
-    
-    @JSImport("@wordpress/components/date-time", "TimePicker")
-    @js.native
-    val ^ : ComponentType[typings.wordpressComponents.timeMod.TimePicker.Props] = js.native
-    
-    type _To = ComponentType[typings.wordpressComponents.timeMod.TimePicker.Props]
-    
-    /* This means you don't have to write `^`, but can instead just say `TimePicker.foo` */
-    override def _to: ComponentType[typings.wordpressComponents.timeMod.TimePicker.Props] = ^
-  }
+  @JSImport("@wordpress/components/date-time", "TimePicker")
+  @js.native
+  val TimePicker: ComponentType[typings.wordpressComponents.timeMod.TimePicker.Props] = js.native
 }

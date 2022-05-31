@@ -2,7 +2,6 @@ package typings.babylonjs.indexMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "SubMesh")
@@ -60,7 +59,7 @@ class SubMesh protected ()
     /** indices count */
   indexCount: Double,
     mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
-    renderingMesh: js.UndefOr[scala.Nothing],
+    renderingMesh: Unit,
     createBoundingBox: Boolean
   ) = this()
   def this(
@@ -90,23 +89,7 @@ class SubMesh protected ()
     /** indices count */
   indexCount: Double,
     mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
-    renderingMesh: js.UndefOr[scala.Nothing],
-    createBoundingBox: js.UndefOr[scala.Nothing],
-    addToMesh: Boolean
-  ) = this()
-  def this(
-    /** the material index to use */
-  materialIndex: Double,
-    /** vertex index start */
-  verticesStart: Double,
-    /** vertices count */
-  verticesCount: Double,
-    /** index start */
-  indexStart: Double,
-    /** indices count */
-  indexCount: Double,
-    mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
-    renderingMesh: js.UndefOr[scala.Nothing],
+    renderingMesh: Unit,
     createBoundingBox: Boolean,
     addToMesh: Boolean
   ) = this()
@@ -122,8 +105,8 @@ class SubMesh protected ()
     /** indices count */
   indexCount: Double,
     mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
-    renderingMesh: typings.babylonjs.meshMod.Mesh,
-    createBoundingBox: js.UndefOr[scala.Nothing],
+    renderingMesh: Unit,
+    createBoundingBox: Unit,
     addToMesh: Boolean
   ) = this()
   def this(
@@ -140,11 +123,31 @@ class SubMesh protected ()
     mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
     renderingMesh: typings.babylonjs.meshMod.Mesh,
     createBoundingBox: Boolean,
+    addToMesh: Boolean
+  ) = this()
+  def this(
+    /** the material index to use */
+  materialIndex: Double,
+    /** vertex index start */
+  verticesStart: Double,
+    /** vertices count */
+  verticesCount: Double,
+    /** index start */
+  indexStart: Double,
+    /** indices count */
+  indexCount: Double,
+    mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    renderingMesh: typings.babylonjs.meshMod.Mesh,
+    createBoundingBox: Unit,
     addToMesh: Boolean
   ) = this()
 }
 /* static members */
 object SubMesh {
+  
+  @JSImport("babylonjs/index", "SubMesh")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Add a new submesh to a mesh
@@ -158,31 +161,25 @@ object SubMesh {
     * @param createBoundingBox defines if bounding box should be created for this submesh
     * @returns the new submesh
     */
-  @JSImport("babylonjs/index", "SubMesh.AddToMesh")
-  @js.native
-  def AddToMesh(
+  inline def AddToMesh(
     materialIndex: Double,
     verticesStart: Double,
     verticesCount: Double,
     indexStart: Double,
     indexCount: Double,
     mesh: typings.babylonjs.abstractMeshMod.AbstractMesh
-  ): typings.babylonjs.subMeshMod.SubMesh = js.native
-  @JSImport("babylonjs/index", "SubMesh.AddToMesh")
-  @js.native
-  def AddToMesh(
+  ): typings.babylonjs.subMeshMod.SubMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("AddToMesh")(materialIndex.asInstanceOf[js.Any], verticesStart.asInstanceOf[js.Any], verticesCount.asInstanceOf[js.Any], indexStart.asInstanceOf[js.Any], indexCount.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.subMeshMod.SubMesh]
+  inline def AddToMesh(
     materialIndex: Double,
     verticesStart: Double,
     verticesCount: Double,
     indexStart: Double,
     indexCount: Double,
     mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
-    renderingMesh: js.UndefOr[scala.Nothing],
+    renderingMesh: Unit,
     createBoundingBox: Boolean
-  ): typings.babylonjs.subMeshMod.SubMesh = js.native
-  @JSImport("babylonjs/index", "SubMesh.AddToMesh")
-  @js.native
-  def AddToMesh(
+  ): typings.babylonjs.subMeshMod.SubMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("AddToMesh")(materialIndex.asInstanceOf[js.Any], verticesStart.asInstanceOf[js.Any], verticesCount.asInstanceOf[js.Any], indexStart.asInstanceOf[js.Any], indexCount.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any], renderingMesh.asInstanceOf[js.Any], createBoundingBox.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.subMeshMod.SubMesh]
+  inline def AddToMesh(
     materialIndex: Double,
     verticesStart: Double,
     verticesCount: Double,
@@ -190,10 +187,8 @@ object SubMesh {
     indexCount: Double,
     mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
     renderingMesh: typings.babylonjs.meshMod.Mesh
-  ): typings.babylonjs.subMeshMod.SubMesh = js.native
-  @JSImport("babylonjs/index", "SubMesh.AddToMesh")
-  @js.native
-  def AddToMesh(
+  ): typings.babylonjs.subMeshMod.SubMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("AddToMesh")(materialIndex.asInstanceOf[js.Any], verticesStart.asInstanceOf[js.Any], verticesCount.asInstanceOf[js.Any], indexStart.asInstanceOf[js.Any], indexCount.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any], renderingMesh.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.subMeshMod.SubMesh]
+  inline def AddToMesh(
     materialIndex: Double,
     verticesStart: Double,
     verticesCount: Double,
@@ -202,7 +197,7 @@ object SubMesh {
     mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
     renderingMesh: typings.babylonjs.meshMod.Mesh,
     createBoundingBox: Boolean
-  ): typings.babylonjs.subMeshMod.SubMesh = js.native
+  ): typings.babylonjs.subMeshMod.SubMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("AddToMesh")(materialIndex.asInstanceOf[js.Any], verticesStart.asInstanceOf[js.Any], verticesCount.asInstanceOf[js.Any], indexStart.asInstanceOf[js.Any], indexCount.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any], renderingMesh.asInstanceOf[js.Any], createBoundingBox.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.subMeshMod.SubMesh]
   
   /**
     * Creates a new submesh from indices data
@@ -213,21 +208,17 @@ object SubMesh {
     * @param renderingMesh the optional rendering mesh
     * @returns a new submesh
     */
-  @JSImport("babylonjs/index", "SubMesh.CreateFromIndices")
-  @js.native
-  def CreateFromIndices(
+  inline def CreateFromIndices(
     materialIndex: Double,
     startIndex: Double,
     indexCount: Double,
     mesh: typings.babylonjs.abstractMeshMod.AbstractMesh
-  ): typings.babylonjs.subMeshMod.SubMesh = js.native
-  @JSImport("babylonjs/index", "SubMesh.CreateFromIndices")
-  @js.native
-  def CreateFromIndices(
+  ): typings.babylonjs.subMeshMod.SubMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromIndices")(materialIndex.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], indexCount.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.subMeshMod.SubMesh]
+  inline def CreateFromIndices(
     materialIndex: Double,
     startIndex: Double,
     indexCount: Double,
     mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
     renderingMesh: typings.babylonjs.meshMod.Mesh
-  ): typings.babylonjs.subMeshMod.SubMesh = js.native
+  ): typings.babylonjs.subMeshMod.SubMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromIndices")(materialIndex.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], indexCount.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any], renderingMesh.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.subMeshMod.SubMesh]
 }

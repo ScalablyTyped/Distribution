@@ -2,10 +2,8 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEdgesRendererOptions extends StObject {
   
   /**
@@ -13,27 +11,27 @@ trait IEdgesRendererOptions extends StObject {
     * unusual, like having a vertex of a triangle in-between two vertices of an edge of another triangle. It happens often when using CSG to construct meshes.
     * This option is used only if useAlternateEdgeFinder = true
     */
-  var applyTessellation: js.UndefOr[Boolean] = js.native
+  var applyTessellation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The limit under which 3 vertices are considered to be aligned. 3 vertices PQR are considered aligned if distance(PQ) + distance(QR) - distance(PR) < epsilonVertexAligned
     * The default value is 1e-6
     * This option is used only if useAlternateEdgeFinder = true
     */
-  var epsilonVertexAligned: js.UndefOr[Double] = js.native
+  var epsilonVertexAligned: js.UndefOr[Double] = js.undefined
   
   /**
     * During edges processing, the vertices are merged if they are close enough: epsilonVertexMerge is the limit whithin which vertices are considered to be equal.
     * The default value is 1e-6
     * This option is used only if useAlternateEdgeFinder = true
     */
-  var epsilonVertexMerge: js.UndefOr[Double] = js.native
+  var epsilonVertexMerge: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets a boolean indicating that the alternate edge finder algorithm must be used
     * If not defined, the default value is true
     */
-  var useAlternateEdgeFinder: js.UndefOr[Boolean] = js.native
+  var useAlternateEdgeFinder: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets a boolean indicating that the vertex merger fast processing must be used.
@@ -41,47 +39,35 @@ trait IEdgesRendererOptions extends StObject {
     * You should normally leave it undefined (or set it to true), except if you see some artifacts in the edges rendering (can happen with complex geometries)
     * This option is used only if useAlternateEdgeFinder = true
     */
-  var useFastVertexMerger: js.UndefOr[Boolean] = js.native
+  var useFastVertexMerger: js.UndefOr[Boolean] = js.undefined
 }
 object IEdgesRendererOptions {
   
-  @scala.inline
-  def apply(): IEdgesRendererOptions = {
+  inline def apply(): IEdgesRendererOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IEdgesRendererOptions]
   }
   
-  @scala.inline
-  implicit class IEdgesRendererOptionsMutableBuilder[Self <: IEdgesRendererOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IEdgesRendererOptions](x: Self) {
     
-    @scala.inline
-    def setApplyTessellation(value: Boolean): Self = StObject.set(x, "applyTessellation", value.asInstanceOf[js.Any])
+    inline def setApplyTessellation(value: Boolean): Self = StObject.set(x, "applyTessellation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplyTessellationUndefined: Self = StObject.set(x, "applyTessellation", js.undefined)
+    inline def setApplyTessellationUndefined: Self = StObject.set(x, "applyTessellation", js.undefined)
     
-    @scala.inline
-    def setEpsilonVertexAligned(value: Double): Self = StObject.set(x, "epsilonVertexAligned", value.asInstanceOf[js.Any])
+    inline def setEpsilonVertexAligned(value: Double): Self = StObject.set(x, "epsilonVertexAligned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEpsilonVertexAlignedUndefined: Self = StObject.set(x, "epsilonVertexAligned", js.undefined)
+    inline def setEpsilonVertexAlignedUndefined: Self = StObject.set(x, "epsilonVertexAligned", js.undefined)
     
-    @scala.inline
-    def setEpsilonVertexMerge(value: Double): Self = StObject.set(x, "epsilonVertexMerge", value.asInstanceOf[js.Any])
+    inline def setEpsilonVertexMerge(value: Double): Self = StObject.set(x, "epsilonVertexMerge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEpsilonVertexMergeUndefined: Self = StObject.set(x, "epsilonVertexMerge", js.undefined)
+    inline def setEpsilonVertexMergeUndefined: Self = StObject.set(x, "epsilonVertexMerge", js.undefined)
     
-    @scala.inline
-    def setUseAlternateEdgeFinder(value: Boolean): Self = StObject.set(x, "useAlternateEdgeFinder", value.asInstanceOf[js.Any])
+    inline def setUseAlternateEdgeFinder(value: Boolean): Self = StObject.set(x, "useAlternateEdgeFinder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseAlternateEdgeFinderUndefined: Self = StObject.set(x, "useAlternateEdgeFinder", js.undefined)
+    inline def setUseAlternateEdgeFinderUndefined: Self = StObject.set(x, "useAlternateEdgeFinder", js.undefined)
     
-    @scala.inline
-    def setUseFastVertexMerger(value: Boolean): Self = StObject.set(x, "useFastVertexMerger", value.asInstanceOf[js.Any])
+    inline def setUseFastVertexMerger(value: Boolean): Self = StObject.set(x, "useFastVertexMerger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseFastVertexMergerUndefined: Self = StObject.set(x, "useFastVertexMerger", js.undefined)
+    inline def setUseFastVertexMergerUndefined: Self = StObject.set(x, "useFastVertexMerger", js.undefined)
   }
 }

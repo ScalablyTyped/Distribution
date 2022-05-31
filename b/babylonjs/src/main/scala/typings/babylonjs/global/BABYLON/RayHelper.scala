@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.RayHelper")
 @js.native
 class RayHelper protected ()
-  extends typings.babylonjs.BABYLON.RayHelper {
+  extends StObject
+     with typings.babylonjs.BABYLON.RayHelper {
   /**
     * Instantiate a new ray helper.
     * As raycast might be hard to debug, the RayHelper can help rendering the different rays
@@ -21,6 +21,10 @@ class RayHelper protected ()
 /* static members */
 object RayHelper {
   
+  @JSGlobal("BABYLON.RayHelper")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Helper function to create a colored helper in a scene in one line.
     * @param ray Defines the ray we are currently tryin to visualize
@@ -28,11 +32,9 @@ object RayHelper {
     * @param color Defines the color we want to see the ray in
     * @returns The newly created ray helper.
     */
-  @JSGlobal("BABYLON.RayHelper.CreateAndShow")
-  @js.native
-  def CreateAndShow(
+  inline def CreateAndShow(
     ray: typings.babylonjs.BABYLON.Ray,
     scene: typings.babylonjs.BABYLON.Scene,
     color: typings.babylonjs.BABYLON.Color3
-  ): typings.babylonjs.BABYLON.RayHelper = js.native
+  ): typings.babylonjs.BABYLON.RayHelper = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndShow")(ray.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.RayHelper]
 }

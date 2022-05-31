@@ -10,10 +10,10 @@ import typings.jupyterlabMainmenu.tabsMod.TabsMenu
 import typings.jupyterlabMainmenu.tokensMod.IMainMenu
 import typings.jupyterlabMainmenu.viewMod.ViewMenu
 import typings.luminoCommands.mod.CommandRegistry
+import typings.luminoMessaging.mod.Message
 import typings.luminoWidgets.mod.MenuBar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mainmenuMod {
@@ -28,12 +28,26 @@ object mainmenuMod {
       */
     def this(commands: CommandRegistry) = this()
     
-    var _items: js.Any = js.native
+    /* private */ var _items: js.Any = js.native
     
     /**
       * Handle the disposal of a menu.
       */
-    var _onMenuDisposed: js.Any = js.native
+    /* private */ var _onMenuDisposed: js.Any = js.native
+    
+    /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* InferMemberOverrides */
+    override def dispose(): Unit = js.native
     
     /**
       * The application "Edit" menu.
@@ -58,6 +72,14 @@ object mainmenuMod {
       */
     @JSName("kernelMenu")
     val kernelMenu_MainMenu: KernelMenu = js.native
+    
+    /**
+      * Process a message sent to the handler.
+      *
+      * @param msg - The message to be processed.
+      */
+    /* InferMemberOverrides */
+    override def processMessage(msg: Message): Unit = js.native
     
     /**
       * The application "Run" menu.

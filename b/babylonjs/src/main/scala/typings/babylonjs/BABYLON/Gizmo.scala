@@ -2,31 +2,32 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Gizmo extends IDisposable {
+trait Gizmo
+  extends StObject
+     with IDisposable {
   
-  var _attachedMesh: js.Any = js.native
+  /* private */ var _attachedMesh: js.Any = js.native
   
-  var _attachedNode: js.Any = js.native
+  /* private */ var _attachedNode: js.Any = js.native
   
   /* protected */ def _attachedNodeChanged(value: Nullable[Node]): Unit = js.native
   
-  var _beforeRenderObserver: js.Any = js.native
+  /* private */ var _beforeRenderObserver: js.Any = js.native
   
   /**
     * If a custom mesh has been set (Default: false)
     */
-  var _customMeshSet: Boolean = js.native
+  /* protected */ var _customMeshSet: Boolean = js.native
   
-  var _interactionsEnabled: Boolean = js.native
+  /* protected */ var _interactionsEnabled: Boolean = js.native
   
   /**
     * boolean updated by pointermove when a gizmo mesh is hovered
     */
-  var _isHovered: Boolean = js.native
+  /* protected */ var _isHovered: Boolean = js.native
   
   /**
     * computes the rotation/scaling/position of the transform once the Node world matrix has changed.
@@ -34,7 +35,7 @@ trait Gizmo extends IDisposable {
     */
   /* protected */ def _matrixChanged(): Unit = js.native
   
-  var _rightHandtoLeftHandMatrix: js.Any = js.native
+  /* private */ var _rightHandtoLeftHandMatrix: js.Any = js.native
   
   /**
     * The root mesh of the gizmo
@@ -44,24 +45,24 @@ trait Gizmo extends IDisposable {
   /**
     * Ratio for the scale of the gizmo (Default: 1)
     */
-  var _scaleRatio: Double = js.native
+  /* protected */ var _scaleRatio: Double = js.native
   
-  var _tempMatrix1: js.Any = js.native
+  /* private */ var _tempMatrix1: js.Any = js.native
   
-  var _tempMatrix2: js.Any = js.native
+  /* private */ var _tempMatrix2: js.Any = js.native
   
-  var _tempQuaternion: js.Any = js.native
+  /* private */ var _tempQuaternion: js.Any = js.native
   
-  var _tempVector: js.Any = js.native
+  /* private */ var _tempVector: js.Any = js.native
   
-  var _tempVector2: js.Any = js.native
+  /* private */ var _tempVector2: js.Any = js.native
   
   /**
     * Updates the gizmo to match the attached mesh's position/rotation
     */
   /* protected */ def _update(): Unit = js.native
   
-  var _updateGizmoRotationToMatchAttachedMesh: Boolean = js.native
+  /* protected */ var _updateGizmoRotationToMatchAttachedMesh: Boolean = js.native
   
   /**
     * Mesh that the gizmo will be attached to. (eg. on a drag gizmo the mesh that will be dragged)

@@ -5,7 +5,6 @@ import typings.babylonjs.HTMLVideoElement
 import typings.babylonjs.htmlElementTextureMod.IHtmlElementTextureOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Materials/index", "HtmlElementTexture")

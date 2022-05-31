@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.IWebXRAnchorSystemOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.WebXRAnchorSystem")
 @js.native
 class WebXRAnchorSystem protected ()
-  extends typings.babylonjs.BABYLON.WebXRAnchorSystem {
+  extends StObject
+     with typings.babylonjs.BABYLON.WebXRAnchorSystem {
   /**
     * constructs a new anchor system
     * @param _xrSessionManager an instance of WebXRSessionManager
@@ -20,6 +20,12 @@ class WebXRAnchorSystem protected ()
     _xrSessionManager: typings.babylonjs.BABYLON.WebXRSessionManager,
     _options: IWebXRAnchorSystemOptions
   ) = this()
+  
+  /**
+    * Releases all held resources
+    */
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
 }
 /* static members */
 object WebXRAnchorSystem {

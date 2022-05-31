@@ -2,80 +2,80 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.babylonjs.BABYLON.IAnimatable because var conflicts: animations. Inlined 
 - typings.babylonjs.BABYLON.IParticleSystem because var conflicts: animations, beginAnimationFrom, beginAnimationLoop, beginAnimationOnStart, beginAnimationTo, billboardMode, blendMode, color1, color2, colorDead, disposeOnStop, emitRate, emitter, endSpriteCellID, gravity, id, isAnimationSheetEnabled, isBillboardBased, layerMask, limitVelocityDamping, maxAngularSpeed, maxEmitPower, maxInitialRotation, maxLifeTime, maxScaleX, maxScaleY, maxSize, minAngularSpeed, minEmitPower, minInitialRotation, minLifeTime, minScaleX, minScaleY, minSize, name, noiseStrength, noiseTexture, particleEmitterType, particleTexture, preWarmCycles, preWarmStepOffset, renderingGroupId, snippetId, spriteCellChangeSpeed, spriteCellHeight, spriteCellWidth, spriteRandomStartCell, startDelay, startSpriteCellID, targetStopDuration, translationPivot, updateSpeed. Inlined isLocal, defaultProjectionMatrix, getCapacity, getActiveCount, isStarted, animate, render, onDisposeObservable, onStoppedObservable, clone, serialize, rebuild, forceRefreshGradients, start, start, stop, reset, isStopping, isReady, getClassName, getCustomEffect, setCustomEffect, fillDefines, fillUniformsAttributesAndSamplerNames, onBeforeDrawParticlesObservable, vertexShaderName, addColorGradient, addColorGradient, removeColorGradient, addSizeGradient, addSizeGradient, removeSizeGradient, addAngularSpeedGradient, addAngularSpeedGradient, removeAngularSpeedGradient, addVelocityGradient, addVelocityGradient, removeVelocityGradient, addLimitVelocityGradient, addLimitVelocityGradient, removeLimitVelocityGradient, addDragGradient, addDragGradient, removeDragGradient, addEmitRateGradient, addEmitRateGradient, removeEmitRateGradient, addStartSizeGradient, addStartSizeGradient, removeStartSizeGradient, addLifeTimeGradient, addLifeTimeGradient, removeLifeTimeGradient, addRampGradient, getRampGradients, useRampGradients, addColorRemapGradient, addAlphaRemapGradient */ @js.native
 trait GPUParticleSystem
-  extends BaseParticleSystem
+  extends StObject
+     with BaseParticleSystem
      with IDisposable {
   
-  var _accumulatedCount: js.Any = js.native
+  /* private */ var _accumulatedCount: js.Any = js.native
   
-  var _activeCount: js.Any = js.native
+  /* private */ var _activeCount: js.Any = js.native
   
-  var _actualFrame: js.Any = js.native
+  /* private */ var _actualFrame: js.Any = js.native
   
-  var _addFactorGradient: js.Any = js.native
+  /* private */ var _addFactorGradient: js.Any = js.native
   
-  var _angularSpeedGradientsTexture: js.Any = js.native
+  /* private */ var _angularSpeedGradientsTexture: js.Any = js.native
   
-  var _attributesStrideSize: js.Any = js.native
+  /* private */ var _attributesStrideSize: js.Any = js.native
   
-  var _buffer0: js.Any = js.native
+  /* private */ var _buffer0: js.Any = js.native
   
-  var _buffer1: js.Any = js.native
+  /* private */ var _buffer1: js.Any = js.native
   
-  var _capacity: js.Any = js.native
+  /* private */ var _capacity: js.Any = js.native
   
-  var _colorGradientsTexture: js.Any = js.native
+  /* private */ var _colorGradientsTexture: js.Any = js.native
   
-  var _createAngularSpeedGradientTexture: js.Any = js.native
+  /* private */ var _createAngularSpeedGradientTexture: js.Any = js.native
   
-  var _createColorGradientTexture: js.Any = js.native
+  /* private */ var _createColorGradientTexture: js.Any = js.native
   
-  var _createDragGradientTexture: js.Any = js.native
+  /* private */ var _createDragGradientTexture: js.Any = js.native
   
-  var _createFactorGradientTexture: js.Any = js.native
+  /* private */ var _createFactorGradientTexture: js.Any = js.native
   
-  var _createLimitVelocityGradientTexture: js.Any = js.native
+  /* private */ var _createLimitVelocityGradientTexture: js.Any = js.native
   
-  var _createRenderVAO: js.Any = js.native
+  /* private */ var _createRenderVAO: js.Any = js.native
   
-  var _createSizeGradientTexture: js.Any = js.native
+  /* private */ var _createSizeGradientTexture: js.Any = js.native
   
-  var _createUpdateVAO: js.Any = js.native
+  /* private */ var _createUpdateVAO: js.Any = js.native
   
-  var _createVelocityGradientTexture: js.Any = js.native
+  /* private */ var _createVelocityGradientTexture: js.Any = js.native
   
-  var _currentActiveCount: js.Any = js.native
+  /* private */ var _currentActiveCount: js.Any = js.native
   
-  var _currentRenderId: js.Any = js.native
+  /* private */ var _currentRenderId: js.Any = js.native
   
-  var _customEffect: js.Any = js.native
+  /* private */ var _customEffect: js.Any = js.native
   
-  var _dragGradientsTexture: js.Any = js.native
+  /* private */ var _dragGradientsTexture: js.Any = js.native
   
-  var _getEffect: js.Any = js.native
+  /* private */ var _getEffect: js.Any = js.native
   
-  var _initialize: js.Any = js.native
+  /* private */ var _initialize: js.Any = js.native
   
-  var _limitVelocityGradientsTexture: js.Any = js.native
+  /* private */ var _limitVelocityGradientsTexture: js.Any = js.native
   
   /** @hidden */
-  var _onBeforeDrawParticlesObservable: Nullable[Observable[Nullable[Effect]]] = js.native
+  /* protected */ var _onBeforeDrawParticlesObservable: Nullable[Observable[Nullable[Effect]]] = js.native
   
-  var _preWarmDone: js.Any = js.native
+  /* private */ var _preWarmDone: js.Any = js.native
   
-  var _randomTexture: js.Any = js.native
+  /* private */ var _randomTexture: js.Any = js.native
   
-  var _randomTexture2: js.Any = js.native
+  /* private */ var _randomTexture2: js.Any = js.native
   
-  var _randomTextureSize: js.Any = js.native
+  /* private */ var _randomTextureSize: js.Any = js.native
   
-  val _rawTextureWidth: js.Any = js.native
+  /* private */ val _rawTextureWidth: js.Any = js.native
   
   /** @hidden */
   def _recreateRenderEffect(): Effect = js.native
@@ -83,43 +83,41 @@ trait GPUParticleSystem
   /** @hidden */
   def _recreateUpdateEffect(): Unit = js.native
   
-  var _refreshColorGradient: js.Any = js.native
+  /* private */ var _refreshColorGradient: js.Any = js.native
   
-  var _refreshFactorGradient: js.Any = js.native
+  /* private */ var _refreshFactorGradient: js.Any = js.native
   
-  var _releaseBuffers: js.Any = js.native
+  /* private */ var _releaseBuffers: js.Any = js.native
   
-  var _releaseVAOs: js.Any = js.native
+  /* private */ var _releaseVAOs: js.Any = js.native
   
-  /* protected */ def _removeGradientAndTexture(gradient: Double, gradients: Nullable[js.Array[IValueGradient]], texture: RawTexture): BaseParticleSystem = js.native
+  /* private */ var _renderEffect: js.Any = js.native
   
-  var _renderEffect: js.Any = js.native
+  /* private */ var _renderVAO: js.Any = js.native
   
-  var _renderVAO: js.Any = js.native
+  /* private */ var _sizeGradientsTexture: js.Any = js.native
   
-  var _sizeGradientsTexture: js.Any = js.native
+  /* private */ var _sourceBuffer: js.Any = js.native
   
-  var _sourceBuffer: js.Any = js.native
+  /* private */ var _spriteBuffer: js.Any = js.native
   
-  var _spriteBuffer: js.Any = js.native
+  /* private */ var _started: js.Any = js.native
   
-  var _started: js.Any = js.native
+  /* private */ var _stopped: js.Any = js.native
   
-  var _stopped: js.Any = js.native
+  /* private */ var _targetBuffer: js.Any = js.native
   
-  var _targetBuffer: js.Any = js.native
+  /* private */ var _targetIndex: js.Any = js.native
   
-  var _targetIndex: js.Any = js.native
+  /* private */ var _timeDelta: js.Any = js.native
   
-  var _timeDelta: js.Any = js.native
+  /* private */ var _updateEffect: js.Any = js.native
   
-  var _updateEffect: js.Any = js.native
+  /* private */ var _updateEffectOptions: js.Any = js.native
   
-  var _updateEffectOptions: js.Any = js.native
+  /* private */ var _updateVAO: js.Any = js.native
   
-  var _updateVAO: js.Any = js.native
-  
-  var _velocityGradientsTexture: js.Any = js.native
+  /* private */ var _velocityGradientsTexture: js.Any = js.native
   
   /**
     * Gets or set the number of active particles

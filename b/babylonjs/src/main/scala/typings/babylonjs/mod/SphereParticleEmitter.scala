@@ -2,7 +2,6 @@ package typings.babylonjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "SphereParticleEmitter")
@@ -23,16 +22,6 @@ class SphereParticleEmitter ()
     /**
     * The radius of the emission sphere.
     */
-  radius: js.UndefOr[scala.Nothing],
-    /**
-    * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
-    */
-  radiusRange: Double
-  ) = this()
-  def this(
-    /**
-    * The radius of the emission sphere.
-    */
   radius: Double,
     /**
     * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
@@ -43,21 +32,17 @@ class SphereParticleEmitter ()
     /**
     * The radius of the emission sphere.
     */
-  radius: js.UndefOr[scala.Nothing],
+  radius: Unit,
     /**
     * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
     */
-  radiusRange: js.UndefOr[scala.Nothing],
-    /**
-    * How much to randomize the particle direction [0-1].
-    */
-  directionRandomizer: Double
+  radiusRange: Double
   ) = this()
   def this(
     /**
     * The radius of the emission sphere.
     */
-  radius: js.UndefOr[scala.Nothing],
+  radius: Double,
     /**
     * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
     */
@@ -75,7 +60,7 @@ class SphereParticleEmitter ()
     /**
     * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
     */
-  radiusRange: js.UndefOr[scala.Nothing],
+  radiusRange: Unit,
     /**
     * How much to randomize the particle direction [0-1].
     */
@@ -85,11 +70,25 @@ class SphereParticleEmitter ()
     /**
     * The radius of the emission sphere.
     */
-  radius: Double,
+  radius: Unit,
     /**
     * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
     */
   radiusRange: Double,
+    /**
+    * How much to randomize the particle direction [0-1].
+    */
+  directionRandomizer: Double
+  ) = this()
+  def this(
+    /**
+    * The radius of the emission sphere.
+    */
+  radius: Unit,
+    /**
+    * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
+    */
+  radiusRange: Unit,
     /**
     * How much to randomize the particle direction [0-1].
     */

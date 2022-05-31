@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.DebugLayer")
 @js.native
 class DebugLayer protected ()
-  extends typings.babylonjs.BABYLON.DebugLayer {
+  extends StObject
+     with typings.babylonjs.BABYLON.DebugLayer {
   /**
     * Instantiates a new debug layer.
     * The debug layer (aka Inspector) is the go to tool in order to better understand
@@ -33,6 +33,5 @@ object DebugLayer {
   @JSGlobal("BABYLON.DebugLayer.InspectorURL")
   @js.native
   def InspectorURL: String = js.native
-  @scala.inline
-  def InspectorURL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InspectorURL")(x.asInstanceOf[js.Any])
+  inline def InspectorURL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InspectorURL")(x.asInstanceOf[js.Any])
 }

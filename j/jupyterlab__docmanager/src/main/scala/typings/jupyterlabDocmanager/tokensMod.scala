@@ -14,13 +14,14 @@ import typings.luminoSignaling.mod.ISignal
 import typings.luminoWidgets.mod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tokensMod {
   
   @js.native
-  trait IDocumentManager extends IDisposable {
+  trait IDocumentManager
+    extends StObject
+       with IDisposable {
     
     /**
       * A signal emitted when one of the documents is activated.
@@ -103,9 +104,9 @@ object tokensMod {
       * cannot be found.
       */
     def createNew(path: String): js.UndefOr[Widget] = js.native
-    def createNew(path: String, widgetName: js.UndefOr[scala.Nothing], kernel: PartialIModel): js.UndefOr[Widget] = js.native
     def createNew(path: String, widgetName: String): js.UndefOr[Widget] = js.native
     def createNew(path: String, widgetName: String, kernel: PartialIModel): js.UndefOr[Widget] = js.native
+    def createNew(path: String, widgetName: Unit, kernel: PartialIModel): js.UndefOr[Widget] = js.native
     
     /**
       * Delete a file.
@@ -159,18 +160,13 @@ object tokensMod {
       * cannot be found.
       */
     def open(path: String): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
-    def open(
-      path: String,
-      widgetName: js.UndefOr[scala.Nothing],
-      kernel: js.UndefOr[scala.Nothing],
-      options: IOpenOptions
-    ): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
-    def open(path: String, widgetName: js.UndefOr[scala.Nothing], kernel: PartialIModel): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
-    def open(path: String, widgetName: js.UndefOr[scala.Nothing], kernel: PartialIModel, options: IOpenOptions): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
     def open(path: String, widgetName: String): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
-    def open(path: String, widgetName: String, kernel: js.UndefOr[scala.Nothing], options: IOpenOptions): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
+    def open(path: String, widgetName: String, kernel: Unit, options: IOpenOptions): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
     def open(path: String, widgetName: String, kernel: PartialIModel): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
     def open(path: String, widgetName: String, kernel: PartialIModel, options: IOpenOptions): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
+    def open(path: String, widgetName: Unit, kernel: Unit, options: IOpenOptions): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
+    def open(path: String, widgetName: Unit, kernel: PartialIModel): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
+    def open(path: String, widgetName: Unit, kernel: PartialIModel, options: IOpenOptions): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
     
     /**
       * Open a file and return the widget used to view it.
@@ -189,18 +185,13 @@ object tokensMod {
       * cannot be found.
       */
     def openOrReveal(path: String): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
-    def openOrReveal(
-      path: String,
-      widgetName: js.UndefOr[scala.Nothing],
-      kernel: js.UndefOr[scala.Nothing],
-      options: IOpenOptions
-    ): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
-    def openOrReveal(path: String, widgetName: js.UndefOr[scala.Nothing], kernel: PartialIModel): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
-    def openOrReveal(path: String, widgetName: js.UndefOr[scala.Nothing], kernel: PartialIModel, options: IOpenOptions): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
     def openOrReveal(path: String, widgetName: String): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
-    def openOrReveal(path: String, widgetName: String, kernel: js.UndefOr[scala.Nothing], options: IOpenOptions): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
+    def openOrReveal(path: String, widgetName: String, kernel: Unit, options: IOpenOptions): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
     def openOrReveal(path: String, widgetName: String, kernel: PartialIModel): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
     def openOrReveal(path: String, widgetName: String, kernel: PartialIModel, options: IOpenOptions): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
+    def openOrReveal(path: String, widgetName: Unit, kernel: Unit, options: IOpenOptions): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
+    def openOrReveal(path: String, widgetName: Unit, kernel: PartialIModel): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
+    def openOrReveal(path: String, widgetName: Unit, kernel: PartialIModel, options: IOpenOptions): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
     
     /**
       * Overwrite a file.

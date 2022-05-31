@@ -6,7 +6,6 @@ import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.IPlugin
 import typings.jupyterlabStatedb.mod.DataConnector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object settingMod {
@@ -29,30 +28,25 @@ object settingMod {
     /**
       * The instantiation options for a setting manager.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The server settings used to make API requests.
         */
-      var serverSettings: js.UndefOr[ISettings] = js.native
+      var serverSettings: js.UndefOr[ISettings] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): IOptions = {
+      inline def apply(): IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setServerSettings(value: ISettings): Self = StObject.set(x, "serverSettings", value.asInstanceOf[js.Any])
+        inline def setServerSettings(value: ISettings): Self = StObject.set(x, "serverSettings", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServerSettingsUndefined: Self = StObject.set(x, "serverSettings", js.undefined)
+        inline def setServerSettingsUndefined: Self = StObject.set(x, "serverSettings", js.undefined)
       }
     }
   }

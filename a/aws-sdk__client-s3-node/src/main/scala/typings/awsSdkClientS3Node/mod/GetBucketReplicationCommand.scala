@@ -1,5 +1,6 @@
 package typings.awsSdkClientS3Node.mod
 
+import typings.awsSdkClientS3Node.typesGetBucketReplicationInputMod.GetBucketReplicationInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class GetBucketReplicationCommand protected ()
   extends typings.awsSdkClientS3Node.getBucketReplicationCommandMod.GetBucketReplicationCommand {
-  def this(input: typings.awsSdkClientS3Node.typesGetBucketReplicationInputMod.GetBucketReplicationInput) = this()
+  def this(input: GetBucketReplicationInput) = this()
 }

@@ -10,9 +10,4 @@ object global {
   @js.native
   def ko: KnockoutStatic = js.native
   inline def ko_=(x: KnockoutStatic): Unit = js.Dynamic.global.updateDynamic("ko")(x.asInstanceOf[js.Any])
-  
-  //
-  // namespace for ko.plus types
-  //
-  object KoPlus
 }

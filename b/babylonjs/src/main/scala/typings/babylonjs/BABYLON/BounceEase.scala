@@ -2,22 +2,21 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BounceEase extends EasingFunction {
+trait BounceEase
+  extends StObject
+     with EasingFunction {
   
   /** Defines the number of bounces */
-  var bounces: Double = js.native
+  var bounces: Double
   
   /** Defines the amplitude of the bounce */
-  var bounciness: Double = js.native
+  var bounciness: Double
 }
 object BounceEase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _easingMode: js.Any,
     bounces: Double,
     bounciness: Double,
@@ -30,13 +29,10 @@ object BounceEase {
     __obj.asInstanceOf[BounceEase]
   }
   
-  @scala.inline
-  implicit class BounceEaseMutableBuilder[Self <: BounceEase] (val x: Self) extends AnyVal {
+  extension [Self <: BounceEase](x: Self) {
     
-    @scala.inline
-    def setBounces(value: Double): Self = StObject.set(x, "bounces", value.asInstanceOf[js.Any])
+    inline def setBounces(value: Double): Self = StObject.set(x, "bounces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBounciness(value: Double): Self = StObject.set(x, "bounciness", value.asInstanceOf[js.Any])
+    inline def setBounciness(value: Double): Self = StObject.set(x, "bounciness", value.asInstanceOf[js.Any])
   }
 }

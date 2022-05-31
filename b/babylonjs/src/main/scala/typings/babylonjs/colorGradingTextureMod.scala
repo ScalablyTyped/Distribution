@@ -6,7 +6,6 @@ import typings.babylonjs.thinEngineMod.ThinEngine
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colorGradingTextureMod {
@@ -26,24 +25,24 @@ object colorGradingTextureMod {
     def this(url: String, sceneOrEngine: Scene, onLoad: Nullable[js.Function0[Unit]]) = this()
     def this(url: String, sceneOrEngine: ThinEngine, onLoad: Nullable[js.Function0[Unit]]) = this()
     
-    var _onLoad: js.Any = js.native
+    /* private */ var _onLoad: js.Any = js.native
     
-    var _textureMatrix: js.Any = js.native
+    /* private */ var _textureMatrix: js.Any = js.native
     
     /**
       * Fires the onload event from the constructor if requested.
       */
-    var _triggerOnLoad: js.Any = js.native
+    /* private */ var _triggerOnLoad: js.Any = js.native
     
     /**
       * Occurs when the file being loaded is a .3dl LUT file.
       */
-    var load3dlTexture: js.Any = js.native
+    /* private */ var load3dlTexture: js.Any = js.native
     
     /**
       * Starts the loading process of the texture.
       */
-    var loadTexture: js.Any = js.native
+    /* private */ var loadTexture: js.Any = js.native
     
     /**
       * The texture URL.
@@ -64,9 +63,7 @@ object colorGradingTextureMod {
       * @param rootUrl The root url of the data assets to load
       * @return A color gradind texture
       */
-    @JSImport("babylonjs/Materials/Textures/colorGradingTexture", "ColorGradingTexture.Parse")
-    @js.native
-    def Parse(parsedTexture: js.Any, scene: Scene): Nullable[ColorGradingTexture] = js.native
+    inline def Parse(parsedTexture: js.Any, scene: Scene): Nullable[ColorGradingTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[ColorGradingTexture]]
     
     /**
       * Empty line regex stored for GC.
@@ -74,7 +71,6 @@ object colorGradingTextureMod {
     @JSImport("babylonjs/Materials/Textures/colorGradingTexture", "ColorGradingTexture._noneEmptyLineRegex")
     @js.native
     def _noneEmptyLineRegex: js.Any = js.native
-    @scala.inline
-    def _noneEmptyLineRegex_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_noneEmptyLineRegex")(x.asInstanceOf[js.Any])
+    inline def _noneEmptyLineRegex_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_noneEmptyLineRegex")(x.asInstanceOf[js.Any])
   }
 }

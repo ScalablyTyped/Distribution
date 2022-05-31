@@ -2,20 +2,21 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebXRFeaturePointSystem extends WebXRAbstractFeature {
+trait WebXRFeaturePointSystem
+  extends StObject
+     with WebXRAbstractFeature {
   
-  var _enabled: js.Any = js.native
+  /* private */ var _enabled: js.Any = js.native
   
-  var _featurePointCloud: js.Any = js.native
+  /* private */ var _featurePointCloud: js.Any = js.native
   
   /**
     * Initializes the feature. If the feature point feature is not available for this environment do not mark the feature as enabled.
     */
-  var _init: js.Any = js.native
+  /* private */ var _init: js.Any = js.native
   
   /**
     * The current feature point cloud maintained across frames.

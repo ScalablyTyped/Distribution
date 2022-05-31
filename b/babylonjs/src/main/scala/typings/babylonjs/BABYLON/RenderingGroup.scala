@@ -2,44 +2,43 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RenderingGroup extends StObject {
   
-  var _alphaTestSortCompareFn: js.Any = js.native
+  /* private */ var _alphaTestSortCompareFn: js.Any = js.native
   
-  var _alphaTestSubMeshes: js.Any = js.native
+  /* private */ var _alphaTestSubMeshes: js.Any = js.native
   
-  var _depthOnlySubMeshes: js.Any = js.native
+  /* private */ var _depthOnlySubMeshes: js.Any = js.native
   
   /** @hidden */
   var _edgesRenderers: SmartArrayNoDuplicate[IEdgesRenderer] = js.native
   
-  var _opaqueSortCompareFn: js.Any = js.native
+  /* private */ var _opaqueSortCompareFn: js.Any = js.native
   
-  var _opaqueSubMeshes: js.Any = js.native
+  /* private */ var _opaqueSubMeshes: js.Any = js.native
   
-  var _particleSystems: js.Any = js.native
+  /* private */ var _particleSystems: js.Any = js.native
   
-  var _renderAlphaTest: js.Any = js.native
+  /* private */ var _renderAlphaTest: js.Any = js.native
   
-  var _renderOpaque: js.Any = js.native
+  /* private */ var _renderOpaque: js.Any = js.native
   
-  var _renderParticles: js.Any = js.native
+  /* private */ var _renderParticles: js.Any = js.native
   
-  var _renderSprites: js.Any = js.native
+  /* private */ var _renderSprites: js.Any = js.native
   
-  var _renderTransparent: js.Any = js.native
+  /* private */ var _renderTransparent: js.Any = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
-  var _spriteManagers: js.Any = js.native
+  /* private */ var _spriteManagers: js.Any = js.native
   
-  var _transparentSortCompareFn: js.Any = js.native
+  /* private */ var _transparentSortCompareFn: js.Any = js.native
   
-  var _transparentSubMeshes: js.Any = js.native
+  /* private */ var _transparentSubMeshes: js.Any = js.native
   
   /**
     * Set the alpha test sort comparison function.
@@ -54,7 +53,7 @@ trait RenderingGroup extends StObject {
     * @param [material] Optional reference to the submeshes's material. Provide if you have an exiting reference to improve performance.
     */
   def dispatch(subMesh: SubMesh): Unit = js.native
-  def dispatch(subMesh: SubMesh, mesh: js.UndefOr[scala.Nothing], material: Nullable[Material]): Unit = js.native
+  def dispatch(subMesh: SubMesh, mesh: Unit, material: Nullable[Material]): Unit = js.native
   def dispatch(subMesh: SubMesh, mesh: AbstractMesh): Unit = js.native
   def dispatch(subMesh: SubMesh, mesh: AbstractMesh, material: Nullable[Material]): Unit = js.native
   
@@ -103,19 +102,19 @@ trait RenderingGroup extends StObject {
     * Renders the opaque submeshes in the order from the alphatestSortCompareFn.
     * @param subMeshes The submeshes to render
     */
-  var renderAlphaTestSorted: js.Any = js.native
+  /* private */ var renderAlphaTestSorted: js.Any = js.native
   
   /**
     * Renders the opaque submeshes in the order from the opaqueSortCompareFn.
     * @param subMeshes The submeshes to render
     */
-  var renderOpaqueSorted: js.Any = js.native
+  /* private */ var renderOpaqueSorted: js.Any = js.native
   
   /**
     * Renders the opaque submeshes in the order from the transparentSortCompareFn.
     * @param subMeshes The submeshes to render
     */
-  var renderTransparentSorted: js.Any = js.native
+  /* private */ var renderTransparentSorted: js.Any = js.native
   
   /**
     * Set the transparent sort comparison function.

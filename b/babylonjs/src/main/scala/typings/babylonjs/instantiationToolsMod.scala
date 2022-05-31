@@ -3,7 +3,6 @@ package typings.babylonjs
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object instantiationToolsMod {
@@ -23,9 +22,7 @@ object instantiationToolsMod {
       * @param className defines the class name to instantiate
       * @returns the new object or null if the system was not able to do the instantiation
       */
-    @JSImport("babylonjs/Misc/instantiationTools", "InstantiationTools.Instantiate")
-    @js.native
-    def Instantiate(className: String): js.Any = js.native
+    inline def Instantiate(className: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Instantiate")(className.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * Use this object to register external classes like custom textures or material
@@ -34,7 +31,6 @@ object instantiationToolsMod {
     @JSImport("babylonjs/Misc/instantiationTools", "InstantiationTools.RegisteredExternalClasses")
     @js.native
     def RegisteredExternalClasses: StringDictionary[js.Object] = js.native
-    @scala.inline
-    def RegisteredExternalClasses_=(x: StringDictionary[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RegisteredExternalClasses")(x.asInstanceOf[js.Any])
+    inline def RegisteredExternalClasses_=(x: StringDictionary[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RegisteredExternalClasses")(x.asInstanceOf[js.Any])
   }
 }

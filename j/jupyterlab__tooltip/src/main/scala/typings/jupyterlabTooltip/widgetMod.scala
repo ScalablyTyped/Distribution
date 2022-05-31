@@ -8,7 +8,6 @@ import typings.luminoWidgets.mod.Widget
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object widgetMod {
@@ -21,21 +20,21 @@ object widgetMod {
       */
     def this(options: IOptions) = this()
     
-    var _content: js.Any = js.native
+    /* private */ var _content: js.Any = js.native
     
-    var _editor: js.Any = js.native
+    /* private */ var _editor: js.Any = js.native
     
     /**
       * Handle scroll events for the widget
       */
-    var _evtScroll: js.Any = js.native
+    /* private */ var _evtScroll: js.Any = js.native
     
-    var _rendermime: js.Any = js.native
+    /* private */ var _rendermime: js.Any = js.native
     
     /**
       * Set the geometry of the tooltip widget.
       */
-    var _setGeometry: js.Any = js.native
+    /* private */ var _setGeometry: js.Any = js.native
     
     /**
       * The anchor widget that the tooltip widget tracks.
@@ -59,51 +58,44 @@ object widgetMod {
     /**
       * Instantiation options for a tooltip widget.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The anchor widget that the tooltip widget tracks.
         */
-      var anchor: Widget = js.native
+      var anchor: Widget
       
       /**
         * The data that populates the tooltip widget.
         */
-      var bundle: JSONObject = js.native
+      var bundle: JSONObject
       
       /**
         * The editor referent of the tooltip model.
         */
-      var editor: IEditor = js.native
+      var editor: IEditor
       
       /**
         * The rendermime instance used by the tooltip model.
         */
-      var rendermime: IRenderMimeRegistry = js.native
+      var rendermime: IRenderMimeRegistry
     }
     object IOptions {
       
-      @scala.inline
-      def apply(anchor: Widget, bundle: JSONObject, editor: IEditor, rendermime: IRenderMimeRegistry): IOptions = {
+      inline def apply(anchor: Widget, bundle: JSONObject, editor: IEditor, rendermime: IRenderMimeRegistry): IOptions = {
         val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], bundle = bundle.asInstanceOf[js.Any], editor = editor.asInstanceOf[js.Any], rendermime = rendermime.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setAnchor(value: Widget): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+        inline def setAnchor(value: Widget): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBundle(value: JSONObject): Self = StObject.set(x, "bundle", value.asInstanceOf[js.Any])
+        inline def setBundle(value: JSONObject): Self = StObject.set(x, "bundle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEditor(value: IEditor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+        inline def setEditor(value: IEditor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRendermime(value: IRenderMimeRegistry): Self = StObject.set(x, "rendermime", value.asInstanceOf[js.Any])
+        inline def setRendermime(value: IRenderMimeRegistry): Self = StObject.set(x, "rendermime", value.asInstanceOf[js.Any])
       }
     }
   }

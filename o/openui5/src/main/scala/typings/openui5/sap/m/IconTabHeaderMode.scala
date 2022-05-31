@@ -6,9 +6,3 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait IconTabHeaderMode extends StObject
-/**
-  * Specifies <code>IconTabBar</code> header mode.
-  */
-@JSGlobal("sap.m.IconTabHeaderMode")
-@js.native
-object IconTabHeaderMode extends StObject

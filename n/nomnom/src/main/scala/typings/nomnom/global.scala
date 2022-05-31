@@ -12,12 +12,4 @@ object global {
   def nomnom: Parser = js.native
   
   inline def nomnom_=(x: Parser): Unit = js.Dynamic.global.updateDynamic("_nomnom")(x.asInstanceOf[js.Any])
-  
-  object NomnomInternal {
-    
-    /**
-      * The command-line parser.
-      */
-    object Parser
-  }
 }

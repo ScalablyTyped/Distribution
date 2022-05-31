@@ -10,7 +10,6 @@ import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.uniformBufferMod.UniformBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pbrSheenConfigurationMod {
@@ -24,25 +23,25 @@ object pbrSheenConfigurationMod {
       */
     def this(markAllSubMeshesAsTexturesDirty: js.Function0[Unit]) = this()
     
-    var _albedoScaling: js.Any = js.native
+    /* private */ var _albedoScaling: js.Any = js.native
     
     /** @hidden */
-    var _internalMarkAllSubMeshesAsTexturesDirty: js.Any = js.native
+    /* private */ var _internalMarkAllSubMeshesAsTexturesDirty: js.Any = js.native
     
-    var _isEnabled: js.Any = js.native
+    /* private */ var _isEnabled: js.Any = js.native
     
-    var _linkSheenWithAlbedo: js.Any = js.native
+    /* private */ var _linkSheenWithAlbedo: js.Any = js.native
     
     /** @hidden */
     def _markAllSubMeshesAsTexturesDirty(): Unit = js.native
     
-    var _roughness: js.Any = js.native
+    /* private */ var _roughness: js.Any = js.native
     
-    var _texture: js.Any = js.native
+    /* private */ var _texture: js.Any = js.native
     
-    var _textureRoughness: js.Any = js.native
+    /* private */ var _textureRoughness: js.Any = js.native
     
-    var _useRoughnessFromMainTexture: js.Any = js.native
+    /* private */ var _useRoughnessFromMainTexture: js.Any = js.native
     
     /**
       * If true, the sheen effect is layered above the base BRDF with the albedo-scaling technique.
@@ -178,6 +177,10 @@ object pbrSheenConfigurationMod {
   /* static members */
   object PBRSheenConfiguration {
     
+    @JSImport("babylonjs/Materials/PBR/pbrSheenConfiguration", "PBRSheenConfiguration")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Add fallbacks to the effect fallbacks list.
       * @param defines defines the Base texture to use.
@@ -185,65 +188,55 @@ object pbrSheenConfigurationMod {
       * @param currentRank defines the current fallback rank.
       * @returns the new fallback rank.
       */
-    @JSImport("babylonjs/Materials/PBR/pbrSheenConfiguration", "PBRSheenConfiguration.AddFallbacks")
-    @js.native
-    def AddFallbacks(defines: IMaterialSheenDefines, fallbacks: EffectFallbacks, currentRank: Double): Double = js.native
+    inline def AddFallbacks(defines: IMaterialSheenDefines, fallbacks: EffectFallbacks, currentRank: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("AddFallbacks")(defines.asInstanceOf[js.Any], fallbacks.asInstanceOf[js.Any], currentRank.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Add the required samplers to the current list.
       * @param samplers defines the current sampler list.
       */
-    @JSImport("babylonjs/Materials/PBR/pbrSheenConfiguration", "PBRSheenConfiguration.AddSamplers")
-    @js.native
-    def AddSamplers(samplers: js.Array[String]): Unit = js.native
+    inline def AddSamplers(samplers: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AddSamplers")(samplers.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Add the required uniforms to the current list.
       * @param uniforms defines the current uniform list.
       */
-    @JSImport("babylonjs/Materials/PBR/pbrSheenConfiguration", "PBRSheenConfiguration.AddUniforms")
-    @js.native
-    def AddUniforms(uniforms: js.Array[String]): Unit = js.native
+    inline def AddUniforms(uniforms: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AddUniforms")(uniforms.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Add the required uniforms to the current buffer.
       * @param uniformBuffer defines the current uniform buffer.
       */
-    @JSImport("babylonjs/Materials/PBR/pbrSheenConfiguration", "PBRSheenConfiguration.PrepareUniformBuffer")
-    @js.native
-    def PrepareUniformBuffer(uniformBuffer: UniformBuffer): Unit = js.native
+    inline def PrepareUniformBuffer(uniformBuffer: UniformBuffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("PrepareUniformBuffer")(uniformBuffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @js.native
   trait IMaterialSheenDefines extends StObject {
     
-    var SHEEN: Boolean = js.native
+    var SHEEN: Boolean
     
-    var SHEEN_ALBEDOSCALING: Boolean = js.native
+    var SHEEN_ALBEDOSCALING: Boolean
     
-    var SHEEN_LINKWITHALBEDO: Boolean = js.native
+    var SHEEN_LINKWITHALBEDO: Boolean
     
-    var SHEEN_ROUGHNESS: Boolean = js.native
+    var SHEEN_ROUGHNESS: Boolean
     
-    var SHEEN_TEXTURE: Boolean = js.native
+    var SHEEN_TEXTURE: Boolean
     
-    var SHEEN_TEXTUREDIRECTUV: Double = js.native
+    var SHEEN_TEXTUREDIRECTUV: Double
     
-    var SHEEN_TEXTURE_ROUGHNESS: Boolean = js.native
+    var SHEEN_TEXTURE_ROUGHNESS: Boolean
     
-    var SHEEN_TEXTURE_ROUGHNESSDIRECTUV: Double = js.native
+    var SHEEN_TEXTURE_ROUGHNESSDIRECTUV: Double
     
-    var SHEEN_TEXTURE_ROUGHNESS_IDENTICAL: Boolean = js.native
+    var SHEEN_TEXTURE_ROUGHNESS_IDENTICAL: Boolean
     
-    var SHEEN_USE_ROUGHNESS_FROM_MAINTEXTURE: Boolean = js.native
+    var SHEEN_USE_ROUGHNESS_FROM_MAINTEXTURE: Boolean
     
     /** @hidden */
-    var _areTexturesDirty: Boolean = js.native
+    var _areTexturesDirty: Boolean
   }
   object IMaterialSheenDefines {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       SHEEN: Boolean,
       SHEEN_ALBEDOSCALING: Boolean,
       SHEEN_LINKWITHALBEDO: Boolean,
@@ -260,41 +253,29 @@ object pbrSheenConfigurationMod {
       __obj.asInstanceOf[IMaterialSheenDefines]
     }
     
-    @scala.inline
-    implicit class IMaterialSheenDefinesMutableBuilder[Self <: IMaterialSheenDefines] (val x: Self) extends AnyVal {
+    extension [Self <: IMaterialSheenDefines](x: Self) {
       
-      @scala.inline
-      def setSHEEN(value: Boolean): Self = StObject.set(x, "SHEEN", value.asInstanceOf[js.Any])
+      inline def setSHEEN(value: Boolean): Self = StObject.set(x, "SHEEN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSHEEN_ALBEDOSCALING(value: Boolean): Self = StObject.set(x, "SHEEN_ALBEDOSCALING", value.asInstanceOf[js.Any])
+      inline def setSHEEN_ALBEDOSCALING(value: Boolean): Self = StObject.set(x, "SHEEN_ALBEDOSCALING", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSHEEN_LINKWITHALBEDO(value: Boolean): Self = StObject.set(x, "SHEEN_LINKWITHALBEDO", value.asInstanceOf[js.Any])
+      inline def setSHEEN_LINKWITHALBEDO(value: Boolean): Self = StObject.set(x, "SHEEN_LINKWITHALBEDO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSHEEN_ROUGHNESS(value: Boolean): Self = StObject.set(x, "SHEEN_ROUGHNESS", value.asInstanceOf[js.Any])
+      inline def setSHEEN_ROUGHNESS(value: Boolean): Self = StObject.set(x, "SHEEN_ROUGHNESS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSHEEN_TEXTURE(value: Boolean): Self = StObject.set(x, "SHEEN_TEXTURE", value.asInstanceOf[js.Any])
+      inline def setSHEEN_TEXTURE(value: Boolean): Self = StObject.set(x, "SHEEN_TEXTURE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSHEEN_TEXTUREDIRECTUV(value: Double): Self = StObject.set(x, "SHEEN_TEXTUREDIRECTUV", value.asInstanceOf[js.Any])
+      inline def setSHEEN_TEXTUREDIRECTUV(value: Double): Self = StObject.set(x, "SHEEN_TEXTUREDIRECTUV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSHEEN_TEXTURE_ROUGHNESS(value: Boolean): Self = StObject.set(x, "SHEEN_TEXTURE_ROUGHNESS", value.asInstanceOf[js.Any])
+      inline def setSHEEN_TEXTURE_ROUGHNESS(value: Boolean): Self = StObject.set(x, "SHEEN_TEXTURE_ROUGHNESS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSHEEN_TEXTURE_ROUGHNESSDIRECTUV(value: Double): Self = StObject.set(x, "SHEEN_TEXTURE_ROUGHNESSDIRECTUV", value.asInstanceOf[js.Any])
+      inline def setSHEEN_TEXTURE_ROUGHNESSDIRECTUV(value: Double): Self = StObject.set(x, "SHEEN_TEXTURE_ROUGHNESSDIRECTUV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSHEEN_TEXTURE_ROUGHNESS_IDENTICAL(value: Boolean): Self = StObject.set(x, "SHEEN_TEXTURE_ROUGHNESS_IDENTICAL", value.asInstanceOf[js.Any])
+      inline def setSHEEN_TEXTURE_ROUGHNESS_IDENTICAL(value: Boolean): Self = StObject.set(x, "SHEEN_TEXTURE_ROUGHNESS_IDENTICAL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSHEEN_USE_ROUGHNESS_FROM_MAINTEXTURE(value: Boolean): Self = StObject.set(x, "SHEEN_USE_ROUGHNESS_FROM_MAINTEXTURE", value.asInstanceOf[js.Any])
+      inline def setSHEEN_USE_ROUGHNESS_FROM_MAINTEXTURE(value: Boolean): Self = StObject.set(x, "SHEEN_USE_ROUGHNESS_FROM_MAINTEXTURE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_areTexturesDirty(value: Boolean): Self = StObject.set(x, "_areTexturesDirty", value.asInstanceOf[js.Any])
+      inline def set_areTexturesDirty(value: Boolean): Self = StObject.set(x, "_areTexturesDirty", value.asInstanceOf[js.Any])
     }
   }
 }

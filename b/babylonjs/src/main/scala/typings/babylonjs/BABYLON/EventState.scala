@@ -2,7 +2,6 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -22,18 +21,13 @@ trait EventState extends StObject {
     * @returns the current event state
     */
   def initalize(mask: Double): EventState = js.native
-  def initalize(
-    mask: Double,
-    skipNextObservers: js.UndefOr[scala.Nothing],
-    target: js.UndefOr[scala.Nothing],
-    currentTarget: js.Any
-  ): EventState = js.native
-  def initalize(mask: Double, skipNextObservers: js.UndefOr[scala.Nothing], target: js.Any): EventState = js.native
-  def initalize(mask: Double, skipNextObservers: js.UndefOr[scala.Nothing], target: js.Any, currentTarget: js.Any): EventState = js.native
   def initalize(mask: Double, skipNextObservers: Boolean): EventState = js.native
-  def initalize(mask: Double, skipNextObservers: Boolean, target: js.UndefOr[scala.Nothing], currentTarget: js.Any): EventState = js.native
   def initalize(mask: Double, skipNextObservers: Boolean, target: js.Any): EventState = js.native
   def initalize(mask: Double, skipNextObservers: Boolean, target: js.Any, currentTarget: js.Any): EventState = js.native
+  def initalize(mask: Double, skipNextObservers: Boolean, target: Unit, currentTarget: js.Any): EventState = js.native
+  def initalize(mask: Double, skipNextObservers: Unit, target: js.Any): EventState = js.native
+  def initalize(mask: Double, skipNextObservers: Unit, target: js.Any, currentTarget: js.Any): EventState = js.native
+  def initalize(mask: Double, skipNextObservers: Unit, target: Unit, currentTarget: js.Any): EventState = js.native
   
   /**
     * This will be populated with the return value of the last function that was executed.

@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.SetValueAction")
 @js.native
 class SetValueAction protected ()
-  extends typings.babylonjs.BABYLON.SetValueAction {
+  extends StObject
+     with typings.babylonjs.BABYLON.SetValueAction {
   /**
     * Instantiate the action
     * @param triggerOptions defines the trigger options

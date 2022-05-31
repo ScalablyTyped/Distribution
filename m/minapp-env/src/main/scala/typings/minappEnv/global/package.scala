@@ -5,6 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
+inline def App: typings.minappEnv.App.AppConstructor = js.Dynamic.global.selectDynamic("App").asInstanceOf[typings.minappEnv.App.AppConstructor]
+
 inline def GeneratorFunction_=(x: typings.minappEnv.GeneratorFunctionConstructor): scala.Unit = js.Dynamic.global.updateDynamic("GeneratorFunction")(x.asInstanceOf[js.Any])
 
 inline def Infinity: scala.Double = js.Dynamic.global.selectDynamic("Infinity").asInstanceOf[scala.Double]
@@ -23,6 +25,8 @@ inline def Math: typings.minappEnv.Math = js.Dynamic.global.selectDynamic("Math"
 /// ECMAScript APIs
 /////////////////////////////
 inline def NaN: scala.Double = js.Dynamic.global.selectDynamic("NaN").asInstanceOf[scala.Double]
+
+inline def Page: typings.minappEnv.Page.PageConstructor = js.Dynamic.global.selectDynamic("Page").asInstanceOf[typings.minappEnv.Page.PageConstructor]
 
 inline def Promise_=(x: typings.minappEnv.PromiseConstructor): scala.Unit = js.Dynamic.global.updateDynamic("Promise")(x.asInstanceOf[js.Any])
 
@@ -126,3 +130,5 @@ inline def setInterval(handler: js.Function1[/* repeated */ js.Any, scala.Unit],
 inline def setTimeout(handler: js.Any, timeout: js.Any, args: js.Any*): scala.Double = (js.Dynamic.global.applyDynamic("setTimeout")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
 inline def setTimeout(handler: js.Any, timeout: scala.Unit, args: js.Any*): scala.Double = (js.Dynamic.global.applyDynamic("setTimeout")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
 inline def setTimeout(handler: js.Function1[/* repeated */ js.Any, scala.Unit], timeout: scala.Double): scala.Double = (js.Dynamic.global.applyDynamic("setTimeout")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+
+inline def wx: typings.minappEnv.wx.Wx = js.Dynamic.global.selectDynamic("wx").asInstanceOf[typings.minappEnv.wx.Wx]

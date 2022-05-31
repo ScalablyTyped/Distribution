@@ -7,7 +7,6 @@ import typings.luminoCoreutils.jsonMod.JSONObject
 import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,6 +21,10 @@ object mod {
     def this(options: IOptions) = this()
   }
   object OutputArea {
+    
+    @JSImport("@jupyterlab/outputarea", "OutputArea")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * The default implementation of `IContentFactory`.
@@ -41,25 +44,19 @@ object mod {
     /**
       * Execute code on an output area.
       */
-    @JSImport("@jupyterlab/outputarea", "OutputArea.execute")
-    @js.native
-    def execute(
+    inline def execute(
       code: String,
       output: typings.jupyterlabOutputarea.widgetMod.OutputArea,
       sessionContext: ISessionContext
-    ): js.Promise[js.UndefOr[IExecuteReplyMsg]] = js.native
-    @JSImport("@jupyterlab/outputarea", "OutputArea.execute")
-    @js.native
-    def execute(
+    ): js.Promise[js.UndefOr[IExecuteReplyMsg]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(code.asInstanceOf[js.Any], output.asInstanceOf[js.Any], sessionContext.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[IExecuteReplyMsg]]]
+    inline def execute(
       code: String,
       output: typings.jupyterlabOutputarea.widgetMod.OutputArea,
       sessionContext: ISessionContext,
       metadata: JSONObject
-    ): js.Promise[js.UndefOr[IExecuteReplyMsg]] = js.native
+    ): js.Promise[js.UndefOr[IExecuteReplyMsg]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(code.asInstanceOf[js.Any], output.asInstanceOf[js.Any], sessionContext.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[IExecuteReplyMsg]]]
     
-    @JSImport("@jupyterlab/outputarea", "OutputArea.isIsolated")
-    @js.native
-    def isIsolated(mimeType: String, metadata: ReadonlyPartialJSONObject): Boolean = js.native
+    inline def isIsolated(mimeType: String, metadata: ReadonlyPartialJSONObject): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIsolated")(mimeType.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   @JSImport("@jupyterlab/outputarea", "OutputAreaModel")

@@ -29,50 +29,49 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ojDiagramLinkEventMap extends HTMLElementEventMap {
+trait ojDiagramLinkEventMap
+  extends StObject
+     with HTMLElementEventMap {
   
-  var categoriesChanged: JetElementCustomEvent[js.Array[String]] = js.native
+  var categoriesChanged: JetElementCustomEvent[js.Array[String]]
   
-  var colorChanged: JetElementCustomEvent[js.UndefOr[String]] = js.native
+  var colorChanged: JetElementCustomEvent[js.UndefOr[String]]
   
   var endConnectorTypeChanged: JetElementCustomEvent[
     js.UndefOr[arrow | arrowConcave | arrowOpen | circle | none | rectangle | rectangleRounded]
-  ] = js.native
+  ]
   
   var endNodeChanged: JetElementCustomEvent[
     /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojdiagram.ojDiagramLink['endNode'] */ js.Any
-  ] = js.native
+  ]
   
-  var labelChanged: JetElementCustomEvent[js.UndefOr[String]] = js.native
+  var labelChanged: JetElementCustomEvent[js.UndefOr[String]]
   
-  var labelStyleChanged: JetElementCustomEvent[js.UndefOr[js.Object | Null]] = js.native
+  var labelStyleChanged: JetElementCustomEvent[js.UndefOr[js.Object | Null]]
   
-  var selectableChanged: JetElementCustomEvent[js.UndefOr[auto | off]] = js.native
+  var selectableChanged: JetElementCustomEvent[js.UndefOr[auto | off]]
   
-  var shortDescChanged: JetElementCustomEvent[js.UndefOr[String]] = js.native
+  var shortDescChanged: JetElementCustomEvent[js.UndefOr[String]]
   
   var startConnectorTypeChanged: JetElementCustomEvent[
     js.UndefOr[arrow | arrowConcave | arrowOpen | circle | none | rectangle | rectangleRounded]
-  ] = js.native
+  ]
   
   var startNodeChanged: JetElementCustomEvent[
     /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojdiagram.ojDiagramLink['startNode'] */ js.Any
-  ] = js.native
+  ]
   
-  var svgClassNameChanged: JetElementCustomEvent[js.UndefOr[String]] = js.native
+  var svgClassNameChanged: JetElementCustomEvent[js.UndefOr[String]]
   
-  var svgStyleChanged: JetElementCustomEvent[js.UndefOr[js.Object]] = js.native
+  var svgStyleChanged: JetElementCustomEvent[js.UndefOr[js.Object]]
   
-  var widthChanged: JetElementCustomEvent[js.UndefOr[Double]] = js.native
+  var widthChanged: JetElementCustomEvent[js.UndefOr[Double]]
 }
 object ojDiagramLinkEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,
@@ -191,62 +190,48 @@ object ojDiagramLinkEventMap {
     __obj.asInstanceOf[ojDiagramLinkEventMap]
   }
   
-  @scala.inline
-  implicit class ojDiagramLinkEventMapMutableBuilder[Self <: ojDiagramLinkEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: ojDiagramLinkEventMap](x: Self) {
     
-    @scala.inline
-    def setCategoriesChanged(value: JetElementCustomEvent[js.Array[String]]): Self = StObject.set(x, "categoriesChanged", value.asInstanceOf[js.Any])
+    inline def setCategoriesChanged(value: JetElementCustomEvent[js.Array[String]]): Self = StObject.set(x, "categoriesChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = StObject.set(x, "colorChanged", value.asInstanceOf[js.Any])
+    inline def setColorChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = StObject.set(x, "colorChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndConnectorTypeChanged(
+    inline def setEndConnectorTypeChanged(
       value: JetElementCustomEvent[
           js.UndefOr[arrow | arrowConcave | arrowOpen | circle | none | rectangle | rectangleRounded]
         ]
     ): Self = StObject.set(x, "endConnectorTypeChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndNodeChanged(
+    inline def setEndNodeChanged(
       value: JetElementCustomEvent[
           /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojdiagram.ojDiagramLink['endNode'] */ js.Any
         ]
     ): Self = StObject.set(x, "endNodeChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = StObject.set(x, "labelChanged", value.asInstanceOf[js.Any])
+    inline def setLabelChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = StObject.set(x, "labelChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelStyleChanged(value: JetElementCustomEvent[js.UndefOr[js.Object | Null]]): Self = StObject.set(x, "labelStyleChanged", value.asInstanceOf[js.Any])
+    inline def setLabelStyleChanged(value: JetElementCustomEvent[js.UndefOr[js.Object | Null]]): Self = StObject.set(x, "labelStyleChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectableChanged(value: JetElementCustomEvent[js.UndefOr[auto | off]]): Self = StObject.set(x, "selectableChanged", value.asInstanceOf[js.Any])
+    inline def setSelectableChanged(value: JetElementCustomEvent[js.UndefOr[auto | off]]): Self = StObject.set(x, "selectableChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortDescChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = StObject.set(x, "shortDescChanged", value.asInstanceOf[js.Any])
+    inline def setShortDescChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = StObject.set(x, "shortDescChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartConnectorTypeChanged(
+    inline def setStartConnectorTypeChanged(
       value: JetElementCustomEvent[
           js.UndefOr[arrow | arrowConcave | arrowOpen | circle | none | rectangle | rectangleRounded]
         ]
     ): Self = StObject.set(x, "startConnectorTypeChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartNodeChanged(
+    inline def setStartNodeChanged(
       value: JetElementCustomEvent[
           /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojdiagram.ojDiagramLink['startNode'] */ js.Any
         ]
     ): Self = StObject.set(x, "startNodeChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgClassNameChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = StObject.set(x, "svgClassNameChanged", value.asInstanceOf[js.Any])
+    inline def setSvgClassNameChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = StObject.set(x, "svgClassNameChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgStyleChanged(value: JetElementCustomEvent[js.UndefOr[js.Object]]): Self = StObject.set(x, "svgStyleChanged", value.asInstanceOf[js.Any])
+    inline def setSvgStyleChanged(value: JetElementCustomEvent[js.UndefOr[js.Object]]): Self = StObject.set(x, "svgStyleChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthChanged(value: JetElementCustomEvent[js.UndefOr[Double]]): Self = StObject.set(x, "widthChanged", value.asInstanceOf[js.Any])
+    inline def setWidthChanged(value: JetElementCustomEvent[js.UndefOr[Double]]): Self = StObject.set(x, "widthChanged", value.asInstanceOf[js.Any])
   }
 }

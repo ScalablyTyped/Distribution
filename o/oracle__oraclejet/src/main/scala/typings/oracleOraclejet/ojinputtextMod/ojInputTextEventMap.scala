@@ -46,31 +46,29 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ojInputTextEventMap
-  extends inputBaseEventMap[js.Any, ojInputTextSettableProperties, js.Any, js.Any] {
+  extends StObject
+     with inputBaseEventMap[js.Any, ojInputTextSettableProperties, js.Any, js.Any] {
   
-  var clearIconChanged: JetElementCustomEvent[never | always | conditional] = js.native
+  var clearIconChanged: JetElementCustomEvent[never | always | conditional]
   
-  var converterChanged: JetElementCustomEvent[Converter[_] | RegisteredConverter | Null] = js.native
+  var converterChanged: JetElementCustomEvent[Converter[js.Any] | RegisteredConverter | Null]
   
-  var listChanged: JetElementCustomEvent[String] = js.native
+  var listChanged: JetElementCustomEvent[String]
   
   @JSName("ojAnimateEnd")
-  var ojAnimateEnd_ojInputTextEventMap: ojAnimateEnd = js.native
+  var ojAnimateEnd_ojInputTextEventMap: ojAnimateEnd
   
   @JSName("ojAnimateStart")
-  var ojAnimateStart_ojInputTextEventMap: ojAnimateStart = js.native
+  var ojAnimateStart_ojInputTextEventMap: ojAnimateStart
   
-  var virtualKeyboardChanged: JetElementCustomEvent[auto | email | number | search | tel | text | url] = js.native
+  var virtualKeyboardChanged: JetElementCustomEvent[auto | email | number | search | tel | text | url]
 }
 object ojInputTextEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,
@@ -89,7 +87,7 @@ object ojInputTextEventMap {
     click: MouseEvent,
     close: Event,
     contextmenu: MouseEvent,
-    converterChanged: JetElementCustomEvent[Converter[_] | RegisteredConverter | Null],
+    converterChanged: JetElementCustomEvent[Converter[js.Any] | RegisteredConverter | Null],
     copy: ClipboardEvent,
     cuechange: Event,
     cut: ClipboardEvent,
@@ -192,25 +190,18 @@ object ojInputTextEventMap {
     __obj.asInstanceOf[ojInputTextEventMap]
   }
   
-  @scala.inline
-  implicit class ojInputTextEventMapMutableBuilder[Self <: ojInputTextEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: ojInputTextEventMap](x: Self) {
     
-    @scala.inline
-    def setClearIconChanged(value: JetElementCustomEvent[never | always | conditional]): Self = StObject.set(x, "clearIconChanged", value.asInstanceOf[js.Any])
+    inline def setClearIconChanged(value: JetElementCustomEvent[never | always | conditional]): Self = StObject.set(x, "clearIconChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConverterChanged(value: JetElementCustomEvent[Converter[_] | RegisteredConverter | Null]): Self = StObject.set(x, "converterChanged", value.asInstanceOf[js.Any])
+    inline def setConverterChanged(value: JetElementCustomEvent[Converter[js.Any] | RegisteredConverter | Null]): Self = StObject.set(x, "converterChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "listChanged", value.asInstanceOf[js.Any])
+    inline def setListChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "listChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
+    inline def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOjAnimateStart(value: ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
+    inline def setOjAnimateStart(value: ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualKeyboardChanged(value: JetElementCustomEvent[auto | email | number | search | tel | text | url]): Self = StObject.set(x, "virtualKeyboardChanged", value.asInstanceOf[js.Any])
+    inline def setVirtualKeyboardChanged(value: JetElementCustomEvent[auto | email | number | search | tel | text | url]): Self = StObject.set(x, "virtualKeyboardChanged", value.asInstanceOf[js.Any])
   }
 }

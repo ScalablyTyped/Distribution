@@ -1,5 +1,6 @@
 package typings.awsSdkClientPinpointBrowser.mod
 
+import typings.awsSdkClientPinpointBrowser.typesGetSmsChannelInputMod.GetSmsChannelInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class GetSmsChannelCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.getSmsChannelCommandMod.GetSmsChannelCommand {
-  def this(input: typings.awsSdkClientPinpointBrowser.typesGetSmsChannelInputMod.GetSmsChannelInput) = this()
+  def this(input: GetSmsChannelInput) = this()
 }

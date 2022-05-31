@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "react-router"
-version := "5.1-dt-20201002Z-d8a761"
+version := "5.1-dt-20201002Z-f6b3aa"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "csstype" % "2.6.14-344a29",
-  "org.scalablytyped" %%% "history" % "4.7.2-dt-20201002Z-6d86d0",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-49dd4c",
-  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-76d083",
-  "org.scalablytyped" %%% "std" % "4.1-2f6855")
+  "org.scalablytyped" %%% "csstype" % "2.6.14-dc2f99",
+  "org.scalablytyped" %%% "history" % "4.7.2-dt-20201002Z-965ac3",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-3fbed9",
+  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-4ff700",
+  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

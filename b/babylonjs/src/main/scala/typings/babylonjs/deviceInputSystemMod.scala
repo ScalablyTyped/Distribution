@@ -6,20 +6,21 @@ import typings.babylonjs.sceneMod.IDisposable
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deviceInputSystemMod {
   
   @JSImport("babylonjs/DeviceInput/deviceInputSystem", "DeviceInputSystem")
   @js.native
-  class DeviceInputSystem protected () extends IDisposable {
+  /* private */ class DeviceInputSystem ()
+    extends StObject
+       with IDisposable {
     
     /**
       * Add a gamepad to the DeviceInputSystem
       * @param gamepad A single DOM Gamepad object
       */
-    var _addGamePad: js.Any = js.native
+    /* private */ var _addGamePad: js.Any = js.native
     
     /**
       * Add pointer device to DeviceInputSystem
@@ -28,61 +29,61 @@ object deviceInputSystemMod {
       * @param currentX Current X at point of adding
       * @param currentY Current Y at point of adding
       */
-    var _addPointerDevice: js.Any = js.native
+    /* private */ var _addPointerDevice: js.Any = js.native
     
     /**
       * Checks for existing connections to devices and register them, if necessary
       * Currently handles gamepads and mouse
       */
-    var _checkForConnectedDevices: js.Any = js.native
+    /* private */ var _checkForConnectedDevices: js.Any = js.native
     
-    var _elementToAttachTo: js.Any = js.native
+    /* private */ var _elementToAttachTo: js.Any = js.native
     
-    var _gamepadConnectedEvent: js.Any = js.native
+    /* private */ var _gamepadConnectedEvent: js.Any = js.native
     
-    var _gamepadDisconnectedEvent: js.Any = js.native
+    /* private */ var _gamepadDisconnectedEvent: js.Any = js.native
     
-    var _gamepads: js.Any = js.native
+    /* private */ var _gamepads: js.Any = js.native
     
     /**
       * Gets DeviceType from the device name
       * @param deviceName Name of Device from DeviceInputSystem
       * @returns DeviceType enum value
       */
-    var _getGamepadDeviceType: js.Any = js.native
+    /* private */ var _getGamepadDeviceType: js.Any = js.native
     
     /**
       * Handle all actions that come from gamepad interaction
       */
-    var _handleGamepadActions: js.Any = js.native
+    /* private */ var _handleGamepadActions: js.Any = js.native
     
     /**
       * Handle all actions that come from keyboard interaction
       */
-    var _handleKeyActions: js.Any = js.native
+    /* private */ var _handleKeyActions: js.Any = js.native
     
     /**
       * Handle all actions that come from pointer interaction
       */
-    var _handlePointerActions: js.Any = js.native
+    /* private */ var _handlePointerActions: js.Any = js.native
     
-    var _inputs: js.Any = js.native
+    /* private */ var _inputs: js.Any = js.native
     
-    var _keyboardActive: js.Any = js.native
+    /* private */ var _keyboardActive: js.Any = js.native
     
-    var _keyboardDownEvent: js.Any = js.native
+    /* private */ var _keyboardDownEvent: js.Any = js.native
     
-    var _keyboardUpEvent: js.Any = js.native
+    /* private */ var _keyboardUpEvent: js.Any = js.native
     
-    var _onDeviceConnected: js.Any = js.native
+    /* private */ var _onDeviceConnected: js.Any = js.native
     
-    var _pointerActive: js.Any = js.native
+    /* private */ var _pointerActive: js.Any = js.native
     
-    var _pointerDownEvent: js.Any = js.native
+    /* private */ var _pointerDownEvent: js.Any = js.native
     
-    var _pointerMoveEvent: js.Any = js.native
+    /* private */ var _pointerMoveEvent: js.Any = js.native
     
-    var _pointerUpEvent: js.Any = js.native
+    /* private */ var _pointerUpEvent: js.Any = js.native
     
     /**
       * Add device and inputs to device array
@@ -90,14 +91,14 @@ object deviceInputSystemMod {
       * @param deviceSlot "Slot" or index that device is referenced in
       * @param numberOfInputs Number of input entries to create for given device
       */
-    var _registerDevice: js.Any = js.native
+    /* private */ var _registerDevice: js.Any = js.native
     
     /**
       * Given a specific device name, remove that device from the device map
       * @param deviceType Enum specifiying device type
       * @param deviceSlot "Slot" or index that device is referenced in
       */
-    var _unregisterDevice: js.Any = js.native
+    /* private */ var _unregisterDevice: js.Any = js.native
     
     /**
       * Update all non-event based devices with each frame
@@ -105,7 +106,13 @@ object deviceInputSystemMod {
       * @param deviceSlot "Slot" or index that device is referenced in
       * @param inputIndex Id of input to be checked
       */
-    var _updateDevice: js.Any = js.native
+    /* private */ var _updateDevice: js.Any = js.native
+    
+    /**
+      * Releases all held resources
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * Returns onDeviceConnected callback property
@@ -161,20 +168,16 @@ object deviceInputSystemMod {
       * @param engine Engine to pull input element from
       * @returns The new instance
       */
-    @JSImport("babylonjs/DeviceInput/deviceInputSystem", "DeviceInputSystem.Create")
-    @js.native
-    def Create(engine: Engine): DeviceInputSystem = js.native
+    inline def Create(engine: Engine): DeviceInputSystem = ^.asInstanceOf[js.Dynamic].applyDynamic("Create")(engine.asInstanceOf[js.Any]).asInstanceOf[DeviceInputSystem]
     
     @JSImport("babylonjs/DeviceInput/deviceInputSystem", "DeviceInputSystem._MAX_KEYCODES")
     @js.native
     def _MAX_KEYCODES: js.Any = js.native
-    @scala.inline
-    def _MAX_KEYCODES_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MAX_KEYCODES")(x.asInstanceOf[js.Any])
+    inline def _MAX_KEYCODES_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MAX_KEYCODES")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/DeviceInput/deviceInputSystem", "DeviceInputSystem._MAX_POINTER_INPUTS")
     @js.native
     def _MAX_POINTER_INPUTS: js.Any = js.native
-    @scala.inline
-    def _MAX_POINTER_INPUTS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MAX_POINTER_INPUTS")(x.asInstanceOf[js.Any])
+    inline def _MAX_POINTER_INPUTS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MAX_POINTER_INPUTS")(x.asInstanceOf[js.Any])
   }
 }

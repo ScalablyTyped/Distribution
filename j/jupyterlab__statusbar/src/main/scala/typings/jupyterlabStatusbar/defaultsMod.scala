@@ -3,7 +3,6 @@ package typings.jupyterlabStatusbar
 import typings.jupyterlabStatusbar.kernelStatusMod.KernelStatus.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object defaultsMod {
@@ -69,10 +68,6 @@ object defaultsMod {
         */
       def this(options: typings.jupyterlabStatusbar.memoryUsageMod.MemoryUsage.Model.IOptions) = this()
     }
-    /**
-      * A namespace for Model statics.
-      */
-    object Model
   }
   
   @JSImport("@jupyterlab/statusbar/lib/defaults", "RunningSessions")
@@ -94,9 +89,4 @@ object defaultsMod {
     class Model ()
       extends typings.jupyterlabStatusbar.runningSessionsMod.RunningSessions.Model
   }
-  
-  /**
-    * A namespace for LineColComponent.
-    */
-  object LineColComponent
 }

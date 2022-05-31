@@ -2,13 +2,11 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICollisionCoordinator extends StObject {
   
-  def createCollider(): Collider = js.native
+  def createCollider(): Collider
   
   def getNewPosition(
     position: Vector3,
@@ -23,14 +21,13 @@ trait ICollisionCoordinator extends StObject {
       Unit
     ],
     collisionIndex: Double
-  ): Unit = js.native
+  ): Unit
   
-  def init(scene: Scene): Unit = js.native
+  def init(scene: Scene): Unit
 }
 object ICollisionCoordinator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createCollider: () => Collider,
     getNewPosition: (Vector3, Vector3, Collider, Double, Nullable[AbstractMesh], js.Function3[
       /* collisionIndex */ Double, 
@@ -44,14 +41,11 @@ object ICollisionCoordinator {
     __obj.asInstanceOf[ICollisionCoordinator]
   }
   
-  @scala.inline
-  implicit class ICollisionCoordinatorMutableBuilder[Self <: ICollisionCoordinator] (val x: Self) extends AnyVal {
+  extension [Self <: ICollisionCoordinator](x: Self) {
     
-    @scala.inline
-    def setCreateCollider(value: () => Collider): Self = StObject.set(x, "createCollider", js.Any.fromFunction0(value))
+    inline def setCreateCollider(value: () => Collider): Self = StObject.set(x, "createCollider", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNewPosition(
+    inline def setGetNewPosition(
       value: (Vector3, Vector3, Collider, Double, Nullable[AbstractMesh], js.Function3[
           /* collisionIndex */ Double, 
           /* newPosition */ Vector3, 
@@ -60,7 +54,6 @@ object ICollisionCoordinator {
         ], Double) => Unit
     ): Self = StObject.set(x, "getNewPosition", js.Any.fromFunction7(value))
     
-    @scala.inline
-    def setInit(value: Scene => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+    inline def setInit(value: Scene => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
   }
 }

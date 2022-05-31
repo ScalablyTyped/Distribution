@@ -7,37 +7,25 @@ import typings.babylonjs.typesMod.IndicesArray
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mathFunctionsMod {
   
-  @JSImport("babylonjs/Maths/math.functions", "extractMinAndMax")
+  @JSImport("babylonjs/Maths/math.functions", JSImport.Namespace)
   @js.native
-  def extractMinAndMax(positions: FloatArray, start: Double, count: Double): Maximum = js.native
-  @JSImport("babylonjs/Maths/math.functions", "extractMinAndMax")
-  @js.native
-  def extractMinAndMax(
-    positions: FloatArray,
-    start: Double,
-    count: Double,
-    bias: js.UndefOr[Nullable[Vector2]],
-    stride: Double
-  ): Maximum = js.native
-  @JSImport("babylonjs/Maths/math.functions", "extractMinAndMax")
-  @js.native
-  def extractMinAndMax(positions: FloatArray, start: Double, count: Double, bias: Nullable[Vector2]): Maximum = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("babylonjs/Maths/math.functions", "extractMinAndMaxIndexed")
-  @js.native
-  def extractMinAndMaxIndexed(positions: FloatArray, indices: IndicesArray, indexStart: Double, indexCount: Double): Maximum = js.native
-  @JSImport("babylonjs/Maths/math.functions", "extractMinAndMaxIndexed")
-  @js.native
-  def extractMinAndMaxIndexed(
+  inline def extractMinAndMax(positions: FloatArray, start: Double, count: Double): Maximum = (^.asInstanceOf[js.Dynamic].applyDynamic("extractMinAndMax")(positions.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[Maximum]
+  inline def extractMinAndMax(positions: FloatArray, start: Double, count: Double, bias: Unit, stride: Double): Maximum = (^.asInstanceOf[js.Dynamic].applyDynamic("extractMinAndMax")(positions.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[Maximum]
+  inline def extractMinAndMax(positions: FloatArray, start: Double, count: Double, bias: Nullable[Vector2]): Maximum = (^.asInstanceOf[js.Dynamic].applyDynamic("extractMinAndMax")(positions.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any], bias.asInstanceOf[js.Any])).asInstanceOf[Maximum]
+  inline def extractMinAndMax(positions: FloatArray, start: Double, count: Double, bias: Nullable[Vector2], stride: Double): Maximum = (^.asInstanceOf[js.Dynamic].applyDynamic("extractMinAndMax")(positions.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[Maximum]
+  
+  inline def extractMinAndMaxIndexed(positions: FloatArray, indices: IndicesArray, indexStart: Double, indexCount: Double): Maximum = (^.asInstanceOf[js.Dynamic].applyDynamic("extractMinAndMaxIndexed")(positions.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], indexStart.asInstanceOf[js.Any], indexCount.asInstanceOf[js.Any])).asInstanceOf[Maximum]
+  inline def extractMinAndMaxIndexed(
     positions: FloatArray,
     indices: IndicesArray,
     indexStart: Double,
     indexCount: Double,
     bias: Nullable[Vector2]
-  ): Maximum = js.native
+  ): Maximum = (^.asInstanceOf[js.Dynamic].applyDynamic("extractMinAndMaxIndexed")(positions.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], indexStart.asInstanceOf[js.Any], indexCount.asInstanceOf[js.Any], bias.asInstanceOf[js.Any])).asInstanceOf[Maximum]
 }

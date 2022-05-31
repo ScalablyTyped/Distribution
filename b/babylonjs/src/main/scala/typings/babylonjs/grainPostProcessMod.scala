@@ -8,7 +8,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object grainPostProcessMod {
@@ -51,9 +50,11 @@ object grainPostProcessMod {
   /* static members */
   object GrainPostProcess {
     
-    /** @hidden */
-    @JSImport("babylonjs/PostProcesses/grainPostProcess", "GrainPostProcess._Parse")
+    @JSImport("babylonjs/PostProcesses/grainPostProcess", "GrainPostProcess")
     @js.native
-    def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): GrainPostProcess = js.native
+    val ^ : js.Any = js.native
+    
+    /** @hidden */
+    inline def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): GrainPostProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[GrainPostProcess]
   }
 }

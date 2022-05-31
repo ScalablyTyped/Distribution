@@ -7,7 +7,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reflectionProbeMod {
@@ -37,7 +36,7 @@ object reflectionProbeMod {
     name: String,
       size: Double,
       scene: Scene,
-      generateMipMaps: js.UndefOr[scala.Nothing],
+      generateMipMaps: Boolean,
       useFloat: Boolean
     ) = this()
     def this(
@@ -45,25 +44,25 @@ object reflectionProbeMod {
     name: String,
       size: Double,
       scene: Scene,
-      generateMipMaps: Boolean,
+      generateMipMaps: Unit,
       useFloat: Boolean
     ) = this()
     
-    var _add: js.Any = js.native
+    /* private */ var _add: js.Any = js.native
     
-    var _attachedMesh: js.Any = js.native
+    /* private */ var _attachedMesh: js.Any = js.native
     
-    var _invertYAxis: js.Any = js.native
+    /* private */ var _invertYAxis: js.Any = js.native
     
-    var _projectionMatrix: js.Any = js.native
+    /* private */ var _projectionMatrix: js.Any = js.native
     
-    var _renderTargetTexture: js.Any = js.native
+    /* private */ var _renderTargetTexture: js.Any = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
-    var _target: js.Any = js.native
+    /* private */ var _target: js.Any = js.native
     
-    var _viewMatrix: js.Any = js.native
+    /* private */ var _viewMatrix: js.Any = js.native
     
     /**
       * Attach the probe to a specific mesh (Rendering will be done from attached mesh's position)
@@ -126,6 +125,10 @@ object reflectionProbeMod {
   /* static members */
   object ReflectionProbe {
     
+    @JSImport("babylonjs/Probes/reflectionProbe", "ReflectionProbe")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Parse the JSON representation of a reflection probe in order to recreate the reflection probe in the given scene.
       * @param parsedReflectionProbe Define the JSON representation of the reflection probe
@@ -133,40 +136,36 @@ object reflectionProbeMod {
       * @param rootUrl Define the root url of the parsing sequence in the case of relative dependencies
       * @returns The parsed reflection probe if successful
       */
-    @JSImport("babylonjs/Probes/reflectionProbe", "ReflectionProbe.Parse")
-    @js.native
-    def Parse(parsedReflectionProbe: js.Any, scene: Scene, rootUrl: String): Nullable[ReflectionProbe] = js.native
+    inline def Parse(parsedReflectionProbe: js.Any, scene: Scene, rootUrl: String): Nullable[ReflectionProbe] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedReflectionProbe.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[ReflectionProbe]]
   }
   
   /* augmented module */
   object babylonjsAbstractSceneAugmentingMod {
     
-    @js.native
     trait AbstractScene extends StObject {
       
       /**
         * Adds the given reflection probe to this scene.
         * @param newReflectionProbe The reflection probe to add
         */
-      def addReflectionProbe(newReflectionProbe: ReflectionProbe): Unit = js.native
+      def addReflectionProbe(newReflectionProbe: ReflectionProbe): Unit
       
       /**
         * The list of reflection probes added to the scene
         * @see https://doc.babylonjs.com/how_to/how_to_use_reflection_probes
         */
-      var reflectionProbes: js.Array[ReflectionProbe] = js.native
+      var reflectionProbes: js.Array[ReflectionProbe]
       
       /**
         * Removes the given reflection probe from this scene.
         * @param toRemove The reflection probe to remove
         * @returns The index of the removed reflection probe
         */
-      def removeReflectionProbe(toRemove: ReflectionProbe): Double = js.native
+      def removeReflectionProbe(toRemove: ReflectionProbe): Double
     }
     object AbstractScene {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         addReflectionProbe: ReflectionProbe => Unit,
         reflectionProbes: js.Array[ReflectionProbe],
         removeReflectionProbe: ReflectionProbe => Double
@@ -175,20 +174,15 @@ object reflectionProbeMod {
         __obj.asInstanceOf[AbstractScene]
       }
       
-      @scala.inline
-      implicit class AbstractSceneMutableBuilder[Self <: AbstractScene] (val x: Self) extends AnyVal {
+      extension [Self <: AbstractScene](x: Self) {
         
-        @scala.inline
-        def setAddReflectionProbe(value: ReflectionProbe => Unit): Self = StObject.set(x, "addReflectionProbe", js.Any.fromFunction1(value))
+        inline def setAddReflectionProbe(value: ReflectionProbe => Unit): Self = StObject.set(x, "addReflectionProbe", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setReflectionProbes(value: js.Array[ReflectionProbe]): Self = StObject.set(x, "reflectionProbes", value.asInstanceOf[js.Any])
+        inline def setReflectionProbes(value: js.Array[ReflectionProbe]): Self = StObject.set(x, "reflectionProbes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReflectionProbesVarargs(value: ReflectionProbe*): Self = StObject.set(x, "reflectionProbes", js.Array(value :_*))
+        inline def setReflectionProbesVarargs(value: ReflectionProbe*): Self = StObject.set(x, "reflectionProbes", js.Array(value :_*))
         
-        @scala.inline
-        def setRemoveReflectionProbe(value: ReflectionProbe => Double): Self = StObject.set(x, "removeReflectionProbe", js.Any.fromFunction1(value))
+        inline def setRemoveReflectionProbe(value: ReflectionProbe => Double): Self = StObject.set(x, "removeReflectionProbe", js.Any.fromFunction1(value))
       }
     }
   }

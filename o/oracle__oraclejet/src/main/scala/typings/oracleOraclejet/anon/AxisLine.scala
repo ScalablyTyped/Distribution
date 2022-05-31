@@ -8,62 +8,59 @@ import typings.oracleOraclejet.oracleOraclejetStrings.on
 import typings.oracleOraclejet.oracleOraclejetStrings.zero
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AxisLine extends StObject {
   
-  var axisLine: LineWidth = js.native
+  var axisLine: LineWidth
   
-  var baselineScaling: min | zero = js.native
+  var baselineScaling: min | zero
   
-  var dataMax: Double = js.native
+  var dataMax: Double
   
-  var dataMin: Double = js.native
+  var dataMin: Double
   
-  var majorTick: BaselineColor = js.native
+  var majorTick: BaselineColor
   
-  var max: Double | String = js.native
+  var max: Double | String
   
-  var maxSize: String = js.native
+  var maxSize: String
   
-  var min: Double | String = js.native
+  var min: Double | String
   
-  var minStep: Double = js.native
+  var minStep: Double
   
-  var minorStep: Double = js.native
+  var minorStep: Double
   
-  var minorTick: LineStyle = js.native
+  var minorTick: LineStyle
   
-  var referenceObjects: js.Array[Categories] = js.native
+  var referenceObjects: js.Array[Categories]
   
-  var rendered: off | on = js.native
+  var rendered: off | on
   
-  var scale: log | linear = js.native
+  var scale: log | linear
   
-  var size: String = js.native
+  var size: String
   
-  var step: Double = js.native
+  var step: Double
   
-  var tickLabel: Rotation = js.native
+  var tickLabel: Rotation
   
-  var title: String = js.native
+  var title: String
   
-  var titleStyle: js.Object = js.native
+  var titleStyle: js.Object
   
-  var viewportEndGroup: Double | String = js.native
+  var viewportEndGroup: Double | String
   
-  var viewportMax: Double | String = js.native
+  var viewportMax: Double | String
   
-  var viewportMin: Double | String = js.native
+  var viewportMin: Double | String
   
-  var viewportStartGroup: Double | String = js.native
+  var viewportStartGroup: Double | String
 }
 object AxisLine {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     axisLine: LineWidth,
     baselineScaling: min | zero,
     dataMax: Double,
@@ -92,79 +89,54 @@ object AxisLine {
     __obj.asInstanceOf[AxisLine]
   }
   
-  @scala.inline
-  implicit class AxisLineMutableBuilder[Self <: AxisLine] (val x: Self) extends AnyVal {
+  extension [Self <: AxisLine](x: Self) {
     
-    @scala.inline
-    def setAxisLine(value: LineWidth): Self = StObject.set(x, "axisLine", value.asInstanceOf[js.Any])
+    inline def setAxisLine(value: LineWidth): Self = StObject.set(x, "axisLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaselineScaling(value: min | zero): Self = StObject.set(x, "baselineScaling", value.asInstanceOf[js.Any])
+    inline def setBaselineScaling(value: min | zero): Self = StObject.set(x, "baselineScaling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataMax(value: Double): Self = StObject.set(x, "dataMax", value.asInstanceOf[js.Any])
+    inline def setDataMax(value: Double): Self = StObject.set(x, "dataMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataMin(value: Double): Self = StObject.set(x, "dataMin", value.asInstanceOf[js.Any])
+    inline def setDataMin(value: Double): Self = StObject.set(x, "dataMin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMajorTick(value: BaselineColor): Self = StObject.set(x, "majorTick", value.asInstanceOf[js.Any])
+    inline def setMajorTick(value: BaselineColor): Self = StObject.set(x, "majorTick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax(value: Double | String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double | String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSize(value: String): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+    inline def setMaxSize(value: String): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Double | String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double | String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinStep(value: Double): Self = StObject.set(x, "minStep", value.asInstanceOf[js.Any])
+    inline def setMinStep(value: Double): Self = StObject.set(x, "minStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinorStep(value: Double): Self = StObject.set(x, "minorStep", value.asInstanceOf[js.Any])
+    inline def setMinorStep(value: Double): Self = StObject.set(x, "minorStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinorTick(value: LineStyle): Self = StObject.set(x, "minorTick", value.asInstanceOf[js.Any])
+    inline def setMinorTick(value: LineStyle): Self = StObject.set(x, "minorTick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceObjects(value: js.Array[Categories]): Self = StObject.set(x, "referenceObjects", value.asInstanceOf[js.Any])
+    inline def setReferenceObjects(value: js.Array[Categories]): Self = StObject.set(x, "referenceObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceObjectsVarargs(value: Categories*): Self = StObject.set(x, "referenceObjects", js.Array(value :_*))
+    inline def setReferenceObjectsVarargs(value: Categories*): Self = StObject.set(x, "referenceObjects", js.Array(value :_*))
     
-    @scala.inline
-    def setRendered(value: off | on): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
+    inline def setRendered(value: off | on): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale(value: log | linear): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: log | linear): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTickLabel(value: Rotation): Self = StObject.set(x, "tickLabel", value.asInstanceOf[js.Any])
+    inline def setTickLabel(value: Rotation): Self = StObject.set(x, "tickLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleStyle(value: js.Object): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
+    inline def setTitleStyle(value: js.Object): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewportEndGroup(value: Double | String): Self = StObject.set(x, "viewportEndGroup", value.asInstanceOf[js.Any])
+    inline def setViewportEndGroup(value: Double | String): Self = StObject.set(x, "viewportEndGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewportMax(value: Double | String): Self = StObject.set(x, "viewportMax", value.asInstanceOf[js.Any])
+    inline def setViewportMax(value: Double | String): Self = StObject.set(x, "viewportMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewportMin(value: Double | String): Self = StObject.set(x, "viewportMin", value.asInstanceOf[js.Any])
+    inline def setViewportMin(value: Double | String): Self = StObject.set(x, "viewportMin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewportStartGroup(value: Double | String): Self = StObject.set(x, "viewportStartGroup", value.asInstanceOf[js.Any])
+    inline def setViewportStartGroup(value: Double | String): Self = StObject.set(x, "viewportStartGroup", value.asInstanceOf[js.Any])
   }
 }

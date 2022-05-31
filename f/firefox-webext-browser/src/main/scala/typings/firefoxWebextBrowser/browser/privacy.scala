@@ -123,15 +123,6 @@ object privacy {
     *
     * Not allowed in: Content scripts, Devtools pages
     */
-  object services
-  
-  /**
-    * Use the `browser.privacy` API to control usage of the features in the browser that can affect a user's privacy.
-    *
-    * Permissions: `privacy`
-    *
-    * Not allowed in: Content scripts, Devtools pages
-    */
   object websites {
     
     /** The settings for cookies. */

@@ -11,7 +11,6 @@ import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object planeRotationGizmoMod {
@@ -38,26 +37,26 @@ object planeRotationGizmoMod {
       thickness: js.UndefOr[Double]
     ) = this()
     
-    var _coloredMaterial: js.Any = js.native
+    /* private */ var _coloredMaterial: js.Any = js.native
     
     /** Create Geometry for Gizmo */
-    var _createGizmoMesh: js.Any = js.native
+    /* private */ var _createGizmoMesh: js.Any = js.native
     
-    var _disableMaterial: js.Any = js.native
+    /* private */ var _disableMaterial: js.Any = js.native
     
-    var _dragging: js.Any = js.native
+    /* private */ var _dragging: js.Any = js.native
     
-    var _gizmoMesh: js.Any = js.native
+    /* private */ var _gizmoMesh: js.Any = js.native
     
-    var _hoverMaterial: js.Any = js.native
+    /* private */ var _hoverMaterial: js.Any = js.native
     
-    var _isEnabled: js.Any = js.native
+    /* private */ var _isEnabled: js.Any = js.native
     
-    var _parent: js.Any = js.native
+    /* private */ var _parent: js.Any = js.native
     
-    var _pointerObserver: js.Any = js.native
+    /* private */ var _pointerObserver: js.Any = js.native
     
-    var _rotationCircle: js.Any = js.native
+    /* private */ var _rotationCircle: js.Any = js.native
     
     /**
       * Drag behavior responsible for the gizmos dragging interactions
@@ -76,16 +75,16 @@ object planeRotationGizmoMod {
       */
     var onSnapObservable: Observable[SnapDistance] = js.native
     
-    var setupRotationCircle: js.Any = js.native
+    /* private */ var setupRotationCircle: js.Any = js.native
     
     /**
       * Rotation distance in radians that the gizmo will snap to (Default: 0)
       */
     var snapDistance: Double = js.native
     
-    var updateRotationCircle: js.Any = js.native
+    /* private */ var updateRotationCircle: js.Any = js.native
     
-    var updateRotationPath: js.Any = js.native
+    /* private */ var updateRotationPath: js.Any = js.native
   }
   /* static members */
   object PlaneRotationGizmo {
@@ -97,7 +96,6 @@ object planeRotationGizmoMod {
     @JSImport("babylonjs/Gizmos/planeRotationGizmo", "PlaneRotationGizmo._CircleConstants")
     @js.native
     def _CircleConstants: js.Any = js.native
-    @scala.inline
-    def _CircleConstants_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CircleConstants")(x.asInstanceOf[js.Any])
+    inline def _CircleConstants_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CircleConstants")(x.asInstanceOf[js.Any])
   }
 }

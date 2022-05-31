@@ -5,7 +5,6 @@ import typings.babylonjs.sceneMod.IDisposable
 import typings.babylonjs.sceneMod.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sceneOptimizerMod {
@@ -51,16 +50,6 @@ object sceneOptimizerMod {
       /**
       * Defines the priority of this optimization (0 by default which means first in the list)
       */
-    priority: js.UndefOr[scala.Nothing],
-      /**
-      * Defines the maximum scale to use (2 by default)
-      */
-    maximumScale: Double
-    ) = this()
-    def this(
-      /**
-      * Defines the priority of this optimization (0 by default which means first in the list)
-      */
     priority: Double,
       /**
       * Defines the maximum scale to use (2 by default)
@@ -71,21 +60,17 @@ object sceneOptimizerMod {
       /**
       * Defines the priority of this optimization (0 by default which means first in the list)
       */
-    priority: js.UndefOr[scala.Nothing],
+    priority: Unit,
       /**
       * Defines the maximum scale to use (2 by default)
       */
-    maximumScale: js.UndefOr[scala.Nothing],
-      /**
-      * Defines the step to use between two passes (0.5 by default)
-      */
-    step: Double
+    maximumScale: Double
     ) = this()
     def this(
       /**
       * Defines the priority of this optimization (0 by default which means first in the list)
       */
-    priority: js.UndefOr[scala.Nothing],
+    priority: Double,
       /**
       * Defines the maximum scale to use (2 by default)
       */
@@ -103,7 +88,7 @@ object sceneOptimizerMod {
       /**
       * Defines the maximum scale to use (2 by default)
       */
-    maximumScale: js.UndefOr[scala.Nothing],
+    maximumScale: Unit,
       /**
       * Defines the step to use between two passes (0.5 by default)
       */
@@ -113,7 +98,7 @@ object sceneOptimizerMod {
       /**
       * Defines the priority of this optimization (0 by default which means first in the list)
       */
-    priority: Double,
+    priority: Unit,
       /**
       * Defines the maximum scale to use (2 by default)
       */
@@ -123,10 +108,24 @@ object sceneOptimizerMod {
       */
     step: Double
     ) = this()
+    def this(
+      /**
+      * Defines the priority of this optimization (0 by default which means first in the list)
+      */
+    priority: Unit,
+      /**
+      * Defines the maximum scale to use (2 by default)
+      */
+    maximumScale: Unit,
+      /**
+      * Defines the step to use between two passes (0.5 by default)
+      */
+    step: Double
+    ) = this()
     
-    var _currentScale: js.Any = js.native
+    /* private */ var _currentScale: js.Any = js.native
     
-    var _directionOffset: js.Any = js.native
+    /* private */ var _directionOffset: js.Any = js.native
     
     /**
       * Defines the maximum scale to use (2 by default)
@@ -166,7 +165,7 @@ object sceneOptimizerMod {
       */
     priority: Double) = this()
     
-    var _canBeMerged: js.Any = js.native
+    /* private */ var _canBeMerged: js.Any = js.native
     
     @JSName("apply")
     def apply(scene: Scene, optimizer: SceneOptimizer, updateSelectionTree: Boolean): Boolean = js.native
@@ -181,8 +180,7 @@ object sceneOptimizerMod {
     @JSImport("babylonjs/Misc/sceneOptimizer", "MergeMeshesOptimization._UpdateSelectionTree")
     @js.native
     def _UpdateSelectionTree: js.Any = js.native
-    @scala.inline
-    def _UpdateSelectionTree_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_UpdateSelectionTree")(x.asInstanceOf[js.Any])
+    inline def _UpdateSelectionTree_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_UpdateSelectionTree")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Misc/sceneOptimizer", "ParticlesOptimization")
@@ -263,7 +261,9 @@ object sceneOptimizerMod {
   
   @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizer")
   @js.native
-  class SceneOptimizer protected () extends IDisposable {
+  class SceneOptimizer protected ()
+    extends StObject
+       with IDisposable {
     /**
       * Creates a new SceneOptimizer
       * @param scene defines the scene to work on
@@ -273,52 +273,42 @@ object sceneOptimizerMod {
       */
     def this(scene: Scene) = this()
     def this(scene: Scene, options: SceneOptimizerOptions) = this()
-    def this(scene: Scene, options: js.UndefOr[scala.Nothing], autoGeneratePriorities: Boolean) = this()
+    def this(scene: Scene, options: Unit, autoGeneratePriorities: Boolean) = this()
     def this(scene: Scene, options: SceneOptimizerOptions, autoGeneratePriorities: Boolean) = this()
-    def this(
-      scene: Scene,
-      options: js.UndefOr[scala.Nothing],
-      autoGeneratePriorities: js.UndefOr[scala.Nothing],
-      improvementMode: Boolean
-    ) = this()
-    def this(
-      scene: Scene,
-      options: js.UndefOr[scala.Nothing],
-      autoGeneratePriorities: Boolean,
-      improvementMode: Boolean
-    ) = this()
-    def this(
-      scene: Scene,
-      options: SceneOptimizerOptions,
-      autoGeneratePriorities: js.UndefOr[scala.Nothing],
-      improvementMode: Boolean
-    ) = this()
+    def this(scene: Scene, options: Unit, autoGeneratePriorities: Boolean, improvementMode: Boolean) = this()
+    def this(scene: Scene, options: Unit, autoGeneratePriorities: Unit, improvementMode: Boolean) = this()
     def this(
       scene: Scene,
       options: SceneOptimizerOptions,
       autoGeneratePriorities: Boolean,
       improvementMode: Boolean
     ) = this()
+    def this(
+      scene: Scene,
+      options: SceneOptimizerOptions,
+      autoGeneratePriorities: Unit,
+      improvementMode: Boolean
+    ) = this()
     
-    var _checkCurrentState: js.Any = js.native
+    /* private */ var _checkCurrentState: js.Any = js.native
     
-    var _currentFrameRate: js.Any = js.native
+    /* private */ var _currentFrameRate: js.Any = js.native
     
-    var _currentPriorityLevel: js.Any = js.native
+    /* private */ var _currentPriorityLevel: js.Any = js.native
     
-    var _improvementMode: js.Any = js.native
+    /* private */ var _improvementMode: js.Any = js.native
     
-    var _isRunning: js.Any = js.native
+    /* private */ var _isRunning: js.Any = js.native
     
-    var _options: js.Any = js.native
+    /* private */ var _options: js.Any = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
-    var _sceneDisposeObserver: js.Any = js.native
+    /* private */ var _sceneDisposeObserver: js.Any = js.native
     
-    var _targetFrameRate: js.Any = js.native
+    /* private */ var _targetFrameRate: js.Any = js.native
     
-    var _trackerDuration: js.Any = js.native
+    /* private */ var _trackerDuration: js.Any = js.native
     
     /**
       * Gets the current frame rate checked by the SceneOptimizer
@@ -329,6 +319,12 @@ object sceneOptimizerMod {
       * Gets the current priority level (0 at start)
       */
     def currentPriorityLevel: Double = js.native
+    
+    /**
+      * Releases all held resources
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * Gets a boolean indicating if the optimizer is in improvement mode
@@ -392,6 +388,10 @@ object sceneOptimizerMod {
   /* static members */
   object SceneOptimizer {
     
+    @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizer")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Helper function to create a SceneOptimizer with one single line of code
       * @param scene defines the scene to work on
@@ -400,50 +400,19 @@ object sceneOptimizerMod {
       * @param onFailure defines a callback to call on failure
       * @returns the new SceneOptimizer object
       */
-    @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizer.OptimizeAsync")
-    @js.native
-    def OptimizeAsync(scene: Scene): SceneOptimizer = js.native
-    @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizer.OptimizeAsync")
-    @js.native
-    def OptimizeAsync(
-      scene: Scene,
-      options: js.UndefOr[scala.Nothing],
-      onSuccess: js.UndefOr[scala.Nothing],
-      onFailure: js.Function0[Unit]
-    ): SceneOptimizer = js.native
-    @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizer.OptimizeAsync")
-    @js.native
-    def OptimizeAsync(scene: Scene, options: js.UndefOr[scala.Nothing], onSuccess: js.Function0[Unit]): SceneOptimizer = js.native
-    @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizer.OptimizeAsync")
-    @js.native
-    def OptimizeAsync(
-      scene: Scene,
-      options: js.UndefOr[scala.Nothing],
-      onSuccess: js.Function0[Unit],
-      onFailure: js.Function0[Unit]
-    ): SceneOptimizer = js.native
-    @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizer.OptimizeAsync")
-    @js.native
-    def OptimizeAsync(scene: Scene, options: SceneOptimizerOptions): SceneOptimizer = js.native
-    @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizer.OptimizeAsync")
-    @js.native
-    def OptimizeAsync(
-      scene: Scene,
-      options: SceneOptimizerOptions,
-      onSuccess: js.UndefOr[scala.Nothing],
-      onFailure: js.Function0[Unit]
-    ): SceneOptimizer = js.native
-    @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizer.OptimizeAsync")
-    @js.native
-    def OptimizeAsync(scene: Scene, options: SceneOptimizerOptions, onSuccess: js.Function0[Unit]): SceneOptimizer = js.native
-    @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizer.OptimizeAsync")
-    @js.native
-    def OptimizeAsync(
+    inline def OptimizeAsync(scene: Scene): SceneOptimizer = ^.asInstanceOf[js.Dynamic].applyDynamic("OptimizeAsync")(scene.asInstanceOf[js.Any]).asInstanceOf[SceneOptimizer]
+    inline def OptimizeAsync(scene: Scene, options: Unit, onSuccess: js.Function0[Unit]): SceneOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("OptimizeAsync")(scene.asInstanceOf[js.Any], options.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any])).asInstanceOf[SceneOptimizer]
+    inline def OptimizeAsync(scene: Scene, options: Unit, onSuccess: js.Function0[Unit], onFailure: js.Function0[Unit]): SceneOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("OptimizeAsync")(scene.asInstanceOf[js.Any], options.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onFailure.asInstanceOf[js.Any])).asInstanceOf[SceneOptimizer]
+    inline def OptimizeAsync(scene: Scene, options: Unit, onSuccess: Unit, onFailure: js.Function0[Unit]): SceneOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("OptimizeAsync")(scene.asInstanceOf[js.Any], options.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onFailure.asInstanceOf[js.Any])).asInstanceOf[SceneOptimizer]
+    inline def OptimizeAsync(scene: Scene, options: SceneOptimizerOptions): SceneOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("OptimizeAsync")(scene.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SceneOptimizer]
+    inline def OptimizeAsync(scene: Scene, options: SceneOptimizerOptions, onSuccess: js.Function0[Unit]): SceneOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("OptimizeAsync")(scene.asInstanceOf[js.Any], options.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any])).asInstanceOf[SceneOptimizer]
+    inline def OptimizeAsync(
       scene: Scene,
       options: SceneOptimizerOptions,
       onSuccess: js.Function0[Unit],
       onFailure: js.Function0[Unit]
-    ): SceneOptimizer = js.native
+    ): SceneOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("OptimizeAsync")(scene.asInstanceOf[js.Any], options.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onFailure.asInstanceOf[js.Any])).asInstanceOf[SceneOptimizer]
+    inline def OptimizeAsync(scene: Scene, options: SceneOptimizerOptions, onSuccess: Unit, onFailure: js.Function0[Unit]): SceneOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("OptimizeAsync")(scene.asInstanceOf[js.Any], options.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onFailure.asInstanceOf[js.Any])).asInstanceOf[SceneOptimizer]
   }
   
   @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizerOptions")
@@ -462,7 +431,7 @@ object sceneOptimizerMod {
       /**
       * Defines the target frame rate to reach (60 by default)
       */
-    targetFrameRate: js.UndefOr[scala.Nothing],
+    targetFrameRate: Double,
       /**
       * Defines the interval between two checkes (2000ms by default)
       */
@@ -472,7 +441,7 @@ object sceneOptimizerMod {
       /**
       * Defines the target frame rate to reach (60 by default)
       */
-    targetFrameRate: Double,
+    targetFrameRate: Unit,
       /**
       * Defines the interval between two checkes (2000ms by default)
       */
@@ -518,41 +487,33 @@ object sceneOptimizerMod {
   /* static members */
   object SceneOptimizerOptions {
     
+    @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizerOptions")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a list of pre-defined optimizations aimed to have a big impact on the scene visual
       * @param targetFrameRate defines the target frame rate (60 by default)
       * @returns a SceneOptimizerOptions object
       */
-    @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizerOptions.HighDegradationAllowed")
-    @js.native
-    def HighDegradationAllowed(): SceneOptimizerOptions = js.native
-    @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizerOptions.HighDegradationAllowed")
-    @js.native
-    def HighDegradationAllowed(targetFrameRate: Double): SceneOptimizerOptions = js.native
+    inline def HighDegradationAllowed(): SceneOptimizerOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("HighDegradationAllowed")().asInstanceOf[SceneOptimizerOptions]
+    inline def HighDegradationAllowed(targetFrameRate: Double): SceneOptimizerOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("HighDegradationAllowed")(targetFrameRate.asInstanceOf[js.Any]).asInstanceOf[SceneOptimizerOptions]
     
     /**
       * Creates a list of pre-defined optimizations aimed to reduce the visual impact on the scene
       * @param targetFrameRate defines the target frame rate (60 by default)
       * @returns a SceneOptimizerOptions object
       */
-    @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizerOptions.LowDegradationAllowed")
-    @js.native
-    def LowDegradationAllowed(): SceneOptimizerOptions = js.native
-    @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizerOptions.LowDegradationAllowed")
-    @js.native
-    def LowDegradationAllowed(targetFrameRate: Double): SceneOptimizerOptions = js.native
+    inline def LowDegradationAllowed(): SceneOptimizerOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("LowDegradationAllowed")().asInstanceOf[SceneOptimizerOptions]
+    inline def LowDegradationAllowed(targetFrameRate: Double): SceneOptimizerOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("LowDegradationAllowed")(targetFrameRate.asInstanceOf[js.Any]).asInstanceOf[SceneOptimizerOptions]
     
     /**
       * Creates a list of pre-defined optimizations aimed to have a moderate impact on the scene visual
       * @param targetFrameRate defines the target frame rate (60 by default)
       * @returns a SceneOptimizerOptions object
       */
-    @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizerOptions.ModerateDegradationAllowed")
-    @js.native
-    def ModerateDegradationAllowed(): SceneOptimizerOptions = js.native
-    @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizerOptions.ModerateDegradationAllowed")
-    @js.native
-    def ModerateDegradationAllowed(targetFrameRate: Double): SceneOptimizerOptions = js.native
+    inline def ModerateDegradationAllowed(): SceneOptimizerOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("ModerateDegradationAllowed")().asInstanceOf[SceneOptimizerOptions]
+    inline def ModerateDegradationAllowed(targetFrameRate: Double): SceneOptimizerOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("ModerateDegradationAllowed")(targetFrameRate.asInstanceOf[js.Any]).asInstanceOf[SceneOptimizerOptions]
   }
   
   @JSImport("babylonjs/Misc/sceneOptimizer", "ShadowsOptimization")
@@ -586,16 +547,6 @@ object sceneOptimizerMod {
       /**
       * Defines the priority of this optimization (0 by default which means first in the list)
       */
-    priority: js.UndefOr[scala.Nothing],
-      /**
-      * Defines the maximum sized allowed for textures (1024 is the default value). If a texture is bigger, it will be scaled down using a factor defined by the step parameter
-      */
-    maximumSize: Double
-    ) = this()
-    def this(
-      /**
-      * Defines the priority of this optimization (0 by default which means first in the list)
-      */
     priority: Double,
       /**
       * Defines the maximum sized allowed for textures (1024 is the default value). If a texture is bigger, it will be scaled down using a factor defined by the step parameter
@@ -606,21 +557,17 @@ object sceneOptimizerMod {
       /**
       * Defines the priority of this optimization (0 by default which means first in the list)
       */
-    priority: js.UndefOr[scala.Nothing],
+    priority: Unit,
       /**
       * Defines the maximum sized allowed for textures (1024 is the default value). If a texture is bigger, it will be scaled down using a factor defined by the step parameter
       */
-    maximumSize: js.UndefOr[scala.Nothing],
-      /**
-      * Defines the factor (0.5 by default) used to scale down textures bigger than maximum sized allowed.
-      */
-    step: Double
+    maximumSize: Double
     ) = this()
     def this(
       /**
       * Defines the priority of this optimization (0 by default which means first in the list)
       */
-    priority: js.UndefOr[scala.Nothing],
+    priority: Double,
       /**
       * Defines the maximum sized allowed for textures (1024 is the default value). If a texture is bigger, it will be scaled down using a factor defined by the step parameter
       */
@@ -638,7 +585,7 @@ object sceneOptimizerMod {
       /**
       * Defines the maximum sized allowed for textures (1024 is the default value). If a texture is bigger, it will be scaled down using a factor defined by the step parameter
       */
-    maximumSize: js.UndefOr[scala.Nothing],
+    maximumSize: Unit,
       /**
       * Defines the factor (0.5 by default) used to scale down textures bigger than maximum sized allowed.
       */
@@ -648,11 +595,25 @@ object sceneOptimizerMod {
       /**
       * Defines the priority of this optimization (0 by default which means first in the list)
       */
-    priority: Double,
+    priority: Unit,
       /**
       * Defines the maximum sized allowed for textures (1024 is the default value). If a texture is bigger, it will be scaled down using a factor defined by the step parameter
       */
     maximumSize: Double,
+      /**
+      * Defines the factor (0.5 by default) used to scale down textures bigger than maximum sized allowed.
+      */
+    step: Double
+    ) = this()
+    def this(
+      /**
+      * Defines the priority of this optimization (0 by default which means first in the list)
+      */
+    priority: Unit,
+      /**
+      * Defines the maximum sized allowed for textures (1024 is the default value). If a texture is bigger, it will be scaled down using a factor defined by the step parameter
+      */
+    maximumSize: Unit,
       /**
       * Defines the factor (0.5 by default) used to scale down textures bigger than maximum sized allowed.
       */

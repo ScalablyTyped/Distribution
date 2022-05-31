@@ -7,7 +7,6 @@ import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.typesMod.IndicesArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object instancedMeshMod {
@@ -17,12 +16,12 @@ object instancedMeshMod {
   class InstancedMesh protected () extends AbstractMesh {
     def this(name: String, source: Mesh) = this()
     
-    var _currentLOD: js.Any = js.native
+    /* private */ var _currentLOD: js.Any = js.native
     
     /** @hidden */
     var _indexInSourceMeshInstanceArray: Double = js.native
     
-    var _sourceMesh: js.Any = js.native
+    /* private */ var _sourceMesh: js.Any = js.native
     
     /** @hidden */
     def _syncSubMeshes(): InstancedMesh = js.native
@@ -36,6 +35,7 @@ object instancedMeshMod {
       * Returns the clone.
       */
     def clone(name: String): InstancedMesh = js.native
+    def clone(name: String, newParent: Unit, doNotCloneChildren: Boolean): InstancedMesh = js.native
     
     /**
       * Creates a new InstancedMesh object from the mesh model.
@@ -63,28 +63,24 @@ object instancedMeshMod {
   /* augmented module */
   object babylonjsMeshesAbstractMeshAugmentingMod {
     
-    @js.native
     trait AbstractMesh extends StObject {
       
       /**
         * Object used to store instanced buffers defined by user
         * @see https://doc.babylonjs.com/how_to/how_to_use_instances#custom-buffers
         */
-      var instancedBuffers: StringDictionary[js.Any] = js.native
+      var instancedBuffers: StringDictionary[js.Any]
     }
     object AbstractMesh {
       
-      @scala.inline
-      def apply(instancedBuffers: StringDictionary[js.Any]): typings.babylonjs.instancedMeshMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh = {
+      inline def apply(instancedBuffers: StringDictionary[js.Any]): typings.babylonjs.instancedMeshMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh = {
         val __obj = js.Dynamic.literal(instancedBuffers = instancedBuffers.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.babylonjs.instancedMeshMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh]
       }
       
-      @scala.inline
-      implicit class AbstractMeshMutableBuilder[Self <: typings.babylonjs.instancedMeshMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh] (val x: Self) extends AnyVal {
+      extension [Self <: typings.babylonjs.instancedMeshMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh](x: Self) {
         
-        @scala.inline
-        def setInstancedBuffers(value: StringDictionary[js.Any]): Self = StObject.set(x, "instancedBuffers", value.asInstanceOf[js.Any])
+        inline def setInstancedBuffers(value: StringDictionary[js.Any]): Self = StObject.set(x, "instancedBuffers", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -92,16 +88,15 @@ object instancedMeshMod {
   /* augmented module */
   object babylonjsMeshesMeshAugmentingMod {
     
-    @js.native
     trait Mesh extends StObject {
       
       /** @hidden */
-      var _userInstancedBuffersStorage: Data = js.native
+      var _userInstancedBuffersStorage: Data
       
       /**
         * true to use the edge renderer for all instances of this mesh
         */
-      var edgesShareWithInstances: Boolean = js.native
+      var edgesShareWithInstances: Boolean
       
       /**
         * Register a custom buffer that will be instanced
@@ -109,12 +104,11 @@ object instancedMeshMod {
         * @param kind defines the buffer kind
         * @param stride defines the stride in floats
         */
-      def registerInstancedBuffer(kind: String, stride: Double): Unit = js.native
+      def registerInstancedBuffer(kind: String, stride: Double): Unit
     }
     object Mesh {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         _userInstancedBuffersStorage: Data,
         edgesShareWithInstances: Boolean,
         registerInstancedBuffer: (String, Double) => Unit
@@ -123,17 +117,13 @@ object instancedMeshMod {
         __obj.asInstanceOf[typings.babylonjs.instancedMeshMod.babylonjsMeshesMeshAugmentingMod.Mesh]
       }
       
-      @scala.inline
-      implicit class MeshMutableBuilder[Self <: typings.babylonjs.instancedMeshMod.babylonjsMeshesMeshAugmentingMod.Mesh] (val x: Self) extends AnyVal {
+      extension [Self <: typings.babylonjs.instancedMeshMod.babylonjsMeshesMeshAugmentingMod.Mesh](x: Self) {
         
-        @scala.inline
-        def setEdgesShareWithInstances(value: Boolean): Self = StObject.set(x, "edgesShareWithInstances", value.asInstanceOf[js.Any])
+        inline def setEdgesShareWithInstances(value: Boolean): Self = StObject.set(x, "edgesShareWithInstances", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRegisterInstancedBuffer(value: (String, Double) => Unit): Self = StObject.set(x, "registerInstancedBuffer", js.Any.fromFunction2(value))
+        inline def setRegisterInstancedBuffer(value: (String, Double) => Unit): Self = StObject.set(x, "registerInstancedBuffer", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def set_userInstancedBuffersStorage(value: Data): Self = StObject.set(x, "_userInstancedBuffersStorage", value.asInstanceOf[js.Any])
+        inline def set_userInstancedBuffersStorage(value: Data): Self = StObject.set(x, "_userInstancedBuffersStorage", value.asInstanceOf[js.Any])
       }
     }
   }

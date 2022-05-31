@@ -2,43 +2,42 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ImageProcessingConfiguration extends StObject {
   
-  var _applyByPostProcess: js.Any = js.native
+  /* private */ var _applyByPostProcess: js.Any = js.native
   
-  var _colorCurvesEnabled: js.Any = js.native
+  /* private */ var _colorCurvesEnabled: js.Any = js.native
   
-  var _colorGradingBGR: js.Any = js.native
+  /* private */ var _colorGradingBGR: js.Any = js.native
   
-  var _colorGradingEnabled: js.Any = js.native
+  /* private */ var _colorGradingEnabled: js.Any = js.native
   
-  var _colorGradingTexture: js.Any = js.native
+  /* private */ var _colorGradingTexture: js.Any = js.native
   
-  var _colorGradingWithGreenDepth: js.Any = js.native
+  /* private */ var _colorGradingWithGreenDepth: js.Any = js.native
   
-  var _contrast: Double = js.native
+  /* protected */ var _contrast: Double = js.native
   
   /** @hidden */
   var _exposure: Double = js.native
   
-  var _isEnabled: js.Any = js.native
+  /* private */ var _isEnabled: js.Any = js.native
   
-  var _toneMappingEnabled: js.Any = js.native
+  /* private */ var _toneMappingEnabled: js.Any = js.native
   
-  var _toneMappingType: js.Any = js.native
+  /* private */ var _toneMappingType: js.Any = js.native
   
   /**
     * Method called each time the image processing information changes requires to recompile the effect.
     */
   /* protected */ def _updateParameters(): Unit = js.native
   
-  var _vignetteBlendMode: js.Any = js.native
+  /* private */ var _vignetteBlendMode: js.Any = js.native
   
-  var _vignetteEnabled: js.Any = js.native
+  /* private */ var _vignetteEnabled: js.Any = js.native
   
   /**
     * Gets wether the image processing is applied through a post process or not.

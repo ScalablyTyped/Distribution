@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.DeepImmutable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.Ray")
 @js.native
 class Ray protected ()
-  extends typings.babylonjs.BABYLON.Ray {
+  extends StObject
+     with typings.babylonjs.BABYLON.Ray {
   /**
     * Creates a new ray
     * @param origin origin point
@@ -49,9 +49,7 @@ object Ray {
     * @param projection projection matrix
     * @returns new ray
     */
-  @JSGlobal("BABYLON.Ray.CreateNew")
-  @js.native
-  def CreateNew(
+  inline def CreateNew(
     x: Double,
     y: Double,
     viewportWidth: Double,
@@ -59,7 +57,7 @@ object Ray {
     world: DeepImmutable[typings.babylonjs.BABYLON.Matrix],
     view: DeepImmutable[typings.babylonjs.BABYLON.Matrix],
     projection: DeepImmutable[typings.babylonjs.BABYLON.Matrix]
-  ): typings.babylonjs.BABYLON.Ray = js.native
+  ): typings.babylonjs.BABYLON.Ray = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNew")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], viewportWidth.asInstanceOf[js.Any], viewportHeight.asInstanceOf[js.Any], world.asInstanceOf[js.Any], view.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Ray]
   
   /**
     * Function will create a new transformed ray starting from origin and ending at the end point. Ray's length will be set, and ray will be
@@ -69,16 +67,12 @@ object Ray {
     * @param world a matrix to transform the ray to. Default is the identity matrix.
     * @returns the new ray
     */
-  @JSGlobal("BABYLON.Ray.CreateNewFromTo")
-  @js.native
-  def CreateNewFromTo(origin: typings.babylonjs.BABYLON.Vector3, end: typings.babylonjs.BABYLON.Vector3): typings.babylonjs.BABYLON.Ray = js.native
-  @JSGlobal("BABYLON.Ray.CreateNewFromTo")
-  @js.native
-  def CreateNewFromTo(
+  inline def CreateNewFromTo(origin: typings.babylonjs.BABYLON.Vector3, end: typings.babylonjs.BABYLON.Vector3): typings.babylonjs.BABYLON.Ray = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromTo")(origin.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Ray]
+  inline def CreateNewFromTo(
     origin: typings.babylonjs.BABYLON.Vector3,
     end: typings.babylonjs.BABYLON.Vector3,
     world: DeepImmutable[typings.babylonjs.BABYLON.Matrix]
-  ): typings.babylonjs.BABYLON.Ray = js.native
+  ): typings.babylonjs.BABYLON.Ray = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromTo")(origin.asInstanceOf[js.Any], end.asInstanceOf[js.Any], world.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Ray]
   
   /**
     * Transforms a ray by a matrix
@@ -86,12 +80,10 @@ object Ray {
     * @param matrix matrix to apply
     * @returns the resulting new ray
     */
-  @JSGlobal("BABYLON.Ray.Transform")
-  @js.native
-  def Transform(
+  inline def Transform(
     ray: DeepImmutable[typings.babylonjs.BABYLON.Ray],
     matrix: DeepImmutable[typings.babylonjs.BABYLON.Matrix]
-  ): typings.babylonjs.BABYLON.Ray = js.native
+  ): typings.babylonjs.BABYLON.Ray = (^.asInstanceOf[js.Dynamic].applyDynamic("Transform")(ray.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Ray]
   
   /**
     * Transforms a ray by a matrix
@@ -99,21 +91,17 @@ object Ray {
     * @param matrix matrix to apply
     * @param result ray to store result in
     */
-  @JSGlobal("BABYLON.Ray.TransformToRef")
-  @js.native
-  def TransformToRef(
+  inline def TransformToRef(
     ray: DeepImmutable[typings.babylonjs.BABYLON.Ray],
     matrix: DeepImmutable[typings.babylonjs.BABYLON.Matrix],
     result: typings.babylonjs.BABYLON.Ray
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("TransformToRef")(ray.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates a ray with origin and direction of 0,0,0
     * @returns the new ray
     */
-  @JSGlobal("BABYLON.Ray.Zero")
-  @js.native
-  def Zero(): typings.babylonjs.BABYLON.Ray = js.native
+  inline def Zero(): typings.babylonjs.BABYLON.Ray = ^.asInstanceOf[js.Dynamic].applyDynamic("Zero")().asInstanceOf[typings.babylonjs.BABYLON.Ray]
   
   @JSGlobal("BABYLON.Ray._TmpVector3")
   @js.native
@@ -122,12 +110,10 @@ object Ray {
   @JSGlobal("BABYLON.Ray.rayl")
   @js.native
   def rayl: js.Any = js.native
-  @scala.inline
-  def rayl_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rayl")(x.asInstanceOf[js.Any])
+  inline def rayl_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rayl")(x.asInstanceOf[js.Any])
   
   @JSGlobal("BABYLON.Ray.smallnum")
   @js.native
   def smallnum: js.Any = js.native
-  @scala.inline
-  def smallnum_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("smallnum")(x.asInstanceOf[js.Any])
+  inline def smallnum_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("smallnum")(x.asInstanceOf[js.Any])
 }

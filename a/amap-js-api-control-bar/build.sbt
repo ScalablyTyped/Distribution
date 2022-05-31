@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "amap-js-api-control-bar"
-version := "1.4-dt-20191002Z-d71a3d"
+version := "1.4-dt-20191002Z-7206a5"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "amap-js-api" % "1.4-dt-20201028Z-e8f350",
-  "org.scalablytyped" %%% "std" % "4.1-2f6855")
+  "org.scalablytyped" %%% "amap-js-api" % "1.4-dt-20201028Z-72ffec",
+  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

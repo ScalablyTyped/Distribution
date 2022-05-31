@@ -2,12 +2,12 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TextureAssetTask
-  extends AbstractAssetTask
+  extends StObject
+     with AbstractAssetTask
      with ITextureAssetTask[Texture] {
   
   /**
@@ -24,9 +24,9 @@ trait TextureAssetTask
     * Callback called when the task is successful
     */
   def onError(task: TextureAssetTask): Unit = js.native
-  def onError(task: TextureAssetTask, message: js.UndefOr[scala.Nothing], exception: js.Any): Unit = js.native
   def onError(task: TextureAssetTask, message: String): Unit = js.native
   def onError(task: TextureAssetTask, message: String, exception: js.Any): Unit = js.native
+  def onError(task: TextureAssetTask, message: Unit, exception: js.Any): Unit = js.native
   
   /**
     * Callback called when the task is successful

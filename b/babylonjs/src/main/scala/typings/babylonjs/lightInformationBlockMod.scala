@@ -6,7 +6,6 @@ import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lightInformationBlockMod {
@@ -20,11 +19,11 @@ object lightInformationBlockMod {
       */
     def this(name: String) = this()
     
-    var _lightColorUniformName: js.Any = js.native
+    /* private */ var _lightColorUniformName: js.Any = js.native
     
-    var _lightDataUniformName: js.Any = js.native
+    /* private */ var _lightDataUniformName: js.Any = js.native
     
-    var _lightTypeDefineName: js.Any = js.native
+    /* private */ var _lightTypeDefineName: js.Any = js.native
     
     /**
       * Gets the direction output component

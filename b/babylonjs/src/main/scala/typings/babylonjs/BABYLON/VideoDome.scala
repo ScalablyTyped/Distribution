@@ -3,11 +3,12 @@ package typings.babylonjs.BABYLON
 import typings.babylonjs.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VideoDome extends TextureDome[VideoTexture] {
+trait VideoDome
+  extends StObject
+     with TextureDome[VideoTexture] {
   
   /* protected */ def _initTexture(urlsOrElement: HTMLVideoElement, scene: Scene, options: js.Any): VideoTexture = js.native
   

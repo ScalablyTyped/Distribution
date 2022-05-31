@@ -2,7 +2,6 @@ package typings.babylonjs.indexMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "VRDeviceOrientationFreeCamera")
@@ -32,14 +31,14 @@ class VRDeviceOrientationFreeCamera protected ()
     name: String,
     position: typings.babylonjs.mathVectorMod.Vector3,
     scene: typings.babylonjs.sceneMod.Scene,
-    compensateDistortion: js.UndefOr[scala.Nothing],
+    compensateDistortion: Boolean,
     vrCameraMetrics: typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
   ) = this()
   def this(
     name: String,
     position: typings.babylonjs.mathVectorMod.Vector3,
     scene: typings.babylonjs.sceneMod.Scene,
-    compensateDistortion: Boolean,
+    compensateDistortion: Unit,
     vrCameraMetrics: typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
   ) = this()
 }

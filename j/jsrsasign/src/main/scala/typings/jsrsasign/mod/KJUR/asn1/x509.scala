@@ -1413,9 +1413,6 @@ object x509 {
       */
     inline def oid2name(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("oid2name")().asInstanceOf[String]
     inline def oid2name(oid: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("oid2name")(oid.asInstanceOf[js.Any]).asInstanceOf[String]
-    
-    /** for caching name and DERObjectIdentifier object */
-    object objCache
   }
   
   /**

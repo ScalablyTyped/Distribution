@@ -3,7 +3,6 @@ package typings.babylonjs.materialsIndexMod
 import typings.babylonjs.sceneMod.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Materials/index", "PBRMaterial")
@@ -32,8 +31,7 @@ object PBRMaterial {
   @JSImport("babylonjs/Materials/index", "PBRMaterial.DEFAULT_AO_ON_ANALYTICAL_LIGHTS")
   @js.native
   def DEFAULT_AO_ON_ANALYTICAL_LIGHTS: Double = js.native
-  @scala.inline
-  def DEFAULT_AO_ON_ANALYTICAL_LIGHTS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_AO_ON_ANALYTICAL_LIGHTS")(x.asInstanceOf[js.Any])
+  inline def DEFAULT_AO_ON_ANALYTICAL_LIGHTS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_AO_ON_ANALYTICAL_LIGHTS")(x.asInstanceOf[js.Any])
   
   /**
     * PBRMaterialTransparencyMode: Pixels are blended (according to the alpha mode) with the already drawn pixels in the current frame buffer.
@@ -71,7 +69,5 @@ object PBRMaterial {
     * @param rootUrl - url for the scene object
     * @returns - PBRMaterial
     */
-  @JSImport("babylonjs/Materials/index", "PBRMaterial.Parse")
-  @js.native
-  def Parse(source: js.Any, scene: Scene, rootUrl: String): typings.babylonjs.pbrMaterialMod.PBRMaterial = js.native
+  inline def Parse(source: js.Any, scene: Scene, rootUrl: String): typings.babylonjs.pbrMaterialMod.PBRMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.pbrMaterialMod.PBRMaterial]
 }

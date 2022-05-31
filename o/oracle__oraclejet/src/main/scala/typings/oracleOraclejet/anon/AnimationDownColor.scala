@@ -38,100 +38,97 @@ import typings.oracleOraclejet.oracleOraclejetStrings.triangleDown
 import typings.oracleOraclejet.oracleOraclejetStrings.triangleUp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationDownColor extends StObject {
   
-  var animationDownColor: String = js.native
+  var animationDownColor: String
   
-  var animationDuration: Double = js.native
+  var animationDuration: Double
   
-  var animationIndicators: none | all = js.native
+  var animationIndicators: none | all
   
-  var animationUpColor: String = js.native
+  var animationUpColor: String
   
-  var barGapRatio: Double = js.native
+  var barGapRatio: Double
   
-  var borderColor: String = js.native
+  var borderColor: String
   
-  var borderWidth: Double = js.native
+  var borderWidth: Double
   
-  var boxPlot: MedianSvgClassName = js.native
+  var boxPlot: MedianSvgClassName
   
-  var colors: js.Array[String] = js.native
+  var colors: js.Array[String]
   
-  var dataCursor: LineColor = js.native
+  var dataCursor: LineColor
   
-  var dataItemGaps: String = js.native
+  var dataItemGaps: String
   
-  var dataLabelPosition: center | outsideSlice | aboveMarker | belowMarker | beforeMarker | afterMarker | insideBarEdge | outsideBarEdge | none | auto = js.native
+  var dataLabelPosition: center | outsideSlice | aboveMarker | belowMarker | beforeMarker | afterMarker | insideBarEdge | outsideBarEdge | none | auto
   
-  var dataLabelStyle: js.Object | js.Array[js.Object] = js.native
+  var dataLabelStyle: js.Object | js.Array[js.Object]
   
-  var funnelBackgroundColor: String = js.native
+  var funnelBackgroundColor: String
   
-  var groupSeparators: Rendered = js.native
+  var groupSeparators: Rendered
   
-  var hoverBehaviorDelay: Double = js.native
+  var hoverBehaviorDelay: Double
   
-  var lineStyle: dotted | dashed | solid = js.native
+  var lineStyle: dotted | dashed | solid
   
-  var lineType: straight | curved | stepped | centeredStepped | segmented | centeredSegmented | none | auto = js.native
+  var lineType: straight | curved | stepped | centeredStepped | segmented | centeredSegmented | none | auto
   
-  var lineWidth: Double = js.native
+  var lineWidth: Double
   
-  var markerColor: String = js.native
+  var markerColor: String
   
-  var markerDisplayed: on | off | auto = js.native
+  var markerDisplayed: on | off | auto
   
   var markerShape: js.UndefOr[
     auto | circle | diamond | human | plus | square | star | triangleDown | triangleUp | String
-  ] = js.native
+  ] = js.undefined
   
-  var markerSize: Double = js.native
+  var markerSize: Double
   
-  var marqueeBorderColor: String = js.native
+  var marqueeBorderColor: String
   
-  var marqueeColor: String = js.native
+  var marqueeColor: String
   
-  var maxBarWidth: Double = js.native
+  var maxBarWidth: Double
   
-  var otherColor: String = js.native
+  var otherColor: String
   
-  var patterns: js.Array[String] = js.native
+  var patterns: js.Array[String]
   
-  var pieFeelerColor: String = js.native
+  var pieFeelerColor: String
   
-  var pieInnerRadius: Double = js.native
+  var pieInnerRadius: Double
   
-  var selectionEffect: explode | highlightAndExplode | highlight = js.native
+  var selectionEffect: explode | highlightAndExplode | highlight
   
-  var seriesEffect: color | pattern | gradient = js.native
+  var seriesEffect: color | pattern | gradient
   
-  var shapes: js.Array[String] = js.native
+  var shapes: js.Array[String]
   
-  var stackLabelStyle: js.Object = js.native
+  var stackLabelStyle: js.Object
   
-  var stockFallingColor: String = js.native
+  var stockFallingColor: String
   
-  var stockRangeColor: String = js.native
+  var stockRangeColor: String
   
-  var stockRisingColor: String = js.native
+  var stockRisingColor: String
   
-  var stockVolumeColor: String = js.native
+  var stockVolumeColor: String
   
-  var threeDEffect: on | off = js.native
+  var threeDEffect: on | off
   
-  var tooltipLabelStyle: js.Object = js.native
+  var tooltipLabelStyle: js.Object
   
-  var tooltipValueStyle: js.Object = js.native
+  var tooltipValueStyle: js.Object
 }
 object AnimationDownColor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     animationDownColor: String,
     animationDuration: Double,
     animationIndicators: none | all,
@@ -177,147 +174,100 @@ object AnimationDownColor {
     __obj.asInstanceOf[AnimationDownColor]
   }
   
-  @scala.inline
-  implicit class AnimationDownColorMutableBuilder[Self <: AnimationDownColor] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationDownColor](x: Self) {
     
-    @scala.inline
-    def setAnimationDownColor(value: String): Self = StObject.set(x, "animationDownColor", value.asInstanceOf[js.Any])
+    inline def setAnimationDownColor(value: String): Self = StObject.set(x, "animationDownColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+    inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationIndicators(value: none | all): Self = StObject.set(x, "animationIndicators", value.asInstanceOf[js.Any])
+    inline def setAnimationIndicators(value: none | all): Self = StObject.set(x, "animationIndicators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationUpColor(value: String): Self = StObject.set(x, "animationUpColor", value.asInstanceOf[js.Any])
+    inline def setAnimationUpColor(value: String): Self = StObject.set(x, "animationUpColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarGapRatio(value: Double): Self = StObject.set(x, "barGapRatio", value.asInstanceOf[js.Any])
+    inline def setBarGapRatio(value: Double): Self = StObject.set(x, "barGapRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+    inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoxPlot(value: MedianSvgClassName): Self = StObject.set(x, "boxPlot", value.asInstanceOf[js.Any])
+    inline def setBoxPlot(value: MedianSvgClassName): Self = StObject.set(x, "boxPlot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColors(value: js.Array[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: js.Array[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
     
-    @scala.inline
-    def setDataCursor(value: LineColor): Self = StObject.set(x, "dataCursor", value.asInstanceOf[js.Any])
+    inline def setDataCursor(value: LineColor): Self = StObject.set(x, "dataCursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataItemGaps(value: String): Self = StObject.set(x, "dataItemGaps", value.asInstanceOf[js.Any])
+    inline def setDataItemGaps(value: String): Self = StObject.set(x, "dataItemGaps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataLabelPosition(
+    inline def setDataLabelPosition(
       value: center | outsideSlice | aboveMarker | belowMarker | beforeMarker | afterMarker | insideBarEdge | outsideBarEdge | none | auto
     ): Self = StObject.set(x, "dataLabelPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataLabelStyle(value: js.Object | js.Array[js.Object]): Self = StObject.set(x, "dataLabelStyle", value.asInstanceOf[js.Any])
+    inline def setDataLabelStyle(value: js.Object | js.Array[js.Object]): Self = StObject.set(x, "dataLabelStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataLabelStyleVarargs(value: js.Object*): Self = StObject.set(x, "dataLabelStyle", js.Array(value :_*))
+    inline def setDataLabelStyleVarargs(value: js.Object*): Self = StObject.set(x, "dataLabelStyle", js.Array(value :_*))
     
-    @scala.inline
-    def setFunnelBackgroundColor(value: String): Self = StObject.set(x, "funnelBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setFunnelBackgroundColor(value: String): Self = StObject.set(x, "funnelBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupSeparators(value: Rendered): Self = StObject.set(x, "groupSeparators", value.asInstanceOf[js.Any])
+    inline def setGroupSeparators(value: Rendered): Self = StObject.set(x, "groupSeparators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverBehaviorDelay(value: Double): Self = StObject.set(x, "hoverBehaviorDelay", value.asInstanceOf[js.Any])
+    inline def setHoverBehaviorDelay(value: Double): Self = StObject.set(x, "hoverBehaviorDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineStyle(value: dotted | dashed | solid): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
+    inline def setLineStyle(value: dotted | dashed | solid): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineType(value: straight | curved | stepped | centeredStepped | segmented | centeredSegmented | none | auto): Self = StObject.set(x, "lineType", value.asInstanceOf[js.Any])
+    inline def setLineType(value: straight | curved | stepped | centeredStepped | segmented | centeredSegmented | none | auto): Self = StObject.set(x, "lineType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerColor(value: String): Self = StObject.set(x, "markerColor", value.asInstanceOf[js.Any])
+    inline def setMarkerColor(value: String): Self = StObject.set(x, "markerColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerDisplayed(value: on | off | auto): Self = StObject.set(x, "markerDisplayed", value.asInstanceOf[js.Any])
+    inline def setMarkerDisplayed(value: on | off | auto): Self = StObject.set(x, "markerDisplayed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerShape(value: auto | circle | diamond | human | plus | square | star | triangleDown | triangleUp | String): Self = StObject.set(x, "markerShape", value.asInstanceOf[js.Any])
+    inline def setMarkerShape(value: auto | circle | diamond | human | plus | square | star | triangleDown | triangleUp | String): Self = StObject.set(x, "markerShape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerShapeUndefined: Self = StObject.set(x, "markerShape", js.undefined)
+    inline def setMarkerShapeUndefined: Self = StObject.set(x, "markerShape", js.undefined)
     
-    @scala.inline
-    def setMarkerSize(value: Double): Self = StObject.set(x, "markerSize", value.asInstanceOf[js.Any])
+    inline def setMarkerSize(value: Double): Self = StObject.set(x, "markerSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarqueeBorderColor(value: String): Self = StObject.set(x, "marqueeBorderColor", value.asInstanceOf[js.Any])
+    inline def setMarqueeBorderColor(value: String): Self = StObject.set(x, "marqueeBorderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarqueeColor(value: String): Self = StObject.set(x, "marqueeColor", value.asInstanceOf[js.Any])
+    inline def setMarqueeColor(value: String): Self = StObject.set(x, "marqueeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxBarWidth(value: Double): Self = StObject.set(x, "maxBarWidth", value.asInstanceOf[js.Any])
+    inline def setMaxBarWidth(value: Double): Self = StObject.set(x, "maxBarWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtherColor(value: String): Self = StObject.set(x, "otherColor", value.asInstanceOf[js.Any])
+    inline def setOtherColor(value: String): Self = StObject.set(x, "otherColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatterns(value: js.Array[String]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
+    inline def setPatterns(value: js.Array[String]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternsVarargs(value: String*): Self = StObject.set(x, "patterns", js.Array(value :_*))
+    inline def setPatternsVarargs(value: String*): Self = StObject.set(x, "patterns", js.Array(value :_*))
     
-    @scala.inline
-    def setPieFeelerColor(value: String): Self = StObject.set(x, "pieFeelerColor", value.asInstanceOf[js.Any])
+    inline def setPieFeelerColor(value: String): Self = StObject.set(x, "pieFeelerColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPieInnerRadius(value: Double): Self = StObject.set(x, "pieInnerRadius", value.asInstanceOf[js.Any])
+    inline def setPieInnerRadius(value: Double): Self = StObject.set(x, "pieInnerRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionEffect(value: explode | highlightAndExplode | highlight): Self = StObject.set(x, "selectionEffect", value.asInstanceOf[js.Any])
+    inline def setSelectionEffect(value: explode | highlightAndExplode | highlight): Self = StObject.set(x, "selectionEffect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesEffect(value: color | pattern | gradient): Self = StObject.set(x, "seriesEffect", value.asInstanceOf[js.Any])
+    inline def setSeriesEffect(value: color | pattern | gradient): Self = StObject.set(x, "seriesEffect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapes(value: js.Array[String]): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
+    inline def setShapes(value: js.Array[String]): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapesVarargs(value: String*): Self = StObject.set(x, "shapes", js.Array(value :_*))
+    inline def setShapesVarargs(value: String*): Self = StObject.set(x, "shapes", js.Array(value :_*))
     
-    @scala.inline
-    def setStackLabelStyle(value: js.Object): Self = StObject.set(x, "stackLabelStyle", value.asInstanceOf[js.Any])
+    inline def setStackLabelStyle(value: js.Object): Self = StObject.set(x, "stackLabelStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStockFallingColor(value: String): Self = StObject.set(x, "stockFallingColor", value.asInstanceOf[js.Any])
+    inline def setStockFallingColor(value: String): Self = StObject.set(x, "stockFallingColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStockRangeColor(value: String): Self = StObject.set(x, "stockRangeColor", value.asInstanceOf[js.Any])
+    inline def setStockRangeColor(value: String): Self = StObject.set(x, "stockRangeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStockRisingColor(value: String): Self = StObject.set(x, "stockRisingColor", value.asInstanceOf[js.Any])
+    inline def setStockRisingColor(value: String): Self = StObject.set(x, "stockRisingColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStockVolumeColor(value: String): Self = StObject.set(x, "stockVolumeColor", value.asInstanceOf[js.Any])
+    inline def setStockVolumeColor(value: String): Self = StObject.set(x, "stockVolumeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreeDEffect(value: on | off): Self = StObject.set(x, "threeDEffect", value.asInstanceOf[js.Any])
+    inline def setThreeDEffect(value: on | off): Self = StObject.set(x, "threeDEffect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipLabelStyle(value: js.Object): Self = StObject.set(x, "tooltipLabelStyle", value.asInstanceOf[js.Any])
+    inline def setTooltipLabelStyle(value: js.Object): Self = StObject.set(x, "tooltipLabelStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipValueStyle(value: js.Object): Self = StObject.set(x, "tooltipValueStyle", value.asInstanceOf[js.Any])
+    inline def setTooltipValueStyle(value: js.Object): Self = StObject.set(x, "tooltipValueStyle", value.asInstanceOf[js.Any])
   }
 }

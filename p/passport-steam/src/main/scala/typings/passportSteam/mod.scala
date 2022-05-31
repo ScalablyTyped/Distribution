@@ -19,68 +19,23 @@ object mod {
   
   object prototype {
     
-    object authenticate {
-      
-      inline def apply(req: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-      
-      @JSImport("passport-steam", "prototype.authenticate")
-      @js.native
-      val ^ : js.Any = js.native
-    }
+    @JSImport("passport-steam", "prototype")
+    @js.native
+    val ^ : js.Any = js.native
     
-    object loadAssociation {
-      
-      inline def apply(fn: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-      
-      @JSImport("passport-steam", "prototype.loadAssociation")
-      @js.native
-      val ^ : js.Any = js.native
-    }
+    inline def authenticate(req: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(req.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    object loadDiscoveredInfo {
-      
-      inline def apply(fn: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-      
-      @JSImport("passport-steam", "prototype.loadDiscoveredInfo")
-      @js.native
-      val ^ : js.Any = js.native
-    }
+    inline def loadAssociation(fn: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAssociation")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    object loadDiscoveredInformation {
-      
-      inline def apply(fn: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-      
-      @JSImport("passport-steam", "prototype.loadDiscoveredInformation")
-      @js.native
-      val ^ : js.Any = js.native
-    }
+    inline def loadDiscoveredInfo(fn: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("loadDiscoveredInfo")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    object saveAssociation {
-      
-      inline def apply(fn: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-      
-      @JSImport("passport-steam", "prototype.saveAssociation")
-      @js.native
-      val ^ : js.Any = js.native
-    }
+    inline def loadDiscoveredInformation(fn: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("loadDiscoveredInformation")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    object saveDiscoveredInfo {
-      
-      inline def apply(fn: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-      
-      @JSImport("passport-steam", "prototype.saveDiscoveredInfo")
-      @js.native
-      val ^ : js.Any = js.native
-    }
+    inline def saveAssociation(fn: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("saveAssociation")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    object saveDiscoveredInformation {
-      
-      inline def apply(fn: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-      
-      @JSImport("passport-steam", "prototype.saveDiscoveredInformation")
-      @js.native
-      val ^ : js.Any = js.native
-    }
+    inline def saveDiscoveredInfo(fn: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("saveDiscoveredInfo")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
+    inline def saveDiscoveredInformation(fn: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("saveDiscoveredInformation")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   @JSImport("passport-steam", "version")

@@ -10,9 +10,9 @@ JupyterLab - Running Sessions Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/running-extension |
 | Keywords           | - |
-| # releases         | 113 |
+| # releases         | 130 |
 | # dependents       | 1 |
-| # downloads        | 1344751 |
+| # downloads        | 1456717 |
 | # stars            | 0 |
 
 ## Links

@@ -3,36 +3,37 @@ package typings.babylonjs.BABYLON
 import typings.babylonjs.anon.SnapDistance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AxisScaleGizmo extends Gizmo {
+trait AxisScaleGizmo
+  extends StObject
+     with Gizmo {
   
-  var _coloredMaterial: js.Any = js.native
+  /* private */ var _coloredMaterial: js.Any = js.native
   
   /** Create Geometry for Gizmo */
-  var _createGizmoMesh: js.Any = js.native
+  /* private */ var _createGizmoMesh: js.Any = js.native
   
-  var _disableMaterial: js.Any = js.native
+  /* private */ var _disableMaterial: js.Any = js.native
   
-  var _dragging: js.Any = js.native
+  /* private */ var _dragging: js.Any = js.native
   
-  var _gizmoMesh: js.Any = js.native
+  /* private */ var _gizmoMesh: js.Any = js.native
   
-  var _hoverMaterial: js.Any = js.native
+  /* private */ var _hoverMaterial: js.Any = js.native
   
-  var _isEnabled: js.Any = js.native
+  /* private */ var _isEnabled: js.Any = js.native
   
-  var _parent: js.Any = js.native
+  /* private */ var _parent: js.Any = js.native
   
-  var _pointerObserver: js.Any = js.native
+  /* private */ var _pointerObserver: js.Any = js.native
   
-  var _tmpMatrix: js.Any = js.native
+  /* private */ var _tmpMatrix: js.Any = js.native
   
-  var _tmpMatrix2: js.Any = js.native
+  /* private */ var _tmpMatrix2: js.Any = js.native
   
-  var _tmpVector: js.Any = js.native
+  /* private */ var _tmpVector: js.Any = js.native
   
   /**
     * Drag behavior responsible for the gizmos dragging interactions

@@ -10,7 +10,6 @@ import typings.luminoWidgets.mod.Widget
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputareaMod {
@@ -23,11 +22,11 @@ object inputareaMod {
       */
     def this(options: IOptions) = this()
     
-    var _editor: js.Any = js.native
+    /* private */ var _editor: js.Any = js.native
     
-    var _prompt: js.Any = js.native
+    /* private */ var _prompt: js.Any = js.native
     
-    var _rendered: js.Any = js.native
+    /* private */ var _rendered: js.Any = js.native
     
     /**
       * The content factory used by the widget.
@@ -81,11 +80,27 @@ object inputareaMod {
     /**
       * Construct a `ContentFactory`.
       */
-    class ContentFactory () extends IContentFactory {
+    class ContentFactory ()
+      extends StObject
+         with IContentFactory {
       def this(options: typings.jupyterlabCells.inputareaMod.InputArea.ContentFactory.IOptions) = this()
       
-      var _editor: js.Any = js.native
+      /* private */ var _editor: js.Any = js.native
       
+      /**
+        * Create an input prompt.
+        */
+      /* CompleteClass */
+      override def createInputPrompt(): IInputPrompt = js.native
+      
+      /**
+        * The editor factory we need to include in `CodeEditorWratter.IOptions`.
+        *
+        * This is a separate readonly attribute rather than a factory method as we need
+        * to pass it around.
+        */
+      /* CompleteClass */
+      override val editorFactory: Factory = js.native
       /**
         * Return the `CodeEditor.Factory` being used.
         */
@@ -100,7 +115,6 @@ object inputareaMod {
       /**
         * Options for the content factory.
         */
-      @js.native
       trait IOptions extends StObject {
         
         /**
@@ -109,24 +123,20 @@ object inputareaMod {
           * If this is not passed, a default CodeMirror editor factory
           * will be used.
           */
-        var editorFactory: js.UndefOr[Factory] = js.native
+        var editorFactory: js.UndefOr[Factory] = js.undefined
       }
       object IOptions {
         
-        @scala.inline
-        def apply(): typings.jupyterlabCells.inputareaMod.InputArea.ContentFactory.IOptions = {
+        inline def apply(): typings.jupyterlabCells.inputareaMod.InputArea.ContentFactory.IOptions = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[typings.jupyterlabCells.inputareaMod.InputArea.ContentFactory.IOptions]
         }
         
-        @scala.inline
-        implicit class IOptionsMutableBuilder[Self <: typings.jupyterlabCells.inputareaMod.InputArea.ContentFactory.IOptions] (val x: Self) extends AnyVal {
+        extension [Self <: typings.jupyterlabCells.inputareaMod.InputArea.ContentFactory.IOptions](x: Self) {
           
-          @scala.inline
-          def setEditorFactory(value: /* options */ typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions => IEditor): Self = StObject.set(x, "editorFactory", js.Any.fromFunction1(value))
+          inline def setEditorFactory(value: /* options */ typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions => IEditor): Self = StObject.set(x, "editorFactory", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setEditorFactoryUndefined: Self = StObject.set(x, "editorFactory", js.undefined)
+          inline def setEditorFactoryUndefined: Self = StObject.set(x, "editorFactory", js.undefined)
         }
       }
     }
@@ -151,13 +161,12 @@ object inputareaMod {
       * The content factory is used to create children in a way
       * that can be customized.
       */
-    @js.native
     trait IContentFactory extends StObject {
       
       /**
         * Create an input prompt.
         */
-      def createInputPrompt(): IInputPrompt = js.native
+      def createInputPrompt(): IInputPrompt
       
       /**
         * The editor factory we need to include in `CodeEditorWratter.IOptions`.
@@ -165,12 +174,11 @@ object inputareaMod {
         * This is a separate readonly attribute rather than a factory method as we need
         * to pass it around.
         */
-      val editorFactory: Factory = js.native
+      val editorFactory: Factory
     }
     object IContentFactory {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         createInputPrompt: () => IInputPrompt,
         editorFactory: /* options */ typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions => IEditor
       ): IContentFactory = {
@@ -178,21 +186,17 @@ object inputareaMod {
         __obj.asInstanceOf[IContentFactory]
       }
       
-      @scala.inline
-      implicit class IContentFactoryMutableBuilder[Self <: IContentFactory] (val x: Self) extends AnyVal {
+      extension [Self <: IContentFactory](x: Self) {
         
-        @scala.inline
-        def setCreateInputPrompt(value: () => IInputPrompt): Self = StObject.set(x, "createInputPrompt", js.Any.fromFunction0(value))
+        inline def setCreateInputPrompt(value: () => IInputPrompt): Self = StObject.set(x, "createInputPrompt", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setEditorFactory(value: /* options */ typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions => IEditor): Self = StObject.set(x, "editorFactory", js.Any.fromFunction1(value))
+        inline def setEditorFactory(value: /* options */ typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions => IEditor): Self = StObject.set(x, "editorFactory", js.Any.fromFunction1(value))
       }
     }
     
     /**
       * The options used to create an `InputArea`.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
@@ -200,43 +204,36 @@ object inputareaMod {
         *
         * Defaults to one that uses CodeMirror.
         */
-      var contentFactory: js.UndefOr[IContentFactory] = js.native
+      var contentFactory: js.UndefOr[IContentFactory] = js.undefined
       
       /**
         * The model used by the widget.
         */
-      var model: ICellModel = js.native
+      var model: ICellModel
       
       /**
         * Whether to send an update request to the editor when it is shown.
         */
-      var updateOnShow: js.UndefOr[Boolean] = js.native
+      var updateOnShow: js.UndefOr[Boolean] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(model: ICellModel): IOptions = {
+      inline def apply(model: ICellModel): IOptions = {
         val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setContentFactory(value: IContentFactory): Self = StObject.set(x, "contentFactory", value.asInstanceOf[js.Any])
+        inline def setContentFactory(value: IContentFactory): Self = StObject.set(x, "contentFactory", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentFactoryUndefined: Self = StObject.set(x, "contentFactory", js.undefined)
+        inline def setContentFactoryUndefined: Self = StObject.set(x, "contentFactory", js.undefined)
         
-        @scala.inline
-        def setModel(value: ICellModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+        inline def setModel(value: ICellModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdateOnShow(value: Boolean): Self = StObject.set(x, "updateOnShow", value.asInstanceOf[js.Any])
+        inline def setUpdateOnShow(value: Boolean): Self = StObject.set(x, "updateOnShow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdateOnShowUndefined: Self = StObject.set(x, "updateOnShow", js.undefined)
+        inline def setUpdateOnShowUndefined: Self = StObject.set(x, "updateOnShow", js.undefined)
       }
     }
   }
@@ -245,7 +242,7 @@ object inputareaMod {
   @js.native
   class InputPrompt () extends IInputPrompt {
     
-    var _executionCount: js.Any = js.native
+    /* private */ var _executionCount: js.Any = js.native
     
     /**
       * The execution count for the prompt.

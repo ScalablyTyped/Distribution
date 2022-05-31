@@ -152,8 +152,4 @@ object SPClientPeoplePicker {
   @js.native
   def ValueName: String = js.native
   inline def ValueName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ValueName")(x.asInstanceOf[js.Any])
-  
-  // = 'DomainText';
-  /* static member */
-  object SPClientPeoplePickerDict
 }

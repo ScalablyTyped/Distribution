@@ -2,11 +2,12 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Camera extends Node {
+trait Camera
+  extends StObject
+     with Node {
   
   /** @hidden */
   var _activeMeshes: SmartArray[AbstractMesh] = js.native
@@ -14,7 +15,7 @@ trait Camera extends Node {
   /** @hidden */
   var _cameraRigParams: js.Any = js.native
   
-  var _cascadePostProcessesToRigCams: js.Any = js.native
+  /* private */ var _cascadePostProcessesToRigCams: js.Any = js.native
   
   /** @hidden */
   def _checkInputs(): Unit = js.native
@@ -22,9 +23,9 @@ trait Camera extends Node {
   /** @hidden */
   var _computedViewMatrix: Matrix = js.native
   
-  var _doNotComputeProjectionMatrix: js.Any = js.native
+  /* private */ var _doNotComputeProjectionMatrix: js.Any = js.native
   
-  var _frustumPlanes: js.Any = js.native
+  /* private */ var _frustumPlanes: js.Any = js.native
   
   /**
     * Internal, gets the first post proces.
@@ -52,7 +53,7 @@ trait Camera extends Node {
     */
   def _getWebVRViewMatrix(): Matrix = js.native
   
-  var _globalPosition: Vector3 = js.native
+  /* protected */ var _globalPosition: Vector3 = js.native
   
   /** @hidden */
   val _isCamera: Boolean = js.native
@@ -84,7 +85,7 @@ trait Camera extends Node {
   /** @hidden */
   var _projectionMatrix: Matrix = js.native
   
-  var _refreshFrustumPlanes: js.Any = js.native
+  /* private */ var _refreshFrustumPlanes: js.Any = js.native
   
   /**
     * @hidden
@@ -111,17 +112,17 @@ trait Camera extends Node {
   /** @hidden */
   var _skipRendering: Boolean = js.native
   
-  var _stateStored: js.Any = js.native
+  /* private */ var _stateStored: js.Any = js.native
   
-  var _storedFov: js.Any = js.native
+  /* private */ var _storedFov: js.Any = js.native
   
-  var _transformMatrix: js.Any = js.native
+  /* private */ var _transformMatrix: js.Any = js.native
   
-  var _upVector: Vector3 = js.native
+  /* protected */ var _upVector: Vector3 = js.native
   
   /* protected */ def _updateCameraRotationMatrix(): Unit = js.native
   
-  var _updateFrustumPlanes: js.Any = js.native
+  /* private */ var _updateFrustumPlanes: js.Any = js.native
   
   /**
     * May need to be overridden by children
@@ -137,7 +138,7 @@ trait Camera extends Node {
     */
   var _useMultiviewToSingleView: Boolean = js.native
   
-  var _webvrViewMatrix: Matrix = js.native
+  /* protected */ var _webvrViewMatrix: Matrix = js.native
   
   /**
     * Returns the current camera absolute rotation
@@ -262,13 +263,13 @@ trait Camera extends Node {
     * @returns the forward ray
     */
   def getForwardRay(): Ray = js.native
-  def getForwardRay(length: js.UndefOr[scala.Nothing], transform: js.UndefOr[scala.Nothing], origin: Vector3): Ray = js.native
-  def getForwardRay(length: js.UndefOr[scala.Nothing], transform: Matrix): Ray = js.native
-  def getForwardRay(length: js.UndefOr[scala.Nothing], transform: Matrix, origin: Vector3): Ray = js.native
   def getForwardRay(length: Double): Ray = js.native
-  def getForwardRay(length: Double, transform: js.UndefOr[scala.Nothing], origin: Vector3): Ray = js.native
+  def getForwardRay(length: Double, transform: Unit, origin: Vector3): Ray = js.native
   def getForwardRay(length: Double, transform: Matrix): Ray = js.native
   def getForwardRay(length: Double, transform: Matrix, origin: Vector3): Ray = js.native
+  def getForwardRay(length: Unit, transform: Unit, origin: Vector3): Ray = js.native
+  def getForwardRay(length: Unit, transform: Matrix): Ray = js.native
+  def getForwardRay(length: Unit, transform: Matrix, origin: Vector3): Ray = js.native
   
   /**
     * Gets a ray in the forward direction from the camera.
@@ -279,18 +280,13 @@ trait Camera extends Node {
     * @returns the forward ray
     */
   def getForwardRayToRef(refRay: Ray): Ray = js.native
-  def getForwardRayToRef(
-    refRay: Ray,
-    length: js.UndefOr[scala.Nothing],
-    transform: js.UndefOr[scala.Nothing],
-    origin: Vector3
-  ): Ray = js.native
-  def getForwardRayToRef(refRay: Ray, length: js.UndefOr[scala.Nothing], transform: Matrix): Ray = js.native
-  def getForwardRayToRef(refRay: Ray, length: js.UndefOr[scala.Nothing], transform: Matrix, origin: Vector3): Ray = js.native
   def getForwardRayToRef(refRay: Ray, length: Double): Ray = js.native
-  def getForwardRayToRef(refRay: Ray, length: Double, transform: js.UndefOr[scala.Nothing], origin: Vector3): Ray = js.native
+  def getForwardRayToRef(refRay: Ray, length: Double, transform: Unit, origin: Vector3): Ray = js.native
   def getForwardRayToRef(refRay: Ray, length: Double, transform: Matrix): Ray = js.native
   def getForwardRayToRef(refRay: Ray, length: Double, transform: Matrix, origin: Vector3): Ray = js.native
+  def getForwardRayToRef(refRay: Ray, length: Unit, transform: Unit, origin: Vector3): Ray = js.native
+  def getForwardRayToRef(refRay: Ray, length: Unit, transform: Matrix): Ray = js.native
+  def getForwardRayToRef(refRay: Ray, length: Unit, transform: Matrix, origin: Vector3): Ray = js.native
   
   /**
     * Gets the left camera target of a rig setup in case of Rigged Camera

@@ -5,10 +5,13 @@ import typings.jupyterlabServices.contentsMod.Contents.IModel
 import typings.luminoCoreutils.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@jupyterlab/docmanager", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@jupyterlab/docmanager", "DocumentManager")
   @js.native
@@ -97,19 +100,11 @@ object mod {
     }
   }
   
-  @JSImport("@jupyterlab/docmanager", "isValidFileName")
-  @js.native
-  def isValidFileName(name: String): Boolean = js.native
+  inline def isValidFileName(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidFileName")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@jupyterlab/docmanager", "renameDialog")
-  @js.native
-  def renameDialog(manager: typings.jupyterlabDocmanager.tokensMod.IDocumentManager, oldPath: String): js.Promise[IModel | Null] = js.native
+  inline def renameDialog(manager: typings.jupyterlabDocmanager.tokensMod.IDocumentManager, oldPath: String): js.Promise[IModel | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("renameDialog")(manager.asInstanceOf[js.Any], oldPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IModel | Null]]
   
-  @JSImport("@jupyterlab/docmanager", "renameFile")
-  @js.native
-  def renameFile(manager: typings.jupyterlabDocmanager.tokensMod.IDocumentManager, oldPath: String, newPath: String): js.Promise[IModel | Null] = js.native
+  inline def renameFile(manager: typings.jupyterlabDocmanager.tokensMod.IDocumentManager, oldPath: String, newPath: String): js.Promise[IModel | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("renameFile")(manager.asInstanceOf[js.Any], oldPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IModel | Null]]
   
-  @JSImport("@jupyterlab/docmanager", "shouldOverwrite")
-  @js.native
-  def shouldOverwrite(path: String): js.Promise[Boolean] = js.native
+  inline def shouldOverwrite(path: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldOverwrite")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
 }

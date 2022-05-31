@@ -3,11 +3,12 @@ package typings.babylonjs.BABYLON
 import typings.babylonjs.anon.WheelDeltaX
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseCameraMouseWheelInput extends ICameraInput[Camera] {
+trait BaseCameraMouseWheelInput
+  extends StObject
+     with ICameraInput[Camera] {
   
   /**
     * Firefox uses a different scheme to report scroll distances to other
@@ -16,36 +17,36 @@ trait BaseCameraMouseWheelInput extends ICameraInput[Camera] {
     * https://developer.mozilla.org/en-US/docs/Web/API/WheelEvent/deltaMode
     * https://stackoverflow.com/questions/20110224/what-is-the-height-of-a-line-in-a-wheel-event-deltamode-dom-delta-line
     */
-  val _ffMultiplier: js.Any = js.native
+  /* private */ val _ffMultiplier: js.Any = js.native
   
   /**
     * Different event attributes for wheel data fall into a few set ranges.
     * Some relevant but dated date here:
     * https://stackoverflow.com/questions/5527601/normalizing-mousewheel-speed-across-browsers
     */
-  val _normalize: js.Any = js.native
+  /* private */ val _normalize: js.Any = js.native
   
-  var _observer: js.Any = js.native
+  /* private */ var _observer: js.Any = js.native
   
-  var _wheel: js.Any = js.native
+  /* private */ var _wheel: js.Any = js.native
   
   /**
     * Incremental value of multiple mouse wheel movements of the X axis.
     * Should be zero-ed when read.
     */
-  var _wheelDeltaX: Double = js.native
+  /* protected */ var _wheelDeltaX: Double = js.native
   
   /**
     * Incremental value of multiple mouse wheel movements of the Y axis.
     * Should be zero-ed when read.
     */
-  var _wheelDeltaY: Double = js.native
+  /* protected */ var _wheelDeltaY: Double = js.native
   
   /**
     * Incremental value of multiple mouse wheel movements of the Z axis.
     * Should be zero-ed when read.
     */
-  var _wheelDeltaZ: Double = js.native
+  /* protected */ var _wheelDeltaZ: Double = js.native
   
   /**
     * Defines the camera the input is attached to.

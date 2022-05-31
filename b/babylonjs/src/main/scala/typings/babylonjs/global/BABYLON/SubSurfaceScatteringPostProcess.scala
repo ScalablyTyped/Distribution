@@ -4,13 +4,13 @@ import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.BABYLON.PostProcessOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.SubSurfaceScatteringPostProcess")
 @js.native
 class SubSurfaceScatteringPostProcess protected ()
-  extends typings.babylonjs.BABYLON.SubSurfaceScatteringPostProcess {
+  extends StObject
+     with typings.babylonjs.BABYLON.SubSurfaceScatteringPostProcess {
   def this(
     name: String,
     scene: typings.babylonjs.BABYLON.Scene,

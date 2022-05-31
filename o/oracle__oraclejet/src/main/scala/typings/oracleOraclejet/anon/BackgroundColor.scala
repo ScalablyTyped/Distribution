@@ -11,48 +11,45 @@ import typings.oracleOraclejet.oracleOraclejetStrings.start
 import typings.oracleOraclejet.oracleOraclejetStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundColor extends StObject {
   
-  var backgroundColor: String = js.native
+  var backgroundColor: String
   
-  var borderColor: String = js.native
+  var borderColor: String
   
-  var maxSize: String = js.native
+  var maxSize: String
   
-  var position: start | end | bottom | top | auto = js.native
+  var position: start | end | bottom | top | auto
   
-  var referenceObjectSection: Title = js.native
+  var referenceObjectSection: Title
   
-  var rendered: on | off | auto = js.native
+  var rendered: on | off | auto
   
-  var scrolling: off | asNeeded = js.native
+  var scrolling: off | asNeeded
   
-  var sections: js.Array[Items] = js.native
+  var sections: js.Array[Items]
   
-  var seriesSection: Title = js.native
+  var seriesSection: Title
   
-  var size: String = js.native
+  var size: String
   
-  var symbolHeight: Double = js.native
+  var symbolHeight: Double
   
-  var symbolWidth: Double = js.native
+  var symbolWidth: Double
   
-  var textStyle: js.Object = js.native
+  var textStyle: js.Object
   
-  var title: String = js.native
+  var title: String
   
-  var titleHalign: center | end | start = js.native
+  var titleHalign: center | end | start
   
-  var titleStyle: js.Object = js.native
+  var titleStyle: js.Object
 }
 object BackgroundColor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backgroundColor: String,
     borderColor: String,
     maxSize: String,
@@ -74,58 +71,40 @@ object BackgroundColor {
     __obj.asInstanceOf[BackgroundColor]
   }
   
-  @scala.inline
-  implicit class BackgroundColorMutableBuilder[Self <: BackgroundColor] (val x: Self) extends AnyVal {
+  extension [Self <: BackgroundColor](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSize(value: String): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+    inline def setMaxSize(value: String): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: start | end | bottom | top | auto): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: start | end | bottom | top | auto): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceObjectSection(value: Title): Self = StObject.set(x, "referenceObjectSection", value.asInstanceOf[js.Any])
+    inline def setReferenceObjectSection(value: Title): Self = StObject.set(x, "referenceObjectSection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRendered(value: on | off | auto): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
+    inline def setRendered(value: on | off | auto): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrolling(value: off | asNeeded): Self = StObject.set(x, "scrolling", value.asInstanceOf[js.Any])
+    inline def setScrolling(value: off | asNeeded): Self = StObject.set(x, "scrolling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSections(value: js.Array[Items]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
+    inline def setSections(value: js.Array[Items]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionsVarargs(value: Items*): Self = StObject.set(x, "sections", js.Array(value :_*))
+    inline def setSectionsVarargs(value: Items*): Self = StObject.set(x, "sections", js.Array(value :_*))
     
-    @scala.inline
-    def setSeriesSection(value: Title): Self = StObject.set(x, "seriesSection", value.asInstanceOf[js.Any])
+    inline def setSeriesSection(value: Title): Self = StObject.set(x, "seriesSection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolHeight(value: Double): Self = StObject.set(x, "symbolHeight", value.asInstanceOf[js.Any])
+    inline def setSymbolHeight(value: Double): Self = StObject.set(x, "symbolHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolWidth(value: Double): Self = StObject.set(x, "symbolWidth", value.asInstanceOf[js.Any])
+    inline def setSymbolWidth(value: Double): Self = StObject.set(x, "symbolWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextStyle(value: js.Object): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+    inline def setTextStyle(value: js.Object): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleHalign(value: center | end | start): Self = StObject.set(x, "titleHalign", value.asInstanceOf[js.Any])
+    inline def setTitleHalign(value: center | end | start): Self = StObject.set(x, "titleHalign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleStyle(value: js.Object): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
+    inline def setTitleStyle(value: js.Object): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
   }
 }

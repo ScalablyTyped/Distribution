@@ -2,11 +2,12 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Action extends IAction {
+trait Action
+  extends StObject
+     with IAction {
   
   /**
     * Internal only - manager for action
@@ -15,9 +16,9 @@ trait Action extends IAction {
   @JSName("_actionManager")
   var _actionManager_Action: ActionManager = js.native
   
-  var _child: js.Any = js.native
+  /* private */ var _child: js.Any = js.native
   
-  var _condition: js.Any = js.native
+  /* private */ var _condition: js.Any = js.native
   
   /**
     * Internal only
@@ -31,7 +32,7 @@ trait Action extends IAction {
     */
   def _getProperty(propertyPath: String): String = js.native
   
-  var _nextActiveAction: js.Any = js.native
+  /* private */ var _nextActiveAction: js.Any = js.native
   
   /**
     * Internal only called by serialize
@@ -40,7 +41,7 @@ trait Action extends IAction {
   /* protected */ def _serialize(serializedAction: js.Any): js.Any = js.native
   /* protected */ def _serialize(serializedAction: js.Any, parent: js.Any): js.Any = js.native
   
-  var _triggerParameter: js.Any = js.native
+  /* private */ var _triggerParameter: js.Any = js.native
   
   /**
     * Execute placeholder for child classes

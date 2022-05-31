@@ -2,11 +2,12 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubMesh extends ICullable {
+trait SubMesh
+  extends StObject
+     with ICullable {
   
   /**
     * Returns true if this submesh covers the entire parent mesh
@@ -14,17 +15,17 @@ trait SubMesh extends ICullable {
     */
   def IsGlobal: Boolean = js.native
   
-  var _IsMultiMaterial: js.Any = js.native
+  /* private */ var _IsMultiMaterial: js.Any = js.native
   
   /** @hidden */
   var _alphaIndex: Double = js.native
   
-  var _boundingInfo: js.Any = js.native
+  /* private */ var _boundingInfo: js.Any = js.native
   
   /** @hidden */
   def _checkCollision(collider: Collider): Boolean = js.native
   
-  var _currentMaterial: js.Any = js.native
+  /* private */ var _currentMaterial: js.Any = js.native
   
   /** @hidden */
   var _distanceToCamera: Double = js.native
@@ -41,16 +42,16 @@ trait SubMesh extends ICullable {
   var _id: Double = js.native
   
   /** @hidden */
-  var _intersectLines: js.Any = js.native
+  /* private */ var _intersectLines: js.Any = js.native
   
   /** @hidden */
-  var _intersectTriangles: js.Any = js.native
+  /* private */ var _intersectTriangles: js.Any = js.native
   
   /** @hidden */
-  var _intersectUnIndexedLines: js.Any = js.native
+  /* private */ var _intersectUnIndexedLines: js.Any = js.native
   
   /** @hidden */
-  var _intersectUnIndexedTriangles: js.Any = js.native
+  /* private */ var _intersectUnIndexedTriangles: js.Any = js.native
   
   /** @hidden */
   var _lastColliderTransformMatrix: Nullable[Matrix] = js.native
@@ -58,7 +59,7 @@ trait SubMesh extends ICullable {
   /** @hidden */
   var _lastColliderWorldVertices: Nullable[js.Array[Vector3]] = js.native
   
-  var _linesIndexBuffer: js.Any = js.native
+  /* private */ var _linesIndexBuffer: js.Any = js.native
   
   /** @hidden */
   var _linesIndexCount: Double = js.native
@@ -69,7 +70,7 @@ trait SubMesh extends ICullable {
   /** @hidden */
   var _materialEffect: Nullable[Effect] = js.native
   
-  var _mesh: js.Any = js.native
+  /* private */ var _mesh: js.Any = js.native
   
   /** @hidden */
   def _rebuild(): Unit = js.native
@@ -77,7 +78,7 @@ trait SubMesh extends ICullable {
   /** @hidden */
   var _renderId: Double = js.native
   
-  var _renderingMesh: js.Any = js.native
+  /* private */ var _renderingMesh: js.Any = js.native
   
   /** @hidden */
   var _trianglePlanes: js.Array[Plane] = js.native
@@ -166,19 +167,19 @@ trait SubMesh extends ICullable {
     * @returns intersection info or null if no intersection
     */
   def intersects(ray: Ray, positions: js.Array[Vector3], indices: IndicesArray): Nullable[IntersectionInfo] = js.native
-  def intersects(
-    ray: Ray,
-    positions: js.Array[Vector3],
-    indices: IndicesArray,
-    fastCheck: js.UndefOr[scala.Nothing],
-    trianglePredicate: TrianglePickingPredicate
-  ): Nullable[IntersectionInfo] = js.native
   def intersects(ray: Ray, positions: js.Array[Vector3], indices: IndicesArray, fastCheck: Boolean): Nullable[IntersectionInfo] = js.native
   def intersects(
     ray: Ray,
     positions: js.Array[Vector3],
     indices: IndicesArray,
     fastCheck: Boolean,
+    trianglePredicate: TrianglePickingPredicate
+  ): Nullable[IntersectionInfo] = js.native
+  def intersects(
+    ray: Ray,
+    positions: js.Array[Vector3],
+    indices: IndicesArray,
+    fastCheck: Unit,
     trianglePredicate: TrianglePickingPredicate
   ): Nullable[IntersectionInfo] = js.native
   

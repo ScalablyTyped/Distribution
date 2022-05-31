@@ -2,13 +2,12 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SphericalPolynomial extends StObject {
   
-  var _harmonics: js.Any = js.native
+  /* private */ var _harmonics: js.Any = js.native
   
   /**
     * Adds an ambient color to the spherical polynomial

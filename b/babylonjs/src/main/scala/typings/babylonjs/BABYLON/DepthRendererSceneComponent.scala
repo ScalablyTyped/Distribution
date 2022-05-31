@@ -2,20 +2,19 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DepthRendererSceneComponent extends ISceneComponent {
+trait DepthRendererSceneComponent
+  extends StObject
+     with ISceneComponent {
   
-  var _gatherActiveCameraRenderTargets: js.Any = js.native
+  /* private */ var _gatherActiveCameraRenderTargets: js.Any
   
-  var _gatherRenderTargets: js.Any = js.native
+  /* private */ var _gatherRenderTargets: js.Any
 }
 object DepthRendererSceneComponent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _gatherActiveCameraRenderTargets: js.Any,
     _gatherRenderTargets: js.Any,
     dispose: () => Unit,
@@ -28,13 +27,10 @@ object DepthRendererSceneComponent {
     __obj.asInstanceOf[DepthRendererSceneComponent]
   }
   
-  @scala.inline
-  implicit class DepthRendererSceneComponentMutableBuilder[Self <: DepthRendererSceneComponent] (val x: Self) extends AnyVal {
+  extension [Self <: DepthRendererSceneComponent](x: Self) {
     
-    @scala.inline
-    def set_gatherActiveCameraRenderTargets(value: js.Any): Self = StObject.set(x, "_gatherActiveCameraRenderTargets", value.asInstanceOf[js.Any])
+    inline def set_gatherActiveCameraRenderTargets(value: js.Any): Self = StObject.set(x, "_gatherActiveCameraRenderTargets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_gatherRenderTargets(value: js.Any): Self = StObject.set(x, "_gatherRenderTargets", value.asInstanceOf[js.Any])
+    inline def set_gatherRenderTargets(value: js.Any): Self = StObject.set(x, "_gatherRenderTargets", value.asInstanceOf[js.Any])
   }
 }

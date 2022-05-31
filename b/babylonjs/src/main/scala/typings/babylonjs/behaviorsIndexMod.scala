@@ -6,7 +6,6 @@ import typings.babylonjs.easingMod.ExponentialEase
 import typings.babylonjs.transformNodeMod.TransformNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object behaviorsIndexMod {
@@ -44,8 +43,7 @@ object behaviorsIndexMod {
     @JSImport("babylonjs/Behaviors/index", "BouncingBehavior.EasingFunction")
     @js.native
     def EasingFunction: BackEase = js.native
-    @scala.inline
-    def EasingFunction_=(x: BackEase): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EasingFunction")(x.asInstanceOf[js.Any])
+    inline def EasingFunction_=(x: BackEase): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EasingFunction")(x.asInstanceOf[js.Any])
     
     /**
       * The easing mode used by animations
@@ -53,8 +51,7 @@ object behaviorsIndexMod {
     @JSImport("babylonjs/Behaviors/index", "BouncingBehavior.EasingMode")
     @js.native
     def EasingMode: Double = js.native
-    @scala.inline
-    def EasingMode_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EasingMode")(x.asInstanceOf[js.Any])
+    inline def EasingMode_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EasingMode")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Behaviors/index", "FadeInOutBehavior")
@@ -82,8 +79,7 @@ object behaviorsIndexMod {
     @JSImport("babylonjs/Behaviors/index", "FramingBehavior.EasingFunction")
     @js.native
     def EasingFunction: ExponentialEase = js.native
-    @scala.inline
-    def EasingFunction_=(x: ExponentialEase): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EasingFunction")(x.asInstanceOf[js.Any])
+    inline def EasingFunction_=(x: ExponentialEase): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EasingFunction")(x.asInstanceOf[js.Any])
     
     /**
       * The easing mode used by animations
@@ -91,8 +87,7 @@ object behaviorsIndexMod {
     @JSImport("babylonjs/Behaviors/index", "FramingBehavior.EasingMode")
     @js.native
     def EasingMode: Double = js.native
-    @scala.inline
-    def EasingMode_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EasingMode")(x.asInstanceOf[js.Any])
+    inline def EasingMode_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EasingMode")(x.asInstanceOf[js.Any])
     
     /**
       * The camera is not allowed to zoom closer to the mesh than the point at which the adjusted bounding sphere touches the frustum sides
@@ -100,8 +95,7 @@ object behaviorsIndexMod {
     @JSImport("babylonjs/Behaviors/index", "FramingBehavior.FitFrustumSidesMode")
     @js.native
     def FitFrustumSidesMode: Double = js.native
-    @scala.inline
-    def FitFrustumSidesMode_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FitFrustumSidesMode")(x.asInstanceOf[js.Any])
+    inline def FitFrustumSidesMode_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FitFrustumSidesMode")(x.asInstanceOf[js.Any])
     
     /**
       * The camera can move all the way towards the mesh.
@@ -109,8 +103,7 @@ object behaviorsIndexMod {
     @JSImport("babylonjs/Behaviors/index", "FramingBehavior.IgnoreBoundsSizeMode")
     @js.native
     def IgnoreBoundsSizeMode: Double = js.native
-    @scala.inline
-    def IgnoreBoundsSizeMode_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IgnoreBoundsSizeMode")(x.asInstanceOf[js.Any])
+    inline def IgnoreBoundsSizeMode_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IgnoreBoundsSizeMode")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Behaviors/index", "MultiPointerScaleBehavior")
@@ -141,14 +134,12 @@ object behaviorsIndexMod {
     @JSImport("babylonjs/Behaviors/index", "PointerDragBehavior._AnyMouseID")
     @js.native
     def _AnyMouseID: js.Any = js.native
-    @scala.inline
-    def _AnyMouseID_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_AnyMouseID")(x.asInstanceOf[js.Any])
+    inline def _AnyMouseID_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_AnyMouseID")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Behaviors/index", "PointerDragBehavior._planeScene")
     @js.native
     def _planeScene: js.Any = js.native
-    @scala.inline
-    def _planeScene_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_planeScene")(x.asInstanceOf[js.Any])
+    inline def _planeScene_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_planeScene")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Behaviors/index", "SixDofDragBehavior")
@@ -168,7 +159,6 @@ object behaviorsIndexMod {
     @JSImport("babylonjs/Behaviors/index", "SixDofDragBehavior._virtualScene")
     @js.native
     def _virtualScene: js.Any = js.native
-    @scala.inline
-    def _virtualScene_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_virtualScene")(x.asInstanceOf[js.Any])
+    inline def _virtualScene_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_virtualScene")(x.asInstanceOf[js.Any])
   }
 }

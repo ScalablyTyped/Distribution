@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "tape-catch"
-version := "1.0-dt-20200515Z-574d30"
+version := "1.0-dt-20200515Z-8dc167"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-e00132",
-  "org.scalablytyped" %%% "std" % "4.1-2f6855",
-  "org.scalablytyped" %%% "tape" % "v4.13.2-dt-20201002Z-0fe5fd")
+  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-11c649",
+  "org.scalablytyped" %%% "std" % "4.1-f7e8ab",
+  "org.scalablytyped" %%% "tape" % "v4.13.2-dt-20201002Z-bc88ef")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

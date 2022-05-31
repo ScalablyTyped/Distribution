@@ -13,7 +13,6 @@ import typings.babylonjs.typesMod.Nullable
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object geometryBufferRendererMod {
@@ -29,25 +28,25 @@ object geometryBufferRendererMod {
     def this(scene: Scene) = this()
     def this(scene: Scene, ratio: Double) = this()
     
-    var _assignRenderTargetIndices: js.Any = js.native
+    /* private */ var _assignRenderTargetIndices: js.Any = js.native
     
-    var _attachments: js.Any = js.native
+    /* private */ var _attachments: js.Any = js.native
     
-    var _cachedDefines: String = js.native
+    /* protected */ var _cachedDefines: String = js.native
     
-    var _copyBonesTransformationMatrices: js.Any = js.native
+    /* private */ var _copyBonesTransformationMatrices: js.Any = js.native
     
     /* protected */ def _createRenderTargets(): Unit = js.native
     
-    var _depthNormalIndex: js.Any = js.native
+    /* private */ var _depthNormalIndex: js.Any = js.native
     
-    var _effect: Effect = js.native
+    /* protected */ var _effect: Effect = js.native
     
-    var _enablePosition: js.Any = js.native
+    /* private */ var _enablePosition: js.Any = js.native
     
-    var _enableReflectivity: js.Any = js.native
+    /* private */ var _enableReflectivity: js.Any = js.native
     
-    var _enableVelocity: js.Any = js.native
+    /* private */ var _enableVelocity: js.Any = js.native
     
     /**
       * @hidden
@@ -70,13 +69,13 @@ object geometryBufferRendererMod {
       */
     def _linkPrePassRenderer(prePassRenderer: PrePassRenderer): Unit = js.native
     
-    var _linkedWithPrePass: js.Any = js.native
+    /* private */ var _linkedWithPrePass: js.Any = js.native
     
-    var _multiRenderTarget: js.Any = js.native
+    /* private */ var _multiRenderTarget: js.Any = js.native
     
-    var _positionIndex: js.Any = js.native
+    /* private */ var _positionIndex: js.Any = js.native
     
-    var _prePassRenderer: js.Any = js.native
+    /* private */ var _prePassRenderer: js.Any = js.native
     
     /**
       * Dictionary used to store the previous bones transformation matrices of each rendered mesh
@@ -92,9 +91,9 @@ object geometryBufferRendererMod {
       */
     var _previousTransformationMatrices: NumberDictionary[ISavedTransformationMatrix] = js.native
     
-    var _ratio: js.Any = js.native
+    /* private */ var _ratio: js.Any = js.native
     
-    var _reflectivityIndex: js.Any = js.native
+    /* private */ var _reflectivityIndex: js.Any = js.native
     
     /**
       * @hidden
@@ -102,9 +101,9 @@ object geometryBufferRendererMod {
       */
     def _resetLayout(): Unit = js.native
     
-    var _resizeObserver: js.Any = js.native
+    /* private */ var _resizeObserver: js.Any = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
     /**
       * @hidden
@@ -120,7 +119,7 @@ object geometryBufferRendererMod {
       */
     def _unlinkPrePassRenderer(): Unit = js.native
     
-    var _velocityIndex: js.Any = js.native
+    /* private */ var _velocityIndex: js.Any = js.native
     
     /**
       * Disposes the renderer and frees up associated resources.
@@ -222,6 +221,10 @@ object geometryBufferRendererMod {
   /* static members */
   object GeometryBufferRenderer {
     
+    @JSImport("babylonjs/Rendering/geometryBufferRenderer", "GeometryBufferRenderer")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Constant used to retrieve the depth + normal texture index in the G-Buffer textures array
       * using getIndex(GeometryBufferRenderer.DEPTHNORMAL_TEXTURE_INDEX)
@@ -255,35 +258,28 @@ object geometryBufferRendererMod {
     val VELOCITY_TEXTURE_TYPE: Double = js.native
     
     /** @hidden */
-    @JSImport("babylonjs/Rendering/geometryBufferRenderer", "GeometryBufferRenderer._SceneComponentInitialization")
-    @js.native
-    def _SceneComponentInitialization(scene: Scene): Unit = js.native
+    inline def _SceneComponentInitialization(scene: Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   /** @hidden */
-  @js.native
   trait ISavedTransformationMatrix extends StObject {
     
-    var viewProjection: Matrix = js.native
+    var viewProjection: Matrix
     
-    var world: Matrix = js.native
+    var world: Matrix
   }
   object ISavedTransformationMatrix {
     
-    @scala.inline
-    def apply(viewProjection: Matrix, world: Matrix): ISavedTransformationMatrix = {
+    inline def apply(viewProjection: Matrix, world: Matrix): ISavedTransformationMatrix = {
       val __obj = js.Dynamic.literal(viewProjection = viewProjection.asInstanceOf[js.Any], world = world.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISavedTransformationMatrix]
     }
     
-    @scala.inline
-    implicit class ISavedTransformationMatrixMutableBuilder[Self <: ISavedTransformationMatrix] (val x: Self) extends AnyVal {
+    extension [Self <: ISavedTransformationMatrix](x: Self) {
       
-      @scala.inline
-      def setViewProjection(value: Matrix): Self = StObject.set(x, "viewProjection", value.asInstanceOf[js.Any])
+      inline def setViewProjection(value: Matrix): Self = StObject.set(x, "viewProjection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorld(value: Matrix): Self = StObject.set(x, "world", value.asInstanceOf[js.Any])
+      inline def setWorld(value: Matrix): Self = StObject.set(x, "world", value.asInstanceOf[js.Any])
     }
   }
 }

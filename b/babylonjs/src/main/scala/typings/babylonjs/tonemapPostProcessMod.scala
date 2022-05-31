@@ -5,7 +5,6 @@ import typings.babylonjs.engineMod.Engine
 import typings.babylonjs.postProcessMod.PostProcess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tonemapPostProcessMod {
@@ -44,15 +43,6 @@ object tonemapPostProcessMod {
       /** Defines the required exposure adjustement */
     exposureAdjustment: Double,
       camera: Camera,
-      samplingMode: js.UndefOr[scala.Nothing],
-      engine: Engine
-    ) = this()
-    def this(
-      name: String,
-      _operator: TonemappingOperator,
-      /** Defines the required exposure adjustement */
-    exposureAdjustment: Double,
-      camera: Camera,
       samplingMode: Double,
       engine: Engine
     ) = this()
@@ -62,8 +52,17 @@ object tonemapPostProcessMod {
       /** Defines the required exposure adjustement */
     exposureAdjustment: Double,
       camera: Camera,
-      samplingMode: js.UndefOr[scala.Nothing],
-      engine: js.UndefOr[scala.Nothing],
+      samplingMode: Unit,
+      engine: Engine
+    ) = this()
+    def this(
+      name: String,
+      _operator: TonemappingOperator,
+      /** Defines the required exposure adjustement */
+    exposureAdjustment: Double,
+      camera: Camera,
+      samplingMode: Double,
+      engine: Unit,
       textureFormat: Double
     ) = this()
     def this(
@@ -72,7 +71,7 @@ object tonemapPostProcessMod {
       /** Defines the required exposure adjustement */
     exposureAdjustment: Double,
       camera: Camera,
-      samplingMode: js.UndefOr[scala.Nothing],
+      samplingMode: Double,
       engine: Engine,
       textureFormat: Double
     ) = this()
@@ -82,8 +81,8 @@ object tonemapPostProcessMod {
       /** Defines the required exposure adjustement */
     exposureAdjustment: Double,
       camera: Camera,
-      samplingMode: Double,
-      engine: js.UndefOr[scala.Nothing],
+      samplingMode: Unit,
+      engine: Unit,
       textureFormat: Double
     ) = this()
     def this(
@@ -92,12 +91,12 @@ object tonemapPostProcessMod {
       /** Defines the required exposure adjustement */
     exposureAdjustment: Double,
       camera: Camera,
-      samplingMode: Double,
+      samplingMode: Unit,
       engine: Engine,
       textureFormat: Double
     ) = this()
     
-    var _operator: js.Any = js.native
+    /* private */ var _operator: js.Any = js.native
     
     /** Defines the required exposure adjustement */
     var exposureAdjustment: Double = js.native
@@ -110,26 +109,34 @@ object tonemapPostProcessMod {
   object TonemappingOperator extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[TonemappingOperator with Double] = js.native
+    def apply(value: Double): js.UndefOr[TonemappingOperator & Double] = js.native
     
     /** Hable */
     @js.native
-    sealed trait Hable extends TonemappingOperator
-    /* 0 */ val Hable: typings.babylonjs.tonemapPostProcessMod.TonemappingOperator.Hable with Double = js.native
+    sealed trait Hable
+      extends StObject
+         with TonemappingOperator
+    /* 0 */ val Hable: typings.babylonjs.tonemapPostProcessMod.TonemappingOperator.Hable & Double = js.native
     
     /** HejiDawson */
     @js.native
-    sealed trait HejiDawson extends TonemappingOperator
-    /* 2 */ val HejiDawson: typings.babylonjs.tonemapPostProcessMod.TonemappingOperator.HejiDawson with Double = js.native
+    sealed trait HejiDawson
+      extends StObject
+         with TonemappingOperator
+    /* 2 */ val HejiDawson: typings.babylonjs.tonemapPostProcessMod.TonemappingOperator.HejiDawson & Double = js.native
     
     /** Photographic */
     @js.native
-    sealed trait Photographic extends TonemappingOperator
-    /* 3 */ val Photographic: typings.babylonjs.tonemapPostProcessMod.TonemappingOperator.Photographic with Double = js.native
+    sealed trait Photographic
+      extends StObject
+         with TonemappingOperator
+    /* 3 */ val Photographic: typings.babylonjs.tonemapPostProcessMod.TonemappingOperator.Photographic & Double = js.native
     
     /** Reinhard */
     @js.native
-    sealed trait Reinhard extends TonemappingOperator
-    /* 1 */ val Reinhard: typings.babylonjs.tonemapPostProcessMod.TonemappingOperator.Reinhard with Double = js.native
+    sealed trait Reinhard
+      extends StObject
+         with TonemappingOperator
+    /* 1 */ val Reinhard: typings.babylonjs.tonemapPostProcessMod.TonemappingOperator.Reinhard & Double = js.native
   }
 }

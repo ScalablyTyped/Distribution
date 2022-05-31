@@ -24,6 +24,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("@carbon/type", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object bodyLong01 {
     
     @JSImport("@carbon/type", "bodyLong01")
@@ -647,23 +651,9 @@ object mod {
     inline def serif_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serif")(x.asInstanceOf[js.Any])
   }
   
-  object fontFamily {
-    
-    inline def apply(name: String): FontFamilyString = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[FontFamilyString]
-    
-    @JSImport("@carbon/type", "fontFamily")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def fontFamily(name: String): FontFamilyString = ^.asInstanceOf[js.Dynamic].applyDynamic("fontFamily")(name.asInstanceOf[js.Any]).asInstanceOf[FontFamilyString]
   
-  object fontWeight {
-    
-    inline def apply(weight: String): FontWeightNumber = ^.asInstanceOf[js.Dynamic].apply(weight.asInstanceOf[js.Any]).asInstanceOf[FontWeightNumber]
-    
-    @JSImport("@carbon/type", "fontWeight")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def fontWeight(weight: String): FontWeightNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("fontWeight")(weight.asInstanceOf[js.Any]).asInstanceOf[FontWeightNumber]
   
   object fontWeights {
     
@@ -687,14 +677,7 @@ object mod {
     inline def semibold_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("semibold")(x.asInstanceOf[js.Any])
   }
   
-  object getTypeSize {
-    
-    inline def apply(step: Double): Double = ^.asInstanceOf[js.Dynamic].apply(step.asInstanceOf[js.Any]).asInstanceOf[Double]
-    
-    @JSImport("@carbon/type", "getTypeSize")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def getTypeSize(step: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeSize")(step.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   object heading01 {
     
@@ -856,14 +839,7 @@ object mod {
     inline def lineHeight_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lineHeight")(x.asInstanceOf[js.Any])
   }
   
-  object print {
-    
-    inline def apply(block: js.Object): String = ^.asInstanceOf[js.Dynamic].apply(block.asInstanceOf[js.Any]).asInstanceOf[String]
-    
-    @JSImport("@carbon/type", "print")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def print(block: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("print")(block.asInstanceOf[js.Any]).asInstanceOf[String]
   
   object productiveHeading04 {
     

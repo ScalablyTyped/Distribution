@@ -2,27 +2,28 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CurrentScreenBlock extends NodeMaterialBlock {
+trait CurrentScreenBlock
+  extends StObject
+     with NodeMaterialBlock {
   
-  var _gammaDefineName: js.Any = js.native
+  /* private */ var _gammaDefineName: js.Any = js.native
   
-  var _injectVertexCode: js.Any = js.native
+  /* private */ var _injectVertexCode: js.Any = js.native
   
-  var _linearDefineName: js.Any = js.native
+  /* private */ var _linearDefineName: js.Any = js.native
   
-  var _mainUVName: js.Any = js.native
+  /* private */ var _mainUVName: js.Any = js.native
   
-  var _samplerName: js.Any = js.native
+  /* private */ var _samplerName: js.Any = js.native
   
-  var _tempTextureRead: js.Any = js.native
+  /* private */ var _tempTextureRead: js.Any = js.native
   
-  var _writeOutput: js.Any = js.native
+  /* private */ var _writeOutput: js.Any = js.native
   
-  var _writeTextureRead: js.Any = js.native
+  /* private */ var _writeTextureRead: js.Any = js.native
   
   /**
     * Gets the a output component

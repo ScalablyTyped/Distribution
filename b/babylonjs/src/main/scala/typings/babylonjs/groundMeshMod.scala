@@ -5,7 +5,6 @@ import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.sceneMod.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object groundMeshMod {
@@ -15,16 +14,16 @@ object groundMeshMod {
   class GroundMesh protected () extends Mesh {
     def this(name: String, scene: Scene) = this()
     
-    var _computeHeightQuads: js.Any = js.native
+    /* private */ var _computeHeightQuads: js.Any = js.native
     
-    var _getFacetAt: js.Any = js.native
+    /* private */ var _getFacetAt: js.Any = js.native
     
     /** @hidden */
     var _height: Double = js.native
     
-    var _heightQuads: js.Any = js.native
+    /* private */ var _heightQuads: js.Any = js.native
     
-    var _initHeightQuads: js.Any = js.native
+    /* private */ var _initHeightQuads: js.Any = js.native
     
     /** @hidden */
     var _maxX: Double = js.native
@@ -114,14 +113,16 @@ object groundMeshMod {
   /* static members */
   object GroundMesh {
     
+    @JSImport("babylonjs/Meshes/groundMesh", "GroundMesh")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Parses a serialized ground mesh
       * @param parsedMesh the serialized mesh
       * @param scene the scene to create the ground mesh in
       * @returns the created ground mesh
       */
-    @JSImport("babylonjs/Meshes/groundMesh", "GroundMesh.Parse")
-    @js.native
-    def Parse(parsedMesh: js.Any, scene: Scene): GroundMesh = js.native
+    inline def Parse(parsedMesh: js.Any, scene: Scene): GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedMesh.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[GroundMesh]
   }
 }

@@ -2,27 +2,26 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PolygonMeshBuilder extends StObject {
   
-  var _addToepoint: js.Any = js.native
+  /* private */ var _addToepoint: js.Any = js.native
   
-  var _eholes: js.Any = js.native
+  /* private */ var _eholes: js.Any = js.native
   
-  var _epoints: js.Any = js.native
+  /* private */ var _epoints: js.Any = js.native
   
-  var _holes: js.Any = js.native
+  /* private */ var _holes: js.Any = js.native
   
-  var _name: js.Any = js.native
+  /* private */ var _name: js.Any = js.native
   
-  var _outlinepoints: js.Any = js.native
+  /* private */ var _outlinepoints: js.Any = js.native
   
-  var _points: js.Any = js.native
+  /* private */ var _points: js.Any = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
   /**
     * Adds a whole within the polygon
@@ -42,7 +41,7 @@ trait PolygonMeshBuilder extends StObject {
     * @param depth depth of the polygon
     * @param flip flip of the polygon
     */
-  var addSide: js.Any = js.native
+  /* private */ var addSide: js.Any = js.native
   
   /**
     * Babylon reference to the earcut plugin.
@@ -56,9 +55,9 @@ trait PolygonMeshBuilder extends StObject {
     * @returns the created mesh
     */
   def build(): Mesh = js.native
-  def build(updatable: js.UndefOr[scala.Nothing], depth: Double): Mesh = js.native
   def build(updatable: Boolean): Mesh = js.native
   def build(updatable: Boolean, depth: Double): Mesh = js.native
+  def build(updatable: Unit, depth: Double): Mesh = js.native
   
   /**
     * Creates the polygon

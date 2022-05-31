@@ -6,7 +6,6 @@ import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.sceneMod.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deviceOrientationCameraMod {
@@ -22,15 +21,15 @@ object deviceOrientationCameraMod {
       */
     def this(name: String, position: Vector3, scene: Scene) = this()
     
-    var _disablePointerInputWhenUsingDeviceOrientation: js.Any = js.native
+    /* private */ var _disablePointerInputWhenUsingDeviceOrientation: js.Any = js.native
     
-    var _dragFactor: js.Any = js.native
+    /* private */ var _dragFactor: js.Any = js.native
     
-    var _initialQuaternion: js.Any = js.native
+    /* private */ var _initialQuaternion: js.Any = js.native
     
-    var _quaternionCache: js.Any = js.native
+    /* private */ var _quaternionCache: js.Any = js.native
     
-    var _tmpDragQuaternion: js.Any = js.native
+    /* private */ var _tmpDragQuaternion: js.Any = js.native
     
     /**
       * Gets or sets a boolean indicating that pointer input must be disabled on first orientation sensor update (Default: true)

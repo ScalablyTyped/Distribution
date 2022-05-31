@@ -2,7 +2,6 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("BABYLON.PhysicsGravitationalFieldEvent")
 @js.native
 class PhysicsGravitationalFieldEvent protected ()
-  extends typings.babylonjs.BABYLON.PhysicsGravitationalFieldEvent {
+  extends StObject
+     with typings.babylonjs.BABYLON.PhysicsGravitationalFieldEvent {
   /**
     * Initializes the physics gravitational field event
     * @param _physicsHelper A physics helper

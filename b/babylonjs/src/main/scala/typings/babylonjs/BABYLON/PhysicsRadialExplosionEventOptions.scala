@@ -3,41 +3,38 @@ package typings.babylonjs.BABYLON
 import typings.babylonjs.anon.DiameterSegments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhysicsRadialExplosionEventOptions extends StObject {
   
   /**
     * Sphere options for the radial explosion.
     */
-  def affectedImpostorsCallback(affectedImpostorsWithData: js.Array[PhysicsAffectedImpostorWithData]): Unit = js.native
+  def affectedImpostorsCallback(affectedImpostorsWithData: js.Array[PhysicsAffectedImpostorWithData]): Unit
   
   /**
     * The strenght of the force in correspondence to the distance of the affected object
     */
-  var falloff: PhysicsRadialImpulseFalloff = js.native
+  var falloff: PhysicsRadialImpulseFalloff
   
   /**
     * The radius of the sphere for the radial explosion.
     */
-  var radius: Double = js.native
+  var radius: Double
   
   /**
     * Sphere options for the radial explosion.
     */
-  var sphere: DiameterSegments = js.native
+  var sphere: DiameterSegments
   
   /**
     * The strenth of the explosion.
     */
-  var strength: Double = js.native
+  var strength: Double
 }
 object PhysicsRadialExplosionEventOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     affectedImpostorsCallback: js.Array[PhysicsAffectedImpostorWithData] => Unit,
     falloff: PhysicsRadialImpulseFalloff,
     radius: Double,
@@ -48,22 +45,16 @@ object PhysicsRadialExplosionEventOptions {
     __obj.asInstanceOf[PhysicsRadialExplosionEventOptions]
   }
   
-  @scala.inline
-  implicit class PhysicsRadialExplosionEventOptionsMutableBuilder[Self <: PhysicsRadialExplosionEventOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PhysicsRadialExplosionEventOptions](x: Self) {
     
-    @scala.inline
-    def setAffectedImpostorsCallback(value: js.Array[PhysicsAffectedImpostorWithData] => Unit): Self = StObject.set(x, "affectedImpostorsCallback", js.Any.fromFunction1(value))
+    inline def setAffectedImpostorsCallback(value: js.Array[PhysicsAffectedImpostorWithData] => Unit): Self = StObject.set(x, "affectedImpostorsCallback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFalloff(value: PhysicsRadialImpulseFalloff): Self = StObject.set(x, "falloff", value.asInstanceOf[js.Any])
+    inline def setFalloff(value: PhysicsRadialImpulseFalloff): Self = StObject.set(x, "falloff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSphere(value: DiameterSegments): Self = StObject.set(x, "sphere", value.asInstanceOf[js.Any])
+    inline def setSphere(value: DiameterSegments): Self = StObject.set(x, "sphere", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrength(value: Double): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
+    inline def setStrength(value: Double): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
   }
 }

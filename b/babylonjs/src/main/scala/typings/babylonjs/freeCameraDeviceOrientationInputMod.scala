@@ -6,7 +6,6 @@ import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object freeCameraDeviceOrientationInputMod {
@@ -17,30 +16,32 @@ object freeCameraDeviceOrientationInputMod {
     * Instantiates a new input
     * @see https://doc.babylonjs.com/how_to/customizing_camera_inputs
     */
-  class FreeCameraDeviceOrientationInput () extends ICameraInput[FreeCamera] {
+  class FreeCameraDeviceOrientationInput ()
+    extends StObject
+       with ICameraInput[FreeCamera] {
     
-    var _alpha: js.Any = js.native
+    /* private */ var _alpha: js.Any = js.native
     
-    var _beta: js.Any = js.native
+    /* private */ var _beta: js.Any = js.native
     
-    var _camera: js.Any = js.native
+    /* private */ var _camera: js.Any = js.native
     
-    var _constantTranform: js.Any = js.native
+    /* private */ var _constantTranform: js.Any = js.native
     
-    var _deviceOrientation: js.Any = js.native
+    /* private */ var _deviceOrientation: js.Any = js.native
     
-    var _gamma: js.Any = js.native
+    /* private */ var _gamma: js.Any = js.native
     
     /**
       * @hidden
       */
     var _onDeviceOrientationChangedObservable: Observable[Unit] = js.native
     
-    var _orientationChanged: js.Any = js.native
+    /* private */ var _orientationChanged: js.Any = js.native
     
-    var _screenOrientationAngle: js.Any = js.native
+    /* private */ var _screenOrientationAngle: js.Any = js.native
     
-    var _screenQuaternion: js.Any = js.native
+    /* private */ var _screenQuaternion: js.Any = js.native
     
     /**
       * Define the camera controlled by the input.
@@ -58,55 +59,49 @@ object freeCameraDeviceOrientationInputMod {
   /* static members */
   object FreeCameraDeviceOrientationInput {
     
+    @JSImport("babylonjs/Cameras/Inputs/freeCameraDeviceOrientationInput", "FreeCameraDeviceOrientationInput")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Can be used to detect if a device orientation sensor is available on a device
       * @param timeout amount of time in milliseconds to wait for a response from the sensor (default: infinite)
       * @returns a promise that will resolve on orientation change
       */
-    @JSImport("babylonjs/Cameras/Inputs/freeCameraDeviceOrientationInput", "FreeCameraDeviceOrientationInput.WaitForOrientationChangeAsync")
-    @js.native
-    def WaitForOrientationChangeAsync(): js.Promise[_] = js.native
-    @JSImport("babylonjs/Cameras/Inputs/freeCameraDeviceOrientationInput", "FreeCameraDeviceOrientationInput.WaitForOrientationChangeAsync")
-    @js.native
-    def WaitForOrientationChangeAsync(timeout: Double): js.Promise[_] = js.native
+    inline def WaitForOrientationChangeAsync(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("WaitForOrientationChangeAsync")().asInstanceOf[js.Promise[js.Any]]
+    inline def WaitForOrientationChangeAsync(timeout: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("WaitForOrientationChangeAsync")(timeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   }
   
   /* augmented module */
   object babylonjsCamerasFreeCameraInputsManagerAugmentingMod {
     
-    @js.native
     trait FreeCameraInputsManager extends StObject {
       
       /**
         * @hidden
         */
-      var _deviceOrientationInput: Nullable[FreeCameraDeviceOrientationInput] = js.native
+      var _deviceOrientationInput: Nullable[FreeCameraDeviceOrientationInput]
       
       /**
         * Add orientation input support to the input manager.
         * @returns the current input manager
         */
-      def addDeviceOrientation(): FreeCameraInputsManager = js.native
+      def addDeviceOrientation(): FreeCameraInputsManager
     }
     object FreeCameraInputsManager {
       
-      @scala.inline
-      def apply(addDeviceOrientation: () => FreeCameraInputsManager): FreeCameraInputsManager = {
-        val __obj = js.Dynamic.literal(addDeviceOrientation = js.Any.fromFunction0(addDeviceOrientation))
+      inline def apply(addDeviceOrientation: () => FreeCameraInputsManager): FreeCameraInputsManager = {
+        val __obj = js.Dynamic.literal(addDeviceOrientation = js.Any.fromFunction0(addDeviceOrientation), _deviceOrientationInput = null)
         __obj.asInstanceOf[FreeCameraInputsManager]
       }
       
-      @scala.inline
-      implicit class FreeCameraInputsManagerMutableBuilder[Self <: FreeCameraInputsManager] (val x: Self) extends AnyVal {
+      extension [Self <: FreeCameraInputsManager](x: Self) {
         
-        @scala.inline
-        def setAddDeviceOrientation(value: () => FreeCameraInputsManager): Self = StObject.set(x, "addDeviceOrientation", js.Any.fromFunction0(value))
+        inline def setAddDeviceOrientation(value: () => FreeCameraInputsManager): Self = StObject.set(x, "addDeviceOrientation", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def set_deviceOrientationInput(value: Nullable[FreeCameraDeviceOrientationInput]): Self = StObject.set(x, "_deviceOrientationInput", value.asInstanceOf[js.Any])
+        inline def set_deviceOrientationInput(value: Nullable[FreeCameraDeviceOrientationInput]): Self = StObject.set(x, "_deviceOrientationInput", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set_deviceOrientationInputNull: Self = StObject.set(x, "_deviceOrientationInput", null)
+        inline def set_deviceOrientationInputNull: Self = StObject.set(x, "_deviceOrientationInput", null)
       }
     }
   }

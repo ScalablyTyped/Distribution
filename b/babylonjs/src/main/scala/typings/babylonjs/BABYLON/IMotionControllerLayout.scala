@@ -5,16 +5,14 @@ import typings.babylonjs.babylonjsStrings._empty
 import typings.babylonjs.babylonjsStrings.`xr-standard`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMotionControllerLayout extends StObject {
   
   /**
     * Path to load the assets. Usually relative to the base path
     */
-  var assetPath: String = js.native
+  var assetPath: String
   
   /**
     * Available components (unsorted)
@@ -22,27 +20,26 @@ trait IMotionControllerLayout extends StObject {
   var components: /**
     * A map of component Ids
     */
-  org.scalablytyped.runtime.StringDictionary[TouchPointNodeName] = js.native
+  org.scalablytyped.runtime.StringDictionary[TouchPointNodeName]
   
   /**
     * Is it xr standard mapping or not
     */
-  var gamepadMapping: _empty | `xr-standard` = js.native
+  var gamepadMapping: _empty | `xr-standard`
   
   /**
     * Base root node of this entire model
     */
-  var rootNodeName: String = js.native
+  var rootNodeName: String
   
   /**
     * Defines the main button component id
     */
-  var selectComponentId: String = js.native
+  var selectComponentId: String
 }
 object IMotionControllerLayout {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     assetPath: String,
     components: /**
     * A map of component Ids
@@ -56,27 +53,21 @@ object IMotionControllerLayout {
     __obj.asInstanceOf[IMotionControllerLayout]
   }
   
-  @scala.inline
-  implicit class IMotionControllerLayoutMutableBuilder[Self <: IMotionControllerLayout] (val x: Self) extends AnyVal {
+  extension [Self <: IMotionControllerLayout](x: Self) {
     
-    @scala.inline
-    def setAssetPath(value: String): Self = StObject.set(x, "assetPath", value.asInstanceOf[js.Any])
+    inline def setAssetPath(value: String): Self = StObject.set(x, "assetPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponents(
+    inline def setComponents(
       value: /**
       * A map of component Ids
       */
     org.scalablytyped.runtime.StringDictionary[TouchPointNodeName]
     ): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGamepadMapping(value: _empty | `xr-standard`): Self = StObject.set(x, "gamepadMapping", value.asInstanceOf[js.Any])
+    inline def setGamepadMapping(value: _empty | `xr-standard`): Self = StObject.set(x, "gamepadMapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootNodeName(value: String): Self = StObject.set(x, "rootNodeName", value.asInstanceOf[js.Any])
+    inline def setRootNodeName(value: String): Self = StObject.set(x, "rootNodeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectComponentId(value: String): Self = StObject.set(x, "selectComponentId", value.asInstanceOf[js.Any])
+    inline def setSelectComponentId(value: String): Self = StObject.set(x, "selectComponentId", value.asInstanceOf[js.Any])
   }
 }

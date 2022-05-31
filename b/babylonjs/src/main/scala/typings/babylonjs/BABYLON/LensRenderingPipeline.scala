@@ -2,11 +2,12 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LensRenderingPipeline extends PostProcessRenderPipeline {
+trait LensRenderingPipeline
+  extends StObject
+     with PostProcessRenderPipeline {
   
   /**
     * @ignore
@@ -26,49 +27,49 @@ trait LensRenderingPipeline extends PostProcessRenderPipeline {
     */
   var LensDepthOfFieldEffect: String = js.native
   
-  var _blurNoise: js.Any = js.native
+  /* private */ var _blurNoise: js.Any = js.native
   
-  var _chromaticAberration: js.Any = js.native
+  /* private */ var _chromaticAberration: js.Any = js.native
   
-  var _chromaticAberrationPostProcess: js.Any = js.native
+  /* private */ var _chromaticAberrationPostProcess: js.Any = js.native
   
-  var _createChromaticAberrationPostProcess: js.Any = js.native
+  /* private */ var _createChromaticAberrationPostProcess: js.Any = js.native
   
-  var _createDepthOfFieldPostProcess: js.Any = js.native
+  /* private */ var _createDepthOfFieldPostProcess: js.Any = js.native
   
-  var _createGrainTexture: js.Any = js.native
+  /* private */ var _createGrainTexture: js.Any = js.native
   
-  var _createHighlightsPostProcess: js.Any = js.native
+  /* private */ var _createHighlightsPostProcess: js.Any = js.native
   
-  var _depthOfFieldPostProcess: js.Any = js.native
+  /* private */ var _depthOfFieldPostProcess: js.Any = js.native
   
-  var _depthTexture: js.Any = js.native
+  /* private */ var _depthTexture: js.Any = js.native
   
-  var _distortion: js.Any = js.native
+  /* private */ var _distortion: js.Any = js.native
   
-  var _dofAperture: js.Any = js.native
+  /* private */ var _dofAperture: js.Any = js.native
   
-  var _dofDarken: js.Any = js.native
+  /* private */ var _dofDarken: js.Any = js.native
   
-  var _dofDistance: js.Any = js.native
+  /* private */ var _dofDistance: js.Any = js.native
   
-  var _dofPentagon: js.Any = js.native
+  /* private */ var _dofPentagon: js.Any = js.native
   
-  var _edgeBlur: js.Any = js.native
+  /* private */ var _edgeBlur: js.Any = js.native
   
-  var _grainAmount: js.Any = js.native
+  /* private */ var _grainAmount: js.Any = js.native
   
-  var _grainTexture: js.Any = js.native
+  /* private */ var _grainTexture: js.Any = js.native
   
-  var _highlightsGain: js.Any = js.native
+  /* private */ var _highlightsGain: js.Any = js.native
   
-  var _highlightsPostProcess: js.Any = js.native
+  /* private */ var _highlightsPostProcess: js.Any = js.native
   
-  var _highlightsThreshold: js.Any = js.native
+  /* private */ var _highlightsThreshold: js.Any = js.native
   
-  var _pentagonBokehIsEnabled: js.Any = js.native
+  /* private */ var _pentagonBokehIsEnabled: js.Any = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
   /**
     * Gets or sets a boolean indicating if blur noise is enabled

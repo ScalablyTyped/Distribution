@@ -246,10 +246,4 @@ object wsMod {
   }
   
   type TimerHandler = js.Function0[Unit]
-  
-  /**
-    * This module provides a WebSocket client implementing the WebSocket protocol.
-    * https://k6.io/docs/javascript-api/k6-ws
-    */
-  object ws
 }

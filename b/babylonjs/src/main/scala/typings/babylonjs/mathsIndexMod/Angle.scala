@@ -3,7 +3,6 @@ package typings.babylonjs.mathsIndexMod
 import typings.babylonjs.typesMod.DeepImmutable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Maths/index", "Angle")
@@ -19,34 +18,32 @@ class Angle protected ()
 /* static members */
 object Angle {
   
+  @JSImport("babylonjs/Maths/index", "Angle")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Gets a new Angle object valued with the gradient angle, in radians, of the line joining two points
     * @param a defines first point as the origin
     * @param b defines point
     * @returns a new Angle
     */
-  @JSImport("babylonjs/Maths/index", "Angle.BetweenTwoPoints")
-  @js.native
-  def BetweenTwoPoints(
+  inline def BetweenTwoPoints(
     a: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2],
     b: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2]
-  ): typings.babylonjs.mathPathMod.Angle = js.native
+  ): typings.babylonjs.mathPathMod.Angle = (^.asInstanceOf[js.Dynamic].applyDynamic("BetweenTwoPoints")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathPathMod.Angle]
   
   /**
     * Gets a new Angle object from the given float in degrees
     * @param degrees defines the angle value in degrees
     * @returns a new Angle
     */
-  @JSImport("babylonjs/Maths/index", "Angle.FromDegrees")
-  @js.native
-  def FromDegrees(degrees: Double): typings.babylonjs.mathPathMod.Angle = js.native
+  inline def FromDegrees(degrees: Double): typings.babylonjs.mathPathMod.Angle = ^.asInstanceOf[js.Dynamic].applyDynamic("FromDegrees")(degrees.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathPathMod.Angle]
   
   /**
     * Gets a new Angle object from the given float in radians
     * @param radians defines the angle value in radians
     * @returns a new Angle
     */
-  @JSImport("babylonjs/Maths/index", "Angle.FromRadians")
-  @js.native
-  def FromRadians(radians: Double): typings.babylonjs.mathPathMod.Angle = js.native
+  inline def FromRadians(radians: Double): typings.babylonjs.mathPathMod.Angle = ^.asInstanceOf[js.Dynamic].applyDynamic("FromRadians")(radians.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathPathMod.Angle]
 }

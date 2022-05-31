@@ -4,8 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("webix.ui.combo")
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.webix.webix.ui.baseview because Already inherited
+- typings.webix.webix.ui.combo because var conflicts: $allowsClear, $compareValue_Original, $height, $prepareValue_Original, $renderIcon_Original, $render_Original, $scope, $skin_Original, $view, $width, config, name, on_click_Original, touchable. Inlined  */ @JSGlobal("webix.ui.combo")
 @js.native
 class combo ()
-  extends StObject
-     with typings.webix.webix.ui.combo
+  extends typings.webix.mod.ui.combo

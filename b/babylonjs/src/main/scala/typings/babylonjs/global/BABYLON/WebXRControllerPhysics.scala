@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.WebXRControllerPhysics")
 @js.native
 class WebXRControllerPhysics protected ()
-  extends typings.babylonjs.BABYLON.WebXRControllerPhysics {
+  extends StObject
+     with typings.babylonjs.BABYLON.WebXRControllerPhysics {
   /**
     * Construct a new Controller Physics Feature
     * @param _xrSessionManager the corresponding xr session manager
@@ -18,6 +18,12 @@ class WebXRControllerPhysics protected ()
     _xrSessionManager: typings.babylonjs.BABYLON.WebXRSessionManager,
     _options: typings.babylonjs.BABYLON.IWebXRControllerPhysicsOptions
   ) = this()
+  
+  /**
+    * Releases all held resources
+    */
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
 }
 /* static members */
 object WebXRControllerPhysics {

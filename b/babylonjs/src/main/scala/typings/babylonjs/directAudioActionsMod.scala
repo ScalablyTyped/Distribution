@@ -5,7 +5,6 @@ import typings.babylonjs.conditionMod.Condition
 import typings.babylonjs.soundMod.Sound
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object directAudioActionsMod {
@@ -22,7 +21,7 @@ object directAudioActionsMod {
     def this(triggerOptions: js.Any, sound: Sound) = this()
     def this(triggerOptions: js.Any, sound: Sound, condition: Condition) = this()
     
-    var _sound: js.Any = js.native
+    /* private */ var _sound: js.Any = js.native
   }
   
   @JSImport("babylonjs/Actions/directAudioActions", "StopSoundAction")
@@ -37,6 +36,6 @@ object directAudioActionsMod {
     def this(triggerOptions: js.Any, sound: Sound) = this()
     def this(triggerOptions: js.Any, sound: Sound, condition: Condition) = this()
     
-    var _sound: js.Any = js.native
+    /* private */ var _sound: js.Any = js.native
   }
 }

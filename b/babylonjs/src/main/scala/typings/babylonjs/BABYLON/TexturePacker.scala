@@ -2,7 +2,6 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -16,47 +15,47 @@ trait TexturePacker extends StObject {
     * @param dtUnits is 1/dtSize
     * @param update flag to update the input meshes
     */
-  var _calculateMeshUVFrames: js.Any = js.native
+  /* private */ var _calculateMeshUVFrames: js.Any = js.native
   
   /**
     * Calculates the Size of the Channel Sets
     * @returns Vector2
     */
-  var _calculateSize: js.Any = js.native
+  /* private */ var _calculateSize: js.Any = js.native
   
   /**
     * Starts the package process
     * @param resolve The promises resolution function
     * @returns TexturePacker
     */
-  var _createFrames: js.Any = js.native
+  /* private */ var _createFrames: js.Any = js.native
   
   /** The expected number of textures the system is parsing. */
-  var _expecting: js.Any = js.native
+  /* private */ var _expecting: js.Any = js.native
   
   /**
     * Calculates the frames Offset.
     * @param index of the frame
     * @returns Vector2
     */
-  var _getFrameOffset: js.Any = js.native
+  /* private */ var _getFrameOffset: js.Any = js.native
   
   /** The padding value from Math.ceil(frameSize * paddingRatio) */
-  var _paddingValue: js.Any = js.native
+  /* private */ var _paddingValue: js.Any = js.native
   
   /**
     * Updates a Mesh to the frame data
     * @param mesh that is the target
     * @param frameID or the frame index
     */
-  var _updateMeshUV: js.Any = js.native
+  /* private */ var _updateMeshUV: js.Any = js.native
   
   /**
     * Updates a Meshes materials to use the texture packer channels
     * @param m is the mesh to target
     * @param force all channels on the packer to be set.
     */
-  var _updateTextureReferences: js.Any = js.native
+  /* private */ var _updateTextureReferences: js.Any = js.native
   
   /**
     * Disposes all textures associated with this packer
@@ -69,9 +68,9 @@ trait TexturePacker extends StObject {
     * @param quality of the image if downloading as jpeg, Ranges from >0 to 1.
     */
   def download(): Unit = js.native
-  def download(imageType: js.UndefOr[scala.Nothing], quality: Double): Unit = js.native
   def download(imageType: String): Unit = js.native
   def download(imageType: String, quality: Double): Unit = js.native
+  def download(imageType: Unit, quality: Double): Unit = js.native
   
   /** The Container array for the frames that are generated */
   var frames: js.Array[TexturePackerFrame] = js.native

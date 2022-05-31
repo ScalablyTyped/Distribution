@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object filesInputStoreMod {
@@ -25,7 +24,6 @@ object filesInputStoreMod {
     @JSImport("babylonjs/Misc/filesInputStore", "FilesInputStore.FilesToLoad")
     @js.native
     def FilesToLoad: StringDictionary[File] = js.native
-    @scala.inline
-    def FilesToLoad_=(x: StringDictionary[File]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FilesToLoad")(x.asInstanceOf[js.Any])
+    inline def FilesToLoad_=(x: StringDictionary[File]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FilesToLoad")(x.asInstanceOf[js.Any])
   }
 }

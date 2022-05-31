@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "remark-parse"
-version := "9.0.0-9ff2ad"
+version := "9.0.0-2c5b84"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "mdast" % "3.0-dt-20190907Z-5a7184",
-  "org.scalablytyped" %%% "mdast-util-from-markdown" % "0.8.1-646904",
-  "org.scalablytyped" %%% "micromark" % "2.10.1-cc4819",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-e00132",
-  "org.scalablytyped" %%% "std" % "4.1-2f6855",
-  "org.scalablytyped" %%% "unified" % "8.4.2-27c288",
-  "org.scalablytyped" %%% "unist" % "2.0-dt-20190213Z-61e58c",
-  "org.scalablytyped" %%% "vfile" % "4.2.0-8c5350",
-  "org.scalablytyped" %%% "vfile-message" % "2.0.4-13580d")
+  "org.scalablytyped" %%% "mdast" % "3.0-dt-20190907Z-759e3a",
+  "org.scalablytyped" %%% "mdast-util-from-markdown" % "0.8.1-a4a4f5",
+  "org.scalablytyped" %%% "micromark" % "2.10.1-55cd6b",
+  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-11c649",
+  "org.scalablytyped" %%% "std" % "4.1-f7e8ab",
+  "org.scalablytyped" %%% "unified" % "8.4.2-5e2c9e",
+  "org.scalablytyped" %%% "unist" % "2.0-dt-20190213Z-97095f",
+  "org.scalablytyped" %%% "vfile" % "4.2.0-5c0bd1",
+  "org.scalablytyped" %%% "vfile-message" % "2.0.4-454368")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

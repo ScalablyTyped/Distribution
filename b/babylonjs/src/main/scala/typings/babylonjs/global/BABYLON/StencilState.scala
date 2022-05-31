@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.StencilState")
 @js.native
 class StencilState ()
-  extends typings.babylonjs.BABYLON.StencilState
+  extends StObject
+     with typings.babylonjs.BABYLON.StencilState
 /* static members */
 object StencilState {
   

@@ -6,7 +6,6 @@ import typings.std.ArrayLike
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.Vector3")
@@ -18,14 +17,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param z defines the third coordinates (on Z axis)
   */
 class Vector3 ()
-  extends typings.babylonjs.BABYLON.Vector3 {
+  extends StObject
+     with typings.babylonjs.BABYLON.Vector3 {
   def this(x: Double) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
   def this(x: Double, y: Double) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double) = this()
-  def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double) = this()
+  def this(x: Unit, y: Double) = this()
   def this(x: Double, y: Double, z: Double) = this()
+  def this(x: Double, y: Unit, z: Double) = this()
+  def this(x: Unit, y: Double, z: Double) = this()
+  def this(x: Unit, y: Unit, z: Double) = this()
 }
 /* static members */
 object Vector3 {
@@ -39,12 +39,8 @@ object Vector3 {
     * @param rightHandedSystem is the scene right-handed (negative-z)
     * @returns a new forward Vector3
     */
-  @JSGlobal("BABYLON.Vector3.Backward")
-  @js.native
-  def Backward(): typings.babylonjs.BABYLON.Vector3 = js.native
-  @JSGlobal("BABYLON.Vector3.Backward")
-  @js.native
-  def Backward(rightHandedSystem: Boolean): typings.babylonjs.BABYLON.Vector3 = js.native
+  inline def Backward(): typings.babylonjs.BABYLON.Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Backward")().asInstanceOf[typings.babylonjs.BABYLON.Vector3]
+  inline def Backward(rightHandedSystem: Boolean): typings.babylonjs.BABYLON.Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Backward")(rightHandedSystem.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.Vector3]
   
   /**
     * Returns a new Vector3 located for "amount" on the CatmullRom interpolation spline defined by the vectors "value1", "value2", "value3", "value4"
@@ -55,15 +51,13 @@ object Vector3 {
     * @param amount defines the amount on the spline to use
     * @returns the new Vector3
     */
-  @JSGlobal("BABYLON.Vector3.CatmullRom")
-  @js.native
-  def CatmullRom(
+  inline def CatmullRom(
     value1: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     value2: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     value3: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     value4: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     amount: Double
-  ): typings.babylonjs.BABYLON.Vector3 = js.native
+  ): typings.babylonjs.BABYLON.Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("CatmullRom")(value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], value3.asInstanceOf[js.Any], value4.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Vector3]
   
   /**
     * Returns a new Vector3 located at the center between "value1" and "value2"
@@ -71,12 +65,10 @@ object Vector3 {
     * @param value2 defines the second operand
     * @returns the new Vector3
     */
-  @JSGlobal("BABYLON.Vector3.Center")
-  @js.native
-  def Center(
+  inline def Center(
     value1: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     value2: DeepImmutable[typings.babylonjs.BABYLON.Vector3]
-  ): typings.babylonjs.BABYLON.Vector3 = js.native
+  ): typings.babylonjs.BABYLON.Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("Center")(value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Vector3]
   
   /**
     * Checks if a given vector is inside a specific range
@@ -84,13 +76,11 @@ object Vector3 {
     * @param min defines the minimum range
     * @param max defines the maximum range
     */
-  @JSGlobal("BABYLON.Vector3.CheckExtends")
-  @js.native
-  def CheckExtends(
+  inline def CheckExtends(
     v: typings.babylonjs.BABYLON.Vector3,
     min: typings.babylonjs.BABYLON.Vector3,
     max: typings.babylonjs.BABYLON.Vector3
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CheckExtends")(v.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Returns a new Vector3 set with the coordinates of "value", if the vector "value" is in the cube defined by the vectors "min" and "max"
@@ -101,13 +91,11 @@ object Vector3 {
     * @param max defines the upper range value
     * @returns the new Vector3
     */
-  @JSGlobal("BABYLON.Vector3.Clamp")
-  @js.native
-  def Clamp(
+  inline def Clamp(
     value: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     min: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     max: DeepImmutable[typings.babylonjs.BABYLON.Vector3]
-  ): typings.babylonjs.BABYLON.Vector3 = js.native
+  ): typings.babylonjs.BABYLON.Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("Clamp")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Vector3]
   
   /**
     * Sets the given vector "result" with the coordinates of "value", if the vector "value" is in the cube defined by the vectors "min" and "max"
@@ -118,14 +106,12 @@ object Vector3 {
     * @param max defines the upper range value
     * @param result defines the Vector3 where to store the result
     */
-  @JSGlobal("BABYLON.Vector3.ClampToRef")
-  @js.native
-  def ClampToRef(
+  inline def ClampToRef(
     value: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     min: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     max: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     result: typings.babylonjs.BABYLON.Vector3
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ClampToRef")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Returns a new Vector3 as the cross product of the vectors "left" and "right"
@@ -134,12 +120,10 @@ object Vector3 {
     * @param right defines the right operand
     * @returns the cross product
     */
-  @JSGlobal("BABYLON.Vector3.Cross")
-  @js.native
-  def Cross(
+  inline def Cross(
     left: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     right: DeepImmutable[typings.babylonjs.BABYLON.Vector3]
-  ): typings.babylonjs.BABYLON.Vector3 = js.native
+  ): typings.babylonjs.BABYLON.Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("Cross")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Vector3]
   
   /**
     * Sets the given vector "result" with the cross product of "left" and "right"
@@ -148,13 +132,11 @@ object Vector3 {
     * @param right defines the right operand
     * @param result defines the Vector3 where to store the result
     */
-  @JSGlobal("BABYLON.Vector3.CrossToRef")
-  @js.native
-  def CrossToRef(
+  inline def CrossToRef(
     left: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     right: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     result: typings.babylonjs.BABYLON.Vector3
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CrossToRef")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Returns the distance between the vectors "value1" and "value2"
@@ -162,12 +144,10 @@ object Vector3 {
     * @param value2 defines the second operand
     * @returns the distance
     */
-  @JSGlobal("BABYLON.Vector3.Distance")
-  @js.native
-  def Distance(
+  inline def Distance(
     value1: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     value2: DeepImmutable[typings.babylonjs.BABYLON.Vector3]
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Distance")(value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Returns the squared distance between the vectors "value1" and "value2"
@@ -175,12 +155,10 @@ object Vector3 {
     * @param value2 defines the second operand
     * @returns the squared distance
     */
-  @JSGlobal("BABYLON.Vector3.DistanceSquared")
-  @js.native
-  def DistanceSquared(
+  inline def DistanceSquared(
     value1: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     value2: DeepImmutable[typings.babylonjs.BABYLON.Vector3]
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("DistanceSquared")(value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Returns the dot product (float) between the vectors "left" and "right"
@@ -188,32 +166,24 @@ object Vector3 {
     * @param right defines the right operand
     * @returns the dot product
     */
-  @JSGlobal("BABYLON.Vector3.Dot")
-  @js.native
-  def Dot(
+  inline def Dot(
     left: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     right: DeepImmutable[typings.babylonjs.BABYLON.Vector3]
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Dot")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Returns a new Vector3 set to (0.0, -1.0, 0.0)
     * @returns a new down Vector3
     */
-  @JSGlobal("BABYLON.Vector3.Down")
-  @js.native
-  def Down(): typings.babylonjs.BABYLON.Vector3 = js.native
+  inline def Down(): typings.babylonjs.BABYLON.Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Down")().asInstanceOf[typings.babylonjs.BABYLON.Vector3]
   
   /**
     * Returns a new Vector3 set to (0.0, 0.0, 1.0)
     * @param rightHandedSystem is the scene right-handed (negative z)
     * @returns a new forward Vector3
     */
-  @JSGlobal("BABYLON.Vector3.Forward")
-  @js.native
-  def Forward(): typings.babylonjs.BABYLON.Vector3 = js.native
-  @JSGlobal("BABYLON.Vector3.Forward")
-  @js.native
-  def Forward(rightHandedSystem: Boolean): typings.babylonjs.BABYLON.Vector3 = js.native
+  inline def Forward(): typings.babylonjs.BABYLON.Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Forward")().asInstanceOf[typings.babylonjs.BABYLON.Vector3]
+  inline def Forward(rightHandedSystem: Boolean): typings.babylonjs.BABYLON.Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Forward")(rightHandedSystem.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.Vector3]
   
   /**
     * Returns a new Vector3 set from the index "offset" of the given array
@@ -221,12 +191,8 @@ object Vector3 {
     * @param offset defines the offset in the source array
     * @returns the new Vector3
     */
-  @JSGlobal("BABYLON.Vector3.FromArray")
-  @js.native
-  def FromArray(array: DeepImmutable[ArrayLike[Double]]): typings.babylonjs.BABYLON.Vector3 = js.native
-  @JSGlobal("BABYLON.Vector3.FromArray")
-  @js.native
-  def FromArray(array: DeepImmutable[ArrayLike[Double]], offset: Double): typings.babylonjs.BABYLON.Vector3 = js.native
+  inline def FromArray(array: DeepImmutable[ArrayLike[Double]]): typings.babylonjs.BABYLON.Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("FromArray")(array.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.Vector3]
+  inline def FromArray(array: DeepImmutable[ArrayLike[Double]], offset: Double): typings.babylonjs.BABYLON.Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("FromArray")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Vector3]
   
   /**
     * Sets the given vector "result" with the element values from the index "offset" of the given array
@@ -234,9 +200,7 @@ object Vector3 {
     * @param offset defines the offset in the source array
     * @param result defines the Vector3 where to store the result
     */
-  @JSGlobal("BABYLON.Vector3.FromArrayToRef")
-  @js.native
-  def FromArrayToRef(array: DeepImmutable[ArrayLike[Double]], offset: Double, result: typings.babylonjs.BABYLON.Vector3): Unit = js.native
+  inline def FromArrayToRef(array: DeepImmutable[ArrayLike[Double]], offset: Double, result: typings.babylonjs.BABYLON.Vector3): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromArrayToRef")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Returns a new Vector3 set from the index "offset" of the given Float32Array
@@ -245,12 +209,8 @@ object Vector3 {
     * @returns the new Vector3
     * @deprecated Please use FromArray instead.
     */
-  @JSGlobal("BABYLON.Vector3.FromFloatArray")
-  @js.native
-  def FromFloatArray(array: DeepImmutable[Float32Array]): typings.babylonjs.BABYLON.Vector3 = js.native
-  @JSGlobal("BABYLON.Vector3.FromFloatArray")
-  @js.native
-  def FromFloatArray(array: DeepImmutable[Float32Array], offset: Double): typings.babylonjs.BABYLON.Vector3 = js.native
+  inline def FromFloatArray(array: DeepImmutable[Float32Array]): typings.babylonjs.BABYLON.Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("FromFloatArray")(array.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.Vector3]
+  inline def FromFloatArray(array: DeepImmutable[Float32Array], offset: Double): typings.babylonjs.BABYLON.Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("FromFloatArray")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Vector3]
   
   /**
     * Sets the given vector "result" with the element values from the index "offset" of the given Float32Array
@@ -259,9 +219,7 @@ object Vector3 {
     * @param result defines the Vector3 where to store the result
     * @deprecated Please use FromArrayToRef instead.
     */
-  @JSGlobal("BABYLON.Vector3.FromFloatArrayToRef")
-  @js.native
-  def FromFloatArrayToRef(array: DeepImmutable[Float32Array], offset: Double, result: typings.babylonjs.BABYLON.Vector3): Unit = js.native
+  inline def FromFloatArrayToRef(array: DeepImmutable[Float32Array], offset: Double, result: typings.babylonjs.BABYLON.Vector3): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromFloatArrayToRef")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the given vector "result" with the given floats.
@@ -270,9 +228,7 @@ object Vector3 {
     * @param z defines the z coordinate of the source
     * @param result defines the Vector3 where to store the result
     */
-  @JSGlobal("BABYLON.Vector3.FromFloatsToRef")
-  @js.native
-  def FromFloatsToRef(x: Double, y: Double, z: Double, result: typings.babylonjs.BABYLON.Vector3): Unit = js.native
+  inline def FromFloatsToRef(x: Double, y: Double, z: Double, result: typings.babylonjs.BABYLON.Vector3): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromFloatsToRef")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Get angle between two vectors
@@ -281,13 +237,11 @@ object Vector3 {
     * @param normal direction of the normal
     * @return the angle between vector0 and vector1
     */
-  @JSGlobal("BABYLON.Vector3.GetAngleBetweenVectors")
-  @js.native
-  def GetAngleBetweenVectors(
+  inline def GetAngleBetweenVectors(
     vector0: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     vector1: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     normal: DeepImmutable[typings.babylonjs.BABYLON.Vector3]
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAngleBetweenVectors")(vector0.asInstanceOf[js.Any], vector1.asInstanceOf[js.Any], normal.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Get the clip factor between two vectors
@@ -297,14 +251,12 @@ object Vector3 {
     * @param size defines the size along the axis
     * @returns the clip factor
     */
-  @JSGlobal("BABYLON.Vector3.GetClipFactor")
-  @js.native
-  def GetClipFactor(
+  inline def GetClipFactor(
     vector0: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     vector1: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     axis: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     size: Double
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("GetClipFactor")(vector0.asInstanceOf[js.Any], vector1.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Returns a new Vector3 located for "amount" (float) on the Hermite interpolation spline defined by the vectors "value1", "tangent1", "value2", "tangent2"
@@ -315,23 +267,19 @@ object Vector3 {
     * @param amount defines the amount on the interpolation spline (between 0 and 1)
     * @returns the new Vector3
     */
-  @JSGlobal("BABYLON.Vector3.Hermite")
-  @js.native
-  def Hermite(
+  inline def Hermite(
     value1: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     tangent1: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     value2: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     tangent2: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     amount: Double
-  ): typings.babylonjs.BABYLON.Vector3 = js.native
+  ): typings.babylonjs.BABYLON.Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Vector3]
   
   /**
     * Returns a new Vector3 set to (-1.0, 0.0, 0.0)
     * @returns a new left Vector3
     */
-  @JSGlobal("BABYLON.Vector3.Left")
-  @js.native
-  def Left(): typings.babylonjs.BABYLON.Vector3 = js.native
+  inline def Left(): typings.babylonjs.BABYLON.Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Left")().asInstanceOf[typings.babylonjs.BABYLON.Vector3]
   
   /**
     * Returns a new Vector3 located for "amount" (float) on the linear interpolation between the vectors "start" and "end"
@@ -340,13 +288,11 @@ object Vector3 {
     * @param amount max defines amount between both (between 0 and 1)
     * @returns the new Vector3
     */
-  @JSGlobal("BABYLON.Vector3.Lerp")
-  @js.native
-  def Lerp(
+  inline def Lerp(
     start: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     end: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     amount: Double
-  ): typings.babylonjs.BABYLON.Vector3 = js.native
+  ): typings.babylonjs.BABYLON.Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("Lerp")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Vector3]
   
   /**
     * Sets the given vector "result" with the result of the linear interpolation from the vector "start" for "amount" to the vector "end"
@@ -355,14 +301,12 @@ object Vector3 {
     * @param amount max defines amount between both (between 0 and 1)
     * @param result defines the Vector3 where to store the result
     */
-  @JSGlobal("BABYLON.Vector3.LerpToRef")
-  @js.native
-  def LerpToRef(
+  inline def LerpToRef(
     start: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     end: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     amount: Double,
     result: typings.babylonjs.BABYLON.Vector3
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("LerpToRef")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], amount.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Gets the maximal coordinate values between two Vector3
@@ -370,12 +314,10 @@ object Vector3 {
     * @param right defines the second operand
     * @returns the new Vector3
     */
-  @JSGlobal("BABYLON.Vector3.Maximize")
-  @js.native
-  def Maximize(
+  inline def Maximize(
     left: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     right: DeepImmutable[typings.babylonjs.BABYLON.Vector3]
-  ): typings.babylonjs.BABYLON.Vector3 = js.native
+  ): typings.babylonjs.BABYLON.Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("Maximize")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Vector3]
   
   /**
     * Gets the minimal coordinate values between two Vector3
@@ -383,41 +325,33 @@ object Vector3 {
     * @param right defines the second operand
     * @returns the new Vector3
     */
-  @JSGlobal("BABYLON.Vector3.Minimize")
-  @js.native
-  def Minimize(
+  inline def Minimize(
     left: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     right: DeepImmutable[typings.babylonjs.BABYLON.Vector3]
-  ): typings.babylonjs.BABYLON.Vector3 = js.native
+  ): typings.babylonjs.BABYLON.Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("Minimize")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Vector3]
   
   /**
     * Returns a new Vector3 as the normalization of the given vector
     * @param vector defines the Vector3 to normalize
     * @returns the new Vector3
     */
-  @JSGlobal("BABYLON.Vector3.Normalize")
-  @js.native
-  def Normalize(vector: DeepImmutable[typings.babylonjs.BABYLON.Vector3]): typings.babylonjs.BABYLON.Vector3 = js.native
+  inline def Normalize(vector: DeepImmutable[typings.babylonjs.BABYLON.Vector3]): typings.babylonjs.BABYLON.Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Normalize")(vector.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.Vector3]
   
   /**
     * Sets the given vector "result" with the normalization of the given first vector
     * @param vector defines the Vector3 to normalize
     * @param result defines the Vector3 where to store the result
     */
-  @JSGlobal("BABYLON.Vector3.NormalizeToRef")
-  @js.native
-  def NormalizeToRef(
+  inline def NormalizeToRef(
     vector: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     result: typings.babylonjs.BABYLON.Vector3
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("NormalizeToRef")(vector.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Returns a new Vector3 set to (1.0, 1.0, 1.0)
     * @returns a new unit Vector3
     */
-  @JSGlobal("BABYLON.Vector3.One")
-  @js.native
-  def One(): typings.babylonjs.BABYLON.Vector3 = js.native
+  inline def One(): typings.babylonjs.BABYLON.Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("One")().asInstanceOf[typings.babylonjs.BABYLON.Vector3]
   
   /**
     * Project a Vector3 onto screen space
@@ -427,14 +361,12 @@ object Vector3 {
     * @param viewport defines the screen viewport to use
     * @returns the new Vector3
     */
-  @JSGlobal("BABYLON.Vector3.Project")
-  @js.native
-  def Project(
+  inline def Project(
     vector: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     world: DeepImmutable[typings.babylonjs.BABYLON.Matrix],
     transform: DeepImmutable[typings.babylonjs.BABYLON.Matrix],
     viewport: DeepImmutable[typings.babylonjs.BABYLON.Viewport]
-  ): typings.babylonjs.BABYLON.Vector3 = js.native
+  ): typings.babylonjs.BABYLON.Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("Project")(vector.asInstanceOf[js.Any], world.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], viewport.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Vector3]
   
   /**
     * Project a Vector3 onto screen space to reference
@@ -445,23 +377,19 @@ object Vector3 {
     * @param result the vector in which the screen space will be stored
     * @returns the new Vector3
     */
-  @JSGlobal("BABYLON.Vector3.ProjectToRef")
-  @js.native
-  def ProjectToRef(
+  inline def ProjectToRef(
     vector: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     world: DeepImmutable[typings.babylonjs.BABYLON.Matrix],
     transform: DeepImmutable[typings.babylonjs.BABYLON.Matrix],
     viewport: DeepImmutable[typings.babylonjs.BABYLON.Viewport],
     result: DeepImmutable[typings.babylonjs.BABYLON.Vector3]
-  ): typings.babylonjs.BABYLON.Vector3 = js.native
+  ): typings.babylonjs.BABYLON.Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("ProjectToRef")(vector.asInstanceOf[js.Any], world.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], viewport.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Vector3]
   
   /**
     * Returns a new Vector3 set to (1.0, 0.0, 0.0)
     * @returns a new right Vector3
     */
-  @JSGlobal("BABYLON.Vector3.Right")
-  @js.native
-  def Right(): typings.babylonjs.BABYLON.Vector3 = js.native
+  inline def Right(): typings.babylonjs.BABYLON.Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Right")().asInstanceOf[typings.babylonjs.BABYLON.Vector3]
   
   /**
     * Given three orthogonal normalized left-handed oriented Vector3 axis in space (target system),
@@ -473,13 +401,11 @@ object Vector3 {
     * @param axis3 defines the third axis
     * @returns a new Vector3
     */
-  @JSGlobal("BABYLON.Vector3.RotationFromAxis")
-  @js.native
-  def RotationFromAxis(
+  inline def RotationFromAxis(
     axis1: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     axis2: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     axis3: DeepImmutable[typings.babylonjs.BABYLON.Vector3]
-  ): typings.babylonjs.BABYLON.Vector3 = js.native
+  ): typings.babylonjs.BABYLON.Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationFromAxis")(axis1.asInstanceOf[js.Any], axis2.asInstanceOf[js.Any], axis3.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Vector3]
   
   /**
     * The same than RotationFromAxis but updates the given ref Vector3 parameter instead of returning a new Vector3
@@ -488,14 +414,12 @@ object Vector3 {
     * @param axis3 defines the third axis
     * @param ref defines the Vector3 where to store the result
     */
-  @JSGlobal("BABYLON.Vector3.RotationFromAxisToRef")
-  @js.native
-  def RotationFromAxisToRef(
+  inline def RotationFromAxisToRef(
     axis1: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     axis2: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     axis3: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     ref: typings.babylonjs.BABYLON.Vector3
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationFromAxisToRef")(axis1.asInstanceOf[js.Any], axis2.asInstanceOf[js.Any], axis3.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Returns a new Vector3 set with the result of the transformation by the given matrix of the given vector.
@@ -504,12 +428,10 @@ object Vector3 {
     * @param transformation defines the transformation matrix
     * @returns the transformed Vector3
     */
-  @JSGlobal("BABYLON.Vector3.TransformCoordinates")
-  @js.native
-  def TransformCoordinates(
+  inline def TransformCoordinates(
     vector: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     transformation: DeepImmutable[typings.babylonjs.BABYLON.Matrix]
-  ): typings.babylonjs.BABYLON.Vector3 = js.native
+  ): typings.babylonjs.BABYLON.Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("TransformCoordinates")(vector.asInstanceOf[js.Any], transformation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Vector3]
   
   /**
     * Sets the given vector "result" coordinates with the result of the transformation by the given matrix of the given floats (x, y, z)
@@ -520,15 +442,13 @@ object Vector3 {
     * @param transformation defines the transformation matrix
     * @param result defines the Vector3 where to store the result
     */
-  @JSGlobal("BABYLON.Vector3.TransformCoordinatesFromFloatsToRef")
-  @js.native
-  def TransformCoordinatesFromFloatsToRef(
+  inline def TransformCoordinatesFromFloatsToRef(
     x: Double,
     y: Double,
     z: Double,
     transformation: DeepImmutable[typings.babylonjs.BABYLON.Matrix],
     result: typings.babylonjs.BABYLON.Vector3
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("TransformCoordinatesFromFloatsToRef")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], transformation.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the given vector "result" coordinates with the result of the transformation by the given matrix of the given vector
@@ -537,13 +457,11 @@ object Vector3 {
     * @param transformation defines the transformation matrix
     * @param result defines the Vector3 where to store the result
     */
-  @JSGlobal("BABYLON.Vector3.TransformCoordinatesToRef")
-  @js.native
-  def TransformCoordinatesToRef(
+  inline def TransformCoordinatesToRef(
     vector: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     transformation: DeepImmutable[typings.babylonjs.BABYLON.Matrix],
     result: typings.babylonjs.BABYLON.Vector3
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("TransformCoordinatesToRef")(vector.asInstanceOf[js.Any], transformation.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Returns a new Vector3 set with the result of the normal transformation by the given matrix of the given vector
@@ -552,12 +470,10 @@ object Vector3 {
     * @param transformation defines the transformation matrix
     * @returns the new Vector3
     */
-  @JSGlobal("BABYLON.Vector3.TransformNormal")
-  @js.native
-  def TransformNormal(
+  inline def TransformNormal(
     vector: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     transformation: DeepImmutable[typings.babylonjs.BABYLON.Matrix]
-  ): typings.babylonjs.BABYLON.Vector3 = js.native
+  ): typings.babylonjs.BABYLON.Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("TransformNormal")(vector.asInstanceOf[js.Any], transformation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Vector3]
   
   /**
     * Sets the given vector "result" with the result of the normal transformation by the given matrix of the given floats (x, y, z)
@@ -568,15 +484,13 @@ object Vector3 {
     * @param transformation defines the transformation matrix
     * @param result defines the Vector3 where to store the result
     */
-  @JSGlobal("BABYLON.Vector3.TransformNormalFromFloatsToRef")
-  @js.native
-  def TransformNormalFromFloatsToRef(
+  inline def TransformNormalFromFloatsToRef(
     x: Double,
     y: Double,
     z: Double,
     transformation: DeepImmutable[typings.babylonjs.BABYLON.Matrix],
     result: typings.babylonjs.BABYLON.Vector3
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("TransformNormalFromFloatsToRef")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], transformation.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the given vector "result" with the result of the normal transformation by the given matrix of the given vector
@@ -585,13 +499,11 @@ object Vector3 {
     * @param transformation defines the transformation matrix
     * @param result defines the Vector3 where to store the result
     */
-  @JSGlobal("BABYLON.Vector3.TransformNormalToRef")
-  @js.native
-  def TransformNormalToRef(
+  inline def TransformNormalToRef(
     vector: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     transformation: DeepImmutable[typings.babylonjs.BABYLON.Matrix],
     result: typings.babylonjs.BABYLON.Vector3
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("TransformNormalToRef")(vector.asInstanceOf[js.Any], transformation.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Unproject from screen space to object space
@@ -603,16 +515,14 @@ object Vector3 {
     * @param projection defines the projection matrix to use
     * @returns the new Vector3
     */
-  @JSGlobal("BABYLON.Vector3.Unproject")
-  @js.native
-  def Unproject(
+  inline def Unproject(
     source: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     viewportWidth: Double,
     viewportHeight: Double,
     world: DeepImmutable[typings.babylonjs.BABYLON.Matrix],
     view: DeepImmutable[typings.babylonjs.BABYLON.Matrix],
     projection: DeepImmutable[typings.babylonjs.BABYLON.Matrix]
-  ): typings.babylonjs.BABYLON.Vector3 = js.native
+  ): typings.babylonjs.BABYLON.Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("Unproject")(source.asInstanceOf[js.Any], viewportWidth.asInstanceOf[js.Any], viewportHeight.asInstanceOf[js.Any], world.asInstanceOf[js.Any], view.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Vector3]
   
   /**
     * Unproject from screen space to object space
@@ -626,9 +536,7 @@ object Vector3 {
     * @param projection defines the projection matrix to use
     * @param result defines the Vector3 where to store the result
     */
-  @JSGlobal("BABYLON.Vector3.UnprojectFloatsToRef")
-  @js.native
-  def UnprojectFloatsToRef(
+  inline def UnprojectFloatsToRef(
     sourceX: float,
     sourceY: float,
     sourceZ: float,
@@ -638,7 +546,7 @@ object Vector3 {
     view: DeepImmutable[typings.babylonjs.BABYLON.Matrix],
     projection: DeepImmutable[typings.babylonjs.BABYLON.Matrix],
     result: typings.babylonjs.BABYLON.Vector3
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("UnprojectFloatsToRef")(sourceX.asInstanceOf[js.Any], sourceY.asInstanceOf[js.Any], sourceZ.asInstanceOf[js.Any], viewportWidth.asInstanceOf[js.Any], viewportHeight.asInstanceOf[js.Any], world.asInstanceOf[js.Any], view.asInstanceOf[js.Any], projection.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Unproject from screen space to object space
@@ -649,15 +557,13 @@ object Vector3 {
     * @param transform defines the transform (view x projection) matrix to use
     * @returns the new Vector3
     */
-  @JSGlobal("BABYLON.Vector3.UnprojectFromTransform")
-  @js.native
-  def UnprojectFromTransform(
+  inline def UnprojectFromTransform(
     source: typings.babylonjs.BABYLON.Vector3,
     viewportWidth: Double,
     viewportHeight: Double,
     world: DeepImmutable[typings.babylonjs.BABYLON.Matrix],
     transform: DeepImmutable[typings.babylonjs.BABYLON.Matrix]
-  ): typings.babylonjs.BABYLON.Vector3 = js.native
+  ): typings.babylonjs.BABYLON.Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("UnprojectFromTransform")(source.asInstanceOf[js.Any], viewportWidth.asInstanceOf[js.Any], viewportHeight.asInstanceOf[js.Any], world.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Vector3]
   
   /**
     * Unproject from screen space to object space
@@ -669,9 +575,7 @@ object Vector3 {
     * @param projection defines the projection matrix to use
     * @param result defines the Vector3 where to store the result
     */
-  @JSGlobal("BABYLON.Vector3.UnprojectToRef")
-  @js.native
-  def UnprojectToRef(
+  inline def UnprojectToRef(
     source: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     viewportWidth: Double,
     viewportHeight: Double,
@@ -679,42 +583,34 @@ object Vector3 {
     view: DeepImmutable[typings.babylonjs.BABYLON.Matrix],
     projection: DeepImmutable[typings.babylonjs.BABYLON.Matrix],
     result: typings.babylonjs.BABYLON.Vector3
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("UnprojectToRef")(source.asInstanceOf[js.Any], viewportWidth.asInstanceOf[js.Any], viewportHeight.asInstanceOf[js.Any], world.asInstanceOf[js.Any], view.asInstanceOf[js.Any], projection.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Returns a new Vector3 set to (0.0, 1.0, 0.0)
     * @returns a new up Vector3
     */
-  @JSGlobal("BABYLON.Vector3.Up")
-  @js.native
-  def Up(): typings.babylonjs.BABYLON.Vector3 = js.native
+  inline def Up(): typings.babylonjs.BABYLON.Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Up")().asInstanceOf[typings.babylonjs.BABYLON.Vector3]
   
   /**
     * Returns a new Vector3 set to (0.0, 0.0, 0.0)
     * @returns a new empty Vector3
     */
-  @JSGlobal("BABYLON.Vector3.Zero")
-  @js.native
-  def Zero(): typings.babylonjs.BABYLON.Vector3 = js.native
+  inline def Zero(): typings.babylonjs.BABYLON.Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Zero")().asInstanceOf[typings.babylonjs.BABYLON.Vector3]
   
   /** @hidden */
-  @JSGlobal("BABYLON.Vector3._UnprojectFromInvertedMatrixToRef")
-  @js.native
-  def _UnprojectFromInvertedMatrixToRef(
+  inline def _UnprojectFromInvertedMatrixToRef(
     source: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     matrix: DeepImmutable[typings.babylonjs.BABYLON.Matrix],
     result: typings.babylonjs.BABYLON.Vector3
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_UnprojectFromInvertedMatrixToRef")(source.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSGlobal("BABYLON.Vector3._UpReadOnly")
   @js.native
   def _UpReadOnly: js.Any = js.native
-  @scala.inline
-  def _UpReadOnly_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_UpReadOnly")(x.asInstanceOf[js.Any])
+  inline def _UpReadOnly_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_UpReadOnly")(x.asInstanceOf[js.Any])
   
   @JSGlobal("BABYLON.Vector3._ZeroReadOnly")
   @js.native
   def _ZeroReadOnly: js.Any = js.native
-  @scala.inline
-  def _ZeroReadOnly_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ZeroReadOnly")(x.asInstanceOf[js.Any])
+  inline def _ZeroReadOnly_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ZeroReadOnly")(x.asInstanceOf[js.Any])
 }

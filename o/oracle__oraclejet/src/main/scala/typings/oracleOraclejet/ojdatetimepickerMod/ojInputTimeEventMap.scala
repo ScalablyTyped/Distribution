@@ -43,36 +43,35 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ojInputTimeEventMap extends inputBaseEventMap[String, ojInputTimeSettableProperties, String, String] {
+trait ojInputTimeEventMap
+  extends StObject
+     with inputBaseEventMap[String, ojInputTimeSettableProperties, String, String] {
   
-  var converterChanged: JetElementCustomEvent[Converter[String] | RegisteredConverter] = js.native
+  var converterChanged: JetElementCustomEvent[Converter[String] | RegisteredConverter]
   
-  var keyboardEditChanged: JetElementCustomEvent[enabled | disabled] = js.native
+  var keyboardEditChanged: JetElementCustomEvent[enabled | disabled]
   
-  var maxChanged: JetElementCustomEvent[String | Null] = js.native
+  var maxChanged: JetElementCustomEvent[String | Null]
   
-  var minChanged: JetElementCustomEvent[String | Null] = js.native
+  var minChanged: JetElementCustomEvent[String | Null]
   
   @JSName("ojAnimateEnd")
-  var ojAnimateEnd_ojInputTimeEventMap: ojAnimateEnd = js.native
+  var ojAnimateEnd_ojInputTimeEventMap: ojAnimateEnd
   
   @JSName("ojAnimateStart")
-  var ojAnimateStart_ojInputTimeEventMap: ojAnimateStart = js.native
+  var ojAnimateStart_ojInputTimeEventMap: ojAnimateStart
   
-  var pickerAttributesChanged: JetElementCustomEvent[Class] = js.native
+  var pickerAttributesChanged: JetElementCustomEvent[Class]
   
-  var renderModeChanged: JetElementCustomEvent[jet | native] = js.native
+  var renderModeChanged: JetElementCustomEvent[jet | native]
   
-  var timePickerChanged: JetElementCustomEvent[FooterLayout] = js.native
+  var timePickerChanged: JetElementCustomEvent[FooterLayout]
 }
 object ojInputTimeEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,
@@ -197,34 +196,24 @@ object ojInputTimeEventMap {
     __obj.asInstanceOf[ojInputTimeEventMap]
   }
   
-  @scala.inline
-  implicit class ojInputTimeEventMapMutableBuilder[Self <: ojInputTimeEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: ojInputTimeEventMap](x: Self) {
     
-    @scala.inline
-    def setConverterChanged(value: JetElementCustomEvent[Converter[String] | RegisteredConverter]): Self = StObject.set(x, "converterChanged", value.asInstanceOf[js.Any])
+    inline def setConverterChanged(value: JetElementCustomEvent[Converter[String] | RegisteredConverter]): Self = StObject.set(x, "converterChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboardEditChanged(value: JetElementCustomEvent[enabled | disabled]): Self = StObject.set(x, "keyboardEditChanged", value.asInstanceOf[js.Any])
+    inline def setKeyboardEditChanged(value: JetElementCustomEvent[enabled | disabled]): Self = StObject.set(x, "keyboardEditChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "maxChanged", value.asInstanceOf[js.Any])
+    inline def setMaxChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "maxChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "minChanged", value.asInstanceOf[js.Any])
+    inline def setMinChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "minChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
+    inline def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOjAnimateStart(value: ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
+    inline def setOjAnimateStart(value: ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickerAttributesChanged(value: JetElementCustomEvent[Class]): Self = StObject.set(x, "pickerAttributesChanged", value.asInstanceOf[js.Any])
+    inline def setPickerAttributesChanged(value: JetElementCustomEvent[Class]): Self = StObject.set(x, "pickerAttributesChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderModeChanged(value: JetElementCustomEvent[jet | native]): Self = StObject.set(x, "renderModeChanged", value.asInstanceOf[js.Any])
+    inline def setRenderModeChanged(value: JetElementCustomEvent[jet | native]): Self = StObject.set(x, "renderModeChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimePickerChanged(value: JetElementCustomEvent[FooterLayout]): Self = StObject.set(x, "timePickerChanged", value.asInstanceOf[js.Any])
+    inline def setTimePickerChanged(value: JetElementCustomEvent[FooterLayout]): Self = StObject.set(x, "timePickerChanged", value.asInstanceOf[js.Any])
   }
 }

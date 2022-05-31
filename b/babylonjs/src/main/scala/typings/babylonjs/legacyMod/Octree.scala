@@ -2,7 +2,6 @@ package typings.babylonjs.legacyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "Octree")
@@ -23,13 +22,13 @@ class Octree[T] protected ()
   ) = this()
   def this(
     creationFunc: js.Function2[/* entry */ T, /* block */ typings.babylonjs.octreeBlockMod.OctreeBlock[T], Unit],
-    maxBlockCapacity: js.UndefOr[scala.Nothing],
+    maxBlockCapacity: Double,
     /** Defines the maximum depth (sub-levels) for your octree. Default value is 2, which means 8 8 8 = 512 blocks :) (This parameter takes precedence over capacity.) */
   maxDepth: Double
   ) = this()
   def this(
     creationFunc: js.Function2[/* entry */ T, /* block */ typings.babylonjs.octreeBlockMod.OctreeBlock[T], Unit],
-    maxBlockCapacity: Double,
+    maxBlockCapacity: Unit,
     /** Defines the maximum depth (sub-levels) for your octree. Default value is 2, which means 8 8 8 = 512 blocks :) (This parameter takes precedence over capacity.) */
   maxDepth: Double
   ) = this()
@@ -37,23 +36,23 @@ class Octree[T] protected ()
 /* static members */
 object Octree {
   
+  @JSImport("babylonjs/Legacy/legacy", "Octree")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Adds a mesh into the octree block if it intersects the block
     */
-  @JSImport("babylonjs/Legacy/legacy", "Octree.CreationFuncForMeshes")
-  @js.native
-  def CreationFuncForMeshes(
+  inline def CreationFuncForMeshes(
     entry: typings.babylonjs.abstractMeshMod.AbstractMesh,
     block: typings.babylonjs.octreeBlockMod.OctreeBlock[typings.babylonjs.abstractMeshMod.AbstractMesh]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreationFuncForMeshes")(entry.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Adds a submesh into the octree block if it intersects the block
     */
-  @JSImport("babylonjs/Legacy/legacy", "Octree.CreationFuncForSubMeshes")
-  @js.native
-  def CreationFuncForSubMeshes(
+  inline def CreationFuncForSubMeshes(
     entry: typings.babylonjs.subMeshMod.SubMesh,
     block: typings.babylonjs.octreeBlockMod.OctreeBlock[typings.babylonjs.subMeshMod.SubMesh]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreationFuncForSubMeshes")(entry.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

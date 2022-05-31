@@ -2,15 +2,16 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssetContainer extends AbstractScene {
+trait AssetContainer
+  extends StObject
+     with AbstractScene {
   
-  var _moveAssets: js.Any = js.native
+  /* private */ var _moveAssets: js.Any = js.native
   
-  var _wasAddedToScene: js.Any = js.native
+  /* private */ var _wasAddedToScene: js.Any = js.native
   
   /**
     * Adds all the assets from the container to the scene.
@@ -36,21 +37,21 @@ trait AssetContainer extends AbstractScene {
     * @returns a list of rootNodes, skeletons and aniamtion groups that were duplicated
     */
   def instantiateModelsToScene(): InstantiatedEntries = js.native
-  def instantiateModelsToScene(nameFunction: js.UndefOr[scala.Nothing], cloneMaterials: Boolean): InstantiatedEntries = js.native
   def instantiateModelsToScene(nameFunction: js.Function1[/* sourceName */ String, String]): InstantiatedEntries = js.native
   def instantiateModelsToScene(nameFunction: js.Function1[/* sourceName */ String, String], cloneMaterials: Boolean): InstantiatedEntries = js.native
+  def instantiateModelsToScene(nameFunction: Unit, cloneMaterials: Boolean): InstantiatedEntries = js.native
   
-  def mergeAnimationsTo(scene: js.UndefOr[scala.Nothing], animatables: js.Array[Animatable]): js.Array[AnimationGroup] = js.native
-  def mergeAnimationsTo(
-    scene: js.UndefOr[scala.Nothing],
-    animatables: js.Array[Animatable],
-    targetConverter: Nullable[js.Function1[/* target */ _, Nullable[Node]]]
-  ): js.Array[AnimationGroup] = js.native
   def mergeAnimationsTo(scene: Null, animatables: js.Array[Animatable]): js.Array[AnimationGroup] = js.native
   def mergeAnimationsTo(
     scene: Null,
     animatables: js.Array[Animatable],
-    targetConverter: Nullable[js.Function1[/* target */ _, Nullable[Node]]]
+    targetConverter: Nullable[js.Function1[/* target */ js.Any, Nullable[Node]]]
+  ): js.Array[AnimationGroup] = js.native
+  def mergeAnimationsTo(scene: Unit, animatables: js.Array[Animatable]): js.Array[AnimationGroup] = js.native
+  def mergeAnimationsTo(
+    scene: Unit,
+    animatables: js.Array[Animatable],
+    targetConverter: Nullable[js.Function1[/* target */ js.Any, Nullable[Node]]]
   ): js.Array[AnimationGroup] = js.native
   /**
     * Merge animations (direct and animation groups) from this asset container into a scene
@@ -63,7 +64,7 @@ trait AssetContainer extends AbstractScene {
   def mergeAnimationsTo(
     scene: Scene,
     animatables: js.Array[Animatable],
-    targetConverter: Nullable[js.Function1[/* target */ _, Nullable[Node]]]
+    targetConverter: Nullable[js.Function1[/* target */ js.Any, Nullable[Node]]]
   ): js.Array[AnimationGroup] = js.native
   
   /**

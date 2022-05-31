@@ -1,18 +1,16 @@
 organization := "org.scalablytyped"
 name := "firebase__performance"
-version := "0.4.4-13d764"
-scalaVersion := "2.13.3"
+version := "0.4.4-66347f"
+scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
-  "org.scalablytyped" %%% "firebase__app-types" % "0.6.1-e8e6cc",
-  "org.scalablytyped" %%% "firebase__installations-types" % "0.3.4-e8c263",
-  "org.scalablytyped" %%% "firebase__logger" % "0.2.6-7c2e93",
-  "org.scalablytyped" %%% "firebase__performance-types" % "0.0.13-9ebe8c",
-  "org.scalablytyped" %%% "firebase__util" % "0.3.4-2ad999",
-  "org.scalablytyped" %%% "std" % "4.1-40053c")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped" %%% "firebase__app-types" % "0.6.1-680562",
+  "org.scalablytyped" %%% "firebase__installations-types" % "0.3.4-8e61dd",
+  "org.scalablytyped" %%% "firebase__logger" % "0.2.6-fc6b40",
+  "org.scalablytyped" %%% "firebase__performance-types" % "0.0.13-7601d8",
+  "org.scalablytyped" %%% "firebase__util" % "0.3.4-06d2d6",
+  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalablyTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

@@ -4,15 +4,19 @@ import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.anon.FrontUVsRadius
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.DiscBuilder")
 @js.native
 class DiscBuilder ()
-  extends typings.babylonjs.BABYLON.DiscBuilder
+  extends StObject
+     with typings.babylonjs.BABYLON.DiscBuilder
 /* static members */
 object DiscBuilder {
+  
+  @JSGlobal("BABYLON.DiscBuilder")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a plane polygonal mesh.  By default, this is a disc
@@ -28,10 +32,6 @@ object DiscBuilder {
     * @returns the plane polygonal mesh
     * @see https://doc.babylonjs.com/how_to/set_shapes#disc-or-regular-polygon
     */
-  @JSGlobal("BABYLON.DiscBuilder.CreateDisc")
-  @js.native
-  def CreateDisc(name: String, options: FrontUVsRadius): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.DiscBuilder.CreateDisc")
-  @js.native
-  def CreateDisc(name: String, options: FrontUVsRadius, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
+  inline def CreateDisc(name: String, options: FrontUVsRadius): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDisc")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreateDisc(name: String, options: FrontUVsRadius, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDisc")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
 }

@@ -2,27 +2,26 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ReflectionProbe extends StObject {
   
-  var _add: js.Any = js.native
+  /* private */ var _add: js.Any = js.native
   
-  var _attachedMesh: js.Any = js.native
+  /* private */ var _attachedMesh: js.Any = js.native
   
-  var _invertYAxis: js.Any = js.native
+  /* private */ var _invertYAxis: js.Any = js.native
   
-  var _projectionMatrix: js.Any = js.native
+  /* private */ var _projectionMatrix: js.Any = js.native
   
-  var _renderTargetTexture: js.Any = js.native
+  /* private */ var _renderTargetTexture: js.Any = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
-  var _target: js.Any = js.native
+  /* private */ var _target: js.Any = js.native
   
-  var _viewMatrix: js.Any = js.native
+  /* private */ var _viewMatrix: js.Any = js.native
   
   /**
     * Attach the probe to a specific mesh (Rendering will be done from attached mesh's position)

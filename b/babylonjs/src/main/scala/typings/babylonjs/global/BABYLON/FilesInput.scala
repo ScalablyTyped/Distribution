@@ -5,13 +5,13 @@ import typings.babylonjs.BABYLON.Nullable
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.FilesInput")
 @js.native
 class FilesInput protected ()
-  extends typings.babylonjs.BABYLON.FilesInput {
+  extends StObject
+     with typings.babylonjs.BABYLON.FilesInput {
   /**
     * Creates a new FilesInput
     * @param engine defines the rendering engine

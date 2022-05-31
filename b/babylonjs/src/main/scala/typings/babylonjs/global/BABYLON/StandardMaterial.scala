@@ -1,14 +1,15 @@
 package typings.babylonjs.global.BABYLON
 
+import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.StandardMaterial")
 @js.native
 class StandardMaterial protected ()
-  extends typings.babylonjs.BABYLON.StandardMaterial {
+  extends StObject
+     with typings.babylonjs.BABYLON.StandardMaterial {
   /**
     * Instantiates a new standard material.
     * This is the default material used in Babylon. It is the best trade off between quality
@@ -18,9 +19,19 @@ class StandardMaterial protected ()
     * @param scene Define the scene the material belong to
     */
   def this(name: String, scene: typings.babylonjs.BABYLON.Scene) = this()
+  
+  /**
+    * Array of animations
+    */
+  /* CompleteClass */
+  var animations: Nullable[js.Array[typings.babylonjs.BABYLON.Animation]] = js.native
 }
 /* static members */
 object StandardMaterial {
+  
+  @JSGlobal("BABYLON.StandardMaterial")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a standard material from parsed material data
@@ -29,7 +40,5 @@ object StandardMaterial {
     * @param rootUrl defines the root URL to use to load textures and relative dependencies
     * @returns a new standard material
     */
-  @JSGlobal("BABYLON.StandardMaterial.Parse")
-  @js.native
-  def Parse(source: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.StandardMaterial = js.native
+  inline def Parse(source: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.StandardMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.StandardMaterial]
 }

@@ -3,21 +3,19 @@ package typings.oracleOraclejet.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CurrentCell[K]
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var currentCell: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.CurrentCell[K] = js.native
+  var currentCell: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.CurrentCell[K]
   
-  var previousCurrentCell: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.CurrentCell[K] = js.native
+  var previousCurrentCell: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.CurrentCell[K]
 }
 object CurrentCell {
   
-  @scala.inline
-  def apply[K](
+  inline def apply[K](
     currentCell: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.CurrentCell[K],
     previousCurrentCell: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.CurrentCell[K]
   ): CurrentCell[K] = {
@@ -25,13 +23,10 @@ object CurrentCell {
     __obj.asInstanceOf[CurrentCell[K]]
   }
   
-  @scala.inline
-  implicit class CurrentCellMutableBuilder[Self <: CurrentCell[_], K] (val x: Self with CurrentCell[K]) extends AnyVal {
+  extension [Self <: CurrentCell[?], K](x: Self & CurrentCell[K]) {
     
-    @scala.inline
-    def setCurrentCell(value: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.CurrentCell[K]): Self = StObject.set(x, "currentCell", value.asInstanceOf[js.Any])
+    inline def setCurrentCell(value: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.CurrentCell[K]): Self = StObject.set(x, "currentCell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousCurrentCell(value: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.CurrentCell[K]): Self = StObject.set(x, "previousCurrentCell", value.asInstanceOf[js.Any])
+    inline def setPreviousCurrentCell(value: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.CurrentCell[K]): Self = StObject.set(x, "previousCurrentCell", value.asInstanceOf[js.Any])
   }
 }

@@ -13,10 +13,13 @@ import typings.react.mod.global.JSX.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toolbarMod {
+  
+  @JSImport("@jupyterlab/apputils/lib/toolbar", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@jupyterlab/apputils/lib/toolbar", "CommandToolbarButton")
   @js.native
@@ -27,49 +30,44 @@ object toolbarMod {
       */
     def this(props: IProps) = this()
     
-    var props: js.Any = js.native
+    /* private */ var props: js.Any = js.native
   }
   
   object CommandToolbarButtonComponent {
     
+    inline def apply(props: IProps): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("@jupyterlab/apputils/lib/toolbar", "CommandToolbarButtonComponent")
     @js.native
-    def apply(props: IProps): Element = js.native
+    val ^ : js.Any = js.native
     
     /**
       * Interface for CommandToolbarButtonComponent props.
       */
-    @js.native
     trait IProps extends StObject {
       
-      var args: js.UndefOr[ReadonlyJSONObject] = js.native
+      var args: js.UndefOr[ReadonlyJSONObject] = js.undefined
       
-      var commands: CommandRegistry = js.native
+      var commands: CommandRegistry
       
-      var id: String = js.native
+      var id: String
     }
     object IProps {
       
-      @scala.inline
-      def apply(commands: CommandRegistry, id: String): IProps = {
+      inline def apply(commands: CommandRegistry, id: String): IProps = {
         val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
         __obj.asInstanceOf[IProps]
       }
       
-      @scala.inline
-      implicit class IPropsMutableBuilder[Self <: IProps] (val x: Self) extends AnyVal {
+      extension [Self <: IProps](x: Self) {
         
-        @scala.inline
-        def setArgs(value: ReadonlyJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+        inline def setArgs(value: ReadonlyJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+        inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
         
-        @scala.inline
-        def setCommands(value: CommandRegistry): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+        inline def setCommands(value: CommandRegistry): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -81,7 +79,7 @@ object toolbarMod {
     */
   class Toolbar[T /* <: Widget */] () extends Widget {
     
-    var _insertRelative: js.Any = js.native
+    /* private */ var _insertRelative: js.Any = js.native
     
     /**
       * Add an item to the end of the toolbar.
@@ -180,12 +178,14 @@ object toolbarMod {
   }
   object Toolbar {
     
+    @JSImport("@jupyterlab/apputils/lib/toolbar", "Toolbar")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Create an interrupt toolbar item.
       */
-    @JSImport("@jupyterlab/apputils/lib/toolbar", "Toolbar.createInterruptButton")
-    @js.native
-    def createInterruptButton(sessionContext: ISessionContext): Widget = js.native
+    inline def createInterruptButton(sessionContext: ISessionContext): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInterruptButton")(sessionContext.asInstanceOf[js.Any]).asInstanceOf[Widget]
     
     /**
       * Create a kernel name indicator item.
@@ -194,12 +194,8 @@ object toolbarMod {
       * It will display the `'display_name`' of the session context. It can
       * handle a change in context or kernel.
       */
-    @JSImport("@jupyterlab/apputils/lib/toolbar", "Toolbar.createKernelNameItem")
-    @js.native
-    def createKernelNameItem(sessionContext: ISessionContext): Widget = js.native
-    @JSImport("@jupyterlab/apputils/lib/toolbar", "Toolbar.createKernelNameItem")
-    @js.native
-    def createKernelNameItem(sessionContext: ISessionContext, dialogs: IDialogs): Widget = js.native
+    inline def createKernelNameItem(sessionContext: ISessionContext): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("createKernelNameItem")(sessionContext.asInstanceOf[js.Any]).asInstanceOf[Widget]
+    inline def createKernelNameItem(sessionContext: ISessionContext, dialogs: IDialogs): Widget = (^.asInstanceOf[js.Dynamic].applyDynamic("createKernelNameItem")(sessionContext.asInstanceOf[js.Any], dialogs.asInstanceOf[js.Any])).asInstanceOf[Widget]
     
     /**
       * Create a kernel status indicator item.
@@ -209,19 +205,13 @@ object toolbarMod {
       * It will show the current status in the node title.
       * It can handle a change to the context or the kernel.
       */
-    @JSImport("@jupyterlab/apputils/lib/toolbar", "Toolbar.createKernelStatusItem")
-    @js.native
-    def createKernelStatusItem(sessionContext: ISessionContext): Widget = js.native
+    inline def createKernelStatusItem(sessionContext: ISessionContext): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("createKernelStatusItem")(sessionContext.asInstanceOf[js.Any]).asInstanceOf[Widget]
     
     /**
       * Create a restart toolbar item.
       */
-    @JSImport("@jupyterlab/apputils/lib/toolbar", "Toolbar.createRestartButton")
-    @js.native
-    def createRestartButton(sessionContext: ISessionContext): Widget = js.native
-    @JSImport("@jupyterlab/apputils/lib/toolbar", "Toolbar.createRestartButton")
-    @js.native
-    def createRestartButton(sessionContext: ISessionContext, dialogs: IDialogs): Widget = js.native
+    inline def createRestartButton(sessionContext: ISessionContext): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("createRestartButton")(sessionContext.asInstanceOf[js.Any]).asInstanceOf[Widget]
+    inline def createRestartButton(sessionContext: ISessionContext, dialogs: IDialogs): Widget = (^.asInstanceOf[js.Dynamic].applyDynamic("createRestartButton")(sessionContext.asInstanceOf[js.Any], dialogs.asInstanceOf[js.Any])).asInstanceOf[Widget]
     
     /**
       * Create a toolbar spacer item.
@@ -230,9 +220,7 @@ object toolbarMod {
       * It is a flex spacer that separates the left toolbar items
       * from the right toolbar items.
       */
-    @JSImport("@jupyterlab/apputils/lib/toolbar", "Toolbar.createSpacerItem")
-    @js.native
-    def createSpacerItem(): Widget = js.native
+    inline def createSpacerItem(): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("createSpacerItem")().asInstanceOf[Widget]
   }
   
   @JSImport("@jupyterlab/apputils/lib/toolbar", "ToolbarButton")
@@ -244,104 +232,83 @@ object toolbarMod {
   class ToolbarButton () extends ReactWidget {
     def this(props: typings.jupyterlabApputils.toolbarMod.ToolbarButtonComponent.IProps) = this()
     
-    var props: js.Any = js.native
+    /* private */ var props: js.Any = js.native
   }
   
   object ToolbarButtonComponent {
     
+    inline def apply(props: typings.jupyterlabApputils.toolbarMod.ToolbarButtonComponent.IProps): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("@jupyterlab/apputils/lib/toolbar", "ToolbarButtonComponent")
     @js.native
-    def apply(props: typings.jupyterlabApputils.toolbarMod.ToolbarButtonComponent.IProps): Element = js.native
+    val ^ : js.Any = js.native
     
     /**
       * Interface for ToolbarButttonComponent props.
       */
-    @js.native
     trait IProps extends StObject {
       
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
-      var enabled: js.UndefOr[Boolean] = js.native
+      var enabled: js.UndefOr[Boolean] = js.undefined
       
-      var icon: js.UndefOr[IMaybeResolvable] = js.native
+      var icon: js.UndefOr[IMaybeResolvable] = js.undefined
       
-      var iconClass: js.UndefOr[String] = js.native
+      var iconClass: js.UndefOr[String] = js.undefined
       
-      var iconLabel: js.UndefOr[String] = js.native
+      var iconLabel: js.UndefOr[String] = js.undefined
       
-      var label: js.UndefOr[String] = js.native
+      var label: js.UndefOr[String] = js.undefined
       
-      var onClick: js.UndefOr[js.Function0[Unit]] = js.native
+      var onClick: js.UndefOr[js.Function0[Unit]] = js.undefined
       
-      var tooltip: js.UndefOr[String] = js.native
+      var tooltip: js.UndefOr[String] = js.undefined
     }
     object IProps {
       
-      @scala.inline
-      def apply(): typings.jupyterlabApputils.toolbarMod.ToolbarButtonComponent.IProps = {
+      inline def apply(): typings.jupyterlabApputils.toolbarMod.ToolbarButtonComponent.IProps = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.jupyterlabApputils.toolbarMod.ToolbarButtonComponent.IProps]
       }
       
-      @scala.inline
-      implicit class IPropsMutableBuilder[Self <: typings.jupyterlabApputils.toolbarMod.ToolbarButtonComponent.IProps] (val x: Self) extends AnyVal {
+      extension [Self <: typings.jupyterlabApputils.toolbarMod.ToolbarButtonComponent.IProps](x: Self) {
         
-        @scala.inline
-        def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+        inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
         
-        @scala.inline
-        def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+        inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+        inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
         
-        @scala.inline
-        def setIcon(value: IMaybeResolvable): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: IMaybeResolvable): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+        inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+        inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
         
-        @scala.inline
-        def setIconLabel(value: String): Self = StObject.set(x, "iconLabel", value.asInstanceOf[js.Any])
+        inline def setIconLabel(value: String): Self = StObject.set(x, "iconLabel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconLabelUndefined: Self = StObject.set(x, "iconLabel", js.undefined)
+        inline def setIconLabelUndefined: Self = StObject.set(x, "iconLabel", js.undefined)
         
-        @scala.inline
-        def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+        inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
         
-        @scala.inline
-        def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+        inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
         
-        @scala.inline
-        def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+        inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+        inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
         
-        @scala.inline
-        def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+        inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+        inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
       }
     }
   }
   
-  @JSImport("@jupyterlab/apputils/lib/toolbar", "addCommandToolbarButtonClass")
-  @js.native
-  def addCommandToolbarButtonClass(w: Widget): Widget = js.native
+  inline def addCommandToolbarButtonClass(w: Widget): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("addCommandToolbarButtonClass")(w.asInstanceOf[js.Any]).asInstanceOf[Widget]
   
-  @JSImport("@jupyterlab/apputils/lib/toolbar", "addToolbarButtonClass")
-  @js.native
-  def addToolbarButtonClass(w: Widget): Widget = js.native
+  inline def addToolbarButtonClass(w: Widget): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("addToolbarButtonClass")(w.asInstanceOf[js.Any]).asInstanceOf[Widget]
 }

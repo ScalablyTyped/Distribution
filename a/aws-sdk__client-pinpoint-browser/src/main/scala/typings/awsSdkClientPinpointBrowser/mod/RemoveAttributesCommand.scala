@@ -1,5 +1,6 @@
 package typings.awsSdkClientPinpointBrowser.mod
 
+import typings.awsSdkClientPinpointBrowser.typesRemoveAttributesInputMod.RemoveAttributesInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class RemoveAttributesCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.removeAttributesCommandMod.RemoveAttributesCommand {
-  def this(input: typings.awsSdkClientPinpointBrowser.typesRemoveAttributesInputMod.RemoveAttributesInput) = this()
+  def this(input: RemoveAttributesInput) = this()
 }

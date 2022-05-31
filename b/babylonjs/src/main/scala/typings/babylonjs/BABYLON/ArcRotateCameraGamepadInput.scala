@@ -2,17 +2,18 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArcRotateCameraGamepadInput extends ICameraInput[ArcRotateCamera] {
+trait ArcRotateCameraGamepadInput
+  extends StObject
+     with ICameraInput[ArcRotateCamera] {
   
-  var _onGamepadConnectedObserver: js.Any = js.native
+  /* private */ var _onGamepadConnectedObserver: js.Any = js.native
   
-  var _onGamepadDisconnectedObserver: js.Any = js.native
+  /* private */ var _onGamepadDisconnectedObserver: js.Any = js.native
   
-  var _yAxisScale: js.Any = js.native
+  /* private */ var _yAxisScale: js.Any = js.native
   
   /**
     * Defines the camera the input is attached to.

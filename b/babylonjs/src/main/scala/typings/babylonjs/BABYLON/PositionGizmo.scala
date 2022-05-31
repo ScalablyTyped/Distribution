@@ -2,30 +2,31 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PositionGizmo extends Gizmo {
+trait PositionGizmo
+  extends StObject
+     with Gizmo {
   
   /** Node Caching for quick lookup */
-  var _gizmoAxisCache: js.Any = js.native
+  /* private */ var _gizmoAxisCache: js.Any = js.native
   
   /**
     * private variables
     */
-  var _meshAttached: js.Any = js.native
+  /* private */ var _meshAttached: js.Any = js.native
   
-  var _nodeAttached: js.Any = js.native
+  /* private */ var _nodeAttached: js.Any = js.native
   
-  var _observables: js.Any = js.native
+  /* private */ var _observables: js.Any = js.native
   
   /**
     * If set to true, planar drag is enabled
     */
-  var _planarGizmoEnabled: js.Any = js.native
+  /* private */ var _planarGizmoEnabled: js.Any = js.native
   
-  var _snapDistance: js.Any = js.native
+  /* private */ var _snapDistance: js.Any = js.native
   
   /**
     * Builds Gizmo Axis Cache to enable features such as hover state preservation and graying out other axis during manipulation
@@ -35,10 +36,10 @@ trait PositionGizmo extends Gizmo {
   def addToAxisCache(mesh: Mesh, cache: GizmoAxisCache): Unit = js.native
   
   /** Fires an event when any of it's sub gizmos are released from dragging */
-  var onDragEndObservable: Observable[_] = js.native
+  var onDragEndObservable: Observable[js.Any] = js.native
   
   /** Fires an event when any of it's sub gizmos are dragged */
-  var onDragStartObservable: Observable[_] = js.native
+  var onDragStartObservable: Observable[js.Any] = js.native
   
   def planarGizmoEnabled: Boolean = js.native
   /**

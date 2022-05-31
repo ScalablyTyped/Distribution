@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.SSAO2RenderingPipeline")
 @js.native
 class SSAO2RenderingPipeline protected ()
-  extends typings.babylonjs.BABYLON.SSAO2RenderingPipeline {
+  extends StObject
+     with typings.babylonjs.BABYLON.SSAO2RenderingPipeline {
   /**
     * @constructor
     * @param name The rendering pipeline name
@@ -28,19 +28,23 @@ class SSAO2RenderingPipeline protected ()
     name: String,
     scene: typings.babylonjs.BABYLON.Scene,
     ratio: js.Any,
-    cameras: js.UndefOr[scala.Nothing],
+    cameras: js.Array[typings.babylonjs.BABYLON.Camera],
     forceGeometryBuffer: Boolean
   ) = this()
   def this(
     name: String,
     scene: typings.babylonjs.BABYLON.Scene,
     ratio: js.Any,
-    cameras: js.Array[typings.babylonjs.BABYLON.Camera],
+    cameras: Unit,
     forceGeometryBuffer: Boolean
   ) = this()
 }
 /* static members */
 object SSAO2RenderingPipeline {
+  
+  @JSGlobal("BABYLON.SSAO2RenderingPipeline")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Parse the serialized pipeline
@@ -49,7 +53,5 @@ object SSAO2RenderingPipeline {
     * @param rootUrl The URL of the serialized pipeline.
     * @returns An instantiated pipeline from the serialized object.
     */
-  @JSGlobal("BABYLON.SSAO2RenderingPipeline.Parse")
-  @js.native
-  def Parse(source: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.SSAO2RenderingPipeline = js.native
+  inline def Parse(source: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.SSAO2RenderingPipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.SSAO2RenderingPipeline]
 }

@@ -9,7 +9,6 @@ import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONValue
 import typings.luminoCoreutils.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tokensMod {
@@ -64,7 +63,6 @@ object tokensMod {
       * an application-wide notion of a singleton command registry and a singleton
       * state database.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
@@ -73,19 +71,19 @@ object tokensMod {
         * #### Notes
         * The default is `true`.
         */
-      var auto: js.UndefOr[Boolean] = js.native
+      var auto: js.UndefOr[Boolean] = js.undefined
       
       /**
         * An optional `Contents.IDrive` name for the model.
         * If given, the model will prepend `driveName:` to
         * all paths used in file operations.
         */
-      var driveName: js.UndefOr[String] = js.native
+      var driveName: js.UndefOr[String] = js.undefined
       
       /**
         * The time interval for browser refreshing, in ms.
         */
-      var refreshInterval: js.UndefOr[Double] = js.native
+      var refreshInterval: js.UndefOr[Double] = js.undefined
       
       /**
         * Whether a file browser automatically restores state when instantiated.
@@ -95,7 +93,7 @@ object tokensMod {
         * The file browser model will need to be restored before for the file
         * browser to start saving its state.
         */
-      var restore: js.UndefOr[Boolean] = js.native
+      var restore: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The state database to use for saving file browser state and restoring it.
@@ -104,51 +102,38 @@ object tokensMod {
         * Unless the value `null` is set for this option, the application state
         * database will be automatically passed in and used for state restoration.
         */
-      var state: js.UndefOr[IStateDB[ReadonlyPartialJSONValue] | Null] = js.native
+      var state: js.UndefOr[IStateDB[ReadonlyPartialJSONValue] | Null] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): IOptions = {
+      inline def apply(): IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
+        inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
+        inline def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
         
-        @scala.inline
-        def setDriveName(value: String): Self = StObject.set(x, "driveName", value.asInstanceOf[js.Any])
+        inline def setDriveName(value: String): Self = StObject.set(x, "driveName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDriveNameUndefined: Self = StObject.set(x, "driveName", js.undefined)
+        inline def setDriveNameUndefined: Self = StObject.set(x, "driveName", js.undefined)
         
-        @scala.inline
-        def setRefreshInterval(value: Double): Self = StObject.set(x, "refreshInterval", value.asInstanceOf[js.Any])
+        inline def setRefreshInterval(value: Double): Self = StObject.set(x, "refreshInterval", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRefreshIntervalUndefined: Self = StObject.set(x, "refreshInterval", js.undefined)
+        inline def setRefreshIntervalUndefined: Self = StObject.set(x, "refreshInterval", js.undefined)
         
-        @scala.inline
-        def setRestore(value: Boolean): Self = StObject.set(x, "restore", value.asInstanceOf[js.Any])
+        inline def setRestore(value: Boolean): Self = StObject.set(x, "restore", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRestoreUndefined: Self = StObject.set(x, "restore", js.undefined)
+        inline def setRestoreUndefined: Self = StObject.set(x, "restore", js.undefined)
         
-        @scala.inline
-        def setState(value: IStateDB[ReadonlyPartialJSONValue]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+        inline def setState(value: IStateDB[ReadonlyPartialJSONValue]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStateNull: Self = StObject.set(x, "state", null)
+        inline def setStateNull: Self = StObject.set(x, "state", null)
         
-        @scala.inline
-        def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+        inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       }
     }
     

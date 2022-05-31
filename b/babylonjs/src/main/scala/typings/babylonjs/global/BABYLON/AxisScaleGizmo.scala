@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.AxisScaleGizmo")
 @js.native
 class AxisScaleGizmo protected ()
-  extends typings.babylonjs.BABYLON.AxisScaleGizmo {
+  extends StObject
+     with typings.babylonjs.BABYLON.AxisScaleGizmo {
   /**
     * Creates an AxisScaleGizmo
     * @param gizmoLayer The utility layer the gizmo will be added to
@@ -21,7 +21,7 @@ class AxisScaleGizmo protected ()
   def this(dragAxis: typings.babylonjs.BABYLON.Vector3, color: typings.babylonjs.BABYLON.Color3) = this()
   def this(
     dragAxis: typings.babylonjs.BABYLON.Vector3,
-    color: js.UndefOr[scala.Nothing],
+    color: Unit,
     gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer
   ) = this()
   def this(
@@ -31,20 +31,20 @@ class AxisScaleGizmo protected ()
   ) = this()
   def this(
     dragAxis: typings.babylonjs.BABYLON.Vector3,
-    color: js.UndefOr[scala.Nothing],
-    gizmoLayer: js.UndefOr[scala.Nothing],
+    color: Unit,
+    gizmoLayer: Unit,
     parent: Nullable[typings.babylonjs.BABYLON.ScaleGizmo]
   ) = this()
   def this(
     dragAxis: typings.babylonjs.BABYLON.Vector3,
-    color: js.UndefOr[scala.Nothing],
+    color: Unit,
     gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
     parent: Nullable[typings.babylonjs.BABYLON.ScaleGizmo]
   ) = this()
   def this(
     dragAxis: typings.babylonjs.BABYLON.Vector3,
     color: typings.babylonjs.BABYLON.Color3,
-    gizmoLayer: js.UndefOr[scala.Nothing],
+    gizmoLayer: Unit,
     parent: Nullable[typings.babylonjs.BABYLON.ScaleGizmo]
   ) = this()
   def this(
@@ -55,30 +55,64 @@ class AxisScaleGizmo protected ()
   ) = this()
   def this(
     dragAxis: typings.babylonjs.BABYLON.Vector3,
-    color: js.UndefOr[scala.Nothing],
-    gizmoLayer: js.UndefOr[scala.Nothing],
-    parent: js.UndefOr[Nullable[typings.babylonjs.BABYLON.ScaleGizmo]],
+    color: Unit,
+    gizmoLayer: Unit,
+    parent: Unit,
     thickness: Double
   ) = this()
   def this(
     dragAxis: typings.babylonjs.BABYLON.Vector3,
-    color: js.UndefOr[scala.Nothing],
+    color: Unit,
+    gizmoLayer: Unit,
+    parent: Nullable[typings.babylonjs.BABYLON.ScaleGizmo],
+    thickness: Double
+  ) = this()
+  def this(
+    dragAxis: typings.babylonjs.BABYLON.Vector3,
+    color: Unit,
     gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
-    parent: js.UndefOr[Nullable[typings.babylonjs.BABYLON.ScaleGizmo]],
+    parent: Unit,
+    thickness: Double
+  ) = this()
+  def this(
+    dragAxis: typings.babylonjs.BABYLON.Vector3,
+    color: Unit,
+    gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
+    parent: Nullable[typings.babylonjs.BABYLON.ScaleGizmo],
     thickness: Double
   ) = this()
   def this(
     dragAxis: typings.babylonjs.BABYLON.Vector3,
     color: typings.babylonjs.BABYLON.Color3,
-    gizmoLayer: js.UndefOr[scala.Nothing],
-    parent: js.UndefOr[Nullable[typings.babylonjs.BABYLON.ScaleGizmo]],
+    gizmoLayer: Unit,
+    parent: Unit,
+    thickness: Double
+  ) = this()
+  def this(
+    dragAxis: typings.babylonjs.BABYLON.Vector3,
+    color: typings.babylonjs.BABYLON.Color3,
+    gizmoLayer: Unit,
+    parent: Nullable[typings.babylonjs.BABYLON.ScaleGizmo],
     thickness: Double
   ) = this()
   def this(
     dragAxis: typings.babylonjs.BABYLON.Vector3,
     color: typings.babylonjs.BABYLON.Color3,
     gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
-    parent: js.UndefOr[Nullable[typings.babylonjs.BABYLON.ScaleGizmo]],
+    parent: Unit,
     thickness: Double
   ) = this()
+  def this(
+    dragAxis: typings.babylonjs.BABYLON.Vector3,
+    color: typings.babylonjs.BABYLON.Color3,
+    gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
+    parent: Nullable[typings.babylonjs.BABYLON.ScaleGizmo],
+    thickness: Double
+  ) = this()
+  
+  /**
+    * Releases all held resources
+    */
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
 }

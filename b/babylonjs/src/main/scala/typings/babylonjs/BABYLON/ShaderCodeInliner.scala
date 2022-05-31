@@ -2,35 +2,34 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ShaderCodeInliner extends StObject {
   
-  var _collectFunctions: js.Any = js.native
+  /* private */ var _collectFunctions: js.Any = js.native
   
-  var _escapeRegExp: js.Any = js.native
+  /* private */ var _escapeRegExp: js.Any = js.native
   
-  var _extractBetweenMarkers: js.Any = js.native
+  /* private */ var _extractBetweenMarkers: js.Any = js.native
   
-  var _findBackward: js.Any = js.native
+  /* private */ var _findBackward: js.Any = js.native
   
-  var _functionDescr: js.Any = js.native
+  /* private */ var _functionDescr: js.Any = js.native
   
-  var _numMaxIterations: js.Any = js.native
+  /* private */ var _numMaxIterations: js.Any = js.native
   
-  var _processInlining: js.Any = js.native
+  /* private */ var _processInlining: js.Any = js.native
   
-  var _removeComments: js.Any = js.native
+  /* private */ var _removeComments: js.Any = js.native
   
-  var _replaceFunctionCallsByCode: js.Any = js.native
+  /* private */ var _replaceFunctionCallsByCode: js.Any = js.native
   
-  var _replaceNames: js.Any = js.native
+  /* private */ var _replaceNames: js.Any = js.native
   
-  var _skipWhitespaces: js.Any = js.native
+  /* private */ var _skipWhitespaces: js.Any = js.native
   
-  var _sourceCode: js.Any = js.native
+  /* private */ var _sourceCode: js.Any = js.native
   
   /** Gets the code after the inlining process */
   def code: String = js.native

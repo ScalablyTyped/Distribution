@@ -170,7 +170,6 @@ object global {
     def this(options: Options) = this()
   }
   /* static members */
-  /* was `typeof Synaptic.Network` */
   object Network {
     
     @JSGlobal("Network")

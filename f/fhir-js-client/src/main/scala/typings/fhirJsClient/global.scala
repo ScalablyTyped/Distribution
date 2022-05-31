@@ -27,10 +27,5 @@ object global {
     @JSGlobal("FHIR.oauth2")
     @js.native
     val oauth2: OAuth2 = js.native
-    
-    /**
-      * Namespace containing all the SMART on FHIR related definitions
-      */
-    object SMART
   }
 }

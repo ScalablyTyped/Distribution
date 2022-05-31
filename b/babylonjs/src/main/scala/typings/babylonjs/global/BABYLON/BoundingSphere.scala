@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.DeepImmutable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.BoundingSphere")
 @js.native
 class BoundingSphere protected ()
-  extends typings.babylonjs.BABYLON.BoundingSphere {
+  extends StObject
+     with typings.babylonjs.BABYLON.BoundingSphere {
   /**
     * Creates a new bounding sphere
     * @param min defines the minimum vector (in local space)
@@ -29,18 +29,20 @@ class BoundingSphere protected ()
 /* static members */
 object BoundingSphere {
   
+  @JSGlobal("BABYLON.BoundingSphere")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Checks if two sphere intersct
     * @param sphere0 sphere 0
     * @param sphere1 sphere 1
     * @returns true if the speres intersect
     */
-  @JSGlobal("BABYLON.BoundingSphere.Intersects")
-  @js.native
-  def Intersects(
+  inline def Intersects(
     sphere0: DeepImmutable[typings.babylonjs.BABYLON.BoundingSphere],
     sphere1: DeepImmutable[typings.babylonjs.BABYLON.BoundingSphere]
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Intersects")(sphere0.asInstanceOf[js.Any], sphere1.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSGlobal("BABYLON.BoundingSphere.TmpVector3")
   @js.native

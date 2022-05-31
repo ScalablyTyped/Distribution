@@ -37,8 +37,6 @@ object globalMod {
     extends typings.awsSdk.coreMod.ChainableTemporaryCredentials {
     def this(options: ChainableTemporaryCredentialsOptions) = this()
   }
-  // Needed to expose interfaces on the class
-  object ChainableTemporaryCredentials
   
   @JSImport("aws-sdk/global", "CognitoIdentityCredentials")
   @js.native
@@ -53,8 +51,6 @@ object globalMod {
     def this(options: CognitoIdentityOptions) = this()
     def this(options: CognitoIdentityOptions, clientConfig: typings.awsSdk.configBaseMod.ConfigurationOptions) = this()
   }
-  // Needed to expose interfaces on the class
-  object CognitoIdentityCredentials
   
   @JSImport("aws-sdk/global", "Config")
   @js.native
@@ -335,8 +331,6 @@ object globalMod {
     def this(options: TemporaryCredentialsOptions) = this()
     def this(options: TemporaryCredentialsOptions, masterCredentials: typings.awsSdk.credentialsMod.Credentials) = this()
   }
-  // Needed to expose interfaces on the class
-  object TemporaryCredentials
   
   @JSImport("aws-sdk/global", "TokenFileWebIdentityCredentials")
   @js.native
@@ -368,8 +362,6 @@ object globalMod {
       clientConfig: typings.awsSdk.configBaseMod.ConfigurationOptions
     ) = this()
   }
-  // Needed to expose interfaces on the class
-  object WebIdentityCredentials
   
   @JSImport("aws-sdk/global", "config")
   @js.native

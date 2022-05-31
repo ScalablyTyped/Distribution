@@ -5,7 +5,6 @@ import typings.babylonjs.mathLikeMod.IVector3Like
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object thinSpriteMod {
@@ -20,21 +19,21 @@ object thinSpriteMod {
     /** @hidden */
     def _animate(deltaTime: Double): Unit = js.native
     
-    var _animationStarted: js.Any = js.native
+    /* private */ var _animationStarted: js.Any = js.native
     
-    var _delay: Double = js.native
+    /* protected */ var _delay: Double = js.native
     
-    var _direction: js.Any = js.native
+    /* private */ var _direction: js.Any = js.native
     
-    var _fromIndex: Double = js.native
+    /* protected */ var _fromIndex: Double = js.native
     
-    var _loopAnimation: Boolean = js.native
+    /* protected */ var _loopAnimation: Boolean = js.native
     
-    var _onBaseAnimationEnd: js.Any = js.native
+    /* private */ var _onBaseAnimationEnd: js.Any = js.native
     
-    var _time: js.Any = js.native
+    /* private */ var _time: js.Any = js.native
     
-    var _toIndex: Double = js.native
+    /* protected */ var _toIndex: Double = js.native
     
     /** @hidden */
     var _xOffset: Double = js.native

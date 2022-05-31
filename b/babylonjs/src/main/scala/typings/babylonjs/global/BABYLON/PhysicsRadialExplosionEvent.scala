@@ -2,7 +2,6 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("BABYLON.PhysicsRadialExplosionEvent")
 @js.native
 class PhysicsRadialExplosionEvent protected ()
-  extends typings.babylonjs.BABYLON.PhysicsRadialExplosionEvent {
+  extends StObject
+     with typings.babylonjs.BABYLON.PhysicsRadialExplosionEvent {
   /**
     * Initializes a radial explosioin event
     * @param _scene BabylonJS scene

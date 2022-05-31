@@ -6,9 +6,9 @@ import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IExtension
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IRenderer
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IRendererFactory
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IRendererOptions
+import typings.luminoMessaging.mod.Message
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -31,7 +31,29 @@ object mod extends Shortcut {
       */
     def this(options: IRendererOptions) = this()
     
-    var _mimeType: js.Any = js.native
+    /* private */ var _mimeType: js.Any = js.native
+    
+    /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* InferMemberOverrides */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * Process a message sent to the handler.
+      *
+      * @param msg - The message to be processed.
+      */
+    /* InferMemberOverrides */
+    override def processMessage(msg: Message): Unit = js.native
   }
   
   @JSImport("@jupyterlab/json-extension", "rendererFactory")

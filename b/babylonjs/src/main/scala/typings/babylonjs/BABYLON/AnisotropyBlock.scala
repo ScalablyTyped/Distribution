@@ -2,13 +2,14 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnisotropyBlock extends NodeMaterialBlock {
+trait AnisotropyBlock
+  extends StObject
+     with NodeMaterialBlock {
   
-  var _generateTBNSpace: js.Any = js.native
+  /* private */ var _generateTBNSpace: js.Any = js.native
   
   /**
     * Gets the anisotropy object output component

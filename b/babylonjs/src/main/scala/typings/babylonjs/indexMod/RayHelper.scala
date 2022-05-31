@@ -2,7 +2,6 @@ package typings.babylonjs.indexMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "RayHelper")
@@ -21,6 +20,10 @@ class RayHelper protected ()
 /* static members */
 object RayHelper {
   
+  @JSImport("babylonjs/index", "RayHelper")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Helper function to create a colored helper in a scene in one line.
     * @param ray Defines the ray we are currently tryin to visualize
@@ -28,11 +31,9 @@ object RayHelper {
     * @param color Defines the color we want to see the ray in
     * @returns The newly created ray helper.
     */
-  @JSImport("babylonjs/index", "RayHelper.CreateAndShow")
-  @js.native
-  def CreateAndShow(
+  inline def CreateAndShow(
     ray: typings.babylonjs.rayMod.Ray,
     scene: typings.babylonjs.sceneMod.Scene,
     color: typings.babylonjs.mathColorMod.Color3
-  ): typings.babylonjs.rayHelperMod.RayHelper = js.native
+  ): typings.babylonjs.rayHelperMod.RayHelper = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndShow")(ray.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rayHelperMod.RayHelper]
 }

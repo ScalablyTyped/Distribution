@@ -2,7 +2,6 @@ package typings.babylonjs.legacyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "LineEdgesRenderer")
@@ -19,12 +18,12 @@ class LineEdgesRenderer protected ()
   def this(source: typings.babylonjs.abstractMeshMod.AbstractMesh, epsilon: Double) = this()
   def this(
     source: typings.babylonjs.abstractMeshMod.AbstractMesh,
-    epsilon: js.UndefOr[scala.Nothing],
+    epsilon: Double,
     checkVerticesInsteadOfIndices: Boolean
   ) = this()
   def this(
     source: typings.babylonjs.abstractMeshMod.AbstractMesh,
-    epsilon: Double,
+    epsilon: Unit,
     checkVerticesInsteadOfIndices: Boolean
   ) = this()
 }

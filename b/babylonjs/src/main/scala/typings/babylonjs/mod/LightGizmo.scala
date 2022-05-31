@@ -2,7 +2,6 @@ package typings.babylonjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "LightGizmo")
@@ -25,14 +24,12 @@ object LightGizmo {
   @JSImport("babylonjs", "LightGizmo._CreateDirectionalLightMesh")
   @js.native
   def _CreateDirectionalLightMesh: js.Any = js.native
-  @scala.inline
-  def _CreateDirectionalLightMesh_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateDirectionalLightMesh")(x.asInstanceOf[js.Any])
+  inline def _CreateDirectionalLightMesh_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateDirectionalLightMesh")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs", "LightGizmo._CreateHemisphericLightMesh")
   @js.native
   def _CreateHemisphericLightMesh: js.Any = js.native
-  @scala.inline
-  def _CreateHemisphericLightMesh_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateHemisphericLightMesh")(x.asInstanceOf[js.Any])
+  inline def _CreateHemisphericLightMesh_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateHemisphericLightMesh")(x.asInstanceOf[js.Any])
   
   /**
     * Creates the lines for a light mesh
@@ -40,24 +37,20 @@ object LightGizmo {
   @JSImport("babylonjs", "LightGizmo._CreateLightLines")
   @js.native
   def _CreateLightLines: js.Any = js.native
-  @scala.inline
-  def _CreateLightLines_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateLightLines")(x.asInstanceOf[js.Any])
+  inline def _CreateLightLines_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateLightLines")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs", "LightGizmo._CreatePointLightMesh")
   @js.native
   def _CreatePointLightMesh: js.Any = js.native
-  @scala.inline
-  def _CreatePointLightMesh_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreatePointLightMesh")(x.asInstanceOf[js.Any])
+  inline def _CreatePointLightMesh_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreatePointLightMesh")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs", "LightGizmo._CreateSpotLightMesh")
   @js.native
   def _CreateSpotLightMesh: js.Any = js.native
-  @scala.inline
-  def _CreateSpotLightMesh_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateSpotLightMesh")(x.asInstanceOf[js.Any])
+  inline def _CreateSpotLightMesh_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateSpotLightMesh")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs", "LightGizmo._Scale")
   @js.native
   def _Scale: js.Any = js.native
-  @scala.inline
-  def _Scale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Scale")(x.asInstanceOf[js.Any])
+  inline def _Scale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Scale")(x.asInstanceOf[js.Any])
 }

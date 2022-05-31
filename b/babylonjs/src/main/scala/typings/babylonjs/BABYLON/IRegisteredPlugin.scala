@@ -2,29 +2,26 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines a plugin registered by the SceneLoader
   */
-@js.native
 trait IRegisteredPlugin extends StObject {
   
   /**
     * Defines if the plugin supports binary data
     */
-  var isBinary: Boolean = js.native
+  var isBinary: Boolean
   
   /**
     * Defines the plugin to use
     */
-  var plugin: ISceneLoaderPlugin | ISceneLoaderPluginAsync | ISceneLoaderPluginFactory = js.native
+  var plugin: ISceneLoaderPlugin | ISceneLoaderPluginAsync | ISceneLoaderPluginFactory
 }
 object IRegisteredPlugin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isBinary: Boolean,
     plugin: ISceneLoaderPlugin | ISceneLoaderPluginAsync | ISceneLoaderPluginFactory
   ): IRegisteredPlugin = {
@@ -32,13 +29,10 @@ object IRegisteredPlugin {
     __obj.asInstanceOf[IRegisteredPlugin]
   }
   
-  @scala.inline
-  implicit class IRegisteredPluginMutableBuilder[Self <: IRegisteredPlugin] (val x: Self) extends AnyVal {
+  extension [Self <: IRegisteredPlugin](x: Self) {
     
-    @scala.inline
-    def setIsBinary(value: Boolean): Self = StObject.set(x, "isBinary", value.asInstanceOf[js.Any])
+    inline def setIsBinary(value: Boolean): Self = StObject.set(x, "isBinary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlugin(value: ISceneLoaderPlugin | ISceneLoaderPluginAsync | ISceneLoaderPluginFactory): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+    inline def setPlugin(value: ISceneLoaderPlugin | ISceneLoaderPluginAsync | ISceneLoaderPluginFactory): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
   }
 }

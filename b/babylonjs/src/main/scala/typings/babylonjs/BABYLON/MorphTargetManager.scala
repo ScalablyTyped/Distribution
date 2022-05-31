@@ -3,37 +3,36 @@ package typings.babylonjs.BABYLON
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MorphTargetManager extends StObject {
   
-  var _activeTargets: js.Any = js.native
+  /* private */ var _activeTargets: js.Any = js.native
   
-  var _influences: js.Any = js.native
+  /* private */ var _influences: js.Any = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
-  var _supportsNormals: js.Any = js.native
+  /* private */ var _supportsNormals: js.Any = js.native
   
-  var _supportsTangents: js.Any = js.native
+  /* private */ var _supportsTangents: js.Any = js.native
   
-  var _supportsUVs: js.Any = js.native
+  /* private */ var _supportsUVs: js.Any = js.native
   
-  var _syncActiveTargets: js.Any = js.native
+  /* private */ var _syncActiveTargets: js.Any = js.native
   
-  var _targetDataLayoutChangedObservers: js.Any = js.native
+  /* private */ var _targetDataLayoutChangedObservers: js.Any = js.native
   
-  var _targetInfluenceChangedObservers: js.Any = js.native
+  /* private */ var _targetInfluenceChangedObservers: js.Any = js.native
   
-  var _targets: js.Any = js.native
+  /* private */ var _targets: js.Any = js.native
   
-  var _tempInfluences: js.Any = js.native
+  /* private */ var _tempInfluences: js.Any = js.native
   
-  var _uniqueId: js.Any = js.native
+  /* private */ var _uniqueId: js.Any = js.native
   
-  var _vertexCount: js.Any = js.native
+  /* private */ var _vertexCount: js.Any = js.native
   
   /**
     * Add a new target to this manager

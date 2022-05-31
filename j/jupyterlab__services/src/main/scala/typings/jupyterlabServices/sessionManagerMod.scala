@@ -14,7 +14,6 @@ import typings.luminoSignaling.mod.ISignal
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sessionManagerMod {
@@ -31,32 +30,32 @@ object sessionManagerMod {
       */
     def this(options: IOptions) = this()
     
-    val _connectToKernel: js.Any = js.native
+    /* private */ val _connectToKernel: js.Any = js.native
     
-    var _connectionFailure: js.Any = js.native
+    /* private */ var _connectionFailure: js.Any = js.native
     
-    var _isReady: js.Any = js.native
+    /* private */ var _isReady: js.Any = js.native
     
-    var _kernelManager: js.Any = js.native
+    /* private */ var _kernelManager: js.Any = js.native
     
-    var _models: js.Any = js.native
+    /* private */ var _models: js.Any = js.native
     
-    var _onChanged: js.Any = js.native
+    /* private */ var _onChanged: js.Any = js.native
     
-    var _onDisposed: js.Any = js.native
+    /* private */ var _onDisposed: js.Any = js.native
     
     /**
       * Handle a session starting.
       */
-    var _onStarted: js.Any = js.native
+    /* private */ var _onStarted: js.Any = js.native
     
-    var _pollModels: js.Any = js.native
+    /* private */ var _pollModels: js.Any = js.native
     
-    var _ready: js.Any = js.native
+    /* private */ var _ready: js.Any = js.native
     
-    var _runningChanged: js.Any = js.native
+    /* private */ var _runningChanged: js.Any = js.native
     
-    var _sessionConnections: js.Any = js.native
+    /* private */ var _sessionConnections: js.Any = js.native
     
     /**
       * Connect to a running session.
@@ -227,39 +226,34 @@ object sessionManagerMod {
     /**
       * The options used to initialize a SessionManager.
       */
-    @js.native
     trait IOptions
-      extends typings.jupyterlabServices.basemanagerMod.BaseManager.IOptions {
+      extends StObject
+         with typings.jupyterlabServices.basemanagerMod.BaseManager.IOptions {
       
       /**
         * Kernel Manager
         */
-      var kernelManager: IManager = js.native
+      var kernelManager: IManager
       
       /**
         * When the manager stops polling the API. Defaults to `when-hidden`.
         */
-      var standby: js.UndefOr[Standby] = js.native
+      var standby: js.UndefOr[Standby] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(kernelManager: IManager): IOptions = {
+      inline def apply(kernelManager: IManager): IOptions = {
         val __obj = js.Dynamic.literal(kernelManager = kernelManager.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setKernelManager(value: IManager): Self = StObject.set(x, "kernelManager", value.asInstanceOf[js.Any])
+        inline def setKernelManager(value: IManager): Self = StObject.set(x, "kernelManager", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStandby(value: Standby): Self = StObject.set(x, "standby", value.asInstanceOf[js.Any])
+        inline def setStandby(value: Standby): Self = StObject.set(x, "standby", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStandbyUndefined: Self = StObject.set(x, "standby", js.undefined)
+        inline def setStandbyUndefined: Self = StObject.set(x, "standby", js.undefined)
       }
     }
   }

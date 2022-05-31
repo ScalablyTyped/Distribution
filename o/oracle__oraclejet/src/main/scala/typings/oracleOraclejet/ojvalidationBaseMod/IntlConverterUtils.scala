@@ -4,47 +4,28 @@ import typings.oracleOraclejet.ojvalidationBaseMod.Validation.RegisteredConverte
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object IntlConverterUtils {
   
-  @JSImport("@oracle/oraclejet/ojvalidation-base", "IntlConverterUtils.dateToLocalIso")
+  @JSImport("@oracle/oraclejet/ojvalidation-base", "IntlConverterUtils")
   @js.native
-  def dateToLocalIso(date: Date): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@oracle/oraclejet/ojvalidation-base", "IntlConverterUtils.getConverterInstance")
-  @js.native
-  def getConverterInstance[T](converterOption: String): Converter[T] | Null = js.native
-  @JSImport("@oracle/oraclejet/ojvalidation-base", "IntlConverterUtils.getConverterInstance")
-  @js.native
-  def getConverterInstance[T](converterOption: Converter[T]): Converter[T] | Null = js.native
-  @JSImport("@oracle/oraclejet/ojvalidation-base", "IntlConverterUtils.getConverterInstance")
-  @js.native
-  def getConverterInstance[T](converterOption: RegisteredConverter): Converter[T] | Null = js.native
+  inline def dateToLocalIso(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dateToLocalIso")(date.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@oracle/oraclejet/ojvalidation-base", "IntlConverterUtils.getInitials")
-  @js.native
-  def getInitials(): js.UndefOr[String] = js.native
-  @JSImport("@oracle/oraclejet/ojvalidation-base", "IntlConverterUtils.getInitials")
-  @js.native
-  def getInitials(firstName: js.UndefOr[scala.Nothing], lastName: String): js.UndefOr[String] = js.native
-  @JSImport("@oracle/oraclejet/ojvalidation-base", "IntlConverterUtils.getInitials")
-  @js.native
-  def getInitials(firstName: String): js.UndefOr[String] = js.native
-  @JSImport("@oracle/oraclejet/ojvalidation-base", "IntlConverterUtils.getInitials")
-  @js.native
-  def getInitials(firstName: String, lastName: String): js.UndefOr[String] = js.native
+  inline def getConverterInstance[T](converterOption: String): Converter[T] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getConverterInstance")(converterOption.asInstanceOf[js.Any]).asInstanceOf[Converter[T] | Null]
+  inline def getConverterInstance[T](converterOption: Converter[T]): Converter[T] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getConverterInstance")(converterOption.asInstanceOf[js.Any]).asInstanceOf[Converter[T] | Null]
+  inline def getConverterInstance[T](converterOption: RegisteredConverter): Converter[T] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getConverterInstance")(converterOption.asInstanceOf[js.Any]).asInstanceOf[Converter[T] | Null]
   
-  @JSImport("@oracle/oraclejet/ojvalidation-base", "IntlConverterUtils.getLocalTimeZoneOffset")
-  @js.native
-  def getLocalTimeZoneOffset(): String = js.native
+  inline def getInitials(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitials")().asInstanceOf[js.UndefOr[String]]
+  inline def getInitials(firstName: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitials")(firstName.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def getInitials(firstName: String, lastName: String): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInitials")(firstName.asInstanceOf[js.Any], lastName.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def getInitials(firstName: Unit, lastName: String): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInitials")(firstName.asInstanceOf[js.Any], lastName.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
-  @JSImport("@oracle/oraclejet/ojvalidation-base", "IntlConverterUtils.isoToDate")
-  @js.native
-  def isoToDate(isoString: String): Date = js.native
+  inline def getLocalTimeZoneOffset(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalTimeZoneOffset")().asInstanceOf[String]
   
-  @JSImport("@oracle/oraclejet/ojvalidation-base", "IntlConverterUtils.isoToLocalDate")
-  @js.native
-  def isoToLocalDate(isoString: String): Date = js.native
+  inline def isoToDate(isoString: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("isoToDate")(isoString.asInstanceOf[js.Any]).asInstanceOf[Date]
+  
+  inline def isoToLocalDate(isoString: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("isoToLocalDate")(isoString.asInstanceOf[js.Any]).asInstanceOf[Date]
 }

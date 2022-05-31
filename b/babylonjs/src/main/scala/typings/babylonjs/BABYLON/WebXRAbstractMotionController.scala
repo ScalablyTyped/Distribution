@@ -5,11 +5,12 @@ import typings.babylonjs.XRFrame
 import typings.babylonjs.anon.Filename
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebXRAbstractMotionController extends IDisposable {
+trait WebXRAbstractMotionController
+  extends StObject
+     with IDisposable {
   
   /* protected */ def _getChildByName(node: AbstractMesh, name: String): js.UndefOr[AbstractMesh] = js.native
   
@@ -19,9 +20,9 @@ trait WebXRAbstractMotionController extends IDisposable {
     */
   /* protected */ def _getFilenameAndPath(): Filename = js.native
   
-  var _getGenericFilenameAndPath: js.Any = js.native
+  /* private */ var _getGenericFilenameAndPath: js.Any = js.native
   
-  var _getGenericParentMesh: js.Any = js.native
+  /* private */ var _getGenericParentMesh: js.Any = js.native
   
   /* protected */ def _getImmediateChildByName(node: AbstractMesh, name: String): js.UndefOr[AbstractMesh] = js.native
   
@@ -33,7 +34,7 @@ trait WebXRAbstractMotionController extends IDisposable {
     */
   /* protected */ def _getModelLoadingConstraints(): Boolean = js.native
   
-  var _initComponent: js.Any = js.native
+  /* private */ var _initComponent: js.Any = js.native
   
   /**
     * Moves the axis on the controller mesh based on its current state
@@ -44,7 +45,7 @@ trait WebXRAbstractMotionController extends IDisposable {
   /* protected */ def _lerpTransform(axisMap: IMotionControllerMeshMap, axisValue: Double): Unit = js.native
   /* protected */ def _lerpTransform(axisMap: IMotionControllerMeshMap, axisValue: Double, fixValueCoordinates: Boolean): Unit = js.native
   
-  var _modelReady: js.Any = js.native
+  /* private */ var _modelReady: js.Any = js.native
   
   /**
     * This function will be called after the model was successfully loaded and can be used
@@ -124,7 +125,7 @@ trait WebXRAbstractMotionController extends IDisposable {
     */
   def handness: XREye = js.native
   
-  var layout: IMotionControllerLayout = js.native
+  /* protected */ var layout: IMotionControllerLayout = js.native
   
   /**
     * Loads the model correlating to this controller
@@ -161,7 +162,7 @@ trait WebXRAbstractMotionController extends IDisposable {
     */
   var rootMesh: Nullable[AbstractMesh] = js.native
   
-  var scene: Scene = js.native
+  /* protected */ var scene: Scene = js.native
   
   /**
     * Update this model using the current XRFrame

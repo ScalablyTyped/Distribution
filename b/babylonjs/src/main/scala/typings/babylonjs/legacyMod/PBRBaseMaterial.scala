@@ -2,7 +2,6 @@ package typings.babylonjs.legacyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "PBRBaseMaterial")
@@ -31,8 +30,7 @@ object PBRBaseMaterial {
   @JSImport("babylonjs/Legacy/legacy", "PBRBaseMaterial.DEFAULT_AO_ON_ANALYTICAL_LIGHTS")
   @js.native
   def DEFAULT_AO_ON_ANALYTICAL_LIGHTS: Double = js.native
-  @scala.inline
-  def DEFAULT_AO_ON_ANALYTICAL_LIGHTS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_AO_ON_ANALYTICAL_LIGHTS")(x.asInstanceOf[js.Any])
+  inline def DEFAULT_AO_ON_ANALYTICAL_LIGHTS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_AO_ON_ANALYTICAL_LIGHTS")(x.asInstanceOf[js.Any])
   
   /**
     * PBRMaterialLightFalloff gltf: light is falling off as described in the gltf moving to PBR document

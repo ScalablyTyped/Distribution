@@ -2,45 +2,46 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebXRControllerPointerSelection extends WebXRAbstractFeature {
+trait WebXRControllerPointerSelection
+  extends StObject
+     with WebXRAbstractFeature {
   
-  var _attachController: js.Any = js.native
+  /* private */ var _attachController: js.Any = js.native
   
-  var _attachGazeMode: js.Any = js.native
+  /* private */ var _attachGazeMode: js.Any = js.native
   
-  var _attachScreenRayMode: js.Any = js.native
+  /* private */ var _attachScreenRayMode: js.Any = js.native
   
-  var _attachTrackedPointerRayMode: js.Any = js.native
+  /* private */ var _attachTrackedPointerRayMode: js.Any = js.native
   
-  var _attachedController: js.Any = js.native
+  /* private */ var _attachedController: js.Any = js.native
   
-  var _controllers: js.Any = js.native
+  /* private */ var _controllers: js.Any = js.native
   
-  var _convertNormalToDirectionOfRay: js.Any = js.native
+  /* private */ var _convertNormalToDirectionOfRay: js.Any = js.native
   
-  var _detachController: js.Any = js.native
+  /* private */ var _detachController: js.Any = js.native
   
-  var _generateNewMeshPair: js.Any = js.native
+  /* private */ var _generateNewMeshPair: js.Any = js.native
   
-  var _identityMatrix: js.Any = js.native
+  /* private */ var _identityMatrix: js.Any = js.native
   
-  val _options: js.Any = js.native
+  /* private */ val _options: js.Any = js.native
   
-  var _pickingMoved: js.Any = js.native
+  /* private */ var _pickingMoved: js.Any = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
-  var _screenCoordinatesRef: js.Any = js.native
+  /* private */ var _screenCoordinatesRef: js.Any = js.native
   
-  var _tmpVectorForPickCompare: js.Any = js.native
+  /* private */ var _tmpVectorForPickCompare: js.Any = js.native
   
-  var _updatePointerDistance: js.Any = js.native
+  /* private */ var _updatePointerDistance: js.Any = js.native
   
-  var _viewportRef: js.Any = js.native
+  /* private */ var _viewportRef: js.Any = js.native
   
   /**
     * Disable lighting on the laser pointer (so it will always be visible)

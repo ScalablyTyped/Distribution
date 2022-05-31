@@ -2,35 +2,28 @@ package typings.babylonjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XRHitTestResult extends StObject {
   
   // When anchor system is enabled
-  var createAnchor: js.UndefOr[js.Function1[/* pose */ XRRigidTransform, js.Promise[XRAnchor]]] = js.native
+  var createAnchor: js.UndefOr[js.Function1[/* pose */ XRRigidTransform, js.Promise[XRAnchor]]] = js.undefined
   
-  def getPose(baseSpace: XRSpace): js.UndefOr[XRPose] = js.native
+  def getPose(baseSpace: XRSpace): js.UndefOr[XRPose]
 }
 object XRHitTestResult {
   
-  @scala.inline
-  def apply(getPose: XRSpace => js.UndefOr[XRPose]): XRHitTestResult = {
+  inline def apply(getPose: XRSpace => js.UndefOr[XRPose]): XRHitTestResult = {
     val __obj = js.Dynamic.literal(getPose = js.Any.fromFunction1(getPose))
     __obj.asInstanceOf[XRHitTestResult]
   }
   
-  @scala.inline
-  implicit class XRHitTestResultMutableBuilder[Self <: XRHitTestResult] (val x: Self) extends AnyVal {
+  extension [Self <: XRHitTestResult](x: Self) {
     
-    @scala.inline
-    def setCreateAnchor(value: /* pose */ XRRigidTransform => js.Promise[XRAnchor]): Self = StObject.set(x, "createAnchor", js.Any.fromFunction1(value))
+    inline def setCreateAnchor(value: /* pose */ XRRigidTransform => js.Promise[XRAnchor]): Self = StObject.set(x, "createAnchor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateAnchorUndefined: Self = StObject.set(x, "createAnchor", js.undefined)
+    inline def setCreateAnchorUndefined: Self = StObject.set(x, "createAnchor", js.undefined)
     
-    @scala.inline
-    def setGetPose(value: XRSpace => js.UndefOr[XRPose]): Self = StObject.set(x, "getPose", js.Any.fromFunction1(value))
+    inline def setGetPose(value: XRSpace => js.UndefOr[XRPose]): Self = StObject.set(x, "getPose", js.Any.fromFunction1(value))
   }
 }

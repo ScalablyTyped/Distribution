@@ -4,7 +4,6 @@ import typings.babylonjs.nodeMaterialBlockConnectionPointTypesMod.NodeMaterialBl
 import typings.babylonjs.nodeMaterialBlockTargetsMod.NodeMaterialBlockTargets
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Materials/Node/Blocks/index", "InputBlock")
@@ -19,6 +18,6 @@ class InputBlock protected ()
     */
   def this(name: String) = this()
   def this(name: String, target: NodeMaterialBlockTargets) = this()
-  def this(name: String, target: js.UndefOr[scala.Nothing], `type`: NodeMaterialBlockConnectionPointTypes) = this()
+  def this(name: String, target: Unit, `type`: NodeMaterialBlockConnectionPointTypes) = this()
   def this(name: String, target: NodeMaterialBlockTargets, `type`: NodeMaterialBlockConnectionPointTypes) = this()
 }

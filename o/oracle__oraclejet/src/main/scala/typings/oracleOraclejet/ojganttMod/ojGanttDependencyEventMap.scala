@@ -24,34 +24,33 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ojGanttDependencyEventMap extends HTMLElementEventMap {
+trait ojGanttDependencyEventMap
+  extends StObject
+     with HTMLElementEventMap {
   
   var predecessorTaskIdChanged: JetElementCustomEvent[
     /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttDependency['predecessorTaskId'] */ js.Any
-  ] = js.native
+  ]
   
-  var shortDescChanged: JetElementCustomEvent[String | Null] = js.native
+  var shortDescChanged: JetElementCustomEvent[String | Null]
   
   var successorTaskIdChanged: JetElementCustomEvent[
     /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttDependency['successorTaskId'] */ js.Any
-  ] = js.native
+  ]
   
-  var svgClassNameChanged: JetElementCustomEvent[String] = js.native
+  var svgClassNameChanged: JetElementCustomEvent[String]
   
   var svgStyleChanged: JetElementCustomEvent[
     /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttDependency['svgStyle'] */ js.Any
-  ] = js.native
+  ]
   
-  var typeChanged: JetElementCustomEvent[finishStart | finishFinish | startStart | startFinish] = js.native
+  var typeChanged: JetElementCustomEvent[finishStart | finishFinish | startStart | startFinish]
 }
 object ojGanttDependencyEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,
@@ -161,37 +160,30 @@ object ojGanttDependencyEventMap {
     __obj.asInstanceOf[ojGanttDependencyEventMap]
   }
   
-  @scala.inline
-  implicit class ojGanttDependencyEventMapMutableBuilder[Self <: ojGanttDependencyEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: ojGanttDependencyEventMap](x: Self) {
     
-    @scala.inline
-    def setPredecessorTaskIdChanged(
+    inline def setPredecessorTaskIdChanged(
       value: JetElementCustomEvent[
           /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttDependency['predecessorTaskId'] */ js.Any
         ]
     ): Self = StObject.set(x, "predecessorTaskIdChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortDescChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "shortDescChanged", value.asInstanceOf[js.Any])
+    inline def setShortDescChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "shortDescChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessorTaskIdChanged(
+    inline def setSuccessorTaskIdChanged(
       value: JetElementCustomEvent[
           /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttDependency['successorTaskId'] */ js.Any
         ]
     ): Self = StObject.set(x, "successorTaskIdChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgClassNameChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "svgClassNameChanged", value.asInstanceOf[js.Any])
+    inline def setSvgClassNameChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "svgClassNameChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgStyleChanged(
+    inline def setSvgStyleChanged(
       value: JetElementCustomEvent[
           /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttDependency['svgStyle'] */ js.Any
         ]
     ): Self = StObject.set(x, "svgStyleChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeChanged(value: JetElementCustomEvent[finishStart | finishFinish | startStart | startFinish]): Self = StObject.set(x, "typeChanged", value.asInstanceOf[js.Any])
+    inline def setTypeChanged(value: JetElementCustomEvent[finishStart | finishFinish | startStart | startFinish]): Self = StObject.set(x, "typeChanged", value.asInstanceOf[js.Any])
   }
 }

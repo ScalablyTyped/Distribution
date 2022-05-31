@@ -6,7 +6,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object actionManagerMod {
@@ -26,7 +25,7 @@ object actionManagerMod {
     /** @hidden */
     def _getProperty(propertyPath: String): String = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
     /**
       * Gets hosting scene
@@ -37,14 +36,16 @@ object actionManagerMod {
   /* static members */
   object ActionManager {
     
+    @JSImport("babylonjs/Actions/actionManager", "ActionManager")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get a trigger name by index
       * @param trigger defines the trigger index
       * @returns a trigger name
       */
-    @JSImport("babylonjs/Actions/actionManager", "ActionManager.GetTriggerName")
-    @js.native
-    def GetTriggerName(trigger: Double): String = js.native
+    inline def GetTriggerName(trigger: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetTriggerName")(trigger.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Nothing
@@ -189,8 +190,6 @@ object actionManagerMod {
       * @param object defines the hosting mesh
       * @param scene defines the hosting scene
       */
-    @JSImport("babylonjs/Actions/actionManager", "ActionManager.Parse")
-    @js.native
-    def Parse(parsedActions: js.Any, `object`: Nullable[AbstractMesh], scene: Scene): Unit = js.native
+    inline def Parse(parsedActions: js.Any, `object`: Nullable[AbstractMesh], scene: Scene): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedActions.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

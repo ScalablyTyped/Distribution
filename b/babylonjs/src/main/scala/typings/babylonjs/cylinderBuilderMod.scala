@@ -4,7 +4,6 @@ import typings.babylonjs.anon.Cap
 import typings.babylonjs.meshMod.Mesh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cylinderBuilderMod {
@@ -14,6 +13,10 @@ object cylinderBuilderMod {
   class CylinderBuilder () extends StObject
   /* static members */
   object CylinderBuilder {
+    
+    @JSImport("babylonjs/Meshes/Builders/cylinderBuilder", "CylinderBuilder")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Creates a cylinder or a cone mesh
@@ -43,8 +46,6 @@ object cylinderBuilderMod {
       * @returns the cylinder mesh
       * @see https://doc.babylonjs.com/how_to/set_shapes#cylinder-or-cone
       */
-    @JSImport("babylonjs/Meshes/Builders/cylinderBuilder", "CylinderBuilder.CreateCylinder")
-    @js.native
-    def CreateCylinder(name: String, options: Cap, scene: js.Any): Mesh = js.native
+    inline def CreateCylinder(name: String, options: Cap, scene: js.Any): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCylinder")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
   }
 }

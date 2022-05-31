@@ -10,7 +10,6 @@ import typings.luminoCoreutils.mod.Token
 import typings.nteractTransformVdom.eventToObjectMod.SerializedEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -29,17 +28,17 @@ object mod {
     def this(options: IRendererOptions) = this()
     def this(options: IRendererOptions, context: IContext[IModel]) = this()
     
-    var _comms: js.Any = js.native
+    /* private */ var _comms: js.Any = js.native
     
-    var _mimeType: js.Any = js.native
+    /* private */ var _mimeType: js.Any = js.native
     
-    var _sessionContext: js.Any = js.native
+    /* private */ var _sessionContext: js.Any = js.native
     
-    var _timer: js.Any = js.native
+    /* private */ var _timer: js.Any = js.native
     
     /**
       * Handle events for VDOM element.
       */
-    def handleVDOMEvent(targetName: String, event: SerializedEvent[_]): Unit = js.native
+    def handleVDOMEvent(targetName: String, event: SerializedEvent[js.Any]): Unit = js.native
   }
 }

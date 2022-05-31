@@ -89,30 +89,31 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ojTable[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
+trait ojTable[K, D]
+  extends StObject
+     with baseComponent[ojTableSettableProperties[K, D]] {
   
   var accessibility: RowHeader = js.native
   
   def addEventListener(
     `type`: displayChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[list | grid], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[list | grid], js.Any]
   ): Unit = js.native
   def addEventListener(
     `type`: displayChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[list | grid], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[list | grid], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: editModeChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | rowEdit], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | rowEdit], js.Any]
   ): Unit = js.native
   def addEventListener(
     `type`: editModeChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | rowEdit], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | rowEdit], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
@@ -122,7 +123,7 @@ trait ojTable[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
       /* ev */ JetElementCustomEvent[
         /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtable.ojTable<K, D>['firstSelectedRow'] */ js.Any
       ], 
-      _
+      js.Any
     ]
   ): Unit = js.native
   def addEventListener(
@@ -132,57 +133,81 @@ trait ojTable[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
       /* ev */ JetElementCustomEvent[
         /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtable.ojTable<K, D>['firstSelectedRow'] */ js.Any
       ], 
-      _
+      js.Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: horizontalGridVisibleChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | enabled | disabled], _]
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ JetElementCustomEvent[auto | enabled | disabled], 
+      js.Any
+    ]
   ): Unit = js.native
   def addEventListener(
     `type`: horizontalGridVisibleChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | enabled | disabled], _],
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ JetElementCustomEvent[auto | enabled | disabled], 
+      js.Any
+    ],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: scrollPolicyChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | loadMoreOnScroll], _]
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ JetElementCustomEvent[auto | loadMoreOnScroll], 
+      js.Any
+    ]
   ): Unit = js.native
   def addEventListener(
     `type`: scrollPolicyChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | loadMoreOnScroll], _],
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ JetElementCustomEvent[auto | loadMoreOnScroll], 
+      js.Any
+    ],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: verticalGridVisibleChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | enabled | disabled], _]
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ JetElementCustomEvent[auto | enabled | disabled], 
+      js.Any
+    ]
   ): Unit = js.native
   def addEventListener(
     `type`: verticalGridVisibleChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | enabled | disabled], _],
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ JetElementCustomEvent[auto | enabled | disabled], 
+      js.Any
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_accessibilityChanged(
     `type`: accessibilityChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[RowHeader], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[RowHeader], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_accessibilityChanged(
     `type`: accessibilityChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[RowHeader], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[RowHeader], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_asChanged(
     `type`: asChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_asChanged(
     `type`: asChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -191,7 +216,7 @@ trait ojTable[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[(js.Array[Field[K, D]]) | Null], 
-      _
+      js.Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -200,30 +225,38 @@ trait ojTable[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[(js.Array[Field[K, D]]) | Null], 
-      _
+      js.Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_columnsDefaultChanged(
     `type`: columnsDefaultChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[FooterClassName[K, D]], _]
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ JetElementCustomEvent[FooterClassName[K, D]], 
+      js.Any
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_columnsDefaultChanged(
     `type`: columnsDefaultChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[FooterClassName[K, D]], _],
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ JetElementCustomEvent[FooterClassName[K, D]], 
+      js.Any
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_currentRowChanged(
     `type`: currentRowChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[CurrentRow[K] | Null], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[CurrentRow[K] | Null], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_currentRowChanged(
     `type`: currentRowChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[CurrentRow[K] | Null], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[CurrentRow[K] | Null], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -232,7 +265,7 @@ trait ojTable[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[(DataProvider[K, D]) | Null], 
-      _
+      js.Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -241,19 +274,19 @@ trait ojTable[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[(DataProvider[K, D]) | Null], 
-      _
+      js.Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dndChanged(
     `type`: dndChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[DropReorder[K, D]], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[DropReorder[K, D]], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dndChanged(
     `type`: dndChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[DropReorder[K, D]], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[DropReorder[K, D]], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -262,7 +295,7 @@ trait ojTable[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojtableMod.ojTable.ojAnimateEnd, 
-      _
+      js.Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -271,7 +304,7 @@ trait ojTable[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojtableMod.ojTable.ojAnimateEnd, 
-      _
+      js.Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -281,7 +314,7 @@ trait ojTable[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojtableMod.ojTable.ojAnimateStart, 
-      _
+      js.Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -290,7 +323,7 @@ trait ojTable[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojtableMod.ojTable.ojAnimateStart, 
-      _
+      js.Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -300,7 +333,7 @@ trait ojTable[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojtableMod.ojTable.ojBeforeCurrentRow[K], 
-      _
+      js.Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -309,7 +342,7 @@ trait ojTable[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojtableMod.ojTable.ojBeforeCurrentRow[K], 
-      _
+      js.Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -319,7 +352,7 @@ trait ojTable[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojtableMod.ojTable.ojBeforeRowEdit, 
-      _
+      js.Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -328,7 +361,7 @@ trait ojTable[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojtableMod.ojTable.ojBeforeRowEdit, 
-      _
+      js.Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -338,7 +371,7 @@ trait ojTable[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojtableMod.ojTable.ojBeforeRowEditEnd, 
-      _
+      js.Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -347,7 +380,7 @@ trait ojTable[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojtableMod.ojTable.ojBeforeRowEditEnd, 
-      _
+      js.Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -357,7 +390,7 @@ trait ojTable[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojtableMod.ojTable.ojSort, 
-      _
+      js.Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -366,7 +399,7 @@ trait ojTable[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojtableMod.ojTable.ojSort, 
-      _
+      js.Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -378,7 +411,7 @@ trait ojTable[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
       /* ev */ JetElementCustomEvent[
         (js.Function1[/* context */ RowRendererContext[K, D], String | HTMLElement | Unit]) | Null
       ], 
-      _
+      js.Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -389,30 +422,30 @@ trait ojTable[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
       /* ev */ JetElementCustomEvent[
         (js.Function1[/* context */ RowRendererContext[K, D], String | HTMLElement | Unit]) | Null
       ], 
-      _
+      js.Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_scrollPolicyOptionsChanged(
     `type`: scrollPolicyOptionsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[MaxCount], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[MaxCount], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_scrollPolicyOptionsChanged(
     `type`: scrollPolicyOptionsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[MaxCount], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[MaxCount], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_scrollPositionChanged(
     `type`: scrollPositionChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ColumnKey], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ColumnKey], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_scrollPositionChanged(
     `type`: scrollPositionChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ColumnKey], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ColumnKey], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -422,10 +455,10 @@ trait ojTable[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
         js.Array[
-          (RowSelectionStart[K] with RowSelectionEnd[K]) | (ColumnSelectionStart[K] with ColumnSelectionEnd[K])
+          (RowSelectionStart[K] & RowSelectionEnd[K]) | (ColumnSelectionStart[K] & ColumnSelectionEnd[K])
         ]
       ], 
-      _
+      js.Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -435,33 +468,33 @@ trait ojTable[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
         js.Array[
-          (RowSelectionStart[K] with RowSelectionEnd[K]) | (ColumnSelectionStart[K] with ColumnSelectionEnd[K])
+          (RowSelectionStart[K] & RowSelectionEnd[K]) | (ColumnSelectionStart[K] & ColumnSelectionEnd[K])
         ]
       ], 
-      _
+      js.Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_selectionModeChanged(
     `type`: selectionModeChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`21`], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`21`], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_selectionModeChanged(
     `type`: selectionModeChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`21`], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`21`], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_selectionRequiredChanged(
     `type`: selectionRequiredChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_selectionRequiredChanged(
     `type`: selectionRequiredChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   
@@ -519,7 +552,7 @@ trait ojTable[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
   def getProperty_scrollPosition(property: scrollPosition): ColumnKey = js.native
   @JSName("getProperty")
   def getProperty_selection(property: selection): js.Array[
-    (RowSelectionStart[K] with RowSelectionEnd[K]) | (ColumnSelectionStart[K] with ColumnSelectionEnd[K])
+    (RowSelectionStart[K] & RowSelectionEnd[K]) | (ColumnSelectionStart[K] & ColumnSelectionEnd[K])
   ] = js.native
   @JSName("getProperty")
   def getProperty_selectionMode(property: selectionMode): `21` = js.native
@@ -530,72 +563,75 @@ trait ojTable[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
   
   var horizontalGridVisible: auto | enabled | disabled = js.native
   
-  var onAccessibilityChanged: (js.Function1[/* event */ JetElementCustomEvent[RowHeader], _]) | Null = js.native
+  var onAccessibilityChanged: (js.Function1[/* event */ JetElementCustomEvent[RowHeader], js.Any]) | Null = js.native
   
-  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], js.Any]) | Null = js.native
   
-  var onColumnsChanged: (js.Function1[/* event */ JetElementCustomEvent[(js.Array[Field[K, D]]) | Null], _]) | Null = js.native
+  var onColumnsChanged: (js.Function1[/* event */ JetElementCustomEvent[(js.Array[Field[K, D]]) | Null], js.Any]) | Null = js.native
   
-  var onColumnsDefaultChanged: (js.Function1[/* event */ JetElementCustomEvent[FooterClassName[K, D]], _]) | Null = js.native
+  var onColumnsDefaultChanged: (js.Function1[/* event */ JetElementCustomEvent[FooterClassName[K, D]], js.Any]) | Null = js.native
   
-  var onCurrentRowChanged: (js.Function1[/* event */ JetElementCustomEvent[CurrentRow[K] | Null], _]) | Null = js.native
+  var onCurrentRowChanged: (js.Function1[/* event */ JetElementCustomEvent[CurrentRow[K] | Null], js.Any]) | Null = js.native
   
-  var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K, D]) | Null], _]) | Null = js.native
+  var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K, D]) | Null], js.Any]) | Null = js.native
   
-  var onDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[list | grid], _]) | Null = js.native
+  var onDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[list | grid], js.Any]) | Null = js.native
   
-  var onDndChanged: (js.Function1[/* event */ JetElementCustomEvent[DropReorder[K, D]], _]) | Null = js.native
+  var onDndChanged: (js.Function1[/* event */ JetElementCustomEvent[DropReorder[K, D]], js.Any]) | Null = js.native
   
-  var onEditModeChanged: (js.Function1[/* event */ JetElementCustomEvent[none | rowEdit], _]) | Null = js.native
+  var onEditModeChanged: (js.Function1[/* event */ JetElementCustomEvent[none | rowEdit], js.Any]) | Null = js.native
   
   var onFirstSelectedRowChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
       /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtable.ojTable<K, D>['firstSelectedRow'] */ js.Any
     ], 
-    _
+    js.Any
   ]) | Null = js.native
   
-  var onHorizontalGridVisibleChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | enabled | disabled], _]) | Null = js.native
+  var onHorizontalGridVisibleChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | enabled | disabled], js.Any]) | Null = js.native
   
-  var onOjAnimateEnd: (js.Function1[/* event */ typings.oracleOraclejet.ojtableMod.ojTable.ojAnimateEnd, _]) | Null = js.native
+  var onOjAnimateEnd: (js.Function1[/* event */ typings.oracleOraclejet.ojtableMod.ojTable.ojAnimateEnd, js.Any]) | Null = js.native
   
-  var onOjAnimateStart: (js.Function1[/* event */ typings.oracleOraclejet.ojtableMod.ojTable.ojAnimateStart, _]) | Null = js.native
+  var onOjAnimateStart: (js.Function1[/* event */ typings.oracleOraclejet.ojtableMod.ojTable.ojAnimateStart, js.Any]) | Null = js.native
   
-  var onOjBeforeCurrentRow: (js.Function1[/* event */ typings.oracleOraclejet.ojtableMod.ojTable.ojBeforeCurrentRow[K], _]) | Null = js.native
+  var onOjBeforeCurrentRow: (js.Function1[
+    /* event */ typings.oracleOraclejet.ojtableMod.ojTable.ojBeforeCurrentRow[K], 
+    js.Any
+  ]) | Null = js.native
   
-  var onOjBeforeRowEdit: (js.Function1[/* event */ typings.oracleOraclejet.ojtableMod.ojTable.ojBeforeRowEdit, _]) | Null = js.native
+  var onOjBeforeRowEdit: (js.Function1[/* event */ typings.oracleOraclejet.ojtableMod.ojTable.ojBeforeRowEdit, js.Any]) | Null = js.native
   
-  var onOjBeforeRowEditEnd: (js.Function1[/* event */ typings.oracleOraclejet.ojtableMod.ojTable.ojBeforeRowEditEnd, _]) | Null = js.native
+  var onOjBeforeRowEditEnd: (js.Function1[/* event */ typings.oracleOraclejet.ojtableMod.ojTable.ojBeforeRowEditEnd, js.Any]) | Null = js.native
   
-  var onOjSort: (js.Function1[/* event */ typings.oracleOraclejet.ojtableMod.ojTable.ojSort, _]) | Null = js.native
+  var onOjSort: (js.Function1[/* event */ typings.oracleOraclejet.ojtableMod.ojTable.ojSort, js.Any]) | Null = js.native
   
   var onRowRendererChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
       (js.Function1[/* context */ RowRendererContext[K, D], String | HTMLElement | Unit]) | Null
     ], 
-    _
+    js.Any
   ]) | Null = js.native
   
-  var onScrollPolicyChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | loadMoreOnScroll], _]) | Null = js.native
+  var onScrollPolicyChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | loadMoreOnScroll], js.Any]) | Null = js.native
   
-  var onScrollPolicyOptionsChanged: (js.Function1[/* event */ JetElementCustomEvent[MaxCount], _]) | Null = js.native
+  var onScrollPolicyOptionsChanged: (js.Function1[/* event */ JetElementCustomEvent[MaxCount], js.Any]) | Null = js.native
   
-  var onScrollPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[ColumnKey], _]) | Null = js.native
+  var onScrollPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[ColumnKey], js.Any]) | Null = js.native
   
   var onSelectionChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
       js.Array[
-        (RowSelectionStart[K] with RowSelectionEnd[K]) | (ColumnSelectionStart[K] with ColumnSelectionEnd[K])
+        (RowSelectionStart[K] & RowSelectionEnd[K]) | (ColumnSelectionStart[K] & ColumnSelectionEnd[K])
       ]
     ], 
-    _
+    js.Any
   ]) | Null = js.native
   
-  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[`21`], _]) | Null = js.native
+  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[`21`], js.Any]) | Null = js.native
   
-  var onSelectionRequiredChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
+  var onSelectionRequiredChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], js.Any]) | Null = js.native
   
-  var onVerticalGridVisibleChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | enabled | disabled], _]) | Null = js.native
+  var onVerticalGridVisibleChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | enabled | disabled], js.Any]) | Null = js.native
   
   def refreshRow(rowIdx: Double): js.Promise[Boolean] = js.native
   
@@ -608,7 +644,7 @@ trait ojTable[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
   var scrollPosition: ColumnKey = js.native
   
   var selection: js.Array[
-    (RowSelectionStart[K] with RowSelectionEnd[K]) | (ColumnSelectionStart[K] with ColumnSelectionEnd[K])
+    (RowSelectionStart[K] & RowSelectionEnd[K]) | (ColumnSelectionStart[K] & ColumnSelectionEnd[K])
   ] = js.native
   
   var selectionMode: `21` = js.native
@@ -666,7 +702,7 @@ trait ojTable[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
   def setProperty_selection(
     property: selection,
     value: js.Array[
-      RowSelectionStart[K] with RowSelectionEnd[K] with ColumnSelectionStart[K] with ColumnSelectionEnd[K]
+      RowSelectionStart[K] & RowSelectionEnd[K] & ColumnSelectionStart[K] & ColumnSelectionEnd[K]
     ]
   ): Unit = js.native
   @JSName("setProperty")
@@ -690,14 +726,12 @@ object ojTable {
   trait ColumnSelectionEnd[K] extends StObject
   object ColumnSelectionEnd {
     
-    @scala.inline
-    def EndIndex[K](endIndex: ColumnNumber): typings.oracleOraclejet.anon.EndIndex[K] = {
+    inline def EndIndex[K](endIndex: ColumnNumber): typings.oracleOraclejet.anon.EndIndex[K] = {
       val __obj = js.Dynamic.literal(endIndex = endIndex.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.oracleOraclejet.anon.EndIndex[K]]
     }
     
-    @scala.inline
-    def EndKey[K](endKey: `22`[K]): typings.oracleOraclejet.anon.EndKey[K] = {
+    inline def EndKey[K](endKey: `22`[K]): typings.oracleOraclejet.anon.EndKey[K] = {
       val __obj = js.Dynamic.literal(endKey = endKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.oracleOraclejet.anon.EndKey[K]]
     }
@@ -710,39 +744,35 @@ object ojTable {
   trait ColumnSelectionStart[K] extends StObject
   object ColumnSelectionStart {
     
-    @scala.inline
-    def StartIndexStartKey[K](startKey: `22`[K]): typings.oracleOraclejet.anon.StartIndexStartKey[K] = {
+    inline def StartIndexStartKey[K](startKey: `22`[K]): typings.oracleOraclejet.anon.StartIndexStartKey[K] = {
       val __obj = js.Dynamic.literal(startKey = startKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.oracleOraclejet.anon.StartIndexStartKey[K]]
     }
     
-    @scala.inline
-    def StartKey[K](startIndex: ColumnNumber): typings.oracleOraclejet.anon.StartKey[K] = {
+    inline def StartKey[K](startIndex: ColumnNumber): typings.oracleOraclejet.anon.StartKey[K] = {
       val __obj = js.Dynamic.literal(startIndex = startIndex.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.oracleOraclejet.anon.StartKey[K]]
     }
   }
   
   // tslint:disable-next-line interface-over-type-literal
-  @js.native
   trait ColumnsRendererContext[K, D] extends StObject {
     
-    var cellContext: Datasource[K, D] = js.native
+    var cellContext: Datasource[K, D]
     
-    var columnIndex: Double = js.native
+    var columnIndex: Double
     
-    var componentElement: Element = js.native
+    var componentElement: Element
     
-    var data: D = js.native
+    var data: D
     
-    var parentElement: Element = js.native
+    var parentElement: Element
     
-    var row: StringDictionary[js.Any] = js.native
+    var row: StringDictionary[js.Any]
   }
   object ColumnsRendererContext {
     
-    @scala.inline
-    def apply[K, D](
+    inline def apply[K, D](
       cellContext: Datasource[K, D],
       columnIndex: Double,
       componentElement: Element,
@@ -754,58 +784,45 @@ object ojTable {
       __obj.asInstanceOf[ColumnsRendererContext[K, D]]
     }
     
-    @scala.inline
-    implicit class ColumnsRendererContextMutableBuilder[Self <: ColumnsRendererContext[_, _], K, D] (val x: Self with (ColumnsRendererContext[K, D])) extends AnyVal {
+    extension [Self <: ColumnsRendererContext[?, ?], K, D](x: Self & (ColumnsRendererContext[K, D])) {
       
-      @scala.inline
-      def setCellContext(value: Datasource[K, D]): Self = StObject.set(x, "cellContext", value.asInstanceOf[js.Any])
+      inline def setCellContext(value: Datasource[K, D]): Self = StObject.set(x, "cellContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+      inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentElement(value: Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
+      inline def setComponentElement(value: Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentElement(value: Element): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
+      inline def setParentElement(value: Element): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRow(value: StringDictionary[js.Any]): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: StringDictionary[js.Any]): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     }
   }
   
   // tslint:disable-next-line interface-over-type-literal
-  @js.native
   trait ContextStatus[K] extends StObject {
     
-    var currentRow: CurrentRow[K] = js.native
+    var currentRow: CurrentRow[K]
     
-    var rowIndex: Double = js.native
+    var rowIndex: Double
     
-    var rowKey: K = js.native
+    var rowKey: K
   }
   object ContextStatus {
     
-    @scala.inline
-    def apply[K](currentRow: CurrentRow[K], rowIndex: Double, rowKey: K): ContextStatus[K] = {
+    inline def apply[K](currentRow: CurrentRow[K], rowIndex: Double, rowKey: K): ContextStatus[K] = {
       val __obj = js.Dynamic.literal(currentRow = currentRow.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any], rowKey = rowKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[ContextStatus[K]]
     }
     
-    @scala.inline
-    implicit class ContextStatusMutableBuilder[Self <: ContextStatus[_], K] (val x: Self with ContextStatus[K]) extends AnyVal {
+    extension [Self <: ContextStatus[?], K](x: Self & ContextStatus[K]) {
       
-      @scala.inline
-      def setCurrentRow(value: CurrentRow[K]): Self = StObject.set(x, "currentRow", value.asInstanceOf[js.Any])
+      inline def setCurrentRow(value: CurrentRow[K]): Self = StObject.set(x, "currentRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+      inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowKey(value: K): Self = StObject.set(x, "rowKey", value.asInstanceOf[js.Any])
+      inline def setRowKey(value: K): Self = StObject.set(x, "rowKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -816,127 +833,104 @@ object ojTable {
   trait CurrentRow[K] extends StObject
   object CurrentRow {
     
-    @scala.inline
-    def RowIndexRowKey[K](rowKey: K): typings.oracleOraclejet.anon.RowIndexRowKey[K] = {
+    inline def RowIndexRowKey[K](rowKey: K): typings.oracleOraclejet.anon.RowIndexRowKey[K] = {
       val __obj = js.Dynamic.literal(rowKey = rowKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.oracleOraclejet.anon.RowIndexRowKey[K]]
     }
     
-    @scala.inline
-    def RowKey[K](rowIndex: Double): typings.oracleOraclejet.anon.RowKey[K] = {
+    inline def RowKey[K](rowIndex: Double): typings.oracleOraclejet.anon.RowKey[K] = {
       val __obj = js.Dynamic.literal(rowIndex = rowIndex.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.oracleOraclejet.anon.RowKey[K]]
     }
   }
   
   // tslint:disable-next-line interface-over-type-literal
-  @js.native
   trait DragRowContext[K, D] extends StObject {
     
-    var rows: js.Array[DataIndex[D, K]] = js.native
+    var rows: js.Array[DataIndex[D, K]]
   }
   object DragRowContext {
     
-    @scala.inline
-    def apply[K, D](rows: js.Array[DataIndex[D, K]]): DragRowContext[K, D] = {
+    inline def apply[K, D](rows: js.Array[DataIndex[D, K]]): DragRowContext[K, D] = {
       val __obj = js.Dynamic.literal(rows = rows.asInstanceOf[js.Any])
       __obj.asInstanceOf[DragRowContext[K, D]]
     }
     
-    @scala.inline
-    implicit class DragRowContextMutableBuilder[Self <: DragRowContext[_, _], K, D] (val x: Self with (DragRowContext[K, D])) extends AnyVal {
+    extension [Self <: DragRowContext[?, ?], K, D](x: Self & (DragRowContext[K, D])) {
       
-      @scala.inline
-      def setRows(value: js.Array[DataIndex[D, K]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: js.Array[DataIndex[D, K]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowsVarargs(value: (DataIndex[D, K])*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: (DataIndex[D, K])*): Self = StObject.set(x, "rows", js.Array(value :_*))
     }
   }
   
   // tslint:disable-next-line interface-over-type-literal
-  @js.native
   trait DropColumnContext extends StObject {
     
-    var columnIndex: Double = js.native
+    var columnIndex: Double
   }
   object DropColumnContext {
     
-    @scala.inline
-    def apply(columnIndex: Double): DropColumnContext = {
+    inline def apply(columnIndex: Double): DropColumnContext = {
       val __obj = js.Dynamic.literal(columnIndex = columnIndex.asInstanceOf[js.Any])
       __obj.asInstanceOf[DropColumnContext]
     }
     
-    @scala.inline
-    implicit class DropColumnContextMutableBuilder[Self <: DropColumnContext] (val x: Self) extends AnyVal {
+    extension [Self <: DropColumnContext](x: Self) {
       
-      @scala.inline
-      def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+      inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     }
   }
   
   // tslint:disable-next-line interface-over-type-literal
-  @js.native
   trait DropRowContext extends StObject {
     
-    var rowIndex: Double = js.native
+    var rowIndex: Double
   }
   object DropRowContext {
     
-    @scala.inline
-    def apply(rowIndex: Double): DropRowContext = {
+    inline def apply(rowIndex: Double): DropRowContext = {
       val __obj = js.Dynamic.literal(rowIndex = rowIndex.asInstanceOf[js.Any])
       __obj.asInstanceOf[DropRowContext]
     }
     
-    @scala.inline
-    implicit class DropRowContextMutableBuilder[Self <: DropRowContext] (val x: Self) extends AnyVal {
+    extension [Self <: DropRowContext](x: Self) {
       
-      @scala.inline
-      def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+      inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     }
   }
   
   // tslint:disable-next-line interface-over-type-literal
-  @js.native
   trait FooterRendererContext[K, D] extends StObject {
     
-    var columnIndex: Double = js.native
+    var columnIndex: Double
     
-    var componentElement: Element = js.native
+    var componentElement: Element
     
-    var footerContext: `23`[K, D] = js.native
+    var footerContext: `23`[K, D]
     
-    var parentElement: Element = js.native
+    var parentElement: Element
   }
   object FooterRendererContext {
     
-    @scala.inline
-    def apply[K, D](columnIndex: Double, componentElement: Element, footerContext: `23`[K, D], parentElement: Element): FooterRendererContext[K, D] = {
+    inline def apply[K, D](columnIndex: Double, componentElement: Element, footerContext: `23`[K, D], parentElement: Element): FooterRendererContext[K, D] = {
       val __obj = js.Dynamic.literal(columnIndex = columnIndex.asInstanceOf[js.Any], componentElement = componentElement.asInstanceOf[js.Any], footerContext = footerContext.asInstanceOf[js.Any], parentElement = parentElement.asInstanceOf[js.Any])
       __obj.asInstanceOf[FooterRendererContext[K, D]]
     }
     
-    @scala.inline
-    implicit class FooterRendererContextMutableBuilder[Self <: FooterRendererContext[_, _], K, D] (val x: Self with (FooterRendererContext[K, D])) extends AnyVal {
+    extension [Self <: FooterRendererContext[?, ?], K, D](x: Self & (FooterRendererContext[K, D])) {
       
-      @scala.inline
-      def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+      inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentElement(value: Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
+      inline def setComponentElement(value: Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooterContext(value: `23`[K, D]): Self = StObject.set(x, "footerContext", value.asInstanceOf[js.Any])
+      inline def setFooterContext(value: `23`[K, D]): Self = StObject.set(x, "footerContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentElement(value: Element): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
+      inline def setParentElement(value: Element): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
     }
   }
   
   // tslint:disable-next-line interface-over-type-literal
-  @js.native
   trait HeaderRendererContext[K, D] extends StObject {
     
     var columnHeaderDefaultRenderer: js.UndefOr[
@@ -945,7 +939,7 @@ object ojTable {
           /* param1 */ js.Function1[/* param0 */ js.Object, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var columnHeaderSortableIconRenderer: js.UndefOr[
         js.Function2[
@@ -953,22 +947,21 @@ object ojTable {
           /* param1 */ js.Function1[/* param0 */ js.Object, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var columnIndex: Double = js.native
+    var columnIndex: Double
     
-    var componentElement: Element = js.native
+    var componentElement: Element
     
-    var data: String = js.native
+    var data: String
     
-    var headerContext: `23`[K, D] = js.native
+    var headerContext: `23`[K, D]
     
-    var parentElement: Element = js.native
+    var parentElement: Element
   }
   object HeaderRendererContext {
     
-    @scala.inline
-    def apply[K, D](
+    inline def apply[K, D](
       columnIndex: Double,
       componentElement: Element,
       data: String,
@@ -979,54 +972,42 @@ object ojTable {
       __obj.asInstanceOf[HeaderRendererContext[K, D]]
     }
     
-    @scala.inline
-    implicit class HeaderRendererContextMutableBuilder[Self <: HeaderRendererContext[_, _], K, D] (val x: Self with (HeaderRendererContext[K, D])) extends AnyVal {
+    extension [Self <: HeaderRendererContext[?, ?], K, D](x: Self & (HeaderRendererContext[K, D])) {
       
-      @scala.inline
-      def setColumnHeaderDefaultRenderer(value: (/* param0 */ js.Object, /* param1 */ js.Function1[/* param0 */ js.Object, Unit]) => Unit): Self = StObject.set(x, "columnHeaderDefaultRenderer", js.Any.fromFunction2(value))
+      inline def setColumnHeaderDefaultRenderer(value: (/* param0 */ js.Object, /* param1 */ js.Function1[/* param0 */ js.Object, Unit]) => Unit): Self = StObject.set(x, "columnHeaderDefaultRenderer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setColumnHeaderDefaultRendererUndefined: Self = StObject.set(x, "columnHeaderDefaultRenderer", js.undefined)
+      inline def setColumnHeaderDefaultRendererUndefined: Self = StObject.set(x, "columnHeaderDefaultRenderer", js.undefined)
       
-      @scala.inline
-      def setColumnHeaderSortableIconRenderer(value: (/* param0 */ js.Object, /* param1 */ js.Function1[/* param0 */ js.Object, Unit]) => Unit): Self = StObject.set(x, "columnHeaderSortableIconRenderer", js.Any.fromFunction2(value))
+      inline def setColumnHeaderSortableIconRenderer(value: (/* param0 */ js.Object, /* param1 */ js.Function1[/* param0 */ js.Object, Unit]) => Unit): Self = StObject.set(x, "columnHeaderSortableIconRenderer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setColumnHeaderSortableIconRendererUndefined: Self = StObject.set(x, "columnHeaderSortableIconRenderer", js.undefined)
+      inline def setColumnHeaderSortableIconRendererUndefined: Self = StObject.set(x, "columnHeaderSortableIconRenderer", js.undefined)
       
-      @scala.inline
-      def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+      inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentElement(value: Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
+      inline def setComponentElement(value: Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderContext(value: `23`[K, D]): Self = StObject.set(x, "headerContext", value.asInstanceOf[js.Any])
+      inline def setHeaderContext(value: `23`[K, D]): Self = StObject.set(x, "headerContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentElement(value: Element): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
+      inline def setParentElement(value: Element): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
     }
   }
   
   // tslint:disable-next-line interface-over-type-literal
-  @js.native
   trait RowRendererContext[K, D] extends StObject {
     
-    var componentElement: Element = js.native
+    var componentElement: Element
     
-    var data: StringDictionary[js.Any] = js.native
+    var data: StringDictionary[js.Any]
     
-    var parentElement: Element = js.native
+    var parentElement: Element
     
-    var rowContext: Datasource[K, D] = js.native
+    var rowContext: Datasource[K, D]
   }
   object RowRendererContext {
     
-    @scala.inline
-    def apply[K, D](
+    inline def apply[K, D](
       componentElement: Element,
       data: StringDictionary[js.Any],
       parentElement: Element,
@@ -1036,20 +1017,15 @@ object ojTable {
       __obj.asInstanceOf[RowRendererContext[K, D]]
     }
     
-    @scala.inline
-    implicit class RowRendererContextMutableBuilder[Self <: RowRendererContext[_, _], K, D] (val x: Self with (RowRendererContext[K, D])) extends AnyVal {
+    extension [Self <: RowRendererContext[?, ?], K, D](x: Self & (RowRendererContext[K, D])) {
       
-      @scala.inline
-      def setComponentElement(value: Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
+      inline def setComponentElement(value: Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentElement(value: Element): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
+      inline def setParentElement(value: Element): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowContext(value: Datasource[K, D]): Self = StObject.set(x, "rowContext", value.asInstanceOf[js.Any])
+      inline def setRowContext(value: Datasource[K, D]): Self = StObject.set(x, "rowContext", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1060,14 +1036,12 @@ object ojTable {
   trait RowSelectionEnd[K] extends StObject
   object RowSelectionEnd {
     
-    @scala.inline
-    def EndIndexEndKey[K](endIndex: `24`): typings.oracleOraclejet.anon.EndIndexEndKey[K] = {
+    inline def EndIndexEndKey[K](endIndex: `24`): typings.oracleOraclejet.anon.EndIndexEndKey[K] = {
       val __obj = js.Dynamic.literal(endIndex = endIndex.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.oracleOraclejet.anon.EndIndexEndKey[K]]
     }
     
-    @scala.inline
-    def EndKey25[K](endKey: `25`[K]): typings.oracleOraclejet.anon.EndKey25[K] = {
+    inline def EndKey25[K](endKey: `25`[K]): typings.oracleOraclejet.anon.EndKey25[K] = {
       val __obj = js.Dynamic.literal(endKey = endKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.oracleOraclejet.anon.EndKey25[K]]
     }
@@ -1080,14 +1054,12 @@ object ojTable {
   trait RowSelectionStart[K] extends StObject
   object RowSelectionStart {
     
-    @scala.inline
-    def StartIndex24[K](startIndex: `24`): typings.oracleOraclejet.anon.StartIndex24[K] = {
+    inline def StartIndex24[K](startIndex: `24`): typings.oracleOraclejet.anon.StartIndex24[K] = {
       val __obj = js.Dynamic.literal(startIndex = startIndex.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.oracleOraclejet.anon.StartIndex24[K]]
     }
     
-    @scala.inline
-    def StartKey25[K](startKey: `25`[K]): typings.oracleOraclejet.anon.StartKey25[K] = {
+    inline def StartKey25[K](startKey: `25`[K]): typings.oracleOraclejet.anon.StartKey25[K] = {
       val __obj = js.Dynamic.literal(startKey = startKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.oracleOraclejet.anon.StartKey25[K]]
     }

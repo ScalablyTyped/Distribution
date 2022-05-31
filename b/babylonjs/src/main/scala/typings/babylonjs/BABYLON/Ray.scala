@@ -2,15 +2,14 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Ray extends StObject {
   
-  var _comparePickingInfo: js.Any = js.native
+  /* private */ var _comparePickingInfo: js.Any = js.native
   
-  var _tmpRay: js.Any = js.native
+  /* private */ var _tmpRay: js.Any = js.native
   
   /** direction */
   var direction: Vector3 = js.native
@@ -71,13 +70,9 @@ trait Ray extends StObject {
     * @returns Array of picking infos
     */
   def intersectsMeshes(meshes: js.Array[DeepImmutable[AbstractMesh]]): js.Array[PickingInfo] = js.native
-  def intersectsMeshes(
-    meshes: js.Array[DeepImmutable[AbstractMesh]],
-    fastCheck: js.UndefOr[scala.Nothing],
-    results: js.Array[PickingInfo]
-  ): js.Array[PickingInfo] = js.native
   def intersectsMeshes(meshes: js.Array[DeepImmutable[AbstractMesh]], fastCheck: Boolean): js.Array[PickingInfo] = js.native
   def intersectsMeshes(meshes: js.Array[DeepImmutable[AbstractMesh]], fastCheck: Boolean, results: js.Array[PickingInfo]): js.Array[PickingInfo] = js.native
+  def intersectsMeshes(meshes: js.Array[DeepImmutable[AbstractMesh]], fastCheck: Unit, results: js.Array[PickingInfo]): js.Array[PickingInfo] = js.native
   
   /**
     * Checks if ray intersects a plane

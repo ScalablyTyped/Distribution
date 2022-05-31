@@ -2,7 +2,6 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -13,7 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.babylonjs.BABYLON.IMaterialAnisotropicDefines because var conflicts: _areTexturesDirty, _needUVs. Inlined ANISOTROPIC, ANISOTROPIC_TEXTURE, ANISOTROPIC_TEXTUREDIRECTUV, MAINUV1
 - typings.babylonjs.BABYLON.IMaterialClearCoatDefines because var conflicts: _areTexturesDirty. Inlined CLEARCOAT, CLEARCOAT_DEFAULTIOR, CLEARCOAT_TEXTURE, CLEARCOAT_TEXTURE_ROUGHNESS, CLEARCOAT_TEXTUREDIRECTUV, CLEARCOAT_TEXTURE_ROUGHNESSDIRECTUV, CLEARCOAT_BUMP, CLEARCOAT_BUMPDIRECTUV, CLEARCOAT_USE_ROUGHNESS_FROM_MAINTEXTURE, CLEARCOAT_TEXTURE_ROUGHNESS_IDENTICAL, CLEARCOAT_REMAP_F0, CLEARCOAT_TINT, CLEARCOAT_TINT_TEXTURE, CLEARCOAT_TINT_TEXTUREDIRECTUV */ @js.native
 trait PBRMaterialDefines
-  extends MaterialDefines
+  extends StObject
+     with MaterialDefines
      with IImageProcessingConfigurationDefines {
   
   var ALBEDO: Boolean = js.native

@@ -2,11 +2,12 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RefractionBlock extends NodeMaterialBlock {
+trait RefractionBlock
+  extends StObject
+     with NodeMaterialBlock {
   
   /** @hidden */
   var _2DSamplerName: String = js.native
@@ -31,7 +32,7 @@ trait RefractionBlock extends NodeMaterialBlock {
   /** @hidden */
   var _refractionMatrixName: String = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
   /** @hidden */
   var _vRefractionFilteringInfoName: String = js.native

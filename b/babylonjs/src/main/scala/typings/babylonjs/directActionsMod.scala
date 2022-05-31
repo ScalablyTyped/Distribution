@@ -5,7 +5,6 @@ import typings.babylonjs.actionMod.Action
 import typings.babylonjs.conditionMod.Condition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object directActionsMod {
@@ -37,8 +36,8 @@ object directActionsMod {
     */
   class DoNothingAction () extends Action {
     def this(triggerOptions: js.Any) = this()
-    def this(triggerOptions: js.UndefOr[scala.Nothing], condition: Condition) = this()
     def this(triggerOptions: js.Any, condition: Condition) = this()
+    def this(triggerOptions: Unit, condition: Condition) = this()
   }
   
   @JSImport("babylonjs/Actions/directActions", "ExecuteCodeAction")
@@ -73,11 +72,11 @@ object directActionsMod {
     def this(triggerOptions: js.Any, target: js.Any, propertyPath: String, value: js.Any) = this()
     def this(triggerOptions: js.Any, target: js.Any, propertyPath: String, value: js.Any, condition: Condition) = this()
     
-    var _effectiveTarget: js.Any = js.native
+    /* private */ var _effectiveTarget: js.Any = js.native
     
-    var _property: js.Any = js.native
+    /* private */ var _property: js.Any = js.native
     
-    var _target: js.Any = js.native
+    /* private */ var _target: js.Any = js.native
     
     /**
       * The path of the property to increment in the target.
@@ -109,19 +108,12 @@ object directActionsMod {
       target: js.Any,
       from: Double,
       to: Double,
-      loop: js.UndefOr[scala.Nothing],
-      condition: Condition
-    ) = this()
-    def this(
-      triggerOptions: js.Any,
-      target: js.Any,
-      from: Double,
-      to: Double,
       loop: Boolean,
       condition: Condition
     ) = this()
+    def this(triggerOptions: js.Any, target: js.Any, from: Double, to: Double, loop: Unit, condition: Condition) = this()
     
-    var _target: js.Any = js.native
+    /* private */ var _target: js.Any = js.native
     
     /**
       * Where the animation should start (animation frame)
@@ -152,9 +144,9 @@ object directActionsMod {
     def this(triggerOptions: js.Any, target: js.Any, parent: js.Any) = this()
     def this(triggerOptions: js.Any, target: js.Any, parent: js.Any, condition: Condition) = this()
     
-    var _parent: js.Any = js.native
+    /* private */ var _parent: js.Any = js.native
     
-    var _target: js.Any = js.native
+    /* private */ var _target: js.Any = js.native
   }
   
   @JSImport("babylonjs/Actions/directActions", "SetStateAction")
@@ -170,7 +162,7 @@ object directActionsMod {
     def this(triggerOptions: js.Any, target: js.Any, value: String) = this()
     def this(triggerOptions: js.Any, target: js.Any, value: String, condition: Condition) = this()
     
-    var _target: js.Any = js.native
+    /* private */ var _target: js.Any = js.native
     
     /**
       * The value to store in the state field.
@@ -192,11 +184,11 @@ object directActionsMod {
     def this(triggerOptions: js.Any, target: js.Any, propertyPath: String, value: js.Any) = this()
     def this(triggerOptions: js.Any, target: js.Any, propertyPath: String, value: js.Any, condition: Condition) = this()
     
-    var _effectiveTarget: js.Any = js.native
+    /* private */ var _effectiveTarget: js.Any = js.native
     
-    var _property: js.Any = js.native
+    /* private */ var _property: js.Any = js.native
     
-    var _target: js.Any = js.native
+    /* private */ var _target: js.Any = js.native
     
     /**
       * The path of the property to set in the target.
@@ -221,7 +213,7 @@ object directActionsMod {
     def this(triggerOptions: js.Any, target: js.Any) = this()
     def this(triggerOptions: js.Any, target: js.Any, condition: Condition) = this()
     
-    var _target: js.Any = js.native
+    /* private */ var _target: js.Any = js.native
   }
   
   @JSImport("babylonjs/Actions/directActions", "SwitchBooleanAction")
@@ -237,11 +229,11 @@ object directActionsMod {
     def this(triggerOptions: js.Any, target: js.Any, propertyPath: String) = this()
     def this(triggerOptions: js.Any, target: js.Any, propertyPath: String, condition: Condition) = this()
     
-    var _effectiveTarget: js.Any = js.native
+    /* private */ var _effectiveTarget: js.Any = js.native
     
-    var _property: js.Any = js.native
+    /* private */ var _property: js.Any = js.native
     
-    var _target: js.Any = js.native
+    /* private */ var _target: js.Any = js.native
     
     /**
       * The path to the boolean property in the target object

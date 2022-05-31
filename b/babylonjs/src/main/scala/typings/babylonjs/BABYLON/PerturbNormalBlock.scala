@@ -2,13 +2,14 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PerturbNormalBlock extends NodeMaterialBlock {
+trait PerturbNormalBlock
+  extends StObject
+     with NodeMaterialBlock {
   
-  var _tangentSpaceParameterName: js.Any = js.native
+  /* private */ var _tangentSpaceParameterName: js.Any = js.native
   
   /** Gets or sets a boolean indicating that normal should be inverted on X axis */
   var invertX: Boolean = js.native

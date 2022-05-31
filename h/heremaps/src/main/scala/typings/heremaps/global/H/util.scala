@@ -377,9 +377,4 @@ object util {
       inline def LINEAR(`val`: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("LINEAR")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
     }
   }
-  
-  /**
-    * There is no documentation about this API
-    */
-  object Job
 }

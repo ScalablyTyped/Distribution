@@ -7,7 +7,6 @@ import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.uniformBufferMod.UniformBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object materialDetailMapConfigurationMod {
@@ -22,16 +21,16 @@ object materialDetailMapConfigurationMod {
     def this(markAllSubMeshesAsTexturesDirty: js.Function0[Unit]) = this()
     
     /** @hidden */
-    var _internalMarkAllSubMeshesAsTexturesDirty: js.Any = js.native
+    /* private */ var _internalMarkAllSubMeshesAsTexturesDirty: js.Any = js.native
     
-    var _isEnabled: js.Any = js.native
+    /* private */ var _isEnabled: js.Any = js.native
     
     /** @hidden */
     def _markAllSubMeshesAsTexturesDirty(): Unit = js.native
     
-    var _normalBlendMethod: js.Any = js.native
+    /* private */ var _normalBlendMethod: js.Any = js.native
     
-    var _texture: js.Any = js.native
+    /* private */ var _texture: js.Any = js.native
     
     /**
       * Binds the material data.
@@ -144,47 +143,43 @@ object materialDetailMapConfigurationMod {
   /* static members */
   object DetailMapConfiguration {
     
+    @JSImport("babylonjs/Materials/material.detailMapConfiguration", "DetailMapConfiguration")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Add the required samplers to the current list.
       * @param samplers defines the current sampler list.
       */
-    @JSImport("babylonjs/Materials/material.detailMapConfiguration", "DetailMapConfiguration.AddSamplers")
-    @js.native
-    def AddSamplers(samplers: js.Array[String]): Unit = js.native
+    inline def AddSamplers(samplers: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AddSamplers")(samplers.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Add the required uniforms to the current list.
       * @param uniforms defines the current uniform list.
       */
-    @JSImport("babylonjs/Materials/material.detailMapConfiguration", "DetailMapConfiguration.AddUniforms")
-    @js.native
-    def AddUniforms(uniforms: js.Array[String]): Unit = js.native
+    inline def AddUniforms(uniforms: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AddUniforms")(uniforms.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Add the required uniforms to the current buffer.
       * @param uniformBuffer defines the current uniform buffer.
       */
-    @JSImport("babylonjs/Materials/material.detailMapConfiguration", "DetailMapConfiguration.PrepareUniformBuffer")
-    @js.native
-    def PrepareUniformBuffer(uniformBuffer: UniformBuffer): Unit = js.native
+    inline def PrepareUniformBuffer(uniformBuffer: UniformBuffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("PrepareUniformBuffer")(uniformBuffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @js.native
   trait IMaterialDetailMapDefines extends StObject {
     
-    var DETAIL: Boolean = js.native
+    var DETAIL: Boolean
     
-    var DETAILDIRECTUV: Double = js.native
+    var DETAILDIRECTUV: Double
     
-    var DETAIL_NORMALBLENDMETHOD: Double = js.native
+    var DETAIL_NORMALBLENDMETHOD: Double
     
     /** @hidden */
-    var _areTexturesDirty: Boolean = js.native
+    var _areTexturesDirty: Boolean
   }
   object IMaterialDetailMapDefines {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DETAIL: Boolean,
       DETAILDIRECTUV: Double,
       DETAIL_NORMALBLENDMETHOD: Double,
@@ -194,20 +189,15 @@ object materialDetailMapConfigurationMod {
       __obj.asInstanceOf[IMaterialDetailMapDefines]
     }
     
-    @scala.inline
-    implicit class IMaterialDetailMapDefinesMutableBuilder[Self <: IMaterialDetailMapDefines] (val x: Self) extends AnyVal {
+    extension [Self <: IMaterialDetailMapDefines](x: Self) {
       
-      @scala.inline
-      def setDETAIL(value: Boolean): Self = StObject.set(x, "DETAIL", value.asInstanceOf[js.Any])
+      inline def setDETAIL(value: Boolean): Self = StObject.set(x, "DETAIL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDETAILDIRECTUV(value: Double): Self = StObject.set(x, "DETAILDIRECTUV", value.asInstanceOf[js.Any])
+      inline def setDETAILDIRECTUV(value: Double): Self = StObject.set(x, "DETAILDIRECTUV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDETAIL_NORMALBLENDMETHOD(value: Double): Self = StObject.set(x, "DETAIL_NORMALBLENDMETHOD", value.asInstanceOf[js.Any])
+      inline def setDETAIL_NORMALBLENDMETHOD(value: Double): Self = StObject.set(x, "DETAIL_NORMALBLENDMETHOD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_areTexturesDirty(value: Boolean): Self = StObject.set(x, "_areTexturesDirty", value.asInstanceOf[js.Any])
+      inline def set_areTexturesDirty(value: Boolean): Self = StObject.set(x, "_areTexturesDirty", value.asInstanceOf[js.Any])
     }
   }
 }

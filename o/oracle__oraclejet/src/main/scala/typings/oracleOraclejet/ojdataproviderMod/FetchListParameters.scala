@@ -2,56 +2,43 @@ package typings.oracleOraclejet.ojdataproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FetchListParameters[D] extends StObject {
   
-  var attributes: js.UndefOr[js.Array[String | FetchAttribute]] = js.native
+  var attributes: js.UndefOr[js.Array[String | FetchAttribute]] = js.undefined
   
-  var filterCriterion: js.UndefOr[FilterOperator[D]] = js.native
+  var filterCriterion: js.UndefOr[FilterOperator[D]] = js.undefined
   
-  var size: Double = js.native
+  var size: Double
   
-  var sortCriteria: js.UndefOr[js.Array[SortCriterion[D]]] = js.native
+  var sortCriteria: js.UndefOr[js.Array[SortCriterion[D]]] = js.undefined
 }
 object FetchListParameters {
   
-  @scala.inline
-  def apply[D](size: Double): FetchListParameters[D] = {
+  inline def apply[D](size: Double): FetchListParameters[D] = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchListParameters[D]]
   }
   
-  @scala.inline
-  implicit class FetchListParametersMutableBuilder[Self <: FetchListParameters[_], D] (val x: Self with FetchListParameters[D]) extends AnyVal {
+  extension [Self <: FetchListParameters[?], D](x: Self & FetchListParameters[D]) {
     
-    @scala.inline
-    def setAttributes(value: js.Array[String | FetchAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: js.Array[String | FetchAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setAttributesVarargs(value: (String | FetchAttribute)*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: (String | FetchAttribute)*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
-    @scala.inline
-    def setFilterCriterion(value: FilterOperator[D]): Self = StObject.set(x, "filterCriterion", value.asInstanceOf[js.Any])
+    inline def setFilterCriterion(value: FilterOperator[D]): Self = StObject.set(x, "filterCriterion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterCriterionUndefined: Self = StObject.set(x, "filterCriterion", js.undefined)
+    inline def setFilterCriterionUndefined: Self = StObject.set(x, "filterCriterion", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortCriteria(value: js.Array[SortCriterion[D]]): Self = StObject.set(x, "sortCriteria", value.asInstanceOf[js.Any])
+    inline def setSortCriteria(value: js.Array[SortCriterion[D]]): Self = StObject.set(x, "sortCriteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortCriteriaUndefined: Self = StObject.set(x, "sortCriteria", js.undefined)
+    inline def setSortCriteriaUndefined: Self = StObject.set(x, "sortCriteria", js.undefined)
     
-    @scala.inline
-    def setSortCriteriaVarargs(value: SortCriterion[D]*): Self = StObject.set(x, "sortCriteria", js.Array(value :_*))
+    inline def setSortCriteriaVarargs(value: SortCriterion[D]*): Self = StObject.set(x, "sortCriteria", js.Array(value :_*))
   }
 }

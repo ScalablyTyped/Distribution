@@ -2,21 +2,20 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Observable[T] extends StObject {
   
-  var _deferUnregister: js.Any = js.native
+  /* private */ var _deferUnregister: js.Any = js.native
   
-  var _eventState: js.Any = js.native
+  /* private */ var _eventState: js.Any = js.native
   
-  var _observers: js.Any = js.native
+  /* private */ var _observers: js.Any = js.native
   
-  var _onObserverAdded: js.Any = js.native
+  /* private */ var _onObserverAdded: js.Any = js.native
   
-  var _remove: js.Any = js.native
+  /* private */ var _remove: js.Any = js.native
   
   /**
     * Create a new Observer with the specified callback
@@ -28,88 +27,16 @@ trait Observable[T] extends StObject {
     * @returns the new observer created for the callback
     */
   def add(callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit]): Nullable[Observer[T]] = js.native
-  def add(
-    callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
-    mask: js.UndefOr[scala.Nothing],
-    insertFirst: js.UndefOr[scala.Nothing],
-    scope: js.UndefOr[scala.Nothing],
-    unregisterOnFirstCall: Boolean
-  ): Nullable[Observer[T]] = js.native
-  def add(
-    callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
-    mask: js.UndefOr[scala.Nothing],
-    insertFirst: js.UndefOr[scala.Nothing],
-    scope: js.Any
-  ): Nullable[Observer[T]] = js.native
-  def add(
-    callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
-    mask: js.UndefOr[scala.Nothing],
-    insertFirst: js.UndefOr[scala.Nothing],
-    scope: js.Any,
-    unregisterOnFirstCall: Boolean
-  ): Nullable[Observer[T]] = js.native
-  def add(
-    callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
-    mask: js.UndefOr[scala.Nothing],
-    insertFirst: Boolean
-  ): Nullable[Observer[T]] = js.native
-  def add(
-    callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
-    mask: js.UndefOr[scala.Nothing],
-    insertFirst: Boolean,
-    scope: js.UndefOr[scala.Nothing],
-    unregisterOnFirstCall: Boolean
-  ): Nullable[Observer[T]] = js.native
-  def add(
-    callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
-    mask: js.UndefOr[scala.Nothing],
-    insertFirst: Boolean,
-    scope: js.Any
-  ): Nullable[Observer[T]] = js.native
-  def add(
-    callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
-    mask: js.UndefOr[scala.Nothing],
-    insertFirst: Boolean,
-    scope: js.Any,
-    unregisterOnFirstCall: Boolean
-  ): Nullable[Observer[T]] = js.native
   def add(callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit], mask: Double): Nullable[Observer[T]] = js.native
   def add(
     callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
     mask: Double,
-    insertFirst: js.UndefOr[scala.Nothing],
-    scope: js.UndefOr[scala.Nothing],
-    unregisterOnFirstCall: Boolean
-  ): Nullable[Observer[T]] = js.native
-  def add(
-    callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
-    mask: Double,
-    insertFirst: js.UndefOr[scala.Nothing],
-    scope: js.Any
-  ): Nullable[Observer[T]] = js.native
-  def add(
-    callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
-    mask: Double,
-    insertFirst: js.UndefOr[scala.Nothing],
-    scope: js.Any,
-    unregisterOnFirstCall: Boolean
-  ): Nullable[Observer[T]] = js.native
-  def add(
-    callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
-    mask: Double,
     insertFirst: Boolean
   ): Nullable[Observer[T]] = js.native
   def add(
     callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
     mask: Double,
     insertFirst: Boolean,
-    scope: js.UndefOr[scala.Nothing],
-    unregisterOnFirstCall: Boolean
-  ): Nullable[Observer[T]] = js.native
-  def add(
-    callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
-    mask: Double,
-    insertFirst: Boolean,
     scope: js.Any
   ): Nullable[Observer[T]] = js.native
   def add(
@@ -117,6 +44,78 @@ trait Observable[T] extends StObject {
     mask: Double,
     insertFirst: Boolean,
     scope: js.Any,
+    unregisterOnFirstCall: Boolean
+  ): Nullable[Observer[T]] = js.native
+  def add(
+    callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
+    mask: Double,
+    insertFirst: Boolean,
+    scope: Unit,
+    unregisterOnFirstCall: Boolean
+  ): Nullable[Observer[T]] = js.native
+  def add(
+    callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
+    mask: Double,
+    insertFirst: Unit,
+    scope: js.Any
+  ): Nullable[Observer[T]] = js.native
+  def add(
+    callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
+    mask: Double,
+    insertFirst: Unit,
+    scope: js.Any,
+    unregisterOnFirstCall: Boolean
+  ): Nullable[Observer[T]] = js.native
+  def add(
+    callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
+    mask: Double,
+    insertFirst: Unit,
+    scope: Unit,
+    unregisterOnFirstCall: Boolean
+  ): Nullable[Observer[T]] = js.native
+  def add(
+    callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
+    mask: Unit,
+    insertFirst: Boolean
+  ): Nullable[Observer[T]] = js.native
+  def add(
+    callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
+    mask: Unit,
+    insertFirst: Boolean,
+    scope: js.Any
+  ): Nullable[Observer[T]] = js.native
+  def add(
+    callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
+    mask: Unit,
+    insertFirst: Boolean,
+    scope: js.Any,
+    unregisterOnFirstCall: Boolean
+  ): Nullable[Observer[T]] = js.native
+  def add(
+    callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
+    mask: Unit,
+    insertFirst: Boolean,
+    scope: Unit,
+    unregisterOnFirstCall: Boolean
+  ): Nullable[Observer[T]] = js.native
+  def add(
+    callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
+    mask: Unit,
+    insertFirst: Unit,
+    scope: js.Any
+  ): Nullable[Observer[T]] = js.native
+  def add(
+    callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
+    mask: Unit,
+    insertFirst: Unit,
+    scope: js.Any,
+    unregisterOnFirstCall: Boolean
+  ): Nullable[Observer[T]] = js.native
+  def add(
+    callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
+    mask: Unit,
+    insertFirst: Unit,
+    scope: Unit,
     unregisterOnFirstCall: Boolean
   ): Nullable[Observer[T]] = js.native
   
@@ -178,68 +177,21 @@ trait Observable[T] extends StObject {
     * @returns false if the complete observer chain was not processed (because one observer set the skipNextObservers to true)
     */
   def notifyObservers(eventData: T): Boolean = js.native
-  def notifyObservers(
-    eventData: T,
-    mask: js.UndefOr[scala.Nothing],
-    target: js.UndefOr[scala.Nothing],
-    currentTarget: js.UndefOr[scala.Nothing],
-    userInfo: js.Any
-  ): Boolean = js.native
-  def notifyObservers(
-    eventData: T,
-    mask: js.UndefOr[scala.Nothing],
-    target: js.UndefOr[scala.Nothing],
-    currentTarget: js.Any
-  ): Boolean = js.native
-  def notifyObservers(
-    eventData: T,
-    mask: js.UndefOr[scala.Nothing],
-    target: js.UndefOr[scala.Nothing],
-    currentTarget: js.Any,
-    userInfo: js.Any
-  ): Boolean = js.native
-  def notifyObservers(eventData: T, mask: js.UndefOr[scala.Nothing], target: js.Any): Boolean = js.native
-  def notifyObservers(
-    eventData: T,
-    mask: js.UndefOr[scala.Nothing],
-    target: js.Any,
-    currentTarget: js.UndefOr[scala.Nothing],
-    userInfo: js.Any
-  ): Boolean = js.native
-  def notifyObservers(eventData: T, mask: js.UndefOr[scala.Nothing], target: js.Any, currentTarget: js.Any): Boolean = js.native
-  def notifyObservers(
-    eventData: T,
-    mask: js.UndefOr[scala.Nothing],
-    target: js.Any,
-    currentTarget: js.Any,
-    userInfo: js.Any
-  ): Boolean = js.native
   def notifyObservers(eventData: T, mask: Double): Boolean = js.native
-  def notifyObservers(
-    eventData: T,
-    mask: Double,
-    target: js.UndefOr[scala.Nothing],
-    currentTarget: js.UndefOr[scala.Nothing],
-    userInfo: js.Any
-  ): Boolean = js.native
-  def notifyObservers(eventData: T, mask: Double, target: js.UndefOr[scala.Nothing], currentTarget: js.Any): Boolean = js.native
-  def notifyObservers(
-    eventData: T,
-    mask: Double,
-    target: js.UndefOr[scala.Nothing],
-    currentTarget: js.Any,
-    userInfo: js.Any
-  ): Boolean = js.native
   def notifyObservers(eventData: T, mask: Double, target: js.Any): Boolean = js.native
-  def notifyObservers(
-    eventData: T,
-    mask: Double,
-    target: js.Any,
-    currentTarget: js.UndefOr[scala.Nothing],
-    userInfo: js.Any
-  ): Boolean = js.native
   def notifyObservers(eventData: T, mask: Double, target: js.Any, currentTarget: js.Any): Boolean = js.native
   def notifyObservers(eventData: T, mask: Double, target: js.Any, currentTarget: js.Any, userInfo: js.Any): Boolean = js.native
+  def notifyObservers(eventData: T, mask: Double, target: js.Any, currentTarget: Unit, userInfo: js.Any): Boolean = js.native
+  def notifyObservers(eventData: T, mask: Double, target: Unit, currentTarget: js.Any): Boolean = js.native
+  def notifyObservers(eventData: T, mask: Double, target: Unit, currentTarget: js.Any, userInfo: js.Any): Boolean = js.native
+  def notifyObservers(eventData: T, mask: Double, target: Unit, currentTarget: Unit, userInfo: js.Any): Boolean = js.native
+  def notifyObservers(eventData: T, mask: Unit, target: js.Any): Boolean = js.native
+  def notifyObservers(eventData: T, mask: Unit, target: js.Any, currentTarget: js.Any): Boolean = js.native
+  def notifyObservers(eventData: T, mask: Unit, target: js.Any, currentTarget: js.Any, userInfo: js.Any): Boolean = js.native
+  def notifyObservers(eventData: T, mask: Unit, target: js.Any, currentTarget: Unit, userInfo: js.Any): Boolean = js.native
+  def notifyObservers(eventData: T, mask: Unit, target: Unit, currentTarget: js.Any): Boolean = js.native
+  def notifyObservers(eventData: T, mask: Unit, target: Unit, currentTarget: js.Any, userInfo: js.Any): Boolean = js.native
+  def notifyObservers(eventData: T, mask: Unit, target: Unit, currentTarget: Unit, userInfo: js.Any): Boolean = js.native
   
   /**
     * Calling this will execute each callback, expecting it to be a promise or return a value.
@@ -256,68 +208,21 @@ trait Observable[T] extends StObject {
     * @returns {Promise<T>} will return a Promise than resolves when all callbacks executed successfully.
     */
   def notifyObserversWithPromise(eventData: T): js.Promise[T] = js.native
-  def notifyObserversWithPromise(
-    eventData: T,
-    mask: js.UndefOr[scala.Nothing],
-    target: js.UndefOr[scala.Nothing],
-    currentTarget: js.UndefOr[scala.Nothing],
-    userInfo: js.Any
-  ): js.Promise[T] = js.native
-  def notifyObserversWithPromise(
-    eventData: T,
-    mask: js.UndefOr[scala.Nothing],
-    target: js.UndefOr[scala.Nothing],
-    currentTarget: js.Any
-  ): js.Promise[T] = js.native
-  def notifyObserversWithPromise(
-    eventData: T,
-    mask: js.UndefOr[scala.Nothing],
-    target: js.UndefOr[scala.Nothing],
-    currentTarget: js.Any,
-    userInfo: js.Any
-  ): js.Promise[T] = js.native
-  def notifyObserversWithPromise(eventData: T, mask: js.UndefOr[scala.Nothing], target: js.Any): js.Promise[T] = js.native
-  def notifyObserversWithPromise(
-    eventData: T,
-    mask: js.UndefOr[scala.Nothing],
-    target: js.Any,
-    currentTarget: js.UndefOr[scala.Nothing],
-    userInfo: js.Any
-  ): js.Promise[T] = js.native
-  def notifyObserversWithPromise(eventData: T, mask: js.UndefOr[scala.Nothing], target: js.Any, currentTarget: js.Any): js.Promise[T] = js.native
-  def notifyObserversWithPromise(
-    eventData: T,
-    mask: js.UndefOr[scala.Nothing],
-    target: js.Any,
-    currentTarget: js.Any,
-    userInfo: js.Any
-  ): js.Promise[T] = js.native
   def notifyObserversWithPromise(eventData: T, mask: Double): js.Promise[T] = js.native
-  def notifyObserversWithPromise(
-    eventData: T,
-    mask: Double,
-    target: js.UndefOr[scala.Nothing],
-    currentTarget: js.UndefOr[scala.Nothing],
-    userInfo: js.Any
-  ): js.Promise[T] = js.native
-  def notifyObserversWithPromise(eventData: T, mask: Double, target: js.UndefOr[scala.Nothing], currentTarget: js.Any): js.Promise[T] = js.native
-  def notifyObserversWithPromise(
-    eventData: T,
-    mask: Double,
-    target: js.UndefOr[scala.Nothing],
-    currentTarget: js.Any,
-    userInfo: js.Any
-  ): js.Promise[T] = js.native
   def notifyObserversWithPromise(eventData: T, mask: Double, target: js.Any): js.Promise[T] = js.native
-  def notifyObserversWithPromise(
-    eventData: T,
-    mask: Double,
-    target: js.Any,
-    currentTarget: js.UndefOr[scala.Nothing],
-    userInfo: js.Any
-  ): js.Promise[T] = js.native
   def notifyObserversWithPromise(eventData: T, mask: Double, target: js.Any, currentTarget: js.Any): js.Promise[T] = js.native
   def notifyObserversWithPromise(eventData: T, mask: Double, target: js.Any, currentTarget: js.Any, userInfo: js.Any): js.Promise[T] = js.native
+  def notifyObserversWithPromise(eventData: T, mask: Double, target: js.Any, currentTarget: Unit, userInfo: js.Any): js.Promise[T] = js.native
+  def notifyObserversWithPromise(eventData: T, mask: Double, target: Unit, currentTarget: js.Any): js.Promise[T] = js.native
+  def notifyObserversWithPromise(eventData: T, mask: Double, target: Unit, currentTarget: js.Any, userInfo: js.Any): js.Promise[T] = js.native
+  def notifyObserversWithPromise(eventData: T, mask: Double, target: Unit, currentTarget: Unit, userInfo: js.Any): js.Promise[T] = js.native
+  def notifyObserversWithPromise(eventData: T, mask: Unit, target: js.Any): js.Promise[T] = js.native
+  def notifyObserversWithPromise(eventData: T, mask: Unit, target: js.Any, currentTarget: js.Any): js.Promise[T] = js.native
+  def notifyObserversWithPromise(eventData: T, mask: Unit, target: js.Any, currentTarget: js.Any, userInfo: js.Any): js.Promise[T] = js.native
+  def notifyObserversWithPromise(eventData: T, mask: Unit, target: js.Any, currentTarget: Unit, userInfo: js.Any): js.Promise[T] = js.native
+  def notifyObserversWithPromise(eventData: T, mask: Unit, target: Unit, currentTarget: js.Any): js.Promise[T] = js.native
+  def notifyObserversWithPromise(eventData: T, mask: Unit, target: Unit, currentTarget: js.Any, userInfo: js.Any): js.Promise[T] = js.native
+  def notifyObserversWithPromise(eventData: T, mask: Unit, target: Unit, currentTarget: Unit, userInfo: js.Any): js.Promise[T] = js.native
   
   /**
     * Gets the list of observers

@@ -2,19 +2,18 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BackEase extends EasingFunction {
+trait BackEase
+  extends StObject
+     with EasingFunction {
   
   /** Defines the amplitude of the function */
-  var amplitude: Double = js.native
+  var amplitude: Double
 }
 object BackEase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _easingMode: js.Any,
     amplitude: Double,
     ease: Double => Double,
@@ -26,10 +25,8 @@ object BackEase {
     __obj.asInstanceOf[BackEase]
   }
   
-  @scala.inline
-  implicit class BackEaseMutableBuilder[Self <: BackEase] (val x: Self) extends AnyVal {
+  extension [Self <: BackEase](x: Self) {
     
-    @scala.inline
-    def setAmplitude(value: Double): Self = StObject.set(x, "amplitude", value.asInstanceOf[js.Any])
+    inline def setAmplitude(value: Double): Self = StObject.set(x, "amplitude", value.asInstanceOf[js.Any])
   }
 }

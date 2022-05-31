@@ -174,8 +174,6 @@ object mod {
   /* was `typeof Helmet` */
   @js.native
   trait HelmetExport extends StObject
-  /* was `typeof Helmet` */
-  object HelmetExport
   
   trait HelmetHTMLBodyDatum extends StObject {
     

@@ -2,7 +2,6 @@ package typings.babylonjs.indexMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "UtilityLayerRenderer")
@@ -32,12 +31,10 @@ object UtilityLayerRenderer {
   @JSImport("babylonjs/index", "UtilityLayerRenderer._DefaultKeepDepthUtilityLayer")
   @js.native
   def _DefaultKeepDepthUtilityLayer: js.Any = js.native
-  @scala.inline
-  def _DefaultKeepDepthUtilityLayer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultKeepDepthUtilityLayer")(x.asInstanceOf[js.Any])
+  inline def _DefaultKeepDepthUtilityLayer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultKeepDepthUtilityLayer")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs/index", "UtilityLayerRenderer._DefaultUtilityLayer")
   @js.native
   def _DefaultUtilityLayer: js.Any = js.native
-  @scala.inline
-  def _DefaultUtilityLayer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultUtilityLayer")(x.asInstanceOf[js.Any])
+  inline def _DefaultUtilityLayer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultUtilityLayer")(x.asInstanceOf[js.Any])
 }

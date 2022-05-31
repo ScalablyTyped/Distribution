@@ -1,6 +1,6 @@
 package typings.webix.global.webix
 
-import typings.webix.webix.DataRecordConfig
+import typings.webix.mod.DataRecordConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class DataRecordCls ()
   extends StObject
-     with typings.webix.webix.DataRecord {
+     with typings.webix.mod.DataRecord {
   def this(config: DataRecordConfig) = this()
 }

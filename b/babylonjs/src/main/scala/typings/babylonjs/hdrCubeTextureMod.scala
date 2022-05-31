@@ -8,7 +8,6 @@ import typings.babylonjs.thinEngineMod.ThinEngine
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hdrCubeTextureMod {
@@ -38,30 +37,30 @@ object hdrCubeTextureMod {
       onLoad: js.UndefOr[Nullable[js.Function0[Unit]]],
       onError: js.UndefOr[
             Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
             ]
           ]
     ) = this()
     
-    var _boundingBoxSize: js.Any = js.native
+    /* private */ var _boundingBoxSize: js.Any = js.native
     
-    var _generateHarmonics: js.Any = js.native
+    /* private */ var _generateHarmonics: js.Any = js.native
     
-    var _isBlocking: Boolean = js.native
+    /* protected */ var _isBlocking: Boolean = js.native
     
-    var _noMipmap: js.Any = js.native
+    /* private */ var _noMipmap: js.Any = js.native
     
-    var _onError: js.Any = js.native
+    /* private */ var _onError: js.Any = js.native
     
-    var _onLoad: js.Any = js.native
+    /* private */ var _onLoad: js.Any = js.native
     
-    var _prefilterOnLoad: js.Any = js.native
+    /* private */ var _prefilterOnLoad: js.Any = js.native
     
-    var _rotationY: Double = js.native
+    /* protected */ var _rotationY: Double = js.native
     
-    var _size: js.Any = js.native
+    /* private */ var _size: js.Any = js.native
     
-    var _textureMatrix: js.Any = js.native
+    /* private */ var _textureMatrix: js.Any = js.native
     
     /**
       * Gets or sets the center of the bounding box associated with the cube texture
@@ -86,7 +85,7 @@ object hdrCubeTextureMod {
     /**
       * Occurs when the file is raw .hdr file.
       */
-    var loadTexture: js.Any = js.native
+    /* private */ var loadTexture: js.Any = js.native
     
     /**
       * Gets texture matrix rotation angle around Y axis radians.
@@ -122,14 +121,11 @@ object hdrCubeTextureMod {
       * @param rootUrl Define the root url in case we need to load relative dependencies
       * @returns the newly created texture after parsing
       */
-    @JSImport("babylonjs/Materials/Textures/hdrCubeTexture", "HDRCubeTexture.Parse")
-    @js.native
-    def Parse(parsedTexture: js.Any, scene: Scene, rootUrl: String): Nullable[HDRCubeTexture] = js.native
+    inline def Parse(parsedTexture: js.Any, scene: Scene, rootUrl: String): Nullable[HDRCubeTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[HDRCubeTexture]]
     
     @JSImport("babylonjs/Materials/Textures/hdrCubeTexture", "HDRCubeTexture._facesMapping")
     @js.native
     def _facesMapping: js.Any = js.native
-    @scala.inline
-    def _facesMapping_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_facesMapping")(x.asInstanceOf[js.Any])
+    inline def _facesMapping_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_facesMapping")(x.asInstanceOf[js.Any])
   }
 }

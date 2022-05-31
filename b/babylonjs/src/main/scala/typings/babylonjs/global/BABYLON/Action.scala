@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.Action")
 @js.native
 class Action protected ()
-  extends typings.babylonjs.BABYLON.Action {
+  extends StObject
+     with typings.babylonjs.BABYLON.Action {
   /**
     * Creates a new Action
     * @param triggerOptions the trigger, with or without parameters, for the action
@@ -26,22 +26,20 @@ class Action protected ()
 /* static members */
 object Action {
   
-  @JSGlobal("BABYLON.Action._GetTargetProperty")
+  @JSGlobal("BABYLON.Action")
   @js.native
-  def _GetTargetProperty(target: typings.babylonjs.BABYLON.Node): Name = js.native
+  val ^ : js.Any = js.native
+  
+  inline def _GetTargetProperty(target: typings.babylonjs.BABYLON.Node): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetTargetProperty")(target.asInstanceOf[js.Any]).asInstanceOf[Name]
   /**
     * Internal only
     * @hidden
     */
-  @JSGlobal("BABYLON.Action._GetTargetProperty")
-  @js.native
-  def _GetTargetProperty(target: typings.babylonjs.BABYLON.Scene): Name = js.native
+  inline def _GetTargetProperty(target: typings.babylonjs.BABYLON.Scene): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetTargetProperty")(target.asInstanceOf[js.Any]).asInstanceOf[Name]
   
   /**
     * Internal only
     * @hidden
     */
-  @JSGlobal("BABYLON.Action._SerializeValueAsString")
-  @js.native
-  def _SerializeValueAsString(value: js.Any): String = js.native
+  inline def _SerializeValueAsString(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_SerializeValueAsString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.SpriteRenderer")
 @js.native
 class SpriteRenderer protected ()
-  extends typings.babylonjs.BABYLON.SpriteRenderer {
+  extends StObject
+     with typings.babylonjs.BABYLON.SpriteRenderer {
   /**
     * Creates a new sprite Renderer
     * @param engine defines the engine the renderer works with
@@ -22,13 +22,13 @@ class SpriteRenderer protected ()
   def this(
     engine: typings.babylonjs.BABYLON.ThinEngine,
     capacity: Double,
-    epsilon: js.UndefOr[scala.Nothing],
+    epsilon: Double,
     scene: Nullable[typings.babylonjs.BABYLON.Scene]
   ) = this()
   def this(
     engine: typings.babylonjs.BABYLON.ThinEngine,
     capacity: Double,
-    epsilon: Double,
+    epsilon: Unit,
     scene: Nullable[typings.babylonjs.BABYLON.Scene]
   ) = this()
 }

@@ -1,39 +1,33 @@
 package typings.jupyterlabServices.messagesMod
 
-import typings.jupyterlabServices.jupyterlabServicesStrings.ok
 import typings.luminoCoreutils.jsonMod.JSONObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IInspectReply extends IReplyOkContent {
+trait IInspectReply
+  extends StObject
+     with IReplyOkContent {
   
-  var data: JSONObject = js.native
+  var data: JSONObject
   
-  var found: Boolean = js.native
+  var found: Boolean
   
-  var metadata: JSONObject = js.native
+  var metadata: JSONObject
 }
 object IInspectReply {
   
-  @scala.inline
-  def apply(data: JSONObject, found: Boolean, metadata: JSONObject, status: ok): IInspectReply = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], found = found.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+  inline def apply(data: JSONObject, found: Boolean, metadata: JSONObject): IInspectReply = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], found = found.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], status = "ok")
     __obj.asInstanceOf[IInspectReply]
   }
   
-  @scala.inline
-  implicit class IInspectReplyMutableBuilder[Self <: IInspectReply] (val x: Self) extends AnyVal {
+  extension [Self <: IInspectReply](x: Self) {
     
-    @scala.inline
-    def setData(value: JSONObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: JSONObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFound(value: Boolean): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
+    inline def setFound(value: Boolean): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: JSONObject): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: JSONObject): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
   }
 }

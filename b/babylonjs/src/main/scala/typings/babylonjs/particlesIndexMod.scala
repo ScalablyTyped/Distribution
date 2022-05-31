@@ -15,7 +15,6 @@ import typings.babylonjs.thinEngineMod.ThinEngine
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object particlesIndexMod {
@@ -44,8 +43,7 @@ object particlesIndexMod {
     @JSImport("babylonjs/Particles/index", "BaseParticleSystem.BLENDMODE_ADD")
     @js.native
     def BLENDMODE_ADD: Double = js.native
-    @scala.inline
-    def BLENDMODE_ADD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLENDMODE_ADD")(x.asInstanceOf[js.Any])
+    inline def BLENDMODE_ADD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLENDMODE_ADD")(x.asInstanceOf[js.Any])
     
     /**
       * Multiply current color with particle color
@@ -60,11 +58,9 @@ object particlesIndexMod {
     @JSImport("babylonjs/Particles/index", "BaseParticleSystem.BLENDMODE_MULTIPLYADD")
     @js.native
     def BLENDMODE_MULTIPLYADD: Double = js.native
-    @scala.inline
-    def BLENDMODE_MULTIPLYADD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLENDMODE_MULTIPLYADD")(x.asInstanceOf[js.Any])
+    inline def BLENDMODE_MULTIPLYADD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLENDMODE_MULTIPLYADD")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def BLENDMODE_MULTIPLY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLENDMODE_MULTIPLY")(x.asInstanceOf[js.Any])
+    inline def BLENDMODE_MULTIPLY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLENDMODE_MULTIPLY")(x.asInstanceOf[js.Any])
     
     /**
       * Source color is added to the destination color without alpha affecting the result
@@ -72,8 +68,7 @@ object particlesIndexMod {
     @JSImport("babylonjs/Particles/index", "BaseParticleSystem.BLENDMODE_ONEONE")
     @js.native
     def BLENDMODE_ONEONE: Double = js.native
-    @scala.inline
-    def BLENDMODE_ONEONE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLENDMODE_ONEONE")(x.asInstanceOf[js.Any])
+    inline def BLENDMODE_ONEONE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLENDMODE_ONEONE")(x.asInstanceOf[js.Any])
     
     /**
       * Blend current color and particle color using particle’s alpha
@@ -81,8 +76,7 @@ object particlesIndexMod {
     @JSImport("babylonjs/Particles/index", "BaseParticleSystem.BLENDMODE_STANDARD")
     @js.native
     def BLENDMODE_STANDARD: Double = js.native
-    @scala.inline
-    def BLENDMODE_STANDARD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLENDMODE_STANDARD")(x.asInstanceOf[js.Any])
+    inline def BLENDMODE_STANDARD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLENDMODE_STANDARD")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Particles/index", "BoxParticleEmitter")
@@ -126,29 +120,29 @@ object particlesIndexMod {
   class ConeParticleEmitter ()
     extends typings.babylonjs.emitterTypesIndexMod.ConeParticleEmitter {
     def this(radius: Double) = this()
-    def this(radius: js.UndefOr[scala.Nothing], angle: Double) = this()
     def this(radius: Double, angle: Double) = this()
+    def this(radius: Unit, angle: Double) = this()
     def this(
-      radius: js.UndefOr[scala.Nothing],
-      angle: js.UndefOr[scala.Nothing],
-      /** defines how much to randomize the particle direction [0-1] (default is 0) */
-    directionRandomizer: Double
-    ) = this()
-    def this(
-      radius: js.UndefOr[scala.Nothing],
+      radius: Double,
       angle: Double,
       /** defines how much to randomize the particle direction [0-1] (default is 0) */
     directionRandomizer: Double
     ) = this()
     def this(
       radius: Double,
-      angle: js.UndefOr[scala.Nothing],
+      angle: Unit,
       /** defines how much to randomize the particle direction [0-1] (default is 0) */
     directionRandomizer: Double
     ) = this()
     def this(
-      radius: Double,
+      radius: Unit,
       angle: Double,
+      /** defines how much to randomize the particle direction [0-1] (default is 0) */
+    directionRandomizer: Double
+    ) = this()
+    def this(
+      radius: Unit,
+      angle: Unit,
       /** defines how much to randomize the particle direction [0-1] (default is 0) */
     directionRandomizer: Double
     ) = this()
@@ -175,75 +169,12 @@ object particlesIndexMod {
   class CylinderDirectedParticleEmitter ()
     extends typings.babylonjs.emitterTypesIndexMod.CylinderDirectedParticleEmitter {
     def this(radius: Double) = this()
-    def this(radius: js.UndefOr[scala.Nothing], height: Double) = this()
     def this(radius: Double, height: Double) = this()
-    def this(radius: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], radiusRange: Double) = this()
-    def this(radius: js.UndefOr[scala.Nothing], height: Double, radiusRange: Double) = this()
-    def this(radius: Double, height: js.UndefOr[scala.Nothing], radiusRange: Double) = this()
+    def this(radius: Unit, height: Double) = this()
     def this(radius: Double, height: Double, radiusRange: Double) = this()
-    def this(
-      radius: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      radiusRange: js.UndefOr[scala.Nothing],
-      /**
-      * The min limit of the emission direction.
-      */
-    direction1: Vector3
-    ) = this()
-    def this(
-      radius: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      radiusRange: Double,
-      /**
-      * The min limit of the emission direction.
-      */
-    direction1: Vector3
-    ) = this()
-    def this(
-      radius: js.UndefOr[scala.Nothing],
-      height: Double,
-      radiusRange: js.UndefOr[scala.Nothing],
-      /**
-      * The min limit of the emission direction.
-      */
-    direction1: Vector3
-    ) = this()
-    def this(
-      radius: js.UndefOr[scala.Nothing],
-      height: Double,
-      radiusRange: Double,
-      /**
-      * The min limit of the emission direction.
-      */
-    direction1: Vector3
-    ) = this()
-    def this(
-      radius: Double,
-      height: js.UndefOr[scala.Nothing],
-      radiusRange: js.UndefOr[scala.Nothing],
-      /**
-      * The min limit of the emission direction.
-      */
-    direction1: Vector3
-    ) = this()
-    def this(
-      radius: Double,
-      height: js.UndefOr[scala.Nothing],
-      radiusRange: Double,
-      /**
-      * The min limit of the emission direction.
-      */
-    direction1: Vector3
-    ) = this()
-    def this(
-      radius: Double,
-      height: Double,
-      radiusRange: js.UndefOr[scala.Nothing],
-      /**
-      * The min limit of the emission direction.
-      */
-    direction1: Vector3
-    ) = this()
+    def this(radius: Double, height: Unit, radiusRange: Double) = this()
+    def this(radius: Unit, height: Double, radiusRange: Double) = this()
+    def this(radius: Unit, height: Unit, radiusRange: Double) = this()
     def this(
       radius: Double,
       height: Double,
@@ -254,98 +185,83 @@ object particlesIndexMod {
     direction1: Vector3
     ) = this()
     def this(
-      radius: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      radiusRange: js.UndefOr[scala.Nothing],
+      radius: Double,
+      height: Double,
+      radiusRange: Unit,
       /**
       * The min limit of the emission direction.
       */
-    direction1: js.UndefOr[scala.Nothing],
-      /**
-      * The max limit of the emission direction.
-      */
-    direction2: Vector3
+    direction1: Vector3
     ) = this()
     def this(
-      radius: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      radiusRange: js.UndefOr[scala.Nothing],
-      /**
-      * The min limit of the emission direction.
-      */
-    direction1: Vector3,
-      /**
-      * The max limit of the emission direction.
-      */
-    direction2: Vector3
-    ) = this()
-    def this(
-      radius: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
+      radius: Double,
+      height: Unit,
       radiusRange: Double,
       /**
       * The min limit of the emission direction.
       */
-    direction1: js.UndefOr[scala.Nothing],
-      /**
-      * The max limit of the emission direction.
-      */
-    direction2: Vector3
+    direction1: Vector3
     ) = this()
     def this(
-      radius: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      radiusRange: Double,
+      radius: Double,
+      height: Unit,
+      radiusRange: Unit,
       /**
       * The min limit of the emission direction.
       */
-    direction1: Vector3,
-      /**
-      * The max limit of the emission direction.
-      */
-    direction2: Vector3
+    direction1: Vector3
     ) = this()
     def this(
-      radius: js.UndefOr[scala.Nothing],
-      height: Double,
-      radiusRange: js.UndefOr[scala.Nothing],
-      /**
-      * The min limit of the emission direction.
-      */
-    direction1: js.UndefOr[scala.Nothing],
-      /**
-      * The max limit of the emission direction.
-      */
-    direction2: Vector3
-    ) = this()
-    def this(
-      radius: js.UndefOr[scala.Nothing],
-      height: Double,
-      radiusRange: js.UndefOr[scala.Nothing],
-      /**
-      * The min limit of the emission direction.
-      */
-    direction1: Vector3,
-      /**
-      * The max limit of the emission direction.
-      */
-    direction2: Vector3
-    ) = this()
-    def this(
-      radius: js.UndefOr[scala.Nothing],
+      radius: Unit,
       height: Double,
       radiusRange: Double,
       /**
       * The min limit of the emission direction.
       */
-    direction1: js.UndefOr[scala.Nothing],
+    direction1: Vector3
+    ) = this()
+    def this(
+      radius: Unit,
+      height: Double,
+      radiusRange: Unit,
+      /**
+      * The min limit of the emission direction.
+      */
+    direction1: Vector3
+    ) = this()
+    def this(
+      radius: Unit,
+      height: Unit,
+      radiusRange: Double,
+      /**
+      * The min limit of the emission direction.
+      */
+    direction1: Vector3
+    ) = this()
+    def this(
+      radius: Unit,
+      height: Unit,
+      radiusRange: Unit,
+      /**
+      * The min limit of the emission direction.
+      */
+    direction1: Vector3
+    ) = this()
+    def this(
+      radius: Double,
+      height: Double,
+      radiusRange: Double,
+      /**
+      * The min limit of the emission direction.
+      */
+    direction1: Unit,
       /**
       * The max limit of the emission direction.
       */
     direction2: Vector3
     ) = this()
     def this(
-      radius: js.UndefOr[scala.Nothing],
+      radius: Double,
       height: Double,
       radiusRange: Double,
       /**
@@ -359,12 +275,12 @@ object particlesIndexMod {
     ) = this()
     def this(
       radius: Double,
-      height: js.UndefOr[scala.Nothing],
-      radiusRange: js.UndefOr[scala.Nothing],
+      height: Double,
+      radiusRange: Unit,
       /**
       * The min limit of the emission direction.
       */
-    direction1: js.UndefOr[scala.Nothing],
+    direction1: Unit,
       /**
       * The max limit of the emission direction.
       */
@@ -372,8 +288,8 @@ object particlesIndexMod {
     ) = this()
     def this(
       radius: Double,
-      height: js.UndefOr[scala.Nothing],
-      radiusRange: js.UndefOr[scala.Nothing],
+      height: Double,
+      radiusRange: Unit,
       /**
       * The min limit of the emission direction.
       */
@@ -385,12 +301,12 @@ object particlesIndexMod {
     ) = this()
     def this(
       radius: Double,
-      height: js.UndefOr[scala.Nothing],
+      height: Unit,
       radiusRange: Double,
       /**
       * The min limit of the emission direction.
       */
-    direction1: js.UndefOr[scala.Nothing],
+    direction1: Unit,
       /**
       * The max limit of the emission direction.
       */
@@ -398,7 +314,7 @@ object particlesIndexMod {
     ) = this()
     def this(
       radius: Double,
-      height: js.UndefOr[scala.Nothing],
+      height: Unit,
       radiusRange: Double,
       /**
       * The min limit of the emission direction.
@@ -411,12 +327,12 @@ object particlesIndexMod {
     ) = this()
     def this(
       radius: Double,
-      height: Double,
-      radiusRange: js.UndefOr[scala.Nothing],
+      height: Unit,
+      radiusRange: Unit,
       /**
       * The min limit of the emission direction.
       */
-    direction1: js.UndefOr[scala.Nothing],
+    direction1: Unit,
       /**
       * The max limit of the emission direction.
       */
@@ -424,8 +340,8 @@ object particlesIndexMod {
     ) = this()
     def this(
       radius: Double,
-      height: Double,
-      radiusRange: js.UndefOr[scala.Nothing],
+      height: Unit,
+      radiusRange: Unit,
       /**
       * The min limit of the emission direction.
       */
@@ -436,22 +352,100 @@ object particlesIndexMod {
     direction2: Vector3
     ) = this()
     def this(
-      radius: Double,
+      radius: Unit,
       height: Double,
       radiusRange: Double,
       /**
       * The min limit of the emission direction.
       */
-    direction1: js.UndefOr[scala.Nothing],
+    direction1: Unit,
       /**
       * The max limit of the emission direction.
       */
     direction2: Vector3
     ) = this()
     def this(
-      radius: Double,
+      radius: Unit,
       height: Double,
       radiusRange: Double,
+      /**
+      * The min limit of the emission direction.
+      */
+    direction1: Vector3,
+      /**
+      * The max limit of the emission direction.
+      */
+    direction2: Vector3
+    ) = this()
+    def this(
+      radius: Unit,
+      height: Double,
+      radiusRange: Unit,
+      /**
+      * The min limit of the emission direction.
+      */
+    direction1: Unit,
+      /**
+      * The max limit of the emission direction.
+      */
+    direction2: Vector3
+    ) = this()
+    def this(
+      radius: Unit,
+      height: Double,
+      radiusRange: Unit,
+      /**
+      * The min limit of the emission direction.
+      */
+    direction1: Vector3,
+      /**
+      * The max limit of the emission direction.
+      */
+    direction2: Vector3
+    ) = this()
+    def this(
+      radius: Unit,
+      height: Unit,
+      radiusRange: Double,
+      /**
+      * The min limit of the emission direction.
+      */
+    direction1: Unit,
+      /**
+      * The max limit of the emission direction.
+      */
+    direction2: Vector3
+    ) = this()
+    def this(
+      radius: Unit,
+      height: Unit,
+      radiusRange: Double,
+      /**
+      * The min limit of the emission direction.
+      */
+    direction1: Vector3,
+      /**
+      * The max limit of the emission direction.
+      */
+    direction2: Vector3
+    ) = this()
+    def this(
+      radius: Unit,
+      height: Unit,
+      radiusRange: Unit,
+      /**
+      * The min limit of the emission direction.
+      */
+    direction1: Unit,
+      /**
+      * The max limit of the emission direction.
+      */
+    direction2: Vector3
+    ) = this()
+    def this(
+      radius: Unit,
+      height: Unit,
+      radiusRange: Unit,
       /**
       * The min limit of the emission direction.
       */
@@ -482,7 +476,17 @@ object particlesIndexMod {
       /**
       * The radius of the emission cylinder.
       */
-    radius: js.UndefOr[scala.Nothing],
+    radius: Double,
+      /**
+      * The height of the emission cylinder.
+      */
+    height: Double
+    ) = this()
+    def this(
+      /**
+      * The radius of the emission cylinder.
+      */
+    radius: Unit,
       /**
       * The height of the emission cylinder.
       */
@@ -496,30 +500,6 @@ object particlesIndexMod {
       /**
       * The height of the emission cylinder.
       */
-    height: Double
-    ) = this()
-    def this(
-      /**
-      * The radius of the emission cylinder.
-      */
-    radius: js.UndefOr[scala.Nothing],
-      /**
-      * The height of the emission cylinder.
-      */
-    height: js.UndefOr[scala.Nothing],
-      /**
-      * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
-      */
-    radiusRange: Double
-    ) = this()
-    def this(
-      /**
-      * The radius of the emission cylinder.
-      */
-    radius: js.UndefOr[scala.Nothing],
-      /**
-      * The height of the emission cylinder.
-      */
     height: Double,
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
@@ -534,7 +514,35 @@ object particlesIndexMod {
       /**
       * The height of the emission cylinder.
       */
-    height: js.UndefOr[scala.Nothing],
+    height: Unit,
+      /**
+      * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
+      */
+    radiusRange: Double
+    ) = this()
+    def this(
+      /**
+      * The radius of the emission cylinder.
+      */
+    radius: Unit,
+      /**
+      * The height of the emission cylinder.
+      */
+    height: Double,
+      /**
+      * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
+      */
+    radiusRange: Double
+    ) = this()
+    def this(
+      /**
+      * The radius of the emission cylinder.
+      */
+    radius: Unit,
+      /**
+      * The height of the emission cylinder.
+      */
+    height: Unit,
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
       */
@@ -545,74 +553,6 @@ object particlesIndexMod {
       * The radius of the emission cylinder.
       */
     radius: Double,
-      /**
-      * The height of the emission cylinder.
-      */
-    height: Double,
-      /**
-      * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
-      */
-    radiusRange: Double
-    ) = this()
-    def this(
-      /**
-      * The radius of the emission cylinder.
-      */
-    radius: js.UndefOr[scala.Nothing],
-      /**
-      * The height of the emission cylinder.
-      */
-    height: js.UndefOr[scala.Nothing],
-      /**
-      * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
-      */
-    radiusRange: js.UndefOr[scala.Nothing],
-      /**
-      * How much to randomize the particle direction [0-1].
-      */
-    directionRandomizer: Double
-    ) = this()
-    def this(
-      /**
-      * The radius of the emission cylinder.
-      */
-    radius: js.UndefOr[scala.Nothing],
-      /**
-      * The height of the emission cylinder.
-      */
-    height: js.UndefOr[scala.Nothing],
-      /**
-      * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
-      */
-    radiusRange: Double,
-      /**
-      * How much to randomize the particle direction [0-1].
-      */
-    directionRandomizer: Double
-    ) = this()
-    def this(
-      /**
-      * The radius of the emission cylinder.
-      */
-    radius: js.UndefOr[scala.Nothing],
-      /**
-      * The height of the emission cylinder.
-      */
-    height: Double,
-      /**
-      * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
-      */
-    radiusRange: js.UndefOr[scala.Nothing],
-      /**
-      * How much to randomize the particle direction [0-1].
-      */
-    directionRandomizer: Double
-    ) = this()
-    def this(
-      /**
-      * The radius of the emission cylinder.
-      */
-    radius: js.UndefOr[scala.Nothing],
       /**
       * The height of the emission cylinder.
       */
@@ -634,11 +574,11 @@ object particlesIndexMod {
       /**
       * The height of the emission cylinder.
       */
-    height: js.UndefOr[scala.Nothing],
+    height: Double,
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
       */
-    radiusRange: js.UndefOr[scala.Nothing],
+    radiusRange: Unit,
       /**
       * How much to randomize the particle direction [0-1].
       */
@@ -652,7 +592,7 @@ object particlesIndexMod {
       /**
       * The height of the emission cylinder.
       */
-    height: js.UndefOr[scala.Nothing],
+    height: Unit,
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
       */
@@ -670,11 +610,11 @@ object particlesIndexMod {
       /**
       * The height of the emission cylinder.
       */
-    height: Double,
+    height: Unit,
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
       */
-    radiusRange: js.UndefOr[scala.Nothing],
+    radiusRange: Unit,
       /**
       * How much to randomize the particle direction [0-1].
       */
@@ -684,7 +624,7 @@ object particlesIndexMod {
       /**
       * The radius of the emission cylinder.
       */
-    radius: Double,
+    radius: Unit,
       /**
       * The height of the emission cylinder.
       */
@@ -693,6 +633,60 @@ object particlesIndexMod {
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
       */
     radiusRange: Double,
+      /**
+      * How much to randomize the particle direction [0-1].
+      */
+    directionRandomizer: Double
+    ) = this()
+    def this(
+      /**
+      * The radius of the emission cylinder.
+      */
+    radius: Unit,
+      /**
+      * The height of the emission cylinder.
+      */
+    height: Double,
+      /**
+      * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
+      */
+    radiusRange: Unit,
+      /**
+      * How much to randomize the particle direction [0-1].
+      */
+    directionRandomizer: Double
+    ) = this()
+    def this(
+      /**
+      * The radius of the emission cylinder.
+      */
+    radius: Unit,
+      /**
+      * The height of the emission cylinder.
+      */
+    height: Unit,
+      /**
+      * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
+      */
+    radiusRange: Double,
+      /**
+      * How much to randomize the particle direction [0-1].
+      */
+    directionRandomizer: Double
+    ) = this()
+    def this(
+      /**
+      * The radius of the emission cylinder.
+      */
+    radius: Unit,
+      /**
+      * The height of the emission cylinder.
+      */
+    height: Unit,
+      /**
+      * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
+      */
+    radiusRange: Unit,
       /**
       * How much to randomize the particle direction [0-1].
       */
@@ -742,21 +736,14 @@ object particlesIndexMod {
       name: String,
       options: Partialcapacitynumberrand,
       sceneOrEngine: Scene,
-      isAnimationSheetEnabled: js.UndefOr[scala.Nothing],
+      isAnimationSheetEnabled: Boolean,
       customEffect: Nullable[Effect]
     ) = this()
     def this(
       name: String,
       options: Partialcapacitynumberrand,
       sceneOrEngine: Scene,
-      isAnimationSheetEnabled: Boolean,
-      customEffect: Nullable[Effect]
-    ) = this()
-    def this(
-      name: String,
-      options: Partialcapacitynumberrand,
-      sceneOrEngine: ThinEngine,
-      isAnimationSheetEnabled: js.UndefOr[scala.Nothing],
+      isAnimationSheetEnabled: Unit,
       customEffect: Nullable[Effect]
     ) = this()
     def this(
@@ -764,11 +751,22 @@ object particlesIndexMod {
       options: Partialcapacitynumberrand,
       sceneOrEngine: ThinEngine,
       isAnimationSheetEnabled: Boolean,
+      customEffect: Nullable[Effect]
+    ) = this()
+    def this(
+      name: String,
+      options: Partialcapacitynumberrand,
+      sceneOrEngine: ThinEngine,
+      isAnimationSheetEnabled: Unit,
       customEffect: Nullable[Effect]
     ) = this()
   }
   /* static members */
   object GPUParticleSystem {
+    
+    @JSImport("babylonjs/Particles/index", "GPUParticleSystem")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Parses a JSON object to create a GPU particle system.
@@ -778,18 +776,10 @@ object particlesIndexMod {
       * @param doNotStart Ignore the preventAutoStart attribute and does not start
       * @returns the parsed GPU particle system
       */
-    @JSImport("babylonjs/Particles/index", "GPUParticleSystem.Parse")
-    @js.native
-    def Parse(parsedParticleSystem: js.Any, sceneOrEngine: Scene, rootUrl: String): typings.babylonjs.gpuParticleSystemMod.GPUParticleSystem = js.native
-    @JSImport("babylonjs/Particles/index", "GPUParticleSystem.Parse")
-    @js.native
-    def Parse(parsedParticleSystem: js.Any, sceneOrEngine: Scene, rootUrl: String, doNotStart: Boolean): typings.babylonjs.gpuParticleSystemMod.GPUParticleSystem = js.native
-    @JSImport("babylonjs/Particles/index", "GPUParticleSystem.Parse")
-    @js.native
-    def Parse(parsedParticleSystem: js.Any, sceneOrEngine: ThinEngine, rootUrl: String): typings.babylonjs.gpuParticleSystemMod.GPUParticleSystem = js.native
-    @JSImport("babylonjs/Particles/index", "GPUParticleSystem.Parse")
-    @js.native
-    def Parse(parsedParticleSystem: js.Any, sceneOrEngine: ThinEngine, rootUrl: String, doNotStart: Boolean): typings.babylonjs.gpuParticleSystemMod.GPUParticleSystem = js.native
+    inline def Parse(parsedParticleSystem: js.Any, sceneOrEngine: Scene, rootUrl: String): typings.babylonjs.gpuParticleSystemMod.GPUParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.gpuParticleSystemMod.GPUParticleSystem]
+    inline def Parse(parsedParticleSystem: js.Any, sceneOrEngine: Scene, rootUrl: String, doNotStart: Boolean): typings.babylonjs.gpuParticleSystemMod.GPUParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.gpuParticleSystemMod.GPUParticleSystem]
+    inline def Parse(parsedParticleSystem: js.Any, sceneOrEngine: ThinEngine, rootUrl: String): typings.babylonjs.gpuParticleSystemMod.GPUParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.gpuParticleSystemMod.GPUParticleSystem]
+    inline def Parse(parsedParticleSystem: js.Any, sceneOrEngine: ThinEngine, rootUrl: String, doNotStart: Boolean): typings.babylonjs.gpuParticleSystemMod.GPUParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.gpuParticleSystemMod.GPUParticleSystem]
   }
   
   @JSImport("babylonjs/Particles/index", "HemisphericParticleEmitter")
@@ -810,16 +800,6 @@ object particlesIndexMod {
       /**
       * The radius of the emission hemisphere.
       */
-    radius: js.UndefOr[scala.Nothing],
-      /**
-      * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
-      */
-    radiusRange: Double
-    ) = this()
-    def this(
-      /**
-      * The radius of the emission hemisphere.
-      */
     radius: Double,
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
@@ -830,21 +810,17 @@ object particlesIndexMod {
       /**
       * The radius of the emission hemisphere.
       */
-    radius: js.UndefOr[scala.Nothing],
+    radius: Unit,
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
       */
-    radiusRange: js.UndefOr[scala.Nothing],
-      /**
-      * How much to randomize the particle direction [0-1].
-      */
-    directionRandomizer: Double
+    radiusRange: Double
     ) = this()
     def this(
       /**
       * The radius of the emission hemisphere.
       */
-    radius: js.UndefOr[scala.Nothing],
+    radius: Double,
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
       */
@@ -862,7 +838,7 @@ object particlesIndexMod {
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
       */
-    radiusRange: js.UndefOr[scala.Nothing],
+    radiusRange: Unit,
       /**
       * How much to randomize the particle direction [0-1].
       */
@@ -872,11 +848,25 @@ object particlesIndexMod {
       /**
       * The radius of the emission hemisphere.
       */
-    radius: Double,
+    radius: Unit,
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
       */
     radiusRange: Double,
+      /**
+      * How much to randomize the particle direction [0-1].
+      */
+    directionRandomizer: Double
+    ) = this()
+    def this(
+      /**
+      * The radius of the emission hemisphere.
+      */
+    radius: Unit,
+      /**
+      * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
+      */
+    radiusRange: Unit,
       /**
       * How much to randomize the particle direction [0-1].
       */
@@ -954,8 +944,7 @@ object particlesIndexMod {
     @JSImport("babylonjs/Particles/index", "Particle._Count")
     @js.native
     def _Count: js.Any = js.native
-    @scala.inline
-    def _Count_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Count")(x.asInstanceOf[js.Any])
+    inline def _Count_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Count")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Particles/index", "ParticleHelper")
@@ -975,8 +964,7 @@ object particlesIndexMod {
     @JSImport("babylonjs/Particles/index", "ParticleHelper.BaseAssetsUrl")
     @js.native
     def BaseAssetsUrl: String = js.native
-    @scala.inline
-    def BaseAssetsUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BaseAssetsUrl")(x.asInstanceOf[js.Any])
+    inline def BaseAssetsUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BaseAssetsUrl")(x.asInstanceOf[js.Any])
     
     /**
       * This is the main static method (one-liner) of this helper to create different particle systems
@@ -985,12 +973,8 @@ object particlesIndexMod {
       * @param gpu If the system will use gpu
       * @returns the ParticleSystemSet created
       */
-    @JSImport("babylonjs/Particles/index", "ParticleHelper.CreateAsync")
-    @js.native
-    def CreateAsync(`type`: String, scene: Nullable[Scene]): js.Promise[typings.babylonjs.particleSystemSetMod.ParticleSystemSet] = js.native
-    @JSImport("babylonjs/Particles/index", "ParticleHelper.CreateAsync")
-    @js.native
-    def CreateAsync(`type`: String, scene: Nullable[Scene], gpu: Boolean): js.Promise[typings.babylonjs.particleSystemSetMod.ParticleSystemSet] = js.native
+    inline def CreateAsync(`type`: String, scene: Nullable[Scene]): js.Promise[typings.babylonjs.particleSystemSetMod.ParticleSystemSet] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(`type`.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.particleSystemSetMod.ParticleSystemSet]]
+    inline def CreateAsync(`type`: String, scene: Nullable[Scene], gpu: Boolean): js.Promise[typings.babylonjs.particleSystemSetMod.ParticleSystemSet] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(`type`.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.particleSystemSetMod.ParticleSystemSet]]
     
     /**
       * Create a default particle system that you can tweak
@@ -1000,45 +984,14 @@ object particlesIndexMod {
       * @param useGPU defines if a GPUParticleSystem must be created (default is false)
       * @returns the new Particle system
       */
-    @JSImport("babylonjs/Particles/index", "ParticleHelper.CreateDefault")
-    @js.native
-    def CreateDefault(emitter: Nullable[AbstractMesh | Vector3]): IParticleSystem = js.native
-    @JSImport("babylonjs/Particles/index", "ParticleHelper.CreateDefault")
-    @js.native
-    def CreateDefault(
-      emitter: Nullable[AbstractMesh | Vector3],
-      capacity: js.UndefOr[scala.Nothing],
-      scene: js.UndefOr[scala.Nothing],
-      useGPU: Boolean
-    ): IParticleSystem = js.native
-    @JSImport("babylonjs/Particles/index", "ParticleHelper.CreateDefault")
-    @js.native
-    def CreateDefault(emitter: Nullable[AbstractMesh | Vector3], capacity: js.UndefOr[scala.Nothing], scene: Scene): IParticleSystem = js.native
-    @JSImport("babylonjs/Particles/index", "ParticleHelper.CreateDefault")
-    @js.native
-    def CreateDefault(
-      emitter: Nullable[AbstractMesh | Vector3],
-      capacity: js.UndefOr[scala.Nothing],
-      scene: Scene,
-      useGPU: Boolean
-    ): IParticleSystem = js.native
-    @JSImport("babylonjs/Particles/index", "ParticleHelper.CreateDefault")
-    @js.native
-    def CreateDefault(emitter: Nullable[AbstractMesh | Vector3], capacity: Double): IParticleSystem = js.native
-    @JSImport("babylonjs/Particles/index", "ParticleHelper.CreateDefault")
-    @js.native
-    def CreateDefault(
-      emitter: Nullable[AbstractMesh | Vector3],
-      capacity: Double,
-      scene: js.UndefOr[scala.Nothing],
-      useGPU: Boolean
-    ): IParticleSystem = js.native
-    @JSImport("babylonjs/Particles/index", "ParticleHelper.CreateDefault")
-    @js.native
-    def CreateDefault(emitter: Nullable[AbstractMesh | Vector3], capacity: Double, scene: Scene): IParticleSystem = js.native
-    @JSImport("babylonjs/Particles/index", "ParticleHelper.CreateDefault")
-    @js.native
-    def CreateDefault(emitter: Nullable[AbstractMesh | Vector3], capacity: Double, scene: Scene, useGPU: Boolean): IParticleSystem = js.native
+    inline def CreateDefault(emitter: Nullable[AbstractMesh | Vector3]): IParticleSystem = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateDefault")(emitter.asInstanceOf[js.Any]).asInstanceOf[IParticleSystem]
+    inline def CreateDefault(emitter: Nullable[AbstractMesh | Vector3], capacity: Double): IParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDefault")(emitter.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[IParticleSystem]
+    inline def CreateDefault(emitter: Nullable[AbstractMesh | Vector3], capacity: Double, scene: Unit, useGPU: Boolean): IParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDefault")(emitter.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], useGPU.asInstanceOf[js.Any])).asInstanceOf[IParticleSystem]
+    inline def CreateDefault(emitter: Nullable[AbstractMesh | Vector3], capacity: Double, scene: Scene): IParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDefault")(emitter.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[IParticleSystem]
+    inline def CreateDefault(emitter: Nullable[AbstractMesh | Vector3], capacity: Double, scene: Scene, useGPU: Boolean): IParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDefault")(emitter.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], useGPU.asInstanceOf[js.Any])).asInstanceOf[IParticleSystem]
+    inline def CreateDefault(emitter: Nullable[AbstractMesh | Vector3], capacity: Unit, scene: Unit, useGPU: Boolean): IParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDefault")(emitter.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], useGPU.asInstanceOf[js.Any])).asInstanceOf[IParticleSystem]
+    inline def CreateDefault(emitter: Nullable[AbstractMesh | Vector3], capacity: Unit, scene: Scene): IParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDefault")(emitter.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[IParticleSystem]
+    inline def CreateDefault(emitter: Nullable[AbstractMesh | Vector3], capacity: Unit, scene: Scene, useGPU: Boolean): IParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDefault")(emitter.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], useGPU.asInstanceOf[js.Any])).asInstanceOf[IParticleSystem]
     
     /**
       * Creates a particle system from a snippet saved by the particle system editor
@@ -1048,18 +1001,10 @@ object particlesIndexMod {
       * @param rootUrl defines the root URL to use to load textures and relative dependencies
       * @returns a promise that will resolve to the new particle system
       */
-    @JSImport("babylonjs/Particles/index", "ParticleHelper.CreateFromSnippetAsync")
-    @js.native
-    def CreateFromSnippetAsync(snippetId: String, scene: Scene): js.Promise[IParticleSystem] = js.native
-    @JSImport("babylonjs/Particles/index", "ParticleHelper.CreateFromSnippetAsync")
-    @js.native
-    def CreateFromSnippetAsync(snippetId: String, scene: Scene, gpu: js.UndefOr[scala.Nothing], rootUrl: String): js.Promise[IParticleSystem] = js.native
-    @JSImport("babylonjs/Particles/index", "ParticleHelper.CreateFromSnippetAsync")
-    @js.native
-    def CreateFromSnippetAsync(snippetId: String, scene: Scene, gpu: Boolean): js.Promise[IParticleSystem] = js.native
-    @JSImport("babylonjs/Particles/index", "ParticleHelper.CreateFromSnippetAsync")
-    @js.native
-    def CreateFromSnippetAsync(snippetId: String, scene: Scene, gpu: Boolean, rootUrl: String): js.Promise[IParticleSystem] = js.native
+    inline def CreateFromSnippetAsync(snippetId: String, scene: Scene): js.Promise[IParticleSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IParticleSystem]]
+    inline def CreateFromSnippetAsync(snippetId: String, scene: Scene, gpu: Boolean): js.Promise[IParticleSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IParticleSystem]]
+    inline def CreateFromSnippetAsync(snippetId: String, scene: Scene, gpu: Boolean, rootUrl: String): js.Promise[IParticleSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IParticleSystem]]
+    inline def CreateFromSnippetAsync(snippetId: String, scene: Scene, gpu: Unit, rootUrl: String): js.Promise[IParticleSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IParticleSystem]]
     
     /**
       * Static function used to export a particle system to a ParticleSystemSet variable.
@@ -1067,9 +1012,7 @@ object particlesIndexMod {
       * @param systems defines the particle systems to export
       * @returns the created particle system set
       */
-    @JSImport("babylonjs/Particles/index", "ParticleHelper.ExportSet")
-    @js.native
-    def ExportSet(systems: js.Array[IParticleSystem]): typings.babylonjs.particleSystemSetMod.ParticleSystemSet = js.native
+    inline def ExportSet(systems: js.Array[IParticleSystem]): typings.babylonjs.particleSystemSetMod.ParticleSystemSet = ^.asInstanceOf[js.Dynamic].applyDynamic("ExportSet")(systems.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.particleSystemSetMod.ParticleSystemSet]
     
     /**
       * Creates a particle system from a snippet saved in a remote file
@@ -1080,25 +1023,16 @@ object particlesIndexMod {
       * @param rootUrl defines the root URL to use to load textures and relative dependencies
       * @returns a promise that will resolve to the new particle system
       */
-    @JSImport("babylonjs/Particles/index", "ParticleHelper.ParseFromFileAsync")
-    @js.native
-    def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene): js.Promise[IParticleSystem] = js.native
-    @JSImport("babylonjs/Particles/index", "ParticleHelper.ParseFromFileAsync")
-    @js.native
-    def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene, gpu: js.UndefOr[scala.Nothing], rootUrl: String): js.Promise[IParticleSystem] = js.native
-    @JSImport("babylonjs/Particles/index", "ParticleHelper.ParseFromFileAsync")
-    @js.native
-    def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene, gpu: Boolean): js.Promise[IParticleSystem] = js.native
-    @JSImport("babylonjs/Particles/index", "ParticleHelper.ParseFromFileAsync")
-    @js.native
-    def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene, gpu: Boolean, rootUrl: String): js.Promise[IParticleSystem] = js.native
+    inline def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene): js.Promise[IParticleSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IParticleSystem]]
+    inline def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene, gpu: Boolean): js.Promise[IParticleSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IParticleSystem]]
+    inline def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene, gpu: Boolean, rootUrl: String): js.Promise[IParticleSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IParticleSystem]]
+    inline def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene, gpu: Unit, rootUrl: String): js.Promise[IParticleSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IParticleSystem]]
     
     /** Define the Url to load snippets */
     @JSImport("babylonjs/Particles/index", "ParticleHelper.SnippetUrl")
     @js.native
     def SnippetUrl: String = js.native
-    @scala.inline
-    def SnippetUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SnippetUrl")(x.asInstanceOf[js.Any])
+    inline def SnippetUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SnippetUrl")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Particles/index", "ParticleSystem")
@@ -1123,29 +1057,67 @@ object particlesIndexMod {
       name: String,
       capacity: Double,
       sceneOrEngine: Scene,
-      customEffect: js.UndefOr[Nullable[Effect]],
+      customEffect: Unit,
+      isAnimationSheetEnabled: Boolean
+    ) = this()
+    def this(
+      name: String,
+      capacity: Double,
+      sceneOrEngine: Scene,
+      customEffect: Nullable[Effect],
       isAnimationSheetEnabled: Boolean
     ) = this()
     def this(
       name: String,
       capacity: Double,
       sceneOrEngine: ThinEngine,
-      customEffect: js.UndefOr[Nullable[Effect]],
+      customEffect: Unit,
+      isAnimationSheetEnabled: Boolean
+    ) = this()
+    def this(
+      name: String,
+      capacity: Double,
+      sceneOrEngine: ThinEngine,
+      customEffect: Nullable[Effect],
       isAnimationSheetEnabled: Boolean
     ) = this()
     def this(
       name: String,
       capacity: Double,
       sceneOrEngine: Scene,
-      customEffect: js.UndefOr[Nullable[Effect]],
-      isAnimationSheetEnabled: js.UndefOr[scala.Nothing],
+      customEffect: Unit,
+      isAnimationSheetEnabled: Boolean,
       epsilon: Double
     ) = this()
     def this(
       name: String,
       capacity: Double,
       sceneOrEngine: Scene,
-      customEffect: js.UndefOr[Nullable[Effect]],
+      customEffect: Unit,
+      isAnimationSheetEnabled: Unit,
+      epsilon: Double
+    ) = this()
+    def this(
+      name: String,
+      capacity: Double,
+      sceneOrEngine: Scene,
+      customEffect: Nullable[Effect],
+      isAnimationSheetEnabled: Boolean,
+      epsilon: Double
+    ) = this()
+    def this(
+      name: String,
+      capacity: Double,
+      sceneOrEngine: Scene,
+      customEffect: Nullable[Effect],
+      isAnimationSheetEnabled: Unit,
+      epsilon: Double
+    ) = this()
+    def this(
+      name: String,
+      capacity: Double,
+      sceneOrEngine: ThinEngine,
+      customEffect: Unit,
       isAnimationSheetEnabled: Boolean,
       epsilon: Double
     ) = this()
@@ -1153,21 +1125,33 @@ object particlesIndexMod {
       name: String,
       capacity: Double,
       sceneOrEngine: ThinEngine,
-      customEffect: js.UndefOr[Nullable[Effect]],
-      isAnimationSheetEnabled: js.UndefOr[scala.Nothing],
+      customEffect: Unit,
+      isAnimationSheetEnabled: Unit,
       epsilon: Double
     ) = this()
     def this(
       name: String,
       capacity: Double,
       sceneOrEngine: ThinEngine,
-      customEffect: js.UndefOr[Nullable[Effect]],
+      customEffect: Nullable[Effect],
       isAnimationSheetEnabled: Boolean,
+      epsilon: Double
+    ) = this()
+    def this(
+      name: String,
+      capacity: Double,
+      sceneOrEngine: ThinEngine,
+      customEffect: Nullable[Effect],
+      isAnimationSheetEnabled: Unit,
       epsilon: Double
     ) = this()
   }
   /* static members */
   object ParticleSystem {
+    
+    @JSImport("babylonjs/Particles/index", "ParticleSystem")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Billboard mode will apply to all axes
@@ -1198,87 +1182,41 @@ object particlesIndexMod {
       * @param doNotStart Ignore the preventAutoStart attribute and does not start
       * @returns the Parsed particle system
       */
-    @JSImport("babylonjs/Particles/index", "ParticleSystem.Parse")
-    @js.native
-    def Parse(parsedParticleSystem: js.Any, sceneOrEngine: Scene, rootUrl: String): typings.babylonjs.particleSystemMod.ParticleSystem = js.native
-    @JSImport("babylonjs/Particles/index", "ParticleSystem.Parse")
-    @js.native
-    def Parse(parsedParticleSystem: js.Any, sceneOrEngine: Scene, rootUrl: String, doNotStart: Boolean): typings.babylonjs.particleSystemMod.ParticleSystem = js.native
-    @JSImport("babylonjs/Particles/index", "ParticleSystem.Parse")
-    @js.native
-    def Parse(parsedParticleSystem: js.Any, sceneOrEngine: ThinEngine, rootUrl: String): typings.babylonjs.particleSystemMod.ParticleSystem = js.native
-    @JSImport("babylonjs/Particles/index", "ParticleSystem.Parse")
-    @js.native
-    def Parse(parsedParticleSystem: js.Any, sceneOrEngine: ThinEngine, rootUrl: String, doNotStart: Boolean): typings.babylonjs.particleSystemMod.ParticleSystem = js.native
+    inline def Parse(parsedParticleSystem: js.Any, sceneOrEngine: Scene, rootUrl: String): typings.babylonjs.particleSystemMod.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particleSystemMod.ParticleSystem]
+    inline def Parse(parsedParticleSystem: js.Any, sceneOrEngine: Scene, rootUrl: String, doNotStart: Boolean): typings.babylonjs.particleSystemMod.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particleSystemMod.ParticleSystem]
+    inline def Parse(parsedParticleSystem: js.Any, sceneOrEngine: ThinEngine, rootUrl: String): typings.babylonjs.particleSystemMod.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particleSystemMod.ParticleSystem]
+    inline def Parse(parsedParticleSystem: js.Any, sceneOrEngine: ThinEngine, rootUrl: String, doNotStart: Boolean): typings.babylonjs.particleSystemMod.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particleSystemMod.ParticleSystem]
     
     /** @hidden */
-    @JSImport("babylonjs/Particles/index", "ParticleSystem._GetAttributeNamesOrOptions")
-    @js.native
-    def _GetAttributeNamesOrOptions(): js.Array[String] = js.native
-    @JSImport("babylonjs/Particles/index", "ParticleSystem._GetAttributeNamesOrOptions")
-    @js.native
-    def _GetAttributeNamesOrOptions(
-      isAnimationSheetEnabled: js.UndefOr[scala.Nothing],
-      isBillboardBased: js.UndefOr[scala.Nothing],
-      useRampGradients: Boolean
-    ): js.Array[String] = js.native
-    @JSImport("babylonjs/Particles/index", "ParticleSystem._GetAttributeNamesOrOptions")
-    @js.native
-    def _GetAttributeNamesOrOptions(isAnimationSheetEnabled: js.UndefOr[scala.Nothing], isBillboardBased: Boolean): js.Array[String] = js.native
-    @JSImport("babylonjs/Particles/index", "ParticleSystem._GetAttributeNamesOrOptions")
-    @js.native
-    def _GetAttributeNamesOrOptions(
-      isAnimationSheetEnabled: js.UndefOr[scala.Nothing],
-      isBillboardBased: Boolean,
-      useRampGradients: Boolean
-    ): js.Array[String] = js.native
-    @JSImport("babylonjs/Particles/index", "ParticleSystem._GetAttributeNamesOrOptions")
-    @js.native
-    def _GetAttributeNamesOrOptions(isAnimationSheetEnabled: Boolean): js.Array[String] = js.native
-    @JSImport("babylonjs/Particles/index", "ParticleSystem._GetAttributeNamesOrOptions")
-    @js.native
-    def _GetAttributeNamesOrOptions(
-      isAnimationSheetEnabled: Boolean,
-      isBillboardBased: js.UndefOr[scala.Nothing],
-      useRampGradients: Boolean
-    ): js.Array[String] = js.native
-    @JSImport("babylonjs/Particles/index", "ParticleSystem._GetAttributeNamesOrOptions")
-    @js.native
-    def _GetAttributeNamesOrOptions(isAnimationSheetEnabled: Boolean, isBillboardBased: Boolean): js.Array[String] = js.native
-    @JSImport("babylonjs/Particles/index", "ParticleSystem._GetAttributeNamesOrOptions")
-    @js.native
-    def _GetAttributeNamesOrOptions(isAnimationSheetEnabled: Boolean, isBillboardBased: Boolean, useRampGradients: Boolean): js.Array[String] = js.native
+    inline def _GetAttributeNamesOrOptions(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")().asInstanceOf[js.Array[String]]
+    inline def _GetAttributeNamesOrOptions(isAnimationSheetEnabled: Boolean): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")(isAnimationSheetEnabled.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def _GetAttributeNamesOrOptions(isAnimationSheetEnabled: Boolean, isBillboardBased: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")(isAnimationSheetEnabled.asInstanceOf[js.Any], isBillboardBased.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def _GetAttributeNamesOrOptions(isAnimationSheetEnabled: Boolean, isBillboardBased: Boolean, useRampGradients: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")(isAnimationSheetEnabled.asInstanceOf[js.Any], isBillboardBased.asInstanceOf[js.Any], useRampGradients.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def _GetAttributeNamesOrOptions(isAnimationSheetEnabled: Boolean, isBillboardBased: Unit, useRampGradients: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")(isAnimationSheetEnabled.asInstanceOf[js.Any], isBillboardBased.asInstanceOf[js.Any], useRampGradients.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def _GetAttributeNamesOrOptions(isAnimationSheetEnabled: Unit, isBillboardBased: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")(isAnimationSheetEnabled.asInstanceOf[js.Any], isBillboardBased.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def _GetAttributeNamesOrOptions(isAnimationSheetEnabled: Unit, isBillboardBased: Boolean, useRampGradients: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")(isAnimationSheetEnabled.asInstanceOf[js.Any], isBillboardBased.asInstanceOf[js.Any], useRampGradients.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def _GetAttributeNamesOrOptions(isAnimationSheetEnabled: Unit, isBillboardBased: Unit, useRampGradients: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")(isAnimationSheetEnabled.asInstanceOf[js.Any], isBillboardBased.asInstanceOf[js.Any], useRampGradients.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     /** @hidden */
-    @JSImport("babylonjs/Particles/index", "ParticleSystem._GetEffectCreationOptions")
-    @js.native
-    def _GetEffectCreationOptions(): js.Array[String] = js.native
-    @JSImport("babylonjs/Particles/index", "ParticleSystem._GetEffectCreationOptions")
-    @js.native
-    def _GetEffectCreationOptions(isAnimationSheetEnabled: Boolean): js.Array[String] = js.native
+    inline def _GetEffectCreationOptions(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetEffectCreationOptions")().asInstanceOf[js.Array[String]]
+    inline def _GetEffectCreationOptions(isAnimationSheetEnabled: Boolean): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetEffectCreationOptions")(isAnimationSheetEnabled.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
     /** @hidden */
-    @JSImport("babylonjs/Particles/index", "ParticleSystem._Parse")
-    @js.native
-    def _Parse(
+    inline def _Parse(
       parsedParticleSystem: js.Any,
       particleSystem: IParticleSystem,
       sceneOrEngine: Scene,
       rootUrl: String
-    ): Unit = js.native
-    @JSImport("babylonjs/Particles/index", "ParticleSystem._Parse")
-    @js.native
-    def _Parse(
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedParticleSystem.asInstanceOf[js.Any], particleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def _Parse(
       parsedParticleSystem: js.Any,
       particleSystem: IParticleSystem,
       sceneOrEngine: ThinEngine,
       rootUrl: String
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedParticleSystem.asInstanceOf[js.Any], particleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** @hidden */
-    @JSImport("babylonjs/Particles/index", "ParticleSystem._Serialize")
-    @js.native
-    def _Serialize(serializationObject: js.Any, particleSystem: IParticleSystem, serializeTexture: Boolean): Unit = js.native
+    inline def _Serialize(serializationObject: js.Any, particleSystem: IParticleSystem, serializeTexture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_Serialize")(serializationObject.asInstanceOf[js.Any], particleSystem.asInstanceOf[js.Any], serializeTexture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("babylonjs/Particles/index", "ParticleSystemSet")
@@ -1298,8 +1236,7 @@ object particlesIndexMod {
     @JSImport("babylonjs/Particles/index", "ParticleSystemSet.BaseAssetsUrl")
     @js.native
     def BaseAssetsUrl: String = js.native
-    @scala.inline
-    def BaseAssetsUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BaseAssetsUrl")(x.asInstanceOf[js.Any])
+    inline def BaseAssetsUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BaseAssetsUrl")(x.asInstanceOf[js.Any])
     
     /**
       * Parse a new ParticleSystemSet from a serialized source
@@ -1308,12 +1245,8 @@ object particlesIndexMod {
       * @param gpu defines if we want GPU particles or CPU particles
       * @returns a new ParticleSystemSet
       */
-    @JSImport("babylonjs/Particles/index", "ParticleSystemSet.Parse")
-    @js.native
-    def Parse(data: js.Any, scene: Scene): typings.babylonjs.particleSystemSetMod.ParticleSystemSet = js.native
-    @JSImport("babylonjs/Particles/index", "ParticleSystemSet.Parse")
-    @js.native
-    def Parse(data: js.Any, scene: Scene, gpu: Boolean): typings.babylonjs.particleSystemSetMod.ParticleSystemSet = js.native
+    inline def Parse(data: js.Any, scene: Scene): typings.babylonjs.particleSystemSetMod.ParticleSystemSet = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(data.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particleSystemSetMod.ParticleSystemSet]
+    inline def Parse(data: js.Any, scene: Scene, gpu: Boolean): typings.babylonjs.particleSystemSetMod.ParticleSystemSet = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(data.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particleSystemSetMod.ParticleSystemSet]
   }
   
   @JSImport("babylonjs/Particles/index", "PointColor")
@@ -1321,15 +1254,15 @@ object particlesIndexMod {
   object PointColor extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.babylonjs.pointsCloudSystemMod.PointColor with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.babylonjs.pointsCloudSystemMod.PointColor & Double] = js.native
     
-    /* 2 */ val Color: typings.babylonjs.pointsCloudSystemMod.PointColor.Color with Double = js.native
+    /* 2 */ val Color: typings.babylonjs.pointsCloudSystemMod.PointColor.Color & Double = js.native
     
-    /* 0 */ val Random: typings.babylonjs.pointsCloudSystemMod.PointColor.Random with Double = js.native
+    /* 0 */ val Random: typings.babylonjs.pointsCloudSystemMod.PointColor.Random & Double = js.native
     
-    /* 3 */ val Stated: typings.babylonjs.pointsCloudSystemMod.PointColor.Stated with Double = js.native
+    /* 3 */ val Stated: typings.babylonjs.pointsCloudSystemMod.PointColor.Stated & Double = js.native
     
-    /* 1 */ val UV: typings.babylonjs.pointsCloudSystemMod.PointColor.UV with Double = js.native
+    /* 1 */ val UV: typings.babylonjs.pointsCloudSystemMod.PointColor.UV & Double = js.native
   }
   
   @JSImport("babylonjs/Particles/index", "PointParticleEmitter")
@@ -1426,7 +1359,19 @@ object particlesIndexMod {
       shapeId: Double,
       idxInShape: Double,
       sps: typings.babylonjs.solidParticleSystemMod.SolidParticleSystem,
-      modelBoundingInfo: js.UndefOr[Nullable[BoundingInfo]],
+      modelBoundingInfo: Unit,
+      materialIndex: Nullable[Double]
+    ) = this()
+    def this(
+      particleIndex: Double,
+      particleId: Double,
+      positionIndex: Double,
+      indiceIndex: Double,
+      model: Nullable[typings.babylonjs.solidParticleMod.ModelShape],
+      shapeId: Double,
+      idxInShape: Double,
+      sps: typings.babylonjs.solidParticleSystemMod.SolidParticleSystem,
+      modelBoundingInfo: Nullable[BoundingInfo],
       materialIndex: Nullable[Double]
     ) = this()
   }
@@ -1474,30 +1419,27 @@ object particlesIndexMod {
   class SphereDirectedParticleEmitter ()
     extends typings.babylonjs.emitterTypesIndexMod.SphereDirectedParticleEmitter {
     def this(radius: Double) = this()
-    def this(
-      radius: js.UndefOr[scala.Nothing],
-      /**
-      * The min limit of the emission direction.
-      */
-    direction1: Vector3
-    ) = this()
     def this(radius: Double, /**
       * The min limit of the emission direction.
       */
     direction1: Vector3) = this()
+    def this(radius: Unit, /**
+      * The min limit of the emission direction.
+      */
+    direction1: Vector3) = this()
     def this(
-      radius: js.UndefOr[scala.Nothing],
+      radius: Double,
       /**
       * The min limit of the emission direction.
       */
-    direction1: js.UndefOr[scala.Nothing],
+    direction1: Unit,
       /**
       * The max limit of the emission direction.
       */
     direction2: Vector3
     ) = this()
     def this(
-      radius: js.UndefOr[scala.Nothing],
+      radius: Double,
       /**
       * The min limit of the emission direction.
       */
@@ -1508,18 +1450,18 @@ object particlesIndexMod {
     direction2: Vector3
     ) = this()
     def this(
-      radius: Double,
+      radius: Unit,
       /**
       * The min limit of the emission direction.
       */
-    direction1: js.UndefOr[scala.Nothing],
+    direction1: Unit,
       /**
       * The max limit of the emission direction.
       */
     direction2: Vector3
     ) = this()
     def this(
-      radius: Double,
+      radius: Unit,
       /**
       * The min limit of the emission direction.
       */
@@ -1549,16 +1491,6 @@ object particlesIndexMod {
       /**
       * The radius of the emission sphere.
       */
-    radius: js.UndefOr[scala.Nothing],
-      /**
-      * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
-      */
-    radiusRange: Double
-    ) = this()
-    def this(
-      /**
-      * The radius of the emission sphere.
-      */
     radius: Double,
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
@@ -1569,21 +1501,17 @@ object particlesIndexMod {
       /**
       * The radius of the emission sphere.
       */
-    radius: js.UndefOr[scala.Nothing],
+    radius: Unit,
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
       */
-    radiusRange: js.UndefOr[scala.Nothing],
-      /**
-      * How much to randomize the particle direction [0-1].
-      */
-    directionRandomizer: Double
+    radiusRange: Double
     ) = this()
     def this(
       /**
       * The radius of the emission sphere.
       */
-    radius: js.UndefOr[scala.Nothing],
+    radius: Double,
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
       */
@@ -1601,7 +1529,7 @@ object particlesIndexMod {
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
       */
-    radiusRange: js.UndefOr[scala.Nothing],
+    radiusRange: Unit,
       /**
       * How much to randomize the particle direction [0-1].
       */
@@ -1611,11 +1539,25 @@ object particlesIndexMod {
       /**
       * The radius of the emission sphere.
       */
-    radius: Double,
+    radius: Unit,
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
       */
     radiusRange: Double,
+      /**
+      * How much to randomize the particle direction [0-1].
+      */
+    directionRandomizer: Double
+    ) = this()
+    def this(
+      /**
+      * The radius of the emission sphere.
+      */
+    radius: Unit,
+      /**
+      * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
+      */
+    radiusRange: Unit,
       /**
       * How much to randomize the particle direction [0-1].
       */
@@ -1639,6 +1581,10 @@ object particlesIndexMod {
   /* static members */
   object SubEmitter {
     
+    @JSImport("babylonjs/Particles/index", "SubEmitter")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new SubEmitter from a serialized JSON version
       * @param serializationObject defines the JSON object to read from
@@ -1646,20 +1592,12 @@ object particlesIndexMod {
       * @param rootUrl defines the rootUrl for data loading
       * @returns a new SubEmitter
       */
-    @JSImport("babylonjs/Particles/index", "SubEmitter.Parse")
-    @js.native
-    def Parse(serializationObject: js.Any, sceneOrEngine: Scene, rootUrl: String): typings.babylonjs.subEmitterMod.SubEmitter = js.native
-    @JSImport("babylonjs/Particles/index", "SubEmitter.Parse")
-    @js.native
-    def Parse(serializationObject: js.Any, sceneOrEngine: ThinEngine, rootUrl: String): typings.babylonjs.subEmitterMod.SubEmitter = js.native
+    inline def Parse(serializationObject: js.Any, sceneOrEngine: Scene, rootUrl: String): typings.babylonjs.subEmitterMod.SubEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(serializationObject.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.subEmitterMod.SubEmitter]
+    inline def Parse(serializationObject: js.Any, sceneOrEngine: ThinEngine, rootUrl: String): typings.babylonjs.subEmitterMod.SubEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(serializationObject.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.subEmitterMod.SubEmitter]
     
     /** @hidden */
-    @JSImport("babylonjs/Particles/index", "SubEmitter._ParseParticleSystem")
-    @js.native
-    def _ParseParticleSystem(system: js.Any, sceneOrEngine: Scene, rootUrl: String): typings.babylonjs.particleSystemMod.ParticleSystem = js.native
-    @JSImport("babylonjs/Particles/index", "SubEmitter._ParseParticleSystem")
-    @js.native
-    def _ParseParticleSystem(system: js.Any, sceneOrEngine: ThinEngine, rootUrl: String): typings.babylonjs.particleSystemMod.ParticleSystem = js.native
+    inline def _ParseParticleSystem(system: js.Any, sceneOrEngine: Scene, rootUrl: String): typings.babylonjs.particleSystemMod.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("_ParseParticleSystem")(system.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particleSystemMod.ParticleSystem]
+    inline def _ParseParticleSystem(system: js.Any, sceneOrEngine: ThinEngine, rootUrl: String): typings.babylonjs.particleSystemMod.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("_ParseParticleSystem")(system.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particleSystemMod.ParticleSystem]
   }
   
   @JSImport("babylonjs/Particles/index", "SubEmitterType")
@@ -1667,11 +1605,11 @@ object particlesIndexMod {
   object SubEmitterType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.babylonjs.subEmitterMod.SubEmitterType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.babylonjs.subEmitterMod.SubEmitterType & Double] = js.native
     
-    /* 0 */ val ATTACHED: typings.babylonjs.subEmitterMod.SubEmitterType.ATTACHED with Double = js.native
+    /* 0 */ val ATTACHED: typings.babylonjs.subEmitterMod.SubEmitterType.ATTACHED & Double = js.native
     
-    /* 1 */ val END: typings.babylonjs.subEmitterMod.SubEmitterType.END with Double = js.native
+    /* 1 */ val END: typings.babylonjs.subEmitterMod.SubEmitterType.END & Double = js.native
   }
   
   /* augmented module */
@@ -1700,36 +1638,7 @@ object particlesIndexMod {
         uniformsNames: js.Array[String],
         samplers: js.Array[String],
         defines: String,
-        fallbacks: js.UndefOr[scala.Nothing],
-        onCompiled: js.UndefOr[scala.Nothing],
-        onError: js.UndefOr[scala.Nothing],
-        particleSystem: IParticleSystem
-      ): Effect = js.native
-      def createEffectForParticles(
-        fragmentName: String,
-        uniformsNames: js.Array[String],
-        samplers: js.Array[String],
-        defines: String,
-        fallbacks: js.UndefOr[scala.Nothing],
-        onCompiled: js.UndefOr[scala.Nothing],
-        onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]
-      ): Effect = js.native
-      def createEffectForParticles(
-        fragmentName: String,
-        uniformsNames: js.Array[String],
-        samplers: js.Array[String],
-        defines: String,
-        fallbacks: js.UndefOr[scala.Nothing],
-        onCompiled: js.UndefOr[scala.Nothing],
-        onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit],
-        particleSystem: IParticleSystem
-      ): Effect = js.native
-      def createEffectForParticles(
-        fragmentName: String,
-        uniformsNames: js.Array[String],
-        samplers: js.Array[String],
-        defines: String,
-        fallbacks: js.UndefOr[scala.Nothing],
+        fallbacks: Unit,
         onCompiled: js.Function1[/* effect */ Effect, Unit]
       ): Effect = js.native
       def createEffectForParticles(
@@ -1737,17 +1646,7 @@ object particlesIndexMod {
         uniformsNames: js.Array[String],
         samplers: js.Array[String],
         defines: String,
-        fallbacks: js.UndefOr[scala.Nothing],
-        onCompiled: js.Function1[/* effect */ Effect, Unit],
-        onError: js.UndefOr[scala.Nothing],
-        particleSystem: IParticleSystem
-      ): Effect = js.native
-      def createEffectForParticles(
-        fragmentName: String,
-        uniformsNames: js.Array[String],
-        samplers: js.Array[String],
-        defines: String,
-        fallbacks: js.UndefOr[scala.Nothing],
+        fallbacks: Unit,
         onCompiled: js.Function1[/* effect */ Effect, Unit],
         onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]
       ): Effect = js.native
@@ -1756,9 +1655,48 @@ object particlesIndexMod {
         uniformsNames: js.Array[String],
         samplers: js.Array[String],
         defines: String,
-        fallbacks: js.UndefOr[scala.Nothing],
+        fallbacks: Unit,
         onCompiled: js.Function1[/* effect */ Effect, Unit],
         onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit],
+        particleSystem: IParticleSystem
+      ): Effect = js.native
+      def createEffectForParticles(
+        fragmentName: String,
+        uniformsNames: js.Array[String],
+        samplers: js.Array[String],
+        defines: String,
+        fallbacks: Unit,
+        onCompiled: js.Function1[/* effect */ Effect, Unit],
+        onError: Unit,
+        particleSystem: IParticleSystem
+      ): Effect = js.native
+      def createEffectForParticles(
+        fragmentName: String,
+        uniformsNames: js.Array[String],
+        samplers: js.Array[String],
+        defines: String,
+        fallbacks: Unit,
+        onCompiled: Unit,
+        onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]
+      ): Effect = js.native
+      def createEffectForParticles(
+        fragmentName: String,
+        uniformsNames: js.Array[String],
+        samplers: js.Array[String],
+        defines: String,
+        fallbacks: Unit,
+        onCompiled: Unit,
+        onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit],
+        particleSystem: IParticleSystem
+      ): Effect = js.native
+      def createEffectForParticles(
+        fragmentName: String,
+        uniformsNames: js.Array[String],
+        samplers: js.Array[String],
+        defines: String,
+        fallbacks: Unit,
+        onCompiled: Unit,
+        onError: Unit,
         particleSystem: IParticleSystem
       ): Effect = js.native
       def createEffectForParticles(
@@ -1774,35 +1712,6 @@ object particlesIndexMod {
         samplers: js.Array[String],
         defines: String,
         fallbacks: EffectFallbacks,
-        onCompiled: js.UndefOr[scala.Nothing],
-        onError: js.UndefOr[scala.Nothing],
-        particleSystem: IParticleSystem
-      ): Effect = js.native
-      def createEffectForParticles(
-        fragmentName: String,
-        uniformsNames: js.Array[String],
-        samplers: js.Array[String],
-        defines: String,
-        fallbacks: EffectFallbacks,
-        onCompiled: js.UndefOr[scala.Nothing],
-        onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]
-      ): Effect = js.native
-      def createEffectForParticles(
-        fragmentName: String,
-        uniformsNames: js.Array[String],
-        samplers: js.Array[String],
-        defines: String,
-        fallbacks: EffectFallbacks,
-        onCompiled: js.UndefOr[scala.Nothing],
-        onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit],
-        particleSystem: IParticleSystem
-      ): Effect = js.native
-      def createEffectForParticles(
-        fragmentName: String,
-        uniformsNames: js.Array[String],
-        samplers: js.Array[String],
-        defines: String,
-        fallbacks: EffectFallbacks,
         onCompiled: js.Function1[/* effect */ Effect, Unit]
       ): Effect = js.native
       def createEffectForParticles(
@@ -1812,16 +1721,6 @@ object particlesIndexMod {
         defines: String,
         fallbacks: EffectFallbacks,
         onCompiled: js.Function1[/* effect */ Effect, Unit],
-        onError: js.UndefOr[scala.Nothing],
-        particleSystem: IParticleSystem
-      ): Effect = js.native
-      def createEffectForParticles(
-        fragmentName: String,
-        uniformsNames: js.Array[String],
-        samplers: js.Array[String],
-        defines: String,
-        fallbacks: EffectFallbacks,
-        onCompiled: js.Function1[/* effect */ Effect, Unit],
         onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]
       ): Effect = js.native
       def createEffectForParticles(
@@ -1834,31 +1733,68 @@ object particlesIndexMod {
         onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit],
         particleSystem: IParticleSystem
       ): Effect = js.native
+      def createEffectForParticles(
+        fragmentName: String,
+        uniformsNames: js.Array[String],
+        samplers: js.Array[String],
+        defines: String,
+        fallbacks: EffectFallbacks,
+        onCompiled: js.Function1[/* effect */ Effect, Unit],
+        onError: Unit,
+        particleSystem: IParticleSystem
+      ): Effect = js.native
+      def createEffectForParticles(
+        fragmentName: String,
+        uniformsNames: js.Array[String],
+        samplers: js.Array[String],
+        defines: String,
+        fallbacks: EffectFallbacks,
+        onCompiled: Unit,
+        onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]
+      ): Effect = js.native
+      def createEffectForParticles(
+        fragmentName: String,
+        uniformsNames: js.Array[String],
+        samplers: js.Array[String],
+        defines: String,
+        fallbacks: EffectFallbacks,
+        onCompiled: Unit,
+        onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit],
+        particleSystem: IParticleSystem
+      ): Effect = js.native
+      def createEffectForParticles(
+        fragmentName: String,
+        uniformsNames: js.Array[String],
+        samplers: js.Array[String],
+        defines: String,
+        fallbacks: EffectFallbacks,
+        onCompiled: Unit,
+        onError: Unit,
+        particleSystem: IParticleSystem
+      ): Effect = js.native
     }
   }
   
   /* augmented module */
   object babylonjsMeshesMeshAugmentingMod {
     
-    @js.native
     trait Mesh extends StObject {
       
       /**
         * Returns an array populated with IParticleSystem objects whose the mesh is the emitter
         * @returns an array of IParticleSystem
         */
-      def getEmittedParticleSystems(): js.Array[IParticleSystem] = js.native
+      def getEmittedParticleSystems(): js.Array[IParticleSystem]
       
       /**
         * Returns an array populated with IParticleSystem objects whose the mesh or its children are the emitter
         * @returns an array of IParticleSystem
         */
-      def getHierarchyEmittedParticleSystems(): js.Array[IParticleSystem] = js.native
+      def getHierarchyEmittedParticleSystems(): js.Array[IParticleSystem]
     }
     object Mesh {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         getEmittedParticleSystems: () => js.Array[IParticleSystem],
         getHierarchyEmittedParticleSystems: () => js.Array[IParticleSystem]
       ): Mesh = {
@@ -1866,14 +1802,11 @@ object particlesIndexMod {
         __obj.asInstanceOf[Mesh]
       }
       
-      @scala.inline
-      implicit class MeshMutableBuilder[Self <: Mesh] (val x: Self) extends AnyVal {
+      extension [Self <: Mesh](x: Self) {
         
-        @scala.inline
-        def setGetEmittedParticleSystems(value: () => js.Array[IParticleSystem]): Self = StObject.set(x, "getEmittedParticleSystems", js.Any.fromFunction0(value))
+        inline def setGetEmittedParticleSystems(value: () => js.Array[IParticleSystem]): Self = StObject.set(x, "getEmittedParticleSystems", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetHierarchyEmittedParticleSystems(value: () => js.Array[IParticleSystem]): Self = StObject.set(x, "getHierarchyEmittedParticleSystems", js.Any.fromFunction0(value))
+        inline def setGetHierarchyEmittedParticleSystems(value: () => js.Array[IParticleSystem]): Self = StObject.set(x, "getHierarchyEmittedParticleSystems", js.Any.fromFunction0(value))
       }
     }
   }

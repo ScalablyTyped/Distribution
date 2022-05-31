@@ -3,35 +3,34 @@ package typings.babylonjs.BABYLON
 import typings.babylonjs.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StencilState extends StObject {
   
-  var _isStencilFuncDirty: js.Any = js.native
+  /* private */ var _isStencilFuncDirty: js.Any = js.native
   
-  var _isStencilMaskDirty: js.Any = js.native
+  /* private */ var _isStencilMaskDirty: js.Any = js.native
   
-  var _isStencilOpDirty: js.Any = js.native
+  /* private */ var _isStencilOpDirty: js.Any = js.native
   
-  var _isStencilTestDirty: js.Any = js.native
+  /* private */ var _isStencilTestDirty: js.Any = js.native
   
-  var _stencilFunc: js.Any = js.native
+  /* private */ var _stencilFunc: js.Any = js.native
   
-  var _stencilFuncMask: js.Any = js.native
+  /* private */ var _stencilFuncMask: js.Any = js.native
   
-  var _stencilFuncRef: js.Any = js.native
+  /* private */ var _stencilFuncRef: js.Any = js.native
   
-  var _stencilMask: js.Any = js.native
+  /* private */ var _stencilMask: js.Any = js.native
   
-  var _stencilOpDepthFail: js.Any = js.native
+  /* private */ var _stencilOpDepthFail: js.Any = js.native
   
-  var _stencilOpStencilDepthPass: js.Any = js.native
+  /* private */ var _stencilOpStencilDepthPass: js.Any = js.native
   
-  var _stencilOpStencilFail: js.Any = js.native
+  /* private */ var _stencilOpStencilFail: js.Any = js.native
   
-  var _stencilTest: js.Any = js.native
+  /* private */ var _stencilTest: js.Any = js.native
   
   @JSName("apply")
   def apply(gl: WebGLRenderingContext): Unit = js.native

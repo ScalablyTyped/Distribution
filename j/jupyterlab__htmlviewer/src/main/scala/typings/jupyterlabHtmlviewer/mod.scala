@@ -12,15 +12,14 @@ import typings.luminoSignaling.mod.ISignal
 import typings.luminoWidgets.mod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.luminoDisposable.mod.IDisposable because Already inherited
-  - typings.luminoMessaging.mod.IMessageHandler because Already inherited
   - typings.luminoDisposable.mod.IObservableDisposable because Already inherited
+  - typings.luminoMessaging.mod.IMessageHandler because Already inherited
   - typings.luminoWidgets.widgetMod.Widget because Already inherited
   - typings.luminoWidgets.mod.Widget because Already inherited
   - typings.jupyterlabDocregistry.registryMod.IDocumentWidget because var conflicts: _disposed, _flags, _layout, _parent, content, id, layout, parent, revealed, toolbar. Inlined  */ @JSImport("@jupyterlab/htmlviewer", "HTMLViewer")
@@ -31,26 +30,26 @@ object mod {
       */
     def this(options: IOptionsOptionalContent[Widget, IModel]) = this()
     
-    var _monitor: js.Any = js.native
+    /* private */ var _monitor: js.Any = js.native
     
-    var _objectUrl: js.Any = js.native
+    /* private */ var _objectUrl: js.Any = js.native
     
-    var _parser: js.Any = js.native
+    /* private */ var _parser: js.Any = js.native
     
     /**
       * Render HTML in IFrame into this widget's node.
       */
-    var _renderModel: js.Any = js.native
+    /* private */ var _renderModel: js.Any = js.native
     
-    var _renderPending: js.Any = js.native
+    /* private */ var _renderPending: js.Any = js.native
     
     /**
       * Set a <base> element in the HTML string so that the iframe
       * can correctly dereference relative links.
       */
-    var _setBase: js.Any = js.native
+    /* private */ var _setBase: js.Any = js.native
     
-    var _trustedChanged: js.Any = js.native
+    /* private */ var _trustedChanged: js.Any = js.native
     
     /**
       * Handle and update request.

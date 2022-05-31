@@ -1,14 +1,16 @@
 package typings.babylonjs.global.BABYLON
 
+import typings.babylonjs.BABYLON.Behavior
+import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.Camera")
 @js.native
 class Camera protected ()
-  extends typings.babylonjs.BABYLON.Camera {
+  extends StObject
+     with typings.babylonjs.BABYLON.Camera {
   /**
     * Instantiates a new camera object.
     * This should not be used directly but through the inherited cameras: ArcRotate, Free...
@@ -25,6 +27,30 @@ class Camera protected ()
     scene: typings.babylonjs.BABYLON.Scene,
     setActiveOnSceneIfNoneActive: Boolean
   ) = this()
+  
+  /**
+    * Attach a behavior
+    * @param behavior defines the behavior to attach
+    * @returns the current host
+    */
+  /* CompleteClass */
+  override def addBehavior(behavior: Behavior[typings.babylonjs.BABYLON.Node]): typings.babylonjs.BABYLON.Node = js.native
+  
+  /**
+    * Gets a behavior using its name to search
+    * @param name defines the name to search
+    * @returns the behavior or null if not found
+    */
+  /* CompleteClass */
+  override def getBehaviorByName(name: String): Nullable[Behavior[typings.babylonjs.BABYLON.Node]] = js.native
+  
+  /**
+    * Remove a behavior from the current object
+    * @param behavior defines the behavior to detach
+    * @returns the current host
+    */
+  /* CompleteClass */
+  override def removeBehavior(behavior: Behavior[typings.babylonjs.BABYLON.Node]): typings.babylonjs.BABYLON.Node = js.native
 }
 /* static members */
 object Camera {
@@ -54,8 +80,7 @@ object Camera {
   @JSGlobal("BABYLON.Camera.ForceAttachControlToAlwaysPreventDefault")
   @js.native
   def ForceAttachControlToAlwaysPreventDefault: Boolean = js.native
-  @scala.inline
-  def ForceAttachControlToAlwaysPreventDefault_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ForceAttachControlToAlwaysPreventDefault")(x.asInstanceOf[js.Any])
+  inline def ForceAttachControlToAlwaysPreventDefault_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ForceAttachControlToAlwaysPreventDefault")(x.asInstanceOf[js.Any])
   
   /**
     * Gets a camera constructor for a given camera type
@@ -66,30 +91,22 @@ object Camera {
     * @param isStereoscopicSideBySide In case of stereoscopic setup, should the sereo be side b side
     * @returns a factory method to construc the camera
     */
-  @JSGlobal("BABYLON.Camera.GetConstructorFromName")
-  @js.native
-  def GetConstructorFromName(`type`: String, name: String, scene: typings.babylonjs.BABYLON.Scene): js.Function0[this.type] = js.native
-  @JSGlobal("BABYLON.Camera.GetConstructorFromName")
-  @js.native
-  def GetConstructorFromName(
-    `type`: String,
-    name: String,
-    scene: typings.babylonjs.BABYLON.Scene,
-    interaxial_distance: js.UndefOr[scala.Nothing],
-    isStereoscopicSideBySide: Boolean
-  ): js.Function0[this.type] = js.native
-  @JSGlobal("BABYLON.Camera.GetConstructorFromName")
-  @js.native
-  def GetConstructorFromName(`type`: String, name: String, scene: typings.babylonjs.BABYLON.Scene, interaxial_distance: Double): js.Function0[this.type] = js.native
-  @JSGlobal("BABYLON.Camera.GetConstructorFromName")
-  @js.native
-  def GetConstructorFromName(
+  inline def GetConstructorFromName(`type`: String, name: String, scene: typings.babylonjs.BABYLON.Scene): js.Function0[this.type] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetConstructorFromName")(`type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Function0[this.type]]
+  inline def GetConstructorFromName(`type`: String, name: String, scene: typings.babylonjs.BABYLON.Scene, interaxial_distance: Double): js.Function0[this.type] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetConstructorFromName")(`type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], interaxial_distance.asInstanceOf[js.Any])).asInstanceOf[js.Function0[this.type]]
+  inline def GetConstructorFromName(
     `type`: String,
     name: String,
     scene: typings.babylonjs.BABYLON.Scene,
     interaxial_distance: Double,
     isStereoscopicSideBySide: Boolean
-  ): js.Function0[this.type] = js.native
+  ): js.Function0[this.type] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetConstructorFromName")(`type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], interaxial_distance.asInstanceOf[js.Any], isStereoscopicSideBySide.asInstanceOf[js.Any])).asInstanceOf[js.Function0[this.type]]
+  inline def GetConstructorFromName(
+    `type`: String,
+    name: String,
+    scene: typings.babylonjs.BABYLON.Scene,
+    interaxial_distance: Unit,
+    isStereoscopicSideBySide: Boolean
+  ): js.Function0[this.type] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetConstructorFromName")(`type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], interaxial_distance.asInstanceOf[js.Any], isStereoscopicSideBySide.asInstanceOf[js.Any])).asInstanceOf[js.Function0[this.type]]
   
   /**
     * This helps creating camera with an orthographic mode.
@@ -114,9 +131,7 @@ object Camera {
     * @param scene The scene to instantiate the camera in
     * @returns the newly constructed camera
     */
-  @JSGlobal("BABYLON.Camera.Parse")
-  @js.native
-  def Parse(parsedCamera: js.Any, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.Camera = js.native
+  inline def Parse(parsedCamera: js.Any, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.Camera = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Camera]
   
   /**
     * Custom rig mode allowing rig cameras to be populated manually with any number of cameras
@@ -184,27 +199,17 @@ object Camera {
   val RIG_MODE_WEBVR: Double = js.native
   
   /** @hidden */
-  @JSGlobal("BABYLON.Camera._createDefaultParsedCamera")
-  @js.native
-  def _createDefaultParsedCamera(name: String, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.Camera = js.native
+  inline def _createDefaultParsedCamera(name: String, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.Camera = (^.asInstanceOf[js.Dynamic].applyDynamic("_createDefaultParsedCamera")(name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Camera]
   
   /** @hidden */
-  @JSGlobal("BABYLON.Camera._setStereoscopicAnaglyphRigMode")
-  @js.native
-  def _setStereoscopicAnaglyphRigMode(camera: typings.babylonjs.BABYLON.Camera): Unit = js.native
+  inline def _setStereoscopicAnaglyphRigMode(camera: typings.babylonjs.BABYLON.Camera): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_setStereoscopicAnaglyphRigMode")(camera.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** @hidden */
-  @JSGlobal("BABYLON.Camera._setStereoscopicRigMode")
-  @js.native
-  def _setStereoscopicRigMode(camera: typings.babylonjs.BABYLON.Camera): Unit = js.native
+  inline def _setStereoscopicRigMode(camera: typings.babylonjs.BABYLON.Camera): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_setStereoscopicRigMode")(camera.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** @hidden */
-  @JSGlobal("BABYLON.Camera._setVRRigMode")
-  @js.native
-  def _setVRRigMode(camera: typings.babylonjs.BABYLON.Camera, rigParams: js.Any): Unit = js.native
+  inline def _setVRRigMode(camera: typings.babylonjs.BABYLON.Camera, rigParams: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_setVRRigMode")(camera.asInstanceOf[js.Any], rigParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** @hidden */
-  @JSGlobal("BABYLON.Camera._setWebVRRigMode")
-  @js.native
-  def _setWebVRRigMode(camera: typings.babylonjs.BABYLON.Camera, rigParams: js.Any): Unit = js.native
+  inline def _setWebVRRigMode(camera: typings.babylonjs.BABYLON.Camera, rigParams: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_setWebVRRigMode")(camera.asInstanceOf[js.Any], rigParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

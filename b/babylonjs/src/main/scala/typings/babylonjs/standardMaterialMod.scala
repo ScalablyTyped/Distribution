@@ -18,7 +18,6 @@ import typings.babylonjs.smartArrayMod.SmartArray
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object standardMaterialMod {
@@ -36,7 +35,7 @@ object standardMaterialMod {
       */
     def this(name: String, scene: Scene) = this()
     
-    var _ambientTexture: js.Any = js.native
+    /* private */ var _ambientTexture: js.Any = js.native
     
     /**
       * Attaches a new image processing configuration to the Standard Material.
@@ -44,19 +43,19 @@ object standardMaterialMod {
       */
     /* protected */ def _attachImageProcessingConfiguration(configuration: Nullable[ImageProcessingConfiguration]): Unit = js.native
     
-    var _bumpTexture: js.Any = js.native
+    /* private */ var _bumpTexture: js.Any = js.native
     
-    var _diffuseFresnelParameters: js.Any = js.native
+    /* private */ var _diffuseFresnelParameters: js.Any = js.native
     
-    var _diffuseTexture: js.Any = js.native
+    /* private */ var _diffuseTexture: js.Any = js.native
     
-    var _disableLighting: js.Any = js.native
+    /* private */ var _disableLighting: js.Any = js.native
     
-    var _emissiveFresnelParameters: js.Any = js.native
+    /* private */ var _emissiveFresnelParameters: js.Any = js.native
     
-    var _emissiveTexture: js.Any = js.native
+    /* private */ var _emissiveTexture: js.Any = js.native
     
-    var _globalAmbientColor: Color3 = js.native
+    /* protected */ var _globalAmbientColor: Color3 = js.native
     
     /**
       * Specifies whether or not there is a usable alpha channel for transparency.
@@ -66,73 +65,73 @@ object standardMaterialMod {
     /**
       * Default configuration related to image processing available in the standard Material.
       */
-    var _imageProcessingConfiguration: ImageProcessingConfiguration = js.native
+    /* protected */ var _imageProcessingConfiguration: ImageProcessingConfiguration = js.native
     
     /**
       * Keep track of the image processing observer to allow dispose and replace.
       */
-    var _imageProcessingObserver: js.Any = js.native
+    /* private */ var _imageProcessingObserver: js.Any = js.native
     
-    var _invertNormalMapX: js.Any = js.native
+    /* private */ var _invertNormalMapX: js.Any = js.native
     
-    var _invertNormalMapY: js.Any = js.native
+    /* private */ var _invertNormalMapY: js.Any = js.native
     
-    var _lightmapTexture: js.Any = js.native
+    /* private */ var _lightmapTexture: js.Any = js.native
     
-    var _linkEmissiveWithDiffuse: js.Any = js.native
+    /* private */ var _linkEmissiveWithDiffuse: js.Any = js.native
     
-    var _maxSimultaneousLights: js.Any = js.native
+    /* private */ var _maxSimultaneousLights: js.Any = js.native
     
-    var _opacityFresnelParameters: js.Any = js.native
+    /* private */ var _opacityFresnelParameters: js.Any = js.native
     
-    var _opacityTexture: js.Any = js.native
+    /* private */ var _opacityTexture: js.Any = js.native
     
-    var _rebuildInParallel: Boolean = js.native
+    /* protected */ var _rebuildInParallel: Boolean = js.native
     
-    var _reflectionFresnelParameters: js.Any = js.native
+    /* private */ var _reflectionFresnelParameters: js.Any = js.native
     
-    var _reflectionTexture: js.Any = js.native
+    /* private */ var _reflectionTexture: js.Any = js.native
     
-    var _refractionFresnelParameters: js.Any = js.native
+    /* private */ var _refractionFresnelParameters: js.Any = js.native
     
-    var _refractionTexture: js.Any = js.native
+    /* private */ var _refractionTexture: js.Any = js.native
     
-    var _renderTargets: SmartArray[RenderTargetTexture] = js.native
+    /* protected */ var _renderTargets: SmartArray[RenderTargetTexture] = js.native
     
-    var _roughness: js.Any = js.native
+    /* private */ var _roughness: js.Any = js.native
     
     /**
       * Specifies whether or not the alpha value of the diffuse texture should be used for alpha blending.
       */
     /* protected */ def _shouldUseAlphaFromDiffuseTexture(): Boolean = js.native
     
-    var _specularTexture: js.Any = js.native
+    /* private */ var _specularTexture: js.Any = js.native
     
-    var _twoSidedLighting: js.Any = js.native
+    /* private */ var _twoSidedLighting: js.Any = js.native
     
-    var _useAlphaFromDiffuseTexture: js.Any = js.native
+    /* private */ var _useAlphaFromDiffuseTexture: js.Any = js.native
     
-    var _useEmissiveAsIllumination: js.Any = js.native
+    /* private */ var _useEmissiveAsIllumination: js.Any = js.native
     
-    var _useGlossinessFromSpecularMapAlpha: js.Any = js.native
+    /* private */ var _useGlossinessFromSpecularMapAlpha: js.Any = js.native
     
-    var _useLightmapAsShadowmap: js.Any = js.native
+    /* private */ var _useLightmapAsShadowmap: js.Any = js.native
     
-    var _useLogarithmicDepth: Boolean = js.native
+    /* protected */ var _useLogarithmicDepth: Boolean = js.native
     
-    var _useObjectSpaceNormalMap: js.Any = js.native
+    /* private */ var _useObjectSpaceNormalMap: js.Any = js.native
     
-    var _useParallax: js.Any = js.native
+    /* private */ var _useParallax: js.Any = js.native
     
-    var _useParallaxOcclusion: js.Any = js.native
+    /* private */ var _useParallaxOcclusion: js.Any = js.native
     
-    var _useReflectionFresnelFromSpecular: js.Any = js.native
+    /* private */ var _useReflectionFresnelFromSpecular: js.Any = js.native
     
-    var _useReflectionOverAlpha: js.Any = js.native
+    /* private */ var _useReflectionOverAlpha: js.Any = js.native
     
-    var _useSpecularOverAlpha: js.Any = js.native
+    /* private */ var _useSpecularOverAlpha: js.Any = js.native
     
-    var _worldViewProjectionMatrix: Matrix = js.native
+    /* protected */ var _worldViewProjectionMatrix: Matrix = js.native
     
     /**
       * Defines the alpha limits in alpha test mode.
@@ -481,6 +480,10 @@ object standardMaterialMod {
   /* static members */
   object StandardMaterial {
     
+    @JSImport("babylonjs/Materials/standardMaterial", "StandardMaterial")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a standard material from parsed material data
       * @param source defines the JSON representation of the material
@@ -488,9 +491,7 @@ object standardMaterialMod {
       * @param rootUrl defines the root URL to use to load textures and relative dependencies
       * @returns a new standard material
       */
-    @JSImport("babylonjs/Materials/standardMaterial", "StandardMaterial.Parse")
-    @js.native
-    def Parse(source: js.Any, scene: Scene, rootUrl: String): StandardMaterial = js.native
+    inline def Parse(source: js.Any, scene: Scene, rootUrl: String): StandardMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[StandardMaterial]
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -534,6 +535,18 @@ object standardMaterialMod {
     
     var CLIPPLANE6: Boolean = js.native
     
+    /* CompleteClass */
+    var COLORCURVES: Boolean = js.native
+    
+    /* CompleteClass */
+    var COLORGRADING: Boolean = js.native
+    
+    /* CompleteClass */
+    var COLORGRADING3D: Boolean = js.native
+    
+    /* CompleteClass */
+    var CONTRAST: Boolean = js.native
+    
     var DEPTHPREPASS: Boolean = js.native
     
     var DETAIL: Boolean = js.native
@@ -556,11 +569,20 @@ object standardMaterialMod {
     
     var EMISSIVEFRESNEL: Boolean = js.native
     
+    /* CompleteClass */
+    var EXPOSURE: Boolean = js.native
+    
     var FOG: Boolean = js.native
     
     var FRESNEL: Boolean = js.native
     
     var GLOSSINESS: Boolean = js.native
+    
+    /* CompleteClass */
+    var IMAGEPROCESSING: Boolean = js.native
+    
+    /* CompleteClass */
+    var IMAGEPROCESSINGPOSTPROCESS: Boolean = js.native
     
     var INSTANCES: Boolean = js.native
     
@@ -694,6 +716,12 @@ object standardMaterialMod {
     
     var ROUGHNESS: Boolean = js.native
     
+    /* CompleteClass */
+    var SAMPLER3DBGRMAP: Boolean = js.native
+    
+    /* CompleteClass */
+    var SAMPLER3DGREENDEPTH: Boolean = js.native
+    
     var SCENE_MRT_COUNT: Double = js.native
     
     var SHADOWFLOAT: Boolean = js.native
@@ -708,6 +736,12 @@ object standardMaterialMod {
     
     var THIN_INSTANCES: Boolean = js.native
     
+    /* CompleteClass */
+    var TONEMAPPING: Boolean = js.native
+    
+    /* CompleteClass */
+    var TONEMAPPING_ACES: Boolean = js.native
+    
     var TWOSIDEDLIGHTING: Boolean = js.native
     
     var USELIGHTMAPASSHADOWMAP: Boolean = js.native
@@ -721,6 +755,15 @@ object standardMaterialMod {
     var VERTEXALPHA: Boolean = js.native
     
     var VERTEXCOLOR: Boolean = js.native
+    
+    /* CompleteClass */
+    var VIGNETTE: Boolean = js.native
+    
+    /* CompleteClass */
+    var VIGNETTEBLENDMODEMULTIPLY: Boolean = js.native
+    
+    /* CompleteClass */
+    var VIGNETTEBLENDMODEOPAQUE: Boolean = js.native
     
     def setReflectionMode(modeToEnable: String): Unit = js.native
   }

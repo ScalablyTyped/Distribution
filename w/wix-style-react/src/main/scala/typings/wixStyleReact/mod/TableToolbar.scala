@@ -6,6 +6,7 @@ import typings.react.mod.SFC
 import typings.react.mod.ValidationMap
 import typings.wixStyleReact.anon.PartialTableToolbarProps
 import typings.wixStyleReact.anon.WeakValidationMapTableToo
+import typings.wixStyleReact.tableToolbarMod.DividerProps
 import typings.wixStyleReact.tableToolbarMod.ItemGroupProps
 import typings.wixStyleReact.tableToolbarMod.ItemProps
 import typings.wixStyleReact.tableToolbarMod.LabelProps
@@ -28,8 +29,8 @@ object TableToolbar {
   
   @JSImport("wix-style-react", "TableToolbar.Divider")
   @js.native
-  def Divider: SFC[typings.wixStyleReact.tableToolbarMod.DividerProps] = js.native
-  inline def Divider_=(x: SFC[typings.wixStyleReact.tableToolbarMod.DividerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Divider")(x.asInstanceOf[js.Any])
+  def Divider: SFC[DividerProps] = js.native
+  inline def Divider_=(x: SFC[DividerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Divider")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-style-react", "TableToolbar.Item")
   @js.native

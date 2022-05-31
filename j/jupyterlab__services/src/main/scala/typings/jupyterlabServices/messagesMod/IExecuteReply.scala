@@ -1,16 +1,13 @@
 package typings.jupyterlabServices.messagesMod
 
-import typings.jupyterlabServices.jupyterlabServicesStrings.ok
 import typings.luminoCoreutils.jsonMod.JSONObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IExecuteReply
-  extends IExecuteCount
-     with IReplyOkContent {
+  extends StObject
+     with IExecuteReplyBase {
   
   /**
     * A list of payload objects.
@@ -18,34 +15,28 @@ trait IExecuteReply
     * The only requirement of each payload object is that it have a 'source'
     * key, which is a string classifying the payload (e.g. 'page').
     */
-  var payload: js.UndefOr[js.Array[JSONObject]] = js.native
+  var payload: js.UndefOr[js.Array[JSONObject]] = js.undefined
   
   /**
     * Results for the user_expressions.
     */
-  var user_expressions: JSONObject = js.native
+  var user_expressions: JSONObject
 }
 object IExecuteReply {
   
-  @scala.inline
-  def apply(status: ok, user_expressions: JSONObject): IExecuteReply = {
-    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], user_expressions = user_expressions.asInstanceOf[js.Any])
+  inline def apply(user_expressions: JSONObject): IExecuteReply = {
+    val __obj = js.Dynamic.literal(status = "ok", user_expressions = user_expressions.asInstanceOf[js.Any], execution_count = null)
     __obj.asInstanceOf[IExecuteReply]
   }
   
-  @scala.inline
-  implicit class IExecuteReplyMutableBuilder[Self <: IExecuteReply] (val x: Self) extends AnyVal {
+  extension [Self <: IExecuteReply](x: Self) {
     
-    @scala.inline
-    def setPayload(value: js.Array[JSONObject]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: js.Array[JSONObject]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
-    @scala.inline
-    def setPayloadVarargs(value: JSONObject*): Self = StObject.set(x, "payload", js.Array(value :_*))
+    inline def setPayloadVarargs(value: JSONObject*): Self = StObject.set(x, "payload", js.Array(value :_*))
     
-    @scala.inline
-    def setUser_expressions(value: JSONObject): Self = StObject.set(x, "user_expressions", value.asInstanceOf[js.Any])
+    inline def setUser_expressions(value: JSONObject): Self = StObject.set(x, "user_expressions", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,8 @@
 package typings.officeUiFabricReact.mod
 
 import typings.officeUiFabricReact.anon.IsSelectedOnFocus
+import typings.officeUiFabricReact.selectionZoneMod.ISelectionZoneProps
+import typings.officeUiFabricReact.selectionZoneMod.ISelectionZoneState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class SelectionZone protected ()
   extends typings.officeUiFabricReact.libDetailsListMod.SelectionZone {
-  def this(props: typings.officeUiFabricReact.selectionZoneMod.ISelectionZoneProps) = this()
+  def this(props: ISelectionZoneProps) = this()
 }
 /* static members */
 object SelectionZone {
@@ -35,8 +37,5 @@ object SelectionZone {
   def defaultProps: IsSelectedOnFocus = js.native
   inline def defaultProps_=(x: IsSelectedOnFocus): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
-  inline def getDerivedStateFromProps(
-    nextProps: typings.officeUiFabricReact.selectionZoneMod.ISelectionZoneProps,
-    prevState: typings.officeUiFabricReact.selectionZoneMod.ISelectionZoneState
-  ): typings.officeUiFabricReact.selectionZoneMod.ISelectionZoneState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.selectionZoneMod.ISelectionZoneState]
+  inline def getDerivedStateFromProps(nextProps: ISelectionZoneProps, prevState: ISelectionZoneState): ISelectionZoneState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[ISelectionZoneState]
 }

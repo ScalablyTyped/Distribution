@@ -6,7 +6,6 @@ import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pbrMetallicRoughnessBlockMod {
@@ -20,31 +19,31 @@ object pbrMetallicRoughnessBlockMod {
       */
     def this(name: String) = this()
     
-    var _environmentBRDFTexture: js.Any = js.native
+    /* private */ var _environmentBRDFTexture: js.Any = js.native
     
-    var _environmentBrdfSamplerName: js.Any = js.native
+    /* private */ var _environmentBrdfSamplerName: js.Any = js.native
     
-    var _getAlbedoOpacityCode: js.Any = js.native
+    /* private */ var _getAlbedoOpacityCode: js.Any = js.native
     
-    var _getAmbientOcclusionCode: js.Any = js.native
+    /* private */ var _getAmbientOcclusionCode: js.Any = js.native
     
-    var _getReflectivityCode: js.Any = js.native
+    /* private */ var _getReflectivityCode: js.Any = js.native
     
-    var _injectVertexCode: js.Any = js.native
+    /* private */ var _injectVertexCode: js.Any = js.native
     
-    var _invertNormalName: js.Any = js.native
+    /* private */ var _invertNormalName: js.Any = js.native
     
-    var _lightId: js.Any = js.native
+    /* private */ var _lightId: js.Any = js.native
     
-    var _metallicF0Factor: js.Any = js.native
+    /* private */ var _metallicF0Factor: js.Any = js.native
     
-    var _metallicReflectanceColor: js.Any = js.native
+    /* private */ var _metallicReflectanceColor: js.Any = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
-    var _vMetallicReflectanceFactorsName: js.Any = js.native
+    /* private */ var _vMetallicReflectanceFactorsName: js.Any = js.native
     
-    var _vNormalWName: js.Any = js.native
+    /* private */ var _vNormalWName: js.Any = js.native
     
     /**
       * Gets the alpha output component

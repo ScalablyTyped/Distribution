@@ -11,7 +11,6 @@ import typings.babylonjs.subSurfaceConfigurationMod.SubSurfaceConfiguration
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object renderingIndexMod {
@@ -40,23 +39,22 @@ object renderingIndexMod {
       */
     def this(scene: Scene) = this()
     def this(scene: Scene, `type`: Double) = this()
-    def this(scene: Scene, `type`: js.UndefOr[scala.Nothing], camera: Nullable[Camera]) = this()
     def this(scene: Scene, `type`: Double, camera: Nullable[Camera]) = this()
-    def this(
-      scene: Scene,
-      `type`: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[Nullable[Camera]],
-      storeNonLinearDepth: Boolean
-    ) = this()
-    def this(scene: Scene, `type`: Double, camera: js.UndefOr[Nullable[Camera]], storeNonLinearDepth: Boolean) = this()
+    def this(scene: Scene, `type`: Unit, camera: Nullable[Camera]) = this()
+    def this(scene: Scene, `type`: Double, camera: Unit, storeNonLinearDepth: Boolean) = this()
+    def this(scene: Scene, `type`: Double, camera: Nullable[Camera], storeNonLinearDepth: Boolean) = this()
+    def this(scene: Scene, `type`: Unit, camera: Unit, storeNonLinearDepth: Boolean) = this()
+    def this(scene: Scene, `type`: Unit, camera: Nullable[Camera], storeNonLinearDepth: Boolean) = this()
   }
   /* static members */
   object DepthRenderer {
     
-    /** @hidden */
-    @JSImport("babylonjs/Rendering/index", "DepthRenderer._SceneComponentInitialization")
+    @JSImport("babylonjs/Rendering/index", "DepthRenderer")
     @js.native
-    def _SceneComponentInitialization(scene: Scene): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    /** @hidden */
+    inline def _SceneComponentInitialization(scene: Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("babylonjs/Rendering/index", "DepthRendererSceneComponent")
@@ -85,26 +83,8 @@ object renderingIndexMod {
       */
     def this(source: AbstractMesh) = this()
     def this(source: AbstractMesh, epsilon: Double) = this()
-    def this(source: AbstractMesh, epsilon: js.UndefOr[scala.Nothing], checkVerticesInsteadOfIndices: Boolean) = this()
     def this(source: AbstractMesh, epsilon: Double, checkVerticesInsteadOfIndices: Boolean) = this()
-    def this(
-      source: AbstractMesh,
-      epsilon: js.UndefOr[scala.Nothing],
-      checkVerticesInsteadOfIndices: js.UndefOr[scala.Nothing],
-      generateEdgesLines: Boolean
-    ) = this()
-    def this(
-      source: AbstractMesh,
-      epsilon: js.UndefOr[scala.Nothing],
-      checkVerticesInsteadOfIndices: Boolean,
-      generateEdgesLines: Boolean
-    ) = this()
-    def this(
-      source: AbstractMesh,
-      epsilon: Double,
-      checkVerticesInsteadOfIndices: js.UndefOr[scala.Nothing],
-      generateEdgesLines: Boolean
-    ) = this()
+    def this(source: AbstractMesh, epsilon: Unit, checkVerticesInsteadOfIndices: Boolean) = this()
     def this(
       source: AbstractMesh,
       epsilon: Double,
@@ -113,28 +93,25 @@ object renderingIndexMod {
     ) = this()
     def this(
       source: AbstractMesh,
-      epsilon: js.UndefOr[scala.Nothing],
-      checkVerticesInsteadOfIndices: js.UndefOr[scala.Nothing],
-      generateEdgesLines: js.UndefOr[scala.Nothing],
-      options: IEdgesRendererOptions
+      epsilon: Double,
+      checkVerticesInsteadOfIndices: Unit,
+      generateEdgesLines: Boolean
     ) = this()
     def this(
       source: AbstractMesh,
-      epsilon: js.UndefOr[scala.Nothing],
-      checkVerticesInsteadOfIndices: js.UndefOr[scala.Nothing],
-      generateEdgesLines: Boolean,
-      options: IEdgesRendererOptions
-    ) = this()
-    def this(
-      source: AbstractMesh,
-      epsilon: js.UndefOr[scala.Nothing],
+      epsilon: Unit,
       checkVerticesInsteadOfIndices: Boolean,
-      generateEdgesLines: js.UndefOr[scala.Nothing],
-      options: IEdgesRendererOptions
+      generateEdgesLines: Boolean
     ) = this()
     def this(
       source: AbstractMesh,
-      epsilon: js.UndefOr[scala.Nothing],
+      epsilon: Unit,
+      checkVerticesInsteadOfIndices: Unit,
+      generateEdgesLines: Boolean
+    ) = this()
+    def this(
+      source: AbstractMesh,
+      epsilon: Double,
       checkVerticesInsteadOfIndices: Boolean,
       generateEdgesLines: Boolean,
       options: IEdgesRendererOptions
@@ -142,29 +119,50 @@ object renderingIndexMod {
     def this(
       source: AbstractMesh,
       epsilon: Double,
-      checkVerticesInsteadOfIndices: js.UndefOr[scala.Nothing],
-      generateEdgesLines: js.UndefOr[scala.Nothing],
+      checkVerticesInsteadOfIndices: Boolean,
+      generateEdgesLines: Unit,
       options: IEdgesRendererOptions
     ) = this()
     def this(
       source: AbstractMesh,
       epsilon: Double,
-      checkVerticesInsteadOfIndices: js.UndefOr[scala.Nothing],
+      checkVerticesInsteadOfIndices: Unit,
       generateEdgesLines: Boolean,
       options: IEdgesRendererOptions
     ) = this()
     def this(
       source: AbstractMesh,
       epsilon: Double,
-      checkVerticesInsteadOfIndices: Boolean,
-      generateEdgesLines: js.UndefOr[scala.Nothing],
+      checkVerticesInsteadOfIndices: Unit,
+      generateEdgesLines: Unit,
       options: IEdgesRendererOptions
     ) = this()
     def this(
       source: AbstractMesh,
-      epsilon: Double,
+      epsilon: Unit,
       checkVerticesInsteadOfIndices: Boolean,
       generateEdgesLines: Boolean,
+      options: IEdgesRendererOptions
+    ) = this()
+    def this(
+      source: AbstractMesh,
+      epsilon: Unit,
+      checkVerticesInsteadOfIndices: Boolean,
+      generateEdgesLines: Unit,
+      options: IEdgesRendererOptions
+    ) = this()
+    def this(
+      source: AbstractMesh,
+      epsilon: Unit,
+      checkVerticesInsteadOfIndices: Unit,
+      generateEdgesLines: Boolean,
+      options: IEdgesRendererOptions
+    ) = this()
+    def this(
+      source: AbstractMesh,
+      epsilon: Unit,
+      checkVerticesInsteadOfIndices: Unit,
+      generateEdgesLines: Unit,
       options: IEdgesRendererOptions
     ) = this()
   }
@@ -178,8 +176,7 @@ object renderingIndexMod {
     @JSImport("babylonjs/Rendering/index", "EdgesRenderer.GetShader")
     @js.native
     def GetShader: js.Any = js.native
-    @scala.inline
-    def GetShader_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GetShader")(x.asInstanceOf[js.Any])
+    inline def GetShader_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GetShader")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Rendering/index", "GeometryBufferRenderer")
@@ -196,6 +193,10 @@ object renderingIndexMod {
   }
   /* static members */
   object GeometryBufferRenderer {
+    
+    @JSImport("babylonjs/Rendering/index", "GeometryBufferRenderer")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Constant used to retrieve the depth + normal texture index in the G-Buffer textures array
@@ -230,9 +231,7 @@ object renderingIndexMod {
     val VELOCITY_TEXTURE_TYPE: Double = js.native
     
     /** @hidden */
-    @JSImport("babylonjs/Rendering/index", "GeometryBufferRenderer._SceneComponentInitialization")
-    @js.native
-    def _SceneComponentInitialization(scene: Scene): Unit = js.native
+    inline def _SceneComponentInitialization(scene: Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("babylonjs/Rendering/index", "GeometryBufferRendererSceneComponent")
@@ -258,8 +257,8 @@ object renderingIndexMod {
       */
     def this(source: AbstractMesh) = this()
     def this(source: AbstractMesh, epsilon: Double) = this()
-    def this(source: AbstractMesh, epsilon: js.UndefOr[scala.Nothing], checkVerticesInsteadOfIndices: Boolean) = this()
     def this(source: AbstractMesh, epsilon: Double, checkVerticesInsteadOfIndices: Boolean) = this()
+    def this(source: AbstractMesh, epsilon: Unit, checkVerticesInsteadOfIndices: Boolean) = this()
   }
   
   @JSImport("babylonjs/Rendering/index", "OutlineRenderer")
@@ -285,8 +284,7 @@ object renderingIndexMod {
     @JSImport("babylonjs/Rendering/index", "OutlineRenderer._StencilReference")
     @js.native
     def _StencilReference: js.Any = js.native
-    @scala.inline
-    def _StencilReference_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_StencilReference")(x.asInstanceOf[js.Any])
+    inline def _StencilReference_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_StencilReference")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Rendering/index", "PrePassRenderer")
@@ -302,10 +300,12 @@ object renderingIndexMod {
   /* static members */
   object PrePassRenderer {
     
-    /** @hidden */
-    @JSImport("babylonjs/Rendering/index", "PrePassRenderer._SceneComponentInitialization")
+    @JSImport("babylonjs/Rendering/index", "PrePassRenderer")
     @js.native
-    def _SceneComponentInitialization(scene: Scene): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    /** @hidden */
+    inline def _SceneComponentInitialization(scene: Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("babylonjs/Rendering/index", "PrePassRendererSceneComponent")
@@ -339,14 +339,41 @@ object renderingIndexMod {
     def this(
       index: Double,
       scene: Scene,
-      opaqueSortCompareFn: js.UndefOr[Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]],
+      opaqueSortCompareFn: Unit,
       alphaTestSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
     ) = this()
     def this(
       index: Double,
       scene: Scene,
-      opaqueSortCompareFn: js.UndefOr[Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]],
-      alphaTestSortCompareFn: js.UndefOr[Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]],
+      opaqueSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]],
+      alphaTestSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
+    ) = this()
+    def this(
+      index: Double,
+      scene: Scene,
+      opaqueSortCompareFn: Unit,
+      alphaTestSortCompareFn: Unit,
+      transparentSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
+    ) = this()
+    def this(
+      index: Double,
+      scene: Scene,
+      opaqueSortCompareFn: Unit,
+      alphaTestSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]],
+      transparentSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
+    ) = this()
+    def this(
+      index: Double,
+      scene: Scene,
+      opaqueSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]],
+      alphaTestSortCompareFn: Unit,
+      transparentSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
+    ) = this()
+    def this(
+      index: Double,
+      scene: Scene,
+      opaqueSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]],
+      alphaTestSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]],
       transparentSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
     ) = this()
   }
@@ -360,8 +387,7 @@ object renderingIndexMod {
     @JSImport("babylonjs/Rendering/index", "RenderingGroup._zeroVector")
     @js.native
     def _zeroVector: js.Any = js.native
-    @scala.inline
-    def _zeroVector_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_zeroVector")(x.asInstanceOf[js.Any])
+    inline def _zeroVector_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_zeroVector")(x.asInstanceOf[js.Any])
     
     /**
       * Build in function which can be applied to ensure meshes of a special queue (opaque, alpha test, transparent)
@@ -371,9 +397,7 @@ object renderingIndexMod {
       * @param b The second submesh
       * @returns The result of the comparison
       */
-    @JSImport("babylonjs/Rendering/index", "RenderingGroup.backToFrontSortCompare")
-    @js.native
-    def backToFrontSortCompare(a: SubMesh, b: SubMesh): Double = js.native
+    inline def backToFrontSortCompare(a: SubMesh, b: SubMesh): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("backToFrontSortCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Build in function which can be applied to ensure meshes of a special queue (opaque, alpha test, transparent)
@@ -383,9 +407,7 @@ object renderingIndexMod {
       * @param b The second submesh
       * @returns The result of the comparison
       */
-    @JSImport("babylonjs/Rendering/index", "RenderingGroup.defaultTransparentSortCompare")
-    @js.native
-    def defaultTransparentSortCompare(a: SubMesh, b: SubMesh): Double = js.native
+    inline def defaultTransparentSortCompare(a: SubMesh, b: SubMesh): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultTransparentSortCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Build in function which can be applied to ensure meshes of a special queue (opaque, alpha test, transparent)
@@ -395,9 +417,7 @@ object renderingIndexMod {
       * @param b The second submesh
       * @returns The result of the comparison
       */
-    @JSImport("babylonjs/Rendering/index", "RenderingGroup.frontToBackSortCompare")
-    @js.native
-    def frontToBackSortCompare(a: SubMesh, b: SubMesh): Double = js.native
+    inline def frontToBackSortCompare(a: SubMesh, b: SubMesh): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("frontToBackSortCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Renders the submeshes in a specified order.
@@ -409,8 +429,7 @@ object renderingIndexMod {
     @JSImport("babylonjs/Rendering/index", "RenderingGroup.renderSorted")
     @js.native
     def renderSorted: js.Any = js.native
-    @scala.inline
-    def renderSorted_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderSorted")(x.asInstanceOf[js.Any])
+    inline def renderSorted_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderSorted")(x.asInstanceOf[js.Any])
     
     /**
       * Renders the submeshes in the order they were dispatched (no sort applied).
@@ -419,8 +438,7 @@ object renderingIndexMod {
     @JSImport("babylonjs/Rendering/index", "RenderingGroup.renderUnsorted")
     @js.native
     def renderUnsorted: js.Any = js.native
-    @scala.inline
-    def renderUnsorted_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderUnsorted")(x.asInstanceOf[js.Any])
+    inline def renderUnsorted_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderUnsorted")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Rendering/index", "RenderingGroupInfo")
@@ -451,8 +469,7 @@ object renderingIndexMod {
     @JSImport("babylonjs/Rendering/index", "RenderingManager.AUTOCLEAR")
     @js.native
     def AUTOCLEAR: Boolean = js.native
-    @scala.inline
-    def AUTOCLEAR_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUTOCLEAR")(x.asInstanceOf[js.Any])
+    inline def AUTOCLEAR_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUTOCLEAR")(x.asInstanceOf[js.Any])
     
     /**
       * The max id used for rendering groups (not included)
@@ -460,8 +477,7 @@ object renderingIndexMod {
     @JSImport("babylonjs/Rendering/index", "RenderingManager.MAX_RENDERINGGROUPS")
     @js.native
     def MAX_RENDERINGGROUPS: Double = js.native
-    @scala.inline
-    def MAX_RENDERINGGROUPS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_RENDERINGGROUPS")(x.asInstanceOf[js.Any])
+    inline def MAX_RENDERINGGROUPS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_RENDERINGGROUPS")(x.asInstanceOf[js.Any])
     
     /**
       * The min id used for rendering groups (included)
@@ -469,8 +485,7 @@ object renderingIndexMod {
     @JSImport("babylonjs/Rendering/index", "RenderingManager.MIN_RENDERINGGROUPS")
     @js.native
     def MIN_RENDERINGGROUPS: Double = js.native
-    @scala.inline
-    def MIN_RENDERINGGROUPS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_RENDERINGGROUPS")(x.asInstanceOf[js.Any])
+    inline def MIN_RENDERINGGROUPS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_RENDERINGGROUPS")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Rendering/index", "SubSurfaceSceneComponent")
@@ -511,111 +526,94 @@ object renderingIndexMod {
     @JSImport("babylonjs/Rendering/index", "UtilityLayerRenderer._DefaultKeepDepthUtilityLayer")
     @js.native
     def _DefaultKeepDepthUtilityLayer: js.Any = js.native
-    @scala.inline
-    def _DefaultKeepDepthUtilityLayer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultKeepDepthUtilityLayer")(x.asInstanceOf[js.Any])
+    inline def _DefaultKeepDepthUtilityLayer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultKeepDepthUtilityLayer")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Rendering/index", "UtilityLayerRenderer._DefaultUtilityLayer")
     @js.native
     def _DefaultUtilityLayer: js.Any = js.native
-    @scala.inline
-    def _DefaultUtilityLayer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultUtilityLayer")(x.asInstanceOf[js.Any])
+    inline def _DefaultUtilityLayer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultUtilityLayer")(x.asInstanceOf[js.Any])
   }
   
   /* augmented module */
   object babylonjsAbstractSceneAugmentingMod {
     
-    @js.native
     trait AbstractScene extends StObject {
       
       /** @hidden (Backing field) */
-      var _prePassRenderer: Nullable[typings.babylonjs.prePassRendererMod.PrePassRenderer] = js.native
+      var _prePassRenderer: Nullable[typings.babylonjs.prePassRendererMod.PrePassRenderer]
       
       /** @hidden (Backing field) */
-      var _subSurfaceConfiguration: Nullable[SubSurfaceConfiguration] = js.native
+      var _subSurfaceConfiguration: Nullable[SubSurfaceConfiguration]
       
       /**
         * Disables the prepass associated with the scene
         */
-      def disablePrePassRenderer(): Unit = js.native
+      def disablePrePassRenderer(): Unit
       
       /**
         * Disables the subsurface effect for prepass
         */
-      def disableSubSurfaceForPrePass(): Unit = js.native
+      def disableSubSurfaceForPrePass(): Unit
       
       /**
         * Enables the prepass and associates it with the scene
         * @returns the PrePassRenderer
         */
-      def enablePrePassRenderer(): Nullable[typings.babylonjs.prePassRendererMod.PrePassRenderer] = js.native
+      def enablePrePassRenderer(): Nullable[typings.babylonjs.prePassRendererMod.PrePassRenderer]
       
       /**
         * Enables the subsurface effect for prepass
         * @returns the SubSurfaceConfiguration
         */
-      def enableSubSurfaceForPrePass(): Nullable[SubSurfaceConfiguration] = js.native
+      def enableSubSurfaceForPrePass(): Nullable[SubSurfaceConfiguration]
       
       /**
         * Gets or Sets the current prepass renderer associated to the scene.
         */
-      var prePassRenderer: Nullable[typings.babylonjs.prePassRendererMod.PrePassRenderer] = js.native
+      var prePassRenderer: Nullable[typings.babylonjs.prePassRendererMod.PrePassRenderer]
       
       /**
         * Gets or Sets the current prepass renderer associated to the scene.
         */
-      var subSurfaceConfiguration: Nullable[SubSurfaceConfiguration] = js.native
+      var subSurfaceConfiguration: Nullable[SubSurfaceConfiguration]
     }
     object AbstractScene {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         disablePrePassRenderer: () => Unit,
         disableSubSurfaceForPrePass: () => Unit,
         enablePrePassRenderer: () => Nullable[typings.babylonjs.prePassRendererMod.PrePassRenderer],
         enableSubSurfaceForPrePass: () => Nullable[SubSurfaceConfiguration]
       ): AbstractScene = {
-        val __obj = js.Dynamic.literal(disablePrePassRenderer = js.Any.fromFunction0(disablePrePassRenderer), disableSubSurfaceForPrePass = js.Any.fromFunction0(disableSubSurfaceForPrePass), enablePrePassRenderer = js.Any.fromFunction0(enablePrePassRenderer), enableSubSurfaceForPrePass = js.Any.fromFunction0(enableSubSurfaceForPrePass))
+        val __obj = js.Dynamic.literal(disablePrePassRenderer = js.Any.fromFunction0(disablePrePassRenderer), disableSubSurfaceForPrePass = js.Any.fromFunction0(disableSubSurfaceForPrePass), enablePrePassRenderer = js.Any.fromFunction0(enablePrePassRenderer), enableSubSurfaceForPrePass = js.Any.fromFunction0(enableSubSurfaceForPrePass), _prePassRenderer = null, _subSurfaceConfiguration = null, prePassRenderer = null, subSurfaceConfiguration = null)
         __obj.asInstanceOf[AbstractScene]
       }
       
-      @scala.inline
-      implicit class AbstractSceneMutableBuilder[Self <: AbstractScene] (val x: Self) extends AnyVal {
+      extension [Self <: AbstractScene](x: Self) {
         
-        @scala.inline
-        def setDisablePrePassRenderer(value: () => Unit): Self = StObject.set(x, "disablePrePassRenderer", js.Any.fromFunction0(value))
+        inline def setDisablePrePassRenderer(value: () => Unit): Self = StObject.set(x, "disablePrePassRenderer", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setDisableSubSurfaceForPrePass(value: () => Unit): Self = StObject.set(x, "disableSubSurfaceForPrePass", js.Any.fromFunction0(value))
+        inline def setDisableSubSurfaceForPrePass(value: () => Unit): Self = StObject.set(x, "disableSubSurfaceForPrePass", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setEnablePrePassRenderer(value: () => Nullable[typings.babylonjs.prePassRendererMod.PrePassRenderer]): Self = StObject.set(x, "enablePrePassRenderer", js.Any.fromFunction0(value))
+        inline def setEnablePrePassRenderer(value: () => Nullable[typings.babylonjs.prePassRendererMod.PrePassRenderer]): Self = StObject.set(x, "enablePrePassRenderer", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setEnableSubSurfaceForPrePass(value: () => Nullable[SubSurfaceConfiguration]): Self = StObject.set(x, "enableSubSurfaceForPrePass", js.Any.fromFunction0(value))
+        inline def setEnableSubSurfaceForPrePass(value: () => Nullable[SubSurfaceConfiguration]): Self = StObject.set(x, "enableSubSurfaceForPrePass", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setPrePassRenderer(value: Nullable[typings.babylonjs.prePassRendererMod.PrePassRenderer]): Self = StObject.set(x, "prePassRenderer", value.asInstanceOf[js.Any])
+        inline def setPrePassRenderer(value: Nullable[typings.babylonjs.prePassRendererMod.PrePassRenderer]): Self = StObject.set(x, "prePassRenderer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrePassRendererNull: Self = StObject.set(x, "prePassRenderer", null)
+        inline def setPrePassRendererNull: Self = StObject.set(x, "prePassRenderer", null)
         
-        @scala.inline
-        def setSubSurfaceConfiguration(value: Nullable[SubSurfaceConfiguration]): Self = StObject.set(x, "subSurfaceConfiguration", value.asInstanceOf[js.Any])
+        inline def setSubSurfaceConfiguration(value: Nullable[SubSurfaceConfiguration]): Self = StObject.set(x, "subSurfaceConfiguration", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubSurfaceConfigurationNull: Self = StObject.set(x, "subSurfaceConfiguration", null)
+        inline def setSubSurfaceConfigurationNull: Self = StObject.set(x, "subSurfaceConfiguration", null)
         
-        @scala.inline
-        def set_prePassRenderer(value: Nullable[typings.babylonjs.prePassRendererMod.PrePassRenderer]): Self = StObject.set(x, "_prePassRenderer", value.asInstanceOf[js.Any])
+        inline def set_prePassRenderer(value: Nullable[typings.babylonjs.prePassRendererMod.PrePassRenderer]): Self = StObject.set(x, "_prePassRenderer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set_prePassRendererNull: Self = StObject.set(x, "_prePassRenderer", null)
+        inline def set_prePassRendererNull: Self = StObject.set(x, "_prePassRenderer", null)
         
-        @scala.inline
-        def set_subSurfaceConfiguration(value: Nullable[SubSurfaceConfiguration]): Self = StObject.set(x, "_subSurfaceConfiguration", value.asInstanceOf[js.Any])
+        inline def set_subSurfaceConfiguration(value: Nullable[SubSurfaceConfiguration]): Self = StObject.set(x, "_subSurfaceConfiguration", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set_subSurfaceConfigurationNull: Self = StObject.set(x, "_subSurfaceConfiguration", null)
+        inline def set_subSurfaceConfigurationNull: Self = StObject.set(x, "_subSurfaceConfiguration", null)
       }
     }
   }
@@ -623,44 +621,42 @@ object renderingIndexMod {
   /* augmented module */
   object babylonjsMeshesAbstractMeshAugmentingMod {
     
-    @js.native
     trait AbstractMesh extends StObject {
       
       /** @hidden (Backing field) */
-      var _renderOutline: Boolean = js.native
+      var _renderOutline: Boolean
       
       /** @hidden (Backing field) */
-      var _renderOverlay: Boolean = js.native
+      var _renderOverlay: Boolean
       
       /** @hidden (Backing field) */
-      var _showBoundingBox: Boolean = js.native
+      var _showBoundingBox: Boolean
       
       /**
         * Gets the edgesRenderer associated with the mesh
         */
-      var edgesRenderer: Nullable[typings.babylonjs.edgesRendererMod.EdgesRenderer] = js.native
+      var edgesRenderer: Nullable[typings.babylonjs.edgesRendererMod.EdgesRenderer]
       
       /**
         * Gets or sets a boolean indicating if the outline must be rendered as well
         * @see https://www.babylonjs-playground.com/#10WJ5S#3
         */
-      var renderOutline: Boolean = js.native
+      var renderOutline: Boolean
       
       /**
         * Gets or sets a boolean indicating if the overlay must be rendered as well
         * @see https://www.babylonjs-playground.com/#10WJ5S#2
         */
-      var renderOverlay: Boolean = js.native
+      var renderOverlay: Boolean
       
       /**
         * Gets or sets a boolean indicating if the bounding box must be rendered as well (false by default)
         */
-      var showBoundingBox: Boolean = js.native
+      var showBoundingBox: Boolean
     }
     object AbstractMesh {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         _renderOutline: Boolean,
         _renderOverlay: Boolean,
         _showBoundingBox: Boolean,
@@ -668,36 +664,27 @@ object renderingIndexMod {
         renderOverlay: Boolean,
         showBoundingBox: Boolean
       ): typings.babylonjs.renderingIndexMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh = {
-        val __obj = js.Dynamic.literal(_renderOutline = _renderOutline.asInstanceOf[js.Any], _renderOverlay = _renderOverlay.asInstanceOf[js.Any], _showBoundingBox = _showBoundingBox.asInstanceOf[js.Any], renderOutline = renderOutline.asInstanceOf[js.Any], renderOverlay = renderOverlay.asInstanceOf[js.Any], showBoundingBox = showBoundingBox.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(_renderOutline = _renderOutline.asInstanceOf[js.Any], _renderOverlay = _renderOverlay.asInstanceOf[js.Any], _showBoundingBox = _showBoundingBox.asInstanceOf[js.Any], renderOutline = renderOutline.asInstanceOf[js.Any], renderOverlay = renderOverlay.asInstanceOf[js.Any], showBoundingBox = showBoundingBox.asInstanceOf[js.Any], edgesRenderer = null)
         __obj.asInstanceOf[typings.babylonjs.renderingIndexMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh]
       }
       
-      @scala.inline
-      implicit class AbstractMeshMutableBuilder[Self <: typings.babylonjs.renderingIndexMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh] (val x: Self) extends AnyVal {
+      extension [Self <: typings.babylonjs.renderingIndexMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh](x: Self) {
         
-        @scala.inline
-        def setEdgesRenderer(value: Nullable[typings.babylonjs.edgesRendererMod.EdgesRenderer]): Self = StObject.set(x, "edgesRenderer", value.asInstanceOf[js.Any])
+        inline def setEdgesRenderer(value: Nullable[typings.babylonjs.edgesRendererMod.EdgesRenderer]): Self = StObject.set(x, "edgesRenderer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEdgesRendererNull: Self = StObject.set(x, "edgesRenderer", null)
+        inline def setEdgesRendererNull: Self = StObject.set(x, "edgesRenderer", null)
         
-        @scala.inline
-        def setRenderOutline(value: Boolean): Self = StObject.set(x, "renderOutline", value.asInstanceOf[js.Any])
+        inline def setRenderOutline(value: Boolean): Self = StObject.set(x, "renderOutline", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRenderOverlay(value: Boolean): Self = StObject.set(x, "renderOverlay", value.asInstanceOf[js.Any])
+        inline def setRenderOverlay(value: Boolean): Self = StObject.set(x, "renderOverlay", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShowBoundingBox(value: Boolean): Self = StObject.set(x, "showBoundingBox", value.asInstanceOf[js.Any])
+        inline def setShowBoundingBox(value: Boolean): Self = StObject.set(x, "showBoundingBox", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set_renderOutline(value: Boolean): Self = StObject.set(x, "_renderOutline", value.asInstanceOf[js.Any])
+        inline def set_renderOutline(value: Boolean): Self = StObject.set(x, "_renderOutline", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set_renderOverlay(value: Boolean): Self = StObject.set(x, "_renderOverlay", value.asInstanceOf[js.Any])
+        inline def set_renderOverlay(value: Boolean): Self = StObject.set(x, "_renderOverlay", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set_showBoundingBox(value: Boolean): Self = StObject.set(x, "_showBoundingBox", value.asInstanceOf[js.Any])
+        inline def set_showBoundingBox(value: Boolean): Self = StObject.set(x, "_showBoundingBox", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -717,9 +704,9 @@ object renderingIndexMod {
         * @see https://www.babylonjs-playground.com/#19O9TU#0
         */
       def enableEdgesRendering(): typings.babylonjs.edgesRendererMod.babylonjsMeshesLinesMeshAugmentingMod.InstancedLinesMesh = js.native
-      def enableEdgesRendering(epsilon: js.UndefOr[scala.Nothing], checkVerticesInsteadOfIndices: Boolean): typings.babylonjs.edgesRendererMod.babylonjsMeshesLinesMeshAugmentingMod.InstancedLinesMesh = js.native
       def enableEdgesRendering(epsilon: Double): typings.babylonjs.edgesRendererMod.babylonjsMeshesLinesMeshAugmentingMod.InstancedLinesMesh = js.native
       def enableEdgesRendering(epsilon: Double, checkVerticesInsteadOfIndices: Boolean): typings.babylonjs.edgesRendererMod.babylonjsMeshesLinesMeshAugmentingMod.InstancedLinesMesh = js.native
+      def enableEdgesRendering(epsilon: Unit, checkVerticesInsteadOfIndices: Boolean): typings.babylonjs.edgesRendererMod.babylonjsMeshesLinesMeshAugmentingMod.InstancedLinesMesh = js.native
     }
     
     @js.native
@@ -734,9 +721,9 @@ object renderingIndexMod {
         * @see https://www.babylonjs-playground.com/#19O9TU#0
         */
       def enableEdgesRendering(): AbstractMesh = js.native
-      def enableEdgesRendering(epsilon: js.UndefOr[scala.Nothing], checkVerticesInsteadOfIndices: Boolean): AbstractMesh = js.native
       def enableEdgesRendering(epsilon: Double): AbstractMesh = js.native
       def enableEdgesRendering(epsilon: Double, checkVerticesInsteadOfIndices: Boolean): AbstractMesh = js.native
+      def enableEdgesRendering(epsilon: Unit, checkVerticesInsteadOfIndices: Boolean): AbstractMesh = js.native
     }
   }
   
@@ -784,14 +771,13 @@ object renderingIndexMod {
         * @returns the created depth renderer
         */
       def enableDepthRenderer(): typings.babylonjs.depthRendererMod.DepthRenderer = js.native
-      def enableDepthRenderer(
-        camera: js.UndefOr[Nullable[Camera]],
-        storeNonLinearDepth: js.UndefOr[scala.Nothing],
-        force32bitsFloat: Boolean
-      ): typings.babylonjs.depthRendererMod.DepthRenderer = js.native
-      def enableDepthRenderer(camera: js.UndefOr[Nullable[Camera]], storeNonLinearDepth: Boolean): typings.babylonjs.depthRendererMod.DepthRenderer = js.native
-      def enableDepthRenderer(camera: js.UndefOr[Nullable[Camera]], storeNonLinearDepth: Boolean, force32bitsFloat: Boolean): typings.babylonjs.depthRendererMod.DepthRenderer = js.native
+      def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Boolean): typings.babylonjs.depthRendererMod.DepthRenderer = js.native
+      def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Boolean, force32bitsFloat: Boolean): typings.babylonjs.depthRendererMod.DepthRenderer = js.native
+      def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Unit, force32bitsFloat: Boolean): typings.babylonjs.depthRendererMod.DepthRenderer = js.native
       def enableDepthRenderer(camera: Nullable[Camera]): typings.babylonjs.depthRendererMod.DepthRenderer = js.native
+      def enableDepthRenderer(camera: Nullable[Camera], storeNonLinearDepth: Boolean): typings.babylonjs.depthRendererMod.DepthRenderer = js.native
+      def enableDepthRenderer(camera: Nullable[Camera], storeNonLinearDepth: Boolean, force32bitsFloat: Boolean): typings.babylonjs.depthRendererMod.DepthRenderer = js.native
+      def enableDepthRenderer(camera: Nullable[Camera], storeNonLinearDepth: Unit, force32bitsFloat: Boolean): typings.babylonjs.depthRendererMod.DepthRenderer = js.native
       
       /**
         * Enables a GeometryBufferRender and associates it with the scene

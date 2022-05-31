@@ -6,34 +6,33 @@ import typings.oracleOraclejet.oracleOraclejetStrings.auto
 import typings.oracleOraclejet.oracleOraclejetStrings.off
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ojThematicMapLinkSettableProperties extends JetSettableProperties {
+trait ojThematicMapLinkSettableProperties
+  extends StObject
+     with JetSettableProperties {
   
-  var categories: js.Array[String] = js.native
+  var categories: js.Array[String]
   
-  var color: String = js.native
+  var color: String
   
-  var endLocation: Location = js.native
+  var endLocation: Location
   
-  var selectable: auto | off = js.native
+  var selectable: auto | off
   
-  var shortDesc: String = js.native
+  var shortDesc: String
   
-  var startLocation: Location = js.native
+  var startLocation: Location
   
-  var svgClassName: String = js.native
+  var svgClassName: String
   
-  var svgStyle: js.Object = js.native
+  var svgStyle: js.Object
   
-  var width: Double = js.native
+  var width: Double
 }
 object ojThematicMapLinkSettableProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     categories: js.Array[String],
     color: String,
     endLocation: Location,
@@ -48,37 +47,26 @@ object ojThematicMapLinkSettableProperties {
     __obj.asInstanceOf[ojThematicMapLinkSettableProperties]
   }
   
-  @scala.inline
-  implicit class ojThematicMapLinkSettablePropertiesMutableBuilder[Self <: ojThematicMapLinkSettableProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ojThematicMapLinkSettableProperties](x: Self) {
     
-    @scala.inline
-    def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndLocation(value: Location): Self = StObject.set(x, "endLocation", value.asInstanceOf[js.Any])
+    inline def setEndLocation(value: Location): Self = StObject.set(x, "endLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectable(value: auto | off): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+    inline def setSelectable(value: auto | off): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortDesc(value: String): Self = StObject.set(x, "shortDesc", value.asInstanceOf[js.Any])
+    inline def setShortDesc(value: String): Self = StObject.set(x, "shortDesc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartLocation(value: Location): Self = StObject.set(x, "startLocation", value.asInstanceOf[js.Any])
+    inline def setStartLocation(value: Location): Self = StObject.set(x, "startLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgClassName(value: String): Self = StObject.set(x, "svgClassName", value.asInstanceOf[js.Any])
+    inline def setSvgClassName(value: String): Self = StObject.set(x, "svgClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgStyle(value: js.Object): Self = StObject.set(x, "svgStyle", value.asInstanceOf[js.Any])
+    inline def setSvgStyle(value: js.Object): Self = StObject.set(x, "svgStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

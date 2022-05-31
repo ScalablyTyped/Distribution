@@ -3,7 +3,6 @@ package typings.babylonjs
 import typings.std.ClipboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clipboardEventsMod {
@@ -68,13 +67,15 @@ object clipboardEventsMod {
   /* static members */
   object ClipboardInfo {
     
+    @JSImport("babylonjs/Events/clipboardEvents", "ClipboardInfo")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       *  Get the clipboard event's type from the keycode.
       * @param keyCode Defines the keyCode for the current keyboard event.
       * @return {number}
       */
-    @JSImport("babylonjs/Events/clipboardEvents", "ClipboardInfo.GetTypeFromCharacter")
-    @js.native
-    def GetTypeFromCharacter(keyCode: Double): Double = js.native
+    inline def GetTypeFromCharacter(keyCode: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetTypeFromCharacter")(keyCode.asInstanceOf[js.Any]).asInstanceOf[Double]
   }
 }

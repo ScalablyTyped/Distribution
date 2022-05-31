@@ -7,7 +7,6 @@ import typings.jupyterlabStatusbar.kernelStatusMod.KernelStatus.IOptions
 import typings.jupyterlabStatusbar.kernelStatusMod.KernelStatus.Model
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kernelStatusMod {
@@ -20,7 +19,7 @@ object kernelStatusMod {
       */
     def this(opts: IOptions) = this()
     
-    var _handleClick: js.Any = js.native
+    /* private */ var _handleClick: js.Any = js.native
   }
   object KernelStatus {
     
@@ -31,27 +30,27 @@ object kernelStatusMod {
     @js.native
     class Model () extends VDomModel {
       
-      var _activityName: js.Any = js.native
+      /* private */ var _activityName: js.Any = js.native
       
-      var _getAllState: js.Any = js.native
+      /* private */ var _getAllState: js.Any = js.native
       
-      var _kernelName: js.Any = js.native
+      /* private */ var _kernelName: js.Any = js.native
       
-      var _kernelStatus: js.Any = js.native
+      /* private */ var _kernelStatus: js.Any = js.native
       
       /**
         * React to changes in the kernel.
         */
-      var _onKernelChanged: js.Any = js.native
+      /* private */ var _onKernelChanged: js.Any = js.native
       
       /**
         * React to changes to the kernel status.
         */
-      var _onKernelStatusChanged: js.Any = js.native
+      /* private */ var _onKernelStatusChanged: js.Any = js.native
       
-      var _sessionContext: js.Any = js.native
+      /* private */ var _sessionContext: js.Any = js.native
       
-      var _triggerChange: js.Any = js.native
+      /* private */ var _triggerChange: js.Any = js.native
       
       /**
         * A display name for the activity.
@@ -79,28 +78,24 @@ object kernelStatusMod {
     /**
       * Options for creating a KernelStatus object.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * A click handler for the item. By default
         * we launch a kernel selection dialog.
         */
-      def onClick(): Unit = js.native
+      def onClick(): Unit
     }
     object IOptions {
       
-      @scala.inline
-      def apply(onClick: () => Unit): IOptions = {
+      inline def apply(onClick: () => Unit): IOptions = {
         val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction0(onClick))
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+        inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       }
     }
   }

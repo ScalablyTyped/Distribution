@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.AnimationEvent")
 @js.native
 class AnimationEvent protected ()
-  extends typings.babylonjs.BABYLON.AnimationEvent {
+  extends StObject
+     with typings.babylonjs.BABYLON.AnimationEvent {
   /**
     * Initializes the animation event
     * @param frame The frame for which the event is triggered
@@ -29,4 +29,22 @@ class AnimationEvent protected ()
     /** Specifies if the event should be triggered only once**/
   onlyOnce: Boolean
   ) = this()
+  
+  /** @hidden */
+  /* CompleteClass */
+  override def _clone(): typings.babylonjs.BABYLON.AnimationEvent = js.native
+  
+  /** The event to perform when triggered **/
+  /* CompleteClass */
+  override def action(currentFrame: Double): Unit = js.native
+  
+  /** The frame for which the event is triggered **/
+  /* CompleteClass */
+  var frame: Double = js.native
+  
+  /**
+    * Specifies if the animation event is done
+    */
+  /* CompleteClass */
+  var isDone: Boolean = js.native
 }

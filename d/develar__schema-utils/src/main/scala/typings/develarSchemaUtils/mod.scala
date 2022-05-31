@@ -26,7 +26,4 @@ object mod {
   @JSImport("@develar/schema-utils", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
-  
-  /* was `typeof imported_validate.default` */
-  object exports
 }

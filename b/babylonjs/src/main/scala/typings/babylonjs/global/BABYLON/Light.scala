@@ -1,15 +1,16 @@
 package typings.babylonjs.global.BABYLON
 
+import typings.babylonjs.BABYLON.Behavior
 import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.Light")
 @js.native
 abstract class Light protected ()
-  extends typings.babylonjs.BABYLON.Light {
+  extends StObject
+     with typings.babylonjs.BABYLON.Light {
   /**
     * Creates a Light object in the scene.
     * Documentation : https://doc.babylonjs.com/babylon101/lights
@@ -17,9 +18,37 @@ abstract class Light protected ()
     * @param scene The scene the light belongs too
     */
   def this(name: String, scene: typings.babylonjs.BABYLON.Scene) = this()
+  
+  /**
+    * Attach a behavior
+    * @param behavior defines the behavior to attach
+    * @returns the current host
+    */
+  /* CompleteClass */
+  override def addBehavior(behavior: Behavior[typings.babylonjs.BABYLON.Node]): typings.babylonjs.BABYLON.Node = js.native
+  
+  /**
+    * Gets a behavior using its name to search
+    * @param name defines the name to search
+    * @returns the behavior or null if not found
+    */
+  /* CompleteClass */
+  override def getBehaviorByName(name: String): Nullable[Behavior[typings.babylonjs.BABYLON.Node]] = js.native
+  
+  /**
+    * Remove a behavior from the current object
+    * @param behavior defines the behavior to detach
+    * @returns the current host
+    */
+  /* CompleteClass */
+  override def removeBehavior(behavior: Behavior[typings.babylonjs.BABYLON.Node]): typings.babylonjs.BABYLON.Node = js.native
 }
 /* static members */
 object Light {
+  
+  @JSGlobal("BABYLON.Light")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Sort function to order lights for rendering.
@@ -27,9 +56,7 @@ object Light {
     * @param b Second Light object to compare first.
     * @return -1 to reduce's a's index relative to be, 0 for no change, 1 to increase a's index relative to b.
     */
-  @JSGlobal("BABYLON.Light.CompareLightsPriority")
-  @js.native
-  def CompareLightsPriority(a: typings.babylonjs.BABYLON.Light, b: typings.babylonjs.BABYLON.Light): Double = js.native
+  inline def CompareLightsPriority(a: typings.babylonjs.BABYLON.Light, b: typings.babylonjs.BABYLON.Light): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("CompareLightsPriority")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Falloff Default: light is falling off following the material specification:
@@ -70,9 +97,7 @@ object Light {
     * @param scene The scene the new light will belong to
     * @returns the constructor function
     */
-  @JSGlobal("BABYLON.Light.GetConstructorFromName")
-  @js.native
-  def GetConstructorFromName(`type`: Double, name: String, scene: typings.babylonjs.BABYLON.Scene): Nullable[js.Function0[this.type]] = js.native
+  inline def GetConstructorFromName(`type`: Double, name: String, scene: typings.babylonjs.BABYLON.Scene): Nullable[js.Function0[this.type]] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetConstructorFromName")(`type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[js.Function0[this.type]]]
   
   /**
     * Each light type uses the default quantity according to its type:
@@ -173,7 +198,5 @@ object Light {
     * @param scene The scene to create the parsed light in
     * @returns the created light after parsing
     */
-  @JSGlobal("BABYLON.Light.Parse")
-  @js.native
-  def Parse(parsedLight: js.Any, scene: typings.babylonjs.BABYLON.Scene): Nullable[typings.babylonjs.BABYLON.Light] = js.native
+  inline def Parse(parsedLight: js.Any, scene: typings.babylonjs.BABYLON.Scene): Nullable[typings.babylonjs.BABYLON.Light] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedLight.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Light]]
 }

@@ -4,13 +4,13 @@ import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.BABYLON.PostProcessOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.GrainPostProcess")
 @js.native
 class GrainPostProcess protected ()
-  extends typings.babylonjs.BABYLON.GrainPostProcess {
+  extends StObject
+     with typings.babylonjs.BABYLON.GrainPostProcess {
   /**
     * Creates a new instance of @see GrainPostProcess
     * @param name The name of the effect.
@@ -36,13 +36,15 @@ class GrainPostProcess protected ()
 /* static members */
 object GrainPostProcess {
   
-  /** @hidden */
-  @JSGlobal("BABYLON.GrainPostProcess._Parse")
+  @JSGlobal("BABYLON.GrainPostProcess")
   @js.native
-  def _Parse(
+  val ^ : js.Any = js.native
+  
+  /** @hidden */
+  inline def _Parse(
     parsedPostProcess: js.Any,
     targetCamera: typings.babylonjs.BABYLON.Camera,
     scene: typings.babylonjs.BABYLON.Scene,
     rootUrl: String
-  ): typings.babylonjs.BABYLON.GrainPostProcess = js.native
+  ): typings.babylonjs.BABYLON.GrainPostProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.GrainPostProcess]
 }

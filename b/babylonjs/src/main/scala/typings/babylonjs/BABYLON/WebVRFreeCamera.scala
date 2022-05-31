@@ -2,14 +2,15 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.babylonjs.BABYLON.PoseControlled because var conflicts: position, rotationQuaternion. Inlined devicePosition, deviceRotationQuaternion, rawPose, deviceScaleFactor, updateFromDevice */ @js.native
-trait WebVRFreeCamera extends FreeCamera {
+trait WebVRFreeCamera
+  extends StObject
+     with FreeCamera {
   
-  var _attached: js.Any = js.native
+  /* private */ var _attached: js.Any = js.native
   
   /**
     * @hidden
@@ -17,46 +18,46 @@ trait WebVRFreeCamera extends FreeCamera {
     */
   def _computeDevicePosition(): Unit = js.native
   
-  var _correctPositionIfNotTrackPosition: js.Any = js.native
+  /* private */ var _correctPositionIfNotTrackPosition: js.Any = js.native
   
-  var _defaultHeight: js.Any = js.native
+  /* private */ var _defaultHeight: js.Any = js.native
   
-  var _descendants: js.Array[Node] = js.native
+  /* protected */ var _descendants: js.Array[Node] = js.native
   
-  var _detachIfAttached: js.Any = js.native
+  /* private */ var _detachIfAttached: js.Any = js.native
   
-  var _deviceRoomPosition: js.Any = js.native
+  /* private */ var _deviceRoomPosition: js.Any = js.native
   
   /** @hidden */
   var _deviceRoomRotationQuaternion: Quaternion = js.native
   
-  var _deviceToWorld: js.Any = js.native
+  /* private */ var _deviceToWorld: js.Any = js.native
   
-  var _frameData: js.Any = js.native
+  /* private */ var _frameData: js.Any = js.native
   
-  var _leftController: js.Any = js.native
+  /* private */ var _leftController: js.Any = js.native
   
-  var _lightOnControllers: js.Any = js.native
+  /* private */ var _lightOnControllers: js.Any = js.native
   
-  var _onGamepadConnectedObserver: js.Any = js.native
+  /* private */ var _onGamepadConnectedObserver: js.Any = js.native
   
-  var _onGamepadDisconnectedObserver: js.Any = js.native
+  /* private */ var _onGamepadDisconnectedObserver: js.Any = js.native
   
-  var _onVREnabled: js.Any = js.native
+  /* private */ var _onVREnabled: js.Any = js.native
   
-  var _oneVector: js.Any = js.native
+  /* private */ var _oneVector: js.Any = js.native
   
-  var _poseSet: js.Any = js.native
+  /* private */ var _poseSet: js.Any = js.native
   
-  var _rightController: js.Any = js.native
+  /* private */ var _rightController: js.Any = js.native
   
-  var _specsVersion: js.Any = js.native
+  /* private */ var _specsVersion: js.Any = js.native
   
-  var _standingMatrix: js.Any = js.native
+  /* private */ var _standingMatrix: js.Any = js.native
   
-  var _tmpMatrix: js.Any = js.native
+  /* private */ var _tmpMatrix: js.Any = js.native
   
-  var _updateCacheWhenTrackingDisabledObserver: js.Any = js.native
+  /* private */ var _updateCacheWhenTrackingDisabledObserver: js.Any = js.native
   
   /**
     * @hidden
@@ -64,11 +65,11 @@ trait WebVRFreeCamera extends FreeCamera {
     */
   var _vrDevice: js.Any = js.native
   
-  var _workingMatrix: js.Any = js.native
+  /* private */ var _workingMatrix: js.Any = js.native
   
-  var _workingVector: js.Any = js.native
+  /* private */ var _workingVector: js.Any = js.native
   
-  var _worldToDevice: js.Any = js.native
+  /* private */ var _worldToDevice: js.Any = js.native
   
   /**
     * References to the webVR controllers for the vrDevice.
@@ -126,7 +127,7 @@ trait WebVRFreeCamera extends FreeCamera {
   /**
     * Emits an event when the HMD's pose has been updated.
     */
-  var onPoseUpdatedFromDeviceObservable: Observable[_] = js.native
+  var onPoseUpdatedFromDeviceObservable: Observable[js.Any] = js.native
   
   /**
     * The rawPose of the vrDevice.
@@ -149,7 +150,7 @@ trait WebVRFreeCamera extends FreeCamera {
     */
   def rightController: Nullable[WebVRController] = js.native
   
-  var updateCacheCalled: js.Any = js.native
+  /* private */ var updateCacheCalled: js.Any = js.native
   
   /**
     * Updates the poseControlled values based on the input device pose.
@@ -174,5 +175,5 @@ trait WebVRFreeCamera extends FreeCamera {
     */
   def useStandingMatrixAsync(): js.Promise[Boolean] = js.native
   
-  var webVROptions: js.Any = js.native
+  /* private */ var webVROptions: js.Any = js.native
 }

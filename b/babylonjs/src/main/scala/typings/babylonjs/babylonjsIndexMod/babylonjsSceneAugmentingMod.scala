@@ -2,28 +2,25 @@ package typings.babylonjs.babylonjsIndexMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object babylonjsSceneAugmentingMod {
   
-  @js.native
   trait Scene extends StObject {
     
     /** @hidden (Backing field) */
-    var _simplificationQueue: typings.babylonjs.meshSimplificationMod.SimplificationQueue = js.native
+    var _simplificationQueue: typings.babylonjs.meshSimplificationMod.SimplificationQueue
     
     /**
       * Gets or sets the simplification queue attached to the scene
       * @see https://doc.babylonjs.com/how_to/in-browser_mesh_simplification
       */
-    var simplificationQueue: typings.babylonjs.meshSimplificationMod.SimplificationQueue = js.native
+    var simplificationQueue: typings.babylonjs.meshSimplificationMod.SimplificationQueue
   }
   object Scene {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _simplificationQueue: typings.babylonjs.meshSimplificationMod.SimplificationQueue,
       simplificationQueue: typings.babylonjs.meshSimplificationMod.SimplificationQueue
     ): Scene = {
@@ -31,14 +28,11 @@ object babylonjsSceneAugmentingMod {
       __obj.asInstanceOf[Scene]
     }
     
-    @scala.inline
-    implicit class SceneMutableBuilder[Self <: Scene] (val x: Self) extends AnyVal {
+    extension [Self <: Scene](x: Self) {
       
-      @scala.inline
-      def setSimplificationQueue(value: typings.babylonjs.meshSimplificationMod.SimplificationQueue): Self = StObject.set(x, "simplificationQueue", value.asInstanceOf[js.Any])
+      inline def setSimplificationQueue(value: typings.babylonjs.meshSimplificationMod.SimplificationQueue): Self = StObject.set(x, "simplificationQueue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_simplificationQueue(value: typings.babylonjs.meshSimplificationMod.SimplificationQueue): Self = StObject.set(x, "_simplificationQueue", value.asInstanceOf[js.Any])
+      inline def set_simplificationQueue(value: typings.babylonjs.meshSimplificationMod.SimplificationQueue): Self = StObject.set(x, "_simplificationQueue", value.asInstanceOf[js.Any])
     }
   }
 }

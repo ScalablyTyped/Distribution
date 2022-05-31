@@ -4,8 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("webix.ui.excelviewer")
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.webix.webix.ui.baseview because Already inherited
+- typings.webix.webix.ui.excelviewer because var conflicts: $customPrint_Original, $dragHTML_Original, $dropAllow_Original, $dropHTML_Original, $height, $scope, $skin_Original, $touch_Original, $view, $width, config, data, headerContent, name, on_click_Original, on_context, on_dblclick_Original, on_mouse_move_Original, waitData. Inlined  */ @JSGlobal("webix.ui.excelviewer")
 @js.native
 class excelviewer ()
-  extends StObject
-     with typings.webix.webix.ui.excelviewer
+  extends typings.webix.mod.ui.excelviewer

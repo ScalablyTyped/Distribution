@@ -2,86 +2,76 @@ package typings.babylonjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ispritesMod {
   
-  @js.native
   trait ISpriteJSONAtlas extends StObject {
     
     /**
       * Array of objects that contain the frame data.
       */
-    var frames: js.Array[ISpriteJSONSprite] = js.native
+    var frames: js.Array[ISpriteJSONSprite]
     
     /**
       * object basic object containing the sprite meta data.
       */
-    var meta: js.UndefOr[js.Object] = js.native
+    var meta: js.UndefOr[js.Object] = js.undefined
   }
   object ISpriteJSONAtlas {
     
-    @scala.inline
-    def apply(frames: js.Array[ISpriteJSONSprite]): ISpriteJSONAtlas = {
+    inline def apply(frames: js.Array[ISpriteJSONSprite]): ISpriteJSONAtlas = {
       val __obj = js.Dynamic.literal(frames = frames.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISpriteJSONAtlas]
     }
     
-    @scala.inline
-    implicit class ISpriteJSONAtlasMutableBuilder[Self <: ISpriteJSONAtlas] (val x: Self) extends AnyVal {
+    extension [Self <: ISpriteJSONAtlas](x: Self) {
       
-      @scala.inline
-      def setFrames(value: js.Array[ISpriteJSONSprite]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+      inline def setFrames(value: js.Array[ISpriteJSONSprite]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFramesVarargs(value: ISpriteJSONSprite*): Self = StObject.set(x, "frames", js.Array(value :_*))
+      inline def setFramesVarargs(value: ISpriteJSONSprite*): Self = StObject.set(x, "frames", js.Array(value :_*))
       
-      @scala.inline
-      def setMeta(value: js.Object): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: js.Object): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+      inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     }
   }
   
-  @js.native
   trait ISpriteJSONSprite extends StObject {
     
     /**
       * string name of the Frame
       */
-    var filename: String = js.native
+    var filename: String
     
     /**
       * ISpriteJSONSpriteFrame basic object of the frame data
       */
-    var frame: ISpriteJSONSpriteFrameData = js.native
+    var frame: ISpriteJSONSpriteFrameData
     
     /**
       * boolean to flag is the frame was rotated.
       */
-    var rotated: Boolean = js.native
+    var rotated: Boolean
     
     /**
       * ISpriteJSONSpriteFrame basic object of the source data
       */
-    var sourceSize: ISpriteJSONSpriteSourceSize = js.native
+    var sourceSize: ISpriteJSONSpriteSourceSize
     
     /**
       * ISpriteJSONSpriteFrame basic object of the source data
       */
-    var spriteSourceSize: ISpriteJSONSpriteFrameData = js.native
+    var spriteSourceSize: ISpriteJSONSpriteFrameData
     
     /**
       * boolean to flag is the frame was trimmed.
       */
-    var trimmed: Boolean = js.native
+    var trimmed: Boolean
   }
   object ISpriteJSONSprite {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       filename: String,
       frame: ISpriteJSONSpriteFrameData,
       rotated: Boolean,
@@ -93,106 +83,87 @@ object ispritesMod {
       __obj.asInstanceOf[ISpriteJSONSprite]
     }
     
-    @scala.inline
-    implicit class ISpriteJSONSpriteMutableBuilder[Self <: ISpriteJSONSprite] (val x: Self) extends AnyVal {
+    extension [Self <: ISpriteJSONSprite](x: Self) {
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrame(value: ISpriteJSONSpriteFrameData): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+      inline def setFrame(value: ISpriteJSONSpriteFrameData): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotated(value: Boolean): Self = StObject.set(x, "rotated", value.asInstanceOf[js.Any])
+      inline def setRotated(value: Boolean): Self = StObject.set(x, "rotated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceSize(value: ISpriteJSONSpriteSourceSize): Self = StObject.set(x, "sourceSize", value.asInstanceOf[js.Any])
+      inline def setSourceSize(value: ISpriteJSONSpriteSourceSize): Self = StObject.set(x, "sourceSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpriteSourceSize(value: ISpriteJSONSpriteFrameData): Self = StObject.set(x, "spriteSourceSize", value.asInstanceOf[js.Any])
+      inline def setSpriteSourceSize(value: ISpriteJSONSpriteFrameData): Self = StObject.set(x, "spriteSourceSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimmed(value: Boolean): Self = StObject.set(x, "trimmed", value.asInstanceOf[js.Any])
+      inline def setTrimmed(value: Boolean): Self = StObject.set(x, "trimmed", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait ISpriteJSONSpriteFrameData extends StObject {
     
     /**
       * number of the height of the Frame
       */
-    var h: Double = js.native
+    var h: Double
     
     /**
       * number of the width of the Frame
       */
-    var w: Double = js.native
+    var w: Double
     
     /**
       * number of the x offset of the Frame
       */
-    var x: Double = js.native
+    var x: Double
     
     /**
       * number of the y offset of the Frame
       */
-    var y: Double = js.native
+    var y: Double
   }
   object ISpriteJSONSpriteFrameData {
     
-    @scala.inline
-    def apply(h: Double, w: Double, x: Double, y: Double): ISpriteJSONSpriteFrameData = {
+    inline def apply(h: Double, w: Double, x: Double, y: Double): ISpriteJSONSpriteFrameData = {
       val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISpriteJSONSpriteFrameData]
     }
     
-    @scala.inline
-    implicit class ISpriteJSONSpriteFrameDataMutableBuilder[Self <: ISpriteJSONSpriteFrameData] (val x: Self) extends AnyVal {
+    extension [Self <: ISpriteJSONSpriteFrameData](x: Self) {
       
-      @scala.inline
-      def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+      inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+      inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait ISpriteJSONSpriteSourceSize extends StObject {
     
     /**
       * number of the original height of the Frame
       */
-    var h: Double = js.native
+    var h: Double
     
     /**
       * number of the original width of the Frame
       */
-    var w: Double = js.native
+    var w: Double
   }
   object ISpriteJSONSpriteSourceSize {
     
-    @scala.inline
-    def apply(h: Double, w: Double): ISpriteJSONSpriteSourceSize = {
+    inline def apply(h: Double, w: Double): ISpriteJSONSpriteSourceSize = {
       val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISpriteJSONSpriteSourceSize]
     }
     
-    @scala.inline
-    implicit class ISpriteJSONSpriteSourceSizeMutableBuilder[Self <: ISpriteJSONSpriteSourceSize] (val x: Self) extends AnyVal {
+    extension [Self <: ISpriteJSONSpriteSourceSize](x: Self) {
       
-      @scala.inline
-      def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+      inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+      inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     }
   }
 }

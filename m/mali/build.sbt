@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "mali"
-version := "0.21.0-7c1f97"
+version := "0.21.0-7d0e84"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "grpc" % "1.24.4-e49017",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-e00132",
-  "org.scalablytyped" %%% "std" % "4.1-2f6855")
+  "org.scalablytyped" %%% "grpc" % "1.24.4-cc28e0",
+  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-11c649",
+  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

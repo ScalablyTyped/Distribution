@@ -10,9 +10,9 @@ An extension for manipulating tags in cell metadata
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/celltags-extension |
 | Keywords           | jupyter, jupyterlab, jupyterlab-extension |
-| # releases         | 64 |
+| # releases         | 81 |
 | # dependents       | 1 |
-| # downloads        | 637078 |
+| # downloads        | 926534 |
 | # stars            | 0 |
 
 ## Links

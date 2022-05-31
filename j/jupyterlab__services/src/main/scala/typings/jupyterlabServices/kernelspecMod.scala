@@ -5,19 +5,18 @@ import typings.jupyterlabServices.restapiMod.ISpecModels
 import typings.jupyterlabServices.serverconnectionMod.ServerConnection.ISettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kernelspecMod {
   
   object KernelSpecAPI {
     
-    @JSImport("@jupyterlab/services/lib/kernelspec", "KernelSpecAPI.getSpecs")
+    @JSImport("@jupyterlab/services/lib/kernelspec", "KernelSpecAPI")
     @js.native
-    def getSpecs(): js.Promise[ISpecModels] = js.native
-    @JSImport("@jupyterlab/services/lib/kernelspec", "KernelSpecAPI.getSpecs")
-    @js.native
-    def getSpecs(settings: ISettings): js.Promise[ISpecModels] = js.native
+    val ^ : js.Any = js.native
+    
+    inline def getSpecs(): js.Promise[ISpecModels] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSpecs")().asInstanceOf[js.Promise[ISpecModels]]
+    inline def getSpecs(settings: ISettings): js.Promise[ISpecModels] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSpecs")(settings.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ISpecModels]]
   }
   
   @JSImport("@jupyterlab/services/lib/kernelspec", "KernelSpecManager")

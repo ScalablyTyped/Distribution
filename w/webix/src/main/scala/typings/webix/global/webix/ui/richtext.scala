@@ -4,8 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("webix.ui.richtext")
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.webix.webix.ui.baseview because Already inherited
+- typings.webix.webix.ui.richtext because var conflicts: $height, $skin_Original, $view, $width, DollarDollar, config, name. Inlined  */ @JSGlobal("webix.ui.richtext")
 @js.native
 class richtext ()
-  extends StObject
-     with typings.webix.webix.ui.richtext
+  extends typings.webix.mod.ui.richtext

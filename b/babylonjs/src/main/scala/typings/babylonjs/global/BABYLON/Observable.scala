@@ -2,7 +2,6 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.Observable")
@@ -12,6 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param onObserverAdded defines a callback to call when a new observer is added
   */
 class Observable[T] ()
-  extends typings.babylonjs.BABYLON.Observable[T] {
+  extends StObject
+     with typings.babylonjs.BABYLON.Observable[T] {
   def this(onObserverAdded: js.Function1[/* observer */ typings.babylonjs.BABYLON.Observer[T], Unit]) = this()
 }

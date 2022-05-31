@@ -7,21 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object enterprise {
   
-  // #endregion
-  // #region chrome.enterprise.*
-  ////////////////
-  // ENTERPRISE //
-  ////////////////
-  /**
-    * @requires Permissions: 'enterprise.deviceAttributes'
-    * @requires Note: This API is only available to apps force-installed by enterprise policy.
-    * @requires(CrOS) Only available on Chrome OS.
-    * @since Chrome 46.
-    * @description
-    * Use the chrome.enterprise.deviceAttributes API to read device attributes.
-    */
-  object deviceAttributes
-  
   /**
     * @requires Permissions: 'enterprise.platformKeys'
     * @requires Note: This API is only available to apps force-installed by enterprise policy.

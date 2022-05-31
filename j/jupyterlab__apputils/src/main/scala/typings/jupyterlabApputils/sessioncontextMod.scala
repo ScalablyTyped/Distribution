@@ -26,45 +26,46 @@ import typings.luminoDisposable.mod.IObservableDisposable
 import typings.luminoSignaling.mod.ISignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sessioncontextMod {
   
   @JSImport("@jupyterlab/apputils/lib/sessioncontext", "SessionContext")
   @js.native
-  class SessionContext protected () extends ISessionContext {
+  class SessionContext protected ()
+    extends StObject
+       with ISessionContext {
     /**
       * Construct a new session context.
       */
     def this(options: IOptions) = this()
     
-    var _busyDisposable: js.Any = js.native
+    /* private */ var _busyDisposable: js.Any = js.native
     
     /**
       * Change the kernel.
       */
-    var _changeKernel: js.Any = js.native
+    /* private */ var _changeKernel: js.Any = js.native
     
-    var _connectionStatusChanged: js.Any = js.native
+    /* private */ var _connectionStatusChanged: js.Any = js.native
     
-    var _dialog: js.Any = js.native
+    /* private */ var _dialog: js.Any = js.native
     
-    var _disposed: js.Any = js.native
+    /* private */ var _disposed: js.Any = js.native
     
     /**
       * Handle a new session object.
       */
-    var _handleNewSession: js.Any = js.native
+    /* private */ var _handleNewSession: js.Any = js.native
     
     /**
       * Handle an error in session startup.
       */
-    var _handleSessionError: js.Any = js.native
+    /* private */ var _handleSessionError: js.Any = js.native
     
-    var _initPromise: js.Any = js.native
+    /* private */ var _initPromise: js.Any = js.native
     
-    var _initStarted: js.Any = js.native
+    /* private */ var _initStarted: js.Any = js.native
     
     /**
       * Inner initialize function that doesn't handle promises.
@@ -72,94 +73,94 @@ object sessioncontextMod {
       */
     def _initialize(): js.Promise[Boolean] = js.native
     
-    var _initializing: js.Any = js.native
+    /* private */ var _initializing: js.Any = js.native
     
-    var _iopubMessage: js.Any = js.native
+    /* private */ var _iopubMessage: js.Any = js.native
     
-    var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: js.Any = js.native
     
-    var _isReady: js.Any = js.native
+    /* private */ var _isReady: js.Any = js.native
     
-    var _isRestarting: js.Any = js.native
+    /* private */ var _isRestarting: js.Any = js.native
     
-    var _isTerminating: js.Any = js.native
+    /* private */ var _isTerminating: js.Any = js.native
     
-    var _kernelChanged: js.Any = js.native
+    /* private */ var _kernelChanged: js.Any = js.native
     
-    var _kernelPreference: js.Any = js.native
+    /* private */ var _kernelPreference: js.Any = js.native
     
-    var _name: js.Any = js.native
+    /* private */ var _name: js.Any = js.native
     
     /**
       * Handle a change to the session status.
       */
-    var _onConnectionStatusChanged: js.Any = js.native
+    /* private */ var _onConnectionStatusChanged: js.Any = js.native
     
     /**
       * Handle an iopub message.
       */
-    var _onIopubMessage: js.Any = js.native
+    /* private */ var _onIopubMessage: js.Any = js.native
     
     /**
       * Handle a change to the kernel.
       */
-    var _onKernelChanged: js.Any = js.native
+    /* private */ var _onKernelChanged: js.Any = js.native
     
     /**
       * Handle a change to a session property.
       */
-    var _onPropertyChanged: js.Any = js.native
+    /* private */ var _onPropertyChanged: js.Any = js.native
     
     /**
       * Handle a session termination.
       */
-    var _onSessionDisposed: js.Any = js.native
+    /* private */ var _onSessionDisposed: js.Any = js.native
     
     /**
       * Handle a change to the session status.
       */
-    var _onStatusChanged: js.Any = js.native
+    /* private */ var _onStatusChanged: js.Any = js.native
     
     /**
       * Handle an unhandled message.
       */
-    var _onUnhandledMessage: js.Any = js.native
+    /* private */ var _onUnhandledMessage: js.Any = js.native
     
-    var _path: js.Any = js.native
+    /* private */ var _path: js.Any = js.native
     
-    var _pendingKernelName: js.Any = js.native
+    /* private */ var _pendingKernelName: js.Any = js.native
     
-    var _pendingSessionRequest: js.Any = js.native
+    /* private */ var _pendingSessionRequest: js.Any = js.native
     
-    var _prevKernelName: js.Any = js.native
+    /* private */ var _prevKernelName: js.Any = js.native
     
-    var _propertyChanged: js.Any = js.native
+    /* private */ var _propertyChanged: js.Any = js.native
     
-    var _ready: js.Any = js.native
+    /* private */ var _ready: js.Any = js.native
     
-    var _session: js.Any = js.native
+    /* private */ var _session: js.Any = js.native
     
-    var _sessionChanged: js.Any = js.native
+    /* private */ var _sessionChanged: js.Any = js.native
     
-    var _setBusy: js.Any = js.native
+    /* private */ var _setBusy: js.Any = js.native
     
     /**
       * Shut down the current session.
       */
-    var _shutdownSession: js.Any = js.native
+    /* private */ var _shutdownSession: js.Any = js.native
     
     /**
       * Start the session if necessary.
       *
       * @returns Whether to ask the user to pick a kernel.
       */
-    var _startIfNecessary: js.Any = js.native
+    /* private */ var _startIfNecessary: js.Any = js.native
     
-    var _statusChanged: js.Any = js.native
+    /* private */ var _statusChanged: js.Any = js.native
     
-    var _type: js.Any = js.native
+    /* private */ var _type: js.Any = js.native
     
-    var _unhandledMessage: js.Any = js.native
+    /* private */ var _unhandledMessage: js.Any = js.native
     
     /**
       * A signal emitted when the kernel status changes, proxied from the kernel.
@@ -167,6 +168,25 @@ object sessioncontextMod {
     @JSName("connectionStatusChanged")
     def connectionStatusChanged_MSessionContext: ISignal[this.type, ConnectionStatus] = js.native
     
+    /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * A signal emitted when the object is disposed.
+      */
+    /* CompleteClass */
+    override val disposed: ISignal[this.type, Unit] = js.native
     /**
       * A signal emitted when the poll is disposed.
       */
@@ -179,6 +199,14 @@ object sessioncontextMod {
     @JSName("iopubMessage")
     def iopubMessage_MSessionContext: ISignal[this.type, IIOPubMessage[IOPubMessageType]] = js.native
     
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
     /**
       * Test whether the context is disposed.
       */
@@ -318,107 +346,99 @@ object sessioncontextMod {
   }
   object SessionContext {
     
+    @JSImport("@jupyterlab/apputils/lib/sessioncontext", "SessionContext")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get the default kernel name given select options.
       */
-    @JSImport("@jupyterlab/apputils/lib/sessioncontext", "SessionContext.getDefaultKernel")
-    @js.native
-    def getDefaultKernel(options: IKernelSearch): String | Null = js.native
+    inline def getDefaultKernel(options: IKernelSearch): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultKernel")(options.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     
     /**
       * An interface for populating a kernel selector.
       */
-    @js.native
     trait IKernelSearch extends StObject {
       
       /**
         * The kernel preference.
         */
-      var preference: IKernelPreference = js.native
+      var preference: IKernelPreference
       
       /**
         * The current running sessions.
         */
-      var sessions: js.UndefOr[IterableOrArrayLike[IModel]] = js.native
+      var sessions: js.UndefOr[IterableOrArrayLike[IModel]] = js.undefined
       
       /**
         * The Kernel specs.
         */
-      var specs: ISpecModels | Null = js.native
+      var specs: ISpecModels | Null
     }
     object IKernelSearch {
       
-      @scala.inline
-      def apply(preference: IKernelPreference): IKernelSearch = {
-        val __obj = js.Dynamic.literal(preference = preference.asInstanceOf[js.Any])
+      inline def apply(preference: IKernelPreference): IKernelSearch = {
+        val __obj = js.Dynamic.literal(preference = preference.asInstanceOf[js.Any], specs = null)
         __obj.asInstanceOf[IKernelSearch]
       }
       
-      @scala.inline
-      implicit class IKernelSearchMutableBuilder[Self <: IKernelSearch] (val x: Self) extends AnyVal {
+      extension [Self <: IKernelSearch](x: Self) {
         
-        @scala.inline
-        def setPreference(value: IKernelPreference): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
+        inline def setPreference(value: IKernelPreference): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSessions(value: IterableOrArrayLike[IModel]): Self = StObject.set(x, "sessions", value.asInstanceOf[js.Any])
+        inline def setSessions(value: IterableOrArrayLike[IModel]): Self = StObject.set(x, "sessions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSessionsUndefined: Self = StObject.set(x, "sessions", js.undefined)
+        inline def setSessionsUndefined: Self = StObject.set(x, "sessions", js.undefined)
         
-        @scala.inline
-        def setSpecs(value: ISpecModels): Self = StObject.set(x, "specs", value.asInstanceOf[js.Any])
+        inline def setSpecs(value: ISpecModels): Self = StObject.set(x, "specs", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpecsNull: Self = StObject.set(x, "specs", null)
+        inline def setSpecsNull: Self = StObject.set(x, "specs", null)
       }
     }
     
     /**
       * The options used to initialize a context.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * A kernel preference.
         */
-      var kernelPreference: js.UndefOr[IKernelPreference] = js.native
+      var kernelPreference: js.UndefOr[IKernelPreference] = js.undefined
       
       /**
         * The name of the session.
         */
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
       /**
         * The initial path of the file.
         */
-      var path: js.UndefOr[String] = js.native
+      var path: js.UndefOr[String] = js.undefined
       
       /**
         * A session manager instance.
         */
-      var sessionManager: IManager = js.native
+      var sessionManager: IManager
       
       /**
         * A function to call when the session becomes busy.
         */
-      var setBusy: js.UndefOr[js.Function0[IDisposable]] = js.native
+      var setBusy: js.UndefOr[js.Function0[IDisposable]] = js.undefined
       
       /**
         * A kernel spec manager instance.
         */
-      var specsManager: typings.jupyterlabServices.kernelspecKernelspecMod.IManager = js.native
+      var specsManager: typings.jupyterlabServices.kernelspecKernelspecMod.IManager
       
       /**
         * The type of the session.
         */
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         sessionManager: IManager,
         specsManager: typings.jupyterlabServices.kernelspecKernelspecMod.IManager
       ): IOptions = {
@@ -426,44 +446,31 @@ object sessioncontextMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setKernelPreference(value: IKernelPreference): Self = StObject.set(x, "kernelPreference", value.asInstanceOf[js.Any])
+        inline def setKernelPreference(value: IKernelPreference): Self = StObject.set(x, "kernelPreference", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKernelPreferenceUndefined: Self = StObject.set(x, "kernelPreference", js.undefined)
+        inline def setKernelPreferenceUndefined: Self = StObject.set(x, "kernelPreference", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+        inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
         
-        @scala.inline
-        def setSessionManager(value: IManager): Self = StObject.set(x, "sessionManager", value.asInstanceOf[js.Any])
+        inline def setSessionManager(value: IManager): Self = StObject.set(x, "sessionManager", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSetBusy(value: () => IDisposable): Self = StObject.set(x, "setBusy", js.Any.fromFunction0(value))
+        inline def setSetBusy(value: () => IDisposable): Self = StObject.set(x, "setBusy", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSetBusyUndefined: Self = StObject.set(x, "setBusy", js.undefined)
+        inline def setSetBusyUndefined: Self = StObject.set(x, "setBusy", js.undefined)
         
-        @scala.inline
-        def setSpecsManager(value: typings.jupyterlabServices.kernelspecKernelspecMod.IManager): Self = StObject.set(x, "specsManager", value.asInstanceOf[js.Any])
+        inline def setSpecsManager(value: typings.jupyterlabServices.kernelspecKernelspecMod.IManager): Self = StObject.set(x, "specsManager", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
   }
@@ -473,7 +480,9 @@ object sessioncontextMod {
   val sessionContextDialogs: IDialogs = js.native
   
   @js.native
-  trait ISessionContext extends IObservableDisposable {
+  trait ISessionContext
+    extends StObject
+       with IObservableDisposable {
     
     /**
       * Change the kernel associated with the session.
@@ -647,7 +656,6 @@ object sessioncontextMod {
     /**
       * An interface for a session context dialog provider.
       */
-    @js.native
     trait IDialogs extends StObject {
       
       /**
@@ -661,29 +669,25 @@ object sessioncontextMod {
         * kernel name and resolves with `true`. If no kernel has been started,
         * this is a no-op, and resolves with `false`.
         */
-      def restart(session: ISessionContext): js.Promise[Boolean] = js.native
+      def restart(session: ISessionContext): js.Promise[Boolean]
       
       /**
         * Select a kernel for the session.
         */
-      def selectKernel(session: ISessionContext): js.Promise[Unit] = js.native
+      def selectKernel(session: ISessionContext): js.Promise[Unit]
     }
     object IDialogs {
       
-      @scala.inline
-      def apply(restart: ISessionContext => js.Promise[Boolean], selectKernel: ISessionContext => js.Promise[Unit]): IDialogs = {
+      inline def apply(restart: ISessionContext => js.Promise[Boolean], selectKernel: ISessionContext => js.Promise[Unit]): IDialogs = {
         val __obj = js.Dynamic.literal(restart = js.Any.fromFunction1(restart), selectKernel = js.Any.fromFunction1(selectKernel))
         __obj.asInstanceOf[IDialogs]
       }
       
-      @scala.inline
-      implicit class IDialogsMutableBuilder[Self <: IDialogs] (val x: Self) extends AnyVal {
+      extension [Self <: IDialogs](x: Self) {
         
-        @scala.inline
-        def setRestart(value: ISessionContext => js.Promise[Boolean]): Self = StObject.set(x, "restart", js.Any.fromFunction1(value))
+        inline def setRestart(value: ISessionContext => js.Promise[Boolean]): Self = StObject.set(x, "restart", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSelectKernel(value: ISessionContext => js.Promise[Unit]): Self = StObject.set(x, "selectKernel", js.Any.fromFunction1(value))
+        inline def setSelectKernel(value: ISessionContext => js.Promise[Unit]): Self = StObject.set(x, "selectKernel", js.Any.fromFunction1(value))
       }
     }
     
@@ -695,97 +699,80 @@ object sessioncontextMod {
       * `language`. If no matching kernels can be found and `autoStartDefault` is
       * `true`, then the default kernel for the server is preferred.
       */
-    @js.native
     trait IKernelPreference extends StObject {
       
       /**
         * Automatically start the default kernel if no other matching kernel is
         * found (default `true`).
         */
-      val autoStartDefault: js.UndefOr[Boolean] = js.native
+      val autoStartDefault: js.UndefOr[Boolean] = js.undefined
       
       /**
         * A kernel can be started (default `true`).
         */
-      val canStart: js.UndefOr[Boolean] = js.native
+      val canStart: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The id of an existing kernel.
         */
-      val id: js.UndefOr[String] = js.native
+      val id: js.UndefOr[String] = js.undefined
       
       /**
         * The preferred kernel language.
         */
-      val language: js.UndefOr[String] = js.native
+      val language: js.UndefOr[String] = js.undefined
       
       /**
         * The name of the kernel.
         */
-      val name: js.UndefOr[String] = js.native
+      val name: js.UndefOr[String] = js.undefined
       
       /**
         * A kernel should be started automatically (default `true`).
         */
-      val shouldStart: js.UndefOr[Boolean] = js.native
+      val shouldStart: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Shut down the session when session context is disposed (default `false`).
         */
-      val shutdownOnDispose: js.UndefOr[Boolean] = js.native
+      val shutdownOnDispose: js.UndefOr[Boolean] = js.undefined
     }
     object IKernelPreference {
       
-      @scala.inline
-      def apply(): IKernelPreference = {
+      inline def apply(): IKernelPreference = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IKernelPreference]
       }
       
-      @scala.inline
-      implicit class IKernelPreferenceMutableBuilder[Self <: IKernelPreference] (val x: Self) extends AnyVal {
+      extension [Self <: IKernelPreference](x: Self) {
         
-        @scala.inline
-        def setAutoStartDefault(value: Boolean): Self = StObject.set(x, "autoStartDefault", value.asInstanceOf[js.Any])
+        inline def setAutoStartDefault(value: Boolean): Self = StObject.set(x, "autoStartDefault", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAutoStartDefaultUndefined: Self = StObject.set(x, "autoStartDefault", js.undefined)
+        inline def setAutoStartDefaultUndefined: Self = StObject.set(x, "autoStartDefault", js.undefined)
         
-        @scala.inline
-        def setCanStart(value: Boolean): Self = StObject.set(x, "canStart", value.asInstanceOf[js.Any])
+        inline def setCanStart(value: Boolean): Self = StObject.set(x, "canStart", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCanStartUndefined: Self = StObject.set(x, "canStart", js.undefined)
+        inline def setCanStartUndefined: Self = StObject.set(x, "canStart", js.undefined)
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+        inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
-        @scala.inline
-        def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+        inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+        inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setShouldStart(value: Boolean): Self = StObject.set(x, "shouldStart", value.asInstanceOf[js.Any])
+        inline def setShouldStart(value: Boolean): Self = StObject.set(x, "shouldStart", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShouldStartUndefined: Self = StObject.set(x, "shouldStart", js.undefined)
+        inline def setShouldStartUndefined: Self = StObject.set(x, "shouldStart", js.undefined)
         
-        @scala.inline
-        def setShutdownOnDispose(value: Boolean): Self = StObject.set(x, "shutdownOnDispose", value.asInstanceOf[js.Any])
+        inline def setShutdownOnDispose(value: Boolean): Self = StObject.set(x, "shutdownOnDispose", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShutdownOnDisposeUndefined: Self = StObject.set(x, "shutdownOnDispose", js.undefined)
+        inline def setShutdownOnDisposeUndefined: Self = StObject.set(x, "shutdownOnDispose", js.undefined)
       }
     }
     

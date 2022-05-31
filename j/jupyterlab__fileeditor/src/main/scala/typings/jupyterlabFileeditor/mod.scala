@@ -4,7 +4,6 @@ import typings.jupyterlabFileeditor.widgetMod.FileEditor.IOptions
 import typings.luminoCoreutils.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -62,9 +61,4 @@ object mod {
     class Model ()
       extends typings.jupyterlabFileeditor.tabspacestatusMod.TabSpaceStatus.Model
   }
-  
-  /**
-    * A namespace for TabSpaceComponent statics.
-    */
-  object TabSpaceComponent
 }

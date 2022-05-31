@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "zipkin-javascript-opentracing"
-version := "1.6-dt-20180723Z-caf4ad"
+version := "1.6-dt-20180723Z-dab11c"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -10,9 +10,9 @@ JupyterLab - Application
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/application |
 | Keywords           | - |
-| # releases         | 116 |
-| # dependents       | 696 |
-| # downloads        | 1711474 |
+| # releases         | 130 |
+| # dependents       | 752 |
+| # downloads        | 1860970 |
 | # stars            | 0 |
 
 ## Links

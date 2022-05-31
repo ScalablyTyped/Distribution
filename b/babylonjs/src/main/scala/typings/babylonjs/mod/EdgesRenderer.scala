@@ -3,7 +3,6 @@ package typings.babylonjs.mod
 import typings.babylonjs.edgesRendererMod.IEdgesRendererOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "EdgesRenderer")
@@ -23,31 +22,13 @@ class EdgesRenderer protected ()
   def this(source: typings.babylonjs.abstractMeshMod.AbstractMesh, epsilon: Double) = this()
   def this(
     source: typings.babylonjs.abstractMeshMod.AbstractMesh,
-    epsilon: js.UndefOr[scala.Nothing],
-    checkVerticesInsteadOfIndices: Boolean
-  ) = this()
-  def this(
-    source: typings.babylonjs.abstractMeshMod.AbstractMesh,
     epsilon: Double,
     checkVerticesInsteadOfIndices: Boolean
   ) = this()
   def this(
     source: typings.babylonjs.abstractMeshMod.AbstractMesh,
-    epsilon: js.UndefOr[scala.Nothing],
-    checkVerticesInsteadOfIndices: js.UndefOr[scala.Nothing],
-    generateEdgesLines: Boolean
-  ) = this()
-  def this(
-    source: typings.babylonjs.abstractMeshMod.AbstractMesh,
-    epsilon: js.UndefOr[scala.Nothing],
-    checkVerticesInsteadOfIndices: Boolean,
-    generateEdgesLines: Boolean
-  ) = this()
-  def this(
-    source: typings.babylonjs.abstractMeshMod.AbstractMesh,
-    epsilon: Double,
-    checkVerticesInsteadOfIndices: js.UndefOr[scala.Nothing],
-    generateEdgesLines: Boolean
+    epsilon: Unit,
+    checkVerticesInsteadOfIndices: Boolean
   ) = this()
   def this(
     source: typings.babylonjs.abstractMeshMod.AbstractMesh,
@@ -57,28 +38,25 @@ class EdgesRenderer protected ()
   ) = this()
   def this(
     source: typings.babylonjs.abstractMeshMod.AbstractMesh,
-    epsilon: js.UndefOr[scala.Nothing],
-    checkVerticesInsteadOfIndices: js.UndefOr[scala.Nothing],
-    generateEdgesLines: js.UndefOr[scala.Nothing],
-    options: IEdgesRendererOptions
+    epsilon: Double,
+    checkVerticesInsteadOfIndices: Unit,
+    generateEdgesLines: Boolean
   ) = this()
   def this(
     source: typings.babylonjs.abstractMeshMod.AbstractMesh,
-    epsilon: js.UndefOr[scala.Nothing],
-    checkVerticesInsteadOfIndices: js.UndefOr[scala.Nothing],
-    generateEdgesLines: Boolean,
-    options: IEdgesRendererOptions
-  ) = this()
-  def this(
-    source: typings.babylonjs.abstractMeshMod.AbstractMesh,
-    epsilon: js.UndefOr[scala.Nothing],
+    epsilon: Unit,
     checkVerticesInsteadOfIndices: Boolean,
-    generateEdgesLines: js.UndefOr[scala.Nothing],
-    options: IEdgesRendererOptions
+    generateEdgesLines: Boolean
   ) = this()
   def this(
     source: typings.babylonjs.abstractMeshMod.AbstractMesh,
-    epsilon: js.UndefOr[scala.Nothing],
+    epsilon: Unit,
+    checkVerticesInsteadOfIndices: Unit,
+    generateEdgesLines: Boolean
+  ) = this()
+  def this(
+    source: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    epsilon: Double,
     checkVerticesInsteadOfIndices: Boolean,
     generateEdgesLines: Boolean,
     options: IEdgesRendererOptions
@@ -86,29 +64,50 @@ class EdgesRenderer protected ()
   def this(
     source: typings.babylonjs.abstractMeshMod.AbstractMesh,
     epsilon: Double,
-    checkVerticesInsteadOfIndices: js.UndefOr[scala.Nothing],
-    generateEdgesLines: js.UndefOr[scala.Nothing],
+    checkVerticesInsteadOfIndices: Boolean,
+    generateEdgesLines: Unit,
     options: IEdgesRendererOptions
   ) = this()
   def this(
     source: typings.babylonjs.abstractMeshMod.AbstractMesh,
     epsilon: Double,
-    checkVerticesInsteadOfIndices: js.UndefOr[scala.Nothing],
+    checkVerticesInsteadOfIndices: Unit,
     generateEdgesLines: Boolean,
     options: IEdgesRendererOptions
   ) = this()
   def this(
     source: typings.babylonjs.abstractMeshMod.AbstractMesh,
     epsilon: Double,
-    checkVerticesInsteadOfIndices: Boolean,
-    generateEdgesLines: js.UndefOr[scala.Nothing],
+    checkVerticesInsteadOfIndices: Unit,
+    generateEdgesLines: Unit,
     options: IEdgesRendererOptions
   ) = this()
   def this(
     source: typings.babylonjs.abstractMeshMod.AbstractMesh,
-    epsilon: Double,
+    epsilon: Unit,
     checkVerticesInsteadOfIndices: Boolean,
     generateEdgesLines: Boolean,
+    options: IEdgesRendererOptions
+  ) = this()
+  def this(
+    source: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    epsilon: Unit,
+    checkVerticesInsteadOfIndices: Boolean,
+    generateEdgesLines: Unit,
+    options: IEdgesRendererOptions
+  ) = this()
+  def this(
+    source: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    epsilon: Unit,
+    checkVerticesInsteadOfIndices: Unit,
+    generateEdgesLines: Boolean,
+    options: IEdgesRendererOptions
+  ) = this()
+  def this(
+    source: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    epsilon: Unit,
+    checkVerticesInsteadOfIndices: Unit,
+    generateEdgesLines: Unit,
     options: IEdgesRendererOptions
   ) = this()
 }
@@ -122,6 +121,5 @@ object EdgesRenderer {
   @JSImport("babylonjs", "EdgesRenderer.GetShader")
   @js.native
   def GetShader: js.Any = js.native
-  @scala.inline
-  def GetShader_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GetShader")(x.asInstanceOf[js.Any])
+  inline def GetShader_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GetShader")(x.asInstanceOf[js.Any])
 }

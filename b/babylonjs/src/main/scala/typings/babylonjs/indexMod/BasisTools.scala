@@ -5,7 +5,6 @@ import typings.std.ArrayBuffer
 import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "BasisTools")
@@ -24,9 +23,7 @@ object BasisTools {
     * @param basisFormat format chosen from GetSupportedTranscodeFormat
     * @returns internal format corresponding to the Basis format
     */
-  @JSImport("babylonjs/index", "BasisTools.GetInternalFormatFromBasisFormat")
-  @js.native
-  def GetInternalFormatFromBasisFormat(basisFormat: Double): Double = js.native
+  inline def GetInternalFormatFromBasisFormat(basisFormat: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetInternalFormatFromBasisFormat")(basisFormat.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * URL to use when loading the basis transcoder
@@ -34,30 +31,23 @@ object BasisTools {
   @JSImport("babylonjs/index", "BasisTools.JSModuleURL")
   @js.native
   def JSModuleURL: String = js.native
-  @scala.inline
-  def JSModuleURL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JSModuleURL")(x.asInstanceOf[js.Any])
+  inline def JSModuleURL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JSModuleURL")(x.asInstanceOf[js.Any])
   
   /**
     * Loads a texture from the transcode result
     * @param texture texture load to
     * @param transcodeResult the result of transcoding the basis file to load from
     */
-  @JSImport("babylonjs/index", "BasisTools.LoadTextureFromTranscodeResult")
-  @js.native
-  def LoadTextureFromTranscodeResult(texture: typings.babylonjs.internalTextureMod.InternalTexture, transcodeResult: TranscodeResult): Unit = js.native
+  inline def LoadTextureFromTranscodeResult(texture: typings.babylonjs.internalTextureMod.InternalTexture, transcodeResult: TranscodeResult): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadTextureFromTranscodeResult")(texture.asInstanceOf[js.Any], transcodeResult.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("babylonjs/index", "BasisTools.TranscodeAsync")
-  @js.native
-  def TranscodeAsync(data: ArrayBufferView, config: typings.babylonjs.basisMod.BasisTranscodeConfiguration): js.Promise[TranscodeResult] = js.native
+  inline def TranscodeAsync(data: ArrayBufferView, config: typings.babylonjs.basisMod.BasisTranscodeConfiguration): js.Promise[TranscodeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("TranscodeAsync")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TranscodeResult]]
   /**
     * Transcodes a loaded image file to compressed pixel data
     * @param data image data to transcode
     * @param config configuration options for the transcoding
     * @returns a promise resulting in the transcoded image
     */
-  @JSImport("babylonjs/index", "BasisTools.TranscodeAsync")
-  @js.native
-  def TranscodeAsync(data: ArrayBuffer, config: typings.babylonjs.basisMod.BasisTranscodeConfiguration): js.Promise[TranscodeResult] = js.native
+  inline def TranscodeAsync(data: ArrayBuffer, config: typings.babylonjs.basisMod.BasisTranscodeConfiguration): js.Promise[TranscodeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("TranscodeAsync")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TranscodeResult]]
   
   /**
     * URL to use when loading the wasm module for the transcoder
@@ -65,20 +55,17 @@ object BasisTools {
   @JSImport("babylonjs/index", "BasisTools.WasmModuleURL")
   @js.native
   def WasmModuleURL: String = js.native
-  @scala.inline
-  def WasmModuleURL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WasmModuleURL")(x.asInstanceOf[js.Any])
+  inline def WasmModuleURL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WasmModuleURL")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs/index", "BasisTools._CreateWorkerAsync")
   @js.native
   def _CreateWorkerAsync: js.Any = js.native
-  @scala.inline
-  def _CreateWorkerAsync_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateWorkerAsync")(x.asInstanceOf[js.Any])
+  inline def _CreateWorkerAsync_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateWorkerAsync")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs/index", "BasisTools._IgnoreSupportedFormats")
   @js.native
   def _IgnoreSupportedFormats: js.Any = js.native
-  @scala.inline
-  def _IgnoreSupportedFormats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IgnoreSupportedFormats")(x.asInstanceOf[js.Any])
+  inline def _IgnoreSupportedFormats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IgnoreSupportedFormats")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs/index", "BasisTools._Worker")
   @js.native
@@ -87,15 +74,12 @@ object BasisTools {
   @JSImport("babylonjs/index", "BasisTools._WorkerPromise")
   @js.native
   def _WorkerPromise: js.Any = js.native
-  @scala.inline
-  def _WorkerPromise_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_WorkerPromise")(x.asInstanceOf[js.Any])
+  inline def _WorkerPromise_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_WorkerPromise")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def _Worker_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Worker")(x.asInstanceOf[js.Any])
+  inline def _Worker_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Worker")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs/index", "BasisTools._actionId")
   @js.native
   def _actionId: js.Any = js.native
-  @scala.inline
-  def _actionId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_actionId")(x.asInstanceOf[js.Any])
+  inline def _actionId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_actionId")(x.asInstanceOf[js.Any])
 }

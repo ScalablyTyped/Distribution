@@ -2,28 +2,25 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMaterialAnisotropicDefines extends StObject {
   
-  var ANISOTROPIC: Boolean = js.native
+  var ANISOTROPIC: Boolean
   
-  var ANISOTROPIC_TEXTURE: Boolean = js.native
+  var ANISOTROPIC_TEXTURE: Boolean
   
-  var ANISOTROPIC_TEXTUREDIRECTUV: Double = js.native
+  var ANISOTROPIC_TEXTUREDIRECTUV: Double
   
-  var MAINUV1: Boolean = js.native
+  var MAINUV1: Boolean
   
-  var _areTexturesDirty: Boolean = js.native
+  var _areTexturesDirty: Boolean
   
-  var _needUVs: Boolean = js.native
+  var _needUVs: Boolean
 }
 object IMaterialAnisotropicDefines {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ANISOTROPIC: Boolean,
     ANISOTROPIC_TEXTURE: Boolean,
     ANISOTROPIC_TEXTUREDIRECTUV: Double,
@@ -35,25 +32,18 @@ object IMaterialAnisotropicDefines {
     __obj.asInstanceOf[IMaterialAnisotropicDefines]
   }
   
-  @scala.inline
-  implicit class IMaterialAnisotropicDefinesMutableBuilder[Self <: IMaterialAnisotropicDefines] (val x: Self) extends AnyVal {
+  extension [Self <: IMaterialAnisotropicDefines](x: Self) {
     
-    @scala.inline
-    def setANISOTROPIC(value: Boolean): Self = StObject.set(x, "ANISOTROPIC", value.asInstanceOf[js.Any])
+    inline def setANISOTROPIC(value: Boolean): Self = StObject.set(x, "ANISOTROPIC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setANISOTROPIC_TEXTURE(value: Boolean): Self = StObject.set(x, "ANISOTROPIC_TEXTURE", value.asInstanceOf[js.Any])
+    inline def setANISOTROPIC_TEXTURE(value: Boolean): Self = StObject.set(x, "ANISOTROPIC_TEXTURE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setANISOTROPIC_TEXTUREDIRECTUV(value: Double): Self = StObject.set(x, "ANISOTROPIC_TEXTUREDIRECTUV", value.asInstanceOf[js.Any])
+    inline def setANISOTROPIC_TEXTUREDIRECTUV(value: Double): Self = StObject.set(x, "ANISOTROPIC_TEXTUREDIRECTUV", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMAINUV1(value: Boolean): Self = StObject.set(x, "MAINUV1", value.asInstanceOf[js.Any])
+    inline def setMAINUV1(value: Boolean): Self = StObject.set(x, "MAINUV1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_areTexturesDirty(value: Boolean): Self = StObject.set(x, "_areTexturesDirty", value.asInstanceOf[js.Any])
+    inline def set_areTexturesDirty(value: Boolean): Self = StObject.set(x, "_areTexturesDirty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_needUVs(value: Boolean): Self = StObject.set(x, "_needUVs", value.asInstanceOf[js.Any])
+    inline def set_needUVs(value: Boolean): Self = StObject.set(x, "_needUVs", value.asInstanceOf[js.Any])
   }
 }

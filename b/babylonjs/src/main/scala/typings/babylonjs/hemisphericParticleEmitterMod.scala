@@ -1,9 +1,14 @@
 package typings.babylonjs
 
+import typings.babylonjs.effectMod.Effect
 import typings.babylonjs.iparticleemittertypeMod.IParticleEmitterType
+import typings.babylonjs.mathVectorMod.Matrix
+import typings.babylonjs.mathVectorMod.Vector3
+import typings.babylonjs.particleMod.Particle
+import typings.babylonjs.sceneMod.Scene
+import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hemisphericParticleEmitterMod {
@@ -16,7 +21,9 @@ object hemisphericParticleEmitterMod {
     * @param radiusRange the range of the emission hemisphere [0-1] 0 Surface only, 1 Entire Radius (1 by default)
     * @param directionRandomizer defines how much to randomize the particle direction [0-1]
     */
-  class HemisphericParticleEmitter () extends IParticleEmitterType {
+  class HemisphericParticleEmitter ()
+    extends StObject
+       with IParticleEmitterType {
     def this(/**
       * The radius of the emission hemisphere.
       */
@@ -25,16 +32,6 @@ object hemisphericParticleEmitterMod {
       /**
       * The radius of the emission hemisphere.
       */
-    radius: js.UndefOr[scala.Nothing],
-      /**
-      * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
-      */
-    radiusRange: Double
-    ) = this()
-    def this(
-      /**
-      * The radius of the emission hemisphere.
-      */
     radius: Double,
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
@@ -45,21 +42,17 @@ object hemisphericParticleEmitterMod {
       /**
       * The radius of the emission hemisphere.
       */
-    radius: js.UndefOr[scala.Nothing],
+    radius: Unit,
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
       */
-    radiusRange: js.UndefOr[scala.Nothing],
-      /**
-      * How much to randomize the particle direction [0-1].
-      */
-    directionRandomizer: Double
+    radiusRange: Double
     ) = this()
     def this(
       /**
       * The radius of the emission hemisphere.
       */
-    radius: js.UndefOr[scala.Nothing],
+    radius: Double,
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
       */
@@ -77,7 +70,7 @@ object hemisphericParticleEmitterMod {
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
       */
-    radiusRange: js.UndefOr[scala.Nothing],
+    radiusRange: Unit,
       /**
       * How much to randomize the particle direction [0-1].
       */
@@ -87,7 +80,7 @@ object hemisphericParticleEmitterMod {
       /**
       * The radius of the emission hemisphere.
       */
-    radius: Double,
+    radius: Unit,
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
       */
@@ -97,6 +90,27 @@ object hemisphericParticleEmitterMod {
       */
     directionRandomizer: Double
     ) = this()
+    def this(
+      /**
+      * The radius of the emission hemisphere.
+      */
+    radius: Unit,
+      /**
+      * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
+      */
+    radiusRange: Unit,
+      /**
+      * How much to randomize the particle direction [0-1].
+      */
+    directionRandomizer: Double
+    ) = this()
+    
+    /**
+      * Called by the GPUParticleSystem to setup the update shader
+      * @param effect defines the update shader
+      */
+    /* CompleteClass */
+    override def applyToShader(effect: Effect): Unit = js.native
     
     /**
       * How much to randomize the particle direction [0-1].
@@ -104,10 +118,31 @@ object hemisphericParticleEmitterMod {
     var directionRandomizer: Double = js.native
     
     /**
+      * Returns a string representing the class name
+      * @returns a string containing the class name
+      */
+    /* CompleteClass */
+    override def getClassName(): String = js.native
+    
+    /**
+      * Returns a string to use to update the GPU particles update shader
+      * @returns the effect defines string
+      */
+    /* CompleteClass */
+    override def getEffectDefines(): String = js.native
+    
+    /**
       * Parse properties from a JSON object
       * @param serializationObject defines the JSON object
       */
     def parse(serializationObject: js.Any): Unit = js.native
+    /**
+      * Parse properties from a JSON object
+      * @param serializationObject defines the JSON object
+      * @param scene defines the hosting scene
+      */
+    /* CompleteClass */
+    override def parse(serializationObject: js.Any, scene: Nullable[Scene]): Unit = js.native
     
     /**
       * The radius of the emission hemisphere.
@@ -118,5 +153,32 @@ object hemisphericParticleEmitterMod {
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
       */
     var radiusRange: Double = js.native
+    
+    /**
+      * Serializes the particle system to a JSON object.
+      * @returns the JSON object
+      */
+    /* CompleteClass */
+    override def serialize(): js.Any = js.native
+    
+    /**
+      * Called by the particle System when the direction is computed for the created particle.
+      * @param worldMatrix is the world matrix of the particle system
+      * @param directionToUpdate is the direction vector to update with the result
+      * @param particle is the particle we are computed the direction for
+      * @param isLocal defines if the direction should be set in local space
+      */
+    /* CompleteClass */
+    override def startDirectionFunction(worldMatrix: Matrix, directionToUpdate: Vector3, particle: Particle, isLocal: Boolean): Unit = js.native
+    
+    /**
+      * Called by the particle System when the position is computed for the created particle.
+      * @param worldMatrix is the world matrix of the particle system
+      * @param positionToUpdate is the position vector to update with the result
+      * @param particle is the particle we are computed the position for
+      * @param isLocal defines if the position should be set in local space
+      */
+    /* CompleteClass */
+    override def startPositionFunction(worldMatrix: Matrix, positionToUpdate: Vector3, particle: Particle, isLocal: Boolean): Unit = js.native
   }
 }

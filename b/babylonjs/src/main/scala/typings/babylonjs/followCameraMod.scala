@@ -8,7 +8,6 @@ import typings.babylonjs.targetCameraMod.TargetCamera
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object followCameraMod {
@@ -39,12 +38,12 @@ object followCameraMod {
       scene: Scene
     ) = this()
     
-    var _cartesianCoordinates: js.Any = js.native
+    /* private */ var _cartesianCoordinates: js.Any = js.native
     
-    var _follow: js.Any = js.native
+    /* private */ var _follow: js.Any = js.native
     
     /** Define the camera target (the mesh it should follow) */
-    var _meshTarget: js.Any = js.native
+    /* private */ var _meshTarget: js.Any = js.native
     
     /** The longitudinal angle of the camera */
     var alpha: Double = js.native
@@ -70,9 +69,9 @@ object followCameraMod {
     def this(name: String, position: Vector3, scene: Scene) = this()
     def this(name: String, position: Vector3, scene: Scene, lockedTarget: Nullable[AbstractMesh]) = this()
     
-    var _checkLimits: js.Any = js.native
+    /* private */ var _checkLimits: js.Any = js.native
     
-    var _follow: js.Any = js.native
+    /* private */ var _follow: js.Any = js.native
     
     /**
       * Define how fast the camera can accelerate to follow it s target.

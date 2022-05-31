@@ -9,14 +9,18 @@ import typings.oracleOraclejet.anon.OjRouter
 import typings.oracleOraclejet.ojrouterMod.RouterState.ConfigOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ojrouterMod {
   
   @JSImport("@oracle/oraclejet/ojrouter", JSImport.Namespace)
   @js.native
-  class ^ () extends Router
+  class ^ ()
+    extends StObject
+       with Router
+  @JSImport("@oracle/oraclejet/ojrouter", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
   object defaults {
@@ -28,20 +32,17 @@ object ojrouterMod {
     @JSImport("@oracle/oraclejet/ojrouter", "defaults.baseUrl")
     @js.native
     def baseUrl: js.UndefOr[String] = js.native
-    @scala.inline
-    def baseUrl_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("baseUrl")(x.asInstanceOf[js.Any])
+    inline def baseUrl_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("baseUrl")(x.asInstanceOf[js.Any])
     
     @JSImport("@oracle/oraclejet/ojrouter", "defaults.rootInstanceName")
     @js.native
     def rootInstanceName: js.UndefOr[String] = js.native
-    @scala.inline
-    def rootInstanceName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rootInstanceName")(x.asInstanceOf[js.Any])
+    inline def rootInstanceName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rootInstanceName")(x.asInstanceOf[js.Any])
     
     @JSImport("@oracle/oraclejet/ojrouter", "defaults.urlAdapter")
     @js.native
     def urlAdapter: js.UndefOr[urlPathAdapter | urlParamAdapter] = js.native
-    @scala.inline
-    def urlAdapter_=(x: js.UndefOr[urlPathAdapter | urlParamAdapter]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("urlAdapter")(x.asInstanceOf[js.Any])
+    inline def urlAdapter_=(x: js.UndefOr[urlPathAdapter | urlParamAdapter]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("urlAdapter")(x.asInstanceOf[js.Any])
   }
   
   /* static member */
@@ -50,9 +51,7 @@ object ojrouterMod {
   val rootInstance: Router = js.native
   
   /* static member */
-  @JSImport("@oracle/oraclejet/ojrouter", "sync")
-  @js.native
-  def sync(): js.Promise[HasChanged] = js.native
+  inline def sync(): js.Promise[HasChanged] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[js.Promise[HasChanged]]
   
   /* static member */
   @JSImport("@oracle/oraclejet/ojrouter", "transitionedToState")
@@ -70,19 +69,17 @@ object ojrouterMod {
   class urlPathAdapter () extends StObject
   
   // tslint:disable-next-line interface-over-type-literal
-  @js.native
   trait ModuleConfigType extends StObject {
     
-    var lifecycleListener: Attached = js.native
+    var lifecycleListener: Attached
     
-    var name: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<string> */ js.Any = js.native
+    var name: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<string> */ js.Any
     
-    var params: OjRouter = js.native
+    var params: OjRouter
   }
   object ModuleConfigType {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       lifecycleListener: Attached,
       name: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<string> */ js.Any,
       params: OjRouter
@@ -91,19 +88,15 @@ object ojrouterMod {
       __obj.asInstanceOf[ModuleConfigType]
     }
     
-    @scala.inline
-    implicit class ModuleConfigTypeMutableBuilder[Self <: ModuleConfigType] (val x: Self) extends AnyVal {
+    extension [Self <: ModuleConfigType](x: Self) {
       
-      @scala.inline
-      def setLifecycleListener(value: Attached): Self = StObject.set(x, "lifecycleListener", value.asInstanceOf[js.Any])
+      inline def setLifecycleListener(value: Attached): Self = StObject.set(x, "lifecycleListener", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<string> */ js.Any
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: OjRouter): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: OjRouter): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     }
   }
   
@@ -124,7 +117,7 @@ object ojrouterMod {
     
     val direction: js.UndefOr[String] = js.native
     
-    def dispose(): js.UndefOr[scala.Nothing] = js.native
+    def dispose(): Unit = js.native
     
     def getChildRouter(name: String): js.UndefOr[Router] = js.native
     
@@ -133,11 +126,11 @@ object ojrouterMod {
     def getState(stateId: String): js.UndefOr[RouterState] = js.native
     
     def go(): js.Promise[HasChanged] = js.native
-    def go(stateIdPath: js.UndefOr[scala.Nothing], options: HistoryUpdate): js.Promise[HasChanged] = js.native
     def go(stateIdPath: String): js.Promise[HasChanged] = js.native
     def go(stateIdPath: String, options: HistoryUpdate): js.Promise[HasChanged] = js.native
     def go(stateIdPath: js.Array[String]): js.Promise[HasChanged] = js.native
     def go(stateIdPath: js.Array[String], options: HistoryUpdate): js.Promise[HasChanged] = js.native
+    def go(stateIdPath: Unit, options: HistoryUpdate): js.Promise[HasChanged] = js.native
     
     val moduleConfig: LifecycleListener = js.native
     
@@ -154,39 +147,37 @@ object ojrouterMod {
     
     val states: js.Array[RouterState] | Null = js.native
     
-    def store(data: js.Object): js.UndefOr[scala.Nothing] = js.native
+    def store(data: js.Object): Unit = js.native
   }
   
-  @js.native
   trait RouterState extends StObject {
     
-    var canEnter: js.Function0[Boolean | js.Promise[Boolean]] = js.native
+    var canEnter: js.Function0[Boolean | js.Promise[Boolean]]
     
-    var canExit: js.Function0[Boolean | js.Promise[Boolean]] = js.native
+    var canExit: js.Function0[Boolean | js.Promise[Boolean]]
     
-    var enter: js.Function0[js.Promise[Unit] | Unit] = js.native
+    var enter: js.Function0[js.Promise[Unit] | Unit]
     
-    var exit: js.Function0[js.Promise[Unit] | Unit] = js.native
+    var exit: js.Function0[js.Promise[Unit] | Unit]
     
     // constructor(id: string, options?: RouterState.ConfigOptions, router?: Router);
-    def go(): js.Promise[HasChanged] = js.native
+    def go(): js.Promise[HasChanged]
     
-    val id: String = js.native
+    val id: String
     
-    def isCurrent(): Boolean = js.native
+    def isCurrent(): Boolean
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var parameters: js.Object = js.native
+    var parameters: js.Object
     
-    var title: String | js.Function0[js.UndefOr[String]] = js.native
+    var title: String | js.Function0[js.UndefOr[String]]
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object RouterState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       canEnter: () => Boolean | js.Promise[Boolean],
       canExit: () => Boolean | js.Promise[Boolean],
       enter: () => js.Promise[Unit] | Unit,
@@ -203,119 +194,88 @@ object ojrouterMod {
     }
     
     // tslint:disable-next-line interface-over-type-literal
-    @js.native
     trait ConfigOptions extends StObject {
       
-      var canEnter: js.UndefOr[js.Function0[Boolean | js.Promise[Boolean]]] = js.native
+      var canEnter: js.UndefOr[js.Function0[Boolean | js.Promise[Boolean]]] = js.undefined
       
-      var canExit: js.UndefOr[js.Function0[Boolean | js.Promise[Boolean]]] = js.native
+      var canExit: js.UndefOr[js.Function0[Boolean | js.Promise[Boolean]]] = js.undefined
       
-      var enter: js.UndefOr[js.Function0[js.Promise[Unit] | Unit]] = js.native
+      var enter: js.UndefOr[js.Function0[js.Promise[Unit] | Unit]] = js.undefined
       
-      var exit: js.UndefOr[js.Function0[js.Promise[Unit] | Unit]] = js.native
+      var exit: js.UndefOr[js.Function0[js.Promise[Unit] | Unit]] = js.undefined
       
-      var isDefault: js.UndefOr[Boolean] = js.native
+      var isDefault: js.UndefOr[Boolean] = js.undefined
       
-      var label: js.UndefOr[String] = js.native
+      var label: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[js.Any] = js.native
+      var value: js.UndefOr[js.Any] = js.undefined
     }
     object ConfigOptions {
       
-      @scala.inline
-      def apply(): ConfigOptions = {
+      inline def apply(): ConfigOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ConfigOptions]
       }
       
-      @scala.inline
-      implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ConfigOptions](x: Self) {
         
-        @scala.inline
-        def setCanEnter(value: () => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "canEnter", js.Any.fromFunction0(value))
+        inline def setCanEnter(value: () => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "canEnter", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setCanEnterUndefined: Self = StObject.set(x, "canEnter", js.undefined)
+        inline def setCanEnterUndefined: Self = StObject.set(x, "canEnter", js.undefined)
         
-        @scala.inline
-        def setCanExit(value: () => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "canExit", js.Any.fromFunction0(value))
+        inline def setCanExit(value: () => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "canExit", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setCanExitUndefined: Self = StObject.set(x, "canExit", js.undefined)
+        inline def setCanExitUndefined: Self = StObject.set(x, "canExit", js.undefined)
         
-        @scala.inline
-        def setEnter(value: () => js.Promise[Unit] | Unit): Self = StObject.set(x, "enter", js.Any.fromFunction0(value))
+        inline def setEnter(value: () => js.Promise[Unit] | Unit): Self = StObject.set(x, "enter", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
+        inline def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
         
-        @scala.inline
-        def setExit(value: () => js.Promise[Unit] | Unit): Self = StObject.set(x, "exit", js.Any.fromFunction0(value))
+        inline def setExit(value: () => js.Promise[Unit] | Unit): Self = StObject.set(x, "exit", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
+        inline def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
         
-        @scala.inline
-        def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
+        inline def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
+        inline def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
         
-        @scala.inline
-        def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+        inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
         
-        @scala.inline
-        def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+        inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       }
     }
     
-    @scala.inline
-    implicit class RouterStateMutableBuilder[Self <: RouterState] (val x: Self) extends AnyVal {
+    extension [Self <: RouterState](x: Self) {
       
-      @scala.inline
-      def setCanEnter(value: () => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "canEnter", js.Any.fromFunction0(value))
+      inline def setCanEnter(value: () => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "canEnter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCanExit(value: () => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "canExit", js.Any.fromFunction0(value))
+      inline def setCanExit(value: () => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "canExit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnter(value: () => js.Promise[Unit] | Unit): Self = StObject.set(x, "enter", js.Any.fromFunction0(value))
+      inline def setEnter(value: () => js.Promise[Unit] | Unit): Self = StObject.set(x, "enter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExit(value: () => js.Promise[Unit] | Unit): Self = StObject.set(x, "exit", js.Any.fromFunction0(value))
+      inline def setExit(value: () => js.Promise[Unit] | Unit): Self = StObject.set(x, "exit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGo(value: () => js.Promise[HasChanged]): Self = StObject.set(x, "go", js.Any.fromFunction0(value))
+      inline def setGo(value: () => js.Promise[HasChanged]): Self = StObject.set(x, "go", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCurrent(value: () => Boolean): Self = StObject.set(x, "isCurrent", js.Any.fromFunction0(value))
+      inline def setIsCurrent(value: () => Boolean): Self = StObject.set(x, "isCurrent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setParameters(value: js.Object): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: js.Object): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String | js.Function0[js.UndefOr[String]]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String | js.Function0[js.UndefOr[String]]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleFunction0(value: () => js.UndefOr[String]): Self = StObject.set(x, "title", js.Any.fromFunction0(value))
+      inline def setTitleFunction0(value: () => js.UndefOr[String]): Self = StObject.set(x, "title", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

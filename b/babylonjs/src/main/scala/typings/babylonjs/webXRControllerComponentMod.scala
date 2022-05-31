@@ -7,14 +7,15 @@ import typings.babylonjs.webXRAbstractMotionControllerMod.IMinimalMotionControll
 import typings.babylonjs.webXRAbstractMotionControllerMod.MotionControllerComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webXRControllerComponentMod {
   
   @JSImport("babylonjs/XR/motionController/webXRControllerComponent", "WebXRControllerComponent")
   @js.native
-  class WebXRControllerComponent protected () extends IDisposable {
+  class WebXRControllerComponent protected ()
+    extends StObject
+       with IDisposable {
     /**
       * Creates a new component for a motion controller.
       * It is created by the motion controller itself
@@ -54,7 +55,7 @@ object webXRControllerComponentMod {
       * the type of the component
       */
     `type`: MotionControllerComponentType,
-      _buttonIndex: js.UndefOr[scala.Nothing],
+      _buttonIndex: Double,
       _axesIndices: js.Array[Double]
     ) = this()
     def this(
@@ -66,25 +67,25 @@ object webXRControllerComponentMod {
       * the type of the component
       */
     `type`: MotionControllerComponentType,
-      _buttonIndex: Double,
+      _buttonIndex: Unit,
       _axesIndices: js.Array[Double]
     ) = this()
     
-    var _axes: js.Any = js.native
+    /* private */ var _axes: js.Any = js.native
     
-    var _axesIndices: js.Any = js.native
+    /* private */ var _axesIndices: js.Any = js.native
     
-    var _buttonIndex: js.Any = js.native
+    /* private */ var _buttonIndex: js.Any = js.native
     
-    var _changes: js.Any = js.native
+    /* private */ var _changes: js.Any = js.native
     
-    var _currentValue: js.Any = js.native
+    /* private */ var _currentValue: js.Any = js.native
     
-    var _hasChanges: js.Any = js.native
+    /* private */ var _hasChanges: js.Any = js.native
     
-    var _pressed: js.Any = js.native
+    /* private */ var _pressed: js.Any = js.native
     
-    var _touched: js.Any = js.native
+    /* private */ var _touched: js.Any = js.native
     
     /**
       * The current axes data. If this component has no axes it will still return an object { x: 0, y: 0 }
@@ -95,6 +96,12 @@ object webXRControllerComponentMod {
       * Get the changes. Elements will be populated only if they changed with their previous and current value
       */
     def changes: IWebXRMotionControllerComponentChanges = js.native
+    
+    /**
+      * Releases all held resources
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * Return whether or not the component changed the last frame
@@ -169,8 +176,7 @@ object webXRControllerComponentMod {
     @JSImport("babylonjs/XR/motionController/webXRControllerComponent", "WebXRControllerComponent.BUTTON_TYPE")
     @js.native
     def BUTTON_TYPE: MotionControllerComponentType = js.native
-    @scala.inline
-    def BUTTON_TYPE_=(x: MotionControllerComponentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BUTTON_TYPE")(x.asInstanceOf[js.Any])
+    inline def BUTTON_TYPE_=(x: MotionControllerComponentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BUTTON_TYPE")(x.asInstanceOf[js.Any])
     
     /**
       * squeeze component type
@@ -178,8 +184,7 @@ object webXRControllerComponentMod {
     @JSImport("babylonjs/XR/motionController/webXRControllerComponent", "WebXRControllerComponent.SQUEEZE_TYPE")
     @js.native
     def SQUEEZE_TYPE: MotionControllerComponentType = js.native
-    @scala.inline
-    def SQUEEZE_TYPE_=(x: MotionControllerComponentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SQUEEZE_TYPE")(x.asInstanceOf[js.Any])
+    inline def SQUEEZE_TYPE_=(x: MotionControllerComponentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SQUEEZE_TYPE")(x.asInstanceOf[js.Any])
     
     /**
       * Thumbstick component type
@@ -187,8 +192,7 @@ object webXRControllerComponentMod {
     @JSImport("babylonjs/XR/motionController/webXRControllerComponent", "WebXRControllerComponent.THUMBSTICK_TYPE")
     @js.native
     def THUMBSTICK_TYPE: MotionControllerComponentType = js.native
-    @scala.inline
-    def THUMBSTICK_TYPE_=(x: MotionControllerComponentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("THUMBSTICK_TYPE")(x.asInstanceOf[js.Any])
+    inline def THUMBSTICK_TYPE_=(x: MotionControllerComponentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("THUMBSTICK_TYPE")(x.asInstanceOf[js.Any])
     
     /**
       * Touchpad component type
@@ -196,8 +200,7 @@ object webXRControllerComponentMod {
     @JSImport("babylonjs/XR/motionController/webXRControllerComponent", "WebXRControllerComponent.TOUCHPAD_TYPE")
     @js.native
     def TOUCHPAD_TYPE: MotionControllerComponentType = js.native
-    @scala.inline
-    def TOUCHPAD_TYPE_=(x: MotionControllerComponentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOUCHPAD_TYPE")(x.asInstanceOf[js.Any])
+    inline def TOUCHPAD_TYPE_=(x: MotionControllerComponentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOUCHPAD_TYPE")(x.asInstanceOf[js.Any])
     
     /**
       * trigger component type
@@ -205,131 +208,109 @@ object webXRControllerComponentMod {
     @JSImport("babylonjs/XR/motionController/webXRControllerComponent", "WebXRControllerComponent.TRIGGER_TYPE")
     @js.native
     def TRIGGER_TYPE: MotionControllerComponentType = js.native
-    @scala.inline
-    def TRIGGER_TYPE_=(x: MotionControllerComponentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRIGGER_TYPE")(x.asInstanceOf[js.Any])
+    inline def TRIGGER_TYPE_=(x: MotionControllerComponentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRIGGER_TYPE")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IWebXRMotionControllerAxesValue extends StObject {
     
     /**
       * The value of the x axis
       */
-    var x: Double = js.native
+    var x: Double
     
     /**
       * The value of the y-axis
       */
-    var y: Double = js.native
+    var y: Double
   }
   object IWebXRMotionControllerAxesValue {
     
-    @scala.inline
-    def apply(x: Double, y: Double): IWebXRMotionControllerAxesValue = {
+    inline def apply(x: Double, y: Double): IWebXRMotionControllerAxesValue = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[IWebXRMotionControllerAxesValue]
     }
     
-    @scala.inline
-    implicit class IWebXRMotionControllerAxesValueMutableBuilder[Self <: IWebXRMotionControllerAxesValue] (val x: Self) extends AnyVal {
+    extension [Self <: IWebXRMotionControllerAxesValue](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait IWebXRMotionControllerComponentChanges extends StObject {
     
     /**
       * will be populated with previous and current values if axes changed
       */
-    var axes: js.UndefOr[IWebXRMotionControllerComponentChangesValues[IWebXRMotionControllerAxesValue]] = js.native
+    var axes: js.UndefOr[IWebXRMotionControllerComponentChangesValues[IWebXRMotionControllerAxesValue]] = js.undefined
     
     /**
       * will be populated with previous and current values if pressed changed
       */
-    var pressed: js.UndefOr[IWebXRMotionControllerComponentChangesValues[Boolean]] = js.native
+    var pressed: js.UndefOr[IWebXRMotionControllerComponentChangesValues[Boolean]] = js.undefined
     
     /**
       * will be populated with previous and current values if touched changed
       */
-    var touched: js.UndefOr[IWebXRMotionControllerComponentChangesValues[Boolean]] = js.native
+    var touched: js.UndefOr[IWebXRMotionControllerComponentChangesValues[Boolean]] = js.undefined
     
     /**
       * will be populated with previous and current values if value changed
       */
-    var value: js.UndefOr[IWebXRMotionControllerComponentChangesValues[Double]] = js.native
+    var value: js.UndefOr[IWebXRMotionControllerComponentChangesValues[Double]] = js.undefined
   }
   object IWebXRMotionControllerComponentChanges {
     
-    @scala.inline
-    def apply(): IWebXRMotionControllerComponentChanges = {
+    inline def apply(): IWebXRMotionControllerComponentChanges = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IWebXRMotionControllerComponentChanges]
     }
     
-    @scala.inline
-    implicit class IWebXRMotionControllerComponentChangesMutableBuilder[Self <: IWebXRMotionControllerComponentChanges] (val x: Self) extends AnyVal {
+    extension [Self <: IWebXRMotionControllerComponentChanges](x: Self) {
       
-      @scala.inline
-      def setAxes(value: IWebXRMotionControllerComponentChangesValues[IWebXRMotionControllerAxesValue]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
+      inline def setAxes(value: IWebXRMotionControllerComponentChangesValues[IWebXRMotionControllerAxesValue]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
+      inline def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
       
-      @scala.inline
-      def setPressed(value: IWebXRMotionControllerComponentChangesValues[Boolean]): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
+      inline def setPressed(value: IWebXRMotionControllerComponentChangesValues[Boolean]): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPressedUndefined: Self = StObject.set(x, "pressed", js.undefined)
+      inline def setPressedUndefined: Self = StObject.set(x, "pressed", js.undefined)
       
-      @scala.inline
-      def setTouched(value: IWebXRMotionControllerComponentChangesValues[Boolean]): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
+      inline def setTouched(value: IWebXRMotionControllerComponentChangesValues[Boolean]): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchedUndefined: Self = StObject.set(x, "touched", js.undefined)
+      inline def setTouchedUndefined: Self = StObject.set(x, "touched", js.undefined)
       
-      @scala.inline
-      def setValue(value: IWebXRMotionControllerComponentChangesValues[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: IWebXRMotionControllerComponentChangesValues[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
-  @js.native
   trait IWebXRMotionControllerComponentChangesValues[T] extends StObject {
     
     /**
       * current (this frame) value
       */
-    var current: T = js.native
+    var current: T
     
     /**
       * previous (last change) value
       */
-    var previous: T = js.native
+    var previous: T
   }
   object IWebXRMotionControllerComponentChangesValues {
     
-    @scala.inline
-    def apply[T](current: T, previous: T): IWebXRMotionControllerComponentChangesValues[T] = {
+    inline def apply[T](current: T, previous: T): IWebXRMotionControllerComponentChangesValues[T] = {
       val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], previous = previous.asInstanceOf[js.Any])
       __obj.asInstanceOf[IWebXRMotionControllerComponentChangesValues[T]]
     }
     
-    @scala.inline
-    implicit class IWebXRMotionControllerComponentChangesValuesMutableBuilder[Self <: IWebXRMotionControllerComponentChangesValues[_], T] (val x: Self with IWebXRMotionControllerComponentChangesValues[T]) extends AnyVal {
+    extension [Self <: IWebXRMotionControllerComponentChangesValues[?], T](x: Self & IWebXRMotionControllerComponentChangesValues[T]) {
       
-      @scala.inline
-      def setCurrent(value: T): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: T): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevious(value: T): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
+      inline def setPrevious(value: T): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
     }
   }
 }

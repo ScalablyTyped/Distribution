@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.PostProcessRenderEffect")
 @js.native
 class PostProcessRenderEffect protected ()
-  extends typings.babylonjs.BABYLON.PostProcessRenderEffect {
+  extends StObject
+     with typings.babylonjs.BABYLON.PostProcessRenderEffect {
   /**
     * Instantiates a post process render effect.
     * A post process can be used to apply a shader to a texture after it is rendered.

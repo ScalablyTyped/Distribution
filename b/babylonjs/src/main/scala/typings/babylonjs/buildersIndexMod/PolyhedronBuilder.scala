@@ -6,7 +6,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Meshes/Builders/index", "PolyhedronBuilder")
@@ -15,6 +14,10 @@ class PolyhedronBuilder ()
   extends typings.babylonjs.polyhedronBuilderMod.PolyhedronBuilder
 /* static members */
 object PolyhedronBuilder {
+  
+  @JSImport("babylonjs/Meshes/Builders/index", "PolyhedronBuilder")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a polyhedron mesh
@@ -35,10 +38,6 @@ object PolyhedronBuilder {
     * @returns the polyhedron mesh
     * @see https://doc.babylonjs.com/how_to/polyhedra_shapes
     */
-  @JSImport("babylonjs/Meshes/Builders/index", "PolyhedronBuilder.CreatePolyhedron")
-  @js.native
-  def CreatePolyhedron(name: String, options: FaceUV): Mesh = js.native
-  @JSImport("babylonjs/Meshes/Builders/index", "PolyhedronBuilder.CreatePolyhedron")
-  @js.native
-  def CreatePolyhedron(name: String, options: FaceUV, scene: Nullable[Scene]): Mesh = js.native
+  inline def CreatePolyhedron(name: String, options: FaceUV): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+  inline def CreatePolyhedron(name: String, options: FaceUV, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
 }

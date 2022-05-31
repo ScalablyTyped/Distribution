@@ -1,14 +1,15 @@
 package typings.babylonjs.global.BABYLON
 
+import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.RefractionTexture")
 @js.native
 class RefractionTexture protected ()
-  extends typings.babylonjs.BABYLON.RefractionTexture {
+  extends StObject
+     with typings.babylonjs.BABYLON.RefractionTexture {
   /**
     * Creates a refraction texture used by refraction channel of the standard material.
     * It is like a mirror but to see through a material.
@@ -20,4 +21,10 @@ class RefractionTexture protected ()
     */
   def this(name: String, size: Double, scene: typings.babylonjs.BABYLON.Scene) = this()
   def this(name: String, size: Double, scene: typings.babylonjs.BABYLON.Scene, generateMipMaps: Boolean) = this()
+  
+  /**
+    * Array of animations
+    */
+  /* CompleteClass */
+  var animations: Nullable[js.Array[typings.babylonjs.BABYLON.Animation]] = js.native
 }

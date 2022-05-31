@@ -4,7 +4,6 @@ import typings.materialLineRipple.anon.PartialMDCLineRippleAdapt
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lineRipple {
@@ -13,7 +12,7 @@ object lineRipple {
   @js.native
   class MDCLineRipple protected ()
     extends typings.materialLineRipple.mod.MDCLineRipple {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialLineRipple.foundationMod.MDCLineRippleFoundation,
@@ -23,9 +22,11 @@ object lineRipple {
   /* static members */
   object MDCLineRipple {
     
-    @JSImport("material-components-web", "lineRipple.MDCLineRipple.attachTo")
+    @JSImport("material-components-web", "lineRipple.MDCLineRipple")
     @js.native
-    def attachTo(root: Element): typings.materialLineRipple.componentMod.MDCLineRipple = js.native
+    val ^ : js.Any = js.native
+    
+    inline def attachTo(root: Element): typings.materialLineRipple.componentMod.MDCLineRipple = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialLineRipple.componentMod.MDCLineRipple]
   }
   
   @JSImport("material-components-web", "lineRipple.MDCLineRippleFoundation")
@@ -66,13 +67,11 @@ object lineRipple {
     @JSImport("material-components-web", "lineRipple.cssClasses.LINE_RIPPLE_ACTIVE")
     @js.native
     def LINE_RIPPLE_ACTIVE: String = js.native
-    @scala.inline
-    def LINE_RIPPLE_ACTIVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINE_RIPPLE_ACTIVE")(x.asInstanceOf[js.Any])
+    inline def LINE_RIPPLE_ACTIVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINE_RIPPLE_ACTIVE")(x.asInstanceOf[js.Any])
     
     @JSImport("material-components-web", "lineRipple.cssClasses.LINE_RIPPLE_DEACTIVATING")
     @js.native
     def LINE_RIPPLE_DEACTIVATING: String = js.native
-    @scala.inline
-    def LINE_RIPPLE_DEACTIVATING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINE_RIPPLE_DEACTIVATING")(x.asInstanceOf[js.Any])
+    inline def LINE_RIPPLE_DEACTIVATING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINE_RIPPLE_DEACTIVATING")(x.asInstanceOf[js.Any])
   }
 }

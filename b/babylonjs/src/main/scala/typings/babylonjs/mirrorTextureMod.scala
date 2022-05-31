@@ -7,7 +7,6 @@ import typings.babylonjs.renderTargetTextureMod.RenderTargetTexture
 import typings.babylonjs.sceneMod.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mirrorTextureMod {
@@ -36,54 +35,12 @@ object mirrorTextureMod {
     def this(name: String, size: Double, scene: Scene, generateMipMaps: Boolean) = this()
     def this(name: String, size: Ratio, scene: Scene, generateMipMaps: Boolean) = this()
     def this(name: String, size: Width, scene: Scene, generateMipMaps: Boolean) = this()
-    def this(
-      name: String,
-      size: Double,
-      scene: Scene,
-      generateMipMaps: js.UndefOr[scala.Nothing],
-      `type`: Double
-    ) = this()
     def this(name: String, size: Double, scene: Scene, generateMipMaps: Boolean, `type`: Double) = this()
-    def this(
-      name: String,
-      size: Ratio,
-      scene: Scene,
-      generateMipMaps: js.UndefOr[scala.Nothing],
-      `type`: Double
-    ) = this()
+    def this(name: String, size: Double, scene: Scene, generateMipMaps: Unit, `type`: Double) = this()
     def this(name: String, size: Ratio, scene: Scene, generateMipMaps: Boolean, `type`: Double) = this()
-    def this(
-      name: String,
-      size: Width,
-      scene: Scene,
-      generateMipMaps: js.UndefOr[scala.Nothing],
-      `type`: Double
-    ) = this()
+    def this(name: String, size: Ratio, scene: Scene, generateMipMaps: Unit, `type`: Double) = this()
     def this(name: String, size: Width, scene: Scene, generateMipMaps: Boolean, `type`: Double) = this()
-    def this(
-      name: String,
-      size: Double,
-      scene: Scene,
-      generateMipMaps: js.UndefOr[scala.Nothing],
-      `type`: js.UndefOr[scala.Nothing],
-      samplingMode: Double
-    ) = this()
-    def this(
-      name: String,
-      size: Double,
-      scene: Scene,
-      generateMipMaps: js.UndefOr[scala.Nothing],
-      `type`: Double,
-      samplingMode: Double
-    ) = this()
-    def this(
-      name: String,
-      size: Double,
-      scene: Scene,
-      generateMipMaps: Boolean,
-      `type`: js.UndefOr[scala.Nothing],
-      samplingMode: Double
-    ) = this()
+    def this(name: String, size: Width, scene: Scene, generateMipMaps: Unit, `type`: Double) = this()
     def this(
       name: String,
       size: Double,
@@ -94,26 +51,26 @@ object mirrorTextureMod {
     ) = this()
     def this(
       name: String,
-      size: Ratio,
+      size: Double,
       scene: Scene,
-      generateMipMaps: js.UndefOr[scala.Nothing],
-      `type`: js.UndefOr[scala.Nothing],
+      generateMipMaps: Boolean,
+      `type`: Unit,
       samplingMode: Double
     ) = this()
     def this(
       name: String,
-      size: Ratio,
+      size: Double,
       scene: Scene,
-      generateMipMaps: js.UndefOr[scala.Nothing],
+      generateMipMaps: Unit,
       `type`: Double,
       samplingMode: Double
     ) = this()
     def this(
       name: String,
-      size: Ratio,
+      size: Double,
       scene: Scene,
-      generateMipMaps: Boolean,
-      `type`: js.UndefOr[scala.Nothing],
+      generateMipMaps: Unit,
+      `type`: Unit,
       samplingMode: Double
     ) = this()
     def this(
@@ -126,28 +83,21 @@ object mirrorTextureMod {
     ) = this()
     def this(
       name: String,
-      size: Width,
+      size: Ratio,
       scene: Scene,
-      generateMipMaps: js.UndefOr[scala.Nothing],
-      `type`: js.UndefOr[scala.Nothing],
+      generateMipMaps: Boolean,
+      `type`: Unit,
       samplingMode: Double
     ) = this()
     def this(
       name: String,
-      size: Width,
+      size: Ratio,
       scene: Scene,
-      generateMipMaps: js.UndefOr[scala.Nothing],
+      generateMipMaps: Unit,
       `type`: Double,
       samplingMode: Double
     ) = this()
-    def this(
-      name: String,
-      size: Width,
-      scene: Scene,
-      generateMipMaps: Boolean,
-      `type`: js.UndefOr[scala.Nothing],
-      samplingMode: Double
-    ) = this()
+    def this(name: String, size: Ratio, scene: Scene, generateMipMaps: Unit, `type`: Unit, samplingMode: Double) = this()
     def this(
       name: String,
       size: Width,
@@ -158,67 +108,21 @@ object mirrorTextureMod {
     ) = this()
     def this(
       name: String,
-      size: Double,
-      scene: Scene,
-      generateMipMaps: js.UndefOr[scala.Nothing],
-      `type`: js.UndefOr[scala.Nothing],
-      samplingMode: js.UndefOr[scala.Nothing],
-      generateDepthBuffer: Boolean
-    ) = this()
-    def this(
-      name: String,
-      size: Double,
-      scene: Scene,
-      generateMipMaps: js.UndefOr[scala.Nothing],
-      `type`: js.UndefOr[scala.Nothing],
-      samplingMode: Double,
-      generateDepthBuffer: Boolean
-    ) = this()
-    def this(
-      name: String,
-      size: Double,
-      scene: Scene,
-      generateMipMaps: js.UndefOr[scala.Nothing],
-      `type`: Double,
-      samplingMode: js.UndefOr[scala.Nothing],
-      generateDepthBuffer: Boolean
-    ) = this()
-    def this(
-      name: String,
-      size: Double,
-      scene: Scene,
-      generateMipMaps: js.UndefOr[scala.Nothing],
-      `type`: Double,
-      samplingMode: Double,
-      generateDepthBuffer: Boolean
-    ) = this()
-    def this(
-      name: String,
-      size: Double,
+      size: Width,
       scene: Scene,
       generateMipMaps: Boolean,
-      `type`: js.UndefOr[scala.Nothing],
-      samplingMode: js.UndefOr[scala.Nothing],
-      generateDepthBuffer: Boolean
+      `type`: Unit,
+      samplingMode: Double
     ) = this()
     def this(
       name: String,
-      size: Double,
+      size: Width,
       scene: Scene,
-      generateMipMaps: Boolean,
-      `type`: js.UndefOr[scala.Nothing],
-      samplingMode: Double,
-      generateDepthBuffer: Boolean
-    ) = this()
-    def this(
-      name: String,
-      size: Double,
-      scene: Scene,
-      generateMipMaps: Boolean,
+      generateMipMaps: Unit,
       `type`: Double,
-      samplingMode: js.UndefOr[scala.Nothing],
-      generateDepthBuffer: Boolean
+      samplingMode: Double
     ) = this()
+    def this(name: String, size: Width, scene: Scene, generateMipMaps: Unit, `type`: Unit, samplingMode: Double) = this()
     def this(
       name: String,
       size: Double,
@@ -230,65 +134,65 @@ object mirrorTextureMod {
     ) = this()
     def this(
       name: String,
-      size: Ratio,
+      size: Double,
       scene: Scene,
-      generateMipMaps: js.UndefOr[scala.Nothing],
-      `type`: js.UndefOr[scala.Nothing],
-      samplingMode: js.UndefOr[scala.Nothing],
+      generateMipMaps: Boolean,
+      `type`: Double,
+      samplingMode: Unit,
       generateDepthBuffer: Boolean
     ) = this()
     def this(
       name: String,
-      size: Ratio,
+      size: Double,
       scene: Scene,
-      generateMipMaps: js.UndefOr[scala.Nothing],
-      `type`: js.UndefOr[scala.Nothing],
+      generateMipMaps: Boolean,
+      `type`: Unit,
       samplingMode: Double,
       generateDepthBuffer: Boolean
     ) = this()
     def this(
       name: String,
-      size: Ratio,
+      size: Double,
       scene: Scene,
-      generateMipMaps: js.UndefOr[scala.Nothing],
-      `type`: Double,
-      samplingMode: js.UndefOr[scala.Nothing],
+      generateMipMaps: Boolean,
+      `type`: Unit,
+      samplingMode: Unit,
       generateDepthBuffer: Boolean
     ) = this()
     def this(
       name: String,
-      size: Ratio,
+      size: Double,
       scene: Scene,
-      generateMipMaps: js.UndefOr[scala.Nothing],
+      generateMipMaps: Unit,
       `type`: Double,
       samplingMode: Double,
       generateDepthBuffer: Boolean
     ) = this()
     def this(
       name: String,
-      size: Ratio,
+      size: Double,
       scene: Scene,
-      generateMipMaps: Boolean,
-      `type`: js.UndefOr[scala.Nothing],
-      samplingMode: js.UndefOr[scala.Nothing],
+      generateMipMaps: Unit,
+      `type`: Double,
+      samplingMode: Unit,
       generateDepthBuffer: Boolean
     ) = this()
     def this(
       name: String,
-      size: Ratio,
+      size: Double,
       scene: Scene,
-      generateMipMaps: Boolean,
-      `type`: js.UndefOr[scala.Nothing],
+      generateMipMaps: Unit,
+      `type`: Unit,
       samplingMode: Double,
       generateDepthBuffer: Boolean
     ) = this()
     def this(
       name: String,
-      size: Ratio,
+      size: Double,
       scene: Scene,
-      generateMipMaps: Boolean,
-      `type`: Double,
-      samplingMode: js.UndefOr[scala.Nothing],
+      generateMipMaps: Unit,
+      `type`: Unit,
+      samplingMode: Unit,
       generateDepthBuffer: Boolean
     ) = this()
     def this(
@@ -302,36 +206,72 @@ object mirrorTextureMod {
     ) = this()
     def this(
       name: String,
-      size: Width,
+      size: Ratio,
       scene: Scene,
-      generateMipMaps: js.UndefOr[scala.Nothing],
-      `type`: js.UndefOr[scala.Nothing],
-      samplingMode: js.UndefOr[scala.Nothing],
+      generateMipMaps: Boolean,
+      `type`: Double,
+      samplingMode: Unit,
       generateDepthBuffer: Boolean
     ) = this()
     def this(
       name: String,
-      size: Width,
+      size: Ratio,
       scene: Scene,
-      generateMipMaps: js.UndefOr[scala.Nothing],
-      `type`: js.UndefOr[scala.Nothing],
+      generateMipMaps: Boolean,
+      `type`: Unit,
       samplingMode: Double,
       generateDepthBuffer: Boolean
     ) = this()
     def this(
       name: String,
-      size: Width,
+      size: Ratio,
       scene: Scene,
-      generateMipMaps: js.UndefOr[scala.Nothing],
+      generateMipMaps: Boolean,
+      `type`: Unit,
+      samplingMode: Unit,
+      generateDepthBuffer: Boolean
+    ) = this()
+    def this(
+      name: String,
+      size: Ratio,
+      scene: Scene,
+      generateMipMaps: Unit,
       `type`: Double,
-      samplingMode: js.UndefOr[scala.Nothing],
+      samplingMode: Double,
+      generateDepthBuffer: Boolean
+    ) = this()
+    def this(
+      name: String,
+      size: Ratio,
+      scene: Scene,
+      generateMipMaps: Unit,
+      `type`: Double,
+      samplingMode: Unit,
+      generateDepthBuffer: Boolean
+    ) = this()
+    def this(
+      name: String,
+      size: Ratio,
+      scene: Scene,
+      generateMipMaps: Unit,
+      `type`: Unit,
+      samplingMode: Double,
+      generateDepthBuffer: Boolean
+    ) = this()
+    def this(
+      name: String,
+      size: Ratio,
+      scene: Scene,
+      generateMipMaps: Unit,
+      `type`: Unit,
+      samplingMode: Unit,
       generateDepthBuffer: Boolean
     ) = this()
     def this(
       name: String,
       size: Width,
       scene: Scene,
-      generateMipMaps: js.UndefOr[scala.Nothing],
+      generateMipMaps: Boolean,
       `type`: Double,
       samplingMode: Double,
       generateDepthBuffer: Boolean
@@ -341,8 +281,8 @@ object mirrorTextureMod {
       size: Width,
       scene: Scene,
       generateMipMaps: Boolean,
-      `type`: js.UndefOr[scala.Nothing],
-      samplingMode: js.UndefOr[scala.Nothing],
+      `type`: Double,
+      samplingMode: Unit,
       generateDepthBuffer: Boolean
     ) = this()
     def this(
@@ -350,7 +290,7 @@ object mirrorTextureMod {
       size: Width,
       scene: Scene,
       generateMipMaps: Boolean,
-      `type`: js.UndefOr[scala.Nothing],
+      `type`: Unit,
       samplingMode: Double,
       generateDepthBuffer: Boolean
     ) = this()
@@ -359,45 +299,72 @@ object mirrorTextureMod {
       size: Width,
       scene: Scene,
       generateMipMaps: Boolean,
-      `type`: Double,
-      samplingMode: js.UndefOr[scala.Nothing],
+      `type`: Unit,
+      samplingMode: Unit,
       generateDepthBuffer: Boolean
     ) = this()
     def this(
       name: String,
       size: Width,
       scene: Scene,
-      generateMipMaps: Boolean,
+      generateMipMaps: Unit,
       `type`: Double,
       samplingMode: Double,
       generateDepthBuffer: Boolean
     ) = this()
+    def this(
+      name: String,
+      size: Width,
+      scene: Scene,
+      generateMipMaps: Unit,
+      `type`: Double,
+      samplingMode: Unit,
+      generateDepthBuffer: Boolean
+    ) = this()
+    def this(
+      name: String,
+      size: Width,
+      scene: Scene,
+      generateMipMaps: Unit,
+      `type`: Unit,
+      samplingMode: Double,
+      generateDepthBuffer: Boolean
+    ) = this()
+    def this(
+      name: String,
+      size: Width,
+      scene: Scene,
+      generateMipMaps: Unit,
+      `type`: Unit,
+      samplingMode: Unit,
+      generateDepthBuffer: Boolean
+    ) = this()
     
-    var _adaptiveBlurKernel: js.Any = js.native
+    /* private */ var _adaptiveBlurKernel: js.Any = js.native
     
-    var _autoComputeBlurKernel: js.Any = js.native
+    /* private */ var _autoComputeBlurKernel: js.Any = js.native
     
-    var _blurKernelX: js.Any = js.native
+    /* private */ var _blurKernelX: js.Any = js.native
     
-    var _blurKernelY: js.Any = js.native
+    /* private */ var _blurKernelY: js.Any = js.native
     
-    var _blurRatio: js.Any = js.native
+    /* private */ var _blurRatio: js.Any = js.native
     
-    var _blurX: js.Any = js.native
+    /* private */ var _blurX: js.Any = js.native
     
-    var _blurY: js.Any = js.native
+    /* private */ var _blurY: js.Any = js.native
     
-    var _imageProcessingConfigChangeObserver: js.Any = js.native
+    /* private */ var _imageProcessingConfigChangeObserver: js.Any = js.native
     
-    var _mirrorMatrix: js.Any = js.native
+    /* private */ var _mirrorMatrix: js.Any = js.native
     
-    var _preparePostProcesses: js.Any = js.native
+    /* private */ var _preparePostProcesses: js.Any = js.native
     
-    var _savedViewMatrix: js.Any = js.native
+    /* private */ var _savedViewMatrix: js.Any = js.native
     
-    var _transformMatrix: js.Any = js.native
+    /* private */ var _transformMatrix: js.Any = js.native
     
-    var _updateGammaSpace: js.Any = js.native
+    /* private */ var _updateGammaSpace: js.Any = js.native
     
     /**
       * Define the adaptive blur kernel used to blur the reflection if needed.
@@ -438,6 +405,6 @@ object mirrorTextureMod {
       */
     var mirrorPlane: Plane = js.native
     
-    var scene: js.Any = js.native
+    /* private */ var scene: js.Any = js.native
   }
 }

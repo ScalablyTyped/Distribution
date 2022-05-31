@@ -17,14 +17,15 @@ import typings.babylonjs.typesMod.Nullable
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object skeletonMod {
   
   @JSImport("babylonjs/Bones/skeleton", "Skeleton")
   @js.native
-  class Skeleton protected () extends IAnimatable {
+  class Skeleton protected ()
+    extends StObject
+       with IAnimatable {
     /**
       * Creates a new skeleton
       * @param name defines the skeleton name
@@ -39,54 +40,54 @@ object skeletonMod {
       scene: Scene
     ) = this()
     
-    var _animatables: js.Any = js.native
+    /* private */ var _animatables: js.Any = js.native
     
-    var _animationPropertiesOverride: js.Any = js.native
+    /* private */ var _animationPropertiesOverride: js.Any = js.native
     
-    var _canUseTextureForBones: js.Any = js.native
+    /* private */ var _canUseTextureForBones: js.Any = js.native
     
-    var _computeTransformMatrices: js.Any = js.native
+    /* private */ var _computeTransformMatrices: js.Any = js.native
     
-    var _getHighestAnimationFrame: js.Any = js.native
+    /* private */ var _getHighestAnimationFrame: js.Any = js.native
     
     /** @hidden */
     var _hasWaitingData: Nullable[Boolean] = js.native
     
-    var _identity: js.Any = js.native
+    /* private */ var _identity: js.Any = js.native
     
-    var _isDirty: js.Any = js.native
+    /* private */ var _isDirty: js.Any = js.native
     
-    var _lastAbsoluteTransformsUpdateId: js.Any = js.native
+    /* private */ var _lastAbsoluteTransformsUpdateId: js.Any = js.native
     
     /** @hidden */
     def _markAsDirty(): Unit = js.native
     
-    var _meshesWithPoseMatrix: js.Any = js.native
+    /* private */ var _meshesWithPoseMatrix: js.Any = js.native
     
     /** @hidden */
     var _numBonesWithLinkedTransformNode: Double = js.native
     
-    var _ranges: js.Any = js.native
+    /* private */ var _ranges: js.Any = js.native
     
     /** @hidden */
     def _registerMeshWithPoseMatrix(mesh: AbstractMesh): Unit = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
-    var _sortBones: js.Any = js.native
+    /* private */ var _sortBones: js.Any = js.native
     
-    var _synchronizedWithMesh: js.Any = js.native
+    /* private */ var _synchronizedWithMesh: js.Any = js.native
     
-    var _transformMatrices: js.Any = js.native
+    /* private */ var _transformMatrices: js.Any = js.native
     
-    var _transformMatrixTexture: js.Any = js.native
+    /* private */ var _transformMatrixTexture: js.Any = js.native
     
-    var _uniqueId: js.Any = js.native
+    /* private */ var _uniqueId: js.Any = js.native
     
     /** @hidden */
     def _unregisterMeshWithPoseMatrix(mesh: AbstractMesh): Unit = js.native
     
-    var _useTextureToStoreBoneMatrices: js.Any = js.native
+    /* private */ var _useTextureToStoreBoneMatrices: js.Any = js.native
     
     /** @hidden */
     var _waitingOverrideMeshId: Nullable[String] = js.native
@@ -97,6 +98,11 @@ object skeletonMod {
     def animationPropertiesOverride: Nullable[AnimationPropertiesOverride] = js.native
     def animationPropertiesOverride_=(value: Nullable[AnimationPropertiesOverride]): Unit = js.native
     
+    /**
+      * Array of animations
+      */
+    /* CompleteClass */
+    var animations: Nullable[js.Array[Animation]] = js.native
     /**
       * Gets the list of animations attached to this skeleton
       */
@@ -112,28 +118,13 @@ object skeletonMod {
       * @returns a new animatable
       */
     def beginAnimation(name: String): Nullable[Animatable] = js.native
-    def beginAnimation(
-      name: String,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.Function0[Unit]
-    ): Nullable[Animatable] = js.native
-    def beginAnimation(name: String, loop: js.UndefOr[scala.Nothing], speedRatio: Double): Nullable[Animatable] = js.native
-    def beginAnimation(
-      name: String,
-      loop: js.UndefOr[scala.Nothing],
-      speedRatio: Double,
-      onAnimationEnd: js.Function0[Unit]
-    ): Nullable[Animatable] = js.native
     def beginAnimation(name: String, loop: Boolean): Nullable[Animatable] = js.native
-    def beginAnimation(
-      name: String,
-      loop: Boolean,
-      speedRatio: js.UndefOr[scala.Nothing],
-      onAnimationEnd: js.Function0[Unit]
-    ): Nullable[Animatable] = js.native
     def beginAnimation(name: String, loop: Boolean, speedRatio: Double): Nullable[Animatable] = js.native
     def beginAnimation(name: String, loop: Boolean, speedRatio: Double, onAnimationEnd: js.Function0[Unit]): Nullable[Animatable] = js.native
+    def beginAnimation(name: String, loop: Boolean, speedRatio: Unit, onAnimationEnd: js.Function0[Unit]): Nullable[Animatable] = js.native
+    def beginAnimation(name: String, loop: Unit, speedRatio: Double): Nullable[Animatable] = js.native
+    def beginAnimation(name: String, loop: Unit, speedRatio: Double, onAnimationEnd: js.Function0[Unit]): Nullable[Animatable] = js.native
+    def beginAnimation(name: String, loop: Unit, speedRatio: Unit, onAnimationEnd: js.Function0[Unit]): Nullable[Animatable] = js.native
     
     /**
       * Defines the list of child bones
@@ -345,9 +336,10 @@ object skeletonMod {
   /* static members */
   object Skeleton {
     
-    @JSImport("babylonjs/Bones/skeleton", "Skeleton.MakeAnimationAdditive")
+    @JSImport("babylonjs/Bones/skeleton", "Skeleton")
     @js.native
-    def MakeAnimationAdditive(skeleton: Skeleton, referenceFrame: js.UndefOr[scala.Nothing], range: String): Nullable[Skeleton] = js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Convert the keyframes for a range of animation on a skeleton to be relative to a given reference frame.
       * @param skeleton defines the Skeleton containing the animation range to convert
@@ -355,9 +347,8 @@ object skeletonMod {
       * @param range defines the name of the AnimationRange belonging to the Skeleton to convert
       * @returns the original skeleton
       */
-    @JSImport("babylonjs/Bones/skeleton", "Skeleton.MakeAnimationAdditive")
-    @js.native
-    def MakeAnimationAdditive(skeleton: Skeleton, referenceFrame: Double, range: String): Nullable[Skeleton] = js.native
+    inline def MakeAnimationAdditive(skeleton: Skeleton, referenceFrame: Double, range: String): Nullable[Skeleton] = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(skeleton.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Nullable[Skeleton]]
+    inline def MakeAnimationAdditive(skeleton: Skeleton, referenceFrame: Unit, range: String): Nullable[Skeleton] = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(skeleton.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Nullable[Skeleton]]
     
     /**
       * Creates a new skeleton from serialized data
@@ -365,8 +356,6 @@ object skeletonMod {
       * @param scene defines the hosting scene
       * @returns a new skeleton
       */
-    @JSImport("babylonjs/Bones/skeleton", "Skeleton.Parse")
-    @js.native
-    def Parse(parsedSkeleton: js.Any, scene: Scene): Skeleton = js.native
+    inline def Parse(parsedSkeleton: js.Any, scene: Scene): Skeleton = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSkeleton.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Skeleton]
   }
 }

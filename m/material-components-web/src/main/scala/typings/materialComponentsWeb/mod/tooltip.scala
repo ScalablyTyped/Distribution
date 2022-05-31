@@ -4,7 +4,6 @@ import typings.materialTooltip.anon.PartialMDCTooltipAdapter
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tooltip {
@@ -20,11 +19,11 @@ object tooltip {
   object AnchorBoundaryType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.materialTooltip.constantsMod.AnchorBoundaryType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.materialTooltip.constantsMod.AnchorBoundaryType & Double] = js.native
     
-    /* 0 */ val BOUNDED: typings.materialTooltip.constantsMod.AnchorBoundaryType.BOUNDED with Double = js.native
+    /* 0 */ val BOUNDED: typings.materialTooltip.constantsMod.AnchorBoundaryType.BOUNDED & Double = js.native
     
-    /* 1 */ val UNBOUNDED: typings.materialTooltip.constantsMod.AnchorBoundaryType.UNBOUNDED with Double = js.native
+    /* 1 */ val UNBOUNDED: typings.materialTooltip.constantsMod.AnchorBoundaryType.UNBOUNDED & Double = js.native
   }
   
   /**
@@ -54,26 +53,26 @@ object tooltip {
   object CssClasses extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.materialTooltip.constantsMod.CssClasses with String] = js.native
+    def apply(value: String): js.UndefOr[typings.materialTooltip.constantsMod.CssClasses & String] = js.native
     
-    /* "mdc-tooltip--hide" */ val HIDE: typings.materialTooltip.constantsMod.CssClasses.HIDE with String = js.native
+    /* "mdc-tooltip--hide" */ val HIDE: typings.materialTooltip.constantsMod.CssClasses.HIDE & String = js.native
     
-    /* "mdc-tooltip--hide-transition" */ val HIDE_TRANSITION: typings.materialTooltip.constantsMod.CssClasses.HIDE_TRANSITION with String = js.native
+    /* "mdc-tooltip--hide-transition" */ val HIDE_TRANSITION: typings.materialTooltip.constantsMod.CssClasses.HIDE_TRANSITION & String = js.native
     
-    /* "mdc-tooltip--multiline" */ val MULTILINE_TOOLTIP: typings.materialTooltip.constantsMod.CssClasses.MULTILINE_TOOLTIP with String = js.native
+    /* "mdc-tooltip--multiline" */ val MULTILINE_TOOLTIP: typings.materialTooltip.constantsMod.CssClasses.MULTILINE_TOOLTIP & String = js.native
     
-    /* "mdc-tooltip--showing" */ val SHOWING: typings.materialTooltip.constantsMod.CssClasses.SHOWING with String = js.native
+    /* "mdc-tooltip--showing" */ val SHOWING: typings.materialTooltip.constantsMod.CssClasses.SHOWING & String = js.native
     
-    /* "mdc-tooltip--showing-transition" */ val SHOWING_TRANSITION: typings.materialTooltip.constantsMod.CssClasses.SHOWING_TRANSITION with String = js.native
+    /* "mdc-tooltip--showing-transition" */ val SHOWING_TRANSITION: typings.materialTooltip.constantsMod.CssClasses.SHOWING_TRANSITION & String = js.native
     
-    /* "mdc-tooltip--shown" */ val SHOWN: typings.materialTooltip.constantsMod.CssClasses.SHOWN with String = js.native
+    /* "mdc-tooltip--shown" */ val SHOWN: typings.materialTooltip.constantsMod.CssClasses.SHOWN & String = js.native
   }
   
   @JSImport("material-components-web", "tooltip.MDCTooltip")
   @js.native
   class MDCTooltip protected ()
     extends typings.materialTooltip.mod.MDCTooltip {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialTooltip.foundationMod.MDCTooltipFoundation,
@@ -83,9 +82,11 @@ object tooltip {
   /* static members */
   object MDCTooltip {
     
-    @JSImport("material-components-web", "tooltip.MDCTooltip.attachTo")
+    @JSImport("material-components-web", "tooltip.MDCTooltip")
     @js.native
-    def attachTo(root: Element): typings.materialTooltip.componentMod.MDCTooltip = js.native
+    val ^ : js.Any = js.native
+    
+    inline def attachTo(root: Element): typings.materialTooltip.componentMod.MDCTooltip = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTooltip.componentMod.MDCTooltip]
   }
   
   @JSImport("material-components-web", "tooltip.MDCTooltipFoundation")
@@ -101,15 +102,15 @@ object tooltip {
   object XPosition extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.materialTooltip.constantsMod.XPosition with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.materialTooltip.constantsMod.XPosition & Double] = js.native
     
-    /* 2 */ val CENTER: typings.materialTooltip.constantsMod.XPosition.CENTER with Double = js.native
+    /* 2 */ val CENTER: typings.materialTooltip.constantsMod.XPosition.CENTER & Double = js.native
     
-    /* 0 */ val DETECTED: typings.materialTooltip.constantsMod.XPosition.DETECTED with Double = js.native
+    /* 0 */ val DETECTED: typings.materialTooltip.constantsMod.XPosition.DETECTED & Double = js.native
     
-    /* 3 */ val END: typings.materialTooltip.constantsMod.XPosition.END with Double = js.native
+    /* 3 */ val END: typings.materialTooltip.constantsMod.XPosition.END & Double = js.native
     
-    /* 1 */ val START: typings.materialTooltip.constantsMod.XPosition.START with Double = js.native
+    /* 1 */ val START: typings.materialTooltip.constantsMod.XPosition.START & Double = js.native
   }
   
   @JSImport("material-components-web", "tooltip.YPosition")
@@ -117,13 +118,13 @@ object tooltip {
   object YPosition extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.materialTooltip.constantsMod.YPosition with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.materialTooltip.constantsMod.YPosition & Double] = js.native
     
-    /* 1 */ val ABOVE: typings.materialTooltip.constantsMod.YPosition.ABOVE with Double = js.native
+    /* 1 */ val ABOVE: typings.materialTooltip.constantsMod.YPosition.ABOVE & Double = js.native
     
-    /* 2 */ val BELOW: typings.materialTooltip.constantsMod.YPosition.BELOW with Double = js.native
+    /* 2 */ val BELOW: typings.materialTooltip.constantsMod.YPosition.BELOW & Double = js.native
     
-    /* 0 */ val DETECTED: typings.materialTooltip.constantsMod.YPosition.DETECTED with Double = js.native
+    /* 0 */ val DETECTED: typings.materialTooltip.constantsMod.YPosition.DETECTED & Double = js.native
   }
   
   object events {
@@ -135,8 +136,7 @@ object tooltip {
     @JSImport("material-components-web", "tooltip.events.HIDDEN")
     @js.native
     def HIDDEN: String = js.native
-    @scala.inline
-    def HIDDEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HIDDEN")(x.asInstanceOf[js.Any])
+    inline def HIDDEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HIDDEN")(x.asInstanceOf[js.Any])
   }
   
   object numbers {
@@ -148,43 +148,36 @@ object tooltip {
     @JSImport("material-components-web", "tooltip.numbers.BOUNDED_ANCHOR_GAP")
     @js.native
     def BOUNDED_ANCHOR_GAP: Double = js.native
-    @scala.inline
-    def BOUNDED_ANCHOR_GAP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOUNDED_ANCHOR_GAP")(x.asInstanceOf[js.Any])
+    inline def BOUNDED_ANCHOR_GAP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOUNDED_ANCHOR_GAP")(x.asInstanceOf[js.Any])
     
     @JSImport("material-components-web", "tooltip.numbers.HIDE_DELAY_MS")
     @js.native
     def HIDE_DELAY_MS: Double = js.native
-    @scala.inline
-    def HIDE_DELAY_MS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HIDE_DELAY_MS")(x.asInstanceOf[js.Any])
+    inline def HIDE_DELAY_MS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HIDE_DELAY_MS")(x.asInstanceOf[js.Any])
     
     @JSImport("material-components-web", "tooltip.numbers.MAX_WIDTH")
     @js.native
     def MAX_WIDTH: Double = js.native
-    @scala.inline
-    def MAX_WIDTH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_WIDTH")(x.asInstanceOf[js.Any])
+    inline def MAX_WIDTH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_WIDTH")(x.asInstanceOf[js.Any])
     
     @JSImport("material-components-web", "tooltip.numbers.MIN_HEIGHT")
     @js.native
     def MIN_HEIGHT: Double = js.native
-    @scala.inline
-    def MIN_HEIGHT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_HEIGHT")(x.asInstanceOf[js.Any])
+    inline def MIN_HEIGHT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_HEIGHT")(x.asInstanceOf[js.Any])
     
     @JSImport("material-components-web", "tooltip.numbers.MIN_VIEWPORT_TOOLTIP_THRESHOLD")
     @js.native
     def MIN_VIEWPORT_TOOLTIP_THRESHOLD: Double = js.native
-    @scala.inline
-    def MIN_VIEWPORT_TOOLTIP_THRESHOLD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_VIEWPORT_TOOLTIP_THRESHOLD")(x.asInstanceOf[js.Any])
+    inline def MIN_VIEWPORT_TOOLTIP_THRESHOLD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_VIEWPORT_TOOLTIP_THRESHOLD")(x.asInstanceOf[js.Any])
     
     @JSImport("material-components-web", "tooltip.numbers.SHOW_DELAY_MS")
     @js.native
     def SHOW_DELAY_MS: Double = js.native
-    @scala.inline
-    def SHOW_DELAY_MS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHOW_DELAY_MS")(x.asInstanceOf[js.Any])
+    inline def SHOW_DELAY_MS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHOW_DELAY_MS")(x.asInstanceOf[js.Any])
     
     @JSImport("material-components-web", "tooltip.numbers.UNBOUNDED_ANCHOR_GAP")
     @js.native
     def UNBOUNDED_ANCHOR_GAP: Double = js.native
-    @scala.inline
-    def UNBOUNDED_ANCHOR_GAP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNBOUNDED_ANCHOR_GAP")(x.asInstanceOf[js.Any])
+    inline def UNBOUNDED_ANCHOR_GAP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNBOUNDED_ANCHOR_GAP")(x.asInstanceOf[js.Any])
   }
 }

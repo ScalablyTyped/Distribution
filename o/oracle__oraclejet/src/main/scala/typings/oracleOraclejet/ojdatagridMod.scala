@@ -98,20 +98,21 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ojdatagridMod {
   
   @js.native
-  trait ojDataGrid[K, D] extends baseComponent[ojDataGridSettableProperties[K, D]] {
+  trait ojDataGrid[K, D]
+    extends StObject
+       with baseComponent[ojDataGridSettableProperties[K, D]] {
     
     def addEventListener(
       `type`: editModeChanged,
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[none | cellNavigation | cellEdit], 
-          _
+          js.Any
         ]
     ): Unit = js.native
     def addEventListener(
@@ -119,7 +120,7 @@ object ojdatagridMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[none | cellNavigation | cellEdit], 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -128,7 +129,7 @@ object ojdatagridMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[auto | loadMoreOnScroll | scroll], 
-          _
+          js.Any
         ]
     ): Unit = js.native
     def addEventListener(
@@ -136,85 +137,93 @@ object ojdatagridMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[auto | loadMoreOnScroll | scroll], 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_bandingIntervalChanged(
       `type`: bandingIntervalChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Column], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Column], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_bandingIntervalChanged(
       `type`: bandingIntervalChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Column], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Column], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_cellChanged(
       `type`: cellChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ClassName[K, D]], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ClassName[K, D]], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_cellChanged(
       `type`: cellChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ClassName[K, D]], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ClassName[K, D]], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_currentCellChanged(
       `type`: currentCellChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[CurrentCell[K] | Null], _]
+      listener: js.ThisFunction1[
+          /* this */ HTMLElement, 
+          /* ev */ JetElementCustomEvent[CurrentCell[K] | Null], 
+          js.Any
+        ]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_currentCellChanged(
       `type`: currentCellChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[CurrentCell[K] | Null], _],
+      listener: js.ThisFunction1[
+          /* this */ HTMLElement, 
+          /* ev */ JetElementCustomEvent[CurrentCell[K] | Null], 
+          js.Any
+        ],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_dataChanged(
       `type`: dataChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[DataProvider[K, D]], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[DataProvider[K, D]], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_dataChanged(
       `type`: dataChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[DataProvider[K, D]], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[DataProvider[K, D]], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_dndChanged(
       `type`: dndChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Reorder], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Reorder], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_dndChanged(
       `type`: dndChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Reorder], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Reorder], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_gridlinesChanged(
       `type`: gridlinesChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Horizontal], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Horizontal], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_gridlinesChanged(
       `type`: gridlinesChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Horizontal], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Horizontal], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_headerChanged(
       `type`: headerChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ColumnEnd[K, D]], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ColumnEnd[K, D]], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_headerChanged(
       `type`: headerChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ColumnEnd[K, D]], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ColumnEnd[K, D]], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
@@ -223,7 +232,7 @@ object ojdatagridMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeCurrentCell[K], 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -232,7 +241,7 @@ object ojdatagridMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeCurrentCell[K], 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -242,7 +251,7 @@ object ojdatagridMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeEdit[K, D], 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -251,7 +260,7 @@ object ojdatagridMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeEdit[K, D], 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -261,7 +270,7 @@ object ojdatagridMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeEditEnd[K, D], 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -270,7 +279,7 @@ object ojdatagridMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeEditEnd[K, D], 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -280,7 +289,7 @@ object ojdatagridMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojResize, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -289,7 +298,7 @@ object ojdatagridMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojResize, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -299,7 +308,7 @@ object ojdatagridMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojScroll, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -308,7 +317,7 @@ object ojdatagridMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojScroll, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -318,7 +327,7 @@ object ojdatagridMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojSort, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -327,52 +336,60 @@ object ojdatagridMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojSort, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_scrollPolicyOptionsChanged(
       `type`: scrollPolicyOptionsChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[MaxColumnCount], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[MaxColumnCount], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_scrollPolicyOptionsChanged(
       `type`: scrollPolicyOptionsChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[MaxColumnCount], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[MaxColumnCount], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_scrollPositionChanged(
       `type`: scrollPositionChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ColumnIndex[K]], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ColumnIndex[K]], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_scrollPositionChanged(
       `type`: scrollPositionChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ColumnIndex[K]], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ColumnIndex[K]], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_selectionChanged(
       `type`: selectionChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[Selection[K]]], _]
+      listener: js.ThisFunction1[
+          /* this */ HTMLElement, 
+          /* ev */ JetElementCustomEvent[js.Array[Selection[K]]], 
+          js.Any
+        ]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_selectionChanged(
       `type`: selectionChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[Selection[K]]], _],
+      listener: js.ThisFunction1[
+          /* this */ HTMLElement, 
+          /* ev */ JetElementCustomEvent[js.Array[Selection[K]]], 
+          js.Any
+        ],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_selectionModeChanged(
       `type`: selectionModeChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Cell], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Cell], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_selectionModeChanged(
       `type`: selectionModeChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Cell], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Cell], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     
@@ -388,7 +405,7 @@ object ojdatagridMod {
     
     var editMode: none | cellNavigation | cellEdit = js.native
     
-    def getContextByNode(node: Element): ((CellContext[K, D]) with SubId) | ((HeaderContext[K, D]) with `2`) | ((LabelContext[K, D]) with `3`) = js.native
+    def getContextByNode(node: Element): ((CellContext[K, D]) & SubId) | ((HeaderContext[K, D]) & `2`) | ((LabelContext[K, D]) & `3`) = js.native
     
     @JSName("getProperty")
     def getProperty_bandingInterval(property: bandingInterval): Column = js.native
@@ -421,49 +438,52 @@ object ojdatagridMod {
     
     var header: ColumnEnd[K, D] = js.native
     
-    var onBandingIntervalChanged: (js.Function1[/* event */ JetElementCustomEvent[Column], _]) | Null = js.native
+    var onBandingIntervalChanged: (js.Function1[/* event */ JetElementCustomEvent[Column], js.Any]) | Null = js.native
     
-    var onCellChanged: (js.Function1[/* event */ JetElementCustomEvent[ClassName[K, D]], _]) | Null = js.native
+    var onCellChanged: (js.Function1[/* event */ JetElementCustomEvent[ClassName[K, D]], js.Any]) | Null = js.native
     
-    var onCurrentCellChanged: (js.Function1[/* event */ JetElementCustomEvent[CurrentCell[K] | Null], _]) | Null = js.native
+    var onCurrentCellChanged: (js.Function1[/* event */ JetElementCustomEvent[CurrentCell[K] | Null], js.Any]) | Null = js.native
     
-    var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[DataProvider[K, D]], _]) | Null = js.native
+    var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[DataProvider[K, D]], js.Any]) | Null = js.native
     
-    var onDndChanged: (js.Function1[/* event */ JetElementCustomEvent[Reorder], _]) | Null = js.native
+    var onDndChanged: (js.Function1[/* event */ JetElementCustomEvent[Reorder], js.Any]) | Null = js.native
     
-    var onEditModeChanged: (js.Function1[/* event */ JetElementCustomEvent[none | cellNavigation | cellEdit], _]) | Null = js.native
+    var onEditModeChanged: (js.Function1[/* event */ JetElementCustomEvent[none | cellNavigation | cellEdit], js.Any]) | Null = js.native
     
-    var onGridlinesChanged: (js.Function1[/* event */ JetElementCustomEvent[Horizontal], _]) | Null = js.native
+    var onGridlinesChanged: (js.Function1[/* event */ JetElementCustomEvent[Horizontal], js.Any]) | Null = js.native
     
-    var onHeaderChanged: (js.Function1[/* event */ JetElementCustomEvent[ColumnEnd[K, D]], _]) | Null = js.native
+    var onHeaderChanged: (js.Function1[/* event */ JetElementCustomEvent[ColumnEnd[K, D]], js.Any]) | Null = js.native
     
     var onOjBeforeCurrentCell: (js.Function1[
         /* event */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeCurrentCell[K], 
-        _
+        js.Any
       ]) | Null = js.native
     
-    var onOjBeforeEdit: (js.Function1[/* event */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeEdit[K, D], _]) | Null = js.native
+    var onOjBeforeEdit: (js.Function1[
+        /* event */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeEdit[K, D], 
+        js.Any
+      ]) | Null = js.native
     
     var onOjBeforeEditEnd: (js.Function1[
         /* event */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeEditEnd[K, D], 
-        _
+        js.Any
       ]) | Null = js.native
     
-    var onOjResize: (js.Function1[/* event */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojResize, _]) | Null = js.native
+    var onOjResize: (js.Function1[/* event */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojResize, js.Any]) | Null = js.native
     
-    var onOjScroll: (js.Function1[/* event */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojScroll, _]) | Null = js.native
+    var onOjScroll: (js.Function1[/* event */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojScroll, js.Any]) | Null = js.native
     
-    var onOjSort: (js.Function1[/* event */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojSort, _]) | Null = js.native
+    var onOjSort: (js.Function1[/* event */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojSort, js.Any]) | Null = js.native
     
-    var onScrollPolicyChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | loadMoreOnScroll | scroll], _]) | Null = js.native
+    var onScrollPolicyChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | loadMoreOnScroll | scroll], js.Any]) | Null = js.native
     
-    var onScrollPolicyOptionsChanged: (js.Function1[/* event */ JetElementCustomEvent[MaxColumnCount], _]) | Null = js.native
+    var onScrollPolicyOptionsChanged: (js.Function1[/* event */ JetElementCustomEvent[MaxColumnCount], js.Any]) | Null = js.native
     
-    var onScrollPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[ColumnIndex[K]], _]) | Null = js.native
+    var onScrollPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[ColumnIndex[K]], js.Any]) | Null = js.native
     
-    var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[Selection[K]]], _]) | Null = js.native
+    var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[Selection[K]]], js.Any]) | Null = js.native
     
-    var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[Cell], _]) | Null = js.native
+    var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[Cell], js.Any]) | Null = js.native
     
     var scrollPolicy: auto | loadMoreOnScroll | scroll = js.native
     
@@ -518,31 +538,29 @@ object ojdatagridMod {
   object ojDataGrid {
     
     // tslint:disable-next-line interface-over-type-literal
-    @js.native
     trait CellContext[K, D] extends StObject {
       
-      var cell: D = js.native
+      var cell: D
       
-      var componentElement: Element = js.native
+      var componentElement: Element
       
-      var data: D = js.native
+      var data: D
       
-      var datasource: (DataProvider[K, D]) | Null = js.native
+      var datasource: (DataProvider[K, D]) | Null
       
-      var extents: ColumnRow = js.native
+      var extents: ColumnRow
       
-      var indexes: ColumnRow = js.native
+      var indexes: ColumnRow
       
-      var keys: ColumnK[K] = js.native
+      var keys: ColumnK[K]
       
-      var mode: edit | navigation = js.native
+      var mode: edit | navigation
       
-      var parentElement: Element = js.native
+      var parentElement: Element
     }
     object CellContext {
       
-      @scala.inline
-      def apply[K, D](
+      inline def apply[K, D](
         cell: D,
         componentElement: Element,
         data: D,
@@ -552,144 +570,115 @@ object ojdatagridMod {
         mode: edit | navigation,
         parentElement: Element
       ): CellContext[K, D] = {
-        val __obj = js.Dynamic.literal(cell = cell.asInstanceOf[js.Any], componentElement = componentElement.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], extents = extents.asInstanceOf[js.Any], indexes = indexes.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], parentElement = parentElement.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(cell = cell.asInstanceOf[js.Any], componentElement = componentElement.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], extents = extents.asInstanceOf[js.Any], indexes = indexes.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], parentElement = parentElement.asInstanceOf[js.Any], datasource = null)
         __obj.asInstanceOf[CellContext[K, D]]
       }
       
-      @scala.inline
-      implicit class CellContextMutableBuilder[Self <: CellContext[_, _], K, D] (val x: Self with (CellContext[K, D])) extends AnyVal {
+      extension [Self <: CellContext[?, ?], K, D](x: Self & (CellContext[K, D])) {
         
-        @scala.inline
-        def setCell(value: D): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+        inline def setCell(value: D): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setComponentElement(value: Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
+        inline def setComponentElement(value: Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDatasource(value: DataProvider[K, D]): Self = StObject.set(x, "datasource", value.asInstanceOf[js.Any])
+        inline def setDatasource(value: DataProvider[K, D]): Self = StObject.set(x, "datasource", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDatasourceNull: Self = StObject.set(x, "datasource", null)
+        inline def setDatasourceNull: Self = StObject.set(x, "datasource", null)
         
-        @scala.inline
-        def setExtents(value: ColumnRow): Self = StObject.set(x, "extents", value.asInstanceOf[js.Any])
+        inline def setExtents(value: ColumnRow): Self = StObject.set(x, "extents", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndexes(value: ColumnRow): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
+        inline def setIndexes(value: ColumnRow): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeys(value: ColumnK[K]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+        inline def setKeys(value: ColumnK[K]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMode(value: edit | navigation): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+        inline def setMode(value: edit | navigation): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParentElement(value: Element): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
+        inline def setParentElement(value: Element): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
       }
     }
     
     // tslint:disable-next-line interface-over-type-literal
-    @js.native
     trait CurrentCell[K] extends StObject {
       
-      var axis: js.UndefOr[column | columnEnd | row | rowEnd] = js.native
+      var axis: js.UndefOr[column | columnEnd | row | rowEnd] = js.undefined
       
-      var index: js.UndefOr[Double] = js.native
+      var index: js.UndefOr[Double] = js.undefined
       
-      var indexes: js.UndefOr[ColumnRow] = js.native
+      var indexes: js.UndefOr[ColumnRow] = js.undefined
       
-      var key: js.UndefOr[js.Any] = js.native
+      var key: js.UndefOr[js.Any] = js.undefined
       
-      var keys: js.UndefOr[ColumnK[K]] = js.native
+      var keys: js.UndefOr[ColumnK[K]] = js.undefined
       
-      var level: js.UndefOr[Double] = js.native
+      var level: js.UndefOr[Double] = js.undefined
       
-      var `type`: cell | header | label = js.native
+      var `type`: cell | header | label
     }
     object CurrentCell {
       
-      @scala.inline
-      def apply[K](`type`: cell | header | label): CurrentCell[K] = {
+      inline def apply[K](`type`: cell | header | label): CurrentCell[K] = {
         val __obj = js.Dynamic.literal()
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[CurrentCell[K]]
       }
       
-      @scala.inline
-      implicit class CurrentCellMutableBuilder[Self <: CurrentCell[_], K] (val x: Self with CurrentCell[K]) extends AnyVal {
+      extension [Self <: CurrentCell[?], K](x: Self & CurrentCell[K]) {
         
-        @scala.inline
-        def setAxis(value: column | columnEnd | row | rowEnd): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+        inline def setAxis(value: column | columnEnd | row | rowEnd): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+        inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
         
-        @scala.inline
-        def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+        inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+        inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
         
-        @scala.inline
-        def setIndexes(value: ColumnRow): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
+        inline def setIndexes(value: ColumnRow): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndexesUndefined: Self = StObject.set(x, "indexes", js.undefined)
+        inline def setIndexesUndefined: Self = StObject.set(x, "indexes", js.undefined)
         
-        @scala.inline
-        def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+        inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
         
-        @scala.inline
-        def setKeys(value: ColumnK[K]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+        inline def setKeys(value: ColumnK[K]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+        inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
         
-        @scala.inline
-        def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+        inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+        inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
         
-        @scala.inline
-        def setType(value: cell | header | label): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: cell | header | label): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
     // tslint:disable-next-line interface-over-type-literal
-    @js.native
     trait HeaderContext[K, D] extends StObject {
       
-      var axis: column | columnEnd | row | rowEnd = js.native
+      var axis: column | columnEnd | row | rowEnd
       
-      var componentElement: Element = js.native
+      var componentElement: Element
       
-      var data: D = js.native
+      var data: D
       
-      var datasource: (DataProvider[K, D]) | Null = js.native
+      var datasource: (DataProvider[K, D]) | Null
       
-      var depth: Double = js.native
+      var depth: Double
       
-      var extent: Double = js.native
+      var extent: Double
       
-      var index: Double = js.native
+      var index: Double
       
-      var key: K = js.native
+      var key: K
       
-      var level: Double = js.native
+      var level: Double
       
-      var parentElement: Element = js.native
+      var parentElement: Element
     }
     object HeaderContext {
       
-      @scala.inline
-      def apply[K, D](
+      inline def apply[K, D](
         axis: column | columnEnd | row | rowEnd,
         componentElement: Element,
         data: D,
@@ -700,150 +689,117 @@ object ojdatagridMod {
         level: Double,
         parentElement: Element
       ): HeaderContext[K, D] = {
-        val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], componentElement = componentElement.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], extent = extent.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], parentElement = parentElement.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], componentElement = componentElement.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], extent = extent.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], parentElement = parentElement.asInstanceOf[js.Any], datasource = null)
         __obj.asInstanceOf[HeaderContext[K, D]]
       }
       
-      @scala.inline
-      implicit class HeaderContextMutableBuilder[Self <: HeaderContext[_, _], K, D] (val x: Self with (HeaderContext[K, D])) extends AnyVal {
+      extension [Self <: HeaderContext[?, ?], K, D](x: Self & (HeaderContext[K, D])) {
         
-        @scala.inline
-        def setAxis(value: column | columnEnd | row | rowEnd): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+        inline def setAxis(value: column | columnEnd | row | rowEnd): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setComponentElement(value: Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
+        inline def setComponentElement(value: Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDatasource(value: DataProvider[K, D]): Self = StObject.set(x, "datasource", value.asInstanceOf[js.Any])
+        inline def setDatasource(value: DataProvider[K, D]): Self = StObject.set(x, "datasource", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDatasourceNull: Self = StObject.set(x, "datasource", null)
+        inline def setDatasourceNull: Self = StObject.set(x, "datasource", null)
         
-        @scala.inline
-        def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+        inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExtent(value: Double): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+        inline def setExtent(value: Double): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+        inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+        inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParentElement(value: Element): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
+        inline def setParentElement(value: Element): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
       }
     }
     
     // tslint:disable-next-line interface-over-type-literal
-    @js.native
     trait LabelContext[K, D] extends StObject {
       
-      var axis: column | columnEnd | row | rowEnd = js.native
+      var axis: column | columnEnd | row | rowEnd
       
-      var componentElement: Element = js.native
+      var componentElement: Element
       
-      var datasource: (DataProvider[K, D]) | Null = js.native
+      var datasource: (DataProvider[K, D]) | Null
       
-      var key: K = js.native
+      var key: K
       
-      var level: Double = js.native
+      var level: Double
       
-      var parentElement: Element = js.native
+      var parentElement: Element
     }
     object LabelContext {
       
-      @scala.inline
-      def apply[K, D](
+      inline def apply[K, D](
         axis: column | columnEnd | row | rowEnd,
         componentElement: Element,
         key: K,
         level: Double,
         parentElement: Element
       ): LabelContext[K, D] = {
-        val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], componentElement = componentElement.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], parentElement = parentElement.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], componentElement = componentElement.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], parentElement = parentElement.asInstanceOf[js.Any], datasource = null)
         __obj.asInstanceOf[LabelContext[K, D]]
       }
       
-      @scala.inline
-      implicit class LabelContextMutableBuilder[Self <: LabelContext[_, _], K, D] (val x: Self with (LabelContext[K, D])) extends AnyVal {
+      extension [Self <: LabelContext[?, ?], K, D](x: Self & (LabelContext[K, D])) {
         
-        @scala.inline
-        def setAxis(value: column | columnEnd | row | rowEnd): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+        inline def setAxis(value: column | columnEnd | row | rowEnd): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setComponentElement(value: Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
+        inline def setComponentElement(value: Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDatasource(value: DataProvider[K, D]): Self = StObject.set(x, "datasource", value.asInstanceOf[js.Any])
+        inline def setDatasource(value: DataProvider[K, D]): Self = StObject.set(x, "datasource", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDatasourceNull: Self = StObject.set(x, "datasource", null)
+        inline def setDatasourceNull: Self = StObject.set(x, "datasource", null)
         
-        @scala.inline
-        def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+        inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParentElement(value: Element): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
+        inline def setParentElement(value: Element): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
       }
     }
     
     // tslint:disable-next-line interface-over-type-literal
-    @js.native
     trait Selection[K] extends StObject {
       
-      var endIndex: js.UndefOr[RowNumber] = js.native
+      var endIndex: js.UndefOr[RowNumber] = js.undefined
       
-      var endKey: js.UndefOr[RowK[K]] = js.native
+      var endKey: js.UndefOr[RowK[K]] = js.undefined
       
-      var startIndex: js.UndefOr[RowNumber] = js.native
+      var startIndex: js.UndefOr[RowNumber] = js.undefined
       
-      var startKey: js.UndefOr[RowK[K]] = js.native
+      var startKey: js.UndefOr[RowK[K]] = js.undefined
     }
     object Selection {
       
-      @scala.inline
-      def apply[K](): Selection[K] = {
+      inline def apply[K](): Selection[K] = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Selection[K]]
       }
       
-      @scala.inline
-      implicit class SelectionMutableBuilder[Self <: Selection[_], K] (val x: Self with Selection[K]) extends AnyVal {
+      extension [Self <: Selection[?], K](x: Self & Selection[K]) {
         
-        @scala.inline
-        def setEndIndex(value: RowNumber): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
+        inline def setEndIndex(value: RowNumber): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
+        inline def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
         
-        @scala.inline
-        def setEndKey(value: RowK[K]): Self = StObject.set(x, "endKey", value.asInstanceOf[js.Any])
+        inline def setEndKey(value: RowK[K]): Self = StObject.set(x, "endKey", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndKeyUndefined: Self = StObject.set(x, "endKey", js.undefined)
+        inline def setEndKeyUndefined: Self = StObject.set(x, "endKey", js.undefined)
         
-        @scala.inline
-        def setStartIndex(value: RowNumber): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+        inline def setStartIndex(value: RowNumber): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
+        inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
         
-        @scala.inline
-        def setStartKey(value: RowK[K]): Self = StObject.set(x, "startKey", value.asInstanceOf[js.Any])
+        inline def setStartKey(value: RowK[K]): Self = StObject.set(x, "startKey", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartKeyUndefined: Self = StObject.set(x, "startKey", js.undefined)
+        inline def setStartKeyUndefined: Self = StObject.set(x, "startKey", js.undefined)
       }
     }
     
@@ -860,51 +816,51 @@ object ojdatagridMod {
     type ojSort = CustomEvent[DictpropNameDirection]
   }
   
-  @js.native
-  trait ojDataGridEventMap[K, D] extends baseComponentEventMap[ojDataGridSettableProperties[K, D]] {
+  trait ojDataGridEventMap[K, D]
+    extends StObject
+       with baseComponentEventMap[ojDataGridSettableProperties[K, D]] {
     
-    var bandingIntervalChanged: JetElementCustomEvent[Column] = js.native
+    var bandingIntervalChanged: JetElementCustomEvent[Column]
     
-    var cellChanged: JetElementCustomEvent[ClassName[K, D]] = js.native
+    var cellChanged: JetElementCustomEvent[ClassName[K, D]]
     
-    var currentCellChanged: JetElementCustomEvent[CurrentCell[K] | Null] = js.native
+    var currentCellChanged: JetElementCustomEvent[CurrentCell[K] | Null]
     
-    var dataChanged: JetElementCustomEvent[DataProvider[K, D]] = js.native
+    var dataChanged: JetElementCustomEvent[DataProvider[K, D]]
     
-    var dndChanged: JetElementCustomEvent[Reorder] = js.native
+    var dndChanged: JetElementCustomEvent[Reorder]
     
-    var editModeChanged: JetElementCustomEvent[none | cellNavigation | cellEdit] = js.native
+    var editModeChanged: JetElementCustomEvent[none | cellNavigation | cellEdit]
     
-    var gridlinesChanged: JetElementCustomEvent[Horizontal] = js.native
+    var gridlinesChanged: JetElementCustomEvent[Horizontal]
     
-    var headerChanged: JetElementCustomEvent[ColumnEnd[K, D]] = js.native
+    var headerChanged: JetElementCustomEvent[ColumnEnd[K, D]]
     
-    var ojBeforeCurrentCell: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeCurrentCell[K] = js.native
+    var ojBeforeCurrentCell: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeCurrentCell[K]
     
-    var ojBeforeEdit: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeEdit[K, D] = js.native
+    var ojBeforeEdit: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeEdit[K, D]
     
-    var ojBeforeEditEnd: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeEditEnd[K, D] = js.native
+    var ojBeforeEditEnd: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeEditEnd[K, D]
     
-    var ojResize: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojResize = js.native
+    var ojResize: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojResize
     
-    var ojScroll: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojScroll = js.native
+    var ojScroll: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojScroll
     
-    var ojSort: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojSort = js.native
+    var ojSort: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojSort
     
-    var scrollPolicyChanged: JetElementCustomEvent[auto | loadMoreOnScroll | scroll] = js.native
+    var scrollPolicyChanged: JetElementCustomEvent[auto | loadMoreOnScroll | scroll]
     
-    var scrollPolicyOptionsChanged: JetElementCustomEvent[MaxColumnCount] = js.native
+    var scrollPolicyOptionsChanged: JetElementCustomEvent[MaxColumnCount]
     
-    var scrollPositionChanged: JetElementCustomEvent[ColumnIndex[K]] = js.native
+    var scrollPositionChanged: JetElementCustomEvent[ColumnIndex[K]]
     
-    var selectionChanged: JetElementCustomEvent[js.Array[Selection[K]]] = js.native
+    var selectionChanged: JetElementCustomEvent[js.Array[Selection[K]]]
     
-    var selectionModeChanged: JetElementCustomEvent[Cell] = js.native
+    var selectionModeChanged: JetElementCustomEvent[Cell]
   }
   object ojDataGridEventMap {
     
-    @scala.inline
-    def apply[K, D](
+    inline def apply[K, D](
       abort: UIEvent,
       animationcancel: AnimationEvent,
       animationend: AnimationEvent,
@@ -1022,104 +978,84 @@ object ojdatagridMod {
       __obj.asInstanceOf[ojDataGridEventMap[K, D]]
     }
     
-    @scala.inline
-    implicit class ojDataGridEventMapMutableBuilder[Self <: ojDataGridEventMap[_, _], K, D] (val x: Self with (ojDataGridEventMap[K, D])) extends AnyVal {
+    extension [Self <: ojDataGridEventMap[?, ?], K, D](x: Self & (ojDataGridEventMap[K, D])) {
       
-      @scala.inline
-      def setBandingIntervalChanged(value: JetElementCustomEvent[Column]): Self = StObject.set(x, "bandingIntervalChanged", value.asInstanceOf[js.Any])
+      inline def setBandingIntervalChanged(value: JetElementCustomEvent[Column]): Self = StObject.set(x, "bandingIntervalChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellChanged(value: JetElementCustomEvent[ClassName[K, D]]): Self = StObject.set(x, "cellChanged", value.asInstanceOf[js.Any])
+      inline def setCellChanged(value: JetElementCustomEvent[ClassName[K, D]]): Self = StObject.set(x, "cellChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentCellChanged(value: JetElementCustomEvent[CurrentCell[K] | Null]): Self = StObject.set(x, "currentCellChanged", value.asInstanceOf[js.Any])
+      inline def setCurrentCellChanged(value: JetElementCustomEvent[CurrentCell[K] | Null]): Self = StObject.set(x, "currentCellChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataChanged(value: JetElementCustomEvent[DataProvider[K, D]]): Self = StObject.set(x, "dataChanged", value.asInstanceOf[js.Any])
+      inline def setDataChanged(value: JetElementCustomEvent[DataProvider[K, D]]): Self = StObject.set(x, "dataChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDndChanged(value: JetElementCustomEvent[Reorder]): Self = StObject.set(x, "dndChanged", value.asInstanceOf[js.Any])
+      inline def setDndChanged(value: JetElementCustomEvent[Reorder]): Self = StObject.set(x, "dndChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditModeChanged(value: JetElementCustomEvent[none | cellNavigation | cellEdit]): Self = StObject.set(x, "editModeChanged", value.asInstanceOf[js.Any])
+      inline def setEditModeChanged(value: JetElementCustomEvent[none | cellNavigation | cellEdit]): Self = StObject.set(x, "editModeChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridlinesChanged(value: JetElementCustomEvent[Horizontal]): Self = StObject.set(x, "gridlinesChanged", value.asInstanceOf[js.Any])
+      inline def setGridlinesChanged(value: JetElementCustomEvent[Horizontal]): Self = StObject.set(x, "gridlinesChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderChanged(value: JetElementCustomEvent[ColumnEnd[K, D]]): Self = StObject.set(x, "headerChanged", value.asInstanceOf[js.Any])
+      inline def setHeaderChanged(value: JetElementCustomEvent[ColumnEnd[K, D]]): Self = StObject.set(x, "headerChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjBeforeCurrentCell(value: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeCurrentCell[K]): Self = StObject.set(x, "ojBeforeCurrentCell", value.asInstanceOf[js.Any])
+      inline def setOjBeforeCurrentCell(value: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeCurrentCell[K]): Self = StObject.set(x, "ojBeforeCurrentCell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjBeforeEdit(value: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeEdit[K, D]): Self = StObject.set(x, "ojBeforeEdit", value.asInstanceOf[js.Any])
+      inline def setOjBeforeEdit(value: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeEdit[K, D]): Self = StObject.set(x, "ojBeforeEdit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjBeforeEditEnd(value: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeEditEnd[K, D]): Self = StObject.set(x, "ojBeforeEditEnd", value.asInstanceOf[js.Any])
+      inline def setOjBeforeEditEnd(value: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeEditEnd[K, D]): Self = StObject.set(x, "ojBeforeEditEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjResize(value: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojResize): Self = StObject.set(x, "ojResize", value.asInstanceOf[js.Any])
+      inline def setOjResize(value: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojResize): Self = StObject.set(x, "ojResize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjScroll(value: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojScroll): Self = StObject.set(x, "ojScroll", value.asInstanceOf[js.Any])
+      inline def setOjScroll(value: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojScroll): Self = StObject.set(x, "ojScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjSort(value: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojSort): Self = StObject.set(x, "ojSort", value.asInstanceOf[js.Any])
+      inline def setOjSort(value: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojSort): Self = StObject.set(x, "ojSort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollPolicyChanged(value: JetElementCustomEvent[auto | loadMoreOnScroll | scroll]): Self = StObject.set(x, "scrollPolicyChanged", value.asInstanceOf[js.Any])
+      inline def setScrollPolicyChanged(value: JetElementCustomEvent[auto | loadMoreOnScroll | scroll]): Self = StObject.set(x, "scrollPolicyChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollPolicyOptionsChanged(value: JetElementCustomEvent[MaxColumnCount]): Self = StObject.set(x, "scrollPolicyOptionsChanged", value.asInstanceOf[js.Any])
+      inline def setScrollPolicyOptionsChanged(value: JetElementCustomEvent[MaxColumnCount]): Self = StObject.set(x, "scrollPolicyOptionsChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollPositionChanged(value: JetElementCustomEvent[ColumnIndex[K]]): Self = StObject.set(x, "scrollPositionChanged", value.asInstanceOf[js.Any])
+      inline def setScrollPositionChanged(value: JetElementCustomEvent[ColumnIndex[K]]): Self = StObject.set(x, "scrollPositionChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionChanged(value: JetElementCustomEvent[js.Array[Selection[K]]]): Self = StObject.set(x, "selectionChanged", value.asInstanceOf[js.Any])
+      inline def setSelectionChanged(value: JetElementCustomEvent[js.Array[Selection[K]]]): Self = StObject.set(x, "selectionChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionModeChanged(value: JetElementCustomEvent[Cell]): Self = StObject.set(x, "selectionModeChanged", value.asInstanceOf[js.Any])
+      inline def setSelectionModeChanged(value: JetElementCustomEvent[Cell]): Self = StObject.set(x, "selectionModeChanged", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait ojDataGridSettableProperties[K, D] extends baseComponentSettableProperties {
+  trait ojDataGridSettableProperties[K, D]
+    extends StObject
+       with baseComponentSettableProperties {
     
-    var bandingInterval: Column = js.native
+    var bandingInterval: Column
     
-    var cell: ClassName[K, D] = js.native
+    var cell: ClassName[K, D]
     
-    var currentCell: CurrentCell[K] | Null = js.native
+    var currentCell: CurrentCell[K] | Null
     
-    var data: (DataProvider[K, D]) | Null = js.native
+    var data: (DataProvider[K, D]) | Null
     
-    var dnd: Reorder = js.native
+    var dnd: Reorder
     
-    var editMode: none | cellNavigation | cellEdit = js.native
+    var editMode: none | cellNavigation | cellEdit
     
-    var gridlines: Horizontal = js.native
+    var gridlines: Horizontal
     
-    var header: ColumnEnd[K, D] = js.native
+    var header: ColumnEnd[K, D]
     
-    var scrollPolicy: auto | loadMoreOnScroll | scroll = js.native
+    var scrollPolicy: auto | loadMoreOnScroll | scroll
     
-    var scrollPolicyOptions: MaxColumnCount = js.native
+    var scrollPolicyOptions: MaxColumnCount
     
-    var scrollPosition: ColumnIndex[K] = js.native
+    var scrollPosition: ColumnIndex[K]
     
-    var selection: js.Array[Selection[K]] = js.native
+    var selection: js.Array[Selection[K]]
     
-    var selectionMode: Cell = js.native
+    var selectionMode: Cell
     
     @JSName("translations")
-    var translations_ojDataGridSettableProperties: AccessibleActionableMode = js.native
+    var translations_ojDataGridSettableProperties: AccessibleActionableMode
   }
   object ojDataGridSettableProperties {
     
-    @scala.inline
-    def apply[K, D](
+    inline def apply[K, D](
       bandingInterval: Column,
       cell: ClassName[K, D],
       dnd: Reorder,
@@ -1133,202 +1069,151 @@ object ojdatagridMod {
       selectionMode: Cell,
       translations: AccessibleActionableMode
     ): ojDataGridSettableProperties[K, D] = {
-      val __obj = js.Dynamic.literal(bandingInterval = bandingInterval.asInstanceOf[js.Any], cell = cell.asInstanceOf[js.Any], dnd = dnd.asInstanceOf[js.Any], editMode = editMode.asInstanceOf[js.Any], gridlines = gridlines.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], scrollPolicy = scrollPolicy.asInstanceOf[js.Any], scrollPolicyOptions = scrollPolicyOptions.asInstanceOf[js.Any], scrollPosition = scrollPosition.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], selectionMode = selectionMode.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(bandingInterval = bandingInterval.asInstanceOf[js.Any], cell = cell.asInstanceOf[js.Any], dnd = dnd.asInstanceOf[js.Any], editMode = editMode.asInstanceOf[js.Any], gridlines = gridlines.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], scrollPolicy = scrollPolicy.asInstanceOf[js.Any], scrollPolicyOptions = scrollPolicyOptions.asInstanceOf[js.Any], scrollPosition = scrollPosition.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], selectionMode = selectionMode.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], currentCell = null, data = null)
       __obj.asInstanceOf[ojDataGridSettableProperties[K, D]]
     }
     
-    @scala.inline
-    implicit class ojDataGridSettablePropertiesMutableBuilder[Self <: ojDataGridSettableProperties[_, _], K, D] (val x: Self with (ojDataGridSettableProperties[K, D])) extends AnyVal {
+    extension [Self <: ojDataGridSettableProperties[?, ?], K, D](x: Self & (ojDataGridSettableProperties[K, D])) {
       
-      @scala.inline
-      def setBandingInterval(value: Column): Self = StObject.set(x, "bandingInterval", value.asInstanceOf[js.Any])
+      inline def setBandingInterval(value: Column): Self = StObject.set(x, "bandingInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCell(value: ClassName[K, D]): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+      inline def setCell(value: ClassName[K, D]): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentCell(value: CurrentCell[K]): Self = StObject.set(x, "currentCell", value.asInstanceOf[js.Any])
+      inline def setCurrentCell(value: CurrentCell[K]): Self = StObject.set(x, "currentCell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentCellNull: Self = StObject.set(x, "currentCell", null)
+      inline def setCurrentCellNull: Self = StObject.set(x, "currentCell", null)
       
-      @scala.inline
-      def setData(value: DataProvider[K, D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: DataProvider[K, D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataNull: Self = StObject.set(x, "data", null)
+      inline def setDataNull: Self = StObject.set(x, "data", null)
       
-      @scala.inline
-      def setDnd(value: Reorder): Self = StObject.set(x, "dnd", value.asInstanceOf[js.Any])
+      inline def setDnd(value: Reorder): Self = StObject.set(x, "dnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditMode(value: none | cellNavigation | cellEdit): Self = StObject.set(x, "editMode", value.asInstanceOf[js.Any])
+      inline def setEditMode(value: none | cellNavigation | cellEdit): Self = StObject.set(x, "editMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridlines(value: Horizontal): Self = StObject.set(x, "gridlines", value.asInstanceOf[js.Any])
+      inline def setGridlines(value: Horizontal): Self = StObject.set(x, "gridlines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeader(value: ColumnEnd[K, D]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: ColumnEnd[K, D]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollPolicy(value: auto | loadMoreOnScroll | scroll): Self = StObject.set(x, "scrollPolicy", value.asInstanceOf[js.Any])
+      inline def setScrollPolicy(value: auto | loadMoreOnScroll | scroll): Self = StObject.set(x, "scrollPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollPolicyOptions(value: MaxColumnCount): Self = StObject.set(x, "scrollPolicyOptions", value.asInstanceOf[js.Any])
+      inline def setScrollPolicyOptions(value: MaxColumnCount): Self = StObject.set(x, "scrollPolicyOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollPosition(value: ColumnIndex[K]): Self = StObject.set(x, "scrollPosition", value.asInstanceOf[js.Any])
+      inline def setScrollPosition(value: ColumnIndex[K]): Self = StObject.set(x, "scrollPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelection(value: js.Array[Selection[K]]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      inline def setSelection(value: js.Array[Selection[K]]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionMode(value: Cell): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
+      inline def setSelectionMode(value: Cell): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionVarargs(value: Selection[K]*): Self = StObject.set(x, "selection", js.Array(value :_*))
+      inline def setSelectionVarargs(value: Selection[K]*): Self = StObject.set(x, "selection", js.Array(value :_*))
       
-      @scala.inline
-      def setTranslations(value: AccessibleActionableMode): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: AccessibleActionableMode): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojdatagrid.ojDataGridSettableProperties<K, D>> */
-  @js.native
   trait ojDataGridSettablePropertiesLenient[K, D]
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var bandingInterval: js.UndefOr[Column] = js.native
+    var bandingInterval: js.UndefOr[Column] = js.undefined
     
-    var cell: js.UndefOr[ClassName[K, D]] = js.native
+    var cell: js.UndefOr[ClassName[K, D]] = js.undefined
     
-    var currentCell: js.UndefOr[CurrentCell[K] | Null] = js.native
+    var currentCell: js.UndefOr[CurrentCell[K] | Null] = js.undefined
     
-    var data: js.UndefOr[(DataProvider[K, D]) | Null] = js.native
+    var data: js.UndefOr[(DataProvider[K, D]) | Null] = js.undefined
     
-    var dnd: js.UndefOr[Reorder] = js.native
+    var dnd: js.UndefOr[Reorder] = js.undefined
     
-    var editMode: js.UndefOr[none | cellNavigation | cellEdit] = js.native
+    var editMode: js.UndefOr[none | cellNavigation | cellEdit] = js.undefined
     
-    var gridlines: js.UndefOr[Horizontal] = js.native
+    var gridlines: js.UndefOr[Horizontal] = js.undefined
     
-    var header: js.UndefOr[ColumnEnd[K, D]] = js.native
+    var header: js.UndefOr[ColumnEnd[K, D]] = js.undefined
     
-    var scrollPolicy: js.UndefOr[auto | loadMoreOnScroll | scroll] = js.native
+    var scrollPolicy: js.UndefOr[auto | loadMoreOnScroll | scroll] = js.undefined
     
-    var scrollPolicyOptions: js.UndefOr[MaxColumnCount] = js.native
+    var scrollPolicyOptions: js.UndefOr[MaxColumnCount] = js.undefined
     
-    var scrollPosition: js.UndefOr[ColumnIndex[K]] = js.native
+    var scrollPosition: js.UndefOr[ColumnIndex[K]] = js.undefined
     
-    var selection: js.UndefOr[js.Array[Selection[K]]] = js.native
+    var selection: js.UndefOr[js.Array[Selection[K]]] = js.undefined
     
-    var selectionMode: js.UndefOr[Cell] = js.native
+    var selectionMode: js.UndefOr[Cell] = js.undefined
     
-    var translations: js.UndefOr[AccessibleActionableMode] = js.native
+    var translations: js.UndefOr[AccessibleActionableMode] = js.undefined
   }
   object ojDataGridSettablePropertiesLenient {
     
-    @scala.inline
-    def apply[K, D](): ojDataGridSettablePropertiesLenient[K, D] = {
+    inline def apply[K, D](): ojDataGridSettablePropertiesLenient[K, D] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ojDataGridSettablePropertiesLenient[K, D]]
     }
     
-    @scala.inline
-    implicit class ojDataGridSettablePropertiesLenientMutableBuilder[Self <: ojDataGridSettablePropertiesLenient[_, _], K, D] (val x: Self with (ojDataGridSettablePropertiesLenient[K, D])) extends AnyVal {
+    extension [Self <: ojDataGridSettablePropertiesLenient[?, ?], K, D](x: Self & (ojDataGridSettablePropertiesLenient[K, D])) {
       
-      @scala.inline
-      def setBandingInterval(value: Column): Self = StObject.set(x, "bandingInterval", value.asInstanceOf[js.Any])
+      inline def setBandingInterval(value: Column): Self = StObject.set(x, "bandingInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBandingIntervalUndefined: Self = StObject.set(x, "bandingInterval", js.undefined)
+      inline def setBandingIntervalUndefined: Self = StObject.set(x, "bandingInterval", js.undefined)
       
-      @scala.inline
-      def setCell(value: ClassName[K, D]): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+      inline def setCell(value: ClassName[K, D]): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
+      inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
       
-      @scala.inline
-      def setCurrentCell(value: CurrentCell[K]): Self = StObject.set(x, "currentCell", value.asInstanceOf[js.Any])
+      inline def setCurrentCell(value: CurrentCell[K]): Self = StObject.set(x, "currentCell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentCellNull: Self = StObject.set(x, "currentCell", null)
+      inline def setCurrentCellNull: Self = StObject.set(x, "currentCell", null)
       
-      @scala.inline
-      def setCurrentCellUndefined: Self = StObject.set(x, "currentCell", js.undefined)
+      inline def setCurrentCellUndefined: Self = StObject.set(x, "currentCell", js.undefined)
       
-      @scala.inline
-      def setData(value: DataProvider[K, D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: DataProvider[K, D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataNull: Self = StObject.set(x, "data", null)
+      inline def setDataNull: Self = StObject.set(x, "data", null)
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDnd(value: Reorder): Self = StObject.set(x, "dnd", value.asInstanceOf[js.Any])
+      inline def setDnd(value: Reorder): Self = StObject.set(x, "dnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDndUndefined: Self = StObject.set(x, "dnd", js.undefined)
+      inline def setDndUndefined: Self = StObject.set(x, "dnd", js.undefined)
       
-      @scala.inline
-      def setEditMode(value: none | cellNavigation | cellEdit): Self = StObject.set(x, "editMode", value.asInstanceOf[js.Any])
+      inline def setEditMode(value: none | cellNavigation | cellEdit): Self = StObject.set(x, "editMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditModeUndefined: Self = StObject.set(x, "editMode", js.undefined)
+      inline def setEditModeUndefined: Self = StObject.set(x, "editMode", js.undefined)
       
-      @scala.inline
-      def setGridlines(value: Horizontal): Self = StObject.set(x, "gridlines", value.asInstanceOf[js.Any])
+      inline def setGridlines(value: Horizontal): Self = StObject.set(x, "gridlines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridlinesUndefined: Self = StObject.set(x, "gridlines", js.undefined)
+      inline def setGridlinesUndefined: Self = StObject.set(x, "gridlines", js.undefined)
       
-      @scala.inline
-      def setHeader(value: ColumnEnd[K, D]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: ColumnEnd[K, D]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setScrollPolicy(value: auto | loadMoreOnScroll | scroll): Self = StObject.set(x, "scrollPolicy", value.asInstanceOf[js.Any])
+      inline def setScrollPolicy(value: auto | loadMoreOnScroll | scroll): Self = StObject.set(x, "scrollPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollPolicyOptions(value: MaxColumnCount): Self = StObject.set(x, "scrollPolicyOptions", value.asInstanceOf[js.Any])
+      inline def setScrollPolicyOptions(value: MaxColumnCount): Self = StObject.set(x, "scrollPolicyOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollPolicyOptionsUndefined: Self = StObject.set(x, "scrollPolicyOptions", js.undefined)
+      inline def setScrollPolicyOptionsUndefined: Self = StObject.set(x, "scrollPolicyOptions", js.undefined)
       
-      @scala.inline
-      def setScrollPolicyUndefined: Self = StObject.set(x, "scrollPolicy", js.undefined)
+      inline def setScrollPolicyUndefined: Self = StObject.set(x, "scrollPolicy", js.undefined)
       
-      @scala.inline
-      def setScrollPosition(value: ColumnIndex[K]): Self = StObject.set(x, "scrollPosition", value.asInstanceOf[js.Any])
+      inline def setScrollPosition(value: ColumnIndex[K]): Self = StObject.set(x, "scrollPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollPositionUndefined: Self = StObject.set(x, "scrollPosition", js.undefined)
+      inline def setScrollPositionUndefined: Self = StObject.set(x, "scrollPosition", js.undefined)
       
-      @scala.inline
-      def setSelection(value: js.Array[Selection[K]]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      inline def setSelection(value: js.Array[Selection[K]]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionMode(value: Cell): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
+      inline def setSelectionMode(value: Cell): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
+      inline def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
       
-      @scala.inline
-      def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
+      inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
       
-      @scala.inline
-      def setSelectionVarargs(value: Selection[K]*): Self = StObject.set(x, "selection", js.Array(value :_*))
+      inline def setSelectionVarargs(value: Selection[K]*): Self = StObject.set(x, "selection", js.Array(value :_*))
       
-      @scala.inline
-      def setTranslations(value: AccessibleActionableMode): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: AccessibleActionableMode): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+      inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
     }
   }
 }

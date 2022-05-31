@@ -6,7 +6,6 @@ import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lightBlockMod {
@@ -20,9 +19,9 @@ object lightBlockMod {
       */
     def this(name: String) = this()
     
-    var _injectVertexCode: js.Any = js.native
+    /* private */ var _injectVertexCode: js.Any = js.native
     
-    var _lightId: js.Any = js.native
+    /* private */ var _lightId: js.Any = js.native
     
     /**
       * Gets the camera (or eye) position component

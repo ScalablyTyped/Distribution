@@ -8,12 +8,10 @@ import typings.luminoDisposable.mod.IDisposable
 import typings.luminoSignaling.mod.ISignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
   trait IRunningSessionManagers extends StObject {
     
     /**
@@ -22,12 +20,12 @@ object mod {
       * @param manager - The running item manager.
       *
       */
-    def add(manager: IManager): IDisposable = js.native
+    def add(manager: IManager): IDisposable
     
     /**
       * Return an array of managers.
       */
-    def items(): js.Array[IManager] = js.native
+    def items(): js.Array[IManager]
   }
   object IRunningSessionManagers {
     
@@ -35,22 +33,36 @@ object mod {
     @js.native
     val ^ : Token[IRunningSessionManagers] = js.native
     
-    @scala.inline
-    implicit class IRunningSessionManagersMutableBuilder[Self <: IRunningSessionManagers] (val x: Self) extends AnyVal {
+    extension [Self <: IRunningSessionManagers](x: Self) {
       
-      @scala.inline
-      def setAdd(value: IManager => IDisposable): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      inline def setAdd(value: IManager => IDisposable): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setItems(value: () => js.Array[IManager]): Self = StObject.set(x, "items", js.Any.fromFunction0(value))
+      inline def setItems(value: () => js.Array[IManager]): Self = StObject.set(x, "items", js.Any.fromFunction0(value))
     }
   }
   
   @JSImport("@jupyterlab/running", "RunningSessionManagers")
   @js.native
-  class RunningSessionManagers () extends IRunningSessionManagers {
+  class RunningSessionManagers ()
+    extends StObject
+       with IRunningSessionManagers {
     
-    var _managers: js.Any = js.native
+    /* private */ var _managers: js.Any = js.native
+    
+    /**
+      * Add a running item manager.
+      *
+      * @param manager - The running item manager.
+      *
+      */
+    /* CompleteClass */
+    override def add(manager: IManager): IDisposable = js.native
+    
+    /**
+      * Return an array of managers.
+      */
+    /* CompleteClass */
+    override def items(): js.Array[IManager] = js.native
   }
   
   @JSImport("@jupyterlab/running", "RunningSessions")
@@ -61,7 +73,7 @@ object mod {
       */
     def this(managers: IRunningSessionManagers) = this()
     
-    var managers: js.Any = js.native
+    /* private */ var managers: js.Any = js.native
   }
   
   object IRunningSessions {
@@ -69,97 +81,80 @@ object mod {
     /**
       * A manager of running items grouped under a single section.
       */
-    @js.native
     trait IManager extends StObject {
       
-      var name: String = js.native
+      var name: String
       
-      def refreshRunning(): Unit = js.native
+      def refreshRunning(): Unit
       
-      def running(): js.Array[IRunningItem] = js.native
+      def running(): js.Array[IRunningItem]
       
-      var runningChanged: ISignal[_, _] = js.native
+      var runningChanged: ISignal[js.Any, js.Any]
       
-      def shutdownAll(): Unit = js.native
+      def shutdownAll(): Unit
     }
     object IManager {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         name: String,
         refreshRunning: () => Unit,
         running: () => js.Array[IRunningItem],
-        runningChanged: ISignal[_, _],
+        runningChanged: ISignal[js.Any, js.Any],
         shutdownAll: () => Unit
       ): IManager = {
         val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], refreshRunning = js.Any.fromFunction0(refreshRunning), running = js.Any.fromFunction0(running), runningChanged = runningChanged.asInstanceOf[js.Any], shutdownAll = js.Any.fromFunction0(shutdownAll))
         __obj.asInstanceOf[IManager]
       }
       
-      @scala.inline
-      implicit class IManagerMutableBuilder[Self <: IManager] (val x: Self) extends AnyVal {
+      extension [Self <: IManager](x: Self) {
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRefreshRunning(value: () => Unit): Self = StObject.set(x, "refreshRunning", js.Any.fromFunction0(value))
+        inline def setRefreshRunning(value: () => Unit): Self = StObject.set(x, "refreshRunning", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setRunning(value: () => js.Array[IRunningItem]): Self = StObject.set(x, "running", js.Any.fromFunction0(value))
+        inline def setRunning(value: () => js.Array[IRunningItem]): Self = StObject.set(x, "running", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setRunningChanged(value: ISignal[_, _]): Self = StObject.set(x, "runningChanged", value.asInstanceOf[js.Any])
+        inline def setRunningChanged(value: ISignal[js.Any, js.Any]): Self = StObject.set(x, "runningChanged", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShutdownAll(value: () => Unit): Self = StObject.set(x, "shutdownAll", js.Any.fromFunction0(value))
+        inline def setShutdownAll(value: () => Unit): Self = StObject.set(x, "shutdownAll", js.Any.fromFunction0(value))
       }
     }
     
     /**
       * A running item.
       */
-    @js.native
     trait IRunningItem extends StObject {
       
-      def icon(): LabIcon = js.native
+      def icon(): LabIcon
       
-      def label(): String = js.native
+      def label(): String
       
-      var labelTitle: js.UndefOr[js.Function0[String]] = js.native
+      var labelTitle: js.UndefOr[js.Function0[String]] = js.undefined
       
-      def open(): Unit = js.native
+      def open(): Unit
       
-      def shutdown(): Unit = js.native
+      def shutdown(): Unit
     }
     object IRunningItem {
       
-      @scala.inline
-      def apply(icon: () => LabIcon, label: () => String, open: () => Unit, shutdown: () => Unit): IRunningItem = {
+      inline def apply(icon: () => LabIcon, label: () => String, open: () => Unit, shutdown: () => Unit): IRunningItem = {
         val __obj = js.Dynamic.literal(icon = js.Any.fromFunction0(icon), label = js.Any.fromFunction0(label), open = js.Any.fromFunction0(open), shutdown = js.Any.fromFunction0(shutdown))
         __obj.asInstanceOf[IRunningItem]
       }
       
-      @scala.inline
-      implicit class IRunningItemMutableBuilder[Self <: IRunningItem] (val x: Self) extends AnyVal {
+      extension [Self <: IRunningItem](x: Self) {
         
-        @scala.inline
-        def setIcon(value: () => LabIcon): Self = StObject.set(x, "icon", js.Any.fromFunction0(value))
+        inline def setIcon(value: () => LabIcon): Self = StObject.set(x, "icon", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setLabel(value: () => String): Self = StObject.set(x, "label", js.Any.fromFunction0(value))
+        inline def setLabel(value: () => String): Self = StObject.set(x, "label", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setLabelTitle(value: () => String): Self = StObject.set(x, "labelTitle", js.Any.fromFunction0(value))
+        inline def setLabelTitle(value: () => String): Self = StObject.set(x, "labelTitle", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setLabelTitleUndefined: Self = StObject.set(x, "labelTitle", js.undefined)
+        inline def setLabelTitleUndefined: Self = StObject.set(x, "labelTitle", js.undefined)
         
-        @scala.inline
-        def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+        inline def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setShutdown(value: () => Unit): Self = StObject.set(x, "shutdown", js.Any.fromFunction0(value))
+        inline def setShutdown(value: () => Unit): Self = StObject.set(x, "shutdown", js.Any.fromFunction0(value))
       }
     }
   }

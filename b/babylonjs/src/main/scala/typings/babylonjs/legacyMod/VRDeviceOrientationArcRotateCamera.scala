@@ -2,7 +2,6 @@ package typings.babylonjs.legacyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "VRDeviceOrientationArcRotateCamera")
@@ -44,7 +43,7 @@ class VRDeviceOrientationArcRotateCamera protected ()
     radius: Double,
     target: typings.babylonjs.mathVectorMod.Vector3,
     scene: typings.babylonjs.sceneMod.Scene,
-    compensateDistortion: js.UndefOr[scala.Nothing],
+    compensateDistortion: Boolean,
     vrCameraMetrics: typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
   ) = this()
   def this(
@@ -54,7 +53,7 @@ class VRDeviceOrientationArcRotateCamera protected ()
     radius: Double,
     target: typings.babylonjs.mathVectorMod.Vector3,
     scene: typings.babylonjs.sceneMod.Scene,
-    compensateDistortion: Boolean,
+    compensateDistortion: Unit,
     vrCameraMetrics: typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
   ) = this()
 }

@@ -4,13 +4,13 @@ import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.BABYLON.PostProcessOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.PostProcess")
 @js.native
 class PostProcess protected ()
-  extends typings.babylonjs.BABYLON.PostProcess {
+  extends StObject
+     with typings.babylonjs.BABYLON.PostProcess {
   /**
     * Creates a new instance PostProcess
     * @param name The name of the PostProcess.
@@ -50,6 +50,10 @@ class PostProcess protected ()
 /* static members */
 object PostProcess {
   
+  @JSGlobal("BABYLON.PostProcess")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a material from parsed material data
     * @param parsedPostProcess defines parsed post process data
@@ -57,7 +61,5 @@ object PostProcess {
     * @param rootUrl defines the root URL to use to load textures
     * @returns a new post process
     */
-  @JSGlobal("BABYLON.PostProcess.Parse")
-  @js.native
-  def Parse(parsedPostProcess: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): Nullable[typings.babylonjs.BABYLON.PostProcess] = js.native
+  inline def Parse(parsedPostProcess: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): Nullable[typings.babylonjs.BABYLON.PostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedPostProcess.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.PostProcess]]
 }

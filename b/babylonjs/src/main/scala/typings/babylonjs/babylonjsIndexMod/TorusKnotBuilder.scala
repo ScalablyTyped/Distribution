@@ -3,7 +3,6 @@ package typings.babylonjs.babylonjsIndexMod
 import typings.babylonjs.anon.Q
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Meshes/index", "TorusKnotBuilder")
@@ -12,6 +11,10 @@ class TorusKnotBuilder ()
   extends typings.babylonjs.buildersIndexMod.TorusKnotBuilder
 /* static members */
 object TorusKnotBuilder {
+  
+  @JSImport("babylonjs/Meshes/index", "TorusKnotBuilder")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a torus knot mesh
@@ -28,7 +31,5 @@ object TorusKnotBuilder {
     * @returns the torus knot mesh
     * @see  https://doc.babylonjs.com/how_to/set_shapes#torus-knot
     */
-  @JSImport("babylonjs/Meshes/index", "TorusKnotBuilder.CreateTorusKnot")
-  @js.native
-  def CreateTorusKnot(name: String, options: Q, scene: js.Any): typings.babylonjs.meshMod.Mesh = js.native
+  inline def CreateTorusKnot(name: String, options: Q, scene: js.Any): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
 }

@@ -11,6 +11,7 @@ import typings.jupyterlabCodeeditor.editorMod.CodeEditor.EdgeLocation
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IEditor
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IModel
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IPosition
+import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IRange
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.ISelectionStyle
 import typings.jupyterlabCodemirror.anon.Bias
 import typings.jupyterlabCodemirror.anon.Bottom
@@ -62,14 +63,15 @@ import typings.std.KeyboardEvent
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object editorMod {
   
   @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor")
   @js.native
-  class CodeMirrorEditor protected () extends IEditor {
+  class CodeMirrorEditor protected ()
+    extends StObject
+       with IEditor {
     /**
       * Construct a CodeMirror editor.
       */
@@ -78,128 +80,128 @@ object editorMod {
     /**
       * Handles document changes.
       */
-    var _beforeDocChanged: js.Any = js.native
+    /* private */ var _beforeDocChanged: js.Any = js.native
     
-    var _caretHover: js.Any = js.native
+    /* private */ var _caretHover: js.Any = js.native
     
-    var _changeGuard: js.Any = js.native
+    /* private */ var _changeGuard: js.Any = js.native
     
     /**
       * Check for an out of sync editor.
       */
-    var _checkSync: js.Any = js.native
+    /* private */ var _checkSync: js.Any = js.native
     
     /**
       * Clean selections for the given uuid.
       */
-    var _cleanSelections: js.Any = js.native
+    /* private */ var _cleanSelections: js.Any = js.native
     
     /**
       * Clear the hover for a caret, due to things like
       * scrolling, resizing, deactivation, etc, where
       * the position is no longer valid.
       */
-    var _clearHover: js.Any = js.native
+    /* private */ var _clearHover: js.Any = js.native
     
-    val _config: js.Any = js.native
+    /* private */ val _config: js.Any = js.native
     
-    var _editor: js.Any = js.native
+    /* private */ var _editor: js.Any = js.native
     
     /**
       * Handle `blur` events for the editor.
       */
-    var _evtBlur: js.Any = js.native
+    /* private */ var _evtBlur: js.Any = js.native
     
     /**
       * Handle `focus` events for the editor.
       */
-    var _evtFocus: js.Any = js.native
+    /* private */ var _evtFocus: js.Any = js.native
     
     /**
       * Handle `scroll` events for the editor.
       */
-    var _evtScroll: js.Any = js.native
+    /* private */ var _evtScroll: js.Any = js.native
     
     /**
       * Construct a caret element representing the position
       * of a collaborator's cursor.
       */
-    var _getCaret: js.Any = js.native
+    /* private */ var _getCaret: js.Any = js.native
     
-    var _hoverId: js.Any = js.native
+    /* private */ var _hoverId: js.Any = js.native
     
-    var _hoverTimeout: js.Any = js.native
+    /* private */ var _hoverTimeout: js.Any = js.native
     
-    var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: js.Any = js.native
     
-    var _keydownHandlers: js.Any = js.native
+    /* private */ var _keydownHandlers: js.Any = js.native
     
-    var _lastChange: js.Any = js.native
+    /* private */ var _lastChange: js.Any = js.native
     
     /**
       * Marks selections.
       */
-    var _markSelections: js.Any = js.native
+    /* private */ var _markSelections: js.Any = js.native
     
-    var _model: js.Any = js.native
+    /* private */ var _model: js.Any = js.native
     
-    var _needsRefresh: js.Any = js.native
+    /* private */ var _needsRefresh: js.Any = js.native
     
     /**
       * Handles a cursor activity event.
       */
-    var _onCursorActivity: js.Any = js.native
+    /* private */ var _onCursorActivity: js.Any = js.native
     
     /**
       * Handles a mime type change.
       */
-    var _onMimeTypeChanged: js.Any = js.native
+    /* private */ var _onMimeTypeChanged: js.Any = js.native
     
     /**
       * Handles a selections change.
       */
-    var _onSelectionsChanged: js.Any = js.native
+    /* private */ var _onSelectionsChanged: js.Any = js.native
     
     /**
       * Handle model value changes.
       */
-    var _onValueChanged: js.Any = js.native
+    /* private */ var _onValueChanged: js.Any = js.native
     
-    var _poll: js.Any = js.native
+    /* private */ var _poll: js.Any = js.native
     
-    var _selectionStyle: js.Any = js.native
+    /* private */ var _selectionStyle: js.Any = js.native
     
     /**
       * Convert an editor position to a code mirror position.
       */
-    var _toCodeMirrorPosition: js.Any = js.native
+    /* private */ var _toCodeMirrorPosition: js.Any = js.native
     
     /**
       * Converts an editor selection to a code mirror selection.
       */
-    var _toCodeMirrorSelection: js.Any = js.native
+    /* private */ var _toCodeMirrorSelection: js.Any = js.native
     
     /**
       * Converts selections to code mirror selections.
       */
-    var _toCodeMirrorSelections: js.Any = js.native
+    /* private */ var _toCodeMirrorSelections: js.Any = js.native
     
     /**
       * Convert a code mirror position to an editor position.
       */
-    var _toPosition: js.Any = js.native
+    /* private */ var _toPosition: js.Any = js.native
     
     /**
       * Converts a code mirror selection to an editor selection.
       */
-    var _toSelection: js.Any = js.native
+    /* private */ var _toSelection: js.Any = js.native
     
     /**
       * Converts the selection style to a text marker options.
       */
-    var _toTextMarkerOptions: js.Any = js.native
+    /* private */ var _toTextMarkerOptions: js.Any = js.native
     
-    var _uuid: js.Any = js.native
+    /* private */ var _uuid: js.Any = js.native
     
     def addOverlay(mode: String): Unit = js.native
     def addOverlay(mode: String, options: js.Object): Unit = js.native
@@ -219,6 +221,20 @@ object editorMod {
     def cursorCoords_page(where: Boolean, mode: page): Bottom = js.native
     @JSName("cursorCoords")
     def cursorCoords_window(where: Boolean, mode: window): Bottom = js.native
+    
+    /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * Get the codemirror doc wrapped by the widget.
@@ -247,6 +263,12 @@ object editorMod {
     
     def getCursor(): Position = js.native
     def getCursor(start: String): Position = js.native
+    
+    /**
+      * Returns the primary position of the cursor, never `null`.
+      */
+    /* CompleteClass */
+    override def getCursorPosition(): IPosition = js.native
     
     @JSName("getOption")
     def getOption_autoClosingBrackets(option: autoClosingBrackets): Boolean = js.native
@@ -322,13 +344,25 @@ object editorMod {
     def getRange(from: Position, to: Position, seperator: String): String = js.native
     
     def getSearchCursor(query: String): SearchCursor = js.native
-    def getSearchCursor(query: String, start: js.UndefOr[scala.Nothing], caseFold: Boolean): SearchCursor = js.native
+    def getSearchCursor(query: String, start: Unit, caseFold: Boolean): SearchCursor = js.native
     def getSearchCursor(query: String, start: Position): SearchCursor = js.native
     def getSearchCursor(query: String, start: Position, caseFold: Boolean): SearchCursor = js.native
     def getSearchCursor(query: RegExp): SearchCursor = js.native
-    def getSearchCursor(query: RegExp, start: js.UndefOr[scala.Nothing], caseFold: Boolean): SearchCursor = js.native
+    def getSearchCursor(query: RegExp, start: Unit, caseFold: Boolean): SearchCursor = js.native
     def getSearchCursor(query: RegExp, start: Position): SearchCursor = js.native
     def getSearchCursor(query: RegExp, start: Position, caseFold: Boolean): SearchCursor = js.native
+    
+    /**
+      * Returns the primary selection, never `null`.
+      */
+    /* CompleteClass */
+    override def getSelection(): IRange = js.native
+    
+    /**
+      * Gets the selections for all the cursors, never `null` or empty.
+      */
+    /* CompleteClass */
+    override def getSelections(): js.Array[IRange] = js.native
     
     /**
       * Handle the DOM events for the editor.
@@ -342,6 +376,14 @@ object editorMod {
       */
     def handleEvent(event: Event): Unit = js.native
     
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
     /**
       * Tests whether the editor is disposed.
       */
@@ -388,7 +430,7 @@ object editorMod {
     
     def scrollIntoView(pos: From, margin: Double): Unit = js.native
     
-    var selectionMarkers: StringDictionary[js.UndefOr[js.Array[TextMarker]]] = js.native
+    /* protected */ var selectionMarkers: StringDictionary[js.UndefOr[js.Array[TextMarker]]] = js.native
     
     /**
       * The selection style of this editor.
@@ -396,6 +438,16 @@ object editorMod {
     @JSName("selectionStyle")
     def selectionStyle_MCodeMirrorEditor: ISelectionStyle = js.native
     
+    /**
+      * Set the primary position of the cursor.
+      *
+      * @param position - The new primary position.
+      *
+      * #### Notes
+      * This will remove any secondary cursors.
+      */
+    /* CompleteClass */
+    override def setCursorPosition(position: IPosition): Unit = js.native
     def setCursorPosition(position: IPosition, options: Bias): Unit = js.native
     
     def setOption(option: lineWrap, value: bounded): Unit = js.native
@@ -516,8 +568,37 @@ object editorMod {
     @JSName("setOption")
     def setOption_wordWrapColumn(option: wordWrapColumn, value: Double): Unit = js.native
     
+    /**
+      * Set the primary selection.
+      *
+      * @param selection - The desired selection range.
+      *
+      * #### Notes
+      * This will remove any secondary cursors.
+      */
+    /* CompleteClass */
+    override def setSelection(selection: IRange): Unit = js.native
+    
+    /**
+      * Sets the selections for all the cursors.
+      *
+      * @param selections - The new selections.
+      *
+      * #### Notes
+      * Cursors will be removed or added, as necessary.
+      * Passing an empty array resets a cursor position to the start of a
+      * document.
+      */
+    /* CompleteClass */
+    override def setSelections(selections: js.Array[IRange]): Unit = js.native
+    
     def state: js.Any = js.native
     
+    /**
+      * The uuid of this selection owner.
+      */
+    /* CompleteClass */
+    var uuid: String = js.native
     /**
       * The uuid of this editor;
       */
@@ -526,6 +607,10 @@ object editorMod {
   }
   object CodeMirrorEditor {
     
+    @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Add a command to CodeMirror.
       *
@@ -533,9 +618,7 @@ object editorMod {
       *
       * @param command - The command function.
       */
-    @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.addCommand")
-    @js.native
-    def addCommand(name: String, command: js.Function1[/* cm */ Editor, Unit]): Unit = js.native
+    inline def addCommand(name: String, command: js.Function1[/* cm */ Editor, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCommand")(name.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * The default configuration options for an editor.
@@ -550,208 +633,175 @@ object editorMod {
       @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.defaultConfig.autoClosingBrackets")
       @js.native
       def autoClosingBrackets: Boolean = js.native
-      @scala.inline
-      def autoClosingBrackets_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("autoClosingBrackets")(x.asInstanceOf[js.Any])
+      inline def autoClosingBrackets_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("autoClosingBrackets")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.defaultConfig.codeFolding")
       @js.native
       def codeFolding: Boolean = js.native
-      @scala.inline
-      def codeFolding_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("codeFolding")(x.asInstanceOf[js.Any])
+      inline def codeFolding_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("codeFolding")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.defaultConfig.coverGutterNextToScrollbar")
       @js.native
       def coverGutterNextToScrollbar: Boolean = js.native
-      @scala.inline
-      def coverGutterNextToScrollbar_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("coverGutterNextToScrollbar")(x.asInstanceOf[js.Any])
+      inline def coverGutterNextToScrollbar_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("coverGutterNextToScrollbar")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.defaultConfig.dragDrop")
       @js.native
       def dragDrop: Boolean = js.native
-      @scala.inline
-      def dragDrop_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dragDrop")(x.asInstanceOf[js.Any])
+      inline def dragDrop_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dragDrop")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.defaultConfig.electricChars")
       @js.native
       def electricChars: Boolean = js.native
-      @scala.inline
-      def electricChars_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("electricChars")(x.asInstanceOf[js.Any])
+      inline def electricChars_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("electricChars")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.defaultConfig.extraKeys")
       @js.native
       def extraKeys: js.Any = js.native
-      @scala.inline
-      def extraKeys_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extraKeys")(x.asInstanceOf[js.Any])
+      inline def extraKeys_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extraKeys")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.defaultConfig.fixedGutter")
       @js.native
       def fixedGutter: Boolean = js.native
-      @scala.inline
-      def fixedGutter_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fixedGutter")(x.asInstanceOf[js.Any])
+      inline def fixedGutter_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fixedGutter")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.defaultConfig.foldGutter")
       @js.native
       def foldGutter: Boolean = js.native
-      @scala.inline
-      def foldGutter_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("foldGutter")(x.asInstanceOf[js.Any])
+      inline def foldGutter_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("foldGutter")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.defaultConfig.fontFamily")
       @js.native
       def fontFamily: String = js.native
-      @scala.inline
-      def fontFamily_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fontFamily")(x.asInstanceOf[js.Any])
+      inline def fontFamily_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fontFamily")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.defaultConfig.fontSize")
       @js.native
       def fontSize: Double = js.native
-      @scala.inline
-      def fontSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fontSize")(x.asInstanceOf[js.Any])
+      inline def fontSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fontSize")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.defaultConfig.gutters")
       @js.native
       def gutters: js.Array[String] = js.native
-      @scala.inline
-      def gutters_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gutters")(x.asInstanceOf[js.Any])
+      inline def gutters_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gutters")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.defaultConfig.handlePaste")
       @js.native
       def handlePaste: Boolean = js.native
-      @scala.inline
-      def handlePaste_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("handlePaste")(x.asInstanceOf[js.Any])
+      inline def handlePaste_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("handlePaste")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.defaultConfig.insertSpaces")
       @js.native
       def insertSpaces: Boolean = js.native
-      @scala.inline
-      def insertSpaces_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("insertSpaces")(x.asInstanceOf[js.Any])
+      inline def insertSpaces_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("insertSpaces")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.defaultConfig.keyMap")
       @js.native
       def keyMap: String = js.native
-      @scala.inline
-      def keyMap_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keyMap")(x.asInstanceOf[js.Any])
+      inline def keyMap_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keyMap")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.defaultConfig.lineHeight")
       @js.native
       def lineHeight: Double = js.native
-      @scala.inline
-      def lineHeight_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lineHeight")(x.asInstanceOf[js.Any])
+      inline def lineHeight_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lineHeight")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.defaultConfig.lineNumbers")
       @js.native
       def lineNumbers: Boolean = js.native
-      @scala.inline
-      def lineNumbers_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lineNumbers")(x.asInstanceOf[js.Any])
+      inline def lineNumbers_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lineNumbers")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.defaultConfig.lineSeparator")
       @js.native
       def lineSeparator: String = js.native
-      @scala.inline
-      def lineSeparator_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lineSeparator")(x.asInstanceOf[js.Any])
+      inline def lineSeparator_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lineSeparator")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.defaultConfig.lineWiseCopyCut")
       @js.native
       def lineWiseCopyCut: Boolean = js.native
-      @scala.inline
-      def lineWiseCopyCut_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lineWiseCopyCut")(x.asInstanceOf[js.Any])
+      inline def lineWiseCopyCut_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lineWiseCopyCut")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.defaultConfig.lineWrap")
       @js.native
       def lineWrap: off | on | wordWrapColumn | bounded = js.native
-      @scala.inline
-      def lineWrap_=(x: off | on | wordWrapColumn | bounded): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lineWrap")(x.asInstanceOf[js.Any])
+      inline def lineWrap_=(x: off | on | wordWrapColumn | bounded): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lineWrap")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.defaultConfig.matchBrackets")
       @js.native
       def matchBrackets: Boolean = js.native
-      @scala.inline
-      def matchBrackets_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matchBrackets")(x.asInstanceOf[js.Any])
+      inline def matchBrackets_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matchBrackets")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.defaultConfig.mode")
       @js.native
       def mode: String | IMode = js.native
-      @scala.inline
-      def mode_=(x: String | IMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mode")(x.asInstanceOf[js.Any])
+      inline def mode_=(x: String | IMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mode")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.defaultConfig.readOnly")
       @js.native
       def readOnly: Boolean = js.native
-      @scala.inline
-      def readOnly_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("readOnly")(x.asInstanceOf[js.Any])
+      inline def readOnly_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("readOnly")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.defaultConfig.rulers")
       @js.native
       def rulers: js.Array[Double] = js.native
-      @scala.inline
-      def rulers_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rulers")(x.asInstanceOf[js.Any])
+      inline def rulers_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rulers")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.defaultConfig.scrollPastEnd")
       @js.native
       def scrollPastEnd: Boolean = js.native
-      @scala.inline
-      def scrollPastEnd_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scrollPastEnd")(x.asInstanceOf[js.Any])
+      inline def scrollPastEnd_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scrollPastEnd")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.defaultConfig.scrollbarStyle")
       @js.native
       def scrollbarStyle: String = js.native
-      @scala.inline
-      def scrollbarStyle_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scrollbarStyle")(x.asInstanceOf[js.Any])
+      inline def scrollbarStyle_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scrollbarStyle")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.defaultConfig.selectionPointer")
       @js.native
       def selectionPointer: Boolean | String = js.native
-      @scala.inline
-      def selectionPointer_=(x: Boolean | String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selectionPointer")(x.asInstanceOf[js.Any])
+      inline def selectionPointer_=(x: Boolean | String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selectionPointer")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.defaultConfig.showCursorWhenSelecting")
       @js.native
       def showCursorWhenSelecting: Boolean = js.native
-      @scala.inline
-      def showCursorWhenSelecting_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showCursorWhenSelecting")(x.asInstanceOf[js.Any])
+      inline def showCursorWhenSelecting_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showCursorWhenSelecting")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.defaultConfig.smartIndent")
       @js.native
       def smartIndent: Boolean = js.native
-      @scala.inline
-      def smartIndent_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("smartIndent")(x.asInstanceOf[js.Any])
+      inline def smartIndent_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("smartIndent")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.defaultConfig.styleActiveLine")
       @js.native
       def styleActiveLine: Boolean | StyleActiveLine = js.native
-      @scala.inline
-      def styleActiveLine_=(x: Boolean | StyleActiveLine): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("styleActiveLine")(x.asInstanceOf[js.Any])
+      inline def styleActiveLine_=(x: Boolean | StyleActiveLine): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("styleActiveLine")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.defaultConfig.styleSelectedText")
       @js.native
       def styleSelectedText: Boolean = js.native
-      @scala.inline
-      def styleSelectedText_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("styleSelectedText")(x.asInstanceOf[js.Any])
+      inline def styleSelectedText_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("styleSelectedText")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.defaultConfig.tabSize")
       @js.native
       def tabSize: Double = js.native
-      @scala.inline
-      def tabSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tabSize")(x.asInstanceOf[js.Any])
+      inline def tabSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tabSize")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.defaultConfig.theme")
       @js.native
       def theme: String = js.native
-      @scala.inline
-      def theme_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("theme")(x.asInstanceOf[js.Any])
+      inline def theme_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("theme")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror/lib/editor", "CodeMirrorEditor.defaultConfig.wordWrapColumn")
       @js.native
       def wordWrapColumn: Double = js.native
-      @scala.inline
-      def wordWrapColumn_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wordWrapColumn")(x.asInstanceOf[js.Any])
+      inline def wordWrapColumn_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wordWrapColumn")(x.asInstanceOf[js.Any])
     }
     
     /**
       * The configuration options for a codemirror editor.
       */
-    @js.native
     trait IConfig
-      extends typings.jupyterlabCodeeditor.editorMod.CodeEditor.IConfig {
+      extends StObject
+         with typings.jupyterlabCodeeditor.editorMod.CodeEditor.IConfig {
       
       /**
         * When fixedGutter is on, and there is a horizontal scrollbar, by default
@@ -759,25 +809,25 @@ object editorMod {
         * option is set to true, it will be covered by an element with class
         * CodeMirror-gutter-filler.
         */
-      var coverGutterNextToScrollbar: js.UndefOr[Boolean] = js.native
+      var coverGutterNextToScrollbar: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Controls whether drag-and-drop is enabled.
         */
-      var dragDrop: js.UndefOr[Boolean] = js.native
+      var dragDrop: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Configures whether the editor should re-indent the current line when a
         * character is typed that might change its proper indentation
         * (only works if the mode supports indentation).
         */
-      var electricChars: js.UndefOr[Boolean] = js.native
+      var electricChars: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Can be used to specify extra keybindings for the editor, alongside the
         * ones defined by keyMap. Should be either null, or a valid keymap value.
         */
-      var extraKeys: js.UndefOr[js.Any] = js.native
+      var extraKeys: js.UndefOr[js.Any] = js.undefined
       
       /**
         * Determines whether the gutter scrolls along with the content
@@ -785,12 +835,12 @@ object editorMod {
         * or whether it stays fixed during horizontal scrolling (true,
         * the default).
         */
-      var fixedGutter: js.UndefOr[Boolean] = js.native
+      var fixedGutter: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Whether the folding gutter should be drawn
         */
-      var foldGutter: js.UndefOr[Boolean] = js.native
+      var foldGutter: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Can be used to add extra gutters (beyond or instead of the line number
@@ -803,14 +853,14 @@ object editorMod {
         * (it will default to be to the right of all other gutters).
         * These class names are the keys passed to setGutterMarker.
         */
-      var gutters: js.UndefOr[js.Array[String]] = js.native
+      var gutters: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * Configures the keymap to use. The default is "default", which is the
         * only keymap defined in codemirror.js itself.
         * Extra keymaps are found in the CodeMirror keymap directory.
         */
-      var keyMap: js.UndefOr[String] = js.native
+      var keyMap: js.UndefOr[String] = js.undefined
       
       /**
         * Explicitly set the line separator for the editor.
@@ -820,23 +870,23 @@ object editorMod {
         * only be split on that string, and output will, by default, use that
         * same separator.
         */
-      var lineSeparator: js.UndefOr[String | Null] = js.native
+      var lineSeparator: js.UndefOr[String | Null] = js.undefined
       
       /**
         * When enabled, which is the default, doing copy or cut when there is no
         * selection will copy or cut the whole lines that have cursors on them.
         */
-      var lineWiseCopyCut: js.UndefOr[Boolean] = js.native
+      var lineWiseCopyCut: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The mode to use.
         */
-      var mode: js.UndefOr[String | IMode] = js.native
+      var mode: js.UndefOr[String | IMode] = js.undefined
       
       /**
         * Whether to scroll past the end of the buffer.
         */
-      var scrollPastEnd: js.UndefOr[Boolean] = js.native
+      var scrollPastEnd: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Chooses a scrollbar implementation. The default is "native", showing
@@ -844,25 +894,25 @@ object editorMod {
         * which completely hides the scrollbars. Addons can implement additional
         * scrollbar models.
         */
-      var scrollbarStyle: js.UndefOr[String] = js.native
+      var scrollbarStyle: js.UndefOr[String] = js.undefined
       
       /**
         * Defines the mouse cursor appearance when hovering over the selection.
         * It can be set to a string, like "pointer", or to true,
         * in which case the "default" (arrow) cursor will be used.
         */
-      var selectionPointer: Boolean | String = js.native
+      var selectionPointer: Boolean | String
       
       /**
         * Whether the cursor should be drawn when a selection is active.
         */
-      var showCursorWhenSelecting: js.UndefOr[Boolean] = js.native
+      var showCursorWhenSelecting: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Whether to use the context-sensitive indentation that the mode provides
         * (or just indent the same as the line before).
         */
-      var smartIndent: js.UndefOr[Boolean] = js.native
+      var smartIndent: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Whether to give the wrapper of the line that contains the cursor the class
@@ -870,26 +920,25 @@ object editorMod {
         * CodeMirror-activeline-background, and adds the class
         * CodeMirror-activeline-gutter to the line's gutter space is enabled.
         */
-      var styleActiveLine: Boolean | StyleActiveLine = js.native
+      var styleActiveLine: Boolean | StyleActiveLine
       
       /**
         * Whether to causes the selected text to be marked with the CSS class
         * CodeMirror-selectedtext. Useful to change the colour of the selection
         * (in addition to the background).
         */
-      var styleSelectedText: Boolean = js.native
+      var styleSelectedText: Boolean
       
       /**
         * The theme to style the editor with.
         * You must make sure the CSS file defining the corresponding
         * .cm-s-[name] styles is loaded.
         */
-      var theme: js.UndefOr[String] = js.native
+      var theme: js.UndefOr[String] = js.undefined
     }
     object IConfig {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         autoClosingBrackets: Boolean,
         codeFolding: Boolean,
         insertSpaces: Boolean,
@@ -904,136 +953,97 @@ object editorMod {
         tabSize: Double,
         wordWrapColumn: Double
       ): IConfig = {
-        val __obj = js.Dynamic.literal(autoClosingBrackets = autoClosingBrackets.asInstanceOf[js.Any], codeFolding = codeFolding.asInstanceOf[js.Any], insertSpaces = insertSpaces.asInstanceOf[js.Any], lineNumbers = lineNumbers.asInstanceOf[js.Any], lineWrap = lineWrap.asInstanceOf[js.Any], matchBrackets = matchBrackets.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], rulers = rulers.asInstanceOf[js.Any], selectionPointer = selectionPointer.asInstanceOf[js.Any], styleActiveLine = styleActiveLine.asInstanceOf[js.Any], styleSelectedText = styleSelectedText.asInstanceOf[js.Any], tabSize = tabSize.asInstanceOf[js.Any], wordWrapColumn = wordWrapColumn.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(autoClosingBrackets = autoClosingBrackets.asInstanceOf[js.Any], codeFolding = codeFolding.asInstanceOf[js.Any], insertSpaces = insertSpaces.asInstanceOf[js.Any], lineNumbers = lineNumbers.asInstanceOf[js.Any], lineWrap = lineWrap.asInstanceOf[js.Any], matchBrackets = matchBrackets.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], rulers = rulers.asInstanceOf[js.Any], selectionPointer = selectionPointer.asInstanceOf[js.Any], styleActiveLine = styleActiveLine.asInstanceOf[js.Any], styleSelectedText = styleSelectedText.asInstanceOf[js.Any], tabSize = tabSize.asInstanceOf[js.Any], wordWrapColumn = wordWrapColumn.asInstanceOf[js.Any], fontFamily = null, fontSize = null, lineHeight = null)
         __obj.asInstanceOf[IConfig]
       }
       
-      @scala.inline
-      implicit class IConfigMutableBuilder[Self <: IConfig] (val x: Self) extends AnyVal {
+      extension [Self <: IConfig](x: Self) {
         
-        @scala.inline
-        def setCoverGutterNextToScrollbar(value: Boolean): Self = StObject.set(x, "coverGutterNextToScrollbar", value.asInstanceOf[js.Any])
+        inline def setCoverGutterNextToScrollbar(value: Boolean): Self = StObject.set(x, "coverGutterNextToScrollbar", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCoverGutterNextToScrollbarUndefined: Self = StObject.set(x, "coverGutterNextToScrollbar", js.undefined)
+        inline def setCoverGutterNextToScrollbarUndefined: Self = StObject.set(x, "coverGutterNextToScrollbar", js.undefined)
         
-        @scala.inline
-        def setDragDrop(value: Boolean): Self = StObject.set(x, "dragDrop", value.asInstanceOf[js.Any])
+        inline def setDragDrop(value: Boolean): Self = StObject.set(x, "dragDrop", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDragDropUndefined: Self = StObject.set(x, "dragDrop", js.undefined)
+        inline def setDragDropUndefined: Self = StObject.set(x, "dragDrop", js.undefined)
         
-        @scala.inline
-        def setElectricChars(value: Boolean): Self = StObject.set(x, "electricChars", value.asInstanceOf[js.Any])
+        inline def setElectricChars(value: Boolean): Self = StObject.set(x, "electricChars", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setElectricCharsUndefined: Self = StObject.set(x, "electricChars", js.undefined)
+        inline def setElectricCharsUndefined: Self = StObject.set(x, "electricChars", js.undefined)
         
-        @scala.inline
-        def setExtraKeys(value: js.Any): Self = StObject.set(x, "extraKeys", value.asInstanceOf[js.Any])
+        inline def setExtraKeys(value: js.Any): Self = StObject.set(x, "extraKeys", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExtraKeysUndefined: Self = StObject.set(x, "extraKeys", js.undefined)
+        inline def setExtraKeysUndefined: Self = StObject.set(x, "extraKeys", js.undefined)
         
-        @scala.inline
-        def setFixedGutter(value: Boolean): Self = StObject.set(x, "fixedGutter", value.asInstanceOf[js.Any])
+        inline def setFixedGutter(value: Boolean): Self = StObject.set(x, "fixedGutter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFixedGutterUndefined: Self = StObject.set(x, "fixedGutter", js.undefined)
+        inline def setFixedGutterUndefined: Self = StObject.set(x, "fixedGutter", js.undefined)
         
-        @scala.inline
-        def setFoldGutter(value: Boolean): Self = StObject.set(x, "foldGutter", value.asInstanceOf[js.Any])
+        inline def setFoldGutter(value: Boolean): Self = StObject.set(x, "foldGutter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFoldGutterUndefined: Self = StObject.set(x, "foldGutter", js.undefined)
+        inline def setFoldGutterUndefined: Self = StObject.set(x, "foldGutter", js.undefined)
         
-        @scala.inline
-        def setGutters(value: js.Array[String]): Self = StObject.set(x, "gutters", value.asInstanceOf[js.Any])
+        inline def setGutters(value: js.Array[String]): Self = StObject.set(x, "gutters", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGuttersUndefined: Self = StObject.set(x, "gutters", js.undefined)
+        inline def setGuttersUndefined: Self = StObject.set(x, "gutters", js.undefined)
         
-        @scala.inline
-        def setGuttersVarargs(value: String*): Self = StObject.set(x, "gutters", js.Array(value :_*))
+        inline def setGuttersVarargs(value: String*): Self = StObject.set(x, "gutters", js.Array(value :_*))
         
-        @scala.inline
-        def setKeyMap(value: String): Self = StObject.set(x, "keyMap", value.asInstanceOf[js.Any])
+        inline def setKeyMap(value: String): Self = StObject.set(x, "keyMap", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeyMapUndefined: Self = StObject.set(x, "keyMap", js.undefined)
+        inline def setKeyMapUndefined: Self = StObject.set(x, "keyMap", js.undefined)
         
-        @scala.inline
-        def setLineSeparator(value: String): Self = StObject.set(x, "lineSeparator", value.asInstanceOf[js.Any])
+        inline def setLineSeparator(value: String): Self = StObject.set(x, "lineSeparator", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLineSeparatorNull: Self = StObject.set(x, "lineSeparator", null)
+        inline def setLineSeparatorNull: Self = StObject.set(x, "lineSeparator", null)
         
-        @scala.inline
-        def setLineSeparatorUndefined: Self = StObject.set(x, "lineSeparator", js.undefined)
+        inline def setLineSeparatorUndefined: Self = StObject.set(x, "lineSeparator", js.undefined)
         
-        @scala.inline
-        def setLineWiseCopyCut(value: Boolean): Self = StObject.set(x, "lineWiseCopyCut", value.asInstanceOf[js.Any])
+        inline def setLineWiseCopyCut(value: Boolean): Self = StObject.set(x, "lineWiseCopyCut", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLineWiseCopyCutUndefined: Self = StObject.set(x, "lineWiseCopyCut", js.undefined)
+        inline def setLineWiseCopyCutUndefined: Self = StObject.set(x, "lineWiseCopyCut", js.undefined)
         
-        @scala.inline
-        def setMode(value: String | IMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+        inline def setMode(value: String | IMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+        inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
         
-        @scala.inline
-        def setScrollPastEnd(value: Boolean): Self = StObject.set(x, "scrollPastEnd", value.asInstanceOf[js.Any])
+        inline def setScrollPastEnd(value: Boolean): Self = StObject.set(x, "scrollPastEnd", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScrollPastEndUndefined: Self = StObject.set(x, "scrollPastEnd", js.undefined)
+        inline def setScrollPastEndUndefined: Self = StObject.set(x, "scrollPastEnd", js.undefined)
         
-        @scala.inline
-        def setScrollbarStyle(value: String): Self = StObject.set(x, "scrollbarStyle", value.asInstanceOf[js.Any])
+        inline def setScrollbarStyle(value: String): Self = StObject.set(x, "scrollbarStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScrollbarStyleUndefined: Self = StObject.set(x, "scrollbarStyle", js.undefined)
+        inline def setScrollbarStyleUndefined: Self = StObject.set(x, "scrollbarStyle", js.undefined)
         
-        @scala.inline
-        def setSelectionPointer(value: Boolean | String): Self = StObject.set(x, "selectionPointer", value.asInstanceOf[js.Any])
+        inline def setSelectionPointer(value: Boolean | String): Self = StObject.set(x, "selectionPointer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShowCursorWhenSelecting(value: Boolean): Self = StObject.set(x, "showCursorWhenSelecting", value.asInstanceOf[js.Any])
+        inline def setShowCursorWhenSelecting(value: Boolean): Self = StObject.set(x, "showCursorWhenSelecting", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShowCursorWhenSelectingUndefined: Self = StObject.set(x, "showCursorWhenSelecting", js.undefined)
+        inline def setShowCursorWhenSelectingUndefined: Self = StObject.set(x, "showCursorWhenSelecting", js.undefined)
         
-        @scala.inline
-        def setSmartIndent(value: Boolean): Self = StObject.set(x, "smartIndent", value.asInstanceOf[js.Any])
+        inline def setSmartIndent(value: Boolean): Self = StObject.set(x, "smartIndent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSmartIndentUndefined: Self = StObject.set(x, "smartIndent", js.undefined)
+        inline def setSmartIndentUndefined: Self = StObject.set(x, "smartIndent", js.undefined)
         
-        @scala.inline
-        def setStyleActiveLine(value: Boolean | StyleActiveLine): Self = StObject.set(x, "styleActiveLine", value.asInstanceOf[js.Any])
+        inline def setStyleActiveLine(value: Boolean | StyleActiveLine): Self = StObject.set(x, "styleActiveLine", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStyleSelectedText(value: Boolean): Self = StObject.set(x, "styleSelectedText", value.asInstanceOf[js.Any])
+        inline def setStyleSelectedText(value: Boolean): Self = StObject.set(x, "styleSelectedText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+        inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+        inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       }
     }
     
     /**
       * The options used to initialize a code mirror editor.
       */
-    @js.native
     trait IOptions
-      extends typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions
+      extends StObject
+         with typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions
     object IOptions {
       
-      @scala.inline
-      def apply(host: HTMLElement, model: IModel): IOptions = {
+      inline def apply(host: HTMLElement, model: IModel): IOptions = {
         val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }

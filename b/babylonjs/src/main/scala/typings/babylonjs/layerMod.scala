@@ -9,7 +9,6 @@ import typings.babylonjs.textureMod.Texture
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layerMod {
@@ -52,7 +51,7 @@ object layerMod {
     name: String,
       imgUrl: Nullable[String],
       scene: Nullable[Scene],
-      isBackground: js.UndefOr[scala.Nothing],
+      isBackground: Boolean,
       color: Color4
     ) = this()
     def this(
@@ -62,30 +61,30 @@ object layerMod {
     name: String,
       imgUrl: Nullable[String],
       scene: Nullable[Scene],
-      isBackground: Boolean,
+      isBackground: Unit,
       color: Color4
     ) = this()
     
-    var _createIndexBuffer: js.Any = js.native
+    /* private */ var _createIndexBuffer: js.Any = js.native
     
-    var _effect: js.Any = js.native
+    /* private */ var _effect: js.Any = js.native
     
-    var _indexBuffer: js.Any = js.native
+    /* private */ var _indexBuffer: js.Any = js.native
     
-    var _onAfterRenderObserver: js.Any = js.native
+    /* private */ var _onAfterRenderObserver: js.Any = js.native
     
-    var _onBeforeRenderObserver: js.Any = js.native
+    /* private */ var _onBeforeRenderObserver: js.Any = js.native
     
-    var _onDisposeObserver: js.Any = js.native
+    /* private */ var _onDisposeObserver: js.Any = js.native
     
-    var _previousDefines: js.Any = js.native
+    /* private */ var _previousDefines: js.Any = js.native
     
     /** @hidden */
     def _rebuild(): Unit = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
-    var _vertexBuffers: js.Any = js.native
+    /* private */ var _vertexBuffers: js.Any = js.native
     
     /**
       * Define the alpha blending mode used in the layer in case the texture or color has an alpha.

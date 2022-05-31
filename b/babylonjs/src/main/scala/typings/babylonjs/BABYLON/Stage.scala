@@ -4,11 +4,12 @@ import typings.babylonjs.anon.Component
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Stage[T /* <: js.Function */] extends Array[Component[T]] {
+trait Stage[T /* <: js.Function */]
+  extends StObject
+     with Array[Component[T]] {
   
   /**
     * Clears all the steps from the stage.

@@ -4,7 +4,6 @@ import typings.babylonjs.nodeMod.NodeConstructor
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "Node")
@@ -31,9 +30,7 @@ object Node {
     * @param type defines the type name of the node to construct
     * @param constructorFunc defines the constructor function
     */
-  @JSImport("babylonjs/Legacy/legacy", "Node.AddNodeConstructor")
-  @js.native
-  def AddNodeConstructor(`type`: String, constructorFunc: NodeConstructor): Unit = js.native
+  inline def AddNodeConstructor(`type`: String, constructorFunc: NodeConstructor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("AddNodeConstructor")(`type`.asInstanceOf[js.Any], constructorFunc.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Returns a node constructor based on type name
@@ -43,12 +40,8 @@ object Node {
     * @param options defines optional options to transmit to constructors
     * @returns the new constructor or null
     */
-  @JSImport("babylonjs/Legacy/legacy", "Node.Construct")
-  @js.native
-  def Construct(`type`: String, name: String, scene: typings.babylonjs.sceneMod.Scene): Nullable[js.Function0[this.type]] = js.native
-  @JSImport("babylonjs/Legacy/legacy", "Node.Construct")
-  @js.native
-  def Construct(`type`: String, name: String, scene: typings.babylonjs.sceneMod.Scene, options: js.Any): Nullable[js.Function0[this.type]] = js.native
+  inline def Construct(`type`: String, name: String, scene: typings.babylonjs.sceneMod.Scene): Nullable[js.Function0[this.type]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Construct")(`type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[js.Function0[this.type]]]
+  inline def Construct(`type`: String, name: String, scene: typings.babylonjs.sceneMod.Scene, options: js.Any): Nullable[js.Function0[this.type]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Construct")(`type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Nullable[js.Function0[this.type]]]
   
   /**
     * Parse animation range data from a serialization object and store them into a given node
@@ -56,18 +49,13 @@ object Node {
     * @param parsedNode defines the serialization object to read data from
     * @param scene defines the hosting scene
     */
-  @JSImport("babylonjs/Legacy/legacy", "Node.ParseAnimationRanges")
-  @js.native
-  def ParseAnimationRanges(node: typings.babylonjs.nodeMod.Node, parsedNode: js.Any, scene: typings.babylonjs.sceneMod.Scene): Unit = js.native
+  inline def ParseAnimationRanges(node: typings.babylonjs.nodeMod.Node, parsedNode: js.Any, scene: typings.babylonjs.sceneMod.Scene): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseAnimationRanges")(node.asInstanceOf[js.Any], parsedNode.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** @hidden */
-  @JSImport("babylonjs/Legacy/legacy", "Node._AnimationRangeFactory")
-  @js.native
-  def _AnimationRangeFactory(name: String, from: Double, to: Double): typings.babylonjs.animationRangeMod.AnimationRange = js.native
+  inline def _AnimationRangeFactory(name: String, from: Double, to: Double): typings.babylonjs.animationRangeMod.AnimationRange = (^.asInstanceOf[js.Dynamic].applyDynamic("_AnimationRangeFactory")(name.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationRangeMod.AnimationRange]
   
   @JSImport("babylonjs/Legacy/legacy", "Node._NodeConstructors")
   @js.native
   def _NodeConstructors: js.Any = js.native
-  @scala.inline
-  def _NodeConstructors_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_NodeConstructors")(x.asInstanceOf[js.Any])
+  inline def _NodeConstructors_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_NodeConstructors")(x.asInstanceOf[js.Any])
 }

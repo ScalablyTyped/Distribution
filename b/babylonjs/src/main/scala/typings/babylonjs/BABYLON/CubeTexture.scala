@@ -2,33 +2,34 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CubeTexture extends BaseTexture {
+trait CubeTexture
+  extends StObject
+     with BaseTexture {
   
-  var _boundingBoxSize: js.Any = js.native
+  /* private */ var _boundingBoxSize: js.Any = js.native
   
-  var _createPolynomials: js.Any = js.native
+  /* private */ var _createPolynomials: js.Any = js.native
   
-  var _delayedOnLoad: js.Any = js.native
+  /* private */ var _delayedOnLoad: js.Any = js.native
   
-  var _extensions: js.Any = js.native
+  /* private */ var _extensions: js.Any = js.native
   
-  var _files: js.Any = js.native
+  /* private */ var _files: js.Any = js.native
   
-  var _forcedExtension: Nullable[String] = js.native
+  /* protected */ var _forcedExtension: Nullable[String] = js.native
   
-  var _format: js.Any = js.native
+  /* private */ var _format: js.Any = js.native
   
-  var _loaderOptions: js.Any = js.native
+  /* private */ var _loaderOptions: js.Any = js.native
   
-  var _noMipmap: js.Any = js.native
+  /* private */ var _noMipmap: js.Any = js.native
   
-  var _rotationY: Double = js.native
+  /* protected */ var _rotationY: Double = js.native
   
-  var _textureMatrix: js.Any = js.native
+  /* private */ var _textureMatrix: js.Any = js.native
   
   /**
     * Gets or sets the center of the bounding box associated with the cube texture.
@@ -80,23 +81,13 @@ trait CubeTexture extends BaseTexture {
     * @param prefiltered Defines whether the updated texture is prefiltered or not
     */
   def updateURL(url: String): Unit = js.native
-  def updateURL(
-    url: String,
-    forcedExtension: js.UndefOr[scala.Nothing],
-    onLoad: js.UndefOr[scala.Nothing],
-    prefiltered: Boolean
-  ): Unit = js.native
-  def updateURL(url: String, forcedExtension: js.UndefOr[scala.Nothing], onLoad: js.Function0[Unit]): Unit = js.native
-  def updateURL(
-    url: String,
-    forcedExtension: js.UndefOr[scala.Nothing],
-    onLoad: js.Function0[Unit],
-    prefiltered: Boolean
-  ): Unit = js.native
   def updateURL(url: String, forcedExtension: String): Unit = js.native
-  def updateURL(url: String, forcedExtension: String, onLoad: js.UndefOr[scala.Nothing], prefiltered: Boolean): Unit = js.native
   def updateURL(url: String, forcedExtension: String, onLoad: js.Function0[Unit]): Unit = js.native
   def updateURL(url: String, forcedExtension: String, onLoad: js.Function0[Unit], prefiltered: Boolean): Unit = js.native
+  def updateURL(url: String, forcedExtension: String, onLoad: Unit, prefiltered: Boolean): Unit = js.native
+  def updateURL(url: String, forcedExtension: Unit, onLoad: js.Function0[Unit]): Unit = js.native
+  def updateURL(url: String, forcedExtension: Unit, onLoad: js.Function0[Unit], prefiltered: Boolean): Unit = js.native
+  def updateURL(url: String, forcedExtension: Unit, onLoad: Unit, prefiltered: Boolean): Unit = js.native
   
   /**
     * The url of the texture

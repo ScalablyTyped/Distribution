@@ -6,9 +6,3 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait CSSBlendModes extends StObject
-/**
-  * Phaser Blend Modes to CSS Blend Modes Map.
-  */
-@JSGlobal("Phaser.CSSBlendModes")
-@js.native
-object CSSBlendModes extends StObject

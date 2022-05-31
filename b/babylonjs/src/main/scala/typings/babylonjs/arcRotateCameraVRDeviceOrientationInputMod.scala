@@ -5,7 +5,6 @@ import typings.babylonjs.cameraInputsManagerMod.ICameraInput
 import typings.std.DeviceOrientationEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arcRotateCameraVRDeviceOrientationInputMod {
@@ -15,15 +14,17 @@ object arcRotateCameraVRDeviceOrientationInputMod {
   /**
     * Instantiate a new ArcRotateCameraVRDeviceOrientationInput.
     */
-  class ArcRotateCameraVRDeviceOrientationInput () extends ICameraInput[ArcRotateCamera] {
+  class ArcRotateCameraVRDeviceOrientationInput ()
+    extends StObject
+       with ICameraInput[ArcRotateCamera] {
     
-    var _alpha: js.Any = js.native
+    /* private */ var _alpha: js.Any = js.native
     
-    var _deviceOrientationHandler: js.Any = js.native
+    /* private */ var _deviceOrientationHandler: js.Any = js.native
     
-    var _dirty: js.Any = js.native
+    /* private */ var _dirty: js.Any = js.native
     
-    var _gamma: js.Any = js.native
+    /* private */ var _gamma: js.Any = js.native
     
     /** @hidden */
     def _onOrientationEvent(evt: DeviceOrientationEvent): Unit = js.native
@@ -55,28 +56,24 @@ object arcRotateCameraVRDeviceOrientationInputMod {
   /* augmented module */
   object babylonjsCamerasArcRotateCameraInputsManagerAugmentingMod {
     
-    @js.native
     trait ArcRotateCameraInputsManager extends StObject {
       
       /**
         * Add orientation input support to the input manager.
         * @returns the current input manager
         */
-      def addVRDeviceOrientation(): ArcRotateCameraInputsManager = js.native
+      def addVRDeviceOrientation(): ArcRotateCameraInputsManager
     }
     object ArcRotateCameraInputsManager {
       
-      @scala.inline
-      def apply(addVRDeviceOrientation: () => ArcRotateCameraInputsManager): ArcRotateCameraInputsManager = {
+      inline def apply(addVRDeviceOrientation: () => ArcRotateCameraInputsManager): ArcRotateCameraInputsManager = {
         val __obj = js.Dynamic.literal(addVRDeviceOrientation = js.Any.fromFunction0(addVRDeviceOrientation))
         __obj.asInstanceOf[ArcRotateCameraInputsManager]
       }
       
-      @scala.inline
-      implicit class ArcRotateCameraInputsManagerMutableBuilder[Self <: ArcRotateCameraInputsManager] (val x: Self) extends AnyVal {
+      extension [Self <: ArcRotateCameraInputsManager](x: Self) {
         
-        @scala.inline
-        def setAddVRDeviceOrientation(value: () => ArcRotateCameraInputsManager): Self = StObject.set(x, "addVRDeviceOrientation", js.Any.fromFunction0(value))
+        inline def setAddVRDeviceOrientation(value: () => ArcRotateCameraInputsManager): Self = StObject.set(x, "addVRDeviceOrientation", js.Any.fromFunction0(value))
       }
     }
   }

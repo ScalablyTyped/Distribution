@@ -3,11 +3,19 @@ package typings.jupyterlabConsole
 import typings.jupyterlabApputils.mod.MainAreaWidget
 import typings.jupyterlabApputils.sessioncontextMod.ISessionContext
 import typings.jupyterlabApputils.sessioncontextMod.ISessionContext.IKernelPreference
+import typings.jupyterlabCells.headerfooterMod.ICellFooter
+import typings.jupyterlabCells.headerfooterMod.ICellHeader
+import typings.jupyterlabCells.inputareaMod.IInputPrompt
+import typings.jupyterlabCells.mod.CodeCell
+import typings.jupyterlabCells.mod.RawCell
+import typings.jupyterlabCodeeditor.editorMod.CodeEditor.Factory
 import typings.jupyterlabCodeeditor.mimetypeMod.IEditorMimeTypeService
 import typings.jupyterlabConsole.panelMod.ConsolePanel.IContentFactory
 import typings.jupyterlabConsole.panelMod.ConsolePanel.IOptions
 import typings.jupyterlabConsole.widgetMod.CodeConsole
 import typings.jupyterlabConsole.widgetMod.CodeConsole.IModelFactory
+import typings.jupyterlabOutputarea.widgetMod.IOutputPrompt
+import typings.jupyterlabOutputarea.widgetMod.IStdin
 import typings.jupyterlabRendermime.tokensMod.IRenderMimeRegistry
 import typings.jupyterlabServices.libManagerMod.ServiceManager.IManager
 import typings.luminoCoreutils.mod.Token
@@ -15,7 +23,6 @@ import typings.luminoDisposable.mod.IDisposable
 import typings.luminoWidgets.mod.Panel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object panelMod {
@@ -28,21 +35,21 @@ object panelMod {
       */
     def this(options: IOptions) = this()
     
-    var _connected: js.Any = js.native
+    /* private */ var _connected: js.Any = js.native
     
-    var _executed: js.Any = js.native
+    /* private */ var _executed: js.Any = js.native
     
     /**
       * Handle a console execution.
       */
-    var _onExecuted: js.Any = js.native
+    /* private */ var _onExecuted: js.Any = js.native
     
-    var _sessionContext: js.Any = js.native
+    /* private */ var _sessionContext: js.Any = js.native
     
     /**
       * Update the console panel title.
       */
-    var _updateTitlePanel: js.Any = js.native
+    /* private */ var _updateTitlePanel: js.Any = js.native
     
     /**
       * The console widget used by the panel.
@@ -73,6 +80,67 @@ object panelMod {
       extends typings.jupyterlabConsole.widgetMod.CodeConsole.ContentFactory
          with IContentFactory {
       def this(options: typings.jupyterlabCells.widgetMod.Cell.ContentFactory.IOptions) = this()
+      
+      /**
+        * Create a new cell header for the parent widget.
+        */
+      /* CompleteClass */
+      /* InferMemberOverrides */
+      override def createCellFooter(): ICellFooter = js.native
+      
+      /**
+        * Create a new cell header for the parent widget.
+        */
+      /* CompleteClass */
+      /* InferMemberOverrides */
+      override def createCellHeader(): ICellHeader = js.native
+      
+      /**
+        * Create a new code cell widget.
+        */
+      /* CompleteClass */
+      override def createCodeCell(options: typings.jupyterlabCells.widgetMod.CodeCell.IOptions): CodeCell = js.native
+      
+      /**
+        * Create a new console panel.
+        */
+      /* CompleteClass */
+      override def createConsole(options: typings.jupyterlabConsole.widgetMod.CodeConsole.IOptions): CodeConsole = js.native
+      
+      /**
+        * Create an input prompt.
+        */
+      /* InferMemberOverrides */
+      override def createInputPrompt(): IInputPrompt = js.native
+      
+      /**
+        * Create an output prompt.
+        */
+      /* CompleteClass */
+      /* InferMemberOverrides */
+      override def createOutputPrompt(): IOutputPrompt = js.native
+      
+      /**
+        * Create a new raw cell widget.
+        */
+      /* CompleteClass */
+      override def createRawCell(options: typings.jupyterlabCells.widgetMod.RawCell.IOptions): RawCell = js.native
+      
+      /**
+        * Create an stdin widget.
+        */
+      /* CompleteClass */
+      /* InferMemberOverrides */
+      override def createStdin(options: typings.jupyterlabOutputarea.widgetMod.Stdin.IOptions): IStdin = js.native
+      
+      /**
+        * The editor factory we need to include in `CodeEditorWratter.IOptions`.
+        *
+        * This is a separate readonly attribute rather than a factory method as we need
+        * to pass it around.
+        */
+      /* InferMemberOverrides */
+      override val editorFactory: Factory = js.native
     }
     /**
       * A namespace for the console panel content factory.
@@ -88,14 +156,14 @@ object panelMod {
     /**
       * The console panel renderer.
       */
-    @js.native
     trait IContentFactory
-      extends typings.jupyterlabConsole.widgetMod.CodeConsole.IContentFactory {
+      extends StObject
+         with typings.jupyterlabConsole.widgetMod.CodeConsole.IContentFactory {
       
       /**
         * Create a new console panel.
         */
-      def createConsole(options: typings.jupyterlabConsole.widgetMod.CodeConsole.IOptions): CodeConsole = js.native
+      def createConsole(options: typings.jupyterlabConsole.widgetMod.CodeConsole.IOptions): CodeConsole
     }
     object IContentFactory {
       
@@ -106,11 +174,9 @@ object panelMod {
       @js.native
       val ^ : Token[IContentFactory] = js.native
       
-      @scala.inline
-      implicit class IContentFactoryMutableBuilder[Self <: IContentFactory] (val x: Self) extends AnyVal {
+      extension [Self <: IContentFactory](x: Self) {
         
-        @scala.inline
-        def setCreateConsole(value: typings.jupyterlabConsole.widgetMod.CodeConsole.IOptions => CodeConsole): Self = StObject.set(x, "createConsole", js.Any.fromFunction1(value))
+        inline def setCreateConsole(value: typings.jupyterlabConsole.widgetMod.CodeConsole.IOptions => CodeConsole): Self = StObject.set(x, "createConsole", js.Any.fromFunction1(value))
       }
     }
     
@@ -124,68 +190,66 @@ object panelMod {
     /**
       * The initialization options for a console panel.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The base path for a new console.
         */
-      var basePath: js.UndefOr[String] = js.native
+      var basePath: js.UndefOr[String] = js.undefined
       
       /**
         * The content factory for the panel.
         */
-      var contentFactory: IContentFactory = js.native
+      var contentFactory: IContentFactory
       
       /**
         * A kernel preference.
         */
-      var kernelPreference: js.UndefOr[IKernelPreference] = js.native
+      var kernelPreference: js.UndefOr[IKernelPreference] = js.undefined
       
       /**
         * The service manager used by the panel.
         */
-      var manager: IManager = js.native
+      var manager: IManager
       
       /**
         * The service used to look up mime types.
         */
-      var mimeTypeService: IEditorMimeTypeService = js.native
+      var mimeTypeService: IEditorMimeTypeService
       
       /**
         * The model factory for the console widget.
         */
-      var modelFactory: js.UndefOr[IModelFactory] = js.native
+      var modelFactory: js.UndefOr[IModelFactory] = js.undefined
       
       /**
         * The name of the console.
         */
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
       /**
         * The path of an existing console.
         */
-      var path: js.UndefOr[String] = js.native
+      var path: js.UndefOr[String] = js.undefined
       
       /**
         * The rendermime instance used by the panel.
         */
-      var rendermime: IRenderMimeRegistry = js.native
+      var rendermime: IRenderMimeRegistry
       
       /**
         * An existing session context to use.
         */
-      var sessionContext: js.UndefOr[ISessionContext] = js.native
+      var sessionContext: js.UndefOr[ISessionContext] = js.undefined
       
       /**
         * A function to call when the kernel is busy.
         */
-      var setBusy: js.UndefOr[js.Function0[IDisposable]] = js.native
+      var setBusy: js.UndefOr[js.Function0[IDisposable]] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         contentFactory: IContentFactory,
         manager: IManager,
         mimeTypeService: IEditorMimeTypeService,
@@ -195,62 +259,43 @@ object panelMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+        inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
+        inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
         
-        @scala.inline
-        def setContentFactory(value: IContentFactory): Self = StObject.set(x, "contentFactory", value.asInstanceOf[js.Any])
+        inline def setContentFactory(value: IContentFactory): Self = StObject.set(x, "contentFactory", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKernelPreference(value: IKernelPreference): Self = StObject.set(x, "kernelPreference", value.asInstanceOf[js.Any])
+        inline def setKernelPreference(value: IKernelPreference): Self = StObject.set(x, "kernelPreference", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKernelPreferenceUndefined: Self = StObject.set(x, "kernelPreference", js.undefined)
+        inline def setKernelPreferenceUndefined: Self = StObject.set(x, "kernelPreference", js.undefined)
         
-        @scala.inline
-        def setManager(value: IManager): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
+        inline def setManager(value: IManager): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMimeTypeService(value: IEditorMimeTypeService): Self = StObject.set(x, "mimeTypeService", value.asInstanceOf[js.Any])
+        inline def setMimeTypeService(value: IEditorMimeTypeService): Self = StObject.set(x, "mimeTypeService", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModelFactory(value: IModelFactory): Self = StObject.set(x, "modelFactory", value.asInstanceOf[js.Any])
+        inline def setModelFactory(value: IModelFactory): Self = StObject.set(x, "modelFactory", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModelFactoryUndefined: Self = StObject.set(x, "modelFactory", js.undefined)
+        inline def setModelFactoryUndefined: Self = StObject.set(x, "modelFactory", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+        inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
         
-        @scala.inline
-        def setRendermime(value: IRenderMimeRegistry): Self = StObject.set(x, "rendermime", value.asInstanceOf[js.Any])
+        inline def setRendermime(value: IRenderMimeRegistry): Self = StObject.set(x, "rendermime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSessionContext(value: ISessionContext): Self = StObject.set(x, "sessionContext", value.asInstanceOf[js.Any])
+        inline def setSessionContext(value: ISessionContext): Self = StObject.set(x, "sessionContext", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSessionContextUndefined: Self = StObject.set(x, "sessionContext", js.undefined)
+        inline def setSessionContextUndefined: Self = StObject.set(x, "sessionContext", js.undefined)
         
-        @scala.inline
-        def setSetBusy(value: () => IDisposable): Self = StObject.set(x, "setBusy", js.Any.fromFunction0(value))
+        inline def setSetBusy(value: () => IDisposable): Self = StObject.set(x, "setBusy", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSetBusyUndefined: Self = StObject.set(x, "setBusy", js.undefined)
+        inline def setSetBusyUndefined: Self = StObject.set(x, "setBusy", js.undefined)
       }
     }
   }

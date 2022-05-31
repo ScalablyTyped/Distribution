@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.DeepImmutable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.Curve3")
 @js.native
 class Curve3 protected ()
-  extends typings.babylonjs.BABYLON.Curve3 {
+  extends StObject
+     with typings.babylonjs.BABYLON.Curve3 {
   /**
     * A Curve3 object is a logical object, so not a mesh, to handle curves in the 3D geometric space.
     * A Curve3 is designed from a series of successive Vector3.
@@ -17,9 +17,44 @@ class Curve3 protected ()
     * @param points points which make up the curve
     */
   def this(points: js.Array[typings.babylonjs.BABYLON.Vector3]) = this()
+  
+  /* private */ /* CompleteClass */
+  var _computeLength: js.Any = js.native
+  
+  /* private */ /* CompleteClass */
+  var _length: js.Any = js.native
+  
+  /* private */ /* CompleteClass */
+  var _points: js.Any = js.native
+  
+  /**
+    * Returns a new instance of Curve3 object : var curve = curveA.continue(curveB);
+    * This new Curve3 is built by translating and sticking the curveB at the end of the curveA.
+    * curveA and curveB keep unchanged.
+    * @param curve the curve to continue from this curve
+    * @returns the newly constructed curve
+    */
+  /* CompleteClass */
+  override def continue(curve: DeepImmutable[typings.babylonjs.BABYLON.Curve3]): typings.babylonjs.BABYLON.Curve3 = js.native
+  
+  /**
+    * @returns the Curve3 stored array of successive Vector3
+    */
+  /* CompleteClass */
+  override def getPoints(): js.Array[typings.babylonjs.BABYLON.Vector3] = js.native
+  
+  /**
+    * @returns the computed length (float) of the curve.
+    */
+  /* CompleteClass */
+  override def length(): Double = js.native
 }
 /* static members */
 object Curve3 {
+  
+  @JSGlobal("BABYLON.Curve3")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Returns a Curve3 object along a CatmullRom Spline curve :
@@ -28,16 +63,12 @@ object Curve3 {
     * @param closed (boolean) optional with default false, when true forms a closed loop from the points
     * @returns the created Curve3
     */
-  @JSGlobal("BABYLON.Curve3.CreateCatmullRomSpline")
-  @js.native
-  def CreateCatmullRomSpline(points: DeepImmutable[js.Array[typings.babylonjs.BABYLON.Vector3]], nbPoints: Double): typings.babylonjs.BABYLON.Curve3 = js.native
-  @JSGlobal("BABYLON.Curve3.CreateCatmullRomSpline")
-  @js.native
-  def CreateCatmullRomSpline(
+  inline def CreateCatmullRomSpline(points: DeepImmutable[js.Array[typings.babylonjs.BABYLON.Vector3]], nbPoints: Double): typings.babylonjs.BABYLON.Curve3 = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCatmullRomSpline")(points.asInstanceOf[js.Any], nbPoints.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Curve3]
+  inline def CreateCatmullRomSpline(
     points: DeepImmutable[js.Array[typings.babylonjs.BABYLON.Vector3]],
     nbPoints: Double,
     closed: Boolean
-  ): typings.babylonjs.BABYLON.Curve3 = js.native
+  ): typings.babylonjs.BABYLON.Curve3 = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCatmullRomSpline")(points.asInstanceOf[js.Any], nbPoints.asInstanceOf[js.Any], closed.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Curve3]
   
   /**
     * Returns a Curve3 object along a Cubic Bezier curve : https://doc.babylonjs.com/how_to/how_to_use_curve3#cubic-bezier-curve
@@ -48,15 +79,13 @@ object Curve3 {
     * @param nbPoints (integer) the wanted number of points in the curve
     * @returns the created Curve3
     */
-  @JSGlobal("BABYLON.Curve3.CreateCubicBezier")
-  @js.native
-  def CreateCubicBezier(
+  inline def CreateCubicBezier(
     v0: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     v1: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     v2: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     v3: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     nbPoints: Double
-  ): typings.babylonjs.BABYLON.Curve3 = js.native
+  ): typings.babylonjs.BABYLON.Curve3 = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCubicBezier")(v0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], nbPoints.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Curve3]
   
   /**
     * Returns a Curve3 object along a Hermite Spline curve : https://doc.babylonjs.com/how_to/how_to_use_curve3#hermite-spline
@@ -67,15 +96,13 @@ object Curve3 {
     * @param nbPoints (integer) the wanted number of points in the curve
     * @returns the created Curve3
     */
-  @JSGlobal("BABYLON.Curve3.CreateHermiteSpline")
-  @js.native
-  def CreateHermiteSpline(
+  inline def CreateHermiteSpline(
     p1: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     t1: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     p2: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     t2: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     nbPoints: Double
-  ): typings.babylonjs.BABYLON.Curve3 = js.native
+  ): typings.babylonjs.BABYLON.Curve3 = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateHermiteSpline")(p1.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], nbPoints.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Curve3]
   
   /**
     * Returns a Curve3 object along a Quadratic Bezier curve : https://doc.babylonjs.com/how_to/how_to_use_curve3#quadratic-bezier-curve
@@ -85,12 +112,10 @@ object Curve3 {
     * @param nbPoints (integer) the wanted number of points in the curve
     * @returns the created Curve3
     */
-  @JSGlobal("BABYLON.Curve3.CreateQuadraticBezier")
-  @js.native
-  def CreateQuadraticBezier(
+  inline def CreateQuadraticBezier(
     v0: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     v1: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     v2: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     nbPoints: Double
-  ): typings.babylonjs.BABYLON.Curve3 = js.native
+  ): typings.babylonjs.BABYLON.Curve3 = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateQuadraticBezier")(v0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], nbPoints.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Curve3]
 }

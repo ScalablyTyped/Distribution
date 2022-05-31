@@ -2,11 +2,12 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WaveBlock extends NodeMaterialBlock {
+trait WaveBlock
+  extends StObject
+     with NodeMaterialBlock {
   
   /**
     * Gets the input component

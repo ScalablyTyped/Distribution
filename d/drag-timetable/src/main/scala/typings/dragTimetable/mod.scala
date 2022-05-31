@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("drag-timetable", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("drag-timetable", "TimetableInstance")
   @js.native
   class TimetableInstance protected () extends StObject {
@@ -34,13 +38,6 @@ object mod {
     def updateTaskUI(): Unit = js.native
   }
   
-  object create {
-    
-    inline def apply(container: Null, options: js.Any): TimetableInstance = (^.asInstanceOf[js.Dynamic].apply(container.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TimetableInstance]
-    inline def apply(container: HTMLElement, options: js.Any): TimetableInstance = (^.asInstanceOf[js.Dynamic].apply(container.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TimetableInstance]
-    
-    @JSImport("drag-timetable", "create")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def create(container: Null, options: js.Any): TimetableInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(container.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TimetableInstance]
+  inline def create(container: HTMLElement, options: js.Any): TimetableInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(container.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TimetableInstance]
 }

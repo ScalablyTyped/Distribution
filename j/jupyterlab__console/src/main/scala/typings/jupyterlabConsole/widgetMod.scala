@@ -9,6 +9,7 @@ import typings.jupyterlabCells.mod.CodeCell
 import typings.jupyterlabCells.mod.RawCell
 import typings.jupyterlabCells.modelMod.ICodeCellModel
 import typings.jupyterlabCells.modelMod.IRawCellModel
+import typings.jupyterlabCodeeditor.editorMod.CodeEditor.Factory
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IEditor
 import typings.jupyterlabCodeeditor.mimetypeMod.IEditorMimeTypeService
 import typings.jupyterlabConsole.widgetMod.CodeConsole.IContentFactory
@@ -26,7 +27,6 @@ import typings.std.Date
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object widgetMod {
@@ -39,98 +39,98 @@ object widgetMod {
       */
     def this(options: IOptions) = this()
     
-    var _banner: js.Any = js.native
+    /* private */ var _banner: js.Any = js.native
     
-    var _cells: js.Any = js.native
+    /* private */ var _cells: js.Any = js.native
     
-    var _content: js.Any = js.native
+    /* private */ var _content: js.Any = js.native
     
     /**
       * Create the options used to initialize a code cell widget.
       */
-    var _createCodeCellOptions: js.Any = js.native
+    /* private */ var _createCodeCellOptions: js.Any = js.native
     
-    var _drag: js.Any = js.native
+    /* private */ var _drag: js.Any = js.native
     
-    var _dragData: js.Any = js.native
+    /* private */ var _dragData: js.Any = js.native
     
     /**
       * Handle the `'keydown'` event for the widget.
       */
-    var _evtKeyDown: js.Any = js.native
+    /* private */ var _evtKeyDown: js.Any = js.native
     
     /**
       * Handle `mousedown` events for the widget.
       */
-    var _evtMouseDown: js.Any = js.native
+    /* private */ var _evtMouseDown: js.Any = js.native
     
     /**
       * Handle `mousemove` event of widget
       */
-    var _evtMouseMove: js.Any = js.native
+    /* private */ var _evtMouseMove: js.Any = js.native
     
     /**
       * Handle the `'mouseup'` event for the widget.
       */
-    var _evtMouseUp: js.Any = js.native
+    /* private */ var _evtMouseUp: js.Any = js.native
     
     /**
       * Execute the code in the current prompt cell.
       */
-    var _execute: js.Any = js.native
+    /* private */ var _execute: js.Any = js.native
     
-    var _executed: js.Any = js.native
+    /* private */ var _executed: js.Any = js.native
     
-    var _focusedCell: js.Any = js.native
+    /* private */ var _focusedCell: js.Any = js.native
     
     /**
       * Update the console based on the kernel info.
       */
-    var _handleInfo: js.Any = js.native
+    /* private */ var _handleInfo: js.Any = js.native
     
-    var _history: js.Any = js.native
+    /* private */ var _history: js.Any = js.native
     
-    var _input: js.Any = js.native
+    /* private */ var _input: js.Any = js.native
     
-    var _mimeTypeService: js.Any = js.native
+    /* private */ var _mimeTypeService: js.Any = js.native
     
-    var _mimetype: js.Any = js.native
+    /* private */ var _mimetype: js.Any = js.native
     
-    var _msgIdCells: js.Any = js.native
+    /* private */ var _msgIdCells: js.Any = js.native
     
-    var _msgIds: js.Any = js.native
+    /* private */ var _msgIds: js.Any = js.native
     
     /**
       * Handle cell disposed signals.
       */
-    var _onCellDisposed: js.Any = js.native
+    /* private */ var _onCellDisposed: js.Any = js.native
     
     /**
       * Handle a keydown event on an editor.
       */
-    var _onEditorKeydown: js.Any = js.native
+    /* private */ var _onEditorKeydown: js.Any = js.native
     
     /**
       * Handle a change to the kernel.
       */
-    var _onKernelChanged: js.Any = js.native
+    /* private */ var _onKernelChanged: js.Any = js.native
     
     /**
       * Handle a change to the kernel status.
       */
-    var _onKernelStatusChanged: js.Any = js.native
+    /* private */ var _onKernelStatusChanged: js.Any = js.native
     
-    var _promptCellCreated: js.Any = js.native
+    /* private */ var _promptCellCreated: js.Any = js.native
     
     /**
       * Test whether we should execute the prompt cell.
       */
-    var _shouldExecute: js.Any = js.native
+    /* private */ var _shouldExecute: js.Any = js.native
     
     /**
       * Start a drag event
       */
-    var _startDrag: js.Any = js.native
+    /* private */ var _startDrag: js.Any = js.native
     
     /**
       * Add a banner cell.
@@ -188,9 +188,9 @@ object widgetMod {
       * incomplete before attempting submission anyway. The default value is `250`.
       */
     def execute(): js.Promise[Unit] = js.native
-    def execute(force: js.UndefOr[scala.Nothing], timeout: Double): js.Promise[Unit] = js.native
     def execute(force: Boolean): js.Promise[Unit] = js.native
     def execute(force: Boolean, timeout: Double): js.Promise[Unit] = js.native
+    def execute(force: Unit, timeout: Double): js.Promise[Unit] = js.native
     
     /**
       * A signal emitted when the console finished executing its prompt cell.
@@ -288,6 +288,61 @@ object widgetMod {
       extends typings.jupyterlabCells.mod.Cell.ContentFactory
          with IContentFactory {
       def this(options: typings.jupyterlabCells.widgetMod.Cell.ContentFactory.IOptions) = this()
+      
+      /**
+        * Create a new cell header for the parent widget.
+        */
+      /* CompleteClass */
+      /* InferMemberOverrides */
+      override def createCellFooter(): ICellFooter = js.native
+      
+      /**
+        * Create a new cell header for the parent widget.
+        */
+      /* CompleteClass */
+      /* InferMemberOverrides */
+      override def createCellHeader(): ICellHeader = js.native
+      
+      /**
+        * Create a new code cell widget.
+        */
+      /* CompleteClass */
+      override def createCodeCell(options: typings.jupyterlabCells.widgetMod.CodeCell.IOptions): CodeCell = js.native
+      
+      /**
+        * Create an input prompt.
+        */
+      /* InferMemberOverrides */
+      override def createInputPrompt(): IInputPrompt = js.native
+      
+      /**
+        * Create an output prompt.
+        */
+      /* CompleteClass */
+      /* InferMemberOverrides */
+      override def createOutputPrompt(): IOutputPrompt = js.native
+      
+      /**
+        * Create a new raw cell widget.
+        */
+      /* CompleteClass */
+      override def createRawCell(options: typings.jupyterlabCells.widgetMod.RawCell.IOptions): RawCell = js.native
+      
+      /**
+        * Create an stdin widget.
+        */
+      /* CompleteClass */
+      /* InferMemberOverrides */
+      override def createStdin(options: typings.jupyterlabOutputarea.widgetMod.Stdin.IOptions): IStdin = js.native
+      
+      /**
+        * The editor factory we need to include in `CodeEditorWratter.IOptions`.
+        *
+        * This is a separate readonly attribute rather than a factory method as we need
+        * to pass it around.
+        */
+      /* InferMemberOverrides */
+      override val editorFactory: Factory = js.native
     }
     /**
       * A namespace for the code console content factory.
@@ -356,24 +411,23 @@ object widgetMod {
     /**
       * A content factory for console children.
       */
-    @js.native
     trait IContentFactory
-      extends typings.jupyterlabCells.widgetMod.Cell.IContentFactory {
+      extends StObject
+         with typings.jupyterlabCells.widgetMod.Cell.IContentFactory {
       
       /**
         * Create a new code cell widget.
         */
-      def createCodeCell(options: typings.jupyterlabCells.widgetMod.CodeCell.IOptions): CodeCell = js.native
+      def createCodeCell(options: typings.jupyterlabCells.widgetMod.CodeCell.IOptions): CodeCell
       
       /**
         * Create a new raw cell widget.
         */
-      def createRawCell(options: typings.jupyterlabCells.widgetMod.RawCell.IOptions): RawCell = js.native
+      def createRawCell(options: typings.jupyterlabCells.widgetMod.RawCell.IOptions): RawCell
     }
     object IContentFactory {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         createCellFooter: () => ICellFooter,
         createCellHeader: () => ICellHeader,
         createCodeCell: typings.jupyterlabCells.widgetMod.CodeCell.IOptions => CodeCell,
@@ -387,27 +441,23 @@ object widgetMod {
         __obj.asInstanceOf[IContentFactory]
       }
       
-      @scala.inline
-      implicit class IContentFactoryMutableBuilder[Self <: IContentFactory] (val x: Self) extends AnyVal {
+      extension [Self <: IContentFactory](x: Self) {
         
-        @scala.inline
-        def setCreateCodeCell(value: typings.jupyterlabCells.widgetMod.CodeCell.IOptions => CodeCell): Self = StObject.set(x, "createCodeCell", js.Any.fromFunction1(value))
+        inline def setCreateCodeCell(value: typings.jupyterlabCells.widgetMod.CodeCell.IOptions => CodeCell): Self = StObject.set(x, "createCodeCell", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCreateRawCell(value: typings.jupyterlabCells.widgetMod.RawCell.IOptions => RawCell): Self = StObject.set(x, "createRawCell", js.Any.fromFunction1(value))
+        inline def setCreateRawCell(value: typings.jupyterlabCells.widgetMod.RawCell.IOptions => RawCell): Self = StObject.set(x, "createRawCell", js.Any.fromFunction1(value))
       }
     }
     
     /**
       * A model factory for a console widget.
       */
-    @js.native
     trait IModelFactory extends StObject {
       
       /**
         * The factory for code cell content.
         */
-      val codeCellContentFactory: typings.jupyterlabCells.modelMod.CodeCellModel.IContentFactory = js.native
+      val codeCellContentFactory: typings.jupyterlabCells.modelMod.CodeCellModel.IContentFactory
       
       /**
         * Create a new code cell.
@@ -417,7 +467,7 @@ object widgetMod {
         * @returns A new code cell. If a source cell is provided, the
         *   new cell will be initialized with the data from the source.
         */
-      def createCodeCell(options: typings.jupyterlabCells.modelMod.CodeCellModel.IOptions): ICodeCellModel = js.native
+      def createCodeCell(options: typings.jupyterlabCells.modelMod.CodeCellModel.IOptions): ICodeCellModel
       
       /**
         * Create a new raw cell.
@@ -427,12 +477,11 @@ object widgetMod {
         * @returns A new raw cell. If a source cell is provided, the
         *   new cell will be initialized with the data from the source.
         */
-      def createRawCell(options: typings.jupyterlabCells.modelMod.CellModel.IOptions): IRawCellModel = js.native
+      def createRawCell(options: typings.jupyterlabCells.modelMod.CellModel.IOptions): IRawCellModel
     }
     object IModelFactory {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         codeCellContentFactory: typings.jupyterlabCells.modelMod.CodeCellModel.IContentFactory,
         createCodeCell: typings.jupyterlabCells.modelMod.CodeCellModel.IOptions => ICodeCellModel,
         createRawCell: typings.jupyterlabCells.modelMod.CellModel.IOptions => IRawCellModel
@@ -441,85 +490,74 @@ object widgetMod {
         __obj.asInstanceOf[IModelFactory]
       }
       
-      @scala.inline
-      implicit class IModelFactoryMutableBuilder[Self <: IModelFactory] (val x: Self) extends AnyVal {
+      extension [Self <: IModelFactory](x: Self) {
         
-        @scala.inline
-        def setCodeCellContentFactory(value: typings.jupyterlabCells.modelMod.CodeCellModel.IContentFactory): Self = StObject.set(x, "codeCellContentFactory", value.asInstanceOf[js.Any])
+        inline def setCodeCellContentFactory(value: typings.jupyterlabCells.modelMod.CodeCellModel.IContentFactory): Self = StObject.set(x, "codeCellContentFactory", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCreateCodeCell(value: typings.jupyterlabCells.modelMod.CodeCellModel.IOptions => ICodeCellModel): Self = StObject.set(x, "createCodeCell", js.Any.fromFunction1(value))
+        inline def setCreateCodeCell(value: typings.jupyterlabCells.modelMod.CodeCellModel.IOptions => ICodeCellModel): Self = StObject.set(x, "createCodeCell", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCreateRawCell(value: typings.jupyterlabCells.modelMod.CellModel.IOptions => IRawCellModel): Self = StObject.set(x, "createRawCell", js.Any.fromFunction1(value))
+        inline def setCreateRawCell(value: typings.jupyterlabCells.modelMod.CellModel.IOptions => IRawCellModel): Self = StObject.set(x, "createRawCell", js.Any.fromFunction1(value))
       }
     }
     
     /**
       * The options used to initialize a `ModelFactory`.
       */
-    @js.native
     trait IModelFactoryOptions extends StObject {
       
       /**
         * The factory for output area models.
         */
-      var codeCellContentFactory: js.UndefOr[typings.jupyterlabCells.modelMod.CodeCellModel.IContentFactory] = js.native
+      var codeCellContentFactory: js.UndefOr[typings.jupyterlabCells.modelMod.CodeCellModel.IContentFactory] = js.undefined
     }
     object IModelFactoryOptions {
       
-      @scala.inline
-      def apply(): IModelFactoryOptions = {
+      inline def apply(): IModelFactoryOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IModelFactoryOptions]
       }
       
-      @scala.inline
-      implicit class IModelFactoryOptionsMutableBuilder[Self <: IModelFactoryOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IModelFactoryOptions](x: Self) {
         
-        @scala.inline
-        def setCodeCellContentFactory(value: typings.jupyterlabCells.modelMod.CodeCellModel.IContentFactory): Self = StObject.set(x, "codeCellContentFactory", value.asInstanceOf[js.Any])
+        inline def setCodeCellContentFactory(value: typings.jupyterlabCells.modelMod.CodeCellModel.IContentFactory): Self = StObject.set(x, "codeCellContentFactory", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCodeCellContentFactoryUndefined: Self = StObject.set(x, "codeCellContentFactory", js.undefined)
+        inline def setCodeCellContentFactoryUndefined: Self = StObject.set(x, "codeCellContentFactory", js.undefined)
       }
     }
     
     /**
       * The initialization options for a console widget.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The content factory for the console widget.
         */
-      var contentFactory: IContentFactory = js.native
+      var contentFactory: IContentFactory
       
       /**
         * The service used to look up mime types.
         */
-      var mimeTypeService: IEditorMimeTypeService = js.native
+      var mimeTypeService: IEditorMimeTypeService
       
       /**
         * The model factory for the console widget.
         */
-      var modelFactory: js.UndefOr[IModelFactory] = js.native
+      var modelFactory: js.UndefOr[IModelFactory] = js.undefined
       
       /**
         * The mime renderer for the console widget.
         */
-      var rendermime: IRenderMimeRegistry = js.native
+      var rendermime: IRenderMimeRegistry
       
       /**
         * The client session for the console widget.
         */
-      var sessionContext: ISessionContext = js.native
+      var sessionContext: ISessionContext
     }
     object IOptions {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         contentFactory: IContentFactory,
         mimeTypeService: IEditorMimeTypeService,
         rendermime: IRenderMimeRegistry,
@@ -529,26 +567,19 @@ object widgetMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setContentFactory(value: IContentFactory): Self = StObject.set(x, "contentFactory", value.asInstanceOf[js.Any])
+        inline def setContentFactory(value: IContentFactory): Self = StObject.set(x, "contentFactory", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMimeTypeService(value: IEditorMimeTypeService): Self = StObject.set(x, "mimeTypeService", value.asInstanceOf[js.Any])
+        inline def setMimeTypeService(value: IEditorMimeTypeService): Self = StObject.set(x, "mimeTypeService", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModelFactory(value: IModelFactory): Self = StObject.set(x, "modelFactory", value.asInstanceOf[js.Any])
+        inline def setModelFactory(value: IModelFactory): Self = StObject.set(x, "modelFactory", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModelFactoryUndefined: Self = StObject.set(x, "modelFactory", js.undefined)
+        inline def setModelFactoryUndefined: Self = StObject.set(x, "modelFactory", js.undefined)
         
-        @scala.inline
-        def setRendermime(value: IRenderMimeRegistry): Self = StObject.set(x, "rendermime", value.asInstanceOf[js.Any])
+        inline def setRendermime(value: IRenderMimeRegistry): Self = StObject.set(x, "rendermime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSessionContext(value: ISessionContext): Self = StObject.set(x, "sessionContext", value.asInstanceOf[js.Any])
+        inline def setSessionContext(value: ISessionContext): Self = StObject.set(x, "sessionContext", value.asInstanceOf[js.Any])
       }
     }
   }

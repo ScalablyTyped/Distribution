@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.ContainerAssetTask")
 @js.native
 class ContainerAssetTask protected ()
-  extends typings.babylonjs.BABYLON.ContainerAssetTask {
+  extends StObject
+     with typings.babylonjs.BABYLON.ContainerAssetTask {
   /**
     * Creates a new ContainerAssetTask
     * @param name defines the name of the task

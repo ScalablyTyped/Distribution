@@ -17,14 +17,15 @@ import typings.babylonjs.subMeshMod.SubMesh
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shadowGeneratorMod {
   
   @JSImport("babylonjs/Lights/Shadows/shadowGenerator", "ShadowGenerator")
   @js.native
-  class ShadowGenerator protected () extends IShadowGenerator {
+  class ShadowGenerator protected ()
+    extends StObject
+       with IShadowGenerator {
     /**
       * Creates a ShadowGenerator object.
       * A ShadowGenerator is the required tool to use the shadows.
@@ -39,51 +40,51 @@ object shadowGeneratorMod {
     
     /* protected */ def _applyFilterValues(): Unit = js.native
     
-    var _bias: Double = js.native
+    /* protected */ var _bias: Double = js.native
     
     /* protected */ def _bindCustomEffectForRenderSubMeshForShadowMap(subMesh: SubMesh, effect: Effect, matriceNames: js.Any, mesh: AbstractMesh): Unit = js.native
     
-    var _blurBoxOffset: Double = js.native
+    /* protected */ var _blurBoxOffset: Double = js.native
     
-    var _blurKernel: Double = js.native
+    /* protected */ var _blurKernel: Double = js.native
     
-    var _blurPostProcesses: js.Array[PostProcess] = js.native
+    /* protected */ var _blurPostProcesses: js.Array[PostProcess] = js.native
     
-    var _blurScale: Double = js.native
+    /* protected */ var _blurScale: Double = js.native
     
-    var _boxBlurPostprocess: Nullable[PostProcess] = js.native
+    /* protected */ var _boxBlurPostprocess: Nullable[PostProcess] = js.native
     
-    var _cachedDefines: String = js.native
+    /* protected */ var _cachedDefines: String = js.native
     
-    var _cachedDirection: Vector3 = js.native
+    /* protected */ var _cachedDirection: Vector3 = js.native
     
-    var _cachedPosition: Vector3 = js.native
+    /* protected */ var _cachedPosition: Vector3 = js.native
     
-    var _contactHardeningLightSizeUVRatio: Double = js.native
+    /* protected */ var _contactHardeningLightSizeUVRatio: Double = js.native
     
     /* protected */ def _createTargetRenderTexture(): Unit = js.native
     
-    var _currentFaceIndex: Double = js.native
+    /* protected */ var _currentFaceIndex: Double = js.native
     
-    var _currentFaceIndexCache: Double = js.native
+    /* protected */ var _currentFaceIndexCache: Double = js.native
     
-    var _currentRenderID: Double = js.native
+    /* protected */ var _currentRenderID: Double = js.native
     
-    var _darkness: Double = js.native
+    /* protected */ var _darkness: Double = js.native
     
-    var _defaultTextureMatrix: Matrix = js.native
+    /* protected */ var _defaultTextureMatrix: Matrix = js.native
     
-    var _depthScale: Double = js.native
+    /* protected */ var _depthScale: Double = js.native
     
     /* protected */ def _disposeBlurPostProcesses(): Unit = js.native
     
     /* protected */ def _disposeRTTandPostProcesses(): Unit = js.native
     
-    var _effect: Effect = js.native
+    /* protected */ var _effect: Effect = js.native
     
-    var _filter: Double = js.native
+    /* protected */ var _filter: Double = js.native
     
-    var _filteringQuality: Double = js.native
+    /* protected */ var _filteringQuality: Double = js.native
     
     /* protected */ def _initializeBlurRTTAndPostProcesses(): Unit = js.native
     
@@ -93,21 +94,21 @@ object shadowGeneratorMod {
     
     /* protected */ def _isReadyCustomDefines(defines: js.Any, subMesh: SubMesh, useInstances: Boolean): Unit = js.native
     
-    var _kernelBlurXPostprocess: Nullable[PostProcess] = js.native
+    /* protected */ var _kernelBlurXPostprocess: Nullable[PostProcess] = js.native
     
-    var _kernelBlurYPostprocess: Nullable[PostProcess] = js.native
+    /* protected */ var _kernelBlurYPostprocess: Nullable[PostProcess] = js.native
     
-    var _light: IShadowLight = js.native
+    /* protected */ var _light: IShadowLight = js.native
     
-    var _lightDirection: Vector3 = js.native
+    /* protected */ var _lightDirection: Vector3 = js.native
     
-    var _mapSize: Double = js.native
+    /* protected */ var _mapSize: Double = js.native
     
-    var _normalBias: Double = js.native
+    /* protected */ var _normalBias: Double = js.native
     
-    var _prepareShadowDefines: js.Any = js.native
+    /* private */ var _prepareShadowDefines: js.Any = js.native
     
-    var _projectionMatrix: Matrix = js.native
+    /* protected */ var _projectionMatrix: Matrix = js.native
     
     /* protected */ def _renderForShadowMap(
       opaqueSubMeshes: SmartArray[SubMesh],
@@ -119,25 +120,25 @@ object shadowGeneratorMod {
     /* protected */ def _renderSubMeshForShadowMap(subMesh: SubMesh): Unit = js.native
     /* protected */ def _renderSubMeshForShadowMap(subMesh: SubMesh, isTransparent: Boolean): Unit = js.native
     
-    var _scene: Scene = js.native
+    /* protected */ var _scene: Scene = js.native
     
-    var _shadowMap: Nullable[RenderTargetTexture] = js.native
+    /* protected */ var _shadowMap: Nullable[RenderTargetTexture] = js.native
     
-    var _shadowMap2: Nullable[RenderTargetTexture] = js.native
+    /* protected */ var _shadowMap2: Nullable[RenderTargetTexture] = js.native
     
-    var _storedUniqueId: Nullable[Double] = js.native
+    /* protected */ var _storedUniqueId: Nullable[Double] = js.native
     
-    var _textureType: Double = js.native
+    /* protected */ var _textureType: Double = js.native
     
-    var _transformMatrix: Matrix = js.native
+    /* protected */ var _transformMatrix: Matrix = js.native
     
-    var _transparencyShadow: Boolean = js.native
+    /* protected */ var _transparencyShadow: Boolean = js.native
     
-    var _useKernelBlur: Boolean = js.native
+    /* protected */ var _useKernelBlur: Boolean = js.native
     
     /* protected */ def _validateFilter(filter: Double): Double = js.native
     
-    var _viewMatrix: Matrix = js.native
+    /* protected */ var _viewMatrix: Matrix = js.native
     
     /**
       * Helper function to add a mesh and its descendants to the list of shadow casters.
@@ -461,8 +462,7 @@ object shadowGeneratorMod {
     @JSImport("babylonjs/Lights/Shadows/shadowGenerator", "ShadowGenerator.CLASSNAME")
     @js.native
     def CLASSNAME: String = js.native
-    @scala.inline
-    def CLASSNAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASSNAME")(x.asInstanceOf[js.Any])
+    inline def CLASSNAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASSNAME")(x.asInstanceOf[js.Any])
     
     /**
       * Shadow generator mode ESM: Blurred Exponential Shadow Mapping using the inverse of the exponential preventing
@@ -538,16 +538,12 @@ object shadowGeneratorMod {
       * @param constr A function that builds a shadow generator or undefined to create an instance of the default shadow generator
       * @returns The parsed shadow generator
       */
-    @JSImport("babylonjs/Lights/Shadows/shadowGenerator", "ShadowGenerator.Parse")
-    @js.native
-    def Parse(parsedShadowGenerator: js.Any, scene: Scene): ShadowGenerator = js.native
-    @JSImport("babylonjs/Lights/Shadows/shadowGenerator", "ShadowGenerator.Parse")
-    @js.native
-    def Parse(
+    inline def Parse(parsedShadowGenerator: js.Any, scene: Scene): ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[ShadowGenerator]
+    inline def Parse(
       parsedShadowGenerator: js.Any,
       scene: Scene,
       constr: js.Function2[/* mapSize */ Double, /* light */ IShadowLight, this.type]
-    ): ShadowGenerator = js.native
+    ): ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], constr.asInstanceOf[js.Any])).asInstanceOf[ShadowGenerator]
     
     /**
       * Reserved for PCF and PCSS
@@ -586,88 +582,70 @@ object shadowGeneratorMod {
     val QUALITY_MEDIUM: Double = js.native
     
     /** @hidden */
-    @JSImport("babylonjs/Lights/Shadows/shadowGenerator", "ShadowGenerator._SceneComponentInitialization")
-    @js.native
-    def _SceneComponentInitialization(scene: Scene): Unit = js.native
+    inline def _SceneComponentInitialization(scene: Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @js.native
   trait ICustomShaderOptions extends StObject {
     
     /**
       * The list of attribute names used in the shader
       */
-    var attributes: js.UndefOr[js.Array[String]] = js.native
+    var attributes: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The list of defines used in the shader
       */
-    var defines: js.UndefOr[js.Array[String]] = js.native
+    var defines: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The list of sampler names used in the shader
       */
-    var samplers: js.UndefOr[js.Array[String]] = js.native
+    var samplers: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Gets or sets the custom shader name to use
       */
-    var shaderName: String = js.native
+    var shaderName: String
     
     /**
       * The list of unifrom names used in the shader
       */
-    var uniforms: js.UndefOr[js.Array[String]] = js.native
+    var uniforms: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ICustomShaderOptions {
     
-    @scala.inline
-    def apply(shaderName: String): ICustomShaderOptions = {
+    inline def apply(shaderName: String): ICustomShaderOptions = {
       val __obj = js.Dynamic.literal(shaderName = shaderName.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICustomShaderOptions]
     }
     
-    @scala.inline
-    implicit class ICustomShaderOptionsMutableBuilder[Self <: ICustomShaderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ICustomShaderOptions](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
       
-      @scala.inline
-      def setDefines(value: js.Array[String]): Self = StObject.set(x, "defines", value.asInstanceOf[js.Any])
+      inline def setDefines(value: js.Array[String]): Self = StObject.set(x, "defines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefinesUndefined: Self = StObject.set(x, "defines", js.undefined)
+      inline def setDefinesUndefined: Self = StObject.set(x, "defines", js.undefined)
       
-      @scala.inline
-      def setDefinesVarargs(value: String*): Self = StObject.set(x, "defines", js.Array(value :_*))
+      inline def setDefinesVarargs(value: String*): Self = StObject.set(x, "defines", js.Array(value :_*))
       
-      @scala.inline
-      def setSamplers(value: js.Array[String]): Self = StObject.set(x, "samplers", value.asInstanceOf[js.Any])
+      inline def setSamplers(value: js.Array[String]): Self = StObject.set(x, "samplers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSamplersUndefined: Self = StObject.set(x, "samplers", js.undefined)
+      inline def setSamplersUndefined: Self = StObject.set(x, "samplers", js.undefined)
       
-      @scala.inline
-      def setSamplersVarargs(value: String*): Self = StObject.set(x, "samplers", js.Array(value :_*))
+      inline def setSamplersVarargs(value: String*): Self = StObject.set(x, "samplers", js.Array(value :_*))
       
-      @scala.inline
-      def setShaderName(value: String): Self = StObject.set(x, "shaderName", value.asInstanceOf[js.Any])
+      inline def setShaderName(value: String): Self = StObject.set(x, "shaderName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniforms(value: js.Array[String]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
+      inline def setUniforms(value: js.Array[String]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniformsUndefined: Self = StObject.set(x, "uniforms", js.undefined)
+      inline def setUniformsUndefined: Self = StObject.set(x, "uniforms", js.undefined)
       
-      @scala.inline
-      def setUniformsVarargs(value: String*): Self = StObject.set(x, "uniforms", js.Array(value :_*))
+      inline def setUniformsVarargs(value: String*): Self = StObject.set(x, "uniforms", js.Array(value :_*))
     }
   }
   
@@ -694,9 +672,9 @@ object shadowGeneratorMod {
       * @param options Sets of optional options forcing the compilation with different modes
       */
     def forceCompilation(): Unit = js.native
-    def forceCompilation(onCompiled: js.UndefOr[scala.Nothing], options: PartialuseInstancesboolea): Unit = js.native
     def forceCompilation(onCompiled: js.Function1[/* generator */ this.type, Unit]): Unit = js.native
     def forceCompilation(onCompiled: js.Function1[/* generator */ this.type, Unit], options: PartialuseInstancesboolea): Unit = js.native
+    def forceCompilation(onCompiled: Unit, options: PartialuseInstancesboolea): Unit = js.native
     
     /**
       * Forces all the attached effect to compile to enable rendering only once ready vs. lazyly compiling effects.

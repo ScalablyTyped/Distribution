@@ -33,8 +33,4 @@ object JSRequest {
   @js.native
   def PathName: String = js.native
   inline def PathName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PathName")(x.asInstanceOf[js.Any])
-  
-  /** Query string parts.*/
-  /* static member */
-  object QueryString
 }

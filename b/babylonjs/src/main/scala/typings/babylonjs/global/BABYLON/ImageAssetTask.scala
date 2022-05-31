@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.ImageAssetTask")
 @js.native
 class ImageAssetTask protected ()
-  extends typings.babylonjs.BABYLON.ImageAssetTask {
+  extends StObject
+     with typings.babylonjs.BABYLON.ImageAssetTask {
   /**
     * Creates a new ImageAssetTask
     * @param name defines the name of the task

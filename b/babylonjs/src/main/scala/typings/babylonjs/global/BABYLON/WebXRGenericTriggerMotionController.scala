@@ -4,18 +4,24 @@ import typings.babylonjs.BABYLON.IMinimalMotionControllerObject
 import typings.babylonjs.BABYLON.MotionControllerHandedness
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.WebXRGenericTriggerMotionController")
 @js.native
 class WebXRGenericTriggerMotionController protected ()
-  extends typings.babylonjs.BABYLON.WebXRGenericTriggerMotionController {
+  extends StObject
+     with typings.babylonjs.BABYLON.WebXRGenericTriggerMotionController {
   def this(
     scene: typings.babylonjs.BABYLON.Scene,
     gamepadObject: IMinimalMotionControllerObject,
     handedness: MotionControllerHandedness
   ) = this()
+  
+  /**
+    * Releases all held resources
+    */
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
 }
 /* static members */
 object WebXRGenericTriggerMotionController {
@@ -30,6 +36,5 @@ object WebXRGenericTriggerMotionController {
   @JSGlobal("BABYLON.WebXRGenericTriggerMotionController.ProfileId")
   @js.native
   def ProfileId: String = js.native
-  @scala.inline
-  def ProfileId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProfileId")(x.asInstanceOf[js.Any])
+  inline def ProfileId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProfileId")(x.asInstanceOf[js.Any])
 }

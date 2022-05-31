@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.ReflectionProbe")
 @js.native
 class ReflectionProbe protected ()
-  extends typings.babylonjs.BABYLON.ReflectionProbe {
+  extends StObject
+     with typings.babylonjs.BABYLON.ReflectionProbe {
   /**
     * Creates a new reflection probe
     * @param name defines the name of the probe
@@ -36,7 +36,7 @@ class ReflectionProbe protected ()
   name: String,
     size: Double,
     scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: js.UndefOr[scala.Nothing],
+    generateMipMaps: Boolean,
     useFloat: Boolean
   ) = this()
   def this(
@@ -44,12 +44,16 @@ class ReflectionProbe protected ()
   name: String,
     size: Double,
     scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Boolean,
+    generateMipMaps: Unit,
     useFloat: Boolean
   ) = this()
 }
 /* static members */
 object ReflectionProbe {
+  
+  @JSGlobal("BABYLON.ReflectionProbe")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Parse the JSON representation of a reflection probe in order to recreate the reflection probe in the given scene.
@@ -58,7 +62,5 @@ object ReflectionProbe {
     * @param rootUrl Define the root url of the parsing sequence in the case of relative dependencies
     * @returns The parsed reflection probe if successful
     */
-  @JSGlobal("BABYLON.ReflectionProbe.Parse")
-  @js.native
-  def Parse(parsedReflectionProbe: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): Nullable[typings.babylonjs.BABYLON.ReflectionProbe] = js.native
+  inline def Parse(parsedReflectionProbe: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): Nullable[typings.babylonjs.BABYLON.ReflectionProbe] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedReflectionProbe.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.ReflectionProbe]]
 }

@@ -2,14 +2,15 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpriteMap extends ISpriteMap {
+trait SpriteMap
+  extends StObject
+     with ISpriteMap {
   
   /** Texture Buffer of Float32 that holds Animation Data*/
-  var _animationMap: js.Any = js.native
+  /* private */ var _animationMap: js.Any = js.native
   
   /**
     * Creates the "frame" texture Buffer
@@ -23,14 +24,14 @@ trait SpriteMap extends ISpriteMap {
     * "sourceSize": {"w":32,"h":32}
     * @returns RawTexture of the frameMap
     */
-  var _createFrameBuffer: js.Any = js.native
+  /* private */ var _createFrameBuffer: js.Any = js.native
   
   /**
     * Creates the animationMap texture Buffer
     * @param buffer normally and array of numbers, or a false to generate from scratch
     * @returns RawTexture of the animationMap
     */
-  var _createTileAnimationBuffer: js.Any = js.native
+  /* private */ var _createTileAnimationBuffer: js.Any = js.native
   
   /**
     * Creates the tileMap texture Buffer
@@ -38,25 +39,25 @@ trait SpriteMap extends ISpriteMap {
     * @param _layer indicates what layer for a logic trigger dealing with the baseTile.  The system uses this
     * @returns RawTexture of the tileMap
     */
-  var _createTileBuffer: js.Any = js.native
+  /* private */ var _createTileBuffer: js.Any = js.native
   
   /** Texture Buffer of Float32 that holds tile frame data*/
-  var _frameMap: js.Any = js.native
+  /* private */ var _frameMap: js.Any = js.native
   
   /** Custom ShaderMaterial Central to the System*/
-  var _material: js.Any = js.native
+  /* private */ var _material: js.Any = js.native
   
   /** Custom ShaderMaterial Central to the System*/
-  var _output: js.Any = js.native
+  /* private */ var _output: js.Any = js.native
   
   /** Scene that the SpriteMap was created in */
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
   /** Texture Buffers of Float32 that holds tileMap data*/
-  var _tileMaps: js.Any = js.native
+  /* private */ var _tileMaps: js.Any = js.native
   
   /** Systems Time Ticker*/
-  var _time: js.Any = js.native
+  /* private */ var _time: js.Any = js.native
   
   /**
     * Modifies the data of the animationMap
@@ -67,118 +68,43 @@ trait SpriteMap extends ISpriteMap {
     * @param speed is a global scalar of the time variable on the map.
     */
   def addAnimationToTile(): Unit = js.native
-  def addAnimationToTile(
-    cellID: js.UndefOr[scala.Nothing],
-    _frame: js.UndefOr[scala.Nothing],
-    toCell: js.UndefOr[scala.Nothing],
-    time: js.UndefOr[scala.Nothing],
-    speed: Double
-  ): Unit = js.native
-  def addAnimationToTile(
-    cellID: js.UndefOr[scala.Nothing],
-    _frame: js.UndefOr[scala.Nothing],
-    toCell: js.UndefOr[scala.Nothing],
-    time: Double
-  ): Unit = js.native
-  def addAnimationToTile(
-    cellID: js.UndefOr[scala.Nothing],
-    _frame: js.UndefOr[scala.Nothing],
-    toCell: js.UndefOr[scala.Nothing],
-    time: Double,
-    speed: Double
-  ): Unit = js.native
-  def addAnimationToTile(cellID: js.UndefOr[scala.Nothing], _frame: js.UndefOr[scala.Nothing], toCell: Double): Unit = js.native
-  def addAnimationToTile(
-    cellID: js.UndefOr[scala.Nothing],
-    _frame: js.UndefOr[scala.Nothing],
-    toCell: Double,
-    time: js.UndefOr[scala.Nothing],
-    speed: Double
-  ): Unit = js.native
-  def addAnimationToTile(cellID: js.UndefOr[scala.Nothing], _frame: js.UndefOr[scala.Nothing], toCell: Double, time: Double): Unit = js.native
-  def addAnimationToTile(
-    cellID: js.UndefOr[scala.Nothing],
-    _frame: js.UndefOr[scala.Nothing],
-    toCell: Double,
-    time: Double,
-    speed: Double
-  ): Unit = js.native
-  def addAnimationToTile(cellID: js.UndefOr[scala.Nothing], _frame: Double): Unit = js.native
-  def addAnimationToTile(
-    cellID: js.UndefOr[scala.Nothing],
-    _frame: Double,
-    toCell: js.UndefOr[scala.Nothing],
-    time: js.UndefOr[scala.Nothing],
-    speed: Double
-  ): Unit = js.native
-  def addAnimationToTile(cellID: js.UndefOr[scala.Nothing], _frame: Double, toCell: js.UndefOr[scala.Nothing], time: Double): Unit = js.native
-  def addAnimationToTile(
-    cellID: js.UndefOr[scala.Nothing],
-    _frame: Double,
-    toCell: js.UndefOr[scala.Nothing],
-    time: Double,
-    speed: Double
-  ): Unit = js.native
-  def addAnimationToTile(cellID: js.UndefOr[scala.Nothing], _frame: Double, toCell: Double): Unit = js.native
-  def addAnimationToTile(
-    cellID: js.UndefOr[scala.Nothing],
-    _frame: Double,
-    toCell: Double,
-    time: js.UndefOr[scala.Nothing],
-    speed: Double
-  ): Unit = js.native
-  def addAnimationToTile(cellID: js.UndefOr[scala.Nothing], _frame: Double, toCell: Double, time: Double): Unit = js.native
-  def addAnimationToTile(cellID: js.UndefOr[scala.Nothing], _frame: Double, toCell: Double, time: Double, speed: Double): Unit = js.native
   def addAnimationToTile(cellID: Double): Unit = js.native
-  def addAnimationToTile(
-    cellID: Double,
-    _frame: js.UndefOr[scala.Nothing],
-    toCell: js.UndefOr[scala.Nothing],
-    time: js.UndefOr[scala.Nothing],
-    speed: Double
-  ): Unit = js.native
-  def addAnimationToTile(cellID: Double, _frame: js.UndefOr[scala.Nothing], toCell: js.UndefOr[scala.Nothing], time: Double): Unit = js.native
-  def addAnimationToTile(
-    cellID: Double,
-    _frame: js.UndefOr[scala.Nothing],
-    toCell: js.UndefOr[scala.Nothing],
-    time: Double,
-    speed: Double
-  ): Unit = js.native
-  def addAnimationToTile(cellID: Double, _frame: js.UndefOr[scala.Nothing], toCell: Double): Unit = js.native
-  def addAnimationToTile(
-    cellID: Double,
-    _frame: js.UndefOr[scala.Nothing],
-    toCell: Double,
-    time: js.UndefOr[scala.Nothing],
-    speed: Double
-  ): Unit = js.native
-  def addAnimationToTile(cellID: Double, _frame: js.UndefOr[scala.Nothing], toCell: Double, time: Double): Unit = js.native
-  def addAnimationToTile(cellID: Double, _frame: js.UndefOr[scala.Nothing], toCell: Double, time: Double, speed: Double): Unit = js.native
   def addAnimationToTile(cellID: Double, _frame: Double): Unit = js.native
-  def addAnimationToTile(
-    cellID: Double,
-    _frame: Double,
-    toCell: js.UndefOr[scala.Nothing],
-    time: js.UndefOr[scala.Nothing],
-    speed: Double
-  ): Unit = js.native
-  def addAnimationToTile(cellID: Double, _frame: Double, toCell: js.UndefOr[scala.Nothing], time: Double): Unit = js.native
-  def addAnimationToTile(cellID: Double, _frame: Double, toCell: js.UndefOr[scala.Nothing], time: Double, speed: Double): Unit = js.native
   def addAnimationToTile(cellID: Double, _frame: Double, toCell: Double): Unit = js.native
-  def addAnimationToTile(cellID: Double, _frame: Double, toCell: Double, time: js.UndefOr[scala.Nothing], speed: Double): Unit = js.native
   def addAnimationToTile(cellID: Double, _frame: Double, toCell: Double, time: Double): Unit = js.native
   def addAnimationToTile(cellID: Double, _frame: Double, toCell: Double, time: Double, speed: Double): Unit = js.native
+  def addAnimationToTile(cellID: Double, _frame: Double, toCell: Double, time: Unit, speed: Double): Unit = js.native
+  def addAnimationToTile(cellID: Double, _frame: Double, toCell: Unit, time: Double): Unit = js.native
+  def addAnimationToTile(cellID: Double, _frame: Double, toCell: Unit, time: Double, speed: Double): Unit = js.native
+  def addAnimationToTile(cellID: Double, _frame: Double, toCell: Unit, time: Unit, speed: Double): Unit = js.native
+  def addAnimationToTile(cellID: Double, _frame: Unit, toCell: Double): Unit = js.native
+  def addAnimationToTile(cellID: Double, _frame: Unit, toCell: Double, time: Double): Unit = js.native
+  def addAnimationToTile(cellID: Double, _frame: Unit, toCell: Double, time: Double, speed: Double): Unit = js.native
+  def addAnimationToTile(cellID: Double, _frame: Unit, toCell: Double, time: Unit, speed: Double): Unit = js.native
+  def addAnimationToTile(cellID: Double, _frame: Unit, toCell: Unit, time: Double): Unit = js.native
+  def addAnimationToTile(cellID: Double, _frame: Unit, toCell: Unit, time: Double, speed: Double): Unit = js.native
+  def addAnimationToTile(cellID: Double, _frame: Unit, toCell: Unit, time: Unit, speed: Double): Unit = js.native
+  def addAnimationToTile(cellID: Unit, _frame: Double): Unit = js.native
+  def addAnimationToTile(cellID: Unit, _frame: Double, toCell: Double): Unit = js.native
+  def addAnimationToTile(cellID: Unit, _frame: Double, toCell: Double, time: Double): Unit = js.native
+  def addAnimationToTile(cellID: Unit, _frame: Double, toCell: Double, time: Double, speed: Double): Unit = js.native
+  def addAnimationToTile(cellID: Unit, _frame: Double, toCell: Double, time: Unit, speed: Double): Unit = js.native
+  def addAnimationToTile(cellID: Unit, _frame: Double, toCell: Unit, time: Double): Unit = js.native
+  def addAnimationToTile(cellID: Unit, _frame: Double, toCell: Unit, time: Double, speed: Double): Unit = js.native
+  def addAnimationToTile(cellID: Unit, _frame: Double, toCell: Unit, time: Unit, speed: Double): Unit = js.native
+  def addAnimationToTile(cellID: Unit, _frame: Unit, toCell: Double): Unit = js.native
+  def addAnimationToTile(cellID: Unit, _frame: Unit, toCell: Double, time: Double): Unit = js.native
+  def addAnimationToTile(cellID: Unit, _frame: Unit, toCell: Double, time: Double, speed: Double): Unit = js.native
+  def addAnimationToTile(cellID: Unit, _frame: Unit, toCell: Double, time: Unit, speed: Double): Unit = js.native
+  def addAnimationToTile(cellID: Unit, _frame: Unit, toCell: Unit, time: Double): Unit = js.native
+  def addAnimationToTile(cellID: Unit, _frame: Unit, toCell: Unit, time: Double, speed: Double): Unit = js.native
+  def addAnimationToTile(cellID: Unit, _frame: Unit, toCell: Unit, time: Unit, speed: Double): Unit = js.native
   
   /** Sets the AnimationMap*/
   def animationMap: RawTexture = js.native
   /** Sets the AnimationMap*/
   def animationMap_=(v: RawTexture): Unit = js.native
   
-  def changeTiles(_layer: js.UndefOr[scala.Nothing], pos: js.Array[Vector2]): Unit = js.native
-  def changeTiles(_layer: js.UndefOr[scala.Nothing], pos: js.Array[Vector2], tile: Double): Unit = js.native
-  def changeTiles(_layer: js.UndefOr[scala.Nothing], pos: Vector2): Unit = js.native
-  def changeTiles(_layer: js.UndefOr[scala.Nothing], pos: Vector2, tile: Double): Unit = js.native
   def changeTiles(_layer: Double, pos: js.Array[Vector2]): Unit = js.native
   def changeTiles(_layer: Double, pos: js.Array[Vector2], tile: Double): Unit = js.native
   /**
@@ -189,6 +115,10 @@ trait SpriteMap extends ISpriteMap {
     */
   def changeTiles(_layer: Double, pos: Vector2): Unit = js.native
   def changeTiles(_layer: Double, pos: Vector2, tile: Double): Unit = js.native
+  def changeTiles(_layer: Unit, pos: js.Array[Vector2]): Unit = js.native
+  def changeTiles(_layer: Unit, pos: js.Array[Vector2], tile: Double): Unit = js.native
+  def changeTiles(_layer: Unit, pos: Vector2): Unit = js.native
+  def changeTiles(_layer: Unit, pos: Vector2, tile: Double): Unit = js.native
   
   /**
     * Gets the UV location of the mouse over the SpriteMap.

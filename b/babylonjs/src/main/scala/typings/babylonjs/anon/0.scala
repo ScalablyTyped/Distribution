@@ -2,29 +2,23 @@ package typings.babylonjs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0` extends StObject {
   
-  var updatable: js.UndefOr[Boolean] = js.native
+  var updatable: js.UndefOr[Boolean] = js.undefined
 }
 object `0` {
   
-  @scala.inline
-  def apply(): `0` = {
+  inline def apply(): `0` = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`0`]
   }
   
-  @scala.inline
-  implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+  extension [Self <: `0`](x: Self) {
     
-    @scala.inline
-    def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
+    inline def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatableUndefined: Self = StObject.set(x, "updatable", js.undefined)
+    inline def setUpdatableUndefined: Self = StObject.set(x, "updatable", js.undefined)
   }
 }

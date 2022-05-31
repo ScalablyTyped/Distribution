@@ -2,21 +2,23 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.RGBDTextureTools")
 @js.native
 class RGBDTextureTools ()
-  extends typings.babylonjs.BABYLON.RGBDTextureTools
+  extends StObject
+     with typings.babylonjs.BABYLON.RGBDTextureTools
 /* static members */
 object RGBDTextureTools {
+  
+  @JSGlobal("BABYLON.RGBDTextureTools")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Expand the RGBD Texture from RGBD to Half Float if possible.
     * @param texture the texture to expand.
     */
-  @JSGlobal("BABYLON.RGBDTextureTools.ExpandRGBDTexture")
-  @js.native
-  def ExpandRGBDTexture(texture: typings.babylonjs.BABYLON.Texture): Unit = js.native
+  inline def ExpandRGBDTexture(texture: typings.babylonjs.BABYLON.Texture): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ExpandRGBDTexture")(texture.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

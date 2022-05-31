@@ -8,7 +8,6 @@ import typings.std.ArrayBuffer
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object engineCubeTextureMod {
@@ -25,7 +24,7 @@ object engineCubeTextureMod {
         onfinish: js.Function1[/* images */ js.Array[ArrayBuffer], Unit],
         files: js.Array[String],
         onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
             ]
       ): Unit = js.native
       
@@ -35,7 +34,7 @@ object engineCubeTextureMod {
         onfinish: js.Function1[/* images */ js.Array[HTMLImageElement], Unit],
         files: js.Array[String],
         onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
             ]
       ): Unit = js.native
       def _cascadeLoadImgs(
@@ -43,7 +42,7 @@ object engineCubeTextureMod {
         onfinish: js.Function1[/* images */ js.Array[HTMLImageElement], Unit],
         files: js.Array[String],
         onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
             ],
         mimeType: String
       ): Unit = js.native
@@ -64,7 +63,7 @@ object engineCubeTextureMod {
         loadedFiles: js.Array[ArrayBuffer],
         onfinish: js.Function1[/* files */ js.Array[ArrayBuffer], Unit],
         onErrorCallBack: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
             ]
       ): Unit = js.native
       
@@ -76,7 +75,7 @@ object engineCubeTextureMod {
         scene: Nullable[Scene],
         onfinish: js.Function1[/* images */ js.Array[HTMLImageElement], Unit],
         onErrorCallBack: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
             ]
       ): Unit = js.native
       def _partialLoadImg(
@@ -86,7 +85,7 @@ object engineCubeTextureMod {
         scene: Nullable[Scene],
         onfinish: js.Function1[/* images */ js.Array[HTMLImageElement], Unit],
         onErrorCallBack: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
             ],
         mimeType: String
       ): Unit = js.native
@@ -96,84 +95,6 @@ object engineCubeTextureMod {
         */
       def _setCubeMapTextureParams(texture: InternalTexture, loadMipmap: Boolean): Unit = js.native
       
-      def createCubeTexture(
-        rootUrl: String,
-        scene: Nullable[Scene],
-        files: Nullable[js.Array[String]],
-        noMipmap: js.UndefOr[scala.Nothing],
-        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
-        onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
-            ],
-        format: js.UndefOr[scala.Nothing],
-        forcedExtension: js.Any,
-        createPolynomials: Boolean,
-        lodScale: Double,
-        lodOffset: Double,
-        fallback: Nullable[InternalTexture],
-        loaderOptions: js.Any
-      ): InternalTexture = js.native
-      def createCubeTexture(
-        rootUrl: String,
-        scene: Nullable[Scene],
-        files: Nullable[js.Array[String]],
-        noMipmap: js.UndefOr[scala.Nothing],
-        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
-        onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
-            ],
-        format: Double,
-        forcedExtension: js.Any,
-        createPolynomials: Boolean,
-        lodScale: Double,
-        lodOffset: Double,
-        fallback: Nullable[InternalTexture],
-        loaderOptions: js.Any
-      ): InternalTexture = js.native
-      def createCubeTexture(
-        rootUrl: String,
-        scene: Nullable[Scene],
-        files: Nullable[js.Array[String]],
-        noMipmap: Boolean,
-        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
-        onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
-            ],
-        format: js.UndefOr[scala.Nothing],
-        forcedExtension: js.Any
-      ): InternalTexture = js.native
-      def createCubeTexture(
-        rootUrl: String,
-        scene: Nullable[Scene],
-        files: Nullable[js.Array[String]],
-        noMipmap: Boolean,
-        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
-        onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
-            ],
-        format: js.UndefOr[scala.Nothing],
-        forcedExtension: js.Any,
-        createPolynomials: Boolean,
-        lodScale: Double,
-        lodOffset: Double
-      ): InternalTexture = js.native
-      def createCubeTexture(
-        rootUrl: String,
-        scene: Nullable[Scene],
-        files: Nullable[js.Array[String]],
-        noMipmap: Boolean,
-        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
-        onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
-            ],
-        format: js.UndefOr[scala.Nothing],
-        forcedExtension: js.Any,
-        createPolynomials: Boolean,
-        lodScale: Double,
-        lodOffset: Double,
-        fallback: Nullable[InternalTexture],
-        loaderOptions: js.Any
-      ): InternalTexture = js.native
       /**
         * Creates a cube texture
         * @param rootUrl defines the url where the files to load is located
@@ -191,9 +112,9 @@ object engineCubeTextureMod {
         scene: Nullable[Scene],
         files: Nullable[js.Array[String]],
         noMipmap: Boolean,
-        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
+        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
         onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
             ],
         format: Double,
         forcedExtension: js.Any
@@ -218,9 +139,9 @@ object engineCubeTextureMod {
         scene: Nullable[Scene],
         files: Nullable[js.Array[String]],
         noMipmap: Boolean,
-        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
+        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
         onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
             ],
         format: Double,
         forcedExtension: js.Any,
@@ -250,11 +171,89 @@ object engineCubeTextureMod {
         scene: Nullable[Scene],
         files: Nullable[js.Array[String]],
         noMipmap: Boolean,
-        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
+        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
         onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
             ],
         format: Double,
+        forcedExtension: js.Any,
+        createPolynomials: Boolean,
+        lodScale: Double,
+        lodOffset: Double,
+        fallback: Nullable[InternalTexture],
+        loaderOptions: js.Any
+      ): InternalTexture = js.native
+      def createCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        files: Nullable[js.Array[String]],
+        noMipmap: Boolean,
+        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+        onError: Nullable[
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            ],
+        format: Unit,
+        forcedExtension: js.Any
+      ): InternalTexture = js.native
+      def createCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        files: Nullable[js.Array[String]],
+        noMipmap: Boolean,
+        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+        onError: Nullable[
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            ],
+        format: Unit,
+        forcedExtension: js.Any,
+        createPolynomials: Boolean,
+        lodScale: Double,
+        lodOffset: Double
+      ): InternalTexture = js.native
+      def createCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        files: Nullable[js.Array[String]],
+        noMipmap: Boolean,
+        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+        onError: Nullable[
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            ],
+        format: Unit,
+        forcedExtension: js.Any,
+        createPolynomials: Boolean,
+        lodScale: Double,
+        lodOffset: Double,
+        fallback: Nullable[InternalTexture],
+        loaderOptions: js.Any
+      ): InternalTexture = js.native
+      def createCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        files: Nullable[js.Array[String]],
+        noMipmap: Unit,
+        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+        onError: Nullable[
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            ],
+        format: Double,
+        forcedExtension: js.Any,
+        createPolynomials: Boolean,
+        lodScale: Double,
+        lodOffset: Double,
+        fallback: Nullable[InternalTexture],
+        loaderOptions: js.Any
+      ): InternalTexture = js.native
+      def createCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        files: Nullable[js.Array[String]],
+        noMipmap: Unit,
+        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+        onError: Nullable[
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            ],
+        format: Unit,
         forcedExtension: js.Any,
         createPolynomials: Boolean,
         lodScale: Double,

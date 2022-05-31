@@ -630,7 +630,4 @@ object util {
       */
     inline def write(string: String, buffer: Uint8Array, offset: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(string.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
-  
-  /** Node's fs module if available. */
-  object fs
 }

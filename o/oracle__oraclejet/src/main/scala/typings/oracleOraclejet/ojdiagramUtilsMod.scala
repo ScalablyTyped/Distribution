@@ -4,36 +4,35 @@ import typings.oracleOraclejet.anon.LinkDefaults
 import typings.oracleOraclejet.ojdiagramMod.DvtDiagramLayoutContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ojdiagramUtilsMod {
   
-  @JSImport("@oracle/oraclejet/ojdiagram-utils", "getLayout")
+  @JSImport("@oracle/oraclejet/ojdiagram-utils", JSImport.Namespace)
   @js.native
-  def getLayout(obj: LinkDefaults): js.Function1[/* context */ DvtDiagramLayoutContext, Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  inline def getLayout(obj: LinkDefaults): js.Function1[/* context */ DvtDiagramLayoutContext, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLayout")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* context */ DvtDiagramLayoutContext, Unit]]
+  
   trait LabelLayout extends StObject {
     
-    var angle: Double = js.native
+    var angle: Double
     
-    var halign: String = js.native
+    var halign: String
     
-    var rotationPointX: Double = js.native
+    var rotationPointX: Double
     
-    var rotationPointY: Double = js.native
+    var rotationPointY: Double
     
-    var valign: String = js.native
+    var valign: String
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object LabelLayout {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       angle: Double,
       halign: String,
       rotationPointX: Double,
@@ -46,29 +45,21 @@ object ojdiagramUtilsMod {
       __obj.asInstanceOf[LabelLayout]
     }
     
-    @scala.inline
-    implicit class LabelLayoutMutableBuilder[Self <: LabelLayout] (val x: Self) extends AnyVal {
+    extension [Self <: LabelLayout](x: Self) {
       
-      @scala.inline
-      def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+      inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHalign(value: String): Self = StObject.set(x, "halign", value.asInstanceOf[js.Any])
+      inline def setHalign(value: String): Self = StObject.set(x, "halign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotationPointX(value: Double): Self = StObject.set(x, "rotationPointX", value.asInstanceOf[js.Any])
+      inline def setRotationPointX(value: Double): Self = StObject.set(x, "rotationPointX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotationPointY(value: Double): Self = StObject.set(x, "rotationPointY", value.asInstanceOf[js.Any])
+      inline def setRotationPointY(value: Double): Self = StObject.set(x, "rotationPointY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValign(value: String): Self = StObject.set(x, "valign", value.asInstanceOf[js.Any])
+      inline def setValign(value: String): Self = StObject.set(x, "valign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

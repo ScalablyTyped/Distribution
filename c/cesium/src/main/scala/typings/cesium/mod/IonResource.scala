@@ -2,8 +2,8 @@ package typings.cesium.mod
 
 import typings.cesium.anon.AccessToken
 import typings.cesium.anon.Endpoint
-import typings.cesium.anon.Headers
 import typings.cesium.anon.PreserveQueryParameters
+import typings.cesium.anon.ResponseType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +28,7 @@ class IonResource protected () extends Resource {
   def getUrlComponent(query: Boolean): String = js.native
   def getUrlComponent(query: Unit, proxy: Boolean): String = js.native
   
-  def post(data: js.Any, options: Headers): js.UndefOr[js.Promise[js.Any]] = js.native
+  def post(data: js.Any, options: ResponseType): js.UndefOr[js.Promise[js.Any]] = js.native
   
   def setQueryParameters(params: js.Any): Unit = js.native
   

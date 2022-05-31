@@ -2,7 +2,6 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -16,7 +15,7 @@ trait PostProcessRenderPipeline extends StObject {
   /**
     * @hidden
     */
-  var _cameras: js.Array[Camera] = js.native
+  /* protected */ var _cameras: js.Array[Camera] = js.native
   
   /** @hidden */
   def _detachCameras(cameras: Camera): Unit = js.native
@@ -39,9 +38,9 @@ trait PostProcessRenderPipeline extends StObject {
   /** @hidden */
   def _rebuild(): Unit = js.native
   
-  var _renderEffects: js.Any = js.native
+  /* private */ var _renderEffects: js.Any = js.native
   
-  var _renderEffectsForIsolatedPass: js.Any = js.native
+  /* private */ var _renderEffectsForIsolatedPass: js.Any = js.native
   
   /** @hidden */
   def _reset(): Unit = js.native
@@ -63,7 +62,7 @@ trait PostProcessRenderPipeline extends StObject {
     */
   def dispose(): Unit = js.native
   
-  var engine: js.Any = js.native
+  /* private */ var engine: js.Any = js.native
   
   /**
     * Gets the class name

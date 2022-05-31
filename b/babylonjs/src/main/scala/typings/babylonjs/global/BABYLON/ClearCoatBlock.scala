@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.ClearCoatBlock")
 @js.native
 class ClearCoatBlock protected ()
-  extends typings.babylonjs.BABYLON.ClearCoatBlock {
+  extends StObject
+     with typings.babylonjs.BABYLON.ClearCoatBlock {
   /**
     * Create a new ClearCoatBlock
     * @param name defines the block name
@@ -18,6 +18,10 @@ class ClearCoatBlock protected ()
 }
 /* static members */
 object ClearCoatBlock {
+  
+  @JSGlobal("BABYLON.ClearCoatBlock")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Gets the main code of the block (fragment side)
@@ -30,9 +34,7 @@ object ClearCoatBlock {
     * @param worldNormalVarName name of the variable holding the world normal
     * @returns the shader code
     */
-  @JSGlobal("BABYLON.ClearCoatBlock.GetCode")
-  @js.native
-  def GetCode(
+  inline def GetCode(
     state: typings.babylonjs.BABYLON.NodeMaterialBuildState,
     ccBlock: Nullable[typings.babylonjs.BABYLON.ClearCoatBlock],
     reflectionBlock: Nullable[typings.babylonjs.BABYLON.ReflectionBlock],
@@ -40,5 +42,5 @@ object ClearCoatBlock {
     generateTBNSpace: Boolean,
     vTBNAvailable: Boolean,
     worldNormalVarName: String
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCode")(state.asInstanceOf[js.Any], ccBlock.asInstanceOf[js.Any], reflectionBlock.asInstanceOf[js.Any], worldPosVarName.asInstanceOf[js.Any], generateTBNSpace.asInstanceOf[js.Any], vTBNAvailable.asInstanceOf[js.Any], worldNormalVarName.asInstanceOf[js.Any])).asInstanceOf[String]
 }

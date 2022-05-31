@@ -1,5 +1,6 @@
 package typings.awsSdkClientPinpointBrowser.mod
 
+import typings.awsSdkClientPinpointBrowser.typesCreateSegmentInputMod.CreateSegmentInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class CreateSegmentCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.createSegmentCommandMod.CreateSegmentCommand {
-  def this(input: typings.awsSdkClientPinpointBrowser.typesCreateSegmentInputMod.CreateSegmentInput) = this()
+  def this(input: CreateSegmentInput) = this()
 }

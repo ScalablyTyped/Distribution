@@ -4,7 +4,6 @@ import typings.babylonjs.iparticlesystemMod.IParticleSystem
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "ParticleSystem")
@@ -39,29 +38,67 @@ class ParticleSystem protected ()
     name: String,
     capacity: Double,
     sceneOrEngine: typings.babylonjs.sceneMod.Scene,
-    customEffect: js.UndefOr[Nullable[typings.babylonjs.effectMod.Effect]],
+    customEffect: Unit,
+    isAnimationSheetEnabled: Boolean
+  ) = this()
+  def this(
+    name: String,
+    capacity: Double,
+    sceneOrEngine: typings.babylonjs.sceneMod.Scene,
+    customEffect: Nullable[typings.babylonjs.effectMod.Effect],
     isAnimationSheetEnabled: Boolean
   ) = this()
   def this(
     name: String,
     capacity: Double,
     sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine,
-    customEffect: js.UndefOr[Nullable[typings.babylonjs.effectMod.Effect]],
+    customEffect: Unit,
+    isAnimationSheetEnabled: Boolean
+  ) = this()
+  def this(
+    name: String,
+    capacity: Double,
+    sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine,
+    customEffect: Nullable[typings.babylonjs.effectMod.Effect],
     isAnimationSheetEnabled: Boolean
   ) = this()
   def this(
     name: String,
     capacity: Double,
     sceneOrEngine: typings.babylonjs.sceneMod.Scene,
-    customEffect: js.UndefOr[Nullable[typings.babylonjs.effectMod.Effect]],
-    isAnimationSheetEnabled: js.UndefOr[scala.Nothing],
+    customEffect: Unit,
+    isAnimationSheetEnabled: Boolean,
     epsilon: Double
   ) = this()
   def this(
     name: String,
     capacity: Double,
     sceneOrEngine: typings.babylonjs.sceneMod.Scene,
-    customEffect: js.UndefOr[Nullable[typings.babylonjs.effectMod.Effect]],
+    customEffect: Unit,
+    isAnimationSheetEnabled: Unit,
+    epsilon: Double
+  ) = this()
+  def this(
+    name: String,
+    capacity: Double,
+    sceneOrEngine: typings.babylonjs.sceneMod.Scene,
+    customEffect: Nullable[typings.babylonjs.effectMod.Effect],
+    isAnimationSheetEnabled: Boolean,
+    epsilon: Double
+  ) = this()
+  def this(
+    name: String,
+    capacity: Double,
+    sceneOrEngine: typings.babylonjs.sceneMod.Scene,
+    customEffect: Nullable[typings.babylonjs.effectMod.Effect],
+    isAnimationSheetEnabled: Unit,
+    epsilon: Double
+  ) = this()
+  def this(
+    name: String,
+    capacity: Double,
+    sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine,
+    customEffect: Unit,
     isAnimationSheetEnabled: Boolean,
     epsilon: Double
   ) = this()
@@ -69,21 +106,33 @@ class ParticleSystem protected ()
     name: String,
     capacity: Double,
     sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine,
-    customEffect: js.UndefOr[Nullable[typings.babylonjs.effectMod.Effect]],
-    isAnimationSheetEnabled: js.UndefOr[scala.Nothing],
+    customEffect: Unit,
+    isAnimationSheetEnabled: Unit,
     epsilon: Double
   ) = this()
   def this(
     name: String,
     capacity: Double,
     sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine,
-    customEffect: js.UndefOr[Nullable[typings.babylonjs.effectMod.Effect]],
+    customEffect: Nullable[typings.babylonjs.effectMod.Effect],
     isAnimationSheetEnabled: Boolean,
+    epsilon: Double
+  ) = this()
+  def this(
+    name: String,
+    capacity: Double,
+    sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine,
+    customEffect: Nullable[typings.babylonjs.effectMod.Effect],
+    isAnimationSheetEnabled: Unit,
     epsilon: Double
   ) = this()
 }
 /* static members */
 object ParticleSystem {
+  
+  @JSImport("babylonjs/index", "ParticleSystem")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Billboard mode will apply to all axes
@@ -114,99 +163,53 @@ object ParticleSystem {
     * @param doNotStart Ignore the preventAutoStart attribute and does not start
     * @returns the Parsed particle system
     */
-  @JSImport("babylonjs/index", "ParticleSystem.Parse")
-  @js.native
-  def Parse(parsedParticleSystem: js.Any, sceneOrEngine: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.particleSystemMod.ParticleSystem = js.native
-  @JSImport("babylonjs/index", "ParticleSystem.Parse")
-  @js.native
-  def Parse(
+  inline def Parse(parsedParticleSystem: js.Any, sceneOrEngine: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.particleSystemMod.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particleSystemMod.ParticleSystem]
+  inline def Parse(
     parsedParticleSystem: js.Any,
     sceneOrEngine: typings.babylonjs.sceneMod.Scene,
     rootUrl: String,
     doNotStart: Boolean
-  ): typings.babylonjs.particleSystemMod.ParticleSystem = js.native
-  @JSImport("babylonjs/index", "ParticleSystem.Parse")
-  @js.native
-  def Parse(
+  ): typings.babylonjs.particleSystemMod.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particleSystemMod.ParticleSystem]
+  inline def Parse(
     parsedParticleSystem: js.Any,
     sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine,
     rootUrl: String
-  ): typings.babylonjs.particleSystemMod.ParticleSystem = js.native
-  @JSImport("babylonjs/index", "ParticleSystem.Parse")
-  @js.native
-  def Parse(
+  ): typings.babylonjs.particleSystemMod.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particleSystemMod.ParticleSystem]
+  inline def Parse(
     parsedParticleSystem: js.Any,
     sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine,
     rootUrl: String,
     doNotStart: Boolean
-  ): typings.babylonjs.particleSystemMod.ParticleSystem = js.native
+  ): typings.babylonjs.particleSystemMod.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particleSystemMod.ParticleSystem]
   
   /** @hidden */
-  @JSImport("babylonjs/index", "ParticleSystem._GetAttributeNamesOrOptions")
-  @js.native
-  def _GetAttributeNamesOrOptions(): js.Array[String] = js.native
-  @JSImport("babylonjs/index", "ParticleSystem._GetAttributeNamesOrOptions")
-  @js.native
-  def _GetAttributeNamesOrOptions(
-    isAnimationSheetEnabled: js.UndefOr[scala.Nothing],
-    isBillboardBased: js.UndefOr[scala.Nothing],
-    useRampGradients: Boolean
-  ): js.Array[String] = js.native
-  @JSImport("babylonjs/index", "ParticleSystem._GetAttributeNamesOrOptions")
-  @js.native
-  def _GetAttributeNamesOrOptions(isAnimationSheetEnabled: js.UndefOr[scala.Nothing], isBillboardBased: Boolean): js.Array[String] = js.native
-  @JSImport("babylonjs/index", "ParticleSystem._GetAttributeNamesOrOptions")
-  @js.native
-  def _GetAttributeNamesOrOptions(
-    isAnimationSheetEnabled: js.UndefOr[scala.Nothing],
-    isBillboardBased: Boolean,
-    useRampGradients: Boolean
-  ): js.Array[String] = js.native
-  @JSImport("babylonjs/index", "ParticleSystem._GetAttributeNamesOrOptions")
-  @js.native
-  def _GetAttributeNamesOrOptions(isAnimationSheetEnabled: Boolean): js.Array[String] = js.native
-  @JSImport("babylonjs/index", "ParticleSystem._GetAttributeNamesOrOptions")
-  @js.native
-  def _GetAttributeNamesOrOptions(
-    isAnimationSheetEnabled: Boolean,
-    isBillboardBased: js.UndefOr[scala.Nothing],
-    useRampGradients: Boolean
-  ): js.Array[String] = js.native
-  @JSImport("babylonjs/index", "ParticleSystem._GetAttributeNamesOrOptions")
-  @js.native
-  def _GetAttributeNamesOrOptions(isAnimationSheetEnabled: Boolean, isBillboardBased: Boolean): js.Array[String] = js.native
-  @JSImport("babylonjs/index", "ParticleSystem._GetAttributeNamesOrOptions")
-  @js.native
-  def _GetAttributeNamesOrOptions(isAnimationSheetEnabled: Boolean, isBillboardBased: Boolean, useRampGradients: Boolean): js.Array[String] = js.native
+  inline def _GetAttributeNamesOrOptions(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")().asInstanceOf[js.Array[String]]
+  inline def _GetAttributeNamesOrOptions(isAnimationSheetEnabled: Boolean): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")(isAnimationSheetEnabled.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def _GetAttributeNamesOrOptions(isAnimationSheetEnabled: Boolean, isBillboardBased: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")(isAnimationSheetEnabled.asInstanceOf[js.Any], isBillboardBased.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def _GetAttributeNamesOrOptions(isAnimationSheetEnabled: Boolean, isBillboardBased: Boolean, useRampGradients: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")(isAnimationSheetEnabled.asInstanceOf[js.Any], isBillboardBased.asInstanceOf[js.Any], useRampGradients.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def _GetAttributeNamesOrOptions(isAnimationSheetEnabled: Boolean, isBillboardBased: Unit, useRampGradients: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")(isAnimationSheetEnabled.asInstanceOf[js.Any], isBillboardBased.asInstanceOf[js.Any], useRampGradients.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def _GetAttributeNamesOrOptions(isAnimationSheetEnabled: Unit, isBillboardBased: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")(isAnimationSheetEnabled.asInstanceOf[js.Any], isBillboardBased.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def _GetAttributeNamesOrOptions(isAnimationSheetEnabled: Unit, isBillboardBased: Boolean, useRampGradients: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")(isAnimationSheetEnabled.asInstanceOf[js.Any], isBillboardBased.asInstanceOf[js.Any], useRampGradients.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def _GetAttributeNamesOrOptions(isAnimationSheetEnabled: Unit, isBillboardBased: Unit, useRampGradients: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")(isAnimationSheetEnabled.asInstanceOf[js.Any], isBillboardBased.asInstanceOf[js.Any], useRampGradients.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   /** @hidden */
-  @JSImport("babylonjs/index", "ParticleSystem._GetEffectCreationOptions")
-  @js.native
-  def _GetEffectCreationOptions(): js.Array[String] = js.native
-  @JSImport("babylonjs/index", "ParticleSystem._GetEffectCreationOptions")
-  @js.native
-  def _GetEffectCreationOptions(isAnimationSheetEnabled: Boolean): js.Array[String] = js.native
+  inline def _GetEffectCreationOptions(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetEffectCreationOptions")().asInstanceOf[js.Array[String]]
+  inline def _GetEffectCreationOptions(isAnimationSheetEnabled: Boolean): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetEffectCreationOptions")(isAnimationSheetEnabled.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   /** @hidden */
-  @JSImport("babylonjs/index", "ParticleSystem._Parse")
-  @js.native
-  def _Parse(
+  inline def _Parse(
     parsedParticleSystem: js.Any,
     particleSystem: IParticleSystem,
     sceneOrEngine: typings.babylonjs.sceneMod.Scene,
     rootUrl: String
-  ): Unit = js.native
-  @JSImport("babylonjs/index", "ParticleSystem._Parse")
-  @js.native
-  def _Parse(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedParticleSystem.asInstanceOf[js.Any], particleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def _Parse(
     parsedParticleSystem: js.Any,
     particleSystem: IParticleSystem,
     sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine,
     rootUrl: String
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedParticleSystem.asInstanceOf[js.Any], particleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** @hidden */
-  @JSImport("babylonjs/index", "ParticleSystem._Serialize")
-  @js.native
-  def _Serialize(serializationObject: js.Any, particleSystem: IParticleSystem, serializeTexture: Boolean): Unit = js.native
+  inline def _Serialize(serializationObject: js.Any, particleSystem: IParticleSystem, serializeTexture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_Serialize")(serializationObject.asInstanceOf[js.Any], particleSystem.asInstanceOf[js.Any], serializeTexture.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -4,7 +4,6 @@ import typings.babylonjs.XRInputSource
 import typings.babylonjs.webXRInputSourceMod.IWebXRControllerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "WebXRInputSource")

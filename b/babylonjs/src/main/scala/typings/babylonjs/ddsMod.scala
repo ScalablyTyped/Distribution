@@ -8,7 +8,6 @@ import typings.babylonjs.typesMod.Nullable
 import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ddsMod {
@@ -28,9 +27,7 @@ object ddsMod {
       * @param data defines the array buffer view to read data from
       * @returns the DDS information
       */
-    @JSImport("babylonjs/Misc/dds", "DDSTools.GetDDSInfo")
-    @js.native
-    def GetDDSInfo(data: ArrayBufferView): DDSInfo = js.native
+    inline def GetDDSInfo(data: ArrayBufferView): DDSInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("GetDDSInfo")(data.asInstanceOf[js.Any]).asInstanceOf[DDSInfo]
     
     /**
       * Gets or sets a boolean indicating that LOD info is stored in alpha channel (false by default)
@@ -38,38 +35,21 @@ object ddsMod {
     @JSImport("babylonjs/Misc/dds", "DDSTools.StoreLODInAlphaChannel")
     @js.native
     def StoreLODInAlphaChannel: Boolean = js.native
-    @scala.inline
-    def StoreLODInAlphaChannel_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StoreLODInAlphaChannel")(x.asInstanceOf[js.Any])
+    inline def StoreLODInAlphaChannel_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StoreLODInAlphaChannel")(x.asInstanceOf[js.Any])
     
     /**
       * Uploads DDS Levels to a Babylon Texture
       * @hidden
       */
-    @JSImport("babylonjs/Misc/dds", "DDSTools.UploadDDSLevels")
-    @js.native
-    def UploadDDSLevels(
+    inline def UploadDDSLevels(
       engine: ThinEngine,
       texture: InternalTexture,
       data: ArrayBufferView,
       info: DDSInfo,
       loadMipmaps: Boolean,
       faces: Double
-    ): Unit = js.native
-    @JSImport("babylonjs/Misc/dds", "DDSTools.UploadDDSLevels")
-    @js.native
-    def UploadDDSLevels(
-      engine: ThinEngine,
-      texture: InternalTexture,
-      data: ArrayBufferView,
-      info: DDSInfo,
-      loadMipmaps: Boolean,
-      faces: Double,
-      lodIndex: js.UndefOr[scala.Nothing],
-      currentFace: Double
-    ): Unit = js.native
-    @JSImport("babylonjs/Misc/dds", "DDSTools.UploadDDSLevels")
-    @js.native
-    def UploadDDSLevels(
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("UploadDDSLevels")(engine.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], data.asInstanceOf[js.Any], info.asInstanceOf[js.Any], loadMipmaps.asInstanceOf[js.Any], faces.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def UploadDDSLevels(
       engine: ThinEngine,
       texture: InternalTexture,
       data: ArrayBufferView,
@@ -77,10 +57,8 @@ object ddsMod {
       loadMipmaps: Boolean,
       faces: Double,
       lodIndex: Double
-    ): Unit = js.native
-    @JSImport("babylonjs/Misc/dds", "DDSTools.UploadDDSLevels")
-    @js.native
-    def UploadDDSLevels(
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("UploadDDSLevels")(engine.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], data.asInstanceOf[js.Any], info.asInstanceOf[js.Any], loadMipmaps.asInstanceOf[js.Any], faces.asInstanceOf[js.Any], lodIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def UploadDDSLevels(
       engine: ThinEngine,
       texture: InternalTexture,
       data: ArrayBufferView,
@@ -89,153 +67,148 @@ object ddsMod {
       faces: Double,
       lodIndex: Double,
       currentFace: Double
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("UploadDDSLevels")(engine.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], data.asInstanceOf[js.Any], info.asInstanceOf[js.Any], loadMipmaps.asInstanceOf[js.Any], faces.asInstanceOf[js.Any], lodIndex.asInstanceOf[js.Any], currentFace.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def UploadDDSLevels(
+      engine: ThinEngine,
+      texture: InternalTexture,
+      data: ArrayBufferView,
+      info: DDSInfo,
+      loadMipmaps: Boolean,
+      faces: Double,
+      lodIndex: Unit,
+      currentFace: Double
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("UploadDDSLevels")(engine.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], data.asInstanceOf[js.Any], info.asInstanceOf[js.Any], loadMipmaps.asInstanceOf[js.Any], faces.asInstanceOf[js.Any], lodIndex.asInstanceOf[js.Any], currentFace.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("babylonjs/Misc/dds", "DDSTools._ExtractLongWordOrder")
     @js.native
     def _ExtractLongWordOrder: js.Any = js.native
-    @scala.inline
-    def _ExtractLongWordOrder_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ExtractLongWordOrder")(x.asInstanceOf[js.Any])
+    inline def _ExtractLongWordOrder_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ExtractLongWordOrder")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/dds", "DDSTools._FloatView")
     @js.native
     def _FloatView: js.Any = js.native
-    @scala.inline
-    def _FloatView_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_FloatView")(x.asInstanceOf[js.Any])
+    inline def _FloatView_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_FloatView")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/dds", "DDSTools._FromHalfFloat")
     @js.native
     def _FromHalfFloat: js.Any = js.native
-    @scala.inline
-    def _FromHalfFloat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_FromHalfFloat")(x.asInstanceOf[js.Any])
+    inline def _FromHalfFloat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_FromHalfFloat")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/dds", "DDSTools._GetFloatAsUIntRGBAArrayBuffer")
     @js.native
     def _GetFloatAsUIntRGBAArrayBuffer: js.Any = js.native
-    @scala.inline
-    def _GetFloatAsUIntRGBAArrayBuffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetFloatAsUIntRGBAArrayBuffer")(x.asInstanceOf[js.Any])
+    inline def _GetFloatAsUIntRGBAArrayBuffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetFloatAsUIntRGBAArrayBuffer")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/dds", "DDSTools._GetFloatRGBAArrayBuffer")
     @js.native
     def _GetFloatRGBAArrayBuffer: js.Any = js.native
-    @scala.inline
-    def _GetFloatRGBAArrayBuffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetFloatRGBAArrayBuffer")(x.asInstanceOf[js.Any])
+    inline def _GetFloatRGBAArrayBuffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetFloatRGBAArrayBuffer")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/dds", "DDSTools._GetHalfFloatAsFloatRGBAArrayBuffer")
     @js.native
     def _GetHalfFloatAsFloatRGBAArrayBuffer: js.Any = js.native
-    @scala.inline
-    def _GetHalfFloatAsFloatRGBAArrayBuffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetHalfFloatAsFloatRGBAArrayBuffer")(x.asInstanceOf[js.Any])
+    inline def _GetHalfFloatAsFloatRGBAArrayBuffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetHalfFloatAsFloatRGBAArrayBuffer")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/dds", "DDSTools._GetHalfFloatAsUIntRGBAArrayBuffer")
     @js.native
     def _GetHalfFloatAsUIntRGBAArrayBuffer: js.Any = js.native
-    @scala.inline
-    def _GetHalfFloatAsUIntRGBAArrayBuffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetHalfFloatAsUIntRGBAArrayBuffer")(x.asInstanceOf[js.Any])
+    inline def _GetHalfFloatAsUIntRGBAArrayBuffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetHalfFloatAsUIntRGBAArrayBuffer")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/dds", "DDSTools._GetHalfFloatRGBAArrayBuffer")
     @js.native
     def _GetHalfFloatRGBAArrayBuffer: js.Any = js.native
-    @scala.inline
-    def _GetHalfFloatRGBAArrayBuffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetHalfFloatRGBAArrayBuffer")(x.asInstanceOf[js.Any])
+    inline def _GetHalfFloatRGBAArrayBuffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetHalfFloatRGBAArrayBuffer")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/dds", "DDSTools._GetLuminanceArrayBuffer")
     @js.native
     def _GetLuminanceArrayBuffer: js.Any = js.native
-    @scala.inline
-    def _GetLuminanceArrayBuffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetLuminanceArrayBuffer")(x.asInstanceOf[js.Any])
+    inline def _GetLuminanceArrayBuffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetLuminanceArrayBuffer")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/dds", "DDSTools._GetRGBAArrayBuffer")
     @js.native
     def _GetRGBAArrayBuffer: js.Any = js.native
-    @scala.inline
-    def _GetRGBAArrayBuffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetRGBAArrayBuffer")(x.asInstanceOf[js.Any])
+    inline def _GetRGBAArrayBuffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetRGBAArrayBuffer")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/dds", "DDSTools._GetRGBArrayBuffer")
     @js.native
     def _GetRGBArrayBuffer: js.Any = js.native
-    @scala.inline
-    def _GetRGBArrayBuffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetRGBArrayBuffer")(x.asInstanceOf[js.Any])
+    inline def _GetRGBArrayBuffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetRGBArrayBuffer")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/dds", "DDSTools._Int32View")
     @js.native
     def _Int32View: js.Any = js.native
-    @scala.inline
-    def _Int32View_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Int32View")(x.asInstanceOf[js.Any])
+    inline def _Int32View_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Int32View")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/dds", "DDSTools._ToHalfFloat")
     @js.native
     def _ToHalfFloat: js.Any = js.native
-    @scala.inline
-    def _ToHalfFloat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ToHalfFloat")(x.asInstanceOf[js.Any])
+    inline def _ToHalfFloat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ToHalfFloat")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait DDSInfo extends StObject {
     
     /**
       * The dxgiFormat of the texture
       * @see https://docs.microsoft.com/en-us/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format
       */
-    var dxgiFormat: Double = js.native
+    var dxgiFormat: Double
     
     /**
       * Width of the texture
       */
-    var height: Double = js.native
+    var height: Double
     
     /**
       * If the texture is a compressed format eg. FOURCC_DXT1
       */
-    var isCompressed: Boolean = js.native
+    var isCompressed: Boolean
     
     /**
       * If this is a cube texture
       * @see https://docs.microsoft.com/en-us/windows/desktop/direct3ddds/dds-file-layout-for-cubic-environment-maps
       */
-    var isCube: Boolean = js.native
+    var isCube: Boolean
     
     /**
       * If the textures format is a known fourCC format
       * @see https://www.fourcc.org/
       */
-    var isFourCC: Boolean = js.native
+    var isFourCC: Boolean
     
     /**
       * If the texture is a lumincance format
       */
-    var isLuminance: Boolean = js.native
+    var isLuminance: Boolean
     
     /**
       * If the texture is an RGB format eg. DXGI_FORMAT_B8G8R8X8_UNORM format
       */
-    var isRGB: Boolean = js.native
+    var isRGB: Boolean
     
     /**
       * Number of Mipmaps for the texture
       * @see https://en.wikipedia.org/wiki/Mipmap
       */
-    var mipmapCount: Double = js.native
+    var mipmapCount: Double
     
     /**
       * Sphericle polynomial created for the dds texture
       */
-    var sphericalPolynomial: js.UndefOr[SphericalPolynomial] = js.native
+    var sphericalPolynomial: js.UndefOr[SphericalPolynomial] = js.undefined
     
     /**
       * Texture type eg. Engine.TEXTURETYPE_UNSIGNED_INT, Engine.TEXTURETYPE_FLOAT
       */
-    var textureType: Double = js.native
+    var textureType: Double
     
     /**
       * Width of the texture
       */
-    var width: Double = js.native
+    var width: Double
   }
   object DDSInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dxgiFormat: Double,
       height: Double,
       isCompressed: Boolean,
@@ -251,44 +224,31 @@ object ddsMod {
       __obj.asInstanceOf[DDSInfo]
     }
     
-    @scala.inline
-    implicit class DDSInfoMutableBuilder[Self <: DDSInfo] (val x: Self) extends AnyVal {
+    extension [Self <: DDSInfo](x: Self) {
       
-      @scala.inline
-      def setDxgiFormat(value: Double): Self = StObject.set(x, "dxgiFormat", value.asInstanceOf[js.Any])
+      inline def setDxgiFormat(value: Double): Self = StObject.set(x, "dxgiFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCompressed(value: Boolean): Self = StObject.set(x, "isCompressed", value.asInstanceOf[js.Any])
+      inline def setIsCompressed(value: Boolean): Self = StObject.set(x, "isCompressed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCube(value: Boolean): Self = StObject.set(x, "isCube", value.asInstanceOf[js.Any])
+      inline def setIsCube(value: Boolean): Self = StObject.set(x, "isCube", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFourCC(value: Boolean): Self = StObject.set(x, "isFourCC", value.asInstanceOf[js.Any])
+      inline def setIsFourCC(value: Boolean): Self = StObject.set(x, "isFourCC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLuminance(value: Boolean): Self = StObject.set(x, "isLuminance", value.asInstanceOf[js.Any])
+      inline def setIsLuminance(value: Boolean): Self = StObject.set(x, "isLuminance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRGB(value: Boolean): Self = StObject.set(x, "isRGB", value.asInstanceOf[js.Any])
+      inline def setIsRGB(value: Boolean): Self = StObject.set(x, "isRGB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMipmapCount(value: Double): Self = StObject.set(x, "mipmapCount", value.asInstanceOf[js.Any])
+      inline def setMipmapCount(value: Double): Self = StObject.set(x, "mipmapCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSphericalPolynomial(value: SphericalPolynomial): Self = StObject.set(x, "sphericalPolynomial", value.asInstanceOf[js.Any])
+      inline def setSphericalPolynomial(value: SphericalPolynomial): Self = StObject.set(x, "sphericalPolynomial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSphericalPolynomialUndefined: Self = StObject.set(x, "sphericalPolynomial", js.undefined)
+      inline def setSphericalPolynomialUndefined: Self = StObject.set(x, "sphericalPolynomial", js.undefined)
       
-      @scala.inline
-      def setTextureType(value: Double): Self = StObject.set(x, "textureType", value.asInstanceOf[js.Any])
+      inline def setTextureType(value: Double): Self = StObject.set(x, "textureType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -317,40 +277,8 @@ object ddsMod {
         scene: Nullable[Scene],
         lodScale: Double,
         lodOffset: Double,
-        onLoad: js.UndefOr[Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]]],
-        onError: js.UndefOr[Nullable[js.Function2[js.UndefOr[String], js.UndefOr[_], Unit]]],
-        format: js.UndefOr[scala.Nothing],
-        forcedExtension: js.UndefOr[scala.Nothing],
-        createPolynomials: Boolean
-      ): InternalTexture = js.native
-      def createPrefilteredCubeTexture(
-        rootUrl: String,
-        scene: Nullable[Scene],
-        lodScale: Double,
-        lodOffset: Double,
-        onLoad: js.UndefOr[Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]]],
-        onError: js.UndefOr[Nullable[js.Function2[js.UndefOr[String], js.UndefOr[_], Unit]]],
-        format: js.UndefOr[scala.Nothing],
-        forcedExtension: js.Any
-      ): InternalTexture = js.native
-      def createPrefilteredCubeTexture(
-        rootUrl: String,
-        scene: Nullable[Scene],
-        lodScale: Double,
-        lodOffset: Double,
-        onLoad: js.UndefOr[Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]]],
-        onError: js.UndefOr[Nullable[js.Function2[js.UndefOr[String], js.UndefOr[_], Unit]]],
-        format: js.UndefOr[scala.Nothing],
-        forcedExtension: js.Any,
-        createPolynomials: Boolean
-      ): InternalTexture = js.native
-      def createPrefilteredCubeTexture(
-        rootUrl: String,
-        scene: Nullable[Scene],
-        lodScale: Double,
-        lodOffset: Double,
-        onLoad: js.UndefOr[Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]]],
-        onError: js.UndefOr[Nullable[js.Function2[js.UndefOr[String], js.UndefOr[_], Unit]]],
+        onLoad: Unit,
+        onError: Unit,
         format: Double
       ): InternalTexture = js.native
       def createPrefilteredCubeTexture(
@@ -358,19 +286,8 @@ object ddsMod {
         scene: Nullable[Scene],
         lodScale: Double,
         lodOffset: Double,
-        onLoad: js.UndefOr[Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]]],
-        onError: js.UndefOr[Nullable[js.Function2[js.UndefOr[String], js.UndefOr[_], Unit]]],
-        format: Double,
-        forcedExtension: js.UndefOr[scala.Nothing],
-        createPolynomials: Boolean
-      ): InternalTexture = js.native
-      def createPrefilteredCubeTexture(
-        rootUrl: String,
-        scene: Nullable[Scene],
-        lodScale: Double,
-        lodOffset: Double,
-        onLoad: js.UndefOr[Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]]],
-        onError: js.UndefOr[Nullable[js.Function2[js.UndefOr[String], js.UndefOr[_], Unit]]],
+        onLoad: Unit,
+        onError: Unit,
         format: Double,
         forcedExtension: js.Any
       ): InternalTexture = js.native
@@ -379,8 +296,8 @@ object ddsMod {
         scene: Nullable[Scene],
         lodScale: Double,
         lodOffset: Double,
-        onLoad: js.UndefOr[Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]]],
-        onError: js.UndefOr[Nullable[js.Function2[js.UndefOr[String], js.UndefOr[_], Unit]]],
+        onLoad: Unit,
+        onError: Unit,
         format: Double,
         forcedExtension: js.Any,
         createPolynomials: Boolean
@@ -390,8 +307,140 @@ object ddsMod {
         scene: Nullable[Scene],
         lodScale: Double,
         lodOffset: Double,
-        onLoad: js.UndefOr[Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]]],
-        onError: Nullable[js.Function2[js.UndefOr[String], js.UndefOr[_], Unit]]
+        onLoad: Unit,
+        onError: Unit,
+        format: Double,
+        forcedExtension: Unit,
+        createPolynomials: Boolean
+      ): InternalTexture = js.native
+      def createPrefilteredCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        lodScale: Double,
+        lodOffset: Double,
+        onLoad: Unit,
+        onError: Unit,
+        format: Unit,
+        forcedExtension: js.Any
+      ): InternalTexture = js.native
+      def createPrefilteredCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        lodScale: Double,
+        lodOffset: Double,
+        onLoad: Unit,
+        onError: Unit,
+        format: Unit,
+        forcedExtension: js.Any,
+        createPolynomials: Boolean
+      ): InternalTexture = js.native
+      def createPrefilteredCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        lodScale: Double,
+        lodOffset: Double,
+        onLoad: Unit,
+        onError: Unit,
+        format: Unit,
+        forcedExtension: Unit,
+        createPolynomials: Boolean
+      ): InternalTexture = js.native
+      def createPrefilteredCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        lodScale: Double,
+        lodOffset: Double,
+        onLoad: Unit,
+        onError: Nullable[
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            ]
+      ): InternalTexture = js.native
+      def createPrefilteredCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        lodScale: Double,
+        lodOffset: Double,
+        onLoad: Unit,
+        onError: Nullable[
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            ],
+        format: Double
+      ): InternalTexture = js.native
+      def createPrefilteredCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        lodScale: Double,
+        lodOffset: Double,
+        onLoad: Unit,
+        onError: Nullable[
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            ],
+        format: Double,
+        forcedExtension: js.Any
+      ): InternalTexture = js.native
+      def createPrefilteredCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        lodScale: Double,
+        lodOffset: Double,
+        onLoad: Unit,
+        onError: Nullable[
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            ],
+        format: Double,
+        forcedExtension: js.Any,
+        createPolynomials: Boolean
+      ): InternalTexture = js.native
+      def createPrefilteredCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        lodScale: Double,
+        lodOffset: Double,
+        onLoad: Unit,
+        onError: Nullable[
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            ],
+        format: Double,
+        forcedExtension: Unit,
+        createPolynomials: Boolean
+      ): InternalTexture = js.native
+      def createPrefilteredCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        lodScale: Double,
+        lodOffset: Double,
+        onLoad: Unit,
+        onError: Nullable[
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            ],
+        format: Unit,
+        forcedExtension: js.Any
+      ): InternalTexture = js.native
+      def createPrefilteredCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        lodScale: Double,
+        lodOffset: Double,
+        onLoad: Unit,
+        onError: Nullable[
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            ],
+        format: Unit,
+        forcedExtension: js.Any,
+        createPolynomials: Boolean
+      ): InternalTexture = js.native
+      def createPrefilteredCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        lodScale: Double,
+        lodOffset: Double,
+        onLoad: Unit,
+        onError: Nullable[
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            ],
+        format: Unit,
+        forcedExtension: Unit,
+        createPolynomials: Boolean
       ): InternalTexture = js.native
       def createPrefilteredCubeTexture(
         rootUrl: String,
@@ -399,6 +448,176 @@ object ddsMod {
         lodScale: Double,
         lodOffset: Double,
         onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]]
+      ): InternalTexture = js.native
+      def createPrefilteredCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        lodScale: Double,
+        lodOffset: Double,
+        onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+        onError: Unit,
+        format: Double
+      ): InternalTexture = js.native
+      def createPrefilteredCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        lodScale: Double,
+        lodOffset: Double,
+        onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+        onError: Unit,
+        format: Double,
+        forcedExtension: js.Any
+      ): InternalTexture = js.native
+      def createPrefilteredCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        lodScale: Double,
+        lodOffset: Double,
+        onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+        onError: Unit,
+        format: Double,
+        forcedExtension: js.Any,
+        createPolynomials: Boolean
+      ): InternalTexture = js.native
+      def createPrefilteredCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        lodScale: Double,
+        lodOffset: Double,
+        onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+        onError: Unit,
+        format: Double,
+        forcedExtension: Unit,
+        createPolynomials: Boolean
+      ): InternalTexture = js.native
+      def createPrefilteredCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        lodScale: Double,
+        lodOffset: Double,
+        onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+        onError: Unit,
+        format: Unit,
+        forcedExtension: js.Any
+      ): InternalTexture = js.native
+      def createPrefilteredCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        lodScale: Double,
+        lodOffset: Double,
+        onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+        onError: Unit,
+        format: Unit,
+        forcedExtension: js.Any,
+        createPolynomials: Boolean
+      ): InternalTexture = js.native
+      def createPrefilteredCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        lodScale: Double,
+        lodOffset: Double,
+        onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+        onError: Unit,
+        format: Unit,
+        forcedExtension: Unit,
+        createPolynomials: Boolean
+      ): InternalTexture = js.native
+      def createPrefilteredCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        lodScale: Double,
+        lodOffset: Double,
+        onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+        onError: Nullable[
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            ]
+      ): InternalTexture = js.native
+      def createPrefilteredCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        lodScale: Double,
+        lodOffset: Double,
+        onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+        onError: Nullable[
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            ],
+        format: Double
+      ): InternalTexture = js.native
+      def createPrefilteredCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        lodScale: Double,
+        lodOffset: Double,
+        onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+        onError: Nullable[
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            ],
+        format: Double,
+        forcedExtension: js.Any
+      ): InternalTexture = js.native
+      def createPrefilteredCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        lodScale: Double,
+        lodOffset: Double,
+        onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+        onError: Nullable[
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            ],
+        format: Double,
+        forcedExtension: js.Any,
+        createPolynomials: Boolean
+      ): InternalTexture = js.native
+      def createPrefilteredCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        lodScale: Double,
+        lodOffset: Double,
+        onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+        onError: Nullable[
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            ],
+        format: Double,
+        forcedExtension: Unit,
+        createPolynomials: Boolean
+      ): InternalTexture = js.native
+      def createPrefilteredCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        lodScale: Double,
+        lodOffset: Double,
+        onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+        onError: Nullable[
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            ],
+        format: Unit,
+        forcedExtension: js.Any
+      ): InternalTexture = js.native
+      def createPrefilteredCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        lodScale: Double,
+        lodOffset: Double,
+        onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+        onError: Nullable[
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            ],
+        format: Unit,
+        forcedExtension: js.Any,
+        createPolynomials: Boolean
+      ): InternalTexture = js.native
+      def createPrefilteredCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        lodScale: Double,
+        lodOffset: Double,
+        onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
+        onError: Nullable[
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            ],
+        format: Unit,
+        forcedExtension: Unit,
+        createPolynomials: Boolean
       ): InternalTexture = js.native
     }
   }

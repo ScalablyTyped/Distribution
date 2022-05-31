@@ -19,14 +19,15 @@ import typings.babylonjs.typesMod.IndicesArray
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object geometryMod {
   
   @JSImport("babylonjs/Meshes/geometry", "Geometry")
   @js.native
-  class Geometry protected () extends IGetSetVerticesData {
+  class Geometry protected ()
+    extends StObject
+       with IGetSetVerticesData {
     /**
       * Creates a new geometry
       * @param id defines the unique ID
@@ -37,38 +38,20 @@ object geometryMod {
       */
     def this(id: String, scene: Scene) = this()
     def this(id: String, scene: Scene, vertexData: VertexData) = this()
-    def this(id: String, scene: Scene, vertexData: js.UndefOr[scala.Nothing], updatable: Boolean) = this()
+    def this(id: String, scene: Scene, vertexData: Unit, updatable: Boolean) = this()
     def this(id: String, scene: Scene, vertexData: VertexData, updatable: Boolean) = this()
-    def this(
-      id: String,
-      scene: Scene,
-      vertexData: js.UndefOr[scala.Nothing],
-      updatable: js.UndefOr[scala.Nothing],
-      mesh: Nullable[Mesh]
-    ) = this()
-    def this(
-      id: String,
-      scene: Scene,
-      vertexData: js.UndefOr[scala.Nothing],
-      updatable: Boolean,
-      mesh: Nullable[Mesh]
-    ) = this()
-    def this(
-      id: String,
-      scene: Scene,
-      vertexData: VertexData,
-      updatable: js.UndefOr[scala.Nothing],
-      mesh: Nullable[Mesh]
-    ) = this()
+    def this(id: String, scene: Scene, vertexData: Unit, updatable: Boolean, mesh: Nullable[Mesh]) = this()
+    def this(id: String, scene: Scene, vertexData: Unit, updatable: Unit, mesh: Nullable[Mesh]) = this()
     def this(id: String, scene: Scene, vertexData: VertexData, updatable: Boolean, mesh: Nullable[Mesh]) = this()
+    def this(id: String, scene: Scene, vertexData: VertexData, updatable: Unit, mesh: Nullable[Mesh]) = this()
     
-    var _applyToMesh: js.Any = js.native
+    /* private */ var _applyToMesh: js.Any = js.native
     
     /** @hidden */
     def _bind(effect: Nullable[Effect]): Unit = js.native
     def _bind(effect: Nullable[Effect], indexToBind: Nullable[DataBuffer]): Unit = js.native
     
-    var _boundingBias: js.Any = js.native
+    /* private */ var _boundingBias: js.Any = js.native
     
     /** @hidden */
     var _boundingInfo: Nullable[BoundingInfo] = js.native
@@ -77,34 +60,34 @@ object geometryMod {
     var _delayInfo: js.Array[String] = js.native
     
     /** @hidden */
-    var _delayLoadingFunction: Nullable[js.Function2[/* any */ _, /* geometry */ this.type, Unit]] = js.native
+    var _delayLoadingFunction: Nullable[js.Function2[/* any */ js.Any, /* geometry */ this.type, Unit]] = js.native
     
-    var _disposeVertexArrayObjects: js.Any = js.native
+    /* private */ var _disposeVertexArrayObjects: js.Any = js.native
     
-    var _engine: js.Any = js.native
+    /* private */ var _engine: js.Any = js.native
     
-    var _extend: js.Any = js.native
+    /* private */ var _extend: js.Any = js.native
     
     /** @hidden */
     def _generatePointsArray(): Boolean = js.native
     
-    var _indexBuffer: js.Any = js.native
+    /* private */ var _indexBuffer: js.Any = js.native
     
-    var _indexBufferIsUpdatable: js.Any = js.native
+    /* private */ var _indexBufferIsUpdatable: js.Any = js.native
     
     /** @hidden */
     var _indices: IndicesArray = js.native
     
-    var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: js.Any = js.native
     
-    var _meshes: js.Any = js.native
+    /* private */ var _meshes: js.Any = js.native
     
     /** @hidden */
     var _positions: Nullable[js.Array[Vector3]] = js.native
     
-    var _positionsCache: js.Any = js.native
+    /* private */ var _positionsCache: js.Any = js.native
     
-    var _queueLoad: js.Any = js.native
+    /* private */ var _queueLoad: js.Any = js.native
     
     /** @hidden */
     def _rebuild(): Unit = js.native
@@ -116,20 +99,20 @@ object geometryMod {
     /** @hidden */
     def _resetPointsArrayCache(): Unit = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
     /** @hidden */
     var _softwareSkinningFrameId: Double = js.native
     
-    var _totalVertices: js.Any = js.native
+    /* private */ var _totalVertices: js.Any = js.native
     
-    var _updatable: js.Any = js.native
+    /* private */ var _updatable: js.Any = js.native
     
-    var _updateBoundingInfo: js.Any = js.native
+    /* private */ var _updateBoundingInfo: js.Any = js.native
     
-    var _updateExtend: js.Any = js.native
+    /* private */ var _updateExtend: js.Any = js.native
     
-    var _vertexArrayObjects: js.Any = js.native
+    /* private */ var _vertexArrayObjects: js.Any = js.native
     
     /** @hidden */
     var _vertexBuffers: StringDictionary[VertexBuffer] = js.native
@@ -265,7 +248,7 @@ object geometryMod {
     /** Get the list of meshes using this geometry */
     def meshes: js.Array[Mesh] = js.native
     
-    var notifyUpdate: js.Any = js.native
+    /* private */ var notifyUpdate: js.Any = js.native
     
     /**
       * Callback called when the geometry is updated
@@ -314,6 +297,7 @@ object geometryMod {
       * @param updatable defines if the index buffer must be flagged as updatable (false by default)
       */
     def setIndices(indices: IndicesArray): Unit = js.native
+    def setIndices(indices: IndicesArray, totalVertices: Unit, updatable: Boolean): Unit = js.native
     
     /**
       * Affect a vertex buffer to the geometry. the vertexBuffer.getKind() function is used to determine where to store the data
@@ -331,15 +315,15 @@ object geometryMod {
       * @param stride defines the stride to use (0 by default). This value is deduced from the kind value if not specified
       */
     def setVerticesData(kind: String, data: FloatArray): Unit = js.native
-    def setVerticesData(kind: String, data: FloatArray, updatable: js.UndefOr[scala.Nothing], stride: Double): Unit = js.native
     def setVerticesData(kind: String, data: FloatArray, updatable: Boolean, stride: Double): Unit = js.native
+    def setVerticesData(kind: String, data: FloatArray, updatable: Unit, stride: Double): Unit = js.native
     
     /**
       * Invert the geometry to move from a right handed system to a left handed one.
       */
     def toLeftHanded(): Unit = js.native
     
-    var toNumberArray: js.Any = js.native
+    /* private */ var toNumberArray: js.Any = js.native
     
     /**
       * Gets or sets the unique ID of the geometry
@@ -353,9 +337,9 @@ object geometryMod {
       * @param gpuMemoryOnly defines a boolean indicating that only the GPU memory must be updated leaving the CPU version of the indices unchanged (false by default)
       */
     def updateIndices(indices: IndicesArray): Unit = js.native
-    def updateIndices(indices: IndicesArray, offset: js.UndefOr[scala.Nothing], gpuMemoryOnly: Boolean): Unit = js.native
     def updateIndices(indices: IndicesArray, offset: Double): Unit = js.native
     def updateIndices(indices: IndicesArray, offset: Double, gpuMemoryOnly: Boolean): Unit = js.native
+    def updateIndices(indices: IndicesArray, offset: Unit, gpuMemoryOnly: Boolean): Unit = js.native
     
     /**
       * Update a specific vertex buffer
@@ -387,9 +371,7 @@ object geometryMod {
       * @param mesh defines the mesh to attach the geometry to
       * @returns the new Geometry
       */
-    @JSImport("babylonjs/Meshes/geometry", "Geometry.CreateGeometryForMesh")
-    @js.native
-    def CreateGeometryForMesh(mesh: Mesh): Geometry = js.native
+    inline def CreateGeometryForMesh(mesh: Mesh): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateGeometryForMesh")(mesh.asInstanceOf[js.Any]).asInstanceOf[Geometry]
     
     /**
       * Extracts a clone of a mesh geometry
@@ -397,9 +379,7 @@ object geometryMod {
       * @param id defines the unique ID of the new geometry object
       * @returns the new geometry object
       */
-    @JSImport("babylonjs/Meshes/geometry", "Geometry.ExtractFromMesh")
-    @js.native
-    def ExtractFromMesh(mesh: Mesh, id: String): Nullable[Geometry] = js.native
+    inline def ExtractFromMesh(mesh: Mesh, id: String): Nullable[Geometry] = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtractFromMesh")(mesh.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Nullable[Geometry]]
     
     /**
       * Create a new geometry from persisted data (Using .babylon file format)
@@ -408,9 +388,7 @@ object geometryMod {
       * @param rootUrl defines the root url to use to load assets (like delayed data)
       * @returns the new geometry object
       */
-    @JSImport("babylonjs/Meshes/geometry", "Geometry.Parse")
-    @js.native
-    def Parse(parsedVertexData: js.Any, scene: Scene, rootUrl: String): Nullable[Geometry] = js.native
+    inline def Parse(parsedVertexData: js.Any, scene: Scene, rootUrl: String): Nullable[Geometry] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedVertexData.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[Geometry]]
     
     /**
       * You should now use Tools.RandomId(), this method is still here for legacy reasons.
@@ -419,19 +397,14 @@ object geometryMod {
       * "All but 6 of the 128 bits of the ID are randomly generated, which means that for any two ids, there's a 1 in 2^^122 (or 5.3x10^^36) chance they'll collide"
       * @returns a string containing a new GUID
       */
-    @JSImport("babylonjs/Meshes/geometry", "Geometry.RandomId")
-    @js.native
-    def RandomId(): String = js.native
+    inline def RandomId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("RandomId")().asInstanceOf[String]
     
     @JSImport("babylonjs/Meshes/geometry", "Geometry._CleanMatricesWeights")
     @js.native
     def _CleanMatricesWeights: js.Any = js.native
-    @scala.inline
-    def _CleanMatricesWeights_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CleanMatricesWeights")(x.asInstanceOf[js.Any])
+    inline def _CleanMatricesWeights_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CleanMatricesWeights")(x.asInstanceOf[js.Any])
     
     /** @hidden */
-    @JSImport("babylonjs/Meshes/geometry", "Geometry._ImportGeometry")
-    @js.native
-    def _ImportGeometry(parsedGeometry: js.Any, mesh: Mesh): Unit = js.native
+    inline def _ImportGeometry(parsedGeometry: js.Any, mesh: Mesh): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_ImportGeometry")(parsedGeometry.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

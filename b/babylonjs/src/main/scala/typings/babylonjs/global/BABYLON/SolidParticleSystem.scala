@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.anon.BSphereRadiusFactor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.SolidParticleSystem")
 @js.native
 class SolidParticleSystem protected ()
-  extends typings.babylonjs.BABYLON.SolidParticleSystem {
+  extends StObject
+     with typings.babylonjs.BABYLON.SolidParticleSystem {
   /**
     * Creates a SPS (Solid Particle System) object.
     * @param name (String) is the SPS name, this will be the underlying mesh name.
@@ -28,4 +28,10 @@ class SolidParticleSystem protected ()
     */
   def this(name: String, scene: typings.babylonjs.BABYLON.Scene) = this()
   def this(name: String, scene: typings.babylonjs.BABYLON.Scene, options: BSphereRadiusFactor) = this()
+  
+  /**
+    * Releases all held resources
+    */
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
 }

@@ -2,15 +2,16 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FollowCamera extends TargetCamera {
+trait FollowCamera
+  extends StObject
+     with TargetCamera {
   
-  var _checkLimits: js.Any = js.native
+  /* private */ var _checkLimits: js.Any = js.native
   
-  var _follow: js.Any = js.native
+  /* private */ var _follow: js.Any = js.native
   
   /**
     * Define how fast the camera can accelerate to follow it s target.

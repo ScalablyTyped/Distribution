@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jstimezonedetect"
-version := "1.0-dt-20201027Z-e32696"
+version := "1.0-dt-20201027Z-fe26b9"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

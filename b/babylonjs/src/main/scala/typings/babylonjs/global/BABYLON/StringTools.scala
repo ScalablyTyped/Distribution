@@ -6,39 +6,35 @@ import typings.std.Uint16Array
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.StringTools")
 @js.native
 class StringTools ()
-  extends typings.babylonjs.BABYLON.StringTools
+  extends StObject
+     with typings.babylonjs.BABYLON.StringTools
 /* static members */
 object StringTools {
   
-  @JSGlobal("BABYLON.StringTools.Decode")
+  @JSGlobal("BABYLON.StringTools")
   @js.native
-  def Decode(buffer: Uint16Array): String = js.native
+  val ^ : js.Any = js.native
+  
+  inline def Decode(buffer: Uint16Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("Decode")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
     * Decodes a buffer into a string
     * @param buffer The buffer to decode
     * @returns The decoded string
     */
-  @JSGlobal("BABYLON.StringTools.Decode")
-  @js.native
-  def Decode(buffer: Uint8Array): String = js.native
+  inline def Decode(buffer: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("Decode")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Encode a buffer to a base64 string
     * @param buffer defines the buffer to encode
     * @returns the encoded string
     */
-  @JSGlobal("BABYLON.StringTools.EncodeArrayBufferToBase64")
-  @js.native
-  def EncodeArrayBufferToBase64(buffer: ArrayBuffer): String = js.native
-  @JSGlobal("BABYLON.StringTools.EncodeArrayBufferToBase64")
-  @js.native
-  def EncodeArrayBufferToBase64(buffer: ArrayBufferView): String = js.native
+  inline def EncodeArrayBufferToBase64(buffer: ArrayBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("EncodeArrayBufferToBase64")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def EncodeArrayBufferToBase64(buffer: ArrayBufferView): String = ^.asInstanceOf[js.Dynamic].applyDynamic("EncodeArrayBufferToBase64")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Checks for a matching suffix at the end of a string (for ES5 and lower)
@@ -46,9 +42,7 @@ object StringTools {
     * @param suffix Suffix to search for in the source string
     * @returns Boolean indicating whether the suffix was found (true) or not (false)
     */
-  @JSGlobal("BABYLON.StringTools.EndsWith")
-  @js.native
-  def EndsWith(str: String, suffix: String): Boolean = js.native
+  inline def EndsWith(str: String, suffix: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("EndsWith")(str.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Converts a number to string and pads with preceeding zeroes until it is of specified length.
@@ -56,9 +50,7 @@ object StringTools {
     * @param length the expected length of the string
     * @returns the padded string
     */
-  @JSGlobal("BABYLON.StringTools.PadNumber")
-  @js.native
-  def PadNumber(num: Double, length: Double): String = js.native
+  inline def PadNumber(num: Double, length: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("PadNumber")(num.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Checks for a matching suffix at the beginning of a string (for ES5 and lower)
@@ -66,7 +58,5 @@ object StringTools {
     * @param suffix Suffix to search for in the source string
     * @returns Boolean indicating whether the suffix was found (true) or not (false)
     */
-  @JSGlobal("BABYLON.StringTools.StartsWith")
-  @js.native
-  def StartsWith(str: String, suffix: String): Boolean = js.native
+  inline def StartsWith(str: String, suffix: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("StartsWith")(str.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

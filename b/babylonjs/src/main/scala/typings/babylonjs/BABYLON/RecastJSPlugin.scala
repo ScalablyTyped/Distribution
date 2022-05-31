@@ -2,15 +2,16 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecastJSPlugin extends INavigationEnginePlugin {
+trait RecastJSPlugin
+  extends StObject
+     with INavigationEnginePlugin {
   
-  var _maximumSubStepCount: js.Any = js.native
+  /* private */ var _maximumSubStepCount: js.Any = js.native
   
-  var _timeStep: js.Any = js.native
+  /* private */ var _timeStep: js.Any = js.native
   
   /**
     * Reference to the Recast library

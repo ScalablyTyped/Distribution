@@ -16,7 +16,6 @@ import typings.std.Event
 import typings.std.HTMLLIElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object widgetMod {
@@ -29,11 +28,11 @@ object widgetMod {
       */
     def this(options: IOptions) = this()
     
-    var _activeIndex: js.Any = js.native
+    /* private */ var _activeIndex: js.Any = js.native
     
-    var _createCompletionItemNode: js.Any = js.native
+    /* private */ var _createCompletionItemNode: js.Any = js.native
     
-    var _createIItemNode: js.Any = js.native
+    /* private */ var _createIItemNode: js.Any = js.native
     
     /**
       * Cycle through the available completer items.
@@ -43,51 +42,51 @@ object widgetMod {
       * `down` cycles will remain on the last index. When the user cycles `up` to
       * the first item, subsequent `up` cycles will remain on the first cycle.
       */
-    var _cycle: js.Any = js.native
+    /* private */ var _cycle: js.Any = js.native
     
-    var _editor: js.Any = js.native
+    /* private */ var _editor: js.Any = js.native
     
     /**
       * Handle keydown events for the widget.
       */
-    var _evtKeydown: js.Any = js.native
+    /* private */ var _evtKeydown: js.Any = js.native
     
     /**
       * Handle mousedown events for the widget.
       */
-    var _evtMousedown: js.Any = js.native
+    /* private */ var _evtMousedown: js.Any = js.native
     
     /**
       * Handle scroll events for the widget
       */
-    var _evtScroll: js.Any = js.native
+    /* private */ var _evtScroll: js.Any = js.native
     
-    var _model: js.Any = js.native
+    /* private */ var _model: js.Any = js.native
     
     /**
       * Populate the completer up to the longest initial subset of items.
       *
       * @returns `true` if a subset match was found and populated.
       */
-    var _populateSubset: js.Any = js.native
+    /* private */ var _populateSubset: js.Any = js.native
     
-    var _renderer: js.Any = js.native
+    /* private */ var _renderer: js.Any = js.native
     
-    var _resetFlag: js.Any = js.native
+    /* private */ var _resetFlag: js.Any = js.native
     
-    var _selected: js.Any = js.native
+    /* private */ var _selected: js.Any = js.native
     
     /**
       * Set the visible dimensions of the widget.
       */
-    var _setGeometry: js.Any = js.native
+    /* private */ var _setGeometry: js.Any = js.native
     
     /**
       * Update the display-state and contents of the documentation panel
       */
-    var _updateDocPanel: js.Any = js.native
+    /* private */ var _updateDocPanel: js.Any = js.native
     
-    var _visibilityChanged: js.Any = js.native
+    /* private */ var _visibilityChanged: js.Any = js.native
     
     /**
       * The editor used by the completion widget.
@@ -149,28 +148,36 @@ object widgetMod {
       */
     @JSImport("@jupyterlab/completer/lib/widget", "Completer.Renderer")
     @js.native
-    class Renderer () extends IRenderer {
+    class Renderer ()
+      extends StObject
+         with IRenderer {
       
       /**
         * Attaches type and match nodes to base node.
         */
-      var _constructNode: js.Any = js.native
+      /* private */ var _constructNode: js.Any = js.native
       
       /**
         * Create base node with the value to be inserted
         */
-      var _createBaseNode: js.Any = js.native
+      /* private */ var _createBaseNode: js.Any = js.native
       
       /**
         * Create match node to highlight potential prefix match within result.
         */
-      var _createMatchNode: js.Any = js.native
+      /* private */ var _createMatchNode: js.Any = js.native
       
       /**
         * Create an item node from an ICompletionItem for a text completer menu.
         */
       @JSName("createCompletionItemNode")
       def createCompletionItemNode_MRenderer(item: ICompletionItem, orderedTypes: js.Array[String]): HTMLLIElement = js.native
+      
+      /**
+        * Create an item node (an `li` element) for a text completer menu.
+        */
+      /* CompleteClass */
+      override def createItemNode(item: IItem, typeMap: TypeMap, orderedTypes: js.Array[String]): HTMLLIElement = js.native
     }
     
     /**
@@ -183,70 +190,62 @@ object widgetMod {
     /**
       * A cursor span.
       */
-    @js.native
-    trait ICursorSpan extends JSONObject {
+    trait ICursorSpan
+      extends StObject
+         with JSONObject {
       
       /**
         * The end position of the cursor.
         */
-      var end: Double = js.native
+      var end: Double
       
       /**
         * The start position of the cursor.
         */
-      var start: Double = js.native
+      var start: Double
     }
     object ICursorSpan {
       
-      @scala.inline
-      def apply(end: Double, start: Double): ICursorSpan = {
+      inline def apply(end: Double, start: Double): ICursorSpan = {
         val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
         __obj.asInstanceOf[ICursorSpan]
       }
       
-      @scala.inline
-      implicit class ICursorSpanMutableBuilder[Self <: ICursorSpan] (val x: Self) extends AnyVal {
+      extension [Self <: ICursorSpan](x: Self) {
         
-        @scala.inline
-        def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+        inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+        inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       }
     }
     
     /**
       * A completer menu item.
       */
-    @js.native
     trait IItem extends StObject {
       
       /**
         * The raw text of a visible completer item.
         */
-      var raw: String = js.native
+      var raw: String
       
       /**
         * The highlighted, marked up text of a visible completer item.
         */
-      var text: String = js.native
+      var text: String
     }
     object IItem {
       
-      @scala.inline
-      def apply(raw: String, text: String): IItem = {
+      inline def apply(raw: String, text: String): IItem = {
         val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
         __obj.asInstanceOf[IItem]
       }
       
-      @scala.inline
-      implicit class IItemMutableBuilder[Self <: IItem] (val x: Self) extends AnyVal {
+      extension [Self <: IItem](x: Self) {
         
-        @scala.inline
-        def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+        inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+        inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       }
     }
     
@@ -254,7 +253,9 @@ object widgetMod {
       * The data model backing a code completer widget.
       */
     @js.native
-    trait IModel extends IDisposable {
+    trait IModel
+      extends StObject
+         with IDisposable {
       
       /**
         * Get the list of visible CompletionItems in the completer menu.
@@ -350,105 +351,88 @@ object widgetMod {
     /**
       * The initialization options for a completer widget.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The semantic parent of the completer widget, its referent editor.
         */
-      var editor: js.UndefOr[IEditor | Null] = js.native
+      var editor: js.UndefOr[IEditor | Null] = js.undefined
       
       /**
         * The model for the completer widget.
         */
-      var model: js.UndefOr[IModel] = js.native
+      var model: js.UndefOr[IModel] = js.undefined
       
       /**
         * The renderer for the completer widget nodes.
         */
-      var renderer: js.UndefOr[IRenderer] = js.native
+      var renderer: js.UndefOr[IRenderer] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): IOptions = {
+      inline def apply(): IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setEditor(value: IEditor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+        inline def setEditor(value: IEditor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEditorNull: Self = StObject.set(x, "editor", null)
+        inline def setEditorNull: Self = StObject.set(x, "editor", null)
         
-        @scala.inline
-        def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
+        inline def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
         
-        @scala.inline
-        def setModel(value: IModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+        inline def setModel(value: IModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+        inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
         
-        @scala.inline
-        def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+        inline def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+        inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
       }
     }
     
     /**
       * An object describing a completion option injection into text.
       */
-    @js.native
     trait IPatch extends StObject {
       
       /**
         * The end of the range to be patched.
         */
-      var end: Double = js.native
+      var end: Double
       
       /**
         * The start of the range to be patched.
         */
-      var start: Double = js.native
+      var start: Double
       
       /**
         * The value to be patched in.
         */
-      var value: String = js.native
+      var value: String
     }
     object IPatch {
       
-      @scala.inline
-      def apply(end: Double, start: Double, value: String): IPatch = {
+      inline def apply(end: Double, start: Double, value: String): IPatch = {
         val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
         __obj.asInstanceOf[IPatch]
       }
       
-      @scala.inline
-      implicit class IPatchMutableBuilder[Self <: IPatch] (val x: Self) extends AnyVal {
+      extension [Self <: IPatch](x: Self) {
         
-        @scala.inline
-        def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+        inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+        inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       }
     }
     
     /**
       * A renderer for completer widget nodes.
       */
-    @js.native
     trait IRenderer extends StObject {
       
       /**
@@ -457,91 +441,80 @@ object widgetMod {
         */
       var createCompletionItemNode: js.UndefOr[
             js.Function2[/* item */ ICompletionItem, /* orderedTypes */ js.Array[String], HTMLLIElement]
-          ] = js.native
+          ] = js.undefined
       
       /**
         * Create an item node (an `li` element) for a text completer menu.
         */
-      def createItemNode(item: IItem, typeMap: TypeMap, orderedTypes: js.Array[String]): HTMLLIElement = js.native
+      def createItemNode(item: IItem, typeMap: TypeMap, orderedTypes: js.Array[String]): HTMLLIElement
     }
     object IRenderer {
       
-      @scala.inline
-      def apply(createItemNode: (IItem, TypeMap, js.Array[String]) => HTMLLIElement): IRenderer = {
+      inline def apply(createItemNode: (IItem, TypeMap, js.Array[String]) => HTMLLIElement): IRenderer = {
         val __obj = js.Dynamic.literal(createItemNode = js.Any.fromFunction3(createItemNode))
         __obj.asInstanceOf[IRenderer]
       }
       
-      @scala.inline
-      implicit class IRendererMutableBuilder[Self <: IRenderer] (val x: Self) extends AnyVal {
+      extension [Self <: IRenderer](x: Self) {
         
-        @scala.inline
-        def setCreateCompletionItemNode(value: (/* item */ ICompletionItem, /* orderedTypes */ js.Array[String]) => HTMLLIElement): Self = StObject.set(x, "createCompletionItemNode", js.Any.fromFunction2(value))
+        inline def setCreateCompletionItemNode(value: (/* item */ ICompletionItem, /* orderedTypes */ js.Array[String]) => HTMLLIElement): Self = StObject.set(x, "createCompletionItemNode", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setCreateCompletionItemNodeUndefined: Self = StObject.set(x, "createCompletionItemNode", js.undefined)
+        inline def setCreateCompletionItemNodeUndefined: Self = StObject.set(x, "createCompletionItemNode", js.undefined)
         
-        @scala.inline
-        def setCreateItemNode(value: (IItem, TypeMap, js.Array[String]) => HTMLLIElement): Self = StObject.set(x, "createItemNode", js.Any.fromFunction3(value))
+        inline def setCreateItemNode(value: (IItem, TypeMap, js.Array[String]) => HTMLLIElement): Self = StObject.set(x, "createItemNode", js.Any.fromFunction3(value))
       }
     }
     
     /**
       * An interface for a completion request reflecting the state of the editor.
       */
-    @js.native
-    trait ITextState extends JSONObject {
+    trait ITextState
+      extends StObject
+         with JSONObject {
       
       /**
         * The width of a character in the editor.
         */
-      val charWidth: Double = js.native
+      val charWidth: Double
       
       /**
         * The character number of the editor cursor within a line.
         */
-      val column: Double = js.native
+      val column: Double
       
       /**
         * The line number of the editor cursor.
         */
-      val line: Double = js.native
+      val line: Double
       
       /**
         * The height of a character in the editor.
         */
-      val lineHeight: Double = js.native
+      val lineHeight: Double
       
       /**
         * The current value of the editor.
         */
-      val text: String = js.native
+      val text: String
     }
     object ITextState {
       
-      @scala.inline
-      def apply(charWidth: Double, column: Double, line: Double, lineHeight: Double, text: String): ITextState = {
+      inline def apply(charWidth: Double, column: Double, line: Double, lineHeight: Double, text: String): ITextState = {
         val __obj = js.Dynamic.literal(charWidth = charWidth.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
         __obj.asInstanceOf[ITextState]
       }
       
-      @scala.inline
-      implicit class ITextStateMutableBuilder[Self <: ITextState] (val x: Self) extends AnyVal {
+      extension [Self <: ITextState](x: Self) {
         
-        @scala.inline
-        def setCharWidth(value: Double): Self = StObject.set(x, "charWidth", value.asInstanceOf[js.Any])
+        inline def setCharWidth(value: Double): Self = StObject.set(x, "charWidth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+        inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+        inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+        inline def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+        inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       }
     }
     

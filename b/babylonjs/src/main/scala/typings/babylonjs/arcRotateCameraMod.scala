@@ -16,7 +16,6 @@ import typings.babylonjs.targetCameraMod.TargetCamera
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arcRotateCameraMod {
@@ -45,29 +44,29 @@ object arcRotateCameraMod {
       setActiveOnSceneIfNoneActive: Boolean
     ) = this()
     
-    var _YToUpMatrix: Matrix = js.native
+    /* protected */ var _YToUpMatrix: Matrix = js.native
     
-    var _autoRotationBehavior: js.Any = js.native
+    /* private */ var _autoRotationBehavior: js.Any = js.native
     
-    var _bouncingBehavior: js.Any = js.native
+    /* private */ var _bouncingBehavior: js.Any = js.native
     
     /* protected */ def _checkLimits(): Unit = js.native
     
-    var _collider: Collider = js.native
+    /* protected */ var _collider: Collider = js.native
     
-    var _collisionTriggered: Boolean = js.native
+    /* protected */ var _collisionTriggered: Boolean = js.native
     
-    var _collisionVelocity: Vector3 = js.native
+    /* protected */ var _collisionVelocity: Vector3 = js.native
     
-    var _computationVector: js.Any = js.native
+    /* private */ var _computationVector: js.Any = js.native
     
-    var _framingBehavior: js.Any = js.native
+    /* private */ var _framingBehavior: js.Any = js.native
     
     /* protected */ def _getTargetPosition(): Vector3 = js.native
     
-    var _localDirection: Vector3 = js.native
+    /* protected */ var _localDirection: Vector3 = js.native
     
-    var _newPosition: Vector3 = js.native
+    /* protected */ var _newPosition: Vector3 = js.native
     
     /* protected */ def _onCollisionPositionChange(collisionId: Double, newPosition: Vector3): Unit = js.native
     /* protected */ def _onCollisionPositionChange(collisionId: Double, newPosition: Vector3, collidedMesh: Nullable[AbstractMesh]): Unit = js.native
@@ -75,33 +74,33 @@ object arcRotateCameraMod {
     /** @hidden */
     var _panningMouseButton: Double = js.native
     
-    var _previousAlpha: Double = js.native
+    /* protected */ var _previousAlpha: Double = js.native
     
-    var _previousBeta: Double = js.native
+    /* protected */ var _previousBeta: Double = js.native
     
-    var _previousPosition: Vector3 = js.native
+    /* protected */ var _previousPosition: Vector3 = js.native
     
-    var _previousRadius: Double = js.native
+    /* protected */ var _previousRadius: Double = js.native
     
-    var _storedAlpha: js.Any = js.native
+    /* private */ var _storedAlpha: js.Any = js.native
     
-    var _storedBeta: js.Any = js.native
+    /* private */ var _storedBeta: js.Any = js.native
     
-    var _storedRadius: js.Any = js.native
+    /* private */ var _storedRadius: js.Any = js.native
     
-    var _storedTarget: js.Any = js.native
+    /* private */ var _storedTarget: js.Any = js.native
     
-    var _storedTargetScreenOffset: js.Any = js.native
+    /* private */ var _storedTargetScreenOffset: js.Any = js.native
     
-    var _target: Vector3 = js.native
+    /* protected */ var _target: Vector3 = js.native
     
-    var _targetBoundingCenter: Nullable[Vector3] = js.native
+    /* protected */ var _targetBoundingCenter: Nullable[Vector3] = js.native
     
-    var _targetHost: Nullable[AbstractMesh] = js.native
+    /* protected */ var _targetHost: Nullable[AbstractMesh] = js.native
     
-    var _transformedDirection: Vector3 = js.native
+    /* protected */ var _transformedDirection: Vector3 = js.native
     
-    var _upToYMatrix: Matrix = js.native
+    /* protected */ var _upToYMatrix: Matrix = js.native
     
     /** @hidden */
     var _useCtrlForPanning: Boolean = js.native
@@ -361,12 +360,12 @@ object arcRotateCameraMod {
       * @param allowSamePosition If false, prevents reapplying the new computed position if it is identical to the current one (optim)
       */
     def setTarget(target: AbstractMesh): Unit = js.native
-    def setTarget(target: AbstractMesh, toBoundingCenter: js.UndefOr[scala.Nothing], allowSamePosition: Boolean): Unit = js.native
     def setTarget(target: AbstractMesh, toBoundingCenter: Boolean): Unit = js.native
     def setTarget(target: AbstractMesh, toBoundingCenter: Boolean, allowSamePosition: Boolean): Unit = js.native
-    def setTarget(target: Vector3, toBoundingCenter: js.UndefOr[scala.Nothing], allowSamePosition: Boolean): Unit = js.native
+    def setTarget(target: AbstractMesh, toBoundingCenter: Unit, allowSamePosition: Boolean): Unit = js.native
     def setTarget(target: Vector3, toBoundingCenter: Boolean): Unit = js.native
     def setTarget(target: Vector3, toBoundingCenter: Boolean, allowSamePosition: Boolean): Unit = js.native
+    def setTarget(target: Vector3, toBoundingCenter: Unit, allowSamePosition: Boolean): Unit = js.native
     
     /**
       * Defines a screen offset for the camera position.
@@ -447,9 +446,9 @@ object arcRotateCameraMod {
       * @param doNotUpdateMaxZ Defines whether or not maxZ should be updated whilst zooming on the mesh (this can happen if the mesh is big and the maxradius pretty small for instance)
       */
     def zoomOn(): Unit = js.native
-    def zoomOn(meshes: js.UndefOr[scala.Nothing], doNotUpdateMaxZ: Boolean): Unit = js.native
     def zoomOn(meshes: js.Array[AbstractMesh]): Unit = js.native
     def zoomOn(meshes: js.Array[AbstractMesh], doNotUpdateMaxZ: Boolean): Unit = js.native
+    def zoomOn(meshes: Unit, doNotUpdateMaxZ: Boolean): Unit = js.native
     
     /**
       * Defines how much the radius should be scaled while zomming on a particular mesh (through the zoomOn function)

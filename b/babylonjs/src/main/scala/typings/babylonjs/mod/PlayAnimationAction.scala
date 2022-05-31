@@ -2,7 +2,6 @@ package typings.babylonjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "PlayAnimationAction")
@@ -25,7 +24,7 @@ class PlayAnimationAction protected ()
     target: js.Any,
     from: Double,
     to: Double,
-    loop: js.UndefOr[scala.Nothing],
+    loop: Boolean,
     condition: typings.babylonjs.conditionMod.Condition
   ) = this()
   def this(
@@ -33,7 +32,7 @@ class PlayAnimationAction protected ()
     target: js.Any,
     from: Double,
     to: Double,
-    loop: Boolean,
+    loop: Unit,
     condition: typings.babylonjs.conditionMod.Condition
   ) = this()
 }

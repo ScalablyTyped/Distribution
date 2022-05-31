@@ -2,37 +2,38 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MirrorTexture extends RenderTargetTexture {
+trait MirrorTexture
+  extends StObject
+     with RenderTargetTexture {
   
-  var _adaptiveBlurKernel: js.Any = js.native
+  /* private */ var _adaptiveBlurKernel: js.Any = js.native
   
-  var _autoComputeBlurKernel: js.Any = js.native
+  /* private */ var _autoComputeBlurKernel: js.Any = js.native
   
-  var _blurKernelX: js.Any = js.native
+  /* private */ var _blurKernelX: js.Any = js.native
   
-  var _blurKernelY: js.Any = js.native
+  /* private */ var _blurKernelY: js.Any = js.native
   
-  var _blurRatio: js.Any = js.native
+  /* private */ var _blurRatio: js.Any = js.native
   
-  var _blurX: js.Any = js.native
+  /* private */ var _blurX: js.Any = js.native
   
-  var _blurY: js.Any = js.native
+  /* private */ var _blurY: js.Any = js.native
   
-  var _imageProcessingConfigChangeObserver: js.Any = js.native
+  /* private */ var _imageProcessingConfigChangeObserver: js.Any = js.native
   
-  var _mirrorMatrix: js.Any = js.native
+  /* private */ var _mirrorMatrix: js.Any = js.native
   
-  var _preparePostProcesses: js.Any = js.native
+  /* private */ var _preparePostProcesses: js.Any = js.native
   
-  var _savedViewMatrix: js.Any = js.native
+  /* private */ var _savedViewMatrix: js.Any = js.native
   
-  var _transformMatrix: js.Any = js.native
+  /* private */ var _transformMatrix: js.Any = js.native
   
-  var _updateGammaSpace: js.Any = js.native
+  /* private */ var _updateGammaSpace: js.Any = js.native
   
   /**
     * Define the adaptive blur kernel used to blur the reflection if needed.
@@ -73,5 +74,5 @@ trait MirrorTexture extends RenderTargetTexture {
     */
   var mirrorPlane: Plane = js.native
   
-  var scene: js.Any = js.native
+  /* private */ var scene: js.Any = js.native
 }

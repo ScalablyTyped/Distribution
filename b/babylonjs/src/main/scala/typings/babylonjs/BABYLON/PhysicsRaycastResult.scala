@@ -2,23 +2,22 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PhysicsRaycastResult extends StObject {
   
-  var _hasHit: js.Any = js.native
+  /* private */ var _hasHit: js.Any = js.native
   
-  var _hitDistance: js.Any = js.native
+  /* private */ var _hitDistance: js.Any = js.native
   
-  var _hitNormalWorld: js.Any = js.native
+  /* private */ var _hitNormalWorld: js.Any = js.native
   
-  var _hitPointWorld: js.Any = js.native
+  /* private */ var _hitPointWorld: js.Any = js.native
   
-  var _rayFromWorld: js.Any = js.native
+  /* private */ var _rayFromWorld: js.Any = js.native
   
-  var _rayToWorld: js.Any = js.native
+  /* private */ var _rayToWorld: js.Any = js.native
   
   /**
     * Calculates the distance manually
@@ -61,7 +60,7 @@ trait PhysicsRaycastResult extends StObject {
     * @param to The to point on world space
     */
   def reset(): Unit = js.native
-  def reset(from: js.UndefOr[scala.Nothing], to: Vector3): Unit = js.native
+  def reset(from: Unit, to: Vector3): Unit = js.native
   def reset(from: Vector3): Unit = js.native
   def reset(from: Vector3, to: Vector3): Unit = js.native
   

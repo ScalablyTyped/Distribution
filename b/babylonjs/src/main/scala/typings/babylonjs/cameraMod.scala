@@ -19,7 +19,6 @@ import typings.babylonjs.smartArrayMod.SmartArray
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cameraMod {
@@ -45,7 +44,7 @@ object cameraMod {
     /** @hidden */
     var _cameraRigParams: js.Any = js.native
     
-    var _cascadePostProcessesToRigCams: js.Any = js.native
+    /* private */ var _cascadePostProcessesToRigCams: js.Any = js.native
     
     /** @hidden */
     def _checkInputs(): Unit = js.native
@@ -53,9 +52,9 @@ object cameraMod {
     /** @hidden */
     var _computedViewMatrix: Matrix = js.native
     
-    var _doNotComputeProjectionMatrix: js.Any = js.native
+    /* private */ var _doNotComputeProjectionMatrix: js.Any = js.native
     
-    var _frustumPlanes: js.Any = js.native
+    /* private */ var _frustumPlanes: js.Any = js.native
     
     /**
       * Internal, gets the first post proces.
@@ -83,7 +82,7 @@ object cameraMod {
       */
     def _getWebVRViewMatrix(): Matrix = js.native
     
-    var _globalPosition: Vector3 = js.native
+    /* protected */ var _globalPosition: Vector3 = js.native
     
     /** @hidden */
     val _isCamera: Boolean = js.native
@@ -115,7 +114,7 @@ object cameraMod {
     /** @hidden */
     var _projectionMatrix: Matrix = js.native
     
-    var _refreshFrustumPlanes: js.Any = js.native
+    /* private */ var _refreshFrustumPlanes: js.Any = js.native
     
     /**
       * @hidden
@@ -142,17 +141,17 @@ object cameraMod {
     /** @hidden */
     var _skipRendering: Boolean = js.native
     
-    var _stateStored: js.Any = js.native
+    /* private */ var _stateStored: js.Any = js.native
     
-    var _storedFov: js.Any = js.native
+    /* private */ var _storedFov: js.Any = js.native
     
-    var _transformMatrix: js.Any = js.native
+    /* private */ var _transformMatrix: js.Any = js.native
     
-    var _upVector: Vector3 = js.native
+    /* protected */ var _upVector: Vector3 = js.native
     
     /* protected */ def _updateCameraRotationMatrix(): Unit = js.native
     
-    var _updateFrustumPlanes: js.Any = js.native
+    /* private */ var _updateFrustumPlanes: js.Any = js.native
     
     /**
       * May need to be overridden by children
@@ -168,7 +167,7 @@ object cameraMod {
       */
     var _useMultiviewToSingleView: Boolean = js.native
     
-    var _webvrViewMatrix: Matrix = js.native
+    /* protected */ var _webvrViewMatrix: Matrix = js.native
     
     /**
       * Returns the current camera absolute rotation
@@ -293,13 +292,13 @@ object cameraMod {
       * @returns the forward ray
       */
     def getForwardRay(): Ray = js.native
-    def getForwardRay(length: js.UndefOr[scala.Nothing], transform: js.UndefOr[scala.Nothing], origin: Vector3): Ray = js.native
-    def getForwardRay(length: js.UndefOr[scala.Nothing], transform: Matrix): Ray = js.native
-    def getForwardRay(length: js.UndefOr[scala.Nothing], transform: Matrix, origin: Vector3): Ray = js.native
     def getForwardRay(length: Double): Ray = js.native
-    def getForwardRay(length: Double, transform: js.UndefOr[scala.Nothing], origin: Vector3): Ray = js.native
+    def getForwardRay(length: Double, transform: Unit, origin: Vector3): Ray = js.native
     def getForwardRay(length: Double, transform: Matrix): Ray = js.native
     def getForwardRay(length: Double, transform: Matrix, origin: Vector3): Ray = js.native
+    def getForwardRay(length: Unit, transform: Unit, origin: Vector3): Ray = js.native
+    def getForwardRay(length: Unit, transform: Matrix): Ray = js.native
+    def getForwardRay(length: Unit, transform: Matrix, origin: Vector3): Ray = js.native
     
     /**
       * Gets a ray in the forward direction from the camera.
@@ -310,18 +309,13 @@ object cameraMod {
       * @returns the forward ray
       */
     def getForwardRayToRef(refRay: Ray): Ray = js.native
-    def getForwardRayToRef(
-      refRay: Ray,
-      length: js.UndefOr[scala.Nothing],
-      transform: js.UndefOr[scala.Nothing],
-      origin: Vector3
-    ): Ray = js.native
-    def getForwardRayToRef(refRay: Ray, length: js.UndefOr[scala.Nothing], transform: Matrix): Ray = js.native
-    def getForwardRayToRef(refRay: Ray, length: js.UndefOr[scala.Nothing], transform: Matrix, origin: Vector3): Ray = js.native
     def getForwardRayToRef(refRay: Ray, length: Double): Ray = js.native
-    def getForwardRayToRef(refRay: Ray, length: Double, transform: js.UndefOr[scala.Nothing], origin: Vector3): Ray = js.native
+    def getForwardRayToRef(refRay: Ray, length: Double, transform: Unit, origin: Vector3): Ray = js.native
     def getForwardRayToRef(refRay: Ray, length: Double, transform: Matrix): Ray = js.native
     def getForwardRayToRef(refRay: Ray, length: Double, transform: Matrix, origin: Vector3): Ray = js.native
+    def getForwardRayToRef(refRay: Ray, length: Unit, transform: Unit, origin: Vector3): Ray = js.native
+    def getForwardRayToRef(refRay: Ray, length: Unit, transform: Matrix): Ray = js.native
+    def getForwardRayToRef(refRay: Ray, length: Unit, transform: Matrix, origin: Vector3): Ray = js.native
     
     /**
       * Gets the left camera target of a rig setup in case of Rigged Camera
@@ -614,8 +608,7 @@ object cameraMod {
     @JSImport("babylonjs/Cameras/camera", "Camera.ForceAttachControlToAlwaysPreventDefault")
     @js.native
     def ForceAttachControlToAlwaysPreventDefault: Boolean = js.native
-    @scala.inline
-    def ForceAttachControlToAlwaysPreventDefault_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ForceAttachControlToAlwaysPreventDefault")(x.asInstanceOf[js.Any])
+    inline def ForceAttachControlToAlwaysPreventDefault_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ForceAttachControlToAlwaysPreventDefault")(x.asInstanceOf[js.Any])
     
     /**
       * Gets a camera constructor for a given camera type
@@ -626,30 +619,22 @@ object cameraMod {
       * @param isStereoscopicSideBySide In case of stereoscopic setup, should the sereo be side b side
       * @returns a factory method to construc the camera
       */
-    @JSImport("babylonjs/Cameras/camera", "Camera.GetConstructorFromName")
-    @js.native
-    def GetConstructorFromName(`type`: String, name: String, scene: Scene): js.Function0[this.type] = js.native
-    @JSImport("babylonjs/Cameras/camera", "Camera.GetConstructorFromName")
-    @js.native
-    def GetConstructorFromName(
-      `type`: String,
-      name: String,
-      scene: Scene,
-      interaxial_distance: js.UndefOr[scala.Nothing],
-      isStereoscopicSideBySide: Boolean
-    ): js.Function0[this.type] = js.native
-    @JSImport("babylonjs/Cameras/camera", "Camera.GetConstructorFromName")
-    @js.native
-    def GetConstructorFromName(`type`: String, name: String, scene: Scene, interaxial_distance: Double): js.Function0[this.type] = js.native
-    @JSImport("babylonjs/Cameras/camera", "Camera.GetConstructorFromName")
-    @js.native
-    def GetConstructorFromName(
+    inline def GetConstructorFromName(`type`: String, name: String, scene: Scene): js.Function0[this.type] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetConstructorFromName")(`type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Function0[this.type]]
+    inline def GetConstructorFromName(`type`: String, name: String, scene: Scene, interaxial_distance: Double): js.Function0[this.type] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetConstructorFromName")(`type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], interaxial_distance.asInstanceOf[js.Any])).asInstanceOf[js.Function0[this.type]]
+    inline def GetConstructorFromName(
       `type`: String,
       name: String,
       scene: Scene,
       interaxial_distance: Double,
       isStereoscopicSideBySide: Boolean
-    ): js.Function0[this.type] = js.native
+    ): js.Function0[this.type] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetConstructorFromName")(`type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], interaxial_distance.asInstanceOf[js.Any], isStereoscopicSideBySide.asInstanceOf[js.Any])).asInstanceOf[js.Function0[this.type]]
+    inline def GetConstructorFromName(
+      `type`: String,
+      name: String,
+      scene: Scene,
+      interaxial_distance: Unit,
+      isStereoscopicSideBySide: Boolean
+    ): js.Function0[this.type] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetConstructorFromName")(`type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], interaxial_distance.asInstanceOf[js.Any], isStereoscopicSideBySide.asInstanceOf[js.Any])).asInstanceOf[js.Function0[this.type]]
     
     /**
       * This helps creating camera with an orthographic mode.
@@ -674,9 +659,7 @@ object cameraMod {
       * @param scene The scene to instantiate the camera in
       * @returns the newly constructed camera
       */
-    @JSImport("babylonjs/Cameras/camera", "Camera.Parse")
-    @js.native
-    def Parse(parsedCamera: js.Any, scene: Scene): Camera = js.native
+    inline def Parse(parsedCamera: js.Any, scene: Scene): Camera = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Camera]
     
     /**
       * Custom rig mode allowing rig cameras to be populated manually with any number of cameras
@@ -744,28 +727,18 @@ object cameraMod {
     val RIG_MODE_WEBVR: Double = js.native
     
     /** @hidden */
-    @JSImport("babylonjs/Cameras/camera", "Camera._createDefaultParsedCamera")
-    @js.native
-    def _createDefaultParsedCamera(name: String, scene: Scene): Camera = js.native
+    inline def _createDefaultParsedCamera(name: String, scene: Scene): Camera = (^.asInstanceOf[js.Dynamic].applyDynamic("_createDefaultParsedCamera")(name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Camera]
     
     /** @hidden */
-    @JSImport("babylonjs/Cameras/camera", "Camera._setStereoscopicAnaglyphRigMode")
-    @js.native
-    def _setStereoscopicAnaglyphRigMode(camera: Camera): Unit = js.native
+    inline def _setStereoscopicAnaglyphRigMode(camera: Camera): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_setStereoscopicAnaglyphRigMode")(camera.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** @hidden */
-    @JSImport("babylonjs/Cameras/camera", "Camera._setStereoscopicRigMode")
-    @js.native
-    def _setStereoscopicRigMode(camera: Camera): Unit = js.native
+    inline def _setStereoscopicRigMode(camera: Camera): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_setStereoscopicRigMode")(camera.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** @hidden */
-    @JSImport("babylonjs/Cameras/camera", "Camera._setVRRigMode")
-    @js.native
-    def _setVRRigMode(camera: Camera, rigParams: js.Any): Unit = js.native
+    inline def _setVRRigMode(camera: Camera, rigParams: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_setVRRigMode")(camera.asInstanceOf[js.Any], rigParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** @hidden */
-    @JSImport("babylonjs/Cameras/camera", "Camera._setWebVRRigMode")
-    @js.native
-    def _setWebVRRigMode(camera: Camera, rigParams: js.Any): Unit = js.native
+    inline def _setWebVRRigMode(camera: Camera, rigParams: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_setWebVRRigMode")(camera.asInstanceOf[js.Any], rigParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

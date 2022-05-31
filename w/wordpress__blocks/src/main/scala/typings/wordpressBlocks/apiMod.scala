@@ -374,16 +374,9 @@ object apiMod {
   {[ k in keyof T ]: @wordpress/blocks.@wordpress/blocks/api/parser.SourceReturnValue<T[k]>}
     */ typings.wordpressBlocks.wordpressBlocksStrings.parseWithAttributeSchema & TopLevel[T]]
   
-  object pasteHandler {
-    
-    inline def apply(options: Options & `0`): js.Array[BlockInstance[StringDictionary[js.Any]]] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[js.Any]]]]
-    inline def apply(options: Options & Mode): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
-    inline def apply(options: Options): js.Array[BlockInstance[StringDictionary[js.Any]]] | String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[js.Any]]] | String]
-    
-    @JSImport("@wordpress/blocks/api", "pasteHandler")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def pasteHandler(options: Options & `0`): js.Array[BlockInstance[StringDictionary[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("pasteHandler")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[js.Any]]]]
+  inline def pasteHandler(options: Options & Mode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pasteHandler")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def pasteHandler(options: Options): js.Array[BlockInstance[StringDictionary[js.Any]]] | String = ^.asInstanceOf[js.Dynamic].applyDynamic("pasteHandler")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[js.Any]]] | String]
   
   inline def rawHandler(options: typings.wordpressBlocks.anon.HTML): js.Array[BlockInstance[StringDictionary[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("rawHandler")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[js.Any]]]]
   

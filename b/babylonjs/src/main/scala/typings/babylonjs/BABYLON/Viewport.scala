@@ -2,14 +2,12 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Viewport extends StObject {
   
   /** viewport height */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * Creates a new viewport using absolute sizing (from 0-> width, 0-> height instead of 0->1)
@@ -17,7 +15,7 @@ trait Viewport extends StObject {
     * @param renderHeight defines the rendering height
     * @returns a new Viewport
     */
-  def toGlobal(renderWidth: Double, renderHeight: Double): Viewport = js.native
+  def toGlobal(renderWidth: Double, renderHeight: Double): Viewport
   
   /**
     * Stores absolute viewport value into a target viewport (from 0-> width, 0-> height instead of 0->1)
@@ -26,21 +24,20 @@ trait Viewport extends StObject {
     * @param ref defines the target viewport
     * @returns the current viewport
     */
-  def toGlobalToRef(renderWidth: Double, renderHeight: Double, ref: Viewport): Viewport = js.native
+  def toGlobalToRef(renderWidth: Double, renderHeight: Double, ref: Viewport): Viewport
   
   /**viewport width */
-  var width: Double = js.native
+  var width: Double
   
   /** viewport left coordinate */
-  var x: Double = js.native
+  var x: Double
   
   /** viewport top coordinate */
-  var y: Double = js.native
+  var y: Double
 }
 object Viewport {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     height: Double,
     toGlobal: (Double, Double) => Viewport,
     toGlobalToRef: (Double, Double, Viewport) => Viewport,
@@ -52,25 +49,18 @@ object Viewport {
     __obj.asInstanceOf[Viewport]
   }
   
-  @scala.inline
-  implicit class ViewportMutableBuilder[Self <: Viewport] (val x: Self) extends AnyVal {
+  extension [Self <: Viewport](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToGlobal(value: (Double, Double) => Viewport): Self = StObject.set(x, "toGlobal", js.Any.fromFunction2(value))
+    inline def setToGlobal(value: (Double, Double) => Viewport): Self = StObject.set(x, "toGlobal", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setToGlobalToRef(value: (Double, Double, Viewport) => Viewport): Self = StObject.set(x, "toGlobalToRef", js.Any.fromFunction3(value))
+    inline def setToGlobalToRef(value: (Double, Double, Viewport) => Viewport): Self = StObject.set(x, "toGlobalToRef", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

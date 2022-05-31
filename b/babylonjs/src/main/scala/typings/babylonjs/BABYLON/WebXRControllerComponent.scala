@@ -3,27 +3,28 @@ package typings.babylonjs.BABYLON
 import typings.babylonjs.anon.Y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebXRControllerComponent extends IDisposable {
+trait WebXRControllerComponent
+  extends StObject
+     with IDisposable {
   
-  var _axes: js.Any = js.native
+  /* private */ var _axes: js.Any = js.native
   
-  var _axesIndices: js.Any = js.native
+  /* private */ var _axesIndices: js.Any = js.native
   
-  var _buttonIndex: js.Any = js.native
+  /* private */ var _buttonIndex: js.Any = js.native
   
-  var _changes: js.Any = js.native
+  /* private */ var _changes: js.Any = js.native
   
-  var _currentValue: js.Any = js.native
+  /* private */ var _currentValue: js.Any = js.native
   
-  var _hasChanges: js.Any = js.native
+  /* private */ var _hasChanges: js.Any = js.native
   
-  var _pressed: js.Any = js.native
+  /* private */ var _pressed: js.Any = js.native
   
-  var _touched: js.Any = js.native
+  /* private */ var _touched: js.Any = js.native
   
   /**
     * The current axes data. If this component has no axes it will still return an object { x: 0, y: 0 }

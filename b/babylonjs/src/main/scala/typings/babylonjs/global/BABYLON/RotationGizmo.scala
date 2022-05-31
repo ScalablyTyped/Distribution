@@ -2,7 +2,6 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.RotationGizmo")
@@ -15,68 +14,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param thickness display gizmo axis thickness
   */
 class RotationGizmo ()
-  extends typings.babylonjs.BABYLON.RotationGizmo {
+  extends StObject
+     with typings.babylonjs.BABYLON.RotationGizmo {
   def this(gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer) = this()
-  def this(gizmoLayer: js.UndefOr[scala.Nothing], tessellation: Double) = this()
+  def this(gizmoLayer: Unit, tessellation: Double) = this()
   def this(gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer, tessellation: Double) = this()
-  def this(
-    gizmoLayer: js.UndefOr[scala.Nothing],
-    tessellation: js.UndefOr[scala.Nothing],
-    useEulerRotation: Boolean
-  ) = this()
-  def this(gizmoLayer: js.UndefOr[scala.Nothing], tessellation: Double, useEulerRotation: Boolean) = this()
-  def this(
-    gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
-    tessellation: js.UndefOr[scala.Nothing],
-    useEulerRotation: Boolean
-  ) = this()
+  def this(gizmoLayer: Unit, tessellation: Double, useEulerRotation: Boolean) = this()
+  def this(gizmoLayer: Unit, tessellation: Unit, useEulerRotation: Boolean) = this()
   def this(
     gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
     tessellation: Double,
     useEulerRotation: Boolean
   ) = this()
   def this(
-    gizmoLayer: js.UndefOr[scala.Nothing],
-    tessellation: js.UndefOr[scala.Nothing],
-    useEulerRotation: js.UndefOr[scala.Nothing],
-    thickness: Double
-  ) = this()
-  def this(
-    gizmoLayer: js.UndefOr[scala.Nothing],
-    tessellation: js.UndefOr[scala.Nothing],
-    useEulerRotation: Boolean,
-    thickness: Double
-  ) = this()
-  def this(
-    gizmoLayer: js.UndefOr[scala.Nothing],
-    tessellation: Double,
-    useEulerRotation: js.UndefOr[scala.Nothing],
-    thickness: Double
-  ) = this()
-  def this(
-    gizmoLayer: js.UndefOr[scala.Nothing],
-    tessellation: Double,
-    useEulerRotation: Boolean,
-    thickness: Double
-  ) = this()
-  def this(
     gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
-    tessellation: js.UndefOr[scala.Nothing],
-    useEulerRotation: js.UndefOr[scala.Nothing],
-    thickness: Double
+    tessellation: Unit,
+    useEulerRotation: Boolean
   ) = this()
-  def this(
-    gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
-    tessellation: js.UndefOr[scala.Nothing],
-    useEulerRotation: Boolean,
-    thickness: Double
-  ) = this()
-  def this(
-    gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
-    tessellation: Double,
-    useEulerRotation: js.UndefOr[scala.Nothing],
-    thickness: Double
-  ) = this()
+  def this(gizmoLayer: Unit, tessellation: Double, useEulerRotation: Boolean, thickness: Double) = this()
+  def this(gizmoLayer: Unit, tessellation: Double, useEulerRotation: Unit, thickness: Double) = this()
+  def this(gizmoLayer: Unit, tessellation: Unit, useEulerRotation: Boolean, thickness: Double) = this()
+  def this(gizmoLayer: Unit, tessellation: Unit, useEulerRotation: Unit, thickness: Double) = this()
   def this(
     gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
     tessellation: Double,
@@ -84,108 +42,77 @@ class RotationGizmo ()
     thickness: Double
   ) = this()
   def this(
-    gizmoLayer: js.UndefOr[scala.Nothing],
-    tessellation: js.UndefOr[scala.Nothing],
-    useEulerRotation: js.UndefOr[scala.Nothing],
-    thickness: js.UndefOr[scala.Nothing],
-    gizmoManager: typings.babylonjs.BABYLON.GizmoManager
-  ) = this()
-  def this(
-    gizmoLayer: js.UndefOr[scala.Nothing],
-    tessellation: js.UndefOr[scala.Nothing],
-    useEulerRotation: js.UndefOr[scala.Nothing],
-    thickness: Double,
-    gizmoManager: typings.babylonjs.BABYLON.GizmoManager
-  ) = this()
-  def this(
-    gizmoLayer: js.UndefOr[scala.Nothing],
-    tessellation: js.UndefOr[scala.Nothing],
-    useEulerRotation: Boolean,
-    thickness: js.UndefOr[scala.Nothing],
-    gizmoManager: typings.babylonjs.BABYLON.GizmoManager
-  ) = this()
-  def this(
-    gizmoLayer: js.UndefOr[scala.Nothing],
-    tessellation: js.UndefOr[scala.Nothing],
-    useEulerRotation: Boolean,
-    thickness: Double,
-    gizmoManager: typings.babylonjs.BABYLON.GizmoManager
-  ) = this()
-  def this(
-    gizmoLayer: js.UndefOr[scala.Nothing],
+    gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
     tessellation: Double,
-    useEulerRotation: js.UndefOr[scala.Nothing],
-    thickness: js.UndefOr[scala.Nothing],
-    gizmoManager: typings.babylonjs.BABYLON.GizmoManager
+    useEulerRotation: Unit,
+    thickness: Double
   ) = this()
   def this(
-    gizmoLayer: js.UndefOr[scala.Nothing],
-    tessellation: Double,
-    useEulerRotation: js.UndefOr[scala.Nothing],
-    thickness: Double,
-    gizmoManager: typings.babylonjs.BABYLON.GizmoManager
-  ) = this()
-  def this(
-    gizmoLayer: js.UndefOr[scala.Nothing],
-    tessellation: Double,
+    gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
+    tessellation: Unit,
     useEulerRotation: Boolean,
-    thickness: js.UndefOr[scala.Nothing],
-    gizmoManager: typings.babylonjs.BABYLON.GizmoManager
+    thickness: Double
   ) = this()
   def this(
-    gizmoLayer: js.UndefOr[scala.Nothing],
+    gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
+    tessellation: Unit,
+    useEulerRotation: Unit,
+    thickness: Double
+  ) = this()
+  def this(
+    gizmoLayer: Unit,
     tessellation: Double,
     useEulerRotation: Boolean,
     thickness: Double,
     gizmoManager: typings.babylonjs.BABYLON.GizmoManager
   ) = this()
   def this(
-    gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
-    tessellation: js.UndefOr[scala.Nothing],
-    useEulerRotation: js.UndefOr[scala.Nothing],
-    thickness: js.UndefOr[scala.Nothing],
+    gizmoLayer: Unit,
+    tessellation: Double,
+    useEulerRotation: Boolean,
+    thickness: Unit,
     gizmoManager: typings.babylonjs.BABYLON.GizmoManager
   ) = this()
   def this(
-    gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
-    tessellation: js.UndefOr[scala.Nothing],
-    useEulerRotation: js.UndefOr[scala.Nothing],
+    gizmoLayer: Unit,
+    tessellation: Double,
+    useEulerRotation: Unit,
     thickness: Double,
     gizmoManager: typings.babylonjs.BABYLON.GizmoManager
   ) = this()
   def this(
-    gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
-    tessellation: js.UndefOr[scala.Nothing],
-    useEulerRotation: Boolean,
-    thickness: js.UndefOr[scala.Nothing],
+    gizmoLayer: Unit,
+    tessellation: Double,
+    useEulerRotation: Unit,
+    thickness: Unit,
     gizmoManager: typings.babylonjs.BABYLON.GizmoManager
   ) = this()
   def this(
-    gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
-    tessellation: js.UndefOr[scala.Nothing],
+    gizmoLayer: Unit,
+    tessellation: Unit,
     useEulerRotation: Boolean,
     thickness: Double,
     gizmoManager: typings.babylonjs.BABYLON.GizmoManager
   ) = this()
   def this(
-    gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
-    tessellation: Double,
-    useEulerRotation: js.UndefOr[scala.Nothing],
-    thickness: js.UndefOr[scala.Nothing],
+    gizmoLayer: Unit,
+    tessellation: Unit,
+    useEulerRotation: Boolean,
+    thickness: Unit,
     gizmoManager: typings.babylonjs.BABYLON.GizmoManager
   ) = this()
   def this(
-    gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
-    tessellation: Double,
-    useEulerRotation: js.UndefOr[scala.Nothing],
+    gizmoLayer: Unit,
+    tessellation: Unit,
+    useEulerRotation: Unit,
     thickness: Double,
     gizmoManager: typings.babylonjs.BABYLON.GizmoManager
   ) = this()
   def this(
-    gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
-    tessellation: Double,
-    useEulerRotation: Boolean,
-    thickness: js.UndefOr[scala.Nothing],
+    gizmoLayer: Unit,
+    tessellation: Unit,
+    useEulerRotation: Unit,
+    thickness: Unit,
     gizmoManager: typings.babylonjs.BABYLON.GizmoManager
   ) = this()
   def this(
@@ -195,4 +122,59 @@ class RotationGizmo ()
     thickness: Double,
     gizmoManager: typings.babylonjs.BABYLON.GizmoManager
   ) = this()
+  def this(
+    gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
+    tessellation: Double,
+    useEulerRotation: Boolean,
+    thickness: Unit,
+    gizmoManager: typings.babylonjs.BABYLON.GizmoManager
+  ) = this()
+  def this(
+    gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
+    tessellation: Double,
+    useEulerRotation: Unit,
+    thickness: Double,
+    gizmoManager: typings.babylonjs.BABYLON.GizmoManager
+  ) = this()
+  def this(
+    gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
+    tessellation: Double,
+    useEulerRotation: Unit,
+    thickness: Unit,
+    gizmoManager: typings.babylonjs.BABYLON.GizmoManager
+  ) = this()
+  def this(
+    gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
+    tessellation: Unit,
+    useEulerRotation: Boolean,
+    thickness: Double,
+    gizmoManager: typings.babylonjs.BABYLON.GizmoManager
+  ) = this()
+  def this(
+    gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
+    tessellation: Unit,
+    useEulerRotation: Boolean,
+    thickness: Unit,
+    gizmoManager: typings.babylonjs.BABYLON.GizmoManager
+  ) = this()
+  def this(
+    gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
+    tessellation: Unit,
+    useEulerRotation: Unit,
+    thickness: Double,
+    gizmoManager: typings.babylonjs.BABYLON.GizmoManager
+  ) = this()
+  def this(
+    gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
+    tessellation: Unit,
+    useEulerRotation: Unit,
+    thickness: Unit,
+    gizmoManager: typings.babylonjs.BABYLON.GizmoManager
+  ) = this()
+  
+  /**
+    * Releases all held resources
+    */
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
 }

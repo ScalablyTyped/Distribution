@@ -6,7 +6,6 @@ import typings.luminoWidgets.mod.Widget
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object collapseMod {
@@ -16,28 +15,28 @@ object collapseMod {
   class Collapse[T /* <: Widget */] protected () extends Widget {
     def this(options: IOptions[T]) = this()
     
-    var _collapse: js.Any = js.native
+    /* private */ var _collapse: js.Any = js.native
     
-    var _collapseChanged: js.Any = js.native
+    /* private */ var _collapseChanged: js.Any = js.native
     
-    var _collapsed: js.Any = js.native
+    /* private */ var _collapsed: js.Any = js.native
     
-    var _content: js.Any = js.native
+    /* private */ var _content: js.Any = js.native
     
-    var _evtClick: js.Any = js.native
+    /* private */ var _evtClick: js.Any = js.native
     
-    var _header: js.Any = js.native
+    /* private */ var _header: js.Any = js.native
     
     /**
       * Handle the `changed` signal of a title object.
       */
-    var _onTitleChanged: js.Any = js.native
+    /* private */ var _onTitleChanged: js.Any = js.native
     
-    var _setHeader: js.Any = js.native
+    /* private */ var _setHeader: js.Any = js.native
     
-    var _uncollapse: js.Any = js.native
+    /* private */ var _uncollapse: js.Any = js.native
     
-    var _widget: js.Any = js.native
+    /* private */ var _widget: js.Any = js.native
     
     /**
       * A signal for when the widget collapse state changes.
@@ -75,33 +74,28 @@ object collapseMod {
   }
   object Collapse {
     
-    @js.native
     trait IOptions[T /* <: Widget */]
-      extends typings.luminoWidgets.widgetMod.Widget.IOptions {
+      extends StObject
+         with typings.luminoWidgets.widgetMod.Widget.IOptions {
       
-      var collapsed: js.UndefOr[Boolean] = js.native
+      var collapsed: js.UndefOr[Boolean] = js.undefined
       
-      var widget: T = js.native
+      var widget: T
     }
     object IOptions {
       
-      @scala.inline
-      def apply[T /* <: Widget */](widget: T): IOptions[T] = {
+      inline def apply[T /* <: Widget */](widget: T): IOptions[T] = {
         val __obj = js.Dynamic.literal(widget = widget.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions[T]]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions[_], T /* <: Widget */] (val x: Self with IOptions[T]) extends AnyVal {
+      extension [Self <: IOptions[?], T /* <: Widget */](x: Self & IOptions[T]) {
         
-        @scala.inline
-        def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+        inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+        inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
         
-        @scala.inline
-        def setWidget(value: T): Self = StObject.set(x, "widget", value.asInstanceOf[js.Any])
+        inline def setWidget(value: T): Self = StObject.set(x, "widget", value.asInstanceOf[js.Any])
       }
     }
   }

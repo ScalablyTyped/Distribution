@@ -2,7 +2,6 @@ package typings.babylonjs.miscIndexMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Misc/index", "TextureAssetTask")
@@ -53,24 +52,6 @@ class TextureAssetTask protected ()
     /**
     * Defines if mipmap should not be generated (default is false)
     */
-  noMipmap: js.UndefOr[scala.Nothing],
-    /**
-    * Defines if texture must be inverted on Y axis (default is true)
-    */
-  invertY: Boolean
-  ) = this()
-  def this(
-    /**
-    * Defines the name of the task
-    */
-  name: String,
-    /**
-    * Defines the location of the file to load
-    */
-  url: String,
-    /**
-    * Defines if mipmap should not be generated (default is false)
-    */
   noMipmap: Boolean,
     /**
     * Defines if texture must be inverted on Y axis (default is true)
@@ -89,15 +70,11 @@ class TextureAssetTask protected ()
     /**
     * Defines if mipmap should not be generated (default is false)
     */
-  noMipmap: js.UndefOr[scala.Nothing],
+  noMipmap: Unit,
     /**
     * Defines if texture must be inverted on Y axis (default is true)
     */
-  invertY: js.UndefOr[scala.Nothing],
-    /**
-    * Defines the sampling mode to use (default is Texture.TRILINEAR_SAMPLINGMODE)
-    */
-  samplingMode: Double
+  invertY: Boolean
   ) = this()
   def this(
     /**
@@ -111,7 +88,7 @@ class TextureAssetTask protected ()
     /**
     * Defines if mipmap should not be generated (default is false)
     */
-  noMipmap: js.UndefOr[scala.Nothing],
+  noMipmap: Boolean,
     /**
     * Defines if texture must be inverted on Y axis (default is true)
     */
@@ -137,7 +114,7 @@ class TextureAssetTask protected ()
     /**
     * Defines if texture must be inverted on Y axis (default is true)
     */
-  invertY: js.UndefOr[scala.Nothing],
+  invertY: Unit,
     /**
     * Defines the sampling mode to use (default is Texture.TRILINEAR_SAMPLINGMODE)
     */
@@ -155,11 +132,33 @@ class TextureAssetTask protected ()
     /**
     * Defines if mipmap should not be generated (default is false)
     */
-  noMipmap: Boolean,
+  noMipmap: Unit,
     /**
     * Defines if texture must be inverted on Y axis (default is true)
     */
   invertY: Boolean,
+    /**
+    * Defines the sampling mode to use (default is Texture.TRILINEAR_SAMPLINGMODE)
+    */
+  samplingMode: Double
+  ) = this()
+  def this(
+    /**
+    * Defines the name of the task
+    */
+  name: String,
+    /**
+    * Defines the location of the file to load
+    */
+  url: String,
+    /**
+    * Defines if mipmap should not be generated (default is false)
+    */
+  noMipmap: Unit,
+    /**
+    * Defines if texture must be inverted on Y axis (default is true)
+    */
+  invertY: Unit,
     /**
     * Defines the sampling mode to use (default is Texture.TRILINEAR_SAMPLINGMODE)
     */

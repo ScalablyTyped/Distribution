@@ -3,15 +3,19 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.anon.Normal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.DecalBuilder")
 @js.native
 class DecalBuilder ()
-  extends typings.babylonjs.BABYLON.DecalBuilder
+  extends StObject
+     with typings.babylonjs.BABYLON.DecalBuilder
 /* static members */
 object DecalBuilder {
+  
+  @JSGlobal("BABYLON.DecalBuilder")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a decal mesh.
@@ -27,7 +31,5 @@ object DecalBuilder {
     * @returns the decal mesh
     * @see https://doc.babylonjs.com/how_to/decals
     */
-  @JSGlobal("BABYLON.DecalBuilder.CreateDecal")
-  @js.native
-  def CreateDecal(name: String, sourceMesh: typings.babylonjs.BABYLON.AbstractMesh, options: Normal): typings.babylonjs.BABYLON.Mesh = js.native
+  inline def CreateDecal(name: String, sourceMesh: typings.babylonjs.BABYLON.AbstractMesh, options: Normal): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDecal")(name.asInstanceOf[js.Any], sourceMesh.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
 }

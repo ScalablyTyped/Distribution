@@ -4,7 +4,6 @@ import typings.babylonjs.nodeMaterialBuildStateMod.NodeMaterialBuildState
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "ClearCoatBlock")
@@ -20,6 +19,10 @@ class ClearCoatBlock protected ()
 /* static members */
 object ClearCoatBlock {
   
+  @JSImport("babylonjs/index", "ClearCoatBlock")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Gets the main code of the block (fragment side)
     * @param state current state of the node material building
@@ -31,9 +34,7 @@ object ClearCoatBlock {
     * @param worldNormalVarName name of the variable holding the world normal
     * @returns the shader code
     */
-  @JSImport("babylonjs/index", "ClearCoatBlock.GetCode")
-  @js.native
-  def GetCode(
+  inline def GetCode(
     state: NodeMaterialBuildState,
     ccBlock: Nullable[typings.babylonjs.clearCoatBlockMod.ClearCoatBlock],
     reflectionBlock: Nullable[typings.babylonjs.reflectionBlockMod.ReflectionBlock],
@@ -41,5 +42,5 @@ object ClearCoatBlock {
     generateTBNSpace: Boolean,
     vTBNAvailable: Boolean,
     worldNormalVarName: String
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCode")(state.asInstanceOf[js.Any], ccBlock.asInstanceOf[js.Any], reflectionBlock.asInstanceOf[js.Any], worldPosVarName.asInstanceOf[js.Any], generateTBNSpace.asInstanceOf[js.Any], vTBNAvailable.asInstanceOf[js.Any], worldNormalVarName.asInstanceOf[js.Any])).asInstanceOf[String]
 }

@@ -2,7 +2,6 @@ package typings.babylonjs.legacyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "VolumetricLightScatteringPostProcess")
@@ -36,13 +35,15 @@ class VolumetricLightScatteringPostProcess protected ()
 /* static members */
 object VolumetricLightScatteringPostProcess {
   
+  @JSImport("babylonjs/Legacy/legacy", "VolumetricLightScatteringPostProcess")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a default mesh for the Volumeric Light Scattering post-process
     * @param name The mesh name
     * @param scene The scene where to create the mesh
     * @return the default mesh
     */
-  @JSImport("babylonjs/Legacy/legacy", "VolumetricLightScatteringPostProcess.CreateDefaultMesh")
-  @js.native
-  def CreateDefaultMesh(name: String, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshMod.Mesh = js.native
+  inline def CreateDefaultMesh(name: String, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDefaultMesh")(name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
 }

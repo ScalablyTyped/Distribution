@@ -7,24 +7,21 @@ import typings.luminoSignaling.mod.ISignal
 import typings.luminoWidgets.mod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tokensMod {
   
-  @js.native
   trait IInspector extends StObject {
     
     /**
       * The source of events the inspector listens for.
       */
-    var source: IInspectable | Null = js.native
+    var source: IInspectable | Null
   }
   object IInspector extends Shortcut {
     
-    @scala.inline
-    def apply(): IInspector = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(): IInspector = {
+      val __obj = js.Dynamic.literal(source = null)
       __obj.asInstanceOf[IInspector]
     }
     
@@ -35,28 +32,27 @@ object tokensMod {
     /**
       * The definition of an inspectable source.
       */
-    @js.native
     trait IInspectable extends StObject {
       
       /**
         * A signal emitted when the inspector should clear all items.
         */
-      var cleared: ISignal[_, Unit] = js.native
+      var cleared: ISignal[js.Any, Unit]
       
       /**
         * A signal emitted when the inspectable is disposed.
         */
-      var disposed: ISignal[_, Unit] = js.native
+      var disposed: ISignal[js.Any, Unit]
       
       /**
         * A signal emitted when an inspector value is generated.
         */
-      var inspected: ISignal[_, IInspectorUpdate] = js.native
+      var inspected: ISignal[js.Any, IInspectorUpdate]
       
       /**
         * Test whether the inspectable has been disposed.
         */
-      var isDisposed: Boolean = js.native
+      var isDisposed: Boolean
       
       /**
         * Indicates whether the inspectable source emits signals.
@@ -65,15 +61,14 @@ object tokensMod {
         * The use case for this attribute is to limit the API traffic when no
         * inspector is visible. It can be modified by the consumer of the source.
         */
-      var standby: Boolean = js.native
+      var standby: Boolean
     }
     object IInspectable {
       
-      @scala.inline
-      def apply(
-        cleared: ISignal[_, Unit],
-        disposed: ISignal[_, Unit],
-        inspected: ISignal[_, IInspectorUpdate],
+      inline def apply(
+        cleared: ISignal[js.Any, Unit],
+        disposed: ISignal[js.Any, Unit],
+        inspected: ISignal[js.Any, IInspectorUpdate],
         isDisposed: Boolean,
         standby: Boolean
       ): IInspectable = {
@@ -81,63 +76,49 @@ object tokensMod {
         __obj.asInstanceOf[IInspectable]
       }
       
-      @scala.inline
-      implicit class IInspectableMutableBuilder[Self <: IInspectable] (val x: Self) extends AnyVal {
+      extension [Self <: IInspectable](x: Self) {
         
-        @scala.inline
-        def setCleared(value: ISignal[_, Unit]): Self = StObject.set(x, "cleared", value.asInstanceOf[js.Any])
+        inline def setCleared(value: ISignal[js.Any, Unit]): Self = StObject.set(x, "cleared", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisposed(value: ISignal[_, Unit]): Self = StObject.set(x, "disposed", value.asInstanceOf[js.Any])
+        inline def setDisposed(value: ISignal[js.Any, Unit]): Self = StObject.set(x, "disposed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInspected(value: ISignal[_, IInspectorUpdate]): Self = StObject.set(x, "inspected", value.asInstanceOf[js.Any])
+        inline def setInspected(value: ISignal[js.Any, IInspectorUpdate]): Self = StObject.set(x, "inspected", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsDisposed(value: Boolean): Self = StObject.set(x, "isDisposed", value.asInstanceOf[js.Any])
+        inline def setIsDisposed(value: Boolean): Self = StObject.set(x, "isDisposed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStandby(value: Boolean): Self = StObject.set(x, "standby", value.asInstanceOf[js.Any])
+        inline def setStandby(value: Boolean): Self = StObject.set(x, "standby", value.asInstanceOf[js.Any])
       }
     }
     
-    @scala.inline
-    implicit class IInspectorMutableBuilder[Self <: IInspector] (val x: Self) extends AnyVal {
+    extension [Self <: IInspector](x: Self) {
       
-      @scala.inline
-      def setSource(value: IInspectable): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: IInspectable): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceNull: Self = StObject.set(x, "source", null)
+      inline def setSourceNull: Self = StObject.set(x, "source", null)
     }
     
     /**
       * An update value for code inspectors.
       */
-    @js.native
     trait IInspectorUpdate extends StObject {
       
       /**
         * The content being sent to the inspector for display.
         */
-      var content: Widget | Null = js.native
+      var content: Widget | Null
     }
     object IInspectorUpdate {
       
-      @scala.inline
-      def apply(): IInspectorUpdate = {
-        val __obj = js.Dynamic.literal()
+      inline def apply(): IInspectorUpdate = {
+        val __obj = js.Dynamic.literal(content = null)
         __obj.asInstanceOf[IInspectorUpdate]
       }
       
-      @scala.inline
-      implicit class IInspectorUpdateMutableBuilder[Self <: IInspectorUpdate] (val x: Self) extends AnyVal {
+      extension [Self <: IInspectorUpdate](x: Self) {
         
-        @scala.inline
-        def setContent(value: Widget): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+        inline def setContent(value: Widget): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentNull: Self = StObject.set(x, "content", null)
+        inline def setContentNull: Self = StObject.set(x, "content", null)
       }
     }
     

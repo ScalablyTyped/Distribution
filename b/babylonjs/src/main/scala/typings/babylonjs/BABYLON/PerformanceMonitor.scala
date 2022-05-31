@@ -2,17 +2,16 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PerformanceMonitor extends StObject {
   
-  var _enabled: js.Any = js.native
+  /* private */ var _enabled: js.Any = js.native
   
-  var _lastFrameTimeMs: js.Any = js.native
+  /* private */ var _lastFrameTimeMs: js.Any = js.native
   
-  var _rollingFrameTime: js.Any = js.native
+  /* private */ var _rollingFrameTime: js.Any = js.native
   
   /**
     * Returns the average framerate in frames per second over the sliding window (or the subset of frames sampled so far)

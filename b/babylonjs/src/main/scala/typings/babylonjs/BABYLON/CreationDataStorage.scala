@@ -2,38 +2,35 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreationDataStorage extends StObject {
   
-  var arc: Double = js.native
+  var arc: Double
   
-  var cap: Double = js.native
+  var cap: Double
   
-  var closeArray: js.UndefOr[Boolean] = js.native
+  var closeArray: js.UndefOr[Boolean] = js.undefined
   
-  var closePath: js.UndefOr[Boolean] = js.native
+  var closePath: js.UndefOr[Boolean] = js.undefined
   
-  var dashSize: Double = js.native
+  var dashSize: Double
   
-  var gapSize: Double = js.native
+  var gapSize: Double
   
-  var idx: js.Array[Double] = js.native
+  var idx: js.Array[Double]
   
-  var path3D: Path3D = js.native
+  var path3D: Path3D
   
-  var pathArray: js.Array[js.Array[Vector3]] = js.native
+  var pathArray: js.Array[js.Array[Vector3]]
   
-  var radius: Double = js.native
+  var radius: Double
   
-  var tessellation: Double = js.native
+  var tessellation: Double
 }
 object CreationDataStorage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arc: Double,
     cap: Double,
     dashSize: Double,
@@ -48,52 +45,36 @@ object CreationDataStorage {
     __obj.asInstanceOf[CreationDataStorage]
   }
   
-  @scala.inline
-  implicit class CreationDataStorageMutableBuilder[Self <: CreationDataStorage] (val x: Self) extends AnyVal {
+  extension [Self <: CreationDataStorage](x: Self) {
     
-    @scala.inline
-    def setArc(value: Double): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
+    inline def setArc(value: Double): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCap(value: Double): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
+    inline def setCap(value: Double): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseArray(value: Boolean): Self = StObject.set(x, "closeArray", value.asInstanceOf[js.Any])
+    inline def setCloseArray(value: Boolean): Self = StObject.set(x, "closeArray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseArrayUndefined: Self = StObject.set(x, "closeArray", js.undefined)
+    inline def setCloseArrayUndefined: Self = StObject.set(x, "closeArray", js.undefined)
     
-    @scala.inline
-    def setClosePath(value: Boolean): Self = StObject.set(x, "closePath", value.asInstanceOf[js.Any])
+    inline def setClosePath(value: Boolean): Self = StObject.set(x, "closePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClosePathUndefined: Self = StObject.set(x, "closePath", js.undefined)
+    inline def setClosePathUndefined: Self = StObject.set(x, "closePath", js.undefined)
     
-    @scala.inline
-    def setDashSize(value: Double): Self = StObject.set(x, "dashSize", value.asInstanceOf[js.Any])
+    inline def setDashSize(value: Double): Self = StObject.set(x, "dashSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGapSize(value: Double): Self = StObject.set(x, "gapSize", value.asInstanceOf[js.Any])
+    inline def setGapSize(value: Double): Self = StObject.set(x, "gapSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdx(value: js.Array[Double]): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
+    inline def setIdx(value: js.Array[Double]): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdxVarargs(value: Double*): Self = StObject.set(x, "idx", js.Array(value :_*))
+    inline def setIdxVarargs(value: Double*): Self = StObject.set(x, "idx", js.Array(value :_*))
     
-    @scala.inline
-    def setPath3D(value: Path3D): Self = StObject.set(x, "path3D", value.asInstanceOf[js.Any])
+    inline def setPath3D(value: Path3D): Self = StObject.set(x, "path3D", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathArray(value: js.Array[js.Array[Vector3]]): Self = StObject.set(x, "pathArray", value.asInstanceOf[js.Any])
+    inline def setPathArray(value: js.Array[js.Array[Vector3]]): Self = StObject.set(x, "pathArray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathArrayVarargs(value: js.Array[Vector3]*): Self = StObject.set(x, "pathArray", js.Array(value :_*))
+    inline def setPathArrayVarargs(value: js.Array[Vector3]*): Self = StObject.set(x, "pathArray", js.Array(value :_*))
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTessellation(value: Double): Self = StObject.set(x, "tessellation", value.asInstanceOf[js.Any])
+    inline def setTessellation(value: Double): Self = StObject.set(x, "tessellation", value.asInstanceOf[js.Any])
   }
 }

@@ -5,7 +5,6 @@ import typings.luminoWidgets.mod.Widget
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object widgetMod {
@@ -21,19 +20,19 @@ object widgetMod {
     /**
       * Handle the `'click'` event for the widget.
       */
-    var _evtClick: js.Any = js.native
+    /* private */ var _evtClick: js.Any = js.native
     
     /**
       * Handle the `'mouseout'` event for the widget.
       */
-    var _evtMouseOut: js.Any = js.native
+    /* private */ var _evtMouseOut: js.Any = js.native
     
     /**
       * Handle the `'mouseover'` event for the widget.
       */
-    var _evtMouseOver: js.Any = js.native
+    /* private */ var _evtMouseOver: js.Any = js.native
     
-    var applied: js.Any = js.native
+    /* private */ var applied: js.Any = js.native
     
     /**
       * Create tag div with icon and attach to this.node.

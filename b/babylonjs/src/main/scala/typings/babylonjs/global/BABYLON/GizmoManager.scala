@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.GizmoManager")
 @js.native
 class GizmoManager protected ()
-  extends typings.babylonjs.BABYLON.GizmoManager {
+  extends StObject
+     with typings.babylonjs.BABYLON.GizmoManager {
   /**
     * Instatiates a gizmo manager
     * @param scene the scene to overlay the gizmos on top of
@@ -20,30 +20,18 @@ class GizmoManager protected ()
   def this(scene: typings.babylonjs.BABYLON.Scene, thickness: Double) = this()
   def this(
     scene: typings.babylonjs.BABYLON.Scene,
-    thickness: js.UndefOr[scala.Nothing],
-    utilityLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer
-  ) = this()
-  def this(
-    scene: typings.babylonjs.BABYLON.Scene,
     thickness: Double,
     utilityLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer
   ) = this()
   def this(
     scene: typings.babylonjs.BABYLON.Scene,
-    thickness: js.UndefOr[scala.Nothing],
-    utilityLayer: js.UndefOr[scala.Nothing],
-    keepDepthUtilityLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer
-  ) = this()
-  def this(
-    scene: typings.babylonjs.BABYLON.Scene,
-    thickness: js.UndefOr[scala.Nothing],
-    utilityLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
-    keepDepthUtilityLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer
+    thickness: Unit,
+    utilityLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer
   ) = this()
   def this(
     scene: typings.babylonjs.BABYLON.Scene,
     thickness: Double,
-    utilityLayer: js.UndefOr[scala.Nothing],
+    utilityLayer: Unit,
     keepDepthUtilityLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer
   ) = this()
   def this(
@@ -52,4 +40,22 @@ class GizmoManager protected ()
     utilityLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
     keepDepthUtilityLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer
   ) = this()
+  def this(
+    scene: typings.babylonjs.BABYLON.Scene,
+    thickness: Unit,
+    utilityLayer: Unit,
+    keepDepthUtilityLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer
+  ) = this()
+  def this(
+    scene: typings.babylonjs.BABYLON.Scene,
+    thickness: Unit,
+    utilityLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
+    keepDepthUtilityLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer
+  ) = this()
+  
+  /**
+    * Releases all held resources
+    */
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
 }

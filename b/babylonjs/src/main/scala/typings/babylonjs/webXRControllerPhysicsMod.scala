@@ -11,7 +11,6 @@ import typings.babylonjs.webXRInputSourceMod.WebXRInputSource
 import typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webXRControllerPhysicsMod {
@@ -51,15 +50,15 @@ object webXRControllerPhysicsMod {
       */
     def this(_xrSessionManager: WebXRSessionManager, _options: IWebXRControllerPhysicsOptions) = this()
     
-    var _attachController: js.Any = js.native
+    /* private */ var _attachController: js.Any = js.native
     
-    var _controllers: js.Any = js.native
+    /* private */ var _controllers: js.Any = js.native
     
-    var _debugMode: js.Any = js.native
+    /* private */ var _debugMode: js.Any = js.native
     
-    var _delta: js.Any = js.native
+    /* private */ var _delta: js.Any = js.native
     
-    var _detachController: js.Any = js.native
+    /* private */ var _detachController: js.Any = js.native
     
     /**
       * @hidden
@@ -67,19 +66,19 @@ object webXRControllerPhysicsMod {
       */
     def _enablePhysicsDebug(): Unit = js.native
     
-    var _headsetImpostor: js.Any = js.native
+    /* private */ var _headsetImpostor: js.Any = js.native
     
-    var _headsetMesh: js.Any = js.native
+    /* private */ var _headsetMesh: js.Any = js.native
     
-    var _lastTimestamp: js.Any = js.native
+    /* private */ var _lastTimestamp: js.Any = js.native
     
     /* protected */ def _onXRFrame(_xrFrame: js.Any): Unit = js.native
     
-    val _options: js.Any = js.native
+    /* private */ val _options: js.Any = js.native
     
-    var _tmpQuaternion: js.Any = js.native
+    /* private */ var _tmpQuaternion: js.Any = js.native
     
-    var _tmpVector: js.Any = js.native
+    /* private */ var _tmpVector: js.Any = js.native
     
     /**
       * Manually add a controller (if no xrInput was provided or physics engine was not enabled)

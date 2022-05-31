@@ -259,34 +259,4 @@ object ObjC {
     * @param obj Objective-C instance to unbind data from.
     */
   inline def unbind(obj: typings.fridaGum.ObjC.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
-  /**
-    * Direct access to a big portion of the Objective-C runtime API.
-    */
-  object api
-  
-  /**
-    * Dynamically generated bindings for each of the currently registered classes.
-    *
-    * You can interact with objects by using dot notation and replacing colons with underscores, i.e.:
-    *
-    * ```
-    *     [NSString stringWithString:@"Hello World"];
-    * ```
-    *
-    * becomes:
-    *
-    * ```
-    *     const NSString = ObjC.classes.NSString;
-    *     NSString.stringWithString_("Hello World");
-    * ```
-    *
-    * Note the underscore after the method name.
-    */
-  object classes
-  
-  /**
-    * Dynamically generated bindings for each of the currently registered protocols.
-    */
-  object protocols
 }

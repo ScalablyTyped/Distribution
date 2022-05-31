@@ -8,27 +8,28 @@ import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object framingBehaviorMod {
   
   @JSImport("babylonjs/Behaviors/Cameras/framingBehavior", "FramingBehavior")
   @js.native
-  class FramingBehavior () extends Behavior[ArcRotateCamera] {
+  class FramingBehavior ()
+    extends StObject
+       with Behavior[ArcRotateCamera] {
     
-    var _animatables: js.Any = js.native
+    /* private */ var _animatables: js.Any = js.native
     
     /**
       *  Applies any current user interaction to the camera. Takes into account maximum alpha rotation.
       */
-    var _applyUserInteraction: js.Any = js.native
+    /* private */ var _applyUserInteraction: js.Any = js.native
     
-    var _attachedCamera: js.Any = js.native
+    /* private */ var _attachedCamera: js.Any = js.native
     
-    var _betaIsAnimating: js.Any = js.native
+    /* private */ var _betaIsAnimating: js.Any = js.native
     
-    var _betaTransition: js.Any = js.native
+    /* private */ var _betaTransition: js.Any = js.native
     
     /**
       * Calculates the lowest radius for the camera based on the bounding box of the mesh.
@@ -42,49 +43,56 @@ object framingBehaviorMod {
     /**
       * Removes all animation locks. Allows new animations to be added to any of the arcCamera properties.
       */
-    var _clearAnimationLocks: js.Any = js.native
+    /* private */ var _clearAnimationLocks: js.Any = js.native
     
-    var _defaultElevation: js.Any = js.native
+    /* private */ var _defaultElevation: js.Any = js.native
     
-    var _elevationReturnTime: js.Any = js.native
+    /* private */ var _elevationReturnTime: js.Any = js.native
     
-    var _elevationReturnWaitTime: js.Any = js.native
+    /* private */ var _elevationReturnWaitTime: js.Any = js.native
     
-    var _framingTime: js.Any = js.native
+    /* private */ var _framingTime: js.Any = js.native
     
     /**
       * Returns the frustum slope based on the canvas ratio and camera FOV
       * @returns The frustum slope represented as a Vector2 with X and Y slopes
       */
-    var _getFrustumSlope: js.Any = js.native
+    /* private */ var _getFrustumSlope: js.Any = js.native
     
-    var _isPointerDown: js.Any = js.native
+    /* private */ var _isPointerDown: js.Any = js.native
     
-    var _lastInteractionTime: js.Any = js.native
+    /* private */ var _lastInteractionTime: js.Any = js.native
     
     /**
       * Keeps the camera above the ground plane. If the user pulls the camera below the ground plane, the camera
       * is automatically returned to its default position (expected to be above ground plane).
       */
-    var _maintainCameraAboveGround: js.Any = js.native
+    /* private */ var _maintainCameraAboveGround: js.Any = js.native
     
-    var _mode: js.Any = js.native
+    /* private */ var _mode: js.Any = js.native
     
-    var _onAfterCheckInputsObserver: js.Any = js.native
+    /* private */ var _onAfterCheckInputsObserver: js.Any = js.native
     
-    var _onMeshTargetChangedObserver: js.Any = js.native
+    /* private */ var _onMeshTargetChangedObserver: js.Any = js.native
     
-    var _onPrePointerObservableObserver: js.Any = js.native
+    /* private */ var _onPrePointerObservableObserver: js.Any = js.native
     
-    var _positionScale: js.Any = js.native
+    /* private */ var _positionScale: js.Any = js.native
     
-    var _radiusScale: js.Any = js.native
+    /* private */ var _radiusScale: js.Any = js.native
     
-    var _radiusTransition: js.Any = js.native
+    /* private */ var _radiusTransition: js.Any = js.native
     
-    var _vectorTransition: js.Any = js.native
+    /* private */ var _vectorTransition: js.Any = js.native
     
-    var _zoomStopsAnimation: js.Any = js.native
+    /* private */ var _zoomStopsAnimation: js.Any = js.native
+    
+    /**
+      * Called when the behavior is attached to a target
+      * @param target defines the target where the behavior is attached to
+      */
+    /* CompleteClass */
+    override def attach(target: ArcRotateCamera): Unit = js.native
     
     /**
       * Define if the behavior should automatically change the configured
@@ -102,6 +110,12 @@ object framingBehaviorMod {
       * behaviour is triggered, in radians.
       */
     def defaultElevation_=(elevation: Double): Unit = js.native
+    
+    /**
+      * Called when the behavior is detached from its target
+      */
+    /* CompleteClass */
+    override def detach(): Unit = js.native
     
     /**
       * Gets the time (in milliseconds) taken to return to the default beta position.
@@ -133,6 +147,12 @@ object framingBehaviorMod {
     def framingTime_=(time: Double): Unit = js.native
     
     /**
+      * Function called when the behavior needs to be initialized (after attaching it to a target)
+      */
+    /* CompleteClass */
+    override def init(): Unit = js.native
+    
+    /**
       * Gets a value indicating if the user is moving the camera
       */
     def isUserIsMoving: Boolean = js.native
@@ -146,6 +166,9 @@ object framingBehaviorMod {
       */
     def mode_=(mode: Double): Unit = js.native
     
+    /** gets or sets behavior's name */
+    /* CompleteClass */
+    var name: String = js.native
     /**
       * Gets the name of the behavior.
       */
@@ -183,17 +206,17 @@ object framingBehaviorMod {
       * @param onAnimationEnd Callback triggered at the end of the framing animation
       */
     def zoomOnBoundingInfo(minimumWorld: Vector3, maximumWorld: Vector3): Unit = js.native
-    def zoomOnBoundingInfo(
-      minimumWorld: Vector3,
-      maximumWorld: Vector3,
-      focusOnOriginXZ: js.UndefOr[scala.Nothing],
-      onAnimationEnd: Nullable[js.Function0[Unit]]
-    ): Unit = js.native
     def zoomOnBoundingInfo(minimumWorld: Vector3, maximumWorld: Vector3, focusOnOriginXZ: Boolean): Unit = js.native
     def zoomOnBoundingInfo(
       minimumWorld: Vector3,
       maximumWorld: Vector3,
       focusOnOriginXZ: Boolean,
+      onAnimationEnd: Nullable[js.Function0[Unit]]
+    ): Unit = js.native
+    def zoomOnBoundingInfo(
+      minimumWorld: Vector3,
+      maximumWorld: Vector3,
+      focusOnOriginXZ: Unit,
       onAnimationEnd: Nullable[js.Function0[Unit]]
     ): Unit = js.native
     
@@ -204,13 +227,9 @@ object framingBehaviorMod {
       * @param onAnimationEnd Callback triggered at the end of the framing animation
       */
     def zoomOnMesh(mesh: AbstractMesh): Unit = js.native
-    def zoomOnMesh(
-      mesh: AbstractMesh,
-      focusOnOriginXZ: js.UndefOr[scala.Nothing],
-      onAnimationEnd: Nullable[js.Function0[Unit]]
-    ): Unit = js.native
     def zoomOnMesh(mesh: AbstractMesh, focusOnOriginXZ: Boolean): Unit = js.native
     def zoomOnMesh(mesh: AbstractMesh, focusOnOriginXZ: Boolean, onAnimationEnd: Nullable[js.Function0[Unit]]): Unit = js.native
+    def zoomOnMesh(mesh: AbstractMesh, focusOnOriginXZ: Unit, onAnimationEnd: Nullable[js.Function0[Unit]]): Unit = js.native
     
     /**
       * Targets the given mesh with its children and updates zoom level accordingly.
@@ -219,13 +238,9 @@ object framingBehaviorMod {
       * @param onAnimationEnd Callback triggered at the end of the framing animation
       */
     def zoomOnMeshHierarchy(mesh: AbstractMesh): Unit = js.native
-    def zoomOnMeshHierarchy(
-      mesh: AbstractMesh,
-      focusOnOriginXZ: js.UndefOr[scala.Nothing],
-      onAnimationEnd: Nullable[js.Function0[Unit]]
-    ): Unit = js.native
     def zoomOnMeshHierarchy(mesh: AbstractMesh, focusOnOriginXZ: Boolean): Unit = js.native
     def zoomOnMeshHierarchy(mesh: AbstractMesh, focusOnOriginXZ: Boolean, onAnimationEnd: Nullable[js.Function0[Unit]]): Unit = js.native
+    def zoomOnMeshHierarchy(mesh: AbstractMesh, focusOnOriginXZ: Unit, onAnimationEnd: Nullable[js.Function0[Unit]]): Unit = js.native
     
     /**
       * Targets the given meshes with their children and updates zoom level accordingly.
@@ -234,15 +249,15 @@ object framingBehaviorMod {
       * @param onAnimationEnd Callback triggered at the end of the framing animation
       */
     def zoomOnMeshesHierarchy(meshes: js.Array[AbstractMesh]): Unit = js.native
-    def zoomOnMeshesHierarchy(
-      meshes: js.Array[AbstractMesh],
-      focusOnOriginXZ: js.UndefOr[scala.Nothing],
-      onAnimationEnd: Nullable[js.Function0[Unit]]
-    ): Unit = js.native
     def zoomOnMeshesHierarchy(meshes: js.Array[AbstractMesh], focusOnOriginXZ: Boolean): Unit = js.native
     def zoomOnMeshesHierarchy(
       meshes: js.Array[AbstractMesh],
       focusOnOriginXZ: Boolean,
+      onAnimationEnd: Nullable[js.Function0[Unit]]
+    ): Unit = js.native
+    def zoomOnMeshesHierarchy(
+      meshes: js.Array[AbstractMesh],
+      focusOnOriginXZ: Unit,
       onAnimationEnd: Nullable[js.Function0[Unit]]
     ): Unit = js.native
     
@@ -268,8 +283,7 @@ object framingBehaviorMod {
     @JSImport("babylonjs/Behaviors/Cameras/framingBehavior", "FramingBehavior.EasingFunction")
     @js.native
     def EasingFunction: ExponentialEase = js.native
-    @scala.inline
-    def EasingFunction_=(x: ExponentialEase): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EasingFunction")(x.asInstanceOf[js.Any])
+    inline def EasingFunction_=(x: ExponentialEase): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EasingFunction")(x.asInstanceOf[js.Any])
     
     /**
       * The easing mode used by animations
@@ -277,8 +291,7 @@ object framingBehaviorMod {
     @JSImport("babylonjs/Behaviors/Cameras/framingBehavior", "FramingBehavior.EasingMode")
     @js.native
     def EasingMode: Double = js.native
-    @scala.inline
-    def EasingMode_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EasingMode")(x.asInstanceOf[js.Any])
+    inline def EasingMode_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EasingMode")(x.asInstanceOf[js.Any])
     
     /**
       * The camera is not allowed to zoom closer to the mesh than the point at which the adjusted bounding sphere touches the frustum sides
@@ -286,8 +299,7 @@ object framingBehaviorMod {
     @JSImport("babylonjs/Behaviors/Cameras/framingBehavior", "FramingBehavior.FitFrustumSidesMode")
     @js.native
     def FitFrustumSidesMode: Double = js.native
-    @scala.inline
-    def FitFrustumSidesMode_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FitFrustumSidesMode")(x.asInstanceOf[js.Any])
+    inline def FitFrustumSidesMode_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FitFrustumSidesMode")(x.asInstanceOf[js.Any])
     
     /**
       * The camera can move all the way towards the mesh.
@@ -295,7 +307,6 @@ object framingBehaviorMod {
     @JSImport("babylonjs/Behaviors/Cameras/framingBehavior", "FramingBehavior.IgnoreBoundsSizeMode")
     @js.native
     def IgnoreBoundsSizeMode: Double = js.native
-    @scala.inline
-    def IgnoreBoundsSizeMode_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IgnoreBoundsSizeMode")(x.asInstanceOf[js.Any])
+    inline def IgnoreBoundsSizeMode_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IgnoreBoundsSizeMode")(x.asInstanceOf[js.Any])
   }
 }

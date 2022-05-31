@@ -1,14 +1,16 @@
 package typings.babylonjs.global.BABYLON
 
+import typings.babylonjs.BABYLON.Behavior
+import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.TrailMesh")
 @js.native
 class TrailMesh protected ()
-  extends typings.babylonjs.BABYLON.TrailMesh {
+  extends StObject
+     with typings.babylonjs.BABYLON.TrailMesh {
   /**
     * @constructor
     * @param name The value used by scene.getMeshByName() to do a lookup.
@@ -33,13 +35,6 @@ class TrailMesh protected ()
     name: String,
     generator: typings.babylonjs.BABYLON.TransformNode,
     scene: typings.babylonjs.BABYLON.Scene,
-    diameter: js.UndefOr[scala.Nothing],
-    length: Double
-  ) = this()
-  def this(
-    name: String,
-    generator: typings.babylonjs.BABYLON.TransformNode,
-    scene: typings.babylonjs.BABYLON.Scene,
     diameter: Double,
     length: Double
   ) = this()
@@ -47,25 +42,8 @@ class TrailMesh protected ()
     name: String,
     generator: typings.babylonjs.BABYLON.TransformNode,
     scene: typings.babylonjs.BABYLON.Scene,
-    diameter: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    autoStart: Boolean
-  ) = this()
-  def this(
-    name: String,
-    generator: typings.babylonjs.BABYLON.TransformNode,
-    scene: typings.babylonjs.BABYLON.Scene,
-    diameter: js.UndefOr[scala.Nothing],
-    length: Double,
-    autoStart: Boolean
-  ) = this()
-  def this(
-    name: String,
-    generator: typings.babylonjs.BABYLON.TransformNode,
-    scene: typings.babylonjs.BABYLON.Scene,
-    diameter: Double,
-    length: js.UndefOr[scala.Nothing],
-    autoStart: Boolean
+    diameter: Unit,
+    length: Double
   ) = this()
   def this(
     name: String,
@@ -75,9 +53,84 @@ class TrailMesh protected ()
     length: Double,
     autoStart: Boolean
   ) = this()
+  def this(
+    name: String,
+    generator: typings.babylonjs.BABYLON.TransformNode,
+    scene: typings.babylonjs.BABYLON.Scene,
+    diameter: Double,
+    length: Unit,
+    autoStart: Boolean
+  ) = this()
+  def this(
+    name: String,
+    generator: typings.babylonjs.BABYLON.TransformNode,
+    scene: typings.babylonjs.BABYLON.Scene,
+    diameter: Unit,
+    length: Double,
+    autoStart: Boolean
+  ) = this()
+  def this(
+    name: String,
+    generator: typings.babylonjs.BABYLON.TransformNode,
+    scene: typings.babylonjs.BABYLON.Scene,
+    diameter: Unit,
+    length: Unit,
+    autoStart: Boolean
+  ) = this()
+  
+  /**
+    * Attach a behavior
+    * @param behavior defines the behavior to attach
+    * @returns the current host
+    */
+  /* CompleteClass */
+  override def addBehavior(behavior: Behavior[typings.babylonjs.BABYLON.Node]): typings.babylonjs.BABYLON.Node = js.native
+  
+  /**
+    * Releases all held resources
+    */
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
+  
+  /**
+    * Gets a behavior using its name to search
+    * @param name defines the name to search
+    * @returns the behavior or null if not found
+    */
+  /* CompleteClass */
+  override def getBehaviorByName(name: String): Nullable[Behavior[typings.babylonjs.BABYLON.Node]] = js.native
+  
+  /**
+    * Checks if a cullable object (mesh...) is in the camera frustum
+    * Unlike isInFrustum this cheks the full bounding box
+    * @param frustumPlanes Camera near/planes
+    * @returns true if the object is in frustum otherwise false
+    */
+  /* CompleteClass */
+  override def isCompletelyInFrustum(frustumPlanes: js.Array[typings.babylonjs.BABYLON.Plane]): Boolean = js.native
+  
+  /**
+    * Checks if the object or part of the object is in the frustum
+    * @param frustumPlanes Camera near/planes
+    * @returns true if the object is in frustum otherwise false
+    */
+  /* CompleteClass */
+  override def isInFrustum(frustumPlanes: js.Array[typings.babylonjs.BABYLON.Plane]): Boolean = js.native
+  
+  /**
+    * Remove a behavior from the current object
+    * @param behavior defines the behavior to detach
+    * @returns the current host
+    */
+  /* CompleteClass */
+  override def removeBehavior(behavior: Behavior[typings.babylonjs.BABYLON.Node]): typings.babylonjs.BABYLON.Node = js.native
 }
 /* static members */
 object TrailMesh {
+  
+  @JSGlobal("BABYLON.TrailMesh")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Parses a serialized trail mesh
@@ -85,7 +138,5 @@ object TrailMesh {
     * @param scene the scene to create the trail mesh in
     * @returns the created trail mesh
     */
-  @JSGlobal("BABYLON.TrailMesh.Parse")
-  @js.native
-  def Parse(parsedMesh: js.Any, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.TrailMesh = js.native
+  inline def Parse(parsedMesh: js.Any, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.TrailMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedMesh.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.TrailMesh]
 }

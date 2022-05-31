@@ -409,8 +409,4 @@ object global {
     /* CompleteClass */
     var state: String = js.native
   }
-  
-  //#endregion
-  //#region cdv-plugin-paypal-mobile-sdk.js
-  object PayPalCordovaPlugin
 }

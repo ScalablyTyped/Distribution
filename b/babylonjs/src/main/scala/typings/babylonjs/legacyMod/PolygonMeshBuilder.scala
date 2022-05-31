@@ -2,7 +2,6 @@ package typings.babylonjs.legacyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "PolygonMeshBuilder")
@@ -30,12 +29,12 @@ class PolygonMeshBuilder protected ()
     contours: typings.babylonjs.mathPathMod.Path2,
     scene: typings.babylonjs.sceneMod.Scene
   ) = this()
-  def this(name: String, contours: js.Any, scene: js.UndefOr[scala.Nothing], earcutInjection: js.Any) = this()
+  def this(name: String, contours: js.Any, scene: Unit, earcutInjection: js.Any) = this()
   def this(name: String, contours: js.Any, scene: typings.babylonjs.sceneMod.Scene, earcutInjection: js.Any) = this()
   def this(
     name: String,
     contours: js.Array[typings.babylonjs.mathVectorMod.Vector2],
-    scene: js.UndefOr[scala.Nothing],
+    scene: Unit,
     earcutInjection: js.Any
   ) = this()
   def this(
@@ -44,12 +43,7 @@ class PolygonMeshBuilder protected ()
     scene: typings.babylonjs.sceneMod.Scene,
     earcutInjection: js.Any
   ) = this()
-  def this(
-    name: String,
-    contours: typings.babylonjs.mathPathMod.Path2,
-    scene: js.UndefOr[scala.Nothing],
-    earcutInjection: js.Any
-  ) = this()
+  def this(name: String, contours: typings.babylonjs.mathPathMod.Path2, scene: Unit, earcutInjection: js.Any) = this()
   def this(
     name: String,
     contours: typings.babylonjs.mathPathMod.Path2,

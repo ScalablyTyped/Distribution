@@ -9,7 +9,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.textureMod.Texture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object refractionPostProcessMod {
@@ -77,7 +76,7 @@ object refractionPostProcessMod {
       colorLevel: Double,
       options: Double,
       camera: Camera,
-      samplingMode: js.UndefOr[scala.Nothing],
+      samplingMode: Double,
       engine: Engine
     ) = this()
     def this(
@@ -88,18 +87,7 @@ object refractionPostProcessMod {
       colorLevel: Double,
       options: Double,
       camera: Camera,
-      samplingMode: Double,
-      engine: Engine
-    ) = this()
-    def this(
-      name: String,
-      refractionTextureUrl: String,
-      color: Color3,
-      depth: Double,
-      colorLevel: Double,
-      options: PostProcessOptions,
-      camera: Camera,
-      samplingMode: js.UndefOr[scala.Nothing],
+      samplingMode: Unit,
       engine: Engine
     ) = this()
     def this(
@@ -119,23 +107,10 @@ object refractionPostProcessMod {
       color: Color3,
       depth: Double,
       colorLevel: Double,
-      options: Double,
+      options: PostProcessOptions,
       camera: Camera,
-      samplingMode: js.UndefOr[scala.Nothing],
-      engine: js.UndefOr[scala.Nothing],
-      reusable: Boolean
-    ) = this()
-    def this(
-      name: String,
-      refractionTextureUrl: String,
-      color: Color3,
-      depth: Double,
-      colorLevel: Double,
-      options: Double,
-      camera: Camera,
-      samplingMode: js.UndefOr[scala.Nothing],
-      engine: Engine,
-      reusable: Boolean
+      samplingMode: Unit,
+      engine: Engine
     ) = this()
     def this(
       name: String,
@@ -146,7 +121,7 @@ object refractionPostProcessMod {
       options: Double,
       camera: Camera,
       samplingMode: Double,
-      engine: js.UndefOr[scala.Nothing],
+      engine: Unit,
       reusable: Boolean
     ) = this()
     def this(
@@ -167,10 +142,10 @@ object refractionPostProcessMod {
       color: Color3,
       depth: Double,
       colorLevel: Double,
-      options: PostProcessOptions,
+      options: Double,
       camera: Camera,
-      samplingMode: js.UndefOr[scala.Nothing],
-      engine: js.UndefOr[scala.Nothing],
+      samplingMode: Unit,
+      engine: Unit,
       reusable: Boolean
     ) = this()
     def this(
@@ -179,9 +154,9 @@ object refractionPostProcessMod {
       color: Color3,
       depth: Double,
       colorLevel: Double,
-      options: PostProcessOptions,
+      options: Double,
       camera: Camera,
-      samplingMode: js.UndefOr[scala.Nothing],
+      samplingMode: Unit,
       engine: Engine,
       reusable: Boolean
     ) = this()
@@ -194,7 +169,7 @@ object refractionPostProcessMod {
       options: PostProcessOptions,
       camera: Camera,
       samplingMode: Double,
-      engine: js.UndefOr[scala.Nothing],
+      engine: Unit,
       reusable: Boolean
     ) = this()
     def this(
@@ -206,13 +181,37 @@ object refractionPostProcessMod {
       options: PostProcessOptions,
       camera: Camera,
       samplingMode: Double,
+      engine: Engine,
+      reusable: Boolean
+    ) = this()
+    def this(
+      name: String,
+      refractionTextureUrl: String,
+      color: Color3,
+      depth: Double,
+      colorLevel: Double,
+      options: PostProcessOptions,
+      camera: Camera,
+      samplingMode: Unit,
+      engine: Unit,
+      reusable: Boolean
+    ) = this()
+    def this(
+      name: String,
+      refractionTextureUrl: String,
+      color: Color3,
+      depth: Double,
+      colorLevel: Double,
+      options: PostProcessOptions,
+      camera: Camera,
+      samplingMode: Unit,
       engine: Engine,
       reusable: Boolean
     ) = this()
     
-    var _ownRefractionTexture: js.Any = js.native
+    /* private */ var _ownRefractionTexture: js.Any = js.native
     
-    var _refTexture: js.Any = js.native
+    /* private */ var _refTexture: js.Any = js.native
     
     /** the base color of the refraction (used to taint the rendering) */
     var color: Color3 = js.native
@@ -237,9 +236,11 @@ object refractionPostProcessMod {
   /* static members */
   object RefractionPostProcess {
     
-    /** @hidden */
-    @JSImport("babylonjs/PostProcesses/refractionPostProcess", "RefractionPostProcess._Parse")
+    @JSImport("babylonjs/PostProcesses/refractionPostProcess", "RefractionPostProcess")
     @js.native
-    def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): RefractionPostProcess = js.native
+    val ^ : js.Any = js.native
+    
+    /** @hidden */
+    inline def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): RefractionPostProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[RefractionPostProcess]
   }
 }

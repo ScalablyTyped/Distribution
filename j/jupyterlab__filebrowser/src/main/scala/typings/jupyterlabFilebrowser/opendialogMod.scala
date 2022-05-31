@@ -8,12 +8,15 @@ import typings.jupyterlabServices.contentsMod.Contents.IModel
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object opendialogMod {
   
   object FileDialog {
+    
+    @JSImport("@jupyterlab/filebrowser/lib/opendialog", "FileDialog")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Create and show a open directory dialog.
@@ -25,9 +28,7 @@ object opendialogMod {
       *
       * @returns A promise that resolves with whether the dialog was accepted.
       */
-    @JSImport("@jupyterlab/filebrowser/lib/opendialog", "FileDialog.getExistingDirectory")
-    @js.native
-    def getExistingDirectory(options: IDirectoryOptions): js.Promise[IResult[js.Array[IModel]]] = js.native
+    inline def getExistingDirectory(options: IDirectoryOptions): js.Promise[IResult[js.Array[IModel]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getExistingDirectory")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IResult[js.Array[IModel]]]]
     
     /**
       * Create and show a open files dialog.
@@ -39,97 +40,80 @@ object opendialogMod {
       *
       * @returns A promise that resolves with whether the dialog was accepted.
       */
-    @JSImport("@jupyterlab/filebrowser/lib/opendialog", "FileDialog.getOpenFiles")
-    @js.native
-    def getOpenFiles(options: IFileOptions): js.Promise[IResult[js.Array[IModel]]] = js.native
+    inline def getOpenFiles(options: IFileOptions): js.Promise[IResult[js.Array[IModel]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOpenFiles")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IResult[js.Array[IModel]]]]
     
     /**
       * Options for the open directory dialog
       */
     /* Inlined parent std.Partial<std.Pick<@jupyterlab/apputils.@jupyterlab/apputils.Dialog.IOptions<std.Promise<std.Array<@jupyterlab/services.@jupyterlab/services.Contents.IModel>>>, std.Exclude<keyof @jupyterlab/apputils.@jupyterlab/apputils.Dialog.IOptions<std.Promise<std.Array<@jupyterlab/services.@jupyterlab/services.Contents.IModel>>>, 'body' | 'buttons' | 'defaultButton'>>> */
-    @js.native
     trait IDirectoryOptions extends StObject {
       
-      var focusNodeSelector: js.UndefOr[String] = js.native
+      var focusNodeSelector: js.UndefOr[String] = js.undefined
       
-      var host: js.UndefOr[HTMLElement] = js.native
+      var host: js.UndefOr[HTMLElement] = js.undefined
       
       /**
         * Document manager
         */
-      var manager: IDocumentManager = js.native
+      var manager: IDocumentManager
       
-      var renderer: js.UndefOr[IRenderer] = js.native
+      var renderer: js.UndefOr[IRenderer] = js.undefined
       
-      var title: js.UndefOr[Header] = js.native
+      var title: js.UndefOr[Header] = js.undefined
     }
     object IDirectoryOptions {
       
-      @scala.inline
-      def apply(manager: IDocumentManager): IDirectoryOptions = {
+      inline def apply(manager: IDocumentManager): IDirectoryOptions = {
         val __obj = js.Dynamic.literal(manager = manager.asInstanceOf[js.Any])
         __obj.asInstanceOf[IDirectoryOptions]
       }
       
-      @scala.inline
-      implicit class IDirectoryOptionsMutableBuilder[Self <: IDirectoryOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IDirectoryOptions](x: Self) {
         
-        @scala.inline
-        def setFocusNodeSelector(value: String): Self = StObject.set(x, "focusNodeSelector", value.asInstanceOf[js.Any])
+        inline def setFocusNodeSelector(value: String): Self = StObject.set(x, "focusNodeSelector", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFocusNodeSelectorUndefined: Self = StObject.set(x, "focusNodeSelector", js.undefined)
+        inline def setFocusNodeSelectorUndefined: Self = StObject.set(x, "focusNodeSelector", js.undefined)
         
-        @scala.inline
-        def setHost(value: HTMLElement): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+        inline def setHost(value: HTMLElement): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+        inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
         
-        @scala.inline
-        def setManager(value: IDocumentManager): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
+        inline def setManager(value: IDocumentManager): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+        inline def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+        inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
         
-        @scala.inline
-        def setTitle(value: Header): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: Header): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       }
     }
     
     /**
       * Options for the open file dialog
       */
-    @js.native
-    trait IFileOptions extends IDirectoryOptions {
+    trait IFileOptions
+      extends StObject
+         with IDirectoryOptions {
       
       /**
         * Filter function on file browser item model
         */
-      var filter: js.UndefOr[js.Function1[/* value */ IModel, Boolean]] = js.native
+      var filter: js.UndefOr[js.Function1[/* value */ IModel, Boolean]] = js.undefined
     }
     object IFileOptions {
       
-      @scala.inline
-      def apply(manager: IDocumentManager): IFileOptions = {
+      inline def apply(manager: IDocumentManager): IFileOptions = {
         val __obj = js.Dynamic.literal(manager = manager.asInstanceOf[js.Any])
         __obj.asInstanceOf[IFileOptions]
       }
       
-      @scala.inline
-      implicit class IFileOptionsMutableBuilder[Self <: IFileOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IFileOptions](x: Self) {
         
-        @scala.inline
-        def setFilter(value: /* value */ IModel => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+        inline def setFilter(value: /* value */ IModel => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+        inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       }
     }
   }

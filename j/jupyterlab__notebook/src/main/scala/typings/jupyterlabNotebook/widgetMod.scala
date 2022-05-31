@@ -7,6 +7,7 @@ import typings.jupyterlabCells.mod.Cell
 import typings.jupyterlabCells.mod.CodeCell
 import typings.jupyterlabCells.mod.MarkdownCell
 import typings.jupyterlabCells.mod.RawCell
+import typings.jupyterlabCodeeditor.editorMod.CodeEditor.Factory
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IEditor
 import typings.jupyterlabCodeeditor.mimetypeMod.IEditorMimeTypeService
 import typings.jupyterlabCoreutils.interfacesMod.IChangedArgs
@@ -30,7 +31,6 @@ import typings.luminoWidgets.mod.Widget.ResizeMessage
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object widgetMod {
@@ -43,84 +43,84 @@ object widgetMod {
       */
     def this(options: IOptions) = this()
     
-    var _activeCell: js.Any = js.native
+    /* private */ var _activeCell: js.Any = js.native
     
-    var _activeCellChanged: js.Any = js.native
+    /* private */ var _activeCellChanged: js.Any = js.native
     
-    var _activeCellIndex: js.Any = js.native
+    /* private */ var _activeCellIndex: js.Any = js.native
     
-    var _cellLayoutStateCache: js.Any = js.native
+    /* private */ var _cellLayoutStateCache: js.Any = js.native
     
-    var _checkCacheOnNextResize: js.Any = js.native
+    /* private */ var _checkCacheOnNextResize: js.Any = js.native
     
-    var _drag: js.Any = js.native
+    /* private */ var _drag: js.Any = js.native
     
-    var _dragData: js.Any = js.native
+    /* private */ var _dragData: js.Any = js.native
     
     /**
       * Ensure that the notebook has proper focus.
       */
-    var _ensureFocus: js.Any = js.native
+    /* private */ var _ensureFocus: js.Any = js.native
     
     /**
       * Handle `contextmenu` event.
       */
-    var _evtContextMenuCapture: js.Any = js.native
+    /* private */ var _evtContextMenuCapture: js.Any = js.native
     
     /**
       * Handle `dblclick` events for the widget.
       */
-    var _evtDblClick: js.Any = js.native
+    /* private */ var _evtDblClick: js.Any = js.native
     
     /**
       * Handle the `'mousemove'` event for the widget.
       */
-    var _evtDocumentMousemove: js.Any = js.native
+    /* private */ var _evtDocumentMousemove: js.Any = js.native
     
     /**
       * Handle the `'mouseup'` event on the document.
       */
-    var _evtDocumentMouseup: js.Any = js.native
+    /* private */ var _evtDocumentMouseup: js.Any = js.native
     
     /**
       * Handle the `'lm-dragenter'` event for the widget.
       */
-    var _evtDragEnter: js.Any = js.native
+    /* private */ var _evtDragEnter: js.Any = js.native
     
     /**
       * Handle the `'lm-dragleave'` event for the widget.
       */
-    var _evtDragLeave: js.Any = js.native
+    /* private */ var _evtDragLeave: js.Any = js.native
     
     /**
       * Handle the `'lm-dragover'` event for the widget.
       */
-    var _evtDragOver: js.Any = js.native
+    /* private */ var _evtDragOver: js.Any = js.native
     
     /**
       * Handle the `'lm-drop'` event for the widget.
       */
-    var _evtDrop: js.Any = js.native
+    /* private */ var _evtDrop: js.Any = js.native
     
     /**
       * Handle `focus` events for the widget.
       */
-    var _evtFocusIn: js.Any = js.native
+    /* private */ var _evtFocusIn: js.Any = js.native
     
     /**
       * Handle `focusout` events for the notebook.
       */
-    var _evtFocusOut: js.Any = js.native
+    /* private */ var _evtFocusOut: js.Any = js.native
     
     /**
       * Handle `mousedown` events for the widget.
       */
-    var _evtMouseDown: js.Any = js.native
+    /* private */ var _evtMouseDown: js.Any = js.native
     
     /**
       * Handle `mousedown` event in the capture phase for the widget.
       */
-    var _evtMouseDownCapture: js.Any = js.native
+    /* private */ var _evtMouseDownCapture: js.Any = js.native
     
     /**
       * Find the cell index containing the target html element.
@@ -128,7 +128,7 @@ object widgetMod {
       * #### Notes
       * Returns -1 if the cell is not found.
       */
-    var _findCell: js.Any = js.native
+    /* private */ var _findCell: js.Any = js.native
     
     /**
       * Find the target of html mouse event and cell index containing this target.
@@ -136,33 +136,33 @@ object widgetMod {
       * #### Notes
       * Returned index is -1 if the cell is not found.
       */
-    var _findEventTargetAndCell: js.Any = js.native
+    /* private */ var _findEventTargetAndCell: js.Any = js.native
     
-    var _fragment: js.Any = js.native
+    /* private */ var _fragment: js.Any = js.native
     
-    var _mode: js.Any = js.native
+    /* private */ var _mode: js.Any = js.native
     
-    var _mouseMode: js.Any = js.native
+    /* private */ var _mouseMode: js.Any = js.native
     
     /**
       * Handle edge request signals from cells.
       */
-    var _onEdgeRequest: js.Any = js.native
+    /* private */ var _onEdgeRequest: js.Any = js.native
     
-    var _selectionChanged: js.Any = js.native
+    /* private */ var _selectionChanged: js.Any = js.native
     
     /**
       * Start a drag event.
       */
-    var _startDrag: js.Any = js.native
+    /* private */ var _startDrag: js.Any = js.native
     
-    var _stateChanged: js.Any = js.native
+    /* private */ var _stateChanged: js.Any = js.native
     
     /**
       * Remove selections from inactive cells to avoid
       * spurious cursors.
       */
-    var _trimSelections: js.Any = js.native
+    /* private */ var _trimSelections: js.Any = js.native
     
     /**
       * Get the active cell widget.
@@ -305,7 +305,7 @@ object widgetMod {
     /**
       * A signal emitted when the state of the notebook changes.
       */
-    def stateChanged: ISignal[this.type, IChangedArgs[_, _, String]] = js.native
+    def stateChanged: ISignal[this.type, IChangedArgs[js.Any, js.Any, String]] = js.native
   }
   object Notebook {
     
@@ -362,76 +362,76 @@ object widgetMod {
     /**
       * Create a code cell widget from a code cell model.
       */
-    var _createCodeCell: js.Any = js.native
+    /* private */ var _createCodeCell: js.Any = js.native
     
     /**
       * Create a markdown cell widget from a markdown cell model.
       */
-    var _createMarkdownCell: js.Any = js.native
+    /* private */ var _createMarkdownCell: js.Any = js.native
     
     /**
       * Create a raw cell widget from a raw cell model.
       */
-    var _createRawCell: js.Any = js.native
+    /* private */ var _createRawCell: js.Any = js.native
     
-    var _editorConfig: js.Any = js.native
+    /* private */ var _editorConfig: js.Any = js.native
     
     /**
       * Create a cell widget and insert into the notebook.
       */
-    var _insertCell: js.Any = js.native
+    /* private */ var _insertCell: js.Any = js.native
     
-    var _mimetype: js.Any = js.native
+    /* private */ var _mimetype: js.Any = js.native
     
-    var _mimetypeService: js.Any = js.native
+    /* private */ var _mimetypeService: js.Any = js.native
     
-    var _model: js.Any = js.native
+    /* private */ var _model: js.Any = js.native
     
-    var _modelChanged: js.Any = js.native
+    /* private */ var _modelChanged: js.Any = js.native
     
-    var _modelContentChanged: js.Any = js.native
+    /* private */ var _modelContentChanged: js.Any = js.native
     
     /**
       * Move a cell widget.
       */
-    var _moveCell: js.Any = js.native
+    /* private */ var _moveCell: js.Any = js.native
     
-    var _notebookConfig: js.Any = js.native
+    /* private */ var _notebookConfig: js.Any = js.native
     
     /**
       * Handle a change cells event.
       */
-    var _onCellsChanged: js.Any = js.native
+    /* private */ var _onCellsChanged: js.Any = js.native
     
     /**
       * Handle an update to the collaborators.
       */
-    var _onCollaboratorsChanged: js.Any = js.native
+    /* private */ var _onCollaboratorsChanged: js.Any = js.native
     
     /**
       * Handle a new model on the widget.
       */
-    var _onModelChanged: js.Any = js.native
+    /* private */ var _onModelChanged: js.Any = js.native
     
     /**
       * Remove a cell widget.
       */
-    var _removeCell: js.Any = js.native
+    /* private */ var _removeCell: js.Any = js.native
     
     /**
       * Update editor settings for notebook cells.
       */
-    var _updateEditorConfig: js.Any = js.native
+    /* private */ var _updateEditorConfig: js.Any = js.native
     
     /**
       * Update the mimetype of the notebook.
       */
-    var _updateMimetype: js.Any = js.native
+    /* private */ var _updateMimetype: js.Any = js.native
     
     /**
       * Apply updated notebook settings.
       */
-    var _updateNotebookConfig: js.Any = js.native
+    /* private */ var _updateNotebookConfig: js.Any = js.native
     
     /**
       * Get the mimetype for code cells.
@@ -553,6 +553,67 @@ object widgetMod {
       extends typings.jupyterlabCells.mod.Cell.ContentFactory
          with IContentFactory {
       def this(options: typings.jupyterlabCells.widgetMod.Cell.ContentFactory.IOptions) = this()
+      
+      /**
+        * Create a new cell header for the parent widget.
+        */
+      /* CompleteClass */
+      /* InferMemberOverrides */
+      override def createCellFooter(): ICellFooter = js.native
+      
+      /**
+        * Create a new cell header for the parent widget.
+        */
+      /* CompleteClass */
+      /* InferMemberOverrides */
+      override def createCellHeader(): ICellHeader = js.native
+      
+      /**
+        * Create a new code cell widget.
+        */
+      /* CompleteClass */
+      override def createCodeCell(options: typings.jupyterlabCells.widgetMod.CodeCell.IOptions, parent: StaticNotebook): CodeCell = js.native
+      
+      /**
+        * Create an input prompt.
+        */
+      /* InferMemberOverrides */
+      override def createInputPrompt(): IInputPrompt = js.native
+      
+      /**
+        * Create a new markdown cell widget.
+        */
+      /* CompleteClass */
+      override def createMarkdownCell(options: typings.jupyterlabCells.widgetMod.MarkdownCell.IOptions, parent: StaticNotebook): MarkdownCell = js.native
+      
+      /**
+        * Create an output prompt.
+        */
+      /* CompleteClass */
+      /* InferMemberOverrides */
+      override def createOutputPrompt(): IOutputPrompt = js.native
+      
+      /**
+        * Create a new raw cell widget.
+        */
+      /* CompleteClass */
+      override def createRawCell(options: typings.jupyterlabCells.widgetMod.RawCell.IOptions, parent: StaticNotebook): RawCell = js.native
+      
+      /**
+        * Create an stdin widget.
+        */
+      /* CompleteClass */
+      /* InferMemberOverrides */
+      override def createStdin(options: typings.jupyterlabOutputarea.widgetMod.Stdin.IOptions): IStdin = js.native
+      
+      /**
+        * The editor factory we need to include in `CodeEditorWratter.IOptions`.
+        *
+        * This is a separate readonly attribute rather than a factory method as we need
+        * to pass it around.
+        */
+      /* InferMemberOverrides */
+      override val editorFactory: Factory = js.native
     }
     /**
       * A namespace for the staic notebook content factory.
@@ -594,29 +655,28 @@ object widgetMod {
       * factory of the output area and input area. The result is that there is a single
       * factory for creating all child content of a notebook.
       */
-    @js.native
     trait IContentFactory
-      extends typings.jupyterlabCells.widgetMod.Cell.IContentFactory {
+      extends StObject
+         with typings.jupyterlabCells.widgetMod.Cell.IContentFactory {
       
       /**
         * Create a new code cell widget.
         */
-      def createCodeCell(options: typings.jupyterlabCells.widgetMod.CodeCell.IOptions, parent: StaticNotebook): CodeCell = js.native
+      def createCodeCell(options: typings.jupyterlabCells.widgetMod.CodeCell.IOptions, parent: StaticNotebook): CodeCell
       
       /**
         * Create a new markdown cell widget.
         */
-      def createMarkdownCell(options: typings.jupyterlabCells.widgetMod.MarkdownCell.IOptions, parent: StaticNotebook): MarkdownCell = js.native
+      def createMarkdownCell(options: typings.jupyterlabCells.widgetMod.MarkdownCell.IOptions, parent: StaticNotebook): MarkdownCell
       
       /**
         * Create a new raw cell widget.
         */
-      def createRawCell(options: typings.jupyterlabCells.widgetMod.RawCell.IOptions, parent: StaticNotebook): RawCell = js.native
+      def createRawCell(options: typings.jupyterlabCells.widgetMod.RawCell.IOptions, parent: StaticNotebook): RawCell
     }
     object IContentFactory {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         createCellFooter: () => ICellFooter,
         createCellHeader: () => ICellHeader,
         createCodeCell: (typings.jupyterlabCells.widgetMod.CodeCell.IOptions, StaticNotebook) => CodeCell,
@@ -631,182 +691,153 @@ object widgetMod {
         __obj.asInstanceOf[IContentFactory]
       }
       
-      @scala.inline
-      implicit class IContentFactoryMutableBuilder[Self <: IContentFactory] (val x: Self) extends AnyVal {
+      extension [Self <: IContentFactory](x: Self) {
         
-        @scala.inline
-        def setCreateCodeCell(value: (typings.jupyterlabCells.widgetMod.CodeCell.IOptions, StaticNotebook) => CodeCell): Self = StObject.set(x, "createCodeCell", js.Any.fromFunction2(value))
+        inline def setCreateCodeCell(value: (typings.jupyterlabCells.widgetMod.CodeCell.IOptions, StaticNotebook) => CodeCell): Self = StObject.set(x, "createCodeCell", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setCreateMarkdownCell(value: (typings.jupyterlabCells.widgetMod.MarkdownCell.IOptions, StaticNotebook) => MarkdownCell): Self = StObject.set(x, "createMarkdownCell", js.Any.fromFunction2(value))
+        inline def setCreateMarkdownCell(value: (typings.jupyterlabCells.widgetMod.MarkdownCell.IOptions, StaticNotebook) => MarkdownCell): Self = StObject.set(x, "createMarkdownCell", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setCreateRawCell(value: (typings.jupyterlabCells.widgetMod.RawCell.IOptions, StaticNotebook) => RawCell): Self = StObject.set(x, "createRawCell", js.Any.fromFunction2(value))
+        inline def setCreateRawCell(value: (typings.jupyterlabCells.widgetMod.RawCell.IOptions, StaticNotebook) => RawCell): Self = StObject.set(x, "createRawCell", js.Any.fromFunction2(value))
       }
     }
     
     /**
       * A config object for the cell editors.
       */
-    @js.native
     trait IEditorConfig extends StObject {
       
       /**
         * Config options for code cells.
         */
-      val code: PartialIConfig = js.native
+      val code: PartialIConfig
       
       /**
         * Config options for markdown cells.
         */
-      val markdown: PartialIConfig = js.native
+      val markdown: PartialIConfig
       
       /**
         * Config options for raw cells.
         */
-      val raw: PartialIConfig = js.native
+      val raw: PartialIConfig
     }
     object IEditorConfig {
       
-      @scala.inline
-      def apply(code: PartialIConfig, markdown: PartialIConfig, raw: PartialIConfig): IEditorConfig = {
+      inline def apply(code: PartialIConfig, markdown: PartialIConfig, raw: PartialIConfig): IEditorConfig = {
         val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], markdown = markdown.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
         __obj.asInstanceOf[IEditorConfig]
       }
       
-      @scala.inline
-      implicit class IEditorConfigMutableBuilder[Self <: IEditorConfig] (val x: Self) extends AnyVal {
+      extension [Self <: IEditorConfig](x: Self) {
         
-        @scala.inline
-        def setCode(value: PartialIConfig): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+        inline def setCode(value: PartialIConfig): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMarkdown(value: PartialIConfig): Self = StObject.set(x, "markdown", value.asInstanceOf[js.Any])
+        inline def setMarkdown(value: PartialIConfig): Self = StObject.set(x, "markdown", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRaw(value: PartialIConfig): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+        inline def setRaw(value: PartialIConfig): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       }
     }
     
     /**
       * A config object for the notebook widget
       */
-    @js.native
     trait INotebookConfig extends StObject {
       
       /**
         * The default type for new notebook cells.
         */
-      var defaultCell: CellType = js.native
+      var defaultCell: CellType
       
       /**
         * Should timing be recorded in metadata
         */
-      var recordTiming: Boolean = js.native
+      var recordTiming: Boolean
       
       /**
         * Enable scrolling past the last cell
         */
-      var scrollPastEnd: Boolean = js.native
+      var scrollPastEnd: Boolean
     }
     object INotebookConfig {
       
-      @scala.inline
-      def apply(defaultCell: CellType, recordTiming: Boolean, scrollPastEnd: Boolean): INotebookConfig = {
+      inline def apply(defaultCell: CellType, recordTiming: Boolean, scrollPastEnd: Boolean): INotebookConfig = {
         val __obj = js.Dynamic.literal(defaultCell = defaultCell.asInstanceOf[js.Any], recordTiming = recordTiming.asInstanceOf[js.Any], scrollPastEnd = scrollPastEnd.asInstanceOf[js.Any])
         __obj.asInstanceOf[INotebookConfig]
       }
       
-      @scala.inline
-      implicit class INotebookConfigMutableBuilder[Self <: INotebookConfig] (val x: Self) extends AnyVal {
+      extension [Self <: INotebookConfig](x: Self) {
         
-        @scala.inline
-        def setDefaultCell(value: CellType): Self = StObject.set(x, "defaultCell", value.asInstanceOf[js.Any])
+        inline def setDefaultCell(value: CellType): Self = StObject.set(x, "defaultCell", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRecordTiming(value: Boolean): Self = StObject.set(x, "recordTiming", value.asInstanceOf[js.Any])
+        inline def setRecordTiming(value: Boolean): Self = StObject.set(x, "recordTiming", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScrollPastEnd(value: Boolean): Self = StObject.set(x, "scrollPastEnd", value.asInstanceOf[js.Any])
+        inline def setScrollPastEnd(value: Boolean): Self = StObject.set(x, "scrollPastEnd", value.asInstanceOf[js.Any])
       }
     }
     
     /**
       * An options object for initializing a static notebook.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * A factory for creating content.
         */
-      var contentFactory: js.UndefOr[IContentFactory] = js.native
+      var contentFactory: js.UndefOr[IContentFactory] = js.undefined
       
       /**
         * A configuration object for the cell editor settings.
         */
-      var editorConfig: js.UndefOr[IEditorConfig] = js.native
+      var editorConfig: js.UndefOr[IEditorConfig] = js.undefined
       
       /**
         * The language preference for the model.
         */
-      var languagePreference: js.UndefOr[String] = js.native
+      var languagePreference: js.UndefOr[String] = js.undefined
       
       /**
         * The service used to look up mime types.
         */
-      var mimeTypeService: IEditorMimeTypeService = js.native
+      var mimeTypeService: IEditorMimeTypeService
       
       /**
         * A configuration object for notebook settings.
         */
-      var notebookConfig: js.UndefOr[INotebookConfig] = js.native
+      var notebookConfig: js.UndefOr[INotebookConfig] = js.undefined
       
       /**
         * The rendermime instance used by the widget.
         */
-      var rendermime: IRenderMimeRegistry = js.native
+      var rendermime: IRenderMimeRegistry
     }
     object IOptions {
       
-      @scala.inline
-      def apply(mimeTypeService: IEditorMimeTypeService, rendermime: IRenderMimeRegistry): typings.jupyterlabNotebook.widgetMod.StaticNotebook.IOptions = {
+      inline def apply(mimeTypeService: IEditorMimeTypeService, rendermime: IRenderMimeRegistry): typings.jupyterlabNotebook.widgetMod.StaticNotebook.IOptions = {
         val __obj = js.Dynamic.literal(mimeTypeService = mimeTypeService.asInstanceOf[js.Any], rendermime = rendermime.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.jupyterlabNotebook.widgetMod.StaticNotebook.IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: typings.jupyterlabNotebook.widgetMod.StaticNotebook.IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.jupyterlabNotebook.widgetMod.StaticNotebook.IOptions](x: Self) {
         
-        @scala.inline
-        def setContentFactory(value: IContentFactory): Self = StObject.set(x, "contentFactory", value.asInstanceOf[js.Any])
+        inline def setContentFactory(value: IContentFactory): Self = StObject.set(x, "contentFactory", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentFactoryUndefined: Self = StObject.set(x, "contentFactory", js.undefined)
+        inline def setContentFactoryUndefined: Self = StObject.set(x, "contentFactory", js.undefined)
         
-        @scala.inline
-        def setEditorConfig(value: IEditorConfig): Self = StObject.set(x, "editorConfig", value.asInstanceOf[js.Any])
+        inline def setEditorConfig(value: IEditorConfig): Self = StObject.set(x, "editorConfig", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEditorConfigUndefined: Self = StObject.set(x, "editorConfig", js.undefined)
+        inline def setEditorConfigUndefined: Self = StObject.set(x, "editorConfig", js.undefined)
         
-        @scala.inline
-        def setLanguagePreference(value: String): Self = StObject.set(x, "languagePreference", value.asInstanceOf[js.Any])
+        inline def setLanguagePreference(value: String): Self = StObject.set(x, "languagePreference", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLanguagePreferenceUndefined: Self = StObject.set(x, "languagePreference", js.undefined)
+        inline def setLanguagePreferenceUndefined: Self = StObject.set(x, "languagePreference", js.undefined)
         
-        @scala.inline
-        def setMimeTypeService(value: IEditorMimeTypeService): Self = StObject.set(x, "mimeTypeService", value.asInstanceOf[js.Any])
+        inline def setMimeTypeService(value: IEditorMimeTypeService): Self = StObject.set(x, "mimeTypeService", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNotebookConfig(value: INotebookConfig): Self = StObject.set(x, "notebookConfig", value.asInstanceOf[js.Any])
+        inline def setNotebookConfig(value: INotebookConfig): Self = StObject.set(x, "notebookConfig", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNotebookConfigUndefined: Self = StObject.set(x, "notebookConfig", js.undefined)
+        inline def setNotebookConfigUndefined: Self = StObject.set(x, "notebookConfig", js.undefined)
         
-        @scala.inline
-        def setRendermime(value: IRenderMimeRegistry): Self = StObject.set(x, "rendermime", value.asInstanceOf[js.Any])
+        inline def setRendermime(value: IRenderMimeRegistry): Self = StObject.set(x, "rendermime", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -818,10 +849,8 @@ object widgetMod {
   trait NotebookMode extends StObject
   object NotebookMode {
     
-    @scala.inline
-    def command: typings.jupyterlabNotebook.jupyterlabNotebookStrings.command = "command".asInstanceOf[typings.jupyterlabNotebook.jupyterlabNotebookStrings.command]
+    inline def command: typings.jupyterlabNotebook.jupyterlabNotebookStrings.command = "command".asInstanceOf[typings.jupyterlabNotebook.jupyterlabNotebookStrings.command]
     
-    @scala.inline
-    def edit: typings.jupyterlabNotebook.jupyterlabNotebookStrings.edit = "edit".asInstanceOf[typings.jupyterlabNotebook.jupyterlabNotebookStrings.edit]
+    inline def edit: typings.jupyterlabNotebook.jupyterlabNotebookStrings.edit = "edit".asInstanceOf[typings.jupyterlabNotebook.jupyterlabNotebookStrings.edit]
   }
 }

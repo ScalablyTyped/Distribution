@@ -2,38 +2,39 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FreeCameraMouseWheelInput extends BaseCameraMouseWheelInput {
+trait FreeCameraMouseWheelInput
+  extends StObject
+     with BaseCameraMouseWheelInput {
   
-  var _moveRelative: js.Any = js.native
+  /* private */ var _moveRelative: js.Any = js.native
   
-  var _moveScene: js.Any = js.native
+  /* private */ var _moveScene: js.Any = js.native
   
-  var _rotateRelative: js.Any = js.native
+  /* private */ var _rotateRelative: js.Any = js.native
   
   /**
     * Update the camera according to any configured properties for the 3
     * mouse-wheel axis.
     */
-  var _updateCamera: js.Any = js.native
+  /* private */ var _updateCamera: js.Any = js.native
   
   /**
     * These are set to the desired default behaviour.
     */
-  var _wheelXAction: js.Any = js.native
+  /* private */ var _wheelXAction: js.Any = js.native
   
-  var _wheelXActionCoordinate: js.Any = js.native
+  /* private */ var _wheelXActionCoordinate: js.Any = js.native
   
-  var _wheelYAction: js.Any = js.native
+  /* private */ var _wheelYAction: js.Any = js.native
   
-  var _wheelYActionCoordinate: js.Any = js.native
+  /* private */ var _wheelYActionCoordinate: js.Any = js.native
   
-  var _wheelZAction: js.Any = js.native
+  /* private */ var _wheelZAction: js.Any = js.native
   
-  var _wheelZActionCoordinate: js.Any = js.native
+  /* private */ var _wheelZActionCoordinate: js.Any = js.native
   
   /**
     * Defines the camera the input is attached to.

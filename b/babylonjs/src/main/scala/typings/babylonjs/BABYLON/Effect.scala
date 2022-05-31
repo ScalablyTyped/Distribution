@@ -5,19 +5,20 @@ import typings.std.Float32Array
 import typings.std.Int32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Effect extends IDisposable {
+trait Effect
+  extends StObject
+     with IDisposable {
   
-  var _allFallbacksProcessed: js.Any = js.native
+  /* private */ var _allFallbacksProcessed: js.Any = js.native
   
-  var _attributeLocationByName: js.Any = js.native
+  /* private */ var _attributeLocationByName: js.Any = js.native
   
-  var _attributes: js.Any = js.native
+  /* private */ var _attributes: js.Any = js.native
   
-  var _attributesNames: js.Any = js.native
+  /* private */ var _attributesNames: js.Any = js.native
   
   /**
     * Binds a texture to the engine to be used as output of the shader.
@@ -42,25 +43,25 @@ trait Effect extends IDisposable {
   /** @hidden */
   def _cacheMatrix(uniformName: String, matrix: IMatrixLike): Boolean = js.native
   
-  var _checkIsReady: js.Any = js.native
+  /* private */ var _checkIsReady: js.Any = js.native
   
-  var _compilationError: js.Any = js.native
+  /* private */ var _compilationError: js.Any = js.native
   
-  var _engine: js.Any = js.native
+  /* private */ var _engine: js.Any = js.native
   
-  var _fallbacks: js.Any = js.native
+  /* private */ var _fallbacks: js.Any = js.native
   
-  var _fragmentSourceCode: js.Any = js.native
+  /* private */ var _fragmentSourceCode: js.Any = js.native
   
-  var _fragmentSourceCodeOverride: js.Any = js.native
+  /* private */ var _fragmentSourceCodeOverride: js.Any = js.native
   
-  var _getShaderCodeAndErrorLine: js.Any = js.native
+  /* private */ var _getShaderCodeAndErrorLine: js.Any = js.native
   
-  var _indexParameters: js.Any = js.native
+  /* private */ var _indexParameters: js.Any = js.native
   
-  var _isReady: js.Any = js.native
+  /* private */ var _isReady: js.Any = js.native
   
-  var _isReadyInternal: js.Any = js.native
+  /* private */ var _isReadyInternal: js.Any = js.native
   
   /**
     * Key for the effect.
@@ -68,7 +69,7 @@ trait Effect extends IDisposable {
     */
   var _key: String = js.native
   
-  var _loadShader: js.Any = js.native
+  /* private */ var _loadShader: js.Any = js.native
   
   /** @hidden */
   var _multiTarget: Boolean = js.native
@@ -88,11 +89,11 @@ trait Effect extends IDisposable {
     */
   def _prepareEffect(): Unit = js.native
   
-  var _processCompilationErrors: js.Any = js.native
+  /* private */ var _processCompilationErrors: js.Any = js.native
   
-  var _rawFragmentSourceCode: js.Any = js.native
+  /* private */ var _rawFragmentSourceCode: js.Any = js.native
   
-  var _rawVertexSourceCode: js.Any = js.native
+  /* private */ var _rawVertexSourceCode: js.Any = js.native
   
   /**
     * Recompiles the webGL program
@@ -109,27 +110,27 @@ trait Effect extends IDisposable {
     onError: js.Function1[/* message */ String, Unit]
   ): Unit = js.native
   
-  var _samplerList: js.Any = js.native
+  /* private */ var _samplerList: js.Any = js.native
   
-  var _samplers: js.Any = js.native
+  /* private */ var _samplers: js.Any = js.native
   
-  var _transformFeedbackVaryings: js.Any = js.native
+  /* private */ var _transformFeedbackVaryings: js.Any = js.native
   
-  var _uniformBuffersNames: js.Any = js.native
+  /* private */ var _uniformBuffersNames: js.Any = js.native
   
-  var _uniformBuffersNamesList: js.Any = js.native
+  /* private */ var _uniformBuffersNamesList: js.Any = js.native
   
-  var _uniforms: js.Any = js.native
+  /* private */ var _uniforms: js.Any = js.native
   
-  var _uniformsNames: js.Any = js.native
+  /* private */ var _uniformsNames: js.Any = js.native
   
-  var _useFinalCode: js.Any = js.native
+  /* private */ var _useFinalCode: js.Any = js.native
   
-  var _valueCache: js.Any = js.native
+  /* private */ var _valueCache: js.Any = js.native
   
-  var _vertexSourceCode: js.Any = js.native
+  /* private */ var _vertexSourceCode: js.Any = js.native
   
-  var _vertexSourceCodeOverride: js.Any = js.native
+  /* private */ var _vertexSourceCodeOverride: js.Any = js.native
   
   /**
     * @hidden

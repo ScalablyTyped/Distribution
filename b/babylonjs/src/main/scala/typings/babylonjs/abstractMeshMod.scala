@@ -18,6 +18,7 @@ import typings.babylonjs.lightMod.Light
 import typings.babylonjs.materialMod.Material
 import typings.babylonjs.mathColorMod.Color3
 import typings.babylonjs.mathColorMod.Color4
+import typings.babylonjs.mathPlaneMod.Plane
 import typings.babylonjs.mathVectorMod.Matrix
 import typings.babylonjs.mathVectorMod.Vector2
 import typings.babylonjs.mathVectorMod.Vector3
@@ -47,7 +48,6 @@ import typings.std.Float32Array
 import typings.std.WebGLQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object abstractMeshMod {
@@ -110,7 +110,7 @@ object abstractMeshMod {
     def _getPositionData(applySkeleton: Boolean): Nullable[FloatArray] = js.native
     
     /** @hidden */
-    var _initFacetData: js.Any = js.native
+    /* private */ var _initFacetData: js.Any = js.native
     
     /** @hidden */
     var _internalAbstractMeshDataInfo: InternalAbstractMeshDataInfo = js.native
@@ -124,7 +124,7 @@ object abstractMeshMod {
     /** @hidden */
     def _markSubMeshesAsAttributesDirty(): Unit = js.native
     
-    var _markSubMeshesAsDirty: js.Any = js.native
+    /* private */ var _markSubMeshesAsDirty: js.Any = js.native
     
     /** @hidden */
     def _markSubMeshesAsLightDirty(): Unit = js.native
@@ -136,9 +136,9 @@ object abstractMeshMod {
     /** @hidden */
     var _masterMesh: Nullable[AbstractMesh] = js.native
     
-    var _material: js.Any = js.native
+    /* private */ var _material: js.Any = js.native
     
-    var _meshCollisionData: js.Any = js.native
+    /* private */ var _meshCollisionData: js.Any = js.native
     
     /**
       * Access property
@@ -149,7 +149,7 @@ object abstractMeshMod {
     /** @hidden */
     var _occlusionQuery: Nullable[WebGLQuery] = js.native
     
-    var _onCollisionPositionChange: js.Any = js.native
+    /* private */ var _onCollisionPositionChange: js.Any = js.native
     
     /** @hidden */
     var _physicsImpostor: Nullable[PhysicsImpostor] = js.native
@@ -190,7 +190,7 @@ object abstractMeshMod {
     /** @hidden */
     var _renderingGroup: Nullable[RenderingGroup] = js.native
     
-    var _renderingGroupId: js.Any = js.native
+    /* private */ var _renderingGroupId: js.Any = js.native
     
     /** @hidden */
     def _resyncLightSource(light: Light): Unit = js.native
@@ -352,9 +352,9 @@ object abstractMeshMod {
       * @see https://doc.babylonjs.com/how_to/optimizing_your_scene_with_octrees
       */
     def createOrUpdateSubmeshesOctree(): Octree[SubMesh] = js.native
-    def createOrUpdateSubmeshesOctree(maxCapacity: js.UndefOr[scala.Nothing], maxDepth: Double): Octree[SubMesh] = js.native
     def createOrUpdateSubmeshesOctree(maxCapacity: Double): Octree[SubMesh] = js.native
     def createOrUpdateSubmeshesOctree(maxCapacity: Double, maxDepth: Double): Octree[SubMesh] = js.native
+    def createOrUpdateSubmeshesOctree(maxCapacity: Unit, maxDepth: Double): Octree[SubMesh] = js.native
     
     /**
       * The culling strategy to use to check whether the mesh must be rendered or not.
@@ -438,25 +438,13 @@ object abstractMeshMod {
       * @see https://www.babylonjs-playground.com/#19O9TU#0
       */
     def enableEdgesRendering(): AbstractMesh = js.native
-    def enableEdgesRendering(
-      epsilon: js.UndefOr[scala.Nothing],
-      checkVerticesInsteadOfIndices: js.UndefOr[scala.Nothing],
-      options: IEdgesRendererOptions
-    ): AbstractMesh = js.native
-    def enableEdgesRendering(epsilon: js.UndefOr[scala.Nothing], checkVerticesInsteadOfIndices: Boolean): AbstractMesh = js.native
-    def enableEdgesRendering(
-      epsilon: js.UndefOr[scala.Nothing],
-      checkVerticesInsteadOfIndices: Boolean,
-      options: IEdgesRendererOptions
-    ): AbstractMesh = js.native
     def enableEdgesRendering(epsilon: Double): AbstractMesh = js.native
-    def enableEdgesRendering(
-      epsilon: Double,
-      checkVerticesInsteadOfIndices: js.UndefOr[scala.Nothing],
-      options: IEdgesRendererOptions
-    ): AbstractMesh = js.native
     def enableEdgesRendering(epsilon: Double, checkVerticesInsteadOfIndices: Boolean): AbstractMesh = js.native
     def enableEdgesRendering(epsilon: Double, checkVerticesInsteadOfIndices: Boolean, options: IEdgesRendererOptions): AbstractMesh = js.native
+    def enableEdgesRendering(epsilon: Double, checkVerticesInsteadOfIndices: Unit, options: IEdgesRendererOptions): AbstractMesh = js.native
+    def enableEdgesRendering(epsilon: Unit, checkVerticesInsteadOfIndices: Boolean): AbstractMesh = js.native
+    def enableEdgesRendering(epsilon: Unit, checkVerticesInsteadOfIndices: Boolean, options: IEdgesRendererOptions): AbstractMesh = js.native
+    def enableEdgesRendering(epsilon: Unit, checkVerticesInsteadOfIndices: Unit, options: IEdgesRendererOptions): AbstractMesh = js.native
     
     /**
       * Gets or sets a boolean indicating that pointer move events must be supported on this mesh (false by default)
@@ -498,34 +486,13 @@ object abstractMeshMod {
       * @see https://doc.babylonjs.com/how_to/how_to_use_facetdata
       */
     def getClosestFacetAtCoordinates(x: Double, y: Double, z: Double): Nullable[Double] = js.native
-    def getClosestFacetAtCoordinates(
-      x: Double,
-      y: Double,
-      z: Double,
-      projected: js.UndefOr[scala.Nothing],
-      checkFace: js.UndefOr[scala.Nothing],
-      facing: Boolean
-    ): Nullable[Double] = js.native
-    def getClosestFacetAtCoordinates(x: Double, y: Double, z: Double, projected: js.UndefOr[scala.Nothing], checkFace: Boolean): Nullable[Double] = js.native
-    def getClosestFacetAtCoordinates(
-      x: Double,
-      y: Double,
-      z: Double,
-      projected: js.UndefOr[scala.Nothing],
-      checkFace: Boolean,
-      facing: Boolean
-    ): Nullable[Double] = js.native
+    def getClosestFacetAtCoordinates(x: Double, y: Double, z: Double, projected: Unit, checkFace: Boolean): Nullable[Double] = js.native
+    def getClosestFacetAtCoordinates(x: Double, y: Double, z: Double, projected: Unit, checkFace: Boolean, facing: Boolean): Nullable[Double] = js.native
+    def getClosestFacetAtCoordinates(x: Double, y: Double, z: Double, projected: Unit, checkFace: Unit, facing: Boolean): Nullable[Double] = js.native
     def getClosestFacetAtCoordinates(x: Double, y: Double, z: Double, projected: Vector3): Nullable[Double] = js.native
-    def getClosestFacetAtCoordinates(
-      x: Double,
-      y: Double,
-      z: Double,
-      projected: Vector3,
-      checkFace: js.UndefOr[scala.Nothing],
-      facing: Boolean
-    ): Nullable[Double] = js.native
     def getClosestFacetAtCoordinates(x: Double, y: Double, z: Double, projected: Vector3, checkFace: Boolean): Nullable[Double] = js.native
     def getClosestFacetAtCoordinates(x: Double, y: Double, z: Double, projected: Vector3, checkFace: Boolean, facing: Boolean): Nullable[Double] = js.native
+    def getClosestFacetAtCoordinates(x: Double, y: Double, z: Double, projected: Vector3, checkFace: Unit, facing: Boolean): Nullable[Double] = js.native
     
     /**
       * Returns the closest mesh facet index at (x,y,z) local coordinates, null if not found
@@ -539,34 +506,13 @@ object abstractMeshMod {
       * @see https://doc.babylonjs.com/how_to/how_to_use_facetdata
       */
     def getClosestFacetAtLocalCoordinates(x: Double, y: Double, z: Double): Nullable[Double] = js.native
-    def getClosestFacetAtLocalCoordinates(
-      x: Double,
-      y: Double,
-      z: Double,
-      projected: js.UndefOr[scala.Nothing],
-      checkFace: js.UndefOr[scala.Nothing],
-      facing: Boolean
-    ): Nullable[Double] = js.native
-    def getClosestFacetAtLocalCoordinates(x: Double, y: Double, z: Double, projected: js.UndefOr[scala.Nothing], checkFace: Boolean): Nullable[Double] = js.native
-    def getClosestFacetAtLocalCoordinates(
-      x: Double,
-      y: Double,
-      z: Double,
-      projected: js.UndefOr[scala.Nothing],
-      checkFace: Boolean,
-      facing: Boolean
-    ): Nullable[Double] = js.native
+    def getClosestFacetAtLocalCoordinates(x: Double, y: Double, z: Double, projected: Unit, checkFace: Boolean): Nullable[Double] = js.native
+    def getClosestFacetAtLocalCoordinates(x: Double, y: Double, z: Double, projected: Unit, checkFace: Boolean, facing: Boolean): Nullable[Double] = js.native
+    def getClosestFacetAtLocalCoordinates(x: Double, y: Double, z: Double, projected: Unit, checkFace: Unit, facing: Boolean): Nullable[Double] = js.native
     def getClosestFacetAtLocalCoordinates(x: Double, y: Double, z: Double, projected: Vector3): Nullable[Double] = js.native
-    def getClosestFacetAtLocalCoordinates(
-      x: Double,
-      y: Double,
-      z: Double,
-      projected: Vector3,
-      checkFace: js.UndefOr[scala.Nothing],
-      facing: Boolean
-    ): Nullable[Double] = js.native
     def getClosestFacetAtLocalCoordinates(x: Double, y: Double, z: Double, projected: Vector3, checkFace: Boolean): Nullable[Double] = js.native
     def getClosestFacetAtLocalCoordinates(x: Double, y: Double, z: Double, projected: Vector3, checkFace: Boolean, facing: Boolean): Nullable[Double] = js.native
+    def getClosestFacetAtLocalCoordinates(x: Double, y: Double, z: Double, projected: Vector3, checkFace: Unit, facing: Boolean): Nullable[Double] = js.native
     
     /**
       * This function returns all of the particle systems in the scene that use the mesh as an emitter.
@@ -708,161 +654,45 @@ object abstractMeshMod {
       * @see https://doc.babylonjs.com/babylon101/intersect_collisions_-_mesh
       */
     def intersects(ray: Ray): PickingInfo = js.native
-    def intersects(
-      ray: Ray,
-      fastCheck: js.UndefOr[scala.Nothing],
-      trianglePredicate: js.UndefOr[scala.Nothing],
-      onlyBoundingInfo: js.UndefOr[scala.Nothing],
-      worldToUse: js.UndefOr[scala.Nothing],
-      skipBoundingInfo: Boolean
-    ): PickingInfo = js.native
-    def intersects(
-      ray: Ray,
-      fastCheck: js.UndefOr[scala.Nothing],
-      trianglePredicate: js.UndefOr[scala.Nothing],
-      onlyBoundingInfo: js.UndefOr[scala.Nothing],
-      worldToUse: Matrix
-    ): PickingInfo = js.native
-    def intersects(
-      ray: Ray,
-      fastCheck: js.UndefOr[scala.Nothing],
-      trianglePredicate: js.UndefOr[scala.Nothing],
-      onlyBoundingInfo: js.UndefOr[scala.Nothing],
-      worldToUse: Matrix,
-      skipBoundingInfo: Boolean
-    ): PickingInfo = js.native
-    def intersects(
-      ray: Ray,
-      fastCheck: js.UndefOr[scala.Nothing],
-      trianglePredicate: js.UndefOr[scala.Nothing],
-      onlyBoundingInfo: Boolean
-    ): PickingInfo = js.native
-    def intersects(
-      ray: Ray,
-      fastCheck: js.UndefOr[scala.Nothing],
-      trianglePredicate: js.UndefOr[scala.Nothing],
-      onlyBoundingInfo: Boolean,
-      worldToUse: js.UndefOr[scala.Nothing],
-      skipBoundingInfo: Boolean
-    ): PickingInfo = js.native
-    def intersects(
-      ray: Ray,
-      fastCheck: js.UndefOr[scala.Nothing],
-      trianglePredicate: js.UndefOr[scala.Nothing],
-      onlyBoundingInfo: Boolean,
-      worldToUse: Matrix
-    ): PickingInfo = js.native
-    def intersects(
-      ray: Ray,
-      fastCheck: js.UndefOr[scala.Nothing],
-      trianglePredicate: js.UndefOr[scala.Nothing],
-      onlyBoundingInfo: Boolean,
-      worldToUse: Matrix,
-      skipBoundingInfo: Boolean
-    ): PickingInfo = js.native
-    def intersects(ray: Ray, fastCheck: js.UndefOr[scala.Nothing], trianglePredicate: TrianglePickingPredicate): PickingInfo = js.native
-    def intersects(
-      ray: Ray,
-      fastCheck: js.UndefOr[scala.Nothing],
-      trianglePredicate: TrianglePickingPredicate,
-      onlyBoundingInfo: js.UndefOr[scala.Nothing],
-      worldToUse: js.UndefOr[scala.Nothing],
-      skipBoundingInfo: Boolean
-    ): PickingInfo = js.native
-    def intersects(
-      ray: Ray,
-      fastCheck: js.UndefOr[scala.Nothing],
-      trianglePredicate: TrianglePickingPredicate,
-      onlyBoundingInfo: js.UndefOr[scala.Nothing],
-      worldToUse: Matrix
-    ): PickingInfo = js.native
-    def intersects(
-      ray: Ray,
-      fastCheck: js.UndefOr[scala.Nothing],
-      trianglePredicate: TrianglePickingPredicate,
-      onlyBoundingInfo: js.UndefOr[scala.Nothing],
-      worldToUse: Matrix,
-      skipBoundingInfo: Boolean
-    ): PickingInfo = js.native
-    def intersects(
-      ray: Ray,
-      fastCheck: js.UndefOr[scala.Nothing],
-      trianglePredicate: TrianglePickingPredicate,
-      onlyBoundingInfo: Boolean
-    ): PickingInfo = js.native
-    def intersects(
-      ray: Ray,
-      fastCheck: js.UndefOr[scala.Nothing],
-      trianglePredicate: TrianglePickingPredicate,
-      onlyBoundingInfo: Boolean,
-      worldToUse: js.UndefOr[scala.Nothing],
-      skipBoundingInfo: Boolean
-    ): PickingInfo = js.native
-    def intersects(
-      ray: Ray,
-      fastCheck: js.UndefOr[scala.Nothing],
-      trianglePredicate: TrianglePickingPredicate,
-      onlyBoundingInfo: Boolean,
-      worldToUse: Matrix
-    ): PickingInfo = js.native
-    def intersects(
-      ray: Ray,
-      fastCheck: js.UndefOr[scala.Nothing],
-      trianglePredicate: TrianglePickingPredicate,
-      onlyBoundingInfo: Boolean,
-      worldToUse: Matrix,
-      skipBoundingInfo: Boolean
-    ): PickingInfo = js.native
     def intersects(ray: Ray, fastCheck: Boolean): PickingInfo = js.native
+    def intersects(ray: Ray, fastCheck: Boolean, trianglePredicate: Unit, onlyBoundingInfo: Boolean): PickingInfo = js.native
     def intersects(
       ray: Ray,
       fastCheck: Boolean,
-      trianglePredicate: js.UndefOr[scala.Nothing],
-      onlyBoundingInfo: js.UndefOr[scala.Nothing],
-      worldToUse: js.UndefOr[scala.Nothing],
+      trianglePredicate: Unit,
+      onlyBoundingInfo: Boolean,
+      worldToUse: Unit,
       skipBoundingInfo: Boolean
     ): PickingInfo = js.native
     def intersects(
       ray: Ray,
       fastCheck: Boolean,
-      trianglePredicate: js.UndefOr[scala.Nothing],
-      onlyBoundingInfo: js.UndefOr[scala.Nothing],
+      trianglePredicate: Unit,
+      onlyBoundingInfo: Boolean,
       worldToUse: Matrix
     ): PickingInfo = js.native
     def intersects(
       ray: Ray,
       fastCheck: Boolean,
-      trianglePredicate: js.UndefOr[scala.Nothing],
-      onlyBoundingInfo: js.UndefOr[scala.Nothing],
+      trianglePredicate: Unit,
+      onlyBoundingInfo: Boolean,
       worldToUse: Matrix,
       skipBoundingInfo: Boolean
     ): PickingInfo = js.native
     def intersects(
       ray: Ray,
       fastCheck: Boolean,
-      trianglePredicate: js.UndefOr[scala.Nothing],
-      onlyBoundingInfo: Boolean
-    ): PickingInfo = js.native
-    def intersects(
-      ray: Ray,
-      fastCheck: Boolean,
-      trianglePredicate: js.UndefOr[scala.Nothing],
-      onlyBoundingInfo: Boolean,
-      worldToUse: js.UndefOr[scala.Nothing],
+      trianglePredicate: Unit,
+      onlyBoundingInfo: Unit,
+      worldToUse: Unit,
       skipBoundingInfo: Boolean
     ): PickingInfo = js.native
+    def intersects(ray: Ray, fastCheck: Boolean, trianglePredicate: Unit, onlyBoundingInfo: Unit, worldToUse: Matrix): PickingInfo = js.native
     def intersects(
       ray: Ray,
       fastCheck: Boolean,
-      trianglePredicate: js.UndefOr[scala.Nothing],
-      onlyBoundingInfo: Boolean,
-      worldToUse: Matrix
-    ): PickingInfo = js.native
-    def intersects(
-      ray: Ray,
-      fastCheck: Boolean,
-      trianglePredicate: js.UndefOr[scala.Nothing],
-      onlyBoundingInfo: Boolean,
+      trianglePredicate: Unit,
+      onlyBoundingInfo: Unit,
       worldToUse: Matrix,
       skipBoundingInfo: Boolean
     ): PickingInfo = js.native
@@ -871,29 +701,6 @@ object abstractMeshMod {
       ray: Ray,
       fastCheck: Boolean,
       trianglePredicate: TrianglePickingPredicate,
-      onlyBoundingInfo: js.UndefOr[scala.Nothing],
-      worldToUse: js.UndefOr[scala.Nothing],
-      skipBoundingInfo: Boolean
-    ): PickingInfo = js.native
-    def intersects(
-      ray: Ray,
-      fastCheck: Boolean,
-      trianglePredicate: TrianglePickingPredicate,
-      onlyBoundingInfo: js.UndefOr[scala.Nothing],
-      worldToUse: Matrix
-    ): PickingInfo = js.native
-    def intersects(
-      ray: Ray,
-      fastCheck: Boolean,
-      trianglePredicate: TrianglePickingPredicate,
-      onlyBoundingInfo: js.UndefOr[scala.Nothing],
-      worldToUse: Matrix,
-      skipBoundingInfo: Boolean
-    ): PickingInfo = js.native
-    def intersects(
-      ray: Ray,
-      fastCheck: Boolean,
-      trianglePredicate: TrianglePickingPredicate,
       onlyBoundingInfo: Boolean
     ): PickingInfo = js.native
     def intersects(
@@ -901,7 +708,7 @@ object abstractMeshMod {
       fastCheck: Boolean,
       trianglePredicate: TrianglePickingPredicate,
       onlyBoundingInfo: Boolean,
-      worldToUse: js.UndefOr[scala.Nothing],
+      worldToUse: Unit,
       skipBoundingInfo: Boolean
     ): PickingInfo = js.native
     def intersects(
@@ -916,6 +723,112 @@ object abstractMeshMod {
       fastCheck: Boolean,
       trianglePredicate: TrianglePickingPredicate,
       onlyBoundingInfo: Boolean,
+      worldToUse: Matrix,
+      skipBoundingInfo: Boolean
+    ): PickingInfo = js.native
+    def intersects(
+      ray: Ray,
+      fastCheck: Boolean,
+      trianglePredicate: TrianglePickingPredicate,
+      onlyBoundingInfo: Unit,
+      worldToUse: Unit,
+      skipBoundingInfo: Boolean
+    ): PickingInfo = js.native
+    def intersects(
+      ray: Ray,
+      fastCheck: Boolean,
+      trianglePredicate: TrianglePickingPredicate,
+      onlyBoundingInfo: Unit,
+      worldToUse: Matrix
+    ): PickingInfo = js.native
+    def intersects(
+      ray: Ray,
+      fastCheck: Boolean,
+      trianglePredicate: TrianglePickingPredicate,
+      onlyBoundingInfo: Unit,
+      worldToUse: Matrix,
+      skipBoundingInfo: Boolean
+    ): PickingInfo = js.native
+    def intersects(ray: Ray, fastCheck: Unit, trianglePredicate: Unit, onlyBoundingInfo: Boolean): PickingInfo = js.native
+    def intersects(
+      ray: Ray,
+      fastCheck: Unit,
+      trianglePredicate: Unit,
+      onlyBoundingInfo: Boolean,
+      worldToUse: Unit,
+      skipBoundingInfo: Boolean
+    ): PickingInfo = js.native
+    def intersects(ray: Ray, fastCheck: Unit, trianglePredicate: Unit, onlyBoundingInfo: Boolean, worldToUse: Matrix): PickingInfo = js.native
+    def intersects(
+      ray: Ray,
+      fastCheck: Unit,
+      trianglePredicate: Unit,
+      onlyBoundingInfo: Boolean,
+      worldToUse: Matrix,
+      skipBoundingInfo: Boolean
+    ): PickingInfo = js.native
+    def intersects(
+      ray: Ray,
+      fastCheck: Unit,
+      trianglePredicate: Unit,
+      onlyBoundingInfo: Unit,
+      worldToUse: Unit,
+      skipBoundingInfo: Boolean
+    ): PickingInfo = js.native
+    def intersects(ray: Ray, fastCheck: Unit, trianglePredicate: Unit, onlyBoundingInfo: Unit, worldToUse: Matrix): PickingInfo = js.native
+    def intersects(
+      ray: Ray,
+      fastCheck: Unit,
+      trianglePredicate: Unit,
+      onlyBoundingInfo: Unit,
+      worldToUse: Matrix,
+      skipBoundingInfo: Boolean
+    ): PickingInfo = js.native
+    def intersects(ray: Ray, fastCheck: Unit, trianglePredicate: TrianglePickingPredicate): PickingInfo = js.native
+    def intersects(ray: Ray, fastCheck: Unit, trianglePredicate: TrianglePickingPredicate, onlyBoundingInfo: Boolean): PickingInfo = js.native
+    def intersects(
+      ray: Ray,
+      fastCheck: Unit,
+      trianglePredicate: TrianglePickingPredicate,
+      onlyBoundingInfo: Boolean,
+      worldToUse: Unit,
+      skipBoundingInfo: Boolean
+    ): PickingInfo = js.native
+    def intersects(
+      ray: Ray,
+      fastCheck: Unit,
+      trianglePredicate: TrianglePickingPredicate,
+      onlyBoundingInfo: Boolean,
+      worldToUse: Matrix
+    ): PickingInfo = js.native
+    def intersects(
+      ray: Ray,
+      fastCheck: Unit,
+      trianglePredicate: TrianglePickingPredicate,
+      onlyBoundingInfo: Boolean,
+      worldToUse: Matrix,
+      skipBoundingInfo: Boolean
+    ): PickingInfo = js.native
+    def intersects(
+      ray: Ray,
+      fastCheck: Unit,
+      trianglePredicate: TrianglePickingPredicate,
+      onlyBoundingInfo: Unit,
+      worldToUse: Unit,
+      skipBoundingInfo: Boolean
+    ): PickingInfo = js.native
+    def intersects(
+      ray: Ray,
+      fastCheck: Unit,
+      trianglePredicate: TrianglePickingPredicate,
+      onlyBoundingInfo: Unit,
+      worldToUse: Matrix
+    ): PickingInfo = js.native
+    def intersects(
+      ray: Ray,
+      fastCheck: Unit,
+      trianglePredicate: TrianglePickingPredicate,
+      onlyBoundingInfo: Unit,
       worldToUse: Matrix,
       skipBoundingInfo: Boolean
     ): PickingInfo = js.native
@@ -928,13 +841,13 @@ object abstractMeshMod {
       * @returns true if there is an intersection
       */
     def intersectsMesh(mesh: AbstractMesh): Boolean = js.native
-    def intersectsMesh(mesh: AbstractMesh, precise: js.UndefOr[scala.Nothing], includeDescendants: Boolean): Boolean = js.native
     def intersectsMesh(mesh: AbstractMesh, precise: Boolean): Boolean = js.native
     def intersectsMesh(mesh: AbstractMesh, precise: Boolean, includeDescendants: Boolean): Boolean = js.native
+    def intersectsMesh(mesh: AbstractMesh, precise: Unit, includeDescendants: Boolean): Boolean = js.native
     def intersectsMesh(mesh: SolidParticle): Boolean = js.native
-    def intersectsMesh(mesh: SolidParticle, precise: js.UndefOr[scala.Nothing], includeDescendants: Boolean): Boolean = js.native
     def intersectsMesh(mesh: SolidParticle, precise: Boolean): Boolean = js.native
     def intersectsMesh(mesh: SolidParticle, precise: Boolean, includeDescendants: Boolean): Boolean = js.native
+    def intersectsMesh(mesh: SolidParticle, precise: Unit, includeDescendants: Boolean): Boolean = js.native
     
     /**
       * Returns true if the passed point (Vector3) is inside the mesh bounding box
@@ -959,10 +872,27 @@ object abstractMeshMod {
     var isBlocker: Boolean = js.native
     
     /**
+      * Checks if a cullable object (mesh...) is in the camera frustum
+      * Unlike isInFrustum this cheks the full bounding box
+      * @param frustumPlanes Camera near/planes
+      * @returns true if the object is in frustum otherwise false
+      */
+    /* CompleteClass */
+    override def isCompletelyInFrustum(frustumPlanes: js.Array[Plane]): Boolean = js.native
+    
+    /**
       * gets a boolean indicating if facetData is enabled
       * @see https://doc.babylonjs.com/how_to/how_to_use_facetdata#what-is-a-mesh-facet
       */
     def isFacetDataEnabled: Boolean = js.native
+    
+    /**
+      * Checks if the object or part of the object is in the frustum
+      * @param frustumPlanes Camera near/planes
+      * @returns true if the object is in frustum otherwise false
+      */
+    /* CompleteClass */
+    override def isInFrustum(frustumPlanes: js.Array[Plane]): Boolean = js.native
     
     /**
       * Gets or sets whether the mesh is occluded or not, it is used also to set the intial state of the mesh to be occluded or not
@@ -1216,8 +1146,8 @@ object abstractMeshMod {
       * @returns the current mesh
       */
     def setVerticesData(kind: String, data: FloatArray): AbstractMesh = js.native
-    def setVerticesData(kind: String, data: FloatArray, updatable: js.UndefOr[scala.Nothing], stride: Double): AbstractMesh = js.native
     def setVerticesData(kind: String, data: FloatArray, updatable: Boolean, stride: Double): AbstractMesh = js.native
+    def setVerticesData(kind: String, data: FloatArray, updatable: Unit, stride: Double): AbstractMesh = js.native
     
     /**
       * Gets or sets a boolean indicating if the bounding box must be rendered as well (false by default)
@@ -1271,9 +1201,9 @@ object abstractMeshMod {
       * @returns the current mesh
       */
     def updateIndices(indices: IndicesArray): AbstractMesh = js.native
-    def updateIndices(indices: IndicesArray, offset: js.UndefOr[scala.Nothing], gpuMemoryOnly: Boolean): AbstractMesh = js.native
     def updateIndices(indices: IndicesArray, offset: Double): AbstractMesh = js.native
     def updateIndices(indices: IndicesArray, offset: Double, gpuMemoryOnly: Boolean): AbstractMesh = js.native
+    def updateIndices(indices: IndicesArray, offset: Unit, gpuMemoryOnly: Boolean): AbstractMesh = js.native
     
     /** Gets a boolean indicating if this mesh has skinning data and an attached skeleton */
     def useBones: Boolean = js.native
@@ -1357,82 +1287,75 @@ object abstractMeshMod {
     @JSImport("babylonjs/Meshes/abstractMesh", "AbstractMesh.OCCLUSION_ALGORITHM_TYPE_ACCURATE")
     @js.native
     def OCCLUSION_ALGORITHM_TYPE_ACCURATE: Double = js.native
-    @scala.inline
-    def OCCLUSION_ALGORITHM_TYPE_ACCURATE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_ALGORITHM_TYPE_ACCURATE")(x.asInstanceOf[js.Any])
+    inline def OCCLUSION_ALGORITHM_TYPE_ACCURATE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_ALGORITHM_TYPE_ACCURATE")(x.asInstanceOf[js.Any])
     
     /** Use a conservative occlusion algorithm */
     @JSImport("babylonjs/Meshes/abstractMesh", "AbstractMesh.OCCLUSION_ALGORITHM_TYPE_CONSERVATIVE")
     @js.native
     def OCCLUSION_ALGORITHM_TYPE_CONSERVATIVE: Double = js.native
-    @scala.inline
-    def OCCLUSION_ALGORITHM_TYPE_CONSERVATIVE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_ALGORITHM_TYPE_CONSERVATIVE")(x.asInstanceOf[js.Any])
+    inline def OCCLUSION_ALGORITHM_TYPE_CONSERVATIVE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_ALGORITHM_TYPE_CONSERVATIVE")(x.asInstanceOf[js.Any])
     
     /** No occlusion */
     @JSImport("babylonjs/Meshes/abstractMesh", "AbstractMesh.OCCLUSION_TYPE_NONE")
     @js.native
     def OCCLUSION_TYPE_NONE: Double = js.native
-    @scala.inline
-    def OCCLUSION_TYPE_NONE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_TYPE_NONE")(x.asInstanceOf[js.Any])
+    inline def OCCLUSION_TYPE_NONE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_TYPE_NONE")(x.asInstanceOf[js.Any])
     
     /** Occlusion set to optimisitic */
     @JSImport("babylonjs/Meshes/abstractMesh", "AbstractMesh.OCCLUSION_TYPE_OPTIMISTIC")
     @js.native
     def OCCLUSION_TYPE_OPTIMISTIC: Double = js.native
-    @scala.inline
-    def OCCLUSION_TYPE_OPTIMISTIC_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_TYPE_OPTIMISTIC")(x.asInstanceOf[js.Any])
+    inline def OCCLUSION_TYPE_OPTIMISTIC_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_TYPE_OPTIMISTIC")(x.asInstanceOf[js.Any])
     
     /** Occlusion set to strict */
     @JSImport("babylonjs/Meshes/abstractMesh", "AbstractMesh.OCCLUSION_TYPE_STRICT")
     @js.native
     def OCCLUSION_TYPE_STRICT: Double = js.native
-    @scala.inline
-    def OCCLUSION_TYPE_STRICT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_TYPE_STRICT")(x.asInstanceOf[js.Any])
+    inline def OCCLUSION_TYPE_STRICT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_TYPE_STRICT")(x.asInstanceOf[js.Any])
   }
   
   /** @hidden */
-  @js.native
   trait FacetDataStorage extends StObject {
     
-    var bbSize: Vector3 = js.native
+    var bbSize: Vector3
     
-    var depthSortedFacets: js.Array[Ind] = js.native
+    var depthSortedFacets: js.Array[Ind]
     
-    var depthSortedIndices: IndicesArray = js.native
+    var depthSortedIndices: IndicesArray
     
-    var facetDataEnabled: Boolean = js.native
+    var facetDataEnabled: Boolean
     
-    var facetDepthSort: Boolean = js.native
+    var facetDepthSort: Boolean
     
-    var facetDepthSortEnabled: Boolean = js.native
+    var facetDepthSortEnabled: Boolean
     
-    var facetDepthSortFrom: Vector3 = js.native
+    var facetDepthSortFrom: Vector3
     
-    def facetDepthSortFunction(f1: Ind, f2: Ind): Double = js.native
+    def facetDepthSortFunction(f1: Ind, f2: Ind): Double
     
-    var facetDepthSortOrigin: Vector3 = js.native
+    var facetDepthSortOrigin: Vector3
     
-    var facetNb: Double = js.native
+    var facetNb: Double
     
-    var facetNormals: js.Array[Vector3] = js.native
+    var facetNormals: js.Array[Vector3]
     
-    var facetParameters: js.Any = js.native
+    var facetParameters: js.Any
     
-    var facetPartitioning: js.Array[js.Array[Double]] = js.native
+    var facetPartitioning: js.Array[js.Array[Double]]
     
-    var facetPositions: js.Array[Vector3] = js.native
+    var facetPositions: js.Array[Vector3]
     
-    var invertedMatrix: Matrix = js.native
+    var invertedMatrix: Matrix
     
-    var partitioningBBoxRatio: Double = js.native
+    var partitioningBBoxRatio: Double
     
-    var partitioningSubdivisions: Double = js.native
+    var partitioningSubdivisions: Double
     
-    var subDiv: X = js.native
+    var subDiv: X
   }
   object FacetDataStorage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bbSize: Vector3,
       depthSortedFacets: js.Array[Ind],
       depthSortedIndices: IndicesArray,
@@ -1456,124 +1379,98 @@ object abstractMeshMod {
       __obj.asInstanceOf[FacetDataStorage]
     }
     
-    @scala.inline
-    implicit class FacetDataStorageMutableBuilder[Self <: FacetDataStorage] (val x: Self) extends AnyVal {
+    extension [Self <: FacetDataStorage](x: Self) {
       
-      @scala.inline
-      def setBbSize(value: Vector3): Self = StObject.set(x, "bbSize", value.asInstanceOf[js.Any])
+      inline def setBbSize(value: Vector3): Self = StObject.set(x, "bbSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepthSortedFacets(value: js.Array[Ind]): Self = StObject.set(x, "depthSortedFacets", value.asInstanceOf[js.Any])
+      inline def setDepthSortedFacets(value: js.Array[Ind]): Self = StObject.set(x, "depthSortedFacets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepthSortedFacetsVarargs(value: Ind*): Self = StObject.set(x, "depthSortedFacets", js.Array(value :_*))
+      inline def setDepthSortedFacetsVarargs(value: Ind*): Self = StObject.set(x, "depthSortedFacets", js.Array(value :_*))
       
-      @scala.inline
-      def setDepthSortedIndices(value: IndicesArray): Self = StObject.set(x, "depthSortedIndices", value.asInstanceOf[js.Any])
+      inline def setDepthSortedIndices(value: IndicesArray): Self = StObject.set(x, "depthSortedIndices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepthSortedIndicesVarargs(value: Double*): Self = StObject.set(x, "depthSortedIndices", js.Array(value :_*))
+      inline def setDepthSortedIndicesVarargs(value: Double*): Self = StObject.set(x, "depthSortedIndices", js.Array(value :_*))
       
-      @scala.inline
-      def setFacetDataEnabled(value: Boolean): Self = StObject.set(x, "facetDataEnabled", value.asInstanceOf[js.Any])
+      inline def setFacetDataEnabled(value: Boolean): Self = StObject.set(x, "facetDataEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacetDepthSort(value: Boolean): Self = StObject.set(x, "facetDepthSort", value.asInstanceOf[js.Any])
+      inline def setFacetDepthSort(value: Boolean): Self = StObject.set(x, "facetDepthSort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacetDepthSortEnabled(value: Boolean): Self = StObject.set(x, "facetDepthSortEnabled", value.asInstanceOf[js.Any])
+      inline def setFacetDepthSortEnabled(value: Boolean): Self = StObject.set(x, "facetDepthSortEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacetDepthSortFrom(value: Vector3): Self = StObject.set(x, "facetDepthSortFrom", value.asInstanceOf[js.Any])
+      inline def setFacetDepthSortFrom(value: Vector3): Self = StObject.set(x, "facetDepthSortFrom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacetDepthSortFunction(value: (Ind, Ind) => Double): Self = StObject.set(x, "facetDepthSortFunction", js.Any.fromFunction2(value))
+      inline def setFacetDepthSortFunction(value: (Ind, Ind) => Double): Self = StObject.set(x, "facetDepthSortFunction", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFacetDepthSortOrigin(value: Vector3): Self = StObject.set(x, "facetDepthSortOrigin", value.asInstanceOf[js.Any])
+      inline def setFacetDepthSortOrigin(value: Vector3): Self = StObject.set(x, "facetDepthSortOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacetNb(value: Double): Self = StObject.set(x, "facetNb", value.asInstanceOf[js.Any])
+      inline def setFacetNb(value: Double): Self = StObject.set(x, "facetNb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacetNormals(value: js.Array[Vector3]): Self = StObject.set(x, "facetNormals", value.asInstanceOf[js.Any])
+      inline def setFacetNormals(value: js.Array[Vector3]): Self = StObject.set(x, "facetNormals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacetNormalsVarargs(value: Vector3*): Self = StObject.set(x, "facetNormals", js.Array(value :_*))
+      inline def setFacetNormalsVarargs(value: Vector3*): Self = StObject.set(x, "facetNormals", js.Array(value :_*))
       
-      @scala.inline
-      def setFacetParameters(value: js.Any): Self = StObject.set(x, "facetParameters", value.asInstanceOf[js.Any])
+      inline def setFacetParameters(value: js.Any): Self = StObject.set(x, "facetParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacetPartitioning(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "facetPartitioning", value.asInstanceOf[js.Any])
+      inline def setFacetPartitioning(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "facetPartitioning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacetPartitioningVarargs(value: js.Array[Double]*): Self = StObject.set(x, "facetPartitioning", js.Array(value :_*))
+      inline def setFacetPartitioningVarargs(value: js.Array[Double]*): Self = StObject.set(x, "facetPartitioning", js.Array(value :_*))
       
-      @scala.inline
-      def setFacetPositions(value: js.Array[Vector3]): Self = StObject.set(x, "facetPositions", value.asInstanceOf[js.Any])
+      inline def setFacetPositions(value: js.Array[Vector3]): Self = StObject.set(x, "facetPositions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacetPositionsVarargs(value: Vector3*): Self = StObject.set(x, "facetPositions", js.Array(value :_*))
+      inline def setFacetPositionsVarargs(value: Vector3*): Self = StObject.set(x, "facetPositions", js.Array(value :_*))
       
-      @scala.inline
-      def setInvertedMatrix(value: Matrix): Self = StObject.set(x, "invertedMatrix", value.asInstanceOf[js.Any])
+      inline def setInvertedMatrix(value: Matrix): Self = StObject.set(x, "invertedMatrix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartitioningBBoxRatio(value: Double): Self = StObject.set(x, "partitioningBBoxRatio", value.asInstanceOf[js.Any])
+      inline def setPartitioningBBoxRatio(value: Double): Self = StObject.set(x, "partitioningBBoxRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartitioningSubdivisions(value: Double): Self = StObject.set(x, "partitioningSubdivisions", value.asInstanceOf[js.Any])
+      inline def setPartitioningSubdivisions(value: Double): Self = StObject.set(x, "partitioningSubdivisions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubDiv(value: X): Self = StObject.set(x, "subDiv", value.asInstanceOf[js.Any])
+      inline def setSubDiv(value: X): Self = StObject.set(x, "subDiv", value.asInstanceOf[js.Any])
     }
   }
   
   /**
     * @hidden
     **/
-  @js.native
   trait InternalAbstractMeshDataInfo extends StObject {
     
-    var _actAsRegularMesh: Boolean = js.native
+    var _actAsRegularMesh: Boolean
     
-    var _applyFog: Boolean = js.native
+    var _applyFog: Boolean
     
-    var _computeBonesUsingShaders: Boolean = js.native
+    var _computeBonesUsingShaders: Boolean
     
-    var _currentLOD: Nullable[AbstractMesh] = js.native
+    var _currentLOD: Nullable[AbstractMesh]
     
-    var _currentLODIsUpToDate: Boolean = js.native
+    var _currentLODIsUpToDate: Boolean
     
-    var _facetData: FacetDataStorage = js.native
+    var _facetData: FacetDataStorage
     
-    var _hasVertexAlpha: Boolean = js.native
+    var _hasVertexAlpha: Boolean
     
-    var _isActive: Boolean = js.native
+    var _isActive: Boolean
     
-    var _isActiveIntermediate: Boolean = js.native
+    var _isActiveIntermediate: Boolean
     
-    var _layerMask: Double = js.native
+    var _layerMask: Double
     
-    var _numBoneInfluencers: Double = js.native
+    var _numBoneInfluencers: Double
     
-    var _onlyForInstances: Boolean = js.native
+    var _onlyForInstances: Boolean
     
-    var _onlyForInstancesIntermediate: Boolean = js.native
+    var _onlyForInstancesIntermediate: Boolean
     
-    var _receiveShadows: Boolean = js.native
+    var _receiveShadows: Boolean
     
-    var _skeleton: Nullable[Skeleton] = js.native
+    var _skeleton: Nullable[Skeleton]
     
-    var _useVertexColors: Boolean = js.native
+    var _useVertexColors: Boolean
     
-    var _visibility: Double = js.native
+    var _visibility: Double
   }
   object InternalAbstractMeshDataInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _actAsRegularMesh: Boolean,
       _applyFog: Boolean,
       _computeBonesUsingShaders: Boolean,
@@ -1590,69 +1487,49 @@ object abstractMeshMod {
       _useVertexColors: Boolean,
       _visibility: Double
     ): InternalAbstractMeshDataInfo = {
-      val __obj = js.Dynamic.literal(_actAsRegularMesh = _actAsRegularMesh.asInstanceOf[js.Any], _applyFog = _applyFog.asInstanceOf[js.Any], _computeBonesUsingShaders = _computeBonesUsingShaders.asInstanceOf[js.Any], _currentLODIsUpToDate = _currentLODIsUpToDate.asInstanceOf[js.Any], _facetData = _facetData.asInstanceOf[js.Any], _hasVertexAlpha = _hasVertexAlpha.asInstanceOf[js.Any], _isActive = _isActive.asInstanceOf[js.Any], _isActiveIntermediate = _isActiveIntermediate.asInstanceOf[js.Any], _layerMask = _layerMask.asInstanceOf[js.Any], _numBoneInfluencers = _numBoneInfluencers.asInstanceOf[js.Any], _onlyForInstances = _onlyForInstances.asInstanceOf[js.Any], _onlyForInstancesIntermediate = _onlyForInstancesIntermediate.asInstanceOf[js.Any], _receiveShadows = _receiveShadows.asInstanceOf[js.Any], _useVertexColors = _useVertexColors.asInstanceOf[js.Any], _visibility = _visibility.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(_actAsRegularMesh = _actAsRegularMesh.asInstanceOf[js.Any], _applyFog = _applyFog.asInstanceOf[js.Any], _computeBonesUsingShaders = _computeBonesUsingShaders.asInstanceOf[js.Any], _currentLODIsUpToDate = _currentLODIsUpToDate.asInstanceOf[js.Any], _facetData = _facetData.asInstanceOf[js.Any], _hasVertexAlpha = _hasVertexAlpha.asInstanceOf[js.Any], _isActive = _isActive.asInstanceOf[js.Any], _isActiveIntermediate = _isActiveIntermediate.asInstanceOf[js.Any], _layerMask = _layerMask.asInstanceOf[js.Any], _numBoneInfluencers = _numBoneInfluencers.asInstanceOf[js.Any], _onlyForInstances = _onlyForInstances.asInstanceOf[js.Any], _onlyForInstancesIntermediate = _onlyForInstancesIntermediate.asInstanceOf[js.Any], _receiveShadows = _receiveShadows.asInstanceOf[js.Any], _useVertexColors = _useVertexColors.asInstanceOf[js.Any], _visibility = _visibility.asInstanceOf[js.Any], _currentLOD = null, _skeleton = null)
       __obj.asInstanceOf[InternalAbstractMeshDataInfo]
     }
     
-    @scala.inline
-    implicit class InternalAbstractMeshDataInfoMutableBuilder[Self <: InternalAbstractMeshDataInfo] (val x: Self) extends AnyVal {
+    extension [Self <: InternalAbstractMeshDataInfo](x: Self) {
       
-      @scala.inline
-      def set_actAsRegularMesh(value: Boolean): Self = StObject.set(x, "_actAsRegularMesh", value.asInstanceOf[js.Any])
+      inline def set_actAsRegularMesh(value: Boolean): Self = StObject.set(x, "_actAsRegularMesh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_applyFog(value: Boolean): Self = StObject.set(x, "_applyFog", value.asInstanceOf[js.Any])
+      inline def set_applyFog(value: Boolean): Self = StObject.set(x, "_applyFog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_computeBonesUsingShaders(value: Boolean): Self = StObject.set(x, "_computeBonesUsingShaders", value.asInstanceOf[js.Any])
+      inline def set_computeBonesUsingShaders(value: Boolean): Self = StObject.set(x, "_computeBonesUsingShaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_currentLOD(value: Nullable[AbstractMesh]): Self = StObject.set(x, "_currentLOD", value.asInstanceOf[js.Any])
+      inline def set_currentLOD(value: Nullable[AbstractMesh]): Self = StObject.set(x, "_currentLOD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_currentLODIsUpToDate(value: Boolean): Self = StObject.set(x, "_currentLODIsUpToDate", value.asInstanceOf[js.Any])
+      inline def set_currentLODIsUpToDate(value: Boolean): Self = StObject.set(x, "_currentLODIsUpToDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_currentLODNull: Self = StObject.set(x, "_currentLOD", null)
+      inline def set_currentLODNull: Self = StObject.set(x, "_currentLOD", null)
       
-      @scala.inline
-      def set_facetData(value: FacetDataStorage): Self = StObject.set(x, "_facetData", value.asInstanceOf[js.Any])
+      inline def set_facetData(value: FacetDataStorage): Self = StObject.set(x, "_facetData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_hasVertexAlpha(value: Boolean): Self = StObject.set(x, "_hasVertexAlpha", value.asInstanceOf[js.Any])
+      inline def set_hasVertexAlpha(value: Boolean): Self = StObject.set(x, "_hasVertexAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_isActive(value: Boolean): Self = StObject.set(x, "_isActive", value.asInstanceOf[js.Any])
+      inline def set_isActive(value: Boolean): Self = StObject.set(x, "_isActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_isActiveIntermediate(value: Boolean): Self = StObject.set(x, "_isActiveIntermediate", value.asInstanceOf[js.Any])
+      inline def set_isActiveIntermediate(value: Boolean): Self = StObject.set(x, "_isActiveIntermediate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_layerMask(value: Double): Self = StObject.set(x, "_layerMask", value.asInstanceOf[js.Any])
+      inline def set_layerMask(value: Double): Self = StObject.set(x, "_layerMask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_numBoneInfluencers(value: Double): Self = StObject.set(x, "_numBoneInfluencers", value.asInstanceOf[js.Any])
+      inline def set_numBoneInfluencers(value: Double): Self = StObject.set(x, "_numBoneInfluencers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_onlyForInstances(value: Boolean): Self = StObject.set(x, "_onlyForInstances", value.asInstanceOf[js.Any])
+      inline def set_onlyForInstances(value: Boolean): Self = StObject.set(x, "_onlyForInstances", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_onlyForInstancesIntermediate(value: Boolean): Self = StObject.set(x, "_onlyForInstancesIntermediate", value.asInstanceOf[js.Any])
+      inline def set_onlyForInstancesIntermediate(value: Boolean): Self = StObject.set(x, "_onlyForInstancesIntermediate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_receiveShadows(value: Boolean): Self = StObject.set(x, "_receiveShadows", value.asInstanceOf[js.Any])
+      inline def set_receiveShadows(value: Boolean): Self = StObject.set(x, "_receiveShadows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_skeleton(value: Nullable[Skeleton]): Self = StObject.set(x, "_skeleton", value.asInstanceOf[js.Any])
+      inline def set_skeleton(value: Nullable[Skeleton]): Self = StObject.set(x, "_skeleton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_skeletonNull: Self = StObject.set(x, "_skeleton", null)
+      inline def set_skeletonNull: Self = StObject.set(x, "_skeleton", null)
       
-      @scala.inline
-      def set_useVertexColors(value: Boolean): Self = StObject.set(x, "_useVertexColors", value.asInstanceOf[js.Any])
+      inline def set_useVertexColors(value: Boolean): Self = StObject.set(x, "_useVertexColors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_visibility(value: Double): Self = StObject.set(x, "_visibility", value.asInstanceOf[js.Any])
+      inline def set_visibility(value: Double): Self = StObject.set(x, "_visibility", value.asInstanceOf[js.Any])
     }
   }
 }

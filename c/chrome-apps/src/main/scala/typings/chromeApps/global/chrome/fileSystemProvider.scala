@@ -873,11 +873,4 @@ object fileSystemProvider {
     */
   inline def unmount(options: UnmountOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unmount")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def unmount(options: UnmountOptions, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unmount")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  /**
-    * Internal interfaces, not for use
-    * @private
-    * @internal
-    */
-  object internal
 }

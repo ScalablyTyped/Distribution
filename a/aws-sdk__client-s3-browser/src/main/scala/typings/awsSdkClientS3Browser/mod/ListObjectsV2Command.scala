@@ -1,5 +1,6 @@
 package typings.awsSdkClientS3Browser.mod
 
+import typings.awsSdkClientS3Browser.typesListObjectsV2InputMod.ListObjectsV2Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class ListObjectsV2Command protected ()
   extends typings.awsSdkClientS3Browser.listObjectsV2CommandMod.ListObjectsV2Command {
-  def this(input: typings.awsSdkClientS3Browser.typesListObjectsV2InputMod.ListObjectsV2Input) = this()
+  def this(input: ListObjectsV2Input) = this()
 }

@@ -8,23 +8,55 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object depthRendererSceneComponentMod {
   
   @JSImport("babylonjs/Rendering/depthRendererSceneComponent", "DepthRendererSceneComponent")
   @js.native
-  class DepthRendererSceneComponent protected () extends ISceneComponent {
+  class DepthRendererSceneComponent protected ()
+    extends StObject
+       with ISceneComponent {
     /**
       * Creates a new instance of the component for the given scene
       * @param scene Defines the scene to register the component in
       */
     def this(scene: Scene) = this()
     
-    var _gatherActiveCameraRenderTargets: js.Any = js.native
+    /* private */ var _gatherActiveCameraRenderTargets: js.Any = js.native
     
-    var _gatherRenderTargets: js.Any = js.native
+    /* private */ var _gatherRenderTargets: js.Any = js.native
+    
+    /**
+      * Disposes the component and the associated ressources.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * The name of the component. Each component must have a unique name.
+      */
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /**
+      * Rebuilds the elements related to this component in case of
+      * context lost for instance.
+      */
+    /* CompleteClass */
+    override def rebuild(): Unit = js.native
+    
+    /**
+      * Register the component to one instance of a scene.
+      */
+    /* CompleteClass */
+    override def register(): Unit = js.native
+    
+    /**
+      * The scene the component belongs to.
+      */
+    /* CompleteClass */
+    var scene: Scene = js.native
   }
   
   /* augmented module */
@@ -51,14 +83,13 @@ object depthRendererSceneComponentMod {
         * @returns the created depth renderer
         */
       def enableDepthRenderer(): DepthRenderer = js.native
-      def enableDepthRenderer(
-        camera: js.UndefOr[Nullable[Camera]],
-        storeNonLinearDepth: js.UndefOr[scala.Nothing],
-        force32bitsFloat: Boolean
-      ): DepthRenderer = js.native
-      def enableDepthRenderer(camera: js.UndefOr[Nullable[Camera]], storeNonLinearDepth: Boolean): DepthRenderer = js.native
-      def enableDepthRenderer(camera: js.UndefOr[Nullable[Camera]], storeNonLinearDepth: Boolean, force32bitsFloat: Boolean): DepthRenderer = js.native
+      def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Boolean): DepthRenderer = js.native
+      def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Boolean, force32bitsFloat: Boolean): DepthRenderer = js.native
+      def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Unit, force32bitsFloat: Boolean): DepthRenderer = js.native
       def enableDepthRenderer(camera: Nullable[Camera]): DepthRenderer = js.native
+      def enableDepthRenderer(camera: Nullable[Camera], storeNonLinearDepth: Boolean): DepthRenderer = js.native
+      def enableDepthRenderer(camera: Nullable[Camera], storeNonLinearDepth: Boolean, force32bitsFloat: Boolean): DepthRenderer = js.native
+      def enableDepthRenderer(camera: Nullable[Camera], storeNonLinearDepth: Unit, force32bitsFloat: Boolean): DepthRenderer = js.native
     }
   }
 }

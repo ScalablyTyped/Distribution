@@ -2,45 +2,38 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IWebRequest extends StObject {
   
   /**
     * Returns client's response url
     */
-  var responseURL: String = js.native
+  var responseURL: String
   
   /**
     * Returns client's status
     */
-  var status: Double = js.native
+  var status: Double
   
   /**
     * Returns client's status as a text
     */
-  var statusText: String = js.native
+  var statusText: String
 }
 object IWebRequest {
   
-  @scala.inline
-  def apply(responseURL: String, status: Double, statusText: String): IWebRequest = {
+  inline def apply(responseURL: String, status: Double, statusText: String): IWebRequest = {
     val __obj = js.Dynamic.literal(responseURL = responseURL.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWebRequest]
   }
   
-  @scala.inline
-  implicit class IWebRequestMutableBuilder[Self <: IWebRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IWebRequest](x: Self) {
     
-    @scala.inline
-    def setResponseURL(value: String): Self = StObject.set(x, "responseURL", value.asInstanceOf[js.Any])
+    inline def setResponseURL(value: String): Self = StObject.set(x, "responseURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+    inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
   }
 }

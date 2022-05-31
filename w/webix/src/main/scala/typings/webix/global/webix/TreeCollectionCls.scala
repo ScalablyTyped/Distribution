@@ -1,6 +1,6 @@
 package typings.webix.global.webix
 
-import typings.webix.webix.TreeCollectionConfig
+import typings.webix.mod.TreeCollectionConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class TreeCollectionCls ()
   extends StObject
-     with typings.webix.webix.TreeCollection {
+     with typings.webix.mod.TreeCollection {
   def this(config: TreeCollectionConfig) = this()
 }

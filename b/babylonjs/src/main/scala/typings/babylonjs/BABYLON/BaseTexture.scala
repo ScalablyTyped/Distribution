@@ -3,30 +3,30 @@ package typings.babylonjs.BABYLON
 import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BaseTexture
-  extends ThinTexture
+  extends StObject
+     with ThinTexture
      with IAnimatable {
   
-  var _coordinatesMode: Double = js.native
+  /* protected */ var _coordinatesMode: Double = js.native
   
-  var _gammaSpace: js.Any = js.native
+  /* private */ var _gammaSpace: js.Any = js.native
   
   /** @hidden */
   /* protected */ def _getEngine(): Nullable[ThinEngine] = js.native
   
   /** @hidden */
   def _getFromCache(url: Nullable[String], noMipmap: Boolean): Nullable[InternalTexture] = js.native
-  def _getFromCache(url: Nullable[String], noMipmap: Boolean, sampling: js.UndefOr[scala.Nothing], invertY: Boolean): Nullable[InternalTexture] = js.native
   def _getFromCache(url: Nullable[String], noMipmap: Boolean, sampling: Double): Nullable[InternalTexture] = js.native
   def _getFromCache(url: Nullable[String], noMipmap: Boolean, sampling: Double, invertY: Boolean): Nullable[InternalTexture] = js.native
+  def _getFromCache(url: Nullable[String], noMipmap: Boolean, sampling: Unit, invertY: Boolean): Nullable[InternalTexture] = js.native
   
-  var _hasAlpha: js.Any = js.native
+  /* private */ var _hasAlpha: js.Any = js.native
   
-  var _isCube: js.Any = js.native
+  /* private */ var _isCube: js.Any = js.native
   
   /** @hidden */
   def _lodTextureHigh: Nullable[BaseTexture] = js.native
@@ -42,7 +42,7 @@ trait BaseTexture
     */
   /* protected */ def _markAllSubMeshesAsTexturesDirty(): Unit = js.native
   
-  var _onDisposeObserver: js.Any = js.native
+  /* private */ var _onDisposeObserver: js.Any = js.native
   
   /** @hidden */
   var _prefiltered: Boolean = js.native
@@ -50,9 +50,9 @@ trait BaseTexture
   /** @hidden */
   def _rebuild(): Unit = js.native
   
-  var _scene: Nullable[Scene] = js.native
+  /* protected */ var _scene: Nullable[Scene] = js.native
   
-  var _uid: js.Any = js.native
+  /* private */ var _uid: js.Any = js.native
   
   /**
     * Define the list of animation attached to the texture.
@@ -237,17 +237,13 @@ trait BaseTexture
     * @returns The Array buffer containing the pixels data.
     */
   def readPixels(): Nullable[ArrayBufferView] = js.native
-  def readPixels(
-    faceIndex: js.UndefOr[scala.Nothing],
-    level: js.UndefOr[scala.Nothing],
-    buffer: Nullable[ArrayBufferView]
-  ): Nullable[ArrayBufferView] = js.native
-  def readPixels(faceIndex: js.UndefOr[scala.Nothing], level: Double): Nullable[ArrayBufferView] = js.native
-  def readPixels(faceIndex: js.UndefOr[scala.Nothing], level: Double, buffer: Nullable[ArrayBufferView]): Nullable[ArrayBufferView] = js.native
   def readPixels(faceIndex: Double): Nullable[ArrayBufferView] = js.native
-  def readPixels(faceIndex: Double, level: js.UndefOr[scala.Nothing], buffer: Nullable[ArrayBufferView]): Nullable[ArrayBufferView] = js.native
   def readPixels(faceIndex: Double, level: Double): Nullable[ArrayBufferView] = js.native
   def readPixels(faceIndex: Double, level: Double, buffer: Nullable[ArrayBufferView]): Nullable[ArrayBufferView] = js.native
+  def readPixels(faceIndex: Double, level: Unit, buffer: Nullable[ArrayBufferView]): Nullable[ArrayBufferView] = js.native
+  def readPixels(faceIndex: Unit, level: Double): Nullable[ArrayBufferView] = js.native
+  def readPixels(faceIndex: Unit, level: Double, buffer: Nullable[ArrayBufferView]): Nullable[ArrayBufferView] = js.native
+  def readPixels(faceIndex: Unit, level: Unit, buffer: Nullable[ArrayBufferView]): Nullable[ArrayBufferView] = js.native
   
   /**
     * For internal use only. Please do not use.

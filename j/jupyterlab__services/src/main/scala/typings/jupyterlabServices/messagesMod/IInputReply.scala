@@ -1,28 +1,24 @@
 package typings.jupyterlabServices.messagesMod
 
-import typings.jupyterlabServices.jupyterlabServicesStrings.ok
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IInputReply extends IReplyOkContent {
+trait IInputReply
+  extends StObject
+     with IReplyOkContent {
   
-  var value: String = js.native
+  var value: String
 }
 object IInputReply {
   
-  @scala.inline
-  def apply(status: ok, value: String): IInputReply = {
-    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  inline def apply(value: String): IInputReply = {
+    val __obj = js.Dynamic.literal(status = "ok", value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInputReply]
   }
   
-  @scala.inline
-  implicit class IInputReplyMutableBuilder[Self <: IInputReply] (val x: Self) extends AnyVal {
+  extension [Self <: IInputReply](x: Self) {
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

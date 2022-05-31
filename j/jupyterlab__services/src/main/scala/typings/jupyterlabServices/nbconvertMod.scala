@@ -7,7 +7,6 @@ import typings.jupyterlabServices.nbconvertMod.NbConvertManager.IOptions
 import typings.jupyterlabServices.serverconnectionMod.ServerConnection.ISettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nbconvertMod {
@@ -43,30 +42,25 @@ object nbconvertMod {
     /**
       * The instantiation options for a setting manager.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The server settings used to make API requests.
         */
-      var serverSettings: js.UndefOr[ISettings] = js.native
+      var serverSettings: js.UndefOr[ISettings] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): IOptions = {
+      inline def apply(): IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setServerSettings(value: ISettings): Self = StObject.set(x, "serverSettings", value.asInstanceOf[js.Any])
+        inline def setServerSettings(value: ISettings): Self = StObject.set(x, "serverSettings", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServerSettingsUndefined: Self = StObject.set(x, "serverSettings", js.undefined)
+        inline def setServerSettingsUndefined: Self = StObject.set(x, "serverSettings", js.undefined)
       }
     }
   }

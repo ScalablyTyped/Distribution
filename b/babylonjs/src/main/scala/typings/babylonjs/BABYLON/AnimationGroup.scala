@@ -2,39 +2,40 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnimationGroup extends IDisposable {
+trait AnimationGroup
+  extends StObject
+     with IDisposable {
   
-  var _animatables: js.Any = js.native
+  /* private */ var _animatables: js.Any = js.native
   
-  var _animationLoopCount: js.Any = js.native
+  /* private */ var _animationLoopCount: js.Any = js.native
   
-  var _animationLoopFlags: js.Any = js.native
+  /* private */ var _animationLoopFlags: js.Any = js.native
   
-  var _checkAnimationGroupEnded: js.Any = js.native
+  /* private */ var _checkAnimationGroupEnded: js.Any = js.native
   
-  var _from: js.Any = js.native
+  /* private */ var _from: js.Any = js.native
   
-  var _isAdditive: js.Any = js.native
+  /* private */ var _isAdditive: js.Any = js.native
   
-  var _isPaused: js.Any = js.native
+  /* private */ var _isPaused: js.Any = js.native
   
-  var _isStarted: js.Any = js.native
+  /* private */ var _isStarted: js.Any = js.native
   
-  var _loopAnimation: js.Any = js.native
+  /* private */ var _loopAnimation: js.Any = js.native
   
-  var _processLoop: js.Any = js.native
+  /* private */ var _processLoop: js.Any = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
-  var _speedRatio: js.Any = js.native
+  /* private */ var _speedRatio: js.Any = js.native
   
-  var _targetedAnimations: js.Any = js.native
+  /* private */ var _targetedAnimations: js.Any = js.native
   
-  var _to: js.Any = js.native
+  /* private */ var _to: js.Any = js.native
   
   /**
     * Add an animation (with its target) in the group
@@ -61,7 +62,7 @@ trait AnimationGroup extends IDisposable {
     * @returns the new aniamtion group
     */
   def clone(newName: String): AnimationGroup = js.native
-  def clone(newName: String, targetConverter: js.Function1[/* oldTarget */ js.Any, _]): AnimationGroup = js.native
+  def clone(newName: String, targetConverter: js.Function1[/* oldTarget */ js.Any, js.Any]): AnimationGroup = js.native
   
   /**
     * Gets the first frame
@@ -114,8 +115,9 @@ trait AnimationGroup extends IDisposable {
     * @returns the animation group
     */
   def normalize(): AnimationGroup = js.native
-  def normalize(beginFrame: js.UndefOr[Nullable[Double]], endFrame: Nullable[Double]): AnimationGroup = js.native
+  def normalize(beginFrame: Unit, endFrame: Nullable[Double]): AnimationGroup = js.native
   def normalize(beginFrame: Nullable[Double]): AnimationGroup = js.native
+  def normalize(beginFrame: Nullable[Double], endFrame: Nullable[Double]): AnimationGroup = js.native
   
   /**
     * This observable will notify when one animation have ended
@@ -207,126 +209,37 @@ trait AnimationGroup extends IDisposable {
     * @returns the current animation group
     */
   def start(): AnimationGroup = js.native
-  def start(
-    loop: js.UndefOr[scala.Nothing],
-    speedRatio: js.UndefOr[scala.Nothing],
-    from: js.UndefOr[scala.Nothing],
-    to: js.UndefOr[scala.Nothing],
-    isAdditive: Boolean
-  ): AnimationGroup = js.native
-  def start(
-    loop: js.UndefOr[scala.Nothing],
-    speedRatio: js.UndefOr[scala.Nothing],
-    from: js.UndefOr[scala.Nothing],
-    to: Double
-  ): AnimationGroup = js.native
-  def start(
-    loop: js.UndefOr[scala.Nothing],
-    speedRatio: js.UndefOr[scala.Nothing],
-    from: js.UndefOr[scala.Nothing],
-    to: Double,
-    isAdditive: Boolean
-  ): AnimationGroup = js.native
-  def start(loop: js.UndefOr[scala.Nothing], speedRatio: js.UndefOr[scala.Nothing], from: Double): AnimationGroup = js.native
-  def start(
-    loop: js.UndefOr[scala.Nothing],
-    speedRatio: js.UndefOr[scala.Nothing],
-    from: Double,
-    to: js.UndefOr[scala.Nothing],
-    isAdditive: Boolean
-  ): AnimationGroup = js.native
-  def start(loop: js.UndefOr[scala.Nothing], speedRatio: js.UndefOr[scala.Nothing], from: Double, to: Double): AnimationGroup = js.native
-  def start(
-    loop: js.UndefOr[scala.Nothing],
-    speedRatio: js.UndefOr[scala.Nothing],
-    from: Double,
-    to: Double,
-    isAdditive: Boolean
-  ): AnimationGroup = js.native
-  def start(loop: js.UndefOr[scala.Nothing], speedRatio: Double): AnimationGroup = js.native
-  def start(
-    loop: js.UndefOr[scala.Nothing],
-    speedRatio: Double,
-    from: js.UndefOr[scala.Nothing],
-    to: js.UndefOr[scala.Nothing],
-    isAdditive: Boolean
-  ): AnimationGroup = js.native
-  def start(loop: js.UndefOr[scala.Nothing], speedRatio: Double, from: js.UndefOr[scala.Nothing], to: Double): AnimationGroup = js.native
-  def start(
-    loop: js.UndefOr[scala.Nothing],
-    speedRatio: Double,
-    from: js.UndefOr[scala.Nothing],
-    to: Double,
-    isAdditive: Boolean
-  ): AnimationGroup = js.native
-  def start(loop: js.UndefOr[scala.Nothing], speedRatio: Double, from: Double): AnimationGroup = js.native
-  def start(
-    loop: js.UndefOr[scala.Nothing],
-    speedRatio: Double,
-    from: Double,
-    to: js.UndefOr[scala.Nothing],
-    isAdditive: Boolean
-  ): AnimationGroup = js.native
-  def start(loop: js.UndefOr[scala.Nothing], speedRatio: Double, from: Double, to: Double): AnimationGroup = js.native
-  def start(loop: js.UndefOr[scala.Nothing], speedRatio: Double, from: Double, to: Double, isAdditive: Boolean): AnimationGroup = js.native
   def start(loop: Boolean): AnimationGroup = js.native
-  def start(
-    loop: Boolean,
-    speedRatio: js.UndefOr[scala.Nothing],
-    from: js.UndefOr[scala.Nothing],
-    to: js.UndefOr[scala.Nothing],
-    isAdditive: Boolean
-  ): AnimationGroup = js.native
-  def start(loop: Boolean, speedRatio: js.UndefOr[scala.Nothing], from: js.UndefOr[scala.Nothing], to: Double): AnimationGroup = js.native
-  def start(
-    loop: Boolean,
-    speedRatio: js.UndefOr[scala.Nothing],
-    from: js.UndefOr[scala.Nothing],
-    to: Double,
-    isAdditive: Boolean
-  ): AnimationGroup = js.native
-  def start(loop: Boolean, speedRatio: js.UndefOr[scala.Nothing], from: Double): AnimationGroup = js.native
-  def start(
-    loop: Boolean,
-    speedRatio: js.UndefOr[scala.Nothing],
-    from: Double,
-    to: js.UndefOr[scala.Nothing],
-    isAdditive: Boolean
-  ): AnimationGroup = js.native
-  def start(loop: Boolean, speedRatio: js.UndefOr[scala.Nothing], from: Double, to: Double): AnimationGroup = js.native
-  def start(
-    loop: Boolean,
-    speedRatio: js.UndefOr[scala.Nothing],
-    from: Double,
-    to: Double,
-    isAdditive: Boolean
-  ): AnimationGroup = js.native
   def start(loop: Boolean, speedRatio: Double): AnimationGroup = js.native
-  def start(
-    loop: Boolean,
-    speedRatio: Double,
-    from: js.UndefOr[scala.Nothing],
-    to: js.UndefOr[scala.Nothing],
-    isAdditive: Boolean
-  ): AnimationGroup = js.native
-  def start(loop: Boolean, speedRatio: Double, from: js.UndefOr[scala.Nothing], to: Double): AnimationGroup = js.native
-  def start(
-    loop: Boolean,
-    speedRatio: Double,
-    from: js.UndefOr[scala.Nothing],
-    to: Double,
-    isAdditive: Boolean
-  ): AnimationGroup = js.native
   def start(loop: Boolean, speedRatio: Double, from: Double): AnimationGroup = js.native
-  def start(
-    loop: Boolean,
-    speedRatio: Double,
-    from: Double,
-    to: js.UndefOr[scala.Nothing],
-    isAdditive: Boolean
-  ): AnimationGroup = js.native
   def start(loop: Boolean, speedRatio: Double, from: Double, to: Double): AnimationGroup = js.native
   def start(loop: Boolean, speedRatio: Double, from: Double, to: Double, isAdditive: Boolean): AnimationGroup = js.native
+  def start(loop: Boolean, speedRatio: Double, from: Double, to: Unit, isAdditive: Boolean): AnimationGroup = js.native
+  def start(loop: Boolean, speedRatio: Double, from: Unit, to: Double): AnimationGroup = js.native
+  def start(loop: Boolean, speedRatio: Double, from: Unit, to: Double, isAdditive: Boolean): AnimationGroup = js.native
+  def start(loop: Boolean, speedRatio: Double, from: Unit, to: Unit, isAdditive: Boolean): AnimationGroup = js.native
+  def start(loop: Boolean, speedRatio: Unit, from: Double): AnimationGroup = js.native
+  def start(loop: Boolean, speedRatio: Unit, from: Double, to: Double): AnimationGroup = js.native
+  def start(loop: Boolean, speedRatio: Unit, from: Double, to: Double, isAdditive: Boolean): AnimationGroup = js.native
+  def start(loop: Boolean, speedRatio: Unit, from: Double, to: Unit, isAdditive: Boolean): AnimationGroup = js.native
+  def start(loop: Boolean, speedRatio: Unit, from: Unit, to: Double): AnimationGroup = js.native
+  def start(loop: Boolean, speedRatio: Unit, from: Unit, to: Double, isAdditive: Boolean): AnimationGroup = js.native
+  def start(loop: Boolean, speedRatio: Unit, from: Unit, to: Unit, isAdditive: Boolean): AnimationGroup = js.native
+  def start(loop: Unit, speedRatio: Double): AnimationGroup = js.native
+  def start(loop: Unit, speedRatio: Double, from: Double): AnimationGroup = js.native
+  def start(loop: Unit, speedRatio: Double, from: Double, to: Double): AnimationGroup = js.native
+  def start(loop: Unit, speedRatio: Double, from: Double, to: Double, isAdditive: Boolean): AnimationGroup = js.native
+  def start(loop: Unit, speedRatio: Double, from: Double, to: Unit, isAdditive: Boolean): AnimationGroup = js.native
+  def start(loop: Unit, speedRatio: Double, from: Unit, to: Double): AnimationGroup = js.native
+  def start(loop: Unit, speedRatio: Double, from: Unit, to: Double, isAdditive: Boolean): AnimationGroup = js.native
+  def start(loop: Unit, speedRatio: Double, from: Unit, to: Unit, isAdditive: Boolean): AnimationGroup = js.native
+  def start(loop: Unit, speedRatio: Unit, from: Double): AnimationGroup = js.native
+  def start(loop: Unit, speedRatio: Unit, from: Double, to: Double): AnimationGroup = js.native
+  def start(loop: Unit, speedRatio: Unit, from: Double, to: Double, isAdditive: Boolean): AnimationGroup = js.native
+  def start(loop: Unit, speedRatio: Unit, from: Double, to: Unit, isAdditive: Boolean): AnimationGroup = js.native
+  def start(loop: Unit, speedRatio: Unit, from: Unit, to: Double): AnimationGroup = js.native
+  def start(loop: Unit, speedRatio: Unit, from: Unit, to: Double, isAdditive: Boolean): AnimationGroup = js.native
+  def start(loop: Unit, speedRatio: Unit, from: Unit, to: Unit, isAdditive: Boolean): AnimationGroup = js.native
   
   /**
     * Stop all animations

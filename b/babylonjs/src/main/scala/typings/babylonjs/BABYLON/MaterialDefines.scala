@@ -2,12 +2,12 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MaterialDefines
-  extends /* id */ org.scalablytyped.runtime.StringDictionary[js.Any] {
+  extends StObject
+     with /* id */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   
   /** @hidden */
   var _areAttributesDirty: Boolean = js.native
@@ -33,10 +33,10 @@ trait MaterialDefines
   /** @hidden */
   var _areTexturesDirty: Boolean = js.native
   
-  var _isDirty: js.Any = js.native
+  /* private */ var _isDirty: js.Any = js.native
   
   /** @hidden */
-  var _keys: js.Array[String] = js.native
+  /* protected */ var _keys: js.Array[String] = js.native
   
   /** @hidden */
   var _needNormals: Boolean = js.native

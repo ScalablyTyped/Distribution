@@ -2,21 +2,21 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SphereDirectedParticleEmitter extends SphereParticleEmitter {
+trait SphereDirectedParticleEmitter
+  extends StObject
+     with SphereParticleEmitter {
   
   /**
     * The min limit of the emission direction.
     */
-  var direction1: Vector3 = js.native
+  var direction1: Vector3
   
   /**
     * The max limit of the emission direction.
     */
-  var direction2: Vector3 = js.native
+  var direction2: Vector3
   
   /**
     * Called by the particle System when the direction is computed for the created particle.
@@ -24,12 +24,11 @@ trait SphereDirectedParticleEmitter extends SphereParticleEmitter {
     * @param directionToUpdate is the direction vector to update with the result
     * @param particle is the particle we are computed the direction for
     */
-  def startDirectionFunction(worldMatrix: Matrix, directionToUpdate: Vector3, particle: Particle): Unit = js.native
+  def startDirectionFunction(worldMatrix: Matrix, directionToUpdate: Vector3, particle: Particle): Unit
 }
 object SphereDirectedParticleEmitter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     applyToShader: Effect => Unit,
     direction1: Vector3,
     direction2: Vector3,
@@ -47,16 +46,12 @@ object SphereDirectedParticleEmitter {
     __obj.asInstanceOf[SphereDirectedParticleEmitter]
   }
   
-  @scala.inline
-  implicit class SphereDirectedParticleEmitterMutableBuilder[Self <: SphereDirectedParticleEmitter] (val x: Self) extends AnyVal {
+  extension [Self <: SphereDirectedParticleEmitter](x: Self) {
     
-    @scala.inline
-    def setDirection1(value: Vector3): Self = StObject.set(x, "direction1", value.asInstanceOf[js.Any])
+    inline def setDirection1(value: Vector3): Self = StObject.set(x, "direction1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirection2(value: Vector3): Self = StObject.set(x, "direction2", value.asInstanceOf[js.Any])
+    inline def setDirection2(value: Vector3): Self = StObject.set(x, "direction2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDirectionFunction(value: (Matrix, Vector3, Particle) => Unit): Self = StObject.set(x, "startDirectionFunction", js.Any.fromFunction3(value))
+    inline def setStartDirectionFunction(value: (Matrix, Vector3, Particle) => Unit): Self = StObject.set(x, "startDirectionFunction", js.Any.fromFunction3(value))
   }
 }

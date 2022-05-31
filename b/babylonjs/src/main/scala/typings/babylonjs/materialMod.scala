@@ -3,6 +3,7 @@ package typings.babylonjs
 import org.scalablytyped.runtime.StringDictionary
 import typings.babylonjs.abstractMeshMod.AbstractMesh
 import typings.babylonjs.animatableInterfaceMod.IAnimatable
+import typings.babylonjs.animationMod.Animation
 import typings.babylonjs.anon.PartialIMaterialCompilati
 import typings.babylonjs.baseTextureMod.BaseTexture
 import typings.babylonjs.effectMod.Effect
@@ -21,14 +22,15 @@ import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.uniformBufferMod.UniformBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object materialMod {
   
   @JSImport("babylonjs/Materials/material", "Material")
   @js.native
-  class Material protected () extends IAnimatable {
+  class Material protected ()
+    extends StObject
+       with IAnimatable {
     /**
       * Creates a material instance
       * @param name defines the name of the material
@@ -48,32 +50,32 @@ object materialMod {
     /**
       * The alpha value of the material
       */
-    var _alpha: Double = js.native
+    /* protected */ var _alpha: Double = js.native
     
     /**
       * Stores the value of the alpha mode
       */
-    var _alphaMode: js.Any = js.native
+    /* private */ var _alphaMode: js.Any = js.native
     
     /**
       * Specifies if back face culling is enabled
       */
-    var _backFaceCulling: Boolean = js.native
+    /* protected */ var _backFaceCulling: Boolean = js.native
     
     /**
       * Specifies if the color write state should be cached
       */
-    var _cachedColorWriteState: js.Any = js.native
+    /* private */ var _cachedColorWriteState: js.Any = js.native
     
     /**
       * Specifies if the depth function state should be cached
       */
-    var _cachedDepthFunctionState: js.Any = js.native
+    /* private */ var _cachedDepthFunctionState: js.Any = js.native
     
     /**
       * Specifies if the depth write state should be cached
       */
-    var _cachedDepthWriteState: js.Any = js.native
+    /* private */ var _cachedDepthWriteState: js.Any = js.native
     
     /**
       * Returns true if alpha blending should be disabled.
@@ -89,17 +91,17 @@ object materialMod {
     /**
       * Stores the fill mode state
       */
-    var _fillMode: js.Any = js.native
+    /* private */ var _fillMode: js.Any = js.native
     
     /**
       * Stores the state specifing if fog should be enabled
       */
-    var _fogEnabled: js.Any = js.native
+    /* private */ var _fogEnabled: js.Any = js.native
     
     /**
       * Enforces alpha test in opaque or blend mode in order to improve the performances of some situations.
       */
-    var _forceAlphaTest: Boolean = js.native
+    /* protected */ var _forceAlphaTest: Boolean = js.native
     
     /** @hidden */
     var _indexInSceneMaterialArray: Double = js.native
@@ -168,34 +170,34 @@ object materialMod {
     /**
       * Stores the state of the need depth pre-pass value
       */
-    var _needDepthPrePass: js.Any = js.native
+    /* private */ var _needDepthPrePass: js.Any = js.native
     
-    var _onBindObservable: js.Any = js.native
+    /* private */ var _onBindObservable: js.Any = js.native
     
     /**
       * An observer which watches for bind events
       */
-    var _onBindObserver: js.Any = js.native
+    /* private */ var _onBindObserver: js.Any = js.native
     
     /**
       * An observer which watches for dispose events
       */
-    var _onDisposeObserver: js.Any = js.native
+    /* private */ var _onDisposeObserver: js.Any = js.native
     
-    var _onEffectCreatedObservable: Nullable[Observable[typings.babylonjs.anon.Effect]] = js.native
+    /* protected */ var _onEffectCreatedObservable: Nullable[Observable[typings.babylonjs.anon.Effect]] = js.native
     
-    var _onUnBindObservable: js.Any = js.native
+    /* private */ var _onUnBindObservable: js.Any = js.native
     
     /** @hidden */
     def _preBind(): Boolean = js.native
-    def _preBind(effect: js.UndefOr[scala.Nothing], overrideOrientation: Nullable[Double]): Boolean = js.native
+    def _preBind(effect: Unit, overrideOrientation: Nullable[Double]): Boolean = js.native
     def _preBind(effect: Effect): Boolean = js.native
     def _preBind(effect: Effect, overrideOrientation: Nullable[Double]): Boolean = js.native
     
     /**
       * Stores a reference to the scene
       */
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
     /**
       * Specifies if material alpha testing should be turned on for the mesh
@@ -211,17 +213,17 @@ object materialMod {
     /**
       * The transparency mode of the material.
       */
-    var _transparencyMode: Nullable[Double] = js.native
+    /* protected */ var _transparencyMode: Nullable[Double] = js.native
     
     /**
       * Stores the uniform buffer
       */
-    var _uniformBuffer: UniformBuffer = js.native
+    /* protected */ var _uniformBuffer: UniformBuffer = js.native
     
     /**
       * Specifies if uniform buffers should be used
       */
-    var _useUBO: js.Any = js.native
+    /* private */ var _useUBO: js.Any = js.native
     
     /**
       * Gets or sets a boolean indicating that the material is allowed (if supported) to do shader hot swapping.
@@ -263,6 +265,12 @@ object materialMod {
       * Sets the alpha value of the material
       */
     def alpha_=(value: Double): Unit = js.native
+    
+    /**
+      * Array of animations
+      */
+    /* CompleteClass */
+    var animations: Nullable[js.Array[Animation]] = js.native
     
     /**
       * Gets the back-face culling state
@@ -349,15 +357,6 @@ object materialMod {
       uniformBuffers: js.Array[String],
       samplers: js.Array[String],
       defines: js.Array[String],
-      attributes: js.UndefOr[scala.Nothing],
-      options: ICustomShaderNameResolveOptions
-    ): String = js.native
-    def customShaderNameResolve(
-      shaderName: String,
-      uniforms: js.Array[String],
-      uniformBuffers: js.Array[String],
-      samplers: js.Array[String],
-      defines: js.Array[String],
       attributes: js.Array[String]
     ): String = js.native
     def customShaderNameResolve(
@@ -367,6 +366,15 @@ object materialMod {
       samplers: js.Array[String],
       defines: js.Array[String],
       attributes: js.Array[String],
+      options: ICustomShaderNameResolveOptions
+    ): String = js.native
+    def customShaderNameResolve(
+      shaderName: String,
+      uniforms: js.Array[String],
+      uniformBuffers: js.Array[String],
+      samplers: js.Array[String],
+      defines: js.Array[String],
+      attributes: Unit,
       options: ICustomShaderNameResolveOptions
     ): String = js.native
     /**
@@ -385,15 +393,6 @@ object materialMod {
       uniformBuffers: js.Array[String],
       samplers: js.Array[String],
       defines: MaterialDefines,
-      attributes: js.UndefOr[scala.Nothing],
-      options: ICustomShaderNameResolveOptions
-    ): String = js.native
-    def customShaderNameResolve(
-      shaderName: String,
-      uniforms: js.Array[String],
-      uniformBuffers: js.Array[String],
-      samplers: js.Array[String],
-      defines: MaterialDefines,
       attributes: js.Array[String]
     ): String = js.native
     def customShaderNameResolve(
@@ -403,6 +402,15 @@ object materialMod {
       samplers: js.Array[String],
       defines: MaterialDefines,
       attributes: js.Array[String],
+      options: ICustomShaderNameResolveOptions
+    ): String = js.native
+    def customShaderNameResolve(
+      shaderName: String,
+      uniforms: js.Array[String],
+      uniformBuffers: js.Array[String],
+      samplers: js.Array[String],
+      defines: MaterialDefines,
+      attributes: Unit,
       options: ICustomShaderNameResolveOptions
     ): String = js.native
     
@@ -428,25 +436,13 @@ object materialMod {
       * @param notBoundToMesh specifies if the material that is being disposed is known to be not bound to any mesh
       */
     def dispose(): Unit = js.native
-    def dispose(
-      forceDisposeEffect: js.UndefOr[scala.Nothing],
-      forceDisposeTextures: js.UndefOr[scala.Nothing],
-      notBoundToMesh: Boolean
-    ): Unit = js.native
-    def dispose(forceDisposeEffect: js.UndefOr[scala.Nothing], forceDisposeTextures: Boolean): Unit = js.native
-    def dispose(
-      forceDisposeEffect: js.UndefOr[scala.Nothing],
-      forceDisposeTextures: Boolean,
-      notBoundToMesh: Boolean
-    ): Unit = js.native
     def dispose(forceDisposeEffect: Boolean): Unit = js.native
-    def dispose(
-      forceDisposeEffect: Boolean,
-      forceDisposeTextures: js.UndefOr[scala.Nothing],
-      notBoundToMesh: Boolean
-    ): Unit = js.native
     def dispose(forceDisposeEffect: Boolean, forceDisposeTextures: Boolean): Unit = js.native
     def dispose(forceDisposeEffect: Boolean, forceDisposeTextures: Boolean, notBoundToMesh: Boolean): Unit = js.native
+    def dispose(forceDisposeEffect: Boolean, forceDisposeTextures: Unit, notBoundToMesh: Boolean): Unit = js.native
+    def dispose(forceDisposeEffect: Unit, forceDisposeTextures: Boolean): Unit = js.native
+    def dispose(forceDisposeEffect: Unit, forceDisposeTextures: Boolean, notBoundToMesh: Boolean): Unit = js.native
+    def dispose(forceDisposeEffect: Unit, forceDisposeTextures: Unit, notBoundToMesh: Boolean): Unit = js.native
     
     /**
       * Specifies if the material should be serialized
@@ -479,24 +475,11 @@ object materialMod {
       * @param onError defines a function to execute if the material fails compiling
       */
     def forceCompilation(mesh: AbstractMesh): Unit = js.native
-    def forceCompilation(
-      mesh: AbstractMesh,
-      onCompiled: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      onError: js.Function1[/* reason */ String, Unit]
-    ): Unit = js.native
-    def forceCompilation(mesh: AbstractMesh, onCompiled: js.UndefOr[scala.Nothing], options: PartialIMaterialCompilati): Unit = js.native
-    def forceCompilation(
-      mesh: AbstractMesh,
-      onCompiled: js.UndefOr[scala.Nothing],
-      options: PartialIMaterialCompilati,
-      onError: js.Function1[/* reason */ String, Unit]
-    ): Unit = js.native
     def forceCompilation(mesh: AbstractMesh, onCompiled: js.Function1[/* material */ this.type, Unit]): Unit = js.native
     def forceCompilation(
       mesh: AbstractMesh,
       onCompiled: js.Function1[/* material */ this.type, Unit],
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       onError: js.Function1[/* reason */ String, Unit]
     ): Unit = js.native
     def forceCompilation(
@@ -507,6 +490,19 @@ object materialMod {
     def forceCompilation(
       mesh: AbstractMesh,
       onCompiled: js.Function1[/* material */ this.type, Unit],
+      options: PartialIMaterialCompilati,
+      onError: js.Function1[/* reason */ String, Unit]
+    ): Unit = js.native
+    def forceCompilation(
+      mesh: AbstractMesh,
+      onCompiled: Unit,
+      options: Unit,
+      onError: js.Function1[/* reason */ String, Unit]
+    ): Unit = js.native
+    def forceCompilation(mesh: AbstractMesh, onCompiled: Unit, options: PartialIMaterialCompilati): Unit = js.native
+    def forceCompilation(
+      mesh: AbstractMesh,
+      onCompiled: Unit,
       options: PartialIMaterialCompilati,
       onError: js.Function1[/* reason */ String, Unit]
     ): Unit = js.native
@@ -606,7 +602,7 @@ object materialMod {
       * @returns a boolean indicating if the material is ready to be used
       */
     def isReady(): Boolean = js.native
-    def isReady(mesh: js.UndefOr[scala.Nothing], useInstances: Boolean): Boolean = js.native
+    def isReady(mesh: Unit, useInstances: Boolean): Boolean = js.native
     def isReady(mesh: AbstractMesh): Boolean = js.native
     def isReady(mesh: AbstractMesh, useInstances: Boolean): Boolean = js.native
     
@@ -727,7 +723,7 @@ object materialMod {
     def pointsCloud_=(value: Boolean): Unit = js.native
     
     /** @hidden */
-    var releaseVertexArrayObject: js.Any = js.native
+    /* private */ var releaseVertexArrayObject: js.Any = js.native
     
     /**
       * For internal use only. Please do not use.
@@ -941,9 +937,7 @@ object materialMod {
       * @param rootUrl defines the root URL to use to load textures
       * @returns a new material
       */
-    @JSImport("babylonjs/Materials/material", "Material.Parse")
-    @js.native
-    def Parse(parsedMaterial: js.Any, scene: Scene, rootUrl: String): Nullable[Material] = js.native
+    inline def Parse(parsedMaterial: js.Any, scene: Scene, rootUrl: String): Nullable[Material] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedMaterial.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[Material]]
     
     /**
       * Returns the point fill mode
@@ -1016,8 +1010,7 @@ object materialMod {
     @JSImport("babylonjs/Materials/material", "Material._FresnelAndMiscDirtyCallBack")
     @js.native
     def _FresnelAndMiscDirtyCallBack: js.Any = js.native
-    @scala.inline
-    def _FresnelAndMiscDirtyCallBack_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_FresnelAndMiscDirtyCallBack")(x.asInstanceOf[js.Any])
+    inline def _FresnelAndMiscDirtyCallBack_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_FresnelAndMiscDirtyCallBack")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Materials/material", "Material._FresnelDirtyCallBack")
     @js.native
@@ -1046,73 +1039,61 @@ object materialMod {
     @JSImport("babylonjs/Materials/material", "Material._TextureAndMiscDirtyCallBack")
     @js.native
     def _TextureAndMiscDirtyCallBack: js.Any = js.native
-    @scala.inline
-    def _TextureAndMiscDirtyCallBack_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TextureAndMiscDirtyCallBack")(x.asInstanceOf[js.Any])
+    inline def _TextureAndMiscDirtyCallBack_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TextureAndMiscDirtyCallBack")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Materials/material", "Material._TextureDirtyCallBack")
     @js.native
     val _TextureDirtyCallBack: js.Any = js.native
   }
   
-  @js.native
   trait ICustomShaderNameResolveOptions extends StObject {
     
     /**
       * If provided, will be called two times with the vertex and fragment code so that this code can be updated before it is compiled by the GPU
       */
-    var processFinalCode: js.UndefOr[Nullable[js.Function2[/* shaderType */ String, /* code */ String, String]]] = js.native
+    var processFinalCode: js.UndefOr[Nullable[js.Function2[/* shaderType */ String, /* code */ String, String]]] = js.undefined
   }
   object ICustomShaderNameResolveOptions {
     
-    @scala.inline
-    def apply(): ICustomShaderNameResolveOptions = {
+    inline def apply(): ICustomShaderNameResolveOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICustomShaderNameResolveOptions]
     }
     
-    @scala.inline
-    implicit class ICustomShaderNameResolveOptionsMutableBuilder[Self <: ICustomShaderNameResolveOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ICustomShaderNameResolveOptions](x: Self) {
       
-      @scala.inline
-      def setProcessFinalCode(value: (/* shaderType */ String, /* code */ String) => String): Self = StObject.set(x, "processFinalCode", js.Any.fromFunction2(value))
+      inline def setProcessFinalCode(value: (/* shaderType */ String, /* code */ String) => String): Self = StObject.set(x, "processFinalCode", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setProcessFinalCodeNull: Self = StObject.set(x, "processFinalCode", null)
+      inline def setProcessFinalCodeNull: Self = StObject.set(x, "processFinalCode", null)
       
-      @scala.inline
-      def setProcessFinalCodeUndefined: Self = StObject.set(x, "processFinalCode", js.undefined)
+      inline def setProcessFinalCodeUndefined: Self = StObject.set(x, "processFinalCode", js.undefined)
     }
   }
   
-  @js.native
   trait IMaterialCompilationOptions extends StObject {
     
     /**
       * Defines whether clip planes are enabled.
       */
-    var clipPlane: Boolean = js.native
+    var clipPlane: Boolean
     
     /**
       * Defines whether instances are enabled.
       */
-    var useInstances: Boolean = js.native
+    var useInstances: Boolean
   }
   object IMaterialCompilationOptions {
     
-    @scala.inline
-    def apply(clipPlane: Boolean, useInstances: Boolean): IMaterialCompilationOptions = {
+    inline def apply(clipPlane: Boolean, useInstances: Boolean): IMaterialCompilationOptions = {
       val __obj = js.Dynamic.literal(clipPlane = clipPlane.asInstanceOf[js.Any], useInstances = useInstances.asInstanceOf[js.Any])
       __obj.asInstanceOf[IMaterialCompilationOptions]
     }
     
-    @scala.inline
-    implicit class IMaterialCompilationOptionsMutableBuilder[Self <: IMaterialCompilationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IMaterialCompilationOptions](x: Self) {
       
-      @scala.inline
-      def setClipPlane(value: Boolean): Self = StObject.set(x, "clipPlane", value.asInstanceOf[js.Any])
+      inline def setClipPlane(value: Boolean): Self = StObject.set(x, "clipPlane", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseInstances(value: Boolean): Self = StObject.set(x, "useInstances", value.asInstanceOf[js.Any])
+      inline def setUseInstances(value: Boolean): Self = StObject.set(x, "useInstances", value.asInstanceOf[js.Any])
     }
   }
 }

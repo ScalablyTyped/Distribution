@@ -3,175 +3,174 @@ package typings.babylonjs.BABYLON
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait VRExperienceHelper extends StObject {
   
-  var _btnVR: js.Any = js.native
+  /* private */ var _btnVR: js.Any = js.native
   
-  var _btnVRDisplayed: js.Any = js.native
+  /* private */ var _btnVRDisplayed: js.Any = js.native
   
-  var _cachedAngularSensibility: js.Any = js.native
+  /* private */ var _cachedAngularSensibility: js.Any = js.native
   
-  var _cameraGazer: js.Any = js.native
+  /* private */ var _cameraGazer: js.Any = js.native
   
-  var _castRayAndSelectObject: js.Any = js.native
+  /* private */ var _castRayAndSelectObject: js.Any = js.native
   
-  var _checkRotate: js.Any = js.native
+  /* private */ var _checkRotate: js.Any = js.native
   
-  var _checkTeleportBackwards: js.Any = js.native
+  /* private */ var _checkTeleportBackwards: js.Any = js.native
   
-  var _checkTeleportWithRay: js.Any = js.native
+  /* private */ var _checkTeleportWithRay: js.Any = js.native
   
-  var _circleEase: js.Any = js.native
+  /* private */ var _circleEase: js.Any = js.native
   
-  var _convertNormalToDirectionOfRay: js.Any = js.native
+  /* private */ var _convertNormalToDirectionOfRay: js.Any = js.native
   
-  var _createTeleportationCircles: js.Any = js.native
+  /* private */ var _createTeleportationCircles: js.Any = js.native
   
-  var _defaultHeight: js.Any = js.native
+  /* private */ var _defaultHeight: js.Any = js.native
   
-  var _deviceOrientationCamera: js.Any = js.native
+  /* private */ var _deviceOrientationCamera: js.Any = js.native
   
-  var _displayGaze: js.Any = js.native
+  /* private */ var _displayGaze: js.Any = js.native
   
-  var _displayLaserPointer: js.Any = js.native
+  /* private */ var _displayLaserPointer: js.Any = js.native
   
-  var _displayTeleportationTarget: js.Any = js.native
+  /* private */ var _displayTeleportationTarget: js.Any = js.native
   
-  var _enableInteractionOnController: js.Any = js.native
+  /* private */ var _enableInteractionOnController: js.Any = js.native
   
-  var _enableTeleportationOnController: js.Any = js.native
+  /* private */ var _enableTeleportationOnController: js.Any = js.native
   
-  var _existingCamera: js.Any = js.native
+  /* private */ var _existingCamera: js.Any = js.native
   
-  var _floorMeshName: js.Any = js.native
+  /* private */ var _floorMeshName: js.Any = js.native
   
-  var _floorMeshesCollection: js.Any = js.native
+  /* private */ var _floorMeshesCollection: js.Any = js.native
   
-  var _fullscreenVRpresenting: js.Any = js.native
+  /* private */ var _fullscreenVRpresenting: js.Any = js.native
   
-  var _gazeColor: js.Any = js.native
+  /* private */ var _gazeColor: js.Any = js.native
   
-  var _haloCenter: js.Any = js.native
+  /* private */ var _haloCenter: js.Any = js.native
   
-  var _hasEnteredVR: js.Any = js.native
+  /* private */ var _hasEnteredVR: js.Any = js.native
   
-  var _hideTeleportationTarget: js.Any = js.native
+  /* private */ var _hideTeleportationTarget: js.Any = js.native
   
-  var _inputElement: js.Any = js.native
+  /* private */ var _inputElement: js.Any = js.native
   
-  var _interactionsEnabled: js.Any = js.native
+  /* private */ var _interactionsEnabled: js.Any = js.native
   
-  var _interactionsRequested: js.Any = js.native
+  /* private */ var _interactionsRequested: js.Any = js.native
   
-  var _isDefaultTeleportationTarget: js.Any = js.native
+  /* private */ var _isDefaultTeleportationTarget: js.Any = js.native
   
-  var _isTeleportationFloor: js.Any = js.native
+  /* private */ var _isTeleportationFloor: js.Any = js.native
   
-  var _laserColor: js.Any = js.native
+  /* private */ var _laserColor: js.Any = js.native
   
-  var _leftController: js.Any = js.native
+  /* private */ var _leftController: js.Any = js.native
   
-  var _moveTeleportationSelectorTo: js.Any = js.native
+  /* private */ var _moveTeleportationSelectorTo: js.Any = js.native
   
   /* private */ def _noControllerIsActive: js.Any = js.native
   
-  var _notifySelectedMeshUnselected: js.Any = js.native
+  /* private */ var _notifySelectedMeshUnselected: js.Any = js.native
   
-  var _onDefaultMeshLoaded: js.Any = js.native
+  /* private */ var _onDefaultMeshLoaded: js.Any = js.native
   
-  var _onFullscreenChange: js.Any = js.native
+  /* private */ var _onFullscreenChange: js.Any = js.native
   
-  var _onKeyDown: js.Any = js.native
+  /* private */ var _onKeyDown: js.Any = js.native
   
-  var _onNewGamepadConnected: js.Any = js.native
+  /* private */ var _onNewGamepadConnected: js.Any = js.native
   
-  var _onNewGamepadDisconnected: js.Any = js.native
+  /* private */ var _onNewGamepadDisconnected: js.Any = js.native
   
-  var _onResize: js.Any = js.native
+  /* private */ var _onResize: js.Any = js.native
   
-  var _onVRDisplayChanged: js.Any = js.native
+  /* private */ var _onVRDisplayChanged: js.Any = js.native
   
-  var _onVRRequestPresentComplete: js.Any = js.native
+  /* private */ var _onVRRequestPresentComplete: js.Any = js.native
   
-  var _onVRRequestPresentStart: js.Any = js.native
+  /* private */ var _onVRRequestPresentStart: js.Any = js.native
   
-  var _onVrDisplayPresentChange: js.Any = js.native
+  /* private */ var _onVrDisplayPresentChange: js.Any = js.native
   
-  var _padSensibilityDown: js.Any = js.native
+  /* private */ var _padSensibilityDown: js.Any = js.native
   
-  var _padSensibilityUp: js.Any = js.native
+  /* private */ var _padSensibilityUp: js.Any = js.native
   
-  var _pickedGazeColor: js.Any = js.native
+  /* private */ var _pickedGazeColor: js.Any = js.native
   
-  var _pickedLaserColor: js.Any = js.native
+  /* private */ var _pickedLaserColor: js.Any = js.native
   
-  var _position: js.Any = js.native
+  /* private */ var _position: js.Any = js.native
   
-  var _postProcessMove: js.Any = js.native
+  /* private */ var _postProcessMove: js.Any = js.native
   
-  var _rayLength: js.Any = js.native
+  /* private */ var _rayLength: js.Any = js.native
   
-  var _raySelectionPredicate: js.Any = js.native
+  /* private */ var _raySelectionPredicate: js.Any = js.native
   
-  var _rightController: js.Any = js.native
+  /* private */ var _rightController: js.Any = js.native
   
-  var _rotateCamera: js.Any = js.native
+  /* private */ var _rotateCamera: js.Any = js.native
   
-  var _rotationAllowed: js.Any = js.native
+  /* private */ var _rotationAllowed: js.Any = js.native
   
-  var _rotationAngle: js.Any = js.native
+  /* private */ var _rotationAngle: js.Any = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
-  var _teleportActive: js.Any = js.native
+  /* private */ var _teleportActive: js.Any = js.native
   
-  var _teleportBackwardsVector: js.Any = js.native
+  /* private */ var _teleportBackwardsVector: js.Any = js.native
   
-  var _teleportationBorderColor: js.Any = js.native
+  /* private */ var _teleportationBorderColor: js.Any = js.native
   
-  var _teleportationEasing: js.Any = js.native
+  /* private */ var _teleportationEasing: js.Any = js.native
   
-  var _teleportationFillColor: js.Any = js.native
+  /* private */ var _teleportationFillColor: js.Any = js.native
   
-  var _teleportationInitialized: js.Any = js.native
+  /* private */ var _teleportationInitialized: js.Any = js.native
   
-  var _teleportationMode: js.Any = js.native
+  /* private */ var _teleportationMode: js.Any = js.native
   
   /* private */ def _teleportationRequestInitiated: js.Any = js.native
   
-  var _teleportationRequested: js.Any = js.native
+  /* private */ var _teleportationRequested: js.Any = js.native
   
-  var _teleportationSpeed: js.Any = js.native
+  /* private */ var _teleportationSpeed: js.Any = js.native
   
-  var _teleportationTarget: js.Any = js.native
+  /* private */ var _teleportationTarget: js.Any = js.native
   
-  var _teleportationTime: js.Any = js.native
+  /* private */ var _teleportationTime: js.Any = js.native
   
-  var _tryEnableInteractionOnController: js.Any = js.native
+  /* private */ var _tryEnableInteractionOnController: js.Any = js.native
   
-  var _useCustomVRButton: js.Any = js.native
+  /* private */ var _useCustomVRButton: js.Any = js.native
   
-  var _vrDeviceOrientationCamera: js.Any = js.native
+  /* private */ var _vrDeviceOrientationCamera: js.Any = js.native
   
-  var _webVRCamera: js.Any = js.native
+  /* private */ var _webVRCamera: js.Any = js.native
   
-  var _webVRpresenting: js.Any = js.native
+  /* private */ var _webVRpresenting: js.Any = js.native
   
-  var _webVRready: js.Any = js.native
+  /* private */ var _webVRready: js.Any = js.native
   
-  var _webVRrequesting: js.Any = js.native
+  /* private */ var _webVRrequesting: js.Any = js.native
   
-  var _webVRsupported: js.Any = js.native
+  /* private */ var _webVRsupported: js.Any = js.native
   
-  var _workingMatrix: js.Any = js.native
+  /* private */ var _workingMatrix: js.Any = js.native
   
-  var _workingQuaternion: js.Any = js.native
+  /* private */ var _workingQuaternion: js.Any = js.native
   
-  var _workingVector: js.Any = js.native
+  /* private */ var _workingVector: js.Any = js.native
   
   /**
     * Adds a floor mesh to be used for teleportation.
@@ -179,7 +178,7 @@ trait VRExperienceHelper extends StObject {
     */
   def addFloorMesh(floorMesh: Mesh): Unit = js.native
   
-  var beforeRender: js.Any = js.native
+  /* private */ var beforeRender: js.Any = js.native
   
   /**
     * Sets the color of the ray from the vr headsets gaze.
@@ -193,7 +192,7 @@ trait VRExperienceHelper extends StObject {
     */
   def changeLaserColor(color: Color3): Unit = js.native
   
-  var completeVRInit: js.Any = js.native
+  /* private */ var completeVRInit: js.Any = js.native
   
   /**
     * Based on the current WebVR support, returns the current VR camera used.
@@ -223,7 +222,7 @@ trait VRExperienceHelper extends StObject {
     */
   def displayLaserPointer_=(value: Boolean): Unit = js.native
   
-  var displayVRButton: js.Any = js.native
+  /* private */ var displayVRButton: js.Any = js.native
   
   /**
     * Exits VR and disposes of the vr experience helper
@@ -292,7 +291,7 @@ trait VRExperienceHelper extends StObject {
     */
   def meshSelectionPredicate(mesh: AbstractMesh): Boolean = js.native
   
-  var moveButtonToBottomRight: js.Any = js.native
+  /* private */ var moveButtonToBottomRight: js.Any = js.native
   
   /**
     *  Observable raised after camera teleportation
@@ -360,9 +359,9 @@ trait VRExperienceHelper extends StObject {
     */
   var onSelectedMeshUnselected: Observable[AbstractMesh] = js.native
   
-  var onVRDisplayChanged: js.Any = js.native
+  /* private */ var onVRDisplayChanged: js.Any = js.native
   
-  var onVrDisplayPresentChange: js.Any = js.native
+  /* private */ var onVrDisplayPresentChange: js.Any = js.native
   
   /**
     * The position of the vr experience helper.
@@ -438,7 +437,7 @@ trait VRExperienceHelper extends StObject {
     */
   def teleportationTarget_=(value: Mesh): Unit = js.native
   
-  var updateButtonVisibility: js.Any = js.native
+  /* private */ var updateButtonVisibility: js.Any = js.native
   
   /**
     * If the controller laser color should be updated when selecting meshes

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "openapi-schema-validator"
-version := "7.0.1-0dfd4e"
+version := "7.0.1-9b0365"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ajv" % "6.12.6-8de37f",
-  "org.scalablytyped" %%% "openapi-types" % "7.0.1-3515d8",
-  "org.scalablytyped" %%% "std" % "4.1-2f6855")
+  "org.scalablytyped" %%% "ajv" % "6.12.6-3e2017",
+  "org.scalablytyped" %%% "openapi-types" % "7.0.1-decfd1",
+  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

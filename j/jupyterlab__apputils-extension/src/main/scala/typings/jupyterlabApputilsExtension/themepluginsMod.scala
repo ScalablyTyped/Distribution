@@ -4,7 +4,6 @@ import typings.jupyterlabApplication.frontendMod.JupyterFrontEndPlugin
 import typings.jupyterlabApputils.tokensMod.IThemeManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object themepluginsMod {

@@ -3,7 +3,6 @@ package typings.babylonjs
 import typings.babylonjs.meshMod.Mesh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object meshExploderMod {
@@ -19,21 +18,21 @@ object meshExploderMod {
     def this(meshes: js.Array[Mesh]) = this()
     def this(meshes: js.Array[Mesh], centerMesh: Mesh) = this()
     
-    var _centerMesh: js.Any = js.native
+    /* private */ var _centerMesh: js.Any = js.native
     
-    var _centerPosition: js.Any = js.native
+    /* private */ var _centerPosition: js.Any = js.native
     
-    var _meshes: js.Any = js.native
+    /* private */ var _meshes: js.Any = js.native
     
-    var _meshesOrigins: js.Any = js.native
+    /* private */ var _meshesOrigins: js.Any = js.native
     
-    var _newPosition: js.Any = js.native
+    /* private */ var _newPosition: js.Any = js.native
     
-    var _scaledDirection: js.Any = js.native
+    /* private */ var _scaledDirection: js.Any = js.native
     
-    var _setCenterMesh: js.Any = js.native
+    /* private */ var _setCenterMesh: js.Any = js.native
     
-    var _toCenterVectors: js.Any = js.native
+    /* private */ var _toCenterVectors: js.Any = js.native
     
     /**
       * Explodes meshes giving a specific direction

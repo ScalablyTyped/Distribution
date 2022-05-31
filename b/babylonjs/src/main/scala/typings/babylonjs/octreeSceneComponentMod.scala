@@ -9,7 +9,6 @@ import typings.babylonjs.smartArrayMod.ISmartArrayLike
 import typings.babylonjs.subMeshMod.SubMesh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object octreeSceneComponentMod {
@@ -23,7 +22,7 @@ object octreeSceneComponentMod {
       */
     def this(scene: Scene) = this()
     
-    var _tempRay: js.Any = js.native
+    /* private */ var _tempRay: js.Any = js.native
     
     /**
       * Indicates if the meshes have been checked to make sure they are isEnabled()
@@ -108,9 +107,9 @@ object octreeSceneComponentMod {
         * @see https://doc.babylonjs.com/how_to/optimizing_your_scene_with_octrees
         */
       def createOrUpdateSubmeshesOctree(): Octree[SubMesh] = js.native
-      def createOrUpdateSubmeshesOctree(maxCapacity: js.UndefOr[scala.Nothing], maxDepth: Double): Octree[SubMesh] = js.native
       def createOrUpdateSubmeshesOctree(maxCapacity: Double): Octree[SubMesh] = js.native
       def createOrUpdateSubmeshesOctree(maxCapacity: Double, maxDepth: Double): Octree[SubMesh] = js.native
+      def createOrUpdateSubmeshesOctree(maxCapacity: Unit, maxDepth: Double): Octree[SubMesh] = js.native
     }
   }
   
@@ -134,9 +133,9 @@ object octreeSceneComponentMod {
         * @returns an octree of AbstractMesh
         */
       def createOrUpdateSelectionOctree(): Octree[AbstractMesh] = js.native
-      def createOrUpdateSelectionOctree(maxCapacity: js.UndefOr[scala.Nothing], maxDepth: Double): Octree[AbstractMesh] = js.native
       def createOrUpdateSelectionOctree(maxCapacity: Double): Octree[AbstractMesh] = js.native
       def createOrUpdateSelectionOctree(maxCapacity: Double, maxDepth: Double): Octree[AbstractMesh] = js.native
+      def createOrUpdateSelectionOctree(maxCapacity: Unit, maxDepth: Double): Octree[AbstractMesh] = js.native
       
       /**
         * Gets the octree used to boost mesh selection (picking)

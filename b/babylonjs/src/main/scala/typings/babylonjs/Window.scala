@@ -12,7 +12,6 @@ import typings.std.IDBFactory
 import typings.std.Uint8ArrayConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Mixins
@@ -41,17 +40,21 @@ trait Window extends StObject {
   var WebGLRenderingContext: typings.babylonjs.WebGLRenderingContext = js.native
   
   @JSName("addEventListener")
-  def addEventListener_vrdisplayconnected(`type`: vrdisplayconnected, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
+  def addEventListener_vrdisplayconnected(`type`: vrdisplayconnected, listener: js.Function1[/* ev */ Event, js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_vrdisplayconnected(`type`: vrdisplayconnected, listener: js.Function1[/* ev */ Event, _], useCapture: Boolean): Unit = js.native
+  def addEventListener_vrdisplayconnected(`type`: vrdisplayconnected, listener: js.Function1[/* ev */ Event, js.Any], useCapture: Boolean): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_vrdisplaydisconnected(`type`: vrdisplaydisconnected, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
+  def addEventListener_vrdisplaydisconnected(`type`: vrdisplaydisconnected, listener: js.Function1[/* ev */ Event, js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_vrdisplaydisconnected(`type`: vrdisplaydisconnected, listener: js.Function1[/* ev */ Event, _], useCapture: Boolean): Unit = js.native
+  def addEventListener_vrdisplaydisconnected(`type`: vrdisplaydisconnected, listener: js.Function1[/* ev */ Event, js.Any], useCapture: Boolean): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_vrdisplaypresentchange(`type`: vrdisplaypresentchange, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
+  def addEventListener_vrdisplaypresentchange(`type`: vrdisplaypresentchange, listener: js.Function1[/* ev */ Event, js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_vrdisplaypresentchange(`type`: vrdisplaypresentchange, listener: js.Function1[/* ev */ Event, _], useCapture: Boolean): Unit = js.native
+  def addEventListener_vrdisplaypresentchange(
+    `type`: vrdisplaypresentchange,
+    listener: js.Function1[/* ev */ Event, js.Any],
+    useCapture: Boolean
+  ): Unit = js.native
   
   var mozIndexedDB: IDBFactory = js.native
   
@@ -65,11 +68,11 @@ trait Window extends StObject {
   
   def oRequestAnimationFrame(callback: FrameRequestCallback): Double = js.native
   
-  var onvrdisplayconnected: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onvrdisplayconnected: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
   
-  var onvrdisplaydisconnected: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onvrdisplaydisconnected: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
   
-  var onvrdisplaypresentchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onvrdisplaypresentchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
   
   def setImmediate(handler: js.Function1[/* repeated */ js.Any, Unit]): Double = js.native
   

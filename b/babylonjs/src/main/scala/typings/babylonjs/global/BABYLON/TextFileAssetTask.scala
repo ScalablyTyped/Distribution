@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.TextFileAssetTask")
 @js.native
 class TextFileAssetTask protected ()
-  extends typings.babylonjs.BABYLON.TextFileAssetTask {
+  extends StObject
+     with typings.babylonjs.BABYLON.TextFileAssetTask {
   /**
     * Creates a new TextFileAssetTask object
     * @param name defines the name of the task

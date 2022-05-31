@@ -136,13 +136,4 @@ object SpatialMath {
            with BufferEndCap
     }
   }
-  
-  //////////////////////////////////////////////
-  /// Tile Calculations
-  //////////////////////////////////////////////
-  /**
-  * A colleciton of mathematical algorithms based on the tile pyramid used by Bign Maps.
-  * @requires The Microsoft.Maps.SpatialMath module.
-  */
-  object Tiles
 }

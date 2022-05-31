@@ -2,11 +2,12 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RefractBlock extends NodeMaterialBlock {
+trait RefractBlock
+  extends StObject
+     with NodeMaterialBlock {
   
   /**
     * Gets the incident component

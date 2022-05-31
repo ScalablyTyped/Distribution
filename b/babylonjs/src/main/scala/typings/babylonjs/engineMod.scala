@@ -39,7 +39,6 @@ import typings.std.WebGLQuery
 import typings.std.WebGLTransformFeedback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object engineMod {
@@ -58,30 +57,18 @@ object engineMod {
     def this(canvasOrContext: Nullable[HTMLCanvasElement | WebGLRenderingContext], antialias: Boolean) = this()
     def this(
       canvasOrContext: Nullable[HTMLCanvasElement | WebGLRenderingContext],
-      antialias: js.UndefOr[scala.Nothing],
-      options: EngineOptions
-    ) = this()
-    def this(
-      canvasOrContext: Nullable[HTMLCanvasElement | WebGLRenderingContext],
       antialias: Boolean,
       options: EngineOptions
     ) = this()
     def this(
       canvasOrContext: Nullable[HTMLCanvasElement | WebGLRenderingContext],
-      antialias: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      adaptToDeviceRatio: Boolean
-    ) = this()
-    def this(
-      canvasOrContext: Nullable[HTMLCanvasElement | WebGLRenderingContext],
-      antialias: js.UndefOr[scala.Nothing],
-      options: EngineOptions,
-      adaptToDeviceRatio: Boolean
+      antialias: Unit,
+      options: EngineOptions
     ) = this()
     def this(
       canvasOrContext: Nullable[HTMLCanvasElement | WebGLRenderingContext],
       antialias: Boolean,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       adaptToDeviceRatio: Boolean
     ) = this()
     def this(
@@ -90,26 +77,38 @@ object engineMod {
       options: EngineOptions,
       adaptToDeviceRatio: Boolean
     ) = this()
+    def this(
+      canvasOrContext: Nullable[HTMLCanvasElement | WebGLRenderingContext],
+      antialias: Unit,
+      options: Unit,
+      adaptToDeviceRatio: Boolean
+    ) = this()
+    def this(
+      canvasOrContext: Nullable[HTMLCanvasElement | WebGLRenderingContext],
+      antialias: Unit,
+      options: EngineOptions,
+      adaptToDeviceRatio: Boolean
+    ) = this()
     
-    var _cachedStencilBuffer: js.Any = js.native
+    /* private */ var _cachedStencilBuffer: js.Any = js.native
     
-    var _cachedStencilFunction: js.Any = js.native
+    /* private */ var _cachedStencilFunction: js.Any = js.native
     
-    var _cachedStencilMask: js.Any = js.native
+    /* private */ var _cachedStencilMask: js.Any = js.native
     
-    var _cachedStencilOperationDepthFail: js.Any = js.native
+    /* private */ var _cachedStencilOperationDepthFail: js.Any = js.native
     
-    var _cachedStencilOperationFail: js.Any = js.native
+    /* private */ var _cachedStencilOperationFail: js.Any = js.native
     
-    var _cachedStencilOperationPass: js.Any = js.native
+    /* private */ var _cachedStencilOperationPass: js.Any = js.native
     
-    var _cachedStencilReference: js.Any = js.native
+    /* private */ var _cachedStencilReference: js.Any = js.native
     
-    var _clientWaitAsync: js.Any = js.native
+    /* private */ var _clientWaitAsync: js.Any = js.native
     
     /** @hidden */
     def _connectVREvents(): Unit = js.native
-    def _connectVREvents(canvas: js.UndefOr[scala.Nothing], document: js.Any): Unit = js.native
+    def _connectVREvents(canvas: Unit, document: js.Any): Unit = js.native
     def _connectVREvents(canvas: HTMLCanvasElement): Unit = js.native
     def _connectVREvents(canvas: HTMLCanvasElement, document: js.Any): Unit = js.native
     
@@ -122,11 +121,11 @@ object engineMod {
     /** @hidden */
     def _deleteTimeQuery(query: WebGLQuery): Unit = js.native
     
-    var _deltaTime: js.Any = js.native
+    /* private */ var _deltaTime: js.Any = js.native
     
-    var _deterministicLockstep: js.Any = js.native
+    /* private */ var _deterministicLockstep: js.Any = js.native
     
-    var _disableTouchAction: js.Any = js.native
+    /* private */ var _disableTouchAction: js.Any = js.native
     
     /** @hidden */
     var _drawCalls: PerfCounter = js.native
@@ -134,7 +133,7 @@ object engineMod {
     /** @hidden */
     var _excludedCompressedTextures: js.Array[String] = js.native
     
-    var _fps: js.Any = js.native
+    /* private */ var _fps: js.Any = js.native
     
     /** @hidden */
     def _getGlAlgorithmType(algorithmType: Double): Double = js.native
@@ -150,15 +149,15 @@ object engineMod {
     
     /** @hidden */
     def _loadFileAsync(url: String): js.Promise[String | ArrayBuffer] = js.native
-    def _loadFileAsync(url: String, offlineProvider: js.UndefOr[scala.Nothing], useArrayBuffer: Boolean): js.Promise[String | ArrayBuffer] = js.native
+    def _loadFileAsync(url: String, offlineProvider: Unit, useArrayBuffer: Boolean): js.Promise[String | ArrayBuffer] = js.native
     def _loadFileAsync(url: String, offlineProvider: IOfflineProvider): js.Promise[String | ArrayBuffer] = js.native
     def _loadFileAsync(url: String, offlineProvider: IOfflineProvider, useArrayBuffer: Boolean): js.Promise[String | ArrayBuffer] = js.native
     
-    var _loadingScreen: js.Any = js.native
+    /* private */ var _loadingScreen: js.Any = js.native
     
-    var _lockstepMaxSteps: js.Any = js.native
+    /* private */ var _lockstepMaxSteps: js.Any = js.native
     
-    var _measureFps: js.Any = js.native
+    /* private */ var _measureFps: js.Any = js.native
     
     /** @hidden */
     var _oldHardwareScaleFactor: Double = js.native
@@ -166,19 +165,19 @@ object engineMod {
     /** @hidden */
     var _oldSize: Size = js.native
     
-    var _onBlur: js.Any = js.native
+    /* private */ var _onBlur: js.Any = js.native
     
-    var _onCanvasBlur: js.Any = js.native
+    /* private */ var _onCanvasBlur: js.Any = js.native
     
-    var _onCanvasFocus: js.Any = js.native
+    /* private */ var _onCanvasFocus: js.Any = js.native
     
-    var _onCanvasPointerOut: js.Any = js.native
+    /* private */ var _onCanvasPointerOut: js.Any = js.native
     
-    var _onFocus: js.Any = js.native
+    /* private */ var _onFocus: js.Any = js.native
     
-    var _onFullscreenChange: js.Any = js.native
+    /* private */ var _onFullscreenChange: js.Any = js.native
     
-    var _onPointerLockChange: js.Any = js.native
+    /* private */ var _onPointerLockChange: js.Any = js.native
     
     /** @hidden */
     def _onVRDisplayPointerRestricted(): Unit = js.native
@@ -190,7 +189,7 @@ object engineMod {
     def _onVRFullScreenTriggered(): Unit = js.native
     
     /** @hidden */
-    var _onVrDisplayConnect: Nullable[js.Function1[/* display */ _, Unit]] = js.native
+    var _onVrDisplayConnect: Nullable[js.Function1[/* display */ js.Any, Unit]] = js.native
     
     /** @hidden */
     var _onVrDisplayDisconnect: Nullable[js.Function0[Unit]] = js.native
@@ -198,9 +197,9 @@ object engineMod {
     /** @hidden */
     var _onVrDisplayPresentChange: Nullable[js.Function0[Unit]] = js.native
     
-    var _performanceMonitor: js.Any = js.native
+    /* private */ var _performanceMonitor: js.Any = js.native
     
-    var _pointerLockRequested: js.Any = js.native
+    /* private */ var _pointerLockRequested: js.Any = js.native
     
     /** @hidden */
     def _prepareVRComponent(): Unit = js.native
@@ -225,7 +224,7 @@ object engineMod {
     /** @hidden */
     def _requestVRFrame(): Unit = js.native
     
-    var _rescalePostProcess: js.Any = js.native
+    /* private */ var _rescalePostProcess: js.Any = js.native
     
     /** @hidden */
     def _submitVRFrame(): Unit = js.native
@@ -233,22 +232,17 @@ object engineMod {
     /** @hidden */
     var _textureFormatInUse: String = js.native
     
-    var _timeStep: js.Any = js.native
+    /* private */ var _timeStep: js.Any = js.native
     
     def _uploadImageToTexture(texture: InternalTexture, image: ImageBitmap): Unit = js.native
-    def _uploadImageToTexture(texture: InternalTexture, image: ImageBitmap, faceIndex: js.UndefOr[scala.Nothing], lod: Double): Unit = js.native
     def _uploadImageToTexture(texture: InternalTexture, image: ImageBitmap, faceIndex: Double): Unit = js.native
     def _uploadImageToTexture(texture: InternalTexture, image: ImageBitmap, faceIndex: Double, lod: Double): Unit = js.native
+    def _uploadImageToTexture(texture: InternalTexture, image: ImageBitmap, faceIndex: Unit, lod: Double): Unit = js.native
     /** @hidden */
     def _uploadImageToTexture(texture: InternalTexture, image: HTMLImageElement): Unit = js.native
-    def _uploadImageToTexture(
-      texture: InternalTexture,
-      image: HTMLImageElement,
-      faceIndex: js.UndefOr[scala.Nothing],
-      lod: Double
-    ): Unit = js.native
     def _uploadImageToTexture(texture: InternalTexture, image: HTMLImageElement, faceIndex: Double): Unit = js.native
     def _uploadImageToTexture(texture: InternalTexture, image: HTMLImageElement, faceIndex: Double, lod: Double): Unit = js.native
+    def _uploadImageToTexture(texture: InternalTexture, image: HTMLImageElement, faceIndex: Unit, lod: Double): Unit = js.native
     
     /** @hidden */
     var _vrDisplay: js.Any = js.native
@@ -329,36 +323,7 @@ object engineMod {
       uniformsNames: js.Array[String],
       samplers: js.Array[String],
       defines: String,
-      fallbacks: js.UndefOr[scala.Nothing],
-      onCompiled: js.UndefOr[scala.Nothing],
-      onError: js.UndefOr[scala.Nothing],
-      particleSystem: IParticleSystem
-    ): Effect = js.native
-    def createEffectForParticles(
-      fragmentName: String,
-      uniformsNames: js.Array[String],
-      samplers: js.Array[String],
-      defines: String,
-      fallbacks: js.UndefOr[scala.Nothing],
-      onCompiled: js.UndefOr[scala.Nothing],
-      onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]
-    ): Effect = js.native
-    def createEffectForParticles(
-      fragmentName: String,
-      uniformsNames: js.Array[String],
-      samplers: js.Array[String],
-      defines: String,
-      fallbacks: js.UndefOr[scala.Nothing],
-      onCompiled: js.UndefOr[scala.Nothing],
-      onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit],
-      particleSystem: IParticleSystem
-    ): Effect = js.native
-    def createEffectForParticles(
-      fragmentName: String,
-      uniformsNames: js.Array[String],
-      samplers: js.Array[String],
-      defines: String,
-      fallbacks: js.UndefOr[scala.Nothing],
+      fallbacks: Unit,
       onCompiled: js.Function1[/* effect */ Effect, Unit]
     ): Effect = js.native
     def createEffectForParticles(
@@ -366,17 +331,7 @@ object engineMod {
       uniformsNames: js.Array[String],
       samplers: js.Array[String],
       defines: String,
-      fallbacks: js.UndefOr[scala.Nothing],
-      onCompiled: js.Function1[/* effect */ Effect, Unit],
-      onError: js.UndefOr[scala.Nothing],
-      particleSystem: IParticleSystem
-    ): Effect = js.native
-    def createEffectForParticles(
-      fragmentName: String,
-      uniformsNames: js.Array[String],
-      samplers: js.Array[String],
-      defines: String,
-      fallbacks: js.UndefOr[scala.Nothing],
+      fallbacks: Unit,
       onCompiled: js.Function1[/* effect */ Effect, Unit],
       onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]
     ): Effect = js.native
@@ -385,9 +340,48 @@ object engineMod {
       uniformsNames: js.Array[String],
       samplers: js.Array[String],
       defines: String,
-      fallbacks: js.UndefOr[scala.Nothing],
+      fallbacks: Unit,
       onCompiled: js.Function1[/* effect */ Effect, Unit],
       onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit],
+      particleSystem: IParticleSystem
+    ): Effect = js.native
+    def createEffectForParticles(
+      fragmentName: String,
+      uniformsNames: js.Array[String],
+      samplers: js.Array[String],
+      defines: String,
+      fallbacks: Unit,
+      onCompiled: js.Function1[/* effect */ Effect, Unit],
+      onError: Unit,
+      particleSystem: IParticleSystem
+    ): Effect = js.native
+    def createEffectForParticles(
+      fragmentName: String,
+      uniformsNames: js.Array[String],
+      samplers: js.Array[String],
+      defines: String,
+      fallbacks: Unit,
+      onCompiled: Unit,
+      onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]
+    ): Effect = js.native
+    def createEffectForParticles(
+      fragmentName: String,
+      uniformsNames: js.Array[String],
+      samplers: js.Array[String],
+      defines: String,
+      fallbacks: Unit,
+      onCompiled: Unit,
+      onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit],
+      particleSystem: IParticleSystem
+    ): Effect = js.native
+    def createEffectForParticles(
+      fragmentName: String,
+      uniformsNames: js.Array[String],
+      samplers: js.Array[String],
+      defines: String,
+      fallbacks: Unit,
+      onCompiled: Unit,
+      onError: Unit,
       particleSystem: IParticleSystem
     ): Effect = js.native
     def createEffectForParticles(
@@ -403,35 +397,6 @@ object engineMod {
       samplers: js.Array[String],
       defines: String,
       fallbacks: EffectFallbacks,
-      onCompiled: js.UndefOr[scala.Nothing],
-      onError: js.UndefOr[scala.Nothing],
-      particleSystem: IParticleSystem
-    ): Effect = js.native
-    def createEffectForParticles(
-      fragmentName: String,
-      uniformsNames: js.Array[String],
-      samplers: js.Array[String],
-      defines: String,
-      fallbacks: EffectFallbacks,
-      onCompiled: js.UndefOr[scala.Nothing],
-      onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]
-    ): Effect = js.native
-    def createEffectForParticles(
-      fragmentName: String,
-      uniformsNames: js.Array[String],
-      samplers: js.Array[String],
-      defines: String,
-      fallbacks: EffectFallbacks,
-      onCompiled: js.UndefOr[scala.Nothing],
-      onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit],
-      particleSystem: IParticleSystem
-    ): Effect = js.native
-    def createEffectForParticles(
-      fragmentName: String,
-      uniformsNames: js.Array[String],
-      samplers: js.Array[String],
-      defines: String,
-      fallbacks: EffectFallbacks,
       onCompiled: js.Function1[/* effect */ Effect, Unit]
     ): Effect = js.native
     def createEffectForParticles(
@@ -441,16 +406,6 @@ object engineMod {
       defines: String,
       fallbacks: EffectFallbacks,
       onCompiled: js.Function1[/* effect */ Effect, Unit],
-      onError: js.UndefOr[scala.Nothing],
-      particleSystem: IParticleSystem
-    ): Effect = js.native
-    def createEffectForParticles(
-      fragmentName: String,
-      uniformsNames: js.Array[String],
-      samplers: js.Array[String],
-      defines: String,
-      fallbacks: EffectFallbacks,
-      onCompiled: js.Function1[/* effect */ Effect, Unit],
       onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]
     ): Effect = js.native
     def createEffectForParticles(
@@ -461,6 +416,45 @@ object engineMod {
       fallbacks: EffectFallbacks,
       onCompiled: js.Function1[/* effect */ Effect, Unit],
       onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit],
+      particleSystem: IParticleSystem
+    ): Effect = js.native
+    def createEffectForParticles(
+      fragmentName: String,
+      uniformsNames: js.Array[String],
+      samplers: js.Array[String],
+      defines: String,
+      fallbacks: EffectFallbacks,
+      onCompiled: js.Function1[/* effect */ Effect, Unit],
+      onError: Unit,
+      particleSystem: IParticleSystem
+    ): Effect = js.native
+    def createEffectForParticles(
+      fragmentName: String,
+      uniformsNames: js.Array[String],
+      samplers: js.Array[String],
+      defines: String,
+      fallbacks: EffectFallbacks,
+      onCompiled: Unit,
+      onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]
+    ): Effect = js.native
+    def createEffectForParticles(
+      fragmentName: String,
+      uniformsNames: js.Array[String],
+      samplers: js.Array[String],
+      defines: String,
+      fallbacks: EffectFallbacks,
+      onCompiled: Unit,
+      onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit],
+      particleSystem: IParticleSystem
+    ): Effect = js.native
+    def createEffectForParticles(
+      fragmentName: String,
+      uniformsNames: js.Array[String],
+      samplers: js.Array[String],
+      defines: String,
+      fallbacks: EffectFallbacks,
+      onCompiled: Unit,
+      onError: Unit,
       particleSystem: IParticleSystem
     ): Effect = js.native
     
@@ -1036,18 +1030,13 @@ object engineMod {
       * @param reverseSide defines if culling must be reversed (CCW instead of CW and CW instead of CCW)
       */
     def setState(culling: Boolean): Unit = js.native
-    def setState(
-      culling: Boolean,
-      zOffset: js.UndefOr[scala.Nothing],
-      force: js.UndefOr[scala.Nothing],
-      reverseSide: Boolean
-    ): Unit = js.native
-    def setState(culling: Boolean, zOffset: js.UndefOr[scala.Nothing], force: Boolean): Unit = js.native
-    def setState(culling: Boolean, zOffset: js.UndefOr[scala.Nothing], force: Boolean, reverseSide: Boolean): Unit = js.native
     def setState(culling: Boolean, zOffset: Double): Unit = js.native
-    def setState(culling: Boolean, zOffset: Double, force: js.UndefOr[scala.Nothing], reverseSide: Boolean): Unit = js.native
     def setState(culling: Boolean, zOffset: Double, force: Boolean): Unit = js.native
     def setState(culling: Boolean, zOffset: Double, force: Boolean, reverseSide: Boolean): Unit = js.native
+    def setState(culling: Boolean, zOffset: Double, force: Unit, reverseSide: Boolean): Unit = js.native
+    def setState(culling: Boolean, zOffset: Unit, force: Boolean): Unit = js.native
+    def setState(culling: Boolean, zOffset: Unit, force: Boolean, reverseSide: Boolean): Unit = js.native
+    def setState(culling: Boolean, zOffset: Unit, force: Unit, reverseSide: Boolean): Unit = js.native
     
     /**
       * Enable or disable the stencil buffer
@@ -1279,9 +1268,7 @@ object engineMod {
       * Default AudioEngine factory responsible of creating the Audio Engine.
       * By default, this will create a BabylonJS Audio Engine if the workload has been embedded.
       */
-    @JSImport("babylonjs/Engines/engine", "Engine.AudioEngineFactory")
-    @js.native
-    def AudioEngineFactory(hostElement: Nullable[HTMLElement]): IAudioEngine = js.native
+    inline def AudioEngineFactory(hostElement: Nullable[HTMLElement]): IAudioEngine = ^.asInstanceOf[js.Dynamic].applyDynamic("AudioEngineFactory")(hostElement.asInstanceOf[js.Any]).asInstanceOf[IAudioEngine]
     
     /** Passed to stencilOperation to specify that stencil value must be decremented */
     @JSImport("babylonjs/Engines/engine", "Engine.DECR")
@@ -1319,9 +1306,7 @@ object engineMod {
       * @param canvas The rendering canvas element
       * @returns The loading screen
       */
-    @JSImport("babylonjs/Engines/engine", "Engine.DefaultLoadingScreenFactory")
-    @js.native
-    def DefaultLoadingScreenFactory(canvas: HTMLCanvasElement): ILoadingScreen = js.native
+    inline def DefaultLoadingScreenFactory(canvas: HTMLCanvasElement): ILoadingScreen = ^.asInstanceOf[js.Dynamic].applyDynamic("DefaultLoadingScreenFactory")(canvas.asInstanceOf[js.Any]).asInstanceOf[ILoadingScreen]
     
     /** Passed to depthFunction or stencilFunction to specify depth or stencil tests will pass if the new depth value is equals to the stored value */
     @JSImport("babylonjs/Engines/engine", "Engine.EQUAL")
@@ -1373,12 +1358,8 @@ object engineMod {
       * @param flag defines which part of the materials must be marked as dirty
       * @param predicate defines a predicate used to filter which materials should be affected
       */
-    @JSImport("babylonjs/Engines/engine", "Engine.MarkAllMaterialsAsDirty")
-    @js.native
-    def MarkAllMaterialsAsDirty(flag: Double): Unit = js.native
-    @JSImport("babylonjs/Engines/engine", "Engine.MarkAllMaterialsAsDirty")
-    @js.native
-    def MarkAllMaterialsAsDirty(flag: Double, predicate: js.Function1[/* mat */ Material, Boolean]): Unit = js.native
+    inline def MarkAllMaterialsAsDirty(flag: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("MarkAllMaterialsAsDirty")(flag.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def MarkAllMaterialsAsDirty(flag: Double, predicate: js.Function1[/* mat */ Material, Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("MarkAllMaterialsAsDirty")(flag.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Passed to depthFunction or stencilFunction to specify depth or stencil tests will never pass. i.e. Nothing will be drawn */
     @JSImport("babylonjs/Engines/engine", "Engine.NEVER")
@@ -1394,13 +1375,11 @@ object engineMod {
       * Default offline support factory responsible of creating a tool used to store data locally.
       * By default, this will create a Database object if the workload has been embedded.
       */
-    @JSImport("babylonjs/Engines/engine", "Engine.OfflineProviderFactory")
-    @js.native
-    def OfflineProviderFactory(
+    inline def OfflineProviderFactory(
       urlToScene: String,
-      callbackManifestChecked: js.Function1[/* checked */ Boolean, _],
+      callbackManifestChecked: js.Function1[/* checked */ Boolean, js.Any],
       disableManifestCheck: Boolean
-    ): IOfflineProvider = js.native
+    ): IOfflineProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("OfflineProviderFactory")(urlToScene.asInstanceOf[js.Any], callbackManifestChecked.asInstanceOf[js.Any], disableManifestCheck.asInstanceOf[js.Any])).asInstanceOf[IOfflineProvider]
     
     /** Passed to stencilOperation to specify that stencil value must be replaced */
     @JSImport("babylonjs/Engines/engine", "Engine.REPLACE")
@@ -1715,33 +1694,25 @@ object engineMod {
     /**
       * Asks the browser to exit fullscreen mode
       */
-    @JSImport("babylonjs/Engines/engine", "Engine._ExitFullscreen")
-    @js.native
-    def _ExitFullscreen(): Unit = js.native
+    inline def _ExitFullscreen(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_ExitFullscreen")().asInstanceOf[Unit]
     
     /**
       * Asks the browser to exit pointerlock mode
       */
-    @JSImport("babylonjs/Engines/engine", "Engine._ExitPointerlock")
-    @js.native
-    def _ExitPointerlock(): Unit = js.native
+    inline def _ExitPointerlock(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_ExitPointerlock")().asInstanceOf[Unit]
     
     /**
       * Ask the browser to promote the current element to fullscreen rendering mode
       * @param element defines the DOM element to promote
       */
-    @JSImport("babylonjs/Engines/engine", "Engine._RequestFullscreen")
-    @js.native
-    def _RequestFullscreen(element: HTMLElement): Unit = js.native
+    inline def _RequestFullscreen(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_RequestFullscreen")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** Pointerlock and fullscreen */
     /**
       * Ask the browser to promote the current element to pointerlock mode
       * @param element defines the DOM element to promote
       */
-    @JSImport("babylonjs/Engines/engine", "Engine._RequestPointerlock")
-    @js.native
-    def _RequestPointerlock(element: HTMLElement): Unit = js.native
+    inline def _RequestPointerlock(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_RequestPointerlock")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Method called to create the default rescale post process on each engine.
@@ -1749,8 +1720,7 @@ object engineMod {
     @JSImport("babylonjs/Engines/engine", "Engine._RescalePostProcessFactory")
     @js.native
     def _RescalePostProcessFactory: Nullable[js.Function1[/* engine */ this.type, PostProcess]] = js.native
-    @scala.inline
-    def _RescalePostProcessFactory_=(x: Nullable[js.Function1[/* engine */ this.type, PostProcess]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_RescalePostProcessFactory")(x.asInstanceOf[js.Any])
+    inline def _RescalePostProcessFactory_=(x: Nullable[js.Function1[/* engine */ this.type, PostProcess]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_RescalePostProcessFactory")(x.asInstanceOf[js.Any])
     
     /**
       * Gets the audio engine
@@ -1760,65 +1730,54 @@ object engineMod {
     @JSImport("babylonjs/Engines/engine", "Engine.audioEngine")
     @js.native
     def audioEngine: IAudioEngine = js.native
-    @scala.inline
-    def audioEngine_=(x: IAudioEngine): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("audioEngine")(x.asInstanceOf[js.Any])
+    inline def audioEngine_=(x: IAudioEngine): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("audioEngine")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IDisplayChangedEventArgs extends StObject {
     
     /** Gets the vrDisplay object (if any) */
-    var vrDisplay: Nullable[_] = js.native
+    var vrDisplay: Nullable[js.Any]
     
     /** Gets a boolean indicating if webVR is supported */
-    var vrSupported: Boolean = js.native
+    var vrSupported: Boolean
   }
   object IDisplayChangedEventArgs {
     
-    @scala.inline
-    def apply(vrSupported: Boolean): IDisplayChangedEventArgs = {
-      val __obj = js.Dynamic.literal(vrSupported = vrSupported.asInstanceOf[js.Any])
+    inline def apply(vrSupported: Boolean): IDisplayChangedEventArgs = {
+      val __obj = js.Dynamic.literal(vrSupported = vrSupported.asInstanceOf[js.Any], vrDisplay = null)
       __obj.asInstanceOf[IDisplayChangedEventArgs]
     }
     
-    @scala.inline
-    implicit class IDisplayChangedEventArgsMutableBuilder[Self <: IDisplayChangedEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: IDisplayChangedEventArgs](x: Self) {
       
-      @scala.inline
-      def setVrDisplay(value: Nullable[_]): Self = StObject.set(x, "vrDisplay", value.asInstanceOf[js.Any])
+      inline def setVrDisplay(value: Nullable[js.Any]): Self = StObject.set(x, "vrDisplay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVrDisplayNull: Self = StObject.set(x, "vrDisplay", null)
+      inline def setVrDisplayNull: Self = StObject.set(x, "vrDisplay", null)
       
-      @scala.inline
-      def setVrSupported(value: Boolean): Self = StObject.set(x, "vrSupported", value.asInstanceOf[js.Any])
+      inline def setVrSupported(value: Boolean): Self = StObject.set(x, "vrSupported", value.asInstanceOf[js.Any])
     }
   }
   
   /**
     * Defines the interface used by objects containing a viewport (like a camera)
     */
-  @js.native
   trait IViewportOwnerLike extends StObject {
     
     /**
       * Gets or sets the viewport
       */
-    var viewport: IViewportLike = js.native
+    var viewport: IViewportLike
   }
   object IViewportOwnerLike {
     
-    @scala.inline
-    def apply(viewport: IViewportLike): IViewportOwnerLike = {
+    inline def apply(viewport: IViewportLike): IViewportOwnerLike = {
       val __obj = js.Dynamic.literal(viewport = viewport.asInstanceOf[js.Any])
       __obj.asInstanceOf[IViewportOwnerLike]
     }
     
-    @scala.inline
-    implicit class IViewportOwnerLikeMutableBuilder[Self <: IViewportOwnerLike] (val x: Self) extends AnyVal {
+    extension [Self <: IViewportOwnerLike](x: Self) {
       
-      @scala.inline
-      def setViewport(value: IViewportLike): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
+      inline def setViewport(value: IViewportLike): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
     }
   }
 }

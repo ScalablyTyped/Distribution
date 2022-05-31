@@ -3,7 +3,6 @@ package typings.babylonjs.indexMod
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "DepthRenderer")
@@ -21,32 +20,41 @@ class DepthRenderer protected ()
   def this(scene: typings.babylonjs.sceneMod.Scene, `type`: Double) = this()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
-    `type`: js.UndefOr[scala.Nothing],
-    camera: Nullable[typings.babylonjs.cameraMod.Camera]
-  ) = this()
-  def this(
-    scene: typings.babylonjs.sceneMod.Scene,
     `type`: Double,
     camera: Nullable[typings.babylonjs.cameraMod.Camera]
   ) = this()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
-    `type`: js.UndefOr[scala.Nothing],
-    camera: js.UndefOr[Nullable[typings.babylonjs.cameraMod.Camera]],
+    `type`: Unit,
+    camera: Nullable[typings.babylonjs.cameraMod.Camera]
+  ) = this()
+  def this(
+    scene: typings.babylonjs.sceneMod.Scene,
+    `type`: Double,
+    camera: Unit,
     storeNonLinearDepth: Boolean
   ) = this()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
     `type`: Double,
-    camera: js.UndefOr[Nullable[typings.babylonjs.cameraMod.Camera]],
+    camera: Nullable[typings.babylonjs.cameraMod.Camera],
+    storeNonLinearDepth: Boolean
+  ) = this()
+  def this(scene: typings.babylonjs.sceneMod.Scene, `type`: Unit, camera: Unit, storeNonLinearDepth: Boolean) = this()
+  def this(
+    scene: typings.babylonjs.sceneMod.Scene,
+    `type`: Unit,
+    camera: Nullable[typings.babylonjs.cameraMod.Camera],
     storeNonLinearDepth: Boolean
   ) = this()
 }
 /* static members */
 object DepthRenderer {
   
-  /** @hidden */
-  @JSImport("babylonjs/index", "DepthRenderer._SceneComponentInitialization")
+  @JSImport("babylonjs/index", "DepthRenderer")
   @js.native
-  def _SceneComponentInitialization(scene: typings.babylonjs.sceneMod.Scene): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  /** @hidden */
+  inline def _SceneComponentInitialization(scene: typings.babylonjs.sceneMod.Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -2,19 +2,18 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PowerEase extends EasingFunction {
+trait PowerEase
+  extends StObject
+     with EasingFunction {
   
   /** Defines the power of the function */
-  var power: Double = js.native
+  var power: Double
 }
 object PowerEase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _easingMode: js.Any,
     ease: Double => Double,
     easeInCore: Double => Double,
@@ -26,10 +25,8 @@ object PowerEase {
     __obj.asInstanceOf[PowerEase]
   }
   
-  @scala.inline
-  implicit class PowerEaseMutableBuilder[Self <: PowerEase] (val x: Self) extends AnyVal {
+  extension [Self <: PowerEase](x: Self) {
     
-    @scala.inline
-    def setPower(value: Double): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
+    inline def setPower(value: Double): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
   }
 }

@@ -2,29 +2,30 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EngineInstrumentation extends IDisposable {
+trait EngineInstrumentation
+  extends StObject
+     with IDisposable {
   
-  var _captureGPUFrameTime: js.Any = js.native
+  /* private */ var _captureGPUFrameTime: js.Any = js.native
   
-  var _captureShaderCompilationTime: js.Any = js.native
+  /* private */ var _captureShaderCompilationTime: js.Any = js.native
   
-  var _gpuFrameTime: js.Any = js.native
+  /* private */ var _gpuFrameTime: js.Any = js.native
   
-  var _gpuFrameTimeToken: js.Any = js.native
+  /* private */ var _gpuFrameTimeToken: js.Any = js.native
   
-  var _onAfterShaderCompilationObserver: js.Any = js.native
+  /* private */ var _onAfterShaderCompilationObserver: js.Any = js.native
   
-  var _onBeforeShaderCompilationObserver: js.Any = js.native
+  /* private */ var _onBeforeShaderCompilationObserver: js.Any = js.native
   
-  var _onBeginFrameObserver: js.Any = js.native
+  /* private */ var _onBeginFrameObserver: js.Any = js.native
   
-  var _onEndFrameObserver: js.Any = js.native
+  /* private */ var _onEndFrameObserver: js.Any = js.native
   
-  var _shaderCompilationTime: js.Any = js.native
+  /* private */ var _shaderCompilationTime: js.Any = js.native
   
   /**
     * Gets the GPU frame time capture status

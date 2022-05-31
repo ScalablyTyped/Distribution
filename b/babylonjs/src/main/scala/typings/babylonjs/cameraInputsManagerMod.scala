@@ -6,7 +6,6 @@ import typings.babylonjs.cameraMod.Camera
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cameraInputsManagerMod {
@@ -20,7 +19,7 @@ object cameraInputsManagerMod {
       */
     def this(camera: TCamera) = this()
     
-    var _addCheckInputs: js.Any = js.native
+    /* private */ var _addCheckInputs: js.Any = js.native
     
     /**
       * Add an input method to a camera
@@ -122,7 +121,7 @@ object cameraInputsManagerMod {
   type CameraInputsMap[TCamera /* <: Camera */] = (/**
     * Accessor to the input by input type.
     */
-  StringDictionary[ICameraInput[TCamera]]) with (/**
+  StringDictionary[ICameraInput[TCamera]]) & (/**
     * Accessor to the input by input index.
     */
   NumberDictionary[ICameraInput[TCamera]])

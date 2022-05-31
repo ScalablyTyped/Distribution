@@ -10,26 +10,23 @@ import typings.oracleOraclejet.oracleOraclejetStrings.thousand
 import typings.oracleOraclejet.oracleOraclejetStrings.trillion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Converter extends StObject {
   
-  var converter: js.Object = js.native
+  var converter: js.Object
   
-  var label: String = js.native
+  var label: String
   
-  var labelStyle: js.Object = js.native
+  var labelStyle: js.Object
   
-  def renderer(context: PieCenterContext): Insert | PreventDefault = js.native
+  def renderer(context: PieCenterContext): Insert | PreventDefault
   
-  var scaling: none | thousand | million | billion | trillion | quadrillion | auto = js.native
+  var scaling: none | thousand | million | billion | trillion | quadrillion | auto
 }
 object Converter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     converter: js.Object,
     label: String,
     labelStyle: js.Object,
@@ -40,22 +37,16 @@ object Converter {
     __obj.asInstanceOf[Converter]
   }
   
-  @scala.inline
-  implicit class ConverterMutableBuilder[Self <: Converter] (val x: Self) extends AnyVal {
+  extension [Self <: Converter](x: Self) {
     
-    @scala.inline
-    def setConverter(value: js.Object): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
+    inline def setConverter(value: js.Object): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelStyle(value: js.Object): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
+    inline def setLabelStyle(value: js.Object): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderer(value: PieCenterContext => Insert | PreventDefault): Self = StObject.set(x, "renderer", js.Any.fromFunction1(value))
+    inline def setRenderer(value: PieCenterContext => Insert | PreventDefault): Self = StObject.set(x, "renderer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScaling(value: none | thousand | million | billion | trillion | quadrillion | auto): Self = StObject.set(x, "scaling", value.asInstanceOf[js.Any])
+    inline def setScaling(value: none | thousand | million | billion | trillion | quadrillion | auto): Self = StObject.set(x, "scaling", value.asInstanceOf[js.Any])
   }
 }

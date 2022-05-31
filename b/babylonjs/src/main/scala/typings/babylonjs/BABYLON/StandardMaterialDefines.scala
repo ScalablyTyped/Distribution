@@ -2,13 +2,13 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.babylonjs.BABYLON.IMaterialDetailMapDefines because var conflicts: _areTexturesDirty. Inlined DETAIL, DETAILDIRECTUV, DETAIL_NORMALBLENDMETHOD */ @js.native
 trait StandardMaterialDefines
-  extends MaterialDefines
+  extends StObject
+     with MaterialDefines
      with IImageProcessingConfigurationDefines {
   
   var ALPHABLEND: Boolean = js.native

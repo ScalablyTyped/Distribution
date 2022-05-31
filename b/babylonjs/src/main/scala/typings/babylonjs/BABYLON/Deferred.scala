@@ -2,15 +2,14 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Deferred[T] extends StObject {
   
-  var _reject: js.Any = js.native
+  /* private */ var _reject: js.Any = js.native
   
-  var _resolve: js.Any = js.native
+  /* private */ var _resolve: js.Any = js.native
   
   /**
     * The promise associated with this deferred object.

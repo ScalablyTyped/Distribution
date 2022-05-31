@@ -1,6 +1,5 @@
 package typings.jupyterlabStatusbar
 
-import org.scalablytyped.runtime.Shortcut
 import typings.jupyterlabStatusbar.groupMod.GroupItem.IProps
 import typings.jupyterlabStatusbar.kernelStatusMod.KernelStatus.IOptions
 import typings.jupyterlabStatusbar.statusbarMod.StatusBar
@@ -12,29 +11,19 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  object GroupItem {
-    
-    @JSImport("@jupyterlab/statusbar", "GroupItem")
-    @js.native
-    def apply(props: IProps with HTMLAttributes[HTMLDivElement]): ReactElement = js.native
-  }
+  @JSImport("@jupyterlab/statusbar", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  object IStatusBar extends Shortcut {
-    
-    @JSImport("@jupyterlab/statusbar", "IStatusBar")
-    @js.native
-    val ^ : Token[typings.jupyterlabStatusbar.tokensMod.IStatusBar] = js.native
-    
-    type _To = Token[typings.jupyterlabStatusbar.tokensMod.IStatusBar]
-    
-    /* This means you don't have to write `^`, but can instead just say `IStatusBar.foo` */
-    override def _to: Token[typings.jupyterlabStatusbar.tokensMod.IStatusBar] = ^
-  }
+  inline def GroupItem(props: IProps & HTMLAttributes[HTMLDivElement]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("GroupItem")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  
+  @JSImport("@jupyterlab/statusbar", "IStatusBar")
+  @js.native
+  val IStatusBar: Token[typings.jupyterlabStatusbar.tokensMod.IStatusBar] = js.native
   
   @JSImport("@jupyterlab/statusbar", "KernelStatus")
   @js.native
@@ -97,10 +86,6 @@ object mod {
         */
       def this(options: typings.jupyterlabStatusbar.memoryUsageMod.MemoryUsage.Model.IOptions) = this()
     }
-    /**
-      * A namespace for Model statics.
-      */
-    object Model
   }
   
   @JSImport("@jupyterlab/statusbar", "Popup")
@@ -113,12 +98,7 @@ object mod {
     def this(options: typings.jupyterlabStatusbar.hoverMod.Popup.IOptions) = this()
   }
   
-  object ProgressBar {
-    
-    @JSImport("@jupyterlab/statusbar", "ProgressBar")
-    @js.native
-    def apply(props: typings.jupyterlabStatusbar.progressBarMod.ProgressBar.IProps): Element = js.native
-  }
+  inline def ProgressBar(props: typings.jupyterlabStatusbar.progressBarMod.ProgressBar.IProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ProgressBar")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@jupyterlab/statusbar", "RunningSessions")
   @js.native
@@ -144,12 +124,7 @@ object mod {
   @js.native
   class StatusBar_ () extends StatusBar
   
-  object TextItem {
-    
-    @JSImport("@jupyterlab/statusbar", "TextItem")
-    @js.native
-    def apply(props: typings.jupyterlabStatusbar.textMod.TextItem.IProps with HTMLAttributes[HTMLSpanElement]): ReactElement = js.native
-  }
+  inline def TextItem(props: typings.jupyterlabStatusbar.textMod.TextItem.IProps & HTMLAttributes[HTMLSpanElement]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("TextItem")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("@jupyterlab/statusbar", "clickedItem")
   @js.native
@@ -171,9 +146,7 @@ object mod {
   @js.native
   val rightSide: String = js.native
   
-  @JSImport("@jupyterlab/statusbar", "showPopup")
-  @js.native
-  def showPopup(options: typings.jupyterlabStatusbar.hoverMod.Popup.IOptions): typings.jupyterlabStatusbar.hoverMod.Popup = js.native
+  inline def showPopup(options: typings.jupyterlabStatusbar.hoverMod.Popup.IOptions): typings.jupyterlabStatusbar.hoverMod.Popup = ^.asInstanceOf[js.Dynamic].applyDynamic("showPopup")(options.asInstanceOf[js.Any]).asInstanceOf[typings.jupyterlabStatusbar.hoverMod.Popup]
   
   @JSImport("@jupyterlab/statusbar", "side")
   @js.native
@@ -182,9 +155,4 @@ object mod {
   @JSImport("@jupyterlab/statusbar", "statusBar")
   @js.native
   val statusBar: String = js.native
-  
-  /**
-    * A namespace for LineColComponent.
-    */
-  object LineColComponent
 }

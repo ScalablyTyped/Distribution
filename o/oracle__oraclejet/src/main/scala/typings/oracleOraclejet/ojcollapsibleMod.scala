@@ -38,43 +38,52 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ojcollapsibleMod {
   
   @js.native
-  trait ojCollapsible extends baseComponent[ojCollapsibleSettableProperties] {
+  trait ojCollapsible
+    extends StObject
+       with baseComponent[ojCollapsibleSettableProperties] {
     
     def addEventListener(
       `type`: expandAreaChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[header | disclosureIcon], _]
+      listener: js.ThisFunction1[
+          /* this */ HTMLElement, 
+          /* ev */ JetElementCustomEvent[header | disclosureIcon], 
+          js.Any
+        ]
     ): Unit = js.native
     def addEventListener(
       `type`: expandAreaChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[header | disclosureIcon], _],
+      listener: js.ThisFunction1[
+          /* this */ HTMLElement, 
+          /* ev */ JetElementCustomEvent[header | disclosureIcon], 
+          js.Any
+        ],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_disabledChanged(
       `type`: disabledChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_disabledChanged(
       `type`: disabledChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_expandedChanged(
       `type`: expandedChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_expandedChanged(
       `type`: expandedChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
@@ -83,7 +92,7 @@ object ojcollapsibleMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojcollapsibleMod.ojCollapsible.ojBeforeCollapse, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -92,7 +101,7 @@ object ojcollapsibleMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojcollapsibleMod.ojCollapsible.ojBeforeCollapse, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -102,7 +111,7 @@ object ojcollapsibleMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojcollapsibleMod.ojCollapsible.ojBeforeExpand, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -111,7 +120,7 @@ object ojcollapsibleMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojcollapsibleMod.ojCollapsible.ojBeforeExpand, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -121,7 +130,7 @@ object ojcollapsibleMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojcollapsibleMod.ojCollapsible.ojCollapse, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -130,7 +139,7 @@ object ojcollapsibleMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojcollapsibleMod.ojCollapsible.ojCollapse, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -140,7 +149,7 @@ object ojcollapsibleMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojcollapsibleMod.ojCollapsible.ojExpand, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -149,7 +158,7 @@ object ojcollapsibleMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojcollapsibleMod.ojCollapsible.ojExpand, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -167,25 +176,31 @@ object ojcollapsibleMod {
     @JSName("getProperty")
     def getProperty_expanded(property: expanded): Boolean = js.native
     
-    var onDisabledChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
+    var onDisabledChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], js.Any]) | Null = js.native
     
-    var onExpandAreaChanged: (js.Function1[/* event */ JetElementCustomEvent[header | disclosureIcon], _]) | Null = js.native
+    var onExpandAreaChanged: (js.Function1[/* event */ JetElementCustomEvent[header | disclosureIcon], js.Any]) | Null = js.native
     
-    var onExpandedChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
+    var onExpandedChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], js.Any]) | Null = js.native
     
     var onOjBeforeCollapse: (js.Function1[
         /* event */ typings.oracleOraclejet.ojcollapsibleMod.ojCollapsible.ojBeforeCollapse, 
-        _
+        js.Any
       ]) | Null = js.native
     
     var onOjBeforeExpand: (js.Function1[
         /* event */ typings.oracleOraclejet.ojcollapsibleMod.ojCollapsible.ojBeforeExpand, 
-        _
+        js.Any
       ]) | Null = js.native
     
-    var onOjCollapse: (js.Function1[/* event */ typings.oracleOraclejet.ojcollapsibleMod.ojCollapsible.ojCollapse, _]) | Null = js.native
+    var onOjCollapse: (js.Function1[
+        /* event */ typings.oracleOraclejet.ojcollapsibleMod.ojCollapsible.ojCollapse, 
+        js.Any
+      ]) | Null = js.native
     
-    var onOjExpand: (js.Function1[/* event */ typings.oracleOraclejet.ojcollapsibleMod.ojCollapsible.ojExpand, _]) | Null = js.native
+    var onOjExpand: (js.Function1[
+        /* event */ typings.oracleOraclejet.ojcollapsibleMod.ojCollapsible.ojExpand, 
+        js.Any
+      ]) | Null = js.native
     
     def setProperties(properties: ojCollapsibleSettablePropertiesLenient): Unit = js.native
     
@@ -207,27 +222,27 @@ object ojcollapsibleMod {
     type ojExpand = CustomEvent[Header]
   }
   
-  @js.native
-  trait ojCollapsibleEventMap extends baseComponentEventMap[ojCollapsibleSettableProperties] {
+  trait ojCollapsibleEventMap
+    extends StObject
+       with baseComponentEventMap[ojCollapsibleSettableProperties] {
     
-    var disabledChanged: JetElementCustomEvent[Boolean] = js.native
+    var disabledChanged: JetElementCustomEvent[Boolean]
     
-    var expandAreaChanged: JetElementCustomEvent[header | disclosureIcon] = js.native
+    var expandAreaChanged: JetElementCustomEvent[header | disclosureIcon]
     
-    var expandedChanged: JetElementCustomEvent[Boolean] = js.native
+    var expandedChanged: JetElementCustomEvent[Boolean]
     
-    var ojBeforeCollapse: typings.oracleOraclejet.ojcollapsibleMod.ojCollapsible.ojBeforeCollapse = js.native
+    var ojBeforeCollapse: typings.oracleOraclejet.ojcollapsibleMod.ojCollapsible.ojBeforeCollapse
     
-    var ojBeforeExpand: typings.oracleOraclejet.ojcollapsibleMod.ojCollapsible.ojBeforeExpand = js.native
+    var ojBeforeExpand: typings.oracleOraclejet.ojcollapsibleMod.ojCollapsible.ojBeforeExpand
     
-    var ojCollapse: typings.oracleOraclejet.ojcollapsibleMod.ojCollapsible.ojCollapse = js.native
+    var ojCollapse: typings.oracleOraclejet.ojcollapsibleMod.ojCollapsible.ojCollapse
     
-    var ojExpand: typings.oracleOraclejet.ojcollapsibleMod.ojCollapsible.ojExpand = js.native
+    var ojExpand: typings.oracleOraclejet.ojcollapsibleMod.ojCollapsible.ojExpand
   }
   object ojCollapsibleEventMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: UIEvent,
       animationcancel: AnimationEvent,
       animationend: AnimationEvent,
@@ -333,113 +348,90 @@ object ojcollapsibleMod {
       __obj.asInstanceOf[ojCollapsibleEventMap]
     }
     
-    @scala.inline
-    implicit class ojCollapsibleEventMapMutableBuilder[Self <: ojCollapsibleEventMap] (val x: Self) extends AnyVal {
+    extension [Self <: ojCollapsibleEventMap](x: Self) {
       
-      @scala.inline
-      def setDisabledChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "disabledChanged", value.asInstanceOf[js.Any])
+      inline def setDisabledChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "disabledChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandAreaChanged(value: JetElementCustomEvent[header | disclosureIcon]): Self = StObject.set(x, "expandAreaChanged", value.asInstanceOf[js.Any])
+      inline def setExpandAreaChanged(value: JetElementCustomEvent[header | disclosureIcon]): Self = StObject.set(x, "expandAreaChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandedChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "expandedChanged", value.asInstanceOf[js.Any])
+      inline def setExpandedChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "expandedChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjBeforeCollapse(value: typings.oracleOraclejet.ojcollapsibleMod.ojCollapsible.ojBeforeCollapse): Self = StObject.set(x, "ojBeforeCollapse", value.asInstanceOf[js.Any])
+      inline def setOjBeforeCollapse(value: typings.oracleOraclejet.ojcollapsibleMod.ojCollapsible.ojBeforeCollapse): Self = StObject.set(x, "ojBeforeCollapse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjBeforeExpand(value: typings.oracleOraclejet.ojcollapsibleMod.ojCollapsible.ojBeforeExpand): Self = StObject.set(x, "ojBeforeExpand", value.asInstanceOf[js.Any])
+      inline def setOjBeforeExpand(value: typings.oracleOraclejet.ojcollapsibleMod.ojCollapsible.ojBeforeExpand): Self = StObject.set(x, "ojBeforeExpand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjCollapse(value: typings.oracleOraclejet.ojcollapsibleMod.ojCollapsible.ojCollapse): Self = StObject.set(x, "ojCollapse", value.asInstanceOf[js.Any])
+      inline def setOjCollapse(value: typings.oracleOraclejet.ojcollapsibleMod.ojCollapsible.ojCollapse): Self = StObject.set(x, "ojCollapse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjExpand(value: typings.oracleOraclejet.ojcollapsibleMod.ojCollapsible.ojExpand): Self = StObject.set(x, "ojExpand", value.asInstanceOf[js.Any])
+      inline def setOjExpand(value: typings.oracleOraclejet.ojcollapsibleMod.ojCollapsible.ojExpand): Self = StObject.set(x, "ojExpand", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait ojCollapsibleSettableProperties extends baseComponentSettableProperties {
+  trait ojCollapsibleSettableProperties
+    extends StObject
+       with baseComponentSettableProperties {
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    var expandArea: header | disclosureIcon = js.native
+    var expandArea: header | disclosureIcon
     
-    var expanded: Boolean = js.native
+    var expanded: Boolean
   }
   object ojCollapsibleSettableProperties {
     
-    @scala.inline
-    def apply(disabled: Boolean, expandArea: header | disclosureIcon, expanded: Boolean): ojCollapsibleSettableProperties = {
-      val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], expandArea = expandArea.asInstanceOf[js.Any], expanded = expanded.asInstanceOf[js.Any])
+    inline def apply(disabled: Boolean, expandArea: header | disclosureIcon, expanded: Boolean): ojCollapsibleSettableProperties = {
+      val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], expandArea = expandArea.asInstanceOf[js.Any], expanded = expanded.asInstanceOf[js.Any], translations = null)
       __obj.asInstanceOf[ojCollapsibleSettableProperties]
     }
     
-    @scala.inline
-    implicit class ojCollapsibleSettablePropertiesMutableBuilder[Self <: ojCollapsibleSettableProperties] (val x: Self) extends AnyVal {
+    extension [Self <: ojCollapsibleSettableProperties](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandArea(value: header | disclosureIcon): Self = StObject.set(x, "expandArea", value.asInstanceOf[js.Any])
+      inline def setExpandArea(value: header | disclosureIcon): Self = StObject.set(x, "expandArea", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+      inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojcollapsible.ojCollapsibleSettableProperties> */
-  @js.native
   trait ojCollapsibleSettablePropertiesLenient
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var expandArea: js.UndefOr[header | disclosureIcon] = js.native
+    var expandArea: js.UndefOr[header | disclosureIcon] = js.undefined
     
-    var expanded: js.UndefOr[Boolean] = js.native
+    var expanded: js.UndefOr[Boolean] = js.undefined
     
-    var translations: js.UndefOr[js.Object | Null] = js.native
+    var translations: js.UndefOr[js.Object | Null] = js.undefined
   }
   object ojCollapsibleSettablePropertiesLenient {
     
-    @scala.inline
-    def apply(): ojCollapsibleSettablePropertiesLenient = {
+    inline def apply(): ojCollapsibleSettablePropertiesLenient = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ojCollapsibleSettablePropertiesLenient]
     }
     
-    @scala.inline
-    implicit class ojCollapsibleSettablePropertiesLenientMutableBuilder[Self <: ojCollapsibleSettablePropertiesLenient] (val x: Self) extends AnyVal {
+    extension [Self <: ojCollapsibleSettablePropertiesLenient](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setExpandArea(value: header | disclosureIcon): Self = StObject.set(x, "expandArea", value.asInstanceOf[js.Any])
+      inline def setExpandArea(value: header | disclosureIcon): Self = StObject.set(x, "expandArea", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandAreaUndefined: Self = StObject.set(x, "expandArea", js.undefined)
+      inline def setExpandAreaUndefined: Self = StObject.set(x, "expandArea", js.undefined)
       
-      @scala.inline
-      def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+      inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+      inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
       
-      @scala.inline
-      def setTranslations(value: js.Object): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: js.Object): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslationsNull: Self = StObject.set(x, "translations", null)
+      inline def setTranslationsNull: Self = StObject.set(x, "translations", null)
       
-      @scala.inline
-      def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+      inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
     }
   }
 }

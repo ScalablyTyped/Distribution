@@ -1,6 +1,5 @@
 package typings.wordpressComponents
 
-import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.ComponentType
 import typings.wordpressComponents.menuMod.NavigableMenu.Props
 import org.scalablytyped.runtime.StObject
@@ -9,27 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object navigableContainerMod {
   
-  object NavigableMenu extends Shortcut {
-    
-    @JSImport("@wordpress/components/navigable-container", "NavigableMenu")
-    @js.native
-    val ^ : ComponentType[Props] = js.native
-    
-    type _To = ComponentType[Props]
-    
-    /* This means you don't have to write `^`, but can instead just say `NavigableMenu.foo` */
-    override def _to: ComponentType[Props] = ^
-  }
+  @JSImport("@wordpress/components/navigable-container", "NavigableMenu")
+  @js.native
+  val NavigableMenu: ComponentType[Props] = js.native
   
-  object TabbableContainer extends Shortcut {
-    
-    @JSImport("@wordpress/components/navigable-container", "TabbableContainer")
-    @js.native
-    val ^ : ComponentType[typings.wordpressComponents.tabbableMod.TabbableContainer.Props] = js.native
-    
-    type _To = ComponentType[typings.wordpressComponents.tabbableMod.TabbableContainer.Props]
-    
-    /* This means you don't have to write `^`, but can instead just say `TabbableContainer.foo` */
-    override def _to: ComponentType[typings.wordpressComponents.tabbableMod.TabbableContainer.Props] = ^
-  }
+  @JSImport("@wordpress/components/navigable-container", "TabbableContainer")
+  @js.native
+  val TabbableContainer: ComponentType[typings.wordpressComponents.tabbableMod.TabbableContainer.Props] = js.native
 }

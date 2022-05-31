@@ -3,7 +3,6 @@ package typings.babylonjs
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object materialDefinesMod {
@@ -11,7 +10,8 @@ object materialDefinesMod {
   @JSImport("babylonjs/Materials/materialDefines", "MaterialDefines")
   @js.native
   class MaterialDefines ()
-    extends /* id */ StringDictionary[js.Any] {
+    extends StObject
+       with /* id */ StringDictionary[js.Any] {
     
     /** @hidden */
     var _areAttributesDirty: Boolean = js.native
@@ -37,10 +37,10 @@ object materialDefinesMod {
     /** @hidden */
     var _areTexturesDirty: Boolean = js.native
     
-    var _isDirty: js.Any = js.native
+    /* private */ var _isDirty: js.Any = js.native
     
     /** @hidden */
-    var _keys: js.Array[String] = js.native
+    /* protected */ var _keys: js.Array[String] = js.native
     
     /** @hidden */
     var _needNormals: Boolean = js.native

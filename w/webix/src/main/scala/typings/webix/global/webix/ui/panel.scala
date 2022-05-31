@@ -4,8 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("webix.ui.panel")
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.webix.webix.ui.baseview because Already inherited
+- typings.webix.webix.ui.panel because var conflicts: $height, $skin_Original, $view, $width, config, name. Inlined  */ @JSGlobal("webix.ui.panel")
 @js.native
 class panel ()
-  extends StObject
-     with typings.webix.webix.ui.panel
+  extends typings.webix.mod.ui.panel

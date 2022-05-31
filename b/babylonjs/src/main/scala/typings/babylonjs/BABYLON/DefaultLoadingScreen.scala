@@ -2,23 +2,24 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefaultLoadingScreen extends ILoadingScreen {
+trait DefaultLoadingScreen
+  extends StObject
+     with ILoadingScreen {
   
-  var _loadingDiv: js.Any = js.native
+  /* private */ var _loadingDiv: js.Any = js.native
   
-  var _loadingDivBackgroundColor: js.Any = js.native
+  /* private */ var _loadingDivBackgroundColor: js.Any = js.native
   
-  var _loadingText: js.Any = js.native
+  /* private */ var _loadingText: js.Any = js.native
   
-  var _loadingTextDiv: js.Any = js.native
+  /* private */ var _loadingTextDiv: js.Any = js.native
   
-  var _renderingCanvas: js.Any = js.native
+  /* private */ var _renderingCanvas: js.Any = js.native
   
-  var _resizeLoadingUI: js.Any = js.native
+  /* private */ var _resizeLoadingUI: js.Any = js.native
   
   /**
     * Gets or sets the color to use for the background

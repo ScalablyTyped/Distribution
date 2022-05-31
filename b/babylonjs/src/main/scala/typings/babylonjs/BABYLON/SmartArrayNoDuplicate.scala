@@ -2,20 +2,20 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SmartArrayNoDuplicate[T] extends SmartArray[T] {
+trait SmartArrayNoDuplicate[T]
+  extends StObject
+     with SmartArray[T] {
   
-  var _duplicateId: js.Any = js.native
+  /* private */ var _duplicateId: js.Any
   
   /**
     * Concats the active data with a given array.
     * This ensures no dupplicate will be present in the result.
     * @param array defines the data to concatenate with.
     */
-  def concatWithNoDuplicate(array: js.Any): Unit = js.native
+  def concatWithNoDuplicate(array: js.Any): Unit
   
   /**
     * Pushes a value at the end of the active data.
@@ -23,12 +23,11 @@ trait SmartArrayNoDuplicate[T] extends SmartArray[T] {
     * @param value defines the object to push in the array.
     * @returns true if added false if it was already present
     */
-  def pushNoDuplicate(value: T): Boolean = js.native
+  def pushNoDuplicate(value: T): Boolean
 }
 object SmartArrayNoDuplicate {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     _duplicateId: js.Any,
     _id: Double,
     concat: js.Any => Unit,
@@ -48,16 +47,12 @@ object SmartArrayNoDuplicate {
     __obj.asInstanceOf[SmartArrayNoDuplicate[T]]
   }
   
-  @scala.inline
-  implicit class SmartArrayNoDuplicateMutableBuilder[Self <: SmartArrayNoDuplicate[_], T] (val x: Self with SmartArrayNoDuplicate[T]) extends AnyVal {
+  extension [Self <: SmartArrayNoDuplicate[?], T](x: Self & SmartArrayNoDuplicate[T]) {
     
-    @scala.inline
-    def setConcatWithNoDuplicate(value: js.Any => Unit): Self = StObject.set(x, "concatWithNoDuplicate", js.Any.fromFunction1(value))
+    inline def setConcatWithNoDuplicate(value: js.Any => Unit): Self = StObject.set(x, "concatWithNoDuplicate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPushNoDuplicate(value: T => Boolean): Self = StObject.set(x, "pushNoDuplicate", js.Any.fromFunction1(value))
+    inline def setPushNoDuplicate(value: T => Boolean): Self = StObject.set(x, "pushNoDuplicate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_duplicateId(value: js.Any): Self = StObject.set(x, "_duplicateId", value.asInstanceOf[js.Any])
+    inline def set_duplicateId(value: js.Any): Self = StObject.set(x, "_duplicateId", value.asInstanceOf[js.Any])
   }
 }

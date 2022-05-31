@@ -4,7 +4,6 @@ import typings.babylonjs.dataBufferMod.DataBuffer
 import typings.std.WebGLBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webGLDataBufferMod {
@@ -14,6 +13,6 @@ object webGLDataBufferMod {
   class WebGLDataBuffer protected () extends DataBuffer {
     def this(resource: WebGLBuffer) = this()
     
-    var _buffer: js.Any = js.native
+    /* private */ var _buffer: js.Any = js.native
   }
 }

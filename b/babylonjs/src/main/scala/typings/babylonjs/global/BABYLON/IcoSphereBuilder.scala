@@ -4,15 +4,19 @@ import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.anon.BackUVsFlat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.IcoSphereBuilder")
 @js.native
 class IcoSphereBuilder ()
-  extends typings.babylonjs.BABYLON.IcoSphereBuilder
+  extends StObject
+     with typings.babylonjs.BABYLON.IcoSphereBuilder
 /* static members */
 object IcoSphereBuilder {
+  
+  @JSGlobal("BABYLON.IcoSphereBuilder")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a sphere based upon an icosahedron with 20 triangular faces which can be subdivided
@@ -29,10 +33,6 @@ object IcoSphereBuilder {
     * @returns the icosahedron mesh
     * @see https://doc.babylonjs.com/how_to/polyhedra_shapes#icosphere
     */
-  @JSGlobal("BABYLON.IcoSphereBuilder.CreateIcoSphere")
-  @js.native
-  def CreateIcoSphere(name: String, options: BackUVsFlat): typings.babylonjs.BABYLON.Mesh = js.native
-  @JSGlobal("BABYLON.IcoSphereBuilder.CreateIcoSphere")
-  @js.native
-  def CreateIcoSphere(name: String, options: BackUVsFlat, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
+  inline def CreateIcoSphere(name: String, options: BackUVsFlat): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateIcoSphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreateIcoSphere(name: String, options: BackUVsFlat, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateIcoSphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
 }

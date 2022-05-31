@@ -10,7 +10,6 @@ import typings.luminoWidgets.mod.Widget
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kernelMod {
@@ -33,7 +32,9 @@ object kernelMod {
   }
   
   @js.native
-  trait IKernelMenu extends IJupyterLabMenu {
+  trait IKernelMenu
+    extends StObject
+       with IJupyterLabMenu {
     
     /**
       * A set storing IKernelUsers for the Kernel menu.
@@ -46,87 +47,74 @@ object kernelMod {
       * Interface for a Kernel user to register itself
       * with the IKernelMenu's semantic extension points.
       */
-    @js.native
-    trait IKernelUser[T /* <: Widget */] extends IMenuExtender[T] {
+    trait IKernelUser[T /* <: Widget */]
+      extends StObject
+         with IMenuExtender[T] {
       
       /**
         * A function to change the kernel.
         */
-      var changeKernel: js.UndefOr[js.Function1[/* widget */ T, js.Promise[Unit]]] = js.native
+      var changeKernel: js.UndefOr[js.Function1[/* widget */ T, js.Promise[Unit]]] = js.undefined
       
       /**
         * A function to interrupt the kernel.
         */
-      var interruptKernel: js.UndefOr[js.Function1[/* widget */ T, js.Promise[Unit]]] = js.native
+      var interruptKernel: js.UndefOr[js.Function1[/* widget */ T, js.Promise[Unit]]] = js.undefined
       
       /**
         * A noun to use for the restart and clear all command.
         */
-      var noun: js.UndefOr[String] = js.native
+      var noun: js.UndefOr[String] = js.undefined
       
       /**
         * A function to restart the kernel, which
         * returns a promise of whether the kernel was restarted.
         */
-      var restartKernel: js.UndefOr[js.Function1[/* widget */ T, js.Promise[Boolean]]] = js.native
+      var restartKernel: js.UndefOr[js.Function1[/* widget */ T, js.Promise[Boolean]]] = js.undefined
       
       /**
         * A function to restart the kernel and clear the widget, which
         * returns a promise of whether the kernel was restarted.
         */
-      var restartKernelAndClear: js.UndefOr[js.Function1[/* widget */ T, js.Promise[Boolean]]] = js.native
+      var restartKernelAndClear: js.UndefOr[js.Function1[/* widget */ T, js.Promise[Boolean]]] = js.undefined
       
       /**
         * A function to shut down the kernel.
         */
-      var shutdownKernel: js.UndefOr[js.Function1[/* widget */ T, js.Promise[Unit]]] = js.native
+      var shutdownKernel: js.UndefOr[js.Function1[/* widget */ T, js.Promise[Unit]]] = js.undefined
     }
     object IKernelUser {
       
-      @scala.inline
-      def apply[T /* <: Widget */](tracker: IWidgetTracker[T]): IKernelUser[T] = {
+      inline def apply[T /* <: Widget */](tracker: IWidgetTracker[T]): IKernelUser[T] = {
         val __obj = js.Dynamic.literal(tracker = tracker.asInstanceOf[js.Any])
         __obj.asInstanceOf[IKernelUser[T]]
       }
       
-      @scala.inline
-      implicit class IKernelUserMutableBuilder[Self <: IKernelUser[_], T /* <: Widget */] (val x: Self with IKernelUser[T]) extends AnyVal {
+      extension [Self <: IKernelUser[?], T /* <: Widget */](x: Self & IKernelUser[T]) {
         
-        @scala.inline
-        def setChangeKernel(value: /* widget */ T => js.Promise[Unit]): Self = StObject.set(x, "changeKernel", js.Any.fromFunction1(value))
+        inline def setChangeKernel(value: /* widget */ T => js.Promise[Unit]): Self = StObject.set(x, "changeKernel", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setChangeKernelUndefined: Self = StObject.set(x, "changeKernel", js.undefined)
+        inline def setChangeKernelUndefined: Self = StObject.set(x, "changeKernel", js.undefined)
         
-        @scala.inline
-        def setInterruptKernel(value: /* widget */ T => js.Promise[Unit]): Self = StObject.set(x, "interruptKernel", js.Any.fromFunction1(value))
+        inline def setInterruptKernel(value: /* widget */ T => js.Promise[Unit]): Self = StObject.set(x, "interruptKernel", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setInterruptKernelUndefined: Self = StObject.set(x, "interruptKernel", js.undefined)
+        inline def setInterruptKernelUndefined: Self = StObject.set(x, "interruptKernel", js.undefined)
         
-        @scala.inline
-        def setNoun(value: String): Self = StObject.set(x, "noun", value.asInstanceOf[js.Any])
+        inline def setNoun(value: String): Self = StObject.set(x, "noun", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNounUndefined: Self = StObject.set(x, "noun", js.undefined)
+        inline def setNounUndefined: Self = StObject.set(x, "noun", js.undefined)
         
-        @scala.inline
-        def setRestartKernel(value: /* widget */ T => js.Promise[Boolean]): Self = StObject.set(x, "restartKernel", js.Any.fromFunction1(value))
+        inline def setRestartKernel(value: /* widget */ T => js.Promise[Boolean]): Self = StObject.set(x, "restartKernel", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setRestartKernelAndClear(value: /* widget */ T => js.Promise[Boolean]): Self = StObject.set(x, "restartKernelAndClear", js.Any.fromFunction1(value))
+        inline def setRestartKernelAndClear(value: /* widget */ T => js.Promise[Boolean]): Self = StObject.set(x, "restartKernelAndClear", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setRestartKernelAndClearUndefined: Self = StObject.set(x, "restartKernelAndClear", js.undefined)
+        inline def setRestartKernelAndClearUndefined: Self = StObject.set(x, "restartKernelAndClear", js.undefined)
         
-        @scala.inline
-        def setRestartKernelUndefined: Self = StObject.set(x, "restartKernel", js.undefined)
+        inline def setRestartKernelUndefined: Self = StObject.set(x, "restartKernel", js.undefined)
         
-        @scala.inline
-        def setShutdownKernel(value: /* widget */ T => js.Promise[Unit]): Self = StObject.set(x, "shutdownKernel", js.Any.fromFunction1(value))
+        inline def setShutdownKernel(value: /* widget */ T => js.Promise[Unit]): Self = StObject.set(x, "shutdownKernel", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setShutdownKernelUndefined: Self = StObject.set(x, "shutdownKernel", js.undefined)
+        inline def setShutdownKernelUndefined: Self = StObject.set(x, "shutdownKernel", js.undefined)
       }
     }
   }

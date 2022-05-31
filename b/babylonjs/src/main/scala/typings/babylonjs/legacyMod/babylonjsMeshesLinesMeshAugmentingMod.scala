@@ -2,7 +2,6 @@ package typings.babylonjs.legacyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -20,9 +19,9 @@ object babylonjsMeshesLinesMeshAugmentingMod {
       * @see https://www.babylonjs-playground.com/#19O9TU#0
       */
     def enableEdgesRendering(): typings.babylonjs.edgesRendererMod.babylonjsMeshesLinesMeshAugmentingMod.InstancedLinesMesh = js.native
-    def enableEdgesRendering(epsilon: js.UndefOr[scala.Nothing], checkVerticesInsteadOfIndices: Boolean): typings.babylonjs.edgesRendererMod.babylonjsMeshesLinesMeshAugmentingMod.InstancedLinesMesh = js.native
     def enableEdgesRendering(epsilon: Double): typings.babylonjs.edgesRendererMod.babylonjsMeshesLinesMeshAugmentingMod.InstancedLinesMesh = js.native
     def enableEdgesRendering(epsilon: Double, checkVerticesInsteadOfIndices: Boolean): typings.babylonjs.edgesRendererMod.babylonjsMeshesLinesMeshAugmentingMod.InstancedLinesMesh = js.native
+    def enableEdgesRendering(epsilon: Unit, checkVerticesInsteadOfIndices: Boolean): typings.babylonjs.edgesRendererMod.babylonjsMeshesLinesMeshAugmentingMod.InstancedLinesMesh = js.native
   }
   
   @js.native
@@ -37,8 +36,8 @@ object babylonjsMeshesLinesMeshAugmentingMod {
       * @see https://www.babylonjs-playground.com/#19O9TU#0
       */
     def enableEdgesRendering(): typings.babylonjs.abstractMeshMod.AbstractMesh = js.native
-    def enableEdgesRendering(epsilon: js.UndefOr[scala.Nothing], checkVerticesInsteadOfIndices: Boolean): typings.babylonjs.abstractMeshMod.AbstractMesh = js.native
     def enableEdgesRendering(epsilon: Double): typings.babylonjs.abstractMeshMod.AbstractMesh = js.native
     def enableEdgesRendering(epsilon: Double, checkVerticesInsteadOfIndices: Boolean): typings.babylonjs.abstractMeshMod.AbstractMesh = js.native
+    def enableEdgesRendering(epsilon: Unit, checkVerticesInsteadOfIndices: Boolean): typings.babylonjs.abstractMeshMod.AbstractMesh = js.native
   }
 }

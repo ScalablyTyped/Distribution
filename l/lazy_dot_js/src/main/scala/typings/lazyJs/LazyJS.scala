@@ -55,8 +55,6 @@ object LazyJS {
     
     def unshift(value: T): ArrayLikeSequence[T] = js.native
   }
-  // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  object ArrayLikeSequence
   
   trait AsyncHandle[T] extends StObject {
     
@@ -192,8 +190,6 @@ object LazyJS {
     def watch(propertyNames: String): Sequence[Property] = js.native
     def watch(propertyNames: js.Array[String]): Sequence[Property] = js.native
   }
-  // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  object ObjectLikeSequence
   
   type PushFront[TailT /* <: js.Array[js.Any] */, FrontT] = js.Any
   
@@ -204,8 +200,6 @@ object LazyJS {
     
     def each(eachFn: ValueCallback[T]): Sequence[T] = js.native
   }
-  // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  object Sequence
   
   @js.native
   trait SequenceBase[T]
@@ -380,8 +374,6 @@ object LazyJS {
     
     def toUpperCase(): StringLikeSequence = js.native
   }
-  // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  object StringLikeSequence
   
   type TestCallback[T, U] = js.Function2[/* value */ T, /* index */ U, Boolean]
   

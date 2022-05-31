@@ -1,5 +1,6 @@
 package typings.awsSdkClientPinpointBrowser.mod
 
+import typings.awsSdkClientPinpointBrowser.typesGetEndpointInputMod.GetEndpointInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class GetEndpointCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.getEndpointCommandMod.GetEndpointCommand {
-  def this(input: typings.awsSdkClientPinpointBrowser.typesGetEndpointInputMod.GetEndpointInput) = this()
+  def this(input: GetEndpointInput) = this()
 }

@@ -2,7 +2,6 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,24 +13,24 @@ trait PBRSubSurfaceConfiguration extends StObject {
     * @returns - Refraction texture if present.  If no refraction texture and refraction
     * is linked with transparency, returns environment texture.  Otherwise, returns null.
     */
-  var _getRefractionTexture: js.Any = js.native
+  /* private */ var _getRefractionTexture: js.Any = js.native
   
-  var _indexOfRefraction: js.Any = js.native
+  /* private */ var _indexOfRefraction: js.Any = js.native
   
   /** @hidden */
-  var _internalMarkAllSubMeshesAsTexturesDirty: js.Any = js.native
+  /* private */ var _internalMarkAllSubMeshesAsTexturesDirty: js.Any = js.native
   
-  var _internalMarkScenePrePassDirty: js.Any = js.native
+  /* private */ var _internalMarkScenePrePassDirty: js.Any = js.native
   
-  var _invertRefractionY: js.Any = js.native
+  /* private */ var _invertRefractionY: js.Any = js.native
   
-  var _isRefractionEnabled: js.Any = js.native
+  /* private */ var _isRefractionEnabled: js.Any = js.native
   
-  var _isScatteringEnabled: js.Any = js.native
+  /* private */ var _isScatteringEnabled: js.Any = js.native
   
-  var _isTranslucencyEnabled: js.Any = js.native
+  /* private */ var _isTranslucencyEnabled: js.Any = js.native
   
-  var _linkRefractionWithTransparency: js.Any = js.native
+  /* private */ var _linkRefractionWithTransparency: js.Any = js.native
   
   /** @hidden */
   def _markAllSubMeshesAsTexturesDirty(): Unit = js.native
@@ -39,19 +38,19 @@ trait PBRSubSurfaceConfiguration extends StObject {
   /** @hidden */
   def _markScenePrePassDirty(): Unit = js.native
   
-  var _refractionTexture: js.Any = js.native
+  /* private */ var _refractionTexture: js.Any = js.native
   
-  var _scatteringDiffusionProfileIndex: js.Any = js.native
+  /* private */ var _scatteringDiffusionProfileIndex: js.Any = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
-  var _thicknessTexture: js.Any = js.native
+  /* private */ var _thicknessTexture: js.Any = js.native
   
-  var _useMaskFromThicknessTexture: js.Any = js.native
+  /* private */ var _useMaskFromThicknessTexture: js.Any = js.native
   
-  var _useMaskFromThicknessTextureGltf: js.Any = js.native
+  /* private */ var _useMaskFromThicknessTextureGltf: js.Any = js.native
   
-  var _volumeIndexOfRefraction: js.Any = js.native
+  /* private */ var _volumeIndexOfRefraction: js.Any = js.native
   
   /**
     * Binds the material data.

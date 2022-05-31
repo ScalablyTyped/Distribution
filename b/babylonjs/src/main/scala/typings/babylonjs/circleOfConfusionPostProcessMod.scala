@@ -8,7 +8,6 @@ import typings.babylonjs.renderTargetTextureMod.RenderTargetTexture
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object circleOfConfusionPostProcessMod {
@@ -40,7 +39,7 @@ object circleOfConfusionPostProcessMod {
       blockCompilation: js.UndefOr[Boolean]
     ) = this()
     
-    var _depthTexture: js.Any = js.native
+    /* private */ var _depthTexture: js.Any = js.native
     
     /**
       * Depth texture to be used to compute the circle of confusion. This must be set here or in the constructor in order for the post process to function.

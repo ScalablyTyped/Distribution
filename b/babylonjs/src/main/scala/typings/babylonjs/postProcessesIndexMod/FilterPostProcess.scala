@@ -8,7 +8,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/PostProcesses/index", "FilterPostProcess")
@@ -46,7 +45,7 @@ class FilterPostProcess protected ()
     kernelMatrix: Matrix,
     options: Double,
     camera: Nullable[Camera],
-    samplingMode: js.UndefOr[scala.Nothing],
+    samplingMode: Double,
     engine: Engine
   ) = this()
   def this(
@@ -54,15 +53,7 @@ class FilterPostProcess protected ()
     kernelMatrix: Matrix,
     options: Double,
     camera: Nullable[Camera],
-    samplingMode: Double,
-    engine: Engine
-  ) = this()
-  def this(
-    name: String,
-    kernelMatrix: Matrix,
-    options: PostProcessOptions,
-    camera: Nullable[Camera],
-    samplingMode: js.UndefOr[scala.Nothing],
+    samplingMode: Unit,
     engine: Engine
   ) = this()
   def this(
@@ -76,20 +67,10 @@ class FilterPostProcess protected ()
   def this(
     name: String,
     kernelMatrix: Matrix,
-    options: Double,
+    options: PostProcessOptions,
     camera: Nullable[Camera],
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: js.UndefOr[scala.Nothing],
-    reusable: Boolean
-  ) = this()
-  def this(
-    name: String,
-    kernelMatrix: Matrix,
-    options: Double,
-    camera: Nullable[Camera],
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: Engine,
-    reusable: Boolean
+    samplingMode: Unit,
+    engine: Engine
   ) = this()
   def this(
     name: String,
@@ -97,7 +78,7 @@ class FilterPostProcess protected ()
     options: Double,
     camera: Nullable[Camera],
     samplingMode: Double,
-    engine: js.UndefOr[scala.Nothing],
+    engine: Unit,
     reusable: Boolean
   ) = this()
   def this(
@@ -112,18 +93,18 @@ class FilterPostProcess protected ()
   def this(
     name: String,
     kernelMatrix: Matrix,
-    options: PostProcessOptions,
+    options: Double,
     camera: Nullable[Camera],
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: js.UndefOr[scala.Nothing],
+    samplingMode: Unit,
+    engine: Unit,
     reusable: Boolean
   ) = this()
   def this(
     name: String,
     kernelMatrix: Matrix,
-    options: PostProcessOptions,
+    options: Double,
     camera: Nullable[Camera],
-    samplingMode: js.UndefOr[scala.Nothing],
+    samplingMode: Unit,
     engine: Engine,
     reusable: Boolean
   ) = this()
@@ -133,7 +114,7 @@ class FilterPostProcess protected ()
     options: PostProcessOptions,
     camera: Nullable[Camera],
     samplingMode: Double,
-    engine: js.UndefOr[scala.Nothing],
+    engine: Unit,
     reusable: Boolean
   ) = this()
   def this(
@@ -142,6 +123,24 @@ class FilterPostProcess protected ()
     options: PostProcessOptions,
     camera: Nullable[Camera],
     samplingMode: Double,
+    engine: Engine,
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    kernelMatrix: Matrix,
+    options: PostProcessOptions,
+    camera: Nullable[Camera],
+    samplingMode: Unit,
+    engine: Unit,
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    kernelMatrix: Matrix,
+    options: PostProcessOptions,
+    camera: Nullable[Camera],
+    samplingMode: Unit,
     engine: Engine,
     reusable: Boolean
   ) = this()
@@ -149,8 +148,10 @@ class FilterPostProcess protected ()
 /* static members */
 object FilterPostProcess {
   
-  /** @hidden */
-  @JSImport("babylonjs/PostProcesses/index", "FilterPostProcess._Parse")
+  @JSImport("babylonjs/PostProcesses/index", "FilterPostProcess")
   @js.native
-  def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): Nullable[typings.babylonjs.filterPostProcessMod.FilterPostProcess] = js.native
+  val ^ : js.Any = js.native
+  
+  /** @hidden */
+  inline def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): Nullable[typings.babylonjs.filterPostProcessMod.FilterPostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.filterPostProcessMod.FilterPostProcess]]
 }

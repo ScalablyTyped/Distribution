@@ -2,7 +2,6 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,30 +10,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PhysicsVortexEvent extends StObject {
   
-  var _cylinder: js.Any = js.native
+  /* private */ var _cylinder: js.Any = js.native
   
-  var _cylinderPosition: js.Any = js.native
+  /* private */ var _cylinderPosition: js.Any = js.native
   
-  var _dataFetched: js.Any = js.native
+  /* private */ var _dataFetched: js.Any = js.native
   
-  var _intersectsWithCylinder: js.Any = js.native
+  /* private */ var _intersectsWithCylinder: js.Any = js.native
   
-  var _options: js.Any = js.native
+  /* private */ var _options: js.Any = js.native
   
-  var _origin: js.Any = js.native
+  /* private */ var _origin: js.Any = js.native
   
-  var _originTop: js.Any = js.native
+  /* private */ var _originTop: js.Any = js.native
   
-  var _physicsEngine: js.Any = js.native
+  /* private */ var _physicsEngine: js.Any = js.native
   
   /*** Helpers ***/
-  var _prepareCylinder: js.Any = js.native
+  /* private */ var _prepareCylinder: js.Any = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
-  var _tick: js.Any = js.native
+  /* private */ var _tick: js.Any = js.native
   
-  var _tickCallback: js.Any = js.native
+  /* private */ var _tickCallback: js.Any = js.native
   
   /**
     * Disables the cortex.
@@ -59,5 +58,5 @@ trait PhysicsVortexEvent extends StObject {
     */
   def getData(): PhysicsVortexEventData = js.native
   
-  var getImpostorHitData: js.Any = js.native
+  /* private */ var getImpostorHitData: js.Any = js.native
 }

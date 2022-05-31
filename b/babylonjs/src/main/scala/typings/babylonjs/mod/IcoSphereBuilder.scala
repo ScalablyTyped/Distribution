@@ -4,7 +4,6 @@ import typings.babylonjs.anon.RadiusY
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "IcoSphereBuilder")
@@ -13,6 +12,10 @@ class IcoSphereBuilder ()
   extends typings.babylonjs.legacyMod.IcoSphereBuilder
 /* static members */
 object IcoSphereBuilder {
+  
+  @JSImport("babylonjs", "IcoSphereBuilder")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a sphere based upon an icosahedron with 20 triangular faces which can be subdivided
@@ -29,10 +32,6 @@ object IcoSphereBuilder {
     * @returns the icosahedron mesh
     * @see https://doc.babylonjs.com/how_to/polyhedra_shapes#icosphere
     */
-  @JSImport("babylonjs", "IcoSphereBuilder.CreateIcoSphere")
-  @js.native
-  def CreateIcoSphere(name: String, options: RadiusY): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "IcoSphereBuilder.CreateIcoSphere")
-  @js.native
-  def CreateIcoSphere(name: String, options: RadiusY, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = js.native
+  inline def CreateIcoSphere(name: String, options: RadiusY): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateIcoSphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateIcoSphere(name: String, options: RadiusY, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateIcoSphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
 }

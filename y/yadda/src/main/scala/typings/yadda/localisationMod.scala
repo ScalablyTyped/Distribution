@@ -22,65 +22,25 @@ object localisationMod {
     override def _to: typings.yadda.languageMod.^[Library] = ^
   }
   
-  object Chinese extends Shortcut {
-    
-    @JSImport("yadda/lib/localisation", "Chinese")
-    @js.native
-    val ^ : typings.yadda.languageMod.^[typings.yadda.chineseMod.Library] = js.native
-    
-    type _To = typings.yadda.languageMod.^[typings.yadda.chineseMod.Library]
-    
-    /* This means you don't have to write `^`, but can instead just say `Chinese.foo` */
-    override def _to: typings.yadda.languageMod.^[typings.yadda.chineseMod.Library] = ^
-  }
+  @JSImport("yadda/lib/localisation", "Chinese")
+  @js.native
+  val Chinese: ^[typings.yadda.chineseMod.Library] = js.native
   
-  object Dutch extends Shortcut {
-    
-    @JSImport("yadda/lib/localisation", "Dutch")
-    @js.native
-    val ^ : typings.yadda.languageMod.^[typings.yadda.dutchMod.Library] = js.native
-    
-    type _To = typings.yadda.languageMod.^[typings.yadda.dutchMod.Library]
-    
-    /* This means you don't have to write `^`, but can instead just say `Dutch.foo` */
-    override def _to: typings.yadda.languageMod.^[typings.yadda.dutchMod.Library] = ^
-  }
+  @JSImport("yadda/lib/localisation", "Dutch")
+  @js.native
+  val Dutch: ^[typings.yadda.dutchMod.Library] = js.native
   
-  object English extends Shortcut {
-    
-    @JSImport("yadda/lib/localisation", "English")
-    @js.native
-    val ^ : typings.yadda.languageMod.^[Library] = js.native
-    
-    type _To = typings.yadda.languageMod.^[Library]
-    
-    /* This means you don't have to write `^`, but can instead just say `English.foo` */
-    override def _to: typings.yadda.languageMod.^[Library] = ^
-  }
+  @JSImport("yadda/lib/localisation", "English")
+  @js.native
+  val English: ^[Library] = js.native
   
-  object French extends Shortcut {
-    
-    @JSImport("yadda/lib/localisation", "French")
-    @js.native
-    val ^ : typings.yadda.languageMod.^[typings.yadda.frenchMod.Library] = js.native
-    
-    type _To = typings.yadda.languageMod.^[typings.yadda.frenchMod.Library]
-    
-    /* This means you don't have to write `^`, but can instead just say `French.foo` */
-    override def _to: typings.yadda.languageMod.^[typings.yadda.frenchMod.Library] = ^
-  }
+  @JSImport("yadda/lib/localisation", "French")
+  @js.native
+  val French: ^[typings.yadda.frenchMod.Library] = js.native
   
-  object German extends Shortcut {
-    
-    @JSImport("yadda/lib/localisation", "German")
-    @js.native
-    val ^ : typings.yadda.languageMod.^[typings.yadda.germanMod.Library] = js.native
-    
-    type _To = typings.yadda.languageMod.^[typings.yadda.germanMod.Library]
-    
-    /* This means you don't have to write `^`, but can instead just say `German.foo` */
-    override def _to: typings.yadda.languageMod.^[typings.yadda.germanMod.Library] = ^
-  }
+  @JSImport("yadda/lib/localisation", "German")
+  @js.native
+  val German: ^[typings.yadda.germanMod.Library] = js.native
   
   @JSImport("yadda/lib/localisation", "Language")
   @js.native
@@ -88,87 +48,31 @@ object localisationMod {
     def this(name: String, vocabulary: Vocabulary) = this()
   }
   
-  object Norwegian extends Shortcut {
-    
-    @JSImport("yadda/lib/localisation", "Norwegian")
-    @js.native
-    val ^ : typings.yadda.languageMod.^[typings.yadda.norwegianMod.Library] = js.native
-    
-    type _To = typings.yadda.languageMod.^[typings.yadda.norwegianMod.Library]
-    
-    /* This means you don't have to write `^`, but can instead just say `Norwegian.foo` */
-    override def _to: typings.yadda.languageMod.^[typings.yadda.norwegianMod.Library] = ^
-  }
+  @JSImport("yadda/lib/localisation", "Norwegian")
+  @js.native
+  val Norwegian: ^[typings.yadda.norwegianMod.Library] = js.native
   
-  object Pirate extends Shortcut {
-    
-    @JSImport("yadda/lib/localisation", "Pirate")
-    @js.native
-    val ^ : typings.yadda.languageMod.^[typings.yadda.pirateMod.Library] = js.native
-    
-    type _To = typings.yadda.languageMod.^[typings.yadda.pirateMod.Library]
-    
-    /* This means you don't have to write `^`, but can instead just say `Pirate.foo` */
-    override def _to: typings.yadda.languageMod.^[typings.yadda.pirateMod.Library] = ^
-  }
+  @JSImport("yadda/lib/localisation", "Pirate")
+  @js.native
+  val Pirate: ^[typings.yadda.pirateMod.Library] = js.native
   
-  object Polish extends Shortcut {
-    
-    @JSImport("yadda/lib/localisation", "Polish")
-    @js.native
-    val ^ : typings.yadda.languageMod.^[typings.yadda.polishMod.Library] = js.native
-    
-    type _To = typings.yadda.languageMod.^[typings.yadda.polishMod.Library]
-    
-    /* This means you don't have to write `^`, but can instead just say `Polish.foo` */
-    override def _to: typings.yadda.languageMod.^[typings.yadda.polishMod.Library] = ^
-  }
+  @JSImport("yadda/lib/localisation", "Polish")
+  @js.native
+  val Polish: ^[typings.yadda.polishMod.Library] = js.native
   
-  object Portuguese extends Shortcut {
-    
-    @JSImport("yadda/lib/localisation", "Portuguese")
-    @js.native
-    val ^ : typings.yadda.languageMod.^[typings.yadda.portugueseMod.Library] = js.native
-    
-    type _To = typings.yadda.languageMod.^[typings.yadda.portugueseMod.Library]
-    
-    /* This means you don't have to write `^`, but can instead just say `Portuguese.foo` */
-    override def _to: typings.yadda.languageMod.^[typings.yadda.portugueseMod.Library] = ^
-  }
+  @JSImport("yadda/lib/localisation", "Portuguese")
+  @js.native
+  val Portuguese: ^[typings.yadda.portugueseMod.Library] = js.native
   
-  object Russian extends Shortcut {
-    
-    @JSImport("yadda/lib/localisation", "Russian")
-    @js.native
-    val ^ : typings.yadda.languageMod.^[typings.yadda.russianMod.Library] = js.native
-    
-    type _To = typings.yadda.languageMod.^[typings.yadda.russianMod.Library]
-    
-    /* This means you don't have to write `^`, but can instead just say `Russian.foo` */
-    override def _to: typings.yadda.languageMod.^[typings.yadda.russianMod.Library] = ^
-  }
+  @JSImport("yadda/lib/localisation", "Russian")
+  @js.native
+  val Russian: ^[typings.yadda.russianMod.Library] = js.native
   
-  object Spanish extends Shortcut {
-    
-    @JSImport("yadda/lib/localisation", "Spanish")
-    @js.native
-    val ^ : typings.yadda.languageMod.^[typings.yadda.spanishMod.Library] = js.native
-    
-    type _To = typings.yadda.languageMod.^[typings.yadda.spanishMod.Library]
-    
-    /* This means you don't have to write `^`, but can instead just say `Spanish.foo` */
-    override def _to: typings.yadda.languageMod.^[typings.yadda.spanishMod.Library] = ^
-  }
+  @JSImport("yadda/lib/localisation", "Spanish")
+  @js.native
+  val Spanish: ^[typings.yadda.spanishMod.Library] = js.native
   
-  object Ukrainian extends Shortcut {
-    
-    @JSImport("yadda/lib/localisation", "Ukrainian")
-    @js.native
-    val ^ : typings.yadda.languageMod.^[typings.yadda.ukrainianMod.Library] = js.native
-    
-    type _To = typings.yadda.languageMod.^[typings.yadda.ukrainianMod.Library]
-    
-    /* This means you don't have to write `^`, but can instead just say `Ukrainian.foo` */
-    override def _to: typings.yadda.languageMod.^[typings.yadda.ukrainianMod.Library] = ^
-  }
+  @JSImport("yadda/lib/localisation", "Ukrainian")
+  @js.native
+  val Ukrainian: ^[typings.yadda.ukrainianMod.Library] = js.native
 }

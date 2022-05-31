@@ -4,7 +4,6 @@ import typings.babylonjs.anon.TileHeight
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "TiledPlaneBuilder")
@@ -13,6 +12,10 @@ class TiledPlaneBuilder ()
   extends typings.babylonjs.legacyMod.TiledPlaneBuilder
 /* static members */
 object TiledPlaneBuilder {
+  
+  @JSImport("babylonjs", "TiledPlaneBuilder")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a tiled plane mesh
@@ -35,10 +38,6 @@ object TiledPlaneBuilder {
     * @param scene defines the hosting scene
     * @returns the box mesh
     */
-  @JSImport("babylonjs", "TiledPlaneBuilder.CreateTiledPlane")
-  @js.native
-  def CreateTiledPlane(name: String, options: TileHeight): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "TiledPlaneBuilder.CreateTiledPlane")
-  @js.native
-  def CreateTiledPlane(name: String, options: TileHeight, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = js.native
+  inline def CreateTiledPlane(name: String, options: TileHeight): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledPlane")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateTiledPlane(name: String, options: TileHeight, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledPlane")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
 }

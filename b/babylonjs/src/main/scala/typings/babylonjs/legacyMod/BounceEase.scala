@@ -2,7 +2,6 @@ package typings.babylonjs.legacyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "BounceEase")
@@ -19,13 +18,13 @@ class BounceEase ()
   bounces: Double) = this()
   def this(
     /** Defines the number of bounces */
-  bounces: js.UndefOr[scala.Nothing],
+  bounces: Double,
     /** Defines the amplitude of the bounce */
   bounciness: Double
   ) = this()
   def this(
     /** Defines the number of bounces */
-  bounces: Double,
+  bounces: Unit,
     /** Defines the amplitude of the bounce */
   bounciness: Double
   ) = this()

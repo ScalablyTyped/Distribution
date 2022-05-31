@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.CubeTextureAssetTask")
 @js.native
 class CubeTextureAssetTask protected ()
-  extends typings.babylonjs.BABYLON.CubeTextureAssetTask {
+  extends StObject
+     with typings.babylonjs.BABYLON.CubeTextureAssetTask {
   /**
     * Creates a new CubeTextureAssetTask
     * @param name defines the name of the task
@@ -53,24 +53,6 @@ class CubeTextureAssetTask protected ()
     /**
     * Defines the extensions to use to load files (["_px", "_py", "_pz", "_nx", "_ny", "_nz"] by default)
     */
-  extensions: js.UndefOr[scala.Nothing],
-    /**
-    * Defines if mipmaps should not be generated (default is false)
-    */
-  noMipmap: Boolean
-  ) = this()
-  def this(
-    /**
-    * Defines the name of the task
-    */
-  name: String,
-    /**
-    * Defines the location of the files to load (You have to specify the folder where the files are + filename with no extension)
-    */
-  url: String,
-    /**
-    * Defines the extensions to use to load files (["_px", "_py", "_pz", "_nx", "_ny", "_nz"] by default)
-    */
   extensions: js.Array[String],
     /**
     * Defines if mipmaps should not be generated (default is false)
@@ -89,15 +71,11 @@ class CubeTextureAssetTask protected ()
     /**
     * Defines the extensions to use to load files (["_px", "_py", "_pz", "_nx", "_ny", "_nz"] by default)
     */
-  extensions: js.UndefOr[scala.Nothing],
+  extensions: Unit,
     /**
     * Defines if mipmaps should not be generated (default is false)
     */
-  noMipmap: js.UndefOr[scala.Nothing],
-    /**
-    * Defines the explicit list of files (undefined by default)
-    */
-  files: js.Array[String]
+  noMipmap: Boolean
   ) = this()
   def this(
     /**
@@ -111,7 +89,7 @@ class CubeTextureAssetTask protected ()
     /**
     * Defines the extensions to use to load files (["_px", "_py", "_pz", "_nx", "_ny", "_nz"] by default)
     */
-  extensions: js.UndefOr[scala.Nothing],
+  extensions: js.Array[String],
     /**
     * Defines if mipmaps should not be generated (default is false)
     */
@@ -137,7 +115,7 @@ class CubeTextureAssetTask protected ()
     /**
     * Defines if mipmaps should not be generated (default is false)
     */
-  noMipmap: js.UndefOr[scala.Nothing],
+  noMipmap: Unit,
     /**
     * Defines the explicit list of files (undefined by default)
     */
@@ -155,7 +133,7 @@ class CubeTextureAssetTask protected ()
     /**
     * Defines the extensions to use to load files (["_px", "_py", "_pz", "_nx", "_ny", "_nz"] by default)
     */
-  extensions: js.Array[String],
+  extensions: Unit,
     /**
     * Defines if mipmaps should not be generated (default is false)
     */
@@ -165,4 +143,32 @@ class CubeTextureAssetTask protected ()
     */
   files: js.Array[String]
   ) = this()
+  def this(
+    /**
+    * Defines the name of the task
+    */
+  name: String,
+    /**
+    * Defines the location of the files to load (You have to specify the folder where the files are + filename with no extension)
+    */
+  url: String,
+    /**
+    * Defines the extensions to use to load files (["_px", "_py", "_pz", "_nx", "_ny", "_nz"] by default)
+    */
+  extensions: Unit,
+    /**
+    * Defines if mipmaps should not be generated (default is false)
+    */
+  noMipmap: Unit,
+    /**
+    * Defines the explicit list of files (undefined by default)
+    */
+  files: js.Array[String]
+  ) = this()
+  
+  /**
+    * Gets the loaded texture
+    */
+  /* CompleteClass */
+  var texture: typings.babylonjs.BABYLON.CubeTexture = js.native
 }

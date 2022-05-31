@@ -14,7 +14,6 @@ import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object axisDragGizmoMod {
@@ -31,76 +30,71 @@ object axisDragGizmoMod {
       */
     def this(dragAxis: Vector3) = this()
     def this(dragAxis: Vector3, color: Color3) = this()
-    def this(dragAxis: Vector3, color: js.UndefOr[scala.Nothing], gizmoLayer: UtilityLayerRenderer) = this()
+    def this(dragAxis: Vector3, color: Unit, gizmoLayer: UtilityLayerRenderer) = this()
     def this(dragAxis: Vector3, color: Color3, gizmoLayer: UtilityLayerRenderer) = this()
-    def this(
-      dragAxis: Vector3,
-      color: js.UndefOr[scala.Nothing],
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      parent: Nullable[PositionGizmo]
-    ) = this()
-    def this(
-      dragAxis: Vector3,
-      color: js.UndefOr[scala.Nothing],
-      gizmoLayer: UtilityLayerRenderer,
-      parent: Nullable[PositionGizmo]
-    ) = this()
-    def this(
-      dragAxis: Vector3,
-      color: Color3,
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      parent: Nullable[PositionGizmo]
-    ) = this()
+    def this(dragAxis: Vector3, color: Unit, gizmoLayer: Unit, parent: Nullable[PositionGizmo]) = this()
+    def this(dragAxis: Vector3, color: Unit, gizmoLayer: UtilityLayerRenderer, parent: Nullable[PositionGizmo]) = this()
+    def this(dragAxis: Vector3, color: Color3, gizmoLayer: Unit, parent: Nullable[PositionGizmo]) = this()
     def this(
       dragAxis: Vector3,
       color: Color3,
       gizmoLayer: UtilityLayerRenderer,
       parent: Nullable[PositionGizmo]
     ) = this()
+    def this(dragAxis: Vector3, color: Unit, gizmoLayer: Unit, parent: Unit, thickness: Double) = this()
     def this(
       dragAxis: Vector3,
-      color: js.UndefOr[scala.Nothing],
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      parent: js.UndefOr[Nullable[PositionGizmo]],
+      color: Unit,
+      gizmoLayer: Unit,
+      parent: Nullable[PositionGizmo],
       thickness: Double
     ) = this()
+    def this(dragAxis: Vector3, color: Unit, gizmoLayer: UtilityLayerRenderer, parent: Unit, thickness: Double) = this()
     def this(
       dragAxis: Vector3,
-      color: js.UndefOr[scala.Nothing],
+      color: Unit,
       gizmoLayer: UtilityLayerRenderer,
-      parent: js.UndefOr[Nullable[PositionGizmo]],
+      parent: Nullable[PositionGizmo],
+      thickness: Double
+    ) = this()
+    def this(dragAxis: Vector3, color: Color3, gizmoLayer: Unit, parent: Unit, thickness: Double) = this()
+    def this(
+      dragAxis: Vector3,
+      color: Color3,
+      gizmoLayer: Unit,
+      parent: Nullable[PositionGizmo],
       thickness: Double
     ) = this()
     def this(
       dragAxis: Vector3,
       color: Color3,
-      gizmoLayer: js.UndefOr[scala.Nothing],
-      parent: js.UndefOr[Nullable[PositionGizmo]],
+      gizmoLayer: UtilityLayerRenderer,
+      parent: Unit,
       thickness: Double
     ) = this()
     def this(
       dragAxis: Vector3,
       color: Color3,
       gizmoLayer: UtilityLayerRenderer,
-      parent: js.UndefOr[Nullable[PositionGizmo]],
+      parent: Nullable[PositionGizmo],
       thickness: Double
     ) = this()
     
-    var _coloredMaterial: js.Any = js.native
+    /* private */ var _coloredMaterial: js.Any = js.native
     
-    var _disableMaterial: js.Any = js.native
+    /* private */ var _disableMaterial: js.Any = js.native
     
-    var _dragging: js.Any = js.native
+    /* private */ var _dragging: js.Any = js.native
     
-    var _gizmoMesh: js.Any = js.native
+    /* private */ var _gizmoMesh: js.Any = js.native
     
-    var _hoverMaterial: js.Any = js.native
+    /* private */ var _hoverMaterial: js.Any = js.native
     
-    var _isEnabled: js.Any = js.native
+    /* private */ var _isEnabled: js.Any = js.native
     
-    var _parent: js.Any = js.native
+    /* private */ var _parent: js.Any = js.native
     
-    var _pointerObserver: js.Any = js.native
+    /* private */ var _pointerObserver: js.Any = js.native
     
     /**
       * Drag behavior responsible for the gizmos dragging interactions
@@ -127,28 +121,17 @@ object axisDragGizmoMod {
   /* static members */
   object AxisDragGizmo {
     
-    /** @hidden */
-    @JSImport("babylonjs/Gizmos/axisDragGizmo", "AxisDragGizmo._CreateArrow")
+    @JSImport("babylonjs/Gizmos/axisDragGizmo", "AxisDragGizmo")
     @js.native
-    def _CreateArrow(scene: Scene, material: StandardMaterial): TransformNode = js.native
-    @JSImport("babylonjs/Gizmos/axisDragGizmo", "AxisDragGizmo._CreateArrow")
-    @js.native
-    def _CreateArrow(
-      scene: Scene,
-      material: StandardMaterial,
-      thickness: js.UndefOr[scala.Nothing],
-      isCollider: Boolean
-    ): TransformNode = js.native
-    @JSImport("babylonjs/Gizmos/axisDragGizmo", "AxisDragGizmo._CreateArrow")
-    @js.native
-    def _CreateArrow(scene: Scene, material: StandardMaterial, thickness: Double): TransformNode = js.native
-    @JSImport("babylonjs/Gizmos/axisDragGizmo", "AxisDragGizmo._CreateArrow")
-    @js.native
-    def _CreateArrow(scene: Scene, material: StandardMaterial, thickness: Double, isCollider: Boolean): TransformNode = js.native
+    val ^ : js.Any = js.native
     
     /** @hidden */
-    @JSImport("babylonjs/Gizmos/axisDragGizmo", "AxisDragGizmo._CreateArrowInstance")
-    @js.native
-    def _CreateArrowInstance(scene: Scene, arrow: TransformNode): TransformNode = js.native
+    inline def _CreateArrow(scene: Scene, material: StandardMaterial): TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrow")(scene.asInstanceOf[js.Any], material.asInstanceOf[js.Any])).asInstanceOf[TransformNode]
+    inline def _CreateArrow(scene: Scene, material: StandardMaterial, thickness: Double): TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrow")(scene.asInstanceOf[js.Any], material.asInstanceOf[js.Any], thickness.asInstanceOf[js.Any])).asInstanceOf[TransformNode]
+    inline def _CreateArrow(scene: Scene, material: StandardMaterial, thickness: Double, isCollider: Boolean): TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrow")(scene.asInstanceOf[js.Any], material.asInstanceOf[js.Any], thickness.asInstanceOf[js.Any], isCollider.asInstanceOf[js.Any])).asInstanceOf[TransformNode]
+    inline def _CreateArrow(scene: Scene, material: StandardMaterial, thickness: Unit, isCollider: Boolean): TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrow")(scene.asInstanceOf[js.Any], material.asInstanceOf[js.Any], thickness.asInstanceOf[js.Any], isCollider.asInstanceOf[js.Any])).asInstanceOf[TransformNode]
+    
+    /** @hidden */
+    inline def _CreateArrowInstance(scene: Scene, arrow: TransformNode): TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrowInstance")(scene.asInstanceOf[js.Any], arrow.asInstanceOf[js.Any])).asInstanceOf[TransformNode]
   }
 }

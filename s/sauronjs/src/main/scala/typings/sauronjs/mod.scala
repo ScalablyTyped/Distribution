@@ -53,15 +53,8 @@ object mod {
     }
   }
   
-  object instance {
-    
-    inline def apply(componentMap: SauronComponentMap): SauronInstance = ^.asInstanceOf[js.Dynamic].apply(componentMap.asInstanceOf[js.Any]).asInstanceOf[SauronInstance]
-    inline def apply(componentMap: SauronComponentMap, id: String): SauronInstance = (^.asInstanceOf[js.Dynamic].apply(componentMap.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SauronInstance]
-    
-    @JSImport("sauronjs", "instance")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def instance(componentMap: SauronComponentMap): SauronInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")(componentMap.asInstanceOf[js.Any]).asInstanceOf[SauronInstance]
+  inline def instance(componentMap: SauronComponentMap, id: String): SauronInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("instance")(componentMap.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SauronInstance]
   
   inline def next(channels: js.Array[String], event: String, data: js.Any, id: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("next")(channels.asInstanceOf[js.Any], event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

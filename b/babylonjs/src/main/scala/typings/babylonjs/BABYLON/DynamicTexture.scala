@@ -3,21 +3,22 @@ package typings.babylonjs.BABYLON
 import typings.babylonjs.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DynamicTexture extends Texture {
+trait DynamicTexture
+  extends StObject
+     with Texture {
   
-  var _IsCanvasElement: js.Any = js.native
+  /* private */ var _IsCanvasElement: js.Any = js.native
   
-  var _canvas: js.Any = js.native
+  /* private */ var _canvas: js.Any = js.native
   
-  var _context: js.Any = js.native
+  /* private */ var _context: js.Any = js.native
   
-  var _generateMipMaps: js.Any = js.native
+  /* private */ var _generateMipMaps: js.Any = js.native
   
-  var _recreate: js.Any = js.native
+  /* private */ var _recreate: js.Any = js.native
   
   /**
     * Clears the texture
@@ -65,7 +66,7 @@ trait DynamicTexture extends Texture {
     * @param premulAlpha defines if alpha is stored as premultiplied (default is false)
     */
   def update(): Unit = js.native
-  def update(invertY: js.UndefOr[scala.Nothing], premulAlpha: Boolean): Unit = js.native
   def update(invertY: Boolean): Unit = js.native
   def update(invertY: Boolean, premulAlpha: Boolean): Unit = js.native
+  def update(invertY: Unit, premulAlpha: Boolean): Unit = js.native
 }

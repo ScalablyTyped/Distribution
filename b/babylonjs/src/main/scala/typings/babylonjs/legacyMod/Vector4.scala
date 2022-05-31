@@ -5,7 +5,6 @@ import typings.std.ArrayLike
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "Vector4")
@@ -33,18 +32,20 @@ class Vector4 protected ()
 /* static members */
 object Vector4 {
   
+  @JSImport("babylonjs/Legacy/legacy", "Vector4")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Returns a new Vector4 located at the center between the vectors "value1" and "value2".
     * @param value1 value to calulate the center between
     * @param value2 value to calulate the center between
     * @return the center between the two vectors
     */
-  @JSImport("babylonjs/Legacy/legacy", "Vector4.Center")
-  @js.native
-  def Center(
+  inline def Center(
     value1: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4],
     value2: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4]
-  ): typings.babylonjs.mathVectorMod.Vector4 = js.native
+  ): typings.babylonjs.mathVectorMod.Vector4 = (^.asInstanceOf[js.Dynamic].applyDynamic("Center")(value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Vector4]
   
   /**
     * Returns the distance (float) between the vectors "value1" and "value2".
@@ -52,12 +53,10 @@ object Vector4 {
     * @param value2 value to calulate the distance between
     * @return the distance between the two vectors
     */
-  @JSImport("babylonjs/Legacy/legacy", "Vector4.Distance")
-  @js.native
-  def Distance(
+  inline def Distance(
     value1: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4],
     value2: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4]
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Distance")(value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Returns the squared distance (float) between the vectors "value1" and "value2".
@@ -65,12 +64,10 @@ object Vector4 {
     * @param value2 value to calulate the distance between
     * @return the distance between the two vectors squared
     */
-  @JSImport("babylonjs/Legacy/legacy", "Vector4.DistanceSquared")
-  @js.native
-  def DistanceSquared(
+  inline def DistanceSquared(
     value1: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4],
     value2: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4]
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("DistanceSquared")(value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Returns a new Vector4 set from the starting index of the given array.
@@ -78,12 +75,8 @@ object Vector4 {
     * @param offset the offset into the array to start at
     * @returns the new vector
     */
-  @JSImport("babylonjs/Legacy/legacy", "Vector4.FromArray")
-  @js.native
-  def FromArray(array: DeepImmutable[ArrayLike[Double]]): typings.babylonjs.mathVectorMod.Vector4 = js.native
-  @JSImport("babylonjs/Legacy/legacy", "Vector4.FromArray")
-  @js.native
-  def FromArray(array: DeepImmutable[ArrayLike[Double]], offset: Double): typings.babylonjs.mathVectorMod.Vector4 = js.native
+  inline def FromArray(array: DeepImmutable[ArrayLike[Double]]): typings.babylonjs.mathVectorMod.Vector4 = ^.asInstanceOf[js.Dynamic].applyDynamic("FromArray")(array.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathVectorMod.Vector4]
+  inline def FromArray(array: DeepImmutable[ArrayLike[Double]], offset: Double): typings.babylonjs.mathVectorMod.Vector4 = (^.asInstanceOf[js.Dynamic].applyDynamic("FromArray")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Vector4]
   
   /**
     * Updates the given vector "result" from the starting index of the given array.
@@ -91,13 +84,11 @@ object Vector4 {
     * @param offset the offset into the array to start at
     * @param result the vector to store the result in
     */
-  @JSImport("babylonjs/Legacy/legacy", "Vector4.FromArrayToRef")
-  @js.native
-  def FromArrayToRef(
+  inline def FromArrayToRef(
     array: DeepImmutable[ArrayLike[Double]],
     offset: Double,
     result: typings.babylonjs.mathVectorMod.Vector4
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromArrayToRef")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Updates the given vector "result" from the starting index of the given Float32Array.
@@ -105,13 +96,11 @@ object Vector4 {
     * @param offset the offset into the array to start at
     * @param result the vector to store the result in
     */
-  @JSImport("babylonjs/Legacy/legacy", "Vector4.FromFloatArrayToRef")
-  @js.native
-  def FromFloatArrayToRef(
+  inline def FromFloatArrayToRef(
     array: DeepImmutable[Float32Array],
     offset: Double,
     result: typings.babylonjs.mathVectorMod.Vector4
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromFloatArrayToRef")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Updates the given vector "result" coordinates from the given floats.
@@ -121,9 +110,7 @@ object Vector4 {
     * @param w float to set from
     * @param result the vector to the floats in
     */
-  @JSImport("babylonjs/Legacy/legacy", "Vector4.FromFloatsToRef")
-  @js.native
-  def FromFloatsToRef(x: Double, y: Double, z: Double, w: Double, result: typings.babylonjs.mathVectorMod.Vector4): Unit = js.native
+  inline def FromFloatsToRef(x: Double, y: Double, z: Double, w: Double, result: typings.babylonjs.mathVectorMod.Vector4): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromFloatsToRef")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates a new Vector4 from a Vector3
@@ -131,12 +118,8 @@ object Vector4 {
     * @param w defines the 4th component (default is 0)
     * @returns a new Vector4
     */
-  @JSImport("babylonjs/Legacy/legacy", "Vector4.FromVector3")
-  @js.native
-  def FromVector3(source: typings.babylonjs.mathVectorMod.Vector3): typings.babylonjs.mathVectorMod.Vector4 = js.native
-  @JSImport("babylonjs/Legacy/legacy", "Vector4.FromVector3")
-  @js.native
-  def FromVector3(source: typings.babylonjs.mathVectorMod.Vector3, w: Double): typings.babylonjs.mathVectorMod.Vector4 = js.native
+  inline def FromVector3(source: typings.babylonjs.mathVectorMod.Vector3): typings.babylonjs.mathVectorMod.Vector4 = ^.asInstanceOf[js.Dynamic].applyDynamic("FromVector3")(source.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathVectorMod.Vector4]
+  inline def FromVector3(source: typings.babylonjs.mathVectorMod.Vector3, w: Double): typings.babylonjs.mathVectorMod.Vector4 = (^.asInstanceOf[js.Dynamic].applyDynamic("FromVector3")(source.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Vector4]
   
   /**
     * Returns a vector with the maximum values from the left and right vectors
@@ -144,12 +127,10 @@ object Vector4 {
     * @param right right vector to maximize
     * @returns a new vector with the maximum of the left and right vector values
     */
-  @JSImport("babylonjs/Legacy/legacy", "Vector4.Maximize")
-  @js.native
-  def Maximize(
+  inline def Maximize(
     left: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4],
     right: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4]
-  ): typings.babylonjs.mathVectorMod.Vector4 = js.native
+  ): typings.babylonjs.mathVectorMod.Vector4 = (^.asInstanceOf[js.Dynamic].applyDynamic("Maximize")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Vector4]
   
   /**
     * Returns a vector with the minimum values from the left and right vectors
@@ -157,41 +138,33 @@ object Vector4 {
     * @param right right vector to minimize
     * @returns a new vector with the minimum of the left and right vector values
     */
-  @JSImport("babylonjs/Legacy/legacy", "Vector4.Minimize")
-  @js.native
-  def Minimize(
+  inline def Minimize(
     left: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4],
     right: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4]
-  ): typings.babylonjs.mathVectorMod.Vector4 = js.native
+  ): typings.babylonjs.mathVectorMod.Vector4 = (^.asInstanceOf[js.Dynamic].applyDynamic("Minimize")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Vector4]
   
   /**
     * Returns a new normalized Vector4 from the given one.
     * @param vector the vector to normalize
     * @returns the vector
     */
-  @JSImport("babylonjs/Legacy/legacy", "Vector4.Normalize")
-  @js.native
-  def Normalize(vector: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4]): typings.babylonjs.mathVectorMod.Vector4 = js.native
+  inline def Normalize(vector: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4]): typings.babylonjs.mathVectorMod.Vector4 = ^.asInstanceOf[js.Dynamic].applyDynamic("Normalize")(vector.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathVectorMod.Vector4]
   
   /**
     * Updates the given vector "result" from the normalization of the given one.
     * @param vector the vector to normalize
     * @param result the vector to store the result in
     */
-  @JSImport("babylonjs/Legacy/legacy", "Vector4.NormalizeToRef")
-  @js.native
-  def NormalizeToRef(
+  inline def NormalizeToRef(
     vector: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4],
     result: typings.babylonjs.mathVectorMod.Vector4
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("NormalizeToRef")(vector.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Returns a new Vector4 set to (1.0, 1.0, 1.0, 1.0)
     * @returns the new vector
     */
-  @JSImport("babylonjs/Legacy/legacy", "Vector4.One")
-  @js.native
-  def One(): typings.babylonjs.mathVectorMod.Vector4 = js.native
+  inline def One(): typings.babylonjs.mathVectorMod.Vector4 = ^.asInstanceOf[js.Dynamic].applyDynamic("One")().asInstanceOf[typings.babylonjs.mathVectorMod.Vector4]
   
   /**
     * Returns a new Vector4 set with the result of the normal transformation by the given matrix of the given vector.
@@ -200,12 +173,10 @@ object Vector4 {
     * @param transformation the transformation matrix to apply
     * @returns the new vector
     */
-  @JSImport("babylonjs/Legacy/legacy", "Vector4.TransformNormal")
-  @js.native
-  def TransformNormal(
+  inline def TransformNormal(
     vector: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4],
     transformation: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]
-  ): typings.babylonjs.mathVectorMod.Vector4 = js.native
+  ): typings.babylonjs.mathVectorMod.Vector4 = (^.asInstanceOf[js.Dynamic].applyDynamic("TransformNormal")(vector.asInstanceOf[js.Any], transformation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Vector4]
   
   /**
     * Sets the given vector "result" with the result of the normal transformation by the given matrix of the given floats (x, y, z, w).
@@ -217,16 +188,14 @@ object Vector4 {
     * @param transformation the transformation matrix to apply
     * @param result the vector to store the results in
     */
-  @JSImport("babylonjs/Legacy/legacy", "Vector4.TransformNormalFromFloatsToRef")
-  @js.native
-  def TransformNormalFromFloatsToRef(
+  inline def TransformNormalFromFloatsToRef(
     x: Double,
     y: Double,
     z: Double,
     w: Double,
     transformation: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
     result: typings.babylonjs.mathVectorMod.Vector4
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("TransformNormalFromFloatsToRef")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any], transformation.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the given vector "result" with the result of the normal transformation by the given matrix of the given vector.
@@ -235,19 +204,15 @@ object Vector4 {
     * @param transformation the transformation matrix to apply
     * @param result the vector to store the result in
     */
-  @JSImport("babylonjs/Legacy/legacy", "Vector4.TransformNormalToRef")
-  @js.native
-  def TransformNormalToRef(
+  inline def TransformNormalToRef(
     vector: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4],
     transformation: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
     result: typings.babylonjs.mathVectorMod.Vector4
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("TransformNormalToRef")(vector.asInstanceOf[js.Any], transformation.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Returns a new Vector4 set to (0.0, 0.0, 0.0, 0.0)
     * @returns the new vector
     */
-  @JSImport("babylonjs/Legacy/legacy", "Vector4.Zero")
-  @js.native
-  def Zero(): typings.babylonjs.mathVectorMod.Vector4 = js.native
+  inline def Zero(): typings.babylonjs.mathVectorMod.Vector4 = ^.asInstanceOf[js.Dynamic].applyDynamic("Zero")().asInstanceOf[typings.babylonjs.mathVectorMod.Vector4]
 }

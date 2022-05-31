@@ -3,7 +3,6 @@ package typings.babylonjs
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stringDictionaryMod {
@@ -12,9 +11,9 @@ object stringDictionaryMod {
   @js.native
   class StringDictionary[T] () extends StObject {
     
-    var _count: js.Any = js.native
+    /* private */ var _count: js.Any = js.native
     
-    var _data: js.Any = js.native
+    /* private */ var _data: js.Any = js.native
     
     /**
       * Add a new key and its corresponding value

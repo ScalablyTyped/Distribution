@@ -10,7 +10,6 @@ import typings.babylonjs.shadowGeneratorMod.ShadowGenerator
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cascadedShadowGeneratorMod {
@@ -30,79 +29,79 @@ object cascadedShadowGeneratorMod {
     def this(mapSize: Double, light: DirectionalLight) = this()
     def this(mapSize: Double, light: DirectionalLight, usefulFloatFirst: Boolean) = this()
     
-    var _autoCalcDepthBounds: js.Any = js.native
+    /* private */ var _autoCalcDepthBounds: js.Any = js.native
     
-    var _breaksAreDirty: Boolean = js.native
+    /* protected */ var _breaksAreDirty: Boolean = js.native
     
-    var _cascadeBlendPercentage: js.Any = js.native
+    /* private */ var _cascadeBlendPercentage: js.Any = js.native
     
-    var _cascadeMaxExtents: js.Any = js.native
+    /* private */ var _cascadeMaxExtents: js.Any = js.native
     
-    var _cascadeMinExtents: js.Any = js.native
+    /* private */ var _cascadeMinExtents: js.Any = js.native
     
-    var _cascades: js.Any = js.native
+    /* private */ var _cascades: js.Any = js.native
     
-    var _computeCascadeFrustum: js.Any = js.native
+    /* private */ var _computeCascadeFrustum: js.Any = js.native
     
-    var _computeFrustumInWorldSpace: js.Any = js.native
+    /* private */ var _computeFrustumInWorldSpace: js.Any = js.native
     
-    var _computeMatrices: js.Any = js.native
+    /* private */ var _computeMatrices: js.Any = js.native
     
     /* protected */ def _computeShadowCastersBoundingInfo(): Unit = js.native
     
-    var _currentLayer: js.Any = js.native
+    /* private */ var _currentLayer: js.Any = js.native
     
-    var _debug: Boolean = js.native
+    /* protected */ var _debug: Boolean = js.native
     
-    var _depthClamp: js.Any = js.native
+    /* private */ var _depthClamp: js.Any = js.native
     
-    var _depthCorrection: js.Any = js.native
+    /* private */ var _depthCorrection: js.Any = js.native
     
-    var _depthReducer: js.Any = js.native
+    /* private */ var _depthReducer: js.Any = js.native
     
-    var _depthRenderer: js.Any = js.native
+    /* private */ var _depthRenderer: js.Any = js.native
     
-    var _freezeShadowCastersBoundingInfo: js.Any = js.native
+    /* private */ var _freezeShadowCastersBoundingInfo: js.Any = js.native
     
-    var _freezeShadowCastersBoundingInfoObservable: js.Any = js.native
+    /* private */ var _freezeShadowCastersBoundingInfoObservable: js.Any = js.native
     
-    var _frustumCenter: js.Any = js.native
+    /* private */ var _frustumCenter: js.Any = js.native
     
-    var _frustumCornersWorldSpace: js.Any = js.native
+    /* private */ var _frustumCornersWorldSpace: js.Any = js.native
     
-    var _frustumLengths: js.Any = js.native
+    /* private */ var _frustumLengths: js.Any = js.native
     
-    var _lambda: js.Any = js.native
+    /* private */ var _lambda: js.Any = js.native
     
-    var _lightSizeUVCorrection: js.Any = js.native
+    /* private */ var _lightSizeUVCorrection: js.Any = js.native
     
-    var _maxDistance: Double = js.native
+    /* protected */ var _maxDistance: Double = js.native
     
-    var _minDistance: Double = js.native
+    /* protected */ var _minDistance: Double = js.native
     
-    var _numCascades: js.Any = js.native
+    /* private */ var _numCascades: js.Any = js.native
     
-    var _projectionMatrices: js.Any = js.native
+    /* private */ var _projectionMatrices: js.Any = js.native
     
-    var _scbiMax: js.Any = js.native
+    /* private */ var _scbiMax: js.Any = js.native
     
-    var _scbiMin: js.Any = js.native
+    /* private */ var _scbiMin: js.Any = js.native
     
-    var _shadowCameraPos: js.Any = js.native
+    /* private */ var _shadowCameraPos: js.Any = js.native
     
-    var _shadowCastersBoundingInfo: BoundingInfo = js.native
+    /* protected */ var _shadowCastersBoundingInfo: BoundingInfo = js.native
     
-    var _shadowMaxZ: js.Any = js.native
+    /* private */ var _shadowMaxZ: js.Any = js.native
     
-    var _splitFrustum: js.Any = js.native
+    /* private */ var _splitFrustum: js.Any = js.native
     
-    var _transformMatrices: js.Any = js.native
+    /* private */ var _transformMatrices: js.Any = js.native
     
-    var _transformMatricesAsArray: js.Any = js.native
+    /* private */ var _transformMatricesAsArray: js.Any = js.native
     
-    var _viewMatrices: js.Any = js.native
+    /* private */ var _viewMatrices: js.Any = js.native
     
-    var _viewSpaceFrustumsZ: js.Any = js.native
+    /* private */ var _viewSpaceFrustumsZ: js.Any = js.native
     
     /**
       * Gets or sets the autoCalcDepthBounds property.
@@ -285,8 +284,7 @@ object cascadedShadowGeneratorMod {
     @JSImport("babylonjs/Lights/Shadows/cascadedShadowGenerator", "CascadedShadowGenerator.CLASSNAME")
     @js.native
     def CLASSNAME: String = js.native
-    @scala.inline
-    def CLASSNAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASSNAME")(x.asInstanceOf[js.Any])
+    inline def CLASSNAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASSNAME")(x.asInstanceOf[js.Any])
     
     /**
       * Defines the default number of cascades used by the CSM.
@@ -315,14 +313,10 @@ object cascadedShadowGeneratorMod {
       * @param scene The scene to create the shadow map for
       * @returns The parsed shadow generator
       */
-    @JSImport("babylonjs/Lights/Shadows/cascadedShadowGenerator", "CascadedShadowGenerator.Parse")
-    @js.native
-    def Parse(parsedShadowGenerator: js.Any, scene: Scene): ShadowGenerator = js.native
+    inline def Parse(parsedShadowGenerator: js.Any, scene: Scene): ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[ShadowGenerator]
     
     /** @hidden */
-    @JSImport("babylonjs/Lights/Shadows/cascadedShadowGenerator", "CascadedShadowGenerator._SceneComponentInitialization")
-    @js.native
-    def _SceneComponentInitialization(scene: Scene): Unit = js.native
+    inline def _SceneComponentInitialization(scene: Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("babylonjs/Lights/Shadows/cascadedShadowGenerator", "CascadedShadowGenerator.frustumCornersNDCSpace")
     @js.native

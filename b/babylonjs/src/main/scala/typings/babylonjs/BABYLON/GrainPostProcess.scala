@@ -2,11 +2,12 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GrainPostProcess extends PostProcess {
+trait GrainPostProcess
+  extends StObject
+     with PostProcess {
   
   /**
     * If the grain should be randomized on every frame

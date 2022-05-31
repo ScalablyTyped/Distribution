@@ -3,7 +3,6 @@ package typings.babylonjs.BABYLON
 import typings.babylonjs.anon.PartialuseInstancesboolea
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -29,9 +28,9 @@ trait IShadowGenerator extends StObject {
     * @param options Sets of optional options forcing the compilation with different modes
     */
   def forceCompilation(): Unit = js.native
-  def forceCompilation(onCompiled: js.UndefOr[scala.Nothing], options: PartialuseInstancesboolea): Unit = js.native
   def forceCompilation(onCompiled: js.Function1[/* generator */ this.type, Unit]): Unit = js.native
   def forceCompilation(onCompiled: js.Function1[/* generator */ this.type, Unit], options: PartialuseInstancesboolea): Unit = js.native
+  def forceCompilation(onCompiled: Unit, options: PartialuseInstancesboolea): Unit = js.native
   
   /**
     * Forces all the attached effect to compile to enable rendering only once ready vs. lazyly compiling effects.

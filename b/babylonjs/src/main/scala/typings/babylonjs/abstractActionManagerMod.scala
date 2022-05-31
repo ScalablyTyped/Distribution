@@ -7,17 +7,24 @@ import typings.babylonjs.sceneMod.IDisposable
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object abstractActionManagerMod {
   
   @JSImport("babylonjs/Actions/abstractActionManager", "AbstractActionManager")
   @js.native
-  abstract class AbstractActionManager () extends IDisposable {
+  abstract class AbstractActionManager ()
+    extends StObject
+       with IDisposable {
     
     /** Gets the list of actions */
     var actions: js.Array[IAction] = js.native
+    
+    /**
+      * Releases all held resources
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * Does this action manager has pick triggers
@@ -103,15 +110,12 @@ object abstractActionManagerMod {
       * @param trigger defines the trigger to be tested
       * @return a boolean indicating whether the trigger is handeled by at least one action manager
       **/
-    @JSImport("babylonjs/Actions/abstractActionManager", "AbstractActionManager.HasSpecificTrigger")
-    @js.native
-    def HasSpecificTrigger(trigger: Double): Boolean = js.native
+    inline def HasSpecificTrigger(trigger: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("HasSpecificTrigger")(trigger.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /** Gets the list of active triggers */
     @JSImport("babylonjs/Actions/abstractActionManager", "AbstractActionManager.Triggers")
     @js.native
     def Triggers: StringDictionary[Double] = js.native
-    @scala.inline
-    def Triggers_=(x: StringDictionary[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Triggers")(x.asInstanceOf[js.Any])
+    inline def Triggers_=(x: StringDictionary[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Triggers")(x.asInstanceOf[js.Any])
   }
 }

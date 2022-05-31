@@ -9,14 +9,15 @@ import typings.babylonjs.webXRManagedOutputCanvasMod.WebXRManagedOutputCanvasOpt
 import typings.babylonjs.webXRTypesMod.WebXRRenderTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webXRSessionManagerMod {
   
   @JSImport("babylonjs/XR/webXRSessionManager", "WebXRSessionManager")
   @js.native
-  class WebXRSessionManager protected () extends IDisposable {
+  class WebXRSessionManager protected ()
+    extends StObject
+       with IDisposable {
     /**
       * Constructs a WebXRSessionManager, this must be initialized within a user action before usage
       * @param scene The scene which the session should be created for
@@ -24,17 +25,17 @@ object webXRSessionManagerMod {
     def this(/** The scene which the session should be created for */
     scene: Scene) = this()
     
-    var _createRenderTargetTexture: js.Any = js.native
+    /* private */ var _createRenderTargetTexture: js.Any = js.native
     
-    var _referenceSpace: js.Any = js.native
+    /* private */ var _referenceSpace: js.Any = js.native
     
-    var _rttProvider: js.Any = js.native
+    /* private */ var _rttProvider: js.Any = js.native
     
-    var _sessionEnded: js.Any = js.native
+    /* private */ var _sessionEnded: js.Any = js.native
     
-    var _xrNavigator: js.Any = js.native
+    /* private */ var _xrNavigator: js.Any = js.native
     
-    var baseLayer: js.Any = js.native
+    /* private */ var baseLayer: js.Any = js.native
     
     /**
       * The base reference space from which the session started. good if you want to reset your
@@ -55,6 +56,12 @@ object webXRSessionManagerMod {
       * The viewer reference space is compensated using this height, creating a kind of "viewer-floor" reference space
       */
     var defaultHeightCompensation: Double = js.native
+    
+    /**
+      * Releases all held resources
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * Stops the xrSession and restores the render loop
@@ -92,7 +99,7 @@ object webXRSessionManagerMod {
       * @returns a promise which will resolve once the session has been initialized
       */
     def initializeSessionAsync(): js.Promise[XRSession] = js.native
-    def initializeSessionAsync(xrSessionMode: js.UndefOr[scala.Nothing], xrSessionInit: XRSessionInit): js.Promise[XRSession] = js.native
+    def initializeSessionAsync(xrSessionMode: Unit, xrSessionInit: XRSessionInit): js.Promise[XRSession] = js.native
     def initializeSessionAsync(xrSessionMode: XRSessionMode): js.Promise[XRSession] = js.native
     def initializeSessionAsync(xrSessionMode: XRSessionMode, xrSessionInit: XRSessionInit): js.Promise[XRSession] = js.native
     
@@ -116,7 +123,7 @@ object webXRSessionManagerMod {
     /**
       * Fires when the xr session is ended either by the device or manually done
       */
-    var onXRSessionEnded: Observable[_] = js.native
+    var onXRSessionEnded: Observable[js.Any] = js.native
     
     /**
       * Fires when the xr session is ended either by the device or manually done
@@ -175,13 +182,15 @@ object webXRSessionManagerMod {
   /* static members */
   object WebXRSessionManager {
     
+    @JSImport("babylonjs/XR/webXRSessionManager", "WebXRSessionManager")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns a promise that resolves with a boolean indicating if the provided session mode is supported by this browser
       * @param sessionMode defines the session to test
       * @returns a promise with boolean as final value
       */
-    @JSImport("babylonjs/XR/webXRSessionManager", "WebXRSessionManager.IsSessionSupportedAsync")
-    @js.native
-    def IsSessionSupportedAsync(sessionMode: XRSessionMode): js.Promise[Boolean] = js.native
+    inline def IsSessionSupportedAsync(sessionMode: XRSessionMode): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("IsSessionSupportedAsync")(sessionMode.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   }
 }

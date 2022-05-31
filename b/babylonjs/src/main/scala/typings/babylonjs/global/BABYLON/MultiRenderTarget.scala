@@ -1,15 +1,16 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.IMultiRenderTargetOptions
+import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.MultiRenderTarget")
 @js.native
 class MultiRenderTarget protected ()
-  extends typings.babylonjs.BABYLON.MultiRenderTarget {
+  extends StObject
+     with typings.babylonjs.BABYLON.MultiRenderTarget {
   /**
     * Instantiate a new multi render target texture.
     * A multi render target, like a render target provides the ability to render to a texture.
@@ -30,4 +31,10 @@ class MultiRenderTarget protected ()
     scene: typings.babylonjs.BABYLON.Scene,
     options: IMultiRenderTargetOptions
   ) = this()
+  
+  /**
+    * Array of animations
+    */
+  /* CompleteClass */
+  var animations: Nullable[js.Array[typings.babylonjs.BABYLON.Animation]] = js.native
 }

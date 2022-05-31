@@ -2,91 +2,90 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BoundingBoxRenderer extends ISceneComponent {
+trait BoundingBoxRenderer
+  extends StObject
+     with ISceneComponent {
   
-  var _colorShader: js.Any = js.native
+  /* private */ var _colorShader: js.Any
   
-  var _createIndexBuffer: js.Any = js.native
+  /* private */ var _createIndexBuffer: js.Any
   
-  var _evaluateSubMesh: js.Any = js.native
+  /* private */ var _evaluateSubMesh: js.Any
   
-  var _fillIndexBuffer: js.Any = js.native
+  /* private */ var _fillIndexBuffer: js.Any
   
-  var _fillIndexData: js.Any = js.native
+  /* private */ var _fillIndexData: js.Any
   
-  var _indexBuffer: js.Any = js.native
+  /* private */ var _indexBuffer: js.Any
   
-  var _preActiveMesh: js.Any = js.native
+  /* private */ var _preActiveMesh: js.Any
   
-  var _prepareResources: js.Any = js.native
+  /* private */ var _prepareResources: js.Any
   
-  var _vertexBuffers: js.Any = js.native
+  /* private */ var _vertexBuffers: js.Any
   
   /**
     * Color of the bounding box lines placed behind an object
     */
-  var backColor: Color3 = js.native
+  var backColor: Color3
   
   /**
     * When false, no bounding boxes will be rendered
     */
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
   /**
     * Color of the bounding box lines placed in front of an object
     */
-  var frontColor: Color3 = js.native
+  var frontColor: Color3
   
   /**
     * Observable raised after rendering a bounding box
     */
-  var onAfterBoxRenderingObservable: Observable[BoundingBox] = js.native
+  var onAfterBoxRenderingObservable: Observable[BoundingBox]
   
   /**
     * Observable raised before rendering a bounding box
     */
-  var onBeforeBoxRenderingObservable: Observable[BoundingBox] = js.native
+  var onBeforeBoxRenderingObservable: Observable[BoundingBox]
   
   /**
     * Observable raised after resources are created
     */
-  var onResourcesReadyObservable: Observable[BoundingBoxRenderer] = js.native
+  var onResourcesReadyObservable: Observable[BoundingBoxRenderer]
   
   /**
     * Render the bounding boxes of a specific rendering group
     * @param renderingGroupId defines the rendering group to render
     */
-  def render(renderingGroupId: Double): Unit = js.native
+  def render(renderingGroupId: Double): Unit
   
   /**
     * @hidden
     */
-  var renderList: SmartArray[BoundingBox] = js.native
+  var renderList: SmartArray[BoundingBox]
   
   /**
     * In case of occlusion queries, we can render the occlusion bounding box through this method
     * @param mesh Define the mesh to render the occlusion bounding box for
     */
-  def renderOcclusionBoundingBox(mesh: AbstractMesh): Unit = js.native
+  def renderOcclusionBoundingBox(mesh: AbstractMesh): Unit
   
   /**
     * @hidden
     */
-  def reset(): Unit = js.native
+  def reset(): Unit
   
   /**
     * Defines if the renderer should show the back lines or not
     */
-  var showBackLines: Boolean = js.native
+  var showBackLines: Boolean
 }
 object BoundingBoxRenderer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _colorShader: js.Any,
     _createIndexBuffer: js.Any,
     _evaluateSubMesh: js.Any,
@@ -117,67 +116,46 @@ object BoundingBoxRenderer {
     __obj.asInstanceOf[BoundingBoxRenderer]
   }
   
-  @scala.inline
-  implicit class BoundingBoxRendererMutableBuilder[Self <: BoundingBoxRenderer] (val x: Self) extends AnyVal {
+  extension [Self <: BoundingBoxRenderer](x: Self) {
     
-    @scala.inline
-    def setBackColor(value: Color3): Self = StObject.set(x, "backColor", value.asInstanceOf[js.Any])
+    inline def setBackColor(value: Color3): Self = StObject.set(x, "backColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrontColor(value: Color3): Self = StObject.set(x, "frontColor", value.asInstanceOf[js.Any])
+    inline def setFrontColor(value: Color3): Self = StObject.set(x, "frontColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnAfterBoxRenderingObservable(value: Observable[BoundingBox]): Self = StObject.set(x, "onAfterBoxRenderingObservable", value.asInstanceOf[js.Any])
+    inline def setOnAfterBoxRenderingObservable(value: Observable[BoundingBox]): Self = StObject.set(x, "onAfterBoxRenderingObservable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBeforeBoxRenderingObservable(value: Observable[BoundingBox]): Self = StObject.set(x, "onBeforeBoxRenderingObservable", value.asInstanceOf[js.Any])
+    inline def setOnBeforeBoxRenderingObservable(value: Observable[BoundingBox]): Self = StObject.set(x, "onBeforeBoxRenderingObservable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnResourcesReadyObservable(value: Observable[BoundingBoxRenderer]): Self = StObject.set(x, "onResourcesReadyObservable", value.asInstanceOf[js.Any])
+    inline def setOnResourcesReadyObservable(value: Observable[BoundingBoxRenderer]): Self = StObject.set(x, "onResourcesReadyObservable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRender(value: Double => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+    inline def setRender(value: Double => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenderList(value: SmartArray[BoundingBox]): Self = StObject.set(x, "renderList", value.asInstanceOf[js.Any])
+    inline def setRenderList(value: SmartArray[BoundingBox]): Self = StObject.set(x, "renderList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderOcclusionBoundingBox(value: AbstractMesh => Unit): Self = StObject.set(x, "renderOcclusionBoundingBox", js.Any.fromFunction1(value))
+    inline def setRenderOcclusionBoundingBox(value: AbstractMesh => Unit): Self = StObject.set(x, "renderOcclusionBoundingBox", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShowBackLines(value: Boolean): Self = StObject.set(x, "showBackLines", value.asInstanceOf[js.Any])
+    inline def setShowBackLines(value: Boolean): Self = StObject.set(x, "showBackLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_colorShader(value: js.Any): Self = StObject.set(x, "_colorShader", value.asInstanceOf[js.Any])
+    inline def set_colorShader(value: js.Any): Self = StObject.set(x, "_colorShader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_createIndexBuffer(value: js.Any): Self = StObject.set(x, "_createIndexBuffer", value.asInstanceOf[js.Any])
+    inline def set_createIndexBuffer(value: js.Any): Self = StObject.set(x, "_createIndexBuffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_evaluateSubMesh(value: js.Any): Self = StObject.set(x, "_evaluateSubMesh", value.asInstanceOf[js.Any])
+    inline def set_evaluateSubMesh(value: js.Any): Self = StObject.set(x, "_evaluateSubMesh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_fillIndexBuffer(value: js.Any): Self = StObject.set(x, "_fillIndexBuffer", value.asInstanceOf[js.Any])
+    inline def set_fillIndexBuffer(value: js.Any): Self = StObject.set(x, "_fillIndexBuffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_fillIndexData(value: js.Any): Self = StObject.set(x, "_fillIndexData", value.asInstanceOf[js.Any])
+    inline def set_fillIndexData(value: js.Any): Self = StObject.set(x, "_fillIndexData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_indexBuffer(value: js.Any): Self = StObject.set(x, "_indexBuffer", value.asInstanceOf[js.Any])
+    inline def set_indexBuffer(value: js.Any): Self = StObject.set(x, "_indexBuffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_preActiveMesh(value: js.Any): Self = StObject.set(x, "_preActiveMesh", value.asInstanceOf[js.Any])
+    inline def set_preActiveMesh(value: js.Any): Self = StObject.set(x, "_preActiveMesh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_prepareResources(value: js.Any): Self = StObject.set(x, "_prepareResources", value.asInstanceOf[js.Any])
+    inline def set_prepareResources(value: js.Any): Self = StObject.set(x, "_prepareResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_vertexBuffers(value: js.Any): Self = StObject.set(x, "_vertexBuffers", value.asInstanceOf[js.Any])
+    inline def set_vertexBuffers(value: js.Any): Self = StObject.set(x, "_vertexBuffers", value.asInstanceOf[js.Any])
   }
 }

@@ -2,18 +2,17 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SimplicationQueueSceneComponent extends ISceneComponent {
+trait SimplicationQueueSceneComponent
+  extends StObject
+     with ISceneComponent {
   
-  var _beforeCameraUpdate: js.Any = js.native
+  /* private */ var _beforeCameraUpdate: js.Any
 }
 object SimplicationQueueSceneComponent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _beforeCameraUpdate: js.Any,
     dispose: () => Unit,
     name: String,
@@ -25,10 +24,8 @@ object SimplicationQueueSceneComponent {
     __obj.asInstanceOf[SimplicationQueueSceneComponent]
   }
   
-  @scala.inline
-  implicit class SimplicationQueueSceneComponentMutableBuilder[Self <: SimplicationQueueSceneComponent] (val x: Self) extends AnyVal {
+  extension [Self <: SimplicationQueueSceneComponent](x: Self) {
     
-    @scala.inline
-    def set_beforeCameraUpdate(value: js.Any): Self = StObject.set(x, "_beforeCameraUpdate", value.asInstanceOf[js.Any])
+    inline def set_beforeCameraUpdate(value: js.Any): Self = StObject.set(x, "_beforeCameraUpdate", value.asInstanceOf[js.Any])
   }
 }

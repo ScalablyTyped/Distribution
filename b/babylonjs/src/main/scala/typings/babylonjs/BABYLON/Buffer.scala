@@ -2,32 +2,31 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Buffer extends StObject {
   
-  var _buffer: js.Any = js.native
+  /* private */ var _buffer: js.Any = js.native
   
   /** @hidden */
   var _data: Nullable[DataArray] = js.native
   
-  var _divisor: js.Any = js.native
+  /* private */ var _divisor: js.Any = js.native
   
-  var _engine: js.Any = js.native
+  /* private */ var _engine: js.Any = js.native
   
   /** @hidden */
   def _increaseReferences(): Unit = js.native
   
-  var _instanced: js.Any = js.native
+  /* private */ var _instanced: js.Any = js.native
   
-  var _isAlreadyOwned: js.Any = js.native
+  /* private */ var _isAlreadyOwned: js.Any = js.native
   
   /** @hidden */
   def _rebuild(): Unit = js.native
   
-  var _updatable: js.Any = js.native
+  /* private */ var _updatable: js.Any = js.native
   
   /**
     * Gets the byte stride.
@@ -53,96 +52,8 @@ trait Buffer extends StObject {
     * @returns the new vertex buffer
     */
   def createVertexBuffer(kind: String, offset: Double, size: Double): VertexBuffer = js.native
-  def createVertexBuffer(
-    kind: String,
-    offset: Double,
-    size: Double,
-    stride: js.UndefOr[scala.Nothing],
-    instanced: js.UndefOr[scala.Nothing],
-    useBytes: js.UndefOr[scala.Nothing],
-    divisor: Double
-  ): VertexBuffer = js.native
-  def createVertexBuffer(
-    kind: String,
-    offset: Double,
-    size: Double,
-    stride: js.UndefOr[scala.Nothing],
-    instanced: js.UndefOr[scala.Nothing],
-    useBytes: Boolean
-  ): VertexBuffer = js.native
-  def createVertexBuffer(
-    kind: String,
-    offset: Double,
-    size: Double,
-    stride: js.UndefOr[scala.Nothing],
-    instanced: js.UndefOr[scala.Nothing],
-    useBytes: Boolean,
-    divisor: Double
-  ): VertexBuffer = js.native
-  def createVertexBuffer(kind: String, offset: Double, size: Double, stride: js.UndefOr[scala.Nothing], instanced: Boolean): VertexBuffer = js.native
-  def createVertexBuffer(
-    kind: String,
-    offset: Double,
-    size: Double,
-    stride: js.UndefOr[scala.Nothing],
-    instanced: Boolean,
-    useBytes: js.UndefOr[scala.Nothing],
-    divisor: Double
-  ): VertexBuffer = js.native
-  def createVertexBuffer(
-    kind: String,
-    offset: Double,
-    size: Double,
-    stride: js.UndefOr[scala.Nothing],
-    instanced: Boolean,
-    useBytes: Boolean
-  ): VertexBuffer = js.native
-  def createVertexBuffer(
-    kind: String,
-    offset: Double,
-    size: Double,
-    stride: js.UndefOr[scala.Nothing],
-    instanced: Boolean,
-    useBytes: Boolean,
-    divisor: Double
-  ): VertexBuffer = js.native
   def createVertexBuffer(kind: String, offset: Double, size: Double, stride: Double): VertexBuffer = js.native
-  def createVertexBuffer(
-    kind: String,
-    offset: Double,
-    size: Double,
-    stride: Double,
-    instanced: js.UndefOr[scala.Nothing],
-    useBytes: js.UndefOr[scala.Nothing],
-    divisor: Double
-  ): VertexBuffer = js.native
-  def createVertexBuffer(
-    kind: String,
-    offset: Double,
-    size: Double,
-    stride: Double,
-    instanced: js.UndefOr[scala.Nothing],
-    useBytes: Boolean
-  ): VertexBuffer = js.native
-  def createVertexBuffer(
-    kind: String,
-    offset: Double,
-    size: Double,
-    stride: Double,
-    instanced: js.UndefOr[scala.Nothing],
-    useBytes: Boolean,
-    divisor: Double
-  ): VertexBuffer = js.native
   def createVertexBuffer(kind: String, offset: Double, size: Double, stride: Double, instanced: Boolean): VertexBuffer = js.native
-  def createVertexBuffer(
-    kind: String,
-    offset: Double,
-    size: Double,
-    stride: Double,
-    instanced: Boolean,
-    useBytes: js.UndefOr[scala.Nothing],
-    divisor: Double
-  ): VertexBuffer = js.native
   def createVertexBuffer(kind: String, offset: Double, size: Double, stride: Double, instanced: Boolean, useBytes: Boolean): VertexBuffer = js.native
   def createVertexBuffer(
     kind: String,
@@ -151,6 +62,73 @@ trait Buffer extends StObject {
     stride: Double,
     instanced: Boolean,
     useBytes: Boolean,
+    divisor: Double
+  ): VertexBuffer = js.native
+  def createVertexBuffer(
+    kind: String,
+    offset: Double,
+    size: Double,
+    stride: Double,
+    instanced: Boolean,
+    useBytes: Unit,
+    divisor: Double
+  ): VertexBuffer = js.native
+  def createVertexBuffer(kind: String, offset: Double, size: Double, stride: Double, instanced: Unit, useBytes: Boolean): VertexBuffer = js.native
+  def createVertexBuffer(
+    kind: String,
+    offset: Double,
+    size: Double,
+    stride: Double,
+    instanced: Unit,
+    useBytes: Boolean,
+    divisor: Double
+  ): VertexBuffer = js.native
+  def createVertexBuffer(
+    kind: String,
+    offset: Double,
+    size: Double,
+    stride: Double,
+    instanced: Unit,
+    useBytes: Unit,
+    divisor: Double
+  ): VertexBuffer = js.native
+  def createVertexBuffer(kind: String, offset: Double, size: Double, stride: Unit, instanced: Boolean): VertexBuffer = js.native
+  def createVertexBuffer(kind: String, offset: Double, size: Double, stride: Unit, instanced: Boolean, useBytes: Boolean): VertexBuffer = js.native
+  def createVertexBuffer(
+    kind: String,
+    offset: Double,
+    size: Double,
+    stride: Unit,
+    instanced: Boolean,
+    useBytes: Boolean,
+    divisor: Double
+  ): VertexBuffer = js.native
+  def createVertexBuffer(
+    kind: String,
+    offset: Double,
+    size: Double,
+    stride: Unit,
+    instanced: Boolean,
+    useBytes: Unit,
+    divisor: Double
+  ): VertexBuffer = js.native
+  def createVertexBuffer(kind: String, offset: Double, size: Double, stride: Unit, instanced: Unit, useBytes: Boolean): VertexBuffer = js.native
+  def createVertexBuffer(
+    kind: String,
+    offset: Double,
+    size: Double,
+    stride: Unit,
+    instanced: Unit,
+    useBytes: Boolean,
+    divisor: Double
+  ): VertexBuffer = js.native
+  def createVertexBuffer(
+    kind: String,
+    offset: Double,
+    size: Double,
+    stride: Unit,
+    instanced: Unit,
+    useBytes: Unit,
     divisor: Double
   ): VertexBuffer = js.native
   
@@ -199,7 +177,7 @@ trait Buffer extends StObject {
     * @param useBytes set to true if the offset is in bytes
     */
   def updateDirectly(data: DataArray, offset: Double): Unit = js.native
-  def updateDirectly(data: DataArray, offset: Double, vertexCount: js.UndefOr[scala.Nothing], useBytes: Boolean): Unit = js.native
   def updateDirectly(data: DataArray, offset: Double, vertexCount: Double): Unit = js.native
   def updateDirectly(data: DataArray, offset: Double, vertexCount: Double, useBytes: Boolean): Unit = js.native
+  def updateDirectly(data: DataArray, offset: Double, vertexCount: Unit, useBytes: Boolean): Unit = js.native
 }

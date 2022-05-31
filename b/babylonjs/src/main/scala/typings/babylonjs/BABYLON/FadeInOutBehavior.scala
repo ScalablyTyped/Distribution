@@ -2,23 +2,24 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FadeInOutBehavior extends Behavior[Mesh] {
+trait FadeInOutBehavior
+  extends StObject
+     with Behavior[Mesh] {
   
-  var _hoverValue: js.Any = js.native
+  /* private */ var _hoverValue: js.Any = js.native
   
-  var _hovered: js.Any = js.native
+  /* private */ var _hovered: js.Any = js.native
   
-  var _millisecondsPerFrame: js.Any = js.native
+  /* private */ var _millisecondsPerFrame: js.Any = js.native
   
-  var _ownerNode: js.Any = js.native
+  /* private */ var _ownerNode: js.Any = js.native
   
-  var _setAllVisibility: js.Any = js.native
+  /* private */ var _setAllVisibility: js.Any = js.native
   
-  var _update: js.Any = js.native
+  /* private */ var _update: js.Any = js.native
   
   /**
     * Time in milliseconds to delay before fading in (Default: 0)

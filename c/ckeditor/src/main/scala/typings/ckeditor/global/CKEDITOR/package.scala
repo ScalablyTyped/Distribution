@@ -166,6 +166,8 @@ inline def basePath_=(x: java.lang.String): scala.Unit = typings.ckeditor.global
 // Event interface
 inline def capture(): scala.Unit = typings.ckeditor.global.CKEDITOR.^.asInstanceOf[js.Dynamic].applyDynamic("capture")().asInstanceOf[scala.Unit]
 
+inline def config: typings.ckeditor.CKEDITOR.config = typings.ckeditor.global.CKEDITOR.^.asInstanceOf[js.Dynamic].selectDynamic("config").asInstanceOf[typings.ckeditor.CKEDITOR.config]
+
 inline def currentInstance: typings.ckeditor.CKEDITOR.editor = typings.ckeditor.global.CKEDITOR.^.asInstanceOf[js.Dynamic].selectDynamic("currentInstance").asInstanceOf[typings.ckeditor.CKEDITOR.editor]
 inline def currentInstance_=(x: typings.ckeditor.CKEDITOR.editor): scala.Unit = typings.ckeditor.global.CKEDITOR.^.asInstanceOf[js.Dynamic].updateDynamic("currentInstance")(x.asInstanceOf[js.Any])
 

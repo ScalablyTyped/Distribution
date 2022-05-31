@@ -2,7 +2,6 @@ package typings.babylonjs.indexMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "OculusTouchController")
@@ -28,8 +27,7 @@ object OculusTouchController {
   @JSImport("babylonjs/index", "OculusTouchController.MODEL_BASE_URL")
   @js.native
   def MODEL_BASE_URL: String = js.native
-  @scala.inline
-  def MODEL_BASE_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_BASE_URL")(x.asInstanceOf[js.Any])
+  inline def MODEL_BASE_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_BASE_URL")(x.asInstanceOf[js.Any])
   
   /**
     * File name for the left controller model.
@@ -37,8 +35,7 @@ object OculusTouchController {
   @JSImport("babylonjs/index", "OculusTouchController.MODEL_LEFT_FILENAME")
   @js.native
   def MODEL_LEFT_FILENAME: String = js.native
-  @scala.inline
-  def MODEL_LEFT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_LEFT_FILENAME")(x.asInstanceOf[js.Any])
+  inline def MODEL_LEFT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_LEFT_FILENAME")(x.asInstanceOf[js.Any])
   
   /**
     * File name for the right controller model.
@@ -46,8 +43,7 @@ object OculusTouchController {
   @JSImport("babylonjs/index", "OculusTouchController.MODEL_RIGHT_FILENAME")
   @js.native
   def MODEL_RIGHT_FILENAME: String = js.native
-  @scala.inline
-  def MODEL_RIGHT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_RIGHT_FILENAME")(x.asInstanceOf[js.Any])
+  inline def MODEL_RIGHT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_RIGHT_FILENAME")(x.asInstanceOf[js.Any])
   
   /**
     * Base Url for the Quest controller model.
@@ -55,8 +51,7 @@ object OculusTouchController {
   @JSImport("babylonjs/index", "OculusTouchController.QUEST_MODEL_BASE_URL")
   @js.native
   def QUEST_MODEL_BASE_URL: String = js.native
-  @scala.inline
-  def QUEST_MODEL_BASE_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUEST_MODEL_BASE_URL")(x.asInstanceOf[js.Any])
+  inline def QUEST_MODEL_BASE_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUEST_MODEL_BASE_URL")(x.asInstanceOf[js.Any])
   
   /**
     * @hidden
@@ -65,6 +60,5 @@ object OculusTouchController {
   @JSImport("babylonjs/index", "OculusTouchController._IsQuest")
   @js.native
   def _IsQuest: Boolean = js.native
-  @scala.inline
-  def _IsQuest_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsQuest")(x.asInstanceOf[js.Any])
+  inline def _IsQuest_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsQuest")(x.asInstanceOf[js.Any])
 }

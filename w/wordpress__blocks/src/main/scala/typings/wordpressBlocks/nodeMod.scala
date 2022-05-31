@@ -63,15 +63,4 @@ object nodeMod {
       */
     inline def toHTML(node: ReactChild): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHTML")(node.asInstanceOf[js.Any]).asInstanceOf[String]
   }
-  
-  /**
-    * Object of utility functions used in managing block attribute values of
-    * source `node`.
-    *
-    * @see https://github.com/WordPress/gutenberg/pull/10439
-    *
-    * @deprecated since 4.0. The `node` source should not be used, and can be
-    *             replaced by the `html` source.
-    */
-  object node
 }

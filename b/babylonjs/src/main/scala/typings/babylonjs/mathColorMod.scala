@@ -5,7 +5,6 @@ import typings.babylonjs.typesMod.FloatArray
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mathColorMod {
@@ -27,16 +26,6 @@ object mathColorMod {
       /**
       * Defines the red component (between 0 and 1, default is 0)
       */
-    r: js.UndefOr[scala.Nothing],
-      /**
-      * Defines the green component (between 0 and 1, default is 0)
-      */
-    g: Double
-    ) = this()
-    def this(
-      /**
-      * Defines the red component (between 0 and 1, default is 0)
-      */
     r: Double,
       /**
       * Defines the green component (between 0 and 1, default is 0)
@@ -47,21 +36,17 @@ object mathColorMod {
       /**
       * Defines the red component (between 0 and 1, default is 0)
       */
-    r: js.UndefOr[scala.Nothing],
+    r: Unit,
       /**
       * Defines the green component (between 0 and 1, default is 0)
       */
-    g: js.UndefOr[scala.Nothing],
-      /**
-      * Defines the blue component (between 0 and 1, default is 0)
-      */
-    b: Double
+    g: Double
     ) = this()
     def this(
       /**
       * Defines the red component (between 0 and 1, default is 0)
       */
-    r: js.UndefOr[scala.Nothing],
+    r: Double,
       /**
       * Defines the green component (between 0 and 1, default is 0)
       */
@@ -79,7 +64,7 @@ object mathColorMod {
       /**
       * Defines the green component (between 0 and 1, default is 0)
       */
-    g: js.UndefOr[scala.Nothing],
+    g: Unit,
       /**
       * Defines the blue component (between 0 and 1, default is 0)
       */
@@ -89,11 +74,25 @@ object mathColorMod {
       /**
       * Defines the red component (between 0 and 1, default is 0)
       */
-    r: Double,
+    r: Unit,
       /**
       * Defines the green component (between 0 and 1, default is 0)
       */
     g: Double,
+      /**
+      * Defines the blue component (between 0 and 1, default is 0)
+      */
+    b: Double
+    ) = this()
+    def this(
+      /**
+      * Defines the red component (between 0 and 1, default is 0)
+      */
+    r: Unit,
+      /**
+      * Defines the green component (between 0 and 1, default is 0)
+      */
+    g: Unit,
       /**
       * Defines the blue component (between 0 and 1, default is 0)
       */
@@ -126,9 +125,6 @@ object mathColorMod {
       */
     var b: Double = js.native
     
-    def clampToRef(min: js.UndefOr[scala.Nothing], max: js.UndefOr[scala.Nothing], result: Color3): Color3 = js.native
-    def clampToRef(min: js.UndefOr[scala.Nothing], max: Double, result: Color3): Color3 = js.native
-    def clampToRef(min: Double, max: js.UndefOr[scala.Nothing], result: Color3): Color3 = js.native
     /**
       * Clamps the rgb values by the min and max values and stores the result into "result"
       * @param min defines minimum clamping value (default is 0)
@@ -137,6 +133,9 @@ object mathColorMod {
       * @returns the original Color3
       */
     def clampToRef(min: Double, max: Double, result: Color3): Color3 = js.native
+    def clampToRef(min: Double, max: Unit, result: Color3): Color3 = js.native
+    def clampToRef(min: Unit, max: Double, result: Color3): Color3 = js.native
+    def clampToRef(min: Unit, max: Unit, result: Color3): Color3 = js.native
     
     /**
       * Copies the rgb values from the source in the current Color3
@@ -341,17 +340,13 @@ object mathColorMod {
       * Returns a Color3 value containing a black color
       * @returns a new Color3 object
       */
-    @JSImport("babylonjs/Maths/math.color", "Color3.Black")
-    @js.native
-    def Black(): Color3 = js.native
+    inline def Black(): Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Black")().asInstanceOf[Color3]
     
     /**
       * Returns a Color3 value containing a blue color
       * @returns a new Color3 object
       */
-    @JSImport("babylonjs/Maths/math.color", "Color3.Blue")
-    @js.native
-    def Blue(): Color3 = js.native
+    inline def Blue(): Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Blue")().asInstanceOf[Color3]
     
     /**
       * Creates a new Color3 from the starting index of the given array
@@ -359,34 +354,24 @@ object mathColorMod {
       * @param offset defines an offset in the source array
       * @returns a new Color3 object
       */
-    @JSImport("babylonjs/Maths/math.color", "Color3.FromArray")
-    @js.native
-    def FromArray(array: DeepImmutable[ArrayLike[Double]]): Color3 = js.native
-    @JSImport("babylonjs/Maths/math.color", "Color3.FromArray")
-    @js.native
-    def FromArray(array: DeepImmutable[ArrayLike[Double]], offset: Double): Color3 = js.native
+    inline def FromArray(array: DeepImmutable[ArrayLike[Double]]): Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("FromArray")(array.asInstanceOf[js.Any]).asInstanceOf[Color3]
+    inline def FromArray(array: DeepImmutable[ArrayLike[Double]], offset: Double): Color3 = (^.asInstanceOf[js.Dynamic].applyDynamic("FromArray")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Color3]
     
-    @JSImport("babylonjs/Maths/math.color", "Color3.FromArrayToRef")
-    @js.native
-    def FromArrayToRef(array: DeepImmutable[ArrayLike[Double]], offset: js.UndefOr[scala.Nothing], result: Color3): Unit = js.native
     /**
       * Creates a new Color3 from the starting index element of the given array
       * @param array defines the source array to read from
       * @param offset defines the offset in the source array
       * @param result defines the target Color3 object
       */
-    @JSImport("babylonjs/Maths/math.color", "Color3.FromArrayToRef")
-    @js.native
-    def FromArrayToRef(array: DeepImmutable[ArrayLike[Double]], offset: Double, result: Color3): Unit = js.native
+    inline def FromArrayToRef(array: DeepImmutable[ArrayLike[Double]], offset: Double, result: Color3): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromArrayToRef")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def FromArrayToRef(array: DeepImmutable[ArrayLike[Double]], offset: Unit, result: Color3): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromArrayToRef")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Creates a new Color3 from the string containing valid hexadecimal values
       * @param hex defines a string containing valid hexadecimal values
       * @returns a new Color3 object
       */
-    @JSImport("babylonjs/Maths/math.color", "Color3.FromHexString")
-    @js.native
-    def FromHexString(hex: String): Color3 = js.native
+    inline def FromHexString(hex: String): Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("FromHexString")(hex.asInstanceOf[js.Any]).asInstanceOf[Color3]
     
     /**
       * Creates a new Color3 from integer values (< 256)
@@ -395,25 +380,19 @@ object mathColorMod {
       * @param b defines the blue component to read from (value between 0 and 255)
       * @returns a new Color3 object
       */
-    @JSImport("babylonjs/Maths/math.color", "Color3.FromInts")
-    @js.native
-    def FromInts(r: Double, g: Double, b: Double): Color3 = js.native
+    inline def FromInts(r: Double, g: Double, b: Double): Color3 = (^.asInstanceOf[js.Dynamic].applyDynamic("FromInts")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Color3]
     
     /**
       * Returns a Color3 value containing a gray color
       * @returns a new Color3 object
       */
-    @JSImport("babylonjs/Maths/math.color", "Color3.Gray")
-    @js.native
-    def Gray(): Color3 = js.native
+    inline def Gray(): Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Gray")().asInstanceOf[Color3]
     
     /**
       * Returns a Color3 value containing a green color
       * @returns a new Color3 object
       */
-    @JSImport("babylonjs/Maths/math.color", "Color3.Green")
-    @js.native
-    def Green(): Color3 = js.native
+    inline def Green(): Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Green")().asInstanceOf[Color3]
     
     /**
       * Convert Hue, saturation and value to a Color3 (RGB)
@@ -422,9 +401,7 @@ object mathColorMod {
       * @param value defines the value
       * @param result defines the Color3 where to store the RGB values
       */
-    @JSImport("babylonjs/Maths/math.color", "Color3.HSVtoRGBToRef")
-    @js.native
-    def HSVtoRGBToRef(hue: Double, saturation: Double, value: Double, result: Color3): Unit = js.native
+    inline def HSVtoRGBToRef(hue: Double, saturation: Double, value: Double, result: Color3): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("HSVtoRGBToRef")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], value.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Creates a new Color3 with values linearly interpolated of "amount" between the start Color3 and the end Color3
@@ -433,9 +410,7 @@ object mathColorMod {
       * @param amount defines the gradient value between start and end
       * @returns a new Color3 object
       */
-    @JSImport("babylonjs/Maths/math.color", "Color3.Lerp")
-    @js.native
-    def Lerp(start: DeepImmutable[Color3], end: DeepImmutable[Color3], amount: Double): Color3 = js.native
+    inline def Lerp(start: DeepImmutable[Color3], end: DeepImmutable[Color3], amount: Double): Color3 = (^.asInstanceOf[js.Dynamic].applyDynamic("Lerp")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Color3]
     
     /**
       * Creates a new Color3 with values linearly interpolated of "amount" between the start Color3 and the end Color3
@@ -444,71 +419,54 @@ object mathColorMod {
       * @param amount defines the gradient factor
       * @param result defines the Color3 object where to store the result
       */
-    @JSImport("babylonjs/Maths/math.color", "Color3.LerpToRef")
-    @js.native
-    def LerpToRef(left: DeepImmutable[Color3], right: DeepImmutable[Color3], amount: Double, result: Color3): Unit = js.native
+    inline def LerpToRef(left: DeepImmutable[Color3], right: DeepImmutable[Color3], amount: Double, result: Color3): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("LerpToRef")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], amount.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Returns a Color3 value containing a magenta color
       * @returns a new Color3 object
       */
-    @JSImport("babylonjs/Maths/math.color", "Color3.Magenta")
-    @js.native
-    def Magenta(): Color3 = js.native
+    inline def Magenta(): Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Magenta")().asInstanceOf[Color3]
     
     /**
       * Returns a Color3 value containing a purple color
       * @returns a new Color3 object
       */
-    @JSImport("babylonjs/Maths/math.color", "Color3.Purple")
-    @js.native
-    def Purple(): Color3 = js.native
+    inline def Purple(): Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Purple")().asInstanceOf[Color3]
     
     /**
       * Returns a Color3 value containing a random color
       * @returns a new Color3 object
       */
-    @JSImport("babylonjs/Maths/math.color", "Color3.Random")
-    @js.native
-    def Random(): Color3 = js.native
+    inline def Random(): Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Random")().asInstanceOf[Color3]
     
     /**
       * Returns a Color3 value containing a red color
       * @returns a new Color3 object
       */
-    @JSImport("babylonjs/Maths/math.color", "Color3.Red")
-    @js.native
-    def Red(): Color3 = js.native
+    inline def Red(): Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Red")().asInstanceOf[Color3]
     
     /**
       * Returns a Color3 value containing a teal color
       * @returns a new Color3 object
       */
-    @JSImport("babylonjs/Maths/math.color", "Color3.Teal")
-    @js.native
-    def Teal(): Color3 = js.native
+    inline def Teal(): Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Teal")().asInstanceOf[Color3]
     
     /**
       * Returns a Color3 value containing a white color
       * @returns a new Color3 object
       */
-    @JSImport("babylonjs/Maths/math.color", "Color3.White")
-    @js.native
-    def White(): Color3 = js.native
+    inline def White(): Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("White")().asInstanceOf[Color3]
     
     /**
       * Returns a Color3 value containing a yellow color
       * @returns a new Color3 object
       */
-    @JSImport("babylonjs/Maths/math.color", "Color3.Yellow")
-    @js.native
-    def Yellow(): Color3 = js.native
+    inline def Yellow(): Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Yellow")().asInstanceOf[Color3]
     
     @JSImport("babylonjs/Maths/math.color", "Color3._BlackReadOnly")
     @js.native
     def _BlackReadOnly: js.Any = js.native
-    @scala.inline
-    def _BlackReadOnly_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BlackReadOnly")(x.asInstanceOf[js.Any])
+    inline def _BlackReadOnly_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BlackReadOnly")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Maths/math.color", "Color4")
@@ -529,7 +487,17 @@ object mathColorMod {
       /**
       * Defines the red component (between 0 and 1, default is 0)
       */
-    r: js.UndefOr[scala.Nothing],
+    r: Double,
+      /**
+      * Defines the green component (between 0 and 1, default is 0)
+      */
+    g: Double
+    ) = this()
+    def this(
+      /**
+      * Defines the red component (between 0 and 1, default is 0)
+      */
+    r: Unit,
       /**
       * Defines the green component (between 0 and 1, default is 0)
       */
@@ -543,30 +511,6 @@ object mathColorMod {
       /**
       * Defines the green component (between 0 and 1, default is 0)
       */
-    g: Double
-    ) = this()
-    def this(
-      /**
-      * Defines the red component (between 0 and 1, default is 0)
-      */
-    r: js.UndefOr[scala.Nothing],
-      /**
-      * Defines the green component (between 0 and 1, default is 0)
-      */
-    g: js.UndefOr[scala.Nothing],
-      /**
-      * Defines the blue component (between 0 and 1, default is 0)
-      */
-    b: Double
-    ) = this()
-    def this(
-      /**
-      * Defines the red component (between 0 and 1, default is 0)
-      */
-    r: js.UndefOr[scala.Nothing],
-      /**
-      * Defines the green component (between 0 and 1, default is 0)
-      */
     g: Double,
       /**
       * Defines the blue component (between 0 and 1, default is 0)
@@ -581,7 +525,35 @@ object mathColorMod {
       /**
       * Defines the green component (between 0 and 1, default is 0)
       */
-    g: js.UndefOr[scala.Nothing],
+    g: Unit,
+      /**
+      * Defines the blue component (between 0 and 1, default is 0)
+      */
+    b: Double
+    ) = this()
+    def this(
+      /**
+      * Defines the red component (between 0 and 1, default is 0)
+      */
+    r: Unit,
+      /**
+      * Defines the green component (between 0 and 1, default is 0)
+      */
+    g: Double,
+      /**
+      * Defines the blue component (between 0 and 1, default is 0)
+      */
+    b: Double
+    ) = this()
+    def this(
+      /**
+      * Defines the red component (between 0 and 1, default is 0)
+      */
+    r: Unit,
+      /**
+      * Defines the green component (between 0 and 1, default is 0)
+      */
+    g: Unit,
       /**
       * Defines the blue component (between 0 and 1, default is 0)
       */
@@ -592,74 +564,6 @@ object mathColorMod {
       * Defines the red component (between 0 and 1, default is 0)
       */
     r: Double,
-      /**
-      * Defines the green component (between 0 and 1, default is 0)
-      */
-    g: Double,
-      /**
-      * Defines the blue component (between 0 and 1, default is 0)
-      */
-    b: Double
-    ) = this()
-    def this(
-      /**
-      * Defines the red component (between 0 and 1, default is 0)
-      */
-    r: js.UndefOr[scala.Nothing],
-      /**
-      * Defines the green component (between 0 and 1, default is 0)
-      */
-    g: js.UndefOr[scala.Nothing],
-      /**
-      * Defines the blue component (between 0 and 1, default is 0)
-      */
-    b: js.UndefOr[scala.Nothing],
-      /**
-      * Defines the alpha component (between 0 and 1, default is 1)
-      */
-    a: Double
-    ) = this()
-    def this(
-      /**
-      * Defines the red component (between 0 and 1, default is 0)
-      */
-    r: js.UndefOr[scala.Nothing],
-      /**
-      * Defines the green component (between 0 and 1, default is 0)
-      */
-    g: js.UndefOr[scala.Nothing],
-      /**
-      * Defines the blue component (between 0 and 1, default is 0)
-      */
-    b: Double,
-      /**
-      * Defines the alpha component (between 0 and 1, default is 1)
-      */
-    a: Double
-    ) = this()
-    def this(
-      /**
-      * Defines the red component (between 0 and 1, default is 0)
-      */
-    r: js.UndefOr[scala.Nothing],
-      /**
-      * Defines the green component (between 0 and 1, default is 0)
-      */
-    g: Double,
-      /**
-      * Defines the blue component (between 0 and 1, default is 0)
-      */
-    b: js.UndefOr[scala.Nothing],
-      /**
-      * Defines the alpha component (between 0 and 1, default is 1)
-      */
-    a: Double
-    ) = this()
-    def this(
-      /**
-      * Defines the red component (between 0 and 1, default is 0)
-      */
-    r: js.UndefOr[scala.Nothing],
       /**
       * Defines the green component (between 0 and 1, default is 0)
       */
@@ -681,11 +585,11 @@ object mathColorMod {
       /**
       * Defines the green component (between 0 and 1, default is 0)
       */
-    g: js.UndefOr[scala.Nothing],
+    g: Double,
       /**
       * Defines the blue component (between 0 and 1, default is 0)
       */
-    b: js.UndefOr[scala.Nothing],
+    b: Unit,
       /**
       * Defines the alpha component (between 0 and 1, default is 1)
       */
@@ -699,7 +603,7 @@ object mathColorMod {
       /**
       * Defines the green component (between 0 and 1, default is 0)
       */
-    g: js.UndefOr[scala.Nothing],
+    g: Unit,
       /**
       * Defines the blue component (between 0 and 1, default is 0)
       */
@@ -717,11 +621,11 @@ object mathColorMod {
       /**
       * Defines the green component (between 0 and 1, default is 0)
       */
-    g: Double,
+    g: Unit,
       /**
       * Defines the blue component (between 0 and 1, default is 0)
       */
-    b: js.UndefOr[scala.Nothing],
+    b: Unit,
       /**
       * Defines the alpha component (between 0 and 1, default is 1)
       */
@@ -731,7 +635,7 @@ object mathColorMod {
       /**
       * Defines the red component (between 0 and 1, default is 0)
       */
-    r: Double,
+    r: Unit,
       /**
       * Defines the green component (between 0 and 1, default is 0)
       */
@@ -740,6 +644,60 @@ object mathColorMod {
       * Defines the blue component (between 0 and 1, default is 0)
       */
     b: Double,
+      /**
+      * Defines the alpha component (between 0 and 1, default is 1)
+      */
+    a: Double
+    ) = this()
+    def this(
+      /**
+      * Defines the red component (between 0 and 1, default is 0)
+      */
+    r: Unit,
+      /**
+      * Defines the green component (between 0 and 1, default is 0)
+      */
+    g: Double,
+      /**
+      * Defines the blue component (between 0 and 1, default is 0)
+      */
+    b: Unit,
+      /**
+      * Defines the alpha component (between 0 and 1, default is 1)
+      */
+    a: Double
+    ) = this()
+    def this(
+      /**
+      * Defines the red component (between 0 and 1, default is 0)
+      */
+    r: Unit,
+      /**
+      * Defines the green component (between 0 and 1, default is 0)
+      */
+    g: Unit,
+      /**
+      * Defines the blue component (between 0 and 1, default is 0)
+      */
+    b: Double,
+      /**
+      * Defines the alpha component (between 0 and 1, default is 1)
+      */
+    a: Double
+    ) = this()
+    def this(
+      /**
+      * Defines the red component (between 0 and 1, default is 0)
+      */
+    r: Unit,
+      /**
+      * Defines the green component (between 0 and 1, default is 0)
+      */
+    g: Unit,
+      /**
+      * Defines the blue component (between 0 and 1, default is 0)
+      */
+    b: Unit,
       /**
       * Defines the alpha component (between 0 and 1, default is 1)
       */
@@ -776,9 +734,6 @@ object mathColorMod {
       */
     var b: Double = js.native
     
-    def clampToRef(min: js.UndefOr[scala.Nothing], max: js.UndefOr[scala.Nothing], result: Color4): Color4 = js.native
-    def clampToRef(min: js.UndefOr[scala.Nothing], max: Double, result: Color4): Color4 = js.native
-    def clampToRef(min: Double, max: js.UndefOr[scala.Nothing], result: Color4): Color4 = js.native
     /**
       * Clamps the rgb values by the min and max values and stores the result into "result"
       * @param min defines minimum clamping value (default is 0)
@@ -787,6 +742,9 @@ object mathColorMod {
       * @returns the cuurent Color4
       */
     def clampToRef(min: Double, max: Double, result: Color4): Color4 = js.native
+    def clampToRef(min: Double, max: Unit, result: Color4): Color4 = js.native
+    def clampToRef(min: Unit, max: Double, result: Color4): Color4 = js.native
+    def clampToRef(min: Unit, max: Unit, result: Color4): Color4 = js.native
     
     /**
       * Copies the given Color4 values into the current one
@@ -952,6 +910,10 @@ object mathColorMod {
   /* static members */
   object Color4 {
     
+    @JSImport("babylonjs/Maths/math.color", "Color4")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Check the content of a given array and convert it to an array containing RGBA data
       * If the original array was already containing count * 4 values then it is returned directly
@@ -959,9 +921,7 @@ object mathColorMod {
       * @param count defines the number of RGBA data to expect
       * @returns an array containing count * 4 values (RGBA)
       */
-    @JSImport("babylonjs/Maths/math.color", "Color4.CheckColors4")
-    @js.native
-    def CheckColors4(colors: js.Array[Double], count: Double): js.Array[Double] = js.native
+    inline def CheckColors4(colors: js.Array[Double], count: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CheckColors4")(colors.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Creates a new Color4 from the starting index element of the given array
@@ -969,25 +929,17 @@ object mathColorMod {
       * @param offset defines the offset in the source array
       * @returns a new Color4 object
       */
-    @JSImport("babylonjs/Maths/math.color", "Color4.FromArray")
-    @js.native
-    def FromArray(array: DeepImmutable[ArrayLike[Double]]): Color4 = js.native
-    @JSImport("babylonjs/Maths/math.color", "Color4.FromArray")
-    @js.native
-    def FromArray(array: DeepImmutable[ArrayLike[Double]], offset: Double): Color4 = js.native
+    inline def FromArray(array: DeepImmutable[ArrayLike[Double]]): Color4 = ^.asInstanceOf[js.Dynamic].applyDynamic("FromArray")(array.asInstanceOf[js.Any]).asInstanceOf[Color4]
+    inline def FromArray(array: DeepImmutable[ArrayLike[Double]], offset: Double): Color4 = (^.asInstanceOf[js.Dynamic].applyDynamic("FromArray")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Color4]
     
-    @JSImport("babylonjs/Maths/math.color", "Color4.FromArrayToRef")
-    @js.native
-    def FromArrayToRef(array: DeepImmutable[ArrayLike[Double]], offset: js.UndefOr[scala.Nothing], result: Color4): Unit = js.native
     /**
       * Creates a new Color4 from the starting index element of the given array
       * @param array defines the source array to read from
       * @param offset defines the offset in the source array
       * @param result defines the target Color4 object
       */
-    @JSImport("babylonjs/Maths/math.color", "Color4.FromArrayToRef")
-    @js.native
-    def FromArrayToRef(array: DeepImmutable[ArrayLike[Double]], offset: Double, result: Color4): Unit = js.native
+    inline def FromArrayToRef(array: DeepImmutable[ArrayLike[Double]], offset: Double, result: Color4): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromArrayToRef")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def FromArrayToRef(array: DeepImmutable[ArrayLike[Double]], offset: Unit, result: Color4): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromArrayToRef")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Creates a new Color4 from a Color3 and an alpha value
@@ -995,21 +947,15 @@ object mathColorMod {
       * @param alpha defines the alpha component (1.0 by default)
       * @returns a new Color4 object
       */
-    @JSImport("babylonjs/Maths/math.color", "Color4.FromColor3")
-    @js.native
-    def FromColor3(color3: DeepImmutable[Color3]): Color4 = js.native
-    @JSImport("babylonjs/Maths/math.color", "Color4.FromColor3")
-    @js.native
-    def FromColor3(color3: DeepImmutable[Color3], alpha: Double): Color4 = js.native
+    inline def FromColor3(color3: DeepImmutable[Color3]): Color4 = ^.asInstanceOf[js.Dynamic].applyDynamic("FromColor3")(color3.asInstanceOf[js.Any]).asInstanceOf[Color4]
+    inline def FromColor3(color3: DeepImmutable[Color3], alpha: Double): Color4 = (^.asInstanceOf[js.Dynamic].applyDynamic("FromColor3")(color3.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Color4]
     
     /**
       * Creates a new Color4 from the string containing valid hexadecimal values
       * @param hex defines a string containing valid hexadecimal values
       * @returns a new Color4 object
       */
-    @JSImport("babylonjs/Maths/math.color", "Color4.FromHexString")
-    @js.native
-    def FromHexString(hex: String): Color4 = js.native
+    inline def FromHexString(hex: String): Color4 = ^.asInstanceOf[js.Dynamic].applyDynamic("FromHexString")(hex.asInstanceOf[js.Any]).asInstanceOf[Color4]
     
     /**
       * Creates a new Color3 from integer values (< 256)
@@ -1019,9 +965,7 @@ object mathColorMod {
       * @param a defines the alpha component to read from (value between 0 and 255)
       * @returns a new Color3 object
       */
-    @JSImport("babylonjs/Maths/math.color", "Color4.FromInts")
-    @js.native
-    def FromInts(r: Double, g: Double, b: Double, a: Double): Color4 = js.native
+    inline def FromInts(r: Double, g: Double, b: Double, a: Double): Color4 = (^.asInstanceOf[js.Dynamic].applyDynamic("FromInts")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Color4]
     
     /**
       * Creates a new Color4 object set with the linearly interpolated values of "amount" between the left Color4 object and the right Color4 object
@@ -1030,9 +974,7 @@ object mathColorMod {
       * @param amount defines the gradient factor
       * @returns a new Color4 object
       */
-    @JSImport("babylonjs/Maths/math.color", "Color4.Lerp")
-    @js.native
-    def Lerp(left: DeepImmutable[Color4], right: DeepImmutable[Color4], amount: Double): Color4 = js.native
+    inline def Lerp(left: DeepImmutable[Color4], right: DeepImmutable[Color4], amount: Double): Color4 = (^.asInstanceOf[js.Dynamic].applyDynamic("Lerp")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Color4]
     
     /**
       * Set the given "result" with the linearly interpolated values of "amount" between the left Color4 object and the right Color4 object
@@ -1041,9 +983,7 @@ object mathColorMod {
       * @param amount defines the gradient factor
       * @param result defines the Color4 object where to store data
       */
-    @JSImport("babylonjs/Maths/math.color", "Color4.LerpToRef")
-    @js.native
-    def LerpToRef(left: DeepImmutable[Color4], right: DeepImmutable[Color4], amount: Double, result: Color4): Unit = js.native
+    inline def LerpToRef(left: DeepImmutable[Color4], right: DeepImmutable[Color4], amount: Double, result: Color4): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("LerpToRef")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], amount.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("babylonjs/Maths/math.color", "TmpColors")
@@ -1059,13 +999,11 @@ object mathColorMod {
     @JSImport("babylonjs/Maths/math.color", "TmpColors.Color3")
     @js.native
     def Color3: js.Array[typings.babylonjs.mathColorMod.Color3] = js.native
-    @scala.inline
-    def Color3_=(x: js.Array[Color3]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Color3")(x.asInstanceOf[js.Any])
+    inline def Color3_=(x: js.Array[Color3]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Color3")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Maths/math.color", "TmpColors.Color4")
     @js.native
     def Color4: js.Array[typings.babylonjs.mathColorMod.Color4] = js.native
-    @scala.inline
-    def Color4_=(x: js.Array[Color4]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Color4")(x.asInstanceOf[js.Any])
+    inline def Color4_=(x: js.Array[Color4]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Color4")(x.asInstanceOf[js.Any])
   }
 }

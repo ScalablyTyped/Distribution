@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.KeyboardInfo")
 @js.native
 class KeyboardInfo protected ()
-  extends typings.babylonjs.BABYLON.KeyboardInfo {
+  extends StObject
+     with typings.babylonjs.BABYLON.KeyboardInfo {
   /**
     * Instantiates a new keyboard info.
     * This class is used to store keyboard related info for the onKeyboardObservable event.
@@ -26,4 +26,16 @@ class KeyboardInfo protected ()
     */
   event: KeyboardEvent
   ) = this()
+  
+  /**
+    * Defines the related dom event
+    */
+  /* CompleteClass */
+  var event: KeyboardEvent = js.native
+  
+  /**
+    * Defines the type of event (KeyboardEventTypes)
+    */
+  /* CompleteClass */
+  var `type`: Double = js.native
 }

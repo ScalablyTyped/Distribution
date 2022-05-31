@@ -16,7 +16,6 @@ import typings.std.Blob
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textureMod {
@@ -50,7 +49,7 @@ object textureMod {
       onLoad: js.UndefOr[Nullable[js.Function0[Unit]]],
       onError: js.UndefOr[
             Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
             ]
           ],
       buffer: js.UndefOr[
@@ -65,67 +64,74 @@ object textureMod {
     /** @hidden */
     var _buffer: Nullable[String | ArrayBuffer | ArrayBufferView | HTMLImageElement | Blob | ImageBitmap] = js.native
     
-    var _cachedCoordinatesMode: js.Any = js.native
+    /* private */ var _cachedCoordinatesMode: js.Any = js.native
     
-    var _cachedHomogeneousRotationInUVTransform: js.Any = js.native
+    /* private */ var _cachedHomogeneousRotationInUVTransform: js.Any = js.native
     
-    var _cachedProjectionMatrixId: js.Any = js.native
+    /* private */ var _cachedProjectionMatrixId: js.Any = js.native
     
-    var _cachedTextureMatrix: js.Any = js.native
+    /* private */ var _cachedTextureMatrix: js.Any = js.native
     
-    var _cachedUAng: js.Any = js.native
+    /* private */ var _cachedUAng: js.Any = js.native
     
-    var _cachedUOffset: js.Any = js.native
+    /* private */ var _cachedUOffset: js.Any = js.native
     
-    var _cachedURotationCenter: js.Any = js.native
+    /* private */ var _cachedURotationCenter: js.Any = js.native
     
-    var _cachedUScale: js.Any = js.native
+    /* private */ var _cachedUScale: js.Any = js.native
     
-    var _cachedVAng: js.Any = js.native
+    /* private */ var _cachedVAng: js.Any = js.native
     
-    var _cachedVOffset: js.Any = js.native
+    /* private */ var _cachedVOffset: js.Any = js.native
     
-    var _cachedVRotationCenter: js.Any = js.native
+    /* private */ var _cachedVRotationCenter: js.Any = js.native
     
-    var _cachedVScale: js.Any = js.native
+    /* private */ var _cachedVScale: js.Any = js.native
     
-    var _cachedWAng: js.Any = js.native
+    /* private */ var _cachedWAng: js.Any = js.native
     
-    var _cachedWRotationCenter: js.Any = js.native
+    /* private */ var _cachedWRotationCenter: js.Any = js.native
     
-    var _delayedOnError: js.Any = js.native
+    /* private */ var _delayedOnError: js.Any = js.native
     
-    var _delayedOnLoad: js.Any = js.native
+    /* private */ var _delayedOnLoad: js.Any = js.native
     
-    var _deleteBuffer: js.Any = js.native
+    /* private */ var _deleteBuffer: js.Any = js.native
     
-    var _format: Nullable[Double] = js.native
+    /* protected */ var _format: Nullable[Double] = js.native
     
     /** @hidden */
-    var _initialSamplingMode: Double = js.native
+    /* protected */ var _initialSamplingMode: Double = js.native
     
     /** @hidden */
     var _invertY: Boolean = js.native
     
-    var _isBlocking: Boolean = js.native
+    /* protected */ var _isBlocking: Boolean = js.native
     
-    var _loaderOptions: js.Any = js.native
+    /* private */ var _loaderOptions: js.Any = js.native
     
-    var _mimeType: js.Any = js.native
+    /* private */ var _mimeType: js.Any = js.native
     
-    var _noMipmap: js.Any = js.native
+    /* private */ var _noMipmap: js.Any = js.native
     
-    var _prepareRowForTextureGeneration: js.Any = js.native
+    /* private */ var _prepareRowForTextureGeneration: js.Any = js.native
     
-    var _projectionModeMatrix: js.Any = js.native
+    /* private */ var _projectionModeMatrix: js.Any = js.native
     
-    var _rowGenerationMatrix: js.Any = js.native
+    /* private */ var _rowGenerationMatrix: js.Any = js.native
     
-    var _t0: js.Any = js.native
+    /* private */ var _t0: js.Any = js.native
     
-    var _t1: js.Any = js.native
+    /* private */ var _t1: js.Any = js.native
     
-    var _t2: js.Any = js.native
+    /* private */ var _t2: js.Any = js.native
+    
+    /**
+      * Checks if the texture has the same transform matrix than another texture
+      * @param texture texture to check against
+      * @returns true if the transforms are the same, else false
+      */
+    def checkTransformsAreIdentical(texture: Nullable[Texture]): Boolean = js.native
     
     def getTextureMatrix(uBase: Double): Matrix = js.native
     
@@ -194,12 +200,13 @@ object textureMod {
       * @param onLoad callback called when the texture is loaded  (defaults to null)
       */
     def updateURL(url: String): Unit = js.native
+    def updateURL(url: String, buffer: Unit, onLoad: js.Function0[Unit]): Unit = js.native
+    def updateURL(url: String, buffer: Nullable[String | ArrayBuffer | ArrayBufferView | HTMLImageElement | Blob]): Unit = js.native
     def updateURL(
       url: String,
-      buffer: js.UndefOr[Nullable[String | ArrayBuffer | ArrayBufferView | HTMLImageElement | Blob]],
+      buffer: Nullable[String | ArrayBuffer | ArrayBufferView | HTMLImageElement | Blob],
       onLoad: js.Function0[Unit]
     ): Unit = js.native
-    def updateURL(url: String, buffer: Nullable[String | ArrayBuffer | ArrayBufferView | HTMLImageElement | Blob]): Unit = js.native
     
     /**
       * Define the url of the texture.
@@ -275,9 +282,7 @@ object textureMod {
       * @param format define the format of the texture we are trying to load (Engine.TEXTUREFORMAT_RGBA...)
       * @returns the created texture
       */
-    @JSImport("babylonjs/Materials/Textures/texture", "Texture.CreateFromBase64String")
-    @js.native
-    def CreateFromBase64String(
+    inline def CreateFromBase64String(
       data: String,
       name: String,
       scene: Scene,
@@ -287,7 +292,7 @@ object textureMod {
       onLoad: js.UndefOr[Nullable[js.Function0[Unit]]],
       onError: js.UndefOr[Nullable[js.Function0[Unit]]],
       format: js.UndefOr[Double]
-    ): Texture = js.native
+    ): Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromBase64String")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], noMipmap.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Texture]
     
     /** Equirectangular coordinates mode */
     @JSImport("babylonjs/Materials/Textures/texture", "Texture.EQUIRECTANGULAR_MODE")
@@ -316,8 +321,7 @@ object textureMod {
     @JSImport("babylonjs/Materials/Textures/texture", "Texture.ForceSerializeBuffers")
     @js.native
     def ForceSerializeBuffers: Boolean = js.native
-    @scala.inline
-    def ForceSerializeBuffers_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ForceSerializeBuffers")(x.asInstanceOf[js.Any])
+    inline def ForceSerializeBuffers_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ForceSerializeBuffers")(x.asInstanceOf[js.Any])
     
     /** Inverse Cubic coordinates mode */
     @JSImport("babylonjs/Materials/Textures/texture", "Texture.INVCUBIC_MODE")
@@ -369,9 +373,7 @@ object textureMod {
       * @param format define the format of the texture we are trying to load (Engine.TEXTUREFORMAT_RGBA...)
       * @returns the created texture
       */
-    @JSImport("babylonjs/Materials/Textures/texture", "Texture.LoadFromDataString")
-    @js.native
-    def LoadFromDataString(
+    inline def LoadFromDataString(
       name: String,
       buffer: js.Any,
       scene: Scene,
@@ -382,11 +384,11 @@ object textureMod {
       onLoad: js.UndefOr[Nullable[js.Function0[Unit]]],
       onError: js.UndefOr[
           Nullable[
-            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
           ]
         ],
       format: js.UndefOr[Double]
-    ): Texture = js.native
+    ): Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadFromDataString")(name.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], deleteBuffer.asInstanceOf[js.Any], noMipmap.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Texture]
     
     /** Texture is repeating and mirrored */
     @JSImport("babylonjs/Materials/Textures/texture", "Texture.MIRROR_ADDRESSMODE")
@@ -445,9 +447,7 @@ object textureMod {
       * @param rootUrl Define the root url of the parsing sequence in the case of relative dependencies
       * @returns The parsed texture if successful
       */
-    @JSImport("babylonjs/Materials/Textures/texture", "Texture.Parse")
-    @js.native
-    def Parse(parsedTexture: js.Any, scene: Scene, rootUrl: String): Nullable[BaseTexture] = js.native
+    inline def Parse(parsedTexture: js.Any, scene: Scene, rootUrl: String): Nullable[BaseTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[BaseTexture]]
     
     /** Inverse Cubic coordinates mode */
     @JSImport("babylonjs/Materials/Textures/texture", "Texture.SKYBOX_MODE")
@@ -465,8 +465,7 @@ object textureMod {
     @JSImport("babylonjs/Materials/Textures/texture", "Texture.SerializeBuffers")
     @js.native
     def SerializeBuffers: Boolean = js.native
-    @scala.inline
-    def SerializeBuffers_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SerializeBuffers")(x.asInstanceOf[js.Any])
+    inline def SerializeBuffers_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SerializeBuffers")(x.asInstanceOf[js.Any])
     
     /** Trilinear is mag = linear and min = linear and mip = linear */
     @JSImport("babylonjs/Materials/Textures/texture", "Texture.TRILINEAR_SAMPLINGMODE")
@@ -479,8 +478,7 @@ object textureMod {
     @JSImport("babylonjs/Materials/Textures/texture", "Texture.UseSerializedUrlIfAny")
     @js.native
     def UseSerializedUrlIfAny: Boolean = js.native
-    @scala.inline
-    def UseSerializedUrlIfAny_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UseSerializedUrlIfAny")(x.asInstanceOf[js.Any])
+    inline def UseSerializedUrlIfAny_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UseSerializedUrlIfAny")(x.asInstanceOf[js.Any])
     
     /** Texture is repeating outside of 0..1 UVs */
     @JSImport("babylonjs/Materials/Textures/texture", "Texture.WRAP_ADDRESSMODE")
@@ -488,18 +486,12 @@ object textureMod {
     val WRAP_ADDRESSMODE: Double = js.native
     
     /** @hidden */
-    @JSImport("babylonjs/Materials/Textures/texture", "Texture._CreateMirror")
-    @js.native
-    def _CreateMirror(name: String, renderTargetSize: Double, scene: Scene, generateMipMaps: Boolean): MirrorTexture = js.native
+    inline def _CreateMirror(name: String, renderTargetSize: Double, scene: Scene, generateMipMaps: Boolean): MirrorTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateMirror")(name.asInstanceOf[js.Any], renderTargetSize.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any])).asInstanceOf[MirrorTexture]
     
     /** @hidden */
-    @JSImport("babylonjs/Materials/Textures/texture", "Texture._CreateRenderTargetTexture")
-    @js.native
-    def _CreateRenderTargetTexture(name: String, renderTargetSize: Double, scene: Scene, generateMipMaps: Boolean): RenderTargetTexture = js.native
+    inline def _CreateRenderTargetTexture(name: String, renderTargetSize: Double, scene: Scene, generateMipMaps: Boolean): RenderTargetTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateRenderTargetTexture")(name.asInstanceOf[js.Any], renderTargetSize.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any])).asInstanceOf[RenderTargetTexture]
     
     /** @hidden */
-    @JSImport("babylonjs/Materials/Textures/texture", "Texture._CubeTextureParser")
-    @js.native
-    def _CubeTextureParser(jsonTexture: js.Any, scene: Scene, rootUrl: String): CubeTexture = js.native
+    inline def _CubeTextureParser(jsonTexture: js.Any, scene: Scene, rootUrl: String): CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("_CubeTextureParser")(jsonTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[CubeTexture]
   }
 }

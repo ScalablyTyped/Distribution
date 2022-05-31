@@ -69,30 +69,31 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ojpopupMod {
   
   @js.native
-  trait ojPopup extends baseComponent[ojPopupSettableProperties] {
+  trait ojPopup
+    extends StObject
+       with baseComponent[ojPopupSettableProperties] {
     
     def addEventListener(
       `type`: autoDismissChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | focusLoss], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | focusLoss], js.Any]
     ): Unit = js.native
     def addEventListener(
       `type`: autoDismissChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | focusLoss], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | focusLoss], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     def addEventListener(
       `type`: chromeChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[default | none], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[default | none], js.Any]
     ): Unit = js.native
     def addEventListener(
       `type`: chromeChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[default | none], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[default | none], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     def addEventListener(
@@ -100,7 +101,7 @@ object ojpopupMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[auto | none | firstFocusable | popup], 
-          _
+          js.Any
         ]
     ): Unit = js.native
     def addEventListener(
@@ -108,26 +109,26 @@ object ojpopupMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[auto | none | firstFocusable | popup], 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
     def addEventListener(
       `type`: modalityChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[modeless | modal], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[modeless | modal], js.Any]
     ): Unit = js.native
     def addEventListener(
       `type`: modalityChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[modeless | modal], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[modeless | modal], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     def addEventListener(
       `type`: tailChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | simple], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | simple], js.Any]
     ): Unit = js.native
     def addEventListener(
       `type`: tailChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | simple], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | simple], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
@@ -136,7 +137,7 @@ object ojpopupMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojAnimateEnd, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -145,7 +146,7 @@ object ojpopupMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojAnimateEnd, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -155,7 +156,7 @@ object ojpopupMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojAnimateStart, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -164,7 +165,7 @@ object ojpopupMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojAnimateStart, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -174,7 +175,7 @@ object ojpopupMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojBeforeClose, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -183,7 +184,7 @@ object ojpopupMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojBeforeClose, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -193,7 +194,7 @@ object ojpopupMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojBeforeOpen, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -202,7 +203,7 @@ object ojpopupMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojBeforeOpen, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -212,7 +213,7 @@ object ojpopupMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojClose, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -221,7 +222,7 @@ object ojpopupMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojClose, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -231,7 +232,7 @@ object ojpopupMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojFocus, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -240,7 +241,7 @@ object ojpopupMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojFocus, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -250,7 +251,7 @@ object ojpopupMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojOpen, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -259,19 +260,19 @@ object ojpopupMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojOpen, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_positionChanged(
       `type`: positionChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Position], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Position], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_positionChanged(
       `type`: positionChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Position], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Position], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     
@@ -300,31 +301,31 @@ object ojpopupMod {
     
     var modality: modeless | modal = js.native
     
-    var onAutoDismissChanged: (js.Function1[/* event */ JetElementCustomEvent[none | focusLoss], _]) | Null = js.native
+    var onAutoDismissChanged: (js.Function1[/* event */ JetElementCustomEvent[none | focusLoss], js.Any]) | Null = js.native
     
-    var onChromeChanged: (js.Function1[/* event */ JetElementCustomEvent[default | none], _]) | Null = js.native
+    var onChromeChanged: (js.Function1[/* event */ JetElementCustomEvent[default | none], js.Any]) | Null = js.native
     
-    var onInitialFocusChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none | firstFocusable | popup], _]) | Null = js.native
+    var onInitialFocusChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none | firstFocusable | popup], js.Any]) | Null = js.native
     
-    var onModalityChanged: (js.Function1[/* event */ JetElementCustomEvent[modeless | modal], _]) | Null = js.native
+    var onModalityChanged: (js.Function1[/* event */ JetElementCustomEvent[modeless | modal], js.Any]) | Null = js.native
     
-    var onOjAnimateEnd: (js.Function1[/* event */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojAnimateEnd, _]) | Null = js.native
+    var onOjAnimateEnd: (js.Function1[/* event */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojAnimateEnd, js.Any]) | Null = js.native
     
-    var onOjAnimateStart: (js.Function1[/* event */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojAnimateStart, _]) | Null = js.native
+    var onOjAnimateStart: (js.Function1[/* event */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojAnimateStart, js.Any]) | Null = js.native
     
-    var onOjBeforeClose: (js.Function1[/* event */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojBeforeClose, _]) | Null = js.native
+    var onOjBeforeClose: (js.Function1[/* event */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojBeforeClose, js.Any]) | Null = js.native
     
-    var onOjBeforeOpen: (js.Function1[/* event */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojBeforeOpen, _]) | Null = js.native
+    var onOjBeforeOpen: (js.Function1[/* event */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojBeforeOpen, js.Any]) | Null = js.native
     
-    var onOjClose: (js.Function1[/* event */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojClose, _]) | Null = js.native
+    var onOjClose: (js.Function1[/* event */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojClose, js.Any]) | Null = js.native
     
-    var onOjFocus: (js.Function1[/* event */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojFocus, _]) | Null = js.native
+    var onOjFocus: (js.Function1[/* event */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojFocus, js.Any]) | Null = js.native
     
-    var onOjOpen: (js.Function1[/* event */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojOpen, _]) | Null = js.native
+    var onOjOpen: (js.Function1[/* event */ typings.oracleOraclejet.ojpopupMod.ojPopup.ojOpen, js.Any]) | Null = js.native
     
-    var onPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[Position], _]) | Null = js.native
+    var onPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[Position], js.Any]) | Null = js.native
     
-    var onTailChanged: (js.Function1[/* event */ JetElementCustomEvent[none | simple], _]) | Null = js.native
+    var onTailChanged: (js.Function1[/* event */ JetElementCustomEvent[none | simple], js.Any]) | Null = js.native
     
     def open(launcher: String): Unit = js.native
     def open(launcher: String, position: Position): Unit = js.native
@@ -360,125 +361,98 @@ object ojpopupMod {
   object ojPopup {
     
     // tslint:disable-next-line interface-over-type-literal
-    @js.native
     trait Position extends StObject {
       
-      var at: js.UndefOr[PositionAlign] = js.native
+      var at: js.UndefOr[PositionAlign] = js.undefined
       
-      var collision: js.UndefOr[flip | fit | flipfit | flipcenter | none] = js.native
+      var collision: js.UndefOr[flip | fit | flipfit | flipcenter | none] = js.undefined
       
-      var my: js.UndefOr[PositionAlign] = js.native
+      var my: js.UndefOr[PositionAlign] = js.undefined
       
-      var of: js.UndefOr[String | PositionPoint] = js.native
+      var of: js.UndefOr[String | PositionPoint] = js.undefined
       
-      var offset: js.UndefOr[PositionPoint] = js.native
+      var offset: js.UndefOr[PositionPoint] = js.undefined
     }
     object Position {
       
-      @scala.inline
-      def apply(): Position = {
+      inline def apply(): Position = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Position]
       }
       
-      @scala.inline
-      implicit class PositionMutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
+      extension [Self <: Position](x: Self) {
         
-        @scala.inline
-        def setAt(value: PositionAlign): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
+        inline def setAt(value: PositionAlign): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAtUndefined: Self = StObject.set(x, "at", js.undefined)
+        inline def setAtUndefined: Self = StObject.set(x, "at", js.undefined)
         
-        @scala.inline
-        def setCollision(value: flip | fit | flipfit | flipcenter | none): Self = StObject.set(x, "collision", value.asInstanceOf[js.Any])
+        inline def setCollision(value: flip | fit | flipfit | flipcenter | none): Self = StObject.set(x, "collision", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCollisionUndefined: Self = StObject.set(x, "collision", js.undefined)
+        inline def setCollisionUndefined: Self = StObject.set(x, "collision", js.undefined)
         
-        @scala.inline
-        def setMy(value: PositionAlign): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
+        inline def setMy(value: PositionAlign): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMyUndefined: Self = StObject.set(x, "my", js.undefined)
+        inline def setMyUndefined: Self = StObject.set(x, "my", js.undefined)
         
-        @scala.inline
-        def setOf(value: String | PositionPoint): Self = StObject.set(x, "of", value.asInstanceOf[js.Any])
+        inline def setOf(value: String | PositionPoint): Self = StObject.set(x, "of", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOfUndefined: Self = StObject.set(x, "of", js.undefined)
+        inline def setOfUndefined: Self = StObject.set(x, "of", js.undefined)
         
-        @scala.inline
-        def setOffset(value: PositionPoint): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+        inline def setOffset(value: PositionPoint): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+        inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       }
     }
     
     // tslint:disable-next-line interface-over-type-literal
-    @js.native
     trait PositionAlign extends StObject {
       
-      var horizontal: js.UndefOr[start | end | left | center | bottom] = js.native
+      var horizontal: js.UndefOr[start | end | left | center | bottom] = js.undefined
       
-      var vertical: js.UndefOr[top | bottom | center] = js.native
+      var vertical: js.UndefOr[top | bottom | center] = js.undefined
     }
     object PositionAlign {
       
-      @scala.inline
-      def apply(): PositionAlign = {
+      inline def apply(): PositionAlign = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PositionAlign]
       }
       
-      @scala.inline
-      implicit class PositionAlignMutableBuilder[Self <: PositionAlign] (val x: Self) extends AnyVal {
+      extension [Self <: PositionAlign](x: Self) {
         
-        @scala.inline
-        def setHorizontal(value: start | end | left | center | bottom): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+        inline def setHorizontal(value: start | end | left | center | bottom): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
+        inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
         
-        @scala.inline
-        def setVertical(value: top | bottom | center): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+        inline def setVertical(value: top | bottom | center): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+        inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
       }
     }
     
     // tslint:disable-next-line interface-over-type-literal
-    @js.native
     trait PositionPoint extends StObject {
       
-      var x: js.UndefOr[Double] = js.native
+      var x: js.UndefOr[Double] = js.undefined
       
-      var y: js.UndefOr[Double] = js.native
+      var y: js.UndefOr[Double] = js.undefined
     }
     object PositionPoint {
       
-      @scala.inline
-      def apply(): PositionPoint = {
+      inline def apply(): PositionPoint = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PositionPoint]
       }
       
-      @scala.inline
-      implicit class PositionPointMutableBuilder[Self <: PositionPoint] (val x: Self) extends AnyVal {
+      extension [Self <: PositionPoint](x: Self) {
         
-        @scala.inline
-        def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+        inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+        inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
         
-        @scala.inline
-        def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+        inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+        inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
       }
     }
     
@@ -497,39 +471,39 @@ object ojpopupMod {
     type ojOpen = CustomEvent[StringDictionary[js.Any]]
   }
   
-  @js.native
-  trait ojPopupEventMap extends baseComponentEventMap[ojPopupSettableProperties] {
+  trait ojPopupEventMap
+    extends StObject
+       with baseComponentEventMap[ojPopupSettableProperties] {
     
-    var autoDismissChanged: JetElementCustomEvent[none | focusLoss] = js.native
+    var autoDismissChanged: JetElementCustomEvent[none | focusLoss]
     
-    var chromeChanged: JetElementCustomEvent[default | none] = js.native
+    var chromeChanged: JetElementCustomEvent[default | none]
     
-    var initialFocusChanged: JetElementCustomEvent[auto | none | firstFocusable | popup] = js.native
+    var initialFocusChanged: JetElementCustomEvent[auto | none | firstFocusable | popup]
     
-    var modalityChanged: JetElementCustomEvent[modeless | modal] = js.native
+    var modalityChanged: JetElementCustomEvent[modeless | modal]
     
-    var ojAnimateEnd: typings.oracleOraclejet.ojpopupMod.ojPopup.ojAnimateEnd = js.native
+    var ojAnimateEnd: typings.oracleOraclejet.ojpopupMod.ojPopup.ojAnimateEnd
     
-    var ojAnimateStart: typings.oracleOraclejet.ojpopupMod.ojPopup.ojAnimateStart = js.native
+    var ojAnimateStart: typings.oracleOraclejet.ojpopupMod.ojPopup.ojAnimateStart
     
-    var ojBeforeClose: typings.oracleOraclejet.ojpopupMod.ojPopup.ojBeforeClose = js.native
+    var ojBeforeClose: typings.oracleOraclejet.ojpopupMod.ojPopup.ojBeforeClose
     
-    var ojBeforeOpen: typings.oracleOraclejet.ojpopupMod.ojPopup.ojBeforeOpen = js.native
+    var ojBeforeOpen: typings.oracleOraclejet.ojpopupMod.ojPopup.ojBeforeOpen
     
-    var ojClose: typings.oracleOraclejet.ojpopupMod.ojPopup.ojClose = js.native
+    var ojClose: typings.oracleOraclejet.ojpopupMod.ojPopup.ojClose
     
-    var ojFocus: typings.oracleOraclejet.ojpopupMod.ojPopup.ojFocus = js.native
+    var ojFocus: typings.oracleOraclejet.ojpopupMod.ojPopup.ojFocus
     
-    var ojOpen: typings.oracleOraclejet.ojpopupMod.ojPopup.ojOpen = js.native
+    var ojOpen: typings.oracleOraclejet.ojpopupMod.ojPopup.ojOpen
     
-    var positionChanged: JetElementCustomEvent[Position] = js.native
+    var positionChanged: JetElementCustomEvent[Position]
     
-    var tailChanged: JetElementCustomEvent[none | simple] = js.native
+    var tailChanged: JetElementCustomEvent[none | simple]
   }
   object ojPopupEventMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: UIEvent,
       animationcancel: AnimationEvent,
       animationend: AnimationEvent,
@@ -641,72 +615,58 @@ object ojpopupMod {
       __obj.asInstanceOf[ojPopupEventMap]
     }
     
-    @scala.inline
-    implicit class ojPopupEventMapMutableBuilder[Self <: ojPopupEventMap] (val x: Self) extends AnyVal {
+    extension [Self <: ojPopupEventMap](x: Self) {
       
-      @scala.inline
-      def setAutoDismissChanged(value: JetElementCustomEvent[none | focusLoss]): Self = StObject.set(x, "autoDismissChanged", value.asInstanceOf[js.Any])
+      inline def setAutoDismissChanged(value: JetElementCustomEvent[none | focusLoss]): Self = StObject.set(x, "autoDismissChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChromeChanged(value: JetElementCustomEvent[default | none]): Self = StObject.set(x, "chromeChanged", value.asInstanceOf[js.Any])
+      inline def setChromeChanged(value: JetElementCustomEvent[default | none]): Self = StObject.set(x, "chromeChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialFocusChanged(value: JetElementCustomEvent[auto | none | firstFocusable | popup]): Self = StObject.set(x, "initialFocusChanged", value.asInstanceOf[js.Any])
+      inline def setInitialFocusChanged(value: JetElementCustomEvent[auto | none | firstFocusable | popup]): Self = StObject.set(x, "initialFocusChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModalityChanged(value: JetElementCustomEvent[modeless | modal]): Self = StObject.set(x, "modalityChanged", value.asInstanceOf[js.Any])
+      inline def setModalityChanged(value: JetElementCustomEvent[modeless | modal]): Self = StObject.set(x, "modalityChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjAnimateEnd(value: typings.oracleOraclejet.ojpopupMod.ojPopup.ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
+      inline def setOjAnimateEnd(value: typings.oracleOraclejet.ojpopupMod.ojPopup.ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjAnimateStart(value: typings.oracleOraclejet.ojpopupMod.ojPopup.ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
+      inline def setOjAnimateStart(value: typings.oracleOraclejet.ojpopupMod.ojPopup.ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjBeforeClose(value: typings.oracleOraclejet.ojpopupMod.ojPopup.ojBeforeClose): Self = StObject.set(x, "ojBeforeClose", value.asInstanceOf[js.Any])
+      inline def setOjBeforeClose(value: typings.oracleOraclejet.ojpopupMod.ojPopup.ojBeforeClose): Self = StObject.set(x, "ojBeforeClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjBeforeOpen(value: typings.oracleOraclejet.ojpopupMod.ojPopup.ojBeforeOpen): Self = StObject.set(x, "ojBeforeOpen", value.asInstanceOf[js.Any])
+      inline def setOjBeforeOpen(value: typings.oracleOraclejet.ojpopupMod.ojPopup.ojBeforeOpen): Self = StObject.set(x, "ojBeforeOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjClose(value: typings.oracleOraclejet.ojpopupMod.ojPopup.ojClose): Self = StObject.set(x, "ojClose", value.asInstanceOf[js.Any])
+      inline def setOjClose(value: typings.oracleOraclejet.ojpopupMod.ojPopup.ojClose): Self = StObject.set(x, "ojClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjFocus(value: typings.oracleOraclejet.ojpopupMod.ojPopup.ojFocus): Self = StObject.set(x, "ojFocus", value.asInstanceOf[js.Any])
+      inline def setOjFocus(value: typings.oracleOraclejet.ojpopupMod.ojPopup.ojFocus): Self = StObject.set(x, "ojFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjOpen(value: typings.oracleOraclejet.ojpopupMod.ojPopup.ojOpen): Self = StObject.set(x, "ojOpen", value.asInstanceOf[js.Any])
+      inline def setOjOpen(value: typings.oracleOraclejet.ojpopupMod.ojPopup.ojOpen): Self = StObject.set(x, "ojOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionChanged(value: JetElementCustomEvent[Position]): Self = StObject.set(x, "positionChanged", value.asInstanceOf[js.Any])
+      inline def setPositionChanged(value: JetElementCustomEvent[Position]): Self = StObject.set(x, "positionChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTailChanged(value: JetElementCustomEvent[none | simple]): Self = StObject.set(x, "tailChanged", value.asInstanceOf[js.Any])
+      inline def setTailChanged(value: JetElementCustomEvent[none | simple]): Self = StObject.set(x, "tailChanged", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait ojPopupSettableProperties extends baseComponentSettableProperties {
+  trait ojPopupSettableProperties
+    extends StObject
+       with baseComponentSettableProperties {
     
-    var autoDismiss: none | focusLoss = js.native
+    var autoDismiss: none | focusLoss
     
-    var chrome: default | none = js.native
+    var chrome: default | none
     
-    var initialFocus: auto | none | firstFocusable | popup = js.native
+    var initialFocus: auto | none | firstFocusable | popup
     
-    var modality: modeless | modal = js.native
+    var modality: modeless | modal
     
-    var position: Position = js.native
+    var position: Position
     
-    var tail: none | simple = js.native
+    var tail: none | simple
     
     @JSName("translations")
-    var translations_ojPopupSettableProperties: AriaCloseSkipLink = js.native
+    var translations_ojPopupSettableProperties: AriaCloseSkipLink
   }
   object ojPopupSettableProperties {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       autoDismiss: none | focusLoss,
       chrome: default | none,
       initialFocus: auto | none | firstFocusable | popup,
@@ -719,103 +679,79 @@ object ojpopupMod {
       __obj.asInstanceOf[ojPopupSettableProperties]
     }
     
-    @scala.inline
-    implicit class ojPopupSettablePropertiesMutableBuilder[Self <: ojPopupSettableProperties] (val x: Self) extends AnyVal {
+    extension [Self <: ojPopupSettableProperties](x: Self) {
       
-      @scala.inline
-      def setAutoDismiss(value: none | focusLoss): Self = StObject.set(x, "autoDismiss", value.asInstanceOf[js.Any])
+      inline def setAutoDismiss(value: none | focusLoss): Self = StObject.set(x, "autoDismiss", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChrome(value: default | none): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
+      inline def setChrome(value: default | none): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialFocus(value: auto | none | firstFocusable | popup): Self = StObject.set(x, "initialFocus", value.asInstanceOf[js.Any])
+      inline def setInitialFocus(value: auto | none | firstFocusable | popup): Self = StObject.set(x, "initialFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModality(value: modeless | modal): Self = StObject.set(x, "modality", value.asInstanceOf[js.Any])
+      inline def setModality(value: modeless | modal): Self = StObject.set(x, "modality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTail(value: none | simple): Self = StObject.set(x, "tail", value.asInstanceOf[js.Any])
+      inline def setTail(value: none | simple): Self = StObject.set(x, "tail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslations(value: AriaCloseSkipLink): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: AriaCloseSkipLink): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojpopup.ojPopupSettableProperties> */
-  @js.native
   trait ojPopupSettablePropertiesLenient
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var autoDismiss: js.UndefOr[none | focusLoss] = js.native
+    var autoDismiss: js.UndefOr[none | focusLoss] = js.undefined
     
-    var chrome: js.UndefOr[default | none] = js.native
+    var chrome: js.UndefOr[default | none] = js.undefined
     
-    var initialFocus: js.UndefOr[auto | none | firstFocusable | popup] = js.native
+    var initialFocus: js.UndefOr[auto | none | firstFocusable | popup] = js.undefined
     
-    var modality: js.UndefOr[modeless | modal] = js.native
+    var modality: js.UndefOr[modeless | modal] = js.undefined
     
-    var position: js.UndefOr[Position] = js.native
+    var position: js.UndefOr[Position] = js.undefined
     
-    var tail: js.UndefOr[none | simple] = js.native
+    var tail: js.UndefOr[none | simple] = js.undefined
     
-    var translations: js.UndefOr[AriaCloseSkipLink] = js.native
+    var translations: js.UndefOr[AriaCloseSkipLink] = js.undefined
   }
   object ojPopupSettablePropertiesLenient {
     
-    @scala.inline
-    def apply(): ojPopupSettablePropertiesLenient = {
+    inline def apply(): ojPopupSettablePropertiesLenient = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ojPopupSettablePropertiesLenient]
     }
     
-    @scala.inline
-    implicit class ojPopupSettablePropertiesLenientMutableBuilder[Self <: ojPopupSettablePropertiesLenient] (val x: Self) extends AnyVal {
+    extension [Self <: ojPopupSettablePropertiesLenient](x: Self) {
       
-      @scala.inline
-      def setAutoDismiss(value: none | focusLoss): Self = StObject.set(x, "autoDismiss", value.asInstanceOf[js.Any])
+      inline def setAutoDismiss(value: none | focusLoss): Self = StObject.set(x, "autoDismiss", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoDismissUndefined: Self = StObject.set(x, "autoDismiss", js.undefined)
+      inline def setAutoDismissUndefined: Self = StObject.set(x, "autoDismiss", js.undefined)
       
-      @scala.inline
-      def setChrome(value: default | none): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
+      inline def setChrome(value: default | none): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChromeUndefined: Self = StObject.set(x, "chrome", js.undefined)
+      inline def setChromeUndefined: Self = StObject.set(x, "chrome", js.undefined)
       
-      @scala.inline
-      def setInitialFocus(value: auto | none | firstFocusable | popup): Self = StObject.set(x, "initialFocus", value.asInstanceOf[js.Any])
+      inline def setInitialFocus(value: auto | none | firstFocusable | popup): Self = StObject.set(x, "initialFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialFocusUndefined: Self = StObject.set(x, "initialFocus", js.undefined)
+      inline def setInitialFocusUndefined: Self = StObject.set(x, "initialFocus", js.undefined)
       
-      @scala.inline
-      def setModality(value: modeless | modal): Self = StObject.set(x, "modality", value.asInstanceOf[js.Any])
+      inline def setModality(value: modeless | modal): Self = StObject.set(x, "modality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModalityUndefined: Self = StObject.set(x, "modality", js.undefined)
+      inline def setModalityUndefined: Self = StObject.set(x, "modality", js.undefined)
       
-      @scala.inline
-      def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setTail(value: none | simple): Self = StObject.set(x, "tail", value.asInstanceOf[js.Any])
+      inline def setTail(value: none | simple): Self = StObject.set(x, "tail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTailUndefined: Self = StObject.set(x, "tail", js.undefined)
+      inline def setTailUndefined: Self = StObject.set(x, "tail", js.undefined)
       
-      @scala.inline
-      def setTranslations(value: AriaCloseSkipLink): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: AriaCloseSkipLink): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+      inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
     }
   }
 }

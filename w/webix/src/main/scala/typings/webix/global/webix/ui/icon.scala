@@ -4,8 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("webix.ui.icon")
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.webix.webix.ui.baseview because Already inherited
+- typings.webix.webix.ui.icon because var conflicts: $compareValue_Original, $height, $prepareValue_Original, $scope, $skin_Original, $view, $width, config, name, on_click_Original, touchable. Inlined  */ @JSGlobal("webix.ui.icon")
 @js.native
 class icon ()
-  extends StObject
-     with typings.webix.webix.ui.icon
+  extends typings.webix.mod.ui.icon

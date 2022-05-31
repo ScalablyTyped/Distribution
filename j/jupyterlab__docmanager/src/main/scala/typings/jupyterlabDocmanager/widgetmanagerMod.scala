@@ -13,20 +13,21 @@ import typings.luminoSignaling.mod.ISignal
 import typings.luminoWidgets.mod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object widgetmanagerMod {
   
   @JSImport("@jupyterlab/docmanager/lib/widgetmanager", "DocumentWidgetManager")
   @js.native
-  class DocumentWidgetManager protected () extends IDisposable {
+  class DocumentWidgetManager protected ()
+    extends StObject
+       with IDisposable {
     /**
       * Construct a new document widget manager.
       */
     def this(options: IOptions) = this()
     
-    var _activateRequested: js.Any = js.native
+    /* private */ var _activateRequested: js.Any = js.native
     
     /**
       * When a new widget is created, we need to hook it up
@@ -34,36 +35,36 @@ object widgetmanagerMod {
       * this kind of widget) in the docregistry, among
       * other things.
       */
-    var _initializeWidget: js.Any = js.native
+    /* private */ var _initializeWidget: js.Any = js.native
     
-    var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: js.Any = js.native
     
     /**
       * Ask the user whether to close an unsaved file.
       */
-    var _maybeClose: js.Any = js.native
+    /* private */ var _maybeClose: js.Any = js.native
     
     /**
       * Handle a file changed signal for a context.
       */
-    var _onFileChanged: js.Any = js.native
+    /* private */ var _onFileChanged: js.Any = js.native
     
     /**
       * Handle a path changed signal for a context.
       */
-    var _onPathChanged: js.Any = js.native
+    /* private */ var _onPathChanged: js.Any = js.native
     
     /**
       * Handle the disposal of a widget.
       */
-    var _onWidgetDisposed: js.Any = js.native
+    /* private */ var _onWidgetDisposed: js.Any = js.native
     
-    var _registry: js.Any = js.native
+    /* private */ var _registry: js.Any = js.native
     
     /**
       * Handle the disposal of a widget.
       */
-    var _widgetDisposed: js.Any = js.native
+    /* private */ var _widgetDisposed: js.Any = js.native
     
     /**
       * A signal emitted when one of the documents is activated.
@@ -131,6 +132,20 @@ object widgetmanagerMod {
     def deleteWidgets(context: Context): js.Promise[Unit] = js.native
     
     /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
       * See if a widget already exists for the given context and widget name.
       *
       * @param context - The document context object.
@@ -143,6 +158,14 @@ object widgetmanagerMod {
       */
     def findWidget(context: Context, widgetName: String): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
     
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
     /**
       * Test whether the document widget manager is disposed.
       */
@@ -189,27 +212,23 @@ object widgetmanagerMod {
     /**
       * The options used to initialize a document widget manager.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * A document registry instance.
         */
-      var registry: DocumentRegistry = js.native
+      var registry: DocumentRegistry
     }
     object IOptions {
       
-      @scala.inline
-      def apply(registry: DocumentRegistry): IOptions = {
+      inline def apply(registry: DocumentRegistry): IOptions = {
         val __obj = js.Dynamic.literal(registry = registry.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setRegistry(value: DocumentRegistry): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
+        inline def setRegistry(value: DocumentRegistry): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
       }
     }
   }

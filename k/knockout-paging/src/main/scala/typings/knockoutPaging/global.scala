@@ -61,10 +61,4 @@ object global {
     /* This means you don't have to write `^`, but can instead just say `ko.foo` */
     override def _to: KnockoutStatic = ^
   }
-  
-  //
-  // refactored types into a namespace to reduce global pollution
-  // and used Union Types to simplify overloads (requires TypeScript 1.4)
-  //
-  object KnockoutComponentTypes
 }

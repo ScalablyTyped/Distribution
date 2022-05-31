@@ -807,6 +807,4 @@ object default {
   @JSImport("konva", "default.stages")
   @js.native
   val stages: js.Array[typings.konva.stageMod.Stage] = js.native
-  
-  object Tween
 }

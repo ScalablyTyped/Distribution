@@ -1,6 +1,5 @@
 package typings.jupyterlabFilebrowser
 
-import org.scalablytyped.runtime.Shortcut
 import typings.jupyterlabApputils.dialogMod.Dialog.IResult
 import typings.jupyterlabFilebrowser.crumbsMod.BreadCrumbs.IOptions
 import typings.jupyterlabFilebrowser.opendialogMod.FileDialog.IDirectoryOptions
@@ -9,7 +8,6 @@ import typings.jupyterlabServices.contentsMod.Contents.IModel
 import typings.luminoCoreutils.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -83,6 +81,10 @@ object mod {
   
   object FileDialog {
     
+    @JSImport("@jupyterlab/filebrowser", "FileDialog")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Create and show a open directory dialog.
       *
@@ -93,9 +95,7 @@ object mod {
       *
       * @returns A promise that resolves with whether the dialog was accepted.
       */
-    @JSImport("@jupyterlab/filebrowser", "FileDialog.getExistingDirectory")
-    @js.native
-    def getExistingDirectory(options: IDirectoryOptions): js.Promise[IResult[js.Array[IModel]]] = js.native
+    inline def getExistingDirectory(options: IDirectoryOptions): js.Promise[IResult[js.Array[IModel]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getExistingDirectory")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IResult[js.Array[IModel]]]]
     
     /**
       * Create and show a open files dialog.
@@ -107,9 +107,7 @@ object mod {
       *
       * @returns A promise that resolves with whether the dialog was accepted.
       */
-    @JSImport("@jupyterlab/filebrowser", "FileDialog.getOpenFiles")
-    @js.native
-    def getOpenFiles(options: IFileOptions): js.Promise[IResult[js.Array[IModel]]] = js.native
+    inline def getOpenFiles(options: IFileOptions): js.Promise[IResult[js.Array[IModel]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOpenFiles")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IResult[js.Array[IModel]]]]
   }
   
   @JSImport("@jupyterlab/filebrowser", "FileUploadStatus")
@@ -144,17 +142,9 @@ object mod {
     def this(options: typings.jupyterlabFilebrowser.modelMod.FilterFileBrowserModel.IOptions) = this()
   }
   
-  object IFileBrowserFactory extends Shortcut {
-    
-    @JSImport("@jupyterlab/filebrowser", "IFileBrowserFactory")
-    @js.native
-    val ^ : Token[typings.jupyterlabFilebrowser.tokensMod.IFileBrowserFactory] = js.native
-    
-    type _To = Token[typings.jupyterlabFilebrowser.tokensMod.IFileBrowserFactory]
-    
-    /* This means you don't have to write `^`, but can instead just say `IFileBrowserFactory.foo` */
-    override def _to: Token[typings.jupyterlabFilebrowser.tokensMod.IFileBrowserFactory] = ^
-  }
+  @JSImport("@jupyterlab/filebrowser", "IFileBrowserFactory")
+  @js.native
+  val IFileBrowserFactory: Token[typings.jupyterlabFilebrowser.tokensMod.IFileBrowserFactory] = js.native
   
   @JSImport("@jupyterlab/filebrowser", "LARGE_FILE_SIZE")
   @js.native

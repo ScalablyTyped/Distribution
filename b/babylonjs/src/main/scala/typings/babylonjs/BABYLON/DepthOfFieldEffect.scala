@@ -2,22 +2,23 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DepthOfFieldEffect extends PostProcessRenderEffect {
+trait DepthOfFieldEffect
+  extends StObject
+     with PostProcessRenderEffect {
   
-  var _circleOfConfusion: js.Any = js.native
+  /* private */ var _circleOfConfusion: js.Any = js.native
   
   /**
     * @hidden Internal, blurs from high to low
     */
   var _depthOfFieldBlurX: js.Array[DepthOfFieldBlurPostProcess] = js.native
   
-  var _depthOfFieldBlurY: js.Any = js.native
+  /* private */ var _depthOfFieldBlurY: js.Any = js.native
   
-  var _dofMerge: js.Any = js.native
+  /* private */ var _dofMerge: js.Any = js.native
   
   /**
     * @hidden Internal post processes in depth of field effect

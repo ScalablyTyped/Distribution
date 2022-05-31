@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.ClipboardEventTypes")
 @js.native
 class ClipboardEventTypes ()
-  extends typings.babylonjs.BABYLON.ClipboardEventTypes
+  extends StObject
+     with typings.babylonjs.BABYLON.ClipboardEventTypes
 /* static members */
 object ClipboardEventTypes {
   

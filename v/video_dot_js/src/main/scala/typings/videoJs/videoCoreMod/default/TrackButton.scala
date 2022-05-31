@@ -24,7 +24,3 @@ class TrackButton protected ()
   def this(player: typings.videoJs.mod.videojs.Player) = this()
   def this(player: typings.videoJs.mod.videojs.Player, options: TrackButtonOptions) = this()
 }
-/**
-  * The base class for buttons that toggle specific  track types (e.g. subtitles).
-  */
-object TrackButton

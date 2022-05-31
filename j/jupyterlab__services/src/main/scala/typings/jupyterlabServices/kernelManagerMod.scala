@@ -14,7 +14,6 @@ import typings.luminoSignaling.mod.ISignal
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kernelManagerMod {
@@ -33,28 +32,28 @@ object kernelManagerMod {
   class KernelManager () extends BaseManager {
     def this(options: IOptions) = this()
     
-    var _connectionFailure: js.Any = js.native
+    /* private */ var _connectionFailure: js.Any = js.native
     
-    var _isReady: js.Any = js.native
+    /* private */ var _isReady: js.Any = js.native
     
-    var _kernelConnections: js.Any = js.native
+    /* private */ var _kernelConnections: js.Any = js.native
     
-    var _models: js.Any = js.native
+    /* private */ var _models: js.Any = js.native
     
-    var _onDisposed: js.Any = js.native
+    /* private */ var _onDisposed: js.Any = js.native
     
     /**
       * Handle a kernel starting.
       */
-    var _onStarted: js.Any = js.native
+    /* private */ var _onStarted: js.Any = js.native
     
-    var _onStatusChanged: js.Any = js.native
+    /* private */ var _onStatusChanged: js.Any = js.native
     
-    var _pollModels: js.Any = js.native
+    /* private */ var _pollModels: js.Any = js.native
     
-    var _ready: js.Any = js.native
+    /* private */ var _ready: js.Any = js.native
     
-    var _runningChanged: js.Any = js.native
+    /* private */ var _runningChanged: js.Any = js.native
     
     /**
       * Connect to an existing kernel.
@@ -185,7 +184,7 @@ object kernelManagerMod {
       * The manager `serverSettings` will be always be used.
       */
     def startNew(): js.Promise[IKernelConnection] = js.native
-    def startNew(createOptions: js.UndefOr[scala.Nothing], connectOptions: OmitIOptionsmodelserverSe): js.Promise[IKernelConnection] = js.native
+    def startNew(createOptions: Unit, connectOptions: OmitIOptionsmodelserverSe): js.Promise[IKernelConnection] = js.native
     def startNew(createOptions: IKernelOptions): js.Promise[IKernelConnection] = js.native
     def startNew(createOptions: IKernelOptions, connectOptions: OmitIOptionsmodelserverSe): js.Promise[IKernelConnection] = js.native
   }
@@ -194,31 +193,27 @@ object kernelManagerMod {
     /**
       * The options used to initialize a KernelManager.
       */
-    @js.native
     trait IOptions
-      extends typings.jupyterlabServices.basemanagerMod.BaseManager.IOptions {
+      extends StObject
+         with typings.jupyterlabServices.basemanagerMod.BaseManager.IOptions {
       
       /**
         * When the manager stops polling the API. Defaults to `when-hidden`.
         */
-      var standby: js.UndefOr[Standby] = js.native
+      var standby: js.UndefOr[Standby] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): IOptions = {
+      inline def apply(): IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setStandby(value: Standby): Self = StObject.set(x, "standby", value.asInstanceOf[js.Any])
+        inline def setStandby(value: Standby): Self = StObject.set(x, "standby", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStandbyUndefined: Self = StObject.set(x, "standby", js.undefined)
+        inline def setStandbyUndefined: Self = StObject.set(x, "standby", js.undefined)
       }
     }
   }

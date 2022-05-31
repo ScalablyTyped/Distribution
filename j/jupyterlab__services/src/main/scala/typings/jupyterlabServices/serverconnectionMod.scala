@@ -9,23 +9,34 @@ import typings.std.Response
 import typings.std.TypeError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serverconnectionMod {
   
   object ServerConnection {
     
+    @JSImport("@jupyterlab/services/lib/serverconnection", "ServerConnection")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * A wrapped error for a network error.
       */
     @JSImport("@jupyterlab/services/lib/serverconnection", "ServerConnection.NetworkError")
     @js.native
-    class NetworkError protected () extends Error {
+    class NetworkError protected ()
+      extends StObject
+         with Error {
       /**
         * Create a new network error.
         */
       def this(original: TypeError) = this()
+      
+      /* CompleteClass */
+      var message: String = js.native
+      
+      /* CompleteClass */
+      var name: String = js.native
     }
     
     /**
@@ -33,14 +44,22 @@ object serverconnectionMod {
       */
     @JSImport("@jupyterlab/services/lib/serverconnection", "ServerConnection.ResponseError")
     @js.native
-    class ResponseError protected () extends Error {
+    class ResponseError protected ()
+      extends StObject
+         with Error {
       /**
         * Create a new response error.
         */
       def this(response: Response) = this()
       def this(response: Response, message: String) = this()
-      def this(response: Response, message: js.UndefOr[scala.Nothing], traceback: String) = this()
       def this(response: Response, message: String, traceback: String) = this()
+      def this(response: Response, message: Unit, traceback: String) = this()
+      
+      /* CompleteClass */
+      var message: String = js.native
+      
+      /* CompleteClass */
+      var name: String = js.native
       
       /**
         * The response associated with the error.
@@ -54,6 +73,10 @@ object serverconnectionMod {
     }
     object ResponseError {
       
+      @JSImport("@jupyterlab/services/lib/serverconnection", "ServerConnection.ResponseError")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Create a ResponseError from a response, handling the traceback and message
         * as appropriate.
@@ -63,9 +86,7 @@ object serverconnectionMod {
         * @returns A promise that resolves with a `ResponseError` object.
         */
       /* static member */
-      @JSImport("@jupyterlab/services/lib/serverconnection", "ServerConnection.ResponseError.create")
-      @js.native
-      def create(response: Response): js.Promise[ResponseError] = js.native
+      inline def create(response: Response): js.Promise[ResponseError] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(response.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResponseError]]
     }
     
     /**
@@ -88,9 +109,7 @@ object serverconnectionMod {
       * If there is no body data, we set the content type to `application/json`
       * because it is required by the Notebook server.
       */
-    @JSImport("@jupyterlab/services/lib/serverconnection", "ServerConnection.makeRequest")
-    @js.native
-    def makeRequest(url: String, init: RequestInit, settings: ISettings): js.Promise[Response] = js.native
+    inline def makeRequest(url: String, init: RequestInit, settings: ISettings): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRequest")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
     
     /**
       * Create a settings object given a subset of options.
@@ -99,12 +118,8 @@ object serverconnectionMod {
       *
       * @returns The full settings object.
       */
-    @JSImport("@jupyterlab/services/lib/serverconnection", "ServerConnection.makeSettings")
-    @js.native
-    def makeSettings(): ISettings = js.native
-    @JSImport("@jupyterlab/services/lib/serverconnection", "ServerConnection.makeSettings")
-    @js.native
-    def makeSettings(options: PartialISettings): ISettings = js.native
+    inline def makeSettings(): ISettings = ^.asInstanceOf[js.Dynamic].applyDynamic("makeSettings")().asInstanceOf[ISettings]
+    inline def makeSettings(options: PartialISettings): ISettings = ^.asInstanceOf[js.Dynamic].applyDynamic("makeSettings")(options.asInstanceOf[js.Any]).asInstanceOf[ISettings]
     
     /**
       * A Jupyter server settings object.

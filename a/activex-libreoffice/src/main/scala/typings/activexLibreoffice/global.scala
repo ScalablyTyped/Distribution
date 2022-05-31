@@ -25,7 +25,4 @@ object global {
     /* private */ /* CompleteClass */
     var typekey: typings.activexLibreoffice.`type` = js.native
   }
-  
-  /** Helper types which are not part of the UNO API */
-  object LibreOffice
 }

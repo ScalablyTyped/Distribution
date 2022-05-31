@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "datadog-statsd-metrics-collector"
-version := "1.1-dt-20200408Z-d90064"
+version := "1.1-dt-20200408Z-2c9b15"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-e00132",
-  "org.scalablytyped" %%% "node-dogstatsd" % "0.0-unknown-dt-20201002Z-eb1b4f",
-  "org.scalablytyped" %%% "std" % "4.1-2f6855")
+  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-11c649",
+  "org.scalablytyped" %%% "node-dogstatsd" % "0.0-unknown-dt-20201002Z-c3471c",
+  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

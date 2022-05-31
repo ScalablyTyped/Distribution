@@ -2,7 +2,6 @@ package typings.babylonjs.legacyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "BabylonFileLoaderConfiguration")
@@ -24,6 +23,5 @@ object BabylonFileLoaderConfiguration {
   @JSImport("babylonjs/Legacy/legacy", "BabylonFileLoaderConfiguration.LoaderInjectedPhysicsEngine")
   @js.native
   def LoaderInjectedPhysicsEngine: js.Any = js.native
-  @scala.inline
-  def LoaderInjectedPhysicsEngine_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LoaderInjectedPhysicsEngine")(x.asInstanceOf[js.Any])
+  inline def LoaderInjectedPhysicsEngine_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LoaderInjectedPhysicsEngine")(x.asInstanceOf[js.Any])
 }

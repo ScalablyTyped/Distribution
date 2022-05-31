@@ -40,48 +40,47 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ojLedGaugeEventMap extends dvtBaseComponentEventMap[ojLedGaugeSettableProperties] {
+trait ojLedGaugeEventMap
+  extends StObject
+     with dvtBaseComponentEventMap[ojLedGaugeSettableProperties] {
   
-  var borderColorChanged: JetElementCustomEvent[String] = js.native
+  var borderColorChanged: JetElementCustomEvent[String]
   
-  var colorChanged: JetElementCustomEvent[String] = js.native
+  var colorChanged: JetElementCustomEvent[String]
   
-  var labelChanged: JetElementCustomEvent[Text] = js.native
+  var labelChanged: JetElementCustomEvent[Text]
   
-  var maxChanged: JetElementCustomEvent[Double] = js.native
+  var maxChanged: JetElementCustomEvent[Double]
   
-  var metricLabelChanged: JetElementCustomEvent[TextType] = js.native
+  var metricLabelChanged: JetElementCustomEvent[TextType]
   
-  var minChanged: JetElementCustomEvent[Double] = js.native
+  var minChanged: JetElementCustomEvent[Double]
   
-  var rotationChanged: JetElementCustomEvent[`90` | `180` | `270` | `0`] = js.native
+  var rotationChanged: JetElementCustomEvent[`90` | `180` | `270` | `0`]
   
-  var sizeChanged: JetElementCustomEvent[Double] = js.native
+  var sizeChanged: JetElementCustomEvent[Double]
   
-  var svgClassNameChanged: JetElementCustomEvent[String] = js.native
+  var svgClassNameChanged: JetElementCustomEvent[String]
   
   var svgStyleChanged: JetElementCustomEvent[
     /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgauge.ojLedGauge['svgStyle'] */ js.Any
-  ] = js.native
+  ]
   
-  var thresholdsChanged: JetElementCustomEvent[js.Array[Threshold]] = js.native
+  var thresholdsChanged: JetElementCustomEvent[js.Array[Threshold]]
   
-  var tooltipChanged: JetElementCustomEvent[`10`] = js.native
+  var tooltipChanged: JetElementCustomEvent[`10`]
   
-  var typeChanged: JetElementCustomEvent[arrow | diamond | square | rectangle | triangle | star | human | circle] = js.native
+  var typeChanged: JetElementCustomEvent[arrow | diamond | square | rectangle | triangle | star | human | circle]
   
-  var valueChanged: JetElementCustomEvent[Double | Null] = js.native
+  var valueChanged: JetElementCustomEvent[Double | Null]
   
-  var visualEffectsChanged: JetElementCustomEvent[none | auto] = js.native
+  var visualEffectsChanged: JetElementCustomEvent[none | auto]
 }
 object ojLedGaugeEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,
@@ -198,58 +197,42 @@ object ojLedGaugeEventMap {
     __obj.asInstanceOf[ojLedGaugeEventMap]
   }
   
-  @scala.inline
-  implicit class ojLedGaugeEventMapMutableBuilder[Self <: ojLedGaugeEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: ojLedGaugeEventMap](x: Self) {
     
-    @scala.inline
-    def setBorderColorChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "borderColorChanged", value.asInstanceOf[js.Any])
+    inline def setBorderColorChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "borderColorChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "colorChanged", value.asInstanceOf[js.Any])
+    inline def setColorChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "colorChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelChanged(value: JetElementCustomEvent[Text]): Self = StObject.set(x, "labelChanged", value.asInstanceOf[js.Any])
+    inline def setLabelChanged(value: JetElementCustomEvent[Text]): Self = StObject.set(x, "labelChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "maxChanged", value.asInstanceOf[js.Any])
+    inline def setMaxChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "maxChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricLabelChanged(value: JetElementCustomEvent[TextType]): Self = StObject.set(x, "metricLabelChanged", value.asInstanceOf[js.Any])
+    inline def setMetricLabelChanged(value: JetElementCustomEvent[TextType]): Self = StObject.set(x, "metricLabelChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "minChanged", value.asInstanceOf[js.Any])
+    inline def setMinChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "minChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationChanged(value: JetElementCustomEvent[`90` | `180` | `270` | `0`]): Self = StObject.set(x, "rotationChanged", value.asInstanceOf[js.Any])
+    inline def setRotationChanged(value: JetElementCustomEvent[`90` | `180` | `270` | `0`]): Self = StObject.set(x, "rotationChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "sizeChanged", value.asInstanceOf[js.Any])
+    inline def setSizeChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "sizeChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgClassNameChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "svgClassNameChanged", value.asInstanceOf[js.Any])
+    inline def setSvgClassNameChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "svgClassNameChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgStyleChanged(
+    inline def setSvgStyleChanged(
       value: JetElementCustomEvent[
           /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgauge.ojLedGauge['svgStyle'] */ js.Any
         ]
     ): Self = StObject.set(x, "svgStyleChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdsChanged(value: JetElementCustomEvent[js.Array[Threshold]]): Self = StObject.set(x, "thresholdsChanged", value.asInstanceOf[js.Any])
+    inline def setThresholdsChanged(value: JetElementCustomEvent[js.Array[Threshold]]): Self = StObject.set(x, "thresholdsChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipChanged(value: JetElementCustomEvent[`10`]): Self = StObject.set(x, "tooltipChanged", value.asInstanceOf[js.Any])
+    inline def setTooltipChanged(value: JetElementCustomEvent[`10`]): Self = StObject.set(x, "tooltipChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeChanged(
+    inline def setTypeChanged(
       value: JetElementCustomEvent[arrow | diamond | square | rectangle | triangle | star | human | circle]
     ): Self = StObject.set(x, "typeChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueChanged(value: JetElementCustomEvent[Double | Null]): Self = StObject.set(x, "valueChanged", value.asInstanceOf[js.Any])
+    inline def setValueChanged(value: JetElementCustomEvent[Double | Null]): Self = StObject.set(x, "valueChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisualEffectsChanged(value: JetElementCustomEvent[none | auto]): Self = StObject.set(x, "visualEffectsChanged", value.asInstanceOf[js.Any])
+    inline def setVisualEffectsChanged(value: JetElementCustomEvent[none | auto]): Self = StObject.set(x, "visualEffectsChanged", value.asInstanceOf[js.Any])
   }
 }

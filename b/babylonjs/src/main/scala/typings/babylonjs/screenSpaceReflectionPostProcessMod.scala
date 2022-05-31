@@ -8,7 +8,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object screenSpaceReflectionPostProcessMod {
@@ -42,19 +41,19 @@ object screenSpaceReflectionPostProcessMod {
       forceGeometryBuffer: js.UndefOr[Boolean]
     ) = this()
     
-    var _enableSmoothReflections: js.Any = js.native
+    /* private */ var _enableSmoothReflections: js.Any = js.native
     
-    var _forceGeometryBuffer: js.Any = js.native
+    /* private */ var _forceGeometryBuffer: js.Any = js.native
     
-    var _geometryBufferRenderer: js.Any = js.native
+    /* private */ var _geometryBufferRenderer: js.Any = js.native
     
-    var _prePassRenderer: js.Any = js.native
+    /* private */ var _prePassRenderer: js.Any = js.native
     
-    var _reflectionSamples: js.Any = js.native
+    /* private */ var _reflectionSamples: js.Any = js.native
     
-    var _smoothSteps: js.Any = js.native
+    /* private */ var _smoothSteps: js.Any = js.native
     
-    var _updateEffectDefines: js.Any = js.native
+    /* private */ var _updateEffectDefines: js.Any = js.native
     
     /**
       * Gets wether or not smoothing reflections is enabled.
@@ -114,9 +113,11 @@ object screenSpaceReflectionPostProcessMod {
   /* static members */
   object ScreenSpaceReflectionPostProcess {
     
-    /** @hidden */
-    @JSImport("babylonjs/PostProcesses/screenSpaceReflectionPostProcess", "ScreenSpaceReflectionPostProcess._Parse")
+    @JSImport("babylonjs/PostProcesses/screenSpaceReflectionPostProcess", "ScreenSpaceReflectionPostProcess")
     @js.native
-    def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): ScreenSpaceReflectionPostProcess = js.native
+    val ^ : js.Any = js.native
+    
+    /** @hidden */
+    inline def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): ScreenSpaceReflectionPostProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[ScreenSpaceReflectionPostProcess]
   }
 }

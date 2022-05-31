@@ -2,7 +2,6 @@ package typings.babylonjs.indexMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "LensFlare")
@@ -37,6 +36,10 @@ class LensFlare protected ()
 /* static members */
 object LensFlare {
   
+  @JSImport("babylonjs/index", "LensFlare")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new Lens Flare.
     * This represents one of the lens effect in a `lensFlareSystem`.
@@ -49,13 +52,11 @@ object LensFlare {
     * @param system Define the `lensFlareSystem` this flare is part of
     * @returns The newly created Lens Flare
     */
-  @JSImport("babylonjs/index", "LensFlare.AddFlare")
-  @js.native
-  def AddFlare(
+  inline def AddFlare(
     size: Double,
     position: Double,
     color: typings.babylonjs.mathColorMod.Color3,
     imgUrl: String,
     system: typings.babylonjs.lensFlareSystemMod.LensFlareSystem
-  ): typings.babylonjs.lensFlareMod.LensFlare = js.native
+  ): typings.babylonjs.lensFlareMod.LensFlare = (^.asInstanceOf[js.Dynamic].applyDynamic("AddFlare")(size.asInstanceOf[js.Any], position.asInstanceOf[js.Any], color.asInstanceOf[js.Any], imgUrl.asInstanceOf[js.Any], system.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.lensFlareMod.LensFlare]
 }

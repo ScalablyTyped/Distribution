@@ -4,7 +4,6 @@ import typings.babylonjs.typesMod.DeepImmutable
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Maths/math", "Quaternion")
@@ -19,28 +18,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Quaternion ()
   extends typings.babylonjs.mathVectorMod.Quaternion {
   def this(x: Double) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
   def this(x: Double, y: Double) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double) = this()
-  def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double) = this()
+  def this(x: Unit, y: Double) = this()
   def this(x: Double, y: Double, z: Double) = this()
-  def this(
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    z: js.UndefOr[scala.Nothing],
-    w: Double
-  ) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double, w: Double) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: Double, z: js.UndefOr[scala.Nothing], w: Double) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double, w: Double) = this()
-  def this(x: Double, y: js.UndefOr[scala.Nothing], z: js.UndefOr[scala.Nothing], w: Double) = this()
-  def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double, w: Double) = this()
-  def this(x: Double, y: Double, z: js.UndefOr[scala.Nothing], w: Double) = this()
+  def this(x: Double, y: Unit, z: Double) = this()
+  def this(x: Unit, y: Double, z: Double) = this()
+  def this(x: Unit, y: Unit, z: Double) = this()
   def this(x: Double, y: Double, z: Double, w: Double) = this()
+  def this(x: Double, y: Double, z: Unit, w: Double) = this()
+  def this(x: Double, y: Unit, z: Double, w: Double) = this()
+  def this(x: Double, y: Unit, z: Unit, w: Double) = this()
+  def this(x: Unit, y: Double, z: Double, w: Double) = this()
+  def this(x: Unit, y: Double, z: Unit, w: Double) = this()
+  def this(x: Unit, y: Unit, z: Double, w: Double) = this()
+  def this(x: Unit, y: Unit, z: Unit, w: Double) = this()
 }
 /* static members */
 object Quaternion {
+  
+  @JSImport("babylonjs/Maths/math", "Quaternion")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Checks if the two quaternions are close to each other
@@ -48,12 +46,10 @@ object Quaternion {
     * @param quat1 defines the second quaternion to check
     * @returns true if the two quaternions are close to each other
     */
-  @JSImport("babylonjs/Maths/math", "Quaternion.AreClose")
-  @js.native
-  def AreClose(
+  inline def AreClose(
     quat0: DeepImmutable[typings.babylonjs.mathVectorMod.Quaternion],
     quat1: DeepImmutable[typings.babylonjs.mathVectorMod.Quaternion]
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("AreClose")(quat0.asInstanceOf[js.Any], quat1.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Returns the dot product (float) between the quaternions "left" and "right"
@@ -61,12 +57,10 @@ object Quaternion {
     * @param right defines the right operand
     * @returns the dot product
     */
-  @JSImport("babylonjs/Maths/math", "Quaternion.Dot")
-  @js.native
-  def Dot(
+  inline def Dot(
     left: DeepImmutable[typings.babylonjs.mathVectorMod.Quaternion],
     right: DeepImmutable[typings.babylonjs.mathVectorMod.Quaternion]
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Dot")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Creates a new quaternion from data stored into an array
@@ -74,12 +68,8 @@ object Quaternion {
     * @param offset defines the offset in the source array where the data starts
     * @returns a new quaternion
     */
-  @JSImport("babylonjs/Maths/math", "Quaternion.FromArray")
-  @js.native
-  def FromArray(array: DeepImmutable[ArrayLike[Double]]): typings.babylonjs.mathVectorMod.Quaternion = js.native
-  @JSImport("babylonjs/Maths/math", "Quaternion.FromArray")
-  @js.native
-  def FromArray(array: DeepImmutable[ArrayLike[Double]], offset: Double): typings.babylonjs.mathVectorMod.Quaternion = js.native
+  inline def FromArray(array: DeepImmutable[ArrayLike[Double]]): typings.babylonjs.mathVectorMod.Quaternion = ^.asInstanceOf[js.Dynamic].applyDynamic("FromArray")(array.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathVectorMod.Quaternion]
+  inline def FromArray(array: DeepImmutable[ArrayLike[Double]], offset: Double): typings.babylonjs.mathVectorMod.Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("FromArray")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Quaternion]
   
   /**
     * Updates the given quaternion "result" from the starting index of the given array.
@@ -87,13 +77,11 @@ object Quaternion {
     * @param offset the offset into the array to start at
     * @param result the quaternion to store the result in
     */
-  @JSImport("babylonjs/Maths/math", "Quaternion.FromArrayToRef")
-  @js.native
-  def FromArrayToRef(
+  inline def FromArrayToRef(
     array: DeepImmutable[ArrayLike[Double]],
     offset: Double,
     result: typings.babylonjs.mathVectorMod.Quaternion
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromArrayToRef")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Create a quaternion from Euler rotation angles
@@ -102,9 +90,7 @@ object Quaternion {
     * @param z Roll
     * @returns the new Quaternion
     */
-  @JSImport("babylonjs/Maths/math", "Quaternion.FromEulerAngles")
-  @js.native
-  def FromEulerAngles(x: Double, y: Double, z: Double): typings.babylonjs.mathVectorMod.Quaternion = js.native
+  inline def FromEulerAngles(x: Double, y: Double, z: Double): typings.babylonjs.mathVectorMod.Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("FromEulerAngles")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Quaternion]
   
   /**
     * Updates a quaternion from Euler rotation angles
@@ -114,18 +100,14 @@ object Quaternion {
     * @param result the quaternion to store the result
     * @returns the updated quaternion
     */
-  @JSImport("babylonjs/Maths/math", "Quaternion.FromEulerAnglesToRef")
-  @js.native
-  def FromEulerAnglesToRef(x: Double, y: Double, z: Double, result: typings.babylonjs.mathVectorMod.Quaternion): typings.babylonjs.mathVectorMod.Quaternion = js.native
+  inline def FromEulerAnglesToRef(x: Double, y: Double, z: Double, result: typings.babylonjs.mathVectorMod.Quaternion): typings.babylonjs.mathVectorMod.Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("FromEulerAnglesToRef")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Quaternion]
   
   /**
     * Create a quaternion from Euler rotation vector
     * @param vec the Euler vector (x Pitch, y Yaw, z Roll)
     * @returns the new Quaternion
     */
-  @JSImport("babylonjs/Maths/math", "Quaternion.FromEulerVector")
-  @js.native
-  def FromEulerVector(vec: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3]): typings.babylonjs.mathVectorMod.Quaternion = js.native
+  inline def FromEulerVector(vec: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3]): typings.babylonjs.mathVectorMod.Quaternion = ^.asInstanceOf[js.Dynamic].applyDynamic("FromEulerVector")(vec.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathVectorMod.Quaternion]
   
   /**
     * Updates a quaternion from Euler rotation vector
@@ -133,33 +115,27 @@ object Quaternion {
     * @param result the quaternion to store the result
     * @returns the updated quaternion
     */
-  @JSImport("babylonjs/Maths/math", "Quaternion.FromEulerVectorToRef")
-  @js.native
-  def FromEulerVectorToRef(
+  inline def FromEulerVectorToRef(
     vec: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     result: typings.babylonjs.mathVectorMod.Quaternion
-  ): typings.babylonjs.mathVectorMod.Quaternion = js.native
+  ): typings.babylonjs.mathVectorMod.Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("FromEulerVectorToRef")(vec.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Quaternion]
   
   /**
     * Creates a new quaternion from a rotation matrix
     * @param matrix defines the source matrix
     * @returns a new quaternion created from the given rotation matrix values
     */
-  @JSImport("babylonjs/Maths/math", "Quaternion.FromRotationMatrix")
-  @js.native
-  def FromRotationMatrix(matrix: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]): typings.babylonjs.mathVectorMod.Quaternion = js.native
+  inline def FromRotationMatrix(matrix: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]): typings.babylonjs.mathVectorMod.Quaternion = ^.asInstanceOf[js.Dynamic].applyDynamic("FromRotationMatrix")(matrix.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathVectorMod.Quaternion]
   
   /**
     * Updates the given quaternion with the given rotation matrix values
     * @param matrix defines the source matrix
     * @param result defines the target quaternion
     */
-  @JSImport("babylonjs/Maths/math", "Quaternion.FromRotationMatrixToRef")
-  @js.native
-  def FromRotationMatrixToRef(
+  inline def FromRotationMatrixToRef(
     matrix: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
     result: typings.babylonjs.mathVectorMod.Quaternion
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromRotationMatrixToRef")(matrix.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Interpolate between two quaternions using Hermite interpolation
@@ -170,32 +146,26 @@ object Quaternion {
     * @param amount defines the target quaternion
     * @returns the new interpolated quaternion
     */
-  @JSImport("babylonjs/Maths/math", "Quaternion.Hermite")
-  @js.native
-  def Hermite(
+  inline def Hermite(
     value1: DeepImmutable[typings.babylonjs.mathVectorMod.Quaternion],
     tangent1: DeepImmutable[typings.babylonjs.mathVectorMod.Quaternion],
     value2: DeepImmutable[typings.babylonjs.mathVectorMod.Quaternion],
     tangent2: DeepImmutable[typings.babylonjs.mathVectorMod.Quaternion],
     amount: Double
-  ): typings.babylonjs.mathVectorMod.Quaternion = js.native
+  ): typings.babylonjs.mathVectorMod.Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Quaternion]
   
   /**
     * Creates an identity quaternion
     * @returns the identity quaternion
     */
-  @JSImport("babylonjs/Maths/math", "Quaternion.Identity")
-  @js.native
-  def Identity(): typings.babylonjs.mathVectorMod.Quaternion = js.native
+  inline def Identity(): typings.babylonjs.mathVectorMod.Quaternion = ^.asInstanceOf[js.Dynamic].applyDynamic("Identity")().asInstanceOf[typings.babylonjs.mathVectorMod.Quaternion]
   
   /**
     * Inverse a given quaternion
     * @param q defines the source quaternion
     * @returns a new quaternion as the inverted current quaternion
     */
-  @JSImport("babylonjs/Maths/math", "Quaternion.Inverse")
-  @js.native
-  def Inverse(q: DeepImmutable[typings.babylonjs.mathVectorMod.Quaternion]): typings.babylonjs.mathVectorMod.Quaternion = js.native
+  inline def Inverse(q: DeepImmutable[typings.babylonjs.mathVectorMod.Quaternion]): typings.babylonjs.mathVectorMod.Quaternion = ^.asInstanceOf[js.Dynamic].applyDynamic("Inverse")(q.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathVectorMod.Quaternion]
   
   /**
     * Inverse a given quaternion
@@ -203,18 +173,14 @@ object Quaternion {
     * @param result the quaternion the result will be stored in
     * @returns the result quaternion
     */
-  @JSImport("babylonjs/Maths/math", "Quaternion.InverseToRef")
-  @js.native
-  def InverseToRef(q: typings.babylonjs.mathVectorMod.Quaternion, result: typings.babylonjs.mathVectorMod.Quaternion): typings.babylonjs.mathVectorMod.Quaternion = js.native
+  inline def InverseToRef(q: typings.babylonjs.mathVectorMod.Quaternion, result: typings.babylonjs.mathVectorMod.Quaternion): typings.babylonjs.mathVectorMod.Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("InverseToRef")(q.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Quaternion]
   
   /**
     * Gets a boolean indicating if the given quaternion is identity
     * @param quaternion defines the quaternion to check
     * @returns true if the quaternion is identity
     */
-  @JSImport("babylonjs/Maths/math", "Quaternion.IsIdentity")
-  @js.native
-  def IsIdentity(quaternion: DeepImmutable[typings.babylonjs.mathVectorMod.Quaternion]): Boolean = js.native
+  inline def IsIdentity(quaternion: DeepImmutable[typings.babylonjs.mathVectorMod.Quaternion]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsIdentity")(quaternion.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Creates a new quaternion from the given Euler float angles expressed in z-x-z orientation
@@ -223,9 +189,7 @@ object Quaternion {
     * @param gamma defines the rotation around third axis
     * @returns the new quaternion
     */
-  @JSImport("babylonjs/Maths/math", "Quaternion.RotationAlphaBetaGamma")
-  @js.native
-  def RotationAlphaBetaGamma(alpha: Double, beta: Double, gamma: Double): typings.babylonjs.mathVectorMod.Quaternion = js.native
+  inline def RotationAlphaBetaGamma(alpha: Double, beta: Double, gamma: Double): typings.babylonjs.mathVectorMod.Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationAlphaBetaGamma")(alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], gamma.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Quaternion]
   
   /**
     * Creates a new quaternion from the given Euler float angles expressed in z-x-z orientation and stores it in the target quaternion
@@ -234,9 +198,7 @@ object Quaternion {
     * @param gamma defines the rotation around third axis
     * @param result defines the target quaternion
     */
-  @JSImport("babylonjs/Maths/math", "Quaternion.RotationAlphaBetaGammaToRef")
-  @js.native
-  def RotationAlphaBetaGammaToRef(alpha: Double, beta: Double, gamma: Double, result: typings.babylonjs.mathVectorMod.Quaternion): Unit = js.native
+  inline def RotationAlphaBetaGammaToRef(alpha: Double, beta: Double, gamma: Double, result: typings.babylonjs.mathVectorMod.Quaternion): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationAlphaBetaGammaToRef")(alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], gamma.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates a quaternion from a rotation around an axis
@@ -244,9 +206,7 @@ object Quaternion {
     * @param angle defines the angle to use
     * @returns a new quaternion created from the given axis (Vector3) and angle in radians (float)
     */
-  @JSImport("babylonjs/Maths/math", "Quaternion.RotationAxis")
-  @js.native
-  def RotationAxis(axis: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3], angle: Double): typings.babylonjs.mathVectorMod.Quaternion = js.native
+  inline def RotationAxis(axis: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3], angle: Double): typings.babylonjs.mathVectorMod.Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationAxis")(axis.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Quaternion]
   
   /**
     * Creates a rotation around an axis and stores it into the given quaternion
@@ -255,13 +215,11 @@ object Quaternion {
     * @param result defines the target quaternion
     * @returns the target quaternion
     */
-  @JSImport("babylonjs/Maths/math", "Quaternion.RotationAxisToRef")
-  @js.native
-  def RotationAxisToRef(
+  inline def RotationAxisToRef(
     axis: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     angle: Double,
     result: typings.babylonjs.mathVectorMod.Quaternion
-  ): typings.babylonjs.mathVectorMod.Quaternion = js.native
+  ): typings.babylonjs.mathVectorMod.Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationAxisToRef")(axis.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Quaternion]
   
   /**
     * Creates a new quaternion containing the rotation value to reach the target (axis1, axis2, axis3) orientation as a rotated XYZ system (axis1, axis2 and axis3 are normalized during this operation)
@@ -270,13 +228,11 @@ object Quaternion {
     * @param axis3 defines the third axis
     * @returns the new quaternion
     */
-  @JSImport("babylonjs/Maths/math", "Quaternion.RotationQuaternionFromAxis")
-  @js.native
-  def RotationQuaternionFromAxis(
+  inline def RotationQuaternionFromAxis(
     axis1: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     axis2: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     axis3: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3]
-  ): typings.babylonjs.mathVectorMod.Quaternion = js.native
+  ): typings.babylonjs.mathVectorMod.Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationQuaternionFromAxis")(axis1.asInstanceOf[js.Any], axis2.asInstanceOf[js.Any], axis3.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Quaternion]
   
   /**
     * Creates a rotation value to reach the target (axis1, axis2, axis3) orientation as a rotated XYZ system (axis1, axis2 and axis3 are normalized during this operation) and stores it in the target quaternion
@@ -285,14 +241,12 @@ object Quaternion {
     * @param axis3 defines the third axis
     * @param ref defines the target quaternion
     */
-  @JSImport("babylonjs/Maths/math", "Quaternion.RotationQuaternionFromAxisToRef")
-  @js.native
-  def RotationQuaternionFromAxisToRef(
+  inline def RotationQuaternionFromAxisToRef(
     axis1: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     axis2: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     axis3: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     ref: typings.babylonjs.mathVectorMod.Quaternion
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationQuaternionFromAxisToRef")(axis1.asInstanceOf[js.Any], axis2.asInstanceOf[js.Any], axis3.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates a new quaternion from the given Euler float angles (y, x, z)
@@ -301,9 +255,7 @@ object Quaternion {
     * @param roll defines the rotation around Z axis
     * @returns the new quaternion
     */
-  @JSImport("babylonjs/Maths/math", "Quaternion.RotationYawPitchRoll")
-  @js.native
-  def RotationYawPitchRoll(yaw: Double, pitch: Double, roll: Double): typings.babylonjs.mathVectorMod.Quaternion = js.native
+  inline def RotationYawPitchRoll(yaw: Double, pitch: Double, roll: Double): typings.babylonjs.mathVectorMod.Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationYawPitchRoll")(yaw.asInstanceOf[js.Any], pitch.asInstanceOf[js.Any], roll.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Quaternion]
   
   /**
     * Creates a new rotation from the given Euler float angles (y, x, z) and stores it in the target quaternion
@@ -312,9 +264,7 @@ object Quaternion {
     * @param roll defines the rotation around Z axis
     * @param result defines the target quaternion
     */
-  @JSImport("babylonjs/Maths/math", "Quaternion.RotationYawPitchRollToRef")
-  @js.native
-  def RotationYawPitchRollToRef(yaw: Double, pitch: Double, roll: Double, result: typings.babylonjs.mathVectorMod.Quaternion): Unit = js.native
+  inline def RotationYawPitchRollToRef(yaw: Double, pitch: Double, roll: Double, result: typings.babylonjs.mathVectorMod.Quaternion): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationYawPitchRollToRef")(yaw.asInstanceOf[js.Any], pitch.asInstanceOf[js.Any], roll.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Interpolates between two quaternions
@@ -323,13 +273,11 @@ object Quaternion {
     * @param amount defines the gradient to use
     * @returns the new interpolated quaternion
     */
-  @JSImport("babylonjs/Maths/math", "Quaternion.Slerp")
-  @js.native
-  def Slerp(
+  inline def Slerp(
     left: DeepImmutable[typings.babylonjs.mathVectorMod.Quaternion],
     right: DeepImmutable[typings.babylonjs.mathVectorMod.Quaternion],
     amount: Double
-  ): typings.babylonjs.mathVectorMod.Quaternion = js.native
+  ): typings.babylonjs.mathVectorMod.Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("Slerp")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Quaternion]
   
   /**
     * Interpolates between two quaternions and stores it into a target quaternion
@@ -338,20 +286,16 @@ object Quaternion {
     * @param amount defines the gradient to use
     * @param result defines the target quaternion
     */
-  @JSImport("babylonjs/Maths/math", "Quaternion.SlerpToRef")
-  @js.native
-  def SlerpToRef(
+  inline def SlerpToRef(
     left: DeepImmutable[typings.babylonjs.mathVectorMod.Quaternion],
     right: DeepImmutable[typings.babylonjs.mathVectorMod.Quaternion],
     amount: Double,
     result: typings.babylonjs.mathVectorMod.Quaternion
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SlerpToRef")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], amount.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates an empty quaternion
     * @returns a new quaternion set to (0.0, 0.0, 0.0)
     */
-  @JSImport("babylonjs/Maths/math", "Quaternion.Zero")
-  @js.native
-  def Zero(): typings.babylonjs.mathVectorMod.Quaternion = js.native
+  inline def Zero(): typings.babylonjs.mathVectorMod.Quaternion = ^.asInstanceOf[js.Dynamic].applyDynamic("Zero")().asInstanceOf[typings.babylonjs.mathVectorMod.Quaternion]
 }

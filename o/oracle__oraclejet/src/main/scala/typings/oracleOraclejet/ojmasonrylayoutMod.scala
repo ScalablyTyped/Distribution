@@ -46,13 +46,14 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ojmasonrylayoutMod {
   
   @js.native
-  trait ojMasonryLayout extends baseComponent[ojMasonryLayoutSettableProperties] {
+  trait ojMasonryLayout
+    extends StObject
+       with baseComponent[ojMasonryLayoutSettableProperties] {
     
     @JSName("addEventListener")
     def addEventListener_ojAnimateEnd(
@@ -60,7 +61,7 @@ object ojmasonrylayoutMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojAnimateEnd, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -69,7 +70,7 @@ object ojmasonrylayoutMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojAnimateEnd, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -79,7 +80,7 @@ object ojmasonrylayoutMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojAnimateStart, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -88,7 +89,7 @@ object ojmasonrylayoutMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojAnimateStart, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -98,7 +99,7 @@ object ojmasonrylayoutMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeInsert, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -107,7 +108,7 @@ object ojmasonrylayoutMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeInsert, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -117,7 +118,7 @@ object ojmasonrylayoutMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeRemove, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -126,7 +127,7 @@ object ojmasonrylayoutMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeRemove, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -136,7 +137,7 @@ object ojmasonrylayoutMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeReorder, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -145,7 +146,7 @@ object ojmasonrylayoutMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeReorder, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -155,7 +156,7 @@ object ojmasonrylayoutMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeResize, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -164,7 +165,7 @@ object ojmasonrylayoutMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeResize, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -174,7 +175,7 @@ object ojmasonrylayoutMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojInsert, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -183,7 +184,7 @@ object ojmasonrylayoutMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojInsert, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -193,7 +194,7 @@ object ojmasonrylayoutMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojRemove, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -202,7 +203,7 @@ object ojmasonrylayoutMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojRemove, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -212,7 +213,7 @@ object ojmasonrylayoutMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojReorder, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -221,7 +222,7 @@ object ojmasonrylayoutMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojReorder, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -231,7 +232,7 @@ object ojmasonrylayoutMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojResize, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -240,19 +241,19 @@ object ojmasonrylayoutMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojResize, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_reorderHandleChanged(
       `type`: reorderHandleChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_reorderHandleChanged(
       `type`: reorderHandleChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     
@@ -263,46 +264,55 @@ object ojmasonrylayoutMod {
     
     var onOjAnimateEnd: (js.Function1[
         /* event */ typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojAnimateEnd, 
-        _
+        js.Any
       ]) | Null = js.native
     
     var onOjAnimateStart: (js.Function1[
         /* event */ typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojAnimateStart, 
-        _
+        js.Any
       ]) | Null = js.native
     
     var onOjBeforeInsert: (js.Function1[
         /* event */ typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeInsert, 
-        _
+        js.Any
       ]) | Null = js.native
     
     var onOjBeforeRemove: (js.Function1[
         /* event */ typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeRemove, 
-        _
+        js.Any
       ]) | Null = js.native
     
     var onOjBeforeReorder: (js.Function1[
         /* event */ typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeReorder, 
-        _
+        js.Any
       ]) | Null = js.native
     
     var onOjBeforeResize: (js.Function1[
         /* event */ typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeResize, 
-        _
+        js.Any
       ]) | Null = js.native
     
-    var onOjInsert: (js.Function1[/* event */ typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojInsert, _]) | Null = js.native
+    var onOjInsert: (js.Function1[
+        /* event */ typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojInsert, 
+        js.Any
+      ]) | Null = js.native
     
-    var onOjRemove: (js.Function1[/* event */ typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojRemove, _]) | Null = js.native
+    var onOjRemove: (js.Function1[
+        /* event */ typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojRemove, 
+        js.Any
+      ]) | Null = js.native
     
     var onOjReorder: (js.Function1[
         /* event */ typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojReorder, 
-        _
+        js.Any
       ]) | Null = js.native
     
-    var onOjResize: (js.Function1[/* event */ typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojResize, _]) | Null = js.native
+    var onOjResize: (js.Function1[
+        /* event */ typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojResize, 
+        js.Any
+      ]) | Null = js.native
     
-    var onReorderHandleChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
+    var onReorderHandleChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], js.Any]) | Null = js.native
     
     def removeTile(selector: String): Unit = js.native
     
@@ -345,35 +355,35 @@ object ojmasonrylayoutMod {
     type ojResize = CustomEvent[PreviousSizeStyleClass]
   }
   
-  @js.native
-  trait ojMasonryLayoutEventMap extends baseComponentEventMap[ojMasonryLayoutSettableProperties] {
+  trait ojMasonryLayoutEventMap
+    extends StObject
+       with baseComponentEventMap[ojMasonryLayoutSettableProperties] {
     
-    var ojAnimateEnd: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojAnimateEnd = js.native
+    var ojAnimateEnd: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojAnimateEnd
     
-    var ojAnimateStart: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojAnimateStart = js.native
+    var ojAnimateStart: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojAnimateStart
     
-    var ojBeforeInsert: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeInsert = js.native
+    var ojBeforeInsert: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeInsert
     
-    var ojBeforeRemove: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeRemove = js.native
+    var ojBeforeRemove: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeRemove
     
-    var ojBeforeReorder: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeReorder = js.native
+    var ojBeforeReorder: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeReorder
     
-    var ojBeforeResize: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeResize = js.native
+    var ojBeforeResize: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeResize
     
-    var ojInsert: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojInsert = js.native
+    var ojInsert: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojInsert
     
-    var ojRemove: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojRemove = js.native
+    var ojRemove: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojRemove
     
-    var ojReorder: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojReorder = js.native
+    var ojReorder: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojReorder
     
-    var ojResize: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojResize = js.native
+    var ojResize: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojResize
     
-    var reorderHandleChanged: JetElementCustomEvent[String | Null] = js.native
+    var reorderHandleChanged: JetElementCustomEvent[String | Null]
   }
   object ojMasonryLayoutEventMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: UIEvent,
       animationcancel: AnimationEvent,
       animationend: AnimationEvent,
@@ -483,108 +493,85 @@ object ojmasonrylayoutMod {
       __obj.asInstanceOf[ojMasonryLayoutEventMap]
     }
     
-    @scala.inline
-    implicit class ojMasonryLayoutEventMapMutableBuilder[Self <: ojMasonryLayoutEventMap] (val x: Self) extends AnyVal {
+    extension [Self <: ojMasonryLayoutEventMap](x: Self) {
       
-      @scala.inline
-      def setOjAnimateEnd(value: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
+      inline def setOjAnimateEnd(value: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjAnimateStart(value: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
+      inline def setOjAnimateStart(value: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjBeforeInsert(value: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeInsert): Self = StObject.set(x, "ojBeforeInsert", value.asInstanceOf[js.Any])
+      inline def setOjBeforeInsert(value: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeInsert): Self = StObject.set(x, "ojBeforeInsert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjBeforeRemove(value: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeRemove): Self = StObject.set(x, "ojBeforeRemove", value.asInstanceOf[js.Any])
+      inline def setOjBeforeRemove(value: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeRemove): Self = StObject.set(x, "ojBeforeRemove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjBeforeReorder(value: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeReorder): Self = StObject.set(x, "ojBeforeReorder", value.asInstanceOf[js.Any])
+      inline def setOjBeforeReorder(value: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeReorder): Self = StObject.set(x, "ojBeforeReorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjBeforeResize(value: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeResize): Self = StObject.set(x, "ojBeforeResize", value.asInstanceOf[js.Any])
+      inline def setOjBeforeResize(value: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeResize): Self = StObject.set(x, "ojBeforeResize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjInsert(value: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojInsert): Self = StObject.set(x, "ojInsert", value.asInstanceOf[js.Any])
+      inline def setOjInsert(value: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojInsert): Self = StObject.set(x, "ojInsert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjRemove(value: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojRemove): Self = StObject.set(x, "ojRemove", value.asInstanceOf[js.Any])
+      inline def setOjRemove(value: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojRemove): Self = StObject.set(x, "ojRemove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjReorder(value: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojReorder): Self = StObject.set(x, "ojReorder", value.asInstanceOf[js.Any])
+      inline def setOjReorder(value: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojReorder): Self = StObject.set(x, "ojReorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjResize(value: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojResize): Self = StObject.set(x, "ojResize", value.asInstanceOf[js.Any])
+      inline def setOjResize(value: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojResize): Self = StObject.set(x, "ojResize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReorderHandleChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "reorderHandleChanged", value.asInstanceOf[js.Any])
+      inline def setReorderHandleChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "reorderHandleChanged", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait ojMasonryLayoutSettableProperties extends baseComponentSettableProperties {
+  trait ojMasonryLayoutSettableProperties
+    extends StObject
+       with baseComponentSettableProperties {
     
-    var reorderHandle: String | Null = js.native
+    var reorderHandle: String | Null
     
     @JSName("translations")
-    var translations_ojMasonryLayoutSettableProperties: LabelCut = js.native
+    var translations_ojMasonryLayoutSettableProperties: LabelCut
   }
   object ojMasonryLayoutSettableProperties {
     
-    @scala.inline
-    def apply(translations: LabelCut): ojMasonryLayoutSettableProperties = {
-      val __obj = js.Dynamic.literal(translations = translations.asInstanceOf[js.Any])
+    inline def apply(translations: LabelCut): ojMasonryLayoutSettableProperties = {
+      val __obj = js.Dynamic.literal(translations = translations.asInstanceOf[js.Any], reorderHandle = null)
       __obj.asInstanceOf[ojMasonryLayoutSettableProperties]
     }
     
-    @scala.inline
-    implicit class ojMasonryLayoutSettablePropertiesMutableBuilder[Self <: ojMasonryLayoutSettableProperties] (val x: Self) extends AnyVal {
+    extension [Self <: ojMasonryLayoutSettableProperties](x: Self) {
       
-      @scala.inline
-      def setReorderHandle(value: String): Self = StObject.set(x, "reorderHandle", value.asInstanceOf[js.Any])
+      inline def setReorderHandle(value: String): Self = StObject.set(x, "reorderHandle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReorderHandleNull: Self = StObject.set(x, "reorderHandle", null)
+      inline def setReorderHandleNull: Self = StObject.set(x, "reorderHandle", null)
       
-      @scala.inline
-      def setTranslations(value: LabelCut): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: LabelCut): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojmasonrylayout.ojMasonryLayoutSettableProperties> */
-  @js.native
   trait ojMasonryLayoutSettablePropertiesLenient
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var reorderHandle: js.UndefOr[String | Null] = js.native
+    var reorderHandle: js.UndefOr[String | Null] = js.undefined
     
-    var translations: js.UndefOr[LabelCut] = js.native
+    var translations: js.UndefOr[LabelCut] = js.undefined
   }
   object ojMasonryLayoutSettablePropertiesLenient {
     
-    @scala.inline
-    def apply(): ojMasonryLayoutSettablePropertiesLenient = {
+    inline def apply(): ojMasonryLayoutSettablePropertiesLenient = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ojMasonryLayoutSettablePropertiesLenient]
     }
     
-    @scala.inline
-    implicit class ojMasonryLayoutSettablePropertiesLenientMutableBuilder[Self <: ojMasonryLayoutSettablePropertiesLenient] (val x: Self) extends AnyVal {
+    extension [Self <: ojMasonryLayoutSettablePropertiesLenient](x: Self) {
       
-      @scala.inline
-      def setReorderHandle(value: String): Self = StObject.set(x, "reorderHandle", value.asInstanceOf[js.Any])
+      inline def setReorderHandle(value: String): Self = StObject.set(x, "reorderHandle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReorderHandleNull: Self = StObject.set(x, "reorderHandle", null)
+      inline def setReorderHandleNull: Self = StObject.set(x, "reorderHandle", null)
       
-      @scala.inline
-      def setReorderHandleUndefined: Self = StObject.set(x, "reorderHandle", js.undefined)
+      inline def setReorderHandleUndefined: Self = StObject.set(x, "reorderHandle", js.undefined)
       
-      @scala.inline
-      def setTranslations(value: LabelCut): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: LabelCut): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+      inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
     }
   }
 }

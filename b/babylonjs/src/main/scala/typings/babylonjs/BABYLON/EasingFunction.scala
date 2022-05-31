@@ -2,35 +2,34 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EasingFunction extends IEasingFunction {
+trait EasingFunction
+  extends StObject
+     with IEasingFunction {
   
-  var _easingMode: js.Any = js.native
+  /* private */ var _easingMode: js.Any
   
   /**
     * @hidden
     */
-  def easeInCore(gradient: Double): Double = js.native
+  def easeInCore(gradient: Double): Double
   
   /**
     * Gets the current easing mode.
     * @returns the easing mode
     */
-  def getEasingMode(): Double = js.native
+  def getEasingMode(): Double
   
   /**
     * Sets the easing mode of the current function.
     * @param easingMode Defines the willing mode (EASINGMODE_EASEIN, EASINGMODE_EASEOUT or EASINGMODE_EASEINOUT)
     */
-  def setEasingMode(easingMode: Double): Unit = js.native
+  def setEasingMode(easingMode: Double): Unit
 }
 object EasingFunction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _easingMode: js.Any,
     ease: Double => Double,
     easeInCore: Double => Double,
@@ -41,19 +40,14 @@ object EasingFunction {
     __obj.asInstanceOf[EasingFunction]
   }
   
-  @scala.inline
-  implicit class EasingFunctionMutableBuilder[Self <: EasingFunction] (val x: Self) extends AnyVal {
+  extension [Self <: EasingFunction](x: Self) {
     
-    @scala.inline
-    def setEaseInCore(value: Double => Double): Self = StObject.set(x, "easeInCore", js.Any.fromFunction1(value))
+    inline def setEaseInCore(value: Double => Double): Self = StObject.set(x, "easeInCore", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetEasingMode(value: () => Double): Self = StObject.set(x, "getEasingMode", js.Any.fromFunction0(value))
+    inline def setGetEasingMode(value: () => Double): Self = StObject.set(x, "getEasingMode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetEasingMode(value: Double => Unit): Self = StObject.set(x, "setEasingMode", js.Any.fromFunction1(value))
+    inline def setSetEasingMode(value: Double => Unit): Self = StObject.set(x, "setEasingMode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_easingMode(value: js.Any): Self = StObject.set(x, "_easingMode", value.asInstanceOf[js.Any])
+    inline def set_easingMode(value: js.Any): Self = StObject.set(x, "_easingMode", value.asInstanceOf[js.Any])
   }
 }

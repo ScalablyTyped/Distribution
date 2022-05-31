@@ -3,15 +3,16 @@ package typings.babylonjs.BABYLON
 import typings.babylonjs.anon.ColorDiameterSegments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParticleSystemSet extends IDisposable {
+trait ParticleSystemSet
+  extends StObject
+     with IDisposable {
   
-  var _emitterCreationOptions: js.Any = js.native
+  /* private */ var _emitterCreationOptions: js.Any = js.native
   
-  var _emitterNode: js.Any = js.native
+  /* private */ var _emitterNode: js.Any = js.native
   
   /**
     * Gets the emitter node used with this set

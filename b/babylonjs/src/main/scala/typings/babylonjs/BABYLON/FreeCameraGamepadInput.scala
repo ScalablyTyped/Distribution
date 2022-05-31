@@ -2,25 +2,26 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FreeCameraGamepadInput extends ICameraInput[FreeCamera] {
+trait FreeCameraGamepadInput
+  extends StObject
+     with ICameraInput[FreeCamera] {
   
-  var _cameraTransform: js.Any = js.native
+  /* private */ var _cameraTransform: js.Any = js.native
   
-  var _deltaTransform: js.Any = js.native
+  /* private */ var _deltaTransform: js.Any = js.native
   
-  var _onGamepadConnectedObserver: js.Any = js.native
+  /* private */ var _onGamepadConnectedObserver: js.Any = js.native
   
-  var _onGamepadDisconnectedObserver: js.Any = js.native
+  /* private */ var _onGamepadDisconnectedObserver: js.Any = js.native
   
-  var _vector2: js.Any = js.native
+  /* private */ var _vector2: js.Any = js.native
   
-  var _vector3: js.Any = js.native
+  /* private */ var _vector3: js.Any = js.native
   
-  var _yAxisScale: js.Any = js.native
+  /* private */ var _yAxisScale: js.Any = js.native
   
   /**
     * Define the camera the input is attached to.

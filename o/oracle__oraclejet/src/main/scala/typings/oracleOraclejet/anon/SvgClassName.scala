@@ -2,53 +2,41 @@ package typings.oracleOraclejet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SvgClassName extends StObject {
   
-  var borderRadius: js.UndefOr[String] = js.native
+  var borderRadius: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var svgClassName: js.UndefOr[String] = js.native
+  var svgClassName: js.UndefOr[String] = js.undefined
   
-  var svgStyle: js.UndefOr[js.Object] = js.native
+  var svgStyle: js.UndefOr[js.Object] = js.undefined
 }
 object SvgClassName {
   
-  @scala.inline
-  def apply(): SvgClassName = {
+  inline def apply(): SvgClassName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SvgClassName]
   }
   
-  @scala.inline
-  implicit class SvgClassNameMutableBuilder[Self <: SvgClassName] (val x: Self) extends AnyVal {
+  extension [Self <: SvgClassName](x: Self) {
     
-    @scala.inline
-    def setBorderRadius(value: String): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    inline def setBorderRadius(value: String): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
+    inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setSvgClassName(value: String): Self = StObject.set(x, "svgClassName", value.asInstanceOf[js.Any])
+    inline def setSvgClassName(value: String): Self = StObject.set(x, "svgClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgClassNameUndefined: Self = StObject.set(x, "svgClassName", js.undefined)
+    inline def setSvgClassNameUndefined: Self = StObject.set(x, "svgClassName", js.undefined)
     
-    @scala.inline
-    def setSvgStyle(value: js.Object): Self = StObject.set(x, "svgStyle", value.asInstanceOf[js.Any])
+    inline def setSvgStyle(value: js.Object): Self = StObject.set(x, "svgStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgStyleUndefined: Self = StObject.set(x, "svgStyle", js.undefined)
+    inline def setSvgStyleUndefined: Self = StObject.set(x, "svgStyle", js.undefined)
   }
 }

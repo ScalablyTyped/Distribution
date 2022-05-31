@@ -1,0 +1,70 @@
+package typings.apolloProtobufjs.global.protobuf
+
+import org.scalablytyped.runtime.StringDictionary
+import typings.apolloProtobufjs.mod.IOneOf
+import typings.apolloProtobufjs.mod.OneOfDecorator
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSGlobal("protobuf.OneOf")
+@js.native
+class OneOf protected ()
+  extends typings.apolloProtobufjs.mod.OneOf {
+  /**
+    * Constructs a new oneof instance.
+    * @param name Oneof name
+    * @param [fieldNames] Field names
+    * @param [options] Declared options
+    * @param [comment] Comment associated with this field
+    */
+  def this(name: String) = this()
+  def this(name: String, fieldNames: js.Array[String]) = this()
+  def this(name: String, fieldNames: StringDictionary[js.UndefOr[js.Any]]) = this()
+  def this(name: String, fieldNames: js.Array[String], options: StringDictionary[js.UndefOr[js.Any]]) = this()
+  def this(
+    name: String,
+    fieldNames: StringDictionary[js.UndefOr[js.Any]],
+    options: StringDictionary[js.UndefOr[js.Any]]
+  ) = this()
+  def this(name: String, fieldNames: Unit, options: StringDictionary[js.UndefOr[js.Any]]) = this()
+  def this(
+    name: String,
+    fieldNames: js.Array[String],
+    options: StringDictionary[js.UndefOr[js.Any]],
+    comment: String
+  ) = this()
+  def this(name: String, fieldNames: js.Array[String], options: Unit, comment: String) = this()
+  def this(
+    name: String,
+    fieldNames: StringDictionary[js.UndefOr[js.Any]],
+    options: StringDictionary[js.UndefOr[js.Any]],
+    comment: String
+  ) = this()
+  def this(name: String, fieldNames: StringDictionary[js.UndefOr[js.Any]], options: Unit, comment: String) = this()
+  def this(name: String, fieldNames: Unit, options: StringDictionary[js.UndefOr[js.Any]], comment: String) = this()
+  def this(name: String, fieldNames: Unit, options: Unit, comment: String) = this()
+}
+/* static members */
+object OneOf {
+  
+  @JSGlobal("protobuf.OneOf")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * OneOf decorator (TypeScript).
+    * @param fieldNames Field names
+    * @returns Decorator function
+    */
+  inline def d[T /* <: String */](fieldNames: String*): OneOfDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldNames.asInstanceOf[js.Any]).asInstanceOf[OneOfDecorator]
+  
+  /**
+    * Constructs a oneof from a oneof descriptor.
+    * @param name Oneof name
+    * @param json Oneof descriptor
+    * @returns Created oneof
+    * @throws {TypeError} If arguments are invalid
+    */
+  inline def fromJSON(name: String, json: IOneOf): typings.apolloProtobufjs.mod.OneOf = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[typings.apolloProtobufjs.mod.OneOf]
+}

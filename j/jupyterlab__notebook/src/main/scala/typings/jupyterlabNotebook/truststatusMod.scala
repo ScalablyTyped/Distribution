@@ -6,7 +6,6 @@ import typings.jupyterlabNotebook.mod.Notebook
 import typings.jupyterlabNotebook.truststatusMod.NotebookTrustStatus.Model
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object truststatusMod {
@@ -26,38 +25,38 @@ object truststatusMod {
     @js.native
     class Model () extends VDomModel {
       
-      var _activeCellTrusted: js.Any = js.native
+      /* private */ var _activeCellTrusted: js.Any = js.native
       
       /**
         * Given a notebook model, figure out how many of the cells are trusted.
         */
-      var _deriveCellTrustState: js.Any = js.native
+      /* private */ var _deriveCellTrustState: js.Any = js.native
       
       /**
         * Get the current state of the model.
         */
-      var _getAllState: js.Any = js.native
+      /* private */ var _getAllState: js.Any = js.native
       
-      var _notebook: js.Any = js.native
+      /* private */ var _notebook: js.Any = js.native
       
       /**
         * When the active cell changes, update the trust state.
         */
-      var _onActiveCellChanged: js.Any = js.native
+      /* private */ var _onActiveCellChanged: js.Any = js.native
       
       /**
         * When the notebook model changes, update the trust state.
         */
-      var _onModelChanged: js.Any = js.native
+      /* private */ var _onModelChanged: js.Any = js.native
       
-      var _totalCells: js.Any = js.native
+      /* private */ var _totalCells: js.Any = js.native
       
       /**
         * Trigger a change in the renderer.
         */
-      var _triggerChange: js.Any = js.native
+      /* private */ var _triggerChange: js.Any = js.native
       
-      var _trustedCells: js.Any = js.native
+      /* private */ var _trustedCells: js.Any = js.native
       
       /**
         * Whether the active cell is trusted.

@@ -6,7 +6,6 @@ import typings.babylonjs.webXRAbstractMotionControllerMod.MotionControllerHanded
 import typings.babylonjs.webXRAbstractMotionControllerMod.WebXRAbstractMotionController
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webXRGenericMotionControllerMod {
@@ -35,7 +34,6 @@ object webXRGenericMotionControllerMod {
     @JSImport("babylonjs/XR/motionController/webXRGenericMotionController", "WebXRGenericTriggerMotionController.ProfileId")
     @js.native
     def ProfileId: String = js.native
-    @scala.inline
-    def ProfileId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProfileId")(x.asInstanceOf[js.Any])
+    inline def ProfileId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProfileId")(x.asInstanceOf[js.Any])
   }
 }

@@ -11,26 +11,24 @@ import typings.babylonjs.physicsRaycastResultMod.PhysicsRaycastResult
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iphysicsengineMod {
   
-  @js.native
   trait IPhysicsEngine extends StObject {
     
     /**
       * Called by the scene. No need to call it.
       * @param delta defines the timespam between frames
       */
-    def _step(delta: Double): Unit = js.native
+    def _step(delta: Double): Unit
     
     /**
       * Adding a new impostor for the impostor tracking.
       * This will be done by the impostor itself.
       * @param impostor the impostor to add
       */
-    def addImpostor(impostor: PhysicsImpostor): Unit = js.native
+    def addImpostor(impostor: PhysicsImpostor): Unit
     
     /**
       * Add a joint to the physics engine
@@ -38,61 +36,61 @@ object iphysicsengineMod {
       * @param connectedImpostor defines the impostor that is connected to the main impostor using this joint
       * @param joint defines the joint that will connect both impostors.
       */
-    def addJoint(mainImpostor: PhysicsImpostor, connectedImpostor: PhysicsImpostor, joint: PhysicsJoint): Unit = js.native
+    def addJoint(mainImpostor: PhysicsImpostor, connectedImpostor: PhysicsImpostor, joint: PhysicsJoint): Unit
     
     /**
       * Release all resources
       */
-    def dispose(): Unit = js.native
+    def dispose(): Unit
     
     /**
       * Gets the impostor for a physics enabled object
       * @param object defines the object impersonated by the impostor
       * @returns the PhysicsImpostor or null if not found
       */
-    def getImpostorForPhysicsObject(`object`: IPhysicsEnabledObject): Nullable[PhysicsImpostor] = js.native
+    def getImpostorForPhysicsObject(`object`: IPhysicsEnabledObject): Nullable[PhysicsImpostor]
     
     /**
       * Gets the impostor for a physics body object
       * @param body defines physics body used by the impostor
       * @returns the PhysicsImpostor or null if not found
       */
-    def getImpostorWithPhysicsBody(body: js.Any): Nullable[PhysicsImpostor] = js.native
+    def getImpostorWithPhysicsBody(body: js.Any): Nullable[PhysicsImpostor]
     
     /**
       * Gets the list of physic impostors
       * @returns an array of PhysicsImpostor
       */
-    def getImpostors(): js.Array[PhysicsImpostor] = js.native
+    def getImpostors(): js.Array[PhysicsImpostor]
     
     /**
       * Gets the current plugin used to run the simulation
       * @returns current plugin
       */
-    def getPhysicsPlugin(): IPhysicsEnginePlugin = js.native
+    def getPhysicsPlugin(): IPhysicsEnginePlugin
     
     /**
       * Gets the name of the current physics plugin
       * @returns the name of the plugin
       */
-    def getPhysicsPluginName(): String = js.native
+    def getPhysicsPluginName(): String
     
     /**
       * Get the sub time step of the physics engine.
       * @returns the current sub time step
       */
-    def getSubTimeStep(): Double = js.native
+    def getSubTimeStep(): Double
     
     /**
       * Get the time step of the physics engine.
       * @returns the current time step
       */
-    def getTimeStep(): Double = js.native
+    def getTimeStep(): Double
     
     /**
       * Gets the gravity vector used by the simulation
       */
-    var gravity: Vector3 = js.native
+    var gravity: Vector3
     
     /**
       * Does a raycast in the physics world
@@ -100,14 +98,14 @@ object iphysicsengineMod {
       * @param to when should the ray end?
       * @returns PhysicsRaycastResult
       */
-    def raycast(from: Vector3, to: Vector3): PhysicsRaycastResult = js.native
+    def raycast(from: Vector3, to: Vector3): PhysicsRaycastResult
     
     /**
       * Remove an impostor from the engine.
       * This impostor and its mesh will not longer be updated by the physics engine.
       * @param impostor the impostor to remove
       */
-    def removeImpostor(impostor: PhysicsImpostor): Unit = js.native
+    def removeImpostor(impostor: PhysicsImpostor): Unit
     
     /**
       * Removes a joint from the simulation
@@ -115,13 +113,13 @@ object iphysicsengineMod {
       * @param connectedImpostor defines the other impostor connected to the main one by the joint
       * @param joint defines the joint to remove
       */
-    def removeJoint(mainImpostor: PhysicsImpostor, connectedImpostor: PhysicsImpostor, joint: PhysicsJoint): Unit = js.native
+    def removeJoint(mainImpostor: PhysicsImpostor, connectedImpostor: PhysicsImpostor, joint: PhysicsJoint): Unit
     
     /**
       * Sets the gravity vector used by the simulation
       * @param gravity defines the gravity vector to use
       */
-    def setGravity(gravity: Vector3): Unit = js.native
+    def setGravity(gravity: Vector3): Unit
     
     /**
       * Set the sub time step of the physics engine.
@@ -129,7 +127,7 @@ object iphysicsengineMod {
       * To increase physics resolution precision, set a small value (like 1 ms)
       * @param subTimeStep defines the new sub timestep used for physics resolution.
       */
-    def setSubTimeStep(subTimeStep: Double): Unit = js.native
+    def setSubTimeStep(subTimeStep: Double): Unit
     
     /**
       * Set the time step of the physics engine.
@@ -138,12 +136,11 @@ object iphysicsengineMod {
       * To speed it up, 1/30
       * @param newTimeStep the new timestep to apply to this world.
       */
-    def setTimeStep(newTimeStep: Double): Unit = js.native
+    def setTimeStep(newTimeStep: Double): Unit
   }
   object IPhysicsEngine {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _step: Double => Unit,
       addImpostor: PhysicsImpostor => Unit,
       addJoint: (PhysicsImpostor, PhysicsImpostor, PhysicsJoint) => Unit,
@@ -167,62 +164,43 @@ object iphysicsengineMod {
       __obj.asInstanceOf[IPhysicsEngine]
     }
     
-    @scala.inline
-    implicit class IPhysicsEngineMutableBuilder[Self <: IPhysicsEngine] (val x: Self) extends AnyVal {
+    extension [Self <: IPhysicsEngine](x: Self) {
       
-      @scala.inline
-      def setAddImpostor(value: PhysicsImpostor => Unit): Self = StObject.set(x, "addImpostor", js.Any.fromFunction1(value))
+      inline def setAddImpostor(value: PhysicsImpostor => Unit): Self = StObject.set(x, "addImpostor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddJoint(value: (PhysicsImpostor, PhysicsImpostor, PhysicsJoint) => Unit): Self = StObject.set(x, "addJoint", js.Any.fromFunction3(value))
+      inline def setAddJoint(value: (PhysicsImpostor, PhysicsImpostor, PhysicsJoint) => Unit): Self = StObject.set(x, "addJoint", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetImpostorForPhysicsObject(value: IPhysicsEnabledObject => Nullable[PhysicsImpostor]): Self = StObject.set(x, "getImpostorForPhysicsObject", js.Any.fromFunction1(value))
+      inline def setGetImpostorForPhysicsObject(value: IPhysicsEnabledObject => Nullable[PhysicsImpostor]): Self = StObject.set(x, "getImpostorForPhysicsObject", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetImpostorWithPhysicsBody(value: js.Any => Nullable[PhysicsImpostor]): Self = StObject.set(x, "getImpostorWithPhysicsBody", js.Any.fromFunction1(value))
+      inline def setGetImpostorWithPhysicsBody(value: js.Any => Nullable[PhysicsImpostor]): Self = StObject.set(x, "getImpostorWithPhysicsBody", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetImpostors(value: () => js.Array[PhysicsImpostor]): Self = StObject.set(x, "getImpostors", js.Any.fromFunction0(value))
+      inline def setGetImpostors(value: () => js.Array[PhysicsImpostor]): Self = StObject.set(x, "getImpostors", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPhysicsPlugin(value: () => IPhysicsEnginePlugin): Self = StObject.set(x, "getPhysicsPlugin", js.Any.fromFunction0(value))
+      inline def setGetPhysicsPlugin(value: () => IPhysicsEnginePlugin): Self = StObject.set(x, "getPhysicsPlugin", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPhysicsPluginName(value: () => String): Self = StObject.set(x, "getPhysicsPluginName", js.Any.fromFunction0(value))
+      inline def setGetPhysicsPluginName(value: () => String): Self = StObject.set(x, "getPhysicsPluginName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSubTimeStep(value: () => Double): Self = StObject.set(x, "getSubTimeStep", js.Any.fromFunction0(value))
+      inline def setGetSubTimeStep(value: () => Double): Self = StObject.set(x, "getSubTimeStep", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTimeStep(value: () => Double): Self = StObject.set(x, "getTimeStep", js.Any.fromFunction0(value))
+      inline def setGetTimeStep(value: () => Double): Self = StObject.set(x, "getTimeStep", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGravity(value: Vector3): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
+      inline def setGravity(value: Vector3): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRaycast(value: (Vector3, Vector3) => PhysicsRaycastResult): Self = StObject.set(x, "raycast", js.Any.fromFunction2(value))
+      inline def setRaycast(value: (Vector3, Vector3) => PhysicsRaycastResult): Self = StObject.set(x, "raycast", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveImpostor(value: PhysicsImpostor => Unit): Self = StObject.set(x, "removeImpostor", js.Any.fromFunction1(value))
+      inline def setRemoveImpostor(value: PhysicsImpostor => Unit): Self = StObject.set(x, "removeImpostor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveJoint(value: (PhysicsImpostor, PhysicsImpostor, PhysicsJoint) => Unit): Self = StObject.set(x, "removeJoint", js.Any.fromFunction3(value))
+      inline def setRemoveJoint(value: (PhysicsImpostor, PhysicsImpostor, PhysicsJoint) => Unit): Self = StObject.set(x, "removeJoint", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSetGravity(value: Vector3 => Unit): Self = StObject.set(x, "setGravity", js.Any.fromFunction1(value))
+      inline def setSetGravity(value: Vector3 => Unit): Self = StObject.set(x, "setGravity", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetSubTimeStep(value: Double => Unit): Self = StObject.set(x, "setSubTimeStep", js.Any.fromFunction1(value))
+      inline def setSetSubTimeStep(value: Double => Unit): Self = StObject.set(x, "setSubTimeStep", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetTimeStep(value: Double => Unit): Self = StObject.set(x, "setTimeStep", js.Any.fromFunction1(value))
+      inline def setSetTimeStep(value: Double => Unit): Self = StObject.set(x, "setTimeStep", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_step(value: Double => Unit): Self = StObject.set(x, "_step", js.Any.fromFunction1(value))
+      inline def set_step(value: Double => Unit): Self = StObject.set(x, "_step", js.Any.fromFunction1(value))
     }
   }
   
@@ -321,21 +299,16 @@ object iphysicsengineMod {
     def setGravity(gravity: Vector3): Unit = js.native
     
     def setLimit(joint: IMotorEnabledJoint, upperLimit: Double): Unit = js.native
-    def setLimit(
-      joint: IMotorEnabledJoint,
-      upperLimit: Double,
-      lowerLimit: js.UndefOr[scala.Nothing],
-      motorIndex: Double
-    ): Unit = js.native
     def setLimit(joint: IMotorEnabledJoint, upperLimit: Double, lowerLimit: Double): Unit = js.native
     def setLimit(joint: IMotorEnabledJoint, upperLimit: Double, lowerLimit: Double, motorIndex: Double): Unit = js.native
+    def setLimit(joint: IMotorEnabledJoint, upperLimit: Double, lowerLimit: Unit, motorIndex: Double): Unit = js.native
     
     def setLinearVelocity(impostor: PhysicsImpostor, velocity: Nullable[Vector3]): Unit = js.native
     
     def setMotor(joint: IMotorEnabledJoint, speed: Double): Unit = js.native
-    def setMotor(joint: IMotorEnabledJoint, speed: Double, maxForce: js.UndefOr[scala.Nothing], motorIndex: Double): Unit = js.native
     def setMotor(joint: IMotorEnabledJoint, speed: Double, maxForce: Double): Unit = js.native
     def setMotor(joint: IMotorEnabledJoint, speed: Double, maxForce: Double, motorIndex: Double): Unit = js.native
+    def setMotor(joint: IMotorEnabledJoint, speed: Double, maxForce: Unit, motorIndex: Double): Unit = js.native
     
     def setPhysicsBodyTransformation(impostor: PhysicsImpostor, newPosition: Vector3, newRotation: Quaternion): Unit = js.native
     
@@ -355,37 +328,31 @@ object iphysicsengineMod {
     var world: js.Any = js.native
   }
   
-  @js.native
   trait PhysicsImpostorJoint extends StObject {
     
     /** Defines the impostor that is connected to the main impostor using this joint */
-    var connectedImpostor: PhysicsImpostor = js.native
+    var connectedImpostor: PhysicsImpostor
     
     /** Defines the joint itself */
-    var joint: PhysicsJoint = js.native
+    var joint: PhysicsJoint
     
     /** Defines the main impostor to which the joint is linked */
-    var mainImpostor: PhysicsImpostor = js.native
+    var mainImpostor: PhysicsImpostor
   }
   object PhysicsImpostorJoint {
     
-    @scala.inline
-    def apply(connectedImpostor: PhysicsImpostor, joint: PhysicsJoint, mainImpostor: PhysicsImpostor): PhysicsImpostorJoint = {
+    inline def apply(connectedImpostor: PhysicsImpostor, joint: PhysicsJoint, mainImpostor: PhysicsImpostor): PhysicsImpostorJoint = {
       val __obj = js.Dynamic.literal(connectedImpostor = connectedImpostor.asInstanceOf[js.Any], joint = joint.asInstanceOf[js.Any], mainImpostor = mainImpostor.asInstanceOf[js.Any])
       __obj.asInstanceOf[PhysicsImpostorJoint]
     }
     
-    @scala.inline
-    implicit class PhysicsImpostorJointMutableBuilder[Self <: PhysicsImpostorJoint] (val x: Self) extends AnyVal {
+    extension [Self <: PhysicsImpostorJoint](x: Self) {
       
-      @scala.inline
-      def setConnectedImpostor(value: PhysicsImpostor): Self = StObject.set(x, "connectedImpostor", value.asInstanceOf[js.Any])
+      inline def setConnectedImpostor(value: PhysicsImpostor): Self = StObject.set(x, "connectedImpostor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJoint(value: PhysicsJoint): Self = StObject.set(x, "joint", value.asInstanceOf[js.Any])
+      inline def setJoint(value: PhysicsJoint): Self = StObject.set(x, "joint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMainImpostor(value: PhysicsImpostor): Self = StObject.set(x, "mainImpostor", value.asInstanceOf[js.Any])
+      inline def setMainImpostor(value: PhysicsImpostor): Self = StObject.set(x, "mainImpostor", value.asInstanceOf[js.Any])
     }
   }
 }

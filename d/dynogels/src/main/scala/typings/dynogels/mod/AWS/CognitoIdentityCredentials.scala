@@ -18,5 +18,3 @@ class CognitoIdentityCredentials ()
   def this(options: CognitoIdentityOptions) = this()
   def this(options: CognitoIdentityOptions, clientConfig: typings.awsSdk.configBaseMod.ConfigurationOptions) = this()
 }
-// Needed to expose interfaces on the class
-object CognitoIdentityCredentials

@@ -1,6 +1,7 @@
 package typings.mqtt
 
 import typings.mqtt.clientMod.IStream
+import typings.mqtt.clientOptionsMod.IClientOptions
 import typings.mqtt.storeOptionsMod.IStoreOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,7 +19,7 @@ object mod {
     extends typings.mqtt.clientMod.MqttClient {
     def this(
       streamBuilder: js.Function1[/* client */ typings.mqtt.clientMod.MqttClient, IStream],
-      options: typings.mqtt.clientOptionsMod.IClientOptions
+      options: IClientOptions
     ) = this()
   }
   
@@ -28,7 +29,7 @@ object mod {
     extends typings.mqtt.connectMod.MqttClient {
     def this(
       streamBuilder: js.Function1[/* client */ typings.mqtt.clientMod.MqttClient, IStream],
-      options: typings.mqtt.clientOptionsMod.IClientOptions
+      options: IClientOptions
     ) = this()
   }
   
@@ -57,19 +58,8 @@ object mod {
     */
   inline def connect(): typings.mqtt.clientMod.MqttClient = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")().asInstanceOf[typings.mqtt.clientMod.MqttClient]
   inline def connect(brokerUrl: String): typings.mqtt.clientMod.MqttClient = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(brokerUrl.asInstanceOf[js.Any]).asInstanceOf[typings.mqtt.clientMod.MqttClient]
-  inline def connect(brokerUrl: String, opts: typings.mqtt.clientOptionsMod.IClientOptions): typings.mqtt.clientMod.MqttClient = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(brokerUrl.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.mqtt.clientMod.MqttClient]
+  inline def connect(brokerUrl: String, opts: IClientOptions): typings.mqtt.clientMod.MqttClient = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(brokerUrl.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.mqtt.clientMod.MqttClient]
   inline def connect(brokerUrl: js.Any): typings.mqtt.clientMod.MqttClient = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(brokerUrl.asInstanceOf[js.Any]).asInstanceOf[typings.mqtt.clientMod.MqttClient]
-  inline def connect(brokerUrl: js.Any, opts: typings.mqtt.clientOptionsMod.IClientOptions): typings.mqtt.clientMod.MqttClient = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(brokerUrl.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.mqtt.clientMod.MqttClient]
-  inline def connect(brokerUrl: Unit, opts: typings.mqtt.clientOptionsMod.IClientOptions): typings.mqtt.clientMod.MqttClient = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(brokerUrl.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.mqtt.clientMod.MqttClient]
-  
-  trait IClientOptions
-    extends StObject
-       with typings.mqtt.clientOptionsMod.IClientOptions
-  object IClientOptions {
-    
-    inline def apply(): IClientOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[IClientOptions]
-    }
-  }
+  inline def connect(brokerUrl: js.Any, opts: IClientOptions): typings.mqtt.clientMod.MqttClient = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(brokerUrl.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.mqtt.clientMod.MqttClient]
+  inline def connect(brokerUrl: Unit, opts: IClientOptions): typings.mqtt.clientMod.MqttClient = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(brokerUrl.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.mqtt.clientMod.MqttClient]
 }

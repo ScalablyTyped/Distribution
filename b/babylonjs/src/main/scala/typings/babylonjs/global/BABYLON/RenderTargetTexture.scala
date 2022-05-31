@@ -5,13 +5,13 @@ import typings.babylonjs.anon.Height
 import typings.babylonjs.anon.Ratio
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.RenderTargetTexture")
 @js.native
 class RenderTargetTexture protected ()
-  extends typings.babylonjs.BABYLON.RenderTargetTexture {
+  extends StObject
+     with typings.babylonjs.BABYLON.RenderTargetTexture {
   /**
     * Instantiate a render target texture. This is mainly used to render of screen the scene to for instance apply post processse
     * or used a shadow, depth texture...
@@ -44,6 +44,12 @@ class RenderTargetTexture protected ()
     format: js.UndefOr[Double],
     delayAllocation: js.UndefOr[Boolean]
   ) = this()
+  
+  /**
+    * Array of animations
+    */
+  /* CompleteClass */
+  var animations: Nullable[js.Array[typings.babylonjs.BABYLON.Animation]] = js.native
 }
 /* static members */
 object RenderTargetTexture {

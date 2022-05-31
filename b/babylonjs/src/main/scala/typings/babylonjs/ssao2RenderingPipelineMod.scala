@@ -5,7 +5,6 @@ import typings.babylonjs.postProcessRenderPipelineMod.PostProcessRenderPipeline
 import typings.babylonjs.sceneMod.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ssao2RenderingPipelineMod {
@@ -23,14 +22,8 @@ object ssao2RenderingPipelineMod {
       */
     def this(name: String, scene: Scene, ratio: js.Any) = this()
     def this(name: String, scene: Scene, ratio: js.Any, cameras: js.Array[Camera]) = this()
-    def this(
-      name: String,
-      scene: Scene,
-      ratio: js.Any,
-      cameras: js.UndefOr[scala.Nothing],
-      forceGeometryBuffer: Boolean
-    ) = this()
     def this(name: String, scene: Scene, ratio: js.Any, cameras: js.Array[Camera], forceGeometryBuffer: Boolean) = this()
+    def this(name: String, scene: Scene, ratio: js.Any, cameras: Unit, forceGeometryBuffer: Boolean) = this()
     
     /**
       * @ignore
@@ -62,67 +55,67 @@ object ssao2RenderingPipelineMod {
       */
     var SSAORenderEffect: String = js.native
     
-    var _bits: js.Any = js.native
+    /* private */ var _bits: js.Any = js.native
     
-    var _blurHPostProcess: js.Any = js.native
+    /* private */ var _blurHPostProcess: js.Any = js.native
     
-    var _blurVPostProcess: js.Any = js.native
+    /* private */ var _blurVPostProcess: js.Any = js.native
     
-    var _createBlurPostProcess: js.Any = js.native
+    /* private */ var _createBlurPostProcess: js.Any = js.native
     
-    var _createRandomTexture: js.Any = js.native
+    /* private */ var _createRandomTexture: js.Any = js.native
     
-    var _createSSAOCombinePostProcess: js.Any = js.native
+    /* private */ var _createSSAOCombinePostProcess: js.Any = js.native
     
-    var _createSSAOPostProcess: js.Any = js.native
+    /* private */ var _createSSAOPostProcess: js.Any = js.native
     
-    var _expensiveBlur: js.Any = js.native
+    /* private */ var _expensiveBlur: js.Any = js.native
     
     /**
       * Force rendering the geometry through geometry buffer
       */
-    var _forceGeometryBuffer: js.Any = js.native
+    /* private */ var _forceGeometryBuffer: js.Any = js.native
     
-    var _generateHemisphere: js.Any = js.native
+    /* private */ var _generateHemisphere: js.Any = js.native
     
-    var _getDefinesForSSAO: js.Any = js.native
+    /* private */ var _getDefinesForSSAO: js.Any = js.native
     
-    var _hammersley: js.Any = js.native
+    /* private */ var _hammersley: js.Any = js.native
     
-    var _hemisphereSample_uniform: js.Any = js.native
+    /* private */ var _hemisphereSample_uniform: js.Any = js.native
     
-    var _originalColorPostProcess: js.Any = js.native
+    /* private */ var _originalColorPostProcess: js.Any = js.native
     
-    var _prePassRenderer: js.Any = js.native
+    /* private */ var _prePassRenderer: js.Any = js.native
     
-    var _radicalInverse_VdC: js.Any = js.native
+    /* private */ var _radicalInverse_VdC: js.Any = js.native
     
-    var _randomTexture: js.Any = js.native
+    /* private */ var _randomTexture: js.Any = js.native
     
     /**
       * Ratio object used for SSAO ratio and blur ratio
       */
-    var _ratio: js.Any = js.native
+    /* private */ var _ratio: js.Any = js.native
     
     /**
       * Dynamically generated sphere sampler.
       */
-    var _sampleSphere: js.Any = js.native
+    /* private */ var _sampleSphere: js.Any = js.native
     
     /**
       * Blur filter offsets
       */
-    var _samplerOffsets: js.Any = js.native
+    /* private */ var _samplerOffsets: js.Any = js.native
     
-    var _samples: js.Any = js.native
+    /* private */ var _samples: js.Any = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
-    var _ssaoCombinePostProcess: js.Any = js.native
+    /* private */ var _ssaoCombinePostProcess: js.Any = js.native
     
-    var _ssaoPostProcess: js.Any = js.native
+    /* private */ var _ssaoPostProcess: js.Any = js.native
     
-    var _textureSamples: js.Any = js.native
+    /* private */ var _textureSamples: js.Any = js.native
     
     /**
       * The base color of the SSAO post-process
@@ -184,6 +177,10 @@ object ssao2RenderingPipelineMod {
   /* static members */
   object SSAO2RenderingPipeline {
     
+    @JSImport("babylonjs/PostProcesses/RenderPipeline/Pipelines/ssao2RenderingPipeline", "SSAO2RenderingPipeline")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Parse the serialized pipeline
       * @param source Source pipeline.
@@ -191,8 +188,6 @@ object ssao2RenderingPipelineMod {
       * @param rootUrl The URL of the serialized pipeline.
       * @returns An instantiated pipeline from the serialized object.
       */
-    @JSImport("babylonjs/PostProcesses/RenderPipeline/Pipelines/ssao2RenderingPipeline", "SSAO2RenderingPipeline.Parse")
-    @js.native
-    def Parse(source: js.Any, scene: Scene, rootUrl: String): SSAO2RenderingPipeline = js.native
+    inline def Parse(source: js.Any, scene: Scene, rootUrl: String): SSAO2RenderingPipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[SSAO2RenderingPipeline]
   }
 }

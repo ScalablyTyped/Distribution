@@ -3,7 +3,6 @@ package typings.babylonjs.indexMod
 import typings.babylonjs.anon.AdjustPitch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "BoneLookController")
@@ -51,18 +50,15 @@ object BoneLookController {
   @JSImport("babylonjs/index", "BoneLookController._tmpMats")
   @js.native
   def _tmpMats: js.Any = js.native
-  @scala.inline
-  def _tmpMats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpMats")(x.asInstanceOf[js.Any])
+  inline def _tmpMats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpMats")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs/index", "BoneLookController._tmpQuat")
   @js.native
   def _tmpQuat: js.Any = js.native
-  @scala.inline
-  def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
+  inline def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs/index", "BoneLookController._tmpVecs")
   @js.native
   def _tmpVecs: js.Any = js.native
-  @scala.inline
-  def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
+  inline def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
 }

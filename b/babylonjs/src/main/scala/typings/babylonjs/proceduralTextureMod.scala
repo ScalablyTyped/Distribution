@@ -16,7 +16,6 @@ import typings.babylonjs.typesMod.Nullable
 import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object proceduralTextureMod {
@@ -51,7 +50,7 @@ object proceduralTextureMod {
       size: RenderTargetTextureSize,
       fragment: js.Any,
       scene: Nullable[Scene],
-      fallbackTexture: js.UndefOr[Nullable[Texture]],
+      fallbackTexture: Unit,
       generateMipMaps: Boolean
     ) = this()
     def this(
@@ -59,16 +58,15 @@ object proceduralTextureMod {
       size: RenderTargetTextureSize,
       fragment: js.Any,
       scene: Nullable[Scene],
-      fallbackTexture: js.UndefOr[Nullable[Texture]],
-      generateMipMaps: js.UndefOr[scala.Nothing],
-      isCube: Boolean
+      fallbackTexture: Nullable[Texture],
+      generateMipMaps: Boolean
     ) = this()
     def this(
       name: String,
       size: RenderTargetTextureSize,
       fragment: js.Any,
       scene: Nullable[Scene],
-      fallbackTexture: js.UndefOr[Nullable[Texture]],
+      fallbackTexture: Unit,
       generateMipMaps: Boolean,
       isCube: Boolean
     ) = this()
@@ -77,9 +75,36 @@ object proceduralTextureMod {
       size: RenderTargetTextureSize,
       fragment: js.Any,
       scene: Nullable[Scene],
-      fallbackTexture: js.UndefOr[Nullable[Texture]],
-      generateMipMaps: js.UndefOr[scala.Nothing],
-      isCube: js.UndefOr[scala.Nothing],
+      fallbackTexture: Unit,
+      generateMipMaps: Unit,
+      isCube: Boolean
+    ) = this()
+    def this(
+      name: String,
+      size: RenderTargetTextureSize,
+      fragment: js.Any,
+      scene: Nullable[Scene],
+      fallbackTexture: Nullable[Texture],
+      generateMipMaps: Boolean,
+      isCube: Boolean
+    ) = this()
+    def this(
+      name: String,
+      size: RenderTargetTextureSize,
+      fragment: js.Any,
+      scene: Nullable[Scene],
+      fallbackTexture: Nullable[Texture],
+      generateMipMaps: Unit,
+      isCube: Boolean
+    ) = this()
+    def this(
+      name: String,
+      size: RenderTargetTextureSize,
+      fragment: js.Any,
+      scene: Nullable[Scene],
+      fallbackTexture: Unit,
+      generateMipMaps: Boolean,
+      isCube: Boolean,
       textureType: Double
     ) = this()
     def this(
@@ -87,8 +112,18 @@ object proceduralTextureMod {
       size: RenderTargetTextureSize,
       fragment: js.Any,
       scene: Nullable[Scene],
-      fallbackTexture: js.UndefOr[Nullable[Texture]],
-      generateMipMaps: js.UndefOr[scala.Nothing],
+      fallbackTexture: Unit,
+      generateMipMaps: Boolean,
+      isCube: Unit,
+      textureType: Double
+    ) = this()
+    def this(
+      name: String,
+      size: RenderTargetTextureSize,
+      fragment: js.Any,
+      scene: Nullable[Scene],
+      fallbackTexture: Unit,
+      generateMipMaps: Unit,
       isCube: Boolean,
       textureType: Double
     ) = this()
@@ -97,9 +132,9 @@ object proceduralTextureMod {
       size: RenderTargetTextureSize,
       fragment: js.Any,
       scene: Nullable[Scene],
-      fallbackTexture: js.UndefOr[Nullable[Texture]],
-      generateMipMaps: Boolean,
-      isCube: js.UndefOr[scala.Nothing],
+      fallbackTexture: Unit,
+      generateMipMaps: Unit,
+      isCube: Unit,
       textureType: Double
     ) = this()
     def this(
@@ -107,76 +142,106 @@ object proceduralTextureMod {
       size: RenderTargetTextureSize,
       fragment: js.Any,
       scene: Nullable[Scene],
-      fallbackTexture: js.UndefOr[Nullable[Texture]],
+      fallbackTexture: Nullable[Texture],
       generateMipMaps: Boolean,
       isCube: Boolean,
       textureType: Double
     ) = this()
+    def this(
+      name: String,
+      size: RenderTargetTextureSize,
+      fragment: js.Any,
+      scene: Nullable[Scene],
+      fallbackTexture: Nullable[Texture],
+      generateMipMaps: Boolean,
+      isCube: Unit,
+      textureType: Double
+    ) = this()
+    def this(
+      name: String,
+      size: RenderTargetTextureSize,
+      fragment: js.Any,
+      scene: Nullable[Scene],
+      fallbackTexture: Nullable[Texture],
+      generateMipMaps: Unit,
+      isCube: Boolean,
+      textureType: Double
+    ) = this()
+    def this(
+      name: String,
+      size: RenderTargetTextureSize,
+      fragment: js.Any,
+      scene: Nullable[Scene],
+      fallbackTexture: Nullable[Texture],
+      generateMipMaps: Unit,
+      isCube: Unit,
+      textureType: Double
+    ) = this()
     
-    var _cachedDefines: js.Any = js.native
+    /* private */ var _cachedDefines: js.Any = js.native
     
-    var _checkUniform: js.Any = js.native
+    /* private */ var _checkUniform: js.Any = js.native
     
-    var _colors3: js.Any = js.native
+    /* private */ var _colors3: js.Any = js.native
     
-    var _colors4: js.Any = js.native
+    /* private */ var _colors4: js.Any = js.native
     
-    var _contentData: js.Any = js.native
+    /* private */ var _contentData: js.Any = js.native
     
-    var _contentUpdateId: js.Any = js.native
+    /* private */ var _contentUpdateId: js.Any = js.native
     
-    var _createIndexBuffer: js.Any = js.native
+    /* private */ var _createIndexBuffer: js.Any = js.native
     
-    var _currentRefreshId: js.Any = js.native
+    /* private */ var _currentRefreshId: js.Any = js.native
     
     /** @hidden **/
     var _effect: Effect = js.native
     
     /** @hidden */
-    var _fallbackTexture: Nullable[Texture] = js.native
+    /* protected */ var _fallbackTexture: Nullable[Texture] = js.native
     
-    var _fallbackTextureUsed: js.Any = js.native
+    /* private */ var _fallbackTextureUsed: js.Any = js.native
     
-    var _floats: js.Any = js.native
+    /* private */ var _floats: js.Any = js.native
     
-    var _floatsArrays: js.Any = js.native
+    /* private */ var _floatsArrays: js.Any = js.native
     
-    var _fragment: js.Any = js.native
+    /* private */ var _fragment: js.Any = js.native
     
-    var _frameId: js.Any = js.native
+    /* private */ var _frameId: js.Any = js.native
     
-    var _fullEngine: js.Any = js.native
+    /* private */ var _fullEngine: js.Any = js.native
     
     /** @hidden */
     var _generateMipMaps: Boolean = js.native
     
     /* protected */ def _getDefines(): String = js.native
     
-    var _indexBuffer: js.Any = js.native
+    /* private */ var _indexBuffer: js.Any = js.native
     
-    var _ints: js.Any = js.native
+    /* private */ var _ints: js.Any = js.native
     
-    var _matrices: js.Any = js.native
+    /* private */ var _matrices: js.Any = js.native
     
-    var _refreshRate: js.Any = js.native
+    /* private */ var _refreshRate: js.Any = js.native
     
-    var _samplers: js.Any = js.native
+    /* private */ var _samplers: js.Any = js.native
     
     /** @hidden */
     def _shouldRender(): Boolean = js.native
     
-    var _size: js.Any = js.native
+    /* private */ var _size: js.Any = js.native
     
     /** @hidden */
     var _textures: StringDictionary[Texture] = js.native
     
-    var _uniforms: js.Any = js.native
+    /* private */ var _uniforms: js.Any = js.native
     
-    var _vectors2: js.Any = js.native
+    /* private */ var _vectors2: js.Any = js.native
     
-    var _vectors3: js.Any = js.native
+    /* private */ var _vectors3: js.Any = js.native
     
-    var _vertexBuffers: js.Any = js.native
+    /* private */ var _vertexBuffers: js.Any = js.native
     
     /**
       * Define if the texture must be cleared before rendering (default is true)

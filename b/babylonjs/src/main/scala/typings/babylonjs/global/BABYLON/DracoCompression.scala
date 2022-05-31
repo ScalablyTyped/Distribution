@@ -3,7 +3,6 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.IDracoCompressionConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.DracoCompression")
@@ -13,8 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param numWorkers The number of workers for async operations. Specify `0` to disable web workers and run synchronously in the current context.
   */
 class DracoCompression ()
-  extends typings.babylonjs.BABYLON.DracoCompression {
+  extends StObject
+     with typings.babylonjs.BABYLON.DracoCompression {
   def this(numWorkers: Double) = this()
+  
+  /**
+    * Releases all held resources
+    */
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
 }
 /* static members */
 object DracoCompression {
@@ -32,8 +38,7 @@ object DracoCompression {
   @JSGlobal("BABYLON.DracoCompression.Configuration")
   @js.native
   def Configuration: IDracoCompressionConfiguration = js.native
-  @scala.inline
-  def Configuration_=(x: IDracoCompressionConfiguration): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Configuration")(x.asInstanceOf[js.Any])
+  inline def Configuration_=(x: IDracoCompressionConfiguration): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Configuration")(x.asInstanceOf[js.Any])
   
   /**
     * Default number of workers to create when creating the draco compression object.
@@ -41,18 +46,15 @@ object DracoCompression {
   @JSGlobal("BABYLON.DracoCompression.DefaultNumWorkers")
   @js.native
   def DefaultNumWorkers: Double = js.native
-  @scala.inline
-  def DefaultNumWorkers_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultNumWorkers")(x.asInstanceOf[js.Any])
+  inline def DefaultNumWorkers_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultNumWorkers")(x.asInstanceOf[js.Any])
   
   @JSGlobal("BABYLON.DracoCompression.GetDefaultNumWorkers")
   @js.native
   def GetDefaultNumWorkers: js.Any = js.native
-  @scala.inline
-  def GetDefaultNumWorkers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GetDefaultNumWorkers")(x.asInstanceOf[js.Any])
+  inline def GetDefaultNumWorkers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GetDefaultNumWorkers")(x.asInstanceOf[js.Any])
   
   @JSGlobal("BABYLON.DracoCompression._Default")
   @js.native
   def _Default: js.Any = js.native
-  @scala.inline
-  def _Default_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Default")(x.asInstanceOf[js.Any])
+  inline def _Default_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Default")(x.asInstanceOf[js.Any])
 }

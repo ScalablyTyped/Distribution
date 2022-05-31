@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.AnimationRange")
 @js.native
 class AnimationRange protected ()
-  extends typings.babylonjs.BABYLON.AnimationRange {
+  extends StObject
+     with typings.babylonjs.BABYLON.AnimationRange {
   /**
     * Initializes the range of an animation
     * @param name The name of the animation range
@@ -23,4 +23,16 @@ class AnimationRange protected ()
     /**The ending frame of the animation*/
   to: Double
   ) = this()
+  
+  /**The starting frame of the animation */
+  /* CompleteClass */
+  var from: Double = js.native
+  
+  /**The name of the animation range**/
+  /* CompleteClass */
+  var name: String = js.native
+  
+  /**The ending frame of the animation*/
+  /* CompleteClass */
+  var to: Double = js.native
 }

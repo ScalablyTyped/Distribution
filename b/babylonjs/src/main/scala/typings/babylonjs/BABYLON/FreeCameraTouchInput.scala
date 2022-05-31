@@ -2,23 +2,24 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FreeCameraTouchInput extends ICameraInput[FreeCamera] {
+trait FreeCameraTouchInput
+  extends StObject
+     with ICameraInput[FreeCamera] {
   
-  var _observer: js.Any = js.native
+  /* private */ var _observer: js.Any = js.native
   
-  var _offsetX: js.Any = js.native
+  /* private */ var _offsetX: js.Any = js.native
   
-  var _offsetY: js.Any = js.native
+  /* private */ var _offsetY: js.Any = js.native
   
-  var _onLostFocus: js.Any = js.native
+  /* private */ var _onLostFocus: js.Any = js.native
   
-  var _pointerInput: js.Any = js.native
+  /* private */ var _pointerInput: js.Any = js.native
   
-  var _pointerPressed: js.Any = js.native
+  /* private */ var _pointerPressed: js.Any = js.native
   
   /**
     * Define if mouse events can be treated as touch events

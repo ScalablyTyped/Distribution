@@ -7,7 +7,6 @@ import typings.jupyterlabCompleter.handlerMod.CompletionHandler.IRequest
 import typings.jupyterlabStatedb.mod.DataConnector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextconnectorMod {
@@ -22,37 +21,32 @@ object contextconnectorMod {
       */
     def this(options: IOptions) = this()
     
-    var _editor: js.Any = js.native
+    /* private */ var _editor: js.Any = js.native
   }
   object ContextConnector {
     
     /**
       * The instantiation options for cell completion handlers.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The session used by the context connector.
         */
-      var editor: IEditor | Null = js.native
+      var editor: IEditor | Null
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): IOptions = {
-        val __obj = js.Dynamic.literal()
+      inline def apply(): IOptions = {
+        val __obj = js.Dynamic.literal(editor = null)
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setEditor(value: IEditor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+        inline def setEditor(value: IEditor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEditorNull: Self = StObject.set(x, "editor", null)
+        inline def setEditorNull: Self = StObject.set(x, "editor", null)
       }
     }
   }

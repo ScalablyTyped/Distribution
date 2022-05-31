@@ -9,7 +9,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object csgMod {
@@ -27,7 +26,7 @@ object csgMod {
       * @returns A new Mesh
       */
     def buildMeshGeometry(name: String): Mesh = js.native
-    def buildMeshGeometry(name: String, scene: js.UndefOr[scala.Nothing], keepSubMeshes: Boolean): Mesh = js.native
+    def buildMeshGeometry(name: String, scene: Unit, keepSubMeshes: Boolean): Mesh = js.native
     def buildMeshGeometry(name: String, scene: Scene): Mesh = js.native
     def buildMeshGeometry(name: String, scene: Scene, keepSubMeshes: Boolean): Mesh = js.native
     
@@ -70,7 +69,7 @@ object csgMod {
       */
     var matrix: Matrix = js.native
     
-    var polygons: js.Any = js.native
+    /* private */ var polygons: js.Any = js.native
     
     /**
       * Stores the position
@@ -114,15 +113,13 @@ object csgMod {
       * @returns The new Mesh
       */
     def toMesh(name: String): Mesh = js.native
-    def toMesh(
-      name: String,
-      material: js.UndefOr[Nullable[Material]],
-      scene: js.UndefOr[scala.Nothing],
-      keepSubMeshes: Boolean
-    ): Mesh = js.native
-    def toMesh(name: String, material: js.UndefOr[Nullable[Material]], scene: Scene): Mesh = js.native
-    def toMesh(name: String, material: js.UndefOr[Nullable[Material]], scene: Scene, keepSubMeshes: Boolean): Mesh = js.native
+    def toMesh(name: String, material: Unit, scene: Unit, keepSubMeshes: Boolean): Mesh = js.native
+    def toMesh(name: String, material: Unit, scene: Scene): Mesh = js.native
+    def toMesh(name: String, material: Unit, scene: Scene, keepSubMeshes: Boolean): Mesh = js.native
     def toMesh(name: String, material: Nullable[Material]): Mesh = js.native
+    def toMesh(name: String, material: Nullable[Material], scene: Unit, keepSubMeshes: Boolean): Mesh = js.native
+    def toMesh(name: String, material: Nullable[Material], scene: Scene): Mesh = js.native
+    def toMesh(name: String, material: Nullable[Material], scene: Scene, keepSubMeshes: Boolean): Mesh = js.native
     
     /**
       * Unions this CSG with another CSG
@@ -149,9 +146,7 @@ object csgMod {
       * @param mesh The Mesh to convert to CSG
       * @returns A new CSG from the Mesh
       */
-    @JSImport("babylonjs/Meshes/csg", "CSG.FromMesh")
-    @js.native
-    def FromMesh(mesh: Mesh): CSG = js.native
+    inline def FromMesh(mesh: Mesh): CSG = ^.asInstanceOf[js.Dynamic].applyDynamic("FromMesh")(mesh.asInstanceOf[js.Any]).asInstanceOf[CSG]
     
     /**
       * Construct a CSG solid from a list of `CSG.Polygon` instances.
@@ -160,7 +155,6 @@ object csgMod {
     @JSImport("babylonjs/Meshes/csg", "CSG.FromPolygons")
     @js.native
     def FromPolygons: js.Any = js.native
-    @scala.inline
-    def FromPolygons_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FromPolygons")(x.asInstanceOf[js.Any])
+    inline def FromPolygons_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FromPolygons")(x.asInstanceOf[js.Any])
   }
 }

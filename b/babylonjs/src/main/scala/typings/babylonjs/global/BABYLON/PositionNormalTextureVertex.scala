@@ -2,7 +2,6 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.PositionNormalTextureVertex")
@@ -14,12 +13,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param uv the uv of the vertex (default: 0,0)
   */
 class PositionNormalTextureVertex ()
-  extends typings.babylonjs.BABYLON.PositionNormalTextureVertex {
+  extends StObject
+     with typings.babylonjs.BABYLON.PositionNormalTextureVertex {
   def this(/** the position of the vertex (defaut: 0,0,0) */
   position: typings.babylonjs.BABYLON.Vector3) = this()
   def this(
     /** the position of the vertex (defaut: 0,0,0) */
-  position: js.UndefOr[scala.Nothing],
+  position: Unit,
     /** the normal of the vertex (defaut: 0,1,0) */
   normal: typings.babylonjs.BABYLON.Vector3
   ) = this()
@@ -31,15 +31,15 @@ class PositionNormalTextureVertex ()
   ) = this()
   def this(
     /** the position of the vertex (defaut: 0,0,0) */
-  position: js.UndefOr[scala.Nothing],
+  position: Unit,
     /** the normal of the vertex (defaut: 0,1,0) */
-  normal: js.UndefOr[scala.Nothing],
+  normal: Unit,
     /** the uv of the vertex (default: 0,0) */
   uv: typings.babylonjs.BABYLON.Vector2
   ) = this()
   def this(
     /** the position of the vertex (defaut: 0,0,0) */
-  position: js.UndefOr[scala.Nothing],
+  position: Unit,
     /** the normal of the vertex (defaut: 0,1,0) */
   normal: typings.babylonjs.BABYLON.Vector3,
     /** the uv of the vertex (default: 0,0) */
@@ -49,7 +49,7 @@ class PositionNormalTextureVertex ()
     /** the position of the vertex (defaut: 0,0,0) */
   position: typings.babylonjs.BABYLON.Vector3,
     /** the normal of the vertex (defaut: 0,1,0) */
-  normal: js.UndefOr[scala.Nothing],
+  normal: Unit,
     /** the uv of the vertex (default: 0,0) */
   uv: typings.babylonjs.BABYLON.Vector2
   ) = this()
@@ -61,4 +61,16 @@ class PositionNormalTextureVertex ()
     /** the uv of the vertex (default: 0,0) */
   uv: typings.babylonjs.BABYLON.Vector2
   ) = this()
+  
+  /** the normal of the vertex (defaut: 0,1,0) */
+  /* CompleteClass */
+  var normal: typings.babylonjs.BABYLON.Vector3 = js.native
+  
+  /** the position of the vertex (defaut: 0,0,0) */
+  /* CompleteClass */
+  var position: typings.babylonjs.BABYLON.Vector3 = js.native
+  
+  /** the uv of the vertex (default: 0,0) */
+  /* CompleteClass */
+  var uv: typings.babylonjs.BABYLON.Vector2 = js.native
 }

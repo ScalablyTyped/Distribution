@@ -4,13 +4,13 @@ import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.BABYLON.PostProcessOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.SharpenPostProcess")
 @js.native
 class SharpenPostProcess protected ()
-  extends typings.babylonjs.BABYLON.SharpenPostProcess {
+  extends StObject
+     with typings.babylonjs.BABYLON.SharpenPostProcess {
   /**
     * Creates a new instance ConvolutionPostProcess
     * @param name The name of the effect.
@@ -36,13 +36,15 @@ class SharpenPostProcess protected ()
 /* static members */
 object SharpenPostProcess {
   
-  /** @hidden */
-  @JSGlobal("BABYLON.SharpenPostProcess._Parse")
+  @JSGlobal("BABYLON.SharpenPostProcess")
   @js.native
-  def _Parse(
+  val ^ : js.Any = js.native
+  
+  /** @hidden */
+  inline def _Parse(
     parsedPostProcess: js.Any,
     targetCamera: typings.babylonjs.BABYLON.Camera,
     scene: typings.babylonjs.BABYLON.Scene,
     rootUrl: String
-  ): typings.babylonjs.BABYLON.SharpenPostProcess = js.native
+  ): typings.babylonjs.BABYLON.SharpenPostProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.SharpenPostProcess]
 }

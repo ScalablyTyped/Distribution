@@ -8,7 +8,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object physicsViewerMod {
@@ -22,49 +21,49 @@ object physicsViewerMod {
       */
     def this(scene: Scene) = this()
     
-    var _debugBoxMesh: js.Any = js.native
+    /* private */ var _debugBoxMesh: js.Any = js.native
     
-    var _debugCylinderMesh: js.Any = js.native
+    /* private */ var _debugCylinderMesh: js.Any = js.native
     
-    var _debugMaterial: js.Any = js.native
+    /* private */ var _debugMaterial: js.Any = js.native
     
-    var _debugMeshMeshes: js.Any = js.native
+    /* private */ var _debugMeshMeshes: js.Any = js.native
     
-    var _debugSphereMesh: js.Any = js.native
+    /* private */ var _debugSphereMesh: js.Any = js.native
     
-    var _getDebugBoxMesh: js.Any = js.native
+    /* private */ var _getDebugBoxMesh: js.Any = js.native
     
-    var _getDebugCylinderMesh: js.Any = js.native
+    /* private */ var _getDebugCylinderMesh: js.Any = js.native
     
-    var _getDebugMaterial: js.Any = js.native
+    /* private */ var _getDebugMaterial: js.Any = js.native
     
-    var _getDebugMesh: js.Any = js.native
+    /* private */ var _getDebugMesh: js.Any = js.native
     
-    var _getDebugMeshMesh: js.Any = js.native
+    /* private */ var _getDebugMeshMesh: js.Any = js.native
     
-    var _getDebugSphereMesh: js.Any = js.native
-    
-    /** @hidden */
-    var _impostors: js.Array[Nullable[PhysicsImpostor]] = js.native
+    /* private */ var _getDebugSphereMesh: js.Any = js.native
     
     /** @hidden */
-    var _meshes: js.Array[Nullable[AbstractMesh]] = js.native
+    /* protected */ var _impostors: js.Array[Nullable[PhysicsImpostor]] = js.native
     
     /** @hidden */
-    var _numMeshes: Double = js.native
+    /* protected */ var _meshes: js.Array[Nullable[AbstractMesh]] = js.native
     
     /** @hidden */
-    var _physicsEnginePlugin: Nullable[IPhysicsEnginePlugin] = js.native
-    
-    var _renderFunction: js.Any = js.native
+    /* protected */ var _numMeshes: Double = js.native
     
     /** @hidden */
-    var _scene: Nullable[Scene] = js.native
+    /* protected */ var _physicsEnginePlugin: Nullable[IPhysicsEnginePlugin] = js.native
+    
+    /* private */ var _renderFunction: js.Any = js.native
+    
+    /** @hidden */
+    /* protected */ var _scene: Nullable[Scene] = js.native
     
     /** @hidden */
     /* protected */ def _updateDebugMeshes(): Unit = js.native
     
-    var _utilityLayer: js.Any = js.native
+    /* private */ var _utilityLayer: js.Any = js.native
     
     /** Releases all resources */
     def dispose(): Unit = js.native

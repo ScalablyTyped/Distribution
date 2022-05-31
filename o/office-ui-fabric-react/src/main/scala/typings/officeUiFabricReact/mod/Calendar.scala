@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact.mod
 
+import typings.officeUiFabricReact.calendarTypesMod.ICalendarProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Calendar protected ()
   extends typings.officeUiFabricReact.libCalendarMod.Calendar {
-  def this(props: typings.officeUiFabricReact.calendarTypesMod.ICalendarProps) = this()
+  def this(props: ICalendarProps) = this()
 }
 /* static members */
 object Calendar {
@@ -19,6 +20,6 @@ object Calendar {
   
   @JSImport("office-ui-fabric-react", "Calendar.defaultProps")
   @js.native
-  def defaultProps: typings.officeUiFabricReact.calendarTypesMod.ICalendarProps = js.native
-  inline def defaultProps_=(x: typings.officeUiFabricReact.calendarTypesMod.ICalendarProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  def defaultProps: ICalendarProps = js.native
+  inline def defaultProps_=(x: ICalendarProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

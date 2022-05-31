@@ -4,7 +4,6 @@ import typings.std.EventTarget
 import typings.std.FrameRequestCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Type definitions for WebVR API
@@ -12,7 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Definitions by: six a <https://github.com/lostfictions>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 @js.native
-trait VRDisplay extends EventTarget {
+trait VRDisplay
+  extends StObject
+     with EventTarget {
   
   /**
     * Passing the value returned by `requestAnimationFrame` to

@@ -3,13 +3,11 @@ package typings.babylonjs.legacyMod
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object babylonjsMaterialsTexturesBaseTextureAugmentingMod {
   
-  @js.native
   trait BaseTexture extends StObject {
     
     /**
@@ -17,24 +15,20 @@ object babylonjsMaterialsTexturesBaseTextureAugmentingMod {
       * This is mainly use as a fast way to recover IBL Diffuse irradiance data.
       * @see https://learnopengl.com/PBR/IBL/Diffuse-irradiance
       */
-    var sphericalPolynomial: Nullable[typings.babylonjs.sphericalPolynomialMod.SphericalPolynomial] = js.native
+    var sphericalPolynomial: Nullable[typings.babylonjs.sphericalPolynomialMod.SphericalPolynomial]
   }
   object BaseTexture {
     
-    @scala.inline
-    def apply(): typings.babylonjs.legacyMod.babylonjsMaterialsTexturesBaseTextureAugmentingMod.BaseTexture = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(): typings.babylonjs.legacyMod.babylonjsMaterialsTexturesBaseTextureAugmentingMod.BaseTexture = {
+      val __obj = js.Dynamic.literal(sphericalPolynomial = null)
       __obj.asInstanceOf[typings.babylonjs.legacyMod.babylonjsMaterialsTexturesBaseTextureAugmentingMod.BaseTexture]
     }
     
-    @scala.inline
-    implicit class BaseTextureMutableBuilder[Self <: typings.babylonjs.legacyMod.babylonjsMaterialsTexturesBaseTextureAugmentingMod.BaseTexture] (val x: Self) extends AnyVal {
+    extension [Self <: typings.babylonjs.legacyMod.babylonjsMaterialsTexturesBaseTextureAugmentingMod.BaseTexture](x: Self) {
       
-      @scala.inline
-      def setSphericalPolynomial(value: Nullable[typings.babylonjs.sphericalPolynomialMod.SphericalPolynomial]): Self = StObject.set(x, "sphericalPolynomial", value.asInstanceOf[js.Any])
+      inline def setSphericalPolynomial(value: Nullable[typings.babylonjs.sphericalPolynomialMod.SphericalPolynomial]): Self = StObject.set(x, "sphericalPolynomial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSphericalPolynomialNull: Self = StObject.set(x, "sphericalPolynomial", null)
+      inline def setSphericalPolynomialNull: Self = StObject.set(x, "sphericalPolynomial", null)
     }
   }
 }

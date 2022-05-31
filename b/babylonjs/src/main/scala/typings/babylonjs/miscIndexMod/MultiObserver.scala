@@ -2,7 +2,6 @@ package typings.babylonjs.miscIndexMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Misc/index", "MultiObserver")
@@ -12,6 +11,10 @@ class MultiObserver[T] ()
 /* static members */
 object MultiObserver {
   
+  @JSImport("babylonjs/Misc/index", "MultiObserver")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Raise a callback when one of the observable will notify
     * @param observables defines a list of observables to watch
@@ -20,33 +23,25 @@ object MultiObserver {
     * @param scope defines the current scope used to restore the JS context
     * @returns the new MultiObserver
     */
-  @JSImport("babylonjs/Misc/index", "MultiObserver.Watch")
-  @js.native
-  def Watch[T](
+  inline def Watch[T](
     observables: js.Array[typings.babylonjs.observableMod.Observable[T]],
     callback: js.Function2[/* eventData */ T, /* eventState */ typings.babylonjs.observableMod.EventState, Unit]
-  ): typings.babylonjs.observableMod.MultiObserver[T] = js.native
-  @JSImport("babylonjs/Misc/index", "MultiObserver.Watch")
-  @js.native
-  def Watch[T](
-    observables: js.Array[typings.babylonjs.observableMod.Observable[T]],
-    callback: js.Function2[/* eventData */ T, /* eventState */ typings.babylonjs.observableMod.EventState, Unit],
-    mask: js.UndefOr[scala.Nothing],
-    scope: js.Any
-  ): typings.babylonjs.observableMod.MultiObserver[T] = js.native
-  @JSImport("babylonjs/Misc/index", "MultiObserver.Watch")
-  @js.native
-  def Watch[T](
+  ): typings.babylonjs.observableMod.MultiObserver[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("Watch")(observables.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.observableMod.MultiObserver[T]]
+  inline def Watch[T](
     observables: js.Array[typings.babylonjs.observableMod.Observable[T]],
     callback: js.Function2[/* eventData */ T, /* eventState */ typings.babylonjs.observableMod.EventState, Unit],
     mask: Double
-  ): typings.babylonjs.observableMod.MultiObserver[T] = js.native
-  @JSImport("babylonjs/Misc/index", "MultiObserver.Watch")
-  @js.native
-  def Watch[T](
+  ): typings.babylonjs.observableMod.MultiObserver[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("Watch")(observables.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.observableMod.MultiObserver[T]]
+  inline def Watch[T](
     observables: js.Array[typings.babylonjs.observableMod.Observable[T]],
     callback: js.Function2[/* eventData */ T, /* eventState */ typings.babylonjs.observableMod.EventState, Unit],
     mask: Double,
     scope: js.Any
-  ): typings.babylonjs.observableMod.MultiObserver[T] = js.native
+  ): typings.babylonjs.observableMod.MultiObserver[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("Watch")(observables.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.observableMod.MultiObserver[T]]
+  inline def Watch[T](
+    observables: js.Array[typings.babylonjs.observableMod.Observable[T]],
+    callback: js.Function2[/* eventData */ T, /* eventState */ typings.babylonjs.observableMod.EventState, Unit],
+    mask: Unit,
+    scope: js.Any
+  ): typings.babylonjs.observableMod.MultiObserver[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("Watch")(observables.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.observableMod.MultiObserver[T]]
 }

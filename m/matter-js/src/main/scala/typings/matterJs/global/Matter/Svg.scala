@@ -1,0 +1,30 @@
+package typings.matterJs.global.Matter
+
+import typings.std.SVGPathElement
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSGlobal("Matter.Svg")
+@js.native
+class Svg ()
+  extends typings.matterJs.mod.Svg
+/* static members */
+object Svg {
+  
+  @JSGlobal("Matter.Svg")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Converts an SVG path into an array of vector points.
+    * If the input path forms a concave shape, you must decompose the result into convex parts before use.
+    * See `Bodies.fromVertices` which provides support for this.
+    * Note that this function is not guaranteed to support complex paths (such as those with holes).
+    * @method pathToVertices
+    * @param {SVGPathElement} path
+    * @param {Number} [sampleLength=15]
+    * @return {Vector[]} points
+    */
+  inline def pathToVertices(path: SVGPathElement, sampleLength: Double): js.Array[typings.matterJs.mod.Vector] = (^.asInstanceOf[js.Dynamic].applyDynamic("pathToVertices")(path.asInstanceOf[js.Any], sampleLength.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.matterJs.mod.Vector]]
+}

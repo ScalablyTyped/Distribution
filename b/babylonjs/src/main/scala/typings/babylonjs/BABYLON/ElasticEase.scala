@@ -2,22 +2,21 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ElasticEase extends EasingFunction {
+trait ElasticEase
+  extends StObject
+     with EasingFunction {
   
   /** Defines the number of oscillations*/
-  var oscillations: Double = js.native
+  var oscillations: Double
   
   /** Defines the amplitude of the oscillations*/
-  var springiness: Double = js.native
+  var springiness: Double
 }
 object ElasticEase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _easingMode: js.Any,
     ease: Double => Double,
     easeInCore: Double => Double,
@@ -30,13 +29,10 @@ object ElasticEase {
     __obj.asInstanceOf[ElasticEase]
   }
   
-  @scala.inline
-  implicit class ElasticEaseMutableBuilder[Self <: ElasticEase] (val x: Self) extends AnyVal {
+  extension [Self <: ElasticEase](x: Self) {
     
-    @scala.inline
-    def setOscillations(value: Double): Self = StObject.set(x, "oscillations", value.asInstanceOf[js.Any])
+    inline def setOscillations(value: Double): Self = StObject.set(x, "oscillations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpringiness(value: Double): Self = StObject.set(x, "springiness", value.asInstanceOf[js.Any])
+    inline def setSpringiness(value: Double): Self = StObject.set(x, "springiness", value.asInstanceOf[js.Any])
   }
 }

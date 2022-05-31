@@ -6,7 +6,6 @@ import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IEditor
 import typings.jupyterlabStatusbar.lineColMod.LineCol.Model
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lineColMod {
@@ -21,14 +20,14 @@ object lineColMod {
     /**
       * A click handler for the widget.
       */
-    var _handleClick: js.Any = js.native
+    /* private */ var _handleClick: js.Any = js.native
     
     /**
       * Handle submission for the widget.
       */
-    var _handleSubmit: js.Any = js.native
+    /* private */ var _handleSubmit: js.Any = js.native
     
-    var _popup: js.Any = js.native
+    /* private */ var _popup: js.Any = js.native
   }
   object LineCol {
     
@@ -39,20 +38,20 @@ object lineColMod {
     @js.native
     class Model () extends VDomModel {
       
-      var _column: js.Any = js.native
+      /* private */ var _column: js.Any = js.native
       
-      var _editor: js.Any = js.native
+      /* private */ var _editor: js.Any = js.native
       
-      var _getAllState: js.Any = js.native
+      /* private */ var _getAllState: js.Any = js.native
       
-      var _line: js.Any = js.native
+      /* private */ var _line: js.Any = js.native
       
       /**
         * React to a change in the cursors of the current editor.
         */
-      var _onSelectionChanged: js.Any = js.native
+      /* private */ var _onSelectionChanged: js.Any = js.native
       
-      var _triggerChange: js.Any = js.native
+      /* private */ var _triggerChange: js.Any = js.native
       
       /**
         * The current column of the model.
@@ -80,44 +79,38 @@ object lineColMod {
     /**
       * Props for LineColComponent.
       */
-    @js.native
     trait IProps extends StObject {
       
       /**
         * The current column number.
         */
-      var column: Double = js.native
+      var column: Double
       
       /**
         * A click handler for the LineColComponent, which
         * we use to launch the LineFormComponent.
         */
-      def handleClick(): Unit = js.native
+      def handleClick(): Unit
       
       /**
         * The current line number.
         */
-      var line: Double = js.native
+      var line: Double
     }
     object IProps {
       
-      @scala.inline
-      def apply(column: Double, handleClick: () => Unit, line: Double): IProps = {
+      inline def apply(column: Double, handleClick: () => Unit, line: Double): IProps = {
         val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], handleClick = js.Any.fromFunction0(handleClick), line = line.asInstanceOf[js.Any])
         __obj.asInstanceOf[IProps]
       }
       
-      @scala.inline
-      implicit class IPropsMutableBuilder[Self <: IProps] (val x: Self) extends AnyVal {
+      extension [Self <: IProps](x: Self) {
         
-        @scala.inline
-        def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+        inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHandleClick(value: () => Unit): Self = StObject.set(x, "handleClick", js.Any.fromFunction0(value))
+        inline def setHandleClick(value: () => Unit): Self = StObject.set(x, "handleClick", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+        inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       }
     }
   }

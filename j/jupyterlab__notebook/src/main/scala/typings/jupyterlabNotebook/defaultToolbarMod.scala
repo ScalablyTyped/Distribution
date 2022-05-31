@@ -13,7 +13,6 @@ import typings.std.Element
 import typings.std.HTMLSelectElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object defaultToolbarMod {
@@ -26,7 +25,7 @@ object defaultToolbarMod {
       */
     def this(widget: Notebook) = this()
     
-    var _notebook: js.Any = js.native
+    /* private */ var _notebook: js.Any = js.native
     
     /**
       * Handle `change` events for the HTMLSelect component.
@@ -41,6 +40,10 @@ object defaultToolbarMod {
   
   object ToolbarItems {
     
+    @JSImport("@jupyterlab/notebook/lib/default-toolbar", "ToolbarItems")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Create a cell type switcher item.
       *
@@ -52,70 +55,48 @@ object defaultToolbarMod {
       * cell types of the selected cells.
       * It can handle a change to the context.
       */
-    @JSImport("@jupyterlab/notebook/lib/default-toolbar", "ToolbarItems.createCellTypeItem")
-    @js.native
-    def createCellTypeItem(panel: NotebookPanel): Widget = js.native
+    inline def createCellTypeItem(panel: NotebookPanel): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("createCellTypeItem")(panel.asInstanceOf[js.Any]).asInstanceOf[Widget]
     
     /**
       * Create a copy toolbar item.
       */
-    @JSImport("@jupyterlab/notebook/lib/default-toolbar", "ToolbarItems.createCopyButton")
-    @js.native
-    def createCopyButton(panel: NotebookPanel): Widget = js.native
+    inline def createCopyButton(panel: NotebookPanel): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("createCopyButton")(panel.asInstanceOf[js.Any]).asInstanceOf[Widget]
     
     /**
       * Create a cut toolbar item.
       */
-    @JSImport("@jupyterlab/notebook/lib/default-toolbar", "ToolbarItems.createCutButton")
-    @js.native
-    def createCutButton(panel: NotebookPanel): Widget = js.native
+    inline def createCutButton(panel: NotebookPanel): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("createCutButton")(panel.asInstanceOf[js.Any]).asInstanceOf[Widget]
     
     /**
       * Create an insert toolbar item.
       */
-    @JSImport("@jupyterlab/notebook/lib/default-toolbar", "ToolbarItems.createInsertButton")
-    @js.native
-    def createInsertButton(panel: NotebookPanel): Widget = js.native
+    inline def createInsertButton(panel: NotebookPanel): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInsertButton")(panel.asInstanceOf[js.Any]).asInstanceOf[Widget]
     
     /**
       * Create a paste toolbar item.
       */
-    @JSImport("@jupyterlab/notebook/lib/default-toolbar", "ToolbarItems.createPasteButton")
-    @js.native
-    def createPasteButton(panel: NotebookPanel): Widget = js.native
+    inline def createPasteButton(panel: NotebookPanel): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("createPasteButton")(panel.asInstanceOf[js.Any]).asInstanceOf[Widget]
     
     /**
       * Create a restart run all toolbar item
       */
-    @JSImport("@jupyterlab/notebook/lib/default-toolbar", "ToolbarItems.createRestartRunAllButton")
-    @js.native
-    def createRestartRunAllButton(panel: NotebookPanel): Widget = js.native
-    @JSImport("@jupyterlab/notebook/lib/default-toolbar", "ToolbarItems.createRestartRunAllButton")
-    @js.native
-    def createRestartRunAllButton(panel: NotebookPanel, dialogs: IDialogs): Widget = js.native
+    inline def createRestartRunAllButton(panel: NotebookPanel): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("createRestartRunAllButton")(panel.asInstanceOf[js.Any]).asInstanceOf[Widget]
+    inline def createRestartRunAllButton(panel: NotebookPanel, dialogs: IDialogs): Widget = (^.asInstanceOf[js.Dynamic].applyDynamic("createRestartRunAllButton")(panel.asInstanceOf[js.Any], dialogs.asInstanceOf[js.Any])).asInstanceOf[Widget]
     
     /**
       * Create a run toolbar item.
       */
-    @JSImport("@jupyterlab/notebook/lib/default-toolbar", "ToolbarItems.createRunButton")
-    @js.native
-    def createRunButton(panel: NotebookPanel): Widget = js.native
+    inline def createRunButton(panel: NotebookPanel): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("createRunButton")(panel.asInstanceOf[js.Any]).asInstanceOf[Widget]
     
     /**
       * Create save button toolbar item.
       */
-    @JSImport("@jupyterlab/notebook/lib/default-toolbar", "ToolbarItems.createSaveButton")
-    @js.native
-    def createSaveButton(panel: NotebookPanel): Widget = js.native
+    inline def createSaveButton(panel: NotebookPanel): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("createSaveButton")(panel.asInstanceOf[js.Any]).asInstanceOf[Widget]
     
     /**
       * Get the default toolbar items for panel
       */
-    @JSImport("@jupyterlab/notebook/lib/default-toolbar", "ToolbarItems.getDefaultItems")
-    @js.native
-    def getDefaultItems(panel: NotebookPanel): js.Array[IToolbarItem] = js.native
-    @JSImport("@jupyterlab/notebook/lib/default-toolbar", "ToolbarItems.getDefaultItems")
-    @js.native
-    def getDefaultItems(panel: NotebookPanel, sessionDialogs: ISessionContextDialogs): js.Array[IToolbarItem] = js.native
+    inline def getDefaultItems(panel: NotebookPanel): js.Array[IToolbarItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultItems")(panel.asInstanceOf[js.Any]).asInstanceOf[js.Array[IToolbarItem]]
+    inline def getDefaultItems(panel: NotebookPanel, sessionDialogs: ISessionContextDialogs): js.Array[IToolbarItem] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultItems")(panel.asInstanceOf[js.Any], sessionDialogs.asInstanceOf[js.Any])).asInstanceOf[js.Array[IToolbarItem]]
   }
 }

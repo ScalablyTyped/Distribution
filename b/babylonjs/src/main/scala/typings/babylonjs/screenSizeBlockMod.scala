@@ -5,7 +5,6 @@ import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
 import typings.babylonjs.nodeMaterialBuildStateMod.NodeMaterialBuildState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object screenSizeBlockMod {
@@ -19,9 +18,9 @@ object screenSizeBlockMod {
       */
     def this(name: String) = this()
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
-    var _varName: js.Any = js.native
+    /* private */ var _varName: js.Any = js.native
     
     /* protected */ def writeOutputs(state: NodeMaterialBuildState, varName: String): String = js.native
     

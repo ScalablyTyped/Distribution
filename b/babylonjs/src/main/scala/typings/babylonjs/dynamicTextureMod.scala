@@ -4,7 +4,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.textureMod.Texture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dynamicTextureMod {
@@ -12,8 +11,8 @@ object dynamicTextureMod {
   @JSImport("babylonjs/Materials/Textures/dynamicTexture", "DynamicTexture")
   @js.native
   class DynamicTexture protected () extends Texture {
-    def this(name: String, options: js.Any, scene: js.UndefOr[scala.Nothing], generateMipMaps: Boolean) = this()
     def this(name: String, options: js.Any, scene: Null, generateMipMaps: Boolean) = this()
+    def this(name: String, options: js.Any, scene: Unit, generateMipMaps: Boolean) = this()
     /**
       * Creates a DynamicTexture
       * @param name defines the name of the texture
@@ -25,27 +24,13 @@ object dynamicTextureMod {
       * @param invertY defines if the texture needs to be inverted on the y axis during loading
       */
     def this(name: String, options: js.Any, scene: Scene, generateMipMaps: Boolean) = this()
-    def this(
-      name: String,
-      options: js.Any,
-      scene: js.UndefOr[scala.Nothing],
-      generateMipMaps: Boolean,
-      samplingMode: Double
-    ) = this()
     def this(name: String, options: js.Any, scene: Null, generateMipMaps: Boolean, samplingMode: Double) = this()
+    def this(name: String, options: js.Any, scene: Unit, generateMipMaps: Boolean, samplingMode: Double) = this()
     def this(name: String, options: js.Any, scene: Scene, generateMipMaps: Boolean, samplingMode: Double) = this()
     def this(
       name: String,
       options: js.Any,
-      scene: js.UndefOr[scala.Nothing],
-      generateMipMaps: Boolean,
-      samplingMode: js.UndefOr[scala.Nothing],
-      format: Double
-    ) = this()
-    def this(
-      name: String,
-      options: js.Any,
-      scene: js.UndefOr[scala.Nothing],
+      scene: Null,
       generateMipMaps: Boolean,
       samplingMode: Double,
       format: Double
@@ -55,13 +40,13 @@ object dynamicTextureMod {
       options: js.Any,
       scene: Null,
       generateMipMaps: Boolean,
-      samplingMode: js.UndefOr[scala.Nothing],
+      samplingMode: Unit,
       format: Double
     ) = this()
     def this(
       name: String,
       options: js.Any,
-      scene: Null,
+      scene: Unit,
       generateMipMaps: Boolean,
       samplingMode: Double,
       format: Double
@@ -69,9 +54,9 @@ object dynamicTextureMod {
     def this(
       name: String,
       options: js.Any,
-      scene: Scene,
+      scene: Unit,
       generateMipMaps: Boolean,
-      samplingMode: js.UndefOr[scala.Nothing],
+      samplingMode: Unit,
       format: Double
     ) = this()
     def this(
@@ -85,65 +70,10 @@ object dynamicTextureMod {
     def this(
       name: String,
       options: js.Any,
-      scene: js.UndefOr[scala.Nothing],
+      scene: Scene,
       generateMipMaps: Boolean,
-      samplingMode: js.UndefOr[scala.Nothing],
-      format: js.UndefOr[scala.Nothing],
-      invertY: Boolean
-    ) = this()
-    def this(
-      name: String,
-      options: js.Any,
-      scene: js.UndefOr[scala.Nothing],
-      generateMipMaps: Boolean,
-      samplingMode: js.UndefOr[scala.Nothing],
-      format: Double,
-      invertY: Boolean
-    ) = this()
-    def this(
-      name: String,
-      options: js.Any,
-      scene: js.UndefOr[scala.Nothing],
-      generateMipMaps: Boolean,
-      samplingMode: Double,
-      format: js.UndefOr[scala.Nothing],
-      invertY: Boolean
-    ) = this()
-    def this(
-      name: String,
-      options: js.Any,
-      scene: js.UndefOr[scala.Nothing],
-      generateMipMaps: Boolean,
-      samplingMode: Double,
-      format: Double,
-      invertY: Boolean
-    ) = this()
-    def this(
-      name: String,
-      options: js.Any,
-      scene: Null,
-      generateMipMaps: Boolean,
-      samplingMode: js.UndefOr[scala.Nothing],
-      format: js.UndefOr[scala.Nothing],
-      invertY: Boolean
-    ) = this()
-    def this(
-      name: String,
-      options: js.Any,
-      scene: Null,
-      generateMipMaps: Boolean,
-      samplingMode: js.UndefOr[scala.Nothing],
-      format: Double,
-      invertY: Boolean
-    ) = this()
-    def this(
-      name: String,
-      options: js.Any,
-      scene: Null,
-      generateMipMaps: Boolean,
-      samplingMode: Double,
-      format: js.UndefOr[scala.Nothing],
-      invertY: Boolean
+      samplingMode: Unit,
+      format: Double
     ) = this()
     def this(
       name: String,
@@ -157,10 +87,64 @@ object dynamicTextureMod {
     def this(
       name: String,
       options: js.Any,
-      scene: Scene,
+      scene: Null,
       generateMipMaps: Boolean,
-      samplingMode: js.UndefOr[scala.Nothing],
-      format: js.UndefOr[scala.Nothing],
+      samplingMode: Double,
+      format: Unit,
+      invertY: Boolean
+    ) = this()
+    def this(
+      name: String,
+      options: js.Any,
+      scene: Null,
+      generateMipMaps: Boolean,
+      samplingMode: Unit,
+      format: Double,
+      invertY: Boolean
+    ) = this()
+    def this(
+      name: String,
+      options: js.Any,
+      scene: Null,
+      generateMipMaps: Boolean,
+      samplingMode: Unit,
+      format: Unit,
+      invertY: Boolean
+    ) = this()
+    def this(
+      name: String,
+      options: js.Any,
+      scene: Unit,
+      generateMipMaps: Boolean,
+      samplingMode: Double,
+      format: Double,
+      invertY: Boolean
+    ) = this()
+    def this(
+      name: String,
+      options: js.Any,
+      scene: Unit,
+      generateMipMaps: Boolean,
+      samplingMode: Double,
+      format: Unit,
+      invertY: Boolean
+    ) = this()
+    def this(
+      name: String,
+      options: js.Any,
+      scene: Unit,
+      generateMipMaps: Boolean,
+      samplingMode: Unit,
+      format: Double,
+      invertY: Boolean
+    ) = this()
+    def this(
+      name: String,
+      options: js.Any,
+      scene: Unit,
+      generateMipMaps: Boolean,
+      samplingMode: Unit,
+      format: Unit,
       invertY: Boolean
     ) = this()
     def this(
@@ -168,7 +152,7 @@ object dynamicTextureMod {
       options: js.Any,
       scene: Scene,
       generateMipMaps: Boolean,
-      samplingMode: js.UndefOr[scala.Nothing],
+      samplingMode: Double,
       format: Double,
       invertY: Boolean
     ) = this()
@@ -178,7 +162,7 @@ object dynamicTextureMod {
       scene: Scene,
       generateMipMaps: Boolean,
       samplingMode: Double,
-      format: js.UndefOr[scala.Nothing],
+      format: Unit,
       invertY: Boolean
     ) = this()
     def this(
@@ -186,20 +170,29 @@ object dynamicTextureMod {
       options: js.Any,
       scene: Scene,
       generateMipMaps: Boolean,
-      samplingMode: Double,
+      samplingMode: Unit,
       format: Double,
+      invertY: Boolean
+    ) = this()
+    def this(
+      name: String,
+      options: js.Any,
+      scene: Scene,
+      generateMipMaps: Boolean,
+      samplingMode: Unit,
+      format: Unit,
       invertY: Boolean
     ) = this()
     
-    var _IsCanvasElement: js.Any = js.native
+    /* private */ var _IsCanvasElement: js.Any = js.native
     
-    var _canvas: js.Any = js.native
+    /* private */ var _canvas: js.Any = js.native
     
-    var _context: js.Any = js.native
+    /* private */ var _context: js.Any = js.native
     
-    var _generateMipMaps: js.Any = js.native
+    /* private */ var _generateMipMaps: js.Any = js.native
     
-    var _recreate: js.Any = js.native
+    /* private */ var _recreate: js.Any = js.native
     
     /**
       * Clears the texture
@@ -247,8 +240,8 @@ object dynamicTextureMod {
       * @param premulAlpha defines if alpha is stored as premultiplied (default is false)
       */
     def update(): Unit = js.native
-    def update(invertY: js.UndefOr[scala.Nothing], premulAlpha: Boolean): Unit = js.native
     def update(invertY: Boolean): Unit = js.native
     def update(invertY: Boolean, premulAlpha: Boolean): Unit = js.native
+    def update(invertY: Unit, premulAlpha: Boolean): Unit = js.native
   }
 }

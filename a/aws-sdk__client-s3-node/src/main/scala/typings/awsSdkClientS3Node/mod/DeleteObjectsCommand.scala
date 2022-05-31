@@ -1,5 +1,6 @@
 package typings.awsSdkClientS3Node.mod
 
+import typings.awsSdkClientS3Node.typesDeleteObjectsInputMod.DeleteObjectsInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class DeleteObjectsCommand protected ()
   extends typings.awsSdkClientS3Node.deleteObjectsCommandMod.DeleteObjectsCommand {
-  def this(input: typings.awsSdkClientS3Node.typesDeleteObjectsInputMod.DeleteObjectsInput) = this()
+  def this(input: DeleteObjectsInput) = this()
 }

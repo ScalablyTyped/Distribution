@@ -3,7 +3,6 @@ package typings.babylonjs
 import typings.babylonjs.sceneMod.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sceneSerializerMod {
@@ -14,21 +13,21 @@ object sceneSerializerMod {
   /* static members */
   object SceneSerializer {
     
+    @JSImport("babylonjs/Misc/sceneSerializer", "SceneSerializer")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Clear cache used by a previous serialization
       */
-    @JSImport("babylonjs/Misc/sceneSerializer", "SceneSerializer.ClearCache")
-    @js.native
-    def ClearCache(): Unit = js.native
+    inline def ClearCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ClearCache")().asInstanceOf[Unit]
     
     /**
       * Serialize a scene into a JSON compatible object
       * @param scene defines the scene to serialize
       * @returns a JSON compatible object
       */
-    @JSImport("babylonjs/Misc/sceneSerializer", "SceneSerializer.Serialize")
-    @js.native
-    def Serialize(scene: Scene): js.Any = js.native
+    inline def Serialize(scene: Scene): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Serialize")(scene.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * Serialize a mesh into a JSON compatible object
@@ -37,17 +36,9 @@ object sceneSerializerMod {
       * @param withChildren defines if children must be serialized as well
       * @returns a JSON compatible object
       */
-    @JSImport("babylonjs/Misc/sceneSerializer", "SceneSerializer.SerializeMesh")
-    @js.native
-    def SerializeMesh(toSerialize: js.Any): js.Any = js.native
-    @JSImport("babylonjs/Misc/sceneSerializer", "SceneSerializer.SerializeMesh")
-    @js.native
-    def SerializeMesh(toSerialize: js.Any, withParents: js.UndefOr[scala.Nothing], withChildren: Boolean): js.Any = js.native
-    @JSImport("babylonjs/Misc/sceneSerializer", "SceneSerializer.SerializeMesh")
-    @js.native
-    def SerializeMesh(toSerialize: js.Any, withParents: Boolean): js.Any = js.native
-    @JSImport("babylonjs/Misc/sceneSerializer", "SceneSerializer.SerializeMesh")
-    @js.native
-    def SerializeMesh(toSerialize: js.Any, withParents: Boolean, withChildren: Boolean): js.Any = js.native
+    inline def SerializeMesh(toSerialize: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("SerializeMesh")(toSerialize.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def SerializeMesh(toSerialize: js.Any, withParents: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("SerializeMesh")(toSerialize.asInstanceOf[js.Any], withParents.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def SerializeMesh(toSerialize: js.Any, withParents: Boolean, withChildren: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("SerializeMesh")(toSerialize.asInstanceOf[js.Any], withParents.asInstanceOf[js.Any], withChildren.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def SerializeMesh(toSerialize: js.Any, withParents: Unit, withChildren: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("SerializeMesh")(toSerialize.asInstanceOf[js.Any], withParents.asInstanceOf[js.Any], withChildren.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
 }

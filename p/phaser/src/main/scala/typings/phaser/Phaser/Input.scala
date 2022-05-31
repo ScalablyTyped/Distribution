@@ -1572,11 +1572,6 @@ object Input {
     }
     
     /**
-      * Keyboard Codes.
-      */
-    object KeyCodes
-    
-    /**
       * A KeyCombo will listen for a specific string of keys from the Keyboard, and when it receives them
       * it will emit a `keycombomatch` event from the Keyboard Manager.
       * 

@@ -3,101 +3,77 @@ package typings.babylonjs.anon
 import typings.babylonjs.mathVectorMod.Vector4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Arc extends StObject {
   
-  var arc: js.UndefOr[Double] = js.native
+  var arc: js.UndefOr[Double] = js.undefined
   
-  var backUVs: js.UndefOr[Vector4] = js.native
+  var backUVs: js.UndefOr[Vector4] = js.undefined
   
-  var diameter: js.UndefOr[Double] = js.native
+  var diameter: js.UndefOr[Double] = js.undefined
   
-  var diameterX: js.UndefOr[Double] = js.native
+  var diameterX: js.UndefOr[Double] = js.undefined
   
-  var diameterY: js.UndefOr[Double] = js.native
+  var diameterY: js.UndefOr[Double] = js.undefined
   
-  var diameterZ: js.UndefOr[Double] = js.native
+  var diameterZ: js.UndefOr[Double] = js.undefined
   
-  var frontUVs: js.UndefOr[Vector4] = js.native
+  var frontUVs: js.UndefOr[Vector4] = js.undefined
   
-  var segments: js.UndefOr[Double] = js.native
+  var segments: js.UndefOr[Double] = js.undefined
   
-  var sideOrientation: js.UndefOr[Double] = js.native
+  var sideOrientation: js.UndefOr[Double] = js.undefined
   
-  var slice: js.UndefOr[Double] = js.native
+  var slice: js.UndefOr[Double] = js.undefined
 }
 object Arc {
   
-  @scala.inline
-  def apply(): Arc = {
+  inline def apply(): Arc = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Arc]
   }
   
-  @scala.inline
-  implicit class ArcMutableBuilder[Self <: Arc] (val x: Self) extends AnyVal {
+  extension [Self <: Arc](x: Self) {
     
-    @scala.inline
-    def setArc(value: Double): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
+    inline def setArc(value: Double): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArcUndefined: Self = StObject.set(x, "arc", js.undefined)
+    inline def setArcUndefined: Self = StObject.set(x, "arc", js.undefined)
     
-    @scala.inline
-    def setBackUVs(value: Vector4): Self = StObject.set(x, "backUVs", value.asInstanceOf[js.Any])
+    inline def setBackUVs(value: Vector4): Self = StObject.set(x, "backUVs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackUVsUndefined: Self = StObject.set(x, "backUVs", js.undefined)
+    inline def setBackUVsUndefined: Self = StObject.set(x, "backUVs", js.undefined)
     
-    @scala.inline
-    def setDiameter(value: Double): Self = StObject.set(x, "diameter", value.asInstanceOf[js.Any])
+    inline def setDiameter(value: Double): Self = StObject.set(x, "diameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiameterUndefined: Self = StObject.set(x, "diameter", js.undefined)
+    inline def setDiameterUndefined: Self = StObject.set(x, "diameter", js.undefined)
     
-    @scala.inline
-    def setDiameterX(value: Double): Self = StObject.set(x, "diameterX", value.asInstanceOf[js.Any])
+    inline def setDiameterX(value: Double): Self = StObject.set(x, "diameterX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiameterXUndefined: Self = StObject.set(x, "diameterX", js.undefined)
+    inline def setDiameterXUndefined: Self = StObject.set(x, "diameterX", js.undefined)
     
-    @scala.inline
-    def setDiameterY(value: Double): Self = StObject.set(x, "diameterY", value.asInstanceOf[js.Any])
+    inline def setDiameterY(value: Double): Self = StObject.set(x, "diameterY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiameterYUndefined: Self = StObject.set(x, "diameterY", js.undefined)
+    inline def setDiameterYUndefined: Self = StObject.set(x, "diameterY", js.undefined)
     
-    @scala.inline
-    def setDiameterZ(value: Double): Self = StObject.set(x, "diameterZ", value.asInstanceOf[js.Any])
+    inline def setDiameterZ(value: Double): Self = StObject.set(x, "diameterZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiameterZUndefined: Self = StObject.set(x, "diameterZ", js.undefined)
+    inline def setDiameterZUndefined: Self = StObject.set(x, "diameterZ", js.undefined)
     
-    @scala.inline
-    def setFrontUVs(value: Vector4): Self = StObject.set(x, "frontUVs", value.asInstanceOf[js.Any])
+    inline def setFrontUVs(value: Vector4): Self = StObject.set(x, "frontUVs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrontUVsUndefined: Self = StObject.set(x, "frontUVs", js.undefined)
+    inline def setFrontUVsUndefined: Self = StObject.set(x, "frontUVs", js.undefined)
     
-    @scala.inline
-    def setSegments(value: Double): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
+    inline def setSegments(value: Double): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
+    inline def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
     
-    @scala.inline
-    def setSideOrientation(value: Double): Self = StObject.set(x, "sideOrientation", value.asInstanceOf[js.Any])
+    inline def setSideOrientation(value: Double): Self = StObject.set(x, "sideOrientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSideOrientationUndefined: Self = StObject.set(x, "sideOrientation", js.undefined)
+    inline def setSideOrientationUndefined: Self = StObject.set(x, "sideOrientation", js.undefined)
     
-    @scala.inline
-    def setSlice(value: Double): Self = StObject.set(x, "slice", value.asInstanceOf[js.Any])
+    inline def setSlice(value: Double): Self = StObject.set(x, "slice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSliceUndefined: Self = StObject.set(x, "slice", js.undefined)
+    inline def setSliceUndefined: Self = StObject.set(x, "slice", js.undefined)
   }
 }

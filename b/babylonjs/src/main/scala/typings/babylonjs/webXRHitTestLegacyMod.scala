@@ -8,7 +8,6 @@ import typings.babylonjs.webXRFeaturesManagerMod.IWebXRFeature
 import typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webXRHitTestLegacyMod {
@@ -33,17 +32,17 @@ object webXRHitTestLegacyMod {
     options: IWebXRLegacyHitTestOptions
     ) = this()
     
-    var _direction: js.Any = js.native
+    /* private */ var _direction: js.Any = js.native
     
-    var _mat: js.Any = js.native
+    /* private */ var _mat: js.Any = js.native
     
-    var _onHitTestResults: js.Any = js.native
+    /* private */ var _onHitTestResults: js.Any = js.native
     
-    var _onSelect: js.Any = js.native
+    /* private */ var _onSelect: js.Any = js.native
     
-    var _onSelectEnabled: js.Any = js.native
+    /* private */ var _onSelectEnabled: js.Any = js.native
     
-    var _origin: js.Any = js.native
+    /* private */ var _origin: js.Any = js.native
     
     /**
       * Populated with the last native XR Hit Results
@@ -62,6 +61,10 @@ object webXRHitTestLegacyMod {
   }
   /* static members */
   object WebXRHitTestLegacy {
+    
+    @JSImport("babylonjs/XR/features/WebXRHitTestLegacy", "WebXRHitTestLegacy")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * The module's name
@@ -88,17 +91,13 @@ object webXRHitTestLegacyMod {
       * @param filter filter function that will filter the results
       * @returns a promise that resolves with an array of native XR hit result in xr coordinates system
       */
-    @JSImport("babylonjs/XR/features/WebXRHitTestLegacy", "WebXRHitTestLegacy.XRHitTestWithRay")
-    @js.native
-    def XRHitTestWithRay(xrSession: XRSession, xrRay: XRRay, referenceSpace: XRReferenceSpace): js.Promise[js.Array[XRHitResult]] = js.native
-    @JSImport("babylonjs/XR/features/WebXRHitTestLegacy", "WebXRHitTestLegacy.XRHitTestWithRay")
-    @js.native
-    def XRHitTestWithRay(
+    inline def XRHitTestWithRay(xrSession: XRSession, xrRay: XRRay, referenceSpace: XRReferenceSpace): js.Promise[js.Array[XRHitResult]] = (^.asInstanceOf[js.Dynamic].applyDynamic("XRHitTestWithRay")(xrSession.asInstanceOf[js.Any], xrRay.asInstanceOf[js.Any], referenceSpace.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[XRHitResult]]]
+    inline def XRHitTestWithRay(
       xrSession: XRSession,
       xrRay: XRRay,
       referenceSpace: XRReferenceSpace,
       filter: js.Function1[/* result */ XRHitResult, Boolean]
-    ): js.Promise[js.Array[XRHitResult]] = js.native
+    ): js.Promise[js.Array[XRHitResult]] = (^.asInstanceOf[js.Dynamic].applyDynamic("XRHitTestWithRay")(xrSession.asInstanceOf[js.Any], xrRay.asInstanceOf[js.Any], referenceSpace.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[XRHitResult]]]
     
     /**
       * Execute a hit test on the current running session using a select event returned from a transient input (such as touch)
@@ -106,13 +105,13 @@ object webXRHitTestLegacyMod {
       * @param referenceSpace the reference space to use for this hit test
       * @returns a promise that resolves with an array of native XR hit result in xr coordinates system
       */
-    @JSImport("babylonjs/XR/features/WebXRHitTestLegacy", "WebXRHitTestLegacy.XRHitTestWithSelectEvent")
-    @js.native
-    def XRHitTestWithSelectEvent(event: XRInputSourceEvent, referenceSpace: XRReferenceSpace): js.Promise[js.Array[XRHitResult]] = js.native
+    inline def XRHitTestWithSelectEvent(event: XRInputSourceEvent, referenceSpace: XRReferenceSpace): js.Promise[js.Array[XRHitResult]] = (^.asInstanceOf[js.Dynamic].applyDynamic("XRHitTestWithSelectEvent")(event.asInstanceOf[js.Any], referenceSpace.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[XRHitResult]]]
   }
   
   @js.native
-  trait IWebXRHitTestFeature[T /* <: IWebXRLegacyHitResult */] extends IWebXRFeature {
+  trait IWebXRHitTestFeature[T /* <: IWebXRLegacyHitResult */]
+    extends StObject
+       with IWebXRFeature {
     
     /**
       * Triggered when new babylon (transformed) hit test results are available
@@ -120,73 +119,61 @@ object webXRHitTestLegacyMod {
     var onHitTestResultObservable: Observable[js.Array[T]] = js.native
   }
   
-  @js.native
   trait IWebXRLegacyHitResult extends StObject {
     
     /**
       * Transformation matrix that can be applied to a node that will put it in the hit point location
       */
-    var transformationMatrix: Matrix = js.native
+    var transformationMatrix: Matrix
     
     /**
       * The native hit test result
       */
-    var xrHitResult: XRHitResult | XRHitTestResult = js.native
+    var xrHitResult: XRHitResult | XRHitTestResult
   }
   object IWebXRLegacyHitResult {
     
-    @scala.inline
-    def apply(transformationMatrix: Matrix, xrHitResult: XRHitResult | XRHitTestResult): IWebXRLegacyHitResult = {
+    inline def apply(transformationMatrix: Matrix, xrHitResult: XRHitResult | XRHitTestResult): IWebXRLegacyHitResult = {
       val __obj = js.Dynamic.literal(transformationMatrix = transformationMatrix.asInstanceOf[js.Any], xrHitResult = xrHitResult.asInstanceOf[js.Any])
       __obj.asInstanceOf[IWebXRLegacyHitResult]
     }
     
-    @scala.inline
-    implicit class IWebXRLegacyHitResultMutableBuilder[Self <: IWebXRLegacyHitResult] (val x: Self) extends AnyVal {
+    extension [Self <: IWebXRLegacyHitResult](x: Self) {
       
-      @scala.inline
-      def setTransformationMatrix(value: Matrix): Self = StObject.set(x, "transformationMatrix", value.asInstanceOf[js.Any])
+      inline def setTransformationMatrix(value: Matrix): Self = StObject.set(x, "transformationMatrix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXrHitResult(value: XRHitResult | XRHitTestResult): Self = StObject.set(x, "xrHitResult", value.asInstanceOf[js.Any])
+      inline def setXrHitResult(value: XRHitResult | XRHitTestResult): Self = StObject.set(x, "xrHitResult", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait IWebXRLegacyHitTestOptions extends StObject {
     
     /**
       * Only test when user interacted with the scene. Default - hit test every frame
       */
-    var testOnPointerDownOnly: js.UndefOr[Boolean] = js.native
+    var testOnPointerDownOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The node to use to transform the local results to world coordinates
       */
-    var worldParentNode: js.UndefOr[TransformNode] = js.native
+    var worldParentNode: js.UndefOr[TransformNode] = js.undefined
   }
   object IWebXRLegacyHitTestOptions {
     
-    @scala.inline
-    def apply(): IWebXRLegacyHitTestOptions = {
+    inline def apply(): IWebXRLegacyHitTestOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IWebXRLegacyHitTestOptions]
     }
     
-    @scala.inline
-    implicit class IWebXRLegacyHitTestOptionsMutableBuilder[Self <: IWebXRLegacyHitTestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IWebXRLegacyHitTestOptions](x: Self) {
       
-      @scala.inline
-      def setTestOnPointerDownOnly(value: Boolean): Self = StObject.set(x, "testOnPointerDownOnly", value.asInstanceOf[js.Any])
+      inline def setTestOnPointerDownOnly(value: Boolean): Self = StObject.set(x, "testOnPointerDownOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestOnPointerDownOnlyUndefined: Self = StObject.set(x, "testOnPointerDownOnly", js.undefined)
+      inline def setTestOnPointerDownOnlyUndefined: Self = StObject.set(x, "testOnPointerDownOnly", js.undefined)
       
-      @scala.inline
-      def setWorldParentNode(value: TransformNode): Self = StObject.set(x, "worldParentNode", value.asInstanceOf[js.Any])
+      inline def setWorldParentNode(value: TransformNode): Self = StObject.set(x, "worldParentNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorldParentNodeUndefined: Self = StObject.set(x, "worldParentNode", js.undefined)
+      inline def setWorldParentNodeUndefined: Self = StObject.set(x, "worldParentNode", js.undefined)
     }
   }
 }

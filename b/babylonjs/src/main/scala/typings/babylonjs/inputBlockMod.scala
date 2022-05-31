@@ -13,7 +13,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputBlockMod {
@@ -29,25 +28,25 @@ object inputBlockMod {
       */
     def this(name: String) = this()
     def this(name: String, target: NodeMaterialBlockTargets) = this()
-    def this(name: String, target: js.UndefOr[scala.Nothing], `type`: NodeMaterialBlockConnectionPointTypes) = this()
+    def this(name: String, target: Unit, `type`: NodeMaterialBlockConnectionPointTypes) = this()
     def this(name: String, target: NodeMaterialBlockTargets, `type`: NodeMaterialBlockConnectionPointTypes) = this()
     
-    var _animationType: js.Any = js.native
+    /* private */ var _animationType: js.Any = js.native
     
-    var _associatedVariableName: js.Any = js.native
+    /* private */ var _associatedVariableName: js.Any = js.native
     
-    var _emit: js.Any = js.native
+    /* private */ var _emit: js.Any = js.native
     
-    var _emitConstant: js.Any = js.native
+    /* private */ var _emitConstant: js.Any = js.native
     
-    var _emitDefine: js.Any = js.native
+    /* private */ var _emitDefine: js.Any = js.native
     
-    var _mode: js.Any = js.native
+    /* private */ var _mode: js.Any = js.native
     
     /** @hidden */
     def _noContextSwitch: Boolean = js.native
     
-    var _storedValue: js.Any = js.native
+    /* private */ var _storedValue: js.Any = js.native
     
     /** @hidden */
     var _systemValue: Nullable[NodeMaterialSystemValues] = js.native
@@ -58,9 +57,9 @@ object inputBlockMod {
     /** @hidden */
     def _transmitWorld(effect: Effect, world: Matrix, worldView: Matrix, worldViewProjection: Matrix): Unit = js.native
     
-    var _type: js.Any = js.native
+    /* private */ var _type: js.Any = js.native
     
-    var _valueCallback: js.Any = js.native
+    /* private */ var _valueCallback: js.Any = js.native
     
     /**
       * Animate the input if animationType !== None
@@ -184,8 +183,8 @@ object inputBlockMod {
       * Gets or sets a callback used to get the value of that point.
       * Please note that setting this value will force the connection point to ignore the value property
       */
-    def valueCallback: js.Function0[_] = js.native
-    def valueCallback_=(value: js.Function0[_]): Unit = js.native
+    def valueCallback: js.Function0[js.Any] = js.native
+    def valueCallback_=(value: js.Function0[js.Any]): Unit = js.native
     
     def value_=(value: js.Any): Unit = js.native
   }

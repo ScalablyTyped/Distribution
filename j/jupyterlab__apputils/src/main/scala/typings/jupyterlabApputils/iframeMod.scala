@@ -6,7 +6,6 @@ import typings.jupyterlabApputils.iframeMod.IFrame.SandboxExceptions
 import typings.luminoWidgets.mod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iframeMod {
@@ -19,9 +18,9 @@ object iframeMod {
   class IFrame () extends Widget {
     def this(options: IOptions) = this()
     
-    var _referrerPolicy: js.Any = js.native
+    /* private */ var _referrerPolicy: js.Any = js.native
     
-    var _sandbox: js.Any = js.native
+    /* private */ var _sandbox: js.Any = js.native
     
     /**
       * Referrer policy for the iframe.
@@ -62,44 +61,36 @@ object iframeMod {
     /**
       * Options for creating a new IFrame widget.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * Referrer policy for the iframe.
         */
-      var referrerPolicy: js.UndefOr[ReferrerPolicy] = js.native
+      var referrerPolicy: js.UndefOr[ReferrerPolicy] = js.undefined
       
       /**
         * Exceptions for the iframe sandbox.
         */
-      var sandbox: js.UndefOr[js.Array[SandboxExceptions]] = js.native
+      var sandbox: js.UndefOr[js.Array[SandboxExceptions]] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): IOptions = {
+      inline def apply(): IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setReferrerPolicy(value: ReferrerPolicy): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
+        inline def setReferrerPolicy(value: ReferrerPolicy): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReferrerPolicyUndefined: Self = StObject.set(x, "referrerPolicy", js.undefined)
+        inline def setReferrerPolicyUndefined: Self = StObject.set(x, "referrerPolicy", js.undefined)
         
-        @scala.inline
-        def setSandbox(value: js.Array[SandboxExceptions]): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
+        inline def setSandbox(value: js.Array[SandboxExceptions]): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
+        inline def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
         
-        @scala.inline
-        def setSandboxVarargs(value: SandboxExceptions*): Self = StObject.set(x, "sandbox", js.Array(value :_*))
+        inline def setSandboxVarargs(value: SandboxExceptions*): Self = StObject.set(x, "sandbox", js.Array(value :_*))
       }
     }
     
@@ -122,29 +113,21 @@ object iframeMod {
     trait ReferrerPolicy extends StObject
     object ReferrerPolicy {
       
-      @scala.inline
-      def `no-referrer`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`no-referrer` = "no-referrer".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`no-referrer`]
+      inline def `no-referrer`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`no-referrer` = "no-referrer".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`no-referrer`]
       
-      @scala.inline
-      def `no-referrer-when-downgrade`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`no-referrer-when-downgrade` = "no-referrer-when-downgrade".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`no-referrer-when-downgrade`]
+      inline def `no-referrer-when-downgrade`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`no-referrer-when-downgrade` = "no-referrer-when-downgrade".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`no-referrer-when-downgrade`]
       
-      @scala.inline
-      def origin: typings.jupyterlabApputils.jupyterlabApputilsStrings.origin = "origin".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.origin]
+      inline def origin: typings.jupyterlabApputils.jupyterlabApputilsStrings.origin = "origin".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.origin]
       
-      @scala.inline
-      def `origin-when-cross-origin`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`origin-when-cross-origin` = "origin-when-cross-origin".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`origin-when-cross-origin`]
+      inline def `origin-when-cross-origin`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`origin-when-cross-origin` = "origin-when-cross-origin".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`origin-when-cross-origin`]
       
-      @scala.inline
-      def `same-origin`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`same-origin` = "same-origin".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`same-origin`]
+      inline def `same-origin`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`same-origin` = "same-origin".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`same-origin`]
       
-      @scala.inline
-      def `strict-origin`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`strict-origin` = "strict-origin".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`strict-origin`]
+      inline def `strict-origin`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`strict-origin` = "strict-origin".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`strict-origin`]
       
-      @scala.inline
-      def `strict-origin-when-cross-origin`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`strict-origin-when-cross-origin` = "strict-origin-when-cross-origin".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`strict-origin-when-cross-origin`]
+      inline def `strict-origin-when-cross-origin`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`strict-origin-when-cross-origin` = "strict-origin-when-cross-origin".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`strict-origin-when-cross-origin`]
       
-      @scala.inline
-      def `unsafe-url`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`unsafe-url` = "unsafe-url".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`unsafe-url`]
+      inline def `unsafe-url`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`unsafe-url` = "unsafe-url".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`unsafe-url`]
     }
     
     /**
@@ -172,41 +155,29 @@ object iframeMod {
     trait SandboxExceptions extends StObject
     object SandboxExceptions {
       
-      @scala.inline
-      def `allow-forms`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-forms` = "allow-forms".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-forms`]
+      inline def `allow-forms`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-forms` = "allow-forms".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-forms`]
       
-      @scala.inline
-      def `allow-modals`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-modals` = "allow-modals".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-modals`]
+      inline def `allow-modals`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-modals` = "allow-modals".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-modals`]
       
-      @scala.inline
-      def `allow-orientation-lock`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-orientation-lock` = "allow-orientation-lock".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-orientation-lock`]
+      inline def `allow-orientation-lock`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-orientation-lock` = "allow-orientation-lock".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-orientation-lock`]
       
-      @scala.inline
-      def `allow-pointer-lock`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-pointer-lock` = "allow-pointer-lock".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-pointer-lock`]
+      inline def `allow-pointer-lock`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-pointer-lock` = "allow-pointer-lock".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-pointer-lock`]
       
-      @scala.inline
-      def `allow-popups`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-popups` = "allow-popups".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-popups`]
+      inline def `allow-popups`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-popups` = "allow-popups".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-popups`]
       
-      @scala.inline
-      def `allow-presentation`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-presentation` = "allow-presentation".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-presentation`]
+      inline def `allow-presentation`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-presentation` = "allow-presentation".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-presentation`]
       
-      @scala.inline
-      def `allow-same-origin`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-same-origin` = "allow-same-origin".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-same-origin`]
+      inline def `allow-same-origin`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-same-origin` = "allow-same-origin".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-same-origin`]
       
-      @scala.inline
-      def `allow-scripts`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-scripts` = "allow-scripts".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-scripts`]
+      inline def `allow-scripts`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-scripts` = "allow-scripts".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-scripts`]
       
-      @scala.inline
-      def `allow-storage-access-by-user-activation`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-storage-access-by-user-activation` = "allow-storage-access-by-user-activation".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-storage-access-by-user-activation`]
+      inline def `allow-storage-access-by-user-activation`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-storage-access-by-user-activation` = "allow-storage-access-by-user-activation".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-storage-access-by-user-activation`]
       
-      @scala.inline
-      def `allow-top-navigation`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-top-navigation` = "allow-top-navigation".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-top-navigation`]
+      inline def `allow-top-navigation`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-top-navigation` = "allow-top-navigation".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-top-navigation`]
       
-      @scala.inline
-      def `allow-top-navigation-by-user-activation`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-top-navigation-by-user-activation` = "allow-top-navigation-by-user-activation".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-top-navigation-by-user-activation`]
+      inline def `allow-top-navigation-by-user-activation`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-top-navigation-by-user-activation` = "allow-top-navigation-by-user-activation".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-top-navigation-by-user-activation`]
       
-      @scala.inline
-      def `popups-to-escape-sandbox`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`popups-to-escape-sandbox` = "popups-to-escape-sandbox".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`popups-to-escape-sandbox`]
+      inline def `popups-to-escape-sandbox`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`popups-to-escape-sandbox` = "popups-to-escape-sandbox".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`popups-to-escape-sandbox`]
     }
   }
 }

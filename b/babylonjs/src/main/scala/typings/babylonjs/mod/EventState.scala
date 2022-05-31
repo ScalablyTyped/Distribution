@@ -2,7 +2,6 @@ package typings.babylonjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "EventState")
@@ -18,15 +17,10 @@ class EventState protected ()
     */
   def this(mask: Double) = this()
   def this(mask: Double, skipNextObservers: Boolean) = this()
-  def this(mask: Double, skipNextObservers: js.UndefOr[scala.Nothing], target: js.Any) = this()
   def this(mask: Double, skipNextObservers: Boolean, target: js.Any) = this()
-  def this(
-    mask: Double,
-    skipNextObservers: js.UndefOr[scala.Nothing],
-    target: js.UndefOr[scala.Nothing],
-    currentTarget: js.Any
-  ) = this()
-  def this(mask: Double, skipNextObservers: js.UndefOr[scala.Nothing], target: js.Any, currentTarget: js.Any) = this()
-  def this(mask: Double, skipNextObservers: Boolean, target: js.UndefOr[scala.Nothing], currentTarget: js.Any) = this()
+  def this(mask: Double, skipNextObservers: Unit, target: js.Any) = this()
   def this(mask: Double, skipNextObservers: Boolean, target: js.Any, currentTarget: js.Any) = this()
+  def this(mask: Double, skipNextObservers: Boolean, target: Unit, currentTarget: js.Any) = this()
+  def this(mask: Double, skipNextObservers: Unit, target: js.Any, currentTarget: js.Any) = this()
+  def this(mask: Double, skipNextObservers: Unit, target: Unit, currentTarget: js.Any) = this()
 }

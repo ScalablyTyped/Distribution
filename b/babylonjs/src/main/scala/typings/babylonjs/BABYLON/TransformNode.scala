@@ -3,25 +3,26 @@ package typings.babylonjs.BABYLON
 import typings.babylonjs.anon.DoNotInstantiate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransformNode extends Node {
+trait TransformNode
+  extends StObject
+     with Node {
   
-  var _absolutePosition: js.Any = js.native
+  /* private */ var _absolutePosition: js.Any = js.native
   
-  var _absoluteRotationQuaternion: js.Any = js.native
+  /* private */ var _absoluteRotationQuaternion: js.Any = js.native
   
-  var _absoluteScaling: js.Any = js.native
+  /* private */ var _absoluteScaling: js.Any = js.native
   
   /* protected */ def _afterComputeWorldMatrix(): Unit = js.native
   
-  var _billboardMode: js.Any = js.native
+  /* private */ var _billboardMode: js.Any = js.native
   
-  var _forward: js.Any = js.native
+  /* private */ var _forward: js.Any = js.native
   
-  var _forwardInverted: js.Any = js.native
+  /* private */ var _forwardInverted: js.Any = js.native
   
   /**
     * @hidden
@@ -31,53 +32,53 @@ trait TransformNode extends Node {
   /** @hidden */
   var _indexInSceneTransformNodesArray: Double = js.native
   
-  var _infiniteDistance: js.Any = js.native
+  /* private */ var _infiniteDistance: js.Any = js.native
   
-  var _isAbsoluteSynced: js.Any = js.native
+  /* private */ var _isAbsoluteSynced: js.Any = js.native
   
-  var _isDirty: Boolean = js.native
+  /* protected */ var _isDirty: Boolean = js.native
   
-  var _isWorldMatrixFrozen: Boolean = js.native
+  /* protected */ var _isWorldMatrixFrozen: Boolean = js.native
   
   /** @hidden */
   var _localMatrix: Matrix = js.native
   
-  var _nonUniformScaling: js.Any = js.native
+  /* private */ var _nonUniformScaling: js.Any = js.native
   
-  var _pivotMatrix: js.Any = js.native
+  /* private */ var _pivotMatrix: js.Any = js.native
   
-  var _pivotMatrixInverse: js.Any = js.native
+  /* private */ var _pivotMatrixInverse: js.Any = js.native
   
   /** @hidden */
   var _poseMatrix: Nullable[Matrix] = js.native
   
-  var _position: js.Any = js.native
+  /* private */ var _position: js.Any = js.native
   
   /** @hidden */
   var _postMultiplyPivotMatrix: Boolean = js.native
   
-  var _preserveParentRotationForBillboard: js.Any = js.native
+  /* private */ var _preserveParentRotationForBillboard: js.Any = js.native
   
-  var _right: js.Any = js.native
+  /* private */ var _right: js.Any = js.native
   
-  var _rightInverted: js.Any = js.native
+  /* private */ var _rightInverted: js.Any = js.native
   
-  var _rotation: js.Any = js.native
+  /* private */ var _rotation: js.Any = js.native
   
-  var _rotationQuaternion: js.Any = js.native
+  /* private */ var _rotationQuaternion: js.Any = js.native
   
-  var _scaling: Vector3 = js.native
+  /* protected */ var _scaling: Vector3 = js.native
   
-  var _syncAbsoluteScalingAndRotation: js.Any = js.native
+  /* private */ var _syncAbsoluteScalingAndRotation: js.Any = js.native
   
-  var _transformToBoneReferal: js.Any = js.native
+  /* private */ var _transformToBoneReferal: js.Any = js.native
   
-  var _up: js.Any = js.native
+  /* private */ var _up: js.Any = js.native
   
   /** @hidden */
   def _updateNonUniformScalingState(value: Boolean): Boolean = js.native
   
-  var _usePivotMatrix: js.Any = js.native
+  /* private */ var _usePivotMatrix: js.Any = js.native
   
   /**
     * Returns the current mesh absolute position.
@@ -194,12 +195,9 @@ trait TransformNode extends Node {
     * @returns an array of TransformNode
     */
   def getChildTransformNodes(): js.Array[TransformNode] = js.native
-  def getChildTransformNodes(
-    directDescendantsOnly: js.UndefOr[scala.Nothing],
-    predicate: js.Function1[/* node */ Node, Boolean]
-  ): js.Array[TransformNode] = js.native
   def getChildTransformNodes(directDescendantsOnly: Boolean): js.Array[TransformNode] = js.native
   def getChildTransformNodes(directDescendantsOnly: Boolean, predicate: js.Function1[/* node */ Node, Boolean]): js.Array[TransformNode] = js.native
+  def getChildTransformNodes(directDescendantsOnly: Unit, predicate: js.Function1[/* node */ Node, Boolean]): js.Array[TransformNode] = js.native
   
   /**
     * Returns a new Vector3 that is the localAxis, expressed in the mesh local space, rotated like the mesh.
@@ -288,17 +286,28 @@ trait TransformNode extends Node {
     */
   def instantiateHierarchy(): Nullable[TransformNode] = js.native
   def instantiateHierarchy(
-    newParent: js.UndefOr[Nullable[TransformNode]],
-    options: js.UndefOr[scala.Nothing],
+    newParent: Unit,
+    options: Unit,
     onNewNodeCreated: js.Function2[/* source */ this.type, /* clone */ this.type, Unit]
   ): Nullable[TransformNode] = js.native
-  def instantiateHierarchy(newParent: js.UndefOr[Nullable[TransformNode]], options: DoNotInstantiate): Nullable[TransformNode] = js.native
+  def instantiateHierarchy(newParent: Unit, options: DoNotInstantiate): Nullable[TransformNode] = js.native
   def instantiateHierarchy(
-    newParent: js.UndefOr[Nullable[TransformNode]],
+    newParent: Unit,
     options: DoNotInstantiate,
     onNewNodeCreated: js.Function2[/* source */ this.type, /* clone */ this.type, Unit]
   ): Nullable[TransformNode] = js.native
   def instantiateHierarchy(newParent: Nullable[TransformNode]): Nullable[TransformNode] = js.native
+  def instantiateHierarchy(
+    newParent: Nullable[TransformNode],
+    options: Unit,
+    onNewNodeCreated: js.Function2[/* source */ this.type, /* clone */ this.type, Unit]
+  ): Nullable[TransformNode] = js.native
+  def instantiateHierarchy(newParent: Nullable[TransformNode], options: DoNotInstantiate): Nullable[TransformNode] = js.native
+  def instantiateHierarchy(
+    newParent: Nullable[TransformNode],
+    options: DoNotInstantiate,
+    onNewNodeCreated: js.Function2[/* source */ this.type, /* clone */ this.type, Unit]
+  ): Nullable[TransformNode] = js.native
   
   /**
     * True if the World matrix has been frozen.
@@ -322,68 +331,21 @@ trait TransformNode extends Node {
     * @returns the TransformNode.
     */
   def lookAt(targetPoint: Vector3): TransformNode = js.native
-  def lookAt(
-    targetPoint: Vector3,
-    yawCor: js.UndefOr[scala.Nothing],
-    pitchCor: js.UndefOr[scala.Nothing],
-    rollCor: js.UndefOr[scala.Nothing],
-    space: Space
-  ): TransformNode = js.native
-  def lookAt(
-    targetPoint: Vector3,
-    yawCor: js.UndefOr[scala.Nothing],
-    pitchCor: js.UndefOr[scala.Nothing],
-    rollCor: Double
-  ): TransformNode = js.native
-  def lookAt(
-    targetPoint: Vector3,
-    yawCor: js.UndefOr[scala.Nothing],
-    pitchCor: js.UndefOr[scala.Nothing],
-    rollCor: Double,
-    space: Space
-  ): TransformNode = js.native
-  def lookAt(targetPoint: Vector3, yawCor: js.UndefOr[scala.Nothing], pitchCor: Double): TransformNode = js.native
-  def lookAt(
-    targetPoint: Vector3,
-    yawCor: js.UndefOr[scala.Nothing],
-    pitchCor: Double,
-    rollCor: js.UndefOr[scala.Nothing],
-    space: Space
-  ): TransformNode = js.native
-  def lookAt(targetPoint: Vector3, yawCor: js.UndefOr[scala.Nothing], pitchCor: Double, rollCor: Double): TransformNode = js.native
-  def lookAt(
-    targetPoint: Vector3,
-    yawCor: js.UndefOr[scala.Nothing],
-    pitchCor: Double,
-    rollCor: Double,
-    space: Space
-  ): TransformNode = js.native
   def lookAt(targetPoint: Vector3, yawCor: Double): TransformNode = js.native
-  def lookAt(
-    targetPoint: Vector3,
-    yawCor: Double,
-    pitchCor: js.UndefOr[scala.Nothing],
-    rollCor: js.UndefOr[scala.Nothing],
-    space: Space
-  ): TransformNode = js.native
-  def lookAt(targetPoint: Vector3, yawCor: Double, pitchCor: js.UndefOr[scala.Nothing], rollCor: Double): TransformNode = js.native
-  def lookAt(
-    targetPoint: Vector3,
-    yawCor: Double,
-    pitchCor: js.UndefOr[scala.Nothing],
-    rollCor: Double,
-    space: Space
-  ): TransformNode = js.native
   def lookAt(targetPoint: Vector3, yawCor: Double, pitchCor: Double): TransformNode = js.native
-  def lookAt(
-    targetPoint: Vector3,
-    yawCor: Double,
-    pitchCor: Double,
-    rollCor: js.UndefOr[scala.Nothing],
-    space: Space
-  ): TransformNode = js.native
   def lookAt(targetPoint: Vector3, yawCor: Double, pitchCor: Double, rollCor: Double): TransformNode = js.native
   def lookAt(targetPoint: Vector3, yawCor: Double, pitchCor: Double, rollCor: Double, space: Space): TransformNode = js.native
+  def lookAt(targetPoint: Vector3, yawCor: Double, pitchCor: Double, rollCor: Unit, space: Space): TransformNode = js.native
+  def lookAt(targetPoint: Vector3, yawCor: Double, pitchCor: Unit, rollCor: Double): TransformNode = js.native
+  def lookAt(targetPoint: Vector3, yawCor: Double, pitchCor: Unit, rollCor: Double, space: Space): TransformNode = js.native
+  def lookAt(targetPoint: Vector3, yawCor: Double, pitchCor: Unit, rollCor: Unit, space: Space): TransformNode = js.native
+  def lookAt(targetPoint: Vector3, yawCor: Unit, pitchCor: Double): TransformNode = js.native
+  def lookAt(targetPoint: Vector3, yawCor: Unit, pitchCor: Double, rollCor: Double): TransformNode = js.native
+  def lookAt(targetPoint: Vector3, yawCor: Unit, pitchCor: Double, rollCor: Double, space: Space): TransformNode = js.native
+  def lookAt(targetPoint: Vector3, yawCor: Unit, pitchCor: Double, rollCor: Unit, space: Space): TransformNode = js.native
+  def lookAt(targetPoint: Vector3, yawCor: Unit, pitchCor: Unit, rollCor: Double): TransformNode = js.native
+  def lookAt(targetPoint: Vector3, yawCor: Unit, pitchCor: Unit, rollCor: Double, space: Space): TransformNode = js.native
+  def lookAt(targetPoint: Vector3, yawCor: Unit, pitchCor: Unit, rollCor: Unit, space: Space): TransformNode = js.native
   
   /**
     * Flag the transform node as dirty (Forcing it to update everything)
@@ -405,27 +367,27 @@ trait TransformNode extends Node {
     * @returns the current mesh
     */
   def normalizeToUnitCube(): TransformNode = js.native
-  def normalizeToUnitCube(
-    includeDescendants: js.UndefOr[scala.Nothing],
-    ignoreRotation: js.UndefOr[scala.Nothing],
-    predicate: Nullable[js.Function1[/* node */ AbstractMesh, Boolean]]
-  ): TransformNode = js.native
-  def normalizeToUnitCube(includeDescendants: js.UndefOr[scala.Nothing], ignoreRotation: Boolean): TransformNode = js.native
-  def normalizeToUnitCube(
-    includeDescendants: js.UndefOr[scala.Nothing],
-    ignoreRotation: Boolean,
-    predicate: Nullable[js.Function1[/* node */ AbstractMesh, Boolean]]
-  ): TransformNode = js.native
   def normalizeToUnitCube(includeDescendants: Boolean): TransformNode = js.native
-  def normalizeToUnitCube(
-    includeDescendants: Boolean,
-    ignoreRotation: js.UndefOr[scala.Nothing],
-    predicate: Nullable[js.Function1[/* node */ AbstractMesh, Boolean]]
-  ): TransformNode = js.native
   def normalizeToUnitCube(includeDescendants: Boolean, ignoreRotation: Boolean): TransformNode = js.native
   def normalizeToUnitCube(
     includeDescendants: Boolean,
     ignoreRotation: Boolean,
+    predicate: Nullable[js.Function1[/* node */ AbstractMesh, Boolean]]
+  ): TransformNode = js.native
+  def normalizeToUnitCube(
+    includeDescendants: Boolean,
+    ignoreRotation: Unit,
+    predicate: Nullable[js.Function1[/* node */ AbstractMesh, Boolean]]
+  ): TransformNode = js.native
+  def normalizeToUnitCube(includeDescendants: Unit, ignoreRotation: Boolean): TransformNode = js.native
+  def normalizeToUnitCube(
+    includeDescendants: Unit,
+    ignoreRotation: Boolean,
+    predicate: Nullable[js.Function1[/* node */ AbstractMesh, Boolean]]
+  ): TransformNode = js.native
+  def normalizeToUnitCube(
+    includeDescendants: Unit,
+    ignoreRotation: Unit,
     predicate: Nullable[js.Function1[/* node */ AbstractMesh, Boolean]]
   ): TransformNode = js.native
   
@@ -548,18 +510,13 @@ trait TransformNode extends Node {
     * @returns this TransformNode
     */
   def setDirection(localAxis: Vector3): TransformNode = js.native
-  def setDirection(
-    localAxis: Vector3,
-    yawCor: js.UndefOr[scala.Nothing],
-    pitchCor: js.UndefOr[scala.Nothing],
-    rollCor: Double
-  ): TransformNode = js.native
-  def setDirection(localAxis: Vector3, yawCor: js.UndefOr[scala.Nothing], pitchCor: Double): TransformNode = js.native
-  def setDirection(localAxis: Vector3, yawCor: js.UndefOr[scala.Nothing], pitchCor: Double, rollCor: Double): TransformNode = js.native
   def setDirection(localAxis: Vector3, yawCor: Double): TransformNode = js.native
-  def setDirection(localAxis: Vector3, yawCor: Double, pitchCor: js.UndefOr[scala.Nothing], rollCor: Double): TransformNode = js.native
   def setDirection(localAxis: Vector3, yawCor: Double, pitchCor: Double): TransformNode = js.native
   def setDirection(localAxis: Vector3, yawCor: Double, pitchCor: Double, rollCor: Double): TransformNode = js.native
+  def setDirection(localAxis: Vector3, yawCor: Double, pitchCor: Unit, rollCor: Double): TransformNode = js.native
+  def setDirection(localAxis: Vector3, yawCor: Unit, pitchCor: Double): TransformNode = js.native
+  def setDirection(localAxis: Vector3, yawCor: Unit, pitchCor: Double, rollCor: Double): TransformNode = js.native
+  def setDirection(localAxis: Vector3, yawCor: Unit, pitchCor: Unit, rollCor: Double): TransformNode = js.native
   
   /**
     * Defines the passed node as the parent of the current node.

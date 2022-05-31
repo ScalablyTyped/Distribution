@@ -2,45 +2,46 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FollowCameraKeyboardMoveInput extends ICameraInput[FollowCamera] {
+trait FollowCameraKeyboardMoveInput
+  extends StObject
+     with ICameraInput[FollowCamera] {
   
-  var _altPressed: js.Any = js.native
+  /* private */ var _altPressed: js.Any = js.native
   
-  var _ctrlPressed: js.Any = js.native
+  /* private */ var _ctrlPressed: js.Any = js.native
   
-  var _engine: js.Any = js.native
+  /* private */ var _engine: js.Any = js.native
   
-  var _keys: js.Any = js.native
+  /* private */ var _keys: js.Any = js.native
   
   /**
     * Check if the pressed modifier keys (Alt/Ctrl/Shift) match those configured to
     * allow modification of the heightOffset value.
     */
-  var _modifierHeightOffset: js.Any = js.native
+  /* private */ var _modifierHeightOffset: js.Any = js.native
   
   /**
     * Check if the pressed modifier keys (Alt/Ctrl/Shift) match those configured to
     * allow modification of the radius value.
     */
-  var _modifierRadius: js.Any = js.native
+  /* private */ var _modifierRadius: js.Any = js.native
   
   /**
     * Check if the pressed modifier keys (Alt/Ctrl/Shift) match those configured to
     * allow modification of the rotationOffset value.
     */
-  var _modifierRotationOffset: js.Any = js.native
+  /* private */ var _modifierRotationOffset: js.Any = js.native
   
-  var _onCanvasBlurObserver: js.Any = js.native
+  /* private */ var _onCanvasBlurObserver: js.Any = js.native
   
-  var _onKeyboardObserver: js.Any = js.native
+  /* private */ var _onKeyboardObserver: js.Any = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
-  var _shiftPressed: js.Any = js.native
+  /* private */ var _shiftPressed: js.Any = js.native
   
   /**
     * Defines the camera the input is attached to.

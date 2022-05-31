@@ -2,15 +2,16 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MultiMaterial extends Material {
+trait MultiMaterial
+  extends StObject
+     with Material {
   
-  var _hookArray: js.Any = js.native
+  /* private */ var _hookArray: js.Any = js.native
   
-  var _subMaterials: js.Any = js.native
+  /* private */ var _subMaterials: js.Any = js.native
   
   def clone(name: String, cloneChildren: Boolean): MultiMaterial = js.native
   

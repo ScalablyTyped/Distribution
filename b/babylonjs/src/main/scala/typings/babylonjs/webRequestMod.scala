@@ -23,18 +23,19 @@ import typings.std.XMLHttpRequestEventTarget
 import typings.std.XMLHttpRequestResponseType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webRequestMod {
   
   @JSImport("babylonjs/Misc/webRequest", "WebRequest")
   @js.native
-  class WebRequest () extends IWebRequest {
+  class WebRequest ()
+    extends StObject
+       with IWebRequest {
     
-    var _injectCustomRequestHeaders: js.Any = js.native
+    /* private */ var _injectCustomRequestHeaders: js.Any = js.native
     
-    val _xhr: js.Any = js.native
+    /* private */ val _xhr: js.Any = js.native
     
     /**
       * Cancels any network activity
@@ -44,135 +45,138 @@ object webRequestMod {
     @JSName("addEventListener")
     def addEventListener_abort(
       `type`: abort,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _]
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_abort(
       `type`: abort,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_abort(
       `type`: abort,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_error(
       `type`: error,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _]
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_error(
       `type`: error,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_error(
       `type`: error,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_load(
       `type`: load,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _]
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_load(
       `type`: load,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_load(
       `type`: load,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_loadend(
       `type`: loadend,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _]
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_loadend(
       `type`: loadend,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_loadend(
       `type`: loadend,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_loadstart(
       `type`: loadstart,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _]
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_loadstart(
       `type`: loadstart,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_loadstart(
       `type`: loadstart,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_progress(
       `type`: progress,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _]
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_progress(
       `type`: progress,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_progress(
       `type`: progress,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     /** @hidden */
     @JSName("addEventListener")
-    def addEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_readystatechange(
+      `type`: readystatechange,
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ Event, js.Any]
+    ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_readystatechange(
       `type`: readystatechange,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ Event, js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_readystatechange(
       `type`: readystatechange,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ Event, js.Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_timeout(
       `type`: timeout,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _]
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_timeout(
       `type`: timeout,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_timeout(
       `type`: timeout,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     
@@ -186,9 +190,9 @@ object webRequestMod {
     /**
       * Gets or sets a function to be called when loading progress changes
       */
-    def onprogress: (js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[EventTarget], _]) | Null = js.native
+    def onprogress: (js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[EventTarget], js.Any]) | Null = js.native
     def onprogress_=(
-      value: (js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[EventTarget], _]) | Null
+      value: (js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[EventTarget], js.Any]) | Null
     ): Unit = js.native
     
     /**
@@ -206,135 +210,138 @@ object webRequestMod {
     @JSName("removeEventListener")
     def removeEventListener_abort(
       `type`: abort,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _]
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any]
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_abort(
       `type`: abort,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_abort(
       `type`: abort,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any],
       options: EventListenerOptions
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_error(
       `type`: error,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _]
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any]
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_error(
       `type`: error,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_error(
       `type`: error,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any],
       options: EventListenerOptions
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_load(
       `type`: load,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _]
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any]
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_load(
       `type`: load,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_load(
       `type`: load,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any],
       options: EventListenerOptions
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_loadend(
       `type`: loadend,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _]
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any]
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_loadend(
       `type`: loadend,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_loadend(
       `type`: loadend,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any],
       options: EventListenerOptions
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_loadstart(
       `type`: loadstart,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _]
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any]
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_loadstart(
       `type`: loadstart,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_loadstart(
       `type`: loadstart,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any],
       options: EventListenerOptions
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_progress(
       `type`: progress,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _]
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any]
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_progress(
       `type`: progress,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_progress(
       `type`: progress,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any],
       options: EventListenerOptions
     ): Unit = js.native
     /** @hidden */
     @JSName("removeEventListener")
-    def removeEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ Event, _]): Unit = js.native
+    def removeEventListener_readystatechange(
+      `type`: readystatechange,
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ Event, js.Any]
+    ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_readystatechange(
       `type`: readystatechange,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ Event, js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_readystatechange(
       `type`: readystatechange,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ Event, js.Any],
       options: EventListenerOptions
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_timeout(
       `type`: timeout,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _]
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any]
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_timeout(
       `type`: timeout,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_timeout(
       `type`: timeout,
-      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], _],
+      listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], js.Any],
       options: EventListenerOptions
     ): Unit = js.native
     
@@ -357,6 +364,11 @@ object webRequestMod {
     /**
       * Returns client's response url
       */
+    /* CompleteClass */
+    var responseURL: String = js.native
+    /**
+      * Returns client's response url
+      */
     @JSName("responseURL")
     def responseURL_MWebRequest: String = js.native
     
@@ -375,6 +387,17 @@ object webRequestMod {
       */
     def setRequestHeader(name: String, value: String): Unit = js.native
     
+    /**
+      * Returns client's status
+      */
+    /* CompleteClass */
+    var status: Double = js.native
+    
+    /**
+      * Returns client's status as a text
+      */
+    /* CompleteClass */
+    var statusText: String = js.native
     /**
       * Returns client's status as a text
       */
@@ -401,8 +424,7 @@ object webRequestMod {
     @JSImport("babylonjs/Misc/webRequest", "WebRequest.CustomRequestHeaders")
     @js.native
     def CustomRequestHeaders: StringDictionary[String] = js.native
-    @scala.inline
-    def CustomRequestHeaders_=(x: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CustomRequestHeaders")(x.asInstanceOf[js.Any])
+    inline def CustomRequestHeaders_=(x: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CustomRequestHeaders")(x.asInstanceOf[js.Any])
     
     /**
       * Add callback functions in this array to update all the requests before they get sent to the network
@@ -410,7 +432,6 @@ object webRequestMod {
     @JSImport("babylonjs/Misc/webRequest", "WebRequest.CustomRequestModifiers")
     @js.native
     def CustomRequestModifiers: js.Array[js.Function2[/* request */ XMLHttpRequest, /* url */ String, Unit]] = js.native
-    @scala.inline
-    def CustomRequestModifiers_=(x: js.Array[js.Function2[/* request */ XMLHttpRequest, /* url */ String, Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CustomRequestModifiers")(x.asInstanceOf[js.Any])
+    inline def CustomRequestModifiers_=(x: js.Array[js.Function2[/* request */ XMLHttpRequest, /* url */ String, Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CustomRequestModifiers")(x.asInstanceOf[js.Any])
   }
 }

@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.IEdgesRendererOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.EdgesRenderer")
 @js.native
 class EdgesRenderer protected ()
-  extends typings.babylonjs.BABYLON.EdgesRenderer {
+  extends StObject
+     with typings.babylonjs.BABYLON.EdgesRenderer {
   /**
     * Creates an instance of the EdgesRenderer. It is primarily use to display edges of a mesh.
     * Beware when you use this class with complex objects as the adjacencies computation can be really long
@@ -23,31 +23,13 @@ class EdgesRenderer protected ()
   def this(source: typings.babylonjs.BABYLON.AbstractMesh, epsilon: Double) = this()
   def this(
     source: typings.babylonjs.BABYLON.AbstractMesh,
-    epsilon: js.UndefOr[scala.Nothing],
-    checkVerticesInsteadOfIndices: Boolean
-  ) = this()
-  def this(
-    source: typings.babylonjs.BABYLON.AbstractMesh,
     epsilon: Double,
     checkVerticesInsteadOfIndices: Boolean
   ) = this()
   def this(
     source: typings.babylonjs.BABYLON.AbstractMesh,
-    epsilon: js.UndefOr[scala.Nothing],
-    checkVerticesInsteadOfIndices: js.UndefOr[scala.Nothing],
-    generateEdgesLines: Boolean
-  ) = this()
-  def this(
-    source: typings.babylonjs.BABYLON.AbstractMesh,
-    epsilon: js.UndefOr[scala.Nothing],
-    checkVerticesInsteadOfIndices: Boolean,
-    generateEdgesLines: Boolean
-  ) = this()
-  def this(
-    source: typings.babylonjs.BABYLON.AbstractMesh,
-    epsilon: Double,
-    checkVerticesInsteadOfIndices: js.UndefOr[scala.Nothing],
-    generateEdgesLines: Boolean
+    epsilon: Unit,
+    checkVerticesInsteadOfIndices: Boolean
   ) = this()
   def this(
     source: typings.babylonjs.BABYLON.AbstractMesh,
@@ -57,52 +39,21 @@ class EdgesRenderer protected ()
   ) = this()
   def this(
     source: typings.babylonjs.BABYLON.AbstractMesh,
-    epsilon: js.UndefOr[scala.Nothing],
-    checkVerticesInsteadOfIndices: js.UndefOr[scala.Nothing],
-    generateEdgesLines: js.UndefOr[scala.Nothing],
-    options: IEdgesRendererOptions
-  ) = this()
-  def this(
-    source: typings.babylonjs.BABYLON.AbstractMesh,
-    epsilon: js.UndefOr[scala.Nothing],
-    checkVerticesInsteadOfIndices: js.UndefOr[scala.Nothing],
-    generateEdgesLines: Boolean,
-    options: IEdgesRendererOptions
-  ) = this()
-  def this(
-    source: typings.babylonjs.BABYLON.AbstractMesh,
-    epsilon: js.UndefOr[scala.Nothing],
-    checkVerticesInsteadOfIndices: Boolean,
-    generateEdgesLines: js.UndefOr[scala.Nothing],
-    options: IEdgesRendererOptions
-  ) = this()
-  def this(
-    source: typings.babylonjs.BABYLON.AbstractMesh,
-    epsilon: js.UndefOr[scala.Nothing],
-    checkVerticesInsteadOfIndices: Boolean,
-    generateEdgesLines: Boolean,
-    options: IEdgesRendererOptions
-  ) = this()
-  def this(
-    source: typings.babylonjs.BABYLON.AbstractMesh,
     epsilon: Double,
-    checkVerticesInsteadOfIndices: js.UndefOr[scala.Nothing],
-    generateEdgesLines: js.UndefOr[scala.Nothing],
-    options: IEdgesRendererOptions
+    checkVerticesInsteadOfIndices: Unit,
+    generateEdgesLines: Boolean
   ) = this()
   def this(
     source: typings.babylonjs.BABYLON.AbstractMesh,
-    epsilon: Double,
-    checkVerticesInsteadOfIndices: js.UndefOr[scala.Nothing],
-    generateEdgesLines: Boolean,
-    options: IEdgesRendererOptions
-  ) = this()
-  def this(
-    source: typings.babylonjs.BABYLON.AbstractMesh,
-    epsilon: Double,
+    epsilon: Unit,
     checkVerticesInsteadOfIndices: Boolean,
-    generateEdgesLines: js.UndefOr[scala.Nothing],
-    options: IEdgesRendererOptions
+    generateEdgesLines: Boolean
+  ) = this()
+  def this(
+    source: typings.babylonjs.BABYLON.AbstractMesh,
+    epsilon: Unit,
+    checkVerticesInsteadOfIndices: Unit,
+    generateEdgesLines: Boolean
   ) = this()
   def this(
     source: typings.babylonjs.BABYLON.AbstractMesh,
@@ -111,6 +62,86 @@ class EdgesRenderer protected ()
     generateEdgesLines: Boolean,
     options: IEdgesRendererOptions
   ) = this()
+  def this(
+    source: typings.babylonjs.BABYLON.AbstractMesh,
+    epsilon: Double,
+    checkVerticesInsteadOfIndices: Boolean,
+    generateEdgesLines: Unit,
+    options: IEdgesRendererOptions
+  ) = this()
+  def this(
+    source: typings.babylonjs.BABYLON.AbstractMesh,
+    epsilon: Double,
+    checkVerticesInsteadOfIndices: Unit,
+    generateEdgesLines: Boolean,
+    options: IEdgesRendererOptions
+  ) = this()
+  def this(
+    source: typings.babylonjs.BABYLON.AbstractMesh,
+    epsilon: Double,
+    checkVerticesInsteadOfIndices: Unit,
+    generateEdgesLines: Unit,
+    options: IEdgesRendererOptions
+  ) = this()
+  def this(
+    source: typings.babylonjs.BABYLON.AbstractMesh,
+    epsilon: Unit,
+    checkVerticesInsteadOfIndices: Boolean,
+    generateEdgesLines: Boolean,
+    options: IEdgesRendererOptions
+  ) = this()
+  def this(
+    source: typings.babylonjs.BABYLON.AbstractMesh,
+    epsilon: Unit,
+    checkVerticesInsteadOfIndices: Boolean,
+    generateEdgesLines: Unit,
+    options: IEdgesRendererOptions
+  ) = this()
+  def this(
+    source: typings.babylonjs.BABYLON.AbstractMesh,
+    epsilon: Unit,
+    checkVerticesInsteadOfIndices: Unit,
+    generateEdgesLines: Boolean,
+    options: IEdgesRendererOptions
+  ) = this()
+  def this(
+    source: typings.babylonjs.BABYLON.AbstractMesh,
+    epsilon: Unit,
+    checkVerticesInsteadOfIndices: Unit,
+    generateEdgesLines: Unit,
+    options: IEdgesRendererOptions
+  ) = this()
+  
+  /**
+    * List of instances to render in case the source mesh has instances
+    */
+  /* CompleteClass */
+  var customInstances: typings.babylonjs.BABYLON.SmartArray[typings.babylonjs.BABYLON.Matrix] = js.native
+  
+  /**
+    * Releases all held resources
+    */
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
+  
+  /**
+    * Gets or sets a boolean indicating if the edgesRenderer is active
+    */
+  /* CompleteClass */
+  var isEnabled: Boolean = js.native
+  
+  /**
+    * Checks wether or not the edges renderer is ready to render.
+    * @return true if ready, otherwise false.
+    */
+  /* CompleteClass */
+  override def isReady(): Boolean = js.native
+  
+  /**
+    * Renders the edges of the attached mesh,
+    */
+  /* CompleteClass */
+  override def render(): Unit = js.native
 }
 /* static members */
 object EdgesRenderer {
@@ -122,6 +153,5 @@ object EdgesRenderer {
   @JSGlobal("BABYLON.EdgesRenderer.GetShader")
   @js.native
   def GetShader: js.Any = js.native
-  @scala.inline
-  def GetShader_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GetShader")(x.asInstanceOf[js.Any])
+  inline def GetShader_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GetShader")(x.asInstanceOf[js.Any])
 }

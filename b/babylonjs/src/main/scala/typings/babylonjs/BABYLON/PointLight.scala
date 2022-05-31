@@ -2,13 +2,14 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PointLight extends ShadowLight {
+trait PointLight
+  extends StObject
+     with ShadowLight {
   
-  var _shadowAngle: js.Any = js.native
+  /* private */ var _shadowAngle: js.Any = js.native
   
   /**
     * Gets the direction if it has been set.

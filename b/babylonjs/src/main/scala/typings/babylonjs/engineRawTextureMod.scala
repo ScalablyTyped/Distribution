@@ -7,7 +7,6 @@ import typings.std.ArrayBuffer
 import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object engineRawTextureMod {
@@ -68,7 +67,7 @@ object engineRawTextureMod {
             ],
         onLoad: Nullable[js.Function0[Unit]],
         onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
             ]
       ): InternalTexture = js.native
       /**
@@ -100,7 +99,7 @@ object engineRawTextureMod {
             ],
         onLoad: Nullable[js.Function0[Unit]],
         onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
             ],
         samplingMode: Double,
         invertY: Boolean

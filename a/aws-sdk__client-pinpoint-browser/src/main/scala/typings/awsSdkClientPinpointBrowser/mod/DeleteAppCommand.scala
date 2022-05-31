@@ -1,5 +1,6 @@
 package typings.awsSdkClientPinpointBrowser.mod
 
+import typings.awsSdkClientPinpointBrowser.typesDeleteAppInputMod.DeleteAppInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class DeleteAppCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.deleteAppCommandMod.DeleteAppCommand {
-  def this(input: typings.awsSdkClientPinpointBrowser.typesDeleteAppInputMod.DeleteAppInput) = this()
+  def this(input: DeleteAppInput) = this()
 }

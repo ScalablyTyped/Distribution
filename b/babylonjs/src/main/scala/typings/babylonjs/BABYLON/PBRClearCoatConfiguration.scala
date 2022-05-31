@@ -2,35 +2,34 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PBRClearCoatConfiguration extends StObject {
   
-  var _bumpTexture: js.Any = js.native
+  /* private */ var _bumpTexture: js.Any = js.native
   
-  var _indexOfRefraction: js.Any = js.native
+  /* private */ var _indexOfRefraction: js.Any = js.native
   
   /** @hidden */
-  var _internalMarkAllSubMeshesAsTexturesDirty: js.Any = js.native
+  /* private */ var _internalMarkAllSubMeshesAsTexturesDirty: js.Any = js.native
   
-  var _isEnabled: js.Any = js.native
+  /* private */ var _isEnabled: js.Any = js.native
   
-  var _isTintEnabled: js.Any = js.native
+  /* private */ var _isTintEnabled: js.Any = js.native
   
   /** @hidden */
   def _markAllSubMeshesAsTexturesDirty(): Unit = js.native
   
-  var _remapF0OnInterfaceChange: js.Any = js.native
+  /* private */ var _remapF0OnInterfaceChange: js.Any = js.native
   
-  var _texture: js.Any = js.native
+  /* private */ var _texture: js.Any = js.native
   
-  var _textureRoughness: js.Any = js.native
+  /* private */ var _textureRoughness: js.Any = js.native
   
-  var _tintTexture: js.Any = js.native
+  /* private */ var _tintTexture: js.Any = js.native
   
-  var _useRoughnessFromMainTexture: js.Any = js.native
+  /* private */ var _useRoughnessFromMainTexture: js.Any = js.native
   
   /**
     * Binds the material data.

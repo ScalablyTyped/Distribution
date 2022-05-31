@@ -294,7 +294,7 @@ inline def loadText(url: java.lang.String, headers: js.Any): js.Promise[java.lan
 inline def loadText(url: js.Promise[java.lang.String]): js.Promise[java.lang.String] = typings.cesium.mod.^.asInstanceOf[js.Dynamic].applyDynamic("loadText")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[java.lang.String]]
 inline def loadText(url: js.Promise[java.lang.String], headers: js.Any): js.Promise[java.lang.String] = (typings.cesium.mod.^.asInstanceOf[js.Dynamic].applyDynamic("loadText")(url.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[js.Promise[java.lang.String]]
 
-inline def loadWithXhr(options: typings.cesium.anon.Method): js.Promise[js.Any] = typings.cesium.mod.^.asInstanceOf[js.Dynamic].applyDynamic("loadWithXhr")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+inline def loadWithXhr(options: typings.cesium.anon.Headers): js.Promise[js.Any] = typings.cesium.mod.^.asInstanceOf[js.Dynamic].applyDynamic("loadWithXhr")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
 
 inline def loadXML(url: java.lang.String): js.Promise[typings.std.XMLDocument] = typings.cesium.mod.^.asInstanceOf[js.Dynamic].applyDynamic("loadXML")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.std.XMLDocument]]
 inline def loadXML(url: java.lang.String, headers: js.Any): js.Promise[typings.std.XMLDocument] = (typings.cesium.mod.^.asInstanceOf[js.Dynamic].applyDynamic("loadXML")(url.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.std.XMLDocument]]

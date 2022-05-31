@@ -164,10 +164,6 @@ object mod {
     inline def setLocaleOnConnection(locale: String, connectionId: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLocaleOnConnection")(locale.asInstanceOf[js.Any], connectionId.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def setOptions(options: Partiali18nOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    
-    // language getters
-    /* Inlined std.Readonly<{[locale: string] : std.Readonly<meteor-universe-i18n.meteor/universe:i18n.i18nLocaleEntry>}> */
-    object locales
   }
   
   trait GetTranslationParams

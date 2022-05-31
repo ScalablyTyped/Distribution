@@ -17,7 +17,6 @@ import typings.luminoWidgets.mod.Widget
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object widgetMod {
@@ -30,19 +29,19 @@ object widgetMod {
       */
     def this(options: IOptions) = this()
     
-    var _context: Context = js.native
+    /* protected */ var _context: Context = js.native
     
     /**
       * Ensure that the widget has focus.
       */
-    var _ensureFocus: js.Any = js.native
+    /* private */ var _ensureFocus: js.Any = js.native
     
-    var _mimeTypeService: js.Any = js.native
+    /* private */ var _mimeTypeService: js.Any = js.native
     
     /**
       * Handle a change to the path.
       */
-    var _onPathChanged: js.Any = js.native
+    /* private */ var _onPathChanged: js.Any = js.native
     
     /**
       * Get the context for the editor widget.
@@ -51,7 +50,7 @@ object widgetMod {
     
     var editor: IEditor = js.native
     
-    var editorWidget: js.Any = js.native
+    /* private */ var editorWidget: js.Any = js.native
     
     /**
       * Handle the DOM events for the widget.
@@ -77,28 +76,26 @@ object widgetMod {
     /**
       * The options used to create an editor widget.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The document context associated with the editor.
         */
-      var context: CodeContext = js.native
+      var context: CodeContext
       
       /**
         * A code editor factory.
         */
-      var factory: Factory = js.native
+      var factory: Factory
       
       /**
         * The mime type service for the editor.
         */
-      var mimeTypeService: IEditorMimeTypeService = js.native
+      var mimeTypeService: IEditorMimeTypeService
     }
     object IOptions {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         context: CodeContext,
         factory: /* options */ typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions => IEditor,
         mimeTypeService: IEditorMimeTypeService
@@ -107,17 +104,13 @@ object widgetMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setContext(value: CodeContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+        inline def setContext(value: CodeContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFactory(value: /* options */ typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions => IEditor): Self = StObject.set(x, "factory", js.Any.fromFunction1(value))
+        inline def setFactory(value: /* options */ typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions => IEditor): Self = StObject.set(x, "factory", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setMimeTypeService(value: IEditorMimeTypeService): Self = StObject.set(x, "mimeTypeService", value.asInstanceOf[js.Any])
+        inline def setMimeTypeService(value: IEditorMimeTypeService): Self = StObject.set(x, "mimeTypeService", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -130,25 +123,25 @@ object widgetMod {
       */
     def this(options: IOptions) = this()
     
-    var _context: Context = js.native
+    /* protected */ var _context: Context = js.native
     
     /**
       * Handle a change to the collaborators on the model
       * by updating UI elements associated with them.
       */
-    var _onCollaboratorsChanged: js.Any = js.native
+    /* private */ var _onCollaboratorsChanged: js.Any = js.native
     
     /**
       * Handle a change in context model content.
       */
-    var _onContentChanged: js.Any = js.native
+    /* private */ var _onContentChanged: js.Any = js.native
     
     /**
       * Handle actions that should be taken when the context is ready.
       */
-    var _onContextReady: js.Any = js.native
+    /* private */ var _onContextReady: js.Any = js.native
     
-    var _ready: js.Any = js.native
+    /* private */ var _ready: js.Any = js.native
     
     /**
       * Get the context for the editor widget.
@@ -173,32 +166,30 @@ object widgetMod {
       */
     def this(options: typings.jupyterlabFileeditor.widgetMod.FileEditorFactory.IOptions) = this()
     
-    var _services: js.Any = js.native
+    /* private */ var _services: js.Any = js.native
   }
   object FileEditorFactory {
     
     /**
       * The options used to create an editor widget factory.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The editor services used by the factory.
         */
-      var editorServices: IEditorServices = js.native
+      var editorServices: IEditorServices
       
       /**
         * The factory options associated with the factory.
         */
       var factoryOptions: IWidgetFactoryOptions[
             IDocumentWidget[FileEditor, typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IModel]
-          ] = js.native
+          ]
     }
     object IOptions {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         editorServices: IEditorServices,
         factoryOptions: IWidgetFactoryOptions[
               IDocumentWidget[FileEditor, typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IModel]
@@ -208,14 +199,11 @@ object widgetMod {
         __obj.asInstanceOf[typings.jupyterlabFileeditor.widgetMod.FileEditorFactory.IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: typings.jupyterlabFileeditor.widgetMod.FileEditorFactory.IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.jupyterlabFileeditor.widgetMod.FileEditorFactory.IOptions](x: Self) {
         
-        @scala.inline
-        def setEditorServices(value: IEditorServices): Self = StObject.set(x, "editorServices", value.asInstanceOf[js.Any])
+        inline def setEditorServices(value: IEditorServices): Self = StObject.set(x, "editorServices", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFactoryOptions(
+        inline def setFactoryOptions(
           value: IWidgetFactoryOptions[
                   IDocumentWidget[FileEditor, typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IModel]
                 ]

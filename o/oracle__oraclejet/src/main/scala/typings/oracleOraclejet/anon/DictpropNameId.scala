@@ -3,27 +3,23 @@ package typings.oracleOraclejet.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DictpropNameId
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var id: js.Any = js.native
+  var id: js.Any
 }
 object DictpropNameId {
   
-  @scala.inline
-  def apply(id: js.Any): DictpropNameId = {
+  inline def apply(id: js.Any): DictpropNameId = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DictpropNameId]
   }
   
-  @scala.inline
-  implicit class DictpropNameIdMutableBuilder[Self <: DictpropNameId] (val x: Self) extends AnyVal {
+  extension [Self <: DictpropNameId](x: Self) {
     
-    @scala.inline
-    def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

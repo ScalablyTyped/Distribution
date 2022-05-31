@@ -7,98 +7,79 @@ import typings.react.mod.DOMAttributes
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object blueprintMod {
   
-  @JSImport("@jupyterlab/ui-components/lib/blueprint", "Button")
+  @JSImport("@jupyterlab/ui-components/lib/blueprint", JSImport.Namespace)
   @js.native
-  def Button(props: IButtonProps with CommonProps[_]): Element = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@jupyterlab/ui-components/lib/blueprint", "Checkbox")
-  @js.native
-  def Checkbox(
-    props: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ICheckboxProps */ js.Any) with CommonProps[_]
-  ): Element = js.native
+  inline def Button(props: IButtonProps & CommonProps[js.Any]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("@jupyterlab/ui-components/lib/blueprint", "Collapse")
-  @js.native
-  def Collapse(
-    props: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ICollapseProps */ js.Any) with CommonProps[_]
-  ): Element = js.native
+  inline def Checkbox(
+    props: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ICheckboxProps */ js.Any) & CommonProps[js.Any]
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Checkbox")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("@jupyterlab/ui-components/lib/blueprint", "InputGroup")
-  @js.native
-  def InputGroup(props: IInputGroupProps with CommonProps[_]): Element = js.native
+  inline def Collapse(
+    props: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ICollapseProps */ js.Any) & CommonProps[js.Any]
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Collapse")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("@jupyterlab/ui-components/lib/blueprint", "Select")
-  @js.native
-  def Select(
-    props: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISelectProps<any> */ js.Any) with CommonProps[_]
-  ): Element = js.native
+  inline def InputGroup(props: IInputGroupProps & CommonProps[js.Any]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InputGroup")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  inline def Select(
+    props: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISelectProps<any> */ js.Any) & CommonProps[js.Any]
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Select")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type CommonProps[T] = DOMAttributes[T]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IBPButtonProps * / any */ @js.native
-  trait IButtonProps extends StObject {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IBPButtonProps * / any */ trait IButtonProps extends StObject {
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[button | submit | reset] = js.native
+    var `type`: js.UndefOr[button | submit | reset] = js.undefined
   }
   object IButtonProps {
     
-    @scala.inline
-    def apply(): IButtonProps = {
+    inline def apply(): IButtonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IButtonProps]
     }
     
-    @scala.inline
-    implicit class IButtonPropsMutableBuilder[Self <: IButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: IButtonProps](x: Self) {
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setType(value: button | submit | reset): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: button | submit | reset): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IBPInputGroupProps * / any */ @js.native
-  trait IInputGroupProps extends StObject {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IBPInputGroupProps * / any */ trait IInputGroupProps extends StObject {
     
     var rightIcon: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IIconProps * / any['icon'] */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object IInputGroupProps {
     
-    @scala.inline
-    def apply(): IInputGroupProps = {
+    inline def apply(): IInputGroupProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IInputGroupProps]
     }
     
-    @scala.inline
-    implicit class IInputGroupPropsMutableBuilder[Self <: IInputGroupProps] (val x: Self) extends AnyVal {
+    extension [Self <: IInputGroupProps](x: Self) {
       
-      @scala.inline
-      def setRightIcon(
+      inline def setRightIcon(
         value: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IIconProps * / any['icon'] */ js.Any
       ): Self = StObject.set(x, "rightIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightIconUndefined: Self = StObject.set(x, "rightIcon", js.undefined)
+      inline def setRightIconUndefined: Self = StObject.set(x, "rightIcon", js.undefined)
     }
   }
 }

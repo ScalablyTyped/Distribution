@@ -5,7 +5,6 @@ import typings.luminoWidgets.mod.ContextMenu
 import typings.luminoWidgets.mod.Menu
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menusvgMod {
@@ -36,6 +35,10 @@ object menusvgMod {
   }
   object MenuSvg {
     
+    @JSImport("@jupyterlab/ui-components/lib/icon/widgets/menusvg", "MenuSvg")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * a modified implementation of the Menu Renderer
       */
@@ -51,8 +54,6 @@ object menusvgMod {
     @js.native
     val defaultRenderer: Renderer = js.native
     
-    @JSImport("@jupyterlab/ui-components/lib/icon/widgets/menusvg", "MenuSvg.overrideDefaultRenderer")
-    @js.native
-    def overrideDefaultRenderer(menu: Menu): Unit = js.native
+    inline def overrideDefaultRenderer(menu: Menu): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("overrideDefaultRenderer")(menu.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

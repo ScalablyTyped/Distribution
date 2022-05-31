@@ -5,7 +5,6 @@ import typings.babylonjs.engineMod.Engine
 import typings.babylonjs.postProcessMod.PostProcess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stereoscopicInterlacePostProcessMod {
@@ -28,13 +27,6 @@ object stereoscopicInterlacePostProcessMod {
       name: String,
       rigCameras: js.Array[Camera],
       isStereoscopicHoriz: Boolean,
-      samplingMode: js.UndefOr[scala.Nothing],
-      engine: Engine
-    ) = this()
-    def this(
-      name: String,
-      rigCameras: js.Array[Camera],
-      isStereoscopicHoriz: Boolean,
       samplingMode: Double,
       engine: Engine
     ) = this()
@@ -42,24 +34,15 @@ object stereoscopicInterlacePostProcessMod {
       name: String,
       rigCameras: js.Array[Camera],
       isStereoscopicHoriz: Boolean,
-      samplingMode: js.UndefOr[scala.Nothing],
-      engine: js.UndefOr[scala.Nothing],
-      reusable: Boolean
-    ) = this()
-    def this(
-      name: String,
-      rigCameras: js.Array[Camera],
-      isStereoscopicHoriz: Boolean,
-      samplingMode: js.UndefOr[scala.Nothing],
-      engine: Engine,
-      reusable: Boolean
+      samplingMode: Unit,
+      engine: Engine
     ) = this()
     def this(
       name: String,
       rigCameras: js.Array[Camera],
       isStereoscopicHoriz: Boolean,
       samplingMode: Double,
-      engine: js.UndefOr[scala.Nothing],
+      engine: Unit,
       reusable: Boolean
     ) = this()
     def this(
@@ -70,10 +53,26 @@ object stereoscopicInterlacePostProcessMod {
       engine: Engine,
       reusable: Boolean
     ) = this()
+    def this(
+      name: String,
+      rigCameras: js.Array[Camera],
+      isStereoscopicHoriz: Boolean,
+      samplingMode: Unit,
+      engine: Unit,
+      reusable: Boolean
+    ) = this()
+    def this(
+      name: String,
+      rigCameras: js.Array[Camera],
+      isStereoscopicHoriz: Boolean,
+      samplingMode: Unit,
+      engine: Engine,
+      reusable: Boolean
+    ) = this()
     
-    var _passedProcess: js.Any = js.native
+    /* private */ var _passedProcess: js.Any = js.native
     
-    var _stepSize: js.Any = js.native
+    /* private */ var _stepSize: js.Any = js.native
   }
   
   @JSImport("babylonjs/PostProcesses/stereoscopicInterlacePostProcess", "StereoscopicInterlacePostProcessI")
@@ -107,14 +106,6 @@ object stereoscopicInterlacePostProcessMod {
       rigCameras: js.Array[Camera],
       isStereoscopicHoriz: Boolean,
       isStereoscopicInterlaced: Boolean,
-      samplingMode: js.UndefOr[scala.Nothing],
-      engine: Engine
-    ) = this()
-    def this(
-      name: String,
-      rigCameras: js.Array[Camera],
-      isStereoscopicHoriz: Boolean,
-      isStereoscopicInterlaced: Boolean,
       samplingMode: Double,
       engine: Engine
     ) = this()
@@ -123,18 +114,8 @@ object stereoscopicInterlacePostProcessMod {
       rigCameras: js.Array[Camera],
       isStereoscopicHoriz: Boolean,
       isStereoscopicInterlaced: Boolean,
-      samplingMode: js.UndefOr[scala.Nothing],
-      engine: js.UndefOr[scala.Nothing],
-      reusable: Boolean
-    ) = this()
-    def this(
-      name: String,
-      rigCameras: js.Array[Camera],
-      isStereoscopicHoriz: Boolean,
-      isStereoscopicInterlaced: Boolean,
-      samplingMode: js.UndefOr[scala.Nothing],
-      engine: Engine,
-      reusable: Boolean
+      samplingMode: Unit,
+      engine: Engine
     ) = this()
     def this(
       name: String,
@@ -142,7 +123,7 @@ object stereoscopicInterlacePostProcessMod {
       isStereoscopicHoriz: Boolean,
       isStereoscopicInterlaced: Boolean,
       samplingMode: Double,
-      engine: js.UndefOr[scala.Nothing],
+      engine: Unit,
       reusable: Boolean
     ) = this()
     def this(
@@ -154,9 +135,27 @@ object stereoscopicInterlacePostProcessMod {
       engine: Engine,
       reusable: Boolean
     ) = this()
+    def this(
+      name: String,
+      rigCameras: js.Array[Camera],
+      isStereoscopicHoriz: Boolean,
+      isStereoscopicInterlaced: Boolean,
+      samplingMode: Unit,
+      engine: Unit,
+      reusable: Boolean
+    ) = this()
+    def this(
+      name: String,
+      rigCameras: js.Array[Camera],
+      isStereoscopicHoriz: Boolean,
+      isStereoscopicInterlaced: Boolean,
+      samplingMode: Unit,
+      engine: Engine,
+      reusable: Boolean
+    ) = this()
     
-    var _passedProcess: js.Any = js.native
+    /* private */ var _passedProcess: js.Any = js.native
     
-    var _stepSize: js.Any = js.native
+    /* private */ var _stepSize: js.Any = js.native
   }
 }

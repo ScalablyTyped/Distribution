@@ -2,25 +2,26 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScreenSpaceReflectionPostProcess extends PostProcess {
+trait ScreenSpaceReflectionPostProcess
+  extends StObject
+     with PostProcess {
   
-  var _enableSmoothReflections: js.Any = js.native
+  /* private */ var _enableSmoothReflections: js.Any = js.native
   
-  var _forceGeometryBuffer: js.Any = js.native
+  /* private */ var _forceGeometryBuffer: js.Any = js.native
   
-  var _geometryBufferRenderer: js.Any = js.native
+  /* private */ var _geometryBufferRenderer: js.Any = js.native
   
-  var _prePassRenderer: js.Any = js.native
+  /* private */ var _prePassRenderer: js.Any = js.native
   
-  var _reflectionSamples: js.Any = js.native
+  /* private */ var _reflectionSamples: js.Any = js.native
   
-  var _smoothSteps: js.Any = js.native
+  /* private */ var _smoothSteps: js.Any = js.native
   
-  var _updateEffectDefines: js.Any = js.native
+  /* private */ var _updateEffectDefines: js.Any = js.native
   
   /**
     * Gets wether or not smoothing reflections is enabled.

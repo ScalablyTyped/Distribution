@@ -4,7 +4,6 @@ import typings.`3box`.anon.Address
 import typings.`3box`.anon.AddressServer
 import typings.`3box`.anon.Audience
 import typings.`3box`.anon.Blocklist
-import typings.`3box`.anon.BlocklistMetadata
 import typings.`3box`.anon.ConsentCallback
 import typings.`3box`.anon.FirstModerator
 import typings.`3box`.anon.GraphqlServer
@@ -13,6 +12,7 @@ import typings.`3box`.anon.Metadata
 import typings.`3box`.anon.NoAutoSub
 import typings.`3box`.anon.ProfileServer
 import typings.`3box`.anon.SignJWT
+import typings.`3box`.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,7 +45,7 @@ object mod {
   
   /* static member */
   inline def getSpace(address: String, name: String): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSpace")(address.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
-  inline def getSpace(address: String, name: String, opts: BlocklistMetadata): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSpace")(address.asInstanceOf[js.Any], name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
+  inline def getSpace(address: String, name: String, opts: Metadata): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSpace")(address.asInstanceOf[js.Any], name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
   
   /* static member */
   inline def getThread(space: String, name: String, firstModerator: String, members: Boolean): js.Promise[js.Array[ThreadPost]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getThread")(space.asInstanceOf[js.Any], name.asInstanceOf[js.Any], firstModerator.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ThreadPost]]]
@@ -192,7 +192,7 @@ object mod {
   trait Storage extends StObject {
     
     def all(): js.Promise[js.UndefOr[js.Array[js.Any]]] = js.native
-    def all(opts: Metadata): js.Promise[js.UndefOr[js.Array[js.Any]]] = js.native
+    def all(opts: `0`): js.Promise[js.UndefOr[js.Array[js.Any]]] = js.native
     
     def get(key: String): js.Promise[js.Any] = js.native
     

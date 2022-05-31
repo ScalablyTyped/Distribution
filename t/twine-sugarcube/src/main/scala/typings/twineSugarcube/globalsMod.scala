@@ -134,11 +134,5 @@ object globalsMod {
     @JSGlobal("setup")
     @js.native
     val setup: SugarCubeSetupObject = js.native
-    
-    /**
-      * Strings localization object.
-      * @since 2.10.0
-      */
-    object l10nStrings
   }
 }

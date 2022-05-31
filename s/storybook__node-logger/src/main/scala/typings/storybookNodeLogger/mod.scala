@@ -1,6 +1,5 @@
 package typings.storybookNodeLogger
 
-import org.scalablytyped.runtime.Shortcut
 import typings.chalk.mod.Chalk
 import typings.npmlog.mod.Logger
 import typings.std.TemplateStringsArray
@@ -193,17 +192,9 @@ object mod {
     inline def red_=(x: Chalk): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("red")(x.asInstanceOf[js.Any])
   }
   
-  object instance extends Shortcut {
-    
-    @JSImport("@storybook/node-logger", "instance")
-    @js.native
-    val ^ : Logger = js.native
-    
-    type _To = Logger
-    
-    /* This means you don't have to write `^`, but can instead just say `instance.foo` */
-    override def _to: Logger = ^
-  }
+  @JSImport("@storybook/node-logger", "instance")
+  @js.native
+  val instance: Logger = js.native
   
   object logger {
     

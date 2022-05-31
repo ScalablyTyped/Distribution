@@ -2,13 +2,14 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlayAnimationAction extends Action {
+trait PlayAnimationAction
+  extends StObject
+     with Action {
   
-  var _target: js.Any = js.native
+  /* private */ var _target: js.Any = js.native
   
   /**
     * Where the animation should start (animation frame)

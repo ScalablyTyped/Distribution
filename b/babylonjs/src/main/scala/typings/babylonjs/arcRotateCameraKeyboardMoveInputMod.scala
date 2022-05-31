@@ -4,28 +4,29 @@ import typings.babylonjs.arcRotateCameraMod.ArcRotateCamera
 import typings.babylonjs.cameraInputsManagerMod.ICameraInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arcRotateCameraKeyboardMoveInputMod {
   
   @JSImport("babylonjs/Cameras/Inputs/arcRotateCameraKeyboardMoveInput", "ArcRotateCameraKeyboardMoveInput")
   @js.native
-  class ArcRotateCameraKeyboardMoveInput () extends ICameraInput[ArcRotateCamera] {
+  class ArcRotateCameraKeyboardMoveInput ()
+    extends StObject
+       with ICameraInput[ArcRotateCamera] {
     
-    var _altPressed: js.Any = js.native
+    /* private */ var _altPressed: js.Any = js.native
     
-    var _ctrlPressed: js.Any = js.native
+    /* private */ var _ctrlPressed: js.Any = js.native
     
-    var _engine: js.Any = js.native
+    /* private */ var _engine: js.Any = js.native
     
-    var _keys: js.Any = js.native
+    /* private */ var _keys: js.Any = js.native
     
-    var _onCanvasBlurObserver: js.Any = js.native
+    /* private */ var _onCanvasBlurObserver: js.Any = js.native
     
-    var _onKeyboardObserver: js.Any = js.native
+    /* private */ var _onKeyboardObserver: js.Any = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
     /**
       * Rotation speed of the camera

@@ -17,24 +17,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object crypto {
   
   /**
-    * Cipher class to encrypt and decrypt data
-    * @param params parameters for constructor
-    * @description
-    * Here is supported canonicalized cipher algorithm names and its standard names:
-    * - RSA - RSA/ECB/PKCS1Padding (default for RSAKey)
-    * - RSAOAEP - RSA/ECB/OAEPWithSHA-1AndMGF1Padding
-    * - RSAOAEP224 - RSA/ECB/OAEPWithSHA-224AndMGF1Padding(*)
-    * - RSAOAEP256 - RSA/ECB/OAEPWithSHA-256AndMGF1Padding
-    * - RSAOAEP384 - RSA/ECB/OAEPWithSHA-384AndMGF1Padding(*)
-    * - RSAOAEP512 - RSA/ECB/OAEPWithSHA-512AndMGF1Padding(*)
-    * NOTE: (*) is not supported in Java JCE.
-    * Currently this class supports only RSA encryption and decryption.
-    * However it is planning to implement also symmetric ciphers near in the future.
-    * @example
-    */
-  object Cipher
-  
-  /**
     * class for DSA signing and verification
     * @description
     *
@@ -359,29 +341,6 @@ object crypto {
       inline def setOidUndefined: Self = StObject.set(x, "oid", js.undefined)
     }
   }
-  
-  /**
-    * static object for elliptic curve names and parameters
-    * @description
-    * This class provides parameters for named elliptic curves.
-    * Currently it supoprts following curve names and aliases however
-    * the name marked (*) are available for `KJUR.crypto.ECDSA` and
-    * `KJUR.crypto.Signature` classes.
-    *
-    * - secp128r1
-    * - secp160r1
-    * - secp160k1
-    * - secp192r1
-    * - secp192k1
-    * - secp224r1
-    * - secp256r1, NIST P-256, P-256, prime256v1 (*)
-    * - secp256k1 (*)
-    * - secp384r1, NIST P-384, P-384 (*)
-    * - secp521r1, NIST P-521, P-521
-    *
-    * You can register new curves by using the 'regist' method.
-    */
-  object ECParameterDB
   
   /**
     * Mac(Message Authentication Code) class which is very similar to java.security.Mac class

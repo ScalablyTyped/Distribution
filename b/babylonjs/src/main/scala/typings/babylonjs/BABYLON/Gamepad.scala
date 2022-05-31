@@ -2,7 +2,6 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -11,32 +10,32 @@ trait Gamepad extends StObject {
   /**
     * Specifies whether the left control stick should be Y-inverted
     */
-  var _invertLeftStickY: Boolean = js.native
+  /* protected */ var _invertLeftStickY: Boolean = js.native
   
   /** @hidden */
   var _isConnected: Boolean = js.native
   
-  var _leftStick: js.Any = js.native
+  /* private */ var _leftStick: js.Any = js.native
   
-  var _leftStickAxisX: js.Any = js.native
+  /* private */ var _leftStickAxisX: js.Any = js.native
   
-  var _leftStickAxisY: js.Any = js.native
+  /* private */ var _leftStickAxisY: js.Any = js.native
   
   /**
     * Triggered when the left control stick has been changed
     */
-  var _onleftstickchanged: js.Any = js.native
+  /* private */ var _onleftstickchanged: js.Any = js.native
   
   /**
     * Triggered when the right control stick has been changed
     */
-  var _onrightstickchanged: js.Any = js.native
+  /* private */ var _onrightstickchanged: js.Any = js.native
   
-  var _rightStick: js.Any = js.native
+  /* private */ var _rightStick: js.Any = js.native
   
-  var _rightStickAxisX: js.Any = js.native
+  /* private */ var _rightStickAxisX: js.Any = js.native
   
-  var _rightStickAxisY: js.Any = js.native
+  /* private */ var _rightStickAxisY: js.Any = js.native
   
   /**
     * The browser gamepad

@@ -3,27 +3,23 @@ package typings.jupyterlabServices.messagesMod
 import typings.jupyterlabServices.jupyterlabServicesStrings.abort
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IReplyAbortContent
-  extends _ReplyContent[js.Any] {
+  extends StObject
+     with _ReplyContent[js.Any] {
   
-  var status: abort = js.native
+  var status: abort
 }
 object IReplyAbortContent {
   
-  @scala.inline
-  def apply(status: abort): IReplyAbortContent = {
-    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
+  inline def apply(): IReplyAbortContent = {
+    val __obj = js.Dynamic.literal(status = "abort")
     __obj.asInstanceOf[IReplyAbortContent]
   }
   
-  @scala.inline
-  implicit class IReplyAbortContentMutableBuilder[Self <: IReplyAbortContent] (val x: Self) extends AnyVal {
+  extension [Self <: IReplyAbortContent](x: Self) {
     
-    @scala.inline
-    def setStatus(value: abort): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: abort): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

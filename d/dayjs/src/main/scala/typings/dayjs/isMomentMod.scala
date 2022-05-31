@@ -16,7 +16,4 @@ object isMomentMod extends Shortcut {
   
   /* This means you don't have to write `^`, but can instead just say `isMomentMod.foo` */
   override def _to: PluginFunc[js.Any] = ^
-  
-  /* augmented module */
-  object dayjsEsmAugmentingMod
 }

@@ -8,7 +8,6 @@ import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.uniformBufferMod.UniformBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object engineMultiviewMod {
@@ -16,14 +15,13 @@ object engineMultiviewMod {
   /* augmented module */
   object babylonjsCamerasCameraAugmentingMod {
     
-    @js.native
     trait Camera extends StObject {
       
       /**
         * @hidden
         * For cameras that cannot use multiview images to display directly. (e.g. webVR camera will render to multiview texture, then copy to each eye texture and go from there)
         */
-      var _multiviewTexture: Nullable[RenderTargetTexture] = js.native
+      var _multiviewTexture: Nullable[RenderTargetTexture]
       
       /**
         * @hidden
@@ -31,36 +29,30 @@ object engineMultiviewMod {
         * @param width height to set on the multiview texture
         * @param height width to set on the multiview texture
         */
-      def _resizeOrCreateMultiviewTexture(width: Double, height: Double): Unit = js.native
+      def _resizeOrCreateMultiviewTexture(width: Double, height: Double): Unit
       
       /**
         * @hidden
         * For cameras that cannot use multiview images to display directly. (e.g. webVR camera will render to multiview texture, then copy to each eye texture and go from there)
         */
-      var _useMultiviewToSingleView: Boolean = js.native
+      var _useMultiviewToSingleView: Boolean
     }
     object Camera {
       
-      @scala.inline
-      def apply(_resizeOrCreateMultiviewTexture: (Double, Double) => Unit, _useMultiviewToSingleView: Boolean): Camera = {
-        val __obj = js.Dynamic.literal(_resizeOrCreateMultiviewTexture = js.Any.fromFunction2(_resizeOrCreateMultiviewTexture), _useMultiviewToSingleView = _useMultiviewToSingleView.asInstanceOf[js.Any])
+      inline def apply(_resizeOrCreateMultiviewTexture: (Double, Double) => Unit, _useMultiviewToSingleView: Boolean): Camera = {
+        val __obj = js.Dynamic.literal(_resizeOrCreateMultiviewTexture = js.Any.fromFunction2(_resizeOrCreateMultiviewTexture), _useMultiviewToSingleView = _useMultiviewToSingleView.asInstanceOf[js.Any], _multiviewTexture = null)
         __obj.asInstanceOf[Camera]
       }
       
-      @scala.inline
-      implicit class CameraMutableBuilder[Self <: Camera] (val x: Self) extends AnyVal {
+      extension [Self <: Camera](x: Self) {
         
-        @scala.inline
-        def set_multiviewTexture(value: Nullable[RenderTargetTexture]): Self = StObject.set(x, "_multiviewTexture", value.asInstanceOf[js.Any])
+        inline def set_multiviewTexture(value: Nullable[RenderTargetTexture]): Self = StObject.set(x, "_multiviewTexture", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set_multiviewTextureNull: Self = StObject.set(x, "_multiviewTexture", null)
+        inline def set_multiviewTextureNull: Self = StObject.set(x, "_multiviewTexture", null)
         
-        @scala.inline
-        def set_resizeOrCreateMultiviewTexture(value: (Double, Double) => Unit): Self = StObject.set(x, "_resizeOrCreateMultiviewTexture", js.Any.fromFunction2(value))
+        inline def set_resizeOrCreateMultiviewTexture(value: (Double, Double) => Unit): Self = StObject.set(x, "_resizeOrCreateMultiviewTexture", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def set_useMultiviewToSingleView(value: Boolean): Self = StObject.set(x, "_useMultiviewToSingleView", value.asInstanceOf[js.Any])
+        inline def set_useMultiviewToSingleView(value: Boolean): Self = StObject.set(x, "_useMultiviewToSingleView", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -68,14 +60,13 @@ object engineMultiviewMod {
   /* augmented module */
   object babylonjsEnginesEngineAugmentingMod {
     
-    @js.native
     trait Engine extends StObject {
       
       /**
         * Binds a multiview framebuffer to be drawn to
         * @param multiviewTexture texture to bind
         */
-      def bindMultiviewFramebuffer(multiviewTexture: InternalTexture): Unit = js.native
+      def bindMultiviewFramebuffer(multiviewTexture: InternalTexture): Unit
       
       /**
         * Creates a new multiview render target
@@ -83,12 +74,11 @@ object engineMultiviewMod {
         * @param height defines the height of the texture
         * @returns the created multiview texture
         */
-      def createMultiviewRenderTargetTexture(width: Double, height: Double): InternalTexture = js.native
+      def createMultiviewRenderTargetTexture(width: Double, height: Double): InternalTexture
     }
     object Engine {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         bindMultiviewFramebuffer: InternalTexture => Unit,
         createMultiviewRenderTargetTexture: (Double, Double) => InternalTexture
       ): Engine = {
@@ -96,14 +86,11 @@ object engineMultiviewMod {
         __obj.asInstanceOf[Engine]
       }
       
-      @scala.inline
-      implicit class EngineMutableBuilder[Self <: Engine] (val x: Self) extends AnyVal {
+      extension [Self <: Engine](x: Self) {
         
-        @scala.inline
-        def setBindMultiviewFramebuffer(value: InternalTexture => Unit): Self = StObject.set(x, "bindMultiviewFramebuffer", js.Any.fromFunction1(value))
+        inline def setBindMultiviewFramebuffer(value: InternalTexture => Unit): Self = StObject.set(x, "bindMultiviewFramebuffer", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCreateMultiviewRenderTargetTexture(value: (Double, Double) => InternalTexture): Self = StObject.set(x, "createMultiviewRenderTargetTexture", js.Any.fromFunction2(value))
+        inline def setCreateMultiviewRenderTargetTexture(value: (Double, Double) => InternalTexture): Self = StObject.set(x, "createMultiviewRenderTargetTexture", js.Any.fromFunction2(value))
       }
     }
   }
@@ -128,7 +115,7 @@ object engineMultiviewMod {
       
       /** @hidden */
       def _updateMultiviewUbo(): Unit = js.native
-      def _updateMultiviewUbo(viewR: js.UndefOr[scala.Nothing], projectionR: Matrix): Unit = js.native
+      def _updateMultiviewUbo(viewR: Unit, projectionR: Matrix): Unit = js.native
       def _updateMultiviewUbo(viewR: Matrix): Unit = js.native
       def _updateMultiviewUbo(viewR: Matrix, projectionR: Matrix): Unit = js.native
     }

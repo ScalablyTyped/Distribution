@@ -6,41 +6,43 @@ import typings.std.Element
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ojcontextMod {
   
   @JSImport("@oracle/oraclejet/ojcontext", JSImport.Namespace)
   @js.native
-  class ^ () extends Context
+  class ^ ()
+    extends StObject
+       with Context {
+    
+    /* CompleteClass */
+    override def getBusyContext(): BusyContext = js.native
+  }
+  @JSImport("@oracle/oraclejet/ojcontext", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("@oracle/oraclejet/ojcontext", "getContext")
-  @js.native
-  def getContext(node: Element): Context = js.native
+  inline def getContext(node: Element): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(node.asInstanceOf[js.Any]).asInstanceOf[Context]
   
   /* static member */
-  @JSImport("@oracle/oraclejet/ojcontext", "getPageContext")
-  @js.native
-  def getPageContext(): Context = js.native
+  inline def getPageContext(): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("getPageContext")().asInstanceOf[Context]
   
   /* static member */
-  @JSImport("@oracle/oraclejet/ojcontext", "setBusyContextDefaultTimeout")
-  @js.native
-  def setBusyContextDefaultTimeout(timeout: Double): js.Any = js.native
+  inline def setBusyContextDefaultTimeout(timeout: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setBusyContextDefaultTimeout")(timeout.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @js.native
   trait BusyContext extends StObject {
     
     def addBusyState(options: Description): js.Function0[Unit] = js.native
     
-    def applicationBootstrapComplete(): js.UndefOr[scala.Nothing] = js.native
+    def applicationBootstrapComplete(): Unit = js.native
     
-    def clear(): js.UndefOr[scala.Nothing] = js.native
+    def clear(): Unit = js.native
     
-    def dump(): js.UndefOr[scala.Nothing] = js.native
-    def dump(message: String): js.UndefOr[scala.Nothing] = js.native
+    def dump(): Unit = js.native
+    def dump(message: String): Unit = js.native
     
     def getBusyStates(): js.Array[DescriptionId] = js.native
     
@@ -50,24 +52,20 @@ object ojcontextMod {
     def whenReady(timeout: Double): js.Promise[Boolean | Error] = js.native
   }
   
-  @js.native
   trait Context extends StObject {
     
-    def getBusyContext(): BusyContext = js.native
+    def getBusyContext(): BusyContext
   }
   object Context {
     
-    @scala.inline
-    def apply(getBusyContext: () => BusyContext): Context = {
+    inline def apply(getBusyContext: () => BusyContext): Context = {
       val __obj = js.Dynamic.literal(getBusyContext = js.Any.fromFunction0(getBusyContext))
       __obj.asInstanceOf[Context]
     }
     
-    @scala.inline
-    implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+    extension [Self <: Context](x: Self) {
       
-      @scala.inline
-      def setGetBusyContext(value: () => BusyContext): Self = StObject.set(x, "getBusyContext", js.Any.fromFunction0(value))
+      inline def setGetBusyContext(value: () => BusyContext): Self = StObject.set(x, "getBusyContext", js.Any.fromFunction0(value))
     }
   }
 }

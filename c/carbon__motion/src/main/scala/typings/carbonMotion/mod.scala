@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("@carbon/motion", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object easings {
     
     @JSImport("@carbon/motion", "easings")
@@ -29,12 +33,5 @@ object mod {
     inline def standard_=(x: Expressive): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("standard")(x.asInstanceOf[js.Any])
   }
   
-  object motion {
-    
-    inline def apply(name: String, mode: String): String = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    @JSImport("@carbon/motion", "motion")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def motion(name: String, mode: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("motion")(name.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[String]
 }

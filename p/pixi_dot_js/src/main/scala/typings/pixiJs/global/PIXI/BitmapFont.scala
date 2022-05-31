@@ -219,14 +219,4 @@ object BitmapFont {
     */
   /* static member */
   inline def uninstall(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("uninstall")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
-  /**
-    * Collection of available/installed fonts.
-    *
-    * @readonly
-    * @static
-    * @member {Object.<string, PIXI.BitmapFont>}
-    */
-  /* static member */
-  object available
 }

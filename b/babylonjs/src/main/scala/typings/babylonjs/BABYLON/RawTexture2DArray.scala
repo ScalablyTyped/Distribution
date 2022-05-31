@@ -3,11 +3,12 @@ package typings.babylonjs.BABYLON
 import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RawTexture2DArray extends Texture {
+trait RawTexture2DArray
+  extends StObject
+     with Texture {
   
   /** Gets or sets the texture format to use */
   var format: Double = js.native

@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "ecmarkup"
-version := "4.2.1-e0d353"
+version := "4.2.1-b9ccef"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "esfx__async-canceltoken" % "1.0.0-pre.13-93c46b",
-  "org.scalablytyped" %%% "esfx__cancelable" % "1.0.0-pre.13-2df42d",
-  "org.scalablytyped" %%% "esfx__disposable" % "1.0.0-pre.13-e7f3ee",
-  "org.scalablytyped" %%% "grammarkdown" % "2.2.7-a0c0e0",
-  "org.scalablytyped" %%% "nomnom" % "0.0-unknown-dt-20201002Z-fbbf28",
-  "org.scalablytyped" %%% "prex" % "0.4.7-c36538",
-  "org.scalablytyped" %%% "std" % "4.1-2f6855")
+  "org.scalablytyped" %%% "esfx__async-canceltoken" % "1.0.0-pre.13-03b831",
+  "org.scalablytyped" %%% "esfx__cancelable" % "1.0.0-pre.13-8a50c5",
+  "org.scalablytyped" %%% "esfx__disposable" % "1.0.0-pre.13-dcbe03",
+  "org.scalablytyped" %%% "grammarkdown" % "2.2.7-754f4a",
+  "org.scalablytyped" %%% "nomnom" % "0.0-unknown-dt-20201002Z-400e01",
+  "org.scalablytyped" %%% "prex" % "0.4.7-27d003",
+  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

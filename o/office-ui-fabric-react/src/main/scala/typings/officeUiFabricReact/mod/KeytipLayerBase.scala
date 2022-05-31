@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact.mod
 
+import typings.officeUiFabricReact.keytipLayerTypesMod.IKeytipLayerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class KeytipLayerBase protected ()
   extends typings.officeUiFabricReact.libKeytipsMod.KeytipLayerBase {
-  def this(props: typings.officeUiFabricReact.keytipLayerTypesMod.IKeytipLayerProps, context: js.Any) = this()
+  def this(props: IKeytipLayerProps, context: js.Any) = this()
 }
 /* static members */
 object KeytipLayerBase {
@@ -30,6 +31,6 @@ object KeytipLayerBase {
   
   @JSImport("office-ui-fabric-react", "KeytipLayerBase.defaultProps")
   @js.native
-  def defaultProps: typings.officeUiFabricReact.keytipLayerTypesMod.IKeytipLayerProps = js.native
-  inline def defaultProps_=(x: typings.officeUiFabricReact.keytipLayerTypesMod.IKeytipLayerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  def defaultProps: IKeytipLayerProps = js.native
+  inline def defaultProps_=(x: IKeytipLayerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

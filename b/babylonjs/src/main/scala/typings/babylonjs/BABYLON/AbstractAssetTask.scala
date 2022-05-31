@@ -3,26 +3,25 @@ package typings.babylonjs.BABYLON
 import typings.babylonjs.anon.Exception
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AbstractAssetTask extends StObject {
   
-  var _errorObject: js.Any = js.native
+  /* private */ var _errorObject: js.Any = js.native
   
-  var _isCompleted: js.Any = js.native
+  /* private */ var _isCompleted: js.Any = js.native
   
   /**
     * Internal only
     * @hidden
     */
   def _setErrorObject(): Unit = js.native
-  def _setErrorObject(message: js.UndefOr[scala.Nothing], exception: js.Any): Unit = js.native
   def _setErrorObject(message: String): Unit = js.native
   def _setErrorObject(message: String, exception: js.Any): Unit = js.native
+  def _setErrorObject(message: Unit, exception: js.Any): Unit = js.native
   
-  var _taskState: js.Any = js.native
+  /* private */ var _taskState: js.Any = js.native
   
   /**
     * Gets the current error object (if task is in error)
@@ -38,17 +37,17 @@ trait AbstractAssetTask extends StObject {
     * Task name
     */ var name: String = js.native
   
-  var onDoneCallback: js.Any = js.native
+  /* private */ var onDoneCallback: js.Any = js.native
   
   /**
     * Callback called when the task is not successful
     */
   def onError(task: js.Any): Unit = js.native
-  def onError(task: js.Any, message: js.UndefOr[scala.Nothing], exception: js.Any): Unit = js.native
   def onError(task: js.Any, message: String): Unit = js.native
   def onError(task: js.Any, message: String, exception: js.Any): Unit = js.native
+  def onError(task: js.Any, message: Unit, exception: js.Any): Unit = js.native
   
-  var onErrorCallback: js.Any = js.native
+  /* private */ var onErrorCallback: js.Any = js.native
   
   /**
     * Callback called when the task is successful

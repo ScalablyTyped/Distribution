@@ -2,7 +2,6 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("BABYLON.PhysicsUpdraftEvent")
 @js.native
 class PhysicsUpdraftEvent protected ()
-  extends typings.babylonjs.BABYLON.PhysicsUpdraftEvent {
+  extends StObject
+     with typings.babylonjs.BABYLON.PhysicsUpdraftEvent {
   /**
     * Initializes the physics updraft event
     * @param _scene BabylonJS scene

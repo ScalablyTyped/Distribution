@@ -4,7 +4,6 @@ import typings.babylonjs.isoundoptionsMod.ISoundOptions
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "Sound")
@@ -30,12 +29,23 @@ class Sound protected ()
     name: String,
     urlOrArrayBuffer: js.Any,
     scene: typings.babylonjs.sceneMod.Scene,
-    readyToPlayCallback: js.UndefOr[Nullable[js.Function0[Unit]]],
+    readyToPlayCallback: Unit,
+    options: ISoundOptions
+  ) = this()
+  def this(
+    name: String,
+    urlOrArrayBuffer: js.Any,
+    scene: typings.babylonjs.sceneMod.Scene,
+    readyToPlayCallback: Nullable[js.Function0[Unit]],
     options: ISoundOptions
   ) = this()
 }
 /* static members */
 object Sound {
+  
+  @JSImport("babylonjs/Legacy/legacy", "Sound")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Parse a JSON representation of a sound to innstantiate in a given scene
@@ -45,20 +55,14 @@ object Sound {
     * @param sourceSound Define a cound place holder if do not need to instantiate a new one
     * @returns the newly parsed sound
     */
-  @JSImport("babylonjs/Legacy/legacy", "Sound.Parse")
-  @js.native
-  def Parse(parsedSound: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.soundMod.Sound = js.native
-  @JSImport("babylonjs/Legacy/legacy", "Sound.Parse")
-  @js.native
-  def Parse(
+  inline def Parse(parsedSound: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.soundMod.Sound = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSound.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.soundMod.Sound]
+  inline def Parse(
     parsedSound: js.Any,
     scene: typings.babylonjs.sceneMod.Scene,
     rootUrl: String,
     sourceSound: typings.babylonjs.soundMod.Sound
-  ): typings.babylonjs.soundMod.Sound = js.native
+  ): typings.babylonjs.soundMod.Sound = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSound.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sourceSound.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.soundMod.Sound]
   
   /** @hidden */
-  @JSImport("babylonjs/Legacy/legacy", "Sound._SceneComponentInitialization")
-  @js.native
-  def _SceneComponentInitialization(scene: typings.babylonjs.sceneMod.Scene): Unit = js.native
+  inline def _SceneComponentInitialization(scene: typings.babylonjs.sceneMod.Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

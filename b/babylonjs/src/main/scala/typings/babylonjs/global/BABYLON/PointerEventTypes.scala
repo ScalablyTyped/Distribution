@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.PointerEventTypes")
 @js.native
 class PointerEventTypes ()
-  extends typings.babylonjs.BABYLON.PointerEventTypes
+  extends StObject
+     with typings.babylonjs.BABYLON.PointerEventTypes
 /* static members */
 object PointerEventTypes {
   

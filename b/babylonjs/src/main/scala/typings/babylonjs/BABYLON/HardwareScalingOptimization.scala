@@ -2,30 +2,29 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HardwareScalingOptimization extends SceneOptimization {
+trait HardwareScalingOptimization
+  extends StObject
+     with SceneOptimization {
   
-  var _currentScale: js.Any = js.native
+  /* private */ var _currentScale: js.Any
   
-  var _directionOffset: js.Any = js.native
+  /* private */ var _directionOffset: js.Any
   
   /**
     * Defines the maximum scale to use (2 by default)
     */
-  var maximumScale: Double = js.native
+  var maximumScale: Double
   
   /**
     * Defines the step to use between two passes (0.5 by default)
     */
-  var step: Double = js.native
+  var step: Double
 }
 object HardwareScalingOptimization {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _currentScale: js.Any,
     _directionOffset: js.Any,
     apply: (Scene, SceneOptimizer) => Boolean,
@@ -38,19 +37,14 @@ object HardwareScalingOptimization {
     __obj.asInstanceOf[HardwareScalingOptimization]
   }
   
-  @scala.inline
-  implicit class HardwareScalingOptimizationMutableBuilder[Self <: HardwareScalingOptimization] (val x: Self) extends AnyVal {
+  extension [Self <: HardwareScalingOptimization](x: Self) {
     
-    @scala.inline
-    def setMaximumScale(value: Double): Self = StObject.set(x, "maximumScale", value.asInstanceOf[js.Any])
+    inline def setMaximumScale(value: Double): Self = StObject.set(x, "maximumScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_currentScale(value: js.Any): Self = StObject.set(x, "_currentScale", value.asInstanceOf[js.Any])
+    inline def set_currentScale(value: js.Any): Self = StObject.set(x, "_currentScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_directionOffset(value: js.Any): Self = StObject.set(x, "_directionOffset", value.asInstanceOf[js.Any])
+    inline def set_directionOffset(value: js.Any): Self = StObject.set(x, "_directionOffset", value.asInstanceOf[js.Any])
   }
 }

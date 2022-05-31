@@ -10,9 +10,9 @@ JupyterLab - JSON Renderer
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/json-extension |
 | Keywords           | - |
-| # releases         | 113 |
+| # releases         | 126 |
 | # dependents       | 1 |
-| # downloads        | 1343649 |
+| # downloads        | 1456954 |
 | # stars            | 0 |
 
 ## Links

@@ -4,13 +4,13 @@ import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.BABYLON.RenderTargetTextureSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.ProceduralTexture")
 @js.native
 class ProceduralTexture protected ()
-  extends typings.babylonjs.BABYLON.ProceduralTexture {
+  extends StObject
+     with typings.babylonjs.BABYLON.ProceduralTexture {
   /**
     * Instantiates a new procedural texture.
     * Procedural texturing is a way to programmatically create a texture. There are 2 types of procedural textures: code-only, and code that references some classic 2D images, sometimes called 'refMaps' or 'sampler' images.
@@ -43,7 +43,7 @@ class ProceduralTexture protected ()
     size: RenderTargetTextureSize,
     fragment: js.Any,
     scene: Nullable[typings.babylonjs.BABYLON.Scene],
-    fallbackTexture: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Texture]],
+    fallbackTexture: Unit,
     generateMipMaps: Boolean
   ) = this()
   def this(
@@ -51,16 +51,15 @@ class ProceduralTexture protected ()
     size: RenderTargetTextureSize,
     fragment: js.Any,
     scene: Nullable[typings.babylonjs.BABYLON.Scene],
-    fallbackTexture: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Texture]],
-    generateMipMaps: js.UndefOr[scala.Nothing],
-    isCube: Boolean
+    fallbackTexture: Nullable[typings.babylonjs.BABYLON.Texture],
+    generateMipMaps: Boolean
   ) = this()
   def this(
     name: String,
     size: RenderTargetTextureSize,
     fragment: js.Any,
     scene: Nullable[typings.babylonjs.BABYLON.Scene],
-    fallbackTexture: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Texture]],
+    fallbackTexture: Unit,
     generateMipMaps: Boolean,
     isCube: Boolean
   ) = this()
@@ -69,9 +68,36 @@ class ProceduralTexture protected ()
     size: RenderTargetTextureSize,
     fragment: js.Any,
     scene: Nullable[typings.babylonjs.BABYLON.Scene],
-    fallbackTexture: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Texture]],
-    generateMipMaps: js.UndefOr[scala.Nothing],
-    isCube: js.UndefOr[scala.Nothing],
+    fallbackTexture: Unit,
+    generateMipMaps: Unit,
+    isCube: Boolean
+  ) = this()
+  def this(
+    name: String,
+    size: RenderTargetTextureSize,
+    fragment: js.Any,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    fallbackTexture: Nullable[typings.babylonjs.BABYLON.Texture],
+    generateMipMaps: Boolean,
+    isCube: Boolean
+  ) = this()
+  def this(
+    name: String,
+    size: RenderTargetTextureSize,
+    fragment: js.Any,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    fallbackTexture: Nullable[typings.babylonjs.BABYLON.Texture],
+    generateMipMaps: Unit,
+    isCube: Boolean
+  ) = this()
+  def this(
+    name: String,
+    size: RenderTargetTextureSize,
+    fragment: js.Any,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    fallbackTexture: Unit,
+    generateMipMaps: Boolean,
+    isCube: Boolean,
     textureType: Double
   ) = this()
   def this(
@@ -79,8 +105,18 @@ class ProceduralTexture protected ()
     size: RenderTargetTextureSize,
     fragment: js.Any,
     scene: Nullable[typings.babylonjs.BABYLON.Scene],
-    fallbackTexture: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Texture]],
-    generateMipMaps: js.UndefOr[scala.Nothing],
+    fallbackTexture: Unit,
+    generateMipMaps: Boolean,
+    isCube: Unit,
+    textureType: Double
+  ) = this()
+  def this(
+    name: String,
+    size: RenderTargetTextureSize,
+    fragment: js.Any,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    fallbackTexture: Unit,
+    generateMipMaps: Unit,
     isCube: Boolean,
     textureType: Double
   ) = this()
@@ -89,9 +125,9 @@ class ProceduralTexture protected ()
     size: RenderTargetTextureSize,
     fragment: js.Any,
     scene: Nullable[typings.babylonjs.BABYLON.Scene],
-    fallbackTexture: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Texture]],
-    generateMipMaps: Boolean,
-    isCube: js.UndefOr[scala.Nothing],
+    fallbackTexture: Unit,
+    generateMipMaps: Unit,
+    isCube: Unit,
     textureType: Double
   ) = this()
   def this(
@@ -99,9 +135,45 @@ class ProceduralTexture protected ()
     size: RenderTargetTextureSize,
     fragment: js.Any,
     scene: Nullable[typings.babylonjs.BABYLON.Scene],
-    fallbackTexture: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Texture]],
+    fallbackTexture: Nullable[typings.babylonjs.BABYLON.Texture],
     generateMipMaps: Boolean,
     isCube: Boolean,
     textureType: Double
   ) = this()
+  def this(
+    name: String,
+    size: RenderTargetTextureSize,
+    fragment: js.Any,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    fallbackTexture: Nullable[typings.babylonjs.BABYLON.Texture],
+    generateMipMaps: Boolean,
+    isCube: Unit,
+    textureType: Double
+  ) = this()
+  def this(
+    name: String,
+    size: RenderTargetTextureSize,
+    fragment: js.Any,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    fallbackTexture: Nullable[typings.babylonjs.BABYLON.Texture],
+    generateMipMaps: Unit,
+    isCube: Boolean,
+    textureType: Double
+  ) = this()
+  def this(
+    name: String,
+    size: RenderTargetTextureSize,
+    fragment: js.Any,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    fallbackTexture: Nullable[typings.babylonjs.BABYLON.Texture],
+    generateMipMaps: Unit,
+    isCube: Unit,
+    textureType: Double
+  ) = this()
+  
+  /**
+    * Array of animations
+    */
+  /* CompleteClass */
+  var animations: Nullable[js.Array[typings.babylonjs.BABYLON.Animation]] = js.native
 }

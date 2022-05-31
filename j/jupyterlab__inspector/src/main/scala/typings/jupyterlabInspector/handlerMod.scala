@@ -10,7 +10,6 @@ import typings.luminoDisposable.mod.IDisposable
 import typings.luminoSignaling.mod.ISignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object handlerMod {
@@ -18,36 +17,38 @@ object handlerMod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.jupyterlabInspector.tokensMod.IInspector.IInspectable because var conflicts: isDisposed. Inlined cleared, disposed, inspected, standby */ @JSImport("@jupyterlab/inspector/lib/handler", "InspectionHandler")
   @js.native
-  class InspectionHandler protected () extends IDisposable {
+  class InspectionHandler protected ()
+    extends StObject
+       with IDisposable {
     /**
       * Construct a new inspection handler for a widget.
       */
     def this(options: IOptions) = this()
     
-    var _cleared: js.Any = js.native
+    /* private */ var _cleared: js.Any = js.native
     
-    var _connector: js.Any = js.native
+    /* private */ var _connector: js.Any = js.native
     
-    var _debouncer: js.Any = js.native
+    /* private */ var _debouncer: js.Any = js.native
     
-    var _disposed: js.Any = js.native
+    /* private */ var _disposed: js.Any = js.native
     
-    var _editor: js.Any = js.native
+    /* private */ var _editor: js.Any = js.native
     
-    var _inspected: js.Any = js.native
+    /* private */ var _inspected: js.Any = js.native
     
-    var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: js.Any = js.native
     
     /**
       * Handle changes to the editor state, debouncing.
       */
-    var _onChange: js.Any = js.native
+    /* private */ var _onChange: js.Any = js.native
     
-    var _pending: js.Any = js.native
+    /* private */ var _pending: js.Any = js.native
     
-    var _rendermime: js.Any = js.native
+    /* private */ var _rendermime: js.Any = js.native
     
-    var _standby: js.Any = js.native
+    /* private */ var _standby: js.Any = js.native
     
     /**
       * A signal emitted when the inspector should clear all items.
@@ -57,7 +58,21 @@ object handlerMod {
       * A signal emitted when the inspector should clear all items.
       */
     @JSName("cleared")
-    var cleared_FInspectionHandler: ISignal[_, Unit] = js.native
+    var cleared_FInspectionHandler: ISignal[js.Any, Unit] = js.native
+    
+    /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * A signal emitted when the handler is disposed.
@@ -67,7 +82,7 @@ object handlerMod {
       * A signal emitted when the inspectable is disposed.
       */
     @JSName("disposed")
-    var disposed_FInspectionHandler: ISignal[_, Unit] = js.native
+    var disposed_FInspectionHandler: ISignal[js.Any, Unit] = js.native
     
     /**
       * The editor widget used by the inspection handler.
@@ -83,8 +98,16 @@ object handlerMod {
       * A signal emitted when an inspector value is generated.
       */
     @JSName("inspected")
-    var inspected_FInspectionHandler: ISignal[_, IInspectorUpdate] = js.native
+    var inspected_FInspectionHandler: ISignal[js.Any, IInspectorUpdate] = js.native
     
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
     /**
       * Get whether the inspection handler is disposed.
       *
@@ -126,7 +149,6 @@ object handlerMod {
     /**
       * The instantiation options for an inspection handler.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
@@ -137,99 +159,85 @@ object handlerMod {
         * it is acceptable for the other methods to be simple functions that return
         * rejected promises.
         */
-      var connector: IDataConnector[IReply, Unit, IRequest, String] = js.native
+      var connector: IDataConnector[IReply, Unit, IRequest, String]
       
       /**
         * The mime renderer for the inspection handler.
         */
-      var rendermime: IRenderMimeRegistry = js.native
+      var rendermime: IRenderMimeRegistry
     }
     object IOptions {
       
-      @scala.inline
-      def apply(connector: IDataConnector[IReply, Unit, IRequest, String], rendermime: IRenderMimeRegistry): IOptions = {
+      inline def apply(connector: IDataConnector[IReply, Unit, IRequest, String], rendermime: IRenderMimeRegistry): IOptions = {
         val __obj = js.Dynamic.literal(connector = connector.asInstanceOf[js.Any], rendermime = rendermime.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setConnector(value: IDataConnector[IReply, Unit, IRequest, String]): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
+        inline def setConnector(value: IDataConnector[IReply, Unit, IRequest, String]): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRendermime(value: IRenderMimeRegistry): Self = StObject.set(x, "rendermime", value.asInstanceOf[js.Any])
+        inline def setRendermime(value: IRenderMimeRegistry): Self = StObject.set(x, "rendermime", value.asInstanceOf[js.Any])
       }
     }
     
     /**
       * A reply to an inspection request.
       */
-    @js.native
     trait IReply extends StObject {
       
       /**
         * The MIME bundle data returned from an inspection request.
         */
-      var data: ReadonlyJSONObject = js.native
+      var data: ReadonlyJSONObject
       
       /**
         * Any metadata that accompanies the MIME bundle returning from a request.
         */
-      var metadata: ReadonlyJSONObject = js.native
+      var metadata: ReadonlyJSONObject
     }
     object IReply {
       
-      @scala.inline
-      def apply(data: ReadonlyJSONObject, metadata: ReadonlyJSONObject): IReply = {
+      inline def apply(data: ReadonlyJSONObject, metadata: ReadonlyJSONObject): IReply = {
         val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
         __obj.asInstanceOf[IReply]
       }
       
-      @scala.inline
-      implicit class IReplyMutableBuilder[Self <: IReply] (val x: Self) extends AnyVal {
+      extension [Self <: IReply](x: Self) {
         
-        @scala.inline
-        def setData(value: ReadonlyJSONObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: ReadonlyJSONObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetadata(value: ReadonlyJSONObject): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+        inline def setMetadata(value: ReadonlyJSONObject): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       }
     }
     
     /**
       * The details of an inspection request.
       */
-    @js.native
     trait IRequest extends StObject {
       
       /**
         * The cursor offset position within the text being inspected.
         */
-      var offset: Double = js.native
+      var offset: Double
       
       /**
         * The text being inspected.
         */
-      var text: String = js.native
+      var text: String
     }
     object IRequest {
       
-      @scala.inline
-      def apply(offset: Double, text: String): IRequest = {
+      inline def apply(offset: Double, text: String): IRequest = {
         val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
         __obj.asInstanceOf[IRequest]
       }
       
-      @scala.inline
-      implicit class IRequestMutableBuilder[Self <: IRequest] (val x: Self) extends AnyVal {
+      extension [Self <: IRequest](x: Self) {
         
-        @scala.inline
-        def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+        inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+        inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       }
     }
   }

@@ -1679,8 +1679,6 @@ object Mocha_ {
       /* CompleteClass */
       var stats: Stats = js.native
     }
-    /* was `typeof Progress` */
-    object progress
     
     /**
       * Initialize a new `Spec` test reporter.
@@ -1825,8 +1823,6 @@ object Mocha_ {
       /* CompleteClass */
       override def write(line: String): Unit = js.native
     }
-    /* was `typeof XUnit` */
-    object xunit
   }
   
   /**

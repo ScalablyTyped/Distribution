@@ -946,46 +946,42 @@ object mod {
     inline def shallowEqual[T](a: ArrayLike[T], b: ArrayLike[T], fn: js.Function2[/* a */ T, /* b */ T, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
+      * Create a slice of an array subject to an optional step.
+      *
+      * @param array - The array-like object of interest.
+      *
+      * @param options - The options for configuring the slice.
+      *
+      * @returns A new array with the specified values.
+      *
+      * @throws An exception if the slice `step` is `0`.
+      *
+      * #### Complexity
+      * Linear.
+      *
+      * #### Undefined Behavior
+      * A `start`, `stop`, or `step` which is non-integral.
+      *
+      * #### Example
+      * ```typescript
+      * import { ArrayExt } from '@lumino/algorithm';
+      *
+      * let data = [0, 3, 4, 7, 7, 9];
+      * ArrayExt.slice(data);                         // [0, 3, 4, 7, 7, 9]
+      * ArrayExt.slice(data, { start: 2 });           // [4, 7, 7, 9]
+      * ArrayExt.slice(data, { start: 0, stop: 4 });  // [0, 3, 4, 7]
+      * ArrayExt.slice(data, { step: 2 });            // [0, 4, 7]
+      * ArrayExt.slice(data, { step: -1 });           // [9, 7, 7, 4, 3, 0]
+      * ```
+      */
+    /**
       * The namespace for the `slice` function statics.
       */
-    object slice {
-      
-      /**
-        * Create a slice of an array subject to an optional step.
-        *
-        * @param array - The array-like object of interest.
-        *
-        * @param options - The options for configuring the slice.
-        *
-        * @returns A new array with the specified values.
-        *
-        * @throws An exception if the slice `step` is `0`.
-        *
-        * #### Complexity
-        * Linear.
-        *
-        * #### Undefined Behavior
-        * A `start`, `stop`, or `step` which is non-integral.
-        *
-        * #### Example
-        * ```typescript
-        * import { ArrayExt } from '@lumino/algorithm';
-        *
-        * let data = [0, 3, 4, 7, 7, 9];
-        * ArrayExt.slice(data);                         // [0, 3, 4, 7, 7, 9]
-        * ArrayExt.slice(data, { start: 2 });           // [4, 7, 7, 9]
-        * ArrayExt.slice(data, { start: 0, stop: 4 });  // [0, 3, 4, 7]
-        * ArrayExt.slice(data, { step: 2 });            // [0, 4, 7]
-        * ArrayExt.slice(data, { step: -1 });           // [9, 7, 7, 4, 3, 0]
-        * ```
-        */
-      inline def apply[T](array: ArrayLike[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
-      inline def apply[T](array: ArrayLike[T], options: IOptions): js.Array[T] = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-      
-      @JSImport("@lumino/algorithm", "ArrayExt.slice")
-      @js.native
-      val ^ : js.Any = js.native
-    }
+    inline def slice[T](array: ArrayLike[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("slice")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+    /**
+      * The namespace for the `slice` function statics.
+      */
+    inline def slice[T](array: ArrayLike[T], options: IOptions): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(array.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
     
     /**
       * Find the index of the first element which compares `>` than a value.

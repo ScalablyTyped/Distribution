@@ -2,7 +2,6 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -11,7 +10,7 @@ trait PathCursor extends StObject {
   /**
     * Stores path cursor callbacks for when an onchange event is triggered
     */
-  var _onchange: js.Any = js.native
+  /* private */ var _onchange: js.Any = js.native
   
   /**
     * The animation array of the path cursor
@@ -22,7 +21,7 @@ trait PathCursor extends StObject {
     * Ensures that the value is limited between zero and one
     * @returns This path cursor
     */
-  var ensureLimits: js.Any = js.native
+  /* private */ var ensureLimits: js.Any = js.native
   
   /**
     * Gets the cursor point on the path
@@ -61,13 +60,13 @@ trait PathCursor extends StObject {
     */
   def onchange(f: js.Function1[/* cursor */ this.type, Unit]): PathCursor = js.native
   
-  var path: js.Any = js.native
+  /* private */ var path: js.Any = js.native
   
   /**
     * Runs onchange callbacks on change (used by the animation engine)
     * @returns This path cursor
     */
-  var raiseOnChange: js.Any = js.native
+  /* private */ var raiseOnChange: js.Any = js.native
   
   /**
     * The value of the path cursor

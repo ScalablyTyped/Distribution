@@ -2,27 +2,26 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SpriteSceneComponent extends ISceneComponent {
+trait SpriteSceneComponent
+  extends StObject
+     with ISceneComponent {
   
-  var _pickSpriteButKeepRay: js.Any = js.native
+  /* private */ var _pickSpriteButKeepRay: js.Any
   
-  var _pointerDown: js.Any = js.native
+  /* private */ var _pointerDown: js.Any
   
-  var _pointerMove: js.Any = js.native
+  /* private */ var _pointerMove: js.Any
   
-  var _pointerUp: js.Any = js.native
+  /* private */ var _pointerUp: js.Any
   
   /** @hidden */
-  var _spritePredicate: js.Any = js.native
+  /* private */ var _spritePredicate: js.Any
 }
 object SpriteSceneComponent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _pickSpriteButKeepRay: js.Any,
     _pointerDown: js.Any,
     _pointerMove: js.Any,
@@ -38,22 +37,16 @@ object SpriteSceneComponent {
     __obj.asInstanceOf[SpriteSceneComponent]
   }
   
-  @scala.inline
-  implicit class SpriteSceneComponentMutableBuilder[Self <: SpriteSceneComponent] (val x: Self) extends AnyVal {
+  extension [Self <: SpriteSceneComponent](x: Self) {
     
-    @scala.inline
-    def set_pickSpriteButKeepRay(value: js.Any): Self = StObject.set(x, "_pickSpriteButKeepRay", value.asInstanceOf[js.Any])
+    inline def set_pickSpriteButKeepRay(value: js.Any): Self = StObject.set(x, "_pickSpriteButKeepRay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_pointerDown(value: js.Any): Self = StObject.set(x, "_pointerDown", value.asInstanceOf[js.Any])
+    inline def set_pointerDown(value: js.Any): Self = StObject.set(x, "_pointerDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_pointerMove(value: js.Any): Self = StObject.set(x, "_pointerMove", value.asInstanceOf[js.Any])
+    inline def set_pointerMove(value: js.Any): Self = StObject.set(x, "_pointerMove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_pointerUp(value: js.Any): Self = StObject.set(x, "_pointerUp", value.asInstanceOf[js.Any])
+    inline def set_pointerUp(value: js.Any): Self = StObject.set(x, "_pointerUp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_spritePredicate(value: js.Any): Self = StObject.set(x, "_spritePredicate", value.asInstanceOf[js.Any])
+    inline def set_spritePredicate(value: js.Any): Self = StObject.set(x, "_spritePredicate", value.asInstanceOf[js.Any])
   }
 }

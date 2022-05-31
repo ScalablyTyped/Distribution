@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__service-error-classification"
-version := "1.0.0-rc.7-674ba3"
+version := "1.0.0-rc.7-bc15ac"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "aws-sdk__smithy-client" % "1.0.0-rc.7-62a054",
-  "org.scalablytyped" %%% "aws-sdk__types" % "1.0.0-rc.7-d8ebf5",
-  "org.scalablytyped" %%% "std" % "4.1-2f6855")
+  "org.scalablytyped" %%% "aws-sdk__smithy-client" % "1.0.0-rc.7-48fa2f",
+  "org.scalablytyped" %%% "aws-sdk__types" % "1.0.0-rc.7-8199df",
+  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

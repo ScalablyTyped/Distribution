@@ -2,7 +2,6 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -17,7 +16,7 @@ trait CSG extends StObject {
     * @returns A new Mesh
     */
   def buildMeshGeometry(name: String): Mesh = js.native
-  def buildMeshGeometry(name: String, scene: js.UndefOr[scala.Nothing], keepSubMeshes: Boolean): Mesh = js.native
+  def buildMeshGeometry(name: String, scene: Unit, keepSubMeshes: Boolean): Mesh = js.native
   def buildMeshGeometry(name: String, scene: Scene): Mesh = js.native
   def buildMeshGeometry(name: String, scene: Scene, keepSubMeshes: Boolean): Mesh = js.native
   
@@ -60,7 +59,7 @@ trait CSG extends StObject {
     */
   var matrix: Matrix = js.native
   
-  var polygons: js.Any = js.native
+  /* private */ var polygons: js.Any = js.native
   
   /**
     * Stores the position
@@ -104,15 +103,13 @@ trait CSG extends StObject {
     * @returns The new Mesh
     */
   def toMesh(name: String): Mesh = js.native
-  def toMesh(
-    name: String,
-    material: js.UndefOr[Nullable[Material]],
-    scene: js.UndefOr[scala.Nothing],
-    keepSubMeshes: Boolean
-  ): Mesh = js.native
-  def toMesh(name: String, material: js.UndefOr[Nullable[Material]], scene: Scene): Mesh = js.native
-  def toMesh(name: String, material: js.UndefOr[Nullable[Material]], scene: Scene, keepSubMeshes: Boolean): Mesh = js.native
+  def toMesh(name: String, material: Unit, scene: Unit, keepSubMeshes: Boolean): Mesh = js.native
+  def toMesh(name: String, material: Unit, scene: Scene): Mesh = js.native
+  def toMesh(name: String, material: Unit, scene: Scene, keepSubMeshes: Boolean): Mesh = js.native
   def toMesh(name: String, material: Nullable[Material]): Mesh = js.native
+  def toMesh(name: String, material: Nullable[Material], scene: Unit, keepSubMeshes: Boolean): Mesh = js.native
+  def toMesh(name: String, material: Nullable[Material], scene: Scene): Mesh = js.native
+  def toMesh(name: String, material: Nullable[Material], scene: Scene, keepSubMeshes: Boolean): Mesh = js.native
   
   /**
     * Unions this CSG with another CSG

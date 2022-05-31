@@ -6,7 +6,6 @@ import typings.babylonjs.vrExperienceHelperMod.VRExperienceHelperOptions
 import typings.babylonjs.webVRCameraMod.WebVROptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vRIndexMod {
@@ -23,13 +22,15 @@ object vRIndexMod {
   /* static members */
   object VRCameraMetrics {
     
+    @JSImport("babylonjs/Cameras/VR/index", "VRCameraMetrics")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get the default VRMetrics based on the most generic setup.
       * @returns the default vr metrics
       */
-    @JSImport("babylonjs/Cameras/VR/index", "VRCameraMetrics.GetDefault")
-    @js.native
-    def GetDefault(): typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics = js.native
+    inline def GetDefault(): typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics = ^.asInstanceOf[js.Dynamic].applyDynamic("GetDefault")().asInstanceOf[typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics]
   }
   
   @JSImport("babylonjs/Cameras/VR/index", "VRDeviceOrientationArcRotateCamera")
@@ -64,7 +65,7 @@ object vRIndexMod {
       radius: Double,
       target: Vector3,
       scene: Scene,
-      compensateDistortion: js.UndefOr[scala.Nothing],
+      compensateDistortion: Boolean,
       vrCameraMetrics: typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
     ) = this()
     def this(
@@ -74,7 +75,7 @@ object vRIndexMod {
       radius: Double,
       target: Vector3,
       scene: Scene,
-      compensateDistortion: Boolean,
+      compensateDistortion: Unit,
       vrCameraMetrics: typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
     ) = this()
   }
@@ -97,14 +98,14 @@ object vRIndexMod {
       name: String,
       position: Vector3,
       scene: Scene,
-      compensateDistortion: js.UndefOr[scala.Nothing],
+      compensateDistortion: Boolean,
       vrCameraMetrics: typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
     ) = this()
     def this(
       name: String,
       position: Vector3,
       scene: Scene,
-      compensateDistortion: Boolean,
+      compensateDistortion: Unit,
       vrCameraMetrics: typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
     ) = this()
   }
@@ -127,14 +128,14 @@ object vRIndexMod {
       name: String,
       position: Vector3,
       scene: Scene,
-      compensateDistortion: js.UndefOr[scala.Nothing],
+      compensateDistortion: Boolean,
       vrCameraMetrics: typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
     ) = this()
     def this(
       name: String,
       position: Vector3,
       scene: Scene,
-      compensateDistortion: Boolean,
+      compensateDistortion: Unit,
       vrCameraMetrics: typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
     ) = this()
   }

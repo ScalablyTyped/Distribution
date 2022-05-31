@@ -1,5 +1,6 @@
 package typings.awsSdkClientPinpointBrowser.mod
 
+import typings.awsSdkClientPinpointBrowser.typesDeleteEndpointInputMod.DeleteEndpointInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class DeleteEndpointCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.deleteEndpointCommandMod.DeleteEndpointCommand {
-  def this(input: typings.awsSdkClientPinpointBrowser.typesDeleteEndpointInputMod.DeleteEndpointInput) = this()
+  def this(input: DeleteEndpointInput) = this()
 }

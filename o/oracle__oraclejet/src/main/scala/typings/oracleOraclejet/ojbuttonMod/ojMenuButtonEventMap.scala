@@ -25,19 +25,18 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ojMenuButtonEventMap extends ojButtonEventMap[ojMenuButtonSettableProperties] {
+trait ojMenuButtonEventMap
+  extends StObject
+     with ojButtonEventMap[ojMenuButtonSettableProperties] {
   
   @JSName("ojAction")
-  var ojAction_ojMenuButtonEventMap: ojAction = js.native
+  var ojAction_ojMenuButtonEventMap: ojAction
 }
 object ojMenuButtonEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,
@@ -140,10 +139,8 @@ object ojMenuButtonEventMap {
     __obj.asInstanceOf[ojMenuButtonEventMap]
   }
   
-  @scala.inline
-  implicit class ojMenuButtonEventMapMutableBuilder[Self <: ojMenuButtonEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: ojMenuButtonEventMap](x: Self) {
     
-    @scala.inline
-    def setOjAction(value: ojAction): Self = StObject.set(x, "ojAction", value.asInstanceOf[js.Any])
+    inline def setOjAction(value: ojAction): Self = StObject.set(x, "ojAction", value.asInstanceOf[js.Any])
   }
 }

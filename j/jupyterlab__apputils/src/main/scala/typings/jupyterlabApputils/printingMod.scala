@@ -3,43 +3,38 @@ package typings.jupyterlabApputils
 import typings.luminoWidgets.mod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object printingMod {
   
   object Printing {
     
+    @JSImport("@jupyterlab/apputils/lib/printing", "Printing")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns the print function for an object, or null if it does not provide a handler.
       */
-    @JSImport("@jupyterlab/apputils/lib/printing", "Printing.getPrintFunction")
-    @js.native
-    def getPrintFunction(`val`: js.Any): OptionalAsyncThunk = js.native
+    inline def getPrintFunction(`val`: js.Any): OptionalAsyncThunk = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrintFunction")(`val`.asInstanceOf[js.Any]).asInstanceOf[OptionalAsyncThunk]
     
     /**
       * Returns whether an object implements a print method.
       */
-    @JSImport("@jupyterlab/apputils/lib/printing", "Printing.isPrintable")
-    @js.native
-    def isPrintable(a: js.Any): /* is @jupyterlab/apputils.@jupyterlab/apputils/lib/printing.Printing.IPrintable */ Boolean = js.native
+    inline def isPrintable(a: js.Any): /* is @jupyterlab/apputils.@jupyterlab/apputils/lib/printing.Printing.IPrintable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrintable")(a.asInstanceOf[js.Any]).asInstanceOf[/* is @jupyterlab/apputils.@jupyterlab/apputils/lib/printing.Printing.IPrintable */ Boolean]
     
     /**
       * Prints a URL by loading it into an iframe.
       *
       * @param url URL to load into an iframe.
       */
-    @JSImport("@jupyterlab/apputils/lib/printing", "Printing.printURL")
-    @js.native
-    def printURL(url: String): js.Promise[Unit] = js.native
+    inline def printURL(url: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("printURL")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Prints a widget by copying it's DOM node
       * to a hidden iframe and printing that iframe.
       */
-    @JSImport("@jupyterlab/apputils/lib/printing", "Printing.printWidget")
-    @js.native
-    def printWidget(widget: Widget): js.Promise[Unit] = js.native
+    inline def printWidget(widget: Widget): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("printWidget")(widget.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Symbol to use for a method that returns a function to print an object.

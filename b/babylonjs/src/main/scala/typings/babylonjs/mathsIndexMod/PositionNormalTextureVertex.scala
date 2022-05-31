@@ -2,7 +2,6 @@ package typings.babylonjs.mathsIndexMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Maths/index", "PositionNormalTextureVertex")
@@ -19,7 +18,7 @@ class PositionNormalTextureVertex ()
   position: typings.babylonjs.mathVectorMod.Vector3) = this()
   def this(
     /** the position of the vertex (defaut: 0,0,0) */
-  position: js.UndefOr[scala.Nothing],
+  position: Unit,
     /** the normal of the vertex (defaut: 0,1,0) */
   normal: typings.babylonjs.mathVectorMod.Vector3
   ) = this()
@@ -31,15 +30,15 @@ class PositionNormalTextureVertex ()
   ) = this()
   def this(
     /** the position of the vertex (defaut: 0,0,0) */
-  position: js.UndefOr[scala.Nothing],
+  position: Unit,
     /** the normal of the vertex (defaut: 0,1,0) */
-  normal: js.UndefOr[scala.Nothing],
+  normal: Unit,
     /** the uv of the vertex (default: 0,0) */
   uv: typings.babylonjs.mathVectorMod.Vector2
   ) = this()
   def this(
     /** the position of the vertex (defaut: 0,0,0) */
-  position: js.UndefOr[scala.Nothing],
+  position: Unit,
     /** the normal of the vertex (defaut: 0,1,0) */
   normal: typings.babylonjs.mathVectorMod.Vector3,
     /** the uv of the vertex (default: 0,0) */
@@ -49,7 +48,7 @@ class PositionNormalTextureVertex ()
     /** the position of the vertex (defaut: 0,0,0) */
   position: typings.babylonjs.mathVectorMod.Vector3,
     /** the normal of the vertex (defaut: 0,1,0) */
-  normal: js.UndefOr[scala.Nothing],
+  normal: Unit,
     /** the uv of the vertex (default: 0,0) */
   uv: typings.babylonjs.mathVectorMod.Vector2
   ) = this()

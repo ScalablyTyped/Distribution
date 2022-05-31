@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.WebXRHand")
 @js.native
 class WebXRHand protected ()
-  extends typings.babylonjs.BABYLON.WebXRHand {
+  extends StObject
+     with typings.babylonjs.BABYLON.WebXRHand {
   /**
     * Construct a new hand object
     * @param xrController the controller to which the hand correlates
@@ -35,7 +35,7 @@ class WebXRHand protected ()
   xrController: typings.babylonjs.BABYLON.WebXRInputSource,
     /** the meshes to be used to track the hand joints */
   trackedMeshes: js.Array[typings.babylonjs.BABYLON.AbstractMesh],
-    _handMesh: js.UndefOr[scala.Nothing],
+    _handMesh: Unit,
     _rigMapping: js.Array[String]
   ) = this()
   def this(
@@ -51,16 +51,7 @@ class WebXRHand protected ()
   xrController: typings.babylonjs.BABYLON.WebXRInputSource,
     /** the meshes to be used to track the hand joints */
   trackedMeshes: js.Array[typings.babylonjs.BABYLON.AbstractMesh],
-    _handMesh: js.UndefOr[scala.Nothing],
-    _rigMapping: js.UndefOr[scala.Nothing],
-    disableDefaultHandMesh: Boolean
-  ) = this()
-  def this(
-    /** the controller to which the hand correlates */
-  xrController: typings.babylonjs.BABYLON.WebXRInputSource,
-    /** the meshes to be used to track the hand joints */
-  trackedMeshes: js.Array[typings.babylonjs.BABYLON.AbstractMesh],
-    _handMesh: js.UndefOr[scala.Nothing],
+    _handMesh: Unit,
     _rigMapping: js.Array[String],
     disableDefaultHandMesh: Boolean
   ) = this()
@@ -69,8 +60,8 @@ class WebXRHand protected ()
   xrController: typings.babylonjs.BABYLON.WebXRInputSource,
     /** the meshes to be used to track the hand joints */
   trackedMeshes: js.Array[typings.babylonjs.BABYLON.AbstractMesh],
-    _handMesh: typings.babylonjs.BABYLON.AbstractMesh,
-    _rigMapping: js.UndefOr[scala.Nothing],
+    _handMesh: Unit,
+    _rigMapping: Unit,
     disableDefaultHandMesh: Boolean
   ) = this()
   def this(
@@ -82,4 +73,19 @@ class WebXRHand protected ()
     _rigMapping: js.Array[String],
     disableDefaultHandMesh: Boolean
   ) = this()
+  def this(
+    /** the controller to which the hand correlates */
+  xrController: typings.babylonjs.BABYLON.WebXRInputSource,
+    /** the meshes to be used to track the hand joints */
+  trackedMeshes: js.Array[typings.babylonjs.BABYLON.AbstractMesh],
+    _handMesh: typings.babylonjs.BABYLON.AbstractMesh,
+    _rigMapping: Unit,
+    disableDefaultHandMesh: Boolean
+  ) = this()
+  
+  /**
+    * Releases all held resources
+    */
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
 }

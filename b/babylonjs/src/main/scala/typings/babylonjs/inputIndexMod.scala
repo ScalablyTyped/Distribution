@@ -4,7 +4,6 @@ import typings.babylonjs.nodeMaterialBlockConnectionPointTypesMod.NodeMaterialBl
 import typings.babylonjs.nodeMaterialBlockTargetsMod.NodeMaterialBlockTargets
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputIndexMod {
@@ -14,11 +13,11 @@ object inputIndexMod {
   object AnimatedInputBlockTypes extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.babylonjs.animatedInputBlockTypesMod.AnimatedInputBlockTypes with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.babylonjs.animatedInputBlockTypesMod.AnimatedInputBlockTypes & Double] = js.native
     
-    /* 0 */ val None: typings.babylonjs.animatedInputBlockTypesMod.AnimatedInputBlockTypes.None with Double = js.native
+    /* 0 */ val None: typings.babylonjs.animatedInputBlockTypesMod.AnimatedInputBlockTypes.None & Double = js.native
     
-    /* 1 */ val Time: typings.babylonjs.animatedInputBlockTypesMod.AnimatedInputBlockTypes.Time with Double = js.native
+    /* 1 */ val Time: typings.babylonjs.animatedInputBlockTypesMod.AnimatedInputBlockTypes.Time & Double = js.native
   }
   
   @JSImport("babylonjs/Materials/Node/Blocks/Input/index", "InputBlock")
@@ -33,7 +32,7 @@ object inputIndexMod {
       */
     def this(name: String) = this()
     def this(name: String, target: NodeMaterialBlockTargets) = this()
-    def this(name: String, target: js.UndefOr[scala.Nothing], `type`: NodeMaterialBlockConnectionPointTypes) = this()
+    def this(name: String, target: Unit, `type`: NodeMaterialBlockConnectionPointTypes) = this()
     def this(name: String, target: NodeMaterialBlockTargets, `type`: NodeMaterialBlockConnectionPointTypes) = this()
   }
 }

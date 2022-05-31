@@ -22,7 +22,6 @@ import typings.babylonjs.typesMod.Immutable
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object renderTargetTextureMod {
@@ -63,7 +62,7 @@ object renderTargetTextureMod {
       delayAllocation: js.UndefOr[Boolean]
     ) = this()
     
-    var _bestReflectionRenderTargetDimension: js.Any = js.native
+    /* private */ var _bestReflectionRenderTargetDimension: js.Any = js.native
     
     /**
       * @hidden
@@ -71,63 +70,63 @@ object renderTargetTextureMod {
       * @param layer defines the index of the texture to bind in the array
       */
     def _bindFrameBuffer(): Unit = js.native
-    def _bindFrameBuffer(faceIndex: js.UndefOr[scala.Nothing], layer: Double): Unit = js.native
     def _bindFrameBuffer(faceIndex: Double): Unit = js.native
     def _bindFrameBuffer(faceIndex: Double, layer: Double): Unit = js.native
+    def _bindFrameBuffer(faceIndex: Unit, layer: Double): Unit = js.native
     
-    var _boundingBoxSize: js.Any = js.native
+    /* private */ var _boundingBoxSize: js.Any = js.native
     
-    var _currentRefreshId: Double = js.native
+    /* protected */ var _currentRefreshId: Double = js.native
     
-    var _defaultRenderListPrepared: js.Any = js.native
+    /* private */ var _defaultRenderListPrepared: js.Any = js.native
     
-    var _doNotChangeAspectRatio: Boolean = js.native
+    /* protected */ var _doNotChangeAspectRatio: Boolean = js.native
     
     /** @hidden */
     var _generateMipMaps: Boolean = js.native
     
-    var _hookArray: js.Any = js.native
+    /* private */ var _hookArray: js.Any = js.native
     
-    var _initialSizeParameter: Double | Width | Ratio = js.native
+    /* protected */ var _initialSizeParameter: Double | Width | Ratio = js.native
     
-    var _onAfterRenderObserver: js.Any = js.native
+    /* private */ var _onAfterRenderObserver: js.Any = js.native
     
-    var _onAfterUnbindObserver: js.Any = js.native
+    /* private */ var _onAfterUnbindObserver: js.Any = js.native
     
-    var _onBeforeRenderObserver: js.Any = js.native
+    /* private */ var _onBeforeRenderObserver: js.Any = js.native
     
-    var _onClearObserver: js.Any = js.native
+    /* private */ var _onClearObserver: js.Any = js.native
     
     /* protected */ def _onRatioRescale(): Unit = js.native
     
-    var _postProcessManager: js.Any = js.native
+    /* private */ var _postProcessManager: js.Any = js.native
     
-    var _postProcesses: js.Any = js.native
+    /* private */ var _postProcesses: js.Any = js.native
     
-    var _prepareRenderingManager: js.Any = js.native
+    /* private */ var _prepareRenderingManager: js.Any = js.native
     
-    var _processSizeParameter: js.Any = js.native
+    /* private */ var _processSizeParameter: js.Any = js.native
     
-    var _refreshRate: Double = js.native
+    /* protected */ var _refreshRate: Double = js.native
     
-    var _renderList: js.Any = js.native
+    /* private */ var _renderList: js.Any = js.native
     
-    var _renderTargetOptions: RenderTargetCreationOptions = js.native
+    /* protected */ var _renderTargetOptions: RenderTargetCreationOptions = js.native
     
-    var _renderingManager: RenderingManager = js.native
+    /* protected */ var _renderingManager: RenderingManager = js.native
     
-    var _resizeObserver: js.Any = js.native
+    /* private */ var _resizeObserver: js.Any = js.native
     
-    var _samples: Double = js.native
+    /* protected */ var _samples: Double = js.native
     
     /** @hidden */
     def _shouldRender(): Boolean = js.native
     
-    var _size: Double | Height = js.native
+    /* protected */ var _size: Double | Height = js.native
     
-    var _sizeRatio: Nullable[Double] = js.native
+    /* protected */ var _sizeRatio: Nullable[Double] = js.native
     
-    var _textureMatrix: Matrix = js.native
+    /* protected */ var _textureMatrix: Matrix = js.native
     
     /** @hidden */
     var _waitingRenderList: js.UndefOr[js.Array[String]] = js.native
@@ -178,21 +177,13 @@ object renderTargetTextureMod {
       * @param generateStencil Specifies whether or not a stencil should be allocated in the texture
       */
     def createDepthStencilTexture(): Unit = js.native
-    def createDepthStencilTexture(
-      comparisonFunction: js.UndefOr[scala.Nothing],
-      bilinearFiltering: js.UndefOr[scala.Nothing],
-      generateStencil: Boolean
-    ): Unit = js.native
-    def createDepthStencilTexture(comparisonFunction: js.UndefOr[scala.Nothing], bilinearFiltering: Boolean): Unit = js.native
-    def createDepthStencilTexture(
-      comparisonFunction: js.UndefOr[scala.Nothing],
-      bilinearFiltering: Boolean,
-      generateStencil: Boolean
-    ): Unit = js.native
     def createDepthStencilTexture(comparisonFunction: Double): Unit = js.native
-    def createDepthStencilTexture(comparisonFunction: Double, bilinearFiltering: js.UndefOr[scala.Nothing], generateStencil: Boolean): Unit = js.native
     def createDepthStencilTexture(comparisonFunction: Double, bilinearFiltering: Boolean): Unit = js.native
     def createDepthStencilTexture(comparisonFunction: Double, bilinearFiltering: Boolean, generateStencil: Boolean): Unit = js.native
+    def createDepthStencilTexture(comparisonFunction: Double, bilinearFiltering: Unit, generateStencil: Boolean): Unit = js.native
+    def createDepthStencilTexture(comparisonFunction: Unit, bilinearFiltering: Boolean): Unit = js.native
+    def createDepthStencilTexture(comparisonFunction: Unit, bilinearFiltering: Boolean, generateStencil: Boolean): Unit = js.native
+    def createDepthStencilTexture(comparisonFunction: Unit, bilinearFiltering: Unit, generateStencil: Boolean): Unit = js.native
     
     /**
       * Override the mesh isReady function with your own one.
@@ -356,9 +347,9 @@ object renderTargetTextureMod {
       * @param dumpForDebug Define if the rendering result should be dumped (copied) for debugging purpose
       */
     def render(): Unit = js.native
-    def render(useCameraPostProcess: js.UndefOr[scala.Nothing], dumpForDebug: Boolean): Unit = js.native
     def render(useCameraPostProcess: Boolean): Unit = js.native
     def render(useCameraPostProcess: Boolean, dumpForDebug: Boolean): Unit = js.native
+    def render(useCameraPostProcess: Unit, dumpForDebug: Boolean): Unit = js.native
     
     /**
       * Use this list to define the list of mesh you want to render.
@@ -388,7 +379,7 @@ object renderTargetTextureMod {
       */
     def renderTargetOptions: RenderTargetCreationOptions = js.native
     
-    var renderToTarget: js.Any = js.native
+    /* private */ var renderToTarget: js.Any = js.native
     
     /**
       * Resets the refresh counter of the texture and start bak from scratch.
@@ -435,18 +426,41 @@ object renderTargetTextureMod {
     def setRenderingOrder(renderingGroupId: Double): Unit = js.native
     def setRenderingOrder(
       renderingGroupId: Double,
-      opaqueSortCompareFn: js.UndefOr[Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]],
-      alphaTestSortCompareFn: js.UndefOr[Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]],
+      opaqueSortCompareFn: Unit,
+      alphaTestSortCompareFn: Unit,
       transparentSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
     ): Unit = js.native
     def setRenderingOrder(
       renderingGroupId: Double,
-      opaqueSortCompareFn: js.UndefOr[Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]],
+      opaqueSortCompareFn: Unit,
       alphaTestSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
     ): Unit = js.native
     def setRenderingOrder(
       renderingGroupId: Double,
+      opaqueSortCompareFn: Unit,
+      alphaTestSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]],
+      transparentSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
+    ): Unit = js.native
+    def setRenderingOrder(
+      renderingGroupId: Double,
       opaqueSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
+    ): Unit = js.native
+    def setRenderingOrder(
+      renderingGroupId: Double,
+      opaqueSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]],
+      alphaTestSortCompareFn: Unit,
+      transparentSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
+    ): Unit = js.native
+    def setRenderingOrder(
+      renderingGroupId: Double,
+      opaqueSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]],
+      alphaTestSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
+    ): Unit = js.native
+    def setRenderingOrder(
+      renderingGroupId: Double,
+      opaqueSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]],
+      alphaTestSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]],
+      transparentSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
     ): Unit = js.native
     
     /* protected */ def unbindFrameBuffer(engine: Engine, faceIndex: Double): Unit = js.native

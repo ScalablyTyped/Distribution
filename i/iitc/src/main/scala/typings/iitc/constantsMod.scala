@@ -287,24 +287,5 @@ object constantsMod {
     inline def urlPortalLL_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("urlPortalLL")(x.asInstanceOf[js.Any])
     
     inline def urlPortal_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("urlPortal")(x.asInstanceOf[js.Any])
-    
-    /** @default ['#000',...,'#9627F4'] */
-    object COLORS_MOD
-    
-    /** @default {VERY_RARE:'#b08cff',RARE:'#73a8ff',COMMON:'#8cffbf'} */
-    object MOD_TYPE
-    
-    /** list of all fields */
-    object fields
-    
-    /** list of all loaded links */
-    object links
-    
-    // contain current status(on/off) of overlay layerGroups.
-    // But you should use isLayerGroupDisplayed(name) to check the status
-    object overlayStatus
-    
-    /** list of all loaded portals */
-    object portals
   }
 }

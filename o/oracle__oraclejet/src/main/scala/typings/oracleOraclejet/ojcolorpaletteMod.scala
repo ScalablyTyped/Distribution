@@ -57,61 +57,62 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ojcolorpaletteMod {
   
   @js.native
-  trait ojColorPalette extends editableValue[^, ojColorPaletteSettableProperties, ^, ^] {
+  trait ojColorPalette
+    extends StObject
+       with editableValue[^, ojColorPaletteSettableProperties, ^, ^] {
     
     def addEventListener(
       `type`: labelDisplayChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | off], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | off], js.Any]
     ): Unit = js.native
     def addEventListener(
       `type`: labelDisplayChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | off], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | off], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     def addEventListener(
       `type`: layoutChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[grid | list], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[grid | list], js.Any]
     ): Unit = js.native
     def addEventListener(
       `type`: layoutChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[grid | list], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[grid | list], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     def addEventListener(
       `type`: swatchSizeChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[xs | sm | lg], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[xs | sm | lg], js.Any]
     ): Unit = js.native
     def addEventListener(
       `type`: swatchSizeChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[xs | sm | lg], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[xs | sm | lg], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_labelledByChanged(
       `type`: labelledByChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_labelledByChanged(
       `type`: labelledByChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_paletteChanged(
       `type`: paletteChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[Label]], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[Label]], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_paletteChanged(
       `type`: paletteChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[Label]], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[Label]], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     
@@ -132,21 +133,21 @@ object ojcolorpaletteMod {
     
     var layout: grid | list = js.native
     
-    var onLabelDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | off], _]) | Null = js.native
+    var onLabelDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | off], js.Any]) | Null = js.native
     
-    var onLabelledByChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
+    var onLabelledByChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], js.Any]) | Null = js.native
     
-    var onLayoutChanged: (js.Function1[/* event */ JetElementCustomEvent[grid | list], _]) | Null = js.native
+    var onLayoutChanged: (js.Function1[/* event */ JetElementCustomEvent[grid | list], js.Any]) | Null = js.native
     
     @JSName("onOjAnimateEnd")
-    var onOjAnimateEnd_ojColorPalette: (js.Function1[/* event */ ojAnimateEnd, _]) | Null = js.native
+    var onOjAnimateEnd_ojColorPalette: (js.Function1[/* event */ ojAnimateEnd, js.Any]) | Null = js.native
     
     @JSName("onOjAnimateStart")
-    var onOjAnimateStart_ojColorPalette: (js.Function1[/* event */ ojAnimateStart, _]) | Null = js.native
+    var onOjAnimateStart_ojColorPalette: (js.Function1[/* event */ ojAnimateStart, js.Any]) | Null = js.native
     
-    var onPaletteChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[Label]], _]) | Null = js.native
+    var onPaletteChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[Label]], js.Any]) | Null = js.native
     
-    var onSwatchSizeChanged: (js.Function1[/* event */ JetElementCustomEvent[xs | sm | lg], _]) | Null = js.native
+    var onSwatchSizeChanged: (js.Function1[/* event */ JetElementCustomEvent[xs | sm | lg], js.Any]) | Null = js.native
     
     var palette: js.Array[Label] = js.native
     
@@ -180,29 +181,29 @@ object ojcolorpaletteMod {
     type ojAnimateStart = CustomEvent[Element]
   }
   
-  @js.native
-  trait ojColorPaletteEventMap extends editableValueEventMap[^, ojColorPaletteSettableProperties, ^, ^] {
+  trait ojColorPaletteEventMap
+    extends StObject
+       with editableValueEventMap[^, ojColorPaletteSettableProperties, ^, ^] {
     
-    var labelDisplayChanged: JetElementCustomEvent[auto | off] = js.native
+    var labelDisplayChanged: JetElementCustomEvent[auto | off]
     
-    var labelledByChanged: JetElementCustomEvent[String | Null] = js.native
+    var labelledByChanged: JetElementCustomEvent[String | Null]
     
-    var layoutChanged: JetElementCustomEvent[grid | list] = js.native
+    var layoutChanged: JetElementCustomEvent[grid | list]
     
     @JSName("ojAnimateEnd")
-    var ojAnimateEnd_ojColorPaletteEventMap: ojAnimateEnd = js.native
+    var ojAnimateEnd_ojColorPaletteEventMap: ojAnimateEnd
     
     @JSName("ojAnimateStart")
-    var ojAnimateStart_ojColorPaletteEventMap: ojAnimateStart = js.native
+    var ojAnimateStart_ojColorPaletteEventMap: ojAnimateStart
     
-    var paletteChanged: JetElementCustomEvent[js.Array[Label]] = js.native
+    var paletteChanged: JetElementCustomEvent[js.Array[Label]]
     
-    var swatchSizeChanged: JetElementCustomEvent[xs | sm | lg] = js.native
+    var swatchSizeChanged: JetElementCustomEvent[xs | sm | lg]
   }
   object ojColorPaletteEventMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: UIEvent,
       animationcancel: AnimationEvent,
       animationend: AnimationEvent,
@@ -317,52 +318,44 @@ object ojcolorpaletteMod {
       __obj.asInstanceOf[ojColorPaletteEventMap]
     }
     
-    @scala.inline
-    implicit class ojColorPaletteEventMapMutableBuilder[Self <: ojColorPaletteEventMap] (val x: Self) extends AnyVal {
+    extension [Self <: ojColorPaletteEventMap](x: Self) {
       
-      @scala.inline
-      def setLabelDisplayChanged(value: JetElementCustomEvent[auto | off]): Self = StObject.set(x, "labelDisplayChanged", value.asInstanceOf[js.Any])
+      inline def setLabelDisplayChanged(value: JetElementCustomEvent[auto | off]): Self = StObject.set(x, "labelDisplayChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelledByChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "labelledByChanged", value.asInstanceOf[js.Any])
+      inline def setLabelledByChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "labelledByChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutChanged(value: JetElementCustomEvent[grid | list]): Self = StObject.set(x, "layoutChanged", value.asInstanceOf[js.Any])
+      inline def setLayoutChanged(value: JetElementCustomEvent[grid | list]): Self = StObject.set(x, "layoutChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
+      inline def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjAnimateStart(value: ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
+      inline def setOjAnimateStart(value: ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaletteChanged(value: JetElementCustomEvent[js.Array[Label]]): Self = StObject.set(x, "paletteChanged", value.asInstanceOf[js.Any])
+      inline def setPaletteChanged(value: JetElementCustomEvent[js.Array[Label]]): Self = StObject.set(x, "paletteChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwatchSizeChanged(value: JetElementCustomEvent[xs | sm | lg]): Self = StObject.set(x, "swatchSizeChanged", value.asInstanceOf[js.Any])
+      inline def setSwatchSizeChanged(value: JetElementCustomEvent[xs | sm | lg]): Self = StObject.set(x, "swatchSizeChanged", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait ojColorPaletteSettableProperties extends editableValueSettableProperties[^, ^, ^] {
+  trait ojColorPaletteSettableProperties
+    extends StObject
+       with editableValueSettableProperties[^, ^, ^] {
     
-    var labelDisplay: auto | off = js.native
+    var labelDisplay: auto | off
     
-    var labelledBy: String | Null = js.native
+    var labelledBy: String | Null
     
-    var layout: grid | list = js.native
+    var layout: grid | list
     
-    var palette: js.Array[Label] = js.native
+    var palette: js.Array[Label]
     
-    var swatchSize: xs | sm | lg = js.native
+    var swatchSize: xs | sm | lg
     
     @JSName("translations")
-    var translations_ojColorPaletteSettableProperties: LabelNone = js.native
+    var translations_ojColorPaletteSettableProperties: LabelNone
   }
   object ojColorPaletteSettableProperties {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       disabled: Boolean,
       displayOptions: ConverterHint,
       help: Instruction,
@@ -377,188 +370,143 @@ object ojcolorpaletteMod {
       valid: valid | pending | invalidHidden | invalidShown,
       value: ^
     ): ojColorPaletteSettableProperties = {
-      val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], labelDisplay = labelDisplay.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], palette = palette.asInstanceOf[js.Any], swatchSize = swatchSize.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], labelDisplay = labelDisplay.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], palette = palette.asInstanceOf[js.Any], swatchSize = swatchSize.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], describedBy = null, labelledBy = null)
       __obj.asInstanceOf[ojColorPaletteSettableProperties]
     }
     
-    @scala.inline
-    implicit class ojColorPaletteSettablePropertiesMutableBuilder[Self <: ojColorPaletteSettableProperties] (val x: Self) extends AnyVal {
+    extension [Self <: ojColorPaletteSettableProperties](x: Self) {
       
-      @scala.inline
-      def setLabelDisplay(value: auto | off): Self = StObject.set(x, "labelDisplay", value.asInstanceOf[js.Any])
+      inline def setLabelDisplay(value: auto | off): Self = StObject.set(x, "labelDisplay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelledBy(value: String): Self = StObject.set(x, "labelledBy", value.asInstanceOf[js.Any])
+      inline def setLabelledBy(value: String): Self = StObject.set(x, "labelledBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelledByNull: Self = StObject.set(x, "labelledBy", null)
+      inline def setLabelledByNull: Self = StObject.set(x, "labelledBy", null)
       
-      @scala.inline
-      def setLayout(value: grid | list): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: grid | list): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPalette(value: js.Array[Label]): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
+      inline def setPalette(value: js.Array[Label]): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaletteVarargs(value: Label*): Self = StObject.set(x, "palette", js.Array(value :_*))
+      inline def setPaletteVarargs(value: Label*): Self = StObject.set(x, "palette", js.Array(value :_*))
       
-      @scala.inline
-      def setSwatchSize(value: xs | sm | lg): Self = StObject.set(x, "swatchSize", value.asInstanceOf[js.Any])
+      inline def setSwatchSize(value: xs | sm | lg): Self = StObject.set(x, "swatchSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslations(value: LabelNone): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: LabelNone): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojcolorpalette.ojColorPaletteSettableProperties> */
-  @js.native
   trait ojColorPaletteSettablePropertiesLenient
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var describedBy: js.UndefOr[String | Null] = js.native
+    var describedBy: js.UndefOr[String | Null] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var displayOptions: js.UndefOr[ConverterHint] = js.native
+    var displayOptions: js.UndefOr[ConverterHint] = js.undefined
     
-    var help: js.UndefOr[Instruction] = js.native
+    var help: js.UndefOr[Instruction] = js.undefined
     
-    var helpHints: js.UndefOr[Definition] = js.native
+    var helpHints: js.UndefOr[Definition] = js.undefined
     
-    var labelDisplay: js.UndefOr[auto | off] = js.native
+    var labelDisplay: js.UndefOr[auto | off] = js.undefined
     
-    var labelHint: js.UndefOr[String] = js.native
+    var labelHint: js.UndefOr[String] = js.undefined
     
-    var labelledBy: js.UndefOr[String | Null] = js.native
+    var labelledBy: js.UndefOr[String | Null] = js.undefined
     
-    var layout: js.UndefOr[grid | list] = js.native
+    var layout: js.UndefOr[grid | list] = js.undefined
     
-    var messagesCustom: js.UndefOr[js.Array[typings.oracleOraclejet.ojmessagingMod.^]] = js.native
+    var messagesCustom: js.UndefOr[js.Array[typings.oracleOraclejet.ojmessagingMod.^]] = js.undefined
     
-    var palette: js.UndefOr[js.Array[Label]] = js.native
+    var palette: js.UndefOr[js.Array[Label]] = js.undefined
     
-    var swatchSize: js.UndefOr[xs | sm | lg] = js.native
+    var swatchSize: js.UndefOr[xs | sm | lg] = js.undefined
     
-    var translations: js.UndefOr[LabelNone] = js.native
+    var translations: js.UndefOr[LabelNone] = js.undefined
     
     var valid: js.UndefOr[
         typings.oracleOraclejet.oracleOraclejetStrings.valid | pending | invalidHidden | invalidShown
-      ] = js.native
+      ] = js.undefined
     
-    var value: js.UndefOr[^] = js.native
+    var value: js.UndefOr[^] = js.undefined
   }
   object ojColorPaletteSettablePropertiesLenient {
     
-    @scala.inline
-    def apply(): ojColorPaletteSettablePropertiesLenient = {
+    inline def apply(): ojColorPaletteSettablePropertiesLenient = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ojColorPaletteSettablePropertiesLenient]
     }
     
-    @scala.inline
-    implicit class ojColorPaletteSettablePropertiesLenientMutableBuilder[Self <: ojColorPaletteSettablePropertiesLenient] (val x: Self) extends AnyVal {
+    extension [Self <: ojColorPaletteSettablePropertiesLenient](x: Self) {
       
-      @scala.inline
-      def setDescribedBy(value: String): Self = StObject.set(x, "describedBy", value.asInstanceOf[js.Any])
+      inline def setDescribedBy(value: String): Self = StObject.set(x, "describedBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescribedByNull: Self = StObject.set(x, "describedBy", null)
+      inline def setDescribedByNull: Self = StObject.set(x, "describedBy", null)
       
-      @scala.inline
-      def setDescribedByUndefined: Self = StObject.set(x, "describedBy", js.undefined)
+      inline def setDescribedByUndefined: Self = StObject.set(x, "describedBy", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setDisplayOptions(value: ConverterHint): Self = StObject.set(x, "displayOptions", value.asInstanceOf[js.Any])
+      inline def setDisplayOptions(value: ConverterHint): Self = StObject.set(x, "displayOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayOptionsUndefined: Self = StObject.set(x, "displayOptions", js.undefined)
+      inline def setDisplayOptionsUndefined: Self = StObject.set(x, "displayOptions", js.undefined)
       
-      @scala.inline
-      def setHelp(value: Instruction): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+      inline def setHelp(value: Instruction): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelpHints(value: Definition): Self = StObject.set(x, "helpHints", value.asInstanceOf[js.Any])
+      inline def setHelpHints(value: Definition): Self = StObject.set(x, "helpHints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelpHintsUndefined: Self = StObject.set(x, "helpHints", js.undefined)
+      inline def setHelpHintsUndefined: Self = StObject.set(x, "helpHints", js.undefined)
       
-      @scala.inline
-      def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
+      inline def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
       
-      @scala.inline
-      def setLabelDisplay(value: auto | off): Self = StObject.set(x, "labelDisplay", value.asInstanceOf[js.Any])
+      inline def setLabelDisplay(value: auto | off): Self = StObject.set(x, "labelDisplay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelDisplayUndefined: Self = StObject.set(x, "labelDisplay", js.undefined)
+      inline def setLabelDisplayUndefined: Self = StObject.set(x, "labelDisplay", js.undefined)
       
-      @scala.inline
-      def setLabelHint(value: String): Self = StObject.set(x, "labelHint", value.asInstanceOf[js.Any])
+      inline def setLabelHint(value: String): Self = StObject.set(x, "labelHint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelHintUndefined: Self = StObject.set(x, "labelHint", js.undefined)
+      inline def setLabelHintUndefined: Self = StObject.set(x, "labelHint", js.undefined)
       
-      @scala.inline
-      def setLabelledBy(value: String): Self = StObject.set(x, "labelledBy", value.asInstanceOf[js.Any])
+      inline def setLabelledBy(value: String): Self = StObject.set(x, "labelledBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelledByNull: Self = StObject.set(x, "labelledBy", null)
+      inline def setLabelledByNull: Self = StObject.set(x, "labelledBy", null)
       
-      @scala.inline
-      def setLabelledByUndefined: Self = StObject.set(x, "labelledBy", js.undefined)
+      inline def setLabelledByUndefined: Self = StObject.set(x, "labelledBy", js.undefined)
       
-      @scala.inline
-      def setLayout(value: grid | list): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: grid | list): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+      inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
-      @scala.inline
-      def setMessagesCustom(value: js.Array[typings.oracleOraclejet.ojmessagingMod.^]): Self = StObject.set(x, "messagesCustom", value.asInstanceOf[js.Any])
+      inline def setMessagesCustom(value: js.Array[typings.oracleOraclejet.ojmessagingMod.^]): Self = StObject.set(x, "messagesCustom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagesCustomUndefined: Self = StObject.set(x, "messagesCustom", js.undefined)
+      inline def setMessagesCustomUndefined: Self = StObject.set(x, "messagesCustom", js.undefined)
       
-      @scala.inline
-      def setMessagesCustomVarargs(value: typings.oracleOraclejet.ojmessagingMod.^ *): Self = StObject.set(x, "messagesCustom", js.Array(value :_*))
+      inline def setMessagesCustomVarargs(value: typings.oracleOraclejet.ojmessagingMod.^ *): Self = StObject.set(x, "messagesCustom", js.Array(value :_*))
       
-      @scala.inline
-      def setPalette(value: js.Array[Label]): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
+      inline def setPalette(value: js.Array[Label]): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
+      inline def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
       
-      @scala.inline
-      def setPaletteVarargs(value: Label*): Self = StObject.set(x, "palette", js.Array(value :_*))
+      inline def setPaletteVarargs(value: Label*): Self = StObject.set(x, "palette", js.Array(value :_*))
       
-      @scala.inline
-      def setSwatchSize(value: xs | sm | lg): Self = StObject.set(x, "swatchSize", value.asInstanceOf[js.Any])
+      inline def setSwatchSize(value: xs | sm | lg): Self = StObject.set(x, "swatchSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwatchSizeUndefined: Self = StObject.set(x, "swatchSize", js.undefined)
+      inline def setSwatchSizeUndefined: Self = StObject.set(x, "swatchSize", js.undefined)
       
-      @scala.inline
-      def setTranslations(value: LabelNone): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: LabelNone): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+      inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
       
-      @scala.inline
-      def setValid(value: valid | pending | invalidHidden | invalidShown): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: valid | pending | invalidHidden | invalidShown): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
+      inline def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
       
-      @scala.inline
-      def setValue(value: ^): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: ^): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

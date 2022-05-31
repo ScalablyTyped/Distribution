@@ -4,7 +4,6 @@ import typings.materialNotchedOutline.anon.PartialMDCNotchedOutlineA
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notchedOutline {
@@ -13,7 +12,7 @@ object notchedOutline {
   @js.native
   class MDCNotchedOutline protected ()
     extends typings.materialNotchedOutline.mod.MDCNotchedOutline {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialNotchedOutline.foundationMod.MDCNotchedOutlineFoundation,
@@ -23,9 +22,11 @@ object notchedOutline {
   /* static members */
   object MDCNotchedOutline {
     
-    @JSImport("material-components-web", "notchedOutline.MDCNotchedOutline.attachTo")
+    @JSImport("material-components-web", "notchedOutline.MDCNotchedOutline")
     @js.native
-    def attachTo(root: Element): typings.materialNotchedOutline.componentMod.MDCNotchedOutline = js.native
+    val ^ : js.Any = js.native
+    
+    inline def attachTo(root: Element): typings.materialNotchedOutline.componentMod.MDCNotchedOutline = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialNotchedOutline.componentMod.MDCNotchedOutline]
   }
   
   @JSImport("material-components-web", "notchedOutline.MDCNotchedOutlineFoundation")
@@ -44,20 +45,17 @@ object notchedOutline {
     @JSImport("material-components-web", "notchedOutline.cssClasses.NO_LABEL")
     @js.native
     def NO_LABEL: String = js.native
-    @scala.inline
-    def NO_LABEL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_LABEL")(x.asInstanceOf[js.Any])
+    inline def NO_LABEL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_LABEL")(x.asInstanceOf[js.Any])
     
     @JSImport("material-components-web", "notchedOutline.cssClasses.OUTLINE_NOTCHED")
     @js.native
     def OUTLINE_NOTCHED: String = js.native
-    @scala.inline
-    def OUTLINE_NOTCHED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OUTLINE_NOTCHED")(x.asInstanceOf[js.Any])
+    inline def OUTLINE_NOTCHED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OUTLINE_NOTCHED")(x.asInstanceOf[js.Any])
     
     @JSImport("material-components-web", "notchedOutline.cssClasses.OUTLINE_UPGRADED")
     @js.native
     def OUTLINE_UPGRADED: String = js.native
-    @scala.inline
-    def OUTLINE_UPGRADED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OUTLINE_UPGRADED")(x.asInstanceOf[js.Any])
+    inline def OUTLINE_UPGRADED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OUTLINE_UPGRADED")(x.asInstanceOf[js.Any])
   }
   
   object numbers {
@@ -69,8 +67,7 @@ object notchedOutline {
     @JSImport("material-components-web", "notchedOutline.numbers.NOTCH_ELEMENT_PADDING")
     @js.native
     def NOTCH_ELEMENT_PADDING: Double = js.native
-    @scala.inline
-    def NOTCH_ELEMENT_PADDING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOTCH_ELEMENT_PADDING")(x.asInstanceOf[js.Any])
+    inline def NOTCH_ELEMENT_PADDING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOTCH_ELEMENT_PADDING")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -104,7 +101,6 @@ object notchedOutline {
     @JSImport("material-components-web", "notchedOutline.strings.NOTCH_ELEMENT_SELECTOR")
     @js.native
     def NOTCH_ELEMENT_SELECTOR: String = js.native
-    @scala.inline
-    def NOTCH_ELEMENT_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOTCH_ELEMENT_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def NOTCH_ELEMENT_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOTCH_ELEMENT_SELECTOR")(x.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.awsSdkClientPinpointBrowser.mod
 
+import typings.awsSdkClientPinpointBrowser.typesCreateAppInputMod.CreateAppInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class CreateAppCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.createAppCommandMod.CreateAppCommand {
-  def this(input: typings.awsSdkClientPinpointBrowser.typesCreateAppInputMod.CreateAppInput) = this()
+  def this(input: CreateAppInput) = this()
 }

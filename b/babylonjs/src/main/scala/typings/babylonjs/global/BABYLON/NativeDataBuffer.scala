@@ -2,7 +2,6 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,4 +10,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("BABYLON.NativeDataBuffer")
 @js.native
 class NativeDataBuffer ()
-  extends typings.babylonjs.BABYLON.NativeDataBuffer
+  extends StObject
+     with typings.babylonjs.BABYLON.NativeDataBuffer

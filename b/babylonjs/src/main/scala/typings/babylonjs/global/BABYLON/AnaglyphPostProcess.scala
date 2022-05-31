@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.PostProcessOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.AnaglyphPostProcess")
 @js.native
 class AnaglyphPostProcess protected ()
-  extends typings.babylonjs.BABYLON.AnaglyphPostProcess {
+  extends StObject
+     with typings.babylonjs.BABYLON.AnaglyphPostProcess {
   /**
     * Creates a new AnaglyphPostProcess
     * @param name defines postprocess name
@@ -37,21 +37,14 @@ class AnaglyphPostProcess protected ()
     name: String,
     options: Double,
     rigCameras: js.Array[typings.babylonjs.BABYLON.Camera],
-    samplingMode: js.UndefOr[scala.Nothing],
+    samplingMode: Double,
     engine: typings.babylonjs.BABYLON.Engine
   ) = this()
   def this(
     name: String,
     options: Double,
     rigCameras: js.Array[typings.babylonjs.BABYLON.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.BABYLON.Engine
-  ) = this()
-  def this(
-    name: String,
-    options: PostProcessOptions,
-    rigCameras: js.Array[typings.babylonjs.BABYLON.Camera],
-    samplingMode: js.UndefOr[scala.Nothing],
+    samplingMode: Unit,
     engine: typings.babylonjs.BABYLON.Engine
   ) = this()
   def this(
@@ -63,26 +56,17 @@ class AnaglyphPostProcess protected ()
   ) = this()
   def this(
     name: String,
-    options: Double,
+    options: PostProcessOptions,
     rigCameras: js.Array[typings.babylonjs.BABYLON.Camera],
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: js.UndefOr[scala.Nothing],
-    reusable: Boolean
-  ) = this()
-  def this(
-    name: String,
-    options: Double,
-    rigCameras: js.Array[typings.babylonjs.BABYLON.Camera],
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: typings.babylonjs.BABYLON.Engine,
-    reusable: Boolean
+    samplingMode: Unit,
+    engine: typings.babylonjs.BABYLON.Engine
   ) = this()
   def this(
     name: String,
     options: Double,
     rigCameras: js.Array[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
-    engine: js.UndefOr[scala.Nothing],
+    engine: Unit,
     reusable: Boolean
   ) = this()
   def this(
@@ -95,17 +79,17 @@ class AnaglyphPostProcess protected ()
   ) = this()
   def this(
     name: String,
-    options: PostProcessOptions,
+    options: Double,
     rigCameras: js.Array[typings.babylonjs.BABYLON.Camera],
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: js.UndefOr[scala.Nothing],
+    samplingMode: Unit,
+    engine: Unit,
     reusable: Boolean
   ) = this()
   def this(
     name: String,
-    options: PostProcessOptions,
+    options: Double,
     rigCameras: js.Array[typings.babylonjs.BABYLON.Camera],
-    samplingMode: js.UndefOr[scala.Nothing],
+    samplingMode: Unit,
     engine: typings.babylonjs.BABYLON.Engine,
     reusable: Boolean
   ) = this()
@@ -114,7 +98,7 @@ class AnaglyphPostProcess protected ()
     options: PostProcessOptions,
     rigCameras: js.Array[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
-    engine: js.UndefOr[scala.Nothing],
+    engine: Unit,
     reusable: Boolean
   ) = this()
   def this(
@@ -122,6 +106,22 @@ class AnaglyphPostProcess protected ()
     options: PostProcessOptions,
     rigCameras: js.Array[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
+    engine: typings.babylonjs.BABYLON.Engine,
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    options: PostProcessOptions,
+    rigCameras: js.Array[typings.babylonjs.BABYLON.Camera],
+    samplingMode: Unit,
+    engine: Unit,
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    options: PostProcessOptions,
+    rigCameras: js.Array[typings.babylonjs.BABYLON.Camera],
+    samplingMode: Unit,
     engine: typings.babylonjs.BABYLON.Engine,
     reusable: Boolean
   ) = this()

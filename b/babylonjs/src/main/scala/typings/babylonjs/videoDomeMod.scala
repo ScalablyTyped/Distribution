@@ -7,7 +7,6 @@ import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.videoTextureMod.VideoTexture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object videoDomeMod {
@@ -30,7 +29,7 @@ object videoDomeMod {
       options: AutoPlay,
       scene: Scene,
       onError: Nullable[
-            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
           ]
     ) = this()
     def this(
@@ -39,7 +38,7 @@ object videoDomeMod {
       options: AutoPlay,
       scene: Scene,
       onError: Nullable[
-            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
           ]
     ) = this()
     def this(
@@ -48,7 +47,7 @@ object videoDomeMod {
       options: AutoPlay,
       scene: Scene,
       onError: Nullable[
-            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
           ]
     ) = this()
     

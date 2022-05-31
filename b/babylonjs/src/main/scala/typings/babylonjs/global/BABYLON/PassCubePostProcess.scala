@@ -4,13 +4,13 @@ import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.BABYLON.PostProcessOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.PassCubePostProcess")
 @js.native
 class PassCubePostProcess protected ()
-  extends typings.babylonjs.BABYLON.PassCubePostProcess {
+  extends StObject
+     with typings.babylonjs.BABYLON.PassCubePostProcess {
   /**
     * Creates the PassCubePostProcess
     * @param name The name of the effect.
@@ -36,13 +36,15 @@ class PassCubePostProcess protected ()
 /* static members */
 object PassCubePostProcess {
   
-  /** @hidden */
-  @JSGlobal("BABYLON.PassCubePostProcess._Parse")
+  @JSGlobal("BABYLON.PassCubePostProcess")
   @js.native
-  def _Parse(
+  val ^ : js.Any = js.native
+  
+  /** @hidden */
+  inline def _Parse(
     parsedPostProcess: js.Any,
     targetCamera: typings.babylonjs.BABYLON.Camera,
     scene: typings.babylonjs.BABYLON.Scene,
     rootUrl: String
-  ): typings.babylonjs.BABYLON.PassCubePostProcess = js.native
+  ): typings.babylonjs.BABYLON.PassCubePostProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.PassCubePostProcess]
 }

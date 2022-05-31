@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.RenderingGroup")
 @js.native
 class RenderingGroup protected ()
-  extends typings.babylonjs.BABYLON.RenderingGroup {
+  extends StObject
+     with typings.babylonjs.BABYLON.RenderingGroup {
   /**
     * Creates a new rendering group.
     * @param index The rendering group index
@@ -32,13 +32,23 @@ class RenderingGroup protected ()
   def this(
     index: Double,
     scene: typings.babylonjs.BABYLON.Scene,
-    opaqueSortCompareFn: js.UndefOr[
-        Nullable[
-          js.Function2[
-            /* a */ typings.babylonjs.BABYLON.SubMesh, 
-            /* b */ typings.babylonjs.BABYLON.SubMesh, 
-            Double
-          ]
+    opaqueSortCompareFn: Unit,
+    alphaTestSortCompareFn: Nullable[
+        js.Function2[
+          /* a */ typings.babylonjs.BABYLON.SubMesh, 
+          /* b */ typings.babylonjs.BABYLON.SubMesh, 
+          Double
+        ]
+      ]
+  ) = this()
+  def this(
+    index: Double,
+    scene: typings.babylonjs.BABYLON.Scene,
+    opaqueSortCompareFn: Nullable[
+        js.Function2[
+          /* a */ typings.babylonjs.BABYLON.SubMesh, 
+          /* b */ typings.babylonjs.BABYLON.SubMesh, 
+          Double
         ]
       ],
     alphaTestSortCompareFn: Nullable[
@@ -52,22 +62,69 @@ class RenderingGroup protected ()
   def this(
     index: Double,
     scene: typings.babylonjs.BABYLON.Scene,
-    opaqueSortCompareFn: js.UndefOr[
-        Nullable[
-          js.Function2[
-            /* a */ typings.babylonjs.BABYLON.SubMesh, 
-            /* b */ typings.babylonjs.BABYLON.SubMesh, 
-            Double
-          ]
+    opaqueSortCompareFn: Unit,
+    alphaTestSortCompareFn: Unit,
+    transparentSortCompareFn: Nullable[
+        js.Function2[
+          /* a */ typings.babylonjs.BABYLON.SubMesh, 
+          /* b */ typings.babylonjs.BABYLON.SubMesh, 
+          Double
+        ]
+      ]
+  ) = this()
+  def this(
+    index: Double,
+    scene: typings.babylonjs.BABYLON.Scene,
+    opaqueSortCompareFn: Unit,
+    alphaTestSortCompareFn: Nullable[
+        js.Function2[
+          /* a */ typings.babylonjs.BABYLON.SubMesh, 
+          /* b */ typings.babylonjs.BABYLON.SubMesh, 
+          Double
         ]
       ],
-    alphaTestSortCompareFn: js.UndefOr[
-        Nullable[
-          js.Function2[
-            /* a */ typings.babylonjs.BABYLON.SubMesh, 
-            /* b */ typings.babylonjs.BABYLON.SubMesh, 
-            Double
-          ]
+    transparentSortCompareFn: Nullable[
+        js.Function2[
+          /* a */ typings.babylonjs.BABYLON.SubMesh, 
+          /* b */ typings.babylonjs.BABYLON.SubMesh, 
+          Double
+        ]
+      ]
+  ) = this()
+  def this(
+    index: Double,
+    scene: typings.babylonjs.BABYLON.Scene,
+    opaqueSortCompareFn: Nullable[
+        js.Function2[
+          /* a */ typings.babylonjs.BABYLON.SubMesh, 
+          /* b */ typings.babylonjs.BABYLON.SubMesh, 
+          Double
+        ]
+      ],
+    alphaTestSortCompareFn: Unit,
+    transparentSortCompareFn: Nullable[
+        js.Function2[
+          /* a */ typings.babylonjs.BABYLON.SubMesh, 
+          /* b */ typings.babylonjs.BABYLON.SubMesh, 
+          Double
+        ]
+      ]
+  ) = this()
+  def this(
+    index: Double,
+    scene: typings.babylonjs.BABYLON.Scene,
+    opaqueSortCompareFn: Nullable[
+        js.Function2[
+          /* a */ typings.babylonjs.BABYLON.SubMesh, 
+          /* b */ typings.babylonjs.BABYLON.SubMesh, 
+          Double
+        ]
+      ],
+    alphaTestSortCompareFn: Nullable[
+        js.Function2[
+          /* a */ typings.babylonjs.BABYLON.SubMesh, 
+          /* b */ typings.babylonjs.BABYLON.SubMesh, 
+          Double
         ]
       ],
     transparentSortCompareFn: Nullable[
@@ -89,8 +146,7 @@ object RenderingGroup {
   @JSGlobal("BABYLON.RenderingGroup._zeroVector")
   @js.native
   def _zeroVector: js.Any = js.native
-  @scala.inline
-  def _zeroVector_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_zeroVector")(x.asInstanceOf[js.Any])
+  inline def _zeroVector_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_zeroVector")(x.asInstanceOf[js.Any])
   
   /**
     * Build in function which can be applied to ensure meshes of a special queue (opaque, alpha test, transparent)
@@ -100,9 +156,7 @@ object RenderingGroup {
     * @param b The second submesh
     * @returns The result of the comparison
     */
-  @JSGlobal("BABYLON.RenderingGroup.backToFrontSortCompare")
-  @js.native
-  def backToFrontSortCompare(a: typings.babylonjs.BABYLON.SubMesh, b: typings.babylonjs.BABYLON.SubMesh): Double = js.native
+  inline def backToFrontSortCompare(a: typings.babylonjs.BABYLON.SubMesh, b: typings.babylonjs.BABYLON.SubMesh): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("backToFrontSortCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Build in function which can be applied to ensure meshes of a special queue (opaque, alpha test, transparent)
@@ -112,9 +166,7 @@ object RenderingGroup {
     * @param b The second submesh
     * @returns The result of the comparison
     */
-  @JSGlobal("BABYLON.RenderingGroup.defaultTransparentSortCompare")
-  @js.native
-  def defaultTransparentSortCompare(a: typings.babylonjs.BABYLON.SubMesh, b: typings.babylonjs.BABYLON.SubMesh): Double = js.native
+  inline def defaultTransparentSortCompare(a: typings.babylonjs.BABYLON.SubMesh, b: typings.babylonjs.BABYLON.SubMesh): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultTransparentSortCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Build in function which can be applied to ensure meshes of a special queue (opaque, alpha test, transparent)
@@ -124,9 +176,7 @@ object RenderingGroup {
     * @param b The second submesh
     * @returns The result of the comparison
     */
-  @JSGlobal("BABYLON.RenderingGroup.frontToBackSortCompare")
-  @js.native
-  def frontToBackSortCompare(a: typings.babylonjs.BABYLON.SubMesh, b: typings.babylonjs.BABYLON.SubMesh): Double = js.native
+  inline def frontToBackSortCompare(a: typings.babylonjs.BABYLON.SubMesh, b: typings.babylonjs.BABYLON.SubMesh): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("frontToBackSortCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Renders the submeshes in a specified order.
@@ -138,8 +188,7 @@ object RenderingGroup {
   @JSGlobal("BABYLON.RenderingGroup.renderSorted")
   @js.native
   def renderSorted: js.Any = js.native
-  @scala.inline
-  def renderSorted_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderSorted")(x.asInstanceOf[js.Any])
+  inline def renderSorted_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderSorted")(x.asInstanceOf[js.Any])
   
   /**
     * Renders the submeshes in the order they were dispatched (no sort applied).
@@ -148,6 +197,5 @@ object RenderingGroup {
   @JSGlobal("BABYLON.RenderingGroup.renderUnsorted")
   @js.native
   def renderUnsorted: js.Any = js.native
-  @scala.inline
-  def renderUnsorted_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderUnsorted")(x.asInstanceOf[js.Any])
+  inline def renderUnsorted_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderUnsorted")(x.asInstanceOf[js.Any])
 }

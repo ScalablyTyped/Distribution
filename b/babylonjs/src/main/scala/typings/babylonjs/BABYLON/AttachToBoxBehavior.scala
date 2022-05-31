@@ -2,48 +2,47 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AttachToBoxBehavior extends Behavior[Mesh] {
+trait AttachToBoxBehavior
+  extends StObject
+     with Behavior[Mesh] {
   
-  var _closestFace: js.Any = js.native
+  /* private */ var _closestFace: js.Any
   
-  var _faceVectors: js.Any = js.native
+  /* private */ var _faceVectors: js.Any
   
-  var _lookAtTmpMatrix: js.Any = js.native
+  /* private */ var _lookAtTmpMatrix: js.Any
   
-  var _lookAtToRef: js.Any = js.native
+  /* private */ var _lookAtToRef: js.Any
   
-  var _onRenderObserver: js.Any = js.native
+  /* private */ var _onRenderObserver: js.Any
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any
   
-  var _target: js.Any = js.native
+  /* private */ var _target: js.Any
   
-  var _tmpMatrix: js.Any = js.native
+  /* private */ var _tmpMatrix: js.Any
   
-  var _tmpVector: js.Any = js.native
+  /* private */ var _tmpVector: js.Any
   
-  var _zeroVector: js.Any = js.native
+  /* private */ var _zeroVector: js.Any
   
   /**
     * The distance from the bottom of the face that the UI should be attached to (default: 0.15)
     */
-  var distanceAwayFromBottomOfFace: Double = js.native
+  var distanceAwayFromBottomOfFace: Double
   
   /**
     * The distance away from the face of the mesh that the UI should be attached to (default: 0.15)
     */
-  var distanceAwayFromFace: Double = js.native
+  var distanceAwayFromFace: Double
   
-  var ui: js.Any = js.native
+  /* private */ var ui: js.Any
 }
 object AttachToBoxBehavior {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _closestFace: js.Any,
     _faceVectors: js.Any,
     _lookAtTmpMatrix: js.Any,
@@ -66,46 +65,32 @@ object AttachToBoxBehavior {
     __obj.asInstanceOf[AttachToBoxBehavior]
   }
   
-  @scala.inline
-  implicit class AttachToBoxBehaviorMutableBuilder[Self <: AttachToBoxBehavior] (val x: Self) extends AnyVal {
+  extension [Self <: AttachToBoxBehavior](x: Self) {
     
-    @scala.inline
-    def setDistanceAwayFromBottomOfFace(value: Double): Self = StObject.set(x, "distanceAwayFromBottomOfFace", value.asInstanceOf[js.Any])
+    inline def setDistanceAwayFromBottomOfFace(value: Double): Self = StObject.set(x, "distanceAwayFromBottomOfFace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceAwayFromFace(value: Double): Self = StObject.set(x, "distanceAwayFromFace", value.asInstanceOf[js.Any])
+    inline def setDistanceAwayFromFace(value: Double): Self = StObject.set(x, "distanceAwayFromFace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUi(value: js.Any): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
+    inline def setUi(value: js.Any): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_closestFace(value: js.Any): Self = StObject.set(x, "_closestFace", value.asInstanceOf[js.Any])
+    inline def set_closestFace(value: js.Any): Self = StObject.set(x, "_closestFace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_faceVectors(value: js.Any): Self = StObject.set(x, "_faceVectors", value.asInstanceOf[js.Any])
+    inline def set_faceVectors(value: js.Any): Self = StObject.set(x, "_faceVectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_lookAtTmpMatrix(value: js.Any): Self = StObject.set(x, "_lookAtTmpMatrix", value.asInstanceOf[js.Any])
+    inline def set_lookAtTmpMatrix(value: js.Any): Self = StObject.set(x, "_lookAtTmpMatrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_lookAtToRef(value: js.Any): Self = StObject.set(x, "_lookAtToRef", value.asInstanceOf[js.Any])
+    inline def set_lookAtToRef(value: js.Any): Self = StObject.set(x, "_lookAtToRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_onRenderObserver(value: js.Any): Self = StObject.set(x, "_onRenderObserver", value.asInstanceOf[js.Any])
+    inline def set_onRenderObserver(value: js.Any): Self = StObject.set(x, "_onRenderObserver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_scene(value: js.Any): Self = StObject.set(x, "_scene", value.asInstanceOf[js.Any])
+    inline def set_scene(value: js.Any): Self = StObject.set(x, "_scene", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_target(value: js.Any): Self = StObject.set(x, "_target", value.asInstanceOf[js.Any])
+    inline def set_target(value: js.Any): Self = StObject.set(x, "_target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_tmpMatrix(value: js.Any): Self = StObject.set(x, "_tmpMatrix", value.asInstanceOf[js.Any])
+    inline def set_tmpMatrix(value: js.Any): Self = StObject.set(x, "_tmpMatrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_tmpVector(value: js.Any): Self = StObject.set(x, "_tmpVector", value.asInstanceOf[js.Any])
+    inline def set_tmpVector(value: js.Any): Self = StObject.set(x, "_tmpVector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_zeroVector(value: js.Any): Self = StObject.set(x, "_zeroVector", value.asInstanceOf[js.Any])
+    inline def set_zeroVector(value: js.Any): Self = StObject.set(x, "_zeroVector", value.asInstanceOf[js.Any])
   }
 }

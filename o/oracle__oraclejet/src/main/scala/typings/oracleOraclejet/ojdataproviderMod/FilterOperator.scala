@@ -4,31 +4,25 @@ import typings.oracleOraclejet.ojdataproviderMod.AttributeFilterOperator.Attribu
 import typings.oracleOraclejet.ojdataproviderMod.CompoundFilterOperator.CompoundOperator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterOperator[D] extends StObject {
   
-  def filter(data: js.Array[_]): js.Array[_] = js.native
+  def filter(data: js.Array[js.Any]): js.Array[js.Any]
   
-  var op: AttributeOperator | CompoundOperator = js.native
+  var op: AttributeOperator | CompoundOperator
 }
 object FilterOperator {
   
-  @scala.inline
-  def apply[D](filter: js.Array[_] => js.Array[_], op: AttributeOperator | CompoundOperator): FilterOperator[D] = {
+  inline def apply[D](filter: js.Array[js.Any] => js.Array[js.Any], op: AttributeOperator | CompoundOperator): FilterOperator[D] = {
     val __obj = js.Dynamic.literal(filter = js.Any.fromFunction1(filter), op = op.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterOperator[D]]
   }
   
-  @scala.inline
-  implicit class FilterOperatorMutableBuilder[Self <: FilterOperator[_], D] (val x: Self with FilterOperator[D]) extends AnyVal {
+  extension [Self <: FilterOperator[?], D](x: Self & FilterOperator[D]) {
     
-    @scala.inline
-    def setFilter(value: js.Array[_] => js.Array[_]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+    inline def setFilter(value: js.Array[js.Any] => js.Array[js.Any]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOp(value: AttributeOperator | CompoundOperator): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+    inline def setOp(value: AttributeOperator | CompoundOperator): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
   }
 }

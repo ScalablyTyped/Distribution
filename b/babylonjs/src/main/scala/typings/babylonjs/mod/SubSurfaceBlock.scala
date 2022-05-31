@@ -4,7 +4,6 @@ import typings.babylonjs.nodeMaterialBuildStateMod.NodeMaterialBuildState
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "SubSurfaceBlock")
@@ -20,6 +19,10 @@ class SubSurfaceBlock protected ()
 /* static members */
 object SubSurfaceBlock {
   
+  @JSImport("babylonjs", "SubSurfaceBlock")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Gets the main code of the block (fragment side)
     * @param state current state of the node material building
@@ -28,12 +31,10 @@ object SubSurfaceBlock {
     * @param worldPosVarName name of the variable holding the world position
     * @returns the shader code
     */
-  @JSImport("babylonjs", "SubSurfaceBlock.GetCode")
-  @js.native
-  def GetCode(
+  inline def GetCode(
     state: NodeMaterialBuildState,
     ssBlock: Nullable[typings.babylonjs.subSurfaceBlockMod.SubSurfaceBlock],
     reflectionBlock: Nullable[typings.babylonjs.reflectionBlockMod.ReflectionBlock],
     worldPosVarName: String
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCode")(state.asInstanceOf[js.Any], ssBlock.asInstanceOf[js.Any], reflectionBlock.asInstanceOf[js.Any], worldPosVarName.asInstanceOf[js.Any])).asInstanceOf[String]
 }

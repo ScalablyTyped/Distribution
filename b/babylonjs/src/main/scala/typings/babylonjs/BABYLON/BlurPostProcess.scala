@@ -2,11 +2,12 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BlurPostProcess extends PostProcess {
+trait BlurPostProcess
+  extends StObject
+     with PostProcess {
   
   /**
     * Calculates the value of a Gaussian distribution with sigma 3 at a given point.
@@ -24,9 +25,9 @@ trait BlurPostProcess extends PostProcess {
   /* protected */ def _glslFloat(x: Double): String = js.native
   /* protected */ def _glslFloat(x: Double, decimalFigures: Double): String = js.native
   
-  var _idealKernel: Double = js.native
+  /* protected */ var _idealKernel: Double = js.native
   
-  var _kernel: Double = js.native
+  /* protected */ var _kernel: Double = js.native
   
   /**
     * Best kernels are odd numbers that when divided by 2, their integer part is even, so 5, 9 or 13.
@@ -39,22 +40,19 @@ trait BlurPostProcess extends PostProcess {
     */
   /* protected */ def _nearestBestKernel(idealKernel: Double): Double = js.native
   
-  var _packedFloat: Boolean = js.native
+  /* protected */ var _packedFloat: Boolean = js.native
   
-  var _staticDefines: js.Any = js.native
+  /* private */ var _staticDefines: js.Any = js.native
   
   /* protected */ def _updateParameters(): Unit = js.native
-  /* protected */ def _updateParameters(
-    onCompiled: js.UndefOr[scala.Nothing],
-    onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]
-  ): Unit = js.native
   /* protected */ def _updateParameters(onCompiled: js.Function1[/* effect */ Effect, Unit]): Unit = js.native
   /* protected */ def _updateParameters(
     onCompiled: js.Function1[/* effect */ Effect, Unit],
     onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]
   ): Unit = js.native
+  /* protected */ def _updateParameters(onCompiled: Unit, onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]): Unit = js.native
   
-  var blockCompilation: js.Any = js.native
+  /* private */ var blockCompilation: js.Any = js.native
   
   /** The direction in which to blur the image. */
   var direction: Vector2 = js.native

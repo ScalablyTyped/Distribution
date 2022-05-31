@@ -11,7 +11,6 @@ import typings.oracleOraclejet.oracleOraclejetStrings.right
 import typings.oracleOraclejet.oracleOraclejetStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,7 +18,7 @@ trait DvtDiagramLayoutContextNode extends StObject {
   
   def getBounds(): H = js.native
   
-  def getChildNodes(): js.Array[_] = js.native
+  def getChildNodes(): js.Array[js.Any] = js.native
   
   def getContentBounds(): H = js.native
   

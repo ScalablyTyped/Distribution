@@ -2,32 +2,29 @@ package typings.oracleOraclejet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IconDefaults extends StObject {
   
-  var borderColor: String = js.native
+  var borderColor: String
   
-  var borderWidth: Double = js.native
+  var borderWidth: Double
   
-  var color: String = js.native
+  var color: String
   
-  var iconDefaults: Pattern = js.native
+  var iconDefaults: Pattern
   
-  var indicatorColor: String = js.native
+  var indicatorColor: String
   
-  var indicatorIconDefaults: Pattern = js.native
+  var indicatorIconDefaults: Pattern
   
-  var labelStyle: js.Object = js.native
+  var labelStyle: js.Object
   
-  var secondaryLabelStyle: js.Object = js.native
+  var secondaryLabelStyle: js.Object
 }
 object IconDefaults {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     borderColor: String,
     borderWidth: Double,
     color: String,
@@ -41,31 +38,22 @@ object IconDefaults {
     __obj.asInstanceOf[IconDefaults]
   }
   
-  @scala.inline
-  implicit class IconDefaultsMutableBuilder[Self <: IconDefaults] (val x: Self) extends AnyVal {
+  extension [Self <: IconDefaults](x: Self) {
     
-    @scala.inline
-    def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+    inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconDefaults(value: Pattern): Self = StObject.set(x, "iconDefaults", value.asInstanceOf[js.Any])
+    inline def setIconDefaults(value: Pattern): Self = StObject.set(x, "iconDefaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndicatorColor(value: String): Self = StObject.set(x, "indicatorColor", value.asInstanceOf[js.Any])
+    inline def setIndicatorColor(value: String): Self = StObject.set(x, "indicatorColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndicatorIconDefaults(value: Pattern): Self = StObject.set(x, "indicatorIconDefaults", value.asInstanceOf[js.Any])
+    inline def setIndicatorIconDefaults(value: Pattern): Self = StObject.set(x, "indicatorIconDefaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelStyle(value: js.Object): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
+    inline def setLabelStyle(value: js.Object): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryLabelStyle(value: js.Object): Self = StObject.set(x, "secondaryLabelStyle", value.asInstanceOf[js.Any])
+    inline def setSecondaryLabelStyle(value: js.Object): Self = StObject.set(x, "secondaryLabelStyle", value.asInstanceOf[js.Any])
   }
 }

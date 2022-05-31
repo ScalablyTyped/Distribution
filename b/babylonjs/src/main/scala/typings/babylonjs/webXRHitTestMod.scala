@@ -10,7 +10,6 @@ import typings.babylonjs.webXRHitTestLegacyMod.IWebXRLegacyHitTestOptions
 import typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webXRHitTestMod {
@@ -35,17 +34,17 @@ object webXRHitTestMod {
     options: IWebXRHitTestOptions
     ) = this()
     
-    var _processWebXRHitTestResult: js.Any = js.native
+    /* private */ var _processWebXRHitTestResult: js.Any = js.native
     
-    var _tmpMat: js.Any = js.native
+    /* private */ var _tmpMat: js.Any = js.native
     
-    var _tmpPos: js.Any = js.native
+    /* private */ var _tmpPos: js.Any = js.native
     
-    var _tmpQuat: js.Any = js.native
+    /* private */ var _tmpQuat: js.Any = js.native
     
-    var _transientXrHitTestSource: js.Any = js.native
+    /* private */ var _transientXrHitTestSource: js.Any = js.native
     
-    var _xrHitTestSource: js.Any = js.native
+    /* private */ var _xrHitTestSource: js.Any = js.native
     
     /**
       * When set to true, each hit test will have its own position/rotation objects
@@ -54,7 +53,7 @@ object webXRHitTestMod {
       */
     var autoCloneTransformation: Boolean = js.native
     
-    var initHitTestSource: js.Any = js.native
+    /* private */ var initHitTestSource: js.Any = js.native
     
     /**
       * Triggered when new babylon (transformed) hit test results are available
@@ -92,39 +91,39 @@ object webXRHitTestMod {
     val Version: Double = js.native
   }
   
-  @js.native
-  trait IWebXRHitResult extends IWebXRLegacyHitResult {
+  trait IWebXRHitResult
+    extends StObject
+       with IWebXRLegacyHitResult {
     
     /**
       * The input source that generated this hit test (if transient)
       */
-    var inputSource: js.UndefOr[XRInputSource] = js.native
+    var inputSource: js.UndefOr[XRInputSource] = js.undefined
     
     /**
       * Is this a transient hit test
       */
-    var isTransient: js.UndefOr[Boolean] = js.native
+    var isTransient: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Position of the hit test result
       */
-    var position: Vector3 = js.native
+    var position: Vector3
     
     /**
       * Rotation of the hit test result
       */
-    var rotationQuaternion: Quaternion = js.native
+    var rotationQuaternion: Quaternion
     
     /**
       * The native hit test result
       */
     @JSName("xrHitResult")
-    var xrHitResult_IWebXRHitResult: XRHitTestResult = js.native
+    var xrHitResult_IWebXRHitResult: XRHitTestResult
   }
   object IWebXRHitResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       position: Vector3,
       rotationQuaternion: Quaternion,
       transformationMatrix: Matrix,
@@ -134,115 +133,93 @@ object webXRHitTestMod {
       __obj.asInstanceOf[IWebXRHitResult]
     }
     
-    @scala.inline
-    implicit class IWebXRHitResultMutableBuilder[Self <: IWebXRHitResult] (val x: Self) extends AnyVal {
+    extension [Self <: IWebXRHitResult](x: Self) {
       
-      @scala.inline
-      def setInputSource(value: XRInputSource): Self = StObject.set(x, "inputSource", value.asInstanceOf[js.Any])
+      inline def setInputSource(value: XRInputSource): Self = StObject.set(x, "inputSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputSourceUndefined: Self = StObject.set(x, "inputSource", js.undefined)
+      inline def setInputSourceUndefined: Self = StObject.set(x, "inputSource", js.undefined)
       
-      @scala.inline
-      def setIsTransient(value: Boolean): Self = StObject.set(x, "isTransient", value.asInstanceOf[js.Any])
+      inline def setIsTransient(value: Boolean): Self = StObject.set(x, "isTransient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTransientUndefined: Self = StObject.set(x, "isTransient", js.undefined)
+      inline def setIsTransientUndefined: Self = StObject.set(x, "isTransient", js.undefined)
       
-      @scala.inline
-      def setPosition(value: Vector3): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Vector3): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotationQuaternion(value: Quaternion): Self = StObject.set(x, "rotationQuaternion", value.asInstanceOf[js.Any])
+      inline def setRotationQuaternion(value: Quaternion): Self = StObject.set(x, "rotationQuaternion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXrHitResult(value: XRHitTestResult): Self = StObject.set(x, "xrHitResult", value.asInstanceOf[js.Any])
+      inline def setXrHitResult(value: XRHitTestResult): Self = StObject.set(x, "xrHitResult", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait IWebXRHitTestOptions extends IWebXRLegacyHitTestOptions {
+  trait IWebXRHitTestOptions
+    extends StObject
+       with IWebXRLegacyHitTestOptions {
     
     /**
       * Do not create a permanent hit test. Will usually be used when only
       * transient inputs are needed.
       */
-    var disablePermanentHitTest: js.UndefOr[Boolean] = js.native
+    var disablePermanentHitTest: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable transient (for example touch-based) hit test inspections
       */
-    var enableTransientHitTest: js.UndefOr[Boolean] = js.native
+    var enableTransientHitTest: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Override the default entity type(s) of the hit-test result
       */
-    var entityTypes: js.UndefOr[js.Array[XRHitTestTrackableType]] = js.native
+    var entityTypes: js.UndefOr[js.Array[XRHitTestTrackableType]] = js.undefined
     
     /**
       * Offset ray for the permanent hit test
       */
-    var offsetRay: js.UndefOr[Vector3] = js.native
+    var offsetRay: js.UndefOr[Vector3] = js.undefined
     
     /**
       * Offset ray for the transient hit test
       */
-    var transientOffsetRay: js.UndefOr[Vector3] = js.native
+    var transientOffsetRay: js.UndefOr[Vector3] = js.undefined
     
     /**
       * Instead of using viewer space for hit tests, use the reference space defined in the session manager
       */
-    var useReferenceSpace: js.UndefOr[Boolean] = js.native
+    var useReferenceSpace: js.UndefOr[Boolean] = js.undefined
   }
   object IWebXRHitTestOptions {
     
-    @scala.inline
-    def apply(): IWebXRHitTestOptions = {
+    inline def apply(): IWebXRHitTestOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IWebXRHitTestOptions]
     }
     
-    @scala.inline
-    implicit class IWebXRHitTestOptionsMutableBuilder[Self <: IWebXRHitTestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IWebXRHitTestOptions](x: Self) {
       
-      @scala.inline
-      def setDisablePermanentHitTest(value: Boolean): Self = StObject.set(x, "disablePermanentHitTest", value.asInstanceOf[js.Any])
+      inline def setDisablePermanentHitTest(value: Boolean): Self = StObject.set(x, "disablePermanentHitTest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisablePermanentHitTestUndefined: Self = StObject.set(x, "disablePermanentHitTest", js.undefined)
+      inline def setDisablePermanentHitTestUndefined: Self = StObject.set(x, "disablePermanentHitTest", js.undefined)
       
-      @scala.inline
-      def setEnableTransientHitTest(value: Boolean): Self = StObject.set(x, "enableTransientHitTest", value.asInstanceOf[js.Any])
+      inline def setEnableTransientHitTest(value: Boolean): Self = StObject.set(x, "enableTransientHitTest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableTransientHitTestUndefined: Self = StObject.set(x, "enableTransientHitTest", js.undefined)
+      inline def setEnableTransientHitTestUndefined: Self = StObject.set(x, "enableTransientHitTest", js.undefined)
       
-      @scala.inline
-      def setEntityTypes(value: js.Array[XRHitTestTrackableType]): Self = StObject.set(x, "entityTypes", value.asInstanceOf[js.Any])
+      inline def setEntityTypes(value: js.Array[XRHitTestTrackableType]): Self = StObject.set(x, "entityTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntityTypesUndefined: Self = StObject.set(x, "entityTypes", js.undefined)
+      inline def setEntityTypesUndefined: Self = StObject.set(x, "entityTypes", js.undefined)
       
-      @scala.inline
-      def setEntityTypesVarargs(value: XRHitTestTrackableType*): Self = StObject.set(x, "entityTypes", js.Array(value :_*))
+      inline def setEntityTypesVarargs(value: XRHitTestTrackableType*): Self = StObject.set(x, "entityTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setOffsetRay(value: Vector3): Self = StObject.set(x, "offsetRay", value.asInstanceOf[js.Any])
+      inline def setOffsetRay(value: Vector3): Self = StObject.set(x, "offsetRay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetRayUndefined: Self = StObject.set(x, "offsetRay", js.undefined)
+      inline def setOffsetRayUndefined: Self = StObject.set(x, "offsetRay", js.undefined)
       
-      @scala.inline
-      def setTransientOffsetRay(value: Vector3): Self = StObject.set(x, "transientOffsetRay", value.asInstanceOf[js.Any])
+      inline def setTransientOffsetRay(value: Vector3): Self = StObject.set(x, "transientOffsetRay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransientOffsetRayUndefined: Self = StObject.set(x, "transientOffsetRay", js.undefined)
+      inline def setTransientOffsetRayUndefined: Self = StObject.set(x, "transientOffsetRay", js.undefined)
       
-      @scala.inline
-      def setUseReferenceSpace(value: Boolean): Self = StObject.set(x, "useReferenceSpace", value.asInstanceOf[js.Any])
+      inline def setUseReferenceSpace(value: Boolean): Self = StObject.set(x, "useReferenceSpace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseReferenceSpaceUndefined: Self = StObject.set(x, "useReferenceSpace", js.undefined)
+      inline def setUseReferenceSpaceUndefined: Self = StObject.set(x, "useReferenceSpace", js.undefined)
     }
   }
 }

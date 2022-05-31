@@ -19,7 +19,6 @@ import typings.babylonjs.subMeshMod.SubMesh
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object effectLayerMod {
@@ -41,7 +40,7 @@ object effectLayerMod {
       */
     /* protected */ def _addCustomEffectDefines(defines: js.Array[String]): Unit = js.native
     
-    var _cachedDefines: js.Any = js.native
+    /* private */ var _cachedDefines: js.Any = js.native
     
     /**
       * Returns true if the mesh can be rendered, otherwise false.
@@ -78,27 +77,27 @@ object effectLayerMod {
     /**
       * Dispose only the render target textures and post process.
       */
-    var _disposeTextureAndPostProcesses: js.Any = js.native
+    /* private */ var _disposeTextureAndPostProcesses: js.Any = js.native
     
-    var _effectLayerMapGenerationEffect: js.Any = js.native
+    /* private */ var _effectLayerMapGenerationEffect: js.Any = js.native
     
-    var _effectLayerOptions: js.Any = js.native
+    /* private */ var _effectLayerOptions: js.Any = js.native
     
-    var _emissiveTextureAndColor: Color = js.native
+    /* protected */ var _emissiveTextureAndColor: Color = js.native
     
-    var _engine: Engine = js.native
+    /* protected */ var _engine: Engine = js.native
     
     /**
       * Generates the index buffer of the full screen quad blending to the main canvas.
       */
-    var _generateIndexBuffer: js.Any = js.native
+    /* private */ var _generateIndexBuffer: js.Any = js.native
     
     /**
       * Generates the vertex buffer of the full screen quad blending to the main canvas.
       */
-    var _generateVertexBuffer: js.Any = js.native
+    /* private */ var _generateVertexBuffer: js.Any = js.native
     
-    var _indexBuffer: js.Any = js.native
+    /* private */ var _indexBuffer: js.Any = js.native
     
     /**
       * Initializes the effect layer with the required options.
@@ -121,15 +120,15 @@ object effectLayerMod {
       */
     /* protected */ def _isReady(subMesh: SubMesh, useInstances: Boolean, emissiveTexture: Nullable[BaseTexture]): Boolean = js.native
     
-    var _mainTexture: RenderTargetTexture = js.native
+    /* protected */ var _mainTexture: RenderTargetTexture = js.native
     
-    var _mainTextureDesiredSize: ISize = js.native
+    /* protected */ var _mainTextureDesiredSize: ISize = js.native
     
-    var _maxSize: Double = js.native
+    /* protected */ var _maxSize: Double = js.native
     
-    var _mergeEffect: js.Any = js.native
+    /* private */ var _mergeEffect: js.Any = js.native
     
-    var _postProcesses: js.Array[PostProcess] = js.native
+    /* protected */ var _postProcesses: js.Array[PostProcess] = js.native
     
     /**
       * Rebuild the required buffers.
@@ -143,7 +142,7 @@ object effectLayerMod {
     /* protected */ def _renderSubMesh(subMesh: SubMesh): Unit = js.native
     /* protected */ def _renderSubMesh(subMesh: SubMesh, enableAlphaMode: Boolean): Unit = js.native
     
-    var _scene: Scene = js.native
+    /* protected */ var _scene: Scene = js.native
     
     /**
       * Sets the required values for both the emissive texture and and the main color.
@@ -154,9 +153,9 @@ object effectLayerMod {
       * Sets the main texture desired size which is the closest power of two
       * of the engine canvas size.
       */
-    var _setMainTextureSize: js.Any = js.native
+    /* private */ var _setMainTextureSize: js.Any = js.native
     
-    var _shouldRender: Boolean = js.native
+    /* protected */ var _shouldRender: Boolean = js.native
     
     /**
       * Returns true if the mesh should render, otherwise false.
@@ -172,7 +171,7 @@ object effectLayerMod {
       */
     /* protected */ def _shouldRenderMesh(mesh: AbstractMesh): Boolean = js.native
     
-    var _textures: js.Array[BaseTexture] = js.native
+    /* protected */ var _textures: js.Array[BaseTexture] = js.native
     
     /**
       * Defines whether the current material of the mesh should be use to render the effect.
@@ -180,7 +179,7 @@ object effectLayerMod {
       */
     /* protected */ def _useMeshMaterial(mesh: AbstractMesh): Boolean = js.native
     
-    var _vertexBuffers: js.Any = js.native
+    /* private */ var _vertexBuffers: js.Any = js.native
     
     /**
       * Gets the camera attached to the layer.
@@ -295,7 +294,7 @@ object effectLayerMod {
       * Serializes this layer (Glow or Highlight for example)
       * @returns a serialized layer object
       */
-    var serialize: js.UndefOr[js.Function0[_]] = js.native
+    var serialize: js.UndefOr[js.Function0[js.Any]] = js.native
     
     /**
       * Returns true if the layer contains information to display, otherwise false.
@@ -306,6 +305,10 @@ object effectLayerMod {
   /* static members */
   object EffectLayer {
     
+    @JSImport("babylonjs/Layers/effectLayer", "EffectLayer")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates an effect layer from parsed effect layer data
       * @param parsedEffectLayer defines effect layer data
@@ -313,76 +316,62 @@ object effectLayerMod {
       * @param rootUrl defines the root URL containing the effect layer information
       * @returns a parsed effect Layer
       */
-    @JSImport("babylonjs/Layers/effectLayer", "EffectLayer.Parse")
-    @js.native
-    def Parse(parsedEffectLayer: js.Any, scene: Scene, rootUrl: String): EffectLayer = js.native
+    inline def Parse(parsedEffectLayer: js.Any, scene: Scene, rootUrl: String): EffectLayer = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedEffectLayer.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[EffectLayer]
     
     /** @hidden */
-    @JSImport("babylonjs/Layers/effectLayer", "EffectLayer._SceneComponentInitialization")
-    @js.native
-    def _SceneComponentInitialization(scene: Scene): Unit = js.native
+    inline def _SceneComponentInitialization(scene: Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @js.native
   trait IEffectLayerOptions extends StObject {
     
     /**
       * Alpha blending mode used to apply the blur. Default depends of the implementation.
       */
-    var alphaBlendingMode: Double = js.native
+    var alphaBlendingMode: Double
     
     /**
       * The camera attached to the layer.
       */
-    var camera: Nullable[Camera] = js.native
+    var camera: Nullable[Camera]
     
     /**
       * Enforces a fixed size texture to ensure effect stability across devices.
       */
-    var mainTextureFixedSize: js.UndefOr[Double] = js.native
+    var mainTextureFixedSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Multiplication factor apply to the canvas size to compute the render target size
       * used to generated the objects (the smaller the faster).
       */
-    var mainTextureRatio: Double = js.native
+    var mainTextureRatio: Double
     
     /**
       * The rendering group to draw the layer in.
       */
-    var renderingGroupId: Double = js.native
+    var renderingGroupId: Double
   }
   object IEffectLayerOptions {
     
-    @scala.inline
-    def apply(alphaBlendingMode: Double, mainTextureRatio: Double, renderingGroupId: Double): IEffectLayerOptions = {
-      val __obj = js.Dynamic.literal(alphaBlendingMode = alphaBlendingMode.asInstanceOf[js.Any], mainTextureRatio = mainTextureRatio.asInstanceOf[js.Any], renderingGroupId = renderingGroupId.asInstanceOf[js.Any])
+    inline def apply(alphaBlendingMode: Double, mainTextureRatio: Double, renderingGroupId: Double): IEffectLayerOptions = {
+      val __obj = js.Dynamic.literal(alphaBlendingMode = alphaBlendingMode.asInstanceOf[js.Any], mainTextureRatio = mainTextureRatio.asInstanceOf[js.Any], renderingGroupId = renderingGroupId.asInstanceOf[js.Any], camera = null)
       __obj.asInstanceOf[IEffectLayerOptions]
     }
     
-    @scala.inline
-    implicit class IEffectLayerOptionsMutableBuilder[Self <: IEffectLayerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IEffectLayerOptions](x: Self) {
       
-      @scala.inline
-      def setAlphaBlendingMode(value: Double): Self = StObject.set(x, "alphaBlendingMode", value.asInstanceOf[js.Any])
+      inline def setAlphaBlendingMode(value: Double): Self = StObject.set(x, "alphaBlendingMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCamera(value: Nullable[Camera]): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+      inline def setCamera(value: Nullable[Camera]): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCameraNull: Self = StObject.set(x, "camera", null)
+      inline def setCameraNull: Self = StObject.set(x, "camera", null)
       
-      @scala.inline
-      def setMainTextureFixedSize(value: Double): Self = StObject.set(x, "mainTextureFixedSize", value.asInstanceOf[js.Any])
+      inline def setMainTextureFixedSize(value: Double): Self = StObject.set(x, "mainTextureFixedSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMainTextureFixedSizeUndefined: Self = StObject.set(x, "mainTextureFixedSize", js.undefined)
+      inline def setMainTextureFixedSizeUndefined: Self = StObject.set(x, "mainTextureFixedSize", js.undefined)
       
-      @scala.inline
-      def setMainTextureRatio(value: Double): Self = StObject.set(x, "mainTextureRatio", value.asInstanceOf[js.Any])
+      inline def setMainTextureRatio(value: Double): Self = StObject.set(x, "mainTextureRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderingGroupId(value: Double): Self = StObject.set(x, "renderingGroupId", value.asInstanceOf[js.Any])
+      inline def setRenderingGroupId(value: Double): Self = StObject.set(x, "renderingGroupId", value.asInstanceOf[js.Any])
     }
   }
 }

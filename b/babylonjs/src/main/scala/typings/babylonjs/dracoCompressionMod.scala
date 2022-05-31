@@ -8,7 +8,6 @@ import typings.std.ArrayBuffer
 import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dracoCompressionMod {
@@ -19,12 +18,14 @@ object dracoCompressionMod {
     * Constructor
     * @param numWorkers The number of workers for async operations. Specify `0` to disable web workers and run synchronously in the current context.
     */
-  class DracoCompression () extends IDisposable {
+  class DracoCompression ()
+    extends StObject
+       with IDisposable {
     def this(numWorkers: Double) = this()
     
-    var _decoderModulePromise: js.Any = js.native
+    /* private */ var _decoderModulePromise: js.Any = js.native
     
-    var _workerPoolPromise: js.Any = js.native
+    /* private */ var _workerPoolPromise: js.Any = js.native
     
     /**
       * Decode Draco compressed mesh data to vertex data.
@@ -36,6 +37,12 @@ object dracoCompressionMod {
     def decodeMeshAsync(data: ArrayBufferView): js.Promise[VertexData] = js.native
     def decodeMeshAsync(data: ArrayBufferView, attributes: StringDictionary[Double]): js.Promise[VertexData] = js.native
     def decodeMeshAsync(data: ArrayBuffer, attributes: StringDictionary[Double]): js.Promise[VertexData] = js.native
+    
+    /**
+      * Releases all held resources
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * Returns a promise that resolves when ready. Call this manually to ensure draco compression is ready before use.
@@ -59,8 +66,7 @@ object dracoCompressionMod {
     @JSImport("babylonjs/Meshes/Compression/dracoCompression", "DracoCompression.Configuration")
     @js.native
     def Configuration: IDracoCompressionConfiguration = js.native
-    @scala.inline
-    def Configuration_=(x: IDracoCompressionConfiguration): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Configuration")(x.asInstanceOf[js.Any])
+    inline def Configuration_=(x: IDracoCompressionConfiguration): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Configuration")(x.asInstanceOf[js.Any])
     
     /**
       * Default number of workers to create when creating the draco compression object.
@@ -68,43 +74,36 @@ object dracoCompressionMod {
     @JSImport("babylonjs/Meshes/Compression/dracoCompression", "DracoCompression.DefaultNumWorkers")
     @js.native
     def DefaultNumWorkers: Double = js.native
-    @scala.inline
-    def DefaultNumWorkers_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultNumWorkers")(x.asInstanceOf[js.Any])
+    inline def DefaultNumWorkers_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultNumWorkers")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Meshes/Compression/dracoCompression", "DracoCompression.GetDefaultNumWorkers")
     @js.native
     def GetDefaultNumWorkers: js.Any = js.native
-    @scala.inline
-    def GetDefaultNumWorkers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GetDefaultNumWorkers")(x.asInstanceOf[js.Any])
+    inline def GetDefaultNumWorkers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GetDefaultNumWorkers")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Meshes/Compression/dracoCompression", "DracoCompression._Default")
     @js.native
     def _Default: js.Any = js.native
-    @scala.inline
-    def _Default_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Default")(x.asInstanceOf[js.Any])
+    inline def _Default_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Default")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IDracoCompressionConfiguration extends StObject {
     
     /**
       * Configuration for the decoder.
       */
-    var decoder: FallbackUrl = js.native
+    var decoder: FallbackUrl
   }
   object IDracoCompressionConfiguration {
     
-    @scala.inline
-    def apply(decoder: FallbackUrl): IDracoCompressionConfiguration = {
+    inline def apply(decoder: FallbackUrl): IDracoCompressionConfiguration = {
       val __obj = js.Dynamic.literal(decoder = decoder.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDracoCompressionConfiguration]
     }
     
-    @scala.inline
-    implicit class IDracoCompressionConfigurationMutableBuilder[Self <: IDracoCompressionConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: IDracoCompressionConfiguration](x: Self) {
       
-      @scala.inline
-      def setDecoder(value: FallbackUrl): Self = StObject.set(x, "decoder", value.asInstanceOf[js.Any])
+      inline def setDecoder(value: FallbackUrl): Self = StObject.set(x, "decoder", value.asInstanceOf[js.Any])
     }
   }
 }

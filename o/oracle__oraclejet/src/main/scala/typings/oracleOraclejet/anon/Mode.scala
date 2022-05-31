@@ -2,30 +2,27 @@ package typings.oracleOraclejet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mode extends StObject {
   
-  var columnIndex: Double = js.native
+  var columnIndex: Double
   
-  var componentElement: typings.std.Element = js.native
+  var componentElement: typings.std.Element
   
-  var data: js.Object = js.native
+  var data: js.Object
   
-  var index: Double = js.native
+  var index: Double
   
-  var key: js.Any = js.native
+  var key: js.Any
   
-  var mode: String = js.native
+  var mode: String
   
-  var row: js.Object = js.native
+  var row: js.Object
 }
 object Mode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     columnIndex: Double,
     componentElement: typings.std.Element,
     data: js.Object,
@@ -38,28 +35,20 @@ object Mode {
     __obj.asInstanceOf[Mode]
   }
   
-  @scala.inline
-  implicit class ModeMutableBuilder[Self <: Mode] (val x: Self) extends AnyVal {
+  extension [Self <: Mode](x: Self) {
     
-    @scala.inline
-    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+    inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentElement(value: typings.std.Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
+    inline def setComponentElement(value: typings.std.Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRow(value: js.Object): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: js.Object): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
   }
 }

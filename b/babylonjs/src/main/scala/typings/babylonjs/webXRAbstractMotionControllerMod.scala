@@ -15,14 +15,15 @@ import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.webXRControllerComponentMod.WebXRControllerComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webXRAbstractMotionControllerMod {
   
   @JSImport("babylonjs/XR/motionController/webXRAbstractMotionController", "WebXRAbstractMotionController")
   @js.native
-  abstract class WebXRAbstractMotionController protected () extends IDisposable {
+  abstract class WebXRAbstractMotionController protected ()
+    extends StObject
+       with IDisposable {
     /**
       * constructs a new abstract motion controller
       * @param scene the scene to which the model of the controller will be added
@@ -65,9 +66,9 @@ object webXRAbstractMotionControllerMod {
       */
     /* protected */ def _getFilenameAndPath(): Filename = js.native
     
-    var _getGenericFilenameAndPath: js.Any = js.native
+    /* private */ var _getGenericFilenameAndPath: js.Any = js.native
     
-    var _getGenericParentMesh: js.Any = js.native
+    /* private */ var _getGenericParentMesh: js.Any = js.native
     
     /* protected */ def _getImmediateChildByName(node: AbstractMesh, name: String): js.UndefOr[AbstractMesh] = js.native
     
@@ -79,7 +80,7 @@ object webXRAbstractMotionControllerMod {
       */
     /* protected */ def _getModelLoadingConstraints(): Boolean = js.native
     
-    var _initComponent: js.Any = js.native
+    /* private */ var _initComponent: js.Any = js.native
     
     /**
       * Moves the axis on the controller mesh based on its current state
@@ -90,7 +91,7 @@ object webXRAbstractMotionControllerMod {
     /* protected */ def _lerpTransform(axisMap: IMotionControllerMeshMap, axisValue: Double): Unit = js.native
     /* protected */ def _lerpTransform(axisMap: IMotionControllerMeshMap, axisValue: Double, fixValueCoordinates: Boolean): Unit = js.native
     
-    var _modelReady: js.Any = js.native
+    /* private */ var _modelReady: js.Any = js.native
     
     /**
       * This function will be called after the model was successfully loaded and can be used
@@ -121,6 +122,12 @@ object webXRAbstractMotionControllerMod {
       * Disable the model's animation. Can be set at any time.
       */
     var disableAnimation: Boolean = js.native
+    
+    /**
+      * Releases all held resources
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * The gamepad object correlating to this controller
@@ -170,7 +177,7 @@ object webXRAbstractMotionControllerMod {
       */
     def handness: XREye = js.native
     
-    var layout: IMotionControllerLayout = js.native
+    /* protected */ var layout: IMotionControllerLayout = js.native
     
     /**
       * Loads the model correlating to this controller
@@ -207,7 +214,7 @@ object webXRAbstractMotionControllerMod {
       */
     var rootMesh: Nullable[AbstractMesh] = js.native
     
-    var scene: Scene = js.native
+    /* protected */ var scene: Scene = js.native
     
     /**
       * Update this model using the current XRFrame
@@ -222,107 +229,90 @@ object webXRAbstractMotionControllerMod {
     /* protected */ def updateModel(xrFrame: XRFrame): Unit = js.native
   }
   
-  @js.native
   trait IMinimalMotionControllerObject extends StObject {
     
     /**
       * Available axes of this controller
       */
-    var axes: js.Array[Double] = js.native
+    var axes: js.Array[Double]
     
     /**
       * An array of available buttons
       */
-    var buttons: js.Array[Pressed] = js.native
+    var buttons: js.Array[Pressed]
     
     /**
       * EXPERIMENTAL haptic support.
       */
-    var hapticActuators: js.UndefOr[js.Array[Pulse]] = js.native
+    var hapticActuators: js.UndefOr[js.Array[Pulse]] = js.undefined
   }
   object IMinimalMotionControllerObject {
     
-    @scala.inline
-    def apply(axes: js.Array[Double], buttons: js.Array[Pressed]): IMinimalMotionControllerObject = {
+    inline def apply(axes: js.Array[Double], buttons: js.Array[Pressed]): IMinimalMotionControllerObject = {
       val __obj = js.Dynamic.literal(axes = axes.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any])
       __obj.asInstanceOf[IMinimalMotionControllerObject]
     }
     
-    @scala.inline
-    implicit class IMinimalMotionControllerObjectMutableBuilder[Self <: IMinimalMotionControllerObject] (val x: Self) extends AnyVal {
+    extension [Self <: IMinimalMotionControllerObject](x: Self) {
       
-      @scala.inline
-      def setAxes(value: js.Array[Double]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
+      inline def setAxes(value: js.Array[Double]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxesVarargs(value: Double*): Self = StObject.set(x, "axes", js.Array(value :_*))
+      inline def setAxesVarargs(value: Double*): Self = StObject.set(x, "axes", js.Array(value :_*))
       
-      @scala.inline
-      def setButtons(value: js.Array[Pressed]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      inline def setButtons(value: js.Array[Pressed]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonsVarargs(value: Pressed*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+      inline def setButtonsVarargs(value: Pressed*): Self = StObject.set(x, "buttons", js.Array(value :_*))
       
-      @scala.inline
-      def setHapticActuators(value: js.Array[Pulse]): Self = StObject.set(x, "hapticActuators", value.asInstanceOf[js.Any])
+      inline def setHapticActuators(value: js.Array[Pulse]): Self = StObject.set(x, "hapticActuators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHapticActuatorsUndefined: Self = StObject.set(x, "hapticActuators", js.undefined)
+      inline def setHapticActuatorsUndefined: Self = StObject.set(x, "hapticActuators", js.undefined)
       
-      @scala.inline
-      def setHapticActuatorsVarargs(value: Pulse*): Self = StObject.set(x, "hapticActuators", js.Array(value :_*))
+      inline def setHapticActuatorsVarargs(value: Pulse*): Self = StObject.set(x, "hapticActuators", js.Array(value :_*))
     }
   }
   
-  @js.native
   trait IMotionControllerButtonMeshMap extends StObject {
     
     /**
       * the mesh that defines the pressed value mesh position.
       * This is used to find the max-position of this button
       */
-    var pressedMesh: AbstractMesh = js.native
+    var pressedMesh: AbstractMesh
     
     /**
       * the mesh that defines the unpressed value mesh position.
       * This is used to find the min (or initial) position of this button
       */
-    var unpressedMesh: AbstractMesh = js.native
+    var unpressedMesh: AbstractMesh
     
     /**
       * The mesh that will be changed when value changes
       */
-    var valueMesh: AbstractMesh = js.native
+    var valueMesh: AbstractMesh
   }
   object IMotionControllerButtonMeshMap {
     
-    @scala.inline
-    def apply(pressedMesh: AbstractMesh, unpressedMesh: AbstractMesh, valueMesh: AbstractMesh): IMotionControllerButtonMeshMap = {
+    inline def apply(pressedMesh: AbstractMesh, unpressedMesh: AbstractMesh, valueMesh: AbstractMesh): IMotionControllerButtonMeshMap = {
       val __obj = js.Dynamic.literal(pressedMesh = pressedMesh.asInstanceOf[js.Any], unpressedMesh = unpressedMesh.asInstanceOf[js.Any], valueMesh = valueMesh.asInstanceOf[js.Any])
       __obj.asInstanceOf[IMotionControllerButtonMeshMap]
     }
     
-    @scala.inline
-    implicit class IMotionControllerButtonMeshMapMutableBuilder[Self <: IMotionControllerButtonMeshMap] (val x: Self) extends AnyVal {
+    extension [Self <: IMotionControllerButtonMeshMap](x: Self) {
       
-      @scala.inline
-      def setPressedMesh(value: AbstractMesh): Self = StObject.set(x, "pressedMesh", value.asInstanceOf[js.Any])
+      inline def setPressedMesh(value: AbstractMesh): Self = StObject.set(x, "pressedMesh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnpressedMesh(value: AbstractMesh): Self = StObject.set(x, "unpressedMesh", value.asInstanceOf[js.Any])
+      inline def setUnpressedMesh(value: AbstractMesh): Self = StObject.set(x, "unpressedMesh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueMesh(value: AbstractMesh): Self = StObject.set(x, "valueMesh", value.asInstanceOf[js.Any])
+      inline def setValueMesh(value: AbstractMesh): Self = StObject.set(x, "valueMesh", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait IMotionControllerLayout extends StObject {
     
     /**
       * Path to load the assets. Usually relative to the base path
       */
-    var assetPath: String = js.native
+    var assetPath: String
     
     /**
       * Available components (unsorted)
@@ -330,27 +320,26 @@ object webXRAbstractMotionControllerMod {
     var components: /**
       * A map of component Ids
       */
-    StringDictionary[GamepadIndices] = js.native
+    StringDictionary[GamepadIndices]
     
     /**
       * Is it xr standard mapping or not
       */
-    var gamepadMapping: _empty | `xr-standard` = js.native
+    var gamepadMapping: _empty | `xr-standard`
     
     /**
       * Base root node of this entire model
       */
-    var rootNodeName: String = js.native
+    var rootNodeName: String
     
     /**
       * Defines the main button component id
       */
-    var selectComponentId: String = js.native
+    var selectComponentId: String
   }
   object IMotionControllerLayout {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       assetPath: String,
       components: /**
       * A map of component Ids
@@ -364,26 +353,20 @@ object webXRAbstractMotionControllerMod {
       __obj.asInstanceOf[IMotionControllerLayout]
     }
     
-    @scala.inline
-    implicit class IMotionControllerLayoutMutableBuilder[Self <: IMotionControllerLayout] (val x: Self) extends AnyVal {
+    extension [Self <: IMotionControllerLayout](x: Self) {
       
-      @scala.inline
-      def setAssetPath(value: String): Self = StObject.set(x, "assetPath", value.asInstanceOf[js.Any])
+      inline def setAssetPath(value: String): Self = StObject.set(x, "assetPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponents(value: /**
+      inline def setComponents(value: /**
         * A map of component Ids
         */
       StringDictionary[GamepadIndices]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGamepadMapping(value: _empty | `xr-standard`): Self = StObject.set(x, "gamepadMapping", value.asInstanceOf[js.Any])
+      inline def setGamepadMapping(value: _empty | `xr-standard`): Self = StObject.set(x, "gamepadMapping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNodeName(value: String): Self = StObject.set(x, "rootNodeName", value.asInstanceOf[js.Any])
+      inline def setRootNodeName(value: String): Self = StObject.set(x, "rootNodeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectComponentId(value: String): Self = StObject.set(x, "selectComponentId", value.asInstanceOf[js.Any])
+      inline def setSelectComponentId(value: String): Self = StObject.set(x, "selectComponentId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -392,96 +375,80 @@ object webXRAbstractMotionControllerMod {
     */
   StringDictionary[IMotionControllerLayout]
   
-  @js.native
   trait IMotionControllerMeshMap extends StObject {
     
     /**
       * the mesh that defines the maximum value mesh position.
       */
-    var maxMesh: js.UndefOr[AbstractMesh] = js.native
+    var maxMesh: js.UndefOr[AbstractMesh] = js.undefined
     
     /**
       * the mesh that defines the minimum value mesh position.
       */
-    var minMesh: js.UndefOr[AbstractMesh] = js.native
+    var minMesh: js.UndefOr[AbstractMesh] = js.undefined
     
     /**
       * The mesh that will be changed when axis value changes
       */
-    var valueMesh: js.UndefOr[AbstractMesh] = js.native
+    var valueMesh: js.UndefOr[AbstractMesh] = js.undefined
   }
   object IMotionControllerMeshMap {
     
-    @scala.inline
-    def apply(): IMotionControllerMeshMap = {
+    inline def apply(): IMotionControllerMeshMap = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IMotionControllerMeshMap]
     }
     
-    @scala.inline
-    implicit class IMotionControllerMeshMapMutableBuilder[Self <: IMotionControllerMeshMap] (val x: Self) extends AnyVal {
+    extension [Self <: IMotionControllerMeshMap](x: Self) {
       
-      @scala.inline
-      def setMaxMesh(value: AbstractMesh): Self = StObject.set(x, "maxMesh", value.asInstanceOf[js.Any])
+      inline def setMaxMesh(value: AbstractMesh): Self = StObject.set(x, "maxMesh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxMeshUndefined: Self = StObject.set(x, "maxMesh", js.undefined)
+      inline def setMaxMeshUndefined: Self = StObject.set(x, "maxMesh", js.undefined)
       
-      @scala.inline
-      def setMinMesh(value: AbstractMesh): Self = StObject.set(x, "minMesh", value.asInstanceOf[js.Any])
+      inline def setMinMesh(value: AbstractMesh): Self = StObject.set(x, "minMesh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinMeshUndefined: Self = StObject.set(x, "minMesh", js.undefined)
+      inline def setMinMeshUndefined: Self = StObject.set(x, "minMesh", js.undefined)
       
-      @scala.inline
-      def setValueMesh(value: AbstractMesh): Self = StObject.set(x, "valueMesh", value.asInstanceOf[js.Any])
+      inline def setValueMesh(value: AbstractMesh): Self = StObject.set(x, "valueMesh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueMeshUndefined: Self = StObject.set(x, "valueMesh", js.undefined)
+      inline def setValueMeshUndefined: Self = StObject.set(x, "valueMesh", js.undefined)
     }
   }
   
-  @js.native
   trait IMotionControllerProfile extends StObject {
     
     /**
       * fallback profiles for this profileId
       */
-    var fallbackProfileIds: js.Array[String] = js.native
+    var fallbackProfileIds: js.Array[String]
     
     /**
       * The layout map, with handedness as key
       */
-    var layouts: IMotionControllerLayoutMap = js.native
+    var layouts: IMotionControllerLayoutMap
     
     /**
       * The id of this profile
       * correlates to the profile(s) in the xrInput.profiles array
       */
-    var profileId: String = js.native
+    var profileId: String
   }
   object IMotionControllerProfile {
     
-    @scala.inline
-    def apply(fallbackProfileIds: js.Array[String], layouts: IMotionControllerLayoutMap, profileId: String): IMotionControllerProfile = {
+    inline def apply(fallbackProfileIds: js.Array[String], layouts: IMotionControllerLayoutMap, profileId: String): IMotionControllerProfile = {
       val __obj = js.Dynamic.literal(fallbackProfileIds = fallbackProfileIds.asInstanceOf[js.Any], layouts = layouts.asInstanceOf[js.Any], profileId = profileId.asInstanceOf[js.Any])
       __obj.asInstanceOf[IMotionControllerProfile]
     }
     
-    @scala.inline
-    implicit class IMotionControllerProfileMutableBuilder[Self <: IMotionControllerProfile] (val x: Self) extends AnyVal {
+    extension [Self <: IMotionControllerProfile](x: Self) {
       
-      @scala.inline
-      def setFallbackProfileIds(value: js.Array[String]): Self = StObject.set(x, "fallbackProfileIds", value.asInstanceOf[js.Any])
+      inline def setFallbackProfileIds(value: js.Array[String]): Self = StObject.set(x, "fallbackProfileIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackProfileIdsVarargs(value: String*): Self = StObject.set(x, "fallbackProfileIds", js.Array(value :_*))
+      inline def setFallbackProfileIdsVarargs(value: String*): Self = StObject.set(x, "fallbackProfileIds", js.Array(value :_*))
       
-      @scala.inline
-      def setLayouts(value: IMotionControllerLayoutMap): Self = StObject.set(x, "layouts", value.asInstanceOf[js.Any])
+      inline def setLayouts(value: IMotionControllerLayoutMap): Self = StObject.set(x, "layouts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
+      inline def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -493,14 +460,11 @@ object webXRAbstractMotionControllerMod {
   trait MotionControllerComponentStateType extends StObject
   object MotionControllerComponentStateType {
     
-    @scala.inline
-    def default: typings.babylonjs.babylonjsStrings.default = "default".asInstanceOf[typings.babylonjs.babylonjsStrings.default]
+    inline def default: typings.babylonjs.babylonjsStrings.default = "default".asInstanceOf[typings.babylonjs.babylonjsStrings.default]
     
-    @scala.inline
-    def pressed: typings.babylonjs.babylonjsStrings.pressed = "pressed".asInstanceOf[typings.babylonjs.babylonjsStrings.pressed]
+    inline def pressed: typings.babylonjs.babylonjsStrings.pressed = "pressed".asInstanceOf[typings.babylonjs.babylonjsStrings.pressed]
     
-    @scala.inline
-    def touched: typings.babylonjs.babylonjsStrings.touched = "touched".asInstanceOf[typings.babylonjs.babylonjsStrings.touched]
+    inline def touched: typings.babylonjs.babylonjsStrings.touched = "touched".asInstanceOf[typings.babylonjs.babylonjsStrings.touched]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -513,20 +477,15 @@ object webXRAbstractMotionControllerMod {
   trait MotionControllerComponentType extends StObject
   object MotionControllerComponentType {
     
-    @scala.inline
-    def button: typings.babylonjs.babylonjsStrings.button = "button".asInstanceOf[typings.babylonjs.babylonjsStrings.button]
+    inline def button: typings.babylonjs.babylonjsStrings.button = "button".asInstanceOf[typings.babylonjs.babylonjsStrings.button]
     
-    @scala.inline
-    def squeeze: typings.babylonjs.babylonjsStrings.squeeze = "squeeze".asInstanceOf[typings.babylonjs.babylonjsStrings.squeeze]
+    inline def squeeze: typings.babylonjs.babylonjsStrings.squeeze = "squeeze".asInstanceOf[typings.babylonjs.babylonjsStrings.squeeze]
     
-    @scala.inline
-    def thumbstick: typings.babylonjs.babylonjsStrings.thumbstick = "thumbstick".asInstanceOf[typings.babylonjs.babylonjsStrings.thumbstick]
+    inline def thumbstick: typings.babylonjs.babylonjsStrings.thumbstick = "thumbstick".asInstanceOf[typings.babylonjs.babylonjsStrings.thumbstick]
     
-    @scala.inline
-    def touchpad: typings.babylonjs.babylonjsStrings.touchpad = "touchpad".asInstanceOf[typings.babylonjs.babylonjsStrings.touchpad]
+    inline def touchpad: typings.babylonjs.babylonjsStrings.touchpad = "touchpad".asInstanceOf[typings.babylonjs.babylonjsStrings.touchpad]
     
-    @scala.inline
-    def trigger: typings.babylonjs.babylonjsStrings.trigger = "trigger".asInstanceOf[typings.babylonjs.babylonjsStrings.trigger]
+    inline def trigger: typings.babylonjs.babylonjsStrings.trigger = "trigger".asInstanceOf[typings.babylonjs.babylonjsStrings.trigger]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -537,13 +496,10 @@ object webXRAbstractMotionControllerMod {
   trait MotionControllerHandedness extends StObject
   object MotionControllerHandedness {
     
-    @scala.inline
-    def left: typings.babylonjs.babylonjsStrings.left = "left".asInstanceOf[typings.babylonjs.babylonjsStrings.left]
+    inline def left: typings.babylonjs.babylonjsStrings.left = "left".asInstanceOf[typings.babylonjs.babylonjsStrings.left]
     
-    @scala.inline
-    def none: typings.babylonjs.babylonjsStrings.none = "none".asInstanceOf[typings.babylonjs.babylonjsStrings.none]
+    inline def none: typings.babylonjs.babylonjsStrings.none = "none".asInstanceOf[typings.babylonjs.babylonjsStrings.none]
     
-    @scala.inline
-    def right: typings.babylonjs.babylonjsStrings.right = "right".asInstanceOf[typings.babylonjs.babylonjsStrings.right]
+    inline def right: typings.babylonjs.babylonjsStrings.right = "right".asInstanceOf[typings.babylonjs.babylonjsStrings.right]
   }
 }

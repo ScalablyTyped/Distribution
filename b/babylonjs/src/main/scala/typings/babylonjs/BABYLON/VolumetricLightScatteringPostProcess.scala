@@ -3,29 +3,30 @@ package typings.babylonjs.BABYLON
 import typings.babylonjs.anon.PositionVector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VolumetricLightScatteringPostProcess extends PostProcess {
+trait VolumetricLightScatteringPostProcess
+  extends StObject
+     with PostProcess {
   
-  var _cachedDefines: js.Any = js.native
+  /* private */ var _cachedDefines: js.Any = js.native
   
-  var _createPass: js.Any = js.native
+  /* private */ var _createPass: js.Any = js.native
   
-  var _isReady: js.Any = js.native
+  /* private */ var _isReady: js.Any = js.native
   
-  var _meshExcluded: js.Any = js.native
+  /* private */ var _meshExcluded: js.Any = js.native
   
-  var _screenCoordinates: js.Any = js.native
+  /* private */ var _screenCoordinates: js.Any = js.native
   
-  var _updateMeshScreenCoordinates: js.Any = js.native
+  /* private */ var _updateMeshScreenCoordinates: js.Any = js.native
   
-  var _viewPort: js.Any = js.native
+  /* private */ var _viewPort: js.Any = js.native
   
-  var _volumetricLightScatteringPass: js.Any = js.native
+  /* private */ var _volumetricLightScatteringPass: js.Any = js.native
   
-  var _volumetricLightScatteringRTT: js.Any = js.native
+  /* private */ var _volumetricLightScatteringRTT: js.Any = js.native
   
   /**
     * If not undefined, the mesh position is computed from the attached node position

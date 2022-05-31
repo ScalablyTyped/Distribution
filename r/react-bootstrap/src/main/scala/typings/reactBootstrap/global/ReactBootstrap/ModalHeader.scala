@@ -1,0 +1,10 @@
+package typings.reactBootstrap.global.ReactBootstrap
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSGlobal("ReactBootstrap.ModalHeader")
+@js.native
+class ModalHeader ()
+  extends typings.reactBootstrap.mod.ModalHeader

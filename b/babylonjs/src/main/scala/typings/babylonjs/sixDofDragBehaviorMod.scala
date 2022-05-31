@@ -5,7 +5,6 @@ import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.observableMod.Observable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sixDofDragBehaviorMod {
@@ -15,37 +14,52 @@ object sixDofDragBehaviorMod {
   /**
     * Instantiates a behavior that when attached to a mesh will allow the mesh to be dragged around based on directions and origin of the pointer's ray
     */
-  class SixDofDragBehavior () extends Behavior[Mesh] {
+  class SixDofDragBehavior ()
+    extends StObject
+       with Behavior[Mesh] {
     
-    var _attachedToElement: js.Any = js.native
+    /* private */ var _attachedToElement: js.Any = js.native
     
-    var _moving: js.Any = js.native
+    /* private */ var _moving: js.Any = js.native
     
-    var _ownerNode: js.Any = js.native
+    /* private */ var _ownerNode: js.Any = js.native
     
     /**
       * In the case of multiplea active cameras, the cameraToUseForPointers should be used if set instead of active camera
       */
     /* private */ def _pointerCamera: js.Any = js.native
     
-    var _pointerObserver: js.Any = js.native
+    /* private */ var _pointerObserver: js.Any = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
-    var _sceneRenderObserver: js.Any = js.native
+    /* private */ var _sceneRenderObserver: js.Any = js.native
     
-    var _startingOrientation: js.Any = js.native
+    /* private */ var _startingOrientation: js.Any = js.native
     
-    var _targetPosition: js.Any = js.native
+    /* private */ var _targetPosition: js.Any = js.native
     
-    var _virtualDragMesh: js.Any = js.native
+    /* private */ var _virtualDragMesh: js.Any = js.native
     
-    var _virtualOriginMesh: js.Any = js.native
+    /* private */ var _virtualOriginMesh: js.Any = js.native
+    
+    /**
+      * Called when the behavior is attached to a target
+      * @param target defines the target where the behavior is attached to
+      */
+    /* CompleteClass */
+    override def attach(target: Mesh): Unit = js.native
     
     /**
       * The id of the pointer that is currently interacting with the behavior (-1 when no pointer is active)
       */
     var currentDraggingPointerID: Double = js.native
+    
+    /**
+      * Called when the behavior is detached from its target
+      */
+    /* CompleteClass */
+    override def detach(): Unit = js.native
     
     /**
       * If camera controls should be detached during the drag
@@ -62,6 +76,15 @@ object sixDofDragBehaviorMod {
       */
     var dragging: Boolean = js.native
     
+    /**
+      * Function called when the behavior needs to be initialized (after attaching it to a target)
+      */
+    /* CompleteClass */
+    override def init(): Unit = js.native
+    
+    /** gets or sets behavior's name */
+    /* CompleteClass */
+    var name: String = js.native
     /**
       *  The name of the behavior
       */
@@ -91,7 +114,7 @@ object sixDofDragBehaviorMod {
     /**
       * How much faster the object should move when the controller is moving towards it. This is useful to bring objects that are far away from the user to them faster. Set this to 0 to avoid any speed increase. (Default: 3)
       */
-    var zDragFactor: js.Any = js.native
+    /* private */ var zDragFactor: js.Any = js.native
   }
   /* static members */
   object SixDofDragBehavior {
@@ -103,7 +126,6 @@ object sixDofDragBehaviorMod {
     @JSImport("babylonjs/Behaviors/Meshes/sixDofDragBehavior", "SixDofDragBehavior._virtualScene")
     @js.native
     def _virtualScene: js.Any = js.native
-    @scala.inline
-    def _virtualScene_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_virtualScene")(x.asInstanceOf[js.Any])
+    inline def _virtualScene_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_virtualScene")(x.asInstanceOf[js.Any])
   }
 }

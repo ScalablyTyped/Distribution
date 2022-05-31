@@ -2,14 +2,15 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface representing a free camera inputs manager
   */
 @js.native
-trait FreeCameraInputsManager extends CameraInputsManager[FreeCamera] {
+trait FreeCameraInputsManager
+  extends StObject
+     with CameraInputsManager[FreeCamera] {
   
   /**
     * @hidden

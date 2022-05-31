@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.TexturePackerFrame")
 @js.native
 class TexturePackerFrame protected ()
-  extends typings.babylonjs.BABYLON.TexturePackerFrame {
+  extends StObject
+     with typings.babylonjs.BABYLON.TexturePackerFrame {
   /**
     * Initializes a texture package frame.
     * @param id The numerical frame identifier
@@ -17,4 +17,22 @@ class TexturePackerFrame protected ()
     * @returns TexturePackerFrame
     */
   def this(id: Double, scale: typings.babylonjs.BABYLON.Vector2, offset: typings.babylonjs.BABYLON.Vector2) = this()
+  
+  /**
+    * The frame ID
+    */
+  /* CompleteClass */
+  var id: Double = js.native
+  
+  /**
+    * The Frames offset
+    */
+  /* CompleteClass */
+  var offset: typings.babylonjs.BABYLON.Vector2 = js.native
+  
+  /**
+    * The frames Scale
+    */
+  /* CompleteClass */
+  var scale: typings.babylonjs.BABYLON.Vector2 = js.native
 }

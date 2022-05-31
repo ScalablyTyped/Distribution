@@ -9,14 +9,15 @@ import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.typesMod.DeepImmutable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object boundingInfoMod {
   
   @JSImport("babylonjs/Culling/boundingInfo", "BoundingInfo")
   @js.native
-  class BoundingInfo protected () extends ICullable {
+  class BoundingInfo protected ()
+    extends StObject
+       with ICullable {
     /**
       * Constructs bounding info
       * @param minimum min vector of the bounding box/sphere
@@ -33,7 +34,7 @@ object boundingInfoMod {
     /** @hidden */
     def _checkCollision(collider: Collider): Boolean = js.native
     
-    var _isLocked: js.Any = js.native
+    /* private */ var _isLocked: js.Any = js.native
     
     /**
       * Bounding box for the mesh
@@ -75,6 +76,22 @@ object boundingInfoMod {
       */
     def intersectsPoint(point: DeepImmutable[Vector3]): Boolean = js.native
     
+    /**
+      * Checks if a cullable object (mesh...) is in the camera frustum
+      * Unlike isInFrustum this cheks the full bounding box
+      * @param frustumPlanes Camera near/planes
+      * @returns true if the object is in frustum otherwise false
+      */
+    /* CompleteClass */
+    override def isCompletelyInFrustum(frustumPlanes: js.Array[Plane]): Boolean = js.native
+    
+    /**
+      * Checks if the object or part of the object is in the frustum
+      * @param frustumPlanes Camera near/planes
+      * @returns true if the object is in frustum otherwise false
+      */
+    /* CompleteClass */
+    override def isInFrustum(frustumPlanes: js.Array[Plane]): Boolean = js.native
     def isInFrustum(frustumPlanes: js.Array[DeepImmutable[Plane]], strategy: Double): Boolean = js.native
     
     /**
@@ -123,7 +140,6 @@ object boundingInfoMod {
     val TmpVector3: js.Any = js.native
   }
   
-  @js.native
   trait ICullable extends StObject {
     
     /**
@@ -132,31 +148,27 @@ object boundingInfoMod {
       * @param frustumPlanes Camera near/planes
       * @returns true if the object is in frustum otherwise false
       */
-    def isCompletelyInFrustum(frustumPlanes: js.Array[Plane]): Boolean = js.native
+    def isCompletelyInFrustum(frustumPlanes: js.Array[Plane]): Boolean
     
     /**
       * Checks if the object or part of the object is in the frustum
       * @param frustumPlanes Camera near/planes
       * @returns true if the object is in frustum otherwise false
       */
-    def isInFrustum(frustumPlanes: js.Array[Plane]): Boolean = js.native
+    def isInFrustum(frustumPlanes: js.Array[Plane]): Boolean
   }
   object ICullable {
     
-    @scala.inline
-    def apply(isCompletelyInFrustum: js.Array[Plane] => Boolean, isInFrustum: js.Array[Plane] => Boolean): ICullable = {
+    inline def apply(isCompletelyInFrustum: js.Array[Plane] => Boolean, isInFrustum: js.Array[Plane] => Boolean): ICullable = {
       val __obj = js.Dynamic.literal(isCompletelyInFrustum = js.Any.fromFunction1(isCompletelyInFrustum), isInFrustum = js.Any.fromFunction1(isInFrustum))
       __obj.asInstanceOf[ICullable]
     }
     
-    @scala.inline
-    implicit class ICullableMutableBuilder[Self <: ICullable] (val x: Self) extends AnyVal {
+    extension [Self <: ICullable](x: Self) {
       
-      @scala.inline
-      def setIsCompletelyInFrustum(value: js.Array[Plane] => Boolean): Self = StObject.set(x, "isCompletelyInFrustum", js.Any.fromFunction1(value))
+      inline def setIsCompletelyInFrustum(value: js.Array[Plane] => Boolean): Self = StObject.set(x, "isCompletelyInFrustum", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsInFrustum(value: js.Array[Plane] => Boolean): Self = StObject.set(x, "isInFrustum", js.Any.fromFunction1(value))
+      inline def setIsInFrustum(value: js.Array[Plane] => Boolean): Self = StObject.set(x, "isInFrustum", js.Any.fromFunction1(value))
     }
   }
 }

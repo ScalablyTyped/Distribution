@@ -2,17 +2,16 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Octree[T] extends StObject {
   
-  var _creationFunc: js.Any = js.native
+  /* private */ var _creationFunc: js.Any = js.native
   
-  var _maxBlockCapacity: js.Any = js.native
+  /* private */ var _maxBlockCapacity: js.Any = js.native
   
-  var _selectionContent: js.Any = js.native
+  /* private */ var _selectionContent: js.Any = js.native
   
   /**
     * Adds a mesh to the octree

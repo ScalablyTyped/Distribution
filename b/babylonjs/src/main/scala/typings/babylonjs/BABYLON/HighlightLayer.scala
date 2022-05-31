@@ -2,30 +2,31 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HighlightLayer extends EffectLayer {
+trait HighlightLayer
+  extends StObject
+     with EffectLayer {
   
-  var _blurTexture: js.Any = js.native
+  /* private */ var _blurTexture: js.Any = js.native
   
   /**
     * Force the stencil to the normal expected value for none glowing parts
     */
-  var _defaultStencilReference: js.Any = js.native
+  /* private */ var _defaultStencilReference: js.Any = js.native
   
-  var _downSamplePostprocess: js.Any = js.native
+  /* private */ var _downSamplePostprocess: js.Any = js.native
   
-  var _excludedMeshes: js.Any = js.native
+  /* private */ var _excludedMeshes: js.Any = js.native
   
-  var _horizontalBlurPostprocess: js.Any = js.native
+  /* private */ var _horizontalBlurPostprocess: js.Any = js.native
   
-  var _instanceGlowingMeshStencilReference: js.Any = js.native
+  /* private */ var _instanceGlowingMeshStencilReference: js.Any = js.native
   
-  var _meshes: js.Any = js.native
+  /* private */ var _meshes: js.Any = js.native
   
-  var _options: js.Any = js.native
+  /* private */ var _options: js.Any = js.native
   
   /**
     * Returns true if the mesh should render, otherwise false.
@@ -34,7 +35,7 @@ trait HighlightLayer extends EffectLayer {
     */
   /* protected */ def _shouldRenderMesh(mesh: Mesh): Boolean = js.native
   
-  var _verticalBlurPostprocess: js.Any = js.native
+  /* private */ var _verticalBlurPostprocess: js.Any = js.native
   
   /**
     * Add a mesh in the exclusion list to prevent it to impact or being impacted by the highlight layer.

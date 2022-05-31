@@ -1,14 +1,15 @@
 package typings.babylonjs.global.BABYLON
 
+import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.PBRBaseMaterial")
 @js.native
 abstract class PBRBaseMaterial protected ()
-  extends typings.babylonjs.BABYLON.PBRBaseMaterial {
+  extends StObject
+     with typings.babylonjs.BABYLON.PBRBaseMaterial {
   /**
     * Instantiates a new PBRMaterial instance.
     *
@@ -16,6 +17,12 @@ abstract class PBRBaseMaterial protected ()
     * @param scene The scene the material will be use in.
     */
   def this(name: String, scene: typings.babylonjs.BABYLON.Scene) = this()
+  
+  /**
+    * Array of animations
+    */
+  /* CompleteClass */
+  var animations: Nullable[js.Array[typings.babylonjs.BABYLON.Animation]] = js.native
 }
 /* static members */
 object PBRBaseMaterial {
@@ -31,8 +38,7 @@ object PBRBaseMaterial {
   @JSGlobal("BABYLON.PBRBaseMaterial.DEFAULT_AO_ON_ANALYTICAL_LIGHTS")
   @js.native
   def DEFAULT_AO_ON_ANALYTICAL_LIGHTS: Double = js.native
-  @scala.inline
-  def DEFAULT_AO_ON_ANALYTICAL_LIGHTS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_AO_ON_ANALYTICAL_LIGHTS")(x.asInstanceOf[js.Any])
+  inline def DEFAULT_AO_ON_ANALYTICAL_LIGHTS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_AO_ON_ANALYTICAL_LIGHTS")(x.asInstanceOf[js.Any])
   
   /**
     * PBRMaterialLightFalloff gltf: light is falling off as described in the gltf moving to PBR document

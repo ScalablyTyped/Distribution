@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "backbone_dot_radio"
-version := "0.8-dt-20200923Z-373fa6"
+version := "0.8-dt-20200923Z-925f25"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "backbone" % "1.4-dt-20200925Z-394621",
-  "org.scalablytyped" %%% "jquery" % "3.5-dt-20201028Z-87319b",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20201002Z-1b62ce",
-  "org.scalablytyped" %%% "std" % "4.1-2f6855",
-  "org.scalablytyped" %%% "underscore" % "1.10-dt-20201002Z-a16364")
+  "org.scalablytyped" %%% "backbone" % "1.4-dt-20200925Z-5c3b09",
+  "org.scalablytyped" %%% "jquery" % "3.5-dt-20201028Z-b65a9c",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20201002Z-00b6a0",
+  "org.scalablytyped" %%% "std" % "4.1-f7e8ab",
+  "org.scalablytyped" %%% "underscore" % "1.10-dt-20201002Z-265b4a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

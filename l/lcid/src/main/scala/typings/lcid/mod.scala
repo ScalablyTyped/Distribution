@@ -31,15 +31,4 @@ object mod {
   	```
   	*/
   inline def to(localeId: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("to")(localeId.asInstanceOf[js.Any]).asInstanceOf[Double]
-  
-  /**
-  	Mapping between [standard locale identifiers](https://en.wikipedia.org/wiki/Locale_(computer_software)) and [Windows locale identifiers (LCID)](http://en.wikipedia.org/wiki/Locale#Specifics_for_Microsoft_platforms).
-  	@example
-  	```
-  	import lcid = require('lcid');
-  	lcid.all;
-  	//=> {'af_ZA': 1078, …}
-  	```
-  	*/
-  object all
 }

@@ -2,7 +2,6 @@ package typings.babylonjs.legacyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "Camera")
@@ -58,8 +57,7 @@ object Camera {
   @JSImport("babylonjs/Legacy/legacy", "Camera.ForceAttachControlToAlwaysPreventDefault")
   @js.native
   def ForceAttachControlToAlwaysPreventDefault: Boolean = js.native
-  @scala.inline
-  def ForceAttachControlToAlwaysPreventDefault_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ForceAttachControlToAlwaysPreventDefault")(x.asInstanceOf[js.Any])
+  inline def ForceAttachControlToAlwaysPreventDefault_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ForceAttachControlToAlwaysPreventDefault")(x.asInstanceOf[js.Any])
   
   /**
     * Gets a camera constructor for a given camera type
@@ -70,30 +68,22 @@ object Camera {
     * @param isStereoscopicSideBySide In case of stereoscopic setup, should the sereo be side b side
     * @returns a factory method to construc the camera
     */
-  @JSImport("babylonjs/Legacy/legacy", "Camera.GetConstructorFromName")
-  @js.native
-  def GetConstructorFromName(`type`: String, name: String, scene: typings.babylonjs.sceneMod.Scene): js.Function0[this.type] = js.native
-  @JSImport("babylonjs/Legacy/legacy", "Camera.GetConstructorFromName")
-  @js.native
-  def GetConstructorFromName(
-    `type`: String,
-    name: String,
-    scene: typings.babylonjs.sceneMod.Scene,
-    interaxial_distance: js.UndefOr[scala.Nothing],
-    isStereoscopicSideBySide: Boolean
-  ): js.Function0[this.type] = js.native
-  @JSImport("babylonjs/Legacy/legacy", "Camera.GetConstructorFromName")
-  @js.native
-  def GetConstructorFromName(`type`: String, name: String, scene: typings.babylonjs.sceneMod.Scene, interaxial_distance: Double): js.Function0[this.type] = js.native
-  @JSImport("babylonjs/Legacy/legacy", "Camera.GetConstructorFromName")
-  @js.native
-  def GetConstructorFromName(
+  inline def GetConstructorFromName(`type`: String, name: String, scene: typings.babylonjs.sceneMod.Scene): js.Function0[this.type] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetConstructorFromName")(`type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Function0[this.type]]
+  inline def GetConstructorFromName(`type`: String, name: String, scene: typings.babylonjs.sceneMod.Scene, interaxial_distance: Double): js.Function0[this.type] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetConstructorFromName")(`type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], interaxial_distance.asInstanceOf[js.Any])).asInstanceOf[js.Function0[this.type]]
+  inline def GetConstructorFromName(
     `type`: String,
     name: String,
     scene: typings.babylonjs.sceneMod.Scene,
     interaxial_distance: Double,
     isStereoscopicSideBySide: Boolean
-  ): js.Function0[this.type] = js.native
+  ): js.Function0[this.type] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetConstructorFromName")(`type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], interaxial_distance.asInstanceOf[js.Any], isStereoscopicSideBySide.asInstanceOf[js.Any])).asInstanceOf[js.Function0[this.type]]
+  inline def GetConstructorFromName(
+    `type`: String,
+    name: String,
+    scene: typings.babylonjs.sceneMod.Scene,
+    interaxial_distance: Unit,
+    isStereoscopicSideBySide: Boolean
+  ): js.Function0[this.type] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetConstructorFromName")(`type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], interaxial_distance.asInstanceOf[js.Any], isStereoscopicSideBySide.asInstanceOf[js.Any])).asInstanceOf[js.Function0[this.type]]
   
   /**
     * This helps creating camera with an orthographic mode.
@@ -118,9 +108,7 @@ object Camera {
     * @param scene The scene to instantiate the camera in
     * @returns the newly constructed camera
     */
-  @JSImport("babylonjs/Legacy/legacy", "Camera.Parse")
-  @js.native
-  def Parse(parsedCamera: js.Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.cameraMod.Camera = js.native
+  inline def Parse(parsedCamera: js.Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.cameraMod.Camera = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.cameraMod.Camera]
   
   /**
     * Custom rig mode allowing rig cameras to be populated manually with any number of cameras
@@ -188,27 +176,17 @@ object Camera {
   val RIG_MODE_WEBVR: Double = js.native
   
   /** @hidden */
-  @JSImport("babylonjs/Legacy/legacy", "Camera._createDefaultParsedCamera")
-  @js.native
-  def _createDefaultParsedCamera(name: String, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.cameraMod.Camera = js.native
+  inline def _createDefaultParsedCamera(name: String, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.cameraMod.Camera = (^.asInstanceOf[js.Dynamic].applyDynamic("_createDefaultParsedCamera")(name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.cameraMod.Camera]
   
   /** @hidden */
-  @JSImport("babylonjs/Legacy/legacy", "Camera._setStereoscopicAnaglyphRigMode")
-  @js.native
-  def _setStereoscopicAnaglyphRigMode(camera: typings.babylonjs.cameraMod.Camera): Unit = js.native
+  inline def _setStereoscopicAnaglyphRigMode(camera: typings.babylonjs.cameraMod.Camera): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_setStereoscopicAnaglyphRigMode")(camera.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** @hidden */
-  @JSImport("babylonjs/Legacy/legacy", "Camera._setStereoscopicRigMode")
-  @js.native
-  def _setStereoscopicRigMode(camera: typings.babylonjs.cameraMod.Camera): Unit = js.native
+  inline def _setStereoscopicRigMode(camera: typings.babylonjs.cameraMod.Camera): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_setStereoscopicRigMode")(camera.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** @hidden */
-  @JSImport("babylonjs/Legacy/legacy", "Camera._setVRRigMode")
-  @js.native
-  def _setVRRigMode(camera: typings.babylonjs.cameraMod.Camera, rigParams: js.Any): Unit = js.native
+  inline def _setVRRigMode(camera: typings.babylonjs.cameraMod.Camera, rigParams: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_setVRRigMode")(camera.asInstanceOf[js.Any], rigParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** @hidden */
-  @JSImport("babylonjs/Legacy/legacy", "Camera._setWebVRRigMode")
-  @js.native
-  def _setWebVRRigMode(camera: typings.babylonjs.cameraMod.Camera, rigParams: js.Any): Unit = js.native
+  inline def _setWebVRRigMode(camera: typings.babylonjs.cameraMod.Camera, rigParams: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_setWebVRRigMode")(camera.asInstanceOf[js.Any], rigParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

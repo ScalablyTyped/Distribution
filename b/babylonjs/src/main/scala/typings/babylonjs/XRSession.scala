@@ -6,7 +6,6 @@ import typings.std.DOMHighResTimeStamp
 import typings.std.EventListenerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // This file contains native only extensions for WebXR  These APIs are not supported in the browser yet.

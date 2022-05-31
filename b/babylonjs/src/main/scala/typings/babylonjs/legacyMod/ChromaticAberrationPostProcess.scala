@@ -4,7 +4,6 @@ import typings.babylonjs.postProcessMod.PostProcessOptions
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "ChromaticAberrationPostProcess")
@@ -40,15 +39,19 @@ class ChromaticAberrationPostProcess protected ()
 /* static members */
 object ChromaticAberrationPostProcess {
   
-  /** @hidden */
-  @JSImport("babylonjs/Legacy/legacy", "ChromaticAberrationPostProcess._Parse")
+  @JSImport("babylonjs/Legacy/legacy", "ChromaticAberrationPostProcess")
   @js.native
-  def _Parse(
+  val ^ : js.Any = js.native
+  
+  /** @hidden */
+  inline def _Parse(
     parsedPostProcess: js.Any,
     targetCamera: typings.babylonjs.cameraMod.Camera,
     scene: typings.babylonjs.sceneMod.Scene,
     rootUrl: String
   ): Nullable[
     typings.babylonjs.chromaticAberrationPostProcessMod.ChromaticAberrationPostProcess
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[
+    typings.babylonjs.chromaticAberrationPostProcessMod.ChromaticAberrationPostProcess
+  ]]
 }

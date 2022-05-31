@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.EffectLayer")
 @js.native
 abstract class EffectLayer protected ()
-  extends typings.babylonjs.BABYLON.EffectLayer {
+  extends StObject
+     with typings.babylonjs.BABYLON.EffectLayer {
   /**
     * Instantiates a new effect Layer and references it in the scene.
     * @param name The name of the layer
@@ -23,6 +23,10 @@ abstract class EffectLayer protected ()
 /* static members */
 object EffectLayer {
   
+  @JSGlobal("BABYLON.EffectLayer")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates an effect layer from parsed effect layer data
     * @param parsedEffectLayer defines effect layer data
@@ -30,12 +34,8 @@ object EffectLayer {
     * @param rootUrl defines the root URL containing the effect layer information
     * @returns a parsed effect Layer
     */
-  @JSGlobal("BABYLON.EffectLayer.Parse")
-  @js.native
-  def Parse(parsedEffectLayer: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.EffectLayer = js.native
+  inline def Parse(parsedEffectLayer: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.EffectLayer = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedEffectLayer.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.EffectLayer]
   
   /** @hidden */
-  @JSGlobal("BABYLON.EffectLayer._SceneComponentInitialization")
-  @js.native
-  def _SceneComponentInitialization(scene: typings.babylonjs.BABYLON.Scene): Unit = js.native
+  inline def _SceneComponentInitialization(scene: typings.babylonjs.BABYLON.Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -1,0 +1,27 @@
+package typings.railsActivestorage
+
+import typings.railsActivestorage.mod.DirectUploadDelegate
+import typings.std.File
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object global {
+  
+  object ActiveStorage {
+    
+    @JSGlobal("ActiveStorage")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSGlobal("ActiveStorage.DirectUpload")
+    @js.native
+    class DirectUpload protected ()
+      extends typings.railsActivestorage.mod.DirectUpload {
+      def this(file: File, url: String) = this()
+      def this(file: File, url: String, delegate: DirectUploadDelegate) = this()
+    }
+    
+    inline def start(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[Unit]
+  }
+}

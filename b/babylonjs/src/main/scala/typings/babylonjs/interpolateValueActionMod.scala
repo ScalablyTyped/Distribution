@@ -5,7 +5,6 @@ import typings.babylonjs.conditionMod.Condition
 import typings.babylonjs.observableMod.Observable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interpolateValueActionMod {
@@ -31,14 +30,6 @@ object interpolateValueActionMod {
       target: js.Any,
       propertyPath: String,
       value: js.Any,
-      duration: js.UndefOr[scala.Nothing],
-      condition: Condition
-    ) = this()
-    def this(
-      triggerOptions: js.Any,
-      target: js.Any,
-      propertyPath: String,
-      value: js.Any,
       duration: Double,
       condition: Condition
     ) = this()
@@ -47,18 +38,8 @@ object interpolateValueActionMod {
       target: js.Any,
       propertyPath: String,
       value: js.Any,
-      duration: js.UndefOr[scala.Nothing],
-      condition: js.UndefOr[scala.Nothing],
-      stopOtherAnimations: Boolean
-    ) = this()
-    def this(
-      triggerOptions: js.Any,
-      target: js.Any,
-      propertyPath: String,
-      value: js.Any,
-      duration: js.UndefOr[scala.Nothing],
-      condition: Condition,
-      stopOtherAnimations: Boolean
+      duration: Unit,
+      condition: Condition
     ) = this()
     def this(
       triggerOptions: js.Any,
@@ -66,7 +47,7 @@ object interpolateValueActionMod {
       propertyPath: String,
       value: js.Any,
       duration: Double,
-      condition: js.UndefOr[scala.Nothing],
+      condition: Unit,
       stopOtherAnimations: Boolean
     ) = this()
     def this(
@@ -83,38 +64,26 @@ object interpolateValueActionMod {
       target: js.Any,
       propertyPath: String,
       value: js.Any,
-      duration: js.UndefOr[scala.Nothing],
-      condition: js.UndefOr[scala.Nothing],
-      stopOtherAnimations: js.UndefOr[scala.Nothing],
-      onInterpolationDone: js.Function0[Unit]
+      duration: Unit,
+      condition: Unit,
+      stopOtherAnimations: Boolean
     ) = this()
     def this(
       triggerOptions: js.Any,
       target: js.Any,
       propertyPath: String,
       value: js.Any,
-      duration: js.UndefOr[scala.Nothing],
-      condition: js.UndefOr[scala.Nothing],
-      stopOtherAnimations: Boolean,
-      onInterpolationDone: js.Function0[Unit]
-    ) = this()
-    def this(
-      triggerOptions: js.Any,
-      target: js.Any,
-      propertyPath: String,
-      value: js.Any,
-      duration: js.UndefOr[scala.Nothing],
+      duration: Unit,
       condition: Condition,
-      stopOtherAnimations: js.UndefOr[scala.Nothing],
-      onInterpolationDone: js.Function0[Unit]
+      stopOtherAnimations: Boolean
     ) = this()
     def this(
       triggerOptions: js.Any,
       target: js.Any,
       propertyPath: String,
       value: js.Any,
-      duration: js.UndefOr[scala.Nothing],
-      condition: Condition,
+      duration: Double,
+      condition: Unit,
       stopOtherAnimations: Boolean,
       onInterpolationDone: js.Function0[Unit]
     ) = this()
@@ -124,28 +93,8 @@ object interpolateValueActionMod {
       propertyPath: String,
       value: js.Any,
       duration: Double,
-      condition: js.UndefOr[scala.Nothing],
-      stopOtherAnimations: js.UndefOr[scala.Nothing],
-      onInterpolationDone: js.Function0[Unit]
-    ) = this()
-    def this(
-      triggerOptions: js.Any,
-      target: js.Any,
-      propertyPath: String,
-      value: js.Any,
-      duration: Double,
-      condition: js.UndefOr[scala.Nothing],
-      stopOtherAnimations: Boolean,
-      onInterpolationDone: js.Function0[Unit]
-    ) = this()
-    def this(
-      triggerOptions: js.Any,
-      target: js.Any,
-      propertyPath: String,
-      value: js.Any,
-      duration: Double,
-      condition: Condition,
-      stopOtherAnimations: js.UndefOr[scala.Nothing],
+      condition: Unit,
+      stopOtherAnimations: Unit,
       onInterpolationDone: js.Function0[Unit]
     ) = this()
     def this(
@@ -156,14 +105,64 @@ object interpolateValueActionMod {
       duration: Double,
       condition: Condition,
       stopOtherAnimations: Boolean,
+      onInterpolationDone: js.Function0[Unit]
+    ) = this()
+    def this(
+      triggerOptions: js.Any,
+      target: js.Any,
+      propertyPath: String,
+      value: js.Any,
+      duration: Double,
+      condition: Condition,
+      stopOtherAnimations: Unit,
+      onInterpolationDone: js.Function0[Unit]
+    ) = this()
+    def this(
+      triggerOptions: js.Any,
+      target: js.Any,
+      propertyPath: String,
+      value: js.Any,
+      duration: Unit,
+      condition: Unit,
+      stopOtherAnimations: Boolean,
+      onInterpolationDone: js.Function0[Unit]
+    ) = this()
+    def this(
+      triggerOptions: js.Any,
+      target: js.Any,
+      propertyPath: String,
+      value: js.Any,
+      duration: Unit,
+      condition: Unit,
+      stopOtherAnimations: Unit,
+      onInterpolationDone: js.Function0[Unit]
+    ) = this()
+    def this(
+      triggerOptions: js.Any,
+      target: js.Any,
+      propertyPath: String,
+      value: js.Any,
+      duration: Unit,
+      condition: Condition,
+      stopOtherAnimations: Boolean,
+      onInterpolationDone: js.Function0[Unit]
+    ) = this()
+    def this(
+      triggerOptions: js.Any,
+      target: js.Any,
+      propertyPath: String,
+      value: js.Any,
+      duration: Unit,
+      condition: Condition,
+      stopOtherAnimations: Unit,
       onInterpolationDone: js.Function0[Unit]
     ) = this()
     
-    var _effectiveTarget: js.Any = js.native
+    /* private */ var _effectiveTarget: js.Any = js.native
     
-    var _property: js.Any = js.native
+    /* private */ var _property: js.Any = js.native
     
-    var _target: js.Any = js.native
+    /* private */ var _target: js.Any = js.native
     
     /**
       * Defines the time it will take for the property to interpolate to the value.

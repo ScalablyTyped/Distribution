@@ -15,26 +15,25 @@ import typings.luminoDisposable.mod.IDisposable
 import typings.luminoSignaling.mod.ISignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contentsMod {
   
   object Contents {
     
+    @JSImport("@jupyterlab/services/lib/contents", "Contents")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Validates an ICheckpointModel, thowing an error if it does not pass.
       */
-    @JSImport("@jupyterlab/services/lib/contents", "Contents.validateCheckpointModel")
-    @js.native
-    def validateCheckpointModel(checkpoint: ICheckpointModel): Unit = js.native
+    inline def validateCheckpointModel(checkpoint: ICheckpointModel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateCheckpointModel")(checkpoint.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Validates an IModel, thowing an error if it does not pass.
       */
-    @JSImport("@jupyterlab/services/lib/contents", "Contents.validateContentsModel")
-    @js.native
-    def validateContentsModel(contents: IModel): Unit = js.native
+    inline def validateContentsModel(contents: IModel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateContentsModel")(contents.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * A contents file type.
@@ -47,14 +46,11 @@ object contentsMod {
     trait ContentType extends StObject
     object ContentType {
       
-      @scala.inline
-      def directory: typings.jupyterlabServices.jupyterlabServicesStrings.directory = "directory".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.directory]
+      inline def directory: typings.jupyterlabServices.jupyterlabServicesStrings.directory = "directory".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.directory]
       
-      @scala.inline
-      def file: typings.jupyterlabServices.jupyterlabServicesStrings.file = "file".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.file]
+      inline def file: typings.jupyterlabServices.jupyterlabServicesStrings.file = "file".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.file]
       
-      @scala.inline
-      def notebook: typings.jupyterlabServices.jupyterlabServicesStrings.notebook = "notebook".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.notebook]
+      inline def notebook: typings.jupyterlabServices.jupyterlabServicesStrings.notebook = "notebook".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.notebook]
     }
     
     /**
@@ -68,105 +64,88 @@ object contentsMod {
     trait FileFormat extends StObject
     object FileFormat {
       
-      @scala.inline
-      def base64: typings.jupyterlabServices.jupyterlabServicesStrings.base64 = "base64".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.base64]
+      inline def base64: typings.jupyterlabServices.jupyterlabServicesStrings.base64 = "base64".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.base64]
       
-      @scala.inline
-      def json: typings.jupyterlabServices.jupyterlabServicesStrings.json = "json".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.json]
+      inline def json: typings.jupyterlabServices.jupyterlabServicesStrings.json = "json".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.json]
       
-      @scala.inline
-      def text: typings.jupyterlabServices.jupyterlabServicesStrings.text = "text".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.text]
+      inline def text: typings.jupyterlabServices.jupyterlabServicesStrings.text = "text".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.text]
     }
     
     /**
       * The change args for a file change.
       */
-    @js.native
     trait IChangedArgs extends StObject {
       
       /**
         * The old contents.
         */
-      var newValue: PartialIModel | Null = js.native
+      var newValue: PartialIModel | Null
       
       /**
         * The new contents.
         */
-      var oldValue: PartialIModel | Null = js.native
+      var oldValue: PartialIModel | Null
       
       /**
         * The type of change.
         */
-      var `type`: `new` | delete | rename | save = js.native
+      var `type`: `new` | delete | rename | save
     }
     object IChangedArgs {
       
-      @scala.inline
-      def apply(`type`: `new` | delete | rename | save): IChangedArgs = {
-        val __obj = js.Dynamic.literal()
+      inline def apply(`type`: `new` | delete | rename | save): IChangedArgs = {
+        val __obj = js.Dynamic.literal(newValue = null, oldValue = null)
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[IChangedArgs]
       }
       
-      @scala.inline
-      implicit class IChangedArgsMutableBuilder[Self <: IChangedArgs] (val x: Self) extends AnyVal {
+      extension [Self <: IChangedArgs](x: Self) {
         
-        @scala.inline
-        def setNewValue(value: PartialIModel): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+        inline def setNewValue(value: PartialIModel): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNewValueNull: Self = StObject.set(x, "newValue", null)
+        inline def setNewValueNull: Self = StObject.set(x, "newValue", null)
         
-        @scala.inline
-        def setOldValue(value: PartialIModel): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+        inline def setOldValue(value: PartialIModel): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOldValueNull: Self = StObject.set(x, "oldValue", null)
+        inline def setOldValueNull: Self = StObject.set(x, "oldValue", null)
         
-        @scala.inline
-        def setType(value: `new` | delete | rename | save): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: `new` | delete | rename | save): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
     /**
       * Checkpoint model.
       */
-    @js.native
     trait ICheckpointModel extends StObject {
       
       /**
         * The unique identifier for the checkpoint.
         */
-      val id: String = js.native
+      val id: String
       
       /**
         * Last modified timestamp.
         */
-      val last_modified: String = js.native
+      val last_modified: String
     }
     object ICheckpointModel {
       
-      @scala.inline
-      def apply(id: String, last_modified: String): ICheckpointModel = {
+      inline def apply(id: String, last_modified: String): ICheckpointModel = {
         val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], last_modified = last_modified.asInstanceOf[js.Any])
         __obj.asInstanceOf[ICheckpointModel]
       }
       
-      @scala.inline
-      implicit class ICheckpointModelMutableBuilder[Self <: ICheckpointModel] (val x: Self) extends AnyVal {
+      extension [Self <: ICheckpointModel](x: Self) {
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLast_modified(value: String): Self = StObject.set(x, "last_modified", value.asInstanceOf[js.Any])
+        inline def setLast_modified(value: String): Self = StObject.set(x, "last_modified", value.asInstanceOf[js.Any])
       }
     }
     
     /**
       * The options used to create a file.
       */
-    @js.native
     trait ICreateOptions extends StObject {
       
       /**
@@ -175,46 +154,38 @@ object contentsMod {
         * #### Notes
         * This ignored if `type` is `'notebook'`.
         */
-      var ext: js.UndefOr[String] = js.native
+      var ext: js.UndefOr[String] = js.undefined
       
       /**
         * The directory in which to create the file.
         */
-      var path: js.UndefOr[String] = js.native
+      var path: js.UndefOr[String] = js.undefined
       
       /**
         * The file type.
         */
-      var `type`: js.UndefOr[ContentType] = js.native
+      var `type`: js.UndefOr[ContentType] = js.undefined
     }
     object ICreateOptions {
       
-      @scala.inline
-      def apply(): ICreateOptions = {
+      inline def apply(): ICreateOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ICreateOptions]
       }
       
-      @scala.inline
-      implicit class ICreateOptionsMutableBuilder[Self <: ICreateOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ICreateOptions](x: Self) {
         
-        @scala.inline
-        def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+        inline def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
+        inline def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
         
-        @scala.inline
-        def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+        inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
         
-        @scala.inline
-        def setType(value: ContentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: ContentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
     
@@ -223,7 +194,9 @@ object contentsMod {
       * in the contents manager.
       */
     @js.native
-    trait IDrive extends IDisposable {
+    trait IDrive
+      extends StObject
+         with IDisposable {
       
       /**
         * Copy a file into a given directory.
@@ -373,7 +346,6 @@ object contentsMod {
     /**
       * The options used to fetch a file.
       */
-    @js.native
     trait IFetchOptions extends StObject {
       
       /**
@@ -381,46 +353,38 @@ object contentsMod {
         *
         * The default is `true`.
         */
-      var content: js.UndefOr[Boolean] = js.native
+      var content: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The override file format for the request.
         */
-      var format: js.UndefOr[FileFormat] = js.native
+      var format: js.UndefOr[FileFormat] = js.undefined
       
       /**
         * The override file type for the request.
         */
-      var `type`: js.UndefOr[ContentType] = js.native
+      var `type`: js.UndefOr[ContentType] = js.undefined
     }
     object IFetchOptions {
       
-      @scala.inline
-      def apply(): IFetchOptions = {
+      inline def apply(): IFetchOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IFetchOptions]
       }
       
-      @scala.inline
-      implicit class IFetchOptionsMutableBuilder[Self <: IFetchOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IFetchOptions](x: Self) {
         
-        @scala.inline
-        def setContent(value: Boolean): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+        inline def setContent(value: Boolean): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+        inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
         
-        @scala.inline
-        def setFormat(value: FileFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+        inline def setFormat(value: FileFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+        inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
         
-        @scala.inline
-        def setType(value: ContentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: ContentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
     
@@ -428,7 +392,9 @@ object contentsMod {
       * The interface for a contents manager.
       */
     @js.native
-    trait IManager extends IDisposable {
+    trait IManager
+      extends StObject
+         with IDisposable {
       
       /**
         * Add an `IDrive` to the manager.
@@ -623,23 +589,22 @@ object contentsMod {
     /**
       * A contents model.
       */
-    @js.native
     trait IModel extends StObject {
       
       /**
         * The chunk of the file upload.
         */
-      val chunk: js.UndefOr[Double] = js.native
+      val chunk: js.UndefOr[Double] = js.undefined
       
       /**
         * The optional file content.
         */
-      val content: js.Any = js.native
+      val content: js.Any
       
       /**
         * File creation timestamp.
         */
-      val created: String = js.native
+      val created: String
       
       /**
         * The format of the file `content`.
@@ -647,12 +612,12 @@ object contentsMod {
         * #### Notes
         * Only relevant for type: 'file'
         */
-      val format: FileFormat = js.native
+      val format: FileFormat
       
       /**
         * Last modified timestamp.
         */
-      val last_modified: String = js.native
+      val last_modified: String
       
       /**
         * Specify the mime-type of file contents.
@@ -660,7 +625,7 @@ object contentsMod {
         * #### Notes
         * Only non-`null` when `content` is present and `type` is `"file"`.
         */
-      val mimetype: String = js.native
+      val mimetype: String
       
       /**
         * Name of the contents file.
@@ -668,7 +633,7 @@ object contentsMod {
         * #### Notes
         *  Equivalent to the last part of the `path` field.
         */
-      val name: String = js.native
+      val name: String
       
       /**
         * The full file path.
@@ -676,27 +641,26 @@ object contentsMod {
         * #### Notes
         * It will *not* start with `/`, and it will be `/`-delimited.
         */
-      val path: String = js.native
+      val path: String
       
       /**
         * The size of then file in bytes.
         */
-      val size: js.UndefOr[Double] = js.native
+      val size: js.UndefOr[Double] = js.undefined
       
       /**
         * The type of file.
         */
-      val `type`: ContentType = js.native
+      val `type`: ContentType
       
       /**
         * Whether the requester has permission to edit the file.
         */
-      val writable: Boolean = js.native
+      val writable: Boolean
     }
     object IModel {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         content: js.Any,
         created: String,
         format: FileFormat,
@@ -712,47 +676,33 @@ object contentsMod {
         __obj.asInstanceOf[IModel]
       }
       
-      @scala.inline
-      implicit class IModelMutableBuilder[Self <: IModel] (val x: Self) extends AnyVal {
+      extension [Self <: IModel](x: Self) {
         
-        @scala.inline
-        def setChunk(value: Double): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
+        inline def setChunk(value: Double): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChunkUndefined: Self = StObject.set(x, "chunk", js.undefined)
+        inline def setChunkUndefined: Self = StObject.set(x, "chunk", js.undefined)
         
-        @scala.inline
-        def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+        inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+        inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFormat(value: FileFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+        inline def setFormat(value: FileFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLast_modified(value: String): Self = StObject.set(x, "last_modified", value.asInstanceOf[js.Any])
+        inline def setLast_modified(value: String): Self = StObject.set(x, "last_modified", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMimetype(value: String): Self = StObject.set(x, "mimetype", value.asInstanceOf[js.Any])
+        inline def setMimetype(value: String): Self = StObject.set(x, "mimetype", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+        inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+        inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
         
-        @scala.inline
-        def setType(value: ContentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: ContentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
+        inline def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -764,12 +714,14 @@ object contentsMod {
     *
     * @param options - The options used to initialize the object.
     */
-  class ContentsManager () extends IManager {
+  class ContentsManager ()
+    extends StObject
+       with IManager {
     def this(options: IOptions) = this()
     
-    var _additionalDrives: js.Any = js.native
+    /* private */ var _additionalDrives: js.Any = js.native
     
-    var _defaultDrive: js.Any = js.native
+    /* private */ var _defaultDrive: js.Any = js.native
     
     /**
       * Given a path, get the `IDrive to which it refers,
@@ -782,18 +734,18 @@ object contentsMod {
       * @returns A tuple containing an `IDrive` object for the path,
       * and a local path for that drive.
       */
-    var _driveForPath: js.Any = js.native
+    /* private */ var _driveForPath: js.Any = js.native
     
-    var _fileChanged: js.Any = js.native
+    /* private */ var _fileChanged: js.Any = js.native
     
-    var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: js.Any = js.native
     
     /**
       * Respond to fileChanged signals from the drives attached to
       * the manager. This prepends the drive name to the path if necessary,
       * and then forwards the signal.
       */
-    var _onFileChanged: js.Any = js.native
+    /* private */ var _onFileChanged: js.Any = js.native
     
     /**
       * Given a drive and a local path, construct a fully qualified
@@ -805,7 +757,21 @@ object contentsMod {
       *
       * @returns the fully qualified path.
       */
-    var _toGlobalPath: js.Any = js.native
+    /* private */ var _toGlobalPath: js.Any = js.native
+    
+    /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * A signal emitted when a file operation takes place.
@@ -813,6 +779,14 @@ object contentsMod {
     @JSName("fileChanged")
     def fileChanged_MContentsManager: ISignal[this.type, IChangedArgs] = js.native
     
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
     /**
       * Test whether the manager has been disposed.
       */
@@ -824,41 +798,34 @@ object contentsMod {
     /**
       * The options used to initialize a contents manager.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The default drive backend for the contents manager.
         */
-      var defaultDrive: js.UndefOr[IDrive] = js.native
+      var defaultDrive: js.UndefOr[IDrive] = js.undefined
       
       /**
         * The server settings associated with the manager.
         */
-      var serverSettings: js.UndefOr[ISettings] = js.native
+      var serverSettings: js.UndefOr[ISettings] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): IOptions = {
+      inline def apply(): IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setDefaultDrive(value: IDrive): Self = StObject.set(x, "defaultDrive", value.asInstanceOf[js.Any])
+        inline def setDefaultDrive(value: IDrive): Self = StObject.set(x, "defaultDrive", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaultDriveUndefined: Self = StObject.set(x, "defaultDrive", js.undefined)
+        inline def setDefaultDriveUndefined: Self = StObject.set(x, "defaultDrive", js.undefined)
         
-        @scala.inline
-        def setServerSettings(value: ISettings): Self = StObject.set(x, "serverSettings", value.asInstanceOf[js.Any])
+        inline def setServerSettings(value: ISettings): Self = StObject.set(x, "serverSettings", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServerSettingsUndefined: Self = StObject.set(x, "serverSettings", js.undefined)
+        inline def setServerSettingsUndefined: Self = StObject.set(x, "serverSettings", js.undefined)
       }
     }
   }
@@ -870,19 +837,35 @@ object contentsMod {
     *
     * @param options - The options used to initialize the object.
     */
-  class Drive () extends IDrive {
+  class Drive ()
+    extends StObject
+       with IDrive {
     def this(options: typings.jupyterlabServices.contentsMod.Drive.IOptions) = this()
     
-    var _apiEndpoint: js.Any = js.native
+    /* private */ var _apiEndpoint: js.Any = js.native
     
-    var _fileChanged: js.Any = js.native
+    /* private */ var _fileChanged: js.Any = js.native
     
     /**
       * Get a REST url for a file given a path.
       */
-    var _getUrl: js.Any = js.native
+    /* private */ var _getUrl: js.Any = js.native
     
-    var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: js.Any = js.native
+    
+    /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * A signal emitted when a file operation takes place.
@@ -890,6 +873,14 @@ object contentsMod {
     @JSName("fileChanged")
     def fileChanged_MDrive: ISignal[this.type, IChangedArgs] = js.native
     
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
     /**
       * Test whether the manager has been disposed.
       */
@@ -901,7 +892,6 @@ object contentsMod {
     /**
       * The options used to initialize a `Drive`.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
@@ -909,47 +899,39 @@ object contentsMod {
         * If not given, defaults to the Jupyter
         * REST API given by [Jupyter Notebook API](http://petstore.swagger.io/?url=https://raw.githubusercontent.com/jupyter/notebook/master/notebook/services/api/api.yaml#!/contents).
         */
-      var apiEndpoint: js.UndefOr[String] = js.native
+      var apiEndpoint: js.UndefOr[String] = js.undefined
       
       /**
         * The name for the `Drive`, which is used in file
         * paths to disambiguate it from other drives.
         */
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
       /**
         * The server settings for the server.
         */
-      var serverSettings: js.UndefOr[ISettings] = js.native
+      var serverSettings: js.UndefOr[ISettings] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): typings.jupyterlabServices.contentsMod.Drive.IOptions = {
+      inline def apply(): typings.jupyterlabServices.contentsMod.Drive.IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.jupyterlabServices.contentsMod.Drive.IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: typings.jupyterlabServices.contentsMod.Drive.IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.jupyterlabServices.contentsMod.Drive.IOptions](x: Self) {
         
-        @scala.inline
-        def setApiEndpoint(value: String): Self = StObject.set(x, "apiEndpoint", value.asInstanceOf[js.Any])
+        inline def setApiEndpoint(value: String): Self = StObject.set(x, "apiEndpoint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setApiEndpointUndefined: Self = StObject.set(x, "apiEndpoint", js.undefined)
+        inline def setApiEndpointUndefined: Self = StObject.set(x, "apiEndpoint", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setServerSettings(value: ISettings): Self = StObject.set(x, "serverSettings", value.asInstanceOf[js.Any])
+        inline def setServerSettings(value: ISettings): Self = StObject.set(x, "serverSettings", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServerSettingsUndefined: Self = StObject.set(x, "serverSettings", js.undefined)
+        inline def setServerSettingsUndefined: Self = StObject.set(x, "serverSettings", js.undefined)
       }
     }
   }

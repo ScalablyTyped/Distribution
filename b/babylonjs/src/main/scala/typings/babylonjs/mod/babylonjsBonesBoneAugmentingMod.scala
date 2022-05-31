@@ -3,13 +3,11 @@ package typings.babylonjs.mod
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object babylonjsBonesBoneAugmentingMod {
   
-  @js.native
   trait Bone extends StObject {
     
     /**
@@ -27,23 +25,20 @@ object babylonjsBonesBoneAugmentingMod {
       frameOffset: Double,
       rescaleAsRequired: Boolean,
       skelDimensionsRatio: Nullable[typings.babylonjs.mathVectorMod.Vector3]
-    ): Boolean = js.native
+    ): Boolean
   }
   object Bone {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       copyAnimationRange: (typings.babylonjs.animatableMod.babylonjsBonesBoneAugmentingMod.Bone, String, Double, Boolean, Nullable[typings.babylonjs.mathVectorMod.Vector3]) => Boolean
     ): typings.babylonjs.mod.babylonjsBonesBoneAugmentingMod.Bone = {
       val __obj = js.Dynamic.literal(copyAnimationRange = js.Any.fromFunction5(copyAnimationRange))
       __obj.asInstanceOf[typings.babylonjs.mod.babylonjsBonesBoneAugmentingMod.Bone]
     }
     
-    @scala.inline
-    implicit class BoneMutableBuilder[Self <: typings.babylonjs.mod.babylonjsBonesBoneAugmentingMod.Bone] (val x: Self) extends AnyVal {
+    extension [Self <: typings.babylonjs.mod.babylonjsBonesBoneAugmentingMod.Bone](x: Self) {
       
-      @scala.inline
-      def setCopyAnimationRange(
+      inline def setCopyAnimationRange(
         value: (typings.babylonjs.animatableMod.babylonjsBonesBoneAugmentingMod.Bone, String, Double, Boolean, Nullable[typings.babylonjs.mathVectorMod.Vector3]) => Boolean
       ): Self = StObject.set(x, "copyAnimationRange", js.Any.fromFunction5(value))
     }

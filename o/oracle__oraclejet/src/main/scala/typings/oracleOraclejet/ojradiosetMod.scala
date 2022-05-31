@@ -53,14 +53,14 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ojradiosetMod {
   
   @js.native
   trait ojRadioset[K, D]
-    extends editableValue[js.Any, ojRadiosetSettableProperties[K, D], js.Any, js.Any] {
+    extends StObject
+       with editableValue[js.Any, ojRadiosetSettableProperties[K, D], js.Any, js.Any] {
     
     def addEventListener(
       `type`: valueChanged,
@@ -69,7 +69,7 @@ object ojradiosetMod {
           /* ev */ JetElementCustomEvent[
             /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojradioset.ojRadioset<K, D>['value'] */ js.Any
           ], 
-          _
+          js.Any
         ]
     ): Unit = js.native
     def addEventListener(
@@ -79,19 +79,19 @@ object ojradiosetMod {
           /* ev */ JetElementCustomEvent[
             /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojradioset.ojRadioset<K, D>['value'] */ js.Any
           ], 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_labelledByChanged(
       `type`: labelledByChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_labelledByChanged(
       `type`: labelledByChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
@@ -100,7 +100,7 @@ object ojradiosetMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[js.UndefOr[(js.Function1[/* param0 */ OptionContext[D], Element]) | Null]], 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -109,7 +109,7 @@ object ojradiosetMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[js.UndefOr[(js.Function1[/* param0 */ OptionContext[D], Element]) | Null]], 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -119,7 +119,7 @@ object ojradiosetMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[(DataProvider[K, D]) | Null], 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -128,30 +128,38 @@ object ojradiosetMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[(DataProvider[K, D]) | Null], 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_optionsKeysChanged(
       `type`: optionsKeysChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.UndefOr[OptionsKeys]], _]
+      listener: js.ThisFunction1[
+          /* this */ HTMLElement, 
+          /* ev */ JetElementCustomEvent[js.UndefOr[OptionsKeys]], 
+          js.Any
+        ]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_optionsKeysChanged(
       `type`: optionsKeysChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.UndefOr[OptionsKeys]], _],
+      listener: js.ThisFunction1[
+          /* this */ HTMLElement, 
+          /* ev */ JetElementCustomEvent[js.UndefOr[OptionsKeys]], 
+          js.Any
+        ],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_requiredChanged(
       `type`: requiredChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_requiredChanged(
       `type`: requiredChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     
@@ -168,24 +176,24 @@ object ojradiosetMod {
     
     var labelledBy: String | Null = js.native
     
-    var onLabelledByChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
+    var onLabelledByChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], js.Any]) | Null = js.native
     
     @JSName("onOjAnimateEnd")
-    var onOjAnimateEnd_ojRadioset: (js.Function1[/* event */ ojAnimateEnd, _]) | Null = js.native
+    var onOjAnimateEnd_ojRadioset: (js.Function1[/* event */ ojAnimateEnd, js.Any]) | Null = js.native
     
     @JSName("onOjAnimateStart")
-    var onOjAnimateStart_ojRadioset: (js.Function1[/* event */ ojAnimateStart, _]) | Null = js.native
+    var onOjAnimateStart_ojRadioset: (js.Function1[/* event */ ojAnimateStart, js.Any]) | Null = js.native
     
     var onOptionRendererChanged: (js.Function1[
         /* event */ JetElementCustomEvent[js.UndefOr[(js.Function1[/* param0 */ OptionContext[D], Element]) | Null]], 
-        _
+        js.Any
       ]) | Null = js.native
     
-    var onOptionsChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K, D]) | Null], _]) | Null = js.native
+    var onOptionsChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K, D]) | Null], js.Any]) | Null = js.native
     
-    var onOptionsKeysChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[OptionsKeys]], _]) | Null = js.native
+    var onOptionsKeysChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[OptionsKeys]], js.Any]) | Null = js.native
     
-    var onRequiredChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
+    var onRequiredChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], js.Any]) | Null = js.native
     
     var optionRenderer: js.UndefOr[(js.Function1[/* param0 */ OptionContext[D], Element]) | Null] = js.native
     
@@ -226,105 +234,84 @@ object ojradiosetMod {
   object ojRadioset {
     
     // tslint:disable-next-line interface-over-type-literal
-    @js.native
     trait Option extends StObject {
       
-      var disabled: js.UndefOr[Boolean] = js.native
+      var disabled: js.UndefOr[Boolean] = js.undefined
       
-      var label: js.UndefOr[String] = js.native
+      var label: js.UndefOr[String] = js.undefined
       
-      var value: js.Any = js.native
+      var value: js.Any
     }
     object Option {
       
-      @scala.inline
-      def apply(value: js.Any): Option = {
+      inline def apply(value: js.Any): Option = {
         val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
         __obj.asInstanceOf[Option]
       }
       
-      @scala.inline
-      implicit class OptionMutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
+      extension [Self <: Option](x: Self) {
         
-        @scala.inline
-        def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+        inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+        inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
         
-        @scala.inline
-        def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+        inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
         
-        @scala.inline
-        def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       }
     }
     
     // tslint:disable-next-line interface-over-type-literal
-    @js.native
     trait OptionContext[D] extends StObject {
       
-      var component: Element = js.native
+      var component: Element
       
-      var data: D = js.native
+      var data: D
       
-      var index: Double = js.native
+      var index: Double
     }
     object OptionContext {
       
-      @scala.inline
-      def apply[D](component: Element, data: D, index: Double): OptionContext[D] = {
+      inline def apply[D](component: Element, data: D, index: Double): OptionContext[D] = {
         val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
         __obj.asInstanceOf[OptionContext[D]]
       }
       
-      @scala.inline
-      implicit class OptionContextMutableBuilder[Self <: OptionContext[_], D] (val x: Self with OptionContext[D]) extends AnyVal {
+      extension [Self <: OptionContext[?], D](x: Self & OptionContext[D]) {
         
-        @scala.inline
-        def setComponent(value: Element): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+        inline def setComponent(value: Element): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+        inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       }
     }
     
     // tslint:disable-next-line interface-over-type-literal
-    @js.native
     trait OptionsKeys extends StObject {
       
-      var label: js.UndefOr[String] = js.native
+      var label: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object OptionsKeys {
       
-      @scala.inline
-      def apply(): OptionsKeys = {
+      inline def apply(): OptionsKeys = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[OptionsKeys]
       }
       
-      @scala.inline
-      implicit class OptionsKeysMutableBuilder[Self <: OptionsKeys] (val x: Self) extends AnyVal {
+      extension [Self <: OptionsKeys](x: Self) {
         
-        @scala.inline
-        def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+        inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
         
-        @scala.inline
-        def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+        inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       }
     }
     
@@ -333,30 +320,29 @@ object ojradiosetMod {
     type ojAnimateStart = CustomEvent[typings.oracleOraclejet.anon.Element]
   }
   
-  @js.native
   trait ojRadiosetEventMap[K, D]
-    extends editableValueEventMap[js.Any, ojRadiosetSettableProperties[K, D], js.Any, js.Any] {
+    extends StObject
+       with editableValueEventMap[js.Any, ojRadiosetSettableProperties[K, D], js.Any, js.Any] {
     
-    var labelledByChanged: JetElementCustomEvent[String | Null] = js.native
+    var labelledByChanged: JetElementCustomEvent[String | Null]
     
     @JSName("ojAnimateEnd")
-    var ojAnimateEnd_ojRadiosetEventMap: ojAnimateEnd = js.native
+    var ojAnimateEnd_ojRadiosetEventMap: ojAnimateEnd
     
     @JSName("ojAnimateStart")
-    var ojAnimateStart_ojRadiosetEventMap: ojAnimateStart = js.native
+    var ojAnimateStart_ojRadiosetEventMap: ojAnimateStart
     
-    var optionRendererChanged: JetElementCustomEvent[js.UndefOr[(js.Function1[/* param0 */ OptionContext[D], Element]) | Null]] = js.native
+    var optionRendererChanged: JetElementCustomEvent[js.UndefOr[(js.Function1[/* param0 */ OptionContext[D], Element]) | Null]]
     
-    var optionsChanged: JetElementCustomEvent[(DataProvider[K, D]) | Null] = js.native
+    var optionsChanged: JetElementCustomEvent[(DataProvider[K, D]) | Null]
     
-    var optionsKeysChanged: JetElementCustomEvent[js.UndefOr[OptionsKeys]] = js.native
+    var optionsKeysChanged: JetElementCustomEvent[js.UndefOr[OptionsKeys]]
     
-    var requiredChanged: JetElementCustomEvent[Boolean] = js.native
+    var requiredChanged: JetElementCustomEvent[Boolean]
   }
   object ojRadiosetEventMap {
     
-    @scala.inline
-    def apply[K, D](
+    inline def apply[K, D](
       abort: UIEvent,
       animationcancel: AnimationEvent,
       animationend: AnimationEvent,
@@ -471,55 +457,46 @@ object ojradiosetMod {
       __obj.asInstanceOf[ojRadiosetEventMap[K, D]]
     }
     
-    @scala.inline
-    implicit class ojRadiosetEventMapMutableBuilder[Self <: ojRadiosetEventMap[_, _], K, D] (val x: Self with (ojRadiosetEventMap[K, D])) extends AnyVal {
+    extension [Self <: ojRadiosetEventMap[?, ?], K, D](x: Self & (ojRadiosetEventMap[K, D])) {
       
-      @scala.inline
-      def setLabelledByChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "labelledByChanged", value.asInstanceOf[js.Any])
+      inline def setLabelledByChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "labelledByChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
+      inline def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjAnimateStart(value: ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
+      inline def setOjAnimateStart(value: ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionRendererChanged(
+      inline def setOptionRendererChanged(
         value: JetElementCustomEvent[js.UndefOr[(js.Function1[/* param0 */ OptionContext[D], Element]) | Null]]
       ): Self = StObject.set(x, "optionRendererChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsChanged(value: JetElementCustomEvent[(DataProvider[K, D]) | Null]): Self = StObject.set(x, "optionsChanged", value.asInstanceOf[js.Any])
+      inline def setOptionsChanged(value: JetElementCustomEvent[(DataProvider[K, D]) | Null]): Self = StObject.set(x, "optionsChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsKeysChanged(value: JetElementCustomEvent[js.UndefOr[OptionsKeys]]): Self = StObject.set(x, "optionsKeysChanged", value.asInstanceOf[js.Any])
+      inline def setOptionsKeysChanged(value: JetElementCustomEvent[js.UndefOr[OptionsKeys]]): Self = StObject.set(x, "optionsKeysChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "requiredChanged", value.asInstanceOf[js.Any])
+      inline def setRequiredChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "requiredChanged", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait ojRadiosetSettableProperties[K, D]
-    extends editableValueSettableProperties[js.Any, js.Any, js.Any] {
+    extends StObject
+       with editableValueSettableProperties[js.Any, js.Any, js.Any] {
     
-    var labelledBy: String | Null = js.native
+    var labelledBy: String | Null
     
-    var optionRenderer: js.UndefOr[(js.Function1[/* param0 */ OptionContext[D], Element]) | Null] = js.native
+    var optionRenderer: js.UndefOr[(js.Function1[/* param0 */ OptionContext[D], Element]) | Null] = js.undefined
     
-    var options: (DataProvider[K, D]) | Null = js.native
+    var options: (DataProvider[K, D]) | Null
     
-    var optionsKeys: js.UndefOr[OptionsKeys] = js.native
+    var optionsKeys: js.UndefOr[OptionsKeys] = js.undefined
     
-    var required: Boolean = js.native
+    var required: Boolean
     
     @JSName("translations")
-    var translations_ojRadiosetSettableProperties: Required = js.native
+    var translations_ojRadiosetSettableProperties: Required
   }
   object ojRadiosetSettableProperties {
     
-    @scala.inline
-    def apply[K, D](
+    inline def apply[K, D](
       disabled: Boolean,
       displayOptions: ConverterHint,
       help: Instruction,
@@ -531,200 +508,151 @@ object ojradiosetMod {
       valid: valid | pending | invalidHidden | invalidShown,
       value: js.Any
     ): ojRadiosetSettableProperties[K, D] = {
-      val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], describedBy = null, labelledBy = null, options = null)
       __obj.asInstanceOf[ojRadiosetSettableProperties[K, D]]
     }
     
-    @scala.inline
-    implicit class ojRadiosetSettablePropertiesMutableBuilder[Self <: ojRadiosetSettableProperties[_, _], K, D] (val x: Self with (ojRadiosetSettableProperties[K, D])) extends AnyVal {
+    extension [Self <: ojRadiosetSettableProperties[?, ?], K, D](x: Self & (ojRadiosetSettableProperties[K, D])) {
       
-      @scala.inline
-      def setLabelledBy(value: String): Self = StObject.set(x, "labelledBy", value.asInstanceOf[js.Any])
+      inline def setLabelledBy(value: String): Self = StObject.set(x, "labelledBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelledByNull: Self = StObject.set(x, "labelledBy", null)
+      inline def setLabelledByNull: Self = StObject.set(x, "labelledBy", null)
       
-      @scala.inline
-      def setOptionRenderer(value: /* param0 */ OptionContext[D] => Element): Self = StObject.set(x, "optionRenderer", js.Any.fromFunction1(value))
+      inline def setOptionRenderer(value: /* param0 */ OptionContext[D] => Element): Self = StObject.set(x, "optionRenderer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOptionRendererNull: Self = StObject.set(x, "optionRenderer", null)
+      inline def setOptionRendererNull: Self = StObject.set(x, "optionRenderer", null)
       
-      @scala.inline
-      def setOptionRendererUndefined: Self = StObject.set(x, "optionRenderer", js.undefined)
+      inline def setOptionRendererUndefined: Self = StObject.set(x, "optionRenderer", js.undefined)
       
-      @scala.inline
-      def setOptions(value: DataProvider[K, D]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: DataProvider[K, D]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsKeys(value: OptionsKeys): Self = StObject.set(x, "optionsKeys", value.asInstanceOf[js.Any])
+      inline def setOptionsKeys(value: OptionsKeys): Self = StObject.set(x, "optionsKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsKeysUndefined: Self = StObject.set(x, "optionsKeys", js.undefined)
+      inline def setOptionsKeysUndefined: Self = StObject.set(x, "optionsKeys", js.undefined)
       
-      @scala.inline
-      def setOptionsNull: Self = StObject.set(x, "options", null)
+      inline def setOptionsNull: Self = StObject.set(x, "options", null)
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslations(value: Required): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: Required): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojradioset.ojRadiosetSettableProperties<K, D>> */
-  @js.native
   trait ojRadiosetSettablePropertiesLenient[K, D]
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var describedBy: js.UndefOr[String | Null] = js.native
+    var describedBy: js.UndefOr[String | Null] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var displayOptions: js.UndefOr[ConverterHint] = js.native
+    var displayOptions: js.UndefOr[ConverterHint] = js.undefined
     
-    var help: js.UndefOr[Instruction] = js.native
+    var help: js.UndefOr[Instruction] = js.undefined
     
-    var helpHints: js.UndefOr[Definition] = js.native
+    var helpHints: js.UndefOr[Definition] = js.undefined
     
-    var labelHint: js.UndefOr[String] = js.native
+    var labelHint: js.UndefOr[String] = js.undefined
     
-    var labelledBy: js.UndefOr[String | Null] = js.native
+    var labelledBy: js.UndefOr[String | Null] = js.undefined
     
-    var messagesCustom: js.UndefOr[js.Array[^]] = js.native
+    var messagesCustom: js.UndefOr[js.Array[^]] = js.undefined
     
-    var optionRenderer: js.UndefOr[(js.Function1[/* param0 */ OptionContext[D], Element]) | Null] = js.native
+    var optionRenderer: js.UndefOr[(js.Function1[/* param0 */ OptionContext[D], Element]) | Null] = js.undefined
     
-    var options: js.UndefOr[(DataProvider[K, D]) | Null] = js.native
+    var options: js.UndefOr[(DataProvider[K, D]) | Null] = js.undefined
     
-    var optionsKeys: js.UndefOr[OptionsKeys] = js.native
+    var optionsKeys: js.UndefOr[OptionsKeys] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
-    var translations: js.UndefOr[Required] = js.native
+    var translations: js.UndefOr[Required] = js.undefined
     
     var valid: js.UndefOr[
         typings.oracleOraclejet.oracleOraclejetStrings.valid | pending | invalidHidden | invalidShown
-      ] = js.native
+      ] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object ojRadiosetSettablePropertiesLenient {
     
-    @scala.inline
-    def apply[K, D](): ojRadiosetSettablePropertiesLenient[K, D] = {
+    inline def apply[K, D](): ojRadiosetSettablePropertiesLenient[K, D] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ojRadiosetSettablePropertiesLenient[K, D]]
     }
     
-    @scala.inline
-    implicit class ojRadiosetSettablePropertiesLenientMutableBuilder[Self <: ojRadiosetSettablePropertiesLenient[_, _], K, D] (val x: Self with (ojRadiosetSettablePropertiesLenient[K, D])) extends AnyVal {
+    extension [Self <: ojRadiosetSettablePropertiesLenient[?, ?], K, D](x: Self & (ojRadiosetSettablePropertiesLenient[K, D])) {
       
-      @scala.inline
-      def setDescribedBy(value: String): Self = StObject.set(x, "describedBy", value.asInstanceOf[js.Any])
+      inline def setDescribedBy(value: String): Self = StObject.set(x, "describedBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescribedByNull: Self = StObject.set(x, "describedBy", null)
+      inline def setDescribedByNull: Self = StObject.set(x, "describedBy", null)
       
-      @scala.inline
-      def setDescribedByUndefined: Self = StObject.set(x, "describedBy", js.undefined)
+      inline def setDescribedByUndefined: Self = StObject.set(x, "describedBy", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setDisplayOptions(value: ConverterHint): Self = StObject.set(x, "displayOptions", value.asInstanceOf[js.Any])
+      inline def setDisplayOptions(value: ConverterHint): Self = StObject.set(x, "displayOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayOptionsUndefined: Self = StObject.set(x, "displayOptions", js.undefined)
+      inline def setDisplayOptionsUndefined: Self = StObject.set(x, "displayOptions", js.undefined)
       
-      @scala.inline
-      def setHelp(value: Instruction): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+      inline def setHelp(value: Instruction): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelpHints(value: Definition): Self = StObject.set(x, "helpHints", value.asInstanceOf[js.Any])
+      inline def setHelpHints(value: Definition): Self = StObject.set(x, "helpHints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelpHintsUndefined: Self = StObject.set(x, "helpHints", js.undefined)
+      inline def setHelpHintsUndefined: Self = StObject.set(x, "helpHints", js.undefined)
       
-      @scala.inline
-      def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
+      inline def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
       
-      @scala.inline
-      def setLabelHint(value: String): Self = StObject.set(x, "labelHint", value.asInstanceOf[js.Any])
+      inline def setLabelHint(value: String): Self = StObject.set(x, "labelHint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelHintUndefined: Self = StObject.set(x, "labelHint", js.undefined)
+      inline def setLabelHintUndefined: Self = StObject.set(x, "labelHint", js.undefined)
       
-      @scala.inline
-      def setLabelledBy(value: String): Self = StObject.set(x, "labelledBy", value.asInstanceOf[js.Any])
+      inline def setLabelledBy(value: String): Self = StObject.set(x, "labelledBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelledByNull: Self = StObject.set(x, "labelledBy", null)
+      inline def setLabelledByNull: Self = StObject.set(x, "labelledBy", null)
       
-      @scala.inline
-      def setLabelledByUndefined: Self = StObject.set(x, "labelledBy", js.undefined)
+      inline def setLabelledByUndefined: Self = StObject.set(x, "labelledBy", js.undefined)
       
-      @scala.inline
-      def setMessagesCustom(value: js.Array[^]): Self = StObject.set(x, "messagesCustom", value.asInstanceOf[js.Any])
+      inline def setMessagesCustom(value: js.Array[^]): Self = StObject.set(x, "messagesCustom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagesCustomUndefined: Self = StObject.set(x, "messagesCustom", js.undefined)
+      inline def setMessagesCustomUndefined: Self = StObject.set(x, "messagesCustom", js.undefined)
       
-      @scala.inline
-      def setMessagesCustomVarargs(value: ^ *): Self = StObject.set(x, "messagesCustom", js.Array(value :_*))
+      inline def setMessagesCustomVarargs(value: ^ *): Self = StObject.set(x, "messagesCustom", js.Array(value :_*))
       
-      @scala.inline
-      def setOptionRenderer(value: /* param0 */ OptionContext[D] => Element): Self = StObject.set(x, "optionRenderer", js.Any.fromFunction1(value))
+      inline def setOptionRenderer(value: /* param0 */ OptionContext[D] => Element): Self = StObject.set(x, "optionRenderer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOptionRendererNull: Self = StObject.set(x, "optionRenderer", null)
+      inline def setOptionRendererNull: Self = StObject.set(x, "optionRenderer", null)
       
-      @scala.inline
-      def setOptionRendererUndefined: Self = StObject.set(x, "optionRenderer", js.undefined)
+      inline def setOptionRendererUndefined: Self = StObject.set(x, "optionRenderer", js.undefined)
       
-      @scala.inline
-      def setOptions(value: DataProvider[K, D]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: DataProvider[K, D]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsKeys(value: OptionsKeys): Self = StObject.set(x, "optionsKeys", value.asInstanceOf[js.Any])
+      inline def setOptionsKeys(value: OptionsKeys): Self = StObject.set(x, "optionsKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsKeysUndefined: Self = StObject.set(x, "optionsKeys", js.undefined)
+      inline def setOptionsKeysUndefined: Self = StObject.set(x, "optionsKeys", js.undefined)
       
-      @scala.inline
-      def setOptionsNull: Self = StObject.set(x, "options", null)
+      inline def setOptionsNull: Self = StObject.set(x, "options", null)
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
-      @scala.inline
-      def setTranslations(value: Required): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: Required): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+      inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
       
-      @scala.inline
-      def setValid(value: valid | pending | invalidHidden | invalidShown): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: valid | pending | invalidHidden | invalidShown): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
+      inline def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

@@ -52,16 +52,4 @@ object BitmapText {
     */
   /* static member */
   inline def registerFont(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerFont")().asInstanceOf[Unit]
-  
-  /**
-    * Get the list of installed fonts.
-    *
-    * @see PIXI.BitmapFont.available
-    * @deprecated since 5.3.0
-    * @static
-    * @readonly
-    * @member {Object.<string, PIXI.BitmapFont>}
-    */
-  /* static member */
-  object fonts
 }

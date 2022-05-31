@@ -6,7 +6,6 @@ import typings.jupyterlabConsole.widgetMod.CodeConsole.IOptions
 import typings.luminoCoreutils.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -34,10 +33,6 @@ object mod {
       extends typings.jupyterlabConsole.widgetMod.CodeConsole.ContentFactory {
       def this(options: typings.jupyterlabCells.widgetMod.Cell.ContentFactory.IOptions) = this()
     }
-    /**
-      * A namespace for the code console content factory.
-      */
-    object ContentFactory
     
     /**
       * The default implementation of an `IModelFactory`.
@@ -100,10 +95,6 @@ object mod {
       extends typings.jupyterlabConsole.panelMod.ConsolePanel.ContentFactory {
       def this(options: typings.jupyterlabCells.widgetMod.Cell.ContentFactory.IOptions) = this()
     }
-    /**
-      * A namespace for the console panel content factory.
-      */
-    object ContentFactory
     
     /**
       * The console renderer token.

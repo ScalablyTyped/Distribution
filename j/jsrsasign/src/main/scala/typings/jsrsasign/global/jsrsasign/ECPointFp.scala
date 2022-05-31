@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("jsrsasign.ECPointFp")
 @js.native
 class ECPointFp protected ()
-  extends StObject
-     with typings.jsrsasign.jsrsasign.ECPointFp {
+  extends typings.jsrsasign.mod.ECPointFp {
   def this(
     curve: typings.jsrsasign.jsrsasign.ECFieldElementFp,
     x: typings.jsrsasign.jsrsasign.ECFieldElementFp,
@@ -20,19 +19,4 @@ class ECPointFp protected ()
     y: typings.jsrsasign.jsrsasign.ECFieldElementFp,
     z: typings.jsrsasign.jsrsasign.BigInteger
   ) = this()
-  
-  /* CompleteClass */
-  var curve: typings.jsrsasign.jsrsasign.ECFieldElementFp = js.native
-  
-  /* CompleteClass */
-  var x: typings.jsrsasign.jsrsasign.ECFieldElementFp = js.native
-  
-  /* CompleteClass */
-  var y: typings.jsrsasign.jsrsasign.ECFieldElementFp = js.native
-  
-  /* CompleteClass */
-  var z: typings.jsrsasign.jsrsasign.BigInteger = js.native
-  
-  /* CompleteClass */
-  var zinv: typings.jsrsasign.jsrsasign.BigInteger | Null = js.native
 }

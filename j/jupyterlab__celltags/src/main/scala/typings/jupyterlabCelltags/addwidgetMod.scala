@@ -5,7 +5,6 @@ import typings.luminoWidgets.mod.Widget
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object addwidgetMod {
@@ -20,33 +19,33 @@ object addwidgetMod {
     /**
       * Handle the `'focusout'` event for the input box.
       */
-    var _evtBlur: js.Any = js.native
+    /* private */ var _evtBlur: js.Any = js.native
     
     /**
       * Handle the `'focus'` event for the input box.
       */
-    var _evtFocus: js.Any = js.native
+    /* private */ var _evtFocus: js.Any = js.native
     
     /**
       * Handle the `'keydown'` event for the input box.
       *
       * @param event - The DOM event sent to the widget
       */
-    var _evtKeyDown: js.Any = js.native
+    /* private */ var _evtKeyDown: js.Any = js.native
     
     /**
       * Handle the `'mousedown'` event for the input box.
       *
       * @param event - The DOM event sent to the widget
       */
-    var _evtMouseDown: js.Any = js.native
+    /* private */ var _evtMouseDown: js.Any = js.native
     
     /**
       * Create input box with icon and attach to this.node.
       */
     def buildTag(): Unit = js.native
     
-    var editing: js.Any = js.native
+    /* private */ var editing: js.Any = js.native
     
     /**
       * Handle the DOM events for the widget.
@@ -60,7 +59,7 @@ object addwidgetMod {
       */
     def handleEvent(event: Event): Unit = js.native
     
-    var input: js.Any = js.native
+    /* private */ var input: js.Any = js.native
     
     /**
       * Handle `after-attach` messages for the widget.

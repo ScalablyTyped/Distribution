@@ -4,76 +4,57 @@ import typings.oracleOraclejet.ojarraydataproviderMod.SortComparators
 import typings.oracleOraclejet.ojdataproviderMod.SortCriterion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdAttribute[D] extends StObject {
   
-  var idAttribute: js.UndefOr[String | js.Array[String]] = js.native
+  var idAttribute: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var implicitSort: js.UndefOr[js.Array[SortCriterion[D]]] = js.native
+  var implicitSort: js.UndefOr[js.Array[SortCriterion[D]]] = js.undefined
   
-  var keyAttributes: js.UndefOr[String | js.Array[String]] = js.native
+  var keyAttributes: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var keys: js.UndefOr[js.Array[_] | js.Function0[js.Array[_]]] = js.native
+  var keys: js.UndefOr[js.Array[js.Any] | js.Function0[js.Array[js.Any]]] = js.undefined
   
-  var sortComparators: js.UndefOr[SortComparators[D]] = js.native
+  var sortComparators: js.UndefOr[SortComparators[D]] = js.undefined
 }
 object IdAttribute {
   
-  @scala.inline
-  def apply[D](): IdAttribute[D] = {
+  inline def apply[D](): IdAttribute[D] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IdAttribute[D]]
   }
   
-  @scala.inline
-  implicit class IdAttributeMutableBuilder[Self <: IdAttribute[_], D] (val x: Self with IdAttribute[D]) extends AnyVal {
+  extension [Self <: IdAttribute[?], D](x: Self & IdAttribute[D]) {
     
-    @scala.inline
-    def setIdAttribute(value: String | js.Array[String]): Self = StObject.set(x, "idAttribute", value.asInstanceOf[js.Any])
+    inline def setIdAttribute(value: String | js.Array[String]): Self = StObject.set(x, "idAttribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdAttributeUndefined: Self = StObject.set(x, "idAttribute", js.undefined)
+    inline def setIdAttributeUndefined: Self = StObject.set(x, "idAttribute", js.undefined)
     
-    @scala.inline
-    def setIdAttributeVarargs(value: String*): Self = StObject.set(x, "idAttribute", js.Array(value :_*))
+    inline def setIdAttributeVarargs(value: String*): Self = StObject.set(x, "idAttribute", js.Array(value :_*))
     
-    @scala.inline
-    def setImplicitSort(value: js.Array[SortCriterion[D]]): Self = StObject.set(x, "implicitSort", value.asInstanceOf[js.Any])
+    inline def setImplicitSort(value: js.Array[SortCriterion[D]]): Self = StObject.set(x, "implicitSort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImplicitSortUndefined: Self = StObject.set(x, "implicitSort", js.undefined)
+    inline def setImplicitSortUndefined: Self = StObject.set(x, "implicitSort", js.undefined)
     
-    @scala.inline
-    def setImplicitSortVarargs(value: SortCriterion[D]*): Self = StObject.set(x, "implicitSort", js.Array(value :_*))
+    inline def setImplicitSortVarargs(value: SortCriterion[D]*): Self = StObject.set(x, "implicitSort", js.Array(value :_*))
     
-    @scala.inline
-    def setKeyAttributes(value: String | js.Array[String]): Self = StObject.set(x, "keyAttributes", value.asInstanceOf[js.Any])
+    inline def setKeyAttributes(value: String | js.Array[String]): Self = StObject.set(x, "keyAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyAttributesUndefined: Self = StObject.set(x, "keyAttributes", js.undefined)
+    inline def setKeyAttributesUndefined: Self = StObject.set(x, "keyAttributes", js.undefined)
     
-    @scala.inline
-    def setKeyAttributesVarargs(value: String*): Self = StObject.set(x, "keyAttributes", js.Array(value :_*))
+    inline def setKeyAttributesVarargs(value: String*): Self = StObject.set(x, "keyAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setKeys(value: js.Array[_] | js.Function0[js.Array[_]]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: js.Array[js.Any] | js.Function0[js.Array[js.Any]]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysFunction0(value: () => js.Array[_]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
+    inline def setKeysFunction0(value: () => js.Array[js.Any]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+    inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    @scala.inline
-    def setKeysVarargs(value: js.Any*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: js.Any*): Self = StObject.set(x, "keys", js.Array(value :_*))
     
-    @scala.inline
-    def setSortComparators(value: SortComparators[D]): Self = StObject.set(x, "sortComparators", value.asInstanceOf[js.Any])
+    inline def setSortComparators(value: SortComparators[D]): Self = StObject.set(x, "sortComparators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortComparatorsUndefined: Self = StObject.set(x, "sortComparators", js.undefined)
+    inline def setSortComparatorsUndefined: Self = StObject.set(x, "sortComparators", js.undefined)
   }
 }

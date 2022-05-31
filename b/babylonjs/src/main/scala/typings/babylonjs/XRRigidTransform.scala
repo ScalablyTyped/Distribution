@@ -4,24 +4,21 @@ import typings.std.DOMPointReadOnly
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XRRigidTransform extends StObject {
   
-  var inverse: XRRigidTransform = js.native
+  var inverse: XRRigidTransform
   
-  var matrix: Float32Array = js.native
+  var matrix: Float32Array
   
-  var orientation: DOMPointReadOnly = js.native
+  var orientation: DOMPointReadOnly
   
-  var position: DOMPointReadOnly = js.native
+  var position: DOMPointReadOnly
 }
 object XRRigidTransform {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     inverse: XRRigidTransform,
     matrix: Float32Array,
     orientation: DOMPointReadOnly,
@@ -31,19 +28,14 @@ object XRRigidTransform {
     __obj.asInstanceOf[XRRigidTransform]
   }
   
-  @scala.inline
-  implicit class XRRigidTransformMutableBuilder[Self <: XRRigidTransform] (val x: Self) extends AnyVal {
+  extension [Self <: XRRigidTransform](x: Self) {
     
-    @scala.inline
-    def setInverse(value: XRRigidTransform): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
+    inline def setInverse(value: XRRigidTransform): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatrix(value: Float32Array): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
+    inline def setMatrix(value: Float32Array): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientation(value: DOMPointReadOnly): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: DOMPointReadOnly): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: DOMPointReadOnly): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: DOMPointReadOnly): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

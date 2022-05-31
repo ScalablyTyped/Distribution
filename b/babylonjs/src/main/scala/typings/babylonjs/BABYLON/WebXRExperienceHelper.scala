@@ -5,21 +5,22 @@ import typings.babylonjs.XRSessionInit
 import typings.babylonjs.XRSessionMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebXRExperienceHelper extends IDisposable {
+trait WebXRExperienceHelper
+  extends StObject
+     with IDisposable {
   
-  var _nonVRCamera: js.Any = js.native
+  /* private */ var _nonVRCamera: js.Any = js.native
   
-  var _nonXRToXRCamera: js.Any = js.native
+  /* private */ var _nonXRToXRCamera: js.Any = js.native
   
-  var _originalSceneAutoClear: js.Any = js.native
+  /* private */ var _originalSceneAutoClear: js.Any = js.native
   
-  var _setState: js.Any = js.native
+  /* private */ var _setState: js.Any = js.native
   
-  var _supported: js.Any = js.native
+  /* private */ var _supported: js.Any = js.native
   
   /**
     * Camera used to render xr content
@@ -38,7 +39,7 @@ trait WebXRExperienceHelper extends IDisposable {
   def enterXRAsync(
     sessionMode: XRSessionMode,
     referenceSpaceType: XRReferenceSpaceType,
-    renderTarget: js.UndefOr[scala.Nothing],
+    renderTarget: Unit,
     sessionCreationOptions: XRSessionInit
   ): js.Promise[WebXRSessionManager] = js.native
   def enterXRAsync(
@@ -76,7 +77,7 @@ trait WebXRExperienceHelper extends IDisposable {
     */
   var onStateChangedObservable: Observable[WebXRState] = js.native
   
-  var scene: js.Any = js.native
+  /* private */ var scene: js.Any = js.native
   
   /** Session manager used to keep track of xr session */
   var sessionManager: WebXRSessionManager = js.native

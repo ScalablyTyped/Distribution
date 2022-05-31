@@ -2,37 +2,38 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeviceSourceManager extends IDisposable {
+trait DeviceSourceManager
+  extends StObject
+     with IDisposable {
   
   /**
     * Function to add device name to device list
     * @param deviceType Enum specifying device type
     * @param deviceSlot "Slot" or index that device is referenced in
     */
-  var _addDevice: js.Any = js.native
+  /* private */ var _addDevice: js.Any = js.native
   
-  val _deviceInputSystem: js.Any = js.native
+  /* private */ val _deviceInputSystem: js.Any = js.native
   
-  val _devices: js.Any = js.native
+  /* private */ val _devices: js.Any = js.native
   
-  val _firstDevice: js.Any = js.native
+  /* private */ val _firstDevice: js.Any = js.native
   
   /**
     * Function to remove device name to device list
     * @param deviceType Enum specifying device type
     * @param deviceSlot "Slot" or index that device is referenced in
     */
-  var _removeDevice: js.Any = js.native
+  /* private */ var _removeDevice: js.Any = js.native
   
   /**
     * Updates array storing first connected device of each type
     * @param type Type of Device
     */
-  var _updateFirstDevices: js.Any = js.native
+  /* private */ var _updateFirstDevices: js.Any = js.native
   
   /**
     * Gets a DeviceSource, given a type and slot

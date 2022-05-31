@@ -1,5 +1,6 @@
 package typings.awsSdkClientS3Node.mod
 
+import typings.awsSdkClientS3Node.typesListPartsInputMod.ListPartsInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class ListPartsCommand protected ()
   extends typings.awsSdkClientS3Node.listPartsCommandMod.ListPartsCommand {
-  def this(input: typings.awsSdkClientS3Node.typesListPartsInputMod.ListPartsInput) = this()
+  def this(input: ListPartsInput) = this()
 }

@@ -2,18 +2,17 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GamepadSystemSceneComponent extends ISceneComponent {
+trait GamepadSystemSceneComponent
+  extends StObject
+     with ISceneComponent {
   
-  var _beforeCameraUpdate: js.Any = js.native
+  /* private */ var _beforeCameraUpdate: js.Any
 }
 object GamepadSystemSceneComponent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _beforeCameraUpdate: js.Any,
     dispose: () => Unit,
     name: String,
@@ -25,10 +24,8 @@ object GamepadSystemSceneComponent {
     __obj.asInstanceOf[GamepadSystemSceneComponent]
   }
   
-  @scala.inline
-  implicit class GamepadSystemSceneComponentMutableBuilder[Self <: GamepadSystemSceneComponent] (val x: Self) extends AnyVal {
+  extension [Self <: GamepadSystemSceneComponent](x: Self) {
     
-    @scala.inline
-    def set_beforeCameraUpdate(value: js.Any): Self = StObject.set(x, "_beforeCameraUpdate", value.asInstanceOf[js.Any])
+    inline def set_beforeCameraUpdate(value: js.Any): Self = StObject.set(x, "_beforeCameraUpdate", value.asInstanceOf[js.Any])
   }
 }

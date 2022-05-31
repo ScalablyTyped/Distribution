@@ -14,7 +14,6 @@ import typings.jupyterlabNotebook.widgetfactoryMod.NotebookWidgetFactory.IOption
 import typings.jupyterlabRendermime.tokensMod.IRenderMimeRegistry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object widgetfactoryMod {
@@ -29,11 +28,11 @@ object widgetfactoryMod {
       */
     def this(options: IOptions[NotebookPanel]) = this()
     
-    var _editorConfig: js.Any = js.native
+    /* private */ var _editorConfig: js.Any = js.native
     
-    var _notebookConfig: js.Any = js.native
+    /* private */ var _notebookConfig: js.Any = js.native
     
-    var _sessionDialogs: js.Any = js.native
+    /* private */ var _sessionDialogs: js.Any = js.native
     
     /**
       * The content factory used by the widget factory.
@@ -65,7 +64,9 @@ object widgetfactoryMod {
       * The interface for a notebook widget factory.
       */
     @js.native
-    trait IFactory extends IWidgetFactory[NotebookPanel, INotebookModel] {
+    trait IFactory
+      extends StObject
+         with IWidgetFactory[NotebookPanel, INotebookModel] {
       
       /**
         * A configuration object for cell editor settings.
@@ -87,40 +88,40 @@ object widgetfactoryMod {
     /**
       * The options used to construct a `NotebookWidgetFactory`.
       */
-    @js.native
-    trait IOptions[T /* <: NotebookPanel */] extends IWidgetFactoryOptions[T] {
+    trait IOptions[T /* <: NotebookPanel */]
+      extends StObject
+         with IWidgetFactoryOptions[T] {
       
       /**
         * A notebook panel content factory.
         */
-      var contentFactory: IContentFactory = js.native
+      var contentFactory: IContentFactory
       
       /**
         * The notebook cell editor configuration.
         */
-      var editorConfig: js.UndefOr[IEditorConfig] = js.native
+      var editorConfig: js.UndefOr[IEditorConfig] = js.undefined
       
       /**
         * The service used to look up mime types.
         */
-      var mimeTypeService: IEditorMimeTypeService = js.native
+      var mimeTypeService: IEditorMimeTypeService
       
       /**
         * The notebook configuration.
         */
-      var notebookConfig: js.UndefOr[INotebookConfig] = js.native
+      var notebookConfig: js.UndefOr[INotebookConfig] = js.undefined
       
-      var rendermime: IRenderMimeRegistry = js.native
+      var rendermime: IRenderMimeRegistry
       
       /**
         * The session context dialogs.
         */
-      var sessionDialogs: js.UndefOr[ISessionContextDialogs] = js.native
+      var sessionDialogs: js.UndefOr[ISessionContextDialogs] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply[T /* <: NotebookPanel */](
+      inline def apply[T /* <: NotebookPanel */](
         contentFactory: IContentFactory,
         fileTypes: js.Array[String],
         mimeTypeService: IEditorMimeTypeService,
@@ -131,35 +132,25 @@ object widgetfactoryMod {
         __obj.asInstanceOf[IOptions[T]]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions[_], T /* <: NotebookPanel */] (val x: Self with IOptions[T]) extends AnyVal {
+      extension [Self <: IOptions[?], T /* <: NotebookPanel */](x: Self & IOptions[T]) {
         
-        @scala.inline
-        def setContentFactory(value: IContentFactory): Self = StObject.set(x, "contentFactory", value.asInstanceOf[js.Any])
+        inline def setContentFactory(value: IContentFactory): Self = StObject.set(x, "contentFactory", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEditorConfig(value: IEditorConfig): Self = StObject.set(x, "editorConfig", value.asInstanceOf[js.Any])
+        inline def setEditorConfig(value: IEditorConfig): Self = StObject.set(x, "editorConfig", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEditorConfigUndefined: Self = StObject.set(x, "editorConfig", js.undefined)
+        inline def setEditorConfigUndefined: Self = StObject.set(x, "editorConfig", js.undefined)
         
-        @scala.inline
-        def setMimeTypeService(value: IEditorMimeTypeService): Self = StObject.set(x, "mimeTypeService", value.asInstanceOf[js.Any])
+        inline def setMimeTypeService(value: IEditorMimeTypeService): Self = StObject.set(x, "mimeTypeService", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNotebookConfig(value: INotebookConfig): Self = StObject.set(x, "notebookConfig", value.asInstanceOf[js.Any])
+        inline def setNotebookConfig(value: INotebookConfig): Self = StObject.set(x, "notebookConfig", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNotebookConfigUndefined: Self = StObject.set(x, "notebookConfig", js.undefined)
+        inline def setNotebookConfigUndefined: Self = StObject.set(x, "notebookConfig", js.undefined)
         
-        @scala.inline
-        def setRendermime(value: IRenderMimeRegistry): Self = StObject.set(x, "rendermime", value.asInstanceOf[js.Any])
+        inline def setRendermime(value: IRenderMimeRegistry): Self = StObject.set(x, "rendermime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSessionDialogs(value: ISessionContextDialogs): Self = StObject.set(x, "sessionDialogs", value.asInstanceOf[js.Any])
+        inline def setSessionDialogs(value: ISessionContextDialogs): Self = StObject.set(x, "sessionDialogs", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSessionDialogsUndefined: Self = StObject.set(x, "sessionDialogs", js.undefined)
+        inline def setSessionDialogsUndefined: Self = StObject.set(x, "sessionDialogs", js.undefined)
       }
     }
   }

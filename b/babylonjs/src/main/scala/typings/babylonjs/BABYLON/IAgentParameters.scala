@@ -2,51 +2,48 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAgentParameters extends StObject {
   
   /**
     * Defines how close a collision element must be before it is considered for steering behaviors. [Limits: > 0]
     */
-  var collisionQueryRange: Double = js.native
+  var collisionQueryRange: Double
   
   /**
     * Agent height. [Limit: > 0]
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     *  Maximum allowed acceleration. [Limit: >= 0]
     */
-  var maxAcceleration: Double = js.native
+  var maxAcceleration: Double
   
   /**
     * Maximum allowed speed. [Limit: >= 0]
     */
-  var maxSpeed: Double = js.native
+  var maxSpeed: Double
   
   /**
     * The path visibility optimization range. [Limit: > 0]
     */
-  var pathOptimizationRange: Double = js.native
+  var pathOptimizationRange: Double
   
   /**
     *  Agent radius. [Limit: >= 0]
     */
-  var radius: Double = js.native
+  var radius: Double
   
   /**
     * How aggresive the agent manager should be at avoiding collisions with this agent. [Limit: >= 0]
     */
-  var separationWeight: Double = js.native
+  var separationWeight: Double
 }
 object IAgentParameters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     collisionQueryRange: Double,
     height: Double,
     maxAcceleration: Double,
@@ -59,28 +56,20 @@ object IAgentParameters {
     __obj.asInstanceOf[IAgentParameters]
   }
   
-  @scala.inline
-  implicit class IAgentParametersMutableBuilder[Self <: IAgentParameters] (val x: Self) extends AnyVal {
+  extension [Self <: IAgentParameters](x: Self) {
     
-    @scala.inline
-    def setCollisionQueryRange(value: Double): Self = StObject.set(x, "collisionQueryRange", value.asInstanceOf[js.Any])
+    inline def setCollisionQueryRange(value: Double): Self = StObject.set(x, "collisionQueryRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAcceleration(value: Double): Self = StObject.set(x, "maxAcceleration", value.asInstanceOf[js.Any])
+    inline def setMaxAcceleration(value: Double): Self = StObject.set(x, "maxAcceleration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSpeed(value: Double): Self = StObject.set(x, "maxSpeed", value.asInstanceOf[js.Any])
+    inline def setMaxSpeed(value: Double): Self = StObject.set(x, "maxSpeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathOptimizationRange(value: Double): Self = StObject.set(x, "pathOptimizationRange", value.asInstanceOf[js.Any])
+    inline def setPathOptimizationRange(value: Double): Self = StObject.set(x, "pathOptimizationRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparationWeight(value: Double): Self = StObject.set(x, "separationWeight", value.asInstanceOf[js.Any])
+    inline def setSeparationWeight(value: Double): Self = StObject.set(x, "separationWeight", value.asInstanceOf[js.Any])
   }
 }

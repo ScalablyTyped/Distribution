@@ -10,7 +10,6 @@ import typings.babylonjs.postProcessMod.PostProcessOptions
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object depthOfFieldMergePostProcessMod {
@@ -46,7 +45,7 @@ object depthOfFieldMergePostProcessMod {
       blockCompilation: js.UndefOr[Boolean]
     ) = this()
     
-    var blurSteps: js.Any = js.native
+    /* private */ var blurSteps: js.Any = js.native
     
     /**
       * Updates the effect with the current post process compile time values and recompiles the shader.

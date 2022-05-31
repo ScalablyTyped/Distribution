@@ -17,7 +17,6 @@ import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.ISettings
 import typings.luminoCommands.mod.CommandRegistry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commandsMod {
@@ -103,437 +102,341 @@ object commandsMod {
   
   object Commands {
     
+    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Add the Auto Close Brackets for Text Editor command
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addAutoClosingBracketsCommand")
-    @js.native
-    def addAutoClosingBracketsCommand(commands: CommandRegistry, settingRegistry: ISettingRegistry, id: String): Unit = js.native
+    inline def addAutoClosingBracketsCommand(commands: CommandRegistry, settingRegistry: ISettingRegistry, id: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAutoClosingBracketsCommand")(commands.asInstanceOf[js.Any], settingRegistry.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Add a command to change font size for File Editor
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addChangeFontSizeCommand")
-    @js.native
-    def addChangeFontSizeCommand(commands: CommandRegistry, settingRegistry: ISettingRegistry, id: String): Unit = js.native
+    inline def addChangeFontSizeCommand(commands: CommandRegistry, settingRegistry: ISettingRegistry, id: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addChangeFontSizeCommand")(commands.asInstanceOf[js.Any], settingRegistry.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Add commands to change the font size to the File Editor palette
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addChangeFontSizeCommandsToPalette")
-    @js.native
-    def addChangeFontSizeCommandsToPalette(palette: ICommandPalette): Unit = js.native
+    inline def addChangeFontSizeCommandsToPalette(palette: ICommandPalette): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addChangeFontSizeCommandsToPalette")(palette.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Add command for changing tabs size or type in File Editor
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addChangeTabsCommand")
-    @js.native
-    def addChangeTabsCommand(commands: CommandRegistry, settingRegistry: ISettingRegistry, id: String): Unit = js.native
+    inline def addChangeTabsCommand(commands: CommandRegistry, settingRegistry: ISettingRegistry, id: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addChangeTabsCommand")(commands.asInstanceOf[js.Any], settingRegistry.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Add commands to change the tab indentation to the File Editor palette
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addChangeTabsCommandsToPalette")
-    @js.native
-    def addChangeTabsCommandsToPalette(palette: ICommandPalette): Unit = js.native
+    inline def addChangeTabsCommandsToPalette(palette: ICommandPalette): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addChangeTabsCommandsToPalette")(palette.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Add a File Editor code runner to the Run menu
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addCodeRunnersToRunMenu")
-    @js.native
-    def addCodeRunnersToRunMenu(
+    inline def addCodeRunnersToRunMenu(
       menu: IMainMenu,
       commands: CommandRegistry,
       tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]],
       consoleTracker: IConsoleTracker
-    ): Unit = js.native
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addCodeRunnersToRunMenu")
-    @js.native
-    def addCodeRunnersToRunMenu(
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCodeRunnersToRunMenu")(menu.asInstanceOf[js.Any], commands.asInstanceOf[js.Any], tracker.asInstanceOf[js.Any], consoleTracker.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addCodeRunnersToRunMenu(
       menu: IMainMenu,
       commands: CommandRegistry,
       tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]],
       consoleTracker: IConsoleTracker,
       sessionDialogs: ISessionContextDialogs
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCodeRunnersToRunMenu")(menu.asInstanceOf[js.Any], commands.asInstanceOf[js.Any], tracker.asInstanceOf[js.Any], consoleTracker.asInstanceOf[js.Any], sessionDialogs.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Wrapper function for adding the default File Editor commands
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addCommands")
-    @js.native
-    def addCommands(
+    inline def addCommands(
       commands: CommandRegistry,
       settingRegistry: ISettingRegistry,
       id: String,
       isEnabled: js.Function0[Boolean],
       tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]],
       browserFactory: IFileBrowserFactory
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCommands")(commands.asInstanceOf[js.Any], settingRegistry.asInstanceOf[js.Any], id.asInstanceOf[js.Any], isEnabled.asInstanceOf[js.Any], tracker.asInstanceOf[js.Any], browserFactory.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Add a File Editor console creator to the File menu
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addConsoleCreatorToFileMenu")
-    @js.native
-    def addConsoleCreatorToFileMenu(
+    inline def addConsoleCreatorToFileMenu(
       menu: IMainMenu,
       commands: CommandRegistry,
       tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addConsoleCreatorToFileMenu")(menu.asInstanceOf[js.Any], commands.asInstanceOf[js.Any], tracker.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Wrapper function for adding the default items to the File Editor context menu
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addContextMenuItems")
-    @js.native
-    def addContextMenuItems(app: JupyterFrontEnd[IShell]): Unit = js.native
+    inline def addContextMenuItems(app: JupyterFrontEnd[IShell]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addContextMenuItems")(app.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Add copy command
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addCopyCommand")
-    @js.native
-    def addCopyCommand(
+    inline def addCopyCommand(
       commands: CommandRegistry,
       tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]],
       isEnabled: js.Function0[Boolean]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCopyCommand")(commands.asInstanceOf[js.Any], tracker.asInstanceOf[js.Any], isEnabled.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Add a Copy item to the File Editor context menu
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addCopyCommandToContextMenu")
-    @js.native
-    def addCopyCommandToContextMenu(app: JupyterFrontEnd[IShell]): Unit = js.native
+    inline def addCopyCommandToContextMenu(app: JupyterFrontEnd[IShell]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCopyCommandToContextMenu")(app.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Add the Create Console for Editor command
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addCreateConsoleCommand")
-    @js.native
-    def addCreateConsoleCommand(
+    inline def addCreateConsoleCommand(
       commands: CommandRegistry,
       tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]],
       isEnabled: js.Function0[Boolean]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCreateConsoleCommand")(commands.asInstanceOf[js.Any], tracker.asInstanceOf[js.Any], isEnabled.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Add a Create Console item to the File Editor context menu
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addCreateConsoleToContextMenu")
-    @js.native
-    def addCreateConsoleToContextMenu(app: JupyterFrontEnd[IShell]): Unit = js.native
+    inline def addCreateConsoleToContextMenu(app: JupyterFrontEnd[IShell]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCreateConsoleToContextMenu")(app.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Add the New File command
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addCreateNewCommand")
-    @js.native
-    def addCreateNewCommand(commands: CommandRegistry, browserFactory: IFileBrowserFactory): Unit = js.native
+    inline def addCreateNewCommand(commands: CommandRegistry, browserFactory: IFileBrowserFactory): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCreateNewCommand")(commands.asInstanceOf[js.Any], browserFactory.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Add a Create New File command to the File Editor palette
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addCreateNewCommandToPalette")
-    @js.native
-    def addCreateNewCommandToPalette(palette: ICommandPalette): Unit = js.native
+    inline def addCreateNewCommandToPalette(palette: ICommandPalette): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCreateNewCommandToPalette")(palette.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Add a Create New File command to the File menu
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addCreateNewFileToFileMenu")
-    @js.native
-    def addCreateNewFileToFileMenu(menu: IMainMenu): Unit = js.native
+    inline def addCreateNewFileToFileMenu(menu: IMainMenu): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCreateNewFileToFileMenu")(menu.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Add the New Markdown File command
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addCreateNewMarkdownCommand")
-    @js.native
-    def addCreateNewMarkdownCommand(commands: CommandRegistry, browserFactory: IFileBrowserFactory): Unit = js.native
+    inline def addCreateNewMarkdownCommand(commands: CommandRegistry, browserFactory: IFileBrowserFactory): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCreateNewMarkdownCommand")(commands.asInstanceOf[js.Any], browserFactory.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Add a Create New Markdown command to the File Editor palette
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addCreateNewMarkdownCommandToPalette")
-    @js.native
-    def addCreateNewMarkdownCommandToPalette(palette: ICommandPalette): Unit = js.native
+    inline def addCreateNewMarkdownCommandToPalette(palette: ICommandPalette): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCreateNewMarkdownCommandToPalette")(palette.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Add a Create New Markdown File command to the File menu
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addCreateNewMarkdownFileToFileMenu")
-    @js.native
-    def addCreateNewMarkdownFileToFileMenu(menu: IMainMenu): Unit = js.native
+    inline def addCreateNewMarkdownFileToFileMenu(menu: IMainMenu): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCreateNewMarkdownFileToFileMenu")(menu.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Add Create New Markdown to the Launcher
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addCreateNewMarkdownToLauncher")
-    @js.native
-    def addCreateNewMarkdownToLauncher(launcher: ILauncher): Unit = js.native
+    inline def addCreateNewMarkdownToLauncher(launcher: ILauncher): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCreateNewMarkdownToLauncher")(launcher.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Add Create New Text File to the Launcher
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addCreateNewToLauncher")
-    @js.native
-    def addCreateNewToLauncher(launcher: ILauncher): Unit = js.native
+    inline def addCreateNewToLauncher(launcher: ILauncher): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCreateNewToLauncher")(launcher.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Add cut command
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addCutCommand")
-    @js.native
-    def addCutCommand(
+    inline def addCutCommand(
       commands: CommandRegistry,
       tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]],
       isEnabled: js.Function0[Boolean]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCutCommand")(commands.asInstanceOf[js.Any], tracker.asInstanceOf[js.Any], isEnabled.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Add a Cut item to the File Editor context menu
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addCutCommandToContextMenu")
-    @js.native
-    def addCutCommandToContextMenu(app: JupyterFrontEnd[IShell]): Unit = js.native
+    inline def addCutCommandToContextMenu(app: JupyterFrontEnd[IShell]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCutCommandToContextMenu")(app.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Add File Editor editing commands to the Settings menu, including:
       * Indent with Tab, Tab Spaces, Change Font Size, and auto closing brackets
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addEditingCommandsToSettingsMenu")
-    @js.native
-    def addEditingCommandsToSettingsMenu(menu: IMainMenu, commands: CommandRegistry): Unit = js.native
+    inline def addEditingCommandsToSettingsMenu(menu: IMainMenu, commands: CommandRegistry): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEditingCommandsToSettingsMenu")(menu.asInstanceOf[js.Any], commands.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Add a File Editor editor viewer to the View Menu
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addEditorViewerToViewMenu")
-    @js.native
-    def addEditorViewerToViewMenu(menu: IMainMenu, tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]]): Unit = js.native
+    inline def addEditorViewerToViewMenu(menu: IMainMenu, tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEditorViewerToViewMenu")(menu.asInstanceOf[js.Any], tracker.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Wrapper function for adding the default launcher items for File Editor
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addLauncherItems")
-    @js.native
-    def addLauncherItems(launcher: ILauncher): Unit = js.native
+    inline def addLauncherItems(launcher: ILauncher): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addLauncherItems")(launcher.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Add the Line Numbers command
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addLineNumbersCommand")
-    @js.native
-    def addLineNumbersCommand(
+    inline def addLineNumbersCommand(
       commands: CommandRegistry,
       settingRegistry: ISettingRegistry,
       id: String,
       isEnabled: js.Function0[Boolean]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addLineNumbersCommand")(commands.asInstanceOf[js.Any], settingRegistry.asInstanceOf[js.Any], id.asInstanceOf[js.Any], isEnabled.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Add markdown preview command
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addMarkdownPreviewCommand")
-    @js.native
-    def addMarkdownPreviewCommand(commands: CommandRegistry, tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]]): Unit = js.native
+    inline def addMarkdownPreviewCommand(commands: CommandRegistry, tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addMarkdownPreviewCommand")(commands.asInstanceOf[js.Any], tracker.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Add a Markdown Preview item to the File Editor context menu
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addMarkdownPreviewToContextMenu")
-    @js.native
-    def addMarkdownPreviewToContextMenu(app: JupyterFrontEnd[IShell]): Unit = js.native
+    inline def addMarkdownPreviewToContextMenu(app: JupyterFrontEnd[IShell]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addMarkdownPreviewToContextMenu")(app.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Add the Match Brackets command
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addMatchBracketsCommand")
-    @js.native
-    def addMatchBracketsCommand(
+    inline def addMatchBracketsCommand(
       commands: CommandRegistry,
       settingRegistry: ISettingRegistry,
       id: String,
       isEnabled: js.Function0[Boolean]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addMatchBracketsCommand")(commands.asInstanceOf[js.Any], settingRegistry.asInstanceOf[js.Any], id.asInstanceOf[js.Any], isEnabled.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Wrapper function for adding the default menu items for File Editor
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addMenuItems")
-    @js.native
-    def addMenuItems(
+    inline def addMenuItems(
       menu: IMainMenu,
       commands: CommandRegistry,
       tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]],
       consoleTracker: IConsoleTracker
-    ): Unit = js.native
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addMenuItems")
-    @js.native
-    def addMenuItems(
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addMenuItems")(menu.asInstanceOf[js.Any], commands.asInstanceOf[js.Any], tracker.asInstanceOf[js.Any], consoleTracker.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addMenuItems(
       menu: IMainMenu,
       commands: CommandRegistry,
       tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]],
       consoleTracker: IConsoleTracker,
       sessionDialogs: ISessionContextDialogs
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addMenuItems")(menu.asInstanceOf[js.Any], commands.asInstanceOf[js.Any], tracker.asInstanceOf[js.Any], consoleTracker.asInstanceOf[js.Any], sessionDialogs.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Wrapper function for adding the default items to the File Editor palette
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addPaletteItems")
-    @js.native
-    def addPaletteItems(palette: ICommandPalette): Unit = js.native
+    inline def addPaletteItems(palette: ICommandPalette): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addPaletteItems")(palette.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Add paste command
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addPasteCommand")
-    @js.native
-    def addPasteCommand(
+    inline def addPasteCommand(
       commands: CommandRegistry,
       tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]],
       isEnabled: js.Function0[Boolean]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPasteCommand")(commands.asInstanceOf[js.Any], tracker.asInstanceOf[js.Any], isEnabled.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Add a Paste item to the File Editor context menu
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addPasteCommandToContextMenu")
-    @js.native
-    def addPasteCommandToContextMenu(app: JupyterFrontEnd[IShell]): Unit = js.native
+    inline def addPasteCommandToContextMenu(app: JupyterFrontEnd[IShell]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addPasteCommandToContextMenu")(app.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Add redo command
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addRedoCommand")
-    @js.native
-    def addRedoCommand(
+    inline def addRedoCommand(
       commands: CommandRegistry,
       tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]],
       isEnabled: js.Function0[Boolean]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addRedoCommand")(commands.asInstanceOf[js.Any], tracker.asInstanceOf[js.Any], isEnabled.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Add a Redo item to the File Editor context menu
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addRedoCommandToContextMenu")
-    @js.native
-    def addRedoCommandToContextMenu(app: JupyterFrontEnd[IShell]): Unit = js.native
+    inline def addRedoCommandToContextMenu(app: JupyterFrontEnd[IShell]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addRedoCommandToContextMenu")(app.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Add the replace selection for text editor command
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addReplaceSelectionCommand")
-    @js.native
-    def addReplaceSelectionCommand(
+    inline def addReplaceSelectionCommand(
       commands: CommandRegistry,
       tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]],
       isEnabled: js.Function0[Boolean]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addReplaceSelectionCommand")(commands.asInstanceOf[js.Any], tracker.asInstanceOf[js.Any], isEnabled.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Add the Run All Code command
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addRunAllCodeCommand")
-    @js.native
-    def addRunAllCodeCommand(
+    inline def addRunAllCodeCommand(
       commands: CommandRegistry,
       tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]],
       isEnabled: js.Function0[Boolean]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addRunAllCodeCommand")(commands.asInstanceOf[js.Any], tracker.asInstanceOf[js.Any], isEnabled.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Add the Run Code command
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addRunCodeCommand")
-    @js.native
-    def addRunCodeCommand(
+    inline def addRunCodeCommand(
       commands: CommandRegistry,
       tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]],
       isEnabled: js.Function0[Boolean]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addRunCodeCommand")(commands.asInstanceOf[js.Any], tracker.asInstanceOf[js.Any], isEnabled.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Add select all command
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addSelectAllCommand")
-    @js.native
-    def addSelectAllCommand(
+    inline def addSelectAllCommand(
       commands: CommandRegistry,
       tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]],
       isEnabled: js.Function0[Boolean]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addSelectAllCommand")(commands.asInstanceOf[js.Any], tracker.asInstanceOf[js.Any], isEnabled.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Add a Select All item to the File Editor context menu
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addSelectAllCommandToContextMenu")
-    @js.native
-    def addSelectAllCommandToContextMenu(app: JupyterFrontEnd[IShell]): Unit = js.native
+    inline def addSelectAllCommandToContextMenu(app: JupyterFrontEnd[IShell]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addSelectAllCommandToContextMenu")(app.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Add undo command
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addUndoCommand")
-    @js.native
-    def addUndoCommand(
+    inline def addUndoCommand(
       commands: CommandRegistry,
       tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]],
       isEnabled: js.Function0[Boolean]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUndoCommand")(commands.asInstanceOf[js.Any], tracker.asInstanceOf[js.Any], isEnabled.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Add a Undo item to the File Editor context menu
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addUndoCommandToContextMenu")
-    @js.native
-    def addUndoCommandToContextMenu(app: JupyterFrontEnd[IShell]): Unit = js.native
+    inline def addUndoCommandToContextMenu(app: JupyterFrontEnd[IShell]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addUndoCommandToContextMenu")(app.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Add File Editor undo and redo widgets to the Edit menu
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addUndoRedoToEditMenu")
-    @js.native
-    def addUndoRedoToEditMenu(menu: IMainMenu, tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]]): Unit = js.native
+    inline def addUndoRedoToEditMenu(menu: IMainMenu, tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUndoRedoToEditMenu")(menu.asInstanceOf[js.Any], tracker.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Add the Word Wrap command
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.addWordWrapCommand")
-    @js.native
-    def addWordWrapCommand(
+    inline def addWordWrapCommand(
       commands: CommandRegistry,
       settingRegistry: ISettingRegistry,
       id: String,
       isEnabled: js.Function0[Boolean]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addWordWrapCommand")(commands.asInstanceOf[js.Any], settingRegistry.asInstanceOf[js.Any], id.asInstanceOf[js.Any], isEnabled.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Update the setting values.
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.updateSettings")
-    @js.native
-    def updateSettings(settings: ISettings, commands: CommandRegistry): Unit = js.native
+    inline def updateSettings(settings: ISettings, commands: CommandRegistry): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSettings")(settings.asInstanceOf[js.Any], commands.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Update the settings of the current tracker instances.
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.updateTracker")
-    @js.native
-    def updateTracker(tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]]): Unit = js.native
+    inline def updateTracker(tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateTracker")(tracker.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Update the settings of a widget.
       * Skip global settings for transient editor specific configs.
       */
-    @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "Commands.updateWidget")
-    @js.native
-    def updateWidget(widget: FileEditor): Unit = js.native
+    inline def updateWidget(widget: FileEditor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateWidget")(widget.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("@jupyterlab/fileeditor-extension/lib/commands", "FACTORY")

@@ -2,16 +2,14 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Plane extends StObject {
   
   /**
     * @returns the plane coordinates as a new array of 4 elements [a, b, c, d].
     */
-  def asArray(): js.Array[Double] = js.native
+  def asArray(): js.Array[Double]
   
   /**
     * Updates the current Plane from the plane defined by the three given points.
@@ -20,29 +18,29 @@ trait Plane extends StObject {
     * @param point3 one of the points used to contruct the plane
     * @returns the updated Plane.
     */
-  def copyFromPoints(point1: DeepImmutable[Vector3], point2: DeepImmutable[Vector3], point3: DeepImmutable[Vector3]): Plane = js.native
+  def copyFromPoints(point1: DeepImmutable[Vector3], point2: DeepImmutable[Vector3], point3: DeepImmutable[Vector3]): Plane
   
   /**
     * d component of the plane
     */
-  var d: Double = js.native
+  var d: Double
   
   /**
     * Compute the dot product between the point and the plane normal
     * @param point point to calculate the dot product with
     * @returns the dot product (float) of the point coordinates and the plane normal.
     */
-  def dotCoordinate(point: DeepImmutable[Vector3]): Double = js.native
+  def dotCoordinate(point: DeepImmutable[Vector3]): Double
   
   /**
     * @returns the string "Plane".
     */
-  def getClassName(): String = js.native
+  def getClassName(): String
   
   /**
     * @returns the Plane hash code.
     */
-  def getHashCode(): Double = js.native
+  def getHashCode(): Double
   
   /**
     * Checks if the plane is facing a given direction (meaning if the plane's normal is pointing in the opposite direction of the given vector).
@@ -53,37 +51,36 @@ trait Plane extends StObject {
     * @param epsilon value the dot product is compared against (returns true if dot <= epsilon)
     * @returns True if the plane is facing the given direction
     */
-  def isFrontFacingTo(direction: DeepImmutable[Vector3], epsilon: Double): Boolean = js.native
+  def isFrontFacingTo(direction: DeepImmutable[Vector3], epsilon: Double): Boolean
   
   /**
     * Normal of the plane (a,b,c)
     */
-  var normal: Vector3 = js.native
+  var normal: Vector3
   
   /**
     * Normalize the current Plane in place.
     * @returns the updated Plane.
     */
-  def normalize(): Plane = js.native
+  def normalize(): Plane
   
   /**
     * Calculates the distance to a point
     * @param point point to calculate distance to
     * @returns the signed distance (float) from the given point to the Plane.
     */
-  def signedDistanceTo(point: DeepImmutable[Vector3]): Double = js.native
+  def signedDistanceTo(point: DeepImmutable[Vector3]): Double
   
   /**
     * Applies a transformation the plane and returns the result
     * @param transformation the transformation matrix to be applied to the plane
     * @returns a new Plane as the result of the transformation of the current Plane by the given matrix.
     */
-  def transform(transformation: DeepImmutable[Matrix]): Plane = js.native
+  def transform(transformation: DeepImmutable[Matrix]): Plane
 }
 object Plane {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     asArray: () => js.Array[Double],
     copyFromPoints: (DeepImmutable[Vector3], DeepImmutable[Vector3], DeepImmutable[Vector3]) => Plane,
     d: Double,
@@ -100,40 +97,28 @@ object Plane {
     __obj.asInstanceOf[Plane]
   }
   
-  @scala.inline
-  implicit class PlaneMutableBuilder[Self <: Plane] (val x: Self) extends AnyVal {
+  extension [Self <: Plane](x: Self) {
     
-    @scala.inline
-    def setAsArray(value: () => js.Array[Double]): Self = StObject.set(x, "asArray", js.Any.fromFunction0(value))
+    inline def setAsArray(value: () => js.Array[Double]): Self = StObject.set(x, "asArray", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCopyFromPoints(value: (DeepImmutable[Vector3], DeepImmutable[Vector3], DeepImmutable[Vector3]) => Plane): Self = StObject.set(x, "copyFromPoints", js.Any.fromFunction3(value))
+    inline def setCopyFromPoints(value: (DeepImmutable[Vector3], DeepImmutable[Vector3], DeepImmutable[Vector3]) => Plane): Self = StObject.set(x, "copyFromPoints", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+    inline def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDotCoordinate(value: DeepImmutable[Vector3] => Double): Self = StObject.set(x, "dotCoordinate", js.Any.fromFunction1(value))
+    inline def setDotCoordinate(value: DeepImmutable[Vector3] => Double): Self = StObject.set(x, "dotCoordinate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetClassName(value: () => String): Self = StObject.set(x, "getClassName", js.Any.fromFunction0(value))
+    inline def setGetClassName(value: () => String): Self = StObject.set(x, "getClassName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHashCode(value: () => Double): Self = StObject.set(x, "getHashCode", js.Any.fromFunction0(value))
+    inline def setGetHashCode(value: () => Double): Self = StObject.set(x, "getHashCode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsFrontFacingTo(value: (DeepImmutable[Vector3], Double) => Boolean): Self = StObject.set(x, "isFrontFacingTo", js.Any.fromFunction2(value))
+    inline def setIsFrontFacingTo(value: (DeepImmutable[Vector3], Double) => Boolean): Self = StObject.set(x, "isFrontFacingTo", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setNormal(value: Vector3): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
+    inline def setNormal(value: Vector3): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalize(value: () => Plane): Self = StObject.set(x, "normalize", js.Any.fromFunction0(value))
+    inline def setNormalize(value: () => Plane): Self = StObject.set(x, "normalize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSignedDistanceTo(value: DeepImmutable[Vector3] => Double): Self = StObject.set(x, "signedDistanceTo", js.Any.fromFunction1(value))
+    inline def setSignedDistanceTo(value: DeepImmutable[Vector3] => Double): Self = StObject.set(x, "signedDistanceTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTransform(value: DeepImmutable[Matrix] => Plane): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+    inline def setTransform(value: DeepImmutable[Matrix] => Plane): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
   }
 }

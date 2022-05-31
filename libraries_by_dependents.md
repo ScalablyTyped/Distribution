@@ -99,7 +99,6 @@
 | 5098 | [deepmerge](./d/deepmerge) | A library for deep (recursive) merging of Javascri
 | 5057 | [angular__http](./a/angular__http) | Angular - the http service
 | 4985 | [redis](./r/redis) | A high performance Redis client.
-| 4914 | [loader-utils](./l/loader-utils) | utils for webpack loaders
 | 4876 | [cors](./c/cors) | Node.js CORS middleware
 | 4809 | [cookie-parser](./c/cookie-parser) | Parse HTTP request cookies
 | 4771 | [marked](./m/marked) | A markdown parser built for speed
@@ -134,7 +133,6 @@
 | 3500 | [figlet](./f/figlet) | Creates ASCII Art from text. A full implementation
 | 3498 | [compression](./c/compression) | Node.js compression middleware
 | 3497 | [update-notifier](./u/update-notifier) | Update notifications for your CLI app
-| 3478 | [terser-webpack-plugin](./t/terser-webpack-plugin) | Terser plugin for webpack
 | 3427 | [isomorphic-fetch](./i/isomorphic-fetch) | Isomorphic WHATWG Fetch API, for Node & Browserify
 | 3379 | [eslint-config-prettier](./e/eslint-config-prettier) | Turns off all rules that are unnecessary or might 
 | 3376 | [npm](./n/npm) | a package manager for JavaScript
@@ -539,6 +537,7 @@
 | 754 | [prettyjson](./p/prettyjson) | Package for formatting JSON data in a coloured YAM
 | 753 | [file-type](./f/file-type) | Detect the file type of a Buffer/Uint8Array/ArrayB
 | 753 | [lodash_dot_omit](./l/lodash_dot_omit) | The lodash method _.omit exported as a module.
+| 752 | [jupyterlab__application](./j/jupyterlab__application) | JupyterLab - Application
 | 751 | [d3-array](./d/d3-array) | Array manipulation, ordering, searching, summarizi
 | 751 | [gulp-watch](./g/gulp-watch) | Watch, that actually is an endless stream
 | 750 | [html2canvas](./h/html2canvas) | Screenshots with JavaScript
@@ -691,6 +690,7 @@
 | 569 | [cli](./c/cli) | A tool for rapidly building command line apps
 | 568 | [es6-promisify](./e/es6-promisify) | Converts callback-based functions to ES6 Promises
 | 567 | [element-resize-detector](./e/element-resize-detector) | Resize event emitter for elements.
+| 566 | [jupyterlab__apputils](./j/jupyterlab__apputils) | JupyterLab - Application Utilities
 | 565 | [sha_dot_js](./s/sha_dot_js) | Streamable SHA hashes in pure javascript
 | 564 | [fs-promise](./f/fs-promise) | -
 | 564 | [gulp-typescript](./g/gulp-typescript) | A typescript compiler for gulp with incremental co
@@ -1249,6 +1249,7 @@
 | 273 | [tether](./t/tether) | A client-side library to make absolutely positione
 | 272 | [aws-sdk__protocol-http](./a/aws-sdk__protocol-http) | -
 | 272 | [react-native-svg](./r/react-native-svg) | SVG library for react-native
+| 271 | [jupyterlab__notebook](./j/jupyterlab__notebook) | JupyterLab - Notebook
 | 270 | [animejs](./a/animejs) | JavaScript animation engine
 | 270 | [balanced-match](./b/balanced-match) | Match balanced character pairs, like "{" and "}"
 | 270 | [ethereumjs-wallet](./e/ethereumjs-wallet) | Utilities for handling Ethereum keys
@@ -1442,6 +1443,7 @@
 | 231 | [os-tmpdir](./o/os-tmpdir) | Node.js os.tmpdir() ponyfill
 | 231 | [p-retry](./p/p-retry) | Retry a promise-returning or async function
 | 231 | [yazl](./y/yazl) | yet another zip library for node
+| 230 | [jupyterlab__services](./j/jupyterlab__services) | Client APIs for the Jupyter services REST APIs
 | 229 | [abbrev](./a/abbrev) | Like ruby's abbrev module, but in js
 | 229 | [keytar](./k/keytar) | Bindings to native Mac/Linux/Windows password APIs
 | 229 | [libxmljs](./l/libxmljs) | libxml bindings for v8 javascript engine
@@ -1565,6 +1567,7 @@
 | 203 | [caseless](./c/caseless) | Caseless object set/get/has, very useful when work
 | 203 | [codepage](./c/codepage) | pure-JS library to handle codepages
 | 203 | [imurmurhash](./i/imurmurhash) | An incremental implementation of MurmurHash3
+| 203 | [jupyterlab__mainmenu](./j/jupyterlab__mainmenu) | JupyterLab - Main Menu
 | 203 | [random-js](./r/random-js) | A mathematically correct random number generator l
 | 203 | [scriptjs](./s/scriptjs) | Asyncronous JavaScript loader and dependency manag
 | 202 | [domready](./d/domready) | modern domready
@@ -1650,6 +1653,7 @@
 | 187 | [node-telegram-bot-api](./n/node-telegram-bot-api) | Telegram Bot API
 | 187 | [toastr](./t/toastr) | ToastrJS is a JavaScript library for Gnome / Growl
 | 186 | [gravatar](./g/gravatar) | Gravatar Node.js library
+| 186 | [jupyterlab__docregistry](./j/jupyterlab__docregistry) | JupyterLab - Document Registry
 | 186 | [react-native-elements](./r/react-native-elements) | React Native Elements & UI Toolkit
 | 186 | [terminal-image](./t/terminal-image) | Display images in the terminal
 | 186 | [worker-farm](./w/worker-farm) | Distribute processing tasks to child processes wit
@@ -1902,6 +1906,7 @@
 | 153 | [html](./h/html) | HTML pretty printer CLI utility (based on jsbeauti
 | 153 | [insight](./i/insight) | Understand how your tool is being used by anonymou
 | 153 | [localtunnel](./l/localtunnel) | Expose localhost to the world
+| 153 | [material-components-web](./m/material-components-web) | Modular and customizable Material Design UI compon
 | 153 | [stream-to-promise](./s/stream-to-promise) | Convert streams (readable or writable) to promises
 | 153 | [tcomb](./t/tcomb) | Type checking and DDD for JavaScript
 | 152 | [filenamify](./f/filenamify) | Convert a string to a valid safe filename
@@ -1980,6 +1985,7 @@
 | 144 | [get-installed-path](./g/get-installed-path) | Get installation path where the given package is i
 | 144 | [git-config](./g/git-config) | A simple way to extract out all the contents of a 
 | 144 | [json3](./j/json3) | A JSON polyfill for older JavaScript platforms.
+| 144 | [jupyterlab__filebrowser](./j/jupyterlab__filebrowser) | JupyterLab - FileBrowser Widget
 | 144 | [karma-spec-reporter](./k/karma-spec-reporter) | A Karma plugin. Report all spec-results to console
 | 144 | [lazypipe](./l/lazypipe) | Use to create an immutable, lazily initialized pip
 | 144 | [onetime](./o/onetime) | Ensure a function is only called once
@@ -2244,6 +2250,8 @@
 | 118 | [emojione](./e/emojione) | EmojiOne is a complete set of emojis designed for 
 | 118 | [git-branch](./g/git-branch) | Get the current branch from the local git reposito
 | 118 | [istanbul-reports](./i/istanbul-reports) | istanbul reports
+| 118 | [jupyterlab__launcher](./j/jupyterlab__launcher) | JupyterLab - Launcher Panel
+| 118 | [jupyterlab__ui-components](./j/jupyterlab__ui-components) | JupyterLab - UI components written in React
 | 118 | [karma-chai](./k/karma-chai) | Chai for Karma
 | 118 | [memfs](./m/memfs) | In-memory file-system with Node's fs API.
 | 118 | [mimic-fn](./m/mimic-fn) | Make a function mimic another one
@@ -2357,6 +2365,7 @@
 | 109 | [google-map-react](./g/google-map-react) | Isomorphic component that allows rendering react c
 | 109 | [highlightjs](./h/highlightjs) | Syntax highlighting for the Web
 | 109 | [is-path-inside](./i/is-path-inside) | Check if a path is inside another path
+| 109 | [jupyterlab__docmanager](./j/jupyterlab__docmanager) | JupyterLab - Document Manager
 | 109 | [koa-passport](./k/koa-passport) | Passport middleware for Koa
 | 109 | [parent-module](./p/parent-module) | Get the path of the parent module
 | 109 | [rc-resize-observer](./r/rc-resize-observer) | Resize observer for React
@@ -2534,6 +2543,7 @@
 | 96 | [cfenv](./c/cfenv) | easy access to your Cloud Foundry application envi
 | 96 | [gatsby-cli](./g/gatsby-cli) | Gatsby command-line interface for creating new sit
 | 96 | [htmlescape](./h/htmlescape) | Properly escape JSON for usage as an object litera
+| 96 | [jupyterlab__rendermime](./j/jupyterlab__rendermime) | JupyterLab - RenderMime
 | 96 | [mock-require](./m/mock-require) | Simple, intuitive mocking of Node.js modules.
 | 96 | [node-gcm](./n/node-gcm) | Easy interface for Google's Cloud Messaging servic
 | 96 | [parsimmon](./p/parsimmon) | A monadic LL(infinity) parser combinator library
@@ -2880,6 +2890,7 @@
 | 75 | [is-scoped](./i/is-scoped) | Check if a string is a scoped npm package name
 | 75 | [is-url-superb](./i/is-url-superb) | Check if a string is a URL
 | 75 | [json-logic-js](./j/json-logic-js) | Build complex rules, serialize them as JSON, and e
+| 75 | [jupyterlab__cells](./j/jupyterlab__cells) | JupyterLab - Notebook Cells
 | 75 | [lodash_dot_forown](./l/lodash_dot_forown) | The lodash method _.forOwn exported as a module.
 | 75 | [lodash_dot_keyby](./l/lodash_dot_keyby) | The lodash method _.keyBy exported as a module.
 | 75 | [material__base](./m/material__base) | The set of base classes for Material Components fo
@@ -3021,7 +3032,6 @@
 | 69 | [void-elements](./v/void-elements) | Array of "void elements" defined by the HTML speci
 | 69 | [vscode-languageserver-pro](./v/vscode-languageserver-protocol) | VSCode Language Server Protocol implementation
 | 68 | [autobahn](./a/autobahn) | An implementation of The Web Application Messaging
-| 68 | [aws-iot-device-sdk](./a/aws-iot-device-sdk) | AWS IoT Node.js SDK for Embedded Devices
 | 68 | [client-sessions](./c/client-sessions) | secure sessions stored in cookies
 | 68 | [css-minimizer-webpack-plu](./c/css-minimizer-webpack-plugin) | cssnano plugin for Webpack
 | 68 | [fs-readfile-promise](./f/fs-readfile-promise) | Promise version of fs.readFile
@@ -3159,6 +3169,7 @@
 | 62 | [gregorian-calendar](./g/gregorian-calendar) | date time utils ported from java
 | 62 | [hard-rejection](./h/hard-rejection) | Make unhandled promise rejections fail hard right 
 | 62 | [json-parse-helpfulerror](./j/json-parse-helpfulerror) | A drop-in replacement for JSON.parse that uses jju
+| 62 | [jupyterlab__codeeditor](./j/jupyterlab__codeeditor) | JupyterLab - Abstract Code Editor
 | 62 | [lodash_dot_isregexp](./l/lodash_dot_isregexp) | The lodash method _.isRegExp exported as a module.
 | 62 | [lodash_dot_tonumber](./l/lodash_dot_tonumber) | The lodash method _.toNumber exported as a module.
 | 62 | [lolex](./l/lolex) | Fake JavaScript timers
@@ -3372,6 +3383,7 @@
 | 54 | [gulp-batch](./g/gulp-batch) | Event batcher for gulp-watcher
 | 54 | [is-dom](./i/is-dom) | Check if the given object is a dom node
 | 54 | [jquery-deferred](./j/jquery-deferred) | jQuery 1.8.2 deferred lib for nodeJS.
+| 54 | [jupyterlab__codemirror](./j/jupyterlab__codemirror) | JupyterLab - CodeMirror Editor Provider
 | 54 | [kss](./k/kss) | The Node.js port of KSS: A methodology for documen
 | 54 | [lodash_dot_isfinite](./l/lodash_dot_isfinite) | The lodash method _.isFinite exported as a module.
 | 54 | [lodash_dot_ismatch](./l/lodash_dot_ismatch) | The lodash method _.isMatch exported as a module.
@@ -3518,6 +3530,7 @@
 | 49 | [json2md](./j/json2md) | A JSON to Markdown converter.
 | 49 | [lodash_dot_clonedeepwith](./l/lodash_dot_clonedeepwith) | The lodash method _.cloneDeepWith exported as a mo
 | 49 | [lodash_dot_endswith](./l/lodash_dot_endswith) | The lodash method _.endsWith exported as a module.
+| 49 | [material__linear-progress](./m/material__linear-progress) | The Material Components for the web linear progres
 | 49 | [mini-store](./m/mini-store) | -
 | 49 | [react-headroom](./r/react-headroom) | Hide your header until you need it. React.js port 
 | 49 | [react-rangeslider](./r/react-rangeslider) | A lightweight react component that acts as a HTML5
@@ -3569,6 +3582,7 @@
 | 47 | [html-webpack-template](./h/html-webpack-template) | A template with more features than the default htm
 | 47 | [jest-leak-detector](./j/jest-leak-detector) | Module for verifying whether an object has been ga
 | 47 | [jest-serializer](./j/jest-serializer) | Module for serializing and deserializing object in
+| 47 | [jupyterlab__fileeditor](./j/jupyterlab__fileeditor) | JupyterLab - Editor Widget
 | 47 | [lodash_dot_isdate](./l/lodash_dot_isdate) | The lodash method _.isDate exported as a module.
 | 47 | [logfmt](./l/logfmt) | key=value logger and parser
 | 47 | [mdurl](./m/mdurl) | URL utilities for markdown-it
@@ -3593,6 +3607,7 @@
 | 47 | [wordpress__i18n](./w/wordpress__i18n) | WordPress internationalization (i18n) library.
 | 47 | [xterm-addon-fit](./x/xterm-addon-fit) | An addon for 
 | 47 | [yeast](./y/yeast) | Tiny but linear growing unique id generator
+| 46 | [babylonjs](./b/babylonjs) | Babylon.js is a JavaScript 3D engine based on webg
 | 46 | [charset](./c/charset) | Get the content charset from header and html conte
 | 46 | [connect-modrewrite](./c/connect-modrewrite) | connect-modrewrite adds modrewrite functionality t
 | 46 | [css-selector-parser](./c/css-selector-parser) | Just a CSS selector parser.
@@ -3712,6 +3727,7 @@
 | 43 | [human-signals](./h/human-signals) | Human-friendly process signals
 | 43 | [js-nacl](./j/js-nacl) | High-level API to libsodium.
 | 43 | [jsuri](./j/jsuri) | Uri and query string manipulation
+| 43 | [jupyterlab__console](./j/jupyterlab__console) | JupyterLab - Code Console
 | 43 | [jupyterlab__nbformat](./j/jupyterlab__nbformat) | Notebook format interfaces
 | 43 | [mdast](./m/mdast) | Markdown Abstract Syntax Tree format
 | 43 | [octokit__request](./o/octokit__request) | Send parameterized requests to GitHub’s APIs with 
@@ -4121,6 +4137,7 @@
 | 33 | [is-odd](./i/is-odd) | Returns true if the given number is odd, and is an
 | 33 | [jest__test-result](./j/jest__test-result) | -
 | 33 | [jjv](./j/jjv) | A simple and extensible json-schema validator writ
+| 33 | [jupyterlab__observables](./j/jupyterlab__observables) | Data structures which may be observed for changes.
 | 33 | [keyboardjs](./k/keyboardjs) | A library for binding to keys and key combos witho
 | 33 | [koa-basic-auth](./k/koa-basic-auth) | Blanket basic auth middleware for koa
 | 33 | [lodash_dot_round](./l/lodash_dot_round) | The lodash method _.round exported as a module.
@@ -4294,6 +4311,7 @@
 | 29 | [htmltojsx](./h/htmltojsx) | Converts HTML to JSX for use with React
 | 29 | [http-terminator](./h/http-terminator) | Gracefully terminates HTTP(S) server.
 | 29 | [jsrender](./j/jsrender) | Best-of-breed templating in browser or on Node.js 
+| 29 | [jupyterlab__statusbar](./j/jupyterlab__statusbar) | JupyterLab statusbar package.
 | 29 | [level-ttl](./l/level-ttl) | Adds a 'ttl' option to LevelUP for puts and batche
 | 29 | [lodash_dot_assignwith](./l/lodash_dot_assignwith) | The lodash method _.assignWith exported as a modul
 | 29 | [lodash_dot_concat](./l/lodash_dot_concat) | The lodash method _.concat exported as a module.
@@ -4358,6 +4376,7 @@
 | 28 | [isotope-layout](./i/isotope-layout) | Filter and sort magical layouts
 | 28 | [istanbul-lib-hook](./i/istanbul-lib-hook) | Hooks for require, vm and script used in istanbul
 | 28 | [jimp__utils](./j/jimp__utils) | Utils for jimp extensions.
+| 28 | [jupyterlab__terminal](./j/jupyterlab__terminal) | JupyterLab - Terminal Emulator Widget
 | 28 | [jxon](./j/jxon) | A complete, bidirectional, JXON library
 | 28 | [keystonejs__fields](./k/keystonejs__fields) | KeystoneJS Field Types including Text, Password, D
 | 28 | [lodash_dot_take](./l/lodash_dot_take) | The lodash method _.take exported as a module.
@@ -4454,6 +4473,7 @@
 | 26 | [ibm_db](./i/ibm_db) | IBM DB2 and IBM Informix bindings for node
 | 26 | [jdenticon](./j/jdenticon) | Javascript identicon generator
 | 26 | [jest__globals](./j/jest__globals) | -
+| 26 | [jupyterlab__outputarea](./j/jupyterlab__outputarea) | JupyterLab - Notebook Output Area
 | 26 | [koa-joi-router](./k/koa-joi-router) | Configurable, input validated routing for koa.
 | 26 | [ladda](./l/ladda) | Buttons with built-in loading indicators
 | 26 | [lodash_dot_bindall](./l/lodash_dot_bindall) | The lodash method _.bindAll exported as a module.
@@ -5524,6 +5544,7 @@
 | 12 | [jest__console](./j/jest__console) | -
 | 12 | [jquery_dot_nicescroll](./j/jquery_dot_nicescroll) | Nicescroll is a jquery plugin, for nice customizab
 | 12 | [jss-plugin-default-unit](./j/jss-plugin-default-unit) | JSS plugin that adds default custom unit to numeri
+| 12 | [jupyterlab__completer](./j/jupyterlab__completer) | JupyterLab - Completer
 | 12 | [just-clone](./j/just-clone) | deep copies objects and arrays
 | 12 | [justified-layout](./j/justified-layout) | Pass in box sizes and get back sizes and coordinat
 | 12 | [koa-cache-control](./k/koa-cache-control) | Middleware for meddling with Cache-Control headers
@@ -5651,6 +5672,7 @@
 | 11 | [json-schema-typed](./j/json-schema-typed) | JSONSchema TypeScript definitions.
 | 11 | [jsonstream](./j/jsonstream) | rawStream.pipe(JSONStream.parse()).pipe(streamOfOb
 | 11 | [jsreport-core](./j/jsreport-core) | javascript based business reporting
+| 11 | [jupyterlab__logconsole](./j/jupyterlab__logconsole) | JupyterLab - Log Console
 | 11 | [kraken-js](./k/kraken-js) | An express-based Node.js web application bootstrap
 | 11 | [leaflet-polylinedecorator](./l/leaflet-polylinedecorator) | -
 | 11 | [lightship](./l/lightship) | Abstracts readiness, liveness and startup checks a
@@ -5760,6 +5782,7 @@
 | 10 | [express-sslify](./e/express-sslify) | Enforces SSL for node.js express projects
 | 10 | [fetch-headers](./f/fetch-headers) | fetch Headers polyfill
 | 10 | [ffmpeg_dot_js](./f/ffmpeg_dot_js) | Port of FFmpeg with Emscripten
+| 10 | [firebase__performance](./f/firebase__performance) | Firebase performance for web
 | 10 | [fixturify](./f/fixturify) | Convert objects into directory structures and back
 | 10 | [fluxible](./f/fluxible) | A pluggable container for isomorphic flux applicat
 | 10 | [forge-apis](./f/forge-apis) | The Forge Platform contains an expanding collectio
@@ -5773,6 +5796,7 @@
 | 10 | [hls-parser](./h/hls-parser) | A simple library to read/write HLS playlists
 | 10 | [is-number-like](./i/is-number-like) | Checks whether provided parameter looks like a num
 | 10 | [jest-expect-message](./j/jest-expect-message) | Add custom message to Jest expects
+| 10 | [jupyterlab__running](./j/jupyterlab__running) | JupyterLab - Running Sessions Panel
 | 10 | [karma-jsdom-launcher](./k/karma-jsdom-launcher) | A Karma plugin. Launcher for jsdom.
 | 10 | [keystonejs__session](./k/keystonejs__session) | Tools to assist with setting up session management
 | 10 | [keyv__redis](./k/keyv__redis) | Redis storage adapter for Keyv
@@ -6110,6 +6134,8 @@
 | 8 | [jbinary](./j/jbinary) | High-level I/O for binary data.
 | 8 | [jimp__plugin-circle](./j/jimp__plugin-circle) | Creates a circle out of an image.
 | 8 | [jsreport-html-to-xlsx](./j/jsreport-html-to-xlsx) | jsreport recipe capable of converting html into ex
+| 8 | [jupyterlab__markdownviewe](./j/jupyterlab__markdownviewer) | JupyterLab - Markdown viewer Widget
+| 8 | [jupyterlab__property-insp](./j/jupyterlab__property-inspector) | A property inspector display for widgets
 | 8 | [just-pick](./j/just-pick) | copy an object but with only the specified keys
 | 8 | [karma-env-preprocessor](./k/karma-env-preprocessor) | A Karma plugin to read environment variables and m
 | 8 | [kdbxweb](./k/kdbxweb) | Kdbx KeePass database reader for web
@@ -6281,6 +6307,8 @@
 | 7 | [jsreport](./j/jsreport) | javascript based business reporting
 | 7 | [jss-plugin-extend](./j/jss-plugin-extend) | JSS plugin that enables mixing in styles.
 | 7 | [jstorage](./j/jstorage) | jStorage is a cross-browser key-value store databa
+| 7 | [jupyterlab__csvviewer](./j/jupyterlab__csvviewer) | JupyterLab - CSV Widget
+| 7 | [jupyterlab__inspector](./j/jupyterlab__inspector) | JupyterLab - Code Inspector
 | 7 | [just-map-values](./j/just-map-values) | map an object, predicate updates values, recieves 
 | 7 | [jwt-then](./j/jwt-then) | jwt as promised
 | 7 | [koa-html-minifier](./k/koa-html-minifier) | minify HTML responses like some crazy guy
@@ -6474,6 +6502,7 @@
 | 6 | [jsreport-scripts](./j/jsreport-scripts) | jsreport extension capable of running custom javas
 | 6 | [jsreport-xlsx](./j/jsreport-xlsx) | jsreport recipe rendering excels directly from ope
 | 6 | [jsrp](./j/jsrp) | JavaScript SRP implementation
+| 6 | [jupyterlab__documentsearc](./j/jupyterlab__documentsearch) | Document Search
 | 6 | [koa-log](./k/koa-log) | logger middlware for koa
 | 6 | [kurento-utils](./k/kurento-utils) | Kurento JavaScript Utilities
 | 6 | [leaflet_dot_fullscreen](./l/leaflet_dot_fullscreen) | Simple plugin for Leaflet that adds fullscreen but
@@ -6698,6 +6727,7 @@
 | 5 | [jsreport-pdf-utils](./j/jsreport-pdf-utils) | jsreport extension providing pdf operations like m
 | 5 | [jss-plugin-expand](./j/jss-plugin-expand) | JSS plugin that gives you a better syntax than CSS
 | 5 | [jsum](./j/jsum) | Consistent checksum calculation of JSON objects.
+| 5 | [jupyterlab__filebrowser-e](./j/jupyterlab__filebrowser-extension) | JupyterLab - Filebrowser Widget Extension
 | 5 | [just-throttle](./j/just-throttle) | return a throttled function
 | 5 | [karma-chai-sinon](./k/karma-chai-sinon) | Chai + Sinon-Chai + Sinon for Karma
 | 5 | [karma-viewport](./k/karma-viewport) | A Karma plugin for testing responsive features and
@@ -6721,6 +6751,7 @@
 | 5 | [lumino__collections](./l/lumino__collections) | Lumino Generic Collections
 | 5 | [malijs__compose](./m/malijs__compose) | Middleware composition utility
 | 5 | [matchmediaquery](./m/matchmediaquery) | Media queries for your client and server
+| 5 | [material__circular-progre](./m/material__circular-progress) | The Material Components for the web circular progr
 | 5 | [mendixmodelsdk](./m/mendixmodelsdk) | Mendix Model SDK
 | 5 | [merge-objects](./m/merge-objects) | Merge two objects and concatenate arrays that are 
 | 5 | [mess](./m/mess) | Mess is Fisher–Yates shuffle algorithm implementat
@@ -6934,7 +6965,9 @@
 | 4 | [jsreport-phantom-pdf](./j/jsreport-phantom-pdf) | jsreport recipe which is rendering pdf from html u
 | 4 | [jsreport-templates](./j/jsreport-templates) | jsreport extension adding support for storing temp
 | 4 | [jss-plugin-compose](./j/jss-plugin-compose) | JSS plugin for classes composition
+| 4 | [jupyterlab__celltags](./j/jupyterlab__celltags) | An extension for manipulating tags in cell metadat
 | 4 | [jupyterlab__mathjax2](./j/jupyterlab__mathjax2) | A MathJax 2 Typesetting provider for JupyterLab
+| 4 | [jupyterlab__tooltip](./j/jupyterlab__tooltip) | JupyterLab - Tooltip Widget
 | 4 | [keyv__mongo](./k/keyv__mongo) | MongoDB storage adapter for Keyv
 | 4 | [keyv__postgres](./k/keyv__postgres) | PostgreSQL storage adapter for Keyv
 | 4 | [kiwicom__orbit-design-tok](./k/kiwicom__orbit-design-tokens) | Design tokens for Kiwi.com.
@@ -7239,6 +7272,12 @@
 | 3 | [jsonrpc-serializer](./j/jsonrpc-serializer) | A simple library to serialize/deserialize JSON-RPC
 | 3 | [jsreport-html-embedded-in](./j/jsreport-html-embedded-in-docx) | jsreport recipe embedding output html into the doc
 | 3 | [jsreport-reports](./j/jsreport-reports) | jsreport extension adding support for storing rend
+| 3 | [jupyterlab__attachments](./j/jupyterlab__attachments) | JupyterLab - Notebook Cell Attachments
+| 3 | [jupyterlab__fileeditor-ex](./j/jupyterlab__fileeditor-extension) | JupyterLab - Editor Widget Extension
+| 3 | [jupyterlab__hub-extension](./j/jupyterlab__hub-extension) | JupyterLab integration for JupyterHub
+| 3 | [jupyterlab__imageviewer](./j/jupyterlab__imageviewer) | JupyterLab - Image Widget
+| 3 | [jupyterlab__settingeditor](./j/jupyterlab__settingeditor) | The JupyterLab default setting editor interface
+| 3 | [jupyterlab__theme-light-e](./j/jupyterlab__theme-light-extension) | JupyterLab - Default Light Theme
 | 3 | [jwt-client](./j/jwt-client) | Micro service to read, write and save JWT headers
 | 3 | [keystonejs__file-adapters](./k/keystonejs__file-adapters) | Adapters for handling storage of the File type
 | 3 | [knockout_dot_punches](./k/knockout_dot_punches) | Enhanced binding syntaxes for Knockout 3+
@@ -7579,6 +7618,14 @@
 | 2 | [json-js](./j/json-js) | JSON in JavaScript
 | 2 | [jsqubits](./j/jsqubits) | Quantum computation simulation JavaScript library
 | 2 | [jss-plugin-template](./j/jss-plugin-template) | JSS plugin enables string templates
+| 2 | [jupyterlab__apputils-exte](./j/jupyterlab__apputils-extension) | JupyterLab - Application Utilities Extension
+| 2 | [jupyterlab__csvviewer-ext](./j/jupyterlab__csvviewer-extension) | JupyterLab - CSV Widget Extension
+| 2 | [jupyterlab__extensionmana](./j/jupyterlab__extensionmanager) | JupyterLab - Extension Manager
+| 2 | [jupyterlab__help-extensio](./j/jupyterlab__help-extension) | JupyterLab - Help Extension
+| 2 | [jupyterlab__htmlviewer](./j/jupyterlab__htmlviewer) | A viewer for HTML documents.
+| 2 | [jupyterlab__notebook-exte](./j/jupyterlab__notebook-extension) | JupyterLab - Notebook Extension
+| 2 | [jupyterlab__terminal-exte](./j/jupyterlab__terminal-extension) | JupyterLab - Terminal Emulator Extension
+| 2 | [jupyterlab__vdom](./j/jupyterlab__vdom) | A viewer for VDOM documents.
 | 2 | [jwt-express](./j/jwt-express) | Climb aboard the JWT Express and use JWTs in your 
 | 2 | [karma-notify-reporter](./k/karma-notify-reporter) | A karma reporter that reports results with OSX Not
 | 2 | [keya](./k/keya) | A simple, universal document store
@@ -8033,7 +8080,35 @@
 | 1 | [jui](./j/jui) | JUI provide all kinds of UI components that are us
 | 1 | [jui-core](./j/jui-core) | The core framework provided by the JUI for impleme
 | 1 | [jui-grid](./j/jui-grid) | JUI grid can handle millions of data, and can disp
+| 1 | [jupyterlab__application-e](./j/jupyterlab__application-extension) | JupyterLab - Application Extension
+| 1 | [jupyterlab__celltags-exte](./j/jupyterlab__celltags-extension) | An extension for manipulating tags in cell metadat
+| 1 | [jupyterlab__codemirror-ex](./j/jupyterlab__codemirror-extension) | JupyterLab - CodeMirror Provider Extension
+| 1 | [jupyterlab__completer-ext](./j/jupyterlab__completer-extension) | JupyterLab - Completer Extension
+| 1 | [jupyterlab__console-exten](./j/jupyterlab__console-extension) | JupyterLab - Code Console Extension
+| 1 | [jupyterlab__docmanager-ex](./j/jupyterlab__docmanager-extension) | JupyterLab - Document Manager Extension
+| 1 | [jupyterlab__documentsearc](./j/jupyterlab__documentsearch-extension) | Search document types
+| 1 | [jupyterlab__extensionmana](./j/jupyterlab__extensionmanager-extension) | JupyterLab - Extension Manager Extension
+| 1 | [jupyterlab__htmlviewer-ex](./j/jupyterlab__htmlviewer-extension) | JupyterLab extension to render HTML files
+| 1 | [jupyterlab__imageviewer-e](./j/jupyterlab__imageviewer-extension) | JupyterLab - Image Widget Extension
+| 1 | [jupyterlab__inspector-ext](./j/jupyterlab__inspector-extension) | JupyterLab - Code Inspector Extension
+| 1 | [jupyterlab__javascript-ex](./j/jupyterlab__javascript-extension) | JupyterLab - Javascript Renderer
+| 1 | [jupyterlab__json-extensio](./j/jupyterlab__json-extension) | JupyterLab - JSON Renderer
+| 1 | [jupyterlab__launcher-exte](./j/jupyterlab__launcher-extension) | JupyterLab - Launcher Page Extension
+| 1 | [jupyterlab__logconsole-ex](./j/jupyterlab__logconsole-extension) | JupyterLab - Log Console Extension
+| 1 | [jupyterlab__mainmenu-exte](./j/jupyterlab__mainmenu-extension) | JupyterLab - Main Menu Extension
+| 1 | [jupyterlab__markdownviewe](./j/jupyterlab__markdownviewer-extension) | JupyterLab - Markdown Renderer Extension
+| 1 | [jupyterlab__mathjax2-exte](./j/jupyterlab__mathjax2-extension) | A JupyterLab extension providing MathJax 2 Typeset
 | 1 | [jupyterlab__pdf-extension](./j/jupyterlab__pdf-extension) | JupyterLab - PDF Viewer
+| 1 | [jupyterlab__rendermime-ex](./j/jupyterlab__rendermime-extension) | A rendermime extension for JupyterLab
+| 1 | [jupyterlab__running-exten](./j/jupyterlab__running-extension) | JupyterLab - Running Sessions Extension
+| 1 | [jupyterlab__settingeditor](./j/jupyterlab__settingeditor-extension) | JupyterLab - Setting Editor Extension
+| 1 | [jupyterlab__shortcuts-ext](./j/jupyterlab__shortcuts-extension) | JupyterLab - Shortcuts Extension
+| 1 | [jupyterlab__statusbar-ext](./j/jupyterlab__statusbar-extension) | JupyterLab - Statusbar Extension
+| 1 | [jupyterlab__tabmanager-ex](./j/jupyterlab__tabmanager-extension) | JupyterLab - Tab Manager Extension
+| 1 | [jupyterlab__theme-dark-ex](./j/jupyterlab__theme-dark-extension) | JupyterLab - Default Dark Theme
+| 1 | [jupyterlab__tooltip-exten](./j/jupyterlab__tooltip-extension) | JupyterLab - Tooltip Extension
+| 1 | [jupyterlab__ui-components](./j/jupyterlab__ui-components-extension) | JupyterLab - UI component plugins
+| 1 | [jupyterlab__vdom-extensio](./j/jupyterlab__vdom-extension) | JupyterLab - VDOM Renderer
 | 1 | [jupyterlab__vega5-extensi](./j/jupyterlab__vega5-extension) | JupyterLab - Vega 5 and Vega-Lite 3 Mime Renderer 
 | 1 | [jweixin](./j/jweixin) | wechat js-sdk
 | 1 | [jwplayer](./j/jwplayer) | 'jwplayer node js module to make request to jwplay
@@ -8304,6 +8379,7 @@
 | 1 | [onesignal-cordova-plugin](./o/onesignal-cordova-plugin) | OneSignal is a high volume Push Notification servi
 | 1 | [onfido-sdk-ui](./o/onfido-sdk-ui) | JavaScript SDK view layer for Onfido identity veri
 | 1 | [openstack-wrapper](./o/openstack-wrapper) | A simple js wrapper for the Openstack APIs
+| 1 | [oracle__oraclejet](./o/oracle__oraclejet) | Oracle JavaScript Extension Toolkit (JET) empowers
 | 1 | [otplib__preset-v11](./o/otplib__preset-v11) | v11.x compatible interface preset for otplib
 | 1 | [p-try-each](./p/p-try-each) | Runs promise-returning functions in series but sto
 | 1 | [parse-conflict-json](./p/parse-conflict-json) | Parse a JSON string that has git merge conflicts, 

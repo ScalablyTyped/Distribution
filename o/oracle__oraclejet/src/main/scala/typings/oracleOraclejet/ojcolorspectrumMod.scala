@@ -42,34 +42,35 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ojcolorspectrumMod {
   
   @js.native
-  trait ojColorSpectrum extends editableValue[^, ojColorSpectrumSettableProperties, ^, ^] {
+  trait ojColorSpectrum
+    extends StObject
+       with editableValue[^, ojColorSpectrumSettableProperties, ^, ^] {
     
     @JSName("addEventListener")
     def addEventListener_labelledByChanged(
       `type`: labelledByChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_labelledByChanged(
       `type`: labelledByChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_transientValueChanged(
       `type`: transientValueChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[^], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[^], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_transientValueChanged(
       `type`: transientValueChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[^], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[^], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     
@@ -80,15 +81,15 @@ object ojcolorspectrumMod {
     
     var labelledBy: String | Null = js.native
     
-    var onLabelledByChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
+    var onLabelledByChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], js.Any]) | Null = js.native
     
     @JSName("onOjAnimateEnd")
-    var onOjAnimateEnd_ojColorSpectrum: (js.Function1[/* event */ ojAnimateEnd, _]) | Null = js.native
+    var onOjAnimateEnd_ojColorSpectrum: (js.Function1[/* event */ ojAnimateEnd, js.Any]) | Null = js.native
     
     @JSName("onOjAnimateStart")
-    var onOjAnimateStart_ojColorSpectrum: (js.Function1[/* event */ ojAnimateStart, _]) | Null = js.native
+    var onOjAnimateStart_ojColorSpectrum: (js.Function1[/* event */ ojAnimateStart, js.Any]) | Null = js.native
     
-    var onTransientValueChanged: (js.Function1[/* event */ JetElementCustomEvent[^], _]) | Null = js.native
+    var onTransientValueChanged: (js.Function1[/* event */ JetElementCustomEvent[^], js.Any]) | Null = js.native
     
     def setProperties(properties: ojColorSpectrumSettablePropertiesLenient): Unit = js.native
     
@@ -113,23 +114,23 @@ object ojcolorspectrumMod {
     type ojAnimateStart = CustomEvent[Element]
   }
   
-  @js.native
-  trait ojColorSpectrumEventMap extends editableValueEventMap[^, ojColorSpectrumSettableProperties, ^, ^] {
+  trait ojColorSpectrumEventMap
+    extends StObject
+       with editableValueEventMap[^, ojColorSpectrumSettableProperties, ^, ^] {
     
-    var labelledByChanged: JetElementCustomEvent[String | Null] = js.native
+    var labelledByChanged: JetElementCustomEvent[String | Null]
     
     @JSName("ojAnimateEnd")
-    var ojAnimateEnd_ojColorSpectrumEventMap: ojAnimateEnd = js.native
+    var ojAnimateEnd_ojColorSpectrumEventMap: ojAnimateEnd
     
     @JSName("ojAnimateStart")
-    var ojAnimateStart_ojColorSpectrumEventMap: ojAnimateStart = js.native
+    var ojAnimateStart_ojColorSpectrumEventMap: ojAnimateStart
     
-    var transientValueChanged: JetElementCustomEvent[^] = js.native
+    var transientValueChanged: JetElementCustomEvent[^]
   }
   object ojColorSpectrumEventMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: UIEvent,
       animationcancel: AnimationEvent,
       animationend: AnimationEvent,
@@ -241,37 +242,32 @@ object ojcolorspectrumMod {
       __obj.asInstanceOf[ojColorSpectrumEventMap]
     }
     
-    @scala.inline
-    implicit class ojColorSpectrumEventMapMutableBuilder[Self <: ojColorSpectrumEventMap] (val x: Self) extends AnyVal {
+    extension [Self <: ojColorSpectrumEventMap](x: Self) {
       
-      @scala.inline
-      def setLabelledByChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "labelledByChanged", value.asInstanceOf[js.Any])
+      inline def setLabelledByChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "labelledByChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
+      inline def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjAnimateStart(value: ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
+      inline def setOjAnimateStart(value: ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransientValueChanged(value: JetElementCustomEvent[^]): Self = StObject.set(x, "transientValueChanged", value.asInstanceOf[js.Any])
+      inline def setTransientValueChanged(value: JetElementCustomEvent[^]): Self = StObject.set(x, "transientValueChanged", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait ojColorSpectrumSettableProperties extends editableValueSettableProperties[^, ^, ^] {
+  trait ojColorSpectrumSettableProperties
+    extends StObject
+       with editableValueSettableProperties[^, ^, ^] {
     
-    var labelledBy: String | Null = js.native
+    var labelledBy: String | Null
     
-    val transientValue: ^ = js.native
+    val transientValue: ^
     
     @JSName("translations")
-    var translations_ojColorSpectrumSettableProperties: LabelHue = js.native
+    var translations_ojColorSpectrumSettableProperties: LabelHue
   }
   object ojColorSpectrumSettableProperties {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       disabled: Boolean,
       displayOptions: ConverterHint,
       help: Instruction,
@@ -283,149 +279,115 @@ object ojcolorspectrumMod {
       valid: valid | pending | invalidHidden | invalidShown,
       value: ^
     ): ojColorSpectrumSettableProperties = {
-      val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], transientValue = transientValue.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], transientValue = transientValue.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], describedBy = null, labelledBy = null)
       __obj.asInstanceOf[ojColorSpectrumSettableProperties]
     }
     
-    @scala.inline
-    implicit class ojColorSpectrumSettablePropertiesMutableBuilder[Self <: ojColorSpectrumSettableProperties] (val x: Self) extends AnyVal {
+    extension [Self <: ojColorSpectrumSettableProperties](x: Self) {
       
-      @scala.inline
-      def setLabelledBy(value: String): Self = StObject.set(x, "labelledBy", value.asInstanceOf[js.Any])
+      inline def setLabelledBy(value: String): Self = StObject.set(x, "labelledBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelledByNull: Self = StObject.set(x, "labelledBy", null)
+      inline def setLabelledByNull: Self = StObject.set(x, "labelledBy", null)
       
-      @scala.inline
-      def setTransientValue(value: ^): Self = StObject.set(x, "transientValue", value.asInstanceOf[js.Any])
+      inline def setTransientValue(value: ^): Self = StObject.set(x, "transientValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslations(value: LabelHue): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: LabelHue): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojcolorspectrum.ojColorSpectrumSettableProperties> */
-  @js.native
   trait ojColorSpectrumSettablePropertiesLenient
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var describedBy: js.UndefOr[String | Null] = js.native
+    var describedBy: js.UndefOr[String | Null] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var displayOptions: js.UndefOr[ConverterHint] = js.native
+    var displayOptions: js.UndefOr[ConverterHint] = js.undefined
     
-    var help: js.UndefOr[Instruction] = js.native
+    var help: js.UndefOr[Instruction] = js.undefined
     
-    var helpHints: js.UndefOr[Definition] = js.native
+    var helpHints: js.UndefOr[Definition] = js.undefined
     
-    var labelHint: js.UndefOr[String] = js.native
+    var labelHint: js.UndefOr[String] = js.undefined
     
-    var labelledBy: js.UndefOr[String | Null] = js.native
+    var labelledBy: js.UndefOr[String | Null] = js.undefined
     
-    var messagesCustom: js.UndefOr[js.Array[typings.oracleOraclejet.ojmessagingMod.^]] = js.native
+    var messagesCustom: js.UndefOr[js.Array[typings.oracleOraclejet.ojmessagingMod.^]] = js.undefined
     
-    var transientValue: js.UndefOr[^] = js.native
+    var transientValue: js.UndefOr[^] = js.undefined
     
-    var translations: js.UndefOr[LabelHue] = js.native
+    var translations: js.UndefOr[LabelHue] = js.undefined
     
     var valid: js.UndefOr[
         typings.oracleOraclejet.oracleOraclejetStrings.valid | pending | invalidHidden | invalidShown
-      ] = js.native
+      ] = js.undefined
     
-    var value: js.UndefOr[^] = js.native
+    var value: js.UndefOr[^] = js.undefined
   }
   object ojColorSpectrumSettablePropertiesLenient {
     
-    @scala.inline
-    def apply(): ojColorSpectrumSettablePropertiesLenient = {
+    inline def apply(): ojColorSpectrumSettablePropertiesLenient = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ojColorSpectrumSettablePropertiesLenient]
     }
     
-    @scala.inline
-    implicit class ojColorSpectrumSettablePropertiesLenientMutableBuilder[Self <: ojColorSpectrumSettablePropertiesLenient] (val x: Self) extends AnyVal {
+    extension [Self <: ojColorSpectrumSettablePropertiesLenient](x: Self) {
       
-      @scala.inline
-      def setDescribedBy(value: String): Self = StObject.set(x, "describedBy", value.asInstanceOf[js.Any])
+      inline def setDescribedBy(value: String): Self = StObject.set(x, "describedBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescribedByNull: Self = StObject.set(x, "describedBy", null)
+      inline def setDescribedByNull: Self = StObject.set(x, "describedBy", null)
       
-      @scala.inline
-      def setDescribedByUndefined: Self = StObject.set(x, "describedBy", js.undefined)
+      inline def setDescribedByUndefined: Self = StObject.set(x, "describedBy", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setDisplayOptions(value: ConverterHint): Self = StObject.set(x, "displayOptions", value.asInstanceOf[js.Any])
+      inline def setDisplayOptions(value: ConverterHint): Self = StObject.set(x, "displayOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayOptionsUndefined: Self = StObject.set(x, "displayOptions", js.undefined)
+      inline def setDisplayOptionsUndefined: Self = StObject.set(x, "displayOptions", js.undefined)
       
-      @scala.inline
-      def setHelp(value: Instruction): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+      inline def setHelp(value: Instruction): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelpHints(value: Definition): Self = StObject.set(x, "helpHints", value.asInstanceOf[js.Any])
+      inline def setHelpHints(value: Definition): Self = StObject.set(x, "helpHints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelpHintsUndefined: Self = StObject.set(x, "helpHints", js.undefined)
+      inline def setHelpHintsUndefined: Self = StObject.set(x, "helpHints", js.undefined)
       
-      @scala.inline
-      def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
+      inline def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
       
-      @scala.inline
-      def setLabelHint(value: String): Self = StObject.set(x, "labelHint", value.asInstanceOf[js.Any])
+      inline def setLabelHint(value: String): Self = StObject.set(x, "labelHint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelHintUndefined: Self = StObject.set(x, "labelHint", js.undefined)
+      inline def setLabelHintUndefined: Self = StObject.set(x, "labelHint", js.undefined)
       
-      @scala.inline
-      def setLabelledBy(value: String): Self = StObject.set(x, "labelledBy", value.asInstanceOf[js.Any])
+      inline def setLabelledBy(value: String): Self = StObject.set(x, "labelledBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelledByNull: Self = StObject.set(x, "labelledBy", null)
+      inline def setLabelledByNull: Self = StObject.set(x, "labelledBy", null)
       
-      @scala.inline
-      def setLabelledByUndefined: Self = StObject.set(x, "labelledBy", js.undefined)
+      inline def setLabelledByUndefined: Self = StObject.set(x, "labelledBy", js.undefined)
       
-      @scala.inline
-      def setMessagesCustom(value: js.Array[typings.oracleOraclejet.ojmessagingMod.^]): Self = StObject.set(x, "messagesCustom", value.asInstanceOf[js.Any])
+      inline def setMessagesCustom(value: js.Array[typings.oracleOraclejet.ojmessagingMod.^]): Self = StObject.set(x, "messagesCustom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagesCustomUndefined: Self = StObject.set(x, "messagesCustom", js.undefined)
+      inline def setMessagesCustomUndefined: Self = StObject.set(x, "messagesCustom", js.undefined)
       
-      @scala.inline
-      def setMessagesCustomVarargs(value: typings.oracleOraclejet.ojmessagingMod.^ *): Self = StObject.set(x, "messagesCustom", js.Array(value :_*))
+      inline def setMessagesCustomVarargs(value: typings.oracleOraclejet.ojmessagingMod.^ *): Self = StObject.set(x, "messagesCustom", js.Array(value :_*))
       
-      @scala.inline
-      def setTransientValue(value: ^): Self = StObject.set(x, "transientValue", value.asInstanceOf[js.Any])
+      inline def setTransientValue(value: ^): Self = StObject.set(x, "transientValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransientValueUndefined: Self = StObject.set(x, "transientValue", js.undefined)
+      inline def setTransientValueUndefined: Self = StObject.set(x, "transientValue", js.undefined)
       
-      @scala.inline
-      def setTranslations(value: LabelHue): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: LabelHue): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+      inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
       
-      @scala.inline
-      def setValid(value: valid | pending | invalidHidden | invalidShown): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: valid | pending | invalidHidden | invalidShown): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
+      inline def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
       
-      @scala.inline
-      def setValue(value: ^): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: ^): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

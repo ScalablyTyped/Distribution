@@ -9,12 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object _mc {
   
   @js.native
-  sealed trait State extends StObject
-  @JSImport("ranjs", "_mc.State")
-  @js.native
-  object State extends StObject
-  
-  @js.native
   trait MCMC extends StObject {
     
     def ac(): js.Array[Double] = js.native
@@ -40,4 +34,7 @@ object _mc {
     def warmUp(progress: js.Function1[/* percentage */ Double, Unit], maxBatches: Double): Unit = js.native
     def warmUp(progress: Unit, maxBatches: Double): Unit = js.native
   }
+  
+  @js.native
+  sealed trait State extends StObject
 }

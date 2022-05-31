@@ -23,7 +23,4 @@ object global {
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nh")(x.asInstanceOf[js.Any])
     }
   }
-  
-  // additions to the Express modules
-  object Express
 }

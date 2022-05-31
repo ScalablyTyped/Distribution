@@ -4,7 +4,6 @@ import typings.babylonjs.mathVectorMod.Vector2
 import typings.babylonjs.mathVectorMod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mathVertexFormatMod {
@@ -22,7 +21,7 @@ object mathVertexFormatMod {
     position: Vector3) = this()
     def this(
       /** the position of the vertex (defaut: 0,0,0) */
-    position: js.UndefOr[scala.Nothing],
+    position: Unit,
       /** the normal of the vertex (defaut: 0,1,0) */
     normal: Vector3
     ) = this()
@@ -34,15 +33,15 @@ object mathVertexFormatMod {
     ) = this()
     def this(
       /** the position of the vertex (defaut: 0,0,0) */
-    position: js.UndefOr[scala.Nothing],
+    position: Unit,
       /** the normal of the vertex (defaut: 0,1,0) */
-    normal: js.UndefOr[scala.Nothing],
+    normal: Unit,
       /** the uv of the vertex (default: 0,0) */
     uv: Vector2
     ) = this()
     def this(
       /** the position of the vertex (defaut: 0,0,0) */
-    position: js.UndefOr[scala.Nothing],
+    position: Unit,
       /** the normal of the vertex (defaut: 0,1,0) */
     normal: Vector3,
       /** the uv of the vertex (default: 0,0) */
@@ -52,7 +51,7 @@ object mathVertexFormatMod {
       /** the position of the vertex (defaut: 0,0,0) */
     position: Vector3,
       /** the normal of the vertex (defaut: 0,1,0) */
-    normal: js.UndefOr[scala.Nothing],
+    normal: Unit,
       /** the uv of the vertex (default: 0,0) */
     uv: Vector2
     ) = this()
@@ -87,7 +86,7 @@ object mathVertexFormatMod {
     position: Vector3) = this()
     def this(
       /** the position of the vertex (defaut: 0,0,0) */
-    position: js.UndefOr[scala.Nothing],
+    position: Unit,
       /** the normal of the vertex (defaut: 0,1,0) */
     normal: Vector3
     ) = this()

@@ -28,34 +28,33 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ojDiagramNodeEventMap extends HTMLElementEventMap {
+trait ojDiagramNodeEventMap
+  extends StObject
+     with HTMLElementEventMap {
   
-  var categoriesChanged: JetElementCustomEvent[js.UndefOr[js.Array[String]]] = js.native
+  var categoriesChanged: JetElementCustomEvent[js.UndefOr[js.Array[String]]]
   
-  var descendantsConnectivityChanged: JetElementCustomEvent[js.UndefOr[connected | disjoint | unknown]] = js.native
+  var descendantsConnectivityChanged: JetElementCustomEvent[js.UndefOr[connected | disjoint | unknown]]
   
-  var iconChanged: JetElementCustomEvent[js.UndefOr[Opacity]] = js.native
+  var iconChanged: JetElementCustomEvent[js.UndefOr[Opacity]]
   
-  var labelChanged: JetElementCustomEvent[js.UndefOr[String]] = js.native
+  var labelChanged: JetElementCustomEvent[js.UndefOr[String]]
   
-  var labelStyleChanged: JetElementCustomEvent[js.UndefOr[js.Object | Null]] = js.native
+  var labelStyleChanged: JetElementCustomEvent[js.UndefOr[js.Object | Null]]
   
-  var overviewChanged: JetElementCustomEvent[js.UndefOr[`6`]] = js.native
+  var overviewChanged: JetElementCustomEvent[js.UndefOr[`6`]]
   
-  var selectableChanged: JetElementCustomEvent[js.UndefOr[auto | off]] = js.native
+  var selectableChanged: JetElementCustomEvent[js.UndefOr[auto | off]]
   
-  var shortDescChanged: JetElementCustomEvent[js.UndefOr[String]] = js.native
+  var shortDescChanged: JetElementCustomEvent[js.UndefOr[String]]
   
-  var showDisclosureChanged: JetElementCustomEvent[js.UndefOr[on | off]] = js.native
+  var showDisclosureChanged: JetElementCustomEvent[js.UndefOr[on | off]]
 }
 object ojDiagramNodeEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,
@@ -162,34 +161,24 @@ object ojDiagramNodeEventMap {
     __obj.asInstanceOf[ojDiagramNodeEventMap]
   }
   
-  @scala.inline
-  implicit class ojDiagramNodeEventMapMutableBuilder[Self <: ojDiagramNodeEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: ojDiagramNodeEventMap](x: Self) {
     
-    @scala.inline
-    def setCategoriesChanged(value: JetElementCustomEvent[js.UndefOr[js.Array[String]]]): Self = StObject.set(x, "categoriesChanged", value.asInstanceOf[js.Any])
+    inline def setCategoriesChanged(value: JetElementCustomEvent[js.UndefOr[js.Array[String]]]): Self = StObject.set(x, "categoriesChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescendantsConnectivityChanged(value: JetElementCustomEvent[js.UndefOr[connected | disjoint | unknown]]): Self = StObject.set(x, "descendantsConnectivityChanged", value.asInstanceOf[js.Any])
+    inline def setDescendantsConnectivityChanged(value: JetElementCustomEvent[js.UndefOr[connected | disjoint | unknown]]): Self = StObject.set(x, "descendantsConnectivityChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconChanged(value: JetElementCustomEvent[js.UndefOr[Opacity]]): Self = StObject.set(x, "iconChanged", value.asInstanceOf[js.Any])
+    inline def setIconChanged(value: JetElementCustomEvent[js.UndefOr[Opacity]]): Self = StObject.set(x, "iconChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = StObject.set(x, "labelChanged", value.asInstanceOf[js.Any])
+    inline def setLabelChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = StObject.set(x, "labelChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelStyleChanged(value: JetElementCustomEvent[js.UndefOr[js.Object | Null]]): Self = StObject.set(x, "labelStyleChanged", value.asInstanceOf[js.Any])
+    inline def setLabelStyleChanged(value: JetElementCustomEvent[js.UndefOr[js.Object | Null]]): Self = StObject.set(x, "labelStyleChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverviewChanged(value: JetElementCustomEvent[js.UndefOr[`6`]]): Self = StObject.set(x, "overviewChanged", value.asInstanceOf[js.Any])
+    inline def setOverviewChanged(value: JetElementCustomEvent[js.UndefOr[`6`]]): Self = StObject.set(x, "overviewChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectableChanged(value: JetElementCustomEvent[js.UndefOr[auto | off]]): Self = StObject.set(x, "selectableChanged", value.asInstanceOf[js.Any])
+    inline def setSelectableChanged(value: JetElementCustomEvent[js.UndefOr[auto | off]]): Self = StObject.set(x, "selectableChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortDescChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = StObject.set(x, "shortDescChanged", value.asInstanceOf[js.Any])
+    inline def setShortDescChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = StObject.set(x, "shortDescChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowDisclosureChanged(value: JetElementCustomEvent[js.UndefOr[on | off]]): Self = StObject.set(x, "showDisclosureChanged", value.asInstanceOf[js.Any])
+    inline def setShowDisclosureChanged(value: JetElementCustomEvent[js.UndefOr[on | off]]): Self = StObject.set(x, "showDisclosureChanged", value.asInstanceOf[js.Any])
   }
 }

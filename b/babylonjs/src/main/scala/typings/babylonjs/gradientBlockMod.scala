@@ -6,7 +6,6 @@ import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
 import typings.babylonjs.observableMod.Observable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gradientBlockMod {
@@ -20,7 +19,7 @@ object gradientBlockMod {
       */
     def this(name: String) = this()
     
-    var _writeColorConstant: js.Any = js.native
+    /* private */ var _writeColorConstant: js.Any = js.native
     
     /**
       * Gets or sets the list of color steps
@@ -54,9 +53,9 @@ object gradientBlockMod {
       */
     def this(step: Double, color: Color3) = this()
     
-    var _color: js.Any = js.native
+    /* private */ var _color: js.Any = js.native
     
-    var _step: js.Any = js.native
+    /* private */ var _step: js.Any = js.native
     
     /**
       * Gets the color associated with this step

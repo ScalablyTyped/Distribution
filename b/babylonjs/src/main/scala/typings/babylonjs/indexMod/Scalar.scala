@@ -2,7 +2,6 @@ package typings.babylonjs.indexMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "Scalar")
@@ -25,18 +24,10 @@ object Scalar {
     * @param max the max value to clamp to (default: 1)
     * @returns the clamped value
     */
-  @JSImport("babylonjs/index", "Scalar.Clamp")
-  @js.native
-  def Clamp(value: Double): Double = js.native
-  @JSImport("babylonjs/index", "Scalar.Clamp")
-  @js.native
-  def Clamp(value: Double, min: js.UndefOr[scala.Nothing], max: Double): Double = js.native
-  @JSImport("babylonjs/index", "Scalar.Clamp")
-  @js.native
-  def Clamp(value: Double, min: Double): Double = js.native
-  @JSImport("babylonjs/index", "Scalar.Clamp")
-  @js.native
-  def Clamp(value: Double, min: Double, max: Double): Double = js.native
+  inline def Clamp(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Clamp")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def Clamp(value: Double, min: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Clamp")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def Clamp(value: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Clamp")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def Clamp(value: Double, min: Unit, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Clamp")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Calculates the shortest difference between two given angles given in degrees.
@@ -44,9 +35,7 @@ object Scalar {
     * @param target target angle in degrees
     * @returns the delta
     */
-  @JSImport("babylonjs/index", "Scalar.DeltaAngle")
-  @js.native
-  def DeltaAngle(current: Double, target: Double): Double = js.native
+  inline def DeltaAngle(current: Double, target: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("DeltaAngle")(current.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Denormalize the value from 0.0 and 1.0 using min and max values
@@ -55,9 +44,7 @@ object Scalar {
     * @param max min to denormalize between
     * @returns the denormalized value
     */
-  @JSImport("babylonjs/index", "Scalar.Denormalize")
-  @js.native
-  def Denormalize(normalized: Double, min: Double, max: Double): Double = js.native
+  inline def Denormalize(normalized: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Denormalize")(normalized.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Returns a new scalar located for "amount" (float) on the Hermite spline defined by the scalars "value1", "value3", "tangent1", "tangent2".
@@ -69,9 +56,7 @@ object Scalar {
     * @param amount input value
     * @returns hermite result
     */
-  @JSImport("babylonjs/index", "Scalar.Hermite")
-  @js.native
-  def Hermite(value1: Double, tangent1: Double, value2: Double, tangent2: Double, amount: Double): Double = js.native
+  inline def Hermite(value1: Double, tangent1: Double, value2: Double, tangent2: Double, amount: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Calculates the linear parameter t that produces the interpolant value within the range [a, b].
@@ -80,9 +65,7 @@ object Scalar {
     * @param value value between a and b
     * @returns the inverseLerp value
     */
-  @JSImport("babylonjs/index", "Scalar.InverseLerp")
-  @js.native
-  def InverseLerp(a: Double, b: Double, value: Double): Double = js.native
+  inline def InverseLerp(a: Double, b: Double, value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("InverseLerp")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Creates a new scalar with values linearly interpolated of "amount" between the start scalar and the end scalar.
@@ -91,9 +74,7 @@ object Scalar {
     * @param amount amount to lerp between
     * @returns the lerped value
     */
-  @JSImport("babylonjs/index", "Scalar.Lerp")
-  @js.native
-  def Lerp(start: Double, end: Double, amount: Double): Double = js.native
+  inline def Lerp(start: Double, end: Double, amount: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Lerp")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Same as Lerp but makes sure the values interpolate correctly when they wrap around 360 degrees.
@@ -103,18 +84,14 @@ object Scalar {
     * @param amount amount to lerp between
     * @returns the lerped value
     */
-  @JSImport("babylonjs/index", "Scalar.LerpAngle")
-  @js.native
-  def LerpAngle(start: Double, end: Double, amount: Double): Double = js.native
+  inline def LerpAngle(start: Double, end: Double, amount: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("LerpAngle")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * the log2 of value.
     * @param value the value to compute log2 of
     * @returns the log2 of value.
     */
-  @JSImport("babylonjs/index", "Scalar.Log2")
-  @js.native
-  def Log2(value: Double): Double = js.native
+  inline def Log2(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Log2")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Moves a value current towards target.
@@ -126,9 +103,7 @@ object Scalar {
     * @param maxDelta max distance to move
     * @returns resulting value
     */
-  @JSImport("babylonjs/index", "Scalar.MoveTowards")
-  @js.native
-  def MoveTowards(current: Double, target: Double, maxDelta: Double): Double = js.native
+  inline def MoveTowards(current: Double, target: Double, maxDelta: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("MoveTowards")(current.asInstanceOf[js.Any], target.asInstanceOf[js.Any], maxDelta.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Same as MoveTowards but makes sure the values interpolate correctly when they wrap around 360 degrees.
@@ -140,9 +115,7 @@ object Scalar {
     * @param maxDelta max distance to move
     * @returns resulting angle
     */
-  @JSImport("babylonjs/index", "Scalar.MoveTowardsAngle")
-  @js.native
-  def MoveTowardsAngle(current: Double, target: Double, maxDelta: Double): Double = js.native
+  inline def MoveTowardsAngle(current: Double, target: Double, maxDelta: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("MoveTowardsAngle")(current.asInstanceOf[js.Any], target.asInstanceOf[js.Any], maxDelta.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Normalize the value between 0.0 and 1.0 using min and max values
@@ -151,18 +124,14 @@ object Scalar {
     * @param max min to normalize between
     * @returns the normalized value
     */
-  @JSImport("babylonjs/index", "Scalar.Normalize")
-  @js.native
-  def Normalize(value: Double, min: Double, max: Double): Double = js.native
+  inline def Normalize(value: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Normalize")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Returns the angle converted to equivalent value between -Math.PI and Math.PI radians.
     * @param angle The angle to normalize in radian.
     * @return The converted angle.
     */
-  @JSImport("babylonjs/index", "Scalar.NormalizeRadians")
-  @js.native
-  def NormalizeRadians(angle: Double): Double = js.native
+  inline def NormalizeRadians(angle: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("NormalizeRadians")(angle.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * This function returns number that corresponds to the percentage in a given range.
@@ -173,9 +142,7 @@ object Scalar {
     * @param max max range
     * @returns the number
     */
-  @JSImport("babylonjs/index", "Scalar.PercentToRange")
-  @js.native
-  def PercentToRange(percent: Double, min: Double, max: Double): Double = js.native
+  inline def PercentToRange(percent: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("PercentToRange")(percent.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * PingPongs the value t, so that it is never larger than length and never smaller than 0.
@@ -183,9 +150,7 @@ object Scalar {
     * @param length length
     * @returns The returned value will move back and forth between 0 and length
     */
-  @JSImport("babylonjs/index", "Scalar.PingPong")
-  @js.native
-  def PingPong(tx: Double, length: Double): Double = js.native
+  inline def PingPong(tx: Double, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("PingPong")(tx.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Returns a random float number between and min and max values
@@ -193,9 +158,7 @@ object Scalar {
     * @param max max value of random
     * @returns random value
     */
-  @JSImport("babylonjs/index", "Scalar.RandomRange")
-  @js.native
-  def RandomRange(min: Double, max: Double): Double = js.native
+  inline def RandomRange(min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("RandomRange")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * This function returns percentage of a number in a given range.
@@ -207,9 +170,7 @@ object Scalar {
     * @param max max range
     * @returns the percentage
     */
-  @JSImport("babylonjs/index", "Scalar.RangeToPercent")
-  @js.native
-  def RangeToPercent(number: Double, min: Double, max: Double): Double = js.native
+  inline def RangeToPercent(number: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("RangeToPercent")(number.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Loops the value, so that it is never larger than length and never smaller than 0.
@@ -222,18 +183,14 @@ object Scalar {
     * @param length the length
     * @returns the looped value
     */
-  @JSImport("babylonjs/index", "Scalar.Repeat")
-  @js.native
-  def Repeat(value: Double, length: Double): Double = js.native
+  inline def Repeat(value: Double, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Repeat")(value.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Returns -1 if value is negative and +1 is value is positive.
     * @param value the value
     * @returns the value itself if it's equal to zero.
     */
-  @JSImport("babylonjs/index", "Scalar.Sign")
-  @js.native
-  def Sign(value: Double): Double = js.native
+  inline def Sign(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Sign")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Interpolates between min and max with smoothing at the limits.
@@ -245,18 +202,14 @@ object Scalar {
     * @param tx value
     * @returns the smooth stepped value
     */
-  @JSImport("babylonjs/index", "Scalar.SmoothStep")
-  @js.native
-  def SmoothStep(from: Double, to: Double, tx: Double): Double = js.native
+  inline def SmoothStep(from: Double, to: Double, tx: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("SmoothStep")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], tx.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Returns a string : the upper case translation of the number i to hexadecimal.
     * @param i number
     * @returns the upper case translation of the number i to hexadecimal.
     */
-  @JSImport("babylonjs/index", "Scalar.ToHex")
-  @js.native
-  def ToHex(i: Double): String = js.native
+  inline def ToHex(i: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToHex")(i.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Two pi constants convenient for computation.
@@ -264,8 +217,7 @@ object Scalar {
   @JSImport("babylonjs/index", "Scalar.TwoPi")
   @js.native
   def TwoPi: Double = js.native
-  @scala.inline
-  def TwoPi_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TwoPi")(x.asInstanceOf[js.Any])
+  inline def TwoPi_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TwoPi")(x.asInstanceOf[js.Any])
   
   /**
     * Boolean : true if the absolute difference between a and b is lower than epsilon (default = 1.401298E-45)
@@ -274,10 +226,6 @@ object Scalar {
     * @param epsilon (default = 1.401298E-45)
     * @returns true if the absolute difference between a and b is lower than epsilon (default = 1.401298E-45)
     */
-  @JSImport("babylonjs/index", "Scalar.WithinEpsilon")
-  @js.native
-  def WithinEpsilon(a: Double, b: Double): Boolean = js.native
-  @JSImport("babylonjs/index", "Scalar.WithinEpsilon")
-  @js.native
-  def WithinEpsilon(a: Double, b: Double, epsilon: Double): Boolean = js.native
+  inline def WithinEpsilon(a: Double, b: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("WithinEpsilon")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def WithinEpsilon(a: Double, b: Double, epsilon: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("WithinEpsilon")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

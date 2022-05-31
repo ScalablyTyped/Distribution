@@ -10,14 +10,15 @@ import typings.babylonjs.typesMod.FloatArray
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object morphTargetMod {
   
   @JSImport("babylonjs/Morph/morphTarget", "MorphTarget")
   @js.native
-  class MorphTarget protected () extends IAnimatable {
+  class MorphTarget protected ()
+    extends StObject
+       with IAnimatable {
     /**
       * Creates a new MorphTarget
       * @param name defines the name of the target
@@ -28,33 +29,29 @@ object morphTargetMod {
     name: String) = this()
     def this(/** defines the name of the target */
     name: String, influence: Double) = this()
-    def this(
-      /** defines the name of the target */
-    name: String,
-      influence: js.UndefOr[scala.Nothing],
-      scene: Nullable[Scene]
-    ) = this()
     def this(/** defines the name of the target */
     name: String, influence: Double, scene: Nullable[Scene]) = this()
+    def this(/** defines the name of the target */
+    name: String, influence: Unit, scene: Nullable[Scene]) = this()
     
-    var _animationPropertiesOverride: js.Any = js.native
+    /* private */ var _animationPropertiesOverride: js.Any = js.native
     
-    var _influence: js.Any = js.native
+    /* private */ var _influence: js.Any = js.native
     
-    var _normals: js.Any = js.native
+    /* private */ var _normals: js.Any = js.native
     
     /** @hidden */
     var _onDataLayoutChanged: Observable[Unit] = js.native
     
-    var _positions: js.Any = js.native
+    /* private */ var _positions: js.Any = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
-    var _tangents: js.Any = js.native
+    /* private */ var _tangents: js.Any = js.native
     
-    var _uniqueId: js.Any = js.native
+    /* private */ var _uniqueId: js.Any = js.native
     
-    var _uvs: js.Any = js.native
+    /* private */ var _uvs: js.Any = js.native
     
     /**
       * Gets or sets the animation properties override
@@ -62,6 +59,11 @@ object morphTargetMod {
     def animationPropertiesOverride: Nullable[AnimationPropertiesOverride] = js.native
     def animationPropertiesOverride_=(value: Nullable[AnimationPropertiesOverride]): Unit = js.native
     
+    /**
+      * Array of animations
+      */
+    /* CompleteClass */
+    var animations: Nullable[js.Array[Animation]] = js.native
     /**
       * Gets or sets the list of animations
       */
@@ -175,6 +177,10 @@ object morphTargetMod {
   /* static members */
   object MorphTarget {
     
+    @JSImport("babylonjs/Morph/morphTarget", "MorphTarget")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a MorphTarget from mesh data
       * @param mesh defines the source mesh
@@ -182,26 +188,16 @@ object morphTargetMod {
       * @param influence defines the influence to attach to the target
       * @returns a new MorphTarget
       */
-    @JSImport("babylonjs/Morph/morphTarget", "MorphTarget.FromMesh")
-    @js.native
-    def FromMesh(mesh: AbstractMesh): MorphTarget = js.native
-    @JSImport("babylonjs/Morph/morphTarget", "MorphTarget.FromMesh")
-    @js.native
-    def FromMesh(mesh: AbstractMesh, name: js.UndefOr[scala.Nothing], influence: Double): MorphTarget = js.native
-    @JSImport("babylonjs/Morph/morphTarget", "MorphTarget.FromMesh")
-    @js.native
-    def FromMesh(mesh: AbstractMesh, name: String): MorphTarget = js.native
-    @JSImport("babylonjs/Morph/morphTarget", "MorphTarget.FromMesh")
-    @js.native
-    def FromMesh(mesh: AbstractMesh, name: String, influence: Double): MorphTarget = js.native
+    inline def FromMesh(mesh: AbstractMesh): MorphTarget = ^.asInstanceOf[js.Dynamic].applyDynamic("FromMesh")(mesh.asInstanceOf[js.Any]).asInstanceOf[MorphTarget]
+    inline def FromMesh(mesh: AbstractMesh, name: String): MorphTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("FromMesh")(mesh.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[MorphTarget]
+    inline def FromMesh(mesh: AbstractMesh, name: String, influence: Double): MorphTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("FromMesh")(mesh.asInstanceOf[js.Any], name.asInstanceOf[js.Any], influence.asInstanceOf[js.Any])).asInstanceOf[MorphTarget]
+    inline def FromMesh(mesh: AbstractMesh, name: Unit, influence: Double): MorphTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("FromMesh")(mesh.asInstanceOf[js.Any], name.asInstanceOf[js.Any], influence.asInstanceOf[js.Any])).asInstanceOf[MorphTarget]
     
     /**
       * Creates a new target from serialized data
       * @param serializationObject defines the serialized data to use
       * @returns a new MorphTarget
       */
-    @JSImport("babylonjs/Morph/morphTarget", "MorphTarget.Parse")
-    @js.native
-    def Parse(serializationObject: js.Any): MorphTarget = js.native
+    inline def Parse(serializationObject: js.Any): MorphTarget = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(serializationObject.asInstanceOf[js.Any]).asInstanceOf[MorphTarget]
   }
 }

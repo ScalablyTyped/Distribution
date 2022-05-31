@@ -20,7 +20,6 @@ import typings.luminoCoreutils.mod.Token
 import typings.luminoWidgets.mod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tokensMod {
@@ -37,76 +36,74 @@ object tokensMod {
     /**
       * Options for the terminal widget.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * Whether to auto-fit the terminal to its host element size.
         */
-      var autoFit: js.UndefOr[Boolean] = js.native
+      var autoFit: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Whether to blink the cursor.  Can only be set at startup.
         */
-      var cursorBlink: Boolean = js.native
+      var cursorBlink: Boolean
       
       /**
         * The font family used to render text.
         */
-      var fontFamily: js.UndefOr[String] = js.native
+      var fontFamily: js.UndefOr[String] = js.undefined
       
       /**
         * The font size of the terminal in pixels.
         */
-      var fontSize: Double = js.native
+      var fontSize: Double
       
       /**
         * An optional command to run when the session starts.
         */
-      var initialCommand: String = js.native
+      var initialCommand: String
       
       /**
         * The line height used to render text.
         */
-      var lineHeight: js.UndefOr[Double] = js.native
+      var lineHeight: js.UndefOr[Double] = js.undefined
       
       /**
         * Treat option as meta key on macOS.
         */
-      var macOptionIsMeta: js.UndefOr[Boolean] = js.native
+      var macOptionIsMeta: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Whether to enable using Ctrl+V to paste.
         *
         * This setting has no effect on macOS, where Cmd+V is available.
         */
-      var pasteWithCtrlV: Boolean = js.native
+      var pasteWithCtrlV: Boolean
       
       /**
         * Whether to enable screen reader support.
         */
-      var screenReaderMode: Boolean = js.native
+      var screenReaderMode: Boolean
       
       /**
         * The amount of buffer scrollback to be used
         * with the terminal
         */
-      var scrollback: js.UndefOr[Double] = js.native
+      var scrollback: js.UndefOr[Double] = js.undefined
       
       /**
         * Whether to shut down the session when closing a terminal or not.
         */
-      var shutdownOnClose: Boolean = js.native
+      var shutdownOnClose: Boolean
       
       /**
         * The theme of the terminal.
         */
-      var theme: Theme = js.native
+      var theme: Theme
     }
     object IOptions {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         cursorBlink: Boolean,
         fontSize: Double,
         initialCommand: String,
@@ -119,59 +116,41 @@ object tokensMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setAutoFit(value: Boolean): Self = StObject.set(x, "autoFit", value.asInstanceOf[js.Any])
+        inline def setAutoFit(value: Boolean): Self = StObject.set(x, "autoFit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAutoFitUndefined: Self = StObject.set(x, "autoFit", js.undefined)
+        inline def setAutoFitUndefined: Self = StObject.set(x, "autoFit", js.undefined)
         
-        @scala.inline
-        def setCursorBlink(value: Boolean): Self = StObject.set(x, "cursorBlink", value.asInstanceOf[js.Any])
+        inline def setCursorBlink(value: Boolean): Self = StObject.set(x, "cursorBlink", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+        inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+        inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
         
-        @scala.inline
-        def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+        inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInitialCommand(value: String): Self = StObject.set(x, "initialCommand", value.asInstanceOf[js.Any])
+        inline def setInitialCommand(value: String): Self = StObject.set(x, "initialCommand", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+        inline def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
+        inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
         
-        @scala.inline
-        def setMacOptionIsMeta(value: Boolean): Self = StObject.set(x, "macOptionIsMeta", value.asInstanceOf[js.Any])
+        inline def setMacOptionIsMeta(value: Boolean): Self = StObject.set(x, "macOptionIsMeta", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMacOptionIsMetaUndefined: Self = StObject.set(x, "macOptionIsMeta", js.undefined)
+        inline def setMacOptionIsMetaUndefined: Self = StObject.set(x, "macOptionIsMeta", js.undefined)
         
-        @scala.inline
-        def setPasteWithCtrlV(value: Boolean): Self = StObject.set(x, "pasteWithCtrlV", value.asInstanceOf[js.Any])
+        inline def setPasteWithCtrlV(value: Boolean): Self = StObject.set(x, "pasteWithCtrlV", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScreenReaderMode(value: Boolean): Self = StObject.set(x, "screenReaderMode", value.asInstanceOf[js.Any])
+        inline def setScreenReaderMode(value: Boolean): Self = StObject.set(x, "screenReaderMode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScrollback(value: Double): Self = StObject.set(x, "scrollback", value.asInstanceOf[js.Any])
+        inline def setScrollback(value: Double): Self = StObject.set(x, "scrollback", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScrollbackUndefined: Self = StObject.set(x, "scrollback", js.undefined)
+        inline def setScrollbackUndefined: Self = StObject.set(x, "scrollback", js.undefined)
         
-        @scala.inline
-        def setShutdownOnClose(value: Boolean): Self = StObject.set(x, "shutdownOnClose", value.asInstanceOf[js.Any])
+        inline def setShutdownOnClose(value: Boolean): Self = StObject.set(x, "shutdownOnClose", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+        inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       }
     }
     
@@ -258,44 +237,36 @@ object tokensMod {
     /**
       * A type for the terminal theme.
       */
-    @js.native
     trait IThemeObject extends StObject {
       
-      var background: String = js.native
+      var background: String
       
-      var cursor: String = js.native
+      var cursor: String
       
-      var cursorAccent: String = js.native
+      var cursorAccent: String
       
-      var foreground: String = js.native
+      var foreground: String
       
-      var selection: String = js.native
+      var selection: String
     }
     object IThemeObject {
       
-      @scala.inline
-      def apply(background: String, cursor: String, cursorAccent: String, foreground: String, selection: String): IThemeObject = {
+      inline def apply(background: String, cursor: String, cursorAccent: String, foreground: String, selection: String): IThemeObject = {
         val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any], cursor = cursor.asInstanceOf[js.Any], cursorAccent = cursorAccent.asInstanceOf[js.Any], foreground = foreground.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any])
         __obj.asInstanceOf[IThemeObject]
       }
       
-      @scala.inline
-      implicit class IThemeObjectMutableBuilder[Self <: IThemeObject] (val x: Self) extends AnyVal {
+      extension [Self <: IThemeObject](x: Self) {
         
-        @scala.inline
-        def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+        inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+        inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCursorAccent(value: String): Self = StObject.set(x, "cursorAccent", value.asInstanceOf[js.Any])
+        inline def setCursorAccent(value: String): Self = StObject.set(x, "cursorAccent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setForeground(value: String): Self = StObject.set(x, "foreground", value.asInstanceOf[js.Any])
+        inline def setForeground(value: String): Self = StObject.set(x, "foreground", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelection(value: String): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+        inline def setSelection(value: String): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       }
     }
     
@@ -310,14 +281,11 @@ object tokensMod {
     trait Theme extends StObject
     object Theme {
       
-      @scala.inline
-      def dark: typings.jupyterlabTerminal.jupyterlabTerminalStrings.dark = "dark".asInstanceOf[typings.jupyterlabTerminal.jupyterlabTerminalStrings.dark]
+      inline def dark: typings.jupyterlabTerminal.jupyterlabTerminalStrings.dark = "dark".asInstanceOf[typings.jupyterlabTerminal.jupyterlabTerminalStrings.dark]
       
-      @scala.inline
-      def inherit: typings.jupyterlabTerminal.jupyterlabTerminalStrings.inherit = "inherit".asInstanceOf[typings.jupyterlabTerminal.jupyterlabTerminalStrings.inherit]
+      inline def inherit: typings.jupyterlabTerminal.jupyterlabTerminalStrings.inherit = "inherit".asInstanceOf[typings.jupyterlabTerminal.jupyterlabTerminalStrings.inherit]
       
-      @scala.inline
-      def light: typings.jupyterlabTerminal.jupyterlabTerminalStrings.light = "light".asInstanceOf[typings.jupyterlabTerminal.jupyterlabTerminalStrings.light]
+      inline def light: typings.jupyterlabTerminal.jupyterlabTerminalStrings.light = "light".asInstanceOf[typings.jupyterlabTerminal.jupyterlabTerminalStrings.light]
     }
   }
   

@@ -2,42 +2,39 @@ package typings.jupyterlabApplication
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait App extends StObject {
     
-    val app: String = js.native
+    val app: String
     
-    val base: String = js.native
+    val base: String
     
-    val hubHost: js.UndefOr[String] = js.native
+    val hubHost: js.UndefOr[String] = js.undefined
     
-    val hubPrefix: js.UndefOr[String] = js.native
+    val hubPrefix: js.UndefOr[String] = js.undefined
     
-    val hubServerName: js.UndefOr[String] = js.native
+    val hubServerName: js.UndefOr[String] = js.undefined
     
-    val hubUser: js.UndefOr[String] = js.native
+    val hubUser: js.UndefOr[String] = js.undefined
     
-    val notFound: js.UndefOr[String] = js.native
+    val notFound: js.UndefOr[String] = js.undefined
     
-    val settings: String = js.native
+    val settings: String
     
-    val static: String = js.native
+    val static: String
     
-    val themes: String = js.native
+    val themes: String
     
-    val tree: String = js.native
+    val tree: String
     
-    val workspaces: String = js.native
+    val workspaces: String
   }
   object App {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       app: String,
       base: String,
       settings: String,
@@ -50,85 +47,65 @@ object anon {
       __obj.asInstanceOf[App]
     }
     
-    @scala.inline
-    implicit class AppMutableBuilder[Self <: App] (val x: Self) extends AnyVal {
+    extension [Self <: App](x: Self) {
       
-      @scala.inline
-      def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+      inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHubHost(value: String): Self = StObject.set(x, "hubHost", value.asInstanceOf[js.Any])
+      inline def setHubHost(value: String): Self = StObject.set(x, "hubHost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHubHostUndefined: Self = StObject.set(x, "hubHost", js.undefined)
+      inline def setHubHostUndefined: Self = StObject.set(x, "hubHost", js.undefined)
       
-      @scala.inline
-      def setHubPrefix(value: String): Self = StObject.set(x, "hubPrefix", value.asInstanceOf[js.Any])
+      inline def setHubPrefix(value: String): Self = StObject.set(x, "hubPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHubPrefixUndefined: Self = StObject.set(x, "hubPrefix", js.undefined)
+      inline def setHubPrefixUndefined: Self = StObject.set(x, "hubPrefix", js.undefined)
       
-      @scala.inline
-      def setHubServerName(value: String): Self = StObject.set(x, "hubServerName", value.asInstanceOf[js.Any])
+      inline def setHubServerName(value: String): Self = StObject.set(x, "hubServerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHubServerNameUndefined: Self = StObject.set(x, "hubServerName", js.undefined)
+      inline def setHubServerNameUndefined: Self = StObject.set(x, "hubServerName", js.undefined)
       
-      @scala.inline
-      def setHubUser(value: String): Self = StObject.set(x, "hubUser", value.asInstanceOf[js.Any])
+      inline def setHubUser(value: String): Self = StObject.set(x, "hubUser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHubUserUndefined: Self = StObject.set(x, "hubUser", js.undefined)
+      inline def setHubUserUndefined: Self = StObject.set(x, "hubUser", js.undefined)
       
-      @scala.inline
-      def setNotFound(value: String): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
+      inline def setNotFound(value: String): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotFoundUndefined: Self = StObject.set(x, "notFound", js.undefined)
+      inline def setNotFoundUndefined: Self = StObject.set(x, "notFound", js.undefined)
       
-      @scala.inline
-      def setSettings(value: String): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: String): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatic(value: String): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
+      inline def setStatic(value: String): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemes(value: String): Self = StObject.set(x, "themes", value.asInstanceOf[js.Any])
+      inline def setThemes(value: String): Self = StObject.set(x, "themes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTree(value: String): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
+      inline def setTree(value: String): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkspaces(value: String): Self = StObject.set(x, "workspaces", value.asInstanceOf[js.Any])
+      inline def setWorkspaces(value: String): Self = StObject.set(x, "workspaces", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait AppSettings extends StObject {
     
-    val appSettings: String = js.native
+    val appSettings: String
     
-    val schemas: String = js.native
+    val schemas: String
     
-    val serverRoot: String = js.native
+    val serverRoot: String
     
-    val static: String = js.native
+    val static: String
     
-    val templates: String = js.native
+    val templates: String
     
-    val themes: String = js.native
+    val themes: String
     
-    val userSettings: String = js.native
+    val userSettings: String
     
-    val workspaces: String = js.native
+    val workspaces: String
   }
   object AppSettings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       appSettings: String,
       schemas: String,
       serverRoot: String,
@@ -142,123 +119,95 @@ object anon {
       __obj.asInstanceOf[AppSettings]
     }
     
-    @scala.inline
-    implicit class AppSettingsMutableBuilder[Self <: AppSettings] (val x: Self) extends AnyVal {
+    extension [Self <: AppSettings](x: Self) {
       
-      @scala.inline
-      def setAppSettings(value: String): Self = StObject.set(x, "appSettings", value.asInstanceOf[js.Any])
+      inline def setAppSettings(value: String): Self = StObject.set(x, "appSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemas(value: String): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
+      inline def setSchemas(value: String): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerRoot(value: String): Self = StObject.set(x, "serverRoot", value.asInstanceOf[js.Any])
+      inline def setServerRoot(value: String): Self = StObject.set(x, "serverRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatic(value: String): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
+      inline def setStatic(value: String): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplates(value: String): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
+      inline def setTemplates(value: String): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemes(value: String): Self = StObject.set(x, "themes", value.asInstanceOf[js.Any])
+      inline def setThemes(value: String): Self = StObject.set(x, "themes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserSettings(value: String): Self = StObject.set(x, "userSettings", value.asInstanceOf[js.Any])
+      inline def setUserSettings(value: String): Self = StObject.set(x, "userSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkspaces(value: String): Self = StObject.set(x, "workspaces", value.asInstanceOf[js.Any])
+      inline def setWorkspaces(value: String): Self = StObject.set(x, "workspaces", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Browser extends StObject {
     
-    var browser: String = js.native
+    var browser: String
     
-    var file: String = js.native
+    var file: String
   }
   object Browser {
     
-    @scala.inline
-    def apply(browser: String, file: String): Browser = {
+    inline def apply(browser: String, file: String): Browser = {
       val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any])
       __obj.asInstanceOf[Browser]
     }
     
-    @scala.inline
-    implicit class BrowserMutableBuilder[Self <: Browser] (val x: Self) extends AnyVal {
+    extension [Self <: Browser](x: Self) {
       
-      @scala.inline
-      def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+      inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Matches extends StObject {
     
-    var matches: js.Array[String] = js.native
+    var matches: js.Array[String]
     
-    var patterns: js.Array[String] = js.native
+    var patterns: js.Array[String]
   }
   object Matches {
     
-    @scala.inline
-    def apply(matches: js.Array[String], patterns: js.Array[String]): Matches = {
+    inline def apply(matches: js.Array[String], patterns: js.Array[String]): Matches = {
       val __obj = js.Dynamic.literal(matches = matches.asInstanceOf[js.Any], patterns = patterns.asInstanceOf[js.Any])
       __obj.asInstanceOf[Matches]
     }
     
-    @scala.inline
-    implicit class MatchesMutableBuilder[Self <: Matches] (val x: Self) extends AnyVal {
+    extension [Self <: Matches](x: Self) {
       
-      @scala.inline
-      def setMatches(value: js.Array[String]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+      inline def setMatches(value: js.Array[String]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value :_*))
+      inline def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value :_*))
       
-      @scala.inline
-      def setPatterns(value: js.Array[String]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
+      inline def setPatterns(value: js.Array[String]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatternsVarargs(value: String*): Self = StObject.set(x, "patterns", js.Array(value :_*))
+      inline def setPatternsVarargs(value: String*): Self = StObject.set(x, "patterns", js.Array(value :_*))
     }
   }
   
   /* Inlined std.Partial<@jupyterlab/application.@jupyterlab/application/lib/frontend.JupyterFrontEnd.IPaths> */
-  @js.native
   trait PartialIPaths extends StObject {
     
-    var directories: js.UndefOr[AppSettings] = js.native
+    var directories: js.UndefOr[AppSettings] = js.undefined
     
-    var urls: js.UndefOr[App] = js.native
+    var urls: js.UndefOr[App] = js.undefined
   }
   object PartialIPaths {
     
-    @scala.inline
-    def apply(): PartialIPaths = {
+    inline def apply(): PartialIPaths = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialIPaths]
     }
     
-    @scala.inline
-    implicit class PartialIPathsMutableBuilder[Self <: PartialIPaths] (val x: Self) extends AnyVal {
+    extension [Self <: PartialIPaths](x: Self) {
       
-      @scala.inline
-      def setDirectories(value: AppSettings): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
+      inline def setDirectories(value: AppSettings): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectoriesUndefined: Self = StObject.set(x, "directories", js.undefined)
+      inline def setDirectoriesUndefined: Self = StObject.set(x, "directories", js.undefined)
       
-      @scala.inline
-      def setUrls(value: App): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+      inline def setUrls(value: App): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
+      inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
     }
   }
 }

@@ -2,18 +2,17 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ProceduralTextureSceneComponent extends ISceneComponent {
+trait ProceduralTextureSceneComponent
+  extends StObject
+     with ISceneComponent {
   
-  var _beforeClear: js.Any = js.native
+  /* private */ var _beforeClear: js.Any
 }
 object ProceduralTextureSceneComponent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _beforeClear: js.Any,
     dispose: () => Unit,
     name: String,
@@ -25,10 +24,8 @@ object ProceduralTextureSceneComponent {
     __obj.asInstanceOf[ProceduralTextureSceneComponent]
   }
   
-  @scala.inline
-  implicit class ProceduralTextureSceneComponentMutableBuilder[Self <: ProceduralTextureSceneComponent] (val x: Self) extends AnyVal {
+  extension [Self <: ProceduralTextureSceneComponent](x: Self) {
     
-    @scala.inline
-    def set_beforeClear(value: js.Any): Self = StObject.set(x, "_beforeClear", value.asInstanceOf[js.Any])
+    inline def set_beforeClear(value: js.Any): Self = StObject.set(x, "_beforeClear", value.asInstanceOf[js.Any])
   }
 }

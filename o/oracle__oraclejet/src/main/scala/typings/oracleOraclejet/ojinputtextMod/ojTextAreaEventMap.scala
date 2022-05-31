@@ -36,27 +36,25 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ojTextAreaEventMap
-  extends inputBaseEventMap[js.Any, ojTextAreaSettableProperties, js.Any, js.Any] {
+  extends StObject
+     with inputBaseEventMap[js.Any, ojTextAreaSettableProperties, js.Any, js.Any] {
   
-  var converterChanged: JetElementCustomEvent[Converter[_] | RegisteredConverter | Null] = js.native
+  var converterChanged: JetElementCustomEvent[Converter[js.Any] | RegisteredConverter | Null]
   
   @JSName("ojAnimateEnd")
-  var ojAnimateEnd_ojTextAreaEventMap: ojAnimateEnd = js.native
+  var ojAnimateEnd_ojTextAreaEventMap: ojAnimateEnd
   
   @JSName("ojAnimateStart")
-  var ojAnimateStart_ojTextAreaEventMap: ojAnimateStart = js.native
+  var ojAnimateStart_ojTextAreaEventMap: ojAnimateStart
   
-  var rowsChanged: JetElementCustomEvent[Double] = js.native
+  var rowsChanged: JetElementCustomEvent[Double]
 }
 object ojTextAreaEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,
@@ -74,7 +72,7 @@ object ojTextAreaEventMap {
     click: MouseEvent,
     close: Event,
     contextmenu: MouseEvent,
-    converterChanged: JetElementCustomEvent[Converter[_] | RegisteredConverter | Null],
+    converterChanged: JetElementCustomEvent[Converter[js.Any] | RegisteredConverter | Null],
     copy: ClipboardEvent,
     cuechange: Event,
     cut: ClipboardEvent,
@@ -176,19 +174,14 @@ object ojTextAreaEventMap {
     __obj.asInstanceOf[ojTextAreaEventMap]
   }
   
-  @scala.inline
-  implicit class ojTextAreaEventMapMutableBuilder[Self <: ojTextAreaEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: ojTextAreaEventMap](x: Self) {
     
-    @scala.inline
-    def setConverterChanged(value: JetElementCustomEvent[Converter[_] | RegisteredConverter | Null]): Self = StObject.set(x, "converterChanged", value.asInstanceOf[js.Any])
+    inline def setConverterChanged(value: JetElementCustomEvent[Converter[js.Any] | RegisteredConverter | Null]): Self = StObject.set(x, "converterChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
+    inline def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOjAnimateStart(value: ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
+    inline def setOjAnimateStart(value: ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "rowsChanged", value.asInstanceOf[js.Any])
+    inline def setRowsChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "rowsChanged", value.asInstanceOf[js.Any])
   }
 }

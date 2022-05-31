@@ -2,7 +2,6 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -11,14 +10,14 @@ trait NodeMaterialConnectionPoint extends StObject {
   /** @hidden */
   var _acceptedConnectionPointType: Nullable[NodeMaterialConnectionPoint] = js.native
   
-  var _associatedVariableName: js.Any = js.native
+  /* private */ var _associatedVariableName: js.Any = js.native
   
   /** @hidden */
   var _connectedPoint: Nullable[NodeMaterialConnectionPoint] = js.native
   
-  var _direction: js.Any = js.native
+  /* private */ var _direction: js.Any = js.native
   
-  var _endpoints: js.Any = js.native
+  /* private */ var _endpoints: js.Any = js.native
   
   /** @hidden */
   var _enforceAssociatedVariableName: Boolean = js.native
@@ -32,9 +31,9 @@ trait NodeMaterialConnectionPoint extends StObject {
   /** @hidden */
   var _prioritizeVertex: Boolean = js.native
   
-  var _target: js.Any = js.native
+  /* private */ var _target: js.Any = js.native
   
-  var _type: js.Any = js.native
+  /* private */ var _type: js.Any = js.native
   
   /** @hidden */
   var _typeConnectionSource: Nullable[NodeMaterialConnectionPoint] = js.native

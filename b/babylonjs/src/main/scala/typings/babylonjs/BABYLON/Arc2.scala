@@ -2,50 +2,47 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Arc2 extends StObject {
   
   /**
     * Defines the angle of the arc (from mid point to end point).
     */
-  var angle: Angle = js.native
+  var angle: Angle
   
   /**
     * Defines the center point of the arc.
     */
-  var centerPoint: Vector2 = js.native
+  var centerPoint: Vector2
   
   /** Defines the end point of the arc */
-  var endPoint: Vector2 = js.native
+  var endPoint: Vector2
   
   /** Defines the mid point of the arc */
-  var midPoint: Vector2 = js.native
+  var midPoint: Vector2
   
   /**
     * Defines the orientation of the arc (clock wise/counter clock wise).
     */
-  var orientation: Orientation = js.native
+  var orientation: Orientation
   
   /**
     * Defines the radius of the arc.
     */
-  var radius: Double = js.native
+  var radius: Double
   
   /**
     * Defines the start angle of the arc (from start point to middle point).
     */
-  var startAngle: Angle = js.native
+  var startAngle: Angle
   
   /** Defines the start point of the arc */
-  var startPoint: Vector2 = js.native
+  var startPoint: Vector2
 }
 object Arc2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     angle: Angle,
     centerPoint: Vector2,
     endPoint: Vector2,
@@ -59,31 +56,22 @@ object Arc2 {
     __obj.asInstanceOf[Arc2]
   }
   
-  @scala.inline
-  implicit class Arc2MutableBuilder[Self <: Arc2] (val x: Self) extends AnyVal {
+  extension [Self <: Arc2](x: Self) {
     
-    @scala.inline
-    def setAngle(value: Angle): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: Angle): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterPoint(value: Vector2): Self = StObject.set(x, "centerPoint", value.asInstanceOf[js.Any])
+    inline def setCenterPoint(value: Vector2): Self = StObject.set(x, "centerPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndPoint(value: Vector2): Self = StObject.set(x, "endPoint", value.asInstanceOf[js.Any])
+    inline def setEndPoint(value: Vector2): Self = StObject.set(x, "endPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMidPoint(value: Vector2): Self = StObject.set(x, "midPoint", value.asInstanceOf[js.Any])
+    inline def setMidPoint(value: Vector2): Self = StObject.set(x, "midPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientation(value: Orientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: Orientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartAngle(value: Angle): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
+    inline def setStartAngle(value: Angle): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartPoint(value: Vector2): Self = StObject.set(x, "startPoint", value.asInstanceOf[js.Any])
+    inline def setStartPoint(value: Vector2): Self = StObject.set(x, "startPoint", value.asInstanceOf[js.Any])
   }
 }

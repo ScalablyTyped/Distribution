@@ -6,7 +6,6 @@ import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object virtualJoystickMod {
@@ -18,22 +17,28 @@ object virtualJoystickMod {
   object JoystickAxis extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[JoystickAxis with Double] = js.native
+    def apply(value: Double): js.UndefOr[JoystickAxis & Double] = js.native
     
     /** X axis */
     @js.native
-    sealed trait X extends JoystickAxis
-    /* 0 */ val X: typings.babylonjs.virtualJoystickMod.JoystickAxis.X with Double = js.native
+    sealed trait X
+      extends StObject
+         with JoystickAxis
+    /* 0 */ val X: typings.babylonjs.virtualJoystickMod.JoystickAxis.X & Double = js.native
     
     /** Y axis */
     @js.native
-    sealed trait Y extends JoystickAxis
-    /* 1 */ val Y: typings.babylonjs.virtualJoystickMod.JoystickAxis.Y with Double = js.native
+    sealed trait Y
+      extends StObject
+         with JoystickAxis
+    /* 1 */ val Y: typings.babylonjs.virtualJoystickMod.JoystickAxis.Y & Double = js.native
     
     /** Z axis */
     @js.native
-    sealed trait Z extends JoystickAxis
-    /* 2 */ val Z: typings.babylonjs.virtualJoystickMod.JoystickAxis.Z with Double = js.native
+    sealed trait Z
+      extends StObject
+         with JoystickAxis
+    /* 2 */ val Z: typings.babylonjs.virtualJoystickMod.JoystickAxis.Z & Double = js.native
   }
   
   @JSImport("babylonjs/Misc/virtualJoystick", "VirtualJoystick")
@@ -45,85 +50,85 @@ object virtualJoystickMod {
     */
   class VirtualJoystick () extends StObject {
     def this(leftJoystick: Boolean) = this()
-    def this(leftJoystick: js.UndefOr[scala.Nothing], customizations: PartialVirtualJoystickCus) = this()
     def this(leftJoystick: Boolean, customizations: PartialVirtualJoystickCus) = this()
+    def this(leftJoystick: Unit, customizations: PartialVirtualJoystickCus) = this()
     
-    var _action: js.Any = js.native
+    /* private */ var _action: js.Any = js.native
     
-    var _alwaysVisible: js.Any = js.native
+    /* private */ var _alwaysVisible: js.Any = js.native
     
-    var _axisTargetedByLeftAndRight: js.Any = js.native
+    /* private */ var _axisTargetedByLeftAndRight: js.Any = js.native
     
-    var _axisTargetedByUpAndDown: js.Any = js.native
+    /* private */ var _axisTargetedByUpAndDown: js.Any = js.native
     
-    var _clearContainerSize: js.Any = js.native
+    /* private */ var _clearContainerSize: js.Any = js.native
     
-    var _clearContainerSizeOffset: js.Any = js.native
+    /* private */ var _clearContainerSizeOffset: js.Any = js.native
     
     /**
       * Clears the canvas from the previous puck / container draw
       */
-    var _clearPreviousDraw: js.Any = js.native
+    /* private */ var _clearPreviousDraw: js.Any = js.native
     
-    var _clearPuckSize: js.Any = js.native
+    /* private */ var _clearPuckSize: js.Any = js.native
     
-    var _clearPuckSizeOffset: js.Any = js.native
+    /* private */ var _clearPuckSizeOffset: js.Any = js.native
     
-    var _containerImage: js.Any = js.native
+    /* private */ var _containerImage: js.Any = js.native
     
-    var _deltaJoystickVector: js.Any = js.native
+    /* private */ var _deltaJoystickVector: js.Any = js.native
     
     /**
       * Draws the Virtual Joystick's container
       */
-    var _drawContainer: js.Any = js.native
+    /* private */ var _drawContainer: js.Any = js.native
     
     /**
       * Draws the Virtual Joystick's puck
       */
-    var _drawPuck: js.Any = js.native
+    /* private */ var _drawPuck: js.Any = js.native
     
-    var _drawVirtualJoystick: js.Any = js.native
+    /* private */ var _drawVirtualJoystick: js.Any = js.native
     
-    var _inversedSensibility: js.Any = js.native
+    /* private */ var _inversedSensibility: js.Any = js.native
     
-    var _joystickColor: js.Any = js.native
+    /* private */ var _joystickColor: js.Any = js.native
     
-    var _joystickContainerSize: js.Any = js.native
+    /* private */ var _joystickContainerSize: js.Any = js.native
     
-    var _joystickPointerID: js.Any = js.native
+    /* private */ var _joystickPointerID: js.Any = js.native
     
-    var _joystickPointerPos: js.Any = js.native
+    /* private */ var _joystickPointerPos: js.Any = js.native
     
-    var _joystickPointerStartPos: js.Any = js.native
+    /* private */ var _joystickPointerStartPos: js.Any = js.native
     
-    var _joystickPosition: js.Any = js.native
+    /* private */ var _joystickPosition: js.Any = js.native
     
-    var _joystickPreviousPointerPos: js.Any = js.native
+    /* private */ var _joystickPreviousPointerPos: js.Any = js.native
     
-    var _joystickPuckSize: js.Any = js.native
+    /* private */ var _joystickPuckSize: js.Any = js.native
     
-    var _joystickSensibility: js.Any = js.native
+    /* private */ var _joystickSensibility: js.Any = js.native
     
-    var _leftJoystick: js.Any = js.native
+    /* private */ var _leftJoystick: js.Any = js.native
     
-    var _onPointerDown: js.Any = js.native
+    /* private */ var _onPointerDown: js.Any = js.native
     
-    var _onPointerDownHandlerRef: js.Any = js.native
+    /* private */ var _onPointerDownHandlerRef: js.Any = js.native
     
-    var _onPointerMove: js.Any = js.native
+    /* private */ var _onPointerMove: js.Any = js.native
     
-    var _onPointerMoveHandlerRef: js.Any = js.native
+    /* private */ var _onPointerMoveHandlerRef: js.Any = js.native
     
-    var _onPointerUp: js.Any = js.native
+    /* private */ var _onPointerUp: js.Any = js.native
     
-    var _onPointerUpHandlerRef: js.Any = js.native
+    /* private */ var _onPointerUpHandlerRef: js.Any = js.native
     
-    var _onResize: js.Any = js.native
+    /* private */ var _onResize: js.Any = js.native
     
-    var _puckImage: js.Any = js.native
+    /* private */ var _puckImage: js.Any = js.native
     
-    var _touches: js.Any = js.native
+    /* private */ var _touches: js.Any = js.native
     
     def alwaysVisible: Boolean = js.native
     /**
@@ -182,7 +187,7 @@ object virtualJoystickMod {
       * Defines a callback to call when the joystick is touched
       * @param action defines the callback
       */
-    def setActionOnTouch(action: js.Function0[_]): Unit = js.native
+    def setActionOnTouch(action: js.Function0[js.Any]): Unit = js.native
     
     /**
       * Defines which axis you'd like to control for left & right
@@ -240,103 +245,93 @@ object virtualJoystickMod {
     @JSImport("babylonjs/Misc/virtualJoystick", "VirtualJoystick.Canvas")
     @js.native
     def Canvas: Nullable[HTMLCanvasElement] = js.native
-    @scala.inline
-    def Canvas_=(x: Nullable[HTMLCanvasElement]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Canvas")(x.asInstanceOf[js.Any])
+    inline def Canvas_=(x: Nullable[HTMLCanvasElement]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Canvas")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/virtualJoystick", "VirtualJoystick._GetDefaultOptions")
     @js.native
     def _GetDefaultOptions: js.Any = js.native
-    @scala.inline
-    def _GetDefaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetDefaultOptions")(x.asInstanceOf[js.Any])
+    inline def _GetDefaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetDefaultOptions")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/virtualJoystick", "VirtualJoystick._alwaysVisibleSticks")
     @js.native
     def _alwaysVisibleSticks: js.Any = js.native
-    @scala.inline
-    def _alwaysVisibleSticks_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_alwaysVisibleSticks")(x.asInstanceOf[js.Any])
+    inline def _alwaysVisibleSticks_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_alwaysVisibleSticks")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/virtualJoystick", "VirtualJoystick._globalJoystickIndex")
     @js.native
     def _globalJoystickIndex: js.Any = js.native
-    @scala.inline
-    def _globalJoystickIndex_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_globalJoystickIndex")(x.asInstanceOf[js.Any])
+    inline def _globalJoystickIndex_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_globalJoystickIndex")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/virtualJoystick", "VirtualJoystick.halfWidth")
     @js.native
     def halfWidth: js.Any = js.native
-    @scala.inline
-    def halfWidth_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("halfWidth")(x.asInstanceOf[js.Any])
+    inline def halfWidth_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("halfWidth")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/virtualJoystick", "VirtualJoystick.vjCanvasContext")
     @js.native
     def vjCanvasContext: js.Any = js.native
-    @scala.inline
-    def vjCanvasContext_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vjCanvasContext")(x.asInstanceOf[js.Any])
+    inline def vjCanvasContext_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vjCanvasContext")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/virtualJoystick", "VirtualJoystick.vjCanvasHeight")
     @js.native
     def vjCanvasHeight: js.Any = js.native
-    @scala.inline
-    def vjCanvasHeight_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vjCanvasHeight")(x.asInstanceOf[js.Any])
+    inline def vjCanvasHeight_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vjCanvasHeight")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/virtualJoystick", "VirtualJoystick.vjCanvasWidth")
     @js.native
     def vjCanvasWidth: js.Any = js.native
-    @scala.inline
-    def vjCanvasWidth_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vjCanvasWidth")(x.asInstanceOf[js.Any])
+    inline def vjCanvasWidth_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vjCanvasWidth")(x.asInstanceOf[js.Any])
   }
   
   /**
     * Represents the different customization options available
     * for VirtualJoystick
     */
-  @js.native
   trait VirtualJoystickCustomizations extends StObject {
     
     /**
       * Defines whether or not the joystick container is always visible
       */
-    var alwaysVisible: Boolean = js.native
+    var alwaysVisible: Boolean
     
     /**
       * Color of the joystick && puck
       */
-    var color: String = js.native
+    var color: String
     
     /**
       * Image URL for the joystick's container
       */
-    var containerImage: js.UndefOr[String] = js.native
+    var containerImage: js.UndefOr[String] = js.undefined
     
     /**
       * Size of the joystick's container
       */
-    var containerSize: Double = js.native
+    var containerSize: Double
     
     /**
       * Defines whether or not to limit the movement of the puck to the joystick's container
       */
-    var limitToContainer: Boolean = js.native
+    var limitToContainer: Boolean
     
     /**
       * Defines the unmoving position of the joystick container
       */
-    var position: js.UndefOr[Y] = js.native
+    var position: js.UndefOr[Y] = js.undefined
     
     /**
       * Image URL for the joystick's puck
       */
-    var puckImage: js.UndefOr[String] = js.native
+    var puckImage: js.UndefOr[String] = js.undefined
     
     /**
       * Size of the joystick's puck
       */
-    var puckSize: Double = js.native
+    var puckSize: Double
   }
   object VirtualJoystickCustomizations {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alwaysVisible: Boolean,
       color: String,
       containerSize: Double,
@@ -347,41 +342,29 @@ object virtualJoystickMod {
       __obj.asInstanceOf[VirtualJoystickCustomizations]
     }
     
-    @scala.inline
-    implicit class VirtualJoystickCustomizationsMutableBuilder[Self <: VirtualJoystickCustomizations] (val x: Self) extends AnyVal {
+    extension [Self <: VirtualJoystickCustomizations](x: Self) {
       
-      @scala.inline
-      def setAlwaysVisible(value: Boolean): Self = StObject.set(x, "alwaysVisible", value.asInstanceOf[js.Any])
+      inline def setAlwaysVisible(value: Boolean): Self = StObject.set(x, "alwaysVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerImage(value: String): Self = StObject.set(x, "containerImage", value.asInstanceOf[js.Any])
+      inline def setContainerImage(value: String): Self = StObject.set(x, "containerImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerImageUndefined: Self = StObject.set(x, "containerImage", js.undefined)
+      inline def setContainerImageUndefined: Self = StObject.set(x, "containerImage", js.undefined)
       
-      @scala.inline
-      def setContainerSize(value: Double): Self = StObject.set(x, "containerSize", value.asInstanceOf[js.Any])
+      inline def setContainerSize(value: Double): Self = StObject.set(x, "containerSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitToContainer(value: Boolean): Self = StObject.set(x, "limitToContainer", value.asInstanceOf[js.Any])
+      inline def setLimitToContainer(value: Boolean): Self = StObject.set(x, "limitToContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: Y): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Y): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setPuckImage(value: String): Self = StObject.set(x, "puckImage", value.asInstanceOf[js.Any])
+      inline def setPuckImage(value: String): Self = StObject.set(x, "puckImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPuckImageUndefined: Self = StObject.set(x, "puckImage", js.undefined)
+      inline def setPuckImageUndefined: Self = StObject.set(x, "puckImage", js.undefined)
       
-      @scala.inline
-      def setPuckSize(value: Double): Self = StObject.set(x, "puckSize", value.asInstanceOf[js.Any])
+      inline def setPuckSize(value: Double): Self = StObject.set(x, "puckSize", value.asInstanceOf[js.Any])
     }
   }
 }

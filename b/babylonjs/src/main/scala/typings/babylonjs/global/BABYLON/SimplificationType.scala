@@ -2,7 +2,6 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.SimplificationType")
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object SimplificationType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.babylonjs.BABYLON.SimplificationType with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.babylonjs.BABYLON.SimplificationType & Double] = js.native
   
-  /* 0 */ val QUADRATIC: typings.babylonjs.BABYLON.SimplificationType.QUADRATIC with Double = js.native
+  /* 0 */ val QUADRATIC: typings.babylonjs.BABYLON.SimplificationType.QUADRATIC & Double = js.native
 }

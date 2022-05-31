@@ -2,7 +2,6 @@ package typings.babylonjs.legacyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "BouncingBehavior")
@@ -22,8 +21,7 @@ object BouncingBehavior {
   @JSImport("babylonjs/Legacy/legacy", "BouncingBehavior.EasingFunction")
   @js.native
   def EasingFunction: typings.babylonjs.easingMod.BackEase = js.native
-  @scala.inline
-  def EasingFunction_=(x: typings.babylonjs.easingMod.BackEase): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EasingFunction")(x.asInstanceOf[js.Any])
+  inline def EasingFunction_=(x: typings.babylonjs.easingMod.BackEase): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EasingFunction")(x.asInstanceOf[js.Any])
   
   /**
     * The easing mode used by animations
@@ -31,6 +29,5 @@ object BouncingBehavior {
   @JSImport("babylonjs/Legacy/legacy", "BouncingBehavior.EasingMode")
   @js.native
   def EasingMode: Double = js.native
-  @scala.inline
-  def EasingMode_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EasingMode")(x.asInstanceOf[js.Any])
+  inline def EasingMode_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EasingMode")(x.asInstanceOf[js.Any])
 }

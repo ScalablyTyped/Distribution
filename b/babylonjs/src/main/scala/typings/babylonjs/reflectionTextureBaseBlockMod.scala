@@ -7,7 +7,6 @@ import typings.babylonjs.nodeMaterialBuildStateMod.NodeMaterialBuildState
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reflectionTextureBaseBlockMod {
@@ -63,13 +62,13 @@ object reflectionTextureBaseBlockMod {
     /** @hidden */
     var _defineSphericalName: String = js.native
     
-    var _directionWName: String = js.native
+    /* protected */ var _directionWName: String = js.native
     
     /* protected */ def _getTexture(): Nullable[BaseTexture] = js.native
     
-    var _positionUVWName: String = js.native
+    /* protected */ var _positionUVWName: String = js.native
     
-    var _reflectionColorName: String = js.native
+    /* protected */ var _reflectionColorName: String = js.native
     
     /** @hidden */
     var _reflectionCoordsName: String = js.native
@@ -77,7 +76,7 @@ object reflectionTextureBaseBlockMod {
     /** @hidden */
     var _reflectionMatrixName: String = js.native
     
-    var _reflectionVectorName: String = js.native
+    /* protected */ var _reflectionVectorName: String = js.native
     
     /**
       * Gets the camera (or eye) position component
@@ -91,9 +90,9 @@ object reflectionTextureBaseBlockMod {
       * @returns the shader code
       */
     def handleFragmentSideCodeReflectionColor(): String = js.native
-    def handleFragmentSideCodeReflectionColor(lodVarName: js.UndefOr[scala.Nothing], swizzleLookupTexture: String): String = js.native
     def handleFragmentSideCodeReflectionColor(lodVarName: String): String = js.native
     def handleFragmentSideCodeReflectionColor(lodVarName: String, swizzleLookupTexture: String): String = js.native
+    def handleFragmentSideCodeReflectionColor(lodVarName: Unit, swizzleLookupTexture: String): String = js.native
     
     /**
       * Generates the reflection coords code for the fragment code path
@@ -103,9 +102,9 @@ object reflectionTextureBaseBlockMod {
       * @returns the shader code
       */
     def handleFragmentSideCodeReflectionCoords(worldNormalVarName: String): String = js.native
-    def handleFragmentSideCodeReflectionCoords(worldNormalVarName: String, worldPos: js.UndefOr[scala.Nothing], onlyReflectionVector: Boolean): String = js.native
     def handleFragmentSideCodeReflectionCoords(worldNormalVarName: String, worldPos: String): String = js.native
     def handleFragmentSideCodeReflectionCoords(worldNormalVarName: String, worldPos: String, onlyReflectionVector: Boolean): String = js.native
+    def handleFragmentSideCodeReflectionCoords(worldNormalVarName: String, worldPos: Unit, onlyReflectionVector: Boolean): String = js.native
     
     /**
       * Handles the inits for the fragment code path

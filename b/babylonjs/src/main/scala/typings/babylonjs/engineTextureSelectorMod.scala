@@ -3,7 +3,6 @@ package typings.babylonjs
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object engineTextureSelectorMod {
@@ -11,14 +10,13 @@ object engineTextureSelectorMod {
   /* augmented module */
   object babylonjsEnginesEngineAugmentingMod {
     
-    @js.native
     trait Engine extends StObject {
       
       /** @hidden */
-      var _excludedCompressedTextures: js.Array[String] = js.native
+      var _excludedCompressedTextures: js.Array[String]
       
       /** @hidden */
-      var _textureFormatInUse: String = js.native
+      var _textureFormatInUse: String
       
       /**
         * Set the compressed texture extensions or file names to skip.
@@ -26,7 +24,7 @@ object engineTextureSelectorMod {
         * @param skippedFiles defines the list of those texture files you want to skip
         * Example: [".dds", ".env", "myfile.png"]
         */
-      def setCompressedTextureExclusions(skippedFiles: js.Array[String]): Unit = js.native
+      def setCompressedTextureExclusions(skippedFiles: js.Array[String]): Unit
       
       /**
         * Set the compressed texture format to use, based on the formats you have, and the formats
@@ -48,61 +46,50 @@ object engineTextureSelectorMod {
         * Current families are astc, dxt, pvrtc, etc2, & etc1.
         * @returns The extension selected.
         */
-      def setTextureFormatToUse(formatsAvailable: js.Array[String]): Nullable[String] = js.native
+      def setTextureFormatToUse(formatsAvailable: js.Array[String]): Nullable[String]
       
       /**
         * Gets the texture format in use
         */
-      val textureFormatInUse: Nullable[String] = js.native
+      val textureFormatInUse: Nullable[String]
       
       /**
         * Gets the list of texture formats supported
         */
-      val texturesSupported: js.Array[String] = js.native
+      val texturesSupported: js.Array[String]
     }
     object Engine {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         _excludedCompressedTextures: js.Array[String],
         _textureFormatInUse: String,
         setCompressedTextureExclusions: js.Array[String] => Unit,
         setTextureFormatToUse: js.Array[String] => Nullable[String],
         texturesSupported: js.Array[String]
       ): Engine = {
-        val __obj = js.Dynamic.literal(_excludedCompressedTextures = _excludedCompressedTextures.asInstanceOf[js.Any], _textureFormatInUse = _textureFormatInUse.asInstanceOf[js.Any], setCompressedTextureExclusions = js.Any.fromFunction1(setCompressedTextureExclusions), setTextureFormatToUse = js.Any.fromFunction1(setTextureFormatToUse), texturesSupported = texturesSupported.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(_excludedCompressedTextures = _excludedCompressedTextures.asInstanceOf[js.Any], _textureFormatInUse = _textureFormatInUse.asInstanceOf[js.Any], setCompressedTextureExclusions = js.Any.fromFunction1(setCompressedTextureExclusions), setTextureFormatToUse = js.Any.fromFunction1(setTextureFormatToUse), texturesSupported = texturesSupported.asInstanceOf[js.Any], textureFormatInUse = null)
         __obj.asInstanceOf[Engine]
       }
       
-      @scala.inline
-      implicit class EngineMutableBuilder[Self <: Engine] (val x: Self) extends AnyVal {
+      extension [Self <: Engine](x: Self) {
         
-        @scala.inline
-        def setSetCompressedTextureExclusions(value: js.Array[String] => Unit): Self = StObject.set(x, "setCompressedTextureExclusions", js.Any.fromFunction1(value))
+        inline def setSetCompressedTextureExclusions(value: js.Array[String] => Unit): Self = StObject.set(x, "setCompressedTextureExclusions", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetTextureFormatToUse(value: js.Array[String] => Nullable[String]): Self = StObject.set(x, "setTextureFormatToUse", js.Any.fromFunction1(value))
+        inline def setSetTextureFormatToUse(value: js.Array[String] => Nullable[String]): Self = StObject.set(x, "setTextureFormatToUse", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setTextureFormatInUse(value: Nullable[String]): Self = StObject.set(x, "textureFormatInUse", value.asInstanceOf[js.Any])
+        inline def setTextureFormatInUse(value: Nullable[String]): Self = StObject.set(x, "textureFormatInUse", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextureFormatInUseNull: Self = StObject.set(x, "textureFormatInUse", null)
+        inline def setTextureFormatInUseNull: Self = StObject.set(x, "textureFormatInUse", null)
         
-        @scala.inline
-        def setTexturesSupported(value: js.Array[String]): Self = StObject.set(x, "texturesSupported", value.asInstanceOf[js.Any])
+        inline def setTexturesSupported(value: js.Array[String]): Self = StObject.set(x, "texturesSupported", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTexturesSupportedVarargs(value: String*): Self = StObject.set(x, "texturesSupported", js.Array(value :_*))
+        inline def setTexturesSupportedVarargs(value: String*): Self = StObject.set(x, "texturesSupported", js.Array(value :_*))
         
-        @scala.inline
-        def set_excludedCompressedTextures(value: js.Array[String]): Self = StObject.set(x, "_excludedCompressedTextures", value.asInstanceOf[js.Any])
+        inline def set_excludedCompressedTextures(value: js.Array[String]): Self = StObject.set(x, "_excludedCompressedTextures", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set_excludedCompressedTexturesVarargs(value: String*): Self = StObject.set(x, "_excludedCompressedTextures", js.Array(value :_*))
+        inline def set_excludedCompressedTexturesVarargs(value: String*): Self = StObject.set(x, "_excludedCompressedTextures", js.Array(value :_*))
         
-        @scala.inline
-        def set_textureFormatInUse(value: String): Self = StObject.set(x, "_textureFormatInUse", value.asInstanceOf[js.Any])
+        inline def set_textureFormatInUse(value: String): Self = StObject.set(x, "_textureFormatInUse", value.asInstanceOf[js.Any])
       }
     }
   }

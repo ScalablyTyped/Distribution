@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "jss-plugin-extend"
-version := "10.5.0-73d203"
+version := "10.5.0-8ac507"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "csstype" % "2.6.14-344a29",
+  "org.scalablytyped" %%% "csstype" % "2.6.14-dc2f99",
   "org.scalablytyped" %%% "indefinite-observable" % "2.0.1-28b7d6",
-  "org.scalablytyped" %%% "jss" % "10.5.0-2bdc57",
-  "org.scalablytyped" %%% "std" % "4.1-2f6855")
+  "org.scalablytyped" %%% "jss" % "10.5.0-545e4d",
+  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

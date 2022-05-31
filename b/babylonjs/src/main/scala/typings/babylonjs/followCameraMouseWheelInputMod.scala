@@ -4,18 +4,19 @@ import typings.babylonjs.cameraInputsManagerMod.ICameraInput
 import typings.babylonjs.followCameraMod.FollowCamera
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object followCameraMouseWheelInputMod {
   
   @JSImport("babylonjs/Cameras/Inputs/followCameraMouseWheelInput", "FollowCameraMouseWheelInput")
   @js.native
-  class FollowCameraMouseWheelInput () extends ICameraInput[FollowCamera] {
+  class FollowCameraMouseWheelInput ()
+    extends StObject
+       with ICameraInput[FollowCamera] {
     
-    var _observer: js.Any = js.native
+    /* private */ var _observer: js.Any = js.native
     
-    var _wheel: js.Any = js.native
+    /* private */ var _wheel: js.Any = js.native
     
     /**
       * Moue wheel controls height. (Mouse wheel modifies camera.heightOffset value.)

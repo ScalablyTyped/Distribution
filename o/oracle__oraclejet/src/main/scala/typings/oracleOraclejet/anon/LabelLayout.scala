@@ -2,24 +2,21 @@ package typings.oracleOraclejet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelLayout extends StObject {
   
-  var id: js.Any = js.native
+  var id: js.Any
   
-  var labelLayout: typings.oracleOraclejet.ojdiagramUtilsMod.LabelLayout = js.native
+  var labelLayout: typings.oracleOraclejet.ojdiagramUtilsMod.LabelLayout
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object LabelLayout {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     id: js.Any,
     labelLayout: typings.oracleOraclejet.ojdiagramUtilsMod.LabelLayout,
     x: Double,
@@ -29,19 +26,14 @@ object LabelLayout {
     __obj.asInstanceOf[LabelLayout]
   }
   
-  @scala.inline
-  implicit class LabelLayoutMutableBuilder[Self <: LabelLayout] (val x: Self) extends AnyVal {
+  extension [Self <: LabelLayout](x: Self) {
     
-    @scala.inline
-    def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelLayout(value: typings.oracleOraclejet.ojdiagramUtilsMod.LabelLayout): Self = StObject.set(x, "labelLayout", value.asInstanceOf[js.Any])
+    inline def setLabelLayout(value: typings.oracleOraclejet.ojdiagramUtilsMod.LabelLayout): Self = StObject.set(x, "labelLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

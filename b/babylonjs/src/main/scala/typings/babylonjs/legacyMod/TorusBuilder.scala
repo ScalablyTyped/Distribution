@@ -3,7 +3,6 @@ package typings.babylonjs.legacyMod
 import typings.babylonjs.anon.Thickness
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "TorusBuilder")
@@ -12,6 +11,10 @@ class TorusBuilder ()
   extends typings.babylonjs.indexMod.TorusBuilder
 /* static members */
 object TorusBuilder {
+  
+  @JSImport("babylonjs/Legacy/legacy", "TorusBuilder")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a torus mesh
@@ -27,7 +30,5 @@ object TorusBuilder {
     * @returns the torus mesh
     * @see https://doc.babylonjs.com/how_to/set_shapes#torus
     */
-  @JSImport("babylonjs/Legacy/legacy", "TorusBuilder.CreateTorus")
-  @js.native
-  def CreateTorus(name: String, options: Thickness, scene: js.Any): typings.babylonjs.meshMod.Mesh = js.native
+  inline def CreateTorus(name: String, options: Thickness, scene: js.Any): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
 }

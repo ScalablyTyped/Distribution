@@ -2,11 +2,12 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PhotoDome extends TextureDome[Texture] {
+trait PhotoDome
+  extends StObject
+     with TextureDome[Texture] {
   
   /**
     * Gets the current video mode for the video. It can be:

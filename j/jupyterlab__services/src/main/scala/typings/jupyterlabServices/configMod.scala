@@ -6,57 +6,52 @@ import typings.luminoCoreutils.jsonMod.JSONObject
 import typings.luminoCoreutils.jsonMod.JSONValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configMod {
   
   object ConfigSection {
     
+    @JSImport("@jupyterlab/services/lib/config", "ConfigSection")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Create a config section.
       *
       * @returns A Promise that is fulfilled with the config section is loaded.
       */
-    @JSImport("@jupyterlab/services/lib/config", "ConfigSection.create")
-    @js.native
-    def create(options: IOptions): js.Promise[IConfigSection] = js.native
+    inline def create(options: IOptions): js.Promise[IConfigSection] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IConfigSection]]
     
     /**
       * The options used to create a config section.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The section name.
         */
-      var name: String = js.native
+      var name: String
       
       /**
         * The optional server settings.
         */
-      var serverSettings: js.UndefOr[ISettings] = js.native
+      var serverSettings: js.UndefOr[ISettings] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(name: String): IOptions = {
+      inline def apply(name: String): IOptions = {
         val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServerSettings(value: ISettings): Self = StObject.set(x, "serverSettings", value.asInstanceOf[js.Any])
+        inline def setServerSettings(value: ISettings): Self = StObject.set(x, "serverSettings", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServerSettingsUndefined: Self = StObject.set(x, "serverSettings", js.undefined)
+        inline def setServerSettingsUndefined: Self = StObject.set(x, "serverSettings", js.undefined)
       }
     }
   }
@@ -75,13 +70,13 @@ object configMod {
       * #### Notes
       * If we have no classname, get all of the data in the Section
       */
-    var _classData: js.Any = js.native
+    /* private */ var _classData: js.Any = js.native
     
-    var _className: js.Any = js.native
+    /* private */ var _className: js.Any = js.native
     
-    var _defaults: js.Any = js.native
+    /* private */ var _defaults: js.Any = js.native
     
-    var _section: js.Any = js.native
+    /* private */ var _section: js.Any = js.native
     
     /**
       * Get data from the config section or fall back to defaults.
@@ -106,65 +101,56 @@ object configMod {
     /**
       * The options used to initialize a ConfigWithDefaults object.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The optional classname namespace.
         */
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
       /**
         * The default values.
         */
-      var defaults: js.UndefOr[JSONObject] = js.native
+      var defaults: js.UndefOr[JSONObject] = js.undefined
       
       /**
         * The configuration section.
         */
-      var section: IConfigSection = js.native
+      var section: IConfigSection
     }
     object IOptions {
       
-      @scala.inline
-      def apply(section: IConfigSection): IOptions = {
+      inline def apply(section: IConfigSection): IOptions = {
         val __obj = js.Dynamic.literal(section = section.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+        inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
         
-        @scala.inline
-        def setDefaults(value: JSONObject): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+        inline def setDefaults(value: JSONObject): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
+        inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
         
-        @scala.inline
-        def setSection(value: IConfigSection): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+        inline def setSection(value: IConfigSection): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
       }
     }
   }
   
-  @js.native
   trait IConfigSection extends StObject {
     
     /**
       * The data for this section.
       */
-    val data: JSONObject = js.native
+    val data: JSONObject
     
     /**
       * The server settings for the section.
       */
-    val serverSettings: ISettings = js.native
+    val serverSettings: ISettings
     
     /**
       * Modify the stored config values.
@@ -174,27 +160,22 @@ object configMod {
       * and updates the local data with the response, and fulfils the promise
       * with that data.
       */
-    def update(newdata: JSONObject): js.Promise[JSONObject] = js.native
+    def update(newdata: JSONObject): js.Promise[JSONObject]
   }
   object IConfigSection {
     
-    @scala.inline
-    def apply(data: JSONObject, serverSettings: ISettings, update: JSONObject => js.Promise[JSONObject]): IConfigSection = {
+    inline def apply(data: JSONObject, serverSettings: ISettings, update: JSONObject => js.Promise[JSONObject]): IConfigSection = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], serverSettings = serverSettings.asInstanceOf[js.Any], update = js.Any.fromFunction1(update))
       __obj.asInstanceOf[IConfigSection]
     }
     
-    @scala.inline
-    implicit class IConfigSectionMutableBuilder[Self <: IConfigSection] (val x: Self) extends AnyVal {
+    extension [Self <: IConfigSection](x: Self) {
       
-      @scala.inline
-      def setData(value: JSONObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: JSONObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerSettings(value: ISettings): Self = StObject.set(x, "serverSettings", value.asInstanceOf[js.Any])
+      inline def setServerSettings(value: ISettings): Self = StObject.set(x, "serverSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdate(value: JSONObject => js.Promise[JSONObject]): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+      inline def setUpdate(value: JSONObject => js.Promise[JSONObject]): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     }
   }
 }

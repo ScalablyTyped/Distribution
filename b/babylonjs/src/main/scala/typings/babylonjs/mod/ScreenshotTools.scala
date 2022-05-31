@@ -3,7 +3,6 @@ package typings.babylonjs.mod
 import typings.babylonjs.screenshotSizeMod.IScreenshotSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "ScreenshotTools")
@@ -17,39 +16,31 @@ object ScreenshotTools {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshot")
-  @js.native
-  def CreateScreenshot(
+  inline def CreateScreenshot(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
     size: Double
-  ): Unit = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshot")
-  @js.native
-  def CreateScreenshot(
-    engine: typings.babylonjs.engineMod.Engine,
-    camera: typings.babylonjs.cameraMod.Camera,
-    size: Double,
-    successCallback: js.UndefOr[scala.Nothing],
-    mimeType: String
-  ): Unit = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshot")
-  @js.native
-  def CreateScreenshot(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshot")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def CreateScreenshot(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
     size: Double,
     successCallback: js.Function1[/* data */ String, Unit]
-  ): Unit = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshot")
-  @js.native
-  def CreateScreenshot(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshot")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def CreateScreenshot(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
     size: Double,
     successCallback: js.Function1[/* data */ String, Unit],
     mimeType: String
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshot")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def CreateScreenshot(
+    engine: typings.babylonjs.engineMod.Engine,
+    camera: typings.babylonjs.cameraMod.Camera,
+    size: Double,
+    successCallback: Unit,
+    mimeType: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshot")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Captures a screenshot of the current rendering
     * @see https://doc.babylonjs.com/how_to/render_scene_on_a_png
@@ -66,39 +57,31 @@ object ScreenshotTools {
     * @param mimeType defines the MIME type of the screenshot image (default: image/png).
     * Check your browser for supported MIME types
     */
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshot")
-  @js.native
-  def CreateScreenshot(
+  inline def CreateScreenshot(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
     size: IScreenshotSize
-  ): Unit = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshot")
-  @js.native
-  def CreateScreenshot(
-    engine: typings.babylonjs.engineMod.Engine,
-    camera: typings.babylonjs.cameraMod.Camera,
-    size: IScreenshotSize,
-    successCallback: js.UndefOr[scala.Nothing],
-    mimeType: String
-  ): Unit = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshot")
-  @js.native
-  def CreateScreenshot(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshot")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def CreateScreenshot(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
     size: IScreenshotSize,
     successCallback: js.Function1[/* data */ String, Unit]
-  ): Unit = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshot")
-  @js.native
-  def CreateScreenshot(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshot")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def CreateScreenshot(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
     size: IScreenshotSize,
     successCallback: js.Function1[/* data */ String, Unit],
     mimeType: String
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshot")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def CreateScreenshot(
+    engine: typings.babylonjs.engineMod.Engine,
+    camera: typings.babylonjs.cameraMod.Camera,
+    size: IScreenshotSize,
+    successCallback: Unit,
+    mimeType: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshot")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Captures a screenshot of the current rendering
@@ -115,21 +98,17 @@ object ScreenshotTools {
     * @returns screenshot as a string of base64-encoded characters. This string can be assigned
     * to the src parameter of an <img> to display it
     */
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotAsync")
-  @js.native
-  def CreateScreenshotAsync(
+  inline def CreateScreenshotAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
     size: js.Any
-  ): js.Promise[String] = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotAsync")
-  @js.native
-  def CreateScreenshotAsync(
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def CreateScreenshotAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
     size: js.Any,
     mimeType: String
-  ): js.Promise[String] = js.native
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   /**
     * Generates an image screenshot from the specified camera.
@@ -152,9 +131,7 @@ object ScreenshotTools {
     * @param renderSprites Whether the sprites should be rendered or not (default: false)
     * @param enableStencilBuffer Whether the stencil buffer should be enabled or not (default: false)
     */
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotUsingRenderTarget")
-  @js.native
-  def CreateScreenshotUsingRenderTarget(
+  inline def CreateScreenshotUsingRenderTarget(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
     size: IScreenshotSize | Double,
@@ -165,7 +142,7 @@ object ScreenshotTools {
     fileName: js.UndefOr[String],
     renderSprites: js.UndefOr[Boolean],
     enableStencilBuffer: js.UndefOr[Boolean]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTarget")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], renderSprites.asInstanceOf[js.Any], enableStencilBuffer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Generates an image screenshot from the specified camera.
@@ -186,339 +163,33 @@ object ScreenshotTools {
     * @returns screenshot as a string of base64-encoded characters. This string can be assigned
     * to the src parameter of an <img> to display it
     */
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
-  @js.native
-  def CreateScreenshotUsingRenderTargetAsync(
+  inline def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
     size: js.Any
-  ): js.Promise[String] = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
-  @js.native
-  def CreateScreenshotUsingRenderTargetAsync(
-    engine: typings.babylonjs.engineMod.Engine,
-    camera: typings.babylonjs.cameraMod.Camera,
-    size: js.Any,
-    mimeType: js.UndefOr[scala.Nothing],
-    samples: js.UndefOr[scala.Nothing],
-    antialiasing: js.UndefOr[scala.Nothing],
-    fileName: js.UndefOr[scala.Nothing],
-    renderSprites: Boolean
-  ): js.Promise[String] = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
-  @js.native
-  def CreateScreenshotUsingRenderTargetAsync(
-    engine: typings.babylonjs.engineMod.Engine,
-    camera: typings.babylonjs.cameraMod.Camera,
-    size: js.Any,
-    mimeType: js.UndefOr[scala.Nothing],
-    samples: js.UndefOr[scala.Nothing],
-    antialiasing: js.UndefOr[scala.Nothing],
-    fileName: String
-  ): js.Promise[String] = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
-  @js.native
-  def CreateScreenshotUsingRenderTargetAsync(
-    engine: typings.babylonjs.engineMod.Engine,
-    camera: typings.babylonjs.cameraMod.Camera,
-    size: js.Any,
-    mimeType: js.UndefOr[scala.Nothing],
-    samples: js.UndefOr[scala.Nothing],
-    antialiasing: js.UndefOr[scala.Nothing],
-    fileName: String,
-    renderSprites: Boolean
-  ): js.Promise[String] = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
-  @js.native
-  def CreateScreenshotUsingRenderTargetAsync(
-    engine: typings.babylonjs.engineMod.Engine,
-    camera: typings.babylonjs.cameraMod.Camera,
-    size: js.Any,
-    mimeType: js.UndefOr[scala.Nothing],
-    samples: js.UndefOr[scala.Nothing],
-    antialiasing: Boolean
-  ): js.Promise[String] = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
-  @js.native
-  def CreateScreenshotUsingRenderTargetAsync(
-    engine: typings.babylonjs.engineMod.Engine,
-    camera: typings.babylonjs.cameraMod.Camera,
-    size: js.Any,
-    mimeType: js.UndefOr[scala.Nothing],
-    samples: js.UndefOr[scala.Nothing],
-    antialiasing: Boolean,
-    fileName: js.UndefOr[scala.Nothing],
-    renderSprites: Boolean
-  ): js.Promise[String] = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
-  @js.native
-  def CreateScreenshotUsingRenderTargetAsync(
-    engine: typings.babylonjs.engineMod.Engine,
-    camera: typings.babylonjs.cameraMod.Camera,
-    size: js.Any,
-    mimeType: js.UndefOr[scala.Nothing],
-    samples: js.UndefOr[scala.Nothing],
-    antialiasing: Boolean,
-    fileName: String
-  ): js.Promise[String] = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
-  @js.native
-  def CreateScreenshotUsingRenderTargetAsync(
-    engine: typings.babylonjs.engineMod.Engine,
-    camera: typings.babylonjs.cameraMod.Camera,
-    size: js.Any,
-    mimeType: js.UndefOr[scala.Nothing],
-    samples: js.UndefOr[scala.Nothing],
-    antialiasing: Boolean,
-    fileName: String,
-    renderSprites: Boolean
-  ): js.Promise[String] = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
-  @js.native
-  def CreateScreenshotUsingRenderTargetAsync(
-    engine: typings.babylonjs.engineMod.Engine,
-    camera: typings.babylonjs.cameraMod.Camera,
-    size: js.Any,
-    mimeType: js.UndefOr[scala.Nothing],
-    samples: Double
-  ): js.Promise[String] = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
-  @js.native
-  def CreateScreenshotUsingRenderTargetAsync(
-    engine: typings.babylonjs.engineMod.Engine,
-    camera: typings.babylonjs.cameraMod.Camera,
-    size: js.Any,
-    mimeType: js.UndefOr[scala.Nothing],
-    samples: Double,
-    antialiasing: js.UndefOr[scala.Nothing],
-    fileName: js.UndefOr[scala.Nothing],
-    renderSprites: Boolean
-  ): js.Promise[String] = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
-  @js.native
-  def CreateScreenshotUsingRenderTargetAsync(
-    engine: typings.babylonjs.engineMod.Engine,
-    camera: typings.babylonjs.cameraMod.Camera,
-    size: js.Any,
-    mimeType: js.UndefOr[scala.Nothing],
-    samples: Double,
-    antialiasing: js.UndefOr[scala.Nothing],
-    fileName: String
-  ): js.Promise[String] = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
-  @js.native
-  def CreateScreenshotUsingRenderTargetAsync(
-    engine: typings.babylonjs.engineMod.Engine,
-    camera: typings.babylonjs.cameraMod.Camera,
-    size: js.Any,
-    mimeType: js.UndefOr[scala.Nothing],
-    samples: Double,
-    antialiasing: js.UndefOr[scala.Nothing],
-    fileName: String,
-    renderSprites: Boolean
-  ): js.Promise[String] = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
-  @js.native
-  def CreateScreenshotUsingRenderTargetAsync(
-    engine: typings.babylonjs.engineMod.Engine,
-    camera: typings.babylonjs.cameraMod.Camera,
-    size: js.Any,
-    mimeType: js.UndefOr[scala.Nothing],
-    samples: Double,
-    antialiasing: Boolean
-  ): js.Promise[String] = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
-  @js.native
-  def CreateScreenshotUsingRenderTargetAsync(
-    engine: typings.babylonjs.engineMod.Engine,
-    camera: typings.babylonjs.cameraMod.Camera,
-    size: js.Any,
-    mimeType: js.UndefOr[scala.Nothing],
-    samples: Double,
-    antialiasing: Boolean,
-    fileName: js.UndefOr[scala.Nothing],
-    renderSprites: Boolean
-  ): js.Promise[String] = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
-  @js.native
-  def CreateScreenshotUsingRenderTargetAsync(
-    engine: typings.babylonjs.engineMod.Engine,
-    camera: typings.babylonjs.cameraMod.Camera,
-    size: js.Any,
-    mimeType: js.UndefOr[scala.Nothing],
-    samples: Double,
-    antialiasing: Boolean,
-    fileName: String
-  ): js.Promise[String] = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
-  @js.native
-  def CreateScreenshotUsingRenderTargetAsync(
-    engine: typings.babylonjs.engineMod.Engine,
-    camera: typings.babylonjs.cameraMod.Camera,
-    size: js.Any,
-    mimeType: js.UndefOr[scala.Nothing],
-    samples: Double,
-    antialiasing: Boolean,
-    fileName: String,
-    renderSprites: Boolean
-  ): js.Promise[String] = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
-  @js.native
-  def CreateScreenshotUsingRenderTargetAsync(
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
     size: js.Any,
     mimeType: String
-  ): js.Promise[String] = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
-  @js.native
-  def CreateScreenshotUsingRenderTargetAsync(
-    engine: typings.babylonjs.engineMod.Engine,
-    camera: typings.babylonjs.cameraMod.Camera,
-    size: js.Any,
-    mimeType: String,
-    samples: js.UndefOr[scala.Nothing],
-    antialiasing: js.UndefOr[scala.Nothing],
-    fileName: js.UndefOr[scala.Nothing],
-    renderSprites: Boolean
-  ): js.Promise[String] = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
-  @js.native
-  def CreateScreenshotUsingRenderTargetAsync(
-    engine: typings.babylonjs.engineMod.Engine,
-    camera: typings.babylonjs.cameraMod.Camera,
-    size: js.Any,
-    mimeType: String,
-    samples: js.UndefOr[scala.Nothing],
-    antialiasing: js.UndefOr[scala.Nothing],
-    fileName: String
-  ): js.Promise[String] = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
-  @js.native
-  def CreateScreenshotUsingRenderTargetAsync(
-    engine: typings.babylonjs.engineMod.Engine,
-    camera: typings.babylonjs.cameraMod.Camera,
-    size: js.Any,
-    mimeType: String,
-    samples: js.UndefOr[scala.Nothing],
-    antialiasing: js.UndefOr[scala.Nothing],
-    fileName: String,
-    renderSprites: Boolean
-  ): js.Promise[String] = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
-  @js.native
-  def CreateScreenshotUsingRenderTargetAsync(
-    engine: typings.babylonjs.engineMod.Engine,
-    camera: typings.babylonjs.cameraMod.Camera,
-    size: js.Any,
-    mimeType: String,
-    samples: js.UndefOr[scala.Nothing],
-    antialiasing: Boolean
-  ): js.Promise[String] = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
-  @js.native
-  def CreateScreenshotUsingRenderTargetAsync(
-    engine: typings.babylonjs.engineMod.Engine,
-    camera: typings.babylonjs.cameraMod.Camera,
-    size: js.Any,
-    mimeType: String,
-    samples: js.UndefOr[scala.Nothing],
-    antialiasing: Boolean,
-    fileName: js.UndefOr[scala.Nothing],
-    renderSprites: Boolean
-  ): js.Promise[String] = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
-  @js.native
-  def CreateScreenshotUsingRenderTargetAsync(
-    engine: typings.babylonjs.engineMod.Engine,
-    camera: typings.babylonjs.cameraMod.Camera,
-    size: js.Any,
-    mimeType: String,
-    samples: js.UndefOr[scala.Nothing],
-    antialiasing: Boolean,
-    fileName: String
-  ): js.Promise[String] = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
-  @js.native
-  def CreateScreenshotUsingRenderTargetAsync(
-    engine: typings.babylonjs.engineMod.Engine,
-    camera: typings.babylonjs.cameraMod.Camera,
-    size: js.Any,
-    mimeType: String,
-    samples: js.UndefOr[scala.Nothing],
-    antialiasing: Boolean,
-    fileName: String,
-    renderSprites: Boolean
-  ): js.Promise[String] = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
-  @js.native
-  def CreateScreenshotUsingRenderTargetAsync(
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
     size: js.Any,
     mimeType: String,
     samples: Double
-  ): js.Promise[String] = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
-  @js.native
-  def CreateScreenshotUsingRenderTargetAsync(
-    engine: typings.babylonjs.engineMod.Engine,
-    camera: typings.babylonjs.cameraMod.Camera,
-    size: js.Any,
-    mimeType: String,
-    samples: Double,
-    antialiasing: js.UndefOr[scala.Nothing],
-    fileName: js.UndefOr[scala.Nothing],
-    renderSprites: Boolean
-  ): js.Promise[String] = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
-  @js.native
-  def CreateScreenshotUsingRenderTargetAsync(
-    engine: typings.babylonjs.engineMod.Engine,
-    camera: typings.babylonjs.cameraMod.Camera,
-    size: js.Any,
-    mimeType: String,
-    samples: Double,
-    antialiasing: js.UndefOr[scala.Nothing],
-    fileName: String
-  ): js.Promise[String] = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
-  @js.native
-  def CreateScreenshotUsingRenderTargetAsync(
-    engine: typings.babylonjs.engineMod.Engine,
-    camera: typings.babylonjs.cameraMod.Camera,
-    size: js.Any,
-    mimeType: String,
-    samples: Double,
-    antialiasing: js.UndefOr[scala.Nothing],
-    fileName: String,
-    renderSprites: Boolean
-  ): js.Promise[String] = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
-  @js.native
-  def CreateScreenshotUsingRenderTargetAsync(
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
     size: js.Any,
     mimeType: String,
     samples: Double,
     antialiasing: Boolean
-  ): js.Promise[String] = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
-  @js.native
-  def CreateScreenshotUsingRenderTargetAsync(
-    engine: typings.babylonjs.engineMod.Engine,
-    camera: typings.babylonjs.cameraMod.Camera,
-    size: js.Any,
-    mimeType: String,
-    samples: Double,
-    antialiasing: Boolean,
-    fileName: js.UndefOr[scala.Nothing],
-    renderSprites: Boolean
-  ): js.Promise[String] = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
-  @js.native
-  def CreateScreenshotUsingRenderTargetAsync(
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
     size: js.Any,
@@ -526,10 +197,8 @@ object ScreenshotTools {
     samples: Double,
     antialiasing: Boolean,
     fileName: String
-  ): js.Promise[String] = js.native
-  @JSImport("babylonjs", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
-  @js.native
-  def CreateScreenshotUsingRenderTargetAsync(
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
     size: js.Any,
@@ -538,7 +207,251 @@ object ScreenshotTools {
     antialiasing: Boolean,
     fileName: String,
     renderSprites: Boolean
-  ): js.Promise[String] = js.native
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], renderSprites.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def CreateScreenshotUsingRenderTargetAsync(
+    engine: typings.babylonjs.engineMod.Engine,
+    camera: typings.babylonjs.cameraMod.Camera,
+    size: js.Any,
+    mimeType: String,
+    samples: Double,
+    antialiasing: Boolean,
+    fileName: Unit,
+    renderSprites: Boolean
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], renderSprites.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def CreateScreenshotUsingRenderTargetAsync(
+    engine: typings.babylonjs.engineMod.Engine,
+    camera: typings.babylonjs.cameraMod.Camera,
+    size: js.Any,
+    mimeType: String,
+    samples: Double,
+    antialiasing: Unit,
+    fileName: String
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def CreateScreenshotUsingRenderTargetAsync(
+    engine: typings.babylonjs.engineMod.Engine,
+    camera: typings.babylonjs.cameraMod.Camera,
+    size: js.Any,
+    mimeType: String,
+    samples: Double,
+    antialiasing: Unit,
+    fileName: String,
+    renderSprites: Boolean
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], renderSprites.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def CreateScreenshotUsingRenderTargetAsync(
+    engine: typings.babylonjs.engineMod.Engine,
+    camera: typings.babylonjs.cameraMod.Camera,
+    size: js.Any,
+    mimeType: String,
+    samples: Double,
+    antialiasing: Unit,
+    fileName: Unit,
+    renderSprites: Boolean
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], renderSprites.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def CreateScreenshotUsingRenderTargetAsync(
+    engine: typings.babylonjs.engineMod.Engine,
+    camera: typings.babylonjs.cameraMod.Camera,
+    size: js.Any,
+    mimeType: String,
+    samples: Unit,
+    antialiasing: Boolean
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def CreateScreenshotUsingRenderTargetAsync(
+    engine: typings.babylonjs.engineMod.Engine,
+    camera: typings.babylonjs.cameraMod.Camera,
+    size: js.Any,
+    mimeType: String,
+    samples: Unit,
+    antialiasing: Boolean,
+    fileName: String
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def CreateScreenshotUsingRenderTargetAsync(
+    engine: typings.babylonjs.engineMod.Engine,
+    camera: typings.babylonjs.cameraMod.Camera,
+    size: js.Any,
+    mimeType: String,
+    samples: Unit,
+    antialiasing: Boolean,
+    fileName: String,
+    renderSprites: Boolean
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], renderSprites.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def CreateScreenshotUsingRenderTargetAsync(
+    engine: typings.babylonjs.engineMod.Engine,
+    camera: typings.babylonjs.cameraMod.Camera,
+    size: js.Any,
+    mimeType: String,
+    samples: Unit,
+    antialiasing: Boolean,
+    fileName: Unit,
+    renderSprites: Boolean
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], renderSprites.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def CreateScreenshotUsingRenderTargetAsync(
+    engine: typings.babylonjs.engineMod.Engine,
+    camera: typings.babylonjs.cameraMod.Camera,
+    size: js.Any,
+    mimeType: String,
+    samples: Unit,
+    antialiasing: Unit,
+    fileName: String
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def CreateScreenshotUsingRenderTargetAsync(
+    engine: typings.babylonjs.engineMod.Engine,
+    camera: typings.babylonjs.cameraMod.Camera,
+    size: js.Any,
+    mimeType: String,
+    samples: Unit,
+    antialiasing: Unit,
+    fileName: String,
+    renderSprites: Boolean
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], renderSprites.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def CreateScreenshotUsingRenderTargetAsync(
+    engine: typings.babylonjs.engineMod.Engine,
+    camera: typings.babylonjs.cameraMod.Camera,
+    size: js.Any,
+    mimeType: String,
+    samples: Unit,
+    antialiasing: Unit,
+    fileName: Unit,
+    renderSprites: Boolean
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], renderSprites.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def CreateScreenshotUsingRenderTargetAsync(
+    engine: typings.babylonjs.engineMod.Engine,
+    camera: typings.babylonjs.cameraMod.Camera,
+    size: js.Any,
+    mimeType: Unit,
+    samples: Double
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def CreateScreenshotUsingRenderTargetAsync(
+    engine: typings.babylonjs.engineMod.Engine,
+    camera: typings.babylonjs.cameraMod.Camera,
+    size: js.Any,
+    mimeType: Unit,
+    samples: Double,
+    antialiasing: Boolean
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def CreateScreenshotUsingRenderTargetAsync(
+    engine: typings.babylonjs.engineMod.Engine,
+    camera: typings.babylonjs.cameraMod.Camera,
+    size: js.Any,
+    mimeType: Unit,
+    samples: Double,
+    antialiasing: Boolean,
+    fileName: String
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def CreateScreenshotUsingRenderTargetAsync(
+    engine: typings.babylonjs.engineMod.Engine,
+    camera: typings.babylonjs.cameraMod.Camera,
+    size: js.Any,
+    mimeType: Unit,
+    samples: Double,
+    antialiasing: Boolean,
+    fileName: String,
+    renderSprites: Boolean
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], renderSprites.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def CreateScreenshotUsingRenderTargetAsync(
+    engine: typings.babylonjs.engineMod.Engine,
+    camera: typings.babylonjs.cameraMod.Camera,
+    size: js.Any,
+    mimeType: Unit,
+    samples: Double,
+    antialiasing: Boolean,
+    fileName: Unit,
+    renderSprites: Boolean
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], renderSprites.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def CreateScreenshotUsingRenderTargetAsync(
+    engine: typings.babylonjs.engineMod.Engine,
+    camera: typings.babylonjs.cameraMod.Camera,
+    size: js.Any,
+    mimeType: Unit,
+    samples: Double,
+    antialiasing: Unit,
+    fileName: String
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def CreateScreenshotUsingRenderTargetAsync(
+    engine: typings.babylonjs.engineMod.Engine,
+    camera: typings.babylonjs.cameraMod.Camera,
+    size: js.Any,
+    mimeType: Unit,
+    samples: Double,
+    antialiasing: Unit,
+    fileName: String,
+    renderSprites: Boolean
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], renderSprites.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def CreateScreenshotUsingRenderTargetAsync(
+    engine: typings.babylonjs.engineMod.Engine,
+    camera: typings.babylonjs.cameraMod.Camera,
+    size: js.Any,
+    mimeType: Unit,
+    samples: Double,
+    antialiasing: Unit,
+    fileName: Unit,
+    renderSprites: Boolean
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], renderSprites.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def CreateScreenshotUsingRenderTargetAsync(
+    engine: typings.babylonjs.engineMod.Engine,
+    camera: typings.babylonjs.cameraMod.Camera,
+    size: js.Any,
+    mimeType: Unit,
+    samples: Unit,
+    antialiasing: Boolean
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def CreateScreenshotUsingRenderTargetAsync(
+    engine: typings.babylonjs.engineMod.Engine,
+    camera: typings.babylonjs.cameraMod.Camera,
+    size: js.Any,
+    mimeType: Unit,
+    samples: Unit,
+    antialiasing: Boolean,
+    fileName: String
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def CreateScreenshotUsingRenderTargetAsync(
+    engine: typings.babylonjs.engineMod.Engine,
+    camera: typings.babylonjs.cameraMod.Camera,
+    size: js.Any,
+    mimeType: Unit,
+    samples: Unit,
+    antialiasing: Boolean,
+    fileName: String,
+    renderSprites: Boolean
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], renderSprites.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def CreateScreenshotUsingRenderTargetAsync(
+    engine: typings.babylonjs.engineMod.Engine,
+    camera: typings.babylonjs.cameraMod.Camera,
+    size: js.Any,
+    mimeType: Unit,
+    samples: Unit,
+    antialiasing: Boolean,
+    fileName: Unit,
+    renderSprites: Boolean
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], renderSprites.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def CreateScreenshotUsingRenderTargetAsync(
+    engine: typings.babylonjs.engineMod.Engine,
+    camera: typings.babylonjs.cameraMod.Camera,
+    size: js.Any,
+    mimeType: Unit,
+    samples: Unit,
+    antialiasing: Unit,
+    fileName: String
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def CreateScreenshotUsingRenderTargetAsync(
+    engine: typings.babylonjs.engineMod.Engine,
+    camera: typings.babylonjs.cameraMod.Camera,
+    size: js.Any,
+    mimeType: Unit,
+    samples: Unit,
+    antialiasing: Unit,
+    fileName: String,
+    renderSprites: Boolean
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], renderSprites.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def CreateScreenshotUsingRenderTargetAsync(
+    engine: typings.babylonjs.engineMod.Engine,
+    camera: typings.babylonjs.cameraMod.Camera,
+    size: js.Any,
+    mimeType: Unit,
+    samples: Unit,
+    antialiasing: Unit,
+    fileName: Unit,
+    renderSprites: Boolean
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], renderSprites.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   /**
     * Gets height and width for screenshot size
@@ -547,6 +460,5 @@ object ScreenshotTools {
   @JSImport("babylonjs", "ScreenshotTools._getScreenshotSize")
   @js.native
   def _getScreenshotSize: js.Any = js.native
-  @scala.inline
-  def _getScreenshotSize_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_getScreenshotSize")(x.asInstanceOf[js.Any])
+  inline def _getScreenshotSize_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_getScreenshotSize")(x.asInstanceOf[js.Any])
 }

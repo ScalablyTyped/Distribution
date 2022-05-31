@@ -2,69 +2,53 @@ package typings.oracleOraclejet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AreaSvgStyle extends StObject {
   
-  var areaSvgStyle: js.UndefOr[js.Object] = js.native
+  var areaSvgStyle: js.UndefOr[js.Object] = js.undefined
   
-  var dataAreaDefaults: js.UndefOr[SelectedInnerColor] = js.native
+  var dataAreaDefaults: js.UndefOr[SelectedInnerColor] = js.undefined
   
-  var dataMarkerDefaults: js.UndefOr[BorderStyle] = js.native
+  var dataMarkerDefaults: js.UndefOr[BorderStyle] = js.undefined
   
-  var hoverBehaviorDelay: js.UndefOr[Double] = js.native
+  var hoverBehaviorDelay: js.UndefOr[Double] = js.undefined
   
-  var labelStyle: js.UndefOr[js.Object] = js.native
+  var labelStyle: js.UndefOr[js.Object] = js.undefined
   
-  var linkDefaults: js.UndefOr[ColorWidth] = js.native
+  var linkDefaults: js.UndefOr[ColorWidth] = js.undefined
 }
 object AreaSvgStyle {
   
-  @scala.inline
-  def apply(): AreaSvgStyle = {
+  inline def apply(): AreaSvgStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AreaSvgStyle]
   }
   
-  @scala.inline
-  implicit class AreaSvgStyleMutableBuilder[Self <: AreaSvgStyle] (val x: Self) extends AnyVal {
+  extension [Self <: AreaSvgStyle](x: Self) {
     
-    @scala.inline
-    def setAreaSvgStyle(value: js.Object): Self = StObject.set(x, "areaSvgStyle", value.asInstanceOf[js.Any])
+    inline def setAreaSvgStyle(value: js.Object): Self = StObject.set(x, "areaSvgStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAreaSvgStyleUndefined: Self = StObject.set(x, "areaSvgStyle", js.undefined)
+    inline def setAreaSvgStyleUndefined: Self = StObject.set(x, "areaSvgStyle", js.undefined)
     
-    @scala.inline
-    def setDataAreaDefaults(value: SelectedInnerColor): Self = StObject.set(x, "dataAreaDefaults", value.asInstanceOf[js.Any])
+    inline def setDataAreaDefaults(value: SelectedInnerColor): Self = StObject.set(x, "dataAreaDefaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataAreaDefaultsUndefined: Self = StObject.set(x, "dataAreaDefaults", js.undefined)
+    inline def setDataAreaDefaultsUndefined: Self = StObject.set(x, "dataAreaDefaults", js.undefined)
     
-    @scala.inline
-    def setDataMarkerDefaults(value: BorderStyle): Self = StObject.set(x, "dataMarkerDefaults", value.asInstanceOf[js.Any])
+    inline def setDataMarkerDefaults(value: BorderStyle): Self = StObject.set(x, "dataMarkerDefaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataMarkerDefaultsUndefined: Self = StObject.set(x, "dataMarkerDefaults", js.undefined)
+    inline def setDataMarkerDefaultsUndefined: Self = StObject.set(x, "dataMarkerDefaults", js.undefined)
     
-    @scala.inline
-    def setHoverBehaviorDelay(value: Double): Self = StObject.set(x, "hoverBehaviorDelay", value.asInstanceOf[js.Any])
+    inline def setHoverBehaviorDelay(value: Double): Self = StObject.set(x, "hoverBehaviorDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverBehaviorDelayUndefined: Self = StObject.set(x, "hoverBehaviorDelay", js.undefined)
+    inline def setHoverBehaviorDelayUndefined: Self = StObject.set(x, "hoverBehaviorDelay", js.undefined)
     
-    @scala.inline
-    def setLabelStyle(value: js.Object): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
+    inline def setLabelStyle(value: js.Object): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
+    inline def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
     
-    @scala.inline
-    def setLinkDefaults(value: ColorWidth): Self = StObject.set(x, "linkDefaults", value.asInstanceOf[js.Any])
+    inline def setLinkDefaults(value: ColorWidth): Self = StObject.set(x, "linkDefaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkDefaultsUndefined: Self = StObject.set(x, "linkDefaults", js.undefined)
+    inline def setLinkDefaultsUndefined: Self = StObject.set(x, "linkDefaults", js.undefined)
   }
 }

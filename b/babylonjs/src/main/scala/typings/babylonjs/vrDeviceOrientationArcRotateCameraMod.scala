@@ -6,7 +6,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vrDeviceOrientationArcRotateCameraMod {
@@ -42,7 +41,7 @@ object vrDeviceOrientationArcRotateCameraMod {
       radius: Double,
       target: Vector3,
       scene: Scene,
-      compensateDistortion: js.UndefOr[scala.Nothing],
+      compensateDistortion: Boolean,
       vrCameraMetrics: VRCameraMetrics
     ) = this()
     def this(
@@ -52,7 +51,7 @@ object vrDeviceOrientationArcRotateCameraMod {
       radius: Double,
       target: Vector3,
       scene: Scene,
-      compensateDistortion: Boolean,
+      compensateDistortion: Unit,
       vrCameraMetrics: VRCameraMetrics
     ) = this()
   }

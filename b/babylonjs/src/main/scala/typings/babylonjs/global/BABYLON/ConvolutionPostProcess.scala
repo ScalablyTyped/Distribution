@@ -4,13 +4,13 @@ import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.BABYLON.PostProcessOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.ConvolutionPostProcess")
 @js.native
 class ConvolutionPostProcess protected ()
-  extends typings.babylonjs.BABYLON.ConvolutionPostProcess {
+  extends StObject
+     with typings.babylonjs.BABYLON.ConvolutionPostProcess {
   /**
     * Creates a new instance ConvolutionPostProcess
     * @param name The name of the effect.
@@ -53,7 +53,7 @@ class ConvolutionPostProcess protected ()
     kernel: js.Array[Double],
     options: Double,
     camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: js.UndefOr[scala.Nothing],
+    samplingMode: Double,
     engine: typings.babylonjs.BABYLON.Engine
   ) = this()
   def this(
@@ -61,15 +61,7 @@ class ConvolutionPostProcess protected ()
     kernel: js.Array[Double],
     options: Double,
     camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.BABYLON.Engine
-  ) = this()
-  def this(
-    name: String,
-    kernel: js.Array[Double],
-    options: PostProcessOptions,
-    camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: js.UndefOr[scala.Nothing],
+    samplingMode: Unit,
     engine: typings.babylonjs.BABYLON.Engine
   ) = this()
   def this(
@@ -83,20 +75,10 @@ class ConvolutionPostProcess protected ()
   def this(
     name: String,
     kernel: js.Array[Double],
-    options: Double,
+    options: PostProcessOptions,
     camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: js.UndefOr[scala.Nothing],
-    reusable: Boolean
-  ) = this()
-  def this(
-    name: String,
-    kernel: js.Array[Double],
-    options: Double,
-    camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: typings.babylonjs.BABYLON.Engine,
-    reusable: Boolean
+    samplingMode: Unit,
+    engine: typings.babylonjs.BABYLON.Engine
   ) = this()
   def this(
     name: String,
@@ -104,7 +86,7 @@ class ConvolutionPostProcess protected ()
     options: Double,
     camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
-    engine: js.UndefOr[scala.Nothing],
+    engine: Unit,
     reusable: Boolean
   ) = this()
   def this(
@@ -119,18 +101,18 @@ class ConvolutionPostProcess protected ()
   def this(
     name: String,
     kernel: js.Array[Double],
-    options: PostProcessOptions,
+    options: Double,
     camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: js.UndefOr[scala.Nothing],
+    samplingMode: Unit,
+    engine: Unit,
     reusable: Boolean
   ) = this()
   def this(
     name: String,
     kernel: js.Array[Double],
-    options: PostProcessOptions,
+    options: Double,
     camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: js.UndefOr[scala.Nothing],
+    samplingMode: Unit,
     engine: typings.babylonjs.BABYLON.Engine,
     reusable: Boolean
   ) = this()
@@ -140,7 +122,7 @@ class ConvolutionPostProcess protected ()
     options: PostProcessOptions,
     camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
-    engine: js.UndefOr[scala.Nothing],
+    engine: Unit,
     reusable: Boolean
   ) = this()
   def this(
@@ -155,40 +137,28 @@ class ConvolutionPostProcess protected ()
   def this(
     name: String,
     kernel: js.Array[Double],
-    options: Double,
+    options: PostProcessOptions,
     camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: js.UndefOr[scala.Nothing],
-    reusable: js.UndefOr[scala.Nothing],
-    textureType: Double
+    samplingMode: Unit,
+    engine: Unit,
+    reusable: Boolean
   ) = this()
   def this(
     name: String,
     kernel: js.Array[Double],
-    options: Double,
+    options: PostProcessOptions,
     camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: js.UndefOr[scala.Nothing],
-    reusable: Boolean,
-    textureType: Double
-  ) = this()
-  def this(
-    name: String,
-    kernel: js.Array[Double],
-    options: Double,
-    camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: js.UndefOr[scala.Nothing],
+    samplingMode: Unit,
     engine: typings.babylonjs.BABYLON.Engine,
-    reusable: js.UndefOr[scala.Nothing],
-    textureType: Double
+    reusable: Boolean
   ) = this()
   def this(
     name: String,
     kernel: js.Array[Double],
     options: Double,
     camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: typings.babylonjs.BABYLON.Engine,
+    samplingMode: Double,
+    engine: Unit,
     reusable: Boolean,
     textureType: Double
   ) = this()
@@ -198,28 +168,8 @@ class ConvolutionPostProcess protected ()
     options: Double,
     camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
-    engine: js.UndefOr[scala.Nothing],
-    reusable: js.UndefOr[scala.Nothing],
-    textureType: Double
-  ) = this()
-  def this(
-    name: String,
-    kernel: js.Array[Double],
-    options: Double,
-    camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: Double,
-    engine: js.UndefOr[scala.Nothing],
-    reusable: Boolean,
-    textureType: Double
-  ) = this()
-  def this(
-    name: String,
-    kernel: js.Array[Double],
-    options: Double,
-    camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.BABYLON.Engine,
-    reusable: js.UndefOr[scala.Nothing],
+    engine: Unit,
+    reusable: Unit,
     textureType: Double
   ) = this()
   def this(
@@ -235,11 +185,51 @@ class ConvolutionPostProcess protected ()
   def this(
     name: String,
     kernel: js.Array[Double],
-    options: PostProcessOptions,
+    options: Double,
     camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: js.UndefOr[scala.Nothing],
-    reusable: js.UndefOr[scala.Nothing],
+    samplingMode: Double,
+    engine: typings.babylonjs.BABYLON.Engine,
+    reusable: Unit,
+    textureType: Double
+  ) = this()
+  def this(
+    name: String,
+    kernel: js.Array[Double],
+    options: Double,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
+    samplingMode: Unit,
+    engine: Unit,
+    reusable: Boolean,
+    textureType: Double
+  ) = this()
+  def this(
+    name: String,
+    kernel: js.Array[Double],
+    options: Double,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
+    samplingMode: Unit,
+    engine: Unit,
+    reusable: Unit,
+    textureType: Double
+  ) = this()
+  def this(
+    name: String,
+    kernel: js.Array[Double],
+    options: Double,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
+    samplingMode: Unit,
+    engine: typings.babylonjs.BABYLON.Engine,
+    reusable: Boolean,
+    textureType: Double
+  ) = this()
+  def this(
+    name: String,
+    kernel: js.Array[Double],
+    options: Double,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
+    samplingMode: Unit,
+    engine: typings.babylonjs.BABYLON.Engine,
+    reusable: Unit,
     textureType: Double
   ) = this()
   def this(
@@ -247,8 +237,8 @@ class ConvolutionPostProcess protected ()
     kernel: js.Array[Double],
     options: PostProcessOptions,
     camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: js.UndefOr[scala.Nothing],
+    samplingMode: Double,
+    engine: Unit,
     reusable: Boolean,
     textureType: Double
   ) = this()
@@ -257,9 +247,9 @@ class ConvolutionPostProcess protected ()
     kernel: js.Array[Double],
     options: PostProcessOptions,
     camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: typings.babylonjs.BABYLON.Engine,
-    reusable: js.UndefOr[scala.Nothing],
+    samplingMode: Double,
+    engine: Unit,
+    reusable: Unit,
     textureType: Double
   ) = this()
   def this(
@@ -267,7 +257,7 @@ class ConvolutionPostProcess protected ()
     kernel: js.Array[Double],
     options: PostProcessOptions,
     camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: js.UndefOr[scala.Nothing],
+    samplingMode: Double,
     engine: typings.babylonjs.BABYLON.Engine,
     reusable: Boolean,
     textureType: Double
@@ -278,8 +268,8 @@ class ConvolutionPostProcess protected ()
     options: PostProcessOptions,
     camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
-    engine: js.UndefOr[scala.Nothing],
-    reusable: js.UndefOr[scala.Nothing],
+    engine: typings.babylonjs.BABYLON.Engine,
+    reusable: Unit,
     textureType: Double
   ) = this()
   def this(
@@ -287,8 +277,8 @@ class ConvolutionPostProcess protected ()
     kernel: js.Array[Double],
     options: PostProcessOptions,
     camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: Double,
-    engine: js.UndefOr[scala.Nothing],
+    samplingMode: Unit,
+    engine: Unit,
     reusable: Boolean,
     textureType: Double
   ) = this()
@@ -297,9 +287,9 @@ class ConvolutionPostProcess protected ()
     kernel: js.Array[Double],
     options: PostProcessOptions,
     camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.BABYLON.Engine,
-    reusable: js.UndefOr[scala.Nothing],
+    samplingMode: Unit,
+    engine: Unit,
+    reusable: Unit,
     textureType: Double
   ) = this()
   def this(
@@ -307,9 +297,19 @@ class ConvolutionPostProcess protected ()
     kernel: js.Array[Double],
     options: PostProcessOptions,
     camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: Double,
+    samplingMode: Unit,
     engine: typings.babylonjs.BABYLON.Engine,
     reusable: Boolean,
+    textureType: Double
+  ) = this()
+  def this(
+    name: String,
+    kernel: js.Array[Double],
+    options: PostProcessOptions,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
+    samplingMode: Unit,
+    engine: typings.babylonjs.BABYLON.Engine,
+    reusable: Unit,
     textureType: Double
   ) = this()
 }
@@ -326,8 +326,7 @@ object ConvolutionPostProcess {
   @JSGlobal("BABYLON.ConvolutionPostProcess.EdgeDetect0Kernel")
   @js.native
   def EdgeDetect0Kernel: js.Array[Double] = js.native
-  @scala.inline
-  def EdgeDetect0Kernel_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EdgeDetect0Kernel")(x.asInstanceOf[js.Any])
+  inline def EdgeDetect0Kernel_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EdgeDetect0Kernel")(x.asInstanceOf[js.Any])
   
   /**
     * Edge detection 1 see https://en.wikipedia.org/wiki/Kernel_(image_processing)
@@ -335,8 +334,7 @@ object ConvolutionPostProcess {
   @JSGlobal("BABYLON.ConvolutionPostProcess.EdgeDetect1Kernel")
   @js.native
   def EdgeDetect1Kernel: js.Array[Double] = js.native
-  @scala.inline
-  def EdgeDetect1Kernel_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EdgeDetect1Kernel")(x.asInstanceOf[js.Any])
+  inline def EdgeDetect1Kernel_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EdgeDetect1Kernel")(x.asInstanceOf[js.Any])
   
   /**
     * Edge detection 2 see https://en.wikipedia.org/wiki/Kernel_(image_processing)
@@ -344,8 +342,7 @@ object ConvolutionPostProcess {
   @JSGlobal("BABYLON.ConvolutionPostProcess.EdgeDetect2Kernel")
   @js.native
   def EdgeDetect2Kernel: js.Array[Double] = js.native
-  @scala.inline
-  def EdgeDetect2Kernel_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EdgeDetect2Kernel")(x.asInstanceOf[js.Any])
+  inline def EdgeDetect2Kernel_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EdgeDetect2Kernel")(x.asInstanceOf[js.Any])
   
   /**
     * Kernel to emboss an image see https://en.wikipedia.org/wiki/Kernel_(image_processing)
@@ -353,8 +350,7 @@ object ConvolutionPostProcess {
   @JSGlobal("BABYLON.ConvolutionPostProcess.EmbossKernel")
   @js.native
   def EmbossKernel: js.Array[Double] = js.native
-  @scala.inline
-  def EmbossKernel_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EmbossKernel")(x.asInstanceOf[js.Any])
+  inline def EmbossKernel_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EmbossKernel")(x.asInstanceOf[js.Any])
   
   /**
     * Kernel to blur an image see https://en.wikipedia.org/wiki/Kernel_(image_processing)
@@ -362,8 +358,7 @@ object ConvolutionPostProcess {
   @JSGlobal("BABYLON.ConvolutionPostProcess.GaussianKernel")
   @js.native
   def GaussianKernel: js.Array[Double] = js.native
-  @scala.inline
-  def GaussianKernel_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GaussianKernel")(x.asInstanceOf[js.Any])
+  inline def GaussianKernel_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GaussianKernel")(x.asInstanceOf[js.Any])
   
   /**
     * Kernel to sharpen an image see https://en.wikipedia.org/wiki/Kernel_(image_processing)
@@ -371,16 +366,13 @@ object ConvolutionPostProcess {
   @JSGlobal("BABYLON.ConvolutionPostProcess.SharpenKernel")
   @js.native
   def SharpenKernel: js.Array[Double] = js.native
-  @scala.inline
-  def SharpenKernel_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SharpenKernel")(x.asInstanceOf[js.Any])
+  inline def SharpenKernel_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SharpenKernel")(x.asInstanceOf[js.Any])
   
   /** @hidden */
-  @JSGlobal("BABYLON.ConvolutionPostProcess._Parse")
-  @js.native
-  def _Parse(
+  inline def _Parse(
     parsedPostProcess: js.Any,
     targetCamera: typings.babylonjs.BABYLON.Camera,
     scene: typings.babylonjs.BABYLON.Scene,
     rootUrl: String
-  ): Nullable[typings.babylonjs.BABYLON.ConvolutionPostProcess] = js.native
+  ): Nullable[typings.babylonjs.BABYLON.ConvolutionPostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.ConvolutionPostProcess]]
 }

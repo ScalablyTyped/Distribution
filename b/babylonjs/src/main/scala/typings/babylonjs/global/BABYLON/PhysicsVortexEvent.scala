@@ -2,7 +2,6 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("BABYLON.PhysicsVortexEvent")
 @js.native
 class PhysicsVortexEvent protected ()
-  extends typings.babylonjs.BABYLON.PhysicsVortexEvent {
+  extends StObject
+     with typings.babylonjs.BABYLON.PhysicsVortexEvent {
   /**
     * Initializes the physics vortex event
     * @param _scene The BabylonJS scene

@@ -17,48 +17,45 @@ import typings.oracleOraclejet.oracleOraclejetStrings.stepped
 import typings.oracleOraclejet.oracleOraclejetStrings.straight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Categories extends StObject {
   
-  var categories: js.Array[String] = js.native
+  var categories: js.Array[String]
   
-  var color: String = js.native
+  var color: String
   
-  var displayInLegend: on | off = js.native
+  var displayInLegend: on | off
   
-  var high: Double = js.native
+  var high: Double
   
-  var id: String = js.native
+  var id: String
   
-  var lineStyle: dotted | dashed | solid = js.native
+  var lineStyle: dotted | dashed | solid
   
-  var lineType: curved | stepped | centeredStepped | segmented | centeredSegmented | straight = js.native
+  var lineType: curved | stepped | centeredStepped | segmented | centeredSegmented | straight
   
-  var lineWidth: Double = js.native
+  var lineWidth: Double
   
-  var location: front | back = js.native
+  var location: front | back
   
-  var low: Double = js.native
+  var low: Double
   
-  var shortDesc: String = js.native
+  var shortDesc: String
   
-  var svgClassName: String = js.native
+  var svgClassName: String
   
-  var svgStyle: js.Object = js.native
+  var svgStyle: js.Object
   
-  var text: String = js.native
+  var text: String
   
-  var `type`: area | line = js.native
+  var `type`: area | line
   
-  var value: Double = js.native
+  var value: Double
 }
 object Categories {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     categories: js.Array[String],
     color: String,
     displayInLegend: on | off,
@@ -81,58 +78,40 @@ object Categories {
     __obj.asInstanceOf[Categories]
   }
   
-  @scala.inline
-  implicit class CategoriesMutableBuilder[Self <: Categories] (val x: Self) extends AnyVal {
+  extension [Self <: Categories](x: Self) {
     
-    @scala.inline
-    def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayInLegend(value: on | off): Self = StObject.set(x, "displayInLegend", value.asInstanceOf[js.Any])
+    inline def setDisplayInLegend(value: on | off): Self = StObject.set(x, "displayInLegend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHigh(value: Double): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
+    inline def setHigh(value: Double): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineStyle(value: dotted | dashed | solid): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
+    inline def setLineStyle(value: dotted | dashed | solid): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineType(value: curved | stepped | centeredStepped | segmented | centeredSegmented | straight): Self = StObject.set(x, "lineType", value.asInstanceOf[js.Any])
+    inline def setLineType(value: curved | stepped | centeredStepped | segmented | centeredSegmented | straight): Self = StObject.set(x, "lineType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: front | back): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: front | back): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLow(value: Double): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
+    inline def setLow(value: Double): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortDesc(value: String): Self = StObject.set(x, "shortDesc", value.asInstanceOf[js.Any])
+    inline def setShortDesc(value: String): Self = StObject.set(x, "shortDesc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgClassName(value: String): Self = StObject.set(x, "svgClassName", value.asInstanceOf[js.Any])
+    inline def setSvgClassName(value: String): Self = StObject.set(x, "svgClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgStyle(value: js.Object): Self = StObject.set(x, "svgStyle", value.asInstanceOf[js.Any])
+    inline def setSvgStyle(value: js.Object): Self = StObject.set(x, "svgStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: area | line): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: area | line): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

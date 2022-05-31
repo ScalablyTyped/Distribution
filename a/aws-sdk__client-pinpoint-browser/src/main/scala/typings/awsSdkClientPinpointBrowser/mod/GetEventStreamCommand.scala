@@ -1,5 +1,6 @@
 package typings.awsSdkClientPinpointBrowser.mod
 
+import typings.awsSdkClientPinpointBrowser.typesGetEventStreamInputMod.GetEventStreamInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class GetEventStreamCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.getEventStreamCommandMod.GetEventStreamCommand {
-  def this(input: typings.awsSdkClientPinpointBrowser.typesGetEventStreamInputMod.GetEventStreamInput) = this()
+  def this(input: GetEventStreamInput) = this()
 }

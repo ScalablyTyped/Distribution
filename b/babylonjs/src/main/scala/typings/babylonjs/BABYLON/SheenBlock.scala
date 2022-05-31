@@ -2,11 +2,12 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SheenBlock extends NodeMaterialBlock {
+trait SheenBlock
+  extends StObject
+     with NodeMaterialBlock {
   
   /**
     * If true, the sheen effect is layered above the base BRDF with the albedo-scaling technique.

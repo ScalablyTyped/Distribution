@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.LensRenderingPipeline")
 @js.native
 class LensRenderingPipeline protected ()
-  extends typings.babylonjs.BABYLON.LensRenderingPipeline {
+  extends StObject
+     with typings.babylonjs.BABYLON.LensRenderingPipeline {
   /**
     * @constructor
     *
@@ -41,14 +41,14 @@ class LensRenderingPipeline protected ()
     name: String,
     parameters: js.Any,
     scene: typings.babylonjs.BABYLON.Scene,
-    ratio: js.UndefOr[scala.Nothing],
+    ratio: Double,
     cameras: js.Array[typings.babylonjs.BABYLON.Camera]
   ) = this()
   def this(
     name: String,
     parameters: js.Any,
     scene: typings.babylonjs.BABYLON.Scene,
-    ratio: Double,
+    ratio: Unit,
     cameras: js.Array[typings.babylonjs.BABYLON.Camera]
   ) = this()
 }

@@ -4,13 +4,13 @@ import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.BABYLON.PostProcessOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.FxaaPostProcess")
 @js.native
 class FxaaPostProcess protected ()
-  extends typings.babylonjs.BABYLON.FxaaPostProcess {
+  extends StObject
+     with typings.babylonjs.BABYLON.FxaaPostProcess {
   def this(
     name: String,
     options: Double | PostProcessOptions,
@@ -24,13 +24,15 @@ class FxaaPostProcess protected ()
 /* static members */
 object FxaaPostProcess {
   
-  /** @hidden */
-  @JSGlobal("BABYLON.FxaaPostProcess._Parse")
+  @JSGlobal("BABYLON.FxaaPostProcess")
   @js.native
-  def _Parse(
+  val ^ : js.Any = js.native
+  
+  /** @hidden */
+  inline def _Parse(
     parsedPostProcess: js.Any,
     targetCamera: typings.babylonjs.BABYLON.Camera,
     scene: typings.babylonjs.BABYLON.Scene,
     rootUrl: String
-  ): typings.babylonjs.BABYLON.FxaaPostProcess = js.native
+  ): typings.babylonjs.BABYLON.FxaaPostProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.FxaaPostProcess]
 }

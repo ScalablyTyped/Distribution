@@ -6,7 +6,6 @@ import typings.jupyterlabStatusbar.memoryUsageMod.MemoryUsage.Model
 import typings.jupyterlabStatusbar.memoryUsageMod.MemoryUsage.Model.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object memoryUsageMod {
@@ -32,22 +31,22 @@ object memoryUsageMod {
         */
       def this(options: IOptions) = this()
       
-      var _currentMemory: js.Any = js.native
+      /* private */ var _currentMemory: js.Any = js.native
       
-      var _memoryLimit: js.Any = js.native
+      /* private */ var _memoryLimit: js.Any = js.native
       
-      var _metricsAvailable: js.Any = js.native
+      /* private */ var _metricsAvailable: js.Any = js.native
       
-      var _poll: js.Any = js.native
+      /* private */ var _poll: js.Any = js.native
       
-      var _units: js.Any = js.native
+      /* private */ var _units: js.Any = js.native
       
       /**
         * Given the results of the metrics request, update model values.
         */
-      var _updateMetricsValues: js.Any = js.native
+      /* private */ var _updateMetricsValues: js.Any = js.native
       
-      var _warn: js.Any = js.native
+      /* private */ var _warn: js.Any = js.native
       
       /**
         * The current memory usage/
@@ -82,27 +81,23 @@ object memoryUsageMod {
       /**
         * Options for creating a MemoryUsage model.
         */
-      @js.native
       trait IOptions extends StObject {
         
         /**
           * The refresh rate (in ms) for querying the server.
           */
-        var refreshRate: Double = js.native
+        var refreshRate: Double
       }
       object IOptions {
         
-        @scala.inline
-        def apply(refreshRate: Double): IOptions = {
+        inline def apply(refreshRate: Double): IOptions = {
           val __obj = js.Dynamic.literal(refreshRate = refreshRate.asInstanceOf[js.Any])
           __obj.asInstanceOf[IOptions]
         }
         
-        @scala.inline
-        implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+        extension [Self <: IOptions](x: Self) {
           
-          @scala.inline
-          def setRefreshRate(value: Double): Self = StObject.set(x, "refreshRate", value.asInstanceOf[js.Any])
+          inline def setRefreshRate(value: Double): Self = StObject.set(x, "refreshRate", value.asInstanceOf[js.Any])
         }
       }
     }
@@ -121,23 +116,17 @@ object memoryUsageMod {
     trait MemoryUnit extends StObject
     object MemoryUnit {
       
-      @scala.inline
-      def B: typings.jupyterlabStatusbar.jupyterlabStatusbarStrings.B = "B".asInstanceOf[typings.jupyterlabStatusbar.jupyterlabStatusbarStrings.B]
+      inline def B: typings.jupyterlabStatusbar.jupyterlabStatusbarStrings.B = "B".asInstanceOf[typings.jupyterlabStatusbar.jupyterlabStatusbarStrings.B]
       
-      @scala.inline
-      def GB: typings.jupyterlabStatusbar.jupyterlabStatusbarStrings.GB = "GB".asInstanceOf[typings.jupyterlabStatusbar.jupyterlabStatusbarStrings.GB]
+      inline def GB: typings.jupyterlabStatusbar.jupyterlabStatusbarStrings.GB = "GB".asInstanceOf[typings.jupyterlabStatusbar.jupyterlabStatusbarStrings.GB]
       
-      @scala.inline
-      def KB: typings.jupyterlabStatusbar.jupyterlabStatusbarStrings.KB = "KB".asInstanceOf[typings.jupyterlabStatusbar.jupyterlabStatusbarStrings.KB]
+      inline def KB: typings.jupyterlabStatusbar.jupyterlabStatusbarStrings.KB = "KB".asInstanceOf[typings.jupyterlabStatusbar.jupyterlabStatusbarStrings.KB]
       
-      @scala.inline
-      def MB: typings.jupyterlabStatusbar.jupyterlabStatusbarStrings.MB = "MB".asInstanceOf[typings.jupyterlabStatusbar.jupyterlabStatusbarStrings.MB]
+      inline def MB: typings.jupyterlabStatusbar.jupyterlabStatusbarStrings.MB = "MB".asInstanceOf[typings.jupyterlabStatusbar.jupyterlabStatusbarStrings.MB]
       
-      @scala.inline
-      def PB: typings.jupyterlabStatusbar.jupyterlabStatusbarStrings.PB = "PB".asInstanceOf[typings.jupyterlabStatusbar.jupyterlabStatusbarStrings.PB]
+      inline def PB: typings.jupyterlabStatusbar.jupyterlabStatusbarStrings.PB = "PB".asInstanceOf[typings.jupyterlabStatusbar.jupyterlabStatusbarStrings.PB]
       
-      @scala.inline
-      def TB: typings.jupyterlabStatusbar.jupyterlabStatusbarStrings.TB = "TB".asInstanceOf[typings.jupyterlabStatusbar.jupyterlabStatusbarStrings.TB]
+      inline def TB: typings.jupyterlabStatusbar.jupyterlabStatusbarStrings.TB = "TB".asInstanceOf[typings.jupyterlabStatusbar.jupyterlabStatusbarStrings.TB]
     }
   }
 }

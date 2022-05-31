@@ -159,10 +159,4 @@ object twilsockMod {
   class TwilsockImpl protected () extends TwilsockChannel {
     def this(websocket: WebSocketChannel, transport: PacketInterface, config: Configuration) = this()
   }
-  /**
-    * Enum for connection state values.
-    * @readonly
-    * @enum {number}
-    */
-  object TwilsockImpl
 }

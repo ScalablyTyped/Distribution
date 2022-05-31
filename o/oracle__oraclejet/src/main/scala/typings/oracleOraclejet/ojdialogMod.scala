@@ -74,68 +74,69 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ojdialogMod {
   
   @js.native
-  trait ojDialog extends baseComponent[ojDialogSettableProperties] {
+  trait ojDialog
+    extends StObject
+       with baseComponent[ojDialogSettableProperties] {
     
     def addEventListener(
       `type`: cancelBehaviorChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[icon | escape | none], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[icon | escape | none], js.Any]
     ): Unit = js.native
     def addEventListener(
       `type`: cancelBehaviorChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[icon | escape | none], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[icon | escape | none], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     def addEventListener(
       `type`: dragAffordanceChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`title-bar` | none], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`title-bar` | none], js.Any]
     ): Unit = js.native
     def addEventListener(
       `type`: dragAffordanceChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`title-bar` | none], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`title-bar` | none], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     def addEventListener(
       `type`: initialVisibilityChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[hide | show], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[hide | show], js.Any]
     ): Unit = js.native
     def addEventListener(
       `type`: initialVisibilityChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[hide | show], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[hide | show], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     def addEventListener(
       `type`: modalityChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[modal | modeless], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[modal | modeless], js.Any]
     ): Unit = js.native
     def addEventListener(
       `type`: modalityChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[modal | modeless], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[modal | modeless], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     def addEventListener(
       `type`: resizeBehaviorChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[resizable | none], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[resizable | none], js.Any]
     ): Unit = js.native
     def addEventListener(
       `type`: resizeBehaviorChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[resizable | none], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[resizable | none], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_dialogTitleChanged(
       `type`: dialogTitleChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_dialogTitleChanged(
       `type`: dialogTitleChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
@@ -144,7 +145,7 @@ object ojdialogMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojAnimateEnd, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -153,7 +154,7 @@ object ojdialogMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojAnimateEnd, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -163,7 +164,7 @@ object ojdialogMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojAnimateStart, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -172,7 +173,7 @@ object ojdialogMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojAnimateStart, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -182,7 +183,7 @@ object ojdialogMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojBeforeClose, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -191,7 +192,7 @@ object ojdialogMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojBeforeClose, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -201,7 +202,7 @@ object ojdialogMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojBeforeOpen, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -210,7 +211,7 @@ object ojdialogMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojBeforeOpen, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -220,7 +221,7 @@ object ojdialogMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojClose, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -229,7 +230,7 @@ object ojdialogMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojClose, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -239,7 +240,7 @@ object ojdialogMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojFocus, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -248,7 +249,7 @@ object ojdialogMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojFocus, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -258,7 +259,7 @@ object ojdialogMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojOpen, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -267,7 +268,7 @@ object ojdialogMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojOpen, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -277,7 +278,7 @@ object ojdialogMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojResize, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -286,7 +287,7 @@ object ojdialogMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojResize, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -296,7 +297,7 @@ object ojdialogMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojResizeStart, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -305,7 +306,7 @@ object ojdialogMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojResizeStart, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -315,7 +316,7 @@ object ojdialogMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojResizeStop, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -324,30 +325,30 @@ object ojdialogMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojResizeStop, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_positionChanged(
       `type`: positionChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Position], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Position], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_positionChanged(
       `type`: positionChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Position], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Position], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_roleChanged(
       `type`: roleChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_roleChanged(
       `type`: roleChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     
@@ -382,41 +383,41 @@ object ojdialogMod {
     
     var modality: modal | modeless = js.native
     
-    var onCancelBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[icon | escape | none], _]) | Null = js.native
+    var onCancelBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[icon | escape | none], js.Any]) | Null = js.native
     
-    var onDialogTitleChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
+    var onDialogTitleChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], js.Any]) | Null = js.native
     
-    var onDragAffordanceChanged: (js.Function1[/* event */ JetElementCustomEvent[`title-bar` | none], _]) | Null = js.native
+    var onDragAffordanceChanged: (js.Function1[/* event */ JetElementCustomEvent[`title-bar` | none], js.Any]) | Null = js.native
     
-    var onInitialVisibilityChanged: (js.Function1[/* event */ JetElementCustomEvent[hide | show], _]) | Null = js.native
+    var onInitialVisibilityChanged: (js.Function1[/* event */ JetElementCustomEvent[hide | show], js.Any]) | Null = js.native
     
-    var onModalityChanged: (js.Function1[/* event */ JetElementCustomEvent[modal | modeless], _]) | Null = js.native
+    var onModalityChanged: (js.Function1[/* event */ JetElementCustomEvent[modal | modeless], js.Any]) | Null = js.native
     
-    var onOjAnimateEnd: (js.Function1[/* event */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojAnimateEnd, _]) | Null = js.native
+    var onOjAnimateEnd: (js.Function1[/* event */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojAnimateEnd, js.Any]) | Null = js.native
     
-    var onOjAnimateStart: (js.Function1[/* event */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojAnimateStart, _]) | Null = js.native
+    var onOjAnimateStart: (js.Function1[/* event */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojAnimateStart, js.Any]) | Null = js.native
     
-    var onOjBeforeClose: (js.Function1[/* event */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojBeforeClose, _]) | Null = js.native
+    var onOjBeforeClose: (js.Function1[/* event */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojBeforeClose, js.Any]) | Null = js.native
     
-    var onOjBeforeOpen: (js.Function1[/* event */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojBeforeOpen, _]) | Null = js.native
+    var onOjBeforeOpen: (js.Function1[/* event */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojBeforeOpen, js.Any]) | Null = js.native
     
-    var onOjClose: (js.Function1[/* event */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojClose, _]) | Null = js.native
+    var onOjClose: (js.Function1[/* event */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojClose, js.Any]) | Null = js.native
     
-    var onOjFocus: (js.Function1[/* event */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojFocus, _]) | Null = js.native
+    var onOjFocus: (js.Function1[/* event */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojFocus, js.Any]) | Null = js.native
     
-    var onOjOpen: (js.Function1[/* event */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojOpen, _]) | Null = js.native
+    var onOjOpen: (js.Function1[/* event */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojOpen, js.Any]) | Null = js.native
     
-    var onOjResize: (js.Function1[/* event */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojResize, _]) | Null = js.native
+    var onOjResize: (js.Function1[/* event */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojResize, js.Any]) | Null = js.native
     
-    var onOjResizeStart: (js.Function1[/* event */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojResizeStart, _]) | Null = js.native
+    var onOjResizeStart: (js.Function1[/* event */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojResizeStart, js.Any]) | Null = js.native
     
-    var onOjResizeStop: (js.Function1[/* event */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojResizeStop, _]) | Null = js.native
+    var onOjResizeStop: (js.Function1[/* event */ typings.oracleOraclejet.ojdialogMod.ojDialog.ojResizeStop, js.Any]) | Null = js.native
     
-    var onPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[Position], _]) | Null = js.native
+    var onPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[Position], js.Any]) | Null = js.native
     
-    var onResizeBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[resizable | none], _]) | Null = js.native
+    var onResizeBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[resizable | none], js.Any]) | Null = js.native
     
-    var onRoleChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+    var onRoleChanged: (js.Function1[/* event */ JetElementCustomEvent[String], js.Any]) | Null = js.native
     
     def open(): Unit = js.native
     
@@ -456,125 +457,98 @@ object ojdialogMod {
   object ojDialog {
     
     // tslint:disable-next-line interface-over-type-literal
-    @js.native
     trait Position extends StObject {
       
-      var at: js.UndefOr[PositionAlign] = js.native
+      var at: js.UndefOr[PositionAlign] = js.undefined
       
-      var collision: js.UndefOr[flip | fit | flipfit | none] = js.native
+      var collision: js.UndefOr[flip | fit | flipfit | none] = js.undefined
       
-      var my: js.UndefOr[PositionAlign] = js.native
+      var my: js.UndefOr[PositionAlign] = js.undefined
       
-      var of: js.UndefOr[String | PositionPoint] = js.native
+      var of: js.UndefOr[String | PositionPoint] = js.undefined
       
-      var offset: js.UndefOr[PositionPoint] = js.native
+      var offset: js.UndefOr[PositionPoint] = js.undefined
     }
     object Position {
       
-      @scala.inline
-      def apply(): Position = {
+      inline def apply(): Position = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Position]
       }
       
-      @scala.inline
-      implicit class PositionMutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
+      extension [Self <: Position](x: Self) {
         
-        @scala.inline
-        def setAt(value: PositionAlign): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
+        inline def setAt(value: PositionAlign): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAtUndefined: Self = StObject.set(x, "at", js.undefined)
+        inline def setAtUndefined: Self = StObject.set(x, "at", js.undefined)
         
-        @scala.inline
-        def setCollision(value: flip | fit | flipfit | none): Self = StObject.set(x, "collision", value.asInstanceOf[js.Any])
+        inline def setCollision(value: flip | fit | flipfit | none): Self = StObject.set(x, "collision", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCollisionUndefined: Self = StObject.set(x, "collision", js.undefined)
+        inline def setCollisionUndefined: Self = StObject.set(x, "collision", js.undefined)
         
-        @scala.inline
-        def setMy(value: PositionAlign): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
+        inline def setMy(value: PositionAlign): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMyUndefined: Self = StObject.set(x, "my", js.undefined)
+        inline def setMyUndefined: Self = StObject.set(x, "my", js.undefined)
         
-        @scala.inline
-        def setOf(value: String | PositionPoint): Self = StObject.set(x, "of", value.asInstanceOf[js.Any])
+        inline def setOf(value: String | PositionPoint): Self = StObject.set(x, "of", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOfUndefined: Self = StObject.set(x, "of", js.undefined)
+        inline def setOfUndefined: Self = StObject.set(x, "of", js.undefined)
         
-        @scala.inline
-        def setOffset(value: PositionPoint): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+        inline def setOffset(value: PositionPoint): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+        inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       }
     }
     
     // tslint:disable-next-line interface-over-type-literal
-    @js.native
     trait PositionAlign extends StObject {
       
-      var horizontal: js.UndefOr[start | end | left | center | bottom] = js.native
+      var horizontal: js.UndefOr[start | end | left | center | bottom] = js.undefined
       
-      var vertical: js.UndefOr[top | bottom | center] = js.native
+      var vertical: js.UndefOr[top | bottom | center] = js.undefined
     }
     object PositionAlign {
       
-      @scala.inline
-      def apply(): PositionAlign = {
+      inline def apply(): PositionAlign = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PositionAlign]
       }
       
-      @scala.inline
-      implicit class PositionAlignMutableBuilder[Self <: PositionAlign] (val x: Self) extends AnyVal {
+      extension [Self <: PositionAlign](x: Self) {
         
-        @scala.inline
-        def setHorizontal(value: start | end | left | center | bottom): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+        inline def setHorizontal(value: start | end | left | center | bottom): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
+        inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
         
-        @scala.inline
-        def setVertical(value: top | bottom | center): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+        inline def setVertical(value: top | bottom | center): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+        inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
       }
     }
     
     // tslint:disable-next-line interface-over-type-literal
-    @js.native
     trait PositionPoint extends StObject {
       
-      var x: js.UndefOr[Double] = js.native
+      var x: js.UndefOr[Double] = js.undefined
       
-      var y: js.UndefOr[Double] = js.native
+      var y: js.UndefOr[Double] = js.undefined
     }
     object PositionPoint {
       
-      @scala.inline
-      def apply(): PositionPoint = {
+      inline def apply(): PositionPoint = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PositionPoint]
       }
       
-      @scala.inline
-      implicit class PositionPointMutableBuilder[Self <: PositionPoint] (val x: Self) extends AnyVal {
+      extension [Self <: PositionPoint](x: Self) {
         
-        @scala.inline
-        def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+        inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+        inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
         
-        @scala.inline
-        def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+        inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+        inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
       }
     }
     
@@ -599,49 +573,49 @@ object ojdialogMod {
     type ojResizeStop = CustomEvent[Event]
   }
   
-  @js.native
-  trait ojDialogEventMap extends baseComponentEventMap[ojDialogSettableProperties] {
+  trait ojDialogEventMap
+    extends StObject
+       with baseComponentEventMap[ojDialogSettableProperties] {
     
-    var cancelBehaviorChanged: JetElementCustomEvent[icon | escape | none] = js.native
+    var cancelBehaviorChanged: JetElementCustomEvent[icon | escape | none]
     
-    var dialogTitleChanged: JetElementCustomEvent[String | Null] = js.native
+    var dialogTitleChanged: JetElementCustomEvent[String | Null]
     
-    var dragAffordanceChanged: JetElementCustomEvent[`title-bar` | none] = js.native
+    var dragAffordanceChanged: JetElementCustomEvent[`title-bar` | none]
     
-    var initialVisibilityChanged: JetElementCustomEvent[hide | show] = js.native
+    var initialVisibilityChanged: JetElementCustomEvent[hide | show]
     
-    var modalityChanged: JetElementCustomEvent[modal | modeless] = js.native
+    var modalityChanged: JetElementCustomEvent[modal | modeless]
     
-    var ojAnimateEnd: typings.oracleOraclejet.ojdialogMod.ojDialog.ojAnimateEnd = js.native
+    var ojAnimateEnd: typings.oracleOraclejet.ojdialogMod.ojDialog.ojAnimateEnd
     
-    var ojAnimateStart: typings.oracleOraclejet.ojdialogMod.ojDialog.ojAnimateStart = js.native
+    var ojAnimateStart: typings.oracleOraclejet.ojdialogMod.ojDialog.ojAnimateStart
     
-    var ojBeforeClose: typings.oracleOraclejet.ojdialogMod.ojDialog.ojBeforeClose = js.native
+    var ojBeforeClose: typings.oracleOraclejet.ojdialogMod.ojDialog.ojBeforeClose
     
-    var ojBeforeOpen: typings.oracleOraclejet.ojdialogMod.ojDialog.ojBeforeOpen = js.native
+    var ojBeforeOpen: typings.oracleOraclejet.ojdialogMod.ojDialog.ojBeforeOpen
     
-    var ojClose: typings.oracleOraclejet.ojdialogMod.ojDialog.ojClose = js.native
+    var ojClose: typings.oracleOraclejet.ojdialogMod.ojDialog.ojClose
     
-    var ojFocus: typings.oracleOraclejet.ojdialogMod.ojDialog.ojFocus = js.native
+    var ojFocus: typings.oracleOraclejet.ojdialogMod.ojDialog.ojFocus
     
-    var ojOpen: typings.oracleOraclejet.ojdialogMod.ojDialog.ojOpen = js.native
+    var ojOpen: typings.oracleOraclejet.ojdialogMod.ojDialog.ojOpen
     
-    var ojResize: typings.oracleOraclejet.ojdialogMod.ojDialog.ojResize = js.native
+    var ojResize: typings.oracleOraclejet.ojdialogMod.ojDialog.ojResize
     
-    var ojResizeStart: typings.oracleOraclejet.ojdialogMod.ojDialog.ojResizeStart = js.native
+    var ojResizeStart: typings.oracleOraclejet.ojdialogMod.ojDialog.ojResizeStart
     
-    var ojResizeStop: typings.oracleOraclejet.ojdialogMod.ojDialog.ojResizeStop = js.native
+    var ojResizeStop: typings.oracleOraclejet.ojdialogMod.ojDialog.ojResizeStop
     
-    var positionChanged: JetElementCustomEvent[Position] = js.native
+    var positionChanged: JetElementCustomEvent[Position]
     
-    var resizeBehaviorChanged: JetElementCustomEvent[resizable | none] = js.native
+    var resizeBehaviorChanged: JetElementCustomEvent[resizable | none]
     
-    var roleChanged: JetElementCustomEvent[String] = js.native
+    var roleChanged: JetElementCustomEvent[String]
   }
   object ojDialogEventMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: UIEvent,
       animationcancel: AnimationEvent,
       animationend: AnimationEvent,
@@ -758,91 +732,72 @@ object ojdialogMod {
       __obj.asInstanceOf[ojDialogEventMap]
     }
     
-    @scala.inline
-    implicit class ojDialogEventMapMutableBuilder[Self <: ojDialogEventMap] (val x: Self) extends AnyVal {
+    extension [Self <: ojDialogEventMap](x: Self) {
       
-      @scala.inline
-      def setCancelBehaviorChanged(value: JetElementCustomEvent[icon | escape | none]): Self = StObject.set(x, "cancelBehaviorChanged", value.asInstanceOf[js.Any])
+      inline def setCancelBehaviorChanged(value: JetElementCustomEvent[icon | escape | none]): Self = StObject.set(x, "cancelBehaviorChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDialogTitleChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "dialogTitleChanged", value.asInstanceOf[js.Any])
+      inline def setDialogTitleChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "dialogTitleChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragAffordanceChanged(value: JetElementCustomEvent[`title-bar` | none]): Self = StObject.set(x, "dragAffordanceChanged", value.asInstanceOf[js.Any])
+      inline def setDragAffordanceChanged(value: JetElementCustomEvent[`title-bar` | none]): Self = StObject.set(x, "dragAffordanceChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialVisibilityChanged(value: JetElementCustomEvent[hide | show]): Self = StObject.set(x, "initialVisibilityChanged", value.asInstanceOf[js.Any])
+      inline def setInitialVisibilityChanged(value: JetElementCustomEvent[hide | show]): Self = StObject.set(x, "initialVisibilityChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModalityChanged(value: JetElementCustomEvent[modal | modeless]): Self = StObject.set(x, "modalityChanged", value.asInstanceOf[js.Any])
+      inline def setModalityChanged(value: JetElementCustomEvent[modal | modeless]): Self = StObject.set(x, "modalityChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjAnimateEnd(value: typings.oracleOraclejet.ojdialogMod.ojDialog.ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
+      inline def setOjAnimateEnd(value: typings.oracleOraclejet.ojdialogMod.ojDialog.ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjAnimateStart(value: typings.oracleOraclejet.ojdialogMod.ojDialog.ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
+      inline def setOjAnimateStart(value: typings.oracleOraclejet.ojdialogMod.ojDialog.ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjBeforeClose(value: typings.oracleOraclejet.ojdialogMod.ojDialog.ojBeforeClose): Self = StObject.set(x, "ojBeforeClose", value.asInstanceOf[js.Any])
+      inline def setOjBeforeClose(value: typings.oracleOraclejet.ojdialogMod.ojDialog.ojBeforeClose): Self = StObject.set(x, "ojBeforeClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjBeforeOpen(value: typings.oracleOraclejet.ojdialogMod.ojDialog.ojBeforeOpen): Self = StObject.set(x, "ojBeforeOpen", value.asInstanceOf[js.Any])
+      inline def setOjBeforeOpen(value: typings.oracleOraclejet.ojdialogMod.ojDialog.ojBeforeOpen): Self = StObject.set(x, "ojBeforeOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjClose(value: typings.oracleOraclejet.ojdialogMod.ojDialog.ojClose): Self = StObject.set(x, "ojClose", value.asInstanceOf[js.Any])
+      inline def setOjClose(value: typings.oracleOraclejet.ojdialogMod.ojDialog.ojClose): Self = StObject.set(x, "ojClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjFocus(value: typings.oracleOraclejet.ojdialogMod.ojDialog.ojFocus): Self = StObject.set(x, "ojFocus", value.asInstanceOf[js.Any])
+      inline def setOjFocus(value: typings.oracleOraclejet.ojdialogMod.ojDialog.ojFocus): Self = StObject.set(x, "ojFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjOpen(value: typings.oracleOraclejet.ojdialogMod.ojDialog.ojOpen): Self = StObject.set(x, "ojOpen", value.asInstanceOf[js.Any])
+      inline def setOjOpen(value: typings.oracleOraclejet.ojdialogMod.ojDialog.ojOpen): Self = StObject.set(x, "ojOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjResize(value: typings.oracleOraclejet.ojdialogMod.ojDialog.ojResize): Self = StObject.set(x, "ojResize", value.asInstanceOf[js.Any])
+      inline def setOjResize(value: typings.oracleOraclejet.ojdialogMod.ojDialog.ojResize): Self = StObject.set(x, "ojResize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjResizeStart(value: typings.oracleOraclejet.ojdialogMod.ojDialog.ojResizeStart): Self = StObject.set(x, "ojResizeStart", value.asInstanceOf[js.Any])
+      inline def setOjResizeStart(value: typings.oracleOraclejet.ojdialogMod.ojDialog.ojResizeStart): Self = StObject.set(x, "ojResizeStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjResizeStop(value: typings.oracleOraclejet.ojdialogMod.ojDialog.ojResizeStop): Self = StObject.set(x, "ojResizeStop", value.asInstanceOf[js.Any])
+      inline def setOjResizeStop(value: typings.oracleOraclejet.ojdialogMod.ojDialog.ojResizeStop): Self = StObject.set(x, "ojResizeStop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionChanged(value: JetElementCustomEvent[Position]): Self = StObject.set(x, "positionChanged", value.asInstanceOf[js.Any])
+      inline def setPositionChanged(value: JetElementCustomEvent[Position]): Self = StObject.set(x, "positionChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeBehaviorChanged(value: JetElementCustomEvent[resizable | none]): Self = StObject.set(x, "resizeBehaviorChanged", value.asInstanceOf[js.Any])
+      inline def setResizeBehaviorChanged(value: JetElementCustomEvent[resizable | none]): Self = StObject.set(x, "resizeBehaviorChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "roleChanged", value.asInstanceOf[js.Any])
+      inline def setRoleChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "roleChanged", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait ojDialogSettableProperties extends baseComponentSettableProperties {
+  trait ojDialogSettableProperties
+    extends StObject
+       with baseComponentSettableProperties {
     
-    var cancelBehavior: icon | escape | none = js.native
+    var cancelBehavior: icon | escape | none
     
-    var dialogTitle: String | Null = js.native
+    var dialogTitle: String | Null
     
-    var dragAffordance: `title-bar` | none = js.native
+    var dragAffordance: `title-bar` | none
     
-    var initialVisibility: hide | show = js.native
+    var initialVisibility: hide | show
     
-    var modality: modal | modeless = js.native
+    var modality: modal | modeless
     
-    var position: Position = js.native
+    var position: Position
     
-    var resizeBehavior: resizable | none = js.native
+    var resizeBehavior: resizable | none
     
-    var role: String = js.native
+    var role: String
     
     @JSName("translations")
-    var translations_ojDialogSettableProperties: LabelCloseIcon = js.native
+    var translations_ojDialogSettableProperties: LabelCloseIcon
   }
   object ojDialogSettableProperties {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cancelBehavior: icon | escape | none,
       dragAffordance: `title-bar` | none,
       initialVisibility: hide | show,
@@ -852,135 +807,103 @@ object ojdialogMod {
       role: String,
       translations: LabelCloseIcon
     ): ojDialogSettableProperties = {
-      val __obj = js.Dynamic.literal(cancelBehavior = cancelBehavior.asInstanceOf[js.Any], dragAffordance = dragAffordance.asInstanceOf[js.Any], initialVisibility = initialVisibility.asInstanceOf[js.Any], modality = modality.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], resizeBehavior = resizeBehavior.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(cancelBehavior = cancelBehavior.asInstanceOf[js.Any], dragAffordance = dragAffordance.asInstanceOf[js.Any], initialVisibility = initialVisibility.asInstanceOf[js.Any], modality = modality.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], resizeBehavior = resizeBehavior.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], dialogTitle = null)
       __obj.asInstanceOf[ojDialogSettableProperties]
     }
     
-    @scala.inline
-    implicit class ojDialogSettablePropertiesMutableBuilder[Self <: ojDialogSettableProperties] (val x: Self) extends AnyVal {
+    extension [Self <: ojDialogSettableProperties](x: Self) {
       
-      @scala.inline
-      def setCancelBehavior(value: icon | escape | none): Self = StObject.set(x, "cancelBehavior", value.asInstanceOf[js.Any])
+      inline def setCancelBehavior(value: icon | escape | none): Self = StObject.set(x, "cancelBehavior", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDialogTitle(value: String): Self = StObject.set(x, "dialogTitle", value.asInstanceOf[js.Any])
+      inline def setDialogTitle(value: String): Self = StObject.set(x, "dialogTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDialogTitleNull: Self = StObject.set(x, "dialogTitle", null)
+      inline def setDialogTitleNull: Self = StObject.set(x, "dialogTitle", null)
       
-      @scala.inline
-      def setDragAffordance(value: `title-bar` | none): Self = StObject.set(x, "dragAffordance", value.asInstanceOf[js.Any])
+      inline def setDragAffordance(value: `title-bar` | none): Self = StObject.set(x, "dragAffordance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialVisibility(value: hide | show): Self = StObject.set(x, "initialVisibility", value.asInstanceOf[js.Any])
+      inline def setInitialVisibility(value: hide | show): Self = StObject.set(x, "initialVisibility", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModality(value: modal | modeless): Self = StObject.set(x, "modality", value.asInstanceOf[js.Any])
+      inline def setModality(value: modal | modeless): Self = StObject.set(x, "modality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeBehavior(value: resizable | none): Self = StObject.set(x, "resizeBehavior", value.asInstanceOf[js.Any])
+      inline def setResizeBehavior(value: resizable | none): Self = StObject.set(x, "resizeBehavior", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslations(value: LabelCloseIcon): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: LabelCloseIcon): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojdialog.ojDialogSettableProperties> */
-  @js.native
   trait ojDialogSettablePropertiesLenient
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var cancelBehavior: js.UndefOr[icon | escape | none] = js.native
+    var cancelBehavior: js.UndefOr[icon | escape | none] = js.undefined
     
-    var dialogTitle: js.UndefOr[String | Null] = js.native
+    var dialogTitle: js.UndefOr[String | Null] = js.undefined
     
-    var dragAffordance: js.UndefOr[`title-bar` | none] = js.native
+    var dragAffordance: js.UndefOr[`title-bar` | none] = js.undefined
     
-    var initialVisibility: js.UndefOr[hide | show] = js.native
+    var initialVisibility: js.UndefOr[hide | show] = js.undefined
     
-    var modality: js.UndefOr[modal | modeless] = js.native
+    var modality: js.UndefOr[modal | modeless] = js.undefined
     
-    var position: js.UndefOr[Position] = js.native
+    var position: js.UndefOr[Position] = js.undefined
     
-    var resizeBehavior: js.UndefOr[resizable | none] = js.native
+    var resizeBehavior: js.UndefOr[resizable | none] = js.undefined
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
-    var translations: js.UndefOr[LabelCloseIcon] = js.native
+    var translations: js.UndefOr[LabelCloseIcon] = js.undefined
   }
   object ojDialogSettablePropertiesLenient {
     
-    @scala.inline
-    def apply(): ojDialogSettablePropertiesLenient = {
+    inline def apply(): ojDialogSettablePropertiesLenient = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ojDialogSettablePropertiesLenient]
     }
     
-    @scala.inline
-    implicit class ojDialogSettablePropertiesLenientMutableBuilder[Self <: ojDialogSettablePropertiesLenient] (val x: Self) extends AnyVal {
+    extension [Self <: ojDialogSettablePropertiesLenient](x: Self) {
       
-      @scala.inline
-      def setCancelBehavior(value: icon | escape | none): Self = StObject.set(x, "cancelBehavior", value.asInstanceOf[js.Any])
+      inline def setCancelBehavior(value: icon | escape | none): Self = StObject.set(x, "cancelBehavior", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelBehaviorUndefined: Self = StObject.set(x, "cancelBehavior", js.undefined)
+      inline def setCancelBehaviorUndefined: Self = StObject.set(x, "cancelBehavior", js.undefined)
       
-      @scala.inline
-      def setDialogTitle(value: String): Self = StObject.set(x, "dialogTitle", value.asInstanceOf[js.Any])
+      inline def setDialogTitle(value: String): Self = StObject.set(x, "dialogTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDialogTitleNull: Self = StObject.set(x, "dialogTitle", null)
+      inline def setDialogTitleNull: Self = StObject.set(x, "dialogTitle", null)
       
-      @scala.inline
-      def setDialogTitleUndefined: Self = StObject.set(x, "dialogTitle", js.undefined)
+      inline def setDialogTitleUndefined: Self = StObject.set(x, "dialogTitle", js.undefined)
       
-      @scala.inline
-      def setDragAffordance(value: `title-bar` | none): Self = StObject.set(x, "dragAffordance", value.asInstanceOf[js.Any])
+      inline def setDragAffordance(value: `title-bar` | none): Self = StObject.set(x, "dragAffordance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragAffordanceUndefined: Self = StObject.set(x, "dragAffordance", js.undefined)
+      inline def setDragAffordanceUndefined: Self = StObject.set(x, "dragAffordance", js.undefined)
       
-      @scala.inline
-      def setInitialVisibility(value: hide | show): Self = StObject.set(x, "initialVisibility", value.asInstanceOf[js.Any])
+      inline def setInitialVisibility(value: hide | show): Self = StObject.set(x, "initialVisibility", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialVisibilityUndefined: Self = StObject.set(x, "initialVisibility", js.undefined)
+      inline def setInitialVisibilityUndefined: Self = StObject.set(x, "initialVisibility", js.undefined)
       
-      @scala.inline
-      def setModality(value: modal | modeless): Self = StObject.set(x, "modality", value.asInstanceOf[js.Any])
+      inline def setModality(value: modal | modeless): Self = StObject.set(x, "modality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModalityUndefined: Self = StObject.set(x, "modality", js.undefined)
+      inline def setModalityUndefined: Self = StObject.set(x, "modality", js.undefined)
       
-      @scala.inline
-      def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setResizeBehavior(value: resizable | none): Self = StObject.set(x, "resizeBehavior", value.asInstanceOf[js.Any])
+      inline def setResizeBehavior(value: resizable | none): Self = StObject.set(x, "resizeBehavior", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeBehaviorUndefined: Self = StObject.set(x, "resizeBehavior", js.undefined)
+      inline def setResizeBehaviorUndefined: Self = StObject.set(x, "resizeBehavior", js.undefined)
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
-      @scala.inline
-      def setTranslations(value: LabelCloseIcon): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: LabelCloseIcon): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+      inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
     }
   }
 }

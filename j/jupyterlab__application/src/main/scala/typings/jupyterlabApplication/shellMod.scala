@@ -14,7 +14,6 @@ import typings.luminoWidgets.dockpanelMod.DockPanel.Mode
 import typings.luminoWidgets.mod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shellMod {
@@ -39,23 +38,17 @@ object shellMod {
     trait Area extends StObject
     object Area {
       
-      @scala.inline
-      def bottom: typings.jupyterlabApplication.jupyterlabApplicationStrings.bottom = "bottom".asInstanceOf[typings.jupyterlabApplication.jupyterlabApplicationStrings.bottom]
+      inline def bottom: typings.jupyterlabApplication.jupyterlabApplicationStrings.bottom = "bottom".asInstanceOf[typings.jupyterlabApplication.jupyterlabApplicationStrings.bottom]
       
-      @scala.inline
-      def header: typings.jupyterlabApplication.jupyterlabApplicationStrings.header = "header".asInstanceOf[typings.jupyterlabApplication.jupyterlabApplicationStrings.header]
+      inline def header: typings.jupyterlabApplication.jupyterlabApplicationStrings.header = "header".asInstanceOf[typings.jupyterlabApplication.jupyterlabApplicationStrings.header]
       
-      @scala.inline
-      def left: typings.jupyterlabApplication.jupyterlabApplicationStrings.left = "left".asInstanceOf[typings.jupyterlabApplication.jupyterlabApplicationStrings.left]
+      inline def left: typings.jupyterlabApplication.jupyterlabApplicationStrings.left = "left".asInstanceOf[typings.jupyterlabApplication.jupyterlabApplicationStrings.left]
       
-      @scala.inline
-      def main: typings.jupyterlabApplication.jupyterlabApplicationStrings.main = "main".asInstanceOf[typings.jupyterlabApplication.jupyterlabApplicationStrings.main]
+      inline def main: typings.jupyterlabApplication.jupyterlabApplicationStrings.main = "main".asInstanceOf[typings.jupyterlabApplication.jupyterlabApplicationStrings.main]
       
-      @scala.inline
-      def right: typings.jupyterlabApplication.jupyterlabApplicationStrings.right = "right".asInstanceOf[typings.jupyterlabApplication.jupyterlabApplicationStrings.right]
+      inline def right: typings.jupyterlabApplication.jupyterlabApplicationStrings.right = "right".asInstanceOf[typings.jupyterlabApplication.jupyterlabApplicationStrings.right]
       
-      @scala.inline
-      def top: typings.jupyterlabApplication.jupyterlabApplicationStrings.top = "top".asInstanceOf[typings.jupyterlabApplication.jupyterlabApplicationStrings.top]
+      inline def top: typings.jupyterlabApplication.jupyterlabApplicationStrings.top = "top".asInstanceOf[typings.jupyterlabApplication.jupyterlabApplicationStrings.top]
     }
     
     /**
@@ -71,7 +64,6 @@ object shellMod {
     /**
       * A description of the application's user interface layout.
       */
-    @js.native
     trait ILayout extends StObject {
       
       /**
@@ -83,161 +75,133 @@ object shellMod {
         * `fetch` call. If it is set when being passed into `save`, it will be
         * ignored.
         */
-      val fresh: js.UndefOr[Boolean] = js.native
+      val fresh: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The left area of the user interface.
         */
-      val leftArea: ISideArea | Null = js.native
+      val leftArea: ISideArea | Null
       
       /**
         * The main area of the user interface.
         */
-      val mainArea: IMainArea | Null = js.native
+      val mainArea: IMainArea | Null
       
       /**
         * The right area of the user interface.
         */
-      val rightArea: ISideArea | Null = js.native
+      val rightArea: ISideArea | Null
     }
     object ILayout {
       
-      @scala.inline
-      def apply(): ILayout = {
-        val __obj = js.Dynamic.literal()
+      inline def apply(): ILayout = {
+        val __obj = js.Dynamic.literal(leftArea = null, mainArea = null, rightArea = null)
         __obj.asInstanceOf[ILayout]
       }
       
-      @scala.inline
-      implicit class ILayoutMutableBuilder[Self <: ILayout] (val x: Self) extends AnyVal {
+      extension [Self <: ILayout](x: Self) {
         
-        @scala.inline
-        def setFresh(value: Boolean): Self = StObject.set(x, "fresh", value.asInstanceOf[js.Any])
+        inline def setFresh(value: Boolean): Self = StObject.set(x, "fresh", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFreshUndefined: Self = StObject.set(x, "fresh", js.undefined)
+        inline def setFreshUndefined: Self = StObject.set(x, "fresh", js.undefined)
         
-        @scala.inline
-        def setLeftArea(value: ISideArea): Self = StObject.set(x, "leftArea", value.asInstanceOf[js.Any])
+        inline def setLeftArea(value: ISideArea): Self = StObject.set(x, "leftArea", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLeftAreaNull: Self = StObject.set(x, "leftArea", null)
+        inline def setLeftAreaNull: Self = StObject.set(x, "leftArea", null)
         
-        @scala.inline
-        def setMainArea(value: IMainArea): Self = StObject.set(x, "mainArea", value.asInstanceOf[js.Any])
+        inline def setMainArea(value: IMainArea): Self = StObject.set(x, "mainArea", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMainAreaNull: Self = StObject.set(x, "mainArea", null)
+        inline def setMainAreaNull: Self = StObject.set(x, "mainArea", null)
         
-        @scala.inline
-        def setRightArea(value: ISideArea): Self = StObject.set(x, "rightArea", value.asInstanceOf[js.Any])
+        inline def setRightArea(value: ISideArea): Self = StObject.set(x, "rightArea", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRightAreaNull: Self = StObject.set(x, "rightArea", null)
+        inline def setRightAreaNull: Self = StObject.set(x, "rightArea", null)
       }
     }
     
     /**
       * The restorable description of the main application area.
       */
-    @js.native
     trait IMainArea extends StObject {
       
       /**
         * The current widget that has application focus.
         */
-      val currentWidget: Widget | Null = js.native
+      val currentWidget: Widget | Null
       
       /**
         * The contents of the main application dock panel.
         */
-      val dock: ILayoutConfig | Null = js.native
+      val dock: ILayoutConfig | Null
       
       /**
         * The document mode (i.e., multiple/single) of the main dock panel.
         */
-      val mode: Mode | Null = js.native
+      val mode: Mode | Null
     }
     object IMainArea {
       
-      @scala.inline
-      def apply(): IMainArea = {
-        val __obj = js.Dynamic.literal()
+      inline def apply(): IMainArea = {
+        val __obj = js.Dynamic.literal(currentWidget = null, dock = null, mode = null)
         __obj.asInstanceOf[IMainArea]
       }
       
-      @scala.inline
-      implicit class IMainAreaMutableBuilder[Self <: IMainArea] (val x: Self) extends AnyVal {
+      extension [Self <: IMainArea](x: Self) {
         
-        @scala.inline
-        def setCurrentWidget(value: Widget): Self = StObject.set(x, "currentWidget", value.asInstanceOf[js.Any])
+        inline def setCurrentWidget(value: Widget): Self = StObject.set(x, "currentWidget", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCurrentWidgetNull: Self = StObject.set(x, "currentWidget", null)
+        inline def setCurrentWidgetNull: Self = StObject.set(x, "currentWidget", null)
         
-        @scala.inline
-        def setDock(value: ILayoutConfig): Self = StObject.set(x, "dock", value.asInstanceOf[js.Any])
+        inline def setDock(value: ILayoutConfig): Self = StObject.set(x, "dock", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDockNull: Self = StObject.set(x, "dock", null)
+        inline def setDockNull: Self = StObject.set(x, "dock", null)
         
-        @scala.inline
-        def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+        inline def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModeNull: Self = StObject.set(x, "mode", null)
+        inline def setModeNull: Self = StObject.set(x, "mode", null)
       }
     }
     
     /**
       * The restorable description of a sidebar in the user interface.
       */
-    @js.native
     trait ISideArea extends StObject {
       
       /**
         * A flag denoting whether the sidebar has been collapsed.
         */
-      val collapsed: Boolean = js.native
+      val collapsed: Boolean
       
       /**
         * The current widget that has side area focus.
         */
-      val currentWidget: Widget | Null = js.native
+      val currentWidget: Widget | Null
       
       /**
         * The collection of widgets held by the sidebar.
         */
-      val widgets: js.Array[Widget] | Null = js.native
+      val widgets: js.Array[Widget] | Null
     }
     object ISideArea {
       
-      @scala.inline
-      def apply(collapsed: Boolean): ISideArea = {
-        val __obj = js.Dynamic.literal(collapsed = collapsed.asInstanceOf[js.Any])
+      inline def apply(collapsed: Boolean): ISideArea = {
+        val __obj = js.Dynamic.literal(collapsed = collapsed.asInstanceOf[js.Any], currentWidget = null, widgets = null)
         __obj.asInstanceOf[ISideArea]
       }
       
-      @scala.inline
-      implicit class ISideAreaMutableBuilder[Self <: ISideArea] (val x: Self) extends AnyVal {
+      extension [Self <: ISideArea](x: Self) {
         
-        @scala.inline
-        def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+        inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCurrentWidget(value: Widget): Self = StObject.set(x, "currentWidget", value.asInstanceOf[js.Any])
+        inline def setCurrentWidget(value: Widget): Self = StObject.set(x, "currentWidget", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCurrentWidgetNull: Self = StObject.set(x, "currentWidget", null)
+        inline def setCurrentWidgetNull: Self = StObject.set(x, "currentWidget", null)
         
-        @scala.inline
-        def setWidgets(value: js.Array[Widget]): Self = StObject.set(x, "widgets", value.asInstanceOf[js.Any])
+        inline def setWidgets(value: js.Array[Widget]): Self = StObject.set(x, "widgets", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidgetsNull: Self = StObject.set(x, "widgets", null)
+        inline def setWidgetsNull: Self = StObject.set(x, "widgets", null)
         
-        @scala.inline
-        def setWidgetsVarargs(value: Widget*): Self = StObject.set(x, "widgets", js.Array(value :_*))
+        inline def setWidgetsVarargs(value: Widget*): Self = StObject.set(x, "widgets", js.Array(value :_*))
       }
     }
     
@@ -255,7 +219,7 @@ object shellMod {
     */
   class LabShell () extends IShell {
     
-    var _activeChanged: js.Any = js.native
+    /* private */ var _activeChanged: js.Any = js.native
     
     /**
       * Add a widget to the bottom content area.
@@ -263,7 +227,7 @@ object shellMod {
       * #### Notes
       * Widgets must have a unique `id` property, which will be used as the DOM id.
       */
-    var _addToBottomArea: js.Any = js.native
+    /* private */ var _addToBottomArea: js.Any = js.native
     
     /**
       * Add a widget to the header content area.
@@ -271,7 +235,7 @@ object shellMod {
       * #### Notes
       * Widgets must have a unique `id` property, which will be used as the DOM id.
       */
-    var _addToHeaderArea: js.Any = js.native
+    /* private */ var _addToHeaderArea: js.Any = js.native
     
     /**
       * Add a widget to the left content area.
@@ -279,7 +243,7 @@ object shellMod {
       * #### Notes
       * Widgets must have a unique `id` property, which will be used as the DOM id.
       */
-    var _addToLeftArea: js.Any = js.native
+    /* private */ var _addToLeftArea: js.Any = js.native
     
     /**
       * Add a widget to the main content area.
@@ -292,7 +256,7 @@ object shellMod {
       * In the options, `ref` defaults to `null`, `mode` defaults to `'tab-after'`,
       * and `activate` defaults to `true`.
       */
-    var _addToMainArea: js.Any = js.native
+    /* private */ var _addToMainArea: js.Any = js.native
     
     /**
       * Add a widget to the right content area.
@@ -300,7 +264,7 @@ object shellMod {
       * #### Notes
       * Widgets must have a unique `id` property, which will be used as the DOM id.
       */
-    var _addToRightArea: js.Any = js.native
+    /* private */ var _addToRightArea: js.Any = js.native
     
     /**
       * Add a widget to the top content area.
@@ -308,61 +272,61 @@ object shellMod {
       * #### Notes
       * Widgets must have a unique `id` property, which will be used as the DOM id.
       */
-    var _addToTopArea: js.Any = js.native
+    /* private */ var _addToTopArea: js.Any = js.native
     
-    var _adjacentBar: js.Any = js.native
+    /* private */ var _adjacentBar: js.Any = js.native
     
-    var _bottomPanel: js.Any = js.native
+    /* private */ var _bottomPanel: js.Any = js.native
     
-    var _cachedLayout: js.Any = js.native
+    /* private */ var _cachedLayout: js.Any = js.native
     
-    var _currentChanged: js.Any = js.native
+    /* private */ var _currentChanged: js.Any = js.native
     
-    var _currentTabBar: js.Any = js.native
+    /* private */ var _currentTabBar: js.Any = js.native
     
     /**
       * A message hook for child add/remove messages on the main area dock panel.
       */
-    var _dockChildHook: js.Any = js.native
+    /* private */ var _dockChildHook: js.Any = js.native
     
-    var _dockPanel: js.Any = js.native
+    /* private */ var _dockPanel: js.Any = js.native
     
-    var _headerPanel: js.Any = js.native
+    /* private */ var _headerPanel: js.Any = js.native
     
-    var _isRestored: js.Any = js.native
+    /* private */ var _isRestored: js.Any = js.native
     
-    var _layoutDebouncer: js.Any = js.native
+    /* private */ var _layoutDebouncer: js.Any = js.native
     
-    var _layoutModified: js.Any = js.native
+    /* private */ var _layoutModified: js.Any = js.native
     
-    var _leftHandler: js.Any = js.native
+    /* private */ var _leftHandler: js.Any = js.native
     
-    var _mainOptionsCache: js.Any = js.native
+    /* private */ var _mainOptionsCache: js.Any = js.native
     
     /**
       * Handle a change to the dock area active widget.
       */
-    var _onActiveChanged: js.Any = js.native
+    /* private */ var _onActiveChanged: js.Any = js.native
     
     /**
       * Handle a change to the dock area current widget.
       */
-    var _onCurrentChanged: js.Any = js.native
+    /* private */ var _onCurrentChanged: js.Any = js.native
     
     /**
       * Handle a change to the layout.
       */
-    var _onLayoutModified: js.Any = js.native
+    /* private */ var _onLayoutModified: js.Any = js.native
     
-    var _restored: js.Any = js.native
+    /* private */ var _restored: js.Any = js.native
     
-    var _rightHandler: js.Any = js.native
+    /* private */ var _rightHandler: js.Any = js.native
     
-    var _sideOptionsCache: js.Any = js.native
+    /* private */ var _sideOptionsCache: js.Any = js.native
     
-    var _topHandler: js.Any = js.native
+    /* private */ var _topHandler: js.Any = js.native
     
-    var _tracker: js.Any = js.native
+    /* private */ var _tracker: js.Any = js.native
     
     def activateNextTab(): Unit = js.native
     

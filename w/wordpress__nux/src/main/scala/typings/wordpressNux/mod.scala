@@ -1,6 +1,5 @@
 package typings.wordpressNux
 
-import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.ComponentType
 import typings.wordpressNux.anon.TypeofimportedActions
 import typings.wordpressNux.anon.TypeofimportedSelectors
@@ -12,17 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  object DotTip extends Shortcut {
-    
-    @JSImport("@wordpress/nux", "DotTip")
-    @js.native
-    val ^ : ComponentType[Props] = js.native
-    
-    type _To = ComponentType[Props]
-    
-    /* This means you don't have to write `^`, but can instead just say `DotTip.foo` */
-    override def _to: ComponentType[Props] = ^
-  }
+  @JSImport("@wordpress/nux", "DotTip")
+  @js.native
+  val DotTip: ComponentType[Props] = js.native
   
   /* augmented module */
   object wordpressDataAugmentingMod {

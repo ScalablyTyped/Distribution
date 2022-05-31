@@ -3,7 +3,6 @@ package typings.babylonjs
 import typings.babylonjs.mathVectorMod.Matrix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vrCameraMetricsMod {
@@ -117,12 +116,14 @@ object vrCameraMetricsMod {
   /* static members */
   object VRCameraMetrics {
     
+    @JSImport("babylonjs/Cameras/VR/vrCameraMetrics", "VRCameraMetrics")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get the default VRMetrics based on the most generic setup.
       * @returns the default vr metrics
       */
-    @JSImport("babylonjs/Cameras/VR/vrCameraMetrics", "VRCameraMetrics.GetDefault")
-    @js.native
-    def GetDefault(): VRCameraMetrics = js.native
+    inline def GetDefault(): VRCameraMetrics = ^.asInstanceOf[js.Dynamic].applyDynamic("GetDefault")().asInstanceOf[VRCameraMetrics]
   }
 }

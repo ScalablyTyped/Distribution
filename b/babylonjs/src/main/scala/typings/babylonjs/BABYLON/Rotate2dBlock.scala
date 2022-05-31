@@ -2,11 +2,12 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Rotate2dBlock extends NodeMaterialBlock {
+trait Rotate2dBlock
+  extends StObject
+     with NodeMaterialBlock {
   
   /**
     * Gets the input angle

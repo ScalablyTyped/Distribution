@@ -293,270 +293,230 @@ object mod {
     val ^ : js.Any = js.native
     
     /**
+      * Create a date format function.
+      *
+      * @param options - The options for creating the format function.
+      *
+      * @returns A new date format function.
+      *
+      * #### Notes
+      * This formatter uses `Date.toDateString()` to format the values.
+      *
+      * If a value is not a `Date` object, `new Date(value)` is used to
+      * coerce the value to a date.
+      *
+      * The `formatIntlDateTime()` formatter is more flexible, but slower.
+      */
+    /**
       * The namespace for the `formatDate` function statics.
       */
-    object formatDate {
-      
-      /**
-        * Create a date format function.
-        *
-        * @param options - The options for creating the format function.
-        *
-        * @returns A new date format function.
-        *
-        * #### Notes
-        * This formatter uses `Date.toDateString()` to format the values.
-        *
-        * If a value is not a `Date` object, `new Date(value)` is used to
-        * coerce the value to a date.
-        *
-        * The `formatIntlDateTime()` formatter is more flexible, but slower.
-        */
-      inline def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
-      inline def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatDate.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
-      
-      @JSImport("@lumino/datagrid", "TextRenderer.formatDate")
-      @js.native
-      val ^ : js.Any = js.native
-    }
+    inline def formatDate(): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")().asInstanceOf[FormatFunc]
+    /**
+      * The namespace for the `formatDate` function statics.
+      */
+    inline def formatDate(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatDate.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
+    /**
+      * Create a scientific notation format function.
+      *
+      * @param options - The options for creating the format function.
+      *
+      * @returns A new scientific notation format function.
+      *
+      * #### Notes
+      * This formatter uses the builtin `Number()` and `toExponential()`
+      * to coerce values.
+      *
+      * The `formatIntlNumber()` formatter is more flexible, but slower.
+      */
     /**
       * The namespace for the `formatExponential` function statics.
       */
-    object formatExponential {
-      
-      /**
-        * Create a scientific notation format function.
-        *
-        * @param options - The options for creating the format function.
-        *
-        * @returns A new scientific notation format function.
-        *
-        * #### Notes
-        * This formatter uses the builtin `Number()` and `toExponential()`
-        * to coerce values.
-        *
-        * The `formatIntlNumber()` formatter is more flexible, but slower.
-        */
-      inline def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
-      inline def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatExponential.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
-      
-      @JSImport("@lumino/datagrid", "TextRenderer.formatExponential")
-      @js.native
-      val ^ : js.Any = js.native
-    }
+    inline def formatExponential(): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatExponential")().asInstanceOf[FormatFunc]
+    /**
+      * The namespace for the `formatExponential` function statics.
+      */
+    inline def formatExponential(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatExponential.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatExponential")(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
+    /**
+      * Create a fixed decimal format function.
+      *
+      * @param options - The options for creating the format function.
+      *
+      * @returns A new fixed decimal format function.
+      *
+      * #### Notes
+      * This formatter uses the builtin `Number()` and `toFixed()` to
+      * coerce values.
+      *
+      * The `formatIntlNumber()` formatter is more flexible, but slower.
+      */
     /**
       * The namespace for the `formatFixed` function statics.
       */
-    object formatFixed {
-      
-      /**
-        * Create a fixed decimal format function.
-        *
-        * @param options - The options for creating the format function.
-        *
-        * @returns A new fixed decimal format function.
-        *
-        * #### Notes
-        * This formatter uses the builtin `Number()` and `toFixed()` to
-        * coerce values.
-        *
-        * The `formatIntlNumber()` formatter is more flexible, but slower.
-        */
-      inline def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
-      inline def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatFixed.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
-      
-      @JSImport("@lumino/datagrid", "TextRenderer.formatFixed")
-      @js.native
-      val ^ : js.Any = js.native
-    }
+    inline def formatFixed(): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatFixed")().asInstanceOf[FormatFunc]
+    /**
+      * The namespace for the `formatFixed` function statics.
+      */
+    inline def formatFixed(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatFixed.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatFixed")(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
+    /**
+      * Create a generic text format function.
+      *
+      * @param options - The options for creating the format function.
+      *
+      * @returns A new generic text format function.
+      *
+      * #### Notes
+      * This formatter uses the builtin `String()` to coerce any value
+      * to a string.
+      */
     /**
       * The namespace for the `formatGeneric` function statics.
       */
-    object formatGeneric {
-      
-      /**
-        * Create a generic text format function.
-        *
-        * @param options - The options for creating the format function.
-        *
-        * @returns A new generic text format function.
-        *
-        * #### Notes
-        * This formatter uses the builtin `String()` to coerce any value
-        * to a string.
-        */
-      inline def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
-      inline def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatGeneric.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
-      
-      @JSImport("@lumino/datagrid", "TextRenderer.formatGeneric")
-      @js.native
-      val ^ : js.Any = js.native
-    }
+    inline def formatGeneric(): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatGeneric")().asInstanceOf[FormatFunc]
+    /**
+      * The namespace for the `formatGeneric` function statics.
+      */
+    inline def formatGeneric(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatGeneric.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatGeneric")(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
+    /**
+      * Create an ISO datetime format function.
+      *
+      * @param options - The options for creating the format function.
+      *
+      * @returns A new ISO datetime format function.
+      *
+      * #### Notes
+      * This formatter uses `Date.toISOString()` to format the values.
+      *
+      * If a value is not a `Date` object, `new Date(value)` is used to
+      * coerce the value to a date.
+      *
+      * The `formatIntlDateTime()` formatter is more flexible, but slower.
+      */
     /**
       * The namespace for the `formatISODateTime` function statics.
       */
-    object formatISODateTime {
-      
-      /**
-        * Create an ISO datetime format function.
-        *
-        * @param options - The options for creating the format function.
-        *
-        * @returns A new ISO datetime format function.
-        *
-        * #### Notes
-        * This formatter uses `Date.toISOString()` to format the values.
-        *
-        * If a value is not a `Date` object, `new Date(value)` is used to
-        * coerce the value to a date.
-        *
-        * The `formatIntlDateTime()` formatter is more flexible, but slower.
-        */
-      inline def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
-      inline def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatISODateTime.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
-      
-      @JSImport("@lumino/datagrid", "TextRenderer.formatISODateTime")
-      @js.native
-      val ^ : js.Any = js.native
-    }
+    inline def formatISODateTime(): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatISODateTime")().asInstanceOf[FormatFunc]
+    /**
+      * The namespace for the `formatISODateTime` function statics.
+      */
+    inline def formatISODateTime(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatISODateTime.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatISODateTime")(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
+    /**
+      * Create an international datetime format function.
+      *
+      * @param options - The options for creating the format function.
+      *
+      * @returns A new international datetime format function.
+      *
+      * #### Notes
+      * This formatter uses the builtin `Intl.DateTimeFormat` object to
+      * coerce values.
+      *
+      * This is the most flexible (but slowest) datetime formatter.
+      */
     /**
       * The namespace for the `formatIntlDateTime` function statics.
       */
-    object formatIntlDateTime {
-      
-      /**
-        * Create an international datetime format function.
-        *
-        * @param options - The options for creating the format function.
-        *
-        * @returns A new international datetime format function.
-        *
-        * #### Notes
-        * This formatter uses the builtin `Intl.DateTimeFormat` object to
-        * coerce values.
-        *
-        * This is the most flexible (but slowest) datetime formatter.
-        */
-      inline def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
-      inline def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatIntlDateTime.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
-      
-      @JSImport("@lumino/datagrid", "TextRenderer.formatIntlDateTime")
-      @js.native
-      val ^ : js.Any = js.native
-    }
+    inline def formatIntlDateTime(): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatIntlDateTime")().asInstanceOf[FormatFunc]
+    /**
+      * The namespace for the `formatIntlDateTime` function statics.
+      */
+    inline def formatIntlDateTime(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatIntlDateTime.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatIntlDateTime")(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
+    /**
+      * Create an international number format function.
+      *
+      * @param options - The options for creating the format function.
+      *
+      * @returns A new international number format function.
+      *
+      * #### Notes
+      * This formatter uses the builtin `Intl.NumberFormat` object to
+      * coerce values.
+      *
+      * This is the most flexible (but slowest) number formatter.
+      */
     /**
       * The namespace for the `formatIntlNumber` function statics.
       */
-    object formatIntlNumber {
-      
-      /**
-        * Create an international number format function.
-        *
-        * @param options - The options for creating the format function.
-        *
-        * @returns A new international number format function.
-        *
-        * #### Notes
-        * This formatter uses the builtin `Intl.NumberFormat` object to
-        * coerce values.
-        *
-        * This is the most flexible (but slowest) number formatter.
-        */
-      inline def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
-      inline def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatIntlNumber.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
-      
-      @JSImport("@lumino/datagrid", "TextRenderer.formatIntlNumber")
-      @js.native
-      val ^ : js.Any = js.native
-    }
+    inline def formatIntlNumber(): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatIntlNumber")().asInstanceOf[FormatFunc]
+    /**
+      * The namespace for the `formatIntlNumber` function statics.
+      */
+    inline def formatIntlNumber(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatIntlNumber.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatIntlNumber")(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
+    /**
+      * Create a significant figure format function.
+      *
+      * @param options - The options for creating the format function.
+      *
+      * @returns A new significant figure format function.
+      *
+      * #### Notes
+      * This formatter uses the builtin `Number()` and `toPrecision()`
+      * to coerce values.
+      *
+      * The `formatIntlNumber()` formatter is more flexible, but slower.
+      */
     /**
       * The namespace for the `formatPrecision` function statics.
       */
-    object formatPrecision {
-      
-      /**
-        * Create a significant figure format function.
-        *
-        * @param options - The options for creating the format function.
-        *
-        * @returns A new significant figure format function.
-        *
-        * #### Notes
-        * This formatter uses the builtin `Number()` and `toPrecision()`
-        * to coerce values.
-        *
-        * The `formatIntlNumber()` formatter is more flexible, but slower.
-        */
-      inline def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
-      inline def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatPrecision.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
-      
-      @JSImport("@lumino/datagrid", "TextRenderer.formatPrecision")
-      @js.native
-      val ^ : js.Any = js.native
-    }
+    inline def formatPrecision(): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatPrecision")().asInstanceOf[FormatFunc]
+    /**
+      * The namespace for the `formatPrecision` function statics.
+      */
+    inline def formatPrecision(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatPrecision.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatPrecision")(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
+    /**
+      * Create a time format function.
+      *
+      * @param options - The options for creating the format function.
+      *
+      * @returns A new time format function.
+      *
+      * #### Notes
+      * This formatter uses `Date.toTimeString()` to format the values.
+      *
+      * If a value is not a `Date` object, `new Date(value)` is used to
+      * coerce the value to a date.
+      *
+      * The `formatIntlDateTime()` formatter is more flexible, but slower.
+      */
     /**
       * The namespace for the `formatTime` function statics.
       */
-    object formatTime {
-      
-      /**
-        * Create a time format function.
-        *
-        * @param options - The options for creating the format function.
-        *
-        * @returns A new time format function.
-        *
-        * #### Notes
-        * This formatter uses `Date.toTimeString()` to format the values.
-        *
-        * If a value is not a `Date` object, `new Date(value)` is used to
-        * coerce the value to a date.
-        *
-        * The `formatIntlDateTime()` formatter is more flexible, but slower.
-        */
-      inline def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
-      inline def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatTime.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
-      
-      @JSImport("@lumino/datagrid", "TextRenderer.formatTime")
-      @js.native
-      val ^ : js.Any = js.native
-    }
+    inline def formatTime(): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatTime")().asInstanceOf[FormatFunc]
+    /**
+      * The namespace for the `formatTime` function statics.
+      */
+    inline def formatTime(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatTime.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatTime")(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
+    /**
+      * Create a UTC datetime format function.
+      *
+      * @param options - The options for creating the format function.
+      *
+      * @returns A new UTC datetime format function.
+      *
+      * #### Notes
+      * This formatter uses `Date.toUTCString()` to format the values.
+      *
+      * If a value is not a `Date` object, `new Date(value)` is used to
+      * coerce the value to a date.
+      *
+      * The `formatIntlDateTime()` formatter is more flexible, but slower.
+      */
     /**
       * The namespace for the `formatUTCDateTime` function statics.
       */
-    object formatUTCDateTime {
-      
-      /**
-        * Create a UTC datetime format function.
-        *
-        * @param options - The options for creating the format function.
-        *
-        * @returns A new UTC datetime format function.
-        *
-        * #### Notes
-        * This formatter uses `Date.toUTCString()` to format the values.
-        *
-        * If a value is not a `Date` object, `new Date(value)` is used to
-        * coerce the value to a date.
-        *
-        * The `formatIntlDateTime()` formatter is more flexible, but slower.
-        */
-      inline def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
-      inline def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatUTCDateTime.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
-      
-      @JSImport("@lumino/datagrid", "TextRenderer.formatUTCDateTime")
-      @js.native
-      val ^ : js.Any = js.native
-    }
+    inline def formatUTCDateTime(): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatUTCDateTime")().asInstanceOf[FormatFunc]
+    /**
+      * The namespace for the `formatUTCDateTime` function statics.
+      */
+    inline def formatUTCDateTime(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatUTCDateTime.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatUTCDateTime")(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
     /**
       * Measure the height of a font.
@@ -573,9 +533,4 @@ object mod {
       */
     inline def measureFontHeight(font: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("measureFontHeight")(font.asInstanceOf[js.Any]).asInstanceOf[Double]
   }
-  
-  /**
-    * A namespace for module-private functionality.
-    */
-  object Private
 }

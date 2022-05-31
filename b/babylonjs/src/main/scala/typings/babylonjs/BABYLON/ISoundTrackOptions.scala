@@ -2,43 +2,35 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISoundTrackOptions extends StObject {
   
   /**
     * Define if the sound track is the main sound track of the scene
     */
-  var mainTrack: js.UndefOr[Boolean] = js.native
+  var mainTrack: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The volume the sound track should take during creation
     */
-  var volume: js.UndefOr[Double] = js.native
+  var volume: js.UndefOr[Double] = js.undefined
 }
 object ISoundTrackOptions {
   
-  @scala.inline
-  def apply(): ISoundTrackOptions = {
+  inline def apply(): ISoundTrackOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISoundTrackOptions]
   }
   
-  @scala.inline
-  implicit class ISoundTrackOptionsMutableBuilder[Self <: ISoundTrackOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ISoundTrackOptions](x: Self) {
     
-    @scala.inline
-    def setMainTrack(value: Boolean): Self = StObject.set(x, "mainTrack", value.asInstanceOf[js.Any])
+    inline def setMainTrack(value: Boolean): Self = StObject.set(x, "mainTrack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMainTrackUndefined: Self = StObject.set(x, "mainTrack", js.undefined)
+    inline def setMainTrackUndefined: Self = StObject.set(x, "mainTrack", js.undefined)
     
-    @scala.inline
-    def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+    inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
+    inline def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
   }
 }

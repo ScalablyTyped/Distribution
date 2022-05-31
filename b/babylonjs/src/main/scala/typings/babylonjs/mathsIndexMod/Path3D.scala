@@ -3,7 +3,6 @@ package typings.babylonjs.mathsIndexMod
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Maths/index", "Path3D")
@@ -35,7 +34,7 @@ class Path3D protected ()
     * an array of Vector3, the curve axis of the Path3D
     */
   path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    firstNormal: js.UndefOr[Nullable[typings.babylonjs.mathVectorMod.Vector3]],
+    firstNormal: Unit,
     raw: Boolean
   ) = this()
   def this(
@@ -43,8 +42,16 @@ class Path3D protected ()
     * an array of Vector3, the curve axis of the Path3D
     */
   path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    firstNormal: js.UndefOr[Nullable[typings.babylonjs.mathVectorMod.Vector3]],
-    raw: js.UndefOr[scala.Nothing],
+    firstNormal: Nullable[typings.babylonjs.mathVectorMod.Vector3],
+    raw: Boolean
+  ) = this()
+  def this(
+    /**
+    * an array of Vector3, the curve axis of the Path3D
+    */
+  path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    firstNormal: Unit,
+    raw: Boolean,
     alignTangentsWithPath: Boolean
   ) = this()
   def this(
@@ -52,8 +59,26 @@ class Path3D protected ()
     * an array of Vector3, the curve axis of the Path3D
     */
   path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    firstNormal: js.UndefOr[Nullable[typings.babylonjs.mathVectorMod.Vector3]],
+    firstNormal: Unit,
+    raw: Unit,
+    alignTangentsWithPath: Boolean
+  ) = this()
+  def this(
+    /**
+    * an array of Vector3, the curve axis of the Path3D
+    */
+  path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    firstNormal: Nullable[typings.babylonjs.mathVectorMod.Vector3],
     raw: Boolean,
+    alignTangentsWithPath: Boolean
+  ) = this()
+  def this(
+    /**
+    * an array of Vector3, the curve axis of the Path3D
+    */
+  path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    firstNormal: Nullable[typings.babylonjs.mathVectorMod.Vector3],
+    raw: Unit,
     alignTangentsWithPath: Boolean
   ) = this()
 }

@@ -4,7 +4,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.vrExperienceHelperMod.VRExperienceHelperOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Cameras/index", "VRExperienceHelper")

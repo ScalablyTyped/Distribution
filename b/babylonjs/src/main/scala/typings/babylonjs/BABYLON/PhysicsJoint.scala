@@ -2,15 +2,14 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PhysicsJoint extends StObject {
   
-  var _physicsJoint: js.Any = js.native
+  /* private */ var _physicsJoint: js.Any = js.native
   
-  var _physicsPlugin: IPhysicsEnginePlugin = js.native
+  /* protected */ var _physicsPlugin: IPhysicsEnginePlugin = js.native
   
   /**
     * Execute a function that is physics-plugin specific.

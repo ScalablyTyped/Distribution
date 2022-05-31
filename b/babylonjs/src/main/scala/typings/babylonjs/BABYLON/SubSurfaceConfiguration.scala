@@ -2,11 +2,12 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubSurfaceConfiguration extends PrePassEffectConfiguration {
+trait SubSurfaceConfiguration
+  extends StObject
+     with PrePassEffectConfiguration {
   
   /**
     * Performs sampling of a Normalized Burley diffusion profile in polar coordinates.
@@ -14,15 +15,15 @@ trait SubSurfaceConfiguration extends PrePassEffectConfiguration {
     * rcp(s) = 1 / ShapeParam = ScatteringDistance.
     * Returns the sampled radial distance, s.t. (u = 0 -> r = 0) and (u = 1 -> r = Inf).
     */
-  var _sampleBurleyDiffusionProfile: js.Any = js.native
+  /* private */ var _sampleBurleyDiffusionProfile: js.Any = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
-  var _ssDiffusionD: js.Any = js.native
+  /* private */ var _ssDiffusionD: js.Any = js.native
   
-  var _ssDiffusionS: js.Any = js.native
+  /* private */ var _ssDiffusionS: js.Any = js.native
   
-  var _ssFilterRadii: js.Any = js.native
+  /* private */ var _ssFilterRadii: js.Any = js.native
   
   /**
     * Adds a new diffusion profile.

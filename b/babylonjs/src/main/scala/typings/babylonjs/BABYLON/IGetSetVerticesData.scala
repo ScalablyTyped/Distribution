@@ -2,7 +2,6 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,9 +14,9 @@ trait IGetSetVerticesData extends StObject {
     * @returns the indices array or an empty array if the mesh has no geometry
     */
   def getIndices(): Nullable[IndicesArray] = js.native
-  def getIndices(copyWhenShared: js.UndefOr[scala.Nothing], forceCopy: Boolean): Nullable[IndicesArray] = js.native
   def getIndices(copyWhenShared: Boolean): Nullable[IndicesArray] = js.native
   def getIndices(copyWhenShared: Boolean, forceCopy: Boolean): Nullable[IndicesArray] = js.native
+  def getIndices(copyWhenShared: Unit, forceCopy: Boolean): Nullable[IndicesArray] = js.native
   
   /**
     * Gets a specific vertex data attached to this geometry. Float data is constructed if the vertex buffer data cannot be returned directly.
@@ -27,9 +26,9 @@ trait IGetSetVerticesData extends StObject {
     * @returns a float array containing vertex data
     */
   def getVerticesData(kind: String): Nullable[FloatArray] = js.native
-  def getVerticesData(kind: String, copyWhenShared: js.UndefOr[scala.Nothing], forceCopy: Boolean): Nullable[FloatArray] = js.native
   def getVerticesData(kind: String, copyWhenShared: Boolean): Nullable[FloatArray] = js.native
   def getVerticesData(kind: String, copyWhenShared: Boolean, forceCopy: Boolean): Nullable[FloatArray] = js.native
+  def getVerticesData(kind: String, copyWhenShared: Unit, forceCopy: Boolean): Nullable[FloatArray] = js.native
   
   /**
     * Gets a boolean indicating if specific vertex data is present
@@ -76,7 +75,7 @@ trait IGetSetVerticesData extends StObject {
     * @param makeItUnique defines if the geometry associated with the mesh must be cloned to make the change only for this mesh (and not all meshes associated with the same geometry)
     */
   def updateVerticesData(kind: String, data: FloatArray): Unit = js.native
-  def updateVerticesData(kind: String, data: FloatArray, updateExtends: js.UndefOr[scala.Nothing], makeItUnique: Boolean): Unit = js.native
   def updateVerticesData(kind: String, data: FloatArray, updateExtends: Boolean): Unit = js.native
   def updateVerticesData(kind: String, data: FloatArray, updateExtends: Boolean, makeItUnique: Boolean): Unit = js.native
+  def updateVerticesData(kind: String, data: FloatArray, updateExtends: Unit, makeItUnique: Boolean): Unit = js.native
 }

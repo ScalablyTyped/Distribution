@@ -8,7 +8,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object prePassConfigurationMod {
@@ -48,20 +47,20 @@ object prePassConfigurationMod {
   /* static members */
   object PrePassConfiguration {
     
+    @JSImport("babylonjs/Materials/prePassConfiguration", "PrePassConfiguration")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Add the required samplers to the current list.
       * @param samplers defines the current sampler list.
       */
-    @JSImport("babylonjs/Materials/prePassConfiguration", "PrePassConfiguration.AddSamplers")
-    @js.native
-    def AddSamplers(samplers: js.Array[String]): Unit = js.native
+    inline def AddSamplers(samplers: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AddSamplers")(samplers.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Add the required uniforms to the current list.
       * @param uniforms defines the current uniform list.
       */
-    @JSImport("babylonjs/Materials/prePassConfiguration", "PrePassConfiguration.AddUniforms")
-    @js.native
-    def AddUniforms(uniforms: js.Array[String]): Unit = js.native
+    inline def AddUniforms(uniforms: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AddUniforms")(uniforms.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

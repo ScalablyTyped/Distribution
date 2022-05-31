@@ -3,18 +3,16 @@ package typings.jupyterlabApputils
 import typings.luminoCoreutils.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object windowresolverMod {
   
-  @js.native
   trait IWindowResolver extends StObject {
     
     /**
       * A window name to use as a handle among shared resources.
       */
-    val name: String = js.native
+    val name: String
   }
   object IWindowResolver {
     
@@ -22,20 +20,25 @@ object windowresolverMod {
     @js.native
     val ^ : Token[IWindowResolver] = js.native
     
-    @scala.inline
-    implicit class IWindowResolverMutableBuilder[Self <: IWindowResolver] (val x: Self) extends AnyVal {
+    extension [Self <: IWindowResolver](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
   @JSImport("@jupyterlab/apputils/lib/windowresolver", "WindowResolver")
   @js.native
-  class WindowResolver () extends IWindowResolver {
+  class WindowResolver ()
+    extends StObject
+       with IWindowResolver {
     
-    var _name: js.Any = js.native
+    /* private */ var _name: js.Any = js.native
     
+    /**
+      * A window name to use as a handle among shared resources.
+      */
+    /* CompleteClass */
+    override val name: String = js.native
     /**
       * The resolved window name.
       *

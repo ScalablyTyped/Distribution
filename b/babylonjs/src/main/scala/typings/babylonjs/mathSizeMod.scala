@@ -2,14 +2,15 @@ package typings.babylonjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mathSizeMod {
   
   @JSImport("babylonjs/Maths/math.size", "Size")
   @js.native
-  class Size protected () extends ISize {
+  class Size protected ()
+    extends StObject
+       with ISize {
     /**
       * Creates a Size object from the given width and height (floats).
       * @param width width of the new size
@@ -58,6 +59,12 @@ object mathSizeMod {
     def getHashCode(): Double = js.native
     
     /**
+      * Heighht
+      */
+    /* CompleteClass */
+    var height: Double = js.native
+    
+    /**
       * Multiplies the width and height by numbers
       * @param w factor to multiple the width by
       * @param h factor to multiple the height by
@@ -84,9 +91,19 @@ object mathSizeMod {
       * The surface of the Size : width * height (float).
       */
     def surface: Double = js.native
+    
+    /**
+      * Width
+      */
+    /* CompleteClass */
+    var width: Double = js.native
   }
   /* static members */
   object Size {
+    
+    @JSImport("babylonjs/Maths/math.size", "Size")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Creates a new Size set at the linear interpolation "amount" between "start" and "end"
@@ -95,48 +112,39 @@ object mathSizeMod {
       * @param amount amount to lerp between the start and end values
       * @returns a new Size set at the linear interpolation "amount" between "start" and "end"
       */
-    @JSImport("babylonjs/Maths/math.size", "Size.Lerp")
-    @js.native
-    def Lerp(start: Size, end: Size, amount: Double): Size = js.native
+    inline def Lerp(start: Size, end: Size, amount: Double): Size = (^.asInstanceOf[js.Dynamic].applyDynamic("Lerp")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Size]
     
     /**
       * Create a new size of zero
       * @returns a new Size set to (0.0, 0.0)
       */
-    @JSImport("babylonjs/Maths/math.size", "Size.Zero")
-    @js.native
-    def Zero(): Size = js.native
+    inline def Zero(): Size = ^.asInstanceOf[js.Dynamic].applyDynamic("Zero")().asInstanceOf[Size]
   }
   
-  @js.native
   trait ISize extends StObject {
     
     /**
       * Heighht
       */
-    var height: Double = js.native
+    var height: Double
     
     /**
       * Width
       */
-    var width: Double = js.native
+    var width: Double
   }
   object ISize {
     
-    @scala.inline
-    def apply(height: Double, width: Double): ISize = {
+    inline def apply(height: Double, width: Double): ISize = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISize]
     }
     
-    @scala.inline
-    implicit class ISizeMutableBuilder[Self <: ISize] (val x: Self) extends AnyVal {
+    extension [Self <: ISize](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

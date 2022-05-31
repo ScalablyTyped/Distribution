@@ -3,7 +3,6 @@ package typings.babylonjs.materialsIndexMod
 import typings.babylonjs.imageProcessingConfigurationMod.IImageProcessingConfigurationDefines
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Materials/index", "ImageProcessingConfiguration")
@@ -22,27 +21,21 @@ object ImageProcessingConfiguration {
     * @param source the JSON source to parse
     * @return The parsed image processing
     */
-  @JSImport("babylonjs/Materials/index", "ImageProcessingConfiguration.Parse")
-  @js.native
-  def Parse(source: js.Any): typings.babylonjs.imageProcessingConfigurationMod.ImageProcessingConfiguration = js.native
+  inline def Parse(source: js.Any): typings.babylonjs.imageProcessingConfigurationMod.ImageProcessingConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.imageProcessingConfigurationMod.ImageProcessingConfiguration]
   
   /**
     * Prepare the list of samplers associated with the Image Processing effects.
     * @param samplersList The list of uniforms used in the effect
     * @param defines the list of defines currently in use
     */
-  @JSImport("babylonjs/Materials/index", "ImageProcessingConfiguration.PrepareSamplers")
-  @js.native
-  def PrepareSamplers(samplersList: js.Array[String], defines: IImageProcessingConfigurationDefines): Unit = js.native
+  inline def PrepareSamplers(samplersList: js.Array[String], defines: IImageProcessingConfigurationDefines): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PrepareSamplers")(samplersList.asInstanceOf[js.Any], defines.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Prepare the list of uniforms associated with the Image Processing effects.
     * @param uniforms The list of uniforms used in the effect
     * @param defines the list of defines currently in use
     */
-  @JSImport("babylonjs/Materials/index", "ImageProcessingConfiguration.PrepareUniforms")
-  @js.native
-  def PrepareUniforms(uniforms: js.Array[String], defines: IImageProcessingConfigurationDefines): Unit = js.native
+  inline def PrepareUniforms(uniforms: js.Array[String], defines: IImageProcessingConfigurationDefines): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PrepareUniforms")(uniforms.asInstanceOf[js.Any], defines.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * ACES Tone mapping (used by default in unreal and unity). This can help getting closer
@@ -62,12 +55,10 @@ object ImageProcessingConfiguration {
   @JSImport("babylonjs/Materials/index", "ImageProcessingConfiguration._VIGNETTEMODE_MULTIPLY")
   @js.native
   def _VIGNETTEMODE_MULTIPLY: js.Any = js.native
-  @scala.inline
-  def _VIGNETTEMODE_MULTIPLY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_VIGNETTEMODE_MULTIPLY")(x.asInstanceOf[js.Any])
+  inline def _VIGNETTEMODE_MULTIPLY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_VIGNETTEMODE_MULTIPLY")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs/Materials/index", "ImageProcessingConfiguration._VIGNETTEMODE_OPAQUE")
   @js.native
   def _VIGNETTEMODE_OPAQUE: js.Any = js.native
-  @scala.inline
-  def _VIGNETTEMODE_OPAQUE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_VIGNETTEMODE_OPAQUE")(x.asInstanceOf[js.Any])
+  inline def _VIGNETTEMODE_OPAQUE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_VIGNETTEMODE_OPAQUE")(x.asInstanceOf[js.Any])
 }

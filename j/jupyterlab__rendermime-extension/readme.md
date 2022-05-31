@@ -10,9 +10,9 @@ A rendermime extension for JupyterLab
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/rendermime-extension |
 | Keywords           | - |
-| # releases         | 113 |
+| # releases         | 128 |
 | # dependents       | 1 |
-| # downloads        | 1349060 |
+| # downloads        | 1463052 |
 | # stars            | 0 |
 
 ## Links

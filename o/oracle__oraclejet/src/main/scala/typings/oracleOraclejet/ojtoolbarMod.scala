@@ -29,21 +29,30 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ojtoolbarMod {
   
   @js.native
-  trait ojToolbar extends baseComponent[ojToolbarSettableProperties] {
+  trait ojToolbar
+    extends StObject
+       with baseComponent[ojToolbarSettableProperties] {
     
     def addEventListener(
       `type`: chromingChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[full | half | outlined], _]
+      listener: js.ThisFunction1[
+          /* this */ HTMLElement, 
+          /* ev */ JetElementCustomEvent[full | half | outlined], 
+          js.Any
+        ]
     ): Unit = js.native
     def addEventListener(
       `type`: chromingChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[full | half | outlined], _],
+      listener: js.ThisFunction1[
+          /* this */ HTMLElement, 
+          /* ev */ JetElementCustomEvent[full | half | outlined], 
+          js.Any
+        ],
       useCapture: Boolean
     ): Unit = js.native
     
@@ -52,7 +61,7 @@ object ojtoolbarMod {
     @JSName("getProperty")
     def getProperty_chroming(property: chroming): full | half | outlined = js.native
     
-    var onChromingChanged: (js.Function1[/* event */ JetElementCustomEvent[full | half | outlined], _]) | Null = js.native
+    var onChromingChanged: (js.Function1[/* event */ JetElementCustomEvent[full | half | outlined], js.Any]) | Null = js.native
     
     def setProperties(properties: ojToolbarSettablePropertiesLenient): Unit = js.native
     
@@ -61,15 +70,15 @@ object ojtoolbarMod {
     def setProperty(property: chroming, value: outlined): Unit = js.native
   }
   
-  @js.native
-  trait ojToolbarEventMap extends baseComponentEventMap[ojToolbarSettableProperties] {
+  trait ojToolbarEventMap
+    extends StObject
+       with baseComponentEventMap[ojToolbarSettableProperties] {
     
-    var chromingChanged: JetElementCustomEvent[full | half | outlined] = js.native
+    var chromingChanged: JetElementCustomEvent[full | half | outlined]
   }
   object ojToolbarEventMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: UIEvent,
       animationcancel: AnimationEvent,
       animationend: AnimationEvent,
@@ -169,69 +178,58 @@ object ojtoolbarMod {
       __obj.asInstanceOf[ojToolbarEventMap]
     }
     
-    @scala.inline
-    implicit class ojToolbarEventMapMutableBuilder[Self <: ojToolbarEventMap] (val x: Self) extends AnyVal {
+    extension [Self <: ojToolbarEventMap](x: Self) {
       
-      @scala.inline
-      def setChromingChanged(value: JetElementCustomEvent[full | half | outlined]): Self = StObject.set(x, "chromingChanged", value.asInstanceOf[js.Any])
+      inline def setChromingChanged(value: JetElementCustomEvent[full | half | outlined]): Self = StObject.set(x, "chromingChanged", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait ojToolbarSettableProperties extends baseComponentSettableProperties {
+  trait ojToolbarSettableProperties
+    extends StObject
+       with baseComponentSettableProperties {
     
-    var chroming: full | half | outlined = js.native
+    var chroming: full | half | outlined
   }
   object ojToolbarSettableProperties {
     
-    @scala.inline
-    def apply(chroming: full | half | outlined): ojToolbarSettableProperties = {
-      val __obj = js.Dynamic.literal(chroming = chroming.asInstanceOf[js.Any])
+    inline def apply(chroming: full | half | outlined): ojToolbarSettableProperties = {
+      val __obj = js.Dynamic.literal(chroming = chroming.asInstanceOf[js.Any], translations = null)
       __obj.asInstanceOf[ojToolbarSettableProperties]
     }
     
-    @scala.inline
-    implicit class ojToolbarSettablePropertiesMutableBuilder[Self <: ojToolbarSettableProperties] (val x: Self) extends AnyVal {
+    extension [Self <: ojToolbarSettableProperties](x: Self) {
       
-      @scala.inline
-      def setChroming(value: full | half | outlined): Self = StObject.set(x, "chroming", value.asInstanceOf[js.Any])
+      inline def setChroming(value: full | half | outlined): Self = StObject.set(x, "chroming", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojtoolbar.ojToolbarSettableProperties> */
-  @js.native
   trait ojToolbarSettablePropertiesLenient
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var chroming: js.UndefOr[full | half | outlined] = js.native
+    var chroming: js.UndefOr[full | half | outlined] = js.undefined
     
-    var translations: js.UndefOr[js.Object | Null] = js.native
+    var translations: js.UndefOr[js.Object | Null] = js.undefined
   }
   object ojToolbarSettablePropertiesLenient {
     
-    @scala.inline
-    def apply(): ojToolbarSettablePropertiesLenient = {
+    inline def apply(): ojToolbarSettablePropertiesLenient = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ojToolbarSettablePropertiesLenient]
     }
     
-    @scala.inline
-    implicit class ojToolbarSettablePropertiesLenientMutableBuilder[Self <: ojToolbarSettablePropertiesLenient] (val x: Self) extends AnyVal {
+    extension [Self <: ojToolbarSettablePropertiesLenient](x: Self) {
       
-      @scala.inline
-      def setChroming(value: full | half | outlined): Self = StObject.set(x, "chroming", value.asInstanceOf[js.Any])
+      inline def setChroming(value: full | half | outlined): Self = StObject.set(x, "chroming", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChromingUndefined: Self = StObject.set(x, "chroming", js.undefined)
+      inline def setChromingUndefined: Self = StObject.set(x, "chroming", js.undefined)
       
-      @scala.inline
-      def setTranslations(value: js.Object): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: js.Object): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslationsNull: Self = StObject.set(x, "translations", null)
+      inline def setTranslationsNull: Self = StObject.set(x, "translations", null)
       
-      @scala.inline
-      def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+      inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
     }
   }
 }

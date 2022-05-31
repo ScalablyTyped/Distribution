@@ -7,7 +7,6 @@ import typings.std.HTMLInputElement
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentMod {
@@ -28,64 +27,51 @@ object componentMod {
     var timer: Double = js.native
   }
   
-  @js.native
   trait IProps extends StObject {
     
-    var data: NonNullable[JSONValue] = js.native
+    var data: NonNullable[JSONValue]
     
-    var metadata: js.UndefOr[JSONObject] = js.native
+    var metadata: js.UndefOr[JSONObject] = js.undefined
   }
   object IProps {
     
-    @scala.inline
-    def apply(): IProps = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(): IProps = {
+      val __obj = js.Dynamic.literal(data = null)
       __obj.asInstanceOf[IProps]
     }
     
-    @scala.inline
-    implicit class IPropsMutableBuilder[Self <: IProps] (val x: Self) extends AnyVal {
+    extension [Self <: IProps](x: Self) {
       
-      @scala.inline
-      def setData(value: NonNullable[JSONValue]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: NonNullable[JSONValue]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataNull: Self = StObject.set(x, "data", null)
+      inline def setDataNull: Self = StObject.set(x, "data", null)
       
-      @scala.inline
-      def setMetadata(value: JSONObject): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: JSONObject): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     }
   }
   
-  @js.native
   trait IState extends StObject {
     
-    var filter: js.UndefOr[String] = js.native
+    var filter: js.UndefOr[String] = js.undefined
     
-    var value: String = js.native
+    var value: String
   }
   object IState {
     
-    @scala.inline
-    def apply(value: String): IState = {
+    inline def apply(value: String): IState = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[IState]
     }
     
-    @scala.inline
-    implicit class IStateMutableBuilder[Self <: IState] (val x: Self) extends AnyVal {
+    extension [Self <: IState](x: Self) {
       
-      @scala.inline
-      def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -1,6 +1,5 @@
 package typings.cloudflareApps
 
-import org.scalablytyped.runtime.Shortcut
 import typings.cloudflareApps.CloudflareApps.InstallOptions
 import typings.cloudflareApps.CloudflareApps.InstallProduct
 import typings.cloudflareApps.CloudflareApps.InstallScope
@@ -10,17 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object global {
   
-  object CloudflareApps extends Shortcut {
-    
-    @JSGlobal("CloudflareApps")
-    @js.native
-    val ^ : typings.cloudflareApps.CloudflareApps.CloudflareApps = js.native
-    
-    type _To = typings.cloudflareApps.CloudflareApps.CloudflareApps
-    
-    /* This means you don't have to write `^`, but can instead just say `CloudflareApps.foo` */
-    override def _to: typings.cloudflareApps.CloudflareApps.CloudflareApps = ^
-  }
+  @JSGlobal("CloudflareApps")
+  @js.native
+  val CloudflareApps: typings.cloudflareApps.CloudflareApps.CloudflareApps = js.native
   
   /**
     * It's the same as CloudflareApps variable.

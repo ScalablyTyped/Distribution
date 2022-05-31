@@ -12,13 +12,4 @@ object global {
   def Stripe_ : StripeStatic = js.native
   
   inline def Stripe__=(x: StripeStatic): Unit = js.Dynamic.global.updateDynamic("Stripe")(x.asInstanceOf[js.Any])
-  
-  object stripe {
-    
-    // Container for all elements related types
-    object elements
-    
-    // Container for all payment request related types
-    object paymentRequest
-  }
 }

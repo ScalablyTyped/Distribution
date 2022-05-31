@@ -22,35 +22,32 @@ import typings.std.ArrayBuffer
 import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<@jupyterlab/services.@jupyterlab/services/lib/kernel/messages.IMessage<@jupyterlab/services.@jupyterlab/services/lib/kernel/messages.MessageType>> */
-@js.native
 trait ReadonlyIMessageMessageTy extends StObject {
   
-  val buffers: js.UndefOr[js.Array[ArrayBuffer | ArrayBufferView]] = js.native
+  val buffers: js.UndefOr[js.Array[ArrayBuffer | ArrayBufferView]] = js.undefined
   
-  val channel: Channel = js.native
+  val channel: Channel
   
   val content: Wait | Commid | (ReplyContent[
     ICommInfoReply | ICompleteReply | IHistoryReply | IInfoReply | IInputReply | IInspectReply | IIsCompleteReplyIncomplete | IIsCompleteReplyOther
-  ]) | Targetname | Data | Code | Metadata | Ename | Executioncount | (ReplyContent[IExecuteReply] with IExecuteCount) | Allowstdin | Transient | IHistoryRequestRange | IHistoryRequestSearch | IHistoryRequestTail | js.Object | Password | Cursorpos | CodeString | Executionstate | Name | (Metadata with TransientDisplayidString) | Arguments | Body | Event = js.native
+  ]) | Targetname | Data | Code | Metadata | Ename | Executioncount | (ReplyContent[IExecuteReply] & IExecuteCount) | Allowstdin | Transient | IHistoryRequestRange | IHistoryRequestSearch | IHistoryRequestTail | js.Object | Password | Cursorpos | CodeString | Executionstate | Name | (Metadata & TransientDisplayidString) | Arguments | Body | Event
   
-  val header: IHeader[MessageType] = js.native
+  val header: IHeader[MessageType]
   
-  val metadata: JSONObject = js.native
+  val metadata: JSONObject
   
-  val parent_header: IHeader[MessageType] | js.Object = js.native
+  val parent_header: IHeader[MessageType] | js.Object
 }
 object ReadonlyIMessageMessageTy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     channel: Channel,
     content: Wait | Commid | (ReplyContent[
       ICommInfoReply | ICompleteReply | IHistoryReply | IInfoReply | IInputReply | IInspectReply | IIsCompleteReplyIncomplete | IIsCompleteReplyOther
-    ]) | Targetname | Data | Code | Metadata | Ename | Executioncount | (ReplyContent[IExecuteReply] with IExecuteCount) | Allowstdin | Transient | IHistoryRequestRange | IHistoryRequestSearch | IHistoryRequestTail | js.Object | Password | Cursorpos | CodeString | Executionstate | Name | (Metadata with TransientDisplayidString) | Arguments | Body | Event,
+    ]) | Targetname | Data | Code | Metadata | Ename | Executioncount | (ReplyContent[IExecuteReply] & IExecuteCount) | Allowstdin | Transient | IHistoryRequestRange | IHistoryRequestSearch | IHistoryRequestTail | js.Object | Password | Cursorpos | CodeString | Executionstate | Name | (Metadata & TransientDisplayidString) | Arguments | Body | Event,
     header: IHeader[MessageType],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object
@@ -59,35 +56,26 @@ object ReadonlyIMessageMessageTy {
     __obj.asInstanceOf[ReadonlyIMessageMessageTy]
   }
   
-  @scala.inline
-  implicit class ReadonlyIMessageMessageTyMutableBuilder[Self <: ReadonlyIMessageMessageTy] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyIMessageMessageTy](x: Self) {
     
-    @scala.inline
-    def setBuffers(value: js.Array[ArrayBuffer | ArrayBufferView]): Self = StObject.set(x, "buffers", value.asInstanceOf[js.Any])
+    inline def setBuffers(value: js.Array[ArrayBuffer | ArrayBufferView]): Self = StObject.set(x, "buffers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuffersUndefined: Self = StObject.set(x, "buffers", js.undefined)
+    inline def setBuffersUndefined: Self = StObject.set(x, "buffers", js.undefined)
     
-    @scala.inline
-    def setBuffersVarargs(value: (ArrayBuffer | ArrayBufferView)*): Self = StObject.set(x, "buffers", js.Array(value :_*))
+    inline def setBuffersVarargs(value: (ArrayBuffer | ArrayBufferView)*): Self = StObject.set(x, "buffers", js.Array(value :_*))
     
-    @scala.inline
-    def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(
+    inline def setContent(
       value: Wait | Commid | (ReplyContent[
           ICommInfoReply | ICompleteReply | IHistoryReply | IInfoReply | IInputReply | IInspectReply | IIsCompleteReplyIncomplete | IIsCompleteReplyOther
-        ]) | Targetname | Data | Code | Metadata | Ename | Executioncount | (ReplyContent[IExecuteReply] with IExecuteCount) | Allowstdin | Transient | IHistoryRequestRange | IHistoryRequestSearch | IHistoryRequestTail | js.Object | Password | Cursorpos | CodeString | Executionstate | Name | (Metadata with TransientDisplayidString) | Arguments | Body | Event
+        ]) | Targetname | Data | Code | Metadata | Ename | Executioncount | (ReplyContent[IExecuteReply] & IExecuteCount) | Allowstdin | Transient | IHistoryRequestRange | IHistoryRequestSearch | IHistoryRequestTail | js.Object | Password | Cursorpos | CodeString | Executionstate | Name | (Metadata & TransientDisplayidString) | Arguments | Body | Event
     ): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeader(value: IHeader[MessageType]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: IHeader[MessageType]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: JSONObject): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: JSONObject): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent_header(value: IHeader[MessageType] | js.Object): Self = StObject.set(x, "parent_header", value.asInstanceOf[js.Any])
+    inline def setParent_header(value: IHeader[MessageType] | js.Object): Self = StObject.set(x, "parent_header", value.asInstanceOf[js.Any])
   }
 }

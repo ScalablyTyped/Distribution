@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.SceneComponentConstants")
 @js.native
 class SceneComponentConstants ()
-  extends typings.babylonjs.BABYLON.SceneComponentConstants
+  extends StObject
+     with typings.babylonjs.BABYLON.SceneComponentConstants
 /* static members */
 object SceneComponentConstants {
   

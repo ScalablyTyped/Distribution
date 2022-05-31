@@ -10,9 +10,9 @@ JupyterLab extension to render HTML files
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/htmlviewer-extension |
 | Keywords           | jupyter, jupyterlab |
-| # releases         | 115 |
+| # releases         | 131 |
 | # dependents       | 1 |
-| # downloads        | 1290689 |
+| # downloads        | 1416608 |
 | # stars            | 0 |
 
 ## Links

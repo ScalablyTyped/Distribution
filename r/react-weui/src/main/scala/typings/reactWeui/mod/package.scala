@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 inline def Agreement(props: js.Any): js.Any = typings.reactWeui.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Agreement")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 
+inline def Cells(props: js.Any): js.Any = typings.reactWeui.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Cells")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+
 inline def CellsTips(props: js.Any): js.Any = typings.reactWeui.mod.^.asInstanceOf[js.Dynamic].applyDynamic("CellsTips")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 
 inline def CellsTitle(props: js.Any): js.Any = typings.reactWeui.mod.^.asInstanceOf[js.Dynamic].applyDynamic("CellsTitle")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]

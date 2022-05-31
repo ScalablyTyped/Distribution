@@ -10,26 +10,23 @@ import typings.oracleOraclejet.oracleOraclejetStrings.start
 import typings.oracleOraclejet.oracleOraclejetStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Halign extends StObject {
   
-  var halign: start | end | center = js.native
+  var halign: start | end | center
   
-  var height: Double = js.native
+  var height: Double
   
-  var rendered: on | off = js.native
+  var rendered: on | off
   
-  var valign: top | bottom | middle = js.native
+  var valign: top | bottom | middle
   
-  var width: Double = js.native
+  var width: Double
 }
 object Halign {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     halign: start | end | center,
     height: Double,
     rendered: on | off,
@@ -40,22 +37,16 @@ object Halign {
     __obj.asInstanceOf[Halign]
   }
   
-  @scala.inline
-  implicit class HalignMutableBuilder[Self <: Halign] (val x: Self) extends AnyVal {
+  extension [Self <: Halign](x: Self) {
     
-    @scala.inline
-    def setHalign(value: start | end | center): Self = StObject.set(x, "halign", value.asInstanceOf[js.Any])
+    inline def setHalign(value: start | end | center): Self = StObject.set(x, "halign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRendered(value: on | off): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
+    inline def setRendered(value: on | off): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValign(value: top | bottom | middle): Self = StObject.set(x, "valign", value.asInstanceOf[js.Any])
+    inline def setValign(value: top | bottom | middle): Self = StObject.set(x, "valign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

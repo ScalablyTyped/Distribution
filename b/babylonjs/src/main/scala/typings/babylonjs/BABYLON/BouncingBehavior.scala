@@ -2,25 +2,26 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BouncingBehavior extends Behavior[ArcRotateCamera] {
+trait BouncingBehavior
+  extends StObject
+     with Behavior[ArcRotateCamera] {
   
-  var _animatables: js.Any = js.native
+  /* private */ var _animatables: js.Any = js.native
   
   /**
     * Applies an animation to the radius of the camera, extending by the radiusDelta.
     * @param radiusDelta The delta by which to animate to. Can be negative.
     */
-  var _applyBoundRadiusAnimation: js.Any = js.native
+  /* private */ var _applyBoundRadiusAnimation: js.Any = js.native
   
-  var _attachedCamera: js.Any = js.native
+  /* private */ var _attachedCamera: js.Any = js.native
   
-  var _autoTransitionRange: js.Any = js.native
+  /* private */ var _autoTransitionRange: js.Any = js.native
   
-  var _cachedWheelPrecision: js.Any = js.native
+  /* private */ var _cachedWheelPrecision: js.Any = js.native
   
   /**
     * Removes all animation locks. Allows new animations to be added to any of the camera properties.
@@ -32,15 +33,15 @@ trait BouncingBehavior extends Behavior[ArcRotateCamera] {
     * @param radiusLimit The limit to check against.
     * @return Bool to indicate if at limit.
     */
-  var _isRadiusAtLimit: js.Any = js.native
+  /* private */ var _isRadiusAtLimit: js.Any = js.native
   
-  var _onAfterCheckInputsObserver: js.Any = js.native
+  /* private */ var _onAfterCheckInputsObserver: js.Any = js.native
   
-  var _onMeshTargetChangedObserver: js.Any = js.native
+  /* private */ var _onMeshTargetChangedObserver: js.Any = js.native
   
-  var _radiusBounceTransition: js.Any = js.native
+  /* private */ var _radiusBounceTransition: js.Any = js.native
   
-  var _radiusIsAnimating: js.Any = js.native
+  /* private */ var _radiusIsAnimating: js.Any = js.native
   
   /**
     * Gets a value indicating if the lowerRadiusTransitionRange and upperRadiusTransitionRange are defined automatically

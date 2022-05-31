@@ -2,11 +2,12 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISceneLoaderPluginAsync extends ISceneLoaderPluginBase {
+trait ISceneLoaderPluginAsync
+  extends StObject
+     with ISceneLoaderPluginBase {
   
   /**
     * Import meshes into a scene.
@@ -24,14 +25,6 @@ trait ISceneLoaderPluginAsync extends ISceneLoaderPluginBase {
     scene: Scene,
     data: js.Any,
     rootUrl: String,
-    onProgress: js.UndefOr[scala.Nothing],
-    fileName: String
-  ): js.Promise[ISceneLoaderAsyncResult] = js.native
-  def importMeshAsync(
-    meshesNames: js.Any,
-    scene: Scene,
-    data: js.Any,
-    rootUrl: String,
     onProgress: js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]
   ): js.Promise[ISceneLoaderAsyncResult] = js.native
   def importMeshAsync(
@@ -40,6 +33,14 @@ trait ISceneLoaderPluginAsync extends ISceneLoaderPluginBase {
     data: js.Any,
     rootUrl: String,
     onProgress: js.Function1[/* event */ ISceneLoaderProgressEvent, Unit],
+    fileName: String
+  ): js.Promise[ISceneLoaderAsyncResult] = js.native
+  def importMeshAsync(
+    meshesNames: js.Any,
+    scene: Scene,
+    data: js.Any,
+    rootUrl: String,
+    onProgress: Unit,
     fileName: String
   ): js.Promise[ISceneLoaderAsyncResult] = js.native
   
@@ -57,13 +58,6 @@ trait ISceneLoaderPluginAsync extends ISceneLoaderPluginBase {
     scene: Scene,
     data: js.Any,
     rootUrl: String,
-    onProgress: js.UndefOr[scala.Nothing],
-    fileName: String
-  ): js.Promise[AssetContainer] = js.native
-  def loadAssetContainerAsync(
-    scene: Scene,
-    data: js.Any,
-    rootUrl: String,
     onProgress: js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]
   ): js.Promise[AssetContainer] = js.native
   def loadAssetContainerAsync(
@@ -73,6 +67,7 @@ trait ISceneLoaderPluginAsync extends ISceneLoaderPluginBase {
     onProgress: js.Function1[/* event */ ISceneLoaderProgressEvent, Unit],
     fileName: String
   ): js.Promise[AssetContainer] = js.native
+  def loadAssetContainerAsync(scene: Scene, data: js.Any, rootUrl: String, onProgress: Unit, fileName: String): js.Promise[AssetContainer] = js.native
   
   /**
     * Load into a scene.
@@ -88,13 +83,6 @@ trait ISceneLoaderPluginAsync extends ISceneLoaderPluginBase {
     scene: Scene,
     data: js.Any,
     rootUrl: String,
-    onProgress: js.UndefOr[scala.Nothing],
-    fileName: String
-  ): js.Promise[Unit] = js.native
-  def loadAsync(
-    scene: Scene,
-    data: js.Any,
-    rootUrl: String,
     onProgress: js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]
   ): js.Promise[Unit] = js.native
   def loadAsync(
@@ -104,4 +92,5 @@ trait ISceneLoaderPluginAsync extends ISceneLoaderPluginBase {
     onProgress: js.Function1[/* event */ ISceneLoaderProgressEvent, Unit],
     fileName: String
   ): js.Promise[Unit] = js.native
+  def loadAsync(scene: Scene, data: js.Any, rootUrl: String, onProgress: Unit, fileName: String): js.Promise[Unit] = js.native
 }

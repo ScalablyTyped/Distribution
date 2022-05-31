@@ -13,7 +13,6 @@ import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object skeletonViewerMod {
@@ -56,18 +55,6 @@ object skeletonViewerMod {
       /** The Scene scope*/
     scene: Scene,
       /** defines a boolean indicating if bones matrices must be forced to update before rendering (true by default)  */
-    autoUpdateBonesMatrices: js.UndefOr[scala.Nothing],
-      /** defines the rendering group id to use with the viewer */
-    renderingGroupId: Double
-    ) = this()
-    def this(
-      /** defines the skeleton to render */
-    skeleton: Skeleton,
-      /** defines the mesh attached to the skeleton */
-    mesh: AbstractMesh,
-      /** The Scene scope*/
-    scene: Scene,
-      /** defines a boolean indicating if bones matrices must be forced to update before rendering (true by default)  */
     autoUpdateBonesMatrices: Boolean,
       /** defines the rendering group id to use with the viewer */
     renderingGroupId: Double
@@ -80,11 +67,9 @@ object skeletonViewerMod {
       /** The Scene scope*/
     scene: Scene,
       /** defines a boolean indicating if bones matrices must be forced to update before rendering (true by default)  */
-    autoUpdateBonesMatrices: js.UndefOr[scala.Nothing],
+    autoUpdateBonesMatrices: Unit,
       /** defines the rendering group id to use with the viewer */
-    renderingGroupId: js.UndefOr[scala.Nothing],
-      /** is the options for the viewer */
-    options: PartialISkeletonViewerOpt
+    renderingGroupId: Double
     ) = this()
     def this(
       /** defines the skeleton to render */
@@ -94,7 +79,7 @@ object skeletonViewerMod {
       /** The Scene scope*/
     scene: Scene,
       /** defines a boolean indicating if bones matrices must be forced to update before rendering (true by default)  */
-    autoUpdateBonesMatrices: js.UndefOr[scala.Nothing],
+    autoUpdateBonesMatrices: Boolean,
       /** defines the rendering group id to use with the viewer */
     renderingGroupId: Double,
       /** is the options for the viewer */
@@ -110,7 +95,7 @@ object skeletonViewerMod {
       /** defines a boolean indicating if bones matrices must be forced to update before rendering (true by default)  */
     autoUpdateBonesMatrices: Boolean,
       /** defines the rendering group id to use with the viewer */
-    renderingGroupId: js.UndefOr[scala.Nothing],
+    renderingGroupId: Unit,
       /** is the options for the viewer */
     options: PartialISkeletonViewerOpt
     ) = this()
@@ -122,61 +107,75 @@ object skeletonViewerMod {
       /** The Scene scope*/
     scene: Scene,
       /** defines a boolean indicating if bones matrices must be forced to update before rendering (true by default)  */
-    autoUpdateBonesMatrices: Boolean,
+    autoUpdateBonesMatrices: Unit,
       /** defines the rendering group id to use with the viewer */
     renderingGroupId: Double,
+      /** is the options for the viewer */
+    options: PartialISkeletonViewerOpt
+    ) = this()
+    def this(
+      /** defines the skeleton to render */
+    skeleton: Skeleton,
+      /** defines the mesh attached to the skeleton */
+    mesh: AbstractMesh,
+      /** The Scene scope*/
+    scene: Scene,
+      /** defines a boolean indicating if bones matrices must be forced to update before rendering (true by default)  */
+    autoUpdateBonesMatrices: Unit,
+      /** defines the rendering group id to use with the viewer */
+    renderingGroupId: Unit,
       /** is the options for the viewer */
     options: PartialISkeletonViewerOpt
     ) = this()
     
     /** The Dynamic bindings for the update functions */
-    var _bindObs: js.Any = js.native
+    /* private */ var _bindObs: js.Any = js.native
     
-    var _boneIndices: js.Any = js.native
+    /* private */ var _boneIndices: js.Any = js.native
     
-    var _buildLocalAxes: js.Any = js.native
+    /* private */ var _buildLocalAxes: js.Any = js.native
     
     /** function to build and bind sphere joint points and spur bone representations. */
-    var _buildSpheresAndSpurs: js.Any = js.native
+    /* private */ var _buildSpheresAndSpurs: js.Any = js.native
     
     /** Array of the points of the skeleton fo the line view. */
-    var _debugLines: js.Any = js.native
+    /* private */ var _debugLines: js.Any = js.native
     
     /** The SkeletonViewers Mesh. */
-    var _debugMesh: js.Any = js.native
+    /* private */ var _debugMesh: js.Any = js.native
     
     /** Update the viewer to sync with current skeleton state, only used for the line display. */
-    var _displayLinesUpdate: js.Any = js.native
+    /* private */ var _displayLinesUpdate: js.Any = js.native
     
     /** function to get the absolute bind pose of a bone by accumulating transformations up the bone hierarchy. */
-    var _getAbsoluteBindPoseToRef: js.Any = js.native
+    /* private */ var _getAbsoluteBindPoseToRef: js.Any = js.native
     
-    var _getBonePosition: js.Any = js.native
+    /* private */ var _getBonePosition: js.Any = js.native
     
-    var _getLinesForBonesNoLength: js.Any = js.native
+    /* private */ var _getLinesForBonesNoLength: js.Any = js.native
     
-    var _getLinesForBonesWithLength: js.Any = js.native
+    /* private */ var _getLinesForBonesWithLength: js.Any = js.native
     
     /** If SkeletonViewer is enabled. */
-    var _isEnabled: js.Any = js.native
+    /* private */ var _isEnabled: js.Any = js.native
     
     /** The local axes Meshes. */
-    var _localAxes: js.Any = js.native
+    /* private */ var _localAxes: js.Any = js.native
     
     /** SkeletonViewer render observable. */
-    var _obs: js.Any = js.native
+    /* private */ var _obs: js.Any = js.native
     
     /** If SkeletonViewer is ready. */
-    var _ready: js.Any = js.native
+    /* private */ var _ready: js.Any = js.native
     
     /** function to revert the mesh and scene back to the initial state. */
-    var _revert: js.Any = js.native
+    /* private */ var _revert: js.Any = js.native
     
     /** If SkeletonViewer scene scope. */
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
     /** The Utility Layer to render the gizmos in. */
-    var _utilityLayer: js.Any = js.native
+    /* private */ var _utilityLayer: js.Any = js.native
     
     /** defines a boolean indicating if bones matrices must be forced to update before rendering (true by default)  */
     var autoUpdateBonesMatrices: Boolean = js.native
@@ -263,18 +262,14 @@ object skeletonViewerMod {
       * @returns The created ShaderMaterial
       * @see http://www.babylonjs-playground.com/#1BZJVJ#395
       */
-    @JSImport("babylonjs/Debug/skeletonViewer", "SkeletonViewer.CreateBoneWeightShader")
-    @js.native
-    def CreateBoneWeightShader(options: IBoneWeightShaderOptions, scene: Scene): ShaderMaterial = js.native
+    inline def CreateBoneWeightShader(options: IBoneWeightShaderOptions, scene: Scene): ShaderMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateBoneWeightShader")(options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[ShaderMaterial]
     
     /** public static method to create a BoneWeight Shader
       * @param options The constructor options
       * @param scene The scene that the shader is scoped to
       * @returns The created ShaderMaterial
       */
-    @JSImport("babylonjs/Debug/skeletonViewer", "SkeletonViewer.CreateSkeletonMapShader")
-    @js.native
-    def CreateSkeletonMapShader(options: ISkeletonMapShaderOptions, scene: Scene): ShaderMaterial = js.native
+    inline def CreateSkeletonMapShader(options: ISkeletonMapShaderOptions, scene: Scene): ShaderMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateSkeletonMapShader")(options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[ShaderMaterial]
     
     /** public Display constants BABYLON.SkeletonViewer.DISPLAY_LINES */
     @JSImport("babylonjs/Debug/skeletonViewer", "SkeletonViewer.DISPLAY_LINES")
@@ -300,7 +295,6 @@ object skeletonViewerMod {
     @JSImport("babylonjs/Debug/skeletonViewer", "SkeletonViewer._CreateBoneMapColorBuffer")
     @js.native
     def _CreateBoneMapColorBuffer: js.Any = js.native
-    @scala.inline
-    def _CreateBoneMapColorBuffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateBoneMapColorBuffer")(x.asInstanceOf[js.Any])
+    inline def _CreateBoneMapColorBuffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateBoneMapColorBuffer")(x.asInstanceOf[js.Any])
   }
 }

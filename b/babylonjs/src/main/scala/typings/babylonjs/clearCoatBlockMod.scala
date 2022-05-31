@@ -7,7 +7,6 @@ import typings.babylonjs.reflectionBlockMod.ReflectionBlock
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clearCoatBlockMod {
@@ -21,9 +20,9 @@ object clearCoatBlockMod {
       */
     def this(name: String) = this()
     
-    var _generateTBNSpace: js.Any = js.native
+    /* private */ var _generateTBNSpace: js.Any = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
     /**
       * Gets the clear coat object output component
@@ -83,6 +82,10 @@ object clearCoatBlockMod {
   /* static members */
   object ClearCoatBlock {
     
+    @JSImport("babylonjs/Materials/Node/Blocks/PBR/clearCoatBlock", "ClearCoatBlock")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Gets the main code of the block (fragment side)
       * @param state current state of the node material building
@@ -94,9 +97,7 @@ object clearCoatBlockMod {
       * @param worldNormalVarName name of the variable holding the world normal
       * @returns the shader code
       */
-    @JSImport("babylonjs/Materials/Node/Blocks/PBR/clearCoatBlock", "ClearCoatBlock.GetCode")
-    @js.native
-    def GetCode(
+    inline def GetCode(
       state: NodeMaterialBuildState,
       ccBlock: Nullable[ClearCoatBlock],
       reflectionBlock: Nullable[ReflectionBlock],
@@ -104,6 +105,6 @@ object clearCoatBlockMod {
       generateTBNSpace: Boolean,
       vTBNAvailable: Boolean,
       worldNormalVarName: String
-    ): String = js.native
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCode")(state.asInstanceOf[js.Any], ccBlock.asInstanceOf[js.Any], reflectionBlock.asInstanceOf[js.Any], worldPosVarName.asInstanceOf[js.Any], generateTBNSpace.asInstanceOf[js.Any], vTBNAvailable.asInstanceOf[js.Any], worldNormalVarName.asInstanceOf[js.Any])).asInstanceOf[String]
   }
 }

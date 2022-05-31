@@ -5,20 +5,21 @@ import typings.babylonjs.cameraInputsManagerMod.ICameraInput
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arcRotateCameraGamepadInputMod {
   
   @JSImport("babylonjs/Cameras/Inputs/arcRotateCameraGamepadInput", "ArcRotateCameraGamepadInput")
   @js.native
-  class ArcRotateCameraGamepadInput () extends ICameraInput[ArcRotateCamera] {
+  class ArcRotateCameraGamepadInput ()
+    extends StObject
+       with ICameraInput[ArcRotateCamera] {
     
-    var _onGamepadConnectedObserver: js.Any = js.native
+    /* private */ var _onGamepadConnectedObserver: js.Any = js.native
     
-    var _onGamepadDisconnectedObserver: js.Any = js.native
+    /* private */ var _onGamepadDisconnectedObserver: js.Any = js.native
     
-    var _yAxisScale: js.Any = js.native
+    /* private */ var _yAxisScale: js.Any = js.native
     
     /**
       * Defines the camera the input is attached to.

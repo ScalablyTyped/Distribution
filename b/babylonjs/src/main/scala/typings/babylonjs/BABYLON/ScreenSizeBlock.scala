@@ -2,15 +2,16 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScreenSizeBlock extends NodeMaterialBlock {
+trait ScreenSizeBlock
+  extends StObject
+     with NodeMaterialBlock {
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
-  var _varName: js.Any = js.native
+  /* private */ var _varName: js.Any = js.native
   
   /* protected */ def writeOutputs(state: NodeMaterialBuildState, varName: String): String = js.native
   

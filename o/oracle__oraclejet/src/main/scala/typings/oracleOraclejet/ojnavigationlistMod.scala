@@ -95,21 +95,22 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ojnavigationlistMod {
   
   @js.native
-  trait ojNavigationList[K, D] extends baseComponent[ojNavigationListSettableProperties[K, D]] {
+  trait ojNavigationList[K, D]
+    extends StObject
+       with baseComponent[ojNavigationListSettableProperties[K, D]] {
     
     def addEventListener(
       `type`: displayChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[all | icons], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[all | icons], js.Any]
     ): Unit = js.native
     def addEventListener(
       `type`: displayChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[all | icons], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[all | icons], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     def addEventListener(
@@ -117,7 +118,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[none | collapsible | sliding], 
-          _
+          js.Any
         ]
     ): Unit = js.native
     def addEventListener(
@@ -125,48 +126,48 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[none | collapsible | sliding], 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
     def addEventListener(
       `type`: edgeChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[top | start], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[top | start], js.Any]
     ): Unit = js.native
     def addEventListener(
       `type`: edgeChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[top | start], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[top | start], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     def addEventListener(
       `type`: overflowChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[popup | hidden], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[popup | hidden], js.Any]
     ): Unit = js.native
     def addEventListener(
       `type`: overflowChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[popup | hidden], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[popup | hidden], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_asChanged(
       `type`: asChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_asChanged(
       `type`: asChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_currentItemChanged(
       `type`: currentItemChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[K], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[K], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_currentItemChanged(
       `type`: currentItemChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[K], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[K], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
@@ -175,7 +176,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[(DataProvider[K, D]) | Null], 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -184,41 +185,41 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[(DataProvider[K, D]) | Null], 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_expandedChanged(
       `type`: expandedChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[KeySet[K]], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[KeySet[K]], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_expandedChanged(
       `type`: expandedChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[KeySet[K]], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[KeySet[K]], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_hierarchyMenuThresholdChanged(
       `type`: hierarchyMenuThresholdChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_hierarchyMenuThresholdChanged(
       `type`: hierarchyMenuThresholdChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_itemChanged(
       `type`: itemChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Selectable[K, D]], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Selectable[K, D]], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_itemChanged(
       `type`: itemChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Selectable[K, D]], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Selectable[K, D]], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
@@ -227,7 +228,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojAnimateEnd, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -236,7 +237,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojAnimateEnd, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -246,7 +247,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojAnimateStart, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -255,7 +256,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojAnimateStart, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -265,7 +266,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeCollapse, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -274,7 +275,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeCollapse, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -284,7 +285,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeCurrentItem, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -293,7 +294,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeCurrentItem, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -303,7 +304,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeExpand, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -312,7 +313,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeExpand, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -322,7 +323,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeSelect, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -331,7 +332,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeSelect, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -341,7 +342,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojCollapse, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -350,7 +351,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojCollapse, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -360,7 +361,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojExpand, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -369,30 +370,30 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojExpand, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_rootLabelChanged(
       `type`: rootLabelChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_rootLabelChanged(
       `type`: rootLabelChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_selectionChanged(
       `type`: selectionChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[K], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[K], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_selectionChanged(
       `type`: selectionChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[K], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[K], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     
@@ -441,69 +442,69 @@ object ojnavigationlistMod {
     
     var item: Selectable[K, D] = js.native
     
-    var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+    var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], js.Any]) | Null = js.native
     
-    var onCurrentItemChanged: (js.Function1[/* event */ JetElementCustomEvent[K], _]) | Null = js.native
+    var onCurrentItemChanged: (js.Function1[/* event */ JetElementCustomEvent[K], js.Any]) | Null = js.native
     
-    var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K, D]) | Null], _]) | Null = js.native
+    var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K, D]) | Null], js.Any]) | Null = js.native
     
-    var onDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[all | icons], _]) | Null = js.native
+    var onDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[all | icons], js.Any]) | Null = js.native
     
-    var onDrillModeChanged: (js.Function1[/* event */ JetElementCustomEvent[none | collapsible | sliding], _]) | Null = js.native
+    var onDrillModeChanged: (js.Function1[/* event */ JetElementCustomEvent[none | collapsible | sliding], js.Any]) | Null = js.native
     
-    var onEdgeChanged: (js.Function1[/* event */ JetElementCustomEvent[top | start], _]) | Null = js.native
+    var onEdgeChanged: (js.Function1[/* event */ JetElementCustomEvent[top | start], js.Any]) | Null = js.native
     
-    var onExpandedChanged: (js.Function1[/* event */ JetElementCustomEvent[KeySet[K]], _]) | Null = js.native
+    var onExpandedChanged: (js.Function1[/* event */ JetElementCustomEvent[KeySet[K]], js.Any]) | Null = js.native
     
-    var onHierarchyMenuThresholdChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+    var onHierarchyMenuThresholdChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], js.Any]) | Null = js.native
     
-    var onItemChanged: (js.Function1[/* event */ JetElementCustomEvent[Selectable[K, D]], _]) | Null = js.native
+    var onItemChanged: (js.Function1[/* event */ JetElementCustomEvent[Selectable[K, D]], js.Any]) | Null = js.native
     
     var onOjAnimateEnd: (js.Function1[
         /* event */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojAnimateEnd, 
-        _
+        js.Any
       ]) | Null = js.native
     
     var onOjAnimateStart: (js.Function1[
         /* event */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojAnimateStart, 
-        _
+        js.Any
       ]) | Null = js.native
     
     var onOjBeforeCollapse: (js.Function1[
         /* event */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeCollapse, 
-        _
+        js.Any
       ]) | Null = js.native
     
     var onOjBeforeCurrentItem: (js.Function1[
         /* event */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeCurrentItem, 
-        _
+        js.Any
       ]) | Null = js.native
     
     var onOjBeforeExpand: (js.Function1[
         /* event */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeExpand, 
-        _
+        js.Any
       ]) | Null = js.native
     
     var onOjBeforeSelect: (js.Function1[
         /* event */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeSelect, 
-        _
+        js.Any
       ]) | Null = js.native
     
     var onOjCollapse: (js.Function1[
         /* event */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojCollapse, 
-        _
+        js.Any
       ]) | Null = js.native
     
     var onOjExpand: (js.Function1[
         /* event */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojExpand, 
-        _
+        js.Any
       ]) | Null = js.native
     
-    var onOverflowChanged: (js.Function1[/* event */ JetElementCustomEvent[popup | hidden], _]) | Null = js.native
+    var onOverflowChanged: (js.Function1[/* event */ JetElementCustomEvent[popup | hidden], js.Any]) | Null = js.native
     
-    var onRootLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
+    var onRootLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], js.Any]) | Null = js.native
     
-    var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[K], _]) | Null = js.native
+    var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[K], js.Any]) | Null = js.native
     
     var overflow: popup | hidden = js.native
     
@@ -551,97 +552,78 @@ object ojnavigationlistMod {
   object ojNavigationList {
     
     // tslint:disable-next-line interface-over-type-literal
-    @js.native
     trait ItemContext[K, D] extends StObject {
       
-      var componentElement: Element = js.native
+      var componentElement: Element
       
-      var data: js.Any = js.native
+      var data: js.Any
       
-      var datasource: js.UndefOr[DataProvider[K, D]] = js.native
+      var datasource: js.UndefOr[DataProvider[K, D]] = js.undefined
       
-      var index: Double = js.native
+      var index: Double
       
-      var key: js.Any = js.native
+      var key: js.Any
       
-      var parentElement: Element = js.native
+      var parentElement: Element
     }
     object ItemContext {
       
-      @scala.inline
-      def apply[K, D](componentElement: Element, data: js.Any, index: Double, key: js.Any, parentElement: Element): ItemContext[K, D] = {
+      inline def apply[K, D](componentElement: Element, data: js.Any, index: Double, key: js.Any, parentElement: Element): ItemContext[K, D] = {
         val __obj = js.Dynamic.literal(componentElement = componentElement.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], parentElement = parentElement.asInstanceOf[js.Any])
         __obj.asInstanceOf[ItemContext[K, D]]
       }
       
-      @scala.inline
-      implicit class ItemContextMutableBuilder[Self <: ItemContext[_, _], K, D] (val x: Self with (ItemContext[K, D])) extends AnyVal {
+      extension [Self <: ItemContext[?, ?], K, D](x: Self & (ItemContext[K, D])) {
         
-        @scala.inline
-        def setComponentElement(value: Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
+        inline def setComponentElement(value: Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDatasource(value: DataProvider[K, D]): Self = StObject.set(x, "datasource", value.asInstanceOf[js.Any])
+        inline def setDatasource(value: DataProvider[K, D]): Self = StObject.set(x, "datasource", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDatasourceUndefined: Self = StObject.set(x, "datasource", js.undefined)
+        inline def setDatasourceUndefined: Self = StObject.set(x, "datasource", js.undefined)
         
-        @scala.inline
-        def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+        inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParentElement(value: Element): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
+        inline def setParentElement(value: Element): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
       }
     }
     
     // tslint:disable-next-line interface-over-type-literal
-    @js.native
     trait NodeContext[K] extends StObject {
       
-      var group: Boolean = js.native
+      var group: Boolean
       
-      var index: Double = js.native
+      var index: Double
       
-      var key: K = js.native
+      var key: K
       
-      var parent: js.UndefOr[Element] = js.native
+      var parent: js.UndefOr[Element] = js.undefined
       
-      var subId: String = js.native
+      var subId: String
     }
     object NodeContext {
       
-      @scala.inline
-      def apply[K](group: Boolean, index: Double, key: K, subId: String): NodeContext[K] = {
+      inline def apply[K](group: Boolean, index: Double, key: K, subId: String): NodeContext[K] = {
         val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], subId = subId.asInstanceOf[js.Any])
         __obj.asInstanceOf[NodeContext[K]]
       }
       
-      @scala.inline
-      implicit class NodeContextMutableBuilder[Self <: NodeContext[_], K] (val x: Self with NodeContext[K]) extends AnyVal {
+      extension [Self <: NodeContext[?], K](x: Self & NodeContext[K]) {
         
-        @scala.inline
-        def setGroup(value: Boolean): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+        inline def setGroup(value: Boolean): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+        inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParent(value: Element): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+        inline def setParent(value: Element): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+        inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
         
-        @scala.inline
-        def setSubId(value: String): Self = StObject.set(x, "subId", value.asInstanceOf[js.Any])
+        inline def setSubId(value: String): Self = StObject.set(x, "subId", value.asInstanceOf[js.Any])
       }
     }
     
@@ -662,53 +644,53 @@ object ojnavigationlistMod {
     type ojExpand = CustomEvent[ItemKey]
   }
   
-  @js.native
-  trait ojNavigationListEventMap[K, D] extends baseComponentEventMap[ojNavigationListSettableProperties[K, D]] {
+  trait ojNavigationListEventMap[K, D]
+    extends StObject
+       with baseComponentEventMap[ojNavigationListSettableProperties[K, D]] {
     
-    var asChanged: JetElementCustomEvent[String] = js.native
+    var asChanged: JetElementCustomEvent[String]
     
-    var currentItemChanged: JetElementCustomEvent[K] = js.native
+    var currentItemChanged: JetElementCustomEvent[K]
     
-    var dataChanged: JetElementCustomEvent[(DataProvider[K, D]) | Null] = js.native
+    var dataChanged: JetElementCustomEvent[(DataProvider[K, D]) | Null]
     
-    var displayChanged: JetElementCustomEvent[all | icons] = js.native
+    var displayChanged: JetElementCustomEvent[all | icons]
     
-    var drillModeChanged: JetElementCustomEvent[none | collapsible | sliding] = js.native
+    var drillModeChanged: JetElementCustomEvent[none | collapsible | sliding]
     
-    var edgeChanged: JetElementCustomEvent[top | start] = js.native
+    var edgeChanged: JetElementCustomEvent[top | start]
     
-    var expandedChanged: JetElementCustomEvent[KeySet[K]] = js.native
+    var expandedChanged: JetElementCustomEvent[KeySet[K]]
     
-    var hierarchyMenuThresholdChanged: JetElementCustomEvent[Double] = js.native
+    var hierarchyMenuThresholdChanged: JetElementCustomEvent[Double]
     
-    var itemChanged: JetElementCustomEvent[Selectable[K, D]] = js.native
+    var itemChanged: JetElementCustomEvent[Selectable[K, D]]
     
-    var ojAnimateEnd: typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojAnimateEnd = js.native
+    var ojAnimateEnd: typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojAnimateEnd
     
-    var ojAnimateStart: typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojAnimateStart = js.native
+    var ojAnimateStart: typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojAnimateStart
     
-    var ojBeforeCollapse: typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeCollapse = js.native
+    var ojBeforeCollapse: typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeCollapse
     
-    var ojBeforeCurrentItem: typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeCurrentItem = js.native
+    var ojBeforeCurrentItem: typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeCurrentItem
     
-    var ojBeforeExpand: typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeExpand = js.native
+    var ojBeforeExpand: typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeExpand
     
-    var ojBeforeSelect: typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeSelect = js.native
+    var ojBeforeSelect: typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeSelect
     
-    var ojCollapse: typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojCollapse = js.native
+    var ojCollapse: typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojCollapse
     
-    var ojExpand: typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojExpand = js.native
+    var ojExpand: typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojExpand
     
-    var overflowChanged: JetElementCustomEvent[popup | hidden] = js.native
+    var overflowChanged: JetElementCustomEvent[popup | hidden]
     
-    var rootLabelChanged: JetElementCustomEvent[String | Null] = js.native
+    var rootLabelChanged: JetElementCustomEvent[String | Null]
     
-    var selectionChanged: JetElementCustomEvent[K] = js.native
+    var selectionChanged: JetElementCustomEvent[K]
   }
   object ojNavigationListEventMap {
     
-    @scala.inline
-    def apply[K, D](
+    inline def apply[K, D](
       abort: UIEvent,
       animationcancel: AnimationEvent,
       animationend: AnimationEvent,
@@ -827,105 +809,84 @@ object ojnavigationlistMod {
       __obj.asInstanceOf[ojNavigationListEventMap[K, D]]
     }
     
-    @scala.inline
-    implicit class ojNavigationListEventMapMutableBuilder[Self <: ojNavigationListEventMap[_, _], K, D] (val x: Self with (ojNavigationListEventMap[K, D])) extends AnyVal {
+    extension [Self <: ojNavigationListEventMap[?, ?], K, D](x: Self & (ojNavigationListEventMap[K, D])) {
       
-      @scala.inline
-      def setAsChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "asChanged", value.asInstanceOf[js.Any])
+      inline def setAsChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "asChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentItemChanged(value: JetElementCustomEvent[K]): Self = StObject.set(x, "currentItemChanged", value.asInstanceOf[js.Any])
+      inline def setCurrentItemChanged(value: JetElementCustomEvent[K]): Self = StObject.set(x, "currentItemChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataChanged(value: JetElementCustomEvent[(DataProvider[K, D]) | Null]): Self = StObject.set(x, "dataChanged", value.asInstanceOf[js.Any])
+      inline def setDataChanged(value: JetElementCustomEvent[(DataProvider[K, D]) | Null]): Self = StObject.set(x, "dataChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayChanged(value: JetElementCustomEvent[all | icons]): Self = StObject.set(x, "displayChanged", value.asInstanceOf[js.Any])
+      inline def setDisplayChanged(value: JetElementCustomEvent[all | icons]): Self = StObject.set(x, "displayChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrillModeChanged(value: JetElementCustomEvent[none | collapsible | sliding]): Self = StObject.set(x, "drillModeChanged", value.asInstanceOf[js.Any])
+      inline def setDrillModeChanged(value: JetElementCustomEvent[none | collapsible | sliding]): Self = StObject.set(x, "drillModeChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdgeChanged(value: JetElementCustomEvent[top | start]): Self = StObject.set(x, "edgeChanged", value.asInstanceOf[js.Any])
+      inline def setEdgeChanged(value: JetElementCustomEvent[top | start]): Self = StObject.set(x, "edgeChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandedChanged(value: JetElementCustomEvent[KeySet[K]]): Self = StObject.set(x, "expandedChanged", value.asInstanceOf[js.Any])
+      inline def setExpandedChanged(value: JetElementCustomEvent[KeySet[K]]): Self = StObject.set(x, "expandedChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHierarchyMenuThresholdChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "hierarchyMenuThresholdChanged", value.asInstanceOf[js.Any])
+      inline def setHierarchyMenuThresholdChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "hierarchyMenuThresholdChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemChanged(value: JetElementCustomEvent[Selectable[K, D]]): Self = StObject.set(x, "itemChanged", value.asInstanceOf[js.Any])
+      inline def setItemChanged(value: JetElementCustomEvent[Selectable[K, D]]): Self = StObject.set(x, "itemChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjAnimateEnd(value: typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
+      inline def setOjAnimateEnd(value: typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjAnimateStart(value: typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
+      inline def setOjAnimateStart(value: typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjBeforeCollapse(value: typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeCollapse): Self = StObject.set(x, "ojBeforeCollapse", value.asInstanceOf[js.Any])
+      inline def setOjBeforeCollapse(value: typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeCollapse): Self = StObject.set(x, "ojBeforeCollapse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjBeforeCurrentItem(value: typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeCurrentItem): Self = StObject.set(x, "ojBeforeCurrentItem", value.asInstanceOf[js.Any])
+      inline def setOjBeforeCurrentItem(value: typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeCurrentItem): Self = StObject.set(x, "ojBeforeCurrentItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjBeforeExpand(value: typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeExpand): Self = StObject.set(x, "ojBeforeExpand", value.asInstanceOf[js.Any])
+      inline def setOjBeforeExpand(value: typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeExpand): Self = StObject.set(x, "ojBeforeExpand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjBeforeSelect(value: typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeSelect): Self = StObject.set(x, "ojBeforeSelect", value.asInstanceOf[js.Any])
+      inline def setOjBeforeSelect(value: typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeSelect): Self = StObject.set(x, "ojBeforeSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjCollapse(value: typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojCollapse): Self = StObject.set(x, "ojCollapse", value.asInstanceOf[js.Any])
+      inline def setOjCollapse(value: typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojCollapse): Self = StObject.set(x, "ojCollapse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjExpand(value: typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojExpand): Self = StObject.set(x, "ojExpand", value.asInstanceOf[js.Any])
+      inline def setOjExpand(value: typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojExpand): Self = StObject.set(x, "ojExpand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowChanged(value: JetElementCustomEvent[popup | hidden]): Self = StObject.set(x, "overflowChanged", value.asInstanceOf[js.Any])
+      inline def setOverflowChanged(value: JetElementCustomEvent[popup | hidden]): Self = StObject.set(x, "overflowChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootLabelChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "rootLabelChanged", value.asInstanceOf[js.Any])
+      inline def setRootLabelChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "rootLabelChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionChanged(value: JetElementCustomEvent[K]): Self = StObject.set(x, "selectionChanged", value.asInstanceOf[js.Any])
+      inline def setSelectionChanged(value: JetElementCustomEvent[K]): Self = StObject.set(x, "selectionChanged", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait ojNavigationListSettableProperties[K, D] extends baseComponentSettableProperties {
+  trait ojNavigationListSettableProperties[K, D]
+    extends StObject
+       with baseComponentSettableProperties {
     
-    var as: String = js.native
+    var as: String
     
-    var currentItem: K = js.native
+    var currentItem: K
     
-    var data: (DataProvider[K, D]) | Null = js.native
+    var data: (DataProvider[K, D]) | Null
     
-    var display: all | icons = js.native
+    var display: all | icons
     
-    var drillMode: none | collapsible | sliding = js.native
+    var drillMode: none | collapsible | sliding
     
-    var edge: top | start = js.native
+    var edge: top | start
     
-    var expanded: KeySet[K] = js.native
+    var expanded: KeySet[K]
     
-    var hierarchyMenuThreshold: Double = js.native
+    var hierarchyMenuThreshold: Double
     
-    var item: Selectable[K, D] = js.native
+    var item: Selectable[K, D]
     
-    var overflow: popup | hidden = js.native
+    var overflow: popup | hidden
     
-    var rootLabel: String | Null = js.native
+    var rootLabel: String | Null
     
-    var selection: K = js.native
+    var selection: K
     
     @JSName("translations")
-    var translations_ojNavigationListSettableProperties: DefaultRootLabel = js.native
+    var translations_ojNavigationListSettableProperties: DefaultRootLabel
   }
   object ojNavigationListSettableProperties {
     
-    @scala.inline
-    def apply[K, D](
+    inline def apply[K, D](
       as: String,
       currentItem: K,
       display: all | icons,
@@ -938,190 +899,146 @@ object ojnavigationlistMod {
       selection: K,
       translations: DefaultRootLabel
     ): ojNavigationListSettableProperties[K, D] = {
-      val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any], currentItem = currentItem.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], drillMode = drillMode.asInstanceOf[js.Any], edge = edge.asInstanceOf[js.Any], expanded = expanded.asInstanceOf[js.Any], hierarchyMenuThreshold = hierarchyMenuThreshold.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], overflow = overflow.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any], currentItem = currentItem.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], drillMode = drillMode.asInstanceOf[js.Any], edge = edge.asInstanceOf[js.Any], expanded = expanded.asInstanceOf[js.Any], hierarchyMenuThreshold = hierarchyMenuThreshold.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], overflow = overflow.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], data = null, rootLabel = null)
       __obj.asInstanceOf[ojNavigationListSettableProperties[K, D]]
     }
     
-    @scala.inline
-    implicit class ojNavigationListSettablePropertiesMutableBuilder[Self <: ojNavigationListSettableProperties[_, _], K, D] (val x: Self with (ojNavigationListSettableProperties[K, D])) extends AnyVal {
+    extension [Self <: ojNavigationListSettableProperties[?, ?], K, D](x: Self & (ojNavigationListSettableProperties[K, D])) {
       
-      @scala.inline
-      def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentItem(value: K): Self = StObject.set(x, "currentItem", value.asInstanceOf[js.Any])
+      inline def setCurrentItem(value: K): Self = StObject.set(x, "currentItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: DataProvider[K, D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: DataProvider[K, D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataNull: Self = StObject.set(x, "data", null)
+      inline def setDataNull: Self = StObject.set(x, "data", null)
       
-      @scala.inline
-      def setDisplay(value: all | icons): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: all | icons): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrillMode(value: none | collapsible | sliding): Self = StObject.set(x, "drillMode", value.asInstanceOf[js.Any])
+      inline def setDrillMode(value: none | collapsible | sliding): Self = StObject.set(x, "drillMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdge(value: top | start): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
+      inline def setEdge(value: top | start): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpanded(value: KeySet[K]): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+      inline def setExpanded(value: KeySet[K]): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHierarchyMenuThreshold(value: Double): Self = StObject.set(x, "hierarchyMenuThreshold", value.asInstanceOf[js.Any])
+      inline def setHierarchyMenuThreshold(value: Double): Self = StObject.set(x, "hierarchyMenuThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItem(value: Selectable[K, D]): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: Selectable[K, D]): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflow(value: popup | hidden): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+      inline def setOverflow(value: popup | hidden): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootLabel(value: String): Self = StObject.set(x, "rootLabel", value.asInstanceOf[js.Any])
+      inline def setRootLabel(value: String): Self = StObject.set(x, "rootLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootLabelNull: Self = StObject.set(x, "rootLabel", null)
+      inline def setRootLabelNull: Self = StObject.set(x, "rootLabel", null)
       
-      @scala.inline
-      def setSelection(value: K): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      inline def setSelection(value: K): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslations(value: DefaultRootLabel): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: DefaultRootLabel): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojNavigationListSettableProperties<K, D>> */
-  @js.native
   trait ojNavigationListSettablePropertiesLenient[K, D]
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var as: js.UndefOr[String] = js.native
+    var as: js.UndefOr[String] = js.undefined
     
-    var currentItem: js.UndefOr[K] = js.native
+    var currentItem: js.UndefOr[K] = js.undefined
     
-    var data: js.UndefOr[(DataProvider[K, D]) | Null] = js.native
+    var data: js.UndefOr[(DataProvider[K, D]) | Null] = js.undefined
     
-    var display: js.UndefOr[all | icons] = js.native
+    var display: js.UndefOr[all | icons] = js.undefined
     
-    var drillMode: js.UndefOr[none | collapsible | sliding] = js.native
+    var drillMode: js.UndefOr[none | collapsible | sliding] = js.undefined
     
-    var edge: js.UndefOr[top | start] = js.native
+    var edge: js.UndefOr[top | start] = js.undefined
     
-    var expanded: js.UndefOr[KeySet[K]] = js.native
+    var expanded: js.UndefOr[KeySet[K]] = js.undefined
     
-    var hierarchyMenuThreshold: js.UndefOr[Double] = js.native
+    var hierarchyMenuThreshold: js.UndefOr[Double] = js.undefined
     
-    var item: js.UndefOr[Selectable[K, D]] = js.native
+    var item: js.UndefOr[Selectable[K, D]] = js.undefined
     
-    var overflow: js.UndefOr[popup | hidden] = js.native
+    var overflow: js.UndefOr[popup | hidden] = js.undefined
     
-    var rootLabel: js.UndefOr[String | Null] = js.native
+    var rootLabel: js.UndefOr[String | Null] = js.undefined
     
-    var selection: js.UndefOr[K] = js.native
+    var selection: js.UndefOr[K] = js.undefined
     
-    var translations: js.UndefOr[DefaultRootLabel] = js.native
+    var translations: js.UndefOr[DefaultRootLabel] = js.undefined
   }
   object ojNavigationListSettablePropertiesLenient {
     
-    @scala.inline
-    def apply[K, D](): ojNavigationListSettablePropertiesLenient[K, D] = {
+    inline def apply[K, D](): ojNavigationListSettablePropertiesLenient[K, D] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ojNavigationListSettablePropertiesLenient[K, D]]
     }
     
-    @scala.inline
-    implicit class ojNavigationListSettablePropertiesLenientMutableBuilder[Self <: ojNavigationListSettablePropertiesLenient[_, _], K, D] (val x: Self with (ojNavigationListSettablePropertiesLenient[K, D])) extends AnyVal {
+    extension [Self <: ojNavigationListSettablePropertiesLenient[?, ?], K, D](x: Self & (ojNavigationListSettablePropertiesLenient[K, D])) {
       
-      @scala.inline
-      def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setCurrentItem(value: K): Self = StObject.set(x, "currentItem", value.asInstanceOf[js.Any])
+      inline def setCurrentItem(value: K): Self = StObject.set(x, "currentItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentItemUndefined: Self = StObject.set(x, "currentItem", js.undefined)
+      inline def setCurrentItemUndefined: Self = StObject.set(x, "currentItem", js.undefined)
       
-      @scala.inline
-      def setData(value: DataProvider[K, D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: DataProvider[K, D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataNull: Self = StObject.set(x, "data", null)
+      inline def setDataNull: Self = StObject.set(x, "data", null)
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDisplay(value: all | icons): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: all | icons): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+      inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
       
-      @scala.inline
-      def setDrillMode(value: none | collapsible | sliding): Self = StObject.set(x, "drillMode", value.asInstanceOf[js.Any])
+      inline def setDrillMode(value: none | collapsible | sliding): Self = StObject.set(x, "drillMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrillModeUndefined: Self = StObject.set(x, "drillMode", js.undefined)
+      inline def setDrillModeUndefined: Self = StObject.set(x, "drillMode", js.undefined)
       
-      @scala.inline
-      def setEdge(value: top | start): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
+      inline def setEdge(value: top | start): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdgeUndefined: Self = StObject.set(x, "edge", js.undefined)
+      inline def setEdgeUndefined: Self = StObject.set(x, "edge", js.undefined)
       
-      @scala.inline
-      def setExpanded(value: KeySet[K]): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+      inline def setExpanded(value: KeySet[K]): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+      inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
       
-      @scala.inline
-      def setHierarchyMenuThreshold(value: Double): Self = StObject.set(x, "hierarchyMenuThreshold", value.asInstanceOf[js.Any])
+      inline def setHierarchyMenuThreshold(value: Double): Self = StObject.set(x, "hierarchyMenuThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHierarchyMenuThresholdUndefined: Self = StObject.set(x, "hierarchyMenuThreshold", js.undefined)
+      inline def setHierarchyMenuThresholdUndefined: Self = StObject.set(x, "hierarchyMenuThreshold", js.undefined)
       
-      @scala.inline
-      def setItem(value: Selectable[K, D]): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: Selectable[K, D]): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
       
-      @scala.inline
-      def setOverflow(value: popup | hidden): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+      inline def setOverflow(value: popup | hidden): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
+      inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
       
-      @scala.inline
-      def setRootLabel(value: String): Self = StObject.set(x, "rootLabel", value.asInstanceOf[js.Any])
+      inline def setRootLabel(value: String): Self = StObject.set(x, "rootLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootLabelNull: Self = StObject.set(x, "rootLabel", null)
+      inline def setRootLabelNull: Self = StObject.set(x, "rootLabel", null)
       
-      @scala.inline
-      def setRootLabelUndefined: Self = StObject.set(x, "rootLabel", js.undefined)
+      inline def setRootLabelUndefined: Self = StObject.set(x, "rootLabel", js.undefined)
       
-      @scala.inline
-      def setSelection(value: K): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      inline def setSelection(value: K): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
+      inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
       
-      @scala.inline
-      def setTranslations(value: DefaultRootLabel): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: DefaultRootLabel): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+      inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
     }
   }
   
   @js.native
-  trait ojTabBar[K, D] extends baseComponent[ojTabBarSettableProperties[K, D]] {
+  trait ojTabBar[K, D]
+    extends StObject
+       with baseComponent[ojTabBarSettableProperties[K, D]] {
     
     def addEventListener(
       `type`: currentItemChanged,
@@ -1130,7 +1047,7 @@ object ojnavigationlistMod {
           /* ev */ JetElementCustomEvent[
             /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojTabBar<K, D>['currentItem'] */ js.Any
           ], 
-          _
+          js.Any
         ]
     ): Unit = js.native
     def addEventListener(
@@ -1140,17 +1057,17 @@ object ojnavigationlistMod {
           /* ev */ JetElementCustomEvent[
             /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojTabBar<K, D>['currentItem'] */ js.Any
           ], 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
     def addEventListener(
       `type`: displayChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[all | icons], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[all | icons], js.Any]
     ): Unit = js.native
     def addEventListener(
       `type`: displayChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[all | icons], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[all | icons], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     def addEventListener(
@@ -1158,7 +1075,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[top | bottom | start | end], 
-          _
+          js.Any
         ]
     ): Unit = js.native
     def addEventListener(
@@ -1166,26 +1083,26 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[top | bottom | start | end], 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
     def addEventListener(
       `type`: overflowChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[popup | hidden], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[popup | hidden], js.Any]
     ): Unit = js.native
     def addEventListener(
       `type`: overflowChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[popup | hidden], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[popup | hidden], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     def addEventListener(
       `type`: reorderableChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[enabled | disabled], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[enabled | disabled], js.Any]
     ): Unit = js.native
     def addEventListener(
       `type`: reorderableChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[enabled | disabled], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[enabled | disabled], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     def addEventListener(
@@ -1195,7 +1112,7 @@ object ojnavigationlistMod {
           /* ev */ JetElementCustomEvent[
             /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojTabBar<K, D>['selection'] */ js.Any
           ], 
-          _
+          js.Any
         ]
     ): Unit = js.native
     def addEventListener(
@@ -1205,28 +1122,28 @@ object ojnavigationlistMod {
           /* ev */ JetElementCustomEvent[
             /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojTabBar<K, D>['selection'] */ js.Any
           ], 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
     def addEventListener(
       `type`: truncationChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | progressive], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | progressive], js.Any]
     ): Unit = js.native
     def addEventListener(
       `type`: truncationChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | progressive], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | progressive], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_asChanged(
       `type`: asChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_asChanged(
       `type`: asChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
@@ -1235,7 +1152,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[(DataProvider[K, D]) | Null], 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -1244,19 +1161,27 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[(DataProvider[K, D]) | Null], 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_itemChanged(
       `type`: itemChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[RendererSelectable[K, D]], _]
+      listener: js.ThisFunction1[
+          /* this */ HTMLElement, 
+          /* ev */ JetElementCustomEvent[RendererSelectable[K, D]], 
+          js.Any
+        ]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_itemChanged(
       `type`: itemChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[RendererSelectable[K, D]], _],
+      listener: js.ThisFunction1[
+          /* this */ HTMLElement, 
+          /* ev */ JetElementCustomEvent[RendererSelectable[K, D]], 
+          js.Any
+        ],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
@@ -1265,7 +1190,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojAnimateEnd, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -1274,7 +1199,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojAnimateEnd, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -1284,7 +1209,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojAnimateStart, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -1293,7 +1218,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojAnimateStart, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -1303,7 +1228,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeCurrentItem, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -1312,7 +1237,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeCurrentItem, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -1322,7 +1247,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeDeselect, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -1331,7 +1256,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeDeselect, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -1341,7 +1266,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeRemove, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -1350,7 +1275,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeRemove, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -1360,7 +1285,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeSelect, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -1369,7 +1294,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeSelect, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -1379,7 +1304,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojDeselect, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -1388,7 +1313,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojDeselect, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -1398,7 +1323,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojRemove, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -1407,7 +1332,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojRemove, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -1417,7 +1342,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojReorder, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -1426,7 +1351,7 @@ object ojnavigationlistMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojReorder, 
-          _
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -1466,59 +1391,74 @@ object ojnavigationlistMod {
     
     var item: RendererSelectable[K, D] = js.native
     
-    var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+    var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], js.Any]) | Null = js.native
     
     var onCurrentItemChanged: (js.Function1[
         /* event */ JetElementCustomEvent[
           /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojTabBar<K, D>['currentItem'] */ js.Any
         ], 
-        _
+        js.Any
       ]) | Null = js.native
     
-    var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K, D]) | Null], _]) | Null = js.native
+    var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K, D]) | Null], js.Any]) | Null = js.native
     
-    var onDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[all | icons], _]) | Null = js.native
+    var onDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[all | icons], js.Any]) | Null = js.native
     
-    var onEdgeChanged: (js.Function1[/* event */ JetElementCustomEvent[top | bottom | start | end], _]) | Null = js.native
+    var onEdgeChanged: (js.Function1[/* event */ JetElementCustomEvent[top | bottom | start | end], js.Any]) | Null = js.native
     
-    var onItemChanged: (js.Function1[/* event */ JetElementCustomEvent[RendererSelectable[K, D]], _]) | Null = js.native
+    var onItemChanged: (js.Function1[/* event */ JetElementCustomEvent[RendererSelectable[K, D]], js.Any]) | Null = js.native
     
-    var onOjAnimateEnd: (js.Function1[/* event */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojAnimateEnd, _]) | Null = js.native
+    var onOjAnimateEnd: (js.Function1[
+        /* event */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojAnimateEnd, 
+        js.Any
+      ]) | Null = js.native
     
-    var onOjAnimateStart: (js.Function1[/* event */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojAnimateStart, _]) | Null = js.native
+    var onOjAnimateStart: (js.Function1[
+        /* event */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojAnimateStart, 
+        js.Any
+      ]) | Null = js.native
     
     var onOjBeforeCurrentItem: (js.Function1[
         /* event */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeCurrentItem, 
-        _
+        js.Any
       ]) | Null = js.native
     
     var onOjBeforeDeselect: (js.Function1[
         /* event */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeDeselect, 
-        _
+        js.Any
       ]) | Null = js.native
     
-    var onOjBeforeRemove: (js.Function1[/* event */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeRemove, _]) | Null = js.native
+    var onOjBeforeRemove: (js.Function1[
+        /* event */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeRemove, 
+        js.Any
+      ]) | Null = js.native
     
-    var onOjBeforeSelect: (js.Function1[/* event */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeSelect, _]) | Null = js.native
+    var onOjBeforeSelect: (js.Function1[
+        /* event */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeSelect, 
+        js.Any
+      ]) | Null = js.native
     
-    var onOjDeselect: (js.Function1[/* event */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojDeselect, _]) | Null = js.native
+    var onOjDeselect: (js.Function1[
+        /* event */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojDeselect, 
+        js.Any
+      ]) | Null = js.native
     
-    var onOjRemove: (js.Function1[/* event */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojRemove, _]) | Null = js.native
+    var onOjRemove: (js.Function1[/* event */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojRemove, js.Any]) | Null = js.native
     
-    var onOjReorder: (js.Function1[/* event */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojReorder, _]) | Null = js.native
+    var onOjReorder: (js.Function1[/* event */ typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojReorder, js.Any]) | Null = js.native
     
-    var onOverflowChanged: (js.Function1[/* event */ JetElementCustomEvent[popup | hidden], _]) | Null = js.native
+    var onOverflowChanged: (js.Function1[/* event */ JetElementCustomEvent[popup | hidden], js.Any]) | Null = js.native
     
-    var onReorderableChanged: (js.Function1[/* event */ JetElementCustomEvent[enabled | disabled], _]) | Null = js.native
+    var onReorderableChanged: (js.Function1[/* event */ JetElementCustomEvent[enabled | disabled], js.Any]) | Null = js.native
     
     var onSelectionChanged: (js.Function1[
         /* event */ JetElementCustomEvent[
           /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojTabBar<K, D>['selection'] */ js.Any
         ], 
-        _
+        js.Any
       ]) | Null = js.native
     
-    var onTruncationChanged: (js.Function1[/* event */ JetElementCustomEvent[none | progressive], _]) | Null = js.native
+    var onTruncationChanged: (js.Function1[/* event */ JetElementCustomEvent[none | progressive], js.Any]) | Null = js.native
     
     var overflow: popup | hidden = js.native
     
@@ -1563,84 +1503,68 @@ object ojnavigationlistMod {
   object ojTabBar {
     
     // tslint:disable-next-line interface-over-type-literal
-    @js.native
     trait ItemContext[K, D] extends StObject {
       
-      var componentElement: Element = js.native
+      var componentElement: Element
       
-      var data: D = js.native
+      var data: D
       
-      var datasource: js.UndefOr[DataProvider[K, D]] = js.native
+      var datasource: js.UndefOr[DataProvider[K, D]] = js.undefined
       
-      var index: Double = js.native
+      var index: Double
       
-      var key: K = js.native
+      var key: K
       
-      var parentElement: Element = js.native
+      var parentElement: Element
     }
     object ItemContext {
       
-      @scala.inline
-      def apply[K, D](componentElement: Element, data: D, index: Double, key: K, parentElement: Element): ItemContext[K, D] = {
+      inline def apply[K, D](componentElement: Element, data: D, index: Double, key: K, parentElement: Element): ItemContext[K, D] = {
         val __obj = js.Dynamic.literal(componentElement = componentElement.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], parentElement = parentElement.asInstanceOf[js.Any])
         __obj.asInstanceOf[ItemContext[K, D]]
       }
       
-      @scala.inline
-      implicit class ItemContextMutableBuilder[Self <: ItemContext[_, _], K, D] (val x: Self with (ItemContext[K, D])) extends AnyVal {
+      extension [Self <: ItemContext[?, ?], K, D](x: Self & (ItemContext[K, D])) {
         
-        @scala.inline
-        def setComponentElement(value: Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
+        inline def setComponentElement(value: Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDatasource(value: DataProvider[K, D]): Self = StObject.set(x, "datasource", value.asInstanceOf[js.Any])
+        inline def setDatasource(value: DataProvider[K, D]): Self = StObject.set(x, "datasource", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDatasourceUndefined: Self = StObject.set(x, "datasource", js.undefined)
+        inline def setDatasourceUndefined: Self = StObject.set(x, "datasource", js.undefined)
         
-        @scala.inline
-        def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+        inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParentElement(value: Element): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
+        inline def setParentElement(value: Element): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
       }
     }
     
     // tslint:disable-next-line interface-over-type-literal
-    @js.native
     trait NodeContext[K] extends StObject {
       
-      var index: Double = js.native
+      var index: Double
       
-      var key: K = js.native
+      var key: K
       
-      var subId: String = js.native
+      var subId: String
     }
     object NodeContext {
       
-      @scala.inline
-      def apply[K](index: Double, key: K, subId: String): typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.NodeContext[K] = {
+      inline def apply[K](index: Double, key: K, subId: String): typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.NodeContext[K] = {
         val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], subId = subId.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.NodeContext[K]]
       }
       
-      @scala.inline
-      implicit class NodeContextMutableBuilder[Self <: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.NodeContext[_], K] (val x: Self with typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.NodeContext[K]) extends AnyVal {
+      extension [Self <: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.NodeContext[?], K](x: Self & typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.NodeContext[K]) {
         
-        @scala.inline
-        def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+        inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubId(value: String): Self = StObject.set(x, "subId", value.asInstanceOf[js.Any])
+        inline def setSubId(value: String): Self = StObject.set(x, "subId", value.asInstanceOf[js.Any])
       }
     }
     
@@ -1663,55 +1587,55 @@ object ojnavigationlistMod {
     type ojReorder = CustomEvent[ItemPosition]
   }
   
-  @js.native
-  trait ojTabBarEventMap[K, D] extends baseComponentEventMap[ojTabBarSettableProperties[K, D]] {
+  trait ojTabBarEventMap[K, D]
+    extends StObject
+       with baseComponentEventMap[ojTabBarSettableProperties[K, D]] {
     
-    var asChanged: JetElementCustomEvent[String] = js.native
+    var asChanged: JetElementCustomEvent[String]
     
     var currentItemChanged: JetElementCustomEvent[
         /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojTabBar<K, D>['currentItem'] */ js.Any
-      ] = js.native
+      ]
     
-    var dataChanged: JetElementCustomEvent[(DataProvider[K, D]) | Null] = js.native
+    var dataChanged: JetElementCustomEvent[(DataProvider[K, D]) | Null]
     
-    var displayChanged: JetElementCustomEvent[all | icons] = js.native
+    var displayChanged: JetElementCustomEvent[all | icons]
     
-    var edgeChanged: JetElementCustomEvent[top | bottom | start | end] = js.native
+    var edgeChanged: JetElementCustomEvent[top | bottom | start | end]
     
-    var itemChanged: JetElementCustomEvent[RendererSelectable[K, D]] = js.native
+    var itemChanged: JetElementCustomEvent[RendererSelectable[K, D]]
     
-    var ojAnimateEnd: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojAnimateEnd = js.native
+    var ojAnimateEnd: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojAnimateEnd
     
-    var ojAnimateStart: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojAnimateStart = js.native
+    var ojAnimateStart: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojAnimateStart
     
-    var ojBeforeCurrentItem: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeCurrentItem = js.native
+    var ojBeforeCurrentItem: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeCurrentItem
     
-    var ojBeforeDeselect: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeDeselect = js.native
+    var ojBeforeDeselect: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeDeselect
     
-    var ojBeforeRemove: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeRemove = js.native
+    var ojBeforeRemove: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeRemove
     
-    var ojBeforeSelect: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeSelect = js.native
+    var ojBeforeSelect: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeSelect
     
-    var ojDeselect: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojDeselect = js.native
+    var ojDeselect: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojDeselect
     
-    var ojRemove: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojRemove = js.native
+    var ojRemove: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojRemove
     
-    var ojReorder: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojReorder = js.native
+    var ojReorder: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojReorder
     
-    var overflowChanged: JetElementCustomEvent[popup | hidden] = js.native
+    var overflowChanged: JetElementCustomEvent[popup | hidden]
     
-    var reorderableChanged: JetElementCustomEvent[enabled | disabled] = js.native
+    var reorderableChanged: JetElementCustomEvent[enabled | disabled]
     
     var selectionChanged: JetElementCustomEvent[
         /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojTabBar<K, D>['selection'] */ js.Any
-      ] = js.native
+      ]
     
-    var truncationChanged: JetElementCustomEvent[none | progressive] = js.native
+    var truncationChanged: JetElementCustomEvent[none | progressive]
   }
   object ojTabBarEventMap {
     
-    @scala.inline
-    def apply[K, D](
+    inline def apply[K, D](
       abort: UIEvent,
       animationcancel: AnimationEvent,
       animationend: AnimationEvent,
@@ -1833,106 +1757,86 @@ object ojnavigationlistMod {
       __obj.asInstanceOf[ojTabBarEventMap[K, D]]
     }
     
-    @scala.inline
-    implicit class ojTabBarEventMapMutableBuilder[Self <: ojTabBarEventMap[_, _], K, D] (val x: Self with (ojTabBarEventMap[K, D])) extends AnyVal {
+    extension [Self <: ojTabBarEventMap[?, ?], K, D](x: Self & (ojTabBarEventMap[K, D])) {
       
-      @scala.inline
-      def setAsChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "asChanged", value.asInstanceOf[js.Any])
+      inline def setAsChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "asChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentItemChanged(
+      inline def setCurrentItemChanged(
         value: JetElementCustomEvent[
               /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojTabBar<K, D>['currentItem'] */ js.Any
             ]
       ): Self = StObject.set(x, "currentItemChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataChanged(value: JetElementCustomEvent[(DataProvider[K, D]) | Null]): Self = StObject.set(x, "dataChanged", value.asInstanceOf[js.Any])
+      inline def setDataChanged(value: JetElementCustomEvent[(DataProvider[K, D]) | Null]): Self = StObject.set(x, "dataChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayChanged(value: JetElementCustomEvent[all | icons]): Self = StObject.set(x, "displayChanged", value.asInstanceOf[js.Any])
+      inline def setDisplayChanged(value: JetElementCustomEvent[all | icons]): Self = StObject.set(x, "displayChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdgeChanged(value: JetElementCustomEvent[top | bottom | start | end]): Self = StObject.set(x, "edgeChanged", value.asInstanceOf[js.Any])
+      inline def setEdgeChanged(value: JetElementCustomEvent[top | bottom | start | end]): Self = StObject.set(x, "edgeChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemChanged(value: JetElementCustomEvent[RendererSelectable[K, D]]): Self = StObject.set(x, "itemChanged", value.asInstanceOf[js.Any])
+      inline def setItemChanged(value: JetElementCustomEvent[RendererSelectable[K, D]]): Self = StObject.set(x, "itemChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjAnimateEnd(value: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
+      inline def setOjAnimateEnd(value: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjAnimateStart(value: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
+      inline def setOjAnimateStart(value: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjBeforeCurrentItem(value: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeCurrentItem): Self = StObject.set(x, "ojBeforeCurrentItem", value.asInstanceOf[js.Any])
+      inline def setOjBeforeCurrentItem(value: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeCurrentItem): Self = StObject.set(x, "ojBeforeCurrentItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjBeforeDeselect(value: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeDeselect): Self = StObject.set(x, "ojBeforeDeselect", value.asInstanceOf[js.Any])
+      inline def setOjBeforeDeselect(value: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeDeselect): Self = StObject.set(x, "ojBeforeDeselect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjBeforeRemove(value: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeRemove): Self = StObject.set(x, "ojBeforeRemove", value.asInstanceOf[js.Any])
+      inline def setOjBeforeRemove(value: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeRemove): Self = StObject.set(x, "ojBeforeRemove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjBeforeSelect(value: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeSelect): Self = StObject.set(x, "ojBeforeSelect", value.asInstanceOf[js.Any])
+      inline def setOjBeforeSelect(value: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeSelect): Self = StObject.set(x, "ojBeforeSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjDeselect(value: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojDeselect): Self = StObject.set(x, "ojDeselect", value.asInstanceOf[js.Any])
+      inline def setOjDeselect(value: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojDeselect): Self = StObject.set(x, "ojDeselect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjRemove(value: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojRemove): Self = StObject.set(x, "ojRemove", value.asInstanceOf[js.Any])
+      inline def setOjRemove(value: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojRemove): Self = StObject.set(x, "ojRemove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOjReorder(value: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojReorder): Self = StObject.set(x, "ojReorder", value.asInstanceOf[js.Any])
+      inline def setOjReorder(value: typings.oracleOraclejet.ojnavigationlistMod.ojTabBar.ojReorder): Self = StObject.set(x, "ojReorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowChanged(value: JetElementCustomEvent[popup | hidden]): Self = StObject.set(x, "overflowChanged", value.asInstanceOf[js.Any])
+      inline def setOverflowChanged(value: JetElementCustomEvent[popup | hidden]): Self = StObject.set(x, "overflowChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReorderableChanged(value: JetElementCustomEvent[enabled | disabled]): Self = StObject.set(x, "reorderableChanged", value.asInstanceOf[js.Any])
+      inline def setReorderableChanged(value: JetElementCustomEvent[enabled | disabled]): Self = StObject.set(x, "reorderableChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionChanged(
+      inline def setSelectionChanged(
         value: JetElementCustomEvent[
               /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojTabBar<K, D>['selection'] */ js.Any
             ]
       ): Self = StObject.set(x, "selectionChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTruncationChanged(value: JetElementCustomEvent[none | progressive]): Self = StObject.set(x, "truncationChanged", value.asInstanceOf[js.Any])
+      inline def setTruncationChanged(value: JetElementCustomEvent[none | progressive]): Self = StObject.set(x, "truncationChanged", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait ojTabBarSettableProperties[K, D] extends baseComponentSettableProperties {
+  trait ojTabBarSettableProperties[K, D]
+    extends StObject
+       with baseComponentSettableProperties {
     
-    var as: String = js.native
+    var as: String
     
-    var currentItem: js.Any = js.native
+    var currentItem: js.Any
     
-    var data: (DataProvider[K, D]) | Null = js.native
+    var data: (DataProvider[K, D]) | Null
     
-    var display: all | icons = js.native
+    var display: all | icons
     
-    var edge: top | bottom | start | end = js.native
+    var edge: top | bottom | start | end
     
-    var item: RendererSelectable[K, D] = js.native
+    var item: RendererSelectable[K, D]
     
-    var overflow: popup | hidden = js.native
+    var overflow: popup | hidden
     
-    var reorderable: enabled | disabled = js.native
+    var reorderable: enabled | disabled
     
-    var selection: js.Any = js.native
+    var selection: js.Any
     
     @JSName("translations")
-    var translations_ojTabBarSettableProperties: AccessibleReorderAfterItem = js.native
+    var translations_ojTabBarSettableProperties: AccessibleReorderAfterItem
     
-    var truncation: none | progressive = js.native
+    var truncation: none | progressive
   }
   object ojTabBarSettableProperties {
     
-    @scala.inline
-    def apply[K, D](
+    inline def apply[K, D](
       as: String,
       currentItem: js.Any,
       display: all | icons,
@@ -1944,157 +1848,119 @@ object ojnavigationlistMod {
       translations: AccessibleReorderAfterItem,
       truncation: none | progressive
     ): ojTabBarSettableProperties[K, D] = {
-      val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any], currentItem = currentItem.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], edge = edge.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], overflow = overflow.asInstanceOf[js.Any], reorderable = reorderable.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], truncation = truncation.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any], currentItem = currentItem.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], edge = edge.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], overflow = overflow.asInstanceOf[js.Any], reorderable = reorderable.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], truncation = truncation.asInstanceOf[js.Any], data = null)
       __obj.asInstanceOf[ojTabBarSettableProperties[K, D]]
     }
     
-    @scala.inline
-    implicit class ojTabBarSettablePropertiesMutableBuilder[Self <: ojTabBarSettableProperties[_, _], K, D] (val x: Self with (ojTabBarSettableProperties[K, D])) extends AnyVal {
+    extension [Self <: ojTabBarSettableProperties[?, ?], K, D](x: Self & (ojTabBarSettableProperties[K, D])) {
       
-      @scala.inline
-      def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentItem(value: js.Any): Self = StObject.set(x, "currentItem", value.asInstanceOf[js.Any])
+      inline def setCurrentItem(value: js.Any): Self = StObject.set(x, "currentItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: DataProvider[K, D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: DataProvider[K, D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataNull: Self = StObject.set(x, "data", null)
+      inline def setDataNull: Self = StObject.set(x, "data", null)
       
-      @scala.inline
-      def setDisplay(value: all | icons): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: all | icons): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdge(value: top | bottom | start | end): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
+      inline def setEdge(value: top | bottom | start | end): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItem(value: RendererSelectable[K, D]): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: RendererSelectable[K, D]): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflow(value: popup | hidden): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+      inline def setOverflow(value: popup | hidden): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReorderable(value: enabled | disabled): Self = StObject.set(x, "reorderable", value.asInstanceOf[js.Any])
+      inline def setReorderable(value: enabled | disabled): Self = StObject.set(x, "reorderable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelection(value: js.Any): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      inline def setSelection(value: js.Any): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslations(value: AccessibleReorderAfterItem): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: AccessibleReorderAfterItem): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTruncation(value: none | progressive): Self = StObject.set(x, "truncation", value.asInstanceOf[js.Any])
+      inline def setTruncation(value: none | progressive): Self = StObject.set(x, "truncation", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojTabBarSettableProperties<K, D>> */
-  @js.native
   trait ojTabBarSettablePropertiesLenient[K, D]
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var as: js.UndefOr[String] = js.native
+    var as: js.UndefOr[String] = js.undefined
     
-    var currentItem: js.UndefOr[js.Any] = js.native
+    var currentItem: js.UndefOr[js.Any] = js.undefined
     
-    var data: js.UndefOr[(DataProvider[K, D]) | Null] = js.native
+    var data: js.UndefOr[(DataProvider[K, D]) | Null] = js.undefined
     
-    var display: js.UndefOr[all | icons] = js.native
+    var display: js.UndefOr[all | icons] = js.undefined
     
-    var edge: js.UndefOr[top | bottom | start | end] = js.native
+    var edge: js.UndefOr[top | bottom | start | end] = js.undefined
     
-    var item: js.UndefOr[RendererSelectable[K, D]] = js.native
+    var item: js.UndefOr[RendererSelectable[K, D]] = js.undefined
     
-    var overflow: js.UndefOr[popup | hidden] = js.native
+    var overflow: js.UndefOr[popup | hidden] = js.undefined
     
-    var reorderable: js.UndefOr[enabled | disabled] = js.native
+    var reorderable: js.UndefOr[enabled | disabled] = js.undefined
     
-    var selection: js.UndefOr[js.Any] = js.native
+    var selection: js.UndefOr[js.Any] = js.undefined
     
-    var translations: js.UndefOr[AccessibleReorderAfterItem] = js.native
+    var translations: js.UndefOr[AccessibleReorderAfterItem] = js.undefined
     
-    var truncation: js.UndefOr[none | progressive] = js.native
+    var truncation: js.UndefOr[none | progressive] = js.undefined
   }
   object ojTabBarSettablePropertiesLenient {
     
-    @scala.inline
-    def apply[K, D](): ojTabBarSettablePropertiesLenient[K, D] = {
+    inline def apply[K, D](): ojTabBarSettablePropertiesLenient[K, D] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ojTabBarSettablePropertiesLenient[K, D]]
     }
     
-    @scala.inline
-    implicit class ojTabBarSettablePropertiesLenientMutableBuilder[Self <: ojTabBarSettablePropertiesLenient[_, _], K, D] (val x: Self with (ojTabBarSettablePropertiesLenient[K, D])) extends AnyVal {
+    extension [Self <: ojTabBarSettablePropertiesLenient[?, ?], K, D](x: Self & (ojTabBarSettablePropertiesLenient[K, D])) {
       
-      @scala.inline
-      def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setCurrentItem(value: js.Any): Self = StObject.set(x, "currentItem", value.asInstanceOf[js.Any])
+      inline def setCurrentItem(value: js.Any): Self = StObject.set(x, "currentItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentItemUndefined: Self = StObject.set(x, "currentItem", js.undefined)
+      inline def setCurrentItemUndefined: Self = StObject.set(x, "currentItem", js.undefined)
       
-      @scala.inline
-      def setData(value: DataProvider[K, D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: DataProvider[K, D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataNull: Self = StObject.set(x, "data", null)
+      inline def setDataNull: Self = StObject.set(x, "data", null)
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDisplay(value: all | icons): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: all | icons): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+      inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
       
-      @scala.inline
-      def setEdge(value: top | bottom | start | end): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
+      inline def setEdge(value: top | bottom | start | end): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdgeUndefined: Self = StObject.set(x, "edge", js.undefined)
+      inline def setEdgeUndefined: Self = StObject.set(x, "edge", js.undefined)
       
-      @scala.inline
-      def setItem(value: RendererSelectable[K, D]): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: RendererSelectable[K, D]): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
       
-      @scala.inline
-      def setOverflow(value: popup | hidden): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+      inline def setOverflow(value: popup | hidden): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
+      inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
       
-      @scala.inline
-      def setReorderable(value: enabled | disabled): Self = StObject.set(x, "reorderable", value.asInstanceOf[js.Any])
+      inline def setReorderable(value: enabled | disabled): Self = StObject.set(x, "reorderable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReorderableUndefined: Self = StObject.set(x, "reorderable", js.undefined)
+      inline def setReorderableUndefined: Self = StObject.set(x, "reorderable", js.undefined)
       
-      @scala.inline
-      def setSelection(value: js.Any): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      inline def setSelection(value: js.Any): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
+      inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
       
-      @scala.inline
-      def setTranslations(value: AccessibleReorderAfterItem): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: AccessibleReorderAfterItem): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+      inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
       
-      @scala.inline
-      def setTruncation(value: none | progressive): Self = StObject.set(x, "truncation", value.asInstanceOf[js.Any])
+      inline def setTruncation(value: none | progressive): Self = StObject.set(x, "truncation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTruncationUndefined: Self = StObject.set(x, "truncation", js.undefined)
+      inline def setTruncationUndefined: Self = StObject.set(x, "truncation", js.undefined)
     }
   }
 }

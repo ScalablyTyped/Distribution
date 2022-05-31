@@ -2,33 +2,32 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Path3D extends StObject {
   
-  var _alignTangentsWithPath: js.Any = js.native
+  /* private */ var _alignTangentsWithPath: js.Any = js.native
   
-  var _binormals: js.Any = js.native
+  /* private */ var _binormals: js.Any = js.native
   
-  var _compute: js.Any = js.native
+  /* private */ var _compute: js.Any = js.native
   
-  var _curve: js.Any = js.native
+  /* private */ var _curve: js.Any = js.native
   
-  var _distances: js.Any = js.native
+  /* private */ var _distances: js.Any = js.native
   
-  var _getFirstNonNullVector: js.Any = js.native
+  /* private */ var _getFirstNonNullVector: js.Any = js.native
   
-  var _getLastNonNullVector: js.Any = js.native
+  /* private */ var _getLastNonNullVector: js.Any = js.native
   
-  var _normalVector: js.Any = js.native
+  /* private */ var _normalVector: js.Any = js.native
   
-  var _normals: js.Any = js.native
+  /* private */ var _normals: js.Any = js.native
   
-  val _pointAtData: js.Any = js.native
+  /* private */ val _pointAtData: js.Any = js.native
   
-  var _raw: js.Any = js.native
+  /* private */ var _raw: js.Any = js.native
   
   /**
     * Updates the point at data from the specified parameters
@@ -36,14 +35,14 @@ trait Path3D extends StObject {
     * @param point the interpolated point
     * @param parentIndex the index of an existing curve point that is on, or else positionally the first behind, the interpolated point
     */
-  var _setPointAtData: js.Any = js.native
+  /* private */ var _setPointAtData: js.Any = js.native
   
-  var _tangents: js.Any = js.native
+  /* private */ var _tangents: js.Any = js.native
   
   /**
     * Updates the point at interpolation matrix for the tangents, normals and binormals
     */
-  var _updateInterpolationMatrix: js.Any = js.native
+  /* private */ var _updateInterpolationMatrix: js.Any = js.native
   
   /**
     * Updates the point at data for an interpolated point along this curve
@@ -51,7 +50,7 @@ trait Path3D extends StObject {
     * @interpolateTNB wether to compute the interpolated tangent, normal and binormal
     * @returns the (updated) point at data
     */
-  var _updatePointAtData: js.Any = js.native
+  /* private */ var _updatePointAtData: js.Any = js.native
   
   /**
     * Returns the binormal vector of an interpolated Path3D curve point at the specified position along this path.
@@ -168,9 +167,9 @@ trait Path3D extends StObject {
     * @returns a sub path (slice) of this path
     */
   def slice(): Path3D = js.native
-  def slice(start: js.UndefOr[scala.Nothing], end: Double): Path3D = js.native
   def slice(start: Double): Path3D = js.native
   def slice(start: Double, end: Double): Path3D = js.native
+  def slice(start: Unit, end: Double): Path3D = js.native
   
   /**
     * Forces the Path3D tangent, normal, binormal and distance recomputation.
@@ -180,10 +179,7 @@ trait Path3D extends StObject {
     * @returns the same object updated.
     */
   def update(path: js.Array[Vector3]): Path3D = js.native
-  def update(
-    path: js.Array[Vector3],
-    firstNormal: js.UndefOr[Nullable[Vector3]],
-    alignTangentsWithPath: Boolean
-  ): Path3D = js.native
+  def update(path: js.Array[Vector3], firstNormal: Unit, alignTangentsWithPath: Boolean): Path3D = js.native
   def update(path: js.Array[Vector3], firstNormal: Nullable[Vector3]): Path3D = js.native
+  def update(path: js.Array[Vector3], firstNormal: Nullable[Vector3], alignTangentsWithPath: Boolean): Path3D = js.native
 }

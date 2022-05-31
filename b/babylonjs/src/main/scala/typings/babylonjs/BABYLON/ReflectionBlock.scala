@@ -2,11 +2,12 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReflectionBlock extends ReflectionTextureBaseBlock {
+trait ReflectionBlock
+  extends StObject
+     with ReflectionTextureBaseBlock {
   
   /** @hidden */
   var _defineLODReflectionAlpha: String = js.native
@@ -14,9 +15,9 @@ trait ReflectionBlock extends ReflectionTextureBaseBlock {
   /** @hidden */
   var _defineLinearSpecularReflection: String = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
-  var _vEnvironmentIrradianceName: js.Any = js.native
+  /* private */ var _vEnvironmentIrradianceName: js.Any = js.native
   
   /** @hidden */
   var _vReflectionFilteringInfoName: String = js.native

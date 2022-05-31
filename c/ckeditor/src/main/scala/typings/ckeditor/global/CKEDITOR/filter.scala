@@ -24,7 +24,4 @@ object filter {
   @js.native
   def transformationTools: typings.ckeditor.CKEDITOR.filter.transformationTools = js.native
   inline def transformationTools_=(x: transformationTools): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("transformationTools")(x.asInstanceOf[js.Any])
-  
-  /* static member */
-  object instances
 }

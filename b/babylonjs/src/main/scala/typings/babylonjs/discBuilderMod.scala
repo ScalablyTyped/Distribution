@@ -6,7 +6,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object discBuilderMod {
@@ -16,6 +15,10 @@ object discBuilderMod {
   class DiscBuilder () extends StObject
   /* static members */
   object DiscBuilder {
+    
+    @JSImport("babylonjs/Meshes/Builders/discBuilder", "DiscBuilder")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Creates a plane polygonal mesh.  By default, this is a disc
@@ -31,11 +34,7 @@ object discBuilderMod {
       * @returns the plane polygonal mesh
       * @see https://doc.babylonjs.com/how_to/set_shapes#disc-or-regular-polygon
       */
-    @JSImport("babylonjs/Meshes/Builders/discBuilder", "DiscBuilder.CreateDisc")
-    @js.native
-    def CreateDisc(name: String, options: Tessellation): Mesh = js.native
-    @JSImport("babylonjs/Meshes/Builders/discBuilder", "DiscBuilder.CreateDisc")
-    @js.native
-    def CreateDisc(name: String, options: Tessellation, scene: Nullable[Scene]): Mesh = js.native
+    inline def CreateDisc(name: String, options: Tessellation): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDisc")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreateDisc(name: String, options: Tessellation, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDisc")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
   }
 }

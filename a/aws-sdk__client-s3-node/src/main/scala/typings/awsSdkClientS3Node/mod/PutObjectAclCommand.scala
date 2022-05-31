@@ -1,5 +1,6 @@
 package typings.awsSdkClientS3Node.mod
 
+import typings.awsSdkClientS3Node.typesPutObjectAclInputMod.PutObjectAclInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class PutObjectAclCommand protected ()
   extends typings.awsSdkClientS3Node.putObjectAclCommandMod.PutObjectAclCommand {
-  def this(input: typings.awsSdkClientS3Node.typesPutObjectAclInputMod.PutObjectAclInput) = this()
+  def this(input: PutObjectAclInput) = this()
 }

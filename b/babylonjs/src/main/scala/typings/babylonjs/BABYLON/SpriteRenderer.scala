@@ -2,43 +2,42 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SpriteRenderer extends StObject {
   
-  var _appendSpriteVertex: js.Any = js.native
+  /* private */ var _appendSpriteVertex: js.Any = js.native
   
-  var _buffer: js.Any = js.native
+  /* private */ var _buffer: js.Any = js.native
   
-  val _capacity: js.Any = js.native
+  /* private */ val _capacity: js.Any = js.native
   
-  var _effectBase: js.Any = js.native
+  /* private */ var _effectBase: js.Any = js.native
   
-  var _effectFog: js.Any = js.native
+  /* private */ var _effectFog: js.Any = js.native
   
-  val _engine: js.Any = js.native
+  /* private */ val _engine: js.Any = js.native
   
-  val _epsilon: js.Any = js.native
+  /* private */ val _epsilon: js.Any = js.native
   
-  var _indexBuffer: js.Any = js.native
+  /* private */ var _indexBuffer: js.Any = js.native
   
-  val _scene: js.Any = js.native
+  /* private */ val _scene: js.Any = js.native
   
-  var _spriteBuffer: js.Any = js.native
+  /* private */ var _spriteBuffer: js.Any = js.native
   
-  val _useInstancing: js.Any = js.native
+  /* private */ val _useInstancing: js.Any = js.native
   
-  val _useVAO: js.Any = js.native
+  /* private */ val _useVAO: js.Any = js.native
   
-  var _vertexArrayObject: js.Any = js.native
+  /* private */ var _vertexArrayObject: js.Any = js.native
   
-  var _vertexBufferSize: js.Any = js.native
+  /* private */ var _vertexBufferSize: js.Any = js.native
   
-  var _vertexBuffers: js.Any = js.native
+  /* private */ var _vertexBuffers: js.Any = js.native
   
-  var _vertexData: js.Any = js.native
+  /* private */ var _vertexData: js.Any = js.native
   
   /**
     * Gets or sets a boolean indicating if alpha mode is automatically

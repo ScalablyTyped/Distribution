@@ -8,7 +8,6 @@ import typings.babylonjs.prePassRendererMod.PrePassRenderer
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object postProcessRenderPipelineMod {
@@ -31,7 +30,7 @@ object postProcessRenderPipelineMod {
     /**
       * @hidden
       */
-    var _cameras: js.Array[Camera] = js.native
+    /* protected */ var _cameras: js.Array[Camera] = js.native
     
     /** @hidden */
     def _detachCameras(cameras: Camera): Unit = js.native
@@ -54,9 +53,9 @@ object postProcessRenderPipelineMod {
     /** @hidden */
     def _rebuild(): Unit = js.native
     
-    var _renderEffects: js.Any = js.native
+    /* private */ var _renderEffects: js.Any = js.native
     
-    var _renderEffectsForIsolatedPass: js.Any = js.native
+    /* private */ var _renderEffectsForIsolatedPass: js.Any = js.native
     
     /** @hidden */
     def _reset(): Unit = js.native
@@ -78,7 +77,7 @@ object postProcessRenderPipelineMod {
       */
     def dispose(): Unit = js.native
     
-    var engine: js.Any = js.native
+    /* private */ var engine: js.Any = js.native
     
     /**
       * Gets the class name

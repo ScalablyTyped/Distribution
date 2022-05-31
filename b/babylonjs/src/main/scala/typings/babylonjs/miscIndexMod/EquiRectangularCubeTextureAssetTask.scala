@@ -2,7 +2,6 @@ package typings.babylonjs.miscIndexMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Misc/index", "EquiRectangularCubeTextureAssetTask")
@@ -68,7 +67,7 @@ class EquiRectangularCubeTextureAssetTask protected ()
     /**
     * Defines if mipmaps should not be generated (default is false)
     */
-  noMipmap: js.UndefOr[scala.Nothing],
+  noMipmap: Boolean,
     /**
     * Specifies if the texture will be use in gamma or linear space (the PBR material requires those texture in linear space,
     * but the standard material would require them in Gamma space) (default is true)
@@ -91,7 +90,7 @@ class EquiRectangularCubeTextureAssetTask protected ()
     /**
     * Defines if mipmaps should not be generated (default is false)
     */
-  noMipmap: Boolean,
+  noMipmap: Unit,
     /**
     * Specifies if the texture will be use in gamma or linear space (the PBR material requires those texture in linear space,
     * but the standard material would require them in Gamma space) (default is true)

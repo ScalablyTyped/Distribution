@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.SubSurfaceBlock")
 @js.native
 class SubSurfaceBlock protected ()
-  extends typings.babylonjs.BABYLON.SubSurfaceBlock {
+  extends StObject
+     with typings.babylonjs.BABYLON.SubSurfaceBlock {
   /**
     * Create a new SubSurfaceBlock
     * @param name defines the block name
@@ -19,6 +19,10 @@ class SubSurfaceBlock protected ()
 /* static members */
 object SubSurfaceBlock {
   
+  @JSGlobal("BABYLON.SubSurfaceBlock")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Gets the main code of the block (fragment side)
     * @param state current state of the node material building
@@ -27,12 +31,10 @@ object SubSurfaceBlock {
     * @param worldPosVarName name of the variable holding the world position
     * @returns the shader code
     */
-  @JSGlobal("BABYLON.SubSurfaceBlock.GetCode")
-  @js.native
-  def GetCode(
+  inline def GetCode(
     state: typings.babylonjs.BABYLON.NodeMaterialBuildState,
     ssBlock: Nullable[typings.babylonjs.BABYLON.SubSurfaceBlock],
     reflectionBlock: Nullable[typings.babylonjs.BABYLON.ReflectionBlock],
     worldPosVarName: String
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCode")(state.asInstanceOf[js.Any], ssBlock.asInstanceOf[js.Any], reflectionBlock.asInstanceOf[js.Any], worldPosVarName.asInstanceOf[js.Any])).asInstanceOf[String]
 }

@@ -2,36 +2,37 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SixDofDragBehavior extends Behavior[Mesh] {
+trait SixDofDragBehavior
+  extends StObject
+     with Behavior[Mesh] {
   
-  var _attachedToElement: js.Any = js.native
+  /* private */ var _attachedToElement: js.Any = js.native
   
-  var _moving: js.Any = js.native
+  /* private */ var _moving: js.Any = js.native
   
-  var _ownerNode: js.Any = js.native
+  /* private */ var _ownerNode: js.Any = js.native
   
   /**
     * In the case of multiplea active cameras, the cameraToUseForPointers should be used if set instead of active camera
     */
   /* private */ def _pointerCamera: js.Any = js.native
   
-  var _pointerObserver: js.Any = js.native
+  /* private */ var _pointerObserver: js.Any = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
-  var _sceneRenderObserver: js.Any = js.native
+  /* private */ var _sceneRenderObserver: js.Any = js.native
   
-  var _startingOrientation: js.Any = js.native
+  /* private */ var _startingOrientation: js.Any = js.native
   
-  var _targetPosition: js.Any = js.native
+  /* private */ var _targetPosition: js.Any = js.native
   
-  var _virtualDragMesh: js.Any = js.native
+  /* private */ var _virtualDragMesh: js.Any = js.native
   
-  var _virtualOriginMesh: js.Any = js.native
+  /* private */ var _virtualOriginMesh: js.Any = js.native
   
   /**
     * The id of the pointer that is currently interacting with the behavior (-1 when no pointer is active)
@@ -82,5 +83,5 @@ trait SixDofDragBehavior extends Behavior[Mesh] {
   /**
     * How much faster the object should move when the controller is moving towards it. This is useful to bring objects that are far away from the user to them faster. Set this to 0 to avoid any speed increase. (Default: 3)
     */
-  var zDragFactor: js.Any = js.native
+  /* private */ var zDragFactor: js.Any = js.native
 }

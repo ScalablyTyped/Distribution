@@ -3,7 +3,6 @@ package typings.babylonjs.materialsIndexMod
 import typings.babylonjs.iClipPlanesHolderMod.IClipPlanesHolder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Materials/index", "ThinMaterialHelper")
@@ -13,12 +12,14 @@ class ThinMaterialHelper ()
 /* static members */
 object ThinMaterialHelper {
   
+  @JSImport("babylonjs/Materials/index", "ThinMaterialHelper")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Binds the clip plane information from the holder to the effect.
     * @param effect The effect we are binding the data to
     * @param holder The entity containing the clip plane information
     */
-  @JSImport("babylonjs/Materials/index", "ThinMaterialHelper.BindClipPlane")
-  @js.native
-  def BindClipPlane(effect: typings.babylonjs.effectMod.Effect, holder: IClipPlanesHolder): Unit = js.native
+  inline def BindClipPlane(effect: typings.babylonjs.effectMod.Effect, holder: IClipPlanesHolder): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("BindClipPlane")(effect.asInstanceOf[js.Any], holder.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

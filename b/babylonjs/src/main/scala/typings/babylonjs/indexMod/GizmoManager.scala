@@ -2,7 +2,6 @@ package typings.babylonjs.indexMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "GizmoManager")
@@ -20,35 +19,35 @@ class GizmoManager protected ()
   def this(scene: typings.babylonjs.sceneMod.Scene, thickness: Double) = this()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
-    thickness: js.UndefOr[scala.Nothing],
-    utilityLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
-  ) = this()
-  def this(
-    scene: typings.babylonjs.sceneMod.Scene,
     thickness: Double,
     utilityLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
   ) = this()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
-    thickness: js.UndefOr[scala.Nothing],
-    utilityLayer: js.UndefOr[scala.Nothing],
+    thickness: Unit,
+    utilityLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
+  ) = this()
+  def this(
+    scene: typings.babylonjs.sceneMod.Scene,
+    thickness: Double,
+    utilityLayer: Unit,
     keepDepthUtilityLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
   ) = this()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
-    thickness: js.UndefOr[scala.Nothing],
+    thickness: Double,
     utilityLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer,
     keepDepthUtilityLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
   ) = this()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
-    thickness: Double,
-    utilityLayer: js.UndefOr[scala.Nothing],
+    thickness: Unit,
+    utilityLayer: Unit,
     keepDepthUtilityLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
   ) = this()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
-    thickness: Double,
+    thickness: Unit,
     utilityLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer,
     keepDepthUtilityLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
   ) = this()

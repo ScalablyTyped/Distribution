@@ -13,12 +13,10 @@ import typings.luminoDisposable.mod.IDisposable
 import typings.luminoWidgets.mod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
   trait ILauncher extends StObject {
     
     /**
@@ -31,12 +29,11 @@ object mod {
       * re-render event for parent widget.
       *
       */
-    def add(options: IItemOptions): IDisposable = js.native
+    def add(options: IItemOptions): IDisposable
   }
   object ILauncher extends Shortcut {
     
-    @scala.inline
-    def apply(add: IItemOptions => IDisposable): ILauncher = {
+    inline def apply(add: IItemOptions => IDisposable): ILauncher = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add))
       __obj.asInstanceOf[ILauncher]
     }
@@ -48,7 +45,6 @@ object mod {
     /**
       * The options used to create a launcher item.
       */
-    @js.native
     trait IItemOptions extends StObject {
       
       /**
@@ -61,14 +57,14 @@ object mod {
         * of the args, which a command may use to create
         * the activity with respect to the right directory.
         */
-      var args: js.UndefOr[ReadonlyJSONObject] = js.native
+      var args: js.UndefOr[ReadonlyJSONObject] = js.undefined
       
       /**
         * The category for the launcher item.
         *
         * The default value is the an empty string.
         */
-      var category: js.UndefOr[String] = js.native
+      var category: js.UndefOr[String] = js.undefined
       
       /**
         * The command ID for the launcher item.
@@ -81,7 +77,7 @@ object mod {
         * (i.e., create a modal dialog), then the launcher will not be
         * disposed.
         */
-      var command: String = js.native
+      var command: String
       
       /**
         * For items that have a kernel associated with them, the URL of the kernel
@@ -90,13 +86,13 @@ object mod {
         * This is not a CSS class, but the URL that points to the icon in the kernel
         * spec.
         */
-      var kernelIconUrl: js.UndefOr[String] = js.native
+      var kernelIconUrl: js.UndefOr[String] = js.undefined
       
       /**
         * Metadata about the item.  This can be used by the launcher to
         * affect how the item is displayed.
         */
-      var metadata: js.UndefOr[ReadonlyJSONObject] = js.native
+      var metadata: js.UndefOr[ReadonlyJSONObject] = js.undefined
       
       /**
         * The rank for the launcher item.
@@ -108,109 +104,87 @@ object mod {
         *
         * The default rank is `Infinity`.
         */
-      var rank: js.UndefOr[Double] = js.native
+      var rank: js.UndefOr[Double] = js.undefined
     }
     object IItemOptions {
       
-      @scala.inline
-      def apply(command: String): IItemOptions = {
+      inline def apply(command: String): IItemOptions = {
         val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any])
         __obj.asInstanceOf[IItemOptions]
       }
       
-      @scala.inline
-      implicit class IItemOptionsMutableBuilder[Self <: IItemOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IItemOptions](x: Self) {
         
-        @scala.inline
-        def setArgs(value: ReadonlyJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+        inline def setArgs(value: ReadonlyJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+        inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
         
-        @scala.inline
-        def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+        inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+        inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
         
-        @scala.inline
-        def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+        inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKernelIconUrl(value: String): Self = StObject.set(x, "kernelIconUrl", value.asInstanceOf[js.Any])
+        inline def setKernelIconUrl(value: String): Self = StObject.set(x, "kernelIconUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKernelIconUrlUndefined: Self = StObject.set(x, "kernelIconUrl", js.undefined)
+        inline def setKernelIconUrlUndefined: Self = StObject.set(x, "kernelIconUrl", js.undefined)
         
-        @scala.inline
-        def setMetadata(value: ReadonlyJSONObject): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+        inline def setMetadata(value: ReadonlyJSONObject): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+        inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
         
-        @scala.inline
-        def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+        inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
+        inline def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
       }
     }
     
-    @scala.inline
-    implicit class ILauncherMutableBuilder[Self <: ILauncher] (val x: Self) extends AnyVal {
+    extension [Self <: ILauncher](x: Self) {
       
-      @scala.inline
-      def setAdd(value: IItemOptions => IDisposable): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      inline def setAdd(value: IItemOptions => IDisposable): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     }
     
     /**
       * The options used to create a Launcher.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The callback used when an item is launched.
         */
-      def callback(widget: Widget): Unit = js.native
+      def callback(widget: Widget): Unit
       
       /**
         * The command registry used by the launcher.
         */
-      var commands: CommandRegistry = js.native
+      var commands: CommandRegistry
       
       /**
         * The cwd of the launcher.
         */
-      var cwd: String = js.native
+      var cwd: String
       
       /**
         * The model of the launcher.
         */
-      var model: LauncherModel = js.native
+      var model: LauncherModel
     }
     object IOptions {
       
-      @scala.inline
-      def apply(callback: Widget => Unit, commands: CommandRegistry, cwd: String, model: LauncherModel): IOptions = {
+      inline def apply(callback: Widget => Unit, commands: CommandRegistry, cwd: String, model: LauncherModel): IOptions = {
         val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), commands = commands.asInstanceOf[js.Any], cwd = cwd.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setCallback(value: Widget => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+        inline def setCallback(value: Widget => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCommands(value: CommandRegistry): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+        inline def setCommands(value: CommandRegistry): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+        inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModel(value: LauncherModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+        inline def setModel(value: LauncherModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       }
     }
     
@@ -228,13 +202,13 @@ object mod {
       */
     def this(options: IOptions) = this()
     
-    var _callback: js.Any = js.native
+    /* private */ var _callback: js.Any = js.native
     
-    var _commands: js.Any = js.native
+    /* private */ var _commands: js.Any = js.native
     
-    var _cwd: js.Any = js.native
+    /* private */ var _cwd: js.Any = js.native
     
-    var _pending: js.Any = js.native
+    /* private */ var _pending: js.Any = js.native
     
     /**
       * The cwd of the launcher.
@@ -255,7 +229,35 @@ object mod {
     extends VDomModel
        with ILauncher {
     
-    var _items: js.Any = js.native
+    /* private */ var _items: js.Any = js.native
+    
+    /**
+      * Add a command item to the launcher, and trigger re-render event for parent
+      * widget.
+      *
+      * @param options - The specification options for a launcher item.
+      *
+      * @returns A disposable that will remove the item from Launcher, and trigger
+      * re-render event for parent widget.
+      *
+      */
+    /* CompleteClass */
+    override def add(options: IItemOptions): IDisposable = js.native
+    
+    /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    /* InferMemberOverrides */
+    override def dispose(): Unit = js.native
     
     /**
       * Return an iterator of launcher items.

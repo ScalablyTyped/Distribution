@@ -6,7 +6,6 @@ import typings.babylonjs.postProcessMod.PostProcess
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object postProcessRenderEffectMod {
@@ -47,7 +46,7 @@ object postProcessRenderEffectMod {
       */
     def _attachCameras(cameras: Camera): Unit = js.native
     
-    var _cameras: js.Any = js.native
+    /* private */ var _cameras: js.Any = js.native
     
     /**
       * Detatches the effect on cameras
@@ -88,9 +87,9 @@ object postProcessRenderEffectMod {
       */
     def _enable(cameras: Nullable[js.Array[Camera]]): Unit = js.native
     
-    var _getPostProcesses: js.Any = js.native
+    /* private */ var _getPostProcesses: js.Any = js.native
     
-    var _indicesForCamera: js.Any = js.native
+    /* private */ var _indicesForCamera: js.Any = js.native
     
     /**
       * Name of the effect
@@ -98,9 +97,9 @@ object postProcessRenderEffectMod {
       */
     var _name: String = js.native
     
-    var _postProcesses: js.Any = js.native
+    /* private */ var _postProcesses: js.Any = js.native
     
-    var _singleInstance: js.Any = js.native
+    /* private */ var _singleInstance: js.Any = js.native
     
     /**
       * Updates the current state of the effect

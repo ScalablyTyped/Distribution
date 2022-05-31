@@ -32,21 +32,22 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ojrefresherMod {
   
   @js.native
-  trait ojRefresher extends baseComponent[ojRefresherSettableProperties] {
+  trait ojRefresher
+    extends StObject
+       with baseComponent[ojRefresherSettableProperties] {
     
     @JSName("addEventListener")
     def addEventListener_refreshContentChanged(
       `type`: refreshContentChanged,
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
-          /* ev */ JetElementCustomEvent[js.Function0[js.Promise[_]]], 
-          _
+          /* ev */ JetElementCustomEvent[js.Function0[js.Promise[js.Any]]], 
+          js.Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -54,42 +55,42 @@ object ojrefresherMod {
       `type`: refreshContentChanged,
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
-          /* ev */ JetElementCustomEvent[js.Function0[js.Promise[_]]], 
-          _
+          /* ev */ JetElementCustomEvent[js.Function0[js.Promise[js.Any]]], 
+          js.Any
         ],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_targetChanged(
       `type`: targetChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Element], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Element], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_targetChanged(
       `type`: targetChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Element], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Element], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_textChanged(
       `type`: textChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_textChanged(
       `type`: textChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_thresholdChanged(
       `type`: thresholdChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], _]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_thresholdChanged(
       `type`: thresholdChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], _],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any],
       useCapture: Boolean
     ): Unit = js.native
     
@@ -100,15 +101,15 @@ object ojrefresherMod {
     @JSName("getProperty")
     def getProperty_threshold(property: threshold): Double = js.native
     
-    var onRefreshContentChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Function0[js.Promise[_]]], _]) | Null = js.native
+    var onRefreshContentChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Function0[js.Promise[js.Any]]], js.Any]) | Null = js.native
     
-    var onTargetChanged: (js.Function1[/* event */ JetElementCustomEvent[Element], _]) | Null = js.native
+    var onTargetChanged: (js.Function1[/* event */ JetElementCustomEvent[Element], js.Any]) | Null = js.native
     
-    var onTextChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+    var onTextChanged: (js.Function1[/* event */ JetElementCustomEvent[String], js.Any]) | Null = js.native
     
-    var onThresholdChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+    var onThresholdChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], js.Any]) | Null = js.native
     
-    def refreshContent(): js.Promise[_] = js.native
+    def refreshContent(): js.Promise[js.Any] = js.native
     
     def setProperties(properties: ojRefresherSettablePropertiesLenient): Unit = js.native
     
@@ -126,21 +127,21 @@ object ojrefresherMod {
     var threshold: Double = js.native
   }
   
-  @js.native
-  trait ojRefresherEventMap extends baseComponentEventMap[ojRefresherSettableProperties] {
+  trait ojRefresherEventMap
+    extends StObject
+       with baseComponentEventMap[ojRefresherSettableProperties] {
     
-    var refreshContentChanged: JetElementCustomEvent[js.Function0[js.Promise[_]]] = js.native
+    var refreshContentChanged: JetElementCustomEvent[js.Function0[js.Promise[js.Any]]]
     
-    var targetChanged: JetElementCustomEvent[Element] = js.native
+    var targetChanged: JetElementCustomEvent[Element]
     
-    var textChanged: JetElementCustomEvent[String] = js.native
+    var textChanged: JetElementCustomEvent[String]
     
-    var thresholdChanged: JetElementCustomEvent[Double] = js.native
+    var thresholdChanged: JetElementCustomEvent[Double]
   }
   object ojRefresherEventMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: UIEvent,
       animationcancel: AnimationEvent,
       animationend: AnimationEvent,
@@ -208,7 +209,7 @@ object ojrefresherMod {
       pointerup: PointerEvent,
       progress: ProgressEvent[EventTarget],
       ratechange: Event,
-      refreshContentChanged: JetElementCustomEvent[js.Function0[js.Promise[_]]],
+      refreshContentChanged: JetElementCustomEvent[js.Function0[js.Promise[js.Any]]],
       reset: Event,
       resize: UIEvent,
       scroll: Event,
@@ -243,117 +244,94 @@ object ojrefresherMod {
       __obj.asInstanceOf[ojRefresherEventMap]
     }
     
-    @scala.inline
-    implicit class ojRefresherEventMapMutableBuilder[Self <: ojRefresherEventMap] (val x: Self) extends AnyVal {
+    extension [Self <: ojRefresherEventMap](x: Self) {
       
-      @scala.inline
-      def setRefreshContentChanged(value: JetElementCustomEvent[js.Function0[js.Promise[_]]]): Self = StObject.set(x, "refreshContentChanged", value.asInstanceOf[js.Any])
+      inline def setRefreshContentChanged(value: JetElementCustomEvent[js.Function0[js.Promise[js.Any]]]): Self = StObject.set(x, "refreshContentChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetChanged(value: JetElementCustomEvent[Element]): Self = StObject.set(x, "targetChanged", value.asInstanceOf[js.Any])
+      inline def setTargetChanged(value: JetElementCustomEvent[Element]): Self = StObject.set(x, "targetChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "textChanged", value.asInstanceOf[js.Any])
+      inline def setTextChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "textChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "thresholdChanged", value.asInstanceOf[js.Any])
+      inline def setThresholdChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "thresholdChanged", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait ojRefresherSettableProperties extends baseComponentSettableProperties {
+  trait ojRefresherSettableProperties
+    extends StObject
+       with baseComponentSettableProperties {
     
-    def refreshContent(): js.Promise[_] = js.native
+    def refreshContent(): js.Promise[js.Any]
     
-    var target: Element = js.native
+    var target: Element
     
-    var text: String = js.native
+    var text: String
     
-    var threshold: Double = js.native
+    var threshold: Double
   }
   object ojRefresherSettableProperties {
     
-    @scala.inline
-    def apply(refreshContent: () => js.Promise[_], target: Element, text: String, threshold: Double): ojRefresherSettableProperties = {
-      val __obj = js.Dynamic.literal(refreshContent = js.Any.fromFunction0(refreshContent), target = target.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], threshold = threshold.asInstanceOf[js.Any])
+    inline def apply(refreshContent: () => js.Promise[js.Any], target: Element, text: String, threshold: Double): ojRefresherSettableProperties = {
+      val __obj = js.Dynamic.literal(refreshContent = js.Any.fromFunction0(refreshContent), target = target.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], threshold = threshold.asInstanceOf[js.Any], translations = null)
       __obj.asInstanceOf[ojRefresherSettableProperties]
     }
     
-    @scala.inline
-    implicit class ojRefresherSettablePropertiesMutableBuilder[Self <: ojRefresherSettableProperties] (val x: Self) extends AnyVal {
+    extension [Self <: ojRefresherSettableProperties](x: Self) {
       
-      @scala.inline
-      def setRefreshContent(value: () => js.Promise[_]): Self = StObject.set(x, "refreshContent", js.Any.fromFunction0(value))
+      inline def setRefreshContent(value: () => js.Promise[js.Any]): Self = StObject.set(x, "refreshContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojrefresher.ojRefresherSettableProperties> */
-  @js.native
   trait ojRefresherSettablePropertiesLenient
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var refreshContent: js.UndefOr[js.Function0[js.Promise[_]]] = js.native
+    var refreshContent: js.UndefOr[js.Function0[js.Promise[js.Any]]] = js.undefined
     
-    var target: js.UndefOr[Element] = js.native
+    var target: js.UndefOr[Element] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
-    var threshold: js.UndefOr[Double] = js.native
+    var threshold: js.UndefOr[Double] = js.undefined
     
-    var translations: js.UndefOr[js.Object | Null] = js.native
+    var translations: js.UndefOr[js.Object | Null] = js.undefined
   }
   object ojRefresherSettablePropertiesLenient {
     
-    @scala.inline
-    def apply(): ojRefresherSettablePropertiesLenient = {
+    inline def apply(): ojRefresherSettablePropertiesLenient = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ojRefresherSettablePropertiesLenient]
     }
     
-    @scala.inline
-    implicit class ojRefresherSettablePropertiesLenientMutableBuilder[Self <: ojRefresherSettablePropertiesLenient] (val x: Self) extends AnyVal {
+    extension [Self <: ojRefresherSettablePropertiesLenient](x: Self) {
       
-      @scala.inline
-      def setRefreshContent(value: () => js.Promise[_]): Self = StObject.set(x, "refreshContent", js.Any.fromFunction0(value))
+      inline def setRefreshContent(value: () => js.Promise[js.Any]): Self = StObject.set(x, "refreshContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRefreshContentUndefined: Self = StObject.set(x, "refreshContent", js.undefined)
+      inline def setRefreshContentUndefined: Self = StObject.set(x, "refreshContent", js.undefined)
       
-      @scala.inline
-      def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+      inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
       
-      @scala.inline
-      def setTranslations(value: js.Object): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: js.Object): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslationsNull: Self = StObject.set(x, "translations", null)
+      inline def setTranslationsNull: Self = StObject.set(x, "translations", null)
       
-      @scala.inline
-      def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+      inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
     }
   }
 }

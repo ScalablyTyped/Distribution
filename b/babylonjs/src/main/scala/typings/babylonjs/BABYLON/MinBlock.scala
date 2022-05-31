@@ -2,11 +2,12 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MinBlock extends NodeMaterialBlock {
+trait MinBlock
+  extends StObject
+     with NodeMaterialBlock {
   
   /**
     * Gets the left operand input component

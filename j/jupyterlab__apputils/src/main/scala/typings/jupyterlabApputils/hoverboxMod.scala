@@ -10,26 +10,26 @@ import typings.std.ClientRect
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hoverboxMod {
   
   object HoverBox {
     
+    @JSImport("@jupyterlab/apputils/lib/hoverbox", "HoverBox")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Set the visible dimensions of a hovering box anchored to an editor cursor.
       *
       * @param options - The hover box geometry calculation options.
       */
-    @JSImport("@jupyterlab/apputils/lib/hoverbox", "HoverBox.setGeometry")
-    @js.native
-    def setGeometry(options: IOptions): Unit = js.native
+    inline def setGeometry(options: IOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGeometry")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Options for setting the geometry of a hovering node and its anchor node.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
@@ -40,7 +40,7 @@ object hoverboxMod {
         * coordinate position, which can be retrieved via calling the
         * `getCoordinateForPosition` method.
         */
-      var anchor: ClientRect = js.native
+      var anchor: ClientRect
       
       /**
         * The node that hosts the anchor.
@@ -49,7 +49,7 @@ object hoverboxMod {
         * The visibility of the anchor rectangle within this host node is the
         * heuristic that determines whether the hover box ought to be visible.
         */
-      var host: HTMLElement = js.native
+      var host: HTMLElement
       
       /**
         * The maximum height of a hover box.
@@ -58,17 +58,17 @@ object hoverboxMod {
         * This value is only used if a CSS max-height attribute is not set for the
         * hover box. It is a fallback value.
         */
-      var maxHeight: Double = js.native
+      var maxHeight: Double
       
       /**
         * The minimum height of a hover box.
         */
-      var minHeight: Double = js.native
+      var minHeight: Double
       
       /**
         * The hover box node.
         */
-      var node: HTMLElement = js.native
+      var node: HTMLElement
       
       /**
         * Optional pixel offset values added to where the hover box should render.
@@ -82,7 +82,7 @@ object hoverboxMod {
         * the cursor, the `vertical` offset accepts `above` and `below` values for
         * the different render modes.
         */
-      var offset: js.UndefOr[Horizontal] = js.native
+      var offset: js.UndefOr[Horizontal] = js.undefined
       
       /**
         * If space is available both above and below the anchor, denote which
@@ -92,57 +92,44 @@ object hoverboxMod {
         * #### Notes
         * The default value is `'below'`.
         */
-      var privilege: js.UndefOr[above | below | forceAbove | forceBelow] = js.native
+      var privilege: js.UndefOr[above | below | forceAbove | forceBelow] = js.undefined
       
       /**
         * If the style of the node has already been computed, it can be passed into
         * the hover box for geometry calculation.
         */
-      var style: js.UndefOr[CSSStyleDeclaration] = js.native
+      var style: js.UndefOr[CSSStyleDeclaration] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(anchor: ClientRect, host: HTMLElement, maxHeight: Double, minHeight: Double, node: HTMLElement): IOptions = {
+      inline def apply(anchor: ClientRect, host: HTMLElement, maxHeight: Double, minHeight: Double, node: HTMLElement): IOptions = {
         val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], maxHeight = maxHeight.asInstanceOf[js.Any], minHeight = minHeight.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setAnchor(value: ClientRect): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+        inline def setAnchor(value: ClientRect): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHost(value: HTMLElement): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+        inline def setHost(value: HTMLElement): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+        inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+        inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNode(value: HTMLElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+        inline def setNode(value: HTMLElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOffset(value: Horizontal): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+        inline def setOffset(value: Horizontal): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+        inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
         
-        @scala.inline
-        def setPrivilege(value: above | below | forceAbove | forceBelow): Self = StObject.set(x, "privilege", value.asInstanceOf[js.Any])
+        inline def setPrivilege(value: above | below | forceAbove | forceBelow): Self = StObject.set(x, "privilege", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrivilegeUndefined: Self = StObject.set(x, "privilege", js.undefined)
+        inline def setPrivilegeUndefined: Self = StObject.set(x, "privilege", js.undefined)
         
-        @scala.inline
-        def setStyle(value: CSSStyleDeclaration): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+        inline def setStyle(value: CSSStyleDeclaration): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+        inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       }
     }
   }

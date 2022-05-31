@@ -2,17 +2,18 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeviceInputSystem extends IDisposable {
+trait DeviceInputSystem
+  extends StObject
+     with IDisposable {
   
   /**
     * Add a gamepad to the DeviceInputSystem
     * @param gamepad A single DOM Gamepad object
     */
-  var _addGamePad: js.Any = js.native
+  /* private */ var _addGamePad: js.Any = js.native
   
   /**
     * Add pointer device to DeviceInputSystem
@@ -21,61 +22,61 @@ trait DeviceInputSystem extends IDisposable {
     * @param currentX Current X at point of adding
     * @param currentY Current Y at point of adding
     */
-  var _addPointerDevice: js.Any = js.native
+  /* private */ var _addPointerDevice: js.Any = js.native
   
   /**
     * Checks for existing connections to devices and register them, if necessary
     * Currently handles gamepads and mouse
     */
-  var _checkForConnectedDevices: js.Any = js.native
+  /* private */ var _checkForConnectedDevices: js.Any = js.native
   
-  var _elementToAttachTo: js.Any = js.native
+  /* private */ var _elementToAttachTo: js.Any = js.native
   
-  var _gamepadConnectedEvent: js.Any = js.native
+  /* private */ var _gamepadConnectedEvent: js.Any = js.native
   
-  var _gamepadDisconnectedEvent: js.Any = js.native
+  /* private */ var _gamepadDisconnectedEvent: js.Any = js.native
   
-  var _gamepads: js.Any = js.native
+  /* private */ var _gamepads: js.Any = js.native
   
   /**
     * Gets DeviceType from the device name
     * @param deviceName Name of Device from DeviceInputSystem
     * @returns DeviceType enum value
     */
-  var _getGamepadDeviceType: js.Any = js.native
+  /* private */ var _getGamepadDeviceType: js.Any = js.native
   
   /**
     * Handle all actions that come from gamepad interaction
     */
-  var _handleGamepadActions: js.Any = js.native
+  /* private */ var _handleGamepadActions: js.Any = js.native
   
   /**
     * Handle all actions that come from keyboard interaction
     */
-  var _handleKeyActions: js.Any = js.native
+  /* private */ var _handleKeyActions: js.Any = js.native
   
   /**
     * Handle all actions that come from pointer interaction
     */
-  var _handlePointerActions: js.Any = js.native
+  /* private */ var _handlePointerActions: js.Any = js.native
   
-  var _inputs: js.Any = js.native
+  /* private */ var _inputs: js.Any = js.native
   
-  var _keyboardActive: js.Any = js.native
+  /* private */ var _keyboardActive: js.Any = js.native
   
-  var _keyboardDownEvent: js.Any = js.native
+  /* private */ var _keyboardDownEvent: js.Any = js.native
   
-  var _keyboardUpEvent: js.Any = js.native
+  /* private */ var _keyboardUpEvent: js.Any = js.native
   
-  var _onDeviceConnected: js.Any = js.native
+  /* private */ var _onDeviceConnected: js.Any = js.native
   
-  var _pointerActive: js.Any = js.native
+  /* private */ var _pointerActive: js.Any = js.native
   
-  var _pointerDownEvent: js.Any = js.native
+  /* private */ var _pointerDownEvent: js.Any = js.native
   
-  var _pointerMoveEvent: js.Any = js.native
+  /* private */ var _pointerMoveEvent: js.Any = js.native
   
-  var _pointerUpEvent: js.Any = js.native
+  /* private */ var _pointerUpEvent: js.Any = js.native
   
   /**
     * Add device and inputs to device array
@@ -83,14 +84,14 @@ trait DeviceInputSystem extends IDisposable {
     * @param deviceSlot "Slot" or index that device is referenced in
     * @param numberOfInputs Number of input entries to create for given device
     */
-  var _registerDevice: js.Any = js.native
+  /* private */ var _registerDevice: js.Any = js.native
   
   /**
     * Given a specific device name, remove that device from the device map
     * @param deviceType Enum specifiying device type
     * @param deviceSlot "Slot" or index that device is referenced in
     */
-  var _unregisterDevice: js.Any = js.native
+  /* private */ var _unregisterDevice: js.Any = js.native
   
   /**
     * Update all non-event based devices with each frame
@@ -98,7 +99,7 @@ trait DeviceInputSystem extends IDisposable {
     * @param deviceSlot "Slot" or index that device is referenced in
     * @param inputIndex Id of input to be checked
     */
-  var _updateDevice: js.Any = js.native
+  /* private */ var _updateDevice: js.Any = js.native
   
   /**
     * Returns onDeviceConnected callback property

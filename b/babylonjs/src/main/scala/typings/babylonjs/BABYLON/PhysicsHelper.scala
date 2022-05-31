@@ -2,15 +2,14 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PhysicsHelper extends StObject {
   
-  var _physicsEngine: js.Any = js.native
+  /* private */ var _physicsEngine: js.Any = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
   /**
     * Applies a radial explosion force
@@ -21,12 +20,6 @@ trait PhysicsHelper extends StObject {
     * @returns A physics radial explosion event, or null
     */
   def applyRadialExplosionForce(origin: Vector3, radiusOrEventOptions: Double): Nullable[PhysicsRadialExplosionEvent] = js.native
-  def applyRadialExplosionForce(
-    origin: Vector3,
-    radiusOrEventOptions: Double,
-    strength: js.UndefOr[scala.Nothing],
-    falloff: PhysicsRadialImpulseFalloff
-  ): Nullable[PhysicsRadialExplosionEvent] = js.native
   def applyRadialExplosionForce(origin: Vector3, radiusOrEventOptions: Double, strength: Double): Nullable[PhysicsRadialExplosionEvent] = js.native
   def applyRadialExplosionForce(
     origin: Vector3,
@@ -34,18 +27,24 @@ trait PhysicsHelper extends StObject {
     strength: Double,
     falloff: PhysicsRadialImpulseFalloff
   ): Nullable[PhysicsRadialExplosionEvent] = js.native
-  def applyRadialExplosionForce(origin: Vector3, radiusOrEventOptions: PhysicsRadialExplosionEventOptions): Nullable[PhysicsRadialExplosionEvent] = js.native
   def applyRadialExplosionForce(
     origin: Vector3,
-    radiusOrEventOptions: PhysicsRadialExplosionEventOptions,
-    strength: js.UndefOr[scala.Nothing],
+    radiusOrEventOptions: Double,
+    strength: Unit,
     falloff: PhysicsRadialImpulseFalloff
   ): Nullable[PhysicsRadialExplosionEvent] = js.native
+  def applyRadialExplosionForce(origin: Vector3, radiusOrEventOptions: PhysicsRadialExplosionEventOptions): Nullable[PhysicsRadialExplosionEvent] = js.native
   def applyRadialExplosionForce(origin: Vector3, radiusOrEventOptions: PhysicsRadialExplosionEventOptions, strength: Double): Nullable[PhysicsRadialExplosionEvent] = js.native
   def applyRadialExplosionForce(
     origin: Vector3,
     radiusOrEventOptions: PhysicsRadialExplosionEventOptions,
     strength: Double,
+    falloff: PhysicsRadialImpulseFalloff
+  ): Nullable[PhysicsRadialExplosionEvent] = js.native
+  def applyRadialExplosionForce(
+    origin: Vector3,
+    radiusOrEventOptions: PhysicsRadialExplosionEventOptions,
+    strength: Unit,
     falloff: PhysicsRadialImpulseFalloff
   ): Nullable[PhysicsRadialExplosionEvent] = js.native
   
@@ -58,12 +57,6 @@ trait PhysicsHelper extends StObject {
     * @returns A physics radial explosion event, or null
     */
   def applyRadialExplosionImpulse(origin: Vector3, radiusOrEventOptions: Double): Nullable[PhysicsRadialExplosionEvent] = js.native
-  def applyRadialExplosionImpulse(
-    origin: Vector3,
-    radiusOrEventOptions: Double,
-    strength: js.UndefOr[scala.Nothing],
-    falloff: PhysicsRadialImpulseFalloff
-  ): Nullable[PhysicsRadialExplosionEvent] = js.native
   def applyRadialExplosionImpulse(origin: Vector3, radiusOrEventOptions: Double, strength: Double): Nullable[PhysicsRadialExplosionEvent] = js.native
   def applyRadialExplosionImpulse(
     origin: Vector3,
@@ -71,18 +64,24 @@ trait PhysicsHelper extends StObject {
     strength: Double,
     falloff: PhysicsRadialImpulseFalloff
   ): Nullable[PhysicsRadialExplosionEvent] = js.native
-  def applyRadialExplosionImpulse(origin: Vector3, radiusOrEventOptions: PhysicsRadialExplosionEventOptions): Nullable[PhysicsRadialExplosionEvent] = js.native
   def applyRadialExplosionImpulse(
     origin: Vector3,
-    radiusOrEventOptions: PhysicsRadialExplosionEventOptions,
-    strength: js.UndefOr[scala.Nothing],
+    radiusOrEventOptions: Double,
+    strength: Unit,
     falloff: PhysicsRadialImpulseFalloff
   ): Nullable[PhysicsRadialExplosionEvent] = js.native
+  def applyRadialExplosionImpulse(origin: Vector3, radiusOrEventOptions: PhysicsRadialExplosionEventOptions): Nullable[PhysicsRadialExplosionEvent] = js.native
   def applyRadialExplosionImpulse(origin: Vector3, radiusOrEventOptions: PhysicsRadialExplosionEventOptions, strength: Double): Nullable[PhysicsRadialExplosionEvent] = js.native
   def applyRadialExplosionImpulse(
     origin: Vector3,
     radiusOrEventOptions: PhysicsRadialExplosionEventOptions,
     strength: Double,
+    falloff: PhysicsRadialImpulseFalloff
+  ): Nullable[PhysicsRadialExplosionEvent] = js.native
+  def applyRadialExplosionImpulse(
+    origin: Vector3,
+    radiusOrEventOptions: PhysicsRadialExplosionEventOptions,
+    strength: Unit,
     falloff: PhysicsRadialImpulseFalloff
   ): Nullable[PhysicsRadialExplosionEvent] = js.native
   
@@ -95,12 +94,6 @@ trait PhysicsHelper extends StObject {
     * @returns A physics gravitational field event, or null
     */
   def gravitationalField(origin: Vector3, radiusOrEventOptions: Double): Nullable[PhysicsGravitationalFieldEvent] = js.native
-  def gravitationalField(
-    origin: Vector3,
-    radiusOrEventOptions: Double,
-    strength: js.UndefOr[scala.Nothing],
-    falloff: PhysicsRadialImpulseFalloff
-  ): Nullable[PhysicsGravitationalFieldEvent] = js.native
   def gravitationalField(origin: Vector3, radiusOrEventOptions: Double, strength: Double): Nullable[PhysicsGravitationalFieldEvent] = js.native
   def gravitationalField(
     origin: Vector3,
@@ -108,18 +101,24 @@ trait PhysicsHelper extends StObject {
     strength: Double,
     falloff: PhysicsRadialImpulseFalloff
   ): Nullable[PhysicsGravitationalFieldEvent] = js.native
-  def gravitationalField(origin: Vector3, radiusOrEventOptions: PhysicsRadialExplosionEventOptions): Nullable[PhysicsGravitationalFieldEvent] = js.native
   def gravitationalField(
     origin: Vector3,
-    radiusOrEventOptions: PhysicsRadialExplosionEventOptions,
-    strength: js.UndefOr[scala.Nothing],
+    radiusOrEventOptions: Double,
+    strength: Unit,
     falloff: PhysicsRadialImpulseFalloff
   ): Nullable[PhysicsGravitationalFieldEvent] = js.native
+  def gravitationalField(origin: Vector3, radiusOrEventOptions: PhysicsRadialExplosionEventOptions): Nullable[PhysicsGravitationalFieldEvent] = js.native
   def gravitationalField(origin: Vector3, radiusOrEventOptions: PhysicsRadialExplosionEventOptions, strength: Double): Nullable[PhysicsGravitationalFieldEvent] = js.native
   def gravitationalField(
     origin: Vector3,
     radiusOrEventOptions: PhysicsRadialExplosionEventOptions,
     strength: Double,
+    falloff: PhysicsRadialImpulseFalloff
+  ): Nullable[PhysicsGravitationalFieldEvent] = js.native
+  def gravitationalField(
+    origin: Vector3,
+    radiusOrEventOptions: PhysicsRadialExplosionEventOptions,
+    strength: Unit,
     falloff: PhysicsRadialImpulseFalloff
   ): Nullable[PhysicsGravitationalFieldEvent] = js.native
   
@@ -133,29 +132,7 @@ trait PhysicsHelper extends StObject {
     * @returns A physics updraft event, or null
     */
   def updraft(origin: Vector3, radiusOrEventOptions: Double): Nullable[PhysicsUpdraftEvent] = js.native
-  def updraft(
-    origin: Vector3,
-    radiusOrEventOptions: Double,
-    strength: js.UndefOr[scala.Nothing],
-    height: js.UndefOr[scala.Nothing],
-    updraftMode: PhysicsUpdraftMode
-  ): Nullable[PhysicsUpdraftEvent] = js.native
-  def updraft(origin: Vector3, radiusOrEventOptions: Double, strength: js.UndefOr[scala.Nothing], height: Double): Nullable[PhysicsUpdraftEvent] = js.native
-  def updraft(
-    origin: Vector3,
-    radiusOrEventOptions: Double,
-    strength: js.UndefOr[scala.Nothing],
-    height: Double,
-    updraftMode: PhysicsUpdraftMode
-  ): Nullable[PhysicsUpdraftEvent] = js.native
   def updraft(origin: Vector3, radiusOrEventOptions: Double, strength: Double): Nullable[PhysicsUpdraftEvent] = js.native
-  def updraft(
-    origin: Vector3,
-    radiusOrEventOptions: Double,
-    strength: Double,
-    height: js.UndefOr[scala.Nothing],
-    updraftMode: PhysicsUpdraftMode
-  ): Nullable[PhysicsUpdraftEvent] = js.native
   def updraft(origin: Vector3, radiusOrEventOptions: Double, strength: Double, height: Double): Nullable[PhysicsUpdraftEvent] = js.native
   def updraft(
     origin: Vector3,
@@ -164,39 +141,34 @@ trait PhysicsHelper extends StObject {
     height: Double,
     updraftMode: PhysicsUpdraftMode
   ): Nullable[PhysicsUpdraftEvent] = js.native
-  def updraft(origin: Vector3, radiusOrEventOptions: PhysicsUpdraftEventOptions): Nullable[PhysicsUpdraftEvent] = js.native
   def updraft(
     origin: Vector3,
-    radiusOrEventOptions: PhysicsUpdraftEventOptions,
-    strength: js.UndefOr[scala.Nothing],
-    height: js.UndefOr[scala.Nothing],
+    radiusOrEventOptions: Double,
+    strength: Double,
+    height: Unit,
     updraftMode: PhysicsUpdraftMode
   ): Nullable[PhysicsUpdraftEvent] = js.native
+  def updraft(origin: Vector3, radiusOrEventOptions: Double, strength: Unit, height: Double): Nullable[PhysicsUpdraftEvent] = js.native
   def updraft(
     origin: Vector3,
-    radiusOrEventOptions: PhysicsUpdraftEventOptions,
-    strength: js.UndefOr[scala.Nothing],
-    height: Double
-  ): Nullable[PhysicsUpdraftEvent] = js.native
-  def updraft(
-    origin: Vector3,
-    radiusOrEventOptions: PhysicsUpdraftEventOptions,
-    strength: js.UndefOr[scala.Nothing],
+    radiusOrEventOptions: Double,
+    strength: Unit,
     height: Double,
     updraftMode: PhysicsUpdraftMode
   ): Nullable[PhysicsUpdraftEvent] = js.native
+  def updraft(
+    origin: Vector3,
+    radiusOrEventOptions: Double,
+    strength: Unit,
+    height: Unit,
+    updraftMode: PhysicsUpdraftMode
+  ): Nullable[PhysicsUpdraftEvent] = js.native
+  def updraft(origin: Vector3, radiusOrEventOptions: PhysicsUpdraftEventOptions): Nullable[PhysicsUpdraftEvent] = js.native
   def updraft(origin: Vector3, radiusOrEventOptions: PhysicsUpdraftEventOptions, strength: Double): Nullable[PhysicsUpdraftEvent] = js.native
   def updraft(
     origin: Vector3,
     radiusOrEventOptions: PhysicsUpdraftEventOptions,
     strength: Double,
-    height: js.UndefOr[scala.Nothing],
-    updraftMode: PhysicsUpdraftMode
-  ): Nullable[PhysicsUpdraftEvent] = js.native
-  def updraft(
-    origin: Vector3,
-    radiusOrEventOptions: PhysicsUpdraftEventOptions,
-    strength: Double,
     height: Double
   ): Nullable[PhysicsUpdraftEvent] = js.native
   def updraft(
@@ -204,6 +176,28 @@ trait PhysicsHelper extends StObject {
     radiusOrEventOptions: PhysicsUpdraftEventOptions,
     strength: Double,
     height: Double,
+    updraftMode: PhysicsUpdraftMode
+  ): Nullable[PhysicsUpdraftEvent] = js.native
+  def updraft(
+    origin: Vector3,
+    radiusOrEventOptions: PhysicsUpdraftEventOptions,
+    strength: Double,
+    height: Unit,
+    updraftMode: PhysicsUpdraftMode
+  ): Nullable[PhysicsUpdraftEvent] = js.native
+  def updraft(origin: Vector3, radiusOrEventOptions: PhysicsUpdraftEventOptions, strength: Unit, height: Double): Nullable[PhysicsUpdraftEvent] = js.native
+  def updraft(
+    origin: Vector3,
+    radiusOrEventOptions: PhysicsUpdraftEventOptions,
+    strength: Unit,
+    height: Double,
+    updraftMode: PhysicsUpdraftMode
+  ): Nullable[PhysicsUpdraftEvent] = js.native
+  def updraft(
+    origin: Vector3,
+    radiusOrEventOptions: PhysicsUpdraftEventOptions,
+    strength: Unit,
+    height: Unit,
     updraftMode: PhysicsUpdraftMode
   ): Nullable[PhysicsUpdraftEvent] = js.native
   
@@ -217,16 +211,11 @@ trait PhysicsHelper extends StObject {
     * A physics vortex event or null
     */
   def vortex(origin: Vector3, radiusOrEventOptions: Double): Nullable[PhysicsVortexEvent] = js.native
-  def vortex(origin: Vector3, radiusOrEventOptions: Double, strength: js.UndefOr[scala.Nothing], height: Double): Nullable[PhysicsVortexEvent] = js.native
   def vortex(origin: Vector3, radiusOrEventOptions: Double, strength: Double): Nullable[PhysicsVortexEvent] = js.native
   def vortex(origin: Vector3, radiusOrEventOptions: Double, strength: Double, height: Double): Nullable[PhysicsVortexEvent] = js.native
+  def vortex(origin: Vector3, radiusOrEventOptions: Double, strength: Unit, height: Double): Nullable[PhysicsVortexEvent] = js.native
   def vortex(origin: Vector3, radiusOrEventOptions: PhysicsVortexEventOptions): Nullable[PhysicsVortexEvent] = js.native
-  def vortex(
-    origin: Vector3,
-    radiusOrEventOptions: PhysicsVortexEventOptions,
-    strength: js.UndefOr[scala.Nothing],
-    height: Double
-  ): Nullable[PhysicsVortexEvent] = js.native
   def vortex(origin: Vector3, radiusOrEventOptions: PhysicsVortexEventOptions, strength: Double): Nullable[PhysicsVortexEvent] = js.native
   def vortex(origin: Vector3, radiusOrEventOptions: PhysicsVortexEventOptions, strength: Double, height: Double): Nullable[PhysicsVortexEvent] = js.native
+  def vortex(origin: Vector3, radiusOrEventOptions: PhysicsVortexEventOptions, strength: Unit, height: Double): Nullable[PhysicsVortexEvent] = js.native
 }

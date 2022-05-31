@@ -3,7 +3,6 @@ package typings.babylonjs.indexMod
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "PlaneDragGizmo")
@@ -23,7 +22,7 @@ class PlaneDragGizmo protected ()
   ) = this()
   def this(
     dragPlaneNormal: typings.babylonjs.mathVectorMod.Vector3,
-    color: js.UndefOr[scala.Nothing],
+    color: Unit,
     gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
   ) = this()
   def this(
@@ -33,20 +32,20 @@ class PlaneDragGizmo protected ()
   ) = this()
   def this(
     dragPlaneNormal: typings.babylonjs.mathVectorMod.Vector3,
-    color: js.UndefOr[scala.Nothing],
-    gizmoLayer: js.UndefOr[scala.Nothing],
+    color: Unit,
+    gizmoLayer: Unit,
     parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]
   ) = this()
   def this(
     dragPlaneNormal: typings.babylonjs.mathVectorMod.Vector3,
-    color: js.UndefOr[scala.Nothing],
+    color: Unit,
     gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer,
     parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]
   ) = this()
   def this(
     dragPlaneNormal: typings.babylonjs.mathVectorMod.Vector3,
     color: typings.babylonjs.mathColorMod.Color3,
-    gizmoLayer: js.UndefOr[scala.Nothing],
+    gizmoLayer: Unit,
     parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]
   ) = this()
   def this(
@@ -59,11 +58,13 @@ class PlaneDragGizmo protected ()
 /* static members */
 object PlaneDragGizmo {
   
-  /** @hidden */
-  @JSImport("babylonjs/index", "PlaneDragGizmo._CreatePlane")
+  @JSImport("babylonjs/index", "PlaneDragGizmo")
   @js.native
-  def _CreatePlane(
+  val ^ : js.Any = js.native
+  
+  /** @hidden */
+  inline def _CreatePlane(
     scene: typings.babylonjs.sceneMod.Scene,
     material: typings.babylonjs.standardMaterialMod.StandardMaterial
-  ): typings.babylonjs.transformNodeMod.TransformNode = js.native
+  ): typings.babylonjs.transformNodeMod.TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreatePlane")(scene.asInstanceOf[js.Any], material.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.transformNodeMod.TransformNode]
 }

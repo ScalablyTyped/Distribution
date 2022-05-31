@@ -11,6 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("@carbon/colors", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@carbon/colors", "black")
   @js.native
   val black: String = js.native
@@ -768,14 +772,7 @@ object mod {
   @js.native
   val red90: String = js.native
   
-  object rgba {
-    
-    inline def apply(hexcode: String, opacity: Double): String = (^.asInstanceOf[js.Dynamic].apply(hexcode.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    @JSImport("@carbon/colors", "rgba")
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def rgba(hexcode: String, opacity: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgba")(hexcode.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any])).asInstanceOf[String]
   
   object teal {
     

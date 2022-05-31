@@ -2,31 +2,28 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPropertyDescriptionForEdition extends StObject {
   
   /** display name of the property */
-  var displayName: String = js.native
+  var displayName: String
   
   /** group of the property - all properties with the same group value will be displayed in a specific section */
-  var groupName: String = js.native
+  var groupName: String
   
   /** options for the property */
-  var options: IEditablePropertyOption = js.native
+  var options: IEditablePropertyOption
   
   /** name of the property */
-  var propertyName: String = js.native
+  var propertyName: String
   
   /** type of the property */
-  var `type`: PropertyTypeForEdition = js.native
+  var `type`: PropertyTypeForEdition
 }
 object IPropertyDescriptionForEdition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     displayName: String,
     groupName: String,
     options: IEditablePropertyOption,
@@ -38,22 +35,16 @@ object IPropertyDescriptionForEdition {
     __obj.asInstanceOf[IPropertyDescriptionForEdition]
   }
   
-  @scala.inline
-  implicit class IPropertyDescriptionForEditionMutableBuilder[Self <: IPropertyDescriptionForEdition] (val x: Self) extends AnyVal {
+  extension [Self <: IPropertyDescriptionForEdition](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: IEditablePropertyOption): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: IEditablePropertyOption): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
+    inline def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: PropertyTypeForEdition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PropertyTypeForEdition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -3,77 +3,59 @@ package typings.babylonjs.anon
 import typings.babylonjs.BABYLON.Vector4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiameterFrontUVs extends StObject {
   
-  var backUVs: js.UndefOr[Vector4] = js.native
+  var backUVs: js.UndefOr[Vector4] = js.undefined
   
-  var diameter: js.UndefOr[Double] = js.native
+  var diameter: js.UndefOr[Double] = js.undefined
   
-  var frontUVs: js.UndefOr[Vector4] = js.native
+  var frontUVs: js.UndefOr[Vector4] = js.undefined
   
-  var sideOrientation: js.UndefOr[Double] = js.native
+  var sideOrientation: js.UndefOr[Double] = js.undefined
   
-  var tessellation: js.UndefOr[Double] = js.native
+  var tessellation: js.UndefOr[Double] = js.undefined
   
-  var thickness: js.UndefOr[Double] = js.native
+  var thickness: js.UndefOr[Double] = js.undefined
   
-  var updatable: js.UndefOr[Boolean] = js.native
+  var updatable: js.UndefOr[Boolean] = js.undefined
 }
 object DiameterFrontUVs {
   
-  @scala.inline
-  def apply(): DiameterFrontUVs = {
+  inline def apply(): DiameterFrontUVs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiameterFrontUVs]
   }
   
-  @scala.inline
-  implicit class DiameterFrontUVsMutableBuilder[Self <: DiameterFrontUVs] (val x: Self) extends AnyVal {
+  extension [Self <: DiameterFrontUVs](x: Self) {
     
-    @scala.inline
-    def setBackUVs(value: Vector4): Self = StObject.set(x, "backUVs", value.asInstanceOf[js.Any])
+    inline def setBackUVs(value: Vector4): Self = StObject.set(x, "backUVs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackUVsUndefined: Self = StObject.set(x, "backUVs", js.undefined)
+    inline def setBackUVsUndefined: Self = StObject.set(x, "backUVs", js.undefined)
     
-    @scala.inline
-    def setDiameter(value: Double): Self = StObject.set(x, "diameter", value.asInstanceOf[js.Any])
+    inline def setDiameter(value: Double): Self = StObject.set(x, "diameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiameterUndefined: Self = StObject.set(x, "diameter", js.undefined)
+    inline def setDiameterUndefined: Self = StObject.set(x, "diameter", js.undefined)
     
-    @scala.inline
-    def setFrontUVs(value: Vector4): Self = StObject.set(x, "frontUVs", value.asInstanceOf[js.Any])
+    inline def setFrontUVs(value: Vector4): Self = StObject.set(x, "frontUVs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrontUVsUndefined: Self = StObject.set(x, "frontUVs", js.undefined)
+    inline def setFrontUVsUndefined: Self = StObject.set(x, "frontUVs", js.undefined)
     
-    @scala.inline
-    def setSideOrientation(value: Double): Self = StObject.set(x, "sideOrientation", value.asInstanceOf[js.Any])
+    inline def setSideOrientation(value: Double): Self = StObject.set(x, "sideOrientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSideOrientationUndefined: Self = StObject.set(x, "sideOrientation", js.undefined)
+    inline def setSideOrientationUndefined: Self = StObject.set(x, "sideOrientation", js.undefined)
     
-    @scala.inline
-    def setTessellation(value: Double): Self = StObject.set(x, "tessellation", value.asInstanceOf[js.Any])
+    inline def setTessellation(value: Double): Self = StObject.set(x, "tessellation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTessellationUndefined: Self = StObject.set(x, "tessellation", js.undefined)
+    inline def setTessellationUndefined: Self = StObject.set(x, "tessellation", js.undefined)
     
-    @scala.inline
-    def setThickness(value: Double): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
+    inline def setThickness(value: Double): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThicknessUndefined: Self = StObject.set(x, "thickness", js.undefined)
+    inline def setThicknessUndefined: Self = StObject.set(x, "thickness", js.undefined)
     
-    @scala.inline
-    def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
+    inline def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatableUndefined: Self = StObject.set(x, "updatable", js.undefined)
+    inline def setUpdatableUndefined: Self = StObject.set(x, "updatable", js.undefined)
   }
 }

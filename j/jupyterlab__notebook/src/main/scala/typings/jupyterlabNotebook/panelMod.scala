@@ -1,6 +1,13 @@
 package typings.jupyterlabNotebook
 
 import typings.jupyterlabApputils.sessioncontextMod.ISessionContext
+import typings.jupyterlabCells.headerfooterMod.ICellFooter
+import typings.jupyterlabCells.headerfooterMod.ICellHeader
+import typings.jupyterlabCells.inputareaMod.IInputPrompt
+import typings.jupyterlabCells.mod.CodeCell
+import typings.jupyterlabCells.mod.MarkdownCell
+import typings.jupyterlabCells.mod.RawCell
+import typings.jupyterlabCodeeditor.editorMod.CodeEditor.Factory
 import typings.jupyterlabDocregistry.defaultMod.DocumentWidget.IOptions
 import typings.jupyterlabDocregistry.mod.DocumentWidget
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.Context
@@ -8,12 +15,14 @@ import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.SaveState
 import typings.jupyterlabNotebook.modelMod.INotebookModel
 import typings.jupyterlabNotebook.panelMod.NotebookPanel.IConfig
 import typings.jupyterlabNotebook.widgetMod.Notebook
+import typings.jupyterlabNotebook.widgetMod.StaticNotebook
 import typings.jupyterlabNotebook.widgetMod.StaticNotebook.IEditorConfig
 import typings.jupyterlabNotebook.widgetMod.StaticNotebook.INotebookConfig
+import typings.jupyterlabOutputarea.widgetMod.IOutputPrompt
+import typings.jupyterlabOutputarea.widgetMod.IStdin
 import typings.luminoCoreutils.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object panelMod {
@@ -30,26 +39,26 @@ object panelMod {
       * Whether we are currently in a series of autorestarts we have already
       * notified the user about.
       */
-    var _autorestarting: js.Any = js.native
+    /* private */ var _autorestarting: js.Any = js.native
     
     /**
       * Handle a change in the kernel by updating the document metadata.
       */
-    var _onKernelChanged: js.Any = js.native
+    /* private */ var _onKernelChanged: js.Any = js.native
     
     def _onSave(sender: Context, state: SaveState): Unit = js.native
     
-    var _onSessionStatusChanged: js.Any = js.native
+    /* private */ var _onSessionStatusChanged: js.Any = js.native
     
     /**
       * Update the kernel language.
       */
-    var _updateLanguage: js.Any = js.native
+    /* private */ var _updateLanguage: js.Any = js.native
     
     /**
       * Update the kernel spec.
       */
-    var _updateSpec: js.Any = js.native
+    /* private */ var _updateSpec: js.Any = js.native
     
     /**
       * The notebook used by the widget.
@@ -88,19 +97,86 @@ object panelMod {
       extends typings.jupyterlabNotebook.widgetMod.Notebook.ContentFactory
          with IContentFactory {
       def this(options: typings.jupyterlabCells.widgetMod.Cell.ContentFactory.IOptions) = this()
+      
+      /**
+        * Create a new cell header for the parent widget.
+        */
+      /* CompleteClass */
+      /* InferMemberOverrides */
+      override def createCellFooter(): ICellFooter = js.native
+      
+      /**
+        * Create a new cell header for the parent widget.
+        */
+      /* CompleteClass */
+      /* InferMemberOverrides */
+      override def createCellHeader(): ICellHeader = js.native
+      
+      /**
+        * Create a new code cell widget.
+        */
+      /* CompleteClass */
+      override def createCodeCell(options: typings.jupyterlabCells.widgetMod.CodeCell.IOptions, parent: StaticNotebook): CodeCell = js.native
+      
+      /**
+        * Create an input prompt.
+        */
+      /* InferMemberOverrides */
+      override def createInputPrompt(): IInputPrompt = js.native
+      
+      /**
+        * Create a new markdown cell widget.
+        */
+      /* CompleteClass */
+      override def createMarkdownCell(options: typings.jupyterlabCells.widgetMod.MarkdownCell.IOptions, parent: StaticNotebook): MarkdownCell = js.native
+      
+      /**
+        * Create a new content area for the panel.
+        */
+      /* CompleteClass */
+      override def createNotebook(options: typings.jupyterlabNotebook.widgetMod.Notebook.IOptions): Notebook = js.native
+      
+      /**
+        * Create an output prompt.
+        */
+      /* CompleteClass */
+      /* InferMemberOverrides */
+      override def createOutputPrompt(): IOutputPrompt = js.native
+      
+      /**
+        * Create a new raw cell widget.
+        */
+      /* CompleteClass */
+      override def createRawCell(options: typings.jupyterlabCells.widgetMod.RawCell.IOptions, parent: StaticNotebook): RawCell = js.native
+      
+      /**
+        * Create an stdin widget.
+        */
+      /* CompleteClass */
+      /* InferMemberOverrides */
+      override def createStdin(options: typings.jupyterlabOutputarea.widgetMod.Stdin.IOptions): IStdin = js.native
+      
+      /**
+        * The editor factory we need to include in `CodeEditorWratter.IOptions`.
+        *
+        * This is a separate readonly attribute rather than a factory method as we need
+        * to pass it around.
+        */
+      /* InferMemberOverrides */
+      override val editorFactory: Factory = js.native
     }
     
     /**
       * A content factory interface for NotebookPanel.
       */
-    @js.native
     trait IContentFactory
-      extends typings.jupyterlabNotebook.widgetMod.StaticNotebook.IContentFactory {
+      extends StObject
+         with typings.jupyterlabNotebook.widgetMod.StaticNotebook.IContentFactory {
       
       /**
         * Create a new content area for the panel.
         */
-      def createNotebook(options: typings.jupyterlabNotebook.widgetMod.Notebook.IOptions): Notebook = js.native
+      def createNotebook(options: typings.jupyterlabNotebook.widgetMod.Notebook.IOptions): Notebook
     }
     object IContentFactory {
       
@@ -111,11 +187,9 @@ object panelMod {
       @js.native
       val ^ : Token[IContentFactory] = js.native
       
-      @scala.inline
-      implicit class IContentFactoryMutableBuilder[Self <: IContentFactory] (val x: Self) extends AnyVal {
+      extension [Self <: IContentFactory](x: Self) {
         
-        @scala.inline
-        def setCreateNotebook(value: typings.jupyterlabNotebook.widgetMod.Notebook.IOptions => Notebook): Self = StObject.set(x, "createNotebook", js.Any.fromFunction1(value))
+        inline def setCreateNotebook(value: typings.jupyterlabNotebook.widgetMod.Notebook.IOptions => Notebook): Self = StObject.set(x, "createNotebook", js.Any.fromFunction1(value))
       }
     }
     
@@ -129,43 +203,37 @@ object panelMod {
     /**
       * Notebook config interface for NotebookPanel
       */
-    @js.native
     trait IConfig extends StObject {
       
       /**
         * A config object for cell editors
         */
-      var editorConfig: IEditorConfig = js.native
+      var editorConfig: IEditorConfig
       
       /**
         * Whether to shut down the kernel when closing the panel or not
         */
-      var kernelShutdown: Boolean = js.native
+      var kernelShutdown: Boolean
       
       /**
         * A config object for notebook widget
         */
-      var notebookConfig: INotebookConfig = js.native
+      var notebookConfig: INotebookConfig
     }
     object IConfig {
       
-      @scala.inline
-      def apply(editorConfig: IEditorConfig, kernelShutdown: Boolean, notebookConfig: INotebookConfig): IConfig = {
+      inline def apply(editorConfig: IEditorConfig, kernelShutdown: Boolean, notebookConfig: INotebookConfig): IConfig = {
         val __obj = js.Dynamic.literal(editorConfig = editorConfig.asInstanceOf[js.Any], kernelShutdown = kernelShutdown.asInstanceOf[js.Any], notebookConfig = notebookConfig.asInstanceOf[js.Any])
         __obj.asInstanceOf[IConfig]
       }
       
-      @scala.inline
-      implicit class IConfigMutableBuilder[Self <: IConfig] (val x: Self) extends AnyVal {
+      extension [Self <: IConfig](x: Self) {
         
-        @scala.inline
-        def setEditorConfig(value: IEditorConfig): Self = StObject.set(x, "editorConfig", value.asInstanceOf[js.Any])
+        inline def setEditorConfig(value: IEditorConfig): Self = StObject.set(x, "editorConfig", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKernelShutdown(value: Boolean): Self = StObject.set(x, "kernelShutdown", value.asInstanceOf[js.Any])
+        inline def setKernelShutdown(value: Boolean): Self = StObject.set(x, "kernelShutdown", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNotebookConfig(value: INotebookConfig): Self = StObject.set(x, "notebookConfig", value.asInstanceOf[js.Any])
+        inline def setNotebookConfig(value: INotebookConfig): Self = StObject.set(x, "notebookConfig", value.asInstanceOf[js.Any])
       }
     }
   }

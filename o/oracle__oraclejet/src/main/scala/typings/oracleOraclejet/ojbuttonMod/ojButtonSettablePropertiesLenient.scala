@@ -8,58 +8,46 @@ import typings.oracleOraclejet.oracleOraclejetStrings.icons
 import typings.oracleOraclejet.oracleOraclejetStrings.outlined
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojbutton.ojButtonSettableProperties> */
-@js.native
 trait ojButtonSettablePropertiesLenient
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var chroming: js.UndefOr[full | half | outlined] = js.native
+  var chroming: js.UndefOr[full | half | outlined] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var display: js.UndefOr[all | icons] = js.native
+  var display: js.UndefOr[all | icons] = js.undefined
   
-  var translations: js.UndefOr[js.Object | Null] = js.native
+  var translations: js.UndefOr[js.Object | Null] = js.undefined
 }
 object ojButtonSettablePropertiesLenient {
   
-  @scala.inline
-  def apply(): ojButtonSettablePropertiesLenient = {
+  inline def apply(): ojButtonSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ojButtonSettablePropertiesLenient]
   }
   
-  @scala.inline
-  implicit class ojButtonSettablePropertiesLenientMutableBuilder[Self <: ojButtonSettablePropertiesLenient] (val x: Self) extends AnyVal {
+  extension [Self <: ojButtonSettablePropertiesLenient](x: Self) {
     
-    @scala.inline
-    def setChroming(value: full | half | outlined): Self = StObject.set(x, "chroming", value.asInstanceOf[js.Any])
+    inline def setChroming(value: full | half | outlined): Self = StObject.set(x, "chroming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChromingUndefined: Self = StObject.set(x, "chroming", js.undefined)
+    inline def setChromingUndefined: Self = StObject.set(x, "chroming", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setDisplay(value: all | icons): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: all | icons): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
-    @scala.inline
-    def setTranslations(value: js.Object): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+    inline def setTranslations(value: js.Object): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslationsNull: Self = StObject.set(x, "translations", null)
+    inline def setTranslationsNull: Self = StObject.set(x, "translations", null)
     
-    @scala.inline
-    def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+    inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
   }
 }

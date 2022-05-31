@@ -2,31 +2,22 @@ package typings.oracleOraclejet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ojtranslationMod {
   
-  @JSImport("@oracle/oraclejet/ojtranslation", "applyParameters")
+  @JSImport("@oracle/oraclejet/ojtranslation", JSImport.Namespace)
   @js.native
-  def applyParameters(pattern: String, parameters: js.Array[_]): String | Null = js.native
-  @JSImport("@oracle/oraclejet/ojtranslation", "applyParameters")
-  @js.native
-  def applyParameters(pattern: String, parameters: js.Object): String | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@oracle/oraclejet/ojtranslation", "getComponentTranslations")
-  @js.native
-  def getComponentTranslations(componentName: String): js.Object = js.native
+  inline def applyParameters(pattern: String, parameters: js.Array[js.Any]): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("applyParameters")(pattern.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def applyParameters(pattern: String, parameters: js.Object): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("applyParameters")(pattern.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  @JSImport("@oracle/oraclejet/ojtranslation", "getResource")
-  @js.native
-  def getResource(key: String): js.Object | String | Null = js.native
+  inline def getComponentTranslations(componentName: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponentTranslations")(componentName.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
-  @JSImport("@oracle/oraclejet/ojtranslation", "getTranslatedString")
-  @js.native
-  def getTranslatedString(key: String, var_args: (String | js.Object | js.Array[_])*): String = js.native
+  inline def getResource(key: String): js.Object | String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getResource")(key.asInstanceOf[js.Any]).asInstanceOf[js.Object | String | Null]
   
-  @JSImport("@oracle/oraclejet/ojtranslation", "setBundle")
-  @js.native
-  def setBundle(bundle: js.Object): Unit = js.native
+  inline def getTranslatedString(key: String, var_args: (String | js.Object | js.Array[js.Any])*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTranslatedString")(key.asInstanceOf[js.Any], var_args.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def setBundle(bundle: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBundle")(bundle.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

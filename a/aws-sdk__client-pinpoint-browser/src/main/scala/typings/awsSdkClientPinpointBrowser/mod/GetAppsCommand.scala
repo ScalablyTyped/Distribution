@@ -1,5 +1,6 @@
 package typings.awsSdkClientPinpointBrowser.mod
 
+import typings.awsSdkClientPinpointBrowser.typesGetAppsInputMod.GetAppsInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class GetAppsCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.getAppsCommandMod.GetAppsCommand {
-  def this(input: typings.awsSdkClientPinpointBrowser.typesGetAppsInputMod.GetAppsInput) = this()
+  def this(input: GetAppsInput) = this()
 }

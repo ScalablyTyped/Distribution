@@ -6,7 +6,6 @@ import typings.babylonjs.transformNodeMod.TransformNode
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object axesViewerMod {
@@ -25,76 +24,78 @@ object axesViewerMod {
       */
     def this(scene: Scene) = this()
     def this(scene: Scene, scaleLines: Double) = this()
-    def this(scene: Scene, scaleLines: js.UndefOr[scala.Nothing], renderingGroupId: Nullable[Double]) = this()
     def this(scene: Scene, scaleLines: Double, renderingGroupId: Nullable[Double]) = this()
-    def this(
-      scene: Scene,
-      scaleLines: js.UndefOr[scala.Nothing],
-      renderingGroupId: js.UndefOr[Nullable[Double]],
-      xAxis: TransformNode
-    ) = this()
+    def this(scene: Scene, scaleLines: Unit, renderingGroupId: Nullable[Double]) = this()
+    def this(scene: Scene, scaleLines: Double, renderingGroupId: Unit, xAxis: TransformNode) = this()
+    def this(scene: Scene, scaleLines: Double, renderingGroupId: Nullable[Double], xAxis: TransformNode) = this()
+    def this(scene: Scene, scaleLines: Unit, renderingGroupId: Unit, xAxis: TransformNode) = this()
+    def this(scene: Scene, scaleLines: Unit, renderingGroupId: Nullable[Double], xAxis: TransformNode) = this()
+    def this(scene: Scene, scaleLines: Double, renderingGroupId: Unit, xAxis: Unit, yAxis: TransformNode) = this()
     def this(
       scene: Scene,
       scaleLines: Double,
-      renderingGroupId: js.UndefOr[Nullable[Double]],
-      xAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: js.UndefOr[scala.Nothing],
-      renderingGroupId: js.UndefOr[Nullable[Double]],
-      xAxis: js.UndefOr[scala.Nothing],
-      yAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: js.UndefOr[scala.Nothing],
-      renderingGroupId: js.UndefOr[Nullable[Double]],
+      renderingGroupId: Unit,
       xAxis: TransformNode,
       yAxis: TransformNode
     ) = this()
     def this(
       scene: Scene,
       scaleLines: Double,
-      renderingGroupId: js.UndefOr[Nullable[Double]],
-      xAxis: js.UndefOr[scala.Nothing],
+      renderingGroupId: Nullable[Double],
+      xAxis: Unit,
       yAxis: TransformNode
     ) = this()
     def this(
       scene: Scene,
       scaleLines: Double,
-      renderingGroupId: js.UndefOr[Nullable[Double]],
+      renderingGroupId: Nullable[Double],
+      xAxis: TransformNode,
+      yAxis: TransformNode
+    ) = this()
+    def this(scene: Scene, scaleLines: Unit, renderingGroupId: Unit, xAxis: Unit, yAxis: TransformNode) = this()
+    def this(scene: Scene, scaleLines: Unit, renderingGroupId: Unit, xAxis: TransformNode, yAxis: TransformNode) = this()
+    def this(
+      scene: Scene,
+      scaleLines: Unit,
+      renderingGroupId: Nullable[Double],
+      xAxis: Unit,
+      yAxis: TransformNode
+    ) = this()
+    def this(
+      scene: Scene,
+      scaleLines: Unit,
+      renderingGroupId: Nullable[Double],
       xAxis: TransformNode,
       yAxis: TransformNode
     ) = this()
     def this(
       scene: Scene,
-      scaleLines: js.UndefOr[scala.Nothing],
-      renderingGroupId: js.UndefOr[Nullable[Double]],
-      xAxis: js.UndefOr[scala.Nothing],
-      yAxis: js.UndefOr[scala.Nothing],
+      scaleLines: Double,
+      renderingGroupId: Unit,
+      xAxis: Unit,
+      yAxis: Unit,
       zAxis: TransformNode
     ) = this()
     def this(
       scene: Scene,
-      scaleLines: js.UndefOr[scala.Nothing],
-      renderingGroupId: js.UndefOr[Nullable[Double]],
-      xAxis: js.UndefOr[scala.Nothing],
+      scaleLines: Double,
+      renderingGroupId: Unit,
+      xAxis: Unit,
       yAxis: TransformNode,
       zAxis: TransformNode
     ) = this()
     def this(
       scene: Scene,
-      scaleLines: js.UndefOr[scala.Nothing],
-      renderingGroupId: js.UndefOr[Nullable[Double]],
+      scaleLines: Double,
+      renderingGroupId: Unit,
       xAxis: TransformNode,
-      yAxis: js.UndefOr[scala.Nothing],
+      yAxis: Unit,
       zAxis: TransformNode
     ) = this()
     def this(
       scene: Scene,
-      scaleLines: js.UndefOr[scala.Nothing],
-      renderingGroupId: js.UndefOr[Nullable[Double]],
+      scaleLines: Double,
+      renderingGroupId: Unit,
       xAxis: TransformNode,
       yAxis: TransformNode,
       zAxis: TransformNode
@@ -102,45 +103,109 @@ object axesViewerMod {
     def this(
       scene: Scene,
       scaleLines: Double,
-      renderingGroupId: js.UndefOr[Nullable[Double]],
-      xAxis: js.UndefOr[scala.Nothing],
-      yAxis: js.UndefOr[scala.Nothing],
+      renderingGroupId: Nullable[Double],
+      xAxis: Unit,
+      yAxis: Unit,
       zAxis: TransformNode
     ) = this()
     def this(
       scene: Scene,
       scaleLines: Double,
-      renderingGroupId: js.UndefOr[Nullable[Double]],
-      xAxis: js.UndefOr[scala.Nothing],
+      renderingGroupId: Nullable[Double],
+      xAxis: Unit,
       yAxis: TransformNode,
       zAxis: TransformNode
     ) = this()
     def this(
       scene: Scene,
       scaleLines: Double,
-      renderingGroupId: js.UndefOr[Nullable[Double]],
+      renderingGroupId: Nullable[Double],
       xAxis: TransformNode,
-      yAxis: js.UndefOr[scala.Nothing],
+      yAxis: Unit,
       zAxis: TransformNode
     ) = this()
     def this(
       scene: Scene,
       scaleLines: Double,
-      renderingGroupId: js.UndefOr[Nullable[Double]],
+      renderingGroupId: Nullable[Double],
+      xAxis: TransformNode,
+      yAxis: TransformNode,
+      zAxis: TransformNode
+    ) = this()
+    def this(
+      scene: Scene,
+      scaleLines: Unit,
+      renderingGroupId: Unit,
+      xAxis: Unit,
+      yAxis: Unit,
+      zAxis: TransformNode
+    ) = this()
+    def this(
+      scene: Scene,
+      scaleLines: Unit,
+      renderingGroupId: Unit,
+      xAxis: Unit,
+      yAxis: TransformNode,
+      zAxis: TransformNode
+    ) = this()
+    def this(
+      scene: Scene,
+      scaleLines: Unit,
+      renderingGroupId: Unit,
+      xAxis: TransformNode,
+      yAxis: Unit,
+      zAxis: TransformNode
+    ) = this()
+    def this(
+      scene: Scene,
+      scaleLines: Unit,
+      renderingGroupId: Unit,
+      xAxis: TransformNode,
+      yAxis: TransformNode,
+      zAxis: TransformNode
+    ) = this()
+    def this(
+      scene: Scene,
+      scaleLines: Unit,
+      renderingGroupId: Nullable[Double],
+      xAxis: Unit,
+      yAxis: Unit,
+      zAxis: TransformNode
+    ) = this()
+    def this(
+      scene: Scene,
+      scaleLines: Unit,
+      renderingGroupId: Nullable[Double],
+      xAxis: Unit,
+      yAxis: TransformNode,
+      zAxis: TransformNode
+    ) = this()
+    def this(
+      scene: Scene,
+      scaleLines: Unit,
+      renderingGroupId: Nullable[Double],
+      xAxis: TransformNode,
+      yAxis: Unit,
+      zAxis: TransformNode
+    ) = this()
+    def this(
+      scene: Scene,
+      scaleLines: Unit,
+      renderingGroupId: Nullable[Double],
       xAxis: TransformNode,
       yAxis: TransformNode,
       zAxis: TransformNode
     ) = this()
     
-    var _instanced: js.Any = js.native
+    /* private */ var _instanced: js.Any = js.native
     
-    var _scaleLinesFactor: js.Any = js.native
+    /* private */ var _scaleLinesFactor: js.Any = js.native
     
-    var _xAxis: js.Any = js.native
+    /* private */ var _xAxis: js.Any = js.native
     
-    var _yAxis: js.Any = js.native
+    /* private */ var _yAxis: js.Any = js.native
     
-    var _zAxis: js.Any = js.native
+    /* private */ var _zAxis: js.Any = js.native
     
     /**
       * Creates an instance of this axes viewer.
@@ -189,7 +254,6 @@ object axesViewerMod {
     @JSImport("babylonjs/Debug/axesViewer", "AxesViewer._SetRenderingGroupId")
     @js.native
     def _SetRenderingGroupId: js.Any = js.native
-    @scala.inline
-    def _SetRenderingGroupId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SetRenderingGroupId")(x.asInstanceOf[js.Any])
+    inline def _SetRenderingGroupId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SetRenderingGroupId")(x.asInstanceOf[js.Any])
   }
 }

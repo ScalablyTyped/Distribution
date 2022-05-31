@@ -4,7 +4,6 @@ import typings.babylonjs.anon.RemoveAttributes
 import typings.babylonjs.anon.RepeatKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,8 +26,8 @@ trait NodeMaterialBuildState extends StObject {
   def _emitCodeFromInclude(includeName: String, comments: String, options: RepeatKey): String = js.native
   
   /** @hidden */
-  def _emitExtension(name: String, extension: String): Unit = js.native
-  def _emitExtension(name: String, extension: String, define: String): Unit = js.native
+  def _emitExtension(name: String, `extension`: String): Unit = js.native
+  def _emitExtension(name: String, `extension`: String, define: String): Unit = js.native
   
   /** @hidden */
   def _emitFloat(value: Double): String = js.native
@@ -38,21 +37,21 @@ trait NodeMaterialBuildState extends StObject {
   
   /** @hidden */
   def _emitFunctionFromInclude(includeName: String, comments: String): Unit = js.native
-  def _emitFunctionFromInclude(includeName: String, comments: String, options: js.UndefOr[scala.Nothing], storeKey: String): Unit = js.native
+  def _emitFunctionFromInclude(includeName: String, comments: String, options: Unit, storeKey: String): Unit = js.native
   def _emitFunctionFromInclude(includeName: String, comments: String, options: RemoveAttributes): Unit = js.native
   def _emitFunctionFromInclude(includeName: String, comments: String, options: RemoveAttributes, storeKey: String): Unit = js.native
   
   /** @hidden */
   def _emitUniformFromString(name: String, `type`: String): Unit = js.native
-  def _emitUniformFromString(name: String, `type`: String, define: js.UndefOr[scala.Nothing], notDefine: Boolean): Unit = js.native
   def _emitUniformFromString(name: String, `type`: String, define: String): Unit = js.native
   def _emitUniformFromString(name: String, `type`: String, define: String, notDefine: Boolean): Unit = js.native
+  def _emitUniformFromString(name: String, `type`: String, define: Unit, notDefine: Boolean): Unit = js.native
   
   /** @hidden */
   def _emitVaryingFromString(name: String, `type`: String): Boolean = js.native
-  def _emitVaryingFromString(name: String, `type`: String, define: js.UndefOr[scala.Nothing], notDefine: Boolean): Boolean = js.native
   def _emitVaryingFromString(name: String, `type`: String, define: String): Boolean = js.native
   def _emitVaryingFromString(name: String, `type`: String, define: String, notDefine: Boolean): Boolean = js.native
+  def _emitVaryingFromString(name: String, `type`: String, define: Unit, notDefine: Boolean): Boolean = js.native
   
   /** @hidden */
   def _excludeVariableName(name: String): Unit = js.native
@@ -75,7 +74,7 @@ trait NodeMaterialBuildState extends StObject {
   /** @hidden */
   def _repeatableContentAnchor: String = js.native
   
-  var _repeatableContentAnchorIndex: js.Any = js.native
+  /* private */ var _repeatableContentAnchorIndex: js.Any = js.native
   
   /** @hidden */
   var _samplerDeclaration: String = js.native

@@ -20,30 +20,26 @@ import typings.jupyterlabServices.anon.Transient
 import typings.jupyterlabServices.anon.TransientDisplayidString
 import typings.jupyterlabServices.anon.Wait
 import typings.jupyterlabServices.jupyterlabServicesStrings.kernel_info_request
-import typings.jupyterlabServices.jupyterlabServicesStrings.shell
 import typings.luminoCoreutils.jsonMod.JSONObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IInfoRequestMsg
-  extends IShellMessage[kernel_info_request]
+  extends StObject
+     with IShellMessage[kernel_info_request]
      with _Message
 object IInfoRequestMsg {
   
-  @scala.inline
-  def apply(
-    channel: shell,
+  inline def apply(
     content: Wait | Commid | (ReplyContent[
       ICommInfoReply | ICompleteReply | IHistoryReply | IInfoReply | IInputReply | IInspectReply | IIsCompleteReplyIncomplete | IIsCompleteReplyOther
-    ]) | Targetname | Data | Code | Metadata | Ename | Executioncount | (ReplyContent[IExecuteReply] with IExecuteCount) | Allowstdin | Transient | IHistoryRequestRange | IHistoryRequestSearch | IHistoryRequestTail | js.Object | Password | Cursorpos | CodeString | Executionstate | Name | ((/* import warning: importer.ImportType#apply Failed type conversion: @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.IDisplayDataMsg['content'] */ js.Any) with TransientDisplayidString) | Arguments | Body | Event,
+    ]) | Targetname | Data | Code | Metadata | Ename | Executioncount | (ReplyContent[IExecuteReply] & IExecuteCount) | Allowstdin | Transient | IHistoryRequestRange | IHistoryRequestSearch | IHistoryRequestTail | js.Object | Password | Cursorpos | CodeString | Executionstate | Name | ((/* import warning: importer.ImportType#apply Failed type conversion: @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.IDisplayDataMsg['content'] */ js.Any) & TransientDisplayidString) | Arguments | Body | Event,
     header: IHeader[kernel_info_request],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object
   ): IInfoRequestMsg = {
-    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(channel = "shell", content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInfoRequestMsg]
   }
 }

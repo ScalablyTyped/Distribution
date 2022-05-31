@@ -8,7 +8,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rayHelperMod {
@@ -25,27 +24,27 @@ object rayHelperMod {
       */
     def this(ray: Ray) = this()
     
-    var _attachedToMesh: js.Any = js.native
+    /* private */ var _attachedToMesh: js.Any = js.native
     
-    var _meshSpaceDirection: js.Any = js.native
+    /* private */ var _meshSpaceDirection: js.Any = js.native
     
-    var _meshSpaceOrigin: js.Any = js.native
+    /* private */ var _meshSpaceOrigin: js.Any = js.native
     
-    var _onAfterRenderObserver: js.Any = js.native
+    /* private */ var _onAfterRenderObserver: js.Any = js.native
     
-    var _onAfterStepObserver: js.Any = js.native
+    /* private */ var _onAfterStepObserver: js.Any = js.native
     
-    var _render: js.Any = js.native
+    /* private */ var _render: js.Any = js.native
     
-    var _renderFunction: js.Any = js.native
+    /* private */ var _renderFunction: js.Any = js.native
     
-    var _renderLine: js.Any = js.native
+    /* private */ var _renderLine: js.Any = js.native
     
-    var _renderPoints: js.Any = js.native
+    /* private */ var _renderPoints: js.Any = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
-    var _updateToMesh: js.Any = js.native
+    /* private */ var _updateToMesh: js.Any = js.native
     
     /**
       * Attach a ray helper to a mesh so that we can easily see its orientation for instance or information like its normals.
@@ -55,26 +54,11 @@ object rayHelperMod {
       * @param length Defines the length of the ray
       */
     def attachToMesh(mesh: AbstractMesh): Unit = js.native
-    def attachToMesh(
-      mesh: AbstractMesh,
-      meshSpaceDirection: js.UndefOr[scala.Nothing],
-      meshSpaceOrigin: js.UndefOr[scala.Nothing],
-      length: Double
-    ): Unit = js.native
-    def attachToMesh(mesh: AbstractMesh, meshSpaceDirection: js.UndefOr[scala.Nothing], meshSpaceOrigin: Vector3): Unit = js.native
-    def attachToMesh(
-      mesh: AbstractMesh,
-      meshSpaceDirection: js.UndefOr[scala.Nothing],
-      meshSpaceOrigin: Vector3,
-      length: Double
-    ): Unit = js.native
+    def attachToMesh(mesh: AbstractMesh, meshSpaceDirection: Unit, meshSpaceOrigin: Unit, length: Double): Unit = js.native
+    def attachToMesh(mesh: AbstractMesh, meshSpaceDirection: Unit, meshSpaceOrigin: Vector3): Unit = js.native
+    def attachToMesh(mesh: AbstractMesh, meshSpaceDirection: Unit, meshSpaceOrigin: Vector3, length: Double): Unit = js.native
     def attachToMesh(mesh: AbstractMesh, meshSpaceDirection: Vector3): Unit = js.native
-    def attachToMesh(
-      mesh: AbstractMesh,
-      meshSpaceDirection: Vector3,
-      meshSpaceOrigin: js.UndefOr[scala.Nothing],
-      length: Double
-    ): Unit = js.native
+    def attachToMesh(mesh: AbstractMesh, meshSpaceDirection: Vector3, meshSpaceOrigin: Unit, length: Double): Unit = js.native
     def attachToMesh(mesh: AbstractMesh, meshSpaceDirection: Vector3, meshSpaceOrigin: Vector3): Unit = js.native
     def attachToMesh(mesh: AbstractMesh, meshSpaceDirection: Vector3, meshSpaceOrigin: Vector3, length: Double): Unit = js.native
     
@@ -109,6 +93,10 @@ object rayHelperMod {
   /* static members */
   object RayHelper {
     
+    @JSImport("babylonjs/Debug/rayHelper", "RayHelper")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Helper function to create a colored helper in a scene in one line.
       * @param ray Defines the ray we are currently tryin to visualize
@@ -116,8 +104,6 @@ object rayHelperMod {
       * @param color Defines the color we want to see the ray in
       * @returns The newly created ray helper.
       */
-    @JSImport("babylonjs/Debug/rayHelper", "RayHelper.CreateAndShow")
-    @js.native
-    def CreateAndShow(ray: Ray, scene: Scene, color: Color3): RayHelper = js.native
+    inline def CreateAndShow(ray: Ray, scene: Scene, color: Color3): RayHelper = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndShow")(ray.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[RayHelper]
   }
 }

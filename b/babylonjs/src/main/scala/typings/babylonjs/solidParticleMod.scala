@@ -14,7 +14,6 @@ import typings.babylonjs.solidParticleSystemMod.SolidParticleSystem
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object solidParticleMod {
@@ -186,7 +185,19 @@ object solidParticleMod {
       shapeId: Double,
       idxInShape: Double,
       sps: SolidParticleSystem,
-      modelBoundingInfo: js.UndefOr[Nullable[BoundingInfo]],
+      modelBoundingInfo: Unit,
+      materialIndex: Nullable[Double]
+    ) = this()
+    def this(
+      particleIndex: Double,
+      particleId: Double,
+      positionIndex: Double,
+      indiceIndex: Double,
+      model: Nullable[ModelShape],
+      shapeId: Double,
+      idxInShape: Double,
+      sps: SolidParticleSystem,
+      modelBoundingInfo: Nullable[BoundingInfo],
       materialIndex: Nullable[Double]
     ) = this()
     
@@ -332,7 +343,7 @@ object solidParticleMod {
     /**
       * Custom object or properties.
       */
-    var props: Nullable[_] = js.native
+    var props: Nullable[js.Any] = js.native
     
     /**
       * Legacy support, changed quaternion to rotationQuaternion

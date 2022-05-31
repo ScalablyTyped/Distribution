@@ -4,16 +4,15 @@ import typings.firebasePerformance.networkRequestMod.NetworkRequest
 import typings.firebasePerformance.traceMod.Trace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object perfLoggerMod {
   
-  @JSImport("@firebase/performance/dist/src/services/perf_logger", "logNetworkRequest")
+  @JSImport("@firebase/performance/dist/src/services/perf_logger", JSImport.Namespace)
   @js.native
-  def logNetworkRequest(networkRequest: NetworkRequest): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@firebase/performance/dist/src/services/perf_logger", "logTrace")
-  @js.native
-  def logTrace(trace: Trace): Unit = js.native
+  inline def logNetworkRequest(networkRequest: NetworkRequest): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logNetworkRequest")(networkRequest.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def logTrace(trace: Trace): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logTrace")(trace.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

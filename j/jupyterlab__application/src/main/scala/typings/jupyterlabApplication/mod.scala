@@ -1,13 +1,11 @@
 package typings.jupyterlabApplication
 
-import org.scalablytyped.runtime.Shortcut
 import typings.jupyterlabApplication.frontendMod.JupyterFrontEnd.IOptions
 import typings.jupyterlabApplication.frontendMod.JupyterFrontEnd.IPaths
 import typings.jupyterlabApplication.frontendMod.JupyterFrontEnd.IShell
 import typings.luminoCoreutils.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,17 +18,9 @@ object mod {
   @js.native
   val IConnectionLost: Token[typings.jupyterlabApplication.tokensMod.IConnectionLost] = js.native
   
-  object ILabShell extends Shortcut {
-    
-    @JSImport("@jupyterlab/application", "ILabShell")
-    @js.native
-    val ^ : Token[typings.jupyterlabApplication.shellMod.ILabShell] = js.native
-    
-    type _To = Token[typings.jupyterlabApplication.shellMod.ILabShell]
-    
-    /* This means you don't have to write `^`, but can instead just say `ILabShell.foo` */
-    override def _to: Token[typings.jupyterlabApplication.shellMod.ILabShell] = ^
-  }
+  @JSImport("@jupyterlab/application", "ILabShell")
+  @js.native
+  val ILabShell: Token[typings.jupyterlabApplication.shellMod.ILabShell] = js.native
   
   @JSImport("@jupyterlab/application", "ILabStatus")
   @js.native
@@ -44,17 +34,9 @@ object mod {
   @js.native
   val IMimeDocumentTracker: Token[typings.jupyterlabApplication.mimerenderersMod.IMimeDocumentTracker] = js.native
   
-  object IRouter extends Shortcut {
-    
-    @JSImport("@jupyterlab/application", "IRouter")
-    @js.native
-    val ^ : Token[typings.jupyterlabApplication.tokensMod.IRouter] = js.native
-    
-    type _To = Token[typings.jupyterlabApplication.tokensMod.IRouter]
-    
-    /* This means you don't have to write `^`, but can instead just say `IRouter.foo` */
-    override def _to: Token[typings.jupyterlabApplication.tokensMod.IRouter] = ^
-  }
+  @JSImport("@jupyterlab/application", "IRouter")
+  @js.native
+  val IRouter: Token[typings.jupyterlabApplication.tokensMod.IRouter] = js.native
   
   @JSImport("@jupyterlab/application", "JupyterFrontEnd")
   @js.native
@@ -63,7 +45,7 @@ object mod {
     /**
       * Construct a new JupyterFrontEnd object.
       */
-    def this(options: IOptions[T, _]) = this()
+    def this(options: IOptions[T, js.Any]) = this()
   }
   object JupyterFrontEnd {
     
@@ -77,17 +59,9 @@ object mod {
     /**
       * A namespace for tree resolver types.
       */
-    object ITreeResolver extends Shortcut {
-      
-      @JSImport("@jupyterlab/application", "JupyterFrontEnd.ITreeResolver")
-      @js.native
-      val ^ : Token[typings.jupyterlabApplication.frontendMod.JupyterFrontEnd.ITreeResolver] = js.native
-      
-      type _To = Token[typings.jupyterlabApplication.frontendMod.JupyterFrontEnd.ITreeResolver]
-      
-      /* This means you don't have to write `^`, but can instead just say `ITreeResolver.foo` */
-      override def _to: Token[typings.jupyterlabApplication.frontendMod.JupyterFrontEnd.ITreeResolver] = ^
-    }
+    @JSImport("@jupyterlab/application", "JupyterFrontEnd.ITreeResolver")
+    @js.native
+    val ITreeResolver: Token[typings.jupyterlabApplication.frontendMod.JupyterFrontEnd.ITreeResolver] = js.native
   }
   
   @JSImport("@jupyterlab/application", "JupyterLab")

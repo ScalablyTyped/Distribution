@@ -4,13 +4,13 @@ import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.BABYLON.PostProcessOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.ExtractHighlightsPostProcess")
 @js.native
 class ExtractHighlightsPostProcess protected ()
-  extends typings.babylonjs.BABYLON.ExtractHighlightsPostProcess {
+  extends StObject
+     with typings.babylonjs.BABYLON.ExtractHighlightsPostProcess {
   def this(
     name: String,
     options: Double | PostProcessOptions,

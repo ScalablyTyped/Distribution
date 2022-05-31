@@ -6,7 +6,6 @@ import typings.babylonjs.thinEngineMod.ThinEngine
 import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object khronosTextureContainer2Mod {
@@ -25,7 +24,7 @@ object khronosTextureContainer2Mod {
     /* protected */ def _createTexture(data: js.Any, internalTexture: InternalTexture): Unit = js.native
     /* protected */ def _createTexture(data: js.Any, internalTexture: InternalTexture, options: js.Any): Unit = js.native
     
-    var _engine: js.Any = js.native
+    /* private */ var _engine: js.Any = js.native
     
     /**
       * Stop all async operations and release resources.
@@ -49,23 +48,19 @@ object khronosTextureContainer2Mod {
     @JSImport("babylonjs/Misc/khronosTextureContainer2", "KhronosTextureContainer2.DefaultNumWorkers")
     @js.native
     def DefaultNumWorkers: Double = js.native
-    @scala.inline
-    def DefaultNumWorkers_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultNumWorkers")(x.asInstanceOf[js.Any])
+    inline def DefaultNumWorkers_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultNumWorkers")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/khronosTextureContainer2", "KhronosTextureContainer2.GetDefaultNumWorkers")
     @js.native
     def GetDefaultNumWorkers: js.Any = js.native
-    @scala.inline
-    def GetDefaultNumWorkers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GetDefaultNumWorkers")(x.asInstanceOf[js.Any])
+    inline def GetDefaultNumWorkers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GetDefaultNumWorkers")(x.asInstanceOf[js.Any])
     
     /**
       * Checks if the given data starts with a KTX2 file identifier.
       * @param data the data to check
       * @returns true if the data is a KTX2 file or false otherwise
       */
-    @JSImport("babylonjs/Misc/khronosTextureContainer2", "KhronosTextureContainer2.IsValid")
-    @js.native
-    def IsValid(data: ArrayBufferView): Boolean = js.native
+    inline def IsValid(data: ArrayBufferView): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsValid")(data.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * URLs to use when loading the KTX2 decoder module as well as its dependencies
@@ -84,31 +79,26 @@ object khronosTextureContainer2Mod {
     @JSImport("babylonjs/Misc/khronosTextureContainer2", "KhronosTextureContainer2.URLConfig")
     @js.native
     def URLConfig: JsDecoderModule = js.native
-    @scala.inline
-    def URLConfig_=(x: JsDecoderModule): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("URLConfig")(x.asInstanceOf[js.Any])
+    inline def URLConfig_=(x: JsDecoderModule): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("URLConfig")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/khronosTextureContainer2", "KhronosTextureContainer2._CreateWorkerPool")
     @js.native
     def _CreateWorkerPool: js.Any = js.native
-    @scala.inline
-    def _CreateWorkerPool_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateWorkerPool")(x.asInstanceOf[js.Any])
+    inline def _CreateWorkerPool_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateWorkerPool")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/khronosTextureContainer2", "KhronosTextureContainer2._Initialized")
     @js.native
     def _Initialized: js.Any = js.native
-    @scala.inline
-    def _Initialized_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Initialized")(x.asInstanceOf[js.Any])
+    inline def _Initialized_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Initialized")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/khronosTextureContainer2", "KhronosTextureContainer2._Ktx2Decoder")
     @js.native
     def _Ktx2Decoder: js.Any = js.native
-    @scala.inline
-    def _Ktx2Decoder_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Ktx2Decoder")(x.asInstanceOf[js.Any])
+    inline def _Ktx2Decoder_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Ktx2Decoder")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/khronosTextureContainer2", "KhronosTextureContainer2._WorkerPoolPromise")
     @js.native
     def _WorkerPoolPromise: js.Any = js.native
-    @scala.inline
-    def _WorkerPoolPromise_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_WorkerPoolPromise")(x.asInstanceOf[js.Any])
+    inline def _WorkerPoolPromise_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_WorkerPoolPromise")(x.asInstanceOf[js.Any])
   }
 }

@@ -4,99 +4,98 @@ import typings.std.HTMLElement
 import typings.std.PointerEventInit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InputManager extends StObject {
   
   /** This is a defensive check to not allow control attachment prior to an already active one. If already attached, previous control is unattached before attaching the new one. */
-  var _alreadyAttached: js.Any = js.native
+  /* private */ var _alreadyAttached: js.Any = js.native
   
-  var _alreadyAttachedTo: js.Any = js.native
+  /* private */ var _alreadyAttachedTo: js.Any = js.native
   
-  var _checkPrePointerObservable: js.Any = js.native
+  /* private */ var _checkPrePointerObservable: js.Any = js.native
   
-  var _currentPickResult: js.Any = js.native
+  /* private */ var _currentPickResult: js.Any = js.native
   
-  var _delayedSimpleClick: js.Any = js.native
+  /* private */ var _delayedSimpleClick: js.Any = js.native
   
-  var _delayedSimpleClickTimeout: js.Any = js.native
+  /* private */ var _delayedSimpleClickTimeout: js.Any = js.native
   
-  var _doubleClickOccured: js.Any = js.native
+  /* private */ var _doubleClickOccured: js.Any = js.native
   
-  var _initActionManager: js.Any = js.native
+  /* private */ var _initActionManager: js.Any = js.native
   
-  var _initClickEvent: js.Any = js.native
+  /* private */ var _initClickEvent: js.Any = js.native
   
   /** @hidden */
   def _isPointerSwiping(): Boolean = js.native
   
-  var _keyboardIsAttached: js.Any = js.native
+  /* private */ var _keyboardIsAttached: js.Any = js.native
   
-  var _meshPickProceed: js.Any = js.native
+  /* private */ var _meshPickProceed: js.Any = js.native
   
-  var _meshUnderPointerId: js.Any = js.native
+  /* private */ var _meshUnderPointerId: js.Any = js.native
   
-  var _onCanvasBlurObserver: js.Any = js.native
+  /* private */ var _onCanvasBlurObserver: js.Any = js.native
   
-  var _onCanvasFocusObserver: js.Any = js.native
+  /* private */ var _onCanvasFocusObserver: js.Any = js.native
   
-  var _onKeyDown: js.Any = js.native
+  /* private */ var _onKeyDown: js.Any = js.native
   
-  var _onKeyUp: js.Any = js.native
+  /* private */ var _onKeyUp: js.Any = js.native
   
-  var _onPointerDown: js.Any = js.native
+  /* private */ var _onPointerDown: js.Any = js.native
   
-  var _onPointerMove: js.Any = js.native
+  /* private */ var _onPointerMove: js.Any = js.native
   
-  var _onPointerUp: js.Any = js.native
+  /* private */ var _onPointerUp: js.Any = js.native
   
-  var _pickedDownMesh: js.Any = js.native
+  /* private */ var _pickedDownMesh: js.Any = js.native
   
-  var _pickedUpMesh: js.Any = js.native
+  /* private */ var _pickedUpMesh: js.Any = js.native
   
-  var _pointerCaptures: js.Any = js.native
+  /* private */ var _pointerCaptures: js.Any = js.native
   
-  var _pointerOverMesh: js.Any = js.native
+  /* private */ var _pointerOverMesh: js.Any = js.native
   
-  var _pointerX: js.Any = js.native
+  /* private */ var _pointerX: js.Any = js.native
   
-  var _pointerY: js.Any = js.native
+  /* private */ var _pointerY: js.Any = js.native
   
-  var _previousButtonPressed: js.Any = js.native
+  /* private */ var _previousButtonPressed: js.Any = js.native
   
-  var _previousDelayedSimpleClickTimeout: js.Any = js.native
+  /* private */ var _previousDelayedSimpleClickTimeout: js.Any = js.native
   
-  var _previousPickResult: js.Any = js.native
+  /* private */ var _previousPickResult: js.Any = js.native
   
-  var _previousStartingPointerPosition: js.Any = js.native
+  /* private */ var _previousStartingPointerPosition: js.Any = js.native
   
-  var _previousStartingPointerTime: js.Any = js.native
+  /* private */ var _previousStartingPointerTime: js.Any = js.native
   
-  var _processPointerDown: js.Any = js.native
+  /* private */ var _processPointerDown: js.Any = js.native
   
-  var _processPointerMove: js.Any = js.native
+  /* private */ var _processPointerMove: js.Any = js.native
   
-  var _processPointerUp: js.Any = js.native
+  /* private */ var _processPointerUp: js.Any = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
-  var _setRayOnPointerInfo: js.Any = js.native
+  /* private */ var _setRayOnPointerInfo: js.Any = js.native
   
-  var _startingPointerPosition: js.Any = js.native
+  /* private */ var _startingPointerPosition: js.Any = js.native
   
-  var _startingPointerTime: js.Any = js.native
+  /* private */ var _startingPointerTime: js.Any = js.native
   
-  var _totalPointersPressed: js.Any = js.native
+  /* private */ var _totalPointersPressed: js.Any = js.native
   
-  var _unTranslatedPointerX: js.Any = js.native
+  /* private */ var _unTranslatedPointerX: js.Any = js.native
   
-  var _unTranslatedPointerY: js.Any = js.native
+  /* private */ var _unTranslatedPointerY: js.Any = js.native
   
-  var _updatePointerPosition: js.Any = js.native
+  /* private */ var _updatePointerPosition: js.Any = js.native
   
-  var _wheelEventName: js.Any = js.native
+  /* private */ var _wheelEventName: js.Any = js.native
   
   /**
     * Attach events to the canvas (To handle actionManagers triggers and raise onPointerMove, onPointerDown and onPointerUp
@@ -106,54 +105,8 @@ trait InputManager extends StObject {
     * @param elementToAttachTo defines the target DOM element to attach to (will use the canvas by default)
     */
   def attachControl(): Unit = js.native
-  def attachControl(
-    attachUp: js.UndefOr[scala.Nothing],
-    attachDown: js.UndefOr[scala.Nothing],
-    attachMove: js.UndefOr[scala.Nothing],
-    elementToAttachTo: Nullable[HTMLElement]
-  ): Unit = js.native
-  def attachControl(attachUp: js.UndefOr[scala.Nothing], attachDown: js.UndefOr[scala.Nothing], attachMove: Boolean): Unit = js.native
-  def attachControl(
-    attachUp: js.UndefOr[scala.Nothing],
-    attachDown: js.UndefOr[scala.Nothing],
-    attachMove: Boolean,
-    elementToAttachTo: Nullable[HTMLElement]
-  ): Unit = js.native
-  def attachControl(attachUp: js.UndefOr[scala.Nothing], attachDown: Boolean): Unit = js.native
-  def attachControl(
-    attachUp: js.UndefOr[scala.Nothing],
-    attachDown: Boolean,
-    attachMove: js.UndefOr[scala.Nothing],
-    elementToAttachTo: Nullable[HTMLElement]
-  ): Unit = js.native
-  def attachControl(attachUp: js.UndefOr[scala.Nothing], attachDown: Boolean, attachMove: Boolean): Unit = js.native
-  def attachControl(
-    attachUp: js.UndefOr[scala.Nothing],
-    attachDown: Boolean,
-    attachMove: Boolean,
-    elementToAttachTo: Nullable[HTMLElement]
-  ): Unit = js.native
   def attachControl(attachUp: Boolean): Unit = js.native
-  def attachControl(
-    attachUp: Boolean,
-    attachDown: js.UndefOr[scala.Nothing],
-    attachMove: js.UndefOr[scala.Nothing],
-    elementToAttachTo: Nullable[HTMLElement]
-  ): Unit = js.native
-  def attachControl(attachUp: Boolean, attachDown: js.UndefOr[scala.Nothing], attachMove: Boolean): Unit = js.native
-  def attachControl(
-    attachUp: Boolean,
-    attachDown: js.UndefOr[scala.Nothing],
-    attachMove: Boolean,
-    elementToAttachTo: Nullable[HTMLElement]
-  ): Unit = js.native
   def attachControl(attachUp: Boolean, attachDown: Boolean): Unit = js.native
-  def attachControl(
-    attachUp: Boolean,
-    attachDown: Boolean,
-    attachMove: js.UndefOr[scala.Nothing],
-    elementToAttachTo: Nullable[HTMLElement]
-  ): Unit = js.native
   def attachControl(attachUp: Boolean, attachDown: Boolean, attachMove: Boolean): Unit = js.native
   def attachControl(
     attachUp: Boolean,
@@ -161,6 +114,17 @@ trait InputManager extends StObject {
     attachMove: Boolean,
     elementToAttachTo: Nullable[HTMLElement]
   ): Unit = js.native
+  def attachControl(attachUp: Boolean, attachDown: Boolean, attachMove: Unit, elementToAttachTo: Nullable[HTMLElement]): Unit = js.native
+  def attachControl(attachUp: Boolean, attachDown: Unit, attachMove: Boolean): Unit = js.native
+  def attachControl(attachUp: Boolean, attachDown: Unit, attachMove: Boolean, elementToAttachTo: Nullable[HTMLElement]): Unit = js.native
+  def attachControl(attachUp: Boolean, attachDown: Unit, attachMove: Unit, elementToAttachTo: Nullable[HTMLElement]): Unit = js.native
+  def attachControl(attachUp: Unit, attachDown: Boolean): Unit = js.native
+  def attachControl(attachUp: Unit, attachDown: Boolean, attachMove: Boolean): Unit = js.native
+  def attachControl(attachUp: Unit, attachDown: Boolean, attachMove: Boolean, elementToAttachTo: Nullable[HTMLElement]): Unit = js.native
+  def attachControl(attachUp: Unit, attachDown: Boolean, attachMove: Unit, elementToAttachTo: Nullable[HTMLElement]): Unit = js.native
+  def attachControl(attachUp: Unit, attachDown: Unit, attachMove: Boolean): Unit = js.native
+  def attachControl(attachUp: Unit, attachDown: Unit, attachMove: Boolean, elementToAttachTo: Nullable[HTMLElement]): Unit = js.native
+  def attachControl(attachUp: Unit, attachDown: Unit, attachMove: Unit, elementToAttachTo: Nullable[HTMLElement]): Unit = js.native
   
   /**
     * Detaches all event handlers
@@ -239,7 +203,7 @@ trait InputManager extends StObject {
     * @param doubleTap indicates that the pointer up event should be considered as part of a double click (false by default)
     */
   def simulatePointerUp(pickResult: PickingInfo): Unit = js.native
-  def simulatePointerUp(pickResult: PickingInfo, pointerEventInit: js.UndefOr[scala.Nothing], doubleTap: Boolean): Unit = js.native
+  def simulatePointerUp(pickResult: PickingInfo, pointerEventInit: Unit, doubleTap: Boolean): Unit = js.native
   def simulatePointerUp(pickResult: PickingInfo, pointerEventInit: PointerEventInit): Unit = js.native
   def simulatePointerUp(pickResult: PickingInfo, pointerEventInit: PointerEventInit, doubleTap: Boolean): Unit = js.native
   

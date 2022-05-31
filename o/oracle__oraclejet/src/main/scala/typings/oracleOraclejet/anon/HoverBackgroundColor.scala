@@ -7,40 +7,37 @@ import typings.oracleOraclejet.oracleOraclejetStrings.on
 import typings.oracleOraclejet.oracleOraclejetStrings.start
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HoverBackgroundColor extends StObject {
   
-  var backgroundColor: String = js.native
+  var backgroundColor: String
   
-  var borderColor: String = js.native
+  var borderColor: String
   
-  var hoverBackgroundColor: String = js.native
+  var hoverBackgroundColor: String
   
-  var hoverInnerColor: String = js.native
+  var hoverInnerColor: String
   
-  var hoverOuterColor: String = js.native
+  var hoverOuterColor: String
   
-  var isolate: off | on = js.native
+  var isolate: off | on
   
-  var labelHalign: center | end | start = js.native
+  var labelHalign: center | end | start
   
-  var labelStyle: js.Object = js.native
+  var labelStyle: js.Object
   
-  var selectedBackgroundColor: String = js.native
+  var selectedBackgroundColor: String
   
-  var selectedInnerColor: String = js.native
+  var selectedInnerColor: String
   
-  var selectedOuterColor: String = js.native
+  var selectedOuterColor: String
   
-  var useNodeColor: on | off = js.native
+  var useNodeColor: on | off
 }
 object HoverBackgroundColor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backgroundColor: String,
     borderColor: String,
     hoverBackgroundColor: String,
@@ -58,43 +55,30 @@ object HoverBackgroundColor {
     __obj.asInstanceOf[HoverBackgroundColor]
   }
   
-  @scala.inline
-  implicit class HoverBackgroundColorMutableBuilder[Self <: HoverBackgroundColor] (val x: Self) extends AnyVal {
+  extension [Self <: HoverBackgroundColor](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverBackgroundColor(value: String): Self = StObject.set(x, "hoverBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setHoverBackgroundColor(value: String): Self = StObject.set(x, "hoverBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverInnerColor(value: String): Self = StObject.set(x, "hoverInnerColor", value.asInstanceOf[js.Any])
+    inline def setHoverInnerColor(value: String): Self = StObject.set(x, "hoverInnerColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverOuterColor(value: String): Self = StObject.set(x, "hoverOuterColor", value.asInstanceOf[js.Any])
+    inline def setHoverOuterColor(value: String): Self = StObject.set(x, "hoverOuterColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsolate(value: off | on): Self = StObject.set(x, "isolate", value.asInstanceOf[js.Any])
+    inline def setIsolate(value: off | on): Self = StObject.set(x, "isolate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelHalign(value: center | end | start): Self = StObject.set(x, "labelHalign", value.asInstanceOf[js.Any])
+    inline def setLabelHalign(value: center | end | start): Self = StObject.set(x, "labelHalign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelStyle(value: js.Object): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
+    inline def setLabelStyle(value: js.Object): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedBackgroundColor(value: String): Self = StObject.set(x, "selectedBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setSelectedBackgroundColor(value: String): Self = StObject.set(x, "selectedBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedInnerColor(value: String): Self = StObject.set(x, "selectedInnerColor", value.asInstanceOf[js.Any])
+    inline def setSelectedInnerColor(value: String): Self = StObject.set(x, "selectedInnerColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedOuterColor(value: String): Self = StObject.set(x, "selectedOuterColor", value.asInstanceOf[js.Any])
+    inline def setSelectedOuterColor(value: String): Self = StObject.set(x, "selectedOuterColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseNodeColor(value: on | off): Self = StObject.set(x, "useNodeColor", value.asInstanceOf[js.Any])
+    inline def setUseNodeColor(value: on | off): Self = StObject.set(x, "useNodeColor", value.asInstanceOf[js.Any])
   }
 }

@@ -4,7 +4,6 @@ import typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnect
 import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fogBlockMod {
@@ -18,9 +17,9 @@ object fogBlockMod {
       */
     def this(name: String) = this()
     
-    var _fogDistanceName: js.Any = js.native
+    /* private */ var _fogDistanceName: js.Any = js.native
     
-    var _fogParameters: js.Any = js.native
+    /* private */ var _fogParameters: js.Any = js.native
     
     /**
       * Gets the fog color input component

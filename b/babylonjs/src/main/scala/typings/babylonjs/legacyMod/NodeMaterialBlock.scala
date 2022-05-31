@@ -2,7 +2,6 @@ package typings.babylonjs.legacyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "NodeMaterialBlock")
@@ -18,29 +17,24 @@ class NodeMaterialBlock protected ()
     */
   def this(name: String) = this()
   def this(name: String, target: typings.babylonjs.nodeMaterialBlockTargetsMod.NodeMaterialBlockTargets) = this()
-  def this(name: String, target: js.UndefOr[scala.Nothing], isFinalMerger: Boolean) = this()
+  def this(name: String, target: Unit, isFinalMerger: Boolean) = this()
   def this(
     name: String,
     target: typings.babylonjs.nodeMaterialBlockTargetsMod.NodeMaterialBlockTargets,
     isFinalMerger: Boolean
   ) = this()
-  def this(
-    name: String,
-    target: js.UndefOr[scala.Nothing],
-    isFinalMerger: js.UndefOr[scala.Nothing],
-    isInput: Boolean
-  ) = this()
-  def this(name: String, target: js.UndefOr[scala.Nothing], isFinalMerger: Boolean, isInput: Boolean) = this()
-  def this(
-    name: String,
-    target: typings.babylonjs.nodeMaterialBlockTargetsMod.NodeMaterialBlockTargets,
-    isFinalMerger: js.UndefOr[scala.Nothing],
-    isInput: Boolean
-  ) = this()
+  def this(name: String, target: Unit, isFinalMerger: Boolean, isInput: Boolean) = this()
+  def this(name: String, target: Unit, isFinalMerger: Unit, isInput: Boolean) = this()
   def this(
     name: String,
     target: typings.babylonjs.nodeMaterialBlockTargetsMod.NodeMaterialBlockTargets,
     isFinalMerger: Boolean,
+    isInput: Boolean
+  ) = this()
+  def this(
+    name: String,
+    target: typings.babylonjs.nodeMaterialBlockTargetsMod.NodeMaterialBlockTargets,
+    isFinalMerger: Unit,
     isInput: Boolean
   ) = this()
 }

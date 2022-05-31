@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact.mod
 
+import typings.officeUiFabricReact.autofillTypesMod.IAutofillProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,5 +23,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class BaseAutoFill protected ()
   extends typings.officeUiFabricReact.libAutofillMod.BaseAutoFill {
-  def this(props: typings.officeUiFabricReact.autofillTypesMod.IAutofillProps) = this()
+  def this(props: IAutofillProps) = this()
 }

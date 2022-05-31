@@ -17,7 +17,6 @@ import typings.babylonjs.smartArrayMod.SmartArray
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object postProcessMod {
@@ -61,7 +60,7 @@ object postProcessMod {
       textureFormat: js.UndefOr[Double]
     ) = this()
     
-    var _camera: js.Any = js.native
+    /* private */ var _camera: js.Any = js.native
     
     /**
       * The index in _textures that corresponds to the output texture.
@@ -69,29 +68,29 @@ object postProcessMod {
       */
     var _currentRenderTextureInd: Double = js.native
     
-    var _disposeTextures: js.Any = js.native
+    /* private */ var _disposeTextures: js.Any = js.native
     
-    var _effect: js.Any = js.native
+    /* private */ var _effect: js.Any = js.native
     
-    var _engine: js.Any = js.native
+    /* private */ var _engine: js.Any = js.native
     
-    var _forcedOutputTexture: js.Any = js.native
+    /* private */ var _forcedOutputTexture: js.Any = js.native
     
-    var _fragmentUrl: js.Any = js.native
+    /* private */ var _fragmentUrl: js.Any = js.native
     
-    var _indexParameters: js.Any = js.native
+    /* protected */ var _indexParameters: js.Any = js.native
     
-    var _onActivateObserver: js.Any = js.native
+    /* private */ var _onActivateObserver: js.Any = js.native
     
-    var _onAfterRenderObserver: js.Any = js.native
+    /* private */ var _onAfterRenderObserver: js.Any = js.native
     
-    var _onApplyObserver: js.Any = js.native
+    /* private */ var _onApplyObserver: js.Any = js.native
     
-    var _onBeforeRenderObserver: js.Any = js.native
+    /* private */ var _onBeforeRenderObserver: js.Any = js.native
     
-    var _onSizeChangedObserver: js.Any = js.native
+    /* private */ var _onSizeChangedObserver: js.Any = js.native
     
-    var _options: js.Any = js.native
+    /* private */ var _options: js.Any = js.native
     
     /**
       * Internal, reference to the location where this postprocess was output to. (Typically the texture on the next postprocess in the chain)
@@ -99,7 +98,7 @@ object postProcessMod {
       */
     var _outputTexture: Nullable[InternalTexture] = js.native
     
-    var _parameters: js.Any = js.native
+    /* private */ var _parameters: js.Any = js.native
     
     /**
       * Prepass configuration in case this post process needs a texture from prepass
@@ -107,23 +106,23 @@ object postProcessMod {
       */
     var _prePassEffectConfiguration: PrePassEffectConfiguration = js.native
     
-    var _reusable: js.Any = js.native
+    /* private */ var _reusable: js.Any = js.native
     
-    var _samplers: js.Any = js.native
+    /* private */ var _samplers: js.Any = js.native
     
-    var _samples: js.Any = js.native
+    /* private */ var _samples: js.Any = js.native
     
-    var _scaleRatio: js.Any = js.native
+    /* private */ var _scaleRatio: js.Any = js.native
     
-    var _scene: Scene = js.native
+    /* protected */ var _scene: Scene = js.native
     
-    var _shareOutputWithPostProcess: js.Any = js.native
+    /* private */ var _shareOutputWithPostProcess: js.Any = js.native
     
-    var _texelSize: js.Any = js.native
+    /* private */ var _texelSize: js.Any = js.native
     
-    var _textureFormat: js.Any = js.native
+    /* private */ var _textureFormat: js.Any = js.native
     
-    var _textureType: js.Any = js.native
+    /* private */ var _textureType: js.Any = js.native
     
     /**
       * Smart array of input and output textures for the post process.
@@ -131,7 +130,7 @@ object postProcessMod {
       */
     var _textures: SmartArray[InternalTexture] = js.native
     
-    var _vertexUrl: js.Any = js.native
+    /* private */ var _vertexUrl: js.Any = js.native
     
     /**
       * Activates the post process by intializing the textures to be used when executed. Notifies onActivateObservable.
@@ -142,12 +141,9 @@ object postProcessMod {
       * @returns The target texture that was bound to be written to.
       */
     def activate(camera: Nullable[Camera]): InternalTexture = js.native
-    def activate(
-      camera: Nullable[Camera],
-      sourceTexture: js.UndefOr[Nullable[InternalTexture]],
-      forceDepthStencil: Boolean
-    ): InternalTexture = js.native
+    def activate(camera: Nullable[Camera], sourceTexture: Unit, forceDepthStencil: Boolean): InternalTexture = js.native
     def activate(camera: Nullable[Camera], sourceTexture: Nullable[InternalTexture]): InternalTexture = js.native
+    def activate(camera: Nullable[Camera], sourceTexture: Nullable[InternalTexture], forceDepthStencil: Boolean): InternalTexture = js.native
     
     /**
       * Modify the scale of the post process to be the same as the viewport (default: false)
@@ -438,6 +434,10 @@ object postProcessMod {
   /* static members */
   object PostProcess {
     
+    @JSImport("babylonjs/PostProcesses/postProcess", "PostProcess")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a material from parsed material data
       * @param parsedPostProcess defines parsed post process data
@@ -445,34 +445,27 @@ object postProcessMod {
       * @param rootUrl defines the root URL to use to load textures
       * @returns a new post process
       */
-    @JSImport("babylonjs/PostProcesses/postProcess", "PostProcess.Parse")
-    @js.native
-    def Parse(parsedPostProcess: js.Any, scene: Scene, rootUrl: String): Nullable[PostProcess] = js.native
+    inline def Parse(parsedPostProcess: js.Any, scene: Scene, rootUrl: String): Nullable[PostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedPostProcess.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[PostProcess]]
   }
   
-  @js.native
   trait PostProcessOptions extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object PostProcessOptions {
     
-    @scala.inline
-    def apply(height: Double, width: Double): PostProcessOptions = {
+    inline def apply(height: Double, width: Double): PostProcessOptions = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[PostProcessOptions]
     }
     
-    @scala.inline
-    implicit class PostProcessOptionsMutableBuilder[Self <: PostProcessOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PostProcessOptions](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "money-math"
-version := "2.5-dt-20200515Z-c977fa"
+version := "2.5-dt-20200515Z-57942c"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

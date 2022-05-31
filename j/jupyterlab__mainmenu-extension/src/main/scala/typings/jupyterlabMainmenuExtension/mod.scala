@@ -1,6 +1,5 @@
 package typings.jupyterlabMainmenuExtension
 
-import org.scalablytyped.runtime.Shortcut
 import typings.jupyterlabApplication.frontendMod.JupyterFrontEnd.IShell
 import typings.jupyterlabApplication.frontendMod.JupyterFrontEndPlugin
 import typings.jupyterlabApplication.mod.JupyterFrontEnd
@@ -16,10 +15,13 @@ import typings.jupyterlabMainmenu.mod.ViewMenu
 import typings.jupyterlabMainmenu.tokensMod.IMainMenu
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
+  
+  @JSImport("@jupyterlab/mainmenu-extension", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * A service providing an interface to the main menu.
@@ -175,39 +177,18 @@ object mod extends Shortcut {
     val wordWrap: /* "viewmenu:word-wrap" */ String = js.native
   }
   
-  @JSImport("@jupyterlab/mainmenu-extension", "createEditMenu")
-  @js.native
-  def createEditMenu(app: JupyterFrontEnd[IShell], menu: EditMenu): Unit = js.native
+  inline def createEditMenu(app: JupyterFrontEnd[IShell], menu: EditMenu): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createEditMenu")(app.asInstanceOf[js.Any], menu.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@jupyterlab/mainmenu-extension", "createFileMenu")
-  @js.native
-  def createFileMenu(app: JupyterFrontEnd[IShell], menu: FileMenu, router: IRouter): Unit = js.native
+  inline def createFileMenu(app: JupyterFrontEnd[IShell], menu: FileMenu, router: IRouter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createFileMenu")(app.asInstanceOf[js.Any], menu.asInstanceOf[js.Any], router.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@jupyterlab/mainmenu-extension", "createKernelMenu")
-  @js.native
-  def createKernelMenu(app: JupyterFrontEnd[IShell], menu: KernelMenu): Unit = js.native
+  inline def createKernelMenu(app: JupyterFrontEnd[IShell], menu: KernelMenu): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createKernelMenu")(app.asInstanceOf[js.Any], menu.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@jupyterlab/mainmenu-extension", "createRunMenu")
-  @js.native
-  def createRunMenu(app: JupyterFrontEnd[IShell], menu: RunMenu): Unit = js.native
+  inline def createRunMenu(app: JupyterFrontEnd[IShell], menu: RunMenu): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createRunMenu")(app.asInstanceOf[js.Any], menu.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@jupyterlab/mainmenu-extension", "createSettingsMenu")
-  @js.native
-  def createSettingsMenu(_underscore: JupyterFrontEnd[IShell], menu: SettingsMenu): Unit = js.native
+  inline def createSettingsMenu(_underscore: JupyterFrontEnd[IShell], menu: SettingsMenu): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createSettingsMenu")(_underscore.asInstanceOf[js.Any], menu.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@jupyterlab/mainmenu-extension", "createTabsMenu")
-  @js.native
-  def createTabsMenu(app: JupyterFrontEnd[IShell], menu: TabsMenu): Unit = js.native
-  @JSImport("@jupyterlab/mainmenu-extension", "createTabsMenu")
-  @js.native
-  def createTabsMenu(app: JupyterFrontEnd[IShell], menu: TabsMenu, labShell: ILabShell): Unit = js.native
+  inline def createTabsMenu(app: JupyterFrontEnd[IShell], menu: TabsMenu): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createTabsMenu")(app.asInstanceOf[js.Any], menu.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createTabsMenu(app: JupyterFrontEnd[IShell], menu: TabsMenu, labShell: ILabShell): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createTabsMenu")(app.asInstanceOf[js.Any], menu.asInstanceOf[js.Any], labShell.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@jupyterlab/mainmenu-extension", "createViewMenu")
-  @js.native
-  def createViewMenu(app: JupyterFrontEnd[IShell], menu: ViewMenu): Unit = js.native
-  
-  type _To = JupyterFrontEndPlugin[IMainMenu]
-  
-  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: JupyterFrontEndPlugin[IMainMenu] = default
+  inline def createViewMenu(app: JupyterFrontEnd[IShell], menu: ViewMenu): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createViewMenu")(app.asInstanceOf[js.Any], menu.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

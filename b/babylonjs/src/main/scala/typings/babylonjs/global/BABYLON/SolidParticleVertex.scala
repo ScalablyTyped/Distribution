@@ -2,7 +2,6 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.SolidParticleVertex")
@@ -11,4 +10,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creates a new solid particle vertex
   */
 class SolidParticleVertex ()
-  extends typings.babylonjs.BABYLON.SolidParticleVertex
+  extends StObject
+     with typings.babylonjs.BABYLON.SolidParticleVertex

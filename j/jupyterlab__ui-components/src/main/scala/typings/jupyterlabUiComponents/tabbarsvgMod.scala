@@ -5,7 +5,6 @@ import typings.luminoWidgets.mod.DockPanel
 import typings.luminoWidgets.mod.TabBar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabbarsvgMod {

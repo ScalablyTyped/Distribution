@@ -113,12 +113,4 @@ object args {
   @js.native
   def widgetParameter: js.Any = js.native
   inline def widgetParameter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("widgetParameter")(x.asInstanceOf[js.Any])
-  
-  /**
-    * _Query parameters from a URL scheme._
-    *
-    * Query parameters are supplied to a script when running it from a URL scheme. See the documentation on Scriptables URL schemes for more information.
-    * @see https://docs.scriptable.app/args/#queryparameters
-    */
-  object queryParameters
 }

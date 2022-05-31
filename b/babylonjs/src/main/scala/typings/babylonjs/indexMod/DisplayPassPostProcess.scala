@@ -4,7 +4,6 @@ import typings.babylonjs.postProcessMod.PostProcessOptions
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "DisplayPassPostProcess")
@@ -38,21 +37,14 @@ class DisplayPassPostProcess protected ()
     name: String,
     options: Double,
     camera: Nullable[typings.babylonjs.cameraMod.Camera],
-    samplingMode: js.UndefOr[scala.Nothing],
+    samplingMode: Double,
     engine: typings.babylonjs.engineMod.Engine
   ) = this()
   def this(
     name: String,
     options: Double,
     camera: Nullable[typings.babylonjs.cameraMod.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.engineMod.Engine
-  ) = this()
-  def this(
-    name: String,
-    options: PostProcessOptions,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera],
-    samplingMode: js.UndefOr[scala.Nothing],
+    samplingMode: Unit,
     engine: typings.babylonjs.engineMod.Engine
   ) = this()
   def this(
@@ -64,26 +56,17 @@ class DisplayPassPostProcess protected ()
   ) = this()
   def this(
     name: String,
-    options: Double,
+    options: PostProcessOptions,
     camera: Nullable[typings.babylonjs.cameraMod.Camera],
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: js.UndefOr[scala.Nothing],
-    reusable: Boolean
-  ) = this()
-  def this(
-    name: String,
-    options: Double,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera],
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: typings.babylonjs.engineMod.Engine,
-    reusable: Boolean
+    samplingMode: Unit,
+    engine: typings.babylonjs.engineMod.Engine
   ) = this()
   def this(
     name: String,
     options: Double,
     camera: Nullable[typings.babylonjs.cameraMod.Camera],
     samplingMode: Double,
-    engine: js.UndefOr[scala.Nothing],
+    engine: Unit,
     reusable: Boolean
   ) = this()
   def this(
@@ -96,17 +79,17 @@ class DisplayPassPostProcess protected ()
   ) = this()
   def this(
     name: String,
-    options: PostProcessOptions,
+    options: Double,
     camera: Nullable[typings.babylonjs.cameraMod.Camera],
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: js.UndefOr[scala.Nothing],
+    samplingMode: Unit,
+    engine: Unit,
     reusable: Boolean
   ) = this()
   def this(
     name: String,
-    options: PostProcessOptions,
+    options: Double,
     camera: Nullable[typings.babylonjs.cameraMod.Camera],
-    samplingMode: js.UndefOr[scala.Nothing],
+    samplingMode: Unit,
     engine: typings.babylonjs.engineMod.Engine,
     reusable: Boolean
   ) = this()
@@ -115,7 +98,7 @@ class DisplayPassPostProcess protected ()
     options: PostProcessOptions,
     camera: Nullable[typings.babylonjs.cameraMod.Camera],
     samplingMode: Double,
-    engine: js.UndefOr[scala.Nothing],
+    engine: Unit,
     reusable: Boolean
   ) = this()
   def this(
@@ -123,6 +106,22 @@ class DisplayPassPostProcess protected ()
     options: PostProcessOptions,
     camera: Nullable[typings.babylonjs.cameraMod.Camera],
     samplingMode: Double,
+    engine: typings.babylonjs.engineMod.Engine,
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    options: PostProcessOptions,
+    camera: Nullable[typings.babylonjs.cameraMod.Camera],
+    samplingMode: Unit,
+    engine: Unit,
+    reusable: Boolean
+  ) = this()
+  def this(
+    name: String,
+    options: PostProcessOptions,
+    camera: Nullable[typings.babylonjs.cameraMod.Camera],
+    samplingMode: Unit,
     engine: typings.babylonjs.engineMod.Engine,
     reusable: Boolean
   ) = this()
@@ -130,13 +129,15 @@ class DisplayPassPostProcess protected ()
 /* static members */
 object DisplayPassPostProcess {
   
-  /** @hidden */
-  @JSImport("babylonjs/index", "DisplayPassPostProcess._Parse")
+  @JSImport("babylonjs/index", "DisplayPassPostProcess")
   @js.native
-  def _Parse(
+  val ^ : js.Any = js.native
+  
+  /** @hidden */
+  inline def _Parse(
     parsedPostProcess: js.Any,
     targetCamera: typings.babylonjs.cameraMod.Camera,
     scene: typings.babylonjs.sceneMod.Scene,
     rootUrl: String
-  ): Nullable[typings.babylonjs.displayPassPostProcessMod.DisplayPassPostProcess] = js.native
+  ): Nullable[typings.babylonjs.displayPassPostProcessMod.DisplayPassPostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.displayPassPostProcessMod.DisplayPassPostProcess]]
 }

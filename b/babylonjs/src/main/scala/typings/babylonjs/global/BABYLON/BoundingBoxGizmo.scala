@@ -2,7 +2,6 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.BoundingBoxGizmo")
@@ -13,23 +12,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param color The color of the gizmo
   */
 class BoundingBoxGizmo ()
-  extends typings.babylonjs.BABYLON.BoundingBoxGizmo {
+  extends StObject
+     with typings.babylonjs.BABYLON.BoundingBoxGizmo {
   def this(color: typings.babylonjs.BABYLON.Color3) = this()
-  def this(color: js.UndefOr[scala.Nothing], gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer) = this()
+  def this(color: Unit, gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer) = this()
   def this(
     color: typings.babylonjs.BABYLON.Color3,
     gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer
   ) = this()
+  
+  /**
+    * Releases all held resources
+    */
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
 }
 /* static members */
 object BoundingBoxGizmo {
+  
+  @JSGlobal("BABYLON.BoundingBoxGizmo")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Makes a mesh not pickable and wraps the mesh inside of a bounding box mesh that is pickable. (This is useful to avoid picking within complex geometry)
     * @param mesh the mesh to wrap in the bounding box mesh and make not pickable
     * @returns the bounding box mesh with the passed in mesh as a child
     */
-  @JSGlobal("BABYLON.BoundingBoxGizmo.MakeNotPickableAndWrapInBoundingBox")
-  @js.native
-  def MakeNotPickableAndWrapInBoundingBox(mesh: typings.babylonjs.BABYLON.Mesh): typings.babylonjs.BABYLON.Mesh = js.native
+  inline def MakeNotPickableAndWrapInBoundingBox(mesh: typings.babylonjs.BABYLON.Mesh): typings.babylonjs.BABYLON.Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("MakeNotPickableAndWrapInBoundingBox")(mesh.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
 }

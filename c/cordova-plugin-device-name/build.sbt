@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cordova-plugin-device-name"
-version := "v1.1.0-dt-20201002Z-c3e29e"
+version := "v1.1.0-dt-20201002Z-2762d0"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

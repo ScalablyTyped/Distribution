@@ -2,55 +2,47 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetedAnimation extends StObject {
   
   /**
     * Animation to perform
     */
-  var animation: Animation = js.native
+  var animation: Animation
   
   /**
     * Returns the string "TargetedAnimation"
     * @returns "TargetedAnimation"
     */
-  def getClassName(): String = js.native
+  def getClassName(): String
   
   /**
     * Serialize the object
     * @returns the JSON object representing the current entity
     */
-  def serialize(): js.Any = js.native
+  def serialize(): js.Any
   
   /**
     * Target to animate
     */
-  var target: js.Any = js.native
+  var target: js.Any
 }
 object TargetedAnimation {
   
-  @scala.inline
-  def apply(animation: Animation, getClassName: () => String, serialize: () => js.Any, target: js.Any): TargetedAnimation = {
+  inline def apply(animation: Animation, getClassName: () => String, serialize: () => js.Any, target: js.Any): TargetedAnimation = {
     val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], getClassName = js.Any.fromFunction0(getClassName), serialize = js.Any.fromFunction0(serialize), target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetedAnimation]
   }
   
-  @scala.inline
-  implicit class TargetedAnimationMutableBuilder[Self <: TargetedAnimation] (val x: Self) extends AnyVal {
+  extension [Self <: TargetedAnimation](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetClassName(value: () => String): Self = StObject.set(x, "getClassName", js.Any.fromFunction0(value))
+    inline def setGetClassName(value: () => String): Self = StObject.set(x, "getClassName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSerialize(value: () => js.Any): Self = StObject.set(x, "serialize", js.Any.fromFunction0(value))
+    inline def setSerialize(value: () => js.Any): Self = StObject.set(x, "serialize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

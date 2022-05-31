@@ -4,7 +4,6 @@ import typings.babylonjs.cameraInputsManagerMod.ICameraInput
 import typings.babylonjs.freeCameraMod.FreeCamera
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object freeCameraTouchInputMod {
@@ -16,23 +15,25 @@ object freeCameraTouchInputMod {
     * @see https://doc.babylonjs.com/how_to/customizing_camera_inputs
     * @param allowMouse Defines if mouse events can be treated as touch events
     */
-  class FreeCameraTouchInput () extends ICameraInput[FreeCamera] {
+  class FreeCameraTouchInput ()
+    extends StObject
+       with ICameraInput[FreeCamera] {
     def this(/**
       * Define if mouse events can be treated as touch events
       */
     allowMouse: Boolean) = this()
     
-    var _observer: js.Any = js.native
+    /* private */ var _observer: js.Any = js.native
     
-    var _offsetX: js.Any = js.native
+    /* private */ var _offsetX: js.Any = js.native
     
-    var _offsetY: js.Any = js.native
+    /* private */ var _offsetY: js.Any = js.native
     
-    var _onLostFocus: js.Any = js.native
+    /* private */ var _onLostFocus: js.Any = js.native
     
-    var _pointerInput: js.Any = js.native
+    /* private */ var _pointerInput: js.Any = js.native
     
-    var _pointerPressed: js.Any = js.native
+    /* private */ var _pointerPressed: js.Any = js.native
     
     /**
       * Define if mouse events can be treated as touch events

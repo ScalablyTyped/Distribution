@@ -4,7 +4,6 @@ import typings.babylonjs.internalTextureMod.InternalTexture
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object engineVideoTextureMod {
@@ -12,7 +11,6 @@ object engineVideoTextureMod {
   /* augmented module */
   object babylonjsEnginesThinEngineAugmentingMod {
     
-    @js.native
     trait ThinEngine extends StObject {
       
       /**
@@ -21,21 +19,18 @@ object engineVideoTextureMod {
         * @param video defines the video element to use
         * @param invertY defines if data must be stored with Y axis inverted
         */
-      def updateVideoTexture(texture: Nullable[InternalTexture], video: HTMLVideoElement, invertY: Boolean): Unit = js.native
+      def updateVideoTexture(texture: Nullable[InternalTexture], video: HTMLVideoElement, invertY: Boolean): Unit
     }
     object ThinEngine {
       
-      @scala.inline
-      def apply(updateVideoTexture: (Nullable[InternalTexture], HTMLVideoElement, Boolean) => Unit): ThinEngine = {
+      inline def apply(updateVideoTexture: (Nullable[InternalTexture], HTMLVideoElement, Boolean) => Unit): ThinEngine = {
         val __obj = js.Dynamic.literal(updateVideoTexture = js.Any.fromFunction3(updateVideoTexture))
         __obj.asInstanceOf[ThinEngine]
       }
       
-      @scala.inline
-      implicit class ThinEngineMutableBuilder[Self <: ThinEngine] (val x: Self) extends AnyVal {
+      extension [Self <: ThinEngine](x: Self) {
         
-        @scala.inline
-        def setUpdateVideoTexture(value: (Nullable[InternalTexture], HTMLVideoElement, Boolean) => Unit): Self = StObject.set(x, "updateVideoTexture", js.Any.fromFunction3(value))
+        inline def setUpdateVideoTexture(value: (Nullable[InternalTexture], HTMLVideoElement, Boolean) => Unit): Self = StObject.set(x, "updateVideoTexture", js.Any.fromFunction3(value))
       }
     }
   }

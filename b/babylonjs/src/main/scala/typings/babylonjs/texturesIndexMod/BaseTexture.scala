@@ -5,7 +5,6 @@ import typings.babylonjs.thinEngineMod.ThinEngine
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Materials/Textures/index", "BaseTexture")
@@ -35,21 +34,17 @@ object BaseTexture {
   @JSImport("babylonjs/Materials/Textures/index", "BaseTexture.DEFAULT_ANISOTROPIC_FILTERING_LEVEL")
   @js.native
   def DEFAULT_ANISOTROPIC_FILTERING_LEVEL: Double = js.native
-  @scala.inline
-  def DEFAULT_ANISOTROPIC_FILTERING_LEVEL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_ANISOTROPIC_FILTERING_LEVEL")(x.asInstanceOf[js.Any])
+  inline def DEFAULT_ANISOTROPIC_FILTERING_LEVEL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_ANISOTROPIC_FILTERING_LEVEL")(x.asInstanceOf[js.Any])
   
   /**
     * Helper function to be called back once a list of texture contains only ready textures.
     * @param textures Define the list of textures to wait for
     * @param callback Define the callback triggered once the entire list will be ready
     */
-  @JSImport("babylonjs/Materials/Textures/index", "BaseTexture.WhenAllReady")
-  @js.native
-  def WhenAllReady(textures: js.Array[typings.babylonjs.baseTextureMod.BaseTexture], callback: js.Function0[Unit]): Unit = js.native
+  inline def WhenAllReady(textures: js.Array[typings.babylonjs.baseTextureMod.BaseTexture], callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("WhenAllReady")(textures.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("babylonjs/Materials/Textures/index", "BaseTexture._isScene")
   @js.native
   def _isScene: js.Any = js.native
-  @scala.inline
-  def _isScene_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_isScene")(x.asInstanceOf[js.Any])
+  inline def _isScene_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_isScene")(x.asInstanceOf[js.Any])
 }

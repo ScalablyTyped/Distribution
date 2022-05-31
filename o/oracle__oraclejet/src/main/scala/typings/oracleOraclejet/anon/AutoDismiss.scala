@@ -12,71 +12,55 @@ import typings.oracleOraclejet.oracleOraclejetStrings.start
 import typings.oracleOraclejet.oracleOraclejetStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoDismiss extends StObject {
   
-  var autoDismiss: js.UndefOr[focusLoss | none] = js.native
+  var autoDismiss: js.UndefOr[focusLoss | none] = js.undefined
   
-  var content: String = js.native
+  var content: String
   
-  var displayMode: js.UndefOr[push | overlay] = js.native
+  var displayMode: js.UndefOr[push | overlay] = js.undefined
   
-  var edge: js.UndefOr[start | end | top | bottom] = js.native
+  var edge: js.UndefOr[start | end | top | bottom] = js.undefined
   
-  var modality: js.UndefOr[modal | modeless] = js.native
+  var modality: js.UndefOr[modal | modeless] = js.undefined
   
-  var selector: String = js.native
+  var selector: String
   
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
 }
 object AutoDismiss {
   
-  @scala.inline
-  def apply(content: String, selector: String): AutoDismiss = {
+  inline def apply(content: String, selector: String): AutoDismiss = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoDismiss]
   }
   
-  @scala.inline
-  implicit class AutoDismissMutableBuilder[Self <: AutoDismiss] (val x: Self) extends AnyVal {
+  extension [Self <: AutoDismiss](x: Self) {
     
-    @scala.inline
-    def setAutoDismiss(value: focusLoss | none): Self = StObject.set(x, "autoDismiss", value.asInstanceOf[js.Any])
+    inline def setAutoDismiss(value: focusLoss | none): Self = StObject.set(x, "autoDismiss", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoDismissUndefined: Self = StObject.set(x, "autoDismiss", js.undefined)
+    inline def setAutoDismissUndefined: Self = StObject.set(x, "autoDismiss", js.undefined)
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayMode(value: push | overlay): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
+    inline def setDisplayMode(value: push | overlay): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayModeUndefined: Self = StObject.set(x, "displayMode", js.undefined)
+    inline def setDisplayModeUndefined: Self = StObject.set(x, "displayMode", js.undefined)
     
-    @scala.inline
-    def setEdge(value: start | end | top | bottom): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
+    inline def setEdge(value: start | end | top | bottom): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgeUndefined: Self = StObject.set(x, "edge", js.undefined)
+    inline def setEdgeUndefined: Self = StObject.set(x, "edge", js.undefined)
     
-    @scala.inline
-    def setModality(value: modal | modeless): Self = StObject.set(x, "modality", value.asInstanceOf[js.Any])
+    inline def setModality(value: modal | modeless): Self = StObject.set(x, "modality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalityUndefined: Self = StObject.set(x, "modality", js.undefined)
+    inline def setModalityUndefined: Self = StObject.set(x, "modality", js.undefined)
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

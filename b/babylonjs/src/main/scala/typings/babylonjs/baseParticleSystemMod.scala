@@ -28,7 +28,6 @@ import typings.babylonjs.thinEngineMod.ThinEngine
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseParticleSystemMod {
@@ -43,9 +42,9 @@ object baseParticleSystemMod {
       */
     def this(name: String) = this()
     
-    var _alphaRemapGradients: Nullable[js.Array[FactorGradient]] = js.native
+    /* protected */ var _alphaRemapGradients: Nullable[js.Array[FactorGradient]] = js.native
     
-    var _angularSpeedGradients: Nullable[js.Array[FactorGradient]] = js.native
+    /* protected */ var _angularSpeedGradients: Nullable[js.Array[FactorGradient]] = js.native
     
     /**
       * Attaches a new image processing configuration to the Standard Material.
@@ -53,46 +52,46 @@ object baseParticleSystemMod {
       */
     /* protected */ def _attachImageProcessingConfiguration(configuration: Nullable[ImageProcessingConfiguration]): Unit = js.native
     
-    var _colorGradients: Nullable[js.Array[ColorGradient]] = js.native
+    /* protected */ var _colorGradients: Nullable[js.Array[ColorGradient]] = js.native
     
-    var _colorRemapGradients: Nullable[js.Array[FactorGradient]] = js.native
+    /* protected */ var _colorRemapGradients: Nullable[js.Array[FactorGradient]] = js.native
     
-    var _dragGradients: Nullable[js.Array[FactorGradient]] = js.native
+    /* protected */ var _dragGradients: Nullable[js.Array[FactorGradient]] = js.native
     
-    var _emitRateGradients: Nullable[js.Array[FactorGradient]] = js.native
+    /* protected */ var _emitRateGradients: Nullable[js.Array[FactorGradient]] = js.native
     
     /**
       * The engine the particle system belongs to.
       */
-    var _engine: ThinEngine = js.native
+    /* protected */ var _engine: ThinEngine = js.native
     
     /* protected */ def _hasTargetStopDurationDependantGradient(): Boolean | Null = js.native
     
     /**
       * Default configuration related to image processing available in the standard Material.
       */
-    var _imageProcessingConfiguration: Nullable[ImageProcessingConfiguration] = js.native
+    /* protected */ var _imageProcessingConfiguration: Nullable[ImageProcessingConfiguration] = js.native
     
     /**
       * Local cache of defines for image processing.
       */
-    var _imageProcessingConfigurationDefines: ImageProcessingConfigurationDefines = js.native
+    /* protected */ var _imageProcessingConfigurationDefines: ImageProcessingConfigurationDefines = js.native
     
     /** @hidden */
-    var _isAnimationSheetEnabled: Boolean = js.native
+    /* protected */ var _isAnimationSheetEnabled: Boolean = js.native
     
-    var _isBillboardBased: Boolean = js.native
+    /* protected */ var _isBillboardBased: Boolean = js.native
     
     /** @hidden */
     var _isSubEmitter: Boolean = js.native
     
-    var _lifeTimeGradients: Nullable[js.Array[FactorGradient]] = js.native
+    /* protected */ var _lifeTimeGradients: Nullable[js.Array[FactorGradient]] = js.native
     
-    var _limitVelocityGradients: Nullable[js.Array[FactorGradient]] = js.native
+    /* protected */ var _limitVelocityGradients: Nullable[js.Array[FactorGradient]] = js.native
     
-    var _noiseTexture: js.Any = js.native
+    /* private */ var _noiseTexture: js.Any = js.native
     
-    var _rampGradients: Nullable[js.Array[Color3Gradient]] = js.native
+    /* protected */ var _rampGradients: Nullable[js.Array[Color3Gradient]] = js.native
     
     /** @hidden */
     /* protected */ def _removeGradientAndTexture(gradient: Double, gradients: Nullable[js.Array[IValueGradient]], texture: Nullable[RawTexture]): BaseParticleSystem = js.native
@@ -103,13 +102,13 @@ object baseParticleSystemMod {
     /**
       * The scene the particle system belongs to.
       */
-    var _scene: Nullable[Scene] = js.native
+    /* protected */ var _scene: Nullable[Scene] = js.native
     
-    var _sizeGradients: Nullable[js.Array[FactorGradient]] = js.native
+    /* protected */ var _sizeGradients: Nullable[js.Array[FactorGradient]] = js.native
     
-    var _startSizeGradients: Nullable[js.Array[FactorGradient]] = js.native
+    /* protected */ var _startSizeGradients: Nullable[js.Array[FactorGradient]] = js.native
     
-    var _velocityGradients: Nullable[js.Array[FactorGradient]] = js.native
+    /* protected */ var _velocityGradients: Nullable[js.Array[FactorGradient]] = js.native
     
     /**
       * List of animations used by the particle system.
@@ -179,9 +178,9 @@ object baseParticleSystemMod {
       * @returns the emitter
       */
     def createConeEmitter(): ConeParticleEmitter = js.native
-    def createConeEmitter(radius: js.UndefOr[scala.Nothing], angle: Double): ConeParticleEmitter = js.native
     def createConeEmitter(radius: Double): ConeParticleEmitter = js.native
     def createConeEmitter(radius: Double, angle: Double): ConeParticleEmitter = js.native
+    def createConeEmitter(radius: Unit, angle: Double): ConeParticleEmitter = js.native
     
     /**
       * Creates a Cylinder Emitter for the particle system (emits from the cylinder to the particle position)
@@ -192,56 +191,21 @@ object baseParticleSystemMod {
       * @returns the emitter
       */
     def createCylinderEmitter(): CylinderParticleEmitter = js.native
-    def createCylinderEmitter(
-      radius: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      radiusRange: js.UndefOr[scala.Nothing],
-      directionRandomizer: Double
-    ): CylinderParticleEmitter = js.native
-    def createCylinderEmitter(radius: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], radiusRange: Double): CylinderParticleEmitter = js.native
-    def createCylinderEmitter(
-      radius: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      radiusRange: Double,
-      directionRandomizer: Double
-    ): CylinderParticleEmitter = js.native
-    def createCylinderEmitter(radius: js.UndefOr[scala.Nothing], height: Double): CylinderParticleEmitter = js.native
-    def createCylinderEmitter(
-      radius: js.UndefOr[scala.Nothing],
-      height: Double,
-      radiusRange: js.UndefOr[scala.Nothing],
-      directionRandomizer: Double
-    ): CylinderParticleEmitter = js.native
-    def createCylinderEmitter(radius: js.UndefOr[scala.Nothing], height: Double, radiusRange: Double): CylinderParticleEmitter = js.native
-    def createCylinderEmitter(
-      radius: js.UndefOr[scala.Nothing],
-      height: Double,
-      radiusRange: Double,
-      directionRandomizer: Double
-    ): CylinderParticleEmitter = js.native
     def createCylinderEmitter(radius: Double): CylinderParticleEmitter = js.native
-    def createCylinderEmitter(
-      radius: Double,
-      height: js.UndefOr[scala.Nothing],
-      radiusRange: js.UndefOr[scala.Nothing],
-      directionRandomizer: Double
-    ): CylinderParticleEmitter = js.native
-    def createCylinderEmitter(radius: Double, height: js.UndefOr[scala.Nothing], radiusRange: Double): CylinderParticleEmitter = js.native
-    def createCylinderEmitter(
-      radius: Double,
-      height: js.UndefOr[scala.Nothing],
-      radiusRange: Double,
-      directionRandomizer: Double
-    ): CylinderParticleEmitter = js.native
     def createCylinderEmitter(radius: Double, height: Double): CylinderParticleEmitter = js.native
-    def createCylinderEmitter(
-      radius: Double,
-      height: Double,
-      radiusRange: js.UndefOr[scala.Nothing],
-      directionRandomizer: Double
-    ): CylinderParticleEmitter = js.native
     def createCylinderEmitter(radius: Double, height: Double, radiusRange: Double): CylinderParticleEmitter = js.native
     def createCylinderEmitter(radius: Double, height: Double, radiusRange: Double, directionRandomizer: Double): CylinderParticleEmitter = js.native
+    def createCylinderEmitter(radius: Double, height: Double, radiusRange: Unit, directionRandomizer: Double): CylinderParticleEmitter = js.native
+    def createCylinderEmitter(radius: Double, height: Unit, radiusRange: Double): CylinderParticleEmitter = js.native
+    def createCylinderEmitter(radius: Double, height: Unit, radiusRange: Double, directionRandomizer: Double): CylinderParticleEmitter = js.native
+    def createCylinderEmitter(radius: Double, height: Unit, radiusRange: Unit, directionRandomizer: Double): CylinderParticleEmitter = js.native
+    def createCylinderEmitter(radius: Unit, height: Double): CylinderParticleEmitter = js.native
+    def createCylinderEmitter(radius: Unit, height: Double, radiusRange: Double): CylinderParticleEmitter = js.native
+    def createCylinderEmitter(radius: Unit, height: Double, radiusRange: Double, directionRandomizer: Double): CylinderParticleEmitter = js.native
+    def createCylinderEmitter(radius: Unit, height: Double, radiusRange: Unit, directionRandomizer: Double): CylinderParticleEmitter = js.native
+    def createCylinderEmitter(radius: Unit, height: Unit, radiusRange: Double): CylinderParticleEmitter = js.native
+    def createCylinderEmitter(radius: Unit, height: Unit, radiusRange: Double, directionRandomizer: Double): CylinderParticleEmitter = js.native
+    def createCylinderEmitter(radius: Unit, height: Unit, radiusRange: Unit, directionRandomizer: Double): CylinderParticleEmitter = js.native
     
     /**
       * Creates a Directed Cylinder Emitter for the particle system (emits between direction1 and direction2)
@@ -253,147 +217,37 @@ object baseParticleSystemMod {
       * @returns the emitter
       */
     def createDirectedCylinderEmitter(): CylinderDirectedParticleEmitter = js.native
-    def createDirectedCylinderEmitter(
-      radius: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      radiusRange: js.UndefOr[scala.Nothing],
-      direction1: js.UndefOr[scala.Nothing],
-      direction2: Vector3
-    ): CylinderDirectedParticleEmitter = js.native
-    def createDirectedCylinderEmitter(
-      radius: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      radiusRange: js.UndefOr[scala.Nothing],
-      direction1: Vector3
-    ): CylinderDirectedParticleEmitter = js.native
-    def createDirectedCylinderEmitter(
-      radius: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      radiusRange: js.UndefOr[scala.Nothing],
-      direction1: Vector3,
-      direction2: Vector3
-    ): CylinderDirectedParticleEmitter = js.native
-    def createDirectedCylinderEmitter(radius: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], radiusRange: Double): CylinderDirectedParticleEmitter = js.native
-    def createDirectedCylinderEmitter(
-      radius: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      radiusRange: Double,
-      direction1: js.UndefOr[scala.Nothing],
-      direction2: Vector3
-    ): CylinderDirectedParticleEmitter = js.native
-    def createDirectedCylinderEmitter(
-      radius: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      radiusRange: Double,
-      direction1: Vector3
-    ): CylinderDirectedParticleEmitter = js.native
-    def createDirectedCylinderEmitter(
-      radius: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      radiusRange: Double,
-      direction1: Vector3,
-      direction2: Vector3
-    ): CylinderDirectedParticleEmitter = js.native
-    def createDirectedCylinderEmitter(radius: js.UndefOr[scala.Nothing], height: Double): CylinderDirectedParticleEmitter = js.native
-    def createDirectedCylinderEmitter(
-      radius: js.UndefOr[scala.Nothing],
-      height: Double,
-      radiusRange: js.UndefOr[scala.Nothing],
-      direction1: js.UndefOr[scala.Nothing],
-      direction2: Vector3
-    ): CylinderDirectedParticleEmitter = js.native
-    def createDirectedCylinderEmitter(
-      radius: js.UndefOr[scala.Nothing],
-      height: Double,
-      radiusRange: js.UndefOr[scala.Nothing],
-      direction1: Vector3
-    ): CylinderDirectedParticleEmitter = js.native
-    def createDirectedCylinderEmitter(
-      radius: js.UndefOr[scala.Nothing],
-      height: Double,
-      radiusRange: js.UndefOr[scala.Nothing],
-      direction1: Vector3,
-      direction2: Vector3
-    ): CylinderDirectedParticleEmitter = js.native
-    def createDirectedCylinderEmitter(radius: js.UndefOr[scala.Nothing], height: Double, radiusRange: Double): CylinderDirectedParticleEmitter = js.native
-    def createDirectedCylinderEmitter(
-      radius: js.UndefOr[scala.Nothing],
-      height: Double,
-      radiusRange: Double,
-      direction1: js.UndefOr[scala.Nothing],
-      direction2: Vector3
-    ): CylinderDirectedParticleEmitter = js.native
-    def createDirectedCylinderEmitter(radius: js.UndefOr[scala.Nothing], height: Double, radiusRange: Double, direction1: Vector3): CylinderDirectedParticleEmitter = js.native
-    def createDirectedCylinderEmitter(
-      radius: js.UndefOr[scala.Nothing],
-      height: Double,
-      radiusRange: Double,
-      direction1: Vector3,
-      direction2: Vector3
-    ): CylinderDirectedParticleEmitter = js.native
     def createDirectedCylinderEmitter(radius: Double): CylinderDirectedParticleEmitter = js.native
-    def createDirectedCylinderEmitter(
-      radius: Double,
-      height: js.UndefOr[scala.Nothing],
-      radiusRange: js.UndefOr[scala.Nothing],
-      direction1: js.UndefOr[scala.Nothing],
-      direction2: Vector3
-    ): CylinderDirectedParticleEmitter = js.native
-    def createDirectedCylinderEmitter(
-      radius: Double,
-      height: js.UndefOr[scala.Nothing],
-      radiusRange: js.UndefOr[scala.Nothing],
-      direction1: Vector3
-    ): CylinderDirectedParticleEmitter = js.native
-    def createDirectedCylinderEmitter(
-      radius: Double,
-      height: js.UndefOr[scala.Nothing],
-      radiusRange: js.UndefOr[scala.Nothing],
-      direction1: Vector3,
-      direction2: Vector3
-    ): CylinderDirectedParticleEmitter = js.native
-    def createDirectedCylinderEmitter(radius: Double, height: js.UndefOr[scala.Nothing], radiusRange: Double): CylinderDirectedParticleEmitter = js.native
-    def createDirectedCylinderEmitter(
-      radius: Double,
-      height: js.UndefOr[scala.Nothing],
-      radiusRange: Double,
-      direction1: js.UndefOr[scala.Nothing],
-      direction2: Vector3
-    ): CylinderDirectedParticleEmitter = js.native
-    def createDirectedCylinderEmitter(radius: Double, height: js.UndefOr[scala.Nothing], radiusRange: Double, direction1: Vector3): CylinderDirectedParticleEmitter = js.native
-    def createDirectedCylinderEmitter(
-      radius: Double,
-      height: js.UndefOr[scala.Nothing],
-      radiusRange: Double,
-      direction1: Vector3,
-      direction2: Vector3
-    ): CylinderDirectedParticleEmitter = js.native
     def createDirectedCylinderEmitter(radius: Double, height: Double): CylinderDirectedParticleEmitter = js.native
-    def createDirectedCylinderEmitter(
-      radius: Double,
-      height: Double,
-      radiusRange: js.UndefOr[scala.Nothing],
-      direction1: js.UndefOr[scala.Nothing],
-      direction2: Vector3
-    ): CylinderDirectedParticleEmitter = js.native
-    def createDirectedCylinderEmitter(radius: Double, height: Double, radiusRange: js.UndefOr[scala.Nothing], direction1: Vector3): CylinderDirectedParticleEmitter = js.native
-    def createDirectedCylinderEmitter(
-      radius: Double,
-      height: Double,
-      radiusRange: js.UndefOr[scala.Nothing],
-      direction1: Vector3,
-      direction2: Vector3
-    ): CylinderDirectedParticleEmitter = js.native
     def createDirectedCylinderEmitter(radius: Double, height: Double, radiusRange: Double): CylinderDirectedParticleEmitter = js.native
-    def createDirectedCylinderEmitter(
-      radius: Double,
-      height: Double,
-      radiusRange: Double,
-      direction1: js.UndefOr[scala.Nothing],
-      direction2: Vector3
-    ): CylinderDirectedParticleEmitter = js.native
+    def createDirectedCylinderEmitter(radius: Double, height: Double, radiusRange: Double, direction1: Unit, direction2: Vector3): CylinderDirectedParticleEmitter = js.native
     def createDirectedCylinderEmitter(radius: Double, height: Double, radiusRange: Double, direction1: Vector3): CylinderDirectedParticleEmitter = js.native
     def createDirectedCylinderEmitter(radius: Double, height: Double, radiusRange: Double, direction1: Vector3, direction2: Vector3): CylinderDirectedParticleEmitter = js.native
+    def createDirectedCylinderEmitter(radius: Double, height: Double, radiusRange: Unit, direction1: Unit, direction2: Vector3): CylinderDirectedParticleEmitter = js.native
+    def createDirectedCylinderEmitter(radius: Double, height: Double, radiusRange: Unit, direction1: Vector3): CylinderDirectedParticleEmitter = js.native
+    def createDirectedCylinderEmitter(radius: Double, height: Double, radiusRange: Unit, direction1: Vector3, direction2: Vector3): CylinderDirectedParticleEmitter = js.native
+    def createDirectedCylinderEmitter(radius: Double, height: Unit, radiusRange: Double): CylinderDirectedParticleEmitter = js.native
+    def createDirectedCylinderEmitter(radius: Double, height: Unit, radiusRange: Double, direction1: Unit, direction2: Vector3): CylinderDirectedParticleEmitter = js.native
+    def createDirectedCylinderEmitter(radius: Double, height: Unit, radiusRange: Double, direction1: Vector3): CylinderDirectedParticleEmitter = js.native
+    def createDirectedCylinderEmitter(radius: Double, height: Unit, radiusRange: Double, direction1: Vector3, direction2: Vector3): CylinderDirectedParticleEmitter = js.native
+    def createDirectedCylinderEmitter(radius: Double, height: Unit, radiusRange: Unit, direction1: Unit, direction2: Vector3): CylinderDirectedParticleEmitter = js.native
+    def createDirectedCylinderEmitter(radius: Double, height: Unit, radiusRange: Unit, direction1: Vector3): CylinderDirectedParticleEmitter = js.native
+    def createDirectedCylinderEmitter(radius: Double, height: Unit, radiusRange: Unit, direction1: Vector3, direction2: Vector3): CylinderDirectedParticleEmitter = js.native
+    def createDirectedCylinderEmitter(radius: Unit, height: Double): CylinderDirectedParticleEmitter = js.native
+    def createDirectedCylinderEmitter(radius: Unit, height: Double, radiusRange: Double): CylinderDirectedParticleEmitter = js.native
+    def createDirectedCylinderEmitter(radius: Unit, height: Double, radiusRange: Double, direction1: Unit, direction2: Vector3): CylinderDirectedParticleEmitter = js.native
+    def createDirectedCylinderEmitter(radius: Unit, height: Double, radiusRange: Double, direction1: Vector3): CylinderDirectedParticleEmitter = js.native
+    def createDirectedCylinderEmitter(radius: Unit, height: Double, radiusRange: Double, direction1: Vector3, direction2: Vector3): CylinderDirectedParticleEmitter = js.native
+    def createDirectedCylinderEmitter(radius: Unit, height: Double, radiusRange: Unit, direction1: Unit, direction2: Vector3): CylinderDirectedParticleEmitter = js.native
+    def createDirectedCylinderEmitter(radius: Unit, height: Double, radiusRange: Unit, direction1: Vector3): CylinderDirectedParticleEmitter = js.native
+    def createDirectedCylinderEmitter(radius: Unit, height: Double, radiusRange: Unit, direction1: Vector3, direction2: Vector3): CylinderDirectedParticleEmitter = js.native
+    def createDirectedCylinderEmitter(radius: Unit, height: Unit, radiusRange: Double): CylinderDirectedParticleEmitter = js.native
+    def createDirectedCylinderEmitter(radius: Unit, height: Unit, radiusRange: Double, direction1: Unit, direction2: Vector3): CylinderDirectedParticleEmitter = js.native
+    def createDirectedCylinderEmitter(radius: Unit, height: Unit, radiusRange: Double, direction1: Vector3): CylinderDirectedParticleEmitter = js.native
+    def createDirectedCylinderEmitter(radius: Unit, height: Unit, radiusRange: Double, direction1: Vector3, direction2: Vector3): CylinderDirectedParticleEmitter = js.native
+    def createDirectedCylinderEmitter(radius: Unit, height: Unit, radiusRange: Unit, direction1: Unit, direction2: Vector3): CylinderDirectedParticleEmitter = js.native
+    def createDirectedCylinderEmitter(radius: Unit, height: Unit, radiusRange: Unit, direction1: Vector3): CylinderDirectedParticleEmitter = js.native
+    def createDirectedCylinderEmitter(radius: Unit, height: Unit, radiusRange: Unit, direction1: Vector3, direction2: Vector3): CylinderDirectedParticleEmitter = js.native
     
     /**
       * Creates a Directed Sphere Emitter for the particle system (emits between direction1 and direction2)
@@ -403,13 +257,13 @@ object baseParticleSystemMod {
       * @returns the emitter
       */
     def createDirectedSphereEmitter(): SphereDirectedParticleEmitter = js.native
-    def createDirectedSphereEmitter(radius: js.UndefOr[scala.Nothing], direction1: js.UndefOr[scala.Nothing], direction2: Vector3): SphereDirectedParticleEmitter = js.native
-    def createDirectedSphereEmitter(radius: js.UndefOr[scala.Nothing], direction1: Vector3): SphereDirectedParticleEmitter = js.native
-    def createDirectedSphereEmitter(radius: js.UndefOr[scala.Nothing], direction1: Vector3, direction2: Vector3): SphereDirectedParticleEmitter = js.native
     def createDirectedSphereEmitter(radius: Double): SphereDirectedParticleEmitter = js.native
-    def createDirectedSphereEmitter(radius: Double, direction1: js.UndefOr[scala.Nothing], direction2: Vector3): SphereDirectedParticleEmitter = js.native
+    def createDirectedSphereEmitter(radius: Double, direction1: Unit, direction2: Vector3): SphereDirectedParticleEmitter = js.native
     def createDirectedSphereEmitter(radius: Double, direction1: Vector3): SphereDirectedParticleEmitter = js.native
     def createDirectedSphereEmitter(radius: Double, direction1: Vector3, direction2: Vector3): SphereDirectedParticleEmitter = js.native
+    def createDirectedSphereEmitter(radius: Unit, direction1: Unit, direction2: Vector3): SphereDirectedParticleEmitter = js.native
+    def createDirectedSphereEmitter(radius: Unit, direction1: Vector3): SphereDirectedParticleEmitter = js.native
+    def createDirectedSphereEmitter(radius: Unit, direction1: Vector3, direction2: Vector3): SphereDirectedParticleEmitter = js.native
     
     /**
       * Creates a Hemisphere Emitter for the particle system (emits along the hemisphere radius)
@@ -418,9 +272,9 @@ object baseParticleSystemMod {
       * @returns the emitter
       */
     def createHemisphericEmitter(): HemisphericParticleEmitter = js.native
-    def createHemisphericEmitter(radius: js.UndefOr[scala.Nothing], radiusRange: Double): HemisphericParticleEmitter = js.native
     def createHemisphericEmitter(radius: Double): HemisphericParticleEmitter = js.native
     def createHemisphericEmitter(radius: Double, radiusRange: Double): HemisphericParticleEmitter = js.native
+    def createHemisphericEmitter(radius: Unit, radiusRange: Double): HemisphericParticleEmitter = js.native
     
     /**
       * Creates a Point Emitter for the particle system (emits directly from the emitter position)
@@ -437,9 +291,9 @@ object baseParticleSystemMod {
       * @returns the emitter
       */
     def createSphereEmitter(): SphereParticleEmitter = js.native
-    def createSphereEmitter(radius: js.UndefOr[scala.Nothing], radiusRange: Double): SphereParticleEmitter = js.native
     def createSphereEmitter(radius: Double): SphereParticleEmitter = js.native
     def createSphereEmitter(radius: Double, radiusRange: Double): SphereParticleEmitter = js.native
+    def createSphereEmitter(radius: Unit, radiusRange: Double): SphereParticleEmitter = js.native
     
     /**
       * This can help using your own shader to render the particle system.
@@ -823,8 +677,7 @@ object baseParticleSystemMod {
     @JSImport("babylonjs/Particles/baseParticleSystem", "BaseParticleSystem.BLENDMODE_ADD")
     @js.native
     def BLENDMODE_ADD: Double = js.native
-    @scala.inline
-    def BLENDMODE_ADD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLENDMODE_ADD")(x.asInstanceOf[js.Any])
+    inline def BLENDMODE_ADD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLENDMODE_ADD")(x.asInstanceOf[js.Any])
     
     /**
       * Multiply current color with particle color
@@ -839,11 +692,9 @@ object baseParticleSystemMod {
     @JSImport("babylonjs/Particles/baseParticleSystem", "BaseParticleSystem.BLENDMODE_MULTIPLYADD")
     @js.native
     def BLENDMODE_MULTIPLYADD: Double = js.native
-    @scala.inline
-    def BLENDMODE_MULTIPLYADD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLENDMODE_MULTIPLYADD")(x.asInstanceOf[js.Any])
+    inline def BLENDMODE_MULTIPLYADD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLENDMODE_MULTIPLYADD")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def BLENDMODE_MULTIPLY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLENDMODE_MULTIPLY")(x.asInstanceOf[js.Any])
+    inline def BLENDMODE_MULTIPLY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLENDMODE_MULTIPLY")(x.asInstanceOf[js.Any])
     
     /**
       * Source color is added to the destination color without alpha affecting the result
@@ -851,8 +702,7 @@ object baseParticleSystemMod {
     @JSImport("babylonjs/Particles/baseParticleSystem", "BaseParticleSystem.BLENDMODE_ONEONE")
     @js.native
     def BLENDMODE_ONEONE: Double = js.native
-    @scala.inline
-    def BLENDMODE_ONEONE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLENDMODE_ONEONE")(x.asInstanceOf[js.Any])
+    inline def BLENDMODE_ONEONE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLENDMODE_ONEONE")(x.asInstanceOf[js.Any])
     
     /**
       * Blend current color and particle color using particle’s alpha
@@ -860,7 +710,6 @@ object baseParticleSystemMod {
     @JSImport("babylonjs/Particles/baseParticleSystem", "BaseParticleSystem.BLENDMODE_STANDARD")
     @js.native
     def BLENDMODE_STANDARD: Double = js.native
-    @scala.inline
-    def BLENDMODE_STANDARD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLENDMODE_STANDARD")(x.asInstanceOf[js.Any])
+    inline def BLENDMODE_STANDARD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLENDMODE_STANDARD")(x.asInstanceOf[js.Any])
   }
 }

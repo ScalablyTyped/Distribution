@@ -7131,8 +7131,4 @@ object mod extends Shortcut {
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
   override def _to: UnderscoreStatic = ^
-  
-  // The DOM is not required to be present, but these definitions reference type Element for the
-  // isElement check. If the DOM is present, this declaration will merge.
-  object global
 }

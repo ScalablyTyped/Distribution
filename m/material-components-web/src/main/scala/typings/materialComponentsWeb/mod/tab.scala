@@ -4,7 +4,6 @@ import typings.materialTab.anon.PartialMDCTabAdapter
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tab {
@@ -13,15 +12,17 @@ object tab {
   @js.native
   class MDCTab protected ()
     extends typings.materialTab.mod.MDCTab {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(root: Element, foundation: typings.materialTab.foundationMod.MDCTabFoundation, args: js.Any*) = this()
   }
   /* static members */
   object MDCTab {
     
-    @JSImport("material-components-web", "tab.MDCTab.attachTo")
+    @JSImport("material-components-web", "tab.MDCTab")
     @js.native
-    def attachTo(root: Element): typings.materialTab.componentMod.MDCTab = js.native
+    val ^ : js.Any = js.native
+    
+    inline def attachTo(root: Element): typings.materialTab.componentMod.MDCTab = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTab.componentMod.MDCTab]
   }
   
   @JSImport("material-components-web", "tab.MDCTabFoundation")
@@ -62,8 +63,7 @@ object tab {
     @JSImport("material-components-web", "tab.cssClasses.ACTIVE")
     @js.native
     def ACTIVE: String = js.native
-    @scala.inline
-    def ACTIVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACTIVE")(x.asInstanceOf[js.Any])
+    inline def ACTIVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACTIVE")(x.asInstanceOf[js.Any])
   }
   
   object strings {
@@ -75,37 +75,31 @@ object tab {
     @JSImport("material-components-web", "tab.strings.ARIA_SELECTED")
     @js.native
     def ARIA_SELECTED: String = js.native
-    @scala.inline
-    def ARIA_SELECTED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_SELECTED")(x.asInstanceOf[js.Any])
+    inline def ARIA_SELECTED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_SELECTED")(x.asInstanceOf[js.Any])
     
     @JSImport("material-components-web", "tab.strings.CONTENT_SELECTOR")
     @js.native
     def CONTENT_SELECTOR: String = js.native
-    @scala.inline
-    def CONTENT_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONTENT_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def CONTENT_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONTENT_SELECTOR")(x.asInstanceOf[js.Any])
     
     @JSImport("material-components-web", "tab.strings.INTERACTED_EVENT")
     @js.native
     def INTERACTED_EVENT: String = js.native
-    @scala.inline
-    def INTERACTED_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INTERACTED_EVENT")(x.asInstanceOf[js.Any])
+    inline def INTERACTED_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INTERACTED_EVENT")(x.asInstanceOf[js.Any])
     
     @JSImport("material-components-web", "tab.strings.RIPPLE_SELECTOR")
     @js.native
     def RIPPLE_SELECTOR: String = js.native
-    @scala.inline
-    def RIPPLE_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RIPPLE_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def RIPPLE_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RIPPLE_SELECTOR")(x.asInstanceOf[js.Any])
     
     @JSImport("material-components-web", "tab.strings.TABINDEX")
     @js.native
     def TABINDEX: String = js.native
-    @scala.inline
-    def TABINDEX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TABINDEX")(x.asInstanceOf[js.Any])
+    inline def TABINDEX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TABINDEX")(x.asInstanceOf[js.Any])
     
     @JSImport("material-components-web", "tab.strings.TAB_INDICATOR_SELECTOR")
     @js.native
     def TAB_INDICATOR_SELECTOR: String = js.native
-    @scala.inline
-    def TAB_INDICATOR_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TAB_INDICATOR_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def TAB_INDICATOR_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TAB_INDICATOR_SELECTOR")(x.asInstanceOf[js.Any])
   }
 }

@@ -2,34 +2,33 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CustomParticleEmitter extends IParticleEmitterType {
+trait CustomParticleEmitter
+  extends StObject
+     with IParticleEmitterType {
   
   /**
     * Parse properties from a JSON object
     * @param serializationObject defines the JSON object
     */
-  def parse(serializationObject: js.Any): Unit = js.native
+  def parse(serializationObject: js.Any): Unit
   
   /**
     * Gets or sets the destination generator that will create the final destination of each particle.
     *  * Index will be provided when used with GPU particle. Particle will be provided when used with CPU particles
     */
-  def particleDestinationGenerator(index: Double, particle: Nullable[Particle], outDestination: Vector3): Unit = js.native
+  def particleDestinationGenerator(index: Double, particle: Nullable[Particle], outDestination: Vector3): Unit
   
   /**
     * Gets or sets the position generator that will create the inital position of each particle.
     * Index will be provided when used with GPU particle. Particle will be provided when used with CPU particles
     */
-  def particlePositionGenerator(index: Double, particle: Nullable[Particle], outPosition: Vector3): Unit = js.native
+  def particlePositionGenerator(index: Double, particle: Nullable[Particle], outPosition: Vector3): Unit
 }
 object CustomParticleEmitter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     applyToShader: Effect => Unit,
     getClassName: () => String,
     getEffectDefines: () => String,
@@ -44,16 +43,12 @@ object CustomParticleEmitter {
     __obj.asInstanceOf[CustomParticleEmitter]
   }
   
-  @scala.inline
-  implicit class CustomParticleEmitterMutableBuilder[Self <: CustomParticleEmitter] (val x: Self) extends AnyVal {
+  extension [Self <: CustomParticleEmitter](x: Self) {
     
-    @scala.inline
-    def setParse(value: js.Any => Unit): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+    inline def setParse(value: js.Any => Unit): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParticleDestinationGenerator(value: (Double, Nullable[Particle], Vector3) => Unit): Self = StObject.set(x, "particleDestinationGenerator", js.Any.fromFunction3(value))
+    inline def setParticleDestinationGenerator(value: (Double, Nullable[Particle], Vector3) => Unit): Self = StObject.set(x, "particleDestinationGenerator", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setParticlePositionGenerator(value: (Double, Nullable[Particle], Vector3) => Unit): Self = StObject.set(x, "particlePositionGenerator", js.Any.fromFunction3(value))
+    inline def setParticlePositionGenerator(value: (Double, Nullable[Particle], Vector3) => Unit): Self = StObject.set(x, "particlePositionGenerator", js.Any.fromFunction3(value))
   }
 }

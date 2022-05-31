@@ -8,7 +8,6 @@ import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.sceneMod.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shadowLightMod {
@@ -24,11 +23,11 @@ object shadowLightMod {
       */
     def this(name: String, scene: Scene) = this()
     
-    var _direction: Vector3 = js.native
+    /* protected */ var _direction: Vector3 = js.native
     
-    var _needProjectionMatrixCompute: js.Any = js.native
+    /* private */ var _needProjectionMatrixCompute: js.Any = js.native
     
-    var _position: Vector3 = js.native
+    /* protected */ var _position: Vector3 = js.native
     
     /* protected */ def _setDefaultShadowProjectionMatrix(matrix: Matrix, viewMatrix: Matrix, renderList: js.Array[AbstractMesh]): Unit = js.native
     
@@ -36,9 +35,9 @@ object shadowLightMod {
     
     /* protected */ def _setPosition(value: Vector3): Unit = js.native
     
-    var _shadowMaxZ: Double = js.native
+    /* protected */ var _shadowMaxZ: Double = js.native
     
-    var _shadowMinZ: Double = js.native
+    /* protected */ var _shadowMinZ: Double = js.native
     
     /**
       * In 2d mode (needCube being false), gets the direction used to cast the shadow.

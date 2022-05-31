@@ -1,6 +1,6 @@
 package typings.webix.global.webix
 
-import typings.webix.webix.DataCollectionConfig
+import typings.webix.mod.DataCollectionConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class DataCollectionCls ()
   extends StObject
-     with typings.webix.webix.DataCollection {
+     with typings.webix.mod.DataCollection {
   def this(config: DataCollectionConfig) = this()
 }

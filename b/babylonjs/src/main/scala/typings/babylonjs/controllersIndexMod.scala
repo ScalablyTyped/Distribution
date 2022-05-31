@@ -4,7 +4,6 @@ import typings.babylonjs.poseEnabledControllerMod.GamePadFactory
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object controllersIndexMod {
@@ -39,8 +38,7 @@ object controllersIndexMod {
     @JSImport("babylonjs/Gamepads/Controllers/index", "DaydreamController.MODEL_BASE_URL")
     @js.native
     def MODEL_BASE_URL: String = js.native
-    @scala.inline
-    def MODEL_BASE_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_BASE_URL")(x.asInstanceOf[js.Any])
+    inline def MODEL_BASE_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_BASE_URL")(x.asInstanceOf[js.Any])
     
     /**
       * File name for the controller model.
@@ -48,8 +46,7 @@ object controllersIndexMod {
     @JSImport("babylonjs/Gamepads/Controllers/index", "DaydreamController.MODEL_FILENAME")
     @js.native
     def MODEL_FILENAME: String = js.native
-    @scala.inline
-    def MODEL_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_FILENAME")(x.asInstanceOf[js.Any])
+    inline def MODEL_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_FILENAME")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Gamepads/Controllers/index", "GearVRController")
@@ -82,8 +79,7 @@ object controllersIndexMod {
     @JSImport("babylonjs/Gamepads/Controllers/index", "GearVRController.MODEL_BASE_URL")
     @js.native
     def MODEL_BASE_URL: String = js.native
-    @scala.inline
-    def MODEL_BASE_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_BASE_URL")(x.asInstanceOf[js.Any])
+    inline def MODEL_BASE_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_BASE_URL")(x.asInstanceOf[js.Any])
     
     /**
       * File name for the controller model.
@@ -91,8 +87,7 @@ object controllersIndexMod {
     @JSImport("babylonjs/Gamepads/Controllers/index", "GearVRController.MODEL_FILENAME")
     @js.native
     def MODEL_FILENAME: String = js.native
-    @scala.inline
-    def MODEL_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_FILENAME")(x.asInstanceOf[js.Any])
+    inline def MODEL_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_FILENAME")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Gamepads/Controllers/index", "GenericController")
@@ -146,8 +141,7 @@ object controllersIndexMod {
     @JSImport("babylonjs/Gamepads/Controllers/index", "OculusTouchController.MODEL_BASE_URL")
     @js.native
     def MODEL_BASE_URL: String = js.native
-    @scala.inline
-    def MODEL_BASE_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_BASE_URL")(x.asInstanceOf[js.Any])
+    inline def MODEL_BASE_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_BASE_URL")(x.asInstanceOf[js.Any])
     
     /**
       * File name for the left controller model.
@@ -155,8 +149,7 @@ object controllersIndexMod {
     @JSImport("babylonjs/Gamepads/Controllers/index", "OculusTouchController.MODEL_LEFT_FILENAME")
     @js.native
     def MODEL_LEFT_FILENAME: String = js.native
-    @scala.inline
-    def MODEL_LEFT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_LEFT_FILENAME")(x.asInstanceOf[js.Any])
+    inline def MODEL_LEFT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_LEFT_FILENAME")(x.asInstanceOf[js.Any])
     
     /**
       * File name for the right controller model.
@@ -164,8 +157,7 @@ object controllersIndexMod {
     @JSImport("babylonjs/Gamepads/Controllers/index", "OculusTouchController.MODEL_RIGHT_FILENAME")
     @js.native
     def MODEL_RIGHT_FILENAME: String = js.native
-    @scala.inline
-    def MODEL_RIGHT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_RIGHT_FILENAME")(x.asInstanceOf[js.Any])
+    inline def MODEL_RIGHT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_RIGHT_FILENAME")(x.asInstanceOf[js.Any])
     
     /**
       * Base Url for the Quest controller model.
@@ -173,8 +165,7 @@ object controllersIndexMod {
     @JSImport("babylonjs/Gamepads/Controllers/index", "OculusTouchController.QUEST_MODEL_BASE_URL")
     @js.native
     def QUEST_MODEL_BASE_URL: String = js.native
-    @scala.inline
-    def QUEST_MODEL_BASE_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUEST_MODEL_BASE_URL")(x.asInstanceOf[js.Any])
+    inline def QUEST_MODEL_BASE_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUEST_MODEL_BASE_URL")(x.asInstanceOf[js.Any])
     
     /**
       * @hidden
@@ -183,8 +174,7 @@ object controllersIndexMod {
     @JSImport("babylonjs/Gamepads/Controllers/index", "OculusTouchController._IsQuest")
     @js.native
     def _IsQuest: Boolean = js.native
-    @scala.inline
-    def _IsQuest_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsQuest")(x.asInstanceOf[js.Any])
+    inline def _IsQuest_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsQuest")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Gamepads/Controllers/index", "PoseEnabledController")
@@ -224,23 +214,19 @@ object controllersIndexMod {
       * @param vrGamepad the gamepad to initialized
       * @returns a vr controller of the type the gamepad identified as
       */
-    @JSImport("babylonjs/Gamepads/Controllers/index", "PoseEnabledControllerHelper.InitiateController")
-    @js.native
-    def InitiateController(vrGamepad: js.Any): typings.babylonjs.gamepadMod.Gamepad = js.native
+    inline def InitiateController(vrGamepad: js.Any): typings.babylonjs.gamepadMod.Gamepad = ^.asInstanceOf[js.Dynamic].applyDynamic("InitiateController")(vrGamepad.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.gamepadMod.Gamepad]
     
     /** @hidden */
     @JSImport("babylonjs/Gamepads/Controllers/index", "PoseEnabledControllerHelper._ControllerFactories")
     @js.native
     def _ControllerFactories: js.Array[GamePadFactory] = js.native
-    @scala.inline
-    def _ControllerFactories_=(x: js.Array[GamePadFactory]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ControllerFactories")(x.asInstanceOf[js.Any])
+    inline def _ControllerFactories_=(x: js.Array[GamePadFactory]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ControllerFactories")(x.asInstanceOf[js.Any])
     
     /** @hidden */
     @JSImport("babylonjs/Gamepads/Controllers/index", "PoseEnabledControllerHelper._DefaultControllerFactory")
     @js.native
     def _DefaultControllerFactory: Nullable[js.Function1[/* gamepadInfo */ js.Any, typings.babylonjs.gamepadMod.Gamepad]] = js.native
-    @scala.inline
-    def _DefaultControllerFactory_=(x: Nullable[js.Function1[/* gamepadInfo */ js.Any, typings.babylonjs.gamepadMod.Gamepad]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultControllerFactory")(x.asInstanceOf[js.Any])
+    inline def _DefaultControllerFactory_=(x: Nullable[js.Function1[/* gamepadInfo */ js.Any, typings.babylonjs.gamepadMod.Gamepad]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultControllerFactory")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Gamepads/Controllers/index", "PoseEnabledControllerType")
@@ -248,19 +234,19 @@ object controllersIndexMod {
   object PoseEnabledControllerType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.babylonjs.poseEnabledControllerMod.PoseEnabledControllerType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.babylonjs.poseEnabledControllerMod.PoseEnabledControllerType & Double] = js.native
     
-    /* 4 */ val DAYDREAM: typings.babylonjs.poseEnabledControllerMod.PoseEnabledControllerType.DAYDREAM with Double = js.native
+    /* 4 */ val DAYDREAM: typings.babylonjs.poseEnabledControllerMod.PoseEnabledControllerType.DAYDREAM & Double = js.native
     
-    /* 3 */ val GEAR_VR: typings.babylonjs.poseEnabledControllerMod.PoseEnabledControllerType.GEAR_VR with Double = js.native
+    /* 3 */ val GEAR_VR: typings.babylonjs.poseEnabledControllerMod.PoseEnabledControllerType.GEAR_VR & Double = js.native
     
-    /* 5 */ val GENERIC: typings.babylonjs.poseEnabledControllerMod.PoseEnabledControllerType.GENERIC with Double = js.native
+    /* 5 */ val GENERIC: typings.babylonjs.poseEnabledControllerMod.PoseEnabledControllerType.GENERIC & Double = js.native
     
-    /* 1 */ val OCULUS: typings.babylonjs.poseEnabledControllerMod.PoseEnabledControllerType.OCULUS with Double = js.native
+    /* 1 */ val OCULUS: typings.babylonjs.poseEnabledControllerMod.PoseEnabledControllerType.OCULUS & Double = js.native
     
-    /* 0 */ val VIVE: typings.babylonjs.poseEnabledControllerMod.PoseEnabledControllerType.VIVE with Double = js.native
+    /* 0 */ val VIVE: typings.babylonjs.poseEnabledControllerMod.PoseEnabledControllerType.VIVE & Double = js.native
     
-    /* 2 */ val WINDOWS: typings.babylonjs.poseEnabledControllerMod.PoseEnabledControllerType.WINDOWS with Double = js.native
+    /* 2 */ val WINDOWS: typings.babylonjs.poseEnabledControllerMod.PoseEnabledControllerType.WINDOWS & Double = js.native
   }
   
   @JSImport("babylonjs/Gamepads/Controllers/index", "ViveController")
@@ -286,8 +272,7 @@ object controllersIndexMod {
     @JSImport("babylonjs/Gamepads/Controllers/index", "ViveController.MODEL_BASE_URL")
     @js.native
     def MODEL_BASE_URL: String = js.native
-    @scala.inline
-    def MODEL_BASE_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_BASE_URL")(x.asInstanceOf[js.Any])
+    inline def MODEL_BASE_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_BASE_URL")(x.asInstanceOf[js.Any])
     
     /**
       * File name for the controller model.
@@ -295,8 +280,7 @@ object controllersIndexMod {
     @JSImport("babylonjs/Gamepads/Controllers/index", "ViveController.MODEL_FILENAME")
     @js.native
     def MODEL_FILENAME: String = js.native
-    @scala.inline
-    def MODEL_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_FILENAME")(x.asInstanceOf[js.Any])
+    inline def MODEL_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_FILENAME")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Gamepads/Controllers/index", "WebVRController")
@@ -347,8 +331,7 @@ object controllersIndexMod {
     @JSImport("babylonjs/Gamepads/Controllers/index", "WindowsMotionController.MODEL_BASE_URL")
     @js.native
     def MODEL_BASE_URL: String = js.native
-    @scala.inline
-    def MODEL_BASE_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_BASE_URL")(x.asInstanceOf[js.Any])
+    inline def MODEL_BASE_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_BASE_URL")(x.asInstanceOf[js.Any])
     
     /**
       * The name of the left controller model file
@@ -356,8 +339,7 @@ object controllersIndexMod {
     @JSImport("babylonjs/Gamepads/Controllers/index", "WindowsMotionController.MODEL_LEFT_FILENAME")
     @js.native
     def MODEL_LEFT_FILENAME: String = js.native
-    @scala.inline
-    def MODEL_LEFT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_LEFT_FILENAME")(x.asInstanceOf[js.Any])
+    inline def MODEL_LEFT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_LEFT_FILENAME")(x.asInstanceOf[js.Any])
     
     /**
       * The name of the right controller model file
@@ -365,8 +347,7 @@ object controllersIndexMod {
     @JSImport("babylonjs/Gamepads/Controllers/index", "WindowsMotionController.MODEL_RIGHT_FILENAME")
     @js.native
     def MODEL_RIGHT_FILENAME: String = js.native
-    @scala.inline
-    def MODEL_RIGHT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_RIGHT_FILENAME")(x.asInstanceOf[js.Any])
+    inline def MODEL_RIGHT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_RIGHT_FILENAME")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Gamepads/Controllers/index", "XRWindowsMotionController")

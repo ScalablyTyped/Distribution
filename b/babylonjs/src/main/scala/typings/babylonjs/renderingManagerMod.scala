@@ -11,7 +11,6 @@ import typings.babylonjs.subMeshMod.SubMesh
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object renderingManagerMod {
@@ -45,25 +44,25 @@ object renderingManagerMod {
       */
     def this(scene: Scene) = this()
     
-    var _autoClearDepthStencil: js.Any = js.native
+    /* private */ var _autoClearDepthStencil: js.Any = js.native
     
-    var _clearDepthStencilBuffer: js.Any = js.native
+    /* private */ var _clearDepthStencilBuffer: js.Any = js.native
     
-    var _customAlphaTestSortCompareFn: js.Any = js.native
+    /* private */ var _customAlphaTestSortCompareFn: js.Any = js.native
     
-    var _customOpaqueSortCompareFn: js.Any = js.native
+    /* private */ var _customOpaqueSortCompareFn: js.Any = js.native
     
-    var _customTransparentSortCompareFn: js.Any = js.native
+    /* private */ var _customTransparentSortCompareFn: js.Any = js.native
     
-    var _depthStencilBufferAlreadyCleaned: js.Any = js.native
+    /* private */ var _depthStencilBufferAlreadyCleaned: js.Any = js.native
     
-    var _prepareRenderingGroup: js.Any = js.native
+    /* private */ var _prepareRenderingGroup: js.Any = js.native
     
-    var _renderingGroupInfo: js.Any = js.native
+    /* private */ var _renderingGroupInfo: js.Any = js.native
     
-    var _renderingGroups: js.Any = js.native
+    /* private */ var _renderingGroups: js.Any = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
     /**
       * @hidden
@@ -77,7 +76,7 @@ object renderingManagerMod {
       * @param material Optional reference to the submeshes's material. Provide if you have an exiting reference to improve performance.
       */
     def dispatch(subMesh: SubMesh): Unit = js.native
-    def dispatch(subMesh: SubMesh, mesh: js.UndefOr[scala.Nothing], material: Nullable[Material]): Unit = js.native
+    def dispatch(subMesh: SubMesh, mesh: Unit, material: Nullable[Material]): Unit = js.native
     def dispatch(subMesh: SubMesh, mesh: AbstractMesh): Unit = js.native
     def dispatch(subMesh: SubMesh, mesh: AbstractMesh, material: Nullable[Material]): Unit = js.native
     
@@ -146,14 +145,9 @@ object renderingManagerMod {
       * @param stencil Automatically clears stencil between groups if true and autoClear is true.
       */
     def setRenderingAutoClearDepthStencil(renderingGroupId: Double, autoClearDepthStencil: Boolean): Unit = js.native
-    def setRenderingAutoClearDepthStencil(
-      renderingGroupId: Double,
-      autoClearDepthStencil: Boolean,
-      depth: js.UndefOr[scala.Nothing],
-      stencil: Boolean
-    ): Unit = js.native
     def setRenderingAutoClearDepthStencil(renderingGroupId: Double, autoClearDepthStencil: Boolean, depth: Boolean): Unit = js.native
     def setRenderingAutoClearDepthStencil(renderingGroupId: Double, autoClearDepthStencil: Boolean, depth: Boolean, stencil: Boolean): Unit = js.native
+    def setRenderingAutoClearDepthStencil(renderingGroupId: Double, autoClearDepthStencil: Boolean, depth: Unit, stencil: Boolean): Unit = js.native
     
     /**
       * Overrides the default sort function applied in the renderging group to prepare the meshes.
@@ -167,18 +161,41 @@ object renderingManagerMod {
     def setRenderingOrder(renderingGroupId: Double): Unit = js.native
     def setRenderingOrder(
       renderingGroupId: Double,
-      opaqueSortCompareFn: js.UndefOr[Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]],
-      alphaTestSortCompareFn: js.UndefOr[Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]],
+      opaqueSortCompareFn: Unit,
+      alphaTestSortCompareFn: Unit,
       transparentSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
     ): Unit = js.native
     def setRenderingOrder(
       renderingGroupId: Double,
-      opaqueSortCompareFn: js.UndefOr[Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]],
+      opaqueSortCompareFn: Unit,
       alphaTestSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
     ): Unit = js.native
     def setRenderingOrder(
       renderingGroupId: Double,
+      opaqueSortCompareFn: Unit,
+      alphaTestSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]],
+      transparentSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
+    ): Unit = js.native
+    def setRenderingOrder(
+      renderingGroupId: Double,
       opaqueSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
+    ): Unit = js.native
+    def setRenderingOrder(
+      renderingGroupId: Double,
+      opaqueSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]],
+      alphaTestSortCompareFn: Unit,
+      transparentSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
+    ): Unit = js.native
+    def setRenderingOrder(
+      renderingGroupId: Double,
+      opaqueSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]],
+      alphaTestSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
+    ): Unit = js.native
+    def setRenderingOrder(
+      renderingGroupId: Double,
+      opaqueSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]],
+      alphaTestSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]],
+      transparentSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
     ): Unit = js.native
   }
   /* static members */
@@ -194,8 +211,7 @@ object renderingManagerMod {
     @JSImport("babylonjs/Rendering/renderingManager", "RenderingManager.AUTOCLEAR")
     @js.native
     def AUTOCLEAR: Boolean = js.native
-    @scala.inline
-    def AUTOCLEAR_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUTOCLEAR")(x.asInstanceOf[js.Any])
+    inline def AUTOCLEAR_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUTOCLEAR")(x.asInstanceOf[js.Any])
     
     /**
       * The max id used for rendering groups (not included)
@@ -203,8 +219,7 @@ object renderingManagerMod {
     @JSImport("babylonjs/Rendering/renderingManager", "RenderingManager.MAX_RENDERINGGROUPS")
     @js.native
     def MAX_RENDERINGGROUPS: Double = js.native
-    @scala.inline
-    def MAX_RENDERINGGROUPS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_RENDERINGGROUPS")(x.asInstanceOf[js.Any])
+    inline def MAX_RENDERINGGROUPS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_RENDERINGGROUPS")(x.asInstanceOf[js.Any])
     
     /**
       * The min id used for rendering groups (included)
@@ -212,47 +227,40 @@ object renderingManagerMod {
     @JSImport("babylonjs/Rendering/renderingManager", "RenderingManager.MIN_RENDERINGGROUPS")
     @js.native
     def MIN_RENDERINGGROUPS: Double = js.native
-    @scala.inline
-    def MIN_RENDERINGGROUPS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_RENDERINGGROUPS")(x.asInstanceOf[js.Any])
+    inline def MIN_RENDERINGGROUPS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_RENDERINGGROUPS")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IRenderingManagerAutoClearSetup extends StObject {
     
     /**
       * Defines whether or not autoclear is enable.
       */
-    var autoClear: Boolean = js.native
+    var autoClear: Boolean
     
     /**
       * Defines whether or not to autoclear the depth buffer.
       */
-    var depth: Boolean = js.native
+    var depth: Boolean
     
     /**
       * Defines whether or not to autoclear the stencil buffer.
       */
-    var stencil: Boolean = js.native
+    var stencil: Boolean
   }
   object IRenderingManagerAutoClearSetup {
     
-    @scala.inline
-    def apply(autoClear: Boolean, depth: Boolean, stencil: Boolean): IRenderingManagerAutoClearSetup = {
+    inline def apply(autoClear: Boolean, depth: Boolean, stencil: Boolean): IRenderingManagerAutoClearSetup = {
       val __obj = js.Dynamic.literal(autoClear = autoClear.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], stencil = stencil.asInstanceOf[js.Any])
       __obj.asInstanceOf[IRenderingManagerAutoClearSetup]
     }
     
-    @scala.inline
-    implicit class IRenderingManagerAutoClearSetupMutableBuilder[Self <: IRenderingManagerAutoClearSetup] (val x: Self) extends AnyVal {
+    extension [Self <: IRenderingManagerAutoClearSetup](x: Self) {
       
-      @scala.inline
-      def setAutoClear(value: Boolean): Self = StObject.set(x, "autoClear", value.asInstanceOf[js.Any])
+      inline def setAutoClear(value: Boolean): Self = StObject.set(x, "autoClear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepth(value: Boolean): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      inline def setDepth(value: Boolean): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStencil(value: Boolean): Self = StObject.set(x, "stencil", value.asInstanceOf[js.Any])
+      inline def setStencil(value: Boolean): Self = StObject.set(x, "stencil", value.asInstanceOf[js.Any])
     }
   }
 }

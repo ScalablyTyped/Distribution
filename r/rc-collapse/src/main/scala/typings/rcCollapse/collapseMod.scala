@@ -108,8 +108,6 @@ object collapseMod {
   object Collapse {
     
     /* was `typeof CollapsePanel` */
-    object Panel
-    /* was `typeof CollapsePanel` */
     type Panel = typings.rcCollapse.panelMod.default
   }
   

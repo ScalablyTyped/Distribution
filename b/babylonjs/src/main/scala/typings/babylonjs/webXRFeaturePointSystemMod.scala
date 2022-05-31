@@ -6,7 +6,6 @@ import typings.babylonjs.webXRAbstractFeatureMod.WebXRAbstractFeature
 import typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webXRFeaturePointSystemMod {
@@ -20,14 +19,14 @@ object webXRFeaturePointSystemMod {
       */
     def this(_xrSessionManager: WebXRSessionManager) = this()
     
-    var _enabled: js.Any = js.native
+    /* private */ var _enabled: js.Any = js.native
     
-    var _featurePointCloud: js.Any = js.native
+    /* private */ var _featurePointCloud: js.Any = js.native
     
     /**
       * Initializes the feature. If the feature point feature is not available for this environment do not mark the feature as enabled.
       */
-    var _init: js.Any = js.native
+    /* private */ var _init: js.Any = js.native
     
     /**
       * The current feature point cloud maintained across frames.
@@ -66,35 +65,30 @@ object webXRFeaturePointSystemMod {
     val Version: Double = js.native
   }
   
-  @js.native
   trait IWebXRFeaturePoint extends StObject {
     
     /**
       * Represents the confidence value of the feature point in world space. 0 being least confident, and 1 being most confident.
       */
-    var confidenceValue: Double = js.native
+    var confidenceValue: Double
     
     /**
       * Represents the position of the feature point in world space.
       */
-    var position: Vector3 = js.native
+    var position: Vector3
   }
   object IWebXRFeaturePoint {
     
-    @scala.inline
-    def apply(confidenceValue: Double, position: Vector3): IWebXRFeaturePoint = {
+    inline def apply(confidenceValue: Double, position: Vector3): IWebXRFeaturePoint = {
       val __obj = js.Dynamic.literal(confidenceValue = confidenceValue.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[IWebXRFeaturePoint]
     }
     
-    @scala.inline
-    implicit class IWebXRFeaturePointMutableBuilder[Self <: IWebXRFeaturePoint] (val x: Self) extends AnyVal {
+    extension [Self <: IWebXRFeaturePoint](x: Self) {
       
-      @scala.inline
-      def setConfidenceValue(value: Double): Self = StObject.set(x, "confidenceValue", value.asInstanceOf[js.Any])
+      inline def setConfidenceValue(value: Double): Self = StObject.set(x, "confidenceValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: Vector3): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Vector3): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     }
   }
 }

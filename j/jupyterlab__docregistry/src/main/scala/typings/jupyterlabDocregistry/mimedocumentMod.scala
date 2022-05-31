@@ -14,7 +14,6 @@ import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IRenderer
 import typings.luminoWidgets.mod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mimedocumentMod {
@@ -30,26 +29,26 @@ object mimedocumentMod {
     /**
       * A bound change callback.
       */
-    var _changeCallback: js.Any = js.native
+    /* private */ var _changeCallback: js.Any = js.native
     
-    var _context: js.Any = js.native
+    /* private */ var _context: js.Any = js.native
     
-    var _dataType: js.Any = js.native
+    /* private */ var _dataType: js.Any = js.native
     
-    var _fragment: js.Any = js.native
+    /* private */ var _fragment: js.Any = js.native
     
-    var _isRendering: js.Any = js.native
+    /* private */ var _isRendering: js.Any = js.native
     
-    var _monitor: js.Any = js.native
+    /* private */ var _monitor: js.Any = js.native
     
-    var _ready: js.Any = js.native
+    /* private */ var _ready: js.Any = js.native
     
     /**
       * Render the mime content.
       */
-    var _render: js.Any = js.native
+    /* private */ var _render: js.Any = js.native
     
-    var _renderRequested: js.Any = js.native
+    /* private */ var _renderRequested: js.Any = js.native
     
     /**
       * The mimetype for this rendered content.
@@ -73,62 +72,53 @@ object mimedocumentMod {
     /**
       * The options used to initialize a MimeDocument.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * Context
         */
-      var context: IContext[IModel] = js.native
+      var context: IContext[IModel]
       
       /**
         * Preferred data type from the model.
         */
-      var dataType: js.UndefOr[string | json] = js.native
+      var dataType: js.UndefOr[string | json] = js.undefined
       
       /**
         * The mime type.
         */
-      var mimeType: String = js.native
+      var mimeType: String
       
       /**
         * The render timeout.
         */
-      var renderTimeout: Double = js.native
+      var renderTimeout: Double
       
       /**
         * The renderer instance.
         */
-      var renderer: IRenderer = js.native
+      var renderer: IRenderer
     }
     object IOptions {
       
-      @scala.inline
-      def apply(context: IContext[IModel], mimeType: String, renderTimeout: Double, renderer: IRenderer): IOptions = {
+      inline def apply(context: IContext[IModel], mimeType: String, renderTimeout: Double, renderer: IRenderer): IOptions = {
         val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any], renderTimeout = renderTimeout.asInstanceOf[js.Any], renderer = renderer.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setContext(value: IContext[IModel]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+        inline def setContext(value: IContext[IModel]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDataType(value: string | json): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+        inline def setDataType(value: string | json): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
+        inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
         
-        @scala.inline
-        def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+        inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRenderTimeout(value: Double): Self = StObject.set(x, "renderTimeout", value.asInstanceOf[js.Any])
+        inline def setRenderTimeout(value: Double): Self = StObject.set(x, "renderTimeout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+        inline def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -147,73 +137,65 @@ object mimedocumentMod {
       */
     def this(options: typings.jupyterlabDocregistry.mimedocumentMod.MimeDocumentFactory.IOptions[MimeDocument]) = this()
     
-    var _dataType: js.Any = js.native
+    /* private */ var _dataType: js.Any = js.native
     
-    var _fileType: js.Any = js.native
+    /* private */ var _fileType: js.Any = js.native
     
-    var _renderTimeout: js.Any = js.native
+    /* private */ var _renderTimeout: js.Any = js.native
     
-    var _rendermime: js.Any = js.native
+    /* private */ var _rendermime: js.Any = js.native
   }
   object MimeDocumentFactory {
     
     /**
       * The options used to initialize a MimeDocumentFactory.
       */
-    @js.native
-    trait IOptions[T /* <: MimeDocument */] extends IWidgetFactoryOptions[T] {
+    trait IOptions[T /* <: MimeDocument */]
+      extends StObject
+         with IWidgetFactoryOptions[T] {
       
       /**
         * Preferred data type from the model.
         */
-      var dataType: js.UndefOr[string | json] = js.native
+      var dataType: js.UndefOr[string | json] = js.undefined
       
       /**
         * The primary file type associated with the document.
         */
-      var primaryFileType: js.UndefOr[IFileType] = js.native
+      var primaryFileType: js.UndefOr[IFileType] = js.undefined
       
       /**
         * The render timeout.
         */
-      var renderTimeout: js.UndefOr[Double] = js.native
+      var renderTimeout: js.UndefOr[Double] = js.undefined
       
       /**
         * The rendermime instance.
         */
-      var rendermime: IRenderMimeRegistry = js.native
+      var rendermime: IRenderMimeRegistry
     }
     object IOptions {
       
-      @scala.inline
-      def apply[T /* <: MimeDocument */](fileTypes: js.Array[String], name: String, rendermime: IRenderMimeRegistry): typings.jupyterlabDocregistry.mimedocumentMod.MimeDocumentFactory.IOptions[T] = {
+      inline def apply[T /* <: MimeDocument */](fileTypes: js.Array[String], name: String, rendermime: IRenderMimeRegistry): typings.jupyterlabDocregistry.mimedocumentMod.MimeDocumentFactory.IOptions[T] = {
         val __obj = js.Dynamic.literal(fileTypes = fileTypes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], rendermime = rendermime.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.jupyterlabDocregistry.mimedocumentMod.MimeDocumentFactory.IOptions[T]]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: typings.jupyterlabDocregistry.mimedocumentMod.MimeDocumentFactory.IOptions[_], T /* <: MimeDocument */] (val x: Self with typings.jupyterlabDocregistry.mimedocumentMod.MimeDocumentFactory.IOptions[T]) extends AnyVal {
+      extension [Self <: typings.jupyterlabDocregistry.mimedocumentMod.MimeDocumentFactory.IOptions[?], T /* <: MimeDocument */](x: Self & typings.jupyterlabDocregistry.mimedocumentMod.MimeDocumentFactory.IOptions[T]) {
         
-        @scala.inline
-        def setDataType(value: string | json): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+        inline def setDataType(value: string | json): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
+        inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
         
-        @scala.inline
-        def setPrimaryFileType(value: IFileType): Self = StObject.set(x, "primaryFileType", value.asInstanceOf[js.Any])
+        inline def setPrimaryFileType(value: IFileType): Self = StObject.set(x, "primaryFileType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrimaryFileTypeUndefined: Self = StObject.set(x, "primaryFileType", js.undefined)
+        inline def setPrimaryFileTypeUndefined: Self = StObject.set(x, "primaryFileType", js.undefined)
         
-        @scala.inline
-        def setRenderTimeout(value: Double): Self = StObject.set(x, "renderTimeout", value.asInstanceOf[js.Any])
+        inline def setRenderTimeout(value: Double): Self = StObject.set(x, "renderTimeout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRenderTimeoutUndefined: Self = StObject.set(x, "renderTimeout", js.undefined)
+        inline def setRenderTimeoutUndefined: Self = StObject.set(x, "renderTimeout", js.undefined)
         
-        @scala.inline
-        def setRendermime(value: IRenderMimeRegistry): Self = StObject.set(x, "rendermime", value.asInstanceOf[js.Any])
+        inline def setRendermime(value: IRenderMimeRegistry): Self = StObject.set(x, "rendermime", value.asInstanceOf[js.Any])
       }
     }
   }

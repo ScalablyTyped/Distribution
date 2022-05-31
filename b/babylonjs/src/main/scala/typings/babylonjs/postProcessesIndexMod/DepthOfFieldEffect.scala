@@ -5,7 +5,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/PostProcesses/index", "DepthOfFieldEffect")
@@ -28,7 +27,7 @@ class DepthOfFieldEffect protected ()
   def this(
     scene: Scene,
     depthTexture: Nullable[RenderTargetTexture],
-    blurLevel: js.UndefOr[scala.Nothing],
+    blurLevel: Unit,
     pipelineTextureType: Double
   ) = this()
   def this(
@@ -40,22 +39,15 @@ class DepthOfFieldEffect protected ()
   def this(
     scene: Scene,
     depthTexture: Nullable[RenderTargetTexture],
-    blurLevel: js.UndefOr[scala.Nothing],
-    pipelineTextureType: js.UndefOr[scala.Nothing],
-    blockCompilation: Boolean
-  ) = this()
-  def this(
-    scene: Scene,
-    depthTexture: Nullable[RenderTargetTexture],
-    blurLevel: js.UndefOr[scala.Nothing],
+    blurLevel: Unit,
     pipelineTextureType: Double,
     blockCompilation: Boolean
   ) = this()
   def this(
     scene: Scene,
     depthTexture: Nullable[RenderTargetTexture],
-    blurLevel: typings.babylonjs.depthOfFieldEffectMod.DepthOfFieldEffectBlurLevel,
-    pipelineTextureType: js.UndefOr[scala.Nothing],
+    blurLevel: Unit,
+    pipelineTextureType: Unit,
     blockCompilation: Boolean
   ) = this()
   def this(
@@ -63,6 +55,13 @@ class DepthOfFieldEffect protected ()
     depthTexture: Nullable[RenderTargetTexture],
     blurLevel: typings.babylonjs.depthOfFieldEffectMod.DepthOfFieldEffectBlurLevel,
     pipelineTextureType: Double,
+    blockCompilation: Boolean
+  ) = this()
+  def this(
+    scene: Scene,
+    depthTexture: Nullable[RenderTargetTexture],
+    blurLevel: typings.babylonjs.depthOfFieldEffectMod.DepthOfFieldEffectBlurLevel,
+    pipelineTextureType: Unit,
     blockCompilation: Boolean
   ) = this()
 }

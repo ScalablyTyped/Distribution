@@ -10,8 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("jsrsasign.X509")
 @js.native
 class X509 ()
-  extends StObject
-     with typings.jsrsasign.jsrsasign.X509
+  extends typings.jsrsasign.mod.X509
 object X509 {
   
   @JSGlobal("jsrsasign.X509")

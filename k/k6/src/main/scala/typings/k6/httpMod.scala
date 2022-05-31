@@ -937,10 +937,4 @@ object httpMod {
   }
   
   type StructuredRequestBody = StringDictionary[String | FileData]
-  
-  /**
-    * The http module contains functionality for performing HTTP transactions.
-    * https://k6.io/docs/javascript-api/k6-http
-    */
-  object http
 }

@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.IWebXRControllerPointerSelectionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.WebXRControllerPointerSelection")
 @js.native
 class WebXRControllerPointerSelection protected ()
-  extends typings.babylonjs.BABYLON.WebXRControllerPointerSelection {
+  extends StObject
+     with typings.babylonjs.BABYLON.WebXRControllerPointerSelection {
   /**
     * constructs a new background remover module
     * @param _xrSessionManager the session manager for this module
@@ -19,6 +19,12 @@ class WebXRControllerPointerSelection protected ()
     _xrSessionManager: typings.babylonjs.BABYLON.WebXRSessionManager,
     _options: IWebXRControllerPointerSelectionOptions
   ) = this()
+  
+  /**
+    * Releases all held resources
+    */
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
 }
 /* static members */
 object WebXRControllerPointerSelection {
@@ -46,6 +52,5 @@ object WebXRControllerPointerSelection {
   @JSGlobal("BABYLON.WebXRControllerPointerSelection._idCounter")
   @js.native
   def _idCounter: js.Any = js.native
-  @scala.inline
-  def _idCounter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_idCounter")(x.asInstanceOf[js.Any])
+  inline def _idCounter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_idCounter")(x.asInstanceOf[js.Any])
 }

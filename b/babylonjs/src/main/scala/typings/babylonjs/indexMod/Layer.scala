@@ -3,7 +3,6 @@ package typings.babylonjs.indexMod
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "Layer")
@@ -45,7 +44,7 @@ class Layer protected ()
   name: String,
     imgUrl: Nullable[String],
     scene: Nullable[typings.babylonjs.sceneMod.Scene],
-    isBackground: js.UndefOr[scala.Nothing],
+    isBackground: Boolean,
     color: typings.babylonjs.mathColorMod.Color4
   ) = this()
   def this(
@@ -55,7 +54,7 @@ class Layer protected ()
   name: String,
     imgUrl: Nullable[String],
     scene: Nullable[typings.babylonjs.sceneMod.Scene],
-    isBackground: Boolean,
+    isBackground: Unit,
     color: typings.babylonjs.mathColorMod.Color4
   ) = this()
 }

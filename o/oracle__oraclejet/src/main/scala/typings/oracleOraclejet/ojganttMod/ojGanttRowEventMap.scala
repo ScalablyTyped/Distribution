@@ -20,22 +20,21 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ojGanttRowEventMap extends HTMLElementEventMap {
+trait ojGanttRowEventMap
+  extends StObject
+     with HTMLElementEventMap {
   
-  var labelChanged: JetElementCustomEvent[String] = js.native
+  var labelChanged: JetElementCustomEvent[String]
   
   var labelStyleChanged: JetElementCustomEvent[
     /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttRow['labelStyle'] */ js.Any
-  ] = js.native
+  ]
 }
 object ojGanttRowEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,
@@ -137,14 +136,11 @@ object ojGanttRowEventMap {
     __obj.asInstanceOf[ojGanttRowEventMap]
   }
   
-  @scala.inline
-  implicit class ojGanttRowEventMapMutableBuilder[Self <: ojGanttRowEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: ojGanttRowEventMap](x: Self) {
     
-    @scala.inline
-    def setLabelChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "labelChanged", value.asInstanceOf[js.Any])
+    inline def setLabelChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "labelChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelStyleChanged(
+    inline def setLabelStyleChanged(
       value: JetElementCustomEvent[
           /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttRow['labelStyle'] */ js.Any
         ]

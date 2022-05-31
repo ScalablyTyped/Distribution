@@ -12,7 +12,6 @@ import typings.babylonjs.textureMod.Texture
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spritesIndexMod {
@@ -32,15 +31,17 @@ object spritesIndexMod {
   /* static members */
   object Sprite {
     
+    @JSImport("babylonjs/Sprites/index", "Sprite")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Parses a JSON object to create a new sprite
       * @param parsedSprite The JSON object to parse
       * @param manager defines the hosting manager
       * @returns the new sprite
       */
-    @JSImport("babylonjs/Sprites/index", "Sprite.Parse")
-    @js.native
-    def Parse(parsedSprite: js.Any, manager: typings.babylonjs.spriteManagerMod.SpriteManager): typings.babylonjs.spriteMod.Sprite = js.native
+    inline def Parse(parsedSprite: js.Any, manager: typings.babylonjs.spriteManagerMod.SpriteManager): typings.babylonjs.spriteMod.Sprite = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSprite.asInstanceOf[js.Any], manager.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.spriteMod.Sprite]
   }
   
   @JSImport("babylonjs/Sprites/index", "SpriteManager")
@@ -83,16 +84,6 @@ object spritesIndexMod {
       capacity: Double,
       cellSize: js.Any,
       scene: Scene,
-      epsilon: js.UndefOr[scala.Nothing],
-      samplingMode: Double
-    ) = this()
-    def this(
-      /** defines the manager's name */
-    name: String,
-      imgUrl: String,
-      capacity: Double,
-      cellSize: js.Any,
-      scene: Scene,
       epsilon: Double,
       samplingMode: Double
     ) = this()
@@ -103,31 +94,8 @@ object spritesIndexMod {
       capacity: Double,
       cellSize: js.Any,
       scene: Scene,
-      epsilon: js.UndefOr[scala.Nothing],
-      samplingMode: js.UndefOr[scala.Nothing],
-      fromPacked: Boolean
-    ) = this()
-    def this(
-      /** defines the manager's name */
-    name: String,
-      imgUrl: String,
-      capacity: Double,
-      cellSize: js.Any,
-      scene: Scene,
-      epsilon: js.UndefOr[scala.Nothing],
-      samplingMode: Double,
-      fromPacked: Boolean
-    ) = this()
-    def this(
-      /** defines the manager's name */
-    name: String,
-      imgUrl: String,
-      capacity: Double,
-      cellSize: js.Any,
-      scene: Scene,
-      epsilon: Double,
-      samplingMode: js.UndefOr[scala.Nothing],
-      fromPacked: Boolean
+      epsilon: Unit,
+      samplingMode: Double
     ) = this()
     def this(
       /** defines the manager's name */
@@ -147,10 +115,9 @@ object spritesIndexMod {
       capacity: Double,
       cellSize: js.Any,
       scene: Scene,
-      epsilon: js.UndefOr[scala.Nothing],
-      samplingMode: js.UndefOr[scala.Nothing],
-      fromPacked: js.UndefOr[scala.Nothing],
-      spriteJSON: js.Any
+      epsilon: Double,
+      samplingMode: Unit,
+      fromPacked: Boolean
     ) = this()
     def this(
       /** defines the manager's name */
@@ -159,22 +126,9 @@ object spritesIndexMod {
       capacity: Double,
       cellSize: js.Any,
       scene: Scene,
-      epsilon: js.UndefOr[scala.Nothing],
-      samplingMode: js.UndefOr[scala.Nothing],
-      fromPacked: Boolean,
-      spriteJSON: js.Any
-    ) = this()
-    def this(
-      /** defines the manager's name */
-    name: String,
-      imgUrl: String,
-      capacity: Double,
-      cellSize: js.Any,
-      scene: Scene,
-      epsilon: js.UndefOr[scala.Nothing],
+      epsilon: Unit,
       samplingMode: Double,
-      fromPacked: js.UndefOr[scala.Nothing],
-      spriteJSON: js.Any
+      fromPacked: Boolean
     ) = this()
     def this(
       /** defines the manager's name */
@@ -183,7 +137,18 @@ object spritesIndexMod {
       capacity: Double,
       cellSize: js.Any,
       scene: Scene,
-      epsilon: js.UndefOr[scala.Nothing],
+      epsilon: Unit,
+      samplingMode: Unit,
+      fromPacked: Boolean
+    ) = this()
+    def this(
+      /** defines the manager's name */
+    name: String,
+      imgUrl: String,
+      capacity: Double,
+      cellSize: js.Any,
+      scene: Scene,
+      epsilon: Double,
       samplingMode: Double,
       fromPacked: Boolean,
       spriteJSON: js.Any
@@ -196,8 +161,8 @@ object spritesIndexMod {
       cellSize: js.Any,
       scene: Scene,
       epsilon: Double,
-      samplingMode: js.UndefOr[scala.Nothing],
-      fromPacked: js.UndefOr[scala.Nothing],
+      samplingMode: Double,
+      fromPacked: Unit,
       spriteJSON: js.Any
     ) = this()
     def this(
@@ -208,7 +173,7 @@ object spritesIndexMod {
       cellSize: js.Any,
       scene: Scene,
       epsilon: Double,
-      samplingMode: js.UndefOr[scala.Nothing],
+      samplingMode: Unit,
       fromPacked: Boolean,
       spriteJSON: js.Any
     ) = this()
@@ -220,8 +185,8 @@ object spritesIndexMod {
       cellSize: js.Any,
       scene: Scene,
       epsilon: Double,
-      samplingMode: Double,
-      fromPacked: js.UndefOr[scala.Nothing],
+      samplingMode: Unit,
+      fromPacked: Unit,
       spriteJSON: js.Any
     ) = this()
     def this(
@@ -231,9 +196,45 @@ object spritesIndexMod {
       capacity: Double,
       cellSize: js.Any,
       scene: Scene,
-      epsilon: Double,
+      epsilon: Unit,
       samplingMode: Double,
       fromPacked: Boolean,
+      spriteJSON: js.Any
+    ) = this()
+    def this(
+      /** defines the manager's name */
+    name: String,
+      imgUrl: String,
+      capacity: Double,
+      cellSize: js.Any,
+      scene: Scene,
+      epsilon: Unit,
+      samplingMode: Double,
+      fromPacked: Unit,
+      spriteJSON: js.Any
+    ) = this()
+    def this(
+      /** defines the manager's name */
+    name: String,
+      imgUrl: String,
+      capacity: Double,
+      cellSize: js.Any,
+      scene: Scene,
+      epsilon: Unit,
+      samplingMode: Unit,
+      fromPacked: Boolean,
+      spriteJSON: js.Any
+    ) = this()
+    def this(
+      /** defines the manager's name */
+    name: String,
+      imgUrl: String,
+      capacity: Double,
+      cellSize: js.Any,
+      scene: Scene,
+      epsilon: Unit,
+      samplingMode: Unit,
+      fromPacked: Unit,
       spriteJSON: js.Any
     ) = this()
   }
@@ -251,12 +252,8 @@ object spritesIndexMod {
       * @param rootUrl defines the root URL to use to load textures and relative dependencies
       * @returns a promise that will resolve to the new sprite manager
       */
-    @JSImport("babylonjs/Sprites/index", "SpriteManager.CreateFromSnippetAsync")
-    @js.native
-    def CreateFromSnippetAsync(snippetId: String, scene: Scene): js.Promise[typings.babylonjs.spriteManagerMod.SpriteManager] = js.native
-    @JSImport("babylonjs/Sprites/index", "SpriteManager.CreateFromSnippetAsync")
-    @js.native
-    def CreateFromSnippetAsync(snippetId: String, scene: Scene, rootUrl: String): js.Promise[typings.babylonjs.spriteManagerMod.SpriteManager] = js.native
+    inline def CreateFromSnippetAsync(snippetId: String, scene: Scene): js.Promise[typings.babylonjs.spriteManagerMod.SpriteManager] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.spriteManagerMod.SpriteManager]]
+    inline def CreateFromSnippetAsync(snippetId: String, scene: Scene, rootUrl: String): js.Promise[typings.babylonjs.spriteManagerMod.SpriteManager] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.spriteManagerMod.SpriteManager]]
     
     /**
       * Parses a JSON object to create a new sprite manager.
@@ -265,9 +262,7 @@ object spritesIndexMod {
       * @param rootUrl The root url to use to load external dependencies like texture
       * @returns the new sprite manager
       */
-    @JSImport("babylonjs/Sprites/index", "SpriteManager.Parse")
-    @js.native
-    def Parse(parsedManager: js.Any, scene: Scene, rootUrl: String): typings.babylonjs.spriteManagerMod.SpriteManager = js.native
+    inline def Parse(parsedManager: js.Any, scene: Scene, rootUrl: String): typings.babylonjs.spriteManagerMod.SpriteManager = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedManager.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.spriteManagerMod.SpriteManager]
     
     /**
       * Creates a sprite manager from a snippet saved in a remote file
@@ -277,19 +272,14 @@ object spritesIndexMod {
       * @param rootUrl defines the root URL to use to load textures and relative dependencies
       * @returns a promise that will resolve to the new sprite manager
       */
-    @JSImport("babylonjs/Sprites/index", "SpriteManager.ParseFromFileAsync")
-    @js.native
-    def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene): js.Promise[typings.babylonjs.spriteManagerMod.SpriteManager] = js.native
-    @JSImport("babylonjs/Sprites/index", "SpriteManager.ParseFromFileAsync")
-    @js.native
-    def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene, rootUrl: String): js.Promise[typings.babylonjs.spriteManagerMod.SpriteManager] = js.native
+    inline def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene): js.Promise[typings.babylonjs.spriteManagerMod.SpriteManager] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.spriteManagerMod.SpriteManager]]
+    inline def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene, rootUrl: String): js.Promise[typings.babylonjs.spriteManagerMod.SpriteManager] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.spriteManagerMod.SpriteManager]]
     
     /** Define the Url to load snippets */
     @JSImport("babylonjs/Sprites/index", "SpriteManager.SnippetUrl")
     @js.native
     def SnippetUrl: String = js.native
-    @scala.inline
-    def SnippetUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SnippetUrl")(x.asInstanceOf[js.Any])
+    inline def SnippetUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SnippetUrl")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Sprites/index", "SpriteMap")
@@ -349,15 +339,6 @@ object spritesIndexMod {
       imgUrl: String,
       capacity: Double,
       scene: Scene,
-      spriteJSON: js.UndefOr[scala.Nothing],
-      epsilon: Double
-    ) = this()
-    def this(
-      /** defines the packed manager's name */
-    name: String,
-      imgUrl: String,
-      capacity: Double,
-      scene: Scene,
       spriteJSON: String,
       epsilon: Double
     ) = this()
@@ -376,29 +357,8 @@ object spritesIndexMod {
       imgUrl: String,
       capacity: Double,
       scene: Scene,
-      spriteJSON: js.UndefOr[scala.Nothing],
-      epsilon: js.UndefOr[scala.Nothing],
-      samplingMode: Double
-    ) = this()
-    def this(
-      /** defines the packed manager's name */
-    name: String,
-      imgUrl: String,
-      capacity: Double,
-      scene: Scene,
-      spriteJSON: js.UndefOr[scala.Nothing],
-      epsilon: Double,
-      samplingMode: Double
-    ) = this()
-    def this(
-      /** defines the packed manager's name */
-    name: String,
-      imgUrl: String,
-      capacity: Double,
-      scene: Scene,
-      spriteJSON: String,
-      epsilon: js.UndefOr[scala.Nothing],
-      samplingMode: Double
+      spriteJSON: Unit,
+      epsilon: Double
     ) = this()
     def this(
       /** defines the packed manager's name */
@@ -416,8 +376,8 @@ object spritesIndexMod {
       imgUrl: String,
       capacity: Double,
       scene: Scene,
-      spriteJSON: Null,
-      epsilon: js.UndefOr[scala.Nothing],
+      spriteJSON: String,
+      epsilon: Unit,
       samplingMode: Double
     ) = this()
     def this(
@@ -428,6 +388,36 @@ object spritesIndexMod {
       scene: Scene,
       spriteJSON: Null,
       epsilon: Double,
+      samplingMode: Double
+    ) = this()
+    def this(
+      /** defines the packed manager's name */
+    name: String,
+      imgUrl: String,
+      capacity: Double,
+      scene: Scene,
+      spriteJSON: Null,
+      epsilon: Unit,
+      samplingMode: Double
+    ) = this()
+    def this(
+      /** defines the packed manager's name */
+    name: String,
+      imgUrl: String,
+      capacity: Double,
+      scene: Scene,
+      spriteJSON: Unit,
+      epsilon: Double,
+      samplingMode: Double
+    ) = this()
+    def this(
+      /** defines the packed manager's name */
+    name: String,
+      imgUrl: String,
+      capacity: Double,
+      scene: Scene,
+      spriteJSON: Unit,
+      epsilon: Unit,
       samplingMode: Double
     ) = this()
   }
@@ -451,31 +441,17 @@ object spritesIndexMod {
       
       /** @hidden */
       def _internalMultiPickSprites(ray: Ray): Nullable[js.Array[PickingInfo]] = js.native
-      def _internalMultiPickSprites(ray: Ray, predicate: js.UndefOr[scala.Nothing], camera: Camera): Nullable[js.Array[PickingInfo]] = js.native
       def _internalMultiPickSprites(ray: Ray, predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean]): Nullable[js.Array[PickingInfo]] = js.native
       def _internalMultiPickSprites(
         ray: Ray,
         predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
         camera: Camera
       ): Nullable[js.Array[PickingInfo]] = js.native
+      def _internalMultiPickSprites(ray: Ray, predicate: Unit, camera: Camera): Nullable[js.Array[PickingInfo]] = js.native
       
       /** @hidden */
       def _internalPickSprites(ray: Ray): Nullable[PickingInfo] = js.native
-      def _internalPickSprites(
-        ray: Ray,
-        predicate: js.UndefOr[scala.Nothing],
-        fastCheck: js.UndefOr[scala.Nothing],
-        camera: Camera
-      ): Nullable[PickingInfo] = js.native
-      def _internalPickSprites(ray: Ray, predicate: js.UndefOr[scala.Nothing], fastCheck: Boolean): Nullable[PickingInfo] = js.native
-      def _internalPickSprites(ray: Ray, predicate: js.UndefOr[scala.Nothing], fastCheck: Boolean, camera: Camera): Nullable[PickingInfo] = js.native
       def _internalPickSprites(ray: Ray, predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean]): Nullable[PickingInfo] = js.native
-      def _internalPickSprites(
-        ray: Ray,
-        predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
-        fastCheck: js.UndefOr[scala.Nothing],
-        camera: Camera
-      ): Nullable[PickingInfo] = js.native
       def _internalPickSprites(
         ray: Ray,
         predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
@@ -487,6 +463,15 @@ object spritesIndexMod {
         fastCheck: Boolean,
         camera: Camera
       ): Nullable[PickingInfo] = js.native
+      def _internalPickSprites(
+        ray: Ray,
+        predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
+        fastCheck: Unit,
+        camera: Camera
+      ): Nullable[PickingInfo] = js.native
+      def _internalPickSprites(ray: Ray, predicate: Unit, fastCheck: Boolean): Nullable[PickingInfo] = js.native
+      def _internalPickSprites(ray: Ray, predicate: Unit, fastCheck: Boolean, camera: Camera): Nullable[PickingInfo] = js.native
+      def _internalPickSprites(ray: Ray, predicate: Unit, fastCheck: Unit, camera: Camera): Nullable[PickingInfo] = js.native
       
       /** @hidden */
       var _pickedDownSprite: Nullable[typings.babylonjs.spriteMod.Sprite] = js.native
@@ -511,7 +496,6 @@ object spritesIndexMod {
         * @returns a PickingInfo array
         */
       def multiPickSprite(x: Double, y: Double): Nullable[js.Array[PickingInfo]] = js.native
-      def multiPickSprite(x: Double, y: Double, predicate: js.UndefOr[scala.Nothing], camera: Camera): Nullable[js.Array[PickingInfo]] = js.native
       def multiPickSprite(
         x: Double,
         y: Double,
@@ -523,6 +507,7 @@ object spritesIndexMod {
         predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
         camera: Camera
       ): Nullable[js.Array[PickingInfo]] = js.native
+      def multiPickSprite(x: Double, y: Double, predicate: Unit, camera: Camera): Nullable[js.Array[PickingInfo]] = js.native
       
       /** Use the given ray to pick sprites in the scene
         * @param ray The ray (in world space) to use to pick meshes
@@ -531,13 +516,13 @@ object spritesIndexMod {
         * @returns a PickingInfo array
         */
       def multiPickSpriteWithRay(ray: Ray): Nullable[js.Array[PickingInfo]] = js.native
-      def multiPickSpriteWithRay(ray: Ray, predicate: js.UndefOr[scala.Nothing], camera: Camera): Nullable[js.Array[PickingInfo]] = js.native
       def multiPickSpriteWithRay(ray: Ray, predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean]): Nullable[js.Array[PickingInfo]] = js.native
       def multiPickSpriteWithRay(
         ray: Ray,
         predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
         camera: Camera
       ): Nullable[js.Array[PickingInfo]] = js.native
+      def multiPickSpriteWithRay(ray: Ray, predicate: Unit, camera: Camera): Nullable[js.Array[PickingInfo]] = js.native
       
       /**
         * An event triggered when sprites rendering is done
@@ -563,23 +548,7 @@ object spritesIndexMod {
       def pickSprite(
         x: Double,
         y: Double,
-        predicate: js.UndefOr[scala.Nothing],
-        fastCheck: js.UndefOr[scala.Nothing],
-        camera: Camera
-      ): Nullable[PickingInfo] = js.native
-      def pickSprite(x: Double, y: Double, predicate: js.UndefOr[scala.Nothing], fastCheck: Boolean): Nullable[PickingInfo] = js.native
-      def pickSprite(x: Double, y: Double, predicate: js.UndefOr[scala.Nothing], fastCheck: Boolean, camera: Camera): Nullable[PickingInfo] = js.native
-      def pickSprite(
-        x: Double,
-        y: Double,
         predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean]
-      ): Nullable[PickingInfo] = js.native
-      def pickSprite(
-        x: Double,
-        y: Double,
-        predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
-        fastCheck: js.UndefOr[scala.Nothing],
-        camera: Camera
       ): Nullable[PickingInfo] = js.native
       def pickSprite(
         x: Double,
@@ -594,6 +563,16 @@ object spritesIndexMod {
         fastCheck: Boolean,
         camera: Camera
       ): Nullable[PickingInfo] = js.native
+      def pickSprite(
+        x: Double,
+        y: Double,
+        predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
+        fastCheck: Unit,
+        camera: Camera
+      ): Nullable[PickingInfo] = js.native
+      def pickSprite(x: Double, y: Double, predicate: Unit, fastCheck: Boolean): Nullable[PickingInfo] = js.native
+      def pickSprite(x: Double, y: Double, predicate: Unit, fastCheck: Boolean, camera: Camera): Nullable[PickingInfo] = js.native
+      def pickSprite(x: Double, y: Double, predicate: Unit, fastCheck: Unit, camera: Camera): Nullable[PickingInfo] = js.native
       
       /** Use the given ray to pick a sprite in the scene
         * @param ray The ray (in world space) to use to pick meshes
@@ -603,21 +582,7 @@ object spritesIndexMod {
         * @returns a PickingInfo
         */
       def pickSpriteWithRay(ray: Ray): Nullable[PickingInfo] = js.native
-      def pickSpriteWithRay(
-        ray: Ray,
-        predicate: js.UndefOr[scala.Nothing],
-        fastCheck: js.UndefOr[scala.Nothing],
-        camera: Camera
-      ): Nullable[PickingInfo] = js.native
-      def pickSpriteWithRay(ray: Ray, predicate: js.UndefOr[scala.Nothing], fastCheck: Boolean): Nullable[PickingInfo] = js.native
-      def pickSpriteWithRay(ray: Ray, predicate: js.UndefOr[scala.Nothing], fastCheck: Boolean, camera: Camera): Nullable[PickingInfo] = js.native
       def pickSpriteWithRay(ray: Ray, predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean]): Nullable[PickingInfo] = js.native
-      def pickSpriteWithRay(
-        ray: Ray,
-        predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
-        fastCheck: js.UndefOr[scala.Nothing],
-        camera: Camera
-      ): Nullable[PickingInfo] = js.native
       def pickSpriteWithRay(
         ray: Ray,
         predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
@@ -629,6 +594,15 @@ object spritesIndexMod {
         fastCheck: Boolean,
         camera: Camera
       ): Nullable[PickingInfo] = js.native
+      def pickSpriteWithRay(
+        ray: Ray,
+        predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
+        fastCheck: Unit,
+        camera: Camera
+      ): Nullable[PickingInfo] = js.native
+      def pickSpriteWithRay(ray: Ray, predicate: Unit, fastCheck: Boolean): Nullable[PickingInfo] = js.native
+      def pickSpriteWithRay(ray: Ray, predicate: Unit, fastCheck: Boolean, camera: Camera): Nullable[PickingInfo] = js.native
+      def pickSpriteWithRay(ray: Ray, predicate: Unit, fastCheck: Unit, camera: Camera): Nullable[PickingInfo] = js.native
       
       /**
         * Force the sprite under the pointer

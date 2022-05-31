@@ -1,10 +1,7 @@
 package typings.reactLazylog
 
-import typings.react.mod.Component
 import typings.reactLazylog.anon.PartialLazyLogProps
 import typings.reactLazylog.lazyLogMod.LazyLogProps
-import typings.reactLazylog.lineNumberMod.LineNumberProps
-import typings.reactLazylog.linePartMod.LinePartProps
 import typings.reactLazylog.scrollFollowMod.ScrollFollowProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -47,8 +44,4 @@ object mod {
       */
     def this(props: ScrollFollowProps, context: js.Any) = this()
   }
-  
-  @js.native
-  trait LinePart
-    extends Component[LineNumberProps | LinePartProps, js.Object, js.Any]
 }

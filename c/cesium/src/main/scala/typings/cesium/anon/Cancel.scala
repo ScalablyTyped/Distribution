@@ -31,7 +31,7 @@ trait Cancel extends StObject {
   
   var maximumHeight: js.UndefOr[Double] = js.undefined
   
-  var orientation: js.UndefOr[Direction | Heading] = js.undefined
+  var orientation: js.UndefOr[Up | Heading] = js.undefined
   
   var pitchAdjustHeight: js.UndefOr[Double] = js.undefined
 }
@@ -82,7 +82,7 @@ object Cancel {
     
     inline def setMaximumHeightUndefined: Self = StObject.set(x, "maximumHeight", js.undefined)
     
-    inline def setOrientation(value: Direction | Heading): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: Up | Heading): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     

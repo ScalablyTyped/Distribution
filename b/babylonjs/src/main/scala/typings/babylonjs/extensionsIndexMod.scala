@@ -34,7 +34,6 @@ import typings.std.WebGLQuery
 import typings.std.WebGLTransformFeedback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object extensionsIndexMod {
@@ -57,20 +56,18 @@ object extensionsIndexMod {
   @js.native
   def forceTransformFeedbackToBundle: Boolean = js.native
   
-  @scala.inline
-  def forceTransformFeedbackToBundle_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_forceTransformFeedbackToBundle")(x.asInstanceOf[js.Any])
+  inline def forceTransformFeedbackToBundle_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_forceTransformFeedbackToBundle")(x.asInstanceOf[js.Any])
   
   /* augmented module */
   object babylonjsCamerasCameraAugmentingMod {
     
-    @js.native
     trait Camera extends StObject {
       
       /**
         * @hidden
         * For cameras that cannot use multiview images to display directly. (e.g. webVR camera will render to multiview texture, then copy to each eye texture and go from there)
         */
-      var _multiviewTexture: Nullable[RenderTargetTexture] = js.native
+      var _multiviewTexture: Nullable[RenderTargetTexture]
       
       /**
         * @hidden
@@ -78,36 +75,30 @@ object extensionsIndexMod {
         * @param width height to set on the multiview texture
         * @param height width to set on the multiview texture
         */
-      def _resizeOrCreateMultiviewTexture(width: Double, height: Double): Unit = js.native
+      def _resizeOrCreateMultiviewTexture(width: Double, height: Double): Unit
       
       /**
         * @hidden
         * For cameras that cannot use multiview images to display directly. (e.g. webVR camera will render to multiview texture, then copy to each eye texture and go from there)
         */
-      var _useMultiviewToSingleView: Boolean = js.native
+      var _useMultiviewToSingleView: Boolean
     }
     object Camera {
       
-      @scala.inline
-      def apply(_resizeOrCreateMultiviewTexture: (Double, Double) => Unit, _useMultiviewToSingleView: Boolean): Camera = {
-        val __obj = js.Dynamic.literal(_resizeOrCreateMultiviewTexture = js.Any.fromFunction2(_resizeOrCreateMultiviewTexture), _useMultiviewToSingleView = _useMultiviewToSingleView.asInstanceOf[js.Any])
+      inline def apply(_resizeOrCreateMultiviewTexture: (Double, Double) => Unit, _useMultiviewToSingleView: Boolean): Camera = {
+        val __obj = js.Dynamic.literal(_resizeOrCreateMultiviewTexture = js.Any.fromFunction2(_resizeOrCreateMultiviewTexture), _useMultiviewToSingleView = _useMultiviewToSingleView.asInstanceOf[js.Any], _multiviewTexture = null)
         __obj.asInstanceOf[Camera]
       }
       
-      @scala.inline
-      implicit class CameraMutableBuilder[Self <: Camera] (val x: Self) extends AnyVal {
+      extension [Self <: Camera](x: Self) {
         
-        @scala.inline
-        def set_multiviewTexture(value: Nullable[RenderTargetTexture]): Self = StObject.set(x, "_multiviewTexture", value.asInstanceOf[js.Any])
+        inline def set_multiviewTexture(value: Nullable[RenderTargetTexture]): Self = StObject.set(x, "_multiviewTexture", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set_multiviewTextureNull: Self = StObject.set(x, "_multiviewTexture", null)
+        inline def set_multiviewTextureNull: Self = StObject.set(x, "_multiviewTexture", null)
         
-        @scala.inline
-        def set_resizeOrCreateMultiviewTexture(value: (Double, Double) => Unit): Self = StObject.set(x, "_resizeOrCreateMultiviewTexture", js.Any.fromFunction2(value))
+        inline def set_resizeOrCreateMultiviewTexture(value: (Double, Double) => Unit): Self = StObject.set(x, "_resizeOrCreateMultiviewTexture", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def set_useMultiviewToSingleView(value: Boolean): Self = StObject.set(x, "_useMultiviewToSingleView", value.asInstanceOf[js.Any])
+        inline def set_useMultiviewToSingleView(value: Boolean): Self = StObject.set(x, "_useMultiviewToSingleView", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -158,7 +149,7 @@ object extensionsIndexMod {
       def _onVRFullScreenTriggered(): Unit = js.native
       
       /** @hidden */
-      var _onVrDisplayConnect: Nullable[js.Function1[/* display */ _, Unit]] = js.native
+      var _onVrDisplayConnect: Nullable[js.Function1[/* display */ js.Any, Unit]] = js.native
       
       /** @hidden */
       var _onVrDisplayDisconnect: Nullable[js.Function0[Unit]] = js.native
@@ -433,7 +424,7 @@ object extensionsIndexMod {
         onfinish: js.Function1[/* images */ js.Array[ArrayBuffer], Unit],
         files: js.Array[String],
         onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
             ]
       ): Unit = js.native
       
@@ -443,7 +434,7 @@ object extensionsIndexMod {
         onfinish: js.Function1[/* images */ js.Array[HTMLImageElement], Unit],
         files: js.Array[String],
         onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
             ]
       ): Unit = js.native
       def _cascadeLoadImgs(
@@ -451,7 +442,7 @@ object extensionsIndexMod {
         onfinish: js.Function1[/* images */ js.Array[HTMLImageElement], Unit],
         files: js.Array[String],
         onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
             ],
         mimeType: String
       ): Unit = js.native
@@ -475,7 +466,7 @@ object extensionsIndexMod {
         loadedFiles: js.Array[ArrayBuffer],
         onfinish: js.Function1[/* files */ js.Array[ArrayBuffer], Unit],
         onErrorCallBack: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
             ]
       ): Unit = js.native
       
@@ -487,7 +478,7 @@ object extensionsIndexMod {
         scene: Nullable[Scene],
         onfinish: js.Function1[/* images */ js.Array[HTMLImageElement], Unit],
         onErrorCallBack: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
             ]
       ): Unit = js.native
       def _partialLoadImg(
@@ -497,45 +488,14 @@ object extensionsIndexMod {
         scene: Nullable[Scene],
         onfinish: js.Function1[/* images */ js.Array[HTMLImageElement], Unit],
         onErrorCallBack: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
             ],
         mimeType: String
       ): Unit = js.native
       
       /** @hidden */
       def _readTexturePixels(texture: InternalTexture, width: Double, height: Double): ArrayBufferView = js.native
-      def _readTexturePixels(
-        texture: InternalTexture,
-        width: Double,
-        height: Double,
-        faceIndex: js.UndefOr[scala.Nothing],
-        level: js.UndefOr[scala.Nothing],
-        buffer: Nullable[ArrayBufferView]
-      ): ArrayBufferView = js.native
-      def _readTexturePixels(
-        texture: InternalTexture,
-        width: Double,
-        height: Double,
-        faceIndex: js.UndefOr[scala.Nothing],
-        level: Double
-      ): ArrayBufferView = js.native
-      def _readTexturePixels(
-        texture: InternalTexture,
-        width: Double,
-        height: Double,
-        faceIndex: js.UndefOr[scala.Nothing],
-        level: Double,
-        buffer: Nullable[ArrayBufferView]
-      ): ArrayBufferView = js.native
       def _readTexturePixels(texture: InternalTexture, width: Double, height: Double, faceIndex: Double): ArrayBufferView = js.native
-      def _readTexturePixels(
-        texture: InternalTexture,
-        width: Double,
-        height: Double,
-        faceIndex: Double,
-        level: js.UndefOr[scala.Nothing],
-        buffer: Nullable[ArrayBufferView]
-      ): ArrayBufferView = js.native
       def _readTexturePixels(texture: InternalTexture, width: Double, height: Double, faceIndex: Double, level: Double): ArrayBufferView = js.native
       def _readTexturePixels(
         texture: InternalTexture,
@@ -543,6 +503,31 @@ object extensionsIndexMod {
         height: Double,
         faceIndex: Double,
         level: Double,
+        buffer: Nullable[ArrayBufferView]
+      ): ArrayBufferView = js.native
+      def _readTexturePixels(
+        texture: InternalTexture,
+        width: Double,
+        height: Double,
+        faceIndex: Double,
+        level: Unit,
+        buffer: Nullable[ArrayBufferView]
+      ): ArrayBufferView = js.native
+      def _readTexturePixels(texture: InternalTexture, width: Double, height: Double, faceIndex: Unit, level: Double): ArrayBufferView = js.native
+      def _readTexturePixels(
+        texture: InternalTexture,
+        width: Double,
+        height: Double,
+        faceIndex: Unit,
+        level: Double,
+        buffer: Nullable[ArrayBufferView]
+      ): ArrayBufferView = js.native
+      def _readTexturePixels(
+        texture: InternalTexture,
+        width: Double,
+        height: Double,
+        faceIndex: Unit,
+        level: Unit,
         buffer: Nullable[ArrayBufferView]
       ): ArrayBufferView = js.native
       
@@ -585,84 +570,6 @@ object extensionsIndexMod {
         */
       def buildTextureLayout(textureStatus: js.Array[Boolean]): js.Array[Double] = js.native
       
-      def createCubeTexture(
-        rootUrl: String,
-        scene: Nullable[Scene],
-        files: Nullable[js.Array[String]],
-        noMipmap: js.UndefOr[scala.Nothing],
-        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
-        onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
-            ],
-        format: js.UndefOr[scala.Nothing],
-        forcedExtension: js.Any,
-        createPolynomials: Boolean,
-        lodScale: Double,
-        lodOffset: Double,
-        fallback: Nullable[InternalTexture],
-        loaderOptions: js.Any
-      ): InternalTexture = js.native
-      def createCubeTexture(
-        rootUrl: String,
-        scene: Nullable[Scene],
-        files: Nullable[js.Array[String]],
-        noMipmap: js.UndefOr[scala.Nothing],
-        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
-        onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
-            ],
-        format: Double,
-        forcedExtension: js.Any,
-        createPolynomials: Boolean,
-        lodScale: Double,
-        lodOffset: Double,
-        fallback: Nullable[InternalTexture],
-        loaderOptions: js.Any
-      ): InternalTexture = js.native
-      def createCubeTexture(
-        rootUrl: String,
-        scene: Nullable[Scene],
-        files: Nullable[js.Array[String]],
-        noMipmap: Boolean,
-        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
-        onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
-            ],
-        format: js.UndefOr[scala.Nothing],
-        forcedExtension: js.Any
-      ): InternalTexture = js.native
-      def createCubeTexture(
-        rootUrl: String,
-        scene: Nullable[Scene],
-        files: Nullable[js.Array[String]],
-        noMipmap: Boolean,
-        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
-        onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
-            ],
-        format: js.UndefOr[scala.Nothing],
-        forcedExtension: js.Any,
-        createPolynomials: Boolean,
-        lodScale: Double,
-        lodOffset: Double
-      ): InternalTexture = js.native
-      def createCubeTexture(
-        rootUrl: String,
-        scene: Nullable[Scene],
-        files: Nullable[js.Array[String]],
-        noMipmap: Boolean,
-        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
-        onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
-            ],
-        format: js.UndefOr[scala.Nothing],
-        forcedExtension: js.Any,
-        createPolynomials: Boolean,
-        lodScale: Double,
-        lodOffset: Double,
-        fallback: Nullable[InternalTexture],
-        loaderOptions: js.Any
-      ): InternalTexture = js.native
       /**
         * Creates a cube texture
         * @param rootUrl defines the url where the files to load is located
@@ -680,9 +587,9 @@ object extensionsIndexMod {
         scene: Nullable[Scene],
         files: Nullable[js.Array[String]],
         noMipmap: Boolean,
-        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
+        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
         onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
             ],
         format: Double,
         forcedExtension: js.Any
@@ -707,9 +614,9 @@ object extensionsIndexMod {
         scene: Nullable[Scene],
         files: Nullable[js.Array[String]],
         noMipmap: Boolean,
-        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
+        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
         onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
             ],
         format: Double,
         forcedExtension: js.Any,
@@ -739,11 +646,89 @@ object extensionsIndexMod {
         scene: Nullable[Scene],
         files: Nullable[js.Array[String]],
         noMipmap: Boolean,
-        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
+        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
         onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
             ],
         format: Double,
+        forcedExtension: js.Any,
+        createPolynomials: Boolean,
+        lodScale: Double,
+        lodOffset: Double,
+        fallback: Nullable[InternalTexture],
+        loaderOptions: js.Any
+      ): InternalTexture = js.native
+      def createCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        files: Nullable[js.Array[String]],
+        noMipmap: Boolean,
+        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+        onError: Nullable[
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            ],
+        format: Unit,
+        forcedExtension: js.Any
+      ): InternalTexture = js.native
+      def createCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        files: Nullable[js.Array[String]],
+        noMipmap: Boolean,
+        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+        onError: Nullable[
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            ],
+        format: Unit,
+        forcedExtension: js.Any,
+        createPolynomials: Boolean,
+        lodScale: Double,
+        lodOffset: Double
+      ): InternalTexture = js.native
+      def createCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        files: Nullable[js.Array[String]],
+        noMipmap: Boolean,
+        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+        onError: Nullable[
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            ],
+        format: Unit,
+        forcedExtension: js.Any,
+        createPolynomials: Boolean,
+        lodScale: Double,
+        lodOffset: Double,
+        fallback: Nullable[InternalTexture],
+        loaderOptions: js.Any
+      ): InternalTexture = js.native
+      def createCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        files: Nullable[js.Array[String]],
+        noMipmap: Unit,
+        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+        onError: Nullable[
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            ],
+        format: Double,
+        forcedExtension: js.Any,
+        createPolynomials: Boolean,
+        lodScale: Double,
+        lodOffset: Double,
+        fallback: Nullable[InternalTexture],
+        loaderOptions: js.Any
+      ): InternalTexture = js.native
+      def createCubeTexture(
+        rootUrl: String,
+        scene: Nullable[Scene],
+        files: Nullable[js.Array[String]],
+        noMipmap: Unit,
+        onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+        onError: Nullable[
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            ],
+        format: Unit,
         forcedExtension: js.Any,
         createPolynomials: Boolean,
         lodScale: Double,
@@ -838,7 +823,7 @@ object extensionsIndexMod {
             ],
         onLoad: Nullable[js.Function0[Unit]],
         onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
             ]
       ): InternalTexture = js.native
       /**
@@ -870,7 +855,7 @@ object extensionsIndexMod {
             ],
         onLoad: Nullable[js.Function0[Unit]],
         onError: Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
             ],
         samplingMode: Double,
         invertY: Boolean
@@ -1072,14 +1057,9 @@ object extensionsIndexMod {
         * @param byteLength the byte length of the data
         */
       def updateDynamicVertexBuffer(vertexBuffer: DataBuffer, data: DataArray): Unit = js.native
-      def updateDynamicVertexBuffer(
-        vertexBuffer: DataBuffer,
-        data: DataArray,
-        byteOffset: js.UndefOr[scala.Nothing],
-        byteLength: Double
-      ): Unit = js.native
       def updateDynamicVertexBuffer(vertexBuffer: DataBuffer, data: DataArray, byteOffset: Double): Unit = js.native
       def updateDynamicVertexBuffer(vertexBuffer: DataBuffer, data: DataArray, byteOffset: Double, byteLength: Double): Unit = js.native
+      def updateDynamicVertexBuffer(vertexBuffer: DataBuffer, data: DataArray, byteOffset: Unit, byteLength: Double): Unit = js.native
       
       /**
         * Update the sample count for a given multiple render target texture
@@ -1234,9 +1214,9 @@ object extensionsIndexMod {
         * @param count defines the size of the data to update
         */
       def updateUniformBuffer(uniformBuffer: DataBuffer, elements: FloatArray): Unit = js.native
-      def updateUniformBuffer(uniformBuffer: DataBuffer, elements: FloatArray, offset: js.UndefOr[scala.Nothing], count: Double): Unit = js.native
       def updateUniformBuffer(uniformBuffer: DataBuffer, elements: FloatArray, offset: Double): Unit = js.native
       def updateUniformBuffer(uniformBuffer: DataBuffer, elements: FloatArray, offset: Double, count: Double): Unit = js.native
+      def updateUniformBuffer(uniformBuffer: DataBuffer, elements: FloatArray, offset: Unit, count: Double): Unit = js.native
       
       /**
         * Update a video texture
@@ -1251,32 +1231,31 @@ object extensionsIndexMod {
   /* augmented module */
   object babylonjsMeshesAbstractMeshAugmentingMod {
     
-    @js.native
     trait AbstractMesh extends StObject {
       
       /**
         * Backing filed
         * @hidden
         */
-      var __occlusionDataStorage: typings.babylonjs.engineOcclusionQueryMod.OcclusionDataStorage = js.native
+      var __occlusionDataStorage: typings.babylonjs.engineOcclusionQueryMod.OcclusionDataStorage
       
       /**
         * Access property
         * @hidden
         */
-      var _occlusionDataStorage: typings.babylonjs.engineOcclusionQueryMod.OcclusionDataStorage = js.native
+      var _occlusionDataStorage: typings.babylonjs.engineOcclusionQueryMod.OcclusionDataStorage
       
       /**
         * Gets or sets whether the mesh is occluded or not, it is used also to set the intial state of the mesh to be occluded or not
         * @see https://doc.babylonjs.com/features/occlusionquery
         */
-      var isOccluded: Boolean = js.native
+      var isOccluded: Boolean
       
       /**
         * Flag to check the progress status of the query
         * @see https://doc.babylonjs.com/features/occlusionquery
         */
-      var isOcclusionQueryInProgress: Boolean = js.native
+      var isOcclusionQueryInProgress: Boolean
       
       /**
         * This property determines the type of occlusion query algorithm to run in WebGl, you can use:
@@ -1284,14 +1263,14 @@ object extensionsIndexMod {
         * * AbstractMesh.OCCLUSION_ALGORITHM_TYPE_CONSERVATIVE (Default Value) which is mapped to GL_ANY_SAMPLES_PASSED_CONSERVATIVE which is a false positive algorithm that is faster than GL_ANY_SAMPLES_PASSED but less accurate.
         * @see https://doc.babylonjs.com/features/occlusionquery
         */
-      var occlusionQueryAlgorithmType: Double = js.native
+      var occlusionQueryAlgorithmType: Double
       
       /**
         * This number indicates the number of allowed retries before stop the occlusion query, this is useful if the occlusion query is taking long time before to the query result is retireved, the query result indicates if the object is visible within the scene or not and based on that Babylon.Js engine decideds to show or hide the object.
         * The default value is -1 which means don't break the query and wait till the result
         * @see https://doc.babylonjs.com/features/occlusionquery
         */
-      var occlusionRetryCount: Double = js.native
+      var occlusionRetryCount: Double
       
       /**
         * This property is responsible for starting the occlusion query within the Mesh or not, this property is also used to determine what should happen when the occlusionRetryCount is reached. It has supports 3 values:
@@ -1300,12 +1279,11 @@ object extensionsIndexMod {
         * * OCCLUSION_TYPE_STRICT: this option is means use occlusion query and if occlusionRetryCount is reached and the query is broken restore the last state of the mesh occlusion if the mesh was visible then show the mesh if was hidden then hide don't show.
         * @see https://doc.babylonjs.com/features/occlusionquery
         */
-      var occlusionType: Double = js.native
+      var occlusionType: Double
     }
     object AbstractMesh {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         __occlusionDataStorage: typings.babylonjs.engineOcclusionQueryMod.OcclusionDataStorage,
         _occlusionDataStorage: typings.babylonjs.engineOcclusionQueryMod.OcclusionDataStorage,
         isOccluded: Boolean,
@@ -1318,29 +1296,21 @@ object extensionsIndexMod {
         __obj.asInstanceOf[AbstractMesh]
       }
       
-      @scala.inline
-      implicit class AbstractMeshMutableBuilder[Self <: AbstractMesh] (val x: Self) extends AnyVal {
+      extension [Self <: AbstractMesh](x: Self) {
         
-        @scala.inline
-        def setIsOccluded(value: Boolean): Self = StObject.set(x, "isOccluded", value.asInstanceOf[js.Any])
+        inline def setIsOccluded(value: Boolean): Self = StObject.set(x, "isOccluded", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsOcclusionQueryInProgress(value: Boolean): Self = StObject.set(x, "isOcclusionQueryInProgress", value.asInstanceOf[js.Any])
+        inline def setIsOcclusionQueryInProgress(value: Boolean): Self = StObject.set(x, "isOcclusionQueryInProgress", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOcclusionQueryAlgorithmType(value: Double): Self = StObject.set(x, "occlusionQueryAlgorithmType", value.asInstanceOf[js.Any])
+        inline def setOcclusionQueryAlgorithmType(value: Double): Self = StObject.set(x, "occlusionQueryAlgorithmType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOcclusionRetryCount(value: Double): Self = StObject.set(x, "occlusionRetryCount", value.asInstanceOf[js.Any])
+        inline def setOcclusionRetryCount(value: Double): Self = StObject.set(x, "occlusionRetryCount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOcclusionType(value: Double): Self = StObject.set(x, "occlusionType", value.asInstanceOf[js.Any])
+        inline def setOcclusionType(value: Double): Self = StObject.set(x, "occlusionType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set__occlusionDataStorage(value: typings.babylonjs.engineOcclusionQueryMod.OcclusionDataStorage): Self = StObject.set(x, "__occlusionDataStorage", value.asInstanceOf[js.Any])
+        inline def set__occlusionDataStorage(value: typings.babylonjs.engineOcclusionQueryMod.OcclusionDataStorage): Self = StObject.set(x, "__occlusionDataStorage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set_occlusionDataStorage(value: typings.babylonjs.engineOcclusionQueryMod.OcclusionDataStorage): Self = StObject.set(x, "_occlusionDataStorage", value.asInstanceOf[js.Any])
+        inline def set_occlusionDataStorage(value: typings.babylonjs.engineOcclusionQueryMod.OcclusionDataStorage): Self = StObject.set(x, "_occlusionDataStorage", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -1365,7 +1335,7 @@ object extensionsIndexMod {
       
       /** @hidden */
       def _updateMultiviewUbo(): Unit = js.native
-      def _updateMultiviewUbo(viewR: js.UndefOr[scala.Nothing], projectionR: Matrix): Unit = js.native
+      def _updateMultiviewUbo(viewR: Unit, projectionR: Matrix): Unit = js.native
       def _updateMultiviewUbo(viewR: Matrix): Unit = js.native
       def _updateMultiviewUbo(viewR: Matrix, projectionR: Matrix): Unit = js.native
     }

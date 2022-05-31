@@ -10,9 +10,9 @@ JupyterLab - Terminal Emulator Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/terminal-extension |
 | Keywords           | - |
-| # releases         | 113 |
+| # releases         | 131 |
 | # dependents       | 2 |
-| # downloads        | 1345911 |
+| # downloads        | 1458261 |
 | # stars            | 0 |
 
 ## Links

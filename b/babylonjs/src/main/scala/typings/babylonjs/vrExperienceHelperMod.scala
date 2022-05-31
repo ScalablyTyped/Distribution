@@ -21,7 +21,6 @@ import typings.babylonjs.webXRDefaultExperienceMod.WebXRDefaultExperience
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vrExperienceHelperMod {
@@ -52,169 +51,169 @@ object vrExperienceHelperMod {
     webVROptions: VRExperienceHelperOptions
     ) = this()
     
-    var _btnVR: js.Any = js.native
+    /* private */ var _btnVR: js.Any = js.native
     
-    var _btnVRDisplayed: js.Any = js.native
+    /* private */ var _btnVRDisplayed: js.Any = js.native
     
-    var _cachedAngularSensibility: js.Any = js.native
+    /* private */ var _cachedAngularSensibility: js.Any = js.native
     
-    var _cameraGazer: js.Any = js.native
+    /* private */ var _cameraGazer: js.Any = js.native
     
-    var _castRayAndSelectObject: js.Any = js.native
+    /* private */ var _castRayAndSelectObject: js.Any = js.native
     
-    var _checkRotate: js.Any = js.native
+    /* private */ var _checkRotate: js.Any = js.native
     
-    var _checkTeleportBackwards: js.Any = js.native
+    /* private */ var _checkTeleportBackwards: js.Any = js.native
     
-    var _checkTeleportWithRay: js.Any = js.native
+    /* private */ var _checkTeleportWithRay: js.Any = js.native
     
-    var _circleEase: js.Any = js.native
+    /* private */ var _circleEase: js.Any = js.native
     
-    var _convertNormalToDirectionOfRay: js.Any = js.native
+    /* private */ var _convertNormalToDirectionOfRay: js.Any = js.native
     
-    var _createTeleportationCircles: js.Any = js.native
+    /* private */ var _createTeleportationCircles: js.Any = js.native
     
-    var _defaultHeight: js.Any = js.native
+    /* private */ var _defaultHeight: js.Any = js.native
     
-    var _deviceOrientationCamera: js.Any = js.native
+    /* private */ var _deviceOrientationCamera: js.Any = js.native
     
-    var _displayGaze: js.Any = js.native
+    /* private */ var _displayGaze: js.Any = js.native
     
-    var _displayLaserPointer: js.Any = js.native
+    /* private */ var _displayLaserPointer: js.Any = js.native
     
-    var _displayTeleportationTarget: js.Any = js.native
+    /* private */ var _displayTeleportationTarget: js.Any = js.native
     
-    var _enableInteractionOnController: js.Any = js.native
+    /* private */ var _enableInteractionOnController: js.Any = js.native
     
-    var _enableTeleportationOnController: js.Any = js.native
+    /* private */ var _enableTeleportationOnController: js.Any = js.native
     
-    var _existingCamera: js.Any = js.native
+    /* private */ var _existingCamera: js.Any = js.native
     
-    var _floorMeshName: js.Any = js.native
+    /* private */ var _floorMeshName: js.Any = js.native
     
-    var _floorMeshesCollection: js.Any = js.native
+    /* private */ var _floorMeshesCollection: js.Any = js.native
     
-    var _fullscreenVRpresenting: js.Any = js.native
+    /* private */ var _fullscreenVRpresenting: js.Any = js.native
     
-    var _gazeColor: js.Any = js.native
+    /* private */ var _gazeColor: js.Any = js.native
     
-    var _haloCenter: js.Any = js.native
+    /* private */ var _haloCenter: js.Any = js.native
     
-    var _hasEnteredVR: js.Any = js.native
+    /* private */ var _hasEnteredVR: js.Any = js.native
     
-    var _hideTeleportationTarget: js.Any = js.native
+    /* private */ var _hideTeleportationTarget: js.Any = js.native
     
-    var _inputElement: js.Any = js.native
+    /* private */ var _inputElement: js.Any = js.native
     
-    var _interactionsEnabled: js.Any = js.native
+    /* private */ var _interactionsEnabled: js.Any = js.native
     
-    var _interactionsRequested: js.Any = js.native
+    /* private */ var _interactionsRequested: js.Any = js.native
     
-    var _isDefaultTeleportationTarget: js.Any = js.native
+    /* private */ var _isDefaultTeleportationTarget: js.Any = js.native
     
-    var _isTeleportationFloor: js.Any = js.native
+    /* private */ var _isTeleportationFloor: js.Any = js.native
     
-    var _laserColor: js.Any = js.native
+    /* private */ var _laserColor: js.Any = js.native
     
-    var _leftController: js.Any = js.native
+    /* private */ var _leftController: js.Any = js.native
     
-    var _moveTeleportationSelectorTo: js.Any = js.native
+    /* private */ var _moveTeleportationSelectorTo: js.Any = js.native
     
     /* private */ def _noControllerIsActive: js.Any = js.native
     
-    var _notifySelectedMeshUnselected: js.Any = js.native
+    /* private */ var _notifySelectedMeshUnselected: js.Any = js.native
     
-    var _onDefaultMeshLoaded: js.Any = js.native
+    /* private */ var _onDefaultMeshLoaded: js.Any = js.native
     
-    var _onFullscreenChange: js.Any = js.native
+    /* private */ var _onFullscreenChange: js.Any = js.native
     
-    var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: js.Any = js.native
     
-    var _onNewGamepadConnected: js.Any = js.native
+    /* private */ var _onNewGamepadConnected: js.Any = js.native
     
-    var _onNewGamepadDisconnected: js.Any = js.native
+    /* private */ var _onNewGamepadDisconnected: js.Any = js.native
     
-    var _onResize: js.Any = js.native
+    /* private */ var _onResize: js.Any = js.native
     
-    var _onVRDisplayChanged: js.Any = js.native
+    /* private */ var _onVRDisplayChanged: js.Any = js.native
     
-    var _onVRRequestPresentComplete: js.Any = js.native
+    /* private */ var _onVRRequestPresentComplete: js.Any = js.native
     
-    var _onVRRequestPresentStart: js.Any = js.native
+    /* private */ var _onVRRequestPresentStart: js.Any = js.native
     
-    var _onVrDisplayPresentChange: js.Any = js.native
+    /* private */ var _onVrDisplayPresentChange: js.Any = js.native
     
-    var _padSensibilityDown: js.Any = js.native
+    /* private */ var _padSensibilityDown: js.Any = js.native
     
-    var _padSensibilityUp: js.Any = js.native
+    /* private */ var _padSensibilityUp: js.Any = js.native
     
-    var _pickedGazeColor: js.Any = js.native
+    /* private */ var _pickedGazeColor: js.Any = js.native
     
-    var _pickedLaserColor: js.Any = js.native
+    /* private */ var _pickedLaserColor: js.Any = js.native
     
-    var _position: js.Any = js.native
+    /* private */ var _position: js.Any = js.native
     
-    var _postProcessMove: js.Any = js.native
+    /* private */ var _postProcessMove: js.Any = js.native
     
-    var _rayLength: js.Any = js.native
+    /* private */ var _rayLength: js.Any = js.native
     
-    var _raySelectionPredicate: js.Any = js.native
+    /* private */ var _raySelectionPredicate: js.Any = js.native
     
-    var _rightController: js.Any = js.native
+    /* private */ var _rightController: js.Any = js.native
     
-    var _rotateCamera: js.Any = js.native
+    /* private */ var _rotateCamera: js.Any = js.native
     
-    var _rotationAllowed: js.Any = js.native
+    /* private */ var _rotationAllowed: js.Any = js.native
     
-    var _rotationAngle: js.Any = js.native
+    /* private */ var _rotationAngle: js.Any = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
-    var _teleportActive: js.Any = js.native
+    /* private */ var _teleportActive: js.Any = js.native
     
-    var _teleportBackwardsVector: js.Any = js.native
+    /* private */ var _teleportBackwardsVector: js.Any = js.native
     
-    var _teleportationBorderColor: js.Any = js.native
+    /* private */ var _teleportationBorderColor: js.Any = js.native
     
-    var _teleportationEasing: js.Any = js.native
+    /* private */ var _teleportationEasing: js.Any = js.native
     
-    var _teleportationFillColor: js.Any = js.native
+    /* private */ var _teleportationFillColor: js.Any = js.native
     
-    var _teleportationInitialized: js.Any = js.native
+    /* private */ var _teleportationInitialized: js.Any = js.native
     
-    var _teleportationMode: js.Any = js.native
+    /* private */ var _teleportationMode: js.Any = js.native
     
     /* private */ def _teleportationRequestInitiated: js.Any = js.native
     
-    var _teleportationRequested: js.Any = js.native
+    /* private */ var _teleportationRequested: js.Any = js.native
     
-    var _teleportationSpeed: js.Any = js.native
+    /* private */ var _teleportationSpeed: js.Any = js.native
     
-    var _teleportationTarget: js.Any = js.native
+    /* private */ var _teleportationTarget: js.Any = js.native
     
-    var _teleportationTime: js.Any = js.native
+    /* private */ var _teleportationTime: js.Any = js.native
     
-    var _tryEnableInteractionOnController: js.Any = js.native
+    /* private */ var _tryEnableInteractionOnController: js.Any = js.native
     
-    var _useCustomVRButton: js.Any = js.native
+    /* private */ var _useCustomVRButton: js.Any = js.native
     
-    var _vrDeviceOrientationCamera: js.Any = js.native
+    /* private */ var _vrDeviceOrientationCamera: js.Any = js.native
     
-    var _webVRCamera: js.Any = js.native
+    /* private */ var _webVRCamera: js.Any = js.native
     
-    var _webVRpresenting: js.Any = js.native
+    /* private */ var _webVRpresenting: js.Any = js.native
     
-    var _webVRready: js.Any = js.native
+    /* private */ var _webVRready: js.Any = js.native
     
-    var _webVRrequesting: js.Any = js.native
+    /* private */ var _webVRrequesting: js.Any = js.native
     
-    var _webVRsupported: js.Any = js.native
+    /* private */ var _webVRsupported: js.Any = js.native
     
-    var _workingMatrix: js.Any = js.native
+    /* private */ var _workingMatrix: js.Any = js.native
     
-    var _workingQuaternion: js.Any = js.native
+    /* private */ var _workingQuaternion: js.Any = js.native
     
-    var _workingVector: js.Any = js.native
+    /* private */ var _workingVector: js.Any = js.native
     
     /**
       * Adds a floor mesh to be used for teleportation.
@@ -222,7 +221,7 @@ object vrExperienceHelperMod {
       */
     def addFloorMesh(floorMesh: Mesh): Unit = js.native
     
-    var beforeRender: js.Any = js.native
+    /* private */ var beforeRender: js.Any = js.native
     
     /**
       * Sets the color of the ray from the vr headsets gaze.
@@ -236,7 +235,7 @@ object vrExperienceHelperMod {
       */
     def changeLaserColor(color: Color3): Unit = js.native
     
-    var completeVRInit: js.Any = js.native
+    /* private */ var completeVRInit: js.Any = js.native
     
     /**
       * Based on the current WebVR support, returns the current VR camera used.
@@ -266,7 +265,7 @@ object vrExperienceHelperMod {
       */
     def displayLaserPointer_=(value: Boolean): Unit = js.native
     
-    var displayVRButton: js.Any = js.native
+    /* private */ var displayVRButton: js.Any = js.native
     
     /**
       * Exits VR and disposes of the vr experience helper
@@ -335,7 +334,7 @@ object vrExperienceHelperMod {
       */
     def meshSelectionPredicate(mesh: AbstractMesh): Boolean = js.native
     
-    var moveButtonToBottomRight: js.Any = js.native
+    /* private */ var moveButtonToBottomRight: js.Any = js.native
     
     /**
       *  Observable raised after camera teleportation
@@ -403,9 +402,9 @@ object vrExperienceHelperMod {
       */
     var onSelectedMeshUnselected: Observable[AbstractMesh] = js.native
     
-    var onVRDisplayChanged: js.Any = js.native
+    /* private */ var onVRDisplayChanged: js.Any = js.native
     
-    var onVrDisplayPresentChange: js.Any = js.native
+    /* private */ var onVrDisplayPresentChange: js.Any = js.native
     
     /**
       * The position of the vr experience helper.
@@ -481,7 +480,7 @@ object vrExperienceHelperMod {
       */
     def teleportationTarget_=(value: Mesh): Unit = js.native
     
-    var updateButtonVisibility: js.Any = js.native
+    /* private */ var updateButtonVisibility: js.Any = js.native
     
     /**
       * If the controller laser color should be updated when selecting meshes
@@ -545,173 +544,143 @@ object vrExperienceHelperMod {
     val TELEPORTATIONMODE_CONSTANTTIME: Double = js.native
   }
   
-  @js.native
-  trait VRExperienceHelperOptions extends WebVROptions {
+  trait VRExperienceHelperOptions
+    extends StObject
+       with WebVROptions {
     
     /**
       * Create a DeviceOrientationCamera to be used as your out of vr camera. (default: true)
       */
-    var createDeviceOrientationCamera: js.UndefOr[Boolean] = js.native
+    var createDeviceOrientationCamera: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Create a VRDeviceOrientationFreeCamera to be used for VR when no external HMD is found. (default: true)
       */
-    var createFallbackVRDeviceOrientationFreeCamera: js.UndefOr[Boolean] = js.native
+    var createFallbackVRDeviceOrientationFreeCamera: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A list of meshes to be used as the teleportation floor. If specified, teleportation will be enabled (default: undefined)
       */
-    var floorMeshes: js.UndefOr[js.Array[Mesh]] = js.native
+    var floorMeshes: js.UndefOr[js.Array[Mesh]] = js.undefined
     
     /**
       * Uses the main button on the controller to toggle the laser casted. (default: true)
       */
-    var laserToggle: js.UndefOr[Boolean] = js.native
+    var laserToggle: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines if WebXR should be used instead of WebVR (if available)
       */
-    var useXR: js.UndefOr[Boolean] = js.native
+    var useXR: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Distortion metrics for the fallback vrDeviceOrientationCamera (default: VRCameraMetrics.Default)
       */
-    var vrDeviceOrientationCameraMetrics: js.UndefOr[VRCameraMetrics] = js.native
+    var vrDeviceOrientationCameraMetrics: js.UndefOr[VRCameraMetrics] = js.undefined
   }
   object VRExperienceHelperOptions {
     
-    @scala.inline
-    def apply(): VRExperienceHelperOptions = {
+    inline def apply(): VRExperienceHelperOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VRExperienceHelperOptions]
     }
     
-    @scala.inline
-    implicit class VRExperienceHelperOptionsMutableBuilder[Self <: VRExperienceHelperOptions] (val x: Self) extends AnyVal {
+    extension [Self <: VRExperienceHelperOptions](x: Self) {
       
-      @scala.inline
-      def setCreateDeviceOrientationCamera(value: Boolean): Self = StObject.set(x, "createDeviceOrientationCamera", value.asInstanceOf[js.Any])
+      inline def setCreateDeviceOrientationCamera(value: Boolean): Self = StObject.set(x, "createDeviceOrientationCamera", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateDeviceOrientationCameraUndefined: Self = StObject.set(x, "createDeviceOrientationCamera", js.undefined)
+      inline def setCreateDeviceOrientationCameraUndefined: Self = StObject.set(x, "createDeviceOrientationCamera", js.undefined)
       
-      @scala.inline
-      def setCreateFallbackVRDeviceOrientationFreeCamera(value: Boolean): Self = StObject.set(x, "createFallbackVRDeviceOrientationFreeCamera", value.asInstanceOf[js.Any])
+      inline def setCreateFallbackVRDeviceOrientationFreeCamera(value: Boolean): Self = StObject.set(x, "createFallbackVRDeviceOrientationFreeCamera", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateFallbackVRDeviceOrientationFreeCameraUndefined: Self = StObject.set(x, "createFallbackVRDeviceOrientationFreeCamera", js.undefined)
+      inline def setCreateFallbackVRDeviceOrientationFreeCameraUndefined: Self = StObject.set(x, "createFallbackVRDeviceOrientationFreeCamera", js.undefined)
       
-      @scala.inline
-      def setFloorMeshes(value: js.Array[Mesh]): Self = StObject.set(x, "floorMeshes", value.asInstanceOf[js.Any])
+      inline def setFloorMeshes(value: js.Array[Mesh]): Self = StObject.set(x, "floorMeshes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloorMeshesUndefined: Self = StObject.set(x, "floorMeshes", js.undefined)
+      inline def setFloorMeshesUndefined: Self = StObject.set(x, "floorMeshes", js.undefined)
       
-      @scala.inline
-      def setFloorMeshesVarargs(value: Mesh*): Self = StObject.set(x, "floorMeshes", js.Array(value :_*))
+      inline def setFloorMeshesVarargs(value: Mesh*): Self = StObject.set(x, "floorMeshes", js.Array(value :_*))
       
-      @scala.inline
-      def setLaserToggle(value: Boolean): Self = StObject.set(x, "laserToggle", value.asInstanceOf[js.Any])
+      inline def setLaserToggle(value: Boolean): Self = StObject.set(x, "laserToggle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLaserToggleUndefined: Self = StObject.set(x, "laserToggle", js.undefined)
+      inline def setLaserToggleUndefined: Self = StObject.set(x, "laserToggle", js.undefined)
       
-      @scala.inline
-      def setUseXR(value: Boolean): Self = StObject.set(x, "useXR", value.asInstanceOf[js.Any])
+      inline def setUseXR(value: Boolean): Self = StObject.set(x, "useXR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseXRUndefined: Self = StObject.set(x, "useXR", js.undefined)
+      inline def setUseXRUndefined: Self = StObject.set(x, "useXR", js.undefined)
       
-      @scala.inline
-      def setVrDeviceOrientationCameraMetrics(value: VRCameraMetrics): Self = StObject.set(x, "vrDeviceOrientationCameraMetrics", value.asInstanceOf[js.Any])
+      inline def setVrDeviceOrientationCameraMetrics(value: VRCameraMetrics): Self = StObject.set(x, "vrDeviceOrientationCameraMetrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVrDeviceOrientationCameraMetricsUndefined: Self = StObject.set(x, "vrDeviceOrientationCameraMetrics", js.undefined)
+      inline def setVrDeviceOrientationCameraMetricsUndefined: Self = StObject.set(x, "vrDeviceOrientationCameraMetrics", js.undefined)
     }
   }
   
-  @js.native
   trait VRTeleportationOptions extends StObject {
     
     /**
       * The easing function used in the animation or null for Linear. (default CircleEase)
       */
-    var easingFunction: js.UndefOr[EasingFunction] = js.native
+    var easingFunction: js.UndefOr[EasingFunction] = js.undefined
     
     /**
       * The name of the mesh which should be used as the teleportation floor. (default: null)
       */
-    var floorMeshName: js.UndefOr[String] = js.native
+    var floorMeshName: js.UndefOr[String] = js.undefined
     
     /**
       * A list of meshes to be used as the teleportation floor. (default: empty)
       */
-    var floorMeshes: js.UndefOr[js.Array[Mesh]] = js.native
+    var floorMeshes: js.UndefOr[js.Array[Mesh]] = js.undefined
     
     /**
       * The teleportation mode. (default: TELEPORTATIONMODE_CONSTANTTIME)
       */
-    var teleportationMode: js.UndefOr[Double] = js.native
+    var teleportationMode: js.UndefOr[Double] = js.undefined
     
     /**
       * The speed of the animation in distance/sec, apply when animationMode is TELEPORTATIONMODE_CONSTANTSPEED. (default 20 units / sec)
       */
-    var teleportationSpeed: js.UndefOr[Double] = js.native
+    var teleportationSpeed: js.UndefOr[Double] = js.undefined
     
     /**
       * The duration of the animation in ms, apply when animationMode is TELEPORTATIONMODE_CONSTANTTIME. (default 122ms)
       */
-    var teleportationTime: js.UndefOr[Double] = js.native
+    var teleportationTime: js.UndefOr[Double] = js.undefined
   }
   object VRTeleportationOptions {
     
-    @scala.inline
-    def apply(): VRTeleportationOptions = {
+    inline def apply(): VRTeleportationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VRTeleportationOptions]
     }
     
-    @scala.inline
-    implicit class VRTeleportationOptionsMutableBuilder[Self <: VRTeleportationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: VRTeleportationOptions](x: Self) {
       
-      @scala.inline
-      def setEasingFunction(value: EasingFunction): Self = StObject.set(x, "easingFunction", value.asInstanceOf[js.Any])
+      inline def setEasingFunction(value: EasingFunction): Self = StObject.set(x, "easingFunction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEasingFunctionUndefined: Self = StObject.set(x, "easingFunction", js.undefined)
+      inline def setEasingFunctionUndefined: Self = StObject.set(x, "easingFunction", js.undefined)
       
-      @scala.inline
-      def setFloorMeshName(value: String): Self = StObject.set(x, "floorMeshName", value.asInstanceOf[js.Any])
+      inline def setFloorMeshName(value: String): Self = StObject.set(x, "floorMeshName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloorMeshNameUndefined: Self = StObject.set(x, "floorMeshName", js.undefined)
+      inline def setFloorMeshNameUndefined: Self = StObject.set(x, "floorMeshName", js.undefined)
       
-      @scala.inline
-      def setFloorMeshes(value: js.Array[Mesh]): Self = StObject.set(x, "floorMeshes", value.asInstanceOf[js.Any])
+      inline def setFloorMeshes(value: js.Array[Mesh]): Self = StObject.set(x, "floorMeshes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloorMeshesUndefined: Self = StObject.set(x, "floorMeshes", js.undefined)
+      inline def setFloorMeshesUndefined: Self = StObject.set(x, "floorMeshes", js.undefined)
       
-      @scala.inline
-      def setFloorMeshesVarargs(value: Mesh*): Self = StObject.set(x, "floorMeshes", js.Array(value :_*))
+      inline def setFloorMeshesVarargs(value: Mesh*): Self = StObject.set(x, "floorMeshes", js.Array(value :_*))
       
-      @scala.inline
-      def setTeleportationMode(value: Double): Self = StObject.set(x, "teleportationMode", value.asInstanceOf[js.Any])
+      inline def setTeleportationMode(value: Double): Self = StObject.set(x, "teleportationMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeleportationModeUndefined: Self = StObject.set(x, "teleportationMode", js.undefined)
+      inline def setTeleportationModeUndefined: Self = StObject.set(x, "teleportationMode", js.undefined)
       
-      @scala.inline
-      def setTeleportationSpeed(value: Double): Self = StObject.set(x, "teleportationSpeed", value.asInstanceOf[js.Any])
+      inline def setTeleportationSpeed(value: Double): Self = StObject.set(x, "teleportationSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeleportationSpeedUndefined: Self = StObject.set(x, "teleportationSpeed", js.undefined)
+      inline def setTeleportationSpeedUndefined: Self = StObject.set(x, "teleportationSpeed", js.undefined)
       
-      @scala.inline
-      def setTeleportationTime(value: Double): Self = StObject.set(x, "teleportationTime", value.asInstanceOf[js.Any])
+      inline def setTeleportationTime(value: Double): Self = StObject.set(x, "teleportationTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeleportationTimeUndefined: Self = StObject.set(x, "teleportationTime", js.undefined)
+      inline def setTeleportationTimeUndefined: Self = StObject.set(x, "teleportationTime", js.undefined)
     }
   }
 }

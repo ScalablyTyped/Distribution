@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.IWebXRPlaneDetectorOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.WebXRPlaneDetector")
 @js.native
 class WebXRPlaneDetector protected ()
-  extends typings.babylonjs.BABYLON.WebXRPlaneDetector {
+  extends StObject
+     with typings.babylonjs.BABYLON.WebXRPlaneDetector {
   /**
     * construct a new Plane Detector
     * @param _xrSessionManager an instance of xr Session manager
@@ -20,6 +20,12 @@ class WebXRPlaneDetector protected ()
     _xrSessionManager: typings.babylonjs.BABYLON.WebXRSessionManager,
     _options: IWebXRPlaneDetectorOptions
   ) = this()
+  
+  /**
+    * Releases all held resources
+    */
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
 }
 /* static members */
 object WebXRPlaneDetector {

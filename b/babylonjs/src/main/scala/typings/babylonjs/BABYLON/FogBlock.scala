@@ -2,15 +2,16 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FogBlock extends NodeMaterialBlock {
+trait FogBlock
+  extends StObject
+     with NodeMaterialBlock {
   
-  var _fogDistanceName: js.Any = js.native
+  /* private */ var _fogDistanceName: js.Any = js.native
   
-  var _fogParameters: js.Any = js.native
+  /* private */ var _fogParameters: js.Any = js.native
   
   /**
     * Gets the fog color input component

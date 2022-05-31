@@ -2,31 +2,25 @@ package typings.oracleOraclejet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComponentElementData extends StObject {
   
-  var componentElement: typings.std.Element = js.native
+  var componentElement: typings.std.Element
   
-  var data: js.Object = js.native
+  var data: js.Object
 }
 object ComponentElementData {
   
-  @scala.inline
-  def apply(componentElement: typings.std.Element, data: js.Object): ComponentElementData = {
+  inline def apply(componentElement: typings.std.Element, data: js.Object): ComponentElementData = {
     val __obj = js.Dynamic.literal(componentElement = componentElement.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentElementData]
   }
   
-  @scala.inline
-  implicit class ComponentElementDataMutableBuilder[Self <: ComponentElementData] (val x: Self) extends AnyVal {
+  extension [Self <: ComponentElementData](x: Self) {
     
-    @scala.inline
-    def setComponentElement(value: typings.std.Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
+    inline def setComponentElement(value: typings.std.Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

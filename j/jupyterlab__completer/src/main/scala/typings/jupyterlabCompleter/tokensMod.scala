@@ -12,12 +12,10 @@ import typings.luminoCoreutils.mod.Token
 import typings.luminoWidgets.mod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tokensMod {
   
-  @js.native
   trait ICompletionManager extends StObject {
     
     /**
@@ -25,12 +23,11 @@ object tokensMod {
       *
       * @returns A completable object whose attributes can be updated as necessary.
       */
-    def register(completable: ICompletable): ICompletableAttributes = js.native
+    def register(completable: ICompletable): ICompletableAttributes
   }
   object ICompletionManager extends Shortcut {
     
-    @scala.inline
-    def apply(register: ICompletable => ICompletableAttributes): ICompletionManager = {
+    inline def apply(register: ICompletable => ICompletableAttributes): ICompletionManager = {
       val __obj = js.Dynamic.literal(register = js.Any.fromFunction1(register))
       __obj.asInstanceOf[ICompletionManager]
     }
@@ -42,77 +39,67 @@ object tokensMod {
     /**
       * An interface for completer-compatible objects.
       */
-    @js.native
-    trait ICompletable extends ICompletableAttributes {
+    trait ICompletable
+      extends StObject
+         with ICompletableAttributes {
       
       /**
         * The parent of the completer; the completer resources dispose with parent.
         */
-      val parent: Widget = js.native
+      val parent: Widget
     }
     object ICompletable {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         connector: (IDataConnector[IReply, Unit, IRequest, String]) | ICompletionItemsConnector,
         parent: Widget
       ): ICompletable = {
-        val __obj = js.Dynamic.literal(connector = connector.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(connector = connector.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], editor = null)
         __obj.asInstanceOf[ICompletable]
       }
       
-      @scala.inline
-      implicit class ICompletableMutableBuilder[Self <: ICompletable] (val x: Self) extends AnyVal {
+      extension [Self <: ICompletable](x: Self) {
         
-        @scala.inline
-        def setParent(value: Widget): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+        inline def setParent(value: Widget): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       }
     }
     
     /**
       * The attributes of a completable object that can change and sync at runtime.
       */
-    @js.native
     trait ICompletableAttributes extends StObject {
       
       /**
         * The data connector used to populate the completer.
         * Use the connector with ICompletionItemsReply for enhanced completions.
         */
-      var connector: (IDataConnector[IReply, Unit, IRequest, String]) | ICompletionItemsConnector = js.native
+      var connector: (IDataConnector[IReply, Unit, IRequest, String]) | ICompletionItemsConnector
       
       /**
         * The host editor for the completer.
         */
-      var editor: IEditor | Null = js.native
+      var editor: IEditor | Null
     }
     object ICompletableAttributes {
       
-      @scala.inline
-      def apply(connector: (IDataConnector[IReply, Unit, IRequest, String]) | ICompletionItemsConnector): ICompletableAttributes = {
-        val __obj = js.Dynamic.literal(connector = connector.asInstanceOf[js.Any])
+      inline def apply(connector: (IDataConnector[IReply, Unit, IRequest, String]) | ICompletionItemsConnector): ICompletableAttributes = {
+        val __obj = js.Dynamic.literal(connector = connector.asInstanceOf[js.Any], editor = null)
         __obj.asInstanceOf[ICompletableAttributes]
       }
       
-      @scala.inline
-      implicit class ICompletableAttributesMutableBuilder[Self <: ICompletableAttributes] (val x: Self) extends AnyVal {
+      extension [Self <: ICompletableAttributes](x: Self) {
         
-        @scala.inline
-        def setConnector(value: (IDataConnector[IReply, Unit, IRequest, String]) | ICompletionItemsConnector): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
+        inline def setConnector(value: (IDataConnector[IReply, Unit, IRequest, String]) | ICompletionItemsConnector): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEditor(value: IEditor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+        inline def setEditor(value: IEditor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEditorNull: Self = StObject.set(x, "editor", null)
+        inline def setEditorNull: Self = StObject.set(x, "editor", null)
       }
     }
     
-    @scala.inline
-    implicit class ICompletionManagerMutableBuilder[Self <: ICompletionManager] (val x: Self) extends AnyVal {
+    extension [Self <: ICompletionManager](x: Self) {
       
-      @scala.inline
-      def setRegister(value: ICompletable => ICompletableAttributes): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
+      inline def setRegister(value: ICompletable => ICompletableAttributes): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
     }
     
     type _To = Token[ICompletionManager]

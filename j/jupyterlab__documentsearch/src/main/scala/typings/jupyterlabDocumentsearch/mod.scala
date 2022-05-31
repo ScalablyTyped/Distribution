@@ -5,7 +5,6 @@ import typings.luminoCoreutils.mod.Token
 import typings.luminoWidgets.mod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,12 +16,14 @@ object mod {
   /* static members */
   object CodeMirrorSearchProvider {
     
+    @JSImport("@jupyterlab/documentsearch", "CodeMirrorSearchProvider")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Report whether or not this provider has the ability to search on the given object
       */
-    @JSImport("@jupyterlab/documentsearch", "CodeMirrorSearchProvider.canSearchOn")
-    @js.native
-    def canSearchOn(domain: Widget): /* is @jupyterlab/documentsearch.@jupyterlab/documentsearch/lib/providers/codemirrorsearchprovider.CMMainAreaWidget */ Boolean = js.native
+    inline def canSearchOn(domain: Widget): /* is @jupyterlab/documentsearch.@jupyterlab/documentsearch/lib/providers/codemirrorsearchprovider.CMMainAreaWidget */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canSearchOn")(domain.asInstanceOf[js.Any]).asInstanceOf[/* is @jupyterlab/documentsearch.@jupyterlab/documentsearch/lib/providers/codemirrorsearchprovider.CMMainAreaWidget */ Boolean]
   }
   
   @JSImport("@jupyterlab/documentsearch", "ISearchProviderRegistry")
@@ -36,12 +37,14 @@ object mod {
   /* static members */
   object NotebookSearchProvider {
     
+    @JSImport("@jupyterlab/documentsearch", "NotebookSearchProvider")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Report whether or not this provider has the ability to search on the given object
       */
-    @JSImport("@jupyterlab/documentsearch", "NotebookSearchProvider.canSearchOn")
-    @js.native
-    def canSearchOn(domain: Widget): /* is @jupyterlab/notebook.@jupyterlab/notebook.NotebookPanel */ Boolean = js.native
+    inline def canSearchOn(domain: Widget): /* is @jupyterlab/notebook.@jupyterlab/notebook.NotebookPanel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canSearchOn")(domain.asInstanceOf[js.Any]).asInstanceOf[/* is @jupyterlab/notebook.@jupyterlab/notebook.NotebookPanel */ Boolean]
   }
   
   @JSImport("@jupyterlab/documentsearch", "SearchInstance")

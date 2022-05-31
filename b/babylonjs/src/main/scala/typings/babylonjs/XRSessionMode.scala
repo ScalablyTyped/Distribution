@@ -2,7 +2,6 @@ package typings.babylonjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XRSessionMode extends StObject
 object XRSessionMode {
   
-  @scala.inline
-  def `immersive-ar`: typings.babylonjs.babylonjsStrings.`immersive-ar` = "immersive-ar".asInstanceOf[typings.babylonjs.babylonjsStrings.`immersive-ar`]
+  inline def `immersive-ar`: typings.babylonjs.babylonjsStrings.`immersive-ar` = "immersive-ar".asInstanceOf[typings.babylonjs.babylonjsStrings.`immersive-ar`]
   
-  @scala.inline
-  def `immersive-vr`: typings.babylonjs.babylonjsStrings.`immersive-vr` = "immersive-vr".asInstanceOf[typings.babylonjs.babylonjsStrings.`immersive-vr`]
+  inline def `immersive-vr`: typings.babylonjs.babylonjsStrings.`immersive-vr` = "immersive-vr".asInstanceOf[typings.babylonjs.babylonjsStrings.`immersive-vr`]
   
-  @scala.inline
-  def `inline`: typings.babylonjs.babylonjsStrings.`inline` = "inline".asInstanceOf[typings.babylonjs.babylonjsStrings.`inline`]
+  inline def `inline`: typings.babylonjs.babylonjsStrings.`inline` = "inline".asInstanceOf[typings.babylonjs.babylonjsStrings.`inline`]
 }

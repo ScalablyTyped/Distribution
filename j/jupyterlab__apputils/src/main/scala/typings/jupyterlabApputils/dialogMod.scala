@@ -18,10 +18,13 @@ import typings.std.MouseEvent
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dialogMod {
+  
+  @JSImport("@jupyterlab/apputils/lib/dialog", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@jupyterlab/apputils/lib/dialog", "Dialog")
   @js.native
@@ -33,13 +36,13 @@ object dialogMod {
   class Dialog[T] () extends Widget {
     def this(options: Partial[IOptions[T]]) = this()
     
-    var _body: js.Any = js.native
+    /* private */ var _body: js.Any = js.native
     
-    var _buttonNodes: js.Any = js.native
+    /* private */ var _buttonNodes: js.Any = js.native
     
-    var _buttons: js.Any = js.native
+    /* private */ var _buttons: js.Any = js.native
     
-    var _defaultButton: js.Any = js.native
+    /* private */ var _defaultButton: js.Any = js.native
     
     /**
       * Handle the `'click'` event for a dialog button.
@@ -62,22 +65,22 @@ object dialogMod {
       */
     /* protected */ def _evtKeydown(event: KeyboardEvent): Unit = js.native
     
-    var _first: js.Any = js.native
+    /* private */ var _first: js.Any = js.native
     
-    var _focusNodeSelector: js.Any = js.native
+    /* private */ var _focusNodeSelector: js.Any = js.native
     
-    var _host: js.Any = js.native
+    /* private */ var _host: js.Any = js.native
     
-    var _original: js.Any = js.native
+    /* private */ var _original: js.Any = js.native
     
-    var _primary: js.Any = js.native
+    /* private */ var _primary: js.Any = js.native
     
-    var _promise: js.Any = js.native
+    /* private */ var _promise: js.Any = js.native
     
     /**
       * Resolve a button item.
       */
-    var _resolve: js.Any = js.native
+    /* private */ var _resolve: js.Any = js.native
     
     /**
       * Handle the DOM events for the directory listing.
@@ -121,6 +124,10 @@ object dialogMod {
   }
   object Dialog {
     
+    @JSImport("@jupyterlab/apputils/lib/dialog", "Dialog")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * The default implementation of a dialog renderer.
       */
@@ -135,7 +142,7 @@ object dialogMod {
         *
         * @returns A widget for the body.
         */
-      def createBody(value: Body[_]): Widget = js.native
+      def createBody(value: Body[js.Any]): Widget = js.native
       
       /**
         * Create a button node for the dialog.
@@ -204,19 +211,13 @@ object dialogMod {
     /**
       * Create a reject button.
       */
-    @JSImport("@jupyterlab/apputils/lib/dialog", "Dialog.cancelButton")
-    @js.native
-    def cancelButton(): ReadonlyIButton = js.native
-    @JSImport("@jupyterlab/apputils/lib/dialog", "Dialog.cancelButton")
-    @js.native
-    def cancelButton(options: PartialIButton): ReadonlyIButton = js.native
+    inline def cancelButton(): ReadonlyIButton = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelButton")().asInstanceOf[ReadonlyIButton]
+    inline def cancelButton(options: PartialIButton): ReadonlyIButton = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelButton")(options.asInstanceOf[js.Any]).asInstanceOf[ReadonlyIButton]
     
     /**
       * Create a button item.
       */
-    @JSImport("@jupyterlab/apputils/lib/dialog", "Dialog.createButton")
-    @js.native
-    def createButton(value: PartialIButton): ReadonlyIButton = js.native
+    inline def createButton(value: PartialIButton): ReadonlyIButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createButton")(value.asInstanceOf[js.Any]).asInstanceOf[ReadonlyIButton]
     
     /**
       * The default renderer instance.
@@ -232,19 +233,13 @@ object dialogMod {
       * This function should only be used in tests or cases where application state
       * may be discarded.
       */
-    @JSImport("@jupyterlab/apputils/lib/dialog", "Dialog.flush")
-    @js.native
-    def flush(): Unit = js.native
+    inline def flush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Unit]
     
     /**
       * Create an accept button.
       */
-    @JSImport("@jupyterlab/apputils/lib/dialog", "Dialog.okButton")
-    @js.native
-    def okButton(): ReadonlyIButton = js.native
-    @JSImport("@jupyterlab/apputils/lib/dialog", "Dialog.okButton")
-    @js.native
-    def okButton(options: PartialIButton): ReadonlyIButton = js.native
+    inline def okButton(): ReadonlyIButton = ^.asInstanceOf[js.Dynamic].applyDynamic("okButton")().asInstanceOf[ReadonlyIButton]
+    inline def okButton(options: PartialIButton): ReadonlyIButton = ^.asInstanceOf[js.Dynamic].applyDynamic("okButton")(options.asInstanceOf[js.Any]).asInstanceOf[ReadonlyIButton]
     
     /**
       * The dialog widget tracker.
@@ -256,12 +251,8 @@ object dialogMod {
     /**
       * Create a warn button.
       */
-    @JSImport("@jupyterlab/apputils/lib/dialog", "Dialog.warnButton")
-    @js.native
-    def warnButton(): ReadonlyIButton = js.native
-    @JSImport("@jupyterlab/apputils/lib/dialog", "Dialog.warnButton")
-    @js.native
-    def warnButton(options: PartialIButton): ReadonlyIButton = js.native
+    inline def warnButton(): ReadonlyIButton = ^.asInstanceOf[js.Dynamic].applyDynamic("warnButton")().asInstanceOf[ReadonlyIButton]
+    inline def warnButton(options: PartialIButton): ReadonlyIButton = ^.asInstanceOf[js.Dynamic].applyDynamic("warnButton")(options.asInstanceOf[js.Any]).asInstanceOf[ReadonlyIButton]
     
     /**
       * The body input types.
@@ -288,48 +279,46 @@ object dialogMod {
     /**
       * The options used to make a button item.
       */
-    @js.native
     trait IButton extends StObject {
       
       /**
         * The dialog action to perform when the button is clicked.
         */
-      var accept: Boolean = js.native
+      var accept: Boolean
       
       /**
         * The caption for the button.
         */
-      var caption: String = js.native
+      var caption: String
       
       /**
         * The extra class name for the button.
         */
-      var className: String = js.native
+      var className: String
       
       /**
         * The button display type.
         */
-      var displayType: default | warn = js.native
+      var displayType: default | warn
       
       /**
         * The icon class for the button.
         */
-      var iconClass: String = js.native
+      var iconClass: String
       
       /**
         * The icon label for the button.
         */
-      var iconLabel: String = js.native
+      var iconLabel: String
       
       /**
         * The label for the button.
         */
-      var label: String = js.native
+      var label: String
     }
     object IButton {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         accept: Boolean,
         caption: String,
         className: String,
@@ -342,36 +331,27 @@ object dialogMod {
         __obj.asInstanceOf[IButton]
       }
       
-      @scala.inline
-      implicit class IButtonMutableBuilder[Self <: IButton] (val x: Self) extends AnyVal {
+      extension [Self <: IButton](x: Self) {
         
-        @scala.inline
-        def setAccept(value: Boolean): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
+        inline def setAccept(value: Boolean): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+        inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisplayType(value: default | warn): Self = StObject.set(x, "displayType", value.asInstanceOf[js.Any])
+        inline def setDisplayType(value: default | warn): Self = StObject.set(x, "displayType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+        inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconLabel(value: String): Self = StObject.set(x, "iconLabel", value.asInstanceOf[js.Any])
+        inline def setIconLabel(value: String): Self = StObject.set(x, "iconLabel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       }
     }
     
     /**
       * The options used to create a dialog.
       */
-    @js.native
     trait IOptions[T] extends StObject {
       
       /**
@@ -386,45 +366,44 @@ object dialogMod {
         * A string argument will be used as raw `textContent`.
         * All `input` and `select` nodes will be wrapped and styled.
         */
-      var body: Body[T] = js.native
+      var body: Body[T]
       
       /**
         * The buttons to display. Defaults to cancel and accept buttons.
         */
-      var buttons: js.Array[IButton] = js.native
+      var buttons: js.Array[IButton]
       
       /**
         * The index of the default button.  Defaults to the last button.
         */
-      var defaultButton: Double = js.native
+      var defaultButton: Double
       
       /**
         * A selector for the primary element that should take focus in the dialog.
         * Defaults to an empty string, causing the [[defaultButton]] to take
         * focus.
         */
-      var focusNodeSelector: String = js.native
+      var focusNodeSelector: String
       
       /**
         * The host element for the dialog. Defaults to `document.body`.
         */
-      var host: HTMLElement = js.native
+      var host: HTMLElement
       
       /**
         * An optional renderer for dialog items.  Defaults to a shared
         * default renderer.
         */
-      var renderer: IRenderer = js.native
+      var renderer: IRenderer
       
       /**
         * The top level text for the dialog.  Defaults to an empty string.
         */
-      var title: Header = js.native
+      var title: Header
     }
     object IOptions {
       
-      @scala.inline
-      def apply[T](
+      inline def apply[T](
         body: Body[T],
         buttons: js.Array[IButton],
         defaultButton: Double,
@@ -437,39 +416,29 @@ object dialogMod {
         __obj.asInstanceOf[IOptions[T]]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions[_], T] (val x: Self with IOptions[T]) extends AnyVal {
+      extension [Self <: IOptions[?], T](x: Self & IOptions[T]) {
         
-        @scala.inline
-        def setBody(value: Body[T]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+        inline def setBody(value: Body[T]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setButtons(value: js.Array[IButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+        inline def setButtons(value: js.Array[IButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setButtonsVarargs(value: IButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+        inline def setButtonsVarargs(value: IButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
         
-        @scala.inline
-        def setDefaultButton(value: Double): Self = StObject.set(x, "defaultButton", value.asInstanceOf[js.Any])
+        inline def setDefaultButton(value: Double): Self = StObject.set(x, "defaultButton", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFocusNodeSelector(value: String): Self = StObject.set(x, "focusNodeSelector", value.asInstanceOf[js.Any])
+        inline def setFocusNodeSelector(value: String): Self = StObject.set(x, "focusNodeSelector", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHost(value: HTMLElement): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+        inline def setHost(value: HTMLElement): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+        inline def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitle(value: Header): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: Header): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       }
     }
     
     /**
       * A dialog renderer.
       */
-    @js.native
     trait IRenderer extends StObject {
       
       /**
@@ -479,7 +448,7 @@ object dialogMod {
         *
         * @returns A widget for the body.
         */
-      def createBody(body: Body[_]): Widget = js.native
+      def createBody(body: Body[js.Any]): Widget
       
       /**
         * Create a button node for the dialog.
@@ -488,7 +457,7 @@ object dialogMod {
         *
         * @returns A node for the button.
         */
-      def createButtonNode(button: IButton): HTMLElement = js.native
+      def createButtonNode(button: IButton): HTMLElement
       
       /**
         * Create the footer of the dialog.
@@ -497,7 +466,7 @@ object dialogMod {
         *
         * @returns A widget for the footer.
         */
-      def createFooter(buttons: js.Array[HTMLElement]): Widget = js.native
+      def createFooter(buttons: js.Array[HTMLElement]): Widget
       
       /**
         * Create the header of the dialog.
@@ -506,13 +475,12 @@ object dialogMod {
         *
         * @returns A widget for the dialog header.
         */
-      def createHeader(title: Header): Widget = js.native
+      def createHeader(title: Header): Widget
     }
     object IRenderer {
       
-      @scala.inline
-      def apply(
-        createBody: Body[_] => Widget,
+      inline def apply(
+        createBody: Body[js.Any] => Widget,
         createButtonNode: IButton => HTMLElement,
         createFooter: js.Array[HTMLElement] => Widget,
         createHeader: Header => Widget
@@ -521,73 +489,54 @@ object dialogMod {
         __obj.asInstanceOf[IRenderer]
       }
       
-      @scala.inline
-      implicit class IRendererMutableBuilder[Self <: IRenderer] (val x: Self) extends AnyVal {
+      extension [Self <: IRenderer](x: Self) {
         
-        @scala.inline
-        def setCreateBody(value: Body[_] => Widget): Self = StObject.set(x, "createBody", js.Any.fromFunction1(value))
+        inline def setCreateBody(value: Body[js.Any] => Widget): Self = StObject.set(x, "createBody", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCreateButtonNode(value: IButton => HTMLElement): Self = StObject.set(x, "createButtonNode", js.Any.fromFunction1(value))
+        inline def setCreateButtonNode(value: IButton => HTMLElement): Self = StObject.set(x, "createButtonNode", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCreateFooter(value: js.Array[HTMLElement] => Widget): Self = StObject.set(x, "createFooter", js.Any.fromFunction1(value))
+        inline def setCreateFooter(value: js.Array[HTMLElement] => Widget): Self = StObject.set(x, "createFooter", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCreateHeader(value: Header => Widget): Self = StObject.set(x, "createHeader", js.Any.fromFunction1(value))
+        inline def setCreateHeader(value: Header => Widget): Self = StObject.set(x, "createHeader", js.Any.fromFunction1(value))
       }
     }
     
     /**
       * The result of a dialog.
       */
-    @js.native
     trait IResult[T] extends StObject {
       
       /**
         * The button that was pressed.
         */
-      var button: IButton = js.native
+      var button: IButton
       
       /**
         * The value retrieved from `.getValue()` if given on the widget.
         */
-      var value: T | Null = js.native
+      var value: T | Null
     }
     object IResult {
       
-      @scala.inline
-      def apply[T](button: IButton): IResult[T] = {
-        val __obj = js.Dynamic.literal(button = button.asInstanceOf[js.Any])
+      inline def apply[T](button: IButton): IResult[T] = {
+        val __obj = js.Dynamic.literal(button = button.asInstanceOf[js.Any], value = null)
         __obj.asInstanceOf[IResult[T]]
       }
       
-      @scala.inline
-      implicit class IResultMutableBuilder[Self <: IResult[_], T] (val x: Self with IResult[T]) extends AnyVal {
+      extension [Self <: IResult[?], T](x: Self & IResult[T]) {
         
-        @scala.inline
-        def setButton(value: IButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+        inline def setButton(value: IButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValueNull: Self = StObject.set(x, "value", null)
+        inline def setValueNull: Self = StObject.set(x, "value", null)
       }
     }
   }
   
-  @JSImport("@jupyterlab/apputils/lib/dialog", "showDialog")
-  @js.native
-  def showDialog[T](): js.Promise[IResult[T]] = js.native
-  @JSImport("@jupyterlab/apputils/lib/dialog", "showDialog")
-  @js.native
-  def showDialog[T](options: Partial[IOptions[T]]): js.Promise[IResult[T]] = js.native
+  inline def showDialog[T](): js.Promise[IResult[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("showDialog")().asInstanceOf[js.Promise[IResult[T]]]
+  inline def showDialog[T](options: Partial[IOptions[T]]): js.Promise[IResult[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("showDialog")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IResult[T]]]
   
-  @JSImport("@jupyterlab/apputils/lib/dialog", "showErrorMessage")
-  @js.native
-  def showErrorMessage(title: String, error: js.Any): js.Promise[Unit] = js.native
-  @JSImport("@jupyterlab/apputils/lib/dialog", "showErrorMessage")
-  @js.native
-  def showErrorMessage(title: String, error: js.Any, buttons: js.Array[IButton]): js.Promise[Unit] = js.native
+  inline def showErrorMessage(title: String, error: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("showErrorMessage")(title.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def showErrorMessage(title: String, error: js.Any, buttons: js.Array[IButton]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("showErrorMessage")(title.asInstanceOf[js.Any], error.asInstanceOf[js.Any], buttons.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

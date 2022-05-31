@@ -323,13 +323,6 @@ object proj {
   inline def transformExtent(extent: Extent_, source: ProjectionLike, destination: ProjectionLike): Extent_ = (^.asInstanceOf[js.Dynamic].applyDynamic("transformExtent")(extent.asInstanceOf[js.Any], source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Extent_]
   
   /**
-    * Meters per unit lookup table.
-    * @const
-    * @api stable
-    */
-  object METERS_PER_UNIT
-  
-  /**
     * Projection units: `'degrees'`, `'ft'`, `'m'`, `'pixels'`, `'tile-pixels'` or
     * `'us-ft'`.
     */

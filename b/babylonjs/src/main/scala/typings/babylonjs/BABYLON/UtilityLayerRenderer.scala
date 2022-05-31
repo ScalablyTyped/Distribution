@@ -2,13 +2,14 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UtilityLayerRenderer extends IDisposable {
+trait UtilityLayerRenderer
+  extends StObject
+     with IDisposable {
   
-  var _afterRenderObserver: js.Any = js.native
+  /* private */ var _afterRenderObserver: js.Any = js.native
   
   /**
     * @hidden
@@ -16,21 +17,21 @@ trait UtilityLayerRenderer extends IDisposable {
     */
   def _getSharedGizmoLight(): HemisphericLight = js.native
   
-  var _lastPointerEvents: js.Any = js.native
+  /* private */ var _lastPointerEvents: js.Any = js.native
   
-  var _notifyObservers: js.Any = js.native
+  /* private */ var _notifyObservers: js.Any = js.native
   
-  var _originalPointerObserver: js.Any = js.native
+  /* private */ var _originalPointerObserver: js.Any = js.native
   
-  var _pointerCaptures: js.Any = js.native
+  /* private */ var _pointerCaptures: js.Any = js.native
   
-  var _renderCamera: js.Any = js.native
+  /* private */ var _renderCamera: js.Any = js.native
   
-  var _sceneDisposeObserver: js.Any = js.native
+  /* private */ var _sceneDisposeObserver: js.Any = js.native
   
-  var _sharedGizmoLight: js.Any = js.native
+  /* private */ var _sharedGizmoLight: js.Any = js.native
   
-  var _updateCamera: js.Any = js.native
+  /* private */ var _updateCamera: js.Any = js.native
   
   /**
     * Gets the camera that is used to render the utility layer (when not set, this will be the last active camera)

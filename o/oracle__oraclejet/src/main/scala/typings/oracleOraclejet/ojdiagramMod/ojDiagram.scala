@@ -102,55 +102,56 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ojDiagram[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettableProperties[K1, K2, D1, D2]] {
+trait ojDiagram[K1, K2, D1, D2]
+  extends StObject
+     with dvtBaseComponent[ojDiagramSettableProperties[K1, K2, D1, D2]] {
   
   def addEventListener(
     `type`: animationOnDataChangeChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], js.Any]
   ): Unit = js.native
   def addEventListener(
     `type`: animationOnDataChangeChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: animationOnDisplayChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], js.Any]
   ): Unit = js.native
   def addEventListener(
     `type`: animationOnDisplayChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: highlightMatchChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[any | all], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[any | all], js.Any]
   ): Unit = js.native
   def addEventListener(
     `type`: highlightMatchChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[any | all], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[any | all], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: hoverBehaviorChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[dim | none], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[dim | none], js.Any]
   ): Unit = js.native
   def addEventListener(
     `type`: hoverBehaviorChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[dim | none], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[dim | none], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: linkHighlightModeChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[linkAndNodes | link], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[linkAndNodes | link], js.Any]
   ): Unit = js.native
   def addEventListener(
     `type`: linkHighlightModeChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[linkAndNodes | link], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[linkAndNodes | link], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
@@ -158,7 +159,7 @@ trait ojDiagram[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettableProper
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[nodeAndIncomingLinks | nodeAndOutgoingLinks | nodeAndLinks | node], 
-      _
+      js.Any
     ]
   ): Unit = js.native
   def addEventListener(
@@ -166,95 +167,103 @@ trait ojDiagram[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettableProper
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[nodeAndIncomingLinks | nodeAndOutgoingLinks | nodeAndLinks | node], 
-      _
+      js.Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: panDirectionChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[x | y | auto], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[x | y | auto], js.Any]
   ): Unit = js.native
   def addEventListener(
     `type`: panDirectionChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[x | y | auto], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[x | y | auto], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: panningChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], js.Any]
   ): Unit = js.native
   def addEventListener(
     `type`: panningChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: promotedLinkBehaviorChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | full | `lazy`], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | full | `lazy`], js.Any]
   ): Unit = js.native
   def addEventListener(
     `type`: promotedLinkBehaviorChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | full | `lazy`], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | full | `lazy`], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: selectionModeChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[single | multiple | none], _]
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ JetElementCustomEvent[single | multiple | none], 
+      js.Any
+    ]
   ): Unit = js.native
   def addEventListener(
     `type`: selectionModeChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[single | multiple | none], _],
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ JetElementCustomEvent[single | multiple | none], 
+      js.Any
+    ],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: touchResponseChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[touchStart | auto], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[touchStart | auto], js.Any]
   ): Unit = js.native
   def addEventListener(
     `type`: touchResponseChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[touchStart | auto], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[touchStart | auto], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: zoomingChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], js.Any]
   ): Unit = js.native
   def addEventListener(
     `type`: zoomingChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_asChanged(
     `type`: asChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_asChanged(
     `type`: asChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dndChanged(
     `type`: dndChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Drop], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Drop], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dndChanged(
     `type`: dndChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Drop], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Drop], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_expandedChanged(
     `type`: expandedChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[KeySet[K1]], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[KeySet[K1]], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_expandedChanged(
     `type`: expandedChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[KeySet[K1]], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[KeySet[K1]], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -265,7 +274,7 @@ trait ojDiagram[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettableProper
       /* ev */ JetElementCustomEvent[
         (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
       ], 
-      _
+      js.Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -276,30 +285,30 @@ trait ojDiagram[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettableProper
       /* ev */ JetElementCustomEvent[
         (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
       ], 
-      _
+      js.Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_hiddenCategoriesChanged(
     `type`: hiddenCategoriesChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String]], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String]], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_hiddenCategoriesChanged(
     `type`: hiddenCategoriesChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String]], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String]], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_highlightedCategoriesChanged(
     `type`: highlightedCategoriesChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String]], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String]], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_highlightedCategoriesChanged(
     `type`: highlightedCategoriesChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String]], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String]], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -310,7 +319,7 @@ trait ojDiagram[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettableProper
       /* ev */ JetElementCustomEvent[
         (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
       ], 
-      _
+      js.Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -321,7 +330,7 @@ trait ojDiagram[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettableProper
       /* ev */ JetElementCustomEvent[
         (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
       ], 
-      _
+      js.Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -331,7 +340,7 @@ trait ojDiagram[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettableProper
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[js.Function1[/* param0 */ DvtDiagramLayoutContext, Unit]], 
-      _
+      js.Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -340,7 +349,7 @@ trait ojDiagram[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettableProper
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[js.Function1[/* param0 */ DvtDiagramLayoutContext, Unit]], 
-      _
+      js.Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -350,7 +359,7 @@ trait ojDiagram[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettableProper
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[(DataProvider[K2, D2]) | Null], 
-      _
+      js.Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -359,30 +368,30 @@ trait ojDiagram[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettableProper
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[(DataProvider[K2, D2]) | Null], 
-      _
+      js.Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_maxZoomChanged(
     `type`: maxZoomChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_maxZoomChanged(
     `type`: maxZoomChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_minZoomChanged(
     `type`: minZoomChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_minZoomChanged(
     `type`: minZoomChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -391,7 +400,7 @@ trait ojDiagram[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettableProper
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[(DataProvider[K1, D1]) | Null], 
-      _
+      js.Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -400,7 +409,7 @@ trait ojDiagram[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettableProper
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[(DataProvider[K1, D1]) | Null], 
-      _
+      js.Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -410,7 +419,7 @@ trait ojDiagram[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettableProper
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojBeforeCollapse, 
-      _
+      js.Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -419,7 +428,7 @@ trait ojDiagram[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettableProper
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojBeforeCollapse, 
-      _
+      js.Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -429,7 +438,7 @@ trait ojDiagram[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettableProper
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojBeforeExpand, 
-      _
+      js.Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -438,7 +447,7 @@ trait ojDiagram[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettableProper
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojBeforeExpand, 
-      _
+      js.Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -448,7 +457,7 @@ trait ojDiagram[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettableProper
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojCollapse, 
-      _
+      js.Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -457,7 +466,7 @@ trait ojDiagram[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettableProper
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojCollapse, 
-      _
+      js.Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -467,7 +476,7 @@ trait ojDiagram[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettableProper
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojExpand, 
-      _
+      js.Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -476,19 +485,19 @@ trait ojDiagram[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettableProper
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojExpand, 
-      _
+      js.Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_overviewChanged(
     `type`: overviewChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Halign], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Halign], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_overviewChanged(
     `type`: overviewChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Halign], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Halign], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -497,7 +506,7 @@ trait ojDiagram[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettableProper
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement]], 
-      _
+      js.Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -506,19 +515,19 @@ trait ojDiagram[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettableProper
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement]], 
-      _
+      js.Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_selectionChanged(
     `type`: selectionChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[K1 | K2]], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[K1 | K2]], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_selectionChanged(
     `type`: selectionChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[K1 | K2]], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[K1 | K2]], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -529,7 +538,7 @@ trait ojDiagram[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettableProper
       /* ev */ JetElementCustomEvent[
         (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
       ], 
-      _
+      js.Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -540,30 +549,30 @@ trait ojDiagram[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettableProper
       /* ev */ JetElementCustomEvent[
         (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
       ], 
-      _
+      js.Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_styleDefaultsChanged(
     `type`: styleDefaultsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnimationDuration], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnimationDuration], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_styleDefaultsChanged(
     `type`: styleDefaultsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnimationDuration], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnimationDuration], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`5`[K1, K2, D1, D2]], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`5`[K1, K2, D1, D2]], js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`5`[K1, K2, D1, D2]], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`5`[K1, K2, D1, D2]], js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -574,7 +583,7 @@ trait ojDiagram[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettableProper
       /* ev */ JetElementCustomEvent[
         (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
       ], 
-      _
+      js.Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -585,7 +594,7 @@ trait ojDiagram[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettableProper
       /* ev */ JetElementCustomEvent[
         (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
       ], 
-      _
+      js.Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -697,104 +706,107 @@ trait ojDiagram[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettableProper
   
   var nodeHighlightMode: nodeAndIncomingLinks | nodeAndOutgoingLinks | nodeAndLinks | node = js.native
   
-  var onAnimationOnDataChangeChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
+  var onAnimationOnDataChangeChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], js.Any]) | Null = js.native
   
-  var onAnimationOnDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
+  var onAnimationOnDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], js.Any]) | Null = js.native
   
-  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], js.Any]) | Null = js.native
   
-  var onDndChanged: (js.Function1[/* event */ JetElementCustomEvent[Drop], _]) | Null = js.native
+  var onDndChanged: (js.Function1[/* event */ JetElementCustomEvent[Drop], js.Any]) | Null = js.native
   
-  var onExpandedChanged: (js.Function1[/* event */ JetElementCustomEvent[KeySet[K1]], _]) | Null = js.native
+  var onExpandedChanged: (js.Function1[/* event */ JetElementCustomEvent[KeySet[K1]], js.Any]) | Null = js.native
   
   var onFocusRendererChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
       (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
     ], 
-    _
+    js.Any
   ]) | Null = js.native
   
-  var onHiddenCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
+  var onHiddenCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], js.Any]) | Null = js.native
   
-  var onHighlightMatchChanged: (js.Function1[/* event */ JetElementCustomEvent[any | all], _]) | Null = js.native
+  var onHighlightMatchChanged: (js.Function1[/* event */ JetElementCustomEvent[any | all], js.Any]) | Null = js.native
   
-  var onHighlightedCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
+  var onHighlightedCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], js.Any]) | Null = js.native
   
-  var onHoverBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[dim | none], _]) | Null = js.native
+  var onHoverBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[dim | none], js.Any]) | Null = js.native
   
   var onHoverRendererChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
       (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
     ], 
-    _
+    js.Any
   ]) | Null = js.native
   
   var onLayoutChanged: (js.Function1[
     /* event */ JetElementCustomEvent[js.Function1[/* param0 */ DvtDiagramLayoutContext, Unit]], 
-    _
+    js.Any
   ]) | Null = js.native
   
-  var onLinkDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K2, D2]) | Null], _]) | Null = js.native
+  var onLinkDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K2, D2]) | Null], js.Any]) | Null = js.native
   
-  var onLinkHighlightModeChanged: (js.Function1[/* event */ JetElementCustomEvent[linkAndNodes | link], _]) | Null = js.native
+  var onLinkHighlightModeChanged: (js.Function1[/* event */ JetElementCustomEvent[linkAndNodes | link], js.Any]) | Null = js.native
   
-  var onMaxZoomChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  var onMaxZoomChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], js.Any]) | Null = js.native
   
-  var onMinZoomChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  var onMinZoomChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], js.Any]) | Null = js.native
   
-  var onNodeDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K1, D1]) | Null], _]) | Null = js.native
+  var onNodeDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K1, D1]) | Null], js.Any]) | Null = js.native
   
   var onNodeHighlightModeChanged: (js.Function1[
     /* event */ JetElementCustomEvent[nodeAndIncomingLinks | nodeAndOutgoingLinks | nodeAndLinks | node], 
-    _
+    js.Any
   ]) | Null = js.native
   
-  var onOjBeforeCollapse: (js.Function1[/* event */ typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojBeforeCollapse, _]) | Null = js.native
+  var onOjBeforeCollapse: (js.Function1[
+    /* event */ typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojBeforeCollapse, 
+    js.Any
+  ]) | Null = js.native
   
-  var onOjBeforeExpand: (js.Function1[/* event */ typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojBeforeExpand, _]) | Null = js.native
+  var onOjBeforeExpand: (js.Function1[/* event */ typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojBeforeExpand, js.Any]) | Null = js.native
   
-  var onOjCollapse: (js.Function1[/* event */ typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojCollapse, _]) | Null = js.native
+  var onOjCollapse: (js.Function1[/* event */ typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojCollapse, js.Any]) | Null = js.native
   
-  var onOjExpand: (js.Function1[/* event */ typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojExpand, _]) | Null = js.native
+  var onOjExpand: (js.Function1[/* event */ typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojExpand, js.Any]) | Null = js.native
   
-  var onOverviewChanged: (js.Function1[/* event */ JetElementCustomEvent[Halign], _]) | Null = js.native
+  var onOverviewChanged: (js.Function1[/* event */ JetElementCustomEvent[Halign], js.Any]) | Null = js.native
   
-  var onPanDirectionChanged: (js.Function1[/* event */ JetElementCustomEvent[x | y | auto], _]) | Null = js.native
+  var onPanDirectionChanged: (js.Function1[/* event */ JetElementCustomEvent[x | y | auto], js.Any]) | Null = js.native
   
-  var onPanningChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
+  var onPanningChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], js.Any]) | Null = js.native
   
-  var onPromotedLinkBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[none | full | `lazy`], _]) | Null = js.native
+  var onPromotedLinkBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[none | full | `lazy`], js.Any]) | Null = js.native
   
   var onRendererChanged: (js.Function1[
     /* event */ JetElementCustomEvent[js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement]], 
-    _
+    js.Any
   ]) | Null = js.native
   
-  var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[K1 | K2]], _]) | Null = js.native
+  var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[K1 | K2]], js.Any]) | Null = js.native
   
-  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[single | multiple | none], _]) | Null = js.native
+  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[single | multiple | none], js.Any]) | Null = js.native
   
   var onSelectionRendererChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
       (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
     ], 
-    _
+    js.Any
   ]) | Null = js.native
   
-  var onStyleDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[AnimationDuration], _]) | Null = js.native
+  var onStyleDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[AnimationDuration], js.Any]) | Null = js.native
   
-  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`5`[K1, K2, D1, D2]], _]) | Null = js.native
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`5`[K1, K2, D1, D2]], js.Any]) | Null = js.native
   
-  var onTouchResponseChanged: (js.Function1[/* event */ JetElementCustomEvent[touchStart | auto], _]) | Null = js.native
+  var onTouchResponseChanged: (js.Function1[/* event */ JetElementCustomEvent[touchStart | auto], js.Any]) | Null = js.native
   
   var onZoomRendererChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
       (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
     ], 
-    _
+    js.Any
   ]) | Null = js.native
   
-  var onZoomingChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
+  var onZoomingChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], js.Any]) | Null = js.native
   
   var overview: Halign = js.native
   
@@ -920,37 +932,35 @@ trait ojDiagram[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettableProper
 object ojDiagram {
   
   // tslint:disable-next-line interface-over-type-literal
-  @js.native
   trait RendererContext[K1, D1] extends StObject {
     
-    var componentElement: Element = js.native
+    var componentElement: Element
     
-    var content: ElementHeight = js.native
+    var content: ElementHeight
     
-    var data: js.Object = js.native
+    var data: js.Object
     
-    var id: K1 = js.native
+    var id: K1
     
-    var itemData: D1 = js.native
+    var itemData: D1
     
-    var parentElement: Element = js.native
+    var parentElement: Element
     
-    var previousState: Expanded = js.native
+    var previousState: Expanded
     
-    def renderDefaultFocus(): Unit = js.native
+    def renderDefaultFocus(): Unit
     
-    def renderDefaultHover(): Unit = js.native
+    def renderDefaultHover(): Unit
     
-    def renderDefaultSelection(): Unit = js.native
+    def renderDefaultSelection(): Unit
     
-    var state: Expanded = js.native
+    var state: Expanded
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object RendererContext {
     
-    @scala.inline
-    def apply[K1, D1](
+    inline def apply[K1, D1](
       componentElement: Element,
       content: ElementHeight,
       data: js.Object,
@@ -969,69 +979,54 @@ object ojDiagram {
       __obj.asInstanceOf[RendererContext[K1, D1]]
     }
     
-    @scala.inline
-    implicit class RendererContextMutableBuilder[Self <: RendererContext[_, _], K1, D1] (val x: Self with (RendererContext[K1, D1])) extends AnyVal {
+    extension [Self <: RendererContext[?, ?], K1, D1](x: Self & (RendererContext[K1, D1])) {
       
-      @scala.inline
-      def setComponentElement(value: Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
+      inline def setComponentElement(value: Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: ElementHeight): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: ElementHeight): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: K1): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: K1): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemData(value: D1): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
+      inline def setItemData(value: D1): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentElement(value: Element): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
+      inline def setParentElement(value: Element): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousState(value: Expanded): Self = StObject.set(x, "previousState", value.asInstanceOf[js.Any])
+      inline def setPreviousState(value: Expanded): Self = StObject.set(x, "previousState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderDefaultFocus(value: () => Unit): Self = StObject.set(x, "renderDefaultFocus", js.Any.fromFunction0(value))
+      inline def setRenderDefaultFocus(value: () => Unit): Self = StObject.set(x, "renderDefaultFocus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRenderDefaultHover(value: () => Unit): Self = StObject.set(x, "renderDefaultHover", js.Any.fromFunction0(value))
+      inline def setRenderDefaultHover(value: () => Unit): Self = StObject.set(x, "renderDefaultHover", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRenderDefaultSelection(value: () => Unit): Self = StObject.set(x, "renderDefaultSelection", js.Any.fromFunction0(value))
+      inline def setRenderDefaultSelection(value: () => Unit): Self = StObject.set(x, "renderDefaultSelection", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setState(value: Expanded): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Expanded): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
   // tslint:disable-next-line interface-over-type-literal
-  @js.native
   trait TooltipContext[K1, K2, D1, D2] extends StObject {
     
-    var componentElement: Element = js.native
+    var componentElement: Element
     
-    var data: js.Object | js.Array[js.Object] = js.native
+    var data: js.Object | js.Array[js.Object]
     
-    var id: K1 | K2 = js.native
+    var id: K1 | K2
     
-    var itemData: D1 | D2 | js.Array[D2] = js.native
+    var itemData: D1 | D2 | js.Array[D2]
     
-    var label: String = js.native
+    var label: String
     
-    var parentElement: Element = js.native
+    var parentElement: Element
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object TooltipContext {
     
-    @scala.inline
-    def apply[K1, K2, D1, D2](
+    inline def apply[K1, K2, D1, D2](
       componentElement: Element,
       data: js.Object | js.Array[js.Object],
       id: K1 | K2,
@@ -1045,35 +1040,25 @@ object ojDiagram {
       __obj.asInstanceOf[TooltipContext[K1, K2, D1, D2]]
     }
     
-    @scala.inline
-    implicit class TooltipContextMutableBuilder[Self <: TooltipContext[_, _, _, _], K1, K2, D1, D2] (val x: Self with (TooltipContext[K1, K2, D1, D2])) extends AnyVal {
+    extension [Self <: TooltipContext[?, ?, ?, ?], K1, K2, D1, D2](x: Self & (TooltipContext[K1, K2, D1, D2])) {
       
-      @scala.inline
-      def setComponentElement(value: Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
+      inline def setComponentElement(value: Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Object | js.Array[js.Object]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Object | js.Array[js.Object]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: js.Object*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.Object*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: K1 | K2): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: K1 | K2): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemData(value: D1 | D2 | js.Array[D2]): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
+      inline def setItemData(value: D1 | D2 | js.Array[D2]): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemDataVarargs(value: D2*): Self = StObject.set(x, "itemData", js.Array(value :_*))
+      inline def setItemDataVarargs(value: D2*): Self = StObject.set(x, "itemData", js.Array(value :_*))
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentElement(value: Element): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
+      inline def setParentElement(value: Element): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

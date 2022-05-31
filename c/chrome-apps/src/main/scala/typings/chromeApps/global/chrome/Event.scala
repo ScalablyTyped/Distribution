@@ -10,13 +10,3 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Event[T /* <: js.Function */] ()
   extends StObject
      with typings.chromeApps.chrome.events.Event[T]
-// #endregion
-// #region classes
-/////////////
-// CLASSES //
-/////////////
-/**
-  * New Chrome Event
-  * @constructor
-  */
-object Event

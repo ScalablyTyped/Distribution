@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "unist-util-visit"
-version := "2.0.3-dd7722"
+version := "2.0.3-6e717d"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "std" % "4.1-2f6855",
-  "org.scalablytyped" %%% "unist" % "2.0-dt-20190213Z-61e58c",
-  "org.scalablytyped" %%% "unist-util-is" % "4.0.3-a08f44",
-  "org.scalablytyped" %%% "unist-util-visit-parents" % "3.1.1-3c73d9")
+  "org.scalablytyped" %%% "std" % "4.1-f7e8ab",
+  "org.scalablytyped" %%% "unist" % "2.0-dt-20190213Z-97095f",
+  "org.scalablytyped" %%% "unist-util-is" % "4.0.3-0355df",
+  "org.scalablytyped" %%% "unist-util-visit-parents" % "3.1.1-41133d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -2,13 +2,14 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PassCubePostProcess extends PostProcess {
+trait PassCubePostProcess
+  extends StObject
+     with PostProcess {
   
-  var _face: js.Any = js.native
+  /* private */ var _face: js.Any = js.native
   
   /**
     * Gets or sets the cube face to display.

@@ -2,24 +2,25 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FramingBehavior extends Behavior[ArcRotateCamera] {
+trait FramingBehavior
+  extends StObject
+     with Behavior[ArcRotateCamera] {
   
-  var _animatables: js.Any = js.native
+  /* private */ var _animatables: js.Any = js.native
   
   /**
     *  Applies any current user interaction to the camera. Takes into account maximum alpha rotation.
     */
-  var _applyUserInteraction: js.Any = js.native
+  /* private */ var _applyUserInteraction: js.Any = js.native
   
-  var _attachedCamera: js.Any = js.native
+  /* private */ var _attachedCamera: js.Any = js.native
   
-  var _betaIsAnimating: js.Any = js.native
+  /* private */ var _betaIsAnimating: js.Any = js.native
   
-  var _betaTransition: js.Any = js.native
+  /* private */ var _betaTransition: js.Any = js.native
   
   /**
     * Calculates the lowest radius for the camera based on the bounding box of the mesh.
@@ -33,49 +34,49 @@ trait FramingBehavior extends Behavior[ArcRotateCamera] {
   /**
     * Removes all animation locks. Allows new animations to be added to any of the arcCamera properties.
     */
-  var _clearAnimationLocks: js.Any = js.native
+  /* private */ var _clearAnimationLocks: js.Any = js.native
   
-  var _defaultElevation: js.Any = js.native
+  /* private */ var _defaultElevation: js.Any = js.native
   
-  var _elevationReturnTime: js.Any = js.native
+  /* private */ var _elevationReturnTime: js.Any = js.native
   
-  var _elevationReturnWaitTime: js.Any = js.native
+  /* private */ var _elevationReturnWaitTime: js.Any = js.native
   
-  var _framingTime: js.Any = js.native
+  /* private */ var _framingTime: js.Any = js.native
   
   /**
     * Returns the frustum slope based on the canvas ratio and camera FOV
     * @returns The frustum slope represented as a Vector2 with X and Y slopes
     */
-  var _getFrustumSlope: js.Any = js.native
+  /* private */ var _getFrustumSlope: js.Any = js.native
   
-  var _isPointerDown: js.Any = js.native
+  /* private */ var _isPointerDown: js.Any = js.native
   
-  var _lastInteractionTime: js.Any = js.native
+  /* private */ var _lastInteractionTime: js.Any = js.native
   
   /**
     * Keeps the camera above the ground plane. If the user pulls the camera below the ground plane, the camera
     * is automatically returned to its default position (expected to be above ground plane).
     */
-  var _maintainCameraAboveGround: js.Any = js.native
+  /* private */ var _maintainCameraAboveGround: js.Any = js.native
   
-  var _mode: js.Any = js.native
+  /* private */ var _mode: js.Any = js.native
   
-  var _onAfterCheckInputsObserver: js.Any = js.native
+  /* private */ var _onAfterCheckInputsObserver: js.Any = js.native
   
-  var _onMeshTargetChangedObserver: js.Any = js.native
+  /* private */ var _onMeshTargetChangedObserver: js.Any = js.native
   
-  var _onPrePointerObservableObserver: js.Any = js.native
+  /* private */ var _onPrePointerObservableObserver: js.Any = js.native
   
-  var _positionScale: js.Any = js.native
+  /* private */ var _positionScale: js.Any = js.native
   
-  var _radiusScale: js.Any = js.native
+  /* private */ var _radiusScale: js.Any = js.native
   
-  var _radiusTransition: js.Any = js.native
+  /* private */ var _radiusTransition: js.Any = js.native
   
-  var _vectorTransition: js.Any = js.native
+  /* private */ var _vectorTransition: js.Any = js.native
   
-  var _zoomStopsAnimation: js.Any = js.native
+  /* private */ var _zoomStopsAnimation: js.Any = js.native
   
   /**
     * Define if the behavior should automatically change the configured
@@ -174,17 +175,17 @@ trait FramingBehavior extends Behavior[ArcRotateCamera] {
     * @param onAnimationEnd Callback triggered at the end of the framing animation
     */
   def zoomOnBoundingInfo(minimumWorld: Vector3, maximumWorld: Vector3): Unit = js.native
-  def zoomOnBoundingInfo(
-    minimumWorld: Vector3,
-    maximumWorld: Vector3,
-    focusOnOriginXZ: js.UndefOr[scala.Nothing],
-    onAnimationEnd: Nullable[js.Function0[Unit]]
-  ): Unit = js.native
   def zoomOnBoundingInfo(minimumWorld: Vector3, maximumWorld: Vector3, focusOnOriginXZ: Boolean): Unit = js.native
   def zoomOnBoundingInfo(
     minimumWorld: Vector3,
     maximumWorld: Vector3,
     focusOnOriginXZ: Boolean,
+    onAnimationEnd: Nullable[js.Function0[Unit]]
+  ): Unit = js.native
+  def zoomOnBoundingInfo(
+    minimumWorld: Vector3,
+    maximumWorld: Vector3,
+    focusOnOriginXZ: Unit,
     onAnimationEnd: Nullable[js.Function0[Unit]]
   ): Unit = js.native
   
@@ -195,13 +196,9 @@ trait FramingBehavior extends Behavior[ArcRotateCamera] {
     * @param onAnimationEnd Callback triggered at the end of the framing animation
     */
   def zoomOnMesh(mesh: AbstractMesh): Unit = js.native
-  def zoomOnMesh(
-    mesh: AbstractMesh,
-    focusOnOriginXZ: js.UndefOr[scala.Nothing],
-    onAnimationEnd: Nullable[js.Function0[Unit]]
-  ): Unit = js.native
   def zoomOnMesh(mesh: AbstractMesh, focusOnOriginXZ: Boolean): Unit = js.native
   def zoomOnMesh(mesh: AbstractMesh, focusOnOriginXZ: Boolean, onAnimationEnd: Nullable[js.Function0[Unit]]): Unit = js.native
+  def zoomOnMesh(mesh: AbstractMesh, focusOnOriginXZ: Unit, onAnimationEnd: Nullable[js.Function0[Unit]]): Unit = js.native
   
   /**
     * Targets the given mesh with its children and updates zoom level accordingly.
@@ -210,13 +207,9 @@ trait FramingBehavior extends Behavior[ArcRotateCamera] {
     * @param onAnimationEnd Callback triggered at the end of the framing animation
     */
   def zoomOnMeshHierarchy(mesh: AbstractMesh): Unit = js.native
-  def zoomOnMeshHierarchy(
-    mesh: AbstractMesh,
-    focusOnOriginXZ: js.UndefOr[scala.Nothing],
-    onAnimationEnd: Nullable[js.Function0[Unit]]
-  ): Unit = js.native
   def zoomOnMeshHierarchy(mesh: AbstractMesh, focusOnOriginXZ: Boolean): Unit = js.native
   def zoomOnMeshHierarchy(mesh: AbstractMesh, focusOnOriginXZ: Boolean, onAnimationEnd: Nullable[js.Function0[Unit]]): Unit = js.native
+  def zoomOnMeshHierarchy(mesh: AbstractMesh, focusOnOriginXZ: Unit, onAnimationEnd: Nullable[js.Function0[Unit]]): Unit = js.native
   
   /**
     * Targets the given meshes with their children and updates zoom level accordingly.
@@ -225,15 +218,15 @@ trait FramingBehavior extends Behavior[ArcRotateCamera] {
     * @param onAnimationEnd Callback triggered at the end of the framing animation
     */
   def zoomOnMeshesHierarchy(meshes: js.Array[AbstractMesh]): Unit = js.native
-  def zoomOnMeshesHierarchy(
-    meshes: js.Array[AbstractMesh],
-    focusOnOriginXZ: js.UndefOr[scala.Nothing],
-    onAnimationEnd: Nullable[js.Function0[Unit]]
-  ): Unit = js.native
   def zoomOnMeshesHierarchy(meshes: js.Array[AbstractMesh], focusOnOriginXZ: Boolean): Unit = js.native
   def zoomOnMeshesHierarchy(
     meshes: js.Array[AbstractMesh],
     focusOnOriginXZ: Boolean,
+    onAnimationEnd: Nullable[js.Function0[Unit]]
+  ): Unit = js.native
+  def zoomOnMeshesHierarchy(
+    meshes: js.Array[AbstractMesh],
+    focusOnOriginXZ: Unit,
     onAnimationEnd: Nullable[js.Function0[Unit]]
   ): Unit = js.native
   

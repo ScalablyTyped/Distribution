@@ -2,31 +2,30 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RenderingManager extends StObject {
   
-  var _autoClearDepthStencil: js.Any = js.native
+  /* private */ var _autoClearDepthStencil: js.Any = js.native
   
-  var _clearDepthStencilBuffer: js.Any = js.native
+  /* private */ var _clearDepthStencilBuffer: js.Any = js.native
   
-  var _customAlphaTestSortCompareFn: js.Any = js.native
+  /* private */ var _customAlphaTestSortCompareFn: js.Any = js.native
   
-  var _customOpaqueSortCompareFn: js.Any = js.native
+  /* private */ var _customOpaqueSortCompareFn: js.Any = js.native
   
-  var _customTransparentSortCompareFn: js.Any = js.native
+  /* private */ var _customTransparentSortCompareFn: js.Any = js.native
   
-  var _depthStencilBufferAlreadyCleaned: js.Any = js.native
+  /* private */ var _depthStencilBufferAlreadyCleaned: js.Any = js.native
   
-  var _prepareRenderingGroup: js.Any = js.native
+  /* private */ var _prepareRenderingGroup: js.Any = js.native
   
-  var _renderingGroupInfo: js.Any = js.native
+  /* private */ var _renderingGroupInfo: js.Any = js.native
   
-  var _renderingGroups: js.Any = js.native
+  /* private */ var _renderingGroups: js.Any = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
   /**
     * @hidden
@@ -40,7 +39,7 @@ trait RenderingManager extends StObject {
     * @param material Optional reference to the submeshes's material. Provide if you have an exiting reference to improve performance.
     */
   def dispatch(subMesh: SubMesh): Unit = js.native
-  def dispatch(subMesh: SubMesh, mesh: js.UndefOr[scala.Nothing], material: Nullable[Material]): Unit = js.native
+  def dispatch(subMesh: SubMesh, mesh: Unit, material: Nullable[Material]): Unit = js.native
   def dispatch(subMesh: SubMesh, mesh: AbstractMesh): Unit = js.native
   def dispatch(subMesh: SubMesh, mesh: AbstractMesh, material: Nullable[Material]): Unit = js.native
   
@@ -109,14 +108,9 @@ trait RenderingManager extends StObject {
     * @param stencil Automatically clears stencil between groups if true and autoClear is true.
     */
   def setRenderingAutoClearDepthStencil(renderingGroupId: Double, autoClearDepthStencil: Boolean): Unit = js.native
-  def setRenderingAutoClearDepthStencil(
-    renderingGroupId: Double,
-    autoClearDepthStencil: Boolean,
-    depth: js.UndefOr[scala.Nothing],
-    stencil: Boolean
-  ): Unit = js.native
   def setRenderingAutoClearDepthStencil(renderingGroupId: Double, autoClearDepthStencil: Boolean, depth: Boolean): Unit = js.native
   def setRenderingAutoClearDepthStencil(renderingGroupId: Double, autoClearDepthStencil: Boolean, depth: Boolean, stencil: Boolean): Unit = js.native
+  def setRenderingAutoClearDepthStencil(renderingGroupId: Double, autoClearDepthStencil: Boolean, depth: Unit, stencil: Boolean): Unit = js.native
   
   /**
     * Overrides the default sort function applied in the renderging group to prepare the meshes.
@@ -130,17 +124,40 @@ trait RenderingManager extends StObject {
   def setRenderingOrder(renderingGroupId: Double): Unit = js.native
   def setRenderingOrder(
     renderingGroupId: Double,
-    opaqueSortCompareFn: js.UndefOr[Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]],
-    alphaTestSortCompareFn: js.UndefOr[Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]],
+    opaqueSortCompareFn: Unit,
+    alphaTestSortCompareFn: Unit,
     transparentSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
   ): Unit = js.native
   def setRenderingOrder(
     renderingGroupId: Double,
-    opaqueSortCompareFn: js.UndefOr[Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]],
+    opaqueSortCompareFn: Unit,
     alphaTestSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
   ): Unit = js.native
   def setRenderingOrder(
     renderingGroupId: Double,
+    opaqueSortCompareFn: Unit,
+    alphaTestSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]],
+    transparentSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
+  ): Unit = js.native
+  def setRenderingOrder(
+    renderingGroupId: Double,
     opaqueSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
+  ): Unit = js.native
+  def setRenderingOrder(
+    renderingGroupId: Double,
+    opaqueSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]],
+    alphaTestSortCompareFn: Unit,
+    transparentSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
+  ): Unit = js.native
+  def setRenderingOrder(
+    renderingGroupId: Double,
+    opaqueSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]],
+    alphaTestSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
+  ): Unit = js.native
+  def setRenderingOrder(
+    renderingGroupId: Double,
+    opaqueSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]],
+    alphaTestSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]],
+    transparentSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
   ): Unit = js.native
 }

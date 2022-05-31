@@ -40,17 +40,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object csr {
   
   /**
-    * Certification Request (CSR/PKCS#10) utilities class
-    * @description
-    * This class provides utility static methods for CSR/PKCS#10.
-    * Here is a list of methods:
-    *
-    * - `KJUR.asn1.csr.CSRUtil.newCSRPEM`
-    * - `KJUR.asn1.csr.CSRUtil.getInfo`
-    */
-  object CSRUtil
-  
-  /**
     * ASN.1 CertificationRequest structure class
     * @param params associative array of parameters (ex. {})
     * @example

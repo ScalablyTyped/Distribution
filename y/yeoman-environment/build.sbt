@@ -1,27 +1,27 @@
 organization := "org.scalablytyped"
 name := "yeoman-environment"
-version := "2.10-dt-20201016Z-a09a4b"
+version := "2.10-dt-20201016Z-3c97f5"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "debug" % "4.1-dt-20200226Z-64e7b3",
-  "org.scalablytyped" %%% "diff" % "4.0-dt-20200515Z-e89aac",
-  "org.scalablytyped" %%% "ejs" % "3.0-dt-20201020Z-16fd69",
-  "org.scalablytyped" %%% "glob" % "7.1-dt-20200706Z-623eaa",
-  "org.scalablytyped" %%% "inquirer" % "7.3-dt-20200820Z-0d2080",
-  "org.scalablytyped" %%% "json-schema" % "7.0-dt-20200831Z-bfbda9",
-  "org.scalablytyped" %%% "mem-fs" % "1.1-dt-20181203Z-49b660",
-  "org.scalablytyped" %%% "mem-fs-editor" % "7.0-dt-20200707Z-f93b2f",
-  "org.scalablytyped" %%% "minimatch" % "3.0-dt-20200515Z-c7d5c6",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-e00132",
-  "org.scalablytyped" %%% "rxjs" % "6.6.3-fc5d55",
-  "org.scalablytyped" %%% "rxjs-compat" % "6.6.3-b1ecae",
-  "org.scalablytyped" %%% "std" % "4.1-2f6855",
-  "org.scalablytyped" %%% "text-table" % "0.2-dt-20190426Z-092bea",
-  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20201002Z-ad47f2",
-  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20201002Z-85853c",
-  "org.scalablytyped" %%% "yeoman-generator" % "4.11-dt-20201016Z-e79a03")
+  "org.scalablytyped" %%% "debug" % "4.1-dt-20200226Z-939b6e",
+  "org.scalablytyped" %%% "diff" % "4.0-dt-20200515Z-65716e",
+  "org.scalablytyped" %%% "ejs" % "3.0-dt-20201020Z-886519",
+  "org.scalablytyped" %%% "glob" % "7.1-dt-20200706Z-de8bc7",
+  "org.scalablytyped" %%% "inquirer" % "7.3-dt-20200820Z-2d7140",
+  "org.scalablytyped" %%% "json-schema" % "7.0-dt-20200831Z-ad71af",
+  "org.scalablytyped" %%% "mem-fs" % "1.1-dt-20181203Z-1b51c0",
+  "org.scalablytyped" %%% "mem-fs-editor" % "7.0-dt-20200707Z-56ddc1",
+  "org.scalablytyped" %%% "minimatch" % "3.0-dt-20200515Z-e93439",
+  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-11c649",
+  "org.scalablytyped" %%% "rxjs" % "6.6.3-e772da",
+  "org.scalablytyped" %%% "rxjs-compat" % "6.6.3-e1471b",
+  "org.scalablytyped" %%% "std" % "4.1-f7e8ab",
+  "org.scalablytyped" %%% "text-table" % "0.2-dt-20190426Z-c546e8",
+  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20201002Z-81a546",
+  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20201002Z-34a471",
+  "org.scalablytyped" %%% "yeoman-generator" % "4.11-dt-20201016Z-d31eb3")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

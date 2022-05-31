@@ -4,7 +4,6 @@ import typings.babylonjs.cameraMod.Camera
 import typings.babylonjs.engineMod.Engine
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/PostProcesses/index", "StereoscopicInterlacePostProcessI")
@@ -39,14 +38,6 @@ class StereoscopicInterlacePostProcessI protected ()
     rigCameras: js.Array[Camera],
     isStereoscopicHoriz: Boolean,
     isStereoscopicInterlaced: Boolean,
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: Engine
-  ) = this()
-  def this(
-    name: String,
-    rigCameras: js.Array[Camera],
-    isStereoscopicHoriz: Boolean,
-    isStereoscopicInterlaced: Boolean,
     samplingMode: Double,
     engine: Engine
   ) = this()
@@ -55,8 +46,16 @@ class StereoscopicInterlacePostProcessI protected ()
     rigCameras: js.Array[Camera],
     isStereoscopicHoriz: Boolean,
     isStereoscopicInterlaced: Boolean,
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: js.UndefOr[scala.Nothing],
+    samplingMode: Unit,
+    engine: Engine
+  ) = this()
+  def this(
+    name: String,
+    rigCameras: js.Array[Camera],
+    isStereoscopicHoriz: Boolean,
+    isStereoscopicInterlaced: Boolean,
+    samplingMode: Double,
+    engine: Unit,
     reusable: Boolean
   ) = this()
   def this(
@@ -64,7 +63,7 @@ class StereoscopicInterlacePostProcessI protected ()
     rigCameras: js.Array[Camera],
     isStereoscopicHoriz: Boolean,
     isStereoscopicInterlaced: Boolean,
-    samplingMode: js.UndefOr[scala.Nothing],
+    samplingMode: Double,
     engine: Engine,
     reusable: Boolean
   ) = this()
@@ -73,8 +72,8 @@ class StereoscopicInterlacePostProcessI protected ()
     rigCameras: js.Array[Camera],
     isStereoscopicHoriz: Boolean,
     isStereoscopicInterlaced: Boolean,
-    samplingMode: Double,
-    engine: js.UndefOr[scala.Nothing],
+    samplingMode: Unit,
+    engine: Unit,
     reusable: Boolean
   ) = this()
   def this(
@@ -82,7 +81,7 @@ class StereoscopicInterlacePostProcessI protected ()
     rigCameras: js.Array[Camera],
     isStereoscopicHoriz: Boolean,
     isStereoscopicInterlaced: Boolean,
-    samplingMode: Double,
+    samplingMode: Unit,
     engine: Engine,
     reusable: Boolean
   ) = this()

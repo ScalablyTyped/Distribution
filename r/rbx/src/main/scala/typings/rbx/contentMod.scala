@@ -98,8 +98,5 @@ object contentMod {
     def typeof: js.Symbol = js.native
     
     inline def typeof_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$$typeof")(x.asInstanceOf[js.Any])
-    
-    /* Inlined react.react.WeakValidationMap<{[x: string] : any, [x: number] : any}> */
-    object propTypes
   }
 }

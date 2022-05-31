@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.SolidParticle")
 @js.native
 class SolidParticle protected ()
-  extends typings.babylonjs.BABYLON.SolidParticle {
+  extends StObject
+     with typings.babylonjs.BABYLON.SolidParticle {
   /**
     * Creates a Solid Particle object.
     * Don't create particles manually, use instead the Solid Particle System internal tools like _addParticle()
@@ -54,7 +54,19 @@ class SolidParticle protected ()
     shapeId: Double,
     idxInShape: Double,
     sps: typings.babylonjs.BABYLON.SolidParticleSystem,
-    modelBoundingInfo: js.UndefOr[Nullable[typings.babylonjs.BABYLON.BoundingInfo]],
+    modelBoundingInfo: Unit,
+    materialIndex: Nullable[Double]
+  ) = this()
+  def this(
+    particleIndex: Double,
+    particleId: Double,
+    positionIndex: Double,
+    indiceIndex: Double,
+    model: Nullable[typings.babylonjs.BABYLON.ModelShape],
+    shapeId: Double,
+    idxInShape: Double,
+    sps: typings.babylonjs.BABYLON.SolidParticleSystem,
+    modelBoundingInfo: Nullable[typings.babylonjs.BABYLON.BoundingInfo],
     materialIndex: Nullable[Double]
   ) = this()
 }

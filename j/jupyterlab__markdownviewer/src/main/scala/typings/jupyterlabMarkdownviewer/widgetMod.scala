@@ -19,7 +19,6 @@ import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IRenderer
 import typings.luminoWidgets.mod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object widgetMod {
@@ -38,22 +37,22 @@ object widgetMod {
       */
     def this(options: typings.jupyterlabMarkdownviewer.widgetMod.MarkdownViewer.IOptions) = this()
     
-    var _config: js.Any = js.native
+    /* private */ var _config: js.Any = js.native
     
-    var _fragment: js.Any = js.native
+    /* private */ var _fragment: js.Any = js.native
     
-    var _isRendering: js.Any = js.native
+    /* private */ var _isRendering: js.Any = js.native
     
-    var _monitor: js.Any = js.native
+    /* private */ var _monitor: js.Any = js.native
     
-    var _ready: js.Any = js.native
+    /* private */ var _ready: js.Any = js.native
     
     /**
       * Render the mime content.
       */
-    var _render: js.Any = js.native
+    /* private */ var _render: js.Any = js.native
     
-    var _renderRequested: js.Any = js.native
+    /* private */ var _renderRequested: js.Any = js.native
     
     val context: Context = js.native
     
@@ -102,114 +101,96 @@ object widgetMod {
     @js.native
     val defaultConfig: IConfig = js.native
     
-    @js.native
     trait IConfig extends StObject {
       
       /**
         * User preferred font family for markdown viewer.
         */
-      var fontFamily: String | Null = js.native
+      var fontFamily: String | Null
       
       /**
         * User preferred size in pixel of the font used in markdown viewer.
         */
-      var fontSize: Double | Null = js.native
+      var fontSize: Double | Null
       
       /**
         * Whether to hide the YALM front matter.
         */
-      var hideFrontMatter: Boolean = js.native
+      var hideFrontMatter: Boolean
       
       /**
         * User preferred text line height, as a multiplier of font size.
         */
-      var lineHeight: Double | Null = js.native
+      var lineHeight: Double | Null
       
       /**
         * User preferred text line width expressed in CSS ch units.
         */
-      var lineWidth: Double | Null = js.native
+      var lineWidth: Double | Null
       
       /**
         * The render timeout.
         */
-      var renderTimeout: Double = js.native
+      var renderTimeout: Double
     }
     object IConfig {
       
-      @scala.inline
-      def apply(hideFrontMatter: Boolean, renderTimeout: Double): IConfig = {
-        val __obj = js.Dynamic.literal(hideFrontMatter = hideFrontMatter.asInstanceOf[js.Any], renderTimeout = renderTimeout.asInstanceOf[js.Any])
+      inline def apply(hideFrontMatter: Boolean, renderTimeout: Double): IConfig = {
+        val __obj = js.Dynamic.literal(hideFrontMatter = hideFrontMatter.asInstanceOf[js.Any], renderTimeout = renderTimeout.asInstanceOf[js.Any], fontFamily = null, fontSize = null, lineHeight = null, lineWidth = null)
         __obj.asInstanceOf[IConfig]
       }
       
-      @scala.inline
-      implicit class IConfigMutableBuilder[Self <: IConfig] (val x: Self) extends AnyVal {
+      extension [Self <: IConfig](x: Self) {
         
-        @scala.inline
-        def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+        inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFontFamilyNull: Self = StObject.set(x, "fontFamily", null)
+        inline def setFontFamilyNull: Self = StObject.set(x, "fontFamily", null)
         
-        @scala.inline
-        def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+        inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFontSizeNull: Self = StObject.set(x, "fontSize", null)
+        inline def setFontSizeNull: Self = StObject.set(x, "fontSize", null)
         
-        @scala.inline
-        def setHideFrontMatter(value: Boolean): Self = StObject.set(x, "hideFrontMatter", value.asInstanceOf[js.Any])
+        inline def setHideFrontMatter(value: Boolean): Self = StObject.set(x, "hideFrontMatter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+        inline def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLineHeightNull: Self = StObject.set(x, "lineHeight", null)
+        inline def setLineHeightNull: Self = StObject.set(x, "lineHeight", null)
         
-        @scala.inline
-        def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+        inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLineWidthNull: Self = StObject.set(x, "lineWidth", null)
+        inline def setLineWidthNull: Self = StObject.set(x, "lineWidth", null)
         
-        @scala.inline
-        def setRenderTimeout(value: Double): Self = StObject.set(x, "renderTimeout", value.asInstanceOf[js.Any])
+        inline def setRenderTimeout(value: Double): Self = StObject.set(x, "renderTimeout", value.asInstanceOf[js.Any])
       }
     }
     
     /**
       * The options used to initialize a MarkdownViewer.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * Context
         */
-      var context: IContext[IModel] = js.native
+      var context: IContext[IModel]
       
       /**
         * The renderer instance.
         */
-      var renderer: IRenderer = js.native
+      var renderer: IRenderer
     }
     object IOptions {
       
-      @scala.inline
-      def apply(context: IContext[IModel], renderer: IRenderer): typings.jupyterlabMarkdownviewer.widgetMod.MarkdownViewer.IOptions = {
+      inline def apply(context: IContext[IModel], renderer: IRenderer): typings.jupyterlabMarkdownviewer.widgetMod.MarkdownViewer.IOptions = {
         val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], renderer = renderer.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.jupyterlabMarkdownviewer.widgetMod.MarkdownViewer.IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: typings.jupyterlabMarkdownviewer.widgetMod.MarkdownViewer.IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.jupyterlabMarkdownviewer.widgetMod.MarkdownViewer.IOptions](x: Self) {
         
-        @scala.inline
-        def setContext(value: IContext[IModel]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+        inline def setContext(value: IContext[IModel]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+        inline def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -222,47 +203,43 @@ object widgetMod {
       */
     def this(options: typings.jupyterlabMarkdownviewer.widgetMod.MarkdownViewerFactory.IOptions) = this()
     
-    var _fileType: js.Any = js.native
+    /* private */ var _fileType: js.Any = js.native
     
-    var _rendermime: js.Any = js.native
+    /* private */ var _rendermime: js.Any = js.native
   }
   object MarkdownViewerFactory {
     
     /**
       * The options used to initialize a MarkdownViewerFactory.
       */
-    @js.native
-    trait IOptions extends IWidgetFactoryOptions[Widget] {
+    trait IOptions
+      extends StObject
+         with IWidgetFactoryOptions[Widget] {
       
       /**
         * The primary file type associated with the document.
         */
-      var primaryFileType: js.UndefOr[IFileType] = js.native
+      var primaryFileType: js.UndefOr[IFileType] = js.undefined
       
       /**
         * The rendermime instance.
         */
-      var rendermime: IRenderMimeRegistry = js.native
+      var rendermime: IRenderMimeRegistry
     }
     object IOptions {
       
-      @scala.inline
-      def apply(fileTypes: js.Array[String], name: String, rendermime: IRenderMimeRegistry): typings.jupyterlabMarkdownviewer.widgetMod.MarkdownViewerFactory.IOptions = {
+      inline def apply(fileTypes: js.Array[String], name: String, rendermime: IRenderMimeRegistry): typings.jupyterlabMarkdownviewer.widgetMod.MarkdownViewerFactory.IOptions = {
         val __obj = js.Dynamic.literal(fileTypes = fileTypes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], rendermime = rendermime.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.jupyterlabMarkdownviewer.widgetMod.MarkdownViewerFactory.IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: typings.jupyterlabMarkdownviewer.widgetMod.MarkdownViewerFactory.IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.jupyterlabMarkdownviewer.widgetMod.MarkdownViewerFactory.IOptions](x: Self) {
         
-        @scala.inline
-        def setPrimaryFileType(value: IFileType): Self = StObject.set(x, "primaryFileType", value.asInstanceOf[js.Any])
+        inline def setPrimaryFileType(value: IFileType): Self = StObject.set(x, "primaryFileType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrimaryFileTypeUndefined: Self = StObject.set(x, "primaryFileType", js.undefined)
+        inline def setPrimaryFileTypeUndefined: Self = StObject.set(x, "primaryFileType", js.undefined)
         
-        @scala.inline
-        def setRendermime(value: IRenderMimeRegistry): Self = StObject.set(x, "rendermime", value.asInstanceOf[js.Any])
+        inline def setRendermime(value: IRenderMimeRegistry): Self = StObject.set(x, "rendermime", value.asInstanceOf[js.Any])
       }
     }
   }

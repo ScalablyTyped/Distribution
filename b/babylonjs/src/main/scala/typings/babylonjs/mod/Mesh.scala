@@ -9,7 +9,6 @@ import typings.babylonjs.physicsImpostorMod.IPhysicsEnabledObject
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "Mesh")
@@ -29,43 +28,216 @@ class Mesh protected ()
     */
   def this(name: String) = this()
   def this(name: String, scene: Nullable[typings.babylonjs.sceneMod.Scene]) = this()
+  def this(name: String, scene: Unit, parent: Nullable[typings.babylonjs.nodeMod.Node]) = this()
   def this(
     name: String,
-    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
     parent: Nullable[typings.babylonjs.nodeMod.Node]
   ) = this()
+  def this(name: String, scene: Unit, parent: Unit, source: Nullable[typings.babylonjs.meshMod.Mesh]) = this()
   def this(
     name: String,
-    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
-    parent: js.UndefOr[Nullable[typings.babylonjs.nodeMod.Node]],
+    scene: Unit,
+    parent: Nullable[typings.babylonjs.nodeMod.Node],
     source: Nullable[typings.babylonjs.meshMod.Mesh]
   ) = this()
   def this(
     name: String,
-    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
-    parent: js.UndefOr[Nullable[typings.babylonjs.nodeMod.Node]],
-    source: js.UndefOr[Nullable[typings.babylonjs.meshMod.Mesh]],
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    parent: Unit,
+    source: Nullable[typings.babylonjs.meshMod.Mesh]
+  ) = this()
+  def this(
+    name: String,
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    parent: Nullable[typings.babylonjs.nodeMod.Node],
+    source: Nullable[typings.babylonjs.meshMod.Mesh]
+  ) = this()
+  def this(name: String, scene: Unit, parent: Unit, source: Unit, doNotCloneChildren: Boolean) = this()
+  def this(
+    name: String,
+    scene: Unit,
+    parent: Unit,
+    source: Nullable[typings.babylonjs.meshMod.Mesh],
     doNotCloneChildren: Boolean
   ) = this()
   def this(
     name: String,
-    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
-    parent: js.UndefOr[Nullable[typings.babylonjs.nodeMod.Node]],
-    source: js.UndefOr[Nullable[typings.babylonjs.meshMod.Mesh]],
-    doNotCloneChildren: js.UndefOr[scala.Nothing],
+    scene: Unit,
+    parent: Nullable[typings.babylonjs.nodeMod.Node],
+    source: Unit,
+    doNotCloneChildren: Boolean
+  ) = this()
+  def this(
+    name: String,
+    scene: Unit,
+    parent: Nullable[typings.babylonjs.nodeMod.Node],
+    source: Nullable[typings.babylonjs.meshMod.Mesh],
+    doNotCloneChildren: Boolean
+  ) = this()
+  def this(
+    name: String,
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    parent: Unit,
+    source: Unit,
+    doNotCloneChildren: Boolean
+  ) = this()
+  def this(
+    name: String,
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    parent: Unit,
+    source: Nullable[typings.babylonjs.meshMod.Mesh],
+    doNotCloneChildren: Boolean
+  ) = this()
+  def this(
+    name: String,
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    parent: Nullable[typings.babylonjs.nodeMod.Node],
+    source: Unit,
+    doNotCloneChildren: Boolean
+  ) = this()
+  def this(
+    name: String,
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    parent: Nullable[typings.babylonjs.nodeMod.Node],
+    source: Nullable[typings.babylonjs.meshMod.Mesh],
+    doNotCloneChildren: Boolean
+  ) = this()
+  def this(
+    name: String,
+    scene: Unit,
+    parent: Unit,
+    source: Unit,
+    doNotCloneChildren: Boolean,
     clonePhysicsImpostor: Boolean
   ) = this()
   def this(
     name: String,
-    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
-    parent: js.UndefOr[Nullable[typings.babylonjs.nodeMod.Node]],
-    source: js.UndefOr[Nullable[typings.babylonjs.meshMod.Mesh]],
+    scene: Unit,
+    parent: Unit,
+    source: Unit,
+    doNotCloneChildren: Unit,
+    clonePhysicsImpostor: Boolean
+  ) = this()
+  def this(
+    name: String,
+    scene: Unit,
+    parent: Unit,
+    source: Nullable[typings.babylonjs.meshMod.Mesh],
     doNotCloneChildren: Boolean,
+    clonePhysicsImpostor: Boolean
+  ) = this()
+  def this(
+    name: String,
+    scene: Unit,
+    parent: Unit,
+    source: Nullable[typings.babylonjs.meshMod.Mesh],
+    doNotCloneChildren: Unit,
+    clonePhysicsImpostor: Boolean
+  ) = this()
+  def this(
+    name: String,
+    scene: Unit,
+    parent: Nullable[typings.babylonjs.nodeMod.Node],
+    source: Unit,
+    doNotCloneChildren: Boolean,
+    clonePhysicsImpostor: Boolean
+  ) = this()
+  def this(
+    name: String,
+    scene: Unit,
+    parent: Nullable[typings.babylonjs.nodeMod.Node],
+    source: Unit,
+    doNotCloneChildren: Unit,
+    clonePhysicsImpostor: Boolean
+  ) = this()
+  def this(
+    name: String,
+    scene: Unit,
+    parent: Nullable[typings.babylonjs.nodeMod.Node],
+    source: Nullable[typings.babylonjs.meshMod.Mesh],
+    doNotCloneChildren: Boolean,
+    clonePhysicsImpostor: Boolean
+  ) = this()
+  def this(
+    name: String,
+    scene: Unit,
+    parent: Nullable[typings.babylonjs.nodeMod.Node],
+    source: Nullable[typings.babylonjs.meshMod.Mesh],
+    doNotCloneChildren: Unit,
+    clonePhysicsImpostor: Boolean
+  ) = this()
+  def this(
+    name: String,
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    parent: Unit,
+    source: Unit,
+    doNotCloneChildren: Boolean,
+    clonePhysicsImpostor: Boolean
+  ) = this()
+  def this(
+    name: String,
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    parent: Unit,
+    source: Unit,
+    doNotCloneChildren: Unit,
+    clonePhysicsImpostor: Boolean
+  ) = this()
+  def this(
+    name: String,
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    parent: Unit,
+    source: Nullable[typings.babylonjs.meshMod.Mesh],
+    doNotCloneChildren: Boolean,
+    clonePhysicsImpostor: Boolean
+  ) = this()
+  def this(
+    name: String,
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    parent: Unit,
+    source: Nullable[typings.babylonjs.meshMod.Mesh],
+    doNotCloneChildren: Unit,
+    clonePhysicsImpostor: Boolean
+  ) = this()
+  def this(
+    name: String,
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    parent: Nullable[typings.babylonjs.nodeMod.Node],
+    source: Unit,
+    doNotCloneChildren: Boolean,
+    clonePhysicsImpostor: Boolean
+  ) = this()
+  def this(
+    name: String,
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    parent: Nullable[typings.babylonjs.nodeMod.Node],
+    source: Unit,
+    doNotCloneChildren: Unit,
+    clonePhysicsImpostor: Boolean
+  ) = this()
+  def this(
+    name: String,
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    parent: Nullable[typings.babylonjs.nodeMod.Node],
+    source: Nullable[typings.babylonjs.meshMod.Mesh],
+    doNotCloneChildren: Boolean,
+    clonePhysicsImpostor: Boolean
+  ) = this()
+  def this(
+    name: String,
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    parent: Nullable[typings.babylonjs.nodeMod.Node],
+    source: Nullable[typings.babylonjs.meshMod.Mesh],
+    doNotCloneChildren: Unit,
     clonePhysicsImpostor: Boolean
   ) = this()
 }
 /* static members */
 object Mesh {
+  
+  @JSImport("babylonjs", "Mesh")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Mesh side orientation : usually the internal or back surface
@@ -109,17 +281,13 @@ object Mesh {
   @js.native
   val CENTER: Double = js.native
   
-  @JSImport("babylonjs", "Mesh.Center")
-  @js.native
-  def Center(meshesOrMinMaxVector: js.Array[typings.babylonjs.abstractMeshMod.AbstractMesh]): typings.babylonjs.mathVectorMod.Vector3 = js.native
+  inline def Center(meshesOrMinMaxVector: js.Array[typings.babylonjs.abstractMeshMod.AbstractMesh]): typings.babylonjs.mathVectorMod.Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Center")(meshesOrMinMaxVector.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathVectorMod.Vector3]
   /**
     * Returns the center of the `{min:` Vector3`, max:` Vector3`}` or the center of MinMax vector3 computed from a mesh array
     * @param meshesOrMinMaxVector could be an array of meshes or a `{min:` Vector3`, max:` Vector3`}` object
     * @returns a vector3
     */
-  @JSImport("babylonjs", "Mesh.Center")
-  @js.native
-  def Center(meshesOrMinMaxVector: Max): typings.babylonjs.mathVectorMod.Vector3 = js.native
+  inline def Center(meshesOrMinMaxVector: Max): typings.babylonjs.mathVectorMod.Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Center")(meshesOrMinMaxVector.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathVectorMod.Vector3]
   
   /**
     * Creates a box mesh. Please consider using the same method from the MeshBuilder class instead
@@ -130,38 +298,26 @@ object Mesh {
     * @param sideOrientation defines the mesh side orientation (https://doc.babylonjs.com/babylon101/discover_basic_elements#side-orientation)
     * @returns a new Mesh
     */
-  @JSImport("babylonjs", "Mesh.CreateBox")
-  @js.native
-  def CreateBox(name: String, size: Double): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateBox")
-  @js.native
-  def CreateBox(
+  inline def CreateBox(name: String, size: Double): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateBox(name: String, size: Double, scene: Unit, updatable: Boolean): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateBox(name: String, size: Double, scene: Unit, updatable: Boolean, sideOrientation: Double): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateBox(name: String, size: Double, scene: Unit, updatable: Unit, sideOrientation: Double): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateBox(name: String, size: Double, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateBox(name: String, size: Double, scene: Nullable[typings.babylonjs.sceneMod.Scene], updatable: Boolean): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateBox(
     name: String,
     size: Double,
-    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateBox")
-  @js.native
-  def CreateBox(
-    name: String,
-    size: Double,
-    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
-    updatable: Boolean
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateBox")
-  @js.native
-  def CreateBox(
-    name: String,
-    size: Double,
-    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
     updatable: Boolean,
     sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateBox")
-  @js.native
-  def CreateBox(name: String, size: Double, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = js.native
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateBox(
+    name: String,
+    size: Double,
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    updatable: Unit,
+    sideOrientation: Double
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
   
   /** Creates a Capsule Mesh
     * @param name defines the name of the mesh.
@@ -170,9 +326,7 @@ object Mesh {
     * @returns the capsule mesh
     * @see https://doc.babylonjs.com/how_to/capsule_shape
     */
-  @JSImport("babylonjs", "Mesh.CreateCapsule")
-  @js.native
-  def CreateCapsule(name: String, options: ICreateCapsuleOptions, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshMod.Mesh = js.native
+  inline def CreateCapsule(name: String, options: ICreateCapsuleOptions, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCapsule")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
   
   /**
     * Creates a cylinder or a cone mesh. Please consider using the same method from the MeshBuilder class instead
@@ -187,57 +341,47 @@ object Mesh {
     * @param sideOrientation defines the mesh side orientation (https://doc.babylonjs.com/babylon101/discover_basic_elements#side-orientation)
     * @returns a new Mesh
     */
-  @JSImport("babylonjs", "Mesh.CreateCylinder")
-  @js.native
-  def CreateCylinder(
+  inline def CreateCylinder(
     name: String,
     height: Double,
     diameterTop: Double,
     diameterBottom: Double,
     tessellation: Double,
     subdivisions: js.Any
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateCylinder")
-  @js.native
-  def CreateCylinder(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCylinder")(name.asInstanceOf[js.Any], height.asInstanceOf[js.Any], diameterTop.asInstanceOf[js.Any], diameterBottom.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], subdivisions.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateCylinder(
     name: String,
     height: Double,
     diameterTop: Double,
     diameterBottom: Double,
     tessellation: Double,
     subdivisions: js.Any,
-    scene: js.UndefOr[scala.Nothing],
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateCylinder")
-  @js.native
-  def CreateCylinder(
-    name: String,
-    height: Double,
-    diameterTop: Double,
-    diameterBottom: Double,
-    tessellation: Double,
-    subdivisions: js.Any,
-    scene: js.UndefOr[scala.Nothing],
+    scene: Unit,
     updatable: js.Any
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateCylinder")
-  @js.native
-  def CreateCylinder(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCylinder")(name.asInstanceOf[js.Any], height.asInstanceOf[js.Any], diameterTop.asInstanceOf[js.Any], diameterBottom.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], subdivisions.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateCylinder(
     name: String,
     height: Double,
     diameterTop: Double,
     diameterBottom: Double,
     tessellation: Double,
     subdivisions: js.Any,
-    scene: js.UndefOr[scala.Nothing],
+    scene: Unit,
     updatable: js.Any,
     sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateCylinder")
-  @js.native
-  def CreateCylinder(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCylinder")(name.asInstanceOf[js.Any], height.asInstanceOf[js.Any], diameterTop.asInstanceOf[js.Any], diameterBottom.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], subdivisions.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateCylinder(
+    name: String,
+    height: Double,
+    diameterTop: Double,
+    diameterBottom: Double,
+    tessellation: Double,
+    subdivisions: js.Any,
+    scene: Unit,
+    updatable: Unit,
+    sideOrientation: Double
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCylinder")(name.asInstanceOf[js.Any], height.asInstanceOf[js.Any], diameterTop.asInstanceOf[js.Any], diameterBottom.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], subdivisions.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateCylinder(
     name: String,
     height: Double,
     diameterTop: Double,
@@ -245,23 +389,8 @@ object Mesh {
     tessellation: Double,
     subdivisions: js.Any,
     scene: typings.babylonjs.sceneMod.Scene
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateCylinder")
-  @js.native
-  def CreateCylinder(
-    name: String,
-    height: Double,
-    diameterTop: Double,
-    diameterBottom: Double,
-    tessellation: Double,
-    subdivisions: js.Any,
-    scene: typings.babylonjs.sceneMod.Scene,
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateCylinder")
-  @js.native
-  def CreateCylinder(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCylinder")(name.asInstanceOf[js.Any], height.asInstanceOf[js.Any], diameterTop.asInstanceOf[js.Any], diameterBottom.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], subdivisions.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateCylinder(
     name: String,
     height: Double,
     diameterTop: Double,
@@ -270,10 +399,8 @@ object Mesh {
     subdivisions: js.Any,
     scene: typings.babylonjs.sceneMod.Scene,
     updatable: js.Any
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateCylinder")
-  @js.native
-  def CreateCylinder(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCylinder")(name.asInstanceOf[js.Any], height.asInstanceOf[js.Any], diameterTop.asInstanceOf[js.Any], diameterBottom.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], subdivisions.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateCylinder(
     name: String,
     height: Double,
     diameterTop: Double,
@@ -283,7 +410,18 @@ object Mesh {
     scene: typings.babylonjs.sceneMod.Scene,
     updatable: js.Any,
     sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCylinder")(name.asInstanceOf[js.Any], height.asInstanceOf[js.Any], diameterTop.asInstanceOf[js.Any], diameterBottom.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], subdivisions.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateCylinder(
+    name: String,
+    height: Double,
+    diameterTop: Double,
+    diameterBottom: Double,
+    tessellation: Double,
+    subdivisions: js.Any,
+    scene: typings.babylonjs.sceneMod.Scene,
+    updatable: Unit,
+    sideOrientation: Double
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCylinder")(name.asInstanceOf[js.Any], height.asInstanceOf[js.Any], diameterTop.asInstanceOf[js.Any], diameterBottom.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], subdivisions.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
   
   /**
     * Creates a dashed line mesh. Please consider using the same method from the MeshBuilder class instead
@@ -297,60 +435,79 @@ object Mesh {
     * @param instance is an instance of an existing LineMesh object to be updated with the passed `points` parameter (https://doc.babylonjs.com/how_to/How_to_dynamically_morph_a_mesh#lines-and-dashedlines)
     * @returns a new Mesh
     */
-  @JSImport("babylonjs", "Mesh.CreateDashedLines")
-  @js.native
-  def CreateDashedLines(
+  inline def CreateDashedLines(
     name: String,
     points: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     dashSize: Double,
     gapSize: Double,
     dashNb: Double
-  ): typings.babylonjs.linesMeshMod.LinesMesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateDashedLines")
-  @js.native
-  def CreateDashedLines(
+  ): typings.babylonjs.linesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDashedLines")(name.asInstanceOf[js.Any], points.asInstanceOf[js.Any], dashSize.asInstanceOf[js.Any], gapSize.asInstanceOf[js.Any], dashNb.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.linesMeshMod.LinesMesh]
+  inline def CreateDashedLines(
     name: String,
     points: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     dashSize: Double,
     gapSize: Double,
     dashNb: Double,
-    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
-    updatable: js.UndefOr[scala.Nothing],
-    instance: typings.babylonjs.linesMeshMod.LinesMesh
-  ): typings.babylonjs.linesMeshMod.LinesMesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateDashedLines")
-  @js.native
-  def CreateDashedLines(
-    name: String,
-    points: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    dashSize: Double,
-    gapSize: Double,
-    dashNb: Double,
-    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
+    scene: Unit,
     updatable: Boolean
-  ): typings.babylonjs.linesMeshMod.LinesMesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateDashedLines")
-  @js.native
-  def CreateDashedLines(
+  ): typings.babylonjs.linesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDashedLines")(name.asInstanceOf[js.Any], points.asInstanceOf[js.Any], dashSize.asInstanceOf[js.Any], gapSize.asInstanceOf[js.Any], dashNb.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.linesMeshMod.LinesMesh]
+  inline def CreateDashedLines(
     name: String,
     points: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     dashSize: Double,
     gapSize: Double,
     dashNb: Double,
-    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
+    scene: Unit,
     updatable: Boolean,
     instance: typings.babylonjs.linesMeshMod.LinesMesh
-  ): typings.babylonjs.linesMeshMod.LinesMesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateDashedLines")
-  @js.native
-  def CreateDashedLines(
+  ): typings.babylonjs.linesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDashedLines")(name.asInstanceOf[js.Any], points.asInstanceOf[js.Any], dashSize.asInstanceOf[js.Any], gapSize.asInstanceOf[js.Any], dashNb.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.linesMeshMod.LinesMesh]
+  inline def CreateDashedLines(
+    name: String,
+    points: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    dashSize: Double,
+    gapSize: Double,
+    dashNb: Double,
+    scene: Unit,
+    updatable: Unit,
+    instance: typings.babylonjs.linesMeshMod.LinesMesh
+  ): typings.babylonjs.linesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDashedLines")(name.asInstanceOf[js.Any], points.asInstanceOf[js.Any], dashSize.asInstanceOf[js.Any], gapSize.asInstanceOf[js.Any], dashNb.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.linesMeshMod.LinesMesh]
+  inline def CreateDashedLines(
     name: String,
     points: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     dashSize: Double,
     gapSize: Double,
     dashNb: Double,
     scene: Nullable[typings.babylonjs.sceneMod.Scene]
-  ): typings.babylonjs.linesMeshMod.LinesMesh = js.native
+  ): typings.babylonjs.linesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDashedLines")(name.asInstanceOf[js.Any], points.asInstanceOf[js.Any], dashSize.asInstanceOf[js.Any], gapSize.asInstanceOf[js.Any], dashNb.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.linesMeshMod.LinesMesh]
+  inline def CreateDashedLines(
+    name: String,
+    points: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    dashSize: Double,
+    gapSize: Double,
+    dashNb: Double,
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    updatable: Boolean
+  ): typings.babylonjs.linesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDashedLines")(name.asInstanceOf[js.Any], points.asInstanceOf[js.Any], dashSize.asInstanceOf[js.Any], gapSize.asInstanceOf[js.Any], dashNb.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.linesMeshMod.LinesMesh]
+  inline def CreateDashedLines(
+    name: String,
+    points: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    dashSize: Double,
+    gapSize: Double,
+    dashNb: Double,
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    updatable: Boolean,
+    instance: typings.babylonjs.linesMeshMod.LinesMesh
+  ): typings.babylonjs.linesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDashedLines")(name.asInstanceOf[js.Any], points.asInstanceOf[js.Any], dashSize.asInstanceOf[js.Any], gapSize.asInstanceOf[js.Any], dashNb.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.linesMeshMod.LinesMesh]
+  inline def CreateDashedLines(
+    name: String,
+    points: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    dashSize: Double,
+    gapSize: Double,
+    dashNb: Double,
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    updatable: Unit,
+    instance: typings.babylonjs.linesMeshMod.LinesMesh
+  ): typings.babylonjs.linesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDashedLines")(name.asInstanceOf[js.Any], points.asInstanceOf[js.Any], dashSize.asInstanceOf[js.Any], gapSize.asInstanceOf[js.Any], dashNb.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.linesMeshMod.LinesMesh]
   
   /**
     * Creates a decal mesh.
@@ -364,16 +521,14 @@ object Mesh {
     * @param angle sets the angle to rotate the decal
     * @returns a new Mesh
     */
-  @JSImport("babylonjs", "Mesh.CreateDecal")
-  @js.native
-  def CreateDecal(
+  inline def CreateDecal(
     name: String,
     sourceMesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
     position: typings.babylonjs.mathVectorMod.Vector3,
     normal: typings.babylonjs.mathVectorMod.Vector3,
     size: typings.babylonjs.mathVectorMod.Vector3,
     angle: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDecal")(name.asInstanceOf[js.Any], sourceMesh.asInstanceOf[js.Any], position.asInstanceOf[js.Any], normal.asInstanceOf[js.Any], size.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
   
   /**
     * Creates a plane polygonal mesh.  By default, this is a disc. Please consider using the same method from the MeshBuilder class instead
@@ -385,46 +540,53 @@ object Mesh {
     * @param sideOrientation defines the mesh side orientation (https://doc.babylonjs.com/babylon101/discover_basic_elements#side-orientation)
     * @returns a new Mesh
     */
-  @JSImport("babylonjs", "Mesh.CreateDisc")
-  @js.native
-  def CreateDisc(name: String, radius: Double, tessellation: Double): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateDisc")
-  @js.native
-  def CreateDisc(
+  inline def CreateDisc(name: String, radius: Double, tessellation: Double): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDisc")(name.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateDisc(name: String, radius: Double, tessellation: Double, scene: Unit, updatable: Boolean): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDisc")(name.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateDisc(
     name: String,
     radius: Double,
     tessellation: Double,
-    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateDisc")
-  @js.native
-  def CreateDisc(
-    name: String,
-    radius: Double,
-    tessellation: Double,
-    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
-    updatable: Boolean
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateDisc")
-  @js.native
-  def CreateDisc(
-    name: String,
-    radius: Double,
-    tessellation: Double,
-    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
+    scene: Unit,
     updatable: Boolean,
     sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateDisc")
-  @js.native
-  def CreateDisc(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDisc")(name.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateDisc(
+    name: String,
+    radius: Double,
+    tessellation: Double,
+    scene: Unit,
+    updatable: Unit,
+    sideOrientation: Double
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDisc")(name.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateDisc(
     name: String,
     radius: Double,
     tessellation: Double,
     scene: Nullable[typings.babylonjs.sceneMod.Scene]
-  ): typings.babylonjs.meshMod.Mesh = js.native
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDisc")(name.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateDisc(
+    name: String,
+    radius: Double,
+    tessellation: Double,
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    updatable: Boolean
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDisc")(name.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateDisc(
+    name: String,
+    radius: Double,
+    tessellation: Double,
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    updatable: Boolean,
+    sideOrientation: Double
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDisc")(name.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateDisc(
+    name: String,
+    radius: Double,
+    tessellation: Double,
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    updatable: Unit,
+    sideOrientation: Double
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDisc")(name.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
   
   /**
     * Creates a ground mesh.
@@ -437,38 +599,23 @@ object Mesh {
     * @param updatable defines if the mesh must be flagged as updatable
     * @returns a new Mesh
     */
-  @JSImport("babylonjs", "Mesh.CreateGround")
-  @js.native
-  def CreateGround(name: String, width: Double, height: Double, subdivisions: Double): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateGround")
-  @js.native
-  def CreateGround(
-    name: String,
-    width: Double,
-    height: Double,
-    subdivisions: Double,
-    scene: js.UndefOr[scala.Nothing],
-    updatable: Boolean
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateGround")
-  @js.native
-  def CreateGround(
+  inline def CreateGround(name: String, width: Double, height: Double, subdivisions: Double): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(name.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], subdivisions.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateGround(name: String, width: Double, height: Double, subdivisions: Double, scene: Unit, updatable: Boolean): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(name.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], subdivisions.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateGround(
     name: String,
     width: Double,
     height: Double,
     subdivisions: Double,
     scene: typings.babylonjs.sceneMod.Scene
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateGround")
-  @js.native
-  def CreateGround(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(name.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], subdivisions.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateGround(
     name: String,
     width: Double,
     height: Double,
     subdivisions: Double,
     scene: typings.babylonjs.sceneMod.Scene,
     updatable: Boolean
-  ): typings.babylonjs.meshMod.Mesh = js.native
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(name.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], subdivisions.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
   
   /**
     * Creates a ground mesh from a height map.
@@ -487,9 +634,7 @@ object Mesh {
     * @param alphaFilter will filter any data where the alpha channel is below this value, defaults 0 (all data visible)
     * @returns a new Mesh
     */
-  @JSImport("babylonjs", "Mesh.CreateGroundFromHeightMap")
-  @js.native
-  def CreateGroundFromHeightMap(
+  inline def CreateGroundFromHeightMap(
     name: String,
     url: String,
     width: Double,
@@ -498,54 +643,8 @@ object Mesh {
     minHeight: Double,
     maxHeight: Double,
     scene: typings.babylonjs.sceneMod.Scene
-  ): typings.babylonjs.groundMeshMod.GroundMesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateGroundFromHeightMap")
-  @js.native
-  def CreateGroundFromHeightMap(
-    name: String,
-    url: String,
-    width: Double,
-    height: Double,
-    subdivisions: Double,
-    minHeight: Double,
-    maxHeight: Double,
-    scene: typings.babylonjs.sceneMod.Scene,
-    updatable: js.UndefOr[scala.Nothing],
-    onReady: js.UndefOr[scala.Nothing],
-    alphaFilter: Double
-  ): typings.babylonjs.groundMeshMod.GroundMesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateGroundFromHeightMap")
-  @js.native
-  def CreateGroundFromHeightMap(
-    name: String,
-    url: String,
-    width: Double,
-    height: Double,
-    subdivisions: Double,
-    minHeight: Double,
-    maxHeight: Double,
-    scene: typings.babylonjs.sceneMod.Scene,
-    updatable: js.UndefOr[scala.Nothing],
-    onReady: js.Function1[/* mesh */ typings.babylonjs.groundMeshMod.GroundMesh, Unit]
-  ): typings.babylonjs.groundMeshMod.GroundMesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateGroundFromHeightMap")
-  @js.native
-  def CreateGroundFromHeightMap(
-    name: String,
-    url: String,
-    width: Double,
-    height: Double,
-    subdivisions: Double,
-    minHeight: Double,
-    maxHeight: Double,
-    scene: typings.babylonjs.sceneMod.Scene,
-    updatable: js.UndefOr[scala.Nothing],
-    onReady: js.Function1[/* mesh */ typings.babylonjs.groundMeshMod.GroundMesh, Unit],
-    alphaFilter: Double
-  ): typings.babylonjs.groundMeshMod.GroundMesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateGroundFromHeightMap")
-  @js.native
-  def CreateGroundFromHeightMap(
+  ): typings.babylonjs.groundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], subdivisions.asInstanceOf[js.Any], minHeight.asInstanceOf[js.Any], maxHeight.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.groundMeshMod.GroundMesh]
+  inline def CreateGroundFromHeightMap(
     name: String,
     url: String,
     width: Double,
@@ -555,25 +654,8 @@ object Mesh {
     maxHeight: Double,
     scene: typings.babylonjs.sceneMod.Scene,
     updatable: Boolean
-  ): typings.babylonjs.groundMeshMod.GroundMesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateGroundFromHeightMap")
-  @js.native
-  def CreateGroundFromHeightMap(
-    name: String,
-    url: String,
-    width: Double,
-    height: Double,
-    subdivisions: Double,
-    minHeight: Double,
-    maxHeight: Double,
-    scene: typings.babylonjs.sceneMod.Scene,
-    updatable: Boolean,
-    onReady: js.UndefOr[scala.Nothing],
-    alphaFilter: Double
-  ): typings.babylonjs.groundMeshMod.GroundMesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateGroundFromHeightMap")
-  @js.native
-  def CreateGroundFromHeightMap(
+  ): typings.babylonjs.groundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], subdivisions.asInstanceOf[js.Any], minHeight.asInstanceOf[js.Any], maxHeight.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.groundMeshMod.GroundMesh]
+  inline def CreateGroundFromHeightMap(
     name: String,
     url: String,
     width: Double,
@@ -584,10 +666,8 @@ object Mesh {
     scene: typings.babylonjs.sceneMod.Scene,
     updatable: Boolean,
     onReady: js.Function1[/* mesh */ typings.babylonjs.groundMeshMod.GroundMesh, Unit]
-  ): typings.babylonjs.groundMeshMod.GroundMesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateGroundFromHeightMap")
-  @js.native
-  def CreateGroundFromHeightMap(
+  ): typings.babylonjs.groundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], subdivisions.asInstanceOf[js.Any], minHeight.asInstanceOf[js.Any], maxHeight.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], onReady.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.groundMeshMod.GroundMesh]
+  inline def CreateGroundFromHeightMap(
     name: String,
     url: String,
     width: Double,
@@ -599,7 +679,58 @@ object Mesh {
     updatable: Boolean,
     onReady: js.Function1[/* mesh */ typings.babylonjs.groundMeshMod.GroundMesh, Unit],
     alphaFilter: Double
-  ): typings.babylonjs.groundMeshMod.GroundMesh = js.native
+  ): typings.babylonjs.groundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], subdivisions.asInstanceOf[js.Any], minHeight.asInstanceOf[js.Any], maxHeight.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], onReady.asInstanceOf[js.Any], alphaFilter.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.groundMeshMod.GroundMesh]
+  inline def CreateGroundFromHeightMap(
+    name: String,
+    url: String,
+    width: Double,
+    height: Double,
+    subdivisions: Double,
+    minHeight: Double,
+    maxHeight: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    updatable: Boolean,
+    onReady: Unit,
+    alphaFilter: Double
+  ): typings.babylonjs.groundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], subdivisions.asInstanceOf[js.Any], minHeight.asInstanceOf[js.Any], maxHeight.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], onReady.asInstanceOf[js.Any], alphaFilter.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.groundMeshMod.GroundMesh]
+  inline def CreateGroundFromHeightMap(
+    name: String,
+    url: String,
+    width: Double,
+    height: Double,
+    subdivisions: Double,
+    minHeight: Double,
+    maxHeight: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    updatable: Unit,
+    onReady: js.Function1[/* mesh */ typings.babylonjs.groundMeshMod.GroundMesh, Unit]
+  ): typings.babylonjs.groundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], subdivisions.asInstanceOf[js.Any], minHeight.asInstanceOf[js.Any], maxHeight.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], onReady.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.groundMeshMod.GroundMesh]
+  inline def CreateGroundFromHeightMap(
+    name: String,
+    url: String,
+    width: Double,
+    height: Double,
+    subdivisions: Double,
+    minHeight: Double,
+    maxHeight: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    updatable: Unit,
+    onReady: js.Function1[/* mesh */ typings.babylonjs.groundMeshMod.GroundMesh, Unit],
+    alphaFilter: Double
+  ): typings.babylonjs.groundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], subdivisions.asInstanceOf[js.Any], minHeight.asInstanceOf[js.Any], maxHeight.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], onReady.asInstanceOf[js.Any], alphaFilter.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.groundMeshMod.GroundMesh]
+  inline def CreateGroundFromHeightMap(
+    name: String,
+    url: String,
+    width: Double,
+    height: Double,
+    subdivisions: Double,
+    minHeight: Double,
+    maxHeight: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    updatable: Unit,
+    onReady: Unit,
+    alphaFilter: Double
+  ): typings.babylonjs.groundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], subdivisions.asInstanceOf[js.Any], minHeight.asInstanceOf[js.Any], maxHeight.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], onReady.asInstanceOf[js.Any], alphaFilter.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.groundMeshMod.GroundMesh]
   
   /**
     * Creates a hemisphere mesh. Please consider using the same method from the MeshBuilder class instead
@@ -609,12 +740,8 @@ object Mesh {
     * @param scene defines the hosting scene
     * @returns a new Mesh
     */
-  @JSImport("babylonjs", "Mesh.CreateHemisphere")
-  @js.native
-  def CreateHemisphere(name: String, segments: Double, diameter: Double): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateHemisphere")
-  @js.native
-  def CreateHemisphere(name: String, segments: Double, diameter: Double, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshMod.Mesh = js.native
+  inline def CreateHemisphere(name: String, segments: Double, diameter: Double): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateHemisphere")(name.asInstanceOf[js.Any], segments.asInstanceOf[js.Any], diameter.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateHemisphere(name: String, segments: Double, diameter: Double, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateHemisphere")(name.asInstanceOf[js.Any], segments.asInstanceOf[js.Any], diameter.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
   
   /**
     * Creates a sphere based upon an icosahedron with 20 triangular faces which can be subdivided
@@ -631,9 +758,7 @@ object Mesh {
     * @returns a new Mesh
     * @see https://doc.babylonjs.com/how_to/polyhedra_shapes#icosphere
     */
-  @JSImport("babylonjs", "Mesh.CreateIcoSphere")
-  @js.native
-  def CreateIcoSphere(name: String, options: Flat, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshMod.Mesh = js.native
+  inline def CreateIcoSphere(name: String, options: Flat, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateIcoSphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
   
   /**
     * Creates lathe mesh.
@@ -648,39 +773,22 @@ object Mesh {
     * @param sideOrientation defines the mesh side orientation (https://doc.babylonjs.com/babylon101/discover_basic_elements#side-orientation)
     * @returns a new Mesh
     */
-  @JSImport("babylonjs", "Mesh.CreateLathe")
-  @js.native
-  def CreateLathe(
+  inline def CreateLathe(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     radius: Double,
     tessellation: Double,
     scene: typings.babylonjs.sceneMod.Scene
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateLathe")
-  @js.native
-  def CreateLathe(
-    name: String,
-    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    radius: Double,
-    tessellation: Double,
-    scene: typings.babylonjs.sceneMod.Scene,
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateLathe")
-  @js.native
-  def CreateLathe(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLathe")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateLathe(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     radius: Double,
     tessellation: Double,
     scene: typings.babylonjs.sceneMod.Scene,
     updatable: Boolean
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateLathe")
-  @js.native
-  def CreateLathe(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLathe")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateLathe(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     radius: Double,
@@ -688,7 +796,16 @@ object Mesh {
     scene: typings.babylonjs.sceneMod.Scene,
     updatable: Boolean,
     sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLathe")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateLathe(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    radius: Double,
+    tessellation: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    updatable: Unit,
+    sideOrientation: Double
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLathe")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
   
   /**
     * Creates a line mesh. Please consider using the same method from the MeshBuilder class instead.
@@ -699,42 +816,52 @@ object Mesh {
     * @param instance is an instance of an existing LineMesh object to be updated with the passed `points` parameter (https://doc.babylonjs.com/how_to/How_to_dynamically_morph_a_mesh#lines-and-dashedlines).
     * @returns a new Mesh
     */
-  @JSImport("babylonjs", "Mesh.CreateLines")
-  @js.native
-  def CreateLines(name: String, points: js.Array[typings.babylonjs.mathVectorMod.Vector3]): typings.babylonjs.linesMeshMod.LinesMesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateLines")
-  @js.native
-  def CreateLines(
+  inline def CreateLines(name: String, points: js.Array[typings.babylonjs.mathVectorMod.Vector3]): typings.babylonjs.linesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLines")(name.asInstanceOf[js.Any], points.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.linesMeshMod.LinesMesh]
+  inline def CreateLines(
     name: String,
     points: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
-    updatable: js.UndefOr[scala.Nothing],
-    instance: Nullable[typings.babylonjs.linesMeshMod.LinesMesh]
-  ): typings.babylonjs.linesMeshMod.LinesMesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateLines")
-  @js.native
-  def CreateLines(
-    name: String,
-    points: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
+    scene: Unit,
     updatable: Boolean
-  ): typings.babylonjs.linesMeshMod.LinesMesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateLines")
-  @js.native
-  def CreateLines(
+  ): typings.babylonjs.linesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLines")(name.asInstanceOf[js.Any], points.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.linesMeshMod.LinesMesh]
+  inline def CreateLines(
     name: String,
     points: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
+    scene: Unit,
     updatable: Boolean,
     instance: Nullable[typings.babylonjs.linesMeshMod.LinesMesh]
-  ): typings.babylonjs.linesMeshMod.LinesMesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateLines")
-  @js.native
-  def CreateLines(
+  ): typings.babylonjs.linesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLines")(name.asInstanceOf[js.Any], points.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.linesMeshMod.LinesMesh]
+  inline def CreateLines(
+    name: String,
+    points: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    scene: Unit,
+    updatable: Unit,
+    instance: Nullable[typings.babylonjs.linesMeshMod.LinesMesh]
+  ): typings.babylonjs.linesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLines")(name.asInstanceOf[js.Any], points.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.linesMeshMod.LinesMesh]
+  inline def CreateLines(
     name: String,
     points: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     scene: Nullable[typings.babylonjs.sceneMod.Scene]
-  ): typings.babylonjs.linesMeshMod.LinesMesh = js.native
+  ): typings.babylonjs.linesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLines")(name.asInstanceOf[js.Any], points.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.linesMeshMod.LinesMesh]
+  inline def CreateLines(
+    name: String,
+    points: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    updatable: Boolean
+  ): typings.babylonjs.linesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLines")(name.asInstanceOf[js.Any], points.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.linesMeshMod.LinesMesh]
+  inline def CreateLines(
+    name: String,
+    points: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    updatable: Boolean,
+    instance: Nullable[typings.babylonjs.linesMeshMod.LinesMesh]
+  ): typings.babylonjs.linesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLines")(name.asInstanceOf[js.Any], points.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.linesMeshMod.LinesMesh]
+  inline def CreateLines(
+    name: String,
+    points: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    updatable: Unit,
+    instance: Nullable[typings.babylonjs.linesMeshMod.LinesMesh]
+  ): typings.babylonjs.linesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLines")(name.asInstanceOf[js.Any], points.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.linesMeshMod.LinesMesh]
   
   /**
     * Creates a plane mesh. Please consider using the same method from the MeshBuilder class instead
@@ -745,30 +872,22 @@ object Mesh {
     * @param sideOrientation defines the mesh side orientation (https://doc.babylonjs.com/babylon101/discover_basic_elements#side-orientation)
     * @returns a new Mesh
     */
-  @JSImport("babylonjs", "Mesh.CreatePlane")
-  @js.native
-  def CreatePlane(name: String, size: Double, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreatePlane")
-  @js.native
-  def CreatePlane(
-    name: String,
-    size: Double,
-    scene: typings.babylonjs.sceneMod.Scene,
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreatePlane")
-  @js.native
-  def CreatePlane(name: String, size: Double, scene: typings.babylonjs.sceneMod.Scene, updatable: Boolean): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreatePlane")
-  @js.native
-  def CreatePlane(
+  inline def CreatePlane(name: String, size: Double, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePlane")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreatePlane(name: String, size: Double, scene: typings.babylonjs.sceneMod.Scene, updatable: Boolean): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePlane")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreatePlane(
     name: String,
     size: Double,
     scene: typings.babylonjs.sceneMod.Scene,
     updatable: Boolean,
     sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePlane")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreatePlane(
+    name: String,
+    size: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    updatable: Unit,
+    sideOrientation: Double
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePlane")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
   
   /**
     * Creates a polygon mesh.Please consider using the same method from the MeshBuilder class instead
@@ -787,159 +906,33 @@ object Mesh {
     * @param earcutInjection can be used to inject your own earcut reference
     * @returns a new Mesh
     */
-  @JSImport("babylonjs", "Mesh.CreatePolygon")
-  @js.native
-  def CreatePolygon(
+  inline def CreatePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     scene: typings.babylonjs.sceneMod.Scene
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreatePolygon")
-  @js.native
-  def CreatePolygon(
-    name: String,
-    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    scene: typings.babylonjs.sceneMod.Scene,
-    holes: js.UndefOr[scala.Nothing],
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: js.UndefOr[scala.Nothing],
-    earcutInjection: js.Any
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreatePolygon")
-  @js.native
-  def CreatePolygon(
-    name: String,
-    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    scene: typings.babylonjs.sceneMod.Scene,
-    holes: js.UndefOr[scala.Nothing],
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreatePolygon")
-  @js.native
-  def CreatePolygon(
-    name: String,
-    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    scene: typings.babylonjs.sceneMod.Scene,
-    holes: js.UndefOr[scala.Nothing],
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: Double,
-    earcutInjection: js.Any
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreatePolygon")
-  @js.native
-  def CreatePolygon(
-    name: String,
-    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    scene: typings.babylonjs.sceneMod.Scene,
-    holes: js.UndefOr[scala.Nothing],
-    updatable: Boolean
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreatePolygon")
-  @js.native
-  def CreatePolygon(
-    name: String,
-    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    scene: typings.babylonjs.sceneMod.Scene,
-    holes: js.UndefOr[scala.Nothing],
-    updatable: Boolean,
-    sideOrientation: js.UndefOr[scala.Nothing],
-    earcutInjection: js.Any
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreatePolygon")
-  @js.native
-  def CreatePolygon(
-    name: String,
-    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    scene: typings.babylonjs.sceneMod.Scene,
-    holes: js.UndefOr[scala.Nothing],
-    updatable: Boolean,
-    sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreatePolygon")
-  @js.native
-  def CreatePolygon(
-    name: String,
-    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    scene: typings.babylonjs.sceneMod.Scene,
-    holes: js.UndefOr[scala.Nothing],
-    updatable: Boolean,
-    sideOrientation: Double,
-    earcutInjection: js.Any
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreatePolygon")
-  @js.native
-  def CreatePolygon(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreatePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     scene: typings.babylonjs.sceneMod.Scene,
     holes: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]]
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreatePolygon")
-  @js.native
-  def CreatePolygon(
-    name: String,
-    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    scene: typings.babylonjs.sceneMod.Scene,
-    holes: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: js.UndefOr[scala.Nothing],
-    earcutInjection: js.Any
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreatePolygon")
-  @js.native
-  def CreatePolygon(
-    name: String,
-    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    scene: typings.babylonjs.sceneMod.Scene,
-    holes: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreatePolygon")
-  @js.native
-  def CreatePolygon(
-    name: String,
-    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    scene: typings.babylonjs.sceneMod.Scene,
-    holes: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: Double,
-    earcutInjection: js.Any
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreatePolygon")
-  @js.native
-  def CreatePolygon(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], holes.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreatePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     scene: typings.babylonjs.sceneMod.Scene,
     holes: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
     updatable: Boolean
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreatePolygon")
-  @js.native
-  def CreatePolygon(
-    name: String,
-    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    scene: typings.babylonjs.sceneMod.Scene,
-    holes: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
-    updatable: Boolean,
-    sideOrientation: js.UndefOr[scala.Nothing],
-    earcutInjection: js.Any
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreatePolygon")
-  @js.native
-  def CreatePolygon(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreatePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     scene: typings.babylonjs.sceneMod.Scene,
     holes: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
     updatable: Boolean,
     sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreatePolygon")
-  @js.native
-  def CreatePolygon(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreatePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     scene: typings.babylonjs.sceneMod.Scene,
@@ -947,7 +940,101 @@ object Mesh {
     updatable: Boolean,
     sideOrientation: Double,
     earcutInjection: js.Any
-  ): typings.babylonjs.meshMod.Mesh = js.native
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreatePolygon(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    scene: typings.babylonjs.sceneMod.Scene,
+    holes: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
+    updatable: Boolean,
+    sideOrientation: Unit,
+    earcutInjection: js.Any
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreatePolygon(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    scene: typings.babylonjs.sceneMod.Scene,
+    holes: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
+    updatable: Unit,
+    sideOrientation: Double
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreatePolygon(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    scene: typings.babylonjs.sceneMod.Scene,
+    holes: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
+    updatable: Unit,
+    sideOrientation: Double,
+    earcutInjection: js.Any
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreatePolygon(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    scene: typings.babylonjs.sceneMod.Scene,
+    holes: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
+    updatable: Unit,
+    sideOrientation: Unit,
+    earcutInjection: js.Any
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreatePolygon(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    scene: typings.babylonjs.sceneMod.Scene,
+    holes: Unit,
+    updatable: Boolean
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreatePolygon(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    scene: typings.babylonjs.sceneMod.Scene,
+    holes: Unit,
+    updatable: Boolean,
+    sideOrientation: Double
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreatePolygon(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    scene: typings.babylonjs.sceneMod.Scene,
+    holes: Unit,
+    updatable: Boolean,
+    sideOrientation: Double,
+    earcutInjection: js.Any
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreatePolygon(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    scene: typings.babylonjs.sceneMod.Scene,
+    holes: Unit,
+    updatable: Boolean,
+    sideOrientation: Unit,
+    earcutInjection: js.Any
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreatePolygon(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    scene: typings.babylonjs.sceneMod.Scene,
+    holes: Unit,
+    updatable: Unit,
+    sideOrientation: Double
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreatePolygon(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    scene: typings.babylonjs.sceneMod.Scene,
+    holes: Unit,
+    updatable: Unit,
+    sideOrientation: Double,
+    earcutInjection: js.Any
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreatePolygon(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    scene: typings.babylonjs.sceneMod.Scene,
+    holes: Unit,
+    updatable: Unit,
+    sideOrientation: Unit,
+    earcutInjection: js.Any
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
   
   /**
     * Creates a polyhedron mesh.
@@ -968,9 +1055,7 @@ object Mesh {
     * @param scene defines the hosting scene
     * @returns a new Mesh
     */
-  @JSImport("babylonjs", "Mesh.CreatePolyhedron")
-  @js.native
-  def CreatePolyhedron(name: String, options: Custom, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshMod.Mesh = js.native
+  inline def CreatePolyhedron(name: String, options: Custom, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
   
   /**
     * Creates a ribbon mesh. Please consider using the same method from the MeshBuilder class instead
@@ -986,153 +1071,95 @@ object Mesh {
     * @param instance defines an instance of an existing Ribbon object to be updated with the passed `pathArray` parameter (https://doc.babylonjs.com/how_to/How_to_dynamically_morph_a_mesh#ribbon)
     * @returns a new Mesh
     */
-  @JSImport("babylonjs", "Mesh.CreateRibbon")
-  @js.native
-  def CreateRibbon(
+  inline def CreateRibbon(
     name: String,
     pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
     closeArray: Boolean,
     closePath: Boolean,
     offset: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateRibbon")
-  @js.native
-  def CreateRibbon(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbon")(name.asInstanceOf[js.Any], pathArray.asInstanceOf[js.Any], closeArray.asInstanceOf[js.Any], closePath.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateRibbon(
     name: String,
     pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
     closeArray: Boolean,
     closePath: Boolean,
     offset: Double,
-    scene: js.UndefOr[scala.Nothing],
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: js.UndefOr[scala.Nothing],
-    instance: typings.babylonjs.meshMod.Mesh
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateRibbon")
-  @js.native
-  def CreateRibbon(
-    name: String,
-    pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
-    closeArray: Boolean,
-    closePath: Boolean,
-    offset: Double,
-    scene: js.UndefOr[scala.Nothing],
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateRibbon")
-  @js.native
-  def CreateRibbon(
-    name: String,
-    pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
-    closeArray: Boolean,
-    closePath: Boolean,
-    offset: Double,
-    scene: js.UndefOr[scala.Nothing],
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: Double,
-    instance: typings.babylonjs.meshMod.Mesh
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateRibbon")
-  @js.native
-  def CreateRibbon(
-    name: String,
-    pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
-    closeArray: Boolean,
-    closePath: Boolean,
-    offset: Double,
-    scene: js.UndefOr[scala.Nothing],
+    scene: Unit,
     updatable: Boolean
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateRibbon")
-  @js.native
-  def CreateRibbon(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbon")(name.asInstanceOf[js.Any], pathArray.asInstanceOf[js.Any], closeArray.asInstanceOf[js.Any], closePath.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateRibbon(
     name: String,
     pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
     closeArray: Boolean,
     closePath: Boolean,
     offset: Double,
-    scene: js.UndefOr[scala.Nothing],
-    updatable: Boolean,
-    sideOrientation: js.UndefOr[scala.Nothing],
-    instance: typings.babylonjs.meshMod.Mesh
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateRibbon")
-  @js.native
-  def CreateRibbon(
-    name: String,
-    pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
-    closeArray: Boolean,
-    closePath: Boolean,
-    offset: Double,
-    scene: js.UndefOr[scala.Nothing],
+    scene: Unit,
     updatable: Boolean,
     sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateRibbon")
-  @js.native
-  def CreateRibbon(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbon")(name.asInstanceOf[js.Any], pathArray.asInstanceOf[js.Any], closeArray.asInstanceOf[js.Any], closePath.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateRibbon(
     name: String,
     pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
     closeArray: Boolean,
     closePath: Boolean,
     offset: Double,
-    scene: js.UndefOr[scala.Nothing],
+    scene: Unit,
     updatable: Boolean,
     sideOrientation: Double,
     instance: typings.babylonjs.meshMod.Mesh
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateRibbon")
-  @js.native
-  def CreateRibbon(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbon")(name.asInstanceOf[js.Any], pathArray.asInstanceOf[js.Any], closeArray.asInstanceOf[js.Any], closePath.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateRibbon(
+    name: String,
+    pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
+    closeArray: Boolean,
+    closePath: Boolean,
+    offset: Double,
+    scene: Unit,
+    updatable: Boolean,
+    sideOrientation: Unit,
+    instance: typings.babylonjs.meshMod.Mesh
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbon")(name.asInstanceOf[js.Any], pathArray.asInstanceOf[js.Any], closeArray.asInstanceOf[js.Any], closePath.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateRibbon(
+    name: String,
+    pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
+    closeArray: Boolean,
+    closePath: Boolean,
+    offset: Double,
+    scene: Unit,
+    updatable: Unit,
+    sideOrientation: Double
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbon")(name.asInstanceOf[js.Any], pathArray.asInstanceOf[js.Any], closeArray.asInstanceOf[js.Any], closePath.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateRibbon(
+    name: String,
+    pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
+    closeArray: Boolean,
+    closePath: Boolean,
+    offset: Double,
+    scene: Unit,
+    updatable: Unit,
+    sideOrientation: Double,
+    instance: typings.babylonjs.meshMod.Mesh
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbon")(name.asInstanceOf[js.Any], pathArray.asInstanceOf[js.Any], closeArray.asInstanceOf[js.Any], closePath.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateRibbon(
+    name: String,
+    pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
+    closeArray: Boolean,
+    closePath: Boolean,
+    offset: Double,
+    scene: Unit,
+    updatable: Unit,
+    sideOrientation: Unit,
+    instance: typings.babylonjs.meshMod.Mesh
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbon")(name.asInstanceOf[js.Any], pathArray.asInstanceOf[js.Any], closeArray.asInstanceOf[js.Any], closePath.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateRibbon(
     name: String,
     pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
     closeArray: Boolean,
     closePath: Boolean,
     offset: Double,
     scene: typings.babylonjs.sceneMod.Scene
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateRibbon")
-  @js.native
-  def CreateRibbon(
-    name: String,
-    pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
-    closeArray: Boolean,
-    closePath: Boolean,
-    offset: Double,
-    scene: typings.babylonjs.sceneMod.Scene,
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: js.UndefOr[scala.Nothing],
-    instance: typings.babylonjs.meshMod.Mesh
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateRibbon")
-  @js.native
-  def CreateRibbon(
-    name: String,
-    pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
-    closeArray: Boolean,
-    closePath: Boolean,
-    offset: Double,
-    scene: typings.babylonjs.sceneMod.Scene,
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateRibbon")
-  @js.native
-  def CreateRibbon(
-    name: String,
-    pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
-    closeArray: Boolean,
-    closePath: Boolean,
-    offset: Double,
-    scene: typings.babylonjs.sceneMod.Scene,
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: Double,
-    instance: typings.babylonjs.meshMod.Mesh
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateRibbon")
-  @js.native
-  def CreateRibbon(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbon")(name.asInstanceOf[js.Any], pathArray.asInstanceOf[js.Any], closeArray.asInstanceOf[js.Any], closePath.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateRibbon(
     name: String,
     pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
     closeArray: Boolean,
@@ -1140,23 +1167,8 @@ object Mesh {
     offset: Double,
     scene: typings.babylonjs.sceneMod.Scene,
     updatable: Boolean
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateRibbon")
-  @js.native
-  def CreateRibbon(
-    name: String,
-    pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
-    closeArray: Boolean,
-    closePath: Boolean,
-    offset: Double,
-    scene: typings.babylonjs.sceneMod.Scene,
-    updatable: Boolean,
-    sideOrientation: js.UndefOr[scala.Nothing],
-    instance: typings.babylonjs.meshMod.Mesh
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateRibbon")
-  @js.native
-  def CreateRibbon(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbon")(name.asInstanceOf[js.Any], pathArray.asInstanceOf[js.Any], closeArray.asInstanceOf[js.Any], closePath.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateRibbon(
     name: String,
     pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
     closeArray: Boolean,
@@ -1165,10 +1177,8 @@ object Mesh {
     scene: typings.babylonjs.sceneMod.Scene,
     updatable: Boolean,
     sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateRibbon")
-  @js.native
-  def CreateRibbon(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbon")(name.asInstanceOf[js.Any], pathArray.asInstanceOf[js.Any], closeArray.asInstanceOf[js.Any], closePath.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateRibbon(
     name: String,
     pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
     closeArray: Boolean,
@@ -1178,7 +1188,50 @@ object Mesh {
     updatable: Boolean,
     sideOrientation: Double,
     instance: typings.babylonjs.meshMod.Mesh
-  ): typings.babylonjs.meshMod.Mesh = js.native
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbon")(name.asInstanceOf[js.Any], pathArray.asInstanceOf[js.Any], closeArray.asInstanceOf[js.Any], closePath.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateRibbon(
+    name: String,
+    pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
+    closeArray: Boolean,
+    closePath: Boolean,
+    offset: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    updatable: Boolean,
+    sideOrientation: Unit,
+    instance: typings.babylonjs.meshMod.Mesh
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbon")(name.asInstanceOf[js.Any], pathArray.asInstanceOf[js.Any], closeArray.asInstanceOf[js.Any], closePath.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateRibbon(
+    name: String,
+    pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
+    closeArray: Boolean,
+    closePath: Boolean,
+    offset: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    updatable: Unit,
+    sideOrientation: Double
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbon")(name.asInstanceOf[js.Any], pathArray.asInstanceOf[js.Any], closeArray.asInstanceOf[js.Any], closePath.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateRibbon(
+    name: String,
+    pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
+    closeArray: Boolean,
+    closePath: Boolean,
+    offset: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    updatable: Unit,
+    sideOrientation: Double,
+    instance: typings.babylonjs.meshMod.Mesh
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbon")(name.asInstanceOf[js.Any], pathArray.asInstanceOf[js.Any], closeArray.asInstanceOf[js.Any], closePath.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateRibbon(
+    name: String,
+    pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
+    closeArray: Boolean,
+    closePath: Boolean,
+    offset: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    updatable: Unit,
+    sideOrientation: Unit,
+    instance: typings.babylonjs.meshMod.Mesh
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbon")(name.asInstanceOf[js.Any], pathArray.asInstanceOf[js.Any], closeArray.asInstanceOf[js.Any], closePath.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
   
   /**
     * Creates a sphere mesh. Please consider using the same method from the MeshBuilder class instead
@@ -1190,70 +1243,48 @@ object Mesh {
     * @param sideOrientation defines the mesh side orientation (https://doc.babylonjs.com/babylon101/discover_basic_elements#side-orientation)
     * @returns a new Mesh
     */
-  @JSImport("babylonjs", "Mesh.CreateSphere")
-  @js.native
-  def CreateSphere(name: String, segments: Double, diameter: Double): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateSphere")
-  @js.native
-  def CreateSphere(
+  inline def CreateSphere(name: String, segments: Double, diameter: Double): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateSphere")(name.asInstanceOf[js.Any], segments.asInstanceOf[js.Any], diameter.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateSphere(name: String, segments: Double, diameter: Double, scene: Unit, updatable: Boolean): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateSphere")(name.asInstanceOf[js.Any], segments.asInstanceOf[js.Any], diameter.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateSphere(
     name: String,
     segments: Double,
     diameter: Double,
-    scene: js.UndefOr[scala.Nothing],
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateSphere")
-  @js.native
-  def CreateSphere(
-    name: String,
-    segments: Double,
-    diameter: Double,
-    scene: js.UndefOr[scala.Nothing],
-    updatable: Boolean
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateSphere")
-  @js.native
-  def CreateSphere(
-    name: String,
-    segments: Double,
-    diameter: Double,
-    scene: js.UndefOr[scala.Nothing],
+    scene: Unit,
     updatable: Boolean,
     sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateSphere")
-  @js.native
-  def CreateSphere(name: String, segments: Double, diameter: Double, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateSphere")
-  @js.native
-  def CreateSphere(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateSphere")(name.asInstanceOf[js.Any], segments.asInstanceOf[js.Any], diameter.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateSphere(
     name: String,
     segments: Double,
     diameter: Double,
-    scene: typings.babylonjs.sceneMod.Scene,
-    updatable: js.UndefOr[scala.Nothing],
+    scene: Unit,
+    updatable: Unit,
     sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateSphere")
-  @js.native
-  def CreateSphere(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateSphere")(name.asInstanceOf[js.Any], segments.asInstanceOf[js.Any], diameter.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateSphere(name: String, segments: Double, diameter: Double, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateSphere")(name.asInstanceOf[js.Any], segments.asInstanceOf[js.Any], diameter.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateSphere(
     name: String,
     segments: Double,
     diameter: Double,
     scene: typings.babylonjs.sceneMod.Scene,
     updatable: Boolean
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateSphere")
-  @js.native
-  def CreateSphere(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateSphere")(name.asInstanceOf[js.Any], segments.asInstanceOf[js.Any], diameter.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateSphere(
     name: String,
     segments: Double,
     diameter: Double,
     scene: typings.babylonjs.sceneMod.Scene,
     updatable: Boolean,
     sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateSphere")(name.asInstanceOf[js.Any], segments.asInstanceOf[js.Any], diameter.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateSphere(
+    name: String,
+    segments: Double,
+    diameter: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    updatable: Unit,
+    sideOrientation: Double
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateSphere")(name.asInstanceOf[js.Any], segments.asInstanceOf[js.Any], diameter.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
   
   /**
     * Creates a tiled ground mesh.
@@ -1269,9 +1300,7 @@ object Mesh {
     * @param updatable defines if the mesh must be flagged as updatable
     * @returns a new Mesh
     */
-  @JSImport("babylonjs", "Mesh.CreateTiledGround")
-  @js.native
-  def CreateTiledGround(
+  inline def CreateTiledGround(
     name: String,
     xmin: Double,
     zmin: Double,
@@ -1280,10 +1309,8 @@ object Mesh {
     subdivisions: H,
     precision: H,
     scene: typings.babylonjs.sceneMod.Scene
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateTiledGround")
-  @js.native
-  def CreateTiledGround(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledGround")(name.asInstanceOf[js.Any], xmin.asInstanceOf[js.Any], zmin.asInstanceOf[js.Any], xmax.asInstanceOf[js.Any], zmax.asInstanceOf[js.Any], subdivisions.asInstanceOf[js.Any], precision.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateTiledGround(
     name: String,
     xmin: Double,
     zmin: Double,
@@ -1293,7 +1320,7 @@ object Mesh {
     precision: H,
     scene: typings.babylonjs.sceneMod.Scene,
     updatable: Boolean
-  ): typings.babylonjs.meshMod.Mesh = js.native
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledGround")(name.asInstanceOf[js.Any], xmin.asInstanceOf[js.Any], zmin.asInstanceOf[js.Any], xmax.asInstanceOf[js.Any], zmax.asInstanceOf[js.Any], subdivisions.asInstanceOf[js.Any], precision.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
   
   /**
     * Creates a torus mesh. Please consider using the same method from the MeshBuilder class instead
@@ -1306,74 +1333,49 @@ object Mesh {
     * @param sideOrientation defines the mesh side orientation (https://doc.babylonjs.com/babylon101/discover_basic_elements#side-orientation)
     * @returns a new Mesh
     */
-  @JSImport("babylonjs", "Mesh.CreateTorus")
-  @js.native
-  def CreateTorus(name: String, diameter: Double, thickness: Double, tessellation: Double): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateTorus")
-  @js.native
-  def CreateTorus(
+  inline def CreateTorus(name: String, diameter: Double, thickness: Double, tessellation: Double): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any], diameter.asInstanceOf[js.Any], thickness.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateTorus(
     name: String,
     diameter: Double,
     thickness: Double,
     tessellation: Double,
-    scene: js.UndefOr[scala.Nothing],
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateTorus")
-  @js.native
-  def CreateTorus(
-    name: String,
-    diameter: Double,
-    thickness: Double,
-    tessellation: Double,
-    scene: js.UndefOr[scala.Nothing],
+    scene: Unit,
     updatable: Boolean
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateTorus")
-  @js.native
-  def CreateTorus(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any], diameter.asInstanceOf[js.Any], thickness.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateTorus(
     name: String,
     diameter: Double,
     thickness: Double,
     tessellation: Double,
-    scene: js.UndefOr[scala.Nothing],
+    scene: Unit,
     updatable: Boolean,
     sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateTorus")
-  @js.native
-  def CreateTorus(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any], diameter.asInstanceOf[js.Any], thickness.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateTorus(
+    name: String,
+    diameter: Double,
+    thickness: Double,
+    tessellation: Double,
+    scene: Unit,
+    updatable: Unit,
+    sideOrientation: Double
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any], diameter.asInstanceOf[js.Any], thickness.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateTorus(
     name: String,
     diameter: Double,
     thickness: Double,
     tessellation: Double,
     scene: typings.babylonjs.sceneMod.Scene
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateTorus")
-  @js.native
-  def CreateTorus(
-    name: String,
-    diameter: Double,
-    thickness: Double,
-    tessellation: Double,
-    scene: typings.babylonjs.sceneMod.Scene,
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateTorus")
-  @js.native
-  def CreateTorus(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any], diameter.asInstanceOf[js.Any], thickness.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateTorus(
     name: String,
     diameter: Double,
     thickness: Double,
     tessellation: Double,
     scene: typings.babylonjs.sceneMod.Scene,
     updatable: Boolean
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateTorus")
-  @js.native
-  def CreateTorus(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any], diameter.asInstanceOf[js.Any], thickness.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateTorus(
     name: String,
     diameter: Double,
     thickness: Double,
@@ -1381,7 +1383,16 @@ object Mesh {
     scene: typings.babylonjs.sceneMod.Scene,
     updatable: Boolean,
     sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any], diameter.asInstanceOf[js.Any], thickness.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateTorus(
+    name: String,
+    diameter: Double,
+    thickness: Double,
+    tessellation: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    updatable: Unit,
+    sideOrientation: Double
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any], diameter.asInstanceOf[js.Any], thickness.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
   
   /**
     * Creates a torus knot mesh. Please consider using the same method from the MeshBuilder class instead
@@ -1397,9 +1408,7 @@ object Mesh {
     * @param sideOrientation defines the mesh side orientation (https://doc.babylonjs.com/babylon101/discover_basic_elements#side-orientation)
     * @returns a new Mesh
     */
-  @JSImport("babylonjs", "Mesh.CreateTorusKnot")
-  @js.native
-  def CreateTorusKnot(
+  inline def CreateTorusKnot(
     name: String,
     radius: Double,
     tube: Double,
@@ -1407,10 +1416,8 @@ object Mesh {
     tubularSegments: Double,
     p: Double,
     q: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateTorusKnot")
-  @js.native
-  def CreateTorusKnot(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(name.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], tube.asInstanceOf[js.Any], radialSegments.asInstanceOf[js.Any], tubularSegments.asInstanceOf[js.Any], p.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateTorusKnot(
     name: String,
     radius: Double,
     tube: Double,
@@ -1418,26 +1425,10 @@ object Mesh {
     tubularSegments: Double,
     p: Double,
     q: Double,
-    scene: js.UndefOr[scala.Nothing],
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateTorusKnot")
-  @js.native
-  def CreateTorusKnot(
-    name: String,
-    radius: Double,
-    tube: Double,
-    radialSegments: Double,
-    tubularSegments: Double,
-    p: Double,
-    q: Double,
-    scene: js.UndefOr[scala.Nothing],
+    scene: Unit,
     updatable: Boolean
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateTorusKnot")
-  @js.native
-  def CreateTorusKnot(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(name.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], tube.asInstanceOf[js.Any], radialSegments.asInstanceOf[js.Any], tubularSegments.asInstanceOf[js.Any], p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateTorusKnot(
     name: String,
     radius: Double,
     tube: Double,
@@ -1445,13 +1436,23 @@ object Mesh {
     tubularSegments: Double,
     p: Double,
     q: Double,
-    scene: js.UndefOr[scala.Nothing],
+    scene: Unit,
     updatable: Boolean,
     sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateTorusKnot")
-  @js.native
-  def CreateTorusKnot(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(name.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], tube.asInstanceOf[js.Any], radialSegments.asInstanceOf[js.Any], tubularSegments.asInstanceOf[js.Any], p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateTorusKnot(
+    name: String,
+    radius: Double,
+    tube: Double,
+    radialSegments: Double,
+    tubularSegments: Double,
+    p: Double,
+    q: Double,
+    scene: Unit,
+    updatable: Unit,
+    sideOrientation: Double
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(name.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], tube.asInstanceOf[js.Any], radialSegments.asInstanceOf[js.Any], tubularSegments.asInstanceOf[js.Any], p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateTorusKnot(
     name: String,
     radius: Double,
     tube: Double,
@@ -1460,24 +1461,8 @@ object Mesh {
     p: Double,
     q: Double,
     scene: typings.babylonjs.sceneMod.Scene
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateTorusKnot")
-  @js.native
-  def CreateTorusKnot(
-    name: String,
-    radius: Double,
-    tube: Double,
-    radialSegments: Double,
-    tubularSegments: Double,
-    p: Double,
-    q: Double,
-    scene: typings.babylonjs.sceneMod.Scene,
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateTorusKnot")
-  @js.native
-  def CreateTorusKnot(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(name.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], tube.asInstanceOf[js.Any], radialSegments.asInstanceOf[js.Any], tubularSegments.asInstanceOf[js.Any], p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateTorusKnot(
     name: String,
     radius: Double,
     tube: Double,
@@ -1487,10 +1472,8 @@ object Mesh {
     q: Double,
     scene: typings.babylonjs.sceneMod.Scene,
     updatable: Boolean
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateTorusKnot")
-  @js.native
-  def CreateTorusKnot(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(name.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], tube.asInstanceOf[js.Any], radialSegments.asInstanceOf[js.Any], tubularSegments.asInstanceOf[js.Any], p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateTorusKnot(
     name: String,
     radius: Double,
     tube: Double,
@@ -1501,7 +1484,19 @@ object Mesh {
     scene: typings.babylonjs.sceneMod.Scene,
     updatable: Boolean,
     sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(name.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], tube.asInstanceOf[js.Any], radialSegments.asInstanceOf[js.Any], tubularSegments.asInstanceOf[js.Any], p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateTorusKnot(
+    name: String,
+    radius: Double,
+    tube: Double,
+    radialSegments: Double,
+    tubularSegments: Double,
+    p: Double,
+    q: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    updatable: Unit,
+    sideOrientation: Double
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(name.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], tube.asInstanceOf[js.Any], radialSegments.asInstanceOf[js.Any], tubularSegments.asInstanceOf[js.Any], p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
   
   /**
     * Creates a tube mesh.
@@ -1521,9 +1516,7 @@ object Mesh {
     * @param instance is an instance of an existing Tube object to be updated with the passed `pathArray` parameter (https://doc.babylonjs.com/how_to/How_to_dynamically_morph_a_mesh#tube)
     * @returns a new Mesh
     */
-  @JSImport("babylonjs", "Mesh.CreateTube")
-  @js.native
-  def CreateTube(
+  inline def CreateTube(
     name: String,
     path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     radius: Double,
@@ -1531,51 +1524,8 @@ object Mesh {
     radiusFunction: js.Function2[/* i */ Double, /* distance */ Double, Double],
     cap: Double,
     scene: typings.babylonjs.sceneMod.Scene
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateTube")
-  @js.native
-  def CreateTube(
-    name: String,
-    path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    radius: Double,
-    tessellation: Double,
-    radiusFunction: js.Function2[/* i */ Double, /* distance */ Double, Double],
-    cap: Double,
-    scene: typings.babylonjs.sceneMod.Scene,
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: js.UndefOr[scala.Nothing],
-    instance: typings.babylonjs.meshMod.Mesh
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateTube")
-  @js.native
-  def CreateTube(
-    name: String,
-    path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    radius: Double,
-    tessellation: Double,
-    radiusFunction: js.Function2[/* i */ Double, /* distance */ Double, Double],
-    cap: Double,
-    scene: typings.babylonjs.sceneMod.Scene,
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateTube")
-  @js.native
-  def CreateTube(
-    name: String,
-    path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    radius: Double,
-    tessellation: Double,
-    radiusFunction: js.Function2[/* i */ Double, /* distance */ Double, Double],
-    cap: Double,
-    scene: typings.babylonjs.sceneMod.Scene,
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: Double,
-    instance: typings.babylonjs.meshMod.Mesh
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateTube")
-  @js.native
-  def CreateTube(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTube")(name.asInstanceOf[js.Any], path.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], radiusFunction.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateTube(
     name: String,
     path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     radius: Double,
@@ -1584,24 +1534,8 @@ object Mesh {
     cap: Double,
     scene: typings.babylonjs.sceneMod.Scene,
     updatable: Boolean
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateTube")
-  @js.native
-  def CreateTube(
-    name: String,
-    path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    radius: Double,
-    tessellation: Double,
-    radiusFunction: js.Function2[/* i */ Double, /* distance */ Double, Double],
-    cap: Double,
-    scene: typings.babylonjs.sceneMod.Scene,
-    updatable: Boolean,
-    sideOrientation: js.UndefOr[scala.Nothing],
-    instance: typings.babylonjs.meshMod.Mesh
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateTube")
-  @js.native
-  def CreateTube(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTube")(name.asInstanceOf[js.Any], path.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], radiusFunction.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateTube(
     name: String,
     path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     radius: Double,
@@ -1611,10 +1545,8 @@ object Mesh {
     scene: typings.babylonjs.sceneMod.Scene,
     updatable: Boolean,
     sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.CreateTube")
-  @js.native
-  def CreateTube(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTube")(name.asInstanceOf[js.Any], path.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], radiusFunction.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateTube(
     name: String,
     path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     radius: Double,
@@ -1625,7 +1557,54 @@ object Mesh {
     updatable: Boolean,
     sideOrientation: Double,
     instance: typings.babylonjs.meshMod.Mesh
-  ): typings.babylonjs.meshMod.Mesh = js.native
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTube")(name.asInstanceOf[js.Any], path.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], radiusFunction.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateTube(
+    name: String,
+    path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    radius: Double,
+    tessellation: Double,
+    radiusFunction: js.Function2[/* i */ Double, /* distance */ Double, Double],
+    cap: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    updatable: Boolean,
+    sideOrientation: Unit,
+    instance: typings.babylonjs.meshMod.Mesh
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTube")(name.asInstanceOf[js.Any], path.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], radiusFunction.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateTube(
+    name: String,
+    path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    radius: Double,
+    tessellation: Double,
+    radiusFunction: js.Function2[/* i */ Double, /* distance */ Double, Double],
+    cap: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    updatable: Unit,
+    sideOrientation: Double
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTube")(name.asInstanceOf[js.Any], path.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], radiusFunction.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateTube(
+    name: String,
+    path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    radius: Double,
+    tessellation: Double,
+    radiusFunction: js.Function2[/* i */ Double, /* distance */ Double, Double],
+    cap: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    updatable: Unit,
+    sideOrientation: Double,
+    instance: typings.babylonjs.meshMod.Mesh
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTube")(name.asInstanceOf[js.Any], path.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], radiusFunction.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateTube(
+    name: String,
+    path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    radius: Double,
+    tessellation: Double,
+    radiusFunction: js.Function2[/* i */ Double, /* distance */ Double, Double],
+    cap: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    updatable: Unit,
+    sideOrientation: Unit,
+    instance: typings.babylonjs.meshMod.Mesh
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTube")(name.asInstanceOf[js.Any], path.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], tessellation.asInstanceOf[js.Any], radiusFunction.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
   
   /**
     * Mesh side orientation : by default, `FRONTSIDE`
@@ -1654,163 +1633,28 @@ object Mesh {
     * @param earcutInjection can be used to inject your own earcut reference
     * @returns a new Mesh
     */
-  @JSImport("babylonjs", "Mesh.ExtrudePolygon")
-  @js.native
-  def ExtrudePolygon(
+  inline def ExtrudePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     depth: Double,
     scene: typings.babylonjs.sceneMod.Scene
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.ExtrudePolygon")
-  @js.native
-  def ExtrudePolygon(
-    name: String,
-    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    depth: Double,
-    scene: typings.babylonjs.sceneMod.Scene,
-    holes: js.UndefOr[scala.Nothing],
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: js.UndefOr[scala.Nothing],
-    earcutInjection: js.Any
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.ExtrudePolygon")
-  @js.native
-  def ExtrudePolygon(
-    name: String,
-    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    depth: Double,
-    scene: typings.babylonjs.sceneMod.Scene,
-    holes: js.UndefOr[scala.Nothing],
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.ExtrudePolygon")
-  @js.native
-  def ExtrudePolygon(
-    name: String,
-    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    depth: Double,
-    scene: typings.babylonjs.sceneMod.Scene,
-    holes: js.UndefOr[scala.Nothing],
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: Double,
-    earcutInjection: js.Any
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.ExtrudePolygon")
-  @js.native
-  def ExtrudePolygon(
-    name: String,
-    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    depth: Double,
-    scene: typings.babylonjs.sceneMod.Scene,
-    holes: js.UndefOr[scala.Nothing],
-    updatable: Boolean
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.ExtrudePolygon")
-  @js.native
-  def ExtrudePolygon(
-    name: String,
-    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    depth: Double,
-    scene: typings.babylonjs.sceneMod.Scene,
-    holes: js.UndefOr[scala.Nothing],
-    updatable: Boolean,
-    sideOrientation: js.UndefOr[scala.Nothing],
-    earcutInjection: js.Any
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.ExtrudePolygon")
-  @js.native
-  def ExtrudePolygon(
-    name: String,
-    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    depth: Double,
-    scene: typings.babylonjs.sceneMod.Scene,
-    holes: js.UndefOr[scala.Nothing],
-    updatable: Boolean,
-    sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.ExtrudePolygon")
-  @js.native
-  def ExtrudePolygon(
-    name: String,
-    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    depth: Double,
-    scene: typings.babylonjs.sceneMod.Scene,
-    holes: js.UndefOr[scala.Nothing],
-    updatable: Boolean,
-    sideOrientation: Double,
-    earcutInjection: js.Any
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.ExtrudePolygon")
-  @js.native
-  def ExtrudePolygon(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     depth: Double,
     scene: typings.babylonjs.sceneMod.Scene,
     holes: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]]
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.ExtrudePolygon")
-  @js.native
-  def ExtrudePolygon(
-    name: String,
-    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    depth: Double,
-    scene: typings.babylonjs.sceneMod.Scene,
-    holes: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: js.UndefOr[scala.Nothing],
-    earcutInjection: js.Any
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.ExtrudePolygon")
-  @js.native
-  def ExtrudePolygon(
-    name: String,
-    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    depth: Double,
-    scene: typings.babylonjs.sceneMod.Scene,
-    holes: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.ExtrudePolygon")
-  @js.native
-  def ExtrudePolygon(
-    name: String,
-    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    depth: Double,
-    scene: typings.babylonjs.sceneMod.Scene,
-    holes: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: Double,
-    earcutInjection: js.Any
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.ExtrudePolygon")
-  @js.native
-  def ExtrudePolygon(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], holes.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     depth: Double,
     scene: typings.babylonjs.sceneMod.Scene,
     holes: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
     updatable: Boolean
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.ExtrudePolygon")
-  @js.native
-  def ExtrudePolygon(
-    name: String,
-    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    depth: Double,
-    scene: typings.babylonjs.sceneMod.Scene,
-    holes: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
-    updatable: Boolean,
-    sideOrientation: js.UndefOr[scala.Nothing],
-    earcutInjection: js.Any
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.ExtrudePolygon")
-  @js.native
-  def ExtrudePolygon(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     depth: Double,
@@ -1818,10 +1662,8 @@ object Mesh {
     holes: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
     updatable: Boolean,
     sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.ExtrudePolygon")
-  @js.native
-  def ExtrudePolygon(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     depth: Double,
@@ -1830,7 +1672,112 @@ object Mesh {
     updatable: Boolean,
     sideOrientation: Double,
     earcutInjection: js.Any
-  ): typings.babylonjs.meshMod.Mesh = js.native
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudePolygon(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    depth: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    holes: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
+    updatable: Boolean,
+    sideOrientation: Unit,
+    earcutInjection: js.Any
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudePolygon(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    depth: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    holes: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
+    updatable: Unit,
+    sideOrientation: Double
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudePolygon(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    depth: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    holes: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
+    updatable: Unit,
+    sideOrientation: Double,
+    earcutInjection: js.Any
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudePolygon(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    depth: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    holes: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
+    updatable: Unit,
+    sideOrientation: Unit,
+    earcutInjection: js.Any
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudePolygon(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    depth: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    holes: Unit,
+    updatable: Boolean
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudePolygon(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    depth: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    holes: Unit,
+    updatable: Boolean,
+    sideOrientation: Double
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudePolygon(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    depth: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    holes: Unit,
+    updatable: Boolean,
+    sideOrientation: Double,
+    earcutInjection: js.Any
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudePolygon(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    depth: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    holes: Unit,
+    updatable: Boolean,
+    sideOrientation: Unit,
+    earcutInjection: js.Any
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudePolygon(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    depth: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    holes: Unit,
+    updatable: Unit,
+    sideOrientation: Double
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudePolygon(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    depth: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    holes: Unit,
+    updatable: Unit,
+    sideOrientation: Double,
+    earcutInjection: js.Any
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudePolygon(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    depth: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    holes: Unit,
+    updatable: Unit,
+    sideOrientation: Unit,
+    earcutInjection: js.Any
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
   
   /**
     * Creates an extruded shape mesh.
@@ -1849,113 +1796,95 @@ object Mesh {
     * @param instance is an instance of an existing ExtrudedShape object to be updated with the passed `shape`, `path`, `scale` or `rotation` parameters (https://doc.babylonjs.com/how_to/How_to_dynamically_morph_a_mesh#extruded-shape)
     * @returns a new Mesh
     */
-  @JSImport("babylonjs", "Mesh.ExtrudeShape")
-  @js.native
-  def ExtrudeShape(
+  inline def ExtrudeShape(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     scale: Double,
     rotation: Double,
     cap: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.ExtrudeShape")
-  @js.native
-  def ExtrudeShape(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], path.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], cap.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudeShape(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     scale: Double,
     rotation: Double,
     cap: Double,
-    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: js.UndefOr[scala.Nothing],
-    instance: typings.babylonjs.meshMod.Mesh
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.ExtrudeShape")
-  @js.native
-  def ExtrudeShape(
-    name: String,
-    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    scale: Double,
-    rotation: Double,
-    cap: Double,
-    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.ExtrudeShape")
-  @js.native
-  def ExtrudeShape(
-    name: String,
-    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    scale: Double,
-    rotation: Double,
-    cap: Double,
-    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: Double,
-    instance: typings.babylonjs.meshMod.Mesh
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.ExtrudeShape")
-  @js.native
-  def ExtrudeShape(
-    name: String,
-    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    scale: Double,
-    rotation: Double,
-    cap: Double,
-    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
+    scene: Unit,
     updatable: Boolean
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.ExtrudeShape")
-  @js.native
-  def ExtrudeShape(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], path.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudeShape(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     scale: Double,
     rotation: Double,
     cap: Double,
-    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
-    updatable: Boolean,
-    sideOrientation: js.UndefOr[scala.Nothing],
-    instance: typings.babylonjs.meshMod.Mesh
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.ExtrudeShape")
-  @js.native
-  def ExtrudeShape(
-    name: String,
-    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    scale: Double,
-    rotation: Double,
-    cap: Double,
-    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
+    scene: Unit,
     updatable: Boolean,
     sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.ExtrudeShape")
-  @js.native
-  def ExtrudeShape(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], path.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudeShape(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     scale: Double,
     rotation: Double,
     cap: Double,
-    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
+    scene: Unit,
     updatable: Boolean,
     sideOrientation: Double,
     instance: typings.babylonjs.meshMod.Mesh
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.ExtrudeShape")
-  @js.native
-  def ExtrudeShape(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], path.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudeShape(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    scale: Double,
+    rotation: Double,
+    cap: Double,
+    scene: Unit,
+    updatable: Boolean,
+    sideOrientation: Unit,
+    instance: typings.babylonjs.meshMod.Mesh
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], path.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudeShape(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    scale: Double,
+    rotation: Double,
+    cap: Double,
+    scene: Unit,
+    updatable: Unit,
+    sideOrientation: Double
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], path.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudeShape(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    scale: Double,
+    rotation: Double,
+    cap: Double,
+    scene: Unit,
+    updatable: Unit,
+    sideOrientation: Double,
+    instance: typings.babylonjs.meshMod.Mesh
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], path.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudeShape(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    scale: Double,
+    rotation: Double,
+    cap: Double,
+    scene: Unit,
+    updatable: Unit,
+    sideOrientation: Unit,
+    instance: typings.babylonjs.meshMod.Mesh
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], path.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudeShape(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1963,7 +1892,87 @@ object Mesh {
     rotation: Double,
     cap: Double,
     scene: Nullable[typings.babylonjs.sceneMod.Scene]
-  ): typings.babylonjs.meshMod.Mesh = js.native
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], path.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudeShape(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    scale: Double,
+    rotation: Double,
+    cap: Double,
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    updatable: Boolean
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], path.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudeShape(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    scale: Double,
+    rotation: Double,
+    cap: Double,
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    updatable: Boolean,
+    sideOrientation: Double
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], path.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudeShape(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    scale: Double,
+    rotation: Double,
+    cap: Double,
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    updatable: Boolean,
+    sideOrientation: Double,
+    instance: typings.babylonjs.meshMod.Mesh
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], path.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudeShape(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    scale: Double,
+    rotation: Double,
+    cap: Double,
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    updatable: Boolean,
+    sideOrientation: Unit,
+    instance: typings.babylonjs.meshMod.Mesh
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], path.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudeShape(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    scale: Double,
+    rotation: Double,
+    cap: Double,
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    updatable: Unit,
+    sideOrientation: Double
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], path.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudeShape(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    scale: Double,
+    rotation: Double,
+    cap: Double,
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    updatable: Unit,
+    sideOrientation: Double,
+    instance: typings.babylonjs.meshMod.Mesh
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], path.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudeShape(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    scale: Double,
+    rotation: Double,
+    cap: Double,
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    updatable: Unit,
+    sideOrientation: Unit,
+    instance: typings.babylonjs.meshMod.Mesh
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], path.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
   
   /**
     * Creates an custom extruded shape mesh.
@@ -1985,9 +1994,7 @@ object Mesh {
     * @param instance is an instance of an existing ExtrudedShape object to be updated with the passed `shape`, `path`, `scale` or `rotation` parameters (https://doc.babylonjs.com/how_to/how_to_dynamically_morph_a_mesh#extruded-shape)
     * @returns a new Mesh
     */
-  @JSImport("babylonjs", "Mesh.ExtrudeShapeCustom")
-  @js.native
-  def ExtrudeShapeCustom(
+  inline def ExtrudeShapeCustom(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1997,57 +2004,8 @@ object Mesh {
     ribbonClosePath: Boolean,
     cap: Double,
     scene: typings.babylonjs.sceneMod.Scene
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.ExtrudeShapeCustom")
-  @js.native
-  def ExtrudeShapeCustom(
-    name: String,
-    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    scaleFunction: js.Function,
-    rotationFunction: js.Function,
-    ribbonCloseArray: Boolean,
-    ribbonClosePath: Boolean,
-    cap: Double,
-    scene: typings.babylonjs.sceneMod.Scene,
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: js.UndefOr[scala.Nothing],
-    instance: typings.babylonjs.meshMod.Mesh
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.ExtrudeShapeCustom")
-  @js.native
-  def ExtrudeShapeCustom(
-    name: String,
-    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    scaleFunction: js.Function,
-    rotationFunction: js.Function,
-    ribbonCloseArray: Boolean,
-    ribbonClosePath: Boolean,
-    cap: Double,
-    scene: typings.babylonjs.sceneMod.Scene,
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.ExtrudeShapeCustom")
-  @js.native
-  def ExtrudeShapeCustom(
-    name: String,
-    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    scaleFunction: js.Function,
-    rotationFunction: js.Function,
-    ribbonCloseArray: Boolean,
-    ribbonClosePath: Boolean,
-    cap: Double,
-    scene: typings.babylonjs.sceneMod.Scene,
-    updatable: js.UndefOr[scala.Nothing],
-    sideOrientation: Double,
-    instance: typings.babylonjs.meshMod.Mesh
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.ExtrudeShapeCustom")
-  @js.native
-  def ExtrudeShapeCustom(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShapeCustom")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], path.asInstanceOf[js.Any], scaleFunction.asInstanceOf[js.Any], rotationFunction.asInstanceOf[js.Any], ribbonCloseArray.asInstanceOf[js.Any], ribbonClosePath.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudeShapeCustom(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -2058,26 +2016,8 @@ object Mesh {
     cap: Double,
     scene: typings.babylonjs.sceneMod.Scene,
     updatable: Boolean
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.ExtrudeShapeCustom")
-  @js.native
-  def ExtrudeShapeCustom(
-    name: String,
-    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    scaleFunction: js.Function,
-    rotationFunction: js.Function,
-    ribbonCloseArray: Boolean,
-    ribbonClosePath: Boolean,
-    cap: Double,
-    scene: typings.babylonjs.sceneMod.Scene,
-    updatable: Boolean,
-    sideOrientation: js.UndefOr[scala.Nothing],
-    instance: typings.babylonjs.meshMod.Mesh
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.ExtrudeShapeCustom")
-  @js.native
-  def ExtrudeShapeCustom(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShapeCustom")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], path.asInstanceOf[js.Any], scaleFunction.asInstanceOf[js.Any], rotationFunction.asInstanceOf[js.Any], ribbonCloseArray.asInstanceOf[js.Any], ribbonClosePath.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudeShapeCustom(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -2089,10 +2029,8 @@ object Mesh {
     scene: typings.babylonjs.sceneMod.Scene,
     updatable: Boolean,
     sideOrientation: Double
-  ): typings.babylonjs.meshMod.Mesh = js.native
-  @JSImport("babylonjs", "Mesh.ExtrudeShapeCustom")
-  @js.native
-  def ExtrudeShapeCustom(
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShapeCustom")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], path.asInstanceOf[js.Any], scaleFunction.asInstanceOf[js.Any], rotationFunction.asInstanceOf[js.Any], ribbonCloseArray.asInstanceOf[js.Any], ribbonClosePath.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudeShapeCustom(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -2105,7 +2043,62 @@ object Mesh {
     updatable: Boolean,
     sideOrientation: Double,
     instance: typings.babylonjs.meshMod.Mesh
-  ): typings.babylonjs.meshMod.Mesh = js.native
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShapeCustom")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], path.asInstanceOf[js.Any], scaleFunction.asInstanceOf[js.Any], rotationFunction.asInstanceOf[js.Any], ribbonCloseArray.asInstanceOf[js.Any], ribbonClosePath.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudeShapeCustom(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    scaleFunction: js.Function,
+    rotationFunction: js.Function,
+    ribbonCloseArray: Boolean,
+    ribbonClosePath: Boolean,
+    cap: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    updatable: Boolean,
+    sideOrientation: Unit,
+    instance: typings.babylonjs.meshMod.Mesh
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShapeCustom")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], path.asInstanceOf[js.Any], scaleFunction.asInstanceOf[js.Any], rotationFunction.asInstanceOf[js.Any], ribbonCloseArray.asInstanceOf[js.Any], ribbonClosePath.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudeShapeCustom(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    scaleFunction: js.Function,
+    rotationFunction: js.Function,
+    ribbonCloseArray: Boolean,
+    ribbonClosePath: Boolean,
+    cap: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    updatable: Unit,
+    sideOrientation: Double
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShapeCustom")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], path.asInstanceOf[js.Any], scaleFunction.asInstanceOf[js.Any], rotationFunction.asInstanceOf[js.Any], ribbonCloseArray.asInstanceOf[js.Any], ribbonClosePath.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudeShapeCustom(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    scaleFunction: js.Function,
+    rotationFunction: js.Function,
+    ribbonCloseArray: Boolean,
+    ribbonClosePath: Boolean,
+    cap: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    updatable: Unit,
+    sideOrientation: Double,
+    instance: typings.babylonjs.meshMod.Mesh
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShapeCustom")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], path.asInstanceOf[js.Any], scaleFunction.asInstanceOf[js.Any], rotationFunction.asInstanceOf[js.Any], ribbonCloseArray.asInstanceOf[js.Any], ribbonClosePath.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudeShapeCustom(
+    name: String,
+    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    scaleFunction: js.Function,
+    rotationFunction: js.Function,
+    ribbonCloseArray: Boolean,
+    ribbonClosePath: Boolean,
+    cap: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    updatable: Unit,
+    sideOrientation: Unit,
+    instance: typings.babylonjs.meshMod.Mesh
+  ): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShapeCustom")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], path.asInstanceOf[js.Any], scaleFunction.asInstanceOf[js.Any], rotationFunction.asInstanceOf[js.Any], ribbonCloseArray.asInstanceOf[js.Any], ribbonClosePath.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], updatable.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
   
   /**
     * Mesh pattern setting : rotate pattern and rotate
@@ -2159,299 +2152,229 @@ object Mesh {
     * @param multiMultiMaterials when true (false default), subdivide mesh and accept multiple multi materials, ignores subdivideWithSubMeshes.
     * @returns a new mesh
     */
-  @JSImport("babylonjs", "Mesh.MergeMeshes")
-  @js.native
-  def MergeMeshes(meshes: js.Array[typings.babylonjs.meshMod.Mesh]): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-  @JSImport("babylonjs", "Mesh.MergeMeshes")
-  @js.native
-  def MergeMeshes(
-    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
-    disposeSource: js.UndefOr[scala.Nothing],
-    allow32BitsIndices: js.UndefOr[scala.Nothing],
-    meshSubclass: js.UndefOr[scala.Nothing],
-    subdivideWithSubMeshes: js.UndefOr[scala.Nothing],
-    multiMultiMaterials: Boolean
-  ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-  @JSImport("babylonjs", "Mesh.MergeMeshes")
-  @js.native
-  def MergeMeshes(
-    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
-    disposeSource: js.UndefOr[scala.Nothing],
-    allow32BitsIndices: js.UndefOr[scala.Nothing],
-    meshSubclass: js.UndefOr[scala.Nothing],
-    subdivideWithSubMeshes: Boolean
-  ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-  @JSImport("babylonjs", "Mesh.MergeMeshes")
-  @js.native
-  def MergeMeshes(
-    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
-    disposeSource: js.UndefOr[scala.Nothing],
-    allow32BitsIndices: js.UndefOr[scala.Nothing],
-    meshSubclass: js.UndefOr[scala.Nothing],
-    subdivideWithSubMeshes: Boolean,
-    multiMultiMaterials: Boolean
-  ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-  @JSImport("babylonjs", "Mesh.MergeMeshes")
-  @js.native
-  def MergeMeshes(
-    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
-    disposeSource: js.UndefOr[scala.Nothing],
-    allow32BitsIndices: js.UndefOr[scala.Nothing],
-    meshSubclass: typings.babylonjs.meshMod.Mesh
-  ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-  @JSImport("babylonjs", "Mesh.MergeMeshes")
-  @js.native
-  def MergeMeshes(
-    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
-    disposeSource: js.UndefOr[scala.Nothing],
-    allow32BitsIndices: js.UndefOr[scala.Nothing],
-    meshSubclass: typings.babylonjs.meshMod.Mesh,
-    subdivideWithSubMeshes: js.UndefOr[scala.Nothing],
-    multiMultiMaterials: Boolean
-  ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-  @JSImport("babylonjs", "Mesh.MergeMeshes")
-  @js.native
-  def MergeMeshes(
-    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
-    disposeSource: js.UndefOr[scala.Nothing],
-    allow32BitsIndices: js.UndefOr[scala.Nothing],
-    meshSubclass: typings.babylonjs.meshMod.Mesh,
-    subdivideWithSubMeshes: Boolean
-  ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-  @JSImport("babylonjs", "Mesh.MergeMeshes")
-  @js.native
-  def MergeMeshes(
-    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
-    disposeSource: js.UndefOr[scala.Nothing],
-    allow32BitsIndices: js.UndefOr[scala.Nothing],
-    meshSubclass: typings.babylonjs.meshMod.Mesh,
-    subdivideWithSubMeshes: Boolean,
-    multiMultiMaterials: Boolean
-  ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-  @JSImport("babylonjs", "Mesh.MergeMeshes")
-  @js.native
-  def MergeMeshes(
-    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
-    disposeSource: js.UndefOr[scala.Nothing],
-    allow32BitsIndices: Boolean
-  ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-  @JSImport("babylonjs", "Mesh.MergeMeshes")
-  @js.native
-  def MergeMeshes(
-    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
-    disposeSource: js.UndefOr[scala.Nothing],
-    allow32BitsIndices: Boolean,
-    meshSubclass: js.UndefOr[scala.Nothing],
-    subdivideWithSubMeshes: js.UndefOr[scala.Nothing],
-    multiMultiMaterials: Boolean
-  ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-  @JSImport("babylonjs", "Mesh.MergeMeshes")
-  @js.native
-  def MergeMeshes(
-    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
-    disposeSource: js.UndefOr[scala.Nothing],
-    allow32BitsIndices: Boolean,
-    meshSubclass: js.UndefOr[scala.Nothing],
-    subdivideWithSubMeshes: Boolean
-  ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-  @JSImport("babylonjs", "Mesh.MergeMeshes")
-  @js.native
-  def MergeMeshes(
-    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
-    disposeSource: js.UndefOr[scala.Nothing],
-    allow32BitsIndices: Boolean,
-    meshSubclass: js.UndefOr[scala.Nothing],
-    subdivideWithSubMeshes: Boolean,
-    multiMultiMaterials: Boolean
-  ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-  @JSImport("babylonjs", "Mesh.MergeMeshes")
-  @js.native
-  def MergeMeshes(
-    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
-    disposeSource: js.UndefOr[scala.Nothing],
-    allow32BitsIndices: Boolean,
-    meshSubclass: typings.babylonjs.meshMod.Mesh
-  ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-  @JSImport("babylonjs", "Mesh.MergeMeshes")
-  @js.native
-  def MergeMeshes(
-    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
-    disposeSource: js.UndefOr[scala.Nothing],
-    allow32BitsIndices: Boolean,
-    meshSubclass: typings.babylonjs.meshMod.Mesh,
-    subdivideWithSubMeshes: js.UndefOr[scala.Nothing],
-    multiMultiMaterials: Boolean
-  ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-  @JSImport("babylonjs", "Mesh.MergeMeshes")
-  @js.native
-  def MergeMeshes(
-    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
-    disposeSource: js.UndefOr[scala.Nothing],
-    allow32BitsIndices: Boolean,
-    meshSubclass: typings.babylonjs.meshMod.Mesh,
-    subdivideWithSubMeshes: Boolean
-  ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-  @JSImport("babylonjs", "Mesh.MergeMeshes")
-  @js.native
-  def MergeMeshes(
-    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
-    disposeSource: js.UndefOr[scala.Nothing],
-    allow32BitsIndices: Boolean,
-    meshSubclass: typings.babylonjs.meshMod.Mesh,
-    subdivideWithSubMeshes: Boolean,
-    multiMultiMaterials: Boolean
-  ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-  @JSImport("babylonjs", "Mesh.MergeMeshes")
-  @js.native
-  def MergeMeshes(meshes: js.Array[typings.babylonjs.meshMod.Mesh], disposeSource: Boolean): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-  @JSImport("babylonjs", "Mesh.MergeMeshes")
-  @js.native
-  def MergeMeshes(
-    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
-    disposeSource: Boolean,
-    allow32BitsIndices: js.UndefOr[scala.Nothing],
-    meshSubclass: js.UndefOr[scala.Nothing],
-    subdivideWithSubMeshes: js.UndefOr[scala.Nothing],
-    multiMultiMaterials: Boolean
-  ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-  @JSImport("babylonjs", "Mesh.MergeMeshes")
-  @js.native
-  def MergeMeshes(
-    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
-    disposeSource: Boolean,
-    allow32BitsIndices: js.UndefOr[scala.Nothing],
-    meshSubclass: js.UndefOr[scala.Nothing],
-    subdivideWithSubMeshes: Boolean
-  ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-  @JSImport("babylonjs", "Mesh.MergeMeshes")
-  @js.native
-  def MergeMeshes(
-    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
-    disposeSource: Boolean,
-    allow32BitsIndices: js.UndefOr[scala.Nothing],
-    meshSubclass: js.UndefOr[scala.Nothing],
-    subdivideWithSubMeshes: Boolean,
-    multiMultiMaterials: Boolean
-  ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-  @JSImport("babylonjs", "Mesh.MergeMeshes")
-  @js.native
-  def MergeMeshes(
-    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
-    disposeSource: Boolean,
-    allow32BitsIndices: js.UndefOr[scala.Nothing],
-    meshSubclass: typings.babylonjs.meshMod.Mesh
-  ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-  @JSImport("babylonjs", "Mesh.MergeMeshes")
-  @js.native
-  def MergeMeshes(
-    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
-    disposeSource: Boolean,
-    allow32BitsIndices: js.UndefOr[scala.Nothing],
-    meshSubclass: typings.babylonjs.meshMod.Mesh,
-    subdivideWithSubMeshes: js.UndefOr[scala.Nothing],
-    multiMultiMaterials: Boolean
-  ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-  @JSImport("babylonjs", "Mesh.MergeMeshes")
-  @js.native
-  def MergeMeshes(
-    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
-    disposeSource: Boolean,
-    allow32BitsIndices: js.UndefOr[scala.Nothing],
-    meshSubclass: typings.babylonjs.meshMod.Mesh,
-    subdivideWithSubMeshes: Boolean
-  ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-  @JSImport("babylonjs", "Mesh.MergeMeshes")
-  @js.native
-  def MergeMeshes(
-    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
-    disposeSource: Boolean,
-    allow32BitsIndices: js.UndefOr[scala.Nothing],
-    meshSubclass: typings.babylonjs.meshMod.Mesh,
-    subdivideWithSubMeshes: Boolean,
-    multiMultiMaterials: Boolean
-  ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-  @JSImport("babylonjs", "Mesh.MergeMeshes")
-  @js.native
-  def MergeMeshes(
+  inline def MergeMeshes(meshes: js.Array[typings.babylonjs.meshMod.Mesh]): Nullable[typings.babylonjs.meshMod.Mesh] = ^.asInstanceOf[js.Dynamic].applyDynamic("MergeMeshes")(meshes.asInstanceOf[js.Any]).asInstanceOf[Nullable[typings.babylonjs.meshMod.Mesh]]
+  inline def MergeMeshes(meshes: js.Array[typings.babylonjs.meshMod.Mesh], disposeSource: Boolean): Nullable[typings.babylonjs.meshMod.Mesh] = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeMeshes")(meshes.asInstanceOf[js.Any], disposeSource.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.meshMod.Mesh]]
+  inline def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: Boolean,
     allow32BitsIndices: Boolean
-  ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-  @JSImport("babylonjs", "Mesh.MergeMeshes")
-  @js.native
-  def MergeMeshes(
+  ): Nullable[typings.babylonjs.meshMod.Mesh] = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeMeshes")(meshes.asInstanceOf[js.Any], disposeSource.asInstanceOf[js.Any], allow32BitsIndices.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.meshMod.Mesh]]
+  inline def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: Boolean,
     allow32BitsIndices: Boolean,
-    meshSubclass: js.UndefOr[scala.Nothing],
-    subdivideWithSubMeshes: js.UndefOr[scala.Nothing],
-    multiMultiMaterials: Boolean
-  ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-  @JSImport("babylonjs", "Mesh.MergeMeshes")
-  @js.native
-  def MergeMeshes(
-    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
-    disposeSource: Boolean,
-    allow32BitsIndices: Boolean,
-    meshSubclass: js.UndefOr[scala.Nothing],
+    meshSubclass: Unit,
     subdivideWithSubMeshes: Boolean
-  ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-  @JSImport("babylonjs", "Mesh.MergeMeshes")
-  @js.native
-  def MergeMeshes(
+  ): Nullable[typings.babylonjs.meshMod.Mesh] = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeMeshes")(meshes.asInstanceOf[js.Any], disposeSource.asInstanceOf[js.Any], allow32BitsIndices.asInstanceOf[js.Any], meshSubclass.asInstanceOf[js.Any], subdivideWithSubMeshes.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.meshMod.Mesh]]
+  inline def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: Boolean,
     allow32BitsIndices: Boolean,
-    meshSubclass: js.UndefOr[scala.Nothing],
+    meshSubclass: Unit,
     subdivideWithSubMeshes: Boolean,
     multiMultiMaterials: Boolean
-  ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-  @JSImport("babylonjs", "Mesh.MergeMeshes")
-  @js.native
-  def MergeMeshes(
+  ): Nullable[typings.babylonjs.meshMod.Mesh] = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeMeshes")(meshes.asInstanceOf[js.Any], disposeSource.asInstanceOf[js.Any], allow32BitsIndices.asInstanceOf[js.Any], meshSubclass.asInstanceOf[js.Any], subdivideWithSubMeshes.asInstanceOf[js.Any], multiMultiMaterials.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.meshMod.Mesh]]
+  inline def MergeMeshes(
+    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
+    disposeSource: Boolean,
+    allow32BitsIndices: Boolean,
+    meshSubclass: Unit,
+    subdivideWithSubMeshes: Unit,
+    multiMultiMaterials: Boolean
+  ): Nullable[typings.babylonjs.meshMod.Mesh] = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeMeshes")(meshes.asInstanceOf[js.Any], disposeSource.asInstanceOf[js.Any], allow32BitsIndices.asInstanceOf[js.Any], meshSubclass.asInstanceOf[js.Any], subdivideWithSubMeshes.asInstanceOf[js.Any], multiMultiMaterials.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.meshMod.Mesh]]
+  inline def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: Boolean,
     allow32BitsIndices: Boolean,
     meshSubclass: typings.babylonjs.meshMod.Mesh
-  ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-  @JSImport("babylonjs", "Mesh.MergeMeshes")
-  @js.native
-  def MergeMeshes(
-    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
-    disposeSource: Boolean,
-    allow32BitsIndices: Boolean,
-    meshSubclass: typings.babylonjs.meshMod.Mesh,
-    subdivideWithSubMeshes: js.UndefOr[scala.Nothing],
-    multiMultiMaterials: Boolean
-  ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-  @JSImport("babylonjs", "Mesh.MergeMeshes")
-  @js.native
-  def MergeMeshes(
+  ): Nullable[typings.babylonjs.meshMod.Mesh] = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeMeshes")(meshes.asInstanceOf[js.Any], disposeSource.asInstanceOf[js.Any], allow32BitsIndices.asInstanceOf[js.Any], meshSubclass.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.meshMod.Mesh]]
+  inline def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: Boolean,
     allow32BitsIndices: Boolean,
     meshSubclass: typings.babylonjs.meshMod.Mesh,
     subdivideWithSubMeshes: Boolean
-  ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-  @JSImport("babylonjs", "Mesh.MergeMeshes")
-  @js.native
-  def MergeMeshes(
+  ): Nullable[typings.babylonjs.meshMod.Mesh] = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeMeshes")(meshes.asInstanceOf[js.Any], disposeSource.asInstanceOf[js.Any], allow32BitsIndices.asInstanceOf[js.Any], meshSubclass.asInstanceOf[js.Any], subdivideWithSubMeshes.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.meshMod.Mesh]]
+  inline def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: Boolean,
     allow32BitsIndices: Boolean,
     meshSubclass: typings.babylonjs.meshMod.Mesh,
     subdivideWithSubMeshes: Boolean,
     multiMultiMaterials: Boolean
-  ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+  ): Nullable[typings.babylonjs.meshMod.Mesh] = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeMeshes")(meshes.asInstanceOf[js.Any], disposeSource.asInstanceOf[js.Any], allow32BitsIndices.asInstanceOf[js.Any], meshSubclass.asInstanceOf[js.Any], subdivideWithSubMeshes.asInstanceOf[js.Any], multiMultiMaterials.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.meshMod.Mesh]]
+  inline def MergeMeshes(
+    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
+    disposeSource: Boolean,
+    allow32BitsIndices: Boolean,
+    meshSubclass: typings.babylonjs.meshMod.Mesh,
+    subdivideWithSubMeshes: Unit,
+    multiMultiMaterials: Boolean
+  ): Nullable[typings.babylonjs.meshMod.Mesh] = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeMeshes")(meshes.asInstanceOf[js.Any], disposeSource.asInstanceOf[js.Any], allow32BitsIndices.asInstanceOf[js.Any], meshSubclass.asInstanceOf[js.Any], subdivideWithSubMeshes.asInstanceOf[js.Any], multiMultiMaterials.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.meshMod.Mesh]]
+  inline def MergeMeshes(
+    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
+    disposeSource: Boolean,
+    allow32BitsIndices: Unit,
+    meshSubclass: Unit,
+    subdivideWithSubMeshes: Boolean
+  ): Nullable[typings.babylonjs.meshMod.Mesh] = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeMeshes")(meshes.asInstanceOf[js.Any], disposeSource.asInstanceOf[js.Any], allow32BitsIndices.asInstanceOf[js.Any], meshSubclass.asInstanceOf[js.Any], subdivideWithSubMeshes.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.meshMod.Mesh]]
+  inline def MergeMeshes(
+    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
+    disposeSource: Boolean,
+    allow32BitsIndices: Unit,
+    meshSubclass: Unit,
+    subdivideWithSubMeshes: Boolean,
+    multiMultiMaterials: Boolean
+  ): Nullable[typings.babylonjs.meshMod.Mesh] = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeMeshes")(meshes.asInstanceOf[js.Any], disposeSource.asInstanceOf[js.Any], allow32BitsIndices.asInstanceOf[js.Any], meshSubclass.asInstanceOf[js.Any], subdivideWithSubMeshes.asInstanceOf[js.Any], multiMultiMaterials.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.meshMod.Mesh]]
+  inline def MergeMeshes(
+    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
+    disposeSource: Boolean,
+    allow32BitsIndices: Unit,
+    meshSubclass: Unit,
+    subdivideWithSubMeshes: Unit,
+    multiMultiMaterials: Boolean
+  ): Nullable[typings.babylonjs.meshMod.Mesh] = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeMeshes")(meshes.asInstanceOf[js.Any], disposeSource.asInstanceOf[js.Any], allow32BitsIndices.asInstanceOf[js.Any], meshSubclass.asInstanceOf[js.Any], subdivideWithSubMeshes.asInstanceOf[js.Any], multiMultiMaterials.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.meshMod.Mesh]]
+  inline def MergeMeshes(
+    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
+    disposeSource: Boolean,
+    allow32BitsIndices: Unit,
+    meshSubclass: typings.babylonjs.meshMod.Mesh
+  ): Nullable[typings.babylonjs.meshMod.Mesh] = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeMeshes")(meshes.asInstanceOf[js.Any], disposeSource.asInstanceOf[js.Any], allow32BitsIndices.asInstanceOf[js.Any], meshSubclass.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.meshMod.Mesh]]
+  inline def MergeMeshes(
+    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
+    disposeSource: Boolean,
+    allow32BitsIndices: Unit,
+    meshSubclass: typings.babylonjs.meshMod.Mesh,
+    subdivideWithSubMeshes: Boolean
+  ): Nullable[typings.babylonjs.meshMod.Mesh] = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeMeshes")(meshes.asInstanceOf[js.Any], disposeSource.asInstanceOf[js.Any], allow32BitsIndices.asInstanceOf[js.Any], meshSubclass.asInstanceOf[js.Any], subdivideWithSubMeshes.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.meshMod.Mesh]]
+  inline def MergeMeshes(
+    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
+    disposeSource: Boolean,
+    allow32BitsIndices: Unit,
+    meshSubclass: typings.babylonjs.meshMod.Mesh,
+    subdivideWithSubMeshes: Boolean,
+    multiMultiMaterials: Boolean
+  ): Nullable[typings.babylonjs.meshMod.Mesh] = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeMeshes")(meshes.asInstanceOf[js.Any], disposeSource.asInstanceOf[js.Any], allow32BitsIndices.asInstanceOf[js.Any], meshSubclass.asInstanceOf[js.Any], subdivideWithSubMeshes.asInstanceOf[js.Any], multiMultiMaterials.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.meshMod.Mesh]]
+  inline def MergeMeshes(
+    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
+    disposeSource: Boolean,
+    allow32BitsIndices: Unit,
+    meshSubclass: typings.babylonjs.meshMod.Mesh,
+    subdivideWithSubMeshes: Unit,
+    multiMultiMaterials: Boolean
+  ): Nullable[typings.babylonjs.meshMod.Mesh] = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeMeshes")(meshes.asInstanceOf[js.Any], disposeSource.asInstanceOf[js.Any], allow32BitsIndices.asInstanceOf[js.Any], meshSubclass.asInstanceOf[js.Any], subdivideWithSubMeshes.asInstanceOf[js.Any], multiMultiMaterials.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.meshMod.Mesh]]
+  inline def MergeMeshes(meshes: js.Array[typings.babylonjs.meshMod.Mesh], disposeSource: Unit, allow32BitsIndices: Boolean): Nullable[typings.babylonjs.meshMod.Mesh] = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeMeshes")(meshes.asInstanceOf[js.Any], disposeSource.asInstanceOf[js.Any], allow32BitsIndices.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.meshMod.Mesh]]
+  inline def MergeMeshes(
+    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
+    disposeSource: Unit,
+    allow32BitsIndices: Boolean,
+    meshSubclass: Unit,
+    subdivideWithSubMeshes: Boolean
+  ): Nullable[typings.babylonjs.meshMod.Mesh] = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeMeshes")(meshes.asInstanceOf[js.Any], disposeSource.asInstanceOf[js.Any], allow32BitsIndices.asInstanceOf[js.Any], meshSubclass.asInstanceOf[js.Any], subdivideWithSubMeshes.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.meshMod.Mesh]]
+  inline def MergeMeshes(
+    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
+    disposeSource: Unit,
+    allow32BitsIndices: Boolean,
+    meshSubclass: Unit,
+    subdivideWithSubMeshes: Boolean,
+    multiMultiMaterials: Boolean
+  ): Nullable[typings.babylonjs.meshMod.Mesh] = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeMeshes")(meshes.asInstanceOf[js.Any], disposeSource.asInstanceOf[js.Any], allow32BitsIndices.asInstanceOf[js.Any], meshSubclass.asInstanceOf[js.Any], subdivideWithSubMeshes.asInstanceOf[js.Any], multiMultiMaterials.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.meshMod.Mesh]]
+  inline def MergeMeshes(
+    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
+    disposeSource: Unit,
+    allow32BitsIndices: Boolean,
+    meshSubclass: Unit,
+    subdivideWithSubMeshes: Unit,
+    multiMultiMaterials: Boolean
+  ): Nullable[typings.babylonjs.meshMod.Mesh] = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeMeshes")(meshes.asInstanceOf[js.Any], disposeSource.asInstanceOf[js.Any], allow32BitsIndices.asInstanceOf[js.Any], meshSubclass.asInstanceOf[js.Any], subdivideWithSubMeshes.asInstanceOf[js.Any], multiMultiMaterials.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.meshMod.Mesh]]
+  inline def MergeMeshes(
+    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
+    disposeSource: Unit,
+    allow32BitsIndices: Boolean,
+    meshSubclass: typings.babylonjs.meshMod.Mesh
+  ): Nullable[typings.babylonjs.meshMod.Mesh] = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeMeshes")(meshes.asInstanceOf[js.Any], disposeSource.asInstanceOf[js.Any], allow32BitsIndices.asInstanceOf[js.Any], meshSubclass.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.meshMod.Mesh]]
+  inline def MergeMeshes(
+    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
+    disposeSource: Unit,
+    allow32BitsIndices: Boolean,
+    meshSubclass: typings.babylonjs.meshMod.Mesh,
+    subdivideWithSubMeshes: Boolean
+  ): Nullable[typings.babylonjs.meshMod.Mesh] = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeMeshes")(meshes.asInstanceOf[js.Any], disposeSource.asInstanceOf[js.Any], allow32BitsIndices.asInstanceOf[js.Any], meshSubclass.asInstanceOf[js.Any], subdivideWithSubMeshes.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.meshMod.Mesh]]
+  inline def MergeMeshes(
+    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
+    disposeSource: Unit,
+    allow32BitsIndices: Boolean,
+    meshSubclass: typings.babylonjs.meshMod.Mesh,
+    subdivideWithSubMeshes: Boolean,
+    multiMultiMaterials: Boolean
+  ): Nullable[typings.babylonjs.meshMod.Mesh] = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeMeshes")(meshes.asInstanceOf[js.Any], disposeSource.asInstanceOf[js.Any], allow32BitsIndices.asInstanceOf[js.Any], meshSubclass.asInstanceOf[js.Any], subdivideWithSubMeshes.asInstanceOf[js.Any], multiMultiMaterials.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.meshMod.Mesh]]
+  inline def MergeMeshes(
+    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
+    disposeSource: Unit,
+    allow32BitsIndices: Boolean,
+    meshSubclass: typings.babylonjs.meshMod.Mesh,
+    subdivideWithSubMeshes: Unit,
+    multiMultiMaterials: Boolean
+  ): Nullable[typings.babylonjs.meshMod.Mesh] = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeMeshes")(meshes.asInstanceOf[js.Any], disposeSource.asInstanceOf[js.Any], allow32BitsIndices.asInstanceOf[js.Any], meshSubclass.asInstanceOf[js.Any], subdivideWithSubMeshes.asInstanceOf[js.Any], multiMultiMaterials.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.meshMod.Mesh]]
+  inline def MergeMeshes(
+    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
+    disposeSource: Unit,
+    allow32BitsIndices: Unit,
+    meshSubclass: Unit,
+    subdivideWithSubMeshes: Boolean
+  ): Nullable[typings.babylonjs.meshMod.Mesh] = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeMeshes")(meshes.asInstanceOf[js.Any], disposeSource.asInstanceOf[js.Any], allow32BitsIndices.asInstanceOf[js.Any], meshSubclass.asInstanceOf[js.Any], subdivideWithSubMeshes.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.meshMod.Mesh]]
+  inline def MergeMeshes(
+    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
+    disposeSource: Unit,
+    allow32BitsIndices: Unit,
+    meshSubclass: Unit,
+    subdivideWithSubMeshes: Boolean,
+    multiMultiMaterials: Boolean
+  ): Nullable[typings.babylonjs.meshMod.Mesh] = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeMeshes")(meshes.asInstanceOf[js.Any], disposeSource.asInstanceOf[js.Any], allow32BitsIndices.asInstanceOf[js.Any], meshSubclass.asInstanceOf[js.Any], subdivideWithSubMeshes.asInstanceOf[js.Any], multiMultiMaterials.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.meshMod.Mesh]]
+  inline def MergeMeshes(
+    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
+    disposeSource: Unit,
+    allow32BitsIndices: Unit,
+    meshSubclass: Unit,
+    subdivideWithSubMeshes: Unit,
+    multiMultiMaterials: Boolean
+  ): Nullable[typings.babylonjs.meshMod.Mesh] = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeMeshes")(meshes.asInstanceOf[js.Any], disposeSource.asInstanceOf[js.Any], allow32BitsIndices.asInstanceOf[js.Any], meshSubclass.asInstanceOf[js.Any], subdivideWithSubMeshes.asInstanceOf[js.Any], multiMultiMaterials.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.meshMod.Mesh]]
+  inline def MergeMeshes(
+    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
+    disposeSource: Unit,
+    allow32BitsIndices: Unit,
+    meshSubclass: typings.babylonjs.meshMod.Mesh
+  ): Nullable[typings.babylonjs.meshMod.Mesh] = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeMeshes")(meshes.asInstanceOf[js.Any], disposeSource.asInstanceOf[js.Any], allow32BitsIndices.asInstanceOf[js.Any], meshSubclass.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.meshMod.Mesh]]
+  inline def MergeMeshes(
+    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
+    disposeSource: Unit,
+    allow32BitsIndices: Unit,
+    meshSubclass: typings.babylonjs.meshMod.Mesh,
+    subdivideWithSubMeshes: Boolean
+  ): Nullable[typings.babylonjs.meshMod.Mesh] = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeMeshes")(meshes.asInstanceOf[js.Any], disposeSource.asInstanceOf[js.Any], allow32BitsIndices.asInstanceOf[js.Any], meshSubclass.asInstanceOf[js.Any], subdivideWithSubMeshes.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.meshMod.Mesh]]
+  inline def MergeMeshes(
+    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
+    disposeSource: Unit,
+    allow32BitsIndices: Unit,
+    meshSubclass: typings.babylonjs.meshMod.Mesh,
+    subdivideWithSubMeshes: Boolean,
+    multiMultiMaterials: Boolean
+  ): Nullable[typings.babylonjs.meshMod.Mesh] = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeMeshes")(meshes.asInstanceOf[js.Any], disposeSource.asInstanceOf[js.Any], allow32BitsIndices.asInstanceOf[js.Any], meshSubclass.asInstanceOf[js.Any], subdivideWithSubMeshes.asInstanceOf[js.Any], multiMultiMaterials.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.meshMod.Mesh]]
+  inline def MergeMeshes(
+    meshes: js.Array[typings.babylonjs.meshMod.Mesh],
+    disposeSource: Unit,
+    allow32BitsIndices: Unit,
+    meshSubclass: typings.babylonjs.meshMod.Mesh,
+    subdivideWithSubMeshes: Unit,
+    multiMultiMaterials: Boolean
+  ): Nullable[typings.babylonjs.meshMod.Mesh] = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeMeshes")(meshes.asInstanceOf[js.Any], disposeSource.asInstanceOf[js.Any], allow32BitsIndices.asInstanceOf[js.Any], meshSubclass.asInstanceOf[js.Any], subdivideWithSubMeshes.asInstanceOf[js.Any], multiMultiMaterials.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.meshMod.Mesh]]
   
   /**
     * Returns an object containing a min and max Vector3 which are the minimum and maximum vectors of each mesh bounding box from the passed array, in the world coordinates
     * @param meshes defines the list of meshes to scan
     * @returns an object `{min:` Vector3`, max:` Vector3`}`
     */
-  @JSImport("babylonjs", "Mesh.MinMax")
-  @js.native
-  def MinMax(meshes: js.Array[typings.babylonjs.abstractMeshMod.AbstractMesh]): Max = js.native
+  inline def MinMax(meshes: js.Array[typings.babylonjs.abstractMeshMod.AbstractMesh]): Max = ^.asInstanceOf[js.Dynamic].applyDynamic("MinMax")(meshes.asInstanceOf[js.Any]).asInstanceOf[Max]
   
   /**
     * Mesh cap setting : no cap
@@ -2474,9 +2397,7 @@ object Mesh {
     * @param rootUrl is the root URL to prefix the `delayLoadingFile` property with
     * @returns a new Mesh
     */
-  @JSImport("babylonjs", "Mesh.Parse")
-  @js.native
-  def Parse(parsedMesh: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.meshMod.Mesh = js.native
+  inline def Parse(parsedMesh: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedMesh.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
   
   /**
     * Mesh tile positioning : part tiles on right
@@ -2512,25 +2433,15 @@ object Mesh {
     * @returns the default orientation
     * @hidden
     */
-  @JSImport("babylonjs", "Mesh._GetDefaultSideOrientation")
-  @js.native
-  def _GetDefaultSideOrientation(): Double = js.native
-  @JSImport("babylonjs", "Mesh._GetDefaultSideOrientation")
-  @js.native
-  def _GetDefaultSideOrientation(orientation: Double): Double = js.native
+  inline def _GetDefaultSideOrientation(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetDefaultSideOrientation")().asInstanceOf[Double]
+  inline def _GetDefaultSideOrientation(orientation: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetDefaultSideOrientation")(orientation.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /** @hidden */
-  @JSImport("babylonjs", "Mesh._GroundMeshParser")
-  @js.native
-  def _GroundMeshParser(parsedMesh: js.Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshMod.Mesh = js.native
+  inline def _GroundMeshParser(parsedMesh: js.Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("_GroundMeshParser")(parsedMesh.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
   
   /** @hidden */
-  @JSImport("babylonjs", "Mesh._PhysicsImpostorParser")
-  @js.native
-  def _PhysicsImpostorParser(scene: typings.babylonjs.sceneMod.Scene, physicObject: IPhysicsEnabledObject, jsonObject: js.Any): typings.babylonjs.physicsImpostorMod.PhysicsImpostor = js.native
+  inline def _PhysicsImpostorParser(scene: typings.babylonjs.sceneMod.Scene, physicObject: IPhysicsEnabledObject, jsonObject: js.Any): typings.babylonjs.physicsImpostorMod.PhysicsImpostor = (^.asInstanceOf[js.Dynamic].applyDynamic("_PhysicsImpostorParser")(scene.asInstanceOf[js.Any], physicObject.asInstanceOf[js.Any], jsonObject.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.physicsImpostorMod.PhysicsImpostor]
   
   /** @hidden */
-  @JSImport("babylonjs", "Mesh._instancedMeshFactory")
-  @js.native
-  def _instancedMeshFactory(name: String, mesh: typings.babylonjs.meshMod.Mesh): typings.babylonjs.instancedMeshMod.InstancedMesh = js.native
+  inline def _instancedMeshFactory(name: String, mesh: typings.babylonjs.meshMod.Mesh): typings.babylonjs.instancedMeshMod.InstancedMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("_instancedMeshFactory")(name.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.instancedMeshMod.InstancedMesh]
 }

@@ -3,7 +3,6 @@ package typings.babylonjs.legacyMod
 import typings.babylonjs.effectRendererMod.IEffectRendererOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "EffectRenderer")
@@ -28,6 +27,5 @@ object EffectRenderer {
   @JSImport("babylonjs/Legacy/legacy", "EffectRenderer._DefaultOptions")
   @js.native
   def _DefaultOptions: js.Any = js.native
-  @scala.inline
-  def _DefaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultOptions")(x.asInstanceOf[js.Any])
+  inline def _DefaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultOptions")(x.asInstanceOf[js.Any])
 }

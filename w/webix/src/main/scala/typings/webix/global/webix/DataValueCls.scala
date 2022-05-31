@@ -1,6 +1,6 @@
 package typings.webix.global.webix
 
-import typings.webix.webix.DataValueConfig
+import typings.webix.mod.DataValueConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class DataValueCls ()
   extends StObject
-     with typings.webix.webix.DataValue {
+     with typings.webix.mod.DataValue {
   def this(config: DataValueConfig) = this()
 }

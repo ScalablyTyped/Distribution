@@ -594,21 +594,6 @@ object Twitch {
     }
     
     /**
-      * @see https://dev.twitch.tv/docs/extensions/reference/#helper-actions
-      */
-    object actions
-    
-    /**
-      * @see https://dev.twitch.tv/docs/extensions/reference#helper-bits
-      */
-    object bits
-    
-    /**
-      * @see https://dev.twitch.tv/docs/extensions/reference/#helper-configuration
-      */
-    object configuration
-    
-    /**
       * @see https://dev.twitch.tv/docs/extensions/reference/#twitch-extension-feature-flags
       */
     object features {

@@ -2,14 +2,15 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Container for accessors for natively-stored mesh data buffers.
   */
 @js.native
-trait NativeDataBuffer extends DataBuffer {
+trait NativeDataBuffer
+  extends StObject
+     with DataBuffer {
   
   /**
     * Accessor value used to identify/retrieve a natively-stored index buffer.

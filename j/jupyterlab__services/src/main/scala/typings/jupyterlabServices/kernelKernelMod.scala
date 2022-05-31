@@ -59,7 +59,6 @@ import typings.std.ArrayBuffer
 import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kernelKernelMod {
@@ -72,50 +71,44 @@ object kernelKernelMod {
   trait ConnectionStatus extends StObject
   object ConnectionStatus {
     
-    @scala.inline
-    def connected: typings.jupyterlabServices.jupyterlabServicesStrings.connected = "connected".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.connected]
+    inline def connected: typings.jupyterlabServices.jupyterlabServicesStrings.connected = "connected".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.connected]
     
-    @scala.inline
-    def connecting: typings.jupyterlabServices.jupyterlabServicesStrings.connecting = "connecting".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.connecting]
+    inline def connecting: typings.jupyterlabServices.jupyterlabServicesStrings.connecting = "connecting".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.connecting]
     
-    @scala.inline
-    def disconnected: typings.jupyterlabServices.jupyterlabServicesStrings.disconnected = "disconnected".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.disconnected]
+    inline def disconnected: typings.jupyterlabServices.jupyterlabServicesStrings.disconnected = "disconnected".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.disconnected]
   }
   
-  @js.native
   trait IAnyMessageArgs extends StObject {
     
     /**
       * The direction of the message.
       */
-    var direction: send | recv = js.native
+    var direction: send | recv
     
     /**
       * The message that is being signaled.
       */
-    var msg: ReadonlyIMessageMessageTy = js.native
+    var msg: ReadonlyIMessageMessageTy
   }
   object IAnyMessageArgs {
     
-    @scala.inline
-    def apply(direction: send | recv, msg: ReadonlyIMessageMessageTy): IAnyMessageArgs = {
+    inline def apply(direction: send | recv, msg: ReadonlyIMessageMessageTy): IAnyMessageArgs = {
       val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any])
       __obj.asInstanceOf[IAnyMessageArgs]
     }
     
-    @scala.inline
-    implicit class IAnyMessageArgsMutableBuilder[Self <: IAnyMessageArgs] (val x: Self) extends AnyVal {
+    extension [Self <: IAnyMessageArgs](x: Self) {
       
-      @scala.inline
-      def setDirection(value: send | recv): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: send | recv): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsg(value: ReadonlyIMessageMessageTy): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+      inline def setMsg(value: ReadonlyIMessageMessageTy): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
     }
   }
   
   @js.native
-  trait IComm extends IDisposable {
+  trait IComm
+    extends StObject
+       with IDisposable {
     
     /**
       * Close the comm.
@@ -133,18 +126,13 @@ object kernelKernelMod {
       * This is a no-op if the comm is already closed.
       */
     def close(): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
-    def close(
-      data: js.UndefOr[JSONValue],
-      metadata: js.UndefOr[scala.Nothing],
-      buffers: js.Array[ArrayBuffer | ArrayBufferView]
-    ): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
-    def close(data: js.UndefOr[JSONValue], metadata: JSONObject): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
-    def close(
-      data: js.UndefOr[JSONValue],
-      metadata: JSONObject,
-      buffers: js.Array[ArrayBuffer | ArrayBufferView]
-    ): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+    def close(data: Unit, metadata: Unit, buffers: js.Array[ArrayBuffer | ArrayBufferView]): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+    def close(data: Unit, metadata: JSONObject): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+    def close(data: Unit, metadata: JSONObject, buffers: js.Array[ArrayBuffer | ArrayBufferView]): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
     def close(data: JSONValue): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+    def close(data: JSONValue, metadata: Unit, buffers: js.Array[ArrayBuffer | ArrayBufferView]): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+    def close(data: JSONValue, metadata: JSONObject): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+    def close(data: JSONValue, metadata: JSONObject, buffers: js.Array[ArrayBuffer | ArrayBufferView]): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
     
     /**
       * The unique id for the comm channel.
@@ -184,18 +172,13 @@ object kernelKernelMod {
       * This sends a `comm_open` message to the server.
       */
     def open(): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
-    def open(
-      data: js.UndefOr[JSONValue],
-      metadata: js.UndefOr[scala.Nothing],
-      buffers: js.Array[ArrayBuffer | ArrayBufferView]
-    ): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
-    def open(data: js.UndefOr[JSONValue], metadata: JSONObject): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
-    def open(
-      data: js.UndefOr[JSONValue],
-      metadata: JSONObject,
-      buffers: js.Array[ArrayBuffer | ArrayBufferView]
-    ): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+    def open(data: Unit, metadata: Unit, buffers: js.Array[ArrayBuffer | ArrayBufferView]): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+    def open(data: Unit, metadata: JSONObject): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+    def open(data: Unit, metadata: JSONObject, buffers: js.Array[ArrayBuffer | ArrayBufferView]): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
     def open(data: JSONValue): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+    def open(data: JSONValue, metadata: Unit, buffers: js.Array[ArrayBuffer | ArrayBufferView]): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+    def open(data: JSONValue, metadata: JSONObject): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+    def open(data: JSONValue, metadata: JSONObject, buffers: js.Array[ArrayBuffer | ArrayBufferView]): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
     
     /**
       * Send a `comm_msg` message to the kernel.
@@ -214,25 +197,15 @@ object kernelKernelMod {
       * This is a no-op if the comm has been closed.
       */
     def send(data: JSONValue): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+    def send(data: JSONValue, metadata: Unit, buffers: js.Array[ArrayBuffer | ArrayBufferView]): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
     def send(
       data: JSONValue,
-      metadata: js.UndefOr[scala.Nothing],
-      buffers: js.UndefOr[scala.Nothing],
-      disposeOnDone: Boolean
-    ): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
-    def send(
-      data: JSONValue,
-      metadata: js.UndefOr[scala.Nothing],
-      buffers: js.Array[ArrayBuffer | ArrayBufferView]
-    ): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
-    def send(
-      data: JSONValue,
-      metadata: js.UndefOr[scala.Nothing],
+      metadata: Unit,
       buffers: js.Array[ArrayBuffer | ArrayBufferView],
       disposeOnDone: Boolean
     ): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+    def send(data: JSONValue, metadata: Unit, buffers: Unit, disposeOnDone: Boolean): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
     def send(data: JSONValue, metadata: JSONObject): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
-    def send(data: JSONValue, metadata: JSONObject, buffers: js.UndefOr[scala.Nothing], disposeOnDone: Boolean): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
     def send(data: JSONValue, metadata: JSONObject, buffers: js.Array[ArrayBuffer | ArrayBufferView]): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
     def send(
       data: JSONValue,
@@ -240,6 +213,7 @@ object kernelKernelMod {
       buffers: js.Array[ArrayBuffer | ArrayBufferView],
       disposeOnDone: Boolean
     ): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+    def send(data: JSONValue, metadata: JSONObject, buffers: Unit, disposeOnDone: Boolean): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
     
     /**
       * The target name for the comm channel.
@@ -249,8 +223,9 @@ object kernelKernelMod {
   
   type IControlFuture[REQUEST /* <: IControlMessage[ControlMessageType] */, REPLY /* <: IControlMessage[ControlMessageType] */] = IFuture[REQUEST, REPLY]
   
-  @js.native
-  trait IFuture[REQUEST /* <: IShellControlMessage */, REPLY /* <: IShellControlMessage */] extends IDisposable {
+  trait IFuture[REQUEST /* <: IShellControlMessage */, REPLY /* <: IShellControlMessage */]
+    extends StObject
+       with IDisposable {
     
     /**
       * A promise that resolves when the future is done.
@@ -261,12 +236,12 @@ object kernelKernelMod {
       *
       * The `done` promise resolves to the reply message.
       */
-    val done: js.Promise[REPLY] = js.native
+    val done: js.Promise[REPLY]
     
     /**
       * The original outgoing message.
       */
-    val msg: REQUEST = js.native
+    val msg: REQUEST
     
     /**
       * The iopub handler for the kernel future.
@@ -275,7 +250,7 @@ object kernelKernelMod {
       * If the handler returns a promise, all kernel message processing pauses
       * until the promise is resolved.
       */
-    def onIOPub(msg: IIOPubMessage[IOPubMessageType]): Unit | js.Thenable[Unit] = js.native
+    def onIOPub(msg: IIOPubMessage[IOPubMessageType]): Unit | js.Thenable[Unit]
     
     /**
       * The reply handler for the kernel future.
@@ -286,7 +261,7 @@ object kernelKernelMod {
       * `done` promise also resolves to the reply message after this handler has
       * been called.
       */
-    def onReply(msg: REPLY): Unit | js.Thenable[Unit] = js.native
+    def onReply(msg: REPLY): Unit | js.Thenable[Unit]
     
     /**
       * The stdin handler for the kernel future.
@@ -295,7 +270,7 @@ object kernelKernelMod {
       * If the handler returns a promise, all kernel message processing pauses
       * until the promise is resolved.
       */
-    def onStdin(msg: IStdinMessage[StdinMessageType]): Unit | js.Thenable[Unit] = js.native
+    def onStdin(msg: IStdinMessage[StdinMessageType]): Unit | js.Thenable[Unit]
     
     /**
       * Register hook for IOPub messages.
@@ -316,7 +291,7 @@ object kernelKernelMod {
       * message. If a hook is removed during the hook processing, it will be
       * deactivated immediately.
       */
-    def registerMessageHook(hook: js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Boolean | js.Thenable[Boolean]]): Unit = js.native
+    def registerMessageHook(hook: js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Boolean | js.Thenable[Boolean]]): Unit
     
     /**
       * Remove a hook for IOPub messages.
@@ -326,17 +301,16 @@ object kernelKernelMod {
       * #### Notes
       * If a hook is removed during the hook processing, it will be deactivated immediately.
       */
-    def removeMessageHook(hook: js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Boolean | js.Thenable[Boolean]]): Unit = js.native
+    def removeMessageHook(hook: js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Boolean | js.Thenable[Boolean]]): Unit
     
     /**
       * Send an `input_reply` message.
       */
-    def sendInputReply(content: ReplyContent[IInputReply]): Unit = js.native
+    def sendInputReply(content: ReplyContent[IInputReply]): Unit
   }
   object IFuture {
     
-    @scala.inline
-    def apply[REQUEST /* <: IShellControlMessage */, REPLY /* <: IShellControlMessage */](
+    inline def apply[REQUEST /* <: IShellControlMessage */, REPLY /* <: IShellControlMessage */](
       dispose: () => Unit,
       done: js.Promise[REPLY],
       isDisposed: Boolean,
@@ -352,41 +326,34 @@ object kernelKernelMod {
       __obj.asInstanceOf[IFuture[REQUEST, REPLY]]
     }
     
-    @scala.inline
-    implicit class IFutureMutableBuilder[Self <: IFuture[_, _], REQUEST /* <: IShellControlMessage */, REPLY /* <: IShellControlMessage */] (val x: Self with (IFuture[REQUEST, REPLY])) extends AnyVal {
+    extension [Self <: IFuture[?, ?], REQUEST /* <: IShellControlMessage */, REPLY /* <: IShellControlMessage */](x: Self & (IFuture[REQUEST, REPLY])) {
       
-      @scala.inline
-      def setDone(value: js.Promise[REPLY]): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+      inline def setDone(value: js.Promise[REPLY]): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsg(value: REQUEST): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+      inline def setMsg(value: REQUEST): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnIOPub(value: IIOPubMessage[IOPubMessageType] => Unit | js.Thenable[Unit]): Self = StObject.set(x, "onIOPub", js.Any.fromFunction1(value))
+      inline def setOnIOPub(value: IIOPubMessage[IOPubMessageType] => Unit | js.Thenable[Unit]): Self = StObject.set(x, "onIOPub", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnReply(value: REPLY => Unit | js.Thenable[Unit]): Self = StObject.set(x, "onReply", js.Any.fromFunction1(value))
+      inline def setOnReply(value: REPLY => Unit | js.Thenable[Unit]): Self = StObject.set(x, "onReply", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStdin(value: IStdinMessage[StdinMessageType] => Unit | js.Thenable[Unit]): Self = StObject.set(x, "onStdin", js.Any.fromFunction1(value))
+      inline def setOnStdin(value: IStdinMessage[StdinMessageType] => Unit | js.Thenable[Unit]): Self = StObject.set(x, "onStdin", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterMessageHook(
+      inline def setRegisterMessageHook(
         value: js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Boolean | js.Thenable[Boolean]] => Unit
       ): Self = StObject.set(x, "registerMessageHook", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveMessageHook(
+      inline def setRemoveMessageHook(
         value: js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Boolean | js.Thenable[Boolean]] => Unit
       ): Self = StObject.set(x, "removeMessageHook", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSendInputReply(value: ReplyContent[IInputReply] => Unit): Self = StObject.set(x, "sendInputReply", js.Any.fromFunction1(value))
+      inline def setSendInputReply(value: ReplyContent[IInputReply] => Unit): Self = StObject.set(x, "sendInputReply", js.Any.fromFunction1(value))
     }
   }
   
   @js.native
-  trait IKernelConnection extends IObservableDisposable {
+  trait IKernelConnection
+    extends StObject
+       with IObservableDisposable {
     
     /**
       * A signal emitted when any kernel message is sent or received.
@@ -648,9 +615,9 @@ object kernelKernelMod {
       * **See also:** [[IExecuteReply]]
       */
     def requestExecute(content: Allowstdin): IShellFuture[IExecuteRequestMsg, IExecuteReplyMsg] = js.native
-    def requestExecute(content: Allowstdin, disposeOnDone: js.UndefOr[scala.Nothing], metadata: JSONObject): IShellFuture[IExecuteRequestMsg, IExecuteReplyMsg] = js.native
     def requestExecute(content: Allowstdin, disposeOnDone: Boolean): IShellFuture[IExecuteRequestMsg, IExecuteReplyMsg] = js.native
     def requestExecute(content: Allowstdin, disposeOnDone: Boolean, metadata: JSONObject): IShellFuture[IExecuteRequestMsg, IExecuteReplyMsg] = js.native
+    def requestExecute(content: Allowstdin, disposeOnDone: Unit, metadata: JSONObject): IShellFuture[IExecuteRequestMsg, IExecuteReplyMsg] = js.native
     
     /**
       * Send a `history_request` message.
@@ -732,9 +699,9 @@ object kernelKernelMod {
     def restart(): js.Promise[Unit] = js.native
     
     def sendControlMessage[T /* <: ControlMessageType */](msg: IControlMessage[T]): IControlFuture[IControlMessage[T], IControlMessage[ControlMessageType]] = js.native
-    def sendControlMessage[T /* <: ControlMessageType */](msg: IControlMessage[T], expectReply: js.UndefOr[scala.Nothing], disposeOnDone: Boolean): IControlFuture[IControlMessage[T], IControlMessage[ControlMessageType]] = js.native
     def sendControlMessage[T /* <: ControlMessageType */](msg: IControlMessage[T], expectReply: Boolean): IControlFuture[IControlMessage[T], IControlMessage[ControlMessageType]] = js.native
     def sendControlMessage[T /* <: ControlMessageType */](msg: IControlMessage[T], expectReply: Boolean, disposeOnDone: Boolean): IControlFuture[IControlMessage[T], IControlMessage[ControlMessageType]] = js.native
+    def sendControlMessage[T /* <: ControlMessageType */](msg: IControlMessage[T], expectReply: Unit, disposeOnDone: Boolean): IControlFuture[IControlMessage[T], IControlMessage[ControlMessageType]] = js.native
     
     /**
       * Send an `input_reply` message.
@@ -776,9 +743,9 @@ object kernelKernelMod {
       * If the kernel status is `'dead'`, this will throw an error.
       */
     def sendShellMessage[T /* <: ShellMessageType */](msg: IShellMessage[T]): IShellFuture[IShellMessage[T], IShellMessage[ShellMessageType]] = js.native
-    def sendShellMessage[T /* <: ShellMessageType */](msg: IShellMessage[T], expectReply: js.UndefOr[scala.Nothing], disposeOnDone: Boolean): IShellFuture[IShellMessage[T], IShellMessage[ShellMessageType]] = js.native
     def sendShellMessage[T /* <: ShellMessageType */](msg: IShellMessage[T], expectReply: Boolean): IShellFuture[IShellMessage[T], IShellMessage[ShellMessageType]] = js.native
     def sendShellMessage[T /* <: ShellMessageType */](msg: IShellMessage[T], expectReply: Boolean, disposeOnDone: Boolean): IShellFuture[IShellMessage[T], IShellMessage[ShellMessageType]] = js.native
+    def sendShellMessage[T /* <: ShellMessageType */](msg: IShellMessage[T], expectReply: Unit, disposeOnDone: Boolean): IShellFuture[IShellMessage[T], IShellMessage[ShellMessageType]] = js.native
     
     /**
       * The server settings for the kernel.
@@ -838,13 +805,12 @@ object kernelKernelMod {
     /**
       * The options object used to initialize a kernel.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The unique identifier for the kernel client.
         */
-      var clientId: js.UndefOr[String] = js.native
+      var clientId: js.UndefOr[String] = js.undefined
       
       /**
         * Whether the kernel connection should handle comm messages
@@ -856,67 +822,57 @@ object kernelKernelMod {
         *
         * See https://github.com/jupyter/jupyter_client/issues/263
         */
-      var handleComms: js.UndefOr[Boolean] = js.native
+      var handleComms: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The kernel model.
         */
-      var model: IModel = js.native
+      var model: IModel
       
       /**
         * The server settings for the kernel.
         */
-      var serverSettings: js.UndefOr[ISettings] = js.native
+      var serverSettings: js.UndefOr[ISettings] = js.undefined
       
       /**
         * The username of the kernel client.
         */
-      var username: js.UndefOr[String] = js.native
+      var username: js.UndefOr[String] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(model: IModel): IOptions = {
+      inline def apply(model: IModel): IOptions = {
         val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+        inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+        inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
         
-        @scala.inline
-        def setHandleComms(value: Boolean): Self = StObject.set(x, "handleComms", value.asInstanceOf[js.Any])
+        inline def setHandleComms(value: Boolean): Self = StObject.set(x, "handleComms", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHandleCommsUndefined: Self = StObject.set(x, "handleComms", js.undefined)
+        inline def setHandleCommsUndefined: Self = StObject.set(x, "handleComms", js.undefined)
         
-        @scala.inline
-        def setModel(value: IModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+        inline def setModel(value: IModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServerSettings(value: ISettings): Self = StObject.set(x, "serverSettings", value.asInstanceOf[js.Any])
+        inline def setServerSettings(value: ISettings): Self = StObject.set(x, "serverSettings", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServerSettingsUndefined: Self = StObject.set(x, "serverSettings", js.undefined)
+        inline def setServerSettingsUndefined: Self = StObject.set(x, "serverSettings", js.undefined)
         
-        @scala.inline
-        def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+        inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+        inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
       }
     }
   }
   
   @js.native
   trait IManager
-    extends typings.jupyterlabServices.basemanagerMod.IManager {
+    extends StObject
+       with typings.jupyterlabServices.basemanagerMod.IManager {
     
     /**
       * Connect to an existing kernel.
@@ -988,7 +944,7 @@ object kernelKernelMod {
       * The manager `serverSettings` will be always be used.
       */
     def startNew(): js.Promise[IKernelConnection] = js.native
-    def startNew(createOptions: js.UndefOr[scala.Nothing], connectOptions: OmitIOptionsmodelserverSe): js.Promise[IKernelConnection] = js.native
+    def startNew(createOptions: Unit, connectOptions: OmitIOptionsmodelserverSe): js.Promise[IKernelConnection] = js.native
     def startNew(createOptions: IKernelOptions): js.Promise[IKernelConnection] = js.native
     def startNew(createOptions: IKernelOptions, connectOptions: OmitIOptionsmodelserverSe): js.Promise[IKernelConnection] = js.native
   }

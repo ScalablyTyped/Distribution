@@ -2,32 +2,29 @@ package typings.oracleOraclejet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellDefaults extends StObject {
   
-  var animationDuration: Double = js.native
+  var animationDuration: Double
   
-  var cellDefaults: LabelHalign = js.native
+  var cellDefaults: LabelHalign
   
-  var columnLabelStyle: js.Object = js.native
+  var columnLabelStyle: js.Object
   
-  var columnsTitleStyle: js.Object = js.native
+  var columnsTitleStyle: js.Object
   
-  var hoverBehaviorDelay: Double = js.native
+  var hoverBehaviorDelay: Double
   
-  var nodeDefaults: IconDefaults = js.native
+  var nodeDefaults: IconDefaults
   
-  var rowLabelStyle: js.Object = js.native
+  var rowLabelStyle: js.Object
   
-  var rowsTitleStyle: js.Object = js.native
+  var rowsTitleStyle: js.Object
 }
 object CellDefaults {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     animationDuration: Double,
     cellDefaults: LabelHalign,
     columnLabelStyle: js.Object,
@@ -41,31 +38,22 @@ object CellDefaults {
     __obj.asInstanceOf[CellDefaults]
   }
   
-  @scala.inline
-  implicit class CellDefaultsMutableBuilder[Self <: CellDefaults] (val x: Self) extends AnyVal {
+  extension [Self <: CellDefaults](x: Self) {
     
-    @scala.inline
-    def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+    inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellDefaults(value: LabelHalign): Self = StObject.set(x, "cellDefaults", value.asInstanceOf[js.Any])
+    inline def setCellDefaults(value: LabelHalign): Self = StObject.set(x, "cellDefaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnLabelStyle(value: js.Object): Self = StObject.set(x, "columnLabelStyle", value.asInstanceOf[js.Any])
+    inline def setColumnLabelStyle(value: js.Object): Self = StObject.set(x, "columnLabelStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsTitleStyle(value: js.Object): Self = StObject.set(x, "columnsTitleStyle", value.asInstanceOf[js.Any])
+    inline def setColumnsTitleStyle(value: js.Object): Self = StObject.set(x, "columnsTitleStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverBehaviorDelay(value: Double): Self = StObject.set(x, "hoverBehaviorDelay", value.asInstanceOf[js.Any])
+    inline def setHoverBehaviorDelay(value: Double): Self = StObject.set(x, "hoverBehaviorDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeDefaults(value: IconDefaults): Self = StObject.set(x, "nodeDefaults", value.asInstanceOf[js.Any])
+    inline def setNodeDefaults(value: IconDefaults): Self = StObject.set(x, "nodeDefaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowLabelStyle(value: js.Object): Self = StObject.set(x, "rowLabelStyle", value.asInstanceOf[js.Any])
+    inline def setRowLabelStyle(value: js.Object): Self = StObject.set(x, "rowLabelStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsTitleStyle(value: js.Object): Self = StObject.set(x, "rowsTitleStyle", value.asInstanceOf[js.Any])
+    inline def setRowsTitleStyle(value: js.Object): Self = StObject.set(x, "rowsTitleStyle", value.asInstanceOf[js.Any])
   }
 }

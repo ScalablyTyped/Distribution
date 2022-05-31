@@ -11,7 +11,6 @@ import typings.luminoCommands.mod.CommandRegistry
 import typings.luminoSignaling.mod.ISignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object raweditorMod {
@@ -24,37 +23,37 @@ object raweditorMod {
       */
     def this(options: IOptions) = this()
     
-    var _canRevert: js.Any = js.native
+    /* private */ var _canRevert: js.Any = js.native
     
-    var _canSave: js.Any = js.native
+    /* private */ var _canSave: js.Any = js.native
     
-    var _commands: js.Any = js.native
+    /* private */ var _commands: js.Any = js.native
     
-    var _commandsChanged: js.Any = js.native
+    /* private */ var _commandsChanged: js.Any = js.native
     
-    var _defaults: js.Any = js.native
+    /* private */ var _defaults: js.Any = js.native
     
-    var _inspector: js.Any = js.native
+    /* private */ var _inspector: js.Any = js.native
     
-    var _onSaveError: js.Any = js.native
+    /* private */ var _onSaveError: js.Any = js.native
     
     /**
       * Handle updates to the settings.
       */
-    var _onSettingsChanged: js.Any = js.native
+    /* private */ var _onSettingsChanged: js.Any = js.native
     
     /**
       * Handle text changes in the underlying editor.
       */
-    var _onTextChanged: js.Any = js.native
+    /* private */ var _onTextChanged: js.Any = js.native
     
-    var _settings: js.Any = js.native
+    /* private */ var _settings: js.Any = js.native
     
-    var _toolbar: js.Any = js.native
+    /* private */ var _toolbar: js.Any = js.native
     
-    var _updateToolbar: js.Any = js.native
+    /* private */ var _updateToolbar: js.Any = js.native
     
-    var _user: js.Any = js.native
+    /* private */ var _user: js.Any = js.native
     
     /**
       * Whether the raw editor revert functionality is enabled.
@@ -69,7 +68,7 @@ object raweditorMod {
     /**
       * Emits when the commands passed in at instantiation change.
       */
-    def commandsChanged: ISignal[_, js.Array[String]] = js.native
+    def commandsChanged: ISignal[js.Any, js.Array[String]] = js.native
     
     /**
       * Tests whether the settings have been modified and need saving.
@@ -113,81 +112,73 @@ object raweditorMod {
     /**
       * The toolbar commands and registry for the setting editor toolbar.
       */
-    @js.native
     trait ICommandBundle extends StObject {
       
       /**
         * The command registry.
         */
-      var registry: CommandRegistry = js.native
+      var registry: CommandRegistry
       
       /**
         * The revert command ID.
         */
-      var revert: String = js.native
+      var revert: String
       
       /**
         * The save command ID.
         */
-      var save: String = js.native
+      var save: String
     }
     object ICommandBundle {
       
-      @scala.inline
-      def apply(registry: CommandRegistry, revert: String, save: String): ICommandBundle = {
+      inline def apply(registry: CommandRegistry, revert: String, save: String): ICommandBundle = {
         val __obj = js.Dynamic.literal(registry = registry.asInstanceOf[js.Any], revert = revert.asInstanceOf[js.Any], save = save.asInstanceOf[js.Any])
         __obj.asInstanceOf[ICommandBundle]
       }
       
-      @scala.inline
-      implicit class ICommandBundleMutableBuilder[Self <: ICommandBundle] (val x: Self) extends AnyVal {
+      extension [Self <: ICommandBundle](x: Self) {
         
-        @scala.inline
-        def setRegistry(value: CommandRegistry): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
+        inline def setRegistry(value: CommandRegistry): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRevert(value: String): Self = StObject.set(x, "revert", value.asInstanceOf[js.Any])
+        inline def setRevert(value: String): Self = StObject.set(x, "revert", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSave(value: String): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
+        inline def setSave(value: String): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
       }
     }
     
     /**
       * The instantiation options for a raw editor.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The toolbar commands and registry for the setting editor toolbar.
         */
-      var commands: ICommandBundle = js.native
+      var commands: ICommandBundle
       
       /**
         * The editor factory used by the raw editor.
         */
-      var editorFactory: Factory = js.native
+      var editorFactory: Factory
       
       /**
         * A function the raw editor calls on save errors.
         */
-      def onSaveError(reason: js.Any): Unit = js.native
+      def onSaveError(reason: js.Any): Unit
       
       /**
         * The setting registry used by the editor.
         */
-      var registry: ISettingRegistry = js.native
+      var registry: ISettingRegistry
       
       /**
         * The optional MIME renderer to use for rendering debug messages.
         */
-      var rendermime: js.UndefOr[IRenderMimeRegistry] = js.native
+      var rendermime: js.UndefOr[IRenderMimeRegistry] = js.undefined
     }
     object IOptions {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         commands: ICommandBundle,
         editorFactory: /* options */ typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions => IEditor,
         onSaveError: js.Any => Unit,
@@ -197,26 +188,19 @@ object raweditorMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setCommands(value: ICommandBundle): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+        inline def setCommands(value: ICommandBundle): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEditorFactory(value: /* options */ typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions => IEditor): Self = StObject.set(x, "editorFactory", js.Any.fromFunction1(value))
+        inline def setEditorFactory(value: /* options */ typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions => IEditor): Self = StObject.set(x, "editorFactory", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnSaveError(value: js.Any => Unit): Self = StObject.set(x, "onSaveError", js.Any.fromFunction1(value))
+        inline def setOnSaveError(value: js.Any => Unit): Self = StObject.set(x, "onSaveError", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setRegistry(value: ISettingRegistry): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
+        inline def setRegistry(value: ISettingRegistry): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRendermime(value: IRenderMimeRegistry): Self = StObject.set(x, "rendermime", value.asInstanceOf[js.Any])
+        inline def setRendermime(value: IRenderMimeRegistry): Self = StObject.set(x, "rendermime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRendermimeUndefined: Self = StObject.set(x, "rendermime", js.undefined)
+        inline def setRendermimeUndefined: Self = StObject.set(x, "rendermime", js.undefined)
       }
     }
   }

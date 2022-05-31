@@ -2,10 +2,8 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeMaterialOptimizer extends StObject {
   
   /**
@@ -13,20 +11,17 @@ trait NodeMaterialOptimizer extends StObject {
     * @param vertexOutputNodes defines the list of output nodes for the vertex shader
     * @param fragmentOutputNodes defines the list of output nodes for the fragment shader
     */
-  def optimize(vertexOutputNodes: js.Array[NodeMaterialBlock], fragmentOutputNodes: js.Array[NodeMaterialBlock]): Unit = js.native
+  def optimize(vertexOutputNodes: js.Array[NodeMaterialBlock], fragmentOutputNodes: js.Array[NodeMaterialBlock]): Unit
 }
 object NodeMaterialOptimizer {
   
-  @scala.inline
-  def apply(optimize: (js.Array[NodeMaterialBlock], js.Array[NodeMaterialBlock]) => Unit): NodeMaterialOptimizer = {
+  inline def apply(optimize: (js.Array[NodeMaterialBlock], js.Array[NodeMaterialBlock]) => Unit): NodeMaterialOptimizer = {
     val __obj = js.Dynamic.literal(optimize = js.Any.fromFunction2(optimize))
     __obj.asInstanceOf[NodeMaterialOptimizer]
   }
   
-  @scala.inline
-  implicit class NodeMaterialOptimizerMutableBuilder[Self <: NodeMaterialOptimizer] (val x: Self) extends AnyVal {
+  extension [Self <: NodeMaterialOptimizer](x: Self) {
     
-    @scala.inline
-    def setOptimize(value: (js.Array[NodeMaterialBlock], js.Array[NodeMaterialBlock]) => Unit): Self = StObject.set(x, "optimize", js.Any.fromFunction2(value))
+    inline def setOptimize(value: (js.Array[NodeMaterialBlock], js.Array[NodeMaterialBlock]) => Unit): Self = StObject.set(x, "optimize", js.Any.fromFunction2(value))
   }
 }

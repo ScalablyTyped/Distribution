@@ -7,7 +7,6 @@ import typings.jupyterlabNotebook.modestatusMod.CommandEditStatus.Model
 import typings.jupyterlabNotebook.widgetMod.NotebookMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modestatusMod {
@@ -27,19 +26,19 @@ object modestatusMod {
     @js.native
     class Model () extends VDomModel {
       
-      var _notebook: js.Any = js.native
+      /* private */ var _notebook: js.Any = js.native
       
-      var _notebookMode: js.Any = js.native
+      /* private */ var _notebookMode: js.Any = js.native
       
       /**
         * On a change to the notebook, update the mode.
         */
-      var _onChanged: js.Any = js.native
+      /* private */ var _onChanged: js.Any = js.native
       
       /**
         * Trigger a state change for the renderer.
         */
-      var _triggerChange: js.Any = js.native
+      /* private */ var _triggerChange: js.Any = js.native
       
       /**
         * The current mode of the current notebook.

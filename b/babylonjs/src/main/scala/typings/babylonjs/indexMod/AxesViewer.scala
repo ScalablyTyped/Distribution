@@ -3,7 +3,6 @@ package typings.babylonjs.indexMod
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "AxesViewer")
@@ -21,80 +20,116 @@ class AxesViewer protected ()
     */
   def this(scene: typings.babylonjs.sceneMod.Scene) = this()
   def this(scene: typings.babylonjs.sceneMod.Scene, scaleLines: Double) = this()
-  def this(
-    scene: typings.babylonjs.sceneMod.Scene,
-    scaleLines: js.UndefOr[scala.Nothing],
-    renderingGroupId: Nullable[Double]
-  ) = this()
   def this(scene: typings.babylonjs.sceneMod.Scene, scaleLines: Double, renderingGroupId: Nullable[Double]) = this()
+  def this(scene: typings.babylonjs.sceneMod.Scene, scaleLines: Unit, renderingGroupId: Nullable[Double]) = this()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
-    scaleLines: js.UndefOr[scala.Nothing],
-    renderingGroupId: js.UndefOr[Nullable[Double]],
+    scaleLines: Double,
+    renderingGroupId: Unit,
     xAxis: typings.babylonjs.transformNodeMod.TransformNode
   ) = this()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
     scaleLines: Double,
-    renderingGroupId: js.UndefOr[Nullable[Double]],
+    renderingGroupId: Nullable[Double],
     xAxis: typings.babylonjs.transformNodeMod.TransformNode
   ) = this()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
-    scaleLines: js.UndefOr[scala.Nothing],
-    renderingGroupId: js.UndefOr[Nullable[Double]],
-    xAxis: js.UndefOr[scala.Nothing],
+    scaleLines: Unit,
+    renderingGroupId: Unit,
+    xAxis: typings.babylonjs.transformNodeMod.TransformNode
+  ) = this()
+  def this(
+    scene: typings.babylonjs.sceneMod.Scene,
+    scaleLines: Unit,
+    renderingGroupId: Nullable[Double],
+    xAxis: typings.babylonjs.transformNodeMod.TransformNode
+  ) = this()
+  def this(
+    scene: typings.babylonjs.sceneMod.Scene,
+    scaleLines: Double,
+    renderingGroupId: Unit,
+    xAxis: Unit,
     yAxis: typings.babylonjs.transformNodeMod.TransformNode
   ) = this()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
-    scaleLines: js.UndefOr[scala.Nothing],
-    renderingGroupId: js.UndefOr[Nullable[Double]],
+    scaleLines: Double,
+    renderingGroupId: Unit,
     xAxis: typings.babylonjs.transformNodeMod.TransformNode,
     yAxis: typings.babylonjs.transformNodeMod.TransformNode
   ) = this()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
     scaleLines: Double,
-    renderingGroupId: js.UndefOr[Nullable[Double]],
-    xAxis: js.UndefOr[scala.Nothing],
+    renderingGroupId: Nullable[Double],
+    xAxis: Unit,
     yAxis: typings.babylonjs.transformNodeMod.TransformNode
   ) = this()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
     scaleLines: Double,
-    renderingGroupId: js.UndefOr[Nullable[Double]],
+    renderingGroupId: Nullable[Double],
     xAxis: typings.babylonjs.transformNodeMod.TransformNode,
     yAxis: typings.babylonjs.transformNodeMod.TransformNode
   ) = this()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
-    scaleLines: js.UndefOr[scala.Nothing],
-    renderingGroupId: js.UndefOr[Nullable[Double]],
-    xAxis: js.UndefOr[scala.Nothing],
-    yAxis: js.UndefOr[scala.Nothing],
+    scaleLines: Unit,
+    renderingGroupId: Unit,
+    xAxis: Unit,
+    yAxis: typings.babylonjs.transformNodeMod.TransformNode
+  ) = this()
+  def this(
+    scene: typings.babylonjs.sceneMod.Scene,
+    scaleLines: Unit,
+    renderingGroupId: Unit,
+    xAxis: typings.babylonjs.transformNodeMod.TransformNode,
+    yAxis: typings.babylonjs.transformNodeMod.TransformNode
+  ) = this()
+  def this(
+    scene: typings.babylonjs.sceneMod.Scene,
+    scaleLines: Unit,
+    renderingGroupId: Nullable[Double],
+    xAxis: Unit,
+    yAxis: typings.babylonjs.transformNodeMod.TransformNode
+  ) = this()
+  def this(
+    scene: typings.babylonjs.sceneMod.Scene,
+    scaleLines: Unit,
+    renderingGroupId: Nullable[Double],
+    xAxis: typings.babylonjs.transformNodeMod.TransformNode,
+    yAxis: typings.babylonjs.transformNodeMod.TransformNode
+  ) = this()
+  def this(
+    scene: typings.babylonjs.sceneMod.Scene,
+    scaleLines: Double,
+    renderingGroupId: Unit,
+    xAxis: Unit,
+    yAxis: Unit,
     zAxis: typings.babylonjs.transformNodeMod.TransformNode
   ) = this()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
-    scaleLines: js.UndefOr[scala.Nothing],
-    renderingGroupId: js.UndefOr[Nullable[Double]],
-    xAxis: js.UndefOr[scala.Nothing],
+    scaleLines: Double,
+    renderingGroupId: Unit,
+    xAxis: Unit,
     yAxis: typings.babylonjs.transformNodeMod.TransformNode,
     zAxis: typings.babylonjs.transformNodeMod.TransformNode
   ) = this()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
-    scaleLines: js.UndefOr[scala.Nothing],
-    renderingGroupId: js.UndefOr[Nullable[Double]],
+    scaleLines: Double,
+    renderingGroupId: Unit,
     xAxis: typings.babylonjs.transformNodeMod.TransformNode,
-    yAxis: js.UndefOr[scala.Nothing],
+    yAxis: Unit,
     zAxis: typings.babylonjs.transformNodeMod.TransformNode
   ) = this()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
-    scaleLines: js.UndefOr[scala.Nothing],
-    renderingGroupId: js.UndefOr[Nullable[Double]],
+    scaleLines: Double,
+    renderingGroupId: Unit,
     xAxis: typings.babylonjs.transformNodeMod.TransformNode,
     yAxis: typings.babylonjs.transformNodeMod.TransformNode,
     zAxis: typings.babylonjs.transformNodeMod.TransformNode
@@ -102,31 +137,95 @@ class AxesViewer protected ()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
     scaleLines: Double,
-    renderingGroupId: js.UndefOr[Nullable[Double]],
-    xAxis: js.UndefOr[scala.Nothing],
-    yAxis: js.UndefOr[scala.Nothing],
+    renderingGroupId: Nullable[Double],
+    xAxis: Unit,
+    yAxis: Unit,
     zAxis: typings.babylonjs.transformNodeMod.TransformNode
   ) = this()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
     scaleLines: Double,
-    renderingGroupId: js.UndefOr[Nullable[Double]],
-    xAxis: js.UndefOr[scala.Nothing],
+    renderingGroupId: Nullable[Double],
+    xAxis: Unit,
     yAxis: typings.babylonjs.transformNodeMod.TransformNode,
     zAxis: typings.babylonjs.transformNodeMod.TransformNode
   ) = this()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
     scaleLines: Double,
-    renderingGroupId: js.UndefOr[Nullable[Double]],
+    renderingGroupId: Nullable[Double],
     xAxis: typings.babylonjs.transformNodeMod.TransformNode,
-    yAxis: js.UndefOr[scala.Nothing],
+    yAxis: Unit,
     zAxis: typings.babylonjs.transformNodeMod.TransformNode
   ) = this()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
     scaleLines: Double,
-    renderingGroupId: js.UndefOr[Nullable[Double]],
+    renderingGroupId: Nullable[Double],
+    xAxis: typings.babylonjs.transformNodeMod.TransformNode,
+    yAxis: typings.babylonjs.transformNodeMod.TransformNode,
+    zAxis: typings.babylonjs.transformNodeMod.TransformNode
+  ) = this()
+  def this(
+    scene: typings.babylonjs.sceneMod.Scene,
+    scaleLines: Unit,
+    renderingGroupId: Unit,
+    xAxis: Unit,
+    yAxis: Unit,
+    zAxis: typings.babylonjs.transformNodeMod.TransformNode
+  ) = this()
+  def this(
+    scene: typings.babylonjs.sceneMod.Scene,
+    scaleLines: Unit,
+    renderingGroupId: Unit,
+    xAxis: Unit,
+    yAxis: typings.babylonjs.transformNodeMod.TransformNode,
+    zAxis: typings.babylonjs.transformNodeMod.TransformNode
+  ) = this()
+  def this(
+    scene: typings.babylonjs.sceneMod.Scene,
+    scaleLines: Unit,
+    renderingGroupId: Unit,
+    xAxis: typings.babylonjs.transformNodeMod.TransformNode,
+    yAxis: Unit,
+    zAxis: typings.babylonjs.transformNodeMod.TransformNode
+  ) = this()
+  def this(
+    scene: typings.babylonjs.sceneMod.Scene,
+    scaleLines: Unit,
+    renderingGroupId: Unit,
+    xAxis: typings.babylonjs.transformNodeMod.TransformNode,
+    yAxis: typings.babylonjs.transformNodeMod.TransformNode,
+    zAxis: typings.babylonjs.transformNodeMod.TransformNode
+  ) = this()
+  def this(
+    scene: typings.babylonjs.sceneMod.Scene,
+    scaleLines: Unit,
+    renderingGroupId: Nullable[Double],
+    xAxis: Unit,
+    yAxis: Unit,
+    zAxis: typings.babylonjs.transformNodeMod.TransformNode
+  ) = this()
+  def this(
+    scene: typings.babylonjs.sceneMod.Scene,
+    scaleLines: Unit,
+    renderingGroupId: Nullable[Double],
+    xAxis: Unit,
+    yAxis: typings.babylonjs.transformNodeMod.TransformNode,
+    zAxis: typings.babylonjs.transformNodeMod.TransformNode
+  ) = this()
+  def this(
+    scene: typings.babylonjs.sceneMod.Scene,
+    scaleLines: Unit,
+    renderingGroupId: Nullable[Double],
+    xAxis: typings.babylonjs.transformNodeMod.TransformNode,
+    yAxis: Unit,
+    zAxis: typings.babylonjs.transformNodeMod.TransformNode
+  ) = this()
+  def this(
+    scene: typings.babylonjs.sceneMod.Scene,
+    scaleLines: Unit,
+    renderingGroupId: Nullable[Double],
     xAxis: typings.babylonjs.transformNodeMod.TransformNode,
     yAxis: typings.babylonjs.transformNodeMod.TransformNode,
     zAxis: typings.babylonjs.transformNodeMod.TransformNode
@@ -142,6 +241,5 @@ object AxesViewer {
   @JSImport("babylonjs/index", "AxesViewer._SetRenderingGroupId")
   @js.native
   def _SetRenderingGroupId: js.Any = js.native
-  @scala.inline
-  def _SetRenderingGroupId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SetRenderingGroupId")(x.asInstanceOf[js.Any])
+  inline def _SetRenderingGroupId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SetRenderingGroupId")(x.asInstanceOf[js.Any])
 }

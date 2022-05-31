@@ -5,7 +5,6 @@ import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object emitterTypesIndexMod {
@@ -29,29 +28,29 @@ object emitterTypesIndexMod {
   class ConeParticleEmitter ()
     extends typings.babylonjs.coneParticleEmitterMod.ConeParticleEmitter {
     def this(radius: Double) = this()
-    def this(radius: js.UndefOr[scala.Nothing], angle: Double) = this()
     def this(radius: Double, angle: Double) = this()
+    def this(radius: Unit, angle: Double) = this()
     def this(
-      radius: js.UndefOr[scala.Nothing],
-      angle: js.UndefOr[scala.Nothing],
-      /** defines how much to randomize the particle direction [0-1] (default is 0) */
-    directionRandomizer: Double
-    ) = this()
-    def this(
-      radius: js.UndefOr[scala.Nothing],
+      radius: Double,
       angle: Double,
       /** defines how much to randomize the particle direction [0-1] (default is 0) */
     directionRandomizer: Double
     ) = this()
     def this(
       radius: Double,
-      angle: js.UndefOr[scala.Nothing],
+      angle: Unit,
       /** defines how much to randomize the particle direction [0-1] (default is 0) */
     directionRandomizer: Double
     ) = this()
     def this(
-      radius: Double,
+      radius: Unit,
       angle: Double,
+      /** defines how much to randomize the particle direction [0-1] (default is 0) */
+    directionRandomizer: Double
+    ) = this()
+    def this(
+      radius: Unit,
+      angle: Unit,
       /** defines how much to randomize the particle direction [0-1] (default is 0) */
     directionRandomizer: Double
     ) = this()
@@ -78,75 +77,12 @@ object emitterTypesIndexMod {
   class CylinderDirectedParticleEmitter ()
     extends typings.babylonjs.cylinderParticleEmitterMod.CylinderDirectedParticleEmitter {
     def this(radius: Double) = this()
-    def this(radius: js.UndefOr[scala.Nothing], height: Double) = this()
     def this(radius: Double, height: Double) = this()
-    def this(radius: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], radiusRange: Double) = this()
-    def this(radius: js.UndefOr[scala.Nothing], height: Double, radiusRange: Double) = this()
-    def this(radius: Double, height: js.UndefOr[scala.Nothing], radiusRange: Double) = this()
+    def this(radius: Unit, height: Double) = this()
     def this(radius: Double, height: Double, radiusRange: Double) = this()
-    def this(
-      radius: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      radiusRange: js.UndefOr[scala.Nothing],
-      /**
-      * The min limit of the emission direction.
-      */
-    direction1: Vector3
-    ) = this()
-    def this(
-      radius: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      radiusRange: Double,
-      /**
-      * The min limit of the emission direction.
-      */
-    direction1: Vector3
-    ) = this()
-    def this(
-      radius: js.UndefOr[scala.Nothing],
-      height: Double,
-      radiusRange: js.UndefOr[scala.Nothing],
-      /**
-      * The min limit of the emission direction.
-      */
-    direction1: Vector3
-    ) = this()
-    def this(
-      radius: js.UndefOr[scala.Nothing],
-      height: Double,
-      radiusRange: Double,
-      /**
-      * The min limit of the emission direction.
-      */
-    direction1: Vector3
-    ) = this()
-    def this(
-      radius: Double,
-      height: js.UndefOr[scala.Nothing],
-      radiusRange: js.UndefOr[scala.Nothing],
-      /**
-      * The min limit of the emission direction.
-      */
-    direction1: Vector3
-    ) = this()
-    def this(
-      radius: Double,
-      height: js.UndefOr[scala.Nothing],
-      radiusRange: Double,
-      /**
-      * The min limit of the emission direction.
-      */
-    direction1: Vector3
-    ) = this()
-    def this(
-      radius: Double,
-      height: Double,
-      radiusRange: js.UndefOr[scala.Nothing],
-      /**
-      * The min limit of the emission direction.
-      */
-    direction1: Vector3
-    ) = this()
+    def this(radius: Double, height: Unit, radiusRange: Double) = this()
+    def this(radius: Unit, height: Double, radiusRange: Double) = this()
+    def this(radius: Unit, height: Unit, radiusRange: Double) = this()
     def this(
       radius: Double,
       height: Double,
@@ -157,98 +93,83 @@ object emitterTypesIndexMod {
     direction1: Vector3
     ) = this()
     def this(
-      radius: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      radiusRange: js.UndefOr[scala.Nothing],
+      radius: Double,
+      height: Double,
+      radiusRange: Unit,
       /**
       * The min limit of the emission direction.
       */
-    direction1: js.UndefOr[scala.Nothing],
-      /**
-      * The max limit of the emission direction.
-      */
-    direction2: Vector3
+    direction1: Vector3
     ) = this()
     def this(
-      radius: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      radiusRange: js.UndefOr[scala.Nothing],
-      /**
-      * The min limit of the emission direction.
-      */
-    direction1: Vector3,
-      /**
-      * The max limit of the emission direction.
-      */
-    direction2: Vector3
-    ) = this()
-    def this(
-      radius: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
+      radius: Double,
+      height: Unit,
       radiusRange: Double,
       /**
       * The min limit of the emission direction.
       */
-    direction1: js.UndefOr[scala.Nothing],
-      /**
-      * The max limit of the emission direction.
-      */
-    direction2: Vector3
+    direction1: Vector3
     ) = this()
     def this(
-      radius: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      radiusRange: Double,
+      radius: Double,
+      height: Unit,
+      radiusRange: Unit,
       /**
       * The min limit of the emission direction.
       */
-    direction1: Vector3,
-      /**
-      * The max limit of the emission direction.
-      */
-    direction2: Vector3
+    direction1: Vector3
     ) = this()
     def this(
-      radius: js.UndefOr[scala.Nothing],
-      height: Double,
-      radiusRange: js.UndefOr[scala.Nothing],
-      /**
-      * The min limit of the emission direction.
-      */
-    direction1: js.UndefOr[scala.Nothing],
-      /**
-      * The max limit of the emission direction.
-      */
-    direction2: Vector3
-    ) = this()
-    def this(
-      radius: js.UndefOr[scala.Nothing],
-      height: Double,
-      radiusRange: js.UndefOr[scala.Nothing],
-      /**
-      * The min limit of the emission direction.
-      */
-    direction1: Vector3,
-      /**
-      * The max limit of the emission direction.
-      */
-    direction2: Vector3
-    ) = this()
-    def this(
-      radius: js.UndefOr[scala.Nothing],
+      radius: Unit,
       height: Double,
       radiusRange: Double,
       /**
       * The min limit of the emission direction.
       */
-    direction1: js.UndefOr[scala.Nothing],
+    direction1: Vector3
+    ) = this()
+    def this(
+      radius: Unit,
+      height: Double,
+      radiusRange: Unit,
+      /**
+      * The min limit of the emission direction.
+      */
+    direction1: Vector3
+    ) = this()
+    def this(
+      radius: Unit,
+      height: Unit,
+      radiusRange: Double,
+      /**
+      * The min limit of the emission direction.
+      */
+    direction1: Vector3
+    ) = this()
+    def this(
+      radius: Unit,
+      height: Unit,
+      radiusRange: Unit,
+      /**
+      * The min limit of the emission direction.
+      */
+    direction1: Vector3
+    ) = this()
+    def this(
+      radius: Double,
+      height: Double,
+      radiusRange: Double,
+      /**
+      * The min limit of the emission direction.
+      */
+    direction1: Unit,
       /**
       * The max limit of the emission direction.
       */
     direction2: Vector3
     ) = this()
     def this(
-      radius: js.UndefOr[scala.Nothing],
+      radius: Double,
       height: Double,
       radiusRange: Double,
       /**
@@ -262,12 +183,12 @@ object emitterTypesIndexMod {
     ) = this()
     def this(
       radius: Double,
-      height: js.UndefOr[scala.Nothing],
-      radiusRange: js.UndefOr[scala.Nothing],
+      height: Double,
+      radiusRange: Unit,
       /**
       * The min limit of the emission direction.
       */
-    direction1: js.UndefOr[scala.Nothing],
+    direction1: Unit,
       /**
       * The max limit of the emission direction.
       */
@@ -275,8 +196,8 @@ object emitterTypesIndexMod {
     ) = this()
     def this(
       radius: Double,
-      height: js.UndefOr[scala.Nothing],
-      radiusRange: js.UndefOr[scala.Nothing],
+      height: Double,
+      radiusRange: Unit,
       /**
       * The min limit of the emission direction.
       */
@@ -288,12 +209,12 @@ object emitterTypesIndexMod {
     ) = this()
     def this(
       radius: Double,
-      height: js.UndefOr[scala.Nothing],
+      height: Unit,
       radiusRange: Double,
       /**
       * The min limit of the emission direction.
       */
-    direction1: js.UndefOr[scala.Nothing],
+    direction1: Unit,
       /**
       * The max limit of the emission direction.
       */
@@ -301,7 +222,7 @@ object emitterTypesIndexMod {
     ) = this()
     def this(
       radius: Double,
-      height: js.UndefOr[scala.Nothing],
+      height: Unit,
       radiusRange: Double,
       /**
       * The min limit of the emission direction.
@@ -314,12 +235,12 @@ object emitterTypesIndexMod {
     ) = this()
     def this(
       radius: Double,
-      height: Double,
-      radiusRange: js.UndefOr[scala.Nothing],
+      height: Unit,
+      radiusRange: Unit,
       /**
       * The min limit of the emission direction.
       */
-    direction1: js.UndefOr[scala.Nothing],
+    direction1: Unit,
       /**
       * The max limit of the emission direction.
       */
@@ -327,8 +248,8 @@ object emitterTypesIndexMod {
     ) = this()
     def this(
       radius: Double,
-      height: Double,
-      radiusRange: js.UndefOr[scala.Nothing],
+      height: Unit,
+      radiusRange: Unit,
       /**
       * The min limit of the emission direction.
       */
@@ -339,22 +260,100 @@ object emitterTypesIndexMod {
     direction2: Vector3
     ) = this()
     def this(
-      radius: Double,
+      radius: Unit,
       height: Double,
       radiusRange: Double,
       /**
       * The min limit of the emission direction.
       */
-    direction1: js.UndefOr[scala.Nothing],
+    direction1: Unit,
       /**
       * The max limit of the emission direction.
       */
     direction2: Vector3
     ) = this()
     def this(
-      radius: Double,
+      radius: Unit,
       height: Double,
       radiusRange: Double,
+      /**
+      * The min limit of the emission direction.
+      */
+    direction1: Vector3,
+      /**
+      * The max limit of the emission direction.
+      */
+    direction2: Vector3
+    ) = this()
+    def this(
+      radius: Unit,
+      height: Double,
+      radiusRange: Unit,
+      /**
+      * The min limit of the emission direction.
+      */
+    direction1: Unit,
+      /**
+      * The max limit of the emission direction.
+      */
+    direction2: Vector3
+    ) = this()
+    def this(
+      radius: Unit,
+      height: Double,
+      radiusRange: Unit,
+      /**
+      * The min limit of the emission direction.
+      */
+    direction1: Vector3,
+      /**
+      * The max limit of the emission direction.
+      */
+    direction2: Vector3
+    ) = this()
+    def this(
+      radius: Unit,
+      height: Unit,
+      radiusRange: Double,
+      /**
+      * The min limit of the emission direction.
+      */
+    direction1: Unit,
+      /**
+      * The max limit of the emission direction.
+      */
+    direction2: Vector3
+    ) = this()
+    def this(
+      radius: Unit,
+      height: Unit,
+      radiusRange: Double,
+      /**
+      * The min limit of the emission direction.
+      */
+    direction1: Vector3,
+      /**
+      * The max limit of the emission direction.
+      */
+    direction2: Vector3
+    ) = this()
+    def this(
+      radius: Unit,
+      height: Unit,
+      radiusRange: Unit,
+      /**
+      * The min limit of the emission direction.
+      */
+    direction1: Unit,
+      /**
+      * The max limit of the emission direction.
+      */
+    direction2: Vector3
+    ) = this()
+    def this(
+      radius: Unit,
+      height: Unit,
+      radiusRange: Unit,
       /**
       * The min limit of the emission direction.
       */
@@ -385,7 +384,17 @@ object emitterTypesIndexMod {
       /**
       * The radius of the emission cylinder.
       */
-    radius: js.UndefOr[scala.Nothing],
+    radius: Double,
+      /**
+      * The height of the emission cylinder.
+      */
+    height: Double
+    ) = this()
+    def this(
+      /**
+      * The radius of the emission cylinder.
+      */
+    radius: Unit,
       /**
       * The height of the emission cylinder.
       */
@@ -399,30 +408,6 @@ object emitterTypesIndexMod {
       /**
       * The height of the emission cylinder.
       */
-    height: Double
-    ) = this()
-    def this(
-      /**
-      * The radius of the emission cylinder.
-      */
-    radius: js.UndefOr[scala.Nothing],
-      /**
-      * The height of the emission cylinder.
-      */
-    height: js.UndefOr[scala.Nothing],
-      /**
-      * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
-      */
-    radiusRange: Double
-    ) = this()
-    def this(
-      /**
-      * The radius of the emission cylinder.
-      */
-    radius: js.UndefOr[scala.Nothing],
-      /**
-      * The height of the emission cylinder.
-      */
     height: Double,
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
@@ -437,7 +422,35 @@ object emitterTypesIndexMod {
       /**
       * The height of the emission cylinder.
       */
-    height: js.UndefOr[scala.Nothing],
+    height: Unit,
+      /**
+      * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
+      */
+    radiusRange: Double
+    ) = this()
+    def this(
+      /**
+      * The radius of the emission cylinder.
+      */
+    radius: Unit,
+      /**
+      * The height of the emission cylinder.
+      */
+    height: Double,
+      /**
+      * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
+      */
+    radiusRange: Double
+    ) = this()
+    def this(
+      /**
+      * The radius of the emission cylinder.
+      */
+    radius: Unit,
+      /**
+      * The height of the emission cylinder.
+      */
+    height: Unit,
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
       */
@@ -448,74 +461,6 @@ object emitterTypesIndexMod {
       * The radius of the emission cylinder.
       */
     radius: Double,
-      /**
-      * The height of the emission cylinder.
-      */
-    height: Double,
-      /**
-      * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
-      */
-    radiusRange: Double
-    ) = this()
-    def this(
-      /**
-      * The radius of the emission cylinder.
-      */
-    radius: js.UndefOr[scala.Nothing],
-      /**
-      * The height of the emission cylinder.
-      */
-    height: js.UndefOr[scala.Nothing],
-      /**
-      * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
-      */
-    radiusRange: js.UndefOr[scala.Nothing],
-      /**
-      * How much to randomize the particle direction [0-1].
-      */
-    directionRandomizer: Double
-    ) = this()
-    def this(
-      /**
-      * The radius of the emission cylinder.
-      */
-    radius: js.UndefOr[scala.Nothing],
-      /**
-      * The height of the emission cylinder.
-      */
-    height: js.UndefOr[scala.Nothing],
-      /**
-      * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
-      */
-    radiusRange: Double,
-      /**
-      * How much to randomize the particle direction [0-1].
-      */
-    directionRandomizer: Double
-    ) = this()
-    def this(
-      /**
-      * The radius of the emission cylinder.
-      */
-    radius: js.UndefOr[scala.Nothing],
-      /**
-      * The height of the emission cylinder.
-      */
-    height: Double,
-      /**
-      * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
-      */
-    radiusRange: js.UndefOr[scala.Nothing],
-      /**
-      * How much to randomize the particle direction [0-1].
-      */
-    directionRandomizer: Double
-    ) = this()
-    def this(
-      /**
-      * The radius of the emission cylinder.
-      */
-    radius: js.UndefOr[scala.Nothing],
       /**
       * The height of the emission cylinder.
       */
@@ -537,11 +482,11 @@ object emitterTypesIndexMod {
       /**
       * The height of the emission cylinder.
       */
-    height: js.UndefOr[scala.Nothing],
+    height: Double,
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
       */
-    radiusRange: js.UndefOr[scala.Nothing],
+    radiusRange: Unit,
       /**
       * How much to randomize the particle direction [0-1].
       */
@@ -555,7 +500,7 @@ object emitterTypesIndexMod {
       /**
       * The height of the emission cylinder.
       */
-    height: js.UndefOr[scala.Nothing],
+    height: Unit,
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
       */
@@ -573,11 +518,11 @@ object emitterTypesIndexMod {
       /**
       * The height of the emission cylinder.
       */
-    height: Double,
+    height: Unit,
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
       */
-    radiusRange: js.UndefOr[scala.Nothing],
+    radiusRange: Unit,
       /**
       * How much to randomize the particle direction [0-1].
       */
@@ -587,7 +532,7 @@ object emitterTypesIndexMod {
       /**
       * The radius of the emission cylinder.
       */
-    radius: Double,
+    radius: Unit,
       /**
       * The height of the emission cylinder.
       */
@@ -596,6 +541,60 @@ object emitterTypesIndexMod {
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
       */
     radiusRange: Double,
+      /**
+      * How much to randomize the particle direction [0-1].
+      */
+    directionRandomizer: Double
+    ) = this()
+    def this(
+      /**
+      * The radius of the emission cylinder.
+      */
+    radius: Unit,
+      /**
+      * The height of the emission cylinder.
+      */
+    height: Double,
+      /**
+      * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
+      */
+    radiusRange: Unit,
+      /**
+      * How much to randomize the particle direction [0-1].
+      */
+    directionRandomizer: Double
+    ) = this()
+    def this(
+      /**
+      * The radius of the emission cylinder.
+      */
+    radius: Unit,
+      /**
+      * The height of the emission cylinder.
+      */
+    height: Unit,
+      /**
+      * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
+      */
+    radiusRange: Double,
+      /**
+      * How much to randomize the particle direction [0-1].
+      */
+    directionRandomizer: Double
+    ) = this()
+    def this(
+      /**
+      * The radius of the emission cylinder.
+      */
+    radius: Unit,
+      /**
+      * The height of the emission cylinder.
+      */
+    height: Unit,
+      /**
+      * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
+      */
+    radiusRange: Unit,
       /**
       * How much to randomize the particle direction [0-1].
       */
@@ -621,16 +620,6 @@ object emitterTypesIndexMod {
       /**
       * The radius of the emission hemisphere.
       */
-    radius: js.UndefOr[scala.Nothing],
-      /**
-      * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
-      */
-    radiusRange: Double
-    ) = this()
-    def this(
-      /**
-      * The radius of the emission hemisphere.
-      */
     radius: Double,
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
@@ -641,21 +630,17 @@ object emitterTypesIndexMod {
       /**
       * The radius of the emission hemisphere.
       */
-    radius: js.UndefOr[scala.Nothing],
+    radius: Unit,
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
       */
-    radiusRange: js.UndefOr[scala.Nothing],
-      /**
-      * How much to randomize the particle direction [0-1].
-      */
-    directionRandomizer: Double
+    radiusRange: Double
     ) = this()
     def this(
       /**
       * The radius of the emission hemisphere.
       */
-    radius: js.UndefOr[scala.Nothing],
+    radius: Double,
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
       */
@@ -673,7 +658,7 @@ object emitterTypesIndexMod {
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
       */
-    radiusRange: js.UndefOr[scala.Nothing],
+    radiusRange: Unit,
       /**
       * How much to randomize the particle direction [0-1].
       */
@@ -683,11 +668,25 @@ object emitterTypesIndexMod {
       /**
       * The radius of the emission hemisphere.
       */
-    radius: Double,
+    radius: Unit,
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
       */
     radiusRange: Double,
+      /**
+      * How much to randomize the particle direction [0-1].
+      */
+    directionRandomizer: Double
+    ) = this()
+    def this(
+      /**
+      * The radius of the emission hemisphere.
+      */
+    radius: Unit,
+      /**
+      * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
+      */
+    radiusRange: Unit,
       /**
       * How much to randomize the particle direction [0-1].
       */
@@ -725,30 +724,27 @@ object emitterTypesIndexMod {
   class SphereDirectedParticleEmitter ()
     extends typings.babylonjs.sphereParticleEmitterMod.SphereDirectedParticleEmitter {
     def this(radius: Double) = this()
-    def this(
-      radius: js.UndefOr[scala.Nothing],
-      /**
-      * The min limit of the emission direction.
-      */
-    direction1: Vector3
-    ) = this()
     def this(radius: Double, /**
       * The min limit of the emission direction.
       */
     direction1: Vector3) = this()
+    def this(radius: Unit, /**
+      * The min limit of the emission direction.
+      */
+    direction1: Vector3) = this()
     def this(
-      radius: js.UndefOr[scala.Nothing],
+      radius: Double,
       /**
       * The min limit of the emission direction.
       */
-    direction1: js.UndefOr[scala.Nothing],
+    direction1: Unit,
       /**
       * The max limit of the emission direction.
       */
     direction2: Vector3
     ) = this()
     def this(
-      radius: js.UndefOr[scala.Nothing],
+      radius: Double,
       /**
       * The min limit of the emission direction.
       */
@@ -759,18 +755,18 @@ object emitterTypesIndexMod {
     direction2: Vector3
     ) = this()
     def this(
-      radius: Double,
+      radius: Unit,
       /**
       * The min limit of the emission direction.
       */
-    direction1: js.UndefOr[scala.Nothing],
+    direction1: Unit,
       /**
       * The max limit of the emission direction.
       */
     direction2: Vector3
     ) = this()
     def this(
-      radius: Double,
+      radius: Unit,
       /**
       * The min limit of the emission direction.
       */
@@ -800,16 +796,6 @@ object emitterTypesIndexMod {
       /**
       * The radius of the emission sphere.
       */
-    radius: js.UndefOr[scala.Nothing],
-      /**
-      * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
-      */
-    radiusRange: Double
-    ) = this()
-    def this(
-      /**
-      * The radius of the emission sphere.
-      */
     radius: Double,
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
@@ -820,21 +806,17 @@ object emitterTypesIndexMod {
       /**
       * The radius of the emission sphere.
       */
-    radius: js.UndefOr[scala.Nothing],
+    radius: Unit,
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
       */
-    radiusRange: js.UndefOr[scala.Nothing],
-      /**
-      * How much to randomize the particle direction [0-1].
-      */
-    directionRandomizer: Double
+    radiusRange: Double
     ) = this()
     def this(
       /**
       * The radius of the emission sphere.
       */
-    radius: js.UndefOr[scala.Nothing],
+    radius: Double,
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
       */
@@ -852,7 +834,7 @@ object emitterTypesIndexMod {
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
       */
-    radiusRange: js.UndefOr[scala.Nothing],
+    radiusRange: Unit,
       /**
       * How much to randomize the particle direction [0-1].
       */
@@ -862,11 +844,25 @@ object emitterTypesIndexMod {
       /**
       * The radius of the emission sphere.
       */
-    radius: Double,
+    radius: Unit,
       /**
       * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
       */
     radiusRange: Double,
+      /**
+      * How much to randomize the particle direction [0-1].
+      */
+    directionRandomizer: Double
+    ) = this()
+    def this(
+      /**
+      * The radius of the emission sphere.
+      */
+    radius: Unit,
+      /**
+      * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
+      */
+    radiusRange: Unit,
       /**
       * How much to randomize the particle direction [0-1].
       */

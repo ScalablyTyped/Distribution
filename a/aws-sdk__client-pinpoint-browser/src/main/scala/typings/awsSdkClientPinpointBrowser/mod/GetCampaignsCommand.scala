@@ -1,5 +1,6 @@
 package typings.awsSdkClientPinpointBrowser.mod
 
+import typings.awsSdkClientPinpointBrowser.typesGetCampaignsInputMod.GetCampaignsInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class GetCampaignsCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.getCampaignsCommandMod.GetCampaignsCommand {
-  def this(input: typings.awsSdkClientPinpointBrowser.typesGetCampaignsInputMod.GetCampaignsInput) = this()
+  def this(input: GetCampaignsInput) = this()
 }

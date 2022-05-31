@@ -17,14 +17,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object jws {
   
   /**
-    * IntDate class for time representation for JSON Web Token(JWT)
-    * @description
-    * Utility class for IntDate which is integer representation of UNIX origin time
-    * used in JSON Web Token(JWT).
-    */
-  object IntDate
-  
-  /**
     * JSON Web Signature(JWS) class.
     * @see ['jwjws'(JWS JavaScript Library) home page](https://kjur.github.io/jsjws/)
     * @see ['jwrsasign'(RSA Sign JavaScript Library) home page](https://kjur.github.io/jsrsasigns/)

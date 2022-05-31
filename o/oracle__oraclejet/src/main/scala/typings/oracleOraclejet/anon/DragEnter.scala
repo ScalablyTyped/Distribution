@@ -2,26 +2,23 @@ package typings.oracleOraclejet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DragEnter extends StObject {
   
-  var dataTypes: String | js.Array[String] = js.native
+  var dataTypes: String | js.Array[String]
   
-  def dragEnter(param0: typings.std.Event, param1: js.Object): Unit = js.native
+  def dragEnter(param0: typings.std.Event, param1: js.Object): Unit
   
-  def dragLeave(param0: typings.std.Event, param1: js.Object): Unit = js.native
+  def dragLeave(param0: typings.std.Event, param1: js.Object): Unit
   
-  def dragOver(param0: typings.std.Event, param1: js.Object): Unit = js.native
+  def dragOver(param0: typings.std.Event, param1: js.Object): Unit
   
-  def drop(param0: typings.std.Event, param1: js.Object): Unit = js.native
+  def drop(param0: typings.std.Event, param1: js.Object): Unit
 }
 object DragEnter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dataTypes: String | js.Array[String],
     dragEnter: (typings.std.Event, js.Object) => Unit,
     dragLeave: (typings.std.Event, js.Object) => Unit,
@@ -32,25 +29,18 @@ object DragEnter {
     __obj.asInstanceOf[DragEnter]
   }
   
-  @scala.inline
-  implicit class DragEnterMutableBuilder[Self <: DragEnter] (val x: Self) extends AnyVal {
+  extension [Self <: DragEnter](x: Self) {
     
-    @scala.inline
-    def setDataTypes(value: String | js.Array[String]): Self = StObject.set(x, "dataTypes", value.asInstanceOf[js.Any])
+    inline def setDataTypes(value: String | js.Array[String]): Self = StObject.set(x, "dataTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTypesVarargs(value: String*): Self = StObject.set(x, "dataTypes", js.Array(value :_*))
+    inline def setDataTypesVarargs(value: String*): Self = StObject.set(x, "dataTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setDragEnter(value: (typings.std.Event, js.Object) => Unit): Self = StObject.set(x, "dragEnter", js.Any.fromFunction2(value))
+    inline def setDragEnter(value: (typings.std.Event, js.Object) => Unit): Self = StObject.set(x, "dragEnter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDragLeave(value: (typings.std.Event, js.Object) => Unit): Self = StObject.set(x, "dragLeave", js.Any.fromFunction2(value))
+    inline def setDragLeave(value: (typings.std.Event, js.Object) => Unit): Self = StObject.set(x, "dragLeave", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDragOver(value: (typings.std.Event, js.Object) => Unit): Self = StObject.set(x, "dragOver", js.Any.fromFunction2(value))
+    inline def setDragOver(value: (typings.std.Event, js.Object) => Unit): Self = StObject.set(x, "dragOver", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDrop(value: (typings.std.Event, js.Object) => Unit): Self = StObject.set(x, "drop", js.Any.fromFunction2(value))
+    inline def setDrop(value: (typings.std.Event, js.Object) => Unit): Self = StObject.set(x, "drop", js.Any.fromFunction2(value))
   }
 }

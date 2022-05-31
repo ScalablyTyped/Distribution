@@ -9,7 +9,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bonesIndexMod {
@@ -46,7 +45,7 @@ object bonesIndexMod {
       */
     name: String,
       skeleton: typings.babylonjs.skeletonMod.Skeleton,
-      parentBone: js.UndefOr[Nullable[typings.babylonjs.boneMod.Bone]],
+      parentBone: Unit,
       localMatrix: Nullable[Matrix]
     ) = this()
     def this(
@@ -55,8 +54,17 @@ object bonesIndexMod {
       */
     name: String,
       skeleton: typings.babylonjs.skeletonMod.Skeleton,
-      parentBone: js.UndefOr[Nullable[typings.babylonjs.boneMod.Bone]],
-      localMatrix: js.UndefOr[Nullable[Matrix]],
+      parentBone: Nullable[typings.babylonjs.boneMod.Bone],
+      localMatrix: Nullable[Matrix]
+    ) = this()
+    def this(
+      /**
+      * defines the bone name
+      */
+    name: String,
+      skeleton: typings.babylonjs.skeletonMod.Skeleton,
+      parentBone: Unit,
+      localMatrix: Unit,
       restPose: Nullable[Matrix]
     ) = this()
     def this(
@@ -65,9 +73,39 @@ object bonesIndexMod {
       */
     name: String,
       skeleton: typings.babylonjs.skeletonMod.Skeleton,
-      parentBone: js.UndefOr[Nullable[typings.babylonjs.boneMod.Bone]],
-      localMatrix: js.UndefOr[Nullable[Matrix]],
-      restPose: js.UndefOr[Nullable[Matrix]],
+      parentBone: Unit,
+      localMatrix: Nullable[Matrix],
+      restPose: Nullable[Matrix]
+    ) = this()
+    def this(
+      /**
+      * defines the bone name
+      */
+    name: String,
+      skeleton: typings.babylonjs.skeletonMod.Skeleton,
+      parentBone: Nullable[typings.babylonjs.boneMod.Bone],
+      localMatrix: Unit,
+      restPose: Nullable[Matrix]
+    ) = this()
+    def this(
+      /**
+      * defines the bone name
+      */
+    name: String,
+      skeleton: typings.babylonjs.skeletonMod.Skeleton,
+      parentBone: Nullable[typings.babylonjs.boneMod.Bone],
+      localMatrix: Nullable[Matrix],
+      restPose: Nullable[Matrix]
+    ) = this()
+    def this(
+      /**
+      * defines the bone name
+      */
+    name: String,
+      skeleton: typings.babylonjs.skeletonMod.Skeleton,
+      parentBone: Unit,
+      localMatrix: Unit,
+      restPose: Unit,
       baseMatrix: Nullable[Matrix]
     ) = this()
     def this(
@@ -76,10 +114,267 @@ object bonesIndexMod {
       */
     name: String,
       skeleton: typings.babylonjs.skeletonMod.Skeleton,
-      parentBone: js.UndefOr[Nullable[typings.babylonjs.boneMod.Bone]],
-      localMatrix: js.UndefOr[Nullable[Matrix]],
-      restPose: js.UndefOr[Nullable[Matrix]],
-      baseMatrix: js.UndefOr[Nullable[Matrix]],
+      parentBone: Unit,
+      localMatrix: Unit,
+      restPose: Nullable[Matrix],
+      baseMatrix: Nullable[Matrix]
+    ) = this()
+    def this(
+      /**
+      * defines the bone name
+      */
+    name: String,
+      skeleton: typings.babylonjs.skeletonMod.Skeleton,
+      parentBone: Unit,
+      localMatrix: Nullable[Matrix],
+      restPose: Unit,
+      baseMatrix: Nullable[Matrix]
+    ) = this()
+    def this(
+      /**
+      * defines the bone name
+      */
+    name: String,
+      skeleton: typings.babylonjs.skeletonMod.Skeleton,
+      parentBone: Unit,
+      localMatrix: Nullable[Matrix],
+      restPose: Nullable[Matrix],
+      baseMatrix: Nullable[Matrix]
+    ) = this()
+    def this(
+      /**
+      * defines the bone name
+      */
+    name: String,
+      skeleton: typings.babylonjs.skeletonMod.Skeleton,
+      parentBone: Nullable[typings.babylonjs.boneMod.Bone],
+      localMatrix: Unit,
+      restPose: Unit,
+      baseMatrix: Nullable[Matrix]
+    ) = this()
+    def this(
+      /**
+      * defines the bone name
+      */
+    name: String,
+      skeleton: typings.babylonjs.skeletonMod.Skeleton,
+      parentBone: Nullable[typings.babylonjs.boneMod.Bone],
+      localMatrix: Unit,
+      restPose: Nullable[Matrix],
+      baseMatrix: Nullable[Matrix]
+    ) = this()
+    def this(
+      /**
+      * defines the bone name
+      */
+    name: String,
+      skeleton: typings.babylonjs.skeletonMod.Skeleton,
+      parentBone: Nullable[typings.babylonjs.boneMod.Bone],
+      localMatrix: Nullable[Matrix],
+      restPose: Unit,
+      baseMatrix: Nullable[Matrix]
+    ) = this()
+    def this(
+      /**
+      * defines the bone name
+      */
+    name: String,
+      skeleton: typings.babylonjs.skeletonMod.Skeleton,
+      parentBone: Nullable[typings.babylonjs.boneMod.Bone],
+      localMatrix: Nullable[Matrix],
+      restPose: Nullable[Matrix],
+      baseMatrix: Nullable[Matrix]
+    ) = this()
+    def this(
+      /**
+      * defines the bone name
+      */
+    name: String,
+      skeleton: typings.babylonjs.skeletonMod.Skeleton,
+      parentBone: Unit,
+      localMatrix: Unit,
+      restPose: Unit,
+      baseMatrix: Unit,
+      index: Nullable[Double]
+    ) = this()
+    def this(
+      /**
+      * defines the bone name
+      */
+    name: String,
+      skeleton: typings.babylonjs.skeletonMod.Skeleton,
+      parentBone: Unit,
+      localMatrix: Unit,
+      restPose: Unit,
+      baseMatrix: Nullable[Matrix],
+      index: Nullable[Double]
+    ) = this()
+    def this(
+      /**
+      * defines the bone name
+      */
+    name: String,
+      skeleton: typings.babylonjs.skeletonMod.Skeleton,
+      parentBone: Unit,
+      localMatrix: Unit,
+      restPose: Nullable[Matrix],
+      baseMatrix: Unit,
+      index: Nullable[Double]
+    ) = this()
+    def this(
+      /**
+      * defines the bone name
+      */
+    name: String,
+      skeleton: typings.babylonjs.skeletonMod.Skeleton,
+      parentBone: Unit,
+      localMatrix: Unit,
+      restPose: Nullable[Matrix],
+      baseMatrix: Nullable[Matrix],
+      index: Nullable[Double]
+    ) = this()
+    def this(
+      /**
+      * defines the bone name
+      */
+    name: String,
+      skeleton: typings.babylonjs.skeletonMod.Skeleton,
+      parentBone: Unit,
+      localMatrix: Nullable[Matrix],
+      restPose: Unit,
+      baseMatrix: Unit,
+      index: Nullable[Double]
+    ) = this()
+    def this(
+      /**
+      * defines the bone name
+      */
+    name: String,
+      skeleton: typings.babylonjs.skeletonMod.Skeleton,
+      parentBone: Unit,
+      localMatrix: Nullable[Matrix],
+      restPose: Unit,
+      baseMatrix: Nullable[Matrix],
+      index: Nullable[Double]
+    ) = this()
+    def this(
+      /**
+      * defines the bone name
+      */
+    name: String,
+      skeleton: typings.babylonjs.skeletonMod.Skeleton,
+      parentBone: Unit,
+      localMatrix: Nullable[Matrix],
+      restPose: Nullable[Matrix],
+      baseMatrix: Unit,
+      index: Nullable[Double]
+    ) = this()
+    def this(
+      /**
+      * defines the bone name
+      */
+    name: String,
+      skeleton: typings.babylonjs.skeletonMod.Skeleton,
+      parentBone: Unit,
+      localMatrix: Nullable[Matrix],
+      restPose: Nullable[Matrix],
+      baseMatrix: Nullable[Matrix],
+      index: Nullable[Double]
+    ) = this()
+    def this(
+      /**
+      * defines the bone name
+      */
+    name: String,
+      skeleton: typings.babylonjs.skeletonMod.Skeleton,
+      parentBone: Nullable[typings.babylonjs.boneMod.Bone],
+      localMatrix: Unit,
+      restPose: Unit,
+      baseMatrix: Unit,
+      index: Nullable[Double]
+    ) = this()
+    def this(
+      /**
+      * defines the bone name
+      */
+    name: String,
+      skeleton: typings.babylonjs.skeletonMod.Skeleton,
+      parentBone: Nullable[typings.babylonjs.boneMod.Bone],
+      localMatrix: Unit,
+      restPose: Unit,
+      baseMatrix: Nullable[Matrix],
+      index: Nullable[Double]
+    ) = this()
+    def this(
+      /**
+      * defines the bone name
+      */
+    name: String,
+      skeleton: typings.babylonjs.skeletonMod.Skeleton,
+      parentBone: Nullable[typings.babylonjs.boneMod.Bone],
+      localMatrix: Unit,
+      restPose: Nullable[Matrix],
+      baseMatrix: Unit,
+      index: Nullable[Double]
+    ) = this()
+    def this(
+      /**
+      * defines the bone name
+      */
+    name: String,
+      skeleton: typings.babylonjs.skeletonMod.Skeleton,
+      parentBone: Nullable[typings.babylonjs.boneMod.Bone],
+      localMatrix: Unit,
+      restPose: Nullable[Matrix],
+      baseMatrix: Nullable[Matrix],
+      index: Nullable[Double]
+    ) = this()
+    def this(
+      /**
+      * defines the bone name
+      */
+    name: String,
+      skeleton: typings.babylonjs.skeletonMod.Skeleton,
+      parentBone: Nullable[typings.babylonjs.boneMod.Bone],
+      localMatrix: Nullable[Matrix],
+      restPose: Unit,
+      baseMatrix: Unit,
+      index: Nullable[Double]
+    ) = this()
+    def this(
+      /**
+      * defines the bone name
+      */
+    name: String,
+      skeleton: typings.babylonjs.skeletonMod.Skeleton,
+      parentBone: Nullable[typings.babylonjs.boneMod.Bone],
+      localMatrix: Nullable[Matrix],
+      restPose: Unit,
+      baseMatrix: Nullable[Matrix],
+      index: Nullable[Double]
+    ) = this()
+    def this(
+      /**
+      * defines the bone name
+      */
+    name: String,
+      skeleton: typings.babylonjs.skeletonMod.Skeleton,
+      parentBone: Nullable[typings.babylonjs.boneMod.Bone],
+      localMatrix: Nullable[Matrix],
+      restPose: Nullable[Matrix],
+      baseMatrix: Unit,
+      index: Nullable[Double]
+    ) = this()
+    def this(
+      /**
+      * defines the bone name
+      */
+    name: String,
+      skeleton: typings.babylonjs.skeletonMod.Skeleton,
+      parentBone: Nullable[typings.babylonjs.boneMod.Bone],
+      localMatrix: Nullable[Matrix],
+      restPose: Nullable[Matrix],
+      baseMatrix: Nullable[Matrix],
       index: Nullable[Double]
     ) = this()
   }
@@ -93,20 +388,17 @@ object bonesIndexMod {
     @JSImport("babylonjs/Bones/index", "Bone._tmpMats")
     @js.native
     def _tmpMats: js.Any = js.native
-    @scala.inline
-    def _tmpMats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpMats")(x.asInstanceOf[js.Any])
+    inline def _tmpMats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpMats")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Bones/index", "Bone._tmpQuat")
     @js.native
     def _tmpQuat: js.Any = js.native
-    @scala.inline
-    def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
+    inline def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Bones/index", "Bone._tmpVecs")
     @js.native
     def _tmpVecs: js.Any = js.native
-    @scala.inline
-    def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
+    inline def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Bones/index", "BoneIKController")
@@ -132,20 +424,17 @@ object bonesIndexMod {
     @JSImport("babylonjs/Bones/index", "BoneIKController._tmpMats")
     @js.native
     def _tmpMats: js.Any = js.native
-    @scala.inline
-    def _tmpMats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpMats")(x.asInstanceOf[js.Any])
+    inline def _tmpMats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpMats")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Bones/index", "BoneIKController._tmpQuat")
     @js.native
     def _tmpQuat: js.Any = js.native
-    @scala.inline
-    def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
+    inline def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Bones/index", "BoneIKController._tmpVecs")
     @js.native
     def _tmpVecs: js.Any = js.native
-    @scala.inline
-    def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
+    inline def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Bones/index", "BoneLookController")
@@ -184,20 +473,17 @@ object bonesIndexMod {
     @JSImport("babylonjs/Bones/index", "BoneLookController._tmpMats")
     @js.native
     def _tmpMats: js.Any = js.native
-    @scala.inline
-    def _tmpMats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpMats")(x.asInstanceOf[js.Any])
+    inline def _tmpMats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpMats")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Bones/index", "BoneLookController._tmpQuat")
     @js.native
     def _tmpQuat: js.Any = js.native
-    @scala.inline
-    def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
+    inline def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Bones/index", "BoneLookController._tmpVecs")
     @js.native
     def _tmpVecs: js.Any = js.native
-    @scala.inline
-    def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
+    inline def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Bones/index", "Skeleton")
@@ -221,13 +507,10 @@ object bonesIndexMod {
   /* static members */
   object Skeleton {
     
-    @JSImport("babylonjs/Bones/index", "Skeleton.MakeAnimationAdditive")
+    @JSImport("babylonjs/Bones/index", "Skeleton")
     @js.native
-    def MakeAnimationAdditive(
-      skeleton: typings.babylonjs.skeletonMod.Skeleton,
-      referenceFrame: js.UndefOr[scala.Nothing],
-      range: String
-    ): Nullable[typings.babylonjs.skeletonMod.Skeleton] = js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Convert the keyframes for a range of animation on a skeleton to be relative to a given reference frame.
       * @param skeleton defines the Skeleton containing the animation range to convert
@@ -235,9 +518,8 @@ object bonesIndexMod {
       * @param range defines the name of the AnimationRange belonging to the Skeleton to convert
       * @returns the original skeleton
       */
-    @JSImport("babylonjs/Bones/index", "Skeleton.MakeAnimationAdditive")
-    @js.native
-    def MakeAnimationAdditive(skeleton: typings.babylonjs.skeletonMod.Skeleton, referenceFrame: Double, range: String): Nullable[typings.babylonjs.skeletonMod.Skeleton] = js.native
+    inline def MakeAnimationAdditive(skeleton: typings.babylonjs.skeletonMod.Skeleton, referenceFrame: Double, range: String): Nullable[typings.babylonjs.skeletonMod.Skeleton] = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(skeleton.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.skeletonMod.Skeleton]]
+    inline def MakeAnimationAdditive(skeleton: typings.babylonjs.skeletonMod.Skeleton, referenceFrame: Unit, range: String): Nullable[typings.babylonjs.skeletonMod.Skeleton] = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(skeleton.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.skeletonMod.Skeleton]]
     
     /**
       * Creates a new skeleton from serialized data
@@ -245,8 +527,6 @@ object bonesIndexMod {
       * @param scene defines the hosting scene
       * @returns a new skeleton
       */
-    @JSImport("babylonjs/Bones/index", "Skeleton.Parse")
-    @js.native
-    def Parse(parsedSkeleton: js.Any, scene: Scene): typings.babylonjs.skeletonMod.Skeleton = js.native
+    inline def Parse(parsedSkeleton: js.Any, scene: Scene): typings.babylonjs.skeletonMod.Skeleton = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSkeleton.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.skeletonMod.Skeleton]
   }
 }

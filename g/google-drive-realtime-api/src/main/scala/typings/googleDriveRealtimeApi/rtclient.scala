@@ -171,7 +171,4 @@ object rtclient {
   trait RealtimeLoaderFactory
     extends StObject
        with Instantiable1[/* options */ LoaderOptions, RealtimeLoader]
-  
-  // INCOMPLETE
-  object params
 }

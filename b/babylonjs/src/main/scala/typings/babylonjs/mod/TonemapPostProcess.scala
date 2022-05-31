@@ -2,7 +2,6 @@ package typings.babylonjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "TonemapPostProcess")
@@ -40,15 +39,6 @@ class TonemapPostProcess protected ()
     /** Defines the required exposure adjustement */
   exposureAdjustment: Double,
     camera: typings.babylonjs.cameraMod.Camera,
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: typings.babylonjs.engineMod.Engine
-  ) = this()
-  def this(
-    name: String,
-    _operator: typings.babylonjs.tonemapPostProcessMod.TonemappingOperator,
-    /** Defines the required exposure adjustement */
-  exposureAdjustment: Double,
-    camera: typings.babylonjs.cameraMod.Camera,
     samplingMode: Double,
     engine: typings.babylonjs.engineMod.Engine
   ) = this()
@@ -58,8 +48,17 @@ class TonemapPostProcess protected ()
     /** Defines the required exposure adjustement */
   exposureAdjustment: Double,
     camera: typings.babylonjs.cameraMod.Camera,
-    samplingMode: js.UndefOr[scala.Nothing],
-    engine: js.UndefOr[scala.Nothing],
+    samplingMode: Unit,
+    engine: typings.babylonjs.engineMod.Engine
+  ) = this()
+  def this(
+    name: String,
+    _operator: typings.babylonjs.tonemapPostProcessMod.TonemappingOperator,
+    /** Defines the required exposure adjustement */
+  exposureAdjustment: Double,
+    camera: typings.babylonjs.cameraMod.Camera,
+    samplingMode: Double,
+    engine: Unit,
     textureFormat: Double
   ) = this()
   def this(
@@ -68,7 +67,7 @@ class TonemapPostProcess protected ()
     /** Defines the required exposure adjustement */
   exposureAdjustment: Double,
     camera: typings.babylonjs.cameraMod.Camera,
-    samplingMode: js.UndefOr[scala.Nothing],
+    samplingMode: Double,
     engine: typings.babylonjs.engineMod.Engine,
     textureFormat: Double
   ) = this()
@@ -78,8 +77,8 @@ class TonemapPostProcess protected ()
     /** Defines the required exposure adjustement */
   exposureAdjustment: Double,
     camera: typings.babylonjs.cameraMod.Camera,
-    samplingMode: Double,
-    engine: js.UndefOr[scala.Nothing],
+    samplingMode: Unit,
+    engine: Unit,
     textureFormat: Double
   ) = this()
   def this(
@@ -88,7 +87,7 @@ class TonemapPostProcess protected ()
     /** Defines the required exposure adjustement */
   exposureAdjustment: Double,
     camera: typings.babylonjs.cameraMod.Camera,
-    samplingMode: Double,
+    samplingMode: Unit,
     engine: typings.babylonjs.engineMod.Engine,
     textureFormat: Double
   ) = this()

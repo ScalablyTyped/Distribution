@@ -2,25 +2,24 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AssetsManager extends StObject {
   
-  var _decreaseWaitingTasksCount: js.Any = js.native
+  /* private */ var _decreaseWaitingTasksCount: js.Any = js.native
   
-  var _isLoading: js.Any = js.native
+  /* private */ var _isLoading: js.Any = js.native
   
-  var _runTask: js.Any = js.native
+  /* private */ var _runTask: js.Any = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
-  var _tasks: js.Array[AbstractAssetTask] = js.native
+  /* protected */ var _tasks: js.Array[AbstractAssetTask] = js.native
   
-  var _totalTasksCount: Double = js.native
+  /* protected */ var _totalTasksCount: Double = js.native
   
-  var _waitingTasksCount: Double = js.native
+  /* protected */ var _waitingTasksCount: Double = js.native
   
   /**
     * Add a BinaryFileAssetTask to the list of active tasks
@@ -50,29 +49,7 @@ trait AssetsManager extends StObject {
     * @returns a new CubeTextureAssetTask object
     */
   def addCubeTextureTask(taskName: String, url: String): CubeTextureAssetTask = js.native
-  def addCubeTextureTask(
-    taskName: String,
-    url: String,
-    extensions: js.UndefOr[scala.Nothing],
-    noMipmap: js.UndefOr[scala.Nothing],
-    files: js.Array[String]
-  ): CubeTextureAssetTask = js.native
-  def addCubeTextureTask(taskName: String, url: String, extensions: js.UndefOr[scala.Nothing], noMipmap: Boolean): CubeTextureAssetTask = js.native
-  def addCubeTextureTask(
-    taskName: String,
-    url: String,
-    extensions: js.UndefOr[scala.Nothing],
-    noMipmap: Boolean,
-    files: js.Array[String]
-  ): CubeTextureAssetTask = js.native
   def addCubeTextureTask(taskName: String, url: String, extensions: js.Array[String]): CubeTextureAssetTask = js.native
-  def addCubeTextureTask(
-    taskName: String,
-    url: String,
-    extensions: js.Array[String],
-    noMipmap: js.UndefOr[scala.Nothing],
-    files: js.Array[String]
-  ): CubeTextureAssetTask = js.native
   def addCubeTextureTask(taskName: String, url: String, extensions: js.Array[String], noMipmap: Boolean): CubeTextureAssetTask = js.native
   def addCubeTextureTask(
     taskName: String,
@@ -81,6 +58,16 @@ trait AssetsManager extends StObject {
     noMipmap: Boolean,
     files: js.Array[String]
   ): CubeTextureAssetTask = js.native
+  def addCubeTextureTask(
+    taskName: String,
+    url: String,
+    extensions: js.Array[String],
+    noMipmap: Unit,
+    files: js.Array[String]
+  ): CubeTextureAssetTask = js.native
+  def addCubeTextureTask(taskName: String, url: String, extensions: Unit, noMipmap: Boolean): CubeTextureAssetTask = js.native
+  def addCubeTextureTask(taskName: String, url: String, extensions: Unit, noMipmap: Boolean, files: js.Array[String]): CubeTextureAssetTask = js.native
+  def addCubeTextureTask(taskName: String, url: String, extensions: Unit, noMipmap: Unit, files: js.Array[String]): CubeTextureAssetTask = js.native
   
   /**
     *
@@ -94,15 +81,9 @@ trait AssetsManager extends StObject {
     * @returns a new EquiRectangularCubeTextureAssetTask object
     */
   def addEquiRectangularCubeTextureAssetTask(taskName: String, url: String, size: Double): EquiRectangularCubeTextureAssetTask = js.native
-  def addEquiRectangularCubeTextureAssetTask(
-    taskName: String,
-    url: String,
-    size: Double,
-    noMipmap: js.UndefOr[scala.Nothing],
-    gammaSpace: Boolean
-  ): EquiRectangularCubeTextureAssetTask = js.native
   def addEquiRectangularCubeTextureAssetTask(taskName: String, url: String, size: Double, noMipmap: Boolean): EquiRectangularCubeTextureAssetTask = js.native
   def addEquiRectangularCubeTextureAssetTask(taskName: String, url: String, size: Double, noMipmap: Boolean, gammaSpace: Boolean): EquiRectangularCubeTextureAssetTask = js.native
+  def addEquiRectangularCubeTextureAssetTask(taskName: String, url: String, size: Double, noMipmap: Unit, gammaSpace: Boolean): EquiRectangularCubeTextureAssetTask = js.native
   
   /**
     *
@@ -117,92 +98,7 @@ trait AssetsManager extends StObject {
     * @returns a new HDRCubeTextureAssetTask object
     */
   def addHDRCubeTextureTask(taskName: String, url: String, size: Double): HDRCubeTextureAssetTask = js.native
-  def addHDRCubeTextureTask(
-    taskName: String,
-    url: String,
-    size: Double,
-    noMipmap: js.UndefOr[scala.Nothing],
-    generateHarmonics: js.UndefOr[scala.Nothing],
-    gammaSpace: js.UndefOr[scala.Nothing],
-    reserved: Boolean
-  ): HDRCubeTextureAssetTask = js.native
-  def addHDRCubeTextureTask(
-    taskName: String,
-    url: String,
-    size: Double,
-    noMipmap: js.UndefOr[scala.Nothing],
-    generateHarmonics: js.UndefOr[scala.Nothing],
-    gammaSpace: Boolean
-  ): HDRCubeTextureAssetTask = js.native
-  def addHDRCubeTextureTask(
-    taskName: String,
-    url: String,
-    size: Double,
-    noMipmap: js.UndefOr[scala.Nothing],
-    generateHarmonics: js.UndefOr[scala.Nothing],
-    gammaSpace: Boolean,
-    reserved: Boolean
-  ): HDRCubeTextureAssetTask = js.native
-  def addHDRCubeTextureTask(
-    taskName: String,
-    url: String,
-    size: Double,
-    noMipmap: js.UndefOr[scala.Nothing],
-    generateHarmonics: Boolean
-  ): HDRCubeTextureAssetTask = js.native
-  def addHDRCubeTextureTask(
-    taskName: String,
-    url: String,
-    size: Double,
-    noMipmap: js.UndefOr[scala.Nothing],
-    generateHarmonics: Boolean,
-    gammaSpace: js.UndefOr[scala.Nothing],
-    reserved: Boolean
-  ): HDRCubeTextureAssetTask = js.native
-  def addHDRCubeTextureTask(
-    taskName: String,
-    url: String,
-    size: Double,
-    noMipmap: js.UndefOr[scala.Nothing],
-    generateHarmonics: Boolean,
-    gammaSpace: Boolean
-  ): HDRCubeTextureAssetTask = js.native
-  def addHDRCubeTextureTask(
-    taskName: String,
-    url: String,
-    size: Double,
-    noMipmap: js.UndefOr[scala.Nothing],
-    generateHarmonics: Boolean,
-    gammaSpace: Boolean,
-    reserved: Boolean
-  ): HDRCubeTextureAssetTask = js.native
   def addHDRCubeTextureTask(taskName: String, url: String, size: Double, noMipmap: Boolean): HDRCubeTextureAssetTask = js.native
-  def addHDRCubeTextureTask(
-    taskName: String,
-    url: String,
-    size: Double,
-    noMipmap: Boolean,
-    generateHarmonics: js.UndefOr[scala.Nothing],
-    gammaSpace: js.UndefOr[scala.Nothing],
-    reserved: Boolean
-  ): HDRCubeTextureAssetTask = js.native
-  def addHDRCubeTextureTask(
-    taskName: String,
-    url: String,
-    size: Double,
-    noMipmap: Boolean,
-    generateHarmonics: js.UndefOr[scala.Nothing],
-    gammaSpace: Boolean
-  ): HDRCubeTextureAssetTask = js.native
-  def addHDRCubeTextureTask(
-    taskName: String,
-    url: String,
-    size: Double,
-    noMipmap: Boolean,
-    generateHarmonics: js.UndefOr[scala.Nothing],
-    gammaSpace: Boolean,
-    reserved: Boolean
-  ): HDRCubeTextureAssetTask = js.native
   def addHDRCubeTextureTask(taskName: String, url: String, size: Double, noMipmap: Boolean, generateHarmonics: Boolean): HDRCubeTextureAssetTask = js.native
   def addHDRCubeTextureTask(
     taskName: String,
@@ -210,15 +106,6 @@ trait AssetsManager extends StObject {
     size: Double,
     noMipmap: Boolean,
     generateHarmonics: Boolean,
-    gammaSpace: js.UndefOr[scala.Nothing],
-    reserved: Boolean
-  ): HDRCubeTextureAssetTask = js.native
-  def addHDRCubeTextureTask(
-    taskName: String,
-    url: String,
-    size: Double,
-    noMipmap: Boolean,
-    generateHarmonics: Boolean,
     gammaSpace: Boolean
   ): HDRCubeTextureAssetTask = js.native
   def addHDRCubeTextureTask(
@@ -228,6 +115,94 @@ trait AssetsManager extends StObject {
     noMipmap: Boolean,
     generateHarmonics: Boolean,
     gammaSpace: Boolean,
+    reserved: Boolean
+  ): HDRCubeTextureAssetTask = js.native
+  def addHDRCubeTextureTask(
+    taskName: String,
+    url: String,
+    size: Double,
+    noMipmap: Boolean,
+    generateHarmonics: Boolean,
+    gammaSpace: Unit,
+    reserved: Boolean
+  ): HDRCubeTextureAssetTask = js.native
+  def addHDRCubeTextureTask(
+    taskName: String,
+    url: String,
+    size: Double,
+    noMipmap: Boolean,
+    generateHarmonics: Unit,
+    gammaSpace: Boolean
+  ): HDRCubeTextureAssetTask = js.native
+  def addHDRCubeTextureTask(
+    taskName: String,
+    url: String,
+    size: Double,
+    noMipmap: Boolean,
+    generateHarmonics: Unit,
+    gammaSpace: Boolean,
+    reserved: Boolean
+  ): HDRCubeTextureAssetTask = js.native
+  def addHDRCubeTextureTask(
+    taskName: String,
+    url: String,
+    size: Double,
+    noMipmap: Boolean,
+    generateHarmonics: Unit,
+    gammaSpace: Unit,
+    reserved: Boolean
+  ): HDRCubeTextureAssetTask = js.native
+  def addHDRCubeTextureTask(taskName: String, url: String, size: Double, noMipmap: Unit, generateHarmonics: Boolean): HDRCubeTextureAssetTask = js.native
+  def addHDRCubeTextureTask(
+    taskName: String,
+    url: String,
+    size: Double,
+    noMipmap: Unit,
+    generateHarmonics: Boolean,
+    gammaSpace: Boolean
+  ): HDRCubeTextureAssetTask = js.native
+  def addHDRCubeTextureTask(
+    taskName: String,
+    url: String,
+    size: Double,
+    noMipmap: Unit,
+    generateHarmonics: Boolean,
+    gammaSpace: Boolean,
+    reserved: Boolean
+  ): HDRCubeTextureAssetTask = js.native
+  def addHDRCubeTextureTask(
+    taskName: String,
+    url: String,
+    size: Double,
+    noMipmap: Unit,
+    generateHarmonics: Boolean,
+    gammaSpace: Unit,
+    reserved: Boolean
+  ): HDRCubeTextureAssetTask = js.native
+  def addHDRCubeTextureTask(
+    taskName: String,
+    url: String,
+    size: Double,
+    noMipmap: Unit,
+    generateHarmonics: Unit,
+    gammaSpace: Boolean
+  ): HDRCubeTextureAssetTask = js.native
+  def addHDRCubeTextureTask(
+    taskName: String,
+    url: String,
+    size: Double,
+    noMipmap: Unit,
+    generateHarmonics: Unit,
+    gammaSpace: Boolean,
+    reserved: Boolean
+  ): HDRCubeTextureAssetTask = js.native
+  def addHDRCubeTextureTask(
+    taskName: String,
+    url: String,
+    size: Double,
+    noMipmap: Unit,
+    generateHarmonics: Unit,
+    gammaSpace: Unit,
     reserved: Boolean
   ): HDRCubeTextureAssetTask = js.native
   
@@ -267,31 +242,13 @@ trait AssetsManager extends StObject {
     * @returns a new TextureAssetTask object
     */
   def addTextureTask(taskName: String, url: String): TextureAssetTask = js.native
-  def addTextureTask(
-    taskName: String,
-    url: String,
-    noMipmap: js.UndefOr[scala.Nothing],
-    invertY: js.UndefOr[scala.Nothing],
-    samplingMode: Double
-  ): TextureAssetTask = js.native
-  def addTextureTask(taskName: String, url: String, noMipmap: js.UndefOr[scala.Nothing], invertY: Boolean): TextureAssetTask = js.native
-  def addTextureTask(
-    taskName: String,
-    url: String,
-    noMipmap: js.UndefOr[scala.Nothing],
-    invertY: Boolean,
-    samplingMode: Double
-  ): TextureAssetTask = js.native
   def addTextureTask(taskName: String, url: String, noMipmap: Boolean): TextureAssetTask = js.native
-  def addTextureTask(
-    taskName: String,
-    url: String,
-    noMipmap: Boolean,
-    invertY: js.UndefOr[scala.Nothing],
-    samplingMode: Double
-  ): TextureAssetTask = js.native
   def addTextureTask(taskName: String, url: String, noMipmap: Boolean, invertY: Boolean): TextureAssetTask = js.native
   def addTextureTask(taskName: String, url: String, noMipmap: Boolean, invertY: Boolean, samplingMode: Double): TextureAssetTask = js.native
+  def addTextureTask(taskName: String, url: String, noMipmap: Boolean, invertY: Unit, samplingMode: Double): TextureAssetTask = js.native
+  def addTextureTask(taskName: String, url: String, noMipmap: Unit, invertY: Boolean): TextureAssetTask = js.native
+  def addTextureTask(taskName: String, url: String, noMipmap: Unit, invertY: Boolean, samplingMode: Double): TextureAssetTask = js.native
+  def addTextureTask(taskName: String, url: String, noMipmap: Unit, invertY: Unit, samplingMode: Double): TextureAssetTask = js.native
   
   /**
     * Gets or sets a boolean defining if the AssetsManager should automatically hide the loading screen

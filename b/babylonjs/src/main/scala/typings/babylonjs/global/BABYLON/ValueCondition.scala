@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.ValueCondition")
 @js.native
 class ValueCondition protected ()
-  extends typings.babylonjs.BABYLON.ValueCondition {
+  extends StObject
+     with typings.babylonjs.BABYLON.ValueCondition {
   /**
     * Creates a new ValueCondition
     * @param actionManager manager for the action the condition applies to
@@ -35,6 +35,95 @@ class ValueCondition protected ()
     /** the conditional operator, default ValueCondition.IsEqual */
   operator: Double
   ) = this()
+  
+  /**
+    * Internal only - manager for action
+    * @hidden
+    */
+  /* CompleteClass */
+  var _actionManager: typings.babylonjs.BABYLON.ActionManager = js.native
+  
+  /**
+    * Internal only
+    * @hidden
+    */
+  /* CompleteClass */
+  var _currentResult: Boolean = js.native
+  
+  /**
+    * Internal only
+    * @hidden
+    */
+  /* private */ /* CompleteClass */
+  var _effectiveTarget: js.Any = js.native
+  
+  /**
+    * Internal only
+    * @hidden
+    */
+  /* CompleteClass */
+  var _evaluationId: Double = js.native
+  
+  /**
+    * Internal only
+    * @hidden
+    */
+  /* CompleteClass */
+  override def _getEffectiveTarget(target: js.Any, propertyPath: String): js.Any = js.native
+  
+  /**
+    * Internal only
+    * @hidden
+    */
+  /* CompleteClass */
+  override def _getProperty(propertyPath: String): String = js.native
+  
+  /**
+    * Internal only
+    * @hidden
+    */
+  /* private */ /* CompleteClass */
+  var _property: js.Any = js.native
+  
+  /**
+    * Internal only
+    * @hidden
+    */
+  /* protected */ /* CompleteClass */
+  override def _serialize(serializedCondition: js.Any): js.Any = js.native
+  
+  /**
+    * Internal only
+    * @hidden
+    */
+  /* private */ /* CompleteClass */
+  var _target: js.Any = js.native
+  
+  /**
+    * Check if the current condition is valid
+    * @returns a boolean
+    */
+  /* CompleteClass */
+  override def isValid(): Boolean = js.native
+  
+  /** the conditional operator, default ValueCondition.IsEqual */
+  /* CompleteClass */
+  var operator: Double = js.native
+  
+  /** path to specify the property of the target the conditional operator uses  */
+  /* CompleteClass */
+  var propertyPath: String = js.native
+  
+  /**
+    * Serialize placeholder for child classes
+    * @returns the serialized object
+    */
+  /* CompleteClass */
+  override def serialize(): js.Any = js.native
+  
+  /** the value compared by the conditional operator against the current value of the property */
+  /* CompleteClass */
+  var value: js.Any = js.native
 }
 /* static members */
 object ValueCondition {
@@ -48,9 +137,7 @@ object ValueCondition {
     * @param operator the conditional operator
     * @returns the name
     */
-  @JSGlobal("BABYLON.ValueCondition.GetOperatorName")
-  @js.native
-  def GetOperatorName(operator: Double): String = js.native
+  inline def GetOperatorName(operator: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetOperatorName")(operator.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Internal only
@@ -59,8 +146,7 @@ object ValueCondition {
   @JSGlobal("BABYLON.ValueCondition._IsDifferent")
   @js.native
   def _IsDifferent: js.Any = js.native
-  @scala.inline
-  def _IsDifferent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsDifferent")(x.asInstanceOf[js.Any])
+  inline def _IsDifferent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsDifferent")(x.asInstanceOf[js.Any])
   
   /**
     * Internal only
@@ -69,8 +155,7 @@ object ValueCondition {
   @JSGlobal("BABYLON.ValueCondition._IsEqual")
   @js.native
   def _IsEqual: js.Any = js.native
-  @scala.inline
-  def _IsEqual_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsEqual")(x.asInstanceOf[js.Any])
+  inline def _IsEqual_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsEqual")(x.asInstanceOf[js.Any])
   
   /**
     * Internal only
@@ -79,8 +164,7 @@ object ValueCondition {
   @JSGlobal("BABYLON.ValueCondition._IsGreater")
   @js.native
   def _IsGreater: js.Any = js.native
-  @scala.inline
-  def _IsGreater_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsGreater")(x.asInstanceOf[js.Any])
+  inline def _IsGreater_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsGreater")(x.asInstanceOf[js.Any])
   
   /**
     * Internal only
@@ -89,6 +173,5 @@ object ValueCondition {
   @JSGlobal("BABYLON.ValueCondition._IsLesser")
   @js.native
   def _IsLesser: js.Any = js.native
-  @scala.inline
-  def _IsLesser_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsLesser")(x.asInstanceOf[js.Any])
+  inline def _IsLesser_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsLesser")(x.asInstanceOf[js.Any])
 }

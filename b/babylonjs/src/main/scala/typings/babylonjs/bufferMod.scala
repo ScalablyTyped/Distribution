@@ -5,7 +5,6 @@ import typings.babylonjs.typesMod.DataArray
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bufferMod {
@@ -30,13 +29,6 @@ object bufferMod {
       engine: js.Any,
       data: DataArray,
       updatable: Boolean,
-      stride: js.UndefOr[scala.Nothing],
-      postponeInternalCreation: Boolean
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
       stride: Double,
       postponeInternalCreation: Boolean
     ) = this()
@@ -44,25 +36,8 @@ object bufferMod {
       engine: js.Any,
       data: DataArray,
       updatable: Boolean,
-      stride: js.UndefOr[scala.Nothing],
-      postponeInternalCreation: js.UndefOr[scala.Nothing],
-      instanced: Boolean
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: js.UndefOr[scala.Nothing],
-      postponeInternalCreation: Boolean,
-      instanced: Boolean
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: Double,
-      postponeInternalCreation: js.UndefOr[scala.Nothing],
-      instanced: Boolean
+      stride: Unit,
+      postponeInternalCreation: Boolean
     ) = this()
     def this(
       engine: js.Any,
@@ -76,64 +51,25 @@ object bufferMod {
       engine: js.Any,
       data: DataArray,
       updatable: Boolean,
-      stride: js.UndefOr[scala.Nothing],
-      postponeInternalCreation: js.UndefOr[scala.Nothing],
-      instanced: js.UndefOr[scala.Nothing],
-      useBytes: Boolean
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: js.UndefOr[scala.Nothing],
-      postponeInternalCreation: js.UndefOr[scala.Nothing],
-      instanced: Boolean,
-      useBytes: Boolean
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: js.UndefOr[scala.Nothing],
-      postponeInternalCreation: Boolean,
-      instanced: js.UndefOr[scala.Nothing],
-      useBytes: Boolean
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: js.UndefOr[scala.Nothing],
-      postponeInternalCreation: Boolean,
-      instanced: Boolean,
-      useBytes: Boolean
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
       stride: Double,
-      postponeInternalCreation: js.UndefOr[scala.Nothing],
-      instanced: js.UndefOr[scala.Nothing],
-      useBytes: Boolean
+      postponeInternalCreation: Unit,
+      instanced: Boolean
     ) = this()
     def this(
       engine: js.Any,
       data: DataArray,
       updatable: Boolean,
-      stride: Double,
-      postponeInternalCreation: js.UndefOr[scala.Nothing],
-      instanced: Boolean,
-      useBytes: Boolean
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: Double,
+      stride: Unit,
       postponeInternalCreation: Boolean,
-      instanced: js.UndefOr[scala.Nothing],
-      useBytes: Boolean
+      instanced: Boolean
+    ) = this()
+    def this(
+      engine: js.Any,
+      data: DataArray,
+      updatable: Boolean,
+      stride: Unit,
+      postponeInternalCreation: Unit,
+      instanced: Boolean
     ) = this()
     def this(
       engine: js.Any,
@@ -148,77 +84,70 @@ object bufferMod {
       engine: js.Any,
       data: DataArray,
       updatable: Boolean,
-      stride: js.UndefOr[scala.Nothing],
-      postponeInternalCreation: js.UndefOr[scala.Nothing],
-      instanced: js.UndefOr[scala.Nothing],
-      useBytes: js.UndefOr[scala.Nothing],
-      divisor: Double
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: js.UndefOr[scala.Nothing],
-      postponeInternalCreation: js.UndefOr[scala.Nothing],
-      instanced: js.UndefOr[scala.Nothing],
-      useBytes: Boolean,
-      divisor: Double
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: js.UndefOr[scala.Nothing],
-      postponeInternalCreation: js.UndefOr[scala.Nothing],
-      instanced: Boolean,
-      useBytes: js.UndefOr[scala.Nothing],
-      divisor: Double
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: js.UndefOr[scala.Nothing],
-      postponeInternalCreation: js.UndefOr[scala.Nothing],
-      instanced: Boolean,
-      useBytes: Boolean,
-      divisor: Double
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: js.UndefOr[scala.Nothing],
+      stride: Double,
       postponeInternalCreation: Boolean,
-      instanced: js.UndefOr[scala.Nothing],
-      useBytes: js.UndefOr[scala.Nothing],
-      divisor: Double
+      instanced: Unit,
+      useBytes: Boolean
     ) = this()
     def this(
       engine: js.Any,
       data: DataArray,
       updatable: Boolean,
-      stride: js.UndefOr[scala.Nothing],
-      postponeInternalCreation: Boolean,
-      instanced: js.UndefOr[scala.Nothing],
-      useBytes: Boolean,
-      divisor: Double
+      stride: Double,
+      postponeInternalCreation: Unit,
+      instanced: Boolean,
+      useBytes: Boolean
     ) = this()
     def this(
       engine: js.Any,
       data: DataArray,
       updatable: Boolean,
-      stride: js.UndefOr[scala.Nothing],
+      stride: Double,
+      postponeInternalCreation: Unit,
+      instanced: Unit,
+      useBytes: Boolean
+    ) = this()
+    def this(
+      engine: js.Any,
+      data: DataArray,
+      updatable: Boolean,
+      stride: Unit,
       postponeInternalCreation: Boolean,
       instanced: Boolean,
-      useBytes: js.UndefOr[scala.Nothing],
-      divisor: Double
+      useBytes: Boolean
     ) = this()
     def this(
       engine: js.Any,
       data: DataArray,
       updatable: Boolean,
-      stride: js.UndefOr[scala.Nothing],
+      stride: Unit,
+      postponeInternalCreation: Boolean,
+      instanced: Unit,
+      useBytes: Boolean
+    ) = this()
+    def this(
+      engine: js.Any,
+      data: DataArray,
+      updatable: Boolean,
+      stride: Unit,
+      postponeInternalCreation: Unit,
+      instanced: Boolean,
+      useBytes: Boolean
+    ) = this()
+    def this(
+      engine: js.Any,
+      data: DataArray,
+      updatable: Boolean,
+      stride: Unit,
+      postponeInternalCreation: Unit,
+      instanced: Unit,
+      useBytes: Boolean
+    ) = this()
+    def this(
+      engine: js.Any,
+      data: DataArray,
+      updatable: Boolean,
+      stride: Double,
       postponeInternalCreation: Boolean,
       instanced: Boolean,
       useBytes: Boolean,
@@ -229,29 +158,9 @@ object bufferMod {
       data: DataArray,
       updatable: Boolean,
       stride: Double,
-      postponeInternalCreation: js.UndefOr[scala.Nothing],
-      instanced: js.UndefOr[scala.Nothing],
-      useBytes: js.UndefOr[scala.Nothing],
-      divisor: Double
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: Double,
-      postponeInternalCreation: js.UndefOr[scala.Nothing],
-      instanced: js.UndefOr[scala.Nothing],
-      useBytes: Boolean,
-      divisor: Double
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: Double,
-      postponeInternalCreation: js.UndefOr[scala.Nothing],
+      postponeInternalCreation: Boolean,
       instanced: Boolean,
-      useBytes: js.UndefOr[scala.Nothing],
+      useBytes: Unit,
       divisor: Double
     ) = this()
     def this(
@@ -259,8 +168,8 @@ object bufferMod {
       data: DataArray,
       updatable: Boolean,
       stride: Double,
-      postponeInternalCreation: js.UndefOr[scala.Nothing],
-      instanced: Boolean,
+      postponeInternalCreation: Boolean,
+      instanced: Unit,
       useBytes: Boolean,
       divisor: Double
     ) = this()
@@ -270,8 +179,8 @@ object bufferMod {
       updatable: Boolean,
       stride: Double,
       postponeInternalCreation: Boolean,
-      instanced: js.UndefOr[scala.Nothing],
-      useBytes: js.UndefOr[scala.Nothing],
+      instanced: Unit,
+      useBytes: Unit,
       divisor: Double
     ) = this()
     def this(
@@ -279,8 +188,28 @@ object bufferMod {
       data: DataArray,
       updatable: Boolean,
       stride: Double,
-      postponeInternalCreation: Boolean,
-      instanced: js.UndefOr[scala.Nothing],
+      postponeInternalCreation: Unit,
+      instanced: Boolean,
+      useBytes: Boolean,
+      divisor: Double
+    ) = this()
+    def this(
+      engine: js.Any,
+      data: DataArray,
+      updatable: Boolean,
+      stride: Double,
+      postponeInternalCreation: Unit,
+      instanced: Boolean,
+      useBytes: Unit,
+      divisor: Double
+    ) = this()
+    def this(
+      engine: js.Any,
+      data: DataArray,
+      updatable: Boolean,
+      stride: Double,
+      postponeInternalCreation: Unit,
+      instanced: Unit,
       useBytes: Boolean,
       divisor: Double
     ) = this()
@@ -289,42 +218,112 @@ object bufferMod {
       data: DataArray,
       updatable: Boolean,
       stride: Double,
-      postponeInternalCreation: Boolean,
-      instanced: Boolean,
-      useBytes: js.UndefOr[scala.Nothing],
+      postponeInternalCreation: Unit,
+      instanced: Unit,
+      useBytes: Unit,
       divisor: Double
     ) = this()
     def this(
       engine: js.Any,
       data: DataArray,
       updatable: Boolean,
-      stride: Double,
+      stride: Unit,
       postponeInternalCreation: Boolean,
       instanced: Boolean,
       useBytes: Boolean,
+      divisor: Double
+    ) = this()
+    def this(
+      engine: js.Any,
+      data: DataArray,
+      updatable: Boolean,
+      stride: Unit,
+      postponeInternalCreation: Boolean,
+      instanced: Boolean,
+      useBytes: Unit,
+      divisor: Double
+    ) = this()
+    def this(
+      engine: js.Any,
+      data: DataArray,
+      updatable: Boolean,
+      stride: Unit,
+      postponeInternalCreation: Boolean,
+      instanced: Unit,
+      useBytes: Boolean,
+      divisor: Double
+    ) = this()
+    def this(
+      engine: js.Any,
+      data: DataArray,
+      updatable: Boolean,
+      stride: Unit,
+      postponeInternalCreation: Boolean,
+      instanced: Unit,
+      useBytes: Unit,
+      divisor: Double
+    ) = this()
+    def this(
+      engine: js.Any,
+      data: DataArray,
+      updatable: Boolean,
+      stride: Unit,
+      postponeInternalCreation: Unit,
+      instanced: Boolean,
+      useBytes: Boolean,
+      divisor: Double
+    ) = this()
+    def this(
+      engine: js.Any,
+      data: DataArray,
+      updatable: Boolean,
+      stride: Unit,
+      postponeInternalCreation: Unit,
+      instanced: Boolean,
+      useBytes: Unit,
+      divisor: Double
+    ) = this()
+    def this(
+      engine: js.Any,
+      data: DataArray,
+      updatable: Boolean,
+      stride: Unit,
+      postponeInternalCreation: Unit,
+      instanced: Unit,
+      useBytes: Boolean,
+      divisor: Double
+    ) = this()
+    def this(
+      engine: js.Any,
+      data: DataArray,
+      updatable: Boolean,
+      stride: Unit,
+      postponeInternalCreation: Unit,
+      instanced: Unit,
+      useBytes: Unit,
       divisor: Double
     ) = this()
     
-    var _buffer: js.Any = js.native
+    /* private */ var _buffer: js.Any = js.native
     
     /** @hidden */
     var _data: Nullable[DataArray] = js.native
     
-    var _divisor: js.Any = js.native
+    /* private */ var _divisor: js.Any = js.native
     
-    var _engine: js.Any = js.native
+    /* private */ var _engine: js.Any = js.native
     
     /** @hidden */
     def _increaseReferences(): Unit = js.native
     
-    var _instanced: js.Any = js.native
+    /* private */ var _instanced: js.Any = js.native
     
-    var _isAlreadyOwned: js.Any = js.native
+    /* private */ var _isAlreadyOwned: js.Any = js.native
     
     /** @hidden */
     def _rebuild(): Unit = js.native
     
-    var _updatable: js.Any = js.native
+    /* private */ var _updatable: js.Any = js.native
     
     /**
       * Gets the byte stride.
@@ -350,96 +349,8 @@ object bufferMod {
       * @returns the new vertex buffer
       */
     def createVertexBuffer(kind: String, offset: Double, size: Double): VertexBuffer = js.native
-    def createVertexBuffer(
-      kind: String,
-      offset: Double,
-      size: Double,
-      stride: js.UndefOr[scala.Nothing],
-      instanced: js.UndefOr[scala.Nothing],
-      useBytes: js.UndefOr[scala.Nothing],
-      divisor: Double
-    ): VertexBuffer = js.native
-    def createVertexBuffer(
-      kind: String,
-      offset: Double,
-      size: Double,
-      stride: js.UndefOr[scala.Nothing],
-      instanced: js.UndefOr[scala.Nothing],
-      useBytes: Boolean
-    ): VertexBuffer = js.native
-    def createVertexBuffer(
-      kind: String,
-      offset: Double,
-      size: Double,
-      stride: js.UndefOr[scala.Nothing],
-      instanced: js.UndefOr[scala.Nothing],
-      useBytes: Boolean,
-      divisor: Double
-    ): VertexBuffer = js.native
-    def createVertexBuffer(kind: String, offset: Double, size: Double, stride: js.UndefOr[scala.Nothing], instanced: Boolean): VertexBuffer = js.native
-    def createVertexBuffer(
-      kind: String,
-      offset: Double,
-      size: Double,
-      stride: js.UndefOr[scala.Nothing],
-      instanced: Boolean,
-      useBytes: js.UndefOr[scala.Nothing],
-      divisor: Double
-    ): VertexBuffer = js.native
-    def createVertexBuffer(
-      kind: String,
-      offset: Double,
-      size: Double,
-      stride: js.UndefOr[scala.Nothing],
-      instanced: Boolean,
-      useBytes: Boolean
-    ): VertexBuffer = js.native
-    def createVertexBuffer(
-      kind: String,
-      offset: Double,
-      size: Double,
-      stride: js.UndefOr[scala.Nothing],
-      instanced: Boolean,
-      useBytes: Boolean,
-      divisor: Double
-    ): VertexBuffer = js.native
     def createVertexBuffer(kind: String, offset: Double, size: Double, stride: Double): VertexBuffer = js.native
-    def createVertexBuffer(
-      kind: String,
-      offset: Double,
-      size: Double,
-      stride: Double,
-      instanced: js.UndefOr[scala.Nothing],
-      useBytes: js.UndefOr[scala.Nothing],
-      divisor: Double
-    ): VertexBuffer = js.native
-    def createVertexBuffer(
-      kind: String,
-      offset: Double,
-      size: Double,
-      stride: Double,
-      instanced: js.UndefOr[scala.Nothing],
-      useBytes: Boolean
-    ): VertexBuffer = js.native
-    def createVertexBuffer(
-      kind: String,
-      offset: Double,
-      size: Double,
-      stride: Double,
-      instanced: js.UndefOr[scala.Nothing],
-      useBytes: Boolean,
-      divisor: Double
-    ): VertexBuffer = js.native
     def createVertexBuffer(kind: String, offset: Double, size: Double, stride: Double, instanced: Boolean): VertexBuffer = js.native
-    def createVertexBuffer(
-      kind: String,
-      offset: Double,
-      size: Double,
-      stride: Double,
-      instanced: Boolean,
-      useBytes: js.UndefOr[scala.Nothing],
-      divisor: Double
-    ): VertexBuffer = js.native
     def createVertexBuffer(kind: String, offset: Double, size: Double, stride: Double, instanced: Boolean, useBytes: Boolean): VertexBuffer = js.native
     def createVertexBuffer(
       kind: String,
@@ -448,6 +359,73 @@ object bufferMod {
       stride: Double,
       instanced: Boolean,
       useBytes: Boolean,
+      divisor: Double
+    ): VertexBuffer = js.native
+    def createVertexBuffer(
+      kind: String,
+      offset: Double,
+      size: Double,
+      stride: Double,
+      instanced: Boolean,
+      useBytes: Unit,
+      divisor: Double
+    ): VertexBuffer = js.native
+    def createVertexBuffer(kind: String, offset: Double, size: Double, stride: Double, instanced: Unit, useBytes: Boolean): VertexBuffer = js.native
+    def createVertexBuffer(
+      kind: String,
+      offset: Double,
+      size: Double,
+      stride: Double,
+      instanced: Unit,
+      useBytes: Boolean,
+      divisor: Double
+    ): VertexBuffer = js.native
+    def createVertexBuffer(
+      kind: String,
+      offset: Double,
+      size: Double,
+      stride: Double,
+      instanced: Unit,
+      useBytes: Unit,
+      divisor: Double
+    ): VertexBuffer = js.native
+    def createVertexBuffer(kind: String, offset: Double, size: Double, stride: Unit, instanced: Boolean): VertexBuffer = js.native
+    def createVertexBuffer(kind: String, offset: Double, size: Double, stride: Unit, instanced: Boolean, useBytes: Boolean): VertexBuffer = js.native
+    def createVertexBuffer(
+      kind: String,
+      offset: Double,
+      size: Double,
+      stride: Unit,
+      instanced: Boolean,
+      useBytes: Boolean,
+      divisor: Double
+    ): VertexBuffer = js.native
+    def createVertexBuffer(
+      kind: String,
+      offset: Double,
+      size: Double,
+      stride: Unit,
+      instanced: Boolean,
+      useBytes: Unit,
+      divisor: Double
+    ): VertexBuffer = js.native
+    def createVertexBuffer(kind: String, offset: Double, size: Double, stride: Unit, instanced: Unit, useBytes: Boolean): VertexBuffer = js.native
+    def createVertexBuffer(
+      kind: String,
+      offset: Double,
+      size: Double,
+      stride: Unit,
+      instanced: Unit,
+      useBytes: Boolean,
+      divisor: Double
+    ): VertexBuffer = js.native
+    def createVertexBuffer(
+      kind: String,
+      offset: Double,
+      size: Double,
+      stride: Unit,
+      instanced: Unit,
+      useBytes: Unit,
       divisor: Double
     ): VertexBuffer = js.native
     
@@ -496,9 +474,9 @@ object bufferMod {
       * @param useBytes set to true if the offset is in bytes
       */
     def updateDirectly(data: DataArray, offset: Double): Unit = js.native
-    def updateDirectly(data: DataArray, offset: Double, vertexCount: js.UndefOr[scala.Nothing], useBytes: Boolean): Unit = js.native
     def updateDirectly(data: DataArray, offset: Double, vertexCount: Double): Unit = js.native
     def updateDirectly(data: DataArray, offset: Double, vertexCount: Double, useBytes: Boolean): Unit = js.native
+    def updateDirectly(data: DataArray, offset: Double, vertexCount: Unit, useBytes: Boolean): Unit = js.native
   }
   
   @JSImport("babylonjs/Meshes/buffer", "VertexBuffer")
@@ -541,18 +519,18 @@ object bufferMod {
     /** @hidden */
     var _buffer: Buffer = js.native
     
-    var _instanceDivisor: js.Any = js.native
+    /* private */ var _instanceDivisor: js.Any = js.native
     
-    var _instanced: js.Any = js.native
+    /* private */ var _instanced: js.Any = js.native
     
-    var _kind: js.Any = js.native
+    /* private */ var _kind: js.Any = js.native
     
-    var _ownsBuffer: js.Any = js.native
+    /* private */ var _ownsBuffer: js.Any = js.native
     
     /** @hidden */
     def _rebuild(): Unit = js.native
     
-    var _size: js.Any = js.native
+    /* private */ var _size: js.Any = js.native
     
     /**
       * Gets the byte offset.
@@ -699,9 +677,7 @@ object bufferMod {
       * @param kind The kind string to deduce
       * @returns The deduced stride
       */
-    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.DeduceStride")
-    @js.native
-    def DeduceStride(kind: String): Double = js.native
+    inline def DeduceStride(kind: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("DeduceStride")(kind.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * The float type.
@@ -721,9 +697,7 @@ object bufferMod {
       * @param normalized whether the data is normalized
       * @param callback the callback function called for each value
       */
-    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.ForEach")
-    @js.native
-    def ForEach(
+    inline def ForEach(
       data: DataArray,
       byteOffset: Double,
       byteStride: Double,
@@ -732,16 +706,14 @@ object bufferMod {
       count: Double,
       normalized: Boolean,
       callback: js.Function2[/* value */ Double, /* index */ Double, Unit]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ForEach")(data.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any], byteStride.asInstanceOf[js.Any], componentCount.asInstanceOf[js.Any], componentType.asInstanceOf[js.Any], count.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Gets the byte length of the given type.
       * @param type the type
       * @returns the number of bytes
       */
-    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.GetTypeByteLength")
-    @js.native
-    def GetTypeByteLength(`type`: Double): Double = js.native
+    inline def GetTypeByteLength(`type`: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetTypeByteLength")(`type`.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * The integer type.
@@ -872,7 +844,6 @@ object bufferMod {
     @JSImport("babylonjs/Meshes/buffer", "VertexBuffer._GetFloatValue")
     @js.native
     def _GetFloatValue: js.Any = js.native
-    @scala.inline
-    def _GetFloatValue_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetFloatValue")(x.asInstanceOf[js.Any])
+    inline def _GetFloatValue_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetFloatValue")(x.asInstanceOf[js.Any])
   }
 }

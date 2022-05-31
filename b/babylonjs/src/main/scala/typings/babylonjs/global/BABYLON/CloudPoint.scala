@@ -2,13 +2,13 @@ package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.CloudPoint")
 @js.native
 class CloudPoint protected ()
-  extends typings.babylonjs.BABYLON.CloudPoint {
+  extends StObject
+     with typings.babylonjs.BABYLON.CloudPoint {
   /**
     * Creates a Point Cloud object.
     * Don't create particles manually, use instead the PCS internal tools like _addParticle()

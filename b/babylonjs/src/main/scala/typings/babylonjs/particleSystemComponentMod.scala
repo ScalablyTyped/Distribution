@@ -5,7 +5,6 @@ import typings.babylonjs.effectMod.Effect
 import typings.babylonjs.iparticlesystemMod.IParticleSystem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object particleSystemComponentMod {
@@ -36,36 +35,7 @@ object particleSystemComponentMod {
         uniformsNames: js.Array[String],
         samplers: js.Array[String],
         defines: String,
-        fallbacks: js.UndefOr[scala.Nothing],
-        onCompiled: js.UndefOr[scala.Nothing],
-        onError: js.UndefOr[scala.Nothing],
-        particleSystem: IParticleSystem
-      ): Effect = js.native
-      def createEffectForParticles(
-        fragmentName: String,
-        uniformsNames: js.Array[String],
-        samplers: js.Array[String],
-        defines: String,
-        fallbacks: js.UndefOr[scala.Nothing],
-        onCompiled: js.UndefOr[scala.Nothing],
-        onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]
-      ): Effect = js.native
-      def createEffectForParticles(
-        fragmentName: String,
-        uniformsNames: js.Array[String],
-        samplers: js.Array[String],
-        defines: String,
-        fallbacks: js.UndefOr[scala.Nothing],
-        onCompiled: js.UndefOr[scala.Nothing],
-        onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit],
-        particleSystem: IParticleSystem
-      ): Effect = js.native
-      def createEffectForParticles(
-        fragmentName: String,
-        uniformsNames: js.Array[String],
-        samplers: js.Array[String],
-        defines: String,
-        fallbacks: js.UndefOr[scala.Nothing],
+        fallbacks: Unit,
         onCompiled: js.Function1[/* effect */ Effect, Unit]
       ): Effect = js.native
       def createEffectForParticles(
@@ -73,17 +43,7 @@ object particleSystemComponentMod {
         uniformsNames: js.Array[String],
         samplers: js.Array[String],
         defines: String,
-        fallbacks: js.UndefOr[scala.Nothing],
-        onCompiled: js.Function1[/* effect */ Effect, Unit],
-        onError: js.UndefOr[scala.Nothing],
-        particleSystem: IParticleSystem
-      ): Effect = js.native
-      def createEffectForParticles(
-        fragmentName: String,
-        uniformsNames: js.Array[String],
-        samplers: js.Array[String],
-        defines: String,
-        fallbacks: js.UndefOr[scala.Nothing],
+        fallbacks: Unit,
         onCompiled: js.Function1[/* effect */ Effect, Unit],
         onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]
       ): Effect = js.native
@@ -92,9 +52,48 @@ object particleSystemComponentMod {
         uniformsNames: js.Array[String],
         samplers: js.Array[String],
         defines: String,
-        fallbacks: js.UndefOr[scala.Nothing],
+        fallbacks: Unit,
         onCompiled: js.Function1[/* effect */ Effect, Unit],
         onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit],
+        particleSystem: IParticleSystem
+      ): Effect = js.native
+      def createEffectForParticles(
+        fragmentName: String,
+        uniformsNames: js.Array[String],
+        samplers: js.Array[String],
+        defines: String,
+        fallbacks: Unit,
+        onCompiled: js.Function1[/* effect */ Effect, Unit],
+        onError: Unit,
+        particleSystem: IParticleSystem
+      ): Effect = js.native
+      def createEffectForParticles(
+        fragmentName: String,
+        uniformsNames: js.Array[String],
+        samplers: js.Array[String],
+        defines: String,
+        fallbacks: Unit,
+        onCompiled: Unit,
+        onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]
+      ): Effect = js.native
+      def createEffectForParticles(
+        fragmentName: String,
+        uniformsNames: js.Array[String],
+        samplers: js.Array[String],
+        defines: String,
+        fallbacks: Unit,
+        onCompiled: Unit,
+        onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit],
+        particleSystem: IParticleSystem
+      ): Effect = js.native
+      def createEffectForParticles(
+        fragmentName: String,
+        uniformsNames: js.Array[String],
+        samplers: js.Array[String],
+        defines: String,
+        fallbacks: Unit,
+        onCompiled: Unit,
+        onError: Unit,
         particleSystem: IParticleSystem
       ): Effect = js.native
       def createEffectForParticles(
@@ -110,35 +109,6 @@ object particleSystemComponentMod {
         samplers: js.Array[String],
         defines: String,
         fallbacks: EffectFallbacks,
-        onCompiled: js.UndefOr[scala.Nothing],
-        onError: js.UndefOr[scala.Nothing],
-        particleSystem: IParticleSystem
-      ): Effect = js.native
-      def createEffectForParticles(
-        fragmentName: String,
-        uniformsNames: js.Array[String],
-        samplers: js.Array[String],
-        defines: String,
-        fallbacks: EffectFallbacks,
-        onCompiled: js.UndefOr[scala.Nothing],
-        onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]
-      ): Effect = js.native
-      def createEffectForParticles(
-        fragmentName: String,
-        uniformsNames: js.Array[String],
-        samplers: js.Array[String],
-        defines: String,
-        fallbacks: EffectFallbacks,
-        onCompiled: js.UndefOr[scala.Nothing],
-        onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit],
-        particleSystem: IParticleSystem
-      ): Effect = js.native
-      def createEffectForParticles(
-        fragmentName: String,
-        uniformsNames: js.Array[String],
-        samplers: js.Array[String],
-        defines: String,
-        fallbacks: EffectFallbacks,
         onCompiled: js.Function1[/* effect */ Effect, Unit]
       ): Effect = js.native
       def createEffectForParticles(
@@ -148,16 +118,6 @@ object particleSystemComponentMod {
         defines: String,
         fallbacks: EffectFallbacks,
         onCompiled: js.Function1[/* effect */ Effect, Unit],
-        onError: js.UndefOr[scala.Nothing],
-        particleSystem: IParticleSystem
-      ): Effect = js.native
-      def createEffectForParticles(
-        fragmentName: String,
-        uniformsNames: js.Array[String],
-        samplers: js.Array[String],
-        defines: String,
-        fallbacks: EffectFallbacks,
-        onCompiled: js.Function1[/* effect */ Effect, Unit],
         onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]
       ): Effect = js.native
       def createEffectForParticles(
@@ -170,31 +130,68 @@ object particleSystemComponentMod {
         onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit],
         particleSystem: IParticleSystem
       ): Effect = js.native
+      def createEffectForParticles(
+        fragmentName: String,
+        uniformsNames: js.Array[String],
+        samplers: js.Array[String],
+        defines: String,
+        fallbacks: EffectFallbacks,
+        onCompiled: js.Function1[/* effect */ Effect, Unit],
+        onError: Unit,
+        particleSystem: IParticleSystem
+      ): Effect = js.native
+      def createEffectForParticles(
+        fragmentName: String,
+        uniformsNames: js.Array[String],
+        samplers: js.Array[String],
+        defines: String,
+        fallbacks: EffectFallbacks,
+        onCompiled: Unit,
+        onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]
+      ): Effect = js.native
+      def createEffectForParticles(
+        fragmentName: String,
+        uniformsNames: js.Array[String],
+        samplers: js.Array[String],
+        defines: String,
+        fallbacks: EffectFallbacks,
+        onCompiled: Unit,
+        onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit],
+        particleSystem: IParticleSystem
+      ): Effect = js.native
+      def createEffectForParticles(
+        fragmentName: String,
+        uniformsNames: js.Array[String],
+        samplers: js.Array[String],
+        defines: String,
+        fallbacks: EffectFallbacks,
+        onCompiled: Unit,
+        onError: Unit,
+        particleSystem: IParticleSystem
+      ): Effect = js.native
     }
   }
   
   /* augmented module */
   object babylonjsMeshesMeshAugmentingMod {
     
-    @js.native
     trait Mesh extends StObject {
       
       /**
         * Returns an array populated with IParticleSystem objects whose the mesh is the emitter
         * @returns an array of IParticleSystem
         */
-      def getEmittedParticleSystems(): js.Array[IParticleSystem] = js.native
+      def getEmittedParticleSystems(): js.Array[IParticleSystem]
       
       /**
         * Returns an array populated with IParticleSystem objects whose the mesh or its children are the emitter
         * @returns an array of IParticleSystem
         */
-      def getHierarchyEmittedParticleSystems(): js.Array[IParticleSystem] = js.native
+      def getHierarchyEmittedParticleSystems(): js.Array[IParticleSystem]
     }
     object Mesh {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         getEmittedParticleSystems: () => js.Array[IParticleSystem],
         getHierarchyEmittedParticleSystems: () => js.Array[IParticleSystem]
       ): Mesh = {
@@ -202,14 +199,11 @@ object particleSystemComponentMod {
         __obj.asInstanceOf[Mesh]
       }
       
-      @scala.inline
-      implicit class MeshMutableBuilder[Self <: Mesh] (val x: Self) extends AnyVal {
+      extension [Self <: Mesh](x: Self) {
         
-        @scala.inline
-        def setGetEmittedParticleSystems(value: () => js.Array[IParticleSystem]): Self = StObject.set(x, "getEmittedParticleSystems", js.Any.fromFunction0(value))
+        inline def setGetEmittedParticleSystems(value: () => js.Array[IParticleSystem]): Self = StObject.set(x, "getEmittedParticleSystems", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetHierarchyEmittedParticleSystems(value: () => js.Array[IParticleSystem]): Self = StObject.set(x, "getHierarchyEmittedParticleSystems", js.Any.fromFunction0(value))
+        inline def setGetHierarchyEmittedParticleSystems(value: () => js.Array[IParticleSystem]): Self = StObject.set(x, "getHierarchyEmittedParticleSystems", js.Any.fromFunction0(value))
       }
     }
   }

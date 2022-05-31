@@ -8,7 +8,6 @@ import typings.babylonjs.typesMod.Nullable
 import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rawCubeTextureMod {
@@ -67,37 +66,52 @@ object rawCubeTextureMod {
       * @returns a promsie that resolves when the operation is complete
       */
     def updateRGBDAsync(data: js.Array[js.Array[ArrayBufferView]]): js.Promise[Unit] = js.native
+    def updateRGBDAsync(data: js.Array[js.Array[ArrayBufferView]], sphericalPolynomial: Unit, lodScale: Double): js.Promise[Unit] = js.native
     def updateRGBDAsync(
       data: js.Array[js.Array[ArrayBufferView]],
-      sphericalPolynomial: js.UndefOr[Nullable[SphericalPolynomial]],
-      lodScale: js.UndefOr[scala.Nothing],
-      lodOffset: Double
-    ): js.Promise[Unit] = js.native
-    def updateRGBDAsync(
-      data: js.Array[js.Array[ArrayBufferView]],
-      sphericalPolynomial: js.UndefOr[Nullable[SphericalPolynomial]],
-      lodScale: Double
-    ): js.Promise[Unit] = js.native
-    def updateRGBDAsync(
-      data: js.Array[js.Array[ArrayBufferView]],
-      sphericalPolynomial: js.UndefOr[Nullable[SphericalPolynomial]],
+      sphericalPolynomial: Unit,
       lodScale: Double,
       lodOffset: Double
     ): js.Promise[Unit] = js.native
+    def updateRGBDAsync(
+      data: js.Array[js.Array[ArrayBufferView]],
+      sphericalPolynomial: Unit,
+      lodScale: Unit,
+      lodOffset: Double
+    ): js.Promise[Unit] = js.native
     def updateRGBDAsync(data: js.Array[js.Array[ArrayBufferView]], sphericalPolynomial: Nullable[SphericalPolynomial]): js.Promise[Unit] = js.native
-  }
-  /* static members */
-  object RawCubeTexture {
-    
-    /** @hidden */
-    @JSImport("babylonjs/Materials/Textures/rawCubeTexture", "RawCubeTexture._UpdateRGBDAsync")
-    @js.native
-    def _UpdateRGBDAsync(
-      internalTexture: InternalTexture,
+    def updateRGBDAsync(
+      data: js.Array[js.Array[ArrayBufferView]],
+      sphericalPolynomial: Nullable[SphericalPolynomial],
+      lodScale: Double
+    ): js.Promise[Unit] = js.native
+    def updateRGBDAsync(
       data: js.Array[js.Array[ArrayBufferView]],
       sphericalPolynomial: Nullable[SphericalPolynomial],
       lodScale: Double,
       lodOffset: Double
     ): js.Promise[Unit] = js.native
+    def updateRGBDAsync(
+      data: js.Array[js.Array[ArrayBufferView]],
+      sphericalPolynomial: Nullable[SphericalPolynomial],
+      lodScale: Unit,
+      lodOffset: Double
+    ): js.Promise[Unit] = js.native
+  }
+  /* static members */
+  object RawCubeTexture {
+    
+    @JSImport("babylonjs/Materials/Textures/rawCubeTexture", "RawCubeTexture")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /** @hidden */
+    inline def _UpdateRGBDAsync(
+      internalTexture: InternalTexture,
+      data: js.Array[js.Array[ArrayBufferView]],
+      sphericalPolynomial: Nullable[SphericalPolynomial],
+      lodScale: Double,
+      lodOffset: Double
+    ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("_UpdateRGBDAsync")(internalTexture.asInstanceOf[js.Any], data.asInstanceOf[js.Any], sphericalPolynomial.asInstanceOf[js.Any], lodScale.asInstanceOf[js.Any], lodOffset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   }
 }

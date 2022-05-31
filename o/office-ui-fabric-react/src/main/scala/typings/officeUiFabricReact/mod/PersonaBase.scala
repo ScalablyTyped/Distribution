@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact.mod
 
+import typings.officeUiFabricReact.personaTypesMod.IPersonaProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class PersonaBase protected ()
   extends typings.officeUiFabricReact.libPersonaMod.PersonaBase {
-  def this(props: typings.officeUiFabricReact.personaTypesMod.IPersonaProps) = this()
+  def this(props: IPersonaProps) = this()
 }
 /* static members */
 object PersonaBase {
@@ -30,6 +31,6 @@ object PersonaBase {
   
   @JSImport("office-ui-fabric-react", "PersonaBase.defaultProps")
   @js.native
-  def defaultProps: typings.officeUiFabricReact.personaTypesMod.IPersonaProps = js.native
-  inline def defaultProps_=(x: typings.officeUiFabricReact.personaTypesMod.IPersonaProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  def defaultProps: IPersonaProps = js.native
+  inline def defaultProps_=(x: IPersonaProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

@@ -2,23 +2,24 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CameraGizmo extends Gizmo {
+trait CameraGizmo
+  extends StObject
+     with Gizmo {
   
-  var _camera: js.Any = js.native
+  /* private */ var _camera: js.Any = js.native
   
-  var _cameraLinesMesh: js.Any = js.native
+  /* private */ var _cameraLinesMesh: js.Any = js.native
   
-  var _cameraMesh: js.Any = js.native
+  /* private */ var _cameraMesh: js.Any = js.native
   
-  var _invProjection: js.Any = js.native
+  /* private */ var _invProjection: js.Any = js.native
   
-  var _material: js.Any = js.native
+  /* private */ var _material: js.Any = js.native
   
-  var _pointerObserver: js.Any = js.native
+  /* private */ var _pointerObserver: js.Any = js.native
   
   def camera: Nullable[Camera] = js.native
   /**

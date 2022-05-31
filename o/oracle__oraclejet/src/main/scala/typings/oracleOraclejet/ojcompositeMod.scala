@@ -6,144 +6,118 @@ import typings.oracleOraclejet.oracleOraclejetStrings.internal
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ojcompositeMod {
   
-  @JSImport("@oracle/oraclejet/ojcomposite", "getComponentMetadata")
+  @JSImport("@oracle/oraclejet/ojcomposite", JSImport.Namespace)
   @js.native
-  def getComponentMetadata(name: String): Metadata | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@oracle/oraclejet/ojcomposite", "register")
-  @js.native
-  def register(name: String, descriptor: typings.oracleOraclejet.anon.Metadata): Unit = js.native
+  inline def getComponentMetadata(name: String): Metadata | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponentMetadata")(name.asInstanceOf[js.Any]).asInstanceOf[Metadata | Null]
   
-  @js.native
+  inline def register(name: String, descriptor: typings.oracleOraclejet.anon.Metadata): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(name.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait Metadata extends StObject {
     
-    var events: js.UndefOr[js.Object] = js.native
+    var events: js.UndefOr[js.Object] = js.undefined
     
-    var jetVersion: String = js.native
+    var jetVersion: String
     
-    var methods: js.UndefOr[js.Object] = js.native
+    var methods: js.UndefOr[js.Object] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var properties: js.UndefOr[js.Object] = js.native
+    var properties: js.UndefOr[js.Object] = js.undefined
     
-    var slots: js.UndefOr[js.Object] = js.native
+    var slots: js.UndefOr[js.Object] = js.undefined
     
-    var version: String = js.native
+    var version: String
   }
   object Metadata {
     
-    @scala.inline
-    def apply(jetVersion: String, name: String, version: String): Metadata = {
+    inline def apply(jetVersion: String, name: String, version: String): Metadata = {
       val __obj = js.Dynamic.literal(jetVersion = jetVersion.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Metadata]
     }
     
-    @scala.inline
-    implicit class MetadataMutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
+    extension [Self <: Metadata](x: Self) {
       
-      @scala.inline
-      def setEvents(value: js.Object): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: js.Object): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+      inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
-      @scala.inline
-      def setJetVersion(value: String): Self = StObject.set(x, "jetVersion", value.asInstanceOf[js.Any])
+      inline def setJetVersion(value: String): Self = StObject.set(x, "jetVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethods(value: js.Object): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      inline def setMethods(value: js.Object): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
+      inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperties(value: js.Object): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: js.Object): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      @scala.inline
-      def setSlots(value: js.Object): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+      inline def setSlots(value: js.Object): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
+      inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait PropertyChangedContext extends StObject {
     
-    var previousValue: js.Any = js.native
+    var previousValue: js.Any
     
-    var property: String = js.native
+    var property: String
     
-    var subproperty: js.UndefOr[Path] = js.native
+    var subproperty: js.UndefOr[Path] = js.undefined
     
-    var updatedFrom: external | internal = js.native
+    var updatedFrom: external | internal
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object PropertyChangedContext {
     
-    @scala.inline
-    def apply(previousValue: js.Any, property: String, updatedFrom: external | internal, value: js.Any): PropertyChangedContext = {
+    inline def apply(previousValue: js.Any, property: String, updatedFrom: external | internal, value: js.Any): PropertyChangedContext = {
       val __obj = js.Dynamic.literal(previousValue = previousValue.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], updatedFrom = updatedFrom.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[PropertyChangedContext]
     }
     
-    @scala.inline
-    implicit class PropertyChangedContextMutableBuilder[Self <: PropertyChangedContext] (val x: Self) extends AnyVal {
+    extension [Self <: PropertyChangedContext](x: Self) {
       
-      @scala.inline
-      def setPreviousValue(value: js.Any): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
+      inline def setPreviousValue(value: js.Any): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubproperty(value: Path): Self = StObject.set(x, "subproperty", value.asInstanceOf[js.Any])
+      inline def setSubproperty(value: Path): Self = StObject.set(x, "subproperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubpropertyUndefined: Self = StObject.set(x, "subproperty", js.undefined)
+      inline def setSubpropertyUndefined: Self = StObject.set(x, "subproperty", js.undefined)
       
-      @scala.inline
-      def setUpdatedFrom(value: external | internal): Self = StObject.set(x, "updatedFrom", value.asInstanceOf[js.Any])
+      inline def setUpdatedFrom(value: external | internal): Self = StObject.set(x, "updatedFrom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait ViewModel extends StObject {
     
-    def activated(param0: ViewModelContext): js.Promise[_] | Unit = js.native
+    def activated(param0: ViewModelContext): js.Promise[js.Any] | Unit
     
-    def bindingsApplied(param0: ViewModelContext): Unit = js.native
+    def bindingsApplied(param0: ViewModelContext): Unit
     
-    def connected(param0: ViewModelContext): Unit = js.native
+    def connected(param0: ViewModelContext): Unit
     
-    def disconnected(param0: Element): Unit = js.native
+    def disconnected(param0: Element): Unit
     
-    def propertyChanged(param0: PropertyChangedContext): Unit = js.native
+    def propertyChanged(param0: PropertyChangedContext): Unit
   }
   object ViewModel {
     
-    @scala.inline
-    def apply(
-      activated: ViewModelContext => js.Promise[_] | Unit,
+    inline def apply(
+      activated: ViewModelContext => js.Promise[js.Any] | Unit,
       bindingsApplied: ViewModelContext => Unit,
       connected: ViewModelContext => Unit,
       disconnected: Element => Unit,
@@ -153,64 +127,50 @@ object ojcompositeMod {
       __obj.asInstanceOf[ViewModel]
     }
     
-    @scala.inline
-    implicit class ViewModelMutableBuilder[Self <: ViewModel] (val x: Self) extends AnyVal {
+    extension [Self <: ViewModel](x: Self) {
       
-      @scala.inline
-      def setActivated(value: ViewModelContext => js.Promise[_] | Unit): Self = StObject.set(x, "activated", js.Any.fromFunction1(value))
+      inline def setActivated(value: ViewModelContext => js.Promise[js.Any] | Unit): Self = StObject.set(x, "activated", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBindingsApplied(value: ViewModelContext => Unit): Self = StObject.set(x, "bindingsApplied", js.Any.fromFunction1(value))
+      inline def setBindingsApplied(value: ViewModelContext => Unit): Self = StObject.set(x, "bindingsApplied", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setConnected(value: ViewModelContext => Unit): Self = StObject.set(x, "connected", js.Any.fromFunction1(value))
+      inline def setConnected(value: ViewModelContext => Unit): Self = StObject.set(x, "connected", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDisconnected(value: Element => Unit): Self = StObject.set(x, "disconnected", js.Any.fromFunction1(value))
+      inline def setDisconnected(value: Element => Unit): Self = StObject.set(x, "disconnected", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPropertyChanged(value: PropertyChangedContext => Unit): Self = StObject.set(x, "propertyChanged", js.Any.fromFunction1(value))
+      inline def setPropertyChanged(value: PropertyChangedContext => Unit): Self = StObject.set(x, "propertyChanged", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
   trait ViewModelContext extends StObject {
     
-    var element: Element = js.native
+    var element: Element
     
-    var properties: js.Object = js.native
+    var properties: js.Object
     
-    var slotCounts: js.Object = js.native
+    var slotCounts: js.Object
     
-    var unique: String = js.native
+    var unique: String
     
-    var uniqueId: String = js.native
+    var uniqueId: String
   }
   object ViewModelContext {
     
-    @scala.inline
-    def apply(element: Element, properties: js.Object, slotCounts: js.Object, unique: String, uniqueId: String): ViewModelContext = {
+    inline def apply(element: Element, properties: js.Object, slotCounts: js.Object, unique: String, uniqueId: String): ViewModelContext = {
       val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], slotCounts = slotCounts.asInstanceOf[js.Any], unique = unique.asInstanceOf[js.Any], uniqueId = uniqueId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ViewModelContext]
     }
     
-    @scala.inline
-    implicit class ViewModelContextMutableBuilder[Self <: ViewModelContext] (val x: Self) extends AnyVal {
+    extension [Self <: ViewModelContext](x: Self) {
       
-      @scala.inline
-      def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperties(value: js.Object): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: js.Object): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlotCounts(value: js.Object): Self = StObject.set(x, "slotCounts", value.asInstanceOf[js.Any])
+      inline def setSlotCounts(value: js.Object): Self = StObject.set(x, "slotCounts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnique(value: String): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
+      inline def setUnique(value: String): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniqueId(value: String): Self = StObject.set(x, "uniqueId", value.asInstanceOf[js.Any])
+      inline def setUniqueId(value: String): Self = StObject.set(x, "uniqueId", value.asInstanceOf[js.Any])
     }
   }
 }

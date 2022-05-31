@@ -11,7 +11,6 @@ import typings.babylonjs.postProcessMod.PostProcessOptions
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imageProcessingPostProcessMod {
@@ -40,19 +39,19 @@ object imageProcessingPostProcessMod {
     /**
       * Defines cache preventing GC.
       */
-    var _defines: js.Any = js.native
+    /* private */ var _defines: js.Any = js.native
     
-    var _fromLinearSpace: js.Any = js.native
+    /* private */ var _fromLinearSpace: js.Any = js.native
     
     /**
       * Default configuration related to image processing available in the PBR Material.
       */
-    var _imageProcessingConfiguration: ImageProcessingConfiguration = js.native
+    /* protected */ var _imageProcessingConfiguration: ImageProcessingConfiguration = js.native
     
     /**
       * Keep track of the image processing observer to allow dispose and replace.
       */
-    var _imageProcessingObserver: js.Any = js.native
+    /* private */ var _imageProcessingObserver: js.Any = js.native
     
     /**
       * @hidden

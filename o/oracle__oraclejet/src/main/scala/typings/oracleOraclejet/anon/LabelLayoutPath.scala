@@ -4,20 +4,17 @@ import typings.oracleOraclejet.ojdiagramMod.DvtDiagramLayoutContext
 import typings.oracleOraclejet.ojdiagramMod.DvtDiagramLayoutContextLink
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelLayoutPath extends StObject {
   
-  def labelLayout(context: DvtDiagramLayoutContext, link: DvtDiagramLayoutContextLink): typings.oracleOraclejet.ojdiagramUtilsMod.LabelLayout = js.native
+  def labelLayout(context: DvtDiagramLayoutContext, link: DvtDiagramLayoutContextLink): typings.oracleOraclejet.ojdiagramUtilsMod.LabelLayout
   
-  def path(context: DvtDiagramLayoutContext, link: DvtDiagramLayoutContextLink): String = js.native
+  def path(context: DvtDiagramLayoutContext, link: DvtDiagramLayoutContextLink): String
 }
 object LabelLayoutPath {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     labelLayout: (DvtDiagramLayoutContext, DvtDiagramLayoutContextLink) => typings.oracleOraclejet.ojdiagramUtilsMod.LabelLayout,
     path: (DvtDiagramLayoutContext, DvtDiagramLayoutContextLink) => String
   ): LabelLayoutPath = {
@@ -25,15 +22,12 @@ object LabelLayoutPath {
     __obj.asInstanceOf[LabelLayoutPath]
   }
   
-  @scala.inline
-  implicit class LabelLayoutPathMutableBuilder[Self <: LabelLayoutPath] (val x: Self) extends AnyVal {
+  extension [Self <: LabelLayoutPath](x: Self) {
     
-    @scala.inline
-    def setLabelLayout(
+    inline def setLabelLayout(
       value: (DvtDiagramLayoutContext, DvtDiagramLayoutContextLink) => typings.oracleOraclejet.ojdiagramUtilsMod.LabelLayout
     ): Self = StObject.set(x, "labelLayout", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPath(value: (DvtDiagramLayoutContext, DvtDiagramLayoutContextLink) => String): Self = StObject.set(x, "path", js.Any.fromFunction2(value))
+    inline def setPath(value: (DvtDiagramLayoutContext, DvtDiagramLayoutContextLink) => String): Self = StObject.set(x, "path", js.Any.fromFunction2(value))
   }
 }

@@ -5,7 +5,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/PostProcesses/index", "StandardRenderingPipeline")
@@ -28,11 +27,12 @@ class StandardRenderingPipeline protected ()
     ratio: Double,
     originalPostProcess: Nullable[typings.babylonjs.postProcessMod.PostProcess]
   ) = this()
+  def this(name: String, scene: Scene, ratio: Double, originalPostProcess: Unit, cameras: js.Array[Camera]) = this()
   def this(
     name: String,
     scene: Scene,
     ratio: Double,
-    originalPostProcess: js.UndefOr[Nullable[typings.babylonjs.postProcessMod.PostProcess]],
+    originalPostProcess: Nullable[typings.babylonjs.postProcessMod.PostProcess],
     cameras: js.Array[Camera]
   ) = this()
 }
@@ -49,8 +49,7 @@ object StandardRenderingPipeline {
   @JSImport("babylonjs/PostProcesses/index", "StandardRenderingPipeline.LuminanceSteps")
   @js.native
   def LuminanceSteps: Double = js.native
-  @scala.inline
-  def LuminanceSteps_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LuminanceSteps")(x.asInstanceOf[js.Any])
+  inline def LuminanceSteps_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LuminanceSteps")(x.asInstanceOf[js.Any])
   
   /**
     * Parse the serialized pipeline
@@ -59,7 +58,5 @@ object StandardRenderingPipeline {
     * @param rootUrl The URL of the serialized pipeline.
     * @returns An instantiated pipeline from the serialized object.
     */
-  @JSImport("babylonjs/PostProcesses/index", "StandardRenderingPipeline.Parse")
-  @js.native
-  def Parse(source: js.Any, scene: Scene, rootUrl: String): typings.babylonjs.standardRenderingPipelineMod.StandardRenderingPipeline = js.native
+  inline def Parse(source: js.Any, scene: Scene, rootUrl: String): typings.babylonjs.standardRenderingPipelineMod.StandardRenderingPipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.standardRenderingPipelineMod.StandardRenderingPipeline]
 }

@@ -2,26 +2,23 @@ package typings.oracleOraclejet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationDuration extends StObject {
   
-  var animationDuration: Double = js.native
+  var animationDuration: Double
   
-  var hoverBehaviorDelay: Double = js.native
+  var hoverBehaviorDelay: Double
   
-  var linkDefaults: EndConnectorType = js.native
+  var linkDefaults: EndConnectorType
   
-  var nodeDefaults: Icon = js.native
+  var nodeDefaults: Icon
   
-  var promotedLink: StartConnectorType = js.native
+  var promotedLink: StartConnectorType
 }
 object AnimationDuration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     animationDuration: Double,
     hoverBehaviorDelay: Double,
     linkDefaults: EndConnectorType,
@@ -32,22 +29,16 @@ object AnimationDuration {
     __obj.asInstanceOf[AnimationDuration]
   }
   
-  @scala.inline
-  implicit class AnimationDurationMutableBuilder[Self <: AnimationDuration] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationDuration](x: Self) {
     
-    @scala.inline
-    def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+    inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverBehaviorDelay(value: Double): Self = StObject.set(x, "hoverBehaviorDelay", value.asInstanceOf[js.Any])
+    inline def setHoverBehaviorDelay(value: Double): Self = StObject.set(x, "hoverBehaviorDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkDefaults(value: EndConnectorType): Self = StObject.set(x, "linkDefaults", value.asInstanceOf[js.Any])
+    inline def setLinkDefaults(value: EndConnectorType): Self = StObject.set(x, "linkDefaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeDefaults(value: Icon): Self = StObject.set(x, "nodeDefaults", value.asInstanceOf[js.Any])
+    inline def setNodeDefaults(value: Icon): Self = StObject.set(x, "nodeDefaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromotedLink(value: StartConnectorType): Self = StObject.set(x, "promotedLink", value.asInstanceOf[js.Any])
+    inline def setPromotedLink(value: StartConnectorType): Self = StObject.set(x, "promotedLink", value.asInstanceOf[js.Any])
   }
 }

@@ -7,10 +7,13 @@ import typings.firebasePerformance.firebasePerformanceNumbers.`3`
 import typings.firebasePerformance.firebasePerformanceNumbers.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object attributesUtilsMod {
+  
+  @JSImport("@firebase/performance/dist/src/utils/attributes_utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait VisibilityState extends StObject
@@ -19,40 +22,36 @@ object attributesUtilsMod {
   object VisibilityState extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[VisibilityState with Double] = js.native
+    def apply(value: Double): js.UndefOr[VisibilityState & Double] = js.native
     
     @js.native
-    sealed trait HIDDEN extends VisibilityState
-    /* 2 */ val HIDDEN: typings.firebasePerformance.attributesUtilsMod.VisibilityState.HIDDEN with Double = js.native
+    sealed trait HIDDEN
+      extends StObject
+         with VisibilityState
+    /* 2 */ val HIDDEN: typings.firebasePerformance.attributesUtilsMod.VisibilityState.HIDDEN & Double = js.native
     
     @js.native
-    sealed trait UNKNOWN extends VisibilityState
-    /* 0 */ val UNKNOWN: typings.firebasePerformance.attributesUtilsMod.VisibilityState.UNKNOWN with Double = js.native
+    sealed trait UNKNOWN
+      extends StObject
+         with VisibilityState
+    /* 0 */ val UNKNOWN: typings.firebasePerformance.attributesUtilsMod.VisibilityState.UNKNOWN & Double = js.native
     
     @js.native
-    sealed trait VISIBLE extends VisibilityState
-    /* 1 */ val VISIBLE: typings.firebasePerformance.attributesUtilsMod.VisibilityState.VISIBLE with Double = js.native
+    sealed trait VISIBLE
+      extends StObject
+         with VisibilityState
+    /* 1 */ val VISIBLE: typings.firebasePerformance.attributesUtilsMod.VisibilityState.VISIBLE & Double = js.native
   }
   
-  @JSImport("@firebase/performance/dist/src/utils/attributes_utils", "getEffectiveConnectionType")
-  @js.native
-  def getEffectiveConnectionType(): EffectiveConnectionType = js.native
+  inline def getEffectiveConnectionType(): EffectiveConnectionType = ^.asInstanceOf[js.Dynamic].applyDynamic("getEffectiveConnectionType")().asInstanceOf[EffectiveConnectionType]
   
-  @JSImport("@firebase/performance/dist/src/utils/attributes_utils", "getServiceWorkerStatus")
-  @js.native
-  def getServiceWorkerStatus(): ServiceWorkerStatus = js.native
+  inline def getServiceWorkerStatus(): ServiceWorkerStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("getServiceWorkerStatus")().asInstanceOf[ServiceWorkerStatus]
   
-  @JSImport("@firebase/performance/dist/src/utils/attributes_utils", "getVisibilityState")
-  @js.native
-  def getVisibilityState(): VisibilityState = js.native
+  inline def getVisibilityState(): VisibilityState = ^.asInstanceOf[js.Dynamic].applyDynamic("getVisibilityState")().asInstanceOf[VisibilityState]
   
-  @JSImport("@firebase/performance/dist/src/utils/attributes_utils", "isValidCustomAttributeName")
-  @js.native
-  def isValidCustomAttributeName(name: String): Boolean = js.native
+  inline def isValidCustomAttributeName(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidCustomAttributeName")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@firebase/performance/dist/src/utils/attributes_utils", "isValidCustomAttributeValue")
-  @js.native
-  def isValidCustomAttributeValue(value: String): Boolean = js.native
+  inline def isValidCustomAttributeValue(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidCustomAttributeValue")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* Rewritten from type alias, can be one of: 
     - typings.firebasePerformance.firebasePerformanceNumbers.`0`
@@ -64,20 +63,15 @@ object attributesUtilsMod {
   trait EffectiveConnectionType extends StObject
   object EffectiveConnectionType {
     
-    @scala.inline
-    def CONNECTION_2G: `2` = 2.asInstanceOf[`2`]
+    inline def CONNECTION_2G: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def CONNECTION_3G: `3` = 3.asInstanceOf[`3`]
+    inline def CONNECTION_3G: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def CONNECTION_4G: `4` = 4.asInstanceOf[`4`]
+    inline def CONNECTION_4G: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def CONNECTION_SLOW_2G: `1` = 1.asInstanceOf[`1`]
+    inline def CONNECTION_SLOW_2G: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def UNKNOWN: `0` = 0.asInstanceOf[`0`]
+    inline def UNKNOWN: `0` = 0.asInstanceOf[`0`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -89,16 +83,12 @@ object attributesUtilsMod {
   trait ServiceWorkerStatus extends StObject
   object ServiceWorkerStatus {
     
-    @scala.inline
-    def CONTROLLED: `2` = 2.asInstanceOf[`2`]
+    inline def CONTROLLED: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def UNCONTROLLED: `3` = 3.asInstanceOf[`3`]
+    inline def UNCONTROLLED: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def UNKNOWN: `0` = 0.asInstanceOf[`0`]
+    inline def UNKNOWN: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def UNSUPPORTED: `1` = 1.asInstanceOf[`1`]
+    inline def UNSUPPORTED: `1` = 1.asInstanceOf[`1`]
   }
 }

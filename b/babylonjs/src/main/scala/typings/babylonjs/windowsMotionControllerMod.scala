@@ -9,7 +9,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.webVRControllerMod.WebVRController
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object windowsMotionControllerMod {
@@ -38,16 +37,16 @@ object windowsMotionControllerMod {
       */
     /* protected */ def _lerpButtonTransform(buttonName: String, buttonValue: Double): Unit = js.native
     
-    var _loadedMeshInfo: js.Any = js.native
+    /* private */ var _loadedMeshInfo: js.Any = js.native
     
-    val _mapping: AxisMeshNames = js.native
+    /* protected */ val _mapping: AxisMeshNames = js.native
     
     /* protected */ def _updateTrackpad(): Unit = js.native
     
-    var createMeshInfo: js.Any = js.native
+    /* private */ var createMeshInfo: js.Any = js.native
     
-    def initControllerMesh(scene: Scene, meshLoaded: js.UndefOr[scala.Nothing], forceDefault: Boolean): Unit = js.native
     def initControllerMesh(scene: Scene, meshLoaded: js.Function1[/* mesh */ AbstractMesh, Unit], forceDefault: Boolean): Unit = js.native
+    def initControllerMesh(scene: Scene, meshLoaded: Unit, forceDefault: Boolean): Unit = js.native
     
     /**
       * Fired when the grip button on this controller is modified
@@ -97,7 +96,7 @@ object windowsMotionControllerMod {
       * @param meshes list of meshes that make up the controller model to process
       * @return structured view of the given meshes, with mapping of buttons and axes to meshes that can be transformed.
       */
-    var processModel: js.Any = js.native
+    /* private */ var processModel: js.Any = js.native
     
     /**
       * The current x and y values of this controller's trackpad
@@ -131,8 +130,7 @@ object windowsMotionControllerMod {
     @JSImport("babylonjs/Gamepads/Controllers/windowsMotionController", "WindowsMotionController.MODEL_BASE_URL")
     @js.native
     def MODEL_BASE_URL: String = js.native
-    @scala.inline
-    def MODEL_BASE_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_BASE_URL")(x.asInstanceOf[js.Any])
+    inline def MODEL_BASE_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_BASE_URL")(x.asInstanceOf[js.Any])
     
     /**
       * The name of the left controller model file
@@ -140,8 +138,7 @@ object windowsMotionControllerMod {
     @JSImport("babylonjs/Gamepads/Controllers/windowsMotionController", "WindowsMotionController.MODEL_LEFT_FILENAME")
     @js.native
     def MODEL_LEFT_FILENAME: String = js.native
-    @scala.inline
-    def MODEL_LEFT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_LEFT_FILENAME")(x.asInstanceOf[js.Any])
+    inline def MODEL_LEFT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_LEFT_FILENAME")(x.asInstanceOf[js.Any])
     
     /**
       * The name of the right controller model file
@@ -149,8 +146,7 @@ object windowsMotionControllerMod {
     @JSImport("babylonjs/Gamepads/Controllers/windowsMotionController", "WindowsMotionController.MODEL_RIGHT_FILENAME")
     @js.native
     def MODEL_RIGHT_FILENAME: String = js.native
-    @scala.inline
-    def MODEL_RIGHT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_RIGHT_FILENAME")(x.asInstanceOf[js.Any])
+    inline def MODEL_RIGHT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_RIGHT_FILENAME")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Gamepads/Controllers/windowsMotionController", "XRWindowsMotionController")

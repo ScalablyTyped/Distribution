@@ -3,7 +3,6 @@ package typings.babylonjs.mod
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "Light")
@@ -21,15 +20,17 @@ abstract class Light protected ()
 /* static members */
 object Light {
   
+  @JSImport("babylonjs", "Light")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Sort function to order lights for rendering.
     * @param a First Light object to compare to second.
     * @param b Second Light object to compare first.
     * @return -1 to reduce's a's index relative to be, 0 for no change, 1 to increase a's index relative to b.
     */
-  @JSImport("babylonjs", "Light.CompareLightsPriority")
-  @js.native
-  def CompareLightsPriority(a: typings.babylonjs.lightMod.Light, b: typings.babylonjs.lightMod.Light): Double = js.native
+  inline def CompareLightsPriority(a: typings.babylonjs.lightMod.Light, b: typings.babylonjs.lightMod.Light): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("CompareLightsPriority")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Falloff Default: light is falling off following the material specification:
@@ -70,9 +71,7 @@ object Light {
     * @param scene The scene the new light will belong to
     * @returns the constructor function
     */
-  @JSImport("babylonjs", "Light.GetConstructorFromName")
-  @js.native
-  def GetConstructorFromName(`type`: Double, name: String, scene: typings.babylonjs.sceneMod.Scene): Nullable[js.Function0[this.type]] = js.native
+  inline def GetConstructorFromName(`type`: Double, name: String, scene: typings.babylonjs.sceneMod.Scene): Nullable[js.Function0[this.type]] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetConstructorFromName")(`type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[js.Function0[this.type]]]
   
   /**
     * Each light type uses the default quantity according to its type:
@@ -173,7 +172,5 @@ object Light {
     * @param scene The scene to create the parsed light in
     * @returns the created light after parsing
     */
-  @JSImport("babylonjs", "Light.Parse")
-  @js.native
-  def Parse(parsedLight: js.Any, scene: typings.babylonjs.sceneMod.Scene): Nullable[typings.babylonjs.lightMod.Light] = js.native
+  inline def Parse(parsedLight: js.Any, scene: typings.babylonjs.sceneMod.Scene): Nullable[typings.babylonjs.lightMod.Light] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedLight.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.lightMod.Light]]
 }

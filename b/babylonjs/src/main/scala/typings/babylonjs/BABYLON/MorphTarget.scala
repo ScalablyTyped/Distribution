@@ -2,30 +2,31 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MorphTarget extends IAnimatable {
+trait MorphTarget
+  extends StObject
+     with IAnimatable {
   
-  var _animationPropertiesOverride: js.Any = js.native
+  /* private */ var _animationPropertiesOverride: js.Any = js.native
   
-  var _influence: js.Any = js.native
+  /* private */ var _influence: js.Any = js.native
   
-  var _normals: js.Any = js.native
+  /* private */ var _normals: js.Any = js.native
   
   /** @hidden */
   var _onDataLayoutChanged: Observable[Unit] = js.native
   
-  var _positions: js.Any = js.native
+  /* private */ var _positions: js.Any = js.native
   
-  var _scene: js.Any = js.native
+  /* private */ var _scene: js.Any = js.native
   
-  var _tangents: js.Any = js.native
+  /* private */ var _tangents: js.Any = js.native
   
-  var _uniqueId: js.Any = js.native
+  /* private */ var _uniqueId: js.Any = js.native
   
-  var _uvs: js.Any = js.native
+  /* private */ var _uvs: js.Any = js.native
   
   /**
     * Gets or sets the animation properties override

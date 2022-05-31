@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.MotionControllerComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.WebXRControllerComponent")
 @js.native
 class WebXRControllerComponent protected ()
-  extends typings.babylonjs.BABYLON.WebXRControllerComponent {
+  extends StObject
+     with typings.babylonjs.BABYLON.WebXRControllerComponent {
   /**
     * Creates a new component for a motion controller.
     * It is created by the motion controller itself
@@ -49,7 +49,7 @@ class WebXRControllerComponent protected ()
     * the type of the component
     */
   `type`: MotionControllerComponentType,
-    _buttonIndex: js.UndefOr[scala.Nothing],
+    _buttonIndex: Double,
     _axesIndices: js.Array[Double]
   ) = this()
   def this(
@@ -61,9 +61,15 @@ class WebXRControllerComponent protected ()
     * the type of the component
     */
   `type`: MotionControllerComponentType,
-    _buttonIndex: Double,
+    _buttonIndex: Unit,
     _axesIndices: js.Array[Double]
   ) = this()
+  
+  /**
+    * Releases all held resources
+    */
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
 }
 /* static members */
 object WebXRControllerComponent {
@@ -78,8 +84,7 @@ object WebXRControllerComponent {
   @JSGlobal("BABYLON.WebXRControllerComponent.BUTTON_TYPE")
   @js.native
   def BUTTON_TYPE: MotionControllerComponentType = js.native
-  @scala.inline
-  def BUTTON_TYPE_=(x: MotionControllerComponentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BUTTON_TYPE")(x.asInstanceOf[js.Any])
+  inline def BUTTON_TYPE_=(x: MotionControllerComponentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BUTTON_TYPE")(x.asInstanceOf[js.Any])
   
   /**
     * squeeze component type
@@ -87,8 +92,7 @@ object WebXRControllerComponent {
   @JSGlobal("BABYLON.WebXRControllerComponent.SQUEEZE_TYPE")
   @js.native
   def SQUEEZE_TYPE: MotionControllerComponentType = js.native
-  @scala.inline
-  def SQUEEZE_TYPE_=(x: MotionControllerComponentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SQUEEZE_TYPE")(x.asInstanceOf[js.Any])
+  inline def SQUEEZE_TYPE_=(x: MotionControllerComponentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SQUEEZE_TYPE")(x.asInstanceOf[js.Any])
   
   /**
     * Thumbstick component type
@@ -96,8 +100,7 @@ object WebXRControllerComponent {
   @JSGlobal("BABYLON.WebXRControllerComponent.THUMBSTICK_TYPE")
   @js.native
   def THUMBSTICK_TYPE: MotionControllerComponentType = js.native
-  @scala.inline
-  def THUMBSTICK_TYPE_=(x: MotionControllerComponentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("THUMBSTICK_TYPE")(x.asInstanceOf[js.Any])
+  inline def THUMBSTICK_TYPE_=(x: MotionControllerComponentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("THUMBSTICK_TYPE")(x.asInstanceOf[js.Any])
   
   /**
     * Touchpad component type
@@ -105,8 +108,7 @@ object WebXRControllerComponent {
   @JSGlobal("BABYLON.WebXRControllerComponent.TOUCHPAD_TYPE")
   @js.native
   def TOUCHPAD_TYPE: MotionControllerComponentType = js.native
-  @scala.inline
-  def TOUCHPAD_TYPE_=(x: MotionControllerComponentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOUCHPAD_TYPE")(x.asInstanceOf[js.Any])
+  inline def TOUCHPAD_TYPE_=(x: MotionControllerComponentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOUCHPAD_TYPE")(x.asInstanceOf[js.Any])
   
   /**
     * trigger component type
@@ -114,6 +116,5 @@ object WebXRControllerComponent {
   @JSGlobal("BABYLON.WebXRControllerComponent.TRIGGER_TYPE")
   @js.native
   def TRIGGER_TYPE: MotionControllerComponentType = js.native
-  @scala.inline
-  def TRIGGER_TYPE_=(x: MotionControllerComponentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRIGGER_TYPE")(x.asInstanceOf[js.Any])
+  inline def TRIGGER_TYPE_=(x: MotionControllerComponentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRIGGER_TYPE")(x.asInstanceOf[js.Any])
 }

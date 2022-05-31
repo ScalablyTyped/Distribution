@@ -283,7 +283,4 @@ object mod {
     
     inline def WED: typings.pacResolver.pacResolverStrings.WED = "WED".asInstanceOf[typings.pacResolver.pacResolverStrings.WED]
   }
-  
-  /* Inlined std.Readonly<node.vm.Context> */
-  object sandbox
 }

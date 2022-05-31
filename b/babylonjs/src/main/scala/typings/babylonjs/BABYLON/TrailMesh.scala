@@ -2,33 +2,33 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TrailMesh extends Mesh {
+trait TrailMesh
+  extends StObject
+     with Mesh {
   
-  var _autoStart: js.Any = js.native
+  /* private */ var _autoStart: js.Any = js.native
   
-  var _beforeRenderObserver: js.Any = js.native
+  /* private */ var _beforeRenderObserver: js.Any = js.native
   
-  var _createMesh: js.Any = js.native
+  /* private */ var _createMesh: js.Any = js.native
   
-  var _diameter: js.Any = js.native
+  /* private */ var _diameter: js.Any = js.native
   
-  var _generator: js.Any = js.native
+  /* private */ var _generator: js.Any = js.native
   
-  var _length: js.Any = js.native
+  /* private */ var _length: js.Any = js.native
   
-  var _running: js.Any = js.native
+  /* private */ var _running: js.Any = js.native
   
-  var _sectionNormalVectors: js.Any = js.native
+  /* private */ var _sectionNormalVectors: js.Any = js.native
   
-  var _sectionPolygonPointsCount: js.Any = js.native
+  /* private */ var _sectionPolygonPointsCount: js.Any = js.native
   
-  var _sectionVectors: js.Any = js.native
+  /* private */ var _sectionVectors: js.Any = js.native
   
-  def clone(name: js.UndefOr[scala.Nothing], newGenerator: TransformNode): TrailMesh = js.native
   /**
     * Returns a new TrailMesh object.
     * @param name is a string, the name given to the new mesh
@@ -36,6 +36,7 @@ trait TrailMesh extends Mesh {
     * @returns a new mesh
     */
   def clone(name: String, newGenerator: TransformNode): TrailMesh = js.native
+  def clone(name: Unit, newGenerator: TransformNode): TrailMesh = js.native
   
   /**
     * Start trailing mesh.

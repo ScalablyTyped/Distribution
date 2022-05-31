@@ -10,7 +10,6 @@ import typings.jupyterlabObservables.modeldbMod.IModelDB
 import typings.luminoWidgets.mod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -48,8 +47,8 @@ object mod {
   class DocumentModel ()
     extends typings.jupyterlabDocregistry.defaultMod.DocumentModel {
     def this(languagePreference: String) = this()
-    def this(languagePreference: js.UndefOr[scala.Nothing], modelDB: IModelDB) = this()
     def this(languagePreference: String, modelDB: IModelDB) = this()
+    def this(languagePreference: Unit, modelDB: IModelDB) = this()
   }
   
   @JSImport("@jupyterlab/docregistry", "DocumentRegistry")

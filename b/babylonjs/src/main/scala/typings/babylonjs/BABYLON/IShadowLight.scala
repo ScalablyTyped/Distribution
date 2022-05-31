@@ -2,11 +2,12 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IShadowLight extends Light {
+trait IShadowLight
+  extends StObject
+     with Light {
   
   /**
     * Computes the transformed information (transformedPosition and transformedDirection in World space) of the current light

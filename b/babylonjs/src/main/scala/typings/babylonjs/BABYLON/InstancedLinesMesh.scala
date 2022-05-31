@@ -2,11 +2,12 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstancedLinesMesh extends InstancedMesh {
+trait InstancedLinesMesh
+  extends StObject
+     with InstancedMesh {
   
   /**
     * The intersection Threshold is the margin applied when intersection a segment of the LinesMesh with a Ray.

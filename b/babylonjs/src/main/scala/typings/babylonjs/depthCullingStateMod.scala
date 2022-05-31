@@ -3,7 +3,6 @@ package typings.babylonjs
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object depthCullingStateMod {
@@ -15,33 +14,33 @@ object depthCullingStateMod {
     */
   class DepthCullingState () extends StObject {
     
-    var _cull: js.Any = js.native
+    /* private */ var _cull: js.Any = js.native
     
-    var _cullFace: js.Any = js.native
+    /* private */ var _cullFace: js.Any = js.native
     
-    var _depthFunc: js.Any = js.native
+    /* private */ var _depthFunc: js.Any = js.native
     
-    var _depthMask: js.Any = js.native
+    /* private */ var _depthMask: js.Any = js.native
     
-    var _depthTest: js.Any = js.native
+    /* private */ var _depthTest: js.Any = js.native
     
-    var _frontFace: js.Any = js.native
+    /* private */ var _frontFace: js.Any = js.native
     
-    var _isCullDirty: js.Any = js.native
+    /* private */ var _isCullDirty: js.Any = js.native
     
-    var _isCullFaceDirty: js.Any = js.native
+    /* private */ var _isCullFaceDirty: js.Any = js.native
     
-    var _isDepthFuncDirty: js.Any = js.native
+    /* private */ var _isDepthFuncDirty: js.Any = js.native
     
-    var _isDepthMaskDirty: js.Any = js.native
+    /* private */ var _isDepthMaskDirty: js.Any = js.native
     
-    var _isDepthTestDirty: js.Any = js.native
+    /* private */ var _isDepthTestDirty: js.Any = js.native
     
-    var _isFrontFaceDirty: js.Any = js.native
+    /* private */ var _isFrontFaceDirty: js.Any = js.native
     
-    var _isZOffsetDirty: js.Any = js.native
+    /* private */ var _isZOffsetDirty: js.Any = js.native
     
-    var _zOffset: js.Any = js.native
+    /* private */ var _zOffset: js.Any = js.native
     
     @JSName("apply")
     def apply(gl: WebGLRenderingContext): Unit = js.native

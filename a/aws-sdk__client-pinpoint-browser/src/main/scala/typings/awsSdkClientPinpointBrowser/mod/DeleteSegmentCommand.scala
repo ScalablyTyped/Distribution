@@ -1,5 +1,6 @@
 package typings.awsSdkClientPinpointBrowser.mod
 
+import typings.awsSdkClientPinpointBrowser.typesDeleteSegmentInputMod.DeleteSegmentInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class DeleteSegmentCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.deleteSegmentCommandMod.DeleteSegmentCommand {
-  def this(input: typings.awsSdkClientPinpointBrowser.typesDeleteSegmentInputMod.DeleteSegmentInput) = this()
+  def this(input: DeleteSegmentInput) = this()
 }

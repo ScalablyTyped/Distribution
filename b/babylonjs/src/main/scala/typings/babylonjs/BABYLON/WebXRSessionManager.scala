@@ -10,23 +10,24 @@ import typings.babylonjs.XRSessionInit
 import typings.babylonjs.XRSessionMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebXRSessionManager extends IDisposable {
+trait WebXRSessionManager
+  extends StObject
+     with IDisposable {
   
-  var _createRenderTargetTexture: js.Any = js.native
+  /* private */ var _createRenderTargetTexture: js.Any = js.native
   
-  var _referenceSpace: js.Any = js.native
+  /* private */ var _referenceSpace: js.Any = js.native
   
-  var _rttProvider: js.Any = js.native
+  /* private */ var _rttProvider: js.Any = js.native
   
-  var _sessionEnded: js.Any = js.native
+  /* private */ var _sessionEnded: js.Any = js.native
   
-  var _xrNavigator: js.Any = js.native
+  /* private */ var _xrNavigator: js.Any = js.native
   
-  var baseLayer: js.Any = js.native
+  /* private */ var baseLayer: js.Any = js.native
   
   /**
     * The base reference space from which the session started. good if you want to reset your
@@ -84,7 +85,7 @@ trait WebXRSessionManager extends IDisposable {
     * @returns a promise which will resolve once the session has been initialized
     */
   def initializeSessionAsync(): js.Promise[XRSession] = js.native
-  def initializeSessionAsync(xrSessionMode: js.UndefOr[scala.Nothing], xrSessionInit: XRSessionInit): js.Promise[XRSession] = js.native
+  def initializeSessionAsync(xrSessionMode: Unit, xrSessionInit: XRSessionInit): js.Promise[XRSession] = js.native
   def initializeSessionAsync(xrSessionMode: XRSessionMode): js.Promise[XRSession] = js.native
   def initializeSessionAsync(xrSessionMode: XRSessionMode, xrSessionInit: XRSessionInit): js.Promise[XRSession] = js.native
   
@@ -108,7 +109,7 @@ trait WebXRSessionManager extends IDisposable {
   /**
     * Fires when the xr session is ended either by the device or manually done
     */
-  var onXRSessionEnded: Observable[_] = js.native
+  var onXRSessionEnded: Observable[js.Any] = js.native
   
   /**
     * Fires when the xr session is ended either by the device or manually done

@@ -3,13 +3,13 @@ package typings.babylonjs.global.BABYLON
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.MeshAssetTask")
 @js.native
 class MeshAssetTask protected ()
-  extends typings.babylonjs.BABYLON.MeshAssetTask {
+  extends StObject
+     with typings.babylonjs.BABYLON.MeshAssetTask {
   /**
     * Creates a new MeshAssetTask
     * @param name defines the name of the task

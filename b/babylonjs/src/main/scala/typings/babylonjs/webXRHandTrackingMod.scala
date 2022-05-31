@@ -18,14 +18,15 @@ import typings.babylonjs.webXRInputSourceMod.WebXRInputSource
 import typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webXRHandTrackingMod {
   
   @JSImport("babylonjs/XR/features/WebXRHandTracking", "WebXRHand")
   @js.native
-  class WebXRHand protected () extends IDisposable {
+  class WebXRHand protected ()
+    extends StObject
+       with IDisposable {
     /**
       * Construct a new hand object
       * @param xrController the controller to which the hand correlates
@@ -52,7 +53,7 @@ object webXRHandTrackingMod {
     xrController: WebXRInputSource,
       /** the meshes to be used to track the hand joints */
     trackedMeshes: js.Array[AbstractMesh],
-      _handMesh: js.UndefOr[scala.Nothing],
+      _handMesh: Unit,
       _rigMapping: js.Array[String]
     ) = this()
     def this(
@@ -68,16 +69,7 @@ object webXRHandTrackingMod {
     xrController: WebXRInputSource,
       /** the meshes to be used to track the hand joints */
     trackedMeshes: js.Array[AbstractMesh],
-      _handMesh: js.UndefOr[scala.Nothing],
-      _rigMapping: js.UndefOr[scala.Nothing],
-      disableDefaultHandMesh: Boolean
-    ) = this()
-    def this(
-      /** the controller to which the hand correlates */
-    xrController: WebXRInputSource,
-      /** the meshes to be used to track the hand joints */
-    trackedMeshes: js.Array[AbstractMesh],
-      _handMesh: js.UndefOr[scala.Nothing],
+      _handMesh: Unit,
       _rigMapping: js.Array[String],
       disableDefaultHandMesh: Boolean
     ) = this()
@@ -86,8 +78,8 @@ object webXRHandTrackingMod {
     xrController: WebXRInputSource,
       /** the meshes to be used to track the hand joints */
     trackedMeshes: js.Array[AbstractMesh],
-      _handMesh: AbstractMesh,
-      _rigMapping: js.UndefOr[scala.Nothing],
+      _handMesh: Unit,
+      _rigMapping: Unit,
       disableDefaultHandMesh: Boolean
     ) = this()
     def this(
@@ -99,24 +91,39 @@ object webXRHandTrackingMod {
       _rigMapping: js.Array[String],
       disableDefaultHandMesh: Boolean
     ) = this()
+    def this(
+      /** the controller to which the hand correlates */
+    xrController: WebXRInputSource,
+      /** the meshes to be used to track the hand joints */
+    trackedMeshes: js.Array[AbstractMesh],
+      _handMesh: AbstractMesh,
+      _rigMapping: Unit,
+      disableDefaultHandMesh: Boolean
+    ) = this()
     
-    var _defaultHandMesh: js.Any = js.native
+    /* private */ var _defaultHandMesh: js.Any = js.native
     
-    var _generateDefaultHandMesh: js.Any = js.native
+    /* private */ var _generateDefaultHandMesh: js.Any = js.native
     
-    var _handMesh: js.Any = js.native
+    /* private */ var _handMesh: js.Any = js.native
     
-    var _rigMapping: js.Any = js.native
+    /* private */ var _rigMapping: js.Any = js.native
     
-    var _scene: js.Any = js.native
+    /* private */ var _scene: js.Any = js.native
     
-    var _transformNodeMapping: js.Any = js.native
+    /* private */ var _transformNodeMapping: js.Any = js.native
+    
+    /**
+      * Releases all held resources
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * Populate the HandPartsDefinition object.
       * This is called as a side effect since certain browsers don't have XRHand defined.
       */
-    var generateHandPartsDefinition: js.Any = js.native
+    /* private */ var generateHandPartsDefinition: js.Any = js.native
     
     /**
       * Get meshes of part of the hand
@@ -162,11 +169,11 @@ object webXRHandTrackingMod {
     options: IWebXRHandTrackingOptions
     ) = this()
     
-    var _attachHand: js.Any = js.native
+    /* private */ var _attachHand: js.Any = js.native
     
-    var _detachHand: js.Any = js.native
+    /* private */ var _detachHand: js.Any = js.native
     
-    var _hands: js.Any = js.native
+    /* private */ var _hands: js.Any = js.native
     
     /**
       * Get the hand object according to the controller id
@@ -223,8 +230,7 @@ object webXRHandTrackingMod {
     @JSImport("babylonjs/XR/features/WebXRHandTracking", "WebXRHandTracking._idCounter")
     @js.native
     def _idCounter: js.Any = js.native
-    @scala.inline
-    def _idCounter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_idCounter")(x.asInstanceOf[js.Any])
+    inline def _idCounter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_idCounter")(x.asInstanceOf[js.Any])
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -241,72 +247,60 @@ object webXRHandTrackingMod {
     /**
       * HandPart - Index finger
       */
-    @scala.inline
-    def INDEX: index = "index".asInstanceOf[index]
+    inline def INDEX: index = "index".asInstanceOf[index]
     
     /**
       * HandPart - Little finger
       */
-    @scala.inline
-    def LITTLE: little = "little".asInstanceOf[little]
+    inline def LITTLE: little = "little".asInstanceOf[little]
     
     /**
       * HandPart - Middle finger
       */
-    @scala.inline
-    def MIDDLE: middle = "middle".asInstanceOf[middle]
+    inline def MIDDLE: middle = "middle".asInstanceOf[middle]
     
     /**
       * HandPart - Ring finger
       */
-    @scala.inline
-    def RING: ring = "ring".asInstanceOf[ring]
+    inline def RING: ring = "ring".asInstanceOf[ring]
     
     /**
       * HandPart - The THumb
       */
-    @scala.inline
-    def THUMB: thumb = "thumb".asInstanceOf[thumb]
+    inline def THUMB: thumb = "thumb".asInstanceOf[thumb]
     
     /**
       * HandPart - Wrist
       */
-    @scala.inline
-    def WRIST: wrist = "wrist".asInstanceOf[wrist]
+    inline def WRIST: wrist = "wrist".asInstanceOf[wrist]
   }
   
-  @js.native
   trait IWebXRHandTrackingOptions extends StObject {
     
     /**
       * Configuration object for the joint meshes
       */
-    var jointMeshes: js.UndefOr[DisableDefaultHandMesh] = js.native
+    var jointMeshes: js.UndefOr[DisableDefaultHandMesh] = js.undefined
     
     /**
       * The xrInput that will be used as source for new hands
       */
-    var xrInput: WebXRInput = js.native
+    var xrInput: WebXRInput
   }
   object IWebXRHandTrackingOptions {
     
-    @scala.inline
-    def apply(xrInput: WebXRInput): IWebXRHandTrackingOptions = {
+    inline def apply(xrInput: WebXRInput): IWebXRHandTrackingOptions = {
       val __obj = js.Dynamic.literal(xrInput = xrInput.asInstanceOf[js.Any])
       __obj.asInstanceOf[IWebXRHandTrackingOptions]
     }
     
-    @scala.inline
-    implicit class IWebXRHandTrackingOptionsMutableBuilder[Self <: IWebXRHandTrackingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IWebXRHandTrackingOptions](x: Self) {
       
-      @scala.inline
-      def setJointMeshes(value: DisableDefaultHandMesh): Self = StObject.set(x, "jointMeshes", value.asInstanceOf[js.Any])
+      inline def setJointMeshes(value: DisableDefaultHandMesh): Self = StObject.set(x, "jointMeshes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJointMeshesUndefined: Self = StObject.set(x, "jointMeshes", js.undefined)
+      inline def setJointMeshesUndefined: Self = StObject.set(x, "jointMeshes", js.undefined)
       
-      @scala.inline
-      def setXrInput(value: WebXRInput): Self = StObject.set(x, "xrInput", value.asInstanceOf[js.Any])
+      inline def setXrInput(value: WebXRInput): Self = StObject.set(x, "xrInput", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -6,12 +6,15 @@ import typings.luminoAlgorithm.iterMod.IterableOrArrayLike
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object celldragutilsMod {
   
   object CellDragUtils {
+    
+    @JSImport("@jupyterlab/cells/lib/celldragutils", "CellDragUtils")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Create an image for the cell(s) to be dragged
@@ -19,9 +22,7 @@ object celldragutilsMod {
       * @param activeCell - The cell from where the drag event is triggered
       * @param selectedCells - The cells to be dragged
       */
-    @JSImport("@jupyterlab/cells/lib/celldragutils", "CellDragUtils.createCellDragImage")
-    @js.native
-    def createCellDragImage(activeCell: Cell, selectedCells: js.Array[ICell]): HTMLElement = js.native
+    inline def createCellDragImage(activeCell: Cell, selectedCells: js.Array[ICell]): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createCellDragImage")(activeCell.asInstanceOf[js.Any], selectedCells.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
     
     /**
       * Detect which part of the cell triggered the MouseEvent
@@ -29,9 +30,7 @@ object celldragutilsMod {
       * @param cell - The cell which contains the MouseEvent's target
       * @param target - The DOM node which triggered the MouseEvent
       */
-    @JSImport("@jupyterlab/cells/lib/celldragutils", "CellDragUtils.detectTargetArea")
-    @js.native
-    def detectTargetArea(cell: Cell, target: HTMLElement): ICellTargetArea = js.native
+    inline def detectTargetArea(cell: Cell, target: HTMLElement): ICellTargetArea = (^.asInstanceOf[js.Dynamic].applyDynamic("detectTargetArea")(cell.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[ICellTargetArea]
     
     /**
       * Find the cell index containing the target html element.
@@ -46,13 +45,11 @@ object celldragutilsMod {
       * @returns index of the cell we're looking for. Returns -1 if
       * the cell is not founds
       */
-    @JSImport("@jupyterlab/cells/lib/celldragutils", "CellDragUtils.findCell")
-    @js.native
-    def findCell(
+    inline def findCell(
       node: HTMLElement,
       cells: IterableOrArrayLike[Cell],
       isCellNode: js.Function1[/* node */ HTMLElement, Boolean]
-    ): Double = js.native
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findCell")(node.asInstanceOf[js.Any], cells.asInstanceOf[js.Any], isCellNode.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Detect if a drag event should be started. This is down if the
@@ -63,9 +60,7 @@ object celldragutilsMod {
       * @param nextX - Current X Coordinate of the mouse pointer
       * @param nextY - Current Y Coordinate of the mouse pointer
       */
-    @JSImport("@jupyterlab/cells/lib/celldragutils", "CellDragUtils.shouldStartDrag")
-    @js.native
-    def shouldStartDrag(prevX: Double, prevY: Double, nextX: Double, nextY: Double): Boolean = js.native
+    inline def shouldStartDrag(prevX: Double, prevY: Double, nextX: Double, nextY: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldStartDrag")(prevX.asInstanceOf[js.Any], prevY.asInstanceOf[js.Any], nextX.asInstanceOf[js.Any], nextY.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /* Rewritten from type alias, can be one of: 
       - typings.jupyterlabCells.jupyterlabCellsStrings.input
@@ -76,17 +71,13 @@ object celldragutilsMod {
     trait ICellTargetArea extends StObject
     object ICellTargetArea {
       
-      @scala.inline
-      def cell: typings.jupyterlabCells.jupyterlabCellsStrings.cell = "cell".asInstanceOf[typings.jupyterlabCells.jupyterlabCellsStrings.cell]
+      inline def cell: typings.jupyterlabCells.jupyterlabCellsStrings.cell = "cell".asInstanceOf[typings.jupyterlabCells.jupyterlabCellsStrings.cell]
       
-      @scala.inline
-      def input: typings.jupyterlabCells.jupyterlabCellsStrings.input = "input".asInstanceOf[typings.jupyterlabCells.jupyterlabCellsStrings.input]
+      inline def input: typings.jupyterlabCells.jupyterlabCellsStrings.input = "input".asInstanceOf[typings.jupyterlabCells.jupyterlabCellsStrings.input]
       
-      @scala.inline
-      def prompt: typings.jupyterlabCells.jupyterlabCellsStrings.prompt = "prompt".asInstanceOf[typings.jupyterlabCells.jupyterlabCellsStrings.prompt]
+      inline def prompt: typings.jupyterlabCells.jupyterlabCellsStrings.prompt = "prompt".asInstanceOf[typings.jupyterlabCells.jupyterlabCellsStrings.prompt]
       
-      @scala.inline
-      def unknown: typings.jupyterlabCells.jupyterlabCellsStrings.unknown = "unknown".asInstanceOf[typings.jupyterlabCells.jupyterlabCellsStrings.unknown]
+      inline def unknown: typings.jupyterlabCells.jupyterlabCellsStrings.unknown = "unknown".asInstanceOf[typings.jupyterlabCells.jupyterlabCellsStrings.unknown]
     }
   }
 }

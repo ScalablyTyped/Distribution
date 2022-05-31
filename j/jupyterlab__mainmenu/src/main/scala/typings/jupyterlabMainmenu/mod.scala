@@ -1,12 +1,10 @@
 package typings.jupyterlabMainmenu
 
-import org.scalablytyped.runtime.Shortcut
 import typings.luminoCommands.mod.CommandRegistry
 import typings.luminoCoreutils.mod.Token
 import typings.luminoWidgets.menuMod.Menu.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -38,17 +36,9 @@ object mod {
     def this(options: IOptions) = this()
   }
   
-  object IMainMenu extends Shortcut {
-    
-    @JSImport("@jupyterlab/mainmenu", "IMainMenu")
-    @js.native
-    val ^ : Token[typings.jupyterlabMainmenu.tokensMod.IMainMenu] = js.native
-    
-    type _To = Token[typings.jupyterlabMainmenu.tokensMod.IMainMenu]
-    
-    /* This means you don't have to write `^`, but can instead just say `IMainMenu.foo` */
-    override def _to: Token[typings.jupyterlabMainmenu.tokensMod.IMainMenu] = ^
-  }
+  @JSImport("@jupyterlab/mainmenu", "IMainMenu")
+  @js.native
+  val IMainMenu: Token[typings.jupyterlabMainmenu.tokensMod.IMainMenu] = js.native
   
   @JSImport("@jupyterlab/mainmenu", "JupyterLabMenu")
   @js.native

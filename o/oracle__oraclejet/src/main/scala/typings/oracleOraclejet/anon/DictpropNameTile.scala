@@ -3,27 +3,23 @@ package typings.oracleOraclejet.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DictpropNameTile
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var tile: typings.std.Element = js.native
+  var tile: typings.std.Element
 }
 object DictpropNameTile {
   
-  @scala.inline
-  def apply(tile: typings.std.Element): DictpropNameTile = {
+  inline def apply(tile: typings.std.Element): DictpropNameTile = {
     val __obj = js.Dynamic.literal(tile = tile.asInstanceOf[js.Any])
     __obj.asInstanceOf[DictpropNameTile]
   }
   
-  @scala.inline
-  implicit class DictpropNameTileMutableBuilder[Self <: DictpropNameTile] (val x: Self) extends AnyVal {
+  extension [Self <: DictpropNameTile](x: Self) {
     
-    @scala.inline
-    def setTile(value: typings.std.Element): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
+    inline def setTile(value: typings.std.Element): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
   }
 }

@@ -2,25 +2,24 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WeightedSound extends StObject {
   
-  var _coneInnerAngle: js.Any = js.native
+  /* private */ var _coneInnerAngle: js.Any = js.native
   
-  var _coneOuterAngle: js.Any = js.native
+  /* private */ var _coneOuterAngle: js.Any = js.native
   
-  var _currentIndex: js.Any = js.native
+  /* private */ var _currentIndex: js.Any = js.native
   
-  var _onended: js.Any = js.native
+  /* private */ var _onended: js.Any = js.native
   
-  var _sounds: js.Any = js.native
+  /* private */ var _sounds: js.Any = js.native
   
-  var _volume: js.Any = js.native
+  /* private */ var _volume: js.Any = js.native
   
-  var _weights: js.Any = js.native
+  /* private */ var _weights: js.Any = js.native
   
   /**
     * The size of cone in degrees for a directional sound in which there will be no attenuation.

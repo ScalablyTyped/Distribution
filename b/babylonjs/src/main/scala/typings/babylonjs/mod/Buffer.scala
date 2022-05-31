@@ -3,7 +3,6 @@ package typings.babylonjs.mod
 import typings.babylonjs.typesMod.DataArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "Buffer")
@@ -27,13 +26,6 @@ class Buffer protected ()
     engine: js.Any,
     data: DataArray,
     updatable: Boolean,
-    stride: js.UndefOr[scala.Nothing],
-    postponeInternalCreation: Boolean
-  ) = this()
-  def this(
-    engine: js.Any,
-    data: DataArray,
-    updatable: Boolean,
     stride: Double,
     postponeInternalCreation: Boolean
   ) = this()
@@ -41,25 +33,8 @@ class Buffer protected ()
     engine: js.Any,
     data: DataArray,
     updatable: Boolean,
-    stride: js.UndefOr[scala.Nothing],
-    postponeInternalCreation: js.UndefOr[scala.Nothing],
-    instanced: Boolean
-  ) = this()
-  def this(
-    engine: js.Any,
-    data: DataArray,
-    updatable: Boolean,
-    stride: js.UndefOr[scala.Nothing],
-    postponeInternalCreation: Boolean,
-    instanced: Boolean
-  ) = this()
-  def this(
-    engine: js.Any,
-    data: DataArray,
-    updatable: Boolean,
-    stride: Double,
-    postponeInternalCreation: js.UndefOr[scala.Nothing],
-    instanced: Boolean
+    stride: Unit,
+    postponeInternalCreation: Boolean
   ) = this()
   def this(
     engine: js.Any,
@@ -73,64 +48,25 @@ class Buffer protected ()
     engine: js.Any,
     data: DataArray,
     updatable: Boolean,
-    stride: js.UndefOr[scala.Nothing],
-    postponeInternalCreation: js.UndefOr[scala.Nothing],
-    instanced: js.UndefOr[scala.Nothing],
-    useBytes: Boolean
-  ) = this()
-  def this(
-    engine: js.Any,
-    data: DataArray,
-    updatable: Boolean,
-    stride: js.UndefOr[scala.Nothing],
-    postponeInternalCreation: js.UndefOr[scala.Nothing],
-    instanced: Boolean,
-    useBytes: Boolean
-  ) = this()
-  def this(
-    engine: js.Any,
-    data: DataArray,
-    updatable: Boolean,
-    stride: js.UndefOr[scala.Nothing],
-    postponeInternalCreation: Boolean,
-    instanced: js.UndefOr[scala.Nothing],
-    useBytes: Boolean
-  ) = this()
-  def this(
-    engine: js.Any,
-    data: DataArray,
-    updatable: Boolean,
-    stride: js.UndefOr[scala.Nothing],
-    postponeInternalCreation: Boolean,
-    instanced: Boolean,
-    useBytes: Boolean
-  ) = this()
-  def this(
-    engine: js.Any,
-    data: DataArray,
-    updatable: Boolean,
     stride: Double,
-    postponeInternalCreation: js.UndefOr[scala.Nothing],
-    instanced: js.UndefOr[scala.Nothing],
-    useBytes: Boolean
+    postponeInternalCreation: Unit,
+    instanced: Boolean
   ) = this()
   def this(
     engine: js.Any,
     data: DataArray,
     updatable: Boolean,
-    stride: Double,
-    postponeInternalCreation: js.UndefOr[scala.Nothing],
-    instanced: Boolean,
-    useBytes: Boolean
-  ) = this()
-  def this(
-    engine: js.Any,
-    data: DataArray,
-    updatable: Boolean,
-    stride: Double,
+    stride: Unit,
     postponeInternalCreation: Boolean,
-    instanced: js.UndefOr[scala.Nothing],
-    useBytes: Boolean
+    instanced: Boolean
+  ) = this()
+  def this(
+    engine: js.Any,
+    data: DataArray,
+    updatable: Boolean,
+    stride: Unit,
+    postponeInternalCreation: Unit,
+    instanced: Boolean
   ) = this()
   def this(
     engine: js.Any,
@@ -145,77 +81,70 @@ class Buffer protected ()
     engine: js.Any,
     data: DataArray,
     updatable: Boolean,
-    stride: js.UndefOr[scala.Nothing],
-    postponeInternalCreation: js.UndefOr[scala.Nothing],
-    instanced: js.UndefOr[scala.Nothing],
-    useBytes: js.UndefOr[scala.Nothing],
-    divisor: Double
-  ) = this()
-  def this(
-    engine: js.Any,
-    data: DataArray,
-    updatable: Boolean,
-    stride: js.UndefOr[scala.Nothing],
-    postponeInternalCreation: js.UndefOr[scala.Nothing],
-    instanced: js.UndefOr[scala.Nothing],
-    useBytes: Boolean,
-    divisor: Double
-  ) = this()
-  def this(
-    engine: js.Any,
-    data: DataArray,
-    updatable: Boolean,
-    stride: js.UndefOr[scala.Nothing],
-    postponeInternalCreation: js.UndefOr[scala.Nothing],
-    instanced: Boolean,
-    useBytes: js.UndefOr[scala.Nothing],
-    divisor: Double
-  ) = this()
-  def this(
-    engine: js.Any,
-    data: DataArray,
-    updatable: Boolean,
-    stride: js.UndefOr[scala.Nothing],
-    postponeInternalCreation: js.UndefOr[scala.Nothing],
-    instanced: Boolean,
-    useBytes: Boolean,
-    divisor: Double
-  ) = this()
-  def this(
-    engine: js.Any,
-    data: DataArray,
-    updatable: Boolean,
-    stride: js.UndefOr[scala.Nothing],
+    stride: Double,
     postponeInternalCreation: Boolean,
-    instanced: js.UndefOr[scala.Nothing],
-    useBytes: js.UndefOr[scala.Nothing],
-    divisor: Double
+    instanced: Unit,
+    useBytes: Boolean
   ) = this()
   def this(
     engine: js.Any,
     data: DataArray,
     updatable: Boolean,
-    stride: js.UndefOr[scala.Nothing],
-    postponeInternalCreation: Boolean,
-    instanced: js.UndefOr[scala.Nothing],
-    useBytes: Boolean,
-    divisor: Double
+    stride: Double,
+    postponeInternalCreation: Unit,
+    instanced: Boolean,
+    useBytes: Boolean
   ) = this()
   def this(
     engine: js.Any,
     data: DataArray,
     updatable: Boolean,
-    stride: js.UndefOr[scala.Nothing],
+    stride: Double,
+    postponeInternalCreation: Unit,
+    instanced: Unit,
+    useBytes: Boolean
+  ) = this()
+  def this(
+    engine: js.Any,
+    data: DataArray,
+    updatable: Boolean,
+    stride: Unit,
     postponeInternalCreation: Boolean,
     instanced: Boolean,
-    useBytes: js.UndefOr[scala.Nothing],
-    divisor: Double
+    useBytes: Boolean
   ) = this()
   def this(
     engine: js.Any,
     data: DataArray,
     updatable: Boolean,
-    stride: js.UndefOr[scala.Nothing],
+    stride: Unit,
+    postponeInternalCreation: Boolean,
+    instanced: Unit,
+    useBytes: Boolean
+  ) = this()
+  def this(
+    engine: js.Any,
+    data: DataArray,
+    updatable: Boolean,
+    stride: Unit,
+    postponeInternalCreation: Unit,
+    instanced: Boolean,
+    useBytes: Boolean
+  ) = this()
+  def this(
+    engine: js.Any,
+    data: DataArray,
+    updatable: Boolean,
+    stride: Unit,
+    postponeInternalCreation: Unit,
+    instanced: Unit,
+    useBytes: Boolean
+  ) = this()
+  def this(
+    engine: js.Any,
+    data: DataArray,
+    updatable: Boolean,
+    stride: Double,
     postponeInternalCreation: Boolean,
     instanced: Boolean,
     useBytes: Boolean,
@@ -226,29 +155,9 @@ class Buffer protected ()
     data: DataArray,
     updatable: Boolean,
     stride: Double,
-    postponeInternalCreation: js.UndefOr[scala.Nothing],
-    instanced: js.UndefOr[scala.Nothing],
-    useBytes: js.UndefOr[scala.Nothing],
-    divisor: Double
-  ) = this()
-  def this(
-    engine: js.Any,
-    data: DataArray,
-    updatable: Boolean,
-    stride: Double,
-    postponeInternalCreation: js.UndefOr[scala.Nothing],
-    instanced: js.UndefOr[scala.Nothing],
-    useBytes: Boolean,
-    divisor: Double
-  ) = this()
-  def this(
-    engine: js.Any,
-    data: DataArray,
-    updatable: Boolean,
-    stride: Double,
-    postponeInternalCreation: js.UndefOr[scala.Nothing],
+    postponeInternalCreation: Boolean,
     instanced: Boolean,
-    useBytes: js.UndefOr[scala.Nothing],
+    useBytes: Unit,
     divisor: Double
   ) = this()
   def this(
@@ -256,8 +165,8 @@ class Buffer protected ()
     data: DataArray,
     updatable: Boolean,
     stride: Double,
-    postponeInternalCreation: js.UndefOr[scala.Nothing],
-    instanced: Boolean,
+    postponeInternalCreation: Boolean,
+    instanced: Unit,
     useBytes: Boolean,
     divisor: Double
   ) = this()
@@ -267,8 +176,8 @@ class Buffer protected ()
     updatable: Boolean,
     stride: Double,
     postponeInternalCreation: Boolean,
-    instanced: js.UndefOr[scala.Nothing],
-    useBytes: js.UndefOr[scala.Nothing],
+    instanced: Unit,
+    useBytes: Unit,
     divisor: Double
   ) = this()
   def this(
@@ -276,8 +185,28 @@ class Buffer protected ()
     data: DataArray,
     updatable: Boolean,
     stride: Double,
-    postponeInternalCreation: Boolean,
-    instanced: js.UndefOr[scala.Nothing],
+    postponeInternalCreation: Unit,
+    instanced: Boolean,
+    useBytes: Boolean,
+    divisor: Double
+  ) = this()
+  def this(
+    engine: js.Any,
+    data: DataArray,
+    updatable: Boolean,
+    stride: Double,
+    postponeInternalCreation: Unit,
+    instanced: Boolean,
+    useBytes: Unit,
+    divisor: Double
+  ) = this()
+  def this(
+    engine: js.Any,
+    data: DataArray,
+    updatable: Boolean,
+    stride: Double,
+    postponeInternalCreation: Unit,
+    instanced: Unit,
     useBytes: Boolean,
     divisor: Double
   ) = this()
@@ -286,19 +215,89 @@ class Buffer protected ()
     data: DataArray,
     updatable: Boolean,
     stride: Double,
-    postponeInternalCreation: Boolean,
-    instanced: Boolean,
-    useBytes: js.UndefOr[scala.Nothing],
+    postponeInternalCreation: Unit,
+    instanced: Unit,
+    useBytes: Unit,
     divisor: Double
   ) = this()
   def this(
     engine: js.Any,
     data: DataArray,
     updatable: Boolean,
-    stride: Double,
+    stride: Unit,
     postponeInternalCreation: Boolean,
     instanced: Boolean,
     useBytes: Boolean,
+    divisor: Double
+  ) = this()
+  def this(
+    engine: js.Any,
+    data: DataArray,
+    updatable: Boolean,
+    stride: Unit,
+    postponeInternalCreation: Boolean,
+    instanced: Boolean,
+    useBytes: Unit,
+    divisor: Double
+  ) = this()
+  def this(
+    engine: js.Any,
+    data: DataArray,
+    updatable: Boolean,
+    stride: Unit,
+    postponeInternalCreation: Boolean,
+    instanced: Unit,
+    useBytes: Boolean,
+    divisor: Double
+  ) = this()
+  def this(
+    engine: js.Any,
+    data: DataArray,
+    updatable: Boolean,
+    stride: Unit,
+    postponeInternalCreation: Boolean,
+    instanced: Unit,
+    useBytes: Unit,
+    divisor: Double
+  ) = this()
+  def this(
+    engine: js.Any,
+    data: DataArray,
+    updatable: Boolean,
+    stride: Unit,
+    postponeInternalCreation: Unit,
+    instanced: Boolean,
+    useBytes: Boolean,
+    divisor: Double
+  ) = this()
+  def this(
+    engine: js.Any,
+    data: DataArray,
+    updatable: Boolean,
+    stride: Unit,
+    postponeInternalCreation: Unit,
+    instanced: Boolean,
+    useBytes: Unit,
+    divisor: Double
+  ) = this()
+  def this(
+    engine: js.Any,
+    data: DataArray,
+    updatable: Boolean,
+    stride: Unit,
+    postponeInternalCreation: Unit,
+    instanced: Unit,
+    useBytes: Boolean,
+    divisor: Double
+  ) = this()
+  def this(
+    engine: js.Any,
+    data: DataArray,
+    updatable: Boolean,
+    stride: Unit,
+    postponeInternalCreation: Unit,
+    instanced: Unit,
+    useBytes: Unit,
     divisor: Double
   ) = this()
 }

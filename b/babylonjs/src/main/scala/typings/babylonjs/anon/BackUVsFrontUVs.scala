@@ -3,69 +3,53 @@ package typings.babylonjs.anon
 import typings.babylonjs.BABYLON.Vector4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackUVsFrontUVs extends StObject {
   
-  var backUVs: js.UndefOr[Vector4] = js.native
+  var backUVs: js.UndefOr[Vector4] = js.undefined
   
-  var frontUVs: js.UndefOr[Vector4] = js.native
+  var frontUVs: js.UndefOr[Vector4] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var sideOrientation: js.UndefOr[Double] = js.native
+  var sideOrientation: js.UndefOr[Double] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object BackUVsFrontUVs {
   
-  @scala.inline
-  def apply(): BackUVsFrontUVs = {
+  inline def apply(): BackUVsFrontUVs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BackUVsFrontUVs]
   }
   
-  @scala.inline
-  implicit class BackUVsFrontUVsMutableBuilder[Self <: BackUVsFrontUVs] (val x: Self) extends AnyVal {
+  extension [Self <: BackUVsFrontUVs](x: Self) {
     
-    @scala.inline
-    def setBackUVs(value: Vector4): Self = StObject.set(x, "backUVs", value.asInstanceOf[js.Any])
+    inline def setBackUVs(value: Vector4): Self = StObject.set(x, "backUVs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackUVsUndefined: Self = StObject.set(x, "backUVs", js.undefined)
+    inline def setBackUVsUndefined: Self = StObject.set(x, "backUVs", js.undefined)
     
-    @scala.inline
-    def setFrontUVs(value: Vector4): Self = StObject.set(x, "frontUVs", value.asInstanceOf[js.Any])
+    inline def setFrontUVs(value: Vector4): Self = StObject.set(x, "frontUVs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrontUVsUndefined: Self = StObject.set(x, "frontUVs", js.undefined)
+    inline def setFrontUVsUndefined: Self = StObject.set(x, "frontUVs", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setSideOrientation(value: Double): Self = StObject.set(x, "sideOrientation", value.asInstanceOf[js.Any])
+    inline def setSideOrientation(value: Double): Self = StObject.set(x, "sideOrientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSideOrientationUndefined: Self = StObject.set(x, "sideOrientation", js.undefined)
+    inline def setSideOrientationUndefined: Self = StObject.set(x, "sideOrientation", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

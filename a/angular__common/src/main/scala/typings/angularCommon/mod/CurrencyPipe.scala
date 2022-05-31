@@ -27,8 +27,6 @@ class CurrencyPipe protected ()
     digitsInfo: js.UndefOr[String],
     locale: js.UndefOr[String]
   ): Null = js.native
-  /* CompleteClass */
-  override def transform(value: js.Any, args: js.Any*): js.Any = js.native
   /**
     *
     * @param value The number to be formatted as currency.
@@ -62,12 +60,13 @@ class CurrencyPipe protected ()
     * When not supplied, uses the value of `LOCALE_ID`, which is `en-US` by default.
     * See [Setting your app locale](guide/i18n#setting-up-the-locale-of-your-app).
     */
-  @JSName("transform")
-  def transform_Union(
+  def transform(
     value: js.UndefOr[Double | Null | String],
     currencyCode: js.UndefOr[String],
     display: js.UndefOr[Boolean | String | code | symbol | `symbol-narrow`],
     digitsInfo: js.UndefOr[String],
     locale: js.UndefOr[String]
   ): String | Null = js.native
+  /* CompleteClass */
+  override def transform(value: js.Any, args: js.Any*): js.Any = js.native
 }

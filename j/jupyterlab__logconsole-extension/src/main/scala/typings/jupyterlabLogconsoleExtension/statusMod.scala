@@ -8,7 +8,6 @@ import typings.jupyterlabLogconsoleExtension.statusMod.LogConsoleStatus.Model
 import typings.luminoSignaling.mod.Signal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object statusMod {
@@ -23,13 +22,13 @@ object statusMod {
       */
     def this(options: IOptions) = this()
     
-    var _clearHighlight: js.Any = js.native
+    /* private */ var _clearHighlight: js.Any = js.native
     
-    var _flashHighlight: js.Any = js.native
+    /* private */ var _flashHighlight: js.Any = js.native
     
-    var _handleClick: js.Any = js.native
+    /* private */ var _handleClick: js.Any = js.native
     
-    var _showHighlighted: js.Any = js.native
+    /* private */ var _showHighlighted: js.Any = js.native
   }
   object LogConsoleStatus {
     
@@ -46,15 +45,15 @@ object statusMod {
         */
       def this(loggerRegistry: ILoggerRegistry) = this()
       
-      var _flashEnabled: js.Any = js.native
+      /* private */ var _flashEnabled: js.Any = js.native
       
-      var _handleLogContentChange: js.Any = js.native
+      /* private */ var _handleLogContentChange: js.Any = js.native
       
-      var _handleLogRegistryChange: js.Any = js.native
+      /* private */ var _handleLogRegistryChange: js.Any = js.native
       
-      var _loggerRegistry: js.Any = js.native
+      /* private */ var _loggerRegistry: js.Any = js.native
       
-      var _source: js.Any = js.native
+      /* private */ var _source: js.Any = js.native
       
       /**
         * The view status of each source.
@@ -65,7 +64,7 @@ object statusMod {
         * user, the second represents the version that we last notified the user
         * about.
         */
-      var _sourceVersion: js.Any = js.native
+      /* private */ var _sourceVersion: js.Any = js.native
       
       /**
         * Flag to toggle flashing when new logs added.
@@ -134,36 +133,31 @@ object statusMod {
     /**
       * Options for creating a new LogConsoleStatus item
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * A click handler for the item. By default
         * Log Console panel is launched.
         */
-      def handleClick(): Unit = js.native
+      def handleClick(): Unit
       
       /**
         * The logger registry providing the logs.
         */
-      var loggerRegistry: ILoggerRegistry = js.native
+      var loggerRegistry: ILoggerRegistry
     }
     object IOptions {
       
-      @scala.inline
-      def apply(handleClick: () => Unit, loggerRegistry: ILoggerRegistry): IOptions = {
+      inline def apply(handleClick: () => Unit, loggerRegistry: ILoggerRegistry): IOptions = {
         val __obj = js.Dynamic.literal(handleClick = js.Any.fromFunction0(handleClick), loggerRegistry = loggerRegistry.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setHandleClick(value: () => Unit): Self = StObject.set(x, "handleClick", js.Any.fromFunction0(value))
+        inline def setHandleClick(value: () => Unit): Self = StObject.set(x, "handleClick", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setLoggerRegistry(value: ILoggerRegistry): Self = StObject.set(x, "loggerRegistry", value.asInstanceOf[js.Any])
+        inline def setLoggerRegistry(value: ILoggerRegistry): Self = StObject.set(x, "loggerRegistry", value.asInstanceOf[js.Any])
       }
     }
   }

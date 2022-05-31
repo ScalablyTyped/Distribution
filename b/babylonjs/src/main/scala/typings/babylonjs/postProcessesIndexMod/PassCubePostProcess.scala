@@ -7,7 +7,6 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/PostProcesses/index", "PassCubePostProcess")
@@ -39,8 +38,10 @@ class PassCubePostProcess protected ()
 /* static members */
 object PassCubePostProcess {
   
-  /** @hidden */
-  @JSImport("babylonjs/PostProcesses/index", "PassCubePostProcess._Parse")
+  @JSImport("babylonjs/PostProcesses/index", "PassCubePostProcess")
   @js.native
-  def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): typings.babylonjs.passPostProcessMod.PassCubePostProcess = js.native
+  val ^ : js.Any = js.native
+  
+  /** @hidden */
+  inline def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): typings.babylonjs.passPostProcessMod.PassCubePostProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.passPostProcessMod.PassCubePostProcess]
 }

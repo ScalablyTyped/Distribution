@@ -4,13 +4,13 @@ import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.BABYLON.PostProcessOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.ScreenSpaceCurvaturePostProcess")
 @js.native
 class ScreenSpaceCurvaturePostProcess protected ()
-  extends typings.babylonjs.BABYLON.ScreenSpaceCurvaturePostProcess {
+  extends StObject
+     with typings.babylonjs.BABYLON.ScreenSpaceCurvaturePostProcess {
   /**
     * Creates a new instance ScreenSpaceCurvaturePostProcess
     * @param name The name of the effect.
@@ -38,13 +38,15 @@ class ScreenSpaceCurvaturePostProcess protected ()
 /* static members */
 object ScreenSpaceCurvaturePostProcess {
   
-  /** @hidden */
-  @JSGlobal("BABYLON.ScreenSpaceCurvaturePostProcess._Parse")
+  @JSGlobal("BABYLON.ScreenSpaceCurvaturePostProcess")
   @js.native
-  def _Parse(
+  val ^ : js.Any = js.native
+  
+  /** @hidden */
+  inline def _Parse(
     parsedPostProcess: js.Any,
     targetCamera: typings.babylonjs.BABYLON.Camera,
     scene: typings.babylonjs.BABYLON.Scene,
     rootUrl: String
-  ): typings.babylonjs.BABYLON.ScreenSpaceCurvaturePostProcess = js.native
+  ): typings.babylonjs.BABYLON.ScreenSpaceCurvaturePostProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.ScreenSpaceCurvaturePostProcess]
 }

@@ -2,35 +2,28 @@ package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAnimatable extends StObject {
   
   /**
     * Array of animations
     */
-  var animations: Nullable[js.Array[Animation]] = js.native
+  var animations: Nullable[js.Array[Animation]]
 }
 object IAnimatable {
   
-  @scala.inline
-  def apply(): IAnimatable = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(): IAnimatable = {
+    val __obj = js.Dynamic.literal(animations = null)
     __obj.asInstanceOf[IAnimatable]
   }
   
-  @scala.inline
-  implicit class IAnimatableMutableBuilder[Self <: IAnimatable] (val x: Self) extends AnyVal {
+  extension [Self <: IAnimatable](x: Self) {
     
-    @scala.inline
-    def setAnimations(value: Nullable[js.Array[Animation]]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
+    inline def setAnimations(value: Nullable[js.Array[Animation]]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationsNull: Self = StObject.set(x, "animations", null)
+    inline def setAnimationsNull: Self = StObject.set(x, "animations", null)
     
-    @scala.inline
-    def setAnimationsVarargs(value: Animation*): Self = StObject.set(x, "animations", js.Array(value :_*))
+    inline def setAnimationsVarargs(value: Animation*): Self = StObject.set(x, "animations", js.Array(value :_*))
   }
 }
